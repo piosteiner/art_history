@@ -12,7 +12,7 @@ names:
     text: "{桃山時代|ももやまじだい}"
 kind: period
 period: 1573/1603
-description_md: "**Dates.** The time of Oda Nobunaga and Toyotomi Hideyoshi, named after their castles at Azuchi and Momoyama (Fushimi). Here 1573–1603, as Nabunken and the Tokyo and Nara museums date it[[source/nabunken-style-manual-2022|pp. 29–31]]: it begins when Nobunaga drove the last Ashikaga [[shogun]] from Kyoto and ends when Tokugawa Ieyasu was appointed shōgun. Other starts are 1568 (Nobunaga enters Kyoto) and 1576 (Azuchi castle begun); other ends 1598 (Hideyoshi's death) and 1600 (Ieyasu's victory at Sekigahara). Art history usually lets it run to 1615, the fall of the Toyotomi at Osaka — hence “Momoyama period, 1573–1615” at the Kyoto National Museum and in Mason[[source/wikipedia-ja-azuchi-momoyama-jidai|美術史では、慶長20年（1615年）の豊臣家滅亡までを…]]."
+description_md: "**Dates.** The time of Oda Nobunaga and Toyotomi Hideyoshi, named after their castles at Azuchi and Momoyama (Fushimi). Here 1573–1603, as Nabunken and the Tokyo and Nara museums date it[[source/nabunken-style-manual-2022|pp. 29–31]]: it begins when Nobunaga drove the last Ashikaga [[shogun]] from Kyoto and ends when Tokugawa Ieyasu was appointed shōgun[[source/history-of-japanese-art|pp. 236–237]]. Other starts are 1568 (Nobunaga enters Kyoto) and 1576 (Azuchi castle begun); other ends 1598 (Hideyoshi's death) and 1600 (Ieyasu's victory at Sekigahara). Art history usually lets it run to 1615, the fall of the Toyotomi at Osaka[[source/history-of-japanese-art|pp. 238–239, 273]] — hence “Momoyama period, 1573–1615” at the Kyoto National Museum and in Mason[[source/wikipedia-ja-azuchi-momoyama-jidai|美術史では、慶長20年（1615年）の豊臣家滅亡までを…]]."
 relationships:
   - type: active_in
     to: place/japan
@@ -23,9 +23,9 @@ relationships:
         locator: pp. 10, 273, 352
 sources:
   period:
-    - note: “Momoyama period (1573–1615)” (p. 10) · “Muromachi (1392–1573) and Momoyama (1573–1615) periods” (p. 273)
+    - note: “Momoyama period (1573–1615)” (p. 10) · “Muromachi (1392–1573) and Momoyama (1573–1615) periods” (p. 273) · “In 1600, the situation came to a head in the battle of Sekigahara” · “in 1603 Ieyasu had the emperor confer on him the title of shogun” · “between the battle of Sekigahara and the final destruction of the Toyotomi clan” (1600–1615) · “Muromachi (1392–1573) and Momoyama (1573–1615) periods”
       source: history-of-japanese-art
-      locator: pp. 10, 273, 352
+      locator: pp. 10, 273, 352; pp. 236–237; pp. 238–239, 273
     - url: https://sitereports.nabunken.go.jp/ja/article/26028
       note: "Nabunken, Tokyo and Nara National Museum: “Azuchi-Momoyama period (1573–1603)” · Kyoto National Museum: “Momoyama period (1573–1615)”"
       source: nabunken-style-manual-2022

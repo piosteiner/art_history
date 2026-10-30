@@ -31,7 +31,7 @@ names:
     role: translation
     text: Реставрация Мэйдзи
 period: 1868/1889-02-11
-description_md: The restoration of imperial rule — proclaimed on 3 January 1868 — and the reforms that followed; the fall of Edo in the summer of 1868 ended the Tokugawa shogunate and the Meiji era was proclaimed[[source/wikipedia-en-meiji-era|“Imperial restoration occurred the next year on January 3, 1868”]].
+description_md: The restoration of imperial rule — proclaimed on 3 January 1868 — and the reforms that followed[[source/history-of-japanese-art|pp. 342–343]]; the fall of Edo in the summer of 1868 ended the Tokugawa shogunate and the Meiji era was proclaimed[[source/wikipedia-en-meiji-era|“Imperial restoration occurred the next year on January 3, 1868”]].
 wikidata_id: Q8707
 metadata:
   sources: [Wikidata Q8707 (retrieved 2026-10-30)]
@@ -60,4 +60,8 @@ sources:
     - url: https://en.wikipedia.org/w/index.php?title=Meiji_era&oldid=1382301514
       note: “Imperial restoration occurred the next year on January 3, 1868, with the formation of the new government” · “The fall of Edo in the summer of 1868 marked the end of the Tokugawa shogunate, and a new era, Meiji, was proclaimed”
       source: wikipedia-en-meiji-era
+      accessed: 2026-10-30
+    - note: “Finally, in January 1868, a well-organized coalition of shishi overthrew the bakufu and deposed the Shogun”
+      source: history-of-japanese-art
+      locator: pp. 342–343
       accessed: 2026-10-30

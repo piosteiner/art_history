@@ -6,7 +6,7 @@ names:
     text: Ashikaga period
 kind: period
 period: 1392/1573
-description_md: "**Dates.** Here in the narrower sense used by Mason and all four national institutions[[source/nabunken-style-manual-2022|pp. 29–31]]: it begins in 1392 with the reunion of the two courts, which ended the Nanbokuchō period, and ends in 1573, when Oda Nobunaga drove the last Ashikaga [[shogun]], Yoshiaki, out of Kyoto and the shogunate fell. In the wider sense it is the whole time of the Ashikaga shogunate, beginning in 1336 with Takauji's Kenmu code or in 1338 with his appointment as shōgun — the dates of the Getty thesaurus and Wikidata — and ending likewise in 1573; the narrowest reading also cuts off the Sengoku period from 1467 or 1493[[source/wikipedia-ja-muromachi-jidai|広義では…1336年…または…1338年…から…1573年]]."
+description_md: "**Dates.** Here in the narrower sense used by Mason and all four national institutions[[source/nabunken-style-manual-2022|pp. 29–31]]: it begins in 1392 with the reunion of the two courts[[source/history-of-japanese-art|pp. 170–171]], which ended the Nanbokuchō period, and ends in 1573, when Oda Nobunaga drove the last Ashikaga [[shogun]], Yoshiaki, out of Kyoto and the shogunate fell. In the wider sense it is the whole time of the Ashikaga shogunate, beginning in 1336 with Takauji's Kenmu code or in 1338 with his appointment as shōgun — the dates of the Getty thesaurus and Wikidata — and ending likewise in 1573; the narrowest reading also cuts off the Sengoku period from 1467 or 1493[[source/wikipedia-ja-muromachi-jidai|広義では…1336年…または…1338年…から…1573年]]."
 wikidata_id: Q334845
 metadata:
   sources: [Wikidata Q334845 (retrieved 2026-10-18)]
@@ -28,9 +28,9 @@ sources:
   period:
     - "Getty Art & Architecture Thesaurus, “Muromachi” (AAT 300018561): “the Japanese period and style of art that developed during the rise of the Asikaga shogunate (1338-1573)”"
     - "Wikidata, Muromachi period (Q334845): start time 1336, end time 1573"
-    - note: "Mason dates it 1392–1573, after the Nanbokuchō period (1336–1392): “Muromachi or Ashikaga period (1392–1573)” (p. 10) · “Muromachi (1392–1573) and Momoyama (1573–1615) periods” (p. 273)"
+    - note: "Mason dates it 1392–1573, after the Nanbokuchō period (1336–1392): “Muromachi or Ashikaga period (1392–1573)” (p. 10) · “Muromachi (1392–1573) and Momoyama (1573–1615) periods” (p. 273) · “following the reunification of the imperial lines is therefore known as the Muromachi period (1392–1573)” · Oda Nobunaga “burnt the capital yet again and chased the last Ashikaga shogun, Yoshiaki (r. 1568–73), from it”"
       source: history-of-japanese-art
-      locator: pp. 10, 273
+      locator: pp. 10, 273; pp. 170–171
     - url: https://sitereports.nabunken.go.jp/ja/article/26028
       note: Nabunken 1392–1573 · Tokyo National Museum 1392–1573 · Kyoto National Museum 1392–1573 · Nara National Museum 1392–1573
       source: nabunken-style-manual-2022

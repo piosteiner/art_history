@@ -6,7 +6,7 @@ names:
     text: "{奈良時代|ならじだい}"
 kind: period
 period: 710/794
-description_md: "**Dates.** It begins in 710, when Empress Genmei moved the capital to Heijō-kyō (Nara), and ends in 794, when Emperor Kanmu moved it to Heian-kyō — after an interim at Nagaoka-kyō from 784[[source/wikipedia-en-nara-period|“Empress Genmei established the capital of Heijō-kyō”]]. All sources agree[[source/nabunken-style-manual-2022|pp. 29–31]]."
+description_md: "**Dates.** It begins in 710, when Empress Genmei moved the capital to Heijō-kyō (Nara)[[source/history-of-japanese-art|pp. 40–41]], and ends in 794, when Emperor Kanmu moved it to Heian-kyō — after an interim at Nagaoka-kyō from 784[[source/wikipedia-en-nara-period|“Empress Genmei established the capital of Heijō-kyō”]]. All sources agree[[source/nabunken-style-manual-2022|pp. 29–31]]."
 relationships:
   - type: active_in
     to: place/japan
@@ -17,9 +17,9 @@ relationships:
         locator: pp. 10, 275, 356
 sources:
   period:
-    - note: “Nara period (710–794)” (p. 10) · “the Nara (710–94) and Heian (794–1185) periods” (p. 275)
+    - note: “Nara period (710–794)” (p. 10) · “the Nara (710–94) and Heian (794–1185) periods” (p. 275) · “a new permanent capital was established at Heijō-kyō … in 710. The period (710–94) that this inaugurated is known by Heijō’s present name, Nara” · “after the removal of the capital to Heian in 794 and the beginning of the Heian period (794–1185)”
       source: history-of-japanese-art
-      locator: pp. 10, 275, 356
+      locator: pp. 10, 275, 356; pp. 40–41
     - url: https://sitereports.nabunken.go.jp/ja/article/26028
       note: Nabunken 710–794 · Tokyo National Museum 710–794 · Kyoto National Museum 710–794 · Nara National Museum 710–794
       source: nabunken-style-manual-2022

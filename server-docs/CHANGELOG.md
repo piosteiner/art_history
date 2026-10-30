@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: Mason and Portal cited wherever they cover a statement
+- **What:** 33 passages of Mason (and one of Portal) added as footnotes at the matching sentence and as citations with
+  the quoted passage — on 13 period texts and 21 event texts that had rested on Wikipedia alone (Nara/Heian capital
+  moves pp. 40–41, Genpei War and the end of Heian pp. 102–103, Dannoura and Yoritomo as shōgun 1192 p. 167, Go-Daigo,
+  Kenmu Restoration, reunification 1392, Ōnin War, Yoshiaki chased 1573 pp. 170–171, Sekigahara and Ieyasu 1603
+  p. 237, the Toyotomi destroyed 1615 p. 239, the overthrow of January 1868 p. 343 …). Still without a book source,
+  because neither book covers them: Reiwa, the 2019 transition, Taisei hōkan, the edict of 1868, Kyōtoku, Meiō,
+  Odawara, Sekigahara campaign. The Korean War's citation for its removed parent deleted.
+- **Why:** owner, 2026-10-30.
+- **Revert:** via the admin history.
+
 ### Data: 62 glossary terms from Mason, History of Japanese Art
 - **What:** terms from Mason's glossary (pp. 394–403) and the chapters that introduce them, each with an own short
   definition (no copied text), Japanese name with reading, English translation and the Mason page: prehistory

@@ -3,7 +3,7 @@ name: Appointment of Minamoto no Yoritomo as shōgun
 kind: appointment
 period: 1192
 place: kamakura
-description_md: Minamoto no Yoritomo was appointed [[shogun]] (sei-i taishōgun) in 1192 — the older date for the beginning of the Kamakura period, still used by the Tokyo National Museum[[source/wikipedia-en-kamakura-period|“In the past, the most popular theory was that the year was 1192, when Minamoto no Yoritomo was appointed Seii Taishōgun”]].
+description_md: Minamoto no Yoritomo was appointed [[shogun]] (sei-i taishōgun) in 1192[[source/history-of-japanese-art|pp. 166–167]] — the older date for the beginning of the Kamakura period, still used by the Tokyo National Museum[[source/wikipedia-en-kamakura-period|“In the past, the most popular theory was that the year was 1192, when Minamoto no Yoritomo was appointed Seii Taishōgun”]].
 relationships:
   - type: concerns
     to: movement/heian-period
@@ -16,4 +16,8 @@ sources:
     - url: https://en.wikipedia.org/w/index.php?title=Kamakura_period&oldid=1376411716
       note: “In the past, the most popular theory was that the year was 1192, when Minamoto no Yoritomo was appointed Seii Taishōgun”
       source: wikipedia-en-kamakura-period
+      accessed: 2026-10-30
+    - note: “Finally, in 1192, the imperial court were obliged to grant Yoritomo the title of Seiitai Shogun, literally ‘Barbarian-subduing General’”
+      source: history-of-japanese-art
+      locator: pp. 166–167
       accessed: 2026-10-30

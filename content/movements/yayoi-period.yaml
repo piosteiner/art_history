@@ -6,7 +6,7 @@ names:
     text: "{弥生時代|やよいじだい}"
 kind: period
 period: c. 400 BCE–300
-description_md: "**Dates.** It begins when wet-rice farming arrived from the continent in northern Kyushu. That was long dated to the 5th century BCE (Mason: c. 400 BCE; the Tokyo, Kyoto and Nara museums); radiocarbon dates published by the National Museum of Japanese History in 2003 moved it back to about the 9th–8th century BCE[[source/wikipedia-ja-yayoi-jidai|「2003年に国立歴史民俗博物館が放射性炭素年代測定により…」]], and Nabunken follows them (ca. 8th century BCE)[[source/nabunken-style-manual-2022|pp. 29–31]]. It ends in the mid-3rd century, when the first large keyhole-shaped tombs mark the beginning of the Kofun period[[source/wikipedia-ja-yayoi-jidai|紀元後3世紀中頃まで]][[source/wikipedia-ja-kofun-jidai|「前方後円墳の出現を特徴とし…」]]."
+description_md: "**Dates.** It begins when wet-rice farming arrived from the continent in northern Kyushu[[source/history-of-japanese-art|pp. 22–23]]. That was long dated to the 5th century BCE (Mason: c. 400 BCE; the Tokyo, Kyoto and Nara museums); radiocarbon dates published by the National Museum of Japanese History in 2003 moved it back to about the 9th–8th century BCE[[source/wikipedia-ja-yayoi-jidai|「2003年に国立歴史民俗博物館が放射性炭素年代測定により…」]], and Nabunken follows them (ca. 8th century BCE)[[source/nabunken-style-manual-2022|pp. 29–31]]. It ends in the mid-3rd century, when the first large keyhole-shaped tombs mark the beginning of the Kofun period[[source/wikipedia-ja-yayoi-jidai|紀元後3世紀中頃まで]][[source/wikipedia-ja-kofun-jidai|「前方後円墳の出現を特徴とし…」]]."
 relationships:
   - type: active_in
     to: place/japan
@@ -17,9 +17,9 @@ relationships:
         locator: pp. 10, 22
 sources:
   period:
-    - note: "The principal periods as used in this volume are: … “Yayoi period (c. 400 B.C.E.–C.E. 300)” (p. 10)"
+    - note: "The principal periods as used in this volume are: … “Yayoi period (c. 400 B.C.E.–C.E. 300)” (p. 10) · “The Yayoi Period (c. 400 B.C.E.–300 C.E.)”"
       source: history-of-japanese-art
-      locator: pp. 10, 22
+      locator: pp. 10, 22; pp. 22–23
     - url: https://sitereports.nabunken.go.jp/ja/article/26028
       note: Nabunken ca. 8th century BCE–3rd century CE · Tokyo National Museum ca. 5th century BCE–3rd century CE · Kyoto National Museum ca. 5th century BCE–ca. 3rd century CE · Nara National Museum 5th/3rd century BCE–ca. 3rd century CE
       source: nabunken-style-manual-2022

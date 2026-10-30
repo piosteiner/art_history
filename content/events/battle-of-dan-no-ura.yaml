@@ -32,7 +32,7 @@ parent: genpei-war
 period: 1185-05-02
 place: shimonoseki
 location: [130.95664, 33.96508]
-description_md: "The sea battle in the strait of Shimonoseki in which the Minamoto destroyed the Taira — 25 April 1185 in the Julian calendar (2 May in the Gregorian, as stored here)[[source/wikipedia-en-kamakura-period|“1185: the rival Taira clan is defeated at sea at the Battle of Dan-no-ura”]]. After it Minamoto no Yoritomo won the right to appoint military governors and land stewards, the prevailing date for the end of the Heian and the beginning of the Kamakura period."
+description_md: "The sea battle in the strait of Shimonoseki in which the Minamoto destroyed the Taira[[source/history-of-japanese-art|pp. 166–167]] — 25 April 1185 in the Julian calendar (2 May in the Gregorian, as stored here)[[source/wikipedia-en-kamakura-period|“1185: the rival Taira clan is defeated at sea at the Battle of Dan-no-ura”]]. After it Minamoto no Yoritomo won the right to appoint military governors and land stewards, the prevailing date for the end of the Heian and the beginning of the Kamakura period."
 wikidata_id: Q968676
 metadata:
   sources: [Wikidata Q968676 (retrieved 2026-10-30)]
@@ -67,6 +67,10 @@ sources:
     - url: https://en.wikipedia.org/w/index.php?title=Kamakura_period&oldid=1376411716
       note: "“1185: the rival Taira clan is defeated at sea at the Battle of Dan-no-ura by Yoritomo’s brother Minamoto no Yoshitsune”"
       source: wikipedia-en-kamakura-period
+      accessed: 2026-10-30
+    - note: “the Minamoto under the leadership of Minamoto Yoshitsune decisively defeated the Taira at Dannoura, a small village near the port of Shimonoseki”
+      source: history-of-japanese-art
+      locator: pp. 166–167
       accessed: 2026-10-30
   location:
     - accessed: 2026-10-30

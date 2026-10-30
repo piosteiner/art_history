@@ -6,7 +6,7 @@ names:
     text: "{平安時代|へいあんじだい}"
 kind: period
 period: 794/1185
-description_md: "**Dates.** It begins in 794 with Emperor Kanmu's move of the capital to Heian-kyō (Kyoto)[[source/wikipedia-en-heian-period|“794: Emperor Kammu moves the capital to Heian-kyō”]]. It ends with the rise of Minamoto no Yoritomo's government at Kamakura: in 1185, when, after the Taira were defeated at Dan-no-ura, he won the right to appoint military governors (shugo) and land stewards (jitō) — the prevailing date, used by Mason, Nabunken and the Kyoto and Nara museums; or in 1192, when he was appointed [[shogun]] — the older date, still used by the Tokyo National Museum[[source/wikipedia-en-kamakura-period|“In the past, the most popular theory was that the year was 1192 … Later, the prevailing theory was that the year was 1185”]][[source/nabunken-style-manual-2022|pp. 29–31]]."
+description_md: "**Dates.** It begins in 794 with Emperor Kanmu's move of the capital to Heian-kyō (Kyoto)[[source/history-of-japanese-art|pp. 40–41, 101]][[source/wikipedia-en-heian-period|“794: Emperor Kammu moves the capital to Heian-kyō”]]. It ends with the rise of Minamoto no Yoritomo's government at Kamakura: in 1185, when, after the Taira were defeated at Dan-no-ura, he won the right to appoint military governors (shugo) and land stewards (jitō) — the prevailing date, used by Mason[[source/history-of-japanese-art|pp. 102–103]], Nabunken and the Kyoto and Nara museums; or in 1192, when he was appointed [[shogun]] — the older date, still used by the Tokyo National Museum[[source/wikipedia-en-kamakura-period|“In the past, the most popular theory was that the year was 1192 … Later, the prevailing theory was that the year was 1185”]][[source/nabunken-style-manual-2022|pp. 29–31]]."
 relationships:
   - type: active_in
     to: place/japan
@@ -17,9 +17,9 @@ relationships:
         locator: pp. 10, 275, 309
 sources:
   period:
-    - note: “Heian period (794–1185)” (p. 10) · “Heian (794–1185) and Kamakura (1185–1333) periods” (p. 309)
+    - note: “Heian period (794–1185)” (p. 10) · “Heian (794–1185) and Kamakura (1185–1333) periods” (p. 309) · “after the removal of the capital to Heian in 794 and the beginning of the Heian period (794–1185)” (pp. 40–41) · “Kyoto remained the capital of Japan for more than a thousand years, until the emperor moved the court to Tokyo in 1868” (p. 101) · “the Genpei Civil War, which lasted from 1180 to 1185 … Its close, in 1185, marks the end of the Heian period”
       source: history-of-japanese-art
-      locator: pp. 10, 275, 309
+      locator: pp. 10, 275, 309; pp. 40–41, 101; pp. 102–103
     - url: https://sitereports.nabunken.go.jp/ja/article/26028
       note: Nabunken 794–1185 · Tokyo National Museum 794–1192 · Kyoto National Museum 794–1185 · Nara National Museum 794–1185
       source: nabunken-style-manual-2022

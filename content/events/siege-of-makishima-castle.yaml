@@ -12,7 +12,7 @@ names:
     text: 槙島城之戰
 period: 1573-07
 place: makishima-castle
-description_md: "In 1573 Oda Nobunaga defeated the last Ashikaga [[shogun]], Yoshiaki, at Makishima castle and drove him from Kyoto: the Muromachi shogunate fell[[source/wikipedia-ja-azuchi-momoyama-jidai|義昭が京都から放逐されて室町幕府が事実上の滅亡に追い込まれた元亀4年（1573年）]]."
+description_md: "In 1573 Oda Nobunaga defeated the last Ashikaga [[shogun]], Yoshiaki, at Makishima castle and drove him from Kyoto[[source/history-of-japanese-art|pp. 170–171, 234–235]]: the Muromachi shogunate fell[[source/wikipedia-ja-azuchi-momoyama-jidai|義昭が京都から放逐されて室町幕府が事実上の滅亡に追い込まれた元亀4年（1573年）]]."
 wikidata_id: Q11120677
 metadata:
   sources: [Wikidata Q11120677 (retrieved 2026-10-30)]
@@ -35,3 +35,7 @@ sources:
     - accessed: 2026-10-30
       property: P585
       wikidata: Q11120677
+    - note: Nobunaga “chased the last Ashikaga shogun, Yoshiaki (r. 1568–73), from it” (p. 171) · Kyoto “had burnt again in 1573 when the Ashikaga were chased from the city” (p. 234)
+      source: history-of-japanese-art
+      locator: pp. 170–171, 234–235
+      accessed: 2026-10-30

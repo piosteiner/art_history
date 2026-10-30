@@ -3,7 +3,7 @@ name: Submission of Silla to Goryeo
 kind: submission
 period: 935
 place: gyeongju
-description_md: In 935 Gyeongsun, the last king of Silla, submitted to Wang Geon of Goryeo[[source/wikipedia-en-unified-silla|“submitted to Wang Geon of the emerging Goryeo in 935”]].
+description_md: In 935 Gyeongsun, the last king of Silla, submitted to Wang Geon of Goryeo[[source/portal-2000|p. 43]][[source/wikipedia-en-unified-silla|“submitted to Wang Geon of the emerging Goryeo in 935”]].
 relationships:
   - type: concerns
     to: movement/unified-silla-period
@@ -13,4 +13,8 @@ sources:
     - url: https://en.wikipedia.org/w/index.php?title=Unified_Silla&oldid=1382665885
       note: “Its last king, Gyeongsun, ruled over the state in name only and submitted to Wang Geon of the emerging Goryeo in 935, bringing the Silla dynasty to an end”
       source: wikipedia-en-unified-silla
+      accessed: 2026-10-30
+    - note: “from 668 to 935 ruled as Unified Silla”
+      source: portal-2000
+      locator: p. 43
       accessed: 2026-10-30

@@ -31,7 +31,7 @@ names:
 period: 1614-11-08/1615-06
 place: osaka
 location: [135.52, 34.64]
-description_md: The Tokugawa campaigns of 1614–1615 against the Toyotomi at Osaka castle, which ended the Toyotomi line; art history lets the Momoyama period run until then, and Mason and the Kyoto National Museum begin the Edo period with it[[source/wikipedia-ja-azuchi-momoyama-jidai|美術史では、慶長20年（1615年）の豊臣家滅亡までを…]].
+description_md: The Tokugawa campaigns of 1614–1615 against the Toyotomi at Osaka castle, which ended the Toyotomi line[[source/history-of-japanese-art|pp. 238–239]]; art history lets the Momoyama period run until then, and Mason and the Kyoto National Museum begin the Edo period with it[[source/wikipedia-ja-azuchi-momoyama-jidai|美術史では、慶長20年（1615年）の豊臣家滅亡までを…]].
 wikidata_id: Q475780
 metadata:
   sources: [Wikidata Q475780 (retrieved 2026-10-30)]
@@ -56,6 +56,10 @@ sources:
     - accessed: 2026-10-30
       property: P585
       wikidata: Q475780
+    - note: “in the years 1600 to 1615 — between the battle of Sekigahara and the final destruction of the Toyotomi clan”
+      source: history-of-japanese-art
+      locator: pp. 238–239
+      accessed: 2026-10-30
   location:
     - accessed: 2026-10-30
       property: P625

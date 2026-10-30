@@ -7,7 +7,7 @@ names:
 kind: transfer of the capital
 period: 710
 place: nara
-description_md: Empress Genmei moved the capital to Heijō-kyō (Nara) in 710[[source/wikipedia-en-nara-period|“Empress Genmei established the capital of Heijō-kyō”]]. It begins the Nara period and ends the Asuka period (in the national institutions' reading) and the Hakuhō period (in Mason's).
+description_md: Empress Genmei moved the capital to Heijō-kyō (Nara) in 710[[source/history-of-japanese-art|pp. 40–41]][[source/wikipedia-en-nara-period|“Empress Genmei established the capital of Heijō-kyō”]]. It begins the Nara period and ends the Asuka period (in the national institutions' reading) and the Hakuhō period (in Mason's).
 relationships:
   - type: concerns
     to: movement/asuka-period
@@ -26,4 +26,8 @@ sources:
     - url: https://en.wikipedia.org/w/index.php?title=Nara_period&oldid=1382796629
       note: “Empress Genmei established the capital of Heijō-kyō (present-day Nara)”
       source: wikipedia-en-nara-period
+      accessed: 2026-10-30
+    - note: “a new permanent capital was established at Heijō-kyō, about 12 miles (20 km) to the north in 710. The period (710–94) that this inaugurated is known by Heijō’s present name, Nara”
+      source: history-of-japanese-art
+      locator: pp. 40–41
       accessed: 2026-10-30

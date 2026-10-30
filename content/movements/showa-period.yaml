@@ -6,7 +6,7 @@ names:
     text: "{昭和時代|しょうわじだい}"
 kind: period
 period: 1926-12-25/1989-01-07
-description_md: "**Dates.** The reign of Emperor Shōwa (Hirohito): from his accession on 25 December 1926 to his death on 7 January 1989[[source/wikipedia-en-showa-era|“from December 25, 1926, until his death on January 7, 1989”]][[source/nabunken-style-manual-2022|pp. 29–31]]."
+description_md: "**Dates.** The reign of Emperor Shōwa (Hirohito): from his accession on 25 December 1926 to his death on 7 January 1989[[source/history-of-japanese-art|p. 346]][[source/wikipedia-en-showa-era|“from December 25, 1926, until his death on January 7, 1989”]][[source/nabunken-style-manual-2022|pp. 29–31]]."
 relationships:
   - type: active_in
     to: place/japan
@@ -19,7 +19,7 @@ sources:
   period:
     - note: “Showa period (1926–1989)” (p. 10) · “the Shōwa (1926–89) period” (p. 346)
       source: history-of-japanese-art
-      locator: pp. 10, 346
+      locator: pp. 10, 346; p. 346
     - url: https://sitereports.nabunken.go.jp/ja/article/26028
       note: Nabunken 1926–1989 · Tokyo National Museum 1926–1989 · Kyoto National Museum 1926–1989 · Nara National Museum 1926–1989
       source: nabunken-style-manual-2022

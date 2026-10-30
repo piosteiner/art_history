@@ -10,7 +10,7 @@ names:
     role: translation
     text: 明德和約
 period: 1392-11-20
-description_md: In 1392 the Southern court handed the imperial regalia to the Northern and the two lines were reunited[[source/wikipedia-ja-nanbokucho-jidai|両朝が合一した…(1392年11月19日)]].
+description_md: In 1392 the Southern court handed the imperial regalia to the Northern and the two lines were reunited[[source/history-of-japanese-art|pp. 170–171]][[source/wikipedia-ja-nanbokucho-jidai|両朝が合一した…(1392年11月19日)]].
 wikidata_id: Q11087845
 metadata:
   sources: [Wikidata Q11087845 (retrieved 2026-10-30)]
@@ -26,3 +26,7 @@ sources:
     - accessed: 2026-10-30
       property: P585
       wikidata: Q11087845
+    - note: “the period following the reunification of the imperial lines is therefore known as the Muromachi period (1392–1573)”
+      source: history-of-japanese-art
+      locator: pp. 170–171
+      accessed: 2026-10-30

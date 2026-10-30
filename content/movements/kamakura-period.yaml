@@ -6,7 +6,7 @@ names:
     text: "{鎌倉時代|かまくらじだい}"
 kind: period
 period: 1185/1333
-description_md: "**Dates.** The start depends on which step of Minamoto no Yoritomo's rise counts: 1185, when he won the right to appoint military governors (shugo) and land stewards (jitō) after the Taira were defeated at Dan-no-ura — the prevailing view; 1192, his appointment as [[shogun]] — the older view, still used by the Tokyo National Museum; or 1183, the court's recognition of his rule over the east[[source/wikipedia-ja-kamakura-jidai|1183年説、1185年説、1192年説]][[source/wikipedia-en-kamakura-period|“In the past, the most popular theory was that the year was 1192 … Later, the prevailing theory was that the year was 1185”]][[source/nabunken-style-manual-2022|pp. 29–31]]. It ends in 1333, when the supporters of Emperor Go-Daigo took Kamakura and the shogunate fell[[source/wikipedia-en-kamakura-period|“the Siege of Kamakura in 1333 which ended the rule of the shogunate”]]."
+description_md: "**Dates.** The start depends on which step of Minamoto no Yoritomo's rise counts: 1185, when he won the right to appoint military governors (shugo) and land stewards (jitō) after the Taira were defeated at Dan-no-ura — the prevailing view[[source/history-of-japanese-art|pp. 102–103]]; 1192, his appointment as [[shogun]][[source/history-of-japanese-art|pp. 166–167]] — the older view, still used by the Tokyo National Museum; or 1183, the court's recognition of his rule over the east[[source/wikipedia-ja-kamakura-jidai|1183年説、1185年説、1192年説]][[source/wikipedia-en-kamakura-period|“In the past, the most popular theory was that the year was 1192 … Later, the prevailing theory was that the year was 1185”]][[source/nabunken-style-manual-2022|pp. 29–31]]. It ends in 1333, when the supporters of Emperor Go-Daigo took Kamakura and the shogunate fell[[source/wikipedia-en-kamakura-period|“the Siege of Kamakura in 1333 which ended the rule of the shogunate”]]."
 relationships:
   - type: active_in
     to: place/japan
@@ -17,9 +17,9 @@ relationships:
         locator: pp. 10, 309
 sources:
   period:
-    - note: “Kamakura period (1185–1333)” (p. 10) · “Heian (794–1185) and Kamakura (1185–1333) periods” (p. 309)
+    - note: “Kamakura period (1185–1333)” (p. 10) · “Heian (794–1185) and Kamakura (1185–1333) periods” (p. 309) · “Finally, in 1192, the imperial court were obliged to grant Yoritomo the title of Seiitai Shogun” · the Taira “decisively defeated … at Dannoura” · “Its close, in 1185, marks the end of the Heian period”
       source: history-of-japanese-art
-      locator: pp. 10, 309
+      locator: pp. 10, 309; pp. 166–167; pp. 102–103
     - url: https://sitereports.nabunken.go.jp/ja/article/26028
       note: Nabunken 1185–1333 · Tokyo National Museum 1192–1333 · Kyoto National Museum 1185–1333 · Nara National Museum 1185–1333
       source: nabunken-style-manual-2022

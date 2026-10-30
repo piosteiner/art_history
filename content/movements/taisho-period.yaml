@@ -6,7 +6,7 @@ names:
     text: "{大正時代|たいしょうじだい}"
 kind: period
 period: 1912-07-30/1926-12-25
-description_md: "**Dates.** The reign of Emperor Taishō: from his accession on Emperor Meiji's death, 30 July 1912, to his own death on 25 December 1926[[source/wikipedia-en-taisho-era|“from July 30, 1912, to December 25, 1926, coinciding with the reign of Emperor Taishō”]][[source/nabunken-style-manual-2022|pp. 29–31]]. Mason's preface starts it in 1911, her chapter 7 in 1912."
+description_md: "**Dates.** The reign of Emperor Taishō: from his accession on Emperor Meiji's death, 30 July 1912, to his own death on 25 December 1926[[source/history-of-japanese-art|p. 346]][[source/wikipedia-en-taisho-era|“from July 30, 1912, to December 25, 1926, coinciding with the reign of Emperor Taishō”]][[source/nabunken-style-manual-2022|pp. 29–31]]. Mason's preface starts it in 1911, her chapter 7 in 1912."
 relationships:
   - type: active_in
     to: place/japan
@@ -17,9 +17,9 @@ relationships:
         locator: pp. 10, 346
 sources:
   period:
-    - note: the preface has “Taisho period (1911–1926)” (p. 10), chapter 7 “Taishō (1912–26)” (p. 346) — 1912 kept
+    - note: the preface has “Taisho period (1911–1926)” (p. 10), chapter 7 “Taishō (1912–26)” (p. 346) — 1912 kept · “the succeeding Taishō (1912–26) period and early years of the Shōwa (1926–89) period”
       source: history-of-japanese-art
-      locator: pp. 10, 346
+      locator: pp. 10, 346; p. 346
     - url: https://sitereports.nabunken.go.jp/ja/article/26028
       note: Nabunken 1912–1926 · Tokyo National Museum 1912–1926 · Kyoto National Museum 1912–1926 · Nara National Museum 1912–1926
       source: nabunken-style-manual-2022

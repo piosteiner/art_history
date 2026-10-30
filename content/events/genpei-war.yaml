@@ -32,7 +32,7 @@ names:
     text: Война Тайра и Минамото
 period: 1180/1185
 place: japan
-description_md: The war between the Taira and the Minamoto clans, 1180–1185, which ended with the Taira's defeat at Dan-no-ura and brought Minamoto no Yoritomo to power[[source/wikipedia-en-kamakura-period|“after the conclusion of the Genpei War, which saw the struggle between the Taira and Minamoto clans”]].
+description_md: The war between the Taira and the Minamoto clans, 1180–1185[[source/history-of-japanese-art|pp. 102–103]], which ended with the Taira's defeat at Dan-no-ura and brought Minamoto no Yoritomo to power[[source/wikipedia-en-kamakura-period|“after the conclusion of the Genpei War, which saw the struggle between the Taira and Minamoto clans”]].
 wikidata_id: Q737542
 metadata:
   sources: [Wikidata Q737542 (retrieved 2026-10-30)]
@@ -61,3 +61,7 @@ sources:
     - accessed: 2026-10-30
       property: P585
       wikidata: Q737542
+    - note: “the Genpei Civil War, which lasted from 1180 to 1185 and which was bitterly fought throughout the country … Its close, in 1185, marks the end of the Heian period”
+      source: history-of-japanese-art
+      locator: pp. 102–103
+      accessed: 2026-10-30

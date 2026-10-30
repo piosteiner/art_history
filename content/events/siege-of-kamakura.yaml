@@ -20,7 +20,7 @@ parent: genko-war
 period: 1333-07-13
 place: kamakura
 location: [139.55028, 35.31583]
-description_md: In 1333 the supporters of Emperor Go-Daigo took Kamakura and the shogunate fell[[source/wikipedia-en-kamakura-period|“the Siege of Kamakura in 1333 which ended the rule of the shogunate”]].
+description_md: In 1333 the supporters of Emperor Go-Daigo took Kamakura[[source/history-of-japanese-art|pp. 170–171]] and the shogunate fell[[source/wikipedia-en-kamakura-period|“the Siege of Kamakura in 1333 which ended the rule of the shogunate”]].
 wikidata_id: Q7510143
 metadata:
   sources: [Wikidata Q7510143 (retrieved 2026-10-30)]
@@ -44,6 +44,10 @@ sources:
     - accessed: 2026-10-30
       property: P585
       wikidata: Q7510143
+    - note: Go-Daigo “escaped in 1333 and managed to gain one of the Kamakura generals as his ally — Ashikaga Takauji”
+      source: history-of-japanese-art
+      locator: pp. 170–171
+      accessed: 2026-10-30
   location:
     - accessed: 2026-10-30
       property: P625

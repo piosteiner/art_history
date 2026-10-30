@@ -34,7 +34,7 @@ names:
 period: 1467/1477
 place: yamashiro-province
 location: [135.8006, 34.8819]
-description_md: The war of 1467–1477, fought largely in Kyoto, that broke the authority of the Ashikaga shogunate; the Sengoku period is usually counted from it[[source/wikipedia-ja-sengoku-jidai|応仁の乱（…1467年 - 1477年）から…]].
+description_md: The war of 1467–1477, fought largely in Kyoto[[source/history-of-japanese-art|pp. 170–171]], that broke the authority of the Ashikaga shogunate; the Sengoku period is usually counted from it[[source/wikipedia-ja-sengoku-jidai|応仁の乱（…1467年 - 1477年）から…]].
 wikidata_id: Q385676
 metadata:
   sources: [Wikidata Q385676 (retrieved 2026-10-30)]
@@ -59,6 +59,10 @@ sources:
     - accessed: 2026-10-30
       property: P585
       wikidata: Q385676
+    - note: “the Ōnin War of 1467 to 1477. The principal theater of this conflict was Kyoto” · “the Ōnin War was followed by a series of civil wars between the daimyo called the Sengoku Jidai”
+      source: history-of-japanese-art
+      locator: pp. 170–171
+      accessed: 2026-10-30
   location:
     - accessed: 2026-10-30
       property: P625
