@@ -1,0 +1,21 @@
+public_id: 105222
+name: Taishō period
+names:
+  - lang: ja
+    role: original
+    text: "{大正時代|たいしょうじだい}"
+kind: period
+period: 1912/1926
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 1912/1926
+    sources:
+      - note: “the succeeding Taishō (1912–26) period and early years of the Shōwa (1926–89) period”
+        source: history-of-japanese-art
+        locator: p. 346
+sources:
+  period:
+    - note: “the succeeding Taishō (1912–26) period and early years of the Shōwa (1926–89) period”
+      source: history-of-japanese-art
+      locator: p. 346

@@ -1,0 +1,22 @@
+public_id: 105217
+name: Kanbun era
+names:
+  - lang: ja
+    role: original
+    text: "{寛文|かんぶん}"
+kind: period
+parent: edo-period
+period: 1661/1672
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 1661/1672
+    sources:
+      - note: “bijinga …, which became popular in the Kanbun era (1661–72)”
+        source: history-of-japanese-art
+        locator: p. 278
+sources:
+  period:
+    - note: “bijinga …, which became popular in the Kanbun era (1661–72)”
+      source: history-of-japanese-art
+      locator: p. 278

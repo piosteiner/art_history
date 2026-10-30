@@ -1,0 +1,26 @@
+public_id: 105213
+name: Bakumatsu
+names:
+  - lang: ja
+    role: original
+    text: "{幕末|ばくまつ}"
+  - lang: en
+    role: translation
+    text: waning of the bakufu
+kind: period
+parent: edo-period
+period: until 1868
+description_md: The last years of the Tokugawa shogunate, under pressure from within and from the Western powers (Perry in 1853); Mason gives no first year, only the fall of the shogunate in 1868[[source/history-of-japanese-art|pp. 277–278]].
+relationships:
+  - type: active_in
+    to: place/japan
+    period: until 1868
+    sources:
+      - note: “a mood of discontent and uncertainty among the Japanese that is reflected in the arts of this period, which is known as the bakumatsu, (or waning of the bakufu) … before the fall of the Tokugawa shogunate in 1868”
+        source: history-of-japanese-art
+        locator: p. 278
+sources:
+  period:
+    - note: “a mood of discontent and uncertainty among the Japanese that is reflected in the arts of this period, which is known as the bakumatsu, (or waning of the bakufu) … before the fall of the Tokugawa shogunate in 1868”
+      source: history-of-japanese-art
+      locator: p. 278

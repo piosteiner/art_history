@@ -1,0 +1,21 @@
+public_id: 105216
+name: Kamakura period
+names:
+  - lang: ja
+    role: original
+    text: "{鎌倉時代|かまくらじだい}"
+kind: period
+period: 1185/1333
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 1185/1333
+    sources:
+      - note: “Buddhist sculpture of the Heian (794–1185) and Kamakura (1185–1333) periods”
+        source: history-of-japanese-art
+        locator: p. 309
+sources:
+  period:
+    - note: “Buddhist sculpture of the Heian (794–1185) and Kamakura (1185–1333) periods”
+      source: history-of-japanese-art
+      locator: p. 309

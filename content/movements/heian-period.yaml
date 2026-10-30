@@ -1,0 +1,21 @@
+public_id: 105215
+name: Heian period
+names:
+  - lang: ja
+    role: original
+    text: "{平安時代|へいあんじだい}"
+kind: period
+period: 794/1185
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 794/1185
+    sources:
+      - note: “Heian (794–1185) and Kamakura (1185–1333) periods” (p. 309)
+        source: history-of-japanese-art
+        locator: pp. 275, 309
+sources:
+  period:
+    - note: “Heian (794–1185) and Kamakura (1185–1333) periods” (p. 309)
+      source: history-of-japanese-art
+      locator: pp. 275, 309

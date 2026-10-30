@@ -1,0 +1,23 @@
+public_id: 105214
+name: Genroku era
+names:
+  - lang: ja
+    role: original
+    text: "{元禄|げんろく}"
+kind: period
+parent: edo-period
+period: 1688/1703
+description_md: An imperial reign era; Mason sees in it “the first great artistic flowering following the Momoyama period”[[source/history-of-japanese-art|p. 274]].
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 1688/1703
+    sources:
+      - note: “the imperial reign era known as Genroku (1688–1703)”
+        source: history-of-japanese-art
+        locator: p. 274
+sources:
+  period:
+    - note: “the imperial reign era known as Genroku (1688–1703)”
+      source: history-of-japanese-art
+      locator: p. 274

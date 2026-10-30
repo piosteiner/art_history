@@ -1,0 +1,28 @@
+public_id: 105220
+name: Sengoku period
+names:
+  - lang: ja
+    role: original
+    text: "{戦国時代|せんごくじだい}"
+  - lang: ja-Latn
+    role: romanization
+    text: Sengoku Jidai
+  - lang: en
+    role: translation
+    text: Age of the Country at War
+kind: period
+parent: muromachi-period
+period: c. 1480–1573
+relationships:
+  - type: active_in
+    to: place/japan
+    period: c. 1480–1573
+    sources:
+      - note: “the Sengoku Jidai (Age of the Country at War; c. 1480–1573)”
+        source: history-of-japanese-art
+        locator: p. 273
+sources:
+  period:
+    - note: “the Sengoku Jidai (Age of the Country at War; c. 1480–1573)”
+      source: history-of-japanese-art
+      locator: p. 273

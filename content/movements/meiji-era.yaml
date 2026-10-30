@@ -9,10 +9,20 @@ relationships:
   - type: active_in
     to: place/japan
     period: 1868-10-23/1912-07-30
-    sources: ["Getty Art & Architecture Thesaurus, “Meiji” (AAT 300018567): “coincides with the rule of emperor Mutsuhito, called Meiji, from 1868 to 1912”", "Wikidata, Meiji era (Q3125096): start time 23 October 1868, end time 30 July 1912"]
+    sources:
+      - "Getty Art & Architecture Thesaurus, “Meiji” (AAT 300018567): “coincides with the rule of emperor Mutsuhito, called Meiji, from 1868 to 1912”"
+      - "Wikidata, Meiji era (Q3125096): start time 23 October 1868, end time 30 July 1912"
+      - note: "the emperor’s reign: “emperor Meiji (r. 1867–1912)”"
+        source: history-of-japanese-art
+        locator: p. 343
 sources:
   kind:
     - accessed: 2026-10-18
       property: P31
       wikidata: Q3125096
-  period: ["Getty Art & Architecture Thesaurus, “Meiji” (AAT 300018567): “coincides with the rule of emperor Mutsuhito, called Meiji, from 1868 to 1912”", "Wikidata, Meiji era (Q3125096): start time 23 October 1868, end time 30 July 1912"]
+  period:
+    - "Getty Art & Architecture Thesaurus, “Meiji” (AAT 300018567): “coincides with the rule of emperor Mutsuhito, called Meiji, from 1868 to 1912”"
+    - "Wikidata, Meiji era (Q3125096): start time 23 October 1868, end time 30 July 1912"
+    - note: "the emperor’s reign: “emperor Meiji (r. 1867–1912)”"
+      source: history-of-japanese-art
+      locator: p. 343

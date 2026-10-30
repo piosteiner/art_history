@@ -1,0 +1,21 @@
+public_id: 105221
+name: Shōwa period
+names:
+  - lang: ja
+    role: original
+    text: "{昭和時代|しょうわじだい}"
+kind: period
+period: 1926/1989
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 1926/1989
+    sources:
+      - note: “the Shōwa (1926–89) period”
+        source: history-of-japanese-art
+        locator: p. 346
+sources:
+  period:
+    - note: “the Shōwa (1926–89) period”
+      source: history-of-japanese-art
+      locator: p. 346

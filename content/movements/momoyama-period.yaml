@@ -1,0 +1,21 @@
+public_id: 105218
+name: Momoyama period
+names:
+  - lang: ja
+    role: original
+    text: "{桃山時代|ももやまじだい}"
+kind: period
+period: 1573/1615
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 1573/1615
+    sources:
+      - note: “Muromachi (1392–1573) and Momoyama (1573–1615) periods” (p. 273) · “the Momoyama period (1573–1615)” (p. 352)
+        source: history-of-japanese-art
+        locator: pp. 273, 352
+sources:
+  period:
+    - note: “Muromachi (1392–1573) and Momoyama (1573–1615) periods” (p. 273) · “the Momoyama period (1573–1615)” (p. 352)
+      source: history-of-japanese-art
+      locator: pp. 273, 352

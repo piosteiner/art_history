@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: Japanese periods after Mason, History of Japanese Art (ch. 6–7)
+- **What:** from the owner's PDF of Mason (2nd ed. 2005), pp. 272–391, new periods with her dates, page-cited, Japanese
+  names, `active_in` Japan: Nara 710–794, Heian 794–1185, Kamakura 1185–1333, Sengoku c. 1480–1573 (in Muromachi),
+  Momoyama 1573–1615, Kanbun era 1661–1672, Genroku era 1688–1703, Bakumatsu until 1868 (in Edo), Taishō 1912–1926,
+  Shōwa 1926–1989. Muromachi, Edo, Meiji cited with Mason too; their dates kept (Mason: Muromachi 1392–1573, Edo
+  1615–1868 — in the citations' notes).
+- **Why:** owner, 2026-10-30.
+- **Revert:** delete the ten movements in the admin; remove the citations of `history-of-japanese-art`.
+
 ### Site: the enlarged picture zooms in a frame the size of the screen
 - **What:** `frontend/src/style.css` — `.lightbox-stage` is 96vw × 86vh for every picture (before: as wide as the fitted
   picture, a narrow strip for portraits); `src/zoom.ts` — a double click fills the frame (a portrait: its width), at
