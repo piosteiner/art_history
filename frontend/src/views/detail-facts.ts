@@ -23,6 +23,13 @@ function fateFact(e: Artwork): Html | null {
   return html`<span class="tag tag-fate tag-fate-${f.status}">${f.label}</span>${f.date ? ` ${f.date.label}` : ''}${f.note ? html` — ${f.note}` : ''}`;
 }
 
+/** "unfinished · 1918 — at the artist's death" (API 172); null when finished as far as known. */
+function completionFact(e: Artwork): Html | null {
+  const c = e.completion;
+  if (!c) return null;
+  return html`<span class="tag tag-completion">${c.label}</span>${c.date ? ` ${c.date.label}` : ''}${c.note ? html` — ${c.note}` : ''}`;
+}
+
 // a span of years (API 135): worked on over the whole time, or made at some point in it — said only where the label
 // itself doesn't ("c. 1882", "1880s" say it already)
 function spanNote(e: Artwork): string {
@@ -184,12 +191,13 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
       return {
         title: displayName(e).text, // an official translation preferred, an own one in [brackets]
         // destroyed or lost (API 103): said at once, under the title — "…, c. 1817 · destroyed 1945"
-        subtitle: [[...byline, e.created?.label].filter(Boolean).join(', '),
+        subtitle: [[...byline, e.created?.label].filter(Boolean).join(', '), e.completion?.status === 'unfinished' ? 'unfinished' : null,
           e.fate ? [e.fate.label, e.fate.date?.label].filter(Boolean).join(' ') : null].filter(Boolean).join(' · '),
         text: e.description_html, images: e.images,
         facts: [
           [creatorsOf(e).length > 1 ? 'Artists' : 'Artist', creatorsFact(e)],
           ['Date', dateFact(e)],
+          ['Completion', completionFact(e)],
           ['Fate', fateFact(e)],
           // glossary terms (API 071): linked to their entries, which explain them and carry the translations
           ['Type', e.kind_term ? link('term', e.kind_term.slug, e.kind ?? e.kind_term.name) : e.kind],
@@ -204,7 +212,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ...numberFacts(e),
           ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
         ],
-        extra: [partsGrid(e), phasesSection(e.phases ?? []), provenanceSection(e.provenance ?? [], e.bibliography, e.provenance_status, e.sources?.provenance_status, e.provenance_coverage, e.fate, e.sources?.fate)].filter((x): x is Html => !!x),
+        extra: [partsGrid(e), phasesSection(e.phases ?? []), provenanceSection(e.provenance ?? [], e.bibliography, e.provenance_status, e.sources?.provenance_status, e.provenance_coverage, e.fate, e.sources?.fate, e.completion)].filter((x): x is Html => !!x),
       };
     }
     case 'place':
@@ -327,7 +335,7 @@ const NAMES_FACT: Record<string, string[]> = { names: ['Also known as'] };
 const FIELD_FACT: Partial<Record<EntityType, Record<string, string[]>>> = {
   artist: { birth: ['Born'], death: ['Died'] },
   artwork: { creator: ['Artist', 'Artists'], attribution_label: ['Artist', 'Artists'], created: ['Date'], conceived: ['Date'], kind: ['Type'], medium: ['Medium'], materials: ['Materials'],
-    dimensions: ['Dimensions'], institution: ['Collection'], on_loan: ['Collection'], inventory_number: ['Inventory no.'], fate: ['Fate'] },
+    dimensions: ['Dimensions'], institution: ['Collection'], on_loan: ['Collection'], inventory_number: ['Inventory no.'], fate: ['Fate'], completion: ['Completion'] },
   institution: { founded: ['Founded'], dissolved: ['Closed'], address: ['Address', 'Location'], location: ['Address', 'Location'], place: ['Location'] },
   person: { birth: ['Born', 'Active'], death: ['Died'], kind: ['Kind'], occupations: ['Occupations'] },
   place: { parent: ['Part of'], location: ['Coordinates'] },

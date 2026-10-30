@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Migration 172: whether a work was finished
+- **What:** `artworks.completion` (enum `artwork_completion`: unfinished · completed_by_another) + `completion_date`,
+  `completion_note`, constraint `artworks_completion_details`, citable field `completion`. CMS: group "Unfinished, or
+  finished by another hand…" under Who and when; YAML `completion*`; API detail `completion`. Site: fact "Completion",
+  "unfinished" under the title, "the artist — left unfinished 1918" in the provenance. `fate` partly_destroyed without a
+  date now reads "fragmentary" and stands in the facts only (no ring on the provenance rail, no closing line in the
+  CMS). Tests: e2e `artwork-fate`, `yaml-roundtrip`; site test.
+- **Why:** owner, 2026-10-30 — Klimt's unfinished portraits vs. the Nike, finished once and fragmentary now.
+- **Revert:** a migration dropping the four columns, the citable field and the type; `git revert` for code.
+
 ### Migration 171 + CMS: the provenance table closes with the work's fate
 - **What:** function `fate_event(artwork_id)` (the event that `concerns` the work at its fate's date) — now used by the
   API (`fate.event`, before an inline subquery) and the CMS. CMS artwork page (`src/admin/provenance.js` `fate()`,

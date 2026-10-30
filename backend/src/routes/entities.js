@@ -114,10 +114,15 @@ const ENTITIES = {
                WHEN 'c_indications' THEN 'not fully clarified, indications of looted art or suspicious circumstances'
                ELSE 'looted art / seized as a result of Nazi persecution' END, 'note', t.provenance_status_note) END AS provenance_status,
              -- what became of it (103): null while extant
+             -- partly destroyed without a date: losses at an unknown time (a statue without head and arms) — "fragmentary"
              CASE WHEN t.fate IS NOT NULL THEN jsonb_build_object('status', t.fate, 'label', CASE t.fate WHEN 'destroyed' THEN 'destroyed'
-               WHEN 'partly_destroyed' THEN 'partly destroyed' ELSE 'lost' END,
+               WHEN 'partly_destroyed' THEN CASE WHEN t.fate_date IS NULL THEN 'fragmentary' ELSE 'partly destroyed' END ELSE 'lost' END,
                'date', range_json(t.fate_date, t.fate_date_label), 'note', t.fate_note,
                'event', fate_event(t.id)) END AS fate,  -- its cause: an event that concerns the work then (171)
+             -- whether it was finished (172): null when finished as far as known
+             CASE WHEN t.completion IS NOT NULL THEN jsonb_build_object('status', t.completion, 'label', CASE t.completion
+               WHEN 'unfinished' THEN 'unfinished' ELSE 'finished by another hand' END,
+               'date', range_json(t.completion_date, t.completion_date_label), 'note', t.completion_note) END AS completion,
              (SELECT jsonb_build_object('slug', g.slug, 'name', g.name) FROM glossary g WHERE g.id = t.kind_term_id) AS kind_term,
              (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', g.slug, 'name', g.name) ORDER BY am.position), '[]')
                 FROM artwork_materials am JOIN glossary g ON g.id = am.term_id WHERE am.artwork_id = t.id) AS material_terms,

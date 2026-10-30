@@ -4,7 +4,7 @@ import { compareUrl, crossedLine, encounterLine } from '../crossings';
 import { encounterKeys, findEncounters, fromApi, type Encounter } from '../encounters';
 import { creatorsOf, impliedEnd, html, link, nameSpan, render, trusted, TYPE_LABEL, type Html } from '../html';
 import type {
-  ArtworkFate, Citation, SourceHint, Category, CoverageSegment, Entity, EntityType, EntryRef, Inference, Price, ProvenanceAlternative, ProvenanceCoverage, ProvenanceRecord, ProvenanceStatus, ProvenanceStep, Relationship,
+  ArtworkCompletion, ArtworkFate, Citation, SourceHint, Category, CoverageSegment, Entity, EntityType, EntryRef, Inference, Price, ProvenanceAlternative, ProvenanceCoverage, ProvenanceRecord, ProvenanceStatus, ProvenanceStep, Relationship,
 } from '../types';
 import { cite } from '../cite';
 import { coverageBar, gapSides, gapText } from '../coverage';
@@ -173,7 +173,7 @@ export const lastRecordedStep = (steps: ProvenanceStep[] | undefined) => steps?.
  */
 export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record<string, SourceHint>,
   status?: ProvenanceStatus | null, statusSources?: Citation[], coverage?: ProvenanceCoverage | null, fate?: ArtworkFate | null,
-  fateSources?: Citation[]): Html | null {
+  fateSources?: Citation[], completion?: ArtworkCompletion | null): Html | null {
   const recorded = steps.some((s) => !s.implied); // the computed lines alone are no provenance
   if (!recorded && !status) return null;
   // gaps (API 078) go after the step they follow — the last one dated before them, which may be an agent's (an unsold
@@ -183,7 +183,8 @@ export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record
   const gapsAfter = (position: number | null) => gaps.filter((g) => after(g) === position).map(gapLine);
   const known = new Set(steps.map((s) => s.position));
   // what became of it closes the list (destroyed, lost); partly destroyed stands at its time, the parts' history goes on
-  const fateAfter = !fate ? -1 : fate.status !== 'partly_destroyed' || !fate.date?.from ? steps.length - 1
+  // fragmentary (partly destroyed, no date — losses at an unknown time): said in the facts, not placed on the rail
+  const fateAfter = !fate || (fate.status === 'partly_destroyed' && !fate.date?.from) ? -1 : fate.status !== 'partly_destroyed' ? steps.length - 1
     : steps.reduce((at, s, i) => ((s.period?.from ?? s.period?.to ?? '') <= fate.date!.from! ? i : at), steps.length - 1);
   const leading = gaps.filter((g) => after(g) === null || !known.has(after(g)!)).map(gapLine);
   return html`<section class="provenance" id="provenance">
@@ -204,7 +205,7 @@ export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record
     const role = !stolen && s.role && ROLE_TAG[s.role];
     const prefix = stolen || (possessor && TAKEN.has(s.method ?? '')) ? 'taken by' : 'held by';
     const how = [
-      s.kind === 'creation' ? html`the artist`
+      s.kind === 'creation' ? html`the artist${completion ? html` — <span class="tag tag-completion">${completion.status === 'unfinished' ? 'left unfinished' : 'finished by another hand'}</span>${completion.date ? ` ${completion.date.label}` : ''}` : ''}`
         : s.method === 'theft' ? html`stolen${s.ended ? html` — recovered ${s.ended.label}` : ''}`
         : s.method === 'exchange' && exchangedFor(s) ? null // "exchanged for …" says it
         : s.method && s.method !== 'unknown' ? method(s.method) : null,

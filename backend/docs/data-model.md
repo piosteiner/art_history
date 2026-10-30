@@ -641,6 +641,9 @@ artwork page, `/quality/provenance-gaps`.
 A destroyed work's life ends with its destruction (170): `fate = 'destroyed'` → until `upper(fate_date)`, without a date
 until the last dated holding — no gap from then until today. `partly_destroyed` (parts survive) and `lost`
 (whereabouts unknown, not existence) run on until today. Bars (site and admin) say "destroyed 1945" instead of "today".
+Whether a work was finished is another question (172): `completion` unfinished / completed_by_another (+ date, note,
+citable) — Klimt's Amalie Zuckerkandl and Adam und Eva unfinished at his death, whole; the Nike of Samothrace finished,
+`fate` partly_destroyed without a date ("fragmentary", not placed in the provenance list).
 `fate_event(artwork_id)` (171): the fate's cause — an event that `concerns` the work and overlaps `fate_date` — for the
 API's `fate.event` and the closing line of the provenance (site list, admin table).
 

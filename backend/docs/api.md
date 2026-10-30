@@ -329,8 +329,11 @@ with a place of `steps`. `null` without two placed stops. Say "≈ 20,700 km ove
   museums linked to what the map shows, events in the time window or the chosen entries' span).
 
 ### Fate (artworks, 103)
+- `completion` (detail, 172): `{status, label, date, note}` or `null` (finished as far as known). `status`: `unfinished`
+  (left so — the artist's death, abandoned) · `completed_by_another` (finished by another hand, who: a `co_creator`);
+  `date` when it stopped / was finished. Independent of `fate`: Klimt's last portraits are unfinished and whole.
 - `fate` (detail): `{status, label, date, note, event}` or `null` (extant as far as known). `status`: `destroyed` ·
-  `partly_destroyed` (fragments survive) · `lost` (whereabouts unknown, also stolen and never recovered); `date` a
+  `partly_destroyed` (fragments survive — `label` "fragmentary" when undated: losses at an unknown time, 172) · `lost` (whereabouts unknown, also stolen and never recovered); `date` a
   date object or null; `note` how and why, in the source's words. Lists have `fate` (the status or null). Show it
   prominently ("Destroyed 1945 — burnt in the Friedrichshain flak tower"); the provenance's last holder is then the
   last known one, not today's. `event` `{slug, name}` or null: its cause — an event that `concerns` the work and whose

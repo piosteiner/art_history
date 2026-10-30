@@ -24,6 +24,8 @@ test('the export imports again: public numbers as numbers, an older quoted one a
   const before = sql("SELECT names::text || '|' || coalesce(created_label, '') FROM artworks WHERE slug = 'the-starry-night'");
   sql(`UPDATE artworks SET names = names || '[{"text": "RT Pseudonym", "role": "alternative", "kind": "pseudonym"}]'::jsonb,
          created_label = 'between 1888 and 1889', created = '[1888-01-01,1890-01-01)' WHERE slug = 'the-starry-night';
+       UPDATE artworks SET completion = 'unfinished', completion_date = year_range(1890), completion_date_label = '1890',
+         completion_note = 'RT: left unfinished' WHERE slug = 'the-starry-night';  -- whether it was finished (172)
        INSERT INTO bibliography (slug, kind, name) VALUES ('rt-source', 'web', 'RT source') ON CONFLICT (slug) DO NOTHING;
        INSERT INTO citations (entity_type, entity_id, field, source_id, note, accessed)
        SELECT 'artwork', entity_id('artwork', 'the-starry-night'), 'medium', entity_id('source', 'rt-source'), 'RT · a note · with dots', current_date`);

@@ -53,3 +53,26 @@ test('fate: its cause is the event that concerns the work at that time, not anot
   sql(`DELETE FROM events WHERE slug = 'test-fate-fire'`);
   expect((await api(request, '/artworks/test-fate-work')).fate.event).toBeNull();
 });
+
+test('completion (172): unfinished with a date and a note, in the detail; a note without it refused; undated fragments read "fragmentary"', async ({ userA, request }) => {
+  await userA.goto('/artworks/test-fate-work/edit');
+  await userA.click('summary:has-text("Unfinished, or finished by another hand")');
+  await userA.selectOption('#f-completion', 'unfinished');
+  await userA.fill('#f-completion_date', '1918');
+  await userA.fill('#f-completion_note', "unfinished at the artist's death");
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/done=published/);
+  const w = await api(request, '/artworks/test-fate-work');
+  expect(w.completion).toMatchObject({ status: 'unfinished', label: 'unfinished', note: "unfinished at the artist's death" });
+  expect(w.completion.date).toMatchObject({ from_year: 1918, label: '1918' });
+  expect(w.fate).toBeNull();   // finished or not says nothing about what survives
+  expect(() => sql(`UPDATE artworks SET completion = NULL WHERE slug = 'test-fate-work'`)).toThrow(/artworks_completion_details/);
+
+  // a statue without head and arms, lost at an unknown time: fragmentary — no closing line in the admin's provenance
+  sql(`UPDATE artworks SET fate = 'partly_destroyed', fate_note = 'head and arms lost' WHERE slug = 'test-fate-work';
+       INSERT INTO provenance (artwork_id, position, owner_label, method, direct, acquired, acquired_label)
+       VALUES (entity_id('artwork', 'test-fate-work'), 0, 'Test Museum Owner', 'purchase', true, year_range(1863), '1863')`);
+  expect((await api(request, '/artworks/test-fate-work')).fate.label).toBe('fragmentary');
+  await userA.goto('/artworks/test-fate-work');
+  await expect(userA.locator('table.provenance tbody.fate')).toHaveCount(0);
+});

@@ -575,7 +575,8 @@ function section({ e, steps, names, cites = {}, marker = null, back = '', gaps =
   let n = 0;
   // the closing line after the last step; partly destroyed after the last step that began by then
   const startOf = (s) => (/^[[(](\d{4}-\d\d-\d\d)/.exec(s.period || '') || [])[1] || '';
-  const fateAt = !f ? -1 : f.status !== 'partly_destroyed' || !f.from_date ? steps.length - 1
+  // fragmentary (partly destroyed at an unknown time) has no place in the chain — the facts say it
+  const fateAt = !f || (f.status === 'partly_destroyed' && !f.from_date) ? -1 : f.status !== 'partly_destroyed' ? steps.length - 1
     : steps.reduce((at, s, i) => (startOf(s) && startOf(s) <= f.from_date ? i : at), steps.length - 1);
   return html`<h2 id="provenance">Provenance</h2>
     ${gaps && gaps.length ? coverageBar(gaps, f) : ''}

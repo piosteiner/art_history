@@ -55,6 +55,7 @@ const LABELS = {
   'artwork.conceived': 'Designed (block, model)',
   'artwork.created_span': 'The span means',
   'artwork.fate': 'Fate', 'artwork.fate_date': 'Fate: when', 'artwork.fate_note': 'Fate: how',
+  'artwork.completion': 'Finished?', 'artwork.completion_date': 'Stopped / finished when', 'artwork.completion_note': 'Why, by whom',
   'artwork.web_url': 'Web page', 'artwork.institution': 'Institution (where it is now)', 'artwork.on_loan': 'On loan there',
   'artwork.on_loan_since': 'On loan since', 'artwork.parent': 'Part of', 'artwork.part_number': 'Number in it', 'artwork.parts_count': 'Number of parts',
   'artwork.location': 'Where it stands', 'artwork.area': 'Outline (gardens, parks, precincts)', 'artwork.other_dimensions': 'Further measurements', 'term.name': 'Term',
@@ -84,6 +85,8 @@ const TYPE_HINTS = {
   'artwork.fate': 'Only when the work no longer exists or nobody knows where it is: destroyed (in a fire, a war, on purpose), partly destroyed, or lost — also a stolen work that never resurfaced. Cite the source with the marker. The provenance stays as it is; its last holder is then the last known one.',
   'artwork.created_span': 'Only for a span (1916–1918): “worked on throughout” when the artist worked on it over the whole time — the provenance then has them hold it from the start; “made at some point in it” when only the date is uncertain. Circa, decades and centuries are set to the second by themselves.',
   'artwork.fate_note': 'How and why, briefly — e.g. “burnt in the Friedrichshain flak tower, May 1945”.',
+  'artwork.completion': html`Only when the work was never finished by its artist: <b>unfinished</b> — left so (the artist’s death, abandoned; a debated <i>non finito</i> too, with a note) · <b>finished by another hand</b> — add who as a co-creator relationship. Not for damage or losses later: that is the fate below. Cite the source with the marker.`,
+  'artwork.completion_note': 'Why, briefly — e.g. “unfinished at the artist’s death” or “completed by Palma il Giovane”.',
   'artwork.conceived': html`Only when it differs from “Created”: a print pulled or a bronze cast later — often after the artist's death — from a block, plate or model made earlier (Gauguin's woodblock 1893–94, printed by his son in 1921).`,
   'artwork.title_status': html`Empty when the title is in its original language. A translation (an English title for a Japanese print): <b>official</b> — the holding institution’s or a publisher’s (add the source with the marker on the page) · <b>common</b> — in use in the literature or on Wikidata · <b>own</b> — yours (shown in [square brackets]). The same for translations among the other names: the second menu next to “translation”.`,
   'artwork.inventory_number': 'Only together with the institution above — the number belongs to its collection, as it publishes it (Kunsthaus: BU 0099). The owner’s number, former numbers and catalogue raisonné numbers: “Further numbers” just below.',
@@ -139,7 +142,7 @@ const TYPE_HINTS = {
 };
 // The empty choice of a menu whose column may be empty, and readable names of some values.
 const EMPTY_CHOICE = { 'artwork.title_status': 'original — not a translation', 'artwork.provenance_status': 'not assessed',
-  'artwork.fate': 'extant — as far as known', 'artwork.created_span': 'not stated' };
+  'artwork.fate': 'extant — as far as known', 'artwork.created_span': 'not stated', 'artwork.completion': 'finished — as far as known' };
 const ENUM_LABELS = { 'artwork.title_status.official': 'official translation', 'artwork.title_status.common': 'common translation',
   'artwork.title_status.own': 'own translation',
   // the categories of the Swiss Federal Office of Culture (BAK) for the provenance 1933–1945 (074)
@@ -148,8 +151,10 @@ const ENUM_LABELS = { 'artwork.title_status.official': 'official translation', '
   'artwork.provenance_status.c_indications': 'C — not fully clarified, indications of looted art or suspicious circumstances',
   'artwork.provenance_status.d_seized': 'D — looted art / seized as a result of Nazi persecution',
   // what became of it (103)
-  'artwork.fate.destroyed': 'destroyed', 'artwork.fate.partly_destroyed': 'partly destroyed — fragments survive',
+  'artwork.fate.destroyed': 'destroyed', 'artwork.fate.partly_destroyed': 'partly destroyed / fragmentary — parts survive',
   'artwork.fate.lost': 'lost — whereabouts unknown',
+  // whether it was finished (172)
+  'artwork.completion.unfinished': 'unfinished — left so', 'artwork.completion.completed_by_another': 'finished by another hand',
   // what a span of years under "Created" means (135)
   'artwork.created_span.duration': 'worked on throughout — made over this time',
   'artwork.created_span.uncertain': 'made at some point in it — the date is uncertain' };
@@ -346,6 +351,7 @@ const SECTIONS = {
     { title: 'Title and names', id: 'names', rows: [['title'], ['title_status'], ['names']] },
     { title: 'Who and when', id: 'who', rows: [['creator', 'attribution_label'], ['created', 'created_span'],
       g('Designed earlier (prints, casts)…', ['conceived'], 'A print or cast made later than its design — often after the artist’s death.'),
+      g('Unfinished, or finished by another hand…', ['completion', 'completion_date', 'completion_note'], 'A work its artist never finished (Klimt’s last portraits) — not one damaged later.'),
       g('Part of a series…', ['parent', 'part_number', 'parts_count'],
         'For a print from a series, a panel of a triptych, a leaf of an album — or for the whole itself (its number of parts).', WHOLES)] },
     { title: 'Object', id: 'object', rows: [['kind', 'medium'], ['materials'], ['dimensions'], ['dimensions_note'], ['other_dimensions']] },

@@ -1645,6 +1645,21 @@ test('provenance: a destroyed work\'s list ends with its destruction and the eve
   await expect(items.last()).toContainText('Second Owner');
 });
 
+test('completion (172): an unfinished work says so in the facts, under the title and at the artist\'s step; undated fragments stay off the rail', async ({ page }) => {
+  const artist = { type: 'artist', slug: 'katsushika-hokusai', name: 'Katsushika Hokusai' };
+  await patch(page, GREAT_WAVE, (b) => {
+    b.provenance = [step(0, artist, { kind: 'creation', in_chain: true, direct: true, period: year(1916, 1918), end_basis: 'recorded' })];
+    b.provenance_coverage = null;
+    b.completion = { status: 'unfinished', label: 'unfinished', date: { ...span('1918-01-01', '1918-12-31'), label: '1918' }, note: "at the artist's death" };
+    b.fate = { status: 'partly_destroyed', label: 'fragmentary', date: null, note: 'head and arms lost' };
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect(page.locator('.facts', { hasText: 'Completion' })).toContainText("unfinished 1918 — at the artist's death");
+  await expect(page.locator('.facts')).toContainText('fragmentary');
+  await expect(page.locator('.provenance-list')).toContainText('left unfinished 1918');
+  await expect(page.locator('.provenance-fate')).toHaveCount(0);
+});
+
 test('provenance coverage (170): a destroyed work\'s bar ends with its destruction, not today', async ({ page }) => {
   const person = (slug: string, name: string) => ({ type: 'person', slug, name });
   await patch(page, GREAT_WAVE, (b) => {

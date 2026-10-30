@@ -326,6 +326,7 @@ export interface Artwork extends DetailBase, Located, Titled {
   phases?: Phase[];
   /** What became of it (API 103): destroyed / partly destroyed / lost, when and how; null while extant. */
   fate?: ArtworkFate | null;
+  completion?: ArtworkCompletion | null;
   /** What the span of `created` means (API 135): `duration` = worked on over that time, `uncertain` = made at some point
    * in it; null = not stated. */
   created_span?: 'duration' | 'uncertain' | null;
@@ -363,6 +364,9 @@ export interface ProvenanceCoverage {
 export type ProvenanceCategory = 'A' | 'B' | 'C' | 'D';
 export interface ProvenanceStatus { category: ProvenanceCategory; code: string; label: string; note: string | null }
 /** What became of an artwork (API 103): null while extant as far as known; `note`: how, in the source's words. */
+/** Whether it was finished (API 172): left unfinished, or finished by another hand; null when finished as far as known. */
+export interface ArtworkCompletion { status: 'unfinished' | 'completed_by_another'; label: string; date: DateRange | null; note: string | null }
+
 /** What became of it (API 103); `event`: its cause — an event that concerns the work at that time (API, 2026-10-30). */
 export interface ArtworkFate { status: 'destroyed' | 'partly_destroyed' | 'lost'; label: string; date: DateRange | null; note: string | null; event?: { slug: string; name: string } | null }
 
