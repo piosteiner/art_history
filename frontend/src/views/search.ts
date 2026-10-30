@@ -9,6 +9,7 @@ import { describeQuery, parseQuery, textQuery } from '../query';
 import { markedWords } from '../highlight';
 import { html, PLURAL_LABEL, render, thumb, trusted, TYPE_LABEL } from '../html';
 import { replaceUrl } from '../router';
+import { wholeKind } from '../series';
 import type { EntityType, TextHit } from '../types';
 import { showError } from './common';
 
@@ -77,15 +78,25 @@ export function searchPage(main: HTMLElement, params: URLSearchParams) {
       ${TYPES.map((t) => html`<button type="button" data-type="${t}" class="${t === type ? 'on' : ''}" aria-pressed="${String(t === type)}">${PLURAL_LABEL[PLURAL[t]]}</button>`)}`);
   }
 
-  // each hit says what it is: an artwork with its artist and date (the subtitle, API), else its kind and dates; its picture
-  const hitRow = (h: TextHit) => html`<li class="text-hit${h.image_url ? ' has-image' : ''}">
+  // each hit says what it is: an artwork with its artist and date (the subtitle, API), else its kind and dates; its
+  // picture. A whole (series, versions, cycle) is marked as one, with its parts and where they are; a single work says
+  // where it is now. The passage only when the words were found in a text or the provenance — for a name, the other
+  // names (translations, a reading) say nothing new.
+  const hitRow = (h: TextHit) => {
+    const g = h.group;
+    const what = [g ? 'Group of works' : TYPE_LABEL[h.type], h.subtitle || [h.kind, h.period?.label].filter(Boolean).join(' · ')].filter(Boolean).join(' · ');
+    const where = g ? (g.held_by.length ? `Parts in: ${g.held_by.join(', ')}` : '') : h.institution ? `Now in: ${h.institution}` : '';
+    return html`<li class="text-hit${h.image_url ? ' has-image' : ''}${g ? ' text-hit-group' : ''}">
       ${h.image_url ? html`<img class="card-img text-hit-img" src="${thumb(h.image_url, 120)}" alt="" loading="lazy" crossorigin="anonymous" data-full="${h.image_url}"${
         thumb(h.image_url, 120) !== h.image_url ? html` data-fallback="${h.image_url}"` : ''}>` : ''}
       <a class="text-hit-name" href="${hitHref(h)}">${h.name}</a>
+      ${g ? html`<span class="tag tag-group">${wholeKind({ kind: g.kind, is_group: true, parts: g.parts, parts_count: g.parts_count })}</span>` : ''}
       <span class="tag tag-matched tag-matched-${h.matched_in}" title="${MATCHED[h.matched_in][1]}">${MATCHED[h.matched_in][0]}</span>
-      <span class="muted small text-hit-what">${[TYPE_LABEL[h.type], h.subtitle || [h.kind, h.period?.label].filter(Boolean).join(' · ')].filter(Boolean).join(' · ')}</span>
-      ${h.headline_html ? html`<p class="text-hit-passage">${trusted(h.headline_html)}</p>` : ''}
+      <span class="muted small text-hit-what">${what}</span>
+      ${where ? html`<span class="muted small text-hit-where">${where}</span>` : ''}
+      ${h.headline_html && h.matched_in !== 'name' ? html`<p class="text-hit-passage">${trusted(h.headline_html)}</p>` : ''}
     </li>`;
+  };
   const among = () => (type ? ` among ${PLURAL_LABEL[PLURAL[type]].toLowerCase()}` : '');
 
   /** One batch: the first (from = 0) replaces the list, the next ones are added while scrolling. */

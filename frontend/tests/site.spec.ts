@@ -255,7 +255,9 @@ test('search page (087): Enter opens full-text search — names and texts, why i
   await page.locator('#types button', { hasText: 'Artworks' }).click();
   await expect(page).toHaveURL(/\/search\?q=gauguin&type=artwork$/);
   await expect(page.locator('#count')).toContainText('among artworks');
-  expect(new Set(await page.locator('#items .text-hit .muted.small').allTextContents().then((t) => t.map((x) => x.split(' · ')[0])))).toEqual(new Set(['Artwork']));
+  // every hit an artwork — a whole says "Group of works" (131)
+  expect([...new Set(await page.locator('#items .text-hit .text-hit-what').allTextContents().then((t) => t.map((x) => x.split(' · ')[0])))]
+    .every((k) => k === 'Artwork' || k === 'Group of works')).toBe(true);
   await page.goto('/search?q=gauguin&type=artworks');
   await expect(page.locator('#types button.on')).toHaveText('Artworks');
   // no pages: more results load while scrolling
@@ -2887,4 +2889,21 @@ test('protection status (API 166): a designation as its own section of the relat
   await expect(group).toBeVisible();
   await expect(group.locator('a[href="/glossary/national-treasure-japan"]')).toHaveText('National Treasure (Japan)');
   await expect(group).toContainText('1951');
+});
+
+test('search page: a whole is marked as one, with its parts and where they are; a name match shows no passage (API 131)', async ({ page }) => {
+  await page.route(/\/v1\/search\/text\?/, (r) => r.fulfill({ json: { total: 2, data: [
+    { type: 'artwork', slug: 'test-group', public_id: 1, path: '/artworks/1/test-group', name: 'Test Group', kind: 'versions', period: null, matched_in: 'name',
+      provenance_ids: [], score: 1, headline_html: 'ruran<mark>x</mark> · translations', subtitle: 'Vincent van Gogh, 1889 · versions', image_url: null,
+      institution: null, group: { kind: 'versions', parts: 5, parts_count: 5, held_by: ['Museum A', 'Museum B'] } },
+    { type: 'artwork', slug: 'test-single', public_id: 2, path: '/artworks/2/test-single', name: 'Test Single', kind: 'oil painting', period: null, matched_in: 'text',
+      provenance_ids: [], score: 1, headline_html: 'a <mark>passage</mark>', subtitle: 'Vincent van Gogh, 1889 · oil painting', image_url: null, institution: 'Museum A', group: null }] } }));
+  await page.goto('/search?q=test');
+  const [group, single] = [page.locator('.text-hit').nth(0), page.locator('.text-hit').nth(1)];
+  await expect(group.locator('.tag-group')).toHaveText('Versions · 5 parts');
+  await expect(group).toContainText('Group of works');
+  await expect(group).toContainText('Parts in: Museum A, Museum B');
+  await expect(group.locator('.text-hit-passage')).toHaveCount(0);
+  await expect(single).toContainText('Now in: Museum A');
+  await expect(single.locator('.text-hit-passage')).toContainText('passage');
 });

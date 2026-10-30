@@ -61,6 +61,18 @@ test('hits carry a subtitle and a picture: an artwork with its artist and date',
   const hit = (await search(request, 'starry night')).data.find((h) => h.slug === 'the-starry-night');
   expect(hit.subtitle).toMatch(/^Vincent van Gogh, .*1889/);
   expect(hit).toHaveProperty('image_url');
+  // an artwork says where it is now; a whole its parts and where they are, with a part's picture (131)
+  expect(hit).toHaveProperty('institution');
+  expect(hit.group).toBeNull();
+  sql(`INSERT INTO artworks (slug, title) VALUES ('test-hit-whole', 'Testwhole Starry');
+       UPDATE artworks SET parent_id = entity_id('artwork', 'test-hit-whole') WHERE slug = 'the-starry-night'`);
+  try {
+    const whole = (await search(request, 'testwhole')).data.find((h) => h.slug === 'test-hit-whole');
+    expect(whole.group).toEqual(expect.objectContaining({ parts: 1 }));
+    expect(whole.group.held_by.length).toBeGreaterThan(0);
+  } finally {
+    sql("UPDATE artworks SET parent_id = NULL WHERE slug = 'the-starry-night'; DELETE FROM artworks WHERE slug = 'test-hit-whole'");
+  }
   const quick = await api(request, '/search?q=starry');
   expect(quick.data.find((h) => h.slug === 'the-starry-night').subtitle).toMatch(/^Vincent van Gogh/);
 });

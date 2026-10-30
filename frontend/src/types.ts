@@ -550,7 +550,9 @@ export interface DetailByPlural {
 
 // ---- search, vocabulary --------------------------------------------------------------------------
 
-export interface SearchHit { type: EntityType; slug: string; name: string; kind: string | null; period: DateRange | null; score: string; subtitle?: string | null; image_url?: string | null }
+/** A whole among the search hits (API): its kind, how many parts are entered (of how many) and the museums holding them. */
+export interface HitGroup { kind: string | null; parts: number; parts_count: number | null; held_by: string[] }
+export interface SearchHit { type: EntityType; slug: string; name: string; kind: string | null; period: DateRange | null; score: string; subtitle?: string | null; image_url?: string | null; institution?: string | null; group?: HitGroup | null }
 
 export interface RelationshipType {
   code: string; label: string; inverse_label: string | null; category: Category;
@@ -689,6 +691,8 @@ export interface TextHit {
   type: EntityType; slug: string; public_id: number; path: string; name: string; kind: string | null; period: DateRange | null;
   /** What it is in one line — an artwork's artist and date, a museum's city (the previews'); its picture. */
   subtitle?: string | null; image_url?: string | null;
+  /** Artworks: where it is now; a whole (series, versions, cycle) its parts and where they are (API). */
+  institution?: string | null; group?: HitGroup | null;
   matched_in: 'name' | 'text' | 'provenance'; provenance_ids: number[]; score: number; headline_html: string | null;
 }
 

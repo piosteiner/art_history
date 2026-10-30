@@ -44,12 +44,30 @@ router.get('/vocabulary', async (req, res) => {
 });
 
 // What each hit is, in one line — an artwork with its artist and date ("Vincent van Gogh, January 1889 · oil painting"),
-// a museum with its city — and its picture: the previews' (040), for the hits of one answer only. → (row) → {subtitle, image_url}
+// a museum with its city — and its picture: the previews' (040), for the hits of one answer only. An artwork also says
+// where it is now; a whole (a series, versions, a cycle — 131) how many parts it has and where they are, and shows its
+// first part's picture when it has none of its own. → (row) → {subtitle, image_url, institution?, group?}
 async function previewsOfHits(rows) {
   const { rows: pv } = rows.length ? await apiPool.query(`SELECT p.type::text AS type, p.slug, p.subtitle, p.image_url FROM entry_previews p
     WHERE (p.type, p.slug) IN (SELECT * FROM unnest($1::entity_type[], $2::text[]))`, [rows.map((r) => r.type), rows.map((r) => r.slug)]) : { rows: [] };
   const by = new Map(pv.map((p) => [`${p.type}/${p.slug}`, p]));
-  return (r) => ({ subtitle: by.get(`${r.type}/${r.slug}`)?.subtitle || null, image_url: by.get(`${r.type}/${r.slug}`)?.image_url || null });
+  const works = rows.filter((r) => r.type === 'artwork').map((r) => r.slug);
+  const { rows: aw } = works.length ? await apiPool.query(`
+    SELECT w.slug, (SELECT i.name FROM institutions i WHERE i.id = w.current_institution_id) AS institution,
+           CASE WHEN artwork_is_group(w.id) OR EXISTS (SELECT 1 FROM artworks c WHERE c.parent_id = w.id) THEN jsonb_build_object(
+             'kind', w.kind, 'parts', (SELECT count(*) FROM artworks c WHERE c.parent_id = w.id)::int, 'parts_count', w.parts_count,
+             'held_by', (SELECT coalesce(jsonb_agg(DISTINCT i.name), '[]') FROM artworks c JOIN institutions i ON i.id = c.current_institution_id WHERE c.parent_id = w.id),
+             'image_url', (SELECT im.url FROM artworks c JOIN images im ON im.artwork_id = c.id WHERE c.parent_id = w.id
+                           ORDER BY nullif(c.part_number, '')::text COLLATE sort_natural NULLS LAST, im.position LIMIT 1)) END AS grp
+    FROM artworks w WHERE w.slug = ANY($1)`, [works]) : { rows: [] };
+  const art = new Map(aw.map((a) => [a.slug, a]));
+  return (r) => {
+    const p = by.get(`${r.type}/${r.slug}`) || {};
+    const a = r.type === 'artwork' ? art.get(r.slug) : null;
+    const group = a && a.grp ? { kind: a.grp.kind, parts: a.grp.parts, parts_count: a.grp.parts_count, held_by: a.grp.held_by } : null;
+    return { subtitle: p.subtitle || null, image_url: p.image_url || (a && a.grp && a.grp.image_url) || null,
+      ...(a ? { institution: a.institution || null, group } : {}) };
+  };
 }
 
 // One search box for everything: ?q=hokusai → best matches across all entity types.

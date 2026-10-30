@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Search hits: wholes as wholes; German states until 1918; unchecked polity dates marked
+- **What:** `/v1/search` and `/v1/search/text` send for artworks `institution` (where it is now) and for a whole
+  (series, versions, cycle — 131) `group: {kind, parts, parts_count, held_by}`, with a part's picture when the whole has
+  none. Site: a whole shows "Group of works", a tag "Versions · 5 parts" and "Parts in: …"; a single work "Now in: …";
+  the passage only for matches in a text or the provenance (for a name it showed the other names and the search
+  index's readings). Data: the German states (Bavaria, Prussia, Saxony, Württemberg, Baden, Hesse, Oldenburg,
+  Brunswick, Mecklenburg-Strelitz, Anhalt, Saxe-Weimar-Eisenach; 30 links) run to their end in 1918 (Wikidata P576)
+  instead of 1871, with the German Empire beside them at the same level (30 links, cited Q43287); 128 `in_polity`
+  links whose change date no Wikidata statement supports are `probable` with a note until checked.
+- **Why:** owner, 2026-10-30 (search display of series; open points 2 and 3).
+- **Revert:** `git revert`; the data via the admin history.
+
 ### Export ↔ import made equal again; `import --diff`; designations for three Japanese works
 - **What:** `npm run import -- --dry-run --diff` lists, field by field, what an import would change (the audit rows of
   its rolled-back transaction). Found and fixed: a source's note that itself contains " · " was appended again on

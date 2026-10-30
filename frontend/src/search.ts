@@ -1,6 +1,7 @@
 // Header search across all types: the same field search as the pickers and list pages (name, details and hidden
 // fields such as type or birthplace, with the reason shown), plus the API's typo-tolerant name matches
 // (/v1/search, "hokusia" → Hokusai) for whatever the field search missed.
+import { wholeKind } from './series';
 import { listAll, search } from './api';
 import { entries, explain, matches, type Entry, type Match } from './catalog';
 import { href, html, langAttr, render, TYPE_LABEL, type Html } from './html';
@@ -108,7 +109,9 @@ export function mountSearch(root: HTMLElement) {
     const extra = found.similar.slice(0, MAX);
     hits = [
       ...local.map(({ e, m }) => toHit(e, m)),
-      ...extra.map((h) => ({ type: h.type, slug: h.slug, name: html`${h.name}`, meta: h.subtitle || [h.kind, h.period?.label].filter(Boolean).join(' · '), why: null })),
+      ...extra.map((h) => ({ type: h.type, slug: h.slug, name: html`${h.name}`, why: null,
+        // a whole says so first ("Versions · 5 parts"), then what it is
+        meta: [h.group ? wholeKind({ kind: h.group.kind, is_group: true, parts: h.group.parts, parts_count: h.group.parts_count }) : '', h.subtitle || [h.kind, h.period?.label].filter(Boolean).join(' · ')].filter(Boolean).join(' · ') })),
     ];
     similarFrom = extra.length && local.length ? local.length : -1;
     active = -1;

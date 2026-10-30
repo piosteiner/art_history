@@ -746,6 +746,9 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .text-hits { padding-left: 1.6rem; max-width: 46rem; }
 .text-hit { margin: 0 0 .9rem; }
 .text-hit-name { font-weight: 600; }
+.text-hit-where { display: block; }
+.text-hit-what { display: block; }
+.tag-group { color: var(--accent, var(--text)); border-color: currentColor; font-weight: 600; }
 .text-hit.has-image { position: relative; padding-left: 64px; min-height: 54px; }
 .text-hit-img { position: absolute; left: 0; top: 2px; width: 52px; height: 52px; }
 .text-hit-passage { margin: .2rem 0 0; font-size: .92rem; color: var(--muted); }
