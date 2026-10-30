@@ -36,12 +36,12 @@ async function load(t, e) {
   const wd = qid
     ? wikidata.compare(adminPool, t, qid, ours, { type: t.type, id: e.id }).then((plan) => ({ plan }), (err) => ({ error: `Wikidata ${qid} could not be read: ${err.message}` }))
     : Promise.resolve({ missing: true });
-  const [wikidataRes, types, mg, jp, it, cb, ...auth] = await Promise.all([wd, qid ? wikidata.typesOf(qid).catch(() => null) : null,
+  const [wikidataRes, types, mg, jp, it, cb, bk, ...auth] = await Promise.all([wd, qid ? wikidata.typesOf(qid).catch(() => null) : null,
     ['artist', 'person'].includes(t.type) ? metagrid.find(adminPool, t, e) : null, japansearch.find(t, ours), arco.find(t, e, qid),
-    colbase.find(adminPool, t, ours),
+    colbase.find(adminPool, t, ours, 'colbase'), colbase.find(adminPool, t, ours, 'bunka'),
     ...AUTH.map((c) => authority.plan(t, e, c))]);
   const sources = { wikidata: wikidataRes, ...Object.fromEntries(AUTH.map((c, i) => [c, auth[i]])) };
-  return { ours, qid, sources, merged: mergedRows(t, ours, sources), types, metagrid: mg, japan: jp, arco: it, colbase: cb };
+  return { ours, qid, sources, merged: mergedRows(t, ours, sources), types, metagrid: mg, japan: jp, arco: it, colbase: cb, bunka: bk };
 }
 
 // The date fields offered by two or more sources → [{ key, ours, groups: [{ range, label, value, offers: [{src, status}] }] }]
@@ -123,7 +123,7 @@ function page(t, e, data) {
     <h1>Enrich ${e.name}</h1>
     ${types && !types.includes(t.type) ? typeWarning(t, types, qid, e) : ''}
     <ul class="enrich-sources">${['wikidata', ...AUTH].map((c) => sourceLine(t, e, c, sources[c]))}</ul>
-    ${!wd && !auth.length && !data.japan && !data.arco && !data.colbase && !(data.metagrid && (data.metagrid.exact || (data.metagrid.candidates || []).length))
+    ${!wd && !auth.length && !data.japan && !data.arco && !data.colbase && !data.bunka && !(data.metagrid && (data.metagrid.exact || (data.metagrid.candidates || []).length))
       ? html`<p class="flash warn">No source to compare with yet — link the entry on Wikidata or add a GND / SIKART number first.</p>` : html`
     <p class="muted small">One review for every source. Taken values are cited with their source — a value several sources agree on, with each of
       them. Your own values are never replaced unless you choose so; field values go into the working copy — check them and Publish.
@@ -161,6 +161,7 @@ function page(t, e, data) {
       ${metagrid.section(data.metagrid)}
       ${japansearch.section(data.japan)}
       ${colbase.section(data.colbase)}
+      ${colbase.section(data.bunka)}
       ${arco.section(data.arco)}
       <div class="actions sticky-actions"><button>Apply selected</button><a class="button secondary" href="/${t.folder}/${e.slug}">Cancel</a></div>
     </form>`}`;
@@ -196,12 +197,14 @@ async function apply(t, e, data, body, user) {
     for (const code of AUTH) if (sources[code].plan) out[code] = await authority.apply(db, t, e, code, sources[code].plan, choices[code], user);
     out.metagrid = await metagrid.apply(db, t, e, data.metagrid, body);
     out.colbase = await colbase.apply(db, t, e, data.colbase, body);
+    out.bunka = await colbase.apply(db, t, e, data.bunka, body, out.colbase.form);
     return out;
   }, { source: 'enrich' });
   // the working copy: Wikidata's values last — for a value several sources agree on, its text and label win
   const form = {};
   for (const code of [...AUTH].reverse()) if (results[code] && results[code].form) Object.assign(form, results[code].form);
-  if (results.colbase) Object.assign(form, results.colbase.form);  // ColBase fills only empty fields: nothing else offers them
+  // Japan's heritage databases fill only empty fields (ColBase before the Agency's): nothing else offers them
+  for (const code of ['bunka', 'colbase']) if (results[code]) Object.assign(form, results[code].form);
   if (results.wikidata) Object.assign(form, wikidata.withProvenance(results.wikidata.form, ours, qid));
   // the names field, from all sources together: Wikidata's (or ours), the other names ticked in the records, the
   // reading from Japan Search — each source alone computed it from ours and would undo the others
@@ -218,7 +221,10 @@ async function apply(t, e, data, body, user) {
     await collab.applyForm(t, e.id, form, user.username);
     await withTx(user, async (db) => {
       if (results.wikidata && results.wikidata.cites.length) await citations.pendingFromWikidata(db, t.type, e.id, qid, settled(results.wikidata.cites), user.id);
-      if (results.colbase && results.colbase.cites.length) await citations.pendingFromSource(db, t.type, e.id, 'colbase', results.colbase.url, settled(results.colbase.cites), user.id);
+      for (const code of ['colbase', 'bunka']) {
+        const r = results[code];
+        if (r && r.cites.length) await citations.pendingFromSource(db, t.type, e.id, r.source, r.url, settled(r.cites), user.id);
+      }
       for (const code of AUTH) {
         if (results[code] && results[code].cites.length) {
           await citations.pendingFromSource(db, t.type, e.id, authority.SOURCES[code].source, sources[code].plan.url, settled(results[code].cites), user.id);

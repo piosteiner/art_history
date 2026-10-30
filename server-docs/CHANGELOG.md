@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Cultural Heritage Online on Enrich; Japanese sources in the bibliography
+- **What:** `src/admin/colbase.js` serves two Japan Search databases with one code path: ColBase (`cobas`) and
+  Cultural Heritage Online (`bunka`, the Agency for Cultural Affairs' 文化遺産オンライン — every designated cultural
+  property, also temples' and shrines'). The Agency's records give the dates of the designations (重文指定年月日,
+  国宝指定年月日) → `designated_as` relationships dated "since …"; one relationship per term, a dated one completes
+  ColBase's undated one, each source cited. A common title is searched together with the Japanese name of our holder
+  (大日如来坐像 円成寺) first. Data: bibliography sources `japan-search`, `colbase`, `e-museum`, `bunka-online`,
+  `tnm-collection` (citable by hand). E2E colbase extended.
+- **Why:** owner, 2026-10-30 (both proposals: the sources, and a comparison with Cultural Heritage Online).
+- **Revert:** `git revert`; the five sources via the admin (delete — not while cited).
+
 ### Site: very wide pictures enlarged like the others; no longer under the map among several images
 - **What:** the lightbox opens a very wide picture whole, in a frame the screen's height (`.lightbox-wide`); zooming
   makes it grow to the strip's height (a double click goes there), Shift + wheel / a sideways wheel moves it sideways,

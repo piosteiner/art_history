@@ -229,6 +229,13 @@ function handle(req, res) {
     return json({ response: { rows: [row('Plum Estate, Kameido', 'CC0'), row('Restricted print', 'usage conditions apply')] } });
   }
   // ColBase through Japan Search (src/admin/colbase.js): Kōrin's Wind and Thunder Gods, and a glass-plate photograph of it
+  // Cultural Heritage Online through Japan Search: the same screens with the dates of their designations
+  if (url.pathname === '/jps/api/item/search/jps-cross' && p.get('f-db') === 'bunka') {
+    return json({ hit: 1, list: [{ id: 'bunka-1', common: { title: '紙本金地著色風神雷神図屏風〈尾形光琳筆／〉' },
+      'bunka-1-s': '紙本金地著色風神雷神図屏風〈尾形光琳筆／〉', 'bunka-7-s': '尾形光琳', 'bunka-9-s': '江戸', 'bunka-11-s': '国宝・重要文化財(美術品)',
+      'bunka-12-u': 'https://online.bunka.example/detail/1', 'bunka-14-s': 'Tokyo National Museum',
+      'bunka-15-s': '重文指定年月日:19200415\n国宝指定年月日:19930610\n登録年月日:' }] });
+  }
   if (url.pathname === '/jps/api/item/search/jps-cross' && p.get('f-db') === 'cobas') {
     const cobas = (id, provider, extra) => ({ id, common: { title: '風神雷神図屏風', contentsRightsType: 'ccby', linkUrl: `https://colbase.example/${id}` },
       'cobas-1-u': `https://colbase.example/${id}`, 'cobas-5-s': '風神雷神図屏風', 'cobas-19-s': provider, ...extra });

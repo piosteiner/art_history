@@ -100,8 +100,9 @@ Postgres FKs can't point at "a row in one of six tables", so triggers enforce it
   term of the category `heritage designation`, category `heritage`, site section "Protection status") — several per
   entry, each with its period (since when), note and sources; terms: National Treasure / Important Cultural Property /
   Important Art Object (Japan), World Heritage Site, Swiss cultural property of national significance, Monument
-  historique, all under "heritage designation"; check `designation_not_heritage`. ColBase (Japan's national museums,
-  through Japan Search) offers them on Enrich (`src/admin/colbase.js`).
+  historique, all under "heritage designation"; check `designation_not_heritage`. ColBase (Japan's national museums)
+  and Cultural Heritage Online (the Agency for Cultural Affairs, with the designation dates), both through Japan
+  Search, offer them on Enrich (`src/admin/colbase.js`).
   Places of one name (162): `place_qualifier(place)` = what sets it apart from the others of its (folded) name — the
   place it lies in when each has a different one ("Cambridge (Massachusetts)" / "(Cambridgeshire)"), else the
   designation, the kind, the country; null when the name is the only one (computed per request, index on
