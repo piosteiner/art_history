@@ -19,11 +19,21 @@ names:
   - lang: pt
     role: translation
     text: Quioto
+  - lang: ja
+    role: former
+    text: 平安京
+    period: 22 November 794–1185
+    note: “capital of peace and tranquillity”
+  - role: former
+    text: Heian-kyō
+    period: 22 November 794–1185
+    note: the capital's name in the Heian period; late in it the city came to be called simply Kyōto
 kind: settlement
 designation: city of Japan
 parent: kyoto-prefecture
 country_code: JP
 location: [135.76811, 35.01161]
+description_md: Emperor Kanmu moved the capital here in 794 from Nagaoka, abandoned after only ten years because the court felt it tainted by the vengeful ghosts of men involved in its founding[[source/history-of-japanese-art|pp. 100–101]]. The new city, Heian-kyō (“capital of peace and tranquillity”), opened the Heian period and was modelled on the Chinese capitals Chang'an and Luoyang[[source/wikipedia-ja-heiankyo|中国の洛陽城や長安城を模して793年（延暦12年）から建設された … 延暦13年10月22日（西暦794年11月18日（ユリウス暦））]]. Like Fujiwara, Heijō and Nagaoka before it, it was laid out on a rectangular grid, about 5 km from east to west and 6 km from north to south, with the palace precinct and the government buildings in the four central blocks at its northern edge[[source/history-of-japanese-art|pp. 102–103]]. Late in the Heian period the city came to be called simply Kyōto, “capital city”[[source/wikipedia-en-kyoto|“late in the Heian period the city came to be widely referred to simply as Kyōto”]]. Except for Taira no Kiyomori's brief move to Fukuhara in 1180 it stayed the seat of the emperors until the government moved to Tokyo in 1869[[source/wikipedia-ja-heiankyo|平清盛により断行された福原遷都（1180年）期間を除き … 明治2年（1869年）に政府（太政官）が東京（旧江戸）に移転して首都機能を失っている]].
 wikidata_id: Q34600
 metadata:
   sources: [Wikidata Q34600 (retrieved 2026-10-24)]

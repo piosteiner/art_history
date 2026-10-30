@@ -6,6 +6,11 @@ names:
     text: "{曼荼羅|まんだら}"
 category: iconography
 definition: A diagram of the Buddhist cosmos with its deities arranged in a fixed order, used in the rituals of esoteric Buddhism.
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4f/Womb_Realm_Mandala_%28Daiko-in_Shibata%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Womb_Realm_Mandala_(Daiko-in_Shibata).jpg
+    license: Public domain
+    credit: anonymous painter of the Nanbokucho period
 sources:
   definition:
     - source: history-of-japanese-art

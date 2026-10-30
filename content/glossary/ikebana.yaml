@@ -7,8 +7,42 @@ names:
   - lang: en
     role: translation
     text: flower arranging
+  - kadō
+  - way of flowers
+  - Japanese flower arrangement
+  - lang: zh
+    role: translation
+    text: 華道
+  - lang: ko
+    role: translation
+    text: 이케바나
+  - lang: ru
+    role: translation
+    text: Икебана
 category: other
 definition: The art of arranging flowers, practised by men and women of all classes since the Muromachi period; bronze vases were its preferred vessels.
+wikidata_id: Q178459
+metadata:
+  sources: [Wikidata Q178459 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Ikebana_exhibition_at_Meguro_Gajoen_2018_04.jpg/1280px-Ikebana_exhibition_at_Meguro_Gajoen_2018_04.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ikebana_exhibition_at_Meguro_Gajoen_2018_04.jpg
+    license: CC0
+    credit: Gryffindor
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Ikebana_exhibition_at_Meguro_Gajoen_2018_11.jpg/1280px-Ikebana_exhibition_at_Meguro_Gajoen_2018_11.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ikebana_exhibition_at_Meguro_Gajoen_2018_11.jpg
+    license: CC0
+    credit: Gryffindor
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Ikebana_-_Yoshiko_Nakamura_01B.jpg/1280px-Ikebana_-_Yoshiko_Nakamura_01B.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ikebana_-_Yoshiko_Nakamura_01B.jpg
+    license: CC BY-SA 3.0
+    credit: Joe Mabel
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Ikebana_exhibition_at_Meguro_Gajoen_2018_15b.jpg/1280px-Ikebana_exhibition_at_Meguro_Gajoen_2018_15b.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ikebana_exhibition_at_Meguro_Gajoen_2018_15b.jpg
+    license: CC0
+    credit: Gryffindor
+identifiers:
+  gnd: 4026530-4
 sources:
   definition:
     - source: history-of-japanese-art

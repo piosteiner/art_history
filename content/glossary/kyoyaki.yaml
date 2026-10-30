@@ -7,8 +7,26 @@ names:
   - lang: en
     role: translation
     text: Kyoto ware
+  - Kyō-yaki
+  - Kyo pottery
+  - Kyo porcelain
+  - lang: fr
+    role: translation
+    text: Céramique Kyō
+  - Kyō ware
 category: object type
 definition: "Kyoto ceramics of the Edo period: stoneware with delicate Japanese designs in bright overglaze enamels, made by named studio potters such as Ninsei and Kenzan."
+wikidata_id: Q11374566
+metadata:
+  sources: [Wikidata Q11374566 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Tiered_Food_Box_LACMA_AC1992.158.1.1-.4.jpg/1280px-Tiered_Food_Box_LACMA_AC1992.158.1.1-.4.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tiered_Food_Box_LACMA_AC1992.158.1.1-.4.jpg
+    license: Public domain
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5c/WLA_haa_Dish_Mukozuke_attributed_to_Ogata_Kenzan_retouch.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:WLA_haa_Dish_Mukozuke_attributed_to_Ogata_Kenzan_retouch.jpg
+    license: CC BY-SA 2.5
+    credit: Wikipedia Loves Art participant "Department_of_Trife"
 sources:
   definition:
     - source: history-of-japanese-art

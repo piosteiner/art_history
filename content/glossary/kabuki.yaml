@@ -4,7 +4,23 @@ names:
   - lang: ja
     role: original
     text: "{歌舞伎|かぶき}"
+  - kabuki theatre
+  - lang: ko
+    role: translation
+    text: 가부키
+  - lang: ru
+    role: translation
+    text: кабуки
 category: performing arts
 definition: Classical Japanese theatre of drama and dance, with stylised acting, rich costumes and kumadori make-up; all-male since 1629.
 description_md: "Classical Japanese theatre that mixes drama and dance, known for stylised acting, lavish costumes and the kumadori make-up of some roles[[source/wikipedia-en-kabuki|“a classical form of Japanese theatre, mixing dramatic performance with traditional dance. Kabuki theatre is known for its heavily stylised performances, its glamorous, highly decorated costumes, and for the elaborate kumadori make-up worn by some of its performers”]]. It began in the early Edo period with Izumo no Okuni’s female troupe in Kyoto and has been played by men only since women were banned from it in 1629[[source/wikipedia-en-kabuki|“the art’s founder, Izumo no Okuni, formed a female dance troupe that performed dances and light sketches in Kyoto. The art form later developed into its present all-male theatrical form after women were banned from performing in kabuki theatre in 1629”]]. Inscribed by UNESCO in 2008[[source/wikipedia-en-kabuki|“In 2008, it was inscribed in the UNESCO Representative List of the Intangible Cultural Heritage of Humanity”]]. A play: [[kanjincho]]."
 wikidata_id: Q199701
+metadata:
+  sources: [Wikidata Q199701 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Morita-za_in_the_1790s.jpg/1280px-Morita-za_in_the_1790s.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Morita-za_in_the_1790s.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  gnd: 4138350-3

@@ -7,8 +7,31 @@ names:
   - lang: en
     role: translation
     text: hanging scroll
+  - kakejiku
+  - lang: ja
+    role: translation
+    text: 掛軸
+  - lang: ru
+    role: translation
+    text: Какэмоно
 category: format
 definition: A painting or calligraphy mounted as a vertical hanging scroll, rolled up when not displayed; in a house it is hung in the tokonoma.
+wikidata_id: Q277583
+metadata:
+  sources: [Wikidata Q277583 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Ikenobou_Senjou_%281%29.jpg/1280px-Ikenobou_Senjou_%281%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ikenobou_Senjou_(1).jpg
+    license: CC0
+    credit: Gryffindor
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2c/Sumiyoshi_monogatari_emaki_-_kakemono%2C_Tokyo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sumiyoshi_monogatari_emaki_-_kakemono,_Tokyo.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f7/Hanging_scroll_and_Ikebana_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hanging_scroll_and_Ikebana_1.jpg
+    license: CC BY-SA 3.0
+    credit: Chris 73
 sources:
   definition:
     - source: history-of-japanese-art

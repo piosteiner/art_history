@@ -1,4 +1,15 @@
 public_id: 102333
 name: Jōbōji urushi
+names:
+  - Jōbōji-nuri
+  - lang: ja
+    role: translation
+    text: 浄法寺漆
+  - lang: zh
+    role: translation
+    text: 淨法寺漆
 category: material
 parent: lacquer
+wikidata_id: Q11556858
+metadata:
+  sources: [Wikidata Q11556858 (retrieved 2026-10-30)]

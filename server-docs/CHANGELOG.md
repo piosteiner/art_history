@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: gesso completed, Heian-kyō merged into Kyoto
+- **Gesso** (auto-created from the Cenacolo's materials) is Wikidata Q1514256: definition, names (it/de/ja/ko), text on
+  the traditional glue-chalk ground, Leonardo's ground on the refectory wall and Mason's use for gofun and the raised
+  rims under gold clouds (pp. 132–137, 244–245); definition cited (Wikipedia, Wikidata); flag cleared.
+- **Heian-kyō** (created via Enrich for Murasaki Shikibu) merged into Kyoto like Edo into Tokyo (`merge_entries`,
+  `/places/heian-kyo` redirects): former names 平安京 / Heian-kyō 22.11.794–1185, so Murasaki's places read "Kyoto
+  (then Heian-kyō)"; Kyoto's description after Mason (pp. 100–103: Nagaoka abandoned, grid plan) and Wikipedia
+  (Chang'an model, capital until 1869). Heian-kyō's Wikidata citations, carried over by the merge, removed.
+- **Parent citations:** 30 of 61 places moved to their region on 2026-10-29 had Wikidata P131 citations still on the
+  country; refreshed where P131 names the new parent. 31 stay "outdated" — Wikidata names a district/county between.
+- **Why:** owner, 2026-10-30. **Revert:** admin history per entry.
+
 ### Data: the ten places auto-created today completed; Commons credits repaired
 - **Places:** Kamakura, Odawara (→ Kanagawa), Shimonoseki (→ Yamaguchi), Itabuki Palace (→ Nara Prefecture, existed
   643–655), Makishima Castle, Yamashiro Province (→ Kyoto Prefecture; province, 7th century–1868), Seoul, Ganghwa Island

@@ -9,6 +9,15 @@ names:
     text: cloistered rule
 category: other
 definition: Government by retired, cloistered emperors, begun by Emperor Shirakawa in 1086, which gave the late Heian period its name.
+description_md: form of government in Japan during the Heian period, in which abdicated emperors lived in monasteries but actively participated in politics while the titular emperor performed ceremonies
+wikidata_id: Q865416
+metadata:
+  sources: [Wikidata Q865416 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/%E7%99%BD%E6%B2%B3%E4%B8%8A%E7%9A%87%E3%81%AE%E5%BE%A1%E5%B9%B8.jpg/1280px-%E7%99%BD%E6%B2%B3%E4%B8%8A%E7%9A%87%E3%81%AE%E5%BE%A1%E5%B9%B8.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E7%99%BD%E6%B2%B3%E4%B8%8A%E7%9A%87%E3%81%AE%E5%BE%A1%E5%B9%B8.jpg
+    license: Public domain
+    credit: 高階隆兼（模写：板橋貫雄）
 sources:
   definition:
     - source: history-of-japanese-art

@@ -6,6 +6,16 @@ names:
     text: "{公案|こうあん}"
 category: other
 definition: A paradoxical question or statement that a Zen master gives a student to break through ordinary thinking — “the sound of one hand”.
+wikidata_id: Q1231764
+metadata:
+  sources: [Wikidata Q1231764 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/06/Wild_Duck_Koan_LACMA_M.2006.198.3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wild_Duck_Koan_LACMA_M.2006.198.3.jpg
+    license: Public domain
+    credit: Genrō Suiō (Japan, 1717-1789)
+identifiers:
+  gnd: 4203886-8
 sources:
   definition:
     - source: history-of-japanese-art

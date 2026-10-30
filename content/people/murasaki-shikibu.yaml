@@ -1,0 +1,61 @@
+public_id: 105556
+name: Murasaki Shikibu
+names:
+  - kind: birth
+    lang: ja
+    role: alternative
+    text: 藤原 香子
+  - Lady Murasaki
+kind: person
+occupations: [lady-in-waiting, novelist, poet, writer, diarist, philosopher]
+birth: 970/978
+birth_label: c. 970s
+death: 1014/1031
+death_label: c. 11th century
+wikidata_id: Q81731
+metadata:
+  sources: [Wikidata Q81731 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q81731
+  - type: born_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q81731
+  - type: died_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q81731
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Murasaki-Shikibu-composing-Genji-Monogatari.png/1280px-Murasaki-Shikibu-composing-Genji-Monogatari.png
+    source_url: https://commons.wikimedia.org/wiki/File:Murasaki-Shikibu-composing-Genji-Monogatari.png
+    license: Public domain
+    credit: Tosa Mitsuoki (1617 - 1691)
+identifiers:
+  bnf: 11917249n
+  gnd: "118985655"
+  idref: 02704291X
+  lc: n79100628
+  nlk: KAC199632036
+  viaf: "95154208"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q81731
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q81731
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q81731

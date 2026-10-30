@@ -7,8 +7,24 @@ names:
   - lang: en
     role: translation
     text: Buddhist robe
+  - Kasaya (clothing)
+  - kāsāva
+  - Buddhist toga
+  - lang: ko
+    role: translation
+    text: 가사
+  - lang: ru
+    role: translation
+    text: Кэса
 category: object type
 definition: The patchwork robe of a Buddhist monk, in Japan often made of precious silks given to temples.
+wikidata_id: Q504779
+metadata:
+  sources: [Wikidata Q504779 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/JapaneseKesaofMabury.jpg/1280px-JapaneseKesaofMabury.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:JapaneseKesaofMabury.jpg
+    license: Public domain
 sources:
   definition:
     - source: history-of-japanese-art

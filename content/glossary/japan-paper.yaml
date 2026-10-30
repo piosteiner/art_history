@@ -12,6 +12,11 @@ names:
     text: Japanpapier
 category: material
 definition: Paper made by hand in Japan (washi) from the long inner-bark fibres of the paper mulberry (kōzo) or of gampi, scooped from a vat of pulp with a bamboo screen (su); strong, thin and absorbent, it served for scrolls, screens and woodblock prints.
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Shiroishi_washi_letter_paper.jpg/1280px-Shiroishi_washi_letter_paper.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shiroishi_washi_letter_paper.jpg
+    license: CC BY-SA 3.0
+    credit: Mizu basyo
 sources:
   definition:
     - note: "paper “made either from kozo, the bark of the paper-mulberry tree, or ganpi” · “The main papermaking device, still used today, consists of two frames: the su with a bamboo screen and a second frame”"

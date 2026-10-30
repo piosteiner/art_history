@@ -1,3 +1,33 @@
 public_id: 102138
 name: gesso
+names:
+  - lang: it
+    role: original
+    text: gesso
+  - lang: de
+    role: translation
+    text: Gesso
+  - lang: de
+    role: alternative
+    text: Kreidegrund
+  - lang: ja
+    role: translation
+    text: ジェッソ
+  - lang: ko
+    role: translation
+    text: 젯소
 category: material
+definition: A white ground of chalk or gypsum bound with animal glue, laid in several coats on a rigid support — a wooden panel, a wall, a carving — and smoothed to an absorbent surface for painting or gilding.
+description_md: |-
+  The traditional mixture is animal glue (usually rabbit-skin glue), chalk and white pigment; it is brittle and cracks on anything that bends, so it suits panels rather than canvas, for which a half-chalk ground with linseed oil is used; today's “acrylic gesso” is a different, flexible product[[source/wikipedia-en-gesso|“Gesso is traditionally a mix of an animal glue binder (usually rabbit-skin glue), chalk, and white pigment” · “rather brittle and susceptible to cracking, thus making it suitable for rigid surfaces only”]]. The word is Italian for gypsum or chalk.
+
+  Leonardo laid such a ground on the stone wall of the refectory for the [[artwork/the-last-supper-leonardo]] — a double layer of gesso, pitch and mastic with an undercoat of lead white — so that he could paint slowly in tempera instead of fresco; the paint soon began to flake[[source/wikipedia-en-the-last-supper-leonardo|“The painting is on a stone wall sealed with a double layer of gesso, pitch, and mastic. Then he added an undercoat of white lead”]].
+
+  Mason uses the word also for Japanese work: the white undercoat of gofun (ground shell) beneath the paint of Heian sculpture[[source/history-of-japanese-art|pp. 132–137]], and the narrow raised rims of gesso under the gold clouds of Momoyama screens[[source/history-of-japanese-art|pp. 244–245]].
+wikidata_id: Q1514256
+sources:
+  definition:
+    - note: “a white paint mixture used to coat rigid surfaces such as wooden painting panels … as a permanent absorbent primer substrate” · “a mix of an animal glue binder (usually rabbit-skin glue), chalk, and white pigment”
+      source: wikipedia-en-gesso
+    - accessed: 2026-10-30
+      wikidata: Q1514256

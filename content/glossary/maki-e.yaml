@@ -7,9 +7,23 @@ names:
   - lang: en
     role: translation
     text: sprinkled picture
+  - lang: ko
+    role: translation
+    text: 마키에
+  - lang: ru
+    role: translation
+    text: Маки-э
 category: technique
 parent: lacquer
 definition: Lacquer decoration made by sprinkling gold or silver powder onto wet lacquer.
+wikidata_id: Q2083390
+metadata:
+  sources: [Wikidata Q2083390 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Makie.jpg/1280px-Makie.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Makie.jpg
+    license: CC BY-SA 3.0
+    credit: Pqks758
 sources:
   definition:
     - source: history-of-japanese-art
