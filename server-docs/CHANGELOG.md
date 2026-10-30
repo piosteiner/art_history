@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Building history: a work in phases (migration 169)
+- **What:** tables `artwork_phases` (kind enum `phase_kind` construction … reconstruction, title, parts concerned,
+  period daterange + label, text with footnotes, position — deferrable unique per work) and `artwork_phase_people`
+  (artist / person / institution as an exclusive arc, role as written, `patron`); audited; derived-data triggers.
+  View `edges` + branch source `'phase'`: artists → `co_creator` of the work, patrons → `commissioned` it; the worker
+  stores them with the work's derived edges. `src/phases.js` (shared), CMS section "Building history" on the artwork
+  page (`src/admin/routes/phases.js`: add / edit / delete / drag), API detail `phases`, artist works list the phase's
+  role, YAML `phases:` (export/import). Site: section "Building history" on artwork pages. Unit + e2e test; `npm run perf`.
+- **Why:** owner: the Berliner Schloss — five centuries of architects and patrons, burnt 1945, blown up 1950, rebuilt
+  2013–2020 as the Humboldt Forum; one creator and one creation date can't describe it, and `fate` would wrongly end it.
+- **Revert:** `DELETE FROM artwork_phases;` then restore the previous `edges` and `process_derived` definitions
+  (migration 126/168 state, `pg_get_viewdef` before 169), `DROP TABLE artwork_phase_people, artwork_phases; DROP TYPE
+  phase_kind; DROP FUNCTION phase_people_touch()`; `git revert`.
+
 ### Roadmap topics in an order of their own; the changelog follows it (migration 168)
 - **What:** `roadmap_areas.section` (internal) and `position` (by hand); view `roadmap_areas_ordered` (rank: by hand,
   else section, then name); `changelog_renumber()` sorts a day's items by kind, then that rank (167's trigger uses it),

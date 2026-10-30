@@ -1,5 +1,7 @@
 // Admin panel — Entries: list, new, create, view, edit, save — relationships, images, provenance and parts added on the page.
 // Mounted by src/admin/index.js in a fixed order; shared helpers in src/admin/core.js.
+const phases = require('../../phases');
+const phasesRoutes = require('./phases');
 const express = require('express');
 const { keyExpr, sortKey } = require('../../sortkey');
 const { adminPool } = require('../../db');
@@ -472,7 +474,7 @@ router.get('/:plural/:slug', async (req, res) => {
       FROM graph_links r JOIN relationship_types rt ON rt.code = r.relationship_type
       JOIN entity_index s ON (s.type, s.id) = (CASE WHEN (r.object_type, r.object_id) = ($1::entity_type, $2) THEN r.subject_type ELSE r.object_type END,
                                                CASE WHEN (r.object_type, r.object_id) = ($1::entity_type, $2) THEN r.subject_id ELSE r.object_id END)
-      WHERE (r.object_type = $1 AND r.object_id = $2)
+      WHERE (r.object_type = $1 AND r.object_id = $2 AND NOT (r.source = 'phase' AND $1::entity_type = 'artwork'))  -- (its Building history shows them)
          OR (r.subject_type = $1 AND r.subject_id = $2 AND r.source <> 'relationship' AND r.subject_type <> 'artwork')
       ORDER BY rt.sort_order, lower(r.period) NULLS FIRST`, [t.type, e.id]),
     relationshipTypes(adminPool, t.type, { reverse: true }),
@@ -602,6 +604,7 @@ router.get('/:plural/:slug', async (req, res) => {
         alternatives: provAlternatives,
         cites: await citations.forProvenance(adminPool, [...provSteps.filter((s) => s.id).map((s) => s.id), ...[...provAlternatives.values()].flat().map((a) => a.id)]),
         marker: (c, target, back) => citations.marker(c, target, back, { recent }), back: `${here}#provenance` }) : ''}
+      ${t.type === 'artwork' ? phasesRoutes.section({ e, list: await phases.read(adminPool, e.id) }) : ''}
       <h2 id="relationships">Relationships</h2>
       ${await (async () => {
         const relCites = await citations.forRelationships(adminPool, [...otherRels.map((x) => x.id), ...incoming.rows.filter((r) => r.source === 'relationship').map((r) => r.id)]);
@@ -618,7 +621,8 @@ router.get('/:plural/:slug', async (req, res) => {
           <td>${r.inverse_label}</td><td><a href="/${BY_TYPE[r.type].folder}/${r.slug}">${r.name}</a> <span class="tag">${r.type}</span></td>
           <td>${r.period_label || ''}${r.end_basis === 'implied' ? html` <span class="tag implied">end implied</span>` : ''}</td><td class="muted">${r.label || ''}</td>
           <td>${r.source === 'relationship' ? citations.marker(relCites[r.id], { relationship: r.id, label: `“${r.inverse_label} ${r.name}”` }, `${here}#relationships`, { recent }) : ''}</td>
-          <td>${r.source === 'provenance' ? html`<a href="/provenance/${r.provenance_id}/edit" title="from the provenance">provenance</a>`
+          <td>${r.source === 'phase' ? html`<a href="/artworks/${r.type === 'artwork' ? r.slug : e.slug}#building-history" title="from the building history">building history</a>`
+            : r.source === 'provenance' ? html`<a href="/provenance/${r.provenance_id}/edit" title="from the provenance">provenance</a>`
             : r.source === 'creator' ? html`<a href="/artworks/${r.slug}/edit" title="the artwork's creator field">creator field</a>`
             : html`<a href="/relationships/${r.id}/edit">edit</a>`}</td></tr>`)}</tbody></table></div>` : ''}`;
       })()}

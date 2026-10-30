@@ -341,7 +341,11 @@ const EXTRAS = {
       FROM artworks w
       LEFT JOIN LATERAL (SELECT 'co' AS role, r.label FROM relationships r
                           WHERE r.relationship_type = 'co_creator' AND r.subject_type = 'artwork' AND r.subject_id = w.id
-                            AND r.object_type = 'artist' AND r.object_id = $1 LIMIT 1) co ON w.creator_id IS DISTINCT FROM $1
+                            AND r.object_type = 'artist' AND r.object_id = $1
+                          UNION ALL  -- a phase of its building history (169): "architect · Baroque rebuilding"
+                          SELECT 'co', concat_ws(' · ', pp.role, ph.title) FROM artwork_phase_people pp JOIN artwork_phases ph ON ph.id = pp.phase_id
+                          WHERE ph.artwork_id = w.id AND pp.artist_id = $1
+                          LIMIT 1) co ON w.creator_id IS DISTINCT FROM $1
       WHERE w.creator_id = $1 OR co.role IS NOT NULL
       ORDER BY lower(w.created) NULLS LAST, ${sortKey('artwork', 'w', 'title')}`, [id])).rows,
   }),
@@ -349,6 +353,17 @@ const EXTRAS = {
   // date), "step" (recorded), "loan" (implied: on loan at the current institution) — each with its computed period and
   // where its end comes from, the holder's role, joint owners and the price
   artwork: async (id) => ({
+    // the building history (169): phases in order — kind, title, parts, period, text; who took part with role and patron
+    phases: (await apiPool.query(`
+      SELECT ph.kind::text AS kind, ph.title, ph.part, range_json(ph.period, ph.period_label) AS period, ph.notes_md,
+             coalesce((SELECT jsonb_agg(jsonb_build_object('type', e.type, 'slug', e.slug, 'name', e.name, 'public_id', e.public_id,
+                         'role', pp.role, 'patron', pp.patron) ORDER BY pp.position, pp.id)
+                       FROM artwork_phase_people pp
+                       JOIN entity_index e ON (e.type, e.id) = (CASE WHEN pp.artist_id IS NOT NULL THEN 'artist'::entity_type
+                            WHEN pp.person_id IS NOT NULL THEN 'person'::entity_type ELSE 'institution'::entity_type END,
+                            coalesce(pp.artist_id, pp.person_id, pp.institution_id))
+                       WHERE pp.phase_id = ph.id), '[]'::jsonb) AS people
+      FROM artwork_phases ph WHERE ph.artwork_id = $1 ORDER BY ph.position, ph.id`, [id])).rows,
     // series and other wholes (migration 037): what it is part of (the chain upwards, nearest first), its neighbours,
     // and — for a whole — its parts in order
     part_of: (await apiPool.query(`
@@ -666,10 +681,11 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     ]);
     // [[links]] show the linked entries' names: looked up for exactly the links in these texts
     const steps = extras.provenance || [];
-    const env = { names: await linkNames(apiPool, [...e.md.map((f) => entity[f]), ...rels.map((r) => r.notes_md), ...steps.map((p) => p.notes_md), ...steps.flatMap((p) => (p.alternatives || []).map((a) => a.notes_md))]),
+    const env = { names: await linkNames(apiPool, [...e.md.map((f) => entity[f]), ...rels.map((r) => r.notes_md), ...steps.map((p) => p.notes_md), ...steps.flatMap((p) => (p.alternatives || []).map((a) => a.notes_md)), ...(extras.phases || []).map((p) => p.notes_md)]),
       used: new Set(), cited: new Set() };
     const relationships = rels.map((x) => renderMd(x, ['notes_md'], env));
     steps.forEach((p) => { renderMd(p, ['notes_md'], env); (p.alternatives || []).forEach((a) => renderMd(a, ['notes_md'], env)); });
+    (extras.phases || []).forEach((p) => renderMd(p, ['notes_md'], env));
     const body = nameCountry(shapeNames(renderMd(entity, e.md, env), e.name));
     if (mentionedIn) body.mentioned_in = mentionedIn;
     // the glossary terms its texts link, with their short definitions — for tooltips without further requests

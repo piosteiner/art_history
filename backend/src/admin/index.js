@@ -71,6 +71,7 @@ router.use(require('./routes/relationships'));
 router.use(require('./routes/citations'));
 router.use(require('./routes/compare'));
 router.use(require('./routes/provenance'));
+router.use(require('./routes/phases'));         // a work's building history (169)
 router.use(require('./routes/wikidata'));
 router.use(require('./routes/entries'));
 router.use(require('./routes/tools'));

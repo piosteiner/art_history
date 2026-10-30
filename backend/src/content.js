@@ -112,7 +112,7 @@ function toRow(doc, fields) {
   let nameSources = [];
 
   for (const key of Object.keys(doc)) {
-    if (['relationships', 'images', 'provenance', 'numbers', 'sources', 'identifiers', 'slug'].includes(key)) continue;  // their own parts, below
+    if (['relationships', 'images', 'provenance', 'numbers', 'phases', 'sources', 'identifiers', 'slug'].includes(key)) continue;  // their own parts, below
     // the public number (085): kept as exported, so the addresses survive an import into another database
     if (key === 'public_id') {
       if (doc.public_id === null || doc.public_id === undefined) continue;
@@ -314,13 +314,28 @@ function toRow(doc, fields) {
       });
     }
   }
+  // the building history (169): [{kind, title, part, period, notes_md, people: [{who: 'artist/slug', role, patron}]}] in order;
+  // null = key absent (left as it is), [] = none
+  let phases = null;
+  if (doc.phases !== undefined) {
+    if (!fields.creator) errors.push('phases: only artworks have a building history');
+    else if (!Array.isArray(doc.phases)) errors.push('phases must be a list');
+    else {
+      const phaseUtil = require('./phases');
+      phases = [];
+      doc.phases.forEach((ph, i) => {
+        const c = phaseUtil.check(phaseUtil.fromDoc(ph || {}));
+        if (c.error) errors.push(`phases[${i}]: ${c.error}`); else phases.push(c.phase);
+      });
+    }
+  }
   // identifiers (053): {gnd: '118559737', ulan: '500021093'} — numbers in authority files (checked by the database)
   let identifiers = null;
   if (doc.identifiers !== undefined && doc.identifiers !== null) {
     if (typeof doc.identifiers !== 'object' || Array.isArray(doc.identifiers)) errors.push('identifiers must be a mapping authority → number');
     else identifiers = Object.fromEntries(Object.entries(doc.identifiers).map(([k, v]) => [k, String(v)]));
   }
-  return { cols, refs, parent, relationships: Array.isArray(relationships) ? relationships : [], images, provenance, numbers, sources, identifiers, nameSources, errors };
+  return { cols, refs, parent, relationships: Array.isArray(relationships) ? relationships : [], images, provenance, numbers, phases, sources, identifiers, nameSources, errors };
 }
 
 // Stored date → { value: '1886-03/1888-02-20', label } where label is null when it is just the generated one.

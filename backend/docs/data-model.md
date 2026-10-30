@@ -783,3 +783,15 @@ the entry — and write it back with `jsonb_populate_record()`; a deleted entry 
 `changelog/new|<id>`, `roadmap/new|<id>`, base = the record's updated_at, fields jsonb, saved_at) — autosaved while
 typing (`editor/formdrafts.js`), restored on reopening, removed on Save; not audited.
 
+## Building history (migration 169)
+A work has one creator and one creation date; a building has phases. `artwork_phases` (artwork_id, position — unique
+per work, deferrable, dragged in the CMS —, `kind` enum `phase_kind`, title, part, `period` daterange + label as
+everywhere, `notes_md` with footnotes) and `artwork_phase_people` (phase_id, position, an exclusive arc artist_id /
+person_id / institution_id as in `images`, `role` as written, `patron` boolean). The view `edges` gets a branch with
+source `'phase'`: an artist → `co_creator` of the work, a patron → `commissioned` it, label "role · phase title",
+period of the phase — so architects and patrons show up on their pages and in the network without a relationship typed
+twice. The worker stores them with the work's other derived edges (`graph_links.artwork_id` = the work, also for the
+`commissioned` edges whose subject is the patron). Triggers queue the work (`derived_touch('artwork.artwork_id+')`)
+and every participant (`phase_people_touch()`). Code: `src/phases.js` (read, check, save, YAML shape — `phases:` in an
+artwork's file with `people: [{who: artist/slug, role, patron}]`), CMS `src/admin/routes/phases.js`. Why not `fate`:
+what was blown up may stand again — the Berlin Palace (destroyed 1950, rebuilt 2013–2020) is the example.

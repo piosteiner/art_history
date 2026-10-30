@@ -46,6 +46,8 @@ async function main() {
           if (steps.length) doc.provenance = steps;
           const nums = await readNumbers(client, id);
           if (nums.length) doc.numbers = nums;
+          const history = await require('../src/phases').docs(client, id);  // the building history (169)
+          if (history.length) doc.phases = history;
         }
         // other names (152): the period as written, and each name's sources
         if (Array.isArray(doc.names) && doc.names.length) {

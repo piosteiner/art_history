@@ -335,6 +335,16 @@ with a place of `steps`. `null` without two placed stops. Say "≈ 20,700 km ove
   prominently ("Destroyed 1945 — burnt in the Friedrichshain flak tower"); the provenance's last holder is then the
   last known one, not today's.
 
+### Building history (artworks, 169)
+- `phases` (detail): a building's (or any work's) history in order — `[{kind, title, part, period, notes_html, people}]`.
+  `kind`: `construction` · `extension` · `alteration` · `completion` · `restoration` · `damage` · `destruction` ·
+  `demolition` · `reconstruction` · `other`; `part` the parts concerned (null = the whole); `period` a date object or
+  null; `notes_html` with footnotes as in descriptions; `people`: `[{type, slug, name, public_id, role, patron}]` —
+  artist, person or institution, the role as written ("architect", "site manager"), `patron` = commissioned it.
+  Empty array when the work has no phases. Each artist of a phase is a derived `co_creator` of the work (their
+  `artworks` list it with `role` "architect · Baroque rebuilding"), each patron a derived `commissioned` edge
+  (source `phase`, in relationships, graph and network). A work that was destroyed and rebuilt keeps `fate` null.
+
 ### Provenance (artworks)
 The detail of an artwork has **`provenance`**: its holders in order, as the sources record them, read as a chain —
 `[{id, kind, implied, position, owner: {type, slug, name} | null, co_owners: [{type, slug, name}], role, owner_label, owner_name,

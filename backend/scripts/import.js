@@ -486,6 +486,26 @@ async function main() {
       }
     }
 
+    // 3e. The building history of artworks (169), for files with a phases: list: replaced as a whole when it differs
+    //     from what is stored (compared in doc shape), else nothing written.
+    const phaseUtil = require('../src/phases');
+    for (const e of entities.filter((x) => x.phases !== null && x.phases !== undefined)) {
+      const artworkId = ids.get(`${e.type}/${e.slug}`);
+      if (artworkId === undefined) continue;
+      const now = await phaseUtil.docs(client, artworkId);
+      if (JSON.stringify(now) === JSON.stringify(e.doc.phases)) { count('phases unchanged'); continue; }
+      try {
+        await client.query('SAVEPOINT ph');
+        await client.query('DELETE FROM artwork_phases WHERE artwork_id = $1', [artworkId]);
+        for (const [i, ph] of e.phases.entries()) await phaseUtil.save(client, artworkId, { ...ph, position: (i + 1) * 10 });
+        await client.query('RELEASE SAVEPOINT ph');
+        count('phases replaced');
+      } catch (err) {
+        await client.query('ROLLBACK TO SAVEPOINT ph');
+        fail(e.file, `phases: ${err.message}`);
+      }
+    }
+
     // 4. Optional: relationships a content entity used to declare but no longer does.
     //    (Edges whose subject is NOT in content/ — e.g. added via the admin panel — are never touched.)
     if (PRUNE && !errors.length) {
