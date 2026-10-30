@@ -31,7 +31,7 @@ test('a building in phases: makers and patrons from the phases, in order, in the
   await userA.fill('#ph-people', 'artist/no-such-artist | engineer');
   await submitForm(userA);
   await expect(userA.locator('.flash')).toContainText('no artist “no-such-artist”');
-  await userA.fill('#ph-people', '');
+  await userA.fill('#ph-people', 'person/theo-van-gogh | patron');   // the same patron again, no role
   await userA.fill('#ph-period', '1950-09-07/1951-03');
   await submitForm(userA);
   expect(sql("SELECT string_agg(title, ' | ' ORDER BY position) FROM artwork_phases WHERE artwork_id = entity_id('artwork', 'test-phase-palace')"))
@@ -54,16 +54,24 @@ test('a building in phases: makers and patrons from the phases, in order, in the
   expect(work.phases[1].notes_html).toContain('Rebuilt as a royal residence.');
   const artist = await api(request, '/artists/paul-gauguin');
   expect(artist.artworks.find((w) => w.slug === 'test-phase-palace')).toMatchObject({ co_creator: true, role: 'architect · Baroque rebuilding' });
-  const patron = await api(request, '/people/theo-van-gogh');
-  expect(patron.relationships.find((r) => r.entity.slug === 'test-phase-palace')).toMatchObject({ type: 'commissioned', label: 'commissioned' });
+  // the patron of two phases: one line, both phases named, from the first start to the last end
+  const patron = (await api(request, '/people/theo-van-gogh')).relationships.filter((r) => r.entity.slug === 'test-phase-palace');
+  expect(patron).toHaveLength(1);
+  expect(patron[0]).toMatchObject({ type: 'commissioned', label: 'commissioned', note: 'commissioned it · Baroque rebuilding; Demolition',
+    period: { label: '1698–1706, 7 September 1950–March 1951', from_year: 1698, to_year: 1951 } });
 
   // edited: the artist removed → the derived edge goes with it
   await userA.goto('/artworks/test-phase-palace');
   await userA.locator('table.phases tbody', { hasText: 'Baroque rebuilding' }).locator('a:has-text("edit")').click();
   await expect(userA.locator('#ph-people')).toHaveValue('artist/paul-gauguin | architect\nperson/theo-van-gogh | commissioned it | patron');
+  await userA.goBack();
+  await userA.locator('table.phases tbody', { hasText: 'Demolition' }).locator('a:has-text("edit")').click();
+  await expect(userA.locator('#ph-people')).toHaveValue('person/theo-van-gogh | patron');
+  await userA.goBack();
+  await userA.locator('table.phases tbody', { hasText: 'Baroque rebuilding' }).locator('a:has-text("edit")').click();
   await userA.fill('#ph-people', 'person/theo-van-gogh | commissioned it | patron');
   await submitForm(userA);
   await settled();
   expect((await api(request, '/artists/paul-gauguin')).artworks.some((w) => w.slug === 'test-phase-palace')).toBe(false);
-  expect(sql("SELECT count(*) FROM graph_links WHERE source = 'phase' AND artwork_id = entity_id('artwork', 'test-phase-palace')")).toBe('1');
+  expect(sql("SELECT count(*) FROM graph_links WHERE source = 'phase' AND artwork_id = entity_id('artwork', 'test-phase-palace')")).toBe('2');
 });

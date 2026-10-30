@@ -343,7 +343,8 @@ with a place of `steps`. `null` without two placed stops. Say "≈ 20,700 km ove
   artist, person or institution, the role as written ("architect", "site manager"), `patron` = commissioned it.
   Empty array when the work has no phases. Each artist of a phase is a derived `co_creator` of the work (their
   `artworks` list it with `role` "architect · Baroque rebuilding"), each patron a derived `commissioned` edge
-  (source `phase`, in relationships, graph and network). A work that was destroyed and rebuilt keeps `fate` null.
+  (source `phase`, in relationships, graph and network). Someone in several phases of one work is one relationship:
+  `note` the phases' labels joined with "; ", `period` from the first start to the last end (label "1698–1706, 1706–1713"). A work that was destroyed and rebuilt keeps `fate` null.
 
 ### Provenance (artworks)
 The detail of an artwork has **`provenance`**: its holders in order, as the sources record them, read as a chain —

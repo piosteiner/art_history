@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Building history: someone in several phases is one line
+- **What:** API details merge the derived edges of one person/artist/institution with one work from several phases
+  (`mergePhaseEdges()` in `src/routes/entities.js`): one relationship, the phases' labels joined with "; ", the period
+  from the first start to the last end. An artist's works list all their phases' roles (before: the first only).
+  Berliner Schloss: its creation span cited. e2e test extended.
+- **Why:** Frederick I (Schlüter's and Eosander's phases) and Schinkel (apartment, dome) appeared twice.
+- **Revert:** `git revert`.
+
 ### Building history: a work in phases (migration 169)
 - **What:** tables `artwork_phases` (kind enum `phase_kind` construction … reconstruction, title, parts concerned,
   period daterange + label, text with footnotes, position — deferrable unique per work) and `artwork_phase_people`

@@ -312,7 +312,8 @@ const RELATIONSHIPS_SQL = `
          range_json(r.period, r.period_label) AS period,
          r.label AS note, r.certainty, r.notes_md,
          r.source <> 'relationship' AS derived, r.end_basis,  -- derived: the creator field or the provenance (031)
-         CASE WHEN r.source = 'relationship' THEN r.relationship_id END AS _rel_id, r.provenance_id AS _prov_id  -- for their sources
+         CASE WHEN r.source = 'relationship' THEN r.relationship_id END AS _rel_id, r.provenance_id AS _prov_id,  -- for their sources
+         r.source AS _source
   FROM graph_links r  -- the edges view stored (088), kept up to date per change (126): indexed both ways
   JOIN relationship_types rt ON rt.code = r.relationship_type
   -- the "other" end: object for outgoing edges, subject for incoming ones
@@ -322,6 +323,26 @@ const RELATIONSHIPS_SQL = `
   -- the creator edges are left out: the artwork's creator / creators and the artist's artworks already list them
   WHERE ((r.subject_type = $1 AND r.subject_id = $2) OR (r.object_type = $1 AND r.object_id = $2)) AND r.source <> 'creator'
   ORDER BY rt.sort_order, lower(r.period) NULLS LAST, ${natural('o.sort_key')}`;
+
+// Someone in several phases of a building's history (169) — Frederick I commissioning Schlüter's and Eosander's parts —
+// is one line: the phases' labels together, the period from the first start to the last end.
+function mergePhaseEdges(rows) {
+  const first = new Map();
+  return rows.filter((r) => {
+    const source = r._source;
+    delete r._source;
+    if (source !== 'phase') return true;
+    const key = `${r.type}|${r.direction}|${r.entity.type}/${r.entity.slug}`;
+    const a = first.get(key);
+    if (!a) { first.set(key, r); return true; }
+    a.note = [a.note, r.note].filter(Boolean).join('; ') || null;
+    if (a.period && r.period) {
+      const later = (x, y) => (x == null || y == null ? null : (x > y ? x : y));
+      a.period = { ...a.period, label: `${a.period.label}, ${r.period.label}`, to: later(a.period.to, r.period.to), to_year: later(a.period.to_year, r.period.to_year) };
+    } else a.period = a.period || r.period;
+    return false;
+  });
+}
 
 // Hierarchy upwards (Arles → France), a recursive CTE over parent_id.
 const ancestorsSql = (table) => `
@@ -339,13 +360,14 @@ const EXTRAS = {
       SELECT w.slug, w.title, range_json(w.created, w.created_label) AS created, w.kind,
              co.role IS NOT NULL AS co_creator, co.label AS role
       FROM artworks w
-      LEFT JOIN LATERAL (SELECT 'co' AS role, r.label FROM relationships r
+      LEFT JOIN LATERAL (SELECT 'co' AS role, string_agg(x.label, '; ' ORDER BY x.o) AS label FROM (
+                          SELECT r.label, 0 AS o FROM relationships r
                           WHERE r.relationship_type = 'co_creator' AND r.subject_type = 'artwork' AND r.subject_id = w.id
                             AND r.object_type = 'artist' AND r.object_id = $1
-                          UNION ALL  -- a phase of its building history (169): "architect · Baroque rebuilding"
-                          SELECT 'co', concat_ws(' · ', pp.role, ph.title) FROM artwork_phase_people pp JOIN artwork_phases ph ON ph.id = pp.phase_id
-                          WHERE ph.artwork_id = w.id AND pp.artist_id = $1
-                          LIMIT 1) co ON w.creator_id IS DISTINCT FROM $1
+                          UNION ALL  -- the phases of its building history (169), all in one: "architect · Dome; …"
+                          SELECT concat_ws(' · ', pp.role, ph.title), ph.position FROM artwork_phase_people pp JOIN artwork_phases ph ON ph.id = pp.phase_id
+                          WHERE ph.artwork_id = w.id AND pp.artist_id = $1) x
+                          HAVING count(*) > 0) co ON w.creator_id IS DISTINCT FROM $1
       WHERE w.creator_id = $1 OR co.role IS NOT NULL
       ORDER BY lower(w.created) NULLS LAST, ${sortKey('artwork', 'w', 'title')}`, [id])).rows,
   }),
@@ -670,7 +692,7 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     entity.path = `/${plural}/${entity.public_id}/${entity.slug}`;   // the public address (085)
 
     const [rels, extras, mentionedIn] = await Promise.all([
-      apiPool.query(RELATIONSHIPS_SQL, [e.type, id]).then((r) => r.rows),
+      apiPool.query(RELATIONSHIPS_SQL, [e.type, id]).then((r) => mergePhaseEdges(r.rows)),
       EXTRAS[e.type] ? EXTRAS[e.type](id) : {},
       // backlinks: the entries whose texts [[link]] this one (view content_links, migration 030); a term has used_in
       e.type === 'term' ? null : apiPool.query(`
