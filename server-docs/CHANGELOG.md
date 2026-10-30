@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: Zug 1352–1481 after Glauser (Tugium 18, 2002)
+- **What:** Zug's links remodelled from Glauser, "1352 – Zug wird nicht eidgenössisch" (Tugium 18, 2002, pp. 103–115,
+  DOI 10.5169/seals-526867, read by the owner): Holy Roman Empire (Habsburg) 962–1415 (S. 110, 113–114); the forced
+  "Zugerbund" with the Confederates 27 June–14 September 1352, void from the Brandenburg peace (S. 104, 110, 113); Old
+  Swiss Confederacy 1415–4 March 1798 as a sovereign Ort, confederate step by step until 1481 (S. 115 + HLS). All
+  `attested`, quotes in the citations' notes; the source got its DOI, pages and editor.
+- **Why:** owner, 2026-10-30 ("bilde es so genau wie möglich ab").
+- **Revert:** via the admin history (relationships, citations, bibliography `glauser-2002`).
+
 ### Data: Zug's accession cited (HLS + Wikipedia)
 - **What:** source `hls-zug-kanton` (HLS, Zug (Kanton) — read by the owner: "ab 1352", the year only) and
   `wikipedia-en-zug` (the day, 27 June 1352) on Zug's two links (the Empire until, the Confederacy from 1352);
