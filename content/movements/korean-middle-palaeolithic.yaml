@@ -3,7 +3,7 @@ name: Middle Palaeolithic (Korea)
 kind: period
 parent: korean-palaeolithic
 period_label: 100,000–40,000 BCE
-description_md: "**Dates.** A stage of stone-tool industries, not an event: Portal's 100,000–40,000 BCE frame the sites with human remains such as Turubong and Daehyundong[[source/portal-2000|p. 23]]; it is followed by the Middle–Upper Palaeolithic."
+description_md: "**Dates.** A stage of stone-tool industries, not an event. Portal's dates are 100,000–40,000 BCE[[source/portal-2000|p. 23]]; the Encyclopedia of Korean Culture counts it from the beginning of the last glacial period, about 100,000 years ago, to the appearance of blade industries about 35,000 years ago[[source/aks-palaeolithic|「10만년 전에서 … 3만 5천년 전후한 시기까지」]]."
 relationships:
   - type: active_in
     to: place/korean-peninsula
@@ -17,3 +17,7 @@ sources:
     - note: “Human remains have been found at Middle Palaeolithic (100,000–40,000 BC) sites such as Turubong in South Korea and Daehyundong near Pyongyang”
       source: portal-2000
       locator: p. 23
+    - url: https://encykorea.aks.ac.kr/Article/E0005842
+      note: 「대체로 마지막 빙하기가 시작되는 10만년 전에서 후기구석기시대의 돌날〔石刃〕석기공작이 출현하는 3만 5천년 전후한 시기까지의 석기공작들을 부르는 것이 보통이다」
+      source: aks-palaeolithic
+      accessed: 2026-10-30

@@ -1,14 +1,23 @@
 public_id: 104987
 name: Ede
 kind: settlement
+designation: municipality
+parent: gelderland
 location: [5.66667, 52.05]
+description_md: A municipality in the province of Gelderland; its village Otterlo, in the Hoge Veluwe National Park, is the home of the [[institution/kroller-muller-museum]].
 wikidata_id: Q26555
 metadata:
   sources: [Wikidata Q26555 (retrieved 2026-10-30)]
+identifiers:
+  gnd: 4327729-9
 sources:
   kind:
     - accessed: 2026-10-30
       property: P31
+      wikidata: Q26555
+  parent:
+    - accessed: 2026-10-30
+      property: P131
       wikidata: Q26555
   location:
     - accessed: 2026-10-30

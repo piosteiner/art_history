@@ -9,7 +9,7 @@ names:
     text: 初期鐵器時代
 kind: period
 period: -300/-1
-description_md: "**Dates.** It begins about 300 BCE with iron, which came with the Chinese commanderies in the north — though Choi Sung-rak sees an earlier, native iron industry in the south from the time of Wiman Chosŏn (194–108 BCE)[[source/portal-2000|pp. 38–40]]. Its end at the beginning of the Common Era (Portal's “0”) is a convention dividing the Iron Age, not an event; there is no year 0, so it ends here with 1 BCE[[source/portal-2000|p. 38]]."
+description_md: "**Dates.** It begins about 300 BCE, when iron came into use — with the Chinese commanderies in the north, though Choi Sung-rak sees a native iron industry in the south from the time of Wiman Chosŏn (194–108 BCE)[[source/portal-2000|pp. 38–40]][[source/aks-iron-age|「서기전 300년에서 서기 전후(혹은 서기전 100년)까지」]]. Its end is a convention of archaeologists, not an event: the turn of the era (Portal's “0” — there is no year 0, so it ends here with 1 BCE) or, in another reading, about 100 BCE[[source/aks-iron-age|혹은 서기전 100년]][[source/portal-2000|p. 38]]."
 relationships:
   - type: active_in
     to: place/korean-peninsula
@@ -23,3 +23,7 @@ sources:
     - note: “This period is sometimes divided into the Early Iron Age (300 BC–0) and the Later Iron Age or Proto-Three Kingdoms period (0–AD 300). Choi Sung-rak divides it rather into four phases”
       source: portal-2000
       locator: p. 38
+    - url: https://encykorea.aks.ac.kr/Article/E0056111
+      note: 「서기전 300년에서 서기 전후(혹은 서기전 100년)까지를 초기철기시대(初期鐵器時代)로」
+      source: aks-iron-age
+      accessed: 2026-10-30

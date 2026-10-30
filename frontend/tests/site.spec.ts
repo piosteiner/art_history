@@ -1708,6 +1708,16 @@ test('provenance coverage (170): a destroyed work\'s bar ends with its destructi
   await expect(page.locator('.provenance .coverage-ns')).toHaveCount(1);
   await expect(axis.locator('.coverage-ns-label')).toHaveCount(0);
   await expect(page.locator('.coverage .ns-key')).toHaveCount(1);
+
+  // lost (173): the bar ends at the loss too
+  await patch(page, GREAT_WAVE, (b) => {
+    b.fate = { status: 'lost', label: 'lost', date: { ...span('1945-05-01', '1945-05-31'), label: 'May 1945' }, note: null };
+    b.provenance = [step(0, { type: 'person', slug: 'first-owner', name: 'First Owner' }, { kind: 'step', in_chain: true, direct: true, period: year(1900, 1945), end_basis: 'recorded' })];
+    b.provenance_coverage = { documented_percent: 80, has_provenance: true, gap_years: 0, gap_1933_1945_years: 0,
+      segments: [seg('presumed', '1831-01-01', '1899-12-31'), seg('documented', '1900-01-01', '1945-05-31')] };
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect(page.locator('.provenance .coverage-axis')).toContainText('lost May 1945');
 });
 
 test('artwork map (078): a "?" with the years mid-segment, red in 1933–1945; the gaps listed under the map', async ({ page }) => {
@@ -2513,6 +2523,14 @@ test('periods: lanes per region, phases, a region hidden, a window lists the wor
   await expect(page.locator('.periods-active a').first()).toBeVisible();
   await expect(page.locator('.periods-works li').first()).toBeVisible();
   expect(errors).toEqual([]);
+});
+
+test('periods: prehistory reaching back 100,000 years does not squeeze the timeline — it opens on the last millennia (API 174)', async ({ page }) => {
+  await page.goto('/periods');
+  await page.locator('.tick-label').first().waitFor();
+  const ticks = await page.locator('.tick-label').allTextContents();
+  // not the deep-time scale at first (ticks of 10,000 years and more)
+  expect(ticks.some((t) => /^\d{5,} BCE$/.test(t))).toBe(false);
 });
 
 test('periods: a work\'s dot shows its preview; clicked again it opens the work in a new tab, the periods stay', async ({ page, context }) => {

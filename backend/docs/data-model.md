@@ -638,9 +638,10 @@ life (creation → today) minus documented minus presumed = the gaps, with multi
 `unnest`); each gap with the holders before/after and the undated candidates — and `provenance_completeness` (days
 documented / presumed / gap, gap days in 1933–1945, documented %, has_provenance). Admin: bar + gap lines on the
 artwork page, `/quality/provenance-gaps`.
-A destroyed work's life ends with its destruction (170): `fate = 'destroyed'` → until `upper(fate_date)`, without a date
-until the last dated holding — no gap from then until today. `partly_destroyed` (parts survive) and `lost`
-(whereabouts unknown, not existence) run on until today. Bars (site and admin) say "destroyed 1945" instead of "today".
+A destroyed or lost work's life ends with its destruction or loss (170, 173): `fate IN ('destroyed', 'lost')` → until
+`upper(fate_date)`, without a date until the last dated holding — no gap from then until today; when a lost work
+reappears, its fate is cleared and the provenance goes on. `partly_destroyed` (parts survive) runs on until today. Bars
+(site and admin) say "destroyed 1945" / "lost 1945" instead of "today".
 Whether a work was finished is another question (172): `completion` unfinished / completed_by_another (+ date, note,
 citable) — Klimt's Amalie Zuckerkandl and Adam und Eva unfinished at his death, whole; the Nike of Samothrace finished,
 `fate` partly_destroyed without a date ("fragmentary", not placed in the provenance list).
@@ -804,3 +805,10 @@ twice. The worker stores them with the work's other derived edges (`graph_links.
 and every participant (`phase_people_touch()`). Code: `src/phases.js` (read, check, save, YAML shape — `phases:` in an
 artwork's file with `people: [{who: artist/slug, role, patron}]`), CMS `src/admin/routes/phases.js`. Why not `fate`:
 what was blown up may stand again — the Berlin Palace (destroyed 1950, rebuilt 2013–2020) is the example.
+
+## Years before 4713 BCE (migration 174)
+Postgres dates begin in 4713 BCE. Earlier dates stay in the label — an open start (`(,0394-01-01 BC)` + "c. 11,000–400
+BCE") or the label alone (Korean Palaeolithic "100,000–40,000 BCE"). `bce_label_years(label)` reads the years such a
+label names ({from, to}, negative), and `range_json()` uses them for `from_year` / `to_year` where the range has no
+bound — for the site's timeline and sorting. Filters by year work on the ranges: an open start matches any earlier
+window, a label alone none. The export writes an open BCE bound as a year ("-395 or earlier", `formatFuzzyDate`).

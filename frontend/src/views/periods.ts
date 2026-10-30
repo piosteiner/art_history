@@ -281,7 +281,12 @@ export function periodsPage(main: HTMLElement, params: URLSearchParams) {
     }
 
     box.innerHTML = '';
-    const timeline = renderTimeline(box, rows(), { keepOrder: true, initialWindow: windowSel, onWindow: showWindow, onDot: workDot });
+    // prehistory reaches back 100,000 years (API 174): open on the last 5,000 when it does — zooming out shows it all
+    const starts = rows().map((r) => r.from?.from_year ?? r.to?.from_year ?? r.to?.to_year).filter((y): y is number => y != null);
+    const deep = starts.length > 0 && Math.min(...starts) < -5000;
+    const recent = starts.filter((y) => y >= -5000);
+    const initialView = deep && !windowSel && recent.length ? { from: Math.floor(Math.min(...recent) / 100) * 100, to: new Date().getFullYear() } : null;
+    const timeline = renderTimeline(box, rows(), { keepOrder: true, initialWindow: windowSel, initialView, onWindow: showWindow, onDot: workDot });
     if (windowSel) showWindow(windowSel);
   }).catch((err) => { if (current()) showError(box, err); });
 }

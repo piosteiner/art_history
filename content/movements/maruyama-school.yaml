@@ -1,11 +1,35 @@
 public_id: 103178
-name: Maruyama school
-kind: movement
+name: Maruyama–Shijō school
+names:
+  - lang: ja
+    role: original
+    text: "{円山四条派|まるやましじょうは}"
+  - lang: en
+    role: former
+    text: Maruyama school
+  - lang: en
+    role: alternative
+    text: Shijō school
+kind: school
+period: 18th century–19th century
+description_md: |-
+  The Kyoto school of Edo-period realism: drawing from life, Western ideas of space and the tsuketate brushwork, applied to traditional Japanese formats[[source/history-of-japanese-art|pp. 318–322]].
+
+  **Dates.** Founded by Maruyama Ōkyo (1733–95); after his death in 1795 his friend Matsumura Goshun founded the Shijō school, named after the fourth ward of Kyoto where his studio stood, and the style flourished throughout the rest of the Edo period[[source/history-of-japanese-art|pp. 319, 322]]; Kyoto's nihonga of the 20th century grew out of it[[source/history-of-japanese-art|p. 369]].
 wikidata_id: Q11394770
 metadata:
   sources: [Wikidata Q11394770 (retrieved 2026-10-28)]
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 18th century–19th century
 sources:
   kind:
     - accessed: 2026-10-28
       property: P31
       wikidata: Q11394770
+  period:
+    - note: “The Maruyama–Shijō school, the second aspect of Edo-period realism, was founded by Maruyama Ōkyo (1733–95)” · “The word ‘Shijō’ refers to the studio of Ōkyo’s successor, Matsumura Goshun (1752–1811), located in Kyoto’s fourth ward” (p. 319) · “after Ōkyo’s death in 1795, he established his own Shijō school” (p. 322)
+      source: history-of-japanese-art
+      locator: pp. 319, 322, 369
+      accessed: 2026-10-30

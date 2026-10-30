@@ -52,7 +52,7 @@ const ROW = 22;
 const GROUP_GAP = 18;
 const AXIS_H = 26;
 const MIN_SPAN = 5; // years visible at the deepest zoom
-const STEPS = [1, 2, 5, 10, 25, 50, 100, 200, 250, 500, 1000];
+const STEPS = [1, 2, 5, 10, 25, 50, 100, 200, 250, 500, 1000, 2500, 5000, 10000, 25000, 50000, 100000]; // to deep prehistory (API 174)
 
 /** Decimal year of the start (`edge = 'from'`) or inclusive end (`'to'`) of a date. */
 function decimalYear(d: DateRange | null, edge: 'from' | 'to'): number | null {

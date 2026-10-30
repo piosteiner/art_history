@@ -9,7 +9,7 @@ names:
     text: 統一新羅
 kind: period
 period: 668/935
-description_md: "**Dates.** It begins in 668 with Silla's unification of most of the peninsula[[source/portal-2000|p. 43]] and ends in 935, when its last king, Gyeongsun, submitted to Wang Geon of Goryeo[[source/wikipedia-en-unified-silla|“submitted to Wang Geon of the emerging Goryeo in 935”]]; in the north, Balhae (Parhae) ruled at the same time."
+description_md: "**Dates.** Its start has two dates: 668, when Goguryeo fell to the allied armies of Silla and Tang and the Three Kingdoms period ended[[source/aks-three-kingdoms|668년]][[source/portal-2000|p. 43]], or 676, when Silla, after five years of war against its former ally, drove the Tang armies from the peninsula[[source/aks-silla|「676년 최후의 승리를 거두었다」]]. It ends in November 935, when its last king, Gyeongsun, surrendered to Goryeo[[source/aks-silla|「경순왕은 935년 11월 고려에 자진 항복해」]]. Mason's timeline ends it already in 918, with the founding of Goryeo[[source/history-of-japanese-art|p. 392]], but Silla went on for 17 more years. Many Korean historians prefer the name “Northern and Southern States period”, which gives equal weight to Balhae in the north[[source/aks-northern-southern-states|남북국시대]]."
 relationships:
   - type: active_in
     to: place/korean-peninsula
@@ -26,4 +26,15 @@ sources:
     - url: https://en.wikipedia.org/w/index.php?title=Unified_Silla&oldid=1382665885
       note: “Unified Silla lasted for 267 years until it fell to Goryeo in 935 during the reign of King Gyeongsun” · “Its last king, Gyeongsun, ruled over the state in name only and submitted to Wang Geon of the emerging Goryeo in 935”
       source: wikipedia-en-unified-silla
+      accessed: 2026-10-30
+    - url: https://encykorea.aks.ac.kr/Article/E0032800
+      note: 「신라는 서기전 57년(혁거세거서간 1)부터 935년(경순왕 9)까지 56대 992년간 존속했던 고대 왕조이다」 · 「신라는 671년 이래 당군을 상대로 하여 사투를 벌인 끝에 676년 최후의 승리를 거두었다」 · 「경순왕은 935년 11월 고려에 자진 항복해 신라는 그 막을 내리고 말았다」
+      source: aks-silla
+      accessed: 2026-10-30
+    - url: https://encykorea.aks.ac.kr/Article/E0011926
+      note: 「일반적으로 신라의 삼국통일부터 발해 멸망 때까지를 말한다」 · 남북국시대 creates fewer problems than 통일신라시대 once Balhae is part of Korean history
+      source: aks-northern-southern-states
+      accessed: 2026-10-30
+    - note: "timeline: “Unified Silla (668–918)” (p. 392)"
+      source: history-of-japanese-art
       accessed: 2026-10-30

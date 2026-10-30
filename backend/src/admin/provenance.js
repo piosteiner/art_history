@@ -516,7 +516,7 @@ const FATE_WORD = { destroyed: 'Destroyed', partly_destroyed: 'Partly destroyed'
 function fateRow(f, slug) {
   return html`<tbody class="fate fate-${f.status}"><tr><td></td><td></td><td colspan="6">
     <b>${FATE_WORD[f.status]}</b>${f.date_label ? html` ${f.status === 'lost' ? 'since ' : ''}${f.date_label}` : ''}${f.note ? html` — ${f.note}` : ''}${f.event ? html` · <a href="/events/${f.event.slug}">${f.event.name}</a>` : ''}
-    <span class="muted small">${f.status === 'destroyed' ? '— the end of its provenance.' : f.status === 'lost' ? '— whereabouts unknown, it may still exist.' : '— the parts go on.'}</span>
+    <span class="muted small">${f.status === 'destroyed' ? '— the end of its provenance.' : f.status === 'lost' ? '— whereabouts unknown since; the provenance ends here until it reappears.' : '— the parts go on.'}</span>
     ${f.event ? '' : html` <span class="muted small">(link an event that <i>concerns</i> the work at that date to name the cause)</span>`}
     <a class="small" href="/artworks/${slug}/edit#f-fate">edit the fate</a></td></tr></tbody>`;
 }
@@ -525,10 +525,10 @@ const years = (g) => (g.from_year === g.to_year ? `${g.from_year}` : `${g.from_y
 const duration = (days) => (days >= 365 ? `${Math.round(days / 365.25)} year${Math.round(days / 365.25) === 1 ? '' : 's'}` : `${Math.max(1, Math.round(days / 30.4))} months`);
 
 // A bar from the creation to today: documented (solid), presumed (hatched), gaps (open, red edge); 1933–1945 shaded.
-// A destroyed work's ends with its destruction (170): "destroyed May 1945" instead of "today".
+// A destroyed or lost work's ends with its destruction or loss (170, 173): "destroyed May 1945" instead of "today".
 function coverageBar(segs, f = null) {
   if (!segs.length) return '';
-  const end = f?.status === 'destroyed' ? `destroyed${f.date_label ? ` ${f.date_label}` : ''}` : 'today';
+  const end = f && f.status !== 'partly_destroyed' ? `${f.status}${f.date_label ? ` ${f.date_label}` : ''}` : 'today';
   const t = (d) => Date.parse(d);
   const [t0, t1] = [t(segs[0].from_date), t(segs[segs.length - 1].to_date)];
   const x = (d) => Math.max(0, Math.min(1000, ((t(d) - t0) / (t1 - t0)) * 1000));

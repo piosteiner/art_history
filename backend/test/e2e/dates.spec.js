@@ -24,3 +24,12 @@ test('a period typed with a hyphen, a dash or "from": stored as a range, shown w
   expect(at('london').period.label).toBe('c. 1873–c. 1874');
   expect(sql(`SELECT period::text FROM relationships WHERE relationship_type = 'lived_in' AND object_id = entity_id('place', 'london') AND subject_id = entity_id('person', 'theo-van-gogh')`)).toBe('[1868-01-01,1880-01-01)');
 });
+
+test('years before 4713 BCE come from the label where the range has no bound (174)', () => {
+  const j = (r, l) => JSON.parse(sql(`SELECT range_json(${r === null ? 'NULL' : `'${r}'`}::daterange, '${l}')`));
+  expect(j('(,0394-01-01 BC)', 'c. 11,000–400 BCE')).toMatchObject({ from_year: -11000, to_year: -395 });
+  expect(j(null, '100,000–40,000 BCE')).toMatchObject({ from_year: -100000, to_year: -40000 });
+  expect(j(null, 'before c. 10,000 BCE')).toMatchObject({ from_year: null, to_year: -10000 });
+  expect(j('[1990-01-01,2001-01-01)', '1990–2000')).toMatchObject({ from_year: 1990, to_year: 2000 });
+  expect(j('[2019-05-01,)', 'since 1 May 2019')).toMatchObject({ from_year: 2019, to_year: null });
+});

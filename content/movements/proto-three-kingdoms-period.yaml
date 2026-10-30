@@ -12,7 +12,7 @@ names:
     text: Later Iron Age (Korea)
 kind: period
 period: 1–c. 300
-description_md: "**Dates.** It begins with the Common Era — the conventional division of the Iron Age, not an event — and ends about 300 CE, when, by archaeological and documentary evidence, the kingdoms of Goguryeo, Baekje and Silla had formed as states; modern scholarship puts it in place of the traditional founding dates[[source/portal-2000|pp. 38, 43]]."
+description_md: "**Dates.** A term proposed by the archaeologist Kim Won-yong for the formative stage of the Three Kingdoms, between the archaeologists' “Iron Age II” and the historians' “Samhan” or “early Three Kingdoms”[[source/aks-proto-three-kingdoms|「고고학자 김원용이 ‘원삼국시대’의 사용을 제안하였다」]]. It begins at the turn of the era (or about 100 BCE) — the conventional division of the Iron Age, not an event — and ends about 300 CE, when the kingdoms had formed as states[[source/aks-iron-age|「서기 전후(혹은 서기전 100년)부터 서기 300년까지」]][[source/portal-2000|pp. 38, 43]]."
 relationships:
   - type: active_in
     to: place/korean-peninsula
@@ -26,3 +26,11 @@ sources:
     - note: “the Later Iron Age or Proto-Three Kingdoms period (0–AD 300)” (p. 38) · “a Proto-Three Kingdoms period, covering the first three centuries of the modern era and overlapping with the later part of the Iron Age (0–c. AD 300)” (p. 43)
       source: portal-2000
       locator: pp. 38, 43
+    - url: https://encykorea.aks.ac.kr/Article/E0040703
+      note: 「서기전 100년경부터 서기 300년경까지의 약 400년간의 기간을 이른다」 · 「고고학자 김원용이 ‘원삼국시대’의 사용을 제안하였다」
+      source: aks-proto-three-kingdoms
+      accessed: 2026-10-30
+    - url: https://encykorea.aks.ac.kr/Article/E0056111
+      note: 「서기 전후(혹은 서기전 100년)부터 서기 300년까지를 원삼국시대(原三國時代)로 구분하고 있다」
+      source: aks-iron-age
+      accessed: 2026-10-30

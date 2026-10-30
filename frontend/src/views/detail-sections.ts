@@ -231,7 +231,8 @@ export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record
 
 /**
  * The end of the line: "Destroyed May 1945 — presumably burnt in the flak tower · Gemäldebrand im Flakbunker …".
- * Destroyed: the rail stops at a bar, nothing follows. Lost: the rail runs out dotted (it may still exist).
+ * Destroyed: the rail stops at a bar, nothing follows. Lost: the rail runs out dotted (the provenance ends, API 173, but
+ * the work may reappear).
  * Partly destroyed: a mark on the rail at its time, the steps after it go on (the surviving parts).
  */
 function fateItem(f: ArtworkFate, sources: Citation[] | undefined, bibliography?: Record<string, SourceHint>): Html {
@@ -241,7 +242,7 @@ function fateItem(f: ArtworkFate, sources: Citation[] | undefined, bibliography?
     <div class="provenance-owner"><b>${word}</b>${f.date ? html` <span class="muted">${f.status === 'lost' ? 'since ' : ''}${f.date.label ?? ''}</span>` : ''}${cite(sources, bibliography)}</div>
     ${how.length ? html`<div class="provenance-how">${how.map((h, j) => html`${j ? ' · ' : ''}${h}`)}</div>` : ''}
     ${f.status === 'destroyed' ? html`<div class="provenance-fate-end muted small">The end of its provenance.</div>` : ''}
-    ${f.status === 'lost' ? html`<div class="provenance-fate-end muted small">Whereabouts unknown — it may still exist.</div>` : ''}
+    ${f.status === 'lost' ? html`<div class="provenance-fate-end muted small">Whereabouts unknown since — the provenance ends here until it reappears.</div>` : ''}
   </li>`;
 }
 

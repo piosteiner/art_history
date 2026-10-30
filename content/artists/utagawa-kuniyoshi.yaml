@@ -11,6 +11,12 @@ death: 1861-04-14
 wikidata_id: Q317736
 metadata:
   sources: [Wikidata Q317736 (retrieved 2026-10-05)]
+relationships:
+  - type: member_of
+    to: movement/utagawa-school
+    notes_md: studied with Toyokuni (Mason p. 288)
+  - type: associated_with
+    to: movement/ukiyo-e
 identifiers:
   dome: "4168"
 sources:

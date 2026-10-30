@@ -1,0 +1,26 @@
+public_id: 105506
+name: Mediaeval period (Japan)
+names:
+  - lang: en
+    role: alternative
+    text: Feudal Japan
+  - lang: ja
+    role: original
+    text: "{中世|ちゅうせい}"
+kind: period
+period: 1185/1573
+description_md: "**Dates.** Mason's “Mediaeval period” groups the Kamakura, Nanbokuchō and Muromachi periods[[source/history-of-japanese-art|pp. 10, 392]]: it begins in 1185, when the samurai under Minamoto no Yoritomo took the real power and the [[shogun]] became the title with which it lay[[source/history-of-japanese-art|pp. 168–169]], and ends in 1573 with the fall of the Ashikaga shogunate; what follows, from the Momoyama period, Mason calls Early Modern[[source/history-of-japanese-art|pp. 234–235]]. Nabunken's “Feudal Japan” is the same epoch, dated by centuries (ca. 12th–16th century)[[source/nabunken-style-manual-2022|pp. 29–31]]."
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 1185/1573
+sources:
+  period:
+    - note: “Mediaeval period (1185–1573)” (timeline, p. 392) · the preface groups Kamakura to Muromachi as “(Medieval)” (p. 10) · “by 1185 it had been centuries since real power had actually resided with the imperial throne, and the Shogun … became the position and title with which that real power lay” (p. 169)
+      source: history-of-japanese-art
+      locator: pp. 10, 392
+      accessed: 2026-10-30
+    - note: "Nabunken: “Feudal Japan (ca. 12th–16th century)”"
+      source: nabunken-style-manual-2022
+      locator: pp. 29–31
+      accessed: 2026-10-30

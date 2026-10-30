@@ -4,6 +4,28 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Migrations 173/174, schools, Korea checked, Mediaeval period and Occupation, three entries completed
+- **173:** a lost work's provenance ends with its loss, like a destroyed work's (`provenance_coverage`); bars "lost
+  1945", closing line "whereabouts unknown since; the provenance ends here until it reappears". e2e + site test.
+- **174:** `bce_label_years(label)` and `range_json()` give `from_year`/`to_year` from the label where a range has no
+  bound (before 4713 BCE): Jōmon, Korean Palaeolithic … on the timeline and in sorting. Periods timeline opens on the
+  last millennia when prehistory is in it, tick steps up to 100,000 years. e2e `dates`, site test. Revert: restore
+  `range_json` of 040 and drop `bce_label_years`.
+- **Schools (Mason):** new Rinpa, Tosa school, Utagawa school, Torii school, Nanga (bunjinga) — each with a description,
+  a Dates paragraph and page citations; Kanō (span "1401–1500" → 15th century–1868, kind school), Maruyama → Maruyama–
+  Shijō school, Kei school given descriptions and dates; ukiyo-e cites Mason now. Artists linked: Hiroshige, Kuniyoshi
+  (Utagawa), Hokusai (Rinpa, Tawaraya), Ōkyo (founded Maruyama–Shijō), Unkei, Kaikei (Kei), Jakuchū (influenced by
+  Rinpa).
+- **Korea against official sources:** Encyclopedia of Korean Culture (Academy of Korean Studies; 8 articles as
+  sources). Neolithic now c. 10,000–1500 BCE (was Portal's 6000–1000), Bronze Age c. 1500–300 BCE (was 1000–300); every
+  Korean Dates paragraph names both readings; Unified Silla 668–935 with 676 (victory over Tang) and Mason's 918.
+  korea.net refuses automated access, the National Museum of Korea has no table online.
+- **Mason's timeline:** Mediaeval period (Japan) 1185–1573 (Kamakura, Nanbokuchō, Muromachi under it) and Occupation
+  of Japan 2.9.1945–28.4.1952 (under Shōwa; the surrender event concerns it).
+- **Completed:** Ede (municipality of Otterlo/Kröller-Müller — not Edo), Sekigahara campaign (22.8.–21.10.1600, Mason),
+  japan paper (washi, Mason pp. 114–115); their "to complete" flags cleared.
+- **Why:** owner, 2026-10-30. **Revert:** migrations as above; data via the admin history.
+
 ### Data: Mason and Portal cited wherever they cover a statement
 - **What:** 33 passages of Mason (and one of Portal) added as footnotes at the matching sentence and as citations with
   the quoted passage — on 13 period texts and 21 event texts that had rested on Wikipedia alone (Nara/Heian capital

@@ -8,12 +8,12 @@ names:
     role: alternative
     text: 靑銅器時代
 kind: period
-period: 1000 BCE–c. 300 BCE
-description_md: "**Dates.** It begins around 1000 BCE with the first bronzes made in Korea[[source/portal-2000|p. 29]] and ends about 300 BCE, when iron takes over and the Early Iron Age begins[[source/portal-2000|p. 38]]."
+period: c. 1500 BCE–c. 300 BCE
+description_md: "**Dates.** The time of bronzes and plain (mumun) pottery, also called the “plain-pottery period”. In today's chronology of the Encyclopedia of Korean Culture its earliest phase, before the Liaoning-type bronze dagger, lies in the 15th–12th century BCE, its centre in the first half of the first millennium BCE, its late phase in the 5th–4th century BCE[[source/aks-bronze-age|「조기는 … 서기전 15~12세기경에 해당한다」]]; it gives way about 300 BCE to the Early Iron Age, when iron came into use[[source/aks-iron-age|「철기가 사용되기 시작한 서기전 300년경부터」]]. Portal (2000) begins it about 1000 BCE with the first Korean-made bronzes and counts the centuries before to a Late Neolithic or Megalithic period[[source/portal-2000|p. 29]]."
 relationships:
   - type: active_in
     to: place/korean-peninsula
-    period: 1000 BCE–c. 300 BCE
+    period: c. 1500 BCE–c. 300 BCE
     sources:
       - note: “the Bronze Age proper (1000 BC–c. 300 BC), which is generally thought to have begun around 1000 BC with the appearance of Korean-made bronzes”
         source: portal-2000
@@ -23,3 +23,7 @@ sources:
     - note: “the Bronze Age proper (1000 BC–c. 300 BC), which is generally thought to have begun around 1000 BC with the appearance of Korean-made bronzes”
       source: portal-2000
       locator: p. 29
+    - url: https://encykorea.aks.ac.kr/Article/E0056357
+      note: 「서기전 1000년 대 전반을 중심으로 중국 동북 지역과 한반도에 걸쳐 무문토기와 함께 청동기, 마제석기를 제작 사용한 시대이다」 · 「조기는 비파형동검이 제작되기 이전으로 서기전 15~12세기경에 해당한다」 · 「후기는 서기전 5~4세기경 변형 비파형동검과 초기 세형동검이 유행하는 단계」
+      source: aks-bronze-age
+      accessed: 2026-10-30

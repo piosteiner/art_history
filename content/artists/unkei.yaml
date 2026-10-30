@@ -44,12 +44,9 @@ relationships:
       - note: “which Unkei made in collaboration with Kaikei and 16 artisans” (the guardians of Tōdaiji’s South Gate, 1203)
         source: kobayashi-1954-unkei
         accessed: 2026-10-28
-  - type: associated_with
+  - type: member_of
     to: movement/kei-school
-    sources:
-      - accessed: 2026-10-28
-        property: P135
-        wikidata: Q2006048
+    notes_md: Mason pp. 188–189
   - type: child_of
     to: artist/kokei
     sources:

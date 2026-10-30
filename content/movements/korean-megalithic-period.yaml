@@ -7,7 +7,7 @@ names:
 kind: period
 parent: korean-neolithic
 period: -2000/-1000
-description_md: "**Dates.** It begins about 2000 BCE with dolmens and other megaliths, stone-cist graves and plain (mumun) pottery — for Im Hyo-jae the Late Neolithic, for Sarah Nelson a Megalithic period of its own, because these signal a profound change in society — and ends about 1000 BCE, when Korean-made bronzes begin the Bronze Age proper[[source/portal-2000|pp. 28–29]]."
+description_md: "**Dates.** Sarah Nelson's “Megalithic period”, after Portal: about 2000–1000 BCE, the millennium of dolmens, stone-cist graves and plain (mumun) pottery, for Im Hyo-jae the Late Neolithic[[source/portal-2000|pp. 28–29]]. In today's chronology of the Encyclopedia of Korean Culture these features already belong to the Bronze Age, which it begins about 1500 BCE with rice farming and plain pottery[[source/aks-neolithic|서기전 1500년 전후]][[source/aks-bronze-age|서기전 15~12세기경]] — so this division survives only as the reading of Nelson and Portal."
 relationships:
   - type: active_in
     to: place/korean-peninsula

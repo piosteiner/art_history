@@ -1,0 +1,22 @@
+public_id: 105510
+name: Utagawa school
+names:
+  - lang: ja
+    role: original
+    text: "{歌川派|うたがわは}"
+kind: school
+period: late 18th century–19th century
+description_md: |-
+  The most prolific school of ukiyo-e prints in the 19th century[[source/history-of-japanese-art|p. 288]].
+
+  **Dates.** Founded in the late 1700s by Utagawa Toyoharu (1735–1814), a painter of perspective pictures (uki-e) whose greatest gift was teaching; his studio produced Toyokuni I (1769–1825), Kuniyoshi (1798–1861) and, through Toyohiro, Hiroshige (1797–1858), and so carried the school through the 19th century[[source/history-of-japanese-art|pp. 288, 292]].
+relationships:
+  - type: active_in
+    to: place/japan
+    period: late 18th century–19th century
+sources:
+  period:
+    - note: “The most prolific school of the nineteenth century was the Utagawa, founded in the late 1700s by a rather minor artist, Utagawa Toyoharu (1735–1814)” (p. 288) · Hiroshige “had undergone a long apprenticeship under Utagawa Toyohiro” (p. 292)
+      source: history-of-japanese-art
+      locator: pp. 288, 292
+      accessed: 2026-10-30

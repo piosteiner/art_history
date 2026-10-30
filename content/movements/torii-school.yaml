@@ -1,0 +1,22 @@
+public_id: 105511
+name: Torii school
+names:
+  - lang: ja
+    role: original
+    text: "{鳥居派|とりいは}"
+kind: school
+period: 1687/
+description_md: |-
+  The ukiyo-e school that held a monopoly on Kabuki posters and programmes in Edo[[source/history-of-japanese-art|pp. 280–281]].
+
+  **Dates.** It begins in 1687, when its founder Torii Kiyomoto (1645–1702), an actor of female roles, moved from Osaka to Edo and was asked to design a poster for a Kabuki theatre; Kiyonobu I and Kiyomasu I developed its vigorous actor prints, and Torii Kiyonaga (1752–1815) led it from 1785[[source/history-of-japanese-art|pp. 280–285]]. Mason follows it to the end of the 18th century; its end is left open here.
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 1687/
+sources:
+  period:
+    - note: “Torii Kiyomoto (1645–1702), the founder, was an onnagata … In 1687, he moved with his family from Osaka to Edo, where he was asked to design a poster for one of the Kabuki theaters” (p. 280) · “Kiyonaga assumed leadership of the Torii school in 1785” (p. 284)
+      source: history-of-japanese-art
+      locator: pp. 280–285
+      accessed: 2026-10-30

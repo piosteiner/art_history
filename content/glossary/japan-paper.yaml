@@ -1,3 +1,20 @@
 public_id: 104980
 name: japan paper
+names:
+  - lang: ja
+    role: original
+    text: "{和紙|わし}"
+  - lang: en
+    role: alternative
+    text: washi
+  - lang: de
+    role: translation
+    text: Japanpapier
 category: material
+definition: Paper made by hand in Japan (washi) from the long inner-bark fibres of the paper mulberry (kōzo) or of gampi, scooped from a vat of pulp with a bamboo screen (su); strong, thin and absorbent, it served for scrolls, screens and woodblock prints.
+sources:
+  definition:
+    - note: "paper “made either from kozo, the bark of the paper-mulberry tree, or ganpi” · “The main papermaking device, still used today, consists of two frames: the su with a bamboo screen and a second frame”"
+      source: history-of-japanese-art
+      locator: pp. 114–115
+      accessed: 2026-10-30

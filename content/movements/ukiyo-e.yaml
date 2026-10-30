@@ -7,6 +7,8 @@ period: 17th–19th century
 description_md: |-
   Japanese genre of woodblock prints and paintings — landscapes, actors, beauties, tales[[source/wikipedia-en-ukiyo-e|“Its artists produced woodblock prints and paintings of such subjects as female beauties; kabuki actors and sumo wrestlers; scenes from history and folk tales; travel scenes and landscapes …”]].
   Its flat colour and bold composition fed directly into European *Japonisme*[[source/wikipedia-en-ukiyo-e|“From the 1870s onward, Japonisme became a prominent trend and had a strong influence on the early French Impressionists … as well as influencing Post-Impressionists such as Vincent van Gogh”]].
+
+  **Dates.** Mason calls it the pictorial expression most characteristic of the Edo period, “pictures of the floating world”[[source/history-of-japanese-art|pp. 274, 278]]. Iwasa Matabei (1578–1650) is traditionally credited with its parentage; Hishikawa Moronobu (1618–94) brought the print designer out of anonymity in Edo after 1657; Andō Hiroshige (1797–1858) was the last of the great Edo-period designers[[source/history-of-japanese-art|pp. 278–280, 292]]. In the 20th century its themes were revived in the shin hanga prints[[source/history-of-japanese-art|p. 382]].
 wikidata_id: Q185905
 relationships:
   - type: active_in
@@ -16,4 +18,10 @@ relationships:
     period: 17th–19th century
     sources: ["Getty Art & Architecture Thesaurus, “Ukiyo-e” (AAT 300106769): “It arose in the Edo period (1600-1868)”", "Wikidata, ukiyo-e (Q185905): inception 18th century, end time 19th century"]
 sources:
-  period: ["Getty Art & Architecture Thesaurus, “Ukiyo-e” (AAT 300106769): “It arose in the Edo period (1600-1868)”", "Wikidata, ukiyo-e (Q185905): inception 18th century, end time 19th century"]
+  period:
+    - "Getty Art & Architecture Thesaurus, “Ukiyo-e” (AAT 300106769): “It arose in the Edo period (1600-1868)”"
+    - "Wikidata, ukiyo-e (Q185905): inception 18th century, end time 19th century"
+    - note: “ukiyo-e — ‘pictures of the floating world’” (p. 274) · “Ukiyo-e is the type of pictorial expression most characteristic of the Edo period” (p. 278) · “The last of the great Edo-period print designers, Andō Hiroshige (1797–1858)” (p. 292)
+      source: history-of-japanese-art
+      locator: pp. 274, 278–280, 292
+      accessed: 2026-10-30

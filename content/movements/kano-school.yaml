@@ -1,10 +1,22 @@
 public_id: 103054
 name: Kanō school
-kind: movement
-period: 1401/1500
+names:
+  - lang: ja
+    role: original
+    text: "{狩野派|かのうは}"
+kind: school
+period: 15th century–1868
+description_md: |-
+  The hereditary school of painters to the shogunate, which combined Chinese ink-painting themes with the bold decorative manner of large wall and screen paintings[[source/history-of-japanese-art|pp. 228–229, 311]].
+
+  **Dates.** It rose with Kanō Masanobu (1434–1530), official painter to the Ashikaga shogunate from 1481; his son Motonobu (1476–1559) formulated its style; Eitoku and, under the Tokugawa, Tanyū and the four Edo branches (oku eshi) set the standard of painting throughout the Edo period[[source/history-of-japanese-art|pp. 228–229, 311]]. It ended as the official school with the fall of the shogunate in 1868 — Kanō Hōgai fared badly after the Restoration until Fenollosa took him up[[source/history-of-japanese-art|p. 363]].
 wikidata_id: Q252801
 metadata:
   sources: [Wikidata Q252801 (retrieved 2026-10-28)]
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 15th century–1868
 sources:
   kind:
     - accessed: 2026-10-28
@@ -14,3 +26,7 @@ sources:
     - accessed: 2026-10-28
       property: P580
       wikidata: Q252801
+    - note: “the Kano school’s rise to prominence in the person of Kano Masanobu (1434–1530)” · “it was not until his son Motonobu (1476–1559) matured as an artist that a Kano style was formulated and the school became firmly entrenched as the chief painters to the shogunate” (pp. 228–229) · four Edo branches “given the official designation oku eshi” (p. 311)
+      source: history-of-japanese-art
+      locator: pp. 228–229, 311, 363
+      accessed: 2026-10-30

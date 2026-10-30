@@ -15,6 +15,9 @@ relationships:
     period: 1849
   - type: lived_in
     to: place/tokyo
+  - type: member_of
+    to: movement/rinpa
+    notes_md: head of the Tawaraya school, devoted to the revival of the Rinpa style (Mason p. 289)
   - type: associated_with
     to: movement/ukiyo-e
 identifiers:

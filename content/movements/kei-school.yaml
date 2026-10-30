@@ -1,11 +1,29 @@
 public_id: 102551
 name: Kei school
-kind: movement
+names:
+  - lang: ja
+    role: original
+    text: "{慶派|けいは}"
+kind: school
+period: late 11th century–13th century
+description_md: |-
+  The Nara school of Buddhist sculptors whose hallmarks were realism and a classicism learnt from the sculpture of the 8th century; its masters were Unkei and Kaikei[[source/history-of-japanese-art|pp. 188–189]].
+
+  **Dates.** It traced its origins to the sculptor Raijō (1044–1119), a second-generation disciple of Jōchō; it came into its own in the Kamakura period with the rebuilding of Tōdaiji and Kōfukuji after the Genpei War[[source/history-of-japanese-art|pp. 186–189]].
 wikidata_id: Q3079516
 metadata:
   sources: [Wikidata Q3079516 (retrieved 2026-10-28)]
+relationships:
+  - type: active_in
+    to: place/japan
+    period: late 11th century–13th century
 sources:
   kind:
     - accessed: 2026-10-28
       property: P31
       wikidata: Q3079516
+  period:
+    - note: “The Kei school of sculptors traced its origins to the sculptor Raijō (1044–1119), a second-generation disciple of Jōchō” · “One of the hallmarks of the Kei school is realism, but another is classicism”
+      source: history-of-japanese-art
+      locator: pp. 186–189
+      accessed: 2026-10-30

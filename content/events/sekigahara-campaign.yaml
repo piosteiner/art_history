@@ -1,11 +1,27 @@
 public_id: 105340
 name: Sekigahara Campaign
-period: 1600-08-22
+kind: military campaign
+period: 1600-08-22/1600-10-21
+place: japan
+description_md: The struggle for power after Toyotomi Hideyoshi’s death in 1598 between Tokugawa Ieyasu and the daimyo of the west, decided in Ieyasu’s favour at the [[event/battle-of-sekigahara]] on 21 October 1600[[source/history-of-japanese-art|pp. 236–237]].
 wikidata_id: Q111730901
 metadata:
   sources: [Wikidata Q111730901 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Sekigaharascreen.jpg/1280px-Sekigaharascreen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sekigaharascreen.jpg
+    license: Public domain
+    credit: User LordAmeth on en.wikipediaCollection of The Town of Sekigahara Archive of History and Cultural Anthropology
 sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q111730901
   period:
     - accessed: 2026-10-30
       property: P585
       wikidata: Q111730901
+    - note: “In 1600, the situation came to a head in the battle of Sekigahara, with Ieyasu achieving a tentative victory”
+      source: history-of-japanese-art
+      locator: pp. 236–237
+      accessed: 2026-10-30

@@ -11,14 +11,14 @@ names:
     role: alternative
     text: Chulmun period
 kind: period
-period: -995 or earlier
-period_label: c. 6000–1000 BCE
-description_md: "**Dates.** In Korea the Neolithic is defined not by farming but by pottery, among people who still lived mainly by hunting and fishing: it begins about 6000 BCE (finds at Kosan-ri on Jeju, with pottery dated around 10,000 years ago, may belong to an earlier “palaeo-neolithic”); comb-pattern (chulmun) pottery spread across the peninsula from 4500–3500 BCE with the cultivation of millet[[source/portal-2000|pp. 24, 28]]. It ends about 1000 BCE with the first bronzes made in Korea[[source/portal-2000|p. 29]]. Its start lies before 4713 BCE, the first date that can be stored here, so it stays open."
+period: -1495 or earlier
+period_label: c. 10,000–1500 BCE
+description_md: "**Dates.** In Korea the Neolithic is defined not by farming but by pottery, among people who still lived mainly by hunting, fishing and gathering. It begins about 10,000 BCE: the oldest pottery found so far, at Gosan-ri on Jeju island, dates to about 7500 BCE, and pottery probably appeared earlier still[[source/aks-neolithic|「서기전 7500년 전후의 절대연대를 갖는 제주 고산리 유적의 유기질혼입토기」]]. It ends about 1500 BCE, when a culture of rice farming and plain (mumun) pottery arrived[[source/aks-neolithic|「도작 농경과 무문토기를 주체로 하는 문화가 유입됨에 따라 종말을 맞이한다」]]. Portal (2000) still gives c. 6000–1000 BCE, before radiocarbon dates moved both ends back[[source/portal-2000|pp. 24, 29]]. Its start lies before 4713 BCE, the first date that can be stored here, so it stays open."
 relationships:
   - type: active_in
     to: place/korean-peninsula
-    period: -995 or earlier
-    period_label: c. 6000–1000 BCE
+    period: -1495 or earlier
+    period_label: c. 10,000–1500 BCE
     sources:
       - note: “the culture of the Neolithic period (c. 6000–1000 BC) is generally defined by the beginnings of an agricultural way of life, as in China, the Korean Neolithic is, rather, defined by the appearance of pottery” (p. 24) · chulmun pottery spreading “from 4500–3500 BC, together with the cultivation of millet” (p. 28)
         source: portal-2000
@@ -28,3 +28,7 @@ sources:
     - note: “the culture of the Neolithic period (c. 6000–1000 BC) is generally defined by the beginnings of an agricultural way of life, as in China, the Korean Neolithic is, rather, defined by the appearance of pottery” (p. 24) · chulmun pottery spreading “from 4500–3500 BC, together with the cultivation of millet” (p. 28)
       source: portal-2000
       locator: pp. 24, 28
+    - url: https://encykorea.aks.ac.kr/Article/E0033063
+      note: 「시기(서기전 10000년 전후)부터 … 서기전 1500년 전후한 시기까지를 신석기시대로 규정하고 있다」 · 「현재 우리나라에서 발견된 가장 오래된 토기는 서기전 7500년 전후의 절대연대를 갖는 제주 고산리 유적의 유기질혼입토기이다」 · 「도작 농경과 무문토기를 주체로 하는 문화가 유입됨에 따라 종말을 맞이한다」
+      source: aks-neolithic
+      accessed: 2026-10-30

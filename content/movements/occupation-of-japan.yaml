@@ -1,0 +1,27 @@
+public_id: 105507
+name: Occupation of Japan
+names:
+  - lang: en
+    role: alternative
+    text: Allied Occupation
+  - lang: ja
+    role: original
+    text: "{占領期|せんりょうき}"
+kind: period
+parent: showa-period
+period: 1945-09-02/1952-04-28
+description_md: "**Dates.** Japan under Allied (American) administration after the Second World War: from the surrender on 2 September 1945 to 28 April 1952, when the Treaty of San Francisco came into force and Japan regained its sovereignty[[source/wikipedia-en-occupation-of-japan|“from the surrender … on September 2, 1945 … until the Treaty of San Francisco took effect on April 28, 1952”]]. Mason marks it as a period of its own, 1945–1952, at whose end Japanese architecture and the arts were “once again finding [their] feet”[[source/history-of-japanese-art|pp. 351, 392]]."
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 1945-09-02/1952-04-28
+sources:
+  period:
+    - note: “Occupation (1945–1952)” (timeline, p. 392) · “By the end of the postwar Occupation, in 1952, Japanese architecture was once again finding its feet” (p. 351)
+      source: history-of-japanese-art
+      locator: pp. 351, 392
+      accessed: 2026-10-30
+    - url: https://en.wikipedia.org/w/index.php?title=Occupation_of_Japan&oldid=1382339717
+      note: “Japan was occupied and administered by the Allies of World War II from the surrender of the Empire of Japan on September 2, 1945, at the war’s end until the Treaty of San Francisco took effect on April 28, 1952”
+      source: wikipedia-en-occupation-of-japan
+      accessed: 2026-10-30

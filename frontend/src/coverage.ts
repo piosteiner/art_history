@@ -1,5 +1,5 @@
 // Provenance coverage (API 078): where an artwork's provenance is silent. A bar from the creation until today (a
-// destroyed work's until its destruction, API 170) —
+// destroyed or lost work's until its destruction or loss, API 170/173) —
 // documented solid, presumed hatched, gaps open with a red edge, 1933–1945 shaded — and the wording of a gap, shared
 // by the provenance list, the bar and the map.
 import { html, type Html } from './html';
@@ -38,8 +38,8 @@ const time = (iso: string | null | undefined) => (iso ? Date.parse(`${iso}T00:00
 
 /**
  * The bar above the provenance: the stretches from the creation until today in proportion, 1933–1945 shaded behind.
- * A destroyed work's ends with its destruction (API 170: nothing is held after it) — "destroyed 1945" instead of
- * "today"; partly destroyed and lost works run on until today. Null without a recorded provenance (then it would be
+ * A destroyed or lost work's ends with its destruction or loss (API 170/173: no holder is known after it) — "destroyed
+ * 1945", "lost 1945" instead of "today"; partly destroyed works run on until today. Null without a recorded provenance (then it would be
  * one long gap, which the list says better).
  */
 export function coverageBar(cov: ProvenanceCoverage | null | undefined, fate?: ArtworkFate | null): Html | null {
@@ -51,7 +51,7 @@ export function coverageBar(cov: ProvenanceCoverage | null | undefined, fate?: A
   const width = (a: number, b: number) => `${(((Math.min(b, end) - Math.max(a, start)) / (end - start)) * 100).toFixed(3)}%`;
   const ns = NS_TO > start && NS_FROM < end;
   const gaps = cov.segments.filter((s) => s.kind === 'gap');
-  const endLabel = fate?.status === 'destroyed' ? `destroyed${fate.date ? ` ${years(fate.date)}` : ''}` : 'today';
+  const endLabel = fate && fate.status !== 'partly_destroyed' ? `${fate.status}${fate.date ? ` ${years(fate.date)}` : ''}` : 'today';
   // "1933–45" under the shading only with room beside the start year and the end label — a bar that ends in or soon
   // after 1945 (a work destroyed then) or starts around 1933 keeps the shading and the key, not a label on the others
   const nsAt = (Math.max(NS_FROM, start) - start) / (end - start);

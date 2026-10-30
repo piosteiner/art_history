@@ -88,7 +88,7 @@ test('a gap split by an unsold auction: each half where it belongs — before an
   sql("DELETE FROM provenance WHERE owner_institution_id = entity_id('institution', 'test-cov-auction'); DELETE FROM institutions WHERE slug = 'test-cov-auction'");
 });
 
-test('a destroyed work: the coverage ends with its destruction, no gap until today; partly destroyed runs on (170)', async ({ userA, request }) => {
+test('a destroyed work: the coverage ends with its destruction, no gap until today; lost too (173); partly destroyed runs on (170)', async ({ userA, request }) => {
   // the last owner holds it from 1950 without an end — without a fate a gap from then until today would be ongoing
   sql(`UPDATE artworks SET current_institution_id = NULL WHERE id = ${W};
        DELETE FROM provenance WHERE artwork_id = ${W} AND position = 4;
@@ -104,6 +104,12 @@ test('a destroyed work: the coverage ends with its destruction, no gap until tod
   // without a date: until the last dated holding
   sql(`UPDATE artworks SET fate_date = NULL, fate_date_label = NULL WHERE id = ${W}`);
   expect((await api(request, '/artworks/test-cov-w')).provenance_coverage.segments.at(-1).period.to_year).toBe(1950);
+
+  // lost (173): ends at the loss as well — whereabouts unknown, no holder after it
+  sql(`UPDATE artworks SET fate = 'lost', fate_date = year_range(1955), fate_date_label = '1955' WHERE id = ${W}`);
+  expect((await api(request, '/artworks/test-cov-w')).provenance_coverage.segments.at(-1).period.to).toBe('1955-12-31');
+  await userA.goto('/artworks/test-cov-w');
+  await expect(userA.locator('figure.coverage figcaption')).toContainText('lost 1955');
 
   // partly destroyed: parts survive and are held — until today, with the gap after the last known owner
   sql(`UPDATE artworks SET fate = 'partly_destroyed', fate_date = year_range(1955), fate_date_label = '1955' WHERE id = ${W}`);

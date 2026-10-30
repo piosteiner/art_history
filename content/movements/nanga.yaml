@@ -1,0 +1,31 @@
+public_id: 105512
+name: Nanga
+names:
+  - lang: en
+    role: alternative
+    text: bunjinga
+  - lang: en
+    role: translation
+    text: literati painting
+  - lang: ja
+    role: original
+    text: "{南画|なんが}"
+  - lang: ja
+    role: alternative
+    text: "{文人画|ぶんじんが}"
+kind: style
+period: 18th century–19th century
+description_md: |-
+  Japanese painting after the ideal of the Chinese scholar-amateurs (see [[bunjinga]]): landscapes and the “four gentlemen” in ink and light colour, learnt largely from Chinese printed manuals such as the Mustard-Seed Garden Manual of Painting[[source/history-of-japanese-art|pp. 326–327]].
+
+  **Dates.** A native school calling itself bunjinga arose only in the early 18th century, with Gion Nankai (1677–1751), Yanagisawa Kien and Sakaki Hyakusen; its great masters were Ike Taiga and Yosa Buson, followed in the 19th century by Uragami Gyokudō, Tanomura Chikuden and Tani Bunchō[[source/history-of-japanese-art|pp. 326–343]]. In the Meiji period it continued with Tomioka Tessai (1837–1924) but lost ground to yōga and nihonga[[source/history-of-japanese-art|p. 361]].
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 18th century–19th century
+sources:
+  period:
+    - note: “it was not until the seventeenth century that a native school arose that consciously referred to itself as bunjinga” (pp. 326–327) · “The first bunjinga artists are two samurai, Gion Nankai … and Yanagisawa Kien …, and a chōnin, Sakaki Hyakusen” (p. 327)
+      source: history-of-japanese-art
+      locator: pp. 326–343, 361
+      accessed: 2026-10-30

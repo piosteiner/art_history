@@ -18,12 +18,9 @@ relationships:
       - accessed: 2026-10-28
         property: P20
         wikidata: Q405444
-  - type: associated_with
+  - type: founded
     to: movement/maruyama-school
-    sources:
-      - accessed: 2026-10-28
-        property: P135
-        wikidata: Q405444
+    notes_md: Mason p. 319
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/d/dc/%E5%86%86%E5%B1%B1%E5%BF%9C%E6%8C%99_%E8%BF%91%E4%B8%96%E5%90%8D%E5%AE%B6%E8%82%96%E5%83%8F.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%E5%86%86%E5%B1%B1%E5%BF%9C%E6%8C%99_%E8%BF%91%E4%B8%96%E5%90%8D%E5%AE%B6%E8%82%96%E5%83%8F.jpg

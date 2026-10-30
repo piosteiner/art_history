@@ -40,6 +40,9 @@ relationships:
   - type: concerns
     to: movement/japanese-colonial-period-korea
     notes_md: its end (1945)
+  - type: concerns
+    to: movement/occupation-of-japan
+    notes_md: its beginning (2 September 1945)
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/8/88/Japanese_Surrender_at_Tokyo_Bay%2C_2_September_1945_A30427A.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Japanese_Surrender_at_Tokyo_Bay,_2_September_1945_A30427A.jpg

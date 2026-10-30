@@ -371,7 +371,7 @@ sources:
       source: hamburger-kunsthalle-online-sammlung
       accessed: 2026-10-17
   created:
-    - accessed: 2026-10-16
+    - accessed: 2026-10-30
       property: P571
       wikidata: Q311243
     - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161
@@ -392,7 +392,7 @@ sources:
       source: hamburger-kunsthalle-online-sammlung
       accessed: 2026-10-17
   dimensions:
-    - accessed: 2026-10-16
+    - accessed: 2026-10-30
       property: P2048
       wikidata: Q311243
     - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161
@@ -415,7 +415,7 @@ sources:
   provenance_status:
     - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161
       source: hamburger-kunsthalle-online-sammlung
-      accessed: 2026-10-17
+      accessed: 2026-10-30
     - note: „dessen Herkunftslücke um die 120 Jahre umfasst, genauer von 1813/1817 bis 1938“ (S. 19) · „Es ist weiterhin zu klären, ob Luz das Werk wohlmöglich im Rahmen seiner Sachverständigentätigkeit aus jüdischem Besitz bezogen hat.“ (S. 35)
       source: bauer-haug-2024
       locator: S. 19, 23, 35

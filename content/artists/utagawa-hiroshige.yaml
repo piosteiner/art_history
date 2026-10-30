@@ -17,5 +17,8 @@ relationships:
   - type: influenced_by
     to: artist/katsushika-hokusai
     certainty: probable
+  - type: member_of
+    to: movement/utagawa-school
+    notes_md: apprenticed to Utagawa Toyohiro (Mason p. 292)
   - type: associated_with
     to: movement/ukiyo-e

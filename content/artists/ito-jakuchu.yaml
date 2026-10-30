@@ -7,6 +7,10 @@ death: 1800-10-27
 wikidata_id: Q1240575
 metadata:
   sources: [Wikidata Q1240575 (retrieved 2026-10-05)]
+relationships:
+  - type: influenced_by
+    to: movement/rinpa
+    notes_md: a Rinpa-inspired decorative aesthetic (Mason p. 323)
 sources:
   birth:
     - accessed: 2026-10-05

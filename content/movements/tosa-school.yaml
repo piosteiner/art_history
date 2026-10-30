@@ -1,0 +1,22 @@
+public_id: 105509
+name: Tosa school
+names:
+  - lang: ja
+    role: original
+    text: "{土佐派|とさは}"
+kind: school
+period: late 12th century–19th century
+description_md: |-
+  The painters of the imperial court, keepers of yamato-e — painting of Japanese subjects in the Japanese manner, above all narrative handscrolls[[source/history-of-japanese-art|pp. 171, 312]].
+
+  **Dates.** Founded at the end of the 12th century by Fujiwara no Tsunetaka; its foremost painter was Tosa Mitsunobu (1434–1525), who served the court through the Ōnin War[[source/history-of-japanese-art|pp. 170–171]]. Its yamato-e still inspired Kanō Osanobu in the 19th century and, with the Kanō tradition, the nihonga painters after 1880[[source/history-of-japanese-art|pp. 312, 345]].
+relationships:
+  - type: active_in
+    to: place/japan
+    period: late 12th century–19th century
+sources:
+  period:
+    - note: “The Tosa school was founded at the end of the twelfth century by Fujiwara no Tsunetaka” · “Tosa Mitsunobu (1434–1525), the foremost painter of the imperial court through the tumultuous events of the Ōnin War” (p. 171) · “the yamato-e of the imperial Tosa school” (p. 312)
+      source: history-of-japanese-art
+      locator: pp. 170–171, 312, 345
+      accessed: 2026-10-30

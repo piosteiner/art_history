@@ -1,0 +1,25 @@
+public_id: 105508
+name: Rinpa
+names:
+  - lang: en
+    role: alternative
+    text: Rimpa
+  - lang: ja
+    role: original
+    text: "{琳派|りんぱ}"
+kind: school
+period: 17th century–19th century
+description_md: |-
+  A school of decorative painting and design — bright colours, gold and silver grounds, flattened and stylised motifs from classical poetry and the seasons — that shaped not only painting but lacquer, ceramics and textiles. It is not a family lineage like the Kanō or Tosa but an association of shared aesthetic values; its name comes from the second syllable of Ogata Kōrin's name[[source/history-of-japanese-art|pp. 312–313]].
+
+  **Dates.** It traces its origins to Hon'ami Kōetsu and Tawaraya Sōtatsu in Kyoto in the early 17th century — Kōetsu's artists' community at Takagamine from 1615[[source/history-of-japanese-art|pp. 238–239]] — was revitalised by Ogata Kōrin (1658–1716) around 1700 and revived in Edo by Sakai Hōitsu, who held a ceremony for the centenary of Kōrin's death in 1815; his follower Suzuki Kiitsu (1796–1858) carried it into the mid-19th century[[source/history-of-japanese-art|pp. 312–317]]. It lived on in the nihonga of the 20th century[[source/history-of-japanese-art|pp. 345, 365]].
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 17th century–19th century
+sources:
+  period:
+    - note: “out of the traditions established there would grow the Rinpa school” (p. 239) · “The Rinpa school … officially traces its origins in the work of Sōtatsu and Kōetsu. In reality it is the product of the reworking and revitalization of their concepts by Ogata Kōrin (1658–1716)” (p. 312) · Hōitsu “even held a ceremony in 1815 commemorating the centennial of Kōrin’s death” (p. 316)
+      source: history-of-japanese-art
+      locator: pp. 238–239, 312–317
+      accessed: 2026-10-30
