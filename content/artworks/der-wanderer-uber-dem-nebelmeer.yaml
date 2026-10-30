@@ -1,6 +1,25 @@
 public_id: 100501
 title_lang: de
 title: Der Wanderer über dem Nebelmeer
+names:
+  - lang: de
+    role: former
+    text: Wanderer über dem Wolkenmeer
+    period: 1938/1949
+    note: used by the dealer W. A. Luz beside the title Ludwig Grote gave it in 1938, still in 1947 and 1949
+    sources:
+      - note: „verwendete Luz weiterhin – auch 1947 – wiederholt den Titel Wanderer über dem Wolkenmeer“ (S. 28)
+        source: bauer-haug-2024
+        locator: S. 28, 34
+  - lang: de
+    role: former
+    text: Wanderer am Abgrund
+    period: 1947-04
+    note: as Carl Gustav Carus, no. 9 of the exhibition "Deutsche Malerei des 19. Jahrhunderts", Central Collecting Point Wiesbaden
+    sources:
+      - note: „Hier wurde das Gemälde als eines von Carl Gustav Carus gezeigt und im Katalog unter der Nr. 9 als Wanderer am Abgrund verzeichnet.“
+        source: bauer-haug-2024
+        locator: S. 34
 creator: caspar-david-friedrich
 created: c. 1817
 created_span: uncertain
@@ -14,7 +33,11 @@ web_url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161
 on_loan: true
 on_loan_since: 1970-12
 provenance_status: c_indications
-provenance_status_note: 'Hamburger Kunsthalle: "ungeklärt, bedenklich" (unresolved, questionable) — research ongoing; gaps between Friedrich and 1938 and around 1949–1957.'
+provenance_status_note: 'Hamburger Kunsthalle: "ungeklärt, bedenklich" (unresolved, questionable) — research ongoing. A gap of about 120 years, from 1813/1817 to 1938; whether Luz took the work from Jewish owners as an expert of the Reichskammer der bildenden Künste is still open (Bauer/Haug 2024). Unknown too: when it left Henke (1949–1957).'
+description_md: |-
+  Neither signed nor dated, the painting is known only from 1938, when the Berlin dealer Wilhelm August Luz had it judged by art historians: Karl Wilhelm Jähnig and Ludwig Grote took it for a work by Friedrich, Eberhard Hanfstaengl for one by Carl Gustav Carus; Robert Oertel took the landscape for Friedrich and the figure for Carus[[source/bauer-haug-2024|S. 20–21, 24–27]]. The evidence for Friedrich was his drawing *Felsige Kuppe* of 3 June 1813 in Dresden, used for the rocks in the foreground[[source/bauer-haug-2024|S. 26–27]]. Ludwig Grote gave the painting its title[[source/bauer-haug-2024|S. 27: „Ich taufte es Wanderer über dem Nebelmeer und diesen Titel hat es behalten.“]].
+
+  Bauer and Haug (Hamburger Kunsthalle, 2024) hold the attribution on style alone to be problematic: Carus, Georg Friedrich Kersting or a work of two hands (Friedrich the landscape, Kersting the figure) cannot be ruled out, and a technical examination is still to be made[[source/bauer-haug-2024|S. 20–21, 28–29, 35]]. Proposed dates range from 1813 to around 1820; the museum dates it about 1817[[source/bauer-haug-2024|S. 19, note 1]]. Luz said the man shown was a Saxon forestry official named von Brinken; that is unproven and may have been told to make the work more attractive[[source/bauer-haug-2024|S. 21–23]].
 wikidata_id: Q311243
 metadata:
   sources: [Wikidata Q311243 (retrieved 2026-10-16)]
@@ -28,42 +51,79 @@ provenance:
     acquired: c. 1817
     method: creation
     direct: true
-    notes_md: "When, to whom and how Friedrich sold or passed on the work is unknown; the date is not secure — the work is neither signed nor dated. Detailed report: [[source/bauer-haug-2024|Bauer/Haug 2024]]."
+    notes_md: "When, to whom and how Friedrich sold or passed on the work is unknown; the date is not secure — the work is neither signed nor dated. It is not in the inventory of Friedrich's estate (Sächsisches Staatsarchiv Dresden, Amt Dresden 2686), and Luz will not have had it from Friedrich's family, or he would not have needed the experts' opinions of 1938. Detailed report: [[source/bauer-haug-2024|Bauer/Haug 2024]]."
     sources:
       - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
         source: hamburger-kunsthalle-online-sammlung
         locator: Provenienz, note 1
         accessed: 2026-10-17
+      - note: „Nachlassverzeichnis von Caspar David Friedrich … Kein Befund für den Wanderer ermittelbar.“ (note 3) · „Vermutlich stammt das Gemälde nicht unmittelbar von der Familie Friedrich“ (S. 35)
+        source: bauer-haug-2024
+        locator: S. 19–20, 24, 35, notes 3, 96
   - owner: institution/galerie-dr-wilhelm-august-luz
     role: dealer
-    acquired: July 1938 or earlier
+    acquired: 1938-07-06 or earlier
     ended: 1938-10
     place: berlin
     label: "shown to art historians in July–August 1938 (Jähnig, Hanfstaengl, Grote, Oertel): Friedrich or Carl Gustav Carus?"
-    notes_md: "Karl Wilhelm Jähnig to Luz, 16 July 1938: an important autograph work by Friedrich (Deutsches Kunstarchiv, Nürnberg, Nachlass Gosebruch). Sources before 1938 unknown (the museum's note 2)."
+    notes_md: First documented on 6 July 1938, when Luz showed it to Karl Wilhelm Jähnig — the same day the Reichskammer der bildenden Künste put Luz on its list of experts. Where and as whose work Luz got it is unknown. Jähnig, dismissed in 1937 because his wife was Jewish, and Hanfstaengl, dismissed as director of the Nationalgalerie in 1937, gave their opinions at an insecure time of their lives. A "Gebirgslandschaft mit einsamem Wanderer" by an unknown artist, 73 × 97 cm, auctioned in Berlin on 28 February 1934 (lot 216), is of other measurements.
     sources:
       - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
         source: hamburger-kunsthalle-online-sammlung
         locator: Provenienz, note 3
         accessed: 2026-10-17
+      - note: „Bemerkenswert ist, dass an demselben Tag, an dem Luz seine neue Funktion als Kunstsachverständiger begann, auch der Wanderer erstmals aktenkundig nachweisbar ist.“ (S. 23)
+        source: bauer-haug-2024
+        locator: S. 20–28, notes 26–27, 4
+    records:
+      - kind: sighting
+        date: 1938-07-06
+        note: shown to Karl Wilhelm Jähnig, who recognised it as Friedrich's on the strength of the drawing in Dresden
+        place: berlin
+        document: data sheet Jähnig / Börsch-Supan
+      - kind: document
+        date: 1938-07-16
+        note: "expert opinion: „eine eigenhändige bedeutende Arbeit von Caspar David Friedrich“"
+        document: Jähnig to Luz, DKA Nürnberg, Nachlass Ernst Gosebruch, IC26
+      - kind: document
+        date: 1938-08-04
+        note: "Hanfstaengl had seen it too; Jähnig had considered Carus and Kersting; Hanfstaengl noted: „unzweifelhaft Carus“ (answered 9 August)"
+        document: Jähnig to Hanfstaengl, DKA, Nachlass Eberhard Hanfstaengl, 602
+      - kind: document
+        date: 1938-08-28
+        note: "expert opinion: Friedrich, with the drawing of 3 June 1813 as proof"
+        place: berlin
+        document: Ludwig Grote to Luz, DKA, Nachlass Gosebruch, IC26
+      - kind: document
+        date: 1938-08-30
+        note: first called „Wanderer über dem Nebelmeer“
+        place: berlin
+        document: Luz to Hanfstaengl, DKA, Nachlass Hanfstaengl, 284
   - owner: person/ernst-henke
     further_places: [siegen]
     acquired: 1938-10
     method: purchase
     direct: true
     place: essen
-    label: bought from Galerie Luz; label on the stretcher "Bes. Assessor Henke Essen"
-    certainty: probable
+    label: "bought from Galerie Luz (Henke's file card: „Galerie Luz, Dresden [sic] – Oktober 1938 RM 60.000.-“); label on the stretcher \"Bes. Assessor Henke Essen\""
     price:
       amount: 60000
       currency: RM
-      note: Henke's file card
-    notes_md: Stored during the war near Siegen with works of the Museum Folkwang. Handed back after the Allied custody, probably in August 1948; a grandson recalls it still in the house after 1951, but a data sheet (probably Jähnig's) has it leave the collection by December 1949.
+      note: Henke's file card; Luz later wrote he had sold it to a private owner in 1939 for RM 80,000 (1947, 1948)
+    notes_md: "Stored during the war with works of the Museum Folkwang: from 16 March 1942 at Schloss Adolphsburg near Oberhundem, then in the Hainer Stollen near Siegen. Henke's file card names the experts' opinions of Jähnig and Grote. In June 1940 Luz still sought proof for \"the present owner\" from Hans Posse."
     sources:
       - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
         source: hamburger-kunsthalle-online-sammlung
         locator: Provenienz, note 4
         accessed: 2026-10-17
+      - note: „Der Übergang in die Sammlung Henke ist mit diesem Dokument für Oktober 1938 belegt.“ (S. 32)
+        source: bauer-haug-2024
+        locator: S. 32–33, notes 76, 78
+    records:
+      - kind: document
+        date: 1942-03-16
+        note: taken in at Schloss Adolphsburg near Oberhundem
+        document: receipt of the Provinzialkonservator der Rheinprovinz, ALVR Pulheim, Akte 35244, no. 2
   - owner: institution/marburg-central-collecting-point
     role: custodian
     numbers:
@@ -80,6 +140,9 @@ provenance:
         source: hamburger-kunsthalle-online-sammlung
         locator: Provenienz, note 4
         accessed: 2026-10-17
+      - note: „am 4. Juni 1945 in den Central Collecting Point Marburg eingeliefert, dort inventarisiert (MAR 1024) und fotografiert“
+        source: bauer-haug-2024
+        locator: S. 33, note 79
   - role: event
     acquired: 1946-04
     place: marburg
@@ -89,6 +152,9 @@ provenance:
         source: hamburger-kunsthalle-online-sammlung
         locator: Provenienz, note 4
         accessed: 2026-10-17
+      - note: „dass der Wanderer 1946 im Hessischen Staatsarchivs Marburg erstmals öffentlich gezeigt wurde“
+        source: bauer-haug-2024
+        locator: S. 33–34, note 80
   - owner: institution/wiesbaden-central-collecting-point
     role: custodian
     acquired: 1946-06-06
@@ -102,6 +168,9 @@ provenance:
         source: hamburger-kunsthalle-online-sammlung
         locator: Provenienz, note 4
         accessed: 2026-10-17
+      - note: „Am 6.6.1946 erfolgte der Transport des Gemäldes in den CCP Wiesbaden.“
+        source: bauer-haug-2024
+        locator: S. 34, note 80
   - role: event
     numbers:
       - kind: catalogue
@@ -114,6 +183,9 @@ provenance:
         source: hamburger-kunsthalle-online-sammlung
         locator: Provenienz, note 4
         accessed: 2026-10-17
+      - note: als Leihgabe des Folkwang Museums verzeichnet
+        source: bauer-haug-2024
+        locator: S. 34, note 81
   - owner: institution/mfaa-british-zone-dusseldorf
     role: custodian
     acquired: 1947-09-09
@@ -127,6 +199,9 @@ provenance:
         source: hamburger-kunsthalle-online-sammlung
         locator: Provenienz, note 4
         accessed: 2026-10-17
+      - note: „Am 9. September 1947 übergab der CCP Wiesbaden das Werk an den britischen MFA&A … in Düsseldorf.“
+        source: bauer-haug-2024
+        locator: S. 34, note 82
   - owner: person/ernst-henke
     acquired: 1948-08
     ended: 1949 or later
@@ -135,11 +210,20 @@ provenance:
     place: essen
     label: handed back to Henke after the Allied custody
     certainty: probable
+    notes_md: "In 1971 Henke told Werner Hofmann (Hamburger Kunsthalle) he had sold it on the advice of Heinz Köhn, director of the Museum Folkwang, who took it for a Carus — for DM 60,000; his file card says DM 20,000 through Grote. When it left Henke is not documented: a grandson recalls it still in the house after 1951, but a data sheet (probably Jähnig's) has it leave the collection by December 1949."
     sources:
       - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
         source: hamburger-kunsthalle-online-sammlung
         locator: Provenienz, note 4
         accessed: 2026-10-17
+      - note: „Ernst Henke erhielt es vermutlich im August 1948 zurück.“ (S. 34)
+        source: bauer-haug-2024
+        locator: S. 33–34, notes 77, 88
+    records:
+      - kind: other
+        date: "1949"
+        note: "reproduced on the dust jacket: „erst vor kurzem aufgetaucht und befindet sich in Privatbesitz“"
+        document: Fritz Nemitz, Caspar David Friedrich. Die unendliche Landschaft, 4th ed., Munich 1949
   - owner: institution/galerie-dr-wilhelm-august-luz
     role: agent
     acquired: 1949
@@ -151,6 +235,18 @@ provenance:
         source: hamburger-kunsthalle-online-sammlung
         locator: Provenienz, note 5
         accessed: 2026-10-17
+      - note: „Im Juli des Jahres 1949 bot der Kunsthändler W. A. Luz das Gemälde erneut an, wohl im Auftrag Henkes“
+        source: bauer-haug-2024
+        locator: S. 34, notes 83–86
+    records:
+      - kind: document
+        date: 1949-07-21
+        note: offered as made in 1813, a "new discovery" of ten years before, backed by five preparatory drawings
+        document: Luz to Carl Georg Heise, HAHK, Slg 5 Kaufangebote 49-50, A-D, Bl. 350
+      - kind: document
+        date: 1949-08-31
+        note: no photograph, no opinion — the contact ends
+        document: Heise to Luz, HAHK, Bl. 347
   - owner_label: Private collection, Bielefeld
     acquired: 1957 or earlier
     place: bielefeld
@@ -160,6 +256,9 @@ provenance:
         source: hamburger-kunsthalle-online-sammlung
         locator: Provenienz, note 7
         accessed: 2026-10-17
+      - note: „In den 1950er Jahren gehörte es zu einer Bielefelder Sammlung.“
+        source: bauer-haug-2024
+        locator: S. 34, note 89
   - role: event
     acquired: 1959
     place: london
@@ -169,6 +268,9 @@ provenance:
         source: hamburger-kunsthalle-online-sammlung
         locator: Provenienz, note 7
         accessed: 2026-10-17
+      - note: "label on the stretcher: „Owner: Privatbesitz Bielefeld“"
+        source: bauer-haug-2024
+        locator: S. 34, note 89
   - owner: person/paul-herzogenrath
     role: dealer
     place: bielefeld
@@ -178,17 +280,23 @@ provenance:
         source: hamburger-kunsthalle-online-sammlung
         locator: Provenienz, note 8
         accessed: 2026-10-17
+      - note: „hatte den Wanderer in den Händen, aber der genaue Zeitraum ist nicht zu ermitteln“
+        source: bauer-haug-2024
+        locator: S. 34–35, notes 91–92
   - owner: person/hugo-oberwelland
     ended: 1970
     method: purchase
     direct: true
     place: halle-westf
-    label: bought from Herzogenrath
+    label: bought from Herzogenrath at an unknown date; Oberwelland headed the Storck-Werke in Halle (Westfalen)
     sources:
       - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
         source: hamburger-kunsthalle-online-sammlung
         locator: Provenienz, note 9
         accessed: 2026-10-17
+      - note: „verkaufte das Gemälde zu einem nicht bekannten Zeitpunkt an Hugo Oberwelland (1901-1978), dem damaligen Leiter der Storck-Werke in Halle (Westfalen)“
+        source: bauer-haug-2024
+        locator: S. 35
   - owner: institution/kunsthaus-buhler
     role: agent
     acquired: 1970-12
@@ -200,6 +308,9 @@ provenance:
         source: hamburger-kunsthalle-online-sammlung
         locator: Provenienz, note 10
         accessed: 2026-10-17
+      - note: offered to the Nationalgalerie Berlin (Werner Haftmann, August–September 1970) and the Staatsgalerie Stuttgart
+        source: bauer-haug-2024
+        locator: S. 35, notes 93–94
   - owner: institution/stiftung-hamburger-kunstsammlungen
     acquired: 1970-12
     method: purchase
@@ -214,6 +325,8 @@ provenance:
         source: hamburger-kunsthalle-online-sammlung
         locator: Provenienz, note 10
         accessed: 2026-10-17
+      - source: bauer-haug-2024
+        locator: S. 35
   - owner_label: Dr. Oetker collection, Bielefeld
     acquired: 1950
     method: purchase
@@ -232,7 +345,17 @@ provenance:
       - note: as cited by the Hamburger Kunsthalle (note 7)
         source: borsch-supan-jahnig-1973
         locator: p. 349, no. 250
+      - note: „Verkauft durch [Ludwig] Grote für DM 20.000.- an ? Oetker Bielefeld“ (file card, S. 32) · neither before nor after 1945 documented (S. 34)
+        source: bauer-haug-2024
+        locator: S. 21, 32, 34, notes 8, 12, 90
     alternative_of: 10
+  - role: event
+    acquired: 1950
+    label: "first discussed in print: Ludwig Grote, „Der Wanderer über dem Nebelmeer“, Die Kunst und das schöne Heim 48 (1950), no. 11, pp. 401–404"
+    notes_md: A data sheet also has it shown in Munich as "Bild des Monats" in 1950; that could not be verified.
+    sources:
+      - source: bauer-haug-2024
+        locator: S. 21, 34, notes 13, 87
 numbers:
   - number: "250"
     source: borsch-supan-jahnig-1973
@@ -254,6 +377,9 @@ sources:
     - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161
       source: hamburger-kunsthalle-online-sammlung
       accessed: 2026-10-17
+    - note: proposals from 1813 (Luz 1949) to „am ehesten um 1818“ (Börsch-Supan/Jähnig 1973); „Die Hamburger Kunsthalle verwendet als Datierung aktuell „um 1817““
+      source: bauer-haug-2024
+      locator: S. 19, note 1
   creator:
     - accessed: 2026-10-16
       property: P170
@@ -290,3 +416,6 @@ sources:
     - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161
       source: hamburger-kunsthalle-online-sammlung
       accessed: 2026-10-17
+    - note: „dessen Herkunftslücke um die 120 Jahre umfasst, genauer von 1813/1817 bis 1938“ (S. 19) · „Es ist weiterhin zu klären, ob Luz das Werk wohlmöglich im Rahmen seiner Sachverständigentätigkeit aus jüdischem Besitz bezogen hat.“ (S. 35)
+      source: bauer-haug-2024
+      locator: S. 19, 23, 35

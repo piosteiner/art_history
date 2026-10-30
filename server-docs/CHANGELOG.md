@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: Wanderer über dem Nebelmeer after Bauer/Haug (transfer 3, 2024)
+- **What:** the article (PDF from the owner) cited on 17 provenance steps, the date and the provenance status with
+  page locators. Added: the 1938 opinions as records under Luz (6 July shown to Jähnig, 16 July Jähnig, 4 Aug Jähnig to
+  Hanfstaengl — "unzweifelhaft Carus", 28 Aug Grote, 30 Aug the title first used); Luz an expert of the
+  Reichskammer from that same day; Henke's purchase October 1938 now `attested` (file card, RM 60,000; Luz's later
+  "1939, RM 80,000" in the price note); storage at Schloss Adolphsburg from 16 March 1942; Luz's 1949 offer to Heise
+  (21 July / 31 Aug); Nemitz 1949 dust jacket; Henke's 1971 account (Köhn, Carus, DM 60,000); an event "first
+  discussed in print: Grote 1950"; former titles "Wanderer über dem Wolkenmeer" (1938–1949) and "Wanderer am
+  Abgrund" (1947); a description on the attribution question (Carus, Kersting, two hands; the Brincken story).
+- **Why:** owner, 2026-10-30.
+- **Revert:** via the admin history (artwork 244 and its provenance) or `git revert` of the content file + import.
+
 ### Data: Zug 1352–1481 after Glauser (Tugium 18, 2002)
 - **What:** Zug's links remodelled from Glauser, "1352 – Zug wird nicht eidgenössisch" (Tugium 18, 2002, pp. 103–115,
   DOI 10.5169/seals-526867, read by the owner): Holy Roman Empire (Habsburg) 962–1415 (S. 110, 113–114); the forced
