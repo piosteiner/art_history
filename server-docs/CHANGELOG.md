@@ -2,6 +2,18 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-30
+
+### Site: very wide pictures sharp, with an overview band
+- **What:** a very wide picture (> 2.5 : 1) is loaded in a rendition for the strip's full height (`wideSource()` in
+  `frontend/src/html.ts`: Wikimedia's standard widths 960/1280/1920/3840 on upload. and thumb.wikimedia.org — 2560 or
+  5000 are refused; other servers: the original), also in the lightbox; above the strip the whole picture as a band
+  with a frame round the part in view, click or drag to move (`widen()`); the strip rule no longer sizes the band.
+  Monet's Two Willows: before 500 × 56 px stretched to 378 high, now 3840 × 433. Site test with the 3840 request, the
+  band and its click (the old test's SVG stand-in scaled without blur, so it passed while the page was blurry).
+- **Why:** owner: the earlier solution did not work for Les Nymphéas — Les Deux Saules.
+- **Revert:** `git revert`.
+
 ## 2026-10-29
 
 ### Heritage designations (migrations 165/166) and ColBase on Enrich

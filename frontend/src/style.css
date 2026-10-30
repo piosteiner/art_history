@@ -209,8 +209,14 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 /* a very wide picture (a panorama, Monet's Water Lilies): a readable height, scrolled sideways (html.ts watchImageShapes) */
 .figure.wide { max-width: 100%; min-width: 0; }
 .figure.wide .figure-frame { overflow-x: auto; overscroll-behavior-x: contain; }
-.gallery .figure.wide img, .figure.wide img { max-width: none; max-height: none; height: clamp(170px, 42vh, 380px); width: auto; }
+.gallery .figure.wide .figure-frame img, .figure.wide .figure-frame img { max-width: none; max-height: none; height: clamp(170px, 42vh, 380px); width: auto; }
 .figure.wide.scrolls figcaption::before { content: "⟷ scroll sideways for the whole picture"; display: block; color: var(--muted); font-size: .85em; }
+/* the whole of a very wide picture above its strip, a frame round the part in view (html.ts widen) */
+.wide-overview { position: relative; display: block; margin-bottom: 6px; cursor: pointer; touch-action: none; line-height: 0; }
+.wide-overview-img { display: block; width: 100%; height: auto; max-height: none; opacity: .85; border-radius: 2px; }
+.wide-window { position: absolute; top: -2px; bottom: -2px; border: 2px solid var(--accent, #b4462b); border-radius: 3px;
+  box-shadow: 0 0 0 9999px rgb(0 0 0 / .25); pointer-events: none; }
+.wide-overview { overflow: hidden; }
 /* a very tall one (a hanging scroll): more height than the usual frame */
 .gallery .figure.tall img, .figure.tall img { max-height: min(80vh, 900px); }
 .figure figcaption { font-size: .78rem; color: var(--muted); margin-top: .3rem; max-width: 500px; }

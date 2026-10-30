@@ -2784,18 +2784,33 @@ test('lists: hovering a card’s small image shows the whole picture, larger; le
   await expect(preview).toBeHidden();
 });
 
-test('a very wide picture (Monet’s Water Lilies) keeps a readable height and scrolls sideways, also enlarged', async ({ page }) => {
-  await page.route(/wikimedia\.org/, (r) => r.fulfill({ contentType: 'image/svg+xml', headers: { 'Access-Control-Allow-Origin': '*' },
-    body: '<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="200"><rect width="1700" height="200" fill="#36a"/></svg>' }));
+test('a very wide picture (Monet’s Water Lilies): readable height, sharp rendition, overview band, also enlarged', async ({ page }) => {
+  const asked: string[] = [];
+  await page.route(/wikimedia\.org/, (r) => {
+    asked.push(r.request().url());
+    return r.fulfill({ contentType: 'image/svg+xml', headers: { 'Access-Control-Allow-Origin': '*' },
+      body: '<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="200"><rect width="1700" height="200" fill="#36a"/><rect x="1600" width="100" height="200" fill="#c33"/></svg>' });
+  });
   await page.goto('/artworks/102162/water-lilies-the-two-willows');
   const fig = page.locator('.gallery .figure').first();
+  const strip = fig.locator('.figure-frame img');
   await expect(fig).toHaveClass(/\bwide\b/);
-  expect((await fig.locator('img').boundingBox())!.height).toBeGreaterThan(160);
+  expect((await strip.boundingBox())!.height).toBeGreaterThan(160);
   await expect(fig).toHaveClass(/\bscrolls\b/);   // wider than the page: "scroll sideways" under it
-  await fig.locator('img').click();
+  // not the small thumbnail stretched (2026-10-30: 500 × 56 px shown 378 high): Wikimedia's 3840 px rendition
+  await expect.poll(() => asked.some((u) => u.includes('/3840px-'))).toBe(true);
+  // the whole picture above the strip; a click at its right end scrolls the strip there
+  const band = fig.locator('.wide-overview');
+  await expect(band).toBeVisible();
+  const b = (await band.boundingBox())!;
+  await page.mouse.click(b.x + b.width - 3, b.y + b.height / 2);
+  await expect.poll(() => fig.locator('.figure-frame').evaluate((f) => f.scrollLeft)).toBeGreaterThan(500);
+  await expect.poll(async () => (await fig.locator('.wide-window').boundingBox())!.x).toBeGreaterThan(b.x + b.width / 2);
+  await strip.click();
   const box = page.locator('dialog.lightbox-wide');
   await expect(box).toBeVisible();
   expect((await box.locator('img').boundingBox())!.height).toBeGreaterThan(400);
+  expect(await box.locator('img').getAttribute('src')).toMatch(/\/(1920|3840)px-/);   // the enlarged one sharp as well
 });
 
 test('protection status (API 166): a designation as its own section of the relationships, linked to the glossary', async ({ page }) => {

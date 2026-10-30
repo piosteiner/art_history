@@ -119,6 +119,7 @@ export const WIDE = 2.5;
 export const TALL = 0.45;
 export function watchImageShapes() {
   const shape = (img: HTMLImageElement) => {
+    if (img.classList.contains('wide-overview-img')) return;
     const fig = img.closest<HTMLElement>('.figure');
     if (!fig || !img.naturalWidth) return;
     const ratio = img.naturalWidth / img.naturalHeight;
@@ -126,9 +127,76 @@ export function watchImageShapes() {
     fig.classList.toggle('tall', ratio < TALL);
     const frame = img.parentElement!;
     fig.classList.toggle('scrolls', frame.scrollWidth > frame.clientWidth + 1);
+    if (ratio > WIDE) widen(fig, frame, img, ratio);
   };
   document.addEventListener('load', (ev) => { if (ev.target instanceof HTMLImageElement) shape(ev.target); }, true);
-  addEventListener('resize', () => document.querySelectorAll<HTMLImageElement>('.figure.wide img').forEach(shape));
+  addEventListener('resize', () => document.querySelectorAll<HTMLImageElement>('.figure.wide .figure-frame > img').forEach(shape));
+}
+
+/**
+ * A rendition sharp enough for a very wide picture shown `cssHeight` px high (2026-10-30: Monet's Two Willows came as
+ * the 500 px thumbnail — 56 px high — stretched to 378). Wikimedia makes only its standard widths (1920 and 3840 work,
+ * 2560 or 5000 are refused); other servers' pictures: the original (our /v1/thumb stops at 800).
+ */
+const COMMONS_WIDTHS = [960, 1280, 1920, 3840];
+export function wideSource(url: string, ratio: number, cssHeight: number) {
+  const need = Math.ceil(ratio * cssHeight * Math.min(devicePixelRatio || 1, 2));
+  const isCommons = /^https:\/\/(upload|thumb)\.wikimedia\.org\//.test(url);  // both hosts serve the standard widths
+  if (!isCommons) return url;
+  return thumb(url, COMMONS_WIDTHS.find((w) => w >= need) ?? COMMONS_WIDTHS[COMMONS_WIDTHS.length - 1]);
+}
+
+/**
+ * A very wide picture: the sharp rendition in the strip, and above it the whole picture as a band with a frame round
+ * the part in view — click or drag in the band to move there.
+ */
+function widen(fig: HTMLElement, frame: HTMLElement, img: HTMLImageElement, ratio: number) {
+  if (!img.dataset.wideSrc && img.dataset.full) {
+    // for the strip's full height (style.css: clamp(170px, 42vh, 380px)) — on its first load it may not have it yet
+    const sharp = wideSource(img.dataset.full, ratio, Math.max(img.clientHeight, 380));
+    img.dataset.wideSrc = sharp;
+    if (sharp !== img.currentSrc && sharp !== img.src) {
+      const small = img.src;
+      img.addEventListener('error', () => { img.src = small; }, { once: true });  // the larger one refused: keep the small one
+      img.src = sharp;
+    }
+  }
+  let band = fig.querySelector<HTMLElement>('.wide-overview');
+  if (!band) {
+    band = document.createElement('span');
+    band.className = 'wide-overview';
+    band.setAttribute('aria-hidden', 'true');
+    band.innerHTML = '<span class="wide-window"></span>';
+    const mini = document.createElement('img');
+    mini.className = 'wide-overview-img';
+    mini.alt = '';
+    mini.src = thumb(img.dataset.full ?? img.src, 960);
+    if (img.hasAttribute('crossorigin')) mini.crossOrigin = 'anonymous';
+    mini.addEventListener('error', () => { mini.src = img.src; }, { once: true });
+    band.prepend(mini);
+    frame.before(band);
+    const win = band.querySelector<HTMLElement>('.wide-window')!;
+    const sync = () => {
+      const w = frame.scrollWidth || 1;
+      win.style.left = `${(frame.scrollLeft / w) * 100}%`;
+      win.style.width = `${Math.min(100, (frame.clientWidth / w) * 100)}%`;
+    };
+    const go = (ev: PointerEvent) => {
+      const r = band!.getBoundingClientRect();
+      frame.scrollLeft = ((ev.clientX - r.left) / r.width) * frame.scrollWidth - frame.clientWidth / 2;
+    };
+    frame.addEventListener('scroll', sync, { passive: true });
+    addEventListener('resize', sync);
+    img.addEventListener('load', sync);
+    band.addEventListener('pointerdown', (ev) => {
+      go(ev);
+      band!.setPointerCapture(ev.pointerId);
+      const move = (e: PointerEvent) => go(e);
+      band!.addEventListener('pointermove', move);
+      band!.addEventListener('pointerup', () => band!.removeEventListener('pointermove', move), { once: true });
+    });
+    sync();
+  }
 }
 
 /**
@@ -193,7 +261,7 @@ export function wireLightbox(root: Element) {
       const caption = img.closest('figure')?.querySelector('figcaption')?.innerHTML ?? '';
       // the caption was built by figure() above from escaped values, so reusing its markup is safe
       dialog.innerHTML = `<button type="button" class="lightbox-close" aria-label="Close">×</button>
-        <figure><div class="lightbox-stage"><img src="${escape(img.dataset.full!)}" alt="${escape(img.alt)}"${img.hasAttribute('crossorigin') ? ' crossorigin="anonymous"' : ' referrerpolicy="no-referrer"'} draggable="false"></div>
+        <figure><div class="lightbox-stage"><img src="${escape(wide ? wideSource(img.dataset.full!, img.naturalWidth / img.naturalHeight, Math.min(innerHeight * 0.8, 900)) : img.dataset.full!)}" alt="${escape(img.alt)}"${img.hasAttribute('crossorigin') ? ' crossorigin="anonymous"' : ' referrerpolicy="no-referrer"'} draggable="false"></div>
         <figcaption>${caption}<span class="lightbox-hint">${wide ? 'Scroll sideways for the whole picture' : 'Scroll or pinch to zoom · drag to move · double-click: fit / zoom'}</span></figcaption></figure>`;
       // the image zooms and pans (zoom.ts); a click beside it closes, as does Escape or ×
       retryImage(dialog.querySelector('img')!);
