@@ -34,7 +34,7 @@ relationships:
         wikidata: Q39931
   - type: lived_in
     to: place/limoges
-    period: 25 February 1841–1844
+    period: 25 February 1841 – 1844
     sources:
       - accessed: 2026-10-22
         property: P551

@@ -118,7 +118,7 @@ relationships:
         wikidata: Q83155
   - type: studied_at
     to: institution/beaux-arts-de-paris
-    period: October 1799–1801
+    period: October 1799 – 1801
     sources:
       - accessed: 2026-10-18
         property: P69

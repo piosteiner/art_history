@@ -10,7 +10,7 @@ metadata:
 relationships:
   - type: in_polity
     to: polity/kingdom-of-bavaria
-    period: 1 January 1806–5 November 1810
+    period: 1 January 1806 – 5 November 1810
     sources:
       - accessed: 2026-10-29
         wikidata: Q154195

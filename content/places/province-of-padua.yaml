@@ -22,13 +22,13 @@ relationships:
         accessed: 2026-10-30
   - type: in_polity
     to: polity/habsburg-monarchy
-    period: 17 October 1797–30 April 1806
+    period: 17 October 1797 – 30 April 1806
     sources:
       - accessed: 2026-10-29
         wikidata: Q153136
   - type: in_polity
     to: polity/kingdom-of-italy-napoleonic
-    period: 1 May 1806–19 April 1814
+    period: 1 May 1806 – 19 April 1814
     sources:
       - accessed: 2026-10-29
         wikidata: Q223936

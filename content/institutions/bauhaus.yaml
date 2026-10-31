@@ -12,10 +12,10 @@ metadata:
 relationships:
   - type: located_in
     to: place/weimar
-    period: 12 April 1919–31 March 1925
+    period: 12 April 1919 – 31 March 1925
   - type: located_in
     to: place/dessau-ro-lau
-    period: 1 April 1925–30 September 1932
+    period: 1 April 1925 – 30 September 1932
   - type: located_in
     to: place/berlin
     period: 1932/1933

@@ -26,13 +26,13 @@ relationships:
         accessed: 2026-10-30
   - type: in_polity
     to: polity/habsburg-spain
-    period: 1516–31 October 1700
+    period: 1516 – 31 October 1700
     sources:
       - accessed: 2026-10-29
         wikidata: Q600093
   - type: in_polity
     to: polity/kingdom-of-spain
-    period: 1 November 1700–15 January 1716
+    period: 1 November 1700 – 15 January 1716
     sources:
       - accessed: 2026-10-29
         wikidata: Q3399982

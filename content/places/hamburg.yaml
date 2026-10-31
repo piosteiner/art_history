@@ -54,7 +54,7 @@ relationships:
         accessed: 2026-10-30
   - type: in_polity
     to: polity/first-french-empire
-    period: 1 January 1811–30 May 1814
+    period: 1 January 1811 – 30 May 1814
     sources:
       - accessed: 2026-10-29
         wikidata: Q71084
@@ -66,7 +66,7 @@ relationships:
         wikidata: Q151624
   - type: in_polity
     to: polity/north-german-confederation
-    period: 1 July 1867–31 December 1870
+    period: 1 July 1867 – 31 December 1870
     sources:
       - accessed: 2026-10-29
         wikidata: Q150981

@@ -10,13 +10,13 @@ metadata:
 relationships:
   - type: in_polity
     to: polity/habsburg-spain
-    period: 1516–31 October 1700
+    period: 1516 – 31 October 1700
     sources:
       - accessed: 2026-10-29
         wikidata: Q600093
   - type: in_polity
     to: polity/kingdom-of-spain
-    period: 1 November 1700–10 February 1873
+    period: 1 November 1700 – 10 February 1873
     sources:
       - accessed: 2026-10-29
         wikidata: Q3399982
@@ -34,13 +34,13 @@ relationships:
         wikidata: Q1044536
   - type: in_polity
     to: polity/second-spanish-republic
-    period: 14 April 1931–31 March 1939
+    period: 14 April 1931 – 31 March 1939
     sources:
       - accessed: 2026-10-29
         wikidata: Q178038
   - type: in_polity
     to: polity/francoist-spain
-    period: 1 April 1939–19 November 1975
+    period: 1 April 1939 – 19 November 1975
     sources:
       - accessed: 2026-10-29
         wikidata: Q13474305

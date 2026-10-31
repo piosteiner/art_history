@@ -2,7 +2,7 @@
 import { getEncounters, getPresence, listAll, PLURAL } from '../api';
 import { compareUrl, crossedLine, encounterLine } from '../crossings';
 import { encounterKeys, findEncounters, fromApi, type Encounter } from '../encounters';
-import { creatorsOf, impliedEnd, html, link, nameSpan, render, trusted, TYPE_LABEL, type Html } from '../html';
+import { creatorsOf, impliedEnd, html, joinRange, link, nameSpan, render, trusted, TYPE_LABEL, type Html } from '../html';
 import type {
   ArtworkCompletion, ArtworkFate, Citation, SourceHint, Category, CoverageSegment, Entity, EntityType, EntryRef, Inference, Price, ProvenanceAlternative, ProvenanceCoverage, ProvenanceRecord, ProvenanceStatus, ProvenanceStep, Relationship,
 } from '../types';
@@ -84,7 +84,7 @@ export const inferenceLine = (i: Inference) => html`<div class="provenance-infer
 function alternative(a: ProvenanceAlternative, bibliography?: Record<string, SourceHint>): Html {
   const who = a.owner ? link(a.owner.type, a.owner.slug, a.owner.name) : html`${a.owner_label ?? 'an unknown holder'}`;
   const role = a.role && ROLE_TAG[a.role];
-  const when = [a.acquired?.label, a.ended?.label].filter(Boolean).join(' – ');
+  const when = a.acquired?.label && a.ended?.label ? joinRange(a.acquired.label, a.ended.label) : a.acquired?.label ?? a.ended?.label ?? '';
   const how = [a.method && a.method !== 'unknown' ? method(a.method) : null, a.label ? html`${a.label}` : null].filter((x): x is Html => !!x);
   return html`<div class="provenance-alt">
     <span class="provenance-alt-label" title="The sources disagree about this step; it can't be settled">Another reading (sources disagree):</span>

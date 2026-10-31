@@ -52,10 +52,16 @@ export const link = (type: EntityType | Plural, slug: string, name: string) =>
 
 export const dateLabel = (d: DateRange | null | undefined) => d?.label ?? '';
 
+// The dash between two ends: spaced as soon as an end names a month or a season ("1868 – 11 February 1889", not
+// "1868–11 February 1889"), closed between years ("1840–1926") — owner, 2026-10-31; the API's labels follow the same
+// rule (backend src/fuzzy-date.js joinRange, SQL range_label).
+const MORE_THAN_A_YEAR = /\b(January|February|March|April|May|June|July|August|September|October|November|December|spring|summer|autumn|fall|winter)\b/i;
+export const joinRange = (a: string, b: string) => `${a}${MORE_THAN_A_YEAR.test(a) || MORE_THAN_A_YEAR.test(b) ? ' – ' : '–'}${b}`;
+
 /** Lifespan label from two dates, e.g. "1853–1890"; open ends stay visible ("1760–?"). */
 export function spanLabel(from: DateRange | null, to: DateRange | null) {
   if (!from && !to) return '';
-  return `${from?.label ?? '?'} – ${to?.label ?? '?'}`;
+  return joinRange(from?.label ?? '?', to?.label ?? '?');
 }
 
 /** Smaller Wikimedia Commons thumbnail: /1280px-… → /500px-…; other URLs stay as they are. */

@@ -9,19 +9,19 @@ wikidata_id: Q145
 relationships:
   - type: in_polity
     to: polity/kingdom-of-england
-    period: 927–30 April 1707
+    period: 927 – 30 April 1707
     sources:
       - accessed: 2026-10-29
         wikidata: Q179876
   - type: in_polity
     to: polity/kingdom-of-great-britain
-    period: 1 May 1707–31 December 1800
+    period: 1 May 1707 – 31 December 1800
     sources:
       - accessed: 2026-10-29
         wikidata: Q161885
   - type: in_polity
     to: polity/united-kingdom-of-great-britain-and-ireland
-    period: 1 January 1801–5 December 1922
+    period: 1 January 1801 – 5 December 1922
     sources:
       - accessed: 2026-10-29
         wikidata: Q174193

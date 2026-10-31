@@ -232,7 +232,7 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
     build: (a) => {
       const l = located(a, 'nationality');
       return {
-        slug: a.slug, name: a.name, meta: personDates(a).replace(' – ', '–'),
+        slug: a.slug, name: a.name, meta: personDates(a),
         fields: [],
         sorts: { name: byName(a.name), born: byYear(a.birth ?? a.active), died: byYear(a.death ?? a.active, 'to'), country: l.country, nationality: l.polity },
       };
@@ -295,7 +295,7 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
     build: (p) => {
       const l = located(p, 'nationality');
       return {
-        slug: p.slug, name: p.name, meta: personDates(p).replace(' – ', '–'),
+        slug: p.slug, name: p.name, meta: personDates(p),
         fields: [],
         sorts: {
           name: byName(p.name), start: byYear(p.birth ?? p.active), kind: byText(p.kind, 'Other'),

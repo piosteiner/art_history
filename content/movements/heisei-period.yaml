@@ -8,12 +8,12 @@ names:
     role: original
     text: "{平成|へいせい}"
 kind: period
-period: 8 January 1989–30 April 2019
+period: 8 January 1989 – 30 April 2019
 description_md: "**Dates.** The reign of Emperor Akihito: from 8 January 1989[[source/history-of-japanese-art|p. 10]], the day after his father's death, to his abdication on 30 April 2019[[source/wikipedia-en-heisei-era|“from 8 January 1989 until his abdication on 30 April 2019”]][[source/nabunken-style-manual-2022|pp. 29–31]]."
 relationships:
   - type: active_in
     to: place/japan
-    period: 8 January 1989–30 April 2019
+    period: 8 January 1989 – 30 April 2019
     sources:
       - note: "The principal periods as used in this volume are: … “Heisei period (1989–present)” (written in 2005)"
         source: history-of-japanese-art

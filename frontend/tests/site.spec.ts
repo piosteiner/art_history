@@ -1362,8 +1362,8 @@ test('a holder’s page: works held one line each (own and estate periods), then
   await expect(held.locator('h2')).toHaveText('Works held');
   const sebastian = held.locator('> ul > li', { hasText: 'Heiliger Sebastian' });
   await expect(sebastian).toHaveCount(1); // his ownership and his estate's: one line, both periods
-  await expect(sebastian).toContainText('16 February 1954–28 November 1956');
-  await expect(sebastian).toContainText('28 November 1956–1960');
+  await expect(sebastian).toContainText('16 February 1954 – 28 November 1956');
+  await expect(sebastian).toContainText('28 November 1956 – 1960');
   await expect(held.locator('h3')).toHaveText(['Acquired from', 'Passed on to']);
   const nathan = held.locator('ul', { has: page.locator('a', { hasText: 'Fritz Nathan' }) }).locator('li', { hasText: 'Fritz Nathan' });
   await expect(nathan).toHaveCount(1); // one line per counterpart

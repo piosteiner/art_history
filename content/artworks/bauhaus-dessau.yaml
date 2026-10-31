@@ -19,7 +19,7 @@ relationships:
     to: place/dessau-ro-lau
   - type: houses
     to: institution/bauhaus
-    period: 4 December 1926–30 September 1932
+    period: 4 December 1926 – 30 September 1932
   - type: houses
     to: institution/bauhaus-dessau-foundation
     period: 1994/

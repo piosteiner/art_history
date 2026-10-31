@@ -2,7 +2,7 @@
 // current version (or that the entry no longer exists) — then its fields, relationships and provenance steps as they
 // were, plainly: the answer is the stored record (Markdown as text, dates by their labels), not the normal page.
 import { ApiError, getEntityAsOf, PLURAL } from '../api';
-import { html, PLURAL_LABEL, render, TYPE_LABEL, type Html } from '../html';
+import { html, joinRange, PLURAL_LABEL, render, TYPE_LABEL, type Html } from '../html';
 import { replaceUrl } from '../router';
 import type { AsOfDetail, AsOfStep, Plural } from '../types';
 import { guard, loading, showError } from './common';
@@ -40,7 +40,7 @@ function fields(entry: Record<string, unknown>): { facts: [string, string][]; te
   return { facts, texts };
 }
 
-const span = (a: AsOfStep) => [...new Set([a.acquired?.label, a.ended?.label].filter(Boolean))].join(' – '); // a day: once
+const span = (a: AsOfStep) => { const [x, y] = [...new Set([a.acquired?.label, a.ended?.label].filter(Boolean))] as string[]; return y ? joinRange(x, y) : x ?? ''; }; // a day: once
 
 function stepLine(s: AsOfStep): Html {
   const holder = s.holder ? netLink(s.holder) : html`${s.holder_label ?? 'Unknown holder'}`;

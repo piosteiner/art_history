@@ -18,7 +18,7 @@ metadata:
 relationships:
   - type: in_polity
     to: polity/electorate-of-hesse-1803
-    period: 6 August–31 October 1806
+    period: 6 August – 31 October 1806
     sources:
       - accessed: 2026-10-29
         wikidata: Q100594799
@@ -54,7 +54,7 @@ relationships:
         wikidata: Q27306
   - type: in_polity
     to: polity/north-german-confederation
-    period: 1 July 1867–31 December 1870
+    period: 1 July 1867 – 31 December 1870
     sources:
       - accessed: 2026-10-29
         wikidata: Q150981

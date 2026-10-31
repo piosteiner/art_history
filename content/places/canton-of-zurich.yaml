@@ -8,7 +8,7 @@ wikidata_id: Q11943
 relationships:
   - type: in_polity
     to: polity/holy-roman-empire
-    period: 962–30 April 1351
+    period: 962 – 30 April 1351
     sources:
       - accessed: 2026-10-29
         wikidata: Q12548
@@ -18,7 +18,7 @@ relationships:
         accessed: 2026-10-30
   - type: in_polity
     to: polity/old-swiss-confederacy
-    period: 1 May 1351–4 March 1798
+    period: 1 May 1351 – 4 March 1798
     sources:
       - accessed: 2026-10-29
         wikidata: Q435583

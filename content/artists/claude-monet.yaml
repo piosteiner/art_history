@@ -66,7 +66,7 @@ relationships:
   - type: lived_in
     to: place/vetheuil
     period: 1878-09/1881-11
-    period_label: autumn 1878–1881
+    period_label: autumn 1878 – 1881
     sources:
       - accessed: 2026-10-13
         property: P551

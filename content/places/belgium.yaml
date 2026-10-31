@@ -26,7 +26,7 @@ relationships:
         wikidata: Q622783
   - type: in_polity
     to: polity/austrian-netherlands
-    period: 1714–30 September 1795
+    period: 1714 – 30 September 1795
     sources:
       - accessed: 2026-10-29
         wikidata: Q700283
@@ -36,7 +36,7 @@ relationships:
         accessed: 2026-10-30
   - type: in_polity
     to: polity/french-first-republic
-    period: 1 October 1795–17 May 1804
+    period: 1 October 1795 – 17 May 1804
     sources:
       - accessed: 2026-10-29
         wikidata: Q58296

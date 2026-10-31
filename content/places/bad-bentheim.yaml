@@ -11,7 +11,7 @@ metadata:
 relationships:
   - type: in_polity
     to: polity/confederation-of-the-rhine
-    period: 12 July 1806–31 December 1810
+    period: 12 July 1806 – 31 December 1810
     sources:
       - accessed: 2026-10-29
         wikidata: Q154741
@@ -21,7 +21,7 @@ relationships:
         accessed: 2026-10-30
   - type: in_polity
     to: polity/grand-duchy-of-berg
-    period: 12 July 1806–31 December 1810
+    period: 12 July 1806 – 31 December 1810
     sources:
       - accessed: 2026-10-29
         wikidata: Q249428
@@ -31,7 +31,7 @@ relationships:
         accessed: 2026-10-30
   - type: in_polity
     to: polity/first-french-empire
-    period: 1 January 1811–10 November 1813
+    period: 1 January 1811 – 10 November 1813
     sources:
       - accessed: 2026-10-29
         wikidata: Q71084

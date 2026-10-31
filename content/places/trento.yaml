@@ -14,7 +14,7 @@ relationships:
         wikidata: Q1231403
   - type: in_polity
     to: polity/austrian-empire
-    period: 11 August 1804–28 February 1867
+    period: 11 August 1804 – 28 February 1867
     sources:
       - accessed: 2026-10-29
         wikidata: Q131964
@@ -26,7 +26,7 @@ relationships:
         wikidata: Q151624
   - type: in_polity
     to: polity/cisleithania
-    period: 1 March 1867–2 November 1918
+    period: 1 March 1867 – 2 November 1918
     sources:
       - accessed: 2026-10-29
         wikidata: Q533534

@@ -10,7 +10,7 @@ metadata:
 relationships:
   - type: in_polity
     to: polity/saxe-weimar-eisenach
-    period: 6 August 1806–1918
+    period: 6 August 1806 – 1918
     sources:
       - accessed: 2026-10-29
         wikidata: Q155570
@@ -28,7 +28,7 @@ relationships:
         wikidata: Q151624
   - type: in_polity
     to: polity/north-german-confederation
-    period: 1 July 1867–31 December 1870
+    period: 1 July 1867 – 31 December 1870
     sources:
       - accessed: 2026-10-29
         wikidata: Q150981

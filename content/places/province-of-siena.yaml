@@ -32,13 +32,13 @@ relationships:
         wikidata: Q223793
   - type: in_polity
     to: polity/first-french-empire
-    period: 10 December 1807–30 April 1814
+    period: 10 December 1807 – 30 April 1814
     sources:
       - accessed: 2026-10-29
         wikidata: Q71084
   - type: in_polity
     to: polity/grand-duchy-of-tuscany
-    period: 1 May 1814–21 March 1860
+    period: 1 May 1814 – 21 March 1860
     sources:
       - accessed: 2026-10-29
         wikidata: Q154849

@@ -30,7 +30,7 @@ metadata:
 relationships:
   - type: in_polity
     to: polity/kingdom-of-wurttemberg
-    period: 1 January 1806–6 November 1918
+    period: 1 January 1806 – 6 November 1918
     sources:
       - accessed: 2026-10-29
         wikidata: Q159631

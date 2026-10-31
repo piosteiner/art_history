@@ -22,7 +22,7 @@ relationships:
         wikidata: Q154741
   - type: in_polity
     to: polity/duchy-of-brunswick
-    period: 6 November 1813–1918
+    period: 6 November 1813 – 1918
     sources:
       - accessed: 2026-10-29
         wikidata: Q326029
@@ -34,7 +34,7 @@ relationships:
         wikidata: Q151624
   - type: in_polity
     to: polity/north-german-confederation
-    period: 1 July 1867–31 December 1870
+    period: 1 July 1867 – 31 December 1870
     sources:
       - accessed: 2026-10-29
         wikidata: Q150981

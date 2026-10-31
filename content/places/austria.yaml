@@ -19,7 +19,7 @@ relationships:
         wikidata: Q153136
   - type: in_polity
     to: polity/austrian-empire
-    period: 11 August 1804–28 February 1867
+    period: 11 August 1804 – 28 February 1867
     sources:
       - accessed: 2026-10-29
         wikidata: Q131964
@@ -31,7 +31,7 @@ relationships:
         wikidata: Q151624
   - type: in_polity
     to: polity/cisleithania
-    period: 1 March 1867–11 November 1918
+    period: 1 March 1867 – 11 November 1918
     sources:
       - accessed: 2026-10-29
         wikidata: Q533534
@@ -43,13 +43,13 @@ relationships:
         wikidata: Q268970
   - type: in_polity
     to: polity/first-republic-of-austria
-    period: 21 October 1919–30 April 1934
+    period: 21 October 1919 – 30 April 1934
     sources:
       - accessed: 2026-10-29
         wikidata: Q518101
   - type: in_polity
     to: polity/federal-state-of-austria
-    period: 1 May 1934–12 March 1938
+    period: 1 May 1934 – 12 March 1938
     sources:
       - accessed: 2026-10-29
         wikidata: Q176495
