@@ -22,6 +22,8 @@ module.exports = {
       DB_PORT: 5433,
       TEST_ENV: '1',
       TEST_SITE: 'https://test.arthistory.piogino.ch',
+      // every "public page ↗" link of the CMS (and the RSS feed) points at the test site
+      PUBLIC_SITE_URL: 'https://test.arthistory.piogino.ch',
       API_HOST: 'api.test.arthistory.piogino.ch',
       ADMIN_HOST: 'admin.test.arthistory.piogino.ch',
       CORS_ORIGIN: 'https://test.arthistory.piogino.ch',

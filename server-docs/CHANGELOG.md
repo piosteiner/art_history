@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-31
 
+### Test environment: "public page ↗" opens the test site
+- **What:** `PUBLIC_SITE_URL=https://test.arthistory.piogino.ch` in `backend/ecosystem.test.config.js` — every link
+  of the test CMS to the public site (entries, pages, start views, changelog, feedback, search words, the RSS feed)
+  goes to the test site, where the test data is. **Why:** owner, 2026-10-31 (an entry created in the test CMS opened
+  on the real site). **Revert:** remove the line, `pm2 reload backend/ecosystem.test.config.js --update-env`.
+
 ### Test environment: the owner's unpublished work stays out
 - **What:** `scripts/test-env.sh` also deletes, in the copy, unpublished changelog days, roadmap items (7 today), pages
   and start views, citations pending a Publish, and the audit rows of these tables whose row is gone (history and
