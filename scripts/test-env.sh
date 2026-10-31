@@ -49,6 +49,21 @@ sudo -u postgres pg_restore -p $PORT -d arthistory --exit-on-error < "$DUMP"
 sudo -u postgres psql -p $PORT -d arthistory -q -v ON_ERROR_STOP=1 <<'SQL'
 TRUNCATE admin_sessions, admin_drafts, page_drafts, form_drafts, live_docs, page_downloads, feedback, editor_scopes;
 UPDATE admin_users SET password_hash = '!locked';
+-- the owner's unpublished work (owner 2026-10-31: "mein Unveröffentlichtes … soll nicht in das CMS der
+-- Testumgebung"): changelog days, roadmap items, pages, start views not published (their parts go along), sources
+-- waiting for a working copy's Publish — and what the history still holds of rows that are gone (also "Recently
+-- deleted"); entries have no unpublished state of their own (their working copies, live_docs, are emptied above)
+DELETE FROM changelog_entries WHERE NOT published;
+DELETE FROM roadmap_items WHERE NOT published;
+DELETE FROM pages WHERE NOT published;
+DELETE FROM featured_views WHERE NOT published;
+DELETE FROM citations WHERE pending IS NOT NULL;
+DELETE FROM audit_log a WHERE a.table_name IN ('changelog_entries', 'changelog_items', 'roadmap_items', 'pages', 'featured_views')
+  AND NOT EXISTS (SELECT 1 FROM changelog_entries x WHERE a.table_name = 'changelog_entries' AND x.id = a.row_id)
+  AND NOT EXISTS (SELECT 1 FROM changelog_items x WHERE a.table_name = 'changelog_items' AND x.id = a.row_id)
+  AND NOT EXISTS (SELECT 1 FROM roadmap_items x WHERE a.table_name = 'roadmap_items' AND x.id = a.row_id)
+  AND NOT EXISTS (SELECT 1 FROM pages x WHERE a.table_name = 'pages' AND x.id = a.row_id)
+  AND NOT EXISTS (SELECT 1 FROM featured_views x WHERE a.table_name = 'featured_views' AND x.id = a.row_id);
 SQL
 
 # 4. the shared login, then the process and the site

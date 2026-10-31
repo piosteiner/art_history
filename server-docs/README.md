@@ -73,8 +73,9 @@ The same CMS and site as production for people who want to try the project, rese
   dumped, restored into a fresh database, then emptied of what isn't for visitors — sessions, the owner's drafts and
   working copies (`admin_drafts`, `page_drafts`, `form_drafts`, `live_docs`), visitors' feedback, `page_downloads`,
   `editor_scopes`; production's accounts can't log in (`password_hash = '!locked'`; the history still names them);
-  the login `test` set; the process restarted; the site rebuilt. Unpublished entries and drafts of the changelog and
-  roadmap stay visible in the test CMS (they are in the data). `deploy.sh` migrates the test database, reloads the
+  the owner's unpublished work removed too (owner 2026-10-31) — changelog days, roadmap items, pages and start views
+  not published, citations pending a Publish, and the history's rows of everything gone (also "Recently deleted");
+  the login `test` set; the process restarted; the site rebuilt. `deploy.sh` migrates the test database, reloads the
   process and rebuilds the site after production (`--site-only`).
 - Run now: `sudo systemctl start arthistory-test-reset` (or `scripts/test-env.sh`) · logs: `journalctl -u
   arthistory-test-reset -n 20`, `pm2 logs arthistory-test` · new shared password: edit `TEST_LOGIN_PASSWORD` in

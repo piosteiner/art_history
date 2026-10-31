@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-31
 
+### Test environment: the owner's unpublished work stays out
+- **What:** `scripts/test-env.sh` also deletes, in the copy, unpublished changelog days, roadmap items (7 today), pages
+  and start views, citations pending a Publish, and the audit rows of these tables whose row is gone (history and
+  "Recently deleted" would show them). Entries have no unpublished state besides their working copies (already emptied).
+- **Why:** owner, 2026-10-31. **Revert:** remove those statements from the script.
+
 ### Test environment for visitors: test.arthistory.piogino.ch (site), admin.test… (CMS), api.test… — reset nightly
 - **What:** a second instance of the same code for people who want to try the project. pm2 `arthistory-test`
   (`backend/ecosystem.test.config.js`, :3010, `TEST_ENV=1` → a yellow notice in the CMS) on a new PostgreSQL cluster
