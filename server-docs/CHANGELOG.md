@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-31
 
+### "Not connected to anything": every reference counts (migration 180) + 74 sourced relationships
+- **What:** 42 entries were "not connected to anything". 11 of them were referenced in ways the check missed, and
+  `no_relationships` now counts these too: provenance steps of any role (event steps: transfer, claim) and co-owners,
+  the places of provenance records and a step's further places, people of building phases, a group with its parts,
+  and `[[links]]` in other entries' texts (`content_links`). New trigger `text_links_touch()` on the 12 tables with
+  texts queues the targets of links added or removed; index `provenance_places_place_idx`; e2e `connected.spec.js`;
+  `npm run perf` 35/35. Data: 74 relationships for the rest, each cited — Wikidata statements (item + property:
+  birth/death places, nationality, studied/worked at, family ties of the Medici, Lederer, Ryan, Habsburg; museums'
+  locations; the Berliner Schloss `houses` the Humboldt Forum), Cointerel `founded` the Contarelli Chapel and McNay
+  her museum (our sources). Provenance: B. Gerald Cantor as owner before the 1985 gift of the Stanford Gates of Hell
+  (Cantor's credit line), Jaromir Czernin as co-owner of the Czernin gallery step of The Art of Painting (Wikidata P127,
+  1932–1940). Left unconnected on purpose: the Washington Conference 1998 (owner: keep), the Kingdom of Italy (HRE).
+- **Why:** owner, 2026-10-31 ("each entry should have at least 1 connection"). **Revert:** migration 180 reversed by
+  hand (old view from 177, drop the triggers/function/index); data via the admin history.
+
 ### Data: 31 events from the books, with official Japanese and Korean sources
 - **What:** events from Mason and Portal (owner's choice, plus the closing of Japan and the Mongol invasions):
   Soga–Mononobe war 587, assassination of Sushun 592, fire of the Wakakusadera 670, fire of Fujiwara-kyō 711, eye-opening

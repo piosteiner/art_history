@@ -21,7 +21,7 @@ const CHECKS = {
   broken_glossary_link: { title: 'Link to a missing glossary term', fix: 'Create the term in the Glossary (with this slug) — or correct the [[link]] in the text.' },
   artwork_without_creator: { title: 'Artwork without creator', fix: 'Add the creator — or an attribution such as "Workshop of …" / "Anonymous".' },
   image_without_license: { title: 'Image without license or credit', fix: 'Add license and credit (e.g. via Wikidata/Commons) before the image is shown publicly.' },
-  no_relationships: { title: 'Not connected to anything', fix: 'Add relationships — unconnected entries don\'t appear on the map or in the graph. (Provenance, building phases and creators count as connections.)' },
+  no_relationships: { title: 'Not connected to anything', fix: 'Add relationships — unconnected entries don\'t appear on the map or in the graph. (Creators, provenance steps and co-owners, provenance records, building phases, groups and [[links]] in other entries\' texts count as connections.)' },
   artist_missing_dates: { title: 'Artist without birth or death date', fix: 'Add the dates (fuzzy dates are fine) — the timeline needs them.' },
   presence_without_period: { title: 'Presence without a date', fix: 'Add a period so it appears on the timeline and the travel route.' },
   place_without_parent: { title: 'Place without parent', fix: 'Set the larger place it belongs to: a building or street → its city, a city → its region (canton, Land, province), a region → its country.' },
