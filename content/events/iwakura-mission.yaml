@@ -1,0 +1,23 @@
+public_id: 105747
+name: Iwakura Mission
+names:
+  - lang: ja
+    role: original
+    text: 岩倉使節団
+kind: embassy
+period: 1871-12-23/1873-09-13
+description_md: "Some of the Restoration's most powerful leaders left Japan in 1871 on a two-year tour of Europe and the United States to study their institutions[[source/history-of-japanese-art|pp. 342–345]]: led by Iwakura Tomomi as ambassador, with Kido Takayoshi, Ōkubo Toshimichi and Itō Hirobumi, the mission travelled through America, Britain, France, Eastern Europe and Russia to prepare the revision of the treaties[[source/ndl-iwakura-mission|「明治4（1871）年11月、岩倉具視を特命全権大使とし…遣外使節団が日本を出発した。使節団は、約2年をかけて」]]."
+wikidata_id: Q696860
+relationships:
+  - type: concerns
+    to: movement/meiji-era
+    notes_md: 1871–1873
+sources:
+  period:
+    - note: 「明治4（1871）年11月…日本を出発…約2年をかけて」
+      source: ndl-iwakura-mission
+    - note: “in 1871 the Iwakura Mission … left Japan on a two-year tour to Europe and the United States”
+      source: history-of-japanese-art
+      locator: pp. 342–343
+    - accessed: 2026-10-31
+      wikidata: Q696860

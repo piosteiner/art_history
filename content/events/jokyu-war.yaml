@@ -1,0 +1,22 @@
+public_id: 105742
+name: Jōkyū War
+names:
+  - lang: ja
+    role: original
+    text: 承久の乱
+kind: rebellion
+period: 1221
+place: kyoto
+description_md: "The retired emperor Go-Toba's attempt to overthrow the Kamakura shogunate failed: the Hōjō regents crushed his Jōkyū Rebellion in 1221[[source/history-of-japanese-art|pp. 102–103, 180–181]], and the warriors' rule over the court was settled for a century[[source/history-of-japanese-art|pp. 198–199]]."
+wikidata_id: Q1372308
+relationships:
+  - type: concerns
+    to: movement/kamakura-period
+    notes_md: "1221"
+sources:
+  period:
+    - note: “whose ill-fated Jokyu Rebellion was brutally quashed by the Hojo in 1221”
+      source: history-of-japanese-art
+      locator: pp. 180–181
+    - accessed: 2026-10-31
+      wikidata: Q1372308

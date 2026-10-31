@@ -1,0 +1,24 @@
+public_id: 105756
+name: Military coup of 1170 (Musin)
+names:
+  - lang: ko
+    role: original
+    text: 무신정변
+kind: coup
+period: 1170
+place: kaesong
+description_md: "In 1170 the military officers rose against a court dominated by civil officials: King Uijong was deposed and replaced by his younger brother, and power fell to the military[[source/portal-2000|p. 78]]. Led by Jeong Jung-bu, Yi Ui-bang and Yi Go, the coup opened a century of military rule and is seen as the watershed between the early and the late Goryeo period[[source/aks-musillan|「정변의 성공으로 이후 100년 간 … 무신 정권 시대가 연출됨으로써 고려시대 전기, 후기를 나누는 고려 역사의 분수령」]]."
+wikidata_id: Q11241358
+relationships:
+  - type: concerns
+    to: movement/goryeo-period
+    notes_md: the watershed (1170)
+sources:
+  period:
+    - note: 「1170년(의종 24)」
+      source: aks-musillan
+    - note: “a military coup erupted in 1170”
+      source: portal-2000
+      locator: p. 78
+    - accessed: 2026-10-31
+      wikidata: Q11241358

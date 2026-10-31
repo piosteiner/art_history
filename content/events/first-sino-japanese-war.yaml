@@ -1,0 +1,30 @@
+public_id: 105749
+name: First Sino-Japanese War
+names:
+  - lang: ja
+    role: original
+    text: 日清戦争
+  - lang: ko
+    role: original
+    text: 청일전쟁
+kind: war
+period: 1 August 1894 – 17 April 1895
+place: korean-peninsula
+description_md: The war between Qing China and Japan over control of Korea; Japan opened it in July 1894 with an attack on the Gyeongbokgung palace in Seoul[[source/aks-sino-japanese-war|「청일전쟁은 1894년~1895년 조선에 대한 지배권을 둘러싸고 중국(청)과 일본 간에 벌어진 전쟁이다 … 1894년 7월 경복궁을 기습 공격함으로써」]]. Its military successes, with those of the Russo-Japanese War, fed Japan's nationalism and its turn to empire[[source/history-of-japanese-art|pp. 346–347, 382–383]].
+wikidata_id: Q178687
+relationships:
+  - type: concerns
+    to: movement/joseon-period
+    notes_md: fought over Korea
+  - type: concerns
+    to: movement/meiji-era
+    notes_md: 1894–1895
+sources:
+  period:
+    - note: 「1894년~1895년」
+      source: aks-sino-japanese-war
+    - note: “the Sino-Japanese war of 1894–5”
+      source: history-of-japanese-art
+      locator: pp. 346–347
+    - accessed: 2026-10-31
+      wikidata: Q178687

@@ -1,0 +1,38 @@
+public_id: 105741
+name: Burning of Nara
+names:
+  - lang: ja
+    role: original
+    text: 南都焼討
+kind: fire
+parent: genpei-war
+period: 1181-01
+period_label: January 1181 (Jishō 4, 12th month)
+place: nara
+description_md: "At the beginning of the Genpei War the Taira army burnt the Great Buddha Hall of Tōdaiji, as a punishment for the temple's support of the Minamoto, and razed Kōfukuji in the same raid[[source/history-of-japanese-art|pp. 184–189]]. Tōdaiji records that Taira no Shigehira's troops burnt most of its buildings in Jishō 4 — the 28th day of its 12th month, January 1181 in the Western calendar, which the sources write as 1180 — and that rebuilding began the next year under the monk Chōgen: the Buddha consecrated again in 1185, the hall in 1195[[source/todaiji-history|「治承4年（1180）に平重衡の軍勢により大仏殿をはじめ伽藍の大半が焼かれた。しかし翌年には俊乗房重源によって復興が着手され」]]. Kōfukuji's Hokuendō, burnt then too, was rebuilt in 1207–1210[[source/bunka-online-186606|「永承四年（一〇四九）と治承四年（一一八〇）に焼失し、現在の堂は承元元年（一二〇七）に着工し」]]. The rebuilding of both temples was the work of the Kei school — Unkei, Kaikei and their workshop — down to the Niō of Tōdaiji's Great South Gate[[source/history-of-japanese-art|pp. 186–189]]."
+wikidata_id: Q1116528
+relationships:
+  - type: concerns
+    to: movement/heian-period
+    notes_md: "1180"
+  - type: concerns
+    to: movement/kei-school
+    notes_md: the rebuilding
+  - type: concerns
+    to: institution/kofuku-ji
+    notes_md: razed
+  - type: concerns
+    to: artwork/nio-todai-ji-nandaimon
+    notes_md: made for the rebuilt Great South Gate (1203)
+  - type: concerns
+    to: institution/todai-ji
+    notes_md: burnt (Great Buddha Hall)
+sources:
+  period:
+    - note: 「治承4年（1180）に平重衡の軍勢により大仏殿をはじめ伽藍の大半が焼かれた」
+      source: todaiji-history
+    - note: “The Daibutsuden (Great Buddha Hall) was burnt to the ground in 1180 by the Taira army”
+      source: history-of-japanese-art
+      locator: pp. 184–185
+    - accessed: 2026-10-31
+      wikidata: Q1116528

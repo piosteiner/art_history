@@ -1,0 +1,21 @@
+public_id: 105738
+name: Dedication of the Phoenix Hall of the Byōdō-in
+names:
+  - lang: ja
+    role: original
+    text: 平等院阿弥陀堂（鳳凰堂）落慶
+kind: dedication
+period: 1053
+place: uji
+description_md: In 1053 the Amida hall of the Byōdōin at Uji — later called the Phoenix Hall — was dedicated[[source/history-of-japanese-art|pp. 142–143]], a year after the beginning of the age of the decline of the Law (mappō), when the longing for rebirth in Amida's paradise was spreading; Jōchō's Amida Buddha was enshrined in it[[source/byodoin-history|「天喜元年（1053）には阿弥陀堂（鳳凰堂）が落慶し、堂内には、平安時代の最高の仏師定朝によって制作された丈六の阿弥陀如来坐像が安置され」]].
+relationships:
+  - type: concerns
+    to: movement/heian-period
+    notes_md: "1053"
+sources:
+  period:
+    - note: 「天喜元年（1053）には阿弥陀堂（鳳凰堂）が落慶し」
+      source: byodoin-history
+    - note: “and in 1053 the Hoodo was dedicated”
+      source: history-of-japanese-art
+      locator: pp. 142–143

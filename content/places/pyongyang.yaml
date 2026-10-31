@@ -1,0 +1,11 @@
+public_id: 105731
+name: Pyongyang
+names:
+  - lang: ko
+    role: original
+    text: 평양시
+kind: settlement
+designation: capital of North Korea
+parent: north-korea
+location: [125.7475, 39.0167]
+wikidata_id: Q18808

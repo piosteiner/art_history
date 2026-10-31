@@ -1,0 +1,21 @@
+public_id: 105746
+name: Closing of Japan (sakoku)
+names:
+  - lang: ja
+    role: original
+    text: 鎖国
+kind: edict
+period: 1639/1641
+place: nagasaki
+description_md: "The Tokugawa shogunate closed Japan to the world in steps: in 1639 the Portuguese were forbidden to come (the fifth seclusion edict), and in 1641 the Dutch trading post was moved from Hirado to the artificial island of Dejima in Nagasaki — the seclusion system complete[[source/nagasaki-dejima-history|「1639 寛永16 ポルトガル人の来航禁止（第5次鎖国令）· 1641 寛永18 平戸オランダ商館、長崎出島に移転（鎖国体制完成）」]]. Until the treaty of Kanagawa in 1854 Dejima was Japan's only place of trade with the West[[source/bunka-online-211450|「爾來安政元年神奈川條約ニ至ルマテ本邦ニ於ケル唯一ノ海外貿易地タリ」]]. The namban screens of the Portuguese and Dutch traders all but disappear after 1641[[source/history-of-japanese-art|pp. 246–247]]."
+wikidata_id: Q332075
+relationships:
+  - type: concerns
+    to: movement/edo-period
+    notes_md: 1639–1641
+sources:
+  period:
+    - note: 「1639 寛永16 ポルトガル人の来航禁止 … 1641 寛永18 平戸オランダ商館、長崎出島に移転（鎖国体制完成）」
+      source: nagasaki-dejima-history
+    - accessed: 2026-10-31
+      wikidata: Q332075

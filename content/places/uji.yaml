@@ -1,0 +1,11 @@
+public_id: 105727
+name: Uji
+names:
+  - lang: ja
+    role: original
+    text: 宇治市
+kind: settlement
+designation: city of Japan
+parent: kyoto-prefecture
+location: [135.7998, 34.8844]
+wikidata_id: Q326956

@@ -1,0 +1,21 @@
+public_id: 105758
+name: Carving of the Tripitaka Koreana
+names:
+  - lang: ko
+    role: original
+    text: 팔만대장경 판각
+kind: production
+period: 1237/1251
+place: ganghwa-island
+description_md: When the woodblocks of the first Buddhist canon were destroyed in the Mongol invasions, a new edition was begun on Ganghwa island and completed in 1251 — the 80,000 blocks of the Tripitaka Koreana, now at Haeinsa[[source/portal-2000|p. 80]], carved by the Office of the Tripitaka under King Gojong (1237–1248, in the Encyclopedia of Korean Culture's reckoning) in the hope that the Buddha's power would drive the Mongols away[[source/aks-tripitaka-koreana|「고려 고종(1237~1248) 때 대장도감(大藏都監)에서 판각(板刻)한 대장경판 … 몽골의 침입을 부처님의 힘으로 물리치고자 하는 염원에서」]]. The carving ended in 1248, the completion was celebrated in 1251.
+relationships:
+  - type: concerns
+    to: movement/goryeo-period
+    notes_md: 1237–1251
+sources:
+  period:
+    - note: 「고려 고종(1237~1248) 때 대장도감에서 판각한 대장경판」
+      source: aks-tripitaka-koreana
+    - note: “a new edition was begun on Kanghwa island and completed in 1251”
+      source: portal-2000
+      locator: p. 80

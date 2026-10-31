@@ -1,0 +1,22 @@
+public_id: 105732
+name: Soga–Mononobe war
+names:
+  - lang: ja
+    role: original
+    text: 丁未の乱
+kind: war
+period: 587
+place: osaka-prefecture
+description_md: The civil war of 587 in which the Soga clan and Prince Shōtoku, who favoured Buddhism, defeated Mononobe no Moriya; afterwards Soga no Umako and Shōtoku built the first great Buddhist foundations, the Shitennōji (completed about 593) and the Asukadera (about 588–596)[[source/history-of-japanese-art|pp. 58–61]]. According to the Nihon shoki, Shōtoku carved images of the Four Heavenly Kings during the battle and vowed to build them a temple if he won — the Shitennōji, founded in 593[[source/shitennoji-history|「物部守屋と蘇我馬子の合戦の折り、崇仏派の蘇我氏についた聖徳太子が…四天王像を彫りもし…勝利の後その誓いを果すために、建立されました」]].
+wikidata_id: Q534720
+relationships:
+  - type: concerns
+    to: movement/asuka-period
+    notes_md: "587"
+sources:
+  period:
+    - note: “Following the civil war of 587, both Soga no Umako and Prince Shotoku undertook the building of the first great Buddhist foundations”
+      source: history-of-japanese-art
+      locator: pp. 60–61
+    - accessed: 2026-10-31
+      wikidata: Q534720

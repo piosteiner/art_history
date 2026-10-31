@@ -1,0 +1,22 @@
+public_id: 105739
+name: Hōgen Rebellion
+names:
+  - lang: ja
+    role: original
+    text: 保元の乱
+kind: rebellion
+period: 1156
+place: kyoto
+description_md: After the death of the cloistered emperor Toba in 1156, disputes over the succession within the imperial house and the Fujiwara led to two rebellions, the Hōgen (1156) and the Heiji (1160), fought out with the warriors of the Taira and the Minamoto[[source/history-of-japanese-art|pp. 102–103]].
+wikidata_id: Q842357
+relationships:
+  - type: concerns
+    to: movement/insei-period
+    notes_md: "1156"
+sources:
+  period:
+    - note: “After Toba's death in 1156, a series of succession disputes within the imperial Yamato and the Fujiwara clans resulted in two rebellions, the Hogen (1156) and the Heiji”
+      source: history-of-japanese-art
+      locator: pp. 102–103
+    - accessed: 2026-10-31
+      wikidata: Q842357

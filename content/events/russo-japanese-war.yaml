@@ -1,0 +1,29 @@
+public_id: 105750
+name: Russo-Japanese War
+names:
+  - lang: ja
+    role: original
+    text: 日露戦争
+  - lang: ko
+    role: original
+    text: 러일전쟁
+kind: war
+period: 1904-02-08/1905-09-05
+description_md: The imperialist war of 1904–1905 between Russia and Japan for control of Manchuria and Korea[[source/aks-russo-japanese-war|「1904∼1905년 만주와 한국의 지배권을 두고 러시아와 일본이 벌인 제국주의 전쟁」]]; Japan's victory followed that over China ten years before[[source/history-of-japanese-art|pp. 346–347, 382–383]], and in 1905 Korea became a Japanese protectorate[[source/portal-2000|p. 167]].
+wikidata_id: Q159950
+relationships:
+  - type: concerns
+    to: movement/korean-empire
+    notes_md: fought over Korea
+  - type: concerns
+    to: movement/meiji-era
+    notes_md: 1904–1905
+sources:
+  period:
+    - note: 「1904∼1905년」
+      source: aks-russo-japanese-war
+    - note: “the Russo-Japanese war of 1904–5”
+      source: history-of-japanese-art
+      locator: pp. 346–347
+    - accessed: 2026-10-31
+      wikidata: Q159950

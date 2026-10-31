@@ -1,0 +1,27 @@
+public_id: 105753
+name: Arson of the Kinkaku-ji
+names:
+  - lang: ja
+    role: original
+    text: 金閣寺放火事件
+kind: fire
+period: 1950-07-02
+place: kyoto
+description_md: The original Golden Pavilion was set alight and completely destroyed in 1950 by an acolyte protesting the commercialization of Buddhism after the Second World War[[source/history-of-japanese-art|pp. 226–227]], in the early morning of 2 July 1950[[source/wikipedia-ja-kinkakuji-hoka-jiken|「1950年（昭和25年）7月2日未明に…鹿苑寺（通称・金閣寺）で発生した放火事件」]]. It was rebuilt[[source/history-of-japanese-art|pp. 228–229]].
+wikidata_id: Q11647990
+relationships:
+  - type: concerns
+    to: artwork/kinkaku-ji-temple
+    notes_md: burnt and rebuilt
+  - type: concerns
+    to: movement/showa-period
+    notes_md: "1950"
+sources:
+  period:
+    - note: 「1950年（昭和25年）7月2日未明」
+      source: wikipedia-ja-kinkakuji-hoka-jiken
+    - note: “The original Kinkakuji was set alight and completely destroyed in 1950 by a crazed acolyte”
+      source: history-of-japanese-art
+      locator: pp. 226–227
+    - accessed: 2026-10-31
+      wikidata: Q11647990

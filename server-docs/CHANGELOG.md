@@ -4,6 +4,25 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-31
 
+### Data: 31 events from the books, with official Japanese and Korean sources
+- **What:** events from Mason and Portal (owner's choice, plus the closing of Japan and the Mongol invasions):
+  Soga–Mononobe war 587, assassination of Sushun 592, fire of the Wakakusadera 670, fire of Fujiwara-kyō 711, eye-opening
+  of the Great Buddha 752, embassy of 804 (Saichō, Kūkai), Phoenix Hall 1053, Hōgen 1156, Heiji 1160, burning of Nara
+  1180/81, Jōkyū 1221, Rengeōin 1249–1266, Mongol invasions of Japan 1274 and 1281, Azuchi Castle 1576–1579, closing of
+  Japan 1639–1641, Iwakura Mission, Meiji Constitution, the two Sino-Japanese wars and the Russo-Japanese War, Hōryūji
+  Kondō fire 1949, Kinkakuji arson 1950, Gutai open-air exhibition 1955; Silla–Tang War, coup of 1170, Mongol
+  invasions of Korea, carving of the Tripitaka Koreana, Hunminjeongeum 1446, Daewongun's regency, French campaign and
+  General Sherman incident 1866. Each with the book's pages first, then official sites: Tōdaiji, Byōdōin, Shitennōji,
+  Tōji, the Agency for Cultural Affairs (文化財防火デー) and six records of its database (Hōryūji Kondō, Kōfukuji
+  Hokuendō, Rengeōin, Azuchi, Genkō defence wall, Dejima), the City of Nagasaki (Dejima), the National Diet Library
+  (constitution, Iwakura), ten articles of the Encyclopedia of Korean Culture; Japanese Wikipedia only for exact days
+  (Sushun, Heiji, Kinkakuji, Marco Polo Bridge, Ashiya Park). Dates in the Japanese calendar converted (Heiji =
+  January 1160, the burning of Nara = January 1181, the sources' "1180" explained). 44 `concerns` links (periods,
+  Tōdaiji, Kōfukuji, Kongōbuji, the Kei school, the Niō, Kinkakuji, Tankei, Ganghwa). New places: Shiga, Nagasaki and
+  Fukuoka Prefectures, Ikaruga, Uji, Ōmihachiman, Nagasaki, Fukuoka, Pyongyang. Not used: Hōryūji's and Kōfukuji's
+  sites (incomplete certificate chain), the Nara National Museum (403), Haeinsa (no answer).
+- **Why:** owner, 2026-10-31. **Revert:** admin history (events, places, bibliography).
+
 ### Dates: a range's dash spaced when an end names a month (migration 179)
 - **What:** "1868–11 February 1889" read as "1868–11": now "1868 – 11 February 1889"; between plain years unchanged
   ("1840–1926", "13th–14th century", "c. 1503–1518"). One rule in three places: `joinRange()` in `src/fuzzy-date.js`

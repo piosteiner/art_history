@@ -1,0 +1,11 @@
+public_id: 105730
+name: Fukuoka
+names:
+  - lang: ja
+    role: original
+    text: 福岡市
+kind: settlement
+designation: city of Japan
+parent: fukuoka-prefecture
+location: [130.4017, 33.5901]
+wikidata_id: Q26600

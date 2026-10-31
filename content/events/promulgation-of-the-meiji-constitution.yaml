@@ -1,0 +1,21 @@
+public_id: 105748
+name: Promulgation of the Meiji Constitution
+names:
+  - lang: ja
+    role: original
+    text: 大日本帝国憲法発布
+kind: proclamation
+period: 1889-02-11
+place: tokyo
+description_md: On 11 February 1889 the emperor proclaimed the Constitution of the Empire of Japan, drafted after Itō Hirobumi's studies in Europe[[source/ndl-constitution-1889|「明治22（1889）年2月11日大日本帝国憲法が発布された」]]; the next year he opened the Diet, its legislature modelled on the British parliament[[source/history-of-japanese-art|pp. 344–345]].
+wikidata_id: Q122804
+relationships:
+  - type: concerns
+    to: movement/meiji-era
+    notes_md: 11 February 1889
+sources:
+  period:
+    - note: 「明治22（1889）年2月11日大日本帝国憲法が発布された」
+      source: ndl-constitution-1889
+    - accessed: 2026-10-31
+      wikidata: Q122804

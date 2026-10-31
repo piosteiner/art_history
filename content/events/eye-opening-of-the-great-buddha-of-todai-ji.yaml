@@ -1,0 +1,24 @@
+public_id: 105736
+name: Eye-opening of the Great Buddha of Tōdai-ji
+names:
+  - lang: ja
+    role: original
+    text: 東大寺大仏開眼供養
+kind: dedication
+period: 752
+place: nara
+description_md: "The apogee of the Tōdaiji project: in the spring of 752 a magnificent eye-opening ceremony was held for the colossal Birushana (Vairocana) Buddha[[source/history-of-japanese-art|pp. 60–61, 84–85]]. Ordered in 743 and cast in 749, the Buddha was consecrated in Tenpyō-shōhō 4 (752)[[source/todaiji-history|「天平15年（743）に盧舎那大仏造顕（造立）の詔が発せられ…天平21年（749）仏身が鋳造…天平勝宝4年（752）に盛大な開眼」]]."
+relationships:
+  - type: concerns
+    to: movement/nara-period
+    notes_md: "752"
+  - type: concerns
+    to: institution/todai-ji
+    notes_md: the Great Buddha consecrated
+sources:
+  period:
+    - note: 「天平勝宝4年（752）に盛大な開眼」
+      source: todaiji-history
+    - note: “In the spring of 752 a magnificent eye-opening ceremony was held for the Birushana”
+      source: history-of-japanese-art
+      locator: pp. 84–85

@@ -1,0 +1,11 @@
+public_id: 105729
+name: Nagasaki
+names:
+  - lang: ja
+    role: original
+    text: 長崎市
+kind: settlement
+designation: city of Japan
+parent: nagasaki-prefecture
+location: [129.8796, 32.7495]
+wikidata_id: Q38234

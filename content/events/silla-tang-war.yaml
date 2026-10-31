@@ -1,0 +1,24 @@
+public_id: 105755
+name: Silla–Tang War
+names:
+  - lang: ko
+    role: original
+    text: 나당전쟁
+kind: war
+period: 670-03/676-11
+place: korean-peninsula
+description_md: "After the fall of Baekje and Goguryeo, Silla turned against its ally: it met the Chinese army in a series of battles in the basin of the Han river and drove it back in 676[[source/portal-2000|p. 66]]. The war began with Silla's attack in March 670 and ended with the battle of Gibeolpo in November 676, after Silla's victory at Maesoseong in 675[[source/aks-silla-tang-war|「670년 3월 신라의 오골성 선제 공격으로 시작되어 676년까지 … 675년 9월의 매소성 전투 … 676년 11월 기벌포 전투를 끝으로」]]."
+wikidata_id: Q710709
+relationships:
+  - type: concerns
+    to: movement/unified-silla-period
+    notes_md: its beginning in one reading (676)
+sources:
+  period:
+    - note: 「670년 3월 … 676년 11월 기벌포 전투를 끝으로 전쟁은 마무리되었다」
+      source: aks-silla-tang-war
+    - note: “eventually drove it back in 676”
+      source: portal-2000
+      locator: p. 66
+    - accessed: 2026-10-31
+      wikidata: Q710709

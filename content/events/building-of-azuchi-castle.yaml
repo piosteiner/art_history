@@ -1,0 +1,21 @@
+public_id: 105745
+name: Building of Azuchi Castle
+names:
+  - lang: ja
+    role: original
+    text: 安土城築城
+kind: construction
+period: 1576/1579
+place: omihachiman
+description_md: Kyoto having burnt again in 1573, Oda Nobunaga decided in 1576 to start anew and established his headquarters at the small village of Azuchi on the shore of Lake Biwa; the best craftsmen and artists of the country converged on his palace[[source/history-of-japanese-art|pp. 234–235]]. Building began in the first month of Tenshō 4 (1576), Nobunaga moved into the finished keep in the 5th month of 1579, and the castle was completed about 1581; its keep burnt after the Honnōji incident of 1582[[source/bunka-online-161498|「天正四年正月着工、二月に岐阜からここに移った…七年五月には天守閣成って、これに移る…十年六月本能寺の変後天守閣等罹災」]]. The period of Azuchi and Momoyama is named after it and Hideyoshi's castle.
+relationships:
+  - type: concerns
+    to: movement/momoyama-period
+    notes_md: 1576–1579
+sources:
+  period:
+    - note: 「天正四年正月着工…七年五月には天守閣成って、これに移る」
+      source: bunka-online-161498
+    - note: “Nobunaga decided in 1576 to start anew, and established the headquarters of his government on the shores of Lake Biwa … at a small village named Azuchi”
+      source: history-of-japanese-art
+      locator: pp. 234–235

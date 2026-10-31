@@ -1,0 +1,21 @@
+public_id: 105759
+name: Promulgation of the Hunminjeongeum
+names:
+  - lang: ko
+    role: original
+    text: 훈민정음 반포
+kind: proclamation
+period: 1446
+place: seoul
+description_md: King Sejong is best remembered for his part in the invention of the Korean script, now called hangul, first named “the proper sounds to instruct the people” (hunmin jeongeum)[[source/portal-2000|p. 111]]. The book of that name, with the king's preface, the rules and the explanations by Jeong In-ji, Sin Suk-ju and others, was completed in the first ten days of the 9th month of 1446 — the date of promulgation it records[[source/aks-hunminjeongeum|「1446년 9월 상한(上澣：초하루에서 초열흘까지의 기간)에 완성되었다 … ‘정통 11년(1446) 9월 상한’이라는 반포일이 기록되어 있다」]].
+wikidata_id: Q18990
+relationships:
+  - type: concerns
+    to: movement/joseon-period
+    notes_md: "1446"
+sources:
+  period:
+    - note: 「‘정통 11년(1446) 9월 상한’이라는 반포일」
+      source: aks-hunminjeongeum
+    - accessed: 2026-10-31
+      wikidata: Q18990

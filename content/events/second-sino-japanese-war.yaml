@@ -1,0 +1,23 @@
+public_id: 105751
+name: Second Sino-Japanese War
+names:
+  - lang: ja
+    role: original
+    text: 日中戦争
+kind: war
+period: 1937-07-07/1945-09-09
+description_md: Japan's invasion of the Chinese mainland in 1937, the beginning of its campaign for empire throughout Asia and the Pacific in the Second World War[[source/history-of-japanese-art|pp. 346–347]]; it began with the clash at the Marco Polo Bridge (Lugou Bridge) southwest of Beijing on 7 July 1937[[source/wikipedia-ja-rokokyo-jiken|「1937年（昭和12年）7月7日に…盧溝橋で起きた日本軍と中国国民革命軍第二十九軍との衝突事件」]]. Artists such as Onchi Kōshirō were sent to China as war artists[[source/history-of-japanese-art|pp. 386–387]].
+wikidata_id: Q170314
+relationships:
+  - type: concerns
+    to: movement/showa-period
+    notes_md: 1937–1945
+sources:
+  period:
+    - note: “the Japanese invasion of the Chinese mainland in 1937”
+      source: history-of-japanese-art
+      locator: pp. 346–347
+    - note: 「1937年（昭和12年）7月7日」
+      source: wikipedia-ja-rokokyo-jiken
+    - accessed: 2026-10-31
+      wikidata: Q170314

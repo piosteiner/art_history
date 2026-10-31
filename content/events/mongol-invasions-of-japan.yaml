@@ -1,0 +1,28 @@
+public_id: 105744
+name: Mongol invasions of Japan
+names:
+  - lang: ja
+    role: original
+    text: 元寇（文永の役・弘安の役）
+kind: invasion
+period: 1274/1281
+period_label: 1274 and 1281
+place: fukuoka
+description_md: Goryeo, subject to the Mongols, was forced to take part in two Mongol campaigns against Japan in 1274 and 1281 and to build the warships and provide the supplies; both failed, largely because the Mongols lacked experience of the sea[[source/portal-2000|p. 78]]. After the first, a defence wall was built along the shore of Hakata Bay[[source/bunka-online-206523|「文永十一年蒙古襲来ノ後防備ノ爲博多湾沿岸一帶ニ亘リ築カレタル築地」]].
+wikidata_id: Q208156
+relationships:
+  - type: concerns
+    to: movement/goryeo-period
+    notes_md: Goryeo built the fleets
+  - type: concerns
+    to: movement/kamakura-period
+    notes_md: 1274, 1281
+sources:
+  period:
+    - note: “Koryo was forced to take part in two Mongol campaigns against the Japanese in 1274 and 1281 … Both campaigns failed”
+      source: portal-2000
+      locator: p. 78
+    - note: 「文永十一年蒙古襲来ノ後」
+      source: bunka-online-206523
+    - accessed: 2026-10-31
+      wikidata: Q208156

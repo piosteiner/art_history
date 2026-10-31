@@ -1,0 +1,12 @@
+public_id: 105725
+name: Fukuoka Prefecture
+names:
+  - lang: ja
+    role: original
+    text: 福岡県
+kind: region
+designation: prefecture of Japan
+parent: japan
+boundary_code: JP-40
+location: [130.4181, 33.6061]
+wikidata_id: Q123258

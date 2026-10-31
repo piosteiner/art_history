@@ -1,0 +1,21 @@
+public_id: 105760
+name: Regency of the Heungseon Daewongun
+names:
+  - lang: ko
+    role: original
+    text: 흥선대원군 집정
+kind: regency
+period: 1864/1873-11
+place: seoul
+description_md: In 1864 the Daewongun, father of the twelve-year-old King Gojong, came to power as Prince Regent and carried out reforms to reassert the strength of the monarchy; he resisted the Western demands for trade[[source/portal-2000|pp. 108–109]]. He withdrew in November 1873 after a memorial by Choe Ik-hyeon against the royal relatives' part in the government[[source/aks-yi-ha-eung|「1873년 11월, 종친의 국정 간여를 배제하고 … 최익현의 상소를 계기로 대원군은 정계에서 물러나」]]. His rule saw the rebuilding of the Gyeongbokgung.
+relationships:
+  - type: concerns
+    to: movement/joseon-period
+    notes_md: 1864–1873
+sources:
+  period:
+    - note: “In 1864 the Taewongun, father of the twelve-year-old King Kojong, came to power as Prince Regent”
+      source: portal-2000
+      locator: p. 108
+    - note: 「1873년 11월 … 대원군은 정계에서 물러나」
+      source: aks-yi-ha-eung

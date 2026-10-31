@@ -1,0 +1,21 @@
+public_id: 105737
+name: Embassy to Tang China of 804
+names:
+  - lang: ja
+    role: original
+    text: 延暦の遣唐使
+kind: embassy
+period: 804
+description_md: In 804 Emperor Kanmu allowed the monk Saichō to join an imperially sponsored embassy to China to study Tendai Buddhism[[source/history-of-japanese-art|pp. 122–123]]; Kūkai, who travelled with the same embassy, came back in 806 with the esoteric teachings of Shingon[[source/history-of-japanese-art|pp. 124–125]][[source/toji-history|「唐で密教を学んで帰国した弘法大師空海」]]. The two founded the Tendai and Shingon schools of the Heian period.
+relationships:
+  - type: concerns
+    to: movement/early-heian-period
+    notes_md: "804"
+  - type: concerns
+    to: institution/kongobu-ji
+    notes_md: Kūkai, who founded it, studied in China
+sources:
+  period:
+    - note: “In 804, Emperor Kanmu gave Saicho permission to join an imperially sponsored embassy to China so that he could study Tendai”
+      source: history-of-japanese-art
+      locator: pp. 122–123

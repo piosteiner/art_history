@@ -1,0 +1,15 @@
+public_id: 105735
+name: Great fire of Fujiwara-kyō
+kind: fire
+period: 711
+place: nara-prefecture
+description_md: After the capital moved to Heijō-kyō in 710, a great fire swept through the abandoned city of Fujiwara in 711 and destroyed many of its buildings[[source/history-of-japanese-art|pp. 44–45, 60–61]].
+relationships:
+  - type: concerns
+    to: movement/nara-period
+    notes_md: "711"
+sources:
+  period:
+    - note: “many were destroyed in 711 by the great conflagration that swept through the abandoned city”
+      source: history-of-japanese-art
+      locator: pp. 44–45

@@ -1,0 +1,24 @@
+public_id: 105743
+name: Fire and rebuilding of the Rengeō-in (Sanjūsangendō)
+names:
+  - lang: ja
+    role: original
+    text: 蓮華王院本堂の焼失と再建
+kind: fire
+period: 1249/1266
+place: kyoto
+description_md: Go-Shirakawa's hall of a thousand and one Kannon images, built in 1164, burnt in 1249; only 156 of the statues were saved, and they formed the nucleus of the new installation. The rebuilt hall was finished by 1253, the main image installed in 1254 and the final dedication held in 1266[[source/history-of-japanese-art|pp. 154–155, 194–195]][[source/bunka-online-185896|「後白河法皇の命により長寛二年（一一六四）に建てられたものであったが、その後焼失し、再建して文永三年（一二六六）に供養を行った」]]. The central seated Thousand-armed Kannon, begun in 1251 and completed three years later, was Tankei's last work[[source/history-of-japanese-art|pp. 194–195]].
+relationships:
+  - type: concerns
+    to: movement/kamakura-period
+    notes_md: 1249–1266
+  - type: concerns
+    to: artist/tankei
+    notes_md: the seated Thousand-armed Kannon (1251–54), his last work
+sources:
+  period:
+    - note: 「再建して文永三年（一二六六）に供養を行った」
+      source: bunka-online-185896
+    - note: “Go Shirakawa's hall was destroyed by fire in 1249 … and the final dedication held in 1266”
+      source: history-of-japanese-art
+      locator: pp. 154–155

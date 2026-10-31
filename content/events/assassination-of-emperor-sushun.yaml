@@ -1,0 +1,19 @@
+public_id: 105733
+name: Assassination of Emperor Sushun
+names:
+  - lang: ja
+    role: original
+    text: 崇峻天皇暗殺
+kind: assassination
+period: 592
+place: nara-prefecture
+description_md: Emperor Sushun, raised to the throne by his uncle Soga no Umako in 588, was assassinated in 592 because he objected to Umako's interference in the government[[source/history-of-japanese-art|pp. 58–59]] — the only emperor whose murder by a subject the official histories record[[source/wikipedia-ja-sushun-tenno|「臣下により暗殺されたと正史に明記されている唯一の天皇である」]]. Kidder suggested that he was buried in the Fujinoki tomb[[source/history-of-japanese-art|pp. 36–37]].
+relationships:
+  - type: concerns
+    to: movement/asuka-period
+    notes_md: "592"
+sources:
+  period:
+    - note: “in 592 Sushun was assassinated—because he objected to this uncle's interference in government affairs”
+      source: history-of-japanese-art
+      locator: pp. 58–59

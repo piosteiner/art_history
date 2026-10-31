@@ -1,0 +1,12 @@
+public_id: 105723
+name: Shiga Prefecture
+names:
+  - lang: ja
+    role: original
+    text: 滋賀県
+kind: region
+designation: prefecture of Japan
+parent: japan
+boundary_code: JP-25
+location: [135.8686, 35.0045]
+wikidata_id: Q131358

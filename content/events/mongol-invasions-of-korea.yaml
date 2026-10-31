@@ -1,0 +1,30 @@
+public_id: 105757
+name: Mongol invasions of Korea
+names:
+  - lang: ko
+    role: original
+    text: 여몽전쟁
+  - lang: ko
+    role: original
+    text: 대몽항쟁
+kind: invasion
+period: 1231/1270
+place: korean-peninsula
+description_md: Faced with the Mongols' invasion of 1231, the military regime moved the Goryeo capital to Ganghwa island in 1232, exploiting the Mongols' fear of the sea; they invaded six times in thirty years while the court lived on in comfort on the island[[source/portal-2000|p. 78]]. The move, carried out by Choe U, kept Ganghwa the capital until the return to Kaesong in 1270[[source/aks-ganghwa-cheondo|「1232년(고종 19) 몽골의 침략에 대항하기 위해 도읍지를 강화도로 옮긴 사건이다. 이는 최우(崔瑀)에 의해 단행되었고, 1270년(원종 11) 개경(開京)으로 환도(還都)할 때까지」]].
+wikidata_id: Q702266
+relationships:
+  - type: concerns
+    to: place/ganghwa-island
+    notes_md: the capital 1232–1270
+  - type: concerns
+    to: movement/goryeo-period
+    notes_md: 1231–1270
+sources:
+  period:
+    - note: 「1231년(고종 18) 제1차 침입 … 1270년(원종 11) 개경으로 환도」
+      source: aks-ganghwa-cheondo
+    - note: “In 1231 the military regime was faced with an invasion by the Mongols and so moved the Koryo capital in 1232 to Kanghwa island”
+      source: portal-2000
+      locator: p. 78
+    - accessed: 2026-10-31
+      wikidata: Q702266

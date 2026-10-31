@@ -1,0 +1,21 @@
+public_id: 105734
+name: Fire of the Wakakusadera
+names:
+  - lang: ja
+    role: original
+    text: 若草伽藍焼失
+kind: fire
+period: 670
+place: ikaruga
+description_md: Prince Shōtoku's second foundation, the Wakakusadera — the first Hōryūji — burnt down in 670; its rebuilding began at once and was completed by 711[[source/history-of-japanese-art|pp. 60–61]]. The present western precinct was built after the fire, northwest of the old site[[source/bunka-online-146378|「聖徳太子創立の伽藍が天智九年（六七〇）に焼失したあと、寺地を西北方に移して建立されたのが現在の西院伽藍である」]]. Its Shaka triad may have been made to replace an image by the sculptor Tori lost in the fire[[source/history-of-japanese-art|pp. 80–81]].
+relationships:
+  - type: concerns
+    to: movement/hakuho-period
+    notes_md: "670"
+sources:
+  period:
+    - note: “Wakakusadera, was completed in the first decade of the seventh century, but was destroyed by fire in 670”
+      source: history-of-japanese-art
+      locator: pp. 60–61
+    - note: 「天智九年（六七〇）に焼失」
+      source: bunka-online-146378

@@ -1,0 +1,12 @@
+public_id: 105724
+name: Nagasaki Prefecture
+names:
+  - lang: ja
+    role: original
+    text: 長崎県
+kind: region
+designation: prefecture of Japan
+parent: japan
+boundary_code: JP-42
+location: [129.8675, 32.75]
+wikidata_id: Q169376

@@ -1,0 +1,19 @@
+public_id: 105754
+name: Gutai open-air exhibition
+names:
+  - lang: ja
+    role: original
+    text: 真夏の太陽にいどむ野外モダンアート実験展
+kind: exhibition
+period: 1955
+place: ashiya
+description_md: "In 1955, near Osaka, a group of artists took over a beachside park for a thirteen-day exhibition of paintings, sculptures and objects installed in a grove of pine trees — described as an “event”, the first experiment in both performance and conceptual art, organized by the Gutai Art Association that Yoshihara Jirō had founded the year before[[source/history-of-japanese-art|pp. 388–389]]: the “Experimental Outdoor Exhibition of Modern Art to Challenge the Midsummer Sun” in the pine grove of Ashiya Park[[source/wikipedia-ja-gutai-bijutsu-kyokai|「炎天下の芦屋公園の松林を舞台とした野外展「真夏の太陽にいどむ野外モダンアート実験展」」]]."
+relationships:
+  - type: concerns
+    to: movement/showa-period
+    notes_md: "1955"
+sources:
+  period:
+    - note: “In 1955, near Osaka a group of artists took over a beachside park for a thirteen-day exhibition”
+      source: history-of-japanese-art
+      locator: pp. 388–389

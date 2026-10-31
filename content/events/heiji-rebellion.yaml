@@ -1,0 +1,25 @@
+public_id: 105740
+name: Heiji Rebellion
+names:
+  - lang: ja
+    role: original
+    text: 平治の乱
+kind: rebellion
+period: 1160-01
+period_label: January 1160 (Heiji 1, 12th month)
+place: kyoto
+description_md: "The second of the two rebellions after Toba's death[[source/history-of-japanese-art|pp. 102–103]]: Minamoto no Yoshitomo led a coup planned by the Fujiwara and imprisoned the cloistered emperor Go-Shirakawa — the events the Heiji monogatari emaki tells[[source/history-of-japanese-art|pp. 182–183]]. It broke out on the 9th day of the 12th month of Heiji 1 — 19 January 1160 in the Western calendar, which is why it is dated 1159 or 1160[[source/wikipedia-ja-heiji-no-ran|「平治元年12月9日（1160年1月19日）」]]."
+wikidata_id: Q944859
+relationships:
+  - type: concerns
+    to: movement/insei-period
+    notes_md: "1160"
+sources:
+  period:
+    - note: “The tale deals with the events of 1160, when Minamoto no Yoshitomo led a Fujiwara-planned coup and imprisoned the insei Go Shirakawa”
+      source: history-of-japanese-art
+      locator: pp. 182–183
+    - note: 「平治元年12月9日（1160年1月19日）」
+      source: wikipedia-ja-heiji-no-ran
+    - accessed: 2026-10-31
+      wikidata: Q944859
