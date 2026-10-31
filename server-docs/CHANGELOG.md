@@ -4,6 +4,29 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-31
 
+### Data: the Blaquier-Arrieta collection (Sotheby's, 18 November 2026) complete; Wildenstein numbers cited properly
+- **What:** all 12 lots of "Legendary: The Blaquier-Arrieta Collection" (Sotheby's New York, evening sale N12368,
+  18 November 2026, 6 pm) as entries, read from the lot pages (robots.txt allows them; 15 s apart): 6 new (Vlaminck,
+  Sisley, Degas, Toulouse-Lautrec, Pissarro's Montfoucault; Van Gogh's *Chestnut Trees in Blossom* was the owner's
+  entry already — a duplicate made by the import was merged into it and deleted), 6 completed — medium, dimensions,
+  the lot page as web page, provenance (114 steps, each citing its Sotheby's line; 78 "from the above" = direct),
+  133 exhibitions as records under the step that held the work, catalogue raisonné numbers. The owner's own last steps
+  (ended 18 November 2026, `check_after`) kept as the same rows, moved to the end. One source per lot
+  (`sothebys-n12368-lot-N`, "Sotheby's 2026, Lot N"). Lot 10 (Pissarro, *La Place du Théâtre-Français*): Sotheby's page
+  carries lot 4's provenance — only the description taken, the error noted on its source. New: Toulouse-Lautrec,
+  31 people, 9 institutions and 19 places from Wikidata (`from-wikidata.js`); 9 people and 3 dealers without an item
+  (two candidates or none) by hand. Corrected: *Bâteaux* → *Bateaux*, the Monet image credited to Renoir,
+  *Fleurs dans une coupe* 31 × 47.6 cm, c. 1899–1901 (Wikidata's 29 × 46, 1901 no longer cited).
+- **Wildenstein:** the placeholder "Wildenstein Index Number" (no author, no year → "Anon. o. J.") replaced by the
+  catalogues themselves: Wildenstein 1996 and 1974–1991 (Monet; the Wikidata catalogue item Q3776395 moved to 1996),
+  1964 and 2001 (Gauguin — the editions number differently: Carrière aux environs de Pontoise 1964 Nr. 72 = 2001
+  Nr. 88), 1954 (Ingres), Rouart und Wildenstein 1975 (Manet). The 13 Kunsthaus numbers that had only a label now
+  link their catalogue, each cited to the Kunsthaus page that names the edition. 15 further catalogues raisonnés
+  (Vallès-Bled, Kellermann, Daulte, Brame/Lorenceau, Lemoisne, Rewald, Venturi, FWN, Pissarro/Venturi,
+  Pissarro/Durand-Ruel Snollaerts, Caproni/Sugana).
+- **Why:** owner, 2026-10-31 ("a great opportunity before these objects disappear back into private possession";
+  cite Wildenstein as the guide does). **Revert:** per entry in the admin history; the new entries via Delete.
+
 ### Names in sources "Surname, Given names" (migration 183)
 - **What:** data — 20 names in 12 sources rewritten from "Jane Portal" to "Portal, Jane" (authors/editors, in the
   audit log as user pio, source admin). New check `source_name_order` (warning) via `source_name_unordered(name)`:
