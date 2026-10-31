@@ -481,9 +481,11 @@ async function similarEntry(db, label, types) {
   if (!label || !types.length) return null;
   const { rows } = await db.query(`
     SELECT type::text, slug, name, round(strict_word_similarity(f_unaccent($1), f_unaccent(name))::numeric, 2) AS score FROM entity_index
-    WHERE type = ANY ($2::entity_type[]) AND strict_word_similarity(f_unaccent($1), f_unaccent(name)) >= 0.6
+    WHERE type = ANY ($2::entity_type[]) AND strict_word_similarity(f_unaccent($1), f_unaccent(name)) >= 0.6 AND similar_name($1, name)
     -- whole words only (strict_word_similarity): word_similarity matched part of a word — "Oran" in "Orangerie" 0.8,
     -- "Seville" in "Trouville-sur-Mer" 0.63; strict 0.36 and 0.29, while Sevilla/Seville 0.6, Kinkakuji/Kinkaku-ji 0.64.
+    -- And all words of one name in the other (similar_name, 182): "Eastern" alone made "Eastern Bloc" 0.62 like the
+    -- Department of Near Eastern Antiquities.
     -- A name containing the label whole scores 1 ("Renaissance" in "Early Renaissance"): the same name first, then the
     -- closer whole name (similarity), then A–Z
     ORDER BY score DESC, lower(f_unaccent(name)) = lower(f_unaccent($1)) DESC, similarity(f_unaccent($1), f_unaccent(name)) DESC, name LIMIT 1`, [label, types]);

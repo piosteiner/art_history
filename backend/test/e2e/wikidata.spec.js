@@ -251,3 +251,15 @@ test('a period of only its first day is not "more precise" than Wikidata\'s span
     await expect(row(userA, 'Period')).toContainText('yours is more precise');
   } finally { sql("DELETE FROM movements WHERE slug = 'test-secession'"); }
 });
+
+test('a similar name needs all its words (182): "Eastern Bloc" is not the Department of Near Eastern Antiquities', () => {
+  const similar = (a, b) => sql(`SELECT similar_name('${a}', '${b}')`);
+  // one long word found whole scored 0.62 — the other word is missing
+  expect(similar('Eastern Bloc', 'Department of Near Eastern Antiquities of the Louvre')).toBe('f');
+  expect(similar('Western Bloc', 'National Museum of Western Art')).toBe('f');
+  // still similar: the label inside a longer name, spelling variants of a word, articles left aside
+  expect(similar('Impressionism', 'Early Impressionism')).toBe('t');
+  expect(similar('Sevilla', 'Seville')).toBe('t');
+  expect(similar('Test Painter Velasko', 'Test Painter Velasco')).toBe('t');
+  expect(similar('Museum of Modern Art', 'The Museum of Modern Art')).toBe('t');
+});

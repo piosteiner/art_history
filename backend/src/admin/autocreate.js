@@ -40,6 +40,7 @@ async function resolveRefs(db, t, doc, body) {
     if (!exact.length && body[`new.${key}`] !== '1') {
       const { rows } = await db.query(`
         SELECT slug, name FROM entity_index WHERE type = $2::entity_type AND strict_word_similarity(f_unaccent($1), f_unaccent(name)) >= 0.6
+          AND similar_name($1, name)  -- all words of one name in the other (182)
         ORDER BY strict_word_similarity(f_unaccent($1), f_unaccent(name)) DESC, lower(f_unaccent(name)) = lower(f_unaccent($1)) DESC,
                  similarity(f_unaccent($1), f_unaccent(name)) DESC, name LIMIT 1`, [name, type]);  // ties: as similarEntry (wikidata.js)
       if (rows.length) {

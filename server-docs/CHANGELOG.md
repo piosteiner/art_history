@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-31
 
+### Similar names need all their words (migration 182)
+- **What:** `similar_name(label, name)` = `strict_word_similarity ≥ 0.6` as before **and** every word (≥ 3 letters,
+  articles/prepositions aside) of one name found in the other (per word ≥ 0.35, so spelling variants pass). Used by
+  the Wikidata comparison's "similar name" (`similarEntry`) and the "did you mean" of auto-created entries
+  (`autocreate.js`). Test in `wikidata.spec.js`.
+- **Why:** owner, 2026-10-31 — "Eastern Bloc" was offered as our Department of Near Eastern Antiquities of the Louvre,
+  "Western Bloc" as the National Museum of Western Art (one long word found whole scored 0.62). **Revert:** drop the
+  `AND similar_name(…)` in both queries (the functions can stay).
+
 ### Test environment: "public page ↗" opens the test site
 - **What:** `PUBLIC_SITE_URL=https://test.arthistory.piogino.ch` in `backend/ecosystem.test.config.js` — every link
   of the test CMS to the public site (entries, pages, start views, changelog, feedback, search words, the RSS feed)
