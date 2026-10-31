@@ -2406,8 +2406,13 @@ test('accessibility: after a navigation the new heading has focus; skip link; th
 test('timeline: changing the picks replaces its rows, zoom and half-typed years stay; none selected shows a note', async ({ page }) => {
   await page.goto('/?all');
   await expect(page.locator('.row-label').first()).toBeVisible();
+  // prehistory (the Korean Palaeolithic, 100,000 BCE) doesn't squeeze the rest: it opens on the last millennia
+  const opened = (await page.locator('.timeline-view').textContent()) || '';
+  expect(opened).toMatch(/^showing /);   // a view of its own, not the whole 100,000 years
+  const first = Number((opened.match(/showing ([\d,]+) BCE/) || [])[1]?.replace(/,/g, '') || 0);
+  expect(first).toBeLessThanOrEqual(5000);
   await page.locator('.timeline-svg').focus();
-  await page.keyboard.press('+');
+  for (let i = 0; i < 3; i++) await page.keyboard.press('+');   // a window narrower than any selection's years
   const view = await page.locator('.timeline-view').textContent();
   expect(view).toContain('showing');
   await page.fill('input[name=from]', '1850'); // not applied
@@ -2452,13 +2457,15 @@ test('explore: the time window is named above the map; ✕ clears it', async ({ 
 test('type and materials in any language: "Holzschnitt" finds the woodblock prints, linked to the glossary', async ({ page }) => {
   await page.goto('/artworks');
   await expect(page.locator('.card').first()).toBeVisible();
+  // "Holzschnitt" is the German name of woodcut; the Great Wave is a nishiki-e, under woodcut by the broader terms
+  // (nishiki-e › Japanese woodblock print › woodcut, 2026-10-30) — found through the chain
   await page.fill('.filter', 'Holzschnitt');
   await expect(page.locator('#items')).toContainText('The Great Wave');
-  await expect(page.locator('#items')).toContainText('Type: woodblock print');           // the stored name, explained
+  await expect(page.locator('#items')).toContainText('Type: nishiki-e');                 // the stored name, explained
   await page.fill('.filter', 'Leinwand');                                                 // a material, through its German name
   await expect(page.locator('#count')).toContainText('match');
   await page.goto('/artworks/the-great-wave-off-kanagawa');
-  await expect(page.locator('.facts a[href="/glossary/woodblock-print"]')).toHaveText('woodblock print');
+  await expect(page.locator('.facts a[href$="/nishiki-e"]')).toHaveText('nishiki-e');
 });
 
 test('a long selection gets a short address; the short address opens the same selection', async ({ page }) => {

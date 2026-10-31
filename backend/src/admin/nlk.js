@@ -4,6 +4,7 @@
 // (records.js); the names are offered as other names. Base URL configurable (NLK_BASE) for the end-to-end tests.
 const { memo } = require('./remember');
 const { personPlan } = require('./records');
+const { getJson } = require('./http');
 
 const BASE = process.env.NLK_BASE || 'https://lod.nl.go.kr';
 const recordUrl = (id) => `https://lod.nl.go.kr/page/${id}`;
@@ -13,10 +14,8 @@ async function fetchRecord(id) {
   if (!/^KAC[0-9]{9}$/.test(id)) throw new Error(`${id} is not a National Library of Korea number`);
   return remember(id, async () => {
     const query = `SELECT ?p ?o WHERE { <http://lod.nl.go.kr/resource/${id}> ?p ?o FILTER(!CONTAINS(STR(?p), '/create')) }`;
-    const res = await fetch(`${BASE}/sparql?${new URLSearchParams({ query })}`, {
-      headers: { Accept: 'application/sparql-results+json', 'User-Agent': 'arthistory.piogino.ch admin (research database)' }, signal: AbortSignal.timeout(30000) });
-    if (!res.ok) throw new Error(`lod.nl.go.kr answered ${res.status}`);
-    const rows = ((await res.json()).results || {}).bindings || [];
+    const answer = await getJson(`${BASE}/sparql?${new URLSearchParams({ query })}`, { accept: 'application/sparql-results+json', timeout: 30000 });
+    const rows = (answer.results || {}).bindings || [];
     if (!rows.length) throw new Error(`NLK ${id} was not found`);
     return rows.map((b) => [b.p.value, b.o.value]);
   });

@@ -5,10 +5,10 @@
 // and press Create. Base URLs configurable (OPENLIBRARY_BASE, CROSSREF_BASE) for the end-to-end tests.
 // ---------------------------------------------------------------------------------------------------------------
 const { memo } = require('./remember');
+const http = require('./http');
 
 const OPENLIBRARY = process.env.OPENLIBRARY_BASE || 'https://openlibrary.org';
 const CROSSREF = process.env.CROSSREF_BASE || 'https://api.crossref.org';
-const UA = 'arthistory.piogino.ch admin (research database; +https://arthistory.piogino.ch)';
 const remember = memo();
 
 // "978-3-7757-2310-0", "ISBN 3775723102" → digits (+X); a DOI from "doi:10.…" or "https://doi.org/10.…"
@@ -28,12 +28,7 @@ const inverted = (name) => {
 const yearOf = (text) => (String(text || '').match(/\b(1[5-9]\d\d|20\d\d)\b/) || [])[1] || '';
 
 async function getJson(url) {
-  return remember(url, async () => {
-    const res = await fetch(url, { headers: { Accept: 'application/json', 'User-Agent': UA }, signal: AbortSignal.timeout(15000) });
-    if (res.status === 404) return null;
-    if (!res.ok) throw new Error(`${new URL(url).host} answered ${res.status}`);
-    return res.json();
-  });
+  return remember(url, () => http.getJson(url, { missing: null }));
 }
 
 async function byIsbn(isbn) {

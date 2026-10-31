@@ -133,6 +133,11 @@ test('static files are linked with a content hash, so a deploy is never hidden b
   expect(await userA.locator('link[href*="admin.css"]').getAttribute('href')).toMatch(/^\/static\/admin\.css\?v=[0-9a-f]{10}$/);
   expect(await userA.locator('body').getAttribute('data-map-js')).toMatch(/^\/static\/map\.js\?v=[0-9a-f]{10}$/);
   expect((await userA.request.get(src)).status()).toBe(200);
+  // under its current fingerprint a file is kept for a year; an old or missing one only for an hour
+  const css = await userA.locator('link[href*="admin.css"]').getAttribute('href');
+  expect((await userA.request.get(css)).headers()['cache-control']).toBe('public, max-age=31536000, immutable');
+  expect((await userA.request.get('/static/admin.css?v=0000000000')).headers()['cache-control']).toBe('public, max-age=3600');
+  expect((await userA.request.get('/static/admin.css')).headers()['cache-control']).toBe('public, max-age=3600');
 });
 
 test('the slug comes right before the title or name it is made from', async ({ userA }) => {

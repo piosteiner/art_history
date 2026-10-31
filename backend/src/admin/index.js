@@ -14,13 +14,21 @@ const config = require('../config');
 const { html, layout } = require('./html');
 const { login, logout, loadUser, checkOrigin } = require('./auth');
 const { send, notFoundPage } = require('./core');
+const { asset } = require('./assets');
 
 const router = express.Router();
 
 // Development serves its own bundles first (npm run build:admin:dev → static-dev/): this checkout is also production,
 // and a dev build must never replace the bundles the live site serves from static/.
 if (config.env !== 'production') router.use('/static', express.static(path.join(__dirname, 'static-dev'), { index: false }));
-router.use('/static', express.static(path.join(__dirname, 'static'), { index: false, maxAge: '1h' }));
+// a file asked for under its current fingerprint (assets.js) can't change at that address: kept for a year, not even
+// revalidated; any other request (no or an old ?v=) for an hour as before
+router.use('/static', (req, res, next) => {
+  const current = typeof req.query.v === 'string' && asset(req.path.slice(1)) === `/static${req.path}?v=${req.query.v}`;
+  res.set('Cache-Control', current ? 'public, max-age=31536000, immutable' : 'public, max-age=3600');
+  next();
+});
+router.use('/static', express.static(path.join(__dirname, 'static'), { index: false, cacheControl: false }));
 router.use((req, res, next) => { res.set('Cache-Control', 'no-store'); next(); });
 router.use(express.urlencoded({ extended: false, limit: '1mb' }));
 router.use(checkOrigin);

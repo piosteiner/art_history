@@ -3,6 +3,7 @@
 // Congress. Compared like the GND (records.js). Base URL configurable (KULTURNAV_BASE) for the end-to-end tests.
 const { memo } = require('./remember');
 const { personPlan } = require('./records');
+const { getJson } = require('./http');
 
 const BASE = process.env.KULTURNAV_BASE || 'https://kulturnav.org';
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;
@@ -12,11 +13,7 @@ const remember = memo();
 async function fetchRecord(id) {
   if (!UUID.test(id)) throw new Error(`${id} is not a KulturNav id`);
   return remember(id, async () => {
-    const res = await fetch(`${BASE}/${id}.json`, { headers: { Accept: 'application/json', 'User-Agent': 'arthistory.piogino.ch admin (research database)' },
-      signal: AbortSignal.timeout(15000) });
-    if (res.status === 404) throw new Error(`KulturNav ${id} was not found`);
-    if (!res.ok) throw new Error(`KulturNav answered ${res.status}`);
-    return res.json();
+    return getJson(`${BASE}/${id}.json`, { name: 'KulturNav', missing: () => { throw new Error(`KulturNav ${id} was not found`); } });
   });
 }
 

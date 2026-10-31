@@ -24,18 +24,13 @@ const { memo } = require('./remember');
 
 const WIKIDATA = process.env.WIKIDATA_BASE || 'https://www.wikidata.org';
 const COMMONS = process.env.COMMONS_BASE || 'https://commons.wikimedia.org';
-const UA = 'arthistory-admin/1.0 (+https://arthistory.piogino.ch)';
 const LANGS = ['en', 'nl', 'fr', 'de', 'it', 'es', 'ja', 'zh', 'ko', 'ru'];  // alternative names are offered from these
 const Q = /^Q[1-9][0-9]*$/;
 
 // --- HTTP, remembered for 15 minutes (src/admin/remember.js) -----------------------------------------------------
 const remember = memo();
 function getJson(url) {
-  return remember(url, async () => {
-    const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' }, signal: AbortSignal.timeout(20000) });
-    if (!res.ok) throw new Error(`${new URL(url).host} answered ${res.status}`);
-    return res.json();
-  });
+  return remember(url, () => http.getJson(url, { timeout: 20000 }));
 }
 
 // light: only English labels/descriptions (cheap for many ids). Otherwise with all statements — big entities
@@ -79,6 +74,7 @@ async function search(q) {
 
 const MAX_IMAGES = 12;  // P18 statements offered per item (each costs one Commons request)
 const { metaText: stripTags } = require('./images');
+const http = require('./http');
 async function commonsImage(file) {
   const url = `${COMMONS}/w/api.php?${new URLSearchParams({ action: 'query', titles: `File:${file}`, prop: 'imageinfo',
     iiprop: 'extmetadata|url', iiurlwidth: '1280', format: 'json' })}`;
@@ -731,14 +727,7 @@ function distanceKm([lon1, lat1], [lon2, lat2]) {
 }
 
 // --- applying ------------------------------------------------------------------------------------------------------
-const slugify = (s) => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
-  .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80) || 'entry';
-
-async function freeSlug(db, t, base) {
-  let slug = slugify(base);
-  for (let i = 2; (await db.query(`SELECT 1 FROM ${t.table} WHERE slug = $1`, [slug])).rows.length; i += 1) slug = `${slugify(base)}-${i}`;
-  return slug;
-}
+const { slugify, freeSlug } = autocreate;  // one definition (autocreate.js)
 
 const sourceNote = (qid) => `Wikidata ${qid} (retrieved ${new Date().toISOString().slice(0, 10)})`;
 

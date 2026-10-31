@@ -106,6 +106,17 @@ function layout(rows: TimelineRow[], keepOrder = false, extent?: { from: number;
   return { min, max, placed, height: y + 8 };
 }
 
+/**
+ * Prehistory reaches back 100,000 years (API 174): when the rows start before 5000 BCE the timeline opens on what
+ * starts after it (from its earliest century to today) — zooming out shows it all. Null when there is nothing so deep.
+ */
+export function recentView(rows: TimelineRow[]): { from: number; to: number } | null {
+  const starts = rows.map((r) => r.from?.from_year ?? r.to?.from_year ?? r.to?.to_year).filter((y): y is number => y != null);
+  if (!starts.length || Math.min(...starts) >= -5000) return null;
+  const recent = starts.filter((y) => y >= -5000);
+  return recent.length ? { from: Math.floor(Math.min(...recent) / 100) * 100, to: new Date().getFullYear() } : null;
+}
+
 export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts: TimelineOptions = {}) {
   let { min, max, placed, height } = layout(rows, opts.keepOrder, opts.extent);
   const clipId = `tl-clip-${Math.random().toString(36).slice(2)}`;
@@ -342,7 +353,16 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
     fromInput.value = toInput.value = '';
     setWindow(null, true);
   };
-  if (opts.initialView) setView(opts.initialView.from, opts.initialView.to);
+  // the view it opens on: the one asked for, else the recent millennia when the rows reach into prehistory (a chosen
+  // window shows itself) — remembered, so new rows can tell a view the visitor zoomed from this default
+  let defaultView: { from: number; to: number } | null = null;
+  const openOn = (view: { from: number; to: number } | null) => {
+    defaultView = null;
+    if (!view) return;
+    setView(view.from, view.to);
+    defaultView = { from: v0, to: v1 };
+  };
+  openOn(opts.initialView ?? (opts.initialWindow || opts.extent ? null : recentView(rows)));
   setWindow(windowSel, false);
   const ro = new ResizeObserver(() => draw());
   ro.observe(container);
@@ -352,10 +372,12 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
     redraw: () => draw(),
     /** New rows (the selection changed): same controls, window and typed years; a zoomed view stays where it was. */
     setRows(next: TimelineRow[]) {
-      const zoomed = v0 > min + 0.01 || v1 < max - 0.01;
+      const atDefault = !!defaultView && Math.abs(v0 - defaultView.from) < 0.01 && Math.abs(v1 - defaultView.to) < 0.01;
+      const zoomed = !atDefault && (v0 > min + 0.01 || v1 < max - 0.01);
       ({ min, max, placed, height } = layout(next, opts.keepOrder, opts.extent));
-      if (zoomed) setView(v0, v1);
-      else setView(min, max);
+      if (zoomed) { setView(v0, v1); return; }
+      setView(min, max);
+      openOn(opts.extent ? null : recentView(next));   // not zoomed by the visitor: the new rows' own default
     },
     destroy: () => ro.disconnect(),
   };

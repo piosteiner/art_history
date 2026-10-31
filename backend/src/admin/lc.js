@@ -3,6 +3,7 @@
 // Compared like the GND (records.js). Base URL configurable (LC_BASE) for the end-to-end tests.
 const { memo } = require('./remember');
 const { personPlan } = require('./records');
+const { getJson } = require('./http');
 
 const BASE = process.env.LC_BASE || 'https://id.loc.gov';
 const MADS = 'http://www.loc.gov/mads/rdf/v1#';
@@ -11,11 +12,7 @@ const remember = memo();
 
 async function fetchRecord(id) {
   return remember(id, async () => {
-    const res = await fetch(`${BASE}/authorities/names/${encodeURIComponent(id)}.json`, {
-      headers: { Accept: 'application/json', 'User-Agent': 'arthistory.piogino.ch admin (research database)' }, signal: AbortSignal.timeout(15000) });
-    if (res.status === 404) throw new Error(`LC ${id} was not found`);
-    if (!res.ok) throw new Error(`id.loc.gov answered ${res.status}`);
-    return res.json();
+    return getJson(`${BASE}/authorities/names/${encodeURIComponent(id)}.json`, { missing: () => { throw new Error(`LC ${id} was not found`); } });
   });
 }
 

@@ -30,7 +30,6 @@ const JAPANSEARCH = process.env.JAPANSEARCH_BASE || 'https://jpsearch.go.jp';
 const SMK = process.env.SMK_BASE || 'https://api.smk.dk';
 const DIMU = process.env.DIMU_BASE || 'https://api.dimu.org';
 const DIMU_MEDIA = process.env.DIMU_MEDIA_BASE || 'https://mm.dimu.org';
-const UA = 'arthistory-admin/1.0 (https://arthistory.piogino.ch)';
 const LIMIT = 16;
 
 const SOURCES = {
@@ -52,12 +51,9 @@ for (const [source, key] of [['dimu', 'DIMU_KEY'], ['europeana', 'EUROPEANA_KEY'
   if (!process.env[key]) delete SOURCES[source];
 }
 
-async function getJson(url, headers = {}) {
-  const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json', ...headers }, signal: AbortSignal.timeout(15000) });
-  if (!res.ok) throw new Error(`${new URL(url).host} answered ${res.status}`);
-  return res.json();
-}
+const getJson = (url, headers = {}) => http.getJson(url, { headers });
 const { metaText: stripTags } = require('./images');
+const http = require('./http');
 const clean = (u) => (u ? u.split('?')[0] : u);
 
 // → [{ url, thumb, source_url, license, credit, title, by }]
@@ -100,7 +96,7 @@ async function aic(q) {
   const data = await getJson(`${AIC}/api/v1/artworks/search?${new URLSearchParams({
     q, 'query[term][is_public_domain]': 'true', limit: String(LIMIT),
     fields: 'id,title,artist_display,date_display,image_id,is_public_domain' })}`,
-  { 'AIC-User-Agent': UA });  // the AIC asks API users to identify themselves this way
+  { 'AIC-User-Agent': http.UA });  // the AIC asks API users to identify themselves this way
   const iiif = (data.config && data.config.iiif_url) || 'https://www.artic.edu/iiif/2';
   return (data.data || []).filter((a) => a.image_id && a.is_public_domain).map((a) => ({
     url: `${iiif}/${a.image_id}/full/1200,/0/default.jpg`, thumb: `${iiif}/${a.image_id}/full/400,/0/default.jpg`,

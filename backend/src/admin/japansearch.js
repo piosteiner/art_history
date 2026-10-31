@@ -9,6 +9,7 @@
 const { memo } = require('./remember');
 const { html } = require('./html');
 const names = require('../names');
+const { getJson } = require('./http');
 
 const BASE = process.env.JAPANSEARCH_BASE || 'https://jpsearch.go.jp';
 const RIGHTS = { pdm: 'public domain', cc0: 'CC0', ccby: 'CC BY', ccbysa: 'CC BY-SA', ccbync: 'CC BY-NC', ccbyncsa: 'CC BY-NC-SA', ccbynd: 'CC BY-ND', ccbyncnd: 'CC BY-NC-ND', incr: 'in copyright' };
@@ -22,10 +23,9 @@ const squash = (s) => String(s || '').replace(/[\s　]+/g, '');
 
 async function search(keyword) {
   return remember(keyword, async () => {
-    const res = await fetch(`${BASE}/api/item/search/jps-cross?${new URLSearchParams({ keyword, size: '12' })}`, {
-      headers: { Accept: 'application/json', 'User-Agent': 'arthistory.piogino.ch admin (research database)' }, signal: AbortSignal.timeout(20000) });
-    if (!res.ok) throw new Error(`Japan Search answered ${res.status}`);
-    return ((await res.json()).list || []).map((it) => {
+    const answer = await getJson(`${BASE}/api/item/search/jps-cross?${new URLSearchParams({ keyword, size: '12' })}`,
+      { name: 'Japan Search', timeout: 20000 });
+    return (answer.list || []).map((it) => {
       const c = it.common || {};
       return { id: it.id, title: c.title || '', yomi: c.titleYomi || '', holder: holder(c.provider || c.ownerOrg), rights: RIGHTS[c.contentsRightsType] || '',
         url: c.linkUrl || `https://jpsearch.go.jp/item/${it.id}`, by: (c.contributor || [])[0] || '', date: (c.temporal || [])[0] || '' };

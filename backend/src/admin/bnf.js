@@ -3,6 +3,7 @@
 // numbers it links. Compared like the GND (records.js). Base URL configurable (BNF_BASE) for the end-to-end tests.
 const { memo } = require('./remember');
 const { personPlan } = require('./records');
+const { getJson } = require('./http');
 
 const BASE = process.env.BNF_BASE || 'https://data.bnf.fr';
 const recordUrl = (id) => `https://data.bnf.fr/ark:/12148/cb${id}`;
@@ -14,10 +15,8 @@ async function fetchRecord(id) {
   return remember(id, async () => {
     const query = `SELECT ?p ?o WHERE { <http://data.bnf.fr/ark:/12148/cb${id}#about> ?p ?o }`;
     const url = `${BASE}/sparql?${new URLSearchParams({ query, format: 'application/sparql-results+json' })}`;
-    const res = await fetch(url, { headers: { Accept: 'application/sparql-results+json', 'User-Agent': 'arthistory.piogino.ch admin (research database)' },
-      signal: AbortSignal.timeout(20000) });
-    if (!res.ok) throw new Error(`data.bnf.fr answered ${res.status}`);
-    const rows = ((await res.json()).results || {}).bindings || [];
+    const answer = await getJson(url, { accept: 'application/sparql-results+json', timeout: 20000 });
+    const rows = (answer.results || {}).bindings || [];
     if (!rows.length) throw new Error(`BnF ${id} was not found`);
     return rows.map((b) => [b.p.value, b.o.value]);
   });

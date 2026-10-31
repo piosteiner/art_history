@@ -147,7 +147,8 @@ export interface Country {
 /** A dated link to a polity (state, empire, dynasty); entered by hand, not derived from places. */
 export interface PolityLink {
   slug: string; name: string; kind: string | null;
-  relationship: 'nationality' | 'created_in_polity' | 'located_in_polity';
+  // concerns: an event about a polity (the Schmalkaldic War → the Holy Roman Empire) — shown with the relationships
+  relationship: 'nationality' | 'created_in_polity' | 'located_in_polity' | 'concerns';
   period: DateRange | null; // of the link (e.g. nationality 1880–1917)
   polity_period: DateRange | null; // when the polity existed
   country_codes: string[];

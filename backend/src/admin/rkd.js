@@ -4,6 +4,7 @@
 // Compared like the GND (records.js). Base URL configurable (RKD_BASE) for the end-to-end tests.
 const { memo } = require('./remember');
 const { personPlan } = require('./records');
+const { getJson } = require('./http');
 
 const BASE = process.env.RKD_BASE || 'https://data.rkd.nl';
 const CRM = 'http://www.cidoc-crm.org/cidoc-crm/';
@@ -14,11 +15,8 @@ const remember = memo();
 function node(uri) {
   if (!String(uri).startsWith(`${BASE}/`)) return Promise.resolve({});
   return remember(uri, async () => {
-    const res = await fetch(uri, { headers: { Accept: 'application/ld+json', 'User-Agent': 'arthistory.piogino.ch admin (research database)' },
-      signal: AbortSignal.timeout(15000) });
-    if (res.status === 404) return {};
-    if (!res.ok) throw new Error(`data.rkd.nl answered ${res.status}`);
-    const list = await res.json();
+    const list = await getJson(uri, { accept: 'application/ld+json', missing: null });
+    if (!list) return {};
     return (Array.isArray(list) ? list : [list]).find((n) => n['@id'] === uri) || {};
   });
 }

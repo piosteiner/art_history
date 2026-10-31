@@ -10,6 +10,7 @@ const { parseFuzzyDate } = require('../fuzzy-date');
 const placefinder = require('./placefinder');
 const { memo } = require('./remember');
 const { pickedTarget } = require('./targets');
+const { getJson } = require('./http');
 
 const LOBID = process.env.LOBID_BASE || 'https://lobid.org';
 const recordUrl = (gnd) => `https://d-nb.info/gnd/${gnd}`;
@@ -19,13 +20,8 @@ const idOf = (uri) => String(uri || '').split('/').pop();
 const remember = memo();
 const fetchRecord = (gnd) => remember(gnd, () => fetchFresh(gnd));
 async function fetchFresh(gnd) {
-  const res = await fetch(`${LOBID}/gnd/${encodeURIComponent(gnd)}.json`, {
-    headers: { Accept: 'application/json', 'User-Agent': 'arthistory.piogino.ch admin (research database)' },
-    signal: AbortSignal.timeout(15000),
-  });
-  if (res.status === 404) throw new Error(`GND ${gnd} was not found`);
-  if (!res.ok) throw new Error(`the GND service answered ${res.status}`);
-  return res.json();
+  return getJson(`${LOBID}/gnd/${encodeURIComponent(gnd)}.json`, { name: 'the GND service',
+    missing: () => { throw new Error(`GND ${gnd} was not found`); } });
 }
 
 // "Marc, Franz" → "Franz Marc" (the GND writes people surname first)

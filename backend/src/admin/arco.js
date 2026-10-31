@@ -7,16 +7,15 @@
 // ---------------------------------------------------------------------------------------------------------------
 const { memo } = require('./remember');
 const { html } = require('./html');
+const { getJson } = require('./http');
 
 const BASE = process.env.ARCO_BASE || 'https://dati.beniculturali.it';
 const SHOWN = 12;
 const remember = memo();
 
 async function sparql(query) {
-  const res = await fetch(`${BASE}/sparql?${new URLSearchParams({ query, format: 'json' })}`, {
-    headers: { Accept: 'application/sparql-results+json', 'User-Agent': 'arthistory.piogino.ch admin (research database)' }, signal: AbortSignal.timeout(30000) });
-  if (!res.ok) throw new Error(`dati.beniculturali.it answered ${res.status}`);
-  return ((await res.json()).results || {}).bindings || [];
+  const answer = await getJson(`${BASE}/sparql?${new URLSearchParams({ query, format: 'json' })}`, { accept: 'application/sparql-results+json', timeout: 30000 });
+  return (answer.results || {}).bindings || [];
 }
 
 // the catalogued works of the person with this Wikidata item → { total, works: [{ id, title, url }] }

@@ -513,8 +513,13 @@ never the view (all checks take seconds, more as the data grows). How it stays c
 - *The worker* (`src/admin/quality.js`, LISTEN) calls `process_derived(100)` until the queue is empty — one short
   transaction per batch, whatever the size of the database: per entry its duplicate facts (fingerprint), search fields
   (`entry_search_fields` filtered by type and ids → diff into `entry_search_fields_stored`) and findings
-  (`quality_issues_live` filtered the same way — `EXECUTE`, so the planner sees the values, pushes them into each
-  branch and drops the branches of other types and of the global checks). Written are only rows that changed.
+  (`quality_issues_live` filtered the same way). Written are only rows that changed. The reads go through small
+  functions with a generic plan (178: `derived_issues`, `derived_search_fields`, `derived_facts`, `derived_edges`,
+  `derived_work_edges`, `derived_coverage` — `SET plan_cache_mode = force_generic_plan`), which PL/pgSQL keeps for the
+  connection: a branch's test of the type ("'artwork' = $1", no column) is a one-time filter, so other types' branches
+  and the global checks are skipped when the plan runs. Until 178 they were `EXECUTE`d with literal values and planned
+  afresh every call — ~90 % of a call's time (one entry ≈ 150–200 ms, now ≈ 30 ms). The admin pool keeps connections
+  5 minutes (`src/db.js`, `allowExitOnIdle`) so the plans last.
 - *Global checks* (`quality_global_checks()`: broken `[[links]]` — they depend on entries in no fixed relation; until
   126 also narrowable provenance dates and the whole `graph_links`) with `search_words`: `refresh_quality_global()`,
   after the queue, at most every 30 s (`QUALITY_GLOBAL_EVERY_MS`), at once when a page waits.

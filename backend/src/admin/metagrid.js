@@ -8,6 +8,7 @@
 // ---------------------------------------------------------------------------------------------------------------
 const { memo } = require('./remember');
 const { html } = require('./html');
+const { getJson } = require('./http');
 
 const BASE = process.env.METAGRID_BASE || 'https://api.metagrid.ch';
 // Metagrid's providers → our authorities (059); dodis numbers persons "P…"
@@ -23,10 +24,8 @@ const remember = memo();
 
 async function search(name) {
   return remember(name, async () => {
-    const res = await fetch(`${BASE}/search?${new URLSearchParams({ group: '1', query: name })}`, {
-      headers: { Accept: 'application/json', 'User-Agent': 'arthistory.piogino.ch admin (research database)' }, signal: AbortSignal.timeout(15000) });
-    if (!res.ok) throw new Error(`Metagrid answered ${res.status}`);
-    return ((await res.json()).concordances || []).map(concordance);
+    const answer = await getJson(`${BASE}/search?${new URLSearchParams({ group: '1', query: name })}`, { name: 'Metagrid' });
+    return (answer.concordances || []).map(concordance);
   });
 }
 

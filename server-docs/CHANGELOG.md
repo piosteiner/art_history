@@ -4,6 +4,29 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-31
 
+### Optimisation: worker without re-planning (178), one helper for outside requests, caching, updates, timeline fix
+- **178:** `process_derived()` spent ~90 % of a call planning (`EXECUTE` with literal types re-planned the views —
+  `quality_issues_live` alone ~130 ms per call). Its reads now go through six functions with generic plans kept per
+  connection (`derived_issues`, `_search_fields`, `_facts`, `_edges`, `_work_edges`, `_coverage`; execute revoked from
+  PUBLIC). Dev: one entry 150–200 ms → ~30 ms; ten-fold data (scale_test): 749 → 560 ms median; stored results
+  byte-identical after reprocessing (findings, search fields, graph, coverage). `src/db.js`: admin pool keeps idle
+  connections 5 min (plans last) with `allowExitOnIdle` (scripts such as import.js still exit). perf 35/35.
+- **`src/admin/http.js`:** one `getJson()` for the 15 modules that ask outside services (Wikidata, GND, LC, BnF,
+  RKD, SIKART, KulturNav, NLK, ArCo, Metagrid, Japan Search, ColBase, booklookup, image search, Nominatim) — one
+  User-Agent, time limit, errors naming the service, a 429 with Retry-After ≤ 10 s waited out once; unit tests.
+  `slugify`/`freeSlug` once (autocreate.js, used by wikidata.js).
+- **Admin static files:** asked for under their current fingerprint (`?v=`) cached a year, `immutable`; others an hour
+  as before (`src/admin/index.js`, e2e editor.spec).
+- **Updates:** maplibre-gl 6.11 → 6.16, @playwright/test 1.63 → 1.64 (browser chromium-headless-shell v1248).
+  `npm audit` (frontend): 3 moderate in ts-json-schema-generator's glob/minimatch — a test-only tool, already latest.
+- **Site:** the start page's timeline opened on 90,000 BCE since 174 (the Korean Palaeolithic got years): the timeline
+  itself now opens on the last millennia when its rows reach before 5000 BCE (`recentView()` in `timeline.ts`, the
+  periods page uses it too); a view the visitor zoomed is kept when the selection changes. Pages builds had failed
+  since this morning on it and two tests outdated by yesterday's data (event → polity `concerns` in `types.ts`, the
+  Great Wave a nishiki-e) — fixed, so the image-centring fix of this morning goes live with this push.
+- **Why:** owner, 2026-10-31 ("do them all"). **Revert:** drop the six functions after restoring process_derived from
+  177's state (`git show` 178's predecessor); `git revert` for the rest.
+
 ### Site: an enlarged picture is centred from the first frame
 - **What:** `frontend/src/zoom.ts` places the picture again whenever its size or the frame's changes (ResizeObserver on
   image and stage, before the browser paints) — not only on `load`. A large image (the Landauer Altar from the KHM)

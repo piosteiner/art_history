@@ -18,6 +18,7 @@ const { html } = require('./html');
 const names = require('../names');
 const images = require('./images');
 const { parseFuzzyDate } = require('../fuzzy-date');
+const { getJson } = require('./http');
 
 const BASE = process.env.JAPANSEARCH_BASE || 'https://jpsearch.go.jp';
 const remember = memo();
@@ -78,10 +79,9 @@ async function ensureSources(db) {
 async function search(code, keyword) {
   const src = SOURCES[code];
   return remember(`${code}:${keyword}`, async () => {
-    const res = await fetch(`${BASE}/api/item/search/jps-cross?${new URLSearchParams({ keyword, size: '20', 'f-db': src.db })}`, {
-      headers: { Accept: 'application/json', 'User-Agent': 'arthistory.piogino.ch admin (research database)' }, signal: AbortSignal.timeout(20000) });
-    if (!res.ok) throw new Error(`Japan Search answered ${res.status}`);
-    return ((await res.json()).list || []).map(RECORD[code]).filter(Boolean);
+    const answer = await getJson(`${BASE}/api/item/search/jps-cross?${new URLSearchParams({ keyword, size: '20', 'f-db': src.db })}`,
+      { name: 'Japan Search', timeout: 20000 });
+    return (answer.list || []).map(RECORD[code]).filter(Boolean);
   });
 }
 

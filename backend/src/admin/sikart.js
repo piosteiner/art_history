@@ -9,6 +9,7 @@
 const { parseFuzzyDate } = require('../fuzzy-date');
 const { memo } = require('./remember');
 const { personPlan } = require('./records');
+const { getJson } = require('./http');
 
 const API = process.env.SIKART_BASE || 'https://api.recherche.sik-isea.ch/api/v1/graphs/sik/data';
 const recordUrl = (id) => `https://recherche.sik-isea.ch/sik:person-${id}/in/sikart`;
@@ -17,13 +18,7 @@ const recordUrl = (id) => `https://recherche.sik-isea.ch/sik:person-${id}/in/sik
 const remember = memo();
 const get = (path) => remember(path, () => getFresh(path));
 async function getFresh(path) {
-  const res = await fetch(`${API}/${path}`, {
-    headers: { Accept: 'application/ld+json, application/json', 'User-Agent': 'arthistory.piogino.ch admin (research database; one record on request)' },
-    signal: AbortSignal.timeout(15000),
-  });
-  if (res.status === 404) return null;
-  if (!res.ok) throw new Error(`the SIKART service answered ${res.status}`);
-  return res.json();
+  return getJson(`${API}/${path}`, { accept: 'application/ld+json, application/json', name: 'the SIKART service', missing: null });
 }
 const nodes = (d) => (d && Array.isArray(d['@graph']) ? d['@graph'] : d ? [d] : []).filter((x) => x && typeof x === 'object');
 
