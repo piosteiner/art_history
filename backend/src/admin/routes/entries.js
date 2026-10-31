@@ -378,6 +378,20 @@ router.post('/:plural/new/duplicates', async (req, res) => {
   res.type('html').send(String(html`${doubt ? html`<div class="flash warn type-warning">“${name}”: ${doubt}</div>` : ''}${duplicates.liveBox(req.t, result.probe || [])}`));
 });
 
+// "Cited as" on the bibliography form (editor/sourceform.js): the short reference and full entry of the form as typed,
+// among all sources (a, b for equal sigla), and the names without a comma (source_name_unordered, 183). Nothing saved.
+router.post('/:plural/new/citation', async (req, res, next) => {
+  if (req.t.type !== 'source') return next();
+  const { doc } = formToDoc(req.body, req.t.fields);
+  const slug = String(req.body.slug || '').trim() || '\u0000new';
+  const { rows } = await adminPool.query('SELECT * FROM bibliography WHERE slug <> $1', [slug]);
+  const cite = bibliography.catalogue([...rows, { authors: [], editors: [], compilers: [], container_editors: [], ...doc, slug }]).get(slug);
+  const people = ['authors', 'editors', 'compilers', 'container_editors'].flatMap((k) => doc[k] || []);
+  const unordered = people.length ? (await adminPool.query('SELECT n FROM unnest($1::text[]) n WHERE source_name_unordered(n)', [people])).rows.map((r) => r.n) : [];
+  res.type('html').send(String(html`${doc.name ? html`<b>Cited as ${cite.siglum}:</b> ${raw(cite.full)}` : ''}
+    ${unordered.length ? html`<div class="flash warn">${unordered.map((n, i) => html`${i ? ', ' : ''}“${n}”`)} — no comma: write <b>Surname, Given names</b> (the short reference takes the surname from before the comma). An institution: leave it.</div>` : ''}`));
+});
+
 router.post('/:plural', async (req, res) => {
   const { t } = req;
   const result = await saveEntity(req.user, t, req.body, null);

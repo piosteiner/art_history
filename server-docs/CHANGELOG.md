@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-31
 
+### Names in sources "Surname, Given names" (migration 183)
+- **What:** data — 20 names in 12 sources rewritten from "Jane Portal" to "Portal, Jane" (authors/editors, in the
+  audit log as user pio, source admin). New check `source_name_order` (warning) via `source_name_unordered(name)`:
+  a name with two or more words, Latin letters and no comma that doesn't read as an institution's. The source form
+  shows "Cited as Portal 2000: …" as you type, with the same warning (`POST /bibliography/new/citation`,
+  `editor/sourceform.js`). Test `source-names.spec.js`. Also: the descriptions of four sources and three HLS
+  citation notes no longer say "read by the owner" / "owner's scan".
+- **Why:** owner, 2026-10-31 — the site cited "Jane Portal 2000" instead of "Portal 2000" (KHIST guide § 8.1: surname
+  and year); the short reference takes the surname from before the comma. **Revert:** drop the view's last UNION ALL
+  branch (re-create from `pg_get_viewdef`), the route and `initCitedAs()`; old names in the audit log (Revert per source).
+
 ### Similar names need all their words (migration 182)
 - **What:** `similar_name(label, name)` = `strict_word_similarity ≥ 0.6` as before **and** every word (≥ 3 letters,
   articles/prepositions aside) of one name found in the other (per word ≥ 0.35, so spelling variants pass). Used by
