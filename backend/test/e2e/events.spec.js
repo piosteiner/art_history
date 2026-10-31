@@ -55,7 +55,7 @@ test('an event: created with dates and place, depicted by an artwork, a person t
   expect(hokusai.features.some((f) => f.properties.event && f.properties.event.slug === 'great-fire-of-meireki')).toBe(true);
   // [[event/…]] links and their previews
   const prev = await api(request, '/previews?refs=event/great-fire-of-meireki');
-  expect(prev.data['event/great-fire-of-meireki'].subtitle).toBe('fire · Edo · 2 March–4 March 1657');
+  expect(prev.data['event/great-fire-of-meireki'].subtitle).toBe('fire · Edo · 2 March – 4 March 1657');
 
   // the quality page: connected (a place, a whole) — not "not connected to anything"
   expect(sql(`SELECT count(*) FROM quality_issues_live WHERE check_id = 'no_relationships' AND entity_type = 'event'`)).toBe('0');

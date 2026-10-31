@@ -43,7 +43,7 @@ test('nationality: linked from the artist, shown on the polity, in the API with 
   expect((await api(request, '/artists?polity=ussr')).data.map((x) => x.slug)).toEqual(['katsushika-hokusai']);
   expect((await api(request, '/artists?country=jp')).data.map((x) => x.slug).sort()).toEqual(['katsushika-hokusai', 'utagawa-hiroshige']);
   const p = await api(request, '/polities/ussr');
-  expect(p.period.label).toBe('30 December 1922–26 December 1991');
+  expect(p.period.label).toBe('30 December 1922 – 26 December 1991');
   expect(p.relationships[0]).toMatchObject({ label: 'nationality of', entity: { slug: 'katsushika-hokusai' } });
   expect((await api(request, '/polities?country=ua')).data.map((x) => x.slug)).toEqual(['ussr']);
   sql("DELETE FROM relationships WHERE relationship_type = 'nationality'");  // leave no quality error behind

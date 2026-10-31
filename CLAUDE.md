@@ -140,6 +140,9 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   key), Smithsonian, DigitaltMuseum (museums only — ask), Paris Musées and Korea's e-museum (not built until keys exist).
   Where to apply and what each adds: `server-docs/README.md` → "API keys for outside data". Without keys the image search
   skips those sources.
+- Decided (owner, 2026-10-31): a range's dash is spaced when an end names a month or a season ("1868 – 11 February
+  1889"), closed between years ("1840–1926", "13th–14th century") — `joinRange()` (backend `src/fuzzy-date.js`, site
+  `html.ts`), SQL `range_label()` (179; 802 stored labels rewritten). Not "until": that word means an open start in input.
 - Decided (2026-10-30): dates are stored Gregorian; before the calendar change (Julian sources, England until 1752)
   the label keeps the date as written with "(Julian calendar)" / "(Old Style)" (Dürer 30 May 1471 = "21 May 1471").
 - Quality findings that are correct as they are: an entry in `quality_acks` with the reason ("checked: …", "not the

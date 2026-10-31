@@ -67,10 +67,16 @@ function pointLabel({ y, mo, d }, withYear = true) {
   return d === undefined ? `${MONTHS[mo - 1]}${year}` : `${d} ${MONTHS[mo - 1]}${year}`;
 }
 
-// "20 May–29 July 1890" rather than "20 May 1890–29 July 1890" when both ends share a year.
+// The dash between two ends: spaced as soon as an end names a month or a season ("1868 – 11 February 1889", not
+// "1868–11 February 1889", which reads as 1868–11), closed between years ("1840–1926") — owner, 2026-10-31. The SQL
+// function range_label() (migration 179) and the site's joinRange() (frontend/src/html.ts) follow the same rule.
+const MORE_THAN_A_YEAR = /\b(January|February|March|April|May|June|July|August|September|October|November|December|spring|summer|autumn|fall|winter)\b/i;
+const joinRange = (a, b) => `${a}${MORE_THAN_A_YEAR.test(a) || MORE_THAN_A_YEAR.test(b) ? ' – ' : '–'}${b}`;
+
+// "20 May – 29 July 1890" rather than "20 May 1890 – 29 July 1890" when both ends share a year.
 function rangeLabel(from, to) {
   const sameYear = from.y === to.y && from.mo !== undefined && to.mo !== undefined;
-  return `${pointLabel(from, !sameYear)}–${pointLabel(to)}`;
+  return joinRange(pointLabel(from, !sameYear), pointLabel(to));
 }
 
 const ordinal = (n) => `${n}${n % 100 >= 11 && n % 100 <= 13 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] || 'th'}`;
@@ -229,7 +235,7 @@ function openRange(p, openEnd, text) {
   if (!openEnd) throw new Error(`bad date "${text}": an open end ("…/") is only allowed for periods`);
   return { range: `${p.range.split(',')[0]},)`, label: `since ${p.label}` };
 }
-// "20 May 1890" + "29 July 1890" → "20 May–29 July 1890"; "15 March 1901" + "31 March 1901" → "15–31 March 1901";
+// "20 May 1890" + "29 July 1890" → "20 May – 29 July 1890"; "15 March 1901" + "31 March 1901" → "15 – 31 March 1901";
 // otherwise both as they are
 function joinLabels(a, b) {
   const ya = /^(.*[A-Za-z]) (\d{1,4})$/.exec(a);
@@ -238,10 +244,10 @@ function joinLabels(a, b) {
   if (ya && yb && ya[2] === yb[2] && month(ya[1]) && month(yb[1])) {
     const da = /^(\d{1,2}) ([A-Za-z]+)$/.exec(ya[1]);
     const db = /^(\d{1,2}) ([A-Za-z]+)$/.exec(yb[1]);
-    if (da && db && da[2] === db[2]) return `${da[1]}–${b}`;
-    return `${ya[1]}–${b}`;
+    if (da && db && da[2] === db[2]) return joinRange(da[1], b);
+    return joinRange(ya[1], b);
   }
-  return `${a}–${b}`;
+  return joinRange(a, b);
 }
 const compareBounds = (a, b) => {
   const [x, y] = [parseBound(a), parseBound(b)];
@@ -353,4 +359,4 @@ function formatFuzzyDate(range, { coarseStart = false } = {}) {
   return `${pointText(lo, startPrecision)}/${endText}`;
 }
 
-module.exports = { parseFuzzyDate, formatFuzzyDate, CIRCA_YEARS };
+module.exports = { parseFuzzyDate, formatFuzzyDate, joinRange, CIRCA_YEARS };

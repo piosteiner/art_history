@@ -30,7 +30,7 @@ test.afterEach(cleanup);
 
 test('custody beside the ownership; an auction that did not sell; the 1933–1945 gap over undated steps; settlement', async ({ userA, request }) => {
   // 1. the deposit (1910–1912) doesn't end Semmel's ownership: it lasts until the buyer's acquisition in 1937
-  expect(sql(`SELECT period_label FROM provenance_periods WHERE artwork_id = ${W} AND position = 0`)).toBe('1900–20 March 1937');
+  expect(sql(`SELECT period_label FROM provenance_periods WHERE artwork_id = ${W} AND position = 0`)).toBe('1900 – 20 March 1937');
   expect(sql(`SELECT string_agg(position::text, ',' ORDER BY position) FROM provenance_periods WHERE artwork_id = ${W} AND NOT in_chain`)).toBe('1,2,3');
   // 2. one handover Semmel → buyer, through the auction that sold it — not through the one that didn't
   expect(sql(`SELECT string_agg(concat_ws(' ', s.slug || '>' || o.slug, e.label), '; ' ORDER BY (SELECT position FROM provenance WHERE id = e.provenance_id))

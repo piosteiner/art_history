@@ -55,7 +55,7 @@ test('role, joint owners, price, one-sided dates; the artist and the loan as imp
   await expect(table).toContainText('Test Leo Stein and Test Gertrude Stein');
   await expect(table).toContainText('27 April 1908 or later');
   // the artist until Vollard bought it (directly from him)
-  await expect(rows.first()).toContainText('1901 – 1901–28 October 1904');
+  await expect(rows.first()).toContainText('1901 – 1901 – 28 October 1904');
 
   // an agent and a commission (entered in SQL): held by, commissioned
   sql(`INSERT INTO provenance (artwork_id, position, owner_person_id, role, acquired, acquired_label) VALUES (${W}, 2, entity_id('person', 'test-agent'), 'agent', '[1928-01-01,1929-01-01)', '1928')`);

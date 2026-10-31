@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { parseFuzzyDate, formatFuzzyDate } = require('../src/fuzzy-date');
+const { parseFuzzyDate, formatFuzzyDate, joinRange } = require('../src/fuzzy-date');
 
 test('points at year, month and day precision', () => {
   assert.deepEqual(parseFuzzyDate(1853), { range: '[1853-01-01,1854-01-01)', label: '1853' });
@@ -12,9 +12,9 @@ test('points at year, month and day precision', () => {
 
 test('ranges are inclusive at each end\'s precision', () => {
   assert.deepEqual(parseFuzzyDate('1886-03/1888-02-20'),
-    { range: '[1886-03-01,1888-02-21)', label: 'March 1886–20 February 1888' });
+    { range: '[1886-03-01,1888-02-21)', label: 'March 1886 – 20 February 1888' });
   assert.deepEqual(parseFuzzyDate('1478/1482'), { range: '[1478-01-01,1483-01-01)', label: '1478–1482' });
-  assert.equal(parseFuzzyDate('1890-05-20/1890-07-29').label, '20 May–29 July 1890');
+  assert.equal(parseFuzzyDate('1890-05-20/1890-07-29').label, '20 May – 29 July 1890');
 });
 
 test('open end ("still ongoing") only when allowed', () => {
@@ -127,7 +127,7 @@ test('dates known from one side, and written-out dates (063, provenance)', () =>
   assert.deepStrictEqual(p('by 1904-10-28'), ['(,1904-10-29)', '28 October 1904 or earlier']);
   assert.deepStrictEqual(p('after 1952'), ['[1953-01-01,)', 'after 1952']);
   assert.deepStrictEqual(p('before 1928'), ['(,1928-01-01)', 'before 1928']);
-  assert.deepStrictEqual(p('1901/28 October 1904'), ['[1901-01-01,1904-10-29)', '1901–28 October 1904']);
+  assert.deepStrictEqual(p('1901/28 October 1904'), ['[1901-01-01,1904-10-29)', '1901 – 28 October 1904']);
   assert.strictEqual(formatFuzzyDate('(,1904-10-29)'), '1904-10-28 or earlier');
   // a BCE bound as a year — BCE dates exist only as years (Jōmon, "c. 11,000–400 BCE", 2026-10-30); CE ones stay days
   assert.strictEqual(formatFuzzyDate('(,0394-01-01 BC)'), '-395 or earlier');
@@ -152,8 +152,8 @@ test('ranges as people write them (099): any two forms, with -, –, " - ", "to"
   }
   assert.equal(r('1900-05').label, 'May 1900');                                // YYYY-MM as before
   assert.deepEqual(r('c. 1900–c. 1905'), { range: '[1895-01-01,1911-01-01)', label: 'c. 1900–c. 1905' });
-  assert.deepEqual(r('March 1900 – May 1905'), { range: '[1900-03-01,1905-06-01)', label: 'March 1900–May 1905' });
-  assert.equal(r('20 May 1890 – 29 July 1890').label, '20 May–29 July 1890');
+  assert.deepEqual(r('March 1900 – May 1905'), { range: '[1900-03-01,1905-06-01)', label: 'March 1900 – May 1905' });
+  assert.equal(r('20 May 1890 – 29 July 1890').label, '20 May – 29 July 1890');
   assert.deepEqual(r('1880s–1890s'), { range: '[1880-01-01,1900-01-01)', label: '1880s–1890s' });
   assert.equal(r('late 19th century–1920').range, '[1867-01-01,1921-01-01)');
   assert.deepEqual(r('500 BCE'), { range: '[0500-01-01 BC,0499-01-01 BC)', label: '500 BCE' });
@@ -174,12 +174,22 @@ test('ranges as people write them (099): any two forms, with -, –, " - ", "to"
 
 test('a range whose start leaves out what it shares with the end: "15–31 March 1901", "May–October 1909"', () => {
   // was: "15" read as the year 15 → [0015-01-01,1901-04-01)
-  assert.deepEqual(parseFuzzyDate('15–31 March 1901'), { range: '[1901-03-15,1901-04-01)', label: '15–31 March 1901' });
-  assert.deepEqual(parseFuzzyDate('May–October 1909'), { range: '[1909-05-01,1909-11-01)', label: 'May–October 1909' });
-  assert.deepEqual(parseFuzzyDate('20 May–29 July 1890'), { range: '[1890-05-20,1890-07-30)', label: '20 May–29 July 1890' });
+  assert.deepEqual(parseFuzzyDate('15–31 March 1901'), { range: '[1901-03-15,1901-04-01)', label: '15 – 31 March 1901' });
+  assert.deepEqual(parseFuzzyDate('May–October 1909'), { range: '[1909-05-01,1909-11-01)', label: 'May – October 1909' });
+  assert.deepEqual(parseFuzzyDate('20 May–29 July 1890'), { range: '[1890-05-20,1890-07-30)', label: '20 May – 29 July 1890' });
   // written out in full, the label is shortened the same way
-  assert.equal(parseFuzzyDate('15 March 1901–31 March 1901').label, '15–31 March 1901');
+  assert.equal(parseFuzzyDate('15 March 1901–31 March 1901').label, '15 – 31 March 1901');
   // years stay years; the end before the start is still an error
   assert.equal(parseFuzzyDate('1900–1905').range, '[1900-01-01,1906-01-01)');
   assert.throws(() => parseFuzzyDate('31–15 March 1901'), /end is before start/);
+});
+
+test('the dash between two ends: spaced when an end names a month or a season, closed between years (owner 2026-10-31)', () => {
+  assert.equal(parseFuzzyDate('1868/1889-02-11').label, '1868 – 11 February 1889');   // not "1868–11 February 1889"
+  assert.equal(parseFuzzyDate('1840/1926').label, '1840–1926');
+  assert.equal(parseFuzzyDate('13th–14th century').label, '13th–14th century');
+  assert.equal(joinRange('autumn 1878', '1881'), 'autumn 1878 – 1881');
+  assert.equal(joinRange('c. 1503', '1518'), 'c. 1503–1518');
+  // the old spelling still reads the same
+  assert.deepEqual(parseFuzzyDate('1868–11 February 1889').range, parseFuzzyDate('1868 – 11 February 1889').range);
 });

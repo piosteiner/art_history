@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-31
 
+### Dates: a range's dash spaced when an end names a month (migration 179)
+- **What:** "1868–11 February 1889" read as "1868–11": now "1868 – 11 February 1889"; between plain years unchanged
+  ("1840–1926", "13th–14th century", "c. 1503–1518"). One rule in three places: `joinRange()` in `src/fuzzy-date.js`
+  (new labels), SQL `range_label()` (lifespans in `entry_previews`, `entity_index`, `entry_search_fields`; a step's
+  period in `provenance_periods`/`provenance_chain`), `joinRange()` in `frontend/src/html.ts` (lifespans, provenance
+  steps, versions; lists no longer close the dash). 179 rewrote the 802 stored labels (every date-label column, the
+  names' period labels, labels quoted in citations — outdated citations unchanged at 39). The old spelling still
+  parses the same. Unit + e2e tests updated (expected labels only; inputs in the old spelling kept).
+- **Why:** owner, 2026-10-31 (proposed "until" — but "until 1905" already means an open start in the date input).
+- **Revert:** `regexp_replace(label, ' – ', '–')` on the same columns; restore the views' `concat_ws('–', …)`; `git revert`.
+
 ### Optimisation: worker without re-planning (178), one helper for outside requests, caching, updates, timeline fix
 - **178:** `process_derived()` spent ~90 % of a call planning (`EXECUTE` with literal types re-planned the views —
   `quality_issues_live` alone ~130 ms per call). Its reads now go through six functions with generic plans kept per

@@ -30,7 +30,7 @@ test.afterEach(cleanup);
 
 test('looters hold without title; another reading of a step; exchanged for', async ({ userA, request }) => {
   // 1. the owner's ownership goes on through the seizure until the restitution; no "owned by" for those who took it
-  expect(sql(`SELECT period_label FROM provenance_periods WHERE artwork_id = ${W} AND position = 0`)).toBe('1914–27 March 1946');
+  expect(sql(`SELECT period_label FROM provenance_periods WHERE artwork_id = ${W} AND position = 0`)).toBe('1914 – 27 March 1946');
   expect(sql(`SELECT string_agg(o.slug, ' ' ORDER BY o.slug) FROM edges e JOIN entity_index o ON (o.type, o.id) = (e.object_type, e.object_id)
     WHERE e.relationship_type = 'owned_by' AND e.subject_type = 'artwork' AND e.subject_id = ${W}`)).toBe('test-poss-buyer test-poss-irene test-poss-irene');
   expect(sql(`SELECT label FROM edges WHERE relationship_type = 'held_by' AND subject_id = ${W} AND object_id = ${P('test-poss-goering')} AND object_type = 'person'`))
@@ -65,7 +65,7 @@ test('looters hold without title; another reading of a step; exchanged for', asy
   await expect(alt).toContainText('another reading');
   await expect(alt).toContainText('Test Béatrice');
   expect(sql(`SELECT count(*) FROM provenance_periods WHERE artwork_id = ${W} AND owner_type = 'person' AND owner_id = ${P('test-poss-beatrice')}`)).toBe('0');
-  expect(sql(`SELECT period_label FROM provenance_periods WHERE artwork_id = ${W} AND position = 0`)).toBe('1914–27 March 1946');   // unchanged
+  expect(sql(`SELECT period_label FROM provenance_periods WHERE artwork_id = ${W} AND position = 0`)).toBe('1914 – 27 March 1946');   // unchanged
   const step = (await api(request, '/artworks/test-poss-w')).provenance.find((s) => s.owner && s.owner.slug === 'test-poss-irene');
   expect(step.alternatives.map((a) => [a.owner.slug, a.method, a.certainty])).toEqual([['test-poss-beatrice', 'gift', 'disputed']]);
   const dealer = (await api(request, '/artworks/test-poss-w')).provenance.find((s) => s.owner && s.owner.slug === 'test-poss-dealer');

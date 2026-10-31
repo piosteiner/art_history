@@ -30,7 +30,9 @@ One table per entity type, each with its own columns. Shared conventions:
 | `created_at` / `updated_at` | `updated_at` maintained by trigger |
 
 ## Fuzzy dates → `daterange`
-Historical dates are rarely exact, so every date is a **half-open range** plus a display label:
+Historical dates are rarely exact, so every date is a **half-open range** plus a display label: (the dash of a
+range spaced when an end names a month or a season — "1868 – 11 February 1889", "1840–1926": `joinRange()` in
+`src/fuzzy-date.js`, `range_label()` in SQL for views that join two labels, `joinRange()` on the site; 179, 2026-10-31):
 
 | Meaning | Stored value | Label |
 |---|---|---|

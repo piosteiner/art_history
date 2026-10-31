@@ -58,7 +58,7 @@ test('a building in phases: makers and patrons from the phases, in order, in the
   const patron = (await api(request, '/people/theo-van-gogh')).relationships.filter((r) => r.entity.slug === 'test-phase-palace');
   expect(patron).toHaveLength(1);
   expect(patron[0]).toMatchObject({ type: 'commissioned', label: 'commissioned', note: 'commissioned it · Baroque rebuilding; Demolition',
-    period: { label: '1698–1706, 7 September 1950–March 1951', from_year: 1698, to_year: 1951 } });
+    period: { label: '1698–1706, 7 September 1950 – March 1951', from_year: 1698, to_year: 1951 } });
 
   // edited: the artist removed → the derived edge goes with it
   await userA.goto('/artworks/test-phase-palace');
