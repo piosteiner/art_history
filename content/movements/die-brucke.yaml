@@ -1,16 +1,19 @@
 public_id: 103112
 name: Die Brücke
+names: [The Bridge]
 kind: movement
-period: 1905
+period: 1905/1913
 wikidata_id: Q152778
 metadata:
   sources: [Wikidata Q152778 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 63342-2
 sources:
   kind:
     - accessed: 2026-10-28
       property: P31
       wikidata: Q152778
   period:
-    - accessed: 2026-10-28
+    - accessed: 2026-10-30
       property: P580
       wikidata: Q152778

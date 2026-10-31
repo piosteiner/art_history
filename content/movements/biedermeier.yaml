@@ -1,5 +1,18 @@
 public_id: 101093
 name: Biedermeier
+names:
+  - lang: ja
+    role: translation
+    text: ビーダーマイヤー
+  - lang: zh
+    role: translation
+    text: 畢德麥雅
+  - lang: ko
+    role: translation
+    text: 비더마이어
+  - lang: ru
+    role: translation
+    text: Бидермейер
 kind: style
 period: 1820s–1850s
 wikidata_id: Q154432
@@ -14,6 +27,8 @@ relationships:
     to: place/germany
     period: 1820s–1850s
     sources: ["Getty Art & Architecture Thesaurus, “Biedermeier” (AAT 300021434): “a style of Central European arts prevalent from the 1820s to the 1850s”"]
+identifiers:
+  gnd: 4006499-2
 sources:
   kind:
     - accessed: 2026-10-18

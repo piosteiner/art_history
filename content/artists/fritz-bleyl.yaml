@@ -1,0 +1,25 @@
+public_id: 105618
+name: Fritz Bleyl
+given_name: Fritz
+family_name: Bleyl
+birth: 1880-10-08
+death: 1966-08-19
+wikidata_id: Q164124
+metadata:
+  sources: [Wikidata Q164124 (retrieved 2026-10-30)]
+relationships:
+  - type: founded
+    to: movement/die-brucke
+    sources:
+      - accessed: 2026-10-30
+        property: P112
+        wikidata: Q152778
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q164124
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q164124

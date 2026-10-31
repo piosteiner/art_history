@@ -1,0 +1,25 @@
+public_id: 105620
+name: Bydgoszcz
+names: [Bromberg, Bydgostia]
+kind: settlement
+parent: kuyavian-pomeranian-voivodeship
+country_code: PL
+location: [18, 53.11667]
+wikidata_id: Q41252
+metadata:
+  sources: [Wikidata Q41252 (retrieved 2026-10-30)]
+identifiers:
+  gnd: 4008333-0
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q41252
+  parent:
+    - accessed: 2026-10-30
+      property: P131
+      wikidata: Q41252
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q41252

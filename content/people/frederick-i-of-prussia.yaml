@@ -38,6 +38,13 @@ death: 1713-02-25
 wikidata_id: Q151826
 metadata:
   sources: [Wikidata Q151826 (retrieved 2026-10-30)]
+relationships:
+  - type: founded
+    to: institution/academy-of-arts-berlin
+    sources:
+      - accessed: 2026-10-30
+        property: P112
+        wikidata: Q414110
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Antoine_Pesne%3B_Frederik_I_von_Preu%C3%9Fen.jpg/1280px-Antoine_Pesne%3B_Frederik_I_von_Preu%C3%9Fen.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Antoine_Pesne;_Frederik_I_von_Preu%C3%9Fen.jpg

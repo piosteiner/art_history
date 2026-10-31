@@ -1,0 +1,72 @@
+public_id: 105617
+name: Josef Block
+given_name: Josef
+family_name: Block
+names: [Joseph Block, Josef Berthold Block]
+birth: 1863-11-27
+death: 1943-12-20
+wikidata_id: Q572163
+metadata:
+  sources: [Wikidata Q572163 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/german-reich
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q572163
+  - type: born_in
+    to: place/bierutow
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q572163
+  - type: died_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q572163
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-10-30
+        property: P937
+        wikidata: Q572163
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-10-30
+        property: P69
+        wikidata: Q572163
+  - type: member_of
+    to: institution/munchener-secession
+    period: 1893
+    period_label: from 1893
+    sources:
+      - accessed: 2026-10-30
+        property: P463
+        wikidata: Q572163
+  - type: founded
+    to: movement/berlin-secession
+    sources:
+      - accessed: 2026-10-30
+        property: P112
+        wikidata: Q700347
+identifiers:
+  dome: "437"
+  gnd: "132352109"
+  idref: "148635385"
+  lc: no2011029357
+  rkd: "121096"
+  ulan: "500177420"
+  viaf: "62706515"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q572163
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q572163

@@ -1,0 +1,25 @@
+public_id: 105619
+name: Erich Heckel
+given_name: Erich
+family_name: Heckel
+birth: 1883-07-31
+death: 1970-01-27
+wikidata_id: Q156700
+metadata:
+  sources: [Wikidata Q156700 (retrieved 2026-10-30)]
+relationships:
+  - type: founded
+    to: movement/die-brucke
+    sources:
+      - accessed: 2026-10-30
+        property: P112
+        wikidata: Q152778
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q156700
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q156700

@@ -1,7 +1,10 @@
 public_id: 101566
-name: Munich Secession
+name_lang: de
+name: Münchener Secession
 names:
-  - Münchener Secession
+  - lang: en
+    role: alternative
+    text: Munich Secession
   - lang: fr
     role: translation
     text: Sécession de Munich

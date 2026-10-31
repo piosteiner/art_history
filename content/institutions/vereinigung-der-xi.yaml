@@ -1,0 +1,33 @@
+public_id: 105621
+name: Vereinigung der XI
+names:
+  - lang: fr
+    role: translation
+    text: Association des XI
+  - lang: es
+    role: translation
+    text: Grupo de los XI
+  - lang: ja
+    role: translation
+    text: 11人協会
+kind: art society
+founded: 1892-02-05
+dissolved: 1898-05-02
+wikidata_id: Q1239658
+metadata:
+  sources: [Wikidata Q1239658 (retrieved 2026-10-30)]
+identifiers:
+  gnd: "1086733282"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q1239658
+  founded:
+    - accessed: 2026-10-30
+      property: P571
+      wikidata: Q1239658
+  dissolved:
+    - accessed: 2026-10-30
+      property: P576
+      wikidata: Q1239658

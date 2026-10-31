@@ -35,6 +35,13 @@ death: 1976-08-10
 wikidata_id: Q161143
 metadata:
   sources: [Wikidata Q161143 (retrieved 2026-10-20)]
+relationships:
+  - type: founded
+    to: movement/die-brucke
+    sources:
+      - accessed: 2026-10-30
+        property: P112
+        wikidata: Q152778
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/f/f7/Karl_Schmidt_Rottluff.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Karl_Schmidt_Rottluff.jpg

@@ -65,6 +65,12 @@ relationships:
       - accessed: 2026-10-28
         property: P135
         wikidata: Q229272
+  - type: founded
+    to: movement/die-brucke
+    sources:
+      - accessed: 2026-10-30
+        property: P112
+        wikidata: Q152778
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Ernst_Ludwig_Kirchner_-_Selbstportr%C3%A4t_in_der_Atelierwohnung_in_Berlin-Friedenau_%281913-15%29.jpg/1280px-Ernst_Ludwig_Kirchner_-_Selbstportr%C3%A4t_in_der_Atelierwohnung_in_Berlin-Friedenau_%281913-15%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Ernst_Ludwig_Kirchner_-_Selbstportr%C3%A4t_in_der_Atelierwohnung_in_Berlin-Friedenau_(1913-15).jpg

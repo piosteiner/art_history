@@ -29,6 +29,12 @@ wikidata_id: Q158062
 metadata:
   sources: [Wikidata Q158062 (retrieved 2026-10-27)]
 relationships:
+  - type: founded
+    to: movement/berlin-secession
+    sources:
+      - accessed: 2026-10-30
+        property: P112
+        wikidata: Q700347
   - type: relative_of
     to: person/adolph-von-liebermann
     label: uncle of Max Liebermann (brother of his father Louis)

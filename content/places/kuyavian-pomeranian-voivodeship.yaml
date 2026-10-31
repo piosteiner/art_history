@@ -1,0 +1,28 @@
+public_id: 105623
+name: Kuyavian-Pomeranian Voivodeship
+names:
+  - lang: de
+    role: translation
+    text: Woiwodschaft Kujawien-Pommern
+kind: site
+parent: poland
+country_code: PL
+location: [18.48333, 53.06667]
+wikidata_id: Q54153
+metadata:
+  sources: [Wikidata Q54153 (retrieved 2026-10-30)]
+identifiers:
+  gnd: 4596758-1
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q54153
+  parent:
+    - accessed: 2026-10-30
+      property: P131
+      wikidata: Q54153
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q54153

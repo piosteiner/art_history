@@ -1,0 +1,87 @@
+public_id: 105616
+name: Walter Leistikow
+given_name: Walter
+family_name: Leistikow
+names: [Falter Leistikow, Walter Rudolf Leistikow]
+birth: 1865-10-25
+death: 1908-07-24
+wikidata_id: Q573668
+metadata:
+  sources: [Wikidata Q573668 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-prussia
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q573668
+  - type: born_in
+    to: place/bydgoszcz
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q573668
+  - type: died_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q573668
+  - type: studied_at
+    to: institution/academy-of-arts-berlin
+    period: 1883
+    period_label: from 1883
+    sources:
+      - accessed: 2026-10-30
+        property: P69
+        wikidata: Q573668
+  - type: member_of
+    to: institution/vereinigung-der-xi
+    period: 1892/1898
+    sources:
+      - accessed: 2026-10-30
+        property: P463
+        wikidata: Q573668
+  - type: member_of
+    to: movement/berlin-secession
+    period: 1899
+    period_label: from 1899
+    sources:
+      - accessed: 2026-10-30
+        property: P463
+        wikidata: Q573668
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-10-30
+        property: P135
+        wikidata: Q573668
+  - type: founded
+    to: movement/berlin-secession
+    sources:
+      - accessed: 2026-10-30
+        property: P112
+        wikidata: Q700347
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/64/Walter_Leistikow.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Walter_Leistikow.jpg
+    license: Public domain
+    credit: Wilhelm Fechner
+identifiers:
+  bnf: 12165555q
+  dome: "487"
+  gnd: "118727303"
+  idref: "130602493"
+  lc: nr90000770
+  rkd: "49176"
+  ulan: "500010320"
+  viaf: "37711346"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q573668
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q573668

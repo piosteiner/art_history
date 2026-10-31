@@ -1,0 +1,45 @@
+public_id: 105622
+name: Academy of Arts, Berlin
+names: [AdK, Academy of Arts in Berlin, Berliner Akademie der Künste]
+kind: museum
+founded: 1993-10-01
+place: berlin
+location: [13.37944, 52.515]
+address: Pariser Platz 4, 10117 Berlin
+website_url: https://adk.de
+wikidata_id: Q414110
+metadata:
+  sources: [Wikidata Q414110 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Akademie_der_k%C3%BCnste_berlin.JPG/1280px-Akademie_der_k%C3%BCnste_berlin.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Akademie_der_k%C3%BCnste_berlin.JPG
+    license: CC BY-SA 3.0
+    credit: De-okin (talk) 05:44, 31 July 2008 (UTC)
+identifiers:
+  bnf: "118729154"
+  gnd: 2015876-2
+  idref: "026490692"
+  lc: n80020529
+  ulan: "500290978"
+  viaf: "147315729"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q414110
+  place:
+    - accessed: 2026-10-30
+      property: P131
+      wikidata: Q414110
+  address:
+    - accessed: 2026-10-30
+      property: P6375
+      wikidata: Q414110
+  founded:
+    - accessed: 2026-10-30
+      property: P571
+      wikidata: Q414110
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q414110
