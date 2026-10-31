@@ -18,6 +18,7 @@ const metagrid = require('./metagrid');
 const japansearch = require('./japansearch');
 const arco = require('./arco');
 const colbase = require('./colbase');
+const lookups = require('./lookups');
 const collab = require('./collab');
 const citations = require('./citations');
 const { fieldRow, suggestionRow, imageChoice } = require('./wikidata-ui');
@@ -123,6 +124,7 @@ function page(t, e, data) {
     <h1>Enrich ${e.name}</h1>
     ${types && !types.includes(t.type) ? typeWarning(t, types, qid, e) : ''}
     <ul class="enrich-sources">${['wikidata', ...AUTH].map((c) => sourceLine(t, e, c, sources[c]))}</ul>
+    ${lookups.section(t, e)}
     ${!wd && !auth.length && !data.japan && !data.arco && !data.colbase && !data.bunka && !(data.metagrid && (data.metagrid.exact || (data.metagrid.candidates || []).length))
       ? html`<p class="flash warn">No source to compare with yet — link the entry on Wikidata or add a GND / SIKART number first.</p>` : html`
     <p class="muted small">One review for every source. Taken values are cited with their source — a value several sources agree on, with each of

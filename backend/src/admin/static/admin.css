@@ -624,3 +624,7 @@ button.theme-toggle:hover { color: var(--fg); border-color: var(--accent); }
 .feedback-actions { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }
 .ac-item.ac-new b { color: var(--accent); } .ac-item.ac-new { border-top: 1px dashed var(--line); }
 .ac-item.ac-cited { opacity: .5; cursor: not-allowed; } .cite-chip.cite-chip-used { opacity: .5; cursor: default; }
+
+/* Enrich: "Search elsewhere" — sites opened with the name searched (lookups.js) */
+.lookups { margin: .4rem 0 1rem; line-height: 2.1; }
+.lookups a.button.small { padding: .2rem .65rem; font-size: .85rem; white-space: nowrap; }

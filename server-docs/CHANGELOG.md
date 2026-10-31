@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-31
 
+### Enrich: "Search elsewhere" buttons
+- **What:** on every Enrich page, buttons that open sites we may not read automatically in the editor's own browser,
+  with the entry's name searched (`src/admin/lookups.js`, by type): Wildenstein Plattner Institute (artworks, artists,
+  people — its terms forbid robots), Getty ULAN (artists, people, institutions — its API refuses us), Europeana,
+  Paris Musées, DigitaltMuseum, Smithsonian (artworks, artists — no API keys). The server fetches nothing. Proveana
+  and DoME can't take a search in the address and are left out. e2e `lookups.spec.js`.
+- **Why:** owner, 2026-10-31 ("a button that opens the site with a search for the entry"). **Revert:** git revert.
+
 ### Wildenstein Plattner Institute: reference record + catalogues as sources (migration 181); Vollard photo credit
 - **What:** authority `wpi` for artworks (Wikidata P14562, link `digitalprojects.wpi.art/artworks/{id}`; a pasted
   catalogue link gives the number, `numberFrom`), so the Wikidata comparison offers it; sources
