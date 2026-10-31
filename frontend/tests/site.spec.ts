@@ -2573,6 +2573,11 @@ test('periods: prehistory reaching back 100,000 years does not squeeze the timel
   const ticks = await page.locator('.tick-label').allTextContents();
   // not the deep-time scale at first (ticks of 10,000 years and more)
   expect(ticks.some((t) => /^\d{5,} BCE$/.test(t))).toBe(false);
+  // it opens on 500 to today (owner 2026-10-31): no BCE ticks; ◀ moves to earlier periods
+  expect(ticks.some((t) => /BCE/.test(t))).toBe(false);
+  await expect(page.locator('.timeline-view')).toContainText(/showing 500–\d{4}/);
+  await page.click('button[data-zoom="pan-left"]');
+  await expect(page.locator('.timeline-view')).not.toContainText('showing 500–');
 });
 
 test('periods: a work\'s dot shows its preview; clicked again it opens the work in a new tab, the periods stay', async ({ page, context }) => {

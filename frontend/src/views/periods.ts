@@ -281,8 +281,9 @@ export function periodsPage(main: HTMLElement, params: URLSearchParams) {
     }
 
     box.innerHTML = '';
-    // prehistory reaches back 100,000 years: the timeline opens on the last millennia itself (recentView in timeline.ts)
-    const timeline = renderTimeline(box, rows(), { keepOrder: true, initialWindow: windowSel, onWindow: showWindow, onDot: workDot });
+    // prehistory reaches back 100,000 years and Jōmon alone over 10,000: the timeline opens on 500 to today (owner
+    // 2026-10-31) — ◀, − or Fit show the earlier periods (recentView in timeline.ts)
+    const timeline = renderTimeline(box, rows(), { keepOrder: true, initialWindow: windowSel, onWindow: showWindow, onDot: workDot, openFrom: 500 });
     if (windowSel) showWindow(windowSel);
   }).catch((err) => { if (current()) showError(box, err); });
 }

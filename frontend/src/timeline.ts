@@ -45,6 +45,8 @@ export interface TimelineOptions {
   keepOrder?: boolean;
   /** The time axis' fixed extent instead of the rows' (e.g. so a filtered timeline keeps its scale). */
   extent?: { from: number; to: number };
+  /** Open on this year to today when the rows start earlier (the periods: 500) — ◀ and − show the rest. */
+  openFrom?: number;
 }
 
 const NOW = new Date().getFullYear();
@@ -109,9 +111,11 @@ function layout(rows: TimelineRow[], keepOrder = false, extent?: { from: number;
 /**
  * Prehistory reaches back 100,000 years (API 174): when the rows start before 5000 BCE the timeline opens on what
  * starts after it (from its earliest century to today) — zooming out shows it all. Null when there is nothing so deep.
+ * With `openFrom` (a year): rows starting earlier open on that year to today.
  */
-export function recentView(rows: TimelineRow[]): { from: number; to: number } | null {
+export function recentView(rows: TimelineRow[], openFrom?: number): { from: number; to: number } | null {
   const starts = rows.map((r) => r.from?.from_year ?? r.to?.from_year ?? r.to?.to_year).filter((y): y is number => y != null);
+  if (openFrom != null) return starts.length && Math.min(...starts) < openFrom ? { from: openFrom, to: new Date().getFullYear() } : null;
   if (!starts.length || Math.min(...starts) >= -5000) return null;
   const recent = starts.filter((y) => y >= -5000);
   return recent.length ? { from: Math.floor(Math.min(...recent) / 100) * 100, to: new Date().getFullYear() } : null;
@@ -362,7 +366,7 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
     setView(view.from, view.to);
     defaultView = { from: v0, to: v1 };
   };
-  openOn(opts.initialView ?? (opts.initialWindow || opts.extent ? null : recentView(rows)));
+  openOn(opts.initialView ?? (opts.initialWindow || opts.extent ? null : recentView(rows, opts.openFrom)));
   setWindow(windowSel, false);
   const ro = new ResizeObserver(() => draw());
   ro.observe(container);
@@ -377,7 +381,7 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
       ({ min, max, placed, height } = layout(next, opts.keepOrder, opts.extent));
       if (zoomed) { setView(v0, v1); return; }
       setView(min, max);
-      openOn(opts.extent ? null : recentView(next));   // not zoomed by the visitor: the new rows' own default
+      openOn(opts.extent ? null : recentView(next, opts.openFrom));   // not zoomed by the visitor: the new rows' own default
     },
     destroy: () => ro.disconnect(),
   };
