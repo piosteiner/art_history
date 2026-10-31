@@ -17,7 +17,9 @@ Format: date — what — why — how to revert.
   `slugify`/`freeSlug` once (autocreate.js, used by wikidata.js).
 - **Admin static files:** asked for under their current fingerprint (`?v=`) cached a year, `immutable`; others an hour
   as before (`src/admin/index.js`, e2e editor.spec).
-- **Updates:** maplibre-gl 6.11 → 6.16, @playwright/test 1.63 → 1.64 (browser chromium-headless-shell v1248).
+- **Updates:** maplibre-gl 6.11 → 6.16, @playwright/test 1.63 → 1.64 — browsers installed by hand: `npx playwright
+  install chromium firefox` (backend; the sortable test runs in Firefox too; deploy.sh doesn't install browsers — a first
+  deploy failed on the missing Firefox, production untouched).
   `npm audit` (frontend): 3 moderate in ts-json-schema-generator's glob/minimatch — a test-only tool, already latest.
 - **Site:** the start page's timeline opened on 90,000 BCE since 174 (the Korean Palaeolithic got years): the timeline
   itself now opens on the last millennia when its rows reach before 5000 BCE (`recentView()` in `timeline.ts`, the
