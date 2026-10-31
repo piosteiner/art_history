@@ -1,0 +1,72 @@
+# Art history TEST environment (scripts/test-env.sh, pm2 arthistory-test on 127.0.0.1:3010, cluster 18/test :5433).
+# Reset nightly to production's data. Documented in server-docs/CHANGELOG.md (2026-10-31). Not indexed by search engines.
+
+# the site: a build of frontend/ against the test API
+server {
+    listen 80;
+    listen [::]:80;
+    server_name test.arthistory.piogino.ch;
+    root /var/www/arthistory-test/site;
+    access_log /var/log/nginx/arthistory-test-site.access.log;
+    error_log  /var/log/nginx/arthistory-test-site.error.log warn;
+    add_header X-Robots-Tag "noindex, nofollow" always;
+    gzip_vary on;
+    gzip_types text/css application/javascript application/json image/svg+xml;
+    location /assets/ { expires 30d; add_header Cache-Control "public, immutable"; add_header X-Robots-Tag "noindex, nofollow" always; }
+    # one page app: every address is index.html
+    location / { try_files $uri /index.html; }
+}
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name api.test.arthistory.piogino.ch;
+    client_max_body_size 1M;
+    access_log /var/log/nginx/arthistory-test-api.access.log;
+    error_log  /var/log/nginx/arthistory-test-api.error.log warn;
+    add_header X-Robots-Tag "noindex, nofollow" always;
+    gzip_proxied any;
+    gzip_vary on;
+    gzip_types application/json application/geo+json;
+    location /v1/ {
+        proxy_pass http://127.0.0.1:3010;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+    location / { return 404; }
+}
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name admin.test.arthistory.piogino.ch;
+    client_max_body_size 10M;
+    # failed logins (401 on POST /login) → fail2ban jail arthistory-admin, like the real CMS
+    access_log /var/log/nginx/arthistory-test-admin.access.log;
+    error_log  /var/log/nginx/arthistory-test-admin.error.log warn;
+    gzip_proxied any;
+    gzip_vary on;
+    gzip_types text/css application/javascript text/javascript application/json;
+    location = /live {
+        proxy_pass http://127.0.0.1:3010;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_read_timeout 1h;
+    }
+    location / {
+        proxy_pass http://127.0.0.1:3010;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}

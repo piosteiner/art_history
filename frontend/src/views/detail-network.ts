@@ -6,7 +6,7 @@ import { findAll } from '../search';
 import type { Entity, NetRef, NetworkPath, Plural, SharedHand, Version } from '../types';
 import { showError } from './common';
 
-const SITE = 'https://arthistory.piogino.ch';
+const SITE = (import.meta.env.VITE_SITE as string | undefined) || 'https://arthistory.piogino.ch';
 const SHOWN = 8; // works per line; the rest behind "and N more"
 
 /** "A, B, C and 12 more" — the rest unfolds. */

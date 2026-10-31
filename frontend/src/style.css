@@ -1079,3 +1079,7 @@ body.fb-picking, body.fb-picking * { cursor: crosshair !important; }
 .phase-text { margin-top: .3rem; }
 .phase-text p { margin: .3rem 0; }
 @media (max-width: 560px) { .phase { grid-template-columns: 1fr; } }
+
+/* The test environment's notice (VITE_TEST_ENV, main.ts) */
+.test-env { background: #fff3c4; color: #5a4300; border-bottom: 1px solid #e0c766; padding: .45rem 1rem; font-size: .9rem; text-align: center; }
+.test-env a { color: inherit; text-decoration: underline; }

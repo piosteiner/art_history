@@ -1,0 +1,10 @@
+[Unit]
+Description=Nightly reset of the art history test environment
+
+[Timer]
+# after the backup (03:30) and the content export (04:00)
+OnCalendar=*-*-* 04:30:00 UTC
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -54,3 +54,14 @@ for i in 1 2 3 4 5 6 7 8 9 10; do
   curl -fsS http://127.0.0.1:3004/v1/health -H 'Host: api.arthistory.piogino.ch' >/dev/null 2>&1 && break
 done
 curl -fsS http://127.0.0.1:3004/v1/health -H 'Host: api.arthistory.piogino.ch' && echo "  ✓ deployed $(git log -1 --format='%h %s')"
+
+# The test environment (scripts/test-env.sh), where set up: the same code — its database migrated, its process
+# reloaded, its site rebuilt. A failure there doesn't undo the deploy; the nightly reset starts it over anyway.
+if pm2 describe arthistory-test >/dev/null 2>&1; then
+  if ENV_FILE="$HOME/.config/arthistory/test.env" DB_PORT=5433 npm run --silent migrate >/dev/null \
+     && pm2 reload ecosystem.test.config.js --update-env >/dev/null && ../scripts/test-env.sh --site-only; then
+    echo "  ✓ test environment updated"
+  else
+    echo "! test environment not updated — run scripts/test-env.sh"
+  fi
+fi

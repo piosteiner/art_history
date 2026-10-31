@@ -1,0 +1,13 @@
+# Art history test environment: nightly reset to production's data (scripts/test-env.sh; server-docs/CHANGELOG.md 2026-10-31)
+[Unit]
+Description=Art history test environment reset (production data → test cluster, site rebuilt)
+After=postgresql.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+Environment=HOME=/home/ubuntu PM2_HOME=/home/ubuntu/.pm2
+ExecStart=/var/www/arthistory/scripts/test-env.sh
+Nice=10
+IOSchedulingClass=idle

@@ -25,6 +25,9 @@ module.exports = {
   port: Number(process.env.PORT) || 3004,
   corsOrigin: process.env.CORS_ORIGIN || 'https://arthistory.piogino.ch',
   apiHost: process.env.API_HOST || 'api.arthistory.piogino.ch',
+  // the test environment for visitors (TEST_ENV=1, its own database cluster, reset nightly — server-docs/README.md)
+  testEnv: process.env.TEST_ENV === '1',
+  testSite: process.env.TEST_SITE || 'https://test.arthistory.piogino.ch',
   adminHost: process.env.ADMIN_HOST || (env === 'production' ? 'admin.arthistory.piogino.ch' : 'admin.localhost'),
   db: {
     name: process.env.DB_NAME || 'arthistory',

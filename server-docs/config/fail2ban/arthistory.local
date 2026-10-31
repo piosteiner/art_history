@@ -7,6 +7,7 @@ enabled  = true
 port     = http,https
 filter   = arthistory-admin
 logpath  = /var/log/nginx/arthistory-admin.access.log
+           /var/log/nginx/arthistory-test-admin.access.log
 maxretry = 5
 findtime = 10m
 bantime  = 1h

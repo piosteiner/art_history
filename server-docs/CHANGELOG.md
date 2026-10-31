@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-31
 
+### Test environment for visitors: test.arthistory.piogino.ch (site), admin.test… (CMS), api.test… — reset nightly
+- **What:** a second instance of the same code for people who want to try the project. pm2 `arthistory-test`
+  (`backend/ecosystem.test.config.js`, :3010, `TEST_ENV=1` → a yellow notice in the CMS) on a new PostgreSQL cluster
+  `18/test` (:5433, own roles `arthistory_owner/admin/api` with new passwords in `~/.config/arthistory/test.env` +
+  `~/.pgpass`; no API keys). `scripts/test-env.sh`: production dumped and restored there, private tables emptied
+  (sessions, owner's drafts and working copies, feedback, download log, editor scopes), production's accounts locked,
+  shared login `test`, site built from `frontend/` with `VITE_API_BASE` / `VITE_SITE` / `VITE_TEST_ENV` (new in
+  `api.ts`, `detail-network.ts`, `main.ts`; defaults unchanged) into `/var/www/arthistory-test/site`. Nightly 04:30
+  UTC by `arthistory-test-reset.timer`; `deploy.sh` also migrates/reloads/rebuilds it. nginx site `arthistory-test`
+  (HTTP until the DNS records exist, then certbot), `noindex`; fail2ban jail `arthistory-admin` watches the test CMS's
+  log too. Configs copied to `server-docs/config/`. Unit test `test/test-env.test.js`.
+- **Why:** owner, 2026-10-31 — a test environment for third parties; nightly reset, a copy of the site, one shared
+  login (owner's choices). A separate cluster instead of a database in the main one: the test process holds no
+  credentials that work on production. **Revert:** server-docs/README.md → Test environment → Remove.
+
 ### Enrich: "Search elsewhere" buttons
 - **What:** on every Enrich page, buttons that open sites we may not read automatically in the editor's own browser,
   with the entry's name searched (`src/admin/lookups.js`, by type): Wildenstein Plattner Institute (artworks, artists,

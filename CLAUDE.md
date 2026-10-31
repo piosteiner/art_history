@@ -10,7 +10,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 2. **Document every server change** in `server-docs/CHANGELOG.md` (newest first: what / why / how to revert) and keep
    `server-docs/README.md` (inventory) current — then `scripts/save.sh "message"` (commit + pull --rebase + push).
 3. Other projects on this server (MySQL/calorie-tracker, adenai-admin, quiz-platform, obs-remote, gif-converter) — don't touch
-   unless asked; ports 3000–3003 and 5000 are taken.
+   unless asked; ports 3000–3003 and 5000 are taken (3010 + PostgreSQL :5433 = the art history test environment, `scripts/test-env.sh`).
 4. Owner wants to learn PostgreSQL: prefer idiomatic Postgres/PostGIS (ranges, recursive CTEs, JSONB, GiST) and explain choices.
 
 ## Layout
@@ -22,6 +22,8 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 - `health.html` — frontend CORS round-trip test page (now also in `frontend/public/`, served from there once Pages builds via Actions).
 
 ## Workflow
+- Test environment for visitors (2026-10-31): test.arthistory.piogino.ch / admin.test… / api.test…, pm2 `arthistory-test` on
+  its own cluster 18/test :5433, reset nightly from production (`scripts/test-env.sh`; server-docs/README.md → Test environment).
 - Dev: `cd backend && npm run dev` (port 3005, DB `arthistory_dev`). Never test against the live process.
 - Content: the **database is the source of truth** (admin panel, audit_log history). `npm run export` → `content/` YAML
   snapshot to commit; `npm run import` only for bulk loads (export first — import overwrites; `-- --dry-run --diff` shows what would change). Deploys don't import.

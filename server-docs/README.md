@@ -15,6 +15,7 @@ Every change to this server is recorded in [CHANGELOG.md](CHANGELOG.md) (newest 
 | obs-remote-media-controller (pm2: obs-remote-backend) | /var/www/obs-remote-media-controller/backend | Node/Express+socket.io, pm2 | 3003 | api.piogino.ch (sub-path) | SQLite |
 | file-converter (systemd: file-converter-api) | /var/www/file-converter/server | Flask/Gunicorn, systemd | 5000 | api.piogino.ch (frontend: converter.piogino.ch, GitHub Pages) | files |
 | arthistory (pm2: arthistory-api) | /var/www/arthistory/backend | Node/Express, pm2 | 3004 | api.arthistory / admin.arthistory.piogino.ch | PostgreSQL `arthistory` (+ `arthistory_dev`; tests: `arthistory_test`, `_1`, `_2` on :3006/:3008/:3009 while they run) |
+| arthistory test environment (pm2: arthistory-test) | /var/www/arthistory/backend (same code) + site in /var/www/arthistory-test/site | Node/Express, pm2 | 3010 | test.arthistory / admin.test.arthistory / api.test.arthistory.piogino.ch | PostgreSQL cluster `18/test` (:5433) `arthistory`, reset nightly — see "Test environment" |
 
 Shared: nginx (reverse proxy, certbot TLS; art history site config copied in `config/nginx/`), pm2 as user `ubuntu` (pm2-ubuntu.service). Both hostnames gzip JSON (`gzip_proxied any`).
 Databases (both localhost only): MySQL 8 (:3306, calorie-tracker) · PostgreSQL 18 + PostGIS 3.6 (:5432, art history; tuning in `config/postgresql/`).
@@ -53,6 +54,33 @@ Check: `sudo fail2ban-client status arthistory-admin` · unban: `sudo fail2ban-c
 | arthistory.piogino.ch | CNAME | piosteiner.github.io (frontend, GitHub Pages) |
 | api.arthistory.piogino.ch | A | 83.228.207.199 |
 | admin.arthistory.piogino.ch | A | 83.228.207.199 |
+| test.arthistory.piogino.ch | A | 83.228.207.199 (test environment — to be added by the owner) |
+| admin.test.arthistory.piogino.ch | A | 83.228.207.199 (test environment — to be added by the owner) |
+| api.test.arthistory.piogino.ch | A | 83.228.207.199 (test environment — to be added by the owner) |
+
+## Test environment (for visitors) — set up 2026-10-31
+The same CMS and site as production for people who want to try the project, reset every night:
+- **Site** https://test.arthistory.piogino.ch (a build of `frontend/` with `VITE_API_BASE`, `VITE_SITE`, `VITE_TEST_ENV=1`,
+  in `/var/www/arthistory-test/site`; `noindex`), **CMS** https://admin.test.arthistory.piogino.ch (one shared login
+  `test`, password `TEST_LOGIN_PASSWORD` in `~/.config/arthistory/test.env`; a yellow notice on every page —
+  `config.testEnv`), **API** https://api.test.arthistory.piogino.ch. nginx: `sites-available/arthistory-test` (copy in
+  `config/nginx/`); failed logins count for the fail2ban jail `arthistory-admin` (second logpath).
+- **Isolated**: pm2 `arthistory-test` (`backend/ecosystem.test.config.js`, 127.0.0.1:3010) uses its own PostgreSQL
+  **cluster** `18/test` on :5433 (`conf.d/arthistory-test.conf`: 64 MB shared buffers) with its own roles and passwords
+  (`test.env`, `~/.pgpass`) — it has no credentials for production's cluster, and no API keys of outside services.
+- **Reset** nightly 04:30 UTC, systemd `arthistory-test-reset.timer` → `scripts/test-env.sh` (≈ 20 s): production
+  dumped, restored into a fresh database, then emptied of what isn't for visitors — sessions, the owner's drafts and
+  working copies (`admin_drafts`, `page_drafts`, `form_drafts`, `live_docs`), visitors' feedback, `page_downloads`,
+  `editor_scopes`; production's accounts can't log in (`password_hash = '!locked'`; the history still names them);
+  the login `test` set; the process restarted; the site rebuilt. Unpublished entries and drafts of the changelog and
+  roadmap stay visible in the test CMS (they are in the data). `deploy.sh` migrates the test database, reloads the
+  process and rebuilds the site after production (`--site-only`).
+- Run now: `sudo systemctl start arthistory-test-reset` (or `scripts/test-env.sh`) · logs: `journalctl -u
+  arthistory-test-reset -n 20`, `pm2 logs arthistory-test` · new shared password: edit `TEST_LOGIN_PASSWORD` in
+  `test.env`, then reset (or `echo "$PW" | ENV_FILE=~/.config/arthistory/test.env DB_PORT=5433 node scripts/admin-user.js test`).
+- Remove: `sudo systemctl disable --now arthistory-test-reset.timer`, `pm2 delete arthistory-test && pm2 save`,
+  `sudo pg_dropcluster 18 test --stop`, remove the nginx site (+ certificates), the fail2ban logpath, `/var/www/arthistory-test`,
+  the :5433 lines in `~/.pgpass` and `test.env`.
 
 ## Secrets
 Never in any git repo. Art history project: `~/.config/arthistory/*.env` + `backup-passphrase` (700/600). See CHANGELOG 2026-09-23 "Secrets policy".

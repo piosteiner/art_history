@@ -628,3 +628,7 @@ button.theme-toggle:hover { color: var(--fg); border-color: var(--accent); }
 /* Enrich: "Search elsewhere" — sites opened with the name searched (lookups.js) */
 .lookups { margin: .4rem 0 1rem; line-height: 2.1; }
 .lookups a.button.small { padding: .2rem .65rem; font-size: .85rem; white-space: nowrap; }
+
+/* The test environment's notice (config.testEnv) */
+.test-env { background: #fff3c4; color: #5a4300; border-bottom: 1px solid #e0c766; padding: .45rem 1rem; font-size: .9rem; text-align: center; }
+.test-env a { color: inherit; text-decoration: underline; }

@@ -22,6 +22,10 @@ const NAV: { title: string; plurals: Plural[] }[] = [
 ];
 
 const main = document.getElementById('app')!;
+// The test environment (a build with VITE_TEST_ENV=1, server-docs/README.md): a notice above the header
+if (import.meta.env.VITE_TEST_ENV === '1') {
+  document.body.insertAdjacentHTML('afterbegin', '<div class="test-env" role="note"><b>Test environment</b> — changes made here are reset every night. The real site is <a href="https://arthistory.piogino.ch">arthistory.piogino.ch</a>.</div>');
+}
 const nav = document.getElementById('nav')!;
 render(nav, html`<span class="nav-group"><a href="/">Explore</a><a href="/graph">Network</a><a href="/periods">Periods</a></span>
   ${NAV.map((g) => html`<span class="nav-group" title="${g.title}">${g.plurals.map((p) => html`<a href="/${p}">${PLURAL_LABEL[p]}</a>`)}</span>`)}`);
