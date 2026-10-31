@@ -13,7 +13,7 @@ Format: date — what — why — how to revert.
   shared login `test`, site built from `frontend/` with `VITE_API_BASE` / `VITE_SITE` / `VITE_TEST_ENV` (new in
   `api.ts`, `detail-network.ts`, `main.ts`; defaults unchanged) into `/var/www/arthistory-test/site`. Nightly 04:30
   UTC by `arthistory-test-reset.timer`; `deploy.sh` also migrates/reloads/rebuilds it. nginx site `arthistory-test`
-  (HTTP until the DNS records exist, then certbot), `noindex`; fail2ban jail `arthistory-admin` watches the test CMS's
+  (DNS A records added by the owner; one certbot certificate for the three hosts, HTTP → HTTPS), `noindex`; fail2ban jail `arthistory-admin` watches the test CMS's
   log too. Configs copied to `server-docs/config/`. Unit test `test/test-env.test.js`.
 - **Why:** owner, 2026-10-31 — a test environment for third parties; nightly reset, a copy of the site, one shared
   login (owner's choices). A separate cluster instead of a database in the main one: the test process holds no

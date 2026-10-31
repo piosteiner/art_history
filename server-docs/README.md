@@ -54,9 +54,9 @@ Check: `sudo fail2ban-client status arthistory-admin` · unban: `sudo fail2ban-c
 | arthistory.piogino.ch | CNAME | piosteiner.github.io (frontend, GitHub Pages) |
 | api.arthistory.piogino.ch | A | 83.228.207.199 |
 | admin.arthistory.piogino.ch | A | 83.228.207.199 |
-| test.arthistory.piogino.ch | A | 83.228.207.199 (test environment — to be added by the owner) |
-| admin.test.arthistory.piogino.ch | A | 83.228.207.199 (test environment — to be added by the owner) |
-| api.test.arthistory.piogino.ch | A | 83.228.207.199 (test environment — to be added by the owner) |
+| test.arthistory.piogino.ch | A | 83.228.207.199 (test environment, 2026-10-31) |
+| admin.test.arthistory.piogino.ch | A | 83.228.207.199 (test environment, 2026-10-31) |
+| api.test.arthistory.piogino.ch | A | 83.228.207.199 (test environment, 2026-10-31) |
 
 ## Test environment (for visitors) — set up 2026-10-31
 The same CMS and site as production for people who want to try the project, reset every night:
@@ -64,7 +64,8 @@ The same CMS and site as production for people who want to try the project, rese
   in `/var/www/arthistory-test/site`; `noindex`), **CMS** https://admin.test.arthistory.piogino.ch (one shared login
   `test`, password `TEST_LOGIN_PASSWORD` in `~/.config/arthistory/test.env`; a yellow notice on every page —
   `config.testEnv`), **API** https://api.test.arthistory.piogino.ch. nginx: `sites-available/arthistory-test` (copy in
-  `config/nginx/`); failed logins count for the fail2ban jail `arthistory-admin` (second logpath).
+  `config/nginx/`), one certificate for the three hosts (certbot, renewed with the others); the site's map without a
+  MapTiler key (OpenFreeMap); failed logins count for the fail2ban jail `arthistory-admin` (second logpath).
 - **Isolated**: pm2 `arthistory-test` (`backend/ecosystem.test.config.js`, 127.0.0.1:3010) uses its own PostgreSQL
   **cluster** `18/test` on :5433 (`conf.d/arthistory-test.conf`: 64 MB shared buffers) with its own roles and passwords
   (`test.env`, `~/.pgpass`) — it has no credentials for production's cluster, and no API keys of outside services.
