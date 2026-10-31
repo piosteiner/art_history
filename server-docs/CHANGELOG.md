@@ -8,7 +8,8 @@ Format: date — what — why — how to revert.
 - **What:** on every Enrich page, buttons that open sites we may not read automatically in the editor's own browser,
   with the entry's name searched (`src/admin/lookups.js`, by type): Wildenstein Plattner Institute (artworks, artists,
   people — its terms forbid robots), Getty ULAN (artists, people, institutions — its API refuses us), Europeana,
-  Paris Musées, DigitaltMuseum, Smithsonian (artworks, artists — no API keys). The server fetches nothing. Proveana
+  Paris Musées, DigitaltMuseum, Smithsonian, Korea's e-museum (artworks, artists — no API keys; the e-museum with the
+  Korean name when the entry has one, address from the owner). The server fetches nothing. Proveana
   and DoME can't take a search in the address and are left out. e2e `lookups.spec.js`.
 - **Why:** owner, 2026-10-31 ("a button that opens the site with a search for the entry"). **Revert:** git revert.
 
