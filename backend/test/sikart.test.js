@@ -15,5 +15,7 @@ test('dates and places from the note', () => {
 test('the number from a SIKART link', () => {
   assert.strictEqual(numberFrom('sikart', 'https://recherche.sik-isea.ch/sik:person-4000055/in/sikart'), '4000055');
   assert.strictEqual(numberFrom('sikart', 'https://www.sikart.ch/KuenstlerInnen.aspx?id=4000055'), '4000055');
+  assert.strictEqual(numberFrom('wpi', 'https://digitalprojects.wpi.art/artworks/71610'), '71610');
+  assert.strictEqual(numberFrom('wpi', 'https://digitalprojects.wpi.art/artworks/71610/deux-tahitiennes-sur-la-plage'), '71610');
   assert.strictEqual(numberFrom('sikart', '4000055'), '4000055');
 });

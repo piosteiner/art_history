@@ -121,3 +121,19 @@ test('DoME (099): the artist number from a pasted DoME link, linked to the recor
   await expect(userA.locator('.flash.error')).toBeVisible();
   sql("DELETE FROM entry_identifiers WHERE authority = 'dome'");
 });
+
+test('WPI (181): a work\'s number in the Wildenstein Plattner Institute\'s catalogues, from a pasted link', async ({ userA }) => {
+  sql("DELETE FROM entry_identifiers WHERE authority = 'wpi'");
+  await userA.goto('/artworks/sunflowers-national-gallery/edit');
+  const section = userA.locator('#reference-records');
+  await section.locator('summary:has-text("+ Add a reference record")').click();
+  await section.locator('select[name=authority]').selectOption('wpi');
+  // the catalogue entry's address, also with something after the number
+  await section.locator('input[name=value]').fill('https://digitalprojects.wpi.art/artworks/71610/deux-tahitiennes-sur-la-plage');
+  await Promise.all([userA.waitForNavigation(), section.locator('button:has-text("Add")').click()]);
+  await expect(userA).toHaveURL(/done=id-added/);
+  await expect(section.locator('a[href="https://digitalprojects.wpi.art/artworks/71610"]')).toHaveText('71610 ↗');
+  // only for artworks (the catalogues themselves are sources to cite — the test database loads its own sources)
+  expect(sql("SELECT entity_types::text FROM authorities WHERE code = 'wpi'")).toBe('{artwork}');
+  sql("DELETE FROM entry_identifiers WHERE authority = 'wpi'");
+});

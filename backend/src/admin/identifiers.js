@@ -25,6 +25,7 @@ function numberFrom(code, text) {
   const last = u.pathname.split('/').filter(Boolean).pop() || '';
   if (code === 'gnd') return (/(?:^|[=:])nid=?([0-9X-]+)/i.exec(decodeURIComponent(q('query') || '')) || [])[1] || (u.hostname.endsWith('d-nb.info') || u.hostname.endsWith('lobid.org') ? last.replace(/\.json$/, '') : t);
   if (code === 'ulan') return q('subjectid') || (/(500\d{6})/.exec(t) || [])[1] || t;
+  if (code === 'wpi') return (/\/artworks\/(\d+)/.exec(u.pathname) || [])[1] || t;  // digitalprojects.wpi.art/artworks/71610[/…]
   if (code === 'sikart') return (/person-(\d+)/.exec(t) || [])[1] || q('id') || (/(\d{6,10})/.exec(t) || [])[1] || t;  // recherche.sik-isea.ch/sik:person-4000055/…
   return last || t;
 }

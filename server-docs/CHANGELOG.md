@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-31
 
+### Wildenstein Plattner Institute: reference record + catalogues as sources (migration 181); Vollard photo credit
+- **What:** authority `wpi` for artworks (Wikidata P14562, link `digitalprojects.wpi.art/artworks/{id}`; a pasted
+  catalogue link gives the number, `numberFrom`), so the Wikidata comparison offers it; sources
+  `wpi-gauguin-paintings-1891-1903` (Gauguin: Catalogue Raisonné of the Paintings, 1891–1903, WPI 2021, texts by
+  Richard R. Brettell) and `wpi-renoir`, cited by hand with the catalogue number as locator ("PGL0ZI (W434)"). The WPI
+  numbers of our two Gauguins that Wikidata knows added (Tahitian Women on the Beach 71610, La Barrière 76181). Not
+  built: reading the WPI's public API (`api.wpi.navigating.art/pub/artworks/{id}` + `/cataloguing` — provenance,
+  exhibitions, literature): its terms forbid automated access and reproduction without written permission (§7,
+  §9.1, §9.4). Credit of image 8098 (Vollard before Picasso's Evocación): unknown photographer, before 1910, after
+  "Ateliers d'artistes" vol. 4 p. 95 (RMN) — Commons has no author; two credits "Unknown authorUnknown author" fixed.
+- **Why:** owner, 2026-10-31. **Revert:** `DELETE FROM entry_identifiers WHERE authority = 'wpi'; DELETE FROM
+  authorities WHERE code = 'wpi'`; the sources via the admin.
+
 ### "Not connected to anything": every reference counts (migration 180) + 74 sourced relationships
 - **What:** 42 entries were "not connected to anything". 11 of them were referenced in ways the check missed, and
   `no_relationships` now counts these too: provenance steps of any role (event steps: transfer, claim) and co-owners,
