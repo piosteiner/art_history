@@ -2,6 +2,15 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-31
+
+### Site: an enlarged picture is centred from the first frame
+- **What:** `frontend/src/zoom.ts` places the picture again whenever its size or the frame's changes (ResizeObserver on
+  image and stage, before the browser paints) — not only on `load`. A large image (the Landauer Altar from the KHM)
+  showed its size and first rows long before it had loaded and sat at the frame's left edge until then; a window
+  resize recentres it too. Site test "centred as soon as its size is known".
+- **Why:** owner, 2026-10-31. **Revert:** `git revert`.
+
 ## 2026-10-30
 
 ### CMS: Wikidata comparison — a period of only its first day is "start only", not "more precise"

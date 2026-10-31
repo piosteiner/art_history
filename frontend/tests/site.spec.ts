@@ -147,6 +147,27 @@ test('enlarged portrait: the frame is the screen — zoomed in, the picture grow
   await expect(page.locator('dialog.lightbox')).toHaveCount(0);
 });
 
+test('enlarged image: centred as soon as its size is known, and again when the window changes', async ({ page }) => {
+  await page.route(/wikimedia\.org/, (r) => r.fulfill({ contentType: 'image/svg+xml', headers: { 'Access-Control-Allow-Origin': '*' },
+    body: '<svg xmlns="http://www.w3.org/2000/svg" width="500" height="1500"><rect width="500" height="1500" fill="#3a6"/></svg>' }));
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await page.click('.figure img');
+  const stage = page.locator('dialog.lightbox[open] .lightbox-stage');
+  const img = stage.locator('img');
+  await expect.poll(async () => (await img.boundingBox())?.height ?? 0).toBeGreaterThan(200);
+  const centred = async () => {
+    const f = (await stage.boundingBox())!;
+    const b = (await img.boundingBox())!;
+    return Math.abs(b.x + b.width / 2 - (f.x + f.width / 2));
+  };
+  // the picture's size changes without a new load (as while a large image is still arriving): centred at once
+  await img.evaluate((el) => { el.style.width = '120px'; el.style.height = 'auto'; });
+  await expect.poll(centred).toBeLessThan(2);
+  // the window narrows: centred in the new frame
+  await page.setViewportSize({ width: 900, height: 700 });
+  await expect.poll(centred).toBeLessThan(2);
+});
+
 test('enlarged image: the wheel zooms towards the pointer, dragging moves it, a click beside it closes', async ({ page }) => {
   // our own picture instead of Wikimedia's (a picture with a known size: throttled or placeholder images have none to zoom)
   await page.route(/wikimedia\.org/, (r) => r.fulfill({ contentType: 'image/svg+xml', headers: { 'Access-Control-Allow-Origin': '*' },

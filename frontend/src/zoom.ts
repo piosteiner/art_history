@@ -137,9 +137,15 @@ export function zoomable(stage: HTMLElement, img: HTMLImageElement, { near }: { 
   document.addEventListener('keydown', onKey);
   const place = () => { clamp(goal); Object.assign(now, goal); draw(); };
   img.addEventListener('load', place);
+  // placed again as soon as the picture's size is known — a large image shows its size and first rows long before it
+  // has loaded, and sat at the frame's left edge until then — and when the window changes size (before the browser paints)
+  const resized = new ResizeObserver(place);
+  resized.observe(img);
+  resized.observe(stage);
   place();
   return () => {
     cancelAnimationFrame(frame);
+    resized.disconnect();
     document.removeEventListener('keydown', onKey);
   };
 }
