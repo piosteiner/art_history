@@ -17,6 +17,8 @@ Format: date — what — why — how to revert.
   31 people, 9 institutions and 19 places from Wikidata (`from-wikidata.js`); 9 people and 3 dealers without an item
   (two candidates or none) by hand. Corrected: *Bâteaux* → *Bateaux*, the Monet image credited to Renoir,
   *Fleurs dans une coupe* 31 × 47.6 cm, c. 1899–1901 (Wikidata's 29 × 46, 1901 no longer cited).
+  The collection's steps: in Buenos Aires, then New York 7–18 November 2026 (Sotheby's viewing and sale) as a
+  further place — the map's last stop is New York (owner 2026-11-01).
 - **Wildenstein:** the placeholder "Wildenstein Index Number" (no author, no year → "Anon. o. J.") replaced by the
   catalogues themselves: Wildenstein 1996 and 1974–1991 (Monet; the Wikidata catalogue item Q3776395 moved to 1996),
   1964 and 2001 (Gauguin — the editions number differently: Carrière aux environs de Pontoise 1964 Nr. 72 = 2001
