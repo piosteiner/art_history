@@ -442,6 +442,22 @@ test('provenance map: a work back where it started — one marker says both, "st
   await expect(page.locator('.prov-start')).toHaveCount(0);
 });
 
+test('provenance map: a last step with a further place (Buenos Aires → New York) — only its last place is the end', async ({ page }) => {
+  await page.route(/\/v1\/map\/artworks\/[^/?]+(\?.*)?$/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    const stops = body.provenance.features.filter((f: { properties: { layer: string } }) => f.properties.layer === 'provenance_stop');
+    const last = stops[stops.length - 1];
+    const [lon, lat] = last.geometry.coordinates;
+    body.provenance.features.push({ ...last, geometry: { type: 'Point', coordinates: [lon + 20, lat - 10] },
+      properties: { ...last.properties, part: 1, place: { name: 'Test Further Place', slug: 'test-further-place' } } });
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto('/artworks/100501/der-wanderer-uber-dem-nebelmeer');
+  await expect(page.locator('.prov-end')).toHaveCount(1);
+  await expect(page.locator('.prov-end')).toHaveAttribute('aria-label', /Test Further Place/);
+});
+
 test('how are they connected (088): pick any entry, the shortest chain top to bottom', async ({ page }) => {
   await page.goto(IRENE);
   const box = page.locator('#connect');

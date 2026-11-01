@@ -209,6 +209,9 @@ export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceD
     const itEnds = it.ends ?? ends;
     const placed = provenanceStops(it.prov).map((f) => f.properties.step);
     const [firstStep, lastStep] = [Math.min(...placed), Math.max(...placed)];
+    // a step with further places (API 077) has a marker per place: the start is its first place, the end its last
+    const partsOf = (step: number) => provenanceStops(it.prov).filter((f) => f.properties.step === step).map((f) => f.properties.part ?? 0);
+    const [firstPart, lastPart] = [Math.min(...partsOf(firstStep)), Math.max(...partsOf(lastStep))];
     const places = new Map<string, Feature<PointGeometry, ProvenanceStopProps>[]>();
     for (const f of provenanceStops(it.prov)) {
       const key = f.geometry.coordinates.join(',');
@@ -224,7 +227,7 @@ export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceD
       el.className = `prov-stop${hollow ? ' hollow' : ''}${area ? ' area' : ''}`;
       el.style.setProperty('--pc', it.color);
       el.textContent = label;
-      const end = itEnds && placed.length > 1 ? endOf(steps, firstStep, lastStep, itEnds === 'gone') : null;
+      const end = itEnds && placed.length > 1 ? endOf(steps, [firstStep, firstPart], [lastStep, lastPart], itEnds === 'gone') : null;
       if (end) {
         el.classList.add(`prov-${end.kind}`);
         el.dataset.cap = end.text;  // drawn by CSS (::after): the marker's text stays its step numbers
@@ -255,9 +258,10 @@ export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceD
  * "today" when the last step is the provenance's last and still runs (and the work wasn't destroyed or lost — API
  * 103), else "last known place". Both in one marker — an artwork back where it started — say both: "start · today".
  */
-function endOf(steps: ProvenanceStopProps[], firstStep: number, lastStep: number, gone: boolean): { kind: 'start' | 'end'; text: string } | null {
-  const last = steps.find((s) => s.step === lastStep);
-  const start = steps.some((s) => s.step === firstStep) ? (firstStep === 1 ? 'start' : 'first known place') : null;
+function endOf(steps: ProvenanceStopProps[], [firstStep, firstPart]: [number, number], [lastStep, lastPart]: [number, number],
+  gone: boolean): { kind: 'start' | 'end'; text: string } | null {
+  const last = steps.find((s) => s.step === lastStep && (s.part ?? 0) === lastPart);
+  const start = steps.some((s) => s.step === firstStep && (s.part ?? 0) === firstPart) ? (firstStep === 1 ? 'start' : 'first known place') : null;
   const end = last ? (!gone && last.step === last.steps && !last.period?.to ? 'today' : 'last known place') : null;
   if (!start && !end) return null;
   return { kind: end ? 'end' : 'start', text: [start, end].filter(Boolean).join(' · ') };
