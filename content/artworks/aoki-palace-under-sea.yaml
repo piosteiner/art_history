@@ -1,0 +1,62 @@
+public_id: 108040
+title: Palace Under the Sea
+names:
+  - Paradise Under the Sea
+  - Wadatumiirokonomiya
+  - lang: ja
+    role: translation
+    text: わだつみいろこの宮
+creator: shigeru-aoki
+created: 1907
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [181.5, 70]
+institution: artizon-museum
+description_md: "The most famous painting of [[artist/shigeru-aoki]] (1882–1911), of the Romantic movement that reinterpreted Japan’s myths: the hunter who lost his brother’s fishhook sits in a tree in the garden of the sea god’s palace, falling in love with the princess on the left. Poorly received at the Tokyo Industrial Exposition; Aoki died of tuberculosis at twenty-nine. Mason gives its owner as the [[institution/ishibashi-museum-of-art]] in Kurume, whose collection has since moved to the Artizon Museum in Tokyo. [[source/history-of-japanese-art|pp. 375–376, fig. 447]]"
+wikidata_id: Q111941451
+metadata:
+  sources: [Wikidata Q111941451 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 375–376, fig. 447
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/AOKI_Shigeru_-_Paradise_under_the_Sea.jpg/1280px-AOKI_Shigeru_-_Paradise_under_the_Sea.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:AOKI_Shigeru_-_Paradise_under_the_Sea.jpg
+    license: Public domain
+    credit: Shigeru Aoki
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 375–376, fig. 447
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 375–376, fig. 447
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q111941451
+    - source: history-of-japanese-art
+      locator: pp. 375–376, fig. 447
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q111941451
+    - source: history-of-japanese-art
+      locator: pp. 375–376, fig. 447
+  materials:
+    - accessed: 2026-11-01
+      property: P186
+      wikidata: Q111941451
+    - source: history-of-japanese-art
+      locator: pp. 375–376, fig. 447
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 375–376, fig. 447
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q111941451

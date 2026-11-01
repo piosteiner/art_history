@@ -1,0 +1,35 @@
+public_id: 108253
+title: Fallen Leaves
+creator: hishida-shunso
+created: 1909
+kind: byōbu
+medium: Pair of two-panel screens, colour on paper
+materials: [paper]
+dimensions: [152, 152]
+dimensions_note: each screen
+description_md: "A pair of two-panel screens by [[artist/hishida-shunso]] (1874–1911) with only three motifs — trees, leaves, three tiny birds — in a minimum of outline: the trunks so tall that their lower branches cannot be seen, the forms overlapping in flat planes of colour. The style, [[morotai]], tried to bring Western emphasis on space and light into [[movement/nihonga]] by reducing the line. [[source/history-of-japanese-art|p. 365, fig. 432]]"
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 365, fig. 432
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 365, fig. 432
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 365, fig. 432
+  created:
+    - source: history-of-japanese-art
+      locator: p. 365, fig. 432
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 365, fig. 432
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 365, fig. 432
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 365, fig. 432

@@ -1,0 +1,41 @@
+public_id: 108045
+name: Sone Tatsuzō
+names:
+  - lang: ja
+    role: original
+    text: 曽禰達蔵
+  - Sone Tatsuzo
+  - Tatsuzō Sone
+  - Tatsuzo Sone
+  - Sone Tatsuzou
+  - lang: ja
+    role: original
+    text: 曽祢達蔵
+  - lang: zh
+    role: translation
+    text: 曾禰達藏
+  - lang: ru
+    role: translation
+    text: Тацудзо Сонэ
+birth: 1853-01-03
+death: 1937-12-06
+wikidata_id: Q11515378
+metadata:
+  sources: [Wikidata Q11515378 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f3/Sone_Tatsuz%C3%B4.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sone_Tatsuz%C3%B4.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  lc: n81150595
+  viaf: "18555685"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q11515378
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q11515378

@@ -1,0 +1,38 @@
+public_id: 108209
+title: Reincarnation (Tenshō)
+creator: hiragushi-dencho
+created: 1920
+kind: sculpture
+medium: Wood with slight colour
+materials: [wood]
+dimensions: [239]
+institution: tokyo-university-of-the-arts
+description_md: "The masterpiece of [[artist/hiragushi-dencho]] (1872–1979), a student of Kōun who kept to traditional materials: a male figure in a loincloth steps forward and leans over as if to vomit, a tiny human figure emerging from his mouth — a wrathful Buddhist guardian like Fudō or the Niō, with a halo of flames, or an official of hell, spitting out a loathsome wretch unworthy of release from the cycle of rebirth. [[source/history-of-japanese-art|pp. 360–361, fig. 425]]"
+relationships:
+  - type: associated_with
+    to: movement/taisho-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 360–361, fig. 425
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 360–361, fig. 425
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 360–361, fig. 425
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 360–361, fig. 425
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 360–361, fig. 425
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 360–361, fig. 425
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 360–361, fig. 425
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 360–361, fig. 425

@@ -1,0 +1,43 @@
+public_id: 108068
+name: Shikō Imamura
+names:
+  - kind: birth
+    lang: ja
+    role: alternative
+    text: 今村 壽三郎
+  - lang: ja
+    role: original
+    text: 今村紫紅
+  - Shiko Imamura
+  - Shikou Imamura
+  - lang: fr
+    role: translation
+    text: Imamura Shikō
+  - lang: ru
+    role: translation
+    text: Сико Имамура
+birth: 1880-12-16
+death: 1916-02-28
+wikidata_id: Q2270045
+metadata:
+  sources: [Wikidata Q2270045 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/The_Wind_God_and_Thunder_God_by_Imamura_Shiko%2C_1911.jpg/1280px-The_Wind_God_and_Thunder_God_by_Imamura_Shiko%2C_1911.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Wind_God_and_Thunder_God_by_Imamura_Shiko,_1911.jpg
+    license: Public domain
+    credit: Imamura Shikō
+identifiers:
+  gnd: "160738261"
+  idref: "226105822"
+  lc: n82086382
+  ulan: "500122627"
+  viaf: "55495232"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2270045
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2270045

@@ -1,0 +1,51 @@
+public_id: 108096
+name: Nakamura Utaemon VI
+names:
+  - lang: ja
+    role: original
+    text: 中村歌右衛門 (6代目)
+  - lang: de
+    role: translation
+    text: Nakamura Utaemon VI.
+  - lang: ja
+    role: original
+    text: 六代目 中村歌右衛門
+  - lang: zh
+    role: translation
+    text: 中村歌右衛門
+  - lang: ko
+    role: translation
+    text: 나카무라 우타에몬 6세
+kind: person
+occupations: [kabuki actor, onnagata, kabuki, actor, Theaterintendant]
+birth: 1917-01-20
+death: 2001-03-31
+wikidata_id: Q3335336
+metadata:
+  sources: [Wikidata Q3335336 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/12/Nakamura_Shikan_the_6th.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Nakamura_Shikan_the_6th.JPG
+    license: Public domain
+    credit: 朝日新聞社
+identifiers:
+  gnd: "1139195085"
+  lc: no90008556
+  viaf: "108194656"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q3335336
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3335336
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3335336
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q3335336

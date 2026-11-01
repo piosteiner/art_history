@@ -1,0 +1,58 @@
+public_id: 108041
+name: Arthur M. Sackler Gallery
+names:
+  - Sackler Gallery, Washington, D.C.
+  - lang: fr
+    role: translation
+    text: Galerie Arthur M. Sackler
+  - lang: es
+    role: translation
+    text: Galería Arthur M. Sackler
+  - lang: ja
+    role: translation
+    text: アーサー・M・サックラー・ギャラリー
+  - lang: zh
+    role: translation
+    text: 亞瑟·M·薩克勒畫廊
+  - lang: ko
+    role: translation
+    text: 아서 M. 새클러 갤러리
+  - lang: ru
+    role: translation
+    text: Галерея Артура М. Саклера
+kind: museum
+founded: 1987
+place: washington-d-c
+location: [-77.0265, 38.888]
+website_url: http://www.asia.si.edu/
+wikidata_id: Q259767
+metadata:
+  sources: [Wikidata Q259767 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Sackler_Gallery.jpg/1280px-Sackler_Gallery.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sackler_Gallery.jpg
+    license: CC BY-SA 3.0
+    credit: No machine-readable author provided. Isomorphic assumed (based on copyright claims).
+identifiers:
+  bnf: 12117016w
+  idref: "029572606"
+  lc: n85298520
+  ulan: "500312800"
+  viaf: "139247290"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q259767
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q259767
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q259767
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q259767

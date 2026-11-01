@@ -1,0 +1,38 @@
+public_id: 108234
+title: Old Man
+creator: naganuma-moriyoshi
+created: 1898
+kind: sculpture
+medium: Bronze
+materials: [bronze]
+dimensions: [55]
+institution: tokyo-university-of-the-arts
+description_md: A bronze head by [[artist/naganuma-moriyoshi]] (1857–1942), who studied in Venice and co-founded the Meiji Art Society; the model is said to have been a gardener near his house. Freed from the need for a likeness, the modelling is softer and deeper than Ōkuma’s and seems to penetrate beneath the sitter’s features. [[source/history-of-japanese-art|p. 357, fig. 419]]
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 357, fig. 419
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 357, fig. 419
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 357, fig. 419
+  created:
+    - source: history-of-japanese-art
+      locator: p. 357, fig. 419
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 357, fig. 419
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 357, fig. 419
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 357, fig. 419
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 357, fig. 419

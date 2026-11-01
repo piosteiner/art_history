@@ -1,0 +1,35 @@
+public_id: 108223
+title: "Time of the Lotus: Relation-Plant (D), (E) and (F)"
+creator: kawaguchi-tatsuo
+created: 1990
+kind: sculpture
+medium: Lead and lotus
+materials: [lead]
+dimensions: [170, 80, 5]
+dimensions_note: each
+description_md: "[[artist/kawaguchi-tatsuo]] (b. 1940), of the “School of Metaphysics”, encased three lotus fronds — the Buddhist symbol of liberation and rebirth — in lead: a precious symbol of eternity protected, and a series of elegiac monochrome images. [[source/history-of-japanese-art|pp. 389–390, fig. 466]]"
+relationships:
+  - type: associated_with
+    to: movement/heisei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 389–390, fig. 466
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 389–390, fig. 466
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 389–390, fig. 466
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 389–390, fig. 466
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 389–390, fig. 466
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 389–390, fig. 466
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 389–390, fig. 466

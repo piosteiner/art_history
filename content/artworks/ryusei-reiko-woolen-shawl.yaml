@@ -1,0 +1,38 @@
+public_id: 108247
+title: Reiko with a Woollen Shawl
+creator: kishida-ryusei
+created: 1920
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [44.2, 36.4]
+institution: tokyo-national-museum
+description_md: "From the series of portraits of his daughter Reiko by [[artist/kishida-ryusei]] (1891–1929), son of a well-known journalist, who moved from Van Gogh to Dürer and Van Eyck: the six-year-old’s full cheeks and intense eyes, the smooth planes of her face against the texture of the woollen shawl. [[source/history-of-japanese-art|p. 376, fig. 449]]"
+relationships:
+  - type: associated_with
+    to: movement/taisho-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 376, fig. 449
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 376, fig. 449
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 376, fig. 449
+  created:
+    - source: history-of-japanese-art
+      locator: p. 376, fig. 449
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 376, fig. 449
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 376, fig. 449
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 376, fig. 449
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 376, fig. 449

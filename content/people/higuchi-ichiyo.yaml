@@ -1,0 +1,55 @@
+public_id: 108095
+name: Ichiyō Higuchi
+names:
+  - lang: ja
+    role: original
+    text: 樋口一葉
+  - Ichiyo Higuchi
+  - Higuchi Ichiyo
+  - Higuchi Ichiyō
+  - Ichiyou Higuchi
+  - lang: zh
+    role: translation
+    text: 桶口一葉
+  - lang: ko
+    role: translation
+    text: 히구치 이치요
+  - lang: ru
+    role: translation
+    text: Итиё Хигути
+kind: person
+occupations: [novelist, writer, waka poet]
+birth: 1872-05-02
+death: 1896-11-23
+wikidata_id: Q237948
+metadata:
+  sources: [Wikidata Q237948 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6e/Higuchi_Ichiyou.png
+    source_url: https://commons.wikimedia.org/wiki/File:Higuchi_Ichiyou.png
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 12026085h
+  gnd: "118953818"
+  idref: "028422473"
+  lc: n81017799
+  nlk: KAC199641201
+  viaf: "95282437"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q237948
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q237948
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q237948
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q237948

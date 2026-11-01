@@ -1,0 +1,38 @@
+public_id: 108244
+title: "Image No. 7: Black Cat (a)"
+creator: onchi-koshiro
+created: 1952
+kind: Japanese woodblock print
+medium: Colour paperblock print
+materials: [paper]
+dimensions: [49.9, 36.1]
+institution: british-museum
+description_md: "A [[paperblock-print]] of [[artist/onchi-koshiro]]’s last years: simple shapes pressed onto the sheet, the ink smearing outside its form — the old Zen [[wabi]] in a stark, even numinous image. [[source/history-of-japanese-art|p. 386, fig. 461]]"
+relationships:
+  - type: associated_with
+    to: movement/showa-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 386, fig. 461
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 386, fig. 461
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 386, fig. 461
+  created:
+    - source: history-of-japanese-art
+      locator: p. 386, fig. 461
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 386, fig. 461
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 386, fig. 461
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 386, fig. 461
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 386, fig. 461

@@ -1,0 +1,43 @@
+public_id: 108239
+title: Mongaku
+creator: ogiwara-morie
+created: 1908
+kind: sculpture
+medium: Bronze
+materials: [bronze]
+dimensions: [89.5]
+institution: rokuzan-art-museum
+description_md: "Exhibited at the Bunten of 1908 by [[artist/ogiwara-morie]] (1879–1910), who had seen Rodin’s Thinker in Paris and become his frequent visitor: the twelfth-century warrior-monk [[person/mongaku]], restorer of Jingoji, who had accidentally killed the married woman he loved — powerful physical distortions, the broad shoulders and strong gaze evoking the monk’s strong but aged body. Ogiwara, too, loved a married woman. [[source/history-of-japanese-art|p. 359, fig. 423]]"
+relationships:
+  - type: depicts_person
+    to: person/mongaku
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 359, fig. 423
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 359, fig. 423
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 359, fig. 423
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 359, fig. 423
+  created:
+    - source: history-of-japanese-art
+      locator: p. 359, fig. 423
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 359, fig. 423
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 359, fig. 423
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 359, fig. 423
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 359, fig. 423

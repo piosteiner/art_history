@@ -1,0 +1,34 @@
+public_id: 108252
+title: Evening
+creator: uemura-shoen
+created: 1941
+kind: kakemono
+medium: Colour on silk
+materials: [silk]
+dimensions: [214.5, 99]
+description_md: "A late [[bijinga]] by [[artist/uemura-shoen]] (1875–1949), Japan’s most notable woman painter before the war and the first to receive the Order of Cultural Merit, raised by her mother in a tea shop: a frugal young woman threads a needle by moonlight — the image of her own mother, painted in 1941, when women were asked to conserve the country’s resources. [[source/history-of-japanese-art|pp. 369–370, fig. 439]]"
+relationships:
+  - type: associated_with
+    to: movement/showa-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 369–370, fig. 439
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 369–370, fig. 439
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 369–370, fig. 439
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 369–370, fig. 439
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 369–370, fig. 439
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 369–370, fig. 439
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 369–370, fig. 439

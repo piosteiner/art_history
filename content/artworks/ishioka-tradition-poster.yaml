@@ -1,0 +1,34 @@
+public_id: 108220
+title: Poster for Tradition et Nouvelles Techniques, Paris
+creator: eiko-ishioka
+created: 1984
+kind: poster
+medium: Offset print
+materials: [paper]
+dimensions: [103, 72.8]
+description_md: "A marriage of Japanese traditional imagery and the modern by the art director [[artist/eiko-ishioka]], with photography by Masayoshi Sukita: a torso-shaped bodice by [[person/issey-miyake]] held like a prop by a Bunraku puppeteer, whose costume is bright red instead of the usual masking black. [[source/history-of-japanese-art|pp. 388–389, fig. 464]]"
+relationships:
+  - type: associated_with
+    to: movement/showa-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 388–389, fig. 464
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 388–389, fig. 464
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 388–389, fig. 464
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 388–389, fig. 464
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 388–389, fig. 464
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 388–389, fig. 464
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 388–389, fig. 464

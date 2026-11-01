@@ -1,0 +1,57 @@
+public_id: 108030
+name: The Museum of Art, Kōchi
+names:
+  - kōchi-kenritsu bijutsukan
+  - Museum of Art, Kōchi
+  - lang: fr
+    role: translation
+    text: musée d'Art de Kōchi
+  - lang: ja
+    role: translation
+    text: 高知県立美術館
+  - lang: zh
+    role: translation
+    text: 高知縣立美術館
+  - lang: ko
+    role: translation
+    text: 고치현립 미술관
+kind: museum
+founded: 1993
+place: kochi-shi
+location: [133.573, 33.5611]
+address: 〒781-8123 高知県高知市高須353番地2
+website_url: https://moak.jp/
+wikidata_id: Q2496483
+metadata:
+  sources: [Wikidata Q2496483 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/The_Museum_of_Art_Kochi08s3872.jpg/1280px-The_Museum_of_Art_Kochi08s3872.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Museum_of_Art_Kochi08s3872.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  gnd: 5250512-1
+  idref: "176464719"
+  lc: nr94018971
+  viaf: "129877443"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q2496483
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q2496483
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q2496483
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q2496483
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q2496483

@@ -1,0 +1,38 @@
+public_id: 108205
+title: Autumn at Grez
+creator: asai-chu
+created: 1901
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [79.5, 60]
+institution: tokyo-national-museum
+description_md: "Painted at Grez-sur-Loing near Fontainebleau, where [[artist/asai-chu]] spent six months from October 1901 during his two years in France: poplars, a common feature of the countryside, in yellow, green and light brown against grey trunks. [[source/history-of-japanese-art|pp. 373–374, fig. 445]]"
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 373–374, fig. 445
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 373–374, fig. 445
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 373–374, fig. 445
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 373–374, fig. 445
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 373–374, fig. 445
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 373–374, fig. 445
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 373–374, fig. 445
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 373–374, fig. 445

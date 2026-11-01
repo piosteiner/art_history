@@ -1,0 +1,79 @@
+public_id: 108033
+title: Akasaka Detached Palace
+names:
+  - Akasaka Palace
+  - State Guest House, Akasaka Palace
+  - The State Guest House, Akasaka Palace
+  - Akasaka State Guest House
+  - lang: fr
+    role: translation
+    text: palais d'Akasaka
+  - lang: de
+    role: translation
+    text: Palast Akasaka
+  - lang: es
+    role: translation
+    text: Palacio de Akasaka
+  - lang: ja
+    role: translation
+    text: 迎賓館赤坂離宮
+  - lang: zh
+    role: translation
+    text: 迎宾馆赤坂离宫
+  - lang: ko
+    role: translation
+    text: 영빈관 (일본)
+  - lang: ru
+    role: translation
+    text: Дворец Акасака
+creator: katayama-tokuma
+created: 1909
+kind: building
+medium: Stone and brick
+materials: [stone]
+location: [139.72861, 35.68]
+description_md: "The first Meiji building of true grandeur in Western vocabulary, by [[artist/katayama-tokuma]] (1853–1917), one of [[artist/josiah-conder]]’s first students and architect to the imperial family: often called the Japanese Versailles, with a magnificent staircase, a large state dining room, a ballroom, ceiling paintings by leading Japanese painters and gilt lamps; Japanese only in the sequence of reception rooms. Its splendour was its undoing — the emperor found it too luxurious for his son, and it was never used as an imperial residence; it housed the Diet library until the 1970s and is now the state guest house. [[source/history-of-japanese-art|pp. 346–347, fig. 403]]"
+wikidata_id: Q555255
+metadata:
+  sources: [Wikidata Q555255 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+  - type: created_in
+    to: place/tokyo
+    period: 1909
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 346–347, fig. 403
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 346–347, fig. 403
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/2019_Akasaka_Palace_02.jpg/1280px-2019_Akasaka_Palace_02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:2019_Akasaka_Palace_02.jpg
+    license: CC BY-SA 4.0
+    credit: Kakidai
+identifiers:
+  viaf: "256243724"
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 346–347, fig. 403
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 346–347, fig. 403
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 346–347, fig. 403
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 346–347, fig. 403
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q555255
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 346–347, fig. 403

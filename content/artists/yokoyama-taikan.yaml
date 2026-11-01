@@ -1,0 +1,55 @@
+public_id: 108067
+name: Yokoyama Taikan
+names:
+  - lang: ja
+    role: original
+    text: 横山 大観
+  - lang: ja
+    role: original
+    text: 横山 秀麿
+  - Hidezō
+  - Hidemaro
+  - Yokoyama
+  - Taikan Yokoyama
+  - Hidemaro Yokoyama
+  - Hidematsu
+  - Sakai Hidemaro
+  - Yokoyama TAIKWAN
+  - lang: ja
+    role: original
+    text: 横山大観
+  - lang: zh
+    role: translation
+    text: 横山大観,
+  - lang: ko
+    role: translation
+    text: 요코야마 다이칸
+  - lang: ru
+    role: translation
+    text: Ёкояма Тайкан
+birth: 1868-10-02
+death: 1958-02-26
+wikidata_id: Q2034441
+metadata:
+  sources: [Wikidata Q2034441 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b3/Yokoyama_Taikan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yokoyama_Taikan.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: 13940046X
+  idref: "075230100"
+  lc: n82029415
+  rkd: "269980"
+  ulan: "500124955"
+  viaf: "45639225"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2034441
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2034441

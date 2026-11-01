@@ -1,0 +1,43 @@
+public_id: 108255
+title: Kutsugen
+creator: yokoyama-taikan
+created: 1898
+kind: kakemono
+medium: Hanging scroll, colour on silk
+materials: [silk]
+dimensions: [132.7, 289.7]
+institution: itsukushima-shrine
+description_md: "Shown at the first exhibition of the Nihon Bijutsu’in, founded after [[person/okakura-kakuzo]] was forced out of the Tokyo Bijutsu Gakkō: the Chinese poet [[person/qu-yuan]], who like Sugawara no Michizane fell from his ruler’s favour and drowned himself, stands heroically against a hostile wind — recognized at once as a comment on Okakura’s battle with the Ministry of Education. [[source/history-of-japanese-art|p. 367, fig. 435]]"
+relationships:
+  - type: depicts_person
+    to: person/qu-yuan
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 367, fig. 435
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 367, fig. 435
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 367, fig. 435
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 367, fig. 435
+  created:
+    - source: history-of-japanese-art
+      locator: p. 367, fig. 435
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 367, fig. 435
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 367, fig. 435
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 367, fig. 435
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 367, fig. 435

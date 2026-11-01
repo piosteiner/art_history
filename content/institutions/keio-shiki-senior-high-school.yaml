@@ -1,0 +1,41 @@
+public_id: 108032
+name: Keio Shiki Senior High School
+names:
+  - lang: ja
+    role: translation
+    text: 慶應義塾志木高等学校
+  - lang: zh
+    role: translation
+    text: 慶應義塾志木高等學校
+founded: 1948
+place: shiki
+location: [139.57847, 35.82408]
+address: 埼玉県志木市本町4-14-1
+website_url: http://www.shiki.keio.ac.jp/
+wikidata_id: Q11495152
+metadata:
+  sources: [Wikidata Q11495152 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Keio_Shiki_Senior_High_School-202205.JPG/1280px-Keio_Shiki_Senior_High_School-202205.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Keio_Shiki_Senior_High_School-202205.JPG
+    license: CC BY-SA 3.0
+    credit: Nyao148
+identifiers:
+  viaf: "251815064"
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q11495152
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q11495152
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q11495152
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q11495152

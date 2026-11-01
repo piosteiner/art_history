@@ -1,0 +1,16 @@
+public_id: 108029
+name: Kōchi-shi
+kind: settlement
+location: [133.53122, 33.55883]
+wikidata_id: Q200251
+metadata:
+  sources: [Wikidata Q200251 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q200251
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q200251

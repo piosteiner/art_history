@@ -1,0 +1,32 @@
+public_id: 108021
+name: Azumino
+names:
+  - lang: ja
+    role: original
+    text: 安曇野市
+  - lang: ko
+    role: translation
+    text: 아즈미노시
+  - lang: ru
+    role: translation
+    text: Адзумино
+kind: settlement
+parent: japan
+country_code: JP
+location: [137.90556, 36.30389]
+wikidata_id: Q534667
+metadata:
+  sources: [Wikidata Q534667 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q534667
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q534667
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q534667

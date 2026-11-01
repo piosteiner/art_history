@@ -1,0 +1,53 @@
+public_id: 108093
+name: Yamagata Aritomo
+names:
+  - lang: ja
+    role: original
+    text: 山縣有朋
+  - lang: ja
+    role: original
+    text: 山県有朋
+  - lang: it
+    role: translation
+    text: Aritomo Yamagata
+  - lang: ko
+    role: translation
+    text: 야마가타 아리토모
+  - lang: ru
+    role: translation
+    text: Ямагата Аритомо
+kind: person
+occupations: [politician, military personnel]
+birth: 1838-06-14
+death: 1922-02-01
+wikidata_id: Q297636
+metadata:
+  sources: [Wikidata Q297636 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Yamagata_Aritomo.jpg/1280px-Yamagata_Aritomo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yamagata_Aritomo.jpg
+    license: Public domain
+    credit: Unknown photographer
+identifiers:
+  bnf: 16724955b
+  gnd: "119316552"
+  idref: "081975929"
+  lc: n81071829
+  viaf: "57421969"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q297636
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q297636
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q297636
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q297636

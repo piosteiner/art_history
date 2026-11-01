@@ -1,0 +1,38 @@
+public_id: 108210
+title: Shinobazu Pond
+creator: antonio-fontanesi
+created: 1876/1878
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [52, 73.3]
+institution: tokyo-national-museum
+description_md: "By [[artist/antonio-fontanesi]] (1818–1882), the Barbizon painter invited to teach at the Kōbu Bijutsu Gakkō, so revered that eleven students left when he returned to Italy in 1878 and formed the Society of the Eleven: the last pink rays of sunset glisten on the small lake near Ueno Park as trees and marsh grass fade into brown dusk. [[source/history-of-japanese-art|pp. 372–373, fig. 442]]"
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 372–373, fig. 442
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 372–373, fig. 442
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 372–373, fig. 442
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 372–373, fig. 442
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 372–373, fig. 442
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 372–373, fig. 442
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 372–373, fig. 442
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 372–373, fig. 442

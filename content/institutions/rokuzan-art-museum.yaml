@@ -1,0 +1,40 @@
+public_id: 108022
+name: Rokuzan Art Museum
+names:
+  - Rokuzan Bijutsukan
+  - lang: ja
+    role: translation
+    text: 碌山美術館
+kind: museum
+founded: 1958-04
+place: azumino
+location: [137.88139, 36.34369]
+website_url: http://rokuzan.jp/
+wikidata_id: Q11587726
+metadata:
+  sources: [Wikidata Q11587726 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/150921_Rokuzan_Art_Museum_Azumino_Nagano_pref_Japan01s3.jpg/1280px-150921_Rokuzan_Art_Museum_Azumino_Nagano_pref_Japan01s3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:150921_Rokuzan_Art_Museum_Azumino_Nagano_pref_Japan01s3.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  lc: n82079301
+  viaf: "157127991"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q11587726
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q11587726
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q11587726
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q11587726

@@ -4,6 +4,22 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-01
 
+### Data: the works of Mason, chapter 7 (Meiji to the present) + the book's figures as private reference images — Mason complete
+- **What:** 68 works after the figures of Mason, *History of Japanese Art*, pp. 343–391 — 6 from Wikidata items
+  (Akasaka Palace, Yoyogi Gymnasium, Murin-an, Kabukiza, Kuroda's Morning Toilet, Aoki's Palace Under the Sea), the
+  rest by hand: Meiji prints, architecture (Nihon Yūsen Building, Tokyo National Museum, Horiguchi's Okada house),
+  crafts (Yabu Meizan, Shōami Katsuyoshi, Shibata Zeshin, Hamada, Raku XV …), sculpture from Ragusa to Noguchi,
+  nihonga (Hōgai, Gahō, Shunsō, Kanzan, Taikan, Shikō, Seison, Kokei, Shōen, Kiyokata), bunjinga, zenga and haiga
+  (Tessai, Nantenbō, Buntō), yōga (Yuichi, Fontanesi, Hōsui, Asai, Kuroda, Aoki, Fujishima, Ryūsei, Yasui, Yorozu,
+  Umehara), Bokujinkai calligraphy, prints (Yoshitoshi, Kiyochika, Goyō, Shinsui, Onchi, Tsuruya Kōkei),
+  photography, design and installations (Hosoe, Ishioka, Morimura, Kawaguchi, Kusama, Yanagi). Kusama's Mirror Room
+  merged into the new entry. New: 17 holders, 12 people, 54 artists, 16 glossary terms (yōga, mingei, mōrōtai,
+  Satsuma ware, paperblock print, Teishitsu Gigeiin …). Gutai stays a movement (`gutai-group`, owner's question).
+- **Private images:** the 68 figures of chapter 7 into `private_images` — now 432 images on 391 works for the
+  owner's account, all seven chapters of Mason.
+- **Why:** owner, 2026-11-01. **Revert:** delete the works citing `history-of-japanese-art` with figs. 401–468;
+  the crops: `DELETE FROM private_images WHERE owner_id = 1 AND locator ~ 'fig\. 4(0[1-9]|[1-5][0-9]|6[0-8])$'`.
+
 ### Data: the works of Mason, chapter 6 (Edo) + the book's figures as private reference images
 - **What:** 86 works after the figures of Mason, *History of Japanese Art*, pp. 272–342 — 4 from Wikidata items, 3
   existing entries completed (Takiyasha, Pine Trees in the Snow, the Fuji series gains the Barrel-maker of

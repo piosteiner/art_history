@@ -1,0 +1,38 @@
+public_id: 108238
+title: Mu
+creator: isamu-noguchi
+created: 1950/1951
+kind: sculpture
+medium: Sandstone
+materials: [sandstone]
+dimensions: [228]
+institution: keio-university
+description_md: "The first major commission in Japan of [[artist/isamu-noguchi]] (1904–1988): a visualization of the Zen concept of “nothingness”, a frequent subject of [[zenga]] — but where the Zen masters wrote the character, Noguchi created an abstract, biomorphic image of the concept itself. [[source/history-of-japanese-art|p. 361, fig. 426]]"
+relationships:
+  - type: associated_with
+    to: movement/showa-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 361, fig. 426
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 361, fig. 426
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 361, fig. 426
+  created:
+    - source: history-of-japanese-art
+      locator: p. 361, fig. 426
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 361, fig. 426
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 361, fig. 426
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 361, fig. 426
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 361, fig. 426

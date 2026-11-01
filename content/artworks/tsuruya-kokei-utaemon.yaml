@@ -1,0 +1,43 @@
+public_id: 108258
+title: The Actor Nakamura Utaemon VI as Tonase in Kanadehon Chūshingura
+creator: tsuruya-kokei
+created: 1984
+kind: Japanese woodblock print
+medium: Colour woodblock print with powdered mica
+materials: [paper]
+dimensions: [39.5, 25]
+institution: british-museum
+description_md: "From the bust portraits of [[artist/tsuruya-kokei]] (b. 1946), who single-handedly revived the ukiyo-e actor print after Sharaku: the great onnagata [[person/nakamura-utaemon-vi]] as Tonase, the strong, virtuous samurai lady of Chūshingura, grasping the hilt of her absent husband’s sword. Tsuruya prints only some seventy impressions and then defaces his blocks. [[source/history-of-japanese-art|pp. 386–387, fig. 462]]"
+relationships:
+  - type: depicts_person
+    to: person/nakamura-utaemon-vi
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 386–387, fig. 462
+  - type: associated_with
+    to: movement/showa-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 386–387, fig. 462
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 386–387, fig. 462
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 386–387, fig. 462
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 386–387, fig. 462
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 386–387, fig. 462
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 386–387, fig. 462
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 386–387, fig. 462
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 386–387, fig. 462

@@ -1,0 +1,43 @@
+public_id: 108226
+title: Ichiyō
+creator: kaburaki-kiyokata
+created: 1940
+kind: kakemono
+medium: Colour on silk, hanging scroll
+materials: [silk]
+dimensions: [143.6, 79.4]
+institution: tokyo-university-of-the-arts
+description_md: "A portrait by [[artist/kaburaki-kiyokata]] (1878–1972), trained as an ukiyo-e artist, of the writer [[person/higuchi-ichiyo]] (1872–1896), who supported her family by sewing for the prostitutes of her poor neighbourhood and died of tuberculosis at twenty-four: she sits pensively by an oil lamp, swatches of cloth before her — the desire to write overshadowed by the need to earn. Shown in 1940 at the exhibition for the 2,600th anniversary of the founding of Japan. [[source/history-of-japanese-art|pp. 370–371, fig. 440]]"
+relationships:
+  - type: depicts_person
+    to: person/higuchi-ichiyo
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 370–371, fig. 440
+  - type: associated_with
+    to: movement/showa-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 370–371, fig. 440
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 370–371, fig. 440
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 370–371, fig. 440
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 370–371, fig. 440
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 370–371, fig. 440
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 370–371, fig. 440
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 370–371, fig. 440
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 370–371, fig. 440

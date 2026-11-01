@@ -1,0 +1,30 @@
+public_id: 108208
+title: Autumn Neighbours
+creator: hayashi-bunto
+kind: kakemono
+medium: Ink and colours on silk
+materials: [ink, silk]
+dimensions: [33.1, 29.2]
+description_md: "A [[haiga]] by [[artist/hayashi-bunto]] (1882–1966), noted for his humour: a forlorn seaside holidaymaker in a beach robe and scarf turns out to be a kappa, the river demon whose head holds the water that gives him power — covered here by a scarf, his summer fun over. “Shops by the beach / all closed and boarded up — / insect voices.” [[source/history-of-japanese-art|pp. 362–363, fig. 429]]"
+relationships:
+  - type: associated_with
+    to: movement/showa-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 362–363, fig. 429
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 362–363, fig. 429
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 362–363, fig. 429
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 362–363, fig. 429
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 362–363, fig. 429
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 362–363, fig. 429

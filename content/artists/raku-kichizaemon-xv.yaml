@@ -1,0 +1,23 @@
+public_id: 108054
+name: Raku Kichizaemon XV
+given_name: Raku, XV
+family_name: Kichizaemon
+names:
+  - Kichizaemon Raku XV
+  - lang: nl
+    role: translation
+    text: Kichizaemon Raku
+birth: 1949
+wikidata_id: Q94683040
+metadata:
+  sources: [Wikidata Q94683040 (retrieved 2026-11-01)]
+identifiers:
+  gnd: "132435918"
+  lc: nr94009187
+  nlk: KAC200911023
+  viaf: "29414700"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q94683040

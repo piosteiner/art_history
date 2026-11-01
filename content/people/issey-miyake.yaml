@@ -1,0 +1,56 @@
+public_id: 108098
+name: Issey Miyake
+names:
+  - kind: birth
+    lang: ja
+    role: alternative
+    text: 三宅 一生
+  - Issei Miyake
+  - Miyake Kazunaru
+  - lang: ja
+    role: original
+    text: 三宅一生
+  - lang: ko
+    role: translation
+    text: 이세이 미야케
+  - lang: ru
+    role: translation
+    text: Иссэй Миякэ
+kind: person
+occupations: [fashion designer, designer, businessperson, perfumer]
+birth: 1938-04-22
+death: 2022-08-05
+wikidata_id: Q469027
+metadata:
+  sources: [Wikidata Q469027 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Issey_Miyake_Tokyo_2016.jpg/1280px-Issey_Miyake_Tokyo_2016.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Issey_Miyake_Tokyo_2016.jpg
+    license: CC BY-SA 4.0
+    credit: Hsinhuei Chiou
+identifiers:
+  bnf: "120093202"
+  gnd: "118867571"
+  idref: "028211871"
+  kulturnav: f95b47bc-3f5e-46db-97ee-da743e3a262a
+  lc: n83142635
+  rkd: "214204"
+  ulan: "500086914"
+  viaf: "96310760"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q469027
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q469027
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q469027
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q469027

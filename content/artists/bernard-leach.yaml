@@ -1,0 +1,46 @@
+public_id: 108104
+name: Bernard Leach
+given_name: Bernard
+family_name: Leach
+names:
+  - lang: en
+    role: original
+    text: Bernard Howell Leach
+  - The Father of British studio pottery
+  - lang: ja
+    role: translation
+    text: バーナード・リーチ
+  - lang: zh
+    role: translation
+    text: 柏納德·李奇
+  - lang: ru
+    role: translation
+    text: Бернард Лич
+birth: 1887-01-05
+death: 1979-05-06
+wikidata_id: Q2898210
+metadata:
+  sources: [Wikidata Q2898210 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9a/Bernard_Leach_1953.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bernard_Leach_1953.jpg
+    license: Public domain
+    credit: Tadahiko Hayashi
+identifiers:
+  bnf: "120190166"
+  gnd: "118570447"
+  idref: "028332830"
+  kulturnav: 6865d813-671d-485d-9680-764515f0bc21
+  lc: n79059542
+  rkd: "48616"
+  ulan: "500018779"
+  viaf: "24613420"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2898210
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2898210

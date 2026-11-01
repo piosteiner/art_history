@@ -1,0 +1,40 @@
+public_id: 108260
+title: Vase
+creator: yabu-meizan
+created: c. 1910
+created_span: uncertain
+kind: vase
+medium: Painted and gilded earthenware
+materials: [Satsuma ware, gold]
+dimensions: [18.3]
+institution: khalili-collections
+inventory_number: S111
+description_md: "From the studio of [[artist/yabu-meizan]] (1853–1934), who raised [[satsuma-ware]] from a mass-produced export craft to something sublime: an autumnal branch descends gracefully over the double-gourd shape, its leaves picked out in gold and red, a swallow among them. [[source/history-of-japanese-art|p. 352, fig. 410]]"
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 352, fig. 410
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 352, fig. 410
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 352, fig. 410
+  created:
+    - source: history-of-japanese-art
+      locator: p. 352, fig. 410
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 352, fig. 410
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 352, fig. 410
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 352, fig. 410
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 352, fig. 410

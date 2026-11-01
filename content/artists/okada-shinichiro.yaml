@@ -1,0 +1,43 @@
+public_id: 108046
+name: Shin'ichirō Okada
+names:
+  - lang: ja
+    role: original
+    text: 岡田信一郎
+  - Okada Shinichirō
+  - Shin'ichiro Okada
+  - Shin'ichirou Okada
+  - lang: de
+    role: translation
+    text: Okada Shin’ichirō
+  - lang: zh
+    role: translation
+    text: 冈田信一郎
+  - lang: ko
+    role: translation
+    text: 오카다 신이치로
+  - lang: ru
+    role: translation
+    text: Синъитиро Окада
+birth: 1883-11-20
+death: 1932-04-04
+wikidata_id: Q11261704
+metadata:
+  sources: [Wikidata Q11261704 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/04/Okada_Shin%27ichiro_1913.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Okada_Shin%27ichiro_1913.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  lc: n2024027507
+  viaf: "365171710778706720009"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q11261704
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q11261704

@@ -1,0 +1,41 @@
+public_id: 108058
+name: Fumio Asakura
+names:
+  - lang: ja
+    role: original
+    text: 朝倉 文夫
+  - Asakura Fumio
+  - lang: ja
+    role: original
+    text: 朝倉文夫
+  - lang: ko
+    role: translation
+    text: 아사쿠라 후미오
+  - lang: ru
+    role: translation
+    text: Фумио Асакура
+birth: 1883-03-01
+death: 1964-04-18
+wikidata_id: Q1052330
+metadata:
+  sources: [Wikidata Q1052330 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Fumio_Asakura_by_Ken_Domon.jpg/1280px-Fumio_Asakura_by_Ken_Domon.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fumio_Asakura_by_Ken_Domon.jpg
+    license: Public domain
+    credit: Ken Domon
+identifiers:
+  gnd: "1396784470"
+  idref: "189795484"
+  lc: n84100548
+  ulan: "500337151"
+  viaf: "23541530"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1052330
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1052330

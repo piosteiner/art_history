@@ -1,0 +1,42 @@
+public_id: 108049
+name: Kenzō Tange
+names:
+  - lang: ja
+    role: original
+    text: 丹下健三
+  - Kenzou Tange
+  - Kenzo Tange
+  - lang: ko
+    role: translation
+    text: 단게 겐조
+  - lang: ru
+    role: translation
+    text: Кэндзо Тангэ
+birth: 1913-09-04
+death: 2005-03-22
+wikidata_id: Q151794
+metadata:
+  sources: [Wikidata Q151794 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Kenzo_Tange_1981.jpg/1280px-Kenzo_Tange_1981.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kenzo_Tange_1981.jpg
+    license: CC BY-SA 3.0 nl
+    credit: Hans van Dijk for Anefo
+identifiers:
+  bnf: 12046059c
+  gnd: "118620673"
+  idref: "028673697"
+  kulturnav: 4dd49611-6bf2-4629-bb3a-5c5b2a273abe
+  lc: n50082751
+  rkd: "314506"
+  ulan: "500004256"
+  viaf: "92699968"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q151794
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q151794

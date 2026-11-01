@@ -1,0 +1,23 @@
+public_id: 108051
+name: Shōami Katsuyoshi
+names:
+  - lang: ja
+    role: translation
+    text: 正阿弥勝義
+  - lang: ru
+    role: translation
+    text: Кацуёси Сёами
+birth: 1832-04-28
+death: 1908-12-19
+wikidata_id: Q18011669
+metadata:
+  sources: [Wikidata Q18011669 (retrieved 2026-11-01)]
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q18011669
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q18011669

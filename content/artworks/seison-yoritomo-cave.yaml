@@ -1,0 +1,43 @@
+public_id: 108248
+title: Yoritomo in a Cave
+creator: maeda-seison
+created: 1929
+kind: byōbu
+medium: Two-panel screen, colour on silk
+materials: [silk]
+dimensions: [150.9, 278]
+institution: okura-museum-of-art
+description_md: "The best-known work of [[artist/maeda-seison]] (1885–1977), who studied Rinpa on Okakura’s advice and copied Gu Kaizhi’s Admonitions in London in 1922: the episode of the Heike monogatari in which [[person/minamoto-no-yoritomo]] and six warriors hide in a mountain cave from the Taira — the armour of the twelfth century carefully studied from old handscrolls, the monumental figures and [[tarashikomi]] from Rinpa. [[source/history-of-japanese-art|pp. 368–369, fig. 437]]"
+relationships:
+  - type: depicts_person
+    to: person/minamoto-no-yoritomo
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 368–369, fig. 437
+  - type: associated_with
+    to: movement/showa-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 368–369, fig. 437
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 368–369, fig. 437
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 368–369, fig. 437
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 368–369, fig. 437
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 368–369, fig. 437
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 368–369, fig. 437
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 368–369, fig. 437
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 368–369, fig. 437

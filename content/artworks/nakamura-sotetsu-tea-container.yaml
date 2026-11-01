@@ -1,0 +1,36 @@
+public_id: 108235
+title: Tea container with sun and moon design
+attribution_label: Nakamura Hiroko (Sōtetsu XII)
+created: 1993
+kind: tea container
+medium: Nakatsugi lacquer
+materials: [lacquer]
+dimensions: [6.9]
+dimensions_note: diameter 6.8 cm
+institution: urasenke
+description_md: A very contemporary form of decoration with a traditional motif, by Nakamura Hiroko (Sōtetsu XII), who used her lineage’s tradition of lacquer colours and techniques. [[source/history-of-japanese-art|p. 355, fig. 416]]
+relationships:
+  - type: associated_with
+    to: movement/heisei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 355, fig. 416
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 416
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 416
+  created:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 416
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 416
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 416
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 416

@@ -1,0 +1,35 @@
+public_id: 108088
+name: Eiko Ishioka
+names:
+  - lang: ja
+    role: original
+    text: 石岡瑛子
+  - lang: ko
+    role: translation
+    text: 이시오카 에이코
+  - lang: ru
+    role: translation
+    text: Эйко Исиока
+birth: 1938-07-12
+death: 2012-01-21
+wikidata_id: Q297935
+metadata:
+  sources: [Wikidata Q297935 (retrieved 2026-11-01)]
+identifiers:
+  bnf: 12215537x
+  gnd: 11894505X
+  idref: "030816114"
+  lc: n83156187
+  nlk: KAC202247162
+  rkd: "387695"
+  ulan: "500086927"
+  viaf: "44953969"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q297935
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q297935

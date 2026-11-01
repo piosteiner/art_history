@@ -1,0 +1,38 @@
+public_id: 108228
+title: Hand
+creator: takamura-kotaro
+created: 1918
+kind: sculpture
+medium: Bronze
+materials: [bronze]
+dimensions: [39]
+institution: national-museum-of-modern-art-tokyo
+description_md: The best-known work of [[artist/takamura-kotaro]] (1883–1956), Kōun’s son, who studied in New York, London and Paris and took Rodin as his hero; also a poet, whose essay “The Green Sun” (1910) urged artists to express their own vision. The taut flexing of the fingers is not a natural pose but an emotional state. [[source/history-of-japanese-art|p. 359, fig. 422]]
+relationships:
+  - type: associated_with
+    to: movement/taisho-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 359, fig. 422
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 359, fig. 422
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 359, fig. 422
+  created:
+    - source: history-of-japanese-art
+      locator: p. 359, fig. 422
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 359, fig. 422
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 359, fig. 422
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 359, fig. 422
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 359, fig. 422

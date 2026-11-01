@@ -1,0 +1,39 @@
+public_id: 108076
+name: Fujishima Takeji
+names:
+  - lang: ja
+    role: original
+    text: 藤島武二
+  - Takeji Fujishima
+  - lang: ko
+    role: translation
+    text: 후지시마 다케지
+  - lang: ru
+    role: translation
+    text: Такэдзи Фудзисима
+birth: 1867-10-15
+death: 1943-03-19
+wikidata_id: Q347220
+metadata:
+  sources: [Wikidata Q347220 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cc/Fujishima_Takeji.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fujishima_Takeji.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "141690291"
+  idref: "193485575"
+  lc: n82108827
+  rkd: "369815"
+  ulan: "500124946"
+  viaf: "96603759"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q347220
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q347220

@@ -1,0 +1,30 @@
+public_id: 108047
+name: Sutemi Horiguchi
+names:
+  - lang: ja
+    role: original
+    text: 堀口捨己
+  - Sutemi Horiguti
+  - lang: ru
+    role: translation
+    text: Сутэми Хоригути
+birth: 1895-01-06
+death: 1984-08-18
+wikidata_id: Q11427356
+metadata:
+  sources: [Wikidata Q11427356 (retrieved 2026-11-01)]
+identifiers:
+  gnd: "141377496"
+  idref: "149610130"
+  lc: nr99009473
+  ulan: "500088789"
+  viaf: "121988183"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q11427356
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q11427356

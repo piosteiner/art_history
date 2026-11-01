@@ -1,0 +1,38 @@
+public_id: 108265
+title: Oiran (Courtesan)
+creator: takahashi-yuichi
+created: 1872
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [77.5, 55]
+institution: tokyo-university-of-the-arts
+description_md: "An oil painting by [[artist/takahashi-yuichi]] (1828–1894), the first to fuse objective description and subjective interpretation in Western-style painting, taught by [[artist/charles-wirgman]] of the Illustrated London News: commissioned by a gentleman who wanted a portrait of the geisha Koine of the Inamotorō in the intricate hyōgomage hairstyle, then falling from fashion — the many hairpins against the solid figure suggest the artificiality of her life. [[source/history-of-japanese-art|pp. 371–372, fig. 441]]"
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 371–372, fig. 441
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 371–372, fig. 441
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 371–372, fig. 441
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 371–372, fig. 441
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 371–372, fig. 441
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 371–372, fig. 441
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 371–372, fig. 441
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 371–372, fig. 441

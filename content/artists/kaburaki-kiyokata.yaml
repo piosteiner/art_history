@@ -1,0 +1,46 @@
+public_id: 108072
+name: Kiyokata Kaburaki
+names:
+  - lang: ja
+    role: original
+    text: 鏑木清方
+  - Kenʼichi Kaburagi
+  - Kiyokata Kaburagi
+  - Ken'ichi Kaburagi
+  - Ken'ichi Kaburaki
+  - Kaburaki Kiyokata
+  - Kenʼichi Kaburaki
+  - Kaburagi Kiyokata
+  - Ken'ichi
+  - lang: ko
+    role: translation
+    text: 가부라기 기요카타
+  - lang: ru
+    role: translation
+    text: Киёката Кабураки
+birth: 1878-08-31
+death: 1972-03-02
+wikidata_id: Q1241113
+metadata:
+  sources: [Wikidata Q1241113 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f1/Kiyokata_Kaburaki_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kiyokata_Kaburaki_01.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "135625743"
+  dome: "13843"
+  gnd: "133259250"
+  lc: n81017329
+  ulan: "500123229"
+  viaf: "96590990"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1241113
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1241113

@@ -1,0 +1,38 @@
+public_id: 108207
+title: Suspended Cat
+creator: asakura-fumio
+created: 1909
+kind: sculpture
+medium: Bronze
+materials: [bronze]
+dimensions: [51.5]
+institution: asakura-museum-of-sculpture
+description_md: "One of the many feline subjects of [[artist/asakura-fumio]] (1883–1964), the outstanding sculptor of the early twentieth century and an influential teacher: a cat held by the scruff of its neck dangles in midair, its discomfort and frustration as palpable as its sleek, muscular body. [[source/history-of-japanese-art|p. 357, fig. 420]]"
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 357, fig. 420
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 357, fig. 420
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 357, fig. 420
+  created:
+    - source: history-of-japanese-art
+      locator: p. 357, fig. 420
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 357, fig. 420
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 357, fig. 420
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 357, fig. 420
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 357, fig. 420

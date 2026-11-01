@@ -1,0 +1,50 @@
+public_id: 108035
+title: Garden of the Murin-an
+names:
+  - Murin-an
+  - lang: ja
+    role: translation
+    text: 無鄰菴
+creator: ogawa-jihei
+created: 1894
+kind: garden
+medium: Water, stones, plants
+location: [135.7872, 35.0116]
+description_md: "The retirement villa of [[person/yamagata-aritomo]] (1838–1922), statesman and general of the Meiji period, in Kyoto: a strolling garden by the master gardener [[artist/ogawa-jihei]] (1860–1933) with views towards the Eastern Hills, its expanses of lawn adapted from British gardens, but mainly streams, ponds, mossy banks, mature trees and stones — a naturalistic Japanese sylvan idyll. [[source/history-of-japanese-art|p. 351, fig. 408]]"
+wikidata_id: Q3328153
+metadata:
+  sources: [Wikidata Q3328153 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/kyoto
+    period: 1894
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 351, fig. 408
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Murinan01r.jpg/1280px-Murinan01r.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Murinan01r.jpg
+    license: CC BY 2.5
+    credit: Oilstreet
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 351, fig. 408
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 351, fig. 408
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q3328153
+    - source: history-of-japanese-art
+      locator: p. 351, fig. 408
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 351, fig. 408
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q3328153

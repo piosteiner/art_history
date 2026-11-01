@@ -1,0 +1,38 @@
+public_id: 108256
+title: The Second Visit to the Red Cliffs
+creator: tomioka-tessai
+created: 1922
+kind: kakemono
+medium: Hanging scroll, slight colour on paper
+materials: [paper]
+dimensions: [146.6, 40.4]
+institution: kiyoshi-kojin-seichoji
+description_md: "From a pair painted in his eighties by [[artist/tomioka-tessai]] (1837–1924), the most famous bunjinga master of the Meiji period, trained as a Shinto priest and encouraged by the nun-poet Otagaki Rengetsu: Su Dongpo, born on the same day as Tessai, on his second, late-autumn visit — patches of colour over strong strokes of dark ink, a vivacity rare in earlier masters. [[source/history-of-japanese-art|pp. 361–362, fig. 427]]"
+relationships:
+  - type: associated_with
+    to: movement/taisho-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 361–362, fig. 427
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 361–362, fig. 427
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 361–362, fig. 427
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 361–362, fig. 427
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 361–362, fig. 427
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 361–362, fig. 427
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 361–362, fig. 427
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 361–362, fig. 427

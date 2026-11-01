@@ -1,0 +1,38 @@
+public_id: 108100
+name: Shōzaburō Watanabe
+names:
+  - Watanabe Shōzaburō
+  - Watanabe Kakō
+  - lang: ja
+    role: translation
+    text: 渡辺庄三郎
+  - lang: ru
+    role: translation
+    text: Сёдзабуро Ватанабэ
+kind: person
+occupations: [publisher, businessperson, printmaker]
+birth: 1885-06-02
+death: 1962-02-14
+wikidata_id: Q3482794
+metadata:
+  sources: [Wikidata Q3482794 (retrieved 2026-11-01)]
+identifiers:
+  lc: nr90015836
+  viaf: "259964096"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q3482794
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3482794
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3482794
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q3482794

@@ -1,0 +1,40 @@
+public_id: 108079
+name: Tetsugorō Yorozu
+names:
+  - lang: ja
+    role: original
+    text: 萬鉄五郎
+  - Yorozu Tetsugorō
+  - lang: nl
+    role: translation
+    text: Tetsugoro Yorozu
+  - lang: zh
+    role: translation
+    text: 万鉄五郎
+birth: 1885-11-17
+death: 1927-05-01
+wikidata_id: Q7706856
+metadata:
+  sources: [Wikidata Q7706856 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5b/Yorozu_Tetsuoro_at_Chigasaki.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yorozu_Tetsuoro_at_Chigasaki.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 13519343x
+  gnd: "120557304"
+  idref: "140599843"
+  lc: n86051712
+  rkd: "270054"
+  ulan: "500121363"
+  viaf: "96576622"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q7706856
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q7706856

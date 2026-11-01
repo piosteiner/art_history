@@ -1,0 +1,26 @@
+public_id: 108025
+name: Urasenke
+names:
+  - lang: ja
+    role: translation
+    text: 裏千家
+  - lang: ru
+    role: translation
+    text: Урасэнкэ
+place: kyoto
+website_url: http://www.urasenke.or.jp/
+wikidata_id: Q3236696
+metadata:
+  sources: [Wikidata Q3236696 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fd/Kabuto_mon.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kabuto_mon.jpg
+    license: CC BY-SA 3.0
+    credit: it:User:Adriano
+identifiers:
+  gnd: 7698005-4
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q3236696

@@ -1,0 +1,38 @@
+public_id: 108249
+title: The Tropics (Morning)
+creator: imamura-shiko
+created: 1914
+kind: handscroll
+medium: Handscroll, colour on paper
+materials: [paper]
+dimensions: [45.7]
+institution: tokyo-national-museum
+description_md: "The masterpiece of [[artist/imamura-shiko]] (1880–1916), after a journey to India in 1914: two [[yamato-e]] handscrolls of a south Indian landscape in the morning and the evening, a seamless blend of Eastern and Western techniques — the absence of outlines a nod to Rinpa, the naive charm and repetitive brushstrokes reminiscent of Van Gogh and Gauguin. [[source/history-of-japanese-art|pp. 367–368, fig. 436]]"
+relationships:
+  - type: associated_with
+    to: movement/taisho-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 367–368, fig. 436
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 367–368, fig. 436
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 367–368, fig. 436
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 367–368, fig. 436
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 367–368, fig. 436
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 367–368, fig. 436
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 367–368, fig. 436
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 367–368, fig. 436

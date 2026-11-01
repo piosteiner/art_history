@@ -1,0 +1,16 @@
+public_id: 108039
+name: Artizon Museum
+kind: museum
+founded: 1952
+wikidata_id: Q913808
+metadata:
+  sources: [Wikidata Q913808 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q913808
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q913808

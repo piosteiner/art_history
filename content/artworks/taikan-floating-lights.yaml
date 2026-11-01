@@ -1,0 +1,38 @@
+public_id: 108254
+title: Floating Lights
+creator: yokoyama-taikan
+created: 1909
+kind: kakemono
+medium: Hanging scroll, colour on silk
+materials: [silk]
+dimensions: [143, 52]
+institution: museum-of-modern-art-ibaraki
+description_md: "[[artist/yokoyama-taikan]] (1868–1958) and Hishida Shunsō saw this form of divination at Varanasi in 1903: women in pale saris float plates of burning oil on the Ganges — if the flame does not go out, good fortune will follow. No outline, only flat areas of colour; the atmosphere light and clear, as if bleached by the Indian sun. [[source/history-of-japanese-art|pp. 366–367, fig. 434]]"
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 366–367, fig. 434
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 366–367, fig. 434
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 366–367, fig. 434
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 366–367, fig. 434
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 366–367, fig. 434
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 366–367, fig. 434
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 366–367, fig. 434
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 366–367, fig. 434

@@ -1,0 +1,34 @@
+public_id: 108236
+title: Daruma
+creator: nantenbo
+created: 1917
+kind: kakemono
+medium: Hanging scroll, ink on paper
+materials: [ink, paper]
+dimensions: [152.1, 83.4]
+description_md: "A [[zenga]] by [[artist/nantenbo]] (1839–1925), one of the best-known Zen masters of his day, who claimed to have produced over a hundred thousand works: taking Hakuin as his model, he abbreviated the patriarch’s robe to a single thick, rough brushstroke, so that Daruma appears as a rather startled, comical face isolated in space. [[source/history-of-japanese-art|pp. 361–362, fig. 428]]"
+relationships:
+  - type: associated_with
+    to: movement/taisho-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 361–362, fig. 428
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 361–362, fig. 428
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 361–362, fig. 428
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 361–362, fig. 428
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 361–362, fig. 428
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 361–362, fig. 428
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 361–362, fig. 428

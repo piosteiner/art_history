@@ -1,0 +1,52 @@
+public_id: 108092
+name: Fukuzawa Yukichi
+names:
+  - kind: art_name
+    role: alternative
+    text: 三十一谷人
+  - lang: ja
+    role: original
+    text: 福澤諭吉
+  - Yukichi Fukuzawa
+  - lang: ko
+    role: translation
+    text: 후쿠자와 유키치
+  - lang: ru
+    role: translation
+    text: Фукудзава Юкити
+kind: person
+occupations: [translator, pedagogue, philosopher, professor, critic, journalist, writer, politician, businessperson, political scientist, opinion journalist]
+birth: 1835-01-10
+death: 1901-02-03
+wikidata_id: Q355447
+metadata:
+  sources: [Wikidata Q355447 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/db/Fukuzawa_Yukichi_1891.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fukuzawa_Yukichi_1891.jpg
+    license: Public domain
+    credit: Fukuzawa Research Center
+identifiers:
+  bnf: 12171418g
+  gnd: "118952633"
+  idref: "030260280"
+  lc: n81108547
+  nlk: KAC199631478
+  viaf: "71431899"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q355447
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q355447
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q355447
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q355447

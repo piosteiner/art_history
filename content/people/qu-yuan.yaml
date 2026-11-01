@@ -1,0 +1,52 @@
+public_id: 108101
+name: Qu Yuan
+given_name: Qu
+family_name: Yuan
+names:
+  - Ch‘ü P‘ing
+  - Ch'ü Yüan
+  - lang: ja
+    role: translation
+    text: 屈原
+  - lang: ko
+    role: translation
+    text: 굴원
+  - lang: ru
+    role: translation
+    text: Цюй Юань
+kind: person
+occupations: [poet, writer, politician]
+birth: -343
+death: -278
+wikidata_id: Q313330
+metadata:
+  sources: [Wikidata Q313330 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c6/Qu_Yuan_Chen_Hongshou_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Qu_Yuan_Chen_Hongshou_2.jpg
+    license: Public domain
+    credit: Chen Hongshou
+identifiers:
+  bnf: "121633999"
+  gnd: "118991906"
+  idref: "030161789"
+  lc: n80117265
+  nlk: KAC199631196
+  viaf: "297713307"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q313330
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q313330
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q313330
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q313330

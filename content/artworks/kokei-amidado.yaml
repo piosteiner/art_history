@@ -1,0 +1,38 @@
+public_id: 108227
+title: Amidadō
+creator: kobayashi-kokei
+created: 1915
+kind: kakemono
+medium: Hanging scroll, colour on silk
+materials: [silk]
+dimensions: [216, 90.6]
+institution: tokyo-national-museum
+description_md: "An early masterwork of [[artist/kobayashi-kokei]] (1883–1957): the long, narrow hanging scroll is divided horizontally by a brightly coloured view of the [[artwork/byodo-in-phoenix-hall]], as if moonlight had suddenly lit the temple, splashing light across the upper part of the red posts; through the open doors the Amida glows as if from a second light within. [[source/history-of-japanese-art|pp. 368–369, fig. 438]]"
+relationships:
+  - type: associated_with
+    to: movement/taisho-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 368–369, fig. 438
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 368–369, fig. 438
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 368–369, fig. 438
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 368–369, fig. 438
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 368–369, fig. 438
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 368–369, fig. 438
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 368–369, fig. 438
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 368–369, fig. 438

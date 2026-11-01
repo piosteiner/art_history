@@ -1,0 +1,9 @@
+public_id: 108202
+name: tea container
+names:
+  - lang: ja
+    role: original
+    text: "{茶入|ちゃいれ}"
+category: object type
+parent: vessel
+definition: A small lidded container for powdered tea in the tea ceremony (natsume, chaire).

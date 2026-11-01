@@ -1,0 +1,13 @@
+public_id: 108048
+name: Ogawa Jihei
+given_name: Ogawa
+family_name: Jihei
+death: 1925
+wikidata_id: Q134709014
+metadata:
+  sources: [Wikidata Q134709014 (retrieved 2026-11-01)]
+sources:
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q134709014

@@ -1,0 +1,33 @@
+public_id: 108065
+name: Nakahara Nantenbo
+names:
+  - lang: ja
+    role: original
+    text: 中原鄧州
+  - Nakahara Nantenbō
+  - Hakugaikutsu (studio name)
+  - Zenchū Tōjū (formal Buddhist name)
+birth: 1839
+death: 1925-02-12
+wikidata_id: Q927161
+metadata:
+  sources: [Wikidata Q927161 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8f/Nakahara_Toshu.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nakahara_Toshu.jpg
+    license: Public domain
+    credit: 撮影者不明
+identifiers:
+  gnd: "1201908663"
+  lc: n85200106
+  ulan: "500123322"
+  viaf: "96591837"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q927161
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q927161

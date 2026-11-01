@@ -1,0 +1,45 @@
+public_id: 108077
+name: Ryūsei Kishida
+names:
+  - lang: ja
+    role: original
+    text: 岸田劉生
+  - Kishida Ryūsei
+  - Ryusei Kishida
+  - Ryuusei Kishida
+  - lang: it
+    role: translation
+    text: Ryûsei Kishida
+  - lang: ko
+    role: translation
+    text: 기시다 류세이
+  - lang: ru
+    role: translation
+    text: Рюсэи Кисида
+birth: 1891-06-23
+death: 1929-12-20
+wikidata_id: Q3021493
+metadata:
+  sources: [Wikidata Q3021493 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/58/Kishida_Ryusei_Self-Portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kishida_Ryusei_Self-Portrait.jpg
+    license: Public domain
+    credit: Ryūsei Kishida
+identifiers:
+  bnf: "162715759"
+  gnd: "120892944"
+  idref: 08385665X
+  lc: n79099096
+  rkd: "343341"
+  ulan: "500121267"
+  viaf: "60362067"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3021493
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3021493

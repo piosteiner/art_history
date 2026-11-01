@@ -1,0 +1,38 @@
+public_id: 108206
+title: Harvest
+creator: asai-chu
+created: 1890
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [69, 98.5]
+institution: tokyo-university-of-the-arts
+description_md: "One of the masterpieces of [[artist/asai-chu]] (1856–1907), Fontanesi’s most talented pupil and a founder of the Meiji Art Society, shown at its exhibition of 1890: soft golden light pervades three peasants at the harvest, giving the whole a lyrical, unfocused quality much like Fontanesi’s. [[source/history-of-japanese-art|p. 373, fig. 444]]"
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 373, fig. 444
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 373, fig. 444
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 373, fig. 444
+  created:
+    - source: history-of-japanese-art
+      locator: p. 373, fig. 444
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 373, fig. 444
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 373, fig. 444
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 373, fig. 444
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 373, fig. 444

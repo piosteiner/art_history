@@ -1,0 +1,45 @@
+public_id: 108070
+name: Kokei Kobayashi
+names:
+  - lang: ja
+    role: original
+    text: 小林古径
+  - Kobayashi Shigeru
+  - Shigeru Kobayashi
+  - Kobayashi Kokei
+  - lang: zh
+    role: translation
+    text: 小林古徑
+  - lang: ko
+    role: translation
+    text: 고바야시 고케이
+  - lang: ru
+    role: translation
+    text: Кокэй Кобаяси
+birth: 1883-02-11
+death: 1957-04-03
+wikidata_id: Q3198111
+metadata:
+  sources: [Wikidata Q3198111 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Kobayashi_Kokei_photographed_by_Shigeru_Tamura.jpg/1280px-Kobayashi_Kokei_photographed_by_Shigeru_Tamura.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kobayashi_Kokei_photographed_by_Shigeru_Tamura.jpg
+    license: Public domain
+    credit: Shigeru Tamura
+identifiers:
+  bnf: 16995650t
+  gnd: "131946242"
+  idref: "226105784"
+  lc: n81116877
+  rkd: "439206"
+  ulan: "500123268"
+  viaf: "38065394"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3198111
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3198111

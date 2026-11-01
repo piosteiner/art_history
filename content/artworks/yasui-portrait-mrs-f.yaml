@@ -1,0 +1,34 @@
+public_id: 108262
+title: Portrait of Mrs F.
+creator: yasui-sotaro
+created: 1939
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [88, 66]
+description_md: "Among the undisputed masterpieces of [[artist/yasui-sotaro]] (1888–1955), who studied with Asai Chū and at the Académie Julian and found his authentic style only in 1929: the wife of a businessman and collector, herself an essayist, in a Western pose before a brownish-yellow ground dotted with Japanese-style medallions — flatness and decorative motifs blended with Western costume and pose. [[source/history-of-japanese-art|pp. 377–378, fig. 450]]"
+relationships:
+  - type: associated_with
+    to: movement/showa-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 377–378, fig. 450
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 377–378, fig. 450
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 377–378, fig. 450
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 377–378, fig. 450
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 377–378, fig. 450
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 377–378, fig. 450
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 377–378, fig. 450

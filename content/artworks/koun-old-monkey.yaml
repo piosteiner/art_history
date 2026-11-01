@@ -1,0 +1,38 @@
+public_id: 108229
+title: Old Monkey
+creator: takamura-koun
+created: 1892
+kind: sculpture
+medium: Wood
+materials: [wood]
+dimensions: [90.9]
+institution: tokyo-national-museum
+description_md: By [[artist/takamura-koun]] (1852–1934), trained in traditional Buddhist image-making, who adapted wood carving to Western subjects; professor of sculpture at the Tokyo Bijutsu Gakkō from 1889. An old but muscular monkey twists to the right, glaring upward and grasping a few feathers of a bird too quick to catch — carved from a single piece of horse-chestnut wood, the fur a mass of wavy curls; one of the masterpieces of Meiji sculpture. [[source/history-of-japanese-art|pp. 357–358, fig. 421]]
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 357–358, fig. 421
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 357–358, fig. 421
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 357–358, fig. 421
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 357–358, fig. 421
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 357–358, fig. 421
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 357–358, fig. 421
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 357–358, fig. 421
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 357–358, fig. 421

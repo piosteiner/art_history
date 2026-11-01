@@ -1,0 +1,37 @@
+public_id: 108102
+name: Kiyohara Tama
+names:
+  - lang: ja
+    role: original
+    text: ラグーザ玉
+  - Eleonora Ragusa
+  - Ragusa Tama
+  - Kiyohara Otama
+  - O'Tama Chiovara
+  - lang: ru
+    role: translation
+    text: Киёхара Тама
+birth: 1861-07-17
+death: 1939-04-06
+wikidata_id: Q1750511
+metadata:
+  sources: [Wikidata Q1750511 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e3/Kiyohara_Tamayo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kiyohara_Tamayo.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "124095224"
+  idref: "253825539"
+  lc: n82073406
+  viaf: "77239294"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1750511
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1750511

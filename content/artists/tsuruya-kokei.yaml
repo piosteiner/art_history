@@ -1,0 +1,29 @@
+public_id: 108087
+name: Kōkei Tsuruya
+names:
+  - lang: ja
+    role: original
+    text: 弦屋光渓
+  - Mitsui Gen
+  - Tsuruya Kōkei
+  - Kōkei  Mitsui
+  - Mitsui Kōkei
+  - Kokei Tsuruya
+  - Koukei Tsuruya
+  - Tsuruya Kokei
+  - lang: ru
+    role: translation
+    text: Кокэи Цуруя
+birth: 1946-07
+wikidata_id: Q11487491
+metadata:
+  sources: [Wikidata Q11487491 (retrieved 2026-11-01)]
+identifiers:
+  lc: nr2003014911
+  ulan: "500338156"
+  viaf: "14712079"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q11487491

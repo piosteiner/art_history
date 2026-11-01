@@ -1,0 +1,35 @@
+public_id: 108107
+name: Takarazuka
+names:
+  - lang: ja
+    role: original
+    text: 宝塚市
+  - lang: zh
+    role: translation
+    text: 寶塚市
+  - lang: ko
+    role: translation
+    text: 다카라즈카시
+  - lang: ru
+    role: translation
+    text: Такарадзука
+kind: settlement
+parent: hyogo
+country_code: JP
+location: [135.36031, 34.8]
+wikidata_id: Q823967
+metadata:
+  sources: [Wikidata Q823967 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q823967
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q823967
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q823967

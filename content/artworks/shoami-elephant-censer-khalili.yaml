@@ -1,0 +1,39 @@
+public_id: 108251
+title: Incense burner in the form of an elephant
+creator: shoami-katsuyoshi
+created: 1868/1908
+kind: censer
+medium: Silver with gold and coloured metal inlay, stones and enamel
+materials: [silver, gold]
+dimensions: [37, 36]
+institution: khalili-collections
+inventory_number: M72
+description_md: "When the samurai lost their swords, some metalworkers turned to objets de vertu for the international expositions: an overwhelming array of metal inlay by [[artist/shoami-katsuyoshi]] (1831–1908) of the Shōami school of sword-guard makers. [[source/history-of-japanese-art|p. 352, fig. 411]]"
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 352, fig. 411
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 352, fig. 411
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 352, fig. 411
+  created:
+    - source: history-of-japanese-art
+      locator: p. 352, fig. 411
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 352, fig. 411
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 352, fig. 411
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 352, fig. 411
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 352, fig. 411

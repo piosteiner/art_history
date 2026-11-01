@@ -1,0 +1,34 @@
+public_id: 108219
+title: Ah! Yokokawa National School
+creator: inoue-yuichi
+created: 1978
+kind: calligraphy
+medium: Ink on paper
+materials: [ink, paper]
+dimensions: [145, 244]
+description_md: "[[artist/inoue-yuichi]] (1916–1985), a wild man of the brush who made brushes from brooms and even used his head and hands, lets the mass of characters be nothing but the expression of his brush — in many ways the natural outcome of fifteen hundred years of Japanese calligraphy. [[source/history-of-japanese-art|p. 381, fig. 454]]"
+relationships:
+  - type: associated_with
+    to: movement/showa-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 381, fig. 454
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 381, fig. 454
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 381, fig. 454
+  created:
+    - source: history-of-japanese-art
+      locator: p. 381, fig. 454
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 381, fig. 454
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 381, fig. 454
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 381, fig. 454

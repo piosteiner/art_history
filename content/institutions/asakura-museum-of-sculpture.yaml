@@ -1,0 +1,41 @@
+public_id: 108020
+name: Asakura Museum of Sculpture
+names:
+  - lang: ja
+    role: translation
+    text: 朝倉彫塑館
+  - lang: zh
+    role: translation
+    text: 朝倉雕塑館
+kind: museum
+founded: 1967
+place: tokyo
+location: [139.76855, 35.72685]
+website_url: https://www.taitogeibun.net/asakura/
+wikidata_id: Q11517304
+metadata:
+  sources: [Wikidata Q11517304 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a8/ASAKURA_Museum_of_Sculpture_20051002.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:ASAKURA_Museum_of_Sculpture_20051002.jpg
+    license: Public domain
+    credit: ja:利用者:Jmho
+identifiers:
+  viaf: "571146998421518940107"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q11517304
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q11517304
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q11517304
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q11517304

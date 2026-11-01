@@ -1,0 +1,53 @@
+public_id: 108106
+name: Sakutarō Hagiwara
+names:
+  - lang: ja
+    role: original
+    text: 萩原朔太郎
+  - Sakutaro Hagiwara
+  - Sakutarou Hagiwara
+  - lang: de
+    role: translation
+    text: Hagiwara Sakutarō
+  - lang: ko
+    role: translation
+    text: 하기와라 사쿠타로
+  - lang: ru
+    role: translation
+    text: Сакутаро Хагивара
+kind: person
+occupations: [poet, novelist, writer, literary critic, waka poet, composer, essayist]
+birth: 1886-11-01
+death: 1942-05-11
+wikidata_id: Q583527
+metadata:
+  sources: [Wikidata Q583527 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/99/Hagiwara_Sakutaro.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hagiwara_Sakutaro.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 12963446c
+  gnd: "118928597"
+  idref: "050141260"
+  lc: n81019912
+  nlk: KAC199641171
+  viaf: "29664195"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q583527
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q583527
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q583527
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q583527

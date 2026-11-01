@@ -1,0 +1,29 @@
+public_id: 108057
+name: Naganuma Moriyoshi
+names:
+  - lang: ja
+    role: original
+    text: 長沼守敬
+birth: 1857-11-09
+death: 1942-07-18
+wikidata_id: Q30251109
+metadata:
+  sources: [Wikidata Q30251109 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/db/Naganuma_Moriyoshi.png
+    source_url: https://commons.wikimedia.org/wiki/File:Naganuma_Moriyoshi.png
+    license: Public domain
+    credit: Unknown photographer
+identifiers:
+  gnd: "124666655"
+  lc: nr93039050
+  viaf: "20620888"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q30251109
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q30251109

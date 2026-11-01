@@ -1,0 +1,67 @@
+public_id: 108099
+name: Emperor Meiji
+names:
+  - lang: ja
+    role: original
+    text: 明治天皇
+  - Meiji-taitei
+  - Meiji the Good
+  - Prince Mutsuhito
+  - Imperial Prince Mutsuhito
+  - Meiji-seitei
+  - Sachi-no-miya
+  - Prince Sachi
+  - Sachi-no-miya Mutsuhito-shinnou
+  - Mutsu Hito
+  - Meiji the Great
+  - Sachi-no-miya Mutsuhito-shinnō
+  - Mutsuhito, Prince Sachi
+  - Meiji-tennō
+  - Sachi-no-miya Mutsuhito-shinno
+  - Meiji
+  - lang: es
+    role: translation
+    text: Emperador Meiji
+  - lang: ko
+    role: translation
+    text: 메이지 천황
+  - lang: ru
+    role: translation
+    text: Император Мэйдзи
+kind: person
+occupations: [monarch, aristocrat]
+birth: 1852-11-03
+death: 1912-07-30
+wikidata_id: Q174231
+metadata:
+  sources: [Wikidata Q174231 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Meiji_Emperor.jpg/1280px-Meiji_Emperor.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Meiji_Emperor.jpg
+    license: Public domain
+    credit: Uchida Kuichi
+identifiers:
+  bnf: "148392651"
+  dodis: P4692
+  gnd: "118996584"
+  idref: "080488250"
+  kulturnav: f6dbed5c-54e2-4aa8-8781-3083afdeee84
+  lc: n81096007
+  viaf: "39644303"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q174231
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q174231
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q174231
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q174231

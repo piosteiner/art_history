@@ -1,0 +1,31 @@
+public_id: 108214
+title: Shallow dish with loop designs in black and cream
+creator: hamada-shoji
+created: 1954
+kind: dish
+medium: Stoneware with glazes
+materials: [stoneware]
+dimensions_note: diameter 26.7 cm
+description_md: "A mature work of [[artist/hamada-shoji]] (1894–1978), friend of [[person/yanagi-soetsu]] and [[artist/bernard-leach]] and a leading figure of [[mingei]]: on a round plate a traditional loop pattern, the “horse’s eye” of Edo peasant wares, the black and white glazes trailed unevenly into two large loops. Hamada built a climbing kiln with Leach at St Ives (1920–1923) and then settled at Mashiko. [[source/history-of-japanese-art|pp. 353–354, fig. 413]]"
+relationships:
+  - type: associated_with
+    to: movement/showa-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 353–354, fig. 413
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 353–354, fig. 413
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 353–354, fig. 413
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 353–354, fig. 413
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 353–354, fig. 413
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 353–354, fig. 413

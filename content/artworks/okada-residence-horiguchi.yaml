@@ -1,0 +1,36 @@
+public_id: 108241
+title: Okada residence, Ōmori
+creator: horiguchi-sutemi
+created: 1934
+kind: building
+medium: Wood
+materials: [wood]
+description_md: "The best-known prewar design of [[artist/horiguchi-sutemi]] (1895–1984), leader of the Secessionist Architectural Society (Bunriha) and friend of Mendelsohn, Gropius and Oud: two traditional tatami rooms placed beside a Western-style living room, each with its own view of the garden — modernist ideas brought round to the practical simplicity of shoin architecture. No longer extant. [[source/history-of-japanese-art|pp. 349–350, fig. 407]]"
+relationships:
+  - type: created_in
+    to: place/tokyo
+    period: 1934
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 349–350, fig. 407
+  - type: associated_with
+    to: movement/showa-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 349–350, fig. 407
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 349–350, fig. 407
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 349–350, fig. 407
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 349–350, fig. 407
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 349–350, fig. 407
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 349–350, fig. 407

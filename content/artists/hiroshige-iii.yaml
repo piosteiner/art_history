@@ -1,0 +1,44 @@
+public_id: 108043
+name: Hiroshige III
+names:
+  - kind: birth
+    lang: ja-Hani
+    role: alternative
+    text: 後藤 寅吉
+  - lang: ja
+    role: original
+    text: 歌川広重
+  - Hiroshige
+  - Hiroshire Utagawa
+  - Shigemasa Utagawa
+  - Shigetora Utagawa
+  - Hiroshige III Utagawa
+  - lang: es
+    role: translation
+    text: Utagawa Hiroshige III
+  - lang: ja
+    role: original
+    text: 三代目 歌川広重
+  - lang: zh
+    role: translation
+    text: 三代目歌川廣重
+birth: 1842
+death: 1894-03-28
+wikidata_id: Q653932
+metadata:
+  sources: [Wikidata Q653932 (retrieved 2026-11-01)]
+identifiers:
+  gnd: 114879428X
+  kulturnav: ea8860b2-2562-4e05-995a-b7259fdbb792
+  lc: n88269383
+  ulan: "500249642"
+  viaf: "138288055"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q653932
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q653932

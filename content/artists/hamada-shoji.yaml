@@ -1,0 +1,52 @@
+public_id: 108053
+name: Shōji Hamada
+names:
+  - kind: art_name
+    role: alternative
+    text: 庄司
+  - lang: ja
+    role: original
+    text: 濱田庄司
+  - Shoji Hamada
+  - Shouji Hamada
+  - Hamada
+  - Hamada Shoji
+  - Hamada Shouji
+  - lang: zh
+    role: translation
+    text: 浜田庄司
+  - lang: ko
+    role: translation
+    text: 하마다 쇼지
+  - lang: ru
+    role: translation
+    text: Сёдзи Хамада
+birth: 1894-12-09
+death: 1978-01-05
+wikidata_id: Q3090171
+metadata:
+  sources: [Wikidata Q3090171 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e3/Sh%C5%8Dji_Hamada.png
+    source_url: https://commons.wikimedia.org/wiki/File:Sh%C5%8Dji_Hamada.png
+    license: Public domain
+    credit: Unidentified (Ensian published by University of Michigan)
+identifiers:
+  bnf: "124555311"
+  gnd: "118720104"
+  idref: "033716277"
+  kulturnav: b5b0d0dd-0875-4f2a-a7b3-e7b28b6e59ea
+  lc: n50023100
+  nlk: KAC201308443
+  rkd: "287361"
+  ulan: "500078963"
+  viaf: "27162470"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3090171
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3090171

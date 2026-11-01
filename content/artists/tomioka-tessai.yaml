@@ -1,0 +1,50 @@
+public_id: 108064
+name: Tomioka Tessai
+names:
+  - lang: ja
+    role: original
+    text: 富岡鉄斎
+  - Tetsujin
+  - Tesshi
+  - Yūken
+  - Tetsugai
+  - Tessai Tomioka
+  - Tomioka Yūsuke
+  - Tomioka Yusuke
+  - Tessai
+  - lang: zh
+    role: translation
+    text: 富岡鐵齋
+  - lang: ko
+    role: translation
+    text: 도미오카 뎃사이
+  - lang: ru
+    role: translation
+    text: Тэссаи Томиока
+birth: 1837-01-25
+death: 1924-12-31
+wikidata_id: Q1377454
+metadata:
+  sources: [Wikidata Q1377454 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3f/Tomioka_Tessai.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tomioka_Tessai.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "135092303"
+  gnd: "119379902"
+  idref: "066912431"
+  lc: n82070638
+  rkd: "311697"
+  ulan: "500121336"
+  viaf: "96576499"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1377454
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1377454

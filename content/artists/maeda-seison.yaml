@@ -1,0 +1,39 @@
+public_id: 108069
+name: Seison Maeda
+names:
+  - lang: ja
+    role: original
+    text: 前田青邨
+  - Seison
+  - Renzō
+  - Maeda Seison
+  - lang: ko
+    role: translation
+    text: 마에다 세이손
+  - lang: ru
+    role: translation
+    text: Сэисон Маэда
+birth: 1885-01-27
+death: 1977-10-29
+wikidata_id: Q3477943
+metadata:
+  sources: [Wikidata Q3477943 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/31/Seison_Maeda_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Seison_Maeda_01.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "131946218"
+  lc: n81118839
+  ulan: "500121282"
+  viaf: "81149106005668490560"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3477943
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3477943

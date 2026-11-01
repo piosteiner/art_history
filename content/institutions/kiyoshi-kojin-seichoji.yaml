@@ -1,0 +1,38 @@
+public_id: 108108
+name: Kiyoshikōjin Seichō-ji Temple
+names:
+  - Kiyoshikōjin Seichō-ji
+  - lang: ja
+    role: translation
+    text: 清荒神清澄寺
+kind: temple
+place: takarazuka
+location: [135.35258, 34.82214]
+address: 兵庫県宝塚市米谷字清シ1
+wikidata_id: Q3197670
+metadata:
+  sources: [Wikidata Q3197670 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Kiyoshikojin05s2000.jpg/1280px-Kiyoshikojin05s2000.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kiyoshikojin05s2000.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  viaf: "135146998424118940033"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q3197670
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q3197670
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q3197670
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q3197670

@@ -57,10 +57,6 @@ sources:
     - accessed: 2026-11-01
       property: P31
       wikidata: Q213322
-  place:
-    - accessed: 2026-11-01
-      property: P131
-      wikidata: Q213322
   address:
     - accessed: 2026-11-01
       property: P6375

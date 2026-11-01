@@ -1,0 +1,13 @@
+public_id: 108200
+name: Satsuma ware
+names:
+  - lang: ja
+    role: original
+    text: "{薩摩焼|さつまやき}"
+category: material
+parent: earthenware
+definition: Low-fired earthenware with gilt and coloured decoration, first made in the Kyūshū domain of Satsuma and in the Meiji period mass-produced for export.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 352

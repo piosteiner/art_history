@@ -1,0 +1,40 @@
+public_id: 108061
+name: Rokuzan Ogiwara
+names:
+  - lang: ja
+    role: original
+    text: 荻原碌山
+  - Morie Ogiwara
+  - Moriye Ogihara
+  - lang: zh
+    role: translation
+    text: 荻原守衛
+  - lang: ko
+    role: translation
+    text: 오기와라 로쿠잔
+  - lang: ru
+    role: translation
+    text: Рокудзан Огивара
+birth: 1879-12-01
+death: 1910-04-22
+wikidata_id: Q7360123
+metadata:
+  sources: [Wikidata Q7360123 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1e/Ogiwara.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ogiwara.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  lc: n82073774
+  ulan: "500121395"
+  viaf: "72737769"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q7360123
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q7360123

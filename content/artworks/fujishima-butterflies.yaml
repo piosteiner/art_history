@@ -1,0 +1,34 @@
+public_id: 108211
+title: Butterflies
+creator: fujishima-takeji
+created: 1904
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [44.5, 44.5]
+description_md: "A representative work of [[artist/fujishima-takeji]] (1867–1943), Kuroda’s assistant at the Tokyo Bijutsu Gakkō: a young girl kissing a flower, highlighted against deep blue amid a swarm of butterflies — some shading for face and hands, but flat and two-dimensional overall, a modern work drawing on Japan’s decorative tradition. (Mason’s caption dates it 1906, his text 1904.) [[source/history-of-japanese-art|p. 376, fig. 448]]"
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 376, fig. 448
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 376, fig. 448
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 376, fig. 448
+  created:
+    - source: history-of-japanese-art
+      locator: p. 376, fig. 448
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 376, fig. 448
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 376, fig. 448
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 376, fig. 448

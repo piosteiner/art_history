@@ -1,0 +1,37 @@
+public_id: 108257
+title: Tokyo National Museum (Honkan)
+attribution_label: Watanabe Jin
+created: 1937
+kind: building
+medium: Steel-reinforced concrete
+materials: [concrete]
+institution: tokyo-national-museum
+description_md: "The prize-winning design of Watanabe Jin (1887–1973) for the Tokyo Imperial Museum in the “imperial-crown style” of Japanese nationalism in the 1930s: a curving Japanese roof and porte-cochère, a façade that reads as two storeys over three, upper galleries lit by daylight for sculpture and objects, the lower ones artificially for light-sensitive paintings. [[source/history-of-japanese-art|p. 349, fig. 406]]"
+relationships:
+  - type: created_in
+    to: place/tokyo
+    period: 1937
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 349, fig. 406
+  - type: associated_with
+    to: movement/showa-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 349, fig. 406
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 349, fig. 406
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 349, fig. 406
+  created:
+    - source: history-of-japanese-art
+      locator: p. 349, fig. 406
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 349, fig. 406
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 349, fig. 406

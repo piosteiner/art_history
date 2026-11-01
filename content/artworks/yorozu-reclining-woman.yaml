@@ -1,0 +1,38 @@
+public_id: 108263
+title: Reclining Woman
+creator: yorozu-tetsugoro
+created: 1912
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [162, 97]
+institution: national-museum-of-modern-art-tokyo
+description_md: "Painted in the year [[artist/yorozu-tetsugoro]] (1885–1927) graduated and co-founded the Fusainkai: a woman, nude to the waist, on a grassy hill, the grass, the trees and the background seen from three different viewpoints — Matisse and Van Gogh melded into Yorozu’s own vision. [[source/history-of-japanese-art|p. 378, fig. 451]]"
+relationships:
+  - type: associated_with
+    to: movement/taisho-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 378, fig. 451
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 378, fig. 451
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 378, fig. 451
+  created:
+    - source: history-of-japanese-art
+      locator: p. 378, fig. 451
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 378, fig. 451
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 378, fig. 451
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 378, fig. 451
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 378, fig. 451

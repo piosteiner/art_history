@@ -1,0 +1,28 @@
+public_id: 108056
+name: Ōkuma Ujihiro
+names:
+  - lang: ja
+    role: original
+    text: 大熊氏廣
+birth: 1856-07-14
+death: 1934-03-20
+wikidata_id: Q30255569
+metadata:
+  sources: [Wikidata Q30255569 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/00/%C5%8Ckuma_Ujihiro.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%C5%8Ckuma_Ujihiro.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "1034146858"
+  viaf: "259956638"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q30255569
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q30255569

@@ -1,0 +1,49 @@
+public_id: 108015
+name: Museum of Modern Art, Ibaraki
+names:
+  - The Museum of Modern Art, Ibaraki
+  - Ibaraki-ken kindai bijutsukan
+  - lang: fr
+    role: translation
+    text: Musée d'art moderne, Ibaraki
+  - lang: de
+    role: translation
+    text: Museum of Modern Art Ibaraki
+  - lang: ja
+    role: translation
+    text: 茨城県近代美術館
+kind: museum
+founded: 1988
+place: mito
+location: [140.46539, 36.36779]
+website_url: http://www.modernart.museum.ibk.ed.jp/
+wikidata_id: Q11617518
+metadata:
+  sources: [Wikidata Q11617518 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Museum_of_Modern_Art_Ibaraki.JPG/1280px-Museum_of_Modern_Art_Ibaraki.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Museum_of_Modern_Art_Ibaraki.JPG
+    license: Public domain
+    credit: Abasaa
+identifiers:
+  gnd: 16320157-2
+  idref: "174646216"
+  lc: n88070451
+  viaf: "156508780"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q11617518
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q11617518
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q11617518
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q11617518

@@ -1,0 +1,42 @@
+public_id: 108231
+title: Mirror Room — Pumpkin
+names: [Mirror Room (Pumpkin)]
+creator: yayoi-kusama
+created: 1991
+kind: installation
+medium: Mirror-encased wooden cubicle with soft sculptures of pumpkins
+materials: [mirror, wood]
+dimensions: [200, 200, 200]
+institution: hara-museum
+description_md: "An [[installation]] by [[artist/yayoi-kusama]] (b. 1929), whose “obsessional art” of infinitely repeated images has a compelling and provocative voice: a mirrored room, a canvas she has used since the 1960s, looked into from one open end and filled with soft-sculpture pumpkins — a psychedelic, almost ominously cute vision of the infinite. [[source/history-of-japanese-art|pp. 390–391, fig. 467]]"
+wikidata_id: Q42193010
+metadata:
+  sources: [Wikidata Q42193010 (retrieved 2026-10-05)]
+relationships:
+  - type: associated_with
+    to: movement/heisei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 390–391, fig. 467
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 390–391, fig. 467
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 390–391, fig. 467
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 390–391, fig. 467
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 390–391, fig. 467
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 390–391, fig. 467
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 390–391, fig. 467
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 390–391, fig. 467

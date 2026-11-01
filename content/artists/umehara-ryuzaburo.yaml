@@ -1,0 +1,44 @@
+public_id: 108080
+name: Ryuzaburo Umehara
+names:
+  - lang: ja
+    role: original
+    text: 梅原龍三郎
+  - Ryūzaburō Umehara
+  - Ryûzaburô Umehara
+  - lang: de
+    role: translation
+    text: Umehara Ryūzaburō
+  - lang: ko
+    role: translation
+    text: 우메하라 류자부로
+  - lang: ru
+    role: translation
+    text: Рюдзабуро Умэхара
+birth: 1888-03-09
+death: 1986-01-16
+wikidata_id: Q934438
+metadata:
+  sources: [Wikidata Q934438 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/23/Umehara_Ryuzaburo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Umehara_Ryuzaburo.jpg
+    license: Public domain
+    credit: 朝日新聞社
+identifiers:
+  bnf: 12757373d
+  gnd: "141690496"
+  idref: 22554282X
+  lc: n84210516
+  rkd: "369823"
+  ulan: "500121417"
+  viaf: "97149294076680520288"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q934438
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q934438

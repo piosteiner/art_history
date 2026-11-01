@@ -1,0 +1,39 @@
+public_id: 108266
+title: Writing box with leaves, folding paper and a reel of cord
+creator: shibata-zeshin
+created: 1868/1891
+kind: inkstone case
+medium: Lacquer
+materials: [lacquer]
+dimensions: [4.8, 22, 21.5]
+institution: khalili-collections
+inventory_number: BL39
+description_md: "An [[inkstone-case]] decorated with “elegant pastimes” by [[artist/shibata-zeshin]] (1807–1891), the lacquer master who kept his market at home and abroad: on the cover, folded sheets of paper press autumn leaves and a spool of silk thread; inside, the paddle and balls of a New Year game like shuttlecock. [[source/history-of-japanese-art|pp. 352–353, fig. 412]]"
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 352–353, fig. 412
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 352–353, fig. 412
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 352–353, fig. 412
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 352–353, fig. 412
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 352–353, fig. 412
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 352–353, fig. 412
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 352–353, fig. 412
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 352–353, fig. 412

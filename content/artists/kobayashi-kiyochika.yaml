@@ -1,0 +1,43 @@
+public_id: 108084
+name: Kobayashi Kiyochika
+names:
+  - lang: ja
+    role: original
+    text: 小林清親
+  - Kiyochika Kobayashi
+  - lang: zh
+    role: translation
+    text: 小林淸親
+  - lang: ko
+    role: translation
+    text: 고바야시 기요치카
+  - lang: ru
+    role: translation
+    text: Киётика Кобаяси
+birth: 1847-09-10
+death: 1915-11-28
+wikidata_id: Q3121142
+metadata:
+  sources: [Wikidata Q3121142 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cc/Kobayashi_Kiyochika_Photograph_c1873.png
+    source_url: https://commons.wikimedia.org/wiki/File:Kobayashi_Kiyochika_Photograph_c1873.png
+    license: Public domain
+    credit: Shimooka Renjō
+identifiers:
+  bnf: 15626187x
+  gnd: "118889877"
+  idref: 19001038X
+  lc: n81124700
+  rkd: "409141"
+  ulan: "500121369"
+  viaf: "296149066350565600463"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3121142
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3121142

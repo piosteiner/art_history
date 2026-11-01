@@ -1,0 +1,38 @@
+public_id: 108246
+title: Kiyohara Tama
+creator: vincenzo-ragusa
+created: 1878
+kind: sculpture
+medium: Bronze
+materials: [bronze]
+dimensions: [48.5]
+institution: tokyo-university-of-the-arts
+description_md: "A bust of his wife [[artist/kiyohara-tama]] (1861–1939), herself a painter, by [[artist/vincenzo-ragusa]], who taught Western modelling and bronze casting at the Kōbu Bijutsu Gakkō from 1876 to 1882 and set up a foundry in his house: a technically accomplished example of the realistic neoclassical style, the smooth planes of the face against her Western-style hair. [[source/history-of-japanese-art|pp. 355–356, fig. 417]]"
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 355–356, fig. 417
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 355–356, fig. 417
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 355–356, fig. 417
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 355–356, fig. 417
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 355–356, fig. 417
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 355–356, fig. 417
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 355–356, fig. 417
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 355–356, fig. 417

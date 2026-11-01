@@ -1,0 +1,39 @@
+public_id: 108218
+title: Nude
+creator: yamamoto-hosui
+created: c. 1880
+created_span: uncertain
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [83, 134.4]
+institution: museum-of-fine-arts-gifu
+description_md: "Painted in Paris by [[artist/yamamoto-hosui]] (1850–1906), the first Japanese artist to study abroad, a pupil of Jean-Léon Gérôme: technically accomplished and academic in its idealized nude. His greatest contribution to [[yoga]] was converting Kuroda Seiki from law to painting. [[source/history-of-japanese-art|p. 372, fig. 443]]"
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 372, fig. 443
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 372, fig. 443
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 372, fig. 443
+  created:
+    - source: history-of-japanese-art
+      locator: p. 372, fig. 443
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 372, fig. 443
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 372, fig. 443
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 372, fig. 443
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 372, fig. 443

@@ -1,0 +1,39 @@
+public_id: 108078
+name: Sōtarō Yasui
+names:
+  - lang: ja
+    role: original
+    text: 安井曾太郎
+  - Yasui Sōtarō
+  - Sotaro Yasui
+  - Soutarou Yasui
+  - Yasui Sotaro
+  - lang: ru
+    role: translation
+    text: Сотаро Ясуи
+birth: 1888-05-17
+death: 1955-12-14
+wikidata_id: Q729235
+metadata:
+  sources: [Wikidata Q729235 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/39/Yasui_Sotaro.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yasui_Sotaro.jpg
+    license: Public domain
+    credit: 朝日新聞社
+identifiers:
+  gnd: "141689870"
+  idref: "187474915"
+  lc: n85822689
+  rkd: "369821"
+  ulan: "500105860"
+  viaf: "13781136"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q729235
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q729235

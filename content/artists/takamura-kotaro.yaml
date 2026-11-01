@@ -1,0 +1,47 @@
+public_id: 108060
+name: Kōtarō Takamura
+names:
+  - lang: ja
+    role: original
+    text: 高村光太郎
+  - Kotaro Takamura
+  - Koutarou Takamura
+  - lang: de
+    role: translation
+    text: Takamura Kōtarō
+  - lang: zh
+    role: translation
+    text: 高村光太朗
+  - lang: ko
+    role: translation
+    text: 다카무라 고타로
+  - lang: ru
+    role: translation
+    text: Котаро Такамура
+birth: 1883-03-13
+death: 1956-04-02
+wikidata_id: Q1646239
+metadata:
+  sources: [Wikidata Q1646239 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/%E9%AB%98%E6%9D%91%E5%85%89%E5%A4%AA%E9%83%8E.jpg/1280px-%E9%AB%98%E6%9D%91%E5%85%89%E5%A4%AA%E9%83%8E.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E9%AB%98%E6%9D%91%E5%85%89%E5%A4%AA%E9%83%8E.jpg
+    license: Public domain
+    credit: http://kajipon.com/
+identifiers:
+  bnf: 12373074p
+  gnd: "118953419"
+  idref: "032764634"
+  lc: n80014350
+  nlk: KAC200400384
+  ulan: "500121399"
+  viaf: "66545620"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1646239
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1646239

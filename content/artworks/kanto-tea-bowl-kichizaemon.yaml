@@ -1,0 +1,39 @@
+public_id: 108221
+title: Tea bowl called Kantō (Winter Rabbit)
+creator: raku-kichizaemon-xv
+created: 1991
+kind: tea bowl
+medium: Raku earthenware
+materials: [earthenware]
+dimensions: [11]
+dimensions_note: diameter 10.9 cm
+institution: urasenke
+description_md: "By [[artist/raku-kichizaemon-xv]] (b. 1949), fifteenth generation of the Raku lineage: [[raku]] ware of today. [[source/history-of-japanese-art|p. 355, fig. 415]]"
+relationships:
+  - type: associated_with
+    to: movement/heisei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 355, fig. 415
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 415
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 415
+  created:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 415
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 415
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 415
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 415
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 415

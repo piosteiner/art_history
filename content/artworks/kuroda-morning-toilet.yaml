@@ -1,0 +1,59 @@
+public_id: 108037
+title: Morning Toilet
+names:
+  - Morning Toilette
+  - lang: it
+    role: translation
+    text: La toeletta del mattino
+  - lang: ja
+    role: translation
+    text: 朝妝
+creator: kuroda-seiki
+created: 1893
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [178.5, 98]
+description_md: "The most controversial painting of [[artist/kuroda-seiki]] (1866–1924), made in France under Raphael Collin: a nude Western woman before a mirror, praised at the Société Nationale des Beaux-Arts in Paris, but considered pornographic in Japan — a frontal female nude never shown in public before. Destroyed during World War II. [[source/history-of-japanese-art|pp. 374–375, fig. 446]]"
+wikidata_id: Q112207602
+metadata:
+  sources: [Wikidata Q112207602 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 374–375, fig. 446
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Kuroda_Seiki_-_Morning_toilette_%28now_lost_in_a_fire%29.jpg/1280px-Kuroda_Seiki_-_Morning_toilette_%28now_lost_in_a_fire%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kuroda_Seiki_-_Morning_toilette_(now_lost_in_a_fire).jpg
+    license: Public domain
+    credit: Kuroda Seiki
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 374–375, fig. 446
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 374–375, fig. 446
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q112207602
+    - source: history-of-japanese-art
+      locator: pp. 374–375, fig. 446
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q112207602
+    - source: history-of-japanese-art
+      locator: pp. 374–375, fig. 446
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 374–375, fig. 446
+  dimensions:
+    - accessed: 2026-11-01
+      property: P2048
+      wikidata: Q112207602
+    - source: history-of-japanese-art
+      locator: pp. 374–375, fig. 446

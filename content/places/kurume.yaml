@@ -1,0 +1,16 @@
+public_id: 108017
+name: Kurume
+kind: settlement
+location: [130.50833, 33.31925]
+wikidata_id: Q320934
+metadata:
+  sources: [Wikidata Q320934 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q320934
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q320934

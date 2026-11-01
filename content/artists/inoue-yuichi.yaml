@@ -1,0 +1,39 @@
+public_id: 108082
+name: Inoue Yūichi
+names:
+  - lang: ja
+    role: original
+    text: 井上有一
+  - Yūichi Inoue
+  - Inoue Yuichi
+  - Inoue Yu-Ichi
+  - Inoue Yuuichi
+  - lang: ko
+    role: translation
+    text: 이노우에 유이치
+  - lang: ru
+    role: translation
+    text: Юити Иноуэ
+birth: 1916-02-14
+death: 1985-06-15
+wikidata_id: Q1567766
+metadata:
+  sources: [Wikidata Q1567766 (retrieved 2026-11-01)]
+identifiers:
+  bnf: "151123712"
+  gnd: "119241099"
+  idref: "190053682"
+  lc: nr95043013
+  nlk: KAC201916039
+  rkd: "270699"
+  ulan: "500122668"
+  viaf: "49922185"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1567766
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1567766

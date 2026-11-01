@@ -1,0 +1,40 @@
+public_id: 108073
+name: Takahashi Yuichi
+names:
+  - lang: ja
+    role: original
+    text: 高橋 由一
+  - Ransen
+  - Kain Itsujin
+  - Takahashi Yūichi
+  - lang: ja
+    role: original
+    text: 高橋由一
+  - lang: ru
+    role: translation
+    text: Юити Такахаси
+birth: 1828-03-20
+death: 1894-07-06
+wikidata_id: Q3514137
+metadata:
+  sources: [Wikidata Q3514137 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6c/Takahashi_Yuichi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Takahashi_Yuichi.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "140596631"
+  idref: 11286743X
+  lc: n81108455
+  ulan: "500121325"
+  viaf: "57942613"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3514137
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3514137

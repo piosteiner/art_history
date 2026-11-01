@@ -1,0 +1,39 @@
+public_id: 108261
+title: Hinomaru Illumination (Amaterasu and Haniwa)
+creator: yukinori-yanagi
+created: 1991
+kind: installation
+medium: Neon and painted steel with ceramic haniwa figures
+materials: [neon tube, steel, earthenware]
+dimensions: [300, 450, 40]
+dimensions_note: neon flag; each haniwa c. 100 cm
+institution: museum-of-art-kochi
+description_md: "After the death of Emperor Hirohito in 1989, [[artist/yukinori-yanagi]] (b. 1959) took on the last great taboo — nationalism: a group of [[haniwa]], some saluting, stands in reverence before a huge neon sun in the form of the national flag — the unthinking mass worshipping a modernized image of the nation. [[source/history-of-japanese-art|p. 391, fig. 468]]"
+relationships:
+  - type: associated_with
+    to: movement/heisei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 391, fig. 468
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 391, fig. 468
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 391, fig. 468
+  created:
+    - source: history-of-japanese-art
+      locator: p. 391, fig. 468
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 391, fig. 468
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 391, fig. 468
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 391, fig. 468
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 391, fig. 468

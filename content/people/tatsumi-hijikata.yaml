@@ -1,0 +1,46 @@
+public_id: 108094
+name: Tatsumi Hijikata
+names:
+  - lang: ja
+    role: original
+    text: 土方巽
+  - Hijikata Tatsumi
+  - lang: ko
+    role: translation
+    text: 히지카타 다쓰미
+  - lang: ru
+    role: translation
+    text: Тацуми Хидзиката
+kind: person
+occupations: [choreographer, dancer, author]
+birth: 1928-03-09
+death: 1986-01-21
+wikidata_id: Q2266040
+metadata:
+  sources: [Wikidata Q2266040 (retrieved 2026-11-01)]
+identifiers:
+  bnf: "148598146"
+  gnd: "120335786"
+  idref: "153426179"
+  lc: n83195285
+  nlk: KAC200407885
+  rkd: "331021"
+  ulan: "500122595"
+  viaf: "279671"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q2266040
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2266040
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2266040
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q2266040

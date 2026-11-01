@@ -1,0 +1,38 @@
+public_id: 108216
+title: Fudō Myōō
+creator: kano-hogai
+created: 1887
+kind: kakemono
+medium: Hanging scroll, colour on paper
+materials: [paper]
+dimensions: [158.3, 79]
+institution: tokyo-university-of-the-arts
+description_md: "A work of the last four years of [[artist/kano-hogai]] (1828–1888), the Kanō painter of the Mōri family who fared badly after the Restoration until [[person/ernest-fenollosa]] discovered him in 1884: Fudō’s dark-grey body and bright red robe are modelled with highlights and shadows, a synthesis of Eastern and Western elements in the spirit of the Kangakai. [[source/history-of-japanese-art|pp. 363–364, fig. 430]]"
+relationships:
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 363–364, fig. 430
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 363–364, fig. 430
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 363–364, fig. 430
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 363–364, fig. 430
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 363–364, fig. 430
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 363–364, fig. 430
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 363–364, fig. 430
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 363–364, fig. 430

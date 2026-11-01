@@ -1,0 +1,28 @@
+public_id: 108090
+name: Tatsuo Kawaguchi
+names:
+  - lang: ja
+    role: original
+    text: 河口龍夫
+  - Kawaguchi Tatsuo
+  - lang: ru
+    role: translation
+    text: Тацуо Кавагути
+birth: 1940
+wikidata_id: Q3516100
+metadata:
+  sources: [Wikidata Q3516100 (retrieved 2026-11-01)]
+identifiers:
+  bnf: 16228543b
+  gnd: "139040064"
+  idref: "193468565"
+  kulturnav: 8bd1fe4d-322d-4a86-8b07-6a6203ea5358
+  lc: n98029256
+  rkd: "430653"
+  ulan: "500122675"
+  viaf: "96586022"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3516100

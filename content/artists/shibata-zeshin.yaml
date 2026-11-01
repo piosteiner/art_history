@@ -1,0 +1,43 @@
+public_id: 108052
+name: Shibata Zeshin
+names:
+  - lang: ja
+    role: original
+    text: 柴田是真
+  - Zeshin Shibata
+  - Tairyūkyo
+  - Tanzen
+  - Junzō
+  - Koma
+  - Zeshin
+  - Reisai
+  - lang: ru
+    role: translation
+    text: Дзэсин Сибата
+birth: 1807-03-15
+death: 1891-07-13
+wikidata_id: Q2386947
+metadata:
+  sources: [Wikidata Q2386947 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/40/Portrait_of_Shibata_Zeshin_in_The_Far_East%2C_1897.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Shibata_Zeshin_in_The_Far_East,_1897.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "166226415"
+  gnd: "139501339"
+  idref: "161097227"
+  lc: n79118138
+  rkd: "267437"
+  ulan: "500325954"
+  viaf: "33282205"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2386947
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2386947

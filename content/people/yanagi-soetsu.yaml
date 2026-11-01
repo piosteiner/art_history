@@ -1,0 +1,65 @@
+public_id: 108097
+name: Yanagi Sōetsu
+names:
+  - lang: ja
+    role: original
+    text: 柳 宗悦
+  - lang: ja
+    role: original
+    text: やなぎ むねよし
+  - Yanagi Muneyoshi
+  - Sōetsu Yanagi
+  - Soetsu Yanagi
+  - Yanagi Soetsu
+  - Muneyoshi Yanagi
+  - Chong-y ol Yu
+  - Yanagi Souetsu
+  - lang: ja
+    role: original
+    text: 柳宗悦
+  - lang: zh
+    role: translation
+    text: 柳宗悅
+  - lang: ko
+    role: translation
+    text: 야나기 무네요시
+  - lang: ru
+    role: translation
+    text: Мунэёси Янаги
+kind: person
+occupations: [philosopher, university teacher, photographer, art collector, art historian, art critic]
+birth: 1889-03-21
+death: 1961-05-03
+wikidata_id: Q904161
+metadata:
+  sources: [Wikidata Q904161 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e5/Soetsu.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Soetsu.JPG
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "122893938"
+  gnd: "121457745"
+  idref: "031733409"
+  lc: n81039698
+  nlk: KAC200201484
+  ulan: "500256699"
+  viaf: "12371632"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q904161
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q904161
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q904161
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q904161

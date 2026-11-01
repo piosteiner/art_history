@@ -1,0 +1,43 @@
+public_id: 108242
+title: Fukuzawa Yukichi
+creator: okuma-ujihiro
+created: 1892
+kind: sculpture
+medium: Bronze
+materials: [bronze]
+dimensions: [120]
+institution: keio-shiki-senior-high-school
+description_md: "The masterwork of [[artist/okuma-ujihiro]] (1856–1934), Ragusa’s most talented student: [[person/fukuzawa-yukichi]] (1835–1901), founder of Keiō University and one of the founders of new Japan, seated in a formal pose with an alert, enquiring expression; the textures of jacket and trousers differ so that natural light makes a believable pattern of highlights and shadows. [[source/history-of-japanese-art|p. 356, fig. 418]]"
+relationships:
+  - type: depicts_person
+    to: person/fukuzawa-yukichi
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 356, fig. 418
+  - type: associated_with
+    to: movement/meiji-era
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 356, fig. 418
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 356, fig. 418
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 356, fig. 418
+  created:
+    - source: history-of-japanese-art
+      locator: p. 356, fig. 418
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 356, fig. 418
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 356, fig. 418
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 356, fig. 418
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 356, fig. 418

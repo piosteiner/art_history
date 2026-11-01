@@ -1,0 +1,43 @@
+public_id: 108086
+name: Itō Shinsui
+names:
+  - lang: ja
+    role: original
+    text: 伊東深水
+  - Shinsui Itō
+  - Hajime Itō
+  - Shikuntei Shinsui
+  - Shen-shui I-tung
+  - Hajime
+  - Ito Shinsui
+  - Itou Shinsui
+  - S. Ito
+  - Shinsui Ito
+  - lang: ru
+    role: translation
+    text: Синсуй Ито
+birth: 1898-02-04
+death: 1972-05-08
+wikidata_id: Q2060569
+metadata:
+  sources: [Wikidata Q2060569 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9f/Ito_Shinsui.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Ito_Shinsui.JPG
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: 13325917X
+  idref: "149482914"
+  lc: n81077190
+  ulan: "500123222"
+  viaf: "75037028"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2060569
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2060569

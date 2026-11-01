@@ -1,0 +1,43 @@
+public_id: 108085
+name: Goyō Hashiguchi
+names:
+  - lang: ja
+    role: original
+    text: 橋口五葉
+  - Goyo Hashiguchi
+  - Goyou Hashiguchi
+  - Goyo Hashiuguchi
+  - Hashiguchi Goyo
+  - Kiyoshi Hashiguchi
+  - lang: fr
+    role: translation
+    text: Hashiguchi Goyō
+  - lang: ru
+    role: translation
+    text: Хасигути Гоё
+birth: 1880-12-21
+death: 1921-02-24
+wikidata_id: Q2346122
+metadata:
+  sources: [Wikidata Q2346122 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Hashiguchi_Goy%C5%8D.jpg/1280px-Hashiguchi_Goy%C5%8D.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hashiguchi_Goy%C5%8D.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: 108962607X
+  kulturnav: 7d4c9f13-e272-4633-9bb0-e5c017008971
+  lc: n83034231
+  rkd: "284632"
+  ulan: "500335092"
+  viaf: "111294009"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2346122
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2346122

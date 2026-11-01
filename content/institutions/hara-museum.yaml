@@ -1,0 +1,54 @@
+public_id: 108016
+name: Hara Museum of Contemporary Art
+names:
+  - lang: fr
+    role: translation
+    text: musée d'art contemporain de Hara
+  - lang: de
+    role: translation
+    text: Hara-Kunstmuseum
+  - lang: ja
+    role: translation
+    text: 原美術館
+kind: museum
+dissolved: 2021-01-11
+place: tokyo
+location: [139.73606, 35.62103]
+address: 東京都品川区北品川4-7-25
+website_url: http://www.haramuseum.or.jp/
+wikidata_id: Q3736155
+metadata:
+  sources: [Wikidata Q3736155 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Hara_Museum_of_Contemporary_Art_2010.jpg/1280px-Hara_Museum_of_Contemporary_Art_2010.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hara_Museum_of_Contemporary_Art_2010.jpg
+    license: CC BY-SA 3.0
+    credit: Wiiii
+identifiers:
+  bnf: "135989581"
+  gnd: 5058281-1
+  idref: "174218850"
+  lc: n88679662
+  ulan: "500252722"
+  viaf: "130244423"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q3736155
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q3736155
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q3736155
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q3736155
+  dissolved:
+    - accessed: 2026-11-01
+      property: P576
+      wikidata: Q3736155

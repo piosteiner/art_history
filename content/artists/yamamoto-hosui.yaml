@@ -1,0 +1,39 @@
+public_id: 108075
+name: Hōsui Yamamoto
+names:
+  - lang: ja
+    role: original
+    text: 山本芳翠
+  - Yamamoto Tamenosuke
+  - Hosui Yamamoto
+  - Housui Yamamoto
+  - lang: ru
+    role: translation
+    text: Хосуи Ямамото
+birth: 1850-08-12
+death: 1906-11-15
+wikidata_id: Q3146372
+metadata:
+  sources: [Wikidata Q3146372 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6c/Yamamoto_H%C5%8Dsui.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yamamoto_H%C5%8Dsui.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "169722392"
+  gnd: "141689951"
+  idref: "174623704"
+  lc: nr95038519
+  rkd: "369557"
+  ulan: "500247674"
+  viaf: "29427715"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3146372
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3146372

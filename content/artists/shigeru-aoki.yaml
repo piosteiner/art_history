@@ -1,0 +1,18 @@
+public_id: 108038
+name: Shigeru Aoki
+given_name: Shigeru
+family_name: Aoki
+birth: 1882-07-13
+death: 1911-03-25
+wikidata_id: Q347298
+metadata:
+  sources: [Wikidata Q347298 (retrieved 2026-11-01)]
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q347298
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q347298

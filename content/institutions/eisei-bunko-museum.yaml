@@ -1,0 +1,54 @@
+public_id: 108019
+name: Eisei Bunko Museum
+names:
+  - lang: fr
+    role: translation
+    text: musée Eisei Bunko
+  - lang: de
+    role: translation
+    text: Eisei Bunko
+  - lang: ja
+    role: translation
+    text: 永青文庫
+  - lang: zh
+    role: translation
+    text: 永青文库
+kind: museum
+founded: 1973
+place: tokyo
+location: [139.7233, 35.71317]
+address: 東京都文京区目白台1丁目1番地1号
+website_url: http://www.eiseibunko.com/
+wikidata_id: Q728781
+metadata:
+  sources: [Wikidata Q728781 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/80/Eisei_Bunko.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Eisei_Bunko.jpg
+    license: CC BY-SA 3.0
+    credit: Fraxinus2
+identifiers:
+  gnd: 7582941-1
+  lc: n82125695
+  viaf: "312807053"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q728781
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q728781
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q728781
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q728781
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q728781

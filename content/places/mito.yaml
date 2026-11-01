@@ -1,0 +1,16 @@
+public_id: 108014
+name: Mito
+kind: settlement
+location: [140.47125, 36.36583]
+wikidata_id: Q204249
+metadata:
+  sources: [Wikidata Q204249 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q204249
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q204249

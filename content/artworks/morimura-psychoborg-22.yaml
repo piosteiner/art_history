@@ -1,0 +1,30 @@
+public_id: 108232
+title: Psychoborg 22
+creator: yasumasa-morimura
+created: 1994
+kind: photograph
+medium: Computer-manipulated photograph
+dimensions: [130, 110]
+description_md: In a computer-manipulated image [[artist/yasumasa-morimura]] (b. 1951) appears twice in the costumes of Michael Jackson and Madonna — appropriating American pop personalities, as he had put himself into European paintings since the 1980s, and drawing a parallel between their trademark poses and the characters of Japanese cartoons. [[source/history-of-japanese-art|p. 389, fig. 465]]
+relationships:
+  - type: associated_with
+    to: movement/heisei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 389, fig. 465
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 389, fig. 465
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 389, fig. 465
+  created:
+    - source: history-of-japanese-art
+      locator: p. 389, fig. 465
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 389, fig. 465
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 389, fig. 465

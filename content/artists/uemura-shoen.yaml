@@ -1,0 +1,51 @@
+public_id: 108071
+name: Shoen Uemura
+names:
+  - kind: birth
+    lang: ja
+    role: alternative
+    text: 上村 津禰
+  - lang: ja
+    role: original
+    text: 上村 松園
+  - Tsuneko
+  - Uemura Shouen
+  - lang: it
+    role: translation
+    text: Shōen Uemura
+  - lang: ja
+    role: original
+    text: 上村松園
+  - lang: ko
+    role: translation
+    text: 쇼엔 우에무라
+  - lang: ru
+    role: translation
+    text: Уэмура Сёэн
+birth: 1875-04-23
+death: 1949-08-27
+wikidata_id: Q275018
+metadata:
+  sources: [Wikidata Q275018 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f4/Uemura_Shoen.png
+    source_url: https://commons.wikimedia.org/wiki/File:Uemura_Shoen.png
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 16185284f
+  gnd: "131696696"
+  idref: "190860057"
+  lc: n81032982
+  nlk: KAC202368520
+  ulan: "500121337"
+  viaf: "96576508"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q275018
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q275018

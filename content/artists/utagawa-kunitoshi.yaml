@@ -1,0 +1,33 @@
+public_id: 108042
+name: Utagawa Kunitoshi
+names:
+  - lang: ja
+    role: original
+    text: 歌川国利
+  - lang: fr
+    role: translation
+    text: Utagawa Kunitoshi (I)
+  - lang: ru
+    role: translation
+    text: Кунитоси Утагава
+birth: 1847
+death: 1899-09-07
+wikidata_id: Q2502854
+metadata:
+  sources: [Wikidata Q2502854 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/%E5%BE%A1%E9%B3%B3%E8%BC%A6%E4%B9%8B%E5%9B%B3-Illustration_of_the_Imperial_Carriage_%28Goh%C5%8Dren_no_zu%29_MET_DP146905.jpg/1280px-%E5%BE%A1%E9%B3%B3%E8%BC%A6%E4%B9%8B%E5%9B%B3-Illustration_of_the_Imperial_Carriage_%28Goh%C5%8Dren_no_zu%29_MET_DP146905.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E5%BE%A1%E9%B3%B3%E8%BC%A6%E4%B9%8B%E5%9B%B3-Illustration_of_the_Imperial_Carriage_(Goh%C5%8Dren_no_zu)_MET_DP146905.jpg
+    license: CC0
+    credit: Utagawa Kunitoshi
+identifiers:
+  viaf: "252353821"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2502854
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2502854

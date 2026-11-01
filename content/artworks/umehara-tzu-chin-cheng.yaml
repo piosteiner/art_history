@@ -1,0 +1,38 @@
+public_id: 108259
+title: Tzu-chin-ch’eng Palace (The Forbidden City)
+creator: umehara-ryuzaburo
+created: 1940
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [112.4, 149.9]
+institution: eisei-bunko-museum
+description_md: "From [[artist/umehara-ryuzaburo]] (1888–1986), pupil of Renoir in France for five years and son of a silk-weaving family, during his visits to Beijing in 1939–1943, when the city was occupied by Japan: the palace of the Qing emperors in a riot of colour — orange roofs, red-orange walls, green trees, blue-white clouds — broad areas of colour seen from shifting viewpoints, flat and decorative like a textile. [[source/history-of-japanese-art|pp. 379–380, fig. 452]]"
+relationships:
+  - type: associated_with
+    to: movement/showa-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 379–380, fig. 452
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 379–380, fig. 452
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 379–380, fig. 452
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 379–380, fig. 452
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 379–380, fig. 452
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 379–380, fig. 452
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 379–380, fig. 452
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 379–380, fig. 452

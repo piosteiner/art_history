@@ -1,0 +1,31 @@
+public_id: 108217
+title: Yukio Mishima, from Barakei (Ordeal by Roses)
+creator: eiko-hosoe
+created: 1963
+kind: photograph
+medium: Photograph
+description_md: "From the series [[artist/eiko-hosoe]] (b. 1933) made of [[person/yukio-mishima]] at his Tokyo home in 1961 and 1962, after his collaboration with the dancer [[person/tatsumi-hijikata]]: composite, theatrical images combining hysterical sensuality with morbid sobriety — later read as a rehearsal for Mishima’s death in 1970. [[source/history-of-japanese-art|pp. 387–388, fig. 463]]"
+relationships:
+  - type: depicts_person
+    to: person/yukio-mishima
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 387–388, fig. 463
+  - type: associated_with
+    to: movement/showa-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 387–388, fig. 463
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 387–388, fig. 463
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 387–388, fig. 463
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 387–388, fig. 463
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 387–388, fig. 463

@@ -1,0 +1,36 @@
+public_id: 108237
+title: Nihon Yūsen Building
+creator: sone-tatsuzo
+created: 1923
+kind: building
+medium: Steel-reinforced concrete, terracotta
+materials: [concrete, steel]
+description_md: "The headquarters of the Japan Mail Line by [[artist/sone-tatsuzo]] (1853–1937), Conder’s pupil and the most influential architect of late Meiji and Taishō: steel-reinforced concrete, seven storeys in a tripartite design, the first storey rusticated, the rest faced with terracotta tiles. In the great earthquake of 1923, Japanese-designed reinforced concrete fared far better than the American-built Maru Biru beside it. [[source/history-of-japanese-art|p. 348, fig. 404]]"
+relationships:
+  - type: created_in
+    to: place/tokyo
+    period: 1923
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 348, fig. 404
+  - type: associated_with
+    to: movement/taisho-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 348, fig. 404
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 348, fig. 404
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 348, fig. 404
+  created:
+    - source: history-of-japanese-art
+      locator: p. 348, fig. 404
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 348, fig. 404
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 348, fig. 404

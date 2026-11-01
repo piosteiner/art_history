@@ -1,0 +1,44 @@
+public_id: 108103
+name: Josiah Conder
+given_name: Josiah
+family_name: Conder
+names:
+  - J. Conder
+  - lang: ja
+    role: translation
+    text: ジョサイア・コンドル
+  - lang: zh
+    role: translation
+    text: 喬賽亞·康德
+  - lang: ko
+    role: translation
+    text: 조시아 콘도르
+  - lang: ru
+    role: translation
+    text: Джозайя Кондер
+birth: 1852-09-28
+death: 1920-06-21
+wikidata_id: Q1187770
+metadata:
+  sources: [Wikidata Q1187770 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b5/Josiah-Conder-Portrait-1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Josiah-Conder-Portrait-1.jpg
+    license: CC BY-SA 3.0
+    credit: Otraff
+identifiers:
+  bnf: 12378115n
+  gnd: "130233579"
+  idref: "067059295"
+  lc: n89608935
+  ulan: "500021956"
+  viaf: "76397209"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1187770
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1187770

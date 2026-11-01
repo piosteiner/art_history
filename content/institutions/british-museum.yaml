@@ -1,0 +1,61 @@
+public_id: 108024
+name: British Museum
+names:
+  - the British Museum
+  - lang: es
+    role: translation
+    text: Museo Británico
+  - lang: ja
+    role: translation
+    text: 大英博物館
+  - lang: zh
+    role: translation
+    text: 大英博物馆
+  - lang: ko
+    role: translation
+    text: 대영박물관
+  - lang: ru
+    role: translation
+    text: Британский музей
+kind: museum
+founded: 1753
+place: london
+location: [-0.12694, 51.51944]
+address: Great Russell St, Bloomsbury, London WC1B 3DG, UK
+website_url: https://www.britishmuseum.org/
+wikidata_id: Q6373
+metadata:
+  sources: [Wikidata Q6373 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/British_Museum_from_NE_2_%28cropped%29.JPG/1280px-British_Museum_from_NE_2_%28cropped%29.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:British_Museum_from_NE_2_(cropped).JPG
+    license: CC BY-SA 3.0
+    credit: Ham
+identifiers:
+  bnf: 11871460b
+  gnd: 38379-X
+  idref: "026472309"
+  lc: n79107735
+  ulan: "500125180"
+  viaf: "134857252"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q6373
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q6373
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q6373
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q6373
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q6373

@@ -1,0 +1,39 @@
+public_id: 108044
+name: Katayama Tōkuma
+names:
+  - lang: ja
+    role: original
+    text: 片山東熊
+  - Tōkuma Katayama
+  - Katayama Tokuma
+  - Katayama Toukuma
+  - Tokuma Katayama
+  - lang: ko
+    role: translation
+    text: 가타야마 도쿠마
+  - lang: ru
+    role: translation
+    text: Токума Катаяма
+birth: 1854-01-18
+death: 1917-10-24
+wikidata_id: Q898689
+metadata:
+  sources: [Wikidata Q898689 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b3/Katayama-Tokuma.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Katayama-Tokuma.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  lc: n80114488
+  ulan: "500121406"
+  viaf: "96576928"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q898689
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q898689

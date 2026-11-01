@@ -1,0 +1,32 @@
+public_id: 108245
+title: Vase
+attribution_label: Ono Hakuko
+created: c. 1990
+created_span: uncertain
+kind: vase
+medium: Porcelain with lacquer-coated gold foil under a transparent glaze
+materials: [porcelain, gold leaf]
+dimensions: [23.5]
+description_md: Ono Hakuko’s speciality is the difficult Chinese technique of cut gold foil used by Eiraku Hozen — but she coats the foil with lacquer before applying it and covers it with a translucent glaze, so that her gilding is brighter and more luminous. [[source/history-of-japanese-art|p. 355, fig. 414]]
+relationships:
+  - type: associated_with
+    to: movement/heisei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 355, fig. 414
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 414
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 414
+  created:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 414
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 414
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 355, fig. 414
