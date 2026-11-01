@@ -1,0 +1,56 @@
+public_id: 106785
+title: Amida raigō triptych
+names:
+  - Descent of Amitabha and the Heavenly Multitude
+  - Amida Shoju Raigo-zu
+  - lang: ja
+    role: translation
+    text: 高野山阿弥陀聖衆来迎図
+attribution_label: Anonymous
+created: late 11th century
+created_span: uncertain
+kind: kakemono
+medium: Triptych of hanging scrolls, colour on silk
+materials: [paint, silk]
+dimensions: [211]
+institution: yushi-hachiman-ko
+description_md: Amida, a resplendent gold figure on a golden lotus, faces the viewer as he descends on a lavender cloud — a very public ceremony after [[person/genshin]]’s description of the welcome. Before him Kannon holds the lotus pedestal for the deceased and Seishi prays; [[jizo]] and the legendary master Nāgārjuna are near, and twenty-eight figures — monks, bodhisattvas and musicians — complete the retinue in red iron-wire outlines, bright garments and [[kirikane]]. A lake with marsh grass and a hill with pines and maples in autumn colour are the landscape of Heian. Dated after the Byōdōin doors, probably to the late eleventh century; kept on Mount Kōya. [[source/history-of-japanese-art|pp. 146–147, fig. 178]]
+wikidata_id: Q107046204
+metadata:
+  sources: [Wikidata Q107046204 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/fujiwara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 146–147, fig. 178
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/AmidaRaigo.jpg/1280px-AmidaRaigo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:AmidaRaigo.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 146–147, fig. 178
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107046204
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 146–147, fig. 178
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 146–147, fig. 178
+  materials:
+    - accessed: 2026-11-01
+      property: P186
+      wikidata: Q107046204
+    - source: history-of-japanese-art
+      locator: pp. 146–147, fig. 178
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 146–147, fig. 178
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 146–147, fig. 178

@@ -1,0 +1,50 @@
+public_id: 106799
+name: Fujiwara no Yorimichi
+names:
+  - lang: ja
+    role: original
+    text: 藤原 頼通
+  - lang: ja
+    role: original
+    text: 藤原頼通
+  - lang: zh
+    role: translation
+    text: 藤原賴通
+  - lang: ko
+    role: translation
+    text: 후지와라노 요리미치
+  - lang: ru
+    role: translation
+    text: Фудзивара-но Ёримити
+kind: person
+occupations: [samurai]
+birth: 992-01
+death: 1074-03-08
+wikidata_id: Q1370620
+metadata:
+  sources: [Wikidata Q1370620 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/26/%E8%97%A4%E5%8E%9F%E9%A0%BC%E9%80%9A.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E8%97%A4%E5%8E%9F%E9%A0%BC%E9%80%9A.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  lc: nr91045550
+  viaf: "56470859"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1370620
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1370620
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1370620
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q1370620

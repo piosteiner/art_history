@@ -1,0 +1,52 @@
+public_id: 106812
+name: Amoghavajra
+names:
+  - lang: sa
+    role: original
+    text: अमोघवज्र
+  - lang: ja
+    role: translation
+    text: 不空金剛
+  - lang: zh
+    role: translation
+    text: 不空
+  - lang: ko
+    role: translation
+    text: 불공
+  - lang: ru
+    role: translation
+    text: Амогхаваджра
+kind: person
+occupations: [translator, Buddhist monk, monk]
+birth: 705
+death: 774
+wikidata_id: Q1363621
+metadata:
+  sources: [Wikidata Q1363621 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/88/Amoghavajra.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Amoghavajra.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "1201448921"
+  idref: "152169105"
+  lc: nr93015010
+  viaf: "113979146"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1363621
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1363621
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1363621
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q1363621

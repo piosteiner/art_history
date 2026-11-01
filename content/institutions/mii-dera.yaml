@@ -1,0 +1,49 @@
+public_id: 106742
+name: Mii-dera Temple
+names:
+  - Onjō-ji
+  - Mii-dera
+  - lang: ja
+    role: translation
+    text: 園城寺
+  - lang: ru
+    role: translation
+    text: Мии-дэра
+kind: temple
+founded: 686
+place: otsu
+location: [135.85278, 35.01333]
+address: 滋賀県大津市園城寺町246
+website_url: http://www.shiga-miidera.or.jp/
+wikidata_id: Q1756307
+metadata:
+  sources: [Wikidata Q1756307 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Miidera_keidai.jpg/1280px-Miidera_keidai.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Miidera_keidai.jpg
+    license: CC BY-SA 3.0
+    credit: KENPEI
+identifiers:
+  lc: n81008279
+  viaf: "158281296"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1756307
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1756307
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q1756307
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1756307
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1756307

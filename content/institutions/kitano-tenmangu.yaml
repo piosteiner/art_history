@@ -1,0 +1,48 @@
+public_id: 106738
+name: Kitano Tenmangū
+names:
+  - Kitano Tenman-gū
+  - Kitano-Tenmangu Shrine
+  - lang: fr
+    role: translation
+    text: sanctuaire Tenman de Kitano
+  - lang: it
+    role: translation
+    text: Santuario Kitano
+  - lang: ja
+    role: translation
+    text: 北野天満宮
+  - lang: zh
+    role: translation
+    text: 北野天滿宮
+  - lang: ko
+    role: translation
+    text: 기타노텐만 궁
+  - lang: ru
+    role: translation
+    text: Китано-Тэммангу
+founded: 947
+place: kyoto
+location: [135.73501, 35.0292]
+website_url: https://www.kitanotenmangu.or.jp/
+wikidata_id: Q662176
+metadata:
+  sources: [Wikidata Q662176 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Kitano-tenmangu_Kyoto_Japan41s3s4592.jpg/1280px-Kitano-tenmangu_Kyoto_Japan41s3s4592.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kitano-tenmangu_Kyoto_Japan41s3s4592.jpg
+    license: CC BY 2.5
+    credit: 663highland
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q662176
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q662176
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q662176

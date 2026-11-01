@@ -1,0 +1,75 @@
+public_id: 106766
+name: Jiro Yoshihara
+given_name: Jiro
+family_name: Yoshihara
+names:
+  - lang: ja
+    role: original
+    text: 吉原 治良
+  - Jirō Yoshihara
+birth: 1905-01-01
+death: 1972-02-19
+wikidata_id: Q2303860
+metadata:
+  sources: [Wikidata Q2303860 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-01
+        property: P27
+        wikidata: Q2303860
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-01
+        property: P27
+        wikidata: Q2303860
+  - type: born_in
+    to: place/osaka
+    sources:
+      - accessed: 2026-11-01
+        property: P19
+        wikidata: Q2303860
+  - type: died_in
+    to: place/ashiya
+    sources:
+      - accessed: 2026-11-01
+        property: P20
+        wikidata: Q2303860
+  - type: member_of
+    to: movement/gutai-group
+    sources:
+      - accessed: 2026-11-01
+        property: P463
+        wikidata: Q2303860
+  - type: founded
+    to: movement/gutai-group
+    sources:
+      - accessed: 2026-11-01
+        property: P112
+        wikidata: Q1028956
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8b/Saburo-Hasegawa-and-Jiro-Yoshihara-24th-Nika-Exhibition-1937.png
+    source_url: https://commons.wikimedia.org/wiki/File:Saburo-Hasegawa-and-Jiro-Yoshihara-24th-Nika-Exhibition-1937.png
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 15577463v
+  gnd: "133757889"
+  idref: "151823308"
+  lc: nr94010968
+  rkd: "270083"
+  ulan: "500125456"
+  viaf: "60279458"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2303860
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2303860

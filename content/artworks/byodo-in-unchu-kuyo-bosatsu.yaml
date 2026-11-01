@@ -1,0 +1,55 @@
+public_id: 106783
+title: Bodhisattvas on clouds (Unchū kuyō bosatsu), Hōōdō
+names:
+  - Praying Bodhisattva on Clouds
+  - lang: ja
+    role: translation
+    text: 雲中供養菩薩像
+creator: jocho
+attribution_label: Jōchō and workshop
+created: c. 1053
+created_span: uncertain
+kind: sculpture
+medium: Wood, with traces of gofun and paint
+materials: [wood, gofun]
+institution: byodo-in
+description_md: "Small figures attached to the walls around Amida in the Phoenix Hall: his celestial host on clouds, some playing music, some dancing, some in contemplation. A dancing [[tennin]], her foot slightly raised as if about to step forward in time to the music, is particularly lively and graceful. From the workshop of [[artist/jocho]]. [[source/history-of-japanese-art|p. 145, fig. 175]]"
+wikidata_id: Q107046719
+metadata:
+  sources: [Wikidata Q107046719 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/fujiwara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 145, fig. 175
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5b/BYODOIN_ONJYO_BOSATSU_N1.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:BYODOIN_ONJYO_BOSATSU_N1.JPG
+    license: Public domain
+    credit: FUKUYAMA TUNEO and MORI TORU
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 145, fig. 175
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107046719
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 145, fig. 175
+  created:
+    - source: history-of-japanese-art
+      locator: p. 145, fig. 175
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 145, fig. 175
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 145, fig. 175
+    - accessed: 2026-11-01
+      property: P186
+      wikidata: Q107046719
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 145, fig. 175

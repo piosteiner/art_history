@@ -1,0 +1,29 @@
+public_id: 106729
+name: Hiraizumi
+names:
+  - lang: ja
+    role: original
+    text: 平泉町
+  - lang: ko
+    role: translation
+    text: 히라이즈미초
+kind: settlement
+parent: japan
+country_code: JP
+location: [141.11383, 38.98661]
+wikidata_id: Q1203004
+metadata:
+  sources: [Wikidata Q1203004 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1203004
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1203004
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1203004

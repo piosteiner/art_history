@@ -1,0 +1,54 @@
+public_id: 106798
+name: Fujiwara no Michinaga
+names:
+  - kind: nickname
+    lang: ja-Hani
+    role: alternative
+    text: 御堂関白
+  - lang: ja
+    role: original
+    text: 藤原 道長
+  - lang: ja
+    role: original
+    text: 藤原道長
+  - lang: ko
+    role: translation
+    text: 후지와라노 미치나가
+  - lang: ru
+    role: translation
+    text: Фудзивара-но Митинага
+kind: person
+occupations: [politician]
+birth: 966
+death: 1028-01-09
+wikidata_id: Q433133
+metadata:
+  sources: [Wikidata Q433133 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/72/Fujiwara_no_Michinaga_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fujiwara_no_Michinaga_2.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 12083884w
+  gnd: "118783785"
+  idref: "029154065"
+  lc: n80012982
+  viaf: "109643542"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q433133
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q433133
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q433133
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q433133

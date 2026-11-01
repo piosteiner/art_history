@@ -1,0 +1,47 @@
+public_id: 106727
+name: Jōruri-ji Temple
+names:
+  - Jōruri-ji
+  - lang: ja
+    role: translation
+    text: 浄瑠璃寺
+  - lang: zh
+    role: translation
+    text: 淨瑠璃寺
+kind: temple
+founded: 1047
+place: kizugawa
+location: [135.87306, 34.71611]
+address: 京都府木津川市加茂町西小札場40
+wikidata_id: Q1093645
+metadata:
+  sources: [Wikidata Q1093645 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Joruriji_Kizugawa_Kyoto_pref_Japan02s3.jpg/1280px-Joruriji_Kizugawa_Kyoto_pref_Japan02s3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joruriji_Kizugawa_Kyoto_pref_Japan02s3.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  lc: n82059064
+  viaf: "252982610"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1093645
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1093645
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q1093645
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1093645
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1093645

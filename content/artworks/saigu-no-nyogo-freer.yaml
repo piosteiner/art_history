@@ -1,0 +1,44 @@
+public_id: 107199
+title: Portrait of the Poetess and Imperial Consort Saigū no Nyōgo Yoshiko
+creator: fujiwara-nobuzane
+attribution_label: attributed to Fujiwara no Nobuzane
+created: 1167/1300
+kind: emakimono
+medium: Ink and colour on paper
+materials: [ink, paper]
+dimensions: [27.9, 51.1]
+institution: freer-gallery-of-art
+description_md: From a picture scroll of the thirty-six immortal poets ([[otoko-e]] portraits of the early Kamakura period). The empress’s name and biography are written in “standard cursive” characters, followed by one of her poems in hiragana in running-grass script; she sits behind a curtain of state in many-layered robes, leaning to the edge of her dais beside a black lacquer writing box — the position in which Heian ladies composed poetry, diaries and novels. [[source/history-of-japanese-art|p. 111, fig. 137]]
+relationships:
+  - type: depicts_person
+    to: person/saigu-no-nyogo
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 111, fig. 137
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 111, fig. 137
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 111, fig. 137
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 111, fig. 137
+  created:
+    - source: history-of-japanese-art
+      locator: p. 111, fig. 137
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 111, fig. 137
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 111, fig. 137
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 111, fig. 137
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 111, fig. 137

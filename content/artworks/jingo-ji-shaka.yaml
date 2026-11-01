@@ -1,0 +1,56 @@
+public_id: 106787
+title: Shaka Nyorai, Jingoji
+names:
+  - Shaka Nyorai
+  - Red Shaka
+  - lang: ja
+    role: translation
+    text: 釈迦如来像
+attribution_label: Anonymous
+created: 12th century
+created_span: uncertain
+kind: kakemono
+medium: Hanging scroll, colour on silk
+materials: [silk]
+dimensions: [159.4, 85.5]
+institution: jingo-ji
+description_md: "Shaka as the sole subject, seated on a brightly coloured lotus throne and making the fear-not gesture. His body, outlined in red and painted golden yellow, seems to radiate light against the dark ground; [[kirikane]] floral patterns fill his halo and rays, and his red robe carries an overall pattern of circles with eight-petalled blossoms. The iconography is that of Amida images, the body hardly modelled: a luminous being held in a net of gold lines. [[source/history-of-japanese-art|p. 149, fig. 180]]"
+wikidata_id: Q107046367
+metadata:
+  sources: [Wikidata Q107046367 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/insei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 149, fig. 180
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7c/Shaka_Nyorai.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shaka_Nyorai.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 149, fig. 180
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107046367
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 149, fig. 180
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q107046367
+    - source: history-of-japanese-art
+      locator: p. 149, fig. 180
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 149, fig. 180
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 149, fig. 180
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 149, fig. 180

@@ -1,0 +1,53 @@
+public_id: 106786
+title: The Death of Shaka (Ōtoku nehan zu)
+names:
+  - Buddha's Nirvana
+  - Ōtoku Nehan-zu
+  - lang: ja
+    role: translation
+    text: 応徳涅槃図
+attribution_label: Anonymous
+created: 1086-05-28
+kind: kakemono
+medium: Hanging scroll, colour on silk
+materials: [silk]
+dimensions: [269]
+institution: kongobu-ji
+description_md: The Buddha lies on a wooden platform in a grove, surrounded by the eight classes of beings, each with their name written beside them. The bodhisattvas near his head — Miroku, Jizō, Kannon, Monju and Fugen — stay calm, knowing what he has achieved; his disciples show their sorrow at losing their teacher, and the lion writhes on its back in grief. Upper right, his mother, Queen Maya, descends from heaven. A meticulously detailed document of Buddhist painting as it stood in the late eleventh century. [[source/history-of-japanese-art|pp. 147–148, fig. 179]]
+wikidata_id: Q107046209
+metadata:
+  sources: [Wikidata Q107046209 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/insei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 147–148, fig. 179
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0d/Buddha%27s_Nirvana.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Buddha%27s_Nirvana.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 147–148, fig. 179
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107046209
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 147–148, fig. 179
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q107046209
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 147–148, fig. 179
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 147–148, fig. 179
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 147–148, fig. 179

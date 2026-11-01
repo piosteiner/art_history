@@ -1,0 +1,13 @@
+public_id: 107185
+name: Senju Kannon
+names:
+  - lang: ja
+    role: original
+    text: "{千手観音|せんじゅかんのん}"
+category: iconography
+parent: kannon
+definition: The thousand-armed (and often eleven-headed) form of Kannon, whose many hands reach out to all beings.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 154

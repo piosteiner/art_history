@@ -1,0 +1,52 @@
+public_id: 106816
+name: Saigū no Nyōgo
+names:
+  - lang: ja
+    role: original
+    text: 徽子女王
+  - Kishi Joō
+  - Yoshiko-joō
+  - Yoshiko Joō
+  - Princess Kishi
+  - Princess Yoshiko
+  - Kishi-joō
+  - Saigu no Nyogo
+  - Saiguu no Nyougo
+  - lang: zh
+    role: translation
+    text: 齋宮女御
+  - lang: ru
+    role: translation
+    text: Киси-дзё
+kind: person
+occupations: [poet, writer, musician]
+birth: 929
+death: 985
+wikidata_id: Q1284275
+metadata:
+  sources: [Wikidata Q1284275 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e9/Sanj%C5%ABrokkasen-gaku_-_16_-_Kan%C5%8D_Naonobu_-_Saig%C5%AB_no_Ny%C5%8Dgo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sanj%C5%ABrokkasen-gaku_-_16_-_Kan%C5%8D_Naonobu_-_Saig%C5%AB_no_Ny%C5%8Dgo.jpg
+    license: Public domain
+    credit: Kanō Naonobu
+identifiers:
+  lc: n79037694
+  viaf: "60352809"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1284275
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1284275
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1284275
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q1284275

@@ -1,0 +1,56 @@
+public_id: 106746
+name: Kyoto Imperial Palace
+names:
+  - lang: fr
+    role: translation
+    text: palais impérial de Kyoto
+  - lang: de
+    role: translation
+    text: Kaiserpalast Kyōto
+  - lang: it
+    role: translation
+    text: Kyōto-gosho
+  - lang: es
+    role: translation
+    text: Palacio Imperial de Kioto
+  - lang: ja
+    role: translation
+    text: 京都御所
+  - lang: ko
+    role: translation
+    text: 교토고쇼
+  - lang: ru
+    role: translation
+    text: Императорский дворец в Киото
+kind: palace
+founded: 1337
+place: kyoto
+location: [135.76222, 35.02528]
+website_url: https://sankan.kunaicho.go.jp/guide/kyoto.html
+wikidata_id: Q1202239
+metadata:
+  sources: [Wikidata Q1202239 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Kyoto-gosho_Kenreimon_%28open%29.JPG/1280px-Kyoto-gosho_Kenreimon_%28open%29.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Kyoto-gosho_Kenreimon_(open).JPG
+    license: CC0
+    credit: Saigen Jiro
+identifiers:
+  viaf: "255575582"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1202239
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1202239
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1202239
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1202239

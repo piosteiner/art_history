@@ -1,0 +1,12 @@
+public_id: 107175
+name: moya
+names:
+  - lang: ja
+    role: original
+    text: "{母屋|もや}"
+category: architecture
+definition: The core of a Japanese hall, the space within the main pillars; surrounded by the corridors (hisashi).
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 136

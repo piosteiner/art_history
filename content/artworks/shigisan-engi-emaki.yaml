@@ -50,16 +50,10 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: p. 69, fig. 79
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q3443333
   medium:
     - source: history-of-japanese-art
       locator: p. 69, fig. 79
   created:
-    - accessed: 2026-11-01
-      property: P571
-      wikidata: Q3443333
     - source: history-of-japanese-art
       locator: p. 69, fig. 79
   location:
@@ -70,9 +64,6 @@ sources:
     - source: history-of-japanese-art
       locator: p. 69, fig. 79
   dimensions:
-    - accessed: 2026-11-01
-      property: P2048
-      wikidata: Q3443333
     - source: history-of-japanese-art
       locator: p. 69, fig. 79
   institution:
@@ -81,6 +72,3 @@ sources:
       wikidata: Q3443333
     - source: history-of-japanese-art
       locator: p. 69, fig. 79
-  title_status:
-    - accessed: 2026-11-01
-      wikidata: Q3443333

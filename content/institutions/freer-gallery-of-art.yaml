@@ -1,0 +1,60 @@
+public_id: 106737
+name: Freer Gallery of Art
+names:
+  - Smithsonian’s National Museum of Asian Art
+  - Freer Gallery of Art and Arthur M. Sackler Gallery
+  - Freer Art Gallery
+  - Freer Gallery
+  - The Freer
+  - lang: es
+    role: translation
+    text: Galería Freer
+  - lang: ja
+    role: translation
+    text: フリーア美術館
+  - lang: zh
+    role: translation
+    text: 佛利尔美术馆
+  - lang: ko
+    role: translation
+    text: 프리어 미술관
+  - lang: ru
+    role: translation
+    text: Галерея искусства Фрир
+kind: museum
+founded: 1923
+place: washington-d-c
+location: [-77.0275, 38.88833]
+website_url: https://asia.si.edu/
+wikidata_id: Q1075126
+metadata:
+  sources: [Wikidata Q1075126 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b2/Freer_Gallery_of_Art_-_desc-front_of_building_closeup_-_from-DC1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Freer_Gallery_of_Art_-_desc-front_of_building_closeup_-_from-DC1.jpg
+    license: CC BY-SA 3.0
+    credit: Phyzome (Wikimedia Commons)
+identifiers:
+  bnf: "118695981"
+  gnd: 1003317-8
+  idref: "183285867"
+  lc: n80085247
+  ulan: "500245389"
+  viaf: "121007573"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1075126
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1075126
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1075126
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1075126

@@ -1,0 +1,37 @@
+public_id: 107198
+title: Saddle with clover and spider webs
+attribution_label: Anonymous
+created: 12th century
+created_span: uncertain
+kind: saddle
+medium: Black lacquer with mother-of-pearl inlay
+materials: [lacquer, mother-of-pearl]
+dimensions: [30, 44]
+dimensions_note: height, width
+institution: tokyo-national-museum
+description_md: "A saddle of black lacquer inlaid with mother-of-pearl: sprays of bush clover and spider webs, motifs of poetry and the seasons, cover the surface without crowding it. Probably made for a ceremonial procession in the capital and never used outside it; Mason sets its elegant, balanced Japanese taste against the dense Chinese-derived pattern of the Chūsonji altar table. [[source/history-of-japanese-art|p. 107, fig. 132]]"
+relationships:
+  - type: associated_with
+    to: movement/insei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 107, fig. 132
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 107, fig. 132
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 107, fig. 132
+  created:
+    - source: history-of-japanese-art
+      locator: p. 107, fig. 132
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 107, fig. 132
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 107, fig. 132
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 107, fig. 132

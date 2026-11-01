@@ -1,0 +1,51 @@
+public_id: 106748
+title: Shishinden (Throne Hall), Kyoto Imperial Palace
+names:
+  - Shishin Hall
+  - Shishin-den
+  - lang: ja
+    role: translation
+    text: 紫宸殿
+attribution_label: Anonymous
+created: 1855
+kind: building
+materials: [wood]
+institution: kyoto-imperial-palace
+location: [135.76215, 35.02418]
+description_md: "The hall for the major ceremonies of state in the imperial palace of Heian (Kyoto), the capital [[person/emperor-kanmu]] founded in 794. The present building of 1855 reproduces the early Heian [[shinden-zukuri]] style: an imposing hall on tall pillars under a massive double roof of cypress bark, the interior a wood-plank floor with large wooden platforms, behind which panels with Confucian sages form a wall. The Heian court took over the great audience hall (Daigokuden) of the Chinese model, but by the ninth century the Shishinden and the more intimate Seiryōden had taken over its functions; none of the original buildings survives. [[source/history-of-japanese-art|p. 103, fig. 126]]"
+wikidata_id: Q11605706
+metadata:
+  sources: [Wikidata Q11605706 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/kyoto
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 103, fig. 126
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Kyoto-gosho_Shishinden_zenkei-5.jpg/1280px-Kyoto-gosho_Shishinden_zenkei-5.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kyoto-gosho_Shishinden_zenkei-5.jpg
+    license: CC0
+    credit: Saigen Jiro
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 103, fig. 126
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q11605706
+  created:
+    - source: history-of-japanese-art
+      locator: p. 103, fig. 126
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q11605706
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 103, fig. 126
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 103, fig. 126

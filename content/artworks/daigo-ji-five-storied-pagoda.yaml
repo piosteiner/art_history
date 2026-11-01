@@ -1,0 +1,61 @@
+public_id: 106776
+title: Five-storied pagoda, Shimo Daigoji
+names:
+  - Five-storied Pagoda, Daigoji
+  - lang: fr
+    role: translation
+    text: pagode à cinq étages du temple Daigo
+  - lang: ja
+    role: translation
+    text: 醍醐寺五重塔
+attribution_label: Anonymous
+created: 951
+kind: building
+medium: Wood
+materials: [wood]
+institution: daigo-ji
+location: [135.8221, 34.95058]
+description_md: The only one of the original buildings of Shimo (Lower) Daigoji to survive, completed in 951 and the only example of its type left from the tenth century. Placed so that the visitor climbing the gentle slope sees its soaring height without looking down on it. Inside, the casings around the central pillar, the walls and even the doors are painted with the mandalas of the Two Realms and the Shingon patriarchs. [[source/history-of-japanese-art|pp. 137–138, fig. 167]]
+wikidata_id: Q107020586
+metadata:
+  sources: [Wikidata Q107020586 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/kyoto
+    period: 951
+  - type: associated_with
+    to: movement/fujiwara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 137–138, fig. 167
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Daigoji_Kyoto02bs4200.jpg/1280px-Daigoji_Kyoto02bs4200.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Daigoji_Kyoto02bs4200.jpg
+    license: CC BY 2.5
+    credit: 663highland
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 137–138, fig. 167
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107020586
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 137–138, fig. 167
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q107020586
+    - source: history-of-japanese-art
+      locator: pp. 137–138, fig. 167
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q107020586
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 137–138, fig. 167
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 137–138, fig. 167

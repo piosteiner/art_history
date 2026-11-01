@@ -1,0 +1,56 @@
+public_id: 106774
+title: Five-storied pagoda, Murōji
+names:
+  - Five-storied Pagoda, Murouji
+  - lang: ja
+    role: translation
+    text: 室生寺五重塔
+attribution_label: Anonymous
+created: 767/833
+created_span: uncertain
+kind: building
+medium: Wood, cypress-bark roofs
+materials: [wood]
+institution: muro-ji
+location: [136.0403, 34.53828]
+description_md: The oldest building of Murōji, a mountain temple south-east of Nara founded in the late eighth century by the monk Kenkyō from Kōfukuji at a place sacred for its dragon spirit and its rocks and streams. Extraordinarily slender and about half the height of most pagodas, it fits easily into the mountain setting; the cypress-bark roofs give it a more informal look than tile. Severely damaged in a typhoon in the late 1990s and since restored. [[source/history-of-japanese-art|p. 135, fig. 162]]
+wikidata_id: Q107020540
+metadata:
+  sources: [Wikidata Q107020540 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/uda
+    period: c. 800
+  - type: associated_with
+    to: movement/early-heian-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 135, fig. 162
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Murouji_gojyunoto2.jpg/1280px-Murouji_gojyunoto2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Murouji_gojyunoto2.jpg
+    license: CC BY-SA 3.0
+    credit: KENPEI
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 135, fig. 162
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107020540
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 135, fig. 162
+  created:
+    - source: history-of-japanese-art
+      locator: p. 135, fig. 162
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q107020540
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 135, fig. 162
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 135, fig. 162

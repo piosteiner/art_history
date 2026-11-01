@@ -1,0 +1,49 @@
+public_id: 106804
+name: Sugawara no Michizane
+names:
+  - lang: ja
+    role: original
+    text: 菅原道真
+  - Kanke
+  - lang: ko
+    role: translation
+    text: 스가와라노 미치자네
+  - lang: ru
+    role: translation
+    text: Сугавара-но Митидзанэ
+kind: person
+occupations: [poet, writer, diplomat, kugyō]
+birth: 845-08-05
+death: 903-03-31
+wikidata_id: Q382005
+metadata:
+  sources: [Wikidata Q382005 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/%E6%9D%9F%E5%B8%AF%E5%A4%A9%E7%A5%9E%E5%83%8F.png/1280px-%E6%9D%9F%E5%B8%AF%E5%A4%A9%E7%A5%9E%E5%83%8F.png
+    source_url: https://commons.wikimedia.org/wiki/File:%E6%9D%9F%E5%B8%AF%E5%A4%A9%E7%A5%9E%E5%83%8F.png
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 12047780c
+  gnd: "119037971"
+  idref: "028694600"
+  lc: n81127221
+  ulan: "500326616"
+  viaf: "111068012"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q382005
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q382005
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q382005
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q382005

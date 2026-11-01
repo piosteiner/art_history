@@ -1,0 +1,72 @@
+public_id: 106756
+title: Murasaki Shikibu nikki emaki (Fujita scroll)
+names:
+  - Murasaki Shikibu Diary Emaki
+  - lang: ja
+    role: translation
+    text: 藤田家本紫式部日記絵巻
+attribution_label: Anonymous
+created: first half of the 13th century
+created_span: uncertain
+kind: emakimono
+medium: Handscroll, colour on paper
+materials: [paper]
+dimensions: [23.9]
+institution: fujita-art-museum
+location: [135.525, 34.69507]
+description_md: Illustrations to the diary of [[person/murasaki-shikibu]], lady-in-waiting to Empress Shōshi. In this scene the empress’s father, [[person/fujiwara-no-michinaga]], stands on the veranda of his mansion watching two elaborate boats on the lake, prepared for the festivities at the birth of his grandson, the imperial heir. [[source/history-of-japanese-art|p. 108, fig. 134]]
+wikidata_id: Q107045775
+metadata:
+  sources: [Wikidata Q107045775 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/osaka
+  - type: depicts_person
+    to: person/fujiwara-no-michinaga
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 108, fig. 134
+  - type: depicts_person
+    to: person/murasaki-shikibu
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 108, fig. 134
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 108, fig. 134
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/09/Murasaki_Shikibu_Nikki_Emaki_%28Fujita_Art_Museum%29_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Murasaki_Shikibu_Nikki_Emaki_(Fujita_Art_Museum)_2.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 108, fig. 134
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107045775
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 108, fig. 134
+  created:
+    - source: history-of-japanese-art
+      locator: p. 108, fig. 134
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q107045775
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 108, fig. 134
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 108, fig. 134
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q107045775
+    - source: history-of-japanese-art
+      locator: p. 108, fig. 134

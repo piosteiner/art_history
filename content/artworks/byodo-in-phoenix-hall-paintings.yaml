@@ -1,0 +1,48 @@
+public_id: 106784
+title: Door paintings of the Phoenix Hall
+names:
+  - Paintings in the Phoenix Hall
+  - lang: ja
+    role: translation
+    text: 平等院鳳凰堂中堂壁扉画
+attribution_label: Anonymous
+created: c. 1053
+created_span: uncertain
+kind: painting
+medium: Colour on wood
+materials: [wood]
+institution: byodo-in
+description_md: The paintings on the inner surfaces of the doors depict the welcome given to the nine categories of beings reborn in the Western Paradise, each with a long inscription from the Amitāyus Sutra (Kanmuryōju kyō). Removed from the hall to preserve what remains. On the door for the Middle Class, Upper Rank, Amida descends on a white cloud towards the veranda of a nobleman’s house; below, horses gambol in the shallow water of a pond among the gentle hills of Heian — among the earliest datable [[yamato-e]] landscapes. [[source/history-of-japanese-art|pp. 145–146, figs. 176–177]]
+wikidata_id: Q107046815
+metadata:
+  sources: [Wikidata Q107046815 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/fujiwara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 145–146, figs. 176–177
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3b/Byodoin_Wall_Painting_CHUHIN-JYOSEI_East.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Byodoin_Wall_Painting_CHUHIN-JYOSEI_East.JPG
+    license: Public domain
+    credit: Anonymus painters, book:FUKUYAMA TUNEO and MORI TORU
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 145–146, figs. 176–177
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107046815
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 145–146, figs. 176–177
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 145–146, figs. 176–177
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 145–146, figs. 176–177
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 145–146, figs. 176–177

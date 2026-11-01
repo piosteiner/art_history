@@ -1,0 +1,66 @@
+public_id: 106767
+name: Saburō Murakami
+names:
+  - lang: ja
+    role: original
+    text: 村上三郎
+birth: 1925-06-27
+death: 1996-01-11
+wikidata_id: Q3460771
+metadata:
+  sources: [Wikidata Q3460771 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-01
+        property: P27
+        wikidata: Q3460771
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-01
+        property: P27
+        wikidata: Q3460771
+  - type: born_in
+    to: place/kobe
+    sources:
+      - accessed: 2026-11-01
+        property: P19
+        wikidata: Q3460771
+  - type: died_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-01
+        property: P20
+        wikidata: Q3460771
+  - type: member_of
+    to: movement/gutai-group
+    sources:
+      - accessed: 2026-11-01
+        property: P463
+        wikidata: Q3460771
+  - type: founded
+    to: movement/gutai-group
+    sources:
+      - accessed: 2026-11-01
+        property: P112
+        wikidata: Q1028956
+identifiers:
+  gnd: "121414434"
+  idref: "080916732"
+  lc: nr96039264
+  rkd: "321680"
+  ulan: "500125458"
+  viaf: "67322218"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3460771
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3460771

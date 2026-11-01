@@ -1,0 +1,59 @@
+public_id: 106792
+title: One thousand standing Senju Kannon, Sanjūsangendō
+names:
+  - One Thousand Statues of Senju Kannon
+  - Sentai Senju Kannon
+  - lang: ja
+    role: translation
+    text: 千体千手観音立像
+attribution_label: Anonymous
+created: 1164/1266
+kind: sculpture
+medium: Wood, with lacquer and gold leaf
+materials: [wood, lacquer, gold leaf]
+institution: sanjusangen-do
+description_md: "A sea of figures on the ten stepped levels of the altar: one thousand standing images of the thousand-armed Kannon ([[senju-kannon]]) flanking a central seated one, with twenty-eight attendants. When the first Rengeōin burnt, 156 Kannon sculptures were saved and formed the nucleus of the new installation; the rest were made under [[artist/tankei]] in the thirteenth century, faithful to the older forms. Most stand frontally, some with a slight shift of weight. [[source/history-of-japanese-art|pp. 154–156, fig. 188]]"
+wikidata_id: Q107046743
+metadata:
+  sources: [Wikidata Q107046743 (retrieved 2026-11-01)]
+relationships:
+  - type: co_creator
+    to: artist/tankei
+    label: master of the new installation, 13th century
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 154–156, fig. 188
+  - type: associated_with
+    to: movement/insei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 154–156, fig. 188
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 154–156, fig. 188
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cf/Sanjusangendo_1979.1.55P01B.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sanjusangendo_1979.1.55P01B.jpg
+    license: Public domain
+    credit: Tamamura Kozaburo
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 154–156, fig. 188
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107046743
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 154–156, fig. 188
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 154–156, fig. 188
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 154–156, fig. 188
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 154–156, fig. 188

@@ -1,0 +1,21 @@
+public_id: 106745
+name: Yūshi Hachiman-kō
+names:
+  - Yūshi Hachimankō
+  - lang: ja
+    role: translation
+    text: 有志八幡講
+place: japan
+address: 和歌山県伊都郡高野町大字高野山
+wikidata_id: Q107040671
+metadata:
+  sources: [Wikidata Q107040671 (retrieved 2026-11-01)]
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q107040671
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q107040671

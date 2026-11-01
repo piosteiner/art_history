@@ -1,0 +1,47 @@
+public_id: 106818
+name: Genshin
+names:
+  - lang: ja
+    role: original
+    text: 源信
+  - Eshin
+  - lang: ko
+    role: translation
+    text: 겐신
+  - lang: ru
+    role: translation
+    text: Гэнсин
+kind: person
+occupations: [writer, Buddhist monk]
+birth: 942
+death: 1017-07-18
+wikidata_id: Q1009263
+metadata:
+  sources: [Wikidata Q1009263 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3c/Genshin-ru.png
+    source_url: https://commons.wikimedia.org/wiki/File:Genshin-ru.png
+    license: Public domain
+    credit: Genshin
+identifiers:
+  gnd: "129514098"
+  idref: "112858619"
+  lc: n81079757
+  viaf: "52770407"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1009263
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1009263
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1009263
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q1009263

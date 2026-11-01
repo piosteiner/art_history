@@ -1,0 +1,49 @@
+public_id: 106807
+name: Emperor Shirakawa
+names:
+  - lang: ja
+    role: original
+    text: 白河天皇
+  - Shirakawa-tennō
+  - Shirakawa
+  - lang: es
+    role: translation
+    text: Emperador Shirakawa
+  - lang: ko
+    role: translation
+    text: 시라카와 천황
+  - lang: ru
+    role: translation
+    text: Император Сиракава
+kind: person
+occupations: [ruler]
+birth: 1053
+death: 1129
+wikidata_id: Q60949
+metadata:
+  sources: [Wikidata Q60949 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Emperor_Shirakawa.jpg/1280px-Emperor_Shirakawa.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emperor_Shirakawa.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  lc: n88141280
+  viaf: "72945767"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q60949
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q60949
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q60949
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q60949

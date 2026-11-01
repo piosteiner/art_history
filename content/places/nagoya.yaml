@@ -1,0 +1,35 @@
+public_id: 106732
+name: Nagoya
+names:
+  - lang: ja
+    role: original
+    text: 名古屋市
+  - lang: ko
+    role: translation
+    text: 나고야시
+  - lang: ru
+    role: translation
+    text: Нагоя
+  - lang: pt
+    role: translation
+    text: Nagoia
+kind: settlement
+parent: japan
+country_code: JP
+location: [136.90639, 35.18139]
+wikidata_id: Q11751
+metadata:
+  sources: [Wikidata Q11751 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q11751
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q11751
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q11751

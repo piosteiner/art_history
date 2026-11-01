@@ -1,0 +1,40 @@
+public_id: 106808
+name: Fujiwara no Kiyohira
+names:
+  - lang: ja
+    role: original
+    text: 藤原清衡
+  - lang: ko
+    role: translation
+    text: 후지와라노 기요히라
+kind: person
+occupations: [samurai]
+birth: 1056
+death: 1128-08-17
+wikidata_id: Q5360232
+metadata:
+  sources: [Wikidata Q5360232 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7d/Fujiwara_no_Kiyohira.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fujiwara_no_Kiyohira.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  viaf: "255145742"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q5360232
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q5360232
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q5360232
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q5360232

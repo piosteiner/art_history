@@ -1,0 +1,41 @@
+public_id: 106814
+name: Ōjin
+names:
+  - lang: ja
+    role: original
+    text: 応神天皇
+  - Ojin
+  - Emperor Ojin
+  - Emperor Ōjin
+  - Ōjin-tennō
+  - Homutawake
+  - Hondawake
+  - lang: es
+    role: translation
+    text: Emperador Ōjin
+  - lang: zh
+    role: translation
+    text: 应神天皇
+  - lang: ko
+    role: translation
+    text: 오진 천황
+  - lang: ru
+    role: translation
+    text: Император Одзин
+occupations: [ruler]
+wikidata_id: Q317997
+metadata:
+  sources: [Wikidata Q317997 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Emperor_%C5%8Cjin.jpg/1280px-Emperor_%C5%8Cjin.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emperor_%C5%8Cjin.jpg
+    license: Public domain
+    credit: Published by 国書刊行会(Kokusho Kankōkai)
+identifiers:
+  lc: nr90018721
+  viaf: "9695462"
+sources:
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q317997

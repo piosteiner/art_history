@@ -1,0 +1,54 @@
+public_id: 106731
+name: Kōzan-ji Temple
+names:
+  - Kōsan-ji
+  - Kōzan-ji
+  - lang: ja
+    role: translation
+    text: 高山寺
+  - lang: ko
+    role: translation
+    text: 고잔지
+  - lang: ru
+    role: translation
+    text: Кодзан-дзи
+kind: temple
+founded: 1206
+place: kyoto
+location: [135.67856, 35.06014]
+address: 京都市右京区梅ヶ畑栂尾町8
+website_url: https://kosanji.com/
+wikidata_id: Q986750
+metadata:
+  sources: [Wikidata Q986750 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Kozanji_Kyoto_Kyoto11s5s4592.jpg/1280px-Kozanji_Kyoto_Kyoto11s5s4592.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kozanji_Kyoto_Kyoto11s5s4592.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  gnd: 7588300-4
+  lc: n81139935
+  ulan: "500301125"
+  viaf: "294657025"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q986750
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q986750
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q986750
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q986750
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q986750

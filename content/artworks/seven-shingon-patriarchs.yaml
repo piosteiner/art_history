@@ -1,0 +1,63 @@
+public_id: 106771
+title: Portraits of the Seven Shingon Patriarchs
+names:
+  - Seven Shingon Patriarchs
+  - Seven Patriarchs of the Shingon Sect
+  - lang: ja
+    role: translation
+    text: 真言七祖像
+attribution_label: Li Zhen and a Japanese master
+created: 806/821
+kind: kakemono
+medium: Hanging scrolls, ink and colour on silk
+materials: [ink, silk]
+dimensions: [211]
+institution: to-ji
+description_md: "A set of seven portraits legitimizing the Shingon teaching from master to pupil. Five were painted in late Tang China and given to [[person/kukai]] by his teacher [[person/huiguo]] before 806; in 821 Kūkai had two more made by a Japanese artist to replace damaged ones. An inscription names the Chinese painter [[artist/li-zhen]] on the portrait of the sixth patriarch, [[person/amoghavajra]] (705–774): a monk deep in meditation, his shoes removed, hands in the gesture of the outer bonds, the face modelled with grey shading over the flesh and drawn in black iron-wire lines — not flattering, but a great teacher in thought. The Japanese portrait of Nāgabodhi (Ryūchi), in a red robe with a notebook in his hand, has little shading: a study of flat forms. [[source/history-of-japanese-art|pp. 128–129, figs. 154–155]]"
+wikidata_id: Q107046373
+metadata:
+  sources: [Wikidata Q107046373 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in_polity
+    to: polity/tang-dynasty
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 128–129, figs. 154–155
+  - type: co_creator
+    to: artist/li-zhen
+    label: five portraits
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 128–129, figs. 154–155
+  - type: associated_with
+    to: movement/early-heian-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 128–129, figs. 154–155
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/88/Amoghavajra.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Amoghavajra.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 128–129, figs. 154–155
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107046373
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 128–129, figs. 154–155
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 128–129, figs. 154–155
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 128–129, figs. 154–155
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 128–129, figs. 154–155
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 128–129, figs. 154–155

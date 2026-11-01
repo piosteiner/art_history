@@ -1,0 +1,29 @@
+public_id: 106820
+name: Sumiyoshi Jokei
+names:
+  - lang: ja
+    role: original
+    text: 住吉如慶
+  - Tosa Hiromichi
+  - Naiki
+  - lang: ko
+    role: translation
+    text: 스미요시 조케이
+birth: 1599
+death: 1670-07-18
+wikidata_id: Q11381817
+metadata:
+  sources: [Wikidata Q11381817 (retrieved 2026-11-01)]
+identifiers:
+  gnd: "143303295"
+  ulan: "500120996"
+  viaf: "252912323"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q11381817
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q11381817

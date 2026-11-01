@@ -1,0 +1,41 @@
+public_id: 106810
+name: Shōbō
+names:
+  - Rigen Daishi
+  - lang: ja
+    role: translation
+    text: 聖宝
+  - lang: zh
+    role: translation
+    text: 聖保
+kind: person
+occupations: [Buddhist monk]
+birth: 832-03-25
+death: 909-07-30
+wikidata_id: Q11610974
+metadata:
+  sources: [Wikidata Q11610974 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cb/Shobo-RigenDaishi-Scroll-EdoPeriod.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shobo-RigenDaishi-Scroll-EdoPeriod.jpg
+    license: CC BY 3.0
+    credit: WolfgangMichel
+identifiers:
+  viaf: "257568927"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q11610974
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q11610974
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q11610974
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q11610974

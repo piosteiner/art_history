@@ -1,0 +1,36 @@
+public_id: 107190
+title: Altar table
+attribution_label: Anonymous
+created: early 12th century
+created_span: uncertain
+kind: furniture
+medium: Black lacquer with mother-of-pearl inlay
+materials: [lacquer, mother-of-pearl]
+dimensions: [77.5, 66.5, 33.5]
+institution: chuson-ji
+description_md: A black lacquer altar table from the provincial temple [[institution/chuson-ji]] in Hiraizumi, of the standard type for the chapels that noblemen’s houses and temples were required to have. The overall design and the dense floral pattern from brocade are Chinese, but the almost gaudy mother-of-pearl inlay betrays a Japanese taste. [[source/history-of-japanese-art|p. 107, fig. 131]]
+relationships:
+  - type: associated_with
+    to: movement/insei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 107, fig. 131
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 107, fig. 131
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 107, fig. 131
+  created:
+    - source: history-of-japanese-art
+      locator: p. 107, fig. 131
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 107, fig. 131
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 107, fig. 131
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 107, fig. 131

@@ -4,6 +4,33 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-01
 
+### Data: the works of Mason, chapter 3 (Heian) + the book's figures as private reference images
+- **What:** 51 works after the figures of Mason, *History of Japanese Art*, pp. 100–165 — 35 made from their Wikidata
+  items (with Commons photographs), 16 by hand: court life (Shishinden, lacquer box, saddle, food stand, Chūsonji altar
+  table), the narrative scrolls (Genji, Chōjū giga, Ban Dainagon, Nenjū gyōji copy, Kitano Tenjin engi, Murasaki
+  Shikibu diary, Shōtoku taishi eden), Shingon (Tōji mandalas, patriarchs, lecture-hall Myōō and bodhisattvas, Jingoji
+  and Murōji, Daigoji, Yellow Fudō, Godairiki), Pure Land (Phoenix Hall with Amida, Unchū kuyō bosatsu, door
+  paintings; raigō triptych; Ōtoku nehan zu; Jōruriji; Konjikidō; Sanjūsangendō with Kannon nos. 390 and 40), late
+  Heian sutras (Chūsonji sutra, Heike nōkyō) and Shinto (Hachiman triad, Kasuga mandala, Kitano Tenmangū,
+  Itsukushima). Caption facts cited "Mason, p. N, fig. N"; descriptions in our own words. New: 20 holders (Tōji,
+  Byōdōin, Jōruriji, Chūsonji, Kōzanji, Tokugawa, Idemitsu, Fujita, Yamato Bunkakan, Freer, Nara National Museum …),
+  21 people (Michinaga, Yorimichi, Kūkai, Saichō, Enchin, Kiyomori, Michizane, the insei emperors, Kiyohira …), the
+  painters Hata no Chitei, Li Zhen, Sumiyoshi Jokei and the sculptor Shōen, 36 glossary terms (kara-e, otoko-e,
+  onna-e, tsukuri-e, hikime kagibana, kirikane, Myōō, Fudō, Dainichi, Taizōkai/Kongōkai, Pure Land, mappō, honji
+  suijaku …). Not entered: plans and diagrams (figs. 125, 128, 157, 161, 164, 171, 182), the aerial view of Tōji
+  (149) and the Kanshinji interior (151). Outdated Wikidata citations of values replaced by Mason's removed; the
+  Daigoji pagoda and its paintings acknowledged as not the same.
+- **Private images:** the 67 figures of chapter 3 cropped into `private_images` for the owner's account only (now 167).
+- **Why:** owner, 2026-11-01. **Revert:** delete the works citing `history-of-japanese-art` with figs. 126–200;
+  `DELETE FROM private_images WHERE owner_id = 1 AND locator ~ 'fig\. (1[2-9][0-9]|200)$'` for the crops.
+
+### Incident: the server ran out of memory and rebooted (19:50 UTC)
+- **What:** a Python one-off of mine read the 570 MB Claude session transcript whole into memory to look something up;
+  with PostgreSQL, the API and the test process on 4 GB that most likely exhausted memory and the machine went down.
+  Everything came back on its own after the reboot (pm2, PostgreSQL, nginx; no data lost); /tmp was emptied.
+- **Why it matters / how to avoid:** never load big files whole on this server — stream or `grep -m` them.
+  **Revert:** nothing to revert.
+
 ### Site test: lists beyond 500 works
 - **What:** `frontend/tests/site.spec.ts` "a tab left open sees entries added meanwhile" counts only first pages
   (`offset` 0) as a visit. **Why:** with chapter 2 of Mason there are more than 500 artworks, so the list comes in two

@@ -1,0 +1,67 @@
+public_id: 106740
+name: Itsukushima Shrine
+names:
+  - Itsukushima Shinto Shrine
+  - Aki Ichinomiya
+  - Itsukushima Shrine (Aizuwakamatsu)
+  - Itsukushima Shrine (Sumoto City)
+  - lang: nl
+    role: translation
+    text: Itsukushima-schrijn
+  - lang: fr
+    role: translation
+    text: sanctuaire d'Itsukushima
+  - lang: de
+    role: translation
+    text: Itsukushima-Schrein
+  - lang: it
+    role: translation
+    text: santuario di Itsukushima
+  - lang: es
+    role: translation
+    text: Santuario Itsukushima
+  - lang: ja
+    role: translation
+    text: 厳島神社
+  - lang: zh
+    role: translation
+    text: 严岛神社
+  - lang: ko
+    role: translation
+    text: 이쓰쿠시마 신사
+  - lang: ru
+    role: translation
+    text: Святилище Ицукусима
+founded: 593
+place: hatsukaichi
+location: [132.32011, 34.29577]
+address: 広島県廿日市市宮島町1-1
+website_url: https://www.itsukushimajinja.jp/
+wikidata_id: Q191763
+metadata:
+  sources: [Wikidata Q191763 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Itsukushima_Gate.jpg/1280px-Itsukushima_Gate.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Itsukushima_Gate.jpg
+    license: CC BY-SA 3.0
+    credit: JordyMeow
+identifiers:
+  lc: n83038370
+  viaf: "159481791"
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q191763
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q191763
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q191763
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q191763

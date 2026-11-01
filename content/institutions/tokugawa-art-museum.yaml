@@ -1,0 +1,63 @@
+public_id: 106733
+name: Tokugawa Art Museum
+names:
+  - The Tokugawa Art Museum
+  - Tokugawa Bijutsukan
+  - lang: fr
+    role: translation
+    text: musée d'art Tokugawa
+  - lang: de
+    role: translation
+    text: Tokugawa-Kunstmuseum
+  - lang: es
+    role: translation
+    text: Museo de Arte Tokugawa
+  - lang: ja
+    role: translation
+    text: 徳川美術館
+  - lang: zh
+    role: translation
+    text: 德川美術館
+  - lang: ko
+    role: translation
+    text: 도쿠가와 미술관
+  - lang: ru
+    role: translation
+    text: Художественный музей Токугава
+kind: museum
+founded: 1935
+place: nagoya
+location: [136.93319, 35.18369]
+address: 愛知県名古屋市東区徳川町1017
+website_url: https://www.tokugawa-art-museum.jp/
+wikidata_id: Q3077236
+metadata:
+  sources: [Wikidata Q3077236 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/View_of_Tokugawa_Art_Museum_%281%29%2C_Tokugawa-cho_Higashi_Ward_Nagoya_2021.jpg/1280px-View_of_Tokugawa_Art_Museum_%281%29%2C_Tokugawa-cho_Higashi_Ward_Nagoya_2021.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:View_of_Tokugawa_Art_Museum_(1),_Tokugawa-cho_Higashi_Ward_Nagoya_2021.jpg
+    license: CC BY-SA 4.0
+    credit: Tomio344456
+identifiers:
+  gnd: 5525116-X
+  idref: "171209478"
+  lc: n81144018
+  ulan: "500303389"
+  viaf: "141097491"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q3077236
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q3077236
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q3077236
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q3077236

@@ -1,0 +1,59 @@
+public_id: 106770
+name: Akira Kanayama
+given_name: Akira
+family_name: Kanayama
+names:
+  - lang: ja
+    role: original
+    text: 金山明
+birth: 1924
+death: 2006
+wikidata_id: Q3192581
+metadata:
+  sources: [Wikidata Q3192581 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-01
+        property: P27
+        wikidata: Q3192581
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-01
+        property: P27
+        wikidata: Q3192581
+  - type: born_in
+    to: place/amagasaki
+    sources:
+      - accessed: 2026-11-01
+        property: P19
+        wikidata: Q3192581
+  - type: member_of
+    to: movement/gutai-group
+    sources:
+      - accessed: 2026-11-01
+        property: P463
+        wikidata: Q3192581
+  - type: founded
+    to: movement/gutai-group
+    sources:
+      - accessed: 2026-11-01
+        property: P112
+        wikidata: Q1028956
+identifiers:
+  gnd: "121414477"
+  ulan: "500122673"
+  viaf: "96586005"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3192581
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3192581

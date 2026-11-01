@@ -1,0 +1,43 @@
+public_id: 107203
+title: Shōtoku taishi eden (Pictorial biography of Prince Shōtoku)
+creator: hata-no-chitei
+created: 1069
+kind: painting
+medium: Colour on figured silk
+materials: [silk]
+dimensions: [185, 291]
+institution: tokyo-national-museum
+description_md: Ten paintings on silk made in 1069 by [[artist/hata-no-chitei]], an itinerant painter from Settsu, for the walls of the picture hall (edono) in the eastern precinct of Hōryūji, now remounted as panels. They tell the life of [[person/prince-shotoku]] in a geographical rather than chronological order, each episode labelled in a cartouche and set in pockets of space between mountains and trees. This section shows Shitennōji surrounded by low land, and, above, the prince crossing the Japan Sea to China in a flying chariot. Chinese pictorial conventions combine with a recognition of the difference between Chinese and Japanese mountains — a stage in the Japanization of secular painting. [[source/history-of-japanese-art|p. 113, fig. 138]]
+relationships:
+  - type: depicts_person
+    to: person/prince-shotoku
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 113, fig. 138
+  - type: associated_with
+    to: movement/fujiwara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 113, fig. 138
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 113, fig. 138
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 113, fig. 138
+  created:
+    - source: history-of-japanese-art
+      locator: p. 113, fig. 138
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 113, fig. 138
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 113, fig. 138
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 113, fig. 138
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 113, fig. 138

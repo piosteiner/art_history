@@ -1,0 +1,47 @@
+public_id: 107205
+title: Hachiman Triad, Yakushiji
+attribution_label: Anonymous
+created: 889/897
+kind: sculpture
+medium: Wood, painted
+materials: [wood]
+dimensions: [38.8]
+dimensions_note: Hachiman; Jingū 33.9 cm, Nakatsu 36.8 cm
+institution: yakushi-ji
+description_md: "Three small images made for the Yasumigaoka Hachiman Shrine on the grounds of Yakushiji, built between 889 and 897: an early example of Shinto sculpture, the [[kami]] given human form like Buddhist images ([[honji-suijaku]]). [[hachiman]] is a monk, seated cross-legged, his right hand on his knee and left hand raised; the two female figures sit relaxed in court costume, hands tucked into their sleeves. Recent research identifies them as Empress Jingū and a second goddess, either Himegami or Ōjin’s wife Nakatsu, with Hachiman as Emperor Ōjin. All three seem to come from the same tree trunk, perhaps of special significance, carved in [[ichiboku-zukuri]]. [[source/history-of-japanese-art|pp. 161–163, figs. 195–197]]"
+relationships:
+  - type: depicts_person
+    to: person/emperor-ojin
+    label: as the god Hachiman, a monk
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 161–163, figs. 195–197
+  - type: depicts_person
+    to: person/empress-jingu
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 161–163, figs. 195–197
+  - type: associated_with
+    to: movement/early-heian-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 161–163, figs. 195–197
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 161–163, figs. 195–197
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 161–163, figs. 195–197
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 161–163, figs. 195–197
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 161–163, figs. 195–197
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 161–163, figs. 195–197
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 161–163, figs. 195–197

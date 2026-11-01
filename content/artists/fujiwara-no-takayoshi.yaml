@@ -1,0 +1,13 @@
+public_id: 106760
+name: Fujiwara no Takayoshi
+given_name: Fujiwara no
+family_name: Takayoshi
+birth: 1101/1200
+wikidata_id: Q11623630
+metadata:
+  sources: [Wikidata Q11623630 (retrieved 2026-11-01)]
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q11623630

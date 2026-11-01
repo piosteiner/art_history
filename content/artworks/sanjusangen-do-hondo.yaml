@@ -1,0 +1,42 @@
+public_id: 107200
+title: Sanjūsangendō (Hall of Thirty-three Bays), Rengeōin
+names:
+  - lang: ja
+    role: original
+    text: "{三十三間堂|さんじゅうさんげんどう}"
+attribution_label: Anonymous
+created: 1266
+kind: building
+medium: Wood
+materials: [wood]
+institution: sanjusangen-do
+location: [135.77167, 34.98806]
+description_md: "A hall for one thousand images of the thousand-armed Kannon, the reproduction of the Rengeōin built by [[person/taira-no-kiyomori]] in 1164 for the retired emperor [[person/emperor-go-shirakawa]]. When that hall burnt down in 1249, rebuilding began at once; it was finished by 1253, the main image installed in 1254 and the final dedication held in 1266. An architectural oddity: a [[moya]] thirty-three bays long but only three deep, surrounded by a corridor — 118 metres long, so that from the Edo period archers competed along its veranda (the record, set in 1686, was 13,053 arrows, 8,133 of them reaching the end). Inside, heavy beams and arched rainbow beams, no ceiling. [[source/history-of-japanese-art|pp. 153–155, fig. 187]]"
+relationships:
+  - type: created_in
+    to: place/kyoto
+    period: 1266
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 153–155, fig. 187
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 153–155, fig. 187
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 153–155, fig. 187
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 153–155, fig. 187
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 153–155, fig. 187
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 153–155, fig. 187
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 153–155, fig. 187

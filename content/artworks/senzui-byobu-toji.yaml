@@ -1,0 +1,76 @@
+public_id: 106759
+title: Senzui byōbu (Landscape screen)
+names:
+  - Senzui Byōbu
+  - Landscape
+  - lang: fr
+    role: translation
+    text: Paravent avec paysage du Tô-ji
+  - lang: ja
+    role: translation
+    text: 旧東寺本山水屏風
+attribution_label: Anonymous
+created: 11th century
+created_span: uncertain
+kind: byōbu
+medium: Six-panel folding screen, colour on silk
+materials: [silk]
+dimensions: [146.4, 42.7]
+dimensions_note: each panel
+institution: kyoto-national-museum
+inventory_number: A甲227
+location: [135.7735, 34.98995]
+description_md: "A six-panel screen once at Tōji, an essential ritual object in the Shingon [[kanjo]] initiation, although its subject is secular: an elderly gentleman in a thatched hut among wisteria-covered pines, usually identified as the Chinese poet Bo Juyi (772–846), visited by young men who want to learn from him. Perhaps a nobleman screened himself with it at a ceremony and then gave it to the temple. Chinese theme and figures in a Japanese landscape — a [[kara-e]] gem in a [[yamato-e]] setting. [[source/history-of-japanese-art|p. 114, fig. 139]]"
+wikidata_id: Q65159094
+metadata:
+  sources: [Wikidata Q65159094 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/kyoto
+    period: 11th century
+  - type: associated_with
+    to: movement/fujiwara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 114, fig. 139
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Landscape_Screens_Toji.jpg/1280px-Landscape_Screens_Toji.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Landscape_Screens_Toji.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 114, fig. 139
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q65159094
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 114, fig. 139
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q65159094
+    - source: history-of-japanese-art
+      locator: p. 114, fig. 139
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q65159094
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 114, fig. 139
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 114, fig. 139
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q65159094
+    - source: history-of-japanese-art
+      locator: p. 114, fig. 139
+  inventory_number:
+    - accessed: 2026-11-01
+      property: P217
+      wikidata: Q65159094

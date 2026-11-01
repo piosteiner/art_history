@@ -1,0 +1,32 @@
+public_id: 106726
+name: Kizugawa
+names:
+  - lang: ja
+    role: original
+    text: 木津川市
+  - lang: ko
+    role: translation
+    text: 기즈가와시
+  - lang: ru
+    role: translation
+    text: Кидзугава
+kind: settlement
+parent: kyoto-prefecture
+country_code: JP
+location: [135.82008, 34.73714]
+wikidata_id: Q990352
+metadata:
+  sources: [Wikidata Q990352 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q990352
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q990352
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q990352

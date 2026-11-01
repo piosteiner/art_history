@@ -1,0 +1,81 @@
+public_id: 106768
+name: Kazuo Shiraga
+given_name: Kazuo
+family_name: Shiraga
+names:
+  - lang: ja
+    role: translation
+    text: 白髪一雄
+birth: 1924-08-12
+death: 2008-04-11
+wikidata_id: Q1421445
+metadata:
+  sources: [Wikidata Q1421445 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-01
+        property: P27
+        wikidata: Q1421445
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-01
+        property: P27
+        wikidata: Q1421445
+  - type: born_in
+    to: place/amagasaki
+    sources:
+      - accessed: 2026-11-01
+        property: P19
+        wikidata: Q1421445
+  - type: died_in
+    to: place/amagasaki
+    sources:
+      - accessed: 2026-11-01
+        property: P20
+        wikidata: Q1421445
+  - type: worked_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-01
+        property: P937
+        wikidata: Q1421445
+  - type: studied_at
+    to: institution/kyoto-city-university-of-arts
+    sources:
+      - accessed: 2026-11-01
+        property: P69
+        wikidata: Q1421445
+  - type: member_of
+    to: movement/gutai-group
+    sources:
+      - accessed: 2026-11-01
+        property: P463
+        wikidata: Q1421445
+  - type: founded
+    to: movement/gutai-group
+    sources:
+      - accessed: 2026-11-01
+        property: P112
+        wikidata: Q1028956
+identifiers:
+  bnf: "122652850"
+  gnd: "119075237"
+  idref: "031438369"
+  lc: nr90010638
+  rkd: "253981"
+  ulan: "500125013"
+  viaf: "96604213"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1421445
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1421445

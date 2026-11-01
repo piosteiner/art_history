@@ -1,0 +1,16 @@
+public_id: 106739
+name: Hatsukaichi
+kind: settlement
+location: [132.33158, 34.34822]
+wikidata_id: Q736897
+metadata:
+  sources: [Wikidata Q736897 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q736897
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q736897

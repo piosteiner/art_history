@@ -1,0 +1,82 @@
+public_id: 106763
+title: Chōjū jinbutsu giga (Scrolls of Frolicking Animals and Humans)
+names:
+  - Chōjū-jinbutsu-giga
+  - Chōjū-giga
+  - Scrolls of Frolicking Animals
+  - Scroll of Frolicking Animals
+  - Scrolls of Frolicking Animals and Humans
+  - lang: nl
+    role: translation
+    text: Choju-jinbutsu-giga
+  - lang: es
+    role: translation
+    text: Chōjugiga
+  - lang: zh
+    role: translation
+    text: 鳥獸戲畫
+  - lang: ko
+    role: translation
+    text: 조지유진부츠기가
+  - lang: ru
+    role: translation
+    text: Тёдзюгига
+  - lang: ja
+    role: original
+    text: "{鳥獣人物戯画|ちょうじゅうじんぶつぎが}"
+creator: toba-sojo
+attribution_label: traditionally attributed to Toba Sōjō
+created: mid 12th century
+created_span: uncertain
+kind: emakimono
+medium: Handscrolls, ink on paper
+materials: [ink, paper]
+dimensions: [31.8]
+institution: kozan-ji
+description_md: "Four scrolls in ink alone, without text: the first two show animals behaving like people — a rabbit doing a back flip into a lake, frogs dancing to split-bamboo clappers, frogs and rabbits at an archery contest, a monkey in monk’s robes chanting before a frog enshrined as a Buddha — satirical, at times bitingly so. The third and fourth scrolls are later and by a less competent hand. Who made them and why is unknown: they have been seen as a satirical counterpart to the Nenjū gyōji emaki of Tokiwa Mitsunaga and Go Shirakawa, or, after Mimi Yiengpruksawan, as the work of the city’s non-aristocratic merchants. The first two probably date from before 1150. [[source/history-of-japanese-art|pp. 118–119, figs. 142–144]]"
+wikidata_id: Q736832
+metadata:
+  sources: [Wikidata Q736832 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/insei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 118–119, figs. 142–144
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Chouju_1st_scroll-01.jpg/1280px-Chouju_1st_scroll-01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Chouju_1st_scroll-01.jpg
+    license: Public domain
+    credit: Toba Sōjō?
+identifiers:
+  gnd: "1231323205"
+  viaf: "186697571"
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 118–119, figs. 142–144
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q736832
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 118–119, figs. 142–144
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 118–119, figs. 142–144
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q736832
+  materials:
+    - accessed: 2026-11-01
+      property: P186
+      wikidata: Q736832
+    - source: history-of-japanese-art
+      locator: pp. 118–119, figs. 142–144
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 118–119, figs. 142–144
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 118–119, figs. 142–144

@@ -1,0 +1,60 @@
+public_id: 106794
+title: Heike nōkyō (Sutras Dedicated by the Heike)
+names:
+  - Heike Nōkyō
+  - Sutras Dedicated by the Heike
+  - Sutras Dedicated by the Taira Family
+  - Heike Nōgyō
+  - Heike Nokyo
+  - lang: ja
+    role: original
+    text: "{平家納経|へいけのうきょう}"
+attribution_label: members of the Taira family
+created: 1164
+kind: sutra
+medium: Colour, gold and silver on paper
+materials: [paper, gold, silver]
+dimensions: [27, 25.8]
+dimensions_note: cover of chapter 27
+institution: itsukushima-shrine
+web_url: http://www.pref.hiroshima.lg.jp/site/bunkazai/bunkazai-data-101020010.html
+description_md: "The most elaborate of the Lotus Sutra scrolls of the Insei period: thirty-three rolls copied, by tradition, by members of the Taira family and their vassals, from [[person/taira-no-kiyomori]] down, and presented by him to the clan’s shrine at Itsukushima in the ninth month of 1164. Each roll is made of lavishly decorated sheets with the text in gold and silver ink, the frontispieces traditionally attributed to the women of the clan. On the cover of chapter 27, the King Myōshōgon chapter, a huge silver moon rises behind a low hill and an old gnarled tree; [[ashide]] characters in the roots read “that long night” — the darkness of [[mappo]] before Miroku appears. [[source/history-of-japanese-art|pp. 160–161, fig. 194]]"
+wikidata_id: Q11482424
+metadata:
+  sources: [Wikidata Q11482424 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/insei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 160–161, fig. 194
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Heikenoukyou.jpg/1280px-Heikenoukyou.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Heikenoukyou.jpg
+    license: Public domain
+    credit: 平清盛
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 160–161, fig. 194
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q11482424
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 160–161, fig. 194
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 160–161, fig. 194
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 160–161, fig. 194
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 160–161, fig. 194
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q11482424
+    - source: history-of-japanese-art
+      locator: pp. 160–161, fig. 194

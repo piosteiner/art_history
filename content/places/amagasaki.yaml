@@ -1,0 +1,16 @@
+public_id: 106790
+name: Amagasaki
+kind: settlement
+location: [135.40633, 34.73383]
+wikidata_id: Q213318
+metadata:
+  sources: [Wikidata Q213318 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q213318
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q213318

@@ -1,0 +1,42 @@
+public_id: 106815
+name: Empress Jingū
+names:
+  - lang: ja
+    role: original
+    text: 神功皇后
+  - Okinagatarashi-hime no Mikoto (Legendary character), 170?-269?
+  - Jingō, Empress, consort of Chūai, Emperor of Japan (Legendary character), 170?-269?
+  - Okinagatarashi-hime (Legendary character), 170?-269?
+  - Jingū Kōgō, 170?-269?
+  - Dsingu
+  - Empress Jingu
+  - lang: nl
+    role: translation
+    text: Jingū
+  - lang: es
+    role: translation
+    text: Emperatriz Consorte Jingū
+  - lang: ko
+    role: translation
+    text: 진구 황후
+  - lang: ru
+    role: translation
+    text: Императрица Дзингу
+occupations: [politician]
+wikidata_id: Q232803
+metadata:
+  sources: [Wikidata Q232803 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/54/Kaiserin_Jing%C5%AB.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kaiserin_Jing%C5%AB.jpg
+    license: CC0
+    credit: Utagawa Kuniyoshi
+identifiers:
+  gnd: "1262505895"
+  lc: n88105596
+  viaf: "253277312"
+sources:
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q232803

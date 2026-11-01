@@ -1,0 +1,60 @@
+public_id: 106800
+name: Kūkai
+names:
+  - kind: art_name
+    role: alternative
+    text: 遍照金剛
+  - lang: ja
+    role: original
+    text: 空海
+  - Kukai
+  - Kōbō Daishi
+  - Kobo Daishi
+  - Kuukai
+  - Shi Konghai
+  - Bianzhaojingang
+  - Hongfa dashi
+  - Konghai
+  - lang: ko
+    role: translation
+    text: 구카이
+  - lang: ru
+    role: translation
+    text: Кукай
+kind: person
+occupations: [lexicographer, linguist, poet, calligrapher, Buddhist monk, philosopher]
+birth: 774-07-31
+death: 835-04-26
+wikidata_id: Q222227
+metadata:
+  sources: [Wikidata Q222227 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/80/Kukai2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kukai2.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 12000971f
+  gnd: 11890471X
+  idref: "028109937"
+  lc: n81023382
+  nlk: KAC201300656
+  ulan: "500320881"
+  viaf: "70244544"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q222227
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q222227
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q222227
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q222227

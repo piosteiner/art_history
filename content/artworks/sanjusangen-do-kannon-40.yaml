@@ -1,0 +1,39 @@
+public_id: 107202
+title: Senju Kannon no. 40, Sanjūsangendō
+creator: tankei
+created: 13th century
+created_span: uncertain
+kind: sculpture
+medium: Wood, with lacquer and gold leaf
+materials: [wood, lacquer, gold leaf]
+dimensions: [165]
+institution: sanjusangen-do
+description_md: One of the images added in the thirteenth century under [[artist/tankei]], master of the new installation. Compared with the rescued twelfth-century figures, the drapery is heavier over the legs and its folds flow over the whole area between waist and feet, and the arms are more graded in size — the new interest in volume of the Kamakura period, held within a fidelity to the older forms. [[source/history-of-japanese-art|pp. 155–156, fig. 190]]
+relationships:
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 155–156, fig. 190
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 155–156, fig. 190
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 155–156, fig. 190
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 155–156, fig. 190
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 155–156, fig. 190
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 155–156, fig. 190
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 155–156, fig. 190
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 155–156, fig. 190

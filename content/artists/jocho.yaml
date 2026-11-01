@@ -1,0 +1,16 @@
+public_id: 106781
+name: Jōchō
+birth: 901/1000
+death: 1057-09-08
+wikidata_id: Q60911
+metadata:
+  sources: [Wikidata Q60911 (retrieved 2026-11-01)]
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q60911
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q60911

@@ -1,0 +1,49 @@
+public_id: 106811
+name: Daigo
+names:
+  - lang: ja
+    role: original
+    text: 醍醐天皇
+  - Daigo-tennō
+  - Emperor Daigo
+  - lang: es
+    role: translation
+    text: Emperador Daigo
+  - lang: ko
+    role: translation
+    text: 다이고 천황
+  - lang: ru
+    role: translation
+    text: Император Дайго
+kind: person
+occupations: [ruler]
+birth: 885-02-10
+death: 930-10-28
+wikidata_id: Q329753
+metadata:
+  sources: [Wikidata Q329753 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/45/Emperor_Daigo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emperor_Daigo.jpg
+    license: Public domain
+    credit: Unknown artist
+identifiers:
+  lc: n83224428
+  viaf: "45688066"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q329753
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q329753
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q329753
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q329753

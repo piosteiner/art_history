@@ -1,0 +1,37 @@
+public_id: 107204
+title: Five-pronged vajra
+attribution_label: Anonymous
+created: 12th century
+created_span: uncertain
+kind: vajra
+medium: Bronze
+materials: [gilt bronze]
+dimensions: [17]
+dimensions_note: length
+institution: nara-national-museum
+description_md: "A [[vajra]] (kongō) of cast and gilded bronze: held in the right hand in Shingon ritual for the Kongōkai mandala and the indestructible nature of truth. The five prongs at each end stand for the five transcendental Buddhas, the central one for [[dainichi]]. With the bell (suzu) in the left hand, for the Taizōkai, it symbolizes the union of the two mandalas. [[source/history-of-japanese-art|p. 124, fig. 148]]"
+relationships:
+  - type: associated_with
+    to: movement/insei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 124, fig. 148
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 124, fig. 148
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 124, fig. 148
+  created:
+    - source: history-of-japanese-art
+      locator: p. 124, fig. 148
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 124, fig. 148
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 124, fig. 148
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 124, fig. 148

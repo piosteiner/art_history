@@ -1,0 +1,45 @@
+public_id: 106809
+name: Wake no Kiyomaro
+names:
+  - lang: ja
+    role: original
+    text: 和気清麻呂
+  - lang: zh
+    role: translation
+    text: 和気淸麻呂
+  - lang: ru
+    role: translation
+    text: Вакэ-но Киёмаро
+kind: person
+occupations: [civil servant]
+birth: 733
+death: 799-04-08
+wikidata_id: Q7961005
+metadata:
+  sources: [Wikidata Q7961005 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0b/Wake_no_Kiyomaro_statue.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Wake_no_Kiyomaro_statue.JPG
+    license: CC BY-SA 3.0
+    credit: by Reggaeman
+identifiers:
+  idref: "252485882"
+  lc: n88029655
+  viaf: "26143131"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q7961005
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q7961005
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q7961005
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q7961005

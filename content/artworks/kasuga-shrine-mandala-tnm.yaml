@@ -1,0 +1,31 @@
+public_id: 107195
+title: Kasuga mandala
+attribution_label: Anonymous
+kind: kakemono
+medium: Hanging scroll, colour on silk
+materials: [silk]
+dimensions: [113.1, 68.7]
+institution: tokyo-national-museum
+description_md: "A bird’s-eye view of the Kasuga Shrine at Nara, the Fujiwara family’s shrine on the slopes of Mount Mikasa: the four small aligned halls of the kami, raised on piles with gabled roofs extending over the stairs, within corridors and cloister walls like a Buddhist temple, among cherry trees, with the torii at the bottom. Date unknown. [[source/history-of-japanese-art|pp. 163–164, fig. 198]]"
+relationships:
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 163–164, fig. 198
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 163–164, fig. 198
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 163–164, fig. 198
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 163–164, fig. 198
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 163–164, fig. 198
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 163–164, fig. 198

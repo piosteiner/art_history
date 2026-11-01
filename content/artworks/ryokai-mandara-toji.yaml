@@ -1,0 +1,59 @@
+public_id: 106765
+title: Ryōkai mandara (Mandalas of the Two Realms), Tōji
+names:
+  - Den-Shingon-in Mandala
+  - Shingon-in Mandala
+  - Sai-in Mandala
+  - Saiin Mandala
+  - lang: ja
+    role: original
+    text: "{両界曼荼羅|りょうかいまんだら}"
+attribution_label: Anonymous
+created: second half of the 9th century
+created_span: uncertain
+kind: kakemono
+medium: Pair of hanging scrolls, colour on silk
+materials: [silk]
+dimensions: [183, 154]
+dimensions_note: each
+institution: to-ji
+description_md: The pair of [[mandala]] paintings of the Womb World ([[taizokai]]) and Diamond World ([[kongokai]]) — the oldest and best preserved in Japan. In the Taizōkai, Dainichi sits on an eight-petalled lotus at the centre of twelve courts, with the four transcendental Buddhas and four bodhisattvas on the petals; the Kongōkai has nine squares with Dainichi in the wisdom-fist gesture. Yanagisawa Taka has shown that they are Japanese copies of a set made in China for Emperor Montoku and brought back by the Tendai monk [[person/enchin]] in 859. The figures are drawn in red [[iron-wire-line]]s with animated hands but without movement in their bodies; the shading makes a decorative pattern rather than modelling. [[source/history-of-japanese-art|pp. 126–128, figs. 152–153]]
+wikidata_id: Q107046388
+metadata:
+  sources: [Wikidata Q107046388 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/early-heian-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 126–128, figs. 152–153
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Kongokai.jpg/1280px-Kongokai.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kongokai.jpg
+    license: Public domain
+    credit: Anonymous Heian-period artist-craftsman
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 126–128, figs. 152–153
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107046388
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 126–128, figs. 152–153
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 126–128, figs. 152–153
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 126–128, figs. 152–153
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 126–128, figs. 152–153
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q107046388
+    - source: history-of-japanese-art
+      locator: pp. 126–128, figs. 152–153

@@ -1,0 +1,55 @@
+public_id: 106775
+title: Kondō, Murōji
+names:
+  - Golden Hall, Murouji
+  - lang: ja
+    role: translation
+    text: 室生寺金堂
+attribution_label: Anonymous
+created: early 9th century
+created_span: uncertain
+kind: building
+medium: Wood, cypress-bark roof
+materials: [wood]
+institution: muro-ji
+location: [136.0411, 34.53756]
+description_md: The golden hall of Murōji, set in a recess cut out of the mountain, its front supported by a masonry foundation. The original hall is a central [[moya]] three bays wide and one deep with a corridor; a porch ([[raido]]) was added across the front in the late thirteenth or early fourteenth century. Inside, five large standing Yakushi images stand before a wooden screen with the twelve yasha generals below them, under simple wood forms and bracketing. [[source/history-of-japanese-art|p. 136, fig. 163]]
+wikidata_id: Q107020541
+metadata:
+  sources: [Wikidata Q107020541 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/uda
+  - type: associated_with
+    to: movement/early-heian-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 136, fig. 163
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Murouji%2C_kondou.jpg/1280px-Murouji%2C_kondou.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Murouji,_kondou.jpg
+    license: CC0
+    credit: Saigen Jiro
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 136, fig. 163
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107020541
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 136, fig. 163
+  created:
+    - source: history-of-japanese-art
+      locator: p. 136, fig. 163
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q107020541
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 136, fig. 163
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 136, fig. 163

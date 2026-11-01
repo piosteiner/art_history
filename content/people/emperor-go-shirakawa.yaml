@@ -1,0 +1,53 @@
+public_id: 106805
+name: Emperor Go-Shirakawa
+names:
+  - lang: ja
+    role: original
+    text: 後白河天皇
+  - Go-Shirakawa-tennō
+  - lang: nl
+    role: translation
+    text: Go-Shirakawa
+  - lang: es
+    role: translation
+    text: Emperador Go-Shirakawa
+  - lang: ko
+    role: translation
+    text: 고시라카와 천황
+  - lang: ru
+    role: translation
+    text: Император Го-Сиракава
+kind: person
+occupations: [emperor]
+birth: 1127-10-25
+death: 1192-05-03
+wikidata_id: Q317984
+metadata:
+  sources: [Wikidata Q317984 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Emperor_Goshirakawa.jpg/1280px-Emperor_Goshirakawa.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emperor_Goshirakawa.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "119234483"
+  idref: "140430156"
+  lc: n82056546
+  viaf: "49653585"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q317984
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q317984
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q317984
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q317984

@@ -1,0 +1,35 @@
+public_id: 107197
+title: Food stand
+attribution_label: Anonymous
+created: 1001/1200
+kind: furniture
+medium: Red lacquer
+materials: [lacquer, wood]
+dimensions: [31.6, 38.7, 41.2]
+institution: kyoto-national-museum
+description_md: "One of the rare well-preserved pieces of Heian household furniture: a round stand for food on a single stem, modelled on a wooden core and lacquered red. It differs only slightly from those shown in the interiors of narrative scrolls. Plain red and black were the standard colours of Japanese lacquer ([[negoro]]). [[source/history-of-japanese-art|p. 106, fig. 129]]"
+relationships:
+  - type: associated_with
+    to: movement/heian-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 106, fig. 129
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 106, fig. 129
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 106, fig. 129
+  created:
+    - source: history-of-japanese-art
+      locator: p. 106, fig. 129
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 106, fig. 129
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 106, fig. 129
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 106, fig. 129

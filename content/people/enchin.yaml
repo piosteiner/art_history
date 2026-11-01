@@ -1,0 +1,46 @@
+public_id: 106802
+name: Enchin
+names:
+  - lang: ja
+    role: original
+    text: 円珍
+  - Chishō Daishi
+  - lang: ko
+    role: translation
+    text: 엔친
+  - lang: ru
+    role: translation
+    text: Энтин
+kind: person
+occupations: [writer, Buddhist monk]
+birth: 814-04-12
+death: 891-12-08
+wikidata_id: Q1972505
+metadata:
+  sources: [Wikidata Q1972505 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/79/Chisho_Daishi_%28Konzoji_Zentsuji%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Chisho_Daishi_(Konzoji_Zentsuji).jpg
+    license: Public domain
+    credit: Kamakura-period painter
+identifiers:
+  idref: "131180525"
+  lc: n80078202
+  viaf: "11146250"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1972505
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1972505
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1972505
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q1972505

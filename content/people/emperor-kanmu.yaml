@@ -1,0 +1,58 @@
+public_id: 106817
+name: Emperor Kanmu
+names:
+  - lang: ja
+    role: original
+    text: 桓武天皇
+  - Kanmu
+  - Kanmu-tennō
+  - Kammu-tennō
+  - Kammu
+  - Kammu Tennō
+  - Kanmu Tennō
+  - lang: fr
+    role: translation
+    text: Kanmu ou Kashiwabara I
+  - lang: es
+    role: translation
+    text: Emperador Kanmu
+  - lang: ko
+    role: translation
+    text: 간무 천황
+  - lang: ru
+    role: translation
+    text: Император Камму
+kind: person
+occupations: [ruler]
+birth: 737
+death: 806-04-13
+wikidata_id: Q314846
+metadata:
+  sources: [Wikidata Q314846 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Emperor_Kammu_large.jpg/1280px-Emperor_Kammu_large.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emperor_Kammu_large.jpg
+    license: Public domain
+    credit: Unknown
+identifiers:
+  gnd: "120776391"
+  idref: "112857205"
+  lc: nr94029054
+  viaf: "71274782"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q314846
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q314846
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q314846
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q314846

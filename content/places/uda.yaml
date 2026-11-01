@@ -1,0 +1,32 @@
+public_id: 106724
+name: Uda
+names:
+  - lang: ja
+    role: original
+    text: 宇陀市
+  - lang: ko
+    role: translation
+    text: 우다시
+  - lang: ru
+    role: translation
+    text: Уда
+kind: settlement
+parent: nara-prefecture
+country_code: JP
+location: [135.95225, 34.52797]
+wikidata_id: Q863747
+metadata:
+  sources: [Wikidata Q863747 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q863747
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q863747
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q863747

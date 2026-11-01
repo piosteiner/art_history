@@ -1,0 +1,51 @@
+public_id: 106691
+name: Jingo-ji Temple
+names:
+  - Jingo-ji
+  - lang: fr
+    role: translation
+    text: temple Jingo
+  - lang: ja
+    role: translation
+    text: 神護寺
+  - lang: ru
+    role: translation
+    text: Дзинго-дзи
+kind: temple
+founded: 824
+place: kyoto
+location: [135.67087, 35.05502]
+address: 京都府京都市右京区梅ヶ畑高雄町5
+website_url: http://www.jingoji.or.jp/
+wikidata_id: Q1075034
+metadata:
+  sources: [Wikidata Q1075034 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Jingoji_Kyoto_Kyoto15s3s4500.jpg/1280px-Jingoji_Kyoto_Kyoto15s3s4500.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jingoji_Kyoto_Kyoto15s3s4500.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  gnd: "1049185463"
+  viaf: "145410491"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1075034
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1075034
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q1075034
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1075034
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1075034

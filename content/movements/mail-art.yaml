@@ -1,0 +1,33 @@
+public_id: 106797
+name: mail art
+names:
+  - postal art
+  - correspondence art
+  - lang: fr
+    role: translation
+    text: art postal
+  - lang: de
+    role: translation
+    text: Mail-Art
+  - lang: es
+    role: translation
+    text: arte postal
+  - lang: ja
+    role: translation
+    text: メール・アート
+kind: movement
+period: 1982-10-02
+wikidata_id: Q843393
+metadata:
+  sources: [Wikidata Q843393 (retrieved 2026-11-01)]
+identifiers:
+  gnd: 4148324-8
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q843393
+  period:
+    - accessed: 2026-11-01
+      property: P580
+      wikidata: Q843393

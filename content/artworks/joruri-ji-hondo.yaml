@@ -1,0 +1,47 @@
+public_id: 106788
+title: Amidadō (Hondō), Jōruriji
+names: [浄瑠璃寺本堂]
+attribution_label: Anonymous
+created: 1107
+kind: building
+medium: Wood
+materials: [wood]
+institution: joruri-ji
+location: [135.8727, 34.71563]
+description_md: The only one of the more than thirty halls for nine Amida images built in the Insei period — the age of the retired emperors from [[person/emperor-shirakawa]] on — that survives intact; first built in 1107 and moved to the present site of [[institution/joruri-ji]] in 1157. On the west bank of an artificial lake, it recalls a [[shinden-zukuri]] mansion with its black lattice and white paper-panelled interior. A central [[moya]] nine bays long and one deep, the central bay twice as wide for the larger main image; no ceiling, the sloping beams left exposed. Its cypress-bark roof was replaced with tiles in the Edo period. [[source/history-of-japanese-art|pp. 150–151, fig. 181]]
+wikidata_id: Q107020585
+metadata:
+  sources: [Wikidata Q107020585 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/kizugawa
+  - type: associated_with
+    to: movement/insei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 150–151, fig. 181
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Joruriji_Hondo.jpg/1280px-Joruriji_Hondo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joruriji_Hondo.jpg
+    license: CC BY 2.0
+    credit: puffyjet
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 150–151, fig. 181
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 150–151, fig. 181
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 150–151, fig. 181
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q107020585
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 150–151, fig. 181
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 150–151, fig. 181

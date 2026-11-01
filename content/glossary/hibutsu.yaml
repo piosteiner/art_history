@@ -1,0 +1,12 @@
+public_id: 107162
+name: hibutsu
+names:
+  - lang: ja
+    role: original
+    text: "{秘仏|ひぶつ}"
+category: other
+definition: A secret Buddhist image, kept hidden and shown rarely or never.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 139

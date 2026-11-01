@@ -1,0 +1,68 @@
+public_id: 106747
+name: Nara National Museum
+names:
+  - Nara Kokuritsu Hakubutsukan
+  - Narahaku
+  - lang: fr
+    role: translation
+    text: musée national de Nara
+  - lang: de
+    role: translation
+    text: Nationalmuseum Nara
+  - lang: it
+    role: translation
+    text: Museo nazionale di Nara
+  - lang: ja
+    role: translation
+    text: 奈良国立博物館
+  - lang: zh
+    role: translation
+    text: 奈良国立博物馆
+  - lang: ko
+    role: translation
+    text: 나라 국립박물관
+  - lang: ru
+    role: translation
+    text: Национальный музей Нары
+kind: museum
+founded: 1889
+place: nara
+location: [135.8364, 34.6837]
+address: 〒630-8213 　奈良県奈良市登大路町50番地
+website_url: https://www.narahaku.go.jp
+wikidata_id: Q147312
+metadata:
+  sources: [Wikidata Q147312 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/140927_Nara_National_Museum_Nara_Japan03bs5.jpg/1280px-140927_Nara_National_Museum_Nara_Japan03bs5.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:140927_Nara_National_Museum_Nara_Japan03bs5.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  bnf: "118776594"
+  gnd: 216083-3
+  idref: "067089917"
+  lc: n50061458
+  ulan: "500303465"
+  viaf: "144990190"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q147312
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q147312
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q147312
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q147312
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q147312

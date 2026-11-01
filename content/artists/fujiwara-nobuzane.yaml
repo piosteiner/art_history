@@ -1,0 +1,18 @@
+public_id: 106753
+name: Fujiwara Nobuzane
+given_name: Fujiwara
+family_name: Nobuzane
+birth: 1176
+death: 1266
+wikidata_id: Q3090653
+metadata:
+  sources: [Wikidata Q3090653 (retrieved 2026-11-01)]
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3090653
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3090653

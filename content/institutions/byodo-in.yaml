@@ -1,0 +1,54 @@
+public_id: 106728
+name: Byōdō-in Temple
+names:
+  - Byōdōin
+  - Byōdō-in
+  - lang: nl
+    role: translation
+    text: Byodo-in
+  - lang: ja
+    role: translation
+    text: 平等院
+  - lang: ko
+    role: translation
+    text: 뵤도인
+  - lang: ru
+    role: translation
+    text: Бёдо-ин
+kind: temple
+founded: 1052
+place: uji
+location: [135.80778, 34.88944]
+address: 京都府宇治市宇治蓮華116
+website_url: https://www.byodoin.or.jp/
+wikidata_id: Q61094
+metadata:
+  sources: [Wikidata Q61094 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Phoenix_Hall%2C_Byodo-in%2C_November_2016_-01.jpg/1280px-Phoenix_Hall%2C_Byodo-in%2C_November_2016_-01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Phoenix_Hall,_Byodo-in,_November_2016_-01.jpg
+    license: CC BY-SA 4.0
+    credit: Martin Falbisoner
+identifiers:
+  viaf: "294903483"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q61094
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q61094
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q61094
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q61094
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q61094

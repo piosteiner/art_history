@@ -1,0 +1,58 @@
+public_id: 106795
+title: Haiden and honden, Kitano Tenmangū
+names:
+  - Main Shrine, Kitano-tenmangu
+  - lang: fr
+    role: translation
+    text: bâtiment principal du sanctuaire Tenman de Kitano
+  - lang: ja
+    role: translation
+    text: 北野天満宮社殿
+  - 北野天満宮社殿
+attribution_label: Anonymous
+created: 1607
+kind: building
+medium: Wood
+materials: [wood]
+institution: kitano-tenmangu
+location: [135.735, 35.03124]
+description_md: The shrine of [[person/sugawara-no-michizane]] (845–903), scholar and poet exiled to Kyūshū in 901 through the plotting of the Fujiwara. When his enemies died one after another, his angry spirit was blamed; he was reappointed Minister of the Right in 923 and the shrine built at Kitano in 947. As Tenjin he became the patron of learning — some 3,500 shrines are his. The plan joins worship hall ([[haiden]]) and main hall under one roof by a stone room, a type later used for the mausoleums of Hideyoshi and Ieyasu ([[gongen-zukuri]]). The present buildings date from 1607. [[source/history-of-japanese-art|p. 164, fig. 199]]
+wikidata_id: Q107020571
+metadata:
+  sources: [Wikidata Q107020571 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/kyoto
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 164, fig. 199
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Kitano-tenmangu_Kyoto_Japan41s3s4592.jpg/1280px-Kitano-tenmangu_Kyoto_Japan41s3s4592.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kitano-tenmangu_Kyoto_Japan41s3s4592.jpg
+    license: CC BY 2.5
+    credit: 663highland
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 164, fig. 199
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107020571
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 164, fig. 199
+  created:
+    - source: history-of-japanese-art
+      locator: p. 164, fig. 199
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q107020571
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 164, fig. 199
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 164, fig. 199

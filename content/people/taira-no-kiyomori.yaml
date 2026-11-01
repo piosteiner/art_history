@@ -1,0 +1,47 @@
+public_id: 106803
+name: Taira no Kiyomori
+names:
+  - lang: ja
+    role: original
+    text: 平清盛
+  - Kiyomori Taira no
+  - Kiyomori
+  - lang: ko
+    role: translation
+    text: 다이라노 기요모리
+  - lang: ru
+    role: translation
+    text: Тайра-но Киёмори
+kind: person
+occupations: [samurai, politician, military personnel]
+birth: 1118-02-17
+death: 1181-03-27
+wikidata_id: Q281833
+metadata:
+  sources: [Wikidata Q281833 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ad/Taira_no_Kiyomori_Portrait_by_Fujiwara_Tamenobu_and_Takenobu.png
+    source_url: https://commons.wikimedia.org/wiki/File:Taira_no_Kiyomori_Portrait_by_Fujiwara_Tamenobu_and_Takenobu.png
+    license: Public domain
+    credit: "Artist: Fujiwara Tamenobu (藤原為信 - ためのぶ) and Takenobu (豪信 たけのぶ) (both dates of birth and death unknown). Late Kamakura period."
+identifiers:
+  idref: "102245959"
+  lc: n83223484
+  viaf: "62932224"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q281833
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q281833
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q281833
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q281833

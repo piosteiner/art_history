@@ -1,0 +1,75 @@
+public_id: 106769
+name: Shôzô Shimamoto
+given_name: Shôzô
+family_name: Shimamoto
+names:
+  - lang: ja
+    role: original
+    text: 嶋本昭三
+birth: 1928-01-22
+death: 2013-01-25
+wikidata_id: Q2551656
+metadata:
+  sources: [Wikidata Q2551656 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-01
+        property: P27
+        wikidata: Q2551656
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-01
+        property: P27
+        wikidata: Q2551656
+  - type: born_in
+    to: place/osaka
+    sources:
+      - accessed: 2026-11-01
+        property: P19
+        wikidata: Q2551656
+  - type: died_in
+    to: place/osaka
+    sources:
+      - accessed: 2026-11-01
+        property: P20
+        wikidata: Q2551656
+  - type: member_of
+    to: movement/gutai-group
+    sources:
+      - accessed: 2026-11-01
+        property: P463
+        wikidata: Q2551656
+  - type: associated_with
+    to: movement/mail-art
+    sources:
+      - accessed: 2026-11-01
+        property: P135
+        wikidata: Q2551656
+  - type: founded
+    to: movement/gutai-group
+    sources:
+      - accessed: 2026-11-01
+        property: P112
+        wikidata: Q1028956
+identifiers:
+  bnf: "166277858"
+  gnd: "1036118592"
+  idref: "147578566"
+  lc: no2010082675
+  rkd: "329668"
+  ulan: "500125014"
+  viaf: "113907741"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2551656
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2551656

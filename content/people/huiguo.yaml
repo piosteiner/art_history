@@ -1,0 +1,47 @@
+public_id: 106813
+name: Hui-kuo
+names:
+  - lang: fr
+    role: translation
+    text: Huiguo
+  - lang: ja
+    role: translation
+    text: 恵果
+  - lang: zh
+    role: translation
+    text: 惠果
+  - lang: ru
+    role: translation
+    text: Хуэй Го
+kind: person
+occupations: [Buddhist monk]
+birth: 743
+death: 805
+wikidata_id: Q658650
+metadata:
+  sources: [Wikidata Q658650 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/01/Huiguo%2C_14th_century%2C_Kamakura%2C_National_Museum%2CTokyo..jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Huiguo,_14th_century,_Kamakura,_National_Museum,Tokyo..jpg
+    license: Public domain
+    credit: Anonymous
+identifiers:
+  lc: n88121435
+  viaf: "43391299"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q658650
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q658650
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q658650
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q658650

@@ -1,0 +1,81 @@
+public_id: 106751
+title: Ban Dainagon ekotoba (The Tale of the Major Counsellor Ban)
+names:
+  - Ban Dainagon Ekotoba
+  - Ban Dainagon Emaki
+  - Narrative Scroll of Ban Dainagon
+  - lang: zh
+    role: translation
+    text: 伴大纳言绘词
+  - lang: ko
+    role: translation
+    text: 반대납언회사
+  - lang: ja
+    role: original
+    text: "{伴大納言絵詞|ばんだいなごんえことば}"
+creator: tokiwa-mitsunaga
+attribution_label: attributed to Tokiwa Mitsunaga
+created: 1157/1180
+created_span: uncertain
+kind: emakimono
+medium: Handscroll, ink and colour on paper
+materials: [japan paper, Iwaenogu, ink]
+dimensions: [31.5, 2629.9]
+institution: idemitsu-museum-of-arts
+web_url: http://idemitsu-museum.or.jp/collection/painting/yamatoe/01.php
+location: [139.7607, 35.67659]
+description_md: "Three handscrolls telling a scandal of 866: the Ōten Gate of the imperial palace burnt down, and the major counsellor Tomo no Yoshio (Ban Dainagon) blamed his rival, the minister Minamoto no Makoto, until a quarrel between two boys revealed that he had set the fire himself; he was sent into exile. The scroll opens with a long passage of crowds running towards the gate in flames; inside the palace Emperor Seiwa and his grandfather Fujiwara no Yoshifusa confer in the Seiryōden. The children’s fight is told in one continuous picture — the fight, the father kicking the other boy, the gossip spreading through the neighbourhood — and the grief of the Ban household with the faces shown openly. The figures are drawn with a free calligraphic line as in [[otoko-e]], but with the bright, thick colours of [[tsukuri-e]]. Attributed to [[artist/tokiwa-mitsunaga]] on the style of the Nenjū gyōji emaki; dated between 1157 and 1180. [[source/history-of-japanese-art|pp. 104, 121–122, figs. 127, 146–147]]"
+wikidata_id: Q952153
+metadata:
+  sources: [Wikidata Q952153 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+    period: 12th century
+  - type: associated_with
+    to: movement/insei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 104, 121–122, figs. 127, 146–147
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/87/Ban_Dainagon_Ekotoba_-_Crowd_and_a_gate.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ban_Dainagon_Ekotoba_-_Crowd_and_a_gate.jpg
+    license: Public domain
+    credit: Tokiwa Mitsunaga
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 104, 121–122, figs. 127, 146–147
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q952153
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 104, 121–122, figs. 127, 146–147
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 104, 121–122, figs. 127, 146–147
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q952153
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q952153
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 104, 121–122, figs. 127, 146–147
+    - accessed: 2026-11-01
+      property: P186
+      wikidata: Q952153
+  dimensions:
+    - accessed: 2026-11-01
+      property: P2048
+      wikidata: Q952153
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q952153
+    - source: history-of-japanese-art
+      locator: pp. 104, 121–122, figs. 127, 146–147

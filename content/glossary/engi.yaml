@@ -1,0 +1,12 @@
+public_id: 107156
+name: engi
+names:
+  - lang: ja
+    role: original
+    text: "{縁起|えんぎ}"
+category: format
+definition: A history of the founding of a temple or shrine and the miracles connected with it, often illustrated as a handscroll.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 119
