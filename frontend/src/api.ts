@@ -279,3 +279,24 @@ export const getEncounters = (entity: string, withinKm?: number) =>
 /** Places with presence grouped for a zoom level (rounded), optionally in a time window. */
 export const getClusters = (zoom: number, window: { from: number; to: number } | null) =>
   get<ClustersMap>('/map/clusters', { zoom, from: window?.from, to: window?.to });
+
+// The owner's login (backend src/admin/routes/site-account.js): the CMS account, its session cookie on the admin host
+// (same site as this one, so it is sent). Not cached — what a login shows must go away with the logout.
+// VITE_ADMIN_BASE: the test environment's CMS; none in development (the dev server has no admin host to ask).
+export const ADMIN: string | null = import.meta.env.DEV ? null : (import.meta.env.VITE_ADMIN_BASE as string | undefined) || 'https://admin.arthistory.piogino.ch';
+export interface PrivateImage { url: string; source: string | null; locator: string | null; width: number; height: number }
+async function account<T>(path: string, init: RequestInit = {}): Promise<T | null> {
+  if (!ADMIN) return null;
+  const res = await fetch(`${ADMIN}/site${path}`, { ...init, credentials: 'include', headers: { Accept: 'application/json' } });
+  if (res.status === 401) return null;
+  if (!res.ok) throw new ApiError(res.status, 'account', res.statusText);
+  return res.status === 204 ? null : (res.json() as Promise<T>);
+}
+/** The logged-in account, or null. */
+export const getAccount = () => account<{ username: string }>('/me');
+/** This account's private reference images of a work (184) — null when not logged in. */
+export const getPrivateImages = (slug: string) =>
+  account<{ images: PrivateImage[] }>(`/artworks/${encodeURIComponent(slug)}/private-images`).then((r) => r?.images ?? null);
+export const logOut = () => account<null>('/logout', { method: 'POST' });
+/** The CMS login, back to `next` (an address of this site) afterwards. */
+export const loginUrl = (next: string) => (ADMIN ? `${ADMIN}/login?${new URLSearchParams({ next })}` : null);

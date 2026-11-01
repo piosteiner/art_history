@@ -31,26 +31,35 @@ router.use('/static', (req, res, next) => {
 router.use('/static', express.static(path.join(__dirname, 'static'), { index: false, cacheControl: false }));
 router.use((req, res, next) => { res.set('Cache-Control', 'no-store'); next(); });
 router.use(express.urlencoded({ extended: false, limit: '1mb' }));
+const siteAccount = require('./routes/site-account');
+router.use('/site', siteAccount);   // the public site's login: its own origin check (routes/site-account.js)
 router.use(checkOrigin);
 router.use(loadUser);
 
 // ---------------------------------------------------------------------------------------------------------------
 // Login
 // ---------------------------------------------------------------------------------------------------------------
-const loginPage = (error) => html`<div class="login"><h1>Art history admin</h1>
+// ?next=<an address of the public site>: back there after logging in ("Log in" on the site, routes/site-account.js)
+const loginPage = (error, next) => html`<div class="login"><h1>Art history admin</h1>
   ${error ? html`<p class="flash error">${error}</p>` : ''}
   <form method="post" action="/login" class="form">
+    ${next ? html`<input type="hidden" name="next" value="${next}"><p class="muted small">You'll return to the site afterwards.</p>` : ''}
     <div class="field"><label for="u">Username</label><input id="u" name="username" autocomplete="username" required autofocus></div>
     <div class="field"><label for="p">Password</label><input id="p" name="password" type="password" autocomplete="current-password" required></div>
     <div class="actions"><button>Log in</button></div>
   </form></div>`;
 
-router.get('/login', (req, res) => (req.user ? res.redirect('/') : send(req, res, { title: 'Log in', body: loginPage() })));
+router.get('/login', (req, res) => {
+  const next = siteAccount.siteUrl(req.query.next);
+  if (req.user) return res.redirect(next || '/');
+  send(req, res, { title: 'Log in', body: loginPage(null, next) });
+});
 
 router.post('/login', async (req, res) => {
+  const next = siteAccount.siteUrl(req.body.next);
   const result = await login(req, res, req.body.username, req.body.password);
-  if (result.error) return send(req, res, { title: 'Log in', body: loginPage(result.error), status: 401 });
-  res.redirect(303, '/');
+  if (result.error) return send(req, res, { title: 'Log in', body: loginPage(result.error, next), status: 401 });
+  res.redirect(303, next || '/');
 });
 
 router.post('/logout', async (req, res) => {

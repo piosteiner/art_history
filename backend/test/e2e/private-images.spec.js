@@ -45,3 +45,37 @@ test('a reference image is seen by its uploader only', async ({ userA, userB }) 
   await userA.locator('.private-images .image-item button', { hasText: 'delete' }).click();
   await expect(userA.locator('.private-images .image-item')).toHaveCount(0);
 });
+
+// The public site's login (routes/site-account.js): "Log in" there is the CMS login with ?next=, and the site then
+// asks the admin host — with the session cookie, CORS for its own origin only — for this account's images.
+test('the site sees its own account’s reference images, nobody else’s', async ({ userA, userB, request }) => {
+  const SITE = 'https://arthistory.piogino.ch';   // config.corsOrigin's default (the test servers set none)
+  sql("INSERT INTO artworks (slug, title) VALUES ('test-private-images', 'Test Private Images')");
+  sql(`INSERT INTO private_images (artwork_id, owner_id, locator, bytes, width, height, original_bytes)
+       SELECT a.id, u.id, 'p. 7, fig. 3', '\\x00'::bytea, 40, 30, 1 FROM artworks a, admin_users u
+        WHERE a.slug = 'test-private-images' AND u.username = 'tester'`);
+
+  const asSite = { headers: { Origin: SITE } };
+  const me = await userA.request.get('/site/me', asSite);
+  expect(await me.json()).toEqual({ username: 'tester' });
+  expect(me.headers()['access-control-allow-origin']).toBe(SITE);
+  expect(me.headers()['access-control-allow-credentials']).toBe('true');
+  const own = await (await userA.request.get('/site/artworks/test-private-images/private-images', asSite)).json();
+  expect(own.images).toHaveLength(1);
+  expect(own.images[0]).toMatchObject({ locator: 'p. 7, fig. 3', width: 40 });
+  expect(own.images[0].url).toMatch(/\/private-images\/\d+$/);
+  expect((await (await userB.request.get('/site/artworks/test-private-images/private-images', asSite)).json()).images).toEqual([]);
+
+  // another origin gets no CORS permission; without a session: 401
+  expect((await userA.request.get('/site/me', { headers: { Origin: 'https://evil.example' } })).headers()['access-control-allow-origin']).toBeUndefined();
+  expect((await request.get('/site/me', asSite)).status()).toBe(401);
+  expect((await request.get('/site/artworks/test-private-images/private-images', asSite)).status()).toBe(401);
+
+  // the login sends the browser back to the site only — any other address goes to the dashboard
+  const page = await userA.request.get(`/login?next=${encodeURIComponent(`${SITE}/artworks/1/x?login=1`)}`, { maxRedirects: 0 });
+  expect(page.headers().location).toBe(`${SITE}/artworks/1/x?login=1`);
+  expect((await userA.request.get('/login?next=https%3A%2F%2Fevil.example%2F', { maxRedirects: 0 })).headers().location).toBe('/');
+
+  // logging out from the site: only from its origin
+  expect((await userB.request.post('/site/logout', { headers: { Origin: 'https://evil.example' } })).status()).toBe(403);
+});

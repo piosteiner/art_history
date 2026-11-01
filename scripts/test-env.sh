@@ -19,7 +19,7 @@ build_site() {
   cd "$ROOT/frontend"
   [ -d node_modules ] || npm ci --no-fund --no-audit >/dev/null
   rm -rf "$SITE.new"
-  VITE_API_BASE=https://api.test.arthistory.piogino.ch/v1 VITE_SITE=https://test.arthistory.piogino.ch VITE_TEST_ENV=1 \
+  VITE_API_BASE=https://api.test.arthistory.piogino.ch/v1 VITE_ADMIN_BASE=https://admin.test.arthistory.piogino.ch VITE_SITE=https://test.arthistory.piogino.ch VITE_TEST_ENV=1 \
     npx vite build --logLevel warn --outDir "$SITE.new" --emptyOutDir
   rm -rf "$SITE.old"; [ -d "$SITE" ] && mv "$SITE" "$SITE.old"
   mv "$SITE.new" "$SITE"; rm -rf "$SITE.old"

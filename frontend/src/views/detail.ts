@@ -17,6 +17,7 @@ import { partNav, seriesLine } from '../series';
 import { cite, resetCitations, wireCitations } from '../cite';
 import { accessedNote, factsFor, webPage, webPageLink, withSources } from './detail-facts';
 import { backlinks, crossedPaths, holdingsSections, relationshipSections, shownElsewhere } from './detail-sections';
+import { privateImages, privateImagesSection } from '../account';
 
 /** `key`: a slug or a public number (API 085); the page then moves to the entry's canonical address (`path`). */
 export function detail(main: HTMLElement, plural: Plural, key: string) {
@@ -76,6 +77,7 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
             ${v.images.length ? gallery(v.images, v.title)
               : web ? html`<div class="web-panel"><p>There is no freely licensed image of this work we can show here.</p>
                   <p>${webPageLink(web)}</p>${web.accessed ? html`<p>${accessedNote(web)}</p>` : ''}</div>` : ''}
+            ${e.type === 'artwork' ? html`<div id="private-images" hidden></div>` : ''}
             ${v.lead ? html`<p class="lead">${v.lead}</p>` : ''}
             ${v.leadHtml ? html`<p class="lead citation">${trusted(v.leadHtml)}</p>` : ''}
             ${v.text ? html`<div class="prose">${trusted(v.text)}</div>` : ''}
@@ -112,6 +114,15 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
           crossedPaths(main.querySelector<HTMLElement>('#crossed')!, e.type, e.slug, current);
         }, { rootMargin: '800px 0px' });
         observer.observe(main.querySelector('#crossed-anchor')!);
+      }
+      // the logged-in owner's reference images from their books (account.ts; nothing for visitors)
+      if (e.type === 'artwork') {
+        privateImages(e.slug).then((images) => {
+          const box = main.querySelector<HTMLElement>('#private-images');
+          if (!current() || !box || !images.length) return;
+          render(box, privateImagesSection(images));
+          box.hidden = false;
+        });
       }
       // network questions and versions (API 088/089)
       if (e.type === 'artwork') sharedHandsSection(main.querySelector<HTMLElement>('#shared-hands')!, e, current);

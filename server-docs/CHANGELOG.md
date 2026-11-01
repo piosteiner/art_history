@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-01
 
+### Login on the public site: private reference images on artwork pages
+- **What:** "Log in" in the site's footer opens the CMS login with `?next=<site address>` (only addresses of
+  `CORS_ORIGIN` are followed — no open redirect) and returns with `?login=1`; the site remembers that in localStorage
+  (`arthistory.account`) and only then asks the admin host `GET /site/me` and, on artwork pages,
+  `GET /site/artworks/<slug>/private-images` — CORS with credentials for the site's origin only, the same CMS
+  session (cookie SameSite=Strict on the admin host, sent because site and CMS are the same site). Images still come
+  from the owner-only `/private-images/<id>`. "Log out" (`POST /site/logout`, site origin only) ends the CMS session
+  too. Backend `src/admin/routes/site-account.js`, login `next` in `src/admin/index.js`; site `frontend/src/account.ts`
+  (+ `api.ts`, `views/detail.ts`); test env built with `VITE_ADMIN_BASE` (`scripts/test-env.sh`). e2e test in
+  `test/e2e/private-images.spec.js`. Visitors' pages never contact the admin host and get no cookie.
+- **Why:** owner, 2026-11-01 — to see the private reference images on the site too.
+- **Revert:** revert the commit; nothing in the database.
+
 ### Data: the works of Mason, chapter 2 (Asuka, Hakuhō, Nara) + the books' figures as private reference images
 - **What:** 52 works after the figures of Mason, *History of Japanese Art*, pp. 40–99 — 32 made from their Wikidata
   items (with Commons photographs), 20 by hand: temple and shrine buildings (Hōryūji, Yakushiji, Tōdaiji, Tōshōdaiji,

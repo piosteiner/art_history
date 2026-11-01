@@ -1093,3 +1093,11 @@ body.fb-picking, body.fb-picking * { cursor: crosshair !important; }
 /* The test environment's notice (VITE_TEST_ENV, main.ts) */
 .test-env { background: #fff3c4; color: #5a4300; border-bottom: 1px solid #e0c766; padding: .45rem 1rem; font-size: .9rem; text-align: center; }
 .test-env a { color: inherit; text-decoration: underline; }
+
+/* The owner's login (account.ts): footer link, and their private reference images on artwork pages */
+.site-footer .link-button { background: none; border: 0; padding: 0; font: inherit; color: var(--muted); text-decoration: underline; cursor: pointer; }
+.private-images { margin: 1rem 0 1.4rem; padding: .8rem 1rem; border: 1px dashed var(--line); border-radius: 8px; }
+.private-images h2 { font-size: 1rem; margin: 0 0 .2rem; }
+.private-image-list { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: .6rem; }
+.private-image-list figure { margin: 0; max-width: 220px; }
+.private-image-list img { display: block; max-width: 100%; height: auto; max-height: 220px; width: auto; border-radius: 4px; }

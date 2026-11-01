@@ -6,6 +6,7 @@ import { watchLinks } from './previews';
 import { mountSearch } from './search';
 import { mountFeedback } from './feedback';
 import { mountHoverImages } from './hoverimage';
+import { mountAccount } from './account';
 import type { Plural } from './types';
 import { detail } from './views/detail';
 import { loading, showError } from './views/common';
@@ -38,6 +39,8 @@ mountThemeToggle(document.getElementById('theme')!);
 // feedback: the "F" at the bottom right, and a page opened from the CMS with the elements outlined (#fb=…)
 mountFeedback();
 mountHoverImages();
+// the owner's login (footer): their private reference images on artwork pages — before the router reads the address
+mountAccount(document.querySelector<HTMLElement>('.site-footer')!);
 
 let cleanup: Cleanup;
 
