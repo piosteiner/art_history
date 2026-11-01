@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-01
 
+### Full-text search: a work's provenance counts as one match
+- **What:** `/v1/search/text` (`src/routes/v1.js`) scores an entry's provenance steps as their best rank + 0.05·ln(number
+  of matching steps) instead of their sum; e2e test in `test/e2e/search-text.spec.js`.
+- **Why:** "gauguin" put the Blaquier still life (nine steps naming Mette, Pola, Emil Gauguin…; 9 × 0.444) above the
+  artist's name (0.848) — the site's smoke test failed, so GitHub Pages hadn't published since 2026-11-01 03:24
+  (periods colours, provenance end marker waiting).
+- **Revert:** `sum(rank)` again in `per_entry`; redeploy.
+
 ### Private reference images (migration 184)
 - **What:** table `private_images` — pictures of a work from the owner's own books for their private use (URG Art. 19):
   each belongs to the account that uploaded it, and only that account sees it (section "Reference images — private"

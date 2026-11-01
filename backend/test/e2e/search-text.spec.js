@@ -54,6 +54,19 @@ test('texts, stems, accents, phrases, provenance steps and highlighted passages'
   expect(bad.status()).toBe(400);
 });
 
+// The provenance counts as one match (2026-11-01): a work whose nine steps name a family doesn't outrank the person's name.
+test('many provenance steps naming someone rank below the name itself', async ({ request }) => {
+  sql(`INSERT INTO people (slug, name) VALUES ('test-fts-qorvald', 'Test Qorvald');
+       INSERT INTO provenance (artwork_id, position, owner_label, method, direct)
+         SELECT entity_id('artwork', 'test-fts-work'), 1 + g, 'Heir ' || g || ' Qorvald', 'inheritance', true FROM generate_series(1, 9) g;
+       DELETE FROM provenance WHERE artwork_id = entity_id('artwork', 'test-fts-work') AND position = 1 AND owner_label LIKE 'Einsatzstab%'`);
+  try {
+    const hits = (await search(request, 'qorvald')).data;
+    expect(hits[0]).toMatchObject({ slug: 'test-fts-qorvald', matched_in: 'name' });
+    expect(hits.find((h) => h.slug === 'test-fts-work')).toMatchObject({ matched_in: 'provenance' });
+  } finally { sql("DELETE FROM people WHERE slug = 'test-fts-qorvald'"); }
+});
+
 // Search across languages (102): a word finds the others of its group — the German word the English provenance step
 // ("beschlagnahmt" → confiscation, seized) — and the passage marks them; a new group works at once (trigger).
 // each hit says what it is (the previews' subtitle, 040): an artwork with its artist and date — in both searches

@@ -117,7 +117,12 @@ router.get('/search/text', async (req, res) => {
              ts_filter(d.doc, '{a,b}') @@ q.q AS in_name     -- the name or another name (weights A, B) matched
       FROM search_documents d, q WHERE d.doc @@ q.q AND ($2::entity_type IS NULL OR d.type = $2)),
     per_entry AS (
-      SELECT type, id, sum(rank) AS rank, bool_or(in_name) AS in_name,
+      -- the provenance counts as one match: its best step plus a little for each further one — nine steps naming the
+      -- Gauguin family must not outrank the artist's own name (2026-11-01)
+      SELECT type, id, coalesce(sum(rank) FILTER (WHERE provenance_id IS NULL), 0)
+               + coalesce(max(rank) FILTER (WHERE provenance_id IS NOT NULL), 0)
+               + 0.05 * ln(greatest(count(*) FILTER (WHERE provenance_id IS NOT NULL), 1)) AS rank,
+             bool_or(in_name) AS in_name,
              (array_agg(part ORDER BY rank DESC))[1] AS part, (array_agg(body ORDER BY rank DESC))[1] AS body,
              array_agg(provenance_id ORDER BY rank DESC) FILTER (WHERE provenance_id IS NOT NULL) AS provenance_ids
       FROM hits GROUP BY type, id),
