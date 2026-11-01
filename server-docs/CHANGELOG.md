@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-01
 
+### Data: the works of Mason, chapter 1 (Jōmon, Yayoi, Kofun) — first batch from the owner's books
+- **What:** 34 new works and 3 monuments completed (Daisen Kofun, Ōyu Stone Circles, Takamatsuzuka Tomb Mural — created
+  from Wikidata with their Commons photographs) after the figures of Mason, *History of Japanese Art*, pp. 12–39:
+  title, date, material, size, holder, find site ("created in", labelled "found at …"), the Jōmon phase / Yayoi /
+  Kofun period, designations; descriptions in our own words, every field cited "Mason, p. N, fig. N". Attribution
+  "Anonymous". New: 16 glossary terms (vessel, dōtaku, mirror, magatama, jewellery, kofun, stone circle, wall
+  painting, chokkomon, bell; earthenware, clay, stone, steatite, glass, gilt bronze), 13 prefectures and towns, 7
+  tombs as archaeological sites and 8 holders from Wikidata, 5 holders by hand. Not entered: figs. 1, 4, 18, 19, 25
+  (pattern detail, reconstructions, a Chinese comparison). No images from the book (its photographs are not free).
+- **Why:** owner, 2026-11-01. **Revert:** delete the works (all cite `history-of-japanese-art` with a figure).
+
 ### Watch the Blaquier-Arrieta sale until a week after it (`scripts/watch-sale.sh`, timer prepared)
 - **What:** a daily check of the sale's lot list and every lot page against the day before: lots that aren't entries
   of ours, lots new / withdrawn / gone, changed descriptions, provenance, exhibitions or literature (lot 10 shows lot 4's
