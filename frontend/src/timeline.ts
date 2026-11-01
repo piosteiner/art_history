@@ -25,6 +25,8 @@ export interface TimelineRow {
   thin?: boolean;
   /** Lies wholly outside the row it belongs to (an artist who lived before or after their period): outlined red. */
   outside?: boolean;
+  /** What kind of row it is (a movement's kind: period, style, movement, school): the bar's colour, class bar-kind-<kind>. */
+  kind?: string;
 }
 
 export type YearWindow = { from: number; to: number };
@@ -215,7 +217,7 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
       const fade = s.fade && (s.fade.start || s.fade.end) ? `fade-${s.fade.start ? 's' : ''}${s.fade.end ? 'e' : ''}` : '';
       const fill = s.color ?? opts.colorFor?.(s);
       const [by, bh] = s.thin ? [s.y + 8, 6] : [s.y + 3, ROW - 8];
-      bars.push(`<rect class="bar bar-${escape(s.group.toLowerCase().replace(/[^a-z0-9]+/g, '-'))}${s.open ? ' bar-open' : ''}${s.draft ? ' bar-draft' : ''}${s.thin ? ' bar-thin' : ''}${s.outside ? ' bar-outside' : ''}" data-i="${i}"${fill ? ` style="fill:${escape(fill)};opacity:.9"` : ''}
+      bars.push(`<rect class="bar bar-${escape(s.group.toLowerCase().replace(/[^a-z0-9]+/g, '-'))}${s.open ? ' bar-open' : ''}${s.draft ? ' bar-draft' : ''}${s.thin ? ' bar-thin' : ''}${s.outside ? ' bar-outside' : ''}${s.kind ? ` bar-kind-${escape(s.kind)}` : ''}" data-i="${i}"${fill ? ` style="fill:${escape(fill)};opacity:.9"` : ''}
           ${fade ? `mask="url(#${clipId}-${fade})"` : ''} x="${x1}" y="${by}" width="${w}" height="${bh}" rx="3">
           <title>${escape(s.label)}: ${escape(s.from === s.to || !s.to ? s.from?.label ?? '' : `${s.from?.label ?? '?'} – ${s.to.label}`)}${s.draft ? ' (not yet reviewed)' : ''}</title>
         </rect>`);

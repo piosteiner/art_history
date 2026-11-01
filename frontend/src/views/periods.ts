@@ -14,6 +14,10 @@ import { entryPreview, openFor, show } from '../glossary';
 import type { DateRange, Period, PeriodArtist, Periods, PeriodWork } from '../types';
 import { guard, showError } from './common';
 
+// the kinds, each its colour on the bars (style.css .bar-kind-*): eras of history, styles and their phases,
+// movements (artists who joined a programme), schools (workshops and lineages)
+const KINDS: [Period['kind'], string][] = [['period', 'historical period'], ['style', 'style'], ['movement', 'movement'], ['school', 'school']];
+
 const workHref = (w: PeriodWork) => (w.public_id ? `/artworks/${w.public_id}/${w.slug}` : href('artworks', w.slug));
 const artistHref = (a: PeriodArtist) => (a.public_id ? `/artists/${a.public_id}/${a.slug}` : href('artists', a.slug));
 type Show = 'works' | 'artists';
@@ -67,7 +71,7 @@ function laneRows(data: Periods, lane: string, phases: boolean, show: Show): Tim
     const dots = show === 'works' ? p.works.filter((w) => laneOf(p, w) === lane && yearsOf(w.created)).map(dot) : [];
     rows.push({
       group, label: p.name, href: href('movements', p.slug),
-      from: s.period, to: s.period, fade: s.fuzzy, draft: !p.reviewed, indent: depth, key: `movement/${p.slug}`, dots,
+      from: s.period, to: s.period, fade: s.fuzzy, draft: !p.reviewed, indent: depth, key: `movement/${p.slug}`, dots, kind: p.kind,
     });
     if (show === 'artists') {
       // its artists in this lane — those of a phase shown under the phase, not again under its style
@@ -209,7 +213,8 @@ export function periodsPage(main: HTMLElement, params: URLSearchParams) {
           ${data.lanes.map((l) => html`<button type="button" data-lane="${l.slug}" class="${shown.has(l.slug) ? 'on' : ''}" aria-pressed="${String(shown.has(l.slug))}">${l.name}</button>`)}
         </div>
         <label class="periods-phases"><input type="checkbox" ${phases ? 'checked' : ''}> phases (Early, High, Late …)</label>
-        <span class="periods-legend muted small"><span class="legend-bar legend-fade"></span> approximate limits
+        <span class="periods-legend muted small">${KINDS.map(([k, label]) => html`<span class="legend-bar legend-kind-${k}"></span> ${label}`)}
+          <span class="legend-bar legend-fade"></span> approximate limits
           <span class="legend-bar legend-draft"></span> not yet reviewed
           ${show === 'artists' ? html`<span class="legend-bar legend-life"></span> an artist's life <span class="legend-bar legend-life legend-life-out"></span> lived outside the period` : html``}
           <span class="legend-dot"></span> a work of the collection
