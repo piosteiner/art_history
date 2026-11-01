@@ -1,0 +1,61 @@
+public_id: 107359
+title: The Six Realms of Existence (Shōju Raigōji)
+names:
+  - The Six Paths
+  - Six Paths
+  - The Six Realms
+  - Six Realms
+  - lang: ja
+    role: translation
+    text: 聖衆来迎寺本六道絵
+attribution_label: Anonymous
+created: 13th century
+created_span: uncertain
+kind: kakemono
+medium: Colour on silk
+materials: [silk]
+dimensions: [155.5, 68]
+institution: shoju-raigo-ji
+description_md: "One of fifteen hanging scrolls illustrating Genshin’s Essentials of Salvation (Ōjō yōshū), with excerpts in small rectangles at the top — [[rokudo-e]]. The impurity of the human realm is shown in a woman’s body: newly laid out on a straw mat, then swollen, then decaying under a maple, and at last picked by birds and animals. Yamato-e in flavour; other scrolls are in a Chinese ink style. Dated to the thirteenth century from their styles and repairs, the first in 1313. [[source/history-of-japanese-art|p. 210, fig. 243]]"
+wikidata_id: Q107045552
+metadata:
+  sources: [Wikidata Q107045552 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 210, fig. 243
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/The_Six_Paths%2C_Abi_Jigoku.jpg/1280px-The_Six_Paths%2C_Abi_Jigoku.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Six_Paths,_Abi_Jigoku.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 210, fig. 243
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 210, fig. 243
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q107045552
+    - source: history-of-japanese-art
+      locator: p. 210, fig. 243
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 210, fig. 243
+  dimensions:
+    - accessed: 2026-11-01
+      property: P2048
+      wikidata: Q107045552
+    - source: history-of-japanese-art
+      locator: p. 210, fig. 243
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q107045552
+    - source: history-of-japanese-art
+      locator: p. 210, fig. 243

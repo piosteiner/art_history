@@ -1,0 +1,32 @@
+public_id: 107334
+name: Katsuragi
+names:
+  - lang: ja
+    role: original
+    text: 葛城市
+  - lang: ko
+    role: translation
+    text: 가쓰라기시
+  - lang: ru
+    role: translation
+    text: Кацураги
+kind: settlement
+parent: nara-prefecture
+country_code: JP
+location: [135.72644, 34.48922]
+wikidata_id: Q659672
+metadata:
+  sources: [Wikidata Q659672 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q659672
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q659672
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q659672

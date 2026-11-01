@@ -1,0 +1,13 @@
+public_id: 107524
+name: zazen
+names:
+  - lang: ja
+    role: original
+    text: "{座禅|ざぜん}"
+category: other
+parent: zen
+definition: Seated meditation with crossed legs, the first practice of Zen.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 212

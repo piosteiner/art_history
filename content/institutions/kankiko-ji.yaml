@@ -1,0 +1,41 @@
+public_id: 107322
+name: Kankikō-ji Temple
+names:
+  - lang: fr
+    role: translation
+    text: Kankikō-ji
+  - lang: ja
+    role: translation
+    text: 歓喜光寺
+  - lang: zh
+    role: translation
+    text: 歡喜光寺
+kind: temple
+place: kyoto
+location: [135.8225, 34.96625]
+address: 京都市山科区大宅奥山田10
+wikidata_id: Q11545313
+metadata:
+  sources: [Wikidata Q11545313 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Kankikoji-Temple.jpg/1280px-Kankikoji-Temple.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kankikoji-Temple.jpg
+    license: CC BY-SA 4.0
+    credit: 運動会プロテインパワー
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q11545313
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q11545313
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q11545313
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q11545313

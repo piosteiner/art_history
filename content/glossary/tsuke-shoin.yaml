@@ -1,0 +1,12 @@
+public_id: 107520
+name: tsuke shoin
+names:
+  - lang: ja
+    role: original
+    text: "{付書院|つけしょいん}"
+category: architecture
+definition: A shallow alcove with a wide ledge used as a desk, under a window, in shoin architecture.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 233

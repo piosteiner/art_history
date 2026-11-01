@@ -1,0 +1,13 @@
+public_id: 107490
+name: haboku
+names:
+  - lang: ja
+    role: original
+    text: "{破墨|はぼく}"
+category: technique
+parent: suibokuga
+definition: "“Broken ink”: a very free and rapid ink painting in which the ink seems to have been splashed onto the paper."
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 227

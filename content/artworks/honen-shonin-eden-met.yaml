@@ -1,0 +1,47 @@
+public_id: 107529
+title: Fragment of the Hōnen Shōnin eden
+attribution_label: Anonymous
+created: early 14th century
+created_span: uncertain
+kind: kakemono
+medium: Illustrated handscroll mounted as a hanging scroll, ink and colour on paper
+materials: [ink, paper]
+dimensions: [41, 59]
+institution: metropolitan-museum-of-art
+inventory_number: "1980.221"
+description_md: "From one of the most elaborate illustrated lives of [[person/honen]] (1133–1212), founder of the Jōdo sect: originally forty-eight scrolls compiled over ten years from 1307, edited by the Mount Hiei priest Shunshō at the request of the retired emperor Go Fushimi, with calligraphy by eight men of the court. Hōnen, his back to the wall in a temple room, inscribes a copy of his portrait for his disciple [[person/shinran]], who kneels before him. A document of events rather than a gripping narrative. [[source/history-of-japanese-art|pp. 201–203, fig. 234]]"
+relationships:
+  - type: depicts_person
+    to: person/honen
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 201–203, fig. 234
+  - type: depicts_person
+    to: person/shinran
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 201–203, fig. 234
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 201–203, fig. 234
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 201–203, fig. 234
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 201–203, fig. 234
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 201–203, fig. 234
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 201–203, fig. 234
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 201–203, fig. 234
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 201–203, fig. 234

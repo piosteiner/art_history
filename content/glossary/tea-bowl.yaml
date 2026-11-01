@@ -1,0 +1,9 @@
+public_id: 107517
+name: tea bowl
+names:
+  - lang: ja
+    role: original
+    text: "{茶碗|ちゃわん}"
+category: object type
+parent: vessel
+definition: A bowl for drinking tea; in Japan the chawan of the tea ceremony.

@@ -1,0 +1,49 @@
+public_id: 107384
+name: Minamoto no Yoritomo
+names:
+  - lang: ja
+    role: original
+    text: 源頼朝
+  - lang: zh
+    role: translation
+    text: 源赖朝
+  - lang: ko
+    role: translation
+    text: 미나모토노 요리토모
+  - lang: ru
+    role: translation
+    text: Минамото-но Ёритомо
+kind: person
+occupations: [politician, bushi, urban planner]
+birth: 1147-05-16
+death: 1199-02-09
+wikidata_id: Q242800
+metadata:
+  sources: [Wikidata Q242800 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Minamoto_no_Yoritomo.jpg/1280px-Minamoto_no_Yoritomo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Minamoto_no_Yoritomo.jpg
+    license: Public domain
+    credit: Fujiwara no Takanobu
+identifiers:
+  gnd: 12269628X
+  idref: 07593048X
+  lc: n81061773
+  viaf: "47650270"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q242800
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q242800
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q242800
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q242800

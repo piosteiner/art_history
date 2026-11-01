@@ -1,0 +1,36 @@
+public_id: 107553
+title: Toiletry box with Mount Hōrai
+attribution_label: Anonymous
+created: 13th century
+created_span: uncertain
+kind: box
+medium: Black lacquer on wood with maki-e
+materials: [lacquer, wood, gold]
+dimensions: [24.4, 32.5, 18.5]
+institution: kyoto-national-museum
+description_md: "A small toiletry box of black lacquer, painted on four sides in gold [[maki-e]] with flying geese and trees — pure [[kara-e]]: Mount Hōrai, the Daoist mountain of the elixir of immortality, with a weathered rock and a stunted cypress by a lake (such rocks came from a lake near Hangzhou) and two groups of geese flying south, an image of the coming of winter. [[source/history-of-japanese-art|p. 178, fig. 205]]"
+relationships:
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 178, fig. 205
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 205
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 205
+  created:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 205
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 205
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 205
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 205

@@ -1,0 +1,12 @@
+public_id: 107494
+name: inkstone case
+names:
+  - lang: ja
+    role: original
+    text: "{硯箱|すずりばこ}"
+category: object type
+definition: "Suzuribako: a lacquered box for the writer’s tools — inkstone, water dropper, ink stick and brushes."
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 178

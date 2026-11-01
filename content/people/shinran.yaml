@@ -1,0 +1,57 @@
+public_id: 107381
+name: Shinran
+names:
+  - kind: nickname
+    lang: ja
+    role: alternative
+    text: 愚禿釋親鸞
+  - kind: art_name
+    role: alternative
+    text: 善信房
+  - lang: ja
+    role: original
+    text: 藤井善信
+  - lang: ja
+    role: original
+    text: 親鸞
+  - lang: ko
+    role: translation
+    text: 신란
+  - lang: ru
+    role: translation
+    text: Синран
+kind: person
+occupations: [Buddhist monk, religious leader]
+birth: 1173-05-21
+death: 1263-01-16
+wikidata_id: Q512934
+metadata:
+  sources: [Wikidata Q512934 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ad/ShinranShonin.png
+    source_url: https://commons.wikimedia.org/wiki/File:ShinranShonin.png
+    license: Public domain
+    credit: Kosigrim at English Wikipedia
+identifiers:
+  bnf: "120234747"
+  gnd: "118755129"
+  idref: "028389506"
+  lc: n81127017
+  viaf: "25398003"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q512934
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q512934
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q512934
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q512934

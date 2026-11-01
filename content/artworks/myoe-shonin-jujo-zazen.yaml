@@ -1,0 +1,60 @@
+public_id: 107351
+title: Portrait of Myōe Shōnin meditating in a tree
+names:
+  - Myōe Meditating in a Tree
+  - Myōe Meditating on a Tree
+  - lang: ja
+    role: translation
+    text: 明恵上人樹上坐禅像
+creator: enichibo-jonin
+attribution_label: attributed to Jōnin
+created: 13th century
+created_span: uncertain
+kind: kakemono
+medium: Hanging scroll, colour on silk
+materials: [silk]
+dimensions: [146, 58.8]
+institution: kozan-ji
+description_md: "[[person/myoe]] (1173–1232), who refounded Kōzanji for the Kegon school, sits in meditation in the fork of a twin-trunked tree among scraggy pines, his rosary and an incense burner hanging on the branches. The composition follows Chinese rakan paintings and is almost naive; ink lines with thin washes of colour, except for the finely drawn face — a painting that prefigures the [[movement/nanga]] school. Traditionally attributed to [[artist/enichibo-jonin]], a monk of Kōzanji. [[source/history-of-japanese-art|pp. 196–197, fig. 228]]"
+wikidata_id: Q107046486
+metadata:
+  sources: [Wikidata Q107046486 (retrieved 2026-11-01)]
+relationships:
+  - type: depicts_person
+    to: person/myoe
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 196–197, fig. 228
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 196–197, fig. 228
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/22/Semuiji_Myoue.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Semuiji_Myoue.jpg
+    license: Public domain
+    credit: estimated to Enichibō Jōnin
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 196–197, fig. 228
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 196–197, fig. 228
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 196–197, fig. 228
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q107046486
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 196–197, fig. 228
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 196–197, fig. 228
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 196–197, fig. 228

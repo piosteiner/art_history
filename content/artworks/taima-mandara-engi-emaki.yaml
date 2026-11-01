@@ -1,0 +1,54 @@
+public_id: 107356
+title: Taima Mandara engi emaki
+names:
+  - Taima Mandala engi
+  - lang: ja
+    role: translation
+    text: 当麻曼荼羅縁起
+attribution_label: Anonymous
+created: mid 13th century
+created_span: uncertain
+kind: emakimono
+medium: Handscroll, colour on paper
+materials: [paper]
+dimensions: [48.8]
+institution: komyo-ji-kamakura
+description_md: "Two scrolls by an unknown artist on the legend of the original Taima tapestry: [[person/princess-chujo]], a nun at Taimadera, vowed to see Amida in living form; a young woman visiting from the court — Kannon in disguise — weaves the mandala in one night from lotus threads she has dyed five colours, and an old nun — Amida — explains it to her. A rare glimpse of the role of women in Japanese Buddhism. [[source/history-of-japanese-art|pp. 207–209, fig. 240]]"
+wikidata_id: Q17639719
+metadata:
+  sources: [Wikidata Q17639719 (retrieved 2026-11-01)]
+relationships:
+  - type: depicts_person
+    to: person/princess-chujo
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 207–209, fig. 240
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 207–209, fig. 240
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1a/Taima_mandala_engi_-_Pure_Land.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Taima_mandala_engi_-_Pure_Land.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 207–209, fig. 240
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 207–209, fig. 240
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 207–209, fig. 240
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 207–209, fig. 240
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 207–209, fig. 240
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 207–209, fig. 240

@@ -1,0 +1,41 @@
+public_id: 107554
+title: Portrait sculpture of Minamoto no Yoritomo
+attribution_label: Anonymous
+created: late 13th century
+created_span: uncertain
+kind: sculpture
+medium: Wood with paint
+materials: [wood]
+dimensions: [90.3]
+institution: tokyo-national-museum
+description_md: "A posthumous portrait of [[person/minamoto-no-yoritomo]] as shogun that translates the yamato-e portrait into three dimensions: the pale, alert face of a confident young courtier, in a hunting jacket (kariginu) over baggy trousers and a tall black hat of starched gauze. Such images were common in the ancestral shrines of the great clans; it probably stood among those of a Minamoto family shrine. [[source/history-of-japanese-art|p. 169, fig. 202]]"
+relationships:
+  - type: depicts_person
+    to: person/minamoto-no-yoritomo
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 169, fig. 202
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 169, fig. 202
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 169, fig. 202
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 169, fig. 202
+  created:
+    - source: history-of-japanese-art
+      locator: p. 169, fig. 202
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 169, fig. 202
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 169, fig. 202
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 169, fig. 202

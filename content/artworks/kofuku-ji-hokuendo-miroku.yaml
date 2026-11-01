@@ -1,0 +1,55 @@
+public_id: 107347
+title: Miroku Butsu, Hokuendō, Kōfukuji
+names: [興福寺北円堂弥勒仏坐像]
+creator: unkei
+created: 1212
+kind: sculpture
+medium: Wood with paint and gold leaf, inlaid eyes
+materials: [katsura wood, gold leaf, rock crystal]
+dimensions: [141.9]
+institution: kofuku-ji
+description_md: "The altar’s central image, originally with two bodhisattvas, the Shitennō and two rakan. Compared with Jōchō’s Amida, the torso rises higher above the spread of the legs, yet the figure is not top-heavy; face and drapery are carved more deeply, the crystal eyes look down with a melancholy expression. [[yosegi-zukuri]] in [[katsura-wood]]: an approachable, almost human Buddha. [[source/history-of-japanese-art|pp. 189–190, fig. 219]]"
+wikidata_id: Q107046117
+metadata:
+  sources: [Wikidata Q107046117 (retrieved 2026-11-01)]
+relationships:
+  - type: co_creator
+    to: artist/genkei
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 189–190, fig. 219
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 189–190, fig. 219
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Miroku_Hokuendo_Kofukuji.jpg/1280px-Miroku_Hokuendo_Kofukuji.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Miroku_Hokuendo_Kofukuji.jpg
+    license: Public domain
+    credit: Minamoto Hoshu
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 189–190, fig. 219
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 189–190, fig. 219
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q107046117
+    - source: history-of-japanese-art
+      locator: pp. 189–190, fig. 219
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 189–190, fig. 219
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 189–190, fig. 219
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 189–190, fig. 219
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 189–190, fig. 219

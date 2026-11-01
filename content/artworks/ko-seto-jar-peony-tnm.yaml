@@ -1,0 +1,35 @@
+public_id: 107534
+title: Jar with peony design (Ko Seto)
+attribution_label: Anonymous
+created: 1201/1400
+kind: jar
+medium: Stoneware with yellow glaze
+materials: [Seto ware]
+dimensions: [30.5]
+institution: tokyo-national-museum
+description_md: "A Ko Seto ([[seto-ware]]) jar in the shape the Chinese call meiping, a wine bottle or saké decanter: narrow neck, articulated lip, long body swelling at the shoulder. Peonies are incised into the clay; the yellow glaze is applied so heavily that it runs in streaks — the vessel would not pass muster in China, but shows Japanese potters adapting Chinese forms to a native idiom. [[source/history-of-japanese-art|pp. 179–180, fig. 208]]"
+relationships:
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 179–180, fig. 208
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 179–180, fig. 208
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 179–180, fig. 208
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 179–180, fig. 208
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 179–180, fig. 208
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 179–180, fig. 208
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 179–180, fig. 208

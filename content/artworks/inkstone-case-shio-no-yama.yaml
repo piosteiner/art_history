@@ -1,0 +1,36 @@
+public_id: 107530
+title: Inkstone case with poetic scenes of Shio no yama
+attribution_label: Anonymous
+created: 15th century
+created_span: uncertain
+kind: inkstone case
+medium: Maki-e lacquer on wood
+materials: [lacquer, wood, gold, silver]
+dimensions: [4.8, 25.7, 23.8]
+institution: kyoto-national-museum
+description_md: "An [[inkstone-case]] decorated in gold [[maki-e]] on a red lacquer base with inset silver rocks: a landscape evoking Shiogama, the salt flats on the north-eastern coast that were a favourite image of melancholy solitude in poetry, gardens and design. [[source/history-of-japanese-art|p. 178, fig. 206]]"
+relationships:
+  - type: associated_with
+    to: movement/muromachi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 178, fig. 206
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 206
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 206
+  created:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 206
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 206
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 206
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 206

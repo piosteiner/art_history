@@ -1,0 +1,46 @@
+public_id: 107391
+name: Kūya
+names:
+  - lang: ja
+    role: original
+    text: 空也
+  - Kuya
+  - Kuuya
+  - Amida Hijiri
+  - Ichi no Hijiri
+  - lang: ru
+    role: translation
+    text: Куя
+kind: person
+occupations: [hijiri]
+birth: 903
+death: 972-10-25
+wikidata_id: Q2975265
+metadata:
+  sources: [Wikidata Q2975265 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ae/Kuya_Portrait.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Kuya_Portrait.JPG
+    license: Public domain
+    credit: ASUKAEN
+identifiers:
+  idref: "114672199"
+  lc: no98091121
+  viaf: "262705266"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q2975265
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2975265
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2975265
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q2975265

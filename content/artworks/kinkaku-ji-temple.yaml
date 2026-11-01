@@ -1,17 +1,21 @@
 public_id: 102334
-title: Kinkaku-ji Temple
+title: Kinkakuji (Golden Pavilion), Rokuonji
 names:
+  - Kinkaku-ji Temple
   - Rokuon-ji
   - Kinkaku-ji
   - lang: ja
     role: translation
     text: 鹿苑寺
-attribution_label: Built for the shogun Ashikaga Yoshimitsu; builders unknown
-created: 1397
+attribution_label: Anonymous
+created: 1397/1399
+kind: building
+medium: Wood, gold foil
 materials: [wood, gold leaf, Jōbōji urushi]
+institution: rokuon-ji
 web_url: https://www.shokoku-ji.jp/kinkakuji/
 location: [135.7285, 35.0395]
-description_md: Ashikaga Yoshimitsu (1358–1409) gave up the office of shogun in 1395 and retired to a villa in the Kitayama (Northern Hills) district of Kyoto, later the temple Rokuonji; “Temple of the Golden Pavilion” is a nickname given later. Its three-storied pavilion, covered with gold foil, stands at the edge of a large artificial lake. The original was burnt in 1950 by an acolyte and rebuilt[[source/history-of-japanese-art|pp. 170–171, 226–229]].
+description_md: "The retreat of [[person/ashikaga-yoshimitsu]], who took over the site of an older mansion and garden in 1397 and retired there in 1399; it became a temple after his death. The three-storied pavilion, covered with gold foil at the edge of a large lake, combines three styles: a Heian [[shinden-zukuri]] ground floor with hinged lattice panels, a warrior-style second floor with an L-shaped room and veranda for moon viewing, and a top floor with bell-shaped windows housing Amida with twenty-five bodhisattvas and a Buddha relic from Engakuji. Burnt by a disturbed acolyte in 1950 and rebuilt (1964) much as it was. [[source/history-of-japanese-art|pp. 227–228, fig. 262]]"
 wikidata_id: Q270983
 metadata:
   sources: [Wikidata Q270983 (retrieved 2026-10-24)]
@@ -19,6 +23,11 @@ relationships:
   - type: created_in
     to: place/kyoto
     period: 1397
+  - type: associated_with
+    to: movement/muromachi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 227–228, fig. 262
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Water_reflection_of_Kinkaku-ji_Temple_a_sunny_day%2C_Kyoto%2C_Japan.jpg/1280px-Water_reflection_of_Kinkaku-ji_Temple_a_sunny_day%2C_Kyoto%2C_Japan.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Water_reflection_of_Kinkaku-ji_Temple_a_sunny_day,_Kyoto,_Japan.jpg
@@ -28,11 +37,22 @@ identifiers:
   gnd: 104787749X
   viaf: "306367221"
 sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 227–228, fig. 262
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 227–228, fig. 262
   created:
-    - accessed: 2026-10-24
-      property: P571
-      wikidata: Q270983
+    - source: history-of-japanese-art
+      locator: pp. 227–228, fig. 262
   location:
     - accessed: 2026-10-24
       property: P625
       wikidata: Q270983
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 227–228, fig. 262
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 227–228, fig. 262

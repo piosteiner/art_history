@@ -1,0 +1,47 @@
+public_id: 107383
+name: Myōe
+names:
+  - lang: ja
+    role: original
+    text: 明恵
+  - Kōben
+  - Myoe
+  - Myoue
+  - lang: ru
+    role: translation
+    text: Мёэ
+kind: person
+occupations: [Buddhist monk]
+birth: 1173-02-28
+death: 1232-02-18
+wikidata_id: Q2026000
+metadata:
+  sources: [Wikidata Q2026000 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/22/Semuiji_Myoue.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Semuiji_Myoue.jpg
+    license: Public domain
+    credit: estimated to Enichibō Jōnin
+identifiers:
+  bnf: 12238480x
+  gnd: "119052962"
+  idref: 03110357X
+  lc: n81057038
+  viaf: "3272339"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q2026000
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2026000
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2026000
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q2026000

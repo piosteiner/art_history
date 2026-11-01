@@ -1,0 +1,59 @@
+public_id: 107352
+title: Kegon engi emaki (Tales of Gangyō and Gishō)
+names:
+  - Kegon Engi Emaki
+  - Kegonshū Soshi Eden
+  - Illustrated Biographies of the Kegon School Patriarchs
+  - lang: fr
+    role: translation
+    text: Rouleaux enluminés des fondateurs de la secte Kegon
+  - lang: ja
+    role: translation
+    text: 華厳縁起
+creator: enichibo-jonin
+attribution_label: Gangyō scrolls attributed to Jōnin
+created: early 13th century
+created_span: uncertain
+kind: emakimono
+medium: Handscrolls, ink and colour on paper
+materials: [ink, paper]
+dimensions: [31.8]
+institution: kozan-ji
+description_md: Two narrative scroll sets on the Korean monks Wŏnhyo (Gangyō, 617–686) and Ŭisang (Gishō, 625–702), founders of the Korean Kegon school, made for Kōzanji in connection with [[person/myoe]]. Gishō goes on to China, where the beautiful Zenmyō falls in love with him; when he sails home she throws herself into the sea and becomes a dragon to carry his ship — a scene of swirling blue waves and a ferocious green and red dragon. In the Gangyō scrolls an imperial messenger of Silla descends to the palace of the king of the sea, with the dialogue written in hiragana. Karen Brock has argued that the Gishō scrolls were made at the instigation of Lady Sanmi, a consort of [[person/emperor-go-toba]], around the Jōkyū Rebellion for the nuns of Zenmyōji; the Gangyō scrolls have been attributed to [[artist/enichibo-jonin]]. [[source/history-of-japanese-art|pp. 198–200, figs. 230–231]]
+wikidata_id: Q3443330
+metadata:
+  sources: [Wikidata Q3443330 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 198–200, figs. 230–231
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/History_of_the_Kegon_Sect.jpg/1280px-History_of_the_Kegon_Sect.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:History_of_the_Kegon_Sect.jpg
+    license: Public domain
+    credit: Attributed to Enichibō Jōnin
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 198–200, figs. 230–231
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 198–200, figs. 230–231
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 198–200, figs. 230–231
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q3443330
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 198–200, figs. 230–231
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 198–200, figs. 230–231
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 198–200, figs. 230–231

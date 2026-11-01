@@ -1,0 +1,39 @@
+public_id: 107532
+title: Kanzan
+creator: kao-ninga
+created: before 1345
+kind: kakemono
+medium: Hanging scroll, ink and colour on paper
+materials: [ink, paper]
+dimensions: [102.5, 30.9]
+institution: freer-gallery-of-art
+inventory_number: F1960.23
+description_md: "The eccentric Chinese poet Kanzan (Hanshan), who lived in a cave near the Guoqing monastery on Mount Tiantai, stands gazing upward as if at the moon, smiling at some unknown amusement: broad, quick strokes of light ink for his skirt, fine grey lines for face and feet, darker ink for his unkempt hair. Its painter [[artist/kao-ninga]] was a monk with an excellent calligraphic hand, well versed in Zen and literati imagery, though there is confusion over the Kaō and Ninga seals. [[source/history-of-japanese-art|pp. 221–222, fig. 255]]"
+relationships:
+  - type: associated_with
+    to: movement/nanbokucho-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 221–222, fig. 255
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 221–222, fig. 255
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 221–222, fig. 255
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 221–222, fig. 255
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 221–222, fig. 255
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 221–222, fig. 255
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 221–222, fig. 255
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 221–222, fig. 255

@@ -1,0 +1,65 @@
+public_id: 107368
+title: Catching a Catfish with a Gourd
+names:
+  - Catching a catfish with a gourd
+  - Hyōnenzu
+  - Hyōnen-zu
+  - Hyonenzu
+  - lang: ja
+    role: translation
+    text: 瓢鮎図
+creator: josetsu
+created: c. 1413
+created_span: uncertain
+kind: kakemono
+medium: Hanging scroll, ink and colour on paper
+materials: [ink, paper]
+dimensions: [111.5, 75.8]
+institution: taizo-in
+web_url: http://www.kyohaku.go.jp/jp/dictio/kaiga/fushigi.html
+description_md: "Commissioned by the shogun [[person/ashikaga-yoshimitsu]]’s son [[person/ashikaga-yoshimochi]] (1380–1428) for a small Chinese-style standing screen; thirty Zen monks wrote poems on it, introduced by Taigaku Shūsū, and it was later remounted as a hanging scroll with the poems above. A [[koan]] made visible: how to catch a slippery catfish with a gourd? A strange, solitary man with a porcine face holds a gourd in front of the fish in a flat, barren landscape, mountains in the mist beyond. [[artist/josetsu]], a monk of Shōkokuji, was a teacher of Shūbun. [[source/history-of-japanese-art|p. 224, fig. 258]]"
+wikidata_id: Q11574178
+metadata:
+  sources: [Wikidata Q11574178 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/muromachi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 224, fig. 258
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Hy%C3%B4nen_zu_by_Josetsu.jpg/1280px-Hy%C3%B4nen_zu_by_Josetsu.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hy%C3%B4nen_zu_by_Josetsu.jpg
+    license: Public domain
+    credit: 如拙 (Josetsu)
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 224, fig. 258
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 224, fig. 258
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q11574178
+    - source: history-of-japanese-art
+      locator: p. 224, fig. 258
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q11574178
+    - source: history-of-japanese-art
+      locator: p. 224, fig. 258
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 224, fig. 258
+  dimensions:
+    - accessed: 2026-11-01
+      property: P2048
+      wikidata: Q11574178
+    - source: history-of-japanese-art
+      locator: p. 224, fig. 258
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 224, fig. 258

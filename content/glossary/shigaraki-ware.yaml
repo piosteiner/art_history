@@ -1,0 +1,13 @@
+public_id: 107513
+name: Shigaraki ware
+names:
+  - lang: ja
+    role: original
+    text: "{信楽焼|しがらきやき}"
+category: material
+parent: stoneware
+definition: "Stoneware from Shigaraki (Shiga prefecture), one of the six old kilns: coil-built, of a clay rich in iron that fires brick-coloured, with a natural ash glaze."
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 180

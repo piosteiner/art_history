@@ -1,9 +1,43 @@
 public_id: 100046
-title: The Priest Kūya
+title: The Priest Kūya, Rokuharamitsuji
+names: [The Priest Kūya]
 creator: kosho
-created: 13th century
+created: early 13th century
 created_span: uncertain
-kind: Wood with paint and inlaid eyes
+kind: sculpture
+medium: Wood with paint and inlaid eyes
+materials: [wood, rock crystal]
 dimensions: [117.6]
 dimensions_note: height only
 institution: rokuharamitsuji
+description_md: A study in realism taken to the limits of literal representation by [[artist/kosho]], one of Unkei’s sons. [[person/kuya]] (903–972) wandered through Japan teaching the [[nenbutsu]] in a dance with gongs and bells; here he walks with a gong at his chest held by a yoke and a staff topped by deer antlers (by legend he became a priest after killing a deer). From his mouth a wire carries six small standing Amida figures — the six syllables of the nenbutsu. [[source/history-of-japanese-art|pp. 193–194, fig. 224]]
+relationships:
+  - type: depicts_person
+    to: person/kuya
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 193–194, fig. 224
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 193–194, fig. 224
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 193–194, fig. 224
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 193–194, fig. 224
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 193–194, fig. 224
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 193–194, fig. 224
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 193–194, fig. 224
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 193–194, fig. 224

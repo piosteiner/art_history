@@ -1,0 +1,50 @@
+public_id: 107316
+name: Gotoh Museum
+names:
+  - The Gotoh Museum
+  - Dai-tokyu Memorial Library
+  - lang: fr
+    role: translation
+    text: musée Gotoh
+  - lang: de
+    role: translation
+    text: Gotō-Kunstmuseum
+  - lang: ja
+    role: translation
+    text: 五島美術館
+kind: museum
+founded: 1960
+place: tokyo
+location: [139.63529, 35.6122]
+website_url: https://www.gotoh-museum.or.jp/
+wikidata_id: Q2374140
+metadata:
+  sources: [Wikidata Q2374140 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Gotoh_Museum.JPG/1280px-Gotoh_Museum.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Gotoh_Museum.JPG
+    license: CC BY-SA 3.0
+    credit: Bamse
+identifiers:
+  bnf: 15547488k
+  gnd: "1332099629"
+  lc: n82058996
+  ulan: "500309667"
+  viaf: "129421271"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q2374140
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q2374140
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q2374140
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q2374140

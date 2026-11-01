@@ -1,0 +1,37 @@
+public_id: 107550
+title: Two tenmoku tea bowls
+attribution_label: Anonymous
+created: 16th century
+created_span: uncertain
+kind: tea bowl
+medium: Seto ware
+materials: [Seto ware]
+dimensions: [5.8]
+dimensions_note: diameter 12.6 cm each
+institution: daigo-ji
+description_md: "Seto imitations of the Chinese Jian ware of the Chan monasteries on Mount Tianmu: conical bowls with dark iron glazes in streaks of brown and silver, meant to look like a fortunate accident of firing. Such pieces were highly prized and given names. [[source/history-of-japanese-art|p. 233, fig. 269]]"
+relationships:
+  - type: associated_with
+    to: movement/muromachi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 233, fig. 269
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 233, fig. 269
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 233, fig. 269
+  created:
+    - source: history-of-japanese-art
+      locator: p. 233, fig. 269
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 233, fig. 269
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 233, fig. 269
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 233, fig. 269

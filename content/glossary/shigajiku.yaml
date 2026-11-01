@@ -1,0 +1,12 @@
+public_id: 107512
+name: shigajiku
+names:
+  - lang: ja
+    role: original
+    text: "{詩画軸|しがじく}"
+category: format
+definition: "A hanging scroll joining poetry and painting: a monochrome imaginary landscape with poems, often composed and copied by several priests."
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 217

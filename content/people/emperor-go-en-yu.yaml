@@ -1,0 +1,57 @@
+public_id: 107386
+name: Go-En'yū
+names:
+  - lang: ja
+    role: original
+    text: 後円融天皇
+  - Emperor Go-En'yū
+  - Go-Enyu
+  - Emperor Go-Enyu
+  - Go-En'yū-tennō
+  - Go-En'yu
+  - Go-En'yuu
+  - lang: es
+    role: translation
+    text: Emperador Go-En'yū
+  - lang: zh
+    role: translation
+    text: 後圓融天皇
+  - lang: ko
+    role: translation
+    text: 고엔유 천황
+  - lang: ru
+    role: translation
+    text: Император Го-Энъю
+kind: person
+occupations: [ruler]
+birth: 1359-01-19
+death: 1393-06-14
+wikidata_id: Q471799
+metadata:
+  sources: [Wikidata Q471799 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Emperor_Go-En%27y%C5%AB_detail.jpg/1280px-Emperor_Go-En%27y%C5%AB_detail.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emperor_Go-En%27y%C5%AB_detail.jpg
+    license: Public domain
+    credit: Tosa Mitsunobu
+identifiers:
+  idref: "227194624"
+  lc: no2009145482
+  viaf: "100786527"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q471799
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q471799
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q471799
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q471799

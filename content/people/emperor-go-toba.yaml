@@ -1,0 +1,59 @@
+public_id: 107385
+name: Go-Toba
+names:
+  - lang: ja
+    role: original
+    text: 後鳥羽天皇
+  - Go-Toba-tennō
+  - Emperor Go-Toba
+  - Empereur du Japon Go-Toba Tennō
+  - Emperor of Japan Gotoba
+  - Gotoba Tennō
+  - Emperor GoToba
+  - Gotoba Jōkō
+  - Gotoba-in
+  - lang: es
+    role: translation
+    text: Emperador Go-Toba
+  - lang: ko
+    role: translation
+    text: 고토바 천황
+  - lang: ru
+    role: translation
+    text: Император Го-Тоба
+kind: person
+occupations: [waka poet, writer]
+birth: 1180-08-13
+death: 1239-04-04
+wikidata_id: Q316658
+metadata:
+  sources: [Wikidata Q316658 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Emperor_Go-Toba.jpg/1280px-Emperor_Go-Toba.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emperor_Go-Toba.jpg
+    license: Public domain
+    credit: Fujiwara no Nobuzane
+identifiers:
+  bnf: 16758780k
+  gnd: "1089686013"
+  idref: "133723836"
+  lc: n85059890
+  ulan: "500318648"
+  viaf: "48189404"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q316658
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q316658
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q316658
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q316658

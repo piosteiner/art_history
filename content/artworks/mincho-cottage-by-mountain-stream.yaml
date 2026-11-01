@@ -1,0 +1,60 @@
+public_id: 107364
+title: Cottage by a Mountain Stream
+names:
+  - Small Cottage by a Mountain Stream
+  - Cottage in a Shaded Valley
+  - lang: ja
+    role: translation
+    text: 渓陰小築図
+creator: mincho
+attribution_label: attributed to Minchō
+created: 1413
+kind: kakemono
+medium: Hanging scroll, ink on paper
+materials: [ink, paper]
+dimensions: [101.5, 34.5]
+institution: konchi-in
+description_md: "One of the oldest dated [[shigajiku]] and the record of an event: in 1413 the priest Junshihaku of Nanzenji built himself a study, Keiin (“valley shade”), and invited friends who wrote poems praising it; their poems and a long preface stand above the landscape. Below, the Chinese scholar’s ideal: a simple room with a stone-tiled floor and a bell-shaped window over a meandering stream, in a grove before tall Chinese mountains. No inscription names the painter, but most scholars accept the traditional attribution to [[artist/mincho]]. [[source/history-of-japanese-art|pp. 218, 221, fig. 254]]"
+wikidata_id: Q107046871
+metadata:
+  sources: [Wikidata Q107046871 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/muromachi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 218, 221, fig. 254
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/db/Cottage_by_a_mountain_stream.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cottage_by_a_mountain_stream.jpg
+    license: Public domain
+    credit: attributed to Kichizan Minchō (吉山明兆, Kitsusan Minchō)
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 218, 221, fig. 254
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107046871
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 218, 221, fig. 254
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q107046871
+    - source: history-of-japanese-art
+      locator: pp. 218, 221, fig. 254
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q107046871
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 218, 221, fig. 254
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 218, 221, fig. 254
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 218, 221, fig. 254

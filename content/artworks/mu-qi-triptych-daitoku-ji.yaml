@@ -1,0 +1,39 @@
+public_id: 107540
+title: Crane, Kannon and Monkey
+creator: mu-qi
+created: 13th century
+created_span: uncertain
+kind: kakemono
+medium: Three hanging scrolls, ink on silk
+materials: [ink, silk]
+dimensions: [177.8]
+institution: daitoku-ji
+description_md: "A triptych by the Chinese monk-painter [[artist/mu-qi]]: a white-robed Kannon flanked by a crane striding out of a bamboo grove and a monkey on a dead branch hugging her baby. The crane, the Chinese symbol of a Daoist immortal, stands for the independent spirit that has reached [[satori]]; the monkey for the soul still tied to worldly concerns. Kept at Daitokuji, it had an enormous influence on Japanese ink painting. [[source/history-of-japanese-art|pp. 222–223, fig. 256]]"
+relationships:
+  - type: created_in_polity
+    to: polity/southern-song
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 222–223, fig. 256
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 222–223, fig. 256
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 222–223, fig. 256
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 222–223, fig. 256
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 222–223, fig. 256
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 222–223, fig. 256
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 222–223, fig. 256
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 222–223, fig. 256

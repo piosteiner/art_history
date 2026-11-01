@@ -1,0 +1,39 @@
+public_id: 107552
+title: Ink painting of Tōfukuji
+creator: sesshu-toyo
+created: 15th century
+created_span: uncertain
+kind: kakemono
+medium: Horizontal hanging scroll, ink and colour on paper
+materials: [ink, paper]
+dimensions: [83, 150]
+institution: tofuku-ji
+description_md: A view by [[artist/sesshu-toyo]] of [[institution/tofuku-ji]], one of the first Zen temples of Kyoto, founded in 1236 with the support of the regent [[person/kujo-michiie]] and completed in 1255; [[person/enni-benen]] became its abbot in 1243. It shows the earlier complex in the foothills of the Eastern Hills — the central buildings on one axis from the [[sanmon]] to the abbot’s residence, the stream and its bridge. [[source/history-of-japanese-art|pp. 213–214, fig. 246]]
+relationships:
+  - type: associated_with
+    to: movement/muromachi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 213–214, fig. 246
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 213–214, fig. 246
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 213–214, fig. 246
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 213–214, fig. 246
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 213–214, fig. 246
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 213–214, fig. 246
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 213–214, fig. 246
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 213–214, fig. 246

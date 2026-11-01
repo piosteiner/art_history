@@ -1,0 +1,32 @@
+public_id: 107329
+name: Atami
+names:
+  - lang: ja
+    role: original
+    text: 熱海市
+  - lang: ko
+    role: translation
+    text: 아타미시
+  - lang: ru
+    role: translation
+    text: Атами
+kind: settlement
+parent: shizuoka-prefecture
+country_code: JP
+location: [139.07167, 35.09631]
+wikidata_id: Q653364
+metadata:
+  sources: [Wikidata Q653364 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q653364
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q653364
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q653364

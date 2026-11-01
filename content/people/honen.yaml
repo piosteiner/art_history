@@ -1,0 +1,49 @@
+public_id: 107380
+name: Hōnen
+names:
+  - lang: ja
+    role: original
+    text: 法然
+  - Honen
+  - Hounen
+  - lang: ko
+    role: translation
+    text: 호넨
+  - lang: ru
+    role: translation
+    text: Хонэн
+kind: person
+occupations: [Buddhist monk]
+birth: 1133-05-20
+death: 1212-03-07
+wikidata_id: Q507980
+metadata:
+  sources: [Wikidata Q507980 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8d/Takanobu-no-miei.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Takanobu-no-miei.jpg
+    license: Public domain
+    credit: Fujiwara, Takanobu (1142-1205)
+identifiers:
+  bnf: 11980986j
+  gnd: "118962639"
+  idref: "027858022"
+  lc: n80004120
+  viaf: "64013860"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q507980
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q507980
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q507980
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q507980

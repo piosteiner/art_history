@@ -1,0 +1,55 @@
+public_id: 107349
+title: Seated Senju Kannon, Sanjūsangendō
+names:
+  - Seated Statue of Senju Kannon
+  - lang: ja
+    role: translation
+    text: 三十三間堂千手観音坐像
+creator: tankei
+created: 1251/1254
+created_span: uncertain
+kind: sculpture
+medium: Wood with gold leaf and painted and metal details
+materials: [hinoki wood, gold leaf, rock crystal]
+dimensions: [334]
+institution: sanjusangen-do
+description_md: The magnum opus of [[artist/tankei]] (1173–1256), Unkei’s eldest son, who led the Kei studio after 1223 and, for the rebuilding of the Sanjūsangendō, also hired sculptors of the rival In and En schools. The central image of the altar was begun in 1251 and finished three years later, when he was eighty-two — his last work, made with two assistants. Hinoki in [[yosegi-zukuri]], lacquered and gilded, with quartz eyes; the thousand arms are graded in size, the six largest close to the body. An image of dignity and serenity, easily overlooked amid the sea of statues. [[source/history-of-japanese-art|p. 195, fig. 226]]
+wikidata_id: Q107046741
+metadata:
+  sources: [Wikidata Q107046741 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 195, fig. 226
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e2/1363_Sanjiu_Sangendo_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:1363_Sanjiu_Sangendo_(cropped).jpg
+    license: Public domain
+    credit: Kusakabe Kimbei
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 195, fig. 226
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 195, fig. 226
+  created:
+    - source: history-of-japanese-art
+      locator: p. 195, fig. 226
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q107046741
+    - source: history-of-japanese-art
+      locator: p. 195, fig. 226
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 195, fig. 226
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 195, fig. 226
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 195, fig. 226

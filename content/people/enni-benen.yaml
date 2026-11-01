@@ -1,0 +1,50 @@
+public_id: 107396
+name: Enni
+names:
+  - lang: ja
+    role: original
+    text: 円爾
+  - Shōitsu Kokushi
+  - Ben'en
+  - lang: de
+    role: translation
+    text: Enni Ben’en
+  - lang: zh
+    role: translation
+    text: 圓爾辨圓
+  - lang: ru
+    role: translation
+    text: Энни Бэнъэн
+kind: person
+occupations: [Buddhist monk]
+birth: 1202-11-08
+death: 1280-11-17
+wikidata_id: Q739826
+metadata:
+  sources: [Wikidata Q739826 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d4/Ennibenen11365679847362.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ennibenen11365679847362.jpg
+    license: Public domain
+    credit: Kichizan Minchō 吉山明兆 (1352-1431)
+identifiers:
+  idref: "145755193"
+  lc: nr97018851
+  viaf: "268984186"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q739826
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q739826
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q739826
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q739826

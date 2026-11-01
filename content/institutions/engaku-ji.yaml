@@ -1,0 +1,52 @@
+public_id: 107325
+name: Engaku-ji Temple
+names:
+  - Engaku-ji
+  - lang: fr
+    role: translation
+    text: temple Engaku
+  - lang: ja
+    role: translation
+    text: 円覚寺
+  - lang: zh
+    role: translation
+    text: 圓覺寺
+kind: temple
+founded: 1282
+place: kamakura
+location: [139.5475, 35.3377]
+address: 神奈川県鎌倉市山ノ内409
+website_url: https://www.engakuji.or.jp/
+wikidata_id: Q954860
+metadata:
+  sources: [Wikidata Q954860 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Engakuji-Shariden-M9239.jpg/1280px-Engakuji-Shariden-M9239.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Engakuji-Shariden-M9239.jpg
+    license: Public domain
+    credit: Fg2
+identifiers:
+  gnd: 4306934-4
+  lc: n82112075
+  viaf: "254543245"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q954860
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q954860
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q954860
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q954860
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q954860

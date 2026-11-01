@@ -1,0 +1,54 @@
+public_id: 107361
+title: Sanmon, Tōfukuji
+names:
+  - Sanmon, Tofukuji
+  - lang: fr
+    role: translation
+    text: Sanmon du temple Tōfuku
+  - lang: ja
+    role: translation
+    text: 東福寺三門
+attribution_label: Anonymous
+created: 1384/1425
+kind: building
+medium: Wood
+materials: [wood]
+institution: tofuku-ji
+location: [135.7738, 34.9757]
+description_md: "The earliest surviving [[sanmon]], built over some forty years with the support of the shogunate: begun in 1384, roofed in 1405, the outer staircases added in 1425. Two bays deep and five long under a two-tiered hipped-gable roof, it keeps the sober exterior of Southern Song architecture, but its upper floor — with Shaka and the sixteen [[rakan]] — is painted in green, red, brown, black and gold in the Chinese manner of the fourteenth and fifteenth centuries. [[source/history-of-japanese-art|pp. 214–215, figs. 247–248]]"
+wikidata_id: Q107020603
+metadata:
+  sources: [Wikidata Q107020603 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/kyoto
+  - type: associated_with
+    to: movement/muromachi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 214–215, figs. 247–248
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Kyoto_Tofuku-ji_San-mon_3.jpg/1280px-Kyoto_Tofuku-ji_San-mon_3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kyoto_Tofuku-ji_San-mon_3.jpg
+    license: CC BY-SA 4.0
+    credit: Zairon
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 214–215, figs. 247–248
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 214–215, figs. 247–248
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 214–215, figs. 247–248
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q107020603
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 214–215, figs. 247–248
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 214–215, figs. 247–248

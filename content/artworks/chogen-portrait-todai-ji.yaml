@@ -1,0 +1,54 @@
+public_id: 107344
+title: The Priest Shunjōbō Chōgen
+names:
+  - Statue of Chōgen
+  - lang: ja
+    role: translation
+    text: 重源上人坐像
+attribution_label: Anonymous
+created: early 13th century
+created_span: uncertain
+kind: sculpture
+medium: Wood with paint
+materials: [hinoki wood]
+dimensions: [82.2]
+institution: todai-ji
+description_md: "One of the most starkly realistic portraits of the period, probably made shortly after [[person/chogen]]’s death in 1206 for memorial services in his honour. An old man sits hunched forward, reciting the nenbutsu as he counts the beads of his rosary: prominent cheekbones, wrinkled flesh, pursed lips, eyes deep under bony brows — one opened slightly wider than the other — and the thick fingers of a man used to manual labour. [[hinoki-wood]] in [[yosegi-zukuri]], flesh tones for the head and black for the robe. No sculptor is recorded; perhaps one of the Kei masters. [[source/history-of-japanese-art|pp. 185–186, fig. 215]]"
+wikidata_id: Q107046103
+metadata:
+  sources: [Wikidata Q107046103 (retrieved 2026-11-01)]
+relationships:
+  - type: depicts_person
+    to: person/chogen
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 185–186, fig. 215
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 185–186, fig. 215
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Todaiji_Monastery_Portrait_of_Chogen_%28427%29.jpg/1280px-Todaiji_Monastery_Portrait_of_Chogen_%28427%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Todaiji_Monastery_Portrait_of_Chogen_(427).jpg
+    license: Public domain
+    credit: Imperial Japanese Commission to the Panama-Pacific International Exposition
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 185–186, fig. 215
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 185–186, fig. 215
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 185–186, fig. 215
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 185–186, fig. 215
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 185–186, fig. 215
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 185–186, fig. 215

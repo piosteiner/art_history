@@ -1,0 +1,38 @@
+public_id: 107537
+title: Death of the Buddha, Tōfukuji
+creator: mincho
+created: 1408
+kind: kakemono
+medium: Hanging scroll, colour on silk
+materials: [silk]
+dimensions: [876, 531]
+institution: tofuku-ji
+description_md: "An extraordinarily large painting of the death of Shaka by [[artist/mincho]] (1352–1431), the versatile monk-painter born on Awaji who became superintendent of buildings (chōdensu) at Tōfukuji; it is still hung each February on the anniversary. Conservative in style, as befits its public use, but freer in brushwork: outlines of varying width, shading in the emaciated faces of the disciples, red as the accent. [[source/history-of-japanese-art|p. 217, fig. 252]]"
+relationships:
+  - type: associated_with
+    to: movement/muromachi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 217, fig. 252
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 217, fig. 252
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 217, fig. 252
+  created:
+    - source: history-of-japanese-art
+      locator: p. 217, fig. 252
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 217, fig. 252
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 217, fig. 252
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 217, fig. 252
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 217, fig. 252

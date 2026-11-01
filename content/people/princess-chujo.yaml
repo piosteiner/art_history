@@ -1,0 +1,16 @@
+public_id: 107481
+name: Princess Chūjō
+names:
+  - lang: ja
+    role: original
+    text: "{中将姫|ちゅうじょうひめ}"
+birth: 753
+death: 781
+description_md: "Legendary daughter of the statesman Fujiwara no Toyonari (704–765) and devout follower of Amida: a nun at Taimadera from the age of ten, she wove the Taima Mandara in one night from lotus threads, helped by Kannon and Amida in disguise. [[source/history-of-japanese-art|p. 207]]"
+sources:
+  birth:
+    - source: history-of-japanese-art
+      locator: p. 207
+  death:
+    - source: history-of-japanese-art
+      locator: p. 207

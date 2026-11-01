@@ -1,0 +1,36 @@
+public_id: 107531
+title: Jigoku zōshi (Hell Scrolls)
+attribution_label: Anonymous
+created: late 12th century
+created_span: uncertain
+kind: emakimono
+medium: Handscroll, colour on paper
+materials: [paper]
+dimensions: [26.7]
+institution: nara-national-museum
+description_md: Eight sections of hell. In the one for merchants who cheated their customers by short weight, a looming three-eyed, white-haired crone makes naked sufferers pick up hot coals from a fire and weigh them in metal boxes; the only light comes from the fire. [[source/history-of-japanese-art|p. 211, fig. 245]]
+relationships:
+  - type: associated_with
+    to: movement/insei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 211, fig. 245
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 211, fig. 245
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 211, fig. 245
+  created:
+    - source: history-of-japanese-art
+      locator: p. 211, fig. 245
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 211, fig. 245
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 211, fig. 245
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 211, fig. 245

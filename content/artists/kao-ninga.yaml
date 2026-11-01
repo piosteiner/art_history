@@ -1,0 +1,26 @@
+public_id: 107375
+name: Kaō
+names:
+  - lang: ja
+    role: original
+    text: 可翁
+  - Kaō Ninga
+  - lang: nl
+    role: translation
+    text: Kao
+birth: 1288
+death: 1345
+wikidata_id: Q3192800
+metadata:
+  sources: [Wikidata Q3192800 (retrieved 2026-11-01)]
+identifiers:
+  viaf: "256172339"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3192800
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3192800

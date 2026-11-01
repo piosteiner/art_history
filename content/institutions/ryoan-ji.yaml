@@ -1,0 +1,54 @@
+public_id: 107336
+name: Ryōan-ji Temple
+names:
+  - Ryōan-ji
+  - lang: nl
+    role: translation
+    text: Ryoan-ji
+  - lang: ja
+    role: translation
+    text: 龍安寺
+  - lang: ko
+    role: translation
+    text: 료안지
+  - lang: ru
+    role: translation
+    text: Рёан-дзи
+kind: temple
+founded: 1450
+place: kyoto
+location: [135.71833, 35.03444]
+address: 京都府京都市右京区龍安寺御陵下町13
+website_url: http://www.ryoanji.jp/
+wikidata_id: Q587371
+metadata:
+  sources: [Wikidata Q587371 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/250201_Ryoan-ji_Kyoto_Japan06s3.jpg/1280px-250201_Ryoan-ji_Kyoto_Japan06s3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:250201_Ryoan-ji_Kyoto_Japan06s3.jpg
+    license: CC BY-SA 4.0
+    credit: 663highland
+identifiers:
+  bnf: 16255132g
+  viaf: "168403064"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q587371
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q587371
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q587371
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q587371
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q587371

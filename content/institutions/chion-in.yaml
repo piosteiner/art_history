@@ -1,0 +1,52 @@
+public_id: 107320
+name: Chion-in Temple
+names:
+  - Chion-in
+  - lang: ja
+    role: translation
+    text: 知恩院
+  - lang: ko
+    role: translation
+    text: 치온인
+  - lang: ru
+    role: translation
+    text: Тион-ин
+kind: temple
+founded: 1175
+place: kyoto
+location: [135.7834, 35.00521]
+address: 京都府京都市東山区新橋通大和大路東入三丁目林下町400
+website_url: https://www.chion-in.or.jp/
+wikidata_id: Q873645
+metadata:
+  sources: [Wikidata Q873645 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Chion-in_%287151259687%29.jpg/1280px-Chion-in_%287151259687%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Chion-in_(7151259687).jpg
+    license: CC BY-SA 2.0
+    credit: BriYYZ from Toronto, Canada
+identifiers:
+  lc: n82165947
+  ulan: "500301080"
+  viaf: "139583139"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q873645
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q873645
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q873645
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q873645
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q873645

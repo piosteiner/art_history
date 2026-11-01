@@ -1,0 +1,43 @@
+public_id: 107526
+title: Chigo Daishi (Kōbō Daishi as a child)
+attribution_label: Anonymous
+created: 14th century
+created_span: uncertain
+kind: kakemono
+medium: Hanging scroll, ink, colour and gold on silk
+materials: [ink, silk, gold]
+dimensions: [86.7, 48.9]
+institution: art-institute-of-chicago
+inventory_number: "1959.552"
+description_md: "One of the most popular icons of the cult of [[person/kukai]] (Kōbō Daishi): the boy Kūkai at the moment he had a vision and told his parents he wanted to become a monk, kneeling on a lotus within a moon disc, hands together. Such [[chigo]] images belong to the tales of Enlightenment (hosshin mono) in which the love of an older monk for a novice leads to Enlightenment, the boy revealed as a bodhisattva. [[source/history-of-japanese-art|pp. 200–201, fig. 233]]"
+relationships:
+  - type: depicts_person
+    to: person/kukai
+    label: as a child
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 200–201, fig. 233
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 200–201, fig. 233
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 200–201, fig. 233
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 200–201, fig. 233
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 200–201, fig. 233
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 200–201, fig. 233
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 200–201, fig. 233
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 200–201, fig. 233

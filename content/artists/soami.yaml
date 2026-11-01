@@ -1,0 +1,41 @@
+public_id: 107377
+name: Sōami
+names:
+  - lang: ja
+    role: original
+    text: 相阿弥
+  - Nakao Shinsō
+  - Shōsetusai
+  - Kangaku
+  - Soami
+  - Souami
+  - lang: ru
+    role: translation
+    text: Соами
+birth: 1455
+death: 1525-11-22
+wikidata_id: Q2746002
+metadata:
+  sources: [Wikidata Q2746002 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ed/%27Squirrel_on_a_Bamboo_Stalk%27%2C_bearing_the_signature_and_seal_of_S%C3%B4ami%2C_Honolulu_Academy_of_Arts.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%27Squirrel_on_a_Bamboo_Stalk%27,_bearing_the_signature_and_seal_of_S%C3%B4ami,_Honolulu_Academy_of_Arts.jpg
+    license: Public domain
+    credit: Sōami
+identifiers:
+  bnf: 12573638t
+  gnd: "1116649225"
+  idref: "035054166"
+  kulturnav: 394fe31c-45ad-4a0c-bf61-0f5b01146c70
+  lc: n79104949
+  ulan: "500121056"
+  viaf: "145323683"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2746002
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2746002

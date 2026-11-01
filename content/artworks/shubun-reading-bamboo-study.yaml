@@ -1,0 +1,71 @@
+public_id: 107370
+title: Reading in the Bamboo Study
+names:
+  - Reading in a Bamboo Grove
+  - lang: ja
+    role: translation
+    text: 竹斎読書図
+creator: tensho-shubun
+created: c. 1446
+created_span: uncertain
+kind: kakemono
+medium: Hanging scroll, ink and colour on paper
+materials: [ink, paper]
+dimensions: [136.5, 33.6]
+institution: tokyo-national-museum
+inventory_number: A-1164
+location: [139.7756, 35.71994]
+description_md: "One of the few paintings accepted as by [[artist/tensho-shubun]] (d. c. 1460), monk and administrator of Shōkokuji, who went to Korea in 1423 for a printed Buddhist canon: a [[shigajiku]] with a long introduction and five inscriptions. A scholar’s thatched study is almost hidden in a bamboo grove beneath a sharp bluff with two pines; an old man and his attendant cross a bridge to visit him; boats and a temple’s roofs lie in the distance. Shūbun has solved the problem of believable recession; his motifs come from the Southern Song painter Xia Gui. [[source/history-of-japanese-art|pp. 225–226, fig. 259]]"
+wikidata_id: Q107045359
+metadata:
+  sources: [Wikidata Q107045359 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+    period: 15th century
+  - type: associated_with
+    to: movement/muromachi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 225–226, fig. 259
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Shubun_-_Reading_in_a_Bamboo_Grove_detail.jpg/1280px-Shubun_-_Reading_in_a_Bamboo_Grove_detail.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shubun_-_Reading_in_a_Bamboo_Grove_detail.jpg
+    license: Public domain
+    credit: Tenshō Shūbun
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 225–226, fig. 259
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 225–226, fig. 259
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 225–226, fig. 259
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q107045359
+    - source: history-of-japanese-art
+      locator: pp. 225–226, fig. 259
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q107045359
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 225–226, fig. 259
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 225–226, fig. 259
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q107045359
+    - source: history-of-japanese-art
+      locator: pp. 225–226, fig. 259
+  inventory_number:
+    - accessed: 2026-11-01
+      property: P217
+      wikidata: Q107045359

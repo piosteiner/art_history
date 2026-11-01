@@ -1,0 +1,40 @@
+public_id: 107542
+title: Portrait sculpture of Myōe Shōnin
+attribution_label: Anonymous
+created: before 1253
+kind: sculpture
+medium: Wood with inlaid eyes
+materials: [wood, rock crystal]
+dimensions: [83]
+institution: kozan-ji
+description_md: "[[person/myoe]] seated with his rosary in hand, his robes carefully arranged around him: by all accounts a handsome man, shown as such, with the missing tip of the right ear he cut off in 1196 in grief at not having lived in Shaka’s lifetime. The sculptor was less interested in a likeness than in the simple beauty of the face against a complicated pattern of folds. First mentioned in 1253. [[source/history-of-japanese-art|pp. 197–198, fig. 229]]"
+relationships:
+  - type: depicts_person
+    to: person/myoe
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 197–198, fig. 229
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 197–198, fig. 229
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 197–198, fig. 229
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 197–198, fig. 229
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 197–198, fig. 229
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 197–198, fig. 229
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 197–198, fig. 229
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 197–198, fig. 229

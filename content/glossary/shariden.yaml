@@ -1,0 +1,12 @@
+public_id: 107511
+name: shariden
+names:
+  - lang: ja
+    role: original
+    text: "{舎利殿|しゃりでん}"
+category: architecture
+definition: A relic hall, in which a relic of the Buddha is kept.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 213

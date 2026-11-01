@@ -1,0 +1,53 @@
+public_id: 107362
+title: Shariden (relic hall), Engakuji
+names:
+  - 円覚寺舎利殿
+  - lang: fr
+    role: translation
+    text: pavillon des reliquaires du temple Engaku
+attribution_label: Anonymous
+created: 1285
+created_span: uncertain
+kind: building
+medium: Wood, thatched roof
+materials: [wood]
+institution: engaku-ji
+location: [139.5489, 35.3393]
+description_md: "The earliest surviving building in the [[karayo]]: built in 1285 as the Buddha hall of the nunnery Taiheiji and moved to the Shōzokuin subtemple of Engakuji in 1563. Three bays square with a pent roof (mokoshi) around it and a two-tiered hipped-gable roof, now thatched where it once had tiles; inside, the rafters radiate from a hidden central point — a delicate, jewel-like interior. [[source/history-of-japanese-art|p. 215, fig. 249]]"
+wikidata_id: Q107020330
+metadata:
+  sources: [Wikidata Q107020330 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/kamakura
+    period: 15th century
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 215, fig. 249
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Engakuji%2C_shariden.jpg/1280px-Engakuji%2C_shariden.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Engakuji,_shariden.jpg
+    license: CC0
+    credit: Saigen Jiro
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 215, fig. 249
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 215, fig. 249
+  created:
+    - source: history-of-japanese-art
+      locator: p. 215, fig. 249
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q107020330
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 215, fig. 249
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 215, fig. 249

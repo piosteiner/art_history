@@ -1,0 +1,54 @@
+public_id: 107387
+name: Ashikaga Yoshimitsu
+names:
+  - lang: ja
+    role: original
+    text: 足利義満
+  - Ashikaga Shōgun Yoshimitsu
+  - Shōgun Yoshimitsu
+  - Yoshimitsu
+  - lang: zh
+    role: translation
+    text: 足利義滿
+  - lang: ko
+    role: translation
+    text: 아시카가 요시미쓰
+  - lang: ru
+    role: translation
+    text: Асикага Ёсимицу
+kind: person
+occupations: [samurai, shogun]
+birth: 1358-10-03
+death: 1408-06-09
+death_label: c. 9 June 1408
+wikidata_id: Q248381
+metadata:
+  sources: [Wikidata Q248381 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Yoshimitsu_Ashikaga_cropped.jpg/1280px-Yoshimitsu_Ashikaga_cropped.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yoshimitsu_Ashikaga_cropped.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "120773708"
+  idref: "102436746"
+  lc: nr91006977
+  ulan: "500127820"
+  viaf: "312149294367480522379"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q248381
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q248381
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q248381
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q248381

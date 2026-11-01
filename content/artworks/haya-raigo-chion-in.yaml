@@ -1,0 +1,61 @@
+public_id: 107357
+title: Descent of Amida and the Twenty-five Bodhisattvas (haya raigō)
+names:
+  - Raigo of Amida (Amitabha) and Twenty-five Attendants
+  - Welcoming of Amitābha and the Twenty-five Bodhisattvas
+  - Raigo of Amida and Twenty-five Attendants
+  - Descent of Amida and Twenty-Five Attendants
+  - Amida Nijūgo Bosatsu Raigōzu
+  - Haya-Raigō
+  - Rapid Descent
+  - Swift Welcome
+  - Swift Raigō
+  - lang: ja
+    role: translation
+    text: 阿弥陀二十五菩薩来迎図
+attribution_label: Anonymous
+created: early 13th century
+created_span: uncertain
+kind: kakemono
+medium: Gold and colour on silk
+materials: [silk, gold]
+dimensions: [145.1, 154.5]
+institution: chion-in
+description_md: "The classic [[haya-raigo]]: from the upper left a diagonal of white clouds carries a golden Amida and his host down to a monk seated at a low table with sutra rolls of indigo paper, Kannon kneeling towards him. Mountains with pines and flowering cherries fill the lower left; in the upper right a tiny building like the Byōdōin suggests Amida’s palace. [[source/history-of-japanese-art|p. 209, fig. 241]]"
+wikidata_id: Q107046356
+metadata:
+  sources: [Wikidata Q107046356 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 209, fig. 241
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Rapid_descent.jpg/1280px-Rapid_descent.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rapid_descent.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 209, fig. 241
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 209, fig. 241
+  created:
+    - source: history-of-japanese-art
+      locator: p. 209, fig. 241
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 209, fig. 241
+  dimensions:
+    - accessed: 2026-11-01
+      property: P2048
+      wikidata: Q107046356
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q107046356
+    - source: history-of-japanese-art
+      locator: p. 209, fig. 241

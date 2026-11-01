@@ -1,0 +1,54 @@
+public_id: 107348
+title: Tentōki and Ryūtōki, Kōfukuji
+names:
+  - Sculptures of Tentōki and Ryūtōki
+  - Riutoki and Tentoki
+  - lang: ja
+    role: translation
+    text: 天燈鬼・龍燈鬼立像
+creator: koben
+created: 1215
+kind: sculpture
+medium: Wood with paint and inlaid eyes
+materials: [wood, rock crystal]
+dimensions: [78.2]
+dimensions_note: Tentōki; Ryūtōki 77.8 cm
+institution: kofuku-ji
+description_md: "Two lantern-bearing demons made by [[artist/koben]] in 1215 for the monk Shōshō of Kōfukuji, according to an inscription; they stood before the main altar of the western kondō until it burnt. [[artist/koben]] joins the guardians of a gate, one open-mouthed and one closed, with mischievous little demons: squat Tentōki balances his lantern on his shoulder; Ryūtōki carries his on his head, a dragon coiled round his body — a petulant boy and a taunting brat in grotesque, humorous realism. [[source/history-of-japanese-art|p. 194, fig. 225]]"
+wikidata_id: Q107046110
+metadata:
+  sources: [Wikidata Q107046110 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 194, fig. 225
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 194, fig. 225
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 194, fig. 225
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q107046110
+    - source: history-of-japanese-art
+      locator: p. 194, fig. 225
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q107046110
+    - source: history-of-japanese-art
+      locator: p. 194, fig. 225
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 194, fig. 225
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 194, fig. 225
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 194, fig. 225

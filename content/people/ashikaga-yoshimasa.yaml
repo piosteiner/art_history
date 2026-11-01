@@ -1,0 +1,52 @@
+public_id: 107388
+name: Ashikaga Yoshimasa
+names:
+  - lang: ja
+    role: original
+    text: 足利 義政
+  - lang: ja
+    role: original
+    text: 足利義政
+  - lang: zh
+    role: translation
+    text: 足利义政
+  - lang: ko
+    role: translation
+    text: 아시카가 요시마사
+  - lang: ru
+    role: translation
+    text: Асикага Ёсимаса
+kind: person
+occupations: [samurai, shogun]
+birth: 1435-01-29
+death: 1490-02-05
+wikidata_id: Q447034
+metadata:
+  sources: [Wikidata Q447034 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Ashikaga_Yoshimasa.jpg/1280px-Ashikaga_Yoshimasa.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ashikaga_Yoshimasa.jpg
+    license: Public domain
+    credit: Attributed to Tosa Mitsunobu
+identifiers:
+  gnd: "120180537"
+  idref: "078156025"
+  lc: n83202510
+  viaf: "54972430"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q447034
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q447034
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q447034
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q447034

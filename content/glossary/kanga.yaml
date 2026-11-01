@@ -1,0 +1,12 @@
+public_id: 107497
+name: kanga
+names:
+  - lang: ja
+    role: original
+    text: "{漢画|かんが}"
+category: style
+definition: Chinese-style painting from the Muromachi period on — the later name for kara-e.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 229

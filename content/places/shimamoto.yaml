@@ -1,0 +1,29 @@
+public_id: 107317
+name: Shimamoto
+names:
+  - lang: ja
+    role: original
+    text: 島本町
+  - lang: ko
+    role: translation
+    text: 시마모토초
+kind: settlement
+parent: kyoto-prefecture
+country_code: JP
+location: [135.66297, 34.88383]
+wikidata_id: Q1347149
+metadata:
+  sources: [Wikidata Q1347149 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1347149
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1347149
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1347149

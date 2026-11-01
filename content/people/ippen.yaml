@@ -1,0 +1,45 @@
+public_id: 107382
+name: Ippen
+names:
+  - lang: ja
+    role: original
+    text: 一遍
+  - Ippen Shōnin
+  - Chishin
+  - Enshō Daishi
+  - Yugyō Shōnin
+kind: person
+occupations: [Buddhist monk]
+birth: 1239-03-28
+death: 1289-09-16
+wikidata_id: Q1056232
+metadata:
+  sources: [Wikidata Q1056232 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Ippen2.jpg/1280px-Ippen2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ippen2.jpg
+    license: CC BY-SA 4.0
+    credit: Utudanuki
+identifiers:
+  bnf: 16736374n
+  gnd: "119066300"
+  idref: "075723158"
+  lc: n82003546
+  viaf: "28407194"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1056232
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1056232
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1056232
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q1056232

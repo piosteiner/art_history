@@ -1,0 +1,73 @@
+public_id: 107373
+title: Landscape in the haboku technique
+names:
+  - Haboku sansui
+  - Haboku Sansui Zu
+  - Landscape with Ink Broken
+  - lang: ja
+    role: translation
+    text: 破墨山水図
+  - lang: zh
+    role: translation
+    text: 破墨山水圖
+creator: sesshu-toyo
+created: 1495
+kind: kakemono
+medium: Hanging scroll, ink on paper
+materials: [ink, paper]
+dimensions: [147.9, 32.7]
+institution: tokyo-national-museum
+inventory_number: A-282
+description_md: A [[haboku]] landscape by [[artist/sesshu-toyo]], given in 1495 to his pupil Josui Sōen of Engakuji as a farewell gift and a kind of certificate that his training was complete. Above it Sesshū wrote of his experiences in China and of Josetsu and Shūbun as his models; six Kyoto Zen monks added colophons. With incredible economy, splashed ink suggests land, trees, mountains, two figures in a boat and a saké house with its flag. [[source/history-of-japanese-art|p. 227, fig. 261]]
+wikidata_id: Q28418167
+metadata:
+  sources: [Wikidata Q28418167 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/muromachi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 227, fig. 261
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Sesshu_-_Haboku-Sansui.jpg/1280px-Sesshu_-_Haboku-Sansui.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sesshu_-_Haboku-Sansui.jpg
+    license: Public domain
+    credit: Sesshū Tōyō
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 227, fig. 261
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 227, fig. 261
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q28418167
+    - source: history-of-japanese-art
+      locator: p. 227, fig. 261
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q28418167
+    - source: history-of-japanese-art
+      locator: p. 227, fig. 261
+  materials:
+    - accessed: 2026-11-01
+      property: P186
+      wikidata: Q28418167
+    - source: history-of-japanese-art
+      locator: p. 227, fig. 261
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 227, fig. 261
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q28418167
+    - source: history-of-japanese-art
+      locator: p. 227, fig. 261
+  inventory_number:
+    - accessed: 2026-11-01
+      property: P217
+      wikidata: Q28418167

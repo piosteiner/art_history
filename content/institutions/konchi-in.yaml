@@ -1,0 +1,30 @@
+public_id: 107328
+name: Konchi-in
+names:
+  - lang: fr
+    role: translation
+    text: temple Konchi
+  - lang: ja
+    role: translation
+    text: 金地院
+founded: 1605
+place: kyoto
+wikidata_id: Q11646614
+metadata:
+  sources: [Wikidata Q11646614 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/251218_Konchi-in_Kyoto_Japan07s3.jpg/1280px-251218_Konchi-in_Kyoto_Japan07s3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:251218_Konchi-in_Kyoto_Japan07s3.jpg
+    license: CC BY-SA 4.0
+    credit: 663highland
+identifiers:
+  viaf: "257267101"
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q11646614
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q11646614

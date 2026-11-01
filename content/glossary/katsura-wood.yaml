@@ -1,0 +1,13 @@
+public_id: 107500
+name: katsura wood
+names:
+  - lang: ja
+    role: original
+    text: "{桂|かつら}"
+category: material
+parent: wood
+definition: "The wood of the katsura tree: dense and even-grained, ideal for carving."
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 190

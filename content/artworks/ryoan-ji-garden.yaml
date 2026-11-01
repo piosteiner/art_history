@@ -1,0 +1,29 @@
+public_id: 107544
+title: Rock garden, Ryōanji
+attribution_label: Anonymous
+created: c. 1500
+created_span: uncertain
+kind: garden
+medium: Stones, pebbles, moss
+institution: ryoan-ji
+location: [135.71833, 35.03444]
+description_md: "The most famous [[karesansui]]. The temple was founded in 1450 by [[person/hosokawa-katsumoto]], one of the instigators of the Ōnin War, and rebuilt by 1488 by his son Masamoto; the garden, 23 by 9 metres, existed by 1500 at the latest — the present one dates from after a fire of the late eighteenth century. Fifteen rocks set in raked pebbles: a seascape, or a tigress leading her cubs across a river. Traditionally credited to [[artist/soami]] without evidence; two [[kawaramono]], Kotarō and Seijirō, inscribed their names on a stone. [[source/history-of-japanese-art|pp. 215–216, fig. 250]]"
+relationships:
+  - type: associated_with
+    to: movement/muromachi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 215–216, fig. 250
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 215–216, fig. 250
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 215–216, fig. 250
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 215–216, fig. 250
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 215–216, fig. 250

@@ -1,0 +1,38 @@
+public_id: 107327
+name: Taizō-in
+names:
+  - Taizoin
+  - Taizoin Zen Buddhist Temple
+  - lang: ja
+    role: translation
+    text: 退蔵院
+  - lang: zh
+    role: translation
+    text: 退藏院
+founded: 1404
+place: kyoto
+location: [135.71944, 35.02222]
+website_url: http://www.taizoin.com/
+wikidata_id: Q3514106
+metadata:
+  sources: [Wikidata Q3514106 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Myoshinji_taizoin01n2040.jpg/1280px-Myoshinji_taizoin01n2040.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Myoshinji_taizoin01n2040.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  viaf: "260555881"
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q3514106
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q3514106
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q3514106

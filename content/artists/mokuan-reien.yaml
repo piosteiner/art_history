@@ -1,0 +1,28 @@
+public_id: 107376
+name: Mokuan Reien
+names:
+  - lang: ja
+    role: original
+    text: 黙庵
+  - Yu'an
+  - lang: zh
+    role: translation
+    text: 默庵灵渊
+birth: 13th century
+death: 1345
+wikidata_id: Q3319422
+metadata:
+  sources: [Wikidata Q3319422 (retrieved 2026-11-01)]
+identifiers:
+  gnd: "140800905"
+  ulan: "500121296"
+  viaf: "107786016"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3319422
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3319422

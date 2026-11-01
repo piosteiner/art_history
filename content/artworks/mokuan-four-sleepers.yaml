@@ -1,0 +1,57 @@
+public_id: 107366
+title: Four Sleepers
+names:
+  - lang: ja
+    role: translation
+    text: 四睡図
+  - lang: zh
+    role: translation
+    text: 四睡图
+creator: mokuan-reien
+created: 14th century
+created_span: uncertain
+kind: kakemono
+medium: Hanging scroll, ink on paper
+materials: [ink, paper]
+dimensions: [70, 36]
+institution: maeda-ikutokukai
+description_md: "Kanzan and Jittoku asleep in a tangle with the monk Bukan and his tiger, by [[artist/mokuan-reien]], who was ordained in Kamakura, went to China around 1327 and died there about 1345, admired as “a second Mu Qi”. Medium grey lines for the bodies, fine strokes for the faces, dark accents for details, a light wash for the setting — a more sophisticated use of ink than Kaō’s. The colophon by a Chinese monk reads: “Old Fenggan embraces his tiger and sleeps, all huddled together with Shide and Hanshan.” [[source/history-of-japanese-art|pp. 222–223, fig. 257]]"
+wikidata_id: Q11420078
+metadata:
+  sources: [Wikidata Q11420078 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/nanbokucho-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 222–223, fig. 257
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/%E5%9B%9B%E7%9D%A1%E5%9C%96_%E7%9C%9E%E8%97%9D.jpg/1280px-%E5%9B%9B%E7%9D%A1%E5%9C%96_%E7%9C%9E%E8%97%9D.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E5%9B%9B%E7%9D%A1%E5%9C%96_%E7%9C%9E%E8%97%9D.jpg
+    license: Public domain
+    credit: 眞藝（芸阿弥）
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 222–223, fig. 257
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q11420078
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 222–223, fig. 257
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 222–223, fig. 257
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 222–223, fig. 257
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 222–223, fig. 257
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 222–223, fig. 257
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 222–223, fig. 257

@@ -1,0 +1,38 @@
+public_id: 107555
+title: Yoroi suit of armour
+attribution_label: Anonymous
+created: early 14th century
+created_span: uncertain
+kind: yoroi
+medium: Lacquered iron and leather, silk, stencilled doeskin, gilt copper
+materials: [iron, lacquer, leather, silk, gilt copper]
+dimensions: [95.3]
+dimensions_note: height of the ensemble
+institution: metropolitan-museum-of-art
+inventory_number: 14.100.121
+description_md: "A [[yoroi]] of the kind a daimyo would wear for battle: a densely woven padding of lacquered iron and leather scales laced with silk, the decorative parts of gilt copper and doeskin; on the breastplate a stencilled, coloured image of Fudō. The decoration is intact, so the armour probably never took a blow — great daimyo, like their European equals, usually directed battles from a distance. [[source/history-of-japanese-art|pp. 176–178, fig. 204]]"
+relationships:
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 176–178, fig. 204
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 176–178, fig. 204
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 176–178, fig. 204
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 176–178, fig. 204
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 176–178, fig. 204
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 176–178, fig. 204
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 176–178, fig. 204

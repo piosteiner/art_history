@@ -4,6 +4,24 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-01
 
+### Data: the works of Mason, chapter 4 (Kamakura to Muromachi) + the book's figures as private reference images
+- **What:** 64 works after the figures of Mason, *History of Japanese Art*, pp. 166–234 — 28 made from their Wikidata
+  items, 4 existing entries completed (Niō of the Nandaimon, Kūya, Muchaku and Seshin, the Kinkakuji and Ginkakuji
+  entries), the rest by hand: Yoritomo portraits, the Rekihaku rakuchū rakugai screens, armour, lacquer, textiles and
+  ceramics (Met, Kyoto and Tokyo museums), Go Toba's testament, the Heiji scroll (MFA), the rebuilt Tōdaiji and
+  Kōfukuji with the Kei school (Unkei, Kaikei, Kōkei, Jōkei, Kōshō, Kōben, Tankei), Myōe and Kōzanji, Pure Land
+  biographies and paintings (Hōnen, Shinran, Ippen, Taima mandala, raigō, rokudō-e, hell and illness scrolls), and
+  Zen (Tōfukuji, Engakuji, Ryōanji and Daisenin gardens, Minchō, Kaō, Mokuan, Mu Qi, Josetsu, Shūbun, Sesshū,
+  Sōami, Motonobu, the Tōgudō, tenmoku bowls) and the Kasuga deer mandala. Caption facts cited "Mason, p. N, fig. N";
+  descriptions in our own words; Mason's owners kept where Wikidata names the museum a work is deposited in.
+  New: 23 holders, 20 people (Yoritomo, Go Toba, Hōnen, Shinran, Ippen, Myōe, Chōgen, the Ashikaga shoguns …),
+  Princess Chūjō, the artists Jōkei, Mu Qi, Kaō, Mokuan, Sōami, Kanō Motonobu, the polity Southern Song, 42
+  glossary terms (Zen, karesansui, sanmon, karayō, haboku, shigajiku, dōshakuga, rokudō-e, haya/yamagoshi raigō,
+  tenmoku, Seto and Shigaraki ware, yoroi …). Not entered: the uncaptioned frontispiece, the Tōgudō plan (fig. 267).
+- **Private images:** the 71 figures of chapter 4 cropped into `private_images` for the owner's account (now 238).
+- **Why:** owner, 2026-11-01 ("keep working through all chapters"). **Revert:** delete the works citing
+  `history-of-japanese-art` with figs. 201–271; `DELETE FROM private_images WHERE owner_id = 1 AND locator ~ 'fig\. (2[0-6][0-9]|27[01]|203a|203b)$'`.
+
 ### Data: the works of Mason, chapter 3 (Heian) + the book's figures as private reference images
 - **What:** 51 works after the figures of Mason, *History of Japanese Art*, pp. 100–165 — 35 made from their Wikidata
   items (with Commons photographs), 16 by hand: court life (Shishinden, lacquer box, saddle, food stand, Chūsonji altar

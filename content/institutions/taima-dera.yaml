@@ -1,0 +1,46 @@
+public_id: 107335
+name: Taima-dera Temple
+names:
+  - Taima-dera
+  - lang: ja
+    role: translation
+    text: 當麻寺
+kind: temple
+founded: 7th century
+place: katsuragi
+location: [135.69464, 34.51608]
+address: 奈良県葛城市當麻1263
+website_url: https://www.taimadera.org/
+wikidata_id: Q478979
+metadata:
+  sources: [Wikidata Q478979 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Taimadera_Mandarahall_201905b.jpg/1280px-Taimadera_Mandarahall_201905b.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Taimadera_Mandarahall_201905b.jpg
+    license: CC BY-SA 4.0
+    credit: 8-hachiro
+identifiers:
+  gnd: 7595690-1
+  lc: n83064605
+  viaf: "159483509"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q478979
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q478979
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q478979
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q478979
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q478979

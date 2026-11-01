@@ -1,0 +1,46 @@
+public_id: 107392
+name: Chōgen
+names:
+  - kind: art_name
+    role: alternative
+    text: 俊乗房
+  - lang: ja
+    role: original
+    text: 重源
+  - Shunjōbō Chōgen
+  - Chogen
+  - Chougen
+kind: person
+occupations: [Buddhist monk, monk]
+birth: 1121
+death: 1206-07-19
+wikidata_id: Q679462
+metadata:
+  sources: [Wikidata Q679462 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Todaiji_Monastery_Portrait_of_Chogen_%28427%29.jpg/1280px-Todaiji_Monastery_Portrait_of_Chogen_%28427%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Todaiji_Monastery_Portrait_of_Chogen_(427).jpg
+    license: Public domain
+    credit: Imperial Japanese Commission to the Panama-Pacific International Exposition
+identifiers:
+  gnd: "144043432"
+  idref: "139047115"
+  lc: n83181490
+  viaf: "96576900"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q679462
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q679462
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q679462
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q679462

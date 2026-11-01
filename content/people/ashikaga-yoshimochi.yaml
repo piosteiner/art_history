@@ -1,0 +1,55 @@
+public_id: 107389
+name: Ashikaga Yoshimochi
+names:
+  - lang: ja
+    role: original
+    text: 足利 義持
+  - Dōsen
+  - Yoshimochi
+  - Kenzan
+  - lang: ja
+    role: original
+    text: 足利義持
+  - lang: zh
+    role: translation
+    text: 足利义持
+  - lang: ko
+    role: translation
+    text: 아시카가 요시모치
+  - lang: ru
+    role: translation
+    text: Асикага Ёсимоти
+kind: person
+occupations: [samurai]
+birth: 1386-03-20
+death: 1428-02-12
+wikidata_id: Q466287
+metadata:
+  sources: [Wikidata Q466287 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Ashikaga_Yoshimochi.jpg/1280px-Ashikaga_Yoshimochi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ashikaga_Yoshimochi.jpg
+    license: Public domain
+    credit: Attributed to Tosa Yukihide
+identifiers:
+  idref: "127233903"
+  lc: nr2003029737
+  ulan: "500127819"
+  viaf: "29479123"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q466287
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q466287
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q466287
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q466287

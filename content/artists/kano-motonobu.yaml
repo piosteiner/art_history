@@ -1,0 +1,46 @@
+public_id: 107378
+name: Kanō Motonobu
+names:
+  - lang: ja
+    role: original
+    text: 狩野 元信
+  - Kano Motonobu
+  - Motonobu
+  - Genshin
+  - Eisen
+  - Motonobu Kāno
+  - Ko-Hōgen
+  - Motonobu (1476)
+  - Kanou Motonobu
+  - lang: ja
+    role: original
+    text: 狩野元信
+  - lang: ru
+    role: translation
+    text: Кано Мотонобу
+birth: 1476-09-06
+death: 1559-11-15
+wikidata_id: Q1078015
+metadata:
+  sources: [Wikidata Q1078015 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/32/Kano_White-robed_Kannon%2C_Bodhisattva_of_Compassion.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kano_White-robed_Kannon,_Bodhisattva_of_Compassion.jpg
+    license: Public domain
+    credit: Kanō Motonobu
+identifiers:
+  gnd: "133274241"
+  idref: "172499534"
+  lc: nr89015287
+  rkd: "442394"
+  ulan: "500121002"
+  viaf: "52873141"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1078015
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1078015

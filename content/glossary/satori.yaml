@@ -1,0 +1,13 @@
+public_id: 107509
+name: satori
+names:
+  - lang: ja
+    role: original
+    text: "{悟り|さとり}"
+category: other
+parent: zen
+definition: Sudden Enlightenment in Zen, an ineffable experience of becoming one with the universe.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 212

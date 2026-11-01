@@ -1,0 +1,13 @@
+public_id: 107510
+name: Seto ware
+names:
+  - lang: ja
+    role: original
+    text: "{瀬戸焼|せとやき}"
+category: material
+parent: stoneware
+definition: "Stoneware from the kilns around Seto (Aichi prefecture), the most important of the six old kilns: from the late thirteenth century Ko Seto, Old Seto, with glazes imitating Chinese celadon and Jian ware — the source of setomono, a general word for ceramics."
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 179–180

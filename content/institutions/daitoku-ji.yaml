@@ -1,0 +1,52 @@
+public_id: 107326
+name: Daitoku-ji Temple
+names:
+  - Daitoku-ji
+  - lang: fr
+    role: translation
+    text: temple Daitoku
+  - lang: ja
+    role: translation
+    text: 大徳寺
+  - lang: zh
+    role: translation
+    text: 大德寺
+  - lang: ru
+    role: translation
+    text: Дайтоку
+kind: temple
+founded: 1315
+place: kyoto
+location: [135.74611, 35.04389]
+address: 京都府京都市北区紫野大徳寺町53
+wikidata_id: Q901256
+metadata:
+  sources: [Wikidata Q901256 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/251230_Daitoku-ji_Kyoto_Japan01s3.jpg/1280px-251230_Daitoku-ji_Kyoto_Japan01s3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:251230_Daitoku-ji_Kyoto_Japan01s3.jpg
+    license: CC BY-SA 4.0
+    credit: 663highland
+identifiers:
+  viaf: "312916572"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q901256
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q901256
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q901256
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q901256
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q901256

@@ -1,0 +1,38 @@
+public_id: 107538
+title: White-robed Kannon
+creator: mincho
+created: 1421
+kind: kakemono
+medium: Hanging scroll, ink on paper
+materials: [ink, paper]
+dimensions: [60.9, 27.6]
+institution: moa-museum-of-art
+description_md: "A [[doshakuga]] by [[artist/mincho]]: Kannon in a white robe sits informally in her grotto and gazes out over the ocean, a beautiful, languid and feminine figure whose divinity is suggested only by crown and halo — a circle of mist through which the rock can be seen. [[source/history-of-japanese-art|pp. 217–218, fig. 253]]"
+relationships:
+  - type: associated_with
+    to: movement/muromachi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 217–218, fig. 253
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 217–218, fig. 253
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 217–218, fig. 253
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 217–218, fig. 253
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 217–218, fig. 253
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 217–218, fig. 253
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 217–218, fig. 253
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 217–218, fig. 253

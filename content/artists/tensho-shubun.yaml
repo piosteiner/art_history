@@ -1,0 +1,16 @@
+public_id: 107369
+name: Tenshō Shūbun
+birth: 1414
+death: 1463
+wikidata_id: Q2706164
+metadata:
+  sources: [Wikidata Q2706164 (retrieved 2026-11-01)]
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2706164
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2706164

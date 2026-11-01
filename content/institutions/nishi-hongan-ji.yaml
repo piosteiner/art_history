@@ -1,0 +1,56 @@
+public_id: 107321
+name: Nishi Hongan-ji Temple
+names:
+  - Nishi Honganji
+  - Honpa Honganji
+  - Nishihonganji
+  - Nishi-Hongan-ji
+  - Nishi Hongwan-ji
+  - Nishi Hongwanji
+  - Hongwanji
+  - Nishi Hongan-ji
+  - lang: ja
+    role: translation
+    text: 西本願寺
+  - lang: ko
+    role: translation
+    text: 니시혼간지
+kind: temple
+founded: 1591
+place: kyoto
+location: [135.75161, 34.99205]
+address: 京都府京都市下京区堀川通花屋町下ル本願寺門前町60
+website_url: https://www.hongwanji.kyoto/
+wikidata_id: Q1146038
+metadata:
+  sources: [Wikidata Q1146038 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/170216_Nishi_Honganji_Kyoto_Japan03s4.jpg/1280px-170216_Nishi_Honganji_Kyoto_Japan03s4.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:170216_Nishi_Honganji_Kyoto_Japan03s4.jpg
+    license: CC BY-SA 4.0
+    credit: 663highland
+identifiers:
+  idref: 07553102X
+  lc: n82148028
+  viaf: "192767322"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1146038
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1146038
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q1146038
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1146038
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1146038

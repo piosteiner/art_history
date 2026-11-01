@@ -1,0 +1,73 @@
+public_id: 107355
+title: Ippen Hijiri-e (Pictures of the Holy Man Ippen)
+names:
+  - Ippen Shōnin Eden
+  - Yugyō Shonin Engi-e
+  - Ippen Hijiri-e
+  - lang: fr
+    role: translation
+    text: Biographie illustrée du moine itinérant Ippen
+  - lang: ja
+    role: translation
+    text: 一遍聖絵
+  - lang: zh
+    role: translation
+    text: 一遍聖繪
+  - lang: ko
+    role: translation
+    text: 일편성회
+creator: en-i
+created: 1299
+kind: emakimono
+medium: Handscrolls, ink and colour on paper (silk)
+materials: [silk, paint, India ink, ink]
+dimensions: [38.2]
+institution: kankiko-ji
+description_md: "Twelve scrolls on the life and travels of [[person/ippen]] (1239–1289), founder of the Ji school, who wandered Japan spreading the nenbutsu and the ecstatic dancing nenbutsu (nenbutsu odori). The text was composed in 1299 by his younger brother Shōkai; the illustrations are by [[artist/en-i]], perhaps a monk-painter or a professional. Accurate views of well-known places make it a valuable historical document, and Eni gives it a lyric quality: Ippen and his followers crossing the snow-covered fields of the Kantō in soft browns and greens, and the throng gathered in two pavilions for a dancing nenbutsu. [[source/history-of-japanese-art|pp. 203–205, figs. 236–237]]"
+wikidata_id: Q2904124
+metadata:
+  sources: [Wikidata Q2904124 (retrieved 2026-11-01)]
+relationships:
+  - type: depicts_person
+    to: person/ippen
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 203–205, figs. 236–237
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 203–205, figs. 236–237
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7e/Ippen_Biography_3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ippen_Biography_3.jpg
+    license: Public domain
+    credit: En'i (円伊)
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 203–205, figs. 236–237
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 203–205, figs. 236–237
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q2904124
+    - source: history-of-japanese-art
+      locator: pp. 203–205, figs. 236–237
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q2904124
+    - source: history-of-japanese-art
+      locator: pp. 203–205, figs. 236–237
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 203–205, figs. 236–237
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 203–205, figs. 236–237
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 203–205, figs. 236–237

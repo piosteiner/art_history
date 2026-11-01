@@ -1,0 +1,51 @@
+public_id: 107360
+title: Yamai no sōshi (Notebook of Illnesses)
+names:
+  - Yamai no Sōshi
+  - lang: fr
+    role: translation
+    text: Rouleau des maladies
+  - lang: ja
+    role: translation
+    text: 病草紙
+  - lang: ko
+    role: translation
+    text: 야마이노소시
+attribution_label: Anonymous
+created: late 12th century
+created_span: uncertain
+kind: emakimono
+medium: Handscroll, colour on paper
+materials: [paper]
+dimensions: [25.8]
+description_md: Scenes of the ills that befall human beings, from toothache to hallucinations, in a small format (a sheet only about 27 cm high) for intimate viewing. In a bedroom with three soundly sleeping women, a sufferer from insomnia props herself on one arm, counting on her fingers; the single black lamp stand echoes her wakeful figure. [[source/history-of-japanese-art|p. 211, fig. 244]]
+wikidata_id: Q3443326
+metadata:
+  sources: [Wikidata Q3443326 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/insei-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 211, fig. 244
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8d/Yamai_no_Soshi_-_Insomnia.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Yamai_no_Soshi_-_Insomnia.JPG
+    license: Public domain
+    credit: Unknown artist
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 211, fig. 244
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 211, fig. 244
+  created:
+    - source: history-of-japanese-art
+      locator: p. 211, fig. 244
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 211, fig. 244
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 211, fig. 244

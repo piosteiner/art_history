@@ -1,0 +1,18 @@
+public_id: 107339
+name: Fujiwara no Takanobu
+given_name: Fujiwara no
+family_name: Takanobu
+birth: 1142
+death: 1205-03-26
+wikidata_id: Q2245281
+metadata:
+  sources: [Wikidata Q2245281 (retrieved 2026-11-01)]
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2245281
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2245281

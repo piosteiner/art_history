@@ -1,0 +1,16 @@
+public_id: 107363
+name: Minchō
+birth: 1352
+death: 1431-10-05
+wikidata_id: Q10917118
+metadata:
+  sources: [Wikidata Q10917118 (retrieved 2026-11-01)]
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q10917118
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q10917118

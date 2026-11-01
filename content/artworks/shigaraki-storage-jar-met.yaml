@@ -1,0 +1,36 @@
+public_id: 107546
+title: Storage jar (Shigaraki)
+attribution_label: Anonymous
+created: 1301/1500
+kind: jar
+medium: Stoneware with natural ash glaze
+materials: [Shigaraki ware]
+dimensions: [46.7]
+institution: metropolitan-museum-of-art
+inventory_number: 1975.268.428
+description_md: "A storage jar of [[shigaraki-ware]], built up from coils of clay: the unglazed body has fired brick-red from the iron in the clay, while ash falling on the shoulders in the kiln has formed a grey glaze and a bib of shiny green. Its roughness and simplicity answered the Zen aesthetic of [[wabi]]. [[source/history-of-japanese-art|p. 180, fig. 209]]"
+relationships:
+  - type: associated_with
+    to: movement/muromachi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 180, fig. 209
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 180, fig. 209
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 180, fig. 209
+  created:
+    - source: history-of-japanese-art
+      locator: p. 180, fig. 209
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 180, fig. 209
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 180, fig. 209
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 180, fig. 209

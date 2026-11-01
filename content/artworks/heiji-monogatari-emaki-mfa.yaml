@@ -1,0 +1,54 @@
+public_id: 107342
+title: "Heiji monogatari emaki: Night Attack on the Sanjō Palace"
+names:
+  - Night Attack on the Sanjô Palace, from the Illustrated Scrolls of the Events of the Heiji Era (Heiji monogatari emaki)
+  - lang: ja
+    role: translation
+    text: 平治物語絵巻　 三条殿夜討巻
+  - Heiji monogatari emaki
+attribution_label: Anonymous
+created: second half of the 13th century
+created_span: uncertain
+kind: emakimono
+medium: Handscroll, ink and colour on paper
+materials: [ink, paper]
+dimensions: [41.3]
+institution: museum-of-fine-arts-boston
+inventory_number: "11.4000"
+description_md: "The illustrated tale of the events of 1160, when Minamoto no Yoshitomo and Fujiwara no Nobuyori (1133–1160) imprisoned the retired emperor [[person/emperor-go-shirakawa]] — a coup crushed by [[person/taira-no-kiyomori]]. Nobuyori’s troops attack the Sanjō Palace at night, bundle Go Shirakawa into a carriage and set the buildings on fire; servants and ladies jump into a well, others are trampled by horses. The scroll is unusually long and uninterrupted by text: the flames fill the upper part, the human action the lower, in bright colours and free brushwork. The artist owes a debt to the Ban Dainagon scroll; nothing is known of him. [[source/history-of-japanese-art|pp. 183–184, fig. 213]]"
+wikidata_id: Q126673828
+metadata:
+  sources: [Wikidata Q126673828 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/kamakura-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 183–184, fig. 213
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Heiji_Monogatari_Emaki_-_Sanjo_scroll_part_5_-_v2.jpg/1280px-Heiji_Monogatari_Emaki_-_Sanjo_scroll_part_5_-_v2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Heiji_Monogatari_Emaki_-_Sanjo_scroll_part_5_-_v2.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 183–184, fig. 213
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 183–184, fig. 213
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 183–184, fig. 213
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 183–184, fig. 213
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 183–184, fig. 213
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q126673828
+    - source: history-of-japanese-art
+      locator: pp. 183–184, fig. 213

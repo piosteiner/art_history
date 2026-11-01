@@ -1,0 +1,36 @@
+public_id: 107528
+title: Pair of men’s trousers (hakama)
+attribution_label: Anonymous
+created: 15th century
+created_span: uncertain
+kind: hakama
+medium: Silk
+materials: [silk]
+dimensions: [131.5, 47.5]
+institution: kyoto-national-museum
+description_md: "A rare surviving textile of the period: [[hakama]] woven of bronze and white silk with floral roundels in green, yellow and orange, once worn by a samurai of high rank with a short, starched jacket bearing his family crest (mon). [[source/history-of-japanese-art|p. 178, fig. 207]]"
+relationships:
+  - type: associated_with
+    to: movement/muromachi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 178, fig. 207
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 207
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 207
+  created:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 207
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 207
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 207
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 178, fig. 207

@@ -1,0 +1,53 @@
+public_id: 107338
+name: Eikan-dō Zenrin-ji Temple
+names:
+  - Zenrin-ji
+  - Eikandō Zenrin-ji
+  - Eikan-dō Zenrin-ji
+  - lang: ja
+    role: translation
+    text: 禅林寺
+  - lang: zh
+    role: translation
+    text: 禪林寺
+  - lang: ru
+    role: translation
+    text: Эйкан-до
+kind: temple
+founded: 853
+place: kyoto
+location: [135.79529, 35.01453]
+address: 京都府京都市左京区永観堂町48
+website_url: https://www.eikando.or.jp/
+wikidata_id: Q2380134
+metadata:
+  sources: [Wikidata Q2380134 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Eikan-do_Zenrin-ji%2C_November_2016_-03.jpg/1280px-Eikan-do_Zenrin-ji%2C_November_2016_-03.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Eikan-do_Zenrin-ji,_November_2016_-03.jpg
+    license: CC BY-SA 4.0
+    credit: Martin Falbisoner
+identifiers:
+  gnd: 104977387X
+  viaf: "153149366415385602101"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q2380134
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q2380134
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q2380134
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q2380134
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q2380134
