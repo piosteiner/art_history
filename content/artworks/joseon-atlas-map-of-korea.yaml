@@ -1,0 +1,37 @@
+public_id: 108672
+title: Map of Korea from a portable atlas
+attribution_label: Anonymous
+created: 19th century
+created_span: uncertain
+kind: map
+medium: Ink and colours on paper
+materials: [ink, paper]
+dimensions: [92.5, 50.5]
+description_md: A typical Korean atlas held a Sinocentric world map, maps of China, Japan, the Ryukyu islands, Korea and its eight provinces, on oiled paper, folded and bound in a stiff cover — the maps of Korea usually after the geographical encyclopaedia of 1487. [[source/portal-2000|pp. 114–115, fig. 59]]
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 114–115, fig. 59
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 114–115, fig. 59
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 114–115, fig. 59
+  medium:
+    - source: portal-2000
+      locator: pp. 114–115, fig. 59
+  created:
+    - source: portal-2000
+      locator: pp. 114–115, fig. 59
+  materials:
+    - source: portal-2000
+      locator: pp. 114–115, fig. 59
+  dimensions:
+    - source: portal-2000
+      locator: pp. 114–115, fig. 59

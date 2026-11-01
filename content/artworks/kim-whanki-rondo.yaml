@@ -1,0 +1,34 @@
+public_id: 108680
+title: Rondo
+creator: kim-whanki
+created: 1938
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [61, 72]
+description_md: "An early abstract painting by [[artist/kim-whanki]] (1913–1974), perhaps Korea’s most famous twentieth-century painter, trained in Tokyo in the mid-1930s: geometric abstraction after Western models. [[source/portal-2000|pp. 177–178, fig. 100]]"
+relationships:
+  - type: associated_with
+    to: movement/japanese-colonial-period-korea
+    sources:
+      - source: portal-2000
+        locator: pp. 177–178, fig. 100
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 177–178, fig. 100
+  medium:
+    - source: portal-2000
+      locator: pp. 177–178, fig. 100
+  created:
+    - source: portal-2000
+      locator: pp. 177–178, fig. 100
+  creator:
+    - source: portal-2000
+      locator: pp. 177–178, fig. 100
+  materials:
+    - source: portal-2000
+      locator: pp. 177–178, fig. 100
+  dimensions:
+    - source: portal-2000
+      locator: pp. 177–178, fig. 100

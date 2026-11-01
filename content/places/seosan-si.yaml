@@ -1,0 +1,35 @@
+public_id: 108290
+name: Seosan-si
+names:
+  - lang: ja
+    role: translation
+    text: 瑞山市
+  - lang: ko
+    role: original
+    text: 서산시
+  - lang: fr
+    role: translation
+    text: Seosan
+  - lang: ru
+    role: translation
+    text: Сосан
+kind: settlement
+parent: south-korea
+country_code: KR
+location: [126.45222, 36.78167]
+wikidata_id: Q27267460
+metadata:
+  sources: [Wikidata Q27267460 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q27267460
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q27267460
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q27267460

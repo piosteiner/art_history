@@ -1,0 +1,72 @@
+public_id: 108284
+title: Rock engravings at Pan’gudae
+names:
+  - Bangudae Petroglyphs
+  - Petroglyphs of Bangudae Terrace in Daegok-ri, Ulju
+  - lang: fr
+    role: translation
+    text: Pétroglyphes de Bangudae
+  - lang: de
+    role: translation
+    text: Petroglyphen von Bangudae
+  - lang: es
+    role: translation
+    text: Petroglifos de Bangudae
+  - lang: ja
+    role: translation
+    text: 盤亀台岩刻画
+  - lang: zh
+    role: translation
+    text: 盘龟台岩刻画
+  - lang: ko
+    role: translation
+    text: 울주 대곡리 반구대 암각화
+  - lang: ru
+    role: translation
+    text: петроглифы на Пангудэ в Тэгонни
+attribution_label: Anonymous
+created: 4th century BCE–3rd century BCE
+created_span: uncertain
+kind: petroglyph
+medium: Rock engraving
+materials: [stone]
+location: [129.17772, 35.60402]
+description_md: "The best-known of the rock-art sites of southern Korea, on a river bank near Ulsan: animals, fish, whales, boats, hunting and fishing scenes, pecked, ground and engraved in a “silhouette” and an “x-ray” style; Sasse has compared them with Arctic rock art. A dam now submerges the panel for much of the year. [[source/portal-2000|pp. 33–34, fig. 14]]"
+wikidata_id: Q483714
+metadata:
+  sources: [Wikidata Q483714 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/ulsan
+  - type: associated_with
+    to: movement/korean-bronze-age
+    sources:
+      - source: portal-2000
+        locator: pp. 33–34, fig. 14
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/%EC%9A%B8%EC%A3%BC_%EB%8C%80%EA%B3%A1%EB%A6%AC_%EB%B0%98%EA%B5%AC%EB%8C%80_%EC%95%94%EA%B0%81%ED%99%94.jpg/1280px-%EC%9A%B8%EC%A3%BC_%EB%8C%80%EA%B3%A1%EB%A6%AC_%EB%B0%98%EA%B5%AC%EB%8C%80_%EC%95%94%EA%B0%81%ED%99%94.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%EC%9A%B8%EC%A3%BC_%EB%8C%80%EA%B3%A1%EB%A6%AC_%EB%B0%98%EA%B5%AC%EB%8C%80_%EC%95%94%EA%B0%81%ED%99%94.jpg
+    license: CC BY-SA 4.0
+    credit: Korea Heritage Service
+identifiers:
+  viaf: "85144647636806825414"
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 33–34, fig. 14
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q483714
+  medium:
+    - source: portal-2000
+      locator: pp. 33–34, fig. 14
+  created:
+    - source: portal-2000
+      locator: pp. 33–34, fig. 14
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q483714
+  materials:
+    - source: portal-2000
+      locator: pp. 33–34, fig. 14

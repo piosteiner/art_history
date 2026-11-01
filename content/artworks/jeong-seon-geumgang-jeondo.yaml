@@ -1,0 +1,70 @@
+public_id: 108303
+title: Complete View of the Diamond Mountains
+names:
+  - Geumgang jeondo
+  - lang: zh
+    role: translation
+    text: 金刚全图
+  - lang: ko
+    role: translation
+    text: 정선 필 금강전도
+creator: jeong-seon
+created: 1734
+kind: kakemono
+medium: Ink and colours on paper
+materials: [ink, paper]
+dimensions: [130.7, 94.1]
+institution: ho-am-art-museum
+description_md: "[[artist/jeong-seon]] (1676–1759), who spread the Southern School style in Korea and developed “true-view” landscapes of actual places (chin’gyŏng sansu): the Diamond Mountains, a needle-forest of white peaks around a darker earthen core. In the nineteenth century the poet and calligrapher [[person/kim-jeong-hui]] (Ch’usa) and his followers carried on the Southern School style. [[source/portal-2000|p. 131, fig. 68]]"
+wikidata_id: Q5554841
+metadata:
+  sources: [Wikidata Q5554841 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: p. 131, fig. 68
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: p. 131, fig. 68
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Jeong_Seon-Geumgangjeondo.jpg/1280px-Jeong_Seon-Geumgangjeondo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jeong_Seon-Geumgangjeondo.jpg
+    license: Public domain
+    credit: Jeong Seon
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 131, fig. 68
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q5554841
+  medium:
+    - source: portal-2000
+      locator: p. 131, fig. 68
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q5554841
+    - source: portal-2000
+      locator: p. 131, fig. 68
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q5554841
+  materials:
+    - source: portal-2000
+      locator: p. 131, fig. 68
+  dimensions:
+    - accessed: 2026-11-01
+      property: P2048
+      wikidata: Q5554841
+    - source: portal-2000
+      locator: p. 131, fig. 68
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q5554841

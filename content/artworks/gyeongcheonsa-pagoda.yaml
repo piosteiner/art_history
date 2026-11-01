@@ -1,0 +1,65 @@
+public_id: 108299
+title: Ten-storey pagoda from Kyŏngch’ŏn-sa
+names:
+  - Gyeongcheonsa Pagoda
+  - lang: fr
+    role: translation
+    text: pagode du Kyŏngch'ŏn-sa
+  - lang: zh
+    role: translation
+    text: 敬天寺十層石塔
+  - lang: ko
+    role: translation
+    text: 경천사지 십층석탑
+attribution_label: Anonymous
+created: 1348
+kind: pagoda
+medium: Marble
+materials: [stone]
+dimensions: [1350]
+location: [126.98145, 37.52392]
+description_md: A marble pagoda dated 1348, 13.5 m high, highly decorated with sculpted figures and buildings in relief — Mongol Lamaist influence after the Mongol defeat of Korea. Long in the grounds of the Kyŏngbok palace in Seoul. [[source/portal-2000|pp. 85–86, fig. 43]]
+wikidata_id: Q626536
+metadata:
+  sources: [Wikidata Q626536 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/seoul
+  - type: created_in_polity
+    to: polity/goryeo
+    sources:
+      - source: portal-2000
+        locator: pp. 85–86, fig. 43
+  - type: associated_with
+    to: movement/goryeo-period
+    sources:
+      - source: portal-2000
+        locator: pp. 85–86, fig. 43
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c1/Korea-Seoul-National_Museum_Gyeongcheonsa_Pagoda_0187%268-06.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Korea-Seoul-National_Museum_Gyeongcheonsa_Pagoda_0187%268-06.jpg
+    license: CC BY-SA 3.0
+    credit: Steve46814
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 85–86, fig. 43
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q626536
+  medium:
+    - source: portal-2000
+      locator: pp. 85–86, fig. 43
+  created:
+    - source: portal-2000
+      locator: pp. 85–86, fig. 43
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q626536
+  materials:
+    - source: portal-2000
+      locator: pp. 85–86, fig. 43
+  dimensions:
+    - source: portal-2000
+      locator: pp. 85–86, fig. 43

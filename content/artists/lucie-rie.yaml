@@ -1,0 +1,38 @@
+public_id: 108321
+name: Lucie Rie
+given_name: Lucie
+family_name: Rie
+names:
+  - Dame Lucie née Gomperz
+  - Lucie Gomperz
+  - Dame Lucie Rie
+  - Dame Lucie nee Gomperz
+  - lang: ja
+    role: translation
+    text: ルーシー・リー
+  - lang: ru
+    role: translation
+    text: Ри Люси
+birth: 1902-03-16
+death: 1995-04-01
+wikidata_id: Q214391
+metadata:
+  sources: [Wikidata Q214391 (retrieved 2026-11-01)]
+identifiers:
+  bnf: "157008755"
+  gnd: 11927602X
+  idref: "143796607"
+  kulturnav: d0fb1099-7dab-4914-9696-ef51e4e7ae77
+  lc: n88021301
+  rkd: "130264"
+  ulan: "500056255"
+  viaf: "3277174"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q214391
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q214391

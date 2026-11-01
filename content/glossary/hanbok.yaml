@@ -1,0 +1,12 @@
+public_id: 108600
+name: hanbok
+names:
+  - lang: ja
+    role: original
+    text: "{한복|한복}"
+category: object type
+definition: "Traditional Korean dress: for women a full skirt (ch’ima) and short jacket (chŏgori), for men trousers and jacket."
+sources:
+  definition:
+    - source: portal-2000
+      locator: p. 165

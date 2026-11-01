@@ -1,0 +1,38 @@
+public_id: 108663
+title: Iron horse armour from Pokch’ŏn-dong
+attribution_label: Anonymous
+created: 5th century
+created_span: uncertain
+kind: armour
+medium: Iron
+materials: [iron]
+dimensions: [51.6]
+dimensions_note: length
+description_md: "A horse’s face guard from Tomb 10.11 at Pokch’ŏn-dong, Pusan: excavations at Kaya sites have produced considerable iron armour for men and horses, like that in Koguryŏ wall paintings — the basis for Egami’s theory of horse-riders who crossed to Japan. [[source/portal-2000|p. 55, fig. 29]]"
+relationships:
+  - type: created_in_polity
+    to: polity/gaya
+    sources:
+      - source: portal-2000
+        locator: p. 55, fig. 29
+  - type: associated_with
+    to: movement/three-kingdoms-period-korea
+    sources:
+      - source: portal-2000
+        locator: p. 55, fig. 29
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 55, fig. 29
+  medium:
+    - source: portal-2000
+      locator: p. 55, fig. 29
+  created:
+    - source: portal-2000
+      locator: p. 55, fig. 29
+  materials:
+    - source: portal-2000
+      locator: p. 55, fig. 29
+  dimensions:
+    - source: portal-2000
+      locator: p. 55, fig. 29

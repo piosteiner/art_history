@@ -1,0 +1,37 @@
+public_id: 108673
+title: White porcelain bottle
+attribution_label: Anonymous
+created: 15th century
+created_span: uncertain
+kind: bottle
+medium: Porcelain
+materials: [porcelain]
+dimensions: [34]
+description_md: A pear-shaped bottle of plain white porcelain — the Confucian predilection for undecorated white wares; creamier than the bluish Chinese porcelain. [[source/portal-2000|pp. 138–139, fig. 73]]
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 138–139, fig. 73
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 138–139, fig. 73
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 138–139, fig. 73
+  medium:
+    - source: portal-2000
+      locator: pp. 138–139, fig. 73
+  created:
+    - source: portal-2000
+      locator: pp. 138–139, fig. 73
+  materials:
+    - source: portal-2000
+      locator: pp. 138–139, fig. 73
+  dimensions:
+    - source: portal-2000
+      locator: pp. 138–139, fig. 73

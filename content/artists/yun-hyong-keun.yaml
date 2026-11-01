@@ -1,0 +1,35 @@
+public_id: 108311
+name: Yun Hyong-keun
+given_name: Yun
+family_name: Hyong-keun
+names:
+  - Hyung-geun Yun
+  - lang: ja
+    role: translation
+    text: ユン・ヒョングン
+  - lang: ko
+    role: translation
+    text: 윤형근
+  - lang: ru
+    role: translation
+    text: Юн Хёнгын
+birth: 1928-04-12
+death: 2007-12-28
+wikidata_id: Q73668649
+metadata:
+  sources: [Wikidata Q73668649 (retrieved 2026-11-01)]
+identifiers:
+  gnd: 12326930X
+  idref: 07992347X
+  lc: n80025285
+  ulan: "500328442"
+  viaf: "251353594"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q73668649
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q73668649

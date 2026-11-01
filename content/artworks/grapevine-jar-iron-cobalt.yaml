@@ -1,0 +1,37 @@
+public_id: 108665
+title: Porcelain jar with grapevines
+attribution_label: Anonymous
+created: 17th century–18th century
+created_span: uncertain
+kind: jar
+medium: Porcelain with underglaze iron-brown and cobalt-blue decoration
+materials: [porcelain]
+dimensions: [39.7]
+description_md: Grapevines in underglaze iron brown with cobalt-blue grapes — a favourite subject of Chosŏn painters; court painters of the Bureau of Painting decorated porcelain for the court. [[source/portal-2000|pp. 129–130, fig. 66]]
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 129–130, fig. 66
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 129–130, fig. 66
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 129–130, fig. 66
+  medium:
+    - source: portal-2000
+      locator: pp. 129–130, fig. 66
+  created:
+    - source: portal-2000
+      locator: pp. 129–130, fig. 66
+  materials:
+    - source: portal-2000
+      locator: pp. 129–130, fig. 66
+  dimensions:
+    - source: portal-2000
+      locator: pp. 129–130, fig. 66

@@ -1,0 +1,73 @@
+public_id: 108296
+title: Tripitaka Koreana
+names:
+  - Palman Daejanggyeong
+  - Goryeo Tripiṭaka
+  - lang: es
+    role: translation
+    text: Tripitaka Coreana
+  - lang: ja
+    role: translation
+    text: 高麗八萬大蔵経
+  - lang: zh
+    role: translation
+    text: 高丽大藏经
+  - lang: ko
+    role: translation
+    text: 합천 해인사 대장경판
+  - lang: ru
+    role: translation
+    text: Трипитака Кореана
+attribution_label: Anonymous
+created: 1232/1251
+created_span: uncertain
+kind: woodblock
+medium: Wood
+materials: [wood]
+institution: haeinsa
+location: [128.09861, 35.80167]
+description_md: "The complete Buddhist canon carved on more than 80,000 woodblocks: after the Mongols destroyed the first edition, a new one was begun on Kanghwa island as a prayer for protection and completed in 1251. Magnolia wood soaked in salt water, boiled and dried, each block about 24 by 65 cm, capped with bronze and lacquered, with twenty-three lines on each side — thought the finest of some twenty East Asian versions. Kept in the storehouse of [[institution/haeinsa]]. [[source/portal-2000|pp. 78, 82, fig. 41]]"
+wikidata_id: Q138733
+metadata:
+  sources: [Wikidata Q138733 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in_polity
+    to: polity/goryeo
+    sources:
+      - source: portal-2000
+        locator: pp. 78, 82, fig. 41
+  - type: associated_with
+    to: movement/goryeo-period
+    sources:
+      - source: portal-2000
+        locator: pp. 78, 82, fig. 41
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Tripitaka_Koreana_02.jpg/1280px-Tripitaka_Koreana_02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tripitaka_Koreana_02.jpg
+    license: CC0
+    credit: Bernard Gagnon
+identifiers:
+  viaf: "185891892"
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 78, 82, fig. 41
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q138733
+  medium:
+    - source: portal-2000
+      locator: pp. 78, 82, fig. 41
+  created:
+    - source: portal-2000
+      locator: pp. 78, 82, fig. 41
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q138733
+  materials:
+    - source: portal-2000
+      locator: pp. 78, 82, fig. 41
+  institution:
+    - source: portal-2000
+      locator: pp. 78, 82, fig. 41

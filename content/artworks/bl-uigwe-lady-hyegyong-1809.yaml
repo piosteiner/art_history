@@ -1,0 +1,41 @@
+public_id: 108628
+title: Ŭigwe of the 60th anniversary of Lady Hyegyŏng’s marriage
+attribution_label: Anonymous
+created: 1809
+kind: ŭigwe
+medium: Ink and colours on Korean paper
+materials: [ink, paper]
+dimensions: [47.5]
+dimensions_note: double page width 57.5 cm
+institution: british-library
+description_md: An illustrated royal ritual record ([[uigwe]]) of the celebration in 1809 of the sixtieth anniversary of the marriage of [[person/lady-hyegyeong]], wife of the murdered Crown Prince Sado and mother of King Chŏngjo — the polychrome court painting style of the Bureau of Painting. In the British Library. [[source/portal-2000|pp. 124–125, fig. 64]]
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 124–125, fig. 64
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 124–125, fig. 64
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 124–125, fig. 64
+  medium:
+    - source: portal-2000
+      locator: pp. 124–125, fig. 64
+  created:
+    - source: portal-2000
+      locator: pp. 124–125, fig. 64
+  materials:
+    - source: portal-2000
+      locator: pp. 124–125, fig. 64
+  dimensions:
+    - source: portal-2000
+      locator: pp. 124–125, fig. 64
+  institution:
+    - source: portal-2000
+      locator: pp. 124–125, fig. 64

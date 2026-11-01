@@ -1,0 +1,31 @@
+public_id: 108656
+title: Tall vessel
+attribution_label: Cho Chung-hyŏn
+created: 1994
+kind: vessel
+medium: Stoneware
+materials: [stoneware]
+dimensions: [60]
+description_md: "By Cho Chung-hyŏn (born 1940) of Ewha University, who works in the earthenware and onggi tradition: carved and incised decoration recalling Three Kingdoms tomb wares and [[onggi]] storage jars. [[source/portal-2000|pp. 186–187, fig. 107]]"
+relationships:
+  - type: associated_with
+    to: movement/modern-art
+    sources:
+      - source: portal-2000
+        locator: pp. 186–187, fig. 107
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 186–187, fig. 107
+  medium:
+    - source: portal-2000
+      locator: pp. 186–187, fig. 107
+  created:
+    - source: portal-2000
+      locator: pp. 186–187, fig. 107
+  materials:
+    - source: portal-2000
+      locator: pp. 186–187, fig. 107
+  dimensions:
+    - source: portal-2000
+      locator: pp. 186–187, fig. 107

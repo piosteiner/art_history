@@ -1,0 +1,37 @@
+public_id: 108630
+title: Bronze kundika
+attribution_label: Anonymous
+created: 11th century–12th century
+created_span: uncertain
+kind: kundika
+medium: Bronze
+materials: [bronze]
+dimensions: [29.5]
+description_md: A beaten-bronze [[kundika]] for sprinkling purifying water, the faceting of the spout characteristic of Koryŏ metalwork; celadon kundikas follow the same shape. [[source/portal-2000|pp. 96–97, fig. 49]]
+relationships:
+  - type: created_in_polity
+    to: polity/goryeo
+    sources:
+      - source: portal-2000
+        locator: pp. 96–97, fig. 49
+  - type: associated_with
+    to: movement/goryeo-period
+    sources:
+      - source: portal-2000
+        locator: pp. 96–97, fig. 49
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 96–97, fig. 49
+  medium:
+    - source: portal-2000
+      locator: pp. 96–97, fig. 49
+  created:
+    - source: portal-2000
+      locator: pp. 96–97, fig. 49
+  materials:
+    - source: portal-2000
+      locator: pp. 96–97, fig. 49
+  dimensions:
+    - source: portal-2000
+      locator: pp. 96–97, fig. 49

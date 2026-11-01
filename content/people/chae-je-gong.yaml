@@ -1,0 +1,48 @@
+public_id: 108327
+name: Chae Je-gong
+names:
+  - lang: ko
+    role: original
+    text: 채제공
+  - Chae Jegong
+  - lang: zh
+    role: translation
+    text: 蔡濟恭
+  - lang: ru
+    role: translation
+    text: Чхе Дже Гон
+kind: person
+occupations: [writer, politician]
+birth: 1720-05-12
+death: 1799-02-22
+wikidata_id: Q6902149
+metadata:
+  sources: [Wikidata Q6902149 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fb/Chae_Jegong.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Chae_Jegong.jpg
+    license: Public domain
+    credit: Yi Myeong gi (1756-?)
+identifiers:
+  gnd: "1089621272"
+  idref: 10618573X
+  lc: n89134602
+  nlk: KAC201765006
+  viaf: "45892275"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q6902149
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q6902149
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q6902149
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q6902149

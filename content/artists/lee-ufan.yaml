@@ -1,0 +1,46 @@
+public_id: 108315
+name: Lee Ufan
+names:
+  - lang: ko-Hani
+    role: original
+    text: 李禹煥
+  - Lee U Fan
+  - U-Fan Lee
+  - Lee-U Fan
+  - Lee U-Fan
+  - Ufan Lee
+  - U-hwan Yi
+  - Ukan Ri
+  - U Fan Lee
+  - lang: zh
+    role: translation
+    text: 李禹煥,
+  - lang: ko
+    role: translation
+    text: 이우환
+  - lang: ru
+    role: translation
+    text: Ли У Хван
+birth: 1936-06-24
+wikidata_id: Q399775
+metadata:
+  sources: [Wikidata Q399775 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Lee_Ufan.jpg/1280px-Lee_Ufan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lee_Ufan.jpg
+    license: CC BY-SA 4.0
+    credit: Andrew Tupalev
+identifiers:
+  bnf: 12521678j
+  gnd: "119257386"
+  idref: "191855928"
+  lc: n88091654
+  nlk: KAC201522271
+  rkd: "222727"
+  ulan: "500061220"
+  viaf: "20244189"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q399775

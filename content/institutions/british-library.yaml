@@ -1,0 +1,64 @@
+public_id: 108268
+name: British Library
+names:
+  - BL
+  - B.L.
+  - The British Library
+  - The British Museum Library
+  - lang: es
+    role: translation
+    text: Biblioteca Británica
+  - lang: ja
+    role: translation
+    text: 大英図書館
+  - lang: zh
+    role: translation
+    text: 大英图书馆
+  - lang: ko
+    role: translation
+    text: 대영 도서관
+  - lang: ru
+    role: translation
+    text: Британская библиотека
+kind: library
+founded: 1973-07-01
+place: london
+location: [-0.12694, 51.52944]
+address: 96 Euston Road
+website_url: https://bl.uk
+wikidata_id: Q23308
+metadata:
+  sources: [Wikidata Q23308 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/British_Library_%2B_St_Pancras_7527-31hug.jpg/1280px-British_Library_%2B_St_Pancras_7527-31hug.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:British_Library_%2B_St_Pancras_7527-31hug.jpg
+    license: CC BY-SA 3.0
+    credit: Patche99z
+identifiers:
+  bnf: "118714563"
+  gnd: 1023420-2
+  idref: "026472252"
+  lc: n81139951
+  ulan: "500301700"
+  viaf: "121814978"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q23308
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q23308
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q23308
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q23308
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q23308

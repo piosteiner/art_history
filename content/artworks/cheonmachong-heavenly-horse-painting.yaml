@@ -1,0 +1,52 @@
+public_id: 108288
+title: Heavenly Horse on a saddle flap, Ch’ŏnmach’ong
+names:
+  - Jangni cheonmado Painting of Heavenly Horse on a Saddle Flap from Cheonmachong Tomb, Gyeongju
+  - lang: zh
+    role: translation
+    text: 慶州天馬塚障泥天馬圖
+  - lang: ko
+    role: translation
+    text: 경주 천마총 장니 천마도
+attribution_label: Anonymous
+created: 5th century–6th century
+created_span: uncertain
+kind: painting
+medium: Colour on birch bark
+dimensions: [53, 75]
+description_md: A white winged horse painted on a birch-bark saddle flap, from the Heavenly Horse tomb in Kyŏngju, excavated in 1973 with 140 objects including a Syrian blue glass cup — one of Korea’s earliest paintings, and evidence of the importance of horses in Silla. It recalls the Flying Horse of Gansu or, for some, a unicorn (kirin). [[source/portal-2000|pp. 60–61, fig. 32]]
+wikidata_id: Q12583880
+metadata:
+  sources: [Wikidata Q12583880 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in_polity
+    to: polity/silla
+    sources:
+      - source: portal-2000
+        locator: pp. 60–61, fig. 32
+  - type: associated_with
+    to: movement/three-kingdoms-period-korea
+    sources:
+      - source: portal-2000
+        locator: pp. 60–61, fig. 32
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b1/Korea-Silla-Cheonmado-02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Korea-Silla-Cheonmado-02.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 60–61, fig. 32
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q12583880
+  medium:
+    - source: portal-2000
+      locator: pp. 60–61, fig. 32
+  created:
+    - source: portal-2000
+      locator: pp. 60–61, fig. 32
+  dimensions:
+    - source: portal-2000
+      locator: pp. 60–61, fig. 32

@@ -1,0 +1,32 @@
+public_id: 108698
+title: Earthenware jar with horn-shaped handles
+attribution_label: Anonymous
+created: 1st century
+created_span: uncertain
+kind: jar
+medium: Earthenware
+materials: [earthenware]
+dimensions: [43]
+description_md: A round-bottomed jar of yŏnjil (earthenware), the type that, with the higher-fired wajil and kyŏngjil, replaced the old term “Kimhae ware” for the paddled pottery of the Iron Age. [[source/portal-2000|pp. 40–41, fig. 21]]
+relationships:
+  - type: associated_with
+    to: movement/proto-three-kingdoms-period
+    sources:
+      - source: portal-2000
+        locator: pp. 40–41, fig. 21
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 40–41, fig. 21
+  medium:
+    - source: portal-2000
+      locator: pp. 40–41, fig. 21
+  created:
+    - source: portal-2000
+      locator: pp. 40–41, fig. 21
+  materials:
+    - source: portal-2000
+      locator: pp. 40–41, fig. 21
+  dimensions:
+    - source: portal-2000
+      locator: pp. 40–41, fig. 21

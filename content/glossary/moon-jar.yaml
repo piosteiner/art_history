@@ -1,0 +1,13 @@
+public_id: 108608
+name: moon jar
+names:
+  - lang: ja
+    role: original
+    text: "{달항아리|달항아리}"
+category: object type
+parent: jar
+definition: A large, round white porcelain jar of the Chosŏn period, made of two hemispheres joined at the middle.
+sources:
+  definition:
+    - source: portal-2000
+      locator: p. 19

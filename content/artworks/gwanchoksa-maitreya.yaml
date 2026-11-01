@@ -1,0 +1,41 @@
+public_id: 108666
+title: Gigantic stone Maitreya at Kwanch’ok-sa
+attribution_label: Anonymous
+created: 10th century–11th century
+created_span: uncertain
+kind: sculpture
+medium: Granite
+materials: [stone]
+dimensions: [1810]
+institution: gwanchoksa
+description_md: "The largest of the gigantic Koryŏ statues, 18.1 m, at [[institution/gwanchoksa]] near Nonsan: a big-headed Maitreya in a tall hat, somewhat crudely modelled, perhaps with shamanistic associations; beside it a stone lantern of the late tenth century. [[source/portal-2000|pp. 92–93, fig. 46]]"
+relationships:
+  - type: created_in_polity
+    to: polity/goryeo
+    sources:
+      - source: portal-2000
+        locator: pp. 92–93, fig. 46
+  - type: associated_with
+    to: movement/goryeo-period
+    sources:
+      - source: portal-2000
+        locator: pp. 92–93, fig. 46
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 92–93, fig. 46
+  medium:
+    - source: portal-2000
+      locator: pp. 92–93, fig. 46
+  created:
+    - source: portal-2000
+      locator: pp. 92–93, fig. 46
+  materials:
+    - source: portal-2000
+      locator: pp. 92–93, fig. 46
+  dimensions:
+    - source: portal-2000
+      locator: pp. 92–93, fig. 46
+  institution:
+    - source: portal-2000
+      locator: pp. 92–93, fig. 46

@@ -1,0 +1,64 @@
+public_id: 108289
+title: Gold crown from the Gold Crown Tomb
+names:
+  - Gold Crown and Diadem Ornaments from Geumgwanchong Tomb
+  - lang: ja
+    role: translation
+    text: 金冠塚金冠および金製冠飾
+  - lang: zh
+    role: translation
+    text: 金冠塚金冠和金製冠飾
+  - lang: ko
+    role: translation
+    text: 금관총 금관 및 금제 관식
+attribution_label: Anonymous
+created: 5th century–6th century
+created_span: uncertain
+kind: crown
+medium: Sheet gold with jade
+materials: [gold]
+dimensions: [27.5]
+institution: gyeongju-national-museum
+description_md: "The royal sheet-gold crown excavated from the Gold Crown tomb in Kyŏngju in 1922: tree- and antler-shaped uprights point to Siberian shamanism, while the curved jade pendants (kogok) recall finds in Japan; comparisons have been drawn with a Sarmatian crown at Novocherkassk and with Tillya Tepe in Bactria. Ten gold crowns have been excavated in Korea — signs of rank as well as of religious symbolism. [[source/portal-2000|pp. 62–63, fig. 33]]"
+wikidata_id: Q12586410
+metadata:
+  sources: [Wikidata Q12586410 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in_polity
+    to: polity/silla
+    sources:
+      - source: portal-2000
+        locator: pp. 62–63, fig. 33
+  - type: associated_with
+    to: movement/three-kingdoms-period-korea
+    sources:
+      - source: portal-2000
+        locator: pp. 62–63, fig. 33
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ac/%EA%B8%88%EA%B4%80%EC%B4%9D%EA%B8%88%EA%B4%80.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%EA%B8%88%EA%B4%80%EC%B4%9D%EA%B8%88%EA%B4%80.jpg
+    license: KOGL Type 1
+    credit: Korea Heritage Service
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 62–63, fig. 33
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q12586410
+  medium:
+    - source: portal-2000
+      locator: pp. 62–63, fig. 33
+  created:
+    - source: portal-2000
+      locator: pp. 62–63, fig. 33
+  materials:
+    - source: portal-2000
+      locator: pp. 62–63, fig. 33
+  dimensions:
+    - source: portal-2000
+      locator: pp. 62–63, fig. 33
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q12586410

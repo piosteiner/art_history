@@ -1,0 +1,37 @@
+public_id: 108653
+title: Punch’ŏng maebyŏng with fish among waves
+attribution_label: Anonymous
+created: 15th century
+created_span: uncertain
+kind: maebyeong
+medium: Inlaid punch’ŏng stoneware
+materials: [Buncheong]
+dimensions: [31.5]
+description_md: "A [[maebyeong]] of inlaid [[buncheong]] ware: fish among waves in white slip inlay, in the tradition of late Koryŏ celadons but with a greyer body — the Mishima of the Japanese. [[source/portal-2000|pp. 135–137, fig. 72]]"
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 135–137, fig. 72
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 135–137, fig. 72
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 135–137, fig. 72
+  medium:
+    - source: portal-2000
+      locator: pp. 135–137, fig. 72
+  created:
+    - source: portal-2000
+      locator: pp. 135–137, fig. 72
+  materials:
+    - source: portal-2000
+      locator: pp. 135–137, fig. 72
+  dimensions:
+    - source: portal-2000
+      locator: pp. 135–137, fig. 72

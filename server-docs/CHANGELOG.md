@@ -4,6 +4,27 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-01
 
+### Data: the works of Portal, *Korea: Art and Archaeology* + the book's figures as private reference images
+- **What:** 95 works after the figures of Jane Portal, *Korea: Art and Archaeology* (British Museum Press, 2000,
+  source `portal-2000`), pp. 7–189 — 16 made from their Wikidata items (Kanghwa dolmen, Pan'gudae, King Muryŏng's
+  tomb, the Paekche incense burner, Ch'ŏnmach'ong horse, Gold Crown, Sŏsan triad, pensive Maitreya no. 83,
+  Ch'ŏmsŏngdae, Hwaŏm-sa lion pagoda, Sŏkkuram, Tripitaka Koreana, Pusŏk-sa hall, Kyŏngch'ŏn-sa pagoda, P'altal gate,
+  Chŏng Sŏn's Diamond Mountains), the rest by hand: prehistoric bronzes and pottery, Koguryŏ tomb paintings, Kaya
+  armour and pottery, Koryŏ painting, sutras, metalwork, lacquer and celadon, Chosŏn painting, court records,
+  porcelain and punch'ŏng, folk painting, screens and crafts, and 20th-century painting, prints and ceramics. The
+  Kudara Kannon and Takamatsuzuka entries gained Portal's comparisons. Caption facts cited "Portal, p. N, fig. N";
+  descriptions in our own words; holders only where Portal names them (often the British Museum).
+  New: polities Koguryŏ, Paekche, Silla, Kaya, Koryŏ, Chosŏn; 9 holders; 13 people (Sejong, Chŏngjo, Lady
+  Hyegyŏng, Sado, Ch'ae Che-gong, Chŏng Yag-yong, Muryŏng, Queen Sŏndŏk, Kongmin, Kim Chŏng-hŭi, Yi Sun-sin, the two
+  T'aejo); 19 artists; 38 glossary terms (dolmen, chŭlmun, maebyŏng, sanggam, punch'ŏng, moon jar, kundika,
+  taenghwa, ch'aekkŏri, munja-do, irwŏl obongdo, sipchangsaeng, ŭigwe, onggi, pojagi, minjung art, dansaekhwa …).
+  A wrongly matched Wikidata portrait of Ch'ae Che-gong (another version) was removed and entered from Portal.
+  Not entered: photographs of sites and ceremonies, drawings, the turtle ship; fig. 104 (pp. 182–183 missing from
+  the PDF) and the Nam June Paik tower (caption outside the PDF).
+- **Private images:** 97 figures of Portal into `private_images` for the owner's account (now 529 on 484 works).
+- **Why:** owner, 2026-11-01 ("can you now do the same for portal?"). **Revert:** delete the works citing
+  `portal-2000`; the crops: `DELETE FROM private_images WHERE source_id = (SELECT id FROM bibliography WHERE slug = 'portal-2000')`.
+
 ### Data: the works of Mason, chapter 7 (Meiji to the present) + the book's figures as private reference images — Mason complete
 - **What:** 68 works after the figures of Mason, *History of Japanese Art*, pp. 343–391 — 6 from Wikidata items
   (Akasaka Palace, Yoyogi Gymnasium, Murin-an, Kabukiza, Kuroda's Morning Toilet, Aoki's Palace Under the Sea), the

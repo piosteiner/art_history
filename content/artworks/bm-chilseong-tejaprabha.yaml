@@ -1,0 +1,36 @@
+public_id: 108634
+title: Tejaprabha Buddha and the Pole Star
+attribution_label: Anonymous
+created: 1850/1860
+kind: kakemono
+medium: Mineral colours on coarse silk
+materials: [silk]
+dimensions: [95]
+description_md: "Buddhist, Daoist and shaman iconography mixed together: the Tejaprabha Buddha (Ch’isŏng kwangbul) and the north pole star (Pukkŭk sŏng), surrounded by the nine planets and twenty-eight constellations. [[source/portal-2000|pp. 142, 144, fig. 77]]"
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 142, 144, fig. 77
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 142, 144, fig. 77
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 142, 144, fig. 77
+  medium:
+    - source: portal-2000
+      locator: pp. 142, 144, fig. 77
+  created:
+    - source: portal-2000
+      locator: pp. 142, 144, fig. 77
+  materials:
+    - source: portal-2000
+      locator: pp. 142, 144, fig. 77
+  dimensions:
+    - source: portal-2000
+      locator: pp. 142, 144, fig. 77

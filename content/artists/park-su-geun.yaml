@@ -1,0 +1,46 @@
+public_id: 108316
+name: Park Su-geun
+names:
+  - lang: ko
+    role: original
+    text: 박수근
+  - Su-gŭn Pak
+  - Su-gun Pak
+  - Pak Su-gŭn
+  - 박 수근
+  - Soo Keun Park
+  - 朴壽根
+  - Pak Su-gun
+  - lang: fr
+    role: translation
+    text: Park Soo-keun
+  - lang: ja
+    role: translation
+    text: 朴寿根
+birth: 1914-02-21
+death: 1965-05-06
+wikidata_id: Q7138062
+metadata:
+  sources: [Wikidata Q7138062 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9f/%EB%B0%95%EC%88%98%EA%B7%BC_%ED%99%94%EB%B0%B1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%EB%B0%95%EC%88%98%EA%B7%BC_%ED%99%94%EB%B0%B1.jpg
+    license: Public domain
+    credit: 동아일보
+identifiers:
+  bnf: 15594313q
+  gnd: "1035335190"
+  idref: "178193380"
+  lc: n81017123
+  nlk: KAC201222673
+  ulan: "500323620"
+  viaf: "75166309"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q7138062
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q7138062

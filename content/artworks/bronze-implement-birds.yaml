@@ -1,0 +1,32 @@
+public_id: 108650
+title: Bronze implement with birds on branches
+attribution_label: Anonymous
+created: 4th century BCE–3rd century BCE
+created_span: uncertain
+kind: bronze
+medium: Bronze
+materials: [bronze]
+dimensions: [7.3, 12.8]
+description_md: A fragment of a bronze implement cast with ploughing figures and birds perched on branches — evidence of shamanistic ritual practices like those of Korean shamans today. [[source/portal-2000|p. 36, fig. 18]]
+relationships:
+  - type: associated_with
+    to: movement/korean-bronze-age
+    sources:
+      - source: portal-2000
+        locator: p. 36, fig. 18
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 36, fig. 18
+  medium:
+    - source: portal-2000
+      locator: p. 36, fig. 18
+  created:
+    - source: portal-2000
+      locator: p. 36, fig. 18
+  materials:
+    - source: portal-2000
+      locator: p. 36, fig. 18
+  dimensions:
+    - source: portal-2000
+      locator: p. 36, fig. 18

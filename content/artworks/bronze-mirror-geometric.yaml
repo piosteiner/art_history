@@ -1,0 +1,29 @@
+public_id: 108651
+title: Bronze mirror with geometric patterns
+attribution_label: Anonymous
+created: c. 300 BCE
+created_span: uncertain
+kind: mirror
+medium: Bronze
+materials: [bronze]
+dimensions_note: diameter 19.6 cm
+description_md: A Korean bronze mirror with fine hatched triangles and two off-centre loop handles on the back — unlike Chinese mirrors; Kim Won-yong traced its Z-patterns to mirrors found with “Liaoning” daggers. Probably used in shaman rituals, perhaps fastened to a garment; the finest were probably cast in clay moulds. [[source/portal-2000|pp. 35–36, fig. 17]]
+relationships:
+  - type: associated_with
+    to: movement/korean-bronze-age
+    sources:
+      - source: portal-2000
+        locator: pp. 35–36, fig. 17
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 35–36, fig. 17
+  medium:
+    - source: portal-2000
+      locator: pp. 35–36, fig. 17
+  created:
+    - source: portal-2000
+      locator: pp. 35–36, fig. 17
+  materials:
+    - source: portal-2000
+      locator: pp. 35–36, fig. 17

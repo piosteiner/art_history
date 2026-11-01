@@ -1,0 +1,13 @@
+public_id: 108603
+name: kundika
+names:
+  - lang: ja
+    role: original
+    text: "{정병|정병}"
+category: object type
+parent: vessel
+definition: A spouted water-sprinkler (chŏngbyŏng) used to purify the ground in Buddhist ceremonies; the shape came from India and was made in bronze and celadon in Koryŏ.
+sources:
+  definition:
+    - source: portal-2000
+      locator: p. 97

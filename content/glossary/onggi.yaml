@@ -1,0 +1,13 @@
+public_id: 108610
+name: onggi
+names:
+  - lang: ja
+    role: original
+    text: "{옹기|옹기}"
+category: material
+parent: earthenware
+definition: High-fired earthenware for domestic storage jars, made by coiling and paddling and decorated with a quick sweep of the thumbs in the wet glaze.
+sources:
+  definition:
+    - source: portal-2000
+      locator: pp. 160–161

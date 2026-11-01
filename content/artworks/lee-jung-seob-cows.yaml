@@ -1,0 +1,30 @@
+public_id: 108682
+title: Cows
+creator: lee-jung-seob
+created: 1953/1954
+kind: painting
+medium: Oil on paper
+materials: [oil paint, paper]
+description_md: "[[artist/lee-jung-seob]] (1916–1956), from the north, studied in Japan and married the daughter of a Japanese businessman; during the Korean War his wife and children had to return to Japan. His violent, distorted cows symbolize perseverance and toil — his own and Korea’s. [[source/portal-2000|p. 171, fig. 93]]"
+relationships:
+  - type: associated_with
+    to: movement/modern-art
+    sources:
+      - source: portal-2000
+        locator: p. 171, fig. 93
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 171, fig. 93
+  medium:
+    - source: portal-2000
+      locator: p. 171, fig. 93
+  created:
+    - source: portal-2000
+      locator: p. 171, fig. 93
+  creator:
+    - source: portal-2000
+      locator: p. 171, fig. 93
+  materials:
+    - source: portal-2000
+      locator: p. 171, fig. 93

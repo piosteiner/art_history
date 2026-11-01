@@ -1,0 +1,63 @@
+public_id: 108331
+name: Gongmin
+names:
+  - lang: ko-Hani
+    role: original
+    text: 恭愍王
+  - Kongmin
+  - Ikdang
+  - ho Yijae
+  - Kongmin Wang
+  - Yijae
+  - Chon
+  - Gongmin of Goryeo
+  - lang: de
+    role: translation
+    text: Gongmin Wang
+  - lang: it
+    role: translation
+    text: Gongmin di Goryeo
+  - lang: es
+    role: translation
+    text: Gongmin de Goryeo
+  - lang: ko
+    role: translation
+    text: 고려 공민왕
+  - lang: ru
+    role: translation
+    text: Конмин
+kind: person
+occupations: [monarch]
+birth: 1330-05-31
+death: 1374-11-04
+wikidata_id: Q494074
+metadata:
+  sources: [Wikidata Q494074 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a1/King_Kongmin_of_Koryo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:King_Kongmin_of_Koryo.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "1397574224"
+  lc: n85052390
+  nlk: KAC201618663
+  ulan: "500320703"
+  viaf: "62970323"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q494074
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q494074
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q494074
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q494074

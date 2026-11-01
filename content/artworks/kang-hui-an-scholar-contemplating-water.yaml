@@ -1,0 +1,40 @@
+public_id: 108674
+title: A Scholar Contemplating the Water
+creator: kang-hui-an
+created: 15th century
+created_span: uncertain
+kind: album leaf
+medium: Ink on paper
+materials: [ink, paper]
+dimensions: [23.4, 15.7]
+description_md: "The famous painting of [[artist/kang-hui-an]] (1419–1464), scholar-painter and deputy leader of the embassy to Ming China in 1455: a scholar leaning on a rock gazes at the water — close to the Ming Zhe school in its cliffs and the importance of the figure. [[source/portal-2000|pp. 130–131, fig. 67]]"
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 130–131, fig. 67
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 130–131, fig. 67
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 130–131, fig. 67
+  medium:
+    - source: portal-2000
+      locator: pp. 130–131, fig. 67
+  created:
+    - source: portal-2000
+      locator: pp. 130–131, fig. 67
+  creator:
+    - source: portal-2000
+      locator: pp. 130–131, fig. 67
+  materials:
+    - source: portal-2000
+      locator: pp. 130–131, fig. 67
+  dimensions:
+    - source: portal-2000
+      locator: pp. 130–131, fig. 67

@@ -1,0 +1,38 @@
+public_id: 108635
+title: Tea bowl with underglaze copper red
+attribution_label: Anonymous
+created: early 12th century
+created_span: uncertain
+kind: tea bowl
+medium: Stoneware with underglaze copper-red decoration
+materials: [stoneware]
+dimensions_note: diameter 17.8 cm
+institution: british-museum
+description_md: One of the best examples of the very rare and difficult underglaze copper-red technique — flower scrolls under a celadon glaze, a Korean innovation never used on Chinese celadons. In the [[institution/british-museum]]. [[source/portal-2000|p. 103, fig. 54]]
+relationships:
+  - type: created_in_polity
+    to: polity/goryeo
+    sources:
+      - source: portal-2000
+        locator: p. 103, fig. 54
+  - type: associated_with
+    to: movement/goryeo-period
+    sources:
+      - source: portal-2000
+        locator: p. 103, fig. 54
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 103, fig. 54
+  medium:
+    - source: portal-2000
+      locator: p. 103, fig. 54
+  created:
+    - source: portal-2000
+      locator: p. 103, fig. 54
+  materials:
+    - source: portal-2000
+      locator: p. 103, fig. 54
+  institution:
+    - source: portal-2000
+      locator: p. 103, fig. 54

@@ -1,0 +1,27 @@
+public_id: 108693
+title: Landscape
+attribution_label: Song Yŏng-bang
+kind: painting
+medium: Ink and colours on Korean paper
+materials: [ink, paper]
+dimensions: [95, 109]
+description_md: Song Yŏng-bang (born 1926), of the Muklimhoe, exploring calligraphic line and the spontaneous spread of ink on paper. [[source/portal-2000|pp. 174–175, fig. 98]]
+relationships:
+  - type: associated_with
+    to: movement/modern-art
+    sources:
+      - source: portal-2000
+        locator: pp. 174–175, fig. 98
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 174–175, fig. 98
+  medium:
+    - source: portal-2000
+      locator: pp. 174–175, fig. 98
+  materials:
+    - source: portal-2000
+      locator: pp. 174–175, fig. 98
+  dimensions:
+    - source: portal-2000
+      locator: pp. 174–175, fig. 98

@@ -1,0 +1,31 @@
+public_id: 108644
+title: Wrapping cloth (pojagi)
+attribution_label: Anonymous
+created: 1880/1920
+kind: pojagi
+medium: Patchwork
+materials: [silk]
+dimensions: [45, 45]
+description_md: A [[pojagi]] pieced together from scraps of left-over material in patchwork — a craft that produced beauty out of necessity. [[source/portal-2000|p. 157, fig. 86]]
+relationships:
+  - type: associated_with
+    to: movement/korean-empire
+    sources:
+      - source: portal-2000
+        locator: p. 157, fig. 86
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 157, fig. 86
+  medium:
+    - source: portal-2000
+      locator: p. 157, fig. 86
+  created:
+    - source: portal-2000
+      locator: p. 157, fig. 86
+  materials:
+    - source: portal-2000
+      locator: p. 157, fig. 86
+  dimensions:
+    - source: portal-2000
+      locator: p. 157, fig. 86

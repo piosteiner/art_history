@@ -1,0 +1,76 @@
+public_id: 108295
+title: Sŏkkuram cave temple
+names:
+  - Seokguram
+  - lang: nl
+    role: translation
+    text: Seokguramgrot
+  - lang: fr
+    role: translation
+    text: grotte de Seokguram
+  - lang: it
+    role: translation
+    text: Tempio sotterraneo di Seokguram
+  - lang: ja
+    role: translation
+    text: 石窟庵
+  - lang: ko
+    role: translation
+    text: 석굴암
+  - lang: ru
+    role: translation
+    text: Соккурам
+attribution_label: Anonymous
+created: 751/774
+kind: sculpture
+medium: Granite
+materials: [stone]
+institution: bulguksa
+location: [129.34917, 35.795]
+description_md: "The cave temple on Mount T’oham outside Kyŏngju, built between 751 and 774 by the minister Kim Tae-sŏng, also the builder of Pulguk-sa: a rectangular antechamber leads into a domed chamber of Indian type where a huge granite Buddha sits in the earth-touching gesture, watching over the East Sea, surrounded by forty-one figures in relief — a masterpiece of all Buddhist art. [[source/portal-2000|pp. 73–74, fig. 39]]"
+wikidata_id: Q489820
+metadata:
+  sources: [Wikidata Q489820 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/gyeongju
+  - type: created_in_polity
+    to: polity/silla
+    sources:
+      - source: portal-2000
+        locator: pp. 73–74, fig. 39
+  - type: associated_with
+    to: movement/unified-silla-period
+    sources:
+      - source: portal-2000
+        locator: pp. 73–74, fig. 39
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Korea-Gyeongju-Seokguram-13.jpg/1280px-Korea-Gyeongju-Seokguram-13.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Korea-Gyeongju-Seokguram-13.jpg
+    license: CC BY 2.0
+    credit: by eimoberg
+identifiers:
+  viaf: "6983152563121015560004"
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 73–74, fig. 39
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q489820
+  medium:
+    - source: portal-2000
+      locator: pp. 73–74, fig. 39
+  created:
+    - source: portal-2000
+      locator: pp. 73–74, fig. 39
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q489820
+  materials:
+    - source: portal-2000
+      locator: pp. 73–74, fig. 39
+  institution:
+    - source: portal-2000
+      locator: pp. 73–74, fig. 39

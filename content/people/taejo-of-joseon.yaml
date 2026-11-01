@@ -1,0 +1,78 @@
+public_id: 108334
+name: Taejo of Joseon
+names:
+  - kind: art_name
+    role: alternative
+    text: 송헌
+  - kind: art_name
+    role: alternative
+    text: 송헌거사
+  - kind: art_name
+    role: alternative
+    text: 松軒
+  - lang: ko
+    role: original
+    text: 이단
+  - Li Chenggui
+  - Zhongjie
+  - Jianyuanling
+  - Junjin
+  - Taizu
+  - Kangxian
+  - Kangxiandaiwang
+  - Li dan
+  - Songxuan
+  - Yi Seong-gye
+  - Ni Syeong-gye
+  - lang: nl
+    role: translation
+    text: Taejo van Joseon
+  - lang: fr
+    role: translation
+    text: Taejo
+  - lang: it
+    role: translation
+    text: Taejo di Joseon
+  - lang: ja
+    role: translation
+    text: 李成桂
+  - lang: ko
+    role: original
+    text: 조선 태조
+  - lang: ru
+    role: translation
+    text: Тэджо
+kind: person
+occupations: [military personnel, ruler]
+birth: 1335-10-19
+death: 1408-06-02
+wikidata_id: Q378483
+metadata:
+  sources: [Wikidata Q378483 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6a/King_Taejo_Yi_02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:King_Taejo_Yi_02.jpg
+    license: Public domain
+    credit: Jo Jung-muk(?-?), Pak Gijun(?-?), Baek Eunbae(1820-?), Yu Suk(1827-1873)
+identifiers:
+  gnd: "1054924120"
+  lc: n82140171
+  nlk: KAC201623516
+  viaf: "261389011"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q378483
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q378483
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q378483
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q378483

@@ -1,0 +1,37 @@
+public_id: 108624
+title: Amitābha triad
+attribution_label: Anonymous
+created: 13th century
+created_span: uncertain
+kind: kakemono
+medium: Ink, colours and gold paint on silk
+materials: [ink, silk, gold]
+dimensions: [123, 55.8]
+description_md: A Koryŏ Buddhist painting of breathtaking beauty — Amitābha descending with two bodhisattvas, the main figure overpoweringly large, the robes covered with roundels, the jewellery and transparent silks rendered with gold. Most such paintings survive in Japanese temples and were long thought Chinese; their re-attribution began with an exhibition at the Yamato Bunkakan in 1978. [[source/portal-2000|pp. 89–90, fig. 45]]
+relationships:
+  - type: created_in_polity
+    to: polity/goryeo
+    sources:
+      - source: portal-2000
+        locator: pp. 89–90, fig. 45
+  - type: associated_with
+    to: movement/goryeo-period
+    sources:
+      - source: portal-2000
+        locator: pp. 89–90, fig. 45
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 89–90, fig. 45
+  medium:
+    - source: portal-2000
+      locator: pp. 89–90, fig. 45
+  created:
+    - source: portal-2000
+      locator: pp. 89–90, fig. 45
+  materials:
+    - source: portal-2000
+      locator: pp. 89–90, fig. 45
+  dimensions:
+    - source: portal-2000
+      locator: pp. 89–90, fig. 45

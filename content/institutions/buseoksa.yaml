@@ -1,0 +1,40 @@
+public_id: 108271
+name: Buseoksa
+names:
+  - lang: fr
+    role: translation
+    text: Pusŏk-sa
+  - lang: it
+    role: translation
+    text: tempio di Buseoksa
+  - lang: ja
+    role: translation
+    text: 浮石寺
+  - lang: ko
+    role: translation
+    text: 부석사
+kind: temple
+place: yeongju
+location: [128.6875, 36.99885]
+website_url: http://www.pusoksa.org
+wikidata_id: Q3540839
+metadata:
+  sources: [Wikidata Q3540839 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Muryangsujeon2.jpg/1280px-Muryangsujeon2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Muryangsujeon2.jpg
+    license: CC BY-SA 2.0 kr
+    credit: ko:Excretion
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q3540839
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q3540839
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q3540839

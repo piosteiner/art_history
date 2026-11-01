@@ -1,0 +1,48 @@
+public_id: 108300
+title: P’altal Gate, Suwŏn
+names:
+  - Paldalmun
+  - lang: ko
+    role: translation
+    text: 팔달문
+attribution_label: Anonymous
+created: 1794/1796
+kind: building
+medium: Stone and wood
+materials: [stone, wood]
+description_md: "The south gate of the new city wall of Suwŏn, which [[person/jeongjo-of-joseon]] built near the tomb of his father [[person/crown-prince-sado]] to atone for his murder by King Yŏngjo: a double-roofed gate with baffled walls, built under Prime Minister [[person/chae-je-gong]] with Western-inspired techniques and cranes devised by [[person/jeong-yak-yong]]. [[source/portal-2000|p. 121, fig. 61]]"
+wikidata_id: Q12621565
+metadata:
+  sources: [Wikidata Q12621565 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: p. 121, fig. 61
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: p. 121, fig. 61
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d2/Hwaseong_fortress%28Suwon%29.png
+    source_url: https://commons.wikimedia.org/wiki/File:Hwaseong_fortress(Suwon).png
+    license: CC BY-SA 4.0
+    credit: June Hee Lee
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 121, fig. 61
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q12621565
+  medium:
+    - source: portal-2000
+      locator: p. 121, fig. 61
+  created:
+    - source: portal-2000
+      locator: p. 121, fig. 61
+  materials:
+    - source: portal-2000
+      locator: p. 121, fig. 61

@@ -1,0 +1,34 @@
+public_id: 108654
+title: Child Under a Tree
+creator: chang-ucchin
+created: 1960
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [41, 32]
+description_md: "[[artist/chang-ucchin]], a friend of Kim Whan-gi, painted a naive dream world compared with Klee and Rousseau — an individualist who cannot be labelled. [[source/portal-2000|p. 178, fig. 101]]"
+relationships:
+  - type: associated_with
+    to: movement/modern-art
+    sources:
+      - source: portal-2000
+        locator: p. 178, fig. 101
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 178, fig. 101
+  medium:
+    - source: portal-2000
+      locator: p. 178, fig. 101
+  created:
+    - source: portal-2000
+      locator: p. 178, fig. 101
+  creator:
+    - source: portal-2000
+      locator: p. 178, fig. 101
+  materials:
+    - source: portal-2000
+      locator: p. 178, fig. 101
+  dimensions:
+    - source: portal-2000
+      locator: p. 178, fig. 101

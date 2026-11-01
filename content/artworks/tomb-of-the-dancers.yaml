@@ -1,0 +1,29 @@
+public_id: 108695
+title: Tomb of the Dancers
+attribution_label: Anonymous
+created: 4th century–6th century
+created_span: uncertain
+kind: wall-painting
+medium: Wall painting
+description_md: "A fifth-century tomb at Tong’gou near Ji’an (Ji’an Tomb no. 1), the early Koguryŏ capital: wall paintings of dancers in long-sleeved jackets and trousers tied at the ankles, armoured horsemen and a hunt — invaluable sources on the dress, architecture and beliefs of Koguryŏ. [[source/portal-2000|pp. 46–47, fig. 23]]"
+relationships:
+  - type: created_in_polity
+    to: polity/goguryeo
+    sources:
+      - source: portal-2000
+        locator: pp. 46–47, fig. 23
+  - type: associated_with
+    to: movement/three-kingdoms-period-korea
+    sources:
+      - source: portal-2000
+        locator: pp. 46–47, fig. 23
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 46–47, fig. 23
+  medium:
+    - source: portal-2000
+      locator: pp. 46–47, fig. 23
+  created:
+    - source: portal-2000
+      locator: pp. 46–47, fig. 23

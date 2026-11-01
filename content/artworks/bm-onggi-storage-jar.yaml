@@ -1,0 +1,31 @@
+public_id: 108643
+title: Onggi storage jar
+attribution_label: Anonymous
+created: 1880/1920
+kind: jar
+medium: High-fired earthenware
+materials: [onggi]
+dimensions: [97]
+description_md: A large lidded storage jar of [[onggi]], paddled inside and decorated outside with stylized plants made by the potter’s thumbs in the wet glaze — the jars that stood on the terrace of every house for kimchi, soy and pepper paste. [[source/portal-2000|pp. 160–161, fig. 88]]
+relationships:
+  - type: associated_with
+    to: movement/korean-empire
+    sources:
+      - source: portal-2000
+        locator: pp. 160–161, fig. 88
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 160–161, fig. 88
+  medium:
+    - source: portal-2000
+      locator: pp. 160–161, fig. 88
+  created:
+    - source: portal-2000
+      locator: pp. 160–161, fig. 88
+  materials:
+    - source: portal-2000
+      locator: pp. 160–161, fig. 88
+  dimensions:
+    - source: portal-2000
+      locator: pp. 160–161, fig. 88

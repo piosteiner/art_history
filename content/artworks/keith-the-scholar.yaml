@@ -1,0 +1,30 @@
+public_id: 108675
+title: The Scholar
+creator: elizabeth-keith
+created: 1921
+kind: Japanese woodblock print
+medium: Colour woodcut
+materials: [paper]
+description_md: A colour woodcut by the Scottish artist [[artist/elizabeth-keith]] (1887–1956), who first visited Korea in 1919 and, like other Western women artists before 1910 and after, made prints of local people and places. [[source/portal-2000|p. 15, fig. 4]]
+relationships:
+  - type: associated_with
+    to: movement/japanese-colonial-period-korea
+    sources:
+      - source: portal-2000
+        locator: p. 15, fig. 4
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 15, fig. 4
+  medium:
+    - source: portal-2000
+      locator: p. 15, fig. 4
+  created:
+    - source: portal-2000
+      locator: p. 15, fig. 4
+  creator:
+    - source: portal-2000
+      locator: p. 15, fig. 4
+  materials:
+    - source: portal-2000
+      locator: p. 15, fig. 4

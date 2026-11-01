@@ -1,0 +1,33 @@
+public_id: 108669
+title: Horse-shaped belt buckle
+attribution_label: Anonymous
+created: 2nd century BCE–1st century BCE
+created_span: uncertain
+kind: buckle
+medium: Bronze
+materials: [bronze]
+dimensions: [8]
+dimensions_note: length
+description_md: A bronze belt hook in the form of a horse — with tiger-shaped hooks, fine-lined mirrors, halberds and jingle bells, part of the distinctly Koreanized bronze culture of the late Bronze Age. [[source/portal-2000|p. 35, fig. 16]]
+relationships:
+  - type: associated_with
+    to: movement/korean-early-iron-age
+    sources:
+      - source: portal-2000
+        locator: p. 35, fig. 16
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 35, fig. 16
+  medium:
+    - source: portal-2000
+      locator: p. 35, fig. 16
+  created:
+    - source: portal-2000
+      locator: p. 35, fig. 16
+  materials:
+    - source: portal-2000
+      locator: p. 35, fig. 16
+  dimensions:
+    - source: portal-2000
+      locator: p. 35, fig. 16

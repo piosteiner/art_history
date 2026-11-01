@@ -1,0 +1,32 @@
+public_id: 108313
+name: Suh Se-ok
+given_name: Suh
+family_name: Se-ok
+names:
+  - Sŏ Se-ok
+  - Se Ok Suh
+  - Suh Se Ok
+  - lang: ja
+    role: translation
+    text: 徐世鈺
+  - lang: ko
+    role: translation
+    text: 서세옥
+birth: 1929
+death: 2020-11-29
+wikidata_id: Q16170392
+metadata:
+  sources: [Wikidata Q16170392 (retrieved 2026-11-01)]
+identifiers:
+  nlk: KAC201429340
+  ulan: "500332203"
+  viaf: "305511629"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q16170392
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q16170392

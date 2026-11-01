@@ -1,0 +1,38 @@
+public_id: 108627
+title: Paduk board and pieces
+attribution_label: Anonymous
+created: 18th century–19th century
+created_span: uncertain
+kind: game
+medium: Wood, shell and stone
+materials: [wood, stone]
+dimensions: [40]
+dimensions_note: width
+description_md: A wooden [[baduk]] board, a hollow table with resonating wires inside, with pieces of shell and stone. [[source/portal-2000|p. 164, fig. 91]]
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: p. 164, fig. 91
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: p. 164, fig. 91
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 164, fig. 91
+  medium:
+    - source: portal-2000
+      locator: p. 164, fig. 91
+  created:
+    - source: portal-2000
+      locator: p. 164, fig. 91
+  materials:
+    - source: portal-2000
+      locator: p. 164, fig. 91
+  dimensions:
+    - source: portal-2000
+      locator: p. 164, fig. 91

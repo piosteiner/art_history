@@ -1,0 +1,20 @@
+public_id: 108305
+name: Yi Myeong-gi
+given_name: Yi
+family_name: Myeong-gi
+names:
+  - lang: ja
+    role: translation
+    text: 李命基
+  - lang: ko
+    role: translation
+    text: 이명기 (화가)
+birth: 1756
+wikidata_id: Q15732854
+metadata:
+  sources: [Wikidata Q15732854 (retrieved 2026-11-01)]
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q15732854

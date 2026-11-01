@@ -1,0 +1,18 @@
+public_id: 108302
+name: Jeong Seon
+given_name: Jeong
+family_name: Seon
+birth: 1676
+death: 1759
+wikidata_id: Q489785
+metadata:
+  sources: [Wikidata Q489785 (retrieved 2026-11-01)]
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q489785
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q489785

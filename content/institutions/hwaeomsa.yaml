@@ -1,0 +1,32 @@
+public_id: 108274
+name: Hwaeomsa
+names:
+  - lang: ja
+    role: translation
+    text: 華厳寺
+  - lang: zh
+    role: translation
+    text: 华严寺
+  - lang: ko
+    role: translation
+    text: 화엄사
+place: masan-myeon
+location: [127.4973, 35.25654]
+website_url: http://www.hwaeomsa.org/
+wikidata_id: Q491233
+metadata:
+  sources: [Wikidata Q491233 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Korea-Mountain-Jirisan-Hwaeomsa-01.jpg/1280px-Korea-Mountain-Jirisan-Hwaeomsa-01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Korea-Mountain-Jirisan-Hwaeomsa-01.jpg
+    license: CC BY 2.0
+    credit: by eimoberg
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q491233
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q491233

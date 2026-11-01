@@ -1,0 +1,32 @@
+public_id: 108317
+name: Woo-Soung Chang
+given_name: Woo-Soung
+family_name: Chang
+names:
+  - Woljeon
+  - lang: nl
+    role: translation
+    text: U-sŏng Chang
+  - lang: ko
+    role: translation
+    text: 장우성
+birth: 1912
+death: 2005-02-28
+wikidata_id: Q12614626
+metadata:
+  sources: [Wikidata Q12614626 (retrieved 2026-11-01)]
+identifiers:
+  gnd: "118520083"
+  idref: "027343391"
+  lc: n82128471
+  nlk: KAC201316454
+  viaf: "3068028"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q12614626
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q12614626

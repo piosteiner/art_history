@@ -1,0 +1,69 @@
+public_id: 108267
+name: National Museum of Korea
+names:
+  - lang: fr
+    role: translation
+    text: musée national de Corée
+  - lang: de
+    role: translation
+    text: Koreanisches Nationalmuseum
+  - lang: it
+    role: translation
+    text: Museo nazionale della Corea
+  - lang: es
+    role: translation
+    text: Museo Nacional de Corea
+  - lang: ja
+    role: translation
+    text: 国立中央博物館
+  - lang: zh
+    role: translation
+    text: 韩国国立中央博物馆
+  - lang: ko
+    role: translation
+    text: 국립중앙박물관
+  - lang: ru
+    role: translation
+    text: Национальный музей Кореи
+kind: museum
+founded: 1945
+place: seoul
+location: [126.98028, 37.52389]
+address: 137 Seobinggo-ro, Yongsan-gu
+website_url: http://www.museum.go.kr/
+wikidata_id: Q494407
+metadata:
+  sources: [Wikidata Q494407 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Front_view_of_national_museum_of_korea.jpg/1280px-Front_view_of_national_museum_of_korea.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Front_view_of_national_museum_of_korea.jpg
+    license: CC BY-SA 3.0
+    credit: Jinah78
+identifiers:
+  bnf: 12190377w
+  gnd: 5006808-8
+  idref: "030502403"
+  lc: n81039362
+  ulan: "500308894"
+  viaf: "158012764"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q494407
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q494407
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q494407
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q494407
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q494407

@@ -1,0 +1,43 @@
+public_id: 108640
+title: Lacquer box with peony scrolls
+attribution_label: Anonymous
+created: 16th century–17th century
+created_span: uncertain
+kind: box
+medium: Lacquered wood with mother-of-pearl inlay
+materials: [lacquer, wood, mother-of-pearl]
+dimensions: [39]
+dimensions_note: length
+institution: british-museum
+inventory_number: OA 1979.12-19.1
+description_md: A wooden box lacquered black and inlaid in mother-of-pearl with peony scrolls; the open flowers and metal wire date it to the sixteenth or seventeenth century. On the cover of Portal’s book; in the [[institution/british-museum]]. [[source/portal-2000|pp. 134–135, fig. 71]]
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 134–135, fig. 71
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 134–135, fig. 71
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 134–135, fig. 71
+  medium:
+    - source: portal-2000
+      locator: pp. 134–135, fig. 71
+  created:
+    - source: portal-2000
+      locator: pp. 134–135, fig. 71
+  materials:
+    - source: portal-2000
+      locator: pp. 134–135, fig. 71
+  dimensions:
+    - source: portal-2000
+      locator: pp. 134–135, fig. 71
+  institution:
+    - source: portal-2000
+      locator: pp. 134–135, fig. 71

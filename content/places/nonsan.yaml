@@ -1,0 +1,16 @@
+public_id: 108275
+name: Nonsan
+kind: settlement
+location: [127.08472, 36.20389]
+wikidata_id: Q42088
+metadata:
+  sources: [Wikidata Q42088 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q42088
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q42088

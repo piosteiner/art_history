@@ -1,0 +1,44 @@
+public_id: 108308
+name: Lee Jung Seob
+names:
+  - lang: ko
+    role: original
+    text: 이중섭
+  - Yi Chung-sŏp
+  - Chung-sop Yi
+  - Yi Chung-sop
+  - Joong Seop Lee
+  - Lee Jung-seob
+  - Choon Sup Lee
+  - lang: fr
+    role: translation
+    text: Lee Jung-seop
+  - lang: ja
+    role: translation
+    text: 李仲燮
+birth: 1916-04-10
+death: 1956-09-06
+wikidata_id: Q3789181
+metadata:
+  sources: [Wikidata Q3789181 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3e/%EC%9D%B4%EC%A4%91%EC%84%AD_%ED%99%94%EB%B0%B1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%EC%9D%B4%EC%A4%91%EC%84%AD_%ED%99%94%EB%B0%B1.jpg
+    license: Public domain
+    credit: 동아일보
+identifiers:
+  gnd: "1123972621"
+  idref: "178169188"
+  lc: n82028196
+  nlk: KAC201515865
+  ulan: "500328406"
+  viaf: "18560143"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3789181
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3789181

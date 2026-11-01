@@ -1,0 +1,13 @@
+public_id: 108612
+name: pojagi
+names:
+  - lang: ja
+    role: original
+    text: "{보자기|보자기}"
+category: object type
+parent: textile
+definition: A wrapping cloth, often a patchwork of left-over scraps, used to wrap presents and cover food.
+sources:
+  definition:
+    - source: portal-2000
+      locator: p. 157

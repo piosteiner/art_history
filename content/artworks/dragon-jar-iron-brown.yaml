@@ -1,0 +1,37 @@
+public_id: 108659
+title: Porcelain jar with dragon in iron brown
+attribution_label: Anonymous
+created: 17th century–18th century
+created_span: uncertain
+kind: jar
+medium: Porcelain with underglaze iron-brown decoration
+materials: [porcelain]
+dimensions: [33.7]
+description_md: A large storage jar with a dragon painted in underglaze iron brown. [[source/portal-2000|pp. 140–141, fig. 75]]
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 140–141, fig. 75
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 140–141, fig. 75
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 140–141, fig. 75
+  medium:
+    - source: portal-2000
+      locator: pp. 140–141, fig. 75
+  created:
+    - source: portal-2000
+      locator: pp. 140–141, fig. 75
+  materials:
+    - source: portal-2000
+      locator: pp. 140–141, fig. 75
+  dimensions:
+    - source: portal-2000
+      locator: pp. 140–141, fig. 75

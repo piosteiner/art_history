@@ -1,0 +1,91 @@
+public_id: 108324
+name: Jeongjo of Joseon
+names:
+  - kind: art_name
+    role: alternative
+    text: 홍재
+  - lang: ko
+    role: original
+    text: 이산
+  - Chŏngjo
+  - Joseon Jeongjo
+  - Hongjae Yi
+  - Song Yi
+  - Mangi
+  - King of Korea Chŏngjo
+  - ho Hongje
+  - Yi Hongjae
+  - Chongjo roi de Corée
+  - Yi Chongjo
+  - Jungjo
+  - king of Korea Chongjo
+  - Hong-jae Yi
+  - Chongjo Taewang
+  - Yi Song
+  - cha Hyŏngun
+  - Chongjo roi de Coree
+  - god of korea
+  - Li Suan
+  - King Jeongjo
+  - Yi San
+  - lang: nl
+    role: translation
+    text: Jeongjo van Joseon
+  - lang: fr
+    role: translation
+    text: Jeongjo
+  - lang: it
+    role: translation
+    text: Jeongjo di Joseon
+  - lang: es
+    role: translation
+    text: Jeongjo de Joseon
+  - lang: ja
+    role: translation
+    text: 正祖
+  - lang: zh
+    role: translation
+    text: 朝鮮正祖
+  - lang: ko
+    role: original
+    text: 조선 정조
+  - lang: ru
+    role: translation
+    text: Чонджо
+kind: person
+occupations: [king]
+birth: 1752-09-22
+death: 1800-06-28
+wikidata_id: Q26530
+metadata:
+  sources: [Wikidata Q26530 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1b/King_JeongJo_of_Joseon.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:King_JeongJo_of_Joseon.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "144794395"
+  gnd: "1078892806"
+  idref: "071349146"
+  lc: n81082643
+  nlk: KAC200104184
+  ulan: "500122948"
+  viaf: "61773361"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q26530
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q26530
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q26530
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q26530

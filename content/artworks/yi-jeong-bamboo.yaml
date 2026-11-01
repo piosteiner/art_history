@@ -1,0 +1,39 @@
+public_id: 108696
+title: Bamboo
+creator: yi-jeong
+created: 1567/1624
+kind: kakemono
+medium: Ink on silk
+materials: [ink, silk]
+dimensions: [122.8, 52.3]
+description_md: "Bamboo by [[artist/yi-jeong]] (1541–1624), the most famous bamboo painter of the calligraphic style: bamboo, associated with integrity and austerity, was the first subject tested for court painters. [[source/portal-2000|pp. 127–128, fig. 65]]"
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 127–128, fig. 65
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 127–128, fig. 65
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 127–128, fig. 65
+  medium:
+    - source: portal-2000
+      locator: pp. 127–128, fig. 65
+  created:
+    - source: portal-2000
+      locator: pp. 127–128, fig. 65
+  creator:
+    - source: portal-2000
+      locator: pp. 127–128, fig. 65
+  materials:
+    - source: portal-2000
+      locator: pp. 127–128, fig. 65
+  dimensions:
+    - source: portal-2000
+      locator: pp. 127–128, fig. 65

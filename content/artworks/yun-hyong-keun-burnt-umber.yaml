@@ -1,0 +1,34 @@
+public_id: 108699
+title: Burnt Umber
+creator: yun-hyong-keun
+created: 1987
+kind: painting
+medium: Oil on Korean paper
+materials: [oil paint, paper]
+dimensions: [63, 94]
+description_md: "[[artist/yun-hyong-keun]], with Park Seo-bo and Ha Chong-hyŏn a leader of the [[dansaekhwa]] of the 1970s: dark umber soaking into Korean paper in uniform blocks. [[source/portal-2000|p. 179, fig. 102]]"
+relationships:
+  - type: associated_with
+    to: movement/modern-art
+    sources:
+      - source: portal-2000
+        locator: p. 179, fig. 102
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 179, fig. 102
+  medium:
+    - source: portal-2000
+      locator: p. 179, fig. 102
+  created:
+    - source: portal-2000
+      locator: p. 179, fig. 102
+  creator:
+    - source: portal-2000
+      locator: p. 179, fig. 102
+  materials:
+    - source: portal-2000
+      locator: p. 179, fig. 102
+  dimensions:
+    - source: portal-2000
+      locator: p. 179, fig. 102

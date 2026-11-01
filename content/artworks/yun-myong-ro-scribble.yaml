@@ -1,0 +1,31 @@
+public_id: 108700
+title: Scribble
+attribution_label: Yun Myŏng-ro
+created: 1991
+kind: print
+medium: Lithograph
+materials: [paper]
+dimensions: [53, 76]
+description_md: A lithograph by Yun Myŏng-ro (born 1936), influential in the development of Korean contemporary printmaking — abstract, calligraphic. [[source/portal-2000|p. 184, fig. 105]]
+relationships:
+  - type: associated_with
+    to: movement/modern-art
+    sources:
+      - source: portal-2000
+        locator: p. 184, fig. 105
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 184, fig. 105
+  medium:
+    - source: portal-2000
+      locator: p. 184, fig. 105
+  created:
+    - source: portal-2000
+      locator: p. 184, fig. 105
+  materials:
+    - source: portal-2000
+      locator: p. 184, fig. 105
+  dimensions:
+    - source: portal-2000
+      locator: p. 184, fig. 105

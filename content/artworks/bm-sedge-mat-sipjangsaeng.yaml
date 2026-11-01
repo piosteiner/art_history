@@ -1,0 +1,37 @@
+public_id: 108647
+title: Sedge mat with the ten symbols of longevity
+attribution_label: Anonymous
+created: 19th century
+created_span: uncertain
+kind: mat
+medium: Woven sedge
+materials: [sedge]
+institution: british-museum
+description_md: A sedge mat from Kanghwa island woven with the [[sipjangsaeng]]; shown in the Korean pavilion of the Anglo-Japanese exhibition in London in 1910 and given by E. Ogita to the [[institution/british-museum]]. [[source/portal-2000|pp. 162, 169, fig. 89]]
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 162, 169, fig. 89
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 162, 169, fig. 89
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 162, 169, fig. 89
+  medium:
+    - source: portal-2000
+      locator: pp. 162, 169, fig. 89
+  created:
+    - source: portal-2000
+      locator: pp. 162, 169, fig. 89
+  materials:
+    - source: portal-2000
+      locator: pp. 162, 169, fig. 89
+  institution:
+    - source: portal-2000
+      locator: pp. 162, 169, fig. 89

@@ -1,0 +1,37 @@
+public_id: 108641
+title: Maebyŏng with iron-brown chrysanthemums
+attribution_label: Anonymous
+created: 12th century
+created_span: uncertain
+kind: maebyeong
+medium: Stoneware with underglaze iron-brown decoration
+materials: [stoneware]
+dimensions: [25]
+description_md: A stoneware [[maebyeong]] with large chrysanthemums painted in underglaze iron brown under a celadon glaze — a technique linked with Chinese Cizhou wares. [[source/portal-2000|p. 102, fig. 53]]
+relationships:
+  - type: created_in_polity
+    to: polity/goryeo
+    sources:
+      - source: portal-2000
+        locator: p. 102, fig. 53
+  - type: associated_with
+    to: movement/goryeo-period
+    sources:
+      - source: portal-2000
+        locator: p. 102, fig. 53
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 102, fig. 53
+  medium:
+    - source: portal-2000
+      locator: p. 102, fig. 53
+  created:
+    - source: portal-2000
+      locator: p. 102, fig. 53
+  materials:
+    - source: portal-2000
+      locator: p. 102, fig. 53
+  dimensions:
+    - source: portal-2000
+      locator: p. 102, fig. 53

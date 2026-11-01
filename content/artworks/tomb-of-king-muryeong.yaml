@@ -1,0 +1,64 @@
+public_id: 108286
+title: Tomb of King Muryŏng
+names:
+  - Tomb of King Muryeong
+  - lang: fr
+    role: translation
+    text: Tombes royales de Songsan-ri
+  - lang: de
+    role: translation
+    text: Königliche Gräber von Songsan-ri
+  - lang: ja
+    role: translation
+    text: 武寧王陵
+  - lang: ko
+    role: translation
+    text: 무령왕릉
+attribution_label: Anonymous
+created: 525
+kind: tomb
+medium: Brick
+materials: [brick]
+location: [127.11278, 36.46056]
+description_md: "The brick chamber tomb of [[person/muryeong-of-baekje]] (r. 501–523) at Kongju, discovered intact in 1971: its epitaph tablets name the king and the date of his burial (525); a string of Liang coins paid the earth spirits for the land. Vaulted corridor and chamber, moulded bricks with lotus and geometric patterns and niches for lamps follow Chinese Liang tombs; the gold and silver ornaments are Korean. [[source/portal-2000|pp. 42, 51, fig. 22]]"
+wikidata_id: Q7818619
+metadata:
+  sources: [Wikidata Q7818619 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/gongju-si
+  - type: created_in_polity
+    to: polity/baekje
+    sources:
+      - source: portal-2000
+        locator: pp. 42, 51, fig. 22
+  - type: associated_with
+    to: movement/three-kingdoms-period-korea
+    sources:
+      - source: portal-2000
+        locator: pp. 42, 51, fig. 22
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Tomb_of_Muryeong_of_Baekje.JPG/1280px-Tomb_of_Muryeong_of_Baekje.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Tomb_of_Muryeong_of_Baekje.JPG
+    license: CC BY-SA 3.0
+    credit: Ryuch
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 42, 51, fig. 22
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q7818619
+  medium:
+    - source: portal-2000
+      locator: pp. 42, 51, fig. 22
+  created:
+    - source: portal-2000
+      locator: pp. 42, 51, fig. 22
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q7818619
+  materials:
+    - source: portal-2000
+      locator: pp. 42, 51, fig. 22

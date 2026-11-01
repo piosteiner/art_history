@@ -1,0 +1,28 @@
+public_id: 108683
+title: Porcelain plate
+creator: lee-ufan
+attribution_label: Park Young-sook (potter) and Lee Ufan (painter)
+kind: dish
+medium: Porcelain with underglaze cobalt blue
+materials: [porcelain]
+dimensions_note: diameter 30 cm
+description_md: A plate from a limited edition of tableware by the potter Park Young-sook, painted in underglaze cobalt blue with a single brushstroke by [[artist/lee-ufan]] (born 1936). [[source/portal-2000|pp. 188–189, fig. 110]]
+relationships:
+  - type: associated_with
+    to: movement/modern-art
+    sources:
+      - source: portal-2000
+        locator: pp. 188–189, fig. 110
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 188–189, fig. 110
+  medium:
+    - source: portal-2000
+      locator: pp. 188–189, fig. 110
+  creator:
+    - source: portal-2000
+      locator: pp. 188–189, fig. 110
+  materials:
+    - source: portal-2000
+      locator: pp. 188–189, fig. 110

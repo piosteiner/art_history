@@ -1,0 +1,36 @@
+public_id: 108638
+title: Guardian king (taenghwa)
+attribution_label: Anonymous
+created: 1796/1820
+kind: taenghwa
+medium: Ink and mineral colours on hemp
+materials: [ink, hemp]
+dimensions: [300, 200]
+description_md: One of the Four Heavenly Kings who guard the entrance of Korean temples, here playing a lute — a [[taenghwa]] in ink and mineral colours on hemp, 3 by 2 m. [[source/portal-2000|pp. 121–123, fig. 63]]
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 121–123, fig. 63
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 121–123, fig. 63
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 121–123, fig. 63
+  medium:
+    - source: portal-2000
+      locator: pp. 121–123, fig. 63
+  created:
+    - source: portal-2000
+      locator: pp. 121–123, fig. 63
+  materials:
+    - source: portal-2000
+      locator: pp. 121–123, fig. 63
+  dimensions:
+    - source: portal-2000
+      locator: pp. 121–123, fig. 63

@@ -1,0 +1,35 @@
+public_id: 108285
+name: Gongju-si
+names:
+  - lang: ja
+    role: translation
+    text: 公州市
+  - lang: ko
+    role: original
+    text: 공주시
+  - lang: fr
+    role: translation
+    text: Gongju
+  - lang: ru
+    role: translation
+    text: Конджу
+kind: settlement
+parent: south-korea
+country_code: KR
+location: [127.12472, 36.45556]
+wikidata_id: Q42062
+metadata:
+  sources: [Wikidata Q42062 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q42062
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q42062
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q42062

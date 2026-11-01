@@ -1,0 +1,41 @@
+public_id: 108668
+title: Hahoe mask
+attribution_label: Anonymous
+created: 13th century–14th century
+created_span: uncertain
+kind: mask
+medium: Wood
+materials: [wood]
+dimensions: [24, 16.7]
+institution: national-museum-of-korea
+description_md: One of a set of nine wooden masks from Hahoe village, in the National Museum of Korea and thought to date to the Koryŏ period — rare survivors, for masks were often burnt after a performance. Hahoe masks have separate chins attached with strings; the village’s dance-drama, part of a kut performed every ten years, mocks aristocrats and monks. [[source/portal-2000|pp. 158–160, fig. 87]]
+relationships:
+  - type: created_in_polity
+    to: polity/goryeo
+    sources:
+      - source: portal-2000
+        locator: pp. 158–160, fig. 87
+  - type: associated_with
+    to: movement/goryeo-period
+    sources:
+      - source: portal-2000
+        locator: pp. 158–160, fig. 87
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 158–160, fig. 87
+  medium:
+    - source: portal-2000
+      locator: pp. 158–160, fig. 87
+  created:
+    - source: portal-2000
+      locator: pp. 158–160, fig. 87
+  materials:
+    - source: portal-2000
+      locator: pp. 158–160, fig. 87
+  dimensions:
+    - source: portal-2000
+      locator: pp. 158–160, fig. 87
+  institution:
+    - source: portal-2000
+      locator: pp. 158–160, fig. 87

@@ -1,0 +1,35 @@
+public_id: 108676
+title: Gathering of Elders
+creator: kim-hong-do
+created: 1804
+kind: kakemono
+medium: Ink and light colours on silk
+materials: [ink, silk]
+description_md: "A gathering of elderly gentlemen (kirohoe) by [[artist/kim-hong-do]] (1745–after 1806), dated 1804: the elders seated around a courtyard under an awning, each with a tray table of white porcelain, the crowd of onlookers, horses and servants around them. [[source/portal-2000|pp. 132–133, fig. 70]]"
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 132–133, fig. 70
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 132–133, fig. 70
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 132–133, fig. 70
+  medium:
+    - source: portal-2000
+      locator: pp. 132–133, fig. 70
+  created:
+    - source: portal-2000
+      locator: pp. 132–133, fig. 70
+  creator:
+    - source: portal-2000
+      locator: pp. 132–133, fig. 70
+  materials:
+    - source: portal-2000
+      locator: pp. 132–133, fig. 70

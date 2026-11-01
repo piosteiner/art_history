@@ -1,0 +1,33 @@
+public_id: 108276
+name: Gwanchoksa
+names:
+  - lang: zh
+    role: translation
+    text: 灌燭寺
+  - lang: ko
+    role: translation
+    text: 관촉사
+kind: temple
+place: nonsan
+location: [127.1131, 36.18828]
+wikidata_id: Q97009868
+metadata:
+  sources: [Wikidata Q97009868 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Gwanchoksa_-_Courtyard_IMG_20160928_035626.jpg/1280px-Gwanchoksa_-_Courtyard_IMG_20160928_035626.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gwanchoksa_-_Courtyard_IMG_20160928_035626.jpg
+    license: CC BY-SA 4.0
+    credit: G41rn8
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q97009868
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q97009868
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q97009868

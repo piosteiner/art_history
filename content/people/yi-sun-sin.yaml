@@ -1,0 +1,57 @@
+public_id: 108333
+name: Yi Sun-sin
+names:
+  - lang: ko
+    role: original
+    text: 이순신
+  - Yi Sun-shin
+  - Admiral Yi Sun-sin
+  - Yi Sunsin
+  - lang: it
+    role: translation
+    text: Yi Sun Sin
+  - lang: es
+    role: translation
+    text: Yi Sun Sin Son
+  - lang: ja
+    role: translation
+    text: 李舜臣
+  - lang: ru
+    role: translation
+    text: Ли Сунсин
+kind: person
+occupations: [naval officer, soldier]
+birth: 1545-04-28
+death: 1598-12-16
+wikidata_id: Q50184
+metadata:
+  sources: [Wikidata Q50184 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Bust_of_Yi_Sun-sin_01.jpg/1280px-Bust_of_Yi_Sun-sin_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bust_of_Yi_Sun-sin_01.jpg
+    license: KOGL Type 1
+    credit: Unknown, War Memorial of Korea
+identifiers:
+  bnf: 15047622b
+  gnd: "133596648"
+  idref: "075967510"
+  lc: n81079067
+  nlk: KAC201113329
+  viaf: "64291379"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q50184
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q50184
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q50184
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q50184

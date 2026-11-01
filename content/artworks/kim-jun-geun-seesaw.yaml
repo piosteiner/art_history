@@ -1,0 +1,39 @@
+public_id: 108678
+title: Girls on a seesaw
+creator: kim-jun-geun
+created: 1880/1900
+kind: drawing
+medium: Ink and colour on paper
+materials: [ink, paper]
+dimensions: [20, 12.5]
+description_md: "A drawing by [[artist/kim-jun-geun]] (Kisan), one of the sets of drawings of Korean customs made for foreigners after Korea opened to Western visitors: girls in traditional dress jumping on a seesaw — a way to glimpse the world beyond the family walls. [[source/portal-2000|pp. 162–163, fig. 90]]"
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 162–163, fig. 90
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 162–163, fig. 90
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 162–163, fig. 90
+  medium:
+    - source: portal-2000
+      locator: pp. 162–163, fig. 90
+  created:
+    - source: portal-2000
+      locator: pp. 162–163, fig. 90
+  creator:
+    - source: portal-2000
+      locator: pp. 162–163, fig. 90
+  materials:
+    - source: portal-2000
+      locator: pp. 162–163, fig. 90
+  dimensions:
+    - source: portal-2000
+      locator: pp. 162–163, fig. 90

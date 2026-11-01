@@ -1,0 +1,66 @@
+public_id: 108293
+title: Ch’ŏmsŏngdae observatory
+names:
+  - Cheomseongdae
+  - lang: ja
+    role: translation
+    text: 慶州瞻星台
+  - lang: zh
+    role: translation
+    text: 瞻星臺
+  - lang: ko
+    role: translation
+    text: 첨성대
+  - lang: ru
+    role: translation
+    text: Чхомсондэ
+attribution_label: Anonymous
+created: 632/647
+created_span: uncertain
+kind: building
+medium: Stone
+materials: [stone]
+location: [129.219, 35.83472]
+description_md: "The bottle-shaped astronomical observatory built in Kyŏngju under [[person/queen-seondeok-of-silla]] (r. 632–647): 9 m high, of 364 stone blocks in 27 courses — thought the oldest existing observatory in East Asia. Its round body and square top follow the Chinese “round heaven, square earth”; a south-facing window lets sunlight fall to the floor at the equinoxes. [[source/portal-2000|pp. 70–71, fig. 36]]"
+wikidata_id: Q562765
+metadata:
+  sources: [Wikidata Q562765 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/gyeongju
+    period: 7th century
+  - type: created_in_polity
+    to: polity/silla
+    sources:
+      - source: portal-2000
+        locator: pp. 70–71, fig. 36
+  - type: associated_with
+    to: movement/three-kingdoms-period-korea
+    sources:
+      - source: portal-2000
+        locator: pp. 70–71, fig. 36
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Korea-Gyeongju-Cheomseongdae-04.jpg/1280px-Korea-Gyeongju-Cheomseongdae-04.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Korea-Gyeongju-Cheomseongdae-04.jpg
+    license: CC BY-SA 3.0
+    credit: by Junho Jung at Flickr from South Korea
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 70–71, fig. 36
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q562765
+  medium:
+    - source: portal-2000
+      locator: pp. 70–71, fig. 36
+  created:
+    - source: portal-2000
+      locator: pp. 70–71, fig. 36
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q562765
+  materials:
+    - source: portal-2000
+      locator: pp. 70–71, fig. 36

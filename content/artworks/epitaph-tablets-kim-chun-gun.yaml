@@ -1,0 +1,37 @@
+public_id: 108660
+title: Epitaph tablets of Kim Chun-gŭn
+attribution_label: Anonymous
+created: c. 1849
+created_span: uncertain
+kind: tablet
+medium: Porcelain with underglaze cobalt blue
+materials: [porcelain]
+dimensions: [9, 8]
+description_md: A set of fourteen porcelain tablets with underglaze cobalt-blue calligraphy recording the lineage and achievements of Kim Chun-gŭn (1814–1847), buried with him. [[source/portal-2000|p. 139, fig. 74]]
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: p. 139, fig. 74
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: p. 139, fig. 74
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 139, fig. 74
+  medium:
+    - source: portal-2000
+      locator: p. 139, fig. 74
+  created:
+    - source: portal-2000
+      locator: p. 139, fig. 74
+  materials:
+    - source: portal-2000
+      locator: p. 139, fig. 74
+  dimensions:
+    - source: portal-2000
+      locator: p. 139, fig. 74

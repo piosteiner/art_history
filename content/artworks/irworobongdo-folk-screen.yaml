@@ -1,0 +1,37 @@
+public_id: 108671
+title: Sun, Moon and Five Peaks (six-panel screen)
+attribution_label: Anonymous
+created: 19th century
+created_span: uncertain
+kind: byōbu
+medium: Six-panel screen
+materials: [paper]
+dimensions: [90.5, 270.5]
+description_md: "A folk version of the [[irworobongdo]] that stood behind the throne: five peaks rise from the waves like the isles of the immortals, between pines and waterfalls, the sun (the king) and the moon (the queen) above. [[source/portal-2000|pp. 146–147, fig. 80]]"
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 146–147, fig. 80
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 146–147, fig. 80
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 146–147, fig. 80
+  medium:
+    - source: portal-2000
+      locator: pp. 146–147, fig. 80
+  created:
+    - source: portal-2000
+      locator: pp. 146–147, fig. 80
+  materials:
+    - source: portal-2000
+      locator: pp. 146–147, fig. 80
+  dimensions:
+    - source: portal-2000
+      locator: pp. 146–147, fig. 80

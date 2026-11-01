@@ -1,0 +1,87 @@
+public_id: 108332
+name: Kim Jeong-hui
+names:
+  - kind: art_name
+    role: alternative
+    text: 추사
+  - kind: art_name
+    role: alternative
+    text: 완당
+  - kind: art_name
+    role: alternative
+    text: 예당
+  - kind: art_name
+    role: alternative
+    text: 시암
+  - kind: art_name
+    role: alternative
+    text: 과노
+  - kind: art_name
+    role: alternative
+    text: 농장인
+  - kind: art_name
+    role: alternative
+    text: 천축고선생
+  - lang: ko
+    role: original
+    text: 김정희
+  - 김 정희
+  - Wandang Kim
+  - Ch'usa
+  - Chong-hui Kim
+  - Wandang
+  - Ch'usa Kim
+  - Kim Chong-hui
+  - Chusa
+  - Chŏng-hŭi Kim
+  - Kim Chŏng-hŭi
+  - Jung-Hee Kim
+  - ho Ch'usa
+  - Jeong-Hui Kim
+  - Gim Jeong-hui
+  - lang: it
+    role: translation
+    text: Kim Chŏng-hui
+  - lang: ja
+    role: translation
+    text: 金正喜
+  - lang: ru
+    role: translation
+    text: Ким Чон Хи
+kind: person
+occupations: [philosopher, writer, painter, calligrapher]
+birth: 1786-06-03
+death: 1856-10-10
+wikidata_id: Q626484
+metadata:
+  sources: [Wikidata Q626484 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/36/Kim_Jeong-hui.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kim_Jeong-hui.jpg
+    license: Public domain
+    credit: Yi Han-cheol (circa 1812- circa 1893)
+identifiers:
+  bnf: "144073227"
+  gnd: 11864016X
+  idref: "116883316"
+  lc: n81139098
+  nlk: KAC200102713
+  ulan: "500320527"
+  viaf: "74646428"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q626484
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q626484
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q626484
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q626484

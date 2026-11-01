@@ -1,0 +1,31 @@
+public_id: 108667
+title: Light
+attribution_label: Ha Dong-chul
+created: 1989
+kind: print
+medium: Etching
+materials: [paper]
+dimensions: [43.5, 45]
+description_md: An etching by Ha Dong-chul (born 1942), trained in the United States and long president of the Contemporary Printing Association — a work of light. [[source/portal-2000|pp. 184–185, fig. 106]]
+relationships:
+  - type: associated_with
+    to: movement/modern-art
+    sources:
+      - source: portal-2000
+        locator: pp. 184–185, fig. 106
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 184–185, fig. 106
+  medium:
+    - source: portal-2000
+      locator: pp. 184–185, fig. 106
+  created:
+    - source: portal-2000
+      locator: pp. 184–185, fig. 106
+  materials:
+    - source: portal-2000
+      locator: pp. 184–185, fig. 106
+  dimensions:
+    - source: portal-2000
+      locator: pp. 184–185, fig. 106

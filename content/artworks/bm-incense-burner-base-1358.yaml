@@ -1,0 +1,40 @@
+public_id: 108639
+title: Base of a royal incense burner, 1358
+attribution_label: Anonymous
+created: 1358
+kind: censer
+medium: Cast bronze inlaid with silver
+materials: [bronze, silver]
+dimensions: [21.3]
+institution: british-museum
+description_md: The base of a cast-bronze incense burner inlaid with silver thread and strips — clouds and scrolls on the dark patina. The inscription incised around it says it was part of a royal incense burner made for [[person/gongmin-of-goryeo]] in 1358 as a pious offering at Sojae temple. [[source/portal-2000|pp. 95–96, figs. 48a–b]]
+relationships:
+  - type: created_in_polity
+    to: polity/goryeo
+    sources:
+      - source: portal-2000
+        locator: pp. 95–96, figs. 48a–b
+  - type: associated_with
+    to: movement/goryeo-period
+    sources:
+      - source: portal-2000
+        locator: pp. 95–96, figs. 48a–b
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 95–96, figs. 48a–b
+  medium:
+    - source: portal-2000
+      locator: pp. 95–96, figs. 48a–b
+  created:
+    - source: portal-2000
+      locator: pp. 95–96, figs. 48a–b
+  materials:
+    - source: portal-2000
+      locator: pp. 95–96, figs. 48a–b
+  dimensions:
+    - source: portal-2000
+      locator: pp. 95–96, figs. 48a–b
+  institution:
+    - source: portal-2000
+      locator: pp. 95–96, figs. 48a–b

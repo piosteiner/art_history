@@ -1,0 +1,33 @@
+public_id: 108319
+name: Kim Yik-yung
+given_name: Kim
+family_name: Yik-yung
+names:
+  - Kim Yik-young
+  - lang: it
+    role: translation
+    text: Yikyung Kim
+  - lang: ko
+    role: translation
+    text: 김익영
+birth: 1935-02-19
+wikidata_id: Q6409619
+metadata:
+  sources: [Wikidata Q6409619 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Kim_Yikyung_profile.jpg/1280px-Kim_Yikyung_profile.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kim_Yikyung_profile.jpg
+    license: CC BY-SA 3.0
+    credit: Ceramic artist Kim Yikyung
+identifiers:
+  gnd: "130168513"
+  lc: no2019182697
+  nlk: KAC202319835
+  rkd: "349329"
+  ulan: "500639875"
+  viaf: "72492263"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q6409619

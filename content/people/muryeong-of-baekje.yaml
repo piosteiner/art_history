@@ -1,0 +1,47 @@
+public_id: 108329
+name: Muryeong of Baekje
+names:
+  - lang: ko
+    role: original
+    text: 무령왕
+  - Muryeong
+  - lang: es
+    role: translation
+    text: Muryeong de Baekje
+  - lang: ja
+    role: translation
+    text: 武寧王
+kind: person
+occupations: [monarch]
+birth: 462
+death: 523
+wikidata_id: Q497878
+metadata:
+  sources: [Wikidata Q497878 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Portraits_of_kings_at_Tongiljeon.jpg/1280px-Portraits_of_kings_at_Tongiljeon.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portraits_of_kings_at_Tongiljeon.jpg
+    license: CC BY-SA 4.0
+    credit: Christophe95
+identifiers:
+  bnf: "155798205"
+  lc: nr93046116
+  nlk: KAC201619901
+  viaf: "103640960"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q497878
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q497878
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q497878
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q497878

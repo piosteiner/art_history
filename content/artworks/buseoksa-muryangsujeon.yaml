@@ -1,0 +1,60 @@
+public_id: 108298
+title: Hall of Eternal Life (Muryangsu-jŏn), Pusŏk-sa
+names:
+  - Muryangsujeon
+  - lang: ko
+    role: translation
+    text: 부석사 무량수전
+attribution_label: Anonymous
+created: 13th century
+created_span: uncertain
+kind: building
+medium: Wood
+materials: [wood]
+institution: buseoksa
+location: [128.6875, 36.99894]
+description_md: "One of the earliest wooden buildings surviving in Korea, at [[institution/buseoksa]]: tapered columns, three-tiered roof supports, a dual roof edge and an open, ceilingless hall that gives a sense of grandeur. [[source/portal-2000|p. 84, fig. 42]]"
+wikidata_id: Q16093278
+metadata:
+  sources: [Wikidata Q16093278 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/yeongju-si
+  - type: created_in_polity
+    to: polity/goryeo
+    sources:
+      - source: portal-2000
+        locator: p. 84, fig. 42
+  - type: associated_with
+    to: movement/goryeo-period
+    sources:
+      - source: portal-2000
+        locator: p. 84, fig. 42
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Muryangsujeon2.jpg/1280px-Muryangsujeon2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Muryangsujeon2.jpg
+    license: CC BY-SA 2.0 kr
+    credit: ko:Excretion
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 84, fig. 42
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q16093278
+  medium:
+    - source: portal-2000
+      locator: p. 84, fig. 42
+  created:
+    - source: portal-2000
+      locator: p. 84, fig. 42
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q16093278
+  materials:
+    - source: portal-2000
+      locator: p. 84, fig. 42
+  institution:
+    - source: portal-2000
+      locator: p. 84, fig. 42

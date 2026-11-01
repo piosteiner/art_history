@@ -1,0 +1,37 @@
+public_id: 108684
+title: Melon-shaped wine ewer
+attribution_label: Anonymous
+created: 12th century
+created_span: uncertain
+kind: ewer
+medium: Stoneware with inlaid decoration under celadon glaze
+materials: [stoneware]
+dimensions: [22]
+description_md: A stoneware ewer in the shape of a melon or gourd, with [[sanggam]] chrysanthemums inlaid in white and black under a celadon glaze — naturalistic fruit and vegetable shapes were favourites of Koryŏ potters. [[source/portal-2000|pp. 103, 107, fig. 56]]
+relationships:
+  - type: created_in_polity
+    to: polity/goryeo
+    sources:
+      - source: portal-2000
+        locator: pp. 103, 107, fig. 56
+  - type: associated_with
+    to: movement/goryeo-period
+    sources:
+      - source: portal-2000
+        locator: pp. 103, 107, fig. 56
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 103, 107, fig. 56
+  medium:
+    - source: portal-2000
+      locator: pp. 103, 107, fig. 56
+  created:
+    - source: portal-2000
+      locator: pp. 103, 107, fig. 56
+  materials:
+    - source: portal-2000
+      locator: pp. 103, 107, fig. 56
+  dimensions:
+    - source: portal-2000
+      locator: pp. 103, 107, fig. 56

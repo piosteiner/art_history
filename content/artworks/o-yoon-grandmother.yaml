@@ -1,0 +1,31 @@
+public_id: 108688
+title: Grandmother
+attribution_label: O Yun
+created: 1983
+kind: woodcut
+medium: Woodblock print
+materials: [paper]
+dimensions: [51, 36.6]
+description_md: The best-known artist of [[minjung-art]], O Yun (1946–1985), worked mainly in woodcuts of exhausted factory girls and poor peasants. [[source/portal-2000|pp. 180–181, fig. 103]]
+relationships:
+  - type: associated_with
+    to: movement/modern-art
+    sources:
+      - source: portal-2000
+        locator: pp. 180–181, fig. 103
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 180–181, fig. 103
+  medium:
+    - source: portal-2000
+      locator: pp. 180–181, fig. 103
+  created:
+    - source: portal-2000
+      locator: pp. 180–181, fig. 103
+  materials:
+    - source: portal-2000
+      locator: pp. 180–181, fig. 103
+  dimensions:
+    - source: portal-2000
+      locator: pp. 180–181, fig. 103

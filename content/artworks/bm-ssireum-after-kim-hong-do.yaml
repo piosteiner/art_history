@@ -1,0 +1,41 @@
+public_id: 108648
+title: Ssirŭm (Korean wrestling), after Kim Hong-do
+attribution_label: after Kim Hong-do
+created: 19th century
+created_span: uncertain
+kind: album leaf
+medium: Ink and colour on paper
+materials: [ink, paper]
+dimensions: [31, 26]
+institution: british-museum
+description_md: "A copy of a scene from [[artist/kim-hong-do]]’s album of genre paintings, in the [[institution/british-museum]]: a ring of spectators around two wrestlers, a sweet-seller at the side, drawn with simple strokes without background — Kim’s humorous view of ordinary life. [[source/portal-2000|p. 132, fig. 69]]"
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: p. 132, fig. 69
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: p. 132, fig. 69
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 132, fig. 69
+  medium:
+    - source: portal-2000
+      locator: p. 132, fig. 69
+  created:
+    - source: portal-2000
+      locator: p. 132, fig. 69
+  materials:
+    - source: portal-2000
+      locator: p. 132, fig. 69
+  dimensions:
+    - source: portal-2000
+      locator: p. 132, fig. 69
+  institution:
+    - source: portal-2000
+      locator: p. 132, fig. 69

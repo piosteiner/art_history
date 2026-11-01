@@ -1,0 +1,42 @@
+public_id: 108685
+title: Silver ewer and bowl
+attribution_label: Anonymous
+created: 11th century–12th century
+created_span: uncertain
+kind: ewer
+medium: Parcel-gilt silver
+materials: [silver, gold]
+dimensions: [38]
+dimensions_note: maximum height
+institution: museum-of-fine-arts-boston
+description_md: Parcel-gilt silver with engraved decoration, the ewer’s lotus-shaped lid surmounted by a phoenix — shapes found in Chinese Qingbai and Ding wares, and reproduced in Koryŏ celadons. In the Museum of Fine Arts, Boston. [[source/portal-2000|pp. 98–99, fig. 50]]
+relationships:
+  - type: created_in_polity
+    to: polity/goryeo
+    sources:
+      - source: portal-2000
+        locator: pp. 98–99, fig. 50
+  - type: associated_with
+    to: movement/goryeo-period
+    sources:
+      - source: portal-2000
+        locator: pp. 98–99, fig. 50
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 98–99, fig. 50
+  medium:
+    - source: portal-2000
+      locator: pp. 98–99, fig. 50
+  created:
+    - source: portal-2000
+      locator: pp. 98–99, fig. 50
+  materials:
+    - source: portal-2000
+      locator: pp. 98–99, fig. 50
+  dimensions:
+    - source: portal-2000
+      locator: pp. 98–99, fig. 50
+  institution:
+    - source: portal-2000
+      locator: pp. 98–99, fig. 50

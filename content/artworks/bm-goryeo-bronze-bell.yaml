@@ -1,0 +1,37 @@
+public_id: 108636
+title: Bronze temple bell
+attribution_label: Anonymous
+created: 13th century–14th century
+created_span: uncertain
+kind: bell
+medium: Bronze
+materials: [bronze]
+dimensions: [45]
+description_md: "A particularly fine late Koryŏ bell: cast lotus flowers, flying heavenly beings and a beautifully modelled dragon next to the sounding tube; the lotus medallion marks the striking point. [[source/portal-2000|pp. 94–95, fig. 47]]"
+relationships:
+  - type: created_in_polity
+    to: polity/goryeo
+    sources:
+      - source: portal-2000
+        locator: pp. 94–95, fig. 47
+  - type: associated_with
+    to: movement/goryeo-period
+    sources:
+      - source: portal-2000
+        locator: pp. 94–95, fig. 47
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 94–95, fig. 47
+  medium:
+    - source: portal-2000
+      locator: pp. 94–95, fig. 47
+  created:
+    - source: portal-2000
+      locator: pp. 94–95, fig. 47
+  materials:
+    - source: portal-2000
+      locator: pp. 94–95, fig. 47
+  dimensions:
+    - source: portal-2000
+      locator: pp. 94–95, fig. 47

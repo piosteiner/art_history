@@ -1,0 +1,51 @@
+public_id: 108325
+name: Hyegyeong
+names:
+  - Lady Hong
+  - Lady Hyegyeong of the Pungsan Hong clan
+  - lang: it
+    role: translation
+    text: Heongyeong di Joseon
+  - lang: ja
+    role: translation
+    text: 恵慶宮洪氏
+  - lang: zh
+    role: translation
+    text: 獻敬王后
+  - lang: ko
+    role: translation
+    text: 헌경왕후
+  - lang: ru
+    role: translation
+    text: Хегён-ванху
+kind: person
+occupations: [writer]
+birth: 1735-06-18
+death: 1815-12-15
+wikidata_id: Q484267
+metadata:
+  sources: [Wikidata Q484267 (retrieved 2026-11-01)]
+identifiers:
+  bnf: 12177227b
+  gnd: "118977237"
+  idref: "030335752"
+  lc: n81042531
+  nlk: KAC200108228
+  viaf: "9890548"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q484267
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q484267
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q484267
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q484267

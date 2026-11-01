@@ -1,0 +1,38 @@
+public_id: 108645
+title: Portrait of a Confucian scholar
+attribution_label: Anonymous
+created: 18th century
+created_span: uncertain
+kind: painting
+medium: Ink and colour on paper
+materials: [ink, paper]
+institution: british-museum
+inventory_number: OA 1922.6-30.011
+description_md: A portrait of a Confucian scholar in a tall black hat, on the back cover of Portal’s book; in the [[institution/british-museum]]. [[source/portal-2000|p. cover, fig. cover]]
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: p. cover, fig. cover
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: p. cover, fig. cover
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. cover, fig. cover
+  medium:
+    - source: portal-2000
+      locator: p. cover, fig. cover
+  created:
+    - source: portal-2000
+      locator: p. cover, fig. cover
+  materials:
+    - source: portal-2000
+      locator: p. cover, fig. cover
+  institution:
+    - source: portal-2000
+      locator: p. cover, fig. cover

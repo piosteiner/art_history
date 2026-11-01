@@ -1,0 +1,34 @@
+public_id: 108692
+title: Summer Trees
+creator: song-su-nam
+created: 1983
+kind: painting
+medium: Ink on paper
+materials: [ink, paper]
+dimensions: [65]
+description_md: "[[artist/song-su-nam]] (born 1938), with Hong Sŏk-ch’ang leader of the [[sumukhwa]] at Hongik University: subtle tonal variations of ink wash to recover an inner spirituality lost in the technological age. [[source/portal-2000|pp. 176–177, fig. 99]]"
+relationships:
+  - type: associated_with
+    to: movement/modern-art
+    sources:
+      - source: portal-2000
+        locator: pp. 176–177, fig. 99
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 176–177, fig. 99
+  medium:
+    - source: portal-2000
+      locator: pp. 176–177, fig. 99
+  created:
+    - source: portal-2000
+      locator: pp. 176–177, fig. 99
+  creator:
+    - source: portal-2000
+      locator: pp. 176–177, fig. 99
+  materials:
+    - source: portal-2000
+      locator: pp. 176–177, fig. 99
+  dimensions:
+    - source: portal-2000
+      locator: pp. 176–177, fig. 99

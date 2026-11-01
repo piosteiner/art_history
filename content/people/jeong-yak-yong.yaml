@@ -1,0 +1,64 @@
+public_id: 108328
+name: Jeong Yak-yong
+names:
+  - lang: ko
+    role: original
+    text: 정약용
+  - Kwinong (cha)
+  - Sammi (ho)
+  - Songbo (cha)
+  - Chŏng Yag-yong
+  - Tasan (ho)
+  - Yoyudang (ho)
+  - Saam (ho)
+  - Miyong (cha)
+  - Yŏllo (ho)
+  - Jeong Yakyong
+  - Dasan
+  - Jung Ruo-yong
+  - lang: ja
+    role: translation
+    text: 丁若鏞
+  - lang: zh
+    role: translation
+    text: 丁若镛
+  - lang: ru
+    role: translation
+    text: Чон Яг Ён
+kind: person
+occupations: [philosopher, poet, engineer, politician, writer]
+birth: 1762
+death: 1836
+wikidata_id: Q256246
+metadata:
+  sources: [Wikidata Q256246 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Jeong_Yak-yong.jpg/1280px-Jeong_Yak-yong.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jeong_Yak-yong.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 12353760h
+  gnd: "118883798"
+  idref: "032523947"
+  lc: n81046897
+  nlk: KAC200105569
+  ulan: "500123228"
+  viaf: "44373880"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q256246
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q256246
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q256246
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q256246

@@ -1,0 +1,35 @@
+public_id: 108677
+title: White porcelain dish
+creator: kim-ik-kyung
+created: 1992
+kind: dish
+medium: Porcelain
+materials: [porcelain]
+dimensions: [60]
+dimensions_note: length
+description_md: "[[artist/kim-ik-kyung]] (born 1935), who studied in New York in 1959–1961: slab-built and carved plain white porcelain after the Confucian ritual vessels of the Chosŏn — a timeless beauty. [[source/portal-2000|pp. 188–189, fig. 109]]"
+relationships:
+  - type: associated_with
+    to: movement/modern-art
+    sources:
+      - source: portal-2000
+        locator: pp. 188–189, fig. 109
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 188–189, fig. 109
+  medium:
+    - source: portal-2000
+      locator: pp. 188–189, fig. 109
+  created:
+    - source: portal-2000
+      locator: pp. 188–189, fig. 109
+  creator:
+    - source: portal-2000
+      locator: pp. 188–189, fig. 109
+  materials:
+    - source: portal-2000
+      locator: pp. 188–189, fig. 109
+  dimensions:
+    - source: portal-2000
+      locator: pp. 188–189, fig. 109

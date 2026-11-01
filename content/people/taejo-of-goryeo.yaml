@@ -1,0 +1,57 @@
+public_id: 108335
+name: Taejo of Goryeo
+names:
+  - lang: ko
+    role: original
+    text: 왕건
+  - Wang Kŏn
+  - Wang Kon
+  - T'aejo of Koryŏ
+  - Wang Geon
+  - T'aejo
+  - Taejo
+  - lang: ja
+    role: translation
+    text: 太祖
+  - lang: zh
+    role: translation
+    text: 高麗太祖
+  - lang: ko
+    role: original
+    text: 고려 태조
+  - lang: ru
+    role: translation
+    text: Тхэджо
+kind: person
+occupations: [politician]
+birth: 877-02-04
+death: 943-07-09
+wikidata_id: Q334312
+metadata:
+  sources: [Wikidata Q334312 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d8/WangGeon.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:WangGeon.jpg
+    license: Attribution
+    credit: "[2]"
+identifiers:
+  lc: n83161580
+  nlk: KAC201620201
+  viaf: "57995121"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q334312
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q334312
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q334312
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q334312

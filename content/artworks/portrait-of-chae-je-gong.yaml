@@ -1,0 +1,44 @@
+public_id: 108690
+title: Portrait of Ch’ae Che-gong
+creator: yi-myeong-gi
+created: 1789
+kind: kakemono
+medium: Ink and colours on silk
+materials: [ink, silk]
+dimensions: [69]
+description_md: "A portrait of [[person/chae-je-gong]] (1720–1799), prime minister under King Chŏngjo, at seventy, painted by [[artist/yi-myeong-gi]] in 1789: seated cross-legged in a pink robe, fan in hand, with long inscriptions — the formula of Chosŏn portraits of officials. [[source/portal-2000|pp. 120–121, fig. 62]]"
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 120–121, fig. 62
+  - type: depicts_person
+    to: person/chae-je-gong
+    sources:
+      - source: portal-2000
+        locator: pp. 120–121, fig. 62
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 120–121, fig. 62
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 120–121, fig. 62
+  medium:
+    - source: portal-2000
+      locator: pp. 120–121, fig. 62
+  created:
+    - source: portal-2000
+      locator: pp. 120–121, fig. 62
+  creator:
+    - source: portal-2000
+      locator: pp. 120–121, fig. 62
+  materials:
+    - source: portal-2000
+      locator: pp. 120–121, fig. 62
+  dimensions:
+    - source: portal-2000
+      locator: pp. 120–121, fig. 62

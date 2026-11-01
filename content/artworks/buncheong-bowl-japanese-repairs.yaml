@@ -1,0 +1,34 @@
+public_id: 108652
+title: Punch’ŏng bowl with Japanese lacquer repairs
+attribution_label: Anonymous
+created: 15th century
+created_span: uncertain
+kind: tea bowl
+medium: Stoneware with stamped slip decoration
+materials: [Buncheong]
+dimensions_note: diameter 16 cm
+description_md: "A stamped [[buncheong]] bowl repaired in Japan with lacquer: such simple bowls, used every day in Korea, were treasured in Japan for the wabicha tea ceremony, their imperfections and tea stains prized as signs of age. [[source/portal-2000|pp. 140–141, fig. 76]]"
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 140–141, fig. 76
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 140–141, fig. 76
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 140–141, fig. 76
+  medium:
+    - source: portal-2000
+      locator: pp. 140–141, fig. 76
+  created:
+    - source: portal-2000
+      locator: pp. 140–141, fig. 76
+  materials:
+    - source: portal-2000
+      locator: pp. 140–141, fig. 76

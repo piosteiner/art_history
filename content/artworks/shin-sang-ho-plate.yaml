@@ -1,0 +1,31 @@
+public_id: 108691
+title: Plate
+creator: shin-sang-ho
+created: 1994
+kind: dish
+medium: Stoneware
+materials: [stoneware]
+dimensions_note: diameter 58 cm
+description_md: "[[artist/shin-sang-ho]] (born 1947) transforms the inlay, painting and incising of Chosŏn [[buncheong]] into contemporary works on a huge scale. [[source/portal-2000|p. 188, fig. 108]]"
+relationships:
+  - type: associated_with
+    to: movement/modern-art
+    sources:
+      - source: portal-2000
+        locator: p. 188, fig. 108
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 188, fig. 108
+  medium:
+    - source: portal-2000
+      locator: p. 188, fig. 108
+  created:
+    - source: portal-2000
+      locator: p. 188, fig. 108
+  creator:
+    - source: portal-2000
+      locator: p. 188, fig. 108
+  materials:
+    - source: portal-2000
+      locator: p. 188, fig. 108

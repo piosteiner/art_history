@@ -20,7 +20,7 @@ medium: Wood, with remains of paint
 materials: [camphor wood]
 dimensions: [210]
 institution: horyu-ji
-description_md: A tall slender [[kannon]] of camphor wood, the drapery barely cut into the surface, the scarves at its feet curving forward; it holds a water jar. Kudara is another name for Paekche, and the statue was long thought Korean, but its woods are Japanese. [[source/history-of-japanese-art|p. 79, fig. 95]]
+description_md: A tall slender [[kannon]] of camphor wood, the drapery barely cut into the surface, the scarves at its feet curving forward; it holds a water jar. Kudara is another name for Paekche, and the statue was long thought Korean, but its woods are Japanese. [[source/history-of-japanese-art|p. 79, fig. 95]] A full-size copy made in the 1920s, in the British Museum, shows how Paekche wooden sculpture would have looked; Portal points to its Paekche features — the gently smiling face, flaming mandorla, openwork crown and double-veined lotus petals. [[source/portal-2000|p. 52, fig. 27]]
 wikidata_id: Q11244181
 metadata:
   sources: [Wikidata Q11244181 (retrieved 2026-11-01)]
@@ -46,17 +46,17 @@ sources:
     - source: history-of-japanese-art
       locator: p. 79, fig. 95
   created:
+    - source: history-of-japanese-art
+      locator: p. 79, fig. 95
     - accessed: 2026-11-01
       property: P571
       wikidata: Q11244181
+  materials:
     - source: history-of-japanese-art
       locator: p. 79, fig. 95
-  materials:
     - accessed: 2026-11-01
       property: P186
       wikidata: Q11244181
-    - source: history-of-japanese-art
-      locator: p. 79, fig. 95
   dimensions:
     - source: history-of-japanese-art
       locator: p. 79, fig. 95

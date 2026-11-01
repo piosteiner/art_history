@@ -1,0 +1,40 @@
+public_id: 108629
+title: Amitābha sutra written by the monk Chŏnggo
+attribution_label: Anonymous
+created: 1341
+kind: sutra
+medium: Silver and gold on paper
+materials: [silver, gold, paper]
+dimensions: [22]
+institution: british-museum
+description_md: "One of the few Koryŏ illuminated sutras outside Japan and Korea, in the [[institution/british-museum]]: written in 1341 in silver and gold on indigo paper by the monk Chŏnggo to earn merit for his mother. The frontispiece shows Amitābha preaching in paradise, drawn entirely in fine gold “iron-wire” lines; the cover bears “precious visage” flowers. [[source/portal-2000|pp. 86–88, fig. 44]]"
+relationships:
+  - type: created_in_polity
+    to: polity/goryeo
+    sources:
+      - source: portal-2000
+        locator: pp. 86–88, fig. 44
+  - type: associated_with
+    to: movement/goryeo-period
+    sources:
+      - source: portal-2000
+        locator: pp. 86–88, fig. 44
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 86–88, fig. 44
+  medium:
+    - source: portal-2000
+      locator: pp. 86–88, fig. 44
+  created:
+    - source: portal-2000
+      locator: pp. 86–88, fig. 44
+  materials:
+    - source: portal-2000
+      locator: pp. 86–88, fig. 44
+  dimensions:
+    - source: portal-2000
+      locator: pp. 86–88, fig. 44
+  institution:
+    - source: portal-2000
+      locator: pp. 86–88, fig. 44

@@ -1,0 +1,37 @@
+public_id: 108633
+title: Ch’aekkŏri screen
+attribution_label: Anonymous
+created: 19th century
+created_span: uncertain
+kind: byōbu
+medium: Ink and colours on paper
+materials: [ink, paper]
+dimensions: [50, 140]
+description_md: An eight-panel table-type [[chaekgeori]] screen with books and scholars’ objects, flowers and auspicious fruit — the kind used by less affluent families to decorate their homes with Confucian learning. [[source/portal-2000|pp. 150–151, fig. 81]]
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 150–151, fig. 81
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 150–151, fig. 81
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 150–151, fig. 81
+  medium:
+    - source: portal-2000
+      locator: pp. 150–151, fig. 81
+  created:
+    - source: portal-2000
+      locator: pp. 150–151, fig. 81
+  materials:
+    - source: portal-2000
+      locator: pp. 150–151, fig. 81
+  dimensions:
+    - source: portal-2000
+      locator: pp. 150–151, fig. 81

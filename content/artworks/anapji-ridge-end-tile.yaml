@@ -1,0 +1,43 @@
+public_id: 108626
+title: Ridge-end tile with monster mask from Anap-chi
+attribution_label: Anonymous
+created: 8th century
+created_span: uncertain
+kind: tile
+medium: Moulded earthenware
+materials: [earthenware]
+dimensions: [26.5]
+description_md: A moulded earthenware ridge-end tile with a monster mask (kwimyŏn) to ward off evil spirits, from Anap-chi, the lake King Munmu had dug in his palace grounds in 674, excavated in 1975–6. [[source/portal-2000|p. 71, fig. 37]]
+relationships:
+  - type: created_in
+    to: place/gyeongju
+    period: 8th century
+    sources:
+      - source: portal-2000
+        locator: p. 71, fig. 37
+  - type: created_in_polity
+    to: polity/silla
+    sources:
+      - source: portal-2000
+        locator: p. 71, fig. 37
+  - type: associated_with
+    to: movement/unified-silla-period
+    sources:
+      - source: portal-2000
+        locator: p. 71, fig. 37
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 71, fig. 37
+  medium:
+    - source: portal-2000
+      locator: p. 71, fig. 37
+  created:
+    - source: portal-2000
+      locator: p. 71, fig. 37
+  materials:
+    - source: portal-2000
+      locator: p. 71, fig. 37
+  dimensions:
+    - source: portal-2000
+      locator: p. 71, fig. 37

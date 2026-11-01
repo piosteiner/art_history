@@ -1,0 +1,37 @@
+public_id: 108632
+title: Celadon vase (influence of Ru ware)
+attribution_label: Anonymous
+created: early 12th century
+created_span: uncertain
+kind: vase
+medium: Celadon stoneware
+materials: [stoneware]
+dimensions: [19.5]
+description_md: "An early Koryŏ celadon bottle shown beside a Chinese Ru ware vase: the bluish glaze and elegant shape show the influence of Ru, while the wide flat footring derives from Yue wares. [[source/portal-2000|pp. 101–102, fig. 52]]"
+relationships:
+  - type: created_in_polity
+    to: polity/goryeo
+    sources:
+      - source: portal-2000
+        locator: pp. 101–102, fig. 52
+  - type: associated_with
+    to: movement/goryeo-period
+    sources:
+      - source: portal-2000
+        locator: pp. 101–102, fig. 52
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 101–102, fig. 52
+  medium:
+    - source: portal-2000
+      locator: pp. 101–102, fig. 52
+  created:
+    - source: portal-2000
+      locator: pp. 101–102, fig. 52
+  materials:
+    - source: portal-2000
+      locator: pp. 101–102, fig. 52
+  dimensions:
+    - source: portal-2000
+      locator: pp. 101–102, fig. 52

@@ -1,0 +1,54 @@
+public_id: 108282
+title: Dolmen on Kanghwa island
+names:
+  - Geoseok tomb near Ganghwa-ri
+  - lang: ko
+    role: translation
+    text: 강화 부근리 지석묘
+attribution_label: Anonymous
+created: c. 1000 BCE
+created_span: uncertain
+kind: building
+medium: Stone
+materials: [granite, stone]
+location: [126.4375, 37.77306]
+description_md: "A northern “table”-type [[dolmen]] on Kanghwa island west of Seoul: two upright slabs and a huge capstone. Judging by their burial goods, dolmens were tombs for people of higher rank such as clan chiefs; ninety per cent of the 200,000 on the peninsula are in South Korea. [[source/portal-2000|p. 30, fig. 13]]"
+wikidata_id: Q22973965
+metadata:
+  sources: [Wikidata Q22973965 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/incheon
+  - type: associated_with
+    to: movement/korean-bronze-age
+    sources:
+      - source: portal-2000
+        locator: p. 30, fig. 13
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9c/Ganghwa_Bugeun-ri_dolmen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ganghwa_Bugeun-ri_dolmen.jpg
+    license: CC BY-SA 3.0
+    credit: ChongDae
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 30, fig. 13
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q22973965
+  medium:
+    - source: portal-2000
+      locator: p. 30, fig. 13
+  created:
+    - source: portal-2000
+      locator: p. 30, fig. 13
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q22973965
+  materials:
+    - source: portal-2000
+      locator: p. 30, fig. 13
+    - accessed: 2026-11-01
+      property: P186
+      wikidata: Q22973965

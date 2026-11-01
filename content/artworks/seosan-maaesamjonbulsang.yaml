@@ -1,0 +1,59 @@
+public_id: 108291
+title: Rock-carved Buddha triad at Sŏsan
+names:
+  - Rock-carved triad buddha in Seosan
+  - lang: zh
+    role: translation
+    text: 瑞山摩崖三尊佛像
+  - lang: ko
+    role: translation
+    text: 서산 용현리 마애여래삼존상
+attribution_label: Anonymous
+created: 7th century
+created_span: uncertain
+kind: relief
+medium: Granite
+materials: [stone]
+location: [126.6051, 36.7738]
+description_md: "A rare example of Paekche stone sculpture, carved out of a cliff: the Buddha raises his right hand in the gesture of freedom from fear; a standing bodhisattva holding a jewel and a seated, half-meditating bodhisattva flank him — all with gentle smiles. [[source/portal-2000|p. 66, fig. 34]]"
+wikidata_id: Q7354163
+metadata:
+  sources: [Wikidata Q7354163 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/seosan-si
+  - type: created_in_polity
+    to: polity/baekje
+    sources:
+      - source: portal-2000
+        locator: p. 66, fig. 34
+  - type: associated_with
+    to: movement/three-kingdoms-period-korea
+    sources:
+      - source: portal-2000
+        locator: p. 66, fig. 34
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/%EC%9A%A9%ED%98%84%EB%A6%AC_%EB%A7%88%EC%95%A0%EC%97%AC%EB%9E%98%EC%82%BC%EC%A1%B4%EC%83%81.jpg/1280px-%EC%9A%A9%ED%98%84%EB%A6%AC_%EB%A7%88%EC%95%A0%EC%97%AC%EB%9E%98%EC%82%BC%EC%A1%B4%EC%83%81.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%EC%9A%A9%ED%98%84%EB%A6%AC_%EB%A7%88%EC%95%A0%EC%97%AC%EB%9E%98%EC%82%BC%EC%A1%B4%EC%83%81.jpg
+    license: CC BY-SA 4.0
+    credit: Kwkhh
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 66, fig. 34
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q7354163
+  medium:
+    - source: portal-2000
+      locator: p. 66, fig. 34
+  created:
+    - source: portal-2000
+      locator: p. 66, fig. 34
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q7354163
+  materials:
+    - source: portal-2000
+      locator: p. 66, fig. 34

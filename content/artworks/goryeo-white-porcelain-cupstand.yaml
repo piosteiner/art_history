@@ -1,0 +1,37 @@
+public_id: 108664
+title: White porcelain cupstand
+attribution_label: Anonymous
+created: 11th century–12th century
+created_span: uncertain
+kind: cupstand
+medium: Porcelain
+materials: [porcelain]
+dimensions: [5]
+description_md: "A cup and stand with incised chrysanthemums and squared spirals: white porcelain was made at some of the celadon kilns in the same shapes, in smaller numbers. [[source/portal-2000|pp. 104, 106, fig. 55]]"
+relationships:
+  - type: created_in_polity
+    to: polity/goryeo
+    sources:
+      - source: portal-2000
+        locator: pp. 104, 106, fig. 55
+  - type: associated_with
+    to: movement/goryeo-period
+    sources:
+      - source: portal-2000
+        locator: pp. 104, 106, fig. 55
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 104, 106, fig. 55
+  medium:
+    - source: portal-2000
+      locator: pp. 104, 106, fig. 55
+  created:
+    - source: portal-2000
+      locator: pp. 104, 106, fig. 55
+  materials:
+    - source: portal-2000
+      locator: pp. 104, 106, fig. 55
+  dimensions:
+    - source: portal-2000
+      locator: pp. 104, 106, fig. 55

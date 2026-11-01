@@ -1,0 +1,38 @@
+public_id: 108625
+title: Comb-patterned pot from Amsa-dong
+attribution_label: Anonymous
+created: c. 4000 BCE
+created_span: uncertain
+kind: vessel
+medium: Earthenware
+materials: [earthenware]
+dimensions: [25.9]
+description_md: "A pointed-based pot with incised herringbone pattern from Amsa-dong near Seoul, the best-known Neolithic site of Korea: discovered after a flood in 1925 and excavated from 1967, with some thirty pit dwellings. [[chulmun]] pottery appears around 5000 BCE between the Ch’ŏngch’ŏn and Han rivers. [[source/portal-2000|p. 27, fig. 11]]"
+relationships:
+  - type: created_in
+    to: place/seoul
+    period: c. 4000 BCE
+    sources:
+      - source: portal-2000
+        locator: p. 27, fig. 11
+  - type: associated_with
+    to: movement/korean-neolithic
+    sources:
+      - source: portal-2000
+        locator: p. 27, fig. 11
+sources:
+  kind:
+    - source: portal-2000
+      locator: p. 27, fig. 11
+  medium:
+    - source: portal-2000
+      locator: p. 27, fig. 11
+  created:
+    - source: portal-2000
+      locator: p. 27, fig. 11
+  materials:
+    - source: portal-2000
+      locator: p. 27, fig. 11
+  dimensions:
+    - source: portal-2000
+      locator: p. 27, fig. 11

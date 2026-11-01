@@ -1,0 +1,32 @@
+public_id: 108646
+title: Sansin, the Mountain God
+attribution_label: Anonymous
+created: early 20th century
+created_span: uncertain
+kind: kakemono
+medium: Ink and mineral colours on hemp and paper
+materials: [ink, hemp, paper]
+dimensions: [137, 113]
+description_md: "The most commonly portrayed deity of Korean folk religion: an old man with a white beard seated beside his messenger, the tiger, among long-life symbols such as deer and cranes; most Buddhist temples have a small pavilion for him. [[source/portal-2000|pp. 145–146, fig. 79]]"
+relationships:
+  - type: associated_with
+    to: movement/korean-empire
+    sources:
+      - source: portal-2000
+        locator: pp. 145–146, fig. 79
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 145–146, fig. 79
+  medium:
+    - source: portal-2000
+      locator: pp. 145–146, fig. 79
+  created:
+    - source: portal-2000
+      locator: pp. 145–146, fig. 79
+  materials:
+    - source: portal-2000
+      locator: pp. 145–146, fig. 79
+  dimensions:
+    - source: portal-2000
+      locator: pp. 145–146, fig. 79

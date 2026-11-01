@@ -1,0 +1,37 @@
+public_id: 108649
+title: Wooden wedding duck
+attribution_label: Anonymous
+created: 19th century
+created_span: uncertain
+kind: sculpture
+medium: Carved and painted wood
+materials: [wood]
+dimensions: [18.5]
+description_md: A carved and painted wooden duck (kirogi) presented by the bridegroom to the bride’s mother as a symbol of fidelity, in place of the live goose of earlier times; wrapped in a [[pojagi]]. [[source/portal-2000|pp. 156–157, fig. 85]]
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 156–157, fig. 85
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 156–157, fig. 85
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 156–157, fig. 85
+  medium:
+    - source: portal-2000
+      locator: pp. 156–157, fig. 85
+  created:
+    - source: portal-2000
+      locator: pp. 156–157, fig. 85
+  materials:
+    - source: portal-2000
+      locator: pp. 156–157, fig. 85
+  dimensions:
+    - source: portal-2000
+      locator: pp. 156–157, fig. 85

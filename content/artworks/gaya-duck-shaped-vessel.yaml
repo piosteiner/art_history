@@ -1,0 +1,37 @@
+public_id: 108662
+title: Duck-shaped funerary cup
+attribution_label: Anonymous
+created: 5th century–6th century
+created_span: uncertain
+kind: vessel
+medium: Stoneware
+materials: [stoneware]
+dimensions: [16.5]
+description_md: A stoneware spouted cup in the shape of a duck, combed and incised for wings and feathers — tomb pottery used in shamanistic burial rites. [[source/portal-2000|pp. 56–57, fig. 31]]
+relationships:
+  - type: created_in_polity
+    to: polity/gaya
+    sources:
+      - source: portal-2000
+        locator: pp. 56–57, fig. 31
+  - type: associated_with
+    to: movement/three-kingdoms-period-korea
+    sources:
+      - source: portal-2000
+        locator: pp. 56–57, fig. 31
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 56–57, fig. 31
+  medium:
+    - source: portal-2000
+      locator: pp. 56–57, fig. 31
+  created:
+    - source: portal-2000
+      locator: pp. 56–57, fig. 31
+  materials:
+    - source: portal-2000
+      locator: pp. 56–57, fig. 31
+  dimensions:
+    - source: portal-2000
+      locator: pp. 56–57, fig. 31

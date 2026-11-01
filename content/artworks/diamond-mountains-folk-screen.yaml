@@ -1,0 +1,37 @@
+public_id: 108658
+title: Diamond Mountains (ten-panel screen)
+attribution_label: Anonymous
+created: 19th century
+created_span: uncertain
+kind: byōbu
+medium: Ten-panel screen, ink on paper
+materials: [ink, paper]
+dimensions: [123, 597]
+description_md: A folk screen of the Diamond Mountains with the famous sites labelled in red — a subject of religious significance in Buddhism (the needle-like peaks recall the vajra), Daoism (the land of the immortals) and shamanism (rocks like animals and spirits). [[source/portal-2000|pp. 153–154, fig. 83]]
+relationships:
+  - type: created_in_polity
+    to: polity/joseon
+    sources:
+      - source: portal-2000
+        locator: pp. 153–154, fig. 83
+  - type: associated_with
+    to: movement/joseon-period
+    sources:
+      - source: portal-2000
+        locator: pp. 153–154, fig. 83
+sources:
+  kind:
+    - source: portal-2000
+      locator: pp. 153–154, fig. 83
+  medium:
+    - source: portal-2000
+      locator: pp. 153–154, fig. 83
+  created:
+    - source: portal-2000
+      locator: pp. 153–154, fig. 83
+  materials:
+    - source: portal-2000
+      locator: pp. 153–154, fig. 83
+  dimensions:
+    - source: portal-2000
+      locator: pp. 153–154, fig. 83
