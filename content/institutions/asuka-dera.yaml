@@ -1,0 +1,46 @@
+public_id: 106357
+name: Asuka-dera Temple
+names:
+  - Hōkō-ji
+  - Gangō-ji
+  - Asuka-dera
+  - lang: ja
+    role: translation
+    text: 飛鳥寺
+  - lang: ko
+    role: translation
+    text: 아스카데라
+kind: temple
+founded: 596
+place: asuka
+location: [135.82021, 34.47873]
+address: 奈良県高市郡明日香村飛鳥682
+wikidata_id: Q779755
+metadata:
+  sources: [Wikidata Q779755 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Asuka-dera_Asuka_Nara_pref03n4050.jpg/1280px-Asuka-dera_Asuka_Nara_pref03n4050.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Asuka-dera_Asuka_Nara_pref03n4050.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  gnd: 7860823-5
+  lc: nr97039048
+  viaf: "249461223"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q779755
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q779755
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q779755
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q779755

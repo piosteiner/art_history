@@ -1,0 +1,31 @@
+public_id: 106329
+title: Earrings
+attribution_label: Anonymous
+created_label: c. 6500 BCE–c. 5000 BCE
+kind: jewellery
+medium: Steatite
+materials: [steatite]
+dimensions_note: diameter of the largest 5 cm
+description_md: Polished stone earrings and pendants from the graves of a large Initial Jōmon cemetery at Kuwano — early evidence of personal adornment and, perhaps, of rank. Held by Kanazu Town Board of Education. [[source/history-of-japanese-art|p. 16, fig. 3]]
+relationships:
+  - type: created_in
+    to: place/fukui-prefecture
+    label: found at Kuwano, Fukui prefecture
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 16, fig. 3
+  - type: associated_with
+    to: movement/initial-jomon
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 16, fig. 3
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 16, fig. 3
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 16, fig. 3
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 16, fig. 3

@@ -1,0 +1,13 @@
+public_id: 106667
+name: wood-core dry lacquer
+names:
+  - lang: ja
+    role: original
+    text: "{木心乾漆|もくしんかんしつ}"
+category: technique
+parent: dry-lacquer
+definition: Dry lacquer over a roughly carved wooden core that stays inside the finished figure; simpler than the hollow technique, common from the late eighth century.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 86

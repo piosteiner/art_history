@@ -1,0 +1,13 @@
+public_id: 106642
+name: camphor wood
+names:
+  - lang: ja
+    role: original
+    text: "{楠|くすのき}"
+category: material
+parent: wood
+definition: The wood of the camphor tree, used for many early Japanese sculptures.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 79

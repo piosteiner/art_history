@@ -1,0 +1,42 @@
+public_id: 106317
+title: Haniwa figure of a house
+attribution_label: Anonymous
+created: 300/710
+kind: haniwa
+medium: Clay
+materials: [clay]
+dimensions: [54.5]
+institution: tokyo-national-museum
+description_md: A large house with lower extensions on all four sides — a stage between the pit dwelling and the walled single-storey house. [[source/history-of-japanese-art|p. 34, fig. 32]]
+relationships:
+  - type: created_in
+    to: place/miyazaki-prefecture
+    period: 300/710
+    label: found at a site in Miyazaki prefecture
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 34, fig. 32
+  - type: associated_with
+    to: movement/kofun-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 34, fig. 32
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 34, fig. 32
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 34, fig. 32
+  created:
+    - source: history-of-japanese-art
+      locator: p. 34, fig. 32
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 34, fig. 32
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 34, fig. 32
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 34, fig. 32

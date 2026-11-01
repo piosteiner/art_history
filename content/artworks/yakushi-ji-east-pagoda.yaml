@@ -1,0 +1,50 @@
+public_id: 106374
+title: East pagoda, Yakushiji
+names:
+  - East Pagoda, Yakushiji
+  - lang: ja
+    role: translation
+    text: 薬師寺東塔
+attribution_label: Anonymous
+created: first half of the 8th century
+created_span: uncertain
+kind: building
+institution: yakushi-ji
+location: [135.7846, 34.6681]
+description_md: "The only building of Yakushiji left from its early eighth-century construction: a three-storeyed pagoda with a [[mokoshi]] at each level, so that it seems to have six — more stable and more buoyant than the pagoda of Hōryūji, with three-stepped brackets and latticed ceilings that let more light under the eaves. [[source/history-of-japanese-art|p. 67, fig. 76]]"
+wikidata_id: Q107020544
+metadata:
+  sources: [Wikidata Q107020544 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/nara
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 67, fig. 76
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 67, fig. 76
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Yakushiji_Toto.jpg/1280px-Yakushiji_Toto.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yakushiji_Toto.jpg
+    license: CC BY-SA 3.0
+    credit: KENPEI
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 67, fig. 76
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107020544
+  created:
+    - source: history-of-japanese-art
+      locator: p. 67, fig. 76
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q107020544
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 67, fig. 76

@@ -1,0 +1,53 @@
+public_id: 106342
+name: Tōshōdai-ji Temple
+names:
+  - Tōshōdai-ji
+  - lang: ja
+    role: translation
+    text: 唐招提寺
+  - lang: ko
+    role: translation
+    text: 도쇼다이지
+  - lang: ru
+    role: translation
+    text: Тосёдай-дзи
+kind: temple
+founded: 759
+place: nara
+location: [135.78483, 34.67559]
+address: 奈良県奈良市五条町13-46
+website_url: http://www.toshodaiji.jp/
+wikidata_id: Q973175
+metadata:
+  sources: [Wikidata Q973175 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Toshodai-ji%2C_Golden_Hall_01.jpg/1280px-Toshodai-ji%2C_Golden_Hall_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Toshodai-ji,_Golden_Hall_01.jpg
+    license: CC BY-SA 4.0
+    credit: Naokijp
+identifiers:
+  gnd: "1044949694"
+  idref: "130992615"
+  lc: n81071412
+  viaf: "146590445"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q973175
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q973175
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q973175
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q973175
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q973175

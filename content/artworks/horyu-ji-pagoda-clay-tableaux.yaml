@@ -1,0 +1,52 @@
+public_id: 106384
+title: Clay tableaux in the five-storied pagoda, Hōryūji
+names:
+  - Clay Statue Tableaux
+  - Clay Sutra Tableaux
+  - Tōhon Shimengu
+  - lang: ja
+    role: translation
+    text: 塔本四面具
+attribution_label: Anonymous
+created: 711
+kind: sculpture
+medium: Clay over wood and metal
+materials: [clay]
+institution: horyu-ji
+description_md: "Four scenes of clay figures set among rock shapes around the central pillar on the ground floor of the [[artwork/horyu-ji-five-storied-pagoda]], finished in 711. North: the death of [[shaka]], his disciples in violent grief, the bodhisattvas calm; east: the debate between the layman Yuima and the bodhisattva Monju; west: the distribution of the relics. [[source/history-of-japanese-art|p. 81, fig. 99–100]]"
+wikidata_id: Q107045977
+metadata:
+  sources: [Wikidata Q107045977 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 81, fig. 99–100
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Horyuji_Monastery_Clay_Figures_of_the_Pagoda_I_%28223%29.jpg/1280px-Horyuji_Monastery_Clay_Figures_of_the_Pagoda_I_%28223%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Horyuji_Monastery_Clay_Figures_of_the_Pagoda_I_(223).jpg
+    license: Public domain
+    credit: Imperial Japanese Commission to the Panama-Pacific International Exposition
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 81, fig. 99–100
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107045977
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 81, fig. 99–100
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q107045977
+    - source: history-of-japanese-art
+      locator: p. 81, fig. 99–100
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 81, fig. 99–100
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 81, fig. 99–100

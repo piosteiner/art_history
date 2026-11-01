@@ -1,0 +1,25 @@
+public_id: 106689
+title: Hondō (main hall), Yakushiji
+attribution_label: Anonymous
+kind: building
+institution: yakushi-ji
+location: [135.78431, 34.66836]
+description_md: The main hall of [[institution/yakushi-ji]], a towering two-storeyed building with a [[mokoshi]] on each storey, with room before it for a large assembly. The original of about 730 was lost; the present hall is a reconstruction of the late twentieth century, restoring the compound to something close to its first appearance. It houses the [[artwork/yakushi-ji-yakushi-triad]]. [[source/history-of-japanese-art|p. 66, fig. 75]]
+relationships:
+  - type: created_in
+    to: place/nara
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 66, fig. 75
+  - type: associated_with
+    to: movement/hakuho-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 66, fig. 75
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 66, fig. 75
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 66, fig. 75

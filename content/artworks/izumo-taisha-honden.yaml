@@ -1,0 +1,47 @@
+public_id: 106366
+title: Honden, Izumo Taisha
+names:
+  - Honden of Izumo Taisha
+  - lang: fr
+    role: translation
+    text: pavillon principal du grand sanctuaire d'Izumo
+  - lang: ja
+    role: translation
+    text: 出雲大社本殿
+attribution_label: Anonymous
+created: 1744
+kind: building
+institution: izumo-taisha
+location: [132.6854, 35.40203]
+description_md: "The main hall of the grand shrine at Izumo, dedicated to Ōkuninushi no Mikoto, and the type of [[taisha-zukuri]]: two square bays with eight pillars and a central one, raised on round piles, under a curved gable roof; the stair to the door at one end, off centre. Said to be modelled on the palaces of the early Yamato rulers; the present building dates from 1744 but keeps its ancient form. [[source/history-of-japanese-art|p. 56, fig. 61]]"
+wikidata_id: Q107020632
+metadata:
+  sources: [Wikidata Q107020632 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/izumo
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 56, fig. 61
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Izumo-taisha_121538651_f69f257ed0_o.jpg/1280px-Izumo-taisha_121538651_f69f257ed0_o.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Izumo-taisha_121538651_f69f257ed0_o.jpg
+    license: CC BY 2.0
+    credit: Blue Lotus
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 56, fig. 61
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107020632
+  created:
+    - source: history-of-japanese-art
+      locator: p. 56, fig. 61
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q107020632
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 56, fig. 61

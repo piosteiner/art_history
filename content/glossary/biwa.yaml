@@ -1,0 +1,12 @@
+public_id: 106638
+name: biwa
+names:
+  - lang: ja
+    role: original
+    text: "{琵琶|びわ}"
+category: object type
+definition: A short-necked lute that came to Japan from China and, before that, Central Asia.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 49

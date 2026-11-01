@@ -1,0 +1,12 @@
+public_id: 106664
+name: sutra
+names:
+  - lang: ja
+    role: original
+    text: "{経|きょう}"
+category: object type
+definition: A Buddhist scripture, and a copy of one — copying sutras was a pious act that earned merit.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 47

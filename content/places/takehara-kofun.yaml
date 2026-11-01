@@ -1,0 +1,27 @@
+public_id: 106108
+name: Takehara Kofun
+names:
+  - Takehara Tomb
+  - lang: ja
+    role: translation
+    text: 竹原古墳
+kind: archaeological
+parent: japan
+country_code: JP
+location: [130.61014, 33.73325]
+wikidata_id: Q11599019
+metadata:
+  sources: [Wikidata Q11599019 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q11599019
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q11599019
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q11599019

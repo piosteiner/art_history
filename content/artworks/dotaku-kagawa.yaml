@@ -1,0 +1,44 @@
+public_id: 106310
+title: Dōtaku with designs of animals, plants and daily life
+attribution_label: Anonymous
+created: c. 100 BCE–c. 300
+created_span: uncertain
+kind: dōtaku
+medium: Bronze
+materials: [bronze]
+dimensions: [42.8]
+dimensions_note: each 42.8 cm high
+institution: tokyo-national-museum
+description_md: "A pair of Late Yayoi bronze bells with reliefs in blocks: a praying mantis, dragonflies, a salamander, cranes, a turtle, a man shooting a deer, a hunter with dogs and a boar, a granary and two people pounding rice. [[source/history-of-japanese-art|p. 26, fig. 20]]"
+relationships:
+  - type: created_in
+    to: place/kagawa-prefecture
+    period: c. 100 BCE–c. 300
+    label: found at Kagawa prefecture
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 26, fig. 20
+  - type: associated_with
+    to: movement/yayoi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 26, fig. 20
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 26, fig. 20
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 26, fig. 20
+  created:
+    - source: history-of-japanese-art
+      locator: p. 26, fig. 20
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 26, fig. 20
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 26, fig. 20
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 26, fig. 20

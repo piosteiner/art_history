@@ -12,6 +12,18 @@ relationships:
   - type: concerns
     to: movement/hakuho-period
     notes_md: "670"
+  - type: concerns
+    to: artwork/horyu-ji-kondo
+    label: rebuilt after the fire
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 65
+  - type: concerns
+    to: artwork/horyu-ji-kondo-yakushi
+    label: probably a replacement of the lost original
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 81
 sources:
   period:
     - note: “Wakakusadera, was completed in the first decade of the seventh century, but was destroyed by fire in 670”

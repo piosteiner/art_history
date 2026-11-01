@@ -1,0 +1,68 @@
+public_id: 106406
+name: Prince Shōtoku
+names:
+  - lang: ja
+    role: original
+    text: 聖徳太子
+  - Jōgū Taishi
+  - Shōtoku Taishi
+  - Kamitsumiya no Umayado no Toyotomimi no Mikoto
+  - Prince Kamitsumiya
+  - Umayado
+  - Prinzregent Shōtoku Taishi Japan
+  - Prince Shotoku
+  - Prince Shoutoku
+  - lang: nl
+    role: translation
+    text: Shotoku Taishi
+  - lang: fr
+    role: translation
+    text: Shōtoku
+  - lang: es
+    role: translation
+    text: Príncipe Shōtoku
+  - lang: zh
+    role: translation
+    text: 聖德太子
+  - lang: ko
+    role: translation
+    text: 쇼토쿠 태자
+  - lang: ru
+    role: translation
+    text: Сётоку
+kind: person
+occupations: [politician]
+birth: 574-02-09
+death: 622-04-11
+wikidata_id: Q263972
+metadata:
+  sources: [Wikidata Q263972 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9e/Prince_Shotoku_with_Two_Princes_by_Kano_Osanobu_1842.png
+    source_url: https://commons.wikimedia.org/wiki/File:Prince_Shotoku_with_Two_Princes_by_Kano_Osanobu_1842.png
+    license: Public domain
+    credit: Kano Osanobu (August 18, 1796 - June 12, 1846)
+identifiers:
+  bnf: 14615128t
+  gnd: "119551799"
+  idref: "086906534"
+  lc: n81020045
+  ulan: "500325975"
+  viaf: "54960657"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q263972
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q263972
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q263972
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q263972

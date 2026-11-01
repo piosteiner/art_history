@@ -1,0 +1,40 @@
+public_id: 106315
+title: Rear saddle bow
+attribution_label: Anonymous
+created: late 6th century
+created_span: uncertain
+medium: Gilt bronze
+materials: [gilt bronze]
+dimensions: [43]
+dimensions_note: width 57 cm
+institution: kashihara-archaeological-institute
+description_md: "Openwork gilt bronze fittings for the back of a wooden saddle, close to Korean finds: hexagons enclosing a dragon, phoenix, lion, elephant, makara and palmettes. From the Fujinoki Tomb, one of the longest corridor tombs found. [[source/history-of-japanese-art|p. 38, fig. 41]]"
+relationships:
+  - type: created_in
+    to: place/fujinoki-kofun
+    period: late 6th century
+    label: found at the Fujinoki Tomb, Ikaruga
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 38, fig. 41
+  - type: associated_with
+    to: movement/kofun-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 38, fig. 41
+sources:
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 38, fig. 41
+  created:
+    - source: history-of-japanese-art
+      locator: p. 38, fig. 41
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 38, fig. 41
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 38, fig. 41
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 38, fig. 41

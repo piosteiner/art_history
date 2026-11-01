@@ -1,0 +1,43 @@
+public_id: 106312
+title: Ewer with bridge handle and “erased cord” designs
+attribution_label: Anonymous
+created: c. 1500 BCE–c. 1000 BCE
+created_span: uncertain
+kind: vessel
+medium: Earthenware
+materials: [earthenware]
+dimensions: [22.3]
+institution: tatsuuma-archaeological-museum
+description_md: "A Late Jōmon “teapot”: on its swelling body bands of cord marking framed by incised lines, the area around them smoothed away (“erased cord”). [[source/history-of-japanese-art|p. 22, fig. 15]]"
+relationships:
+  - type: created_in
+    to: place/ibaraki-prefecture
+    period: c. 1500 BCE–c. 1000 BCE
+    label: found at a site in Ibaraki prefecture
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 22, fig. 15
+  - type: associated_with
+    to: movement/late-jomon
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 22, fig. 15
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 22, fig. 15
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 22, fig. 15
+  created:
+    - source: history-of-japanese-art
+      locator: p. 22, fig. 15
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 22, fig. 15
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 22, fig. 15
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 22, fig. 15

@@ -1,0 +1,36 @@
+public_id: 106681
+title: Fukūkenjaku Kannon
+attribution_label: official Buddhist atelier, probably under Kuninaka no Kimimaro
+created: 740s
+created_span: uncertain
+kind: statue
+medium: Dry lacquer with gold leaf
+materials: [lacquer, gold]
+dimensions: [362]
+institution: todai-ji
+description_md: "The eight-armed [[kannon]] “of the never-empty lasso” on the altar of the [[artwork/todai-ji-hokkedo]]: one of the most austere forms of the bodhisattva, with a third eye in the forehead, the lotus, the pilgrim’s staff and the lasso in its hands, an openwork silver crown with a standing Amida and a halo of flame-like rays. Made in [[hollow-dry-lacquer]] in the official atelier, probably under [[artist/kuninaka-no-kimimaro]]. [[source/history-of-japanese-art|p. 88, fig. 106, 108]]"
+relationships:
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 88, fig. 106, 108
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 88, fig. 106, 108
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 88, fig. 106, 108
+  created:
+    - source: history-of-japanese-art
+      locator: p. 88, fig. 106, 108
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 88, fig. 106, 108
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 88, fig. 106, 108
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 88, fig. 106, 108

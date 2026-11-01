@@ -1,0 +1,40 @@
+public_id: 106347
+name: Heiden-ji Temple
+names:
+  - lang: ja
+    role: translation
+    text: 平田寺
+kind: temple
+founded: 1283
+place: makinohara
+location: [138.2025, 34.69417]
+address: 静岡県牧之原市大江459
+wikidata_id: Q124496342
+metadata:
+  sources: [Wikidata Q124496342 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Heiden-ji_Sanmon.jpg/1280px-Heiden-ji_Sanmon.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Heiden-ji_Sanmon.jpg
+    license: CC BY-SA 4.0
+    credit: MChew
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q124496342
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q124496342
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q124496342
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q124496342
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q124496342

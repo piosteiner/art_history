@@ -1,0 +1,13 @@
+public_id: 106635
+name: Amida
+names:
+  - lang: ja
+    role: original
+    text: "{阿弥陀|あみだ}"
+category: iconography
+parent: buddha
+definition: Amitābha, the Buddha of the West, flanked by the bodhisattvas Kannon and Seishi.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 82

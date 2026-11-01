@@ -1,0 +1,49 @@
+public_id: 106383
+title: Shitennō, Kondō, Hōryūji
+names:
+  - Statues of the Four Heavenly Kings
+  - lang: ja
+    role: translation
+    text: 法隆寺金堂四天王像
+attribution_label: Anonymous
+created: c. 650
+created_span: uncertain
+kind: statue
+medium: Wood, with paint and gold leaf
+materials: [wood, gold]
+dimensions_note: Tamonten 134.2 cm
+institution: horyu-ji
+description_md: The four [[shitenno]] at the corners of the altar of the golden hall — Tamonten with a reliquary stupa, Zōchōten with a long and a short halberd, Jikokuten with a jewel and a halberd, Kōmokuten with brush and scroll — each carved from a single block, standing on a demon, with traces of colour and gilding. Dated about 650 by inscriptions naming the craftsmen Ōguchi Aya Yamaguchi Atai and Tsugi Konmaro and an entry in the Nihon shoki. [[source/history-of-japanese-art|p. 78, fig. 94]]
+wikidata_id: Q107046093
+metadata:
+  sources: [Wikidata Q107046093 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/hakuho-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 78, fig. 94
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6a/ZojoTen_viruudhaka_Horyuji_Kondo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:ZojoTen_viruudhaka_Horyuji_Kondo.jpg
+    license: Public domain
+    credit: TOKYO BIJYUTU GAKKO
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 78, fig. 94
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107046093
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 78, fig. 94
+  created:
+    - source: history-of-japanese-art
+      locator: p. 78, fig. 94
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 78, fig. 94
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 78, fig. 94

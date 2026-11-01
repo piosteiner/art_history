@@ -1,0 +1,51 @@
+public_id: 106396
+title: Shūkongōjin
+names:
+  - Statue of Shukongōjin
+  - lang: ja
+    role: translation
+    text: 東大寺執金剛神立像
+attribution_label: Anonymous
+created: 733
+kind: statue
+medium: Painted clay
+materials: [clay]
+dimensions: [173.9]
+institution: todai-ji
+description_md: "A grimacing guardian in armour clutching a thunderbolt (vajra), its scarves swinging: the secret treasure of the Hokkedō, linked with the founding of Rōben’s temple, the Konshōji, in 733. Kept in a lacquered cabinet behind the altar and shown only once a year, it keeps much of its original colour and gold leaf. [[source/history-of-japanese-art|p. 92, fig. 115]]"
+wikidata_id: Q107045975
+metadata:
+  sources: [Wikidata Q107045975 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 92, fig. 115
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Vajirapani_Shukongoshin_Todaiji2.JPG/1280px-Vajirapani_Shukongoshin_Todaiji2.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Vajirapani_Shukongoshin_Todaiji2.JPG
+    license: Public domain
+    credit: Association of Cultural Properties
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 92, fig. 115
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107045975
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 92, fig. 115
+  created:
+    - source: history-of-japanese-art
+      locator: p. 92, fig. 115
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 92, fig. 115
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 92, fig. 115
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 92, fig. 115

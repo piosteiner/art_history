@@ -1,0 +1,46 @@
+public_id: 106314
+title: “Flame ware” vessel
+names:
+  - lang: ja
+    role: original
+    text: "{火焔土器|かえんどき}"
+  - lang: ja-Latn
+    role: romanization
+    text: kaen-doki
+attribution_label: Anonymous
+created: c. 2500 BCE–c. 2400 BCE
+created_span: uncertain
+kind: vessel
+medium: Earthenware
+materials: [earthenware]
+dimensions: [30.8]
+description_md: "The best-known kind of Jōmon pottery: a cylindrical pot whose rim rises in openwork flames, the body covered with parallel grooves and swirls built up from cords of clay — made only along the Shinano River and for a short time. Held by Kokubunji, Kokubunji City, Tokyo. [[source/history-of-japanese-art|p. 18, fig. 7]]"
+relationships:
+  - type: created_in
+    to: place/niigata-prefecture
+    period: c. 2500 BCE–c. 2400 BCE
+    label: found at a site in Niigata prefecture
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 18, fig. 7
+  - type: associated_with
+    to: movement/middle-jomon
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 18, fig. 7
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 18, fig. 7
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 18, fig. 7
+  created:
+    - source: history-of-japanese-art
+      locator: p. 18, fig. 7
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 18, fig. 7
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 18, fig. 7

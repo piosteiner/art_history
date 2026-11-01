@@ -1,0 +1,54 @@
+public_id: 106368
+title: Kōdō (lecture hall), Tōshōdaiji
+names:
+  - Lecture Hall, Toshodai-ji
+  - lang: ja
+    role: translation
+    text: 唐招提寺講堂
+attribution_label: Anonymous
+created: mid 8th century
+created_span: uncertain
+kind: building
+institution: toshodai-ji
+location: [135.7848, 34.67588]
+description_md: "The lecture hall of [[institution/toshodai-ji]], the temple of the Chinese monk [[person/ganjin]]: built as the East Morning Hall of the imperial palace, dismantled and given to the temple, perhaps before Ganjin’s death in 763. The temple was the seat of his Ritsu school. [[source/history-of-japanese-art|p. 70, fig. 82]]"
+wikidata_id: Q107020489
+metadata:
+  sources: [Wikidata Q107020489 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/nara
+    period: 8th century
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 70, fig. 82
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 70, fig. 82
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Toshodai-ji_National_Treasure_World_heritage_%E5%9B%BD%E5%AE%9D%E3%83%BB%E4%B8%96%E7%95%8C%E9%81%BA%E7%94%A3%E5%94%90%E6%8B%9B%E6%8F%90%E5%AF%BA10.JPG/1280px-Toshodai-ji_National_Treasure_World_heritage_%E5%9B%BD%E5%AE%9D%E3%83%BB%E4%B8%96%E7%95%8C%E9%81%BA%E7%94%A3%E5%94%90%E6%8B%9B%E6%8F%90%E5%AF%BA10.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Toshodai-ji_National_Treasure_World_heritage_%E5%9B%BD%E5%AE%9D%E3%83%BB%E4%B8%96%E7%95%8C%E9%81%BA%E7%94%A3%E5%94%90%E6%8B%9B%E6%8F%90%E5%AF%BA10.JPG
+    license: CC BY-SA 4.0
+    credit: Nekosuki
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 70, fig. 82
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107020489
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q107020489
+    - source: history-of-japanese-art
+      locator: p. 70, fig. 82
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q107020489
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 70, fig. 82

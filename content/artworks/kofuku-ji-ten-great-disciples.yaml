@@ -1,0 +1,44 @@
+public_id: 106393
+title: Ten Great Disciples, Kōfukuji
+names: [興福寺十大弟子像]
+attribution_label: Anonymous
+created: 734
+kind: statue
+medium: Dry lacquer, with paint
+materials: [lacquer]
+dimensions_note: Kasenen 148.8 cm
+institution: kofuku-ji
+description_md: Six surviving figures from a set of the ten disciples of [[shaka]], made in [[hollow-dry-lacquer]] for the western golden hall that [[person/empress-komyo]] dedicated to her mother in 734. Monkish figures on rock-shaped bases; the face of Kasenen, contorted in an open-mouthed grimace above an emaciated chest, evokes his long self-denial. [[source/history-of-japanese-art|p. 84, fig. 104]]
+wikidata_id: Q107045861
+metadata:
+  sources: [Wikidata Q107045861 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 84, fig. 104
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b5/FURUNA_Kofukuji.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:FURUNA_Kofukuji.JPG
+    license: Public domain
+    credit: ASUKAEN
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 84, fig. 104
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 84, fig. 104
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q107045861
+    - source: history-of-japanese-art
+      locator: p. 84, fig. 104
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 84, fig. 104
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 84, fig. 104

@@ -1,0 +1,54 @@
+public_id: 106098
+name: Kagawa Prefecture
+names:
+  - kind: nickname
+    lang: ja
+    role: alternative
+    text: うどん県
+  - lang: nl
+    role: translation
+    text: Kagawa
+  - lang: fr
+    role: translation
+    text: préfecture de Kagawa
+  - lang: de
+    role: translation
+    text: Präfektur Kagawa
+  - lang: it
+    role: translation
+    text: prefettura di Kagawa
+  - lang: es
+    role: translation
+    text: Prefectura de Kagawa
+  - lang: ja
+    role: translation
+    text: 香川県
+  - lang: zh
+    role: translation
+    text: 香川县
+  - lang: ko
+    role: translation
+    text: 가가와현
+  - lang: ru
+    role: translation
+    text: Кагава
+kind: region
+parent: japan
+country_code: JP
+location: [134.04306, 34.34]
+wikidata_id: Q161454
+metadata:
+  sources: [Wikidata Q161454 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q161454
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q161454
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q161454

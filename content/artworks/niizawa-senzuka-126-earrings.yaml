@@ -1,0 +1,45 @@
+public_id: 106330
+title: Earrings
+attribution_label: Anonymous
+created: 5th century
+created_span: uncertain
+kind: jewellery
+medium: Gold
+materials: [gold]
+dimensions_note: length 21.5 cm
+institution: tokyo-national-museum
+description_md: A pair of gold earrings from a fifth-century tomb, close in style to the grave goods of the Korean kingdoms of Paekche, Kaya and Silla. [[source/history-of-japanese-art|p. 35, fig. 36]]
+relationships:
+  - type: created_in
+    to: place/niizawa-senzuka-kofun-cluster
+    period: 5th century
+    label: found at Niizawasenzuka Tumulus No. 126, Kashihara
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 35, fig. 36
+  - type: associated_with
+    to: movement/kofun-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 35, fig. 36
+  - type: designated_as
+    to: term/important-cultural-property-japan
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 35, fig. 36
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 35, fig. 36
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 35, fig. 36
+  created:
+    - source: history-of-japanese-art
+      locator: p. 35, fig. 36
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 35, fig. 36
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 35, fig. 36

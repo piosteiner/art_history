@@ -1,0 +1,16 @@
+public_id: 106348
+name: Kobe
+kind: settlement
+location: [135.19544, 34.69017]
+wikidata_id: Q48320
+metadata:
+  sources: [Wikidata Q48320 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q48320
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q48320

@@ -1,0 +1,50 @@
+public_id: 106099
+name: Miyazaki Prefecture
+names:
+  - Miyazaki
+  - lang: fr
+    role: translation
+    text: préfecture de Miyazaki
+  - lang: de
+    role: translation
+    text: Präfektur Miyazaki
+  - lang: it
+    role: translation
+    text: prefettura di Miyazaki
+  - lang: es
+    role: translation
+    text: prefectura de Miyazaki
+  - lang: ja
+    role: translation
+    text: 宮崎県
+  - lang: zh
+    role: translation
+    text: 宮崎縣
+  - lang: ko
+    role: translation
+    text: 미야자키현
+  - lang: ru
+    role: translation
+    text: Миядзаки
+kind: region
+parent: japan
+country_code: JP
+location: [131.42361, 31.91083]
+wikidata_id: Q130300
+metadata:
+  sources: [Wikidata Q130300 (retrieved 2026-11-01)]
+identifiers:
+  gnd: 4389003-9
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q130300
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q130300
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q130300

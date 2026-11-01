@@ -1,0 +1,44 @@
+public_id: 106088
+name: Hokkaido
+names:
+  - Hokkaido region
+  - JP-01
+  - lang: nl
+    role: translation
+    text: Prefectuur Hokkaido
+  - lang: fr
+    role: translation
+    text: préfecture de Hokkaidō
+  - lang: de
+    role: translation
+    text: Hokkaidō
+  - lang: it
+    role: translation
+    text: prefettura di Hokkaidō
+  - lang: es
+    role: translation
+    text: Prefectura de Hokkaido
+  - lang: ja
+    role: translation
+    text: 北海道
+  - lang: ko
+    role: translation
+    text: 홋카이도
+  - lang: ru
+    role: translation
+    text: Хоккайдо
+kind: region
+country_code: JP
+location: [141.34689, 43.06433]
+wikidata_id: Q1037393
+metadata:
+  sources: [Wikidata Q1037393 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1037393
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1037393

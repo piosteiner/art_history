@@ -1,0 +1,36 @@
+public_id: 106670
+title: Box with design of boys and lions
+attribution_label: Anonymous
+created: 8th century
+created_span: uncertain
+kind: box
+medium: Lacquer with inlaid mother-of-pearl
+materials: [lacquer, mother-of-pearl]
+dimensions: [18.1, 23.5, 23.5]
+institution: museum-of-the-imperial-collections
+description_md: "A Tang Chinese lacquer box, inlaid in mother-of-pearl on all four sides with boys playing with lions: the lion from Sassanian art, the boys the Daoist symbol of eternal youth. Made for the Japanese market of the period; originally kept at Hōryūji. [[source/history-of-japanese-art|p. 51, fig. 55]]"
+relationships:
+  - type: created_in_polity
+    to: polity/tang-dynasty
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 51, fig. 55
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 51, fig. 55
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 51, fig. 55
+  created:
+    - source: history-of-japanese-art
+      locator: p. 51, fig. 55
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 51, fig. 55
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 51, fig. 55
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 51, fig. 55

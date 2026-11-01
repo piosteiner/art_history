@@ -1,0 +1,53 @@
+public_id: 106371
+title: Kondō (golden hall), Hōryūji
+names:
+  - Golden Hall, Horyu-ji
+  - lang: fr
+    role: translation
+    text: pavillon doré du temple Hōryū
+  - lang: ja
+    role: translation
+    text: 法隆寺金堂
+attribution_label: Anonymous
+created: 7th century
+created_span: uncertain
+kind: building
+institution: horyu-ji
+location: [135.7344, 34.61426]
+description_md: The [[kondo]] of Hōryūji, with the pagoda the oldest building of the temple, completed perhaps by 680 when the temple was rebuilt after the fire of 670. A double roof of square rafters on bracket arms carved like clouds; inside, an altar platform with the [[artwork/horyu-ji-shaka-triad]], the [[artwork/horyu-ji-kondo-yakushi]] and the [[artwork/horyu-ji-kondo-four-heavenly-kings]], and on the walls the [[artwork/horyu-ji-kondo-murals]]. [[source/history-of-japanese-art|p. 63, fig. 69]]
+wikidata_id: Q107020506
+metadata:
+  sources: [Wikidata Q107020506 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/ikaruga
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 63, fig. 69
+  - type: associated_with
+    to: movement/hakuho-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 63, fig. 69
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Horyu-ji%2C_November_2016.jpg/1280px-Horyu-ji%2C_November_2016.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Horyu-ji,_November_2016.jpg
+    license: CC BY-SA 4.0
+    credit: Martin Falbisoner
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 63, fig. 69
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107020506
+  created:
+    - source: history-of-japanese-art
+      locator: p. 63, fig. 69
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q107020506
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 63, fig. 69

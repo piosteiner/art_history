@@ -1,0 +1,13 @@
+public_id: 106647
+name: hollow dry lacquer
+names:
+  - lang: ja
+    role: original
+    text: "{脱活乾漆|だっかつかんしつ}"
+category: technique
+parent: dry-lacquer
+definition: Dry lacquer over a clay core on a wooden armature; when the layers are dry, the clay is taken out through an opening in the back, leaving the figure hollow.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 86

@@ -1,0 +1,67 @@
+public_id: 106369
+title: Daibutsuden (Great Buddha Hall), Tōdaiji
+names:
+  - Great Buddha Hall
+  - Daibutsu-den
+  - lang: fr
+    role: translation
+    text: grande salle du Bouddha
+  - lang: ja
+    role: translation
+    text: 東大寺大仏殿
+  - lang: zh
+    role: translation
+    text: 东大寺大佛殿
+attribution_label: Anonymous
+created: 758
+kind: building
+dimensions: [4874.2, 5701.2]
+institution: todai-ji
+location: [135.8399, 34.689]
+description_md: The hall of the [[artwork/todai-ji-daibutsu]] at the heart of Tōdaiji, the temple [[person/emperor-shomu]] founded as the head of all provincial temples. The first hall was eleven bays long and seven deep, larger than the imperial audience hall; it burnt to the ground in 1180 in the Genpei War and was rebuilt at once. [[source/history-of-japanese-art|p. 68, fig. 78]]
+wikidata_id: Q3012032
+metadata:
+  sources: [Wikidata Q3012032 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/nara
+    period: 758
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 68, fig. 78
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 68, fig. 78
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Daibutsu-den_in_Todaiji_Nara01bs3200.jpg/1280px-Daibutsu-den_in_Todaiji_Nara01bs3200.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Daibutsu-den_in_Todaiji_Nara01bs3200.jpg
+    license: CC BY 2.5
+    credit: 663highland
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 68, fig. 78
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q3012032
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q3012032
+    - source: history-of-japanese-art
+      locator: p. 68, fig. 78
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q3012032
+  dimensions:
+    - accessed: 2026-11-01
+      property: P2048
+      wikidata: Q3012032
+    - source: history-of-japanese-art
+      locator: p. 68, fig. 78
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 68, fig. 78

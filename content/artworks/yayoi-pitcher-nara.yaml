@@ -1,0 +1,43 @@
+public_id: 106339
+title: Pitcher
+attribution_label: Anonymous
+created: c. 100 BCE–c. 100
+created_span: uncertain
+kind: vessel
+medium: Clay
+materials: [clay]
+dimensions: [21.9]
+institution: kashihara-archaeological-institute
+description_md: A Middle Yayoi pitcher on a tall base with leaf-shaped openings, its neck and body divided into bands decorated with a comb pressed and dragged through the clay. [[source/history-of-japanese-art|p. 27, fig. 22]]
+relationships:
+  - type: created_in
+    to: place/nara-prefecture
+    period: c. 100 BCE–c. 100
+    label: found at Nara prefecture (Kansai)
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 27, fig. 22
+  - type: associated_with
+    to: movement/yayoi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 27, fig. 22
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 27, fig. 22
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 27, fig. 22
+  created:
+    - source: history-of-japanese-art
+      locator: p. 27, fig. 22
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 27, fig. 22
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 27, fig. 22
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 27, fig. 22

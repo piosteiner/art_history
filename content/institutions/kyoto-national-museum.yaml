@@ -1,0 +1,75 @@
+public_id: 106112
+name: Kyoto National Museum
+names:
+  - Kyoto Kokuritsu Hankubutsukan
+  - KNM
+  - National Museum Kyoto
+  - lang: nl
+    role: translation
+    text: Kioto National Museum
+  - lang: fr
+    role: translation
+    text: musée national de Kyoto
+  - lang: de
+    role: translation
+    text: Nationalmuseum Kyōto
+  - lang: it
+    role: translation
+    text: Museo Nazionale di Kyoto
+  - lang: es
+    role: translation
+    text: Museo Nacional de Kioto
+  - lang: ja
+    role: translation
+    text: 京都国立博物館
+  - lang: zh
+    role: translation
+    text: 京都國立博物館
+  - lang: ko
+    role: translation
+    text: 교토 국립박물관
+  - lang: ru
+    role: translation
+    text: Национальный музей Киото
+kind: museum
+founded: 1897
+place: kyoto
+location: [135.77312, 34.98999]
+address: 京都府京都市東区茶屋町527
+website_url: https://www.kyohaku.go.jp/
+wikidata_id: Q147286
+metadata:
+  sources: [Wikidata Q147286 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/260214_Kyoto_National_Museum_Kyoto_Japan04bs4.jpg/1280px-260214_Kyoto_National_Museum_Kyoto_Japan04bs4.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:260214_Kyoto_National_Museum_Kyoto_Japan04bs4.jpg
+    license: CC BY-SA 4.0
+    credit: 663highland
+identifiers:
+  bnf: 12164573d
+  gnd: 128231-1
+  idref: "030175615"
+  lc: n81053839
+  ulan: "500301104"
+  viaf: "159167589"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q147286
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q147286
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q147286
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q147286
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q147286

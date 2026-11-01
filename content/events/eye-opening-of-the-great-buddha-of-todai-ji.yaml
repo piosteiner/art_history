@@ -15,6 +15,17 @@ relationships:
   - type: concerns
     to: institution/todai-ji
     notes_md: the Great Buddha consecrated
+  - type: concerns
+    to: artwork/todai-ji-daibutsu
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 85
+  - type: concerns
+    to: artwork/todai-ji-tanjo-shaka
+    label: made for the ceremony, by tradition
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 94
 sources:
   period:
     - note: 「天平勝宝4年（752）に盛大な開眼」

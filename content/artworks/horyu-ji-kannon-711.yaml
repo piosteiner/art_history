@@ -1,0 +1,35 @@
+public_id: 106673
+title: Kannon Bosatsu
+attribution_label: Anonymous
+created: 711
+kind: statue
+medium: Camphor wood, with lacquer and gold leaf
+materials: [camphor wood, lacquer, gold]
+dimensions: [77.9]
+institution: horyu-ji
+description_md: "One of a group of six bodhisattvas at Hōryūji, made in the single-block technique ([[ichiboku-zukuri]]) of camphor wood and covered with lacquer and gold leaf — the jewellery, hair and ornaments modelled in lacquer: the first known use of lacquer in Japanese sculpture other than as a coating. [[source/history-of-japanese-art|p. 80, fig. 98]]"
+relationships:
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 80, fig. 98
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 80, fig. 98
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 80, fig. 98
+  created:
+    - source: history-of-japanese-art
+      locator: p. 80, fig. 98
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 80, fig. 98
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 80, fig. 98
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 80, fig. 98

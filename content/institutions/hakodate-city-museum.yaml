@@ -1,0 +1,43 @@
+public_id: 106119
+name: Hakodate City Museum
+names:
+  - lang: ja
+    role: translation
+    text: 市立函館博物館
+  - lang: ko
+    role: translation
+    text: 시립 하코다테 박물관
+founded: 1966-04-28
+place: hakodate
+location: [140.71464, 41.75594]
+address: 〒040-0044  北海道函館市青柳町17-1
+website_url: http://hakohaku.com/
+wikidata_id: Q11480647
+metadata:
+  sources: [Wikidata Q11480647 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Hakodate_City_Museum_in_May_2024.jpg/1280px-Hakodate_City_Museum_in_May_2024.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hakodate_City_Museum_in_May_2024.jpg
+    license: CC BY-SA 4.0
+    credit: 掬茶
+identifiers:
+  idref: "166023604"
+  lc: n85032802
+  viaf: "139614084"
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q11480647
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q11480647
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q11480647
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q11480647

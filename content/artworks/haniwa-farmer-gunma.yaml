@@ -1,0 +1,42 @@
+public_id: 106316
+title: Haniwa figure of a farmer
+attribution_label: Anonymous
+created: 300/710
+kind: haniwa
+medium: Clay
+materials: [clay]
+dimensions: [92.5]
+institution: tokyo-national-museum
+description_md: A smiling farmer with a hoe over his shoulder — one of the everyday figures among the haniwa of the Kantō. [[source/history-of-japanese-art|p. 33, fig. 29]]
+relationships:
+  - type: created_in
+    to: place/gunma
+    period: 300/710
+    label: found at a site in Gunma prefecture
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 33, fig. 29
+  - type: associated_with
+    to: movement/kofun-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 33, fig. 29
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 33, fig. 29
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 33, fig. 29
+  created:
+    - source: history-of-japanese-art
+      locator: p. 33, fig. 29
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 33, fig. 29
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 33, fig. 29
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 33, fig. 29

@@ -1,0 +1,39 @@
+public_id: 106678
+title: Objects from ritual sites at the Ōmiyame Shrine
+attribution_label: Anonymous
+created: 6th century–7th century
+created_span: uncertain
+kind: jewellery
+medium: Jade
+materials: [jade]
+institution: omiyame-shrine
+description_md: "Tubular and round beads and magatama found at the ritual sites of the Ōmiyame Shrine: offerings to a kami, which in the sixth and seventh centuries still took the form of stone beads and magatama, as since the Jōmon period. [[source/history-of-japanese-art|p. 54, fig. 58]]"
+relationships:
+  - type: created_in
+    to: place/kyotango
+    period: 6th century–7th century
+    label: found at the ritual sites of the Ōmiyame Shrine
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 54, fig. 58
+  - type: associated_with
+    to: movement/asuka-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 54, fig. 58
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 54, fig. 58
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 54, fig. 58
+  created:
+    - source: history-of-japanese-art
+      locator: p. 54, fig. 58
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 54, fig. 58
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 54, fig. 58

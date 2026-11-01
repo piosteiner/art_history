@@ -1,0 +1,52 @@
+public_id: 106100
+name: Kumamoto Prefecture
+names:
+  - lang: nl
+    role: translation
+    text: Kumamoto
+  - lang: fr
+    role: translation
+    text: préfecture de Kumamoto
+  - lang: de
+    role: translation
+    text: Präfektur Kumamoto
+  - lang: it
+    role: translation
+    text: prefettura di Kumamoto
+  - lang: es
+    role: translation
+    text: prefectura de Kumamoto
+  - lang: ja
+    role: translation
+    text: 熊本県
+  - lang: zh
+    role: translation
+    text: 熊本縣
+  - lang: ko
+    role: translation
+    text: 구마모토현
+  - lang: ru
+    role: translation
+    text: Кумамото
+kind: region
+parent: japan
+country_code: JP
+location: [130.74139, 32.78972]
+wikidata_id: Q130308
+metadata:
+  sources: [Wikidata Q130308 (retrieved 2026-11-01)]
+identifiers:
+  gnd: 4389002-7
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q130308
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q130308
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q130308

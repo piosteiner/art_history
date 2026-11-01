@@ -1,0 +1,12 @@
+public_id: 106659
+name: pagoda
+names:
+  - lang: ja
+    role: original
+    text: "{塔|とう}"
+category: architecture
+definition: "A tower of several storeys in a Buddhist temple, the East Asian form of the Indian stupa: a reliquary built around a central pillar that rises from a foundation stone holding relics to the finial on the roof."
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 64

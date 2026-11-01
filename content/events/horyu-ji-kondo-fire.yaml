@@ -10,6 +10,12 @@ place: ikaruga
 description_md: On 26 January 1949 the Kondō of Hōryūji, the oldest wooden building in the world, caught fire and its wall paintings were burnt[[source/bunka-boka-day|「昭和24年1月26日に、現存する世界最古の木造建造物である法隆寺（奈良県斑鳩町）の金堂が炎上し，壁画が焼損した」]] — most of them blackened beyond reading[[source/history-of-japanese-art|pp. 82–83]]. The shock led to the Law for the Protection of Cultural Properties of 1950, and since 1955 the 26th of January has been Japan's day for protecting cultural properties from fire[[source/bunka-boka-day|「翌昭和25年に文化財保護の統括的法律として文化財保護法が制定されました … 昭和30年に…1月26日を「文化財防火デー」と定め」]].
 relationships:
   - type: concerns
+    to: artwork/horyu-ji-kondo-murals
+    label: most of the paintings blackened
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 82
+  - type: concerns
     to: movement/showa-period
     notes_md: "1949"
 sources:

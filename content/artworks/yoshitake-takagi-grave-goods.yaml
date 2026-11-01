@@ -1,0 +1,35 @@
+public_id: 106340
+title: Swords, halberd, spear, mirror, tubular beads and magatama jewel
+attribution_label: Anonymous
+created: 2nd century BCE
+created_span: uncertain
+medium: Bronze and steatite
+materials: [bronze, steatite]
+institution: fukuoka-city-museum
+description_md: "The goods of a 2nd-century-BCE grave in northern Kyūshū: a bronze mirror probably made in Korea, two bronze daggers, a spearhead, a halberd and a magatama — the same three kinds of objects as the regalia of the later emperors. Swords 33.4 and 30.2 cm long. [[source/history-of-japanese-art|p. 24, fig. 17]]"
+relationships:
+  - type: created_in
+    to: place/fukuoka
+    period: 2nd century BCE
+    label: found at Yoshitake Takagi, Fukuoka prefecture
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 24, fig. 17
+  - type: associated_with
+    to: movement/yayoi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 24, fig. 17
+sources:
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 24, fig. 17
+  created:
+    - source: history-of-japanese-art
+      locator: p. 24, fig. 17
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 24, fig. 17
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 24, fig. 17

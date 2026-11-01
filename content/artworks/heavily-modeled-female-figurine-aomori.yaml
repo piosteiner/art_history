@@ -1,0 +1,39 @@
+public_id: 106320
+title: “Heavily-modeled” female figurine
+attribution_label: Anonymous
+created: c. 1000 BCE–c. 400 BCE
+created_span: uncertain
+kind: dogū
+medium: Earthenware
+materials: [earthenware]
+dimensions: [38.1]
+description_md: A hollow Final Jōmon figurine of the type with eyes like snow goggles, wearing a robe decorated with large swirls. In a private collection, Japan. [[source/history-of-japanese-art|p. 20, fig. 11]]
+relationships:
+  - type: created_in
+    to: place/aomori-prefecture
+    period: c. 1000 BCE–c. 400 BCE
+    label: found at a site in Aomori prefecture
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 20, fig. 11
+  - type: associated_with
+    to: movement/final-jomon
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 20, fig. 11
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 20, fig. 11
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 20, fig. 11
+  created:
+    - source: history-of-japanese-art
+      locator: p. 20, fig. 11
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 20, fig. 11
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 20, fig. 11

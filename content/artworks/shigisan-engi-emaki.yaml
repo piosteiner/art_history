@@ -1,0 +1,86 @@
+public_id: 106402
+title: Shigisan engi emaki
+title_status: common
+names:
+  - Shigisan Engi Emaki
+  - lang: ja
+    role: original
+    text: 信貴山縁起
+  - Legend of Mount Shigi Emaki
+  - lang: fr
+    role: translation
+    text: Rouleaux des légendes du mont Shigi
+  - lang: de
+    role: translation
+    text: Shigisan-engi-Bildrollen
+  - lang: zh
+    role: translation
+    text: 信贵山缘起
+  - lang: ko
+    role: translation
+    text: 신귀산연기
+attribution_label: Anonymous
+created: late 12th century
+created_span: uncertain
+kind: emakimono
+medium: Ink and colour on paper
+materials: [ink, paper]
+dimensions: [31.8]
+institution: chogosonshi-ji
+location: [135.8364, 34.6837]
+description_md: A twelfth-century narrative scroll in three parts, the legends of the temple on Mount Shigi. In the last part an elderly nun travels to Nara to pray before the Great Buddha for news of her brother; this scene shows the Daibutsuden before it burnt in 1180 and gives an idea of how it looked. [[source/history-of-japanese-art|p. 69, fig. 79]]
+wikidata_id: Q3443333
+metadata:
+  sources: [Wikidata Q3443333 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/nara
+    period: 12th century
+  - type: associated_with
+    to: movement/heian-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 69, fig. 79
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Sigisanengi_tobikura.jpg/1280px-Sigisanengi_tobikura.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sigisanengi_tobikura.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 69, fig. 79
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q3443333
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 69, fig. 79
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q3443333
+    - source: history-of-japanese-art
+      locator: p. 69, fig. 79
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q3443333
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 69, fig. 79
+  dimensions:
+    - accessed: 2026-11-01
+      property: P2048
+      wikidata: Q3443333
+    - source: history-of-japanese-art
+      locator: p. 69, fig. 79
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q3443333
+    - source: history-of-japanese-art
+      locator: p. 69, fig. 79
+  title_status:
+    - accessed: 2026-11-01
+      wikidata: Q3443333

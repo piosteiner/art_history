@@ -1,0 +1,43 @@
+public_id: 106323
+title: Figurine
+attribution_label: Anonymous
+created: c. 3000 BCE–c. 2500 BCE
+created_span: uncertain
+kind: dogū
+medium: Earthenware
+materials: [earthenware]
+dimensions: [14.8]
+institution: keio-university
+description_md: "An Early Jōmon figurine: a head with long hair and arms folded at the shoulders above a lower half shaped like an inverted phallus — an image of fertility and regeneration. [[source/history-of-japanese-art|p. 17, fig. 6]]"
+relationships:
+  - type: created_in
+    to: place/akita-prefecture
+    period: c. 3000 BCE–c. 2500 BCE
+    label: found at a site in Akita prefecture
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 17, fig. 6
+  - type: associated_with
+    to: movement/early-jomon
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 17, fig. 6
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 17, fig. 6
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 17, fig. 6
+  created:
+    - source: history-of-japanese-art
+      locator: p. 17, fig. 6
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 17, fig. 6
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 17, fig. 6
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 17, fig. 6

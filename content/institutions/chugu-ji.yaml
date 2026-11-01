@@ -1,0 +1,53 @@
+public_id: 106344
+name: Chūgū-ji Temple
+names:
+  - Chugu-ji
+  - Chūgū-ji
+  - lang: fr
+    role: translation
+    text: temple Chūgū
+  - lang: ja
+    role: translation
+    text: 中宮寺
+  - lang: ru
+    role: translation
+    text: Тюгу-дзи
+kind: temple
+founded: 7th century
+place: ikaruga
+location: [135.73958, 34.61497]
+address: 〒636-0111 奈良県生駒郡斑鳩町法隆寺北1-1-2
+website_url: http://www.chuguji.jp/
+wikidata_id: Q1091232
+metadata:
+  sources: [Wikidata Q1091232 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Chuguji_Hondo_2008.jpg/1280px-Chuguji_Hondo_2008.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Chuguji_Hondo_2008.jpg
+    license: CC BY-SA 3.0
+    credit: Wiiii
+identifiers:
+  gnd: "1136983716"
+  lc: n82115554
+  viaf: "257268738"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1091232
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1091232
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q1091232
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1091232
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1091232

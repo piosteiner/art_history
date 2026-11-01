@@ -1,0 +1,75 @@
+public_id: 106380
+title: Tamamushi Shrine
+names:
+  - Tamamushi no Zushi
+  - Tamamushi Zushi
+  - Tamamushi Tabernacle
+  - Jewel Beetle Shrine
+  - lang: ja
+    role: translation
+    text: 玉虫厨子
+  - lang: zh
+    role: translation
+    text: 玉蟲櫥子
+attribution_label: Anonymous
+created: c. 650
+created_span: uncertain
+kind: zushi
+medium: Cypress and camphor wood, with lacquer
+materials: [hinoki wood, camphor wood, lacquer]
+dimensions: [213]
+institution: horyu-ji
+location: [135.735, 34.6151]
+description_md: "A portable [[zushi]] in the form of a [[kondo]] on a tall plinth: the earliest evidence of Japanese Buddhist architecture, older than the golden hall of Hōryūji. Named after the iridescent wings of the tamamushi beetle once set under its openwork metal. The paintings in red, yellow and green on black lacquer — the only Buddhist painting left from the Asuka period — show bodhisattvas, the Four Guardian Kings and [[jataka]] tales; on one side the Hungry Tigress, told in continuous narrative down the panel. [[source/history-of-japanese-art|p. 75, fig. 90–91]]"
+wikidata_id: Q7680611
+metadata:
+  sources: [Wikidata Q7680611 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/ikaruga
+    period: 7th century
+  - type: associated_with
+    to: movement/asuka-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 75, fig. 90–91
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/69/Tamamushi_Shrine.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Tamamushi_Shrine.JPG
+    license: Public domain
+    credit: Tokyo Fine Arts School and Tokyo Music School]]
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 75, fig. 90–91
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q7680611
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 75, fig. 90–91
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q7680611
+    - source: history-of-japanese-art
+      locator: p. 75, fig. 90–91
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q7680611
+  materials:
+    - accessed: 2026-11-01
+      property: P186
+      wikidata: Q7680611
+    - source: history-of-japanese-art
+      locator: p. 75, fig. 90–91
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 75, fig. 90–91
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q7680611
+    - source: history-of-japanese-art
+      locator: p. 75, fig. 90–91

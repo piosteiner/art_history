@@ -1,0 +1,13 @@
+public_id: 106300
+name: magatama
+names:
+  - lang: ja
+    role: original
+    text: "{勾玉|まがたま}"
+category: object type
+parent: jewellery
+definition: A comma-shaped bead of stone or glass, worn from the Jōmon period on; one of the three regalia of the Japanese emperors.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 24, 35

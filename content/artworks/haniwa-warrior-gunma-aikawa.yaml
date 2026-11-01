@@ -1,0 +1,42 @@
+public_id: 106319
+title: Haniwa figure of a warrior
+attribution_label: Anonymous
+created: 300/710
+kind: haniwa
+medium: Clay
+materials: [clay]
+dimensions: [125]
+institution: aikawa-archaeological-museum
+description_md: A warrior from the eastern Kantō in full armour over wide trousers, with gauntlets and a helmet. [[source/history-of-japanese-art|p. 32, fig. 28]]
+relationships:
+  - type: created_in
+    to: place/gunma
+    period: 300/710
+    label: found at a site in Gunma prefecture
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 32, fig. 28
+  - type: associated_with
+    to: movement/kofun-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 32, fig. 28
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 32, fig. 28
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 32, fig. 28
+  created:
+    - source: history-of-japanese-art
+      locator: p. 32, fig. 28
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 32, fig. 28
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 32, fig. 28
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 32, fig. 28

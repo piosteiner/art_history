@@ -1,0 +1,47 @@
+public_id: 106356
+name: Shōsōin
+names:
+  - Shōsō-in
+  - lang: ja
+    role: translation
+    text: 正倉院
+  - lang: zh
+    role: translation
+    text: 正仓院
+  - lang: ko
+    role: translation
+    text: 쇼소인
+  - lang: ru
+    role: translation
+    text: Сёсоин
+founded: c. 756
+place: nara
+location: [135.83861, 34.69194]
+website_url: https://shosoin.kunaicho.go.jp/
+wikidata_id: Q2379007
+metadata:
+  sources: [Wikidata Q2379007 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Shosin-shouso.jpg/1280px-Shosin-shouso.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shosin-shouso.jpg
+    license: CC BY-SA 4.0
+    credit: あずきごはん
+identifiers:
+  bnf: 13319045f
+  gnd: 108717242X
+  idref: "027779971"
+  lc: n82059075
+  viaf: "266860640"
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q2379007
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q2379007
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q2379007

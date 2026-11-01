@@ -1,0 +1,36 @@
+public_id: 106674
+title: Yakushi, Kondō, Hōryūji
+attribution_label: Anonymous
+created: first half of the 7th century
+created_span: uncertain
+kind: statue
+medium: Gilt bronze
+materials: [gilt bronze]
+dimensions: [63]
+institution: horyu-ji
+description_md: "A seated [[yakushi]] whose halo carries an inscription: made in 607 by Tori Busshi for [[person/prince-shotoku]]’s new temple, Wakakusadera. Most scholars now think it a work of Hōryūji’s rebuilding after the fire of 670, replacing the original: the face is softer than the Shaka Triad’s, the folds fewer. [[source/history-of-japanese-art|p. 72, fig. 85]]"
+relationships:
+  - type: associated_with
+    to: movement/asuka-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 72, fig. 85
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 72, fig. 85
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 72, fig. 85
+  created:
+    - source: history-of-japanese-art
+      locator: p. 72, fig. 85
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 72, fig. 85
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 72, fig. 85
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 72, fig. 85

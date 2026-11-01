@@ -1,0 +1,56 @@
+public_id: 106090
+name: Aichi Prefecture
+names:
+  - lang: ja-Latn
+    role: romanization
+    text: Aichi-ken
+  - Aichi
+  - lang: nl
+    role: translation
+    text: Prefectuur Aichi
+  - lang: fr
+    role: translation
+    text: préfecture d'Aichi
+  - lang: de
+    role: translation
+    text: Präfektur Aichi
+  - lang: it
+    role: translation
+    text: prefettura di Aichi
+  - lang: es
+    role: translation
+    text: Prefectura de Aichi
+  - lang: ja
+    role: translation
+    text: 愛知県
+  - lang: zh
+    role: translation
+    text: 愛知縣
+  - lang: ko
+    role: translation
+    text: 아이치현
+  - lang: ru
+    role: translation
+    text: Айти
+kind: region
+parent: japan
+country_code: JP
+location: [136.90642, 35.18017]
+wikidata_id: Q80434
+metadata:
+  sources: [Wikidata Q80434 (retrieved 2026-11-01)]
+identifiers:
+  gnd: 4296187-7
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q80434
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q80434
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q80434

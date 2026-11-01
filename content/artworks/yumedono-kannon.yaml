@@ -1,0 +1,57 @@
+public_id: 106378
+title: Yumedono Kannon
+names:
+  - Guze Kanzeon Bosatsu
+  - Kuze Kanzeon Bosatsu
+  - Kuse Kanzeon Bosatsu
+  - Guze Kannon
+  - Kuze Kannon
+  - Kuse Kannon
+  - lang: ja
+    role: translation
+    text: 救世観世音菩薩
+attribution_label: Anonymous
+created: early 7th century
+created_span: uncertain
+kind: statue
+medium: Gilt wood
+materials: [camphor wood, gold]
+dimensions: [197]
+institution: horyu-ji
+description_md: A [[kannon]] carved from a single piece of camphor wood and covered with gold leaf, kept in the octagonal Yumedono (Hall of Dreams) of Hōryūji, built in the eighth century to honour Prince Shōtoku. Hidden for centuries in a closed shrine, it was opened for Ernest Fenollosa in the late nineteenth century and is therefore unusually well preserved. [[source/history-of-japanese-art|p. 75, fig. 89]]
+wikidata_id: Q17990562
+metadata:
+  sources: [Wikidata Q17990562 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/asuka-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 75, fig. 89
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e8/GUZE_Kannon_Horyuji.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:GUZE_Kannon_Horyuji.JPG
+    license: Public domain
+    credit: Tokyo Bijutsu Gakko
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 75, fig. 89
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q17990562
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 75, fig. 89
+  created:
+    - source: history-of-japanese-art
+      locator: p. 75, fig. 89
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 75, fig. 89
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 75, fig. 89
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 75, fig. 89

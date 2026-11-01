@@ -1,0 +1,54 @@
+public_id: 106362
+title: Message by Emperor Shōmu
+names:
+  - Imperial Rescript of Emperor Shōmu
+  - lang: ja
+    role: translation
+    text: 聖武天皇勅書
+attribution_label: Emperor Shōmu (the character choku) and a court clerk
+created: 749
+kind: handscroll
+medium: Hand scroll, ink on paper
+materials: [ink, paper]
+dimensions: [29.2, 95.8]
+institution: heiden-ji
+description_md: Part of an imperial decree sent to twelve temples of the Kansai, granting linen, cotton and land and asking for prayers for peace and the spread of Buddhism. The emperor wrote only the large character for choku (imperial decree) at the end; the text is the confident hand of a government clerk, and the ministers signed below. The rescript of the year of [[person/emperor-shomu]]’s abdication. [[source/history-of-japanese-art|p. 47, fig. 48]]
+wikidata_id: Q107045463
+metadata:
+  sources: [Wikidata Q107045463 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 47, fig. 48
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b8/Emperor_Shomu_rescript.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emperor_Shomu_rescript.jpg
+    license: Public domain
+    credit: Shōmu
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 47, fig. 48
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107045463
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 47, fig. 48
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q107045463
+    - source: history-of-japanese-art
+      locator: p. 47, fig. 48
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 47, fig. 48
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 47, fig. 48
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 47, fig. 48

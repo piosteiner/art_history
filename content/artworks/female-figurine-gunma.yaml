@@ -1,0 +1,39 @@
+public_id: 106313
+title: Female figurine
+attribution_label: Anonymous
+created: c. 1000 BCE–c. 400 BCE
+created_span: uncertain
+kind: dogū
+medium: Earthenware
+materials: [earthenware]
+dimensions: [31]
+description_md: A free-standing Final Jōmon figurine with a heart-shaped face set at an angle, narrow waist and wide hips marked with spirals. In a private collection, Gunma prefecture. [[source/history-of-japanese-art|p. 21, fig. 13]]
+relationships:
+  - type: created_in
+    to: place/gunma
+    period: c. 1000 BCE–c. 400 BCE
+    label: found at a site in Gunma prefecture
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 21, fig. 13
+  - type: associated_with
+    to: movement/final-jomon
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 21, fig. 13
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 21, fig. 13
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 21, fig. 13
+  created:
+    - source: history-of-japanese-art
+      locator: p. 21, fig. 13
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 21, fig. 13
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 21, fig. 13

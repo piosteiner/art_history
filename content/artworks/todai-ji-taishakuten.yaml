@@ -1,0 +1,36 @@
+public_id: 106685
+title: Taishakuten
+attribution_label: Anonymous
+created: second half of the 8th century
+created_span: uncertain
+kind: statue
+medium: Dry lacquer with paint
+materials: [lacquer]
+dimensions: [401]
+institution: todai-ji
+description_md: Taishakuten — the Indian god Indra — from the dry-lacquer pair of Bonten and Taishakuten on the altar of the Hokkedō, both about four metres tall; quiet, over-life-size figures with arms gracefully extended, probably from the official workshop. [[source/history-of-japanese-art|p. 93, fig. 116]]
+relationships:
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 93, fig. 116
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 93, fig. 116
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 93, fig. 116
+  created:
+    - source: history-of-japanese-art
+      locator: p. 93, fig. 116
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 93, fig. 116
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 93, fig. 116
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 93, fig. 116

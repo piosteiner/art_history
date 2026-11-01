@@ -1,0 +1,21 @@
+public_id: 106087
+name: first arrival of Christopher Columbus to America
+period: 1492-10-21
+location: [-75.36667, 23.73333]
+wikidata_id: Q221474
+metadata:
+  sources: [Wikidata Q221474 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Flickr_-_USCapitol_-_Landing_of_Columbus_%281%29.jpg/1280px-Flickr_-_USCapitol_-_Landing_of_Columbus_%281%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Flickr_-_USCapitol_-_Landing_of_Columbus_(1).jpg
+    license: Public domain
+    credit: USCapitol
+sources:
+  period:
+    - accessed: 2026-11-01
+      property: P585
+      wikidata: Q221474
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q221474

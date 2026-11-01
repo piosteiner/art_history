@@ -1,0 +1,16 @@
+public_id: 106360
+name: Izumo
+kind: settlement
+location: [132.68544, 35.40162]
+wikidata_id: Q825166
+metadata:
+  sources: [Wikidata Q825166 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q825166
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q825166

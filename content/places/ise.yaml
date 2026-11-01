@@ -1,0 +1,16 @@
+public_id: 106358
+name: Ise
+kind: settlement
+location: [136.70931, 34.4875]
+wikidata_id: Q328067
+metadata:
+  sources: [Wikidata Q328067 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q328067
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q328067

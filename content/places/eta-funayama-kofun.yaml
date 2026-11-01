@@ -1,0 +1,29 @@
+public_id: 106109
+name: Eta Funayama Kofun
+names:
+  - lang: ja
+    role: translation
+    text: 江田船山古墳
+  - lang: ko
+    role: translation
+    text: 에다후나야마 고분
+kind: archaeological
+parent: japan
+country_code: JP
+location: [130.60001, 32.97129]
+wikidata_id: Q11259227
+metadata:
+  sources: [Wikidata Q11259227 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q11259227
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q11259227
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q11259227

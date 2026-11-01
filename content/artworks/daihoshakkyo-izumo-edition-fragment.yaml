@@ -1,0 +1,40 @@
+public_id: 106672
+title: Fragment of the Izumo Edition of the Daihōshakkyō Sutra
+names:
+  - lang: zh-Latn
+    role: romanization
+    text: Daibaojijing
+attribution_label: attributed to Empress Kōmyō
+created: 8th century
+created_span: uncertain
+kind: sutra
+medium: Ink on paper
+materials: [ink, paper]
+dimensions: [27, 14.6]
+institution: kyoto-national-museum
+description_md: A leaf from a copy of the Daihōshakkyō (Sutra Treasury of the Buddhist Law), part of a collection of forty-nine sutras. The paper is coloured, with a border of chrysanthemums at the top, and the writing is in a formal clerical script with thick strokes. Attributed to [[person/empress-komyo]], consort of Emperor Shōmu. [[source/history-of-japanese-art|p. 47, fig. 49]]
+relationships:
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 47, fig. 49
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 47, fig. 49
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 47, fig. 49
+  created:
+    - source: history-of-japanese-art
+      locator: p. 47, fig. 49
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 47, fig. 49
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 47, fig. 49
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 47, fig. 49

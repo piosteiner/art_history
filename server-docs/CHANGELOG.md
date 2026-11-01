@@ -4,6 +4,24 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-01
 
+### Data: the works of Mason, chapter 2 (Asuka, Hakuhō, Nara) + the books' figures as private reference images
+- **What:** 52 works after the figures of Mason, *History of Japanese Art*, pp. 40–99 — 32 made from their Wikidata
+  items (with Commons photographs), 20 by hand: temple and shrine buildings (Hōryūji, Yakushiji, Tōdaiji, Tōshōdaiji,
+  Ise, Izumo, the Shōsōin), the sculpture from the Asuka Buddha to the Tōshōdaiji images, the Shōsōin and Hōryūji
+  treasures (Tang works under the new polity "Tang dynasty"), the E inga kyō and the Shigisan engi. Caption facts
+  cited "Mason, p. N, fig. N"; descriptions in our own words, linking halls ↔ images, the patrons (Shōmu, Kōmyō,
+  Suiko, Shōtoku, Ganjin, Rōben — new people from Wikidata) and four events (eye-opening, fires, burning of Nara).
+  New: 15 holders from Wikidata, the sculptor Kuninaka no Kimimaro, 35 glossary terms (kondō, pagoda, chūmon, kōdō,
+  honden, azekura, shinmei-/taisha-zukuri, mokoshi, zushi; dry lacquer + hollow / wood-core; Buddha, bodhisattva,
+  Shaka, Yakushi, Amida, Birushana, Miroku, Kannon, Shitennō, Kichijōten, jātaka; materials). Not entered: plans and
+  drawings (figs. 44–45, 59, 62–64, 67, 70–71, 73–74, 77, 81, 107), general views (46, 65–66), the Chinese
+  comparisons (87, 92). "Commissioned" left as text links (it is derived from provenance steps these works lack).
+- **Private images:** the figures of chapters 1 and 2 (100 crops, 89 works) cropped from the owner's PDFs at 200 dpi
+  into `private_images` for the owner's account only (owner's request 2026-11-01) — not public, not in the API, the
+  export or the test copy (migration 184).
+- **Why:** owner, 2026-11-01. **Revert:** delete the works citing `history-of-japanese-art` with figs. 47–124;
+  `DELETE FROM private_images WHERE owner_id = 1` for the crops.
+
 ### Full-text search: a work's provenance counts as one match
 - **What:** `/v1/search/text` (`src/routes/v1.js`) scores an entry's provenance steps as their best rank + 0.05·ln(number
   of matching steps) instead of their sum; e2e test in `test/e2e/search-text.spec.js`.

@@ -1,0 +1,40 @@
+public_id: 106325
+title: Lacquered shallow bowl with painted designs
+attribution_label: Anonymous
+created: c. 1000 BCE–c. 400 BCE
+created_span: uncertain
+kind: vessel
+medium: Earthenware, red iron oxide and lacquer
+materials: [earthenware, lacquer]
+dimensions_note: diameter 20.5 cm
+institution: aomori-prefectural-museum
+description_md: "A shallow serving bowl of Kamegaoka ware: bold swirls of red iron oxide on a black ground under a clear lacquer. [[source/history-of-japanese-art|p. 22, fig. 16]]"
+relationships:
+  - type: created_in
+    to: place/aomori-prefecture
+    period: c. 1000 BCE–c. 400 BCE
+    label: found at the Kamegaoka site, Aomori prefecture
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 22, fig. 16
+  - type: associated_with
+    to: movement/final-jomon
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 22, fig. 16
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 22, fig. 16
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 22, fig. 16
+  created:
+    - source: history-of-japanese-art
+      locator: p. 22, fig. 16
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 22, fig. 16
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 22, fig. 16

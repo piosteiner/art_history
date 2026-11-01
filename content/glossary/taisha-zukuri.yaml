@@ -1,0 +1,12 @@
+public_id: 106665
+name: taisha-zukuri
+names:
+  - lang: ja
+    role: original
+    text: "{大社造|たいしゃづくり}"
+category: architecture
+definition: "The style of the shrine at Izumo, thought the oldest of the shrine styles: a hall of two square bays on raised posts with a central pillar, entered at the gable end by a staircase set off centre."
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 57

@@ -1,0 +1,68 @@
+public_id: 106113
+name: Imperial Household Agency
+names:
+  - IHA
+  - Japanese Imperial Household Agency
+  - Imperial Household Agency of Japan
+  - Agency of the Imperial Household
+  - Agency of the Imperial Household of Japan
+  - Imperial Household Ministry
+  - Imperial Household Ministry of Japan
+  - lang: nl
+    role: translation
+    text: Japans hof
+  - lang: fr
+    role: translation
+    text: Agence impériale
+  - lang: de
+    role: translation
+    text: Kaiserliches Hofamt
+  - lang: it
+    role: translation
+    text: Agenzia della Casa Imperiale
+  - lang: es
+    role: translation
+    text: Agencia de la Casa Imperial
+  - lang: ja
+    role: translation
+    text: 宮内庁
+  - lang: zh
+    role: translation
+    text: 宫内厅
+  - lang: ko
+    role: translation
+    text: 일본 궁내청
+  - lang: ru
+    role: translation
+    text: Управление Императорского двора Японии
+founded: 1949-06-01
+place: tokyo
+address: 〒100-8111 東京都千代田区千代田1-1
+website_url: https://www.kunaicho.go.jp/
+wikidata_id: Q1143602
+metadata:
+  sources: [Wikidata Q1143602 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/00/Imperial_Household_Agency.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Imperial_Household_Agency.jpg
+    license: Public domain
+    credit: nattou
+identifiers:
+  bnf: 16742617w
+  gnd: 50447-6
+  idref: "135791278"
+  lc: n80132236
+  viaf: "158278496"
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1143602
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q1143602
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1143602

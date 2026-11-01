@@ -1,0 +1,61 @@
+public_id: 106397
+title: Tanjō Shaka
+names:
+  - Shaka at Birth
+  - lang: ja
+    role: translation
+    text: 銅造誕生釈迦仏立像
+attribution_label: Anonymous
+created: 8th century
+created_span: uncertain
+kind: statue
+medium: Gilt bronze
+materials: [gilt bronze]
+dimensions: [47.5]
+institution: todai-ji
+description_md: A small gilt-bronze image of the newborn [[shaka]], already with the marks of a Buddha, raising his right hand to heaven and lowering the left to the earth as he proclaims himself lord of all above and below. Said to have been made for the eye-opening ceremony of 752; set in a basin engraved with landscapes and figures for the yearly ritual on the Buddha’s birthday, when coloured water is poured over it. [[source/history-of-japanese-art|p. 93, fig. 117]]
+wikidata_id: Q7462538
+metadata:
+  sources: [Wikidata Q7462538 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 93, fig. 117
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ec/Shaka_at_birth_basin.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Shaka_at_birth_basin.JPG
+    license: Public domain
+    credit: ASUKAEN
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 93, fig. 117
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q7462538
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 93, fig. 117
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q7462538
+    - source: history-of-japanese-art
+      locator: p. 93, fig. 117
+  materials:
+    - accessed: 2026-11-01
+      property: P186
+      wikidata: Q7462538
+    - source: history-of-japanese-art
+      locator: p. 93, fig. 117
+  dimensions:
+    - accessed: 2026-11-01
+      property: P2048
+      wikidata: Q7462538
+    - source: history-of-japanese-art
+      locator: p. 93, fig. 117
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 93, fig. 117

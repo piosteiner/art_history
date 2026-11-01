@@ -1,0 +1,42 @@
+public_id: 106395
+title: Shitennō, Kaidanin, Tōdaiji
+names: [東大寺戒壇堂四天王立像]
+attribution_label: Anonymous
+created: mid 8th century
+created_span: uncertain
+kind: statue
+medium: Clay with remains of paint
+materials: [clay]
+dimensions_note: Tamonten 164.5, Kōmokuten 162.7, Jikokuten 152.4, Zōchōten 164.5 cm
+institution: todai-ji
+description_md: "The Four Guardian Kings ([[shitenno]]) of the ordination hall: clay over a wooden armature, each figure in armour over cloth robes, standing on a subdued demon in a hip-slung pose — Tamonten with a reliquary, Kōmokuten with brush and scroll, Jikokuten with a long sword, Zōchōten with a lance. Made for a small platform where they could be seen close, and individualised as no two figures are alike. [[source/history-of-japanese-art|p. 90, fig. 111–114]]"
+wikidata_id: Q107045973
+metadata:
+  sources: [Wikidata Q107045973 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 90, fig. 111–114
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/82/Todaiji_Monastery_Shitenno_of_Kaidanin_%28Zochoten%29_%28227%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Todaiji_Monastery_Shitenno_of_Kaidanin_(Zochoten)_(227).jpg
+    license: Public domain
+    credit: Imperial Japanese Commission to the Panama-Pacific International Exposition
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 90, fig. 111–114
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 90, fig. 111–114
+  created:
+    - source: history-of-japanese-art
+      locator: p. 90, fig. 111–114
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 90, fig. 111–114
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 90, fig. 111–114

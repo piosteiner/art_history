@@ -1,0 +1,50 @@
+public_id: 106351
+name: Asuka Historical Museum
+names:
+  - lang: fr
+    role: translation
+    text: musée d'histoire d'Asuka
+  - lang: ja
+    role: translation
+    text: 飛鳥資料館
+kind: museum
+founded: 1975
+place: asuka
+location: [135.82496, 34.4845]
+address: 〒634-0102　奈良県高市郡明日香村奥山601
+website_url: https://www.nabunken.go.jp/asuka/
+wikidata_id: Q4811853
+metadata:
+  sources: [Wikidata Q4811853 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/57/Nabunken-asuka.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nabunken-asuka.jpg
+    license: CC BY-SA 3.0
+    credit: Terumasa
+identifiers:
+  gnd: 5249492-5
+  idref: "124764924"
+  lc: n78009292
+  ulan: "500306448"
+  viaf: "134844180"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q4811853
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q4811853
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q4811853
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q4811853
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q4811853

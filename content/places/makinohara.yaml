@@ -1,0 +1,32 @@
+public_id: 106346
+name: Makinohara
+names:
+  - lang: ja
+    role: original
+    text: 牧之原市
+  - lang: ko
+    role: translation
+    text: 마키노하라시
+  - lang: ru
+    role: translation
+    text: Макинохара
+kind: settlement
+parent: shizuoka-prefecture
+country_code: JP
+location: [138.22461, 34.74]
+wikidata_id: Q850527
+metadata:
+  sources: [Wikidata Q850527 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q850527
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q850527
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q850527

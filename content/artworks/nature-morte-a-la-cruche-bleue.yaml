@@ -102,6 +102,9 @@ provenance:
         source: sothebys-n12368-lot-1
         accessed: 2026-10-31
   - owner: institution/blaquier-arrieta-collection
+    further_places:
+      - place: new-york-city
+        date: 7 – 18 November 2026
     acquired: 1988
     ended: 2026-11-18
     method: purchase

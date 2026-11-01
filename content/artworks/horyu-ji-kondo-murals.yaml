@@ -1,0 +1,64 @@
+public_id: 106391
+title: Wall paintings of the Kondō, Hōryūji
+title_status: common
+names:
+  - Hōryū-ji Kondō Hekiga
+  - lang: ja
+    role: original
+    text: 法隆寺金堂壁画
+  - Wall paintings of Golden Hall, Hōryū-ji
+  - lang: zh
+    role: translation
+    text: 法隆寺金堂壁畫
+  - lang: ko
+    role: translation
+    text: 호류지 금당벽화
+attribution_label: Anonymous
+created: 705/715
+created_label: c. 7th century
+created_span: uncertain
+kind: wall painting
+materials: [cinnabar, red ocher, "lead(II,IV) oxide", loess, lead(II) oxide, verdigris, azurite, inkstick]
+institution: horyu-ji
+description_md: "Twelve murals of the golden hall: four wide panels with the Buddhas of the four directions in their paradises — among them [[amida]] on the west wall between Kannon and Seishi — and narrow panels with bodhisattvas. Painted on plaster from cartoons transferred by pouncing, the lines in red of even width (“iron wire”), the style close to the Tang paintings of China. A fire in 1949 left most of them blackened; the Amida Triad is in the Treasure House. [[source/history-of-japanese-art|p. 82, fig. 101]]"
+wikidata_id: Q3616004
+metadata:
+  sources: [Wikidata Q3616004 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 82, fig. 101
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Apsara_Horyuji1.JPG/1280px-Apsara_Horyuji1.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Apsara_Horyuji1.JPG
+    license: Public domain
+    credit: BENRIDO
+identifiers:
+  viaf: "20163208620607232947"
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 82, fig. 101
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q3616004
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q3616004
+    - source: history-of-japanese-art
+      locator: p. 82, fig. 101
+  materials:
+    - accessed: 2026-11-01
+      property: P186
+      wikidata: Q3616004
+    - source: history-of-japanese-art
+      locator: p. 82, fig. 101
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 82, fig. 101
+  title_status:
+    - accessed: 2026-11-01
+      wikidata: Q3616004

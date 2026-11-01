@@ -1,0 +1,44 @@
+public_id: 106327
+title: Pedestal and other vessels
+attribution_label: Anonymous
+created: c. 100 BCE–c. 100
+created_span: uncertain
+kind: vessel
+medium: Painted earthenware
+materials: [earthenware]
+dimensions: [53]
+dimensions_note: the tallest 53 cm
+institution: amagi-history-museum
+description_md: A group of Middle Yayoi vessels painted red — storage jars, bowls and tall pedestal cups. [[source/history-of-japanese-art|p. 27, fig. 21]]
+relationships:
+  - type: created_in
+    to: place/fukuoka-prefecture
+    period: c. 100 BCE–c. 100
+    label: found at Kurita, Fukuoka prefecture
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 27, fig. 21
+  - type: associated_with
+    to: movement/yayoi-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 27, fig. 21
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 27, fig. 21
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 27, fig. 21
+  created:
+    - source: history-of-japanese-art
+      locator: p. 27, fig. 21
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 27, fig. 21
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 27, fig. 21
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 27, fig. 21

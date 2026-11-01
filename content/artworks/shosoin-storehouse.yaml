@@ -1,0 +1,38 @@
+public_id: 106680
+title: Shōsōin
+attribution_label: Anonymous
+created: 756
+kind: building
+medium: Wood
+materials: [wood]
+institution: shosoin
+location: [135.83861, 34.69194]
+description_md: "The storehouse of Tōdaiji built for the treasures Empress Kōmyō gave to the temple after the death of Emperor Shōmu in 756. Three units joined together, in the [[azekura]] style: walls of triangular logs that interlock at the corners, the whole raised more than two metres off the ground on round posts. In use by 761; since 1953 the collection is kept in concrete storehouses, and shown each autumn at the Nara National Museum. [[source/history-of-japanese-art|p. 48, fig. 50]]"
+relationships:
+  - type: created_in
+    to: place/nara
+    period: 756
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 48, fig. 50
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 48, fig. 50
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 48, fig. 50
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 48, fig. 50
+  created:
+    - source: history-of-japanese-art
+      locator: p. 48, fig. 50
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 48, fig. 50
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 48, fig. 50

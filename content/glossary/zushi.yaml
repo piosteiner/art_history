@@ -1,0 +1,12 @@
+public_id: 106669
+name: zushi
+names:
+  - lang: ja
+    role: original
+    text: "{厨子|ずし}"
+category: object type
+definition: A miniature shrine or cabinet for a Buddhist image, relics or sutras, often built like a temple hall.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 75

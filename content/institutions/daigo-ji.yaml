@@ -1,0 +1,55 @@
+public_id: 106345
+name: Daigo-ji Temple
+names:
+  - Daigo-ji
+  - lang: fr
+    role: translation
+    text: temple Daigo
+  - lang: ja
+    role: translation
+    text: 醍醐寺
+  - lang: ko
+    role: translation
+    text: 다이고지
+  - lang: ru
+    role: translation
+    text: Дайго-дзи
+kind: temple
+founded: 874
+place: kyoto
+location: [135.81944, 34.95111]
+address: 京都府京都市伏見区醍醐東大路町22
+website_url: https://www.daigoji.or.jp/
+wikidata_id: Q1157535
+metadata:
+  sources: [Wikidata Q1157535 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/35/DaigojiPagoda3242.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:DaigojiPagoda3242.jpg
+    license: Public domain
+identifiers:
+  gnd: "1086313887"
+  idref: "112198562"
+  lc: n82092296
+  viaf: "129028319"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1157535
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1157535
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q1157535
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1157535
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1157535

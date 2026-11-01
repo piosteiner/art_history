@@ -1,0 +1,55 @@
+public_id: 106343
+name: Yakushi-ji Temple
+names:
+  - Yakushi-ji
+  - lang: ja
+    role: translation
+    text: 薬師寺
+  - lang: zh
+    role: translation
+    text: 藥師寺
+  - lang: ko
+    role: translation
+    text: 야쿠시지
+  - lang: ru
+    role: translation
+    text: Якусидзи
+kind: temple
+founded: 680
+place: nara
+location: [135.78431, 34.66836]
+address: 奈良県奈良市西ノ京町457
+website_url: https://www.yakushiji.or.jp/
+wikidata_id: Q945913
+metadata:
+  sources: [Wikidata Q945913 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Yakushiji_Nara03s3s4350.jpg/1280px-Yakushiji_Nara03s3s4350.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yakushiji_Nara03s3s4350.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  gnd: 7693425-1
+  lc: n2006077007
+  viaf: "9038147270532135700002"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q945913
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q945913
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q945913
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q945913
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q945913

@@ -1,0 +1,59 @@
+public_id: 106361
+name: Izumo Taisha
+names:
+  - Izumo Ōyashiro
+  - Kizuki Taisha
+  - Kizuki Ōyashiro
+  - Izumo Ichinomiya
+  - Izumo-taisha
+  - Izumo Grand Shrine
+  - lang: fr
+    role: translation
+    text: grand sanctuaire d'Izumo
+  - lang: it
+    role: translation
+    text: santuario di Izumo
+  - lang: ja
+    role: translation
+    text: 出雲大社
+  - lang: ko
+    role: translation
+    text: 이즈모타이샤
+  - lang: ru
+    role: translation
+    text: Идзумо тайся
+founded: 659
+place: izumo
+location: [132.68544, 35.40194]
+address: 島根県出雲市大社町杵築東195
+website_url: https://izumooyashiro.or.jp/
+wikidata_id: Q696362
+metadata:
+  sources: [Wikidata Q696362 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Izumo-Taisha_Haiden.jpg/1280px-Izumo-Taisha_Haiden.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Izumo-Taisha_Haiden.jpg
+    license: CC BY-SA 4.0
+    credit: MaedaAkihiko
+identifiers:
+  gnd: 6014187-6
+  idref: "221802444"
+  lc: n84178487
+  viaf: "234753926"
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q696362
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q696362
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q696362
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q696362

@@ -1,0 +1,38 @@
+public_id: 106318
+title: Haniwa figure of a monkey
+attribution_label: Anonymous
+created: 300/710
+kind: haniwa
+medium: Clay
+materials: [clay]
+dimensions: [27.3]
+description_md: A monkey turning its head as if to its young, which once sat on its back. In a private collection, Tokyo. [[source/history-of-japanese-art|p. 33, fig. 30]]
+relationships:
+  - type: created_in
+    to: place/ibaraki-prefecture
+    period: 300/710
+    label: found at a site in Ibaraki prefecture
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 33, fig. 30
+  - type: associated_with
+    to: movement/kofun-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 33, fig. 30
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 33, fig. 30
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 33, fig. 30
+  created:
+    - source: history-of-japanese-art
+      locator: p. 33, fig. 30
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 33, fig. 30
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 33, fig. 30

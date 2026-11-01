@@ -1,0 +1,36 @@
+public_id: 106682
+title: Gakkō
+attribution_label: Anonymous
+created: mid 8th century
+created_span: uncertain
+kind: statue
+medium: Clay with remains of paint
+materials: [clay]
+dimensions: [207]
+institution: todai-ji
+description_md: "The companion of the Nikkō in the Hokkedō, the bodhisattva of moonlight: a clay figure with an outer robe caught at the neck by a lotus ornament, the crown set higher so that the jewel touches only the hair. [[source/history-of-japanese-art|p. 89, fig. 110]]"
+relationships:
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 89, fig. 110
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 89, fig. 110
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 89, fig. 110
+  created:
+    - source: history-of-japanese-art
+      locator: p. 89, fig. 110
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 89, fig. 110
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 89, fig. 110
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 89, fig. 110

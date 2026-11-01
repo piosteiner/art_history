@@ -1,0 +1,12 @@
+public_id: 106299
+name: kofun
+names:
+  - lang: ja
+    role: original
+    text: "{古墳|こふん}"
+category: architecture
+definition: An earth burial mound of the 3rd to 7th century in Japan, the largest keyhole-shaped and surrounded by moats; the burial chamber inside, haniwa on the slopes.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 29–30

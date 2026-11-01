@@ -1,0 +1,56 @@
+public_id: 106398
+title: The Priest Ganjin
+names:
+  - Statue of Jianzhen
+  - lang: ja
+    role: translation
+    text: 唐招提寺鑑真像
+attribution_label: Anonymous
+created: 763
+kind: statue
+medium: Dry lacquer with paint
+materials: [lacquer]
+dimensions: [80.6]
+institution: toshodai-ji
+description_md: "The earliest true portrait sculpture in Japan: [[person/ganjin]], the Chinese monk who founded Tōshōdaiji, seated cross-legged in meditation, his blind eyes almost closed; in the Founder’s Hall, dated to the year of his death. The [[dry-lacquer]] is painted, the brocade of the outer robe set against the flesh tones. [[source/history-of-japanese-art|p. 95, fig. 119]]"
+wikidata_id: Q107045857
+metadata:
+  sources: [Wikidata Q107045857 (retrieved 2026-11-01)]
+relationships:
+  - type: depicts_person
+    to: person/ganjin
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 95, fig. 119
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 95, fig. 119
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/ce/Ganjin_wajyo_portrait.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Ganjin_wajyo_portrait.JPG
+    license: Public domain
+    credit: OGAWA SEIYOU(1894-1960) a famous photographer in Japan}
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 95, fig. 119
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107045857
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 95, fig. 119
+  created:
+    - source: history-of-japanese-art
+      locator: p. 95, fig. 119
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 95, fig. 119
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 95, fig. 119
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 95, fig. 119

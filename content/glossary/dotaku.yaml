@@ -1,0 +1,13 @@
+public_id: 106294
+name: dōtaku
+names:
+  - lang: ja
+    role: original
+    text: "{銅鐸|どうたく}"
+category: object type
+parent: bell
+definition: "Bronze bell of the Yayoi period without a clapper: an oval body with a semicircular handle and a flange, cast with bands of designs; buried in hoards, probably for rituals."
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 26–27

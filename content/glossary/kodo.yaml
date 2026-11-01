@@ -1,0 +1,12 @@
+public_id: 106653
+name: kōdō
+names:
+  - lang: ja
+    role: original
+    text: "{講堂|こうどう}"
+category: architecture
+definition: The lecture hall of a Buddhist temple, where the monks gathered for teaching.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 61

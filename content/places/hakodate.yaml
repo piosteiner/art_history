@@ -1,0 +1,16 @@
+public_id: 106118
+name: Hakodate
+kind: settlement
+location: [140.72892, 41.76867]
+wikidata_id: Q26418
+metadata:
+  sources: [Wikidata Q26418 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q26418
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q26418

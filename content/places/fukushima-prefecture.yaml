@@ -1,0 +1,53 @@
+public_id: 106096
+name: Fukushima Prefecture
+names:
+  - JP-07
+  - lang: nl
+    role: translation
+    text: Fukushima
+  - lang: fr
+    role: translation
+    text: préfecture de Fukushima
+  - lang: de
+    role: translation
+    text: Präfektur Fukushima
+  - lang: it
+    role: translation
+    text: prefettura di Fukushima
+  - lang: es
+    role: translation
+    text: Prefectura de Fukushima
+  - lang: ja
+    role: translation
+    text: 福島県
+  - lang: zh
+    role: translation
+    text: 福島縣
+  - lang: ko
+    role: translation
+    text: 후쿠시마현
+  - lang: ru
+    role: translation
+    text: Фукусима
+kind: region
+parent: japan
+country_code: JP
+location: [140.46775, 37.75028]
+wikidata_id: Q71707
+metadata:
+  sources: [Wikidata Q71707 (retrieved 2026-11-01)]
+identifiers:
+  gnd: 4390423-3
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q71707
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q71707
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q71707

@@ -1,0 +1,30 @@
+public_id: 106110
+name: Niizawa-Senzuka Kofun Cluster
+names:
+  - Niizawa Senzuka Kofun Cluster
+  - lang: ja
+    role: translation
+    text: 新沢千塚古墳群
+  - lang: zh
+    role: translation
+    text: 新澤千塚古墳群
+kind: archaeological
+parent: kashihara
+country_code: JP
+location: [135.77394, 34.47786]
+wikidata_id: Q11502665
+metadata:
+  sources: [Wikidata Q11502665 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q11502665
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q11502665
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q11502665

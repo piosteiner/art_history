@@ -1,0 +1,43 @@
+public_id: 106676
+title: Male–Female Fountain Sculpture
+attribution_label: Anonymous
+created: 7th century
+created_span: uncertain
+kind: sculpture
+medium: Stone
+materials: [stone]
+dimensions: [170]
+institution: asuka-historical-museum
+description_md: "A stone carving of a man and a woman entwined, water spouting from both mouths: one of the stone sculptures that once ornamented a garden at the palace of Kiyomihara at Asuka. A deliberately rough, comic piece beside the refined Buddhist sculpture of the time; Like the cone-shaped stone of Mount Sumeru from the same site, it points to Chinese garden sculpture. [[source/history-of-japanese-art|p. 45, fig. 47]]"
+relationships:
+  - type: created_in
+    to: place/asuka
+    period: 7th century
+    label: found at Ishigami, Asuka
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 45, fig. 47
+  - type: associated_with
+    to: movement/asuka-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 45, fig. 47
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 45, fig. 47
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 45, fig. 47
+  created:
+    - source: history-of-japanese-art
+      locator: p. 45, fig. 47
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 45, fig. 47
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 45, fig. 47
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 45, fig. 47

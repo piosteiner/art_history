@@ -1,0 +1,54 @@
+public_id: 106124
+title: Takamatsuzuka Tomb Mural
+names:
+  - Takamatsuzuka Kofun Mural
+  - Takamatsuzuka Tumulus Mural
+  - lang: es
+    role: translation
+    text: Mural de la tumba antigua de Takamatsuzuka
+  - lang: ja
+    role: translation
+    text: 高松塚古墳壁画
+attribution_label: Anonymous
+created: late 7th century–8th century
+created_span: uncertain
+kind: wall painting
+medium: Colour on plastered panels
+materials: [plaster]
+description_md: "The paintings of a small tomb near Asuka, found in 1972: the animals of the four directions (the Dark Warrior of the North — a tortoise with a snake — and the dragon and tiger), the sun, the moon and the constellations, and groups of men and women, among them four court ladies on the west wall. [[source/history-of-japanese-art|p. 39, fig. 42–43]]"
+wikidata_id: Q107045983
+metadata:
+  sources: [Wikidata Q107045983 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/takamatsuzuka-tomb
+    period: late 7th century–8th century
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 39, fig. 42–43
+  - type: associated_with
+    to: movement/kofun-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 39, fig. 42–43
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/55/Takamat1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Takamat1.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 39, fig. 42–43
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107045983
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 39, fig. 42–43
+  created:
+    - source: history-of-japanese-art
+      locator: p. 39, fig. 42–43
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 39, fig. 42–43

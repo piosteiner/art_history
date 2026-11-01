@@ -1,0 +1,52 @@
+public_id: 106404
+name: Kōmyō
+names:
+  - lang: ja
+    role: original
+    text: 光明皇后
+  - Empress Kōmyō
+  - Komyo
+  - Empress Komyo
+  - Kōmyō-kōgō
+  - Kōmyō kōgō
+  - Koumyou
+  - lang: ko
+    role: translation
+    text: 고묘 황후
+  - lang: ru
+    role: translation
+    text: Императрица Комё
+kind: person
+occupations: [calligrapher]
+birth: 701
+death: 760-07-27
+wikidata_id: Q837932
+metadata:
+  sources: [Wikidata Q837932 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/27/Empress_K%C5%8Dmy%C5%8D_by_simomura_kanzan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Empress_K%C5%8Dmy%C5%8D_by_simomura_kanzan.jpg
+    license: Public domain
+    credit: Shimomura Kanzan (C.E.1873-1930)
+identifiers:
+  idref: "192700855"
+  lc: no2012116936
+  ulan: "500320698"
+  viaf: "173190366"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q837932
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q837932
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q837932
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q837932

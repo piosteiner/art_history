@@ -1,0 +1,50 @@
+public_id: 106408
+name: Suiko
+names:
+  - lang: ja
+    role: original
+    text: 推古天皇
+  - Empress Suiko
+  - Suiko-tennō
+  - lang: es
+    role: translation
+    text: Emperatriz Suiko
+  - lang: ko
+    role: translation
+    text: 스이코 천황
+  - lang: ru
+    role: translation
+    text: Императрица Суйко
+kind: person
+occupations: [politician]
+birth: 554-05-23
+death: 628-04-18
+wikidata_id: Q298057
+metadata:
+  sources: [Wikidata Q298057 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/02/Empress_Suiko_painting.png
+    source_url: https://commons.wikimedia.org/wiki/File:Empress_Suiko_painting.png
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  idref: "228888484"
+  lc: nr2006004418
+  viaf: "63966518"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q298057
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q298057
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q298057
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q298057

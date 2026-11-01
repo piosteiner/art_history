@@ -1,0 +1,42 @@
+public_id: 106324
+title: Conical flat-bottomed vessel with scalloped lip
+attribution_label: Anonymous
+created: -3000/-2500
+kind: vessel
+medium: Earthenware
+materials: [earthenware]
+dimensions: [35]
+institution: nanzan-university
+description_md: "A tall Early Jōmon pot with a flat base and a scalloped rim: diamonds incised and circles impressed below the rim with a bamboo stick, the body cord-marked in a herringbone pattern. [[source/history-of-japanese-art|p. 17, fig. 5]]"
+relationships:
+  - type: created_in
+    to: place/aichi-prefecture
+    period: -3000/-2500
+    label: found at a site in Aichi prefecture
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 17, fig. 5
+  - type: associated_with
+    to: movement/early-jomon
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 17, fig. 5
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 17, fig. 5
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 17, fig. 5
+  created:
+    - source: history-of-japanese-art
+      locator: p. 17, fig. 5
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 17, fig. 5
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 17, fig. 5
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 17, fig. 5

@@ -1,0 +1,18 @@
+public_id: 106409
+name: Kuninaka no Muraji Kimimaro
+names:
+  - lang: ja
+    role: original
+    text: 国中公麻呂
+death: 774-11-15
+wikidata_id: Q3200462
+metadata:
+  sources: [Wikidata Q3200462 (retrieved 2026-11-01)]
+identifiers:
+  lc: nr97004157
+  viaf: "224459600"
+sources:
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3200462

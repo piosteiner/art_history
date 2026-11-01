@@ -1,0 +1,62 @@
+public_id: 106122
+title: Daisen Kofun
+names:
+  - Daisenryo Kofun
+  - Tomb of Emperor Nintoku
+  - Emperor Nintoku's tomb
+  - Daisenryō Kofun
+  - Mozu no Mimihara no Naka no Misasagi
+  - lang: fr
+    role: translation
+    text: kofun Daisenryō
+  - lang: es
+    role: translation
+    text: Daisenryō-Kofun
+  - lang: ja
+    role: translation
+    text: 大仙陵古墳
+  - lang: ko
+    role: translation
+    text: 다이센릉 고분
+attribution_label: Anonymous
+created: late 4th century–early 5th century
+created_span: uncertain
+dimensions: [3980]
+location: [135.4873, 34.56392]
+description_md: "The largest of the keyhole-shaped burial mounds, traditionally the tomb of Emperor Nintoku: almost half a kilometre long, surrounded by three moats, 185 ha in all. Over twenty thousand haniwa are thought to have stood on it. [[source/history-of-japanese-art|p. 29, fig. 24]]"
+wikidata_id: Q5849431
+metadata:
+  sources: [Wikidata Q5849431 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/sakai
+    period: 5th century
+  - type: associated_with
+    to: movement/kofun-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 29, fig. 24
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Daisenryo_Kofun_from_Sakai_City_Hall.jpg/1280px-Daisenryo_Kofun_from_Sakai_City_Hall.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Daisenryo_Kofun_from_Sakai_City_Hall.jpg
+    license: CC0
+    credit: Sakai Yayoi
+sources:
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q5849431
+  created:
+    - source: history-of-japanese-art
+      locator: p. 29, fig. 24
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q5849431
+    - source: history-of-japanese-art
+      locator: p. 29, fig. 24
+  dimensions:
+    - accessed: 2026-11-01
+      property: P2048
+      wikidata: Q5849431
+    - source: history-of-japanese-art
+      locator: p. 29, fig. 24

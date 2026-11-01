@@ -1,0 +1,49 @@
+public_id: 106311
+title: Crown
+attribution_label: Anonymous
+created: 5th century–6th century
+created_span: uncertain
+kind: jewellery
+medium: Gilt bronze
+materials: [gilt bronze]
+dimensions: [16.5]
+dimensions_note: lower length 14.6 cm
+institution: tokyo-national-museum
+description_md: A gilt bronze crown with openwork, close to finds from Korean tombs of the time. [[source/history-of-japanese-art|p. 36, fig. 37]]
+relationships:
+  - type: created_in
+    to: place/eta-funayama-kofun
+    period: 5th century–6th century
+    label: found at the Funayama Tumulus, Kikusui-machi, Kumamoto
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 36, fig. 37
+  - type: associated_with
+    to: movement/kofun-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 36, fig. 37
+  - type: designated_as
+    to: term/national-treasure-japan
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 36, fig. 37
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 36, fig. 37
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 36, fig. 37
+  created:
+    - source: history-of-japanese-art
+      locator: p. 36, fig. 37
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 36, fig. 37
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 36, fig. 37
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 36, fig. 37

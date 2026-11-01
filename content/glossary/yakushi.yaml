@@ -1,0 +1,13 @@
+public_id: 106668
+name: Yakushi
+names:
+  - lang: ja
+    role: original
+    text: "{薬師|やくし}"
+category: iconography
+parent: buddha
+definition: The Medicine Buddha, who heals the sick as a doctor would; often holds a medicine jar.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 66

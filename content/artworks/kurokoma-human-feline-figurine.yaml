@@ -1,0 +1,43 @@
+public_id: 106328
+title: Human/feline figurine
+attribution_label: Anonymous
+created: c. 2500 BCE–c. 1500 BCE
+created_span: uncertain
+kind: dogū
+medium: Earthenware
+materials: [earthenware]
+dimensions: [25.2]
+institution: tokyo-national-museum
+description_md: "Head and torso of a Middle Jōmon figurine between human and cat: slanting eyes cut through the clay, a three-lobed mouth, incised marks like tattoos, a spotted pattern like fur; one hand rests on the breast. [[source/history-of-japanese-art|p. 19, fig. 10]]"
+relationships:
+  - type: created_in
+    to: place/yamanashi-prefecture
+    period: c. 2500 BCE–c. 1500 BCE
+    label: found at the Kurokoma site, Yamanashi prefecture
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 19, fig. 10
+  - type: associated_with
+    to: movement/middle-jomon
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 19, fig. 10
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 19, fig. 10
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 19, fig. 10
+  created:
+    - source: history-of-japanese-art
+      locator: p. 19, fig. 10
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 19, fig. 10
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 19, fig. 10
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 19, fig. 10

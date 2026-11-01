@@ -1,0 +1,45 @@
+public_id: 106117
+name: Kyoto University Museum
+names:
+  - KYO
+  - lang: ja
+    role: translation
+    text: 京都大学総合博物館
+  - lang: zh
+    role: translation
+    text: 京都大學綜合博物館
+founded: 1997-04-01
+place: kyoto
+location: [135.77929, 35.02726]
+address: 〒606-8501　京都府京都市左京区吉田本町
+website_url: https://www.museum.kyoto-u.ac.jp/
+wikidata_id: Q11374929
+metadata:
+  sources: [Wikidata Q11374929 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Kyoto_University_Museum_20120805-001.jpg/1280px-Kyoto_University_Museum_20120805-001.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kyoto_University_Museum_20120805-001.jpg
+    license: CC BY-SA 3.0
+    credit: J o
+identifiers:
+  gnd: 3064783-6
+  idref: "178927465"
+  lc: nr2002023636
+  viaf: "147043990"
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q11374929
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q11374929
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q11374929
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q11374929

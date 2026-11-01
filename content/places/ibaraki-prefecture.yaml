@@ -1,0 +1,50 @@
+public_id: 106097
+name: Ibaraki Prefecture
+names:
+  - Ibaraki
+  - lang: fr
+    role: translation
+    text: préfecture d'Ibaraki
+  - lang: de
+    role: translation
+    text: Präfektur Ibaraki
+  - lang: it
+    role: translation
+    text: prefettura di Ibaraki
+  - lang: es
+    role: translation
+    text: Prefectura de Ibaraki
+  - lang: ja
+    role: translation
+    text: 茨城県
+  - lang: zh
+    role: translation
+    text: 茨城縣
+  - lang: ko
+    role: translation
+    text: 이바라키현
+  - lang: ru
+    role: translation
+    text: Ибараки
+kind: region
+parent: japan
+country_code: JP
+location: [140.44683, 36.34172]
+wikidata_id: Q83273
+metadata:
+  sources: [Wikidata Q83273 (retrieved 2026-11-01)]
+identifiers:
+  gnd: 4282340-7
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q83273
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q83273
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q83273

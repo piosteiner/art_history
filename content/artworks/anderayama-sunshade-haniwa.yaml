@@ -1,0 +1,42 @@
+public_id: 106307
+title: Sunshade-shaped haniwa
+attribution_label: Anonymous
+created: 300/710
+kind: haniwa
+medium: Clay
+materials: [clay]
+dimensions: [93]
+institution: kyoto-university-museum
+description_md: A haniwa in the shape of a ceremonial sunshade (kinugasa) on a cylinder, with four feather-like crests and the chokkomon pattern carved on its surface. [[source/history-of-japanese-art|p. 32, fig. 26]]
+relationships:
+  - type: created_in
+    to: place/uji
+    period: 300/710
+    label: found at the Anderayama Kofun, Uji
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 32, fig. 26
+  - type: associated_with
+    to: movement/kofun-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 32, fig. 26
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 32, fig. 26
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 32, fig. 26
+  created:
+    - source: history-of-japanese-art
+      locator: p. 32, fig. 26
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 32, fig. 26
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 32, fig. 26
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 32, fig. 26

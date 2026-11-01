@@ -27,6 +27,12 @@ relationships:
   - type: concerns
     to: institution/todai-ji
     notes_md: burnt (Great Buddha Hall)
+  - type: concerns
+    to: artwork/todai-ji-daibutsuden
+    label: burnt to the ground
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 69
 sources:
   period:
     - note: 「治承4年（1180）に平重衡の軍勢により大仏殿をはじめ伽藍の大半が焼かれた」

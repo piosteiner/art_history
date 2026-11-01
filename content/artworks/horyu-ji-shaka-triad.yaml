@@ -1,0 +1,76 @@
+public_id: 106377
+title: Shaka Triad
+names:
+  - Shakyamuni and two attendants of Golden Hall, Hōryū-ji
+  - Shaka Triad
+  - lang: ja
+    role: translation
+    text: 法隆寺金堂釈迦三尊像
+  - lang: zh
+    role: translation
+    text: 法隆寺釋迦三尊像
+creator: tori-busshi
+created: 623
+kind: statue
+medium: Gilt bronze
+materials: [gilt bronze]
+dimensions: [116.8]
+dimensions_note: bodhisattvas 90.7 cm
+institution: horyu-ji
+location: [135.7343, 34.6147]
+description_md: "Tori Busshi’s masterpiece: [[shaka]] seated on a rectangular platform, his robe falling over its front like a waterfall, between two [[bodhisattva|bodhisattvas]], before a halo of flames with the Seven Buddhas of the Past. The inscription on the back of the halo says that [[person/empress-suiko]] and the court commissioned it after the deaths of two court ladies in 621 and during the illness of [[person/prince-shotoku]] the next year, for his recovery or rebirth in paradise; he died in 622, and the triad was dedicated in 623. The style of the Wei dynasty of northern China; the bodhisattvas, seen from the side, are half-reliefs made to be seen only from the front. [[source/history-of-japanese-art|p. 73, fig. 86, 88]]"
+wikidata_id: Q24899790
+metadata:
+  sources: [Wikidata Q24899790 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/ikaruga
+    period: 623
+  - type: associated_with
+    to: movement/asuka-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 73, fig. 86, 88
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Horyuji_Monastery_Sakya_Trinity_of_Kondo_%28178%29.jpg/1280px-Horyuji_Monastery_Sakya_Trinity_of_Kondo_%28178%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Horyuji_Monastery_Sakya_Trinity_of_Kondo_(178).jpg
+    license: Public domain
+    credit: Japanese Temples and their Treasures (The Shimbi Shoin, 1915)
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 73, fig. 86, 88
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q24899790
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 73, fig. 86, 88
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q24899790
+    - source: history-of-japanese-art
+      locator: p. 73, fig. 86, 88
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q24899790
+    - source: history-of-japanese-art
+      locator: p. 73, fig. 86, 88
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q24899790
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 73, fig. 86, 88
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 73, fig. 86, 88
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q24899790
+    - source: history-of-japanese-art
+      locator: p. 73, fig. 86, 88

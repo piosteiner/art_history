@@ -1,0 +1,39 @@
+public_id: 106308
+title: “Crouching” female figurine
+attribution_label: Anonymous
+created: c. 1000 BCE–c. 400 BCE
+created_span: uncertain
+kind: dogū
+medium: Earthenware
+materials: [earthenware]
+dimensions: [21.5]
+description_md: A seated Final Jōmon figurine with its knees drawn up, the right arm across the body, the left hand at the chest; U-shaped face, round eyes and mouth. Held by Fukushima Municipal Board of Education. [[source/history-of-japanese-art|p. 20, fig. 12]]
+relationships:
+  - type: created_in
+    to: place/fukushima-prefecture
+    period: c. 1000 BCE–c. 400 BCE
+    label: found at a site in Fukushima prefecture
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 20, fig. 12
+  - type: associated_with
+    to: movement/final-jomon
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 20, fig. 12
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 20, fig. 12
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 20, fig. 12
+  created:
+    - source: history-of-japanese-art
+      locator: p. 20, fig. 12
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 20, fig. 12
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 20, fig. 12

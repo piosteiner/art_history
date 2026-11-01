@@ -1,0 +1,37 @@
+public_id: 106106
+name: Takamatsuzuka Tomb
+names:
+  - Takamatsuzuka Kofun
+  - Takamatsuzuka Tumulus
+  - lang: fr
+    role: translation
+    text: Kofun de Takamatsuzuka
+  - lang: it
+    role: translation
+    text: Takamatsuzuka
+  - lang: ja
+    role: translation
+    text: 高松塚古墳
+  - lang: ko
+    role: translation
+    text: 다카마쓰 고분
+kind: archaeological
+parent: asuka
+country_code: JP
+location: [135.80647, 34.46222]
+wikidata_id: Q1039675
+metadata:
+  sources: [Wikidata Q1039675 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1039675
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1039675
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1039675

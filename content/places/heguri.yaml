@@ -1,0 +1,16 @@
+public_id: 106352
+name: Heguri
+kind: site
+location: [135.70061, 34.62919]
+wikidata_id: Q1346790
+metadata:
+  sources: [Wikidata Q1346790 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1346790
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1346790

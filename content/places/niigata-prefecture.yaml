@@ -1,0 +1,53 @@
+public_id: 106092
+name: Niigata Prefecture
+names:
+  - JP-15
+  - lang: nl
+    role: translation
+    text: Niigata
+  - lang: fr
+    role: translation
+    text: préfecture de Niigata
+  - lang: de
+    role: translation
+    text: Präfektur Niigata
+  - lang: it
+    role: translation
+    text: prefettura di Niigata
+  - lang: es
+    role: translation
+    text: Prefectura de Niigata
+  - lang: ja
+    role: translation
+    text: 新潟県
+  - lang: zh
+    role: translation
+    text: 新潟縣
+  - lang: ko
+    role: translation
+    text: 니가타현
+  - lang: ru
+    role: translation
+    text: Ниигата
+kind: region
+parent: japan
+country_code: JP
+location: [139.02317, 37.90247]
+wikidata_id: Q132705
+metadata:
+  sources: [Wikidata Q132705 (retrieved 2026-11-01)]
+identifiers:
+  gnd: 4256172-3
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q132705
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q132705
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q132705

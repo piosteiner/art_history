@@ -1,0 +1,49 @@
+public_id: 106331
+title: Clear bowl with gold spots
+attribution_label: Anonymous
+created: 5th century
+created_span: uncertain
+kind: vessel
+medium: Glass
+materials: [glass]
+dimensions: [6.7]
+dimensions_note: diameter 7.8 cm
+institution: tokyo-national-museum
+description_md: A glass bowl with gold spots from a fifth-century tomb — probably an import from China or further west, from the region of ancient Persia. [[source/history-of-japanese-art|p. 36, fig. 38]]
+relationships:
+  - type: created_in
+    to: place/niizawa-senzuka-kofun-cluster
+    period: 5th century
+    label: found at Niizawasenzuka Tumulus No. 126, Kashihara
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 36, fig. 38
+  - type: associated_with
+    to: movement/kofun-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 36, fig. 38
+  - type: designated_as
+    to: term/important-cultural-property-japan
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 36, fig. 38
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 36, fig. 38
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 36, fig. 38
+  created:
+    - source: history-of-japanese-art
+      locator: p. 36, fig. 38
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 36, fig. 38
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 36, fig. 38
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 36, fig. 38

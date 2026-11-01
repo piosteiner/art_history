@@ -1,0 +1,55 @@
+public_id: 106375
+title: Asuka Buddha
+names:
+  - Asuka Daibutsu
+  - lang: ja
+    role: translation
+    text: 飛鳥大仏
+creator: tori-busshi
+attribution_label: attributed to Tori Busshi
+created: 606
+kind: statue
+medium: Gilt bronze
+materials: [gilt bronze]
+dimensions: [276]
+institution: asuka-dera
+description_md: "A seated [[shaka]] about three metres high, the right hand raised palm outward in the gesture of fearlessness, the left lowered in the gesture of wish-granting: the image Tori Busshi is credited with for Asukadera, Japan’s first full temple complex. Much restored over the centuries; the head is the least restored part. [[source/history-of-japanese-art|p. 71, fig. 84]]"
+wikidata_id: Q123338784
+metadata:
+  sources: [Wikidata Q123338784 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/asuka-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 71, fig. 84
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Asuka-dera_Asuka_Nara_pref07s5s3900.jpg/1280px-Asuka-dera_Asuka_Nara_pref07s5s3900.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Asuka-dera_Asuka_Nara_pref07s5s3900.jpg
+    license: CC BY 2.5
+    credit: 663highland
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 71, fig. 84
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q123338784
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 71, fig. 84
+  created:
+    - source: history-of-japanese-art
+      locator: p. 71, fig. 84
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 71, fig. 84
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 71, fig. 84
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 71, fig. 84
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 71, fig. 84

@@ -1,0 +1,38 @@
+public_id: 106336
+title: Painted wall, Takehara Tomb
+attribution_label: Anonymous
+created: c. 550–c. 650
+created_span: uncertain
+kind: wall painting
+medium: Pigment on stone
+materials: [stone]
+location: [130.61014, 33.73325]
+description_md: "Red and black painting on the rear wall of the burial chamber: two large ceremonial fans frame a spotted black creature with a boat, a groom leading a horse above a boat, and waves below — perhaps the journey of the soul. [[source/history-of-japanese-art|p. 37, fig. 40]]"
+relationships:
+  - type: created_in
+    to: place/takehara-kofun
+    period: c. 550–c. 650
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 37, fig. 40
+  - type: associated_with
+    to: movement/kofun-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 37, fig. 40
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 37, fig. 40
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 37, fig. 40
+  created:
+    - source: history-of-japanese-art
+      locator: p. 37, fig. 40
+  location:
+    - source: history-of-japanese-art
+      locator: p. 37, fig. 40
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 37, fig. 40

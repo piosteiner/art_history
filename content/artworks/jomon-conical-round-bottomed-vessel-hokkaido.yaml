@@ -1,0 +1,38 @@
+public_id: 106322
+title: Conical round-bottomed vessel
+attribution_label: Anonymous
+created_label: c. 5000 BCE
+kind: vessel
+medium: Earthenware
+materials: [earthenware]
+dimensions: [16.6]
+institution: hakodate-city-museum
+description_md: A deep cooking pot of the Initial Jōmon phase with a gently undulating rim, its whole surface covered in cord markings; its rounded base stood in the embers of an open fire. The excavation it came from is not documented. [[source/history-of-japanese-art|p. 15, fig. 2]]
+relationships:
+  - type: created_in
+    to: place/hokkaido
+    label: found at a site in Hokkaidō
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 15, fig. 2
+  - type: associated_with
+    to: movement/initial-jomon
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 15, fig. 2
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 15, fig. 2
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 15, fig. 2
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 15, fig. 2
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 15, fig. 2
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 15, fig. 2

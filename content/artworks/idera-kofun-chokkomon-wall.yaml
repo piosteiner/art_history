@@ -1,0 +1,38 @@
+public_id: 106321
+title: Painted wall with chokkomon design, Idera Tomb
+attribution_label: Anonymous
+created: 7th century
+created_span: uncertain
+kind: wall painting
+medium: Stone, carved and painted
+materials: [stone]
+location: [130.77788, 32.7531]
+description_md: Stone slabs at the base of the walls of the Idera Tomb’s burial chamber, chiselled with the chokkomon pattern and painted red, blue and white — the most advanced example of the design known; the chamber’s corbelled vault is the finest in Kyūshū. [[source/history-of-japanese-art|p. 37, fig. 39]]
+relationships:
+  - type: created_in
+    to: place/idera-kofun
+    period: 7th century
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 37, fig. 39
+  - type: associated_with
+    to: movement/kofun-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 37, fig. 39
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 37, fig. 39
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 37, fig. 39
+  created:
+    - source: history-of-japanese-art
+      locator: p. 37, fig. 39
+  location:
+    - source: history-of-japanese-art
+      locator: p. 37, fig. 39
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 37, fig. 39

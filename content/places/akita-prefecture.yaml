@@ -1,0 +1,52 @@
+public_id: 106091
+name: Akita Prefecture
+names:
+  - lang: nl
+    role: translation
+    text: Akita
+  - lang: fr
+    role: translation
+    text: préfecture d'Akita
+  - lang: de
+    role: translation
+    text: Präfektur Akita
+  - lang: it
+    role: translation
+    text: prefettura di Akita
+  - lang: es
+    role: translation
+    text: Prefectura de Akita
+  - lang: ja
+    role: translation
+    text: 秋田県
+  - lang: zh
+    role: translation
+    text: 秋田縣
+  - lang: ko
+    role: translation
+    text: 아키타현
+  - lang: ru
+    role: translation
+    text: Акита
+kind: region
+parent: japan
+country_code: JP
+location: [140.1025, 39.71861]
+wikidata_id: Q81863
+metadata:
+  sources: [Wikidata Q81863 (retrieved 2026-11-01)]
+identifiers:
+  gnd: 4312833-6
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q81863
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q81863
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q81863

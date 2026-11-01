@@ -1,0 +1,49 @@
+public_id: 106116
+name: Fukuoka City Museum
+names:
+  - lang: ja-Latn
+    role: romanization
+    text: Fukuoka-shi Hakubutsukan
+  - lang: fr
+    role: translation
+    text: musée municipal de Fukuoka
+  - lang: ja
+    role: translation
+    text: 福岡市博物館
+  - lang: ko
+    role: translation
+    text: 후쿠오카시 박물관
+founded: 1990
+place: fukuoka
+location: [130.35308, 33.58975]
+address: 814-0001福岡市早良区百道浜三丁目1番1号
+website_url: http://museum.city.fukuoka.jp/en/
+wikidata_id: Q11592224
+metadata:
+  sources: [Wikidata Q11592224 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/FukuokaCity_Museum_2018.jpg/1280px-FukuokaCity_Museum_2018.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:FukuokaCity_Museum_2018.jpg
+    license: CC BY-SA 4.0
+    credit: Nkmr844
+identifiers:
+  idref: 13117763X
+  lc: nr92006572
+  viaf: "198923473"
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q11592224
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q11592224
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q11592224
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q11592224

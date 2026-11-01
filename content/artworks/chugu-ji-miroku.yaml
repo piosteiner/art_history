@@ -1,0 +1,52 @@
+public_id: 106382
+title: Miroku, Chūgūji
+names:
+  - 菩薩半跏像（伝如意輪観音）
+  - lang: ko
+    role: translation
+    text: 츄쿠지 미륵반가상
+attribution_label: Anonymous
+created: 7th century
+created_span: uncertain
+kind: statue
+medium: Camphor wood
+materials: [camphor wood]
+dimensions: [132]
+institution: chugu-ji
+description_md: "[[miroku]] as a bodhisattva seated with one leg pendant, the right hand raised to the face in thought: the Future Buddha meditating in his paradise. Chūgūji was the residence of Prince Shōtoku’s mother and became a convent; the softly modelled face and torso and the natural pose show the Hakuhō relaxing of the Wei style. [[source/history-of-japanese-art|p. 79, fig. 96–97]]"
+wikidata_id: Q107046113
+metadata:
+  sources: [Wikidata Q107046113 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/hakuho-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 79, fig. 96–97
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/27/Bodhisattva_Chuguji.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Bodhisattva_Chuguji.JPG
+    license: Public domain
+    credit: Ogawa Seiyō
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 79, fig. 96–97
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107046113
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 79, fig. 96–97
+  created:
+    - source: history-of-japanese-art
+      locator: p. 79, fig. 96–97
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 79, fig. 96–97
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 79, fig. 96–97
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 79, fig. 96–97

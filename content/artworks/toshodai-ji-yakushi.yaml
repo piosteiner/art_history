@@ -1,0 +1,52 @@
+public_id: 106401
+title: Yakushi, Tōshōdaiji
+names:
+  - Statue of Yakushi Nyorai
+  - lang: ja
+    role: translation
+    text: 唐招提寺金堂薬師如来立像
+attribution_label: Anonymous
+created: late 8th century–early 9th century
+created_span: uncertain
+kind: statue
+medium: Dry lacquer over wood
+materials: [lacquer, wood]
+dimensions: [336]
+institution: toshodai-ji
+description_md: "A standing [[yakushi]] on the other side of the Birushana in Tōshōdaiji: stocky, with deep folds over the chest, its robe falling tightly over the thighs. Dated after 796 by a coin in the cavity of the image; [[wood-core-dry-lacquer]], perhaps a technique brought by Ganjin’s monk-sculptors. [[source/history-of-japanese-art|p. 97, fig. 123]]"
+wikidata_id: Q107046083
+metadata:
+  sources: [Wikidata Q107046083 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 97, fig. 123
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5d/Statues_GoldenHall_Toshodaiji.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Statues_GoldenHall_Toshodaiji.JPG
+    license: Public domain
+    credit: OGAWA SEIYOU
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 97, fig. 123
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q107046083
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 97, fig. 123
+  created:
+    - source: history-of-japanese-art
+      locator: p. 97, fig. 123
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 97, fig. 123
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 97, fig. 123
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 97, fig. 123

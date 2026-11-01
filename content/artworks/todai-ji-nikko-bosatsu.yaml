@@ -1,0 +1,36 @@
+public_id: 106684
+title: Nikkō
+attribution_label: Anonymous
+created: mid 8th century
+created_span: uncertain
+kind: statue
+medium: Clay with remains of paint
+materials: [clay]
+dimensions: [206]
+institution: todai-ji
+description_md: "A clay figure of serene, gentle youth, palms together, beside the Fukūkenjaku Kannon in the Hokkedō: the bodhisattva of sunlight, a name probably given later — the pair may first have been Bonten and Taishakuten, and are “guest” sculptures not made for the hall. Its garment is open across the chest like a monk’s robe; its crown sits low. [[source/history-of-japanese-art|p. 89, fig. 109]]"
+relationships:
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 89, fig. 109
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 89, fig. 109
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 89, fig. 109
+  created:
+    - source: history-of-japanese-art
+      locator: p. 89, fig. 109
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 89, fig. 109
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 89, fig. 109
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 89, fig. 109

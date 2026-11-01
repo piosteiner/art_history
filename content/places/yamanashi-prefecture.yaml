@@ -1,0 +1,52 @@
+public_id: 106094
+name: Yamanashi Prefecture
+names:
+  - lang: nl
+    role: translation
+    text: Yamanashi
+  - lang: fr
+    role: translation
+    text: préfecture de Yamanashi
+  - lang: de
+    role: translation
+    text: Präfektur Yamanashi
+  - lang: it
+    role: translation
+    text: prefettura di Yamanashi
+  - lang: es
+    role: translation
+    text: Prefectura de Yamanashi
+  - lang: ja
+    role: translation
+    text: 山梨県
+  - lang: zh
+    role: translation
+    text: 山梨縣
+  - lang: ko
+    role: translation
+    text: 야마나시현
+  - lang: ru
+    role: translation
+    text: Яманаси
+kind: region
+parent: japan
+country_code: JP
+location: [138.56842, 35.66414]
+wikidata_id: Q132720
+metadata:
+  sources: [Wikidata Q132720 (retrieved 2026-11-01)]
+identifiers:
+  gnd: 4387302-9
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q132720
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q132720
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q132720

@@ -1,0 +1,42 @@
+public_id: 106309
+title: Female head from a haniwa figure
+attribution_label: Anonymous
+created: 300/710
+kind: haniwa
+medium: Clay
+materials: [clay]
+dimensions: [20]
+institution: imperial-household-agency
+description_md: The head of a woman from a haniwa figure of the Daisen Kofun, a closed and unexcavated imperial tomb — a rare view of the haniwa made for the highest burials. [[source/history-of-japanese-art|p. 33, fig. 31]]
+relationships:
+  - type: created_in
+    to: place/sakai
+    period: 300/710
+    label: found at the Daisen Kofun (tomb of Emperor Nintoku), Sakai
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 33, fig. 31
+  - type: associated_with
+    to: movement/kofun-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 33, fig. 31
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 33, fig. 31
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 33, fig. 31
+  created:
+    - source: history-of-japanese-art
+      locator: p. 33, fig. 31
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 33, fig. 31
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 33, fig. 31
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 33, fig. 31

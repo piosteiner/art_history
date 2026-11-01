@@ -1,0 +1,32 @@
+public_id: 106675
+title: Main hall of the Inner Shrine, Ise
+names:
+  - lang: ja
+    role: original
+    text: "{正殿|しょうでん}"
+attribution_label: Anonymous
+kind: building
+medium: Japanese cypress, thatch
+materials: [hinoki wood]
+institution: ise-jingu
+location: [136.72583, 34.455]
+description_md: The honden of the Naikū, the inner shrine of Ise dedicated to the sun goddess Amaterasu, whose mirror it holds. The classic example of [[shinmei-zukuri]], reached through three further fences; since the reign of Empress Jitō (686–697) rebuilt every twenty years on the empty plot beside the old one — Mason knew the sixty-first rebuilding, of 1993. [[source/history-of-japanese-art|p. 55, fig. 60]]
+relationships:
+  - type: created_in
+    to: place/ise
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 55, fig. 60
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 55, fig. 60
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 55, fig. 60
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 55, fig. 60
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 55, fig. 60

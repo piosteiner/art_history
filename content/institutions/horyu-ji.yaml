@@ -1,0 +1,59 @@
+public_id: 106341
+name: Hōryū-ji Temple
+names:
+  - Hōryūji
+  - Hōryū-ji
+  - lang: nl
+    role: translation
+    text: Horyu-ji
+  - lang: fr
+    role: translation
+    text: temple Hōryū
+  - lang: ja
+    role: translation
+    text: 法隆寺
+  - lang: ko
+    role: translation
+    text: 호류지
+  - lang: ru
+    role: translation
+    text: Хорю-дзи
+kind: temple
+founded: 607
+place: ikaruga
+location: [135.73417, 34.61444]
+address: 奈良県生駒郡斑鳩町法隆寺山内1-1
+website_url: http://www.horyuji.or.jp/
+wikidata_id: Q261932
+metadata:
+  sources: [Wikidata Q261932 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Horyu-ji45s2s4500.jpg/1280px-Horyu-ji45s2s4500.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Horyu-ji45s2s4500.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  gnd: 4681633-1
+  lc: n80079830
+  viaf: "308697500"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q261932
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q261932
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q261932
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q261932
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q261932

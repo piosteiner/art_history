@@ -1,0 +1,37 @@
+public_id: 106364
+title: Earth-placating articles from the foundation of the Kondō of Tōdaiji
+names: [東大寺金堂鎮壇具]
+attribution_label: Anonymous
+created: 8th century
+created_span: uncertain
+medium: Leather with inlaid gold (scabbard)
+materials: [leather, gold]
+institution: todai-ji
+description_md: Objects buried in the foundation of the Daibutsuden of Tōdaiji as an offering to the local earth deities. Among them a sword whose leather scabbard is inlaid in gold with a scrolling vine and two flying ducks. [[source/history-of-japanese-art|p. 51, fig. 54]]
+wikidata_id: Q107045999
+metadata:
+  sources: [Wikidata Q107045999 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 51, fig. 54
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/66/Silver_small_jar_Todaiji.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Silver_small_jar_Todaiji.JPG
+    license: Public domain
+    credit: ASUKAEN
+sources:
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 51, fig. 54
+  created:
+    - source: history-of-japanese-art
+      locator: p. 51, fig. 54
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 51, fig. 54
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 51, fig. 54

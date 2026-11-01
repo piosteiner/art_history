@@ -1,0 +1,35 @@
+public_id: 106683
+title: Kichijōten, Hokkedō, Tōdaiji
+attribution_label: Anonymous
+created: 772
+kind: statue
+medium: Clay
+materials: [clay]
+dimensions: [202]
+institution: todai-ji
+description_md: A clay [[kichijoten]], the goddess of wealth and good fortune, dated 772 — from the years when prayers were offered to her for rain and good harvests. [[source/history-of-japanese-art|p. 95, fig. 120]]
+relationships:
+  - type: associated_with
+    to: movement/nara-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 95, fig. 120
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 95, fig. 120
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 95, fig. 120
+  created:
+    - source: history-of-japanese-art
+      locator: p. 95, fig. 120
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 95, fig. 120
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 95, fig. 120
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 95, fig. 120
