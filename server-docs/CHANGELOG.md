@@ -10,6 +10,10 @@ Format: date — what — why — how to revert.
   provenance) → one note in the CMS feedback inbox. Units in `server-docs/config/systemd/arthistory-watch-sale.*`; the
   install (sudo) is the owner's — README → "Watching an auction". The timer disables itself after 25 November 2026.
   Replaces the lot-10-only `watch-lot.sh` of the same day (never installed).
+- **Results:** a closed lot of ours is entered in its provenance — Sotheby's as agent and, when sold, "Private
+  collection" with the price (USD, with buyer's premium), cited to the lot page; not sold: Sotheby's step "not sold".
+  Tested on doctored lot pages, the SQL on production in a rolled-back transaction. **Revert:** the steps per work in
+  the admin (audit source `watch-sale`).
 - **Why:** owner, 2026-11-01 ("reads the site of all objects up for auction and also checks if any new objects
   appeared"). **Revert:** disable the timer, delete the units, the script and its state file.
 

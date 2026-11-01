@@ -160,6 +160,11 @@ page (12 lots, 15 s apart as robots.txt asks, ≈ 3½ min), compared with the da
 (`~/.local/state/arthistory/sale-<sale>.json`). One note in the CMS feedback inbox (`/feedback`, kind content) when there
 is something: a lot that isn't an entry yet (no artwork has its page as web page), a lot new / withdrawn / gone, or a
 changed description, provenance, exhibitions or literature (lot 10 shows lot 4's provenance). `--dry-run` writes nothing.
+Results (owner 2026-11-01): when a lot of ours is closed, its provenance gets Sotheby's as agent ("evening sale N12368,
+18 November 2026, lot N", New York) and, if sold, "Private collection" as the next owner with the price (USD, with
+buyer's premium), both cited to the lot page (audit source `watch-sale`); unsold: Sotheby's step "not sold", the
+collection's planned end left for the owner. Once per lot (`recorded` in the state file, and skipped when that day's
+Sotheby's step exists).
 After 25 November it disables its timer. Another sale: copy the script, change `SALE` and `UNTIL`.
 Install: `sudo cp server-docs/config/systemd/arthistory-watch-sale.{service,timer} /etc/systemd/system/ && sudo systemctl
 daemon-reload && sudo systemctl enable --now arthistory-watch-sale.timer`. Check: `journalctl -u arthistory-watch-sale -n 5`.
