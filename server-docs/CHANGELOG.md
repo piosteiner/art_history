@@ -4,6 +4,11 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-01
 
+### Site test: lists beyond 500 works
+- **What:** `frontend/tests/site.spec.ts` "a tab left open sees entries added meanwhile" counts only first pages
+  (`offset` 0) as a visit. **Why:** with chapter 2 of Mason there are more than 500 artworks, so the list comes in two
+  pages and the second was taken for the reload after 5 minutes — the Pages build failed. **Revert:** revert the commit.
+
 ### Login on the public site: private reference images on artwork pages
 - **What:** "Log in" in the site's footer opens the CMS login with `?next=<site address>` (only addresses of
   `CORS_ORIGIN` are followed — no open redirect) and returns with `?login=1`; the site remembers that in localStorage

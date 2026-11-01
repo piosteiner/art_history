@@ -2511,6 +2511,8 @@ test('a tab left open sees entries added meanwhile (the lists are fetched again 
   await page.route(/\/v1\/artworks\?.*limit=500/, async (route) => {
     const res = await route.fetch();
     const body = await res.json();
+    // only the first page counts as a visit (beyond 500 works the rest comes as further pages, api.ts `PAGE`)
+    if (Number(new URL(route.request().url()).searchParams.get('offset') || 0) > 0) return route.fulfill({ response: res, json: body });
     if (++calls > 1) {  // added after the first visit
       body.data.push({ ...body.data[0], slug: 'zz-test-fresh-artwork', title: 'Zz Test Fresh Artwork', names: [], alt_titles: [] });
       body.total += 1;
