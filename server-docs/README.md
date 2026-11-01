@@ -153,3 +153,12 @@ sudo systemctl daemon-reload && sudo systemctl enable --now arthistory-export.ti
 ```
 Check: `systemctl list-timers arthistory-export` · `journalctl -u arthistory-export -n 20`. Revert: `sudo systemctl disable --now
 arthistory-export.timer`, remove both units, `daemon-reload`.
+
+## Watching a lot page (until 18 November 2026) — prepared 2026-11-01
+Sotheby's lot 10 of the Blaquier-Arrieta sale (Pissarro, *La Place du Théâtre-Français*) shows lot 4's provenance. Daily at
+~08:13 UTC, systemd `arthistory-watch-lot.timer` → `scripts/watch-lot.sh`: two lot pages read (15 s apart, as robots.txt
+asks); when lot 10's lists differ from lot 4's, one note in the CMS feedback inbox (`/feedback`, kind content) with the
+new provenance, then quiet (`~/.local/state/arthistory/watch-lot-10.done`). After the sale day it disables its timer.
+Install: `sudo cp server-docs/config/systemd/arthistory-watch-lot.{service,timer} /etc/systemd/system/ && sudo systemctl
+daemon-reload && sudo systemctl enable --now arthistory-watch-lot.timer`. Check: `journalctl -u arthistory-watch-lot -n 5`.
+Remove: `sudo systemctl disable --now arthistory-watch-lot.timer`, delete both units, `daemon-reload`.

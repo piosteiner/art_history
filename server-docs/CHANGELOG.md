@@ -2,6 +2,15 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-01
+
+### Watch Sotheby's lot 10 until the sale (`scripts/watch-lot.sh`, timer prepared)
+- **What:** a daily check whether Sotheby's has corrected lot 10 (its page shows lot 4's provenance); when it has, one
+  note in the CMS feedback inbox with the new text. Units in `server-docs/config/systemd/arthistory-watch-lot.*`; the
+  install (sudo) is the owner's — README → "Watching a lot page". The timer disables itself after 18 November 2026.
+- **Why:** owner, 2026-11-01 ("check the page again shortly before 18 November"). **Revert:** disable the timer,
+  delete the units and the script.
+
 ## 2026-10-31
 
 ### Data: the Blaquier-Arrieta collection (Sotheby's, 18 November 2026) complete; Wildenstein numbers cited properly
