@@ -1,0 +1,12 @@
+# Installed at /etc/systemd/system/arthistory-watch-sale.service (copy kept in server-docs/config/systemd/).
+# Daily check of the Blaquier-Arrieta sale on Sotheby's — see scripts/watch-sale.sh. Logs: journalctl -u arthistory-watch-sale
+[Unit]
+Description=Art history: watch the Blaquier-Arrieta sale (new lots, changed lot pages)
+After=postgresql.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+ExecStart=/var/www/arthistory/scripts/watch-sale.sh
+Nice=10

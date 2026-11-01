@@ -4,12 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-01
 
-### Watch Sotheby's lot 10 until the sale (`scripts/watch-lot.sh`, timer prepared)
-- **What:** a daily check whether Sotheby's has corrected lot 10 (its page shows lot 4's provenance); when it has, one
-  note in the CMS feedback inbox with the new text. Units in `server-docs/config/systemd/arthistory-watch-lot.*`; the
-  install (sudo) is the owner's — README → "Watching a lot page". The timer disables itself after 18 November 2026.
-- **Why:** owner, 2026-11-01 ("check the page again shortly before 18 November"). **Revert:** disable the timer,
-  delete the units and the script.
+### Watch the Blaquier-Arrieta sale until a week after it (`scripts/watch-sale.sh`, timer prepared)
+- **What:** a daily check of the sale's lot list and every lot page against the day before: lots that aren't entries
+  of ours, lots new / withdrawn / gone, changed descriptions, provenance, exhibitions or literature (lot 10 shows lot 4's
+  provenance) → one note in the CMS feedback inbox. Units in `server-docs/config/systemd/arthistory-watch-sale.*`; the
+  install (sudo) is the owner's — README → "Watching an auction". The timer disables itself after 25 November 2026.
+  Replaces the lot-10-only `watch-lot.sh` of the same day (never installed).
+- **Why:** owner, 2026-11-01 ("reads the site of all objects up for auction and also checks if any new objects
+  appeared"). **Revert:** disable the timer, delete the units, the script and its state file.
 
 ## 2026-10-31
 

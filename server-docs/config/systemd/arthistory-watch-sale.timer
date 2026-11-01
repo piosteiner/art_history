@@ -1,0 +1,12 @@
+# Installed at /etc/systemd/system/arthistory-watch-sale.timer. Status: systemctl list-timers arthistory-watch-sale
+# Until a week after the sale (25 November 2026); the script disables the timer after that day.
+[Unit]
+Description=Daily check of the Blaquier-Arrieta sale on Sotheby's
+
+[Timer]
+OnCalendar=*-*-* 08:13:00 UTC
+RandomizedDelaySec=15min
+Persistent=true
+
+[Install]
+WantedBy=timers.target
