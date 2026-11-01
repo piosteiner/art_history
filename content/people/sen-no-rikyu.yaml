@@ -1,0 +1,66 @@
+public_id: 107597
+name: Sen no Rikyū
+names:
+  - kind: birth
+    lang: ja
+    role: alternative
+    text: 田中 与四郎
+  - kind: nickname
+    lang: ja
+    role: alternative
+    text: 茶聖
+  - kind: art_name
+    role: alternative
+    text: 抛筌斎
+  - lang: ja
+    role: original
+    text: 千利休
+  - Sen no Rikyû
+  - Rikyû Sen
+  - Rikyū Sen
+  - Sen no Rikyu
+  - Rikyu Sen
+  - Sen no Rikyuu
+  - Rikyū
+  - lang: ko
+    role: translation
+    text: 센노 리큐
+  - lang: ru
+    role: translation
+    text: Сэн-но Рикю
+kind: person
+occupations: [Buddhist monk, tea master]
+birth: 1522
+death: 1591-04-21
+wikidata_id: Q305477
+metadata:
+  sources: [Wikidata Q305477 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Sen_no_Rikyu_JPN.jpg/1280px-Sen_no_Rikyu_JPN.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sen_no_Rikyu_JPN.jpg
+    license: Public domain
+    credit: painted by 長谷川等伯, calligraphy by 春屋宗園
+identifiers:
+  bnf: "135323200"
+  gnd: "120773821"
+  idref: "076049558"
+  lc: n81116870
+  ulan: "500085683"
+  viaf: "77154987"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q305477
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q305477
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q305477
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q305477

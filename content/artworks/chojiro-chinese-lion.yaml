@@ -1,0 +1,38 @@
+public_id: 107671
+title: Chinese lion
+creator: chojiro
+created: 1574
+kind: sculpture
+medium: Raku earthenware with transparent glaze
+materials: [earthenware]
+dimensions: [35.5]
+institution: raku-museum
+description_md: An ornamental lion dated by inscription to 1574 and bearing the name of [[artist/chojiro]] (1516–1592), the potter credited with the creation of [[raku]] ware, who began as a maker of roof tiles and the animals placed along ridges. [[source/history-of-japanese-art|p. 251, fig. 286]]
+relationships:
+  - type: associated_with
+    to: movement/momoyama-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 251, fig. 286
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 251, fig. 286
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 251, fig. 286
+  created:
+    - source: history-of-japanese-art
+      locator: p. 251, fig. 286
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 251, fig. 286
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 251, fig. 286
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 251, fig. 286
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 251, fig. 286

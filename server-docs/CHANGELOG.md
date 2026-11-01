@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-01
 
+### Data: the works of Mason, chapter 5 (Momoyama and early Edo) + the book's figures as private reference images
+- **What:** 37 works after the figures of Mason, *History of Japanese Art*, pp. 235–271 — 11 made from their Wikidata
+  items, the rest by hand: castles (Inuyama, Himeji) and shoin (Kōjōin and Kangakuin guest halls, Nijō Ōhiroma,
+  Katsura), the Chishakuin garden, genre screens (Funaki rakuchū rakugai, namban, Hikone), tea ceramics (Shino,
+  Oribe, Raku — Chōjirō, Kōetsu —, Karatsu, Hideyoshi's gold tenmoku), a kabuto, a kosode, a votive horse, the Kanō
+  school (Eitoku's Jukōin fusuma and Cypress, Mitsunobu, Sanraku), Tōhaku, Yūshō, Konoe Nobutada, and Sōtatsu and
+  Kōetsu (shikishi, Deer Scroll, fan screens, Matsushima, Fūjin and Raijin); Sōtatsu's Heike nōkyō repairs added to
+  that entry. New: 12 holders, 9 people (Hideyoshi, Nobunaga, Ieyasu, Rikyū, Oribe …), 8 artists, 19 glossary terms
+  (tenshu, honmaru, sukiya, shōhekiga, kosode, namban, Shino/Oribe/Karatsu ware …). Not entered: the Himeji plan and
+  the shoin drawing (figs. 274–275). Caption facts cited "Mason, p. N, fig. N"; descriptions in our own words.
+- **Private images:** the 39 figures of chapter 5 into `private_images` for the owner's account (now 277).
+- **Why:** owner, 2026-11-01. **Revert:** delete the works citing `history-of-japanese-art` with figs. 272–312;
+  the crops: `DELETE FROM private_images WHERE owner_id = 1 AND locator ~ 'fig\. (2(7[2-9]|[89][0-9])|30[0-9]|31[0-2])$'`.
+
 ### Data: the works of Mason, chapter 4 (Kamakura to Muromachi) + the book's figures as private reference images
 - **What:** 64 works after the figures of Mason, *History of Japanese Art*, pp. 166–234 — 28 made from their Wikidata
   items, 4 existing entries completed (Niō of the Nandaimon, Kūya, Muchaku and Seshin, the Kinkakuji and Ginkakuji

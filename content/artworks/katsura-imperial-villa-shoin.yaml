@@ -1,0 +1,31 @@
+public_id: 107679
+title: Shoin, Katsura Imperial Villa
+attribution_label: Anonymous
+created: 1620/1624
+kind: building
+medium: Wood
+materials: [wood]
+institution: katsura-imperial-villa-institution
+description_md: The retreat of Prince [[person/hachijo-toshihito]] (1579–1629) on the Katsura River south-west of Kyoto, built between 1620 and 1624 in [[sukiya]] style, with details recreated from his favourite book, the Tale of Genji (Genji’s last palace was also at Katsura). Around a lake with islands — one a replica of Mount Hōrai — stand a rustic fishing pavilion and the old shoin with its bamboo-floored moon-viewing platform, a smaller shoin and a music room; a new shoin was added in 1642. Surprising dissonances of shapes, textures and paths make the visit a sequence of discoveries. [[source/history-of-japanese-art|pp. 243–244, figs. 278–279]]
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 243–244, figs. 278–279
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 243–244, figs. 278–279
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 243–244, figs. 278–279
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 243–244, figs. 278–279
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 243–244, figs. 278–279
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 243–244, figs. 278–279

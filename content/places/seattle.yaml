@@ -1,0 +1,16 @@
+public_id: 107566
+name: Seattle
+kind: settlement
+location: [-122.33, 47.605]
+wikidata_id: Q5083
+metadata:
+  sources: [Wikidata Q5083 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q5083
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q5083

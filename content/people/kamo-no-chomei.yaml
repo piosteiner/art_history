@@ -1,0 +1,50 @@
+public_id: 107603
+name: Kamo no Chōmei
+names:
+  - lang: ja
+    role: original
+    text: 鴨長明
+  - Kamo no Chomei
+  - Kamo no Choumei
+  - Kamo no Nagaakira
+  - lang: ko
+    role: translation
+    text: 가모 조메이
+  - lang: ru
+    role: translation
+    text: Камо-но Тёмэй
+kind: person
+occupations: [waka poet, essayist, lutenist, kannushi, literary scholar]
+birth: 1155
+death: 1216
+wikidata_id: Q291329
+metadata:
+  sources: [Wikidata Q291329 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Kamo_no_Chomei.jpg/1280px-Kamo_no_Chomei.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kamo_no_Chomei.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "120639315"
+  gnd: "118959883"
+  idref: "028899032"
+  lc: n50068410
+  viaf: "79054625"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q291329
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q291329
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q291329
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q291329

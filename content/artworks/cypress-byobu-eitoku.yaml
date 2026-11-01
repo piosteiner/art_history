@@ -1,0 +1,80 @@
+public_id: 107582
+title_lang: en
+title: Cypress
+names:
+  - Cypress Trees
+  - Hinoki-zu Byōbu
+  - lang: fr
+    role: translation
+    text: Paravent au cyprès
+  - lang: ja
+    role: translation
+    text: 檜図屏風
+  - lang: ru
+    role: translation
+    text: Кипарис
+creator: kano-eitoku
+attribution_label: attributed to Kanō Eitoku
+created: 1590
+kind: byōbu
+medium: Eight-panel screen, colour, ink and gold leaf on paper
+materials: [ink, paper, gold leaf]
+dimensions: [170, 460]
+institution: tokyo-national-museum
+inventory_number: A-1069
+location: [139.7756, 35.71994]
+description_md: "The high point of [[artist/kano-eitoku]]’s formulaic late blue-and-gold style, made under the heavy demands of Hideyoshi’s commissions (Azuchi Castle, Jurakudai, Osaka Castle): a single massive cypress dominates the right half, a pond and faceted rocks the left, unified by gold leaf. Probably painted in 1590 as fusuma for the mansion of Prince Toshihito and later remade into an eight-panel screen, trimmed along its short sides; whether by Eitoku or a pupil is debated. [[source/history-of-japanese-art|pp. 256–257, fig. 296]]"
+wikidata_id: Q20982926
+metadata:
+  sources: [Wikidata Q20982926 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+    period: 1590
+  - type: associated_with
+    to: movement/momoyama-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 256–257, fig. 296
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/%E7%8B%A9%E9%87%8E%E6%B0%B8%E5%BE%B3%E3%80%8A%E6%AA%9C%E5%9B%B3%E5%B1%8F%E9%A2%A8%E3%80%8B1590%E5%B9%B4%E3%80%8116%E4%B8%96%E7%B4%80%E3%80%81%E6%A1%83%E5%B1%B1%E6%99%82%E4%BB%A3%E3%80%81%E6%9D%B1%E4%BA%AC%E5%9B%BD%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8.jpg/1280px-%E7%8B%A9%E9%87%8E%E6%B0%B8%E5%BE%B3%E3%80%8A%E6%AA%9C%E5%9B%B3%E5%B1%8F%E9%A2%A8%E3%80%8B1590%E5%B9%B4%E3%80%8116%E4%B8%96%E7%B4%80%E3%80%81%E6%A1%83%E5%B1%B1%E6%99%82%E4%BB%A3%E3%80%81%E6%9D%B1%E4%BA%AC%E5%9B%BD%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E7%8B%A9%E9%87%8E%E6%B0%B8%E5%BE%B3%E3%80%8A%E6%AA%9C%E5%9B%B3%E5%B1%8F%E9%A2%A8%E3%80%8B1590%E5%B9%B4%E3%80%8116%E4%B8%96%E7%B4%80%E3%80%81%E6%A1%83%E5%B1%B1%E6%99%82%E4%BB%A3%E3%80%81%E6%9D%B1%E4%BA%AC%E5%9B%BD%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8.jpg
+    license: Public domain
+    credit: Kanō Eitoku
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 256–257, fig. 296
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 256–257, fig. 296
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q20982926
+    - source: history-of-japanese-art
+      locator: pp. 256–257, fig. 296
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q20982926
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q20982926
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 256–257, fig. 296
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 256–257, fig. 296
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q20982926
+    - source: history-of-japanese-art
+      locator: pp. 256–257, fig. 296
+  inventory_number:
+    - accessed: 2026-11-01
+      property: P217
+      wikidata: Q20982926

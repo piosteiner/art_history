@@ -1,0 +1,45 @@
+public_id: 107681
+title: Poem by Kamo no Chōmei from the Shin kokinshū
+creator: tawara-sotatsu
+created: early 17th century
+created_span: uncertain
+kind: shikishi
+medium: Ink on paper decorated with ink, gold and silver
+materials: [ink, paper, gold, silver]
+dimensions: [18.3, 16.2]
+institution: museum-of-asian-art-berlin
+description_md: One of thirty-six [[shikishi]] in which [[artist/honami-koetsu]] wrote poems from the imperial anthology Shin kokinshū (1206) over paintings chiefly by [[artist/tawara-sotatsu]]. The poem by [[person/kamo-no-chomei]] (1155?–1216) — “The autumn wind blows on all sleeves; why then is mine alone so wet with tears upon this evening?” — fills the page in vigorous, sensuous writing over a close-up of a rice paddy in green, gold and silver, the plants heavy with grain like a sleeve wet with tears (Miyeko Murase). [[source/history-of-japanese-art|pp. 267–268, fig. 308]]
+relationships:
+  - type: co_creator
+    to: artist/honami-koetsu
+    label: calligraphy
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 267–268, fig. 308
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 267–268, fig. 308
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 267–268, fig. 308
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 267–268, fig. 308
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 267–268, fig. 308
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 267–268, fig. 308
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 267–268, fig. 308
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 267–268, fig. 308
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 267–268, fig. 308

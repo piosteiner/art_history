@@ -1,0 +1,34 @@
+public_id: 107594
+name: Chōjirō
+names:
+  - lang: ja
+    role: original
+    text: 長次郎
+  - Chojiro
+  - Tanaka Chojiro
+  - Choujirou
+  - lang: zh
+    role: translation
+    text: 长次郎
+  - lang: ru
+    role: translation
+    text: Танака Тёдзиро
+birth: 1516
+death: 1592
+wikidata_id: Q2972132
+metadata:
+  sources: [Wikidata Q2972132 (retrieved 2026-11-01)]
+identifiers:
+  gnd: "132912562"
+  lc: no2015082173
+  ulan: "500334673"
+  viaf: "15945067"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2972132
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2972132

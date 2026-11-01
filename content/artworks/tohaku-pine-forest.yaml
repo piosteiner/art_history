@@ -1,0 +1,91 @@
+public_id: 107583
+title_lang: en
+title: Pine Forest
+names:
+  - Pine Trees (Pine Forest)
+  - lang: ja
+    role: original
+    text: 松林図屏風
+  - Shōrin-zu byōbu
+  - Pine Forest
+  - Pine Trees screen
+  - lang: en
+    role: original
+    text: Pine Trees
+  - lang: fr
+    role: translation
+    text: Pins
+  - lang: zh
+    role: translation
+    text: 松林図 屏風
+  - lang: ru
+    role: translation
+    text: Сосновый лес
+creator: hasegawa-tohaku
+created: late 16th century
+created_span: uncertain
+kind: byōbu
+medium: Pair of six-panel screens, ink on paper
+materials: [wood, ink, paper]
+dimensions: [156, 347]
+institution: tokyo-national-museum
+inventory_number: A10471
+web_url: http://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A10471
+location: [139.7756, 35.71994]
+description_md: "A pair of six-panel screens in monochrome ink without gold or colour by [[artist/hasegawa-tohaku]]: tall pines seen from a distance in thick mist that hides the lower half of some and the middle of others, appearing and disappearing like grey apparitions — perhaps remembering Mu Qi’s bamboo in mist. Nature here is gentle and hospitable, not an awe-inspiring backdrop for a warlord. [[source/history-of-japanese-art|pp. 262–263, fig. 302]]"
+wikidata_id: Q11531476
+metadata:
+  sources: [Wikidata Q11531476 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+    period: 16th century
+  - type: associated_with
+    to: movement/momoyama-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 262–263, fig. 302
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Hasegawa_Tohaku_-_Pine_Trees_%28Sh%C5%8Drin-zu_by%C5%8Dbu%29_-_right_hand_screen.jpg/1280px-Hasegawa_Tohaku_-_Pine_Trees_%28Sh%C5%8Drin-zu_by%C5%8Dbu%29_-_right_hand_screen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hasegawa_Tohaku_-_Pine_Trees_(Sh%C5%8Drin-zu_by%C5%8Dbu)_-_right_hand_screen.jpg
+    license: Public domain
+    credit: Hasegawa Tōhaku
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 262–263, fig. 302
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 262–263, fig. 302
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 262–263, fig. 302
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q11531476
+    - source: history-of-japanese-art
+      locator: pp. 262–263, fig. 302
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q11531476
+  materials:
+    - accessed: 2026-11-01
+      property: P186
+      wikidata: Q11531476
+    - source: history-of-japanese-art
+      locator: pp. 262–263, fig. 302
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 262–263, fig. 302
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q11531476
+    - source: history-of-japanese-art
+      locator: pp. 262–263, fig. 302
+  inventory_number:
+    - accessed: 2026-11-01
+      property: P217
+      wikidata: Q11531476

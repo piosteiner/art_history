@@ -1,0 +1,34 @@
+public_id: 107687
+title: Lobed dish (Oribe ware)
+attribution_label: Anonymous
+created: early 17th century
+created_span: uncertain
+kind: dish
+medium: Stoneware, painted and glazed
+materials: [Oribe ware]
+dimensions_note: diameter 37.1 cm
+institution: freer-gallery-of-art
+inventory_number: F1973.6
+description_md: "A five-lobed dish of [[oribe-ware]], named after the tea master [[person/furuta-oribe]], moulded rather than thrown: bamboo stalks and leaves cover two thirds, a geometric pattern of hexagons with five-petalled blossoms the rest; vines and small flowers garland the rim, and irregular flows of green glaze at three places contrast with the painted decoration. [[source/history-of-japanese-art|p. 251, fig. 285]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 251, fig. 285
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 251, fig. 285
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 251, fig. 285
+  created:
+    - source: history-of-japanese-art
+      locator: p. 251, fig. 285
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 251, fig. 285
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 251, fig. 285

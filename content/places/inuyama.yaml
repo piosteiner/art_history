@@ -1,0 +1,32 @@
+public_id: 107559
+name: Inuyama
+names:
+  - lang: ja
+    role: original
+    text: 犬山市
+  - lang: ko
+    role: translation
+    text: 이누야마시
+  - lang: ru
+    role: translation
+    text: Инуяма
+kind: settlement
+parent: japan
+country_code: JP
+location: [136.9445, 35.37861]
+wikidata_id: Q503411
+metadata:
+  sources: [Wikidata Q503411 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q503411
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q503411
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q503411

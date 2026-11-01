@@ -1,0 +1,43 @@
+public_id: 107602
+name: Ikeda Terumasa
+names:
+  - lang: ja
+    role: original
+    text: 池田輝政
+  - lang: ko
+    role: translation
+    text: 이케다 데루마사
+  - lang: ru
+    role: translation
+    text: Икэда Тэрумаса
+kind: person
+occupations: [samurai]
+birth: 1565-02-10
+death: 1613-03-16
+wikidata_id: Q1385927
+metadata:
+  sources: [Wikidata Q1385927 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0d/Ikeda_Terumasa.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ikeda_Terumasa.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  viaf: "44151533726802771731"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1385927
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1385927
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1385927
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q1385927

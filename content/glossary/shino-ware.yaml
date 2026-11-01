@@ -1,0 +1,13 @@
+public_id: 107663
+name: Shino ware
+names:
+  - lang: ja
+    role: original
+    text: "{志野焼|しのやき}"
+category: material
+parent: stoneware
+definition: Mino stoneware of the Momoyama and early Edo periods covered with a thick, crackled white feldspathic glaze, often over designs in iron brown (E Shino); the most distinctive of the new tea ceramics.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 250

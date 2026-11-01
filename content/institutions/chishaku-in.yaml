@@ -1,0 +1,44 @@
+public_id: 107571
+name: Chishaku-in Temple
+names:
+  - Chishaku-in
+  - lang: ja
+    role: translation
+    text: 智積院
+kind: temple
+founded: 1601
+place: kyoto
+location: [135.7764, 34.9881]
+address: 京都府京都市東山区東大路通七条下ル東瓦町964
+website_url: https://chisan.or.jp/
+wikidata_id: Q11090279
+metadata:
+  sources: [Wikidata Q11090279 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Chishakuin07n2040.jpg/1280px-Chishakuin07n2040.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Chishakuin07n2040.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  viaf: "257872998"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q11090279
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q11090279
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q11090279
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q11090279
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q11090279

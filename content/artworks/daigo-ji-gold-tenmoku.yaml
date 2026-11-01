@@ -1,0 +1,36 @@
+public_id: 107672
+title: Two gold tenmoku tea bowls
+attribution_label: Anonymous
+created: 1598
+kind: tea bowl
+medium: Gold plate on wood
+materials: [gold, wood]
+dimensions: [5.9]
+dimensions_note: diameter 12.6 cm each
+institution: daigo-ji
+description_md: Given to Gien (1558–1626), abbot of [[institution/daigo-ji]], in thanks for his prayers for [[person/toyotomi-hideyoshi]]’s recovery in 1598, the year Hideyoshi had the Sambōin rebuilt for his cherry-blossom viewing. Wooden cores covered with hammered gold sheets imitate the [[tenmoku]] glaze running down the sides; one of the gilt-bronze stands survives — perhaps from Hideyoshi’s golden tearoom. [[source/history-of-japanese-art|pp. 252–253, fig. 290]]
+relationships:
+  - type: associated_with
+    to: movement/momoyama-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 252–253, fig. 290
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 252–253, fig. 290
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 252–253, fig. 290
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 252–253, fig. 290
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 252–253, fig. 290
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 252–253, fig. 290
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 252–253, fig. 290

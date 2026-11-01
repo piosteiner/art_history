@@ -1,0 +1,57 @@
+public_id: 107604
+name: Ariwara no Narihira
+names:
+  - lang: ja
+    role: original
+    text: 在原業平
+  - Zai Go-Chūjō
+  - Zai Go-Chujo
+  - Zai Go
+  - Zai Chūjō
+  - Zai Chujo
+  - Mukashi-Otoko
+  - Zai Go Chujo
+  - Zai Gochujo
+  - Mukashi Otoko
+  - Ariwara Narihira
+  - Narihira Ariwara
+  - lang: ko
+    role: translation
+    text: 아리와라노 나리히라
+  - lang: ru
+    role: translation
+    text: Аривара-но Нарихира
+kind: person
+occupations: [poet, writer]
+birth: 825
+death: 880-07-13
+wikidata_id: Q451991
+metadata:
+  sources: [Wikidata Q451991 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Ariwara_no_Narihira.jpg/1280px-Ariwara_no_Narihira.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ariwara_no_Narihira.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "148708640"
+  gnd: "136763480"
+  lc: n81047188
+  viaf: "117181478"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q451991
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q451991
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q451991
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q451991

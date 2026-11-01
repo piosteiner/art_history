@@ -1,0 +1,12 @@
+public_id: 107667
+name: tenshu
+names:
+  - lang: ja
+    role: original
+    text: "{天守|てんしゅ}"
+category: architecture
+definition: "The keep of a Japanese castle: a tower of several storeys on a tall stone base, residence and refuge of last resort."
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 239

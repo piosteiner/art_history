@@ -1,0 +1,16 @@
+public_id: 107563
+name: Nishinomiya
+kind: settlement
+location: [135.34175, 34.73764]
+wikidata_id: Q243853
+metadata:
+  sources: [Wikidata Q243853 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q243853
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q243853

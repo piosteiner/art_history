@@ -1,0 +1,12 @@
+public_id: 107666
+name: sukiya
+names:
+  - lang: ja
+    role: original
+    text: "{数寄屋|すきや}"
+category: architecture
+definition: A subdued, unostentatious style of residential architecture derived from the teahouse, with painstaking attention to detail — the style of the Katsura villa.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 243

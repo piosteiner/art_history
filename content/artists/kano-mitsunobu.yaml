@@ -1,0 +1,35 @@
+public_id: 107591
+name: Kanō Mitsunobu
+names:
+  - lang: ja
+    role: original
+    text: 狩野光信
+  - Ko-Ukyō
+  - Ukyō
+  - Ukyōnoshin
+  - Mitsunobu Kanō
+  - Mitsunobu
+  - Kano Mitsunobu
+  - Kanou Mitsunobu
+  - lang: ru
+    role: translation
+    text: Кано Мицунобу
+birth: 1561
+death: 1608-04-13
+wikidata_id: Q3192786
+metadata:
+  sources: [Wikidata Q3192786 (retrieved 2026-11-01)]
+identifiers:
+  gnd: "1059733757"
+  lc: n79037078
+  ulan: "500121019"
+  viaf: "292383208"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3192786
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3192786

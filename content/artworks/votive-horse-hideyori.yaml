@@ -1,0 +1,39 @@
+public_id: 107691
+title: Votive horse painting
+creator: kano-hideyori
+attribution_label: attributed to Kanō Hideyori
+created: 1569
+kind: ema
+medium: Colours on wood
+materials: [wood]
+dimensions: [50, 58]
+institution: kamo-jinja-shimane
+description_md: A votive plaque ([[ema]]) of a prize horse — daimyo pledged such paintings at Shinto shrines, a tradition going back to the horses and bulls of Tang emperors and Japanese insei. Dated 1569 and signed “Kanō Jibu Shōyū”, the court rank of [[artist/kano-hideyori]], son of Kanō Motonobu, the only Kanō master to hold it then. Mason’s caption places it at the Kamo Shrine in Shimane, his text at the Kamigamo Shrine. [[source/history-of-japanese-art|pp. 254–255, fig. 293]]
+relationships:
+  - type: associated_with
+    to: movement/sengoku-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 254–255, fig. 293
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 254–255, fig. 293
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 254–255, fig. 293
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 254–255, fig. 293
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 254–255, fig. 293
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 254–255, fig. 293
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 254–255, fig. 293
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 254–255, fig. 293

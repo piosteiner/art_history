@@ -1,0 +1,12 @@
+public_id: 107653
+name: fan
+names:
+  - lang: ja
+    role: original
+    text: "{扇|おうぎ}"
+category: object type
+definition: A folding fan of paper on ribs; in Japan also painted and pasted onto screens.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 269

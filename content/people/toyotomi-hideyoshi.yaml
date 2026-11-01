@@ -1,0 +1,52 @@
+public_id: 107598
+name: Toyotomi Hideyoshi
+names:
+  - lang: ja
+    role: original
+    text: 豊臣秀吉
+  - lang: zh
+    role: translation
+    text: 丰臣秀吉
+  - lang: ko
+    role: translation
+    text: 도요토미 히데요시
+  - lang: ru
+    role: translation
+    text: Тоётоми Хидэёси
+kind: person
+occupations: [politician, military commander, ashigaru, daimyo]
+birth: 1537-03-27
+death: 1598-09-18
+wikidata_id: Q187550
+metadata:
+  sources: [Wikidata Q187550 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7a/Toyotomi_hideyoshi_face.png
+    source_url: https://commons.wikimedia.org/wiki/File:Toyotomi_hideyoshi_face.png
+    license: Public domain
+    credit: Kanō Mitsunobu
+identifiers:
+  bnf: "143664439"
+  gnd: "118944606"
+  idref: 05062654X
+  lc: n81032981
+  nlk: KAC201619737
+  ulan: "500327127"
+  viaf: "79404853"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q187550
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q187550
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q187550
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q187550

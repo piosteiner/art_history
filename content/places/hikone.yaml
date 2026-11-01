@@ -1,0 +1,16 @@
+public_id: 107569
+name: Hikone
+kind: settlement
+location: [136.25972, 35.27436]
+wikidata_id: Q386635
+metadata:
+  sources: [Wikidata Q386635 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q386635
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q386635

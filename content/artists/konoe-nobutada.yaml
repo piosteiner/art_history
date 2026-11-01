@@ -1,0 +1,46 @@
+public_id: 107595
+name: Konoe Nobutada
+names:
+  - lang: ja
+    role: original
+    text: 近衛信尹
+  - Nobutada Konoe
+  - Sanmyakuin
+  - Sanmyakuin Kampaku
+  - Konoe Nobosuke
+  - Sammyakuin Kampaku
+  - Sammyakuin
+  - Nobutada
+  - Konoe Nobumoto
+  - lang: ko
+    role: translation
+    text: 고노에 노부타다
+  - lang: ru
+    role: translation
+    text: Коноэ Нобутада
+birth: 1565
+death: 1614-12-25
+wikidata_id: Q368605
+metadata:
+  sources: [Wikidata Q368605 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Konoe_Nobutada_-_Tenjin_Traveling_to_China_-_2015.300.72_-_Metropolitan_Museum_of_Art.jpg/1280px-Konoe_Nobutada_-_Tenjin_Traveling_to_China_-_2015.300.72_-_Metropolitan_Museum_of_Art.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Konoe_Nobutada_-_Tenjin_Traveling_to_China_-_2015.300.72_-_Metropolitan_Museum_of_Art.jpg
+    license: Public domain
+    credit: Konoe Nobutada
+identifiers:
+  bnf: 14441681z
+  gnd: "124285368"
+  idref: "069308942"
+  lc: n82064098
+  ulan: "500320711"
+  viaf: "69857453"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q368605
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q368605

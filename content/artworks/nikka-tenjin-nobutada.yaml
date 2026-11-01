@@ -1,0 +1,41 @@
+public_id: 107686
+title: “Daily Tenjin” (Nikka Tenjin)
+creator: konoe-nobutada
+created: early 17th century
+created_span: uncertain
+kind: kakemono
+medium: Hanging scroll, ink on paper
+materials: [ink, paper]
+dimensions: [75.4, 35.5]
+description_md: "An icon of Kitano Tenjin, the deified [[person/sugawara-no-michizane]], patron of scholars: [[artist/konoe-nobutada]] (1565–1614), Minister of the Left and regent, one of the Three Master Calligraphers of the Kan’ei era, painted a fresh image of the deity every day. Broad, relaxed ink strokes for the robe, and his confident inscription: “[Kitano Tenjin] is one to whom the destiny of the empire may be entrusted.” A scholar-painter in the Chinese literati tradition. [[source/history-of-japanese-art|p. 266, fig. 306]]"
+relationships:
+  - type: depicts_person
+    to: person/sugawara-no-michizane
+    label: as Tenjin
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 266, fig. 306
+  - type: associated_with
+    to: movement/momoyama-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 266, fig. 306
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 266, fig. 306
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 266, fig. 306
+  created:
+    - source: history-of-japanese-art
+      locator: p. 266, fig. 306
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 266, fig. 306
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 266, fig. 306
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 266, fig. 306

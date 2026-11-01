@@ -1,0 +1,28 @@
+public_id: 107670
+title: Garden of the abbot’s residence, Chishakuin
+attribution_label: Anonymous
+created: 17th century
+created_span: uncertain
+kind: garden
+medium: Water, stones, plants
+institution: chishaku-in
+description_md: "A masterpiece of early Edo garden design at [[institution/chishaku-in]], the Chizan Shingon temple founded in 1601 at the foot of the Eastern Hills on the site of a temple destroyed by Hideyoshi in 1585. Designed by one of its early abbots, Zuiō Hakunyo, it is no dry garden: a long, narrow pond below the veranda of the residence, a tearoom at one end, plantings clipped into the shapes of the rolling hills around Kyoto. [[source/history-of-japanese-art|p. 244, fig. 280]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 244, fig. 280
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 244, fig. 280
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 244, fig. 280
+  created:
+    - source: history-of-japanese-art
+      locator: p. 244, fig. 280
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 244, fig. 280

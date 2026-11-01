@@ -1,0 +1,39 @@
+public_id: 107675
+title: Fusuma paintings of the Jukōin, Daitokuji
+creator: kano-eitoku
+created: 1566
+kind: fusuma-e
+medium: Fusuma panels, ink on paper
+materials: [ink, paper]
+dimensions: [175.5]
+dimensions_note: each panel; widths vary
+institution: juko-in
+description_md: "Commissioned in 1566 by Miyoshi Yoshitsugu from [[artist/kano-eitoku]] (1543–1590) and his father Shōei for the abbot’s residence of [[institution/juko-in]]. Eitoku, then in his early twenties, painted the central room facing the garden: the four seasons over sixteen panels in vigorous ink against faint gold. Instead of vertical motifs at the corners he placed three massive trees — a gnarled plum for spring, two pines for winter — diagonally opposite, with ducks, rocks and marsh grasses between, drawing the eye into space. A new formula for fusuma beyond his grandfather Motonobu’s. [[source/history-of-japanese-art|pp. 255–257, figs. 294–295]]"
+relationships:
+  - type: associated_with
+    to: movement/sengoku-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 255–257, figs. 294–295
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 255–257, figs. 294–295
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 255–257, figs. 294–295
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 255–257, figs. 294–295
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 255–257, figs. 294–295
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 255–257, figs. 294–295
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 255–257, figs. 294–295
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 255–257, figs. 294–295

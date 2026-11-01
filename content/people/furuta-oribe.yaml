@@ -1,0 +1,50 @@
+public_id: 107596
+name: Furuta Shigenari
+names:
+  - lang: ja
+    role: original
+    text: 古田重然
+  - Oribe Furuta
+  - Furuta Oribe
+  - Shigenari
+  - lang: ko
+    role: translation
+    text: 후루타 시게나리
+  - lang: ru
+    role: translation
+    text: Сигэнари Фурута
+kind: person
+occupations: [military commander, tea master]
+birth: 1544
+death: 1615-07-04
+wikidata_id: Q1058793
+metadata:
+  sources: [Wikidata Q1058793 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Furuta_Oribe02.jpg/1280px-Furuta_Oribe02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Furuta_Oribe02.jpg
+    license: Public domain
+    credit: M-sho-gun
+identifiers:
+  bnf: "150462658"
+  gnd: "129306541"
+  lc: n83049339
+  ulan: "500318047"
+  viaf: "45377942"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1058793
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1058793
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1058793
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q1058793

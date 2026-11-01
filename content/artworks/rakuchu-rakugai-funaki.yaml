@@ -1,0 +1,41 @@
+public_id: 107688
+title: Rakuchū rakugai zu (Funaki screens)
+names:
+  - Funaki screens
+  - lang: ja
+    role: original
+    text: "{洛中洛外図屏風 舟木本|らくちゅうらくがいずびょうぶ ふなきぼん}"
+attribution_label: Anonymous
+created: 1614/1615
+kind: byōbu
+medium: Pair of six-panel screens, ink and colour with gold leaf on paper
+materials: [ink, paper, gold leaf]
+dimensions: [162, 340]
+dimensions_note: each screen
+institution: tokyo-national-museum
+description_md: "A pair of [[rakuchu-rakugai]] screens painted while the Tokugawa were attacking Osaka Castle, perhaps for a wealthy townsman rather than a daimyo: Kyoto as Hideyoshi had rebuilt it, seen from a much lower altitude than the Rekihaku screens, streets crowded with people. The first panels of the right screen show Hōkōji with Hideyoshi’s Great Buddha and, above, his mausoleum; the left screen ends in the Tokugawa’s Nijō Castle — the old regime and the new side by side, with the portable shrines of the Gion festival between them. [[source/history-of-japanese-art|pp. 245–247, fig. 281]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 245–247, fig. 281
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 245–247, fig. 281
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 245–247, fig. 281
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 245–247, fig. 281
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 245–247, fig. 281
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 245–247, fig. 281
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 245–247, fig. 281

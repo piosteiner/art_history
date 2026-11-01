@@ -1,0 +1,32 @@
+public_id: 107678
+title: Plate with pine tree design (Karatsu ware)
+attribution_label: Anonymous
+created: 1567/1650
+kind: dish
+medium: Earthenware with glaze
+materials: [Karatsu ware]
+dimensions_note: diameter 36.3 cm
+institution: idemitsu-museum-of-arts
+description_md: "A plate of [[karatsu-ware]] with a slightly raised rim: sandy clay rich in iron, a pine painted in iron brown under a white glaze, the curving trunk and limbs answering the round dish. Karatsu was made by Korean potters in northern Kyūshū; its simple decoration and warm colour suited the tea ceremony. [[source/history-of-japanese-art|p. 252, fig. 289]]"
+relationships:
+  - type: associated_with
+    to: movement/momoyama-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 252, fig. 289
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 252, fig. 289
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 252, fig. 289
+  created:
+    - source: history-of-japanese-art
+      locator: p. 252, fig. 289
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 252, fig. 289
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 252, fig. 289

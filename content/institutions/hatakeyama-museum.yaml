@@ -1,0 +1,53 @@
+public_id: 107562
+name: Ebara Hatakeyama Museum of Art
+names:
+  - Hatakeyama Memorial Museum of Fine Art
+  - lang: fr
+    role: translation
+    text: musée des beaux-arts de Hatakeyama
+  - lang: de
+    role: translation
+    text: Hatakeyama Kinenkan
+  - lang: ja
+    role: translation
+    text: 荏原 畠山美術館
+  - lang: zh
+    role: translation
+    text: 畠山紀念館
+  - lang: ru
+    role: translation
+    text: Мемориальный музей Хатакэяма
+kind: museum
+founded: 1964-10
+place: tokyo
+location: [139.72689, 35.63231]
+website_url: https://www.hatakeyama-museum.org/
+wikidata_id: Q3330210
+metadata:
+  sources: [Wikidata Q3330210 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Hatakeyama_Memorial_Museum.JPG/1280px-Hatakeyama_Memorial_Museum.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Hatakeyama_Memorial_Museum.JPG
+    license: CC BY-SA 3.0
+    credit: Elmo rainy day
+identifiers:
+  gnd: "1056985178"
+  lc: n89605515
+  viaf: "123277797"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q3330210
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q3330210
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q3330210
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q3330210

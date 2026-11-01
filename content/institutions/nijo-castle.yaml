@@ -1,0 +1,58 @@
+public_id: 107558
+name: Nijō Castle
+names:
+  - Former Imperial Villa Nijo-jo Castle  [Official name]
+  - Former Imperial Villa Nijo-jo Castle (Nijo-jo)   [Official name]
+  - Former Nijo Imperial Villa (Nijo-jo Castle)[Historic site name]
+  - Former Imperial Villa Nijō Castle
+  - lang: nl
+    role: translation
+    text: Kasteel Nijo
+  - lang: fr
+    role: translation
+    text: château de Nijō
+  - lang: de
+    role: translation
+    text: Burg Nijō
+  - lang: it
+    role: translation
+    text: Castello Nijō
+  - lang: es
+    role: translation
+    text: Castillo Nijō
+  - lang: ja
+    role: translation
+    text: 元離宮二条城
+  - lang: ko
+    role: translation
+    text: 니조성
+  - lang: ru
+    role: translation
+    text: Нидзё (замок)
+founded: 1601
+place: kyoto
+location: [135.7475, 35.01417]
+website_url: http://nijo-jocastle.city.kyoto.lg.jp/
+wikidata_id: Q1013399
+metadata:
+  sources: [Wikidata Q1013399 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Nijo_Castle.jpg/1280px-Nijo_Castle.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nijo_Castle.jpg
+    license: CC BY-SA 2.5
+    credit: Keith Pomakis
+identifiers:
+  viaf: "316593202"
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1013399
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1013399
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1013399

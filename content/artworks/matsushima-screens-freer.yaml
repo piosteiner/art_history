@@ -1,0 +1,67 @@
+public_id: 107586
+title_lang: en
+title: Matsushima screens
+names:
+  - Waves at Matsushima
+  - lang: ja
+    role: translation
+    text: 松島図屏風
+creator: tawara-sotatsu
+created: 17th century
+created_span: uncertain
+kind: byōbu
+medium: Pair of six-panel screens, ink, colour and gold leaf on paper
+materials: [ink, gold, silver, paper, gold leaf]
+dimensions: [151.9, 356]
+dimensions_note: each screen
+institution: freer-gallery-of-art
+inventory_number: F1906.231-232
+web_url: http://www.asia.si.edu/collections/edan/object.php?q=fsg_F1906.231-232&bcrumb=true
+description_md: "One of [[artist/tawara-sotatsu]]’s masterworks: a richly coloured rocky outcrop in raging white-capped water, a golden cloud and pine-capped rocks, gold clouds turning into island shores. Called after Matsushima near Sendai, one of the three most beautiful views of Japan, the screens may rather show the Wedded Rocks of Futamigaura near Ise and illustrate the poem of a banished courtier in the Tales of Ise gazing at the foaming surf — the loneliness of the exile in the distorted reality of the landscape. [[source/history-of-japanese-art|pp. 269–271, fig. 311]]"
+wikidata_id: Q18689364
+metadata:
+  sources: [Wikidata Q18689364 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 269–271, fig. 311
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/%E4%BF%B5%E5%B1%8B%E5%AE%97%E9%81%94%E3%80%8A%E6%9D%BE%E5%B3%B6%E5%9B%B3%E3%80%8B17%E4%B8%96%E7%B4%80%E3%80%81%E3%83%95%E3%83%AA%E3%83%BC%E3%82%A2%E7%BE%8E%E8%A1%93%E9%A4%A82.jpg/1280px-%E4%BF%B5%E5%B1%8B%E5%AE%97%E9%81%94%E3%80%8A%E6%9D%BE%E5%B3%B6%E5%9B%B3%E3%80%8B17%E4%B8%96%E7%B4%80%E3%80%81%E3%83%95%E3%83%AA%E3%83%BC%E3%82%A2%E7%BE%8E%E8%A1%93%E9%A4%A82.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E4%BF%B5%E5%B1%8B%E5%AE%97%E9%81%94%E3%80%8A%E6%9D%BE%E5%B3%B6%E5%9B%B3%E3%80%8B17%E4%B8%96%E7%B4%80%E3%80%81%E3%83%95%E3%83%AA%E3%83%BC%E3%82%A2%E7%BE%8E%E8%A1%93%E9%A4%A82.jpg
+    license: Public domain
+    credit: Tawara Sōtatsu
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 269–271, fig. 311
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 269–271, fig. 311
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q18689364
+    - source: history-of-japanese-art
+      locator: pp. 269–271, fig. 311
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q18689364
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 269–271, fig. 311
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 269–271, fig. 311
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q18689364
+    - source: history-of-japanese-art
+      locator: pp. 269–271, fig. 311
+  inventory_number:
+    - accessed: 2026-11-01
+      property: P217
+      wikidata: Q18689364

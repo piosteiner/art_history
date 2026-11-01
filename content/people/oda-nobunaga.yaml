@@ -1,0 +1,51 @@
+public_id: 107599
+name: Oda Nobunaga
+names:
+  - lang: ja
+    role: original
+    text: 織田 信長
+  - lang: ja
+    role: original
+    text: 織田信長
+  - lang: ko
+    role: translation
+    text: 오다 노부나가
+  - lang: ru
+    role: translation
+    text: Ода Нобунага
+kind: person
+occupations: [daimyo, military leader]
+birth: 1534-07-03
+death: 1582-07-01
+wikidata_id: Q171411
+metadata:
+  sources: [Wikidata Q171411 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/36/Odanobunaga.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Odanobunaga.jpg
+    license: Public domain
+    credit: 狩野宗秀 (Kanō Sōshū, 1551 - 1601)
+identifiers:
+  bnf: "120016997"
+  gnd: 11894469X
+  idref: "068562209"
+  lc: n81032316
+  ulan: "500323367"
+  viaf: "74652663"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q171411
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q171411
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q171411
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q171411

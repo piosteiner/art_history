@@ -1,0 +1,50 @@
+public_id: 107578
+title: Kyakuden (Guest Hall), Kōjōin, Onjōji
+names:
+  - Kōjō-in Kyakuden
+  - lang: ja
+    role: translation
+    text: 光浄院客殿
+attribution_label: Anonymous
+created: 1601
+kind: building
+medium: Wood
+materials: [wood]
+institution: mii-dera
+location: [135.8525, 35.0143]
+description_md: "One of the earliest surviving fully developed [[shoin-zukuri]] buildings, built in 1601 by a samurai who had been ordained and retired to Onjōji on Lake Biwa. An oblong building of five rooms: steps lead past a carriage rest into a vestibule and the master’s reception room, with [[tokonoma]], [[chigaidana]] and an attached study (tsuke shoin); behind decorated doors ([[chodaigamae]]) lies his sleeping room, and a veranda faces the garden. [[source/history-of-japanese-art|pp. 241–242, fig. 276]]"
+wikidata_id: Q107020393
+metadata:
+  sources: [Wikidata Q107020393 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/otsu
+    period: 1601
+  - type: associated_with
+    to: movement/momoyama-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 241–242, fig. 276
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 241–242, fig. 276
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 241–242, fig. 276
+  created:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q107020393
+    - source: history-of-japanese-art
+      locator: pp. 241–242, fig. 276
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q107020393
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 241–242, fig. 276
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 241–242, fig. 276

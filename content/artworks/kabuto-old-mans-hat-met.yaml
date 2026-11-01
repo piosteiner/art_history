@@ -1,0 +1,37 @@
+public_id: 107676
+title: Kabuto helmet in the shape of an old man’s hat
+attribution_label: Anonymous
+created: late 16th century
+created_span: uncertain
+kind: kabuto
+medium: Lacquered iron and copper
+materials: [iron, lacquer, copper]
+dimensions: [41]
+institution: metropolitan-museum-of-art
+inventory_number: 36.25.81a–c
+description_md: "A [[kabuto]] in the whimsical shape of an old man’s cloth cap, made of gilded iron and fronted by a three-pronged flame bearing an image of Fudō Myōō. Whom it was made for is unknown, but the message is clear: the wearer has nothing of an old man’s weakness. [[source/history-of-japanese-art|p. 253, fig. 291]]"
+relationships:
+  - type: associated_with
+    to: movement/momoyama-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 253, fig. 291
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 253, fig. 291
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 253, fig. 291
+  created:
+    - source: history-of-japanese-art
+      locator: p. 253, fig. 291
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 253, fig. 291
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 253, fig. 291
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 253, fig. 291

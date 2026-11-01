@@ -1,0 +1,44 @@
+public_id: 107590
+name: Kanō Sanraku
+names:
+  - lang: ja
+    role: original
+    text: 狩野山楽
+  - Shūri
+  - Kimura Heizō
+  - Sanraku
+  - Mitsuyori
+  - Sanraku Kanō
+  - Kano Sanraku
+  - Kanou Sanraku
+  - lang: ko
+    role: translation
+    text: 가노 산라쿠
+  - lang: ru
+    role: translation
+    text: Кано Санраку
+birth: 1559
+death: 1635-09-30
+wikidata_id: Q3064625
+metadata:
+  sources: [Wikidata Q3064625 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/05/Kan%C5%8D_Sanraku.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kan%C5%8D_Sanraku.jpg
+    license: Public domain
+    credit: Kimura Kosetsu
+identifiers:
+  gnd: "132560291"
+  idref: "248621173"
+  lc: no96030311
+  ulan: "500121020"
+  viaf: "3637230"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3064625
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3064625

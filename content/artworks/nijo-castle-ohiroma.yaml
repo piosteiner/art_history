@@ -1,0 +1,53 @@
+public_id: 107579
+title: Ōhiroma (Great Audience Hall), Nijō Castle
+names:
+  - Ōhiroma
+  - Grand Hall
+  - lang: ja
+    role: translation
+    text: 二条城二の丸御殿大広間
+attribution_label: Anonymous
+created: c. 1625
+created_span: uncertain
+kind: building
+medium: Wood
+materials: [wood]
+institution: nijo-castle
+location: [135.7497, 35.01351]
+description_md: The Great Audience Hall of the Tokugawa residence in Kyoto, remodelled about 1625 for formal interviews with the shogun — the shoin elements of a guest hall on a grand scale. The lower level was for the vassals; on the upper level the shogun sat before a [[tokonoma]] painted with a massive pine on gold, a metaphor for the strength of his rule, beside [[chigaidana]], [[chodaigamae]] and an attached study; coffered ceiling, carved and painted panels. [[source/history-of-japanese-art|pp. 242–243, fig. 277]]
+wikidata_id: Q107020607
+metadata:
+  sources: [Wikidata Q107020607 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/kyoto
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 242–243, fig. 277
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Nijo_Castle_J09_45.jpg/1280px-Nijo_Castle_J09_45.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nijo_Castle_J09_45.jpg
+    license: CC BY 3.0
+    credit: Corpse Reviver
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 242–243, fig. 277
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 242–243, fig. 277
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 242–243, fig. 277
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q107020607
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 242–243, fig. 277
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 242–243, fig. 277

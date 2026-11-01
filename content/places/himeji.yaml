@@ -1,0 +1,16 @@
+public_id: 107573
+name: Himeji
+kind: settlement
+location: [134.68539, 34.81517]
+wikidata_id: Q209801
+metadata:
+  sources: [Wikidata Q209801 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q209801
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q209801

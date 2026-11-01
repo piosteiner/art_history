@@ -1,0 +1,47 @@
+public_id: 107575
+name: Katsura Imperial Villa
+names:
+  - Katsura Rikyū
+  - Katsura Rikyuu
+  - lang: fr
+    role: translation
+    text: villa impériale de Katsura
+  - lang: de
+    role: translation
+    text: Katsura-Villa
+  - lang: it
+    role: translation
+    text: Villa imperiale di Katsura
+  - lang: es
+    role: translation
+    text: Katsura
+  - lang: ja
+    role: translation
+    text: 桂離宮
+  - lang: ru
+    role: translation
+    text: Кацура
+place: kyoto
+location: [135.70944, 34.98389]
+website_url: https://sankan.kunaicho.go.jp/guide/katsura.html
+wikidata_id: Q1736808
+metadata:
+  sources: [Wikidata Q1736808 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Katsura_Imperial_Villa_in_Spring.jpg/1280px-Katsura_Imperial_Villa_in_Spring.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Katsura_Imperial_Villa_in_Spring.jpg
+    license: CC BY-SA 3.0
+    credit: John Chang
+identifiers:
+  gnd: 4110042-6
+  idref: "172658756"
+  viaf: "148296651"
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1736808
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1736808

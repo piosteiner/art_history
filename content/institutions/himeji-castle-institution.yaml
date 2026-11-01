@@ -1,0 +1,71 @@
+public_id: 107574
+name: Himeji Castle
+names:
+  - kind: nickname
+    lang: ja
+    role: alternative
+    text: 白鷺城
+  - Shirasagi Castle
+  - Hakuro Castle
+  - White Heron Castle
+  - White Egret Castle
+  - lang: nl
+    role: translation
+    text: Kasteel Himeji
+  - lang: fr
+    role: translation
+    text: château de Himeji
+  - lang: de
+    role: translation
+    text: Himeji-jō
+  - lang: it
+    role: translation
+    text: castello di Himeji
+  - lang: es
+    role: translation
+    text: Castillo Himeji
+  - lang: ja
+    role: translation
+    text: 姫路城
+  - lang: zh
+    role: translation
+    text: 姬路城
+  - lang: ko
+    role: translation
+    text: 히메지성
+  - lang: ru
+    role: translation
+    text: Замок Химэдзи
+kind: palace
+founded: 1346
+place: himeji
+location: [134.69361, 34.83944]
+website_url: https://www.himejicastle.jp/
+wikidata_id: Q188754
+metadata:
+  sources: [Wikidata Q188754 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Himeji_castle_in_may_2015.jpg/1280px-Himeji_castle_in_may_2015.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Himeji_castle_in_may_2015.jpg
+    license: CC BY-SA 4.0
+    credit: Nikos Kitsakis
+identifiers:
+  gnd: 4504940-3
+  viaf: "252445069"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q188754
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q188754
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q188754
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q188754

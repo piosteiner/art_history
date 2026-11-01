@@ -1,0 +1,49 @@
+public_id: 107561
+name: Kennin-ji Temple
+names:
+  - Kennin-ji
+  - lang: ja
+    role: translation
+    text: 建仁寺
+  - lang: ru
+    role: translation
+    text: Кэнниндзи
+kind: temple
+founded: 1202
+place: kyoto
+location: [135.77366, 35.00099]
+address: 京都府京都市東山区大和大路四条下る四丁目小松町584
+website_url: https://www.kenninji.jp/
+wikidata_id: Q1440954
+metadata:
+  sources: [Wikidata Q1440954 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Kenninji01s1920.jpg/1280px-Kenninji01s1920.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kenninji01s1920.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  gnd: "1112231099"
+  lc: n82110547
+  viaf: "1824147270591335700004"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1440954
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1440954
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q1440954
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1440954
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1440954

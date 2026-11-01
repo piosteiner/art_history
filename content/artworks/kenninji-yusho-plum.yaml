@@ -1,0 +1,40 @@
+public_id: 107680
+title: Plum Tree and Pine Tree, Zenkoan, Kenninji
+creator: kaiho-yusho
+created: c. 1599
+created_span: uncertain
+kind: fusuma-e
+medium: Fusuma, ink on paper
+materials: [ink, paper]
+dimensions: [173, 117]
+dimensions_note: each panel
+institution: kennin-ji
+description_md: "From a series of twelve fusuma by [[artist/kaiho-yusho]] (1533–1615) for the Zenkoan, a subtemple of [[institution/kennin-ji]]. Yūshō, a samurai’s son who was saved by being a ward of Tōfukuji when his father and brothers fell in 1573, left the temple at forty-one to become a painter, trained by a Kanō master. Quick calligraphic strokes on white: an ancient, rough-barked plum with thin, sword-like branches and new blossoms; an indistinct pine of broad, dry strokes sheltering two black mynah birds — each tree isolated, to reaffirm the Zen ideal of unity between man and nature. [[source/history-of-japanese-art|pp. 263–265, figs. 303–304]]"
+relationships:
+  - type: associated_with
+    to: movement/momoyama-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 263–265, figs. 303–304
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 263–265, figs. 303–304
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 263–265, figs. 303–304
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 263–265, figs. 303–304
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 263–265, figs. 303–304
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 263–265, figs. 303–304
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 263–265, figs. 303–304
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 263–265, figs. 303–304

@@ -1,0 +1,47 @@
+public_id: 107584
+title: Maple Tree
+names: [智積院障壁画]
+creator: hasegawa-tohaku
+created: c. 1592
+created_span: uncertain
+kind: fusuma-e
+medium: Four fusuma, colour and gold leaf on paper
+materials: [paper, gold leaf]
+dimensions: [172.5, 138.5]
+dimensions_note: each panel
+institution: chishaku-in
+description_md: "Tōhaku’s masterwork in the blue-and-gold style and one of the first reworkings of yamato-e themes: painted for Shōunji, the temple [[person/toyotomi-hideyoshi]] built in 1592 for his three-year-old son Tsurumatsu, after Tōhaku was put in sole charge; when the temple was destroyed after 1615 the surviving paintings went to [[institution/chishaku-in]] and were cut down. A massive maple trunk runs diagonally across the two central panels, its branches like arms; chrysanthemums, cockscomb and bush clover form a base; the gold is at one moment ground, at another cloud over blue water — tension between the enduring trunk and the leaves that will soon fall. [[source/history-of-japanese-art|pp. 261–262, fig. 301]]"
+wikidata_id: Q131450654
+metadata:
+  sources: [Wikidata Q131450654 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/momoyama-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 261–262, fig. 301
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 261–262, fig. 301
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 261–262, fig. 301
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 261–262, fig. 301
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q131450654
+    - source: history-of-japanese-art
+      locator: pp. 261–262, fig. 301
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 261–262, fig. 301
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 261–262, fig. 301
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 261–262, fig. 301

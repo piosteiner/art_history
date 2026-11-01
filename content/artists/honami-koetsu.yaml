@@ -1,0 +1,43 @@
+public_id: 107593
+name: Honami Kōetsu
+names:
+  - lang: ja
+    role: original
+    text: 本阿弥光悦
+  - Honami Koetsu
+  - Honami Kouetsu
+  - lang: fr
+    role: translation
+    text: Hon'ami Kōetsu
+  - lang: zh
+    role: translation
+    text: 本阿彌光悅
+  - lang: ru
+    role: translation
+    text: Коэцу Хонъами
+birth: 1558
+death: 1637-02-27
+wikidata_id: Q3139920
+metadata:
+  sources: [Wikidata Q3139920 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e6/Hon%27ami_Koetsu.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hon%27ami_Koetsu.jpg
+    license: Public domain
+    credit: "retouch: Qurren (talk)."
+identifiers:
+  bnf: 17075723c
+  gnd: "123876419"
+  idref: "112626157"
+  lc: n50062064
+  ulan: "500121411"
+  viaf: "35375208"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3139920
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3139920

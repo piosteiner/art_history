@@ -1,0 +1,12 @@
+public_id: 107657
+name: Karatsu ware
+names:
+  - lang: ja
+    role: original
+    text: "{唐津焼|からつやき}"
+category: material
+definition: High-fired glazed ceramics of northern Kyūshū, made by Korean potters, many brought to Japan during Hideyoshi’s invasions of 1592 and 1597; simple painted decoration, warm yellow-brown.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 252

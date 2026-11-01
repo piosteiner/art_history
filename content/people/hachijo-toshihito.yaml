@@ -1,0 +1,57 @@
+public_id: 107601
+name: Hachijō Toshihito
+names:
+  - lang: ja
+    role: original
+    text: 八条宮智仁親王
+  - Prince Hachijō Toshihito
+  - Hachijō-no-miya Toshihito
+  - Hachijo Toshihito
+  - Prince Hachijo Toshihito
+  - Toshihito-shinnō
+  - Toshihito Shinnō
+  - Hachijo-no-miya Toshihito-shinno
+  - Hachijou-no-miya Toshihito-shinnou
+  - Hachijō-no-miya Toshihito-shinnō
+  - lang: zh
+    role: translation
+    text: 八條宮智仁親王
+  - lang: ko
+    role: translation
+    text: 하치조노미야 도시히토
+  - lang: ru
+    role: translation
+    text: Тосихито-синно Хатидзё-но-мия
+kind: person
+occupations: [horticulturist]
+birth: 1579-02-13
+death: 1629-05-29
+wikidata_id: Q850601
+metadata:
+  sources: [Wikidata Q850601 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Prince_Hachij%C5%8D_Toshihito.jpg/1280px-Prince_Hachij%C5%8D_Toshihito.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Prince_Hachij%C5%8D_Toshihito.jpg
+    license: Public domain
+    credit: Machijiri Kazufusa
+identifiers:
+  gnd: "1125906359"
+  lc: nr99026894
+  viaf: "12227926"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q850601
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q850601
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q850601
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q850601

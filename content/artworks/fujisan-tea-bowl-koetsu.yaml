@@ -1,0 +1,35 @@
+public_id: 107674
+title: Tea bowl called Mount Fuji (Fujisan)
+creator: honami-koetsu
+created: early 17th century
+created_span: uncertain
+kind: tea bowl
+medium: Raku earthenware with glaze
+materials: [earthenware]
+dimensions: [8.5]
+description_md: "The premier ceramic work of [[artist/honami-koetsu]], an accomplished amateur potter: like the mountain, white around the top and greyish black below, shaped by hand, the marks of the shaving knife proudly left at base and lip. Filled with foamy green tea it becomes a volcano’s crater. [[source/history-of-japanese-art|pp. 251–252, fig. 288]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 251–252, fig. 288
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 251–252, fig. 288
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 251–252, fig. 288
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 251–252, fig. 288
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 251–252, fig. 288
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 251–252, fig. 288
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 251–252, fig. 288

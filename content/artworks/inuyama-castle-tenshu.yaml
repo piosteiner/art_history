@@ -1,0 +1,53 @@
+public_id: 107576
+title: Tenshu, Inuyama Castle
+names:
+  - Inuyama Castle Keep Tower
+  - lang: ja
+    role: translation
+    text: 犬山城天守
+attribution_label: Anonymous
+created: early 17th century
+created_span: uncertain
+kind: building
+medium: Wood, plaster and stone
+materials: [wood, stone]
+institution: inuyama-castle
+location: [136.9392, 35.38834]
+description_md: "The only surviving part of Inuyama Castle on the Kiso River north of Nagoya: a four-storied [[tenshu]] on a tall, tapering stone base of dry-stone walls (rough stone, crushed rock, gravel and sand behind, so that rain drains away and earthquakes do not crack it). Once dated 1469, it is now thought no earlier than the late sixteenth century, though its two lowest storeys resemble early sixteenth-century structures; the curved Chinese gables were added in 1620. Of the great castles of the age — [[person/oda-nobunaga]]’s Azuchi, Momoyama, Osaka — none survives; most surviving castles were built between 1600 and 1615, before the shogunate limited each daimyo to one castle and banned new ones. [[source/history-of-japanese-art|pp. 239–240, fig. 272]]"
+wikidata_id: Q107020356
+metadata:
+  sources: [Wikidata Q107020356 (retrieved 2026-11-01)]
+relationships:
+  - type: created_in
+    to: place/inuyama
+    period: 1580s
+  - type: associated_with
+    to: movement/momoyama-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 239–240, fig. 272
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Inuyama_Castle_from_Kakamigahara_City_-_2.jpg/1280px-Inuyama_Castle_from_Kakamigahara_City_-_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Inuyama_Castle_from_Kakamigahara_City_-_2.jpg
+    license: CC BY-SA 4.0
+    credit: KKPCW
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 239–240, fig. 272
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 239–240, fig. 272
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 239–240, fig. 272
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q107020356
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 239–240, fig. 272
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 239–240, fig. 272

@@ -1,0 +1,12 @@
+public_id: 107662
+name: shikishi
+names:
+  - lang: ja
+    role: original
+    text: "{色紙|しきし}"
+category: format
+definition: A square sheet of decorated paper for a poem.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 268

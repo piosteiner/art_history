@@ -1,0 +1,37 @@
+public_id: 107685
+title: Namban screens
+attribution_label: Anonymous
+created: early 17th century
+created_span: uncertain
+kind: byōbu
+medium: Pair of six-panel screens, colour and gold leaf on paper
+materials: [paper, gold leaf]
+dimensions: [155, 334]
+dimensions_note: each screen
+institution: museum-of-the-imperial-collections
+description_md: "A pair of [[namban]] screens, read against Japanese custom from left to right: a many-masted foreign galleon arrives in a Japanese port, and its captain and crew walk in procession through the streets to the Jesuit church of Kyoto in the upper right. Tall, moustachioed Europeans in pantaloons and flowing capes were an exotic subject until the country was closed in 1641. [[source/history-of-japanese-art|pp. 247–249, fig. 282]]"
+relationships:
+  - type: associated_with
+    to: movement/momoyama-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 247–249, fig. 282
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 247–249, fig. 282
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 247–249, fig. 282
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 247–249, fig. 282
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 247–249, fig. 282
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 247–249, fig. 282
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 247–249, fig. 282

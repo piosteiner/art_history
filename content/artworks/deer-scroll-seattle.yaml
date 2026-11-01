@@ -1,0 +1,45 @@
+public_id: 107673
+title: Deer Scroll
+creator: tawara-sotatsu
+created: c. 1615
+created_span: uncertain
+kind: handscroll
+medium: Handscroll, ink and gold and silver paint on paper
+materials: [ink, paper, gold, silver]
+dimensions: [34.9]
+institution: seattle-art-museum
+description_md: "One of the last collaborations of [[artist/honami-koetsu]] and [[artist/tawara-sotatsu]]: deer running, standing and feeding in gold and silver, with twenty-eight poems from the Shin kokinshū. Two hands can be seen in the paintings, one skilled in gold, the other adding single deer in heavier strokes; perhaps Sōtatsu painted it and Kōetsu, not entirely pleased, filled the voids. In 1615 [[person/tokugawa-ieyasu]] granted Kōetsu land at Takagamine north-west of Kyoto, where an artists’ community grew from which the [[movement/rinpa]] school would come. [[source/history-of-japanese-art|p. 268, fig. 309]]"
+relationships:
+  - type: co_creator
+    to: artist/honami-koetsu
+    label: calligraphy
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 268, fig. 309
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 268, fig. 309
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 268, fig. 309
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 268, fig. 309
+  created:
+    - source: history-of-japanese-art
+      locator: p. 268, fig. 309
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 268, fig. 309
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 268, fig. 309
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 268, fig. 309
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 268, fig. 309

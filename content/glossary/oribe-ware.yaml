@@ -1,0 +1,13 @@
+public_id: 107660
+name: Oribe ware
+names:
+  - lang: ja
+    role: original
+    text: "{織部焼|おりべやき}"
+category: material
+parent: stoneware
+definition: "Colourful Mino stoneware named after the tea master Furuta Oribe (1544–1615): moulded shapes, bright copper-green glaze and designs in brown on white."
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 250–251

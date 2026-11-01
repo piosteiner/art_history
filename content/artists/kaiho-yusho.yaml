@@ -1,0 +1,43 @@
+public_id: 107589
+name: Kaihō Yūshō
+names:
+  - lang: ja
+    role: original
+    text: 海北友松
+  - Kaihō Yūtoku
+  - Kaihō Shōeki
+  - Josetsusai
+  - Yūkēsai
+  - Kaiho Yusho
+  - Kaihou Yuushou
+  - lang: ko
+    role: translation
+    text: 가이호 유쇼
+  - lang: ru
+    role: translation
+    text: Юсё Каихо
+birth: 1533
+death: 1615-03-01
+wikidata_id: Q3191951
+metadata:
+  sources: [Wikidata Q3191951 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/82/Daruma_by_Yusho.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Daruma_by_Yusho.jpg
+    license: CC BY-SA 3.0
+    credit: Madinpursuit
+identifiers:
+  gnd: "1067274847"
+  idref: "112678769"
+  lc: n78027432
+  ulan: "500121254"
+  viaf: "55400733"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3191951
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3191951

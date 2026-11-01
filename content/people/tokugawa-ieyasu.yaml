@@ -1,0 +1,54 @@
+public_id: 107600
+name: Tokugawa Ieyasu
+names:
+  - lang: ja
+    role: original
+    text: 徳川家康
+  - Matsudaira Takechiyo
+  - Ieyasu
+  - lang: zh
+    role: translation
+    text: 德川家康
+  - lang: ko
+    role: translation
+    text: 도쿠가와 이에야스
+  - lang: ru
+    role: translation
+    text: Токугава Иэясу
+kind: person
+occupations: [samurai]
+birth: 1543-02-10
+death: 1616-06-01
+wikidata_id: Q171977
+metadata:
+  sources: [Wikidata Q171977 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Tokugawa_Ieyasu2.JPG/1280px-Tokugawa_Ieyasu2.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Tokugawa_Ieyasu2.JPG
+    license: Public domain
+    credit: Kanō Tan'yū
+identifiers:
+  bnf: 16127194q
+  gnd: 11897453X
+  idref: "082954968"
+  kulturnav: 90ee1922-e08c-42f6-aab8-de54ead44fe6
+  lc: n81118846
+  nlk: KAC201619771
+  viaf: "45630467"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q171977
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q171977
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q171977
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q171977
