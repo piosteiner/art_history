@@ -38,6 +38,13 @@ death: 1723-10-31
 wikidata_id: Q47292
 metadata:
   sources: [Wikidata Q47292 (retrieved 2026-10-20)]
+relationships:
+  - type: child_of
+    to: person/ferdinando-ii-de-medici
+    sources:
+      - accessed: 2026-10-31
+        property: P40
+        wikidata: Q314558
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/a/a7/Volterrano%2C_Cosimo_III_de%27_Medici_in_grand_ducal_robes_%28Warsaw_Royal_Castle%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Volterrano,_Cosimo_III_de%27_Medici_in_grand_ducal_robes_(Warsaw_Royal_Castle).jpg

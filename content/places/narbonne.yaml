@@ -1,0 +1,40 @@
+public_id: 105813
+name: Narbonne
+names:
+  - lang: it
+    role: translation
+    text: Narbona
+  - lang: ja
+    role: translation
+    text: ナルボンヌ
+  - lang: zh
+    role: translation
+    text: 纳博讷
+  - lang: ko
+    role: translation
+    text: 나르본
+  - lang: ru
+    role: translation
+    text: Нарбон
+kind: settlement
+parent: arrondissement-of-narbonne
+country_code: FR
+location: [3.00361, 43.18472]
+wikidata_id: Q6555
+metadata:
+  sources: [Wikidata Q6555 (retrieved 2026-10-31)]
+identifiers:
+  gnd: 4117775-7
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q6555
+  parent:
+    - accessed: 2026-10-31
+      property: P131
+      wikidata: Q6555
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q6555

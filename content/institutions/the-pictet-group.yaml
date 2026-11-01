@@ -1,0 +1,47 @@
+public_id: 105804
+name: The Pictet Group
+names:
+  - Pictet group
+  - lang: nl
+    role: translation
+    text: Pictet & Cie
+  - lang: fr
+    role: translation
+    text: Groupe Pictet
+  - lang: de
+    role: translation
+    text: Pictet-Gruppe
+  - lang: it
+    role: translation
+    text: Gruppo Pictet
+  - lang: ja
+    role: translation
+    text: ピクテ銀行
+  - lang: zh
+    role: translation
+    text: 日內瓦銀行
+founded: 1805-07-23
+place: geneva
+website_url: https://www.pictet.com
+wikidata_id: Q691481
+metadata:
+  sources: [Wikidata Q691481 (retrieved 2026-10-31)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Banque_Pictet_%26_Cie_%40_Carouge_%2850681380443%29.jpg/1280px-Banque_Pictet_%26_Cie_%40_Carouge_%2850681380443%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Banque_Pictet_%26_Cie_@_Carouge_(50681380443).jpg
+    license: CC BY 2.0
+    credit: Guilhem Vellut from Annecy, France
+identifiers:
+  gnd: 2112385-8
+  idref: "261919210"
+  lc: no2011117625
+  viaf: "141404958"
+sources:
+  place:
+    - accessed: 2026-10-31
+      property: P131
+      wikidata: Q691481
+  founded:
+    - accessed: 2026-10-31
+      property: P571
+      wikidata: Q691481

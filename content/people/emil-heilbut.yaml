@@ -1,0 +1,33 @@
+public_id: 105775
+name: Emil Heilbut
+given_name: Emil
+family_name: Heilbut
+kind: person
+occupations: [art historian, art critic, art collector]
+birth: 1861-04-02
+death: 1921-02-16
+wikidata_id: Q18222215
+metadata:
+  sources: [Wikidata Q18222215 (retrieved 2026-10-31)]
+identifiers:
+  gnd: "116651407"
+  idref: "122814452"
+  lc: no2007125732
+  viaf: "30293230"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q18222215
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q18222215
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q18222215
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q18222215

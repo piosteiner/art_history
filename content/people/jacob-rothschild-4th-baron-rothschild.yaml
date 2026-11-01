@@ -1,0 +1,56 @@
+public_id: 105781
+name: Jacob Rothschild, 4th Baron Rothschild
+names:
+  - lang: en
+    role: original
+    text: Jacob Rothschild
+  - Nathaniel Charles Jacob Rothschild, 4th Baron Rothschild
+  - lang: it
+    role: translation
+    text: Jacob Rothschild, IV barone Rothschild
+  - lang: ja
+    role: translation
+    text: ジェイコブ・ロスチャイルド
+  - lang: zh
+    role: translation
+    text: 内森尼尔·查尔斯·雅各布·罗斯柴尔德
+  - lang: ko
+    role: translation
+    text: 제4대 로스차일드 남작 제이콥 로스차일드
+  - lang: ru
+    role: translation
+    text: Натаниэль Чарльз Джейкоб Ротшильд
+kind: person
+occupations: [politician, banker, patron of the arts]
+birth: 1936-04-29
+death: 2024-02-26
+wikidata_id: Q2026032
+metadata:
+  sources: [Wikidata Q2026032 (retrieved 2026-10-31)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f5/Jacob_Rothschild_Amana_nli_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacob_Rothschild_Amana_nli_(cropped).jpg
+    license: CC BY-SA 4.0
+    credit: "National Library of Israel| Photography: Hanan Cohen"
+identifiers:
+  gnd: 113858486X
+  lc: nb2013024699
+  ulan: "500231983"
+  viaf: "173072768"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q2026032
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q2026032
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q2026032
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q2026032

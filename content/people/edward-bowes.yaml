@@ -1,0 +1,43 @@
+public_id: 105800
+name: Edward Bowes
+given_name: Edward
+family_name: Bowes
+names:
+  - kind: pseudonym
+    role: alternative
+    text: Major Bowes
+  - lang: ja
+    role: translation
+    text: エドワード・バウアー
+kind: person
+occupations: [radio personality]
+birth: 1874-06-14
+death: 1946-06-13
+wikidata_id: Q5341967
+metadata:
+  sources: [Wikidata Q5341967 (retrieved 2026-10-31)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/16/Major_Bowes_Amateur_Hour_1935.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Major_Bowes_Amateur_Hour_1935.JPG
+    license: Public domain
+    credit: NBC Radio-NBC photo
+identifiers:
+  lc: n92036087
+  viaf: "70584409"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q5341967
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q5341967
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q5341967
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q5341967

@@ -9,6 +9,13 @@ death: 1985-01-19
 wikidata_id: Q136703900
 metadata:
   sources: [Wikidata Q136703900 (retrieved 2026-10-20)]
+relationships:
+  - type: child_of
+    to: person/serena-lederer
+    sources:
+      - accessed: 2026-10-31
+        property: P40
+        wikidata: Q2272284
 identifiers:
   gnd: "1012750183"
   lc: nr89004519

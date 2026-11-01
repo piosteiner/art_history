@@ -8,6 +8,19 @@ death: 1957-09-12
 wikidata_id: Q5131602
 metadata:
   sources: [Wikidata Q5131602 (retrieved 2026-10-09)]
+relationships:
+  - type: born_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-10-31
+        property: P19
+        wikidata: Q5131602
+  - type: child_of
+    to: person/clendenin-j-ryan
+    sources:
+      - accessed: 2026-10-31
+        property: P22
+        wikidata: Q5131602
 identifiers:
   gnd: "1252556713"
   ulan: "500443527"

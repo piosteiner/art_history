@@ -7,6 +7,13 @@ death: 1610-03-19
 wikidata_id: Q719668
 metadata:
   sources: [Wikidata Q719668 (retrieved 2026-10-05)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-10-31
+        property: P27
+        wikidata: Q719668
 sources:
   birth:
     - accessed: 2026-10-05

@@ -1,0 +1,39 @@
+public_id: 105785
+name: Gottfried Bermann
+given_name: Gottfried
+family_name: Bermann
+names:
+  - Gottfried Bermann Fischer
+  - lang: ru
+    role: translation
+    text: Готфрид Берман
+kind: person
+occupations: [publisher, art collector, sculptor, physician]
+birth: 1897-07-31
+death: 1995-09-17
+wikidata_id: Q97753
+metadata:
+  sources: [Wikidata Q97753 (retrieved 2026-10-31)]
+identifiers:
+  bnf: 12055802k
+  gnd: "118509683"
+  idref: "028796217"
+  lc: n89652822
+  viaf: "29554303"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q97753
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q97753
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q97753
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q97753

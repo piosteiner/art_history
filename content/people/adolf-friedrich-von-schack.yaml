@@ -10,6 +10,12 @@ wikidata_id: Q63876
 metadata:
   sources: [Wikidata Q63876 (retrieved 2026-10-18)]
 relationships:
+  - type: nationality
+    to: polity/grand-duchy-of-mecklenburg-schwerin
+    sources:
+      - accessed: 2026-10-31
+        property: P27
+        wikidata: Q63876
   - type: founded
     to: institution/sammlung-schack
     sources:

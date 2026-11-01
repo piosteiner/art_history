@@ -1,0 +1,16 @@
+public_id: 105815
+name: Fairfield County
+kind: site
+location: [-73.37, 41.23]
+wikidata_id: Q54231
+metadata:
+  sources: [Wikidata Q54231 (retrieved 2026-10-31)]
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q54231
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q54231

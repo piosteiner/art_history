@@ -9,6 +9,13 @@ website_url: https://www.uzh.ch/
 wikidata_id: Q206702
 metadata:
   sources: [Wikidata Q206702 (retrieved 2026-10-18)]
+relationships:
+  - type: located_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-10-31
+        property: P159
+        wikidata: Q206702
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Z%C3%BCrich_Switzerland-University-of-Zurich-Main-Building-01.jpg/1280px-Z%C3%BCrich_Switzerland-University-of-Zurich-Main-Building-01.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Z%C3%BCrich_Switzerland-University-of-Zurich-Main-Building-01.jpg

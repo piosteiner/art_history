@@ -8,6 +8,13 @@ website_url: https://www.humboldtforum.org/de/
 wikidata_id: Q20196262
 metadata:
   sources: [Wikidata Q20196262 (retrieved 2026-10-27)]
+relationships:
+  - type: located_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-10-31
+        property: P131
+        wikidata: Q20196262
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/At_Berlin_2024_241.jpg/1280px-At_Berlin_2024_241.jpg
     source_url: https://commons.wikimedia.org/wiki/File:At_Berlin_2024_241.jpg

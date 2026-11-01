@@ -1,0 +1,49 @@
+public_id: 105783
+name: Gustave Fayet
+given_name: Gustave
+family_name: Fayet
+names:
+  - Pierre Antoine Gustave Fayet
+  - lang: ja
+    role: translation
+    text: ギュスターヴ・フェイエ
+  - lang: ru
+    role: translation
+    text: Гюстав Файе
+kind: person
+occupations: [painter, art collector, ceramicist, winegrower, curator, patron of the arts, watercolorist]
+birth: 1865-05-20
+death: 1925-09-24
+wikidata_id: Q2242900
+metadata:
+  sources: [Wikidata Q2242900 (retrieved 2026-10-31)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/05/Gustave_Fayet.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustave_Fayet.jpg
+    license: CC BY-SA 3.0
+    credit: Xamelitia1
+identifiers:
+  bnf: 10949689z
+  gnd: "121079945"
+  idref: "134494857"
+  lc: nr2007002152
+  rkd: "27471"
+  ulan: "500109703"
+  viaf: "73845800"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q2242900
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q2242900
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q2242900
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q2242900

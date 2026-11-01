@@ -1,0 +1,53 @@
+public_id: 105841
+name: Fort Worth
+names:
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Funky town
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Cowtown
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Panther city
+  - Fort Worth, Texas
+  - Fort Worth, TX
+  - Ft. Worth, TX
+  - Ft. Worth, Texas
+  - lang: ja
+    role: translation
+    text: フォート・ワース
+  - lang: zh
+    role: translation
+    text: 沃思堡
+  - lang: ko
+    role: translation
+    text: 포트워스
+  - lang: ru
+    role: translation
+    text: Форт-Уэрт
+kind: settlement
+parent: tarrant-county
+country_code: US
+location: [-97.3325, 32.75639]
+wikidata_id: Q16558
+metadata:
+  sources: [Wikidata Q16558 (retrieved 2026-10-31)]
+identifiers:
+  gnd: 4225183-7
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q16558
+  parent:
+    - accessed: 2026-10-31
+      property: P131
+      wikidata: Q16558
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q16558

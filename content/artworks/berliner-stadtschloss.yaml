@@ -21,6 +21,12 @@ relationships:
   - type: created_in
     to: place/berlin
     period: 1451
+  - type: houses
+    to: institution/humboldt-forum
+    sources:
+      - accessed: 2026-10-31
+        property: P167
+        wikidata: Q170119
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Berliner_Stadtschloss%2C_September_2022-L1000099.jpg/1280px-Berliner_Stadtschloss%2C_September_2022-L1000099.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Berliner_Stadtschloss,_September_2022-L1000099.jpg

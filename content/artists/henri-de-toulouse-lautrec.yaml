@@ -1,0 +1,74 @@
+public_id: 105771
+name: Henri de Toulouse-Lautrec
+given_name: Henri
+family_name: de Toulouse-Lautrec
+names:
+  - henri toulouse lautrec
+  - Henri Toulouse-Lautrec
+  - Henri Marie Raymond De Toulouse-Lautrec
+  - For Toulouse-Lautrec see Lautrec
+  - Treclau
+  - Henri de Toulouse- Lautrec
+  - Lautrec
+  - toulouse lautrec
+  - De Lautrec
+  - Henri-Marie-Raymond de Toulouse-Lautrec Montfa
+  - Henri-Marie-Raymond de Toulouse-Lautrec
+  - H. de Toulouse Lautrev
+  - Toulouse-Lautrec
+  - henri de toulouse lauterec
+  - lautrec toulouse
+  - Henry Toulouse-Lautrec
+  - Henri de Toulouse Lautrec
+  - h. toulouse lautrec
+  - Henri Marie Raymond de Toulouse- Lautrec Monfa
+  - Henry de Toulouse-Lautrec
+  - Anri de Tuluz-Lotrek
+  - H. de Toulouse-Lautrec
+  - Henri Raymond de Toulouse-Lautrec-Monfa
+  - Henri Marie Raymond Toulouse-Lautrec
+  - Henri Marie Raymond de Toulouse-Lautrec-Monfa
+  - Henri Marie Raymond de Toulouse-Lautrec Monfa
+  - Henri Marie Raymond de Toulouse-Monfa Lautrec Monfa
+  - lang: ja
+    role: translation
+    text: アンリ・ド・トゥールーズ＝ロートレック
+  - lang: zh
+    role: translation
+    text: 亨利·德·土魯斯-羅特列克
+  - lang: ko
+    role: translation
+    text: 앙리 드 툴루즈로트레크
+  - lang: ru
+    role: translation
+    text: Анри де Тулуз-Лотрек
+birth: 1864-11-24
+death: 1901-09-09
+wikidata_id: Q82445
+metadata:
+  sources: [Wikidata Q82445 (retrieved 2026-10-31)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/aa/Photolautrec.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Photolautrec.jpg
+    license: Public domain
+    credit: Paul Sescau
+identifiers:
+  bnf: 11926892d
+  dome: "386"
+  gnd: 11862346X
+  idref: "027332209"
+  kulturnav: 0c79401f-f338-46f4-b6a6-4b9cfdcb054d
+  lc: n79045509
+  nlk: KAC201524476
+  rkd: "78002"
+  ulan: "500029114"
+  viaf: "32003649"
+sources:
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q82445
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q82445

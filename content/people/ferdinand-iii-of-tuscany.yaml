@@ -36,6 +36,19 @@ death: 1824-06-18
 wikidata_id: Q309605
 metadata:
   sources: [Wikidata Q309605 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-31
+        property: P19
+        wikidata: Q309605
+  - type: died_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-31
+        property: P20
+        wikidata: Q309605
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Joseph_Dorffmeister_-_Gro%C3%9Fherzog_Ferdinand_III._%281769-1824%29%2C_Sohn_von_Leopold_II.%2C_in_seiner_Bibliothek_sitzend%2C_Kniest%C3%BCck.jpg/1280px-Joseph_Dorffmeister_-_Gro%C3%9Fherzog_Ferdinand_III._%281769-1824%29%2C_Sohn_von_Leopold_II.%2C_in_seiner_Bibliothek_sitzend%2C_Kniest%C3%BCck.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Joseph_Dorffmeister_-_Gro%C3%9Fherzog_Ferdinand_III._(1769-1824),_Sohn_von_Leopold_II.,_in_seiner_Bibliothek_sitzend,_Kniest%C3%BCck.jpg

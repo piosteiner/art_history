@@ -27,6 +27,7 @@ names:
     role: translation
     text: Амбруаз Воллар
 kind: person
+occupations: [art collector, publisher, art dealer, businessperson, biographer, gallerist, writer, art critic]
 birth: 1866-07-03
 death: 1939-07-22
 wikidata_id: Q459041
@@ -39,16 +40,43 @@ relationships:
       - accessed: 2026-10-30
         property: P27
         wikidata: Q459041
+  - type: born_in
+    to: place/saint-denis
+    sources:
+      - accessed: 2026-10-31
+        property: P19
+        wikidata: Q459041
+      - url: https://data.bnf.fr/ark:/12148/cb12015538x
+        source: bnf
+        accessed: 2026-10-31
   - type: died_in
     to: place/versailles
     sources:
       - accessed: 2026-10-30
         property: P20
         wikidata: Q459041
+      - url: https://data.bnf.fr/ark:/12148/cb12015538x
+        source: bnf
+        accessed: 2026-10-31
+  - type: worked_in
+    to: place/paris
+    sources:
+      - url: https://d-nb.info/gnd/118627775
+        source: gnd
+        accessed: 2026-10-31
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/23/Ambroise_Vollard%2C_standing_in_front_of_Picasso%27s_Evocaci%C3%B3n._El_entierro_de_Casagemas.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Ambroise_Vollard,_standing_in_front_of_Picasso%27s_Evocaci%C3%B3n._El_entierro_de_Casagemas.jpg
     license: Public domain
+    credit: Unknown photographer, before 1910 — reproduced in “Ateliers d'artistes”, recueil de photographies, vol. 4, p. 95 (Réunion des musées nationaux)
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Pierre-Auguste_Renoir_-_Ambroise_Vollard.jpg/1280px-Pierre-Auguste_Renoir_-_Ambroise_Vollard.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_Ambroise_Vollard.jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Portrait_d%27Ambroise_Vollard%2C_par_Paul_C%C3%A9zanne%2C_FWN_531.jpg/1280px-Portrait_d%27Ambroise_Vollard%2C_par_Paul_C%C3%A9zanne%2C_FWN_531.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_d%27Ambroise_Vollard,_par_Paul_C%C3%A9zanne,_FWN_531.jpg
+    license: Public domain
+    credit: Paul Cézanne
 identifiers:
   bnf: 12015538x
   gnd: "118627775"
@@ -67,7 +95,19 @@ sources:
     - accessed: 2026-10-30
       property: P569
       wikidata: Q459041
+    - url: https://d-nb.info/gnd/118627775
+      source: gnd
+      accessed: 2026-10-31
+    - url: https://data.bnf.fr/ark:/12148/cb12015538x
+      source: bnf
+      accessed: 2026-10-31
   death:
     - accessed: 2026-10-30
       property: P570
       wikidata: Q459041
+    - url: https://d-nb.info/gnd/118627775
+      source: gnd
+      accessed: 2026-10-31
+    - url: https://data.bnf.fr/ark:/12148/cb12015538x
+      source: bnf
+      accessed: 2026-10-31

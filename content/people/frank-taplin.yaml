@@ -1,0 +1,29 @@
+public_id: 105774
+name: Frank Taplin
+given_name: Frank
+family_name: Taplin
+names: [Frank E. Taplin, Frank Elijah Taplin]
+kind: person
+occupations: [industrialist, patron of the arts]
+birth: 1915-06-22
+death: 2003-05-11
+wikidata_id: Q125649896
+metadata:
+  sources: [Wikidata Q125649896 (retrieved 2026-10-31)]
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q125649896
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q125649896
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q125649896
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q125649896

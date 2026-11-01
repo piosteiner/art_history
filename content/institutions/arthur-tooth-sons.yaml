@@ -1,0 +1,41 @@
+public_id: 105806
+name: Arthur Tooth & Sons
+names:
+  - Arthur Tooth & Sons London
+  - A. Tooth & Sons
+  - Arthur Tooth & Sons Ltd
+  - Arthur Tooth & Sons Paris
+  - Tooth & Sons, London
+  - Arthur Tooth and Sons
+  - lang: zh
+    role: translation
+    text: 亞瑟·圖斯父子畫廊
+kind: gallery
+founded: 1842
+place: london
+location: [-0.1315, 51.5084]
+wikidata_id: Q20876003
+metadata:
+  sources: [Wikidata Q20876003 (retrieved 2026-10-31)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/92/Arthur_Tooth_%26_Sons.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Arthur_Tooth_%26_Sons.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q20876003
+  place:
+    - accessed: 2026-10-31
+      property: P131
+      wikidata: Q20876003
+  founded:
+    - accessed: 2026-10-31
+      property: P571
+      wikidata: Q20876003
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q20876003

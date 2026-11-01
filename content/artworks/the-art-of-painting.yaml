@@ -101,12 +101,16 @@ provenance:
         source: khm-online-sammlung
         accessed: 2026-10-19
   - owner: institution/czernin-picture-gallery
+    co_owners: [person/jaromir-czernin]
     place: vienna
     sources:
       - url: https://www.khm.at/kunstwerke/die-malkunst-2574
         note: “Slg. Catharina Bolnes (Vermeers Witwe); 1676 ihrer Mutter, Maria Thins übergeben; Auktion Delft 15.3.1677; Nachlass Gottfried van Swieten, Wien; 1813 Rudolf Graf Czernin; Gräflich Czerninsche Galerie, Wien; 1940 A. Hitler; 1945 Collecting Point Munich; am 7.11.1946 dem Kunsthistorischen Museum übergeben; 1958 in die Sammlung aufgenommen;”
         source: khm-online-sammlung
         accessed: 2026-10-19
+      - accessed: 2026-10-31
+        property: P127
+        wikidata: Q588695
   - owner: person/adolf-hitler
     acquired: 1940
     method: purchase

@@ -42,6 +42,19 @@ death: 1878-01-09
 wikidata_id: Q168691
 metadata:
   sources: [Wikidata Q168691 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/turin
+    sources:
+      - accessed: 2026-10-31
+        property: P19
+        wikidata: Q168691
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-31
+        property: P20
+        wikidata: Q168691
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/VictorEmmanuel2_%283%29.jpg/1280px-VictorEmmanuel2_%283%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:VictorEmmanuel2_(3).jpg

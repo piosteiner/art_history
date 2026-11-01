@@ -20,6 +20,19 @@ death: 1925-05-12
 wikidata_id: Q731430
 metadata:
   sources: [Wikidata Q731430 (retrieved 2026-10-20)]
+relationships:
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-31
+        property: P20
+        wikidata: Q731430
+  - type: worked_in
+    to: institution/musee-rodin
+    sources:
+      - accessed: 2026-10-31
+        property: P108
+        wikidata: Q731430
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/4/4b/L%C3%A9once_b%C3%A9n%C3%A9dite.jpg
     source_url: https://commons.wikimedia.org/wiki/File:L%C3%A9once_b%C3%A9n%C3%A9dite.jpg

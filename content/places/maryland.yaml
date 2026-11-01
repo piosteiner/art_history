@@ -1,0 +1,16 @@
+public_id: 105825
+name: Maryland
+kind: region
+location: [-76.7, 39]
+wikidata_id: Q1391
+metadata:
+  sources: [Wikidata Q1391 (retrieved 2026-10-31)]
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q1391
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q1391

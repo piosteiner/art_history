@@ -2,9 +2,13 @@ public_id: 100731
 title_lang: fr
 title: Fleurs dans une coupe
 creator: paul-gauguin
-created: 1901
+created: c. 1899–1901
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
 materials: [oil paint, canvas]
-dimensions: [29, 46]
+dimensions: [31, 47.6]
+web_url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
 description_md: |-
   [Musée Historique Maurice Fabre](https://www.mauricefabre.com/peinture/fleur-dans-une-coupe)
   Guardian - Selling of the [[institution/blaquier-arrieta-collection]][[source/guardian-2026-blaquier-arrieta]]
@@ -17,22 +21,316 @@ images:
     license: Public domain
     credit: Paul Gauguin
 provenance:
+  - owner: person/maurice-fabre
+    acquired: 1904 or earlier
+    place: narbonne
+    label: probably from the artist through George-Daniel de Monfreid
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+        note: "Sotheby’s, provenance: “Maurice Fabre, Paris and Narbonne (acquired by 1904, probably from the artist through George-Daniel de Monfreid)”"
+        source: sothebys-n12368-lot-3
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1904"
+        place: brussels
+        number: "58"
+        document: "La Libre Esthétique: Exposition des peintres impressionnistes, Musées royaux des Beaux-Arts (as “Fleurs et fruits”)"
+  - owner: person/ambroise-vollard
+    role: dealer
+    acquired: c. 1904
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+        note: "Sotheby’s, provenance: “Ambroise Vollard, Paris (acquired from the above circa 1904-05)”"
+        source: sothebys-n12368-lot-3
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1905"
+        place: paris
+        document: Galerie Ambroise Vollard, Exposition Paul Gauguin
+        certainty: possible
+      - kind: exhibition
+        date: "1906"
+        place: paris
+        number: "66"
+        document: Salon d’Automne, Grand Palais (as “Nature morte”)
+  - owner: institution/galerie-miethke
+    role: dealer
+    acquired: 1906
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+        note: "Sotheby’s, provenance: “Galerie Miethke, Vienna (acquired from the above in 1906)”"
+        source: sothebys-n12368-lot-3
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1907"
+        place: vienna
+        number: "39"
+        document: Galerie Miethke, Paul Gauguin, 1848–1903 (as “Blumen u. Früchte”); then Budapest, Nemzeti Szalon, no. 84
+  - owner: person/adolf-kohner
+    acquired: c. 1907
+    ended: c. 1930
+    method: purchase
+    direct: true
+    place: budapest
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+        note: "Sotheby’s, provenance: “Baron Adolf Kohner, Budapest (acquired from the above circa 1907 and until circa January 1930)”"
+        source: sothebys-n12368-lot-3
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1910"
+        place: budapest
+        number: "21"
+        document: Művészház, Nemzetközi Impresszionista Kiállitás (as “Virágok”)
+  - owner: person/paul-rosenberg
+    role: dealer
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+        note: "Sotheby’s, provenance: “Paul Rosenberg, Paris”"
+        source: sothebys-n12368-lot-3
+        accessed: 2026-10-31
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1930
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+        note: "Sotheby’s, provenance: “Wildenstein & Co., Inc., New York (acquired from the above in 1930)”"
+        source: sothebys-n12368-lot-3
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1931"
+        place: paris
+        number: "17"
+        document: Galerie Le Portique, Paul Gauguin, peintures, sculptures (as “Nature morte”)
+      - kind: exhibition
+        date: "1935"
+        place: kansas-city
+        number: "27"
+        document: "One Hundred Years: French Painting, 1820–1920, William Rockhill Nelson Gallery; then Cleveland Museum of Art"
+      - kind: exhibition
+        date: "1936"
+        place: new-york-city
+        number: "42"
+        document: Wildenstein & Co., Paul Gauguin, 1848–1903; then Fogg Art Museum, Cambridge (no. 41), Baltimore Museum of Art (no. 27)
+      - kind: exhibition
+        date: "1938"
+        place: hartford
+        number: "60"
+        document: Wadsworth Atheneum, The Painters of Still Life
+      - kind: exhibition
+        date: "1938"
+        place: washington-d-c
+        number: "19"
+        document: Museum of Modern Art Gallery of Washington, Flowers and Fruits
+      - kind: exhibition
+        date: "1941"
+        place: los-angeles
+        number: "17"
+        document: Los Angeles County Museum, Aspects of French Painting from Cézanne to Picasso
+  - owner: person/mary-benjamin-rogers
+    acquired: 1943
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+        note: "Sotheby’s, provenance: “Mary Rogers (Mrs. Henry Huttleston Rogers Jr.), New York (acquired from the above in 1943)”"
+        source: sothebys-n12368-lot-3
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1946"
+        place: new-york-city
+        number: "37"
+        document: Wildenstein & Co., A Loan Exhibition of Paul Gauguin
+      - kind: exhibition
+        date: "1948"
+        place: new-york-city
+        number: "20"
+        document: Wildenstein & Co., Six Masters of Post-Impressionism
+  - owner: person/millicent-rogers
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+        note: "Sotheby’s, provenance: “Mary Millicent Abigail Rogers, United States (acquired by descent from the above)”"
+        source: sothebys-n12368-lot-3
+        accessed: 2026-10-31
+  - owner: person/nathan-cummings
+    acquired: 1951
+    method: purchase
+    direct: true
+    place: chicago
+    label: Mr. and Mrs. Nathan Cummings
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+        note: "Sotheby’s, provenance: “Mr. and Mrs. Nathan Cummings, Chicago (acquired from the above in 1951 and until at least 1973)”"
+        source: sothebys-n12368-lot-3
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1951"
+        place: new-york-city
+        number: "22"
+        document: Knoedler Galleries, Paintings from Three Private Collections
+      - kind: exhibition
+        date: "1955"
+        place: toronto
+        number: "10"
+        document: Art Gallery of Toronto, Nathan Cummings Collection
+      - kind: exhibition
+        date: "1956"
+        place: paris
+        number: "10"
+        document: Musée des Arts décoratifs, Collection Nathan Cummings; then Rome, Palazzo Venezia
+      - kind: exhibition
+        date: "1958"
+        number: "8"
+        document: Saint John, The New Brunswick Museum, The Nathan Cummings’ Collection
+      - kind: exhibition
+        date: "1960"
+        place: paris
+        number: "135"
+        document: Galerie Charpentier, Cent oeuvres de Gauguin
+      - kind: exhibition
+        date: "1960"
+        place: munich
+        number: "64"
+        document: Haus der Kunst, Paul Gauguin
+      - kind: exhibition
+        date: "1960"
+        place: vienna
+        number: "36"
+        document: Österreichische Galerie im Oberen Belvedere, Paul Gauguin, 1848–1903
+      - kind: exhibition
+        date: "1963"
+        place: dallas
+        number: "14"
+        document: Dallas Museum of Fine Arts, Gallery Gardens
+      - kind: exhibition
+        date: "1965"
+        place: minneapolis
+        document: Minneapolis Institute of Arts, Paintings from the Cummings Collection
+      - kind: exhibition
+        date: "1966"
+        place: new-york-city
+        document: Solomon R. Guggenheim Museum, Gauguin and the Decorative Style
+      - kind: exhibition
+        date: "1968"
+        place: new-london
+        document: Lyman Allyn Museum, Paintings and Sculpture from the Collection of Mr. and Mrs. Nathan Cummings
+      - kind: exhibition
+        date: "1970"
+        place: washington-d-c
+        number: "17"
+        document: National Gallery of Art, Selections from the Nathan Cummings Collection; then The Metropolitan Museum of Art
+      - kind: exhibition
+        date: "1973"
+        place: chicago
+        number: "22"
+        document: The Art Institute of Chicago, Major Works from the Collection of Nathan Cummings
+  - owner: person/eugene-thaw
+    role: dealer
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: E. V. Thaw & Co.
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+        note: "Sotheby’s, provenance: “E. V. Thaw & Co., New York (acquired from the above)”"
+        source: sothebys-n12368-lot-3
+        accessed: 2026-10-31
+  - owner: institution/acquavella-galleries
+    role: dealer
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+        note: "Sotheby’s, provenance: “Acquavella Galleries, New York (acquired from the above)”"
+        source: sothebys-n12368-lot-3
+        accessed: 2026-10-31
+  - owner: institution/alex-reid-lefevre
+    role: dealer
+    acquired: 1978
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+        note: "Sotheby’s, provenance: “The Lefevre Gallery (Alex Reid & Lefevre, Ltd.), London (acquired from the above in 1978)”"
+        source: sothebys-n12368-lot-3
+        accessed: 2026-10-31
   - owner: institution/blaquier-arrieta-collection
+    acquired: 1978
     ended: 2026-11-18
+    method: purchase
+    direct: true
+    place: buenos-aires
     label: Sotheby's New York
     certainty: possible
-    sources: [https://www.theguardian.com/artanddesign/2026/sep/30/vincent-van-gogh-paul-cezanne-claude-monet-blaquier-arrieta-collection-display-sothebys-sale]
+    sources:
+      - https://www.theguardian.com/artanddesign/2026/sep/30/vincent-van-gogh-paul-cezanne-claude-monet-blaquier-arrieta-collection-display-sothebys-sale
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+        note: "Sotheby’s, provenance: “Acquired from the above in 1978 by the present owners”"
+        source: sothebys-n12368-lot-3
+        accessed: 2026-10-31
     check_after: 2026-11-18
+numbers:
+  - number: "605"
+    source: wildenstein-1964
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+        note: "Sotheby’s, literature: “Georges Wildenstein, Gauguin, vol. I, Paris, 1964, no. 605, p. 257”"
+        source: sothebys-n12368-lot-3
+        accessed: 2026-10-31
+  - number: PGVYFW
+    source: wpi-gauguin-paintings-1891-1903
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+        note: "Sotheby’s, literature: “Wildenstein Plattner Institute, Inc., ed., “Fleurs dans une coupe, c. 1899-1901 (WPI Ref. No. PGVYFW)””"
+        source: sothebys-n12368-lot-3
+        accessed: 2026-10-31
 sources:
+  kind:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+      source: sothebys-n12368-lot-3
+      accessed: 2026-10-31
+  medium:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+      source: sothebys-n12368-lot-3
+      accessed: 2026-10-31
   created:
-    - accessed: 2026-10-18
-      property: P571
-      wikidata: Q111087070
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+      source: sothebys-n12368-lot-3
+      accessed: 2026-10-31
   creator:
     - accessed: 2026-10-18
       property: P170
       wikidata: Q111087070
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+      source: sothebys-n12368-lot-3
+      accessed: 2026-10-31
+  materials:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+      source: sothebys-n12368-lot-3
+      accessed: 2026-10-31
   dimensions:
-    - accessed: 2026-10-18
-      property: P2048
-      wikidata: Q111087070
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/fleurs-dans-une-coupe?locale=en
+      source: sothebys-n12368-lot-3
+      accessed: 2026-10-31

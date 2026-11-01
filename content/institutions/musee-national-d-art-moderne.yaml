@@ -30,6 +30,13 @@ website_url: http://www.centrepompidou.fr
 wikidata_id: Q1895953
 metadata:
   sources: [Wikidata Q1895953 (retrieved 2026-10-20)]
+relationships:
+  - type: located_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-31
+        property: P159
+        wikidata: Q1895953
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Centre_Georges_Pompidou_from_the_Tour_Montparnasse_2007.jpg/1280px-Centre_Georges_Pompidou_from_the_Tour_Montparnasse_2007.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Centre_Georges_Pompidou_from_the_Tour_Montparnasse_2007.jpg

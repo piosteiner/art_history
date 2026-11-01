@@ -1,0 +1,55 @@
+public_id: 105801
+name: Mary Lasker
+given_name: Mary
+family_name: Lasker
+names:
+  - kind: birth
+    lang: en
+    role: alternative
+    text: Mary Woodard Lasker
+  - Mary W. Lasker
+  - Mary Woodard
+  - Mrs. Albert D. Lasker
+  - lang: ja
+    role: translation
+    text: メアリー・ラスカー
+  - lang: zh
+    role: translation
+    text: 瑪麗·沃德·拉斯克
+  - lang: ru
+    role: translation
+    text: Мэри Ласкер
+kind: person
+occupations: [art dealer, women's rights activist, activist, philanthropist, art collector]
+birth: 1900-11-30
+death: 1994-02-21
+wikidata_id: Q436521
+metadata:
+  sources: [Wikidata Q436521 (retrieved 2026-10-31)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Lasker%2C_Mary._nlm_nlmuid-101441394.jpg/1280px-Lasker%2C_Mary._nlm_nlmuid-101441394.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lasker,_Mary._nlm_nlmuid-101441394.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "139587748"
+  lc: n85323247
+  ulan: "500448572"
+  viaf: "63003755"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q436521
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q436521
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q436521
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q436521

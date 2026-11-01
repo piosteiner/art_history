@@ -16,6 +16,37 @@ death: 2014-05-06
 wikidata_id: Q538534
 metadata:
   sources: [Wikidata Q538534 (retrieved 2026-10-08)]
+relationships:
+  - type: nationality
+    to: polity/austria
+    sources:
+      - accessed: 2026-10-31
+        property: P27
+        wikidata: Q538534
+  - type: died_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-31
+        property: P20
+        wikidata: Q538534
+  - type: worked_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-10-31
+        property: P937
+        wikidata: Q538534
+  - type: worked_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-31
+        property: P937
+        wikidata: Q538534
+  - type: studied_at
+    to: institution/akademie-der-bildenden-kunste-wien
+    sources:
+      - accessed: 2026-10-31
+        property: P69
+        wikidata: Q538534
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/1974_Avenue_B_Foto_ML_4.tif/lossy-page1-1280px-1974_Avenue_B_Foto_ML_4.tif.jpg
     source_url: https://commons.wikimedia.org/wiki/File:1974_Avenue_B_Foto_ML_4.tif

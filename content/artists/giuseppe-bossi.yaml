@@ -15,6 +15,31 @@ death: 1815-12-15
 wikidata_id: Q428638
 metadata:
   sources: [Wikidata Q428638 (retrieved 2026-10-20)]
+relationships:
+  - type: died_in
+    to: place/milan
+    sources:
+      - accessed: 2026-10-31
+        property: P20
+        wikidata: Q428638
+  - type: worked_in
+    to: institution/brera-academy
+    sources:
+      - accessed: 2026-10-31
+        property: P108
+        wikidata: Q428638
+  - type: worked_in
+    to: place/milan
+    sources:
+      - accessed: 2026-10-31
+        property: P937
+        wikidata: Q428638
+  - type: studied_at
+    to: institution/brera-academy
+    sources:
+      - accessed: 2026-10-31
+        property: P69
+        wikidata: Q428638
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/IMG_4010_-_Milano%2C_Palazzo_di_Brera_-_Bossi%2C_Giuseppe_-_Foto_Giovanni_Dall%27Orto19-jan_2007.jpg/1280px-IMG_4010_-_Milano%2C_Palazzo_di_Brera_-_Bossi%2C_Giuseppe_-_Foto_Giovanni_Dall%27Orto19-jan_2007.jpg
     source_url: https://commons.wikimedia.org/wiki/File:IMG_4010_-_Milano,_Palazzo_di_Brera_-_Bossi,_Giuseppe_-_Foto_Giovanni_Dall%27Orto19-jan_2007.jpg

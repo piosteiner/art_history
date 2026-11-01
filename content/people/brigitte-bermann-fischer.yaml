@@ -1,0 +1,35 @@
+public_id: 105786
+name: Brigitte Bermann Fischer
+given_name: Brigitte Bermann
+family_name: Fischer
+names: [Brigitte Bermann-Fischer]
+kind: person
+occupations: [publisher]
+birth: 1905-03-05
+death: 1991-05-28
+wikidata_id: Q59628896
+metadata:
+  sources: [Wikidata Q59628896 (retrieved 2026-10-31)]
+identifiers:
+  bnf: 12207750z
+  gnd: "118533223"
+  idref: "030717426"
+  lc: n78096685
+  viaf: "46809496"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q59628896
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q59628896
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q59628896
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q59628896

@@ -39,6 +39,43 @@ death: 1670-05-23
 wikidata_id: Q314558
 metadata:
   sources: [Wikidata Q314558 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-31
+        property: P19
+        wikidata: Q314558
+  - type: died_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-31
+        property: P20
+        wikidata: Q314558
+  - type: child_of
+    to: person/cosimo-ii-de-medici
+    sources:
+      - accessed: 2026-10-31
+        property: P22
+        wikidata: Q314558
+  - type: sibling_of
+    to: person/gian-carlo-de-medici
+    sources:
+      - accessed: 2026-10-31
+        property: P3373
+        wikidata: Q314558
+  - type: sibling_of
+    to: person/leopoldo-de-medici
+    sources:
+      - accessed: 2026-10-31
+        property: P3373
+        wikidata: Q314558
+  - type: married_to
+    to: person/vittoria-della-rovere
+    sources:
+      - accessed: 2026-10-31
+        property: P26
+        wikidata: Q314558
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Justus_Sustermans%2C_Ferdinando_II_de%27_Medici%2C_1653-54_-FG.jpg/1280px-Justus_Sustermans%2C_Ferdinando_II_de%27_Medici%2C_1653-54_-FG.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Justus_Sustermans,_Ferdinando_II_de%27_Medici,_1653-54_-FG.jpg

@@ -10,6 +10,19 @@ website_url: http://www.h-s-a.de/index.php#/start
 wikidata_id: Q1618868
 metadata:
   sources: [Wikidata Q1618868 (retrieved 2026-10-30)]
+relationships:
+  - type: located_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-10-31
+        property: P159
+        wikidata: Q1618868
+  - type: located_in
+    to: place/munich
+    sources:
+      - accessed: 2026-10-31
+        property: P159
+        wikidata: Q1618868
 identifiers:
   gnd: 2114729-2
 sources:

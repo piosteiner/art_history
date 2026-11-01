@@ -9,6 +9,31 @@ biography_md: The Guardian Article[[source/guardian-2026-de-kooning-rijksmuseum]
 wikidata_id: Q132305
 metadata:
   sources: [Wikidata Q132305 (retrieved 2026-10-08)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-10-31
+        property: P27
+        wikidata: Q132305
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-10-31
+        property: P27
+        wikidata: Q132305
+  - type: born_in
+    to: place/rotterdam
+    sources:
+      - accessed: 2026-10-31
+        property: P19
+        wikidata: Q132305
+  - type: worked_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-10-31
+        property: P937
+        wikidata: Q132305
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/0/09/Willem_de_Kooning_in_his_studio.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Willem_de_Kooning_in_his_studio.jpg

@@ -13,6 +13,13 @@ death: 1936-04-30
 wikidata_id: Q762671
 metadata:
   sources: [Wikidata Q762671 (retrieved 2026-10-20)]
+relationships:
+  - type: married_to
+    to: person/serena-lederer
+    sources:
+      - accessed: 2026-10-31
+        property: P26
+        wikidata: Q2272284
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/August_Lederer%2C_by_Egon_Schiele.jpg/1280px-August_Lederer%2C_by_Egon_Schiele.jpg
     source_url: https://commons.wikimedia.org/wiki/File:August_Lederer,_by_Egon_Schiele.jpg

@@ -1,0 +1,50 @@
+public_id: 105784
+name: Samuel Fischer
+given_name: Samuel
+family_name: Fischer
+names:
+  - Samuel von Fischer
+  - lang: ja
+    role: translation
+    text: サミュエル・フィッシャー
+  - lang: zh
+    role: translation
+    text: 薩繆爾·費舍爾
+  - lang: ru
+    role: translation
+    text: Самуэль Фишер
+kind: person
+occupations: [publisher, art collector]
+birth: 1859-12-24
+death: 1934-10-15
+wikidata_id: Q95541
+metadata:
+  sources: [Wikidata Q95541 (retrieved 2026-10-31)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Samuel_Fischer_1915_-_Oelgemaelde_von_Max_Liebermann.JPG/1280px-Samuel_Fischer_1915_-_Oelgemaelde_von_Max_Liebermann.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Samuel_Fischer_1915_-_Oelgemaelde_von_Max_Liebermann.JPG
+    license: Public domain
+    credit: Max Liebermann
+identifiers:
+  bnf: 12924538f
+  gnd: "118691406"
+  idref: "142290653"
+  lc: n85122799
+  viaf: "76445177"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q95541
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q95541
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q95541
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q95541

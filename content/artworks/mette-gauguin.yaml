@@ -98,7 +98,12 @@ numbers:
   - number: "170"
     institution: foundation-e-g-buhrle-collection
   - number: "65"
-    label: Wildenstein Gauguin (catalogue raisonné)
+    source: wildenstein-2001
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+        note: "Kunsthaus Zürich, Sammlung online: “Wildenstein 2001, No. 65.”"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-31
 sources:
   kind:
     - url: https://collection.kunsthaus.ch/de/collection/item/707958/

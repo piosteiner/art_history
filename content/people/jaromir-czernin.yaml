@@ -10,6 +10,19 @@ death: 1966-02-01
 wikidata_id: Q13736441
 metadata:
   sources: [Wikidata Q13736441 (retrieved 2026-10-19)]
+relationships:
+  - type: born_in
+    to: place/prague
+    sources:
+      - accessed: 2026-10-31
+        property: P19
+        wikidata: Q13736441
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-10-31
+        property: P20
+        wikidata: Q13736441
 identifiers:
   gnd: "1049857143"
   viaf: "305807461"

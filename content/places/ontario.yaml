@@ -1,0 +1,16 @@
+public_id: 105829
+name: Ontario
+kind: site
+location: [-85, 50]
+wikidata_id: Q1904
+metadata:
+  sources: [Wikidata Q1904 (retrieved 2026-10-31)]
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q1904
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q1904

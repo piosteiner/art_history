@@ -1,0 +1,45 @@
+public_id: 105830
+name: Toronto
+names:
+  - City of Toronto
+  - The Six
+  - T-O
+  - The 416
+  - Hogtown
+  - Toronto, Ontario
+  - Toronto, ON
+  - Toronto, Canada
+  - lang: ja
+    role: translation
+    text: トロント
+  - lang: zh
+    role: translation
+    text: 多伦多
+  - lang: ko
+    role: translation
+    text: 토론토
+  - lang: ru
+    role: translation
+    text: Торонто
+kind: settlement
+parent: ontario
+country_code: CA
+location: [-79.38667, 43.67028]
+wikidata_id: Q172
+metadata:
+  sources: [Wikidata Q172 (retrieved 2026-10-31)]
+identifiers:
+  gnd: 4060459-7
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q172
+  parent:
+    - accessed: 2026-10-31
+      property: P131
+      wikidata: Q172
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q172

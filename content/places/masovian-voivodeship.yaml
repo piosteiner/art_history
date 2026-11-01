@@ -1,0 +1,16 @@
+public_id: 105819
+name: Masovian Voivodeship
+kind: site
+location: [21.00167, 52.24278]
+wikidata_id: Q54169
+metadata:
+  sources: [Wikidata Q54169 (retrieved 2026-10-31)]
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q54169
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q54169

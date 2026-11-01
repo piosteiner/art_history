@@ -1,0 +1,54 @@
+public_id: 105826
+name: Baltimore
+names:
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Charm City
+  - Baltimore, MD
+  - Baltimore, Maryland
+  - Baltimore City
+  - Bmore
+  - City of Baltimore
+  - B'more
+  - Baltimore (Md.)
+  - Balt.
+  - BAL
+  - B more
+  - lang: it
+    role: translation
+    text: Baltimora
+  - lang: ja
+    role: translation
+    text: ボルティモア
+  - lang: zh
+    role: translation
+    text: 巴爾的摩
+  - lang: ko
+    role: translation
+    text: 볼티모어
+  - lang: ru
+    role: translation
+    text: Балтимор
+kind: settlement
+parent: maryland
+country_code: US
+location: [-76.615, 39.28639]
+wikidata_id: Q5092
+metadata:
+  sources: [Wikidata Q5092 (retrieved 2026-10-31)]
+identifiers:
+  gnd: 4004380-0
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q5092
+  parent:
+    - accessed: 2026-10-31
+      property: P131
+      wikidata: Q5092
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q5092

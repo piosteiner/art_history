@@ -1,0 +1,150 @@
+public_id: 106082
+title_lang: fr
+title: Nature morte à la cruche bleue
+creator: maurice-de-vlaminck
+created: 1906
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [47, 55.5]
+web_url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maurice-de-vlaminck-nature-morte-a-la-cruche-bleue?locale=en
+description_md: Signed “Vlaminck” lower left. A still life of Vlaminck’s Fauve years [[source/sothebys-n12368-lot-1]].
+provenance:
+  - owner: person/etienne-bignou
+    role: dealer
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maurice-de-vlaminck-nature-morte-a-la-cruche-bleue?locale=en
+        note: "Sotheby’s, provenance: “Etienne Bignou, Paris”"
+        source: sothebys-n12368-lot-1
+        accessed: 2026-10-31
+  - owner_label: Private collection, Paris
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maurice-de-vlaminck-nature-morte-a-la-cruche-bleue?locale=en
+        note: "Sotheby’s, provenance: “Private Collection, Paris”"
+        source: sothebys-n12368-lot-1
+        accessed: 2026-10-31
+  - owner: institution/galerie-rene-drouet
+    role: dealer
+    place: paris
+    certainty: possible
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maurice-de-vlaminck-nature-morte-a-la-cruche-bleue?locale=en
+        note: "Sotheby’s, provenance: “(possibly) Galerie René Drouet, Paris”"
+        source: sothebys-n12368-lot-1
+        accessed: 2026-10-31
+  - owner: institution/perls-galleries
+    role: dealer
+    acquired: 1953 or later
+    place: new-york-city
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maurice-de-vlaminck-nature-morte-a-la-cruche-bleue?locale=en
+        note: "Sotheby’s, provenance: “Perls Gallery, New York (acquired after 1953)”"
+        source: sothebys-n12368-lot-1
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1968"
+        place: new-york-city
+        document: Stephen Hahn Gallery, Still Lives
+        certainty: possible
+  - owner: institution/the-pictet-group
+    place: geneva
+    label: Pictet & Cie
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maurice-de-vlaminck-nature-morte-a-la-cruche-bleue?locale=en
+        note: "Sotheby’s, provenance: “Pictet & Cie, Geneva”"
+        source: sothebys-n12368-lot-1
+        accessed: 2026-10-31
+  - owner: institution/alex-reid-lefevre
+    role: dealer
+    acquired: 1968
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maurice-de-vlaminck-nature-morte-a-la-cruche-bleue?locale=en
+        note: "Sotheby’s, provenance: “The Lefevre Gallery (Alex Reid & Lefevre, Ltd.), London (acquired from the above in 1968)”"
+        source: sothebys-n12368-lot-1
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1969"
+        place: london
+        number: "17"
+        document: The Lefevre Gallery, XIX & XX Century French Paintings
+  - owner: person/frank-taplin
+    acquired: 1970
+    method: purchase
+    direct: true
+    place: princeton
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maurice-de-vlaminck-nature-morte-a-la-cruche-bleue?locale=en
+        note: "Sotheby’s, provenance: “Frank E. Taplin, Jr., Princeton (acquired from the above in 1970)”"
+        source: sothebys-n12368-lot-1
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1972"
+        place: princeton
+        number: "83"
+        document: Princeton University Art Museum, European and American Art from Princeton Alumni Collections
+  - owner: institution/alex-reid-lefevre
+    role: dealer
+    acquired: 1988
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maurice-de-vlaminck-nature-morte-a-la-cruche-bleue?locale=en
+        note: "Sotheby’s, provenance: “The Lefevre Gallery (Alex Reid & Lefevre, Ltd.), London (acquired from the above in 1988)”"
+        source: sothebys-n12368-lot-1
+        accessed: 2026-10-31
+  - owner: institution/blaquier-arrieta-collection
+    acquired: 1988
+    ended: 2026-11-18
+    method: purchase
+    direct: true
+    place: buenos-aires
+    label: Sotheby’s New York
+    certainty: possible
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maurice-de-vlaminck-nature-morte-a-la-cruche-bleue?locale=en
+        note: "Sotheby’s, provenance: “Acquired from the above in 1988 by the present owners”"
+        source: sothebys-n12368-lot-1
+        accessed: 2026-10-31
+    check_after: 2026-11-18
+numbers:
+  - number: "167"
+    source: valles-bled-2008
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maurice-de-vlaminck-nature-morte-a-la-cruche-bleue?locale=en
+        note: "Sotheby’s, literature: “Maïthé Vallès-Bled, Vlaminck: Catalogue critique des peintures et céramiques de la période fauve, 1900-1907, Paris, 2008, no. 167, p. 372”"
+        source: sothebys-n12368-lot-1
+        accessed: 2026-10-31
+sources:
+  kind:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maurice-de-vlaminck-nature-morte-a-la-cruche-bleue?locale=en
+      source: sothebys-n12368-lot-1
+      accessed: 2026-10-31
+  medium:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maurice-de-vlaminck-nature-morte-a-la-cruche-bleue?locale=en
+      source: sothebys-n12368-lot-1
+      accessed: 2026-10-31
+  created:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maurice-de-vlaminck-nature-morte-a-la-cruche-bleue?locale=en
+      source: sothebys-n12368-lot-1
+      accessed: 2026-10-31
+  creator:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maurice-de-vlaminck-nature-morte-a-la-cruche-bleue?locale=en
+      source: sothebys-n12368-lot-1
+      accessed: 2026-10-31
+  materials:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maurice-de-vlaminck-nature-morte-a-la-cruche-bleue?locale=en
+      source: sothebys-n12368-lot-1
+      accessed: 2026-10-31
+  dimensions:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maurice-de-vlaminck-nature-morte-a-la-cruche-bleue?locale=en
+      source: sothebys-n12368-lot-1
+      accessed: 2026-10-31

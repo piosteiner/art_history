@@ -190,7 +190,12 @@ numbers:
   - number: "47"
     institution: foundation-e-g-buhrle-collection
   - number: "624"
-    label: Wildenstein Gauguin (catalogue raisonné)
+    source: wildenstein-1964
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+        note: "Kunsthaus Zürich, Sammlung online: “Werkverzeichnis: Wildenstein Gauguin 624”"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-31
 sources:
   kind:
     - url: https://collection.kunsthaus.ch/de/collection/item/512960/

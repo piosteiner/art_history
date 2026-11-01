@@ -1,0 +1,44 @@
+public_id: 105791
+name: Maurice Guibert
+given_name: Maurice
+family_name: Guibert
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Paul Maurice Guibert
+kind: person
+occupations: [photographer]
+birth: 1856-08-12
+death: 1922-01-13
+wikidata_id: Q18421911
+metadata:
+  sources: [Wikidata Q18421911 (retrieved 2026-10-31)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2c/Maurice_Guibert.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Maurice_Guibert.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 14897313t
+  gnd: "1078130868"
+  rkd: "396806"
+  ulan: "500467761"
+  viaf: "24869920"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q18421911
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q18421911
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q18421911
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q18421911

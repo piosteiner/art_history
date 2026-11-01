@@ -9,6 +9,13 @@ website_url: https://www.guggenheim.org/collection-online
 wikidata_id: Q201469
 metadata:
   sources: [Wikidata Q201469 (retrieved 2026-10-07)]
+relationships:
+  - type: located_in
+    to: place/manhattan
+    sources:
+      - accessed: 2026-10-31
+        property: P131
+        wikidata: Q201469
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/NYC_-_Guggenheim_Museum.jpg/1280px-NYC_-_Guggenheim_Museum.jpg
     source_url: https://commons.wikimedia.org/wiki/File:NYC_-_Guggenheim_Museum.jpg

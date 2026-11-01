@@ -11,6 +11,18 @@ description_md: Her collection and her house became the [[institution/mcnay-art-
 wikidata_id: Q6765269
 metadata:
   sources: [Wikidata Q6765269 (retrieved 2026-10-08)]
+relationships:
+  - type: died_in
+    to: place/san-antonio
+    sources:
+      - accessed: 2026-10-31
+        property: P20
+        wikidata: Q6765269
+  - type: founded
+    to: institution/mcnay-art-museum
+    sources:
+      - source: mcnay-founder
+        accessed: 2026-10-31
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/e0/Marion_Koogler_McNay.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Marion_Koogler_McNay.jpg

@@ -1,0 +1,16 @@
+public_id: 105837
+name: Southeastern Connecticut Planning Region
+kind: site
+location: [-72.09, 41.49]
+wikidata_id: Q117287053
+metadata:
+  sources: [Wikidata Q117287053 (retrieved 2026-10-31)]
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q117287053
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q117287053

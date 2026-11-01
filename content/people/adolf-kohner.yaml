@@ -1,0 +1,38 @@
+public_id: 105794
+name: Adolf Kohner
+given_name: Adolf
+family_name: Kohner
+names: [Baron Adolf Kohner Szaszberek, Baron Kohner]
+kind: person
+occupations: [entrepreneur, art collector, patron of the arts]
+birth: 1866-04-26
+death: 1937-01-30
+wikidata_id: Q1114988
+metadata:
+  sources: [Wikidata Q1114988 (retrieved 2026-10-31)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/08/KohnerAdolf.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:KohnerAdolf.jpg
+    license: Public domain
+    credit: Fényes Adolf
+identifiers:
+  gnd: "1327681463"
+  lc: no2019075660
+  viaf: "908155919064439730008"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q1114988
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q1114988
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q1114988
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q1114988

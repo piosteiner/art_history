@@ -25,6 +25,12 @@ relationships:
       - accessed: 2026-10-21
         property: P112
         wikidata: Q95569
+  - type: child_of
+    to: person/princess-sophie-of-bavaria
+    sources:
+      - accessed: 2026-10-31
+        property: P40
+        wikidata: Q57653
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Franz_Joseph_I_of_Austria.1910_%28cropped%29.jpg/1280px-Franz_Joseph_I_of_Austria.1910_%28cropped%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Franz_Joseph_I_of_Austria.1910_(cropped).jpg

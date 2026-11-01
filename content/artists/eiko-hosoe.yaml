@@ -17,6 +17,13 @@ death: 2024-09-16
 wikidata_id: Q2564831
 metadata:
   sources: [Wikidata Q2564831 (retrieved 2026-10-05)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-10-31
+        property: P27
+        wikidata: Q2564831
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/a/aa/Toshihiro_Hosoe_cropped_1_Toshihiro_Hosoe_201011.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Toshihiro_Hosoe_cropped_1_Toshihiro_Hosoe_201011.jpg

@@ -1,0 +1,51 @@
+public_id: 105779
+name: Paul Guillaume
+given_name: Paul
+family_name: Guillaume
+names:
+  - lang: zh
+    role: translation
+    text: 保罗·纪尧姆
+  - lang: ko
+    role: translation
+    text: 폴 기욤
+  - lang: ru
+    role: translation
+    text: Пол Гийом
+kind: person
+occupations: [art collector, art dealer, art critic, merchant]
+birth: 1891-11-28
+death: 1934-10-01
+wikidata_id: Q726881
+metadata:
+  sources: [Wikidata Q726881 (retrieved 2026-10-31)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Amedeo_Modigliani_-_Paul_Guillaume%2C_Novo_Pilota_-_Google_Art_Project.jpg/1280px-Amedeo_Modigliani_-_Paul_Guillaume%2C_Novo_Pilota_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Amedeo_Modigliani_-_Paul_Guillaume,_Novo_Pilota_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Amedeo Modigliani
+identifiers:
+  bnf: 12379316s
+  gnd: 11911349X
+  idref: "032434073"
+  lc: n81128530
+  rkd: "445872"
+  ulan: "500318943"
+  viaf: "41920622"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q726881
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q726881
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q726881
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q726881

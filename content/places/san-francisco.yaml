@@ -1,0 +1,54 @@
+public_id: 105834
+name: San Francisco
+names:
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Frisco
+  - San Francisco, California
+  - The City by the Bay
+  - SF
+  - SFO
+  - The Golden City
+  - Paris of the West
+  - Baghdad by the Bay
+  - San Francisco County
+  - San Francisco County, California
+  - San Fran
+  - City and County of San Francisco
+  - San Francisco, CA
+  - San Francisco, Calif.
+  - lang: ja
+    role: translation
+    text: サンフランシスコ
+  - lang: zh
+    role: translation
+    text: 舊金山
+  - lang: ko
+    role: translation
+    text: 샌프란시스코
+  - lang: ru
+    role: translation
+    text: Сан-Франциско
+kind: settlement
+parent: california
+country_code: US
+location: [-122.41944, 37.775]
+wikidata_id: Q62
+metadata:
+  sources: [Wikidata Q62 (retrieved 2026-10-31)]
+identifiers:
+  gnd: 4051520-5
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q62
+  parent:
+    - accessed: 2026-10-31
+      property: P131
+      wikidata: Q62
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q62

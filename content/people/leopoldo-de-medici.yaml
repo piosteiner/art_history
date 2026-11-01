@@ -34,6 +34,25 @@ death: 1675-11-10
 wikidata_id: Q968920
 metadata:
   sources: [Wikidata Q968920 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-31
+        property: P19
+        wikidata: Q968920
+  - type: died_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-31
+        property: P20
+        wikidata: Q968920
+  - type: child_of
+    to: person/cosimo-ii-de-medici
+    sources:
+      - accessed: 2026-10-31
+        property: P22
+        wikidata: Q968920
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Justus_Sustermans_-_Portrait_of_Cardinal_Leopoldo_de%27_Medici2.jpg/1280px-Justus_Sustermans_-_Portrait_of_Cardinal_Leopoldo_de%27_Medici2.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Justus_Sustermans_-_Portrait_of_Cardinal_Leopoldo_de%27_Medici2.jpg

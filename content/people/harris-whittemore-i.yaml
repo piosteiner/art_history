@@ -1,0 +1,40 @@
+public_id: 105789
+name: Harris Whittemore I
+given_name: Harris, I
+family_name: Whittemore
+names:
+  - kind: birth
+    lang: en
+    role: alternative
+    text: Harris Arthur Whittemore
+  - Harris Whittemore
+  - Harris Whittemore Sr.
+  - Harris G. Whittemore
+kind: person
+occupations: [businessperson, art collector]
+birth: 1864-11-25
+death: 1927-11-29
+wikidata_id: Q76008035
+metadata:
+  sources: [Wikidata Q76008035 (retrieved 2026-10-31)]
+identifiers:
+  lc: no2005005958
+  rkd: "451390"
+  viaf: "24325055"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q76008035
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q76008035
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q76008035
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q76008035

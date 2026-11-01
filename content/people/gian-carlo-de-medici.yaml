@@ -29,6 +29,13 @@ death: 1663-01-22
 wikidata_id: Q1316745
 metadata:
   sources: [Wikidata Q1316745 (retrieved 2026-10-20)]
+relationships:
+  - type: sibling_of
+    to: person/leopoldo-de-medici
+    sources:
+      - accessed: 2026-10-31
+        property: P3373
+        wikidata: Q968920
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/3/30/Giovan_Carlo_de%27_Medici%2C_il_volterrano_%28palatine_gallery%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Giovan_Carlo_de%27_Medici,_il_volterrano_(palatine_gallery).jpg

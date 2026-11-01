@@ -1,9 +1,14 @@
 public_id: 100704
+title_lang: fr
 title: La Place du Théâtre-Français et l’avenue de l’Opéra, soleil d’après-midi en hiver
 creator: camille-pissarro
 created: 1898
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
 dimensions: [74.4, 92.5]
 web_url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+description_md: "Signed “C. Pissarro” and dated “1898.” lower right. One of the views Pissarro painted in the winter of 1897–98 from a room of the Grand Hôtel du Louvre [[source/sothebys-n12368-lot-10]]. Its provenance before the [[institution/blaquier-arrieta-collection]] is open: Sotheby’s page gives that of lot 4."
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Camille_Pissarro_-_La_Place_du_Th%C3%A9%C3%A2tre-Fran%C3%A7ais_et_l%E2%80%99avenue_de_l%E2%80%99Op%C3%A9ra%2C_soleil_d%E2%80%99apr%C3%A8s-midi_en_hiver.jpg/1280px-Camille_Pissarro_-_La_Place_du_Th%C3%A9%C3%A2tre-Fran%C3%A7ais_et_l%E2%80%99avenue_de_l%E2%80%99Op%C3%A9ra%2C_soleil_d%E2%80%99apr%C3%A8s-midi_en_hiver.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Camille_Pissarro_-_La_Place_du_Th%C3%A9%C3%A2tre-Fran%C3%A7ais_et_l%E2%80%99avenue_de_l%E2%80%99Op%C3%A9ra,_soleil_d%E2%80%99apr%C3%A8s-midi_en_hiver.jpg
@@ -12,22 +17,44 @@ images:
 provenance:
   - owner: institution/blaquier-arrieta-collection
     ended: 2026-11-18
+    place: buenos-aires
     label: Sotheby's New York
     certainty: possible
     check_after: 2026-11-18
 sources:
+  kind:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+      source: sothebys-n12368-lot-10
+      accessed: 2026-10-31
+  medium:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+      source: sothebys-n12368-lot-10
+      accessed: 2026-10-31
   created:
     - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
       source: sothebys-com
       accessed: 2026-10-18
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+      source: sothebys-n12368-lot-10
+      accessed: 2026-10-31
   creator:
     - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
       source: sothebys-com
       accessed: 2026-10-18
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+      source: sothebys-n12368-lot-10
+      accessed: 2026-10-31
+  materials:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+      source: sothebys-n12368-lot-10
+      accessed: 2026-10-31
   dimensions:
     - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
       source: sothebys-com
       accessed: 2026-10-18
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+      source: sothebys-n12368-lot-10
+      accessed: 2026-10-31
   title_status:
     - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
       source: sothebys-com

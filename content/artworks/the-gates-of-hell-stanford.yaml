@@ -20,6 +20,10 @@ provenance:
     place: saint-remy-les-chevreuse
     sources:
       - source: cantor-gates-of-hell-1985-86
+  - owner: person/b-gerald-cantor
+    sources:
+      - source: cantor-gates-of-hell-1985-86
+        accessed: 2026-10-31
   - owner: institution/cantor-arts-center
     acquired: 1985
     method: gift

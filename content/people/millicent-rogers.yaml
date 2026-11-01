@@ -1,0 +1,48 @@
+public_id: 105796
+name: Millicent Rogers
+given_name: Millicent
+family_name: Rogers
+names:
+  - kind: birth
+    lang: en
+    role: alternative
+    text: Mary Millicent Abigail Rogers
+  - Mary Millicent Rogers
+  - Millicent Huddleston Rogers
+  - Millicent Rogers Salm
+  - Millicent Rogers Balcom
+kind: person
+occupations: [art collector, socialite, jewelry designer, activist, collector]
+birth: 1902-02-01
+death: 1953-01-01
+wikidata_id: Q6859560
+metadata:
+  sources: [Wikidata Q6859560 (retrieved 2026-10-31)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d5/Millicent_Rogers_1919.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Millicent_Rogers_1919.jpg
+    license: Public domain
+    credit: Charlotte Fairchild
+identifiers:
+  gnd: "131990063"
+  idref: "113606761"
+  lc: n2005075254
+  ulan: "500063078"
+  viaf: "96110948"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q6859560
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q6859560
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q6859560
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q6859560

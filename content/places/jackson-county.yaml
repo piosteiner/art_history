@@ -1,0 +1,16 @@
+public_id: 105821
+name: Jackson County
+kind: site
+location: [-94.34, 39.01]
+wikidata_id: Q127238
+metadata:
+  sources: [Wikidata Q127238 (retrieved 2026-10-31)]
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q127238
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q127238

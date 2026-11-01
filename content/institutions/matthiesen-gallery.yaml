@@ -1,0 +1,17 @@
+public_id: 105808
+name: Matthiesen Gallery
+names: [Galerie Matthiesen]
+kind: gallery
+founded: 1938
+wikidata_id: Q103945084
+metadata:
+  sources: [Wikidata Q103945084 (retrieved 2026-10-31)]
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q103945084
+  founded:
+    - accessed: 2026-10-31
+      property: P571
+      wikidata: Q103945084

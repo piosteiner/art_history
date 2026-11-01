@@ -1,0 +1,36 @@
+public_id: 105805
+name: Acquavella Galleries
+names:
+  - lang: ru
+    role: translation
+    text: Галереи Аквавелла
+kind: gallery
+founded: 1921
+place: new-york-city
+location: [-73.9626, 40.7764]
+website_url: https://www.acquavellagalleries.com/
+wikidata_id: Q4674763
+metadata:
+  sources: [Wikidata Q4674763 (retrieved 2026-10-31)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Acquavella_Galleries_18_E79_jeh.jpg/1280px-Acquavella_Galleries_18_E79_jeh.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Acquavella_Galleries_18_E79_jeh.jpg
+    license: CC0
+    credit: Jim.henderson
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q4674763
+  place:
+    - accessed: 2026-10-31
+      property: P131
+      wikidata: Q4674763
+  founded:
+    - accessed: 2026-10-31
+      property: P571
+      wikidata: Q4674763
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q4674763

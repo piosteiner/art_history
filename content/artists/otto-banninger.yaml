@@ -8,6 +8,31 @@ death: 1973-05-15
 wikidata_id: Q15429125
 metadata:
   sources: [Wikidata Q15429125 (retrieved 2026-10-07)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-10-31
+        property: P27
+        wikidata: Q15429125
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-10-31
+        property: P19
+        wikidata: Q15429125
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-10-31
+        property: P20
+        wikidata: Q15429125
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-31
+        property: P937
+        wikidata: Q15429125
 sources:
   birth:
     - accessed: 2026-10-07

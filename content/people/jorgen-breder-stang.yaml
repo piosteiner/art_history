@@ -1,0 +1,37 @@
+public_id: 105778
+name: Jørgen Breder Stang
+given_name: Jørgen Breder
+family_name: Stang
+kind: person
+occupations: [art collector, businessperson, ship-owner]
+birth: 1874-05-24
+death: 1950-11-25
+wikidata_id: Q11979686
+metadata:
+  sources: [Wikidata Q11979686 (retrieved 2026-10-31)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/21/J%C3%B8rgen_Breder_Stang_%281943%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:J%C3%B8rgen_Breder_Stang_(1943).jpg
+    license: CC BY-SA 3.0
+    credit: Ernest Rude
+identifiers:
+  gnd: "1279056266"
+  lc: no2024013994
+  viaf: "3430161938098939870004"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q11979686
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q11979686
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q11979686
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q11979686

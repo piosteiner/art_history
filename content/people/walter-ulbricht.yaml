@@ -26,6 +26,19 @@ death: 1973-08-01
 wikidata_id: Q2628
 metadata:
   sources: [Wikidata Q2628 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/east-germany
+    sources:
+      - accessed: 2026-10-31
+        property: P27
+        wikidata: Q2628
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-10-31
+        property: P937
+        wikidata: Q2628
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/1f/Bundesarchiv_Bild_183-J1231-1002-002_Walter_Ulbricht%2C_Neujahrsansprache.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-J1231-1002-002_Walter_Ulbricht,_Neujahrsansprache.jpg

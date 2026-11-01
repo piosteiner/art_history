@@ -1,0 +1,16 @@
+public_id: 105835
+name: Hennepin County
+kind: site
+location: [-93.26667, 44.97583]
+wikidata_id: Q486229
+metadata:
+  sources: [Wikidata Q486229 (retrieved 2026-10-31)]
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q486229
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q486229

@@ -1,0 +1,40 @@
+public_id: 105818
+name: Pont-l'Évêque
+names:
+  - Pont-Chartier
+  - Pont-Châlier
+  - Pont-Libre
+  - lang: de
+    role: translation
+    text: Pont-l’Évêque
+  - lang: ja
+    role: translation
+    text: ポン＝レヴェック
+  - lang: zh
+    role: translation
+    text: 蓬萊韋克
+  - lang: ru
+    role: translation
+    text: Пон-л’Эвек
+kind: settlement
+parent: arrondissement-of-lisieux
+country_code: FR
+location: [0.18389, 49.28556]
+wikidata_id: Q221517
+metadata:
+  sources: [Wikidata Q221517 (retrieved 2026-10-31)]
+identifiers:
+  gnd: 4495275-2
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q221517
+  parent:
+    - accessed: 2026-10-31
+      property: P131
+      wikidata: Q221517
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q221517

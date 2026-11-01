@@ -9,6 +9,13 @@ website_url: http://www.rietberg.ch/en/
 wikidata_id: Q668300
 metadata:
   sources: [Wikidata Q668300 (retrieved 2026-10-08)]
+relationships:
+  - type: located_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-10-31
+        property: P131
+        wikidata: Q668300
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Museum-Rietberg_Z%C3%BCrich_Eingang_mit_Ausstellungsplakat_Hallyu%21_The_Korean_Wave.jpg/1280px-Museum-Rietberg_Z%C3%BCrich_Eingang_mit_Ausstellungsplakat_Hallyu%21_The_Korean_Wave.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Museum-Rietberg_Z%C3%BCrich_Eingang_mit_Ausstellungsplakat_Hallyu!_The_Korean_Wave.jpg

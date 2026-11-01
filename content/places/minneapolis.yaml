@@ -1,0 +1,39 @@
+public_id: 105836
+name: Minneapolis
+names:
+  - Minneapolis, Minnesota
+  - Minneapolis, MN
+  - lang: ja
+    role: translation
+    text: ミネアポリス
+  - lang: zh
+    role: translation
+    text: 明尼阿波利斯
+  - lang: ko
+    role: translation
+    text: 미니애폴리스
+  - lang: ru
+    role: translation
+    text: Миннеаполис
+kind: settlement
+parent: hennepin-county
+country_code: US
+location: [-93.26917, 44.98194]
+wikidata_id: Q36091
+metadata:
+  sources: [Wikidata Q36091 (retrieved 2026-10-31)]
+identifiers:
+  gnd: 4039497-9
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q36091
+  parent:
+    - accessed: 2026-10-31
+      property: P131
+      wikidata: Q36091
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q36091

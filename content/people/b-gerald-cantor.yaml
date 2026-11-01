@@ -17,6 +17,13 @@ death: 1996-07-17
 wikidata_id: Q2897633
 metadata:
   sources: [Wikidata Q2897633 (retrieved 2026-10-28)]
+relationships:
+  - type: died_in
+    to: place/los-angeles
+    sources:
+      - accessed: 2026-10-31
+        property: P20
+        wikidata: Q2897633
 identifiers:
   bnf: 12002916s
   gnd: 11921539X

@@ -48,6 +48,13 @@ death: 1847-04-30
 wikidata_id: Q84201
 metadata:
   sources: [Wikidata Q84201 (retrieved 2026-10-19)]
+relationships:
+  - type: sibling_of
+    to: person/ferdinand-iii-of-tuscany
+    sources:
+      - accessed: 2026-10-31
+        property: P3373
+        wikidata: Q309605
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/29/Thomas-Lawrence_Archduke-Charles-of-Austria.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Thomas-Lawrence_Archduke-Charles-of-Austria.jpg

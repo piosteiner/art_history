@@ -1,4 +1,5 @@
 public_id: 100699
+title_lang: fr
 title: Arlequin
 creator: paul-cezanne
 created: c. 1888–1890
@@ -8,39 +9,291 @@ medium: Oil on canvas
 materials: [canvas, oil paint]
 dimensions: [92.7, 65.7]
 web_url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+description_md: One of Cézanne’s four paintings of Harlequin, 1888–1890 [[source/sothebys-n12368-lot-9]].
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Paul_C%C3%A9zanne_-_Arlequin_%28CR_670%29.jpg/1280px-Paul_C%C3%A9zanne_-_Arlequin_%28CR_670%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_Arlequin_(CR_670).jpg
     license: Public domain
     credit: Paul Cézanne
 provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: "Sotheby’s, provenance: “Ambroise Vollard, Paris”"
+        source: sothebys-n12368-lot-9
+        accessed: 2026-10-31
+  - owner: person/emil-heilbut
+    acquired: 1900-04-14
+    method: purchase
+    direct: true
+    place: berlin
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: "Sotheby’s, provenance: “Emil Heilbut, Berlin (acquired from the above on 14 April 1900)”"
+        source: sothebys-n12368-lot-9
+        accessed: 2026-10-31
+  - owner: person/bruno-cassirer
+    co_owners: [person/paul-cassirer]
+    role: agent
+    acquired: 1900-11/1900-12
+    place: berlin
+    label: Bruno and Paul Cassirer, on consignment
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: "Sotheby’s, provenance: “Bruno and Paul Cassirer, Berlin (on consignment from November-December 1900)”"
+        source: sothebys-n12368-lot-9
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1900"
+        place: berlin
+        number: "13"
+        document: Bruno and Paul Cassirer, III. Jahrgang der Kunst-Ausstellungen, Winter 1900/1901
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1901-11-29
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: "Sotheby’s, provenance: “Galerie Durand-Ruel, Paris (acquired from the above on 29 November 1901)”"
+        source: sothebys-n12368-lot-9
+        accessed: 2026-10-31
+  - owner: person/ambroise-vollard
+    role: dealer
+    acquired: 1901-11-29
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: "Sotheby’s, provenance: “Ambroise Vollard, Paris (acquired from the above on 29 November 1901)”"
+        source: sothebys-n12368-lot-9
+        accessed: 2026-10-31
+  - owner: person/maurice-gangnat
+    acquired: 1907 or earlier
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: "Sotheby’s, provenance: “Maurice Gangnat, Paris (acquired by 1907)”"
+        source: sothebys-n12368-lot-9
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1907"
+        place: paris
+        number: "38"
+        document: Salon d’Automne, Grand Palais, Exposition Rétrospective d’Oeuvres de Cézanne
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1914-01-06
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: "Sotheby’s, provenance: “Paul Rosenberg, Paris (acquired from the above on 6 January 1914)”"
+        source: sothebys-n12368-lot-9
+        accessed: 2026-10-31
+  - owner: person/jorgen-breder-stang
+    acquired: 1917 or earlier
+    ended: 1928
+    place: oslo
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: "Sotheby’s, provenance: “Jørgen Breder Stang, Oslo (acquired by 1917 and until 1928)”"
+        source: sothebys-n12368-lot-9
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1917"
+        note: the owner in 1917 is not given
+        place: paris
+        number: "10"
+        document: Galeries Paul Rosenberg, Exposition d’art français du XIXe siècle
+        certainty: possible
+      - kind: exhibition
+        date: "1917"
+        place: zurich
+        number: "40"
+        document: Kunsthaus Zürich, Französische Kunst des XIX. und XX. Jahrhunderts
+      - kind: exhibition
+        date: "1919"
+        place: paris
+        document: Paul Rosenberg, L’Art français au XIXe siècle
+  - owner: institution/galerie-thannhauser
+    role: dealer
+    acquired: 1928-06-12
+    method: purchase
+    place: lucerne
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: "Sotheby’s, provenance: “Galerie Thannhauser, Lucerne (acquired on 12 June 1928)”"
+        source: sothebys-n12368-lot-9
+        accessed: 2026-10-31
+  - owner: institution/wildenstein-co
+    co_owners: [person/paul-guillaume]
+    role: dealer
+    acquired: 1930 or earlier
+    place: paris
+    label: Wildenstein Galleries, Paris, and Paul Guillaume
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: "Sotheby’s, provenance: “Wildenstein Galleries, Paris and Paul Guillaume, Paris (acquired by 1930)”"
+        source: sothebys-n12368-lot-9
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1929"
+        place: new-york-city
+        number: "10"
+        document: The Museum of Modern Art, First Loan Exhibition, Cézanne, Gauguin, Seurat, Van Gogh
+      - kind: exhibition
+        date: "1935"
+        place: london
+        number: "5"
+        document: Wildenstein & Co., Nineteenth Century Masterpieces
+  - owner: person/victor-rothschild-3rd-baron-rothschild
+    acquired: 1936 or earlier
+    place: cambridge-england
+    label: Merton Hall, Cambridge
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: "Sotheby’s, provenance: “Lord Victor Rothschild, Merton Hall, Cambridge (acquired by 1936)”"
+        source: sothebys-n12368-lot-9
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1936"
+        place: london
+        number: "91"
+        document: New Burlington Galleries, Exhibition of Masters of French 19th Century Painting
+      - kind: exhibition
+        date: "1939"
+        place: london
+        number: "16"
+        document: Rosenberg & Helft, Exhibition Cézanne (1839–1906) to Celebrate His Centenary
+      - kind: exhibition
+        date: "1952"
+        place: chicago
+        number: "71"
+        document: "The Art Institute of Chicago, Cézanne: Paintings, Watercolors & Drawings; then The Metropolitan Museum of Art"
+      - kind: exhibition
+        date: "1954"
+        place: edinburgh
+        number: "44"
+        document: Royal Scottish Academy, Paintings by Cézanne; then London, Tate Gallery
+      - kind: exhibition
+        date: "1962"
+        place: london
+        document: Courtauld Institute of Art (extended loan)
+  - owner: person/jacob-rothschild-4th-baron-rothschild
+    method: gift
+    direct: true
+    place: london
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: "Sotheby’s, provenance: “Lord Jacob Rothschild, London (acquired as a gift from the above)”"
+        source: sothebys-n12368-lot-9
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: 1974/1975
+        note: Lefevre bought it in 1975
+        place: pittsburgh
+        number: "14"
+        document: "Carnegie Institute, Celebration: Inaugural Exhibition of the Sarah Scaife Gallery"
+        certainty: possible
+  - owner: institution/alex-reid-lefevre
+    role: dealer
+    acquired: 1975
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: "Sotheby’s, provenance: “The Lefevre Gallery, London (acquired from the above in 1975)”"
+        source: sothebys-n12368-lot-9
+        accessed: 2026-10-31
   - owner: institution/blaquier-arrieta-collection
+    acquired: 1975
     ended: 2026-11-18
+    method: purchase
+    direct: true
+    place: buenos-aires
     label: Sotheby's New York
     certainty: possible
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: "Sotheby’s, provenance: “Acquired from the above in 1975 by the present owners”"
+        source: sothebys-n12368-lot-9
+        accessed: 2026-10-31
     check_after: 2026-11-18
+numbers:
+  - number: "621"
+    source: rewald-1996
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: "Sotheby’s, literature: “John Rewald, The Paintings of Paul Cézanne, A Catalogue Raisonné, New York, 1996, no. 621, vol. I, pp. 408-11”"
+        source: sothebys-n12368-lot-9
+        accessed: 2026-10-31
+  - number: "670"
+    source: fwn-cezanne
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: 'Sotheby’s, literature: “Société Paul Cezanne, "Arlequin, 1888–90 (FWN 670)," The Paintings, Watercolors and Drawings of Paul Cezanne: An Online Catalogue Raisonné”'
+        source: sothebys-n12368-lot-9
+        accessed: 2026-10-31
+  - number: "553"
+    source: venturi-1936
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: "Sotheby’s, literature: “Lionello Venturi, Cézanne, son art—son oeuvre, Paris, 1936, no. 553”"
+        source: sothebys-n12368-lot-9
+        accessed: 2026-10-31
 sources:
   kind:
     - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
       source: sothebys-com
       accessed: 2026-10-18
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+      source: sothebys-n12368-lot-9
+      accessed: 2026-10-31
   medium:
     - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
       source: sothebys-com
       accessed: 2026-10-18
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+      source: sothebys-n12368-lot-9
+      accessed: 2026-10-31
   created:
     - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
       source: sothebys-com
       accessed: 2026-10-18
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+      source: sothebys-n12368-lot-9
+      accessed: 2026-10-31
   creator:
     - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
       source: sothebys-com
       accessed: 2026-10-18
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+      source: sothebys-n12368-lot-9
+      accessed: 2026-10-31
   materials:
     - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
       source: sothebys-com
       accessed: 2026-10-18
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+      source: sothebys-n12368-lot-9
+      accessed: 2026-10-31
   dimensions:
     - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
       source: sothebys-com
       accessed: 2026-10-18
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+      source: sothebys-n12368-lot-9
+      accessed: 2026-10-31

@@ -1,0 +1,44 @@
+public_id: 105792
+name: Otto Gerstenberg
+given_name: Otto
+family_name: Gerstenberg
+names:
+  - lang: ru
+    role: translation
+    text: Отто Герстенберг
+kind: person
+occupations: [art collector, entrepreneur, businessperson]
+birth: 1848-11-11
+death: 1935-04-24
+wikidata_id: Q2038895
+metadata:
+  sources: [Wikidata Q2038895 (retrieved 2026-10-31)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Max_Liebermann_Portrait_Otto_Gerstenberg.jpg/1280px-Max_Liebermann_Portrait_Otto_Gerstenberg.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Max_Liebermann_Portrait_Otto_Gerstenberg.jpg
+    license: Public domain
+    credit: Max Liebermann
+identifiers:
+  bnf: 12246516t
+  gnd: "118821180"
+  idref: "031205569"
+  lc: n86046269
+  rkd: "449547"
+  viaf: "57411408"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q2038895
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q2038895
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q2038895
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q2038895

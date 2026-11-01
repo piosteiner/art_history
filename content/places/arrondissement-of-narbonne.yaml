@@ -1,0 +1,16 @@
+public_id: 105812
+name: arrondissement of Narbonne
+kind: region
+location: [2.83333, 43.08333]
+wikidata_id: Q701903
+metadata:
+  sources: [Wikidata Q701903 (retrieved 2026-10-31)]
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q701903
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q701903

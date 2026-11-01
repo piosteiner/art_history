@@ -1,0 +1,42 @@
+public_id: 105822
+name: Kansas City
+names:
+  - Kansas City, MO
+  - KCMO
+  - KC
+  - Kansas City, Missouri
+  - K.C.
+  - lang: ja
+    role: translation
+    text: カンザス・シティ
+  - lang: zh
+    role: translation
+    text: 堪薩斯城
+  - lang: ko
+    role: translation
+    text: 캔자스시티
+  - lang: ru
+    role: translation
+    text: Канзас-Сити
+kind: settlement
+parent: jackson-county
+country_code: US
+location: [-94.58333, 39.05]
+wikidata_id: Q41819
+metadata:
+  sources: [Wikidata Q41819 (retrieved 2026-10-31)]
+identifiers:
+  gnd: 4109999-0
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q41819
+  parent:
+    - accessed: 2026-10-31
+      property: P131
+      wikidata: Q41819
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q41819

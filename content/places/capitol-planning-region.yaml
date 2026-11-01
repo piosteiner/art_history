@@ -1,0 +1,16 @@
+public_id: 105827
+name: Capitol Planning Region
+kind: site
+location: [-72.65, 41.85]
+wikidata_id: Q117286854
+metadata:
+  sources: [Wikidata Q117286854 (retrieved 2026-10-31)]
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q117286854
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q117286854

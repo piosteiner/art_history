@@ -1,0 +1,48 @@
+public_id: 105780
+name: Victor Rothschild, 3rd Baron Rothschild
+names:
+  - lang: nl
+    role: translation
+    text: Nathaniel Mayer Victor Rothschild Rothschild
+  - lang: fr
+    role: translation
+    text: Victor Rothschild
+  - lang: ja
+    role: translation
+    text: ヴィクター・ロスチャイルド (第3代ロスチャイルド男爵)
+  - lang: zh
+    role: translation
+    text: 内森尼尔·迈耶·维克多·罗斯柴尔德
+  - lang: ru
+    role: translation
+    text: Виктор Ротшильд
+kind: person
+occupations: [cricketer, banker, zoologist, politician, entomologist, baron]
+birth: 1910-10-31
+death: 1990-03-20
+wikidata_id: Q3557561
+metadata:
+  sources: [Wikidata Q3557561 (retrieved 2026-10-31)]
+identifiers:
+  bnf: 14544642z
+  gnd: 11947090X
+  idref: "139275096"
+  lc: n50075862
+  viaf: "79189996"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q3557561
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q3557561
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q3557561
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q3557561

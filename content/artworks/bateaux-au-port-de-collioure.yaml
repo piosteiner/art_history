@@ -1,12 +1,110 @@
 public_id: 100736
-title: Bâteaux au port de Collioure
+title_lang: fr
+title: Bateaux au port de Collioure
 creator: andre-derain
 created: 1905
-web_url: https://www.theguardian.com/artanddesign/2026/sep/30/vincent-van-gogh-paul-cezanne-claude-monet-blaquier-arrieta-collection-display-sothebys-sale
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [38.2, 45.9]
+web_url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/bateaux-au-port-de-collioure?locale=en
+description_md: Signed “a Derain” lower right; painted in Collioure in the summer of 1905 [[source/sothebys-n12368-lot-2]]. Shown before the sale of the [[institution/blaquier-arrieta-collection]] [[source/guardian-2026-blaquier-arrieta]].
+relationships:
+  - type: created_in
+    to: place/collioure
+    period: 1905
 provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/bateaux-au-port-de-collioure?locale=en
+        note: "Sotheby’s, provenance: “Ambroise Vollard, Paris”"
+        source: sothebys-n12368-lot-2
+        accessed: 2026-10-31
+  - owner: person/paul-petrides
+    role: dealer
+    acquired: c. 1958
+    method: purchase
+    place: paris
+    label: Galerie Paul Pétridès
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/bateaux-au-port-de-collioure?locale=en
+        note: "Sotheby’s, provenance: “Galerie Paul Petrides, Paris (acquired circa 1958)”"
+        source: sothebys-n12368-lot-2
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1976"
+        place: paris
+        number: "14"
+        document: Galerie Schmit, Derain, 1880–1954 (as “Plage du Midi près de Collioures”)
+  - owner_label: Private collection, United States
+    acquired: 1978
+    method: purchase
+    direct: true
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/bateaux-au-port-de-collioure?locale=en
+        note: "Sotheby’s, provenance: “Private Collection, United States (acquired from the above in 1978)”"
+        source: sothebys-n12368-lot-2
+        accessed: 2026-10-31
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1997-11-11
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Christie’s, New York, 11 November 1997, lot 145
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/bateaux-au-port-de-collioure?locale=en
+        note: "Sotheby’s, provenance: “Christie's, New York, 11 November 1997, lot 145 (consigned by the above)”"
+        source: sothebys-n12368-lot-2
+        accessed: 2026-10-31
   - owner: institution/blaquier-arrieta-collection
+    acquired: 1997-11-11
     ended: 2026-11-18
+    method: auction
+    direct: true
+    place: buenos-aires
     label: Sotheby's New York
     certainty: possible
-    sources: [https://www.theguardian.com/artanddesign/2026/sep/30/vincent-van-gogh-paul-cezanne-claude-monet-blaquier-arrieta-collection-display-sothebys-sale]
+    sources:
+      - https://www.theguardian.com/artanddesign/2026/sep/30/vincent-van-gogh-paul-cezanne-claude-monet-blaquier-arrieta-collection-display-sothebys-sale
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/bateaux-au-port-de-collioure?locale=en
+        note: "Sotheby’s, provenance: “Acquired at the above sale by the present owners”"
+        source: sothebys-n12368-lot-2
+        accessed: 2026-10-31
     check_after: 2026-11-18
+numbers:
+  - number: "71"
+    source: kellermann-1992
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/bateaux-au-port-de-collioure?locale=en
+        note: "Sotheby’s, literature: “Michel Kellermann, André Derain, catalogue raisonné de l'oeuvre peint, vol. I, Paris, 1992, no. 71”"
+        source: sothebys-n12368-lot-2
+        accessed: 2026-10-31
+sources:
+  kind:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/bateaux-au-port-de-collioure?locale=en
+      source: sothebys-n12368-lot-2
+      accessed: 2026-10-31
+  medium:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/bateaux-au-port-de-collioure?locale=en
+      source: sothebys-n12368-lot-2
+      accessed: 2026-10-31
+  created:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/bateaux-au-port-de-collioure?locale=en
+      source: sothebys-n12368-lot-2
+      accessed: 2026-10-31
+  creator:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/bateaux-au-port-de-collioure?locale=en
+      source: sothebys-n12368-lot-2
+      accessed: 2026-10-31
+  materials:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/bateaux-au-port-de-collioure?locale=en
+      source: sothebys-n12368-lot-2
+      accessed: 2026-10-31
+  dimensions:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/bateaux-au-port-de-collioure?locale=en
+      source: sothebys-n12368-lot-2
+      accessed: 2026-10-31

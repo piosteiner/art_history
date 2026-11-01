@@ -1,0 +1,38 @@
+public_id: 105842
+name: Le Port-Marly
+names:
+  - Le Port
+  - lang: ja
+    role: translation
+    text: ル・ポール＝マルリ
+  - lang: zh
+    role: translation
+    text: 马尔利港
+  - lang: ko
+    role: translation
+    text: 르포르트마를리
+  - lang: ru
+    role: translation
+    text: Ле-Порт-Марли
+kind: settlement
+parent: yvelines
+country_code: FR
+location: [2.10972, 48.87917]
+wikidata_id: Q1462695
+metadata:
+  sources: [Wikidata Q1462695 (retrieved 2026-10-31)]
+identifiers:
+  gnd: 4269960-5
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q1462695
+  parent:
+    - accessed: 2026-10-31
+      property: P131
+      wikidata: Q1462695
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q1462695

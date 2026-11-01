@@ -1,0 +1,37 @@
+public_id: 105773
+name: Julie Goujon-Reinach
+given_name: Julie
+family_name: Goujon-Reinach
+names: [Julie Goujon, Julie Goujon (Reinach), Lily Goujon-Reinach]
+kind: person
+occupations: [art collector]
+birth: 1885-07-05
+death: 1971-12-18
+wikidata_id: Q114034769
+metadata:
+  sources: [Wikidata Q114034769 (retrieved 2026-10-31)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/bd/Goujon-Reinach%2C_Julie_%28La_Gandara%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Goujon-Reinach,_Julie_(La_Gandara).jpg
+    license: Public domain
+    credit: Antonio de La Gandara
+identifiers:
+  idref: 25466248X
+  viaf: "59162060266151400762"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q114034769
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q114034769
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q114034769
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q114034769

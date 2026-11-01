@@ -18,6 +18,18 @@ death: 1585
 wikidata_id: Q6791639
 metadata:
   sources: [Wikidata Q6791639 (retrieved 2026-10-20)]
+relationships:
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-31
+        property: P20
+        wikidata: Q6791639
+  - type: founded
+    to: institution/contarelli-chapel
+    sources:
+      - source: wikipedia-en-contarelli-chapel
+        accessed: 2026-10-31
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/b/bf/Cardinal_Matthieu_Cointrel.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Cardinal_Matthieu_Cointrel.jpg

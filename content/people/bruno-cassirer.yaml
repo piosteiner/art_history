@@ -1,0 +1,47 @@
+public_id: 105776
+name: Bruno Cassirer
+given_name: Bruno
+family_name: Cassirer
+names:
+  - lang: ja
+    role: translation
+    text: ブルーノ・カッシーラー
+  - lang: ru
+    role: translation
+    text: Бруно Кассирер
+kind: person
+occupations: [publisher, art dealer, gallerist]
+birth: 1872-12-12
+death: 1941-10-29
+wikidata_id: Q91618
+metadata:
+  sources: [Wikidata Q91618 (retrieved 2026-10-31)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Bruno_Cassirer%2C_by_Max_Liebermann.jpg/1280px-Bruno_Cassirer%2C_by_Max_Liebermann.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bruno_Cassirer,_by_Max_Liebermann.jpg
+    license: Public domain
+    credit: Max Liebermann
+identifiers:
+  bnf: "122721767"
+  gnd: "118869000"
+  idref: "166472131"
+  lc: nr90023043
+  rkd: "352921"
+  viaf: "45099855"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q91618
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q91618
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q91618
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q91618

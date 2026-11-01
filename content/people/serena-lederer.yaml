@@ -18,6 +18,19 @@ death: 1943-03-27
 wikidata_id: Q2272284
 metadata:
   sources: [Wikidata Q2272284 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/budapest
+    sources:
+      - accessed: 2026-10-31
+        property: P19
+        wikidata: Q2272284
+  - type: died_in
+    to: place/budapest
+    sources:
+      - accessed: 2026-10-31
+        property: P20
+        wikidata: Q2272284
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/ef/Gustav_Klimt_057.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_057.jpg

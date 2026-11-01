@@ -1,0 +1,38 @@
+public_id: 105777
+name: Maurice Gangnat
+given_name: Maurice
+family_name: Gangnat
+kind: person
+occupations: [engineer, art collector, industrialist, entrepreneur]
+birth: 1856
+death: 1924
+wikidata_id: Q106674009
+metadata:
+  sources: [Wikidata Q106674009 (retrieved 2026-10-31)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/83/Renoir_-_maurice-gangnat-1916.jpg%21PinterestLarge.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Renoir_-_maurice-gangnat-1916.jpg!PinterestLarge.jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+identifiers:
+  gnd: "123540895"
+  idref: "260337366"
+  lc: no2007083198
+  viaf: "63791005"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q106674009
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q106674009
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q106674009
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q106674009

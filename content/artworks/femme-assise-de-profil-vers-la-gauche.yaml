@@ -1,0 +1,190 @@
+public_id: 106079
+title_lang: fr
+title: Femme assise de profil vers la gauche
+names:
+  - lang: fr
+    role: alternative
+    text: En meublé
+  - lang: en
+    role: alternative
+    text: Lady in Red
+creator: henri-de-toulouse-lautrec
+created: 1890
+kind: painting
+medium: Oil and peinture à l’essence on board
+materials: [oil paint, cardboard]
+dimensions: [73.4, 40.7]
+web_url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/femme-assise-de-profil-vers-la-gauche?locale=en
+description_md: Signed “HT Lautrec” and dated “90” upper left [[source/sothebys-n12368-lot-11]].
+provenance:
+  - owner: person/maurice-guibert
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/femme-assise-de-profil-vers-la-gauche?locale=en
+        note: "Sotheby’s, provenance: “Maurice Guibert, Paris”"
+        source: sothebys-n12368-lot-11
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1891"
+        place: paris
+        number: "388"
+        document: VIIe Salon des Indépendants, Pavillon de la Ville de Paris (as “En meublé”)
+        certainty: probable
+      - kind: exhibition
+        date: 1891/1892
+        place: paris
+        number: "73"
+        document: Le Barc de Boutteville, Peintres Impressionnistes et Symbolistes, 1ère Exposition (as “En meublé”)
+        certainty: probable
+      - kind: exhibition
+        date: "1892"
+        place: brussels
+        number: "5"
+        document: Musée d’Art Moderne, Neuvième exposition annuelle des XX (as “En meublé”)
+        certainty: probable
+  - owner: person/otto-gerstenberg
+    acquired: 1912-02-23
+    method: purchase
+    place: berlin
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/femme-assise-de-profil-vers-la-gauche?locale=en
+        note: "Sotheby’s, provenance: “Otto Gerstenberg, Berlin (acquired on 23 February 1912)”"
+        source: sothebys-n12368-lot-11
+        accessed: 2026-10-31
+  - owner: person/margarethe-scharf
+    acquired: 1935
+    method: inheritance
+    direct: true
+    place: berlin
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/femme-assise-de-profil-vers-la-gauche?locale=en
+        note: "Sotheby’s, provenance: “Margarethe Scharf, Berlin (acquired by descent from the above in 1935 and by whom placed on deposit with Statens Museum for Kunst, Copenhagen from 1936 until 1950)”"
+        source: sothebys-n12368-lot-11
+        accessed: 2026-10-31
+  - owner: institution/statens-museum-for-kunst
+    role: custodian
+    acquired: 1936
+    ended: 1950
+    direct: true
+    place: copenhagen
+    label: on deposit from Margarethe Scharf
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/femme-assise-de-profil-vers-la-gauche?locale=en
+        note: "Sotheby’s, provenance: “Margarethe Scharf, Berlin (acquired by descent from the above in 1935 and by whom placed on deposit with Statens Museum for Kunst, Copenhagen from 1936 until 1950)”"
+        source: sothebys-n12368-lot-11
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1937"
+        place: copenhagen
+        number: "6"
+        document: Statens Museum for Kunst, Foreningen Fransk Kunst, Henri de Toulouse-Lautrec
+  - owner: institution/matthiesen-gallery
+    role: dealer
+    acquired: 1951
+    method: purchase
+    place: london
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/femme-assise-de-profil-vers-la-gauche?locale=en
+        note: "Sotheby’s, provenance: “Matthiesen Gallery, London (acquired in 1951)”"
+        source: sothebys-n12368-lot-11
+        accessed: 2026-10-31
+  - owner: person/albert-lasker
+    co_owners: [person/mary-lasker]
+    acquired: 1951
+    method: purchase
+    place: new-york-city
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/femme-assise-de-profil-vers-la-gauche?locale=en
+        note: "Sotheby’s, provenance: “Albert D. and Mary Lasker, New York (acquired in 1951)”"
+        source: sothebys-n12368-lot-11
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1953"
+        place: dallas
+        number: "66"
+        document: Dallas Museum of Fine Arts, Sixty-Nine Paintings from the Collection of Mrs. Albert D. Lasker
+      - kind: exhibition
+        date: "1954"
+        place: san-francisco
+        number: "63"
+        document: California Palace of the Legion of Honor, Sixty-Seven Paintings from the Collection of Mrs. Albert D. Lasker
+      - kind: exhibition
+        date: 1955/1956
+        place: philadelphia
+        number: "24"
+        document: Philadelphia Museum of Art, Toulouse-Lautrec; then The Art Institute of Chicago (as “Lady in Red”)
+      - kind: exhibition
+        date: "1956"
+        place: new-york-city
+        number: "15"
+        document: The Museum of Modern Art, Toulouse-Lautrec, Paintings Drawings Posters and Lithographs
+      - kind: exhibition
+        date: "1961"
+        number: "43"
+        document: Waltham, Massachusetts, Rose Art Museum, Brandeis University, A Century of Modern European Painting
+      - kind: exhibition
+        date: "1964"
+        place: new-york-city
+        number: "23"
+        document: Wildenstein & Co., Toulouse-Lautrec
+  - owner: institution/alex-reid-lefevre
+    role: dealer
+    acquired: c. 1976
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/femme-assise-de-profil-vers-la-gauche?locale=en
+        note: "Sotheby’s, provenance: “The Lefevre Gallery (Alex. Reid & Lefevre Ltd.), London (acquired from the above circa 1976)”"
+        source: sothebys-n12368-lot-11
+        accessed: 2026-10-31
+  - owner: institution/blaquier-arrieta-collection
+    acquired: 1977
+    ended: 2026-11-18
+    method: purchase
+    direct: true
+    place: buenos-aires
+    label: Sotheby’s New York
+    certainty: possible
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/femme-assise-de-profil-vers-la-gauche?locale=en
+        note: "Sotheby’s, provenance: “Acquired from the above in 1977 by the present owners”"
+        source: sothebys-n12368-lot-11
+        accessed: 2026-10-31
+    check_after: 2026-11-18
+numbers:
+  - number: "255"
+    source: sugana-1969
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/femme-assise-de-profil-vers-la-gauche?locale=en
+        note: "Sotheby’s, literature: “Giorgio Caproni and Gabriele M. Sugana, L'Opera completa di Toulouse-Lautrec, Milan, 1969, no. 255, p. 103”"
+        source: sothebys-n12368-lot-11
+        accessed: 2026-10-31
+sources:
+  kind:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/femme-assise-de-profil-vers-la-gauche?locale=en
+      source: sothebys-n12368-lot-11
+      accessed: 2026-10-31
+  medium:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/femme-assise-de-profil-vers-la-gauche?locale=en
+      source: sothebys-n12368-lot-11
+      accessed: 2026-10-31
+  created:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/femme-assise-de-profil-vers-la-gauche?locale=en
+      source: sothebys-n12368-lot-11
+      accessed: 2026-10-31
+  creator:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/femme-assise-de-profil-vers-la-gauche?locale=en
+      source: sothebys-n12368-lot-11
+      accessed: 2026-10-31
+  materials:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/femme-assise-de-profil-vers-la-gauche?locale=en
+      source: sothebys-n12368-lot-11
+      accessed: 2026-10-31
+  dimensions:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/femme-assise-de-profil-vers-la-gauche?locale=en
+      source: sothebys-n12368-lot-11
+      accessed: 2026-10-31

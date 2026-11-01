@@ -7,11 +7,19 @@ names:
   - lang: de
     role: translation
     text: Blühende Kastanienbäume
+  - lang: en
+    role: translation
+    text: "Chestnut Trees in Flower: Pink and White Blossoms"
+  - lang: en
+    role: alternative
+    text: Blossoming Chestnut Tree
 creator: vincent-van-gogh
 created: 1890-05
+kind: oil painting
+medium: Oil on canvas
 materials: [oil paint, canvas]
 dimensions: [70, 58]
-web_url: http://www.vggallery.com/painting/p_0751.htm
+web_url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
 description_md: |-
   The artwork went on auction in October 2026.
   Under this circumstance the artwork was revealed for the first time after 60 years.[[source/bbc-van-gogh-hong-kong-60-years]]
@@ -28,13 +36,292 @@ images:
     license: Public domain
     credit: Vincent van Gogh
 provenance:
+  - owner: person/theo-van-gogh
+    acquired: 1890
+    method: inheritance
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+        note: "Sotheby’s, provenance: “Theo van Gogh, Paris (acquired by descent from the artist)”"
+        source: sothebys-n12368-lot-5
+        accessed: 2026-10-31
+  - owner: person/johanna-van-gogh-bonger
+    co_owners: [person/vincent-willem-van-gogh]
+    method: inheritance
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+        note: "Sotheby’s, provenance: “Johanna van Gogh-Bonger, Amsterdam and Vincent Willem van Gogh (acquired by descent from the above)”"
+        source: sothebys-n12368-lot-5
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: 1896/1897
+        place: paris
+        number: "24"
+        document: Galerie Vollard, Van Gogh (as “Maronniers en fleurs”)
+      - kind: exhibition
+        date: "1905"
+        place: amsterdam
+        number: "226"
+        document: Stedelijk Museum, Vincent van Gogh (as “Dorpsplein met bloeiende kastanje”)
+  - owner: person/paul-cassirer
+    role: dealer
+    acquired: 1905-09
+    method: purchase
+    direct: true
+    place: berlin
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+        note: "Sotheby’s, provenance: “Paul Cassirer, Berlin (acquired from the above in September 1905)”"
+        source: sothebys-n12368-lot-5
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1905"
+        place: hamburg
+        number: "35"
+        document: Paul Cassirer, I. Ausstellung (as “Platz in Auvers”)
+      - kind: exhibition
+        date: "1905"
+        place: dresden
+        number: "31"
+        document: Kunst-Salon Ernst Arnold, Vincent van Gogh, Constantin Guys
+      - kind: exhibition
+        date: "1905"
+        place: berlin
+        document: Paul Cassirer, Collectiv-Ausstellung
+      - kind: exhibition
+        date: "1906"
+        place: vienna
+        number: "2"
+        document: Galerie H. O. Miethke, Kollektivausstellung Vincent van Gogh
+  - owner: person/alexandre-berthier-prince-de-wagram
+    acquired: 1906-03
+    method: purchase
+    direct: true
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+        note: "Sotheby’s, provenance: “Alexandre Berthier, Prince de Wagram, France (acquired from the above in March 1906)”"
+        source: sothebys-n12368-lot-5
+        accessed: 2026-10-31
+  - owner: institution/galerie-eugene-druet
+    role: dealer
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+        note: "Sotheby’s, provenance: “Galerie Druet, Paris”"
+        source: sothebys-n12368-lot-5
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1909"
+        place: paris
+        number: "7"
+        document: Galerie Druet, Cinquante Tableaux de Vincent van Gogh (as “Arbres en fleurs”)
+  - owner: person/gustave-fayet
+    acquired: 1909-01
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+        note: "Sotheby’s, provenance: “Gustave Fayet, Paris (acquired from the above in January 1909)”"
+        source: sothebys-n12368-lot-5
+        accessed: 2026-10-31
+  - owner: institution/bernheim-jeune
+    role: dealer
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+        note: "Sotheby’s, provenance: “Galerie Bernheim-Jeune, Paris”"
+        source: sothebys-n12368-lot-5
+        accessed: 2026-10-31
+  - owner: person/samuel-fischer
+    acquired: 1909
+    method: purchase
+    direct: true
+    place: berlin
+    label: Berlin-Grunewald
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+        note: "Sotheby’s, provenance: “Samuel Fischer, Berlin Grunewald (acquired from the above in 1909)”"
+        source: sothebys-n12368-lot-5
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1914"
+        place: berlin
+        number: "96"
+        document: Paul Cassirer, Vincent van Gogh (as “Kastanien in Arles”)
+      - kind: exhibition
+        date: "1921"
+        place: berlin
+        document: Nationalgalerie, Kronprinzenpalais, Van Gogh zu Matisse
+      - kind: exhibition
+        date: "1928"
+        place: berlin
+        number: "82"
+        document: Paul Cassirer, Vincent van Gogh Gemälde (as “Blühende Kastanienbäume”)
+  - owner: person/brigitte-bermann-fischer
+    co_owners: [person/gottfried-bermann]
+    acquired: 1934
+    method: inheritance
+    direct: true
+    place: berlin
+    label: Berlin-Grunewald and Vienna; on deposit with Paul Cassirer, Amsterdam, since 1932/33
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+        note: "Sotheby’s, provenance: “Brigitte and Gottfried Bermann-Fischer (né Bermann), Berlin Grunewald and Vienna (acquired by descent from the above in 1934)”"
+        source: sothebys-n12368-lot-5
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: 1933/1934
+        place: rotterdam
+        number: "42"
+        document: Museum Boymans, Schilderijen van Delacroix tot Cézanne en Vincent van Gogh
+      - kind: exhibition
+        date: "1934"
+        place: bern
+        number: "66"
+        document: Kunsthalle, Französische Meister des 19. Jahrhunderts und van Gogh
+  - owner: person/marcel-kapferer
+    co_owners: [person/henriette-kapferer]
+    acquired: 1936
+    method: purchase
+    direct: true
+    place: paris
+    label: through Paul Cassirer, Amsterdam
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+        note: "Sotheby’s, provenance: “Henriette and Marcel Kapferer, Paris (acquired from the above in 1936 through Paul Cassirer, Amsterdam, with whom it was on deposit since 1932/33)”"
+        source: sothebys-n12368-lot-5
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1937"
+        place: paris
+        number: "46"
+        document: Exposition Internationale, Quai de Tokio, Vincent van Gogh, sa vie et son œuvre
+      - kind: exhibition
+        date: "1938"
+        place: london
+        number: "29"
+        document: Leicester Galleries, Artists Who Died Young
+  - owner: institution/wildenstein-co
+    role: custodian
+    acquired: 1939
+    direct: true
+    place: new-york-city
+    label: on deposit from the Kapferers, later consigned
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+        note: "Sotheby’s, provenance: “Wildenstein & Co., New York (on deposit from the above from 1939 and later consigned)”"
+        source: sothebys-n12368-lot-5
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1943"
+        place: new-york-city
+        number: "61"
+        document: Wildenstein, The Art and Life of Vincent van Gogh
+  - owner: person/buddy-desylva
+    acquired: 1945
+    method: purchase
+    direct: true
+    place: los-angeles
+    label: George ‘Buddy’ Gard DeSylva and Marie DeSylva (née Wallace)
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+        note: "Sotheby’s, provenance: “George ‘Buddy’ Gard DeSylva and Marie DeSylva (née Wallace), Los Angeles (acquired from the above in 1945)”"
+        source: sothebys-n12368-lot-5
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1948"
+        place: los-angeles
+        document: Los Angeles County Museum of Art (on loan)
+  - owner: person/harriet-harris-jonas
+    acquired: 1953 or earlier
+    place: new-york-city
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+        note: "Sotheby’s, provenance: “Harriet Harris-Jonas, New York (acquired by 1953)”"
+        source: sothebys-n12368-lot-5
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: 1949/1950
+        note: before the 1953 date of her ownership
+        place: new-york-city
+        number: "148"
+        document: The Metropolitan Museum of Art, Van Gogh, Paintings and Drawings; then The Art Institute of Chicago
+        certainty: possible
+      - kind: exhibition
+        date: "1955"
+        place: new-york-city
+        number: "71"
+        document: Wildenstein, Vincent van Gogh Loan Exhibition
+      - kind: exhibition
+        date: "1961"
+        place: new-york-city
+        number: "43"
+        document: The Metropolitan Museum of Art, Paintings from Private Collections
+      - kind: exhibition
+        date: "1964"
+        place: new-york-city
+        document: Solomon R. Guggenheim Museum, Van Gogh and Expressionism
+  - owner: institution/wildenstein-co
+    role: agent
+    acquired: 1974
+    place: new-york-city
+    label: consigned by her estate
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+        note: "Sotheby’s, provenance: “Wildenstein & Co., New York (consigned by the estate of the above in 1974)”"
+        source: sothebys-n12368-lot-5
+        accessed: 2026-10-31
   - owner: institution/blaquier-arrieta-collection
+    acquired: 1975
     ended: 2026-11-18
+    method: purchase
+    direct: true
+    place: buenos-aires
     label: Sotheby's New York
     certainty: possible
-    sources: [https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction?locale=en&lotFilter=AllLots]
+    sources:
+      - https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction?locale=en&lotFilter=AllLots
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+        note: "Sotheby’s, provenance: “Acquired from the above by the present owners in 1975”"
+        source: sothebys-n12368-lot-5
+        accessed: 2026-10-31
     check_after: 2026-11-18
+numbers:
+  - number: F751
+    source: de-la-faille-1970
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+        note: "Sotheby’s, literature: “Jacob-Baart de la Faille, The Works of Vincent van Gogh, His Paintings and Drawings, Amsterdam, 1970, no. F751”"
+        source: sothebys-n12368-lot-5
+        accessed: 2026-10-31
+  - number: JH1992
+    source: hulsker-1996
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+        note: "Sotheby’s, literature: “Jan Hulsker, The New Complete van Gogh, Paintings, Drawings, Sketches, Amsterdam, 1996, no. 1992, p. 458”"
+        source: sothebys-n12368-lot-5
+        accessed: 2026-10-31
 sources:
+  kind:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+      source: sothebys-n12368-lot-5
+      accessed: 2026-10-31
+  medium:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+      source: sothebys-n12368-lot-5
+      accessed: 2026-10-31
   created:
     - accessed: 2026-10-18
       property: P571
@@ -42,11 +329,24 @@ sources:
     - url: https://www.theguardian.com/artanddesign/2026/sep/30/vincent-van-gogh-paul-cezanne-claude-monet-blaquier-arrieta-collection-display-sothebys-sale
       source: theguardian-com
       accessed: 2026-10-18
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+      source: sothebys-n12368-lot-5
+      accessed: 2026-10-31
   creator:
     - accessed: 2026-10-18
       property: P170
       wikidata: Q26221216
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+      source: sothebys-n12368-lot-5
+      accessed: 2026-10-31
+  materials:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+      source: sothebys-n12368-lot-5
+      accessed: 2026-10-31
   dimensions:
     - accessed: 2026-10-18
       property: P2048
       wikidata: Q26221216
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
+      source: sothebys-n12368-lot-5
+      accessed: 2026-10-31

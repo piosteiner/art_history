@@ -1,0 +1,16 @@
+public_id: 105823
+name: Cuyahoga County
+kind: site
+location: [-81.66, 41.54]
+wikidata_id: Q251267
+metadata:
+  sources: [Wikidata Q251267 (retrieved 2026-10-31)]
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q251267
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q251267

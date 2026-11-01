@@ -1,0 +1,68 @@
+public_id: 105810
+name: Courtauld Institute of Art
+names:
+  - The Courtauld
+  - The Courtauld Institute of Art
+  - The Courtauld Institute
+  - Courtauld Institute
+  - The Courtald Institute of Art
+  - lang: fr
+    role: translation
+    text: Institut Courtauld
+  - lang: es
+    role: translation
+    text: Instituto de Arte Courtauld
+  - lang: ja
+    role: translation
+    text: コートールド・ギャラリー
+  - lang: zh
+    role: translation
+    text: 科陶德藝術學院
+  - lang: ko
+    role: translation
+    text: 코톨드 미술 연구소
+  - lang: ru
+    role: translation
+    text: Институт искусства Курто
+kind: university
+founded: 1932
+place: london
+location: [-0.11691, 51.51073]
+address: Courtauld Institute of Art, Somerset House, Strand, London, WC2R 0RN
+website_url: https://courtauld.ac.uk/gallery/
+wikidata_id: Q734266
+metadata:
+  sources: [Wikidata Q734266 (retrieved 2026-10-31)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7a/Somerset_House%2C_Strand.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Somerset_House,_Strand.jpg
+    license: CC BY-SA 2.0
+    credit: Stephen Richards
+identifiers:
+  bnf: 12148110z
+  gnd: 36827-1
+  idref: "029967783"
+  lc: n50045627
+  ulan: "500234126"
+  viaf: "129882217"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q734266
+  place:
+    - accessed: 2026-10-31
+      property: P131
+      wikidata: Q734266
+  address:
+    - accessed: 2026-10-31
+      property: P6375
+      wikidata: Q734266
+  founded:
+    - accessed: 2026-10-31
+      property: P571
+      wikidata: Q734266
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q734266

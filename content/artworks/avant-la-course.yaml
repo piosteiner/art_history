@@ -1,0 +1,221 @@
+public_id: 106077
+title_lang: fr
+title: Avant la course
+creator: edgar-degas
+created: c. 1893
+created_span: uncertain
+kind: pastel
+medium: Pastel on paper mounted on board
+materials: [pastel crayon, paper, cardboard]
+dimensions: [64.8, 72.9]
+web_url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+description_md: Signed “Degas” lower left; jockeys before a race [[source/sothebys-n12368-lot-7]].
+provenance:
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1895-01-29
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+        note: "Sotheby’s, provenance: “Galerie Durand-Ruel, Paris (acquired directly from the artist on 29 January 1895)”"
+        source: sothebys-n12368-lot-7
+        accessed: 2026-10-31
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1895
+    method: transfer
+    direct: true
+    place: new-york-city
+    label: Durand-Ruel Gallery, New York
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+        note: "Sotheby’s, provenance: “Durand-Ruel Gallery, New York (transferred from the above in 1895)”"
+        source: sothebys-n12368-lot-7
+        accessed: 2026-10-31
+  - owner: person/harris-whittemore-i
+    acquired: 1896-03-10
+    method: purchase
+    direct: true
+    place: naugatuck
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+        note: "Sotheby’s, provenance: “Harris Whittemore, Naugatuck, Connecticut(acquired from the above on 10 March 1896)”"
+        source: sothebys-n12368-lot-7
+        accessed: 2026-10-31
+  - owner: institution/j-h-whittemore-co
+    method: transfer
+    direct: true
+    place: naugatuck
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+        note: "Sotheby’s, provenance: “J.H. Whittemore Co., Naugatuck, Connecticut(acquired from the above)”"
+        source: sothebys-n12368-lot-7
+        accessed: 2026-10-31
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1936-04-25
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Durand-Ruel Gallery, New York
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+        note: "Sotheby’s, provenance: “Durand-Ruel Gallery, New York (acquired from the above on 25 April 1936)”"
+        source: sothebys-n12368-lot-7
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1937"
+        place: new-york-city
+        number: "14"
+        document: Durand-Ruel Galleries, Exhibition of Masterpieces by Degas
+      - kind: exhibition
+        date: "1939"
+        place: boston
+        number: 86a
+        document: The Museum of Fine Arts, The Sources of Modern Painting
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1940
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+        note: "Sotheby’s, provenance: “Paul Rosenberg, New York (acquired from the above in 1940)”"
+        source: sothebys-n12368-lot-7
+        accessed: 2026-10-31
+  - owner: person/maurice-wertheim
+    acquired: 1942-02-24
+    method: purchase
+    direct: true
+    place: cos-cob
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+        note: "Sotheby’s, provenance: “Maurice Wertheim, Cos Cob, Connecticut (acquired from the above on 24 February 1942)”"
+        source: sothebys-n12368-lot-7
+        accessed: 2026-10-31
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1944
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+        note: "Sotheby’s, provenance: “Paul Rosenberg, New York (acquired from the above in 1944)”"
+        source: sothebys-n12368-lot-7
+        accessed: 2026-10-31
+  - owner: person/sidney-f-brody
+    acquired: 1951-12-13
+    method: purchase
+    direct: true
+    place: los-angeles
+    label: Mr and Mrs Sidney F. Brody
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+        note: "Sotheby’s, provenance: “Mr and Mrs Sidney F. Brody, Los Angeles (acquired from the above on 13 December 1951 and until at least 1968)”"
+        source: sothebys-n12368-lot-7
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1957"
+        place: new-york-city
+        number: "16"
+        document: Paul Rosenberg & Co., Masterpieces Recalled (as “Horses at Longchamps”)
+      - kind: exhibition
+        date: "1958"
+        place: los-angeles
+        number: "64"
+        document: Los Angeles County Museum, Degas Paintings Drawings Prints Sculpture
+      - kind: exhibition
+        date: "1960"
+        place: new-york-city
+        number: "61"
+        document: Wildenstein, Degas
+      - kind: exhibition
+        date: "1968"
+        place: new-york-city
+        number: "16"
+        document: Wildenstein, Degas’ Racing World
+  - owner: institution/acquavella-galleries
+    role: dealer
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+        note: "Sotheby’s, provenance: “Acquavella Galleries, New York (acquired from the above)”"
+        source: sothebys-n12368-lot-7
+        accessed: 2026-10-31
+  - owner: institution/fuji-international-art
+    role: dealer
+    acquired: 1973
+    method: purchase
+    direct: true
+    place: tokyo
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+        note: "Sotheby’s, provenance: “Fuji International Art Company, Tokyo (acquired from the above in 1973)”"
+        source: sothebys-n12368-lot-7
+        accessed: 2026-10-31
+  - owner: institution/alex-reid-lefevre
+    role: agent
+    acquired: 1974
+    direct: true
+    place: london
+    label: consigned by Fuji International Art
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+        note: "Sotheby’s, provenance: “The Lefevre Gallery (Alex Reid & Lefevre, Ltd.), London (consigned by the above in 1974)”"
+        source: sothebys-n12368-lot-7
+        accessed: 2026-10-31
+  - owner: institution/blaquier-arrieta-collection
+    acquired: c. 1977
+    ended: 2026-11-18
+    method: purchase
+    direct: true
+    place: buenos-aires
+    label: Sotheby’s New York
+    certainty: possible
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+        note: "Sotheby’s, provenance: “Acquired from the above circa 1977 by the present owners”"
+        source: sothebys-n12368-lot-7
+        accessed: 2026-10-31
+    check_after: 2026-11-18
+numbers:
+  - number: "1143"
+    source: lemoisne-1946
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+        note: "Sotheby’s, literature: “Paul-André Lemoisne, Degas et son œuvre, vol. III, Paris, 1946, no. 1143, pp. 662-63”"
+        source: sothebys-n12368-lot-7
+        accessed: 2026-10-31
+sources:
+  kind:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+      source: sothebys-n12368-lot-7
+      accessed: 2026-10-31
+  medium:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+      source: sothebys-n12368-lot-7
+      accessed: 2026-10-31
+  created:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+      source: sothebys-n12368-lot-7
+      accessed: 2026-10-31
+  creator:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+      source: sothebys-n12368-lot-7
+      accessed: 2026-10-31
+  materials:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+      source: sothebys-n12368-lot-7
+      accessed: 2026-10-31
+  dimensions:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
+      source: sothebys-n12368-lot-7
+      accessed: 2026-10-31

@@ -1,0 +1,16 @@
+public_id: 105840
+name: Tarrant County
+kind: site
+location: [-97.29, 32.77]
+wikidata_id: Q110412
+metadata:
+  sources: [Wikidata Q110412 (retrieved 2026-10-31)]
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q110412
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q110412

@@ -1,0 +1,40 @@
+public_id: 105802
+name: Paul Pétridès
+given_name: Paul
+family_name: Pétridès
+names: [Paul Petrides, O. Petrides, O. Pétridès, Paul Constantin Pétridès]
+kind: person
+occupations: [art dealer, art collector, tailor]
+birth: 1901-08-18
+death: 1993-08-02
+wikidata_id: Q27908664
+metadata:
+  sources: [Wikidata Q27908664 (retrieved 2026-10-31)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/db/Suzanne_VALADON_%281865-1938%29_PORTRAIT_DE_PAUL_PETRIDES%2C_1934.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Suzanne_VALADON_(1865-1938)_PORTRAIT_DE_PAUL_PETRIDES,_1934.jpg
+    license: Public domain
+    credit: Suzanne Valadon
+identifiers:
+  bnf: "119194428"
+  gnd: "1014479398"
+  idref: "027069028"
+  lc: no2018028973
+  viaf: "46765771"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q27908664
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q27908664
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q27908664
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q27908664

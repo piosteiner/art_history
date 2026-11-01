@@ -199,8 +199,13 @@ provenance:
 numbers:
   - number: PG4P6Q
     label: WPI 2020 (catalogue raisonné)
-  - number: I.199.494
-    label: Wildenstein 1964 (catalogue raisonné)
+  - number: "494"
+    source: wildenstein-1964
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Kunsthaus Zürich, Sammlung online: “Georges Wildenstein: Gauguin, Bd. 1 von 2, Paris: Les Beaux-Arts, 1964, S. 199, Nr. 494.”"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-31
 sources:
   kind:
     - url: https://collection.kunsthaus.ch/de/collection/item/1910/

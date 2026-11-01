@@ -1,0 +1,160 @@
+public_id: 106081
+title_lang: fr
+title: Maison de Piette à Montfoucault, effet de neige, avec un homme portant un fagot
+creator: camille-pissarro
+created: 1875
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [46.3, 56.2]
+web_url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+description_md: Signed “C. Pissarro” and dated “1875” lower right. The house of his friend the painter Ludovic Piette at Montfoucault (Mayenne) [[source/sothebys-n12368-lot-12]].
+provenance:
+  - owner: person/alexandre-rosenberg
+    role: dealer
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+        note: "Sotheby’s, provenance: “Alexandre Rosenberg, Paris”"
+        source: sothebys-n12368-lot-12
+        accessed: 2026-10-31
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1902-10-26
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+        note: "Sotheby’s, provenance: “Galerie Bernheim-Jeune, Paris (acquired from the above on 26 October 1902)”"
+        source: sothebys-n12368-lot-12
+        accessed: 2026-10-31
+  - owner: person/paul-cassirer
+    role: dealer
+    acquired: 1913-11-26
+    method: purchase
+    direct: true
+    place: berlin
+    label: Galerie Paul Cassirer
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+        note: "Sotheby’s, provenance: “Galerie Paul Cassirer, Berlin (acquired from the above on 26 November 1913)”"
+        source: sothebys-n12368-lot-12
+        accessed: 2026-10-31
+  - owner_label: Roeder Collection
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+        note: "Sotheby’s, provenance: “Roeder Collection”"
+        source: sothebys-n12368-lot-12
+        accessed: 2026-10-31
+  - owner: institution/parke-bernet
+    role: agent
+    acquired: 1943-04-29
+    method: auction
+    direct: true
+    place: new-york-city
+    label: sale, 29 April 1943, lot 43
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+        note: "Sotheby’s, provenance: “Parke-Bernet Galleries, New York, 29 April 1943, lot 43 (consigned by the above)”"
+        source: sothebys-n12368-lot-12
+        accessed: 2026-10-31
+  - owner: person/edward-bowes
+    place: new-york-city
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+        note: "Sotheby’s, provenance: “Edward J. Bowes, New York”"
+        source: sothebys-n12368-lot-12
+        accessed: 2026-10-31
+  - owner: institution/kende-galleries-at-gimbel-brothers
+    role: agent
+    acquired: 1946-11-01
+    method: auction
+    place: new-york-city
+    label: sale, 1 November 1946, lot 28 (consigned by the estate of Edward Bowes)
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+        note: "Sotheby’s, provenance: “Kende Galleries, New York, 1 November 1946, lot 28 (consigned by the estate of the above)”"
+        source: sothebys-n12368-lot-12
+        accessed: 2026-10-31
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1946-11-01
+    method: auction
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+        note: "Sotheby’s, provenance: “Wildenstein & Co., Inc., New York (acquired at the above sale)”"
+        source: sothebys-n12368-lot-12
+        accessed: 2026-10-31
+  - owner: institution/wildenstein-co
+    role: dealer
+    method: transfer
+    direct: true
+    place: buenos-aires
+    label: Wildenstein Arte S.A., Buenos Aires
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+        note: "Sotheby’s, provenance: “Wildenstein Arte S.A., Buenos Aires (transferred from the above)”"
+        source: sothebys-n12368-lot-12
+        accessed: 2026-10-31
+  - owner: institution/blaquier-arrieta-collection
+    acquired: 1956-06-04
+    ended: 2026-11-18
+    method: purchase
+    direct: true
+    place: buenos-aires
+    label: Sotheby’s New York
+    certainty: possible
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+        note: "Sotheby’s, provenance: “Acquired from the above on 4 June 1956 by the present owner”"
+        source: sothebys-n12368-lot-12
+        accessed: 2026-10-31
+    check_after: 2026-11-18
+    records:
+      - kind: exhibition
+        date: "1962"
+        place: buenos-aires
+        document: Museo Nacional de Bellas Artes, El Impresionismo francés en las colecciones argentinas
+numbers:
+  - number: "326"
+    source: pissarro-venturi-1939
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+        note: "Sotheby’s, literature: “Ludovic Rodo Pissarro and Lionello Venturi, Camille Pissarro, son art—son oeuvre, Paris, 1939, no. 326”"
+        source: sothebys-n12368-lot-12
+        accessed: 2026-10-31
+  - number: "391"
+    source: pissarro-durand-ruel-snollaerts-2005
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+        note: "Sotheby’s, literature: “Joachim Pissarro and Claire Durand-Ruel Snollaerts, Pissarro, Catalogue critique des peintures, vol. II, Paris, 2005, no. 391”"
+        source: sothebys-n12368-lot-12
+        accessed: 2026-10-31
+sources:
+  kind:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+      source: sothebys-n12368-lot-12
+      accessed: 2026-10-31
+  medium:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+      source: sothebys-n12368-lot-12
+      accessed: 2026-10-31
+  created:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+      source: sothebys-n12368-lot-12
+      accessed: 2026-10-31
+  creator:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+      source: sothebys-n12368-lot-12
+      accessed: 2026-10-31
+  materials:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+      source: sothebys-n12368-lot-12
+      accessed: 2026-10-31
+  dimensions:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+      source: sothebys-n12368-lot-12
+      accessed: 2026-10-31

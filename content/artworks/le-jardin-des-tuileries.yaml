@@ -1,20 +1,210 @@
 public_id: 100691
+title_lang: fr
 title: Le Jardin des Tuileries
 creator: claude-monet
 created: 1876
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
 dimensions: [59.5, 81.8]
 web_url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+description_md: Signed “Claude Monet” and dated “76” lower left. The garden seen from above, from an apartment at 198 rue de Rivoli; shown at the third Impressionist exhibition in 1877 [[source/sothebys-n12368-lot-4]].
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Claude_Monet_-_Le_Jardin_des_Tuileries_%28W_402%29.jpg/1280px-Claude_Monet_-_Le_Jardin_des_Tuileries_%28W_402%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Le_Jardin_des_Tuileries_(W_402).jpg
     license: Public domain
-    credit: Pierre-Auguste Renoir
+    credit: Claude Monet
 provenance:
+  - owner: artist/claude-monet
+    acquired: 1876
+    method: creation
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+        note: "Sotheby’s, provenance: “Executed in 1876.”"
+        source: sothebys-n12368-lot-4
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: 1877-04
+        place: paris
+        number: "119"
+        document: 3ème exposition de peinture, 6 rue Le Peletier (third Impressionist exhibition)
+  - owner: person/ernest-may
+    acquired: 1878-04-14
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+        note: "Sotheby’s, provenance: “Ernest May, Paris (acquired directly from the artist on 14 April 1878)”"
+        source: sothebys-n12368-lot-4
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1883"
+        place: paris
+        document: Galerie Durand-Ruel, Exposition des oeuvres de Claude Monet (not in the catalogue)
+        certainty: possible
+      - kind: exhibition
+        date: "1889"
+        place: paris
+        number: "32"
+        document: Galerie Georges Petit, Claude Monet, A. Rodin (as “Les Tuileries”)
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1890-06-04
+    method: auction
+    direct: true
+    place: paris
+    label: sale, 4 June 1890, lot 48
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+        note: "Sotheby’s, provenance: “Galerie Georges Petit, Paris, 4 June 1890, lot 48 (consigned by the above)”"
+        source: sothebys-n12368-lot-4
+        accessed: 2026-10-31
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1890-06-04
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+        note: "Sotheby’s, provenance: “Galerie Durand-Ruel, Paris (acquired at the above sale)”"
+        source: sothebys-n12368-lot-4
+        accessed: 2026-10-31
+  - owner: person/edson-keith
+    acquired: 1890-06-09
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+        note: "Sotheby’s, provenance: “Edson Keith, Chicago (acquired from the above on 9 June 1890)”"
+        source: sothebys-n12368-lot-4
+        accessed: 2026-10-31
+  - owner: person/josef-stransky
+    place: new-york-city
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+        note: "Sotheby’s, provenance: “Joseph Stránský, New York”"
+        source: sothebys-n12368-lot-4
+        accessed: 2026-10-31
+  - owner: person/jos-hessel
+    role: dealer
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+        note: "Sotheby’s, provenance: “Jos Hessel, Paris”"
+        source: sothebys-n12368-lot-4
+        accessed: 2026-10-31
+  - owner: person/julie-goujon-reinach
+    acquired: c. 1937
+    method: purchase
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+        note: "Sotheby’s, provenance: “Julie Goujon (née Reinach), Paris (acquired circa 1937)”"
+        source: sothebys-n12368-lot-4
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1937"
+        place: warsaw
+        number: "21"
+        document: Muzeum Narodowe, Wystawa malarstwa francuskiego od Maneta po dzień dzisiejszy; then Prague, Mánes
+      - kind: exhibition
+        date: "1952"
+        place: zurich
+        number: "42"
+        document: Kunsthaus Zürich, Claude Monet; then Paris, Galerie des Beaux-Arts, and The Hague, Gemeentemuseum (no. 39)
+      - kind: exhibition
+        date: "1957"
+        place: london
+        number: "49"
+        document: "Tate Gallery, Claude Monet: An Exhibition of Paintings; then Edinburgh, Royal Scottish Academy"
+      - kind: exhibition
+        date: "1961"
+        place: paris
+        document: Musée Jacquemart-André, Cent chefs-d’œuvre prêtés par les plus grands amateurs de Paris
+      - kind: exhibition
+        date: "1962"
+        place: paris
+        number: "56"
+        document: Galerie Charpentier, Chefs-d’oeuvre de collections françaises
+      - kind: exhibition
+        date: 1964/1965
+        place: munich
+        number: "190"
+        document: Haus der Kunst, Französische Malerei des 19. Jahrhunderts, Von David bis Cézanne
+      - kind: exhibition
+        date: "1970"
+        place: paris
+        number: "14"
+        document: Galerie Durand-Ruel, Claude Monet
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1971 or earlier
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+        note: "Sotheby’s, provenance: “Wildenstein & Co., Inc., New York (acquired from the above by 1971)”"
+        source: sothebys-n12368-lot-4
+        accessed: 2026-10-31
   - owner: institution/blaquier-arrieta-collection
+    acquired: 1979
     ended: 2026-11-18
+    method: purchase
+    direct: true
+    place: buenos-aires
     label: Sotheby's New York
     certainty: possible
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+        note: "Sotheby’s, provenance: “Acquired from the above in 1979 by the present owner”"
+        source: sothebys-n12368-lot-4
+        accessed: 2026-10-31
     check_after: 2026-11-18
 numbers:
-  - number: Wildenstein Nr. 402
-    source: wildenstein-index-number
+  - number: "402"
+    source: wildenstein-1996
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+        note: "Sotheby’s, literature: “Daniel Wildenstein, Monet: Catalogue Raisonné, Cologne, 1996, no. 402, vol. I, pp. 118 and 123; vol. II, p. 164”"
+        source: sothebys-n12368-lot-4
+        accessed: 2026-10-31
+  - number: "402"
+    source: wildenstein-1974-1991
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+        note: "Sotheby’s, literature: “Daniel Wildenstein, Claude Monet: Biographie et catalogue raisonné, vol. I, Lausanne, 1974, no. 402, p. 288”"
+        source: sothebys-n12368-lot-4
+        accessed: 2026-10-31
+sources:
+  kind:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+      source: sothebys-n12368-lot-4
+      accessed: 2026-10-31
+  medium:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+      source: sothebys-n12368-lot-4
+      accessed: 2026-10-31
+  created:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+      source: sothebys-n12368-lot-4
+      accessed: 2026-10-31
+  creator:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+      source: sothebys-n12368-lot-4
+      accessed: 2026-10-31
+  materials:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+      source: sothebys-n12368-lot-4
+      accessed: 2026-10-31
+  dimensions:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+      source: sothebys-n12368-lot-4
+      accessed: 2026-10-31

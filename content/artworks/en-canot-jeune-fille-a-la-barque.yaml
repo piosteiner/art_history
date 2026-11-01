@@ -1,4 +1,5 @@
 public_id: 100717
+title_lang: fr
 title: En Canot (Jeune fille à la barque)
 creator: pierre-auguste-renoir
 created: 1877
@@ -7,40 +8,226 @@ medium: Oil on canvas
 materials: [oil paint, canvas]
 dimensions: [73.7, 92.9]
 web_url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+description_md: Signed “Renoir” and dated “77” lower right [[source/sothebys-n12368-lot-8]].
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Pierre-Auguste_Renoir_-_En_Canot_%28Jeune_fille_%C3%A0_la_barque%29.jpg/1280px-Pierre-Auguste_Renoir_-_En_Canot_%28Jeune_fille_%C3%A0_la_barque%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_En_Canot_(Jeune_fille_%C3%A0_la_barque).jpg
     license: Public domain
     credit: Pierre-Auguste Renoir
 provenance:
+  - owner: person/charles-edward-haviland
+    acquired: c. 1880
+    method: purchase
+    direct: true
+    place: limoges
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+        note: "Sotheby’s, provenance: “Charles Édouard Haviland, Limoges (acquired directly from the artist circa 1880)”"
+        source: sothebys-n12368-lot-8
+        accessed: 2026-10-31
+  - owner: person/jos-hessel
+    role: dealer
+    acquired: 1918 or earlier
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+        note: "Sotheby’s, provenance: “Jos Hessel, Paris (acquired before 1918)”"
+        source: sothebys-n12368-lot-8
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1920"
+        note: the owner at that date is not given
+        place: paris
+        number: "48"
+        document: Galerie Durand-Ruel, Tableaux Pastels—Dessins par Renoir (as “En canot”)
+        certainty: possible
+  - owner: person/henry-jean-laroche
+    acquired: 1931 or earlier
+    place: pont-l-eveque
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+        note: "Sotheby’s, provenance: “Henry-Jean Laroche, Pont-L’Evêque (acquired by 1931)”"
+        source: sothebys-n12368-lot-8
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1931"
+        place: paris
+        number: "66"
+        document: Galerie Rosenberg, Oeuvres importantes de grands maîtres du dix-neuvième siècle (as “Femme dans un bateau”)
+  - owner: person/jacques-laroche
+    acquired: 1937 or earlier
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+        note: "Sotheby’s, provenance: “Jacques Laroche, Paris (acquired by descent from the above by 1937)”"
+        source: sothebys-n12368-lot-8
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1937"
+        place: paris
+        number: "393"
+        document: Palais National des Arts, Chefs-d’oeuvre de l’art français (as “La Barque à Argenteuil”)
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1938
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+        note: "Sotheby’s, provenance: “Paul Rosenberg, Paris (acquired from the above in 1938)”"
+        source: sothebys-n12368-lot-8
+        accessed: 2026-10-31
+  - owner: person/paul-rosenberg
+    role: dealer
+    method: transfer
+    direct: true
+    place: new-york-city
+    label: Paul Rosenberg & Co., New York
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+        note: "Sotheby’s, provenance: “Paul Rosenberg & Co., New York (transferred from the above)”"
+        source: sothebys-n12368-lot-8
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1941"
+        place: new-york-city
+        number: "22"
+        document: Duveen Galleries, Renoir Centennial Exhibition (as “Jeune fille à la barque”)
+  - owner: person/albert-lasker
+    co_owners: [person/mary-lasker]
+    acquired: 1944-11
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+        note: "Sotheby’s, provenance: “Mr. and Mrs. Albert D. Lasker, New York (acquired from the above in November 1944)”"
+        source: sothebys-n12368-lot-8
+        accessed: 2026-10-31
+    records:
+      - kind: exhibition
+        date: "1950"
+        place: new-york-city
+        number: "23"
+        document: Wildenstein & Co., A Loan Exhibition of Renoir (as “Young Girl in a Boat”)
+      - kind: exhibition
+        date: "1953"
+        place: dallas
+        number: "60"
+        document: Dallas Museum of Fine Arts, Sixty-Nine Paintings from the Collection of Mrs. Albert D. Lasker
+      - kind: exhibition
+        date: "1954"
+        place: san-francisco
+        number: "57"
+        document: California Palace of the Legion of Honor, Sixty-Seven Paintings from the Collection of Mrs. Albert D. Lasker
+      - kind: exhibition
+        date: "1955"
+        place: chicago
+        number: "34"
+        document: The Art Institute of Chicago, Great French Paintings in Memory of Chauncey McCormick
+      - kind: exhibition
+        date: "1957"
+        place: new-york-city
+        number: "23"
+        document: Paul Rosenberg & Co., Masterpieces Recalled (as “Girl in a Boat”)
+      - kind: exhibition
+        date: "1958"
+        place: new-york-city
+        number: "20"
+        document: Wildenstein & Co., Renoir
+      - kind: exhibition
+        date: "1973"
+        place: chicago
+        number: "22"
+        document: The Art Institute of Chicago, Paintings by Renoir
+  - owner: institution/alex-reid-lefevre
+    role: dealer
+    acquired: c. 1976
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+        note: "Sotheby’s, provenance: “The Lefevre Gallery (Alex Reid & Lefevre Ltd.), (acquired from the above circa 1976)”"
+        source: sothebys-n12368-lot-8
+        accessed: 2026-10-31
   - owner: institution/blaquier-arrieta-collection
+    acquired: 1977
     ended: 2026-11-18
+    method: purchase
+    direct: true
+    place: buenos-aires
     label: Sotheby's New York
     certainty: possible
-    sources: [https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en]
+    sources:
+      - https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+        note: "Sotheby’s, provenance: “Acquired from the above in 1977 by the present owners”"
+        source: sothebys-n12368-lot-8
+        accessed: 2026-10-31
     check_after: 2026-11-18
+numbers:
+  - number: "261"
+    source: daulte-1971
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+        note: "Sotheby’s, literature: “François Daulte, Auguste Renoir, Catalogue raisonné de l’oeuvre peint, vol. I, Lausanne, 1971, no. 261”"
+        source: sothebys-n12368-lot-8
+        accessed: 2026-10-31
+  - number: "214"
+    source: dauberville-2007
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+        note: "Sotheby’s, literature: “Guy-Patrice and Michel Dauberville, Renoir, Catalogue Raisonné des Tableaux, Pastels, Dessins et Aquarelles, vol. I, Paris, 2007, no. 214, p. 258”"
+        source: sothebys-n12368-lot-8
+        accessed: 2026-10-31
 sources:
   kind:
     - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
       source: sothebys-com
       accessed: 2026-10-18
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+      source: sothebys-n12368-lot-8
+      accessed: 2026-10-31
   medium:
     - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
       source: sothebys-com
       accessed: 2026-10-18
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+      source: sothebys-n12368-lot-8
+      accessed: 2026-10-31
   created:
     - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
       source: sothebys-com
       accessed: 2026-10-18
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+      source: sothebys-n12368-lot-8
+      accessed: 2026-10-31
   creator:
     - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
       source: sothebys-com
       accessed: 2026-10-18
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+      source: sothebys-n12368-lot-8
+      accessed: 2026-10-31
   materials:
     - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
       source: sothebys-com
       accessed: 2026-10-18
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+      source: sothebys-n12368-lot-8
+      accessed: 2026-10-31
   dimensions:
     - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
       source: sothebys-com
       accessed: 2026-10-18
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+      source: sothebys-n12368-lot-8
+      accessed: 2026-10-31

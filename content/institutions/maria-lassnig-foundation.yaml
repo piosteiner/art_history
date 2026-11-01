@@ -8,6 +8,13 @@ website_url: https://www.marialassnig.org/
 wikidata_id: Q24718378
 metadata:
   sources: [Wikidata Q24718378 (retrieved 2026-10-08)]
+relationships:
+  - type: located_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-31
+        property: P131
+        wikidata: Q24718378
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/ec/Maria_Lassnig_mit_Sabine_Groschup%2C_Wien_2008.png
     source_url: https://commons.wikimedia.org/wiki/File:Maria_Lassnig_mit_Sabine_Groschup,_Wien_2008.png

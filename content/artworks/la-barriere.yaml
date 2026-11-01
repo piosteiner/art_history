@@ -102,7 +102,14 @@ provenance:
         accessed: 2026-10-15
 numbers:
   - number: "353"
-    label: Wildenstein (catalogue raisonné)
+    source: wildenstein-1964
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1283/
+        note: "Kunsthaus Zürich, Sammlung online: “Georges Wildenstein: Gauguin: Catalogue [raisonné], Bd. 1, Paris: Les Beaux-Arts […], 1964., Kat.-Nr. 353.”"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-31
+identifiers:
+  wpi: "76181"
 sources:
   kind:
     - url: https://collection.kunsthaus.ch/de/collection/item/1283/

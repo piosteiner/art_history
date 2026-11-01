@@ -14,6 +14,13 @@ death: 1907-09-14
 wikidata_id: Q94825244
 metadata:
   sources: [Wikidata Q94825244 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/bratislava
+    sources:
+      - accessed: 2026-10-31
+        property: P19
+        wikidata: Q94825244
 identifiers:
   gnd: "1020739371"
   viaf: "232561965"

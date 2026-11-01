@@ -138,7 +138,12 @@ numbers:
   - number: "136"
     institution: foundation-e-g-buhrle-collection
   - number: "107"
-    label: Wildenstein Ingres (catalogue raisonné)
+    source: wildenstein-1954
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+        note: "Kunsthaus Zürich, Sammlung online: “Georges Wildenstein: Ingres, London: Phaidon Press, 1954, Nr. 107.”"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-31
 sources:
   kind:
     - url: https://collection.kunsthaus.ch/de/collection/item/512962/

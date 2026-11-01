@@ -1,0 +1,16 @@
+public_id: 105832
+name: Dallas County
+kind: site
+location: [-96.78, 32.77]
+wikidata_id: Q111168
+metadata:
+  sources: [Wikidata Q111168 (retrieved 2026-10-31)]
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q111168
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q111168

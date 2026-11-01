@@ -18,6 +18,13 @@ website_url: https://www.rekihaku.ac.jp/
 wikidata_id: Q3330690
 metadata:
   sources: [Wikidata Q3330690 (retrieved 2026-10-28)]
+relationships:
+  - type: located_in
+    to: place/sakura
+    sources:
+      - accessed: 2026-10-31
+        property: P131
+        wikidata: Q3330690
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/National_Museum_of_Japanese_History_06.jpg/1280px-National_Museum_of_Japanese_History_06.jpg
     source_url: https://commons.wikimedia.org/wiki/File:National_Museum_of_Japanese_History_06.jpg

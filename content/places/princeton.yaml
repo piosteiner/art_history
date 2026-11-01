@@ -1,0 +1,40 @@
+public_id: 105811
+name: Princeton
+names:
+  - Princeton, New Jersey
+  - Princeton borough
+  - Princeton, N.J.
+  - lang: ja
+    role: translation
+    text: プリンストン
+  - lang: zh
+    role: translation
+    text: 普林斯顿
+  - lang: ko
+    role: translation
+    text: 프린스턴
+  - lang: ru
+    role: translation
+    text: Принстон
+kind: site
+parent: united-states
+country_code: US
+location: [-74.65694, 40.35222]
+wikidata_id: Q138518
+metadata:
+  sources: [Wikidata Q138518 (retrieved 2026-10-31)]
+identifiers:
+  gnd: 4103300-0
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q138518
+  parent:
+    - accessed: 2026-10-31
+      property: P131
+      wikidata: Q138518
+  location:
+    - accessed: 2026-10-31
+      property: P625
+      wikidata: Q138518

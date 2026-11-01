@@ -1,0 +1,31 @@
+public_id: 105803
+name: Perls Galleries
+names:
+  - Galerie Perls,
+  - lang: fr
+    role: translation
+    text: Galerie Perls
+kind: gallery
+founded: 1937
+dissolved: 1997
+place: new-york-city
+wikidata_id: Q67164948
+metadata:
+  sources: [Wikidata Q67164948 (retrieved 2026-10-31)]
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q67164948
+  place:
+    - accessed: 2026-10-31
+      property: P131
+      wikidata: Q67164948
+  founded:
+    - accessed: 2026-10-31
+      property: P571
+      wikidata: Q67164948
+  dissolved:
+    - accessed: 2026-10-31
+      property: P576
+      wikidata: Q67164948

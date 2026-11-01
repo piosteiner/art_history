@@ -9,6 +9,13 @@ website_url: https://www.dulwichpicturegallery.org.uk/
 wikidata_id: Q1241163
 metadata:
   sources: [Wikidata Q1241163 (retrieved 2026-10-27)]
+relationships:
+  - type: located_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-31
+        property: P159
+        wikidata: Q1241163
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/e8/Dulwich_Picture_Gallery.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Dulwich_Picture_Gallery.jpg

@@ -1,0 +1,36 @@
+public_id: 105782
+name: Charles Edward Haviland
+given_name: Charles Edward
+family_name: Haviland
+names: [Charles Édouard Haviland, Charles Haviland]
+kind: person
+occupations: [industrialist, art collector, entrepreneur, ceramicist]
+birth: 1839-01-07
+death: 1921-03-15
+wikidata_id: Q17350182
+metadata:
+  sources: [Wikidata Q17350182 (retrieved 2026-10-31)]
+identifiers:
+  bnf: "123292034"
+  gnd: "139471979"
+  idref: "032218788"
+  lc: n83172706
+  ulan: "500082647"
+  viaf: "96274650"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q17350182
+  birth:
+    - accessed: 2026-10-31
+      property: P569
+      wikidata: Q17350182
+  death:
+    - accessed: 2026-10-31
+      property: P570
+      wikidata: Q17350182
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q17350182

@@ -10,6 +10,13 @@ website_url: https://www.munch.no/
 wikidata_id: Q844926
 metadata:
   sources: [Wikidata Q844926 (retrieved 2026-10-08)]
+relationships:
+  - type: located_in
+    to: place/oslo
+    sources:
+      - accessed: 2026-10-31
+        property: P131
+        wikidata: Q844926
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/MUNCH_Museum_front_%282020%29_4.jpg/1280px-MUNCH_Museum_front_%282020%29_4.jpg
     source_url: https://commons.wikimedia.org/wiki/File:MUNCH_Museum_front_(2020)_4.jpg

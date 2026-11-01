@@ -45,6 +45,19 @@ death: 1872-05-28
 wikidata_id: Q57653
 metadata:
   sources: [Wikidata Q57653 (retrieved 2026-10-19)]
+relationships:
+  - type: born_in
+    to: place/munich
+    sources:
+      - accessed: 2026-10-31
+        property: P19
+        wikidata: Q57653
+  - type: died_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-31
+        property: P20
+        wikidata: Q57653
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Stieler_Archduchess_1832.jpg/1280px-Stieler_Archduchess_1832.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Stieler_Archduchess_1832.jpg

@@ -1,0 +1,20 @@
+public_id: 105807
+name: Kende Galleries at Gimbel Brothers
+names: [Kende Galleries of Gimbel Brothers, Kende Galleries]
+kind: auction house
+place: new-york-city
+wikidata_id: Q75835389
+metadata:
+  sources: [Wikidata Q75835389 (retrieved 2026-10-31)]
+identifiers:
+  lc: no95013710
+  viaf: "148689628"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q75835389
+  place:
+    - accessed: 2026-10-31
+      property: P131
+      wikidata: Q75835389

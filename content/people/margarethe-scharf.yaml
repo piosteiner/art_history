@@ -1,0 +1,25 @@
+public_id: 105793
+name: Margarethe Scharf
+given_name: Margarethe
+family_name: Scharf
+names:
+  - Margarethe Gerstenberg
+  - lang: fr
+    role: translation
+    text: Margarethe Scharf née Gerstenberg
+kind: person
+occupations: [art collector]
+wikidata_id: Q113629882
+metadata:
+  sources: [Wikidata Q113629882 (retrieved 2026-10-31)]
+identifiers:
+  viaf: "301434730"
+sources:
+  kind:
+    - accessed: 2026-10-31
+      property: P31
+      wikidata: Q113629882
+  occupations:
+    - accessed: 2026-10-31
+      property: P106
+      wikidata: Q113629882
