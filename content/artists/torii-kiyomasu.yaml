@@ -1,0 +1,41 @@
+public_id: 107737
+name: Torii Kiyomasu
+names:
+  - lang: ja
+    role: original
+    text: 鳥居清倍
+  - Torii Kiyomasu I
+  - Kiyomasu
+  - Tori Kiyomasu
+  - Kyomasu I
+  - Kiyomasu Torii
+  - lang: ja
+    role: original
+    text: 初代 鳥居清倍
+  - lang: ru
+    role: translation
+    text: Тории Киёмасу
+birth: 1690
+death: 1720s
+wikidata_id: Q3136190
+metadata:
+  sources: [Wikidata Q3136190 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Torii_Kiyomasu_-_Ichikawa_Danjuro_I_in_role_of_Takenuki_Goro.jpg/1280px-Torii_Kiyomasu_-_Ichikawa_Danjuro_I_in_role_of_Takenuki_Goro.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Torii_Kiyomasu_-_Ichikawa_Danjuro_I_in_role_of_Takenuki_Goro.jpg
+    license: Public domain
+    credit: Torii Kiyomasu
+identifiers:
+  gnd: 13283605X
+  lc: n80126434
+  ulan: "500118868"
+  viaf: "6670149296288780670007"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3136190
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3136190

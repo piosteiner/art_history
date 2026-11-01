@@ -1,0 +1,62 @@
+public_id: 107717
+name: Los Angeles County Museum of Art
+names:
+  - LACMA
+  - lang: fr
+    role: translation
+    text: musée d'Art du comté de Los Angeles
+  - lang: es
+    role: translation
+    text: Museo de Arte del Condado de Los Ángeles
+  - lang: ja
+    role: translation
+    text: ロサンゼルス・カウンティ美術館
+  - lang: zh
+    role: translation
+    text: 洛杉磯郡藝術博物館
+  - lang: ko
+    role: translation
+    text: 로스앤젤레스 카운티 미술관
+  - lang: ru
+    role: translation
+    text: Музей искусств округа Лос-Анджелес
+kind: museum
+founded: 1910
+place: los-angeles
+location: [-118.35917, 34.06333]
+address: 5905 Wilshire Boulevard
+website_url: http://www.lacma.org
+wikidata_id: Q1641836
+metadata:
+  sources: [Wikidata Q1641836 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Highsmithmaycompanywilshire.jpg/1280px-Highsmithmaycompanywilshire.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Highsmithmaycompanywilshire.jpg
+    license: Public domain
+    credit: Carol M. Highsmith
+identifiers:
+  gnd: 1018986-5
+  idref: "029887194"
+  lc: n78097041
+  viaf: "977145857891723021009"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1641836
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1641836
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q1641836
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1641836
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1641836

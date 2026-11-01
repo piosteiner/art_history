@@ -1,0 +1,32 @@
+public_id: 107989
+title: Writing box (suzuribako)
+attribution_label: attributed to Tsuchida Sōetsu
+created: 18th century
+created_span: uncertain
+kind: inkstone case
+medium: Lacquer with lead inlay
+materials: [lacquer]
+dimensions: [5.1, 21.4, 29]
+description_md: "An [[inkstone-case]] attributed to [[artist/tsuchida-soetsu]], a quotation of or tribute to the Deer Scroll of Kōetsu and Sōtatsu: deer inlaid in lead are grouped in a well-articulated pattern against glossy black lacquer, the matte grey of the lead heightening the paradoxical richness of a simple design. [[source/history-of-japanese-art|pp. 300–301, fig. 346]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 300–301, fig. 346
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 300–301, fig. 346
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 300–301, fig. 346
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 300–301, fig. 346
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 300–301, fig. 346
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 300–301, fig. 346

@@ -1,0 +1,43 @@
+public_id: 107764
+name: Yosa Buson
+names:
+  - lang: ja
+    role: original
+    text: 与謝蕪村
+  - Yosa no Buson
+  - lang: zh
+    role: translation
+    text: 與謝蕪村
+  - lang: ko
+    role: translation
+    text: 요사 부손
+  - lang: ru
+    role: translation
+    text: Ёса Бусон
+birth: 1716
+death: 1784-01-17
+wikidata_id: Q31523
+metadata:
+  sources: [Wikidata Q31523 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a4/Yosa_Buson.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yosa_Buson.jpg
+    license: Public domain
+    credit: Matsumura Goshun
+identifiers:
+  bnf: "119259975"
+  gnd: "119045877"
+  idref: "027154637"
+  lc: n80038349
+  nlk: KAC200108999
+  ulan: "500121069"
+  viaf: "120725614"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q31523
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q31523

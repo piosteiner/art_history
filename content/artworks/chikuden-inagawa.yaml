@@ -1,0 +1,34 @@
+public_id: 107931
+title: Boating on the Inagawa
+creator: tanomura-chikuden
+created: 1829
+kind: kakemono
+medium: Hanging scroll, ink and light colour on paper
+materials: [ink, paper]
+dimensions: [133, 46.5]
+description_md: "One of the gentlest paintings of [[artist/tanomura-chikuden]] (1777–1835), physician’s son and teacher in the Oka domain of Kyūshū, who resigned in frustration after his proposals for the peasants were rejected: a day spent fishing with [[person/rai-sanyo]], the two absorbed in conversation in their boats, the house of their merchant hosts above, in pale grey, blue-green and pink dotting. [[source/history-of-japanese-art|pp. 338–339, fig. 395]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 338–339, fig. 395
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 338–339, fig. 395
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 338–339, fig. 395
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 338–339, fig. 395
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 338–339, fig. 395
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 338–339, fig. 395
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 338–339, fig. 395

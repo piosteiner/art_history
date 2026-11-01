@@ -1,0 +1,53 @@
+public_id: 107744
+name: Ogata Kenzan
+names:
+  - lang: ja
+    role: original
+    text: 尾形乾山
+  - Gyokudō
+  - Ijū Ogata
+  - Gonpei Ogata
+  - Shōko
+  - Shōkosai
+  - Shisui
+  - Ogata Shinsei
+  - Kenzan
+  - Iin
+  - Ogata Gonpei
+  - Tōin
+  - Shinsei Ogata
+  - Shūseidō
+  - Gonbei
+  - Furiku
+  - Tōzen
+  - Kenzan Ogata
+  - Shinsei
+  - Reikai
+  - lang: ko
+    role: translation
+    text: 오가타 겐잔
+  - lang: ru
+    role: translation
+    text: Огата Кэндзан
+birth: 1663
+death: 1743-07-22
+wikidata_id: Q534279
+metadata:
+  sources: [Wikidata Q534279 (retrieved 2026-11-01)]
+identifiers:
+  bnf: 14533924d
+  gnd: "124282253"
+  idref: "058414541"
+  kulturnav: 12146e96-bca3-4423-bbaf-3e2b23de3151
+  lc: n82048775
+  ulan: "500121062"
+  viaf: "30466824"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q534279
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q534279

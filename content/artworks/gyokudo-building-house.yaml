@@ -1,0 +1,34 @@
+public_id: 107937
+title: Building a House in the Mountains
+creator: uragami-gyokudo
+created: 1792
+kind: kakemono
+medium: Hanging scroll, ink and slight colour on silk
+materials: [ink, silk]
+dimensions: [66, 32.5]
+description_md: "An early painting by [[artist/uragami-gyokudo]] (1745–1820), the official of the Ikeda clan who in 1794 resigned his post and wandered through Japan with his koto: closer to Taiga than to his later work, with coloured washes and repeated brushstrokes for the foliage. [[source/history-of-japanese-art|p. 337, fig. 393]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 337, fig. 393
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 337, fig. 393
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 337, fig. 393
+  created:
+    - source: history-of-japanese-art
+      locator: p. 337, fig. 393
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 337, fig. 393
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 337, fig. 393
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 337, fig. 393

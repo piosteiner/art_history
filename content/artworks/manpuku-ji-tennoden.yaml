@@ -1,0 +1,37 @@
+public_id: 107971
+title: Tennōden (Hall of the Guardian Kings), Manpukuji
+attribution_label: Anonymous
+created: 1668
+kind: building
+medium: Wood
+materials: [wood]
+institution: manpuku-ji
+description_md: The hall of the Four Guardian Kings at [[institution/manpuku-ji]], the temple of the Ōbaku Zen school founded by the Chinese priest [[person/ingen]] (1592–1673), who reached Nagasaki in 1654 and was given land near Uji by the Konoe family in 1661. Inside sit a Hotei (an incarnation of Miroku) and a standing Idaten; covered passages connect it with the subsidiary buildings. Round windows and railings give the temple its Chinese flavour. [[source/history-of-japanese-art|pp. 307–308, fig. 356]]
+relationships:
+  - type: created_in
+    to: place/uji
+    period: 1668
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 307–308, fig. 356
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 307–308, fig. 356
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 307–308, fig. 356
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 307–308, fig. 356
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 307–308, fig. 356
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 307–308, fig. 356
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 307–308, fig. 356

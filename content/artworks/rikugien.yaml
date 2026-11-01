@@ -1,0 +1,33 @@
+public_id: 107982
+title: Rikugien gardens
+attribution_label: Anonymous
+created: 1699/1706
+kind: garden
+medium: Water, stones, plants
+institution: rikugien-institution
+description_md: "One of the first large gardens laid out in Edo between 1699 and 1706 by Yanagisawa Yoshiyasu, a favourite of the shogun [[person/tokugawa-tsunayoshi]] (1680–1709): almost 25 acres (10 ha) with a lake and artificial hills, planted like a daimyo garden but on a vast scale — today a public park, as such spaces became places where the population of Edo gathered on holidays. [[source/history-of-japanese-art|pp. 275–276, fig. 314]]"
+relationships:
+  - type: created_in
+    to: place/tokyo
+    period: 1699/1706
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 275–276, fig. 314
+  - type: associated_with
+    to: movement/genroku-era
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 275–276, fig. 314
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 275–276, fig. 314
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 275–276, fig. 314
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 275–276, fig. 314
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 275–276, fig. 314

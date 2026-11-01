@@ -1,0 +1,66 @@
+public_id: 107779
+name: Rai San'yo
+names:
+  - lang: ja
+    role: original
+    text: 頼 山陽
+  - Rai San'yō
+  - Sanjuroppō Gaishi
+  - Rai Jō
+  - Sanyo Rai
+  - lang: nl
+    role: translation
+    text: San'yo? Rai
+  - lang: de
+    role: translation
+    text: Rai San’yō
+  - lang: es
+    role: translation
+    text: San'yo Rai
+  - lang: ja
+    role: original
+    text: 頼山陽
+  - lang: zh
+    role: translation
+    text: 賴山陽
+  - lang: ko
+    role: translation
+    text: 라이 산요
+  - lang: ru
+    role: translation
+    text: Рай Санъё
+kind: person
+occupations: [poet, historian, painter, writer, scholar]
+birth: 1780-01-21
+death: 1832-10-16
+wikidata_id: Q153320
+metadata:
+  sources: [Wikidata Q153320 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/%E9%A0%BC%E5%B1%B1%E9%99%BD_%E5%83%8F_%28cropped%29.jpg/1280px-%E9%A0%BC%E5%B1%B1%E9%99%BD_%E5%83%8F_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E9%A0%BC%E5%B1%B1%E9%99%BD_%E5%83%8F_(cropped).jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "104303654"
+  idref: "130173037"
+  lc: n81022222
+  ulan: "500324574"
+  viaf: "47198249"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q153320
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q153320
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q153320
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q153320

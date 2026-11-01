@@ -1,0 +1,16 @@
+public_id: 107709
+name: Dublin
+kind: settlement
+location: [-6.26028, 53.34972]
+wikidata_id: Q1761
+metadata:
+  sources: [Wikidata Q1761 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1761
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1761

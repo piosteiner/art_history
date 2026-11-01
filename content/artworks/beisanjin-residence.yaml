@@ -1,0 +1,30 @@
+public_id: 107925
+title: The Residence
+creator: okada-beisanjin
+created: 1793
+kind: handscroll
+medium: Handscroll, ink on paper
+materials: [ink, paper]
+description_md: "A record of a gathering by [[artist/okada-beisanjin]] (1744–1820), the Osaka rice broker — “Man of a Mountain of Rice” — whose house on the Yodo River was a meeting place for the literati of the Kansai: after a visit by the young [[artist/tanomura-chikuden]] in 1793 the guests take their leave through the rice fields, Beisanjin pointing the way, followed by [[artist/uragami-gyokudo]] and Rai Sanyō, the house open behind them on a moonlit night. [[source/history-of-japanese-art|pp. 335–336, fig. 391]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 335–336, fig. 391
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 335–336, fig. 391
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 335–336, fig. 391
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 335–336, fig. 391
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 335–336, fig. 391
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 335–336, fig. 391

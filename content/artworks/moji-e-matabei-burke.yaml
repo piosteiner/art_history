@@ -1,0 +1,41 @@
+public_id: 107973
+title: Pair of word pictures (moji-e)
+creator: iwasa-matabei
+attribution_label: attributed to Iwasa Matabei
+created: 17th century
+created_span: uncertain
+kind: album leaf
+medium: Album leaves, ink on paper
+materials: [ink, paper]
+dimensions: [29.2, 22.2]
+dimensions_note: each
+institution: mary-and-jackson-burke-foundation
+description_md: "A beggar and a samurai retainer whose thick black outlines are in fact [[hiragana]] — tsu ma ichi (“beggar”) and orei o mōshi sōrō (“I humbly thank you”): [[moji-e]] in the witty brushwork identified with [[artist/iwasa-matabei]] (1578–1650), traditionally credited with founding the ukiyo genre. Christine Guth has seen in such images the playfulness (asobi) of Edo art and the growing literacy of its public. [[source/history-of-japanese-art|pp. 278–279, fig. 316]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 278–279, fig. 316
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 278–279, fig. 316
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 278–279, fig. 316
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 278–279, fig. 316
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 278–279, fig. 316
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 278–279, fig. 316
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 278–279, fig. 316
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 278–279, fig. 316

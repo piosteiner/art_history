@@ -1,0 +1,40 @@
+public_id: 107999
+title: Uchikake with a design of bamboo and mist
+creator: gion-nankai
+attribution_label: attributed to Gion Nankai
+created: 1700/1750
+kind: uchikake
+medium: Ink, gold leaf and gold powder on white figured silk satin
+materials: [ink, gold leaf, satin]
+dimensions: [164.5, 124.1]
+institution: metropolitan-museum-of-art
+inventory_number: 1975.268.88
+description_md: "A spectacular [[uchikake]] painted in ink with gold leaf and gold powder on white figured silk: bamboo in the mist. Robert T. Singer attributes it to [[artist/gion-nankai]] (1677–1751), founder of the Japanese literati school, after a poem by [[person/rai-sanyo]] describing how a wealthy townsman of Izumi commissioned it for his mistress and persuaded Nankai to add his brush. [[source/history-of-japanese-art|pp. 304–305, fig. 350]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 304–305, fig. 350
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 304–305, fig. 350
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 304–305, fig. 350
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 304–305, fig. 350
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 304–305, fig. 350
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 304–305, fig. 350
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 304–305, fig. 350
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 304–305, fig. 350

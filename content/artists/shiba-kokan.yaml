@@ -1,0 +1,56 @@
+public_id: 107754
+name: Shiba Kōkan
+names:
+  - kind: art_name
+    role: alternative
+    text: 春波楼
+  - lang: ja
+    role: original
+    text: 司馬江漢
+  - Rantei
+  - Ando Katsusaboro Fugen Dojin
+  - Harushige Suzuki
+  - Ando Kichijiro
+  - Shiba Shun
+  - Shumparo
+  - Harushige
+  - Hurushige
+  - Kokan
+  - Kōkan
+  - Shun Andō
+  - Shiba Kokan
+  - Suzuki Hurushige
+  - Kōkan Shiba
+  - Kunkagu
+  - Shiba Koukan
+  - lang: ru
+    role: translation
+    text: Кокан Сиба
+birth: 1747
+death: 1818-11-19
+wikidata_id: Q652953
+metadata:
+  sources: [Wikidata Q652953 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ab/Portrait_of_Shiba_Kokan.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Shiba_Kokan.JPG
+    license: Public domain
+    credit: Takahashi Yuichi
+identifiers:
+  bnf: "149040189"
+  gnd: 13265041X
+  idref: "163048002"
+  kulturnav: 2f87a40a-65cc-40ee-b2f0-65493e354131
+  lc: n83213384
+  rkd: "253739"
+  ulan: "500325952"
+  viaf: "305233531"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q652953
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q652953

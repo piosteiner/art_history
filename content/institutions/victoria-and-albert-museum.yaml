@@ -1,0 +1,75 @@
+public_id: 107704
+name: Victoria and Albert Museum
+names:
+  - V&A
+  - Victoria & Albert Museum
+  - V&A Museum
+  - South Kensington Museum
+  - v & a museum
+  - va museum
+  - V&A South Kensington
+  - V and A South Kensington
+  - Victoria & Albert Museum South Kensington
+  - Victoria & Albert South Kensington
+  - Victoria and Albert Museum South Kensington
+  - Victoria and Albert South Kensington
+  - The V&A
+  - South Kensington Museum (London)
+  - VAM
+  - lang: es
+    role: translation
+    text: Museo de Victoria y Alberto
+  - lang: ja
+    role: translation
+    text: ヴィクトリア&アルバート博物館
+  - lang: zh
+    role: translation
+    text: 维多利亚和阿尔伯特博物馆
+  - lang: ko
+    role: translation
+    text: 빅토리아 앨버트 박물관
+  - lang: ru
+    role: translation
+    text: Музей Виктории и Альберта
+kind: museum
+founded: 1852
+place: london
+location: [-0.17162, 51.49685]
+address: Cromwell Gardens
+website_url: https://www.vam.ac.uk/
+wikidata_id: Q213322
+metadata:
+  sources: [Wikidata Q213322 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Victoria_%26_Albert_Museum_Entrance%2C_London%2C_UK_-_Diliff.jpg/1280px-Victoria_%26_Albert_Museum_Entrance%2C_London%2C_UK_-_Diliff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Victoria_%26_Albert_Museum_Entrance,_London,_UK_-_Diliff.jpg
+    license: CC BY-SA 3.0
+    credit: Diliff
+identifiers:
+  bnf: 11868116h
+  gnd: 38632-7
+  idref: "027524655"
+  lc: n79066252
+  ulan: "500302040"
+  viaf: "128776887"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q213322
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q213322
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q213322
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q213322
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q213322

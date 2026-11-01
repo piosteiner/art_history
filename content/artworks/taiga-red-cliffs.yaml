@@ -1,0 +1,34 @@
+public_id: 107991
+title: First Visit to the Red Cliffs
+creator: ike-taiga
+created: 1749
+kind: byōbu
+medium: Six-panel screen, colour on paper
+materials: [paper]
+dimensions: [148.2, 350.6]
+description_md: "One of a pair of screens by [[artist/ike-taiga]] (1723–1776), a calligraphy prodigy who sold decorated fans in a shop with his mother and studied with Yanagisawa Kien: the composition and brushwork recall the fifteenth-century landscapes of Minchō and Shūbun. [[source/history-of-japanese-art|pp. 329–330, fig. 384]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 329–330, fig. 384
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 329–330, fig. 384
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 329–330, fig. 384
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 329–330, fig. 384
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 329–330, fig. 384
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 329–330, fig. 384
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 329–330, fig. 384

@@ -1,0 +1,51 @@
+public_id: 107772
+name: Tokugawa Iemitsu
+names:
+  - lang: ja
+    role: original
+    text: 徳川家光
+  - Iemitsu Tokugawa
+  - lang: zh
+    role: translation
+    text: 德川家光
+  - lang: ko
+    role: translation
+    text: 도쿠가와 이에미쓰
+  - lang: ru
+    role: translation
+    text: Токугава Иэмицу
+kind: person
+occupations: [politician]
+birth: 1604-08-12
+death: 1651-06-08
+wikidata_id: Q314481
+metadata:
+  sources: [Wikidata Q314481 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Iemitu.jpg/1280px-Iemitu.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Iemitu.jpg
+    license: Public domain
+    credit: The author creates a file.
+identifiers:
+  dodis: P30738
+  gnd: "119550474"
+  idref: "082954984"
+  lc: n84178453
+  viaf: "20493499"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q314481
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q314481
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q314481
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q314481

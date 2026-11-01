@@ -1,0 +1,12 @@
+public_id: 107908
+name: haiku
+names:
+  - lang: ja
+    role: original
+    text: "{俳句|はいく}"
+category: other
+definition: A poem of seventeen syllables (five, seven, five) that grew out of the opening verses of linked verse in the sixteenth and seventeenth centuries; perfected by Matsuo Bashō.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 332

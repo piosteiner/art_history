@@ -1,0 +1,34 @@
+public_id: 107938
+title: Landscape
+creator: ike-gyokuran
+kind: handscroll
+medium: Ink and colours on paper
+materials: [ink, paper]
+dimensions: [58, 125]
+institution: shizuoka-prefectural-museum-of-art
+description_md: "By [[artist/ike-gyokuran]] (1727–1784), Taiga’s wife and collaborator, from a family of women poets and a student of Yanagisawa Kien — the first known female [[bunjinga]] artist: mountain scenery piled up in time-honoured fashion, but with an exquisite sense of placement leading the eye across the composition. [[source/history-of-japanese-art|pp. 332–333, fig. 387]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 332–333, fig. 387
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 332–333, fig. 387
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 332–333, fig. 387
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 332–333, fig. 387
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 332–333, fig. 387
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 332–333, fig. 387
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 332–333, fig. 387

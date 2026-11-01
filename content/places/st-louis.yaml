@@ -1,0 +1,16 @@
+public_id: 107701
+name: St. Louis
+kind: settlement
+location: [-90.19944, 38.62639]
+wikidata_id: Q38022
+metadata:
+  sources: [Wikidata Q38022 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q38022
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q38022

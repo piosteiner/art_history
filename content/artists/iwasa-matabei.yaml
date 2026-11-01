@@ -1,0 +1,46 @@
+public_id: 107735
+name: Iwasa Matabē
+names:
+  - lang: ja
+    role: original
+    text: 岩佐又兵衛
+  - Katsumochi
+  - Hekishōkyo
+  - Katsumochi Iwasa
+  - Dōun
+  - 岩佐又兵衞
+  - Matabē Iwasa
+  - Matabei Iwasa
+  - Shōi
+  - lang: nl
+    role: translation
+    text: Iwasa Matabei
+  - lang: ru
+    role: translation
+    text: Иваса Матабэй
+birth: 1578
+death: 1650-07-20
+wikidata_id: Q3156405
+metadata:
+  sources: [Wikidata Q3156405 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d4/Iwasa_Matabei_Self_Portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Iwasa_Matabei_Self_Portrait.jpg
+    license: Public domain
+    credit: Iwasa Matabē
+identifiers:
+  bnf: 14522436k
+  gnd: "121312496"
+  idref: "081538464"
+  lc: n83202826
+  ulan: "500121252"
+  viaf: "15622629"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3156405
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3156405

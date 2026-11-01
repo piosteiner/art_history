@@ -1,0 +1,34 @@
+public_id: 107924
+title: Egret Under Flowering Mallows
+creator: yamamoto-baiitsu
+created: 1833
+kind: kakemono
+medium: Hanging scroll, ink and colour on silk
+materials: [ink, silk]
+dimensions: [115, 41]
+description_md: "A bird-and-flower painting by [[artist/yamamoto-baiitsu]] (1783–1856) of Nagoya, admired for his delicately coloured decorative style: the egret’s feathers built up in spontaneous strokes against its thin dark legs and long beak, the mallow leaves and lily pads in [[tarashikomi]], the pink of the flowers completing the composition. [[source/history-of-japanese-art|pp. 339–340, fig. 396]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 339–340, fig. 396
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 339–340, fig. 396
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 339–340, fig. 396
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 339–340, fig. 396
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 339–340, fig. 396
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 339–340, fig. 396
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 339–340, fig. 396

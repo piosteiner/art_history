@@ -1,0 +1,41 @@
+public_id: 107739
+name: Torii Kiyonaga
+names:
+  - lang: ja
+    role: original
+    text: 鳥居清長
+  - Shinsuke
+  - Kiyonaga Seki
+  - Kiyonaga
+  - Shirakoya Ichibei
+  - Kiyonaga Torii
+  - Sekiguchi
+  - Seki Ichibei
+  - Ichibē Shirakoya
+  - lang: ru
+    role: translation
+    text: Тории Киёнага
+birth: 1752
+death: 1815-06-28
+wikidata_id: Q427642
+metadata:
+  sources: [Wikidata Q427642 (retrieved 2026-11-01)]
+identifiers:
+  bnf: 12522136g
+  dome: "4157"
+  gnd: "133261468"
+  idref: "132500027"
+  kulturnav: 38520186-9f51-4e8c-a87a-129fd51f6dde
+  lc: n80153155
+  rkd: "501101"
+  ulan: "500058786"
+  viaf: "45485954"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q427642
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q427642

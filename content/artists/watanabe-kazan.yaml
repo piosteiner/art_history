@@ -1,0 +1,57 @@
+public_id: 107769
+name: Watanabe Kazan
+names:
+  - kind: art_name
+    role: alternative
+    text: 全楽堂
+  - kind: art_name
+    role: alternative
+    text: 寓画堂
+  - lang: ja
+    role: original
+    text: 渡辺崋山
+  - lang: ja
+    role: original
+    text: 渡辺華山
+  - Gūkaidō
+  - Sadayasu Watanabe
+  - Kazan
+  - Shian Watanabe
+  - Noboru Watanabe
+  - Watanabe Sadayasu
+  - Zenrakudō
+  - Nobori
+  - Kazan Watanabe
+  - Sadayasu
+  - lang: ko
+    role: translation
+    text: 와타나베 카잔
+  - lang: ru
+    role: translation
+    text: Ватанабэ Кадзан
+birth: 1793-10-20
+death: 1841-11-23
+wikidata_id: Q3130609
+metadata:
+  sources: [Wikidata Q3130609 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Watanabe_Kazan.jpg/1280px-Watanabe_Kazan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Watanabe_Kazan.jpg
+    license: Public domain
+    credit: Tsubaki Chinzan
+identifiers:
+  bnf: "155007072"
+  gnd: "118721070"
+  idref: "108801713"
+  lc: n83072094
+  ulan: "500121065"
+  viaf: "96574339"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3130609
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3130609

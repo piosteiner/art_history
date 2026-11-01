@@ -1,0 +1,34 @@
+public_id: 107940
+title: One Hand Clapping
+creator: hakuin-ekaku
+created: 1766
+kind: kakemono
+medium: Ink on paper
+materials: [ink, paper]
+dimensions: [86, 26.4]
+description_md: "Hakuin’s own koan, “the sound of one hand”, explained in a letter of 1753, illustrated two years before his death: the monk Hotei stands on his cloth bag, one hand hidden in his robe, the other raised; his eyes, unusually, look straight ahead as if laughing. “Young people, no matter what you say, everything is nonsense unless you hear the sound of one hand.” [[source/history-of-japanese-art|pp. 325–326, fig. 379]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 325–326, fig. 379
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 325–326, fig. 379
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 325–326, fig. 379
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 325–326, fig. 379
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 325–326, fig. 379
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 325–326, fig. 379
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 325–326, fig. 379

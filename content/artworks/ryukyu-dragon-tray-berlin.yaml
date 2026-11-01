@@ -1,0 +1,37 @@
+public_id: 107984
+title: Tray with dragon designs (Ryūkyū)
+attribution_label: Anonymous
+created: 18th century
+created_span: uncertain
+kind: tray
+medium: Lacquer with mother-of-pearl inlay
+materials: [lacquer, mother-of-pearl]
+dimensions: [7.8]
+dimensions_note: diameter 68.3 cm
+institution: museum-of-asian-art-berlin
+description_md: "An offering tray from the Ryūkyū islands, an independent kingdom until the daimyo of Satsuma captured its ruler in 1609, and a vassal of both the Tokugawa and the Qing: two dragons contend for a pearl in mother-of-pearl of the yakōgai, the “nocturnal light shell”, glistening from blue to purple against black. [[source/history-of-japanese-art|pp. 302–303, fig. 348]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 302–303, fig. 348
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 302–303, fig. 348
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 302–303, fig. 348
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 302–303, fig. 348
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 302–303, fig. 348
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 302–303, fig. 348
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 302–303, fig. 348

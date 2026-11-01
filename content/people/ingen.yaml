@@ -1,0 +1,62 @@
+public_id: 107776
+name: Ingen
+names:
+  - lang: zh-CN
+    role: original
+    text: 隱元隆琦
+  - Ingen Ryūki
+  - Ingen Ryuki
+  - Yinyuan Longqi
+  - lang: de
+    role: translation
+    text: Yin-Yüan
+  - lang: it
+    role: translation
+    text: Ingen_Ryūki
+  - lang: ja
+    role: translation
+    text: 隠元隆琦
+  - lang: zh
+    role: translation
+    text: 隱元
+  - lang: ko
+    role: translation
+    text: 은원융기
+  - lang: ru
+    role: translation
+    text: Ингэн
+kind: person
+occupations: [painter, calligrapher, poet, Buddhist monk, monk]
+birth: 1592-12-07
+death: 1673-05-19
+wikidata_id: Q705266
+metadata:
+  sources: [Wikidata Q705266 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Portrait_of_Ingen_Ry%C5%ABki_by_Kita_Genki.jpg/1280px-Portrait_of_Ingen_Ry%C5%ABki_by_Kita_Genki.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Ingen_Ry%C5%ABki_by_Kita_Genki.jpg
+    license: Public domain
+    credit: 喜多元規 Kita Genki
+identifiers:
+  gnd: "1068376694"
+  idref: "158867661"
+  lc: n80133140
+  ulan: "500319897"
+  viaf: "67771629"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q705266
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q705266
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q705266
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q705266

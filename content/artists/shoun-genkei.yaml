@@ -1,0 +1,26 @@
+public_id: 107770
+name: Shōun Genkei
+names:
+  - lang: nl
+    role: translation
+    text: Shoun Genkei
+  - lang: ja
+    role: translation
+    text: 松雲元慶
+birth: 1617
+death: 1710-08-05
+wikidata_id: Q16185965
+metadata:
+  sources: [Wikidata Q16185965 (retrieved 2026-11-01)]
+identifiers:
+  gnd: "1044973811"
+  viaf: "305433575"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q16185965
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q16185965

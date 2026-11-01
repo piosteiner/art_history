@@ -1,0 +1,43 @@
+public_id: 107955
+title: Portrait of Ichikawa Bei’an
+creator: watanabe-kazan
+created: 1837
+kind: kakemono
+medium: Hanging scroll, ink and colour on silk
+materials: [ink, silk]
+dimensions: [129.5, 59]
+institution: kyoto-national-museum
+description_md: "A memorial portrait by [[artist/watanabe-kazan]] (1793–1841) of [[person/ichikawa-beian]] (1779–1858), calligrapher and Confucian scholar whom he regarded as a spiritual mentor; laudatory inscriptions were added for Bei’an’s sixtieth birthday. A preliminary sketch survives: informal, with the swelling below the right ear and unfocused eyes, while the finished portrait in court costume and cap uses Western highlights and shadows for the face. Kazan, a samurai of the Tawara clan and student of [[rangaku]], was put under house arrest in 1839 and committed suicide in 1841. [[source/history-of-japanese-art|pp. 341–342, figs. 399–400]]"
+relationships:
+  - type: depicts_person
+    to: person/ichikawa-beian
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 341–342, figs. 399–400
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 341–342, figs. 399–400
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 341–342, figs. 399–400
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 341–342, figs. 399–400
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 341–342, figs. 399–400
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 341–342, figs. 399–400
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 341–342, figs. 399–400
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 341–342, figs. 399–400
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 341–342, figs. 399–400

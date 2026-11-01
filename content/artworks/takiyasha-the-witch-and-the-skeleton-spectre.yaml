@@ -1,24 +1,54 @@
 public_id: 100063
-title: Takiyasha the Witch and the Skeleton Spectre
-names: [Mitsukuni Defying the Skeleton Spectre Invoked by Princess Takiyasha]
+title: Takiyasha the Witch and the Skeleton Specter
+names: [Takiyasha the Witch and the Skeleton Spectre, Mitsukuni Defying the Skeleton Spectre Invoked by Princess Takiyasha]
 creator: utagawa-kuniyoshi
-created: 1844
+created: 1840/1850
 created_label: c. 1844
 created_span: uncertain
+kind: Japanese woodblock print
+medium: Polychrome woodblock print triptych
+materials: [paper]
+dimensions: [37.3, 25.5]
+dimensions_note: each ōban
+institution: spencer-museum-of-art
+inventory_number: 84.32a–c
+description_md: "A triptych by [[artist/utagawa-kuniyoshi]] (1798–1861) after the Kabuki play Sōma dairi (1844) on the rebellion of Taira no Masakado (d. 940): his daughter Takiyasha, disguised as a courtesan, summons a giant skeleton to overpower a samurai who has come to the ruined Sōma palace. Kuniyoshi, best known for his warrior prints, truly captured the late Edo taste for the bizarre. [[source/history-of-japanese-art|pp. 289–290, fig. 330]]"
 wikidata_id: Q7678417
 metadata:
   sources: [Wikidata Q7678417 (retrieved 2026-10-05)]
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 289–290, fig. 330
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Takiyasha_the_Witch_and_the_Skeleton_Spectre%2C_by_Utagawa_Kuniyoshi.jpg/1280px-Takiyasha_the_Witch_and_the_Skeleton_Spectre%2C_by_Utagawa_Kuniyoshi.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Takiyasha_the_Witch_and_the_Skeleton_Spectre,_by_Utagawa_Kuniyoshi.jpg
     license: Public domain
     credit: Utagawa Kuniyoshi — British Museum
 sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 289–290, fig. 330
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 289–290, fig. 330
   created:
-    - accessed: 2026-10-05
-      property: P571
-      wikidata: Q7678417
+    - source: history-of-japanese-art
+      locator: pp. 289–290, fig. 330
   creator:
     - accessed: 2026-10-05
       property: P170
       wikidata: Q7678417
+    - source: history-of-japanese-art
+      locator: pp. 289–290, fig. 330
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 289–290, fig. 330
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 289–290, fig. 330
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 289–290, fig. 330

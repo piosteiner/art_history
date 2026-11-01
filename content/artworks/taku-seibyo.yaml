@@ -1,0 +1,37 @@
+public_id: 107993
+title: Taku Kōshibyō (Confucian temple), Taku
+attribution_label: Anonymous
+created: 1695/1708
+kind: building
+medium: Wood
+materials: [wood]
+institution: taku-seibyo-institution
+description_md: "A rare surviving [[koshibyo]], built over fourteen years for the local daimyo: the courtyard, gate and great hall of the main Confucian temple in Beijing compressed into a single structure entered through a Chinese gable — the Kyōkōmon reduced to a stone arch. Inside, an elaborately carved shrine holds an image of Confucius and four sages, among them Mencius; ceremonies have been performed there almost continuously since it was built. [[source/history-of-japanese-art|pp. 306–307, figs. 354–355]]"
+relationships:
+  - type: created_in
+    to: place/taku
+    period: 1695/1708
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 306–307, figs. 354–355
+  - type: associated_with
+    to: movement/genroku-era
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 306–307, figs. 354–355
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 306–307, figs. 354–355
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 306–307, figs. 354–355
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 306–307, figs. 354–355
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 306–307, figs. 354–355
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 306–307, figs. 354–355

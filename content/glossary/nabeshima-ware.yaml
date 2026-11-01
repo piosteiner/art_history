@@ -1,0 +1,13 @@
+public_id: 107914
+name: Nabeshima ware
+names:
+  - lang: ja
+    role: original
+    text: "{鍋島焼|なべしまやき}"
+category: material
+parent: porcelain
+definition: "Porcelain made at Arita from 1625 for the Nabeshima daimyo, as gifts to the shogun and for their own use: shallow dishes on a high foot, moulded, outlined in underglaze blue and filled with overglaze enamels."
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 294

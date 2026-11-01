@@ -1,0 +1,35 @@
+public_id: 108000
+title: Geigi (Five Kinds of Ink from the Northern Provinces)
+creator: kitagawa-utamaro
+created: 1790/1795
+kind: Japanese woodblock print
+medium: Polychrome woodblock print
+materials: [paper]
+dimensions: [38.1, 23.2]
+dimensions_note: ōban
+description_md: "From a series by [[artist/kitagawa-utamaro]] (1753–1806) on the classes of courtesan, from the geisha at the top to the lowest prostitute: the geigi is gay and animated, bent on amusing her customer through conversation. [[source/history-of-japanese-art|p. 287, fig. 326]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 287, fig. 326
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 287, fig. 326
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 287, fig. 326
+  created:
+    - source: history-of-japanese-art
+      locator: p. 287, fig. 326
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 287, fig. 326
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 287, fig. 326
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 287, fig. 326

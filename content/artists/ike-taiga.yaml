@@ -1,0 +1,51 @@
+public_id: 107761
+name: Ike no Taiga
+names:
+  - lang: ja
+    role: original
+    text: 池大雅
+  - Ike no Kashō
+  - Ikeno Tsutomu
+  - Taiga Ikeno
+  - Ikeno Taiga
+  - Ikeno Mumei
+  - Ike Taiga
+  - Sangakudoja
+  - Taiga
+  - Kin
+  - Kashō Ike
+  - Kasei
+  - Ikeno Kashō
+  - Kōbin
+  - Kashō
+  - Kashō Ikeno
+  - Taiga Ike
+  - lang: ru
+    role: translation
+    text: Икэно Тайга
+birth: 1723-06-06
+death: 1776-05-30
+wikidata_id: Q2661041
+metadata:
+  sources: [Wikidata Q2661041 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/A_portrait_of_Ike_Taiga_by_Fukuhara_Gogaku_%E6%B1%A0%E5%A4%A7%E9%9B%85%E5%83%8F_%E7%A6%8F%E5%8E%9F%E4%BA%94%E5%B2%B3.jpg/1280px-A_portrait_of_Ike_Taiga_by_Fukuhara_Gogaku_%E6%B1%A0%E5%A4%A7%E9%9B%85%E5%83%8F_%E7%A6%8F%E5%8E%9F%E4%BA%94%E5%B2%B3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:A_portrait_of_Ike_Taiga_by_Fukuhara_Gogaku_%E6%B1%A0%E5%A4%A7%E9%9B%85%E5%83%8F_%E7%A6%8F%E5%8E%9F%E4%BA%94%E5%B2%B3.jpg
+    license: Public domain
+    credit: 福原五岳
+identifiers:
+  bnf: 13498136b
+  gnd: "119073900"
+  idref: "112671705"
+  lc: n81149372
+  ulan: "500121068"
+  viaf: "226148996002359752281"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2661041
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2661041

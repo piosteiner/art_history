@@ -1,0 +1,41 @@
+public_id: 107988
+title: Landscapes
+creator: soga-shohaku
+created: c. 1770
+created_span: uncertain
+kind: byōbu
+medium: Pair of six-panel screens, ink on paper
+materials: [ink, paper]
+dimensions: [159.5, 348.6]
+dimensions_note: each screen
+institution: museum-of-fine-arts-boston
+inventory_number: "11.4508"
+description_md: "A pair of screens by [[artist/soga-shohaku]] (1730–1781), dated by Money L. Hickman shortly after his fortieth birthday: at first the familiar foreground rocks, trees and hazy mountains, but disparate elements are juxtaposed almost to the limit, so that perspective shifts from one rock to the next. Shōhaku, born Miura in Kyoto, invented a genealogy back to the fifteenth-century painter Dasoku. [[source/history-of-japanese-art|pp. 324–325, fig. 377]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 324–325, fig. 377
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 324–325, fig. 377
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 324–325, fig. 377
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 324–325, fig. 377
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 324–325, fig. 377
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 324–325, fig. 377
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 324–325, fig. 377
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 324–325, fig. 377

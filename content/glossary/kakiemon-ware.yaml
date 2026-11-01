@@ -1,0 +1,13 @@
+public_id: 107911
+name: Kakiemon ware
+names:
+  - lang: ja
+    role: original
+    text: "{柿右衛門|かきえもん}"
+category: material
+parent: porcelain
+definition: Arita porcelain with bright overglaze enamels — above all an orange-red — on a milky white body, after the potter Sakaida Kakiemon (1596–1666).
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 294

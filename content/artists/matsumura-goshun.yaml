@@ -1,0 +1,48 @@
+public_id: 107755
+name: Matsumura Goshun
+names:
+  - lang: ja
+    role: original
+    text: 呉春
+  - Katen
+  - Shōtei
+  - Toyoaki
+  - Gekkei
+  - Goshun
+  - Yūho
+  - Hyakushōdō
+  - Bunzō
+  - Hakubō
+  - Inpaku
+  - Goshun Matsumura
+  - lang: zh
+    role: translation
+    text: 松村吳春
+  - lang: ru
+    role: translation
+    text: Мацумура Госюн
+birth: 1752-04-28
+death: 1811-09-04
+wikidata_id: Q960116
+metadata:
+  sources: [Wikidata Q960116 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4a/%E5%91%89%E6%98%A5_%E8%BF%91%E4%B8%96%E5%90%8D%E5%AE%B6%E8%82%96%E5%83%8F.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E5%91%89%E6%98%A5_%E8%BF%91%E4%B8%96%E5%90%8D%E5%AE%B6%E8%82%96%E5%83%8F.jpg
+    license: Public domain
+    credit: 谷文晁
+identifiers:
+  gnd: "133885216"
+  idref: "248851683"
+  lc: n83217575
+  ulan: "500121199"
+  viaf: "38119855"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q960116
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q960116

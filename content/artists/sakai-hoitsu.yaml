@@ -1,0 +1,55 @@
+public_id: 107752
+name: Sakai Hōitsu
+names:
+  - lang: ja
+    role: original
+    text: 酒井抱一
+  - Sakai Hoitsu
+  - Hōitsu
+  - Keikyo-dōjin
+  - Ukaan
+  - Kishin Sakai
+  - 215Toryō
+  - Tadanao
+  - Tadanao Sakai
+  - Hōitsu Sakai
+  - Ōson
+  - Sakai Tadanao
+  - Tōkaku-in Bunsen Kishin
+  - Teihakushi
+  - Kishin
+  - Ukean
+  - Sakai Houitsu
+  - lang: zh
+    role: translation
+    text: 抱一
+  - lang: ru
+    role: translation
+    text: Хоицу Сакаи
+birth: 1761-08-01
+death: 1828-01-04
+wikidata_id: Q3469342
+metadata:
+  sources: [Wikidata Q3469342 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Sakai_Houitsu.jpg/1280px-Sakai_Houitsu.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sakai_Houitsu.jpg
+    license: Public domain
+    credit: 栗原信充
+identifiers:
+  bnf: 14899918p
+  gnd: "132561018"
+  idref: "165073411"
+  kulturnav: c4837283-f111-4d2f-b35c-a965602684e7
+  lc: no90001624
+  ulan: "500121066"
+  viaf: "75016255"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3469342
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3469342

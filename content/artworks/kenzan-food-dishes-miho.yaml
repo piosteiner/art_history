@@ -1,0 +1,39 @@
+public_id: 107956
+title: Set of food dishes
+creator: ogata-kenzan
+created: early 18th century
+created_span: uncertain
+kind: dish
+medium: Stoneware with underglaze iron and cobalt blue and overglaze enamel decoration
+materials: [stoneware]
+dimensions: [3.4, 16.5]
+institution: miho-museum
+description_md: "Ten dishes by [[artist/ogata-kenzan]] (1663–1743), the younger brother of Kōrin: with patches of white slip and motifs brushed in cobalt and iron — maple leaves and waves — he adapted his brother’s [[movement/rinpa]] designs to the rounded surfaces, wrapping the images around them. Kenzan built a kiln at Narutaki near Ninnaji in 1699 and moved to central Kyoto in 1712. [[source/history-of-japanese-art|p. 299, fig. 342]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 299, fig. 342
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 299, fig. 342
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 299, fig. 342
+  created:
+    - source: history-of-japanese-art
+      locator: p. 299, fig. 342
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 299, fig. 342
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 299, fig. 342
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 299, fig. 342
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 299, fig. 342

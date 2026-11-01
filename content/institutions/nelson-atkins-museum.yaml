@@ -1,0 +1,79 @@
+public_id: 107697
+name: The Nelson-Atkins Museum of Art
+names:
+  - NAMA
+  - Nelson Atkins Museum of Art
+  - Nelson Atkins
+  - The Nelson
+  - N.A.M.A
+  - Nelson Museum
+  - The Nelson-Atkins
+  - Nelson-Atkins
+  - Nelson-Atkins Museum
+  - The Nelson Atkins Museum
+  - Nelson Atkins Museum
+  - Nelson Gallery-Atkins Museum
+  - William Rockhill Nelson Gallery of Art and Mary Atkins Museum of Fine Arts
+  - lang: nl
+    role: translation
+    text: Nelson-Atkins Museum of Art
+  - lang: fr
+    role: translation
+    text: musée d'art Nelson-Atkins
+  - lang: it
+    role: translation
+    text: Museo Nelson-Atkins
+  - lang: ja
+    role: translation
+    text: ネルソン・アトキンズ美術館
+  - lang: zh
+    role: translation
+    text: 纳尔逊艺术博物馆
+  - lang: ko
+    role: translation
+    text: 넬슨 아킨스 미술관
+  - lang: ru
+    role: translation
+    text: Музей искусств Нельсона-Аткинса
+kind: museum
+founded: 1933-12-11
+place: kansas-city
+location: [-94.58096, 39.04497]
+address: 4525 Oak St, Kansas City, MO 64111
+website_url: https://www.nelson-atkins.org/
+wikidata_id: Q1976985
+metadata:
+  sources: [Wikidata Q1976985 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Nelson-Atkins_X9.jpg/1280px-Nelson-Atkins_X9.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nelson-Atkins_X9.jpg
+    license: Public domain
+    credit: User:Charvex
+identifiers:
+  gnd: 4227196-4
+  idref: "027401367"
+  kulturnav: 96990a7b-5598-4301-b4cd-a1c4256920bd
+  lc: n83044954
+  ulan: "500231020"
+  viaf: "139465505"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1976985
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1976985
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q1976985
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1976985
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1976985

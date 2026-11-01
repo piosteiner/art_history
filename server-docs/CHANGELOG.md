@@ -4,6 +4,23 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-01
 
+### Data: the works of Mason, chapter 6 (Edo) + the book's figures as private reference images
+- **What:** 86 works after the figures of Mason, *History of Japanese Art*, pp. 272–342 — 4 from Wikidata items, 3
+  existing entries completed (Takiyasha, Pine Trees in the Snow, the Fuji series gains the Barrel-maker of
+  Fujimihara), the rest by hand: ukiyo-e from Matabei and Moronobu to Harunobu, Kiyonaga, Sharaku, Utamaro,
+  Toyokuni, Kuniyoshi, Hokusai, Hokkei and Hiroshige; Imari, Kakiemon, Nabeshima, Kutani and Kyoto ceramics (Ninsei,
+  Kenzan, Mokubei, Hozen); lacquer, inrō, Ryūkyū tray, armour mask, uchikake, vase; Tōji pagoda, Nikkō Tōshōgū,
+  Taku Kōshibyō, Manpukuji; Enkū, Shōun Genkei; Kanō Tanyū and Osanobu; Kōrin, Hōitsu, Kiitsu; Kōkan, Ōkyo, Goshun,
+  Rosetsu, Jakuchū, Shōhaku; Hakuin; the literati from Nankai to Kazan. Two older entries merged into the new ones
+  (`merge_entries`: Jakuchū's Rooster, Hen and Hydrangea; Sharaku's Segawa Tomisaburō — old addresses redirect).
+  New: 30 holders, 13 people (Tsunayoshi, Iemitsu, Yoshimune, Tōfukumon'in, Go-Mizunoo, Ingen, Bashō, Saikaku, Rai
+  San'yō, Kimura Kenkadō, Ichikawa Beian, Matsudaira Sadanobu, Hiraga Gennai), 41 artists, 22 glossary terms
+  (porcelain, celadon, overglaze enamels, Imari/Kakiemon/Nabeshima/Kutani ware, uchikake, rangaku, haiku, shinkeizu
+  …). Caption facts cited "Mason, p. N, fig. N"; descriptions in our own words.
+- **Private images:** the 87 figures of chapter 6 into `private_images` for the owner's account (now 364).
+- **Why:** owner, 2026-11-01. **Revert:** delete the works citing `history-of-japanese-art` with figs. 313–400;
+  the crops: `DELETE FROM private_images WHERE owner_id = 1 AND locator ~ 'fig\. (3(1[3-9]|[2-9][0-9])|400)$'`.
+
 ### Data: the works of Mason, chapter 5 (Momoyama and early Edo) + the book's figures as private reference images
 - **What:** 37 works after the figures of Mason, *History of Japanese Art*, pp. 235–271 — 11 made from their Wikidata
   items, the rest by hand: castles (Inuyama, Himeji) and shoin (Kōjōin and Kangakuin guest halls, Nijō Ōhiroma,

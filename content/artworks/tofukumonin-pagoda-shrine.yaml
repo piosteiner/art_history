@@ -1,0 +1,36 @@
+public_id: 107995
+title: Pagoda-shaped shrine of the Empress Tōfukumon’in
+attribution_label: Anonymous
+created: 17th century
+created_span: uncertain
+kind: zushi
+medium: Wood with lacquer and gilt decoration
+materials: [wood, lacquer, gold]
+dimensions: [36.5, 22.5]
+institution: sennyu-ji
+description_md: The personal shrine of [[person/tofukumon-in]] (1607–1678), Tokugawa Kazuko, the granddaughter of Ieyasu married to [[person/emperor-go-mizunoo]]; with their marriage wealth flooded into the imperial court (Elizabeth Lillehoj). The inscription inside records that she worshipped before it every day and left it to the temple at her death. [[source/history-of-japanese-art|pp. 310–311, fig. 360]]
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 310–311, fig. 360
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 310–311, fig. 360
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 310–311, fig. 360
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 310–311, fig. 360
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 310–311, fig. 360
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 310–311, fig. 360
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 310–311, fig. 360

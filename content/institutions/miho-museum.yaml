@@ -1,0 +1,57 @@
+public_id: 107700
+name: Miho Museum
+names:
+  - lang: fr
+    role: translation
+    text: musée Miho
+  - lang: de
+    role: translation
+    text: Miho-Museum
+  - lang: es
+    role: translation
+    text: Museo Miho
+  - lang: zh
+    role: translation
+    text: 美秀美術館
+  - lang: ru
+    role: translation
+    text: Музей Михо
+kind: museum
+founded: 1997
+place: koka
+location: [136.01582, 34.91592]
+address: 滋賀県甲賀市信楽町田代桃谷300
+website_url: https://www.miho.jp/
+wikidata_id: Q1268542
+metadata:
+  sources: [Wikidata Q1268542 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/241119_MIHO_MUSEUM_Koga_Shiga_pref_Japan08s3.jpg/1280px-241119_MIHO_MUSEUM_Koga_Shiga_pref_Japan08s3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:241119_MIHO_MUSEUM_Koga_Shiga_pref_Japan08s3.jpg
+    license: CC BY-SA 4.0
+    credit: 663highland
+identifiers:
+  gnd: 4607116-7
+  lc: nr98019798
+  viaf: "147035353"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1268542
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1268542
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q1268542
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1268542
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1268542

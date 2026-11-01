@@ -1,0 +1,35 @@
+public_id: 107767
+name: Yamamoto Baiitsu
+names:
+  - lang: ja
+    role: original
+    text: 山本梅逸
+  - Gyokuzen Koji
+  - Shinryō
+  - Meikei
+  - Yamamoto Shinryō
+  - Baika Shujin
+  - Baika
+  - Gyokuzen
+  - Yamamoto
+  - Baiitsu
+  - Baiitsu Yamamoto
+birth: 1783-11-14
+death: 1856-02-07
+wikidata_id: Q3571447
+metadata:
+  sources: [Wikidata Q3571447 (retrieved 2026-11-01)]
+identifiers:
+  gnd: "1023745607"
+  lc: n86865472
+  ulan: "500121342"
+  viaf: "38418727"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3571447
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3571447

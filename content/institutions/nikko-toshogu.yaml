@@ -1,0 +1,56 @@
+public_id: 107723
+name: Nikkō Tōshō-gū
+names:
+  - Tōshō-gū
+  - Nikkō Tōshōgū
+  - Tōshōgū
+  - Nikkou Toushouguu
+  - lang: nl
+    role: translation
+    text: Nikko Toshogu
+  - lang: fr
+    role: translation
+    text: sanctuaire de Tōshō de Nikkō
+  - lang: ja
+    role: translation
+    text: 日光東照宮
+  - lang: ko
+    role: translation
+    text: 닛코 동조궁
+  - lang: ru
+    role: translation
+    text: Никко Тосё-гу
+founded: 1617
+place: nikko
+location: [139.59861, 36.75917]
+address: 〒321-1431 栃木県日光市山内2301
+website_url: https://www.toshogu.jp/
+wikidata_id: Q696641
+metadata:
+  sources: [Wikidata Q696641 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Nikko_Toshogu_Yomeimon_Gate_2024.jpg/1280px-Nikko_Toshogu_Yomeimon_Gate_2024.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nikko_Toshogu_Yomeimon_Gate_2024.jpg
+    license: CC BY-SA 4.0
+    credit: Jpatokal
+identifiers:
+  gnd: "1286250323"
+  lc: n84210544
+  viaf: "133746496"
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q696641
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q696641
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q696641
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q696641

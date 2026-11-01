@@ -1,0 +1,43 @@
+public_id: 107930
+title: Oku no hosomichi (The Narrow Road to the Deep North)
+creator: yosa-buson
+created: 1778
+kind: handscroll
+medium: Handscroll, ink and colour on paper
+materials: [ink, paper]
+dimensions: [29.2]
+institution: kyoto-national-museum
+description_md: "A handscroll in which [[artist/yosa-buson]] (1716–1783), the haiku poet second only to [[person/matsuo-basho]], wrote out and illustrated Bashō’s poetic diary: Bashō and his companion Sora start on their journey, sketchily drawn in ink lines and colour washes, moving away while three friends stand deferentially and sadly bid them farewell — setting the melancholy, sentimental tone of the text. [[source/history-of-japanese-art|pp. 333–334, fig. 389]]"
+relationships:
+  - type: depicts_person
+    to: person/matsuo-basho
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 333–334, fig. 389
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 333–334, fig. 389
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 333–334, fig. 389
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 333–334, fig. 389
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 333–334, fig. 389
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 333–334, fig. 389
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 333–334, fig. 389
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 333–334, fig. 389
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 333–334, fig. 389

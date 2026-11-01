@@ -1,0 +1,66 @@
+public_id: 107706
+name: Honolulu Museum of Art
+names:
+  - The Honolulu Museum of Art
+  - Honolulu Academy of Art
+  - lang: fr
+    role: translation
+    text: Musée d'Art de Honolulu
+  - lang: de
+    role: translation
+    text: Honolulu Museum
+  - lang: es
+    role: translation
+    text: Museo de Arte de Honolulu
+  - lang: ja
+    role: translation
+    text: ホノルル美術館
+  - lang: zh
+    role: translation
+    text: 檀香山艺术学院
+  - lang: ko
+    role: translation
+    text: 호놀룰루 미술관
+  - lang: ru
+    role: translation
+    text: Художественный музей Гонолулу
+kind: museum
+founded: 1922
+place: honolulu
+location: [-157.84871, 21.3039]
+address: 900 South Beretania Street
+website_url: https://honolulumuseum.org
+wikidata_id: Q128316
+metadata:
+  sources: [Wikidata Q128316 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/28/Honolulu_Academy_of_Arts.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Honolulu_Academy_of_Arts.jpg
+    license: CC BY-SA 2.0
+    credit: LFL16
+identifiers:
+  gnd: "1063109698"
+  idref: "185174566"
+  lc: n2013015284
+  viaf: "818145858110423022196"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q128316
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q128316
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q128316
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q128316
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q128316

@@ -1,0 +1,46 @@
+public_id: 107738
+name: Suzuki Harunobu
+names:
+  - lang: ja
+    role: original
+    text: 鈴木春信
+  - Chōeiken Shikojin
+  - Shikojin
+  - Jirobei Hozumi
+  - Jihei
+  - Harunobu
+  - Jihei Hozumi
+  - Suzuki Hozumi
+  - Chōyeiken
+  - Chōeiken
+  - Harunobu Suzuki
+  - Jirobei
+  - lang: ko
+    role: translation
+    text: 스즈키 하루노부
+  - lang: ru
+    role: translation
+    text: Судзуки Харунобу
+birth: 1724
+death: 1770-06-15
+wikidata_id: Q360978
+metadata:
+  sources: [Wikidata Q360978 (retrieved 2026-11-01)]
+identifiers:
+  bnf: "144772483"
+  gnd: "118701894"
+  idref: "086312367"
+  kulturnav: d3af213d-d7a4-44ca-9667-faca716d5aa7
+  lc: n82058689
+  rkd: "288208"
+  ulan: "500057319"
+  viaf: "85692953"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q360978
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q360978

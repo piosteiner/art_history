@@ -1,0 +1,32 @@
+public_id: 107753
+name: Suzuki Kiitsu
+names:
+  - lang: ja
+    role: original
+    text: 鈴木其一
+  - Kiichi
+  - Kiitsu Suzuki
+  - lang: ru
+    role: translation
+    text: Судзуки Киицу
+birth: 1796
+death: 1858-10-16
+wikidata_id: Q3196514
+metadata:
+  sources: [Wikidata Q3196514 (retrieved 2026-11-01)]
+identifiers:
+  gnd: "1057983748"
+  idref: "240219775"
+  kulturnav: 37786c49-00ae-4187-bf2a-634b23978c25
+  lc: n85129002
+  ulan: "500326662"
+  viaf: "65440449"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3196514
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3196514

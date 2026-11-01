@@ -1,0 +1,35 @@
+public_id: 107967
+title: The Barrel-maker
+creator: shiba-kokan
+created: c. 1789
+created_span: uncertain
+kind: kakemono
+medium: Hanging scroll, oil paint on silk
+materials: [oil paint, silk]
+dimensions: [47.6, 60]
+description_md: "An oil painting by [[artist/shiba-kokan]] (1738/47–1818), who trained with a Kanō master and with the bird-and-flower painter Sō Shiseki, imitated Harunobu’s prints and, through [[person/hiraga-gennai]] and the Chinese and Dutch books the shogun [[person/tokugawa-yoshimune]] had again allowed into Japan, devoted himself to Western techniques ([[yofuga]]): a man in Western dress hammers a barrel, the buildings and figures diminishing along a diagonal into depth. Heavy-handed to modern eyes, but the first step towards Western-style painting in Japan. [[source/history-of-japanese-art|pp. 318–319, fig. 370]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 318–319, fig. 370
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 318–319, fig. 370
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 318–319, fig. 370
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 318–319, fig. 370
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 318–319, fig. 370
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 318–319, fig. 370
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 318–319, fig. 370

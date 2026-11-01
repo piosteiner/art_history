@@ -1,0 +1,36 @@
+public_id: 107751
+name: Kanō Osanobu
+names:
+  - lang: ja
+    role: original
+    text: 狩野養信
+  - lang: ja
+    role: original
+    text: 狩野晴川院
+  - Kanō Takenobu
+  - Kano Osanobu
+  - Kanou Osanobu
+  - Kanō Seisen'in
+  - Kano Seisen'in
+  - Kanou Seisen'in
+  - lang: ko
+    role: translation
+    text: 가노 오사노부
+birth: 1796-08-18
+death: 1846-06-12
+wikidata_id: Q11571495
+metadata:
+  sources: [Wikidata Q11571495 (retrieved 2026-11-01)]
+identifiers:
+  gnd: "139235094"
+  lc: nr96020567
+  viaf: "46660738"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q11571495
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q11571495

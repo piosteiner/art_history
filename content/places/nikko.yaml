@@ -1,0 +1,35 @@
+public_id: 107722
+name: Nikkō
+names:
+  - lang: ja
+    role: original
+    text: 日光市
+  - lang: ko
+    role: translation
+    text: 닛코시
+  - lang: it
+    role: translation
+    text: Nikko
+  - lang: ru
+    role: translation
+    text: Никко
+kind: settlement
+parent: japan
+country_code: JP
+location: [139.69817, 36.71983]
+wikidata_id: Q235753
+metadata:
+  sources: [Wikidata Q235753 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q235753
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q235753
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q235753

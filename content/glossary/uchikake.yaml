@@ -1,0 +1,12 @@
+public_id: 107921
+name: uchikake
+names:
+  - lang: ja
+    role: original
+    text: "{打掛|うちかけ}"
+category: object type
+definition: An outer robe worn open over a kosode by women of the upper classes, often lavishly decorated.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 305

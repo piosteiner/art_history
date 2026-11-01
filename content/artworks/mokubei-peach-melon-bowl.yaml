@@ -1,0 +1,39 @@
+public_id: 107974
+title: Bowl with peach and melon design
+creator: aoki-mokubei
+created: 1807/1808
+kind: bowl
+medium: Earthenware painted with colour enamel
+materials: [earthenware]
+dimensions: [10.8]
+dimensions_note: diameter 24 cm
+institution: museum-yamato-bunkakan
+description_md: "A bowl by [[artist/aoki-mokubei]] (1767–1833), one of the three great masters of [[kyoyaki]], who ran a teahouse and found kindred souls among the literati around [[person/rai-sanyo]]: inspired by Chinese famille-noire porcelain, melons and peaches in yellow, green, purple and beige against black — but on an earthenware body and with a deliberate crudeness that makes it a personal statement. [[source/history-of-japanese-art|pp. 299–300, fig. 344]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 299–300, fig. 344
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 299–300, fig. 344
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 299–300, fig. 344
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 299–300, fig. 344
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 299–300, fig. 344
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 299–300, fig. 344
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 299–300, fig. 344
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 299–300, fig. 344

@@ -1,0 +1,16 @@
+public_id: 107695
+name: Kanazawa
+kind: settlement
+location: [136.6565, 36.56106]
+wikidata_id: Q191130
+metadata:
+  sources: [Wikidata Q191130 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q191130
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q191130

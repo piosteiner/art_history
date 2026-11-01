@@ -1,0 +1,13 @@
+public_id: 107910
+name: Imari ware
+names:
+  - lang: ja
+    role: original
+    text: "{伊万里焼|いまりやき}"
+category: material
+parent: porcelain
+definition: The porcelain of the Arita kilns, named after the port of Imari from which it was shipped; Ko (Old) Imari for the early wares of about 1620–1670. From the mid-seventeenth century it was exported to Europe by the Dutch.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 293–294

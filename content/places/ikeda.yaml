@@ -1,0 +1,16 @@
+public_id: 107714
+name: Ikeda
+kind: settlement
+location: [135.42853, 34.82172]
+wikidata_id: Q817965
+metadata:
+  sources: [Wikidata Q817965 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q817965
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q817965

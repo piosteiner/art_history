@@ -1,0 +1,12 @@
+public_id: 107909
+name: hiragana
+names:
+  - lang: ja
+    role: original
+    text: "{平仮名|ひらがな}"
+category: other
+definition: The cursive Japanese syllabary, developed in the Heian period from simplified Chinese characters.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 279

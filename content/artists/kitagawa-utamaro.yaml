@@ -1,0 +1,83 @@
+public_id: 107740
+name: Kitagawa Utamaro
+names:
+  - kind: birth
+    lang: ja
+    role: alternative
+    text: 北川 勇助
+  - kind: birth
+    lang: ja
+    role: alternative
+    text: 北川 市太郎
+  - kind: art_name
+    role: alternative
+    text: 歌麿
+  - kind: art_name
+    role: alternative
+    text: 豊章
+  - kind: art_name
+    role: alternative
+    text: 歌麻呂
+  - kind: art_name
+    role: alternative
+    text: 哥麿
+  - kind: art_name
+    role: alternative
+    text: 筆綾丸
+  - lang: ja
+    role: original
+    text: 喜多川 歌麿
+  - Utamaro
+  - Outamaro
+  - Nobuyoshi Kitagawa
+  - Entaisai
+  - Toyoaki
+  - Utamaro Kitagawa
+  - Ichitarō
+  - Toyoaki Kitagawa
+  - Yūsuke
+  - Yūsuke Kitagawa
+  - Shioku
+  - Nobuyoshi Toriyama
+  - Fude no Ayamaru
+  - Kitagawa
+  - Kitagawa Toyoaki
+  - lang: ja
+    role: original
+    text: 喜多川歌麿
+  - lang: ko
+    role: translation
+    text: 기타가와 우타마로
+  - lang: ru
+    role: translation
+    text: Китагава Утамаро
+birth: 1753
+death: 1806-10-31
+wikidata_id: Q272045
+metadata:
+  sources: [Wikidata Q272045 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Kitagawa_Utamaro_portrait_%28cropped%29.jpg/1280px-Kitagawa_Utamaro_portrait_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kitagawa_Utamaro_portrait_(cropped).jpg
+    license: Public domain
+    credit: attributed to Chōbunsai Eishi (1756 - 1829)
+identifiers:
+  bnf: 11909802x
+  dome: "4160"
+  gnd: "118625721"
+  idref: "026950235"
+  kulturnav: f55bfabb-1262-419f-b48c-ac9766474653
+  lc: n50049864
+  nlk: KAC200912073
+  rkd: "298325"
+  ulan: "500054492"
+  viaf: "95261927"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q272045
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q272045

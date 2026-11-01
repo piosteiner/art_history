@@ -1,0 +1,37 @@
+public_id: 107985
+title: Saké bottle with crackled celadon glaze
+attribution_label: Anonymous
+created: first half of the 19th century
+created_span: uncertain
+kind: bottle
+medium: Porcelain with celadon glaze
+materials: [porcelain]
+dimensions: [22.5]
+institution: nelson-atkins-museum
+inventory_number: 32-59/4
+description_md: "Porcelain, by now standard enough to be used for ceramics once made in stoneware: a crackled [[celadon]] glaze in imitation of a Chinese stoneware prototype, the product of a double firing — a luminous jade-like quality and a network of crazing. Typical of the Nabeshima or Hirado kilns. [[source/history-of-japanese-art|p. 297, fig. 340]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 297, fig. 340
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 297, fig. 340
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 297, fig. 340
+  created:
+    - source: history-of-japanese-art
+      locator: p. 297, fig. 340
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 297, fig. 340
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 297, fig. 340
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 297, fig. 340

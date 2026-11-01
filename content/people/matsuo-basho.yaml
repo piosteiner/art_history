@@ -1,0 +1,54 @@
+public_id: 107777
+name: Matsuo Bashō
+names:
+  - kind: pseudonym
+    role: alternative
+    text: for Matsuo Munefusa Basho
+  - lang: ja
+    role: original
+    text: 松尾芭蕉
+  - lang: nl
+    role: translation
+    text: Matsuo Basho
+  - lang: ko
+    role: translation
+    text: 마쓰오 바쇼
+  - lang: ru
+    role: translation
+    text: Мацуо Басё
+kind: person
+occupations: [poet, painter]
+birth: 1644
+death: 1694-11-28
+wikidata_id: Q5676
+metadata:
+  sources: [Wikidata Q5676 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/02/Basho_by_Buson.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Basho_by_Buson.jpg
+    license: Public domain
+    credit: unknown
+identifiers:
+  bnf: 11890470t
+  gnd: "118653369"
+  idref: "026708337"
+  lc: n81014364
+  nlk: KAC199640458
+  viaf: "12304628"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q5676
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q5676
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q5676
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q5676

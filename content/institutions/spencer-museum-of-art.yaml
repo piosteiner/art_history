@@ -1,0 +1,50 @@
+public_id: 107708
+name: Spencer Museum of Art
+names:
+  - The Spencer Museum of Art
+  - SMA
+  - Helen Foresman Spencer Museum of Art
+  - University of Kansas - Lawrence Campus Spencer Museum of Art
+  - lang: fr
+    role: translation
+    text: Musée d'Art Spencer
+  - lang: ja
+    role: translation
+    text: スペンサー美術館
+  - lang: ko
+    role: translation
+    text: 스펜서 미술관
+kind: museum
+founded: 1928
+place: lawrence
+location: [-95.2446, 38.9597]
+website_url: https://www.spencerart.ku.edu/
+wikidata_id: Q1601838
+metadata:
+  sources: [Wikidata Q1601838 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/SpencerMuseumofArt_Entrance_2016.jpg/1280px-SpencerMuseumofArt_Entrance_2016.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:SpencerMuseumofArt_Entrance_2016.jpg
+    license: CC BY-SA 4.0
+    credit: Alan Islas
+identifiers:
+  gnd: 1083032-7
+  lc: n79000993
+  viaf: "126425805"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1601838
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1601838
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1601838
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1601838

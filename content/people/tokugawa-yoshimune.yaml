@@ -1,0 +1,52 @@
+public_id: 107773
+name: Tokugawa Yoshimune
+names:
+  - lang: ja
+    role: original
+    text: 徳川 吉宗
+  - lang: ja
+    role: original
+    text: 徳川吉宗
+  - lang: zh
+    role: translation
+    text: 德川吉宗
+  - lang: ko
+    role: translation
+    text: 도쿠가와 요시무네
+  - lang: ru
+    role: translation
+    text: Токугава Ёсимунэ
+kind: person
+occupations: [samurai, politician]
+birth: 1684-11-27
+death: 1751-07-12
+wikidata_id: Q319664
+metadata:
+  sources: [Wikidata Q319664 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Tokugawa_Yoshimune.jpg/1280px-Tokugawa_Yoshimune.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tokugawa_Yoshimune.jpg
+    license: Public domain
+    credit: Kanō Tadanobu
+identifiers:
+  gnd: "119491281"
+  idref: "144592843"
+  lc: n83037591
+  viaf: "40189865"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q319664
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q319664
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q319664
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q319664

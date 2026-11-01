@@ -1,0 +1,13 @@
+public_id: 107912
+name: Kutani ware
+names:
+  - lang: ja
+    role: original
+    text: "{九谷焼|くたにやき}"
+category: material
+parent: porcelain
+definition: Porcelain with bold overglaze enamels; Ko (Old) Kutani from the kilns opened in the late 1650s at Kutani in the Daishōji fief (Ishikawa) — many pieces once called Ko Kutani are now thought to be Arita wares.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 294–295

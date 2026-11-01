@@ -1,0 +1,51 @@
+public_id: 107727
+name: Rikugi Garden
+names:
+  - Rikugi-en
+  - lang: nl
+    role: translation
+    text: Rikugi-enpark
+  - lang: fr
+    role: translation
+    text: jardin Rikugi
+  - lang: it
+    role: translation
+    text: parco Rikugi
+  - lang: ja
+    role: translation
+    text: 六義園
+  - lang: ru
+    role: translation
+    text: Сад Рикугиэн
+founded: 1702
+place: tokyo
+location: [139.74667, 35.73306]
+address: 東京都文京区本駒込六丁目16番3号
+website_url: https://www.tokyo-park.or.jp/park/rikugien/
+wikidata_id: Q1889010
+metadata:
+  sources: [Wikidata Q1889010 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Bunkyo_Rikugien_Panoramic_View_In_Late_Autumn_1.JPG/1280px-Bunkyo_Rikugien_Panoramic_View_In_Late_Autumn_1.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Bunkyo_Rikugien_Panoramic_View_In_Late_Autumn_1.JPG
+    license: CC BY-SA 3.0
+    credit: 京浜にけ
+identifiers:
+  viaf: "260017138"
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1889010
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q1889010
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1889010
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1889010

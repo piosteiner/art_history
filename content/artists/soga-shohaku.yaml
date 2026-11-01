@@ -1,0 +1,44 @@
+public_id: 107757
+name: Soga Shōhaku
+names:
+  - lang: ja
+    role: original
+    text: 曾我蕭白
+  - Kiichi Soga
+  - Shōhaku Soga
+  - Kishinsai Soga
+  - Kiyō Soga
+  - Shōhaku Miura
+  - Soga no Shōhaku
+  - Kiyū Soga
+  - Dasokuken
+  - Ikki Shōhaku koji
+  - Jasokuken Soga
+  - Shohaku Soga
+  - Soga Shohaku
+  - Soga Shouhaku
+  - lang: zh
+    role: translation
+    text: 曾我萧白
+  - lang: ru
+    role: translation
+    text: Сёхаку Сога
+birth: 1730
+death: 1781-01-30
+wikidata_id: Q3076703
+metadata:
+  sources: [Wikidata Q3076703 (retrieved 2026-11-01)]
+identifiers:
+  gnd: "131450395"
+  lc: nr88003625
+  ulan: "500121324"
+  viaf: "57745687"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3076703
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3076703

@@ -1,0 +1,67 @@
+public_id: 107705
+name: Minneapolis Institute of Art
+names:
+  - ARTSMIA
+  - The Minneapolis Institute of Arts
+  - MIA
+  - Minneapolis Society of Fine Arts
+  - lang: nl
+    role: translation
+    text: Kunstinstituut van Minneapolis
+  - lang: es
+    role: translation
+    text: Instituto de Arte de Mineápolis
+  - lang: ja
+    role: translation
+    text: ミネアポリス美術館
+  - lang: zh
+    role: translation
+    text: 明尼阿波利斯美術館
+  - lang: ko
+    role: translation
+    text: 미니애폴리스 미술관
+  - lang: ru
+    role: translation
+    text: Миннеаполисский институт искусства
+kind: art academy
+founded: 1883
+place: minneapolis
+location: [-93.27417, 44.95861]
+address: 2400 Third Avenue South
+website_url: http://www.artsmia.org/
+wikidata_id: Q1700481
+metadata:
+  sources: [Wikidata Q1700481 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Minneapolis_Institute_of_Arts.jpg/1280px-Minneapolis_Institute_of_Arts.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Minneapolis_Institute_of_Arts.jpg
+    license: CC BY-SA 3.0
+    credit: Alvintrusty
+identifiers:
+  bnf: "122134642"
+  gnd: 1015331-7
+  idref: 03078980X
+  lc: n80024146
+  ulan: "500225381"
+  viaf: "157703898"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1700481
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1700481
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q1700481
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1700481
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1700481

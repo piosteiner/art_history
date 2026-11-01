@@ -1,0 +1,51 @@
+public_id: 107745
+name: Aoki Mokubei
+names:
+  - kind: art_name
+    role: alternative
+    text: 木米
+  - lang: ja
+    role: original
+    text: 青木木米
+  - Sahei
+  - Kukurin
+  - Seirai
+  - Kokukan
+  - Yasohachi
+  - Hyakuroku Sanjin
+  - Teiunrō
+  - Ryūbei
+  - Hyakurokusanjin
+  - Kokikan
+  - Rōbei
+  - Mokubei Aoki
+  - lang: fr
+    role: translation
+    text: Mokubei
+  - lang: ru
+    role: translation
+    text: Аоки Мокубэй
+birth: 1767
+death: 1833-07-02
+wikidata_id: Q2090162
+metadata:
+  sources: [Wikidata Q2090162 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0e/Aoki_by_Tanomura.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Aoki_by_Tanomura.jpg
+    license: Public domain
+    credit: Tanomura Chikuden
+identifiers:
+  gnd: "133885593"
+  lc: no96035586
+  ulan: "500121189"
+  viaf: "75054609"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2090162
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2090162

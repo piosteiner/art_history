@@ -1,0 +1,46 @@
+public_id: 107766
+name: Tanomura Chikuden
+names:
+  - lang: ja
+    role: original
+    text: 田能村竹田
+  - Tanomura Kōzō
+  - Kyōkaku
+  - Ransui
+  - Chikuden
+  - Takanori Tanomura
+  - Chikuden Sonmin
+  - Kōken
+  - Kujō Senshi
+  - Chikuden Rōho
+  - Chikuden Tanomura
+  - Kōzō Tanomura
+  - Kun'i
+  - lang: ru
+    role: translation
+    text: Таномура Тикудэн
+birth: 1777-07-14
+death: 1835-10-20
+wikidata_id: Q1358543
+metadata:
+  sources: [Wikidata Q1358543 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1a/TanomuraChikuden%E7%94%B0%E8%83%BD%E6%9D%91%E7%AB%B9%E7%94%B0.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:TanomuraChikuden%E7%94%B0%E8%83%BD%E6%9D%91%E7%AB%B9%E7%94%B0.jpg
+    license: Public domain
+    credit: 田能村竹田
+identifiers:
+  gnd: "133861120"
+  idref: "154477877"
+  lc: n81070955
+  ulan: "500121327"
+  viaf: "96576423"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1358543
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1358543

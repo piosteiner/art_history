@@ -1,0 +1,35 @@
+public_id: 107954
+title: Kanbun Beauty
+attribution_label: Anonymous
+created: 1661/1672
+kind: kakemono
+medium: Hanging scroll, colour on paper
+materials: [paper]
+dimensions: [61.2, 24.4]
+institution: mary-and-jackson-burke-foundation
+description_md: "A [[bijinga]] of the Kanbun era (1661–1672): a slender young woman stands with knees slightly bent, arms drawn into her sleeves, her mouth hidden by an undergarment pulled out of place, eyes to the left — shyness or a courtesan’s coy allure, left to the viewer. Such paintings, mostly unsigned, were costly souvenirs for well-to-do townsmen and samurai of the pleasure quarters. [[source/history-of-japanese-art|p. 279, fig. 317]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 279, fig. 317
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 279, fig. 317
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 279, fig. 317
+  created:
+    - source: history-of-japanese-art
+      locator: p. 279, fig. 317
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 279, fig. 317
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 279, fig. 317
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 279, fig. 317

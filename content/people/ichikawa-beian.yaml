@@ -1,0 +1,46 @@
+public_id: 107781
+name: Ichikawa Beian
+given_name: Ichikawa
+family_name: Beian
+names:
+  - Beian Ichikawa
+  - lang: ja
+    role: translation
+    text: 市河米庵
+  - lang: ru
+    role: translation
+    text: Бэиан Итикава
+kind: person
+occupations: [calligrapher]
+birth: 1779-10-25
+death: 1858-08-26
+wikidata_id: Q11480613
+metadata:
+  sources: [Wikidata Q11480613 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c7/A_portrait_of_Ichikawa_Beian_%E5%B8%82%E6%B2%B3%E7%B1%B3%E5%BA%B5%E5%83%8F.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:A_portrait_of_Ichikawa_Beian_%E5%B8%82%E6%B2%B3%E7%B1%B3%E5%BA%B5%E5%83%8F.jpg
+    license: Public domain
+    credit: Watanabe Kazan
+identifiers:
+  bnf: 17808921w
+  lc: n84194584
+  ulan: "500319862"
+  viaf: "11258580"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q11480613
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q11480613
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q11480613
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q11480613

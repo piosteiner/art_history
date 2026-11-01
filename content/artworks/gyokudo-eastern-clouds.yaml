@@ -1,0 +1,54 @@
+public_id: 107733
+title: Eastern Clouds, Sifted Snow
+names:
+  - Snow Sifted Through Frozen Clouds
+  - Eastern Clouds, Sifted Snow
+  - Frozen Clouds, Sifted Snow
+  - lang: ja
+    role: translation
+    text: 東雲篩雪図
+creator: uragami-gyokudo
+created: c. 1811
+created_span: uncertain
+kind: kakemono
+medium: Hanging scroll, ink and colour on paper
+materials: [japan paper, inkstick, ink]
+dimensions: [133.5, 66]
+web_url: https://kunishitei.bunka.go.jp/heritage/detail/201/148
+description_md: "The full force of [[artist/uragami-gyokudo]]’s mature style, painted, says its inscription, after he had been drinking saké: the familiar literati motifs — a scholar reading in his cottage, a bridge, a village, a pagoda — dissolved in a dense atmosphere of layered ink, from a light underlying sketch to near-black accents, as if seen through falling snow. A cold, hostile world in which only the scholar, unaware, survives. [[source/history-of-japanese-art|p. 338, fig. 394]]"
+wikidata_id: Q42195679
+metadata:
+  sources: [Wikidata Q42195679 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 338, fig. 394
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/%E6%B5%A6%E4%B8%8A%E7%8E%89%E5%A0%82%E3%80%8A%E6%9D%B1%E9%9B%B2%E7%AF%A9%E9%9B%AA%E5%9B%B3%E3%80%8B19%E4%B8%96%E7%B4%80%E3%80%81%E5%B7%9D%E7%AB%AF%E5%BA%B7%E6%88%90%E8%A8%98%E5%BF%B5%E4%BC%9A.jpg/1280px-%E6%B5%A6%E4%B8%8A%E7%8E%89%E5%A0%82%E3%80%8A%E6%9D%B1%E9%9B%B2%E7%AF%A9%E9%9B%AA%E5%9B%B3%E3%80%8B19%E4%B8%96%E7%B4%80%E3%80%81%E5%B7%9D%E7%AB%AF%E5%BA%B7%E6%88%90%E8%A8%98%E5%BF%B5%E4%BC%9A.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E6%B5%A6%E4%B8%8A%E7%8E%89%E5%A0%82%E3%80%8A%E6%9D%B1%E9%9B%B2%E7%AF%A9%E9%9B%AA%E5%9B%B3%E3%80%8B19%E4%B8%96%E7%B4%80%E3%80%81%E5%B7%9D%E7%AB%AF%E5%BA%B7%E6%88%90%E8%A8%98%E5%BF%B5%E4%BC%9A.jpg
+    license: Public domain
+    credit: Uragami Gyokudō
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 338, fig. 394
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 338, fig. 394
+  created:
+    - source: history-of-japanese-art
+      locator: p. 338, fig. 394
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q42195679
+    - source: history-of-japanese-art
+      locator: p. 338, fig. 394
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 338, fig. 394
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 338, fig. 394

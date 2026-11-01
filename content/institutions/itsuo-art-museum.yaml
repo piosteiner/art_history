@@ -1,0 +1,49 @@
+public_id: 107715
+name: Itsuō Art Museum
+names:
+  - lang: fr
+    role: translation
+    text: musée des Beaux-Arts Itsuō
+  - lang: de
+    role: translation
+    text: Itsuō-Kunstmuseum
+  - lang: ja
+    role: translation
+    text: 逸翁美術館
+  - lang: zh
+    role: translation
+    text: 逸翁美术馆
+kind: museum
+founded: 1957
+place: ikeda
+location: [135.42878, 34.82556]
+website_url: https://www.hankyu-bunka.or.jp/itsuo-museum/
+wikidata_id: Q11640228
+metadata:
+  sources: [Wikidata Q11640228 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/150214_Itsuo_Art_Museum_Ikeda_Osaka_pref_Japan16n.jpg/1280px-150214_Itsuo_Art_Museum_Ikeda_Osaka_pref_Japan16n.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:150214_Itsuo_Art_Museum_Ikeda_Osaka_pref_Japan16n.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  gnd: 5105751-7
+  lc: n83217574
+  viaf: "140762104"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q11640228
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q11640228
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q11640228
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q11640228

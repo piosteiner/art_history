@@ -1,0 +1,41 @@
+public_id: 107996
+title: Dainichi Nyorai, lecture hall, Tōji
+attribution_label: Kōri and Kōshō
+created: 1501/1700
+kind: sculpture
+medium: Wood with gold leaf, painted eyes and metal details
+materials: [wood, gold leaf]
+dimensions: [180]
+dimensions_note: including base
+institution: to-ji
+description_md: "One of the replacements for figures of Tōji’s sculptural mandala lost in the fifteenth and sixteenth centuries, by Kōri and his disciple Kōshō: a facile smoothness of surface and little understanding of anatomy, though it impresses by sheer size and solidity. [[source/history-of-japanese-art|pp. 308–309, fig. 357]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 308–309, fig. 357
+  - type: associated_with
+    to: movement/momoyama-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 308–309, fig. 357
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 308–309, fig. 357
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 308–309, fig. 357
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 308–309, fig. 357
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 308–309, fig. 357
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 308–309, fig. 357
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 308–309, fig. 357

@@ -2,14 +2,24 @@ public_id: 100062
 title_lang: en
 title: Pine Trees in the Snow
 creator: maruyama-okyo
-materials: ["Ink, slight color, and gold on paper"]
+created: 1776/1800
+kind: byōbu
+medium: Pair of six-panel screens, ink, slight colour and gold on paper
+materials: ["Ink, slight color, and gold on paper", ink, gold]
 dimensions: [155.5, 362]
-dimensions_note: Two Screens with the same dimension
+dimensions_note: each screen
 institution: mitsui-memorial-museum
 web_url: https://kunishitei.bunka.go.jp/heritage/detail/201/33
+description_md: "A pair of screens commissioned by a member of the Mitsui merchant family: a single pine thrusts up beyond the upper edge, its branches filling the screen — at first glance like Eitoku’s Cypress, but [[artist/maruyama-okyo]]’s pines bend as any tree would in the wind. The trunks are not outlined but modelled with daubs of ink ([[tsuketate]]), patches of snow left white on the gold: the still, serene beauty of nature. [[source/history-of-japanese-art|p. 321, fig. 372]]"
 wikidata_id: Q107045354
 metadata:
   sources: [Wikidata Q107045354 (retrieved 2026-10-05)]
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 321, fig. 372
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Okyo_Pines_right.jpg/1280px-Okyo_Pines_right.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Okyo_Pines_right.jpg
@@ -20,19 +30,33 @@ images:
     license: Public domain
     credit: Maruyama Ōkyo
 sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 321, fig. 372
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 321, fig. 372
+  created:
+    - source: history-of-japanese-art
+      locator: p. 321, fig. 372
   creator:
     - accessed: 2026-10-05
       property: P170
       wikidata: Q107045354
+    - source: history-of-japanese-art
+      locator: p. 321, fig. 372
   materials:
-    - accessed: 2026-10-05
-      property: P186
-      wikidata: Q107045354
+    - source: history-of-japanese-art
+      locator: p. 321, fig. 372
   dimensions:
     - accessed: 2026-10-05
       property: P2048
       wikidata: Q107045354
+    - source: history-of-japanese-art
+      locator: p. 321, fig. 372
   institution:
     - accessed: 2026-10-05
       property: P195
       wikidata: Q107045354
+    - source: history-of-japanese-art
+      locator: p. 321, fig. 372

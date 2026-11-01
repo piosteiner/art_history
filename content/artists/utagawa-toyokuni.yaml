@@ -1,0 +1,46 @@
+public_id: 107741
+name: Utagawa Toyokuni I
+names:
+  - lang: ja
+    role: original
+    text: 歌川豊国
+  - Toyokuni I
+  - Utagawa Toyokuni
+  - Ichiyōsai
+  - Toyokuni Utagawa
+  - Ichiyōsai Toyokuni
+  - Utagawa I Toyokuni
+  - lang: it
+    role: translation
+    text: Toyokuni
+  - lang: ru
+    role: translation
+    text: Утагава Тоёкуни
+birth: 1769
+death: 1825-02-24
+wikidata_id: Q950316
+metadata:
+  sources: [Wikidata Q950316 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/84/Toyokuni_Utagawa_I_by_Kunisada_cropped.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Toyokuni_Utagawa_I_by_Kunisada_cropped.jpg
+    license: Public domain
+    credit: 初代歌川国貞/ Kunisada Utagawa I
+identifiers:
+  bnf: 14900935d
+  gnd: "133451666"
+  idref: 09832666X
+  kulturnav: 4fb7db59-93f0-44cb-a2f6-381020580469
+  lc: n80038350
+  rkd: "309437"
+  ulan: "500081100"
+  viaf: "20873990"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q950316
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q950316

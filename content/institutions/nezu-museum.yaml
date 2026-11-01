@@ -1,0 +1,53 @@
+public_id: 107693
+name: Nezu Museum
+names:
+  - Institute of Fine Arts
+  - Nezu Art Museum
+  - lang: fr
+    role: translation
+    text: musée Nezu
+  - lang: de
+    role: translation
+    text: Nezu-Museum
+  - lang: ja
+    role: translation
+    text: 根津美術館
+  - lang: ko
+    role: translation
+    text: 네즈 미술관
+kind: museum
+founded: 1940
+place: tokyo
+location: [139.7176, 35.66216]
+website_url: http://www.nezu-muse.or.jp/
+wikidata_id: Q1047097
+metadata:
+  sources: [Wikidata Q1047097 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Nezu_museum_entrance_tokyo_2014.jpg/1280px-Nezu_museum_entrance_tokyo_2014.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nezu_museum_entrance_tokyo_2014.jpg
+    license: CC BY-SA 3.0
+    credit: Kentin
+identifiers:
+  gnd: 5317331-4
+  idref: "176609083"
+  lc: n81139927
+  ulan: "500309717"
+  viaf: "173025845"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1047097
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1047097
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1047097
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1047097

@@ -1,0 +1,72 @@
+public_id: 107731
+title: Red and White Plum Blossoms
+names:
+  - lang: fr
+    role: translation
+    text: Pruniers blanc et rose en fleurs
+  - lang: ja
+    role: translation
+    text: 紅白梅図
+  - lang: zh
+    role: translation
+    text: 红白梅图屏风
+  - lang: ko
+    role: translation
+    text: 지본금지착색홍백매도
+  - lang: ru
+    role: translation
+    text: Цветение красной и белой сливы
+creator: ogata-korin
+created: 1710/1716
+kind: byōbu
+medium: Pair of two-panel screens, colour and gold and silver leaf on paper
+materials: [paper, gold leaf, silver leaf]
+dimensions: [156.5, 172.5]
+dimensions_note: each screen
+institution: moa-museum-of-art
+description_md: "A pair of two-panel screens from [[artist/ogata-korin]]’s last Kyoto period: a plum on either side of a curving stream whose surface is a series of flat decorative wave patterns in ink and silver; slender branches with small blossoms against angular forms — rich in pattern and contrasts of light and dark against glistening gold. [[source/history-of-japanese-art|pp. 315–316, fig. 366]]"
+wikidata_id: Q28154824
+metadata:
+  sources: [Wikidata Q28154824 (retrieved 2026-11-01)]
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 315–316, fig. 366
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Ogata_K%C5%8Drin_-_Red_and_White_Plum_Blossoms.jpg/1280px-Ogata_K%C5%8Drin_-_Red_and_White_Plum_Blossoms.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ogata_K%C5%8Drin_-_Red_and_White_Plum_Blossoms.jpg
+    license: Public domain
+    credit: Ogata Kōrin
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 315–316, fig. 366
+  names:
+    - accessed: 2026-11-01
+      wikidata: Q28154824
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 315–316, fig. 366
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 315–316, fig. 366
+  creator:
+    - accessed: 2026-11-01
+      property: P170
+      wikidata: Q28154824
+    - source: history-of-japanese-art
+      locator: pp. 315–316, fig. 366
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 315–316, fig. 366
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 315–316, fig. 366
+  institution:
+    - accessed: 2026-11-01
+      property: P195
+      wikidata: Q28154824
+    - source: history-of-japanese-art
+      locator: pp. 315–316, fig. 366

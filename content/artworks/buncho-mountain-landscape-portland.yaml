@@ -1,0 +1,39 @@
+public_id: 107928
+title: Mountain Landscape
+creator: tani-buncho
+created: 1794
+kind: kakemono
+medium: Hanging scroll, ink and colour on paper
+materials: [ink, paper]
+dimensions: [134.9, 53.8]
+institution: portland-art-museum
+inventory_number: "84.11"
+description_md: "A grove of snow-covered trees and a scholar’s pavilion against towering white mountains, recalling Sesshū: two overlapping right-angled triangles, balanced by their baselines. [[artist/tani-buncho]] (1763–1840), retainer of the Tayasu family in Edo and protégé of [[person/matsudaira-sadanobu]], brought bunjinga to the shogun’s capital. [[source/history-of-japanese-art|pp. 340–341, fig. 397]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 340–341, fig. 397
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 340–341, fig. 397
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 340–341, fig. 397
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 340–341, fig. 397
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 340–341, fig. 397
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 340–341, fig. 397
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 340–341, fig. 397
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 340–341, fig. 397

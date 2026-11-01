@@ -1,0 +1,57 @@
+public_id: 107698
+name: Fukuoka Art Museum
+names:
+  - lang: fr
+    role: translation
+    text: musée d'Art de Fukuoka
+  - lang: de
+    role: translation
+    text: Kunstmuseum Fukuoka
+  - lang: ja
+    role: translation
+    text: 福岡市美術館
+  - lang: ko
+    role: translation
+    text: 후쿠오카시 미술관
+kind: museum
+founded: 1979-11-03
+place: fukuoka
+location: [130.37951, 33.58383]
+address: 810-0051福岡市中央区大濠公園1番6号
+website_url: https://www.fukuoka-art-museum.jp/
+wikidata_id: Q3073273
+metadata:
+  sources: [Wikidata Q3073273 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Fukuoka_art_museum.JPG/1280px-Fukuoka_art_museum.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Fukuoka_art_museum.JPG
+    license: CC BY-SA 3.0
+    credit: Masgatotkaca
+identifiers:
+  bnf: 11877352w
+  gnd: 5206107-3
+  idref: "026546140"
+  lc: n79020590
+  ulan: "500305808"
+  viaf: "131030003"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q3073273
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q3073273
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q3073273
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q3073273
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q3073273

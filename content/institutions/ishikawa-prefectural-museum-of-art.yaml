@@ -1,0 +1,58 @@
+public_id: 107696
+name: Ishikawa Prefectural Museum of Art
+names:
+  - IPMA
+  - Ishikawa Kenritsu Bijutsukan
+  - lang: fr
+    role: translation
+    text: musée préfectoral d'art d'Ishikawa
+  - lang: ja
+    role: translation
+    text: 石川県立美術館
+  - lang: zh
+    role: translation
+    text: 石川縣立美術館
+  - lang: ko
+    role: translation
+    text: 이시카와현립 미술관
+kind: museum
+founded: 1959
+place: kanazawa
+location: [136.66139, 36.56]
+address: 〒920-0963 　石川県金沢市出羽町2-1
+website_url: https://www.ishibi.pref.ishikawa.jp/
+wikidata_id: Q3297759
+metadata:
+  sources: [Wikidata Q3297759 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Ishikawa_Prefectural_Museum_of_Art.JPG/1280px-Ishikawa_Prefectural_Museum_of_Art.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Ishikawa_Prefectural_Museum_of_Art.JPG
+    license: Public domain
+    credit: ほぶ
+identifiers:
+  bnf: 16950409s
+  gnd: 104746635X
+  idref: "179893831"
+  lc: n84046274
+  viaf: "130232742"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q3297759
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q3297759
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q3297759
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q3297759
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q3297759

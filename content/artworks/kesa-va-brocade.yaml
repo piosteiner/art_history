@@ -1,0 +1,32 @@
+public_id: 107958
+title: Priest’s robe (kesa)
+attribution_label: Anonymous
+created: 19th century
+created_span: uncertain
+kind: kesa
+medium: Brocade silk
+materials: [silk]
+institution: victoria-and-albert-museum
+description_md: A [[kesa]], the patchwork robe of the Buddha and his first mendicant disciples, here created from a single length of brocade figured with butterflies and peonies — and adorned with patches bearing Sanskrit seed syllables, among them “Hum”, the last of the mantra of Kannon, “Om mani padme hum”. [[source/history-of-japanese-art|p. 311, fig. 361]]
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 311, fig. 361
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 311, fig. 361
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 311, fig. 361
+  created:
+    - source: history-of-japanese-art
+      locator: p. 311, fig. 361
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 311, fig. 361
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 311, fig. 361

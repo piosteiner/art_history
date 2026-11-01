@@ -1,0 +1,49 @@
+public_id: 107742
+name: Hokkei
+names:
+  - lang: ja
+    role: original
+    text: 魚屋北渓
+  - Totoya Hokkei
+  - Aoigaoka
+  - Kyōsai
+  - Hokkei Totoya
+  - Toyota Hokkei
+  - Iwakubo Kinemon
+  - Hokkei Toyota
+  - Kiko
+  - Kyosai
+  - lang: zh
+    role: translation
+    text: 魚屋北溪
+  - lang: ru
+    role: translation
+    text: Хоккэи Тотоя
+birth: 1780
+death: 1850-05-20
+wikidata_id: Q11673960
+metadata:
+  sources: [Wikidata Q11673960 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4a/Brooklyn_Museum_-_Autumn_Maples_at_the_Takinogawa_River_-_Totoya_Hokkei.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Autumn_Maples_at_the_Takinogawa_River_-_Totoya_Hokkei.jpg
+    license: Public domain
+    credit: Hokkei
+identifiers:
+  bnf: 14899921k
+  gnd: "119205157"
+  idref: "151847495"
+  kulturnav: 24a60dd4-82fc-4cb9-86c6-96f2e51969aa
+  lc: nr2002018804
+  rkd: "291064"
+  ulan: "500327126"
+  viaf: "3173405"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q11673960
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q11673960

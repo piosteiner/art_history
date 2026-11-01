@@ -1,0 +1,48 @@
+public_id: 107778
+name: Ihara Saikaku
+names:
+  - lang: ja
+    role: original
+    text: 井原西鶴
+  - lang: ko
+    role: translation
+    text: 이하라 사이카쿠
+  - lang: ru
+    role: translation
+    text: Ихара Сайкаку
+kind: person
+occupations: [poet, novelist, playwright, writer]
+birth: 1642
+death: 1693-09-09
+wikidata_id: Q352561
+metadata:
+  sources: [Wikidata Q352561 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/07/Ihara-Saikaku-Portrait.png
+    source_url: https://commons.wikimedia.org/wiki/File:Ihara-Saikaku-Portrait.png
+    license: Public domain
+    credit: Template:Haga
+identifiers:
+  bnf: 11923305j
+  gnd: "118986317"
+  idref: "027117766"
+  lc: n79074490
+  nlk: KAC199632134
+  viaf: "59088917"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q352561
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q352561
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q352561
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q352561

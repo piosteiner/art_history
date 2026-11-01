@@ -1,0 +1,35 @@
+public_id: 107939
+title: The character mu
+creator: hakuin-ekaku
+created: mid 18th century
+created_span: uncertain
+kind: calligraphy
+medium: Ink on paper
+materials: [ink, paper]
+dimensions: [43.6, 42.2]
+description_md: "A [[zenga]] by [[artist/hakuin-ekaku]] (1685–1768), the most influential Zen master of the Edo period: the character mu, “nothingness”, of the [[koan]] in which the Chinese master Jōshū answered whether a dog has Buddha nature. Where the standard strokes suggest counting four items and cancelling them, Hakuin’s mu is a jumble of strokes — vitality rather than negation. [[source/history-of-japanese-art|p. 325, fig. 378]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 325, fig. 378
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 325, fig. 378
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 325, fig. 378
+  created:
+    - source: history-of-japanese-art
+      locator: p. 325, fig. 378
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 325, fig. 378
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 325, fig. 378
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 325, fig. 378

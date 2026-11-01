@@ -1,0 +1,55 @@
+public_id: 107750
+name: Kanō Tan'yū
+names:
+  - lang: ja
+    role: original
+    text: 異音光沢
+  - Shirōjirō
+  - Morinobu
+  - Shirojiro
+  - Kano Tan’yu
+  - Tan’yu Kano
+  - Hakurenshi
+  - Tan'yūsai
+  - Tan'yusai
+  - Kano Tan'yu
+  - Kanou Tan'yuu
+  - lang: nl
+    role: translation
+    text: Tanʾyu-Kanō
+  - lang: fr
+    role: translation
+    text: Kanō Tannyū
+  - lang: de
+    role: translation
+    text: Kanō Tan’yū
+  - lang: ja
+    role: original
+    text: 狩野探幽
+  - lang: ru
+    role: translation
+    text: Ка­но Танъю
+birth: 1602-03-04
+death: 1674-11-04
+wikidata_id: Q961405
+metadata:
+  sources: [Wikidata Q961405 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/22/Portrait_du_peintre_japonais_Kan%C5%8D_Tanny%C5%AB.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_du_peintre_japonais_Kan%C5%8D_Tanny%C5%AB.jpg
+    license: Public domain
+    credit: Kon Midori
+identifiers:
+  gnd: "132787687"
+  lc: n82146372
+  ulan: "500121024"
+  viaf: "20855097"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q961405
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q961405

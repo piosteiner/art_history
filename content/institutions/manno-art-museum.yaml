@@ -1,0 +1,29 @@
+public_id: 107716
+name: Manno Art Museum
+names:
+  - lang: ja
+    role: translation
+    text: 萬野美術館
+kind: museum
+place: osaka
+address: 大阪府大阪市南区八幡町28
+wikidata_id: Q140210107
+metadata:
+  sources: [Wikidata Q140210107 (retrieved 2026-11-01)]
+identifiers:
+  idref: "250529491"
+  lc: nr97007696
+  viaf: "141173864"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q140210107
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q140210107
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q140210107

@@ -1,0 +1,30 @@
+public_id: 107961
+title: Melon Skin
+creator: enomoto-kikaku
+kind: kakemono
+medium: Ink on paper
+materials: [ink, paper]
+dimensions: [31, 44.4]
+description_md: "A [[haiga]] by [[artist/enomoto-kikaku]] (1661–1707), one of the disciples of [[person/matsuo-basho]]: the discarded melon skin he saw floating down a stream, immortalized in a poem and a slightly melancholy but comical image — “Melon skin — spider legs floating on the water”. [[source/history-of-japanese-art|p. 333, fig. 388]]"
+relationships:
+  - type: associated_with
+    to: movement/genroku-era
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 333, fig. 388
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 333, fig. 388
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 333, fig. 388
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 333, fig. 388
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 333, fig. 388
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 333, fig. 388

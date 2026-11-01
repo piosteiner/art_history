@@ -1,0 +1,56 @@
+public_id: 107775
+name: Emperor Go-Mizunoo
+names:
+  - lang: ja
+    role: original
+    text: 後水尾天皇
+  - Go-Mizunoo-tennō
+  - Go-Mizunoo
+  - Kotohito
+  - Masahito
+  - Prince Kotohito
+  - Prince Masahito
+  - Mi-no-o Tenno
+  - lang: es
+    role: translation
+    text: Emperador Go-Mizunoo
+  - lang: ko
+    role: translation
+    text: 고미즈노오 천황
+  - lang: ru
+    role: translation
+    text: Император Го-Мидзуноо
+kind: person
+occupations: [sovereign]
+birth: 1596-06-29
+death: 1680-09-11
+wikidata_id: Q320229
+metadata:
+  sources: [Wikidata Q320229 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Emperor_Go-Mizunoo3.jpg/1280px-Emperor_Go-Mizunoo3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emperor_Go-Mizunoo3.jpg
+    license: Public domain
+    credit: Ogata Kōrin
+identifiers:
+  gnd: "119204983"
+  idref: "125688008"
+  lc: n83037553
+  viaf: "78823180"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q320229
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q320229
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q320229
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q320229

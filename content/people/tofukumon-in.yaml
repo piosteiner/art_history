@@ -1,0 +1,47 @@
+public_id: 107774
+name: Tokugawa Masako
+names:
+  - lang: ja
+    role: original
+    text: 徳川和子
+  - Tōfukumon-in
+  - Tofukumon-in
+  - Tokugawa Kazuko
+  - lang: zh
+    role: translation
+    text: 德川和子
+  - lang: ko
+    role: translation
+    text: 도쿠가와 마사코
+  - lang: ru
+    role: translation
+    text: Токугава Масако
+kind: person
+birth: 1607
+death: 1678
+wikidata_id: Q911334
+metadata:
+  sources: [Wikidata Q911334 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Tokugawa_Masako.jpg/1280px-Tokugawa_Masako.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tokugawa_Masako.jpg
+    license: Public domain
+    credit: 源秀飛
+identifiers:
+  gnd: "1029183422"
+  idref: "125368380"
+  lc: n81000181
+  viaf: "45613364"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q911334
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q911334
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q911334

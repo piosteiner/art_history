@@ -1,0 +1,35 @@
+public_id: 107959
+title: Bamboo
+creator: yanagisawa-kien
+created: mid 18th century
+created_span: uncertain
+kind: kakemono
+medium: Hanging scroll, pale green on indigo blue paper
+materials: [paper]
+dimensions: [94.5, 25.6]
+description_md: "A finger painting by [[artist/yanagisawa-kien]] (1704–1758), son of the chief retainer of the Yanagisawa family: a single stalk arcs downward across indigo-dyed paper, its leaves in pale green; his signature in gold and seals in red stabilize the composition. [[source/history-of-japanese-art|p. 328, fig. 382]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 328, fig. 382
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 328, fig. 382
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 328, fig. 382
+  created:
+    - source: history-of-japanese-art
+      locator: p. 328, fig. 382
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 328, fig. 382
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 328, fig. 382
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 328, fig. 382

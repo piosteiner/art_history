@@ -1,0 +1,16 @@
+public_id: 107718
+name: Okayama
+kind: settlement
+location: [133.91958, 34.65511]
+wikidata_id: Q200078
+metadata:
+  sources: [Wikidata Q200078 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q200078
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q200078

@@ -1,0 +1,32 @@
+public_id: 107699
+name: Koka
+names:
+  - lang: ja
+    role: original
+    text: 甲賀市
+  - lang: ko
+    role: translation
+    text: 고카시
+  - lang: ru
+    role: translation
+    text: Кока
+kind: settlement
+parent: shiga-prefecture
+country_code: JP
+location: [136.16631, 34.96608]
+wikidata_id: Q847584
+metadata:
+  sources: [Wikidata Q847584 (retrieved 2026-11-01)]
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q847584
+  parent:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q847584
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q847584

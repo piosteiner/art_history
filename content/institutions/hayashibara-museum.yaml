@@ -1,0 +1,47 @@
+public_id: 107719
+name: Hayashibara Museum of Art
+names:
+  - lang: fr
+    role: translation
+    text: musée des Beaux-Arts Hayashibara
+  - lang: ja
+    role: translation
+    text: 林原美術館
+kind: museum
+founded: 1961-07
+place: okayama
+location: [133.93333, 34.66361]
+address: 〒700-0823 岡山市北区丸の内2-7-15
+website_url: http://www.hayashibara-museumofart.jp/
+wikidata_id: Q4707602
+metadata:
+  sources: [Wikidata Q4707602 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Gate_-_Hayashibara_Museum_of_Art_-_DSC01773.JPG/1280px-Gate_-_Hayashibara_Museum_of_Art_-_DSC01773.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Gate_-_Hayashibara_Museum_of_Art_-_DSC01773.JPG
+    license: Public domain
+    credit: Daderot
+identifiers:
+  lc: nr92026571
+  viaf: "128279810"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q4707602
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q4707602
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q4707602
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q4707602
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q4707602

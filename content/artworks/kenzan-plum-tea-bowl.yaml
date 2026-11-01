@@ -1,0 +1,39 @@
+public_id: 107957
+title: Tea bowl with plum-branch design
+creator: ogata-kenzan
+created: 18th century
+created_span: uncertain
+kind: tea bowl
+medium: Earthenware with underglaze painting
+materials: [earthenware]
+dimensions: [8]
+institution: umezawa-memorial-museum
+description_md: "A restrained work of [[artist/ogata-kenzan]]: a spray of plum blossoms painted under the glaze in rust brown and cream, the petals so impressionistically rendered that the design seems almost pure abstraction. [[source/history-of-japanese-art|p. 299, fig. 343]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 299, fig. 343
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 299, fig. 343
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 299, fig. 343
+  created:
+    - source: history-of-japanese-art
+      locator: p. 299, fig. 343
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 299, fig. 343
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 299, fig. 343
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 299, fig. 343
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 299, fig. 343

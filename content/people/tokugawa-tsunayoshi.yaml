@@ -1,0 +1,50 @@
+public_id: 107771
+name: Tokugawa Tsunayoshi
+names:
+  - lang: ja
+    role: original
+    text: 徳川綱吉
+  - lang: zh
+    role: translation
+    text: 德川綱吉
+  - lang: ko
+    role: translation
+    text: 도쿠가와 쓰나요시
+  - lang: ru
+    role: translation
+    text: Токугава Цунаёси
+kind: person
+occupations: [samurai]
+birth: 1646-02-23
+death: 1709-02-19
+wikidata_id: Q313745
+metadata:
+  sources: [Wikidata Q313745 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Tsunyaoshi.jpg/1280px-Tsunyaoshi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tsunyaoshi.jpg
+    license: Public domain
+    credit: Tosa Mitsuoki
+identifiers:
+  bnf: 15091745v
+  gnd: "132595265"
+  idref: 11604585X
+  lc: n82044650
+  viaf: "52853623"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q313745
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q313745
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q313745
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q313745

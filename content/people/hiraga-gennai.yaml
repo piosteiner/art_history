@@ -1,0 +1,79 @@
+public_id: 107783
+name: Hiraga Gennai
+names:
+  - kind: art_name
+    role: alternative
+    text: 鳩渓
+  - kind: art_name
+    role: alternative
+    text: 李山
+  - kind: art_name
+    role: alternative
+    text: 風来山人
+  - kind: art_name
+    role: alternative
+    text: 福内鬼外
+  - kind: art_name
+    role: alternative
+    text: 天竺浪人
+  - lang: ja
+    role: original
+    text: 平賀 源内
+  - Fūrai Sanjin
+  - Hiraga Kyūkei
+  - Fukuchi Kigai
+  - Kunitomo Hiraga
+  - Shiroishi
+  - Kigai Fukuchi
+  - Shōraishi
+  - Hiraga Kunitomo
+  - Tenjiku Rōnin
+  - Gennai Hiraga
+  - lang: ja
+    role: original
+    text: 平賀源内
+  - lang: zh
+    role: translation
+    text: 平賀源內
+  - lang: ko
+    role: translation
+    text: 히라가 겐나이
+  - lang: ru
+    role: translation
+    text: Хирага Гэннай
+kind: person
+occupations: [writer, botanist, inventor, essayist, pharmacist, naturalist]
+birth: 1728
+death: 1780-01-24
+wikidata_id: Q968242
+metadata:
+  sources: [Wikidata Q968242 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/45/A_Portrait_of_Ky%C5%ABkei_Hiraga.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:A_Portrait_of_Ky%C5%ABkei_Hiraga.jpg
+    license: Public domain
+    credit: 木村黙老 / Momuō Kimura
+identifiers:
+  bnf: "126130968"
+  gnd: "139035672"
+  idref: "114535973"
+  lc: n81145892
+  ulan: "500121412"
+  viaf: "48096126"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q968242
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q968242
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q968242
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q968242

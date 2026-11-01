@@ -1,0 +1,36 @@
+public_id: 107965
+title: Saké bottle with landscape design (Ko Imari)
+attribution_label: Anonymous
+created: 17th century
+created_span: uncertain
+kind: bottle
+medium: Porcelain
+materials: [Imari ware]
+dimensions: [38]
+institution: umezawa-memorial-museum
+description_md: "An early [[imari-ware]] bottle painted in [[underglaze-blue]] after Chinese landscapes — a tall mountain, a thatch-roofed pavilion, angular pines — thickly potted and hastily made: the pines do not quite follow the curved surface. The porcelain of Arita began when the Korean potter Ri Sampei, brought to Japan by the daimyo Nabeshima Naoshige, found kaolin clay there in 1616. [[source/history-of-japanese-art|p. 294, fig. 335]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 294, fig. 335
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 294, fig. 335
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 294, fig. 335
+  created:
+    - source: history-of-japanese-art
+      locator: p. 294, fig. 335
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 294, fig. 335
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 294, fig. 335
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 294, fig. 335

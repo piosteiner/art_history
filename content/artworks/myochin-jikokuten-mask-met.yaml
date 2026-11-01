@@ -1,0 +1,39 @@
+public_id: 107976
+title: Face mask in the form of Jikokuten
+creator: myochin-muneakira
+created: 1745
+kind: mask
+medium: Lacquered iron with yellow silk backing
+materials: [iron, lacquer, silk]
+dimensions: [24.1]
+institution: metropolitan-museum-of-art
+inventory_number: 19.115.2
+description_md: A face guard by the master armourer [[artist/myochin-muneakira]] (1673–1745) in the form of Jikokuten, one of the [[shitenno]], with the fierce features of the guardian Niō at temple gates — iron that a fighting warrior could still have used, though it was made for display in procession. [[source/history-of-japanese-art|p. 303, fig. 349]]
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 303, fig. 349
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 303, fig. 349
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 303, fig. 349
+  created:
+    - source: history-of-japanese-art
+      locator: p. 303, fig. 349
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 303, fig. 349
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 303, fig. 349
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 303, fig. 349
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 303, fig. 349

@@ -1,0 +1,39 @@
+public_id: 107968
+title: Box decorated with fan paintings
+creator: ogata-korin
+created: late 17th century
+created_span: uncertain
+kind: box
+medium: Colour on paper, applied to lacquer on wood with gold-leaf ground
+materials: [paper, lacquer, wood, gold leaf]
+dimensions: [19, 38.2, 27.5]
+institution: museum-yamato-bunkakan
+description_md: A gold-lacquer box on which [[artist/ogata-korin]] (1658–1716) pasted fan paintings of figures and flowers — perhaps an episode from the Tales of the Hōgen Rebellion, a frequent subject of Sōtatsu’s fans. Kōrin came from the Kariganeya, the textile shop that supplied the wives of Hideyoshi and Hidetada and the Empress Tōfukumon’in. [[source/history-of-japanese-art|pp. 313–314, fig. 364]]
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 313–314, fig. 364
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 313–314, fig. 364
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 313–314, fig. 364
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 313–314, fig. 364
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 313–314, fig. 364
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 313–314, fig. 364
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 313–314, fig. 364
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 313–314, fig. 364

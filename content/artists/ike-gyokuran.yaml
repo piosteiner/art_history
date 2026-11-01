@@ -1,0 +1,48 @@
+public_id: 107762
+name: Ike Gyokuran
+names:
+  - lang: ja
+    role: original
+    text: 池玉瀾
+  - Tokuyama Gyokuran
+  - Machi
+  - Machi Ike
+  - Ikeno Machi
+  - Machi-jo
+  - Gyokuran Ike
+  - Gyokuran
+  - Machi Tokuyama
+  - Gyokuran Ikeno
+  - Ike no Gyokuran
+  - Gyokuran Tokuyama
+  - Machi Ikeno
+  - Omachi
+  - lang: ru
+    role: translation
+    text: Икэ Гёкуран
+birth: 1727
+death: 1784
+wikidata_id: Q23008985
+metadata:
+  sources: [Wikidata Q23008985 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Ike_no_Taiga_and_Gyokuran.jpg/1280px-Ike_no_Taiga_and_Gyokuran.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ike_no_Taiga_and_Gyokuran.jpg
+    license: Public domain
+    credit: 三熊花顚
+identifiers:
+  bnf: "157482429"
+  gnd: "133169804"
+  idref: "119459469"
+  lc: n2006091893
+  ulan: "500121242"
+  viaf: "192149294363580522189"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q23008985
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q23008985

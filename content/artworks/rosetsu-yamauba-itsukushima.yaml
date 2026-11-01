@@ -1,0 +1,38 @@
+public_id: 107983
+title: Yamauba and Kintarō
+creator: nagasawa-rosetsu
+created: 1797
+kind: ema
+medium: Colour on silk
+materials: [silk]
+dimensions: [157.5, 84]
+institution: itsukushima-shrine
+description_md: "A votive painting ([[ema]]) dedicated in 1797 at the Itsukushima Shrine by [[artist/nagasawa-rosetsu]] (1754–1799), Ōkyo’s troublesome pupil: the mountain woman as an old, ugly court lady in tattered garments once gorgeous, the child more monkey than infant — a cynical view of the reality behind tender maternal care. [[source/history-of-japanese-art|pp. 322–323, fig. 374]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 322–323, fig. 374
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 322–323, fig. 374
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 322–323, fig. 374
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 322–323, fig. 374
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 322–323, fig. 374
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 322–323, fig. 374
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 322–323, fig. 374
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 322–323, fig. 374

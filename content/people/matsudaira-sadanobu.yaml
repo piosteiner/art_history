@@ -1,0 +1,47 @@
+public_id: 107782
+name: Matsudaira Sadanobu
+names:
+  - lang: ja
+    role: original
+    text: 松平定信
+  - lang: ko
+    role: translation
+    text: 마쓰다이라 사다노부
+  - lang: ru
+    role: translation
+    text: Мацудайра Саданобу
+kind: person
+occupations: [philosopher, politician, daimyo]
+birth: 1759-01-15
+death: 1829-06-14
+wikidata_id: Q284038
+metadata:
+  sources: [Wikidata Q284038 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5e/Matsudaira_Sadanobu.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Matsudaira_Sadanobu.jpg
+    license: Public domain
+    credit: 松平定信（自画像）
+identifiers:
+  bnf: 14458980b
+  gnd: "118604708"
+  idref: "061147184"
+  lc: n82086377
+  viaf: "121832380"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q284038
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q284038
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q284038
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q284038

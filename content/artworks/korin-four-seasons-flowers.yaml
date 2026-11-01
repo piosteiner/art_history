@@ -1,0 +1,35 @@
+public_id: 107969
+title: Flowers of the Four Seasons
+creator: ogata-korin
+created: 1705
+kind: handscroll
+medium: Handscroll mounted on four panels, colour on paper
+materials: [paper]
+dimensions: [36.6, 131]
+dimensions_note: each panel
+description_md: "One of the few dated paintings of [[artist/ogata-korin]], from his years in Edo with the mint official Nakamura Kuranosuke: a handscroll, now mounted on four panels, of peonies, hollyhocks, iris, chrysanthemums, daffodils and many other flowers outlined in pale ink and filled with thin, moist colours, the leaves in the boneless method with [[tarashikomi]]. [[source/history-of-japanese-art|p. 316, fig. 367]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 316, fig. 367
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 316, fig. 367
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 316, fig. 367
+  created:
+    - source: history-of-japanese-art
+      locator: p. 316, fig. 367
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 316, fig. 367
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 316, fig. 367
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 316, fig. 367

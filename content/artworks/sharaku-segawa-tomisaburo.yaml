@@ -1,0 +1,58 @@
+public_id: 107987
+title: Segawa Tomisaburō II as Yadorigi, wife of Ōgishi Kurando
+names: ["Segawa Tomisaburō as Yadorigi, wife of Ogishi Kurando"]
+creator: toshusai-sharaku
+created: 1794
+kind: Japanese woodblock print
+medium: Polychrome woodblock print with mica background
+materials: [paper]
+dimensions: [38.1, 23.2]
+dimensions_note: ōban
+institution: tokyo-national-museum
+description_md: "The actor called “Nasty Tomi” for his acerbic personality, in a female role, glaring through hard eyes as he pulls up one sleeve: truthful, unflattering, frozen in a mie pose against glistening grey mica. [[artist/toshusai-sharaku]] produced about 150 actor prints between spring 1794 and New Year 1795 and disappeared; a law of 1794 forbade mica. [[source/history-of-japanese-art|p. 286, fig. 325]]"
+wikidata_id: Q62024406
+metadata:
+  sources: [Wikidata Q62024406 (retrieved 2026-10-05)]
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 286, fig. 325
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/MET_DP130248.jpg/1280px-MET_DP130248.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:MET_DP130248.jpg
+    license: CC0
+    credit: Sharaku
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Sharaku_-_Segawa_Tomisabur%C5%8D_as_Yadorigi%2C_wife_of_Ogishi_Kurando.png/1280px-Sharaku_-_Segawa_Tomisabur%C5%8D_as_Yadorigi%2C_wife_of_Ogishi_Kurando.png
+    source_url: https://commons.wikimedia.org/wiki/File:Sharaku_-_Segawa_Tomisabur%C5%8D_as_Yadorigi,_wife_of_Ogishi_Kurando.png
+    license: Public domain
+    credit: Tōshūsai Sharaku
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 286, fig. 325
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 286, fig. 325
+  created:
+    - accessed: 2026-10-05
+      property: P571
+      wikidata: Q62024406
+    - source: history-of-japanese-art
+      locator: p. 286, fig. 325
+  creator:
+    - accessed: 2026-10-05
+      property: P170
+      wikidata: Q62024406
+    - source: history-of-japanese-art
+      locator: p. 286, fig. 325
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 286, fig. 325
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 286, fig. 325
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 286, fig. 325

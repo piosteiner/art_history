@@ -1,0 +1,35 @@
+public_id: 107746
+name: Eiraku Hozen
+given_name: Eiraku
+family_name: Hozen
+names:
+  - Konan Hozen
+  - Nishimura Zengoro XI
+  - Ito Seimei
+  - Miihama
+  - Konan
+  - Oniwayaki
+  - Butsuyu
+  - Nishimura
+  - lang: ja
+    role: translation
+    text: 永樂保全
+birth: 1795
+death: 1854-11-08
+wikidata_id: Q11550137
+metadata:
+  sources: [Wikidata Q11550137 (retrieved 2026-11-01)]
+identifiers:
+  gnd: "1062590805"
+  lc: n78012362
+  ulan: "500121409"
+  viaf: "16023909"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q11550137
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q11550137

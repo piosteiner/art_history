@@ -1,0 +1,33 @@
+public_id: 107726
+name: Taku Seibyō
+names:
+  - lang: nl
+    role: translation
+    text: Taku Seibyo
+  - lang: ja
+    role: translation
+    text: 多久聖廟
+founded: 1708
+place: taku
+location: [130.098, 33.2597]
+wikidata_id: Q2278548
+metadata:
+  sources: [Wikidata Q2278548 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Taku_Seibyo_02.jpg/1280px-Taku_Seibyo_02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Taku_Seibyo_02.jpg
+    license: CC BY-SA 3.0
+    credit: STA3816
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q2278548
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q2278548
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q2278548

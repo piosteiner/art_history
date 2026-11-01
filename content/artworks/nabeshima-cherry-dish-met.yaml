@@ -1,0 +1,33 @@
+public_id: 107977
+title: Shallow dish with cherry-blossom design (Nabeshima ware)
+attribution_label: Anonymous
+created: 1664/1675
+kind: dish
+medium: Porcelain painted in underglaze blue with celadon and iron glazes
+materials: [Nabeshima ware]
+dimensions_note: diameter 19.7 cm
+institution: metropolitan-museum-of-art
+inventory_number: 1975.268.555
+description_md: "A [[nabeshima-ware]] dish from the Nangawara kiln: a blossoming cherry tree combined with an abstract pattern suggesting the curtains of an outdoor blossom-viewing enclosure, in three colour zones — pale blue, pale green and chocolate brown. Pressed in a mould and outlined in underglaze blue from a single sketch. [[source/history-of-japanese-art|p. 295, fig. 337]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 295, fig. 337
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 295, fig. 337
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 295, fig. 337
+  created:
+    - source: history-of-japanese-art
+      locator: p. 295, fig. 337
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 295, fig. 337
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 295, fig. 337

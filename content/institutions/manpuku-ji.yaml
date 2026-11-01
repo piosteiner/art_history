@@ -1,0 +1,52 @@
+public_id: 107724
+name: Manpuku-ji Temple
+names:
+  - Mampuku-ji
+  - Manpuku-ji
+  - lang: ja
+    role: translation
+    text: 萬福寺
+  - lang: ko
+    role: translation
+    text: 만푸쿠지
+  - lang: ru
+    role: translation
+    text: Мампуку-дзи
+kind: temple
+founded: 1661
+place: uji
+location: [135.8075, 34.91389]
+address: 京都府宇治市五ヶ庄三番割34
+website_url: https://www.obakusan.or.jp/
+wikidata_id: Q576318
+metadata:
+  sources: [Wikidata Q576318 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/260117_Manpuku-ji_Uji_Kyoto_pref_Japan01s3.jpg/1280px-260117_Manpuku-ji_Uji_Kyoto_pref_Japan01s3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:260117_Manpuku-ji_Uji_Kyoto_pref_Japan01s3.jpg
+    license: CC BY-SA 4.0
+    credit: 663highland
+identifiers:
+  gnd: "1044501324"
+  viaf: "254104124"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q576318
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q576318
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q576318
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q576318
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q576318

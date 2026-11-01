@@ -1,0 +1,33 @@
+public_id: 107950
+title: Plate with a hare leaping over waves and plate with a geometric motif
+attribution_label: Anonymous
+created: 1650/1690
+kind: dish
+medium: Porcelain with underglaze cobalt blue
+materials: [Imari ware]
+dimensions_note: diameter 20.4 cm each
+institution: seattle-art-museum
+inventory_number: 92.47.11, 92.47.12
+description_md: "A pair of blue-and-white Imari plates showing the new native aesthetic: on the left, from a Kakiemon kiln (1670/90), a hare leaping over waves — a common Chinese motif, but here a Japanese image of fecundity; on the right, Kutani type (1650/90), a completely abstract asymmetrical group of five dots against a design along half the rim, perhaps a stylized samurai crest (William Rathbun). [[source/history-of-japanese-art|pp. 296–297, fig. 339]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 296–297, fig. 339
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 296–297, fig. 339
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 296–297, fig. 339
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 296–297, fig. 339
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 296–297, fig. 339
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 296–297, fig. 339

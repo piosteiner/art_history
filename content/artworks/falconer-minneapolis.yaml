@@ -1,0 +1,37 @@
+public_id: 107934
+title: Falconer (Takajō)
+attribution_label: Anonymous
+created: 18th century
+created_span: uncertain
+kind: kakemono
+medium: Hanging scroll, ink and colour on paper
+materials: [ink, paper]
+dimensions: [58.7, 22.5]
+institution: minneapolis-institute-of-art
+inventory_number: 99.59.2
+description_md: "An [[otsu-e]], the cheap painted icons and pictures sold along the Tōkaidō at Ōtsu: a samurai falconer of the kind that travelled in the retinue of a great daimyo, his simplicity and the glum-looking bird on his arm adding a note of whimsy. [[source/history-of-japanese-art|pp. 279–280, fig. 318]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 279–280, fig. 318
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 279–280, fig. 318
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 279–280, fig. 318
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 279–280, fig. 318
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 279–280, fig. 318
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 279–280, fig. 318
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 279–280, fig. 318

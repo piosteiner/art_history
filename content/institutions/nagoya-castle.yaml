@@ -1,0 +1,54 @@
+public_id: 107713
+name: Nagoya Castle
+names:
+  - lang: nl
+    role: translation
+    text: Kasteel Nagoya
+  - lang: fr
+    role: translation
+    text: château de Nagoya
+  - lang: de
+    role: translation
+    text: Burg Nagoya
+  - lang: it
+    role: translation
+    text: Castello di Nagoya
+  - lang: es
+    role: translation
+    text: Castillo Nagoya
+  - lang: ja
+    role: translation
+    text: 名古屋城
+  - lang: ko
+    role: translation
+    text: 나고야성
+  - lang: ru
+    role: translation
+    text: Замок Нагоя
+founded: 1532
+place: nagoya
+location: [136.89861, 35.18556]
+website_url: https://www.nagoyajo.city.nagoya.jp/
+wikidata_id: Q648629
+metadata:
+  sources: [Wikidata Q648629 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Nagoya_Castle%28Larger%29.jpg/1280px-Nagoya_Castle%28Larger%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nagoya_Castle(Larger).jpg
+    license: CC BY-SA 3.0
+    credit: Base64
+identifiers:
+  viaf: "244329525"
+sources:
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q648629
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q648629
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q648629

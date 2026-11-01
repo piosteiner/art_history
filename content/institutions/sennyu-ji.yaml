@@ -1,0 +1,56 @@
+public_id: 107712
+name: Sennyū-ji Temple
+names:
+  - Mi-tera
+  - Mitera
+  - Sennyū-ji
+  - lang: es
+    role: translation
+    text: Sennyu-ji
+  - lang: ja
+    role: translation
+    text: 泉涌寺
+  - lang: ko
+    role: translation
+    text: 센뉴지
+  - lang: ru
+    role: translation
+    text: Сэнню-дзи
+kind: temple
+founded: 1218
+place: kyoto
+location: [135.78056, 34.97806]
+address: 京都府京都市東山区泉涌寺山内町27
+website_url: https://mitera.org/
+wikidata_id: Q1060966
+metadata:
+  sources: [Wikidata Q1060966 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Sennyuji_Kyoto02bs4350.jpg/1280px-Sennyuji_Kyoto02bs4350.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sennyuji_Kyoto02bs4350.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  lc: n85032810
+  viaf: "143126761"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q1060966
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q1060966
+  address:
+    - accessed: 2026-11-01
+      property: P6375
+      wikidata: Q1060966
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q1060966
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q1060966

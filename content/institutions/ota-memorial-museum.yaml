@@ -1,0 +1,61 @@
+public_id: 107711
+name: Ōta Memorial Museum of Art
+names:
+  - Ukiyo-e Ōta Memorial Museum of Art
+  - lang: fr
+    role: translation
+    text: musée mémorial d'Art ukiyo-e d'Ōta
+  - lang: de
+    role: translation
+    text: Ōta-Kunstmuseum für Ukiyo-e
+  - lang: it
+    role: translation
+    text: Museo memoriale d'arte ukiyo-e di Ōta
+  - lang: ja
+    role: translation
+    text: 浮世絵 太田記念美術館
+  - lang: zh
+    role: translation
+    text: 浮世繪 太田紀念美術館
+  - lang: ko
+    role: translation
+    text: 우키요에 오타 기념 미술관
+  - lang: ru
+    role: translation
+    text: Мемориальный музей укиё-е Ота
+kind: museum
+founded: 1976-09-14
+place: tokyo
+location: [139.705, 35.6694]
+website_url: http://www.ukiyoe-ota-muse.jp/
+wikidata_id: Q3815442
+metadata:
+  sources: [Wikidata Q3815442 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c5/Ota-Memorial-Museum-Harajuku-01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ota-Memorial-Museum-Harajuku-01.jpg
+    license: CC BY-SA 3.0
+    credit: Rs1421
+identifiers:
+  bnf: 15977953m
+  idref: 14834982X
+  lc: n81066143
+  ulan: "500309723"
+  viaf: "127153535"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q3815442
+  place:
+    - accessed: 2026-11-01
+      property: P131
+      wikidata: Q3815442
+  founded:
+    - accessed: 2026-11-01
+      property: P571
+      wikidata: Q3815442
+  location:
+    - accessed: 2026-11-01
+      property: P625
+      wikidata: Q3815442

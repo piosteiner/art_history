@@ -1,0 +1,45 @@
+public_id: 107768
+name: Tani Bunchō
+names:
+  - lang: ja
+    role: original
+    text: 谷文晁
+  - Bunchō
+  - Tankai
+  - Masayasu Tani
+  - Tani Masayasu
+  - Gagakusai
+  - Shazanrō
+  - Bunchō Tani
+  - Tani Buncho
+  - Tani Bunchou
+  - Bunchô Tani
+  - lang: ru
+    role: translation
+    text: Тани Бунтё
+birth: 1763-10-15
+death: 1841-01-06
+wikidata_id: Q1375891
+metadata:
+  sources: [Wikidata Q1375891 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Portrait_of_Tani_Bunch%C5%8D.jpg/1280px-Portrait_of_Tani_Bunch%C5%8D.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Tani_Bunch%C5%8D.jpg
+    license: Public domain
+    credit: 逢坂文雍
+identifiers:
+  bnf: 14878890g
+  gnd: "128523964"
+  idref: "079151264"
+  lc: nr89003650
+  ulan: "500121188"
+  viaf: "96575357"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1375891
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1375891

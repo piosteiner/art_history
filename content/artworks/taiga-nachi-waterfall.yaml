@@ -1,0 +1,39 @@
+public_id: 107990
+title: Nachi Waterfall
+creator: ike-taiga
+created: 1770s
+created_span: uncertain
+kind: kakemono
+medium: Hanging scroll, colour on paper
+materials: [paper]
+dimensions: [125.7, 56.9]
+institution: tokyo-national-museum
+description_md: "Painted by [[artist/ike-taiga]] at about fifty: not a minutely detailed record but a recreation of impressions — rocks and trees carry the eye to a large triangular mountain with the waterfall a void of white paper at its centre; loose, rhythmic brushwork and abundant washes give a wet, atmospheric quality. [[source/history-of-japanese-art|pp. 331–332, fig. 386]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 331–332, fig. 386
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 331–332, fig. 386
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 331–332, fig. 386
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 331–332, fig. 386
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 331–332, fig. 386
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 331–332, fig. 386
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 331–332, fig. 386
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 331–332, fig. 386

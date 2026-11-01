@@ -1,0 +1,39 @@
+public_id: 107756
+name: Nagasawa Rosetsu
+names:
+  - lang: ja
+    role: original
+    text: 長沢芦雪
+  - Kanshū
+  - Rosetsu
+  - Gyosha
+  - Inkyo
+  - lang: zh
+    role: translation
+    text: 长泽芦雪
+  - lang: ko
+    role: translation
+    text: 나가사와 로세쓰
+  - lang: ru
+    role: translation
+    text: Росэцу Нагасава
+birth: 1754
+death: 1799-07-10
+wikidata_id: Q1632536
+metadata:
+  sources: [Wikidata Q1632536 (retrieved 2026-11-01)]
+identifiers:
+  gnd: 13409719X
+  idref: "229532934"
+  lc: n82255862
+  ulan: "500323051"
+  viaf: "70138080"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q1632536
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q1632536

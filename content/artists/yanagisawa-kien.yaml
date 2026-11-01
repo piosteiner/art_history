@@ -1,0 +1,52 @@
+public_id: 107759
+name: Ki-en
+names:
+  - lang: ja
+    role: original
+    text: 柳沢淇園
+  - Yanagisawa Kien
+  - Chikkei
+  - Gondayû
+  - Rikyó
+  - Yanagizawa Rikyô
+  - Gokëin Shûjin
+  - Chikukei
+  - Gyokukei
+  - Ryûrikyô
+  - Azana Kobi
+  - Kôbi
+  - Gyokei
+  - Ryu Rikyo
+  - Kien Yanagisawa
+  - Ryn Rikyo
+  - Yanagisawa Rikyō
+  - Yanagisawa Rikyo
+  - Ryū Rikyō
+  - Kien
+  - Gondayu
+  - Rikyo
+  - Yanagizawa Rikyo
+  - Ryurikyo
+  - Kobi
+  - lang: ru
+    role: translation
+    text: Киэн Янагисава
+birth: 1703-08-30
+death: 1758-10-06
+wikidata_id: Q3196281
+metadata:
+  sources: [Wikidata Q3196281 (retrieved 2026-11-01)]
+identifiers:
+  gnd: "133885666"
+  lc: nr2001028781
+  ulan: "500328365"
+  viaf: "6135544"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3196281
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3196281

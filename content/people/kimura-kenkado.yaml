@@ -1,0 +1,45 @@
+public_id: 107780
+name: Sonsai
+names:
+  - lang: ja
+    role: original
+    text: 木村蒹葭堂
+  - Kimura Kenkadō
+  - Sansai
+  - Kimura Kenkado
+  - Kenkado Kimura
+kind: person
+occupations: [painter, collector, brewer]
+birth: 1736-12-29
+death: 1802-02-27
+wikidata_id: Q3490716
+metadata:
+  sources: [Wikidata Q3490716 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0f/A_portrait_of_Kimura_Kenkado_by_Tani_Buncho.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:A_portrait_of_Kimura_Kenkado_by_Tani_Buncho.jpg
+    license: Public domain
+    credit: Tani Bunchō(1763-1841) 谷文晁筆
+identifiers:
+  gnd: "1036771903"
+  idref: "183946464"
+  lc: n81047731
+  ulan: "500335907"
+  viaf: "60401091"
+sources:
+  kind:
+    - accessed: 2026-11-01
+      property: P31
+      wikidata: Q3490716
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q3490716
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q3490716
+  occupations:
+    - accessed: 2026-11-01
+      property: P106
+      wikidata: Q3490716

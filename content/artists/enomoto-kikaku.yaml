@@ -1,0 +1,38 @@
+public_id: 107763
+name: Takarai Kikaku
+names:
+  - lang: ja
+    role: original
+    text: 宝井其角
+  - Enomoto Kikaku
+  - Kikaku
+  - lang: ko
+    role: translation
+    text: 다카라이 기카쿠
+  - lang: ru
+    role: translation
+    text: Такараи Кикаку
+birth: 1661-08-11
+death: 1707-04-01
+wikidata_id: Q2118326
+metadata:
+  sources: [Wikidata Q2118326 (retrieved 2026-11-01)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5c/Takarai_Kikaku.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Takarai_Kikaku.jpg
+    license: Public domain
+    credit: Hannah
+identifiers:
+  gnd: "122193504"
+  idref: "074340956"
+  lc: n83219482
+  viaf: "5807986"
+sources:
+  birth:
+    - accessed: 2026-11-01
+      property: P569
+      wikidata: Q2118326
+  death:
+    - accessed: 2026-11-01
+      property: P570
+      wikidata: Q2118326

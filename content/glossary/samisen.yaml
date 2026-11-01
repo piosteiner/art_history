@@ -1,0 +1,12 @@
+public_id: 107918
+name: samisen
+names:
+  - lang: ja
+    role: original
+    text: "{三味線|しゃみせん}"
+category: object type
+definition: A three-stringed lute plucked with a plectrum, popular from the sixteenth century for narrative and lyrical music.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 247

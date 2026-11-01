@@ -1,0 +1,43 @@
+public_id: 107927
+title: Portrait of Kimura Kenkadō
+creator: tani-buncho
+created: 1802
+kind: kakemono
+medium: Hanging scroll, colour on silk
+materials: [silk]
+dimensions: [69, 42]
+institution: osaka-city-museum-of-fine-arts
+description_md: "Painted from memory by [[artist/tani-buncho]] after the death of his friend [[person/kimura-kenkado]], the Osaka saké brewer whose fortune had been confiscated for brewing above his quota and who then kept a stationery shop and recorded the visits of his literati friends in his diary: not flattering, but a clear image of a talkative man with sharp, shrewd eyes. [[source/history-of-japanese-art|p. 341, fig. 398]]"
+relationships:
+  - type: depicts_person
+    to: person/kimura-kenkado
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 341, fig. 398
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 341, fig. 398
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: p. 341, fig. 398
+  medium:
+    - source: history-of-japanese-art
+      locator: p. 341, fig. 398
+  created:
+    - source: history-of-japanese-art
+      locator: p. 341, fig. 398
+  creator:
+    - source: history-of-japanese-art
+      locator: p. 341, fig. 398
+  materials:
+    - source: history-of-japanese-art
+      locator: p. 341, fig. 398
+  dimensions:
+    - source: history-of-japanese-art
+      locator: p. 341, fig. 398
+  institution:
+    - source: history-of-japanese-art
+      locator: p. 341, fig. 398
