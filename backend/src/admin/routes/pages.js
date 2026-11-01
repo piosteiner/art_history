@@ -515,3 +515,4 @@ router.post('/pages/:slug/images/:id/delete', async (req, res) => {
 });
 
 module.exports = router;
+module.exports.toWebp = toWebp;  // also for private reference images (private-images.js)

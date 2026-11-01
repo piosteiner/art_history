@@ -632,3 +632,8 @@ button.theme-toggle:hover { color: var(--fg); border-color: var(--accent); }
 /* The test environment's notice (config.testEnv) */
 .test-env { background: #fff3c4; color: #5a4300; border-bottom: 1px solid #e0c766; padding: .45rem 1rem; font-size: .9rem; text-align: center; }
 .test-env a { color: inherit; text-decoration: underline; }
+
+/* private reference images on a work's page (184): only the uploader sees them */
+.private-images { border: 1px dashed var(--line); border-radius: 8px; padding: .8rem 1rem; margin: 1.5rem 0; }
+.private-images.drop { border-color: var(--accent, #b4462b); background: rgba(180, 70, 43, .05); }
+.private-images .bar { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; }

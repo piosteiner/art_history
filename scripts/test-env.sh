@@ -47,7 +47,8 @@ sudo -u postgres pg_restore -p $PORT -d arthistory --exit-on-error < "$DUMP"
 # 3. what isn't for visitors: logins and sessions, the owner's drafts and working copies, visitors' feedback, the
 #    download log, editing scopes. Production's accounts stay (the history names them) but can't log in here.
 sudo -u postgres psql -p $PORT -d arthistory -q -v ON_ERROR_STOP=1 <<'SQL'
-TRUNCATE admin_sessions, admin_drafts, page_drafts, form_drafts, live_docs, page_downloads, feedback, editor_scopes;
+TRUNCATE admin_sessions, admin_drafts, page_drafts, form_drafts, live_docs, page_downloads, feedback, editor_scopes, private_images;
+-- private_images (184): the owner's reference images from their books — never in the test copy
 UPDATE admin_users SET password_hash = '!locked';
 -- the owner's unpublished work (owner 2026-10-31: "mein Unveröffentlichtes … soll nicht in das CMS der
 -- Testumgebung"): changelog days, roadmap items, pages, start views not published (their parts go along), sources

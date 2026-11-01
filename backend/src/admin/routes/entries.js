@@ -18,6 +18,7 @@ const quality = require('../quality');
 const duplicates = require('../duplicates');
 const crypto = require('crypto');
 const images = require('../images');
+const privateImages = require('./private-images');
 const provenance = require('../provenance');
 const numbers = require('../numbers');
 const citations = require('../citations');
@@ -613,6 +614,7 @@ router.get('/:plural/:slug', async (req, res) => {
         return identifiers.forType(await identifiers.authorities(adminPool), t.type).length ? identifiers.section({ t, e, ids }) : '';
       })()}
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
+      ${t.type === 'artwork' ? await privateImages.section(e, req.user) : ''}
       ${t.type === 'artwork' ? numbers.listSection({ e, numbers: nums, cites: await citations.forNumbers(adminPool, nums.map((n) => n.id)), recent }) : ''}
       ${t.type === 'artwork' ? provenance.section({ e, steps: provSteps, names: linkMap, gaps: await provenance.coverage(adminPool, e.id), fate: await provenance.fate(adminPool, e.id),
         alternatives: provAlternatives,
