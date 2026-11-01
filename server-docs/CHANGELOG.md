@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-01
 
+### Private reference images (migration 184)
+- **What:** table `private_images` — pictures of a work from the owner's own books for their private use (URG Art. 19):
+  each belongs to the account that uploaded it, and only that account sees it (section "Reference images — private"
+  on a work's admin page: choose a file, paste a screenshot or drop one; book + page/figure with it;
+  `src/admin/routes/private-images.js`, `editor/privateimages.js`). Not readable by the API role (revoked), not
+  audited (audit_log is copied into the test environment), emptied in the test copy (`scripts/test-env.sh`), not in
+  the YAML export; in the encrypted nightly backup. E2E `private-images.spec.js`.
+- **Why:** owner, 2026-11-01 — the books' photographs may not be published, but kept privately as reference beside
+  the entries made from them. The images are uploaded by the owner. **Revert:** drop the table, the route, the section.
+
 ### Data: the works of Mason, chapter 1 (Jōmon, Yayoi, Kofun) — first batch from the owner's books
 - **What:** 34 new works and 3 monuments completed (Daisen Kofun, Ōyu Stone Circles, Takamatsuzuka Tomb Mural — created
   from Wikidata with their Commons photographs) after the figures of Mason, *History of Japanese Art*, pp. 12–39:
