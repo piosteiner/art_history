@@ -57,6 +57,8 @@ function shapeNames(row, col) {
 // patron · owner (of an artwork) · depicted (in an artwork). Sorted text[]; ?role=patron filters with @>.
 // "owner" comes from the provenance (031), asked directly: a filter on the owner can't be pushed through the window
 // functions of provenance_periods (they are partitioned by artwork), but here the index provenance_person_idx serves it.
+// dates also in the Japanese, Korean or Chinese calendar (185): a work's creation, a person's life, an event
+const ERA_TYPES = ['artwork', 'artist', 'person', 'event'];
 const ROLES = 'person_roles(t.id)';  // patron / owner / depicted, from relationships and provenance (function, 110)
 
 // Per type: which column is the name, which daterange drives ?from/?to, list/detail columns (SQL on alias t),
@@ -681,6 +683,7 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     }
     const { rows } = await apiPool.query(`
       SELECT t.id, t.public_id, t.slug, t.${e.name}, ${nameCols(e.name, e.alt, e.type)}, ${e.detail}, t.wikidata_id, t.metadata, t.updated_at
+             ${ERA_TYPES.includes(e.type) ? `, entry_eras('${e.type}', t.id) AS eras` : ''}
       FROM ${e.table} t WHERE ${byNumber ? 't.public_id = $1::bigint' : 't.slug = $1'}`, [key]);
     if (!rows.length) {
       // an old slug (migration 041): permanently moved to the entry's current address

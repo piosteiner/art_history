@@ -4,6 +4,23 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-02
 
+### Era dates: Japanese, Korean and Chinese calendars beside the Gregorian (migration 185)
+- **What:** `calendar_eras` — 248 Japanese era names (nengō, Taika 645 → Reiwa; Wikidata Q24706, Julian start dates
+  converted, Tenpyō-shōhō corrected; the Southern Court's 8 eras as `line` 'Southern Court'), the 26 kings of Joseon
+  (Wikidata Q22304810, year 1 = the year after the accession, Taejo/Sejo/Jungjong/Injo from the accession year), the
+  Korean Empire's Geonyang, Gwangmu, Yunghui, and the Ming and Qing reign eras; generated `period` daterange with
+  `EXCLUDE USING gist (calendar WITH =, line WITH =, period WITH &&)`. `lunar_new_years` 640–1912 (second new moon
+  after the winter solstice by local day, Japan time; Meeus ch. 27/49; 13 known dates 1831–2033 match), `lunar_year()`,
+  `solar_since()`, `sexagenary_year()`, `era_label(cal, daterange)` (lunar years until 1873/1896/1912; "Keiō 4 / Meiji 1";
+  > 60 years: none; `approx` near a new year), `entry_calendar()` (country → artist's → periods'), `entry_eras()`.
+  API: `eras` in the details of artworks, artists, people, events (`src/routes/entities.js`); site: after Date / Born /
+  Died (`withEra()` in `views/detail-facts.ts`). Tests `eras.spec.js`, site "a Japanese work's date also in the Japanese
+  calendar"; perf 40/40. Reaches ~400 Japanese and ~75 Korean works.
+- **Not yet:** Korea before 1392 (Goryeo, Silla — Wikidata has no list of their kings), China before the Ming.
+- **Why:** owner, 2026-11-02 ("dates of the japanese calendar with showa 12 … something similar for korea and/or china").
+- **Revert:** `DROP FUNCTION entry_eras, entry_calendar, era_label, era_year_text, sexagenary_year, lunar_year, solar_since;
+  DROP TABLE calendar_eras, lunar_new_years;` the `eras` line in entities.js; `withEra()`.
+
 ### Data: Blaquier-Arrieta sale — lot 10's own provenance, lot 7's wording (from the sale watcher's note)
 - **What:** the watcher (`scripts/watch-sale.sh`) reported two changed lot pages. Lot 10 (Pissarro, *La Place du
   Théâtre-Français…*, artwork 279) now has its own provenance instead of lot 4's: 10 steps before the owners' (Durand-Ruel

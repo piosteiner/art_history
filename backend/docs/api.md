@@ -574,6 +574,17 @@ Only works with a picture (their first image), not a whole of parts. What belong
   routes/site-account.js → `forAccount()`), where works with only the account's private images count as pictured:
   `image_url` = `/private-images/<id>` on the admin host, `own: true`, no credit; `image?mine=only` = those images only.
 
+## Era dates (185)
+The details of artworks, artists, people and events from Japan, Korea or China carry `eras` (null otherwise): the
+entry's dates also in that country's calendar — `{created | birth | death | period: {calendar: jp|kr|cn, parts: [{line?,
+label, native, hangul?}], sexagenary, approx}}`. Japan: era names (nengō, from Taika 645; "Tenpō 2", 天保2年; a change
+within the year "Keiō 4 / Meiji 1"; the Southern Court as a second `line` 1336–1392). Korea: Joseon's reign years
+("Yeongjo 25", 英祖 25年, 영조 25년; from the year after the accession, the founder and kings who replaced another from
+the accession year), the Korean Empire's eras 1896–1910. China: Ming and Qing reign eras (`line` Ming / Qing). Years
+are lunar years until the solar calendar (1873 / 1896 / 1912; `lunar_new_years` computed); `approx`: a day within two
+days of a new year. `sexagenary`: 干支 of a single year. Ranges over 60 years (a century): none. Which calendar
+(`entry_calendar()`): the entry's country, else a work's artist's, else the country its periods were active in.
+
 ## Network (088)
 An `<entry>` is its public number (`100476` — unique across types) or `<plural>/<slug or number>`.
 - `GET /v1/network/path?from=<entry>&to=<entry>[&via=person,artist&max=6]` — the shortest chain of relationships and
