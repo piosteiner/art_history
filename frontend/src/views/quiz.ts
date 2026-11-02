@@ -2,9 +2,10 @@
 // movement); an artist and eight works to pick theirs from; a movement and its works, or three works and their
 // movement; glossary terms and their definitions. /quiz/<kind>?mode=… plays one; the rounds come with their answers
 // and are checked here (src/quiz-match.ts for typed ones). The best result per game stays in this browser.
-// Logged in (account.ts), the picture quiz can use the owner's private reference images too (?mine=1, or only: ?mine=only).
+// Logged in (account.ts), the games come from the admin host and also use works that have only the account's private
+// reference images, shown with that image; ?mine=only: a picture quiz of those images only.
 import {
-  getQuizArtists, getQuizGlossary, getQuizMovements, getQuizPictures, getQuizPrivateImages,
+  getQuizArtists, getQuizGlossary, getQuizMovements, getQuizPictures,
   type QuizArtistRound, type QuizMovementRound, type QuizPicture, type QuizTermRound, type QuizWork,
 } from '../api';
 import { account } from '../account';
@@ -58,12 +59,12 @@ function menu(main: HTMLElement) {
         const b = best[gameKey(q.kind, m.mode)];
         return html`<a class="button-link" href="/quiz/${q.kind}${m.mode ? `?mode=${m.mode}` : ''}">${m.label}${b !== undefined ? html` <span class="muted small">best ${b}%</span>` : ''}</a>`;
       })}</p>
-      ${q.kind === 'picture' ? html`<p class="quiz-mine small" hidden>With your reference images:
-        <a href="/quiz/picture?mine=1">mixed in</a> · <a href="/quiz/picture?mine=only">only those</a></p>` : ''}
+      ${q.kind === 'picture' ? html`<p class="quiz-mine small" hidden><a href="/quiz/picture?mine=only">Only your reference images</a></p>` : ''}
     </article>`)}</div>
+    <p class="muted small quiz-mine" hidden>You are logged in: works that have only your reference images are part of the quizzes too.</p>
     <p class="muted small">Answers come from the entries as they are now. Something wrong? Tell us with the “F” button at the bottom right.</p>
   </section>`);
-  account().then((name) => { if (name) main.querySelector<HTMLElement>('.quiz-mine')?.removeAttribute('hidden'); });
+  account().then((name) => { if (name) main.querySelectorAll<HTMLElement>('.quiz-mine').forEach((el) => el.removeAttribute('hidden')); });
 }
 
 // ---- one game: rounds one after another, then the result --------------------------------------------------------
@@ -132,20 +133,17 @@ function play(stage: HTMLElement, list: Round[], done: (score: number, max: numb
 
 async function rounds(kind: Kind, mode: string, params: URLSearchParams): Promise<Round[]> {
   const n = ROUNDS[kind];
-  if (kind === 'picture') return pictureRounds(n, params.get('mine'));
-  if (kind === 'artist') return (await getQuizArtists(n)).data.map(artistRound);
-  if (kind === 'movement') return (await getQuizMovements(n, mode)).data.map(movementRound);
+  const own = !!(await account());
+  if (kind === 'picture') {
+    const { data, movements } = await getQuizPictures(n, own, params.get('mine') === 'only');
+    return data.filter((p) => p.image_url).map((p) => pictureRound(p, movements));
+  }
+  if (kind === 'artist') return (await getQuizArtists(n, own)).data.map(artistRound);
+  if (kind === 'movement') return (await getQuizMovements(n, mode, own)).data.map(movementRound);
   return (await getQuizGlossary(n, mode)).data.map(termRound);
 }
 
 // ---- pieces shared by the rounds --------------------------------------------------------------------------------
-const shuffle = <T>(a: T[]) => {
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-};
 /** A museum image at this width (thumb(): Wikimedia serves its standard widths only — 120, 250, 330, 500, 960 …), or the owner's private one as it is (with the login's cookie, no CORS mode). */
 const picture = (url: string, alt: string, width: number, own = false) => (own
   ? html`<img src="${url}" alt="${alt}" decoding="async">`
@@ -161,7 +159,7 @@ const mark = (ok: number) => (ok >= 1 ? html`<span class="quiz-ok" aria-label="r
 function pickWorks(el: HTMLElement, question: Html, options: QuizWork[], answered: (score: number, max: number) => void, after: () => Html) {
   render(el, html`<p class="quiz-question">${question}</p>
     <ul class="quiz-tiles">${options.map((o, i) => html`<li><button type="button" class="quiz-tile" aria-pressed="false" data-i="${String(i)}">
-      ${picture(o.image_url, `Work ${i + 1}`, 500)}</button><p class="quiz-caption small" hidden>${workLine(o)}</p></li>`)}</ul>
+      ${picture(o.image_url, `Work ${i + 1}`, 500, o.own)}</button><p class="quiz-caption small" hidden>${workLine(o)}</p></li>`)}</ul>
     <p><button type="button" class="quiz-button" data-check>Check</button> <span class="muted small">Pick all that apply.</span></p>
     <div class="quiz-after"></div>`);
   const tiles = [...el.querySelectorAll<HTMLButtonElement>('.quiz-tile')];
@@ -214,21 +212,7 @@ function chooseOne<T extends { slug: string }>(el: HTMLElement, question: Html, 
 }
 
 // ---- 1. name the picture ---------------------------------------------------------------------------------------
-async function pictureRounds(n: number, mine: string | null): Promise<Round[]> {
-  let own: { slug: string; url: string }[] = [];
-  if (mine && await account()) own = shuffle((await getQuizPrivateImages().catch(() => null)) ?? []).slice(0, mine === 'only' ? n : Math.ceil(n / 2));
-  const [ours, pub] = await Promise.all([
-    own.length ? getQuizPictures(own.length, own.map((o) => o.slug)) : null,
-    mine === 'only' && own.length ? null : getQuizPictures(n),
-  ]);
-  const url = new Map(own.map((o) => [o.slug, o.url]));
-  const list = [...(ours?.data ?? []).map((p) => ({ p, own: url.get(p.slug)! })),
-    ...(pub?.data ?? []).filter((p) => !url.has(p.slug) && p.image_url).map((p) => ({ p, own: null as string | null }))];
-  const movements = (ours ?? pub)?.movements ?? [];
-  return shuffle(list).slice(0, n).map(({ p, own: ownUrl }) => pictureRound(p, ownUrl, movements));
-}
-
-function pictureRound(p: QuizPicture, ownUrl: string | null, movements: string[]): Round {
+function pictureRound(p: QuizPicture, movements: string[]): Round {
   const artists = p.creators;
   const years = p.created && p.created.from_year !== null ? { from: p.created.from_year, to: p.created.to_year ?? p.created.from_year } : null;
   const fields = { title: true, artist: artists.length > 0, year: !!years, movement: p.movements.length > 0 };
@@ -237,8 +221,8 @@ function pictureRound(p: QuizPicture, ownUrl: string | null, movements: string[]
     review: html`<a href="${href('artworks', p.slug)}">${p.title}</a>`,
     show(el, answered) {
       render(el, html`<div class="quiz-picture">
-        <figure class="quiz-figure">${picture(ownUrl ?? p.image_url!, 'The work to name', 960, !!ownUrl)}
-          <figcaption class="small muted">${ownUrl ? 'Your reference image' : 'Credit shown after answering'}</figcaption></figure>
+        <figure class="quiz-figure">${picture(p.image_url!, 'The work to name', 960, p.own)}
+          <figcaption class="small muted">${p.own ? 'Your reference image' : 'Credit shown after answering'}</figcaption></figure>
         <form class="quiz-form" autocomplete="off">
           <label>Title <input name="title" type="text" spellcheck="false"></label>
           ${fields.artist ? html`<label>Artist <input name="artist" type="text" spellcheck="false"></label>` : html`<p class="muted small">No artist to name: the maker is not known.</p>`}
@@ -282,7 +266,7 @@ function pictureRound(p: QuizPicture, ownUrl: string | null, movements: string[]
             html`${p.movements.map((x, i) => html`${i ? ', ' : ''}<a href="${href('movements', x.slug)}">${x.name}</a>`)}`);
         }
         const c = credit(p);
-        el.querySelector('.quiz-figure figcaption')!.textContent = ownUrl ? 'Your reference image' : c || 'No credit recorded';
+        el.querySelector('.quiz-figure figcaption')!.textContent = p.own ? 'Your reference image' : c || 'No credit recorded';
         render(el.querySelector('.quiz-after')!, html`<table class="quiz-answers"><thead><tr><th></th><th>Your answer</th><th>Right</th></tr></thead>
           <tbody>${rows}</tbody></table><p class="muted small">${fmt(score)} of ${max} points. ${YEAR_RULE}</p>`);
         answered(score, max);
@@ -320,7 +304,7 @@ function movementRound(r: QuizMovementRound): Round {
     review: html`Name it: <a href="${href('movements', answer.slug)}">${answer.name}</a>`,
     show(el, answered) {
       chooseOne(el, html`<p class="quiz-question">Which movement or period do these works belong to?</p>
-        <ul class="quiz-tiles three">${r.works.map((w, i) => html`<li><span class="quiz-tile">${picture(w.image_url, `Work ${i + 1}`, 500)}</span>
+        <ul class="quiz-tiles three">${r.works.map((w, i) => html`<li><span class="quiz-tile">${picture(w.image_url, `Work ${i + 1}`, 500, w.own)}</span>
           <p class="quiz-caption small" hidden>${workLine(w)}</p></li>`)}</ul>`,
       r.options, r.answer, (o) => html`${o.name}${o.period ? html` <span class="muted small">${o.period.label}</span>` : ''}`,
       (score, max) => {

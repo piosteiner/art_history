@@ -314,12 +314,15 @@ async function fresh<T>(path: string, params: Params = {}): Promise<T> {
 export interface QuizWork {
   slug: string; public_id: number; title: string; title_en: string | null; image_url: string; credit: string | null; license: string | null;
   created: DateRange | null; creator: string | null; correct?: boolean;
+  /** the logged-in account's private reference image (no public one, or ?mine=only) */
+  own?: boolean;
 }
 export interface QuizNamed { slug: string; public_id: number; name: string; names: string[] }
 export interface QuizPicture {
   slug: string; public_id: number; title: string; titles: string[]; created: DateRange | null; image_url: string | null;
   credit: string | null; license: string | null; attribution: string | null;
   creators: (QuizNamed & { family_name: string | null; main: boolean })[]; movements: QuizNamed[];
+  own?: boolean;
 }
 export interface QuizMovement { slug: string; public_id: number; name: string; kind: string; period: DateRange | null }
 export type QuizMovementRound =
@@ -331,10 +334,19 @@ export type QuizTermRound =
   | { kind: 'describe'; term: QuizTerm };
 export interface QuizArtistRound { artist: { slug: string; public_id: number; name: string; dates: string | null }; options: QuizWork[] }
 
-export const getQuizPictures = (n: number, works?: string[]) =>
-  fresh<{ data: QuizPicture[]; movements: string[] }>('/quiz/image', { n, works: works?.join(',') });
-export const getQuizArtists = (n: number) => fresh<{ data: QuizArtistRound[] }>('/quiz/artist', { n });
-export const getQuizMovements = (n: number, mode: string) => fresh<{ data: QuizMovementRound[] }>('/quiz/movement', { n, mode });
+/** `own`: logged in — the same game from the admin host (/site/quiz/…), with the works that have only the account's
+ *  private reference images; the public one if the login has ended meanwhile. */
+async function quiz<T>(kind: string, own: boolean, params: Params): Promise<T> {
+  if (own) {
+    const qs = new URLSearchParams();
+    for (const [k, v] of Object.entries(params)) if (v !== undefined && v !== null && v !== '') qs.set(k, String(v));
+    const mine = await account<T>(`/quiz/${kind}?${qs}`);
+    if (mine) return mine;
+  }
+  return fresh<T>(`/quiz/${kind}`, params);
+}
+export const getQuizPictures = (n: number, own: boolean, onlyOwn = false) =>
+  quiz<{ data: QuizPicture[]; movements: string[] }>('image', own, { n, mine: own && onlyOwn ? 'only' : undefined });
+export const getQuizArtists = (n: number, own: boolean) => quiz<{ data: QuizArtistRound[] }>('artist', own, { n });
+export const getQuizMovements = (n: number, mode: string, own: boolean) => quiz<{ data: QuizMovementRound[] }>('movement', own, { n, mode });
 export const getQuizGlossary = (n: number, mode: string) => fresh<{ data: QuizTermRound[] }>('/quiz/glossary', { n, mode });
-/** The logged-in account's private reference images, one per work (for the picture quiz) — null when not logged in. */
-export const getQuizPrivateImages = () => account<{ images: { slug: string; url: string }[] }>('/quiz/private-images').then((r) => r?.images ?? null);

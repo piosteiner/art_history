@@ -4,13 +4,15 @@
 // session cookie stays on the admin host (SameSite=Strict, sent because site and admin host are the same site).
 //   GET  /site/me                               {username} or 401
 //   GET  /site/artworks/:slug/private-images    {images: [{url, source, locator, width, height}]} — this account's only
-//   GET  /site/quiz/private-images              {images: [{slug, url}]} — one per work (its first), for the picture quiz
+//   GET  /site/quiz/<image|artist|movement|glossary>?…   the quiz (src/routes/quiz.js) with this account's private
+//                                               images counted as pictures too ({image_url, own: true}); ?mine=only
 //   POST /site/logout                           ends the session (the CMS's too: it is the same one)
 // The images themselves: GET /private-images/:id (routes/private-images.js), owner-only as before.
 const express = require('express');
 const config = require('../../config');
 const { adminPool } = require('../../db');
 const { loadUser, logout, adminOrigin } = require('../auth');
+const { forAccount } = require('../../routes/quiz');
 
 const router = express.Router();
 
@@ -42,11 +44,11 @@ router.get('/artworks/:slug/private-images', async (req, res) => {
   res.json({ images: rows.map((i) => ({ url: `${adminOrigin(req)}/private-images/${i.id}`, source: i.source, locator: i.locator, width: i.width, height: i.height })) });
 });
 
-router.get('/quiz/private-images', async (req, res) => {
+router.get('/quiz/:kind', async (req, res) => {
   if (!req.user) return res.status(401).json({ error: 'not_logged_in' });
-  const { rows } = await adminPool.query(`SELECT DISTINCT ON (i.artwork_id) a.slug, i.id FROM private_images i JOIN artworks a ON a.id = i.artwork_id
-     WHERE i.owner_id = $1 ORDER BY i.artwork_id, i.created_at`, [req.user.id]);
-  res.json({ images: rows.map((i) => ({ slug: i.slug, url: `${adminOrigin(req)}/private-images/${i.id}` })) });
+  res.set('Cache-Control', 'no-store');
+  const game = await forAccount(req.params.kind, req.query, { db: adminPool, owner: req.user.id, origin: adminOrigin(req) });
+  return game ? res.json(game) : res.status(404).json({ error: 'not_found' });
 });
 
 router.post('/logout', async (req, res) => {

@@ -321,3 +321,17 @@ test('topics in order (168): by section, then name; by hand with drag and drop; 
   await expect(topicRows(userA)).toHaveText(['Karte', 'Suche', 'Admin']);
   expect(bullets()).toBe('Zeitleiste | Treffer | Liste');
 });
+
+// a source in a bullet is a link to it in the text, not a footnote with its "Literatur" (owner, 2026-11-02)
+test('changelog: a source in a bullet is a link in the text, without footnotes', async ({ request }) => {
+  sql(`INSERT INTO bibliography (slug, kind, name, authors, year) VALUES ('test-cl-source', 'book', 'Test Book', '{"Tester, Tina"}', '2005') ON CONFLICT DO NOTHING;
+       INSERT INTO changelog_entries (day, published) VALUES ('2026-10-29', true);
+       INSERT INTO changelog_items (entry_id, position, kind, text_md) SELECT id, 0, 'inhalt', 'Content aus [[source/test-cl-source|S. 12]].' FROM changelog_entries WHERE day = '2026-10-29'`);
+  try {
+    const [item] = (await api(request, '/changelog')).data.find((e) => e.day === '2026-10-29').items;
+    expect(item.html).toMatch(/^Content aus <a href="\/bibliography\/test-cl-source" class="source-link" data-source="test-cl-source">[^<]+<\/a>, S\. 12\.$/);
+    expect(item.html).not.toContain('footnote');
+  } finally {
+    sql("DELETE FROM bibliography WHERE slug = 'test-cl-source'");
+  }
+});

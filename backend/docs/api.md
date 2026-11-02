@@ -557,9 +557,9 @@ German (de-CH); only published entries and items.
 Rounds drawn at random, with their answers (the site checks them itself); `Cache-Control: no-store`. `src/routes/quiz.js`.
 Only works with a picture (their first image), not a whole of parts. What belongs to a movement: the view `movement_works`
 (direct or through the artist while it lasted; parts rolled up).
-- `GET /v1/quiz/image?n=10[&works=<slug>,…]` → `{movements: [names with works], data: [{slug, public_id, title, titles (every
+- `GET /v1/quiz/image?n=10[&for=<slug>]` → `{movements: [names with works], data: [{slug, public_id, title, titles (every
   name, furigana out), created, image_url, credit, license, attribution, creators: [{slug, name, family_name, names, main}],
-  movements: [{slug, name, names}]}]}`; `works`: these (≤ 20, in this order) instead of a draw — the owner's private images.
+  movements: [{slug, name, names}]}]}`.
 - `GET /v1/quiz/artist?n=8[&for=<slug>]` → `{data: [{artist: {slug, public_id, name, dates}, options: [work × 8]}]}`; artists
   with ≥ 3 pictured works; 2–4 of theirs (`correct`), the rest look-alikes: a shared movement, ±20 years, the same kind.
   A work option: `{slug, public_id, title, title_en, image_url, credit, license, created, creator, correct}`.
@@ -570,7 +570,9 @@ Only works with a picture (their first image), not a whole of parts. What belong
 - `GET /v1/quiz/glossary?n=10&mode=definition|term|describe|mixed[&for=<slug>]` → `{data: [{kind: 'definition'|'term', term,
   answer, options: [term × 4]} | {kind: 'describe', term}]}`; terms with a definition of ≥ 40 characters; the others of
   the same category first, not its broader/narrower term; every shown definition without its own term's names (`…`).
-- Admin host, for the logged-in site: `GET /site/quiz/private-images` → `{images: [{slug, url}]}` (routes/site-account.js).
+- Admin host, for the logged-in site: `GET /site/quiz/<image|artist|movement|glossary>?…` — the same games (admin role,
+  routes/site-account.js → `forAccount()`), where works with only the account's private images count as pictured:
+  `image_url` = `/private-images/<id>` on the admin host, `own: true`, no credit; `image?mine=only` = those images only.
 
 ## Network (088)
 An `<entry>` is its public number (`100476` — unique across types) or `<plural>/<slug or number>`.

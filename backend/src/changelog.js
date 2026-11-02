@@ -9,6 +9,7 @@
 // A line without a kind is "Neu"; a line starting with two spaces or a tab continues the bullet above. Bullets may use
 // Markdown and [[type/slug]] links (rendered like every text: src/markdown.js).
 const { renderMarkdown, linkNames } = require('./markdown');
+const { esc } = require('./bibliography');
 
 const KINDS = { neu: 'Neu', verbessert: 'Verbessert', behoben: 'Behoben', inhalt: 'Inhalt', technik: 'Technik' };
 const BY_LABEL = Object.fromEntries(Object.entries(KINDS).map(([k, v]) => [v.toLowerCase(), k]));
@@ -30,11 +31,24 @@ function parseItems(text) {
 // [{kind, area, text}] → the lines again (a bullet's further lines indented, so they stay its own)
 const itemsToText = (items) => items.map((i) => `${KINDS[i.kind]}${i.area ? ` [${i.area}]` : ''}: ${String(i.text_md ?? i.text).replace(/\n/g, '\n  ')}`).join('\n');
 
-// a bullet's Markdown → inline HTML (the one paragraph markdown-it wraps it in removed; several stay paragraphs)
+// a bullet's Markdown → inline HTML (the one paragraph markdown-it wraps it in removed; several stay paragraphs).
+// A source in a bullet ([[source/mason-2005]], [[source/mason-2005|S. 12]]) is a link to its entry in the text, not a
+// footnote: a bullet has no room for the notes and "Literatur" (owner, 2026-11-02 — they stood each on a line of
+// their own); on the site the link opens the source's popover like any other (class source-link).
+const SOURCE = /\[\[source\/([a-z0-9]+(?:-[a-z0-9]+)*)(?:\|([^\]]*))?\]\]/g;
 async function renderItems(db, texts) {
   const names = await linkNames(db, texts);
+  const sources = names.sources || new Map();
   return texts.map((t) => {
-    const out = renderMarkdown(t, { names, used: new Set(), cited: new Set() }).trim();
+    const links = [];
+    const text = t.replace(SOURCE, (all, slug, loc) => {
+      const s = sources.get(slug);
+      links.push(`${s ? `<a href="/bibliography/${slug}" class="source-link" data-source="${slug}">${esc(s.siglum)}</a>`
+        : `<span class="missing">${esc(slug)}</span>`}${loc && loc.trim() ? `, ${esc(loc.trim())}` : ''}`);
+      return `CLSOURCE${links.length - 1}X`;
+    });
+    let out = renderMarkdown(text, { names, used: new Set(), cited: new Set() }).trim();
+    out = out.replace(/CLSOURCE(\d+)X/g, (all, i) => links[Number(i)]);
     return (out.match(/<p>/g) || []).length === 1 ? out.replace(/^<p>([\s\S]*)<\/p>$/, '$1') : out;   // several paragraphs: kept
   });
 }

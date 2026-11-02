@@ -4,6 +4,22 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-02
 
+### Quiz: works with only private reference images, for their account; changelog sources as links
+- **What:** the quiz's games are functions (`src/routes/quiz.js`: `image`, `artist`, `movement`, `glossary`) run by the
+  public API (as before; `works=` gone, `for=` also for pictures) and, logged in on the site, by the admin host
+  `GET /site/quiz/<kind>` (admin role, `forAccount()`): `pictured(owner)` counts a work with only that account's
+  private image as pictured (`'private:<id>'` → `/private-images/<id>`, `own: true`), `image?mine=only` those only. The
+  site asks the admin host when logged in (`quiz()` in `frontend/src/api.ts`); `/site/quiz/private-images` removed.
+  For the owner 348 more works (live: 17–213 ms per game). Changelog bullets: `[[source/…]]` renders as the source's
+  linked siglum in the text, not as a footnote with a "Literatur" block (`renderItems()` in `src/changelog.js`).
+  Tests: `quiz.spec.js` (5), `private-images.spec.js`, `changelog.spec.js` (+1).
+- **Content (CMS drafts, unpublished):** changelog entries for 2026-10-31, 2026-11-01, 2026-11-02 with what was
+  missing; documentation drafts of chapters 5, 8, 10, 11, 12 (private reference images, site login, the books, the
+  Blaquier-Arrieta sale and its watcher, the server's reboot, name order in sources, periods colours, search ranking).
+- **Why:** owner, 2026-11-02 ("quizzes should include entries that need images only if the user is logged in and has
+  access to the private references"; the 1 November bullet showed its footnotes line by line).
+- **Revert:** revert the commit; the drafts in the CMS (Discard).
+
 ### Quiz: fairer checking of typed answers (site only)
 - **What:** small words ("in the", "de la" …) no longer count against a title; a hyphen both joins and parts
   (Tōdai-ji = todaiji); a year within 5 years of the work's dates scores 1, within 15 ½, within 30 ¼ — twice that before

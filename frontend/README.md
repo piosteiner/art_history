@@ -298,8 +298,9 @@ slash GitHub Pages serves a folder's page at), small forwarding pages at the old
 Rounds come with their answers; typed ones are compared in `src/quiz-match.ts` (folded like the searches, a leading
 article off, the better of letters — typos — and words without small ones like "in the"; a hyphen both joins and parts;
 ≥ 0.85 right, ≥ 0.6 half; a year within 5 years of the work's dates 1, 15 ½, 30 ¼ — twice that before 1000). Artist names also by family name or last word (Hokusai). The best result per game stays in
-localStorage (`arthistory.quiz.best`). Logged in, the picture quiz offers the owner's private images (`?mine=1` half,
-`?mine=only`). Wikimedia thumbnails only at its standard widths (500, 960).
+localStorage (`arthistory.quiz.best`). Logged in, every game comes from the admin host (`/site/quiz/…`, `quiz()` in
+`api.ts`) and includes works with only the account's private images (`own`: shown as they are, no thumbnail service);
+`/quiz/picture?mine=only` = those images only. Wikimedia thumbnails only at its standard widths (500, 960).
 
 ## Wishes for the backend
 - **Maps and networks by number (085):** `/v1/map/<plural>/<number>` and `/v1/graph/<plural>/<number>` answer 404, so an
