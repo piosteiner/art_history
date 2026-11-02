@@ -23,7 +23,8 @@ const clip = (s, n = 200) => (s.length <= n ? s : `${s.slice(0, s.lastIndexOf(' 
 const entryPath = (plural, r) => (r.public_id ? `/${plural}/${r.public_id}/${r.slug}` : `/${plural}/${r.slug}`);
 const thumb = (url, w = 1200) => (url && url.includes('/thumb/') ? url.replace(/\/\d+px-/, `/${w}px-`) : url);
 
-async function get(path, tries = 3) {
+// six tries over about 20 s: a build that runs while the API restarts (a deploy's pm2 reload) waits it out
+async function get(path, tries = 6) {
   for (let i = 1; ; i++) {
     try {
       const res = await fetch(API + path, { headers: { Accept: 'application/json' } });
