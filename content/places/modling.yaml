@@ -29,10 +29,6 @@ sources:
     - accessed: 2026-10-20
       property: P31
       wikidata: Q277965
-  parent:
-    - accessed: 2026-10-20
-      property: P131
-      wikidata: Q277965
   location:
     - accessed: 2026-10-20
       property: P625

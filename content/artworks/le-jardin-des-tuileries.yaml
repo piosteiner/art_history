@@ -113,17 +113,40 @@ provenance:
         date: "1937"
         place: warsaw
         number: "21"
-        document: Muzeum Narodowe, Wystawa malarstwa francuskiego od Maneta po dzień dzisiejszy; then Prague, Mánes
+        document: Muzeum Narodowe, Wystawa malarstwa francuskiego od Maneta po dzień dzisiejszy
+      - kind: exhibition
+        date: "1937"
+        note: a later venue of the same exhibition
+        place: prague
+        number: "21"
+        document: Spolek výtvarných umělců Mánes, Výstava francouzského malířství od Maneta po dnešek
       - kind: exhibition
         date: "1952"
         place: zurich
         number: "42"
-        document: Kunsthaus Zürich, Claude Monet; then Paris, Galerie des Beaux-Arts, and The Hague, Gemeentemuseum (no. 39)
+        document: Kunsthaus Zürich, Claude Monet
+      - kind: exhibition
+        date: "1952"
+        note: a later venue of the same exhibition
+        place: the-hague
+        number: "39"
+        document: Gemeentemuseum, Claude Monet
+      - kind: exhibition
+        date: "1952"
+        note: a later venue of the same exhibition
+        place: paris
+        document: Galerie des Beaux-Arts, Claude Monet
       - kind: exhibition
         date: "1957"
         place: london
         number: "49"
-        document: "Tate Gallery, Claude Monet: An Exhibition of Paintings; then Edinburgh, Royal Scottish Academy"
+        document: "Tate Gallery, Claude Monet: An Exhibition of Paintings"
+      - kind: exhibition
+        date: "1957"
+        note: a later venue of the same exhibition
+        place: edinburgh
+        number: "49"
+        document: "Royal Scottish Academy, Claude Monet: An Exhibition of Paintings"
       - kind: exhibition
         date: "1961"
         place: paris

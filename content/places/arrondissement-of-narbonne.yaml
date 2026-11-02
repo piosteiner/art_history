@@ -1,6 +1,7 @@
 public_id: 105812
 name: arrondissement of Narbonne
 kind: region
+parent: aude
 location: [2.83333, 43.08333]
 wikidata_id: Q701903
 metadata:

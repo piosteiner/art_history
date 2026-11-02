@@ -1,0 +1,46 @@
+public_id: 108837
+name: Saint John
+names:
+  - Saint John, New Brunswick
+  - City of Saint John
+  - St. John
+  - Saint John, NB
+  - St. John, NB
+  - St. John, New Brunswick
+  - lang: fr
+    role: translation
+    text: Saint-Jean
+  - lang: ja
+    role: translation
+    text: セイント・ジョン
+  - lang: zh
+    role: translation
+    text: 圣约翰
+  - lang: ko
+    role: translation
+    text: 세인트존
+  - lang: ru
+    role: translation
+    text: Сент-Джон
+kind: site
+parent: canada
+country_code: CA
+location: [-66.0628, 45.2796]
+wikidata_id: Q203403
+metadata:
+  sources: [Wikidata Q203403 (retrieved 2026-11-02)]
+identifiers:
+  gnd: 4302551-1
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q203403
+  parent:
+    - accessed: 2026-11-02
+      property: P131
+      wikidata: Q203403
+  location:
+    - accessed: 2026-11-02
+      property: P625
+      wikidata: Q203403

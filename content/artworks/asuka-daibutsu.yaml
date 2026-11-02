@@ -13,6 +13,7 @@ medium: Gilt bronze
 materials: [gilt bronze]
 dimensions: [276]
 institution: asuka-dera
+web_url: https://kunishitei.bunka.go.jp/heritage/detail/201/4256
 description_md: "A seated [[shaka]] about three metres high, the right hand raised palm outward in the gesture of fearlessness, the left lowered in the gesture of wish-granting: the image Tori Busshi is credited with for Asukadera, Japan’s first full temple complex. Much restored over the centuries; the head is the least restored part. [[source/history-of-japanese-art|p. 71, fig. 84]]"
 wikidata_id: Q123338784
 metadata:
@@ -32,9 +33,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: p. 71, fig. 84
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q123338784
   medium:
     - source: history-of-japanese-art
       locator: p. 71, fig. 84

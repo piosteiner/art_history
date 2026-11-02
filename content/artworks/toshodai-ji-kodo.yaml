@@ -10,6 +10,7 @@ created: mid 8th century
 created_span: uncertain
 kind: building
 institution: toshodai-ji
+web_url: https://kunishitei.bunka.go.jp/heritage/detail/102/2478
 location: [135.7848, 34.67588]
 description_md: "The lecture hall of [[institution/toshodai-ji]], the temple of the Chinese monk [[person/ganjin]]: built as the East Morning Hall of the imperial palace, dismantled and given to the temple, perhaps before Ganjin’s death in 763. The temple was the seat of his Ritsu school. [[source/history-of-japanese-art|p. 70, fig. 82]]"
 wikidata_id: Q107020489
@@ -36,13 +37,7 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: p. 70, fig. 82
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q107020489
   created:
-    - accessed: 2026-11-01
-      property: P571
-      wikidata: Q107020489
     - source: history-of-japanese-art
       locator: p. 70, fig. 82
   location:

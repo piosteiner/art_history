@@ -11,7 +11,7 @@ names:
   - lang: ru
     role: translation
     text: Ясумаса Моримура
-birth: 1995-06-11
+birth: 1951
 wikidata_id: Q595342
 metadata:
   sources: [Wikidata Q595342 (retrieved 2026-11-01)]
@@ -31,6 +31,7 @@ identifiers:
   viaf: "57467543"
 sources:
   birth:
-    - accessed: 2026-11-01
-      property: P569
-      wikidata: Q595342
+    - url: https://d-nb.info/gnd/121339874
+      note: Wikidata (Q595342) gives 11 June 1995 — impossible beside his works of the 1980s
+      source: gnd
+      accessed: 2026-11-02

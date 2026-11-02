@@ -69,10 +69,6 @@ sources:
     - accessed: 2026-10-20
       property: P170
       wikidata: Q109316460
-  materials:
-    - accessed: 2026-10-20
-      property: P186
-      wikidata: Q109316460
   dimensions:
     - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1333/
       source: akademie-sammlung-online

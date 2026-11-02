@@ -52,10 +52,6 @@ sources:
     - accessed: 2026-10-13
       property: P31
       wikidata: Q498212
-  parent:
-    - accessed: 2026-10-13
-      property: P131
-      wikidata: Q498212
   location:
     - accessed: 2026-10-13
       property: P625

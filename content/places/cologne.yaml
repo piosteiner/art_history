@@ -67,10 +67,6 @@ sources:
     - accessed: 2026-10-15
       property: P31
       wikidata: Q365
-  parent:
-    - accessed: 2026-10-15
-      property: P131
-      wikidata: Q365
   location:
     - accessed: 2026-10-15
       property: P625

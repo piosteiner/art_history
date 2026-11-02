@@ -46,10 +46,6 @@ sources:
     - accessed: 2026-10-28
       property: P31
       wikidata: Q574332
-  parent:
-    - accessed: 2026-10-29
-      property: P131
-      wikidata: Q574332
   location:
     - accessed: 2026-10-28
       property: P625

@@ -180,16 +180,34 @@ provenance:
         date: "1952"
         place: chicago
         number: "71"
-        document: "The Art Institute of Chicago, Cézanne: Paintings, Watercolors & Drawings; then The Metropolitan Museum of Art"
+        document: "The Art Institute of Chicago, Cézanne: Paintings, Watercolors & Drawings"
+      - kind: exhibition
+        date: "1952"
+        note: a later venue of the same exhibition
+        place: new-york-city
+        number: "71"
+        document: "The Metropolitan Museum of Art, Cézanne: Paintings, Watercolors & Drawings"
       - kind: exhibition
         date: "1954"
         place: edinburgh
         number: "44"
-        document: Royal Scottish Academy, Paintings by Cézanne; then London, Tate Gallery
+        document: Royal Scottish Academy, Paintings by Cézanne
       - kind: exhibition
-        date: "1962"
+        date: "1954"
+        note: a later venue of the same exhibition
         place: london
-        document: Courtauld Institute of Art (extended loan)
+        number: "44"
+        document: Tate Gallery, Paintings by Cézanne
+  - owner: institution/courtauld-institute-of-art
+    role: custodian
+    acquired: 1962
+    place: london
+    label: extended loan
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+        note: "Sotheby’s, exhibition: “Courtauld Institute of Art, London (extended loan, 1962)”"
+        source: sothebys-n12368-lot-9
+        accessed: 2026-11-02
   - owner: person/jacob-rothschild-4th-baron-rothschild
     method: gift
     direct: true

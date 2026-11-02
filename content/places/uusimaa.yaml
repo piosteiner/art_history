@@ -1,6 +1,7 @@
 public_id: 108828
 name: Uusimaa
 kind: site
+parent: finland
 location: [24.5, 60.25]
 wikidata_id: Q5711
 metadata:

@@ -74,7 +74,13 @@ provenance:
         date: "1907"
         place: vienna
         number: "39"
-        document: Galerie Miethke, Paul Gauguin, 1848–1903 (as “Blumen u. Früchte”); then Budapest, Nemzeti Szalon, no. 84
+        document: Galerie Miethke, Paul Gauguin, 1848–1903 (as “Blumen u. Früchte”)
+      - kind: exhibition
+        date: "1907"
+        note: a later venue of the same exhibition
+        place: budapest
+        number: "84"
+        document: Nemzeti Szalon, Paul Gauguin, 1848–1903 (as “Virágok és gyümölcsök”)
   - owner: person/adolf-kohner
     acquired: c. 1907
     ended: c. 1930
@@ -121,12 +127,30 @@ provenance:
         date: "1935"
         place: kansas-city
         number: "27"
-        document: "One Hundred Years: French Painting, 1820–1920, William Rockhill Nelson Gallery; then Cleveland Museum of Art"
+        document: "The William Rockhill Nelson Gallery of Art and The Mary Atkins Museum of Fine Arts, One Hundred Years: French Painting, 1820–1920 (as “Still Life with Flowers”)"
+      - kind: exhibition
+        date: "1935"
+        note: a later venue of the same exhibition
+        place: cleveland
+        number: "27"
+        document: "Cleveland Museum of Art, One Hundred Years: French Painting, 1820–1920 (as “Still Life with Flowers”)"
       - kind: exhibition
         date: "1936"
         place: new-york-city
         number: "42"
-        document: Wildenstein & Co., Paul Gauguin, 1848–1903; then Fogg Art Museum, Cambridge (no. 41), Baltimore Museum of Art (no. 27)
+        document: Wildenstein & Co., Paul Gauguin, 1848–1903
+      - kind: exhibition
+        date: "1936"
+        note: a later venue of the same exhibition
+        place: cambridge-massachusetts
+        number: "41"
+        document: The Fogg Art Museum, Paul Gauguin, 1848–1903
+      - kind: exhibition
+        date: "1936"
+        note: a later venue of the same exhibition
+        place: baltimore
+        number: "27"
+        document: The Baltimore Museum of Art, Paul Gauguin, 1848–1903, A Retrospective Exhibition of His Paintings
       - kind: exhibition
         date: "1938"
         place: hartford
@@ -197,11 +221,22 @@ provenance:
         date: "1956"
         place: paris
         number: "10"
-        document: Musée des Arts décoratifs, Collection Nathan Cummings; then Rome, Palazzo Venezia
+        document: Musée des Arts décoratifs, Collection Nathan Cummings
+      - kind: exhibition
+        date: "1956"
+        note: a later venue of the same exhibition
+        place: rome
+        number: "10"
+        document: Palazzo Venezia, Collection Nathan Cummings
       - kind: exhibition
         date: "1958"
+        place: saint-john-new-brunswick
         number: "8"
-        document: Saint John, The New Brunswick Museum, The Nathan Cummings’ Collection
+        document: The New Brunswick Museum, The Nathan Cummings’ Collection of French Nineteenth & Twentieth Century Paintings (as “Tahitian Fruits and Flowers”)
+      - kind: exhibition
+        date: 1958-06
+        note: "Sotheby’s: “Winnetka, June 1958”"
+        place: winnetka
       - kind: exhibition
         date: "1960"
         place: paris
@@ -218,6 +253,11 @@ provenance:
         number: "36"
         document: Österreichische Galerie im Oberen Belvedere, Paul Gauguin, 1848–1903
       - kind: exhibition
+        date: 1960-03
+        note: "Sotheby’s: “The Art Institute of Chicago, March 1960”"
+        place: chicago
+        document: The Art Institute of Chicago
+      - kind: exhibition
         date: "1963"
         place: dallas
         number: "14"
@@ -227,6 +267,11 @@ provenance:
         place: minneapolis
         document: Minneapolis Institute of Arts, Paintings from the Cummings Collection
       - kind: exhibition
+        date: 1965-06
+        note: "Sotheby’s: “New York, The Metropolitan Museum of Art, June 1965”"
+        place: new-york-city
+        document: The Metropolitan Museum of Art
+      - kind: exhibition
         date: "1966"
         place: new-york-city
         document: Solomon R. Guggenheim Museum, Gauguin and the Decorative Style
@@ -235,10 +280,16 @@ provenance:
         place: new-london
         document: Lyman Allyn Museum, Paintings and Sculpture from the Collection of Mr. and Mrs. Nathan Cummings
       - kind: exhibition
-        date: "1970"
+        date: 1970/1971
         place: washington-d-c
         number: "17"
-        document: National Gallery of Art, Selections from the Nathan Cummings Collection; then The Metropolitan Museum of Art
+        document: National Gallery of Art, Selections from the Nathan Cummings Collection
+      - kind: exhibition
+        date: 1970/1971
+        note: a later venue of the same exhibition
+        place: new-york-city
+        number: "20"
+        document: The Metropolitan Museum of Art, Selections from the Nathan Cummings Collection
       - kind: exhibition
         date: "1973"
         place: chicago

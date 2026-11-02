@@ -1,6 +1,7 @@
 public_id: 107701
 name: St. Louis
 kind: settlement
+parent: united-states
 location: [-90.19944, 38.62639]
 wikidata_id: Q38022
 metadata:

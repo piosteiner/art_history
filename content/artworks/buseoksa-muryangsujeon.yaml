@@ -19,7 +19,7 @@ metadata:
   sources: [Wikidata Q16093278 (retrieved 2026-11-01)]
 relationships:
   - type: created_in
-    to: place/yeongju-si
+    to: place/yeongju
   - type: created_in_polity
     to: polity/goryeo
     sources:

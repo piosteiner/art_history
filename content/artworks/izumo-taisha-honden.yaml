@@ -12,6 +12,7 @@ attribution_label: Anonymous
 created: 1744
 kind: building
 institution: izumo-taisha
+web_url: https://kunishitei.bunka.go.jp/heritage/detail/102/2971
 location: [132.6854, 35.40203]
 description_md: "The main hall of the grand shrine at Izumo, dedicated to Ōkuninushi no Mikoto, and the type of [[taisha-zukuri]]: two square bays with eight pillars and a central one, raised on round piles, under a curved gable roof; the stair to the door at one end, off centre. Said to be modelled on the palaces of the early Yamato rulers; the present building dates from 1744 but keeps its ancient form. [[source/history-of-japanese-art|p. 56, fig. 61]]"
 wikidata_id: Q107020632
@@ -32,9 +33,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: p. 56, fig. 61
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q107020632
   created:
     - source: history-of-japanese-art
       locator: p. 56, fig. 61

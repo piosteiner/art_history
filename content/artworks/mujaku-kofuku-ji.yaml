@@ -10,6 +10,7 @@ names:
 parent: mujaku-and-seshin
 part_number: "1"
 creator: unkei
+created: 1212
 kind: statue
 materials: [wood]
 institution: kofuku-ji
@@ -25,6 +26,10 @@ sources:
   names:
     - accessed: 2026-10-28
       wikidata: Q123197829
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 189–191, figs. 220–221
+      accessed: 2026-11-02
   creator:
     - accessed: 2026-10-28
       property: P170

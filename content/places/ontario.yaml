@@ -1,6 +1,7 @@
 public_id: 105829
 name: Ontario
 kind: site
+parent: canada
 location: [-85, 50]
 wikidata_id: Q1904
 metadata:

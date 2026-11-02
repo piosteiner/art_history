@@ -1,15 +1,13 @@
 public_id: 107703
 name: England
-kind: country
+kind: region
+designation: constituent country
+parent: united-kingdom
 location: [-1, 53]
 wikidata_id: Q21
 metadata:
   sources: [Wikidata Q21 (retrieved 2026-11-01)]
 sources:
-  kind:
-    - accessed: 2026-11-01
-      property: P31
-      wikidata: Q21
   location:
     - accessed: 2026-11-01
       property: P625

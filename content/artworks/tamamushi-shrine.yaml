@@ -19,6 +19,7 @@ medium: Cypress and camphor wood, with lacquer
 materials: [hinoki wood, camphor wood, lacquer]
 dimensions: [213]
 institution: horyu-ji
+web_url: https://kunishitei.bunka.go.jp/heritage/detail/201/321
 location: [135.735, 34.6151]
 description_md: "A portable [[zushi]] in the form of a [[kondo]] on a tall plinth: the earliest evidence of Japanese Buddhist architecture, older than the golden hall of Hōryūji. Named after the iridescent wings of the tamamushi beetle once set under its openwork metal. The paintings in red, yellow and green on black lacquer — the only Buddhist painting left from the Asuka period — show bodhisattvas, the Four Guardian Kings and [[jataka]] tales; on one side the Hungry Tigress, told in continuous narrative down the panel. [[source/history-of-japanese-art|p. 75, fig. 90–91]]"
 wikidata_id: Q7680611
@@ -49,9 +50,6 @@ sources:
     - source: history-of-japanese-art
       locator: p. 75, fig. 90–91
   created:
-    - accessed: 2026-11-01
-      property: P571
-      wikidata: Q7680611
     - source: history-of-japanese-art
       locator: p. 75, fig. 90–91
   location:
@@ -59,9 +57,6 @@ sources:
       property: P625
       wikidata: Q7680611
   materials:
-    - accessed: 2026-11-01
-      property: P186
-      wikidata: Q7680611
     - source: history-of-japanese-art
       locator: p. 75, fig. 90–91
   dimensions:

@@ -3,7 +3,7 @@ name: City of Bristol
 names: [Bristol]
 kind: region
 designation: ceremonial county of England
-parent: united-kingdom
+parent: england
 boundary_code: GB-BST
 location: [-2.58333, 51.45]
 wikidata_id: Q21693433

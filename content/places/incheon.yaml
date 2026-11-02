@@ -17,6 +17,7 @@ names:
     role: translation
     text: Инчхон
 kind: settlement
+parent: south-korea
 country_code: KR
 location: [126.64861, 37.46389]
 wikidata_id: Q20934

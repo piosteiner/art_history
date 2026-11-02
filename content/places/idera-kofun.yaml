@@ -5,16 +5,13 @@ names:
     role: translation
     text: 井寺古墳
 kind: archaeological
+parent: japan
 country_code: JP
 location: [130.77788, 32.7531]
 wikidata_id: Q24866260
 metadata:
   sources: [Wikidata Q24866260 (retrieved 2026-11-01)]
 sources:
-  kind:
-    - accessed: 2026-11-01
-      property: P31
-      wikidata: Q24866260
   location:
     - accessed: 2026-11-01
       property: P625

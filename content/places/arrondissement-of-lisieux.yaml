@@ -1,6 +1,7 @@
 public_id: 105817
 name: arrondissement of Lisieux
 kind: region
+parent: calvados
 location: [0.22528, 49.14472]
 wikidata_id: Q701531
 metadata:

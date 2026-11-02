@@ -2,15 +2,42 @@ public_id: 108039
 name: Artizon Museum
 kind: museum
 founded: 1952
+place: tokyo
+location: [139.77194, 35.67889]
+address: 1-7-2 Kyobashi
+website_url: https://www.artizon.museum/
 wikidata_id: Q913808
 metadata:
   sources: [Wikidata Q913808 (retrieved 2026-11-01)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Artizon_Museum_lobby_view_201912.jpg/1280px-Artizon_Museum_lobby_view_201912.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Artizon_Museum_lobby_view_201912.jpg
+    license: CC BY 4.0
+    credit: Wpcpey
+identifiers:
+  bnf: 11959749b
+  gnd: 5048992-6
+  idref: "027590143"
+  lc: n82129269
+  viaf: "141503846"
 sources:
   kind:
     - accessed: 2026-11-01
       property: P31
       wikidata: Q913808
+  place:
+    - accessed: 2026-11-02
+      property: P131
+      wikidata: Q913808
+  address:
+    - accessed: 2026-11-02
+      property: P6375
+      wikidata: Q913808
   founded:
     - accessed: 2026-11-01
       property: P571
+      wikidata: Q913808
+  location:
+    - accessed: 2026-11-02
+      property: P625
       wikidata: Q913808

@@ -41,13 +41,7 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: p. 82, fig. 101
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q3616004
   created:
-    - accessed: 2026-11-01
-      property: P571
-      wikidata: Q3616004
     - source: history-of-japanese-art
       locator: p. 82, fig. 101
   materials:
@@ -59,6 +53,3 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: p. 82, fig. 101
-  title_status:
-    - accessed: 2026-11-01
-      wikidata: Q3616004

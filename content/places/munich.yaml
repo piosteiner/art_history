@@ -38,10 +38,6 @@ sources:
     - accessed: 2026-10-16
       property: P31
       wikidata: Q1726
-  parent:
-    - accessed: 2026-10-16
-      property: P131
-      wikidata: Q1726
   location:
     - accessed: 2026-10-16
       property: P625

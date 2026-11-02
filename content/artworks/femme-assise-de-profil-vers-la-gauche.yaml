@@ -115,7 +115,13 @@ provenance:
         date: 1955/1956
         place: philadelphia
         number: "24"
-        document: Philadelphia Museum of Art, Toulouse-Lautrec; then The Art Institute of Chicago (as “Lady in Red”)
+        document: Philadelphia Museum of Art, Toulouse-Lautrec (as “Lady in Red”)
+      - kind: exhibition
+        date: 1955/1956
+        note: a later venue of the same exhibition
+        place: chicago
+        number: "24"
+        document: The Art Institute of Chicago, Toulouse-Lautrec (as “Lady in Red”)
       - kind: exhibition
         date: "1956"
         place: new-york-city

@@ -1,6 +1,7 @@
 public_id: 105815
 name: Fairfield County
 kind: site
+parent: connecticut
 location: [-73.37, 41.23]
 wikidata_id: Q54231
 metadata:

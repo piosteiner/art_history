@@ -257,7 +257,14 @@ provenance:
         note: before the 1953 date of her ownership
         place: new-york-city
         number: "148"
-        document: The Metropolitan Museum of Art, Van Gogh, Paintings and Drawings; then The Art Institute of Chicago
+        document: The Metropolitan Museum of Art, Van Gogh, Paintings and Drawings
+        certainty: possible
+      - kind: exhibition
+        date: 1949/1950
+        note: before the 1953 date of her ownership
+        place: chicago
+        number: "148"
+        document: The Art Institute of Chicago, Van Gogh, Paintings and Drawings
         certainty: possible
       - kind: exhibition
         date: "1955"

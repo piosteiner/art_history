@@ -1,0 +1,16 @@
+public_id: 108836
+name: Canada
+kind: country
+location: [-109, 56]
+wikidata_id: Q16
+metadata:
+  sources: [Wikidata Q16 (retrieved 2026-11-02)]
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q16
+  location:
+    - accessed: 2026-11-02
+      property: P625
+      wikidata: Q16

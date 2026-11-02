@@ -1,6 +1,7 @@
 public_id: 105832
 name: Dallas County
 kind: site
+parent: texas
 location: [-96.78, 32.77]
 wikidata_id: Q111168
 metadata:

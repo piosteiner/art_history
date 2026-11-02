@@ -28,7 +28,9 @@ names:
     role: translation
     text: Хоккайдо
 kind: region
+parent: japan
 country_code: JP
+boundary_code: JP-01
 location: [141.34689, 43.06433]
 wikidata_id: Q1037393
 metadata:

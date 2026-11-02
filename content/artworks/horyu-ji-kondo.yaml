@@ -13,6 +13,7 @@ created: 7th century
 created_span: uncertain
 kind: building
 institution: horyu-ji
+web_url: https://kunishitei.bunka.go.jp/heritage/detail/102/2681
 location: [135.7344, 34.61426]
 description_md: The [[kondo]] of Hōryūji, with the pagoda the oldest building of the temple, completed perhaps by 680 when the temple was rebuilt after the fire of 670. A double roof of square rafters on bracket arms carved like clouds; inside, an altar platform with the [[artwork/horyu-ji-shaka-triad]], the [[artwork/horyu-ji-kondo-yakushi]] and the [[artwork/horyu-ji-kondo-four-heavenly-kings]], and on the walls the [[artwork/horyu-ji-kondo-murals]]. [[source/history-of-japanese-art|p. 63, fig. 69]]
 wikidata_id: Q107020506
@@ -38,9 +39,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: p. 63, fig. 69
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q107020506
   created:
     - source: history-of-japanese-art
       locator: p. 63, fig. 69

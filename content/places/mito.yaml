@@ -1,6 +1,7 @@
 public_id: 108014
 name: Mito
 kind: settlement
+parent: ibaraki-prefecture
 location: [140.47125, 36.36583]
 wikidata_id: Q204249
 metadata:

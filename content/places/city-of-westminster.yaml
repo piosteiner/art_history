@@ -16,7 +16,7 @@ names:
   - Westminster
 kind: settlement
 designation: London borough
-parent: united-kingdom
+parent: england
 country_code: GB
 boundary_code: GB-WSM
 location: [-0.13722, 51.4975]
@@ -27,10 +27,6 @@ sources:
   kind:
     - accessed: 2026-10-19
       property: P31
-      wikidata: Q179351
-  parent:
-    - accessed: 2026-10-19
-      property: P131
       wikidata: Q179351
   location:
     - accessed: 2026-10-19

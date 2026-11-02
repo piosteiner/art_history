@@ -1,6 +1,7 @@
 public_id: 105827
 name: Capitol Planning Region
 kind: site
+parent: connecticut
 location: [-72.65, 41.85]
 wikidata_id: Q117286854
 metadata:

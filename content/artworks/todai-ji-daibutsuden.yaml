@@ -17,6 +17,7 @@ created: 758
 kind: building
 dimensions: [4874.2, 5701.2]
 institution: todai-ji
+web_url: https://kunishitei.bunka.go.jp/heritage/detail/102/2438
 location: [135.8399, 34.689]
 description_md: The hall of the [[artwork/todai-ji-daibutsu]] at the heart of Tōdaiji, the temple [[person/emperor-shomu]] founded as the head of all provincial temples. The first hall was eleven bays long and seven deep, larger than the imperial audience hall; it burnt to the ground in 1180 in the Genpei War and was rebuilt at once. [[source/history-of-japanese-art|p. 68, fig. 78]]
 wikidata_id: Q3012032
@@ -43,9 +44,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: p. 68, fig. 78
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q3012032
   created:
     - accessed: 2026-11-01
       property: P571

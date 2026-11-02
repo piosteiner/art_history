@@ -1,6 +1,7 @@
 public_id: 107709
 name: Dublin
 kind: settlement
+parent: dublin-city
 location: [-6.26028, 53.34972]
 wikidata_id: Q1761
 metadata:

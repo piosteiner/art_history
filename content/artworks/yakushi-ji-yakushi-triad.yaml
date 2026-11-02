@@ -12,6 +12,7 @@ medium: Bronze
 materials: [bronze]
 dimensions_note: Yakushi 254 cm
 institution: yakushi-ji
+web_url: https://kunishitei.bunka.go.jp/heritage/detail/201/176
 location: [135.7843, 34.66835]
 description_md: "[[yakushi]] seated on a rectangular throne between the bodhisattvas Nikkō and Gakkō, who stand in the hip-slung pose of the Tang style: the first Japanese sculptures in a fully Tang manner. The rich black colour comes from bronze high in tin and arsenic; the halos are Edo-period replacements. Whether the triad was cast for the first Yakushiji at Fujiwara and brought to Nara or made new for the second temple is still debated. [[source/history-of-japanese-art|p. 83, fig. 102–103]]"
 wikidata_id: Q107045996
@@ -42,9 +43,6 @@ sources:
     - source: history-of-japanese-art
       locator: p. 83, fig. 102–103
   created:
-    - accessed: 2026-11-01
-      property: P571
-      wikidata: Q107045996
     - source: history-of-japanese-art
       locator: p. 83, fig. 102–103
   location:

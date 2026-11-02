@@ -1,6 +1,7 @@
 public_id: 105763
 name: Saint-Denis
 kind: settlement
+parent: france
 location: [55.44806, -20.87889]
 wikidata_id: Q47045
 metadata:

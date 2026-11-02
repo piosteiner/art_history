@@ -13,6 +13,7 @@ kind: sculpture
 medium: Clay over wood and metal
 materials: [clay]
 institution: horyu-ji
+web_url: https://kunishitei.bunka.go.jp/heritage/detail/201/265
 description_md: "Four scenes of clay figures set among rock shapes around the central pillar on the ground floor of the [[artwork/horyu-ji-five-storied-pagoda]], finished in 711. North: the death of [[shaka]], his disciples in violent grief, the bodhisattvas calm; east: the debate between the layman Yuima and the bodhisattva Monju; west: the distribution of the relics. [[source/history-of-japanese-art|p. 81, fig. 99–100]]"
 wikidata_id: Q107045977
 metadata:
@@ -32,9 +33,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: p. 81, fig. 99–100
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q107045977
   medium:
     - source: history-of-japanese-art
       locator: p. 81, fig. 99–100

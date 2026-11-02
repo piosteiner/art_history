@@ -1,6 +1,8 @@
 public_id: 105825
 name: Maryland
 kind: region
+parent: united-states
+boundary_code: US-MD
 location: [-76.7, 39]
 wikidata_id: Q1391
 metadata:

@@ -1,6 +1,7 @@
 public_id: 108017
 name: Kurume
 kind: settlement
+parent: fukuoka-prefecture
 location: [130.50833, 33.31925]
 wikidata_id: Q320934
 metadata:

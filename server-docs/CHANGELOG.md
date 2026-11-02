@@ -4,6 +4,27 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-02
 
+### Data: the Quality page worked through (what needs no decision of the owner)
+- **What:** errors 1 → 0, warnings 1,270 → 794 (notes 8,600 → 8,300). Morimura's birth 1995 → 1951 (GND; Wikidata
+  wrong). Artists without dates: Tori Busshi active 606–623 (GND); 15 acknowledged (living / not known — Wikidata and GND
+  have nothing). Yeongju-si merged into Yeongju; Aomori in Aomori Prefecture (not the same). Credits for two Commons
+  images. Touring exhibitions of the Blaquier-Arrieta lots split into one record per venue (12 → 26, each with its place
+  and number), three short loans of lot 3 added (Winnetka 1958, Chicago 1960, New York 1965), Saint John (New
+  Brunswick) and Finland from Wikidata, the Courtauld's 1962 loan of lot 9 as a custody step; England placed under the
+  United Kingdom with the 14 English counties and cities under it; Kumamoto Prefecture holds the Eta Funayama Kofun;
+  unused Ottawa and Fort Worth removed. 87 citations whose value we changed since removed (85 Wikidata, RKD/BnF's
+  7 August for Velázquez). 224 complete auto-created entries acknowledged (Wikidata item + dates / period / place /
+  parent — the standard of the earlier place acks); 42 places given their parent from Wikidata P131. 92 Japanese works
+  got their official page as `web_url` (Agency for Cultural Affairs' kunishitei database, Wikidata P4275; e-museum
+  P4257). Outlines for Maryland and Hokkaidō; Mujaku and Seshin dated 1212 like their pair (Mason); Artizon Museum's
+  place from Wikidata.
+- **Left for the owner:** the 1933–45 gaps (113), forced transfers / seizures as owner (66 — legal judgements),
+  Moronobu / Hideyori / Ogawa Jihei (sources disagree), Madame Ingres (Bührle Foundation or Kunsthaus), 71 people
+  without Wikidata item or dates, the Columbus event (made by the owner). Not done: 426 works without a museum page
+  (search per work), periods of 19 styles (no source yet), 35 terms without definition.
+- **Why:** owner, 2026-11-02 ("work through all that dont require my attention"). **Revert:** admin history; the acks
+  in `quality_acks` (DELETE by note).
+
 ### Era dates: Japanese, Korean and Chinese calendars beside the Gregorian (migration 185)
 - **What:** `calendar_eras` — 248 Japanese era names (nengō, Taika 645 → Reiwa; Wikidata Q24706, Julian start dates
   converted, Tenpyō-shōhō corrected; the Southern Court's 8 eras as `line` 'Southern Court'), the 26 kings of Joseon

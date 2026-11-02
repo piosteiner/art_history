@@ -1,6 +1,7 @@
 public_id: 105821
 name: Jackson County
 kind: site
+parent: united-states
 location: [-94.34, 39.01]
 wikidata_id: Q127238
 metadata:

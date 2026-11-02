@@ -20,10 +20,6 @@ sources:
     - accessed: 2026-10-16
       property: P31
       wikidata: Q672962
-  parent:
-    - accessed: 2026-10-16
-      property: P131
-      wikidata: Q672962
   location:
     - accessed: 2026-10-16
       property: P625

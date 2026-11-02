@@ -1,6 +1,7 @@
 public_id: 106114
 name: Aomori
 kind: settlement
+parent: aomori-prefecture
 location: [140.74694, 40.82278]
 wikidata_id: Q146790
 metadata:

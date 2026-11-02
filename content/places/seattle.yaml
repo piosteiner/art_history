@@ -1,6 +1,7 @@
 public_id: 107566
 name: Seattle
 kind: settlement
+parent: united-states
 location: [-122.33, 47.605]
 wikidata_id: Q5083
 metadata:

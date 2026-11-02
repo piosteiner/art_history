@@ -1,6 +1,7 @@
 public_id: 105840
 name: Tarrant County
 kind: site
+parent: texas
 location: [-97.29, 32.77]
 wikidata_id: Q110412
 metadata:

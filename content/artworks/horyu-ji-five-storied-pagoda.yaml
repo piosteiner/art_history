@@ -14,6 +14,7 @@ created_span: uncertain
 kind: building
 dimensions: [3200]
 institution: horyu-ji
+web_url: https://kunishitei.bunka.go.jp/heritage/detail/102/2683
 location: [135.7341, 34.61423]
 description_md: "The [[pagoda]] beside the golden hall of Hōryūji: the fifth storey is about half as wide as the first, which gives the tower its lightness and stability. A heart pillar rises from a foundation stone holding relics to the bronze finial with nine rings. On its ground floor the [[artwork/horyu-ji-pagoda-clay-tableaux]] of 711. [[source/history-of-japanese-art|p. 64, fig. 72]]"
 wikidata_id: Q107020505
@@ -40,13 +41,7 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: p. 64, fig. 72
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q107020505
   created:
-    - accessed: 2026-11-01
-      property: P571
-      wikidata: Q107020505
     - source: history-of-japanese-art
       locator: p. 64, fig. 72
   location:

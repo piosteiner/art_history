@@ -1,0 +1,49 @@
+public_id: 108838
+name: Finland
+names:
+  - Republic of Finland
+  - Finnia
+  - Land of Thousand Lakes
+  - fi
+  - Suomen tasavalta
+  - Republiken Finland
+  - lang: fr
+    role: translation
+    text: Finlande
+  - lang: de
+    role: translation
+    text: Finnland
+  - lang: it
+    role: translation
+    text: Finlandia
+  - lang: ja
+    role: translation
+    text: フィンランド
+  - lang: zh
+    role: translation
+    text: 芬蘭
+  - lang: ko
+    role: translation
+    text: 핀란드
+  - lang: ru
+    role: translation
+    text: Финляндия
+kind: country
+country_code: FI
+boundary_code: FI
+location: [27, 65]
+wikidata_id: Q33
+metadata:
+  sources: [Wikidata Q33 (retrieved 2026-11-02)]
+identifiers:
+  gnd: 4017243-0
+  hls: "003353"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q33
+  location:
+    - accessed: 2026-11-02
+      property: P625
+      wikidata: Q33

@@ -1,6 +1,7 @@
 public_id: 108027
 name: Gifu
 kind: settlement
+parent: gifu-prefecture
 location: [136.75944, 35.42625]
 wikidata_id: Q45798
 metadata:

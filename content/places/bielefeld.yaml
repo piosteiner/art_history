@@ -48,10 +48,6 @@ sources:
     - accessed: 2026-10-17
       property: P31
       wikidata: Q2112
-  parent:
-    - accessed: 2026-10-17
-      property: P131
-      wikidata: Q2112
   location:
     - accessed: 2026-10-17
       property: P625
