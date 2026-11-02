@@ -4,6 +4,29 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-02
 
+### Every work and artist has a region; a movement's region only where it is regional (migration 194)
+- **What:**
+  - **Migration 194:** a movement's or style's region from its artists only with ≥ 3 known artists, ≥ 80 % of them in
+    one region. Periods and schools keep the most frequent region.
+    - "Modern art" had become East Asian (ten Korean and Japanese modernists linked to it by Wikidata);
+      Pleinairisme and mail art had a single artist.
+  - **Polities:**
+    - South Korea created (Q884).
+    - Wikidata items for Joseon (Q28179) and Southern Song (Q1147043).
+    - Territory codes for Empire of Japan (JP, KR, KP, TW), Tokugawa shogunate (JP) and Kingdom of Italy (IT).
+    - Then the Wikidata fill again for the remaining artists: Korean painters' nationality, Kunisada, Die Brücke's
+      Heckel, Bleyl and Schmidt-Rottluff.
+  - **Region set by hand:**
+    - 16 artists without nationality on Wikidata: 15 East Asia, Judith Gérard Europe (Paris, Molard family).
+    - 78 works without an artist: 69 East Asia, 8 Europe, Hammurabi Middle East — by their texts and sources
+      (Portal 2000, Mason).
+  - **Result:** every artwork and every artist with works has a region. 143 polities still have no territory codes
+    (mostly historical European states).
+  - `npm run perf` 40/40 (global part 2.6 s of 3 s).
+- **Why:** owner 2026-11-02: "check the 70 artworks without an artist and … the 31 artists without a region".
+- **Revert:** `DROP MATERIALIZED VIEW entry_regions` and recreate it from 191. The data changes in the History page
+  (source `script`).
+
 ### Content: Wikidata facts for 169 artists; the Tale of Genji and its world as literary works
 - **What:**
   - **169 artists without a region**, filled with `fill-from-wikidata.js --user=pio`: 154 filled, 14 had nothing,
