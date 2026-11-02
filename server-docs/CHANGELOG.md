@@ -4,6 +4,30 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-02
 
+### New entries from Wikidata at once ("Create now"); no double submissions; reference images like the others on the site
+- **What:**
+  - **CMS, "Create now":** the Wikidata review of a new entry has "Create now" beside "Fill the form first".
+    - It runs the form's own Create (`saveEntity`) with what was chosen; `refusedNew()` / `createdUrl()` are shared
+      with `POST /:plural`.
+    - When the Create is refused (a possible duplicate, a missing field), the form opens with the reason and keeps
+      the values as the draft.
+    - Menus that must have a value and that Wikidata doesn't fill (a term's category, a movement's kind) are chosen
+      under "Before creating" (`requiredChoices()` in `routes/wikidata.js`). Without a choice, "Create now" asks
+      instead of taking the first value.
+  - **CMS, double submissions:** an entry's form and the Wikidata review ignore a second submit while the first is
+    under way (`editor.js`, 10 s, cleared on `pageshow`).
+  - **Site, reference images:**
+    - The private reference images on an artwork page use the site's gallery (thumbnail strip) and lightbox (zoom,
+      move): `figure()` / `gallery()` with `own`, the images through the admin host's `?w=250|500`.
+    - Their previews in lists carry `data-full`, so hovering shows them larger (`hoverimage.ts`).
+    - A gallery's first thumbnail had `aria-current` escaped (`&quot;true&quot;`); fixed.
+  - e2e `wikidata.spec.js` (two new tests, fixtures Q902, Q903).
+- **Why:** owner 2026-11-02. "Fūjin" was created twice within a second: the first submission made it, and the
+  second answered "That slug is already taken"; its category became "technique", the menu's first value. The owner
+  asked to publish straight from the Wikidata page, and asked for "the whole palette of image behaviour" for
+  reference images.
+- **Revert:** revert the commit (code only).
+
 ### World regions for works, artists and movements; the quiz keeps to one region (migration 191)
 - **What:**
   - Enum `world_region` (europe, middle_east, africa, central_asia, south_asia, east_asia, southeast_asia, oceania,

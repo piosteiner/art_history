@@ -2,7 +2,7 @@
 // Runs against the fixture server (wikidata-fixtures.js): Q100 "Claude Monet", Q104 "Impression, Sunrise" …
 const { test, expect, sql, submitForm, API } = require('./helpers');
 
-const apply = (page) => Promise.all([page.waitForNavigation(), page.click('.wd-form .sticky-actions button')]);
+const apply = (page) => Promise.all([page.waitForNavigation(), page.click('.wd-form .sticky-actions button:not([name=create])')]);
 const row = (page, text) => page.locator('.wd-table tbody tr', { hasText: text }).first();
 
 test('a new artist from Wikidata: search, review (empty fields pre-ticked), then the form is prefilled', async ({ userA }) => {
@@ -23,6 +23,40 @@ test('a new artist from Wikidata: search, review (empty fields pre-ticked), then
   await expect(userA.locator('#f-names')).toHaveValue('Oscar-Claude Monet');  // only the ticked name
   await submitForm(userA);
   await expect(userA).toHaveURL(/\/artists\/claude-monet\?done=created/);
+});
+
+// "Create now" (owner 2026-11-02): the review creates the entry at once — the form's own Create (citations W);
+// refused (here: the same Wikidata item exists), the form opens with the reason
+test('a new entry from Wikidata with "Create now": created at once; a duplicate opens the form', async ({ userA }) => {
+  sql("DELETE FROM artists WHERE slug LIKE 'nowa-testmaler%'");
+  await userA.goto('/artists/new/wikidata?q=Q902');
+  await expect(userA.locator('.wd-form .sticky-actions button')).toHaveText(['Create now', 'Fill the form first']);
+  await Promise.all([userA.waitForNavigation(), userA.click('.wd-form button[name=create]')]);
+  await expect(userA).toHaveURL(/\/artists\/nowa-testmaler\?done=created/);
+  expect(sql("SELECT birth_label || ' / ' || death_label || ' / ' || wikidata_id FROM artists WHERE slug = 'nowa-testmaler'")).toBe('4 March 1901 / 7 June 1980 / Q902');
+  expect(sql("SELECT count(*) FROM citations WHERE entity_type = 'artist' AND entity_id = entity_id('artist', 'nowa-testmaler') AND wikidata_item = 'Q902'")).not.toBe('0');
+  await userA.goto('/artists/new/wikidata?q=Q902');
+  await Promise.all([userA.waitForNavigation(), userA.click('.wd-form button[name=create]')]);
+  await expect(userA.locator('h1')).toHaveText('New artist');
+  await expect(userA.locator('#f-name')).toHaveValue('Nowa Testmaler');
+  expect(sql("SELECT count(*) FROM artists WHERE wikidata_id = 'Q902'")).toBe('1');
+  sql("DELETE FROM artists WHERE slug LIKE 'nowa-testmaler%'");
+});
+
+// a menu that must have a value and that Wikidata doesn't fill — a term's category — is chosen on the review page
+test('"Create now" for a term: the category is chosen first; without it the form asks', async ({ userA }) => {
+  sql("DELETE FROM glossary WHERE slug LIKE 'testfujin%'");
+  await userA.goto('/glossary/new/wikidata?q=Q903');
+  await Promise.all([userA.waitForNavigation(), userA.click('.wd-form button[name=create]')]);
+  await expect(userA.locator('h1')).toHaveText('New term');
+  await expect(userA.locator('main')).toContainText('choose one (Wikidata doesn’t say)');
+  expect(sql("SELECT count(*) FROM glossary WHERE slug LIKE 'testfujin%'")).toBe('0');
+  await userA.goto('/glossary/new/wikidata?q=Q903');
+  await userA.selectOption('#wd-category', 'iconography');
+  await Promise.all([userA.waitForNavigation(), userA.click('.wd-form button[name=create]')]);
+  await expect(userA).toHaveURL(/\/glossary\/testfujin\?done=created/);
+  expect(sql("SELECT category || ' / ' || definition FROM glossary WHERE slug = 'testfujin'")).toBe('iconography / Japanese god of the wind in the tests');
+  sql("DELETE FROM glossary WHERE slug LIKE 'testfujin%'");
 });
 
 test('relationship suggestions: link by name, create a missing place, skip — and it is remembered', async ({ userA }) => {

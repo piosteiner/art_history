@@ -10,8 +10,10 @@ const placefinder = require('../placefinder');
 const { searchPage, reviewPage } = require('../wikidata-ui');
 const collab = require('../collab');
 const booklookup = require('../booklookup');
-const { docToForm } = require('../forms');
-const { send, withTx, typeWarning, notFoundPage, findEntity, pluralParam } = require('../core');
+const drafts = require('../drafts');
+const entries = require('./entries');   // the form's Create (saveEntity) for "Create now"
+const { docToForm, fieldLabel } = require('../forms');
+const { send, withTx, typeWarning, notFoundPage, findEntity, pluralParam, formContext } = require('../core');
 
 const router = express.Router();
 router.param('plural', pluralParam);
@@ -20,6 +22,14 @@ router.param('plural', pluralParam);
 // Wikidata: find the item, review field by field, apply only what was ticked (src/admin/wikidata.js)
 // ---------------------------------------------------------------------------------------------------------------
 const wdLinks = { folderOf: (type) => BY_TYPE[type].folder };
+
+// A new entry's menus that must have a value and that Wikidata doesn't fill (a term's category, a movement's kind):
+// chosen on the review page, so "Create now" never takes the menu's first value unasked
+async function requiredChoices(t) {
+  const ctx = await formContext(t);
+  return Object.keys(ctx.enums).filter((k) => t.fields[k] && !ctx.enumsNullable.has(k))
+    .map((key) => ({ key, label: fieldLabel(t.type, key), values: ctx.enums[key] }));
+}
 
 async function wikidataPage(req, res, t, e) {
   const action = e ? `/${t.folder}/${e.slug}/wikidata` : `/${t.folder}/new/wikidata`;
@@ -44,7 +54,8 @@ async function wikidataPage(req, res, t, e) {
   // the item's class says it is something else (a human, created as an institution — 055)
   const types = await wikidata.typesOf(qid).catch(() => null);
   const wrong = types && !types.includes(t.type) ? typeWarning(t, types, qid, e) : '';
-  send(req, res, { title, page, body: html`${wrong}${reviewPage({ title, plan, t: wdLinks, action, isNew: !e })}` });
+  const required = e ? [] : await requiredChoices(t);
+  send(req, res, { title, page, body: html`${wrong}${reviewPage({ title, plan, t: wdLinks, action, isNew: !e, required })}` });
 }
 
 async function wikidataApply(req, res, t, e) {
@@ -63,12 +74,30 @@ async function wikidataApply(req, res, t, e) {
   if (!e) {  // a new entry: prefill the new-entry form (the user's draft), created with "Create"
     const base = Object.fromEntries(Object.entries(docToForm({}, t.fields)).map(([k, v]) => [`f.${k}`, v]));
     const slug = wikidata.slugify(plan.label || qid);
-    await adminPool.query(`INSERT INTO admin_drafts (user_id, entity_type, entity_id, form) VALUES ($1, $2, NULL, $3)
-      ON CONFLICT (user_id, entity_type, entity_id) DO UPDATE SET form = EXCLUDED.form, updated_at = now()`,
-    [req.user.id, t.type, JSON.stringify({ slug, ...base, ...form,
+    const draft = { slug, ...base, ...form,
       ...(result.pendingImages.length ? { 'wd.images': JSON.stringify(result.pendingImages) } : {}),
       ...(result.pendingIds.length ? { 'wd.ids': JSON.stringify(result.pendingIds) } : {}),
-      ...(result.cites.length ? { 'wd.cite': JSON.stringify({ qid, cites: result.cites }) } : {}) })]);
+      ...(result.cites.length ? { 'wd.cite': JSON.stringify({ qid, cites: result.cites }) } : {}) };
+    // "Create now" (owner 2026-11-02): the form's own Create with these values — refused (a possible duplicate, a
+    // missing field), the form opens with the reason, kept as the draft
+    const missing = [];
+    for (const r of await requiredChoices(t)) {
+      const chosen = String(req.body[`f.${r.key}`] || '');
+      if (r.values.includes(chosen)) draft[`f.${r.key}`] = chosen;
+      else if (!draft[`f.${r.key}`]) missing.push(`${r.key}: ${r.label} — choose one (Wikidata doesn’t say).`);
+    }
+    const saved = req.body.create === '1'
+      ? (missing.length ? { errors: missing } : await entries.saveEntity(req.user, t, draft, null)) : null;
+    if (saved) {
+      if (!saved.errors) {
+        await drafts.deleteDraft(adminPool, req.user.id, t.type, null);
+        return res.redirect(303, entries.createdUrl(t, saved));
+      }
+    }
+    await adminPool.query(`INSERT INTO admin_drafts (user_id, entity_type, entity_id, form) VALUES ($1, $2, NULL, $3)
+      ON CONFLICT (user_id, entity_type, entity_id) DO UPDATE SET form = EXCLUDED.form, updated_at = now()`,
+    [req.user.id, t.type, JSON.stringify(draft)]);
+    if (saved) return entries.refusedNew(req, res, t, draft, saved);
     return res.redirect(303, `/${t.folder}/new?draft=1`);
   }
   if (Object.keys(form).length) await collab.applyForm(t, e.id, form, req.user.username);

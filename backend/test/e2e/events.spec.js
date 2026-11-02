@@ -63,7 +63,7 @@ test('an event: created with dates and place, depicted by an artwork, a person t
 
 test('an event from Wikidata: dates from start/end, place from "location"; then participants suggested', async ({ userA }) => {
   sql("DELETE FROM events WHERE slug = 'great-fire-of-meireki'");  // the first test's
-  const apply = () => Promise.all([userA.waitForNavigation(), userA.click('.wd-form .sticky-actions button')]);
+  const apply = () => Promise.all([userA.waitForNavigation(), userA.click('.wd-form .sticky-actions button:not([name=create])')]);
   const row = (text) => userA.locator('.wd-table tbody tr', { hasText: text }).first();
   await userA.goto('/events/new/wikidata?q=Q123');
   await expect(row('Period')).toContainText('1657-03-02/1657-03-04');

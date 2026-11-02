@@ -602,6 +602,17 @@ initInfinite();
 initDuplicates();
 initSortable();
 initFormDrafts();
+// One submission at a time (owner 2026-11-02: a double click on Create made the entry, then answered "That slug is
+// already taken"): a second submit of an entry's form or the Wikidata review while the first is under way is ignored.
+// (on window: after every other listener, so a submission another script stopped doesn't count)
+addEventListener('submit', (e) => {
+  const form = e.target;
+  if (e.defaultPrevented || !(form instanceof HTMLFormElement) || !form.matches('form.form[data-collab], form.form[data-draft], form[data-once]')) return;
+  if (form.dataset.sending) { e.preventDefault(); return; }
+  form.dataset.sending = '1';
+  setTimeout(() => { delete form.dataset.sending; }, 10000);   // no answer: may be sent again
+});
+addEventListener('pageshow', () => document.querySelectorAll('form[data-sending]').forEach((f) => { delete f.dataset.sending; }));   // back to the page
 initCiteDialogs();
 initCiteTriggers();
 initErrorFields();

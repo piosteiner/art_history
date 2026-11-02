@@ -399,25 +399,30 @@ router.post('/:plural/new/citation', async (req, res, next) => {
 router.post('/:plural', async (req, res) => {
   const { t } = req;
   const result = await saveEntity(req.user, t, req.body, null);
-  if (result.errors) {
-    const ctx = await formContext(t);
-    ctx.errorKeys = errorKeysOf(result.errors);
-    ctx.confirmNew = result.confirm || {};
-    ctx.recentSources = await citations.recentSources(adminPool, req.user.id);
-    ctx.citeValues = req.body;
-    ctx.duplicates = result.duplicates || null;
-    ctx.typeCheck = result.typeCheck ? html`${typeWarning(t, result.typeCheck.types, result.typeCheck.qid, null)}
-      <label class="choice"><input type="checkbox" name="type.ok" value="1"> it really is ${anOf(t.type)} — create it</label>` : null;
-    return send(req, res, {
-      title: `New ${t.type}`, status: 422,
-      page: { type: t.type, slug: null, mode: 'new' },
-      body: html`<h1>New ${t.type}</h1>${entityForm({ t, slug: req.body.slug, f: formFromBody(req.body), ctx, action: `/${t.folder}`,
-        errors: result.errors, isNew: true, pendingImages: req.body['wd.images'], pendingCites: req.body['wd.cite'], pendingIds: req.body['wd.ids'] })}`,
-    });
-  }
+  if (result.errors) return refusedNew(req, res, t, req.body, result);
   await drafts.deleteDraft(adminPool, req.user.id, t.type, null);
-  res.redirect(303, `/${t.folder}/${result.slug}?done=created${result.created.length ? `&auto=${result.created.length}` : ''}${result.city ? `&city=1${result.city.created ? `&places=${result.city.created}` : ''}` : ''}`);
+  res.redirect(303, createdUrl(t, result));
 });
+
+// The new-entry form again, with what refused it (validation, a possible duplicate, a wrong type) — also for "Create
+// now" on the Wikidata page (routes/wikidata.js)
+async function refusedNew(req, res, t, body, result) {
+  const ctx = await formContext(t);
+  ctx.errorKeys = errorKeysOf(result.errors);
+  ctx.confirmNew = result.confirm || {};
+  ctx.recentSources = await citations.recentSources(adminPool, req.user.id);
+  ctx.citeValues = body;
+  ctx.duplicates = result.duplicates || null;
+  ctx.typeCheck = result.typeCheck ? html`${typeWarning(t, result.typeCheck.types, result.typeCheck.qid, null)}
+    <label class="choice"><input type="checkbox" name="type.ok" value="1"> it really is ${anOf(t.type)} — create it</label>` : null;
+  return send(req, res, {
+    title: `New ${t.type}`, status: 422,
+    page: { type: t.type, slug: null, mode: 'new' },
+    body: html`<h1>New ${t.type}</h1>${entityForm({ t, slug: body.slug, f: formFromBody(body), ctx, action: `/${t.folder}`,
+      errors: result.errors, isNew: true, pendingImages: body['wd.images'], pendingCites: body['wd.cite'], pendingIds: body['wd.ids'] })}`,
+  });
+}
+const createdUrl = (t, result) => `/${t.folder}/${result.slug}?done=created${result.created.length ? `&auto=${result.created.length}` : ''}${result.city ? `&city=1${result.city.created ? `&places=${result.city.created}` : ''}` : ''}`;
 
 // Display of one field's value on the view page.
 // links: "type/slug" → name, for [[links]] in Markdown (loaded by the page, linkNames)
@@ -909,3 +914,5 @@ router.post('/:plural/:slug', async (req, res) => {
 
 module.exports = router;
 module.exports.saveEntity = saveEntity;  // the Create / Publish path, also for scripts/from-wikidata.js
+module.exports.refusedNew = refusedNew;    // "Create now" on the Wikidata page (routes/wikidata.js)
+module.exports.createdUrl = createdUrl;

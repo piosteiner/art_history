@@ -86,6 +86,10 @@ const ENTITIES = {
       P276: [stmt(item('Q124'))], P710: [stmt(item('Q100'))] } },
   Q124: { id: 'Q124', labels: labels('Edo'), descriptions: { en: { value: 'former name of Tokyo' } },
     claims: { P31: [stmt(item('Q515'))], P625: [stmt({ latitude: 35.6895, longitude: 139.6917, globe: 'http://www.wikidata.org/entity/Q2' })] } },
+  // "Create now" (wikidata.spec.js): a painter created straight from the review
+  Q902: { id: 'Q902', labels: labels('Nowa Testmaler'), descriptions: { en: { value: 'Swiss painter (1901–1980)' } },
+    claims: { P31: [stmt(item('Q5'))], P569: [stmt(time('+1901-03-04T00:00:00Z', 11))], P570: [stmt(time('+1980-06-07T00:00:00Z', 11))] } },
+  Q903: { id: 'Q903', labels: labels('Testfūjin'), descriptions: { en: { value: 'Japanese god of the wind in the tests' } }, claims: {} },
   Q105: { id: 'Q105', labels: labels('Musée Marmottan Monet'), descriptions: { en: { value: 'art museum in Paris' } }, claims: { P31: [stmt(item('Q207694'))] } },
 };
 

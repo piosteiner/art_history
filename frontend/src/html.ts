@@ -81,13 +81,20 @@ export const thumb = (url: string, width = 500) => {
   return `${API_BASE}/thumb?${new URLSearchParams({ src: url, w: String(w) })}`;
 };
 
-/** An image with the credit and licence the image licences require wherever it is shown. */
-export function figure(img: Image, alt: string, width = 500) {
-  const small = thumb(img.url, width);
+/** The logged-in account's private reference image (184) at a width: the admin host renders 250 and 500 itself (with the
+ *  login's cookie — no thumbnail service, no CORS mode) */
+const ownAt = (url: string, width: number) => `${url}?w=${width <= 250 ? 250 : 500}`;
+
+/** An image with the credit and licence the image licences require wherever it is shown.
+ *  own: the account's reference image — the same figure, opened large the same way (wireLightbox). */
+export function figure(img: Image, alt: string, width = 500, own = false) {
+  const small = own ? ownAt(img.url, width) : thumb(img.url, width);
   const credit = [img.credit, img.license].filter(Boolean).join(' · ');
-  return html`<figure class="figure">
-    <span class="figure-frame"><img src="${small}" alt="${img.caption ?? alt}" loading="lazy" decoding="async" crossorigin="anonymous" data-full="${img.url}"
-      ${small !== img.url ? html`data-fallback="${img.url}"` : ''}></span>
+  return html`<figure class="figure${own ? ' own-figure' : ''}">
+    <span class="figure-frame">${own
+      ? html`<img src="${small}" alt="${img.caption ?? alt}" loading="lazy" decoding="async" data-full="${img.url}" data-own="1">`
+      : html`<img src="${small}" alt="${img.caption ?? alt}" loading="lazy" decoding="async" crossorigin="anonymous" data-full="${img.url}"
+      ${small !== img.url ? html`data-fallback="${img.url}"` : ''}>`}</span>
     <figcaption>
       ${img.caption ? html`<span class="caption">${img.caption}</span>` : ''}
       <span class="credit">${img.source_url ? html`<a href="${img.source_url}" target="_blank" rel="noopener">${credit || 'Source'}</a>` : credit}</span>
@@ -230,14 +237,15 @@ export function wireImageFallbacksEverywhere() {
  * Several images of an entry: the first large, the others as thumbnails under it — a click (or Enter) shows that one
  * large, with its own credit. All figures are in the page; only the chosen one is visible (the others load when shown).
  */
-export function gallery(images: Image[], alt: string) {
-  if (images.length < 2) return html`<div class="gallery">${images.map((img) => figure(img, alt))}</div>`;
+export function gallery(images: Image[], alt: string, { own = false } = {}) {
+  if (images.length < 2) return html`<div class="gallery">${images.map((img) => figure(img, alt, 500, own))}</div>`;
   return html`<div class="gallery gallery-multi">
-    ${images.map((img, i) => html`<div class="gallery-item"${i ? ' hidden' : ''}>${figure(img, alt)}</div>`)}
+    ${images.map((img, i) => html`<div class="gallery-item"${i ? ' hidden' : ''}>${figure(img, alt, 500, own)}</div>`)}
     <div class="gallery-thumbs" role="group" aria-label="Images">
       ${images.map((img, i) => html`<button type="button" class="gallery-thumb${i ? '' : ' current'}" data-image="${String(i)}"
-        aria-label="Image ${String(i + 1)} of ${String(images.length)}"${i ? '' : ' aria-current="true"'}>
-        <img src="${thumb(img.url, 120)}" alt="" loading="lazy" decoding="async" crossorigin="anonymous" ${thumb(img.url, 120) !== img.url ? html`data-fallback="${img.url}"` : ''}></button>`)}
+        aria-label="Image ${String(i + 1)} of ${String(images.length)}"${i ? '' : html` aria-current="true"`}>
+        ${own ? html`<img src="${ownAt(img.url, 120)}" alt="" loading="lazy" decoding="async">`
+          : html`<img src="${thumb(img.url, 120)}" alt="" loading="lazy" decoding="async" crossorigin="anonymous" ${thumb(img.url, 120) !== img.url ? html`data-fallback="${img.url}"` : ''}>`}</button>`)}
     </div></div>`;
 }
 export function wireGalleries(root: Element) {
@@ -502,7 +510,7 @@ export function linksInNewTab(root: Element, within: string, keep: (href: string
  */
 let ownThumbs: Record<string, string> = {};
 export const setOwnThumbs = (m: Record<string, string>) => { ownThumbs = m; };
-export const ownThumb = (slug: string, width: 250 | 500 = 250) => (ownThumbs[slug] ? `${ownThumbs[slug]}?w=${width}` : null);
+export const ownThumb = (slug: string, width: 250 | 500 = 250) => (ownThumbs[slug] ? ownAt(ownThumbs[slug], width) : null);
 /** A preview <img>: a public picture through thumb(), else the owner's own (marked, without CORS mode). */
 export function previewImg(url: string | null | undefined, slug: string | null, width: number, cls = '') {
   if (url) {
@@ -510,5 +518,6 @@ export function previewImg(url: string | null | undefined, slug: string | null, 
     return html`<img${cls ? html` class="${cls}"` : ''} src="${small}" alt="" loading="lazy" crossorigin="anonymous" data-full="${url}"${small !== url ? html` data-fallback="${url}"` : ''}>`;
   }
   const own = slug ? ownThumb(slug, width > 250 ? 500 : 250) : null;
-  return own ? html`<img class="${cls ? `${cls} own-image` : 'own-image'}" src="${own}" alt="" loading="lazy" title="your reference image (private)">` : null;
+  // data-full / data-own: the hover preview shows it larger like any other (hoverimage.ts)
+  return own ? html`<img class="${cls ? `${cls} own-image` : 'own-image'}" src="${own}" alt="" loading="lazy" title="your reference image (private)" data-full="${ownThumbs[slug!]}" data-own="1">` : null;
 }

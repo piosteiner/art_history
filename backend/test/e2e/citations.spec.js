@@ -2,7 +2,7 @@
 // a changed value shows its citations as outdated, the quality page lists what has no good source.
 const { test, expect, sql, submitForm, API } = require('./helpers');
 
-const apply = (page) => Promise.all([page.waitForNavigation(), page.click('.wd-form .sticky-actions button')]);
+const apply = (page) => Promise.all([page.waitForNavigation(), page.click('.wd-form .sticky-actions button:not([name=create])')]);
 const row = (page, text) => page.locator('.wd-table tbody tr', { hasText: text }).first();
 const cites = (type, slug) => sql(`SELECT string_agg(field || ':' || coalesce(wikidata_item, 'src') || ':' || (pending IS NOT NULL)::text, ' ' ORDER BY field)
   FROM citations WHERE entity_type = '${type}' AND entity_id = entity_id('${type}', '${slug}')`);

@@ -3,7 +3,7 @@
 // host who is logged in; visitors' pages never contact it. Logged in, artwork pages show the account's private
 // reference images (views/detail.ts).
 import { getAccount, getOwnThumbs, getPrivateImages, logOut, loginUrl, type PrivateImage } from './api';
-import { setOwnThumbs } from './html';
+import { setOwnThumbs, gallery } from './html';
 import { html, render } from './html';
 
 const KEY = 'arthistory.account';
@@ -58,13 +58,13 @@ export const account = () => who;
 export const privateImages = (slug: string): Promise<PrivateImage[]> =>
   who.then((name) => (name ? getPrivateImages(slug).then((x) => x ?? []).catch(() => []) : []));
 
-/** The section under the gallery: "Only you see these" — opened large in a new tab. */
+/** The section under the gallery: "Only you see these" — the site's own gallery (thumbnails to switch, a click opens it
+ *  large with zoom: wireGalleries, wireLightbox), the source and page as its caption. */
 export function privateImagesSection(images: PrivateImage[]) {
   return html`<section class="private-images">
     <h2>Your reference images <span class="tag">private</span></h2>
     <p class="muted small">Only you see these — from your own books, for your private use (managed in the CMS).</p>
-    <div class="private-image-list">${images.map((i) => html`<figure>
-      <a href="${i.url}" target="_blank" rel="noopener"><img src="${i.url}" alt="" loading="lazy" width="${String(i.width)}" height="${String(i.height)}"></a>
-      <figcaption class="muted small">${[i.source, i.locator].filter(Boolean).join(', ') || '—'}</figcaption></figure>`)}</div>
+    ${gallery(images.map((i) => ({ url: i.url, caption: [i.source, i.locator].filter(Boolean).join(', ') || null, credit: null, license: null, source_url: null })),
+      'Your reference image', { own: true })}
   </section>`;
 }

@@ -91,7 +91,7 @@ function imageChoice(img, i) {
           ${img.declined ? html`<div class="muted small">skipped before</div>` : ''}`}</div></div>`;
 }
 
-function reviewPage({ title, plan, t, action, isNew }) {
+function reviewPage({ title, plan, t, action, isNew, required = [] }) {
   const fresh = plan.suggestions.filter((s) => !s.declined);
   const declined = plan.suggestions.filter((s) => s.declined);
   return html`<h1>${title}</h1>
@@ -99,8 +99,8 @@ function reviewPage({ title, plan, t, action, isNew }) {
       <span class="muted">${plan.description}</span> · <a href="${action}?search=${encodeURIComponent(plan.label || '')}">not this one?</a></p>
     <p class="muted">Nothing is taken unless chosen. Your own values are never pre-selected for replacement; empty fields are.
       “Keep mine” and “skip” are remembered as checked; “decide later” records nothing and asks again next time.
-      ${isNew ? 'The values fill the new-entry form — check it and press Create.' : 'Field values go into the working copy — check them in the editor and Publish. Relationships and new entries are created when you apply.'}</p>
-    <form method="post" action="${action}" class="wd-form">
+      ${isNew ? '“Create now” creates the entry with what is chosen at once — a possible duplicate or a missing field opens the form to decide. “Fill the form first” opens the new-entry form to check and add to it.' : 'Field values go into the working copy — check them in the editor and Publish. Relationships and new entries are created when you apply.'}</p>
+    <form method="post" action="${action}" class="wd-form" data-once>
       <input type="hidden" name="qid" value="${plan.qid}">
       <h2>Fields</h2>
       <div class="table-wrap"><table class="diff wd-table"><thead><tr><th>Field</th><th>Yours</th><th>Wikidata</th><th>Take?</th></tr></thead>
@@ -124,7 +124,10 @@ function reviewPage({ title, plan, t, action, isNew }) {
           ${declined.length ? html`<details><summary class="muted">skipped before (${declined.length})</summary><table class="diff wd-table"><tbody>
             ${declined.map((s) => suggestionRow(s, plan.suggestions.indexOf(s), t))}</tbody></table></details>` : ''}`
           : html`<p class="muted">None.</p>`}` : html`<p class="muted">Relationships: create the entry first, then compare it with Wikidata again.</p>`}
-      <div class="actions sticky-actions"><button>Apply selected</button><a class="button secondary" href="${action.replace(/\/wikidata$/, '')}">Cancel</a></div>
+      ${isNew && required.length ? html`<h2>Before creating</h2><div class="field-pair">${required.map((r) => html`<div class="field">
+        <label for="wd-${r.key}">${r.label}</label><select id="wd-${r.key}" name="f.${r.key}"><option value="">choose …</option>${r.values.map((v) => html`<option value="${v}">${v}</option>`)}</select></div>`)}</div>` : ''}
+      <div class="actions sticky-actions">${isNew ? html`<button name="create" value="1">Create now</button><button class="secondary">Fill the form first</button>`
+        : html`<button>Apply selected</button>`}<a class="button secondary" href="${action.replace(/\/wikidata$/, '')}">Cancel</a></div>
     </form>`;
 }
 

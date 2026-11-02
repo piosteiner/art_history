@@ -34,7 +34,7 @@ export function mountHoverImages() {
     current = small;
     img.onload = () => { if (current === small) { box.hidden = false; place(small); } };
     img.onerror = () => { if (img.src !== full) img.src = full; else hide(); };
-    img.src = thumb(full, 500);
+    img.src = small.dataset.own ? `${full}?w=500` : thumb(full, 500);   // the account's reference image: its own 500 px
     if (img.complete && img.naturalWidth) img.onload(new Event('load'));
   };
 

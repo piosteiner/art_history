@@ -124,6 +124,8 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
           if (!current() || !box || !images.length) return;
           render(box, privateImagesSection(images));
           box.hidden = false;
+          wireGalleries(box);
+          wireLightbox(box);   // like the public pictures: opened large, zoom and move
         });
       }
       // network questions and versions (API 088/089)
