@@ -553,6 +553,25 @@ German (de-CH); only published entries and items.
   done date, newest first; the setting `roadmap_done_days` in `site_settings`, 136). `area_color`: the topic's colour
   key (`roadmap_areas`: blue, teal, purple, pink, red, brown, olive, indigo, cyan, slate).
 
+## Quiz (2026-11-02)
+Rounds drawn at random, with their answers (the site checks them itself); `Cache-Control: no-store`. `src/routes/quiz.js`.
+Only works with a picture (their first image), not a whole of parts. What belongs to a movement: the view `movement_works`
+(direct or through the artist while it lasted; parts rolled up).
+- `GET /v1/quiz/image?n=10[&works=<slug>,…]` → `{movements: [names with works], data: [{slug, public_id, title, titles (every
+  name, furigana out), created, image_url, credit, license, attribution, creators: [{slug, name, family_name, names, main}],
+  movements: [{slug, name, names}]}]}`; `works`: these (≤ 20, in this order) instead of a draw — the owner's private images.
+- `GET /v1/quiz/artist?n=8[&for=<slug>]` → `{data: [{artist: {slug, public_id, name, dates}, options: [work × 8]}]}`; artists
+  with ≥ 3 pictured works; 2–4 of theirs (`correct`), the rest look-alikes: a shared movement, ±20 years, the same kind.
+  A work option: `{slug, public_id, title, title_en, image_url, credit, license, created, creator, correct}`.
+- `GET /v1/quiz/movement?n=8&mode=pick|name|mixed[&for=<slug>]` → `{data: [{kind: 'pick', movement, options: [work × 8]} |
+  {kind: 'name', works: [work × 3], answer, options: [movement × 4]}]}`; wrong works have a movement of their own, not this
+  one, and not by one of its artists (a period: none made during it); wrong movements hold none of the shown works, are
+  outside its tree (and for a period: don't overlap it). Its time = its dates, else its works' years.
+- `GET /v1/quiz/glossary?n=10&mode=definition|term|describe|mixed[&for=<slug>]` → `{data: [{kind: 'definition'|'term', term,
+  answer, options: [term × 4]} | {kind: 'describe', term}]}`; terms with a definition of ≥ 40 characters; the others of
+  the same category first, not its broader/narrower term; every shown definition without its own term's names (`…`).
+- Admin host, for the logged-in site: `GET /site/quiz/private-images` → `{images: [{slug, url}]}` (routes/site-account.js).
+
 ## Network (088)
 An `<entry>` is its public number (`100476` — unique across types) or `<plural>/<slug or number>`.
 - `GET /v1/network/path?from=<entry>&to=<entry>[&via=person,artist&max=6]` — the shortest chain of relationships and

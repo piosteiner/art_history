@@ -2,6 +2,18 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-02
+
+### Quiz on the site: name a picture, whose works, movements and periods, glossary
+- **What:** API `GET /v1/quiz/image|artist|movement|glossary` (`backend/src/routes/quiz.js`, no migration — reads
+  `images`, `artwork_creators()`, the view `movement_works`, `glossary`); admin host `GET /site/quiz/private-images`
+  (the owner's crops for the picture quiz). Site `/quiz` (`frontend/src/views/quiz.ts`, `src/quiz-match.ts`), menu link
+  "Quiz", prerendered `/quiz/`. Tests: `backend/test/e2e/quiz.spec.js` (4), `private-images.spec.js` extended, site
+  tests "quiz: …" (2); 5 new perf budgets (10× data: 24 / 268 / 268 / 131 / 16 ms).
+- **Why:** owner, 2026-11-02 ("i want to add a quiz feature to the site … in english").
+- **Revert:** remove `router.use('/quiz', …)` from `src/routes/v1.js` and the route in `site-account.js`; on the site
+  the `quiz` route and menu link (`router.ts`, `main.ts`).
+
 ## 2026-11-01
 
 ### Data: the works of Portal, *Korea: Art and Archaeology* + the book's figures as private reference images

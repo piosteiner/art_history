@@ -60,6 +60,26 @@
     "periods (cached per data version, src/cache.js)": {
       "path": "/periods",
       "budget": 500
+    },
+    "quiz: pictures": {
+      "path": "/quiz/image?n=10",
+      "budget": 200
+    },
+    "quiz: artists": {
+      "path": "/quiz/artist?n=8",
+      "budget": 600
+    },
+    "quiz: movements, pick works": {
+      "path": "/quiz/movement?n=8&mode=pick",
+      "budget": 600
+    },
+    "quiz: movements, name it": {
+      "path": "/quiz/movement?n=8&mode=name",
+      "budget": 300
+    },
+    "quiz: glossary": {
+      "path": "/quiz/glossary?n=10",
+      "budget": 200
     }
   },
   "admin": {

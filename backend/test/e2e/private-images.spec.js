@@ -65,11 +65,16 @@ test('the site sees its own account’s reference images, nobody else’s', asyn
   expect(own.images[0]).toMatchObject({ locator: 'p. 7, fig. 3', width: 40 });
   expect(own.images[0].url).toMatch(/\/private-images\/\d+$/);
   expect((await (await userB.request.get('/site/artworks/test-private-images/private-images', asSite)).json()).images).toEqual([]);
+  // the picture quiz: one image per work of this account
+  const quiz = (await (await userA.request.get('/site/quiz/private-images', asSite)).json()).images;
+  expect(quiz).toContainEqual({ slug: 'test-private-images', url: own.images[0].url });
+  expect((await (await userB.request.get('/site/quiz/private-images', asSite)).json()).images.map((i) => i.slug)).not.toContain('test-private-images');
 
   // another origin gets no CORS permission; without a session: 401
   expect((await userA.request.get('/site/me', { headers: { Origin: 'https://evil.example' } })).headers()['access-control-allow-origin']).toBeUndefined();
   expect((await request.get('/site/me', asSite)).status()).toBe(401);
   expect((await request.get('/site/artworks/test-private-images/private-images', asSite)).status()).toBe(401);
+  expect((await request.get('/site/quiz/private-images', asSite)).status()).toBe(401);
 
   // the login sends the browser back to the site only — any other address goes to the dashboard
   const page = await userA.request.get(`/login?next=${encodeURIComponent(`${SITE}/artworks/1/x?login=1`)}`, { maxRedirects: 0 });
