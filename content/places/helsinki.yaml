@@ -1,0 +1,41 @@
+public_id: 108829
+name: Helsinki
+names:
+  - Helsingia
+  - Helsingin kaupunki
+  - Stadi
+  - Hesa
+  - lang: ja
+    role: translation
+    text: ヘルシンキ
+  - lang: zh
+    role: translation
+    text: 赫尔辛基
+  - lang: ko
+    role: translation
+    text: 헬싱키
+  - lang: ru
+    role: translation
+    text: Хельсинки
+kind: settlement
+parent: uusimaa
+country_code: FI
+location: [24.9375, 60.17083]
+wikidata_id: Q1757
+metadata:
+  sources: [Wikidata Q1757 (retrieved 2026-11-02)]
+identifiers:
+  gnd: 4024351-5
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q1757
+  parent:
+    - accessed: 2026-11-02
+      property: P131
+      wikidata: Q1757
+  location:
+    - accessed: 2026-11-02
+      property: P625
+      wikidata: Q1757

@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-02
 
+### Data: Blaquier-Arrieta sale — lot 10's own provenance, lot 7's wording (from the sale watcher's note)
+- **What:** the watcher (`scripts/watch-sale.sh`) reported two changed lot pages. Lot 10 (Pissarro, *La Place du
+  Théâtre-Français…*, artwork 279) now has its own provenance instead of lot 4's: 10 steps before the owners' (Durand-Ruel
+  1898–1911, Matthiesen, Knoedler with Carroll Carstairs 1946, Leigh B. and Mary Lasker Block 1946, Barney and Loraine
+  Hokin, Richard L. Feigen, Stephen Hahn Gallery, Norton Simon 1964, E. V. Thaw & Co., Lefevre consigned 1978), the
+  owners' step completed (acquired 1978, direct), each cited to its line on the lot page; 16 exhibitions as records
+  under the step that held the work (two "possibly"; the Norton Simon loan "c. 1973–80" noted as overlapping 1978);
+  Pissarro & Venturi 1939 no. 1027 and Pissarro & Durand-Ruel Snollaerts 2005 no. 1205, cited to the lot's literature.
+  The work's text no longer says the provenance is open; the source's note keeps the page's former error. New from
+  Wikidata: people Carroll Carstairs, Leigh B. Block, Mary Lasker Block, Richard L. Feigen, Stephen Hahn; place Helsinki;
+  by hand: Barney Hokin, Loraine Hokin. Lot 7 (Degas): "Mr and Mrs" → "Mr. and Mrs." in the step's label and citation.
+  New finding: `provenance_gap_1933_1945` on lot 10 (Matthiesen undated — a real gap).
+- **Why:** owner, 2026-11-02 (pasted the watcher's note). **Revert:** admin history of artwork 279 / step 4715; delete the
+  seven people and Helsinki.
+
 ### Quiz: works with only private reference images, for their account; changelog sources as links
 - **What:** the quiz's games are functions (`src/routes/quiz.js`: `image`, `artist`, `movement`, `glossary`) run by the
   public API (as before; `works=` gone, `for=` also for pictures) and, logged in on the site, by the admin host

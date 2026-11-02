@@ -1,0 +1,32 @@
+public_id: 108824
+name: Leigh B. Block
+given_name: Leigh B.
+family_name: Block
+kind: person
+occupations: [entrepreneur]
+birth: 1905
+death: 1987
+wikidata_id: Q72967671
+metadata:
+  sources: [Wikidata Q72967671 (retrieved 2026-11-02)]
+identifiers:
+  gnd: "118914340"
+  lc: n96001780
+  viaf: "88974112"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q72967671
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q72967671
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q72967671
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q72967671

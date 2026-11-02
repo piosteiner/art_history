@@ -1,0 +1,16 @@
+public_id: 108828
+name: Uusimaa
+kind: site
+location: [24.5, 60.25]
+wikidata_id: Q5711
+metadata:
+  sources: [Wikidata Q5711 (retrieved 2026-11-02)]
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q5711
+  location:
+    - accessed: 2026-11-02
+      property: P625
+      wikidata: Q5711

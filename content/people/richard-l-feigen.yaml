@@ -1,0 +1,40 @@
+public_id: 108826
+name: Richard L. Feigen
+given_name: Richard L.
+family_name: Feigen
+names:
+  - Richard Lee Feigen
+  - Richard Feigen
+  - lang: ja
+    role: translation
+    text: リチャード・フェイゲン
+kind: person
+occupations: [art dealer]
+birth: 1930-08-08
+death: 2021-01-29
+wikidata_id: Q77595649
+metadata:
+  sources: [Wikidata Q77595649 (retrieved 2026-11-02)]
+identifiers:
+  gnd: "122761375"
+  idref: "147637082"
+  lc: no00044331
+  ulan: "500439643"
+  viaf: "69147145"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q77595649
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q77595649
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q77595649
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q77595649

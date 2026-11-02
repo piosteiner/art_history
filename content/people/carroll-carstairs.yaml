@@ -1,0 +1,31 @@
+public_id: 108823
+name: Carroll Carstairs
+given_name: Carroll
+family_name: Carstairs
+kind: person
+occupations: [art dealer, novelist]
+birth: 1888-03-20
+death: 1948-10-02
+wikidata_id: Q5046521
+metadata:
+  sources: [Wikidata Q5046521 (retrieved 2026-11-02)]
+identifiers:
+  lc: no2014127843
+  viaf: "93493946"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q5046521
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q5046521
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q5046521
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q5046521

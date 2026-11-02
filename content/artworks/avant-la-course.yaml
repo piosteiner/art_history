@@ -113,12 +113,12 @@ provenance:
     method: purchase
     direct: true
     place: los-angeles
-    label: Mr and Mrs Sidney F. Brody
+    label: Mr. and Mrs. Sidney F. Brody
     sources:
       - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
-        note: "Sotheby’s, provenance: “Mr and Mrs Sidney F. Brody, Los Angeles (acquired from the above on 13 December 1951 and until at least 1968)”"
+        note: "Sotheby’s, provenance: “Mr. and Mrs. Sidney F. Brody, Los Angeles (acquired from the above on 13 December 1951 and until at least 1968)”"
         source: sothebys-n12368-lot-7
-        accessed: 2026-10-31
+        accessed: 2026-11-02
     records:
       - kind: exhibition
         date: "1957"

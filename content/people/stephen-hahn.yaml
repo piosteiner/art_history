@@ -1,0 +1,32 @@
+public_id: 108827
+name: Stephen Hahn
+given_name: Stephen
+family_name: Hahn
+names: [Stephan Hahn]
+kind: person
+occupations: [art collector, art dealer]
+birth: 1921-02-01
+death: 2011-04-02
+wikidata_id: Q16019235
+metadata:
+  sources: [Wikidata Q16019235 (retrieved 2026-11-02)]
+identifiers:
+  ulan: "500444688"
+  viaf: "47157643248538590005"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q16019235
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q16019235
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q16019235
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q16019235

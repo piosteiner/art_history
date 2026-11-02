@@ -1,0 +1,27 @@
+public_id: 108825
+name: Mary Lasker Block
+given_name: Mary Lasker
+family_name: Block
+names: [Mrs. Leigh B. Block, Leigh B. Block]
+kind: person
+birth: 1904
+death: 1981
+wikidata_id: Q73571644
+metadata:
+  sources: [Wikidata Q73571644 (retrieved 2026-11-02)]
+identifiers:
+  lc: no2005110584
+  viaf: "19420361"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q73571644
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q73571644
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q73571644

@@ -8,22 +8,235 @@ medium: Oil on canvas
 materials: [oil paint, canvas]
 dimensions: [74.4, 92.5]
 web_url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
-description_md: "Signed “C. Pissarro” and dated “1898.” lower right. One of the views Pissarro painted in the winter of 1897–98 from a room of the Grand Hôtel du Louvre [[source/sothebys-n12368-lot-10]]. Its provenance before the [[institution/blaquier-arrieta-collection]] is open: Sotheby’s page gives that of lot 4."
+description_md: Signed “C. Pissarro” and dated “1898.” lower right. One of the views Pissarro painted in the winter of 1897–98 from a room of the Grand Hôtel du Louvre [[source/sothebys-n12368-lot-10]].
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Camille_Pissarro_-_La_Place_du_Th%C3%A9%C3%A2tre-Fran%C3%A7ais_et_l%E2%80%99avenue_de_l%E2%80%99Op%C3%A9ra%2C_soleil_d%E2%80%99apr%C3%A8s-midi_en_hiver.jpg/1280px-Camille_Pissarro_-_La_Place_du_Th%C3%A9%C3%A2tre-Fran%C3%A7ais_et_l%E2%80%99avenue_de_l%E2%80%99Op%C3%A9ra%2C_soleil_d%E2%80%99apr%C3%A8s-midi_en_hiver.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Camille_Pissarro_-_La_Place_du_Th%C3%A9%C3%A2tre-Fran%C3%A7ais_et_l%E2%80%99avenue_de_l%E2%80%99Op%C3%A9ra,_soleil_d%E2%80%99apr%C3%A8s-midi_en_hiver.jpg
     license: Public domain
     credit: Camille Pissarro
 provenance:
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1898-05-02
+    ended: 1911
+    method: purchase
+    direct: true
+    place: paris
+    label: Galerie Durand-Ruel, Paris
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+        note: "Sotheby’s, provenance: “Galerie Durand-Ruel, Paris (acquired directly from the artist on 2 May 1898 and until 1911)”"
+        source: sothebys-n12368-lot-10
+        accessed: 2026-11-02
+    records:
+      - kind: exhibition
+        date: "1898"
+        place: paris
+        number: "2"
+        document: Galeries Durand-Ruel, Oeuvres récentes de Camille Pissarro
+      - kind: exhibition
+        date: "1899"
+        place: paris
+        number: "66"
+        document: Galeries Durand-Ruel, Tableaux de Monet, Pissarro, Renoir & Sisley
+      - kind: exhibition
+        date: "1903"
+        note: not numbered
+        place: venice
+        document: Palazzo dell'Esposizione, L'Arte mondiale alla V. Esposizione di Venezia (as “La Piazza del ‘Théâtre-Français’”)
+      - kind: exhibition
+        date: "1904"
+        place: helsinki
+        number: "43"
+        document: Exposition d'artistes français et belges (as “Place du Théâtre Français”)
+      - kind: exhibition
+        date: "1905"
+        place: london
+        number: "208"
+        document: Grafton Galleries, Pictures by Boudin, Cézanne, Degas, Manet, Monet, Morisot, Pissarro, Renoir, Sisley
+      - kind: exhibition
+        date: "1908"
+        place: paris
+        number: "2"
+        document: Galerie Durand-Ruel, Pissarro
+      - kind: exhibition
+        date: "1910"
+        place: paris
+        number: "7"
+        document: Galerie Durand-Ruel, Tableaux et gouaches par Camille Pissarro
+      - kind: exhibition
+        date: "1911"
+        place: berlin
+        number: "112"
+        document: Paul Cassirer, IX. Ausstellung (as “Place du Théâtre-Français”)
+      - kind: exhibition
+        date: "1911"
+        note: “possibly” in Sotheby’s list
+        place: vienna
+        number: "19"
+        document: Galerie Arnot, Französische Impressionisten
+        certainty: possible
+  - owner: institution/matthiesen-gallery
+    role: dealer
+    place: london
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+        note: "Sotheby’s, provenance: “Matthiesen Gallery, London”"
+        source: sothebys-n12368-lot-10
+        accessed: 2026-11-02
+    records:
+      - kind: exhibition
+        date: "1912"
+        place: berlin
+        number: "9"
+        document: Paul Cassirer, IX. Ausstellung (as “Place du Théâtre Français”)
+      - kind: exhibition
+        date: "1914"
+        place: berlin
+        number: "23"
+        document: Paul Cassirer, Sommerausstellung (as “Place du Théâtre Français”)
+      - kind: exhibition
+        date: "1939"
+        note: “possibly” in Sotheby’s list
+        place: new-york-city
+        number: "25"
+        document: M. Knoedler & Company, Views of Paris (as “Place du Théâtre Français”)
+        certainty: possible
+      - kind: exhibition
+        date: "1943"
+        place: london
+        number: "47"
+        document: National Gallery, Nineteenth Century French Paintings (as “Plâce du Théâtre Français”)
+  - owner: institution/m-knoedler-co
+    co_owners: [person/carroll-carstairs]
+    role: dealer
+    acquired: 1946-04-24
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: jointly with Carroll Carstairs Gallery, New York
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+        note: "Sotheby’s, provenance: “M. Knoedler & Co., New York and Carroll Carstairs Gallery, New York (jointly acquired from the above on 24 April 1946)”"
+        source: sothebys-n12368-lot-10
+        accessed: 2026-11-02
+  - owner: person/leigh-b-block
+    co_owners: [person/mary-lasker-block]
+    acquired: 1946-10-24
+    method: purchase
+    direct: true
+    place: chicago
+    label: Leigh B. and Mary Lasker Block
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+        note: "Sotheby’s, provenance: “Leigh B. and Mary Lasker Block, Chicago (acquired from the above on 24 October 1946)”"
+        source: sothebys-n12368-lot-10
+        accessed: 2026-11-02
+  - owner: person/barney-hokin
+    co_owners: [person/loraine-hokin]
+    place: chicago
+    label: Barney and Loraine Hokin
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+        note: "Sotheby’s, provenance: “Barney and Loraine Hokin, Chicago”"
+        source: sothebys-n12368-lot-10
+        accessed: 2026-11-02
+  - owner: person/richard-l-feigen
+    role: dealer
+    place: chicago
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+        note: "Sotheby’s, provenance: “Richard L. Feigen, Chicago”"
+        source: sothebys-n12368-lot-10
+        accessed: 2026-11-02
+  - owner: person/stephen-hahn
+    role: dealer
+    place: new-york-city
+    label: Stephen Hahn Gallery, New York
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+        note: "Sotheby’s, provenance: “Stephen Hahn Gallery, New York”"
+        source: sothebys-n12368-lot-10
+        accessed: 2026-11-02
+  - owner: person/norton-simon
+    acquired: 1964-10-30
+    method: purchase
+    direct: true
+    place: los-angeles
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+        note: "Sotheby’s, provenance: “Norton Simon, Los Angeles (acquired from the above on 30 October 1964)”"
+        source: sothebys-n12368-lot-10
+        accessed: 2026-11-02
+    records:
+      - kind: exhibition
+        date: "1965"
+        place: los-angeles
+        document: Los Angeles County Museum of Art, Special Exhibition for the College Art Association
+      - kind: exhibition
+        date: "1968"
+        place: new-york-city
+        number: "59"
+        document: Acquavella Galleries, Four Masters of Impressionism (as “Place du Théatre Français, soleil d’après-midi en hiver”)
+      - kind: exhibition
+        date: 1973/1980
+        date_label: c. 1973–1980
+        note: "Sotheby’s: “circa 1973-80” — although Thaw and Lefevre held the work by 1978"
+        place: pasadena
+        document: Pasadena Art Museum and Norton Simon Museum, on extended loan
+  - owner: person/eugene-thaw
+    role: dealer
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: E. V. Thaw & Co., Inc., New York
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+        note: "Sotheby’s, provenance: “E. V. Thaw & Co., Inc., New York (acquired from the above)”"
+        source: sothebys-n12368-lot-10
+        accessed: 2026-11-02
+  - owner: institution/alex-reid-lefevre
+    role: agent
+    acquired: 1978
+    direct: true
+    place: london
+    label: consigned by E. V. Thaw & Co.
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+        note: "Sotheby’s, provenance: “The Lefevre Gallery (Alex Reid & Lefevre Ltd.), London (consigned by the above in 1978)”"
+        source: sothebys-n12368-lot-10
+        accessed: 2026-11-02
   - owner: institution/blaquier-arrieta-collection
     further_places:
       - place: new-york-city
         date: 7 – 18 November 2026
+    acquired: 1978
     ended: 2026-11-18
+    method: purchase
+    direct: true
     place: buenos-aires
     label: Sotheby's New York
-    certainty: possible
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+        note: "Sotheby’s, provenance: “Acquired from the above in 1978 by the present owner”"
+        source: sothebys-n12368-lot-10
+        accessed: 2026-11-02
     check_after: 2026-11-18
+numbers:
+  - number: "1027"
+    source: pissarro-venturi-1939
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+        note: "Sotheby’s, literature: “Ludovic Rodo Pissarro and Lionello Venturi, Camille Pissarro, son art—son oeuvre, Paris, 1939, no. 1027”"
+        source: sothebys-n12368-lot-10
+        accessed: 2026-11-02
+  - number: "1205"
+    source: pissarro-durand-ruel-snollaerts-2005
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
+        note: "Sotheby’s, literature: “Joachim Pissarro and Claire Durand-Ruel Snollaerts, Pissarro, Critical Catalogue of Paintings, Paris, 2005, no. 1205”"
+        source: sothebys-n12368-lot-10
+        accessed: 2026-11-02
 sources:
   kind:
     - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/camille-pissarro-la-place-du-theatre-francais?locale=en
