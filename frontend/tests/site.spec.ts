@@ -933,6 +933,8 @@ test('crossed paths: listed under the map, on detail pages, and "only these two"
   await expect(page.locator('#map-status')).toContainText('in 1888');
 
   await page.goto('/artists/paul-gauguin');
+  // below the artist's works (2026-11-02), loaded when it comes near: scrolled there as a reader would
+  await page.locator('#crossed-anchor').scrollIntoViewIfNeeded();
   await expect(page.locator('#crossed')).toContainText('Vincent van Gogh');
   await expect(page.locator('#crossed')).toContainText('Arles');
 });
