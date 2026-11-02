@@ -91,7 +91,7 @@ const BY_TYPE = Object.fromEntries(TYPES.map((t) => [t.type, t]));
 const BY_FOLDER = Object.fromEntries(TYPES.map((t) => [t.folder, t]));
 
 // YAML key → column where they differ.
-const REF_COLUMNS = { place: 'place_id', creator: 'creator_id', institution: 'current_institution_id' };
+const REF_COLUMNS = { place: 'place_id', creator: 'creator_id', institution: 'current_institution_id', edition_of: 'edition_of' };  // edition_of: a source → a literary work (193)
 const REL_KEYS = new Set(['type', 'to', 'period', 'period_label', 'label', 'certainty', 'notes_md', 'sources', 'metadata']);
 const IMAGE_KEYS = ['url', 'source_url', 'license', 'credit', 'caption'];
 // A further number of an artwork in YAML (migration 048): whose it is — an institution or a catalogue (source) slug — or a label.

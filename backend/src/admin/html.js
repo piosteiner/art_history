@@ -47,8 +47,8 @@ ${nav && user ? html`<header class="top">
   <a class="brand" href="/">Art history admin</a>
   <nav>
     <span class="nav-group" title="The collection: works and who made, owned and kept them"><a href="/artworks">Artworks</a><a href="/artists">Artists</a><a href="/people">People</a><a href="/institutions">Institutions</a></span>
-    <span class="nav-group" title="Context: when and where"><a href="/events">Events</a><a href="/literary-works">Literature</a><a href="/movements">Movements</a><a href="/places">Places</a><a href="/polities">Polities</a></span>
-    <span class="nav-group" title="Reference"><a href="/glossary">Glossary</a><a href="/bibliography">Bibliography</a></span>
+    <span class="nav-group" title="Context: when and where"><a href="/events">Events</a><a href="/movements">Movements</a><a href="/places">Places</a><a href="/polities">Polities</a></span>
+    <span class="nav-group" title="Literature and reference"><a href="/literary-works">Literature</a><a href="/glossary">Glossary</a><a href="/bibliography">Bibliography</a></span>
     <span class="nav-group nav-tools" title="The data: its checks and every change"><a href="/quality">Quality</a><a href="/history">History</a></span>
     <span class="nav-group nav-site" title="The public site: its texts and settings"><a href="/pages" title="Text pages of the site: the project documentation, the privacy statement">Pages</a><a href="/changelog" title="What changed on the site, by day">Changelog</a><a href="/roadmap" title="What is being worked on, next, later">Roadmap</a><a href="/featured" title="The curated views of the start page">Start views</a><a href="/search-words" title="Words the public search treats as the same, across languages">Search words</a><a href="/feedback" title="What visitors sent with the F button">Feedback${feedback.newCount() ? html` <span class="nav-count" title="new">${String(feedback.newCount())}</span>` : ''}</a></span>
   </nav>

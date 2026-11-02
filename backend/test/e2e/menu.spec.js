@@ -7,7 +7,7 @@ test('menu: the groups in order, the site\'s pages and settings in their own gro
   expect(groups).toEqual([
     ['Artworks', 'Artists', 'People', 'Institutions'],
     ['Events', 'Movements', 'Places', 'Polities'],
-    ['Glossary', 'Bibliography'],
+    ['Literature', 'Glossary', 'Bibliography'],
     ['Quality', 'History'],
     ['Pages', 'Changelog', 'Roadmap', 'Start views', 'Search words', 'Feedback'],
   ]);
