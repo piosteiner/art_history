@@ -38,6 +38,7 @@ async function freshMarkers(req, refresh) {
   const provs = await citations.forProvenance(adminPool, provIds);
   const nums = await citations.forNumbers(adminPool, list.map((r) => /^num:(\d+)$/.exec(r.key)).filter(Boolean).map((m) => m[1]));
   const nameCites = await citations.forNames(adminPool, list.map((r) => /^name:(\d+)$/.exec(r.key)).filter(Boolean).map((m) => m[1]));
+  let waiting = null;
   for (const r of list) {
     const label = String(r.label || '').slice(0, 200);
     let m;
@@ -50,7 +51,11 @@ async function freshMarkers(req, refresh) {
     } else if ((m = /^num:(\d+)$/.exec(r.key))) {
       out[r.key] = String(citations.marker(nums[m[1]], { number: m[1], label }, back, { recent }));
     } else if ((m = /^name:(\d+)$/.exec(r.key))) {
-      out[r.key] = String(citations.marker(nameCites[m[1]], { name: m[1], label }, back, { recent }));
+      out[r.key] = String(citations.marker(nameCites[m[1]], { name: m[1], label }, back, { recent }));    } else if ((m = /^pname:(.+)$/.exec(r.key)) && ent) {   // a name not published yet (190)
+      let nameText = '';
+      try { nameText = decodeURIComponent(m[1]).trim(); } catch { nameText = ''; }
+      waiting ||= await citations.forWaitingNames(adminPool, ent.type, ent.id);
+      if (nameText) out[r.key] = String(citations.marker(waiting[nameText], { type: ent.type, id: ent.id, nameText, label }, back, { recent }));
     }
   }
   return { markers: out, recent: String(citations.recentChips(recent)) };
@@ -86,6 +91,8 @@ router.post('/citations', async (req, res) => {
   if (wantsJson(req)) return res.json(await freshMarkers(req, refreshOf(req)));
   res.redirect(303, citeBack(req.body.back, 'cite-added'));
 });
+// a dialog the page doesn't have yet (a name typed in the edit form, 190): rendered on request
+router.post('/citations/markers', async (req, res) => res.json(await freshMarkers(req, refreshOf(req))));
 router.post('/citations/:id/delete', async (req, res) => {
   const c = await citations.byId(adminPool, req.params.id);
   if (!c) return wantsJson(req) ? res.status(404).json({ error: 'That source is gone already — reload the page.' }) : notFoundPage(req, res);

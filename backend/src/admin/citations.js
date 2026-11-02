@@ -39,7 +39,7 @@ async function shortForms(db, rows) {
 async function forEntity(db, type, id) {
   const { rows } = await db.query(`SELECT c.id, c.field, c.reliability, c.source_text, c.source_slug, c.locator, c.note, c.accessed,
       c.wikidata_item, c.url, c.outdated, c.pending IS NOT NULL AS pending FROM citation_status c
-    WHERE c.entity_type = $1 AND c.entity_id = $2 ORDER BY c.reliability DESC NULLS LAST, c.id`, [type, id]);
+    WHERE c.entity_type = $1 AND c.entity_id = $2 AND c.field IS NOT NULL ORDER BY c.reliability DESC NULLS LAST, c.id`, [type, id]);
   const byField = {};
   for (const r of await shortForms(db, rows)) (byField[r.field] ||= []).push(r);
   return byField;
@@ -71,6 +71,16 @@ async function forNames(db, ids) {  // other names (152): rows of entry_names
   const byName = {};
   for (const r of await shortForms(db, rows)) (byName[r.name_id] ||= []).push(r);
   return byName;
+}
+
+// sources of names not published yet (190), by the name's text
+async function forWaitingNames(db, type, id) {
+  const { rows } = await db.query(`SELECT c.id, c.pending->>'__name' AS name_text, c.reliability, c.source_text, c.source_slug, c.locator, c.note,
+      c.accessed, c.wikidata_item, c.url, false AS outdated, true AS pending FROM citation_status c
+    WHERE c.entity_type = $1 AND c.entity_id = $2 AND c.field IS NULL ORDER BY c.reliability DESC NULLS LAST, c.id`, [type, id]);
+  const byText = {};
+  for (const r of await shortForms(db, rows)) (byText[r.name_text] ||= []).push(r);
+  return byText;
 }
 
 async function forNumbers(db, ids) {  // further numbers of an artwork (081)
@@ -137,6 +147,17 @@ async function add(db, body, userId, { pending = null, pendingByField = null } =
     if (await already(`${col} = $2`, [text(key)])) throw await twice();
     await db.query(`INSERT INTO citations (${col}, source_id, text, locator, note, accessed, url, created_by) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
       [text(key), ...common]);
+    return;
+  }
+  // a name not published yet (190): waits for its row of entry_names — or takes the row when there is one already
+  if (text('name_text')) {
+    const nameText = text('name_text');
+    const { rows: [row] } = await db.query('SELECT id FROM entry_names WHERE entity_type = $1::entity_type AND entity_id = $2 AND text = $3 ORDER BY position LIMIT 1',
+      [text('type'), text('id'), nameText]);
+    if (row) return add(db, { ...body, name: String(row.id), name_text: '' }, userId);
+    if (await already('entity_type = $2::entity_type AND entity_id = $3 AND name_text = $4', [text('type'), text('id'), nameText])) throw await twice();
+    await db.query(`INSERT INTO citations (entity_type, entity_id, name_text, pending, source_id, text, locator, note, accessed, url, created_by)
+      VALUES ($1, $2, $3, jsonb_build_object('__name', $3::text), $4, $5, $6, $7, $8, $9, $10)`, [text('type'), text('id'), nameText, ...common]);
     return;
   }
   // the field — and the others ticked under "also for" (one museum page backs the date, the size, the medium …)
@@ -240,9 +261,11 @@ const sameForm = (expected, body) => Object.entries(expected).every(([k, v]) => 
 // value recorded now), the others dropped (the value was changed before publishing — not Wikidata's any more).
 // A new entry: the citations of wd.cite whose values were kept.
 async function settle(db, type, id, body, userId) {
-  const { rows } = await db.query('SELECT id, pending FROM citations WHERE entity_type = $1 AND entity_id = $2 AND pending IS NOT NULL', [type, id]);
+  const { rows } = await db.query('SELECT id, pending, name_text FROM citations WHERE entity_type = $1 AND entity_id = $2 AND pending IS NOT NULL', [type, id]);
   for (const c of rows) {
-    if (sameForm(c.pending, body)) {
+    // a name's waiting source (190): its row was made on this save (the trigger moved it) — else the name is gone
+    if (c.name_text !== null) await db.query('DELETE FROM citations WHERE id = $1', [c.id]);
+    else if (sameForm(c.pending, body)) {
       await db.query(`UPDATE citations c SET pending = NULL, cited_value = field_value(er.r, f.cols)
         FROM citable_fields f, entity_rows er WHERE c.id = $1 AND (f.entity_type, f.field) = (c.entity_type, c.field)
           AND (er.type, er.id) = (c.entity_type, c.entity_id)`, [c.id]);
@@ -366,7 +389,8 @@ function recentChips(recent = [], cited = []) {
 // (editor/sortable.js — no reload). edit: on the edit page (rendered after the entry's form; a button with the same
 // badges goes next to the field's label, and `expect` gets the field's form values on submit).
 const keyOf = (target) => (target.relationship ? `rel:${target.relationship}` : target.provenance ? `prov:${target.provenance}`
-  : target.number ? `num:${target.number}` : target.name ? `name:${target.name}` : `field:${target.field}`);
+  : target.number ? `num:${target.number}` : target.name ? `name:${target.name}`
+  : target.nameText ? `pname:${encodeURIComponent(target.nameText)}` : `field:${target.field}`);
 function badges(cites = []) {
   // every logged source shows its kind — also one still in the working copy (dotted: becomes a citation on Publish),
   // so a value with sources never looks like one without ("+" only when there is none at all)
@@ -406,6 +430,7 @@ function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
           : target.provenance ? html`<input type="hidden" name="provenance" value="${target.provenance}">`
           : target.number ? html`<input type="hidden" name="number" value="${target.number}">`
           : target.name ? html`<input type="hidden" name="name" value="${target.name}">`
+          : target.nameText ? html`<input type="hidden" name="type" value="${target.type}"><input type="hidden" name="id" value="${target.id}"><input type="hidden" name="name_text" value="${target.nameText}">`
           : html`<input type="hidden" name="type" value="${target.type}"><input type="hidden" name="id" value="${target.id}"><input type="hidden" name="field" value="${target.field}">`}
         <input type="hidden" name="back" value="${back}">
         ${edit ? html`<input type="hidden" name="expect" value="">` : ''}
@@ -427,6 +452,6 @@ function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
       </form></div></details>`;
 }
 
-module.exports = { CitationError, citeNew, newEntrySection, citableFields, forEntity, forRelationships, forProvenance, forNumbers, forNames, syncText, add, byId, remove, confirm, pendingFromWikidata, settle,
+module.exports = { CitationError, citeNew, newEntrySection, citableFields, forEntity, forRelationships, forProvenance, forNumbers, forNames, forWaitingNames, syncText, add, byId, remove, confirm, pendingFromWikidata, settle,
   pendingFromSource, citeAgreeingSource, citeRelationshipFromSource,
   citeAllFromWikidata, citeAgreeing, citeRelationshipFromWikidata, marker, trigger, recentSources, recentChips, keyOf };

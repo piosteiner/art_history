@@ -165,6 +165,34 @@ async function send(form, submitter) {
   if (first) first.focus();
 }
 
+// A dialog the page doesn't have yet — a name typed in the edit form (190): the server renders it, it joins the others.
+async function fetchMarker(key, label) {
+  const box = document.querySelector('.cite-dialogs[data-type]');
+  if (!box) return null;
+  const body = new URLSearchParams({ back: box.dataset.back,
+    refresh: JSON.stringify([{ key, label, edit: false, type: box.dataset.type, id: box.dataset.id }]) });
+  try {
+    const res = await fetch('/citations/markers', { method: 'POST', credentials: 'same-origin', body,
+      headers: { 'X-Requested-With': 'fetch', 'Content-Type': 'application/x-www-form-urlencoded' } });
+    const markup = res.ok ? ((await res.json()).markers || {})[key] : null;
+    if (!markup) return null;
+    if (markerFor(key, false)) return markerFor(key, false);   // pressed twice meanwhile
+    const tpl = document.createElement('template');
+    tpl.innerHTML = markup.trim();
+    const fresh = tpl.content.firstElementChild;
+    box.append(fresh);
+    initAutocomplete(fresh);
+    fresh.querySelectorAll('.cite-recent').forEach(markUsed);
+    return fresh;
+  } catch { return null; }
+}
+
+// The badges of a marker by its key — for a button made on the page (editor/names.js); "+" when there is none yet.
+export function badgesFor(key) {
+  const d = markerFor(key, false);
+  return d ? d.querySelector(':scope > summary').innerHTML : '<span class="cite-badge cite-none" title="no source yet — click to add one">+</span>';
+}
+
 export function initCiteDialogs() {
   const closeAll = (except) => document.querySelectorAll('details.cite[open]').forEach((d) => { if (d !== except) d.open = false; });
   document.addEventListener('toggle', (e) => {
@@ -180,6 +208,7 @@ export function initCiteDialogs() {
       e.preventDefault();
       const d = markerFor(opener.dataset.forKey, false);
       if (d) d.open = true;
+      else fetchMarker(opener.dataset.forKey, opener.dataset.citeLabel || '').then((m) => { if (m) m.open = true; });
     }
   });
   document.addEventListener('submit', (e) => {

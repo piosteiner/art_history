@@ -194,3 +194,43 @@ test('a birth name: "kind of name" in the row, stored as kind, in the API', asyn
   expect(body.names[0]).toEqual(expect.objectContaining({ text: 'Test Paula Becker', role: 'former', kind: 'birth', period: expect.objectContaining({ label: 'until 1901' }) }));
   sql("DELETE FROM artists WHERE slug = 'test-paula-modersohn-becker'");
 });
+
+// 190: every name's sources on the edit page — a published one's (its row), and a name typed now: its source waits for
+// Publish and then belongs to the name's row; a name removed before Publish takes its source along
+test('sources for every name on the edit page, also for names not published yet', async ({ userA }) => {
+  sql(`DELETE FROM institutions WHERE slug = 'test-many-names';
+       INSERT INTO institutions (slug, name, names) VALUES ('test-many-names', 'Test Many Names', '[{"text": "Test First Name", "lang": "en", "role": "alternative"}]')`);
+  await userA.goto('/institutions/test-many-names/edit');
+  const cite = async (row, words) => {
+    await row.locator('.n-cite').click();
+    const d = userA.locator('details.cite[open]');
+    await d.locator('.cite-more summary').click();
+    await d.locator('input[name=text]').fill(words);
+    await d.locator('.cite-submit').click();
+    await expect(d.locator('.cite-status')).toHaveText(/Source added/);
+    await expect(row.locator('.n-cite .cite-badge.cite-text')).toHaveText('T');
+    await d.locator('.cite-close').click();
+  };
+  const rows = userA.locator('.names-row');
+  await cite(rows.nth(0), 'Test letter of 1901');
+  await userA.click('text=+ Add a name');
+  await rows.nth(1).locator('.n-text').fill('Test Second Name');
+  await cite(rows.nth(1), 'Test annual report 1910');
+  await userA.click('text=+ Add a name');
+  await rows.nth(2).locator('.n-text').fill('Test Dropped Name');
+  await cite(rows.nth(2), 'Test guide 1920');
+  // waiting on the entry with the name's text, no field's source
+  expect(sql(`SELECT string_agg(name_text, ',' ORDER BY name_text) FROM citations WHERE entity_id = entity_id('institution', 'test-many-names') AND field IS NULL`))
+    .toBe('Test Dropped Name,Test Second Name');
+  await rows.nth(2).locator('.n-remove').click();
+  await expect(userA.locator('#f-names')).toHaveValue(/Test Second Name/);
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  expect(sql(`SELECT string_agg(n.text || ': ' || c.text, ' / ' ORDER BY n.position) FROM citations c JOIN entry_names n ON n.id = c.name_id
+              WHERE n.entity_type = 'institution' AND n.entity_id = entity_id('institution', 'test-many-names')`))
+    .toBe('Test First Name: Test letter of 1901 / Test Second Name: Test annual report 1910');
+  expect(sql(`SELECT count(*) FROM citations WHERE text = 'Test guide 1920'`)).toBe('0');
+  // on the edit page again: the new name's button shows its source
+  await userA.goto('/institutions/test-many-names/edit');
+  await expect(userA.locator('.names-row').nth(1).locator('.n-cite .cite-badge.cite-text')).toHaveText('T');
+  sql("DELETE FROM institutions WHERE slug = 'test-many-names'");
+});

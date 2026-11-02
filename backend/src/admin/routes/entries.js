@@ -859,14 +859,28 @@ router.get('/:plural/:slug/edit', async (req, res) => {
 // editor/sortable.js shows each one's badges next to the field's label.
 async function citeDialogs(t, e, user) {
   const citable = (await citations.citableFields(adminPool))[t.type] || {};
-  if (!Object.keys(citable).length) return '';
+  const hasNames = t.fields.names === 'names';
+  if (!Object.keys(citable).length && !hasNames) return '';
   const cites = await citations.forEntity(adminPool, t.type, e.id);
   const recent = await citations.recentSources(adminPool, user.id, t.type, e.id);
   const back = `/${t.folder}/${e.slug}/edit`;
   // further numbers (081): their dialogs too — the buttons with their badges stand in the numbers' table
   const nums = t.type === 'artwork' ? await numbers.list(adminPool, e.id) : [];
-  return html`<div class="cite-dialogs">${Object.keys(citable).map((field) => citations.marker(cites[field],
-    { type: t.type, id: e.id, field, label: `“${fieldLabel(t.type, field)}”` }, back, { edit: true, recent }))}${numbers.dialogs(e, nums, await citations.forNumbers(adminPool, nums.map((n) => n.id)), recent)}</div>`;
+  // other names (152, 190): a dialog for each published name and each name whose source waits for Publish; the rows
+  // of the names editor (editor/names.js) find theirs by the name's text (data-name-keys) — a name typed now gets one
+  // from the server when its button is pressed
+  const nameRows = hasNames ? (await adminPool.query(
+    'SELECT id, text FROM entry_names WHERE entity_type = $1 AND entity_id = $2 ORDER BY position', [t.type, e.id])).rows : [];
+  const nameCites = await citations.forNames(adminPool, nameRows.map((r) => r.id));
+  const waiting = hasNames ? await citations.forWaitingNames(adminPool, t.type, e.id) : {};
+  const nameKeys = {};
+  for (const r of nameRows) nameKeys[r.text] ||= `name:${r.id}`;
+  const nameDialogs = [...nameRows.filter((r) => nameKeys[r.text] === `name:${r.id}`).map((r) => citations.marker(nameCites[r.id],
+    { name: r.id, label: `“${names.plain(r.text)}”` }, back, { recent })),
+  ...Object.keys(waiting).filter((x) => !(x in nameKeys)).map((x) => citations.marker(waiting[x],
+    { type: t.type, id: e.id, nameText: x, label: `“${names.plain(x)}”` }, back, { recent }))];
+  return html`<div class="cite-dialogs" data-type="${t.type}" data-id="${e.id}" data-back="${back}" data-name-keys="${JSON.stringify(nameKeys)}">${Object.keys(citable).map((field) => citations.marker(cites[field],
+    { type: t.type, id: e.id, field, label: `“${fieldLabel(t.type, field)}”` }, back, { edit: true, recent }))}${numbers.dialogs(e, nums, await citations.forNumbers(adminPool, nums.map((n) => n.id)), recent)}${nameDialogs}</div>`;
 }
 
 router.post('/:plural/:slug', async (req, res) => {

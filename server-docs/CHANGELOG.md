@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-02
 
+### A source for every name on the edit page, also before Publish (migration 190)
+- **What:** each row of the names editor has a sources button. A published name opens its row's dialog
+  (`name:<id>`, found by its text); a name typed in the form gets a dialog from the server on the first click
+  (`POST /citations/markers`, key `pname:<text>`). Its source waits on the entry: `citations.name_text`, no field,
+  `pending = {"__name": text}`. The trigger `entry_names_take_sources` moves it to the name's `entry_names` row when the
+  row is made (Publish) or a row is renamed to that text. A name removed before Publish takes its source along
+  (`settle()`). `citations_one_per_source` now includes `name_text`; check `citations_check2` → `citations_entity_field`.
+  e2e `names.spec.js` (three names, one dropped).
+- **Why:** owner: "when adding multiple names in the edit page not every name can be given a source". Only published
+  names had dialogs, and only on the entry page.
+- **Revert:** `DROP TRIGGER entry_names_take_sources ON entry_names; DROP FUNCTION citations_to_name();
+  DELETE FROM citations WHERE name_text IS NOT NULL;` then restore the old index and check and drop the column. Revert the
+  commit's code.
+
 ### Private reference images in order, one the main; shown in the CMS (migration 189)
 - **What:** `private_images.position` (per account and work; the existing ones in the order they were added): ↑ / ↓ /
   "make main" on a work's admin page (`POST /private-images/:id/move`), the first marked "main image". The main one

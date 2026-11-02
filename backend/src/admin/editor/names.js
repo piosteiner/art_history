@@ -6,6 +6,7 @@
 //                         shared working copy see) and is shown as rows; edits in the rows are written back into it,
 //                         changes arriving in it (another editor, a restored draft) redraw the rows.
 import { ROLES, STATUSES, KINDS, KIND_LABEL, plain, hasRuby, namesToLines, splitLine } from '../../names';
+import { badgesFor } from './cites';
 
 const GROUP = /\{([^{}|]+)\|([^{}|]+)\}/g;
 const el = (tag, props = {}, ...children) => { const e = Object.assign(document.createElement(tag), props); e.append(...children); return e; };
@@ -104,6 +105,32 @@ function initRubyInputs() {
   });
 }
 
+// Each name's sources (152, 190) on the edit page: a button with its badges opens its dialog (editor/cites.js) — a
+// published name's (name:<id>, found by its text: data-name-keys) or, for one not published yet, the dialog of its text
+// (pname:…); that source waits for Publish and goes when the name is removed before.
+function sourceButton(input) {
+  const box = document.querySelector('.cite-dialogs[data-name-keys]');
+  if (!box) return [];   // a new entry: sources come with the entry's "Source" section
+  let keys = {};
+  try { keys = JSON.parse(box.dataset.nameKeys || '{}'); } catch { keys = {}; }
+  const btn = el('button', { type: 'button', className: 'cite-trigger n-cite' });
+  const update = () => {
+    const t = input.value.trim();
+    btn.hidden = !t;
+    if (!t) return;
+    const key = keys[t] || `pname:${encodeURIComponent(t)}`;
+    if (btn.dataset.forKey === key) return;
+    btn.dataset.forKey = key;
+    btn.dataset.citeLabel = `“${plain(t)}”`;
+    btn.setAttribute('aria-label', `sources of the name ${plain(t)}`);
+    btn.innerHTML = badgesFor(key);   // rendered and escaped by the server
+  };
+  input.addEventListener('input', update);
+  input.addEventListener('change', update);
+  update();
+  return [btn];
+}
+
 function initNamesEditor(ta) {
   const box = el('div', { className: 'names-editor' });
   const rows = el('div', { className: 'names-rows' });
@@ -159,7 +186,7 @@ function initNamesEditor(ta) {
     const context = el('div', { className: 'name-context' }, period, note);
     const r = el('div', { className: 'names-row' }, text, meta, context);
     const [button, panel] = readingButton(text, preview, () => lang.value.trim());
-    meta.append(button, remove);
+    meta.append(button, ...sourceButton(text), remove);
     r.append(panel, preview);
     remove.addEventListener('click', () => { r.remove(); write(); });
     for (const x of [text, lang, role, period, note]) x.addEventListener('input', write);
