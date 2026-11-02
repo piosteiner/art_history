@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-02
 
+### Era names in the glossary, emperors and kings linked (migration 187); an artist's works with their pictures
+- **What:** 187 — glossary category `calendar`; table `calendar_era_links` (era → its glossary entry, the person it is
+  named after; a table of its own so `calendar_eras` points at no entry and survives the tests' TRUNCATE … CASCADE);
+  `era_label()` parts name their `eras` with the entries' slugs (site: the era names in a date link to the glossary).
+  API: an artist's `artworks` carry `image_url` (the first image, a whole's from its first part) — the site lists them
+  with the whole picture at its own proportions, very wide ones (> 2.5 : 1) on a line of their own with the text below
+  (`worksGallery` in `views/detail-facts.ts`, `views/work-pictures.ts`). Tests: `eras.spec.js`, site "an artist's works".
+- **Why:** owner, 2026-11-02. **Revert:** `DROP TABLE calendar_era_links`; `era_label()` from 186; the category stays
+  (enum values can't be dropped) — `git revert` for the rest.
+
 ### Era dates: a month across a lunar new year, leap months (migration 186)
 - **What:** `era_label()` moved the start of every range from 1 January to the lunar new year — a month like "January
   1181" (the burning of Nara) then started after its end and failed; only ranges of ≥ 330 days are read as the lunar

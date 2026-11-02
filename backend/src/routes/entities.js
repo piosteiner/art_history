@@ -371,7 +371,11 @@ const EXTRAS = {
   artist: async (id) => ({
     artworks: (await apiPool.query(`
       SELECT w.slug, w.title, range_json(w.created, w.created_label) AS created, w.kind,
-             co.role IS NOT NULL AS co_creator, co.label AS role
+             co.role IS NOT NULL AS co_creator, co.label AS role,
+             -- its picture for the artist's page (2026-11-02: the whole work at its own proportions), a whole's from its first part
+             coalesce((SELECT i.url FROM images i WHERE i.artwork_id = w.id ORDER BY i.position, i.id LIMIT 1),
+                      (SELECT i.url FROM artworks c JOIN images i ON i.artwork_id = c.id WHERE c.parent_id = w.id
+                        ORDER BY c.part_sort NULLS LAST, c.part_number, c.id, i.position, i.id LIMIT 1)) AS image_url
       FROM artworks w
       LEFT JOIN LATERAL (SELECT 'co' AS role, string_agg(x.label, '; ' ORDER BY x.o) AS label FROM (
                           SELECT r.label, 0 AS o FROM relationships r

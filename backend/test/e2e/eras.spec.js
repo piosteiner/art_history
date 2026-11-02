@@ -7,18 +7,19 @@ const era = (cal, range) => JSON.parse(sql(`SELECT era_label('${cal}', '${range}
 const labels = (cal, range) => (era(cal, range)?.parts ?? []).map((p) => p.label);
 
 test('era years: lunar years, changes inside a year, two courts, reign years', () => {
-  expect(era('jp', '[1831-01-01,1832-01-01)')).toEqual({ calendar: 'jp', parts: [{ label: 'Tenpō 2', native: '天保2年' }], sexagenary: '辛卯', approx: false });
+  expect(era('jp', '[1831-01-01,1832-01-01)')).toEqual({ calendar: 'jp', parts: [{ label: 'Tenpō 2', native: '天保2年', eras: [{ name: 'Tenpō' }] }], sexagenary: '辛卯', approx: false });
   expect(labels('jp', '[1831-01-20,1831-01-21)')).toEqual(['Bunsei 13']);           // before the lunar new year 1831
   expect(labels('jp', '[1868-01-01,1869-01-01)')).toEqual(['Keiō 4 / Meiji 1']);
   expect(labels('jp', '[1830-01-01,1833-01-01)')).toEqual(['Bunsei 13 – Tenpō 3']);
+  expect(era('jp', '[1830-01-01,1833-01-01)').parts[0].eras.map((x) => x.name)).toEqual(['Bunsei', 'Tenpō']);   // for links (187)
   expect(labels('jp', '[0752-01-01,0753-01-01)')).toEqual(['Tenpyō-shōhō 4']);       // the Great Buddha's eye-opening
   expect(labels('jp', '[1937-06-01,1937-06-02)')).toEqual(['Shōwa 12']);
-  expect(era('jp', '[1340-01-01,1341-01-01)').parts).toEqual([{ label: 'Ryakuō 3', native: '暦応3年' },
+  expect(era('jp', '[1340-01-01,1341-01-01)').parts.map(({ eras, ...p }) => p)).toEqual([{ label: 'Ryakuō 3', native: '暦応3年' },
     { line: 'Southern Court', label: 'Engen 5 / Kōkoku 1', native: '延元5年 / 興国元年' }]);
-  expect(era('kr', '[1446-01-01,1447-01-01)').parts).toEqual([{ label: 'Sejong 28', native: '世宗 28年', hangul: '세종 28년' }]);
+  expect(era('kr', '[1446-01-01,1447-01-01)').parts).toEqual([{ label: 'Sejong 28', native: '世宗 28年', hangul: '세종 28년', eras: [{ name: 'Sejong' }] }]);
   expect(labels('kr', '[1725-01-10,1725-01-11)')).toEqual(['Gyeongjong 4']);          // Yeongjo's year 1 is the year after
   expect(labels('kr', '[1910-01-01,1911-01-01)')).toEqual(['Yunghui 4']);
-  expect(era('cn', '[1740-01-01,1741-01-01)').parts).toEqual([{ line: 'Qing', label: 'Qianlong 5', native: '乾隆5年' }]);
+  expect(era('cn', '[1740-01-01,1741-01-01)').parts).toEqual([{ line: 'Qing', label: 'Qianlong 5', native: '乾隆5年', eras: [{ name: 'Qianlong' }] }]);
   expect(era('jp', '[1201-01-01,1301-01-01)')).toBeNull();                           // a century: none
   // a month across a lunar new year (186): "January 1181" — the burning of Nara before Jishō 5 began on the 24th
   expect(labels('jp', '[1181-01-01,1181-02-01)')).toEqual(['Jishō 4–5']);
