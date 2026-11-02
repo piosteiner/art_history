@@ -35,7 +35,10 @@ function scoreSql(nameExpr, altExpr = null) {
 // expression of the <table>_alt_trgm index), plus an artist's sort name.
 function altSql(t, alias) {
   const parts = [`name_alt_text(${alias}.${t.name}_ruby, ${alias}.names)`,
-    t.fields.sort_name && `${alias}.sort_name`].filter(Boolean);
+    t.fields.sort_name && `${alias}.sort_name`,
+    // a source by its short form, as cited ("Mason 2005", "Kimpel Suckale 1995" — src/bibliography.js baseSiglum)
+    t.type === 'source' && `concat_ws(' ', ${alias}.siglum, (SELECT string_agg(split_part(x, ',', 1), ' ')
+      FROM unnest(coalesce(nullif(${alias}.authors, '{}'), ${alias}.editors)) x), ${alias}.year)`].filter(Boolean);
   return parts.length ? `nullif(concat_ws(' · ', ${parts.join(', ')}), '')` : null;
 }
 

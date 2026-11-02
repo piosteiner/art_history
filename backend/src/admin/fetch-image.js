@@ -87,7 +87,7 @@ async function fetchPublic(address, { referer = null } = {}) {
 }
 
 /** The pictures a page shows (og:image, <img>, links to image files), absolute, one per picture — its largest size. */
-function picturesOn(html, base) {
+function picturesOn(html, base, more = []) {
   const found = [];
   const add = (u) => {
     try {
@@ -97,7 +97,8 @@ function picturesOn(html, base) {
   };
   for (const m of html.matchAll(/<meta[^>]+(?:property|name)=["'](?:og:image|twitter:image)["'][^>]*content=["']([^"']+)["']/gi)) add(m[1]);
   for (const m of html.matchAll(/<img[^>]+src=["']([^"']+)["']/gi)) add(m[1]);
-  for (const m of html.matchAll(/(?:href|data-src|data-full|data-large|data-zoom-image)=["']([^"']+\.(?:jpe?g|png|webp|gif|tiff?)(?:\?[^"']*)?)["']/gi)) add(m[1]);
+  for (const u of more) add(u);
+  for (const m of html.matchAll(/(?:href|data-src|data-full|data-large|data-zoom-image|data-[a-z-]*-src)=["']([^"']+\.(?:jpe?g|png|webp|gif|tiff?)(?:\?[^"']*)?)["']/gi)) add(m[1]);
   const pictures = found.filter((u) => /\.(jpe?g|png|webp|gif|tiff?)(\?|$)/i.test(u) && !/(logo|icon|sprite|banner|button|arrow|copy\.png|loading|spacer|blank)\b/i.test(u));
   // one per picture: …-S / -M / -L, _s / _m / _l, small / medium / large → the largest
   const RANK = { s: 1, small: 1, thumb: 0, t: 0, m: 2, medium: 2, l: 3, large: 3, xl: 4, original: 5, o: 5 };
@@ -111,4 +112,27 @@ function picturesOn(html, base) {
   return [...best.values()].slice(0, 40);
 }
 
-module.exports = { fetchPublic, picturesOn, blocked, FetchError, MAX_BYTES };
+// Pictures a page loads only on request: the Shozokan's gallery shows five and fetches the others with "+"
+// (/collection/?at=moreArtpic&id=…&artpic_page_number=N&get_type=sub, five per page, JSON) → their addresses, all sizes
+// (picturesOn keeps the largest). A page without such a gallery: none.
+async function galleryPictures(html, base) {
+  const m = /class="detailMore"[^>]*data-id="(\d+)"/.exec(html);
+  if (!m || !html.includes('moreArtpic')) return [];
+  const out = [];
+  for (let n = 1; n <= 20; n++) {
+    let list;
+    try {
+      const got = await fetchPublic(new URL(`/collection/?at=moreArtpic&id=${m[1]}&artpic_page_number=${n}&get_type=sub`, base).href, { referer: base });
+      const data = JSON.parse(got.body.toString('utf8'));
+      list = data && data.status === 'OK' && Array.isArray(data.result) ? data.result : [];
+    } catch { break; }
+    for (const r of list) {
+      for (const p of [r.art_image_path, r.art_L_image_path]) if (typeof p === 'string') out.push(p);
+      if (typeof r.art_image_path === 'string') out.push(r.art_image_path.replace(/-[SM](\.\w+)$/, '-L$1'));
+    }
+    if (list.length < 5) break;
+  }
+  return out;
+}
+
+module.exports = { fetchPublic, picturesOn, galleryPictures, blocked, FetchError, MAX_BYTES };

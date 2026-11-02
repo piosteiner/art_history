@@ -105,6 +105,9 @@ test('a reference image from a link: an image, a page’s pictures to choose fro
   const fromPage = await post({ url: page.pictures[0], page: page.page });
   expect(fromPage.status()).toBe(201);
   expect(sql("SELECT count(*) FROM private_images i JOIN artworks a ON a.id = i.artwork_id WHERE a.slug = 'test-private-images' AND i.source_url = 'https://museum.test/object.html'")).toBe('1');
+  // a gallery that loads the rest on "+" (the Shozokan's): all its pictures, the largest size of each
+  const gallery = await (await post({ url: 'https://museum.test/gallery.html' })).json();
+  expect(gallery.pictures).toEqual([1, 2, 3, 4, 5, 6].map((i) => `https://museum.test/image_files/${i}-L.jpg`));
   // the page shows where it came from; the chooser's preview works
   await userA.goto('/artworks/test-private-images');
   await expect(userA.locator('.private-images .image-item a', { hasText: 'museum.test' }).first()).toBeVisible();

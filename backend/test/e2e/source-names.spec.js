@@ -35,3 +35,11 @@ test('the source form shows how it will be cited, and warns about a name without
   await expect(cited).toContainText('Jane Testportal, Test Korea Book');
   await expect(cited.locator('.flash.warn')).toHaveCount(0);
 });
+
+// a source is found as it is cited: "Testportal 2001" (the surnames and the year), not only by its title or slug
+test('a source is found by its short reference in the pickers', async ({ userA }) => {
+  sql(`INSERT INTO bibliography (slug, kind, name, authors, editors, year) VALUES
+         ('test-names-right', 'book', 'Test Other Book', '{"Testportal, Jane"}', '{}', '2001')`);
+  const res = await userA.request.get('/lookup?q=testportal+2001&types=source');
+  expect((await res.json()).map((r) => r.slug)).toContain('test-names-right');
+});

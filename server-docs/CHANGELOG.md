@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-02
 
+### Sources found by their short reference; a page's whole gallery for reference images
+- **What:** the pickers find a source by its short reference as cited: the surnames of its authors (else editors) plus
+  the year, and its own siglum. These are added to the "other names" a source is searched by (`altSql()` in
+  `src/admin/match.js`), so "Mason 2005" finds *History of Japanese Art*. Reference images from a link: a page that
+  loads the rest of its gallery on "+" (the Shozokan, `?at=moreArtpic`, five per page) gives all its pictures
+  (`galleryPictures()` in `src/admin/fetch-image.js`); `data-…-src` attributes count too. SZK000142: 5 → 12.
+  e2e `source-names.spec.js`, `private-images.spec.js`.
+- **Why:** owner: "the history of japanese art cant be found with mason 2005"; "only 5 images are found … and not the full 12".
+- **Revert:** revert the commit (code only).
+
 ### A source for every name on the edit page, also before Publish (migration 190)
 - **What:** each row of the names editor has a sources button. A published name opens its row's dialog
   (`name:<id>`, found by its text); a name typed in the form gets a dialog from the server on the first click

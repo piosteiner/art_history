@@ -100,6 +100,16 @@ function handle(req, res) {
     return res.end('<html><head><meta property="og:image" content="painting.png"></head><body><img src="logo.png">'
       + '<img src="painting.png"><a href="painting-M.png">M</a></body></html>');
   }
+  if (url.pathname === '/museum/gallery.html') {   // the Shozokan's gallery: one shown, the others behind "+"
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    return res.end('<html><body><img src="/image_files/1-M.jpg" data-image-viewer-src="/image_files/1-L.jpg">'
+      + '<span class="detailMore" data-id="7" data-artpic_page_number="2"></span><script>$.get("/collection/?at=moreArtpic")</script></body></html>');
+  }
+  if (url.pathname === '/museum/collection/' && p.get('at') === 'moreArtpic') {
+    const n = Number(p.get('artpic_page_number'));
+    const ids = [[1, 2, 3, 4, 5], [6]][n - 1] || [];
+    return json({ status: 'OK', result: ids.map((i) => ({ id: i, art_image_path: `/image_files/${i}-S.jpg` })) });
+  }
   if (url.pathname === '/museum/painting.png') {
     return require('sharp')({ create: { width: 600, height: 400, channels: 3, background: { r: 180, g: 120, b: 60 } } }).png().toBuffer()
       .then((png) => { res.writeHead(200, { 'Content-Type': 'image/png' }); res.end(png); });
