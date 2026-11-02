@@ -243,6 +243,11 @@ await write('roadmap/index.html', page(template, {
   body: '<section class="page roadmap-page" lang="de-CH" data-prerendered><h1>Roadmap</h1><p>Die Roadmap lädt mit der Seite.</p></section>',
 }));
 urls.push(`${SITE}/roadmap/`);
+// the quiz: its menu as a page of its own; the games (/quiz/<kind>) load with the app
+await write('quiz/index.html', page(template, {
+  title: 'Quiz · Art History', url: `${SITE}/quiz/`, description: 'Quizzes on the collection: name a picture, find an artist’s works, movements and periods, glossary terms.',
+}));
+urls.push(`${SITE}/quiz/`);
 // the search page: served with 200 (not the 404 shell), but kept out of search engines — results follow the query
 await write('search/index.html', page(template, { title: 'Search · Art History', description: SITE_DESCRIPTION, noindex: true }));
 

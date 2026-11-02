@@ -46,6 +46,9 @@ export function mountAccount(footer: HTMLElement) {
   who.then((name) => { if (!name) remember(false); show(name); });
 }
 
+/** The logged-in account's name, or null (visitors: at once, without asking the admin host). */
+export const account = () => who;
+
 /** A work's private reference images for the logged-in account (none for visitors). */
 export const privateImages = (slug: string): Promise<PrivateImage[]> =>
   who.then((name) => (name ? getPrivateImages(slug).then((x) => x ?? []).catch(() => []) : []));

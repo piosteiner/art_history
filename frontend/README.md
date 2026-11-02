@@ -293,6 +293,14 @@ slash GitHub Pages serves a folder's page at), small forwarding pages at the old
   entries are picked; the routes stay drawn underneath.
 - Prices: `chf_today` (always null until rates are loaded) is not shown; AFRF reads "French francs (before 1960)".
 
+## Quiz (API /v1/quiz, 2026-11-02)
+`/quiz` = the games (menu link "Quiz"), `/quiz/<picture|artist|movement|glossary>?mode=…` one game (`src/views/quiz.ts`).
+Rounds come with their answers; typed ones are compared in `src/quiz-match.ts` (folded like the searches, a leading
+article off, the better of letters — typos — and words; ≥ 0.85 right, ≥ 0.6 half; a year inside the work's dates 1,
+≤ 10 years ½, ≤ 25 ¼). Artist names also by family name or last word (Hokusai). The best result per game stays in
+localStorage (`arthistory.quiz.best`). Logged in, the picture quiz offers the owner's private images (`?mine=1` half,
+`?mine=only`). Wikimedia thumbnails only at its standard widths (500, 960).
+
 ## Wishes for the backend
 - **Maps and networks by number (085):** `/v1/map/<plural>/<number>` and `/v1/graph/<plural>/<number>` answer 404, so an
   entry opened by its number loads its map only after the entry (to learn the slug) — one round trip later.

@@ -1,7 +1,7 @@
 // The only module that talks to the backend. Everything else calls these functions, never fetch().
 import { fold } from './fold';
 import type {
-  AsOfDetail, DetailByPlural, EntryHint, EntityMap, EntityType, FeaturedView, Graph, History, NetworkHands, NetworkPath, ProvenanceNumberHit,
+  AsOfDetail, DateRange, DetailByPlural, EntryHint, EntityMap, EntityType, FeaturedView, Graph, History, NetworkHands, NetworkPath, ProvenanceNumberHit,
   ClustersMap, EncounterRow, ItemByPlural, List, PlacesMap, Plural, SharedHands, TextHit,
   EventsMap, PresenceMap, ProvenanceMap, RelationshipType, SearchHit, SitesMap, Periods,
 } from './types';
@@ -300,3 +300,41 @@ export const getPrivateImages = (slug: string) =>
 export const logOut = () => account<null>('/logout', { method: 'POST' });
 /** The CMS login, back to `next` (an address of this site) afterwards. */
 export const loginUrl = (next: string) => (ADMIN ? `${ADMIN}/login?${new URLSearchParams({ next })}` : null);
+
+// The quiz (API /v1/quiz, backend src/routes/quiz.js): a new draw every time — never from the cache above.
+async function fresh<T>(path: string, params: Params = {}): Promise<T> {
+  const qs = new URLSearchParams();
+  for (const [k, v] of Object.entries(params)) if (v !== undefined && v !== null && v !== '') qs.set(k, String(v));
+  const res = await fetch(`${BASE}${path}${qs.size ? `?${qs}` : ''}`, { headers: { Accept: 'application/json' }, cache: 'no-store' });
+  const body = await res.json().catch(() => null);
+  if (!res.ok) throw new ApiError(res.status, body?.error ?? 'internal_error', body?.message ?? res.statusText, body);
+  remember(body);
+  return body as T;
+}
+export interface QuizWork {
+  slug: string; public_id: number; title: string; title_en: string | null; image_url: string; credit: string | null; license: string | null;
+  created: DateRange | null; creator: string | null; correct?: boolean;
+}
+export interface QuizNamed { slug: string; public_id: number; name: string; names: string[] }
+export interface QuizPicture {
+  slug: string; public_id: number; title: string; titles: string[]; created: DateRange | null; image_url: string | null;
+  credit: string | null; license: string | null; attribution: string | null;
+  creators: (QuizNamed & { family_name: string | null; main: boolean })[]; movements: QuizNamed[];
+}
+export interface QuizMovement { slug: string; public_id: number; name: string; kind: string; period: DateRange | null }
+export type QuizMovementRound =
+  | { kind: 'pick'; movement: QuizMovement; options: QuizWork[] }
+  | { kind: 'name'; works: QuizWork[]; answer: string; options: QuizMovement[] };
+export interface QuizTerm { slug: string; public_id: number; name: string; category: string; definition: string }
+export type QuizTermRound =
+  | { kind: 'definition' | 'term'; term: QuizTerm; answer: string; options: QuizTerm[] }
+  | { kind: 'describe'; term: QuizTerm };
+export interface QuizArtistRound { artist: { slug: string; public_id: number; name: string; dates: string | null }; options: QuizWork[] }
+
+export const getQuizPictures = (n: number, works?: string[]) =>
+  fresh<{ data: QuizPicture[]; movements: string[] }>('/quiz/image', { n, works: works?.join(',') });
+export const getQuizArtists = (n: number) => fresh<{ data: QuizArtistRound[] }>('/quiz/artist', { n });
+export const getQuizMovements = (n: number, mode: string) => fresh<{ data: QuizMovementRound[] }>('/quiz/movement', { n, mode });
+export const getQuizGlossary = (n: number, mode: string) => fresh<{ data: QuizTermRound[] }>('/quiz/glossary', { n, mode });
+/** The logged-in account's private reference images, one per work (for the picture quiz) — null when not logged in. */
+export const getQuizPrivateImages = () => account<{ images: { slug: string; url: string }[] }>('/quiz/private-images').then((r) => r?.images ?? null);

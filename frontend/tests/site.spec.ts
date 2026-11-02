@@ -3096,3 +3096,77 @@ test('search page: a whole is marked as one, with its parts and where they are; 
   await expect(single).toContainText('Now in: Museum A');
   await expect(single.locator('.text-hit-passage')).toContainText('passage');
 });
+
+// The quiz (API /v1/quiz): the rounds come with their answers and are checked on the site — mocked here, so the
+// answers are known. Typed answers count in any of the work's names, with typos; a year inside its dates.
+const PNG = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==';
+const quizWork = (slug: string, title: string, correct: boolean) => ({ slug, public_id: 1, title, title_en: null, image_url: PNG,
+  credit: 'Test credit', license: 'Public domain', created: { label: '1889', from: null, to: null, from_year: 1889, to_year: 1889 }, creator: 'Someone', correct });
+
+test('quiz: name a picture — typed answers in any of its names, with typos, a year inside its dates', async ({ page }) => {
+  const errors = noErrors(page);
+  await page.route(/\/v1\/quiz\/image(\?.*)?$/, (r) => r.fulfill({ json: { movements: ['Post-Impressionism', 'Impressionism'], data: [{
+    slug: 'the-starry-night', public_id: 100001, title: 'The Starry Night', titles: ['The Starry Night', 'Sternennacht'],
+    created: { label: 'June 1889', from: '1889-06-01', to: '1889-06-30', from_year: 1889, to_year: 1889 },
+    image_url: PNG, credit: 'Vincent van Gogh', license: 'Public domain', attribution: null,
+    creators: [{ slug: 'vincent-van-gogh', public_id: 100002, name: 'Vincent van Gogh', family_name: 'van Gogh', names: ['Vincent van Gogh'], main: true }],
+    movements: [{ slug: 'post-impressionism', public_id: 100003, name: 'Post-Impressionism', names: ['Post-Impressionism'] }],
+  }] } }));
+  await page.goto('/quiz');
+  await expect(page.locator('main h1')).toHaveText('Quiz');
+  await expect(page.locator('.quiz-card h2')).toHaveText(['Name the picture', 'Whose works?', 'Movements and periods', 'Glossary']);
+  await expect(page.locator('#nav a.current')).toHaveText('Quiz');
+  await page.locator('.quiz-card', { hasText: 'Name the picture' }).getByRole('link', { name: 'Start' }).click();
+  await expect(page).toHaveURL(/\/quiz\/picture$/);
+  await expect(page.locator('.quiz-figure figcaption')).toHaveText('Credit shown after answering');   // the credit names the artist
+  await page.fill('[name=title]', 'sternenacht');
+  await page.fill('[name=artist]', 'Van Gog');
+  await page.fill('[name=year]', 'c. 1889');
+  await page.fill('[name=movement]', 'post impressionism');
+  await page.getByRole('button', { name: 'Check' }).click();
+  const rows = page.locator('.quiz-answers tbody tr');
+  await expect(rows).toHaveCount(4);
+  await expect(rows.locator('.quiz-ok')).toHaveCount(4);
+  await expect(rows.first()).toContainText('Sternennacht');               // the name it matched
+  await expect(page.locator('.quiz-figure figcaption')).toHaveText('Vincent van Gogh · Public domain');
+  await page.getByRole('button', { name: 'See the result' }).click();
+  await expect(page.locator('.quiz-total')).toHaveText('4 of 4 points · 100%');
+  await expect(page.locator('.quiz-review a')).toHaveAttribute('href', /\/artworks\/(100001\/)?the-starry-night$/);
+  // the best result stays in this browser
+  await page.goto('/quiz');
+  await expect(page.locator('.quiz-card', { hasText: 'Name the picture' })).toContainText('best 100%');
+  expect(errors).toEqual([]);
+});
+
+test('quiz: an artist’s works and a glossary term — picks marked right, missed and wrong; one choice of four', async ({ page }) => {
+  const errors = noErrors(page);
+  await page.route(/\/v1\/quiz\/artist(\?.*)?$/, (r) => r.fulfill({ json: { data: [{
+    artist: { slug: 'claude-monet', public_id: 100010, name: 'Claude Monet', dates: '1840 – 1926' },
+    options: [quizWork('a', 'Water Lilies', true), quizWork('b', 'Haystacks', true), quizWork('c', 'Le Cirque', false), quizWork('d', 'Irène', false)],
+  }] } }));
+  await page.goto('/quiz/artist');
+  await expect(page.locator('.quiz-question')).toContainText('Which of these are by Claude Monet (1840 – 1926)?');
+  const tiles = page.locator('.quiz-tile');
+  await tiles.nth(0).click();
+  await tiles.nth(2).click();
+  await expect(tiles.nth(0)).toHaveAttribute('aria-pressed', 'true');
+  await page.getByRole('button', { name: 'Check' }).click();
+  await expect(tiles.nth(0)).toHaveClass(/is-right/);
+  await expect(tiles.nth(1)).toHaveClass(/is-missed/);
+  await expect(tiles.nth(2)).toHaveClass(/is-wrong/);
+  await expect(page.locator('.quiz-after')).toContainText('1 of 2 found, 1 picked wrongly.');
+  await expect(page.locator('.quiz-caption').first()).toContainText('Water Lilies');
+
+  await page.route(/\/v1\/quiz\/glossary(\?.*)?$/, (r) => r.fulfill({ json: { data: [{ kind: 'term',
+    term: { slug: 'katsura-wood', public_id: 100020, name: 'katsura wood', category: 'material', definition: 'The wood of the … tree.' }, answer: 'katsura-wood',
+    options: ['hemp', 'katsura wood', 'lacquer', 'satin'].map((name) => ({ slug: name.replace(' ', '-'), public_id: 1, name, category: 'material', definition: '' })) }] } }));
+  await page.goto('/quiz/glossary?mode=term');
+  await expect(page.locator('main h1')).toContainText('Definition → term');
+  await expect(page.locator('.quiz-definition')).toHaveText('The wood of the … tree.');
+  await page.getByRole('button', { name: 'lacquer' }).click();
+  await expect(page.getByRole('button', { name: 'katsura wood' })).toHaveClass(/is-right/);
+  await expect(page.getByRole('button', { name: 'lacquer' })).toHaveClass(/is-wrong/);
+  await page.getByRole('button', { name: 'See the result' }).click();
+  await expect(page.locator('.quiz-total')).toHaveText('0 of 1 points · 0%');
+  expect(errors).toEqual([]);
+});
