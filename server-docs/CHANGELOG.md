@@ -4,6 +4,27 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-02
 
+### Content: Wikidata facts for 169 artists; the Tale of Genji and its world as literary works
+- **What:**
+  - **169 artists without a region**, filled with `fill-from-wikidata.js --user=pio`: 154 filled, 14 had nothing,
+    Mu Qi was refused (Wikidata's dates put his death before his birth).
+    - Added: places (born/died/worked/lived in), nationality, teachers, movements, schools, authority numbers — only
+      links to entries we have, each cited W.
+    - Works without a region 208 → 73; artists 176 → 31 (mostly Korean painters: no polity "South Korea" yet).
+  - **The Tale of Genji (Q8269)** as a literary work. Its glossary entry had been deleted by the owner.
+    - Its 54 chapters in the usual numbering (Wakana in two parts; 52 with their Wikidata items), names with
+      readings, and a summary after Mason pp. 112, 116–118.
+    - The Diary of Lady Murasaki (Q772766).
+    - Yoroboshi, Sonezaki Shinjū and Kanjinchō converted from the glossary (`convert_entry`).
+  - **Authors:** Chikamatsu Monzaemon and Kanze Motomasa from Wikidata; Namiki Gohei III by hand.
+  - **Kanjinchō's picture** is Kunisada's print of January 1852, now an artwork in the National Diet Library. Utagawa
+    Kunisada and the NDL are new from Wikidata.
+  - **Links:** `illustrates` (Genji emaki → the tale, Kashiwagi, Minori; Sanraku → Aoi; Seisenin → Momiji no Ga and
+    Hatsune; Gotō scroll → the diary; Kunisada → Kanjinchō) and `inspired_by` (Katsura → Genji), each with Mason's
+    page.
+- **Why:** owner 2026-11-02 ("go over the 190 artists and try to fill more information"; literary works as a type).
+- **Revert:** audit_log (source `script`/`convert`); the History page restores entries one by one.
+
 ### Literary works — a type of its own (migrations 192, 193)
 - **What:**
   - **New type `literature`:** table `literary_works` with names (furigana), kind, `written`, chapters as parts
