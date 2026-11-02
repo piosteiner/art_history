@@ -302,6 +302,19 @@ localStorage (`arthistory.quiz.best`). Logged in, every game comes from the admi
 `api.ts`) and includes works with only the account's private images (`own`: shown as they are, no thumbnail service);
 `/quiz/picture?mine=only` = those images only. Wikimedia thumbnails only at its standard widths (500, 960).
 
+Regions (API 191): chips above the games ("Works from: all regions · Europe 365 · East Asia 344", regions with ≥ 12
+works), remembered in localStorage (`arthistory.quiz.region`), sent as `?region=` to every game but the glossary and
+shown in the game's title; without one, the API keeps each round in its artist's or movement's region.
+
+## Literary works (API 192/193, 2026-11-02)
+`/literary-works` (menu group "Literature and reference", type `literature`, label "Literary work"): the list shows kind,
+authors, the whole a chapter belongs to ("no. 5 in The Tale of Genji"), parts and how many works of art illustrate it.
+The page (`case 'literature'` in `views/detail-facts.ts`): Written (with its era date), Kind, Author(s), Part of; then
+"Works of art illustrating it" as cards (`parts-grid`, the chapter named under each), the chapters (`.lit-parts`), and
+"Editions and translations" (bibliography entries with `edition_of`). Relationships of category `literature` (written
+by, illustrates, inspired by, based on) form their own section and graph category. No map. Prerendered as
+schema.org `CreativeWork` / `Chapter`.
+
 ## Timeline names and the owner's previews (2026-11-02)
 A timeline name longer than its column is clipped and slides on hover (`timeline.ts`, `.row-label-long`). Logged in,
 works without a public picture show the owner's first reference image wherever previews appear (`previewImg()` /
