@@ -65,6 +65,11 @@ test('the site sees its own account’s reference images, nobody else’s', asyn
   expect(own.images[0]).toMatchObject({ locator: 'p. 7, fig. 3', width: 40 });
   expect(own.images[0].url).toMatch(/\/private-images\/\d+$/);
   expect((await (await userB.request.get('/site/artworks/test-private-images/private-images', asSite)).json()).images).toEqual([]);
+  // previews on the site (2026-11-02): works with only this account's images, and a small rendition
+  const thumbs = (await (await userA.request.get('/site/thumbs', asSite)).json()).images;
+  expect(thumbs['test-private-images']).toBe(own.images[0].url);
+  expect((await (await userB.request.get('/site/thumbs', asSite)).json()).images['test-private-images']).toBeUndefined();
+  expect((await request.get('/site/thumbs', asSite)).status()).toBe(401);
   // the picture quiz of this account (src/routes/quiz.js): the work with its private image; not another account's
   const quiz = (await (await userA.request.get('/site/quiz/image?n=20&mine=only', asSite)).json()).data;
   expect(quiz.find((r) => r.slug === 'test-private-images')).toEqual(expect.objectContaining({ image_url: own.images[0].url, own: true }));

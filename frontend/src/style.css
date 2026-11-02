@@ -1181,3 +1181,24 @@ span.quiz-tile { cursor: default; }
 
 /* a date also in the calendar of the entry's country (API 185): "· Tenpō 2 天保2年 · 辛卯" after the date */
 .era { color: var(--muted); }
+
+/* an artist's works (views/detail-facts.ts worksGallery): each picture whole, at its own proportions, the text beside it;
+   a very wide one on its own line, the text below (views/work-pictures.ts) */
+.work-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.1rem; }
+.work-row { display: grid; grid-template-columns: auto minmax(10rem, 1fr); gap: .5rem 1rem; align-items: start; }
+.work-row.no-picture { grid-template-columns: 1fr; }
+.work-picture { display: block; line-height: 0; }
+.work-picture img { height: 200px; width: auto; max-width: min(28rem, 60vw); object-fit: contain; border-radius: 3px; background: var(--line); }
+.work-row.wide { grid-template-columns: 1fr; }
+.work-row.wide .work-picture img { width: 100%; height: auto; max-width: none; }
+.work-text { min-width: 0; padding-top: .2rem; }
+.work-text > a { font-weight: 600; }
+@media (max-width: 720px) {
+  .work-row { grid-template-columns: 1fr; }
+  .work-picture img { height: auto; width: auto; max-width: 100%; max-height: 260px; }
+  .work-row.wide .work-picture img { width: 100%; max-height: none; }
+}
+
+/* a timeline name longer than its column (timeline.ts): clipped, left-aligned, slides on hover */
+.row-label-long { text-anchor: start; }
+@media (prefers-reduced-motion: reduce) { .row-label-long { transition: none !important; } }

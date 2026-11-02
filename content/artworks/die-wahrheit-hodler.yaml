@@ -1,0 +1,110 @@
+public_id: 108856
+title_lang: de
+title: Die Wahrheit
+names:
+  - lang: en
+    role: translation
+    text: Truth
+  - lang: de
+    role: former
+    text: Die Wahrheit. Zweite Fassung
+creator: ferdinand-hodler
+created: 1903
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [208, 294.5]
+institution: kunsthaus-zurich
+inventory_number: "2162"
+web_url: https://collection.kunsthaus.ch/en/collection/item/1113/
+on_loan: true
+on_loan_since: 1930
+provenance_status: a_clear
+provenance_status_note: "Kunsthaus Zürich: «kein NS-verfolgungsbedingt entzogenes Kulturgut»"
+wikidata_id: Q131586081
+metadata:
+  sources: [Wikidata Q131586081 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e8/Ferdinand_Hodler_-_Die_Wahrheit_-_2162_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Die_Wahrheit_-_2162_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/carl-reininghaus
+    ended: 1930
+    place: vienna
+    label: Sammlung Reininghaus
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1113/
+        note: "Kunsthaus Zürich, Provenienz: «o.D. - 1930, Sammlung Reininghaus (Sammlung), Wien» — Quelle: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 282."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: place/zurich
+    acquired: 1930
+    method: purchase
+    place: zurich
+    label: Stadt Zürich (collection)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1113/
+        note: "Kunsthaus Zürich, Provenienz: «1930, Stadt Zürich (Sammlung), Zürich, Kauf» — Quelle: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/kunsthaus-zurich
+    role: custodian
+    acquired: 1930
+    place: zurich
+    label: on loan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1113/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1930, Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum), Zürich, Leihgabe» — Quelle: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1113/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1113/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1113/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  created:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q131586081
+    - url: https://collection.kunsthaus.ch/de/collection/item/1113/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  creator:
+    - accessed: 2026-11-02
+      property: P170
+      wikidata: Q131586081
+    - url: https://collection.kunsthaus.ch/de/collection/item/1113/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  materials:
+    - accessed: 2026-11-02
+      property: P186
+      wikidata: Q131586081
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1113/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  institution:
+    - accessed: 2026-11-02
+      property: P195
+      wikidata: Q131586081
+    - url: https://collection.kunsthaus.ch/de/collection/item/1113/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  inventory_number:
+    - accessed: 2026-11-02
+      property: P217
+      wikidata: Q131586081
+    - url: https://collection.kunsthaus.ch/de/collection/item/1113/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02

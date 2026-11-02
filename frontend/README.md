@@ -302,7 +302,18 @@ localStorage (`arthistory.quiz.best`). Logged in, every game comes from the admi
 `api.ts`) and includes works with only the account's private images (`own`: shown as they are, no thumbnail service);
 `/quiz/picture?mine=only` = those images only. Wikimedia thumbnails only at its standard widths (500, 960).
 
+## Timeline names and the owner's previews (2026-11-02)
+A timeline name longer than its column is clipped and slides on hover (`timeline.ts`, `.row-label-long`). Logged in,
+works without a public picture show the owner's first reference image wherever previews appear (`previewImg()` /
+`ownThumb()` in `html.ts`, loaded by `account.ts`; admin host `/site/thumbs`).
+
+## An artist's works (2026-11-02)
+The artist's page lists the works with their whole picture at its own proportions beside title, date and type
+(`worksGallery` in `views/detail-facts.ts`); a very wide picture (> 2.5 : 1, `WIDE`) takes a line of its own with
+the text below and a sharper rendition (`views/work-pictures.ts`); on a phone every text is below its picture.
+
 ## Era dates (API 185)
+The era names link to their glossary entries (API 187, `eras` of each part; `eraNames()`).
 Entry pages of works, artists, people and events from Japan, Korea or China show their dates also in that calendar,
 after the date: "c. 1831 · Bunsei 13 – Tenpō 3 文政13年–天保3年", "1446 · Sejong 28 세종 28년 · 丙寅" (`withEra()` in
 `views/detail-facts.ts`, class `.era`, the native text with its `lang`; Korean in hangul with the hanja as title;

@@ -1,0 +1,108 @@
+public_id: 108859
+title_lang: de
+title: Selbstbildnis
+names:
+  - lang: en
+    role: translation
+    text: Self-Portrait
+  - lang: fr
+    role: translation
+    text: Autoportrait
+creator: ferdinand-hodler
+created: 1892
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [33, 23]
+institution: kunsthaus-zurich
+inventory_number: "1140"
+web_url: https://collection.kunsthaus.ch/en/collection/item/1794/
+on_loan: true
+on_loan_since: 1917
+provenance_status: a_clear
+provenance_status_note: "Kunsthaus Zürich: «kein NS-verfolgungsbedingt entzogenes Kulturgut»"
+wikidata_id: Q131585611
+metadata:
+  sources: [Wikidata Q131585611 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6c/Ferdinand_Hodler_-_Selbstbildnis_-_1140_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Selbstbildnis_-_1140_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/daniel-baud-bovy
+    ended: 1917
+    place: geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1794/
+        note: "Kunsthaus Zürich, Provenienz: «o.D. – 1917, Daniel Baud-Bovy (Sammler/-in), Genf»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: place/canton-of-zurich
+    acquired: 1917
+    place: zurich
+    label: Kanton Zürich (collection), inventory no. 1060
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1794/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1917, Kanton Zürich (Sammlung), Zürich, Inv.-Nr. 1060» — Quelle: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 278; ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/kunsthaus-zurich
+    role: custodian
+    acquired: 1917
+    place: zurich
+    label: on loan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1794/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1917, Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum), Zürich, Leihgabe» — Quelle: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1794/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1794/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1794/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  created:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q131585611
+    - url: https://collection.kunsthaus.ch/de/collection/item/1794/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  creator:
+    - accessed: 2026-11-02
+      property: P170
+      wikidata: Q131585611
+    - url: https://collection.kunsthaus.ch/de/collection/item/1794/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  materials:
+    - accessed: 2026-11-02
+      property: P186
+      wikidata: Q131585611
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1794/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  institution:
+    - accessed: 2026-11-02
+      property: P195
+      wikidata: Q131585611
+    - url: https://collection.kunsthaus.ch/de/collection/item/1794/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  inventory_number:
+    - accessed: 2026-11-02
+      property: P217
+      wikidata: Q131585611
+    - url: https://collection.kunsthaus.ch/de/collection/item/1794/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02

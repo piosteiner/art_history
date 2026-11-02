@@ -1,0 +1,122 @@
+public_id: 108868
+title_lang: de
+title: Anbetung
+names:
+  - lang: de
+    role: alternative
+    text: Anbetung (Knabe kniend, gross)
+  - lang: en
+    role: translation
+    text: Adoration
+  - lang: de
+    role: former
+    text: Anbetung II
+creator: ferdinand-hodler
+created: 1894
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [80, 101]
+institution: kunsthaus-zurich
+inventory_number: "1043"
+web_url: https://collection.kunsthaus.ch/en/collection/item/1681/
+on_loan: true
+on_loan_since: 1914
+provenance_status: a_clear
+provenance_status_note: "Kunsthaus Zürich: «kein NS-verfolgungsbedingt entzogenes Kulturgut»"
+wikidata_id: Q131586559
+metadata:
+  sources: [Wikidata Q131586559 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7f/Ferdinand_Hodler_-_Anbetung_-_1043_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Anbetung_-_1043_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/oscar-miller
+    acquired: 1897-11
+    ended: 1914
+    method: purchase
+    place: biberist
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1681/
+        note: "Kunsthaus Zürich, Provenienz: «11.1897 – 1914, Oscar Miller (*1862, +1934 Bern), Biberist, Kauf» — Quelle: Bätschmann/Müller 2017 III.1225, http://www.ferdinand-hodler.ch/Werke.aspx?id=9905410 (06.01.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/gottfried-keller-stiftung
+    acquired: 1914
+    place: bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1681/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1914, Gottfried Keller-Stiftung (Sammlung), Bundesamt für Kultur, Bern» — Quelle: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/kunsthaus-zurich
+    role: custodian
+    acquired: 1914
+    place: zurich
+    label: on loan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1681/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1914, Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum), Zürich, Leihgabe» — Quelle: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/masi-lugano
+    role: custodian
+    acquired: 1987
+    place: lugano
+    label: on loan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1681/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1987, MASILugano (Museo d’arte della Svizzera italiana), Lugano, Leihgabe»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1681/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1681/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1681/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  created:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q131586559
+    - url: https://collection.kunsthaus.ch/de/collection/item/1681/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  creator:
+    - accessed: 2026-11-02
+      property: P170
+      wikidata: Q131586559
+    - url: https://collection.kunsthaus.ch/de/collection/item/1681/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  materials:
+    - accessed: 2026-11-02
+      property: P186
+      wikidata: Q131586559
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1681/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  institution:
+    - accessed: 2026-11-02
+      property: P195
+      wikidata: Q131586559
+    - url: https://collection.kunsthaus.ch/de/collection/item/1681/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  inventory_number:
+    - accessed: 2026-11-02
+      property: P217
+      wikidata: Q131586559
+    - url: https://collection.kunsthaus.ch/de/collection/item/1681/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02

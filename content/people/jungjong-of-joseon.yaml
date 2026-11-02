@@ -1,0 +1,59 @@
+public_id: 108949
+name: Jungjong of Joseon
+names:
+  - lang: ko
+    role: original
+    text: 이역
+  - Li Yi
+  - Zhongzong
+  - Huiwenzhaowuqinrenchengxiao
+  - Gongxi
+  - Gongxihuiwenzhaowuqinrenchengxiaodaiwang
+  - Letian
+  - Jingling
+  - lang: nl
+    role: translation
+    text: Jungjong van Joseon
+  - lang: fr
+    role: translation
+    text: Jungjong
+  - lang: it
+    role: translation
+    text: Jungjong di Joseon
+  - lang: ja
+    role: translation
+    text: 中宗
+  - lang: zh
+    role: translation
+    text: 朝鮮中宗
+  - lang: ko
+    role: original
+    text: 조선 중종
+  - lang: ru
+    role: translation
+    text: Чунджон
+kind: person
+birth: 1488-03-14
+death: 1544-11-25
+description_md: "King of Joseon. Korean sources date the years of his reign by his name: see [[jungjong-reign-years|Jungjong (reign years)]]."
+wikidata_id: Q483008
+metadata:
+  sources: [Wikidata Q483008 (retrieved 2026-11-02)]
+identifiers:
+  idref: "142282642"
+  lc: n85077711
+  nlk: KAC201623790
+  viaf: "267395881"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q483008
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q483008
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q483008

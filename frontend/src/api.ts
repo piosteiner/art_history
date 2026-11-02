@@ -292,6 +292,8 @@ async function account<T>(path: string, init: RequestInit = {}): Promise<T | nul
   if (!res.ok) throw new ApiError(res.status, 'account', res.statusText);
   return res.status === 204 ? null : (res.json() as Promise<T>);
 }
+/** Works that only have this account's reference images: slug → the image's address (none for visitors). */
+export const getOwnThumbs = () => account<{ images: Record<string, string> }>('/thumbs').then((r) => r?.images ?? {});
 /** The logged-in account, or null. */
 export const getAccount = () => account<{ username: string }>('/me');
 /** This account's private reference images of a work (184) — null when not logged in. */

@@ -1,0 +1,34 @@
+public_id: 108873
+name: Gustav Zumsteg
+given_name: Gustav
+family_name: Zumsteg
+kind: person
+occupations: [art collector, merchant]
+birth: 1915-10-11
+death: 2005-06-17
+wikidata_id: Q1556588
+metadata:
+  sources: [Wikidata Q1556588 (retrieved 2026-11-02)]
+identifiers:
+  bnf: 16514065m
+  gnd: "131847082"
+  idref: "150317301"
+  lc: no2012006999
+  viaf: "38062290"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q1556588
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q1556588
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q1556588
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q1556588

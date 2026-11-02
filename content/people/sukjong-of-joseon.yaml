@@ -1,0 +1,67 @@
+public_id: 108953
+name: Sukjong of Joseon
+names:
+  - lang: ko
+    role: original
+    text: 이순
+  - Li Tun
+  - Xishun
+  - lang: nl
+    role: translation
+    text: Sukjong van Joseon
+  - lang: fr
+    role: translation
+    text: Sukjong de Joseon
+  - lang: de
+    role: translation
+    text: Sukjong
+  - lang: it
+    role: translation
+    text: Sukjong di Joseon
+  - lang: ja
+    role: translation
+    text: 粛宗
+  - lang: zh
+    role: translation
+    text: 朝鮮肅宗
+  - lang: ko
+    role: original
+    text: 조선 숙종
+  - lang: ru
+    role: translation
+    text: Сукчон
+kind: person
+occupations: [king]
+birth: 1661-08-15
+death: 1720-06-08
+description_md: "King of Joseon. Korean sources date the years of his reign by his name: see [[sukjong-reign-years|Sukjong (reign years)]]."
+wikidata_id: Q485664
+metadata:
+  sources: [Wikidata Q485664 (retrieved 2026-11-02)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Sukjong_of_Joseon.png/1280px-Sukjong_of_Joseon.png
+    source_url: https://commons.wikimedia.org/wiki/File:Sukjong_of_Joseon.png
+    license: Public domain
+    credit: 河應達
+identifiers:
+  idref: "118677586"
+  lc: n85022223
+  nlk: KAC201620042
+  viaf: "72812249"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q485664
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q485664
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q485664
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q485664

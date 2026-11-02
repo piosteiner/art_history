@@ -7,7 +7,7 @@
 // Popovers open on hover or keyboard focus; on touch the first tap opens one, the second follows the link.
 // A term or entry that doesn't exist yet (class "missing") becomes plain, slightly dimmed text instead of a dead link;
 // a click on a link to another entry (a.entry-link) is an ordinary link the router follows.
-import { html, thumb, trusted, TYPE_LABEL, type Html } from './html';
+import { html, ownThumb, thumb, trusted, TYPE_LABEL, type Html } from './html';
 import { ROUTE_EVENT } from './router';
 import type { EntryHint, GlossaryHint, SourceHint } from './types';
 
@@ -102,7 +102,8 @@ export function entryPreview(e: EntryHint, href: string) {
       ${e.excerpt ? html`<p>${e.excerpt}</p>` : ''}
       <a href="${href}">Open →</a>
     </div>
-    ${e.image_url ? html`<div class="popover-image"><img src="${thumb(e.image_url, 330)}" alt="" decoding="async"></div>` : ''}`;
+    ${e.image_url ? html`<div class="popover-image"><img src="${thumb(e.image_url, 330)}" alt="" decoding="async"></div>`
+      : e.type === 'artwork' && ownThumb(e.slug) ? html`<div class="popover-image"><img src="${ownThumb(e.slug, 500)!}" alt="" decoding="async" title="your reference image (private)"></div>` : ''}`;
 }
 
 /** Wires the links inside `root`'s texts: popovers for terms, entries, sources and footnotes; plain text for missing ones. */
@@ -126,7 +127,7 @@ export function wireTextLinks(root: Element, terms: Record<string, GlossaryHint>
   root.querySelectorAll<HTMLAnchorElement>('a.entry-link').forEach((a) => {
     const hint = entries?.[a.dataset.entry ?? ''];
     if (!hint) return;
-    attach(a, () => entryPreview(hint, a.getAttribute('href')!), hint.image_url ? 'entry has-image' : 'entry');
+    attach(a, () => entryPreview(hint, a.getAttribute('href')!), hint.image_url || (hint.type === 'artwork' && ownThumb(hint.slug)) ? 'entry has-image' : 'entry');
   });
   // short references ("Busch 1993", "Ebd."): the full citation (HTML with italic titles, escaped by the API) — not for
   // further reading, which is the full citation already: a plain link to the source's page

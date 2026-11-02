@@ -1,0 +1,166 @@
+public_id: 108863
+title_lang: de
+title: Selbstbildnis. Der Studierende
+names:
+  - lang: de
+    role: alternative
+    text: Der Student
+  - lang: en
+    role: translation
+    text: Self-Portrait (The Student)
+  - lang: fr
+    role: translation
+    text: Autoportrait (L'Etudiant)
+creator: ferdinand-hodler
+created: 1874
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [113, 73]
+institution: kunsthaus-zurich
+inventory_number: "1022"
+web_url: https://collection.kunsthaus.ch/en/collection/item/1800/
+on_loan: true
+on_loan_since: 1922
+provenance_status: a_clear
+provenance_status_note: "Kunsthaus Zürich: «kein NS-verfolgungsbedingt entzogenes Kulturgut»"
+wikidata_id: Q131586062
+metadata:
+  sources: [Wikidata Q131586062 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7e/Ferdinand_Hodler_-_Selbstbildnis._Der_Studierende_-_1022_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Selbstbildnis._Der_Studierende_-_1022_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/lucien-de-la-rive
+    acquired: 1876
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1800/
+        note: "Kunsthaus Zürich, Provenienz: «1876, Lucien de La Rive (*1834 Choulex, +1924 Genf)» — Quelle: Bätschmann/Müller 2012 II.635, http://www.ferdinand-hodler.ch/werke.aspx?id=6005608 (05.01.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: person/hippolyte-coutau
+    acquired: 1911-11
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1800/
+        note: "Kunsthaus Zürich, Provenienz: «11.1911, Hippolyte Coutau (*1866 Genf, +1946 Genf)» — Quelle: Bätschmann/Müller 2012, wie oben Fussnote 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: person/max-geldner
+    acquired: 1911-11
+    ended: 1913 or later
+    method: purchase
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1800/
+        note: "Kunsthaus Zürich, Provenienz: «11.1911 – mindestens bis 1913, Max Geldner (*1875, +1958) (Sammler/-in), Basel, Kauf» — Quelle: Bätschmann/Müller 2012, wie oben Fussnote 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/galerie-thannhauser
+    role: dealer
+    acquired: 1913
+    method: purchase
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1800/
+        note: "Kunsthaus Zürich, Provenienz: «1913, Moderne Galerie Heinrich Thannhauser (Galerie), München, Kauf» — Quelle: Bätschmann/Müller 2012, wie oben Fussnote 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: artist/ferdinand-hodler
+    acquired: 1913
+    ended: 1918
+    method: purchase
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1800/
+        note: "Kunsthaus Zürich, Provenienz: «1913 – 1918, Ferdinand Hodler (*1853 Bern, +1918 Genf) (Künstler/-in), Kauf» — Quelle: Bätschmann/Müller 2012, wie oben Fussnote 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/kunsthaus-zurich
+    role: custodian
+    acquired: 1913
+    ended: 1922
+    place: zurich
+    label: on loan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1800/
+        note: "Kunsthaus Zürich, Provenienz: «1913 – 1922, Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum), Zürich, Leihgabe» — Quelle: Bätschmann/Müller 2012, wie oben Fussnote 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: person/berthe-hodler
+    acquired: 1918
+    ended: 1922
+    method: inheritance
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1800/
+        note: "Kunsthaus Zürich, Provenienz: «1918 – 1922, Berthe Hodler-Jacques (*1868, +1957), Nachlass» — Quelle: Bätschmann/Müller 2012, wie oben Fussnote 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1922
+    method: purchase
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1800/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1922, Vereinigung Zürcher Kunstfreunde (Sammlung), Zürich, Kauf»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/kunsthaus-zurich
+    role: custodian
+    acquired: 1922
+    place: zurich
+    label: on loan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1800/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1922, Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum), Zürich, Leihgabe» — Quelle: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1800/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1800/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1800/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  created:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q131586062
+    - url: https://collection.kunsthaus.ch/de/collection/item/1800/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  creator:
+    - accessed: 2026-11-02
+      property: P170
+      wikidata: Q131586062
+    - url: https://collection.kunsthaus.ch/de/collection/item/1800/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  materials:
+    - accessed: 2026-11-02
+      property: P186
+      wikidata: Q131586062
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1800/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  institution:
+    - accessed: 2026-11-02
+      property: P195
+      wikidata: Q131586062
+    - url: https://collection.kunsthaus.ch/de/collection/item/1800/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  inventory_number:
+    - accessed: 2026-11-02
+      property: P217
+      wikidata: Q131586062
+    - url: https://collection.kunsthaus.ch/de/collection/item/1800/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02

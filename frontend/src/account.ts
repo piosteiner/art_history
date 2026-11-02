@@ -2,7 +2,8 @@
 // which sends the browser back here with ?login=1. Only then — remembered in localStorage — does a page ask the admin
 // host who is logged in; visitors' pages never contact it. Logged in, artwork pages show the account's private
 // reference images (views/detail.ts).
-import { getAccount, getPrivateImages, logOut, loginUrl, type PrivateImage } from './api';
+import { getAccount, getOwnThumbs, getPrivateImages, logOut, loginUrl, type PrivateImage } from './api';
+import { setOwnThumbs } from './html';
 import { html, render } from './html';
 
 const KEY = 'arthistory.account';
@@ -10,6 +11,8 @@ const remembered = () => { try { return localStorage.getItem(KEY) === '1'; } cat
 const remember = (on: boolean) => { try { if (on) localStorage.setItem(KEY, '1'); else localStorage.removeItem(KEY); } catch { /* private window */ } };
 
 let who: Promise<string | null> = Promise.resolve(null);
+/** Ready once the account's own pictures are known (html.ts ownThumb) — at once for visitors. */
+export let ownThumbsReady: Promise<void> = Promise.resolve();
 
 /** The footer's "Log in" / "Logged in as … · Log out"; call once at start, before the router reads the address. */
 export function mountAccount(footer: HTMLElement) {
@@ -44,6 +47,8 @@ export function mountAccount(footer: HTMLElement) {
   };
   who = remembered() ? getAccount().then((a) => a?.username ?? null).catch(() => null) : Promise.resolve(null);
   who.then((name) => { if (!name) remember(false); show(name); });
+  // works without a public picture show the account's reference image instead (lists, an artist's works, search …)
+  ownThumbsReady = who.then((name) => (name ? getOwnThumbs().then((m) => setOwnThumbs(m)).catch(() => {}) : undefined));
 }
 
 /** The logged-in account's name, or null (visitors: at once, without asking the admin host). */

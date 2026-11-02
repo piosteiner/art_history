@@ -1,0 +1,44 @@
+public_id: 108893
+name: Neuchâtel
+names:
+  - Neuchatel
+  - Neuchâtel, NE
+  - Neuenburg
+  - Neuchatel, NE
+  - Newcastle
+  - Neuch'
+  - lang: ja
+    role: translation
+    text: ヌーシャテル
+  - lang: zh
+    role: translation
+    text: 纳沙泰尔
+  - lang: ko
+    role: translation
+    text: 뇌샤텔
+  - lang: ru
+    role: translation
+    text: Невшатель
+kind: settlement
+parent: canton-of-neuchatel
+country_code: CH
+location: [6.93056, 46.99028]
+wikidata_id: Q69345
+metadata:
+  sources: [Wikidata Q69345 (retrieved 2026-11-02)]
+identifiers:
+  gnd: 4075303-7
+  hls: "002853"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q69345
+  parent:
+    - accessed: 2026-11-02
+      property: P131
+      wikidata: Q69345
+  location:
+    - accessed: 2026-11-02
+      property: P625
+      wikidata: Q69345

@@ -7,7 +7,7 @@
 import { applySuggestion, PLURAL, searchText, suggest } from '../api';
 import { describeQuery, parseQuery, textQuery } from '../query';
 import { markedWords } from '../highlight';
-import { html, PLURAL_LABEL, render, thumb, trusted, TYPE_LABEL } from '../html';
+import { html, PLURAL_LABEL, previewImg, render, trusted, TYPE_LABEL } from '../html';
 import { replaceUrl } from '../router';
 import { wholeKind } from '../series';
 import type { EntityType, TextHit } from '../types';
@@ -86,9 +86,9 @@ export function searchPage(main: HTMLElement, params: URLSearchParams) {
     const g = h.group;
     const what = [g ? 'Group of works' : TYPE_LABEL[h.type], h.subtitle || [h.kind, h.period?.label].filter(Boolean).join(' · ')].filter(Boolean).join(' · ');
     const where = g ? (g.held_by.length ? `Parts in: ${g.held_by.join(', ')}` : '') : h.institution ? `Now in: ${h.institution}` : '';
-    return html`<li class="text-hit${h.image_url ? ' has-image' : ''}${g ? ' text-hit-group' : ''}">
-      ${h.image_url ? html`<img class="card-img text-hit-img" src="${thumb(h.image_url, 120)}" alt="" loading="lazy" crossorigin="anonymous" data-full="${h.image_url}"${
-        thumb(h.image_url, 120) !== h.image_url ? html` data-fallback="${h.image_url}"` : ''}>` : ''}
+    const pic = previewImg(h.image_url, h.type === 'artwork' ? h.slug : null, 120, 'card-img text-hit-img');
+    return html`<li class="text-hit${pic ? ' has-image' : ''}${g ? ' text-hit-group' : ''}">
+      ${pic ?? ''}
       <a class="text-hit-name" href="${hitHref(h)}">${h.name}</a>
       ${g ? html`<span class="tag tag-group">${wholeKind({ kind: g.kind, is_group: true, parts: g.parts, parts_count: g.parts_count })}</span>` : ''}
       <span class="tag tag-matched tag-matched-${h.matched_in}" title="${MATCHED[h.matched_in][1]}">${MATCHED[h.matched_in][0]}</span>

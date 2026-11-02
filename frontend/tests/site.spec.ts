@@ -3199,3 +3199,41 @@ test('a Japanese work’s date also in the Japanese calendar (API 185): era and 
   await expect(page.locator('.era')).toHaveCount(0);
   expect(errors).toEqual([]);
 });
+
+test('an artist’s works: each picture whole at its own proportions beside its text; a very wide one on its own line, the text below', async ({ page }) => {
+  const svg = (w: number, h: number) => `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}"><rect width="${w}" height="${h}" fill="#89a"/></svg>`)}`;
+  await patch(page, /\/v1\/artists\/vincent-van-gogh$/, (b) => {
+    b.artworks = [
+      { slug: 'the-starry-night', title: 'The Starry Night', created: { label: 'June 1889', from: '1889-06-01', to: '1889-06-30', from_year: 1889, to_year: 1889 }, kind: 'oil painting', image_url: svg(400, 400) },
+      { slug: 'sunflowers', title: 'A Very Wide Frieze', created: null, kind: null, image_url: svg(1200, 200) },
+      { slug: 'no-picture', title: 'Without a Picture', created: null, kind: null, image_url: null },
+    ];
+  });
+  await page.goto('/artists/vincent-van-gogh');
+  const rows = page.locator('.artist-works .work-row');
+  await expect(rows).toHaveCount(3);
+  await expect(page.locator('.artist-works h2')).toContainText('3');
+  await expect(rows.nth(1)).toHaveClass(/wide/);
+  await expect(rows.nth(0)).not.toHaveClass(/wide/);
+  await expect(rows.nth(2)).toHaveClass(/no-picture/);
+  // beside: the text to the right of the square picture; below: under the wide one
+  const pic0 = (await rows.nth(0).locator('img').boundingBox())!;
+  const text0 = (await rows.nth(0).locator('.work-text').boundingBox())!;
+  expect(text0.x).toBeGreaterThan(pic0.x + pic0.width - 1);
+  const pic1 = (await rows.nth(1).locator('img').boundingBox())!;
+  const text1 = (await rows.nth(1).locator('.work-text').boundingBox())!;
+  expect(text1.y).toBeGreaterThanOrEqual(pic1.y + pic1.height - 1);
+  expect(pic1.width / pic1.height).toBeGreaterThan(5);   // the whole picture, not cropped
+});
+
+test('timeline: a name longer than its column slides on hover until its end shows, and back when the pointer leaves', async ({ page }) => {
+  await page.goto('/?all');
+  const long = page.locator('.row-label-long').first();
+  await expect(long).toBeVisible();
+  await long.scrollIntoViewIfNeeded();
+  const box = (await long.boundingBox())!;
+  await page.mouse.move(box.x + 10, box.y + box.height / 2);
+  await expect.poll(() => long.evaluate((t) => Number(/translateX\((-?[\d.]+)px\)/.exec((t as SVGElement).style.transform)?.[1] ?? 0))).toBeLessThan(-1);
+  await page.mouse.move(5, 5);
+  await expect.poll(() => long.evaluate((t) => (t as SVGElement).style.transform)).toBe('translateX(0px)');
+});

@@ -1,0 +1,39 @@
+public_id: 108895
+name: Interlaken
+names:
+  - Interlaken BE
+  - lang: ja
+    role: translation
+    text: インターラーケン
+  - lang: zh
+    role: translation
+    text: 因特拉肯
+  - lang: ko
+    role: translation
+    text: 인터라켄
+  - lang: ru
+    role: translation
+    text: Интерлакен
+kind: settlement
+parent: interlaken-oberhasli-administrative-district
+country_code: CH
+location: [7.86487, 46.68715]
+wikidata_id: Q68103
+metadata:
+  sources: [Wikidata Q68103 (retrieved 2026-11-02)]
+identifiers:
+  gnd: 4027269-2
+  hls: "000336"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q68103
+  parent:
+    - accessed: 2026-11-02
+      property: P131
+      wikidata: Q68103
+  location:
+    - accessed: 2026-11-02
+      property: P625
+      wikidata: Q68103

@@ -1,0 +1,38 @@
+public_id: 108888
+name: Galerie Beyeler
+kind: gallery
+founded: 1945
+dissolved: 2011
+place: basel
+location: [7.59271, 47.55536]
+address: Bäumleingasse 9, 4001 Basel
+wikidata_id: Q134513361
+metadata:
+  sources: [Wikidata Q134513361 (retrieved 2026-11-02)]
+identifiers:
+  gnd: 1003203-4
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q134513361
+  place:
+    - accessed: 2026-11-02
+      property: P131
+      wikidata: Q134513361
+  address:
+    - accessed: 2026-11-02
+      property: P6375
+      wikidata: Q134513361
+  founded:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q134513361
+  location:
+    - accessed: 2026-11-02
+      property: P625
+      wikidata: Q134513361
+  dissolved:
+    - accessed: 2026-11-02
+      property: P576
+      wikidata: Q134513361

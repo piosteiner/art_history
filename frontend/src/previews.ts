@@ -9,6 +9,7 @@
 // key press — focus moved there by a script, like a map popup's first link, opens nothing). Touch, on an
 // entry's page only: the first tap opens the preview, the second follows the link (lists and maps: one tap navigates).
 import { getPreviews, PLURAL } from './api';
+import { ownThumb } from './html';
 import { byKeyboard, entryPreview, hideSoon, keepOpen, openFor, show } from './glossary';
 import type { EntityType, EntryHint } from './types';
 
@@ -57,7 +58,7 @@ function load(refs: Iterable<string>): Promise<void> {
 
 function open(a: HTMLAnchorElement, ref: string) {
   const hint = known.get(ref);
-  if (hint) show(a, entryPreview(hint, a.getAttribute('href')!), hint.image_url ? 'entry has-image' : 'entry');
+  if (hint) show(a, entryPreview(hint, a.getAttribute('href')!), hint.image_url || (hint.type === 'artwork' && ownThumb(hint.slug)) ? 'entry has-image' : 'entry');
 }
 
 // ---- hover, focus, tap ---------------------------------------------------------------------------------------------

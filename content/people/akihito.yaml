@@ -1,0 +1,45 @@
+public_id: 108942
+name: Akihito
+names:
+  - lang: ja
+    role: original
+    text: 明仁
+  - Emperor Akihito
+  - Prince Akihito
+  - His Majesty the Emperor Emeritus
+  - lang: ko
+    role: translation
+    text: 상황 아키히토
+  - lang: ru
+    role: translation
+    text: Акихито
+kind: person
+occupations: [monarch, ichthyologist, zoologist, marine biologist, ruler, Emperor of Japan]
+birth: 1933-12-23
+description_md: Emperor of Japan; the era of his reign is [[heisei-era|Heisei]] — Japanese dates of his reign are written in it ([[one-reign-one-era]]).
+wikidata_id: Q37979
+metadata:
+  sources: [Wikidata Q37979 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1d/Emperor_Akihito_%282016%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emperor_Akihito_(2016).jpg
+    license: Public domain
+    credit: Malacañang Photo Bureau
+identifiers:
+  gnd: "119028379"
+  idref: "110144589"
+  lc: n88289770
+  viaf: "111992561"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q37979
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q37979
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q37979

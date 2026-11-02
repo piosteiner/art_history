@@ -1,0 +1,86 @@
+public_id: 108850
+title_lang: fr
+title: Nature morte aux fruits
+names:
+  - lang: de
+    role: translation
+    text: Früchtestilleben
+creator: emile-chambon
+created: 1943
+kind: painting
+medium: Oil on canvas on cardboard
+materials: [oil paint, canvas, cardboard]
+dimensions: [25.5, 38]
+institution: kunsthaus-zurich
+inventory_number: 1950/0021
+web_url: https://collection.kunsthaus.ch/en/collection/item/9/
+wikidata_id: Q131586356
+metadata:
+  sources: [Wikidata Q131586356 (retrieved 2026-11-02)]
+provenance:
+  - owner: person/hans-mayenfisch
+    ended: 1950
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/9/
+        note: "Kunsthaus Zürich, Provenienz: «o.D. – 1950, Hans E. Mayenfisch (*1882 Zürich, +1957 Zürich) (Sammler/-in), Zürich» — Quelle: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/kunsthaus-zurich
+    acquired: 1950
+    method: gift
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/9/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1950, Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum), Zürich, Geschenk» — Quelle: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  created:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q131586356
+    - url: https://collection.kunsthaus.ch/de/collection/item/9/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  creator:
+    - accessed: 2026-11-02
+      property: P170
+      wikidata: Q131586356
+    - url: https://collection.kunsthaus.ch/de/collection/item/9/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  materials:
+    - accessed: 2026-11-02
+      property: P186
+      wikidata: Q131586356
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  institution:
+    - accessed: 2026-11-02
+      property: P195
+      wikidata: Q131586356
+    - url: https://collection.kunsthaus.ch/de/collection/item/9/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  inventory_number:
+    - accessed: 2026-11-02
+      property: P217
+      wikidata: Q131586356
+    - url: https://collection.kunsthaus.ch/de/collection/item/9/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02

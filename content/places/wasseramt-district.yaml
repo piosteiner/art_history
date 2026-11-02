@@ -1,0 +1,16 @@
+public_id: 108890
+name: Wasseramt District
+kind: site
+location: [7.58333, 47.16667]
+wikidata_id: Q660262
+metadata:
+  sources: [Wikidata Q660262 (retrieved 2026-11-02)]
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q660262
+  location:
+    - accessed: 2026-11-02
+      property: P625
+      wikidata: Q660262

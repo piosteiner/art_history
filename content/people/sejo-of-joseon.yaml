@@ -1,0 +1,73 @@
+public_id: 108951
+name: Sejo of Joseon
+names:
+  - lang: ko
+    role: original
+    text: 이유
+  - Li Rou
+  - Shizu
+  - Guangling
+  - Huizhuang
+  - Huizhuangchengtiantidaoliewenyingwuzhidelonggongshengshenmingruiqinsurenxiaodaiwang
+  - Cuizhi
+  - Grand Prince Suyang
+  - lang: nl
+    role: translation
+    text: Sejo van Joseon
+  - lang: fr
+    role: translation
+    text: Sejo de Joseon
+  - lang: de
+    role: translation
+    text: Sejo
+  - lang: it
+    role: translation
+    text: Sejo di Joseon
+  - lang: ja
+    role: translation
+    text: 世祖
+  - lang: zh
+    role: translation
+    text: 朝鮮世祖
+  - lang: ko
+    role: original
+    text: 조선 세조
+  - lang: ru
+    role: translation
+    text: Седжо
+kind: person
+occupations: [politician]
+birth: 1417-10-03
+death: 1468-09-17
+description_md: "King of Joseon. Korean sources date the years of his reign by his name: see [[sejo-reign-years|Sejo (reign years)]]."
+wikidata_id: Q334308
+metadata:
+  sources: [Wikidata Q334308 (retrieved 2026-11-02)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/%EC%84%B8%EC%A1%B0_%EC%96%B4%EC%A7%84_%EC%B4%88%EB%B3%B8.jpg/1280px-%EC%84%B8%EC%A1%B0_%EC%96%B4%EC%A7%84_%EC%B4%88%EB%B3%B8.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%EC%84%B8%EC%A1%B0_%EC%96%B4%EC%A7%84_%EC%B4%88%EB%B3%B8.jpg
+    license: Public domain
+    credit: 김은호
+identifiers:
+  bnf: 15534505d
+  gnd: 10933213X
+  lc: n82155030
+  nlk: KAC201620437
+  viaf: "19990874"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q334308
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q334308
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q334308
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q334308

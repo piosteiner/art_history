@@ -1,0 +1,33 @@
+public_id: 108884
+name: Johann Friedrich Michel
+given_name: Johann Friedrich
+family_name: Michel
+kind: person
+occupations: [jurist, politician, military personnel]
+birth: 1856-05-07
+death: 1940-04-28
+wikidata_id: Q78066585
+metadata:
+  sources: [Wikidata Q78066585 (retrieved 2026-11-02)]
+identifiers:
+  dodis: P38451
+  gnd: "1052422853"
+  hls: "004608"
+  viaf: "309586841"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q78066585
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q78066585
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q78066585
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q78066585

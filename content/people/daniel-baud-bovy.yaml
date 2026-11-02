@@ -1,0 +1,42 @@
+public_id: 108871
+name: Daniel Baud-Bovy
+given_name: Daniel
+family_name: Baud-Bovy
+kind: person
+occupations: [writer, art historian, poet, photographer]
+birth: 1870-04-13
+death: 1958-06-19
+wikidata_id: Q116495
+metadata:
+  sources: [Wikidata Q116495 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/86/Daniel_Baud-Bovy%2C_1906.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Daniel_Baud-Bovy,_1906.jpg
+    license: Public domain
+    credit: Henri van Muyden
+identifiers:
+  bnf: 12165688z
+  dodis: P53823
+  gnd: "127479295"
+  hls: "027690"
+  idref: "030190002"
+  lc: n85325960
+  ulan: "500356679"
+  viaf: "51729742"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q116495
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q116495
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q116495
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q116495

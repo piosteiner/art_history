@@ -1,0 +1,32 @@
+public_id: 108874
+name: Hippolyte Coutau
+given_name: Hippolyte
+family_name: Coutau
+kind: person
+occupations: [painter, draftsperson]
+birth: 1866-03-13
+death: 1946
+wikidata_id: Q52148508
+metadata:
+  sources: [Wikidata Q52148508 (retrieved 2026-11-02)]
+identifiers:
+  gnd: "1336993618"
+  rkd: "125526"
+  sikart: "4024567"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q52148508
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q52148508
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q52148508
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q52148508

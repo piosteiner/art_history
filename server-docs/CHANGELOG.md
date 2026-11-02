@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-02
 
+### Site: timeline names slide; the owner's reference images as previews; data: 173 era entries, 17 rulers
+- **Timeline** (`frontend/src/timeline.ts`): a name longer than its column is written whole, clipped at the column's
+  edge, and slides left on hover until its end shows, back when the pointer leaves (owner 2026-11-02).
+- **Previews:** logged in, works without a public picture show the account's first reference image in the artwork
+  lists, the artist's works, search hits, a series' parts and link previews. Admin host `GET /site/thumbs`
+  (slug → image, only works with no public image) and `/private-images/:id?w=250|500` (smaller rendition, owner only);
+  site `ownThumb()` / `previewImg()` in `html.ts`, loaded once by `account.ts` (`ownThumbsReady`) — nothing for visitors,
+  and never through the API's thumbnail service. e2e `private-images.spec.js`, site test "timeline … slides".
+- **Data:** 5 concept entries (nengō, one reign one era, Korean reign years, nianhao, sexagenary cycle) and 168 era
+  entries (141 Japanese era names, 14 Joseon reign years, Geonyang/Gwangmu/Yunghui) in the new category `calendar`, each
+  with its years, characters and neighbours linked; `calendar_era_links` to 23 rulers (Emperor Meiji, Taishō, Hirohito,
+  Akihito, Naruhito; 14 Joseon kings; Gojong, Sunjong) — 17 of them new from Wikidata, with a line linking back.
+  Era names that recur (Shōwa 1312 / 1926, Kōji …) carry the year in the slug; 30 "sound alike" pairs acknowledged.
+- **Why:** owner, 2026-11-02. **Revert:** `git revert`; the entries via `DELETE FROM glossary WHERE category = 'calendar'`.
+
 ### Private reference images from a link (migration 188)
 - **What:** on a work's admin page, "Image or page link" + "Add from link": an image's address is fetched and stored
   like an upload; a page's address gives its pictures to pick (one per picture — of …-M / …-L the largest — logos and

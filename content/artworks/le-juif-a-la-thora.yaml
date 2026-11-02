@@ -1,0 +1,75 @@
+public_id: 108842
+title_lang: fr
+title: Le Juif à la Thora
+names:
+  - lang: de
+    role: translation
+    text: Jude mit Thora
+  - lang: en
+    role: translation
+    text: Jew with Thora
+creator: marc-chagall
+created: c. 1958
+created_span: uncertain
+kind: painting
+medium: Oil on cardboard mounted on wood
+materials: [oil paint, cardboard]
+dimensions: [65, 51]
+institution: gabriele-and-werner-merzbacher-collection
+inventory_number: MB 0111
+web_url: https://collection.kunsthaus.ch/en/collection/item/820986/
+wikidata_id: Q124282664
+metadata:
+  sources: [Wikidata Q124282664 (retrieved 2026-11-02)]
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/820986/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/820986/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/820986/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  created:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q124282664
+    - url: https://collection.kunsthaus.ch/de/collection/item/820986/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  creator:
+    - accessed: 2026-11-02
+      property: P170
+      wikidata: Q124282664
+    - url: https://collection.kunsthaus.ch/de/collection/item/820986/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  materials:
+    - accessed: 2026-11-02
+      property: P186
+      wikidata: Q124282664
+  dimensions:
+    - accessed: 2026-11-02
+      property: P2048
+      wikidata: Q124282664
+    - url: https://collection.kunsthaus.ch/de/collection/item/820986/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  institution:
+    - accessed: 2026-11-02
+      property: P195
+      wikidata: Q124282664
+    - url: https://collection.kunsthaus.ch/de/collection/item/820986/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  inventory_number:
+    - accessed: 2026-11-02
+      property: P217
+      wikidata: Q124282664
+    - url: https://collection.kunsthaus.ch/de/collection/item/820986/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02

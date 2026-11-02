@@ -1,0 +1,18 @@
+public_id: 108849
+name: Emile Chambon
+given_name: Emile
+family_name: Chambon
+birth: 1905-01-10
+death: 1993-10-28
+wikidata_id: Q677280
+metadata:
+  sources: [Wikidata Q677280 (retrieved 2026-11-02)]
+sources:
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q677280
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q677280

@@ -1,14 +1,31 @@
 public_id: 106670
-title: Box with design of boys and lions
+title_lang: jp
+title: "{木画箱|もくがばこ}（{法隆寺献納宝物|ほうりゅうじけんのうほうもつ}）"
+names:
+  - lang: en
+    role: translation
+    text: Box with design of boys and lions
+    sources:
+      - source: history-of-japanese-art
+  - lang: en
+    role: translation
+    text: Box with marquetry decoration (Horyuji treasures)
+    status: official
+    sources:
+      - url: https://shozokan.nich.go.jp/en/collection/object/SZK003076
+        source: shozokan-nich-go-jp
+        accessed: 2026-11-02
 attribution_label: Anonymous
-created: 8th century
+created: 601/800
 created_span: uncertain
 kind: box
 medium: Lacquer with inlaid mother-of-pearl
 materials: [lacquer, mother-of-pearl]
 dimensions: [18.1, 23.5, 23.5]
 institution: museum-of-the-imperial-collections
-description_md: "A Tang Chinese lacquer box, inlaid in mother-of-pearl on all four sides with boys playing with lions: the lion from Sassanian art, the boys the Daoist symbol of eternal youth. Made for the Japanese market of the period; originally kept at Hōryūji. [[source/history-of-japanese-art|p. 51, fig. 55]]"
+inventory_number: SZK003076
+web_url: https://shozokan.nich.go.jp/en/collection/object/SZK003076
+description_md: "A Tang Chinese lacquer box, inlaid in mother-of-pearl on all four sides with boys playing with lions: the lion from Sassanian art, the boys the Daoist symbol of eternal youth. Made for the Japanese market of the period; originally kept at [[institution/horyu-ji|Hōryūji]]. [[source/history-of-japanese-art|p. 51, fig. 55]]"
 relationships:
   - type: created_in_polity
     to: polity/tang-dynasty
@@ -25,6 +42,9 @@ sources:
   created:
     - source: history-of-japanese-art
       locator: p. 51, fig. 55
+    - url: https://shozokan.nich.go.jp/en/collection/object/SZK003076
+      source: shozokan-nich-go-jp
+      accessed: 2026-11-02
   materials:
     - source: history-of-japanese-art
       locator: p. 51, fig. 55
@@ -34,3 +54,10 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: p. 51, fig. 55
+    - url: https://shozokan.nich.go.jp/en/collection/object/SZK003076
+      source: shozokan-nich-go-jp
+      accessed: 2026-11-02
+  inventory_number:
+    - url: https://shozokan.nich.go.jp/en/collection/object/SZK003076
+      source: shozokan-nich-go-jp
+      accessed: 2026-11-02

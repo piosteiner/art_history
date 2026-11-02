@@ -1,0 +1,70 @@
+public_id: 108952
+name: Seonjo of Joseon
+names:
+  - lang: ko
+    role: original
+    text: 이연
+  - King Seonjo
+  - Li Yan
+  - Qitongguangxianningdaolongzuo
+  - Xuanzong
+  - Xuanzu
+  - Zhaojing
+  - Zhenglunlijishengdehongliezhichengdayigetianxiyunxianwenyiwushengjingdaxiaodaiwang
+  - Muling
+  - lang: nl
+    role: translation
+    text: Seonjo van Joseon
+  - lang: fr
+    role: translation
+    text: Seonjo
+  - lang: es
+    role: translation
+    text: Seonjo de Joseon
+  - lang: ja
+    role: translation
+    text: 宣祖
+  - lang: zh
+    role: translation
+    text: 朝鮮宣祖
+  - lang: ko
+    role: original
+    text: 조선 선조
+  - lang: ru
+    role: translation
+    text: Сонджо
+kind: person
+occupations: [monarch]
+birth: 1552-11-21
+death: 1608-02-01
+description_md: "King of Joseon. Korean sources date the years of his reign by his name: see [[seonjo-reign-years|Seonjo (reign years)]]."
+wikidata_id: Q484359
+metadata:
+  sources: [Wikidata Q484359 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a5/%E6%9C%9D%E9%AE%AE%E5%AE%A3%E7%A5%96.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E6%9C%9D%E9%AE%AE%E5%AE%A3%E7%A5%96.jpg
+    license: Public domain
+    credit: 朝鮮画师
+identifiers:
+  bnf: 16103340z
+  idref: "169460886"
+  lc: n85012222
+  viaf: "58034926"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q484359
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q484359
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q484359
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q484359

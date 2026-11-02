@@ -1,0 +1,51 @@
+public_id: 108950
+name: Myeongjong of Joseon
+names:
+  - lang: ko
+    role: original
+    text: 이환
+  - lang: nl
+    role: translation
+    text: Myeongjong van Joseon
+  - lang: fr
+    role: translation
+    text: Myeongjong
+  - lang: it
+    role: translation
+    text: Myeongjong di Joseon
+  - lang: ja
+    role: translation
+    text: 明宗
+  - lang: zh
+    role: translation
+    text: 朝鮮明宗
+  - lang: ko
+    role: original
+    text: 조선 명종
+  - lang: ru
+    role: translation
+    text: Мёнджон
+kind: person
+birth: 1534-06-01
+death: 1567-07-08
+description_md: "King of Joseon. Korean sources date the years of his reign by his name: see [[myeongjong-reign-years|Myeongjong (reign years)]]."
+wikidata_id: Q483641
+metadata:
+  sources: [Wikidata Q483641 (retrieved 2026-11-02)]
+identifiers:
+  lc: n85012225
+  nlk: KAC201717449
+  viaf: "40794498"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q483641
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q483641
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q483641

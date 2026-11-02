@@ -1,0 +1,105 @@
+public_id: 108864
+title_lang: de
+title: Das Lied aus der Ferne
+names:
+  - lang: en
+    role: alternative
+    text: Song from Afar
+  - lang: fr
+    role: translation
+    text: Chant lointain
+  - lang: de
+    role: original
+    text: Lied in der Ferne
+creator: ferdinand-hodler
+created: 1913
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [180, 129]
+institution: kunsthaus-zurich
+inventory_number: "1183"
+web_url: https://collection.kunsthaus.ch/en/collection/item/1511/
+provenance_status: a_clear
+provenance_status_note: "Kunsthaus Zürich: «kein NS-verfolgungsbedingt entzogenes Kulturgut»"
+wikidata_id: Q109070334
+metadata:
+  sources: [Wikidata Q109070334 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9c/Ferdinand_Hodler_-_Lied_in_der_Ferne_-_1183_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Lied_in_der_Ferne_-_1183_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/alfred-rutschi
+    acquired: 1918
+    ended: 1919
+    method: purchase
+    place: zurich
+    label: from Hodler’s estate
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1511/
+        note: "Kunsthaus Zürich, Provenienz: «1918 – 1919, Alfred Rütschi (*1868, +1929 München) (Sammler/-in), Zürich, Kauf, aus dem Nachlass Hodlers» — Quelle: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 290-291."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/kunsthaus-zurich
+    acquired: 1919
+    method: gift
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1511/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1919, Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum), Zürich, Geschenk» — Quelle: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1511/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1511/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1511/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  created:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q109070334
+    - url: https://collection.kunsthaus.ch/de/collection/item/1511/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  creator:
+    - accessed: 2026-11-02
+      property: P170
+      wikidata: Q109070334
+    - url: https://collection.kunsthaus.ch/de/collection/item/1511/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  materials:
+    - accessed: 2026-11-02
+      property: P186
+      wikidata: Q109070334
+  dimensions:
+    - accessed: 2026-11-02
+      property: P2048
+      wikidata: Q109070334
+    - url: https://collection.kunsthaus.ch/de/collection/item/1511/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  institution:
+    - accessed: 2026-11-02
+      property: P195
+      wikidata: Q109070334
+    - url: https://collection.kunsthaus.ch/de/collection/item/1511/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  inventory_number:
+    - accessed: 2026-11-02
+      property: P217
+      wikidata: Q109070334
+    - url: https://collection.kunsthaus.ch/de/collection/item/1511/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02

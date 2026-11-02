@@ -1,0 +1,36 @@
+public_id: 108877
+name: Martin Flersheim
+given_name: Martin
+family_name: Flersheim
+kind: person
+occupations: [merchant, art collector, entrepreneur]
+birth: 1856-04-18
+death: 1935-12-07
+wikidata_id: Q94766666
+metadata:
+  sources: [Wikidata Q94766666 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fc/Martin_ludwig_flersheim_frankfurt_am_main.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Martin_ludwig_flersheim_frankfurt_am_main.jpg
+    license: CC BY 3.0
+    credit: Unknown author
+identifiers:
+  gnd: "142943479"
+  viaf: "160354556"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q94766666
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q94766666
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q94766666
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q94766666

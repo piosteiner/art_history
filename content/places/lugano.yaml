@@ -1,0 +1,16 @@
+public_id: 108886
+name: Lugano
+kind: settlement
+location: [8.9625, 46.01028]
+wikidata_id: Q7024
+metadata:
+  sources: [Wikidata Q7024 (retrieved 2026-11-02)]
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q7024
+  location:
+    - accessed: 2026-11-02
+      property: P625
+      wikidata: Q7024

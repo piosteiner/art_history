@@ -1,0 +1,13 @@
+public_id: 108878
+name: Florence Flersheim
+given_name: Florence
+family_name: Flersheim
+kind: person
+wikidata_id: Q131384212
+metadata:
+  sources: [Wikidata Q131384212 (retrieved 2026-11-02)]
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q131384212

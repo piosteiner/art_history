@@ -103,7 +103,9 @@ export interface PolityRef { slug: string; public_id?: number | null; name: stri
 
 /** A date in the Japanese, Korean or Chinese calendar (API 185): "Tenpō 2" / 天保2年, a Joseon king's reign year
  *  ("Yeongjo 25", 영조 25년), a Qing reign era; a second line beside the main one (Japan's Southern Court, 1336–1392). */
-export interface EraPart { line?: string; label: string; native: string; hangul?: string }
+export interface EraPart { line?: string; label: string; native: string; hangul?: string;
+  /** the era names in the label with their glossary entries (API 187), for links */
+  eras?: { name: string; term?: string }[] }
 export interface EraDate {
   calendar: 'jp' | 'kr' | 'cn'; parts: EraPart[];
   /** the year's name in the sixty-year cycle (干支), when the date lies within one year */
@@ -142,7 +144,7 @@ export interface SourceHint { siglum: string; citation: string }
 export interface EntryHint { type: EntityType; slug: string; name: string; subtitle: string | null; image_url: string | null; excerpt: string | null }
 
 export interface GlossaryHint { name: string; category: TermCategory; definition: string | null }
-export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'style' | 'format' | 'object type' | 'group of works' | 'mounting' | 'performing arts' | 'heritage designation' | 'other';  // group of works: API 131, mounting: 133, performing arts: 145, heritage designation: 165
+export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'style' | 'format' | 'object type' | 'group of works' | 'mounting' | 'performing arts' | 'heritage designation' | 'calendar' | 'other';  // group of works: API 131, mounting: 133, performing arts: 145, heritage designation: 165
 
 // ---- countries and polities ---------------------------------------------------------------------
 
@@ -292,7 +294,9 @@ export interface EventItem extends Located, Named {
 // ---- details -------------------------------------------------------------------------------------
 
 /** In an artist's `artworks`, `co_creator: true` marks works they made together with the main creator. */
-export interface ArtworkSummary { slug: string; title: string; created: DateRange | null; kind?: string | null; creator?: Ref | null; co_creator?: boolean; role?: string | null }
+export interface ArtworkSummary { slug: string; title: string; created: DateRange | null; kind?: string | null; creator?: Ref | null; co_creator?: boolean; role?: string | null;
+  /** its first picture (an artist's page, 2026-11-02) */
+  image_url?: string | null }
 export type KindRef = Ref & { kind?: string | null; period?: DateRange | null };
 
 export interface Artist extends DetailBase, Located, Named, PersonName {

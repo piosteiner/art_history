@@ -1,0 +1,66 @@
+public_id: 108945
+name: Cheoljong of Joseon
+names:
+  - kind: art_name
+    role: alternative
+    text: 대용재
+  - lang: ko
+    role: original
+    text: 이변
+  - Li Bian
+  - Lee Won-beom
+  - lang: nl
+    role: translation
+    text: Cheoljong van Joseon
+  - lang: fr
+    role: translation
+    text: Cheoljong
+  - lang: it
+    role: translation
+    text: Cheoljong di Joseon
+  - lang: ja
+    role: translation
+    text: 哲宗
+  - lang: zh
+    role: translation
+    text: 朝鮮哲宗
+  - lang: ko
+    role: original
+    text: 조선 철종
+  - lang: ru
+    role: translation
+    text: Чхольджон
+kind: person
+occupations: [politician]
+birth: 1831-06-17
+death: 1863-12-08
+description_md: "King of Joseon. Korean sources date the years of his reign by his name: see [[cheoljong-reign-years|Cheoljong (reign years)]]."
+wikidata_id: Q482850
+metadata:
+  sources: [Wikidata Q482850 (retrieved 2026-11-02)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Cheoljong2.jpg/1280px-Cheoljong2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cheoljong2.jpg
+    license: CC BY-SA 3.0
+    credit: Yi Han-cheol (이한철) and Jo Jung-muk (조중묵)
+identifiers:
+  lc: n88284775
+  nlk: KAC201717663
+  viaf: "6502969"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q482850
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q482850
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q482850
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q482850

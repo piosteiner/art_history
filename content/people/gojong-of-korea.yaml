@@ -1,0 +1,81 @@
+public_id: 108946
+name: Gojong of the Korean Empire
+names:
+  - kind: art_name
+    role: alternative
+    text: 주연
+  - kind: art_name
+    role: alternative
+    text: 성헌
+  - lang: ko
+    role: original
+    text: 이희
+  - Lee Hee
+  - lang: nl
+    role: translation
+    text: Gojong van Joseon
+  - lang: fr
+    role: translation
+    text: Kojong
+  - lang: de
+    role: translation
+    text: Gojong
+  - lang: it
+    role: translation
+    text: Gojong di Corea
+  - lang: es
+    role: translation
+    text: Emperador Gojong
+  - lang: ja
+    role: translation
+    text: 高宗
+  - lang: zh
+    role: translation
+    text: 朝鮮高宗
+  - lang: ko
+    role: original
+    text: 대한제국 고종
+  - lang: ru
+    role: translation
+    text: Коджон
+kind: person
+occupations: [monarch, king]
+birth: 1852-09-08
+death: 1919-01-21
+description_md: |-
+  King of Joseon. Korean sources date the years of his reign by his name: see [[gojong-reign-years|Gojong (reign years)]].
+
+  Ruler of the Korean Empire; its era name [[geonyang-era|Geonyang]] dates the years 1896–1897.
+
+  Ruler of the Korean Empire; its era name [[gwangmu-era|Gwangmu]] dates the years 1897–1907.
+wikidata_id: Q257425
+metadata:
+  sources: [Wikidata Q257425 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ae/Gojong_of_the_Korean_Empire_02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gojong_of_the_Korean_Empire_02.jpg
+    license: Public domain
+    credit: This photo was taken in 1907.
+identifiers:
+  bnf: "165059983"
+  idref: "117858927"
+  lc: n85012220
+  nlk: KAC201618644
+  viaf: "53107391"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q257425
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q257425
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q257425
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q257425

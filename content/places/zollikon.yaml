@@ -1,0 +1,39 @@
+public_id: 108897
+name: Zollikon
+names:
+  - Zollikon ZH
+  - lang: ja
+    role: translation
+    text: ツオリコン
+  - lang: zh
+    role: translation
+    text: 措利孔
+  - lang: ko
+    role: translation
+    text: 촐리콘
+  - lang: ru
+    role: translation
+    text: Цолликон
+kind: settlement
+parent: meilen-district
+country_code: CH
+location: [8.57833, 47.34222]
+wikidata_id: Q218691
+metadata:
+  sources: [Wikidata Q218691 (retrieved 2026-11-02)]
+identifiers:
+  gnd: 4067943-3
+  hls: "000170"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q218691
+  parent:
+    - accessed: 2026-11-02
+      property: P131
+      wikidata: Q218691
+  location:
+    - accessed: 2026-11-02
+      property: P625
+      wikidata: Q218691

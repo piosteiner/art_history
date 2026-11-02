@@ -1,9 +1,9 @@
 // Detail pages: the fact rows per type (dates, makers, collection, numbers …), their source markers, the work's web page.
 import {
-  countryLink, countryName, creatorsOf, dateLabel, displayName, personDates, personWhat, ROLE_LABEL, otherNames, html, link, polityWithToday, trusted, type Html,
+  countryLink, countryName, creatorsOf, dateLabel, displayName, href, personDates, personWhat, ROLE_LABEL, otherNames, html, link, polityWithToday, previewImg, trusted, type Html,
 } from '../html';
 import type {
-  EraDate,
+  EraDate, EraPart,
   Artwork, Citation, CreatorRef, EntityType, ArtworkSummary, Country, Dimensions, Entity, Image, KindRef, PartDimensions, Phase, PolityLink, Term,
 } from '../types';
 import { partsGrid } from '../series';
@@ -55,10 +55,23 @@ function spanNote(e: Artwork): string {
 // a date also in the calendar of the entry's country (API 185): "c. 1831 · Tenpō 2 天保2年 · 辛卯"
 const ERA_LANG = { jp: 'ja', kr: 'ko', cn: 'zh-Hant' } as const;
 const ERA_NAME = { jp: 'Japanese era', kr: 'Korean reign year', cn: 'Chinese reign era' } as const;
+/** "Bunsei 13 – Tenpō 3" with each era name linked to its glossary entry (API 187). */
+function eraNames(p: EraPart): Html {
+  let rest = p.label;
+  const out: (Html | string)[] = [];
+  for (const x of p.eras ?? []) {
+    const at = rest.indexOf(x.name);
+    if (at < 0 || !x.term) continue;
+    out.push(rest.slice(0, at), link('term', x.term, x.name));
+    rest = rest.slice(at + x.name.length);
+  }
+  out.push(rest);
+  return html`${out}`;
+}
 export function withEra(text: string | null | undefined, era: EraDate | undefined): Html | string | null | undefined {
   if (!text || !era) return text;
   const lang = ERA_LANG[era.calendar];
-  const parts = era.parts.map((p, i) => html`${i ? ' · ' : ''}${p.label} <span lang="${lang}"${p.hangul ? html` title="${p.native}"` : ''}>${p.hangul ?? p.native}</span>${p.line ? html` <span class="muted">(${p.line})</span>` : ''}`);
+  const parts = era.parts.map((p, i) => html`${i ? ' · ' : ''}${eraNames(p)} <span lang="${lang}"${p.hangul ? html` title="${p.native}"` : ''}>${p.hangul ?? p.native}</span>${p.line ? html` <span class="muted">(${p.line})</span>` : ''}`);
   const title = `${ERA_NAME[era.calendar]}${era.approx ? ' — the day is close to the lunar new year: perhaps the year before' : ''}`;
   return html`${text}<span class="era" title="${title}"> · ${era.approx ? '≈ ' : ''}${parts}${era.sexagenary ? html` · <span lang="${lang}">${era.sexagenary}</span>` : ''}</span>`;
 }
@@ -114,6 +127,19 @@ const phasesSection = (phases: Phase[]) => (phases.length
         ${p.people.length ? html`<div class="phase-people">${p.people.map((w, i) => html`${i ? ' · ' : ''}${link(w.type, w.slug, w.name)}${w.role || w.patron ? html` <span class="muted">(${[w.role, w.patron && !w.role ? 'patron' : null].filter(Boolean).join(', ')})</span>` : ''}`)}</div>` : ''}
         ${p.notes_html ? html`<div class="prose phase-text">${trusted(p.notes_html)}</div>` : ''}</div></li>`)}</ol></section>`
   : null);
+
+/**
+ * An artist's works, each with its picture at its own proportions (owner 2026-11-02: "really important to an artist"):
+ * the picture beside its title, date and type; a very wide work (more than WIDE × as wide as high — Monet's Two Willows)
+ * on a line of its own, the text below. The shape is known once the picture has loaded (wireWorkPictures in detail.ts).
+ */
+const worksGallery = (works: ArtworkSummary[]) => html`<section class="artist-works"><h2>Artworks <span class="muted small">${String(works.length)}</span></h2>
+  <ul class="work-list">${works.map((w) => html`<li class="work-row${previewImg(w.image_url, w.slug, 500) ? '' : ' no-picture'}">
+    ${previewImg(w.image_url, w.slug, 500) ? html`<a class="work-picture" href="${href('artwork', w.slug)}" tabindex="-1" aria-hidden="true">${previewImg(w.image_url, w.slug, 500)}</a>` : ''}
+    <div class="work-text">${link('artwork', w.slug, w.title)}
+      ${w.created || w.kind ? html`<div class="muted small">${[w.created?.label, w.kind].filter(Boolean).join(' · ')}</div>` : ''}
+      ${w.co_creator ? html`<span class="tag">co-creator${w.role ? ` · ${w.role}` : ''}</span>` : ''}</div>
+  </li>`)}</ul></section>`;
 
 const artworkList = (works: ArtworkSummary[], withCreator: boolean) => html`<ul class="plain-list">${works.map((w) => html`<li>
   ${link('artwork', w.slug, w.title)}${w.created ? html` <span class="muted">${w.created.label}</span>` : ''}
@@ -208,7 +234,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ['Born as', otherNames(e, (n) => cite(n.sources, e.bibliography), (n) => n.kind === 'birth')],
           ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography), (n) => n.kind !== 'birth')],
         ],
-        extra: e.artworks.length ? [html`<section><h2>Artworks</h2>${artworkList(e.artworks, false)}</section>`] : [],
+        extra: e.artworks.length ? [worksGallery(e.artworks)] : [],
       };
     case 'artwork': {
       const coCreators = creatorsOf(e).filter((c) => !c.main);

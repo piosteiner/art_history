@@ -1,0 +1,42 @@
+public_id: 108887
+name: MASI Lugano
+names: [Museum of Art of Italian Switzerland, MASI, Museo d'arte della Svizzera italiana, MASILugano, Swiss–Italian Art Museum]
+kind: museum
+founded: 2015-09-12
+place: lugano
+location: [8.94807, 45.99934]
+address: Piazza Bernardino Luini 6, 6901 Lugano
+website_url: http://www.masilugano.ch/
+wikidata_id: Q56875825
+metadata:
+  sources: [Wikidata Q56875825 (retrieved 2026-11-02)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Le_LAC%2C_la_fa%C3%A7ade_sud_%28Lugano%2C_Suisse%29_%2821783439458%29.jpg/1280px-Le_LAC%2C_la_fa%C3%A7ade_sud_%28Lugano%2C_Suisse%29_%2821783439458%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Le_LAC,_la_fa%C3%A7ade_sud_(Lugano,_Suisse)_(21783439458).jpg
+    license: CC BY 2.0
+    credit: Jean-Pierre Dalbéra from Paris, France
+identifiers:
+  gnd: 107925546X
+  lc: no2016045896
+  viaf: "147144898752950291101"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q56875825
+  place:
+    - accessed: 2026-11-02
+      property: P131
+      wikidata: Q56875825
+  address:
+    - accessed: 2026-11-02
+      property: P6375
+      wikidata: Q56875825
+  founded:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q56875825
+  location:
+    - accessed: 2026-11-02
+      property: P625
+      wikidata: Q56875825

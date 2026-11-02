@@ -111,7 +111,10 @@ router.get('/private-images/:id', async (req, res) => {
   if (!/^\d+$/.test(req.params.id)) return res.status(404).end();
   const { rows: [img] } = await adminPool.query('SELECT content_type, bytes FROM private_images WHERE id = $1 AND owner_id = $2', [req.params.id, req.user.id]);
   if (!img) return res.status(404).end();
-  res.set({ 'Content-Type': img.content_type, 'X-Content-Type-Options': 'nosniff', 'Cache-Control': 'private, no-store' }).send(img.bytes);
+  // ?w=250 / 500: a smaller rendition for the site's previews (lists, an artist's works)
+  const w = Number(req.query.w);
+  const body = [250, 500].includes(w) ? await sharp(img.bytes).resize({ width: w, withoutEnlargement: true }).webp({ quality: 75 }).toBuffer() : img.bytes;
+  res.set({ 'Content-Type': [250, 500].includes(w) ? 'image/webp' : img.content_type, 'X-Content-Type-Options': 'nosniff', 'Cache-Control': 'private, no-store' }).send(body);
 });
 
 router.post('/private-images/:id/delete', async (req, res) => {

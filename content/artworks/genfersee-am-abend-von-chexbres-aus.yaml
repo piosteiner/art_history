@@ -1,0 +1,113 @@
+public_id: 108854
+title_lang: de
+title: Genfersee am Abend von Chexbres aus
+names:
+  - lang: en
+    role: translation
+    text: Lake Geneva from Chexbres in the Evening
+  - lang: fr
+    role: translation
+    text: Le Léman vu de Chexbres, le soir
+  - lang: de
+    role: former
+    text: Abend am Genfersee
+creator: ferdinand-hodler
+created: 1895
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [100, 130]
+institution: kunsthaus-zurich
+inventory_number: 1965/0015
+web_url: https://collection.kunsthaus.ch/en/collection/item/1564/
+on_loan: true
+on_loan_since: 1965
+wikidata_id: Q117598981
+metadata:
+  sources: [Wikidata Q117598981 (retrieved 2026-11-02)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Hodler_-_Genfersee_am_Abend_von_Chexbres_aus_-_1895.jpg/1280px-Hodler_-_Genfersee_am_Abend_von_Chexbres_aus_-_1895.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hodler_-_Genfersee_am_Abend_von_Chexbres_aus_-_1895.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/alfred-lauterburg
+    ended: 1964
+    place: bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1564/
+        note: "Kunsthaus Zürich, Provenienz: «o.D. – 1964, Alfred Lauterburg, Bern»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/gottfried-keller-stiftung
+    acquired: 1964
+    method: purchase
+    place: bern
+    label: bought with a contribution from the Jubilee Foundation of the Union Bank of Switzerland
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1564/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1964, Gottfried Keller-Stiftung (Sammlung), Bundesamt für Kultur, Bern, Kauf mit einem Beitrag der Jubiläumsstiftung der Schweizerischen Bankgesellschaft»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/kunsthaus-zurich
+    role: custodian
+    acquired: 1965
+    place: zurich
+    label: on loan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1564/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1965, Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum), Zürich, Leihgabe»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1564/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1564/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1564/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  created:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q117598981
+    - url: https://collection.kunsthaus.ch/de/collection/item/1564/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  creator:
+    - accessed: 2026-11-02
+      property: P170
+      wikidata: Q117598981
+    - url: https://collection.kunsthaus.ch/de/collection/item/1564/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  materials:
+    - accessed: 2026-11-02
+      property: P186
+      wikidata: Q117598981
+  dimensions:
+    - accessed: 2026-11-02
+      property: P2048
+      wikidata: Q117598981
+    - url: https://collection.kunsthaus.ch/de/collection/item/1564/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  institution:
+    - accessed: 2026-11-02
+      property: P195
+      wikidata: Q117598981
+    - url: https://collection.kunsthaus.ch/de/collection/item/1564/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  inventory_number:
+    - accessed: 2026-11-02
+      property: P217
+      wikidata: Q117598981
+    - url: https://collection.kunsthaus.ch/de/collection/item/1564/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02

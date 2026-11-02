@@ -166,6 +166,24 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
   const x = (year: number) => labelW() + ((year - v0) / (v1 - v0)) * plotWidth();
   const yearAt = (px: number) => v0 + ((px - labelW()) / plotWidth()) * (v1 - v0);
 
+  // long names (draw): on hover the text slides left at an even pace until its end is in the column, on leaving back
+  const slide = (t: SVGTextElement, on: boolean) => {
+    const over = on ? Math.max(0, t.getComputedTextLength() - (labelW() - 20)) : 0;
+    const now = Math.abs(Number(t.dataset.shift || 0));
+    t.style.transition = `transform ${Math.max(0.25, Math.abs(over - now) / (on ? 45 : 160)).toFixed(2)}s linear`;
+    t.style.transform = `translateX(${-over}px)`;
+    t.dataset.shift = String(-over);
+  };
+  let sliding: SVGTextElement | null = null;
+  svg.addEventListener('pointerover', (e) => {
+    const t = (e.target as Element).closest?.('.row-label-long') as SVGTextElement | null;
+    if (t === sliding) return;
+    if (sliding) slide(sliding, false);
+    sliding = t;
+    if (t) slide(t, true);
+  });
+  svg.addEventListener('pointerleave', () => { if (sliding) slide(sliding, false); sliding = null; });
+
   function setView(a: number, b: number) {
     let span = Math.min(Math.max(b - a, MIN_SPAN), max - min);
     span = Math.max(span, Math.min(MIN_SPAN, max - min));
@@ -208,9 +226,13 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
     placed.forEach((s, i) => {
       if (!groups.has(s.group)) labels.push(`<text class="group-label" x="4" y="${s.heading + 13}">${escape(s.group)}</text>`);
       groups.add(s.group);
+      // a name too long for the column (owner 2026-11-02): written out whole, clipped at the column's edge, and on
+      // hover it slides along until its end shows (wireLongLabels); short names stay right-aligned
       const maxChars = Math.floor((labelW() - 12) / 6.6) - (s.indent ?? 0) * 2;
-      const short = s.label.length > maxChars ? `${s.label.slice(0, maxChars - 1)}…` : s.label;
-      labels.push(`<a href="${escape(s.href)}"><text class="row-label${s.indent ? ' row-label-sub' : ''}" x="${labelW() - 8}" y="${s.y + 14}">${s.indent ? '· '.repeat(s.indent) : ''}${escape(short)}<title>${escape(s.label)}</title></text></a>`);
+      const text = `${s.indent ? '· '.repeat(s.indent) : ''}${escape(s.label)}`;
+      labels.push(s.label.length > maxChars
+        ? `<a href="${escape(s.href)}"><g clip-path="url(#${clipId}-names)"><text class="row-label row-label-long${s.indent ? ' row-label-sub' : ''}" x="8" y="${s.y + 14}">${text}<title>${escape(s.label)}</title></text></g></a>`
+        : `<a href="${escape(s.href)}"><text class="row-label${s.indent ? ' row-label-sub' : ''}" x="${labelW() - 8}" y="${s.y + 14}">${text}<title>${escape(s.label)}</title></text></a>`);
       if (s.end < v0 || s.start > v1) return;
       const x1 = x(s.start);
       const w = Math.max(x(s.end) - x1, 3);
@@ -234,6 +256,7 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
     const ramp = (id: string, stops: [number, number][]) => `<linearGradient id="${clipId}-g${id}">${stops.map(([o, a]) => `<stop offset="${o}" stop-color="#fff" stop-opacity="${a}"/>`).join('')}</linearGradient>
       <mask id="${clipId}-fade-${id}" maskContentUnits="objectBoundingBox"><rect width="1" height="1" fill="url(#${clipId}-g${id})"/></mask>`;
     svg.innerHTML = `<defs><clipPath id="${clipId}"><rect x="${labelW()}" y="0" width="${plotW + 8}" height="${height}"/></clipPath>
+      <clipPath id="${clipId}-names"><rect x="4" y="0" width="${labelW() - 12}" height="${height}"/></clipPath>
       ${ramp('s', [[0, 0], [0.2, 1], [1, 1]])}${ramp('e', [[0, 1], [0.8, 1], [1, 0]])}${ramp('se', [[0, 0], [0.2, 1], [0.8, 1], [1, 0]])}</defs>
       <rect class="axis-band" x="${labelW()}" y="0" width="${plotW + 8}" height="${AXIS_H}"/>
       <g clip-path="url(#${clipId})">${ticks.join('')}${win}${bars.join('')}</g>

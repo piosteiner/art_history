@@ -1,0 +1,187 @@
+public_id: 108853
+title_lang: de
+title: Baum am Brienzersee vom Bödeli aus
+names:
+  - lang: de
+    role: alternative
+    text: Tree on Lake Brienz Seen from Bödeli
+creator: ferdinand-hodler
+created: 1906
+kind: painting
+medium: Oil and oil stick on canvas
+materials: [oil paint, canvas]
+dimensions: [85, 105]
+institution: kunsthaus-zurich
+inventory_number: ZKG.2023/0027
+web_url: https://collection.kunsthaus.ch/en/collection/item/1256960/
+provenance_status: a_clear
+provenance_status_note: "Kunsthaus Zürich: «kein NS-verfolgungsbedingt entzogenes Kulturgut»"
+wikidata_id: Q117596179
+metadata:
+  sources: [Wikidata Q117596179 (retrieved 2026-11-02)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Hodler_-_Baum_am_Brienzersee_vom_B%C3%B6deli_aus_-_1906.jpg/1280px-Hodler_-_Baum_am_Brienzersee_vom_B%C3%B6deli_aus_-_1906.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hodler_-_Baum_am_Brienzersee_vom_B%C3%B6deli_aus_-_1906.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/johann-friedrich-michel
+    ended: 1911
+    place: interlaken
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+        note: "Kunsthaus Zürich, Provenienz: «o.D. – 1911, Johan Friedrich Michel (*1856 Interlaken, +1940 Interlaken), Interlaken» — Quelle: sik-isea, Ferdinand Hodler. Catalogue raisonné der Gemälde, Nr. 334, https://recherche.sik-isea.ch/sik:work-6004931/in/catalogues.hodler:exp/ (02.04.2025)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: person/hans-mettler-weber
+    acquired: 1916
+    ended: 1945
+    place: st-gallen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+        note: "Kunsthaus Zürich, Provenienz: «1916 – 1945, Hans Mettler-Weber (*1876, +1945) (Sammler/-in), St. Gallen» — Quelle: sik-isea, Ferdinand Hodler. Catalogue raisonné der Gemälde, No. 334, wie oben Fussnote 3; Kat. Galerie Moos Genf 1938, No. 75, o. S.: «Coll. Hans Mettler, Saint-Gall.»; Kat. Ausstellungshalle Karlsruhe 1925, No. 213, S. 13: «H. Mettler-Weber, St. Gallen»; Kat. Kunsthaus Zürich 1917, No. 255, S. 12: «Privatbesitz»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: person/alice-mettler
+    acquired: 1964-02-22 or earlier
+    ended: 5 April 1964 or later
+    method: inheritance
+    place: zollikon
+    label: probably inherited
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+        note: "Kunsthaus Zürich, Provenienz: «spätestens ab 22.2.1964 – mindestens bis 5.4.1964, Alice Mettler, Zollikon, wohl Nachlass» — Quelle: Ausstellungsetikette auf der Werkrückseite; sik-isea, Ferdinand Hodler. Catalogue raisonné der Gemälde, Nr. 334, wie oben Fussnote 3; Kat. Kunsthaus Zürich 1964, No. 6, S. 37: «Privatbesitz Zollikon». Das Werk befand sich wohl bis zur Versteigerung der Sammlung Mettlers am 2. Juli 1979 bei den Erben von Hans Mettler."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1979-07-02
+    method: auction
+    place: london
+    label: lot 24
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+        note: "Kunsthaus Zürich, Provenienz: «2.7.1979, Christie, Manson & Woods Ltd. (Auktion), London, Lot 24» — Quelle: sik-isea, Ferdinand Hodler. Catalogue raisonné der Gemälde, Nr. 334, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/galerie-beyeler
+    role: dealer
+    acquired: 1979
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+        note: "Kunsthaus Zürich, Provenienz: «1979 – o.D., Galerie Beyeler (Kunsthandel)» — Quelle: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner_label: private collection
+    acquired: 1982
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+        note: "Kunsthaus Zürich, Provenienz: «1982 – o.D., Privatbesitz» — Quelle: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner_label: private collection
+    acquired: 1983-08-19 or earlier
+    ended: 23 October 1983 or later
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+        note: "Kunsthaus Zürich, Provenienz: «spätestens ab 19.8.1983 – mindestens bis 23.10.1983, Privatbesitz» — Quelle: Ausstellungsetikette auf der Werkrückseite."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1992-11-24
+    method: auction
+    place: zurich
+    label: lot 352
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+        note: "Kunsthaus Zürich, Provenienz: «24.11.1992, Sotheby's (Auktion), Zürich, Lot 352» — Quelle: sik-isea, Ferdinand Hodler. Catalogue raisonné der Gemälde, Nr. 334, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner_label: private collection
+    acquired: 1992
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+        note: "Kunsthaus Zürich, Provenienz: «1992 – o.D., Privatbesitz» — Quelle: sik-isea, Ferdinand Hodler. Catalogue raisonné der Gemälde, Nr. 334, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner_label: private collection
+    acquired: 2004-03-05 or earlier
+    ended: 6 June 2004 or later
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+        note: "Kunsthaus Zürich, Provenienz: «spätestens ab 5.3.2004 – mindestens bis 6.6.2004, Privatbesitz» — Quelle: Ausstellungsetikette auf der Werkrückseite."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner_label: private collection
+    ended: 2023-08-10
+    method: inheritance
+    label: probably inherited
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+        note: "Kunsthaus Zürich, Provenienz: «o.D. – 10.8.2023, Privatbesitz, wohl Nachlass» — Quelle: Schenkungsvertrag, 10.08.2023, ZKG/KHZ, Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/kunsthaus-zurich
+    acquired: 2023-08-10
+    method: gift
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+        note: "Kunsthaus Zürich, Provenienz: «ab 10.8.2023, Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum), Zürich, Geschenk» — Quelle: Wie oben Fussnote 17."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  created:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q117596179
+    - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  creator:
+    - accessed: 2026-11-02
+      property: P170
+      wikidata: Q117596179
+    - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  materials:
+    - accessed: 2026-11-02
+      property: P186
+      wikidata: Q117596179
+  dimensions:
+    - accessed: 2026-11-02
+      property: P2048
+      wikidata: Q117596179
+    - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  institution:
+    - accessed: 2026-11-02
+      property: P195
+      wikidata: Q117596179
+    - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  inventory_number:
+    - accessed: 2026-11-02
+      property: P217
+      wikidata: Q117596179
+    - url: https://collection.kunsthaus.ch/de/collection/item/1256960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02

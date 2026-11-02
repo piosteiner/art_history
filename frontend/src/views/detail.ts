@@ -16,8 +16,9 @@ import { knownPreviews } from '../previews';
 import { partNav, seriesLine } from '../series';
 import { cite, resetCitations, wireCitations } from '../cite';
 import { accessedNote, factsFor, webPage, webPageLink, withSources } from './detail-facts';
+import { wireWorkPictures } from './work-pictures';
 import { backlinks, crossedPaths, holdingsSections, relationshipSections, shownElsewhere } from './detail-sections';
-import { privateImages, privateImagesSection } from '../account';
+import { ownThumbsReady, privateImages, privateImagesSection } from '../account';
 
 /** `key`: a slug or a public number (API 085); the page then moves to the entry's canonical address (`path`). */
 export function detail(main: HTMLElement, plural: Plural, key: string) {
@@ -39,7 +40,7 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
   mapModule?.catch(() => {}); // handled where they are used; no unhandled rejection when the entry fails first
   mapData?.catch(() => {});
 
-  entry
+  Promise.all([entry, ownThumbsReady]).then(([e]) => e)   // the account's own previews (an artist's works) first
     .then((e: DetailByPlural[Plural]) => {
       if (!current()) return;
       // the canonical address (API 085): from an old slug address, a renamed slug, or a number of another type
@@ -101,6 +102,7 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
         </div>
       </article>`);
       wireImageFallbacks(main);
+      wireWorkPictures(main);
       wireLightbox(main);
       wireGalleries(main);
       knownPreviews(e.entries);

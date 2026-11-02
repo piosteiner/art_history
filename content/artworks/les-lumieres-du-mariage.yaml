@@ -1,0 +1,104 @@
+public_id: 108839
+title_lang: fr
+title: Les Lumières du mariage
+names:
+  - lang: en
+    role: translation
+    text: The Lights of Marriage
+  - lang: it
+    role: translation
+    text: Le luci del matrimonio
+  - lang: de
+    role: translation
+    text: Die Lichter der Hochzeit
+creator: marc-chagall
+created: 1945
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [123, 120]
+institution: kunsthaus-zurich
+inventory_number: 1973/0031
+web_url: https://collection.kunsthaus.ch/de/collection/item/7476/
+wikidata_id: Q3828801
+metadata:
+  sources: [Wikidata Q3828801 (retrieved 2026-11-02)]
+provenance:
+  - owner: person/ernst-gohner
+    ended: 1971
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7476/
+        note: "Kunsthaus Zürich, Provenienz: «o.D. – 1971, Ernst Göhner (*1900 Zürich, +1971 Risch) (Sammler/-in)»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: person/ernst-gohner
+    role: estate
+    acquired: 1971
+    ended: 1973
+    method: inheritance
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7476/
+        note: "Kunsthaus Zürich, Provenienz: «1971 – 1973, Nachlass Ernst Göhner, Nachlass»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/kunsthaus-zurich
+    acquired: 1973
+    method: gift
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7476/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1973, Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum), Zürich, Geschenk»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7476/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7476/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7476/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  created:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q3828801
+    - url: https://collection.kunsthaus.ch/de/collection/item/7476/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  creator:
+    - accessed: 2026-11-02
+      property: P170
+      wikidata: Q3828801
+    - url: https://collection.kunsthaus.ch/de/collection/item/7476/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  materials:
+    - accessed: 2026-11-02
+      property: P186
+      wikidata: Q3828801
+  dimensions:
+    - accessed: 2026-11-02
+      property: P2048
+      wikidata: Q3828801
+    - url: https://collection.kunsthaus.ch/de/collection/item/7476/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  institution:
+    - accessed: 2026-11-02
+      property: P195
+      wikidata: Q3828801
+    - url: https://collection.kunsthaus.ch/de/collection/item/7476/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  inventory_number:
+    - accessed: 2026-11-02
+      property: P217
+      wikidata: Q3828801
+    - url: https://collection.kunsthaus.ch/de/collection/item/7476/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02

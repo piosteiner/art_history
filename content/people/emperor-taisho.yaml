@@ -1,0 +1,71 @@
+public_id: 108940
+name: Emperor Taishō
+names:
+  - lang: ja
+    role: original
+    text: 大正天皇
+  - Yoshihito
+  - Taisho
+  - Emperor Taisho
+  - Taishou
+  - Taishō
+  - Taishō-tennō
+  - Yoshihito, Prince Haru
+  - Prince Haru
+  - Tōgu
+  - Yoshihito shinnō
+  - Haru-no-miya Yoshihito-shinnō
+  - Haru-no-miya Yoshihito-shinno
+  - Haru-no-miya Yoshihito-shinnou
+  - Yoshihito-shinnō
+  - Yoshihito-shinno
+  - Yoshihito-shinnou
+  - lang: it
+    role: translation
+    text: Taisho del Giappone
+  - lang: es
+    role: translation
+    text: Emperador Taishō
+  - lang: ko
+    role: translation
+    text: 다이쇼 천황
+  - lang: ru
+    role: translation
+    text: Император Тайсё
+kind: person
+occupations: [politician, military personnel, monarch, aristocrat]
+birth: 1879-08-31
+death: 1926-12-25
+description_md: Emperor of Japan; the era of his reign is [[taisho-era|Taishō]] — after his death he is called by its name ([[one-reign-one-era]]).
+wikidata_id: Q157052
+metadata:
+  sources: [Wikidata Q157052 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/33/Emperor_Taish%C5%8D.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emperor_Taish%C5%8D.jpg
+    license: Public domain
+    credit: Ministry of the Imperial Household
+identifiers:
+  bnf: "149768967"
+  dodis: P38088
+  gnd: "119094304"
+  idref: "118240420"
+  lc: n83219350
+  viaf: "64809883"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q157052
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q157052
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q157052
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q157052

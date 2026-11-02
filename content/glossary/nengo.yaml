@@ -1,0 +1,17 @@
+public_id: 109130
+name: nengō
+names:
+  - lang: ja
+    role: original
+    text: 年号
+category: calendar
+definition: "The Japanese era name: years are counted from the proclamation of an era — 1831 is Tenpō 2 — and the count begins anew with the next era."
+description_md: |-
+  A **nengō** (年号, also gengō 元号) names a span of years in Japan: a date in a Japanese source reads "Tenpō 2" (天保2年) rather than a year of a continuous count. The custom came from China; the first era, [[taika-era|Taika]], was proclaimed in 645, and with gaps in the 7th century eras have followed one another ever since.
+
+  An era was changed when an emperor came to the throne, but also after good omens or to turn away misfortune — a fire, an epidemic, an earthquake, the unlucky years of the sixty-year cycle ([[sexagenary-cycle]]). Many emperors therefore reigned through several eras, and an era could be as short as a few months. Since 1868 there is one era per reign ([[one-reign-one-era]]).
+
+  The first year of an era is written 元年 (gannen) rather than 1年. An era begins on the day of its proclamation, but its first year counts from the new year before it: the change from Bunsei to [[tenpo-era|Tenpō]] came in the 12th month of the year 1830, which ended in February 1831 — so 1830 is Bunsei 13 and Tenpō 1, and 1831 is Tenpō 2. Until 1872 Japan kept the lunisolar calendar, whose new year fell between late January and late February: a day early in a Gregorian year may still belong to the year before. On this site a Japanese date is also given in its era, counted in these lunar years; a day close to a new year is marked "≈".
+
+  Inscriptions, temple records, box lids, the seals on woodblock prints and the colophons of books are dated this way, which is why the era name is the date art historians read first.
+wikidata_id: Q24706

@@ -1,0 +1,118 @@
+public_id: 108858
+title_lang: de
+title: Der barmherzige Samariter
+names:
+  - lang: en
+    role: translation
+    text: The Good Samaritan
+creator: ferdinand-hodler
+created: c. 1881
+created_span: uncertain
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [45, 50.5]
+institution: kunsthaus-zurich
+inventory_number: "1284"
+web_url: https://collection.kunsthaus.ch/en/collection/item/1445/
+on_loan: true
+on_loan_since: 1920
+provenance_status: a_clear
+provenance_status_note: "Kunsthaus Zürich: «kein NS-verfolgungsbedingt entzogenes Kulturgut»"
+wikidata_id: Q131584921
+metadata:
+  sources: [Wikidata Q131584921 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6f/Ferdinand_Hodler_-_Der_barmherzige_Samariter_-_1284_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Der_barmherzige_Samariter_-_1284_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/karl-gustav-henneberg
+    acquired: 1911 or earlier
+    ended: 1918
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1445/
+        note: "Kunsthaus Zürich, Provenienz: «spätestens ab 1911 – 1918, Karl Gustav Henneberg (*1847 Görlitz, +1918 Zürich) (Sammler/-in), Zürich» — Quelle: Bätschmann/Müller 2017 III.1112, http://www.ferdinand-hodler.ch/Werke.aspx?id=6006947 (06.01.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/galerie-henneberg
+    role: agent
+    acquired: 1919-10-20
+    method: auction
+    place: zurich
+    label: lot 77
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1445/
+        note: "Kunsthaus Zürich, Provenienz: «20.10.1919, Galerie Henneberg (Auktion), Zürich, Lot 77» — Quelle: Bätschmann/Müller 2017, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/gottfried-keller-stiftung
+    acquired: 1919
+    method: purchase
+    place: bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1445/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1919, Gottfried Keller-Stiftung (Sammlung), Bundesamt für Kultur, Bern, Kauf» — Quelle: Bätschmann/Müller 2017, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/kunsthaus-zurich
+    role: custodian
+    acquired: 1920
+    place: zurich
+    label: on loan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1445/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1920, Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum), Zürich, Leihgabe» — Quelle: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1445/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1445/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1445/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  created:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q131584921
+    - url: https://collection.kunsthaus.ch/de/collection/item/1445/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  creator:
+    - accessed: 2026-11-02
+      property: P170
+      wikidata: Q131584921
+    - url: https://collection.kunsthaus.ch/de/collection/item/1445/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  materials:
+    - accessed: 2026-11-02
+      property: P186
+      wikidata: Q131584921
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1445/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  institution:
+    - accessed: 2026-11-02
+      property: P195
+      wikidata: Q131584921
+    - url: https://collection.kunsthaus.ch/de/collection/item/1445/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  inventory_number:
+    - accessed: 2026-11-02
+      property: P217
+      wikidata: Q131584921
+    - url: https://collection.kunsthaus.ch/de/collection/item/1445/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02

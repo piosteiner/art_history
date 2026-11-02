@@ -1,12 +1,24 @@
 public_id: 100188
 title_lang: de
 title: Genfersee bei Sonnenuntergang
+names:
+  - lang: en
+    role: translation
+    text: Lake Geneva at Sunset
+  - lang: fr
+    role: translation
+    text: Le Lac Léman au coucher du soleil
 creator: ferdinand-hodler
 created: 1914
+kind: painting
+medium: Oil on canvas
 materials: [oil paint, canvas]
+dimensions: [61, 90]
 institution: kunsthaus-zurich
 inventory_number: "1157"
 web_url: https://collection.kunsthaus.ch/en/collection/item/1430/
+provenance_status: a_clear
+provenance_status_note: "Kunsthaus Zürich: «kein NS-verfolgungsbedingt entzogenes Kulturgut»"
 wikidata_id: Q131584951
 metadata:
   sources: [Wikidata Q131584951 (retrieved 2026-10-09)]
@@ -47,19 +59,47 @@ provenance:
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-10-18
 sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1430/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1430/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1430/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
   created:
     - accessed: 2026-10-09
       property: P571
       wikidata: Q131584951
+    - url: https://collection.kunsthaus.ch/de/collection/item/1430/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
   creator:
     - accessed: 2026-10-09
       property: P170
       wikidata: Q131584951
+    - url: https://collection.kunsthaus.ch/de/collection/item/1430/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1430/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
   institution:
     - accessed: 2026-10-09
       property: P195
       wikidata: Q131584951
+    - url: https://collection.kunsthaus.ch/de/collection/item/1430/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
   inventory_number:
     - accessed: 2026-10-09
       property: P217
       wikidata: Q131584951
+    - url: https://collection.kunsthaus.ch/de/collection/item/1430/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02

@@ -1,0 +1,18 @@
+public_id: 108851
+name: René Victor Auberjonois
+given_name: René Victor
+family_name: Auberjonois
+birth: 1872-08-18
+death: 1957-10-11
+wikidata_id: Q683105
+metadata:
+  sources: [Wikidata Q683105 (retrieved 2026-11-02)]
+sources:
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q683105
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q683105

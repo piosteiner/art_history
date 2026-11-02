@@ -1,0 +1,106 @@
+public_id: 108857
+title_lang: de
+title: Sertigtal
+names:
+  - lang: en
+    role: translation
+    text: Sertig Valley
+creator: ernst-ludwig-kirchner
+created: 1922
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [120, 120]
+institution: kunsthaus-zurich
+inventory_number: 1950/0010
+web_url: https://collection.kunsthaus.ch/en/collection/item/124/
+provenance_status: a_clear
+provenance_status_note: "Kunsthaus Zürich: «kein NS-verfolgungsbedingt entzogenes Kulturgut»"
+wikidata_id: Q131586357
+metadata:
+  sources: [Wikidata Q131586357 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/09/Ernst_Ludwig_Kirchner_-_Sertigtal_-_1950-0010_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ernst_Ludwig_Kirchner_-_Sertigtal_-_1950-0010_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ernst Ludwig Kirchner
+provenance:
+  - owner: artist/ernst-ludwig-kirchner
+    role: estate
+    acquired: 1938-06-15
+    ended: 1950-06-13
+    method: inheritance
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/124/
+        note: "Kunsthaus Zürich, Provenienz: «15.6.1938 – 13.6.1950, Nachlass Ernst Ludwig Kirchner, Nachlass» — Quelle: Kornfeld 2021."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/kunstmuseum-basel
+    role: custodian
+    acquired: 1946-06-06
+    ended: 1950-06-13
+    label: held in custody of the artist's estate
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/124/
+        note: 'Kunsthaus Zürich, Provenienz: «6.6.1946 – 13.6.1950, Kunstmuseum Basel, Verwahrung des Kirchner-Nachlasses» — Quelle: ZKG/KHZ Inventarbuch Slg.: "Kauf aus dem im Kunstmuseum Basel deponierten Nachlass des Künstlers"; Sitzungsprotokoll der Sammlungskommission, 01.02.1950 II. 7, 14.03.1950 I., 13.06.1950 I., 25.02.1951 VI.e., Archiv ZKG/KHZ, 10.30.10.42a. Wie oben Fussnote 2, S. 12.'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/kunsthaus-zurich
+    acquired: 1950-06-13
+    method: purchase
+    place: zurich
+    label: bought from the artist’s estate deposited at the Kunstmuseum Basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/124/
+        note: "Kunsthaus Zürich, Provenienz: «ab 13.6.1950, Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum), Zürich, Kauf aus dem im Kunstmuseum Basel deponierten Nachlass des Künstlers» — Quelle: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/124/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/124/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/124/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  created:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q131586357
+    - url: https://collection.kunsthaus.ch/de/collection/item/124/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  creator:
+    - accessed: 2026-11-02
+      property: P170
+      wikidata: Q131586357
+    - url: https://collection.kunsthaus.ch/de/collection/item/124/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  materials:
+    - accessed: 2026-11-02
+      property: P186
+      wikidata: Q131586357
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/124/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  institution:
+    - accessed: 2026-11-02
+      property: P195
+      wikidata: Q131586357
+    - url: https://collection.kunsthaus.ch/de/collection/item/124/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  inventory_number:
+    - accessed: 2026-11-02
+      property: P217
+      wikidata: Q131586357
+    - url: https://collection.kunsthaus.ch/de/collection/item/124/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02

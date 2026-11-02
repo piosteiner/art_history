@@ -1,0 +1,33 @@
+public_id: 108891
+name: Biberist
+names:
+  - Biberist SO
+  - lang: zh
+    role: translation
+    text: 比伯里斯特
+  - lang: ru
+    role: translation
+    text: Биберист
+kind: settlement
+parent: wasseramt-district
+country_code: CH
+location: [7.55861, 47.18278]
+wikidata_id: Q66723
+metadata:
+  sources: [Wikidata Q66723 (retrieved 2026-11-02)]
+identifiers:
+  gnd: 4088266-4
+  hls: "001121"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q66723
+  parent:
+    - accessed: 2026-11-02
+      property: P131
+      wikidata: Q66723
+  location:
+    - accessed: 2026-11-02
+      property: P625
+      wikidata: Q66723

@@ -1,0 +1,38 @@
+public_id: 108881
+name: Oscar Miller
+given_name: Oscar
+family_name: Miller
+names:
+  - Ernst Oscar Miller
+  - lang: ru
+    role: translation
+    text: Оскар Миллер
+kind: person
+occupations: [politician, art collector, entrepreneur]
+birth: 1862-11-25
+death: 1934-04-05
+wikidata_id: Q1236641
+metadata:
+  sources: [Wikidata Q1236641 (retrieved 2026-11-02)]
+identifiers:
+  gnd: "120572060"
+  hls: "030217"
+  lc: nr00002133
+  viaf: "20515365"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q1236641
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q1236641
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q1236641
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q1236641

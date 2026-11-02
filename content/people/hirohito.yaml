@@ -1,0 +1,56 @@
+public_id: 108941
+name: Hirohito
+names:
+  - lang: ja
+    role: original
+    text: 昭和天皇
+  - Emperor Showa
+  - Emperor Hirohito
+  - Prince Michi
+  - Emperor Shōwa
+  - Showa
+  - Shōwa
+  - lang: ko
+    role: translation
+    text: 쇼와 천황
+  - lang: ru
+    role: translation
+    text: Император Сёва
+kind: person
+occupations: [military personnel, diplomat, marine biologist, zoologist, monarch, aristocrat, scientific collector]
+birth: 1901-04-29
+death: 1989-01-07
+description_md: Emperor of Japan; the era of his reign is [[showa-era-1926|Shōwa]] — after his death he is called by its name ([[one-reign-one-era]]).
+wikidata_id: Q34479
+metadata:
+  sources: [Wikidata Q34479 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/44/Hirohito_in_dress_uniform.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hirohito_in_dress_uniform.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "121170893"
+  dodis: P66
+  gnd: "118639641"
+  idref: "029573629"
+  lc: n80056896
+  nlk: KAC201718522
+  viaf: "87910387"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q34479
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q34479
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q34479
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q34479

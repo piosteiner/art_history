@@ -1,0 +1,55 @@
+public_id: 108943
+name: Naruhito
+names:
+  - lang: ja
+    role: original
+    text: 徳仁
+  - Emperor Naruhito
+  - Naruhito, Emperor of Japan
+  - Japanese Emperor Naruhito
+  - Naruhito, Prince Hiro
+  - Prince Hiro
+  - Hiro-no-miya
+  - Naruhito, Crown Prince Hiro of Japan
+  - Crown Prince Hiro of Japan
+  - Crown Prince Naruhito of Japan
+  - Naruhito, Crown Prince of Japan
+  - Prince Naruhito
+  - lang: zh
+    role: translation
+    text: 德仁
+  - lang: ko
+    role: translation
+    text: 나루히토
+  - lang: ru
+    role: translation
+    text: Нарухито
+kind: person
+occupations: [monarch, aristocrat]
+birth: 1960-02-23
+description_md: Emperor of Japan; the era of his reign is [[reiwa-era|Reiwa]] — Japanese dates of his reign are written in it ([[one-reign-one-era]]).
+wikidata_id: Q217096
+metadata:
+  sources: [Wikidata Q217096 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ec/Emperor_Naruhito_20250611_%2854582524056%2C_cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emperor_Naruhito_20250611_(54582524056,_cropped).jpg
+    license: Public domain
+    credit: Presidencia de Guatemala
+identifiers:
+  gnd: "132078481"
+  lc: n82121881
+  viaf: "33149676"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q217096
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q217096
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q217096

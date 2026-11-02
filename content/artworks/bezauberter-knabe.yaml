@@ -1,0 +1,115 @@
+public_id: 108861
+title_lang: de
+title: Bezauberter Knabe
+names:
+  - lang: de
+    role: alternative
+    text: Studie zu «Anbetung» (Knabe stehend)
+  - lang: en
+    role: translation
+    text: Delighted Boy
+  - lang: fr
+    role: translation
+    text: Le Garçon enchanté
+creator: ferdinand-hodler
+created: 1893/1894
+created_label: c. 1890s
+created_span: uncertain
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [106, 70]
+institution: kunsthaus-zurich
+inventory_number: "1042"
+web_url: https://collection.kunsthaus.ch/en/collection/item/1158/
+on_loan: true
+on_loan_since: 1914
+provenance_status: a_clear
+provenance_status_note: "Kunsthaus Zürich: «kein NS-verfolgungsbedingt entzogenes Kulturgut»"
+wikidata_id: Q131584723
+metadata:
+  sources: [Wikidata Q131584723 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8c/Ferdinand_Hodler_-_Bezauberter_Knabe_-_1042_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Bezauberter_Knabe_-_1042_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/oscar-miller
+    acquired: 1899
+    ended: 1914
+    method: purchase
+    place: biberist
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1158/
+        note: "Kunsthaus Zürich, Provenienz: «1899 – 1914, Oscar Miller (*1862, +1934 Bern), Biberist, Kauf» — Quelle: Bätschmann/Müller 2017 III.1227, http://www.ferdinand-hodler.ch/Werke.aspx?id=9905398 (05.01.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/gottfried-keller-stiftung
+    acquired: 1914
+    method: purchase
+    place: bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1158/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1914, Gottfried Keller-Stiftung (Sammlung), Bundesamt für Kultur, Bern, Kauf» — Quelle: Bätschmann/Müller 2017, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/kunsthaus-zurich
+    role: custodian
+    acquired: 1914
+    place: zurich
+    label: on loan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1158/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1914, Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum), Zürich, Leihgabe» — Quelle: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1158/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1158/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1158/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  created:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q131584723
+    - url: https://collection.kunsthaus.ch/de/collection/item/1158/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  creator:
+    - accessed: 2026-11-02
+      property: P170
+      wikidata: Q131584723
+    - url: https://collection.kunsthaus.ch/de/collection/item/1158/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  materials:
+    - accessed: 2026-11-02
+      property: P186
+      wikidata: Q131584723
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1158/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  institution:
+    - accessed: 2026-11-02
+      property: P195
+      wikidata: Q131584723
+    - url: https://collection.kunsthaus.ch/de/collection/item/1158/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  inventory_number:
+    - accessed: 2026-11-02
+      property: P217
+      wikidata: Q131584723
+    - url: https://collection.kunsthaus.ch/de/collection/item/1158/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02

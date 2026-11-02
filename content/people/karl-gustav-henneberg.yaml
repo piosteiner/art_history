@@ -1,0 +1,32 @@
+public_id: 108875
+name: Karl Gustav Henneberg
+given_name: Karl Gustav
+family_name: Henneberg
+kind: person
+occupations: [businessperson]
+birth: 1847-11-19
+death: 1918-12-15
+wikidata_id: Q77731279
+metadata:
+  sources: [Wikidata Q77731279 (retrieved 2026-11-02)]
+identifiers:
+  gnd: "1080613099"
+  hls: "030984"
+  viaf: "305441166"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q77731279
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q77731279
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q77731279
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q77731279

@@ -1,7 +1,21 @@
 public_id: 107692
-title: Fishnets Drying in the Sun
+title_lang: jp
+title: "{ 網干図|あぼしず}{屏風 |びょうぶ}"
+names:
+  - lang: en
+    role: translation
+    text: Drying Fish-nets Screens
+    sources:
+      - url: https://shozokan.nich.go.jp/en/collection/object/SZK002971
+        source: shozokan-nich-go-jp
+        accessed: 2026-11-02
+  - lang: en
+    role: alternative
+    text: Fishnets Drying in the Sun
+    sources:
+      - source: history-of-japanese-art
 creator: kaiho-yusho
-created: 17th century
+created: 1602/1605
 created_span: uncertain
 kind: byōbu
 medium: Pair of six-panel screens, colour and gold leaf on paper
@@ -9,6 +23,8 @@ materials: [paper, gold leaf]
 dimensions: [160, 351]
 dimensions_note: each screen
 institution: museum-of-the-imperial-collections
+inventory_number: SZK002971
+web_url: https://shozokan.nich.go.jp/en/collection/object/SZK002971
 description_md: "A pair of screens by [[artist/kaiho-yusho]] in colour on gold: from the right, a bold stand of marsh grass in bright green and a narrow band of water; then nets hung out to dry on poles, gold serving as shore and sky. The left screen repeats the elements with more weight on the nets — without figures, an ethereal realm far from the bustle of a fishing village. [[source/history-of-japanese-art|p. 266, fig. 305]]"
 relationships:
   - type: associated_with
@@ -24,11 +40,15 @@ sources:
     - source: history-of-japanese-art
       locator: p. 266, fig. 305
   created:
-    - source: history-of-japanese-art
-      locator: p. 266, fig. 305
+    - url: https://shozokan.nich.go.jp/en/collection/object/SZK002971
+      source: shozokan-nich-go-jp
+      accessed: 2026-11-02
   creator:
     - source: history-of-japanese-art
       locator: p. 266, fig. 305
+    - url: https://shozokan.nich.go.jp/en/collection/object/SZK002971
+      source: shozokan-nich-go-jp
+      accessed: 2026-11-02
   materials:
     - source: history-of-japanese-art
       locator: p. 266, fig. 305
@@ -38,3 +58,10 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: p. 266, fig. 305
+    - url: https://shozokan.nich.go.jp/en/collection/object/SZK002971
+      source: shozokan-nich-go-jp
+      accessed: 2026-11-02
+  inventory_number:
+    - url: https://shozokan.nich.go.jp/en/collection/object/SZK002971
+      source: shozokan-nich-go-jp
+      accessed: 2026-11-02

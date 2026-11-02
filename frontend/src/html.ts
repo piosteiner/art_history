@@ -494,3 +494,21 @@ export function linksInNewTab(root: Element, within: string, keep: (href: string
     a.rel = 'noopener';
   }, true);
 }
+
+/**
+ * The logged-in owner's reference images as previews (account.ts, owner 2026-11-02): for a work without a public
+ * picture its first private one — loaded straight from the admin host with the login's cookie, never through the
+ * API's thumbnail service. Empty for visitors.
+ */
+let ownThumbs: Record<string, string> = {};
+export const setOwnThumbs = (m: Record<string, string>) => { ownThumbs = m; };
+export const ownThumb = (slug: string, width: 250 | 500 = 250) => (ownThumbs[slug] ? `${ownThumbs[slug]}?w=${width}` : null);
+/** A preview <img>: a public picture through thumb(), else the owner's own (marked, without CORS mode). */
+export function previewImg(url: string | null | undefined, slug: string | null, width: number, cls = '') {
+  if (url) {
+    const small = thumb(url, width);
+    return html`<img${cls ? html` class="${cls}"` : ''} src="${small}" alt="" loading="lazy" crossorigin="anonymous" data-full="${url}"${small !== url ? html` data-fallback="${url}"` : ''}>`;
+  }
+  const own = slug ? ownThumb(slug, width > 250 ? 500 : 250) : null;
+  return own ? html`<img class="${cls ? `${cls} own-image` : 'own-image'}" src="${own}" alt="" loading="lazy" title="your reference image (private)">` : null;
+}

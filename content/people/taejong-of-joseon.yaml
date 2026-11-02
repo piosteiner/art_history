@@ -1,0 +1,65 @@
+public_id: 108955
+name: Taejong of Joseon
+names:
+  - lang: ko
+    role: original
+    text: 이방원
+  - Li Fangyuan
+  - Taizong
+  - Gongding
+  - Shengdeshengongwenwuguangxiaodaiwang
+  - Yide
+  - Lee Bang Won
+  - Yi Bang Won
+  - Yi Bang-won
+  - Duke Jeongan
+  - lang: nl
+    role: translation
+    text: Taejong van Joseon
+  - lang: fr
+    role: translation
+    text: Taejong
+  - lang: it
+    role: translation
+    text: Taejong di Joseon
+  - lang: ja
+    role: translation
+    text: 太宗
+  - lang: zh
+    role: translation
+    text: 朝鲜太宗
+  - lang: ko
+    role: original
+    text: 태종
+  - lang: ru
+    role: translation
+    text: Тхэджон
+kind: person
+occupations: [chinovnik, ruler]
+birth: 1367-05-24
+death: 1422-05-19
+description_md: "King of Joseon. Korean sources date the years of his reign by his name: see [[taejong-reign-years|Taejong (reign years)]]."
+wikidata_id: Q14304
+metadata:
+  sources: [Wikidata Q14304 (retrieved 2026-11-02)]
+identifiers:
+  lc: n85012213
+  nlk: KAC201623470
+  viaf: "48183403"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q14304
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q14304
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q14304
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q14304

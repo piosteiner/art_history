@@ -1,0 +1,33 @@
+public_id: 108889
+name: Elektrowatt
+names:
+  - lang: ja
+    role: translation
+    text: エレクトロワット
+founded: 1895
+place: zurich
+location: [8.54979, 47.35738]
+address: Bellerivestrasse 36 8036 Zürich
+wikidata_id: Q1327655
+metadata:
+  sources: [Wikidata Q1327655 (retrieved 2026-11-02)]
+identifiers:
+  gnd: 275615-8
+  hls: "041791"
+sources:
+  place:
+    - accessed: 2026-11-02
+      property: P131
+      wikidata: Q1327655
+  address:
+    - accessed: 2026-11-02
+      property: P6375
+      wikidata: Q1327655
+  founded:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q1327655
+  location:
+    - accessed: 2026-11-02
+      property: P625
+      wikidata: Q1327655

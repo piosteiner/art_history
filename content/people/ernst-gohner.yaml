@@ -1,0 +1,37 @@
+public_id: 108872
+name: Ernst Göhner
+given_name: Ernst
+family_name: Göhner
+names: [Ernst Goehner]
+kind: person
+occupations: [businessperson]
+birth: 1900-02-28
+death: 1971-11-24
+wikidata_id: Q1358414
+metadata:
+  sources: [Wikidata Q1358414 (retrieved 2026-11-02)]
+identifiers:
+  dodis: P23048
+  gnd: "118540106"
+  hls: "030953"
+  idref: "174925778"
+  lc: n82093272
+  ulan: "500276946"
+  viaf: "32788110"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q1358414
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q1358414
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q1358414
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q1358414

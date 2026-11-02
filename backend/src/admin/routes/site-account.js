@@ -6,6 +6,7 @@
 //   GET  /site/artworks/:slug/private-images    {images: [{url, source, locator, width, height}]} — this account's only
 //   GET  /site/quiz/<image|artist|movement|glossary>?…   the quiz (src/routes/quiz.js) with this account's private
 //                                               images counted as pictures too ({image_url, own: true}); ?mine=only
+//   GET  /site/thumbs                           {images: {slug: address}} — works with only this account's images
 //   POST /site/logout                           ends the session (the CMS's too: it is the same one)
 // The images themselves: GET /private-images/:id (routes/private-images.js), owner-only as before.
 const express = require('express');
@@ -49,6 +50,15 @@ router.get('/quiz/:kind', async (req, res) => {
   res.set('Cache-Control', 'no-store');
   const game = await forAccount(req.params.kind, req.query, { db: adminPool, owner: req.user.id, origin: adminOrigin(req) });
   return game ? res.json(game) : res.status(404).json({ error: 'not_found' });
+});
+
+// the owner's pictures as previews of works without a public one (owner 2026-11-02): slug → a small rendition
+router.get('/thumbs', async (req, res) => {
+  if (!req.user) return res.status(401).json({ error: 'not_logged_in' });
+  res.set('Cache-Control', 'no-store');
+  const { rows } = await adminPool.query(`SELECT DISTINCT ON (a.id) a.slug, i.id FROM private_images i JOIN artworks a ON a.id = i.artwork_id
+     WHERE i.owner_id = $1 AND NOT EXISTS (SELECT 1 FROM images p WHERE p.artwork_id = a.id) ORDER BY a.id, i.created_at, i.id`, [req.user.id]);
+  res.json({ images: Object.fromEntries(rows.map((r) => [r.slug, `${adminOrigin(req)}/private-images/${r.id}`])) });
 });
 
 router.post('/logout', async (req, res) => {

@@ -1,0 +1,66 @@
+public_id: 108885
+name: Kunstmuseum Basel
+names:
+  - Basler Kunstmuseum
+  - Kunstmuseum mit Kupferstichkabinett
+  - Kunstsammlung Basel
+  - lang: fr
+    role: translation
+    text: Kunstmuseum Bâle
+  - lang: es
+    role: translation
+    text: Museo de Arte de Basilea
+  - lang: ja
+    role: translation
+    text: バーゼル市立美術館
+  - lang: zh
+    role: translation
+    text: 巴塞爾美術館
+  - lang: ko
+    role: translation
+    text: 바젤 시립 미술관
+  - lang: ru
+    role: translation
+    text: Базельский художественный музей
+kind: museum
+founded: 1661
+place: basel
+location: [7.59417, 47.55417]
+address: St. Alban-Graben 16
+website_url: https://kunstmuseumbasel.ch/
+wikidata_id: Q194626
+metadata:
+  sources: [Wikidata Q194626 (retrieved 2026-11-02)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Basel_-_2017_-_Kunstmuseum_Basel_-_Altbau.jpg/1280px-Basel_-_2017_-_Kunstmuseum_Basel_-_Altbau.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Basel_-_2017_-_Kunstmuseum_Basel_-_Altbau.jpg
+    license: FAL
+    credit: Wladyslaw Sojka
+identifiers:
+  bnf: 11866434s
+  gnd: 2077960-4
+  idref: "026412748"
+  lc: n79079575
+  ulan: "500279332"
+  viaf: "158993979"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q194626
+  place:
+    - accessed: 2026-11-02
+      property: P131
+      wikidata: Q194626
+  address:
+    - accessed: 2026-11-02
+      property: P6375
+      wikidata: Q194626
+  founded:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q194626
+  location:
+    - accessed: 2026-11-02
+      property: P625
+      wikidata: Q194626

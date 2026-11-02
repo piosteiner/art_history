@@ -1,0 +1,13 @@
+public_id: 109134
+name: sexagenary cycle
+names:
+  - lang: zh-Hant
+    role: original
+    text: 干支
+category: calendar
+definition: "The cycle of sixty years (干支, Japanese eto or kanshi, Korean ganji) that names each year by one of ten stems and one of twelve branches: 1984 was 甲子."
+description_md: |-
+  The **sexagenary cycle** (干支) names years — and days — in China, Japan and Korea by pairing one of ten heavenly stems (甲乙丙丁戊己庚辛壬癸) with one of twelve earthly branches (子丑寅卯辰巳午未申酉戌亥, the animals of the zodiac). The pairs repeat every sixty years: 1924 and 1984 were both 甲子, the first year of a cycle.
+
+  Many dates name the year this way beside the era name ([[nengo]], [[nianhao]], [[korean-reign-years]]), and some years of the cycle were held to be dangerous — eras were changed at their beginning. A sixtieth birthday (kanreki) completes one cycle. On this site a date that lies within one year is also given its cyclical name.
+wikidata_id: Q246658

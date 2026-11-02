@@ -1,0 +1,102 @@
+public_id: 108845
+title_lang: fr
+title: La Fenêtre sur l’île de Bréhat
+names:
+  - lang: de
+    role: translation
+    text: Das Fenster auf der île de Bréhat
+  - lang: en
+    role: translation
+    text: Window View on the Isle of Bréhat
+creator: marc-chagall
+created: 1924
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [100.5, 73.5]
+institution: kunsthaus-zurich
+inventory_number: 1970/0020
+web_url: https://collection.kunsthaus.ch/en/collection/item/173/
+on_loan: true
+on_loan_since: 1970
+wikidata_id: Q131585417
+metadata:
+  sources: [Wikidata Q131585417 (retrieved 2026-11-02)]
+provenance:
+  - owner: person/gustav-zumsteg
+    ended: 1970
+    method: purchase
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/173/
+        note: "Kunsthaus Zürich, Provenienz: «o.D. – 1970, Gustav Zumsteg (*1915 Zürich, +2005 Zürich) (Sammler/-in), Zürich, Kauf» — Quelle: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 639: «Erworben vom Künstler»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1970
+    method: gift
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/173/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1970, Vereinigung Zürcher Kunstfreunde (Sammlung), Zürich, Geschenk» — Quelle: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/kunsthaus-zurich
+    role: custodian
+    acquired: 1970
+    place: zurich
+    label: on loan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/173/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1970, Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum), Zürich, Leihgabe» — Quelle: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/173/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/173/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/173/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  created:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q131585417
+    - url: https://collection.kunsthaus.ch/de/collection/item/173/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  creator:
+    - accessed: 2026-11-02
+      property: P170
+      wikidata: Q131585417
+    - url: https://collection.kunsthaus.ch/de/collection/item/173/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  materials:
+    - accessed: 2026-11-02
+      property: P186
+      wikidata: Q131585417
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/173/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  institution:
+    - accessed: 2026-11-02
+      property: P195
+      wikidata: Q131585417
+    - url: https://collection.kunsthaus.ch/de/collection/item/173/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  inventory_number:
+    - accessed: 2026-11-02
+      property: P217
+      wikidata: Q131585417
+    - url: https://collection.kunsthaus.ch/de/collection/item/173/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02

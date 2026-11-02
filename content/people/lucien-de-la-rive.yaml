@@ -1,0 +1,36 @@
+public_id: 108876
+name: Lucien de la Rive
+given_name: Lucien
+family_name: de la Rive
+names: [Charles Lucien de la Rive]
+kind: person
+occupations: [physicist, translator]
+birth: 1834-04-03
+death: 1924-05-04
+wikidata_id: Q1873433
+metadata:
+  sources: [Wikidata Q1873433 (retrieved 2026-11-02)]
+identifiers:
+  bnf: 12566549q
+  gnd: "1059729598"
+  hls: "028807"
+  idref: "031828108"
+  lc: n91079288
+  viaf: "2589744"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q1873433
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q1873433
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q1873433
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q1873433

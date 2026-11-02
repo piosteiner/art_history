@@ -1,0 +1,34 @@
+public_id: 108880
+name: Max Geldner
+given_name: Max
+family_name: Geldner
+kind: person
+occupations: [art collector, philanthropist, businessperson, association football player]
+birth: 1875-03-25
+death: 1958-07-17
+wikidata_id: Q57420537
+metadata:
+  sources: [Wikidata Q57420537 (retrieved 2026-11-02)]
+identifiers:
+  bnf: 14418096d
+  gnd: "122273222"
+  hls: "029900"
+  lc: nr00028665
+  viaf: "45178704"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q57420537
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q57420537
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q57420537
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q57420537

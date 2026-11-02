@@ -1,0 +1,13 @@
+public_id: 109133
+name: nianhao
+names:
+  - lang: zh-Hant
+    role: original
+    text: 年號
+category: calendar
+definition: "The Chinese era name: years are counted within an era proclaimed by the emperor — under the Ming and Qing one era per reign, by which the emperor is known (the Qianlong Emperor)."
+description_md: |-
+  A **nianhao** (年號) names a span of years in China, from the reign of Emperor Wu of Han (140 BCE) to the end of the empire in 1912. Early emperors changed the era often; under the Ming (from 1368) and the Qing each emperor kept one, and is known by it: the Kangxi, Qianlong or Jiaqing Emperor. Reign marks on porcelain — "made in the Xuande reign of the Great Ming" — use these names.
+
+  Japan ([[nengo]]) and Korea ([[korean-reign-years]]) took the custom from China. On this site a Chinese date of the Ming or Qing is also given in its era.
+wikidata_id: Q845538

@@ -1,0 +1,16 @@
+public_id: 108894
+name: Interlaken-Oberhasli administrative district
+kind: site
+location: [7.86667, 46.68333]
+wikidata_id: Q678742
+metadata:
+  sources: [Wikidata Q678742 (retrieved 2026-11-02)]
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q678742
+  location:
+    - accessed: 2026-11-02
+      property: P625
+      wikidata: Q678742

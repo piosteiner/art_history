@@ -1,0 +1,32 @@
+public_id: 108883
+name: Max G. Bollag
+given_name: Max G.
+family_name: Bollag
+names: [Max Bollag]
+kind: person
+occupations: [art dealer, gallerist]
+birth: 1913-12-06
+death: 2005-09-13
+wikidata_id: Q1289534
+metadata:
+  sources: [Wikidata Q1289534 (retrieved 2026-11-02)]
+identifiers:
+  gnd: "1089440006"
+  viaf: "845145858099523022227"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q1289534
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q1289534
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q1289534
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q1289534

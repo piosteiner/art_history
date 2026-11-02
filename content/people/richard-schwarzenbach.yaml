@@ -1,0 +1,31 @@
+public_id: 108879
+name: Richard Schwarzenbach
+given_name: Richard
+family_name: Schwarzenbach
+kind: person
+occupations: [patron of the arts]
+birth: 1863
+death: 1908
+wikidata_id: Q55887645
+metadata:
+  sources: [Wikidata Q55887645 (retrieved 2026-11-02)]
+identifiers:
+  gnd: "1017958556"
+  viaf: "220960647"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q55887645
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q55887645
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q55887645
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q55887645

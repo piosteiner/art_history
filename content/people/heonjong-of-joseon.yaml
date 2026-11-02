@@ -1,0 +1,68 @@
+public_id: 108947
+name: Heonjong of Joseon
+names:
+  - kind: art_name
+    role: alternative
+    text: 원헌
+  - lang: ko
+    role: original
+    text: 이환
+  - Li Huan
+  - lang: nl
+    role: translation
+    text: Heonjong van Joseon
+  - lang: fr
+    role: translation
+    text: Heonjong
+  - lang: it
+    role: translation
+    text: Heonjong di Joseon
+  - lang: es
+    role: translation
+    text: Heonjong de Joseon
+  - lang: ja
+    role: translation
+    text: 憲宗
+  - lang: zh
+    role: translation
+    text: 朝鮮憲宗
+  - lang: ko
+    role: original
+    text: 조선 헌종
+  - lang: ru
+    role: translation
+    text: Хонджон
+kind: person
+occupations: [calligrapher]
+birth: 1827-07-18
+death: 1849-06-06
+description_md: "King of Joseon. Korean sources date the years of his reign by his name: see [[heonjong-reign-years|Heonjong (reign years)]]."
+wikidata_id: Q484966
+metadata:
+  sources: [Wikidata Q484966 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4e/%ED%97%8C%EC%A2%85%EC%96%B4%EC%A7%84.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%ED%97%8C%EC%A2%85%EC%96%B4%EC%A7%84.jpg
+    license: CC BY-SA 4.0
+    credit: Jo Seokjin / An Jung-sik
+identifiers:
+  lc: n86133473
+  nlk: KAC201622816
+  viaf: "16256032"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q484966
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q484966
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q484966
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q484966

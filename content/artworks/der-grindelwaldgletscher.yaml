@@ -1,0 +1,112 @@
+public_id: 108865
+title_lang: de
+title: Der Grindelwaldgletscher
+names:
+  - lang: en
+    role: translation
+    text: The Grindelwald Glacier
+creator: ferdinand-hodler
+created: 1912
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [94, 81]
+institution: kunsthaus-zurich
+inventory_number: "1964"
+web_url: https://collection.kunsthaus.ch/en/collection/item/1014/
+provenance_status: a_clear
+provenance_status_note: "Kunsthaus Zürich: «kein NS-verfolgungsbedingt entzogenes Kulturgut»"
+wikidata_id: Q117536797
+metadata:
+  sources: [Wikidata Q117536797 (retrieved 2026-11-02)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Der_Grindelwaldgletscher%2C_1912_-_Ferdinand_Hodler_%28Kunsthaus_Z%C3%BCrich%29.jpg/1280px-Der_Grindelwaldgletscher%2C_1912_-_Ferdinand_Hodler_%28Kunsthaus_Z%C3%BCrich%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Der_Grindelwaldgletscher,_1912_-_Ferdinand_Hodler_(Kunsthaus_Z%C3%BCrich).jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/willy-russ-young
+    acquired: 1917
+    place: neuchatel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1014/
+        note: "Kunsthaus Zürich, Provenienz: «1917, Willy Russ (*1877 Neuenburg, +1959 Neuenburg), Neuenburg» — Quelle: Bätschmann/Müller 2008 I.471, http://www.ferdinand-hodler.ch/Werke.aspx?id=6004773 (05.01.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: person/alfred-rutschi
+    ended: 1929
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1014/
+        note: "Kunsthaus Zürich, Provenienz: «o.D. – 1929, Alfred Rütschi (*1868, +1929 München) (Sammler/-in)» — Quelle: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 286."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: person/alfred-rutschi
+    role: estate
+    acquired: 1929
+    method: inheritance
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1014/
+        note: "Kunsthaus Zürich, Provenienz: «1929, Erben Alfred Rütschi, Erbe»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/kunsthaus-zurich
+    acquired: 1929
+    method: gift
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1014/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1929, Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum), Zürich, Geschenk» — Quelle: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1014/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1014/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1014/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  created:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q117536797
+    - url: https://collection.kunsthaus.ch/de/collection/item/1014/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  creator:
+    - accessed: 2026-11-02
+      property: P170
+      wikidata: Q117536797
+    - url: https://collection.kunsthaus.ch/de/collection/item/1014/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  materials:
+    - accessed: 2026-11-02
+      property: P186
+      wikidata: Q117536797
+  dimensions:
+    - accessed: 2026-11-02
+      property: P2048
+      wikidata: Q117536797
+    - url: https://collection.kunsthaus.ch/de/collection/item/1014/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  institution:
+    - accessed: 2026-11-02
+      property: P195
+      wikidata: Q117536797
+    - url: https://collection.kunsthaus.ch/de/collection/item/1014/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  inventory_number:
+    - accessed: 2026-11-02
+      property: P217
+      wikidata: Q117536797
+    - url: https://collection.kunsthaus.ch/de/collection/item/1014/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02

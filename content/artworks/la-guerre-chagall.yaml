@@ -1,0 +1,101 @@
+public_id: 108840
+title_lang: fr
+title: La Guerre
+names:
+  - lang: en
+    role: translation
+    text: The War
+  - lang: de
+    role: translation
+    text: Der Krieg
+  - lang: en
+    role: translation
+    text: War
+creator: marc-chagall
+created: 1960s
+created_span: uncertain
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [163, 231]
+institution: kunsthaus-zurich
+inventory_number: 1967/0051
+web_url: https://collection.kunsthaus.ch/en/collection/item/320/
+on_loan: true
+on_loan_since: 1967
+wikidata_id: Q62567848
+metadata:
+  sources: [Wikidata Q62567848 (retrieved 2026-11-02)]
+provenance:
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1967
+    method: purchase
+    place: zurich
+    label: bought from the exhibition at the Kunsthaus
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/320/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1967, Vereinigung Zürcher Kunstfreunde (Sammlung), Zürich, Kauf aus der Ausstellung im Kunsthaus Zürich»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+  - owner: institution/kunsthaus-zurich
+    role: custodian
+    acquired: 1967
+    place: zurich
+    label: on loan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/320/
+        note: "Kunsthaus Zürich, Provenienz: «ab 1967, Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum), Zürich, Leihgabe»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/320/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/320/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/320/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  created:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q62567848
+    - url: https://collection.kunsthaus.ch/de/collection/item/320/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  creator:
+    - accessed: 2026-11-02
+      property: P170
+      wikidata: Q62567848
+    - url: https://collection.kunsthaus.ch/de/collection/item/320/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  materials:
+    - accessed: 2026-11-02
+      property: P186
+      wikidata: Q62567848
+  dimensions:
+    - accessed: 2026-11-02
+      property: P2048
+      wikidata: Q62567848
+    - url: https://collection.kunsthaus.ch/de/collection/item/320/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  institution:
+    - accessed: 2026-11-02
+      property: P195
+      wikidata: Q62567848
+    - url: https://collection.kunsthaus.ch/de/collection/item/320/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02
+  inventory_number:
+    - accessed: 2026-11-02
+      property: P217
+      wikidata: Q62567848
+    - url: https://collection.kunsthaus.ch/de/collection/item/320/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-02

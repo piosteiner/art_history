@@ -1,8 +1,9 @@
+import { ownThumbsReady } from '../account';
 import { applySuggestion, listAll, listEntities, suggest } from '../api';
 import { describeQuery, parseQuery } from '../query';
 import { replaceUrl } from '../router';
 import { ofVersions, partLabel, wholeKind } from '../series';
-import { countryName, countryText, creatorNames, creatorsOf, dateLabel, displayName, link, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, render, thumb, type Html } from '../html';
+import { countryName, countryText, creatorNames, creatorsOf, dateLabel, displayName, link, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, previewImg, render, type Html } from '../html';
 import type { NameEntry } from '../types';
 
 /** The original-language name, shown small on the card ("神奈川沖浪裏"). */
@@ -86,7 +87,7 @@ export function card(plural: Plural, item: AnyItem, words: string[] = [], why: H
   const { name, date, detail, image } = cardParts(plural, item);
   return html`<li class="card">
     <a class="card-link" href="${href(plural, item.slug)}">
-      ${image ? html`<img class="card-img" src="${thumb(image, 250)}" alt="" loading="lazy" crossorigin="anonymous" data-full="${image}"${thumb(image, 250) !== image ? html` data-fallback="${image}"` : ''}>` : html`<span class="card-img card-img-empty" aria-hidden="true"></span>`}
+      ${previewImg(image, plural === 'artworks' ? item.slug : null, 250, 'card-img') ?? html`<span class="card-img card-img-empty" aria-hidden="true"></span>`}
       <span class="card-text">
         ${typeLabel ? html`<span class="card-type">${typeLabel}</span>` : ''}
         <span class="card-name"${langAttr(displayName(item as never).lang)}>${highlight(name, words)}</span>
@@ -310,7 +311,7 @@ export function list(main: HTMLElement, plural: Plural) {
     void search(filter.value.trim());
   });
 
-  listAll(plural)
+  Promise.all([listAll(plural), ownThumbsReady]).then(([res]) => res)
     .then((res) => {
       if (!current()) return;
       all = entries(plural, res.data as ItemByPlural[typeof plural][]) as Entry<AnyItem>[];

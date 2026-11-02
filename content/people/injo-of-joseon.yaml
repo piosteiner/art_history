@@ -1,0 +1,64 @@
+public_id: 108948
+name: Injo of Joseon
+names:
+  - kind: art_name
+    role: alternative
+    text: 송창
+  - lang: ko
+    role: original
+    text: 이종
+  - Li Zong
+  - Zhuangmu
+  - lang: nl
+    role: translation
+    text: Injo van Joseon
+  - lang: fr
+    role: translation
+    text: Injo
+  - lang: it
+    role: translation
+    text: Injo di Joseon
+  - lang: ja
+    role: translation
+    text: 仁祖
+  - lang: zh
+    role: translation
+    text: 朝鮮仁祖
+  - lang: ko
+    role: original
+    text: 조선 인조
+  - lang: ru
+    role: translation
+    text: Инджо
+kind: person
+occupations: [politician]
+birth: 1595-11-07
+death: 1649-05-08
+description_md: "King of Joseon. Korean sources date the years of his reign by his name: see [[injo-reign-years|Injo (reign years)]]."
+wikidata_id: Q484453
+metadata:
+  sources: [Wikidata Q484453 (retrieved 2026-11-02)]
+identifiers:
+  bnf: "161849170"
+  gnd: "1382670745"
+  idref: "117855898"
+  lc: n85022215
+  nlk: KAC201622076
+  viaf: "226089562"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q484453
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q484453
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q484453
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q484453
