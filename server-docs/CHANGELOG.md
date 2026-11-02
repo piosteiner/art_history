@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-02
 
+### Era dates: a month across a lunar new year, leap months (migration 186)
+- **What:** `era_label()` moved the start of every range from 1 January to the lunar new year — a month like "January
+  1181" (the burning of Nara) then started after its end and failed; only ranges of ≥ 330 days are read as the lunar
+  year now ("Jishō 4–5"). The end of a range takes only an era whose year 1 has begun ("Heiji 1", not "Heiji 1 /
+  Eiryaku 0"). `lunar_new_years` corrected in 13 years where a leap month fell before the new year (leap-month rule:
+  the first month without a major solar term; 35 of 37 known new years 1831–2033 the same day, 2 a day apart — Beijing
+  against Japan time). Every year 701–2026 and every month 701–1872 labelled, none with a year 0. Test `eras.spec.js`.
+- **Why:** found while counting the eras in use (owner's glossary request). **Revert:** re-create `era_label()` from 185.
+
 ### Data: the Quality page worked through (what needs no decision of the owner)
 - **What:** errors 1 → 0, warnings 1,270 → 794 (notes 8,600 → 8,300). Morimura's birth 1995 → 1951 (GND; Wikidata
   wrong). Artists without dates: Tori Busshi active 606–623 (GND); 15 acknowledged (living / not known — Wikidata and GND

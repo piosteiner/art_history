@@ -20,6 +20,10 @@ test('era years: lunar years, changes inside a year, two courts, reign years', (
   expect(labels('kr', '[1910-01-01,1911-01-01)')).toEqual(['Yunghui 4']);
   expect(era('cn', '[1740-01-01,1741-01-01)').parts).toEqual([{ line: 'Qing', label: 'Qianlong 5', native: '乾隆5年' }]);
   expect(era('jp', '[1201-01-01,1301-01-01)')).toBeNull();                           // a century: none
+  // a month across a lunar new year (186): "January 1181" — the burning of Nara before Jishō 5 began on the 24th
+  expect(labels('jp', '[1181-01-01,1181-02-01)')).toEqual(['Jishō 4–5']);
+  expect(labels('jp', '[1160-01-01,1160-02-01)')).toEqual(['Heiji 1']);              // Eiryaku (dated to its month) not yet
+  expect(sql("SELECT day FROM lunar_new_years WHERE year = 1852")).toBe('1852-02-20');  // a leap month before the new year
   expect(era('jp', '[1600-02-14,1600-02-15)').approx).toBe(true);                    // a day close to the new year
   // every year from 701 has its Japanese era, every year of Joseon its reign year
   expect(sql("SELECT count(*) FROM generate_series(701, 2026) y WHERE era_label('jp', daterange(make_date(y, 1, 1), make_date(y + 1, 1, 1))) IS NULL")).toBe('0');
