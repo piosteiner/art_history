@@ -296,8 +296,8 @@ slash GitHub Pages serves a folder's page at), small forwarding pages at the old
 ## Quiz (API /v1/quiz, 2026-11-02)
 `/quiz` = the games (menu link "Quiz"), `/quiz/<picture|artist|movement|glossary>?mode=…` one game (`src/views/quiz.ts`).
 Rounds come with their answers; typed ones are compared in `src/quiz-match.ts` (folded like the searches, a leading
-article off, the better of letters — typos — and words; ≥ 0.85 right, ≥ 0.6 half; a year inside the work's dates 1,
-≤ 10 years ½, ≤ 25 ¼). Artist names also by family name or last word (Hokusai). The best result per game stays in
+article off, the better of letters — typos — and words without small ones like "in the"; a hyphen both joins and parts;
+≥ 0.85 right, ≥ 0.6 half; a year within 5 years of the work's dates 1, 15 ½, 30 ¼ — twice that before 1000). Artist names also by family name or last word (Hokusai). The best result per game stays in
 localStorage (`arthistory.quiz.best`). Logged in, the picture quiz offers the owner's private images (`?mine=1` half,
 `?mine=only`). Wikimedia thumbnails only at its standard widths (500, 960).
 

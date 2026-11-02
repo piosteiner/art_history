@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-02
 
+### Quiz: fairer checking of typed answers (site only)
+- **What:** small words ("in the", "de la" …) no longer count against a title; a hyphen both joins and parts
+  (Tōdai-ji = todaiji); a year within 5 years of the work's dates scores 1, within 15 ½, within 30 ¼ — twice that before
+  the year 1000 (was: inside 1, 10 ½, 25 ¼). `frontend/src/quiz-match.ts`, site test added.
+- **Why:** owner, 2026-11-02: "daibutsu in the todaiji" / 750 for the Tōdai-ji Daibutsu (752) scored only half each.
+- **Revert:** the previous `quiz-match.ts`.
+
 ### Quiz on the site: name a picture, whose works, movements and periods, glossary
 - **What:** API `GET /v1/quiz/image|artist|movement|glossary` (`backend/src/routes/quiz.js`, no migration — reads
   `images`, `artwork_creators()`, the view `movement_works`, `glossary`); admin host `GET /site/quiz/private-images`

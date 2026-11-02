@@ -9,7 +9,7 @@ import {
 } from '../api';
 import { account } from '../account';
 import { html, href, render, thumb, type Html } from '../html';
-import { bestMatch, parseYear, points, yearPoints } from '../quiz-match';
+import { bestMatch, parseYear, points, yearPoints, YEAR_RULE } from '../quiz-match';
 import { guard, showError } from './common';
 
 type Kind = 'picture' | 'artist' | 'movement' | 'glossary';
@@ -284,7 +284,7 @@ function pictureRound(p: QuizPicture, ownUrl: string | null, movements: string[]
         const c = credit(p);
         el.querySelector('.quiz-figure figcaption')!.textContent = ownUrl ? 'Your reference image' : c || 'No credit recorded';
         render(el.querySelector('.quiz-after')!, html`<table class="quiz-answers"><thead><tr><th></th><th>Your answer</th><th>Right</th></tr></thead>
-          <tbody>${rows}</tbody></table><p class="muted small">${fmt(score)} of ${max} points. Years: inside the work's dates 1, within 10 years ½, within 25 ¼.</p>`);
+          <tbody>${rows}</tbody></table><p class="muted small">${fmt(score)} of ${max} points. ${YEAR_RULE}</p>`);
         answered(score, max);
       });
     },

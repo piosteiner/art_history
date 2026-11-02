@@ -3170,3 +3170,17 @@ test('quiz: an artist’s works and a glossary term — picks marked right, miss
   await expect(page.locator('.quiz-total')).toHaveText('0 of 1 points · 0%');
   expect(errors).toEqual([]);
 });
+
+test('quiz: small words don’t count against a title, a hyphen joins (Tōdai-ji); two years off is still right', async ({ page }) => {
+  await page.route(/\/v1\/quiz\/image(\?.*)?$/, (r) => r.fulfill({ json: { movements: [], data: [{
+    slug: 'todaiji-daibutsu', public_id: 100030, title: 'Tōdai-ji Daibutsu', titles: ['Tōdai-ji Daibutsu', 'Todaiji Daibutsu'],
+    created: { label: '30 May 752', from: '0752-05-30', to: '0752-05-30', from_year: 752, to_year: 752 },
+    image_url: PNG, credit: 'sailko', license: 'CC BY-SA 3.0', attribution: null, creators: [], movements: [],
+  }] } }));
+  await page.goto('/quiz/picture');
+  await page.fill('[name=title]', 'daibutsu in the todaiji');
+  await page.fill('[name=year]', '750');
+  await page.getByRole('button', { name: 'Check' }).click();
+  await expect(page.locator('.quiz-answers tbody .quiz-ok')).toHaveCount(2);
+  await expect(page.locator('.quiz-after')).toContainText('2 of 2 points');
+});
