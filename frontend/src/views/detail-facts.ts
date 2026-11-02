@@ -3,6 +3,7 @@ import {
   countryLink, countryName, creatorsOf, dateLabel, displayName, personDates, personWhat, ROLE_LABEL, otherNames, html, link, polityWithToday, trusted, type Html,
 } from '../html';
 import type {
+  EraDate,
   Artwork, Citation, CreatorRef, EntityType, ArtworkSummary, Country, Dimensions, Entity, Image, KindRef, PartDimensions, Phase, PolityLink, Term,
 } from '../types';
 import { partsGrid } from '../series';
@@ -49,6 +50,17 @@ function spanNote(e: Artwork): string {
   if (!e.created || e.created.from_year === e.created.to_year) return '';
   if (e.created_span === 'duration') return ' (worked on over these years)';
   return e.created_span === 'uncertain' && /^\d{3,4}\s*[–-]\s*\d{3,4}$/.test(e.created.label ?? '') ? ' (made at some point in these years)' : '';
+}
+
+// a date also in the calendar of the entry's country (API 185): "c. 1831 · Tenpō 2 天保2年 · 辛卯"
+const ERA_LANG = { jp: 'ja', kr: 'ko', cn: 'zh-Hant' } as const;
+const ERA_NAME = { jp: 'Japanese era', kr: 'Korean reign year', cn: 'Chinese reign era' } as const;
+export function withEra(text: string | null | undefined, era: EraDate | undefined): Html | string | null | undefined {
+  if (!text || !era) return text;
+  const lang = ERA_LANG[era.calendar];
+  const parts = era.parts.map((p, i) => html`${i ? ' · ' : ''}${p.label} <span lang="${lang}"${p.hangul ? html` title="${p.native}"` : ''}>${p.hangul ?? p.native}</span>${p.line ? html` <span class="muted">(${p.line})</span>` : ''}`);
+  const title = `${ERA_NAME[era.calendar]}${era.approx ? ' — the day is close to the lunar new year: perhaps the year before' : ''}`;
+  return html`${text}<span class="era" title="${title}"> · ${era.approx ? '≈ ' : ''}${parts}${era.sexagenary ? html` · <span lang="${lang}">${era.sexagenary}</span>` : ''}</span>`;
 }
 
 function dateFact(e: Artwork): string | null {
@@ -190,7 +202,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
       return {
         title: e.name, subtitle: personDates(e), text: e.biography_html, images: e.images,
         facts: [
-          ['Born', dateLabel(e.birth)], ['Died', dateLabel(e.death)],
+          ['Born', withEra(dateLabel(e.birth), e.eras?.birth)], ['Died', withEra(dateLabel(e.death), e.eras?.death)],
           ['Active', e.birth || e.death ? '' : dateLabel(e.active)],  // API 147: dates of life unknown
           ...polityFacts(e, 'nationality', 'Nationality', 'Country of birth'),
           ['Born as', otherNames(e, (n) => cite(n.sources, e.bibliography), (n) => n.kind === 'birth')],
@@ -210,7 +222,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
         text: e.description_html, images: e.images,
         facts: [
           [creatorsOf(e).length > 1 ? 'Artists' : 'Artist', creatorsFact(e)],
-          ['Date', dateFact(e)],
+          ['Date', withEra(dateFact(e), e.eras?.created)],
           ['Completion', completionFact(e)],
           ['Authenticity', authenticityFact(e)],
           ['Stolen', stolenFact(e)],
@@ -280,7 +292,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
         title: e.name, subtitle: [personDates(e), personWhat(e)].filter(Boolean).join(' · '),
         text: e.description_html, images: [],
         facts: [
-          ['Born', dateLabel(e.birth)], ['Died', dateLabel(e.death)],
+          ['Born', withEra(dateLabel(e.birth), e.eras?.birth)], ['Died', withEra(dateLabel(e.death), e.eras?.death)],
           ['Active', e.birth || e.death ? '' : dateLabel(e.active)],
           ['Kind', e.kind && e.kind !== 'person' ? e.kind : null],
           ['Occupations', e.occupations.length ? e.occupations.join(', ') : null],
@@ -320,7 +332,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
       return {
         title: e.name, subtitle: [e.kind, e.period?.label, e.place?.name].filter(Boolean).join(' · '), text: e.description_html, images: e.images,
         facts: [
-          ['Date', dateLabel(e.period)],
+          ['Date', withEra(dateLabel(e.period), e.eras?.period)],
           ['Kind', e.kind],
           ['Place', e.place ? html`${link('place', e.place.slug, e.place.name)}${e.country && e.country.name !== e.place.name ? html`, ${countryLink(e.country)}` : ''}` : null],
           ['Part of', e.part_of ? link('event', e.part_of.slug, e.part_of.name) : null],

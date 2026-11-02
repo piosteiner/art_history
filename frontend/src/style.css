@@ -1178,3 +1178,6 @@ span.quiz-tile { cursor: default; }
   .quiz-tiles.three { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .4rem; }
   .quiz-choices { grid-template-columns: 1fr; }
 }
+
+/* a date also in the calendar of the entry's country (API 185): "· Tenpō 2 天保2年 · 辛卯" after the date */
+.era { color: var(--muted); }

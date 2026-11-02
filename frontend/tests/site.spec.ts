@@ -3184,3 +3184,15 @@ test('quiz: small words don’t count against a title, a hyphen joins (Tōdai-ji
   await expect(page.locator('.quiz-answers tbody .quiz-ok')).toHaveCount(2);
   await expect(page.locator('.quiz-after')).toContainText('2 of 2 points');
 });
+
+test('a Japanese work’s date also in the Japanese calendar (API 185): era and its characters, a European one without', async ({ page }) => {
+  const errors = noErrors(page);
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const date = page.locator('.facts', { hasText: 'Date' }).locator('.era');
+  await expect(date).toContainText('Tenpō');
+  await expect(date.locator('span[lang="ja"]').first()).toContainText('天保');
+  await page.goto('/artworks/the-starry-night');
+  await expect(page.locator('main h1')).toBeVisible();
+  await expect(page.locator('.era')).toHaveCount(0);
+  expect(errors).toEqual([]);
+});

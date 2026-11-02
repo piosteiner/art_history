@@ -101,7 +101,21 @@ export interface EntryRef { type: EntityType; slug: string; name: string }
 /** A polity named by a place's timeline or a relationship (API 161): always a polity, so no `type`. */
 export interface PolityRef { slug: string; public_id?: number | null; name: string }
 
+/** A date in the Japanese, Korean or Chinese calendar (API 185): "Tenpō 2" / 天保2年, a Joseon king's reign year
+ *  ("Yeongjo 25", 영조 25년), a Qing reign era; a second line beside the main one (Japan's Southern Court, 1336–1392). */
+export interface EraPart { line?: string; label: string; native: string; hangul?: string }
+export interface EraDate {
+  calendar: 'jp' | 'kr' | 'cn'; parts: EraPart[];
+  /** the year's name in the sixty-year cycle (干支), when the date lies within one year */
+  sexagenary: string | null;
+  /** a given day within two days of a (computed) lunar new year: perhaps a year earlier */
+  approx: boolean;
+}
+export interface Eras { created?: EraDate; birth?: EraDate; death?: EraDate; period?: EraDate }
+
 interface DetailBase {
+  /** The entry's dates in the calendar of its country (API 185) — Japan, Korea, China only. */
+  eras?: Eras | null;
   slug: string;
   /** The public number (API 085: from 100001, never changed) and the canonical address "/artworks/100476/<slug>". */
   public_id: number; path: string;

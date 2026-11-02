@@ -302,6 +302,12 @@ localStorage (`arthistory.quiz.best`). Logged in, every game comes from the admi
 `api.ts`) and includes works with only the account's private images (`own`: shown as they are, no thumbnail service);
 `/quiz/picture?mine=only` = those images only. Wikimedia thumbnails only at its standard widths (500, 960).
 
+## Era dates (API 185)
+Entry pages of works, artists, people and events from Japan, Korea or China show their dates also in that calendar,
+after the date: "c. 1831 · Bunsei 13 – Tenpō 3 文政13年–天保3年", "1446 · Sejong 28 세종 28년 · 丙寅" (`withEra()` in
+`views/detail-facts.ts`, class `.era`, the native text with its `lang`; Korean in hangul with the hanja as title;
+"≈" when the day is close to a lunar new year).
+
 ## Wishes for the backend
 - **Maps and networks by number (085):** `/v1/map/<plural>/<number>` and `/v1/graph/<plural>/<number>` answer 404, so an
   entry opened by its number loads its map only after the entry (to learn the slug) — one round trip later.
