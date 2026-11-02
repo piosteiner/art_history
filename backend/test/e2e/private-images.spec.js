@@ -116,3 +116,29 @@ test('a reference image from a link: an image, a page’s pictures to choose fro
     expect((await r.json()).error).toMatch(/public web address|only http/);
   }
 });
+
+// In order (189): the first is the main one — moved with ↑ ↓ and "make main"; the CMS's list shows it where the work
+// has no public picture, to its account only.
+test('reference images in order, one the main; the CMS list shows the main one to its account', async ({ userA, userB }) => {
+  sql("INSERT INTO artworks (slug, title) VALUES ('test-private-images', 'Test Private Images')");
+  sql(`INSERT INTO private_images (artwork_id, owner_id, locator, bytes, width, height, original_bytes, position)
+       SELECT a.id, u.id, x.loc, '\\x00'::bytea, 40, 30, 1, x.pos FROM artworks a, admin_users u, (VALUES ('first', 0), ('second', 1)) x(loc, pos)
+        WHERE a.slug = 'test-private-images' AND u.username = 'tester'`);
+  const order = () => sql("SELECT string_agg(i.locator, ',' ORDER BY i.position) FROM private_images i JOIN artworks a ON a.id = i.artwork_id WHERE a.slug = 'test-private-images'");
+  await userA.goto('/artworks/test-private-images');
+  const items = userA.locator('.private-images .image-item');
+  await expect(items.first()).toHaveClass(/main/);
+  await expect(items.first()).toContainText('main image');
+  await items.nth(1).locator('button', { hasText: 'make main' }).click();
+  await expect(userA.locator('.private-images .image-item').first()).toContainText('second');
+  expect(order()).toBe('second,first');
+  await userA.locator('.private-images .image-item').first().locator('button', { hasText: '↓' }).click();
+  await expect(userA.locator('.private-images .image-item').first()).toContainText('first');
+  expect(order()).toBe('first,second');
+  // the list: this account sees its main image as the work's thumbnail, another account none
+  const id = sql("SELECT i.id FROM private_images i JOIN artworks a ON a.id = i.artwork_id WHERE a.slug = 'test-private-images' AND i.locator = 'first'");
+  await userA.goto('/artworks?q=Test+Private+Images');
+  await expect(userA.locator(`tr:has-text("Test Private Images") .own-image img`)).toHaveAttribute('src', `/private-images/${id}?w=250`);
+  await userB.goto('/artworks?q=Test+Private+Images');
+  await expect(userB.locator('tr:has-text("Test Private Images") .thumb-empty')).toBeVisible();
+});

@@ -646,3 +646,6 @@ button.theme-toggle:hover { color: var(--fg); border-color: var(--accent); }
 .pi-choice img { display: block; max-height: 120px; max-width: 180px; border: 3px solid transparent; border-radius: 4px; }
 .pi-choice input { position: absolute; top: .3rem; left: .3rem; }
 .pi-choice input:checked + img { border-color: var(--accent, #b4462b); }
+
+/* the account's own reference image standing in for a missing picture (entries.js) — marked as private */
+.own-image img, img.own-image { outline: 2px dashed var(--accent, #b4462b); outline-offset: -2px; }

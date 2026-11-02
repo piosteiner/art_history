@@ -52,6 +52,8 @@ router.get('/:plural', async (req, res) => {
   // found: typo-tolerant names instead ("Similar names", as on the site).
   const cols = (p) => `t.slug, t.${t.name} AS name, t.updated_at, ${altSql(t, 't') || 'NULL'} AS alt, ${keyExpr(t.type, 't', t.name)} AS sort_key,
              ${t.imageFk ? `(SELECT i.url FROM images i WHERE i.${t.imageFk} = t.id ORDER BY i.position, i.id LIMIT 1)` : 'NULL'} AS image_url,
+             -- the account's main reference image (184/189): shown where a work has no public picture, to that account only
+             ${t.type === 'artwork' ? `(SELECT p.id FROM private_images p WHERE p.artwork_id = t.id AND p.owner_id = ${Number(req.user.id)} ORDER BY p.position, p.id LIMIT 1)` : 'NULL'} AS own_image,
              EXISTS (SELECT 1 FROM auto_created ac WHERE ac.entity_type = $${p}::entity_type AND ac.entity_id = t.id) AS to_complete,
              ${t.type === 'source' ? 't.reading_status::text' : 'NULL'} AS status,
              ${t.type === 'artwork' ? `(SELECT string_agg(c ->> 'name', ', ') FROM jsonb_array_elements(artwork_creators(t.id)) c)` : 'NULL'} AS creators,
@@ -100,6 +102,7 @@ router.get('/:plural', async (req, res) => {
       <div data-live-results="list">${rows.length ? html`<div class="table-wrap"><table${t.imageFk ? html` class="with-thumbs thumbs-${t.type}"` : ''}><thead><tr>${t.imageFk ? html`<th></th>` : ''}<th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
         ${rows.slice(0, PAGE).map((r, i, shown) => html`${q ? heading(r, i, shown) : ''}<tr>${t.imageFk ? html`<td class="thumb">${r.image_url
           ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1"><img src="${thumbUrl(r.image_url, 120)}" alt="" loading="lazy" decoding="async"></a>`
+          : r.own_image ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1" class="own-image" title="your reference image (private)"><img src="/private-images/${r.own_image}?w=250" alt="" loading="lazy" decoding="async"></a>`
           : html`<span class="thumb-empty" title="no image"></span>`}</td>` : ''}<td><a href="/${t.folder}/${r.slug}">${r.name}</a>${r.to_complete ? html` <span class="tag warn" title="created automatically — fill in the details">to complete</span>` : ''}
           ${sources && sources.get(r.slug) ? html`<div class="small">${sources.get(r.slug).siglum}${r.status ? html` <span class="tag">${r.status.replace('_', ' ')}</span>` : ''}</div>` : ''}
           ${r.creators ? html`<div class="muted small">${r.creators}</div>` : ''}
@@ -535,7 +538,7 @@ router.get('/:plural/:slug', async (req, res) => {
   const boundary = t.type === 'place' && e.doc.boundary_code
     ? (await adminPool.query('SELECT code, name FROM boundaries WHERE code = $1', [e.doc.boundary_code])).rows[0] : null;
   // series and other wholes (migration 037)
-  const series = t.type === 'artwork' ? await seriesOf(e) : null;
+  const series = t.type === 'artwork' ? await seriesOf(e, req.user) : null;
   const citation = t.type === 'source' ? (await bibliography.loadCatalogue(adminPool)).get(e.slug) : null;
   const linkMap = await linkNames(adminPool, [...Object.entries(t.fields).filter(([, k]) => k === 'md').map(([key]) => e.doc[key]),
     ...provSteps.map((p) => p.notes_md)]);
@@ -601,7 +604,9 @@ router.get('/:plural/:slug', async (req, res) => {
       ${series && (series.parts.length || series.isWhole) ? html`<h2 id="parts">Parts</h2>
         <p class="muted">${series.parts.length}${e.doc.parts_count ? ` of ${e.doc.parts_count}` : ''} entered${series.missing.length ? ` — missing numbers: ${series.missing.join(', ')}` : ''}</p>
         <div class="image-list parts-list">${series.parts.map((p) => html`<figure class="image-item"><a href="/artworks/${p.slug}">${p.image_url
-          ? html`<img src="${thumbUrl(p.image_url, 250)}" alt="" loading="lazy">` : html`<span class="thumb-empty"></span>`}</a>
+          ? html`<img src="${thumbUrl(p.image_url, 250)}" alt="" loading="lazy">`
+          : p.own_image ? html`<img src="/private-images/${p.own_image}?w=250" alt="" loading="lazy" class="own-image" title="your reference image (private)">`
+          : html`<span class="thumb-empty"></span>`}</a>
           <figcaption>${p.part_number ? html`<b>${p.part_number}</b> · ` : ''}<a href="/artworks/${p.slug}">${p.title}</a></figcaption></figure>`)}</div>` : ''}
       ${t.type === 'artwork' ? html`<details${series && series.isWhole ? ' open' : ''}><summary><b>+ Add a part</b> <span class="muted small">(for a series, album, triptych …)</span></summary>
         <form method="post" action="/artworks/${e.slug}/parts" class="form bar">
@@ -689,11 +694,12 @@ router.post('/:plural/:slug/auto-done', async (req, res) => {
 
 // Series and other wholes (migration 037): what an artwork is part of, its neighbours, its parts; numbers 1…parts_count
 // that no part has yet.
-async function seriesOf(e) {
+async function seriesOf(e, user) {
   const { rows: parts } = await adminPool.query(`
     SELECT a.slug, a.title, a.part_number, a.part_sort,
-           (SELECT i.url FROM images i WHERE i.artwork_id = a.id ORDER BY i.position, i.id LIMIT 1) AS image_url
-    FROM artworks a WHERE a.parent_id = $1 ORDER BY a.part_sort NULLS LAST, a.part_number, ${sortKey('artwork', 'a', 'title')}`, [e.id]);
+           (SELECT i.url FROM images i WHERE i.artwork_id = a.id ORDER BY i.position, i.id LIMIT 1) AS image_url,
+           (SELECT p.id FROM private_images p WHERE p.artwork_id = a.id AND p.owner_id = $2 ORDER BY p.position, p.id LIMIT 1) AS own_image
+    FROM artworks a WHERE a.parent_id = $1 ORDER BY a.part_sort NULLS LAST, a.part_number, ${sortKey('artwork', 'a', 'title')}`, [e.id, user ? user.id : null]);
   const { rows: [me] } = await adminPool.query(`
     SELECT w.slug, w.title, w.parts_count, a.part_number FROM artworks a LEFT JOIN artworks w ON w.id = a.parent_id WHERE a.id = $1`, [e.id]);
   let prev = null;

@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-02
 
+### Private reference images in order, one the main; shown in the CMS (migration 189)
+- **What:** `private_images.position` (per account and work; the existing ones in the order they were added): ↑ / ↓ /
+  "make main" on a work's admin page (`POST /private-images/:id/move`), the first marked "main image". The main one
+  stands in for a missing public picture: the site's previews (`/site/thumbs`), its private section, the quiz, and now
+  the CMS — the artwork lists and a series' parts show it to its account only (dashed outline, "your reference image").
+  `/private-images/:id?w=` falls back to the stored image when it can't be resized. e2e `private-images.spec.js`.
+- **Why:** owner, 2026-11-02. **Revert:** `ALTER TABLE private_images DROP COLUMN position`; `git revert`.
+
 ### Site: timeline names slide; the owner's reference images as previews; data: 173 era entries, 17 rulers
 - **Timeline** (`frontend/src/timeline.ts`): a name longer than its column is written whole, clipped at the column's
   edge, and slides left on hover until its end shows, back when the pointer leaves (owner 2026-11-02).

@@ -41,7 +41,7 @@ const OPTIONS = 8;
 // `owner`: also with a private image of this account — 'private:<id>' as image_url, made an address by privatize();
 // `onlyOwn`: only those, with the private image.
 function pictured(owner = null, onlyOwn = false) {
-  const priv = owner === null ? null : `(SELECT p.id FROM private_images p WHERE p.artwork_id = a.id AND p.owner_id = ${Number(owner)} ORDER BY p.created_at, p.id LIMIT 1)`;
+  const priv = owner === null ? null : `(SELECT p.id FROM private_images p WHERE p.artwork_id = a.id AND p.owner_id = ${Number(owner)} ORDER BY p.position, p.id LIMIT 1)`;
   const url = !priv ? 'img.url' : onlyOwn ? `'private:' || pi.id` : `coalesce(img.url, 'private:' || pi.id)`;
   const pub = onlyOwn ? 'false' : 'img.url IS NOT NULL';
   return `
