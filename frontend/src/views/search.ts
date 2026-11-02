@@ -15,7 +15,7 @@ import { showError } from './common';
 
 const PER_PAGE = 20;
 // the types in the menu's order (src/main.ts NAV)
-const TYPES: EntityType[] = ['artwork', 'artist', 'person', 'institution', 'event', 'movement', 'place', 'polity', 'term', 'source'];
+const TYPES: EntityType[] = ['artwork', 'artist', 'person', 'institution', 'event', 'literature', 'movement', 'place', 'polity', 'term', 'source'];
 const MATCHED: Record<TextHit['matched_in'], [string, string]> = {
   name: ['name', 'The name, another name, or a close one'],
   text: ['text', 'Found in its texts: biography, description, definition …'],

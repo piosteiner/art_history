@@ -10,7 +10,7 @@ const { ENTITIES } = require('./entities');
 
 const router = express.Router();
 const PLURAL = Object.fromEntries(Object.entries(ENTITIES).map(([k, v]) => [v.type, k]));
-const VIA_TYPES = ['artist', 'artwork', 'institution', 'person', 'event', 'movement', 'place', 'polity', 'term', 'source'];
+const VIA_TYPES = ['artist', 'artwork', 'institution', 'person', 'event', 'literature', 'movement', 'place', 'polity', 'term', 'source'];
 
 async function resolve(key, name) {
   const s = typeof key === 'string' ? key.trim().replace(/^\/+|\/+$/g, '') : '';

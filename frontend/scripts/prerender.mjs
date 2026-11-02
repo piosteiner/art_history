@@ -10,9 +10,9 @@ import { fileURLToPath } from 'node:url';
 const SITE = 'https://arthistory.piogino.ch';
 const API = process.env.API_BASE ?? 'https://api.arthistory.piogino.ch/v1';
 const DIST = fileURLToPath(new URL('../dist/', import.meta.url));
-const PLURALS = ['artists', 'artworks', 'movements', 'polities', 'events', 'institutions', 'people', 'places', 'glossary', 'bibliography'];
-const TYPE_LABEL = { artists: 'Artist', artworks: 'Artwork', movements: 'Movement', polities: 'Polity', events: 'Event', institutions: 'Institution', people: 'Person', places: 'Place', glossary: 'Term', bibliography: 'Source' };
-const LIST_LABEL = { artists: 'Artists', artworks: 'Artworks', movements: 'Movements', polities: 'Polities', events: 'Events', institutions: 'Institutions', people: 'People', places: 'Places', glossary: 'Glossary', bibliography: 'Bibliography' };
+const PLURALS = ['artists', 'artworks', 'movements', 'polities', 'events', 'literary-works', 'institutions', 'people', 'places', 'glossary', 'bibliography'];
+const TYPE_LABEL = { artists: 'Artist', artworks: 'Artwork', movements: 'Movement', polities: 'Polity', events: 'Event', 'literary-works': 'Literary work', institutions: 'Institution', people: 'Person', places: 'Place', glossary: 'Term', bibliography: 'Source' };
+const LIST_LABEL = { artists: 'Artists', artworks: 'Artworks', movements: 'Movements', polities: 'Polities', events: 'Events', 'literary-works': 'Literature', institutions: 'Institutions', people: 'People', places: 'Places', glossary: 'Glossary', bibliography: 'Bibliography' };
 const SITE_DESCRIPTION = 'Artists, artworks, movements and museums on a map, a timeline and an influence graph.';
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -91,6 +91,8 @@ function describe(plural, e) {
     people: [e.birth || e.death ? dateSpan(e.birth, e.death) : e.active ? `active ${e.active.label}` : '', (e.occupations ?? []).join(', '), (e.roles ?? []).join(', ')],
     places: [e.kind, e.ancestors?.length ? e.ancestors.map((a) => a.name).reverse().join(', ') : ''],
     glossary: [e.category],
+    'literary-works': [e.kind, (e.authors ?? []).map((a) => a.name).join(', '), e.written?.label,
+      e.part_of ? `${e.part_number ? `No. ${e.part_number} in` : 'Part of'} ${e.part_of.name}` : ''],
     bibliography: [e.kind, e.year],
   }[plural].filter(Boolean);
   const long = [e.definition, text(e.citation), text(e.biography_html ?? e.description_html ?? e.notes_html)].filter(Boolean).join(' ');
@@ -111,6 +113,9 @@ function jsonLd(plural, e, d, url) {
   if (plural === 'institutions') return { ...base, '@type': e.kind === 'museum' ? 'Museum' : 'Organization', foundingDate: e.founded?.label };
   if (plural === 'events') return { ...base, '@type': 'Event', startDate: e.period?.from ?? undefined, endDate: e.period?.to ?? undefined,
     location: e.place ? { '@type': 'Place', name: e.place.name, url: `${SITE}${entryPath('places', e.place)}/` } : undefined };
+  // a literary work (193): schema.org CreativeWork with its authors
+  if (plural === 'literary-works') return { ...base, '@type': e.part_of ? 'Chapter' : 'CreativeWork', genre: e.kind ?? undefined, dateCreated: e.written?.label,
+    author: (e.authors ?? []).map((a) => ({ '@type': 'Person', name: a.name })) };
   return null;
 }
 

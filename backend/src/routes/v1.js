@@ -95,7 +95,7 @@ router.get('/search', async (req, res) => {
 // has every word of the phrase ("kunsthaus zurich", "zurich") / leave those out (other types stay).
 // One row per entry: matched_in name | text | provenance (the provenance steps that matched: provenance_ids),
 // headline_html = the matching passage, the words in <mark>. ?type=artwork narrows, ?limit= (≤ 100) & ?offset= page.
-const SEARCH_TYPES = ['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'term', 'source', 'event'];
+const SEARCH_TYPES = ['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'term', 'source', 'event', 'literature'];
 const escapeHtml = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 router.get('/search/text', async (req, res) => {
   const q = typeof req.query.q === 'string' ? req.query.q.trim().slice(0, 200) : '';

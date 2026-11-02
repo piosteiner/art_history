@@ -1129,6 +1129,34 @@ test('glossary: broader terms as a chain, narrower terms listed (API 145)', asyn
   await expect(page.locator('.narrower-terms')).toContainText('Yoroboshi — Noh play');
 });
 
+// Literary works (API 193): written when and by whom, the works of art illustrating it with the chapter named, its
+// chapters, editions; a chapter says where it stands in the whole
+test('a literary work: author, era date, works of art illustrating it (chapter named), chapters, editions', async ({ page }) => {
+  const errors = noErrors(page);
+  const work = (slug: string, name: string, extra: Record<string, unknown>) => ({
+    type: 'literature', slug, public_id: 100900, name, alt_names: [], names: [], kind: 'tale', written: { label: 'c. 1010', from_year: 1005, to_year: 1015 },
+    part_number: null, authors: [{ type: 'person', slug: 'murasaki-shikibu', name: 'Murasaki Shikibu', label: null }], part_of: null, parts: [], editions: [],
+    illustrations: [], description_html: '<p>The life of the Shining Prince.</p>', wikidata_id: null, metadata: {}, updated_at: '', relationships: [], ...extra });
+  await page.route(/\/v1\/literary-works\/the-tale-of-genji$/, (r) => r.fulfill({ json: work('the-tale-of-genji', 'The Tale of Genji', {
+    eras: { written: { calendar: 'jp', parts: [{ label: 'Kankō 7', native: '寛弘7年' }], sexagenary: null } },
+    parts: [{ slug: 'wakamurasaki', name: 'Wakamurasaki', kind: 'chapter', part_number: '5' }],
+    illustrations: [{ slug: 'genji-scroll', title: 'Genji monogatari emaki', creator: null, created: { label: '12th century' }, label: null, image_url: null,
+      part: { slug: 'wakamurasaki', name: 'Wakamurasaki', part_number: '5' } }],
+    editions: [{ slug: 'tyler-2001', name: 'The Tale of Genji', year: '2001', authors: ['Tyler, Royall'], editors: null }] }) }));
+  await page.route(/\/v1\/literary-works\/wakamurasaki$/, (r) => r.fulfill({ json: work('wakamurasaki', 'Wakamurasaki', {
+    kind: 'chapter', written: null, part_number: '5', part_of: { slug: 'the-tale-of-genji', name: 'The Tale of Genji', parts_count: 54 } }) }));
+  await page.goto('/literary-works/the-tale-of-genji');
+  await expect(page.locator('h1')).toHaveText('The Tale of Genji');
+  await expect(page.locator('main')).toContainText('Murasaki Shikibu');
+  await expect(page.locator('main')).toContainText('Kankō 7');
+  await expect(page.locator('.lit-illustrations .part-card')).toContainText(['Genji monogatari emaki 12th century No. 5: Wakamurasaki']);
+  await expect(page.locator('.lit-editions')).toContainText('Tyler, Royall, 2001');
+  await page.locator('.lit-chapters a', { hasText: 'Wakamurasaki' }).click();
+  await expect(page.locator('h1')).toHaveText('Wakamurasaki');
+  await expect(page.locator('main')).toContainText('No. 5 of 54 in The Tale of Genji');
+  expect(errors).toEqual([]);
+});
+
 // ---- co-creators, [[links]] to entries, provenance (migrations 028–031; the live content may not have examples yet,
 // so the tests change the live responses) ----
 async function patch(page: Page, url: RegExp, change: (body: Record<string, unknown>) => void) {

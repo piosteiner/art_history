@@ -111,7 +111,7 @@ export const getView = (id: string) => get<{ id: string; query: string }>(`/view
 
 export const PLURAL: Record<EntityType, Plural> = {
   artist: 'artists', artwork: 'artworks', place: 'places',
-  movement: 'movements', institution: 'institutions', person: 'people', polity: 'polities', event: 'events', term: 'glossary', source: 'bibliography',
+  movement: 'movements', institution: 'institutions', person: 'people', polity: 'polities', event: 'events', literature: 'literary-works', term: 'glossary', source: 'bibliography',
 };
 
 export interface ListParams extends Params {

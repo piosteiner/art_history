@@ -19,7 +19,7 @@ import { searchPage } from './views/search';
 const NAV: { title: string; plurals: Plural[] }[] = [
   { title: 'The collection: works and who made, owned and kept them', plurals: ['artworks', 'artists', 'people', 'institutions'] },
   { title: 'Context: when and where', plurals: ['events', 'movements', 'places', 'polities'] },
-  { title: 'Reference', plurals: ['glossary', 'bibliography'] },
+  { title: 'Literature and reference', plurals: ['literary-works', 'glossary', 'bibliography'] },
 ];
 
 const main = document.getElementById('app')!;

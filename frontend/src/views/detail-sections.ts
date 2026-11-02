@@ -11,7 +11,7 @@ import { coverageBar, gapSides, gapText } from '../coverage';
 
 // categories, plus the relationship types an event's page groups by (participated_in, concerns)
 const CATEGORY_ORDER: (Category | 'participated_in' | 'concerns')[] = [
-  'heritage', 'glossary', 'presence', 'association', 'event', 'participated_in', 'concerns', 'architecture', 'polity', 'family', 'influence', 'education', 'collaboration', 'membership', 'patronage', 'publication', 'depiction', 'provenance',
+  'heritage', 'glossary', 'presence', 'association', 'event', 'participated_in', 'concerns', 'architecture', 'polity', 'family', 'influence', 'education', 'collaboration', 'membership', 'patronage', 'publication', 'literature', 'depiction', 'provenance',
 ];
 const CATEGORY_LABEL: Record<string, string> = {
   presence: 'Places (physically there)',
@@ -29,6 +29,7 @@ const CATEGORY_LABEL: Record<string, string> = {
   glossary: 'Related terms',
   architecture: 'Buildings',
   publication: 'Publication',
+  literature: 'Literature',   // written by, illustrates, inspired by, based on (API 193)
   event: 'Events',
   // on an event's page its links are split by type (relationshipSections)
   participated_in: 'Participants',

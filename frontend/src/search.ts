@@ -8,7 +8,7 @@ import { href, html, langAttr, render, TYPE_LABEL, type Html } from './html';
 import { navigate, ROUTE_EVENT } from './router';
 import type { EntityType, Plural, SearchHit } from './types';
 
-const PLURALS: Plural[] = ['artists', 'artworks', 'movements', 'polities', 'events', 'institutions', 'people', 'places', 'glossary', 'bibliography'];
+const PLURALS: Plural[] = ['artists', 'artworks', 'movements', 'polities', 'events', 'literary-works', 'institutions', 'people', 'places', 'glossary', 'bibliography'];
 const MAX = 20;
 
 interface Hit {

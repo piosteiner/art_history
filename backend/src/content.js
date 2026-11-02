@@ -52,6 +52,11 @@ const TYPES = [
   // parent = the broader term (145: Yoroboshi → Noh), shown as broader / narrower
   { type: 'term', folder: 'glossary', table: 'glossary', name: 'name', fields: {
     name: 'name', names: 'names', category: 'text', parent: 'parent', definition: 'text', description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
+  // literary works (192/193): tales, novels, poems, plays, sutras, myths — chapters as parts (parent + part_number);
+  // the author, works of art illustrating it, adaptations as relationships (written_by, illustrates, inspired_by, based_on)
+  { type: 'literature', folder: 'literary-works', table: 'literary_works', name: 'name', fields: {
+    name: 'name', names: 'names', kind: 'text', parent: 'parent', part_number: 'text', written: 'date',
+    description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   // the bibliography (migration 036): cited in texts with [[source/slug|S. 45]] (src/bibliography.js, src/markdown.js)
   { type: 'source', folder: 'bibliography', table: 'bibliography', name: 'name', fields: {
     kind: 'text', name: 'name', subtitle: 'text', names: 'names', authors: 'text[]', editors: 'text[]', compilers: 'text[]',
@@ -60,6 +65,7 @@ const TYPES = [
     pages: 'text', pages_are_columns: 'bool', catalogue_number: 'text', exhibition: 'text', url: 'text', accessed: 'date',
     uploader: 'text', uploaded: 'date', date_text: 'text', archive: 'text', shelfmark: 'text', isbn: 'text', doi: 'text',
     siglum: 'text', primary_source: 'bool', reliability: 'text', reading_status: 'text', read_on: 'date',
+    edition_of: 'ref:literature',  // an edition or translation of a literary work (193)
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'artwork', folder: 'artworks', table: 'artworks', name: 'title', fields: {
     // title_status: is the title a translation, and whose (052)

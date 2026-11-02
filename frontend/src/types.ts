@@ -2,9 +2,9 @@
 import type { PartRef, SiblingRef, WholeRef } from './series';
 
 /** Plural URL segment of an entity type (`/v1/artists/…`). */
-export type Plural = 'artists' | 'artworks' | 'places' | 'movements' | 'institutions' | 'people' | 'polities' | 'events' | 'glossary' | 'bibliography';
+export type Plural = 'artists' | 'artworks' | 'places' | 'movements' | 'institutions' | 'people' | 'polities' | 'events' | 'literary-works' | 'glossary' | 'bibliography';
 /** Singular `type` field inside responses. */
-export type EntityType = 'artist' | 'artwork' | 'place' | 'movement' | 'institution' | 'person' | 'polity' | 'event' | 'term' | 'source';
+export type EntityType = 'artist' | 'artwork' | 'place' | 'movement' | 'institution' | 'person' | 'polity' | 'event' | 'literature' | 'term' | 'source';
 
 /** Every date is one of these or null. `to` is inclusive; open ends are null; BCE years are negative. */
 export interface DateRange {
@@ -44,7 +44,7 @@ export interface PointGeometry {
 
 export type Category =
   | 'presence' | 'association' | 'influence' | 'education'
-  | 'collaboration' | 'membership' | 'patronage' | 'provenance' | 'polity' | 'depiction' | 'glossary' | 'architecture' | 'publication' | 'event' | 'family'
+  | 'collaboration' | 'membership' | 'patronage' | 'provenance' | 'polity' | 'depiction' | 'glossary' | 'architecture' | 'publication' | 'event' | 'literature' | 'family'
   | 'heritage';  // heritage designations (API 166)
 
 export interface Relationship {
@@ -113,7 +113,7 @@ export interface EraDate {
   /** a given day within two days of a (computed) lunar new year: perhaps a year earlier */
   approx: boolean;
 }
-export interface Eras { created?: EraDate; birth?: EraDate; death?: EraDate; period?: EraDate }
+export interface Eras { created?: EraDate; birth?: EraDate; death?: EraDate; period?: EraDate; written?: EraDate }
 
 interface DetailBase {
   /** The entry's dates in the calendar of its country (API 185) — Japan, Korea, China only. */
@@ -289,6 +289,13 @@ export interface EventItem extends Located, Named {
   slug: string; name: string; kind: string | null; period: DateRange | null; place: Ref | null;
   part_of: Ref | null; image_url: string | null;
   location?: PointGeometry | null; // exact spot, else a point inside the area
+}
+
+/** A literary work in lists (API 193): a tale, novel, poem, play … or one of its chapters. */
+export interface LiteratureItem extends Named {
+  slug: string; name: string; kind: string | null; written: DateRange | null;
+  authors: { type: EntityType; slug: string; name: string; label: string | null }[];
+  part_of: Ref | null; part_number: string | null; parts_count: number; illustrations_count: number; image_url: string | null;
 }
 
 // ---- details -------------------------------------------------------------------------------------
@@ -550,6 +557,20 @@ export interface Event extends DetailBase, Located, Named {
   images: Image[]; image_url: string | null;
 }
 
+/** A literary work (API 193): its authors (a chapter: its whole's), chapters, editions in the bibliography and the
+ *  works of art illustrating it or one of its chapters. */
+export interface Literature extends DetailBase, Named {
+  type: 'literature';
+  name: string; alt_names: string[]; kind: string | null; written: DateRange | null; part_number: string | null;
+  authors: LiteratureItem['authors'];
+  part_of: (Ref & { parts_count: number }) | null;
+  parts: { slug: string; name: string; kind: string | null; part_number: string | null }[];
+  editions: { slug: string; name: string; year: string | null; authors: string[] | null; editors: string[] | null }[];
+  illustrations: { slug: string; title: string; creator: string | null; created: DateRange | null; label: string | null; image_url: string | null;
+    part: { slug: string; name: string; part_number: string | null } | null }[];
+  description_html: string | null;
+}
+
 export interface Term extends DetailBase, Named {
   type: 'term';
   name: string; alt_names: string[]; category: TermCategory; definition: string | null;
@@ -568,15 +589,15 @@ export interface Source extends DetailBase, Named, Omit<SourceItem, 'slug'> {
   url?: string | null; isbn?: string | null; doi?: string | null;
 }
 
-export type Entity = Artist | Artwork | Place | Movement | Institution | Person | Polity | Event | Term | Source;
+export type Entity = Artist | Artwork | Place | Movement | Institution | Person | Polity | Event | Literature | Term | Source;
 
 export interface ItemByPlural {
   artists: ArtistItem; artworks: ArtworkItem; places: PlaceItem;
-  movements: MovementItem; institutions: InstitutionItem; people: PersonItem; polities: PolityItem; events: EventItem; glossary: TermItem; bibliography: SourceItem;
+  movements: MovementItem; institutions: InstitutionItem; people: PersonItem; polities: PolityItem; events: EventItem; 'literary-works': LiteratureItem; glossary: TermItem; bibliography: SourceItem;
 }
 export interface DetailByPlural {
   artists: Artist; artworks: Artwork; places: Place;
-  movements: Movement; institutions: Institution; people: Person; polities: Polity; events: Event; glossary: Term; bibliography: Source;
+  movements: Movement; institutions: Institution; people: Person; polities: Polity; events: Event; 'literary-works': Literature; glossary: Term; bibliography: Source;
 }
 
 // ---- search, vocabulary --------------------------------------------------------------------------

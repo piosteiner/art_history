@@ -31,7 +31,7 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
   let observer: IntersectionObserver | undefined;
   // started together with the entry rather than after it: one round trip less (terms and sources have no map,
   // places and events show their own point; the route data is for the others)
-  const mapModule = plural === 'glossary' || plural === 'bibliography' ? null : import('../map');
+  const mapModule = plural === 'glossary' || plural === 'bibliography' || plural === 'literary-works' ? null : import('../map');
   // the map API knows slugs only: by number, it waits for the entry (backend wish: maps by number)
   const entry = getEntity(plural, key);
   const byNumber = /^\d+$/.test(key);
@@ -57,7 +57,7 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
       const listed = e.relationships.filter((r) => (e.type === 'polity' || r.category !== 'polity') && !shownElsewhere(e, r));
       const holdings = e.type === 'artwork' ? null : holdingsSections(listed, e.bibliography);
       const web = webPage(e);
-      const hasMap = e.type === 'place' ? !!e.location : e.type === 'event' ? !!(e.area ?? e.location ?? e.place?.location) : e.type !== 'term' && e.type !== 'source';
+      const hasMap = e.type === 'place' ? !!e.location : e.type === 'event' ? !!(e.area ?? e.location ?? e.place?.location) : e.type !== 'term' && e.type !== 'source' && e.type !== 'literature';
       // an event on the start map: its years as the time window (the events layer follows it)
       const eventWindow = e.type === 'event' && e.period ? [e.period.from_year ?? e.period.to_year, e.period.to_year ?? e.period.from_year] : null;
       render(main, html`<article class="page detail detail-${e.type}">

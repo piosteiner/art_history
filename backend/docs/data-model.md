@@ -29,6 +29,22 @@ One table per entity type, each with its own columns. Shared conventions:
 | `*_md` | Markdown; rendered with markdown-it and **sanitized** server-side before reaching the frontend |
 | `created_at` / `updated_at` | `updated_at` maintained by trigger |
 
+### Literary works (migrations 192/193)
+`literary_works` — type `literature` (one word, as every type: links `[[literature/slug]]`; addresses `/literary-works/`).
+Shaped like events: names with furigana, `kind` (free text with suggestions), `written` + `written_label`, `parent_id` +
+`part_number` (chapters, acts, poems of an anthology; `part_sort` generated for number order), `description_md` = the
+summary. Relationship category `literature`: `written_by` (→ person, artist), `illustrates` (artwork →), `inspired_by`
+(artwork, artist, movement, literature →), `based_on` (literature → literature). `bibliography.edition_of` → the work an
+edition or translation renders. Era dates come from the author's country (`entry_calendar`; a chapter: its whole's
+author). A chapter's change reaches its whole (`derived_neighbours`: its counts in the list).
+
+## World regions (migration 191)
+`world_region` enum (ten regions), `world_regions` (names), `country_regions` (ISO country → region; change a country
+there). Column `region` on artworks, artists, movements = set by hand; else worked out in the materialized view
+`entry_regions (entity_type, entity_id, region, basis)` — artwork: created_in place, artist, movements; artist: where
+they worked/lived (mode), birthplace, nationality, movements; movement: own or broader one's, else its artists'.
+Refreshed `CONCURRENTLY` in `refresh_quality_global()`.
+
 ## Fuzzy dates → `daterange`
 Historical dates are rarely exact, so every date is a **half-open range** plus a display label: (the dash of a
 range spaced when an end names a month or a season — "1868 – 11 February 1889", "1840–1926": `joinRange()` in

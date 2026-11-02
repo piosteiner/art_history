@@ -52,6 +52,8 @@ const LABELS = {
   'institution.location': 'Exact location', 'institution.place': 'Place (city)',
   'artwork.title_status': 'Title: original or translation',
   'artwork.region': 'World region', 'artist.region': 'World region', 'movement.region': 'World region',
+  'literature.name': 'Title', 'literature.written': 'Written', 'literature.parent': 'Part of', 'literature.part_number': 'Chapter / part no.',
+  'literature.description_md': 'Summary', 'source.edition_of': 'Edition of',
   'artwork.provenance_status': 'Provenance status 1933–1945', 'artwork.provenance_status_note': 'Status as the source words it',
   'artwork.conceived': 'Designed (block, model)',
   'artwork.created_span': 'The span means',
@@ -145,6 +147,10 @@ const TYPE_HINTS = {
   'artwork.region': 'Leave it worked out: from where the work was made (“created in”), else its artist, else its movements. Set it only when that is wrong or missing — e.g. a work without an artist. Used by the quizzes: rounds stay in one region.',
   'artist.region': 'Leave it worked out: from where they worked or lived, else where they were born, their nationality or movements. Set it only when that is wrong or missing.',
   'movement.region': 'Leave it worked out: from where its artists worked. Narrower movements take a region set here.',
+  'literature.kind': 'tale, novel, poem, poetry anthology, play, sutra, myth, epic, chapter …',
+  'literature.written': html`When it was written — a date as everywhere: <code>c. 1000–1020</code> · <code>early 11th century</code> · <code>1603</code>. The author is a relationship “written by”.`,
+  'literature.description_md': html`What it tells — a summary. The works of art that illustrate it are linked from them (“illustrates”); link people and places with <code>[[type/slug]]</code>.`,
+  'source.edition_of': 'This source is an edition or translation of a literary work (Tyler’s translation → The Tale of Genji): listed on the work’s page.',
   'person.occupations': 'One per line, lowercase: poet · monk · emperor · art dealer · collector',
 };
 // The empty choice of a menu whose column may be empty, and readable names of some values.
@@ -426,6 +432,13 @@ const SECTIONS = {
     { title: 'Description', id: 'text', rows: [['description_md']] },
     IDS(),
   ],
+  literature: [
+    { title: 'Title and names', id: 'names', rows: [['name'], ['names']] },
+    { title: 'What and when', id: 'when', rows: [['kind', 'written'],
+      g('A chapter or part of a larger work…', ['parent', 'part_number'], 'A chapter of a tale, an act of a play, a poem of an anthology: the whole and its number.')] },
+    { title: 'Summary', id: 'text', rows: [['description_md']] },
+    IDS(),
+  ],
   event: [
     { title: 'Name', id: 'names', rows: [['name'], ['names']] },
     { title: 'What and when', id: 'when', rows: [['kind', 'parent'], ['period']] },
@@ -446,7 +459,7 @@ const SECTIONS = {
     { title: 'People', id: 'people', rows: [['authors', 'editors'], ['compilers']] },
     { title: 'Appeared in', id: 'container', rows: [['container', 'container_editors'], ['volume', 'issue'], ['issue_date', 'volumes_total'],
       ['catalogue_number', 'exhibition'], ['pages', 'pages_are_columns']] },
-    { title: 'Publication', id: 'publication', rows: [['place', 'publisher'], ['year', 'original_year'], ['edition', 'series'], ['thesis']] },
+    { title: 'Publication', id: 'publication', rows: [['place', 'publisher'], ['year', 'original_year'], ['edition', 'series'], ['thesis'], ['edition_of']] },
     { title: 'Online, video, archive', id: 'online', rows: [['url', 'accessed'], ['uploader', 'uploaded'], ['date_text'], ['archive', 'shelfmark']] },
     { title: 'References and reading', id: 'reading', rows: [['isbn', 'doi'], ['siglum', 'primary_source'], ['reliability'], ['reading_status', 'read_on']] },
     { title: 'Notes', id: 'text', rows: [['description_md']] },

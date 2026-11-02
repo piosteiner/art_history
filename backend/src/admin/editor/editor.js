@@ -295,7 +295,7 @@ function topicCompletions(textarea) {
   };
 }
 
-const LINK_TYPES = ['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'event', 'term', 'source'];
+const LINK_TYPES = ['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'event', 'literature', 'term', 'source'];
 async function entryCompletions(context) {
   const m = context.matchBefore(/\[\[[^\[\]|\n]*$/);
   if (!m) return null;
@@ -366,7 +366,7 @@ const bracketOverSelection = EditorView.inputHandler.of((view, from, to, text) =
 // "james-cook" (a slug typed by hand) → "James Cook"; anything else as typed
 const nameOfTyped = (q) => (/^[a-z0-9]+(-[a-z0-9]+)+$/.test(q) ? q.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') : q.replace(/\s+/g, ' '));
 const TYPE_NAME = { person: 'Person', artist: 'Artist', artwork: 'Artwork', institution: 'Institution', place: 'Place',
-  movement: 'Movement', event: 'Event', polity: 'Polity', term: 'Glossary term', source: 'Source' };
+  movement: 'Movement', event: 'Event', literature: 'Literary work', polity: 'Polity', term: 'Glossary term', source: 'Source' };
 const TYPE_HINT = { place: ' (looked up on OpenStreetMap)', polity: ' (state, dynasty …)', source: ' (bibliography)' };
 const LAST_TYPE = 'arthistory-admin:link-type';
 

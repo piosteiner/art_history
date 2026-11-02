@@ -120,7 +120,7 @@ function wireChart(fig: HTMLElement) {
 const CATEGORY: Record<string, string> = {
   polity: 'Staatsgebilde', presence: 'Aufenthalt und Orte', association: 'Zugehörigkeit', depiction: 'Darstellung', influence: 'Einfluss',
   education: 'Ausbildung', family: 'Familie', collaboration: 'Zusammenarbeit', membership: 'Mitgliedschaft', patronage: 'Förderung und Auftrag',
-  publication: 'Veröffentlichung', provenance: 'Provenienz (aus den Provenienzschritten abgeleitet)', architecture: 'Architektur', event: 'Ereignisse', glossary: 'Glossar',
+  publication: 'Veröffentlichung', provenance: 'Provenienz (aus den Provenienzschritten abgeleitet)', architecture: 'Architektur', event: 'Ereignisse', literature: 'Literatur', glossary: 'Glossar',
 };
 const TYPE: Record<string, string> = {
   artist: 'Künstler:in', artwork: 'Kunstwerk', institution: 'Institution', person: 'Person', movement: 'Strömung', place: 'Ort',

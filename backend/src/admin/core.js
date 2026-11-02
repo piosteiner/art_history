@@ -319,7 +319,7 @@ async function allEntities(db) {
 
 // The targets a relationship can create on the fly ("+ New person …" in the picker, data-quick-new): the types that
 // need nothing but a name — places and polities need their geography (the place finder), artworks more than a title
-const REL_QUICK_TYPES = ['artist', 'person', 'institution', 'movement', 'event'];
+const REL_QUICK_TYPES = ['artist', 'person', 'institution', 'movement', 'event', 'literature'];
 
 // Form body → validated params for INSERT/UPDATE relationships. Throws UserError.
 // `entity` is the page the form is on; with a reverse ("~") type it becomes the object and the target the subject.
@@ -426,7 +426,7 @@ function typeWarning(t, types, qid, e) {
 }
 
 // The types an entry can be changed into (convert_entry, migration 055)
-const CONVERTIBLE = ['artist', 'person', 'institution', 'movement', 'place', 'polity', 'event', 'term'];
+const CONVERTIBLE = ['artist', 'person', 'institution', 'movement', 'place', 'polity', 'event', 'term', 'literature'];
 // a provenance step's form as posted → the values to show it again
 const stepFromBody = (body) => ({ ...body, direct: body.direct === '1', sources: String(body.sources || '').split('\n') });
 
@@ -493,6 +493,11 @@ async function formContext(t, id = null) {
   if (t.type === 'event') {
     suggestions.kind = [...new Set([...suggestions.kind, 'fire', 'earthquake', 'flood', 'war', 'battle', 'siege', 'revolution', 'trial',
       'exhibition', 'auction', 'sale', 'theft', 'restitution', 'festival', 'ceremony', 'coronation', 'founding', 'treaty', 'journey'])].sort();
+  }
+  // kinds of literary works (193)
+  if (t.type === 'literature') {
+    suggestions.kind = [...new Set([...suggestions.kind, 'tale', 'novel', 'short story', 'poem', 'poetry anthology', 'play', 'Noh play',
+      'Kabuki play', 'sutra', 'scripture', 'myth', 'legend', 'epic', 'diary', 'essay', 'chronicle', 'chapter'])].sort();
   }
   // lists whose terms should repeat exactly (the API filters by them): show what is already in use
   const used = {};

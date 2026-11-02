@@ -368,6 +368,33 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
         extra: e.parts.length ? [html`<section class="event-parts"><h2>Parts</h2><ul class="plain-list">${e.parts.map((p) => html`<li>
           ${link('event', p.slug, p.name)}${p.kind ? html` <span class="tag">${p.kind}</span>` : ''}${p.period ? html` <span class="muted">${p.period.label}</span>` : ''}</li>`)}</ul></section>`] : [],
       };
+    case 'literature': {
+      // a literary work (API 193): written when and by whom, its place in a larger work, its chapters, the works of
+      // art illustrating it (or one of its chapters — named on the card), editions and translations
+      const authors = e.authors.length ? html`${e.authors.map((a, i) => html`${i ? ', ' : ''}${link(a.type, a.slug, a.name)}${a.label ? html` <span class="muted">(${a.label})</span>` : ''}`)}` : null;
+      const partOf = e.part_of ? html`${e.part_number ? `No. ${e.part_number}${e.part_of.parts_count ? ` of ${e.part_of.parts_count}` : ''} in ` : ''}${link('literature', e.part_of.slug, e.part_of.name)}` : null;
+      const parts = e.parts.length ? html`<section class="lit-chapters"><h2>Parts <span class="muted small">${String(e.parts.length)}</span></h2>
+        <ol class="plain-list lit-parts">${e.parts.map((p) => html`<li>${p.part_number ? html`<span class="part-number">${p.part_number}</span> ` : ''}${link('literature', p.slug, p.name)}</li>`)}</ol></section>` : null;
+      const pictures = e.illustrations.length ? html`<section class="lit-illustrations"><h2>Works of art illustrating it <span class="muted small">${String(e.illustrations.length)}</span></h2>
+        <ul class="parts-grid">${e.illustrations.map((w) => html`<li><a class="part-card" href="${href('artwork', w.slug)}">
+          ${previewImg(w.image_url, w.slug, 250) ?? html`<span class="part-img-empty" aria-hidden="true"></span>`}
+          <span class="part-title">${w.title}</span>
+          <span class="muted small">${[w.creator, w.created?.label].filter(Boolean).join(' · ')}</span>
+          ${w.part ? html`<span class="illustration-part">${w.part.part_number ? `No. ${w.part.part_number}: ` : ''}${w.part.name}</span>` : ''}</a></li>`)}</ul></section>` : null;
+      const editions = e.editions.length ? html`<section class="lit-editions"><h2>Editions and translations</h2><ul class="plain-list">${e.editions.map((b) => html`<li>
+        ${link('source', b.slug, b.name)}${[(b.authors ?? b.editors ?? []).join('; '), b.year].filter(Boolean).length ? html` <span class="muted">${[(b.authors?.length ? b.authors : b.editors ?? []).join('; '), b.year].filter(Boolean).join(', ')}</span>` : ''}</li>`)}</ul></section>` : null;
+      return {
+        title: e.name, subtitle: [e.kind, e.authors.map((a) => a.name).join(', '), e.written?.label].filter(Boolean).join(' · '), text: e.description_html, images: [],
+        facts: [
+          ['Written', withEra(dateLabel(e.written), e.eras?.written)],
+          ['Kind', e.kind],
+          [e.authors.length > 1 ? 'Authors' : 'Author', authors],
+          ['Part of', partOf],
+          ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
+        ],
+        extra: [pictures, parts, editions].filter((x): x is Html => !!x),
+      };
+    }
     case 'polity':
       return {
         title: e.name, subtitle: [e.kind, e.period?.label].filter(Boolean).join(' · '), text: e.description_html, images: [],

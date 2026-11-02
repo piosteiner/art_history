@@ -70,6 +70,13 @@ export function cardParts(plural: Plural, item: AnyItem) {
       [name, date, detail, image] = [e.name, dateLabel(e.period), [e.kind, e.place?.name, countryText(e.country), e.part_of ? `part of ${e.part_of.name}` : ''].filter(Boolean).join(' · '), e.image_url];
       break;
     }
+    case 'literary-works': {
+      const w = item as ItemByPlural['literary-works'];
+      [name, date, detail, image] = [w.name, dateLabel(w.written), [w.kind, w.authors.map((a) => a.name).join(', '),
+        w.part_of ? `${w.part_number ? `no. ${w.part_number} in ` : 'part of '}${w.part_of.name}` : w.parts_count ? `${w.parts_count} parts` : '',
+        w.illustrations_count ? `${w.illustrations_count} ${w.illustrations_count === 1 ? 'work of art' : 'works of art'}` : ''].filter(Boolean).join(' · '), w.image_url];
+      break;
+    }
     case 'polities': {
       const p = item as ItemByPlural['polities'];
       [name, date, detail] = [p.name, dateLabel(p.period), [p.kind, p.country_codes.map((c) => countryName(c) ?? c).join(', ')].filter(Boolean).join(' · ')];

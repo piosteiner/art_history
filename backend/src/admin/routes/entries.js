@@ -116,7 +116,7 @@ router.get('/:plural', async (req, res) => {
 // what the search box can find besides names (the fields of view entry_search_fields, 110)
 const SEARCH_HINT = { artwork: 'artist, type, material, museum now or before, place, series', artist: 'birthplace, nationality, dates',
   person: 'occupation, role, birthplace, dates', institution: 'place, kind, artists of its works', event: 'place, kind, date',
-  source: 'authors, title, publisher, year', place: 'kind, country', term: 'definition, category', polity: 'kind, territory today', movement: 'kind, dates' };
+  source: 'authors, title, publisher, year', literature: 'kind, author, written, part of', place: 'kind, country', term: 'definition, category', polity: 'kind, territory today', movement: 'kind, dates' };
 
 // A new part of a series / album …: "+ New part" links to /artworks/new?part_of=<slug> — prefilled with the whole and
 // its creator (the part may still differ).

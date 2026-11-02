@@ -89,6 +89,19 @@ Relationships: an artwork `depicts` an event; artists, people, institutions `par
 defendant, judge, lender, organiser — in the relationship's `label`); an event `concerns` artists, artworks,
 institutions, people, movements, places, polities. Links in texts: `[[event/slug]]`.
 
+### Literary works (`/v1/literary-works`, type `literature`, migrations 192/193)
+Tales, novels, poems, plays, sutras, myths — and their chapters, which are literary works too, with `part_of` and a
+`part_number` (like a series). List and detail: `kind`, `written` (date range), `authors` (`[{type, slug, name, label}]`
+from `written_by`; a chapter without its own author shows its whole's), `part_of`, `part_number`; the list also
+`parts_count`, `illustrations_count` (works of art illustrating it or one of its parts) and `image_url` (the first of
+them). The detail adds `description_html` (the summary), `parts` (`[{slug, name, kind, part_number}]` in number
+order), `editions` (`[{slug, name, year, authors, editors}]` — bibliography entries with `edition_of` = this work),
+`illustrations` (`[{slug, title, creator, created, label, image_url, part}]` — `part` names the chapter a work
+illustrates, `null` for the whole), `eras.written` (the author's country's calendar) and `relationships`. Filters:
+`kind`, `part_of` (slug), `author` (person or artist slug), `top=1` (wholes only), `from`/`to`. Relationships (category
+`literature`): a work `written_by` people/artists; an artwork `illustrates` it; artworks, artists, movements, literary
+works `inspired_by` it; a literary work `based_on` another. Links in texts: `[[literature/slug]]`.
+
 ### Bibliography (`/v1/bibliography`, type `source`)
 Sources cited in texts, formatted after the guide of the Kunsthistorisches Institut, UZH: `siglum` (the short reference,
 "Busch 1993", "Kimpel und Suckale 1995", "Kat. Paris 2007", "Jacobsen 1992a") and `citation` (the full entry, HTML with
@@ -567,6 +580,10 @@ Only works with a picture (their first image), not a whole of parts. What belong
   {kind: 'name', works: [work × 3], answer, options: [movement × 4]}]}`; wrong works have a movement of their own, not this
   one, and not by one of its artists (a period: none made during it); wrong movements hold none of the shown works, are
   outside its tree (and for a period: don't overlap it). Its time = its dates, else its works' years.
+- World regions (191): `&region=<europe|middle_east|africa|central_asia|south_asia|east_asia|southeast_asia|oceania|north_america|south_america>`
+  on image/artist/movement keeps every work in that region (view `entry_regions`); without it, an artist's or movement's
+  round takes its wrong options from its own region (anywhere when it has fewer than 2). `GET /v1/quiz/regions` →
+  `{data: [{region, name, name_de, note, works}]}` (pictured works per region).
 - `GET /v1/quiz/glossary?n=10&mode=definition|term|describe|mixed[&for=<slug>]` → `{data: [{kind: 'definition'|'term', term,
   answer, options: [term × 4]} | {kind: 'describe', term}]}`; terms with a definition of ≥ 40 characters; the others of
   the same category first, not its broader/narrower term; every shown definition without its own term's names (`…`).

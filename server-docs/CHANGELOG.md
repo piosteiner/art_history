@@ -4,6 +4,30 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-02
 
+### Literary works — a type of its own (migrations 192, 193)
+- **What:**
+  - **New type `literature`:** table `literary_works` with names (furigana), kind, `written`, chapters as parts
+    (`parent_id`, `part_number`, generated `part_sort`) and a summary (`description_md`).
+    - Links are `[[literature/slug]]`; types are one word everywhere (`[a-z]+`). Addresses are `/literary-works/…`,
+      shown as "Literary work".
+    - The usual triggers: audit, names → `entry_names`, slugs and public numbers, derived data.
+  - **Relationships**, category `literature`: `written_by`, `illustrates`, `inspired_by`, `based_on`.
+  - **Editions:** `bibliography.edition_of` names the work a source is an edition or translation of.
+  - **Every type list includes it:** 22 functions and views (generated from their definitions as of 191).
+    - The calendar comes from the author's country.
+    - A chapter's change reaches its whole: `derived_neighbours()`.
+  - **CMS:** "Literature" in the menu, form sections, kind suggestions, quick-create of relationship targets, type
+    conversion (the plays now in the glossary can move).
+  - **API:** `/v1/literary-works` with `authors`, `parts`, `editions` and `illustrations` (the chapter named);
+    previews, search, era dates.
+  - **Site:** list, page, prerendered pages, and the graph category "Literature".
+  - **Tests:** e2e `literature.spec.js`, site test; `npm run perf` 40/40 within budget.
+- **Why:** owner 2026-11-02: "I want to put somewhat of a focus on the intersection of art and literature". The Tale
+  of Genji was in the glossary under "other", the Noh and Kabuki plays under "performing arts", and the works
+  illustrating them had no link to them.
+- **Revert:** revert the commit and drop the table, the column and the relationship types. An enum value can't be
+  removed: `literature` stays unused in `entity_type`. Restore the views and functions from migration 191's state.
+
 ### New entries from Wikidata at once ("Create now"); no double submissions; reference images like the others on the site
 - **What:**
   - **CMS, "Create now":** the Wikidata review of a new entry has "Create now" beside "Fill the form first".

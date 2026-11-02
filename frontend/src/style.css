@@ -700,8 +700,13 @@ ruby rt { font-size: .5em; color: var(--muted); }
 .part-img-empty { background: repeating-linear-gradient(45deg, var(--bg), var(--bg) 6px, var(--line) 6px, var(--line) 7px); }
 .part-number { font-size: .78rem; font-weight: 600; color: var(--accent); }
 .part-title { font-size: .9rem; line-height: 1.3; }
-:root { --c-publication: #7f6a00; }
+:root { --c-publication: #7f6a00; --c-literature: #8a3d9e; }
 .cat-publication { --cat: var(--c-publication); }
+.cat-literature { --cat: var(--c-literature); }
+/* a literary work (API 193): the works of art illustrating it, chapters, editions */
+.illustration-part { font-size: .78rem; color: var(--muted); }
+.lit-parts { columns: 2 16rem; padding-left: 1.4rem; }
+.lit-parts li { break-inside: avoid; }
 
 /* sources for facts (API 049/050): letter markers after a value, the citations in a popover */
 .cite-ref {

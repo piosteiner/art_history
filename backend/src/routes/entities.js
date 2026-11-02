@@ -58,7 +58,13 @@ function shapeNames(row, col) {
 // "owner" comes from the provenance (031), asked directly: a filter on the owner can't be pushed through the window
 // functions of provenance_periods (they are partitioned by artwork), but here the index provenance_person_idx serves it.
 // dates also in the Japanese, Korean or Chinese calendar (185): a work's creation, a person's life, an event
-const ERA_TYPES = ['artwork', 'artist', 'person', 'event'];
+const ERA_TYPES = ['artwork', 'artist', 'person', 'event', 'literature'];
+// a literary work's authors (written_by — of a chapter: of its whole)
+const LIT_AUTHORS = `(SELECT coalesce(jsonb_agg(jsonb_build_object('type', r.object_type, 'slug', e.slug, 'name', e.name, 'label', r.label) ORDER BY r.id), '[]'::jsonb)
+    FROM relationships r JOIN entity_index e ON e.type = r.object_type AND e.id = r.object_id
+   WHERE r.subject_type = 'literature' AND r.relationship_type = 'written_by'
+     AND r.subject_id = coalesce((SELECT CASE WHEN EXISTS (SELECT 1 FROM relationships x WHERE x.subject_type = 'literature' AND x.subject_id = t.id AND x.relationship_type = 'written_by')
+                                         THEN t.id ELSE t.parent_id END), t.id)) AS authors`;
 const ROLES = 'person_roles(t.id)';  // patron / owner / depicted, from relationships and provenance (function, 110)
 
 // Per type: which column is the name, which daterange drives ?from/?to, list/detail columns (SQL on alias t),
@@ -277,6 +283,42 @@ const ENTITIES = {
     md: ['description_md'],
     filters: { kind: 't.kind = $', place: "t.place_id = entity_id('place', $)", part_of: "t.parent_id = entity_id('event', $)", ...countryFilters('event') },
     order: `lower(t.period) NULLS LAST, ${sortKey('event', 't', 'name')}`,
+  },
+  // literary works (193): kind, when written, the authors (written_by; a chapter shows its whole's), part of a larger
+  // work, its parts; editions in the bibliography; the works of art illustrating it or one of its parts
+  'literary-works': {
+    type: 'literature', table: 'literary_works', alt: 'alt_names', name: 'name', period: 't.written',
+    list: `t.kind, range_json(t.written, t.written_label) AS written, ${LIT_AUTHORS},
+           (SELECT jsonb_build_object('slug', w.slug, 'name', w.name) FROM literary_works w WHERE w.id = t.parent_id) AS part_of, t.part_number,
+           (SELECT count(*)::int FROM literary_works c WHERE c.parent_id = t.id) AS parts_count,
+           (SELECT count(DISTINCT r.subject_id)::int FROM relationships r WHERE r.relationship_type = 'illustrates' AND r.object_type = 'literature'
+              AND r.object_id IN (SELECT t.id UNION ALL SELECT c.id FROM literary_works c WHERE c.parent_id = t.id)) AS illustrations_count,
+           (SELECT i.url FROM relationships r JOIN images i ON i.artwork_id = r.subject_id WHERE r.relationship_type = 'illustrates'
+              AND r.object_type = 'literature' AND r.object_id IN (SELECT t.id UNION ALL SELECT c.id FROM literary_works c WHERE c.parent_id = t.id)
+              ORDER BY r.id, i.position, i.id LIMIT 1) AS image_url`,
+    detail: `t.kind, range_json(t.written, t.written_label) AS written, t.description_md, ${LIT_AUTHORS}, t.part_number,
+             (SELECT jsonb_build_object('slug', w.slug, 'name', w.name, 'parts_count', (SELECT count(*)::int FROM literary_works s WHERE s.parent_id = w.id))
+                FROM literary_works w WHERE w.id = t.parent_id) AS part_of,
+             (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', c.slug, 'name', c.name, 'kind', c.kind, 'part_number', c.part_number)
+                ORDER BY c.part_sort NULLS LAST, c.part_number, ${sortKey('literature', 'c')}), '[]'::jsonb) FROM literary_works c WHERE c.parent_id = t.id) AS parts,
+             (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', b.slug, 'name', b.name, 'year', b.year,
+                'authors', b.authors, 'editors', b.editors) ORDER BY b.year NULLS LAST, b.name), '[]'::jsonb) FROM bibliography b WHERE b.edition_of = t.id) AS editions,
+             -- the works of art that illustrate it or one of its parts, the part named; first picture of each
+             (SELECT coalesce(jsonb_agg(x.j ORDER BY x.part_sort NULLS FIRST, x.title), '[]'::jsonb) FROM (
+                SELECT DISTINCT ON (w.id) jsonb_build_object('slug', w.slug, 'title', w.title, 'creator', (SELECT a.name FROM artists a WHERE a.id = w.creator_id),
+                         'created', range_json(w.created, w.created_label), 'label', r.label,
+                         'image_url', (SELECT i.url FROM images i WHERE i.artwork_id = w.id ORDER BY i.position, i.id LIMIT 1),
+                         'part', CASE WHEN p.id <> t.id THEN jsonb_build_object('slug', p.slug, 'name', p.name, 'part_number', p.part_number) END) AS j,
+                       CASE WHEN p.id <> t.id THEN p.part_sort END AS part_sort, w.title
+                  FROM relationships r JOIN artworks w ON w.id = r.subject_id
+                  JOIN literary_works p ON p.id = r.object_id AND (p.id = t.id OR p.parent_id = t.id)
+                 WHERE r.relationship_type = 'illustrates' AND r.object_type = 'literature' AND r.subject_type = 'artwork'
+                 ORDER BY w.id, p.part_sort NULLS FIRST) x) AS illustrations`,
+    md: ['description_md'],
+    filters: { kind: 't.kind = $', part_of: "t.parent_id = entity_id('literature', $)",
+      author: "EXISTS (SELECT 1 FROM relationships r WHERE r.subject_type = 'literature' AND r.subject_id IN (t.id, t.parent_id) AND r.relationship_type = 'written_by' AND r.object_id = coalesce(entity_id('person', $), entity_id('artist', $)))",
+      top: "(t.parent_id IS NULL) = ($ = '1')" },
+    order: `coalesce((SELECT p.name FROM literary_works p WHERE p.id = t.parent_id), t.name) COLLATE sort_natural, t.part_sort NULLS FIRST, ${sortKey('literature', 't', 'name')}`,
   },
   polities: {
     type: 'polity', table: 'polities', alt: 'alt_names', name: 'name', period: 't.period',
@@ -587,7 +629,7 @@ const router = express.Router();
 // GET /v1/previews?refs=artist/paul-gauguin,place/arles,term/contrapposto — previews of any entries (max. 100), for
 // hover popovers on every internal link of a page (fields, relationships, lists, map popups): one request per page.
 // Entries that don't exist are left out. Same shape as a detail's `entries`.
-const PREVIEW_TYPES = new Set(['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'event', 'term', 'source']);
+const PREVIEW_TYPES = new Set(['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'event', 'literature', 'term', 'source']);
 router.get('/previews', async (req, res) => {
   const refs = [...new Set(String(req.query.refs || '').split(',').map((r) => r.trim()).filter(Boolean))];
   if (refs.length > 100) throw badRequest('at most 100 refs');

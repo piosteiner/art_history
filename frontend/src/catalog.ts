@@ -366,6 +366,21 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       sorts: { date: byYear(e.period), name: byName(e.name), kind: byText(e.kind, 'Other'), country: byText(countryText(e.country), 'Country unknown') },
     }),
   },
+  'literary-works': {
+    type: 'literature',
+    sorts: [
+      { id: 'name', label: 'A–Z' },
+      { id: 'written', label: 'Written' },
+      { id: 'author', label: 'Author' },
+      { id: 'kind', label: 'Kind' },
+    ],
+    build: (w) => ({
+      slug: w.slug, name: w.name,
+      meta: [w.kind, w.authors.map((a) => a.name).join(', '), w.written?.label, w.part_of ? `part of ${w.part_of.name}` : ''].filter(Boolean).join(' · '),
+      fields: [],
+      sorts: { name: byName(w.name), written: byYear(w.written), author: byText(w.authors[0]?.name ?? null, 'Anonymous'), kind: byText(w.kind, 'Other') },
+    }),
+  },
   glossary: {
     type: 'term',
     sorts: [
