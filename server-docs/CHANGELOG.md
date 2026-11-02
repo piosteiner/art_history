@@ -4,6 +4,30 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-02
 
+### Private reference images from a link (migration 188)
+- **What:** on a work's admin page, "Image or page link" + "Add from link": an image's address is fetched and stored
+  like an upload; a page's address gives its pictures to pick (one per picture — of …-M / …-L the largest — logos and
+  icons left out, previews through `/private-images/preview`). `private_images.source_url` keeps where it came from
+  (shown under the image, also in the site's private section as `link`). `src/admin/fetch-image.js`: http(s) only,
+  public addresses only — checked at connection time through the lookup (IP literals before it; every redirect again),
+  15 MB, 20 s, 4 redirects; the page sent as Referer (the Shozokan redirects bare image requests). e2e
+  `private-images.spec.js` (incl. 127.0.0.1, localhost, 169.254.169.254, [::1], file: refused).
+- **Why:** owner, 2026-11-02 — the Museum of the Imperial Collections (Shozokan) publishes its images without a free
+  licence (use by application only), so they can be reference images but not the entry's images.
+- **Revert:** `ALTER TABLE private_images DROP COLUMN source_url`; `git revert`.
+
+### Data: 32 works of the Kunsthaus Zürich with their provenance
+- **What:** the owner's 32 Sammlung-online pages (Hodler 18, Chagall 9, Kirchner 3, Auberjonois, Chambon), read from
+  the pages' data: 27 made from their Wikidata items (Chagall with French titles), 3 by hand (Kirchner's Landschaft
+  Sertigtal MB 0038, Chagall's Jour de printemps ZKG.2023/0047, Hodler's Skizze zur Wahrheit Z.1922/0014), 2 there
+  already (Jungfraumassiv, Genfersee bei Sonnenuntergang — provenance kept). Completed from the pages: type, technique,
+  dimensions, the Kunsthaus's other titles (former ones marked), the 1933–45 status, the field citations (with their
+  cited values). 87 provenance steps, each citing its line and the Kunsthaus's own source: loans as custody beside the
+  owner (Gottfried Keller-Stiftung, Vereinigung Zürcher Kunstfreunde, Stadt/Kanton Zürich — the work `on_loan`),
+  auctions as agents, estates, "wohl" as probable; the page's "25.19.1919" read as 25 October 1919. New: 21 people and
+  8 institutions (most from Wikidata), places Biberist, Neuchâtel, Interlaken, Zollikon. No images for Chagall (©).
+- **Why:** owner, 2026-11-02. **Revert:** the works via the admin (Delete), their holders likewise.
+
 ### Era names in the glossary, emperors and kings linked (migration 187); an artist's works with their pictures
 - **What:** 187 — glossary category `calendar`; table `calendar_era_links` (era → its glossary entry, the person it is
   named after; a table of its own so `calendar_eras` points at no entry and survives the tests' TRUNCATE … CASCADE);

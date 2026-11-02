@@ -2,7 +2,7 @@
 // work's page and at its address; another login gets nothing, and the public API role may not read the table.
 const sharp = require('sharp');
 const { execFileSync } = require('child_process');
-const { test, expect, sql } = require('./helpers');
+const { test, expect, sql, BASE } = require('./helpers');
 const { DB } = require('./env');
 
 const cleanup = () => sql("DELETE FROM artworks WHERE slug = 'test-private-images'");
@@ -83,4 +83,31 @@ test('the site sees its own account’s reference images, nobody else’s', asyn
 
   // logging out from the site: only from its origin
   expect((await userB.request.post('/site/logout', { headers: { Origin: 'https://evil.example' } })).status()).toBe(403);
+});
+
+// From another website (188, fetch-image.js): an image's link is stored at once, with where it came from; a page offers
+// its pictures (one per picture, logos left out); the server never fetches its own or a private network's addresses.
+test('a reference image from a link: an image, a page’s pictures to choose from, no private addresses', async ({ userA }) => {
+  sql("INSERT INTO artworks (slug, title) VALUES ('test-private-images', 'Test Private Images')");
+  const post = (data) => userA.request.post('/artworks/test-private-images/private-images/from-link', { data, headers: { Origin: BASE } });
+  const direct = await post({ url: 'https://museum.test/painting.png', locator: 'object 12' });
+  expect(direct.status()).toBe(201);
+  expect(sql("SELECT width || 'x' || height || ' ' || source_url FROM private_images i JOIN artworks a ON a.id = i.artwork_id WHERE a.slug = 'test-private-images'"))
+    .toBe('600x400 https://museum.test/painting.png');
+  const page = await (await post({ url: 'https://museum.test/object.html' })).json();
+  expect(page.page).toBe('https://museum.test/object.html');
+  expect(page.pictures).toEqual(['https://museum.test/painting.png']);   // the same picture once, not the logo
+  const fromPage = await post({ url: page.pictures[0], page: page.page });
+  expect(fromPage.status()).toBe(201);
+  expect(sql("SELECT count(*) FROM private_images i JOIN artworks a ON a.id = i.artwork_id WHERE a.slug = 'test-private-images' AND i.source_url = 'https://museum.test/object.html'")).toBe('1');
+  // the page shows where it came from; the chooser's preview works
+  await userA.goto('/artworks/test-private-images');
+  await expect(userA.locator('.private-images .image-item a', { hasText: 'museum.test' }).first()).toBeVisible();
+  expect((await userA.request.get(`/private-images/preview?url=${encodeURIComponent('https://museum.test/painting.png')}`)).headers()['content-type']).toBe('image/webp');
+  // never our own server or a private network
+  for (const url of ['http://127.0.0.1:3004/v1/health', 'http://localhost/', 'http://169.254.169.254/latest/meta-data/', 'http://[::1]/', 'file:///etc/passwd']) {
+    const r = await post({ url });
+    expect(r.status()).toBe(422);
+    expect((await r.json()).error).toMatch(/public web address|only http/);
+  }
 });

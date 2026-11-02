@@ -575,6 +575,9 @@ Only works with a picture (their first image), not a whole of parts. What belong
   `image_url` = `/private-images/<id>` on the admin host, `own: true`, no credit; `image?mine=only` = those images only.
 
 ## Era dates (185)
+(187) Each part also names its `eras: [{name, term}]` — the glossary entries (category `calendar`) of the era names in
+the label, for links. An artist's `artworks` in the detail carry `image_url` (the first image; a whole's from its first
+part) — 2026-11-02.
 The details of artworks, artists, people and events from Japan, Korea or China carry `eras` (null otherwise): the
 entry's dates also in that country's calendar — `{created | birth | death | period: {calendar: jp|kr|cn, parts: [{line?,
 label, native, hangul?}], sexagenary, approx}}`. Japan: era names (nengō, from Taika 645; "Tenpō 2", 天保2年; a change

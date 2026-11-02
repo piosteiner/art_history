@@ -94,6 +94,12 @@ function handle(req, res) {
   const p = url.searchParams;
   const json = (data) => { res.writeHead(200, { 'Content-Type': 'application/json' }); res.end(JSON.stringify(data)); };
   // a museum's image server (the API's thumbnail service, thumbs.js): a 600 × 400 PNG, no CORS headers
+  // a museum's object page (private images from a link): its pictures — one in two sizes, a logo that isn't one
+  if (url.pathname === '/museum/object.html') {
+    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    return res.end('<html><head><meta property="og:image" content="painting.png"></head><body><img src="logo.png">'
+      + '<img src="painting.png"><a href="painting-M.png">M</a></body></html>');
+  }
   if (url.pathname === '/museum/painting.png') {
     return require('sharp')({ create: { width: 600, height: 400, channels: 3, background: { r: 180, g: 120, b: 60 } } }).png().toBuffer()
       .then((png) => { res.writeHead(200, { 'Content-Type': 'image/png' }); res.end(png); });
