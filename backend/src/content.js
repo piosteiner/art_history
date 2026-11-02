@@ -24,6 +24,7 @@ const TYPES = [
     location: 'point', area: 'area', description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'movement', folder: 'movements', table: 'movements', name: 'name', fields: {
     name: 'name', names: 'names', kind: 'text', parent: 'parent', period: 'period',
+    region: 'text',  // world region set by hand (191); empty = worked out (entry_regions)
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'polity', folder: 'polities', table: 'polities', name: 'name', fields: {
     name: 'name', names: 'names', kind: 'text', parent: 'parent', period: 'period', country_codes: 'text[]',
@@ -32,6 +33,7 @@ const TYPES = [
     // given/family name (066): sorted by family name; sort_name ("Filed as") overrides
     name: 'name', given_name: 'text', family_name: 'text', sort_name: 'text', names: 'names', birth: 'date', death: 'date',
     active: 'period',  // when active, where the dates of life are unknown (147)
+    region: 'text',  // world region set by hand (191); empty = worked out from where they worked, were born …
     biography_md: 'md', wikidata_id: 'text', metadata: 'json', provenance_flag: 'text' } },  // flag: 068, admin only
   // people: everyone relevant who isn't an artist (poets, rulers, monks, sitters …) and groups (families, orders);
   // "patron" is a role from the relationships commissioned / patron of (migration 024)
@@ -73,6 +75,7 @@ const TYPES = [
     provenance_status: 'text', provenance_status_note: 'text',  // 1933–1945, the BAK categories A–D (074)
     fate: 'text', fate_date: 'date', fate_note: 'text',  // destroyed / partly destroyed / lost, when, how (103)
     location: 'point', area: 'area',  // only for works that don't move: buildings, gardens, bridges … (migration 034)
+    region: 'text',  // world region set by hand (191); empty = worked out from where it was made, its artist, movement
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
 ];
 // Types with images (table images, migration 017): the foreign-key column that points at them.

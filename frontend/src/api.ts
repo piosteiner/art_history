@@ -347,8 +347,13 @@ async function quiz<T>(kind: string, own: boolean, params: Params): Promise<T> {
   }
   return fresh<T>(`/quiz/${kind}`, params);
 }
-export const getQuizPictures = (n: number, own: boolean, onlyOwn = false) =>
-  quiz<{ data: QuizPicture[]; movements: string[] }>('image', own, { n, mine: own && onlyOwn ? 'only' : undefined });
-export const getQuizArtists = (n: number, own: boolean) => quiz<{ data: QuizArtistRound[] }>('artist', own, { n });
-export const getQuizMovements = (n: number, mode: string, own: boolean) => quiz<{ data: QuizMovementRound[] }>('movement', own, { n, mode });
+/** A world region (backend migration 191) with the number of works the games can show from it */
+export interface QuizRegion { region: string; name: string; name_de: string; note: string | null; works: number }
+export const getQuizRegions = (own: boolean) => quiz<{ data: QuizRegion[] }>('regions', own, {});
+// region: the works of that region only (else each round keeps to its artist's or movement's region)
+export const getQuizPictures = (n: number, own: boolean, onlyOwn = false, region?: string | null) =>
+  quiz<{ data: QuizPicture[]; movements: string[] }>('image', own, { n, mine: own && onlyOwn ? 'only' : undefined, region });
+export const getQuizArtists = (n: number, own: boolean, region?: string | null) => quiz<{ data: QuizArtistRound[] }>('artist', own, { n, region });
+export const getQuizMovements = (n: number, mode: string, own: boolean, region?: string | null) =>
+  quiz<{ data: QuizMovementRound[] }>('movement', own, { n, mode, region });
 export const getQuizGlossary = (n: number, mode: string) => fresh<{ data: QuizTermRound[] }>('/quiz/glossary', { n, mode });

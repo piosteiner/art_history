@@ -51,6 +51,7 @@ const LABELS = {
   'place.boundary_code': 'Boundary (outline)', 'artwork.kind': 'Object type',
   'institution.location': 'Exact location', 'institution.place': 'Place (city)',
   'artwork.title_status': 'Title: original or translation',
+  'artwork.region': 'World region', 'artist.region': 'World region', 'movement.region': 'World region',
   'artwork.provenance_status': 'Provenance status 1933–1945', 'artwork.provenance_status_note': 'Status as the source words it',
   'artwork.conceived': 'Designed (block, model)',
   'artwork.created_span': 'The span means',
@@ -141,11 +142,15 @@ const TYPE_HINTS = {
   'source.primary_source': 'Letters, documents, historical texts — listed apart as “Quellen”.',
   'source.reliability': 'How far a fact cited from it can be trusted. Empty = from the kind: website → institution, literature → scholarly, archival / primary → primary. Set “database” for aggregators (RKD, Getty ULAN …), “scholarly” for a catalogue raisonné online.',
   'source.description_md': 'Your own notes: what it says, what it is good for. Not part of the citation.',
+  'artwork.region': 'Leave it worked out: from where the work was made (“created in”), else its artist, else its movements. Set it only when that is wrong or missing — e.g. a work without an artist. Used by the quizzes: rounds stay in one region.',
+  'artist.region': 'Leave it worked out: from where they worked or lived, else where they were born, their nationality or movements. Set it only when that is wrong or missing.',
+  'movement.region': 'Leave it worked out: from where its artists worked. Narrower movements take a region set here.',
   'person.occupations': 'One per line, lowercase: poet · monk · emperor · art dealer · collector',
 };
 // The empty choice of a menu whose column may be empty, and readable names of some values.
 const EMPTY_CHOICE = { 'artwork.title_status': 'original — not a translation', 'artwork.provenance_status': 'not assessed',
-  'artwork.fate': 'extant — as far as known', 'artwork.created_span': 'not stated', 'artwork.completion': 'finished — as far as known', 'artwork.authenticity': 'no doubts known' };
+  'artwork.fate': 'extant — as far as known',
+  'artwork.region': 'worked out', 'artist.region': 'worked out', 'movement.region': 'worked out', 'artwork.created_span': 'not stated', 'artwork.completion': 'finished — as far as known', 'artwork.authenticity': 'no doubts known' };
 const ENUM_LABELS = { 'artwork.title_status.official': 'official translation', 'artwork.title_status.common': 'common translation',
   'artwork.title_status.own': 'own translation',
   // the categories of the Swiss Federal Office of Culture (BAK) for the provenance 1933–1945 (074)
@@ -163,6 +168,20 @@ const ENUM_LABELS = { 'artwork.title_status.official': 'official translation', '
   // what a span of years under "Created" means (135)
   'artwork.created_span.duration': 'worked on throughout — made over this time',
   'artwork.created_span.uncertain': 'made at some point in it — the date is uncertain' };
+// the world regions (191), the same labels for each type that has them
+for (const t of ['artwork', 'artist', 'movement']) {
+  Object.assign(ENUM_LABELS, Object.fromEntries(Object.entries({ europe: 'Europe', middle_east: 'Middle East (with North Africa)', africa: 'Africa',
+    central_asia: 'Central Asia', south_asia: 'South Asia', east_asia: 'East Asia', southeast_asia: 'Southeast Asia', oceania: 'Oceania (with Australia)',
+    north_america: 'North America (with Central America, Caribbean)', south_america: 'South America' }).map(([k, v]) => [`${t}.region.${k}`, v])));
+}
+const BASIS = { worked: 'where they worked', born: 'birthplace', nationality: 'nationality', movement: 'its movements', artists: 'its artists',
+  made: 'where it was made', artist: 'its artist' };
+/** The empty choice of a menu; a worked-out region named in it ("worked out: East Asia — from its artist") */
+function emptyChoice(ctx, key) {
+  const label = EMPTY_CHOICE[`${ctx.type}.${key}`] || '—';
+  const w = ctx.workedOut && ctx.workedOut[key];
+  return w ? `${label}: ${(ENUM_LABELS[`${ctx.type}.${key}.${w.region}`] || w.region).replace(/ \(.*\)$/, '')} — from ${BASIS[w.basis] || w.basis}` : label;
+}
 const humanize = (key) => key.replace(/_md$/, '').replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase());
 const fieldLabel = (type, key) => LABELS[`${type}.${key}`] || humanize(key);
 
@@ -326,7 +345,7 @@ function fieldInput(key, kind, f, ctx) {
   }
   if (ctx.enums[key]) {
     return html`<div class="field${err}"><label for="${id}">${label}</label>
-      <select id="${id}" name="${name}">${ctx.enumsNullable && ctx.enumsNullable.has(key) ? html`<option value=""${!f[key] ? ' selected' : ''}>${EMPTY_CHOICE[`${ctx.type}.${key}`] || '—'}</option>` : ''}${ctx.enums[key].map((v) => html`<option value="${v}"${v === f[key] ? ' selected' : ''}>${ENUM_LABELS[`${ctx.type}.${key}.${v}`] || v}</option>`)}</select>${hint(typeHint)}</div>`;
+      <select id="${id}" name="${name}">${ctx.enumsNullable && ctx.enumsNullable.has(key) ? html`<option value=""${!f[key] ? ' selected' : ''}>${emptyChoice(ctx, key)}</option>` : ''}${ctx.enums[key].map((v) => html`<option value="${v}"${v === f[key] ? ' selected' : ''}>${ENUM_LABELS[`${ctx.type}.${key}.${v}`] || v}</option>`)}</select>${hint(typeHint)}</div>`;
   }
   if (key === 'definition') {
     return html`<div class="field${err}"><label for="${id}">${label}</label>
@@ -361,7 +380,7 @@ const SECTIONS = {
       g('Part of a series…', ['parent', 'part_number', 'parts_count'],
         'For a print from a series, a panel of a triptych, a leaf of an album — or for the whole itself (its number of parts).', WHOLES)] },
     { title: 'Object', id: 'object', rows: [['kind', 'medium'], ['materials'], ['dimensions'], ['dimensions_note'], ['other_dimensions']] },
-    { title: 'Where it is', id: 'where', rows: [['institution', 'inventory_number'], ['on_loan', 'on_loan_since'], ['web_url'],
+    { title: 'Where it is', id: 'where', rows: [['institution', 'inventory_number'], ['on_loan', 'on_loan_since'], ['web_url'], ['region'],
       g('Where it stands (buildings, gardens, monuments)…', ['location', 'area'], 'Only for works that don’t move.', IMMOVABLE)] },
     { title: 'Description', id: 'text', rows: [['description_md']] },
     { title: 'Provenance status', id: 'prov', rows: [['provenance_status', 'provenance_status_note']] },
@@ -370,7 +389,7 @@ const SECTIONS = {
   ],
   artist: [
     { title: 'Name', id: 'names', rows: [['name'], ['given_name', 'family_name', 'sort_name'], ['names']] },
-    { title: 'Life', id: 'life', rows: [['birth', 'death'], ['active']] },
+    { title: 'Life', id: 'life', rows: [['birth', 'death'], ['active'], ['region']] },
     { title: 'Biography', id: 'text', rows: [['biography_md'], FLAG] },
     IDS(),
   ],
@@ -397,7 +416,7 @@ const SECTIONS = {
   ],
   movement: [
     { title: 'Name', id: 'names', rows: [['name'], ['names']] },
-    { title: 'Kind and period', id: 'kind', rows: [['kind', 'parent'], ['period']] },
+    { title: 'Kind and period', id: 'kind', rows: [['kind', 'parent'], ['period'], ['region']] },
     { title: 'Description', id: 'text', rows: [['description_md']] },
     IDS(),
   ],

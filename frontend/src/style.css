@@ -1113,6 +1113,8 @@ body.fb-picking, body.fb-picking * { cursor: crosshair !important; }
 .quiz-card h2 { margin: 0 0 .4rem; font-size: 1.15rem; }
 .quiz-card p { margin: .4rem 0; }
 .quiz-modes { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }
+.quiz-regions { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; margin: 1rem 0 0; }
+.quiz-regions .chip.active { border-color: var(--text); font-weight: 600; }
 .quiz-back { margin: 0 0 .3rem; font-size: .9rem; }
 .quiz-mode { font-size: 1rem; font-weight: normal; }
 .quiz-progress { margin: 0 0 .8rem; }

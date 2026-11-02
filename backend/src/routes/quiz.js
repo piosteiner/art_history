@@ -6,7 +6,10 @@
 //   /quiz/movement?n=8&mode=pick|name|mixed   pick: a movement → its works among 8; name: 3 works → their movement of 4
 //   /quiz/glossary?n=10&mode=definition|term|describe|mixed   a term → its definition of 4 / a definition (the term
 //                                   blanked out) → its term of 4 / describe it, then compare with the definition
+//   /quiz/regions                   the world regions with how many works the games can show from each
 //   &for=<slug>: about that work, artist, movement or term only
+//   &region=<world region> (191): only works of that region (entry_regions — worked out, or set by hand). Without one,
+//                                   a round stays in its artist's or movement's region: no ukiyo-e among Swiss painters.
 // What belongs to a movement is the view movement_works (100): linked directly or through the artist while it lasted,
 // parts rolled up into their whole. Wrong options never belong to it: works with a movement of their own (an unlinked
 // work might belong after all) whose artist isn't linked to it; movements that hold none of the shown works.
@@ -36,6 +39,13 @@ const shuffle = (a) => {
 /** How many of the 8 options are right: 2–4, at most as many as there are. */
 const rightCount = (available) => Math.min(available, 2 + Math.floor(Math.random() * 3));
 const OPTIONS = 8;
+// the world regions (migration 191: enum world_region, in its order)
+const REGIONS = ['europe', 'middle_east', 'africa', 'central_asia', 'south_asia', 'east_asia', 'southeast_asia', 'oceania', 'north_america', 'south_america'];
+const regionOf = (q) => (REGIONS.includes(q.region) ? q.region : null);
+/** The works of one region only (a value of REGIONS — safe to write into the query). */
+const inRegion = (pictured, region) => (region ? `SELECT * FROM (${pictured}) p WHERE p.region = '${region}'` : pictured);
+/** An entry's worked-out region (entry_regions) as SQL */
+const regionSql = (type, idExpr) => `(SELECT er.region::text FROM entry_regions er WHERE er.entity_type = '${type}' AND er.entity_id = ${idExpr})`;
 
 // works the quiz can show: with a picture (the first, as on the entry page), not a whole made of parts (a series).
 // `owner`: also with a private image of this account — 'private:<id>' as image_url, made an address by privatize();
@@ -46,7 +56,8 @@ function pictured(owner = null, onlyOwn = false) {
   const pub = onlyOwn ? 'false' : 'img.url IS NOT NULL';
   return `
   SELECT a.id, a.slug, a.public_id, a.title, a.creator_id, a.created, a.created_label, a.kind, a.names, ${url} AS image_url,
-         CASE WHEN ${pub} THEN img.credit END AS credit, CASE WHEN ${pub} THEN img.license END AS license
+         CASE WHEN ${pub} THEN img.credit END AS credit, CASE WHEN ${pub} THEN img.license END AS license,
+         ${regionSql('artwork', 'a.id')} AS region
   FROM artworks a
   LEFT JOIN LATERAL (SELECT i.url, i.credit, i.license FROM images i WHERE i.artwork_id = a.id ORDER BY i.position, i.id LIMIT 1) img ON true
   ${priv ? `LEFT JOIN LATERAL (SELECT ${priv} AS id) pi ON true` : ''}
@@ -77,7 +88,14 @@ const OPTION_COLUMNS = `w.slug, w.public_id, w.title,
 const namesOf = (alias, main) => `array_remove(ARRAY[${alias}.${main}] || ARRAY(SELECT ruby_plain(n->>'text') FROM jsonb_array_elements(${alias}.names) n), NULL)`;
 
 // --- 1. the picture: title, artist, year, movement ----------------------------------------------------------------
-async function image(q, { db, pictured: PICTURED }) {
+/** Wrong options from the round's region — from anywhere when it has too few (a region with only a handful of works). */
+async function enough(query, region) {
+  const { rows } = await query(region);
+  return region && rows.length < 2 ? (await query(null)).rows : rows;
+}
+
+async function image(q, { db, pictured }) {
+  const PICTURED = inRegion(pictured, regionOf(q));
   const n = count(q.n, 10, 20);
   const { rows: picked } = await db.query(`SELECT id FROM (${PICTURED}) w WHERE $2::text IS NULL OR w.slug = $2 ORDER BY random() LIMIT $1`, [n, only(q)]);
   const { rows } = await db.query(`
@@ -97,10 +115,13 @@ async function image(q, { db, pictured: PICTURED }) {
 }
 
 // --- 2. the artist: which works are theirs ------------------------------------------------------------------------
-async function artist(q, { db, pictured: PICTURED }) {
+async function artist(q, { db, pictured }) {
+  const PICTURED = inRegion(pictured, regionOf(q));
   const n = count(q.n, 8, 15);
+  // the round's region: the one chosen, else the artist's — else the one most of their works are of
   const { rows: artists } = await db.query(`
-    SELECT ar.id, ar.slug, ar.public_id, ar.name, ar.birth_label, ar.death_label, ar.active_label
+    SELECT ar.id, ar.slug, ar.public_id, ar.name, ar.birth_label, ar.death_label, ar.active_label,
+           coalesce(${regionSql('artist', 'ar.id')}, (SELECT mode() WITHIN GROUP (ORDER BY w.region) FROM (${PICTURED}) w WHERE w.creator_id = ar.id)) AS region
     FROM artists ar
     WHERE ar.id IN (SELECT creator_id FROM (${PICTURED}) w GROUP BY creator_id HAVING count(*) >= 3) AND ($2::text IS NULL OR ar.slug = $2)
     ORDER BY random() LIMIT $1`, [n, only(q)]);
@@ -110,7 +131,7 @@ async function artist(q, { db, pictured: PICTURED }) {
       [ar.id, 4]);
     const right = own.slice(0, rightCount(own.length));
     // look-alikes: a movement of the artist or of their works, the same years (±20), the same kind of object
-    const { rows: others } = await db.query(`
+    const lookAlikes = (region) => db.query(`
       WITH mw AS MATERIALIZED (SELECT movement_id, artwork_id FROM movement_works),
       mine AS (SELECT id, created, kind FROM artworks WHERE creator_id = $1),
       mov AS (SELECT movement_id FROM mw WHERE artwork_id IN (SELECT id FROM mine)
@@ -120,14 +141,15 @@ async function artist(q, { db, pictured: PICTURED }) {
                FROM mine WHERE created IS NOT NULL)
       SELECT ${OPTION_COLUMNS}, false AS correct FROM (
         SELECT w.* FROM (${PICTURED}) w, span
-        WHERE w.creator_id IS DISTINCT FROM $1
+        WHERE w.creator_id IS DISTINCT FROM $1 AND ($3::text IS NULL OR w.region = $3)
           AND NOT EXISTS (SELECT 1 FROM relationships r WHERE r.subject_type = 'artwork' AND r.subject_id = w.id
                             AND r.relationship_type = 'co_creator' AND r.object_type = 'artist' AND r.object_id = $1)
         ORDER BY 4 * (w.id IN (SELECT artwork_id FROM alike))::int
                + 2 * coalesce(w.created && span.r, false)::int
                + coalesce(w.kind IN (SELECT kind FROM mine), false)::int
                + 1.5 * random() DESC
-        LIMIT $2) w`, [ar.id, OPTIONS - right.length]);
+        LIMIT $2) w`, [ar.id, OPTIONS - right.length, region]);
+    const others = await enough(lookAlikes, regionOf(q) || ar.region);
     rounds.push({
       artist: { slug: ar.slug, public_id: ar.public_id, name: ar.name, dates: [ar.birth_label, ar.death_label].some(Boolean)
         ? `${ar.birth_label ?? '?'} – ${ar.death_label ?? '?'}` : ar.active_label ? `active ${ar.active_label}` : null },
@@ -145,24 +167,26 @@ const SPANS = `mw AS MATERIALIZED (SELECT movement_id, artwork_id FROM movement_
                WHERE a.created IS NOT NULL GROUP BY 1) x ON x.movement_id = m.id)`;
 const MOVEMENT = `m.slug, m.public_id, m.name, m.kind::text AS kind, range_json(m.period, m.period_label) AS period`;
 
-async function movement(q, { db, pictured: PICTURED }) {
+async function movement(q, { db, pictured }) {
+  const PICTURED = inRegion(pictured, regionOf(q));
   const n = count(q.n, 8, 15);
   const mode = ['pick', 'name'].includes(q.mode) ? q.mode : 'mixed';
   const { rows: movements } = await db.query(`
-    SELECT m.id, ${MOVEMENT} FROM movements m
+    SELECT m.id, ${regionSql('movement', 'm.id')} AS region, ${MOVEMENT} FROM movements m
     WHERE m.id IN (SELECT mw.movement_id FROM movement_works mw JOIN (${PICTURED}) w ON w.id = mw.artwork_id GROUP BY 1 HAVING count(*) >= 3)
       AND ($2::text IS NULL OR m.slug = $2)
     ORDER BY random() LIMIT $1`, [n, only(q)]);
   const rounds = [];
   for (const m of movements) {
     const kind = mode === 'mixed' ? (Math.random() < 0.5 ? 'pick' : 'name') : mode;
-    const { id, ...movement } = m;
+    const { id, region: own, ...movement } = m;
+    const region = regionOf(q) || own;   // the round's: no works or movements of another region among the options
     if (kind === 'pick') {
       const { rows: own } = await db.query(`SELECT ${OPTION_COLUMNS}, true AS correct FROM (${PICTURED}) w
         WHERE w.id IN (SELECT artwork_id FROM movement_works WHERE movement_id = $1) ORDER BY random() LIMIT 4`, [id]);
       const right = own.slice(0, rightCount(own.length));
       // works of another movement, not of this one nor by one of its artists — of its time and of movements beside it first
-      const { rows: others } = await db.query(`
+      const outside = (region) => db.query(`
         WITH ${SPANS},
         me AS (SELECT span AS period, kind FROM spans WHERE id = $1),
         -- works of movements beside it: of its time or of its kind
@@ -172,19 +196,20 @@ async function movement(q, { db, pictured: PICTURED }) {
         SELECT w.* FROM (${PICTURED}) w, me
         WHERE w.id NOT IN (SELECT artwork_id FROM mw WHERE movement_id = $1)
           AND (w.creator_id IS NULL OR w.creator_id NOT IN (SELECT artist_id FROM movement_artists WHERE movement_id = $1))
-          AND w.id IN (SELECT artwork_id FROM mw)
+          AND w.id IN (SELECT artwork_id FROM mw) AND ($3::text IS NULL OR w.region = $3)
           AND NOT (me.kind = 'period' AND coalesce(w.created && me.period, false))
         ORDER BY 3 * (w.id IN (SELECT artwork_id FROM alike))::int
                + 2 * coalesce(w.created && daterange((lower(me.period) - interval '50 years')::date, (upper(me.period) + interval '50 years')::date), false)::int
                + 1.5 * random() DESC
-        LIMIT $2) w`, [id, OPTIONS - right.length]);
+        LIMIT $2) w`, [id, OPTIONS - right.length, region]);
+      const others = await enough(outside, region);
       rounds.push({ kind, movement, options: shuffle([...right, ...others]) });
     } else {
       const { rows: works } = await db.query(`SELECT ${OPTION_COLUMNS} FROM (${PICTURED}) w
         WHERE w.id IN (SELECT artwork_id FROM movement_works WHERE movement_id = $1) ORDER BY random() LIMIT 3`, [id]);
       // three other movements holding none of the shown works, outside this one's tree (its parts are in it, its
       // wholes hold the works): the same kind and time first
-      const { rows: others } = await db.query(`
+      const besides = (region) => db.query(`
         WITH RECURSIVE ${SPANS},
         me AS (SELECT span AS period, own, kind FROM spans WHERE id = $1),
         tree AS (SELECT $1::bigint AS id UNION SELECT c.id FROM movements c JOIN tree t ON c.parent_id = t.id)
@@ -193,9 +218,13 @@ async function movement(q, { db, pictured: PICTURED }) {
           AND NOT EXISTS (SELECT 1 FROM mw JOIN artworks a ON a.id = mw.artwork_id WHERE mw.movement_id = m.id AND a.slug = ANY($2))
           AND m.id IN (SELECT movement_id FROM mw)
           AND NOT (m.kind = 'period' AND me.kind = 'period' AND coalesce(s.own && me.own, false))
-        ORDER BY 2 * (m.kind = me.kind)::int + 2 * coalesce(s.span && daterange((lower(me.period) - interval '100 years')::date, (upper(me.period) + interval '100 years')::date), false)::int
+          -- of the round's region; one whose region isn't known only after those
+          AND ($3::text IS NULL OR coalesce(${regionSql('movement', 'm.id')} = $3, true))
+        ORDER BY 5 * coalesce(${regionSql('movement', 'm.id')} = $3, false)::int + 2 * (m.kind = me.kind)::int + 2 * coalesce(s.span && daterange((lower(me.period) - interval '100 years')::date, (upper(me.period) + interval '100 years')::date), false)::int
                + 1.5 * random() DESC
-        LIMIT 3`, [id, works.map((w) => w.slug)]);
+        LIMIT 3`, [id, works.map((w) => w.slug), region]);
+      const { rows: near } = await besides(region);
+      const others = region && near.length < 3 ? (await besides(null)).rows : near;
       rounds.push({ kind, works, answer: movement.slug, options: shuffle([movement, ...others]) });
     }
   }
@@ -243,7 +272,14 @@ async function glossary(q, { db }) {
   return { data: rounds };
 }
 
-const QUIZZES = { image, artist, movement, glossary };
+// --- the regions: how many works each one has for the games ---------------------------------------------------------
+async function regions(q, { db, pictured }) {
+  const { rows } = await db.query(`SELECT r.region::text AS region, r.name, r.name_de, r.note, count(w.id)::int AS works
+    FROM world_regions r LEFT JOIN (${pictured}) w ON w.region = r.region::text GROUP BY r.region ORDER BY r.region`);
+  return { data: rows };
+}
+
+const QUIZZES = { image, artist, movement, glossary, regions };
 for (const [kind, quiz] of Object.entries(QUIZZES)) router.get(`/${kind}`, async (req, res) => res.json(await quiz(req.query, PUBLIC)));
 
 /** One game for a logged-in account (routes/site-account.js): its private images count too. → null: no such game. */

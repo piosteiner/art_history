@@ -10,7 +10,7 @@ const get = async (request, path) => {
   expect(res.headers()['cache-control']).toBe('no-store');
   return (await res.json()).data;
 };
-const cleanup = () => sql(`DELETE FROM artworks WHERE slug LIKE 'test-quiz-%'; DELETE FROM artists WHERE slug LIKE 'test-quiz-%';
+const cleanup = () => sql(`DELETE FROM artworks WHERE slug LIKE 'test-quiz-%'; DELETE FROM artists WHERE slug LIKE 'test-quiz-%'; DELETE FROM places WHERE slug LIKE 'test-quiz-%';
   DELETE FROM movements WHERE slug LIKE 'test-quiz-%'; DELETE FROM glossary WHERE slug = 'test-quiz-term'`);
 const SITE = 'https://arthistory.piogino.ch';   // config.corsOrigin's default
 const mine = async (user, path) => {
@@ -32,6 +32,7 @@ test.beforeAll(() => {
          ('test-quiz-b', 'Quiz B', entity_id('artist', 'test-quiz-painter'), '[1901-01-01,1902-01-01)', '1901', '[]'),
          ('test-quiz-c', 'Quiz C', entity_id('artist', 'test-quiz-painter'), '[1902-01-01,1903-01-01)', '1902', '[]'),
          ('test-quiz-d', 'Quiz D', entity_id('artist', 'test-quiz-friend'), '[1900-01-01,1901-01-01)', '1900', '[]'),
+         ('test-quiz-f', 'Quiz F', entity_id('artist', 'test-quiz-friend'), '[1903-01-01,1904-01-01)', '1903', '[]'),
          ('test-quiz-e', 'Quiz E', entity_id('artist', 'test-quiz-stranger'), '[1900-01-01,1901-01-01)', '1900', '[]'),
          ('test-quiz-p1', 'Book Only 1', entity_id('artist', 'test-quiz-bookonly'), NULL, NULL, '[]'),
          ('test-quiz-p2', 'Book Only 2', entity_id('artist', 'test-quiz-bookonly'), NULL, NULL, '[]'),
@@ -45,6 +46,37 @@ test.beforeAll(() => {
          'A Quizprint is printed from a quiz block; quizprints are rare, and no other technique is quite like it.')`);
 });
 test.afterAll(cleanup);
+
+// 191: the world regions — worked out from where the artists worked (places with their country), stored in
+// entry_regions (refreshed with the derived data; here by hand): a chosen region keeps the game in it, and without one
+// an artist's round shows no works of another region
+test('regions: a game of one region; an artist’s look-alikes from their region only', async ({ request, userA }) => {
+  sql(`INSERT INTO places (slug, name, kind, country_code, location) VALUES ('test-quiz-zurich', 'Quiz Zürich', 'settlement', 'CH', 'SRID=4326;POINT(8.54 47.37)'),
+         ('test-quiz-kyoto', 'Quiz Kyoto', 'settlement', 'JP', 'SRID=4326;POINT(135.77 35.01)');
+       INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id) VALUES
+         ('artist', entity_id('artist', 'test-quiz-painter'), 'worked_in', 'place', entity_id('place', 'test-quiz-zurich')),
+         ('artist', entity_id('artist', 'test-quiz-friend'), 'worked_in', 'place', entity_id('place', 'test-quiz-zurich')),
+         ('artist', entity_id('artist', 'test-quiz-stranger'), 'worked_in', 'place', entity_id('place', 'test-quiz-kyoto'));
+       REFRESH MATERIALIZED VIEW entry_regions`);
+  expect(sql(`SELECT string_agg(a.slug || ' ' || er.region || ' ' || er.basis, ', ' ORDER BY a.slug) FROM entry_regions er JOIN artworks a ON a.id = er.entity_id
+              WHERE er.entity_type = 'artwork' AND a.slug IN ('test-quiz-a', 'test-quiz-e')`)).toBe('test-quiz-a europe artist, test-quiz-e east_asia artist');
+  const regions = await get(request, 'regions');
+  expect(regions.find((r) => r.region === 'europe')).toEqual(expect.objectContaining({ name: 'Europe', works: expect.any(Number) }));
+  expect(regions.find((r) => r.region === 'europe').works).toBeGreaterThanOrEqual(4);
+  // a chosen region: only its works
+  const asia = await get(request, 'image?n=20&region=east_asia');
+  expect(asia.map((r) => r.slug)).toContain('test-quiz-e');
+  expect(asia.some((r) => r.slug.startsWith('test-quiz-') && r.slug !== 'test-quiz-e')).toBe(false);
+  expect((await get(request, 'artist?for=test-quiz-painter&region=east_asia'))).toEqual([]);   // no three works there
+  // no region chosen: the painter's round never shows the Kyoto work
+  for (let i = 0; i < 3; i++) {
+    const [round] = await get(request, 'artist?for=test-quiz-painter');
+    expect(round.options.map((o) => o.slug)).not.toContain('test-quiz-e');
+  }
+  // the CMS names the worked-out region in the empty choice
+  await userA.goto('/artists/test-quiz-painter/edit');
+  await expect(userA.locator('#f-region option[value=""]')).toHaveText('worked out: Europe — from where they worked');
+});
 
 test('a picture with every name, the artists, the date and the movements to guess', async ({ request, userA }) => {
   const pub = await get(request, 'image?n=20');

@@ -522,7 +522,13 @@ async function formContext(t, id = null) {
   const coCreators = t.type === 'artwork' && id !== null ? (await adminPool.query(`
     SELECT a.name, r.label FROM relationships r JOIN artists a ON a.id = r.object_id
     WHERE r.relationship_type = 'co_creator' AND r.subject_type = 'artwork' AND r.subject_id = $1 ORDER BY a.name COLLATE sort_natural`, [id])).rows : [];
-  return { groupKinds, enums, enumsNullable, suggestions, refs, used, terms, coCreators, errorKeys: new Set(), confirmNew: {} };
+  // the world region worked out (191, entry_regions): named in the menu's empty choice
+  const workedOut = {};
+  if (t.fields.region && id !== null) {
+    const { rows: [r] } = await adminPool.query(`SELECT region::text, basis FROM entry_regions WHERE entity_type = $1 AND entity_id = $2 AND basis <> 'set'`, [t.type, id]);
+    if (r) workedOut.region = r;
+  }
+  return { groupKinds, enums, enumsNullable, suggestions, refs, used, terms, coCreators, workedOut, errorKeys: new Set(), confirmNew: {} };
 }
 
 async function findEntity(t, slug) {

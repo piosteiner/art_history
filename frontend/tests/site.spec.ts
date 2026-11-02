@@ -3110,6 +3110,7 @@ const quizWork = (slug: string, title: string, correct: boolean) => ({ slug, pub
 
 test('quiz: name a picture — typed answers in any of its names, with typos, a year inside its dates', async ({ page }) => {
   const errors = noErrors(page);
+  await page.route(/\/v1\/quiz\/regions(\?.*)?$/, (r) => r.fulfill({ json: { data: [] } }));
   await page.route(/\/v1\/quiz\/image(\?.*)?$/, (r) => r.fulfill({ json: { movements: ['Post-Impressionism', 'Impressionism'], data: [{
     slug: 'the-starry-night', public_id: 100001, title: 'The Starry Night', titles: ['The Starry Night', 'Sternennacht'],
     created: { label: 'June 1889', from: '1889-06-01', to: '1889-06-30', from_year: 1889, to_year: 1889 },
@@ -3140,6 +3141,28 @@ test('quiz: name a picture — typed answers in any of its names, with typos, a 
   // the best result stays in this browser
   await page.goto('/quiz');
   await expect(page.locator('.quiz-card', { hasText: 'Name the picture' })).toContainText('best 100%');
+  expect(errors).toEqual([]);
+});
+
+// World regions (backend 191): chosen above the games, remembered in this browser, sent with every game but the glossary
+test('quiz: a world region — chosen on the quiz page, in the game\'s request and title, remembered', async ({ page }) => {
+  const errors = noErrors(page);
+  const region = (r: string, name: string, works: number) => ({ region: r, name, name_de: name, note: null, works });
+  await page.route(/\/v1\/quiz\/regions(\?.*)?$/, (r) => r.fulfill({ json: { data: [region('europe', 'Europe', 365), region('east_asia', 'East Asia', 344), region('africa', 'Africa', 2)] } }));
+  const asked: string[] = [];
+  await page.route(/\/v1\/quiz\/artist(\?.*)?$/, (r) => { asked.push(r.request().url()); return r.fulfill({ json: { data: [] } }); });
+  await page.goto('/quiz');
+  const chips = page.locator('.quiz-regions .chip');
+  await expect(chips).toHaveText(['all regions', 'Europe 365', 'East Asia 344']);   // too few works: not offered
+  await chips.filter({ hasText: 'East Asia' }).click();
+  await expect(page).toHaveURL(/\/quiz\?region=east_asia$/);
+  await expect(page.locator('.quiz-card', { hasText: 'Glossary' }).getByRole('link', { name: 'Mixed' })).toHaveAttribute('href', '/quiz/glossary?mode=mixed');
+  await page.locator('.quiz-card', { hasText: 'Whose works?' }).getByRole('link', { name: 'Start' }).click();
+  await expect(page.locator('h1')).toContainText('Whose works? · East Asia');
+  await expect(page.locator('.quiz-stage')).toContainText('Not enough entries for this quiz yet in East Asia');
+  expect(asked.some((u) => u.includes('region=east_asia'))).toBe(true);
+  await page.goto('/quiz');
+  await expect(page.locator('.quiz-regions .chip.active')).toHaveText('East Asia 344');   // remembered
   expect(errors).toEqual([]);
 });
 

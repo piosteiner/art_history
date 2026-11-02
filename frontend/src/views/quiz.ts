@@ -4,8 +4,10 @@
 // and are checked here (src/quiz-match.ts for typed ones). The best result per game stays in this browser.
 // Logged in (account.ts), the games come from the admin host and also use works that have only the account's private
 // reference images, shown with that image; ?mine=only: a picture quiz of those images only.
+// ?region=<world region> (owner 2026-11-02): the works of one region only — chosen above the games, remembered in
+// this browser; without one, each round still keeps to its artist's or movement's region (backend src/routes/quiz.js).
 import {
-  getQuizArtists, getQuizGlossary, getQuizMovements, getQuizPictures,
+  getQuizArtists, getQuizGlossary, getQuizMovements, getQuizPictures, getQuizRegions, type QuizRegion,
   type QuizArtistRound, type QuizMovementRound, type QuizPicture, type QuizTermRound, type QuizWork,
 } from '../api';
 import { account } from '../account';
@@ -26,6 +28,14 @@ const QUIZZES: { kind: Kind; title: string; text: string; modes: Mode[] }[] = [
     modes: [{ mode: 'mixed', label: 'Mixed' }, { mode: 'definition', label: 'Term → definition' }, { mode: 'term', label: 'Definition → term' }, { mode: 'describe', label: 'Describe it' }] },
 ];
 const ROUNDS: Record<Kind, number> = { picture: 10, artist: 8, movement: 8, glossary: 10 };
+/** Regions offered: those with enough works for a game */
+const MIN_WORKS = 12;
+
+// ---- the region, remembered in this browser ----------------------------------------------------------------------
+const REGION = 'arthistory.quiz.region';
+const savedRegion = () => { try { return localStorage.getItem(REGION) || ''; } catch { return ''; } };
+const saveRegion = (r: string) => { try { if (r) localStorage.setItem(REGION, r); else localStorage.removeItem(REGION); } catch { /* private window */ } };
+const regionNames = new Map<string, string>();
 const isKind = (k: string | null): k is Kind => QUIZZES.some((q) => q.kind === k);
 
 // ---- the best result per game, in this browser only ------------------------------------------------------------
@@ -37,34 +47,72 @@ function saveBest(key: string, pct: number) {
     if (!(key in b) || pct > b[key]) localStorage.setItem(BEST, JSON.stringify({ ...b, [key]: pct }));
   } catch { /* private window: no record */ }
 }
-const gameKey = (kind: Kind, mode: string) => (mode ? `${kind}:${mode}` : kind);
+const gameKey = (kind: Kind, mode: string, region = '') => [kind, mode, kind === 'glossary' ? '' : region].filter(Boolean).join(':');
 const pct = (score: number, max: number) => (max ? Math.round((100 * score) / max) : 0);
 const fmt = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(2).replace(/0$/, ''));
 
 export function quizPage(main: HTMLElement, kind: string | null, params: URLSearchParams) {
-  if (!isKind(kind)) return menu(main);
+  if (!isKind(kind)) return menu(main, params);
   return game(main, kind, params);
 }
 
-function menu(main: HTMLElement) {
+/** A game's address: its mode and the chosen region (not for the glossary — terms have no region) */
+function gameHref(kind: Kind, mode: string, region: string, more: Record<string, string> = {}) {
+  const qs = new URLSearchParams({ ...(mode ? { mode } : {}), ...(region && kind !== 'glossary' ? { region } : {}), ...more });
+  return `/quiz/${kind}${qs.size ? `?${qs}` : ''}`;
+}
+
+function menu(main: HTMLElement, params: URLSearchParams) {
   document.title = 'Quiz · Art History';
   const best = bests();
-  render(main, html`<section class="page quiz-page">
-    <h1>Quiz</h1>
-    <p class="lead">Train what you know about the collection — every round is drawn from the database, so the questions change as it grows.</p>
-    <div class="quiz-menu">${QUIZZES.map((q) => html`<article class="quiz-card">
+  let region = params.get('region') ?? savedRegion();
+  const cards = () => html`${QUIZZES.map((q) => html`<article class="quiz-card">
       <h2>${q.title}</h2>
       <p>${q.text}</p>
       <p class="quiz-modes">${q.modes.map((m) => {
-        const b = best[gameKey(q.kind, m.mode)];
-        return html`<a class="button-link" href="/quiz/${q.kind}${m.mode ? `?mode=${m.mode}` : ''}">${m.label}${b !== undefined ? html` <span class="muted small">best ${b}%</span>` : ''}</a>`;
+        const b = best[gameKey(q.kind, m.mode, region)];
+        return html`<a class="button-link" href="${gameHref(q.kind, m.mode, region)}">${m.label}${b !== undefined ? html` <span class="muted small">best ${b}%</span>` : ''}</a>`;
       })}</p>
-      ${q.kind === 'picture' ? html`<p class="quiz-mine small" hidden><a href="/quiz/picture?mine=only">Only your reference images</a></p>` : ''}
-    </article>`)}</div>
+      ${q.kind === 'picture' ? html`<p class="quiz-mine small" hidden><a href="${gameHref('picture', '', region, { mine: 'only' })}">Only your reference images</a></p>` : ''}
+    </article>`)}`;
+  render(main, html`<section class="page quiz-page">
+    <h1>Quiz</h1>
+    <p class="lead">Train what you know about the collection — every round is drawn from the database, so the questions change as it grows.</p>
+    <div class="quiz-regions" role="group" aria-label="World region" hidden></div>
+    <div class="quiz-menu">${cards()}</div>
     <p class="muted small quiz-mine" hidden>You are logged in: works that have only your reference images are part of the quizzes too.</p>
     <p class="muted small">Answers come from the entries as they are now. Something wrong? Tell us with the “F” button at the bottom right.</p>
   </section>`);
-  account().then((name) => { if (name) main.querySelectorAll<HTMLElement>('.quiz-mine').forEach((el) => el.removeAttribute('hidden')); });
+  let loggedIn = false;
+  const showMine = () => { if (loggedIn) main.querySelectorAll<HTMLElement>('.quiz-mine').forEach((el) => el.removeAttribute('hidden')); };
+  account().then((name) => { loggedIn = !!name; showMine(); });
+  // the regions with enough works: one to choose, or all
+  const box = main.querySelector<HTMLElement>('.quiz-regions')!;
+  const drawRegions = (list: QuizRegion[]) => {
+    const offered = list.filter((r) => r.works >= MIN_WORKS || r.region === region);
+    if (!offered.some((r) => r.region === region)) region = '';
+    render(box, html`<span class="muted small">Works from</span>
+      <button type="button" class="chip${region ? '' : ' active'}" data-region="" aria-pressed="${region ? 'false' : 'true'}">all regions</button>
+      ${offered.map((r) => html`<button type="button" class="chip${r.region === region ? ' active' : ''}" data-region="${r.region}" aria-pressed="${r.region === region ? 'true' : 'false'}"
+        title="${r.note ?? ''}">${r.name} <span class="muted">${r.works}</span></button>`)}`);
+    box.hidden = offered.length < 2;
+  };
+  let regions: QuizRegion[] = [];
+  account().then((name) => getQuizRegions(!!name)).then(({ data }) => {
+    regions = data;
+    data.forEach((r) => regionNames.set(r.region, r.name));
+    drawRegions(regions);
+  }).catch(() => { /* no regions: the games without a choice */ });
+  box.addEventListener('click', (e) => {
+    const chip = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-region]');
+    if (!chip) return;
+    region = chip.dataset.region ?? '';
+    saveRegion(region);
+    history.replaceState(history.state, '', region ? `/quiz?region=${region}` : '/quiz');
+    drawRegions(regions);
+    render(main.querySelector<HTMLElement>('.quiz-menu')!, cards());
+    showMine();
+  });
 }
 
 // ---- one game: rounds one after another, then the result --------------------------------------------------------
@@ -79,23 +127,25 @@ function game(main: HTMLElement, kind: Kind, params: URLSearchParams) {
   const quiz = QUIZZES.find((q) => q.kind === kind)!;
   const mode = quiz.modes.some((m) => m.mode === params.get('mode')) ? params.get('mode')! : quiz.modes[0].mode;
   const modeLabel = quiz.modes.length > 1 ? quiz.modes.find((m) => m.mode === mode)?.label : null;
+  const region = kind === 'glossary' ? '' : params.get('region') ?? '';
+  const regionLabel = region ? regionNames.get(region) ?? region.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()) : null;
   document.title = `${quiz.title} · Quiz · Art History`;
   const current = guard();
   let gone = false;
   const start = () => {
     render(main, html`<section class="page quiz-page"><p class="quiz-back"><a href="/quiz">← All quizzes</a></p>
-      <h1>${quiz.title}${modeLabel ? html` <span class="muted quiz-mode">${modeLabel}</span>` : ''}</h1>
+      <h1>${quiz.title}${modeLabel ? html` <span class="muted quiz-mode">${modeLabel}</span>` : ''}${regionLabel ? html` <span class="muted quiz-mode">· ${regionLabel}</span>` : ''}</h1>
       <div class="quiz-stage"><p class="muted loading">Drawing questions…</p></div></section>`);
     const stage = main.querySelector<HTMLElement>('.quiz-stage')!;
     rounds(kind, mode, params).then((list) => {
       if (gone || !current()) return;
       if (!list.length) {
-        render(stage, html`<p>Not enough entries for this quiz yet.</p>`);
+        render(stage, html`<p>Not enough entries for this quiz yet${regionLabel ? html` in ${regionLabel} — <a href="${gameHref(kind, mode, '')}">play with works from all regions</a>` : ''}.</p>`);
         return;
       }
       play(stage, list, (score, max, reviews) => {
         const p = pct(score, max);
-        saveBest(gameKey(kind, mode), p);
+        saveBest(gameKey(kind, mode, region), p);
         render(stage, html`<div class="quiz-result">
           <p class="quiz-total"><strong>${fmt(score)}</strong> of ${fmt(max)} points · ${p}%</p>
           <p class="muted">${p >= 90 ? 'Excellent!' : p >= 70 ? 'Well done.' : p >= 40 ? 'Not bad — once more?' : 'Every round teaches something — try again.'}</p>
@@ -135,11 +185,11 @@ async function rounds(kind: Kind, mode: string, params: URLSearchParams): Promis
   const n = ROUNDS[kind];
   const own = !!(await account());
   if (kind === 'picture') {
-    const { data, movements } = await getQuizPictures(n, own, params.get('mine') === 'only');
+    const { data, movements } = await getQuizPictures(n, own, params.get('mine') === 'only', params.get('region'));
     return data.filter((p) => p.image_url).map((p) => pictureRound(p, movements));
   }
-  if (kind === 'artist') return (await getQuizArtists(n, own)).data.map(artistRound);
-  if (kind === 'movement') return (await getQuizMovements(n, mode, own)).data.map(movementRound);
+  if (kind === 'artist') return (await getQuizArtists(n, own, params.get('region'))).data.map(artistRound);
+  if (kind === 'movement') return (await getQuizMovements(n, mode, own, params.get('region'))).data.map(movementRound);
   return (await getQuizGlossary(n, mode)).data.map(termRound);
 }
 

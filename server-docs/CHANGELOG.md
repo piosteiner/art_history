@@ -4,6 +4,28 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-02
 
+### World regions for works, artists and movements; the quiz keeps to one region (migration 191)
+- **What:**
+  - Enum `world_region` (europe, middle_east, africa, central_asia, south_asia, east_asia, southeast_asia, oceania,
+    north_america, south_america) with names in `world_regions`; `country_regions` maps every ISO country to its region.
+  - Column `region` (set by hand) on artworks, artists, movements: a "World region" menu in the CMS forms. Its empty
+    choice names the worked-out region and why.
+  - Materialized view `entry_regions` works the regions out:
+    - artist: where they worked or lived (most frequent), else birthplace, nationality, movements;
+    - movement: its own or a broader one's, else its artists';
+    - artwork: where it was made, else its artist, else its movements.
+  - The view is refreshed `CONCURRENTLY` in `refresh_quality_global()`. `place_country()` got `SET search_path`:
+    PostgreSQL 17 refreshes materialized views with an empty search_path.
+  - Quiz: `?region=` limits every game to that region; `/v1/quiz/regions` gives the counts. Without a region, an
+    artist's or movement's round takes its wrong options from that region (from anywhere if it has fewer than 2).
+  - Site `/quiz`: region chips above the games (12+ works), remembered in the browser, shown in the game title.
+  - e2e `quiz.spec.js`, site test; `npm run perf`: 40/40 within budget (global part 2.5 s of 3 s).
+- **Why:** owner: images from different regions were mixed in the quiz ("welche Werke von Hokusai sind, wenn da auch
+  Bilder aus Europa dabei sind"). South and Southeast Asia were added; Australia counts as part of Oceania.
+- **Revert:** revert the commit; `DROP MATERIALIZED VIEW entry_regions; ALTER TABLE artworks/artists/movements DROP
+  COLUMN region; DROP TABLE country_regions, world_regions; DROP TYPE world_region;`, then restore
+  `refresh_quality_global()` from migration 190's state (without the REFRESH line).
+
 ### Sources found by their short reference; a page's whole gallery for reference images
 - **What:** the pickers find a source by its short reference as cited: the surnames of its authors (else editors) plus
   the year, and its own siglum. These are added to the "other names" a source is searched by (`altSql()` in
