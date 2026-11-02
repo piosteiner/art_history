@@ -14,8 +14,10 @@ Format: date — what — why — how to revert.
   linked siglum in the text, not as a footnote with a "Literatur" block (`renderItems()` in `src/changelog.js`).
   Tests: `quiz.spec.js` (5), `private-images.spec.js`, `changelog.spec.js` (+1).
 - **Content (CMS drafts, unpublished):** changelog entries for 2026-10-31, 2026-11-01, 2026-11-02 with what was
-  missing; documentation drafts of chapters 5, 8, 10, 11, 12 (private reference images, site login, the books, the
-  Blaquier-Arrieta sale and its watcher, the server's reboot, name order in sources, periods colours, search ranking).
+  missing; documentation drafts of chapters 5, 6, 8, 9, 10, 11, 12, 13 (private reference images, site login, the
+  books, the Blaquier-Arrieta sale and its watcher, the server's reboot, name order in sources, periods colours, search
+  ranking; and from 31 October: the test environment, the date dash, the timeline's opening, similar names, "Search
+  elsewhere", the Wildenstein Plattner Institute, "not connected", the 31 events, the worker without re-planning).
 - **Why:** owner, 2026-11-02 ("quizzes should include entries that need images only if the user is logged in and has
   access to the private references"; the 1 November bullet showed its footnotes line by line).
 - **Revert:** revert the commit; the drafts in the CMS (Discard).
