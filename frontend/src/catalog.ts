@@ -427,8 +427,10 @@ export function entries<P extends Plural>(plural: P, items: ItemByPlural[P][]): 
     }
     // sort by the API's sort_key for every type: "Family, Given" (or sort_name) for artists and people, titles
     // without a leading article in their language ("Starry Night", "Phare de Honfleur"), romanizations of other scripts
+    // — except the bibliography, which shows and sorts by the short reference ("Mason 2005"; its sort_key is the
+    // title's: "El 2 de mayo …" filed under "#", "Wikipedia, Aargau" under A — 2026-11-03)
     const first = cat.sorts[0].id;
-    if (named.sort_key) {
+    if (named.sort_key && plural !== 'bibliography') {
       e.sorts[first] = byName(named.sort_key);
     }
     const lang = named.title_lang ?? named.name_lang ?? null;

@@ -2044,7 +2044,7 @@ const BUSCH = { slug: 'busch-1993', siglum: 'Busch 1993', citation: 'Werner Busc
 const KAT = { slug: 'kat-paris-2007', siglum: 'Kat. Paris 2007', citation: '<i>Hokusai</i> o &quot;La gran ola&quot;, hg. von X, Ausst.-Kat. Paris 2007, https://www.example.org/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1-and-a-very-long-address.' };
 async function sampleBibliography(page: Page) {
   const item = (s: typeof BUSCH, status: string, year: number) => ({ ...s, name: s.siglum, kind: 'monograph', subtitle: null, authors: ['Werner Busch'], year,
-    reading_status: status, read_on: null, primary_source: false, names: [], sort_key: s.siglum, search_text: '' });
+    reading_status: status, read_on: null, primary_source: false, names: [], sort_key: s.slug === 'kat-paris-2007' ? '0 Hokusai' : s.siglum, search_text: '' });
   await page.route(/\/v1\/bibliography\?/, (r) => r.fulfill({ json: { data: [item(BUSCH, 'read', 1993), item(KAT, 'to_read', 2007)], total: 2, limit: 500, offset: 0,
     stats: { total: 2, read: 1, reading: 0, to_read: 1 } } }));
   await page.route(/\/v1\/bibliography\/busch-1993$/, (r) => r.fulfill({ json: { type: 'source', ...item(BUSCH, 'read', 1993), description_html: '<p>Read for the chapter on Romanticism.</p>',
@@ -2068,6 +2068,8 @@ test('bibliography: A–Z by short reference with reading statistics and status 
   await page.goto('/bibliography');
   await expect(page.locator('#stats')).toHaveText('1 read · 0 reading · 1 to read');
   await expect(page.locator('#items .row')).toHaveCount(2);
+  // sorted and headed by the short reference, not by the title's sort key ("0 Hokusai" would be filed under #)
+  await expect(page.locator('#items .cards-heading')).toHaveText(['B', 'K']);
   // a citation's quotes read as quotes, its long address wraps instead of widening the page (2026-11-03)
   await expect(page.locator('.row', { hasText: 'Kat. Paris 2007' }).locator('.row-detail')).toContainText('Hokusai o "La gran ola"');
   expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(0);

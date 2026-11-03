@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-03
 
+### Site: the bibliography sorted by short reference
+- **What:** the site's lists sort by the API's `sort_key` — for a source the title's (without its article), while the
+  bibliography shows and offers "Short reference A–Z": "Museo del Prado, El 2 de mayo …" was filed under "#",
+  "Wikipedia, Aargau" under A. The bibliography now sorts and heads by its short reference (`entries()` in
+  `frontend/src/catalog.ts`); test in `site.spec.ts`. The CMS lists sources by title and sorts them so — unchanged.
+- **Why:** owner, 2026-11-03.
+- **Revert:** `git revert`.
+
 ### Site: lists as cards or a compact list
 - **What:** every list page has a switch "Cards | List" (kept per section in the browser, `arthistory:view:<plural>`).
   Sections whose entries rarely have a picture start as the list — places, movements, polities, literary works,
