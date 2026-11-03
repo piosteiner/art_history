@@ -27,6 +27,13 @@ death: 1894-03-28
 wikidata_id: Q653932
 metadata:
   sources: [Wikidata Q653932 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q653932
 identifiers:
   gnd: 114879428X
   kulturnav: ea8860b2-2562-4e05-995a-b7259fdbb792

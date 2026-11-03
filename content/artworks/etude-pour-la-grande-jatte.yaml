@@ -1,0 +1,150 @@
+public_id: 112328
+title_lang: en
+title: Étude pour «La Grande Jatte»
+names:
+  - lang: en
+    role: translation
+    text: Studie zu «La Grande Jatte»
+  - lang: en
+    role: translation
+    text: Study for 'La Grande Jatte'
+creator: georges-seurat
+created: 1884/1885
+kind: oil painting
+medium: Oil on panel
+dimensions: [15.6, 25.2]
+institution: kunsthaus-zurich
+inventory_number: BU 0094
+web_url: https://collection.kunsthaus.ch/de/collection/item/750974/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64410170
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/56/Georges_Seurat_-_%C3%89tude_pour_La_Grande_Jatte_PC_129.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Georges_Seurat_-_%C3%89tude_pour_La_Grande_Jatte_PC_129.jpg
+    license: Public domain
+    credit: Georges Seurat
+provenance:
+  - owner: artist/georges-seurat
+    role: estate
+    acquired: 1891-03-29
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750974/
+        note: "Footnote: Nachlass-Inv.-No. 109, Hauke 1961, Bd. I, No. 127."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/cousturier-edmond
+    acquired: 1905 or earlier
+    ended: 1943 or earlier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750974/
+        note: "Footnote: Kat. Société des Artistes Indépendants Paris 1905, No. 19."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/francois-cousturier
+    direct: true
+    place: paris
+    label: wohl Nachlass
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750974/
+        note: "Footnote: Wie oben Fussnote 4; Dorra/Rewald 1959, No. 117."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Rosenberg
+    ended: 1951
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750974/
+        note: "Footnote: Dorra/Rewald 1959, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/arthur-kauffmann
+    role: dealer
+    ended: 1951-12-28
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750974/
+        note: "Footnote: AStEGB, Eingangsbuch I, 28.12.1951."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-12-28
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 37000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750974/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750974/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 94
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750974/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "94"
+    institution: foundation-e-g-buhrle-collection
+  - number: "117"
+    label: Dorra-Rewald (catalogue raisonné)
+  - number: "127"
+    label: Hauke (catalogue raisonné)
+  - number: "216"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750974/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750974/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750974/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750974/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750974/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750974/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750974/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750974/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

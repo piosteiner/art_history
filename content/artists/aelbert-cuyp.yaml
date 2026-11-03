@@ -1,0 +1,57 @@
+public_id: 112260
+name: Aelbert Cuyp
+given_name: Aelbert
+family_name: Cuyp
+birth: 1620-10-20
+death: 1691-11-15
+wikidata_id: Q313194
+metadata:
+  sources: [Wikidata Q313194 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q313194
+  - type: born_in
+    to: place/dordrecht
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q313194
+  - type: died_in
+    to: place/dordrecht
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q313194
+  - type: associated_with
+    to: movement/dutch-golden-age-painting
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q313194
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e4/10_Albert_Cuyp%2C_Schilder%2C_1620-1691.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:10_Albert_Cuyp,_Schilder,_1620-1691.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "149526442"
+  gnd: "118670786"
+  idref: "066979323"
+  kulturnav: 64bbbe14-d5dd-4dee-9abf-a090781ee267
+  lc: n50082116
+  rkd: "19498"
+  ulan: "500121064"
+  viaf: "19949742"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q313194
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q313194

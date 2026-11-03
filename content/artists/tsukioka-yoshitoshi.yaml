@@ -36,6 +36,25 @@ death: 1892-06-09
 wikidata_id: Q467337
 metadata:
   sources: [Wikidata Q467337 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q467337
+  - type: worked_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q467337
+  - type: student_of
+    to: artist/utagawa-kuniyoshi
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q467337
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/14/Tsukioka_Yoshitoshi_Photograph_c1882.png
     source_url: https://commons.wikimedia.org/wiki/File:Tsukioka_Yoshitoshi_Photograph_c1882.png

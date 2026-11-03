@@ -1,0 +1,50 @@
+public_id: 112110
+name: Cairo
+names:
+  - lang: ja
+    role: translation
+    text: カイロ
+  - lang: zh
+    role: translation
+    text: 开罗
+  - lang: ko
+    role: translation
+    text: 카이로
+  - lang: fr
+    role: translation
+    text: Le Caire
+  - lang: de
+    role: translation
+    text: Kairo
+  - lang: it
+    role: translation
+    text: Il Cairo
+  - lang: nl
+    role: translation
+    text: Caïro
+  - lang: es
+    role: translation
+    text: El Cairo
+  - lang: ru
+    role: translation
+    text: Каир
+kind: settlement
+parent: al-qahirah
+country_code: EG
+location: [31.23583, 30.04444]
+wikidata_id: Q85
+metadata:
+  sources: [Wikidata Q85 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q85
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q85
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q85

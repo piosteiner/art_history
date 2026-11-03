@@ -1,0 +1,41 @@
+public_id: 112286
+name: Kortrijk
+names:
+  - lang: ja
+    role: translation
+    text: コルトレイク
+  - lang: zh
+    role: translation
+    text: 科特赖克
+  - lang: ko
+    role: translation
+    text: 코르트레이크
+  - lang: fr
+    role: translation
+    text: Courtrai
+  - lang: es
+    role: translation
+    text: Cortrique
+  - lang: ru
+    role: translation
+    text: Кортрейк
+kind: settlement
+parent: west-flanders
+country_code: BE
+location: [3.26583, 50.8275]
+wikidata_id: Q12995
+metadata:
+  sources: [Wikidata Q12995 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q12995
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q12995
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q12995

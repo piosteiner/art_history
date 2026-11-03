@@ -39,6 +39,31 @@ death: 1948-01-08
 wikidata_id: Q155158
 metadata:
   sources: [Wikidata Q155158 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q155158
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q155158
+  - type: member_of
+    to: institution/deutscher-werkbund
+    sources:
+      - accessed: 2026-11-02
+        property: P463
+        wikidata: Q155158
+  - type: associated_with
+    to: movement/dada
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q155158
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/c/c7/Kurt_Schwitters.JPG
     source_url: https://commons.wikimedia.org/wiki/File:Kurt_Schwitters.JPG

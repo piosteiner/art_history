@@ -1,0 +1,155 @@
+public_id: 112226
+title_lang: fr
+title: La Terrasse aux arcades à Vallauris
+names:
+  - lang: en
+    role: translation
+    text: Arkaden in Vallauris
+  - lang: en
+    role: translation
+    text: Arcades at Vallauris
+creator: raoul-dufy
+created: 1927
+kind: oil painting
+medium: Oil on canvas
+dimensions: [73, 92]
+institution: kunsthaus-zurich
+inventory_number: BU 0041
+web_url: https://collection.kunsthaus.ch/de/collection/item/704963/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q124294672
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c0/Raoul_Dufy_-_La_Terrasse_aux_arcades_%C3%A0_Vallauris_-_41_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Raoul_Dufy_-_La_Terrasse_aux_arcades_%C3%A0_Vallauris_-_41_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Raoul Dufy
+provenance:
+  - owner: person/jacques-soubies
+    ended: 1940-12-13 or earlier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704963/
+        note: "Footnote: Auktion Hôtel Drouot, Paris (13.12.1940), Lot 42; Archives de Paris, Carton D118E3 81 (1940, Louis de Cagny, Etienne Ader)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1940-12-13
+    ended: 1940-12-13
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 42
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704963/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bignou-gallery
+    role: dealer
+    acquired: 1940-12-13
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and New York, NY
+    price:
+      amount: 7800
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704963/
+        note: "Footnote: Archives de Paris, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    place: united-states
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704963/
+        note: "Footnote: AStEGB, Inventarkarte für Dufy, Arcades à Vallauris."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandlung-fritz-und-peter-nathan
+    role: dealer
+    ended: 1954-05-04
+    place: zurich
+    label: Zürich and New York, NY
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704963/
+        note: "Footnote: AStEGB, Zahlungsauftrag von Emil Bührle an die Industrie- und Handelsbank, Zürich, vom 04.05.1954, über den Betrag von $ 92.500 für vier Gemälde, die von Dr. Peter Nathan, New York, über Dr. Fritz Nathan, Zürich, erworben wurden. Diesem Zahlungsauftrag ist eine maschinengeschriebene und von Emil Bührle paraphierte Liste beigefügt, aus der hervorgeht, dass die vier Gemälde, darunter das vorliegende…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-05-04
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 8500
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704963/
+        note: "Footnote: AStEGB, Auszahlungsbestätigung der Industrie- und Handelsbank, Zürich, 04.05.1954."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 41
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "41"
+    institution: foundation-e-g-buhrle-collection
+  - number: "483"
+    label: Laffaille (catalogue raisonné)
+  - number: "376"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

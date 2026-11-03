@@ -1,0 +1,150 @@
+public_id: 112365
+title_lang: fr
+title: Au lit
+names:
+  - lang: de
+    role: translation
+    text: Im Bett
+  - lang: en
+    role: translation
+    text: In Bed
+creator: henri-de-toulouse-lautrec
+created: 1892
+kind: oil painting
+medium: Gouache on cardboard
+dimensions: [53, 34]
+institution: kunsthaus-zurich
+inventory_number: BU 0184
+web_url: https://collection.kunsthaus.ch/de/collection/item/752960/
+on_loan: true
+on_loan_since: 2021
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q110805652
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/64/Henri_de_Toulouse-Lautrec_-_Au_lit_-_184_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_de_Toulouse-Lautrec_-_Au_lit_-_184_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Henri de Toulouse-Lautrec
+provenance:
+  - owner: institution/bernheim-jeune
+    role: dealer
+    place: paris
+    label: inv. no. 1020
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+        note: "Footnote: AStEGB, Inventarkarte Toulouse-Lautrec, Au lit. Dieser Eintrag wird durch eine Galerie-Etikette auf der Rückseite des Gemäldes mit der Inv. Nr. 1020 bekräftigt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/gustave-pellet
+    ended: 1919-07-19
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+        note: "Footnote: Kat. Orangerie des Tuileries Paris 1951, Nr. 38."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/maurice-exsteens
+    acquired: 1919-07-19
+    ended: 29 June 1947 or later
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+        note: "Footnote: Gauguin, ses Amis, l'Ecole de Pont-Aven et l'Académie Julien, in: Gazette des Beaux-Arts (Galerie Wildenstein), Paris 1934, Nr. 128: Exsteens war Schwiegersohn des oben genannten, verheiratet mit Maud Pellet und übernahm Pellets Kunsthandel, der sich auf Kunstbücher und Kunstdrucke spezialisiert hatte. Eine Etikette auf der Rückseite des Gemäldes weist M. Exsteens als Leihgeber für die Ausstellung…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/christoph-bernoulli
+    role: dealer
+    ended: 1952-05-07
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+        note: "Footnote: AStEGB, Eingangsbuch I, 07.05.1952, weist Dr. Christoph Bernoulli als Einlieferer aus; Inventarkarte, wie oben Fussnote 3, nennt sowohl Dr. Fritz Nathan als auch Dr. Chr. Bernoulli als Verkäufer."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-05-07
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+        note: "Footnote: Eingangsbuch, wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1967
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+        note: "Footnote: Die Kunstwerke, die 1960 nicht in die Stiftung Sammlung E.G. Bührle gelangten, wurden 1967 unter Emil Bührles Sohn Dr. Dieter Bührle und seiner Tochter Hortense Anda-Bührle aufgeteilt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/dieter-buhrle
+    acquired: 1967
+    ended: 2012-11-09
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+        note: "Footnote: Sohn von Emil Bührle und 1960, zusammen mit seiner Mutter Charlotte Bührle-Schalk und seiner Schwester Hortense (Anda-)Bührle, einer der drei Gründer der Stiftung Sammlung E.G. Bührle, deren Stiftungsrat er von 1960 bis 2012 angehörte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 2012-11-09
+    method: inheritance
+    direct: true
+    place: zurich
+    label: inv. no. 184
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "184"
+    institution: foundation-e-g-buhrle-collection
+  - number: "437"
+    label: Dortu P. (catalogue raisonné)
+  - number: "231"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

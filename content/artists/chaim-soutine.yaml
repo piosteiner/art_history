@@ -1,0 +1,87 @@
+public_id: 112116
+name: Chaïm Soutine
+given_name: Chaïm
+family_name: Soutine
+birth: 1893-01-13
+death: 1943-08-09
+wikidata_id: Q160141
+metadata:
+  sources: [Wikidata Q160141 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q160141
+  - type: nationality
+    to: polity/russian-empire
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q160141
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q160141
+  - type: worked_in
+    to: place/cagnes-sur-mer
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q160141
+  - type: worked_in
+    to: place/ceret
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q160141
+  - type: worked_in
+    to: place/chartres
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q160141
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q160141
+  - type: influenced_by
+    to: artist/rembrandt
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q160141
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q160141
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/ChaimSoutine_1935.jpg/1280px-ChaimSoutine_1935.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:ChaimSoutine_1935.jpg
+    license: CC BY-SA 4.0
+    credit: EMBViki
+identifiers:
+  bnf: 13948329f
+  dodis: P46048
+  gnd: "118615785"
+  idref: "028718038"
+  lc: n50021650
+  rkd: "74050"
+  ulan: "500004801"
+  viaf: "18015110"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q160141
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q160141

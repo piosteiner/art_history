@@ -1,0 +1,55 @@
+public_id: 111801
+name: Frans Masereel
+given_name: Frans
+family_name: Masereel
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Frans Laurent Wilhelmina Adolf Lodewijk Masereel
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q559297
+birth: 1889-07-30
+death: 1972-01-03
+wikidata_id: Q559297
+metadata:
+  sources: [Wikidata Q559297 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/belgium
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q559297
+  - type: died_in
+    to: place/avignon
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q559297
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cb/Jules_De_Bruycker_-_Frans_Masereel_in_his_studio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jules_De_Bruycker_-_Frans_Masereel_in_his_studio.jpg
+    license: Public domain
+    credit: Jules De Bruycker
+identifiers:
+  bnf: 11914955s
+  gnd: "118578669"
+  hls: "028057"
+  idref: "027014878"
+  lc: n50043654
+  rkd: "53083"
+  sikart: "4025906"
+  ulan: "500022087"
+  viaf: "51693032"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q559297
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q559297

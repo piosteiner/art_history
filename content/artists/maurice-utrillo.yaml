@@ -1,0 +1,52 @@
+public_id: 112368
+name: Maurice Utrillo
+given_name: Maurice
+family_name: Utrillo
+birth: 1883-12-26
+death: 1955-11-05
+wikidata_id: Q108301
+metadata:
+  sources: [Wikidata Q108301 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q108301
+  - type: influenced_by
+    to: artist/camille-pissarro
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q108301
+  - type: influenced_by
+    to: artist/gustave-courbet
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q108301
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/41/Maurice_Utrillo%2C_ca._1915-1920.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Maurice_Utrillo,_ca._1915-1920.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "119584498"
+  dome: "392"
+  gnd: 11862573X
+  idref: "027573338"
+  kulturnav: 6de7b071-9afc-4590-9640-eb9f81321ebc
+  lc: n50046516
+  rkd: "78861"
+  ulan: "500008404"
+  viaf: "39385919"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q108301
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q108301

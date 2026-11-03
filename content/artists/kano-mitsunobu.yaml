@@ -19,6 +19,19 @@ death: 1608-04-13
 wikidata_id: Q3192786
 metadata:
   sources: [Wikidata Q3192786 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3192786
+  - type: born_in
+    to: place/yamashiro-province
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q3192786
 identifiers:
   gnd: "1059733757"
   lc: n79037078

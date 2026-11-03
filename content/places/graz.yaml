@@ -1,0 +1,35 @@
+public_id: 111848
+name: Graz
+names:
+  - lang: ja
+    role: translation
+    text: グラーツ
+  - lang: zh
+    role: translation
+    text: 格拉茨
+  - lang: ko
+    role: translation
+    text: 그라츠
+  - lang: ru
+    role: translation
+    text: Грац
+kind: settlement
+parent: steiermark
+country_code: AT
+location: [15.43861, 47.07083]
+wikidata_id: Q13298
+metadata:
+  sources: [Wikidata Q13298 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q13298
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q13298
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q13298

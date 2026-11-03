@@ -21,6 +21,19 @@ death: 1846-06-12
 wikidata_id: Q11571495
 metadata:
   sources: [Wikidata Q11571495 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q11571495
+  - type: associated_with
+    to: movement/kano-school
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q11571495
 identifiers:
   gnd: "139235094"
   lc: nr96020567

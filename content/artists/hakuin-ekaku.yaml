@@ -25,6 +25,13 @@ death: 1769-01-18
 wikidata_id: Q177059
 metadata:
   sources: [Wikidata Q177059 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q177059
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/7/7e/Zen-Master-Hakuin-Ekaku-Self-Portrait-1767.png
     source_url: https://commons.wikimedia.org/wiki/File:Zen-Master-Hakuin-Ekaku-Self-Portrait-1767.png

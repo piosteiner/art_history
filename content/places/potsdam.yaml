@@ -1,0 +1,35 @@
+public_id: 112173
+name: Potsdam
+names:
+  - lang: ja
+    role: translation
+    text: ポツダム
+  - lang: zh
+    role: translation
+    text: 波茨坦
+  - lang: ko
+    role: translation
+    text: 포츠담
+  - lang: ru
+    role: translation
+    text: Потсдам
+kind: settlement
+parent: brandenburg
+country_code: DE
+location: [13.05914, 52.40093]
+wikidata_id: Q1711
+metadata:
+  sources: [Wikidata Q1711 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q1711
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q1711
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q1711

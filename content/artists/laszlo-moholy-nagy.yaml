@@ -54,6 +54,61 @@ death: 1946-11-24
 wikidata_id: Q160448
 metadata:
   sources: [Wikidata Q160448 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/hungary
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q160448
+  - type: nationality
+    to: polity/united-states
+    period: 1946
+    period_label: from 1946
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q160448
+  - type: died_in
+    to: place/chicago
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q160448
+  - type: lived_in
+    to: place/budapest
+    sources:
+      - accessed: 2026-11-02
+        property: P551
+        wikidata: Q160448
+  - type: lived_in
+    to: place/vienna
+    period: 1919/1920
+    sources:
+      - accessed: 2026-11-02
+        property: P551
+        wikidata: Q160448
+  - type: lived_in
+    to: place/berlin
+    period: 1920/1933
+    sources:
+      - accessed: 2026-11-02
+        property: P551
+        wikidata: Q160448
+  - type: lived_in
+    to: place/london
+    period: 1935/1937
+    sources:
+      - accessed: 2026-11-02
+        property: P551
+        wikidata: Q160448
+  - type: lived_in
+    to: place/chicago
+    period: 1937/1946
+    sources:
+      - accessed: 2026-11-02
+        property: P551
+        wikidata: Q160448
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/9c/L%C3%A1szl%C3%B3_Moholy-Nagy_by_Hugo_Erfurth%2C_c._1930_.jpg
     source_url: https://commons.wikimedia.org/wiki/File:L%C3%A1szl%C3%B3_Moholy-Nagy_by_Hugo_Erfurth,_c._1930_.jpg

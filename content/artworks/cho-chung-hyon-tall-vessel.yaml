@@ -6,6 +6,7 @@ kind: vessel
 medium: Stoneware
 materials: [stoneware]
 dimensions: [60]
+region: east_asia
 description_md: "By Cho Chung-hyŏn (born 1940) of Ewha University, who works in the earthenware and onggi tradition: carved and incised decoration recalling Three Kingdoms tomb wares and [[onggi]] storage jars. [[source/portal-2000|pp. 186–187, fig. 107]]"
 relationships:
   - type: associated_with

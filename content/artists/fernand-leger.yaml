@@ -28,6 +28,61 @@ death: 1955-08-17
 wikidata_id: Q157183
 metadata:
   sources: [Wikidata Q157183 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q157183
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q157183
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q157183
+  - type: worked_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q157183
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q157183
+  - type: worked_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q157183
+  - type: influenced_by
+    to: artist/henri-rousseau
+    sources:
+      - accessed: 2026-11-02
+        property: P737
+        wikidata: Q157183
+  - type: studied_at
+    to: institution/ecole-nationale-superieure-des-arts-decoratifs
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q157183
+  - type: associated_with
+    to: movement/cubism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q157183
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/0/06/Fernand_L%C3%A9ger.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Fernand_L%C3%A9ger.jpg

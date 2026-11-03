@@ -9,6 +9,21 @@ death: 1942-07-18
 wikidata_id: Q30251109
 metadata:
   sources: [Wikidata Q30251109 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q30251109
+  - type: studied_at
+    to: institution/accademia-di-belle-arti-di-venezia
+    period: 1885
+    period_label: until 1885
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q30251109
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/d/db/Naganuma_Moriyoshi.png
     source_url: https://commons.wikimedia.org/wiki/File:Naganuma_Moriyoshi.png

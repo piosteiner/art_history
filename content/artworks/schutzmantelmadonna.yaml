@@ -1,0 +1,110 @@
+public_id: 112403
+title_lang: en
+title: Schutzmantelmadonna
+names:
+  - lang: en
+    role: translation
+    text: The Virgin of Mercy
+attribution_label: Anonymous, Upper Swabia
+created: c. 1500
+created_span: uncertain
+kind: sculpture
+medium: Limewood
+dimensions: [115, 82.5, 50]
+institution: kunsthaus-zurich
+inventory_number: BU P.14
+web_url: https://collection.kunsthaus.ch/de/collection/item/752994/
+on_loan: true
+on_loan_since: 2021
+region: europe
+provenance:
+  - owner_label: unknown (collector)
+    place: ravensburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752994/
+        note: "Footnote: AStEGB, Inventarkarte Die Jungfrau der Barmherzigkeit."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/benno-griebert
+    role: dealer
+    acquired: 1953-05-23 or earlier
+    ended: 1954-07-10
+    place: meersburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752994/
+        note: "Footnote: AStEGB, Eingangsbuch II, 23.95.1953."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-07-10
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 40000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752994/
+        note: "Footnote: AStEGB, Handschriftliche Notiz von Emil Bührle, beigefügt zu von Dr. Benno Griebert unterzeichneten Quittungen über den Kauf eines Gemäldes, datiert 14.01.1954 und 24.06.1954. Auf diesem Vermerk hält Emil Bührle fest, dass die vorliegende Skulptur gegen einen Kredit, den er Griebert gewährt hat, zuzüglich Zinsen in seinen Besitz übergeht. AStEGB, Darlehensvertrag zwischen Emil Bührle, Zürich, und …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752994/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. P14
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752994/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: P14
+    institution: foundation-e-g-buhrle-collection
+  - number: "602"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

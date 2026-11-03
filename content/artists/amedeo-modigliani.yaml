@@ -1,0 +1,119 @@
+public_id: 111962
+name: Amedeo Modigliani
+given_name: Amedeo
+family_name: Modigliani
+birth: 1884-07-12
+death: 1920-01-24
+wikidata_id: Q120993
+metadata:
+  sources: [Wikidata Q120993 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/konigreich-italien
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q120993
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q120993
+  - type: lived_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P551
+        wikidata: Q120993
+  - type: lived_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-03
+        property: P551
+        wikidata: Q120993
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q120993
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q120993
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q120993
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q120993
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q120993
+  - type: influenced_by
+    to: artist/henri-de-toulouse-lautrec
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q120993
+  - type: influenced_by
+    to: artist/pablo-picasso
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q120993
+  - type: influenced_by
+    to: artist/paul-cezanne
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q120993
+  - type: studied_at
+    to: institution/accademia-di-belle-arti-di-venezia
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q120993
+  - type: associated_with
+    to: movement/modern-art
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q120993
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/24/Amedeo_Modigliani_1918_restored.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Amedeo_Modigliani_1918_restored.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 11997616f
+  dome: "12073"
+  gnd: "118582941"
+  idref: "027329682"
+  kulturnav: e7df5ead-7bb0-4c97-8b07-9c1c41c0b3f9
+  lc: n79059541
+  nlk: KAC199619078
+  rkd: "56464"
+  ulan: "500026509"
+  viaf: "17232808"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q120993
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q120993

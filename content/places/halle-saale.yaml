@@ -1,0 +1,41 @@
+public_id: 112387
+name: Halle (Saale)
+names:
+  - lang: ja
+    role: translation
+    text: ハレ (ザーレ)
+  - lang: zh
+    role: translation
+    text: 萨勒河畔哈雷
+  - lang: ko
+    role: translation
+    text: 할레
+  - lang: fr
+    role: translation
+    text: Halle-sur-Saale
+  - lang: it
+    role: translation
+    text: Halle
+  - lang: ru
+    role: translation
+    text: Галле
+kind: settlement
+parent: sachsen-anhalt
+country_code: DE
+location: [11.96972, 51.48278]
+wikidata_id: Q2814
+metadata:
+  sources: [Wikidata Q2814 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q2814
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q2814
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q2814

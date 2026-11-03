@@ -1,0 +1,188 @@
+public_id: 112353
+title_lang: de
+title: Der Besuch
+names:
+  - lang: en
+    role: translation
+    text: The Visit
+creator: gerard-ter-borch
+created: c. 1660
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [91.5, 107]
+institution: kunsthaus-zurich
+inventory_number: BU 0167
+web_url: https://collection.kunsthaus.ch/de/collection/item/752017/
+on_loan: true
+on_loan_since: 2021
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q28923855
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/32/Gerard_ter_Borch_-_Der_Besuch_-_167_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Gerard_ter_Borch_-_Der_Besuch_-_167_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Gerard ter Borch the Elder / Gerard ter Borch
+provenance:
+  - owner_label: private collection
+    acquired: 1833
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+        note: "Footnote: Smith 1833, S. 140, Nr. 76."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/edmond-james-de-rothschild
+    ended: 1934
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+        note: "Footnote: Gudlaugsson 1959, S. 121-122; AStEGB, Schreiben von S. J. Gudlaugsson, Rijksbureau voor Kunsthistorische Documentatie, Den Haag, an Emil Bührle, 30.06.1955, in dem die Echtheit des Gemäldes bestätigt und seine Herkunft mit «Edouard» [recte: Edmond] de Rothschild, gefolgt von Maurice de Rothschild, angegeben wird."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/maurice-edmond-charles-de-rothschild
+    direct: true
+    place: paris
+    label: Paris  and  Pregny
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+        note: "Footnote: Brief, wie oben Fussnote 5; Bundesarchiv Koblenz, MCCP Restitution File, Central Collecting Point München, B323/609."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/sonderauftrag-linz
+    acquired: 1943
+    ended: 1945-06-30
+    direct: true
+    label: beschlagnahmt und über die deutsche Botschaft in Paris übergeben; Nr. 2729; Aneignung
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+        note: "Footnote: MCCP Restitution File, wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/munich-central-collecting-point
+    acquired: 1945-06-30
+    ended: 1946-03-27
+    direct: true
+    place: munich
+    label: Nr. 1672
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+        note: "Footnote: MCCP Restitution File, wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/maurice-edmond-charles-de-rothschild
+    acquired: 1946-03-27
+    method: restitution
+    direct: true
+    place: paris
+    label: Paris  and  Pregny
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+        note: "Footnote: MCCP Restitution File wie oben Fussnote 6; AStEGB, Brief von Dr. A. B. de Vries, Direktor des Mauritshuis, Den Haag, an Emil Bührle, 29.06.1955, mit dem Hinweis, dass er das Bild mit Maurice de Rothschild in Pregny gesehen habe; Gudlaugsson 1959, Nr. 149."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/rosenberg-stiebel-inc
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+        note: "Footnote: Gudlaugsson 1959, Nr. 149."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/edward-speelman
+    role: dealer
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+        note: "Footnote: Erworben aus den Vorgenannten, Auskunft von Anthony Speelman, London, Sohn von Edward Speelman, an die Stiftung Sammlung E.G. Bührle, 08.01.2010, und bestätigt durch Marlborough International Fine Art, 24.08.2012."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    ended: 1955-06-27
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+        note: "Footnote: Erworben von Vorgenanntem, Angaben wie oben Fussnote 12; AStEGB, Brief von Dr. Walter Drack, Kustos der Sammlung Bührle, an Dr. Eduard Plietzsch, Köln, 27.06.1955, mit dem Hinweis, dass Bührle das Bild soeben von Marlborough Fine Art Ltd., London, erworben hat."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-06-27
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 55000
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+        note: "Footnote: AStEGB, Preislisten, handgeschrieben von Emil Bührle, mit Namen von Künstlern (und manchmal Titeln), darunter das vorliegende Gemälde: Die Preislisten wurden für eine Gruppe von Gemälden Alter Meister erstellt, über deren Kauf Bührle mit Frank Lloyd von Marlborough Fine Art Ltd, London, verhandelte. Dieser Teil des Kaufs umfasste Goyas Prozession (Sammlung Emil Bührle, Inv. 140) sowie ein Gemälde …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 167
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "167"
+    institution: foundation-e-g-buhrle-collection
+  - number: "149"
+    label: Gudlaugsson (catalogue raisonné)
+  - number: "458"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

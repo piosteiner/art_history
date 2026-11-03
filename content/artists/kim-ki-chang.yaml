@@ -15,6 +15,13 @@ death: 2001-01-23
 wikidata_id: Q112766857
 metadata:
   sources: [Wikidata Q112766857 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/south-korea
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q112766857
 identifiers:
   idref: "229557651"
   lc: n81090008

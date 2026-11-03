@@ -19,6 +19,19 @@ death: 1891-07-13
 wikidata_id: Q2386947
 metadata:
   sources: [Wikidata Q2386947 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2386947
+  - type: student_of
+    to: person/rai-sanyo
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q2386947
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/4/40/Portrait_of_Shibata_Zeshin_in_The_Far_East%2C_1897.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Shibata_Zeshin_in_The_Far_East,_1897.jpg

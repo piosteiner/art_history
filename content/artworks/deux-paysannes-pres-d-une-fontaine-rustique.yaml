@@ -1,0 +1,161 @@
+public_id: 112185
+title_lang: fr
+title: Deux Paysannes près d'une fontaine rustique
+names:
+  - lang: en
+    role: translation
+    text: Beim Brunnen
+  - lang: en
+    role: translation
+    text: Pausing by the Fountain
+creator: francois-boucher
+created: 1765
+kind: oil painting
+medium: Oil on canvas
+dimensions: [35.5, 44]
+institution: kunsthaus-zurich
+inventory_number: BU 0122
+web_url: https://collection.kunsthaus.ch/de/collection/item/699962/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223654
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f2/Fran%C3%A7ois_Boucher_-_Deux_Paysannes_pr%C3%A8s_d%27une_fontaine_rustique_-_122_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_-_Deux_Paysannes_pr%C3%A8s_d%27une_fontaine_rustique_-_122_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: François Boucher
+provenance:
+  - owner: person/pierre-paul-louis-randon-de-boisset
+    ended: 1776-09-28
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+        note: "Footnote: Möglicherweise vom Künstler als Geschenk erhalten, zur Erinnerung an eine gemeinsame Reise nach Holland ca. 1763/64, Kat. Metropolitan Museum of Art, New York 1986, S. 42; Catalogue des Tableaux & Dessins précieux des Maîtres célèbres des trois Ecoles [...] du Cabinet de feu M. Randon de Boisset [...], Auktion Paris 1777, Nr. 198."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/pierre-paul-louis-randon-de-boisset
+    role: estate
+    acquired: 1776-09-28
+    ended: 1777-03-25 or earlier
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1777-02-27
+    ended: 1777-03-25
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 198
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+        note: "Footnote: Catalogue des Tableaux & Dessins précieux des Maîtres célèbres des trois Ecoles […] du Cabinet de feu M. Randon de Boisset […], Auktion Paris 1777, Nr. 198."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jean-louis-millon-dainval
+    acquired: 1777-03-25 or earlier
+    method: purchase
+    direct: true
+    label: 888 Livres
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+        note: "Footnote: Neffe von Randon de Boisset; erworben bei der oben genannten Versteigerung für 888 Livres, wie oben Fussnote 5; Ananoff 1976, Nr. 616."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/clifford-duits
+    role: dealer
+    ended: 1955 or later
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+        note: "Footnote: Kat. Royal Academy of Arts, London 1954/1955, Nr. 458."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    ended: 1955-06-27
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+        note: "Footnote: AStEGB, Inventarkarte Boucher, Deux paysannes."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-06-27
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 5200
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+        note: "Footnote: AStEGB, Preisliste, handgeschrieben von Emil Bührle und mit den Namen von 5 Künstlern, darunter Boucher; die Preisliste wurde für eine Gruppe von Gemälden überwiegend Alter Meister erstellt, deren Kauf Bührle mit Frank Lloyd von Marlborough Fine Art Ltd. London verhandelte; dieser Teil des Kaufs belief sich auf £ 66.000 (= CHF 792.000) und umfasste Courbets Porträt eines Mannes, Goyas Prozession u…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 122
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "122"
+    institution: foundation-e-g-buhrle-collection
+  - number: "616"
+    label: Ananoff (catalogue raisonné)
+  - number: "445"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

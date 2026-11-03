@@ -25,6 +25,12 @@ relationships:
       - accessed: 2026-10-28
         property: P20
         wikidata: Q3128092
+  - type: student_of
+    to: artist/kano-osanobu
+    sources:
+      - accessed: 2026-11-02
+        property: P802
+        wikidata: Q11571495
   - type: member_of
     to: institution/kangakai
     sources:

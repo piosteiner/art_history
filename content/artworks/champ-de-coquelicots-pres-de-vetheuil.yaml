@@ -1,0 +1,253 @@
+public_id: 111972
+title_lang: en
+title: Champ de coquelicots près de Vétheuil
+names:
+  - lang: en
+    role: translation
+    text: Mohnblumenfeld bei Vétheuil
+  - lang: en
+    role: translation
+    text: Poppy Field near Vétheuil
+creator: claude-monet
+created: c. 1879
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [73, 92]
+institution: kunsthaus-zurich
+inventory_number: BU 0071
+web_url: https://collection.kunsthaus.ch/de/collection/item/586961/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q1114220
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f9/Claude_Monet_-_Champ_de_coquelicots_pr%C3%A8s_de_V%C3%A9theuil_-_71_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Champ_de_coquelicots_pr%C3%A8s_de_V%C3%A9theuil_-_71_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: person/cantin
+    acquired: 1879-11
+    ended: 1879-11
+    method: purchase
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+        note: "Footnote: Wildenstein 1974, Bd. I, No. 536: Direkt vom Künstler erworben."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/madame-cantin
+    ended: 1895-04-19
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+        note: "Footnote: Auktion Hôtel Drouot, Paris (19.04.1895), No. 50."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1895-04-19
+    ended: 1895-04-19
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 50
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1895-04-19
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1898
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-cassirer
+    role: dealer
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/julius-bernhard-stern
+    ended: 1914-03-23
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/julius-bernhard-stern
+    role: estate
+    acquired: 1914-03-23
+    ended: 1916-05-22
+    method: inheritance
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+        note: "Footnote: Auktion Kunstsalon Paul Cassirer/Hugo Helbing (22.05.1916), No. 70."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-paul-cassirer
+    role: agent
+    acquired: 1916-05-22
+    ended: 1916-05-22
+    method: auction
+    direct: true
+    place: berlin
+    label: Lot 70
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+        note: "Footnote: Wie oben Fussnote 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/g-hauswaldt
+    acquired: 1916-05-22
+    ended: 1928 or later
+    method: purchase
+    direct: true
+    place: magdeburg
+    label: 36500 Mark; Lot 70
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+        note: "Footnote: Wie oben Fussnote 12; o. V. 1916, S. 513; AStEGB, Brief von Hermann Albrecht, Hamburg [Rechtsanwalt im Auftrag des Nachlasses von Helene Hauswaldt], an das Kunsthaus Zürich, 25.07.1953, weitergeleitet an Emil Bührle am 27.07.1953, mit der Bitte um Auskunft über den Verkauf des Gemäldes «in den Jahren 1928/30»; AStEGB, Brief von Dr. Walter Drack [Konservator der Sammlung Bührle] an Hermann Albrecht…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-caspari
+    role: dealer
+    acquired: 1928/1929
+    ended: 1928/1929
+    direct: true
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+        note: "Footnote: Inventarkarte und Brief wie oben Fussnote 14."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/max-james-emden
+    acquired: 1929
+    ended: 1940
+    method: purchase
+    direct: true
+    label: 55.000-60.000 Mark; Porto Ronco and Isola di Brissago
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+        note: "Footnote: Erworben von der Galerie Caspari, nach der Erinnerung von Dr. Fritz Nathan für 55.000 bis 60.000 Goldmark, Brief vom 29.07.1953 und Inventarkarte (gibt das Datum des Erwerbs mit 1929 an) wie oben Fussnote 14. Es scheinen keine Dokumente über den Erwerb von Max Emden von der Galerie Caspari erhalten geblieben zu sein. Jüngste Nachforschungen der Stiftung Sammlung E.G. Bührle haben jedoch ergeben, d…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hans-erich-emden
+    acquired: 1940
+    ended: 1941
+    method: inheritance
+    direct: true
+    label: Porto Ronco and Isola di Brissago
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+        note: "Footnote: Akte, die Hans Erich Emdens geerbtes Vermögen auflistet und die Art und Weise beschreibt, wie er es von 1940 bis 1944 nutzte, National Archives and Records Administration, Washington D.C. (NARA), Record Group 131, Entry 247, Foreign Funds Control Subject Files, Box 112: Office of Alien Property, Foreign Funds Control Investigative Reports; U.S. Embassy Santiago, Chile, Despatch No. 10.947, to: U.S…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: agent
+    acquired: 1940/1941
+    ended: 1940/1941
+    direct: true
+    place: st-gallen
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+        note: "Footnote: Inventarkarte und Brief wie oben Fussnote 14."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1941
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 35000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+        note: "Footnote: Inventarkarte wie oben Fussnote 14, mit Angabe des Jahres und des Preises des Kaufs und der Angabe «Dr. Emden» als Verkäufer. Eine frühere Annahme, dass der Verkauf im Frühjahr 1941 stattfand, beruhte auf zwei zusätzlichen Einträgen in Dr. Feilchenfeldts Notizbuch wie oben Fussnote 17, datiert vom 16.03.1941 und 02.05.1941. Eine Neubewertung des Notizbuchs hat jedoch ergeben, dass es nicht als Age…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 71
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "71"
+    institution: foundation-e-g-buhrle-collection
+  - number: II.210.536
+    label: Wildenstein Monet (catalogue raisonné)
+  - number: "58"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,22 @@
+public_id: 112340
+name: Elmley Castle
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-2.02586, 52.07066]
+wikidata_id: Q1900066
+metadata:
+  sources: [Wikidata Q1900066 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q1900066
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q1900066
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q1900066

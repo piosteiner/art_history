@@ -1,0 +1,188 @@
+public_id: 111993
+title_lang: fr
+title: Le Semeur au soleil couchant
+names:
+  - lang: de
+    role: translation
+    text: Der Sämann bei untergehender Sonne
+  - lang: en
+    role: translation
+    text: The Sower with Setting Sun
+creator: vincent-van-gogh
+created: 1888
+kind: oil painting
+medium: Oil on canvas
+dimensions: [73, 92]
+institution: kunsthaus-zurich
+inventory_number: BU 0049
+web_url: https://collection.kunsthaus.ch/de/collection/item/586967/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q26220279
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Vincent_van_Gogh_-_Le_Semeur_au_soleil_couchant_-_49_-_Foundation_E.G._B%C3%BChrle_Collection.jpg/1280px-Vincent_van_Gogh_-_Le_Semeur_au_soleil_couchant_-_49_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Le_Semeur_au_soleil_couchant_-_49_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: artist/vincent-van-gogh
+    role: estate
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+        note: "Footnote: Für die Nachfolge beim Tod des Künstlers, siehe Stolwijk/Veenenbos/van Gogh-Bonger 2002, S. 21–22."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/johanna-van-gogh-bonger
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/frederik-willem-van-eeden
+    acquired: 1890
+    ended: 1905 or later
+    method: gift
+    direct: true
+    place: bussum
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+        note: "Footnote: Erhalten als Geschenk von Jo van Gogh-Bonger anlässlich eines Besuchs in Paris am 28.10.1890, wie oben Fussnote 2, No. 23, S. 24; Musée d'art moderne, Brussels 1891, No. 1; Stedelijk Museum Amsterdam 1905, No. 112a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/martha-van-eeden-van-vloten
+    acquired: 1907
+    direct: true
+    place: laren
+    label: Laren, Scheidungsvereinbarung
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+        note: "Footnote: Ehefrau des oben Genannten, De la Faille 1970 No. 450; wohl von dem oben Genannten im Rahmen einer Scheidungsvereinbarung 1907 erhalten."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunstzaal-d-audretsch
+    place: the-hague
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+        note: "Footnote: De la Faille 1970, wie oben Fussnote 6; Die Galerie wurde 1913 gegründet."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-cassirer
+    role: dealer
+    ended: 1914-03
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+        note: "Footnote: Feilchenfeldt 2009, S. 171."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/pierre-franz-walther-von-mendelssohn
+    acquired: 1914-03
+    ended: 1935
+    method: purchase
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/robert-von-mendelssohn
+    acquired: 1935
+    ended: 1951
+    direct: true
+    label: Berlin & Pfonstetten (St. Georgenhof)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+        note: "Footnote: Sohn des oben Genannten, AStEGB, Inventarkarte Van Gogh, Le Semeur au soleil couchant."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: agent
+    acquired: 1951-11-20
+    ended: 1951-11-20
+    direct: true
+    place: st-gallen
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+        note: "Footnote: AStEGB, Eingangsbuch I, 20.11.1951, mit Hinweis auf das Kaufdatum und Preisangabe, die Nathan als Einlieferer ausweist."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-11-30
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 320000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+        note: "Footnote: Erworben von dem oben Genannten für  CHF 320.000, über Dr. Fritz Nathan, St. Gallen, AStEGB, Eingangsbuch I, 20.11.1951, wie oben Fussnote 12; AStEGB, Gästebuch I, Eintrag vom 29.11.1951, gibt an, dass Robert von Mendelssohn zum Zeitpunkt des Kaufs in Zürich war und die Sammlung Bührle besuchte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28 or earlier
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 49
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "49"
+    institution: foundation-e-g-buhrle-collection
+  - number: "450"
+    label: de la Faille (catalogue raisonné)
+  - number: "214"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,172 @@
+public_id: 112056
+title_lang: fr
+title: Le Vieux Clocher
+names:
+  - lang: de
+    role: translation
+    text: Der alte Turm
+  - lang: en
+    role: translation
+    text: The Old Tower
+creator: vincent-van-gogh
+created: 1884
+kind: oil painting
+medium: Oil on canvas on panel
+dimensions: [47.5, 55]
+institution: kunsthaus-zurich
+inventory_number: BU 0051
+web_url: https://collection.kunsthaus.ch/de/collection/item/604960/
+on_loan: true
+on_loan_since: 2021
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q26220118
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/61/Vincent_van_Gogh_-_Le_Vieux_Clocher_-_51_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Le_Vieux_Clocher_-_51_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: institution/kunstzaal-oldenzeel
+    place: rotterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604960/
+        note: "Footnote: Paul Cassirer & Walter Feilchenfeldt Archiv, Zürich, Akte bezüglich Van Gogh, Le Vieux Clocher."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/josine-annette-maas-geesteranus
+    ended: 1937
+    place: province-of-utrecht
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604960/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/paul-cassirer-co-amsterdam
+    role: dealer
+    acquired: 1932-04-01
+    ended: 1937
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604960/
+        note: "Footnote: E-Mail-Korrespondenz, Feilchenfeldt, 06.06.2023."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/paul-cassirer-co-amsterdam
+    role: dealer
+    acquired: 1937
+    ended: 1942-04
+    method: purchase
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604960/
+        note: "Footnote: Wie oben Fussnote 3. Dr. Feilchenfeldt führte die Galerie Paul Cassirer, Berlin, über deren Amsterdamer Filiale (N. V. Amsterdamsche Kunsthandel Paul Cassirer & Co.) ab November 1933 weiter, als er aus Deutschland emigrierte. Verschiedene Kunstwerke in seinem Besitz, darunter Van Goghs Le Vieux Clocher, wurden vor dem Krieg in die Schweiz gebracht. Bei Ausbruch des Zweiten Weltkriegs im September …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    role: agent
+    acquired: 1940-03-01 or earlier
+    ended: 1942-04
+    direct: true
+    place: zurich
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604960/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    acquired: 1942-04
+    ended: 1945-11-27
+    method: purchase
+    direct: true
+    place: st-gallen
+    price:
+      amount: 12000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604960/
+        note: "Footnote: Erworben von dem oben Genannten im April 1942 für CHF 12.000, Paul Cassirer & Walter Feilchenfeldt Archiv, Zürich, Notizbuch von Dr. Feilchenfeldt 1940-1942, mit einem Eintrag, der sich auf den Verkauf von Van Goghs Le Vieux Clocher und den erhaltenen Betrag bezieht; Korrespondenz, wie oben Fussnote 6: «Fritz Nathan, St. Gallen (erworben April 1942 von Walter Feilchenfeldt)»; Datenbank Kunstimport…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1945-11-27
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 20000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604960/
+        note: |-
+          Footnote: Erworben von dem oben Genannten für CHF 20.000, AStEGB, 
+          Memorandum der Werkzeugmaschinenfabrik Oerlikon Bührle & Co. vom 27.11.1945, das die Einzelheiten des Ankaufs von Van Goghs Le Vieux Clocher von Dr. Fritz Nathan zusammenfasst; Korrespondenz, wie oben Fussnote 6: «Emil Georg Bührle, Zürich (erworben 27.11.1945 von Nathan -Gloor #212)».
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28 or earlier
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    direct: true
+    place: zurich
+    label: inv. no. 51
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "51"
+    institution: foundation-e-g-buhrle-collection
+  - number: "490"
+    label: Hulsker (catalogue raisonné)
+  - number: "88"
+    label: de la Faille (catalogue raisonné)
+  - number: "135"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

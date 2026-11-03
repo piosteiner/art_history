@@ -1,0 +1,198 @@
+public_id: 112019
+title_lang: fr
+title: Le Port de L'Estaque
+names:
+  - lang: de
+    role: translation
+    text: Der Hafen von L'Estaque
+  - lang: en
+    role: translation
+    text: The Port of L'Estaque
+creator: georges-braque
+created: c. 1906
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [38, 46]
+institution: kunsthaus-zurich
+inventory_number: BU 0010
+web_url: https://collection.kunsthaus.ch/de/collection/item/600966/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131585920
+provenance:
+  - owner: person/wilhelm-uhde
+    ended: 1907
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+        note: "Footnote: Handelt im Auftrag des Künstlers oder als Eigentümer des Gemäldes, Heil 2000, S. 41–44, 168, No. 37."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/karl-ernst-osthaus
+    acquired: 1907-10
+    ended: 1921-03-25
+    method: purchase
+    direct: true
+    place: hagen
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+        note: "Footnote: Sehr wahrscheinlich erworben von dem oben Genannten, wohl im Oktober 1907. Im August 1907 wurde eine kleine Landschaft von Georges Braque mit dem Titel Boote von Wilhelm Uhde zusammen mit einer Sendung von 12 Gemälden an das Museum Folkwang geschickt (Brief von Wilhelm Uhde, Paris, an Karl Ernst Osthaus, Hagen, 29.08.1907). Im Oktober 1907 erwartete Uhde die Rückgabe der im Museum ausgestellten Ge…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: heirs of Karl Ernst Osthaus
+    acquired: 1921-03-25 or earlier
+    ended: 1922
+    direct: true
+    label: Erbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+        note: "Footnote: Kat. Museum Folkwang 2010, S. 60-61, 69 (ill.), No. 32; S. 179–189, 349."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/museum-folkwang
+    acquired: 1922
+    ended: 1937
+    method: purchase
+    direct: true
+    place: essen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+        note: "Footnote: Von den oben Genannten als Teil der Sammlung des Museum Folkwang, Hagen, von einem Konsortium im Auftrag des Städtischen Museums für Bildende Künste, Essen, erworben, welches dann den Namen des Museum Folkwang annahm."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/reichsministerium-fur-volksaufklarung-und-propaganda
+    acquired: 1937
+    direct: true
+    place: berlin
+    label: Beschlagnahme "Entartete Kunst"; EK-Nr. 3622
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+        note: "Footnote: Ein Gemälde von Georges Braque mit dem Titel Flusslandschaft wurde im Sammlungskatalog des Museum Folkwang aufgeführt, der anlässlich der Eröffnung eines neuen Museumsgebäudes im Jahr 1929 herausgegeben wurde, Museum Folkwang, Essen 1929 (Sammlungskatalog), No. 98. Die Identifizierung dieses Gemäldes mit dem Gemälde, das sich heute in der Sammlung Emil Bührle befindet, wurde durch eine Fotografie …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-zak
+    role: dealer
+    ended: 1939
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+        note: "Footnote: Kat. 2010, S. 349, wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hugo-perls
+    role: dealer
+    acquired: 1939/1941
+    ended: 1939/1941
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+        note: "Footnote: Kat. Virginia Museum of Fine Arts, Richmond; Philadelphia Museum of Fine Arts, Philadelphia 1941, No. 17."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-p-chrysler
+    acquired: 1941
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+        note: "Footnote: Wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/samuel-a-berger
+    ended: 1955-05-23
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+        note: "Footnote: Getty Research Center, Santa Monica (Kalifornien), Knoedler Gallery Archive, Stock Book 10, S. 150, No. A6006."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1955-05-23
+    ended: 1956-03-27
+    method: purchase
+    direct: true
+    place: new-york-city
+    price:
+      amount: 6700
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+        note: "Footnote: Wie oben Fussnote 14."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1956-03-27
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 13000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+        note: "Footnote: Wie oben Fussnote 14; das Gemälde wurde zusammen mit Cézanne, Tentation de St-Antoine (Sammlung Emil Bührle, Inv. 15), zum Preis von $ 75.000 erworben; AStEGB, Bestätigung der Zahlung von $ 88.000 an M. Knoedler & Co, Inc., New York, von der Industrie- und Handelsbank, Zürich, an Emil Bührle, 27.03.1956."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 10
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "10"
+    institution: foundation-e-g-buhrle-collection
+  - number: "505"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

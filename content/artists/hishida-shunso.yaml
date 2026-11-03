@@ -17,6 +17,43 @@ death: 1911-09-16
 wikidata_id: Q2113595
 metadata:
   sources: [Wikidata Q2113595 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2113595
+  - type: died_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q2113595
+  - type: worked_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q2113595
+  - type: student_of
+    to: artist/hashimoto-gaho
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q2113595
+  - type: studied_at
+    to: institution/tokyo-academy-of-fine-arts
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q2113595
+  - type: associated_with
+    to: movement/nihonga
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q2113595
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/a/a0/Hishida_Shunso.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Hishida_Shunso.jpg

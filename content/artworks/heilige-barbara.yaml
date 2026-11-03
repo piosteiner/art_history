@@ -10,6 +10,7 @@ inventory_number: BU P.11
 web_url: https://collection.kunsthaus.ch/de/collection/item/847316/
 on_loan: true
 on_loan_since: 2021
+region: europe
 provenance:
   - owner: person/benno-griebert
     role: dealer

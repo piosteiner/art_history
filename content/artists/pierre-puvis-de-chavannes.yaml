@@ -1,0 +1,86 @@
+public_id: 111931
+name: Pierre Puvis de Chavannes
+given_name: Pierre Puvis
+family_name: de Chavannes
+names:
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: Le peintre de la France
+    sources:
+      - accessed: 2026-11-03
+        property: P1449
+        wikidata: Q216873
+birth: 1824-12-14
+death: 1898-10-24
+wikidata_id: Q216873
+metadata:
+  sources: [Wikidata Q216873 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q216873
+  - type: born_in
+    to: place/lyon
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q216873
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q216873
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q216873
+  - type: worked_in
+    to: place/netherlands
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q216873
+  - type: worked_in
+    to: place/paris
+    period: 1846/1848
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q216873
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q216873
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Pierre-C%C3%A9cile_Puvis_de_Chavannes_BNF_Gallica.jpg/1280px-Pierre-C%C3%A9cile_Puvis_de_Chavannes_BNF_Gallica.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre-C%C3%A9cile_Puvis_de_Chavannes_BNF_Gallica.jpg
+    license: Public domain
+    credit: Anatole Louis Godet
+identifiers:
+  bnf: 12133723j
+  dome: "310"
+  gnd: "118846027"
+  idref: "029786630"
+  kulturnav: 8b320f42-ea9d-460a-afa2-f97c42655521
+  lc: n50049345
+  rkd: "65142"
+  ulan: "500008870"
+  viaf: "51724541"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q216873
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q216873

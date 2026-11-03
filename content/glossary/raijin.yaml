@@ -1,0 +1,28 @@
+public_id: 109310
+name: Raijin
+names:
+  - God of Thunder
+  - God of Lightning
+  - Raiden
+  - Raiden-sama
+  - lang: ja
+    role: translation
+    text: 雷神
+category: iconography
+definition: god of lightning, thunder, and storms in Japanese mythology
+wikidata_id: Q12808082
+metadata:
+  sources: [Wikidata Q12808082 (retrieved 2026-11-02)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Raijin-ogata-emuseum.JPG/1280px-Raijin-ogata-emuseum.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Raijin-ogata-emuseum.JPG
+    license: Public domain
+    credit: Ogata Kōrin
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Raijin.jpg/1280px-Raijin.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Raijin.jpg
+    license: CC BY-SA 3.0
+    credit: D100763
+sources:
+  definition:
+    - accessed: 2026-11-02
+      wikidata: Q12808082

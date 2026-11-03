@@ -1,0 +1,42 @@
+public_id: 109316
+name: Kanze Motomasa
+names:
+  - lang: ja
+    role: original
+    text: 観世元雅
+  - Motomasa Juro
+  - Motomasa Juurou
+  - lang: zh
+    role: translation
+    text: 觀世元雅
+  - Motomasa Jūrō
+kind: person
+occupations: [actor, composer]
+birth: 1401
+death: 1432-08-26
+wikidata_id: Q11630481
+metadata:
+  sources: [Wikidata Q11630481 (retrieved 2026-11-02)]
+identifiers:
+  bnf: "125049880"
+  gnd: "124126413"
+  idref: "078621119"
+  lc: n84112684
+  viaf: "76421648"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q11630481
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q11630481
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q11630481
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q11630481

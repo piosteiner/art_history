@@ -1,0 +1,38 @@
+public_id: 111874
+name: Aberdeen City
+names:
+  - lang: ja
+    role: translation
+    text: アバディーン
+  - lang: zh
+    role: translation
+    text: 阿伯丁
+  - lang: ko
+    role: translation
+    text: 애버딘
+  - lang: fr
+    role: translation
+    text: Aberdeen
+  - lang: ru
+    role: translation
+    text: Абердин
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-2.1, 57.15]
+wikidata_id: Q36405
+metadata:
+  sources: [Wikidata Q36405 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q36405
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q36405
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q36405

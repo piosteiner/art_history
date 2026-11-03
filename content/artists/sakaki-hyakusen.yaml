@@ -18,6 +18,25 @@ death: 1752-10-02
 wikidata_id: Q3143620
 metadata:
   sources: [Wikidata Q3143620 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3143620
+  - type: born_in
+    to: place/nagoya
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q3143620
+  - type: died_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q3143620
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/6/69/Sakaki_Hyakusen_2_chinese_ladies_by_a_stream.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Sakaki_Hyakusen_2_chinese_ladies_by_a_stream.jpg

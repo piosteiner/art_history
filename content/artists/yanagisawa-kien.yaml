@@ -36,6 +36,13 @@ death: 1758-10-06
 wikidata_id: Q3196281
 metadata:
   sources: [Wikidata Q3196281 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3196281
 identifiers:
   gnd: "133885666"
   lc: nr2001028781

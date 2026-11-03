@@ -2,12 +2,99 @@ public_id: 101579
 name: Oskar Kokoschka
 given_name: Oskar
 family_name: Kokoschka
-names: [Oscar Kokoschka, O. Kokoschka, Kokoschka]
+names:
+  - Oscar Kokoschka
+  - O. Kokoschka
+  - Kokoschka
+  - lang: ja
+    role: translation
+    text: オスカー・ココシュカ
+  - lang: zh
+    role: translation
+    text: 奥斯卡·柯克西卡
+  - lang: ko
+    role: translation
+    text: 오스카르 코코슈카
+  - lang: ru
+    role: translation
+    text: Оскар Кокошка
 birth: 1886-03-01
 death: 1980-02-22
 wikidata_id: Q154260
 metadata:
   sources: [Wikidata Q154260 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/cisleithania
+    period: 1886/1914
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q154260
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    period: 1927-04-12
+    period_label: until 12 April 1927
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q154260
+  - type: nationality
+    to: polity/united-kingdom
+    period: 1946/1978
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q154260
+  - type: nationality
+    to: polity/austria
+    period: 1978/1980
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q154260
+  - type: died_in
+    to: place/montreux
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q154260
+  - type: worked_in
+    to: place/england
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q154260
+  - type: worked_in
+    to: place/prague
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q154260
+  - type: worked_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q154260
+  - type: studied_at
+    to: institution/university-of-applied-arts-vienna
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q154260
+  - type: member_of
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-11-02
+        property: P463
+        wikidata: Q154260
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q154260
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Oskar_Kokoschka_by_Hugo_Erfurth_1919.jpg/1280px-Oskar_Kokoschka_by_Hugo_Erfurth_1919.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Oskar_Kokoschka_by_Hugo_Erfurth_1919.jpg
@@ -15,6 +102,7 @@ images:
     credit: Hugo Erfurth
 identifiers:
   bnf: 11909937v
+  dome: "190"
   gnd: "118564722"
   hls: "011640"
   idref: "026951991"

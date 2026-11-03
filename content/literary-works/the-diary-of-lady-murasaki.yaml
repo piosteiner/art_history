@@ -1,0 +1,22 @@
+public_id: 109382
+name_lang: en
+name: The Diary of Lady Murasaki
+names:
+  - lang: ja
+    role: original
+    text: "{紫式部日記|むらさきしきぶにっき}"
+  - lang: ja-Latn
+    role: romanization
+    text: Murasaki Shikibu nikki
+kind: diary
+written: c. 1010
+description_md: The diary [[person/murasaki-shikibu]] kept of her life at the court while in service to the imperial consort Shōshi (988–1074), daughter of Fujiwara no Michinaga; it records among much else the celebrations of 1008 for the birth of Shōshi's son, the imperial heir, on Michinaga's lake.[[source/history-of-japanese-art|pp. 107, 112]] Illustrated in the thirteenth century as the [[artwork/murasaki-shikibu-nikki-emaki-goto]] and its companion scrolls.
+wikidata_id: Q772766
+metadata:
+  sources: [Wikidata Q772766 (retrieved 2026-11-02)]
+relationships:
+  - type: written_by
+    to: person/murasaki-shikibu
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 107, 112

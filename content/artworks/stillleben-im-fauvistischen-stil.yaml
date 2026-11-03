@@ -1,0 +1,108 @@
+public_id: 112442
+title_lang: de
+title: Stillleben (im fauvistischen Stil)
+names:
+  - lang: en
+    role: translation
+    text: Still Life
+attribution_label: forgery after Henri Matisse
+authenticity: forgery
+authenticity_note: 'Kunsthaus Zürich: "Forgery after Henri Matisse"'
+kind: oil painting
+medium: Oil on canvas
+dimensions: [65, 81]
+institution: kunsthaus-zurich
+inventory_number: BU 0068
+web_url: https://collection.kunsthaus.ch/de/collection/item/806961/
+on_loan: true
+on_loan_since: 2021
+region: europe
+wikidata_id: Q131585332
+relationships:
+  - type: passed_off_as
+    to: artist/henri-matisse
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    ended: 1955-01-17 or earlier
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806961/
+        note: "Footnote: AStEGB, Rechnung, ausgestellt im Namen der Erben von Dr. Walter Feilchenfeldt, an Emil Bührle, 17.01.1955, und Brief von Marianne Feilchenfeldt, Zürich, an Dr. O. Maurer [Generalsekretär der Werkzeugmaschinenfabrik Oerlikon Bührle & Co.], 17.01.1955."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/marianne-feilchenfeldt
+    acquired: 1955-01-17 or earlier
+    ended: 1955-02-17
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806961/
+        note: "Footnote: AStEGB, Rechnung, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-02-17
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806961/
+        note: "Footnote: AStEGB Rechnung, wie oben Fussnote 3, mit Stempel «Gut zur Zahlung» von Bührle."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 68
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "68"
+    institution: foundation-e-g-buhrle-collection
+  - number: "424"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

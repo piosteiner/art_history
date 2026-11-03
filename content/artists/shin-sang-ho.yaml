@@ -10,6 +10,13 @@ birth: 1947
 wikidata_id: Q7497216
 metadata:
   sources: [Wikidata Q7497216 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/south-korea
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q7497216
 identifiers:
   idref: "129597287"
   lc: nr94022757

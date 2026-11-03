@@ -14,6 +14,52 @@ death: 1966-03-12
 wikidata_id: Q558060
 metadata:
   sources: [Wikidata Q558060 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/france
+    period: 1963
+    period_label: from 1963
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q558060
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q558060
+  - type: worked_in
+    to: place/paris
+    period: 1925/1966
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q558060
+  - type: associated_with
+    to: movement/cubism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q558060
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q558060
+  - type: associated_with
+    to: movement/surrealism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q558060
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q558060
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/7/7c/Stamps_of_Romania%2C_2003-40.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Stamps_of_Romania,_2003-40.jpg

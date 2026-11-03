@@ -1,0 +1,91 @@
+public_id: 112198
+name: Mary Cassatt
+given_name: Mary
+family_name: Cassatt
+names:
+  - kind: birth
+    lang: en
+    role: alternative
+    text: Mary Stevenson Cassatt
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q173223
+birth: 1844-05-22
+death: 1926-06-14
+wikidata_id: Q173223
+metadata:
+  sources: [Wikidata Q173223 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q173223
+  - type: worked_in
+    to: place/barbizon
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q173223
+  - type: worked_in
+    to: place/giverny
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q173223
+  - type: worked_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q173223
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q173223
+  - type: worked_in
+    to: place/philadelphia
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q173223
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q173223
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q173223
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/1914_Mary_Cassatt.jpg/1280px-1914_Mary_Cassatt.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:1914_Mary_Cassatt.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "119575499"
+  dome: "3074"
+  gnd: "118519476"
+  idref: "027561615"
+  kulturnav: 12b293d1-c02f-42e8-ad90-caa1e8210596
+  lc: n78096937
+  rkd: "15776"
+  ulan: "500012368"
+  viaf: "2478969"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q173223
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q173223

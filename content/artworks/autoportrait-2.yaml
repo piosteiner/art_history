@@ -1,0 +1,214 @@
+public_id: 112221
+title_lang: fr
+title: Autoportrait
+names:
+  - lang: de
+    role: translation
+    text: Selbstbildnis
+  - lang: en
+    role: translation
+    text: Self-Portrait
+creator: eugene-delacroix
+created: 1830/1835
+kind: oil painting
+medium: Oil on canvas
+dimensions: [36, 28]
+institution: kunsthaus-zurich
+inventory_number: BU 0130
+web_url: https://collection.kunsthaus.ch/de/collection/item/704962/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223647
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6a/Eug%C3%A8ne_Delacroix%2C_u.a._-_Autoportrait_-_130_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix,_u.a._-_Autoportrait_-_130_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Eugène Delacroix
+provenance:
+  - owner: person/constant-dutilleux
+    acquired: 1863-08-13
+    ended: 1865-10-21
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+        note: "Footnote: Übergeben an Dutilleux, einen der neun Nachlassverwalter von Dealcroix, von Jenny Le Guillou, der Haushälterin von Delacroix, Johnson Nr. M5; Auktion Hôtel Drouot, Paris (26. März 1874), Nr. 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/constant-dutilleux
+    role: estate
+    acquired: 1865-10-21
+    ended: 26 March 1874 or later
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+        note: "Footnote: Auktion Hôtel Drouot, Paris (26. März 1874), Nr. 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1874-03-26
+    ended: 1874-03-26
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 1
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/etienne-edmond-martin-de-beurnonville
+    ended: 21 May 1883 or later
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+        note: "Footnote: Auktion Hôtel Drouot, Paris (21.–22. Mai 1883), Nr. 157."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1883-05-21
+    ended: 1883-05-22
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 157
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/henri-rouart
+    acquired: 1885 or earlier
+    ended: 1912-01-02
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+        note: "Footnote: Kat. École nationale des Beaux-Arts, Paris 1885, Nr. 195; Auktion Galerie Manzi Joyant, Paris (9.-11. Dezember 1912), Nr. 182 (Abb.)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-manzi-joyant
+    role: agent
+    acquired: 1912-12-09
+    ended: 1912-12-11
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 182
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+        note: "Footnote: Auktion Galerie Manzi Joyant, Paris (9.-11. Dezember 1912), Nr. 182 (Abb.)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/ernest-rouart
+    acquired: 1912-12-09
+    ended: 1942-02-27
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 11000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+        note: "Footnote: Sohn des oben Genannten, gekauft bei der oben genannten Versteigerung am 9. Dezember 1912 für 11.000 FRF, kommentierte Kopie des Auktionskatalogs von 1912 wie oben Fussnote 9 in der Bibliothèque centrale des musées nationaux (Louvre), Paris."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/denis-rouart
+    acquired: 1942-02-27
+    ended: 1948 or later
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+        note: "Footnote: Sohn des oben Genannten, Auskunft von Herrn Walter Feilchenfeldt, Zürich, Sohn von Dr. Walter Feilchenfeldt, an die Stiftung Sammlung E. G. Bührle, Zürich, am 22. April 2008."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    role: dealer
+    acquired: 1948 or later
+    ended: 1951-04-29
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+        note: "Footnote: Wie oben Fussnote 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-04-29
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 55000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+        note: "Footnote: AStEGB, Eingangsbuch I, 29. April 1951, mit Preisangabe, und Brief von Dr. Walter Feilchenfeldt, Zürich, an Emil Bührle, 30. April 1951, mit (verlorener) Rechnung über zwei Kunstwerke."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 130
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "130"
+    institution: foundation-e-g-buhrle-collection
+  - number: M5
+    label: Johnson (catalogue raisonné)
+  - number: "192"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

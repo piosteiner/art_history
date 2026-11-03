@@ -18,6 +18,73 @@ death: 2022-04-18
 wikidata_id: Q651376
 metadata:
   sources: [Wikidata Q651376 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/austria
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q651376
+  - type: born_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q651376
+  - type: worked_in
+    to: place/frankfurt
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q651376
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q651376
+  - type: worked_in
+    to: place/salzburg
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q651376
+  - type: worked_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q651376
+  - type: influenced_by
+    to: artist/diego-velazquez
+    sources:
+      - accessed: 2026-11-02
+        property: P737
+        wikidata: Q651376
+  - type: influenced_by
+    to: artist/peter-paul-rubens
+    sources:
+      - accessed: 2026-11-02
+        property: P737
+        wikidata: Q651376
+  - type: influenced_by
+    to: artist/rembrandt
+    sources:
+      - accessed: 2026-11-02
+        property: P737
+        wikidata: Q651376
+  - type: influenced_by
+    to: artist/titian
+    sources:
+      - accessed: 2026-11-02
+        property: P737
+        wikidata: Q651376
+  - type: influenced_by
+    to: artist/vincent-van-gogh
+    sources:
+      - accessed: 2026-11-02
+        property: P737
+        wikidata: Q651376
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/7/79/Hermann_Nitsch_Viennale_2012.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Hermann_Nitsch_Viennale_2012.jpg

@@ -1,0 +1,228 @@
+public_id: 112220
+title_lang: en
+title: Triomphe d'Amphitrite
+names:
+  - lang: de
+    role: translation
+    text: Der Triumph der Amphitrite
+  - lang: en
+    role: translation
+    text: The Triumph of Amphitrite
+creator: eugene-delacroix
+created: c. 1861
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [92, 143]
+institution: kunsthaus-zurich
+inventory_number: BU 0129
+web_url: https://collection.kunsthaus.ch/de/collection/item/704961/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223652
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/04/Eug%C3%A8ne_Delacroix_-_Triomphe_d%27Amphitrite_-_129_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_-_Triomphe_d%27Amphitrite_-_129_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Eugène Delacroix
+provenance:
+  - owner: artist/eugene-delacroix
+    role: estate
+    acquired: 1863-08-13
+    ended: 1864-02-19 or earlier
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+        note: "Footnote: Aufgeführt im Inventar, das nach dem Tod des Künstlers in seinem Haus «Champrosay» (10. September 1863) erstellt wurde, Henriette Bessis, «L'Inventaire après décès d'Eugène Delacroix», in Bulletin [1969] de la Société de l'Histoire de l'Art français, Paris 1971, S. 210, Nr. 3; Auktion Hôtel Drouot, Paris (17.-29. Februar 1864), Nr. 110."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1864-02-17
+    ended: 1864-02-19 or earlier
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 110
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hartmann
+    acquired: 1864-02-19 or earlier
+    method: purchase
+    direct: true
+    price:
+      amount: 1025
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+        note: "Footnote: Kommentierte Kopie des Auktionskatalogs wie oben Fussnote 2, in der Bibliothèque centrale des musées nationaux (Louvre), Paris; Johnson 1986, Nr. 252."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-biermann
+    acquired: 1914 or earlier
+    ended: 1922-09-09
+    place: bremen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+        note: "Footnote: Kat. Kunsthalle Bremen 1914, Nr. 97; in einer Schätzung der Sammlung Biermann, die vermutlich kurz vor Biermanns Tod von Emil Waldmann, Direktor der Kunsthalle Bremen, erstellt wurde, wird das Gemälde zusammen mit seinem Pendant als zwei Dekorationsgemälde mit einem Wert von 20.000 FRF aufgeführt, E-Mail-Korrespondenz Dorothee Hansen (Kunsthalle Bremen, Bremen), 12. 01.2008."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/frau-leopold-biermann
+    acquired: 1922-09-09
+    ended: 6 January 1932 or later
+    method: inheritance
+    direct: true
+    place: bremen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+        note: "Footnote: Archiv Sammlung Oskar Reinhart «Am Römerholz», Winterthur, Brief von Dr. Fritz Nathan, München, an Oskar Reinhart, Winterthur, vom 8. Oktober 1930, mit Informationen über das Gemäldepaar, das Frau Biermann verkaufen wollte. Zwei Jahre später wurden die Bilder von Dr. Alfred Pauli [Sohn von Gustav Pauli, ehemaliger Direktor der Kunsthalle Bremen], damals wohnhaft in Amsterdam, an Oskar Reinhart, Wi…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: agent
+    ended: 8 October 1930 or later
+    direct: true
+    place: munich
+    label: intermediary
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alfred-pauli
+    role: agent
+    ended: 6 January 1932 or later
+    direct: true
+    place: amsterdam
+    label: intermediary
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/graphisches-kabinett
+    role: dealer
+    ended: 1933
+    place: bremen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+        note: "Footnote: Laut einer handschriftlichen Notiz in der Akte Nr. A-47-16760, die von der U.S. Civil Censorship Division, European Command, am 6. März 1947 angelegt wurde und höchstwahrscheinlich auf einer Information des Besitzers beruht, wurden die beiden Gemälde 1933 vom Graphischen Kabinett, Bremen, erworben. Informationen, einschliesslich Kopie der Akte, wurden der Stiftung Sammlung E.G. Bührle freundlicher…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/franz-boner
+    acquired: 1933
+    ended: 1941-07-05
+    method: purchase
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+        note: "Footnote: Wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/lisa-boner-strube
+    acquired: 1941-07-05
+    ended: 1954
+    method: inheritance
+    direct: true
+    place: berlin
+    label: Berlin and Bergen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+        note: "Footnote: Witwe des oben Genannten. Anlass für eine Untersuchung des Gemäldes durch die U.S. Civil Censorship Division, European Command, war ein Brief von Professor Dr. Richard Hertz, Iowa, vom 6. November 1946 an Frau Lisa Boner, Bergen (Oberbayern), der sich auf einen Delacroix im Besitz der Adressatin bezog. Auf der Grundlage einer am 15. Juli 1947 vorgelegten Versicherungsliste kam das USCCD zu dem Sch…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    acquired: 1954
+    ended: 1954-10-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+        note: "Footnote: Wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-10-28
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 60000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+        note: "Footnote: Erworben für CHF 120.000 das Paar, AEGB, Quittung von Dr. Fritz Nathan, Zürich, 28. Oktober 1954, über einen Betrag von CHF 96.400 für die beiden Gemälde von Delacroix, Triumph des Bacchus und Triumph der Amphitrite, im Wert von CHF 120.000, abzüglich CHF 23.600 für einen Guardi, Capriccio, der als Teil der Zahlung eingetauscht wurde."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 129
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "129"
+    institution: foundation-e-g-buhrle-collection
+  - number: "252"
+    label: Johnson (catalogue raisonné)
+  - number: "417"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

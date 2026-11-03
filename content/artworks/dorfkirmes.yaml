@@ -1,0 +1,165 @@
+public_id: 112346
+title_lang: en
+title: Dorfkirmes
+names:
+  - lang: en
+    role: translation
+    text: The Kermis
+creator: david-teniers-the-younger
+created: 1646
+kind: oil painting
+medium: Oil on canvas on panel
+dimensions: [57, 79]
+institution: kunsthaus-zurich
+inventory_number: BU 0166
+web_url: https://collection.kunsthaus.ch/de/collection/item/752016/
+on_loan: true
+on_loan_since: 2021
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q57561719
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f8/David_Teniers_%28II%29_-_Dorfkirmes_-_166_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:David_Teniers_(II)_-_Dorfkirmes_-_166_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: David Teniers the Younger
+provenance:
+  - owner: person/mme-deville
+    ended: 1826
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+        note: "Footnote: Smith 1831, Bd. 3, No. 291, S. 338."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/charles-townshend
+    acquired: 1831
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alfred-charles-de-rothschild
+    acquired: 1884
+    ended: 1918-01-31
+    label: Halton House (Buckinghamshire)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+        note: "Footnote: Davis 1884, Bd. 1, No. 30; E-Mail-Korrespondenz zwischen The Rothschild Archive London und der Stiftung E.G. Bührle, 07.02.2025; Brown Halton Inventar, S. 37, The Rothschild Archive London, RAL 000/174C: Das Gemälde wird in einem Inventar von Halton House im September 1919 aufgelistet."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/lionel-nathan-von-rothschild
+    acquired: 1918-01-31
+    ended: 1942-01-28
+    method: inheritance
+    direct: true
+    place: london
+    label: London and Exbury
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+        note: "Footnote: E-Mail-Korrespondenz, wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/lionel-nathan-von-rothschild
+    role: estate
+    acquired: 1942-01-28
+    ended: 1946
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+        note: "Footnote: E-Mail-Korrespondenz, wie oben Fussnote 7: Der Verkauf des Gemäldes wurde bei der CTO (Capital Taxes Office) am 10.07.1946 angemeldet."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/frank-partridge
+    role: dealer
+    acquired: 1946
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+        note: "Footnote: E-Mail-Korrespondenz, wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    ended: 1953-10-02
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+        note: "Footnote: AStEGB, Verkaufsbestätigung von Trafo, Anstalt für Handel und Finanz, Vaduz (Marlborough Fine Art Ltd., London), unterzeichnet von F. K. Lloyd, an Emil Bührle, 01.10.1953, betreffend eine Gruppe von 10 Kunstwerken, die an Bührle für eine Gesamtsumme von £ 40.000 (= CHF 480.000) verkauft wurden, darunter Teniers, Kermis. Die Zahlung dieses Betrags erfolgt in zwei Raten, und zwar 27.000 £ von einem …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-10-02
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 11000
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+        note: "Footnote: Verkaufsbestätigung, wie oben Fussnote 9: erworben für £ 11.000 (mit 6% Rabatt), mit von Emil Bührle handschriftlich notierten Preisen für jedes Kunstwerk; AStEGB, Zahlungsauftrag von Emil Bührle an die Industrie- und Handelsbank, Zürich, 01.10.1953 über den Betrag von CHF 156.000 zur Überweisung an Trafo, Vaduz, und Ausführungsbestätigung der Industrie- und Handelsbank, Zürich, 02.10.1953."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 166
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "166"
+    institution: foundation-e-g-buhrle-collection
+  - number: "324"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752016/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

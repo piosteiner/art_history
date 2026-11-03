@@ -13,6 +13,27 @@ death: 1984-08-18
 wikidata_id: Q11427356
 metadata:
   sources: [Wikidata Q11427356 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q11427356
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q11427356
+  - type: born_in
+    to: place/gifu-prefecture
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q11427356
 identifiers:
   gnd: "141377496"
   idref: "149610130"

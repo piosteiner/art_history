@@ -1,0 +1,199 @@
+public_id: 112095
+title_lang: fr
+title: Les Deux Fillettes
+names:
+  - lang: de
+    role: translation
+    text: Zwei Mädchen
+  - lang: en
+    role: translation
+    text: Summer Hats
+creator: pierre-auguste-renoir
+created: 1893
+kind: oil painting
+medium: Oil on canvas
+dimensions: [65, 54]
+institution: kunsthaus-zurich
+inventory_number: BU 0089
+web_url: https://collection.kunsthaus.ch/de/collection/item/604982/
+on_loan: true
+on_loan_since: 2021
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q64223619
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4b/Pierre-Auguste_Renoir_-_Les_Deux_Fillettes_-_89_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_Les_Deux_Fillettes_-_89_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+provenance:
+  - owner: person/henri-bernstein
+    ended: 1910-06-18
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+        note: "Footnote: Dauberville/Dauberville 2009, No. 995."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1910-06-18
+    ended: 1910-10-08
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 6500
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jean-laroche
+    acquired: 1910-10-08
+    ended: 1911-01-17
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1911-01-17
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 13500
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+        note: "Footnote: Wie oben Fussnote 3; Am 17.01.1911 für 13.500 FF zurückgekauft und anschließend von Bernheim-Jeune fils übernommen."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1913
+    ended: 1913
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/martin-antoine-ryerson
+    acquired: 1913
+    ended: 1932-08-11
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+        note: "Footnote: Kat. California Palace of the Legion of Honour & M.H. de Young Memorial Museum, San Francisco 1939–40, No. 137."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/art-institute-of-chicago
+    acquired: 1932
+    ended: 1948
+    method: gift
+    direct: true
+    place: chicago
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+        note: "Footnote: Kat. Art Institute of Chicago 1933, No. 342."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1948-05-15
+    ended: 1953-09-18
+    method: purchase
+    direct: true
+    place: new-york-city
+    price:
+      amount: 20000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+        note: "Footnote: Deakzession durch das Art Institute of Chicago, Archiv Paul Rosenberg Gallery, New York, Inventarverzeichnis, September 1952, S. 8-9; AStEGB, Brief von Paul Rosenberg, New York, an Emil Bührle, 22.09.1952, mit Einzelrechnungen für 10 Bilder, die Bührle bei ihm erworben hat."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-09-18
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 58500
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+        note: "Footnote: Erworben für $65.000 abzüglich 10% Rabatt ($ 6.500) = $58. 500, AStEGB, Rechnung von Paul Rosenberg, New York, ausgestellt auf Emil Bührle, 22. 09.1952; Brief von Emil Bührle an Paul Rosenberg, Zürich, 06.05.1953, mit einem Scheck zur Bezahlung von 4 Bildern und einem Zahlungsplan für 3 noch ausstehende Bilder, darunter Renoir, Sommerhüte; [2.] Rechnung von Paul Rosenberg, New York, ausgestellt au…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 89
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "89"
+    institution: foundation-e-g-buhrle-collection
+  - number: "995"
+    label: Dauberville (catalogue raisonné)
+  - number: "257"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604982/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

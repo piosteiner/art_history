@@ -1,0 +1,152 @@
+public_id: 112398
+title_lang: de
+title: Heilige Sippe
+names:
+  - lang: en
+    role: translation
+    text: Holy Kinship
+creator: niklaus-weckmann
+attribution_label: workshop of Niklaus Weckmann
+created: c. 1515
+created_span: uncertain
+kind: sculpture
+medium: Limewood
+dimensions: [160, 110.3, 29]
+institution: kunsthaus-zurich
+inventory_number: BU P.12
+web_url: https://collection.kunsthaus.ch/de/collection/item/752989/
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner: institution/stadtarchiv-ulm
+    acquired: c. 1833
+    ended: c. 1833
+    place: ulm
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+        note: "Footnote: Kat. Württembergisches Landesmuseum Stuttgart 1993, No. 61."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    ended: 1891
+    label: New Orleans (Louisiana)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bode-museum
+    acquired: 1891
+    ended: 1931
+    method: purchase
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+        note: "Footnote: Vöge 1910, S. 53, No. 106 (Abb.); Demmler 1930, S. 218-219, No. 1842 (Abb.)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: a syndicate of dealers
+    role: dealer
+    acquired: 1931
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+        note: "Footnote: Lothar Lambacher, «Johannes evangelista und die heilige Katharina von Alexandrien, Zwei Leihgaben aus einer Berliner Privatsammlung», in: Museums-Journal (5) 1991, S. 58: 1931 als Teil einer Gruppe von 12 Werken im Wege des Tausches deakzessioniert."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    place: copenhagen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+        note: "Footnote: Kunsthaus Zürich 1958 (Sammlungskatalog), No. 45."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/benno-griebert
+    role: dealer
+    acquired: 1955-04-15 or earlier
+    ended: 1956-11-28
+    place: constance
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+        note: "Footnote: AStEGB, Eingangsbuch II, 15.04.1955."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-04-21
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 45000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+        note: "Footnote: AStEGB, maschinengeschriebener Vermerk mit Preiszusammensetzung, und 2 Quittungen: 1 von der Werkzeugmaschinenfabrik Oerlikon, Bührle & Co. über den Betrag von CHF 22.500, datiert 19.04.1955 und unterschrieben von Griebert, 1 von der Industrie- und Handelsbank, Zürich über den Betrag von CHF 20.000, datiert 21.04.1955; die zusätzlichen CHF 2.500 sind Zinsen für einen Kredit von Bührle an Griebert."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. P12
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: P12
+    institution: foundation-e-g-buhrle-collection
+  - number: "615"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,111 @@
+public_id: 112464
+title_lang: de
+title: Stehende Muttergottes
+names:
+  - lang: en
+    role: translation
+    text: Virgin Mary, Standing
+attribution_label: Anonymous, Thuringia
+created: early 15th century
+created_span: uncertain
+kind: sculpture
+medium: Poplar wood
+dimensions: [207, 68, 43]
+institution: kunsthaus-zurich
+inventory_number: BU P.16
+web_url: https://collection.kunsthaus.ch/de/collection/item/849973/
+on_loan: true
+on_loan_since: 2021
+region: europe
+provenance:
+  - owner: person/johannes-hinrichsen
+    role: dealer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849973/
+        note: "Footnote: AStEGB, Inventarkarte Die Jungfrau mit Kind. Die Information wird bestätigt durch AStEGB, Brief von Dr. Walter Drack [Konservator der Sammlung Bührle] an August Carl, Zürich, 25.11.1952, mit der Frage an Carl, ob er wisse, wo die Skulptur vor dem Kauf durch Hinrichsen gestanden habe."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/august-carl
+    role: dealer
+    ended: 1952-04-03
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849973/
+        note: "Footnote: AStEGB, Rechnung von August Carl, Zürich, ausgestellt auf Emil Bührle, 03.04.1952."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-04-03
+    method: purchase
+    direct: true
+    place: zurich
+    label: "dates as given in the source: 3.4.1952 – 28.1956"
+    price:
+      amount: 50000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849973/
+        note: "Footnote: Wie oben Fussnote 4: Erworben von den beiden Vorgenannten für CHF 65.000, mit dem Hinweis, dass der Betrag von CHF 50'000 direkt an Johann Hinrichsen überwiesen worden sei."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849973/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. P16
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849973/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: P16
+    institution: foundation-e-g-buhrle-collection
+  - number: "562"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

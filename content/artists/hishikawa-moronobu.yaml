@@ -9,3 +9,10 @@ names:
 wikidata_id: Q11620184
 metadata:
   sources: [Wikidata Q11620184 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q11620184

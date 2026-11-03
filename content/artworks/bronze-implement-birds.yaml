@@ -7,6 +7,7 @@ kind: bronze
 medium: Bronze
 materials: [bronze]
 dimensions: [7.3, 12.8]
+region: east_asia
 description_md: A fragment of a bronze implement cast with ploughing figures and birds perched on branches — evidence of shamanistic ritual practices like those of Korean shamans today. [[source/portal-2000|p. 36, fig. 18]]
 relationships:
   - type: associated_with

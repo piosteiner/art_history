@@ -4,6 +4,21 @@ birth: 1201/1300
 wikidata_id: Q3053438
 metadata:
   sources: [Wikidata Q3053438 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3053438
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b2/Brooklyn_Museum_-_Fragment_of_Ippen_Shonin_Eden.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Fragment_of_Ippen_Shonin_Eden.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  lc: nr2005022674
+  viaf: "36876765"
 sources:
   birth:
     - accessed: 2026-11-01

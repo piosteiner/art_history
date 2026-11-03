@@ -1,0 +1,240 @@
+public_id: 112251
+title_lang: fr
+title: La Toilette
+names:
+  - lang: de
+    role: translation
+    text: Die Toilette
+  - lang: en
+    role: translation
+    text: The Toilet
+creator: edouard-manet
+created: c. 1879
+created_span: uncertain
+kind: pastel
+medium: Pastel on canvas
+dimensions: [55, 46]
+institution: kunsthaus-zurich
+inventory_number: BU 0065
+web_url: https://collection.kunsthaus.ch/de/collection/item/707968/
+on_loan: true
+on_loan_since: 2021
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586170
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7c/%C3%89douard_Manet_-_La_Toilette_-_65_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Manet_-_La_Toilette_-_65_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Édouard Manet
+provenance:
+  - owner: artist/edouard-manet
+    role: estate
+    acquired: 1883
+    ended: 1884-02-04
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+        note: "Footnote: Auktion Hôtel Drouot (04.-05.02.1884), Lot 98."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1884-02-04
+    ended: 1884-02-05
+    method: auction
+    direct: true
+    place: paris
+    label: Paris, Lot. 98
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/madame-berend-de-buffey
+    acquired: 1884-02-04
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 550
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+        note: "Footnote: Bodelsen 1968, S. 342, No. PV 25."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    co_owners: [institution/bernheim-jeune]
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+        note: "Footnote: Rouart/Wildenstein 1975, Bd. II, No. 25."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/monsieur-guyon
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alphonse-kann
+    acquired: 1932
+    ended: 1941-07-12
+    direct: true
+    place: saint-germain-en-laye
+    label: St-Germain-en-Laye and London
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    acquired: 1941-07-12
+    ended: 1941-10-02
+    method: confiscation
+    direct: true
+    label: ERR no. Ka 20
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+        note: "Footnote: Yeide 2009, No. D 47. Beschlagnahmt durch den «Einsatzstab Reichsleiter Rosenberg» (ERR Nr. Ka 20), und im Auftrag von Hermann Göring von Walter Andreas Hofer am 12.07.1941 übernommen."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: dealer
+    acquired: 1941-10-02
+    ended: 1942-04-18
+    method: exchange
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+        note: "Footnote: Yeide, wie oben Fussnote 10; Francini/Heuss/Kreis 2001, S. 106, No. 267; 286 (n. *1)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1942-04-18
+    ended: 1948-07-05
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 35000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+        note: "Footnote: AStEGB, Brief von Emil Bührle an seinen Anwalt Dr. Walther Huber, Zürich, 22.08.1947. Die Zahl entspricht dem Betrag, den Bührle später in seinem Prozess gegen Fischer einforderte, und obwohl Fischer eine Rückerstattungspflicht grundsätzlich ablehnte, wurden die Zahlen als solche nie in Frage gestellt. Diese Zahlen definierten daher die Beträge, die Fischer an Bührle zurückzahlen musste, nachdem d…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alphonse-kann
+    acquired: 1948-07-05
+    ended: 1948-09-24
+    method: restitution
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+        note: "Footnote: AStEGB, Schweizerisches Bundesgericht, wie oben Fussnote 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alphonse-kann
+    role: estate
+    acquired: 1948-09-24
+    ended: 1951-02-03
+    method: inheritance
+    direct: true
+    place: london
+    label: London and Paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+        note: "Footnote: AStEGB, 2 Protokolle mit handschriftlichen Notizen von Bührle, betreffend zwei Besuche von Maître J. Metthey, Paris, im Auftrag der Erben von Alphonse Kann, bei der Werkzeugmaschinenfabrik Oerlikon Bührle & Co. vom 25.01.1951 und 15.02.1951."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jean-metthey
+    role: agent
+    acquired: 1951-02-03
+    ended: 1951-02-03
+    direct: true
+    place: paris
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+        note: "Footnote: Erworben durch Maître J. Metthey, Paris, zusammen mit zwei Gemälden von Degas für insgesamt 24.000 £, Aufzeichnungen wie oben, Nr. 10. Auf dem ersten Eintrag vermerkt Bührle, dass die Preisvorstellung der Kann-Erben ca. 30.000 £ für die 3 Werke Degas, Madame Camus, Degas, Danseuses (Sammlung Emil Bührle, Inv. 32, 35) und das Pastell von Manet beträgt. Ein handschriftlicher Vermerk von Bührle, der …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-02-03
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+        note: "Footnote: Wie oben Fussnote 15."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 65
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "65"
+    institution: foundation-e-g-buhrle-collection
+  - number: (P)25
+    label: Rouart/Wildenstein (catalogue raisonné)
+  - number: "188"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

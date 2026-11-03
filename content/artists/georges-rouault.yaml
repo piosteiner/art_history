@@ -1,0 +1,91 @@
+public_id: 112099
+name: Georges Rouault
+given_name: Georges
+family_name: Rouault
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Georges Henri Rouault
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q156128
+birth: 1871-05-27
+death: 1958-02-13
+wikidata_id: Q156128
+metadata:
+  sources: [Wikidata Q156128 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q156128
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q156128
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q156128
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q156128
+  - type: studied_at
+    to: institution/ecole-nationale-superieure-des-arts-decoratifs
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q156128
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q156128
+  - type: associated_with
+    to: movement/fauvism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q156128
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q156128
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/57/Georges_Rouault.png
+    source_url: https://commons.wikimedia.org/wiki/File:Georges_Rouault.png
+    license: Public domain
+    credit: Anonymous
+identifiers:
+  bnf: 11922740x
+  dome: "329"
+  gnd: "118603361"
+  idref: "027110559"
+  kulturnav: 775493f5-0e15-43d8-829e-02fc2c8534b0
+  lc: n79111407
+  rkd: "68518"
+  ulan: "500024798"
+  viaf: "16857"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q156128
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q156128

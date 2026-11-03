@@ -1,0 +1,59 @@
+public_id: 111865
+name: Honoré Daumier
+given_name: Honoré
+family_name: Daumier
+birth: 1808-02-26
+death: 1879-02-10
+wikidata_id: Q187506
+metadata:
+  sources: [Wikidata Q187506 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q187506
+  - type: born_in
+    to: place/marseille
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q187506
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q187506
+  - type: associated_with
+    to: movement/realism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q187506
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Honore_Daumier-Nadar.jpg/1280px-Honore_Daumier-Nadar.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Honore_Daumier-Nadar.jpg
+    license: Public domain
+    credit: Nadar
+identifiers:
+  bnf: 11898743p
+  dome: "1324"
+  gnd: "118523880"
+  idref: "026812924"
+  kulturnav: f82d6618-9f9b-4b6b-b462-f62f47d393bc
+  lc: n79089112
+  nlk: KAC199606331
+  rkd: "20126"
+  ulan: "500117998"
+  viaf: "96555949"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q187506
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q187506

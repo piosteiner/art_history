@@ -20,6 +20,13 @@ death: 1910-04-22
 wikidata_id: Q7360123
 metadata:
   sources: [Wikidata Q7360123 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q7360123
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/1e/Ogiwara.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Ogiwara.jpg

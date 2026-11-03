@@ -1,0 +1,101 @@
+public_id: 111817
+title_lang: de
+title: Emil Bührle
+creator: oskar-kokoschka
+created: 1951/1952
+kind: oil painting
+medium: Oil on canvas
+dimensions: [125, 90]
+institution: kunsthaus-zurich
+inventory_number: BU 0179
+web_url: https://collection.kunsthaus.ch/de/collection/item/255946/
+on_loan: true
+on_loan_since: 2021
+provenance_status: a_clear
+provenance_status_note: The work was created after 1945. This is not a case of cultural property confiscated as a result of Nazi persecution.
+wikidata_id: Q131585993
+provenance:
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-05-01
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/255946/
+        note: "Footnote: Während keine Dokumente über den Auftrag erhalten sind, besitzt das AStEGB eine Korrespondenz zwischen Oskar Kokoschka, (hauptsächlich) Villeneuve und Emil Bührle, die vom 23.01.1952 bis zum 03.03.1956 reicht und sich auf die Sitzungen, den Fortschritt des Porträts und später auf verschiedene Fragen bezieht, darunter Bührles Vortrag vom Juni 1954 «Ursprung und Wachstum meiner Sammlung». Eine erste…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1967
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/255946/
+        note: "Footnote: Die Kunstwerke, die 1960 nicht in die Stiftung Sammlung E.G. Bührle gelangten, wurden 1967 unter Emil Bührles Sohn, Dr. Dieter Bührle, und seiner Tochter, Hortense Anda-Bührle, aufgeteilt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/dieter-buhrle
+    acquired: 1967
+    ended: 2012-11-09
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/255946/
+        note: "Footnote: Sohn von Emil Bührle und 1960, zusammen mit seiner Mutter Charlotte Bührle-Schalk und seiner Schwester Hortense (Anda-)Bührle, einer der drei Gründer der Stiftung Sammlung E.G. Bührle, deren Stiftungsrat er von 1960 bis 2012 angehörte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 2012-11-09
+    method: inheritance
+    direct: true
+    place: zurich
+    label: inv. no. 179
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/255946/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "179"
+    institution: foundation-e-g-buhrle-collection
+  - number: 1952/1
+    label: Erling/Feilchenfeldt (catalogue raisonné)
+  - number: "230"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/255946/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/255946/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/255946/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/255946/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/255946/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/255946/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/255946/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/255946/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

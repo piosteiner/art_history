@@ -52,6 +52,98 @@ death: 1985-03-28
 wikidata_id: Q93284
 metadata:
   sources: [Wikidata Q93284 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/russian-empire
+    period: 1887/1917
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q93284
+  - type: nationality
+    to: polity/france
+    period: 1937
+    period_label: from 1937
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q93284
+  - type: lived_in
+    to: place/saint-petersburg
+    period: 1907
+    period_label: from 1907
+    sources:
+      - accessed: 2026-11-02
+        property: P551
+        wikidata: Q93284
+  - type: lived_in
+    to: place/moscow
+    period: 1920
+    period_label: from 1920
+    sources:
+      - accessed: 2026-11-02
+        property: P551
+        wikidata: Q93284
+  - type: worked_in
+    to: place/moscow
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q93284
+  - type: worked_in
+    to: place/new-york
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q93284
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q93284
+  - type: worked_in
+    to: place/saint-petersburg
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q93284
+  - type: influenced_by
+    to: artist/henri-matisse
+    sources:
+      - accessed: 2026-11-02
+        property: P737
+        wikidata: Q93284
+  - type: influenced_by
+    to: artist/maria-prymachenko
+    sources:
+      - accessed: 2026-11-02
+        property: P737
+        wikidata: Q93284
+  - type: influenced_by
+    to: artist/pablo-picasso
+    sources:
+      - accessed: 2026-11-02
+        property: P737
+        wikidata: Q93284
+  - type: influenced_by
+    to: artist/paul-gauguin
+    sources:
+      - accessed: 2026-11-02
+        property: P737
+        wikidata: Q93284
+  - type: member_of
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-11-02
+        property: P463
+        wikidata: Q93284
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q93284
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Shagal_Choumoff.jpg/1280px-Shagal_Choumoff.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Shagal_Choumoff.jpg
@@ -60,6 +152,7 @@ images:
 identifiers:
   bnf: "118958588"
   dodis: P22351
+  dome: "60"
   gnd: "118519980"
   idref: "027285596"
   kulturnav: cf951453-1996-4a98-b730-a087470e927e

@@ -1,0 +1,90 @@
+public_id: 112195
+title_lang: en
+title: Bateau au Havre
+names:
+  - lang: en
+    role: translation
+    text: Schiff in Le Havre
+  - lang: en
+    role: translation
+    text: Ship at Le Havre
+creator: georges-braque
+created: c. 1905
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [54, 65]
+institution: kunsthaus-zurich
+inventory_number: BU 0169
+web_url: https://collection.kunsthaus.ch/de/collection/item/699965/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131586024
+provenance:
+  - owner: person/george-griffin
+    place: chicago
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699965/
+        note: "Footnote: AStEGB, Akte, wahrscheinlich von Abris Silberman übergeben, betreffend Braque, Bateau au Havre, mit Angabe: «Ehemalige Sammlung: George Griffin, Chicago, Illinois»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/abris-silberman
+    role: dealer
+    acquired: 1956-08-26 or earlier
+    ended: 1961-12-11
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699965/
+        note: "Footnote: AStEGB, Korrespondenz zwischen Abris Silberman, New York, und Emil Bührle/Dr. Peter Dietschi, Kurator der Sammlung Bührle, 26.08.1956-18.10.1956."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1961-12-11
+    method: purchase
+    direct: true
+    place: zurich
+    label: inv. no. 169
+    price:
+      amount: 50000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699965/
+        note: "Footnote: AStEGB, Stiftung Sammlung E.G. Bührle, Jahresbericht 1960 & 1961, S. 2: im Auftrag der Stiftung Sammlung E.G. Bührle von den Erben von Emil Bührle am 11.12.1961 für $ 50.000 (CHF 216.000) erworben."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "169"
+    institution: foundation-e-g-buhrle-collection
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

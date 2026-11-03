@@ -5,6 +5,36 @@ death: 1463
 wikidata_id: Q2706164
 metadata:
   sources: [Wikidata Q2706164 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2706164
+  - type: died_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q2706164
+  - type: worked_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q2706164
+  - type: student_of
+    to: artist/josetsu
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q2706164
+identifiers:
+  gnd: "118762060"
+  lc: no96030309
+  ulan: "500121034"
+  viaf: "260779063"
 sources:
   birth:
     - accessed: 2026-11-01

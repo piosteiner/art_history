@@ -1,0 +1,210 @@
+public_id: 112112
+title_lang: fr
+title: Les Régates à Hampton Court
+names:
+  - lang: en
+    role: translation
+    text: Regatta bei Hampton Court
+  - lang: en
+    role: translation
+    text: Regatta at Hampton Court
+creator: alfred-sisley
+created: 1874
+kind: oil painting
+medium: Oil on canvas
+dimensions: [46, 61]
+institution: kunsthaus-zurich
+inventory_number: BU 0183
+web_url: https://collection.kunsthaus.ch/de/collection/item/604988/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223632
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d6/Alfred_Sisley_-_Les_R%C3%A9gates_%C3%A0_Hampton_Court_-_183_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Alfred_Sisley_-_Les_R%C3%A9gates_%C3%A0_Hampton_Court_-_183_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Alfred Sisley
+provenance:
+  - owner: person/emmanuel-chabrier
+    ended: 1894-09-13
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+        note: "Footnote: Auktion Durand-Ruel, Paris (26.03.1896), Nr. 26."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emmanuel-chabrier
+    role: estate
+    acquired: 1894-09-13
+    ended: 1896-03-26
+    method: inheritance
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: agent
+    acquired: 1896-03-26
+    ended: 1896-03-26
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 26
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jean-baptiste-faure
+    ended: 1914-11-09
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+        note: "Footnote: Brame/Lorenceau 2021, Nr. 156."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/louis-maurice-faure
+    acquired: 1914-11-09
+    ended: 1915
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/mme-louis-maurice-faure
+    acquired: 1915
+    ended: 1919
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1919
+    ended: 1943-01-03
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and New York, NY
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/sam-salz
+    role: dealer
+    acquired: 1943-01-03
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/wildenstein-co
+    role: dealer
+    ended: 1947-04-01
+    place: new-york-city
+    label: New York and London
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+        note: "Footnote: AStEGB, Rechnung von Wildenstein & Co., London, ausgestellt auf Emil Bührle, 24.03.1947, für drei von Bührle gekaufte Gemälde, darunter Sisley, Hampton-Court."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1947-04-01
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 2750
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+        note: "Footnote: AStEGB, Briefe von Emil Bührle an Herren Michelis & Co, Bankgeschäft, Zürich, und an die Firma Wildenstein & Co, London, att. Herr van Drusen, 01.04.1947, mit dem Auftrag, die Rechnung wie oben Fussnote 13, durch Überweisung an die Firma Coutts & Co. in London zu begleichen. Korrespondenz bezüglich der Einfuhr der drei Gemälde in die Schweiz, 16.10.1947 - 31.03.1950."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1967
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+        note: "Footnote: Die Kunstwerke, die 1960 nicht in die Stiftung Sammlung E.G. Bührle gelangten, wurden 1967 unter Emil Bührles Sohn Dr. Dieter Bührle und seiner Tochter Hortense Anda-Bührle aufgeteilt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/dieter-buhrle
+    acquired: 1967
+    ended: 2012-11-09
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+        note: "Footnote: Sohn von Emil Bührle und 1960, zusammen mit seiner Mutter Charlotte Bührle-Schalk und seiner Schwester Hortense (Anda-)Bührle, einer der drei Gründer der Stiftung Sammlung E.G. Bührle, deren Stiftungsrat er von 1960 bis 2012 angehörte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 2012-11-09
+    method: inheritance
+    direct: true
+    place: zurich
+    label: inv. no. 183
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "183"
+    institution: foundation-e-g-buhrle-collection
+  - number: "156"
+    label: Brame/Lorenceau (catalogue raisonné)
+  - number: "151"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604988/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

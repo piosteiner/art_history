@@ -1,0 +1,123 @@
+public_id: 112242
+title_lang: fr
+title: La Poire
+names:
+  - lang: de
+    role: translation
+    text: Die Birne
+  - lang: en
+    role: translation
+    text: The Pear
+creator: juan-gris
+created: 1919
+kind: oil painting
+medium: Oil on canvas
+dimensions: [33, 41]
+institution: kunsthaus-zurich
+inventory_number: BU 0056
+web_url: https://collection.kunsthaus.ch/de/collection/item/707962/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q120028328
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/88/Juan_Gris_-_La_Poire_-_56_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Juan_Gris_-_La_Poire_-_56_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Juan Gris
+provenance:
+  - owner: person/leonce-rosenberg
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707962/
+        note: "Footnote: Etikette auf der Werkrückseite: Galerie de l'Effort moderne, Inv.-No. L.R.6342; Cooper 1977, Bd. II, No. 301."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/maurice-meunier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707962/
+        note: "Footnote: Cooper 1977, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/max-kaganovitch
+    role: dealer
+    ended: 1956-03-13
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707962/
+        note: "Footnote: AStEGB, Eingangsbuch II, 13.03.1956."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1956-03-13
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707962/
+        note: "Footnote: Wie oben Fussnote 7. Eine Rechnung, ausgestellt von Max Kaganovitch an Emil Bührle am 23.02.1956, für das vorliegende Stillleben und das Stillleben Cooper 1977 No. 304 (Inv. 57) gibt den Betrag von FF 1.5 mio. (= CHF 18.000) für jedes der beiden Gemälde an. Verglichen mit einem Stillleben von Gris (Cooper 1977 No. 443), das Bührle im gleichen Monat bei Marlborough Fine Art Ltd. in London kaufte un…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707962/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 56
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707962/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "56"
+    institution: foundation-e-g-buhrle-collection
+  - number: "301"
+    label: Cooper (catalogue raisonné)
+  - number: "504"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

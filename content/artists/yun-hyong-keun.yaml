@@ -18,6 +18,19 @@ death: 2007-12-28
 wikidata_id: Q73668649
 metadata:
   sources: [Wikidata Q73668649 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/south-korea
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q73668649
+  - type: died_in
+    to: place/seoul
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q73668649
 identifiers:
   gnd: 12326930X
   idref: 07992347X

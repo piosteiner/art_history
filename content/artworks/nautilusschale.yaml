@@ -1,0 +1,195 @@
+public_id: 112159
+title_lang: en
+title: Nautilusschale
+names:
+  - lang: en
+    role: translation
+    text: Nautilus Cup
+creator: willem-kalf
+created: c. 1660
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [66.5, 55]
+institution: kunsthaus-zurich
+inventory_number: BU 0153
+web_url: https://collection.kunsthaus.ch/de/collection/item/696967/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q112701107
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2f/Willem_Kalf_-_Nautilusschale_-_153_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Willem_Kalf_-_Nautilusschale_-_153_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Willem Kalf
+provenance:
+  - owner: person/haus-hohenzollern
+    acquired: 1883 or earlier
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+        note: "Footnote: Kat. Königliche Kunstakademie Berlin 1883, Berliner Privatbesitz, S. 50, Nr. 59; Kat. J. Goudstikker 1933, Het Stilleven, Nr. 175."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-van-diemen
+    role: dealer
+    ended: 27 April 1935 or later
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+        note: "Footnote: Auktion Paul Graupe (26.-27.04.1935), Lot 45: Liquidation der Bestände der Galerie Van Diemen & Co. und Altkunst, Antiquitäten GmbH. Beide Firmen gehörten zur Margraf Gruppe, deren Eigentümer Jacob und Rosa Oppenheimer waren. Das Ehepaar Oppenheimer wurde von den Nationalsozialisten verfolgt. Es ist nicht restlos geklärt, ob das Bild im Eigentum oder im Besitz der Galerie Van Diemen & Co. war."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/paul-graupe
+    role: agent
+    acquired: 1935-04-26
+    ended: 1935-04-27
+    method: auction
+    direct: true
+    place: berlin
+    label: Lot 45
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+        note: "Footnote: Wie oben Fussnote 4, Lot 45. Das Gemälde wurde für 4300 RM versteigert bei einem geschätzten tatsächlichen Wert von 20'000 RM, vgl. Eidesstattliche Zeugenaussage Eduard Plietzsch in LABO Reg Nr. 300.590 Bl. D3ff."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: private collection
+    ended: 1950-11-03
+    place: germany
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+        note: "Footnote: AStEGB (Provenienz-Akten): Schreiben des Kunsthauses Lempertz, Köln, an die Stiftung Sammlung E.G. Bührle, 28.08.2009, aus dem hervorgeht, dass das Gemälde von einem deutschen Sammler für die Versteigerung am 03.11.1950 eingeliefert wurde."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthaus-lempertz
+    role: agent
+    acquired: 1950-11-03
+    ended: 1950-11-03
+    method: auction
+    direct: true
+    place: cologne
+    label: Lot 58
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+        note: "Footnote: Auktion Lempertz (03.11.1950), Lot 58."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: private collection
+    acquired: 1950-11-03
+    method: purchase
+    direct: true
+    label: 3200.00 DM
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+        note: "Footnote: Wie oben Fussnote 7; Weltkunst 1950, S. 15."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-hugelshofer
+    acquired: 1954-03-02 or earlier
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+        note: "Footnote: Kommissionskarte K_006_54, Böhler-Archiv; Auskunft Cosima Dollansky, 15.02.2023. Ob Walter Hugelshofer Vermittler oder Eigentümer des Werkes war, konnte nicht eruiert werden."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandlung-julius-bohler
+    role: agent
+    acquired: 1954-03-02
+    ended: 1955-07-25
+    direct: true
+    place: munich
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+        note: "Footnote: Wie oben Fussnote 11. Fritz Nathan erhielt das Gemälde im Juli 1955 zur Ansicht und gab es anschliessend an Walter Hugelshofer zurück."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: private collection
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+        note: "Footnote: Kunsthaus Zürich 1958 (Sammlungskatalog), Nr. 58."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/arthur-kauffmann
+    role: dealer
+    ended: 1955-08-28
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+        note: "Footnote: AStEGB, Eingangbuch II, 28.08.1955."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-08-28
+    ended: 1958-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+        note: "Footnote: Eingangsbuch, wie oben Fussnote 13; AStEGB, Karteikarte, Nach einem handschriftlichen Vermerk auf der Karteikarte könnte der Preis ca. CHF 33.000 betragen haben; Brief von Dr. Walter Drack, Konservator der Sammlung Bührle, an Dr. Luc Mojon, Bern, Präsident des Vereins zur Erhaltung des Schlosses Jegenstorf, 02.09.1955, mit Angabe der Versicherungswerte für 3 Gemälde, die in die laufende Ausstellun…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1958-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 153
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "153"
+    institution: foundation-e-g-buhrle-collection
+  - number: "118"
+    label: Griesebach (catalogue raisonné)
+  - number: "478"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/696967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

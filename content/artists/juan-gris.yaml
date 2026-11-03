@@ -1,0 +1,103 @@
+public_id: 112241
+name: Juan Gris
+given_name: Juan
+family_name: Gris
+names:
+  - kind: birth
+    lang: es
+    role: former
+    text: José Victoriano González-Pérez
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q151152
+birth: 1887-03-23
+death: 1927-05-11
+wikidata_id: Q151152
+metadata:
+  sources: [Wikidata Q151152 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q151152
+  - type: born_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q151152
+  - type: died_in
+    to: place/boulogne-billancourt
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q151152
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q151152
+  - type: worked_in
+    to: place/boulogne-billancourt
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q151152
+  - type: worked_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q151152
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q151152
+  - type: influenced_by
+    to: artist/henri-matisse
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q151152
+  - type: influenced_by
+    to: artist/pablo-picasso
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q151152
+  - type: associated_with
+    to: movement/cubism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q151152
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Juan_Gris%2C_portrait_photograph%2C_published_in_Les_Peintres_Cubistes%2C_1913.jpg/1280px-Juan_Gris%2C_portrait_photograph%2C_published_in_Les_Peintres_Cubistes%2C_1913.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Juan_Gris,_portrait_photograph,_published_in_Les_Peintres_Cubistes,_1913.jpg
+    license: Public domain
+    credit: Guillaume Apollinaire
+identifiers:
+  bnf: 12055776v
+  dome: "146"
+  gnd: "118697846"
+  idref: "027783499"
+  kulturnav: 9266c4ec-f378-4669-a524-2fba0e2907c9
+  lc: n79139620
+  rkd: "33914"
+  ulan: "500015362"
+  viaf: "49245334"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q151152
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q151152

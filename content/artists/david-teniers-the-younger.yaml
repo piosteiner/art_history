@@ -1,0 +1,90 @@
+public_id: 112345
+name: David Teniers the Younger
+given_name: David, the Younger
+family_name: Teniers
+birth: 1610
+death: 1690-04-25
+wikidata_id: Q335022
+metadata:
+  sources: [Wikidata Q335022 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q335022
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q335022
+  - type: died_in
+    to: place/brussels
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q335022
+  - type: worked_in
+    to: place/brussels-capital-region
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q335022
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q335022
+  - type: worked_in
+    to: place/antwerp
+    period: 1626/1650
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q335022
+  - type: worked_in
+    to: place/brussels
+    period: October 1650 – 1690
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q335022
+  - type: influenced_by
+    to: artist/peter-paul-rubens
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q335022
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q335022
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Portrait_of_David_Teniers.jpg/1280px-Portrait_of_David_Teniers.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_David_Teniers.jpg
+    license: Public domain
+    credit: Philip Fruytiers
+identifiers:
+  bnf: "121313636"
+  dome: "3378"
+  gnd: "118907832"
+  idref: "029758963"
+  kulturnav: 804dbca3-85ee-4973-85f6-b0d04e919111
+  lc: n79059287
+  rkd: "76786"
+  ulan: "500001443"
+  viaf: "88765161"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q335022
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q335022

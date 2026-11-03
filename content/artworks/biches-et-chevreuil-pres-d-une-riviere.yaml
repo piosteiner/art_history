@@ -1,0 +1,109 @@
+public_id: 112207
+title_lang: en
+title: Biches et Chevreuil près d'une rivière
+names:
+  - lang: en
+    role: translation
+    text: Winterlandschaft
+  - lang: en
+    role: translation
+    text: Winter Landscape with Deer
+creator: gustave-courbet
+created: c. 1866
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [73, 92]
+institution: kunsthaus-zurich
+inventory_number: BU 0023
+web_url: https://collection.kunsthaus.ch/de/collection/item/699969/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223631
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1a/Gustave_Courbet_-_Biches_et_Chevreuil_pr%C3%A8s_d%27une_rivi%C3%A8re_-_23_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_Biches_et_Chevreuil_pr%C3%A8s_d%27une_rivi%C3%A8re_-_23_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Gustave Courbet
+provenance:
+  - owner: person/arthur-kauffmann
+    role: dealer
+    ended: 1951-09-30
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699969/
+        note: "Footnote: AStEGB, Eingangsbuch I, 15.10.1951."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-09-30
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699969/
+        note: "Footnote: AStEGB, Inventarkarte Courbet, Biches et chevreuil."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699969/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 23
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699969/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "23"
+    institution: foundation-e-g-buhrle-collection
+  - number: "563"
+    label: Fernier (catalogue raisonné)
+  - number: "203"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

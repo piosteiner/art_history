@@ -28,6 +28,21 @@ death: 2020-05-31
 wikidata_id: Q14633979
 metadata:
   sources: [Wikidata Q14633979 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    period: 1973
+    period_label: from 1973
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q14633979
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q14633979
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/22/Christo_%28cropped%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Christo_(cropped).jpg

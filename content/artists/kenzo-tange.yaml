@@ -17,6 +17,27 @@ death: 2005-03-22
 wikidata_id: Q151794
 metadata:
   sources: [Wikidata Q151794 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q151794
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q151794
+  - type: born_in
+    to: place/sakai
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q151794
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Kenzo_Tange_1981.jpg/1280px-Kenzo_Tange_1981.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Kenzo_Tange_1981.jpg

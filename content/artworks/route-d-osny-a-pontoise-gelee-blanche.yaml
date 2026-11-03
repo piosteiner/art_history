@@ -1,0 +1,137 @@
+public_id: 112083
+title_lang: en
+title: Route d'Osny à Pontoise, gelée blanche
+names:
+  - lang: de
+    role: translation
+    text: Die Strasse nach Osny in Pontoise, bei Reif
+  - lang: en
+    role: translation
+    text: The Road to Osny at Pontoise, Hoar Frost
+creator: camille-pissarro
+created: 1873
+kind: oil painting
+medium: Oil on canvas
+dimensions: [50, 65]
+institution: kunsthaus-zurich
+inventory_number: BU 0118
+web_url: https://collection.kunsthaus.ch/de/collection/item/604978/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64174092
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/17/Camille_Pissarro_-_Route_d%27Osny_%C3%A0_Pontoise%2C_gel%C3%A9e_blanche_-_118_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Camille_Pissarro_-_Route_d%27Osny_%C3%A0_Pontoise,_gel%C3%A9e_blanche_-_118_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Camille Pissarro
+provenance:
+  - owner: person/georges-viau
+    ended: 1907-03-04
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604978/
+        note: "Footnote: Auktion Durand-Ruel, Paris 1907 (collection de M. Georges Viau), Nr. 47."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/marquise-de-ganay
+    acquired: 1907-03-04
+    ended: 1928 or later
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604978/
+        note: "Footnote: Kopie des kommentierten Verkaufskatalogs wie oben Fussnote 3, in der Bibliothek der Sammlung Oskar Reinhart «Am Römerholz», Winterthur; Kat. Galerie Durand-Ruel, Paris 1928, nicht im Katalog; Pissarro/Durand-Ruel 2005, Bd. 2, Nr. 287."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/mlle-de-bayser
+    ended: 1948
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604978/
+        note: "Footnote: Pissarro/Durand-Ruel 2005, Bd. 2, Nr. 287."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/georges-wildenstein
+    role: dealer
+    acquired: 1948
+    ended: 1953-08-04
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604978/
+        note: "Footnote: Wie oben Fussnote 6; AStEGB, Rechnung (Abschrift) der Société Anonyme de Beaux-Arts, Vaduz [Wildenstein], ausgestellt auf Emil Bührle, 13. Juli 1953, für 7 Bilder, darunter Pissarro, Route d'Osny, für einen Gesamtbetrag von $ 255.000 (+ 1 separate Rechnung für ein 8. Gemälde zu $ 105.000)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-08-04
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604978/
+        note: "Footnote: Rechnung wie oben Fussnote 7; AStEGB, Korrespondenz zwischen Emil Bührle und der Industrie- und Handelsbank, Zürich, 29.-31. Juli 1953, betreffend Zahlung von $ 360.000 an die Société Anonyme de Beaux-Arts, Vaduz, für 8 Gemälde, darunter Pissarro, Route d'Osny; Schreiben der Société Anonyme de Beaux-Arts, Vaduz, an Emil Bührle, 4. August 1953, mit der Bestätigung des Empfangs des oben genannten Be…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604978/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 118
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604978/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "118"
+    institution: foundation-e-g-buhrle-collection
+  - number: "287"
+    label: Pissarro/Durand-Ruel (catalogue raisonné)
+  - number: "297"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604978/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604978/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604978/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604978/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604978/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604978/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604978/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604978/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

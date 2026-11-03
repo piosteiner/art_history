@@ -1,0 +1,252 @@
+public_id: 112261
+title_lang: de
+title: Gewitter über Dordrecht
+names:
+  - lang: en
+    role: translation
+    text: Thunderstorm over Dordrecht
+creator: aelbert-cuyp
+created: c. 1645
+created_span: uncertain
+kind: oil painting
+medium: Oil on panel
+dimensions: [77.5, 107]
+institution: kunsthaus-zurich
+inventory_number: BU 0149
+web_url: https://collection.kunsthaus.ch/de/collection/item/7413/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q47814910
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5c/Albert_Cuyp_-_Gewitter_%C3%BCber_Dordrecht_-_149_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_Cuyp_-_Gewitter_%C3%BCber_Dordrecht_-_149_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Aelbert Cuyp
+provenance:
+  - owner: person/mattheus-van-den-broucke
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        note: "Footnote: Chong 1992, S. 308, 574, Nr. 61."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/elisabeth-francken
+    ended: 1729
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        note: "Footnote: wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/margarita-van-der-burch
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        note: "Footnote: wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/george-montague-dunk
+    acquired: 1770 or earlier
+    ended: 1771
+    label: 2nd Earl of Halifax (*1716, +1771)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        note: "Footnote: wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/george-montague-dunk-2nd-earl-of-halifax
+    role: estate
+    acquired: 1771
+    ended: 1782-04-19
+    method: inheritance
+    direct: true
+    label: 2nd Earl of Halifax
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        note: "Footnote: Auktion Christie's London 19.-20. April 1782, Lot 67."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1782-04-19
+    ended: 1782-04-20
+    method: auction
+    direct: true
+    place: london
+    label: Lot 67
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        note: "Footnote: wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/william-nisbet
+    acquired: 1782-04-20
+    ended: 1802-05-25
+    method: purchase
+    direct: true
+    price:
+      amount: 63
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        note: "Footnote: E-Mail-Korrespondenz Christie's, London, 14.01.2008; Chong 1993, Nr. 61; Auktion Peter Coxe, Burrell and Foster London 25. Mai 1802, Lot 69."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/peter-coxe
+    acquired: 1802-05-25
+    ended: 1802-05-25
+    direct: true
+    place: london
+    label: Burrell and Foster (Auktion); Lot 69
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        note: "Footnote: wie oben Fussnote 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/comyns
+    acquired: 1802-05-25
+    method: purchase
+    direct: true
+    price:
+      amount: 79.16
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/wilbraham-tollemache
+    acquired: 1820 or earlier
+    ended: 1821-03-09
+    label: 6th Earl of Dysart (*1739, +1821 London); Ham House; Richmond
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        note: "Footnote: wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/lyonel-felix-carteret-eugene-tollemache
+    ended: 1952-03-04
+    method: inheritance
+    label: 4th Baronet (*1854 Grantham, +1952 London); Ham House; Richmond
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        note: "Footnote: Zu den verschiedenen Inventaren in Ham House vgl. Chong 1993, S. 310, Nr. 1; Roundell 1904, S. 105."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/lyonel-felix-carteret-eugene-tollemache
+    role: estate
+    acquired: 1952-03-04
+    ended: 1953-06-19
+    method: inheritance
+    direct: true
+    label: 4th Baronet
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        note: "Footnote: Auktion Christie, Manson & Wood Ltd. London 19. Juni 1953, Lot 42."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1953-06-19
+    ended: 1953-06-19
+    method: auction
+    direct: true
+    place: london
+    label: Lot 42
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        note: "Footnote: wie oben Fussnote 19."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/edward-speelman
+    co_owners: [institution/marlborough-fine-art-ltd]
+    role: dealer
+    acquired: 1953-06-19
+    method: purchase
+    direct: true
+    place: london
+    label: 25 Guinea
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        note: "Footnote: verkauft für 25 Guineas (= 26.25 GBP) in der oben genannten Auktion, Chong 1993, Nr. 61; gemäss einer Information von Herrn Anthony Speelman, London, Sohn von Edward Speelman, an die Stiftung Sammlung E.G. Bührle, 08.01.2010, wurde das Gemälde gemeinsam von Speelman und Marlborough erworben; ein Besitz von Edward Speelman vor dem Verkauf an Emil Bührle wurde von Marlborough International Fine Art …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    ended: 1954-01-23
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        note: "Footnote: wie oben Fussnote 21."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-01-23
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        note: "Footnote: Erworben von Marlborough Fine Art Ltd. London mit zwei Gemälden von Vlaminck und Vuillard (keines davon heute in der Sammlung Emil Bührle), für einen Gesamtbetrag von CHF 254.100, AStEGB, Brief von Trafo, Anstalt für Handel und Finanz, Vaduz [Marlborough Fine Art, Ltd, London], unterzeichnet von F. K. Lloyd, an Dr. O. Maurer [Generalsekretär von Oerlikon Bührle & Co.], Zürich, 18.01.1954, mit Rech…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 149
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "149"
+    institution: foundation-e-g-buhrle-collection
+  - number: "61"
+    label: Chong (catalogue raisonné)
+  - number: "341"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7413/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

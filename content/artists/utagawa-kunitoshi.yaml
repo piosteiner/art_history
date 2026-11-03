@@ -15,6 +15,19 @@ death: 1899-09-07
 wikidata_id: Q2502854
 metadata:
   sources: [Wikidata Q2502854 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2502854
+  - type: student_of
+    to: artist/utagawa-kunisada
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q2502854
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/%E5%BE%A1%E9%B3%B3%E8%BC%A6%E4%B9%8B%E5%9B%B3-Illustration_of_the_Imperial_Carriage_%28Goh%C5%8Dren_no_zu%29_MET_DP146905.jpg/1280px-%E5%BE%A1%E9%B3%B3%E8%BC%A6%E4%B9%8B%E5%9B%B3-Illustration_of_the_Imperial_Carriage_%28Goh%C5%8Dren_no_zu%29_MET_DP146905.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%E5%BE%A1%E9%B3%B3%E8%BC%A6%E4%B9%8B%E5%9B%B3-Illustration_of_the_Imperial_Carriage_(Goh%C5%8Dren_no_zu)_MET_DP146905.jpg

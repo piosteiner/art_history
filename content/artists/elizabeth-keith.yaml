@@ -14,6 +14,25 @@ death: 1956-04
 wikidata_id: Q11290920
 metadata:
   sources: [Wikidata Q11290920 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q11290920
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q11290920
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q11290920
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/ea/%E3%82%A8%E3%83%AA%E3%82%B6%E3%83%99%E3%82%B9%E3%83%BB%E3%82%AD%E3%83%BC%E3%82%B9%E3%81%A8%E5%A7%89.png
     source_url: https://commons.wikimedia.org/wiki/File:%E3%82%A8%E3%83%AA%E3%82%B6%E3%83%99%E3%82%B9%E3%83%BB%E3%82%AD%E3%83%BC%E3%82%B9%E3%81%A8%E5%A7%89.png

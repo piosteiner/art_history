@@ -1,0 +1,26 @@
+public_id: 112309
+name: Almen
+names:
+  - lang: ru
+    role: translation
+    text: Алмен
+kind: settlement
+parent: gelderland
+country_code: NL
+location: [6.3006, 52.1575]
+wikidata_id: Q2547862
+metadata:
+  sources: [Wikidata Q2547862 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q2547862
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q2547862
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q2547862

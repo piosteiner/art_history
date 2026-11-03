@@ -1,0 +1,44 @@
+public_id: 111978
+name: Magdeburg
+names:
+  - lang: ja
+    role: translation
+    text: マクデブルク
+  - lang: zh
+    role: translation
+    text: 马格德堡
+  - lang: ko
+    role: translation
+    text: 마그데부르크
+  - lang: fr
+    role: translation
+    text: Magdebourg
+  - lang: it
+    role: translation
+    text: Magdeburgo
+  - lang: nl
+    role: translation
+    text: Maagdenburg
+  - lang: ru
+    role: translation
+    text: Магдебург
+kind: settlement
+parent: sachsen-anhalt
+country_code: DE
+location: [11.63996, 52.13159]
+wikidata_id: Q1733
+metadata:
+  sources: [Wikidata Q1733 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q1733
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q1733
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q1733

@@ -46,6 +46,61 @@ death: 1985-05-12
 wikidata_id: Q170076
 metadata:
   sources: [Wikidata Q170076 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q170076
+  - type: born_in
+    to: place/le-havre
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q170076
+  - type: died_in
+    to: place/6th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q170076
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q170076
+  - type: worked_in
+    to: place/le-havre
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q170076
+  - type: worked_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q170076
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q170076
+  - type: worked_in
+    to: place/turin
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q170076
+  - type: member_of
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-11-02
+        property: P463
+        wikidata: Q170076
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/c/c8/Paolo_Monti_-_Serie_fotografica_%28Italia%2C_1960%29_-_BEIC_6363665_dettaglio.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Paolo_Monti_-_Serie_fotografica_(Italia,_1960)_-_BEIC_6363665_dettaglio.jpg

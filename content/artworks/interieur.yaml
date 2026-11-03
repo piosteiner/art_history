@@ -1,0 +1,155 @@
+public_id: 112006
+title_lang: en
+title: Intérieur
+names:
+  - lang: en
+    role: translation
+    text: Interieur
+  - lang: en
+    role: translation
+    text: Interior Scene
+creator: pierre-bonnard
+created: c. 1905
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [59.5, 40.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0005
+web_url: https://collection.kunsthaus.ch/de/collection/item/600962/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223639
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/33/Pierre_Bonnard_-_Int%C3%A9rieur_-_5_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre_Bonnard_-_Int%C3%A9rieur_-_5_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Pierre Bonnard
+provenance:
+  - owner: institution/bernheim-jeune
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600962/
+        note: "Footnote: Auktion Galerie Fischer, Luzern (02.09.1935), No. 14 (Abb.)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/richard-buhler
+    acquired: 1918 or earlier
+    ended: 26 November 1935 or later
+    place: winterthur
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600962/
+        note: "Footnote: Wie oben Fussnote 3; AStEGB, Auskunft der Galerie Fischer, Luzern, an die Stiftung Sammlung E.G. Bührle, 01.04.2008; E-Mail-Korrespondenz, Galerie Fischer Luzern, 02.03.2025; Archiv der Galerie Fischer, Galerie Fischer Auktionen AG, «Kommissionsbuch 1924-1938 Mai», fol. 304. Eintrag vom 23.09.1935; Kat. Kunstmuseum Winterthur 2020, S. 67, 75, No. 67; Richard Bühler gehörte zu den Pionieren unter d…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1935-09-02
+    ended: 1935-09-02
+    method: auction
+    direct: true
+    place: lucerne
+    label: Lot 14; unverkauft
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600962/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1935-09-02
+    ended: 1935-11-26
+    direct: true
+    place: lucerne
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600962/
+        note: "Footnote: E-Mail-Korrespondenz, Galerie Fischer Luzern, wie oben Fussnote 5; Archiv der Galerie Fischer, Kommissionsbuch, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    ended: 1944-06-15
+    place: st-gallen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600962/
+        note: "Footnote: AStEGB, Inventarkarte Bonnard, Intérieur."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1944-06-15
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 8000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600962/
+        note: "Footnote: Wie oben Fussnote 9; AStEGB, Protokoll über einen Besuch von Dr. Fritz Nathan, begleitet von Mme Bondanini [Athénée, Genf], bei der Werkzeugmaschinenfabrik Oerlikon Bührle & Co., 15.06.1944, mit handschriftlichem Vermerk von Bührle, der sich auf den Kauf von zwei Gemälden von Bonnard bezieht, das andere ist La Fruitière [Dauberville 1965, No. 164]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600962/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 5
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600962/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "5"
+    institution: foundation-e-g-buhrle-collection
+  - number: "344"
+    label: Dauberville (catalogue raisonné)
+  - number: "115"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -22,6 +22,13 @@ death: 1464
 wikidata_id: Q484901
 metadata:
   sources: [Wikidata Q484901 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/joseon
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q484901
 identifiers:
   gnd: "1089621159"
   idref: "177242205"

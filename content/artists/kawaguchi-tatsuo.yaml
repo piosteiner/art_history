@@ -12,6 +12,19 @@ birth: 1940
 wikidata_id: Q3516100
 metadata:
   sources: [Wikidata Q3516100 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3516100
+  - type: born_in
+    to: place/kobe
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q3516100
 identifiers:
   bnf: 16228543b
   gnd: "139040064"

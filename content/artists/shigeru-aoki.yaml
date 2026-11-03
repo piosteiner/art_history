@@ -7,6 +7,55 @@ death: 1911-03-25
 wikidata_id: Q347298
 metadata:
   sources: [Wikidata Q347298 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q347298
+  - type: born_in
+    to: place/kurume
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q347298
+  - type: died_in
+    to: place/fukuoka
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q347298
+  - type: student_of
+    to: artist/kuroda-seiki
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q347298
+  - type: studied_at
+    to: institution/tokyo-academy-of-fine-arts
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q347298
+  - type: associated_with
+    to: movement/youga
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q347298
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/99/Aoki_Shigeru.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Aoki_Shigeru.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 15933423h
+  gnd: "133261735"
+  idref: 14297062X
+  lc: n83072567
+  ulan: "500124809"
+  viaf: "72576868"
 sources:
   birth:
     - accessed: 2026-11-01

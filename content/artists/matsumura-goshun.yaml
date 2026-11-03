@@ -26,6 +26,19 @@ death: 1811-09-04
 wikidata_id: Q960116
 metadata:
   sources: [Wikidata Q960116 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q960116
+  - type: student_of
+    to: artist/yosa-buson
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q960116
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/4/4a/%E5%91%89%E6%98%A5_%E8%BF%91%E4%B8%96%E5%90%8D%E5%AE%B6%E8%82%96%E5%83%8F.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%E5%91%89%E6%98%A5_%E8%BF%91%E4%B8%96%E5%90%8D%E5%AE%B6%E8%82%96%E5%83%8F.jpg

@@ -1,0 +1,277 @@
+public_id: 112202
+title_lang: en
+title: Moine assis, lisant
+names:
+  - lang: de
+    role: translation
+    text: Lesender Mönch
+  - lang: en
+    role: translation
+    text: Sitting Monk, Reading
+creator: jean-baptiste-camille-corot
+created: c. 1865
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [73, 50]
+institution: kunsthaus-zurich
+inventory_number: BU 0021
+web_url: https://collection.kunsthaus.ch/de/collection/item/699967/
+on_loan: true
+on_loan_since: 2021
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q56669964
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5a/Jean-Baptiste-Camille_Corot_-_Moine_assis%2C_lisant_-_21_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Baptiste-Camille_Corot_-_Moine_assis,_lisant_-_21_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Jean-Baptiste Camille Corot
+provenance:
+  - owner: person/monsieur-martinet
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 1000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: "Footnote: Vom Künstler für den Verkauf zu FRF 1.000 signiert, Robaut 1905, No. 1332."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jean-baptiste-faure
+    acquired: 1875 or earlier
+    ended: 1878-04-29
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: "Footnote: Kat. Ecole nationale des Beaux-Arts Paris 1875, No. 33; Auktion Durand-Ruel (29.04.1878), No. 19."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: agent
+    acquired: 1878-04-29
+    ended: 1878-04-29
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 19
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: "Footnote: Auktion Durand-Ruel, wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alfred-ernest-robaut
+    acquired: 1891
+    ended: 1907-12-18
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: "Footnote: Robaut 1905, wie oben Fussnote 2; Auktion Hôtel Drouot (18.12.1907), No. 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1907-12-18
+    ended: 1907-12-18
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 3
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: "Footnote: Auktion Hôtel Drouot 1907, wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1907-12-18
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: "Footnote: Erworben bei der oben genannten Auktion, handschriftliche Etikette auf der Rückseite des Bilderrahmens."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: "Footnote: Handschriftliche Etikette auf der Rückseite des Bilderrahmens; Meier-Graefe 1930, Abb. 99."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/moise-levi-de-benzion
+    acquired: 1920
+    ended: 1941-07-12
+    method: purchase
+    direct: true
+    place: cairo
+    label: Cairo, Draveil, Seine-et-Oise
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: "Footnote: Wahrscheinlich 1920 von den oben Genannten erworben, handschriftliche Etikette auf der Rückseite des Bilderrahmens."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    acquired: 1941-07-12
+    ended: 1941-10-22
+    method: confiscation
+    direct: true
+    label: No. LB 58
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: "Footnote: Beschlagnahmt durch den «Einsatzstab Reichsleiter Rosenberg» (ERR No. LB 58), und von Walter Andreas Hofer im Auftrag von Hermann Göring übernommen; Yeide 2009, No. D13; Francini/Heuss/Kreis 2001, S. 286."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-andreas-hofer
+    role: agent
+    direct: true
+    label: on behalf of Hermann Göring
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: "Footnote: Wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hermann-goring
+    direct: true
+    label: Carinhall
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: "Footnote: Wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hans-wendland
+    role: dealer
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: "Footnote: Wie oben Fussnote 13; Hans Wendland hatte 1/3 an den Bildern Fischers."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: dealer
+    acquired: 1941-10-22
+    ended: 1942-02-03
+    method: exchange
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: "Footnote: Verkauft an die Galerie Fischer im Tausch gegen Kunstwerke. Wie oben Fussnote 11; Francini/Heuss/Kreis wie oben Fussnote 13, S. 106 (No. 267), S. 286 (No. *1)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1942-02-03
+    ended: 1948-12-15
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 65000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: "Footnote: AStEGB, Brief von Emil Bührle an seinen Anwalt Dr. Walther Huber, Zürich, 14.05.1947, in dem er Huber zu seinem Bevollmächtigten für den Prozess Lévi de Benzion (Erben) gegen Bührle ernennt. Die Summe entspricht dem Betrag, den Bührle später in seinem Prozess gegen Fischer geltend machte, und obwohl Fischer eine Rückerstattungspflicht grundsätzlich ablehnte, wurden die Summen als solche nie in Fra…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/moise-levi-de-benzion
+    role: estate
+    acquired: 1948-12-15
+    ended: 1950
+    method: restitution
+    direct: true
+    place: cairo
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: "Footnote: AStEGB, Schweizerisches Bundesgericht, Kammer zur Beurteilung von Raubgutklagen / Chambre des actions en revendication de biens spoliés, Lausanne, Antrag auf Rückgabe von Kunstwerken durch die Erben von Moïse Lévi de Benzion, vertreten durch Frau Paule-Dinah Lévi de Benzion, gegen verschiedene Beklagte (u.a. Bührle), Urteil vom 15.12.1948 (Typoskript), das die Rückgabe der beanstandeten Gemälde an…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/sarah-streitz
+    ended: 1950-07-03
+    direct: true
+    place: valbonne
+    label: Valbonne, Alpes Maritimes
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: "Footnote: Wie oben Fussnote 16: Tochter von Moïse Levi de Benzion."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1950-07-03
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 60000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: "Footnote: Wie oben Fussnote 16; der bezahlte Preis betrug CHF 60.000, basierend auf einem Gutachten von Max Huggler [Direktor des Kunstmuseum Bern], der mit Bührles Einverständnis von den Erben Lévi de Benzion als Experte eingesetzt worden war, AStEGB, Brief des Sekretärs von Emil Bührle an Dr. Walther Huber, Zürich, 27.11.1948."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 21
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "21"
+    institution: foundation-e-g-buhrle-collection
+  - number: "1332"
+    label: Robaut (catalogue raisonné)
+  - number: "180"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

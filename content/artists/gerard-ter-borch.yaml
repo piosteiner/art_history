@@ -1,0 +1,45 @@
+public_id: 112352
+name: Gerard ter Borch
+given_name: Gerard
+family_name: ter Borch
+birth: 1617
+death: 1681-12-08
+wikidata_id: Q346808
+metadata:
+  sources: [Wikidata Q346808 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q346808
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q346808
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Zelfportret_by_Gerard_ter_Borch.jpg/1280px-Zelfportret_by_Gerard_ter_Borch.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Zelfportret_by_Gerard_ter_Borch.jpg
+    license: Public domain
+    credit: Gerard ter Borch
+identifiers:
+  bnf: "150463499"
+  gnd: "118661728"
+  idref: "091555566"
+  kulturnav: 8fc997a6-d4f8-482d-ba35-8ce755acdbde
+  lc: n94021151
+  rkd: "10682"
+  ulan: "500017511"
+  viaf: "54432423"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q346808
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q346808

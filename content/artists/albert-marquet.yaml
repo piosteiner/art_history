@@ -1,0 +1,85 @@
+public_id: 112255
+name: Albert Marquet
+given_name: Albert
+family_name: Marquet
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Pierre Léopold Albert Marquet
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q267858
+birth: 1875-03-27
+death: 1947-06-14
+wikidata_id: Q267858
+metadata:
+  sources: [Wikidata Q267858 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q267858
+  - type: born_in
+    to: place/bordeaux
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q267858
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q267858
+  - type: influenced_by
+    to: artist/henri-matisse
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q267858
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q267858
+  - type: studied_at
+    to: institution/ecole-nationale-superieure-des-arts-decoratifs
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q267858
+  - type: associated_with
+    to: movement/fauvism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q267858
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/40/Self-Portrait_Albert_Marquet_%281904%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Self-Portrait_Albert_Marquet_(1904).jpg
+    license: Public domain
+    credit: Albert Marquet
+identifiers:
+  bnf: "123289343"
+  dome: "245"
+  gnd: "118731157"
+  idref: "032215452"
+  kulturnav: c1a5f6e1-3b79-4a83-aba5-8bfc63bc8072
+  lc: n50046354
+  rkd: "52779"
+  ulan: "500022386"
+  viaf: "66537002"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q267858
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q267858

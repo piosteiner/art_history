@@ -1,0 +1,136 @@
+public_id: 112004
+title_lang: en
+title: Ambroise Vollard
+creator: pierre-bonnard
+created: c. 1904
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [73, 60]
+institution: kunsthaus-zurich
+inventory_number: BU 0002
+web_url: https://collection.kunsthaus.ch/de/collection/item/600959/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q2842415
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/39/Pierre_Bonnard_-_Ambroise_Vollard_-_2_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre_Bonnard_-_Ambroise_Vollard_-_2_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Pierre Bonnard
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600959/
+        note: "Footnote: Dauberville/Dauberville 1965, Bd. I, No. 304."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/mme-hein
+    ended: 1953
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600959/
+        note: "Footnote: Getty Research Institute, Santa Monica (California), Knoedler Gallery Archives, Stock Book 10, S. 109, No. A5399."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1953
+    ended: 1956
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600959/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    acquired: 1956-07-05
+    ended: 1956-07-05
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 12000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600959/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1956-07-05
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600959/
+        note: "Footnote: AStEGB, Eingangsbuch II, 08.05.1956; zum Datum des Erwerbs siehe Stock Book, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 2
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "2"
+    institution: foundation-e-g-buhrle-collection
+  - number: "304"
+    label: Dauberville (catalogue raisonné)
+  - number: "515"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

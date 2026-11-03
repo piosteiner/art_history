@@ -21,6 +21,33 @@ death: 1972-05-08
 wikidata_id: Q2060569
 metadata:
   sources: [Wikidata Q2060569 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2060569
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2060569
+  - type: student_of
+    to: artist/kaburaki-kiyokata
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q2060569
+  - type: associated_with
+    to: movement/nihonga
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q2060569
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/9f/Ito_Shinsui.JPG
     source_url: https://commons.wikimedia.org/wiki/File:Ito_Shinsui.JPG

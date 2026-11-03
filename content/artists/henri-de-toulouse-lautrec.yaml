@@ -47,6 +47,31 @@ death: 1901-09-09
 wikidata_id: Q82445
 metadata:
   sources: [Wikidata Q82445 (retrieved 2026-10-31)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q82445
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q82445
+  - type: influenced_by
+    to: artist/edgar-degas
+    sources:
+      - accessed: 2026-11-02
+        property: P737
+        wikidata: Q82445
+  - type: associated_with
+    to: movement/post-impressionism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q82445
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/a/aa/Photolautrec.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Photolautrec.jpg

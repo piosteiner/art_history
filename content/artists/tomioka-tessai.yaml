@@ -26,6 +26,25 @@ death: 1924-12-31
 wikidata_id: Q1377454
 metadata:
   sources: [Wikidata Q1377454 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q1377454
+  - type: worked_in
+    to: place/kansai-region
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q1377454
+  - type: associated_with
+    to: movement/nanga
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q1377454
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/3/3f/Tomioka_Tessai.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Tomioka_Tessai.jpg

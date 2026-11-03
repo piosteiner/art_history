@@ -1,0 +1,22 @@
+public_id: 111879
+name: Village of Hastings-on-Hudson
+kind: settlement
+parent: new-york
+country_code: US
+location: [-73.87417, 40.99111]
+wikidata_id: Q3248527
+metadata:
+  sources: [Wikidata Q3248527 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q3248527
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q3248527
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q3248527

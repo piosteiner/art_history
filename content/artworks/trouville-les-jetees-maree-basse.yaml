@@ -1,0 +1,118 @@
+public_id: 112193
+title_lang: en
+title: Trouville, les jetées, marée basse
+names:
+  - lang: en
+    role: translation
+    text: Trouville, bei Ebbe
+  - lang: en
+    role: translation
+    text: Low Tide near Trouville
+creator: eugene-boudin
+created: 1883/1887
+kind: oil painting
+medium: Oil on panel
+dimensions: [23.5, 32.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0007
+web_url: https://collection.kunsthaus.ch/de/collection/item/699964/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64410172
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5b/Eug%C3%A8ne_Boudin_-_Trouville%2C_les_jet%C3%A9es%2C_mar%C3%A9e_basse_-_7_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Boudin_-_Trouville,_les_jet%C3%A9es,_mar%C3%A9e_basse_-_7_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Eugène Louis Boudin
+provenance:
+  - owner: person/stumpf
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699964/
+        note: "Footnote: Schmit 1973 No. 1761."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/max-kaganovitch
+    role: dealer
+    ended: 1956-03-05
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699964/
+        note: "Footnote: AStEGB, Rechnung von Max Kaganovitch, Paris, ausgestellt auf das Kunsthaus Zürich, 27.02.1956."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1956-03-05
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 1100000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699964/
+        note: "Footnote: Wie oben Fussnote 2; AStEGB, Eingangsbuch II, 13.03.1956, mit Hinweis auf das Kaufdatum."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699964/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 7
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699964/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "7"
+    institution: foundation-e-g-buhrle-collection
+  - number: "1761"
+    label: Schmitt (catalogue raisonné)
+  - number: "501"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

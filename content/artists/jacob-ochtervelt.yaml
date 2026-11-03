@@ -1,0 +1,70 @@
+public_id: 112275
+name: Jacob Ochtervelt
+given_name: Jacob
+family_name: Ochtervelt
+birth: 1634-02
+death: 1682
+wikidata_id: Q724646
+metadata:
+  sources: [Wikidata Q724646 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q724646
+  - type: born_in
+    to: place/rotterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q724646
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q724646
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q724646
+  - type: worked_in
+    to: place/rotterdam
+    period: 1655/1672
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q724646
+  - type: worked_in
+    to: place/amsterdam
+    period: 1674/1682
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q724646
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Jacob_Ochtervelt_-_A_singing_violinist%2C_probably_a_self-portrait.jpg/1280px-Jacob_Ochtervelt_-_A_singing_violinist%2C_probably_a_self-portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacob_Ochtervelt_-_A_singing_violinist,_probably_a_self-portrait.jpg
+    license: Public domain
+    credit: Jacob Ochtervelt
+identifiers:
+  gnd: "118786687"
+  idref: "241932033"
+  kulturnav: 9ddd0fa5-6dc3-4011-83e9-738a7b6c60e2
+  lc: n79023408
+  rkd: "60219"
+  ulan: "500017045"
+  viaf: "57410801"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q724646
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q724646

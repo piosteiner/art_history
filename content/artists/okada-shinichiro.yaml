@@ -24,6 +24,13 @@ death: 1932-04-04
 wikidata_id: Q11261704
 metadata:
   sources: [Wikidata Q11261704 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q11261704
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/0/04/Okada_Shin%27ichiro_1913.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Okada_Shin%27ichiro_1913.jpg

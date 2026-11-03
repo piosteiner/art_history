@@ -26,6 +26,31 @@ death: 1957-05-09
 wikidata_id: Q213685
 metadata:
   sources: [Wikidata Q213685 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q213685
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q213685
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q213685
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q213685
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/8/8c/Heinrich_Campendonk_-_Sturm-K%C3%BCnstler%2C_1916.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Heinrich_Campendonk_-_Sturm-K%C3%BCnstler,_1916.jpg

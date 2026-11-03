@@ -29,6 +29,7 @@ names:
     role: translation
     text: Сёгунат Токугава
 period: 1603-03-24/1867-11-09
+country_codes: [JP]
 wikidata_id: Q205662
 metadata:
   sources: [Wikidata Q205662 (retrieved 2026-10-29)]

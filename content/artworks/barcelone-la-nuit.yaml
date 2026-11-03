@@ -1,0 +1,138 @@
+public_id: 112080
+title_lang: en
+title: Barcelone la nuit
+names:
+  - lang: en
+    role: translation
+    text: Barcelona in der Nacht
+  - lang: en
+    role: translation
+    text: Barcelona by Night
+creator: pablo-picasso
+created: 1903
+kind: oil painting
+medium: Oil on canvas
+dimensions: [67, 50]
+institution: kunsthaus-zurich
+inventory_number: BU 0181
+web_url: https://collection.kunsthaus.ch/de/collection/item/604977/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131585468
+provenance:
+  - owner: person/maria-picasso-y-lopez
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604977/
+        note: "Footnote: AStEGB, Inventarkarte Picasso, Barcelone la nuit. Es handelt sich bei ihr um die Mutter des Künstlers."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/georges-wildenstein
+    role: dealer
+    place: paris
+    label: Paris and New York, NY
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604977/
+        note: "Footnote: Daix/Boudailles 1966, Nr. IX.3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/laura-abbie-shedd-schweppe
+    ended: 1937-04-20
+    place: chicago
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604977/
+        note: "Footnote: Wie oben Fussnote 5. Diese Eintragung wird durch eine Etikette der Chester H. Johnson Galleries, Chicago, auf dem Keilrahmen des Gemäldes mit dem Namen von Mrs. C. Schweppe bekräftigt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/e-a-silberman-galleries
+    role: dealer
+    ended: 1955-07-10
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604977/
+        note: "Footnote: AStEGB, Eingangsbuch II, 10.07.1955. Drei Stempel und Etiketten auf dem Keilrahmen des Gemäldes deuten darauf hin, dass das Gemälde möglicherweise in den Chester H. Johnson Galleries, Chicago, und den Dalzell Hattfield Galleries, Los Angeles, ausgestellt wurde, bevor es an die Silberman Galleries verkauft wurde."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-07-10
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604977/
+        note: "Footnote: Eingangsbuch, wie oben Fussnote 9, mit Hinweis auf Kaufdatum."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1967
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604977/
+        note: "Footnote: Die Kunstwerke, die 1960 nicht in die Stiftung Sammlung E.G. Bührle gelangten, wurden 1967 unter Emil Bührles Sohn Dr. Dieter Bührle und seiner Tochter Hortense Anda-Bührle aufgeteilt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/dieter-buhrle
+    acquired: 1967
+    ended: 2012-11-09
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604977/
+        note: "Footnote: Sohn von Emil Bührle und 1960, zusammen mit seiner Mutter Charlotte Bührle-Schalk und seiner Schwester Hortense (Anda-)Bührle, einer der drei Gründer der Stiftung Sammlung E.G. Bührle, deren Stiftungsrat er von 1960 bis 2012 angehörte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 2012-11-09
+    method: inheritance
+    direct: true
+    place: zurich
+    label: inv. no. 181
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604977/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "181"
+    institution: foundation-e-g-buhrle-collection
+  - number: IX.3
+    label: Daix (catalogue raisonné)
+  - number: "464"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604977/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604977/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604977/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604977/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604977/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604977/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604977/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604977/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

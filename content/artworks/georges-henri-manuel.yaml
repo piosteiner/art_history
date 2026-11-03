@@ -1,0 +1,172 @@
+public_id: 112359
+title_lang: en
+title: Georges-Henri Manuel
+creator: henri-de-toulouse-lautrec
+created: 1891
+kind: oil painting
+medium: Gouache on cardboard
+dimensions: [88, 51]
+institution: kunsthaus-zurich
+inventory_number: BU 0105
+web_url: https://collection.kunsthaus.ch/de/collection/item/752023/
+on_loan: true
+on_loan_since: 2021
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585825
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/79/Henri_de_Toulouse-Lautrec_-_Georges-Henri_Manuel_-_105_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_de_Toulouse-Lautrec_-_Georges-Henri_Manuel_-_105_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Henri de Toulouse-Lautrec
+provenance:
+  - owner: person/georges-henri-manuel
+    acquired: 1891
+    ended: 1914 or later
+    method: gift
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+        note: "Footnote: Als Geschenk des Künstlers erhalten; Kat. Manzi-Joyant 1914, No. 57."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/mme-g-h-manuel
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+        note: "Footnote: Paul Cassirer & Walter Feilchenfeldt Archiv, Zürich, Akte betreffend Toulouse-Lautrec, Georges-Henri Manuel."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-weinberger
+    role: dealer
+    ended: 1930-12
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/paul-cassirer-co-amsterdam
+    role: dealer
+    acquired: 1930-12
+    ended: 1942-05
+    method: purchase
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+        note: "Footnote: Wie oben Fussnote 3. Walter Feilchenfeldt (sen.) führte die Galerie Paul Cassirer, Berlin, über deren Amsterdamer Filiale (N. V. Amsterdamsche Kunsthandel Paul Cassirer & Co.) ab November 1933 weiter, als er aus Deutschland emigrierte. Bei Ausbruch des Zweiten Weltkriegs im September 1939 hielt sich Feilchenfeldt in der Schweiz auf, wo er sich mit seiner Familie niederliess; Auskunft Walter Feilch…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-aktuaryus
+    role: agent
+    acquired: 14 June 1939 or later
+    direct: true
+    place: zurich
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+        note: "Footnote: Auskunft Walter Feilchenfeldt, wie oben Fussnote 6: «Sendung nach Zürich an Aktuaryus (Ausgangsdatum 14.6.1939)»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    role: agent
+    acquired: 14 June 1939 or later
+    ended: 1942-05
+    direct: true
+    place: zurich
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    acquired: 1942-05
+    ended: 1942-05-19
+    method: purchase
+    direct: true
+    place: st-gallen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+        note: "Footnote: Wie oben Fussnote 7: «Fritz Nathan, St. Gallen (erworben Mai 1942 von Walter Feilchenfeldt)»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1942-05-19
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 45000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+        note: "Footnote: Erworben von den oben Genannten durch Vermittlung von Dr. Fritz Nathan, St. Gallen, AStEGB, Inventarkarte Toulouse-Lautrec, Georges-Henri Manuel, mit Angabe von Walter Feilchenfeldt als Verkäufer und einem von Bührle bezahlten Kaufpreis von CHF 45.000; Protokoll über einen Besuch von Fritz Nathan bei der Werkzeugmaschinenfabrik Oerlikon Bührle & Co. vom 19.05.1942, mit handschriftlichem Vermerk vo…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 105
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "105"
+    institution: foundation-e-g-buhrle-collection
+  - number: "377"
+    label: Dortu P. (catalogue raisonné)
+  - number: "92"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

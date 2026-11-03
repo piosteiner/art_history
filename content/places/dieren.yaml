@@ -1,0 +1,26 @@
+public_id: 112157
+name: Dieren
+names:
+  - lang: ru
+    role: translation
+    text: Дирен
+kind: settlement
+parent: gelderland
+country_code: NL
+location: [6.0974, 52.0521]
+wikidata_id: Q73101
+metadata:
+  sources: [Wikidata Q73101 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q73101
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q73101
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q73101

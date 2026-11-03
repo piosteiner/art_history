@@ -1,0 +1,157 @@
+public_id: 112130
+title_lang: en
+title: François Gauzi
+creator: henri-de-toulouse-lautrec
+created: 1886
+kind: oil painting
+medium: Oil on canvas
+dimensions: [46, 38]
+institution: kunsthaus-zurich
+inventory_number: BU 0104
+web_url: https://collection.kunsthaus.ch/de/collection/item/604993/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223641
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/33/Henri_de_Toulouse-Lautrec_-_Fran%C3%A7ois_Gauzi_-_104_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_de_Toulouse-Lautrec_-_Fran%C3%A7ois_Gauzi_-_104_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Henri de Toulouse-Lautrec
+provenance:
+  - owner: person/francois-gauzi
+    acquired: 1886
+    ended: 1931 or later
+    method: gift
+    direct: true
+    place: paris
+    label: Paris and Toulouse
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604993/
+        note: "Footnote: Kat. Musée des Arts décoratifs (Louvre, Pavillon de Marsan), Paris 1931, Nr. 46."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/francois-gauzi
+    ended: 11 December 1937 or later
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604993/
+        note: "Footnote: Kat. M. Knoedler & Company Inc. New York City 1937, No. 4, S. 21."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/georges-wildenstein
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604993/
+        note: "Footnote: AStEGB, Dossier Toulouse-Lautrec, François Gauzi, auf Briefpapier von Dr. Fritz Nathan, St. Gallen, 20. Januar 1948, mit detaillierten Angaben zu Provenienz und Publikationen des Gemäldes."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/jacques-seligmann-co-inc
+    role: dealer
+    ended: 1947-12-04 or earlier
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604993/
+        note: "Footnote: UB Basel, Archiv Dr. Christoph Bernoulli, Korrespondenz zwischen Jacques Seligmann & Co, Inc., New York, und Dr. Christoph Bernoulli, Basel, 5. November 1947-4. Dezember 1947, betreffend den Kauf und den Versand des Gemäldes."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/christoph-bernoulli
+    role: dealer
+    acquired: 1947-12-04
+    ended: 1948-01
+    method: purchase
+    direct: true
+    place: basel
+    price:
+      amount: 2500
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604993/
+        note: "Footnote: UB Basel, Archiv Dr. Christoph Bernoulli, Brief von Jacques Seligmann & Co, Inc., New York, an Dr. Christoph Bernoulli, Basel, 4. Dezember 1947, Bestätigung des Empfangs von $ 2.500 als Teilzahlung für Toulouse Lautrec, François Gauzi, für die Bernoulli zusätzlich ein Gemälde von Vuillard eintauschte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    acquired: 1948-01
+    ended: 1948-01-21
+    place: st-gallen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604993/
+        note: "Footnote: AStEGB, Eingangsbuch I, Januar 1948; wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1948-01-21
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 38000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604993/
+        note: "Footnote: Staatsarchiv Zürich, Z 418.789, Besteuerung 1947 Emil Bührle-Schalk, (\"Steuerpflichtige Fahrhabe\") Liste der zwischen November 1945 und Januar 1948 erworbenen Bilder: Zahlung von CHF 38'000 in bar am 21. Januar 1948."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604993/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 104
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604993/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "104"
+    institution: foundation-e-g-buhrle-collection
+  - number: "276"
+    label: Dortu P. (catalogue raisonné)
+  - number: "155"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604993/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604993/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604993/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604993/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604993/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604993/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604993/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604993/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,121 @@
+public_id: 112425
+title_lang: en
+title: Bataille de chevaux dans un enclos
+names:
+  - lang: en
+    role: translation
+    text: Pferde in der Koppel
+  - lang: en
+    role: translation
+    text: Horses in the Paddock
+attribution_label: Anonymous (formerly attributed to Théodore Géricault)
+kind: oil painting
+medium: Oil on paper on canvas
+dimensions: [24.5, 33]
+institution: kunsthaus-zurich
+inventory_number: BU 0134
+web_url: https://collection.kunsthaus.ch/de/collection/item/804963/
+on_loan: true
+on_loan_since: 2021
+region: europe
+wikidata_id: Q131585238
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Style_of_Th%C3%A9odore_G%C3%A9ricault_-_Bataille_de_chevaux_dans_un_enclos_%28Stiftung_B%C3%BChrle%29.jpg/1280px-Style_of_Th%C3%A9odore_G%C3%A9ricault_-_Bataille_de_chevaux_dans_un_enclos_%28Stiftung_B%C3%BChrle%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Style_of_Th%C3%A9odore_G%C3%A9ricault_-_Bataille_de_chevaux_dans_un_enclos_(Stiftung_B%C3%BChrle).jpg
+    license: Public domain
+    credit: Manner of Théodore Géricault
+provenance:
+  - owner: person/frantz-funck-brentano
+    ended: 29 April 1921 or later
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/804963/
+        note: "Footnote: Auktion Hôtel Drouot, Paris (29. April 1921), Nr. 177; Bazin 1992, Nr. 1658."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leon-voillemont
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/804963/
+        note: "Footnote: AStEGB, Rechnung von Dr. Fritz Nathan, Zürich, ausgestellt auf Emil Bührle, 02.07.1953."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    ended: 1953-07-02
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/804963/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-07-02
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 21500
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/804963/
+        note: "Footnote: Rechnung wie oben Fussnote 5, mit Stempel «Gut zur Zahlung», paraphiert von Bührle."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/804963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 134
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/804963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "134"
+    institution: foundation-e-g-buhrle-collection
+  - number: "1658"
+    label: Bazin (catalogue raisonné)
+  - number: "290"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/804963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/804963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/804963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/804963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/804963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/804963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/804963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

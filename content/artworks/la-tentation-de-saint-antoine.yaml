@@ -1,0 +1,158 @@
+public_id: 112032
+title_lang: fr
+title: La Tentation de Saint-Antoine
+names:
+  - lang: de
+    role: translation
+    text: Die Versuchung des Heiligen Antonius
+  - lang: en
+    role: translation
+    text: The Temptation of Saint Anthony
+creator: paul-cezanne
+created: c. 1870
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [57, 76]
+institution: kunsthaus-zurich
+inventory_number: BU 0015
+web_url: https://collection.kunsthaus.ch/de/collection/item/600969/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q5968219
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e3/Paul_C%C3%A9zanne_-_La_Tentation_de_Saint-Antoine_-_15_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_La_Tentation_de_Saint-Antoine_-_15_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Paul Cézanne
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600969/
+        note: "Footnote: Rewald 1996, No. 167."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/auguste-pellerin
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600969/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alphonse-kann
+    acquired: 1917 or earlier
+    ended: 1938 or later
+    place: saint-germain-en-laye
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600969/
+        note: "Footnote: Kat. Kunsthaus Zürich 1917, No. 18; Kat. Stedelijk Museum, Amsterdam 1938, No. 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/michael-stewart
+    ended: 1952
+    method: inheritance
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600969/
+        note: "Footnote: AStEGB, Brief von Arthur Tooth & Sons, London, an Emil Bührle, 17.04.1952; Brief von Dr. Arthur Kauffmann, London, an Emil Bührle, 08.06.1952."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/arthur-tooth-sons
+    role: dealer
+    acquired: 1952
+    ended: 1956-03-27
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600969/
+        note: "Footnote: Kat. Arthur Tooth & Sons Ltd., London 1952, No. 11; AStEGB, Brief von Arthur Tooth & Sons, London, an Emil Bührle, 17.04.1952. Nach Kat. Royal Academy of Arts, London/Musée d'Orsay, Paris/National Gallery of Art, Washington 1988, No. 50, könnte sich das Gemälde zwischen Stewart und Tooth in einer Privatsammlung in den USA befunden haben; der oben erwähnte Brief beweist jedoch, dass Tooth das Werk …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1955-06-13
+    ended: 1956-03-27
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600969/
+        note: "Footnote: Seit dem 13.06.1955 im Miteigentum, wobei der Anteil der Knoedler Galleries zur Hälfte $ 13.500 beträgt, Getty Research Center, Santa Monica (Kalifornien), Knoedler Gallery Archive, Stock Book 10, S. 152, No. A6032."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1956-03-27
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 75000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600969/
+        note: "Footnote: Wie oben Fussnote 11; AStEGB, Eingangsbuch II, 12.03.1956; das Gemälde wurde zusammen mit Braque, Port de l'Estaque (Sammlung Emil Bührle, Inv. 10), zum Preis von $ 13.000 erworben, AStEGB, Bestätigung der Zahlung von $ 88.000 an M. Knoedler & Co, Inc., New York, von der Industrie- und Handelsbank, Zürich, an Emil Bührle, 27.03.1956."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28 or earlier
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600969/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 15
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600969/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "15"
+    institution: foundation-e-g-buhrle-collection
+  - number: "167"
+    label: Rewald (catalogue raisonné)
+  - number: "506"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

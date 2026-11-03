@@ -121,6 +121,25 @@ death: 1699-01-03
 wikidata_id: Q468632
 metadata:
   sources: [Wikidata Q468632 (retrieved 2026-10-20)]
+relationships:
+  - type: died_in
+    to: place/valletta
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q468632
+  - type: influenced_by
+    to: artist/caravaggio
+    sources:
+      - accessed: 2026-11-02
+        property: P737
+        wikidata: Q468632
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q468632
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/b/b6/Mattia_Preti_-_Self-portrait.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Mattia_Preti_-_Self-portrait.jpg

@@ -18,6 +18,13 @@ death: 1934-10-10
 wikidata_id: Q2080344
 metadata:
   sources: [Wikidata Q2080344 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/empire-of-japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2080344
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/5/56/Koun_Takamura_cropped.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Koun_Takamura_cropped.jpg

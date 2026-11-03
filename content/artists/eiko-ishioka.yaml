@@ -15,6 +15,27 @@ death: 2012-01-21
 wikidata_id: Q297935
 metadata:
   sources: [Wikidata Q297935 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q297935
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q297935
+  - type: studied_at
+    to: institution/tokyo-university-of-the-arts
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q297935
 identifiers:
   bnf: 12215537x
   gnd: 11894505X

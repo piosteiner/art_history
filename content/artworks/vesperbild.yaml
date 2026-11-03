@@ -1,0 +1,157 @@
+public_id: 111836
+title_lang: en
+title: Vesperbild
+names:
+  - lang: en
+    role: translation
+    text: Pietà
+attribution_label: Anonymous, Bern or Fribourg
+created: c. 1340
+created_span: uncertain
+kind: sculpture
+medium: Poplar wood
+dimensions: [164, 84, 41]
+institution: kunsthaus-zurich
+inventory_number: BU P.15
+web_url: https://collection.kunsthaus.ch/de/collection/item/3247/
+on_loan: true
+on_loan_since: 2021
+region: europe
+provenance:
+  - owner_label: private collection
+    acquired: 1862
+    ended: 1862
+    label: Rechthalten/Dirlaret (Kanton Fribourg)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3247/
+        note: "Footnote: Jacquaz Familie?; Stephan Gasser, Alain Fretz, «Das spätmittelalterliche Vesperbild der Sammlung Emil Bührle in Zürich», in: Zeitschrift für Schweizerische Archäologie und Kunstgeschichte (76) 2019, Heft 4, S. 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/tinguely-familie
+    ended: 1930
+    label: Rechthalten/Dirlaret (Kanton Fribourg)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3247/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/heribert-reiners
+    acquired: 1930
+    ended: 1950
+    method: purchase
+    direct: true
+    place: fribourg
+    label: Fribourg and Konstanz
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3247/
+        note: "Footnote: Wie oben Fussnote 3: erworben über Reiners' Schüler Joseph Martin Lusser und Joseph Tinguely."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/heinz-kisters
+    acquired: 1950
+    ended: 1955
+    method: purchase
+    direct: true
+    place: meersburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3247/
+        note: "Footnote: AStEGB, Brief von Dr. Hans Wendland, Paris, an Emil Bührle, 10.06.1956."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hans-wendland
+    role: dealer
+    acquired: 1955-04-13 or earlier
+    ended: 1955-04-13 or earlier
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3247/
+        note: "Footnote: AStEGB, Korrespondenz zwischen Dr. Hans Wendland, Paris, H. F. Fankhauser, Basel, und Emil Bührle, 13.04.1955 - 14.07.1956; Brief von Georg Schmidt, Kunstmuseum Basel, an H. F. Fankhauser, Basel, 22.06.1956."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/benno-griebert
+    role: dealer
+    acquired: 1955
+    ended: 1955-09-10
+    method: purchase
+    direct: true
+    place: meersburg
+    label: Meersburg and Konstanz
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3247/
+        note: "Footnote: AStEGB, Quittung, unterzeichnet von Dr. Benno Griebert, 10.09.1955."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-09-10
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 150000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3247/
+        note: "Footnote: Wie oben Fussnote 8. Dem Erwerb folgte ein Streit zwischen Dr. Hans Wendland, Paris, der Emil Bührle die Skulptur im April 1955 erstmals angeboten hatte, und dem Kunstmuseum Basel und dessen Direktor Dr. Georg Schmidt, dem die Skulptur (über Dr. Wendlands Schwager H. F. Fankhauser, Basel) ebenfalls angeboten worden war. Schmidt betrachtete den geplanten Ankauf als den entscheidenden Ankauf des Jah…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3247/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. P15
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3247/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: P15
+    institution: foundation-e-g-buhrle-collection
+  - number: "625"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3247/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3247/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3247/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3247/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3247/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3247/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3247/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3247/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

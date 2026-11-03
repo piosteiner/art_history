@@ -1,0 +1,142 @@
+public_id: 112199
+title_lang: en
+title: Sleepy Thomas Sucking His Thumb
+names:
+  - lang: en
+    role: translation
+    text: Mutter und Kind
+creator: mary-cassatt
+created: 1893
+kind: pastel
+medium: Pastel on paper
+dimensions: [55, 46]
+institution: kunsthaus-zurich
+inventory_number: BU 0011
+web_url: https://collection.kunsthaus.ch/de/collection/item/699966/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131585919
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c6/Mary_Cassatt_-_Sleepy_Thomas_Sucking_His_Thumb_-_11_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Mary_Cassatt_-_Sleepy_Thomas_Sucking_His_Thumb_-_11_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Mary Cassatt
+provenance:
+  - owner: artist/mary-cassatt
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699966/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1895-03-26
+    ended: 1908
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699966/
+        note: "Footnote: Das Pastell wurde im März 1895 zu Durand-Ruel New York gebracht und im Juli desselben Jahres nach Paris zurückgeschickt, Foto Durand-Ruel Paris 636, E-Mail-Korrespondenz Durand-Ruel & Cie., Paris, an die Stiftung Sammlung E.G. Bührle, Zürich, 18.11.2021."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/g-eckhard
+    acquired: 1908-02-06
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699966/
+        note: "Footnote: Foto Durand-Ruel 3623, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/margaret-waterlow
+    ended: 1931
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699966/
+        note: "Footnote: AStEGB, Inventarkarte Cassatt, Sleepy Thomas; Breeskin 226."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    ended: 1953-10-02
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699966/
+        note: "Footnote: AStEGB, Verkaufsbestätigung von Trafo, Anstalt für Handel und Finanz, Vaduz [Marlborough Fine Art Ltd., London], unterzeichnet von F. K. Lloyd, an Emil Bührle, 01.10.1953, betreffend eine Gruppe von 10 Kunstwerken, die an Bührle für eine Gesamtsumme von £ 40.000 (=CHF 480.000) verkauft wurden, darunter Cassatt, Sleepy Thomas. Die Zahlung dieses Betrags erfolgt in zwei Raten, 27.000 £ von einem Sch…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-10-02
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 1400
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699966/
+        note: "Footnote: Erworben von den oben Genannten für £ 1.400 (abzüglich 6% Rabatt). Verkaufsbestätigung wie oben, mit handschriftlichen Preisangaben für jedes Kunstwerk von Emil Bührle; AStEGB; Zahlungsauftrag von Emil Bührle an die Industrie- und Handelsbank, Zürich, vom 01.10.1953 über den Betrag von CHF 156.000 zur Überweisung an Trafo, Vaduz, und Ausführungsbestätigung der Zahlung von der Industrie- und Handel…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699966/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 11
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699966/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "11"
+    institution: foundation-e-g-buhrle-collection
+  - number: "226"
+    label: Breeskin (catalogue raisonné)
+  - number: "315"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

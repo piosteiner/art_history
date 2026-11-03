@@ -1,0 +1,232 @@
+public_id: 111909
+title_lang: fr
+title: Autoportrait assis, palette à la main
+names:
+  - lang: de
+    role: translation
+    text: Selbstbildnis mit Palette
+  - lang: en
+    role: translation
+    text: Self-Portrait with a Palette
+creator: henri-fantin-latour
+created: 1861
+kind: oil painting
+medium: Oil on canvas
+dimensions: [81, 65]
+institution: kunsthaus-zurich
+inventory_number: BU 0044
+web_url: https://collection.kunsthaus.ch/de/collection/item/48908/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131586194
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Henri_Fantin-Latour_-_Autoportrait_assis%2C_palette_%C3%A0_la_main_%28Stiftung_B%C3%BChrle%29.jpg/1280px-Henri_Fantin-Latour_-_Autoportrait_assis%2C_palette_%C3%A0_la_main_%28Stiftung_B%C3%BChrle%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_Fantin-Latour_-_Autoportrait_assis,_palette_%C3%A0_la_main_(Stiftung_B%C3%BChrle).jpg
+    license: Public domain
+    credit: Henri Fantin-Latour
+provenance:
+  - owner: person/gustave-tempelaere
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+        note: "Footnote: Ordrupgaardsamelig 1993 (Sammlungskatalog), No. 77"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/georges-viau
+    acquired: 1900 or earlier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+        note: "Footnote: Kat. Grand Palais 1900, No. 283."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alfred-strolin
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-f-j-tempelaere
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/duval-fleury
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/wilhelm-hansen
+    acquired: 1918
+    ended: 1923
+    label: Ordrupgaard
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-barbazanges
+    role: agent
+    acquired: 1923
+    ended: 1923
+    direct: true
+    place: paris
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+        note: "Footnote: The National Museum of Western Art 2018 (Sammlungskatalog), No. 461."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/kojiro-matsukata
+    acquired: 1923
+    ended: 1944
+    method: purchase
+    direct: true
+    place: kobe
+    price:
+      amount: 40000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+        note: "Footnote: Wie oben Fussnote 14."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/franzosischer-staat
+    acquired: 1944
+    ended: 1944
+    method: confiscation
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+        note: "Footnote: Am 16. Dezember 1944 wurde die Sammlung von Matsoukata Kojiro als «feindlicher Besitz» vom Zivilgericht Seine beschlagnahmt, wie oben Fussnote 14; Saint-Raymond/Métraux 2019, S. 21-43."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1947-11-21
+    ended: 1947-11-21
+    method: auction
+    place: paris
+    label: Lot 5
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+        note: "Footnote: Auktion Hôtel Drouot (21.11.1947), Lot 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/max-kaganovitch
+    role: dealer
+    acquired: 1947
+    ended: 1947
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+        note: "Footnote: Wie oben Fussnote 14."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/robert-lebel
+    role: agent
+    ended: 1953-03-20
+    place: paris
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+        note: "Footnote: Korrespondenz zwischen Robert Lebel, Paris und Germain Seligman, New York, 12.02.1953 - 04.05.1953, Archives of American Art, Smithsonian Institution, Washington D.C., Jacques Seligmann & Co. records, Box 56, Folder 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/germain-seligman
+    role: dealer
+    acquired: 1953-03-20
+    ended: 1955-01-31
+    method: purchase
+    direct: true
+    place: new-york-city
+    price:
+      amount: 2000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+        note: "Footnote: Archives of American Art, Smithsonian Institution, Washington D.C., Jacques Seligmann & Co. records, Box 286, Folder 1, Bound Stock Lists, 1953, S. 116–117."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-01-31
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 6000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+        note: "Footnote: Rechnung von Jacques Seligmann & Co., Inc., New York an Emil Bührle, 06.01.1955; Korrespondenz zwischen German Seligmann und Welti-Furrer Zürich über den Versand des Gemäldes in die Schweiz, 30.11.1954 - 10.12.1954; Schreiben von Germain Seligman, New York, an Emil Bührle, 31.01.1955, in dem der Eingang des oben genannten Betrags bestätigt wird, Archiv Sammlung Emil. G. Bührle (AStEGB)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    ended: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 44
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "44"
+    institution: foundation-e-g-buhrle-collection
+  - number: "167"
+    label: Fantin-Latour (catalogue raisonné)
+  - number: "425"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48908/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

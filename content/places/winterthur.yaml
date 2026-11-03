@@ -1,0 +1,32 @@
+public_id: 112008
+name: Winterthur
+names:
+  - lang: ko
+    role: translation
+    text: 빈터투어
+  - lang: fr
+    role: translation
+    text: Winterthour
+  - lang: ru
+    role: translation
+    text: Винтертур
+kind: settlement
+parent: canton-of-zurich
+country_code: CH
+location: [8.72671, 47.4992]
+wikidata_id: Q9125
+metadata:
+  sources: [Wikidata Q9125 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q9125
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q9125
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q9125

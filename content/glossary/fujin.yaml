@@ -1,0 +1,20 @@
+public_id: 109304
+name: Fūjin
+names:
+  - lang: ja
+    role: translation
+    text: 風神
+category: iconography
+definition: Japanese god of the wind
+wikidata_id: Q1483957
+metadata:
+  sources: [Wikidata Q1483957 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8e/Wind-God-Fujin-by-Ogata-Korin.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wind-God-Fujin-by-Ogata-Korin.jpg
+    license: Public domain
+    credit: Ogata Kōrin
+sources:
+  definition:
+    - accessed: 2026-11-02
+      wikidata: Q1483957

@@ -33,6 +33,12 @@ relationships:
         property: P937
         wikidata: Q5233
   - type: student_of
+    to: artist/francois-andre-vincent
+    sources:
+      - accessed: 2026-11-03
+        property: P802
+        wikidata: Q718975
+  - type: student_of
     to: artist/jacques-louis-david
     sources:
       - accessed: 2026-10-28

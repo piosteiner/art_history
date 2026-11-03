@@ -1,0 +1,179 @@
+public_id: 112179
+title_lang: en
+title: Place de la Concorde
+creator: pierre-bonnard
+created: c. 1910
+created_span: uncertain
+kind: oil painting
+medium: Oil on cardboard
+dimensions: [47.5, 63]
+institution: kunsthaus-zurich
+inventory_number: BU 0004
+web_url: https://collection.kunsthaus.ch/de/collection/item/699961/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131585930
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0d/Pierre_Bonnard_-_Place_de_la_Concorde_-_4_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre_Bonnard_-_Place_de_la_Concorde_-_4_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Pierre Bonnard
+provenance:
+  - owner: person/alexandre-natanson
+    ended: 1914
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+        note: "Footnote: Galerie Georges Petit 1932, No. 26, S. 22; AStEGB, Rechnung der Galerie Vallotton, Lausanne, ausgestellt auf Emil Bührle, 17.10.1951."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1914
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+        note: "Footnote: Dauberville/Dauberville 1968, No. 636."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/l-art-moderne
+    place: lucerne
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+        note: "Footnote: Dauberville 1968, No. 636. Der in Dauberville 1968, No. 636, angegebene Hinweis auf die «Collection 'L'Art Moderne', Lucerne» als Vorbesitzer von Strauss konnte nicht verifiziert werden, da das Gemälde in Auktion Hôtel Drouot 1935 nicht aufgeführt ist."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jules-strauss
+    ended: 15 December 1932 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+        note: "Footnote: Auktion Galerie Georges Petit 1932, Lot 26. Diese Provenienz wird als letzte vor der Galerie Vallotton in deren Rechnung an Emil Bührle angegeben, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1932-12-15
+    ended: 1932-12-15
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 26
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+        note: "Footnote: Auktion Galerie Georges Petit (15.12.1932), Lot 26."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jean-decroux
+    ended: 1951-07-28
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+        note: "Footnote: Inventarkarte, No. 4381, Archives Galerie Paul Vallotton, Stadtarchiv Lausanne."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-paul-vallotton
+    role: dealer
+    acquired: 1951-07-28
+    ended: 1951-10-22
+    method: purchase
+    direct: true
+    place: lausanne
+    price:
+      amount: 21000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+        note: "Footnote: Inventarkarte, No. 4381, wie oben Fussnote 11; Rechnung, wie oben Fussnote 3; AStEGB, Brief der Galerie Vallotton, Lausanne, an Walter Drack [Kurator der Sammlung Bührle], 05.02.1952."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: agent
+    acquired: 1951-10-22
+    ended: 1951-10-22
+    direct: true
+    place: zurich
+    label: intermediary
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+        note: "Footnote: Bezüglich einer Vermittlerrolle von Dr. Fritz Nathan, Zürich, siehe AStEGB, Inventarkarte Bonnard, Place de la Concorde, und Eintragungsbuch I, 15.10.1951."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-10-22
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 25000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+        note: "Footnote: Rechnung wie oben Fussnote 3; AStEGB, Brief von Dr. O. Maurer [Generalsekretär von Oerlikon Bührle & Co.] an Galerie Vallotton, Lausanne, 22.10.1951, mit der Bestätigung der Überweisung des obigen Betrages in den nächsten Tagen."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 4
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "4"
+    institution: foundation-e-g-buhrle-collection
+  - number: "636"
+    label: Dauberville (catalogue raisonné)
+  - number: "208"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

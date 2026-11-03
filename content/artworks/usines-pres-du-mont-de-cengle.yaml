@@ -1,0 +1,277 @@
+public_id: 111850
+title_lang: en
+title: Usines près du Mont de Cengle
+names:
+  - lang: en
+    role: translation
+    text: Fabriken beim Mont de Cengle
+  - lang: en
+    role: translation
+    text: Factories near the Mont de Cengle
+creator: paul-cezanne
+created: 1867/1869
+kind: oil painting
+medium: Oil on canvas
+dimensions: [41, 55]
+institution: kunsthaus-zurich
+inventory_number: BU 0175
+web_url: https://collection.kunsthaus.ch/de/collection/item/48894/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223624
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8c/Paul_C%C3%A9zanne_-_Usines_pr%C3%A8s_du_Mont_de_Cengle_-_175_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_Usines_pr%C3%A8s_du_Mont_de_Cengle_-_175_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Paul Cézanne
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Rewald 1996, Nr. 132."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/cornelis-hoogendijk
+    ended: 1911
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Henkels 1993, Nrn. 3-4, Abb. 160."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/cornelis-hoogendijk
+    role: estate
+    acquired: 1911
+    ended: 1922
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Auktion Fredrik Muller (22.-23.05.1912), Nr. 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/frederik-muller-cie
+    role: agent
+    acquired: 1912-05-22
+    ended: 1912-05-23
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Lot Nr. 7
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: a consortium of dealers
+    acquired: 1920
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Rewald 1989, S. 269: Die meisten Gemälde von Cézanne in der Hoogendijk-Auktion von 1912 blieben unverkauft, da sie damals Gegenstand eines Rechtsstreits waren und daher vom Verkauf zurückgehalten wurden. Nach der Beilegung des Rechtsstreits im Jahr 1920 wurden diese Gemälde von einem Pariser Händlersyndikat erworben, zu dem auch Paul Rosenberg und Joseph Hessel gehörten, die sie anschließend verka…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/auguste-pellerin
+    acquired: after 1920
+    ended: 1929-10-18
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jean-victor-pellerin
+    acquired: 1929
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1939 or earlier
+    ended: 1939 or earlier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Kat. Paul Rosenberg 1939 Cézanne, Nr. 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/carroll-carstairs
+    role: dealer
+    acquired: 1939
+    ended: 1939
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Getty Research Institute, Santa Monica (California) Knoedler Gallery Archive, Stock Book 8, p. 199, no. 2198."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1939-12
+    ended: 1940-08
+    method: purchase
+    direct: true
+    place: new-york-city
+    price:
+      amount: 8300
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Wie oben Fussnote 14: im Dezember 1939 für $ 8.300 von Carstairs erworben, wobei Knoedlers Anteil die Hälfte ausmachte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/sam-salz
+    co_owners: [person/erich-maria-remarque]
+    role: dealer
+    acquired: 1940-08
+    ended: 1946
+    method: purchase
+    direct: true
+    place: new-york-city
+    price:
+      amount: 20000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Wie oben Fussnote 14: Der Name Remarques wurde mit Bleistift neben den Namen von Salz im Lagerbuch der Galerie Knoedler vermerkt; Schneider/ Jaehner, 2013, Nr. 54."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1946
+    ended: 1946
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Getty Research Institute, Santa Monica (California) Knoedler Gallery Archive, Stock Book 9, p. 137, no. 3559."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/william-f-c-ewing
+    acquired: 1946
+    ended: 1946
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Wie oben Fussnote 18."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1946
+    ended: 1953
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Wie oben Fussnote 18."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    role: dealer
+    acquired: 1953-04-06
+    ended: 1953-05-29
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 13000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Auskunft von Walter Feilchenfeldt, Zürich, Sohn von Dr. Walter Feilchenfeldt, an die Stiftung Sammlung E.G. Bührle, Zürich, 11.01.2016; Getty Research Institute, Santa Monica (Kalifornien), Knoedler Gallery Archive, Stock Book 10, S. 32, Nr. 3559."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-05-29
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Erworben zusammen mit einer Ölskizze von Rubens (Sammlung Emil Bührle, Inv. 160), vgl. AStEGB, Eingangsbuch II, 22.05.1953; Handschriftliche Notiz von Emil Bührle an Dr. O. Maurer, Generalsekretär Oerlikon Bührle & Co., o.D., mit der Ankündigung, dass Dr. Feilchenfeldt demnächst kommen wird, um CHF 200.000 für die Landschaft von Cézanne und die Rubens-Skizze abzuholen, wovon CHF 30.000 auf ein Kon…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1967
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Die Kunstwerke, die 1960 nicht in die Stiftung Sammlung E.G. Bührle gelangten, wurden 1967 unter Emil Bührles Kinder, Dieter Bührle und Hortense Anda-Bührle, aufgeteilt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/dieter-buhrle
+    acquired: 1967
+    ended: 2012-11-09
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: "Footnote: Sohn von Emil Bührle und 1960, zusammen mit seiner Mutter Charlotte Bührle-Schalk und seiner Schwester Hortense (Anda-)Bührle, einer der drei Gründer der Stiftung Sammlung E.G. Bührle, deren Stiftungsrat er von 1960 bis 2012 angehörte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 2012
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 175
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "175"
+    institution: foundation-e-g-buhrle-collection
+  - number: "132"
+    label: Rewald (catalogue raisonné)
+  - number: "287"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

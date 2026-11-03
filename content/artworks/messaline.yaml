@@ -1,0 +1,169 @@
+public_id: 112125
+title_lang: en
+title: Messaline
+names:
+  - lang: en
+    role: translation
+    text: Messalina
+creator: henri-de-toulouse-lautrec
+created: 1900/1901
+kind: oil painting
+medium: Oil on canvas
+dimensions: [92, 68]
+institution: kunsthaus-zurich
+inventory_number: BU 0103
+web_url: https://collection.kunsthaus.ch/de/collection/item/604991/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223623
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e4/Henri_de_Toulouse-Lautrec_-_Messaline_-_103_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_de_Toulouse-Lautrec_-_Messaline_-_103_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Henri de Toulouse-Lautrec
+provenance:
+  - owner: institution/bernheim-jeune
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+        note: "Footnote: Dortu 1971, Nr. P.703."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leveque
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/georges-viau
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/kahnweiler
+    ended: 1924-10-15
+    place: bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+        note: "Footnote: Paul Cassirer/Walter Feilchenfeldt-Archiv, Zürich, Bestandskarte Paul Cassirer Berlin, Nr. 4977, mit einem Eingangsdatum vom 15. Oktober 1924. Der Einlieferer wird nur mit seinem zweiten Namen und dem Ort Bern genannt, und da Daniel-Henry Kahnweiler 1920 nach Paris zurückgekehrt war, könnte sich der Name auch auf seinen Bruder Gustav beziehen, der ebenfalls als Kunsthändler tätig war."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-cassirer
+    role: dealer
+    acquired: 1924-10-15
+    ended: 1925-01-10
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+        note: "Footnote: Bestandskarte wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/ludwig-katzenellenbogen
+    acquired: 1925-01-10
+    ended: 1930
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+        note: "Footnote: Bestandskarte wie oben Fussnote 9 mit einem Verkaufsdatum am 10 (?) Januar 1925."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/estella-katzenellenbogen
+    acquired: 1930
+    ended: 1948 or later
+    direct: true
+    label: Berlin/Santa Monica (Kalifornien)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+        note: "Footnote: Ehefrau des oben Genannten, von der er 1930 geschieden wurde; Hinweise auf N.V. Amsterdamsche Kunsthandel Paul Cassirer & Co., Amsterdam, als das Gemälde 1932 und 1937 ausgestellt wurde (Kat. Royal Academy of Arts, London 1932, Nr. 547; Kat. Palais des Musées d'Art Moderne [Palais de Tokyo], Paris 1937, Nr. 426) beruhen auf der Tatsache, dass der größte Teil von Estella Katzenellenbogens Sammlung …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    role: dealer
+    acquired: 1948 or later
+    ended: 1951-11-14
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+        note: "Footnote: Erworben zwischen 1948 und 1951 von den oben genannten Personen, Informationen von Herrn Walter Feilchenfeldt, Zürich, Sohn von Dr. Walter Feilchenfeldt, an die Stiftung Sammlung E.G. Bührle, Zürich, am 22. April 2008."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-11-14
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+        note: "Footnote: Erworben zusammen mit Manet, Un Coin du jardin de Bellevue (Sammlung Emil Bührle, Inv. 58) für insgesamt $ 100.000, AStEGB, Quittung mit beigefügten Akten, die Provenienz, Ausstellungs- und Publikationsgeschichte dokumentieren von Dr. Walter Feilchenfeldt, Zürich, ausgestellt auf Emil Bührle, 14. November 1951."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 103
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "103"
+    institution: foundation-e-g-buhrle-collection
+  - number: "703"
+    label: Dortu P. (catalogue raisonné)
+  - number: "212"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

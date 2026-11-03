@@ -8,9 +8,29 @@ wikidata_id: Q1240575
 metadata:
   sources: [Wikidata Q1240575 (retrieved 2026-10-05)]
 relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q1240575
   - type: influenced_by
     to: movement/rinpa
     notes_md: a Rinpa-inspired decorative aesthetic (Mason p. 323)
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d2/Portrait_of_It%C5%8D_Jakuch%C5%AB_by_Kubota_Beisen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_It%C5%8D_Jakuch%C5%AB_by_Kubota_Beisen.jpg
+    license: Public domain
+    credit: Kubota Beisen
+identifiers:
+  bnf: "122663129"
+  gnd: "118998706"
+  idref: "189661879"
+  kulturnav: ab500197-fc6b-48b5-88a9-3d80499c5d41
+  lc: n82091080
+  rkd: "355169"
+  ulan: "500118864"
+  viaf: "64064738"
 sources:
   birth:
     - accessed: 2026-10-05

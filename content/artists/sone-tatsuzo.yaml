@@ -22,6 +22,25 @@ death: 1937-12-06
 wikidata_id: Q11515378
 metadata:
   sources: [Wikidata Q11515378 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q11515378
+  - type: died_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q11515378
+  - type: student_of
+    to: artist/josiah-conder
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q11515378
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/f/f3/Sone_Tatsuz%C3%B4.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Sone_Tatsuz%C3%B4.jpg

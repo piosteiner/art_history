@@ -1,0 +1,180 @@
+public_id: 112010
+title_lang: en
+title: Fruits sur une nappe
+names:
+  - lang: de
+    role: translation
+    text: Früchte auf einem Tuch
+  - lang: en
+    role: translation
+    text: Still Life with Fruits
+creator: georges-braque
+created: 1924
+kind: oil painting
+medium: Oil on canvas
+dimensions: [31.5, 65.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0008
+web_url: https://collection.kunsthaus.ch/de/collection/item/600963/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131585922
+provenance:
+  - owner: person/paul-rosenberg
+    role: dealer
+    ended: 1926
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+        note: "Footnote: Kat. Städelsches Kunstinstitut Frankfurt/Main 1991, S. 164; No. 17."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/stadtische-galerie-frankfurt
+    role: dealer
+    acquired: 1926
+    ended: 1937-07-17
+    place: frankfurt
+    label: inv. no. SG 387
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/reichsministerium-fur-volksaufklarung-und-propaganda
+    acquired: 1937-07-17
+    ended: 1939-06-30
+    direct: true
+    place: berlin
+    label: Beschlagnahme "Entartete Kunst"; EK-Nr. 14177
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+        note: 'Footnote: Wie oben Fussnote 3; Datenbank zum Beschlagnahmeinventar der Aktion "Entartete Kunst", Forschungsstelle "Entartete Kunst", FU Berlin, https://emuseum.campus.fu-berlin.de/eMuseumPlus?service=direct/1/ResultListView/result.t1.collection_list.$TspTitleLink.link&sp=10&sp=Scollection&sp=SfieldValue&sp=0&sp=1&sp=3&sp=SdetailList&sp=0&sp=Sdetail&sp=0&sp=F&sp=T&sp=4 [Zugriff: 21.02.2024].'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1939-06-30
+    ended: 1939-06-30
+    method: auction
+    direct: true
+    place: lucerne
+    label: Lot 14
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+        note: "Footnote: Auktion Galerie Fischer 1939, Lot 14; Kat. Los Angeles County Museum of Art; Art Institute of Chicago 1991, S. 140, 150 (ill.), No. 123."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/pierre-matisse
+    role: dealer
+    acquired: 1939-06-30
+    method: purchase
+    direct: true
+    place: new-york-city
+    price:
+      amount: 3300
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+        note: "Footnote: Rechnung der Galerie Fischer, Luzern, ausgestellt auf Herrn Matisse, 30.06.1939, mit Stempel und Unterschrift, die den Empfang am 01.07.1939 bestätigen, Pierre Matisse Gallery Archives, The Morgan Library & Museum, New York."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/dalzell-hatfield-galleries
+    role: dealer
+    label: Los Angeles; LA
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+        note: "Footnote: AStEGB, Inventarkarte Braque, Stilleben."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/oliver-b-james
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+        note: "Footnote: Wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandlung-fritz-und-peter-nathan
+    role: dealer
+    ended: 1953-12-23
+    place: new-york-city
+    label: New York, NY and Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+        note: "Footnote: AStEGB, Handschriftliche Notiz von Emil Bührle mit einer Auflistung von Gemälden, über die Bührle mit Fritz Nathan verhandelte, darunter Braque, Still Life; Zahlungsauftrag von Emil Bührle an die Industrie- und Handelsbank, Zürich, über eine Zahlung von $ 48.500 an Fritz Nathan, Zürich, 23.12.1953; Quittung über die oben genannte Summe als Zahlung für drei durch Peter Nathan in New York erworbene …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-12-23
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 10500
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+        note: "Footnote: Wie oben Fussnote 14."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 8
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "8"
+    institution: foundation-e-g-buhrle-collection
+  - number: 24-27.10
+    label: Maeght (catalogue raisonné)
+  - number: "336"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -36,6 +36,32 @@ wikidata_id: Q161143
 metadata:
   sources: [Wikidata Q161143 (retrieved 2026-10-20)]
 relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q161143
+  - type: member_of
+    to: movement/die-brucke
+    period: 1905-06-07
+    period_label: from 7 June 1905
+    sources:
+      - accessed: 2026-11-02
+        property: P463
+        wikidata: Q161143
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q161143
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q161143
   - type: founded
     to: movement/die-brucke
     sources:

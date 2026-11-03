@@ -13,6 +13,12 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 243–244, figs. 278–279
+  - type: inspired_by
+    to: literature/the-tale-of-genji
+    label: details recreated from Prince Toshihito’s favourite book
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 243–244
 sources:
   kind:
     - source: history-of-japanese-art

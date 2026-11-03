@@ -1,0 +1,54 @@
+public_id: 109437
+name: South Korea
+names:
+  - lang: ko
+    role: original
+    text: 대한민국
+  - Republic of Korea
+  - Rep. Korea
+  - S. Korea
+  - Korea Republic
+  - Hanguk
+  - Daehan Minguk
+  - Daehanminguk
+  - Korea (South)
+  - Choson
+  - Silla
+  - lang: nl
+    role: translation
+    text: Zuid-Korea
+  - lang: fr
+    role: translation
+    text: Corée du Sud
+  - lang: de
+    role: translation
+    text: Südkorea
+  - lang: it
+    role: translation
+    text: Corea del Sud
+  - lang: es
+    role: translation
+    text: Corea del Sur
+  - lang: ja
+    role: translation
+    text: 大韓民国
+  - lang: zh
+    role: translation
+    text: 大韩民国
+  - lang: ru
+    role: translation
+    text: Республика Корея
+period: 1948-08-15/
+country_codes: [KR]
+wikidata_id: Q884
+metadata:
+  sources: [Wikidata Q884 (retrieved 2026-11-02)]
+sources:
+  period:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q884
+  country_codes:
+    - accessed: 2026-11-02
+      property: P297
+      wikidata: Q884

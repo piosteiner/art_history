@@ -5,6 +5,23 @@ death: 1140-11-03
 wikidata_id: Q3076602
 metadata:
   sources: [Wikidata Q3076602 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3076602
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Kakuyuu.jpg/1280px-Kakuyuu.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kakuyuu.jpg
+    license: Public domain
+    credit: 栗原信充
+identifiers:
+  gnd: "1089619170"
+  lc: nr2002021215
+  ulan: "500123236"
+  viaf: "49163613"
 sources:
   birth:
     - accessed: 2026-11-01

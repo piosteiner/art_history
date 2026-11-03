@@ -1,0 +1,199 @@
+public_id: 111949
+title_lang: en
+title: Avant le départ
+names:
+  - lang: en
+    role: translation
+    text: Vor dem Start
+  - lang: en
+    role: translation
+    text: Before the Start
+creator: edgar-degas
+created: 1878/1880
+kind: oil painting
+medium: Oil on canvas
+dimensions: [39.5, 89]
+institution: kunsthaus-zurich
+inventory_number: BU 0034
+web_url: https://collection.kunsthaus.ch/de/collection/item/585966/
+on_loan: true
+on_loan_since: 2021
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q64223636
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6c/Edgar_Degas_-_Avant_le_d%C3%A9part_-_34_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Edgar_Degas_-_Avant_le_d%C3%A9part_-_34_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Edgar Degas
+provenance:
+  - owner: institution/durand-ruel
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+        note: "Footnote: Lemoisne 1946, No. 503."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/earl-f-milliken
+    acquired: 1902-02-07 or earlier
+    ended: 16 May 1903 or later
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+        note: "Footnote: Auktion American Art Association, New York (07.02.1902), No. 12; Auktion Christie's, London (16.05.1903), No. 137."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/mathilde-rosenberg
+    ended: 1923-04-22 or earlier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+        note: "Footnote: Mutter von Paul Rosenberg. Archive Paul Rosenberg Gallery, New York, Inventarkarte No. 765, Degas, «Chevaux de courses»: hier «Mme Alexandre Rosenberg», Paris angegeben."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1924 or earlier
+    ended: 1941-09-14
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+        note: "Footnote: Sohn der oben Genannten, Kat. Galerie Georges Petit, Paris 1924, No. 44."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    acquired: 1941-09-14
+    method: confiscation
+    direct: true
+    place: paris
+    label: ERR no. PR 142
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+        note: "Footnote: Beschlagnahmt und übergeben an Hermann Göring. Yeide 2009, No. D28."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hermann-goring
+    acquired: 1941
+    ended: 1941
+    direct: true
+    place: paris
+    label: taken over from the ERR
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: dealer
+    ended: 1942-04-18
+    method: exchange
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+        note: "Footnote: Yeide, wie oben Fussnote 9: Im Tausch gegen Kunstwerke an die Galerie Fischer; Francini/Heuss/Kreis 2001, S. 106 (No. 267), 286 (No. *3), 347 (No. 87)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1942-04-18
+    ended: 1948-06-03
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 75000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+        note: "Footnote: StEGB, Brief von Emil Bührle an seinen Anwalt Dr. Walther Huber, Zürich, 05.07.1947. Die Summe entspricht dem Betrag, den Bührle später in seinem Prozess gegen Fischer einforderte, und während Fischer eine Rückerstattungspflicht grundsätzlich ablehnte, wurde die Summe als solche nie in Frage gestellt. Diese Summe definierte also die Beträge, die Fischer an Bührle zurückzahlen musste, nachdem das B…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1948-06-03
+    ended: 1949-06-21
+    method: restitution
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+        note: "Footnote: AStEGB, Schweizerisches Bundesgericht, Kammer zur Beurteilung von Raubgutklagen/Chambre des actions en revendication de biens spoliés, Lausanne, Gesuch um Rückgabe von Kunstwerken von Paul Rosenberg gegen verschiedene Beklagte (u.a. Bührle), Urteil vom 03.06.1948 (Typoskript), das die Rückgabe der beanspruchten Werke anordnet, darunter Degas, Avant le départ."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1949-06-21
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 30000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+        note: "Footnote: AStEGB, Brief (handschriftlich) von Paul Rosenberg, Paris, an Emil Bührle, 21.06.1949, in dem die Retrozession des Gemäldes für $30.000 bestätigt wird; Rechnung von Paul Rosenberg, New York, ausgestellt auf Emil Bührle, 06.07.1949, mit detaillierten Angaben zu Provenienz, Referenzen und Ausstellungsgeschichte; Brief von Florence Walters, Paul Rosenberg & Co., New York, an Emil Bührle, 08.05.1950, …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 34
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "34"
+    institution: foundation-e-g-buhrle-collection
+  - number: "503"
+    label: Lemoisne (catalogue raisonné)
+  - number: "172"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,22 @@
+public_id: 112423
+name: Bloemendaal
+kind: settlement
+parent: north-holland
+country_code: NL
+location: [4.6281, 52.4028]
+wikidata_id: Q9908
+metadata:
+  sources: [Wikidata Q9908 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q9908
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q9908
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q9908

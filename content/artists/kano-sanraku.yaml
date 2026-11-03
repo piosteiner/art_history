@@ -22,6 +22,25 @@ death: 1635-09-30
 wikidata_id: Q3064625
 metadata:
   sources: [Wikidata Q3064625 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3064625
+  - type: died_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q3064625
+  - type: student_of
+    to: artist/kano-eitoku
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q3064625
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/0/05/Kan%C5%8D_Sanraku.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Kan%C5%8D_Sanraku.jpg

@@ -1,0 +1,26 @@
+public_id: 112155
+name: Almelo
+names:
+  - lang: ru
+    role: translation
+    text: Алмело
+kind: settlement
+parent: netherlands
+country_code: NL
+location: [6.66667, 52.3575]
+wikidata_id: Q988
+metadata:
+  sources: [Wikidata Q988 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q988
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q988
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q988

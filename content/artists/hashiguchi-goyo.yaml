@@ -20,6 +20,25 @@ death: 1921-02-24
 wikidata_id: Q2346122
 metadata:
   sources: [Wikidata Q2346122 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2346122
+  - type: student_of
+    to: artist/hashimoto-gaho
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q2346122
+  - type: studied_at
+    to: institution/tokyo-university-of-the-arts
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q2346122
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Hashiguchi_Goy%C5%8D.jpg/1280px-Hashiguchi_Goy%C5%8D.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Hashiguchi_Goy%C5%8D.jpg

@@ -28,6 +28,43 @@ death: 1776-05-30
 wikidata_id: Q2661041
 metadata:
   sources: [Wikidata Q2661041 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2661041
+  - type: born_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q2661041
+  - type: died_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q2661041
+  - type: lived_in
+    to: place/gion
+    sources:
+      - accessed: 2026-11-02
+        property: P551
+        wikidata: Q2661041
+  - type: worked_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q2661041
+  - type: student_of
+    to: artist/yanagisawa-kien
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q2661041
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/A_portrait_of_Ike_Taiga_by_Fukuhara_Gogaku_%E6%B1%A0%E5%A4%A7%E9%9B%85%E5%83%8F_%E7%A6%8F%E5%8E%9F%E4%BA%94%E5%B2%B3.jpg/1280px-A_portrait_of_Ike_Taiga_by_Fukuhara_Gogaku_%E6%B1%A0%E5%A4%A7%E9%9B%85%E5%83%8F_%E7%A6%8F%E5%8E%9F%E4%BA%94%E5%B2%B3.jpg
     source_url: https://commons.wikimedia.org/wiki/File:A_portrait_of_Ike_Taiga_by_Fukuhara_Gogaku_%E6%B1%A0%E5%A4%A7%E9%9B%85%E5%83%8F_%E7%A6%8F%E5%8E%9F%E4%BA%94%E5%B2%B3.jpg

@@ -1,0 +1,123 @@
+public_id: 111866
+title_lang: fr
+title: Le Spectacle gratis
+names:
+  - lang: de
+    role: translation
+    text: Die Gratis-Vorstellung
+  - lang: en
+    role: translation
+    text: The Free Performance
+creator: honore-daumier
+created: 1843/1845
+kind: oil painting
+medium: Oil on panel
+dimensions: [55.5, 44.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0027
+web_url: https://collection.kunsthaus.ch/de/collection/item/48900/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q124294681
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/47/Honor%C3%A9_Daumier_-_Le_Spectacle_gratis_-_27_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Honor%C3%A9_Daumier_-_Le_Spectacle_gratis_-_27_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Honoré Daumier
+provenance:
+  - owner: institution/durand-ruel
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48900/
+        note: "Footnote: AStEGB, Etikett «DURAND-RUEL / PARIS 16, Rue Laffitte / NEW-YORK, 297, Fifth avenue / [handwritten:] Daumier no. 2554 / Spectacle gratis»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/d-a-wanklyn
+    acquired: 1900
+    place: montreal
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48900/
+        note: "Footnote: AStEGB, Gutachten, unterzeichnet von Lionello Venturi, New York, 07.01.1946, mit dem Hinweis auf die Sammlung Wanklyn und dem Datum 1900."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/e-a-silberman-galleries
+    role: dealer
+    acquired: 1945-12-12 or earlier
+    ended: 1954-07-15
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48900/
+        note: "Footnote: AStEGB, Brief von Gordon B. Washburn, Direktor, Kunstmuseum, Rhode Island School of Design, Providence (Rhode Island), an Abris Silberman, New York, 12.12.1945; Eingangsbuch II, 15.07.1954."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-07-15
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48900/
+        note: "Footnote: Eingangsbuch II, wie oben Fussnote 7: mit Hinweis auf das Kaufdatum."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48900/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: Inv.-No. 27
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48900/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: II-46
+    label: Maison (catalogue raisonné)
+  - number: "406"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

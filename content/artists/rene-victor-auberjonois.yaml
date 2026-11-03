@@ -7,6 +7,48 @@ death: 1957-10-11
 wikidata_id: Q683105
 metadata:
   sources: [Wikidata Q683105 (retrieved 2026-11-02)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q683105
+  - type: born_in
+    to: place/lausanne
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q683105
+  - type: died_in
+    to: place/lausanne
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q683105
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q683105
+  - type: associated_with
+    to: movement/post-impressionism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q683105
+identifiers:
+  bnf: "127149380"
+  dodis: P25364
+  gnd: "118504975"
+  hls: "009431"
+  idref: "066895227"
+  lc: n50030733
+  rkd: "2885"
+  sikart: "4000015"
+  ulan: "500002067"
+  viaf: "61820882"
 sources:
   birth:
     - accessed: 2026-11-02

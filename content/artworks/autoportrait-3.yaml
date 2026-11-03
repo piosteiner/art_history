@@ -1,0 +1,161 @@
+public_id: 112380
+title_lang: fr
+title: Autoportrait
+names:
+  - lang: de
+    role: translation
+    text: Selbstbildnis
+  - lang: en
+    role: translation
+    text: Self-Portrait
+creator: edouard-vuillard
+created: c. 1906
+created_span: uncertain
+kind: oil painting
+medium: Oil on cardboard on canvas
+dimensions: [48.5, 48.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0116
+web_url: https://collection.kunsthaus.ch/de/collection/item/752965/
+on_loan: true
+on_loan_since: 2021
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q64410179
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e0/%C3%89douard_Vuillard_-_Autoportrait_-_116_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Vuillard_-_Autoportrait_-_116_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Édouard Vuillard
+provenance:
+  - owner: artist/edouard-vuillard
+    role: estate
+    acquired: 1940-06-21
+    ended: 1950
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752965/
+        note: "Footnote: Salomon/Cogeval 2003, Bd. 1, No. VII-405."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/annette-salomon
+    co_owners: [person/jacques-salomon]
+    acquired: 1950
+    ended: 1950
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752965/
+        note: "Footnote: Die Nichte des Malers und ihr Ehemann erbten das Werk, E-Mail-Korrespondenz, Matthias Chivot, Vuillard-Archive, Paris an Stiftung Sammlung E.G. Bührle, Zürich, 16.01.2025."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-maurice-renou-et-poyet
+    role: dealer
+    acquired: 1950
+    ended: 1950
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752965/
+        note: "Footnote: Wie oben Fussnote 2 und 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    role: dealer
+    ended: 1953-12-09
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752965/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    role: estate
+    acquired: 1953-12-09
+    ended: 1954-02-03
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752965/
+        note: "Footnote: AStEGB, Beleg der Schweizerischen Kreditanstalt/Crédit Suisse, Zürich, ausgestellt auf Emil Bührle, 3. Februar 1954, der die Zahlung auf das Konto der Erben von Dr. Walter Feilchenfeldt bestätigt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-02-03
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 28000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752965/
+        note: "Footnote: Beleg wie oben Fussnote 7; gemäss einem Blatt in der Bildakte und AStEGB, Eingangsbuch II, gehörte eine Rötelzeichnung von Renoir, Badende, zum Erwerb."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752965/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 116
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752965/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "116"
+    institution: foundation-e-g-buhrle-collection
+  - number: II.744.VII-405
+    label: Salomon/Cogeval (catalogue raisonné)
+  - number: "350"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

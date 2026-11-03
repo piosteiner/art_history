@@ -1,0 +1,316 @@
+public_id: 111899
+title_lang: en
+title: Daniel dans la fosse aux lions
+names:
+  - lang: de
+    role: translation
+    text: Daniel in der Löwengrube
+  - lang: en
+    role: translation
+    text: Daniel in the Lions' Den
+creator: eugene-delacroix
+created: 1853
+kind: oil painting
+medium: Oil on canvas
+dimensions: [73, 60]
+institution: kunsthaus-zurich
+inventory_number: BU 0126
+web_url: https://collection.kunsthaus.ch/de/collection/item/48907/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223650
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3e/Eug%C3%A8ne_Delacroix%2C_u.a._-_Daniel_dans_la_fosse_aux_lions_-_126_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix,_u.a._-_Daniel_dans_la_fosse_aux_lions_-_126_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Eugène Delacroix
+provenance:
+  - owner: person/theodore-comte-de-geloes
+    method: purchase
+    direct: true
+    label: Château d'Osen, Roermond
+    price:
+      amount: 1000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Johnson 1986 III S. 305, Nr. S5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/thirault
+    acquired: 1857-04-03
+    ended: 1857-04-03
+    place: paris
+    label: Lot 18; Anonymer Verkauf
+    price:
+      amount: 3400
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/michail-melas
+    ended: 1873-06
+    place: marseille
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/goupil-cie
+    role: dealer
+    acquired: 1873-06
+    ended: 1873-06-06
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/schwabacher
+    acquired: 1873-06-06
+    ended: 1877-05-05
+    method: purchase
+    direct: true
+    price:
+      amount: 30000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1877-05-05
+    ended: 1877-05-05
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Provenienz-Akten AStEGB."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/boussod-valadon-cie
+    acquired: 1878-05-05
+    ended: 1878-05
+    method: purchase
+    direct: true
+    place: paris
+    label: Valadon et Cie (Kunsthandel)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/daupias
+    acquired: 1878-05
+    method: purchase
+    direct: true
+    price:
+      amount: 22000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-georges-petit
+    role: dealer
+    ended: 1885 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Wie oben Fussnote 2; Kat. École des Beaux Arts 1885, Nr. 236."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/henri-garnier
+    ended: 1894-12-04 or earlier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Wie oben Fussnote 2; Auktion Galerie Georges Petit 03.-04.12.1894, Lot Nr. 44."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1894-12-03
+    ended: 1894-12-04
+    method: auction
+    direct: true
+    place: paris
+    label: Lot Nr. 44
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Wie oben Fussnote 15; Auktion Galerie Georges Petit 03.-04.12.1894."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/boussod-valadon-cie
+    acquired: 1894-12-03
+    ended: 1903
+    method: purchase
+    direct: true
+    place: paris
+    label: Valadon et Cie (Kunsthandel)
+    price:
+      amount: 5100
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1903
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/theodor-ernst-behrens
+    acquired: c. 1913
+    ended: 1921-06-10
+    place: hamburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: 'Footnote: Krahmer 2009, S. 231, Nr. 386, im Tagebuch Eintrag von Julius Meier-Graefe vom 15. April 1914: "Von Delacroix der Daniel in der Löwengrube angekommen"; Kat. Kunsthalle Bremen 1914, Nr. 94.'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/theodor-ernst-behrens
+    role: estate
+    acquired: 1921
+    direct: true
+    place: hamburg
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Kat. Hamburger Kunsthalle 2001, S.37-38."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hamburger-kunsthalle
+    acquired: 1919
+    ended: 1924
+    direct: true
+    place: hamburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Katalog Hamburger Kunsthalle 2001 (Private Kunstschätze), S. 40, Abb. 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/etienne-bignou
+    acquired: 1930 or earlier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Kat. Louvre 1930, Nr. 153."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/justin-k-thannhauser
+    ended: 1938 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Wie oben Fussnote 2; Angebot von Justin K. Thannhauser, Paris, an Wilhelm Wartmann, Direktor des Kunsthauses Zürich, 04.09.1938, Archiv KHZ/ZKH, Eigehende Korrespondenz, Besitzer, Händler, 01.01.1937-31.12.1938, 10.30.30.66."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/friedrich-eugen-girtanner
+    acquired: 1940-06-05 or earlier
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: Angebot Friedrich Girtanner an ZKG zum Preis von 35.000 CHF. Die Sammlungskommission der ZKG lehnt das Angebot ab, Sitzungsprotokoll der Sammlungskommission, 13.06.1940 c. 12. und 09.12.1940 I. b., Archiv KHZ/ZKG, 10.30.10.42."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-tanner
+    role: dealer
+    acquired: 1944-01-17 or earlier
+    ended: 1944-05-04
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: AStEGB, Angebot des Bildes durch Galerie Tanner an Emil Bührle zum Preis von 35.000 CHF, 17. 01.1944."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1944-05-04
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 35000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        note: "Footnote: AStEGB, Quittung Galerie Tanner, Zürich, ausgestellt an Emil Bührle über den Betrag von 35.000 CHF, 04.05.1944."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 126
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "126"
+    institution: foundation-e-g-buhrle-collection
+  - number: S5
+    label: Johnson (catalogue raisonné)
+  - number: "114"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48907/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

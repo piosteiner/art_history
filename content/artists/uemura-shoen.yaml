@@ -27,6 +27,51 @@ death: 1949-08-27
 wikidata_id: Q275018
 metadata:
   sources: [Wikidata Q275018 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q275018
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q275018
+  - type: born_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q275018
+  - type: worked_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q275018
+  - type: student_of
+    to: artist/takeuchi-seiho
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q275018
+  - type: studied_at
+    to: institution/kyoto-city-university-of-arts
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q275018
+  - type: associated_with
+    to: movement/nihonga
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q275018
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/f/f4/Uemura_Shoen.png
     source_url: https://commons.wikimedia.org/wiki/File:Uemura_Shoen.png

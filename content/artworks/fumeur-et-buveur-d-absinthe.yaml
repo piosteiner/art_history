@@ -1,0 +1,203 @@
+public_id: 111871
+title_lang: en
+title: Fumeur et Buveur d'absinthe
+names:
+  - lang: en
+    role: translation
+    text: Raucher und Absinthtrinker
+  - lang: en
+    role: translation
+    text: Smoker and Absinthe Drinker
+creator: honore-daumier
+created: 1856/1860
+kind: oil painting
+medium: Oil on panel
+dimensions: [27, 34.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0029
+web_url: https://collection.kunsthaus.ch/de/collection/item/48901/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q124294682
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/55/Honor%C3%A9_Daumier_-_Fumeur_et_Buveur_d%27absinthe_-_29_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Honor%C3%A9_Daumier_-_Fumeur_et_Buveur_d%27absinthe_-_29_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Honoré Daumier
+provenance:
+  - owner: person/georges-viau
+    ended: 20 December 1900 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+        note: "Footnote: Maison 1968, No. I-105; dieser Eintrag wird durch einen Brief von Paul Cassirer, Berlin, an Paul Durand Ruel, Paris, vom 20.12.1900 gestützt, der bestätigt, dass ein Gemälde, das später als Le café identifiziert wurde, zusammen mit vier anderen Gemälden von Daumier im Besitz von M. Viau eingetroffen war, Echte/Feilchenfeldt 2011, S. 385. Das Gemälde ist jedoch weder in den Verkaufskatalogen der Sa…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/james-f-murray
+    ended: 1927-04-29
+    place: aberdeen-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+        note: "Footnote: Auktion Christie's (29.04.1927), No. 38."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1927-04-29
+    ended: 1927-04-29
+    method: auction
+    direct: true
+    place: london
+    label: Lot 38
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1927-04-29
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+        note: "Footnote: AStEGB, E-Mail-Nachricht von Christie's London, an die Stiftung Sammlung E.G. Bührle, 14.01.2008."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alexander-lewin
+    acquired: 1938-09-17 or earlier
+    ended: 1942
+    place: guben
+    label: Guben, Monte Carlo
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+        note: "Footnote: Kat. Stedelijk Museum, Amsterdam 1938, No. 86; als Leihgeber der Bilder wird angegeben: Paul Cassirer, Amsterdam. Das Gemälde wurde am 17.09.1938 beim Amsterdamsche Kunsthandel Paul Cassirer & Co. N.V., Amsterdam, als Depositum eingelagert; als Eigentümer wird A. Lewin im Inventarbuch der Galerie genannt. In der Folge wurde es am 27.10.1938 dem Kunstmuseum St. Gallen übergeben, AStEGB, Brief von W…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/paul-cassirer-co-amsterdam
+    role: custodian
+    acquired: 1938-09-17
+    ended: 1938-10-27
+    direct: true
+    place: amsterdam
+    label: safekeeping
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunstmuseum-st-gallen
+    role: custodian
+    acquired: 27 October 1938 or later
+    ended: 1947 or later
+    direct: true
+    place: st-gallen
+    label: safekeeping
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alice-j-kurz
+    acquired: 1942
+    ended: 1947
+    method: inheritance
+    direct: true
+    place: village-of-hastings-on-hudson
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+        note: "Footnote: Tochter von Alexander Lewin, wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    role: dealer
+    acquired: 1947-10-08 or earlier
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+        note: "Footnote: Von der oben Genannten erhalten, als Honorar für die Betreuung der Gemälde ihres verstorbenen Vaters während der Kriegsjahre; Dr. Walter Feilchenfeldt verlangte ein Honorar von CHF 60.000 (inkl. Zinsen) und schätzte das Gemälde als gleichwertig zu diesem Betrag, Brief wie oben Fussnote 9, zitiert nach einem Brief von Dr. Walter Feilchenfeldt, Zürich, an Alice Kurz, 05.08.1946; das Gemälde ging sch…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    ended: 1948-02-15
+    place: st-gallen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+        note: "Footnote: AStEGB, Eingangsbuch I, 15.02.1948."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1948-02-15
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+        note: "Footnote: Wie oben Fussnote 15. Walter Feilchenfeldt und Fritz Nathan arbeiteten bei der Annäherung an Emil Bührle in den Jahren bis 1948 oft eng zusammen. Feilchenfeldt erhielt bei Kriegsausbruch zwar eine Einwanderungsbewilligung in die Schweiz, doch wurde ihm eine Arbeitsbewilligung verweigert, so dass er nicht offiziell als Kunsthändler tätig sein konnte. Im Gegensatz zu Feilchenfeldt lebte Fritz Nathan…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 29
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "29"
+    institution: foundation-e-g-buhrle-collection
+  - number: I-105
+    label: Maison (catalogue raisonné)
+  - number: "156"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48901/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

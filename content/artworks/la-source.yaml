@@ -1,0 +1,130 @@
+public_id: 112094
+title_lang: fr
+title: La Source
+names:
+  - lang: de
+    role: translation
+    text: Die Quelle
+  - lang: en
+    role: translation
+    text: The Source
+creator: pierre-auguste-renoir
+created: 1906
+kind: oil painting
+medium: Oil on canvas
+dimensions: [92, 73]
+institution: kunsthaus-zurich
+inventory_number: BU 0087
+web_url: https://collection.kunsthaus.ch/de/collection/item/604981/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223620
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c9/Pierre-Auguste_Renoir_-_La_Source_-_87_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_La_Source_-_87_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+provenance:
+  - owner: person/alexandre-berthier-prince-de-wagram
+    ended: 1918-05-30
+    place: paris
+    label: 4. Prince de Wagram (*1883, +1918) (Sammler/-in)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604981/
+        note: "Footnote: AStEGB, Begleitakte Quittung von Roger Dequoy, 57, rue La Boétie, Paris, ausgestellt auf Emil Bührle, Hôtel Ritz, Paris, 1. Oktober 1941, betreffend den Kauf von fünf Gemälden, darunter Renoir, La Souce."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/gaston-bernheim-de-villers
+    role: dealer
+    acquired: c. 1920
+    ended: c. 1920
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604981/
+        note: "Footnote: AStEGB, Schreiben von Roger Dequoy, Paris, an Emil Bührle, 18. November 1944, in Beantwortung von Bührles Ersuchen um detaillierte Provenienzangaben zu drei der im Oktober 1941 von Wildenstein erworbenen Bilder, im Auftrag der Schweizerischen Verrechnungsstelle, Zürich. Zu den verschiedenen Pariser Händlern (Vollard, G. Petit, Bernheim-Jeune, Renou & Colle), die im Katalog der Ausstellung der Samm…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/georges-wildenstein
+    role: dealer
+    ended: 1941-10-01
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604981/
+        note: "Footnote: Vertreten durch Roger Dequoy, Paris, Quittung wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1941-10-01
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 1800000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604981/
+        note: "Footnote: Erworben für FF 2.000.000 abzüglich 10% Rabatt = FF 1.800.000, als Teil einer Gruppe von 5 Gemälden, für die Emil Bührle eine Gesamtsumme von FF 6.000.000 bezahlte, Quittung wie oben Fussnote 3. Für den Preis von Renoir, La Source AStEGB, Brief von Emil Bührle an Office suisse de compensation (Schweizerische Verrechnungsstelle), Zürich, 13. September 1944; dieser Brief enthält auch die Information…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604981/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 87
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604981/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "87"
+    institution: foundation-e-g-buhrle-collection
+  - number: "3523"
+    label: Dauberville (catalogue raisonné)
+  - number: "66"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604981/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604981/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604981/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604981/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604981/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604981/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604981/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604981/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

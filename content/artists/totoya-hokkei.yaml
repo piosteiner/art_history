@@ -24,6 +24,37 @@ death: 1850-05-20
 wikidata_id: Q11673960
 metadata:
   sources: [Wikidata Q11673960 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q11673960
+  - type: born_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q11673960
+  - type: died_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q11673960
+  - type: worked_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q11673960
+  - type: student_of
+    to: artist/katsushika-hokusai
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q11673960
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/4/4a/Brooklyn_Museum_-_Autumn_Maples_at_the_Takinogawa_River_-_Totoya_Hokkei.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Autumn_Maples_at_the_Takinogawa_River_-_Totoya_Hokkei.jpg

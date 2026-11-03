@@ -1,0 +1,223 @@
+public_id: 112046
+title_lang: fr
+title: Les Deux Avocats
+names:
+  - lang: de
+    role: translation
+    text: Die zwei Advokaten
+  - lang: en
+    role: translation
+    text: The Two Attorneys
+creator: honore-daumier
+created: 1855/1857
+kind: oil painting
+medium: Oil on panel
+dimensions: [20.5, 26.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0028
+web_url: https://collection.kunsthaus.ch/de/collection/item/600975/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q124294680
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/39/Honor%C3%A9_Daumier_-_Les_Deux_Avocats_-_28_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Honor%C3%A9_Daumier_-_Les_Deux_Avocats_-_28_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Honoré Daumier
+provenance:
+  - owner: person/jean-hubert-debrousse
+    ended: 1899-11-04
+    label: Château de Moyeux, Nangis, Seine-et-Marne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+        note: "Footnote: Auktion Hôtel Drouot (04.04.-06.04.1900), No. 112."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jean-hubert-debrousse
+    role: estate
+    acquired: 1899-11-04
+    ended: 4 April 1900 or later
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1900-04-04
+    ended: 1900-04-06
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 112
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    ended: 7 December 1912 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+        note: "Footnote: Anonyme Auktion Paris (07.12.1912), No. 15; Maison 1968, Bd. I, No. I-90."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1912-12-07
+    ended: 1912-12-07
+    method: auction
+    direct: true
+    label: Lot 15
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jakob-hirsch
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+        note: "Footnote: Kat. Arthur Tooth & Sons Ltd., London 1938, No. 28; Getty Research Institute, Santa Monica (Kalifornien), Tooth Archive, Box 21, Consignments, erwähnt «P. Guillaume» als Besitzer des Gemäldes auf der Flèche d'Or-Ausstellung 1938. Das Gemälde scheint über einen längeren Zeitraum auf dem Markt gewesen zu sein; Maison, wie oben Fussnote 7, nennt vorläufig Jos Hessel, Paris, und Justin K. Thannhauser,…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/domenica-walter-guillaume
+    acquired: 1938 or earlier
+    ended: 1947
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+        note: "Footnote: Getty Research Institute, Santa Monica (Kalifornien), Knoedler Gallery Archive, Stockbooks, Book 9, S. 157, No. A3763, gibt Frau Jean Walter (ehemals Frau Paul Guillaume) als Einlieferin an."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1947-10-29
+    ended: 1948-01
+    direct: true
+    place: new-york-city
+    price:
+      amount: 6000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+        note: "Footnote: Wie oben Fussnote 12: Im Miteigentum mit der oben Genannten, ein halber Anteil von $ 6.000, der am 29.10.1947 von den Knoedler Galleries übernommen wurde."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/william-f-c-ewing
+    acquired: 1948-01
+    method: purchase
+    direct: true
+    place: new-york-city
+    price:
+      amount: 18000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+        note: "Footnote: Wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/m-knoedler-co
+    role: dealer
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+        note: "Footnote: Maison 1968, wie oben Fussnote 7; Kauffmann Inventar, Notizbuch I, beschriftet «1952/USA», auf einer Seite mit der Überschrift 25-5-52 KNOED und einer Liste von Gemälden, die Kauffmann offensichtlich in der Galerie Knoedler gesehen hat, darunter «Daumier, small picture with two heads, one en face», gekennzeichnet mit einem *. Der Preis für den Daumier wird mit 22.000 $ angegeben. In den Bestandsbü…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/arthur-kauffmann
+    role: dealer
+    ended: 1952-07-25
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+        note: "Footnote: AStEGB, Eingangsbuch II, 15.07.1952, welches Dr. Fritz Nathan als Einlieferer ausweist; Inventarkarte Daumier, Avocats, die Dr. Arthur Kauffmann als Verkäufer ausweist."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: agent
+    acquired: 1952-07-15 or earlier
+    ended: 1952-07-25
+    direct: true
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+        note: "Footnote: Wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-07-25
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+        note: "Footnote: Inventarkarte, wie oben Fussnote 13, mit Datum des Erwerbs; der Preis könnte $ 25.000 gewesen sein, Kauffmann Inventar, Notizbuch II, bezeichnet «1952/USA», und mit einer Auswahl von Gemälden, darunter Daumier, Les deux avocats, jetzt zum Preis von $ 25.000."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 28
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "28"
+    institution: foundation-e-g-buhrle-collection
+  - number: I-90
+    label: Maison (catalogue raisonné)
+  - number: "245"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600975/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

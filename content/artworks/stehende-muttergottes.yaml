@@ -1,0 +1,114 @@
+public_id: 111847
+title_lang: de
+title: Stehende Muttergottes
+names:
+  - lang: en
+    role: translation
+    text: Standing Virgin and Child
+  - lang: de
+    role: former
+    text: Stehende Maria mit Kind
+attribution_label: Anonymous, Bohemia
+created: c. 1350
+created_span: uncertain
+kind: sculpture
+medium: Sandstone
+dimensions: [195, 60, 40]
+institution: kunsthaus-zurich
+inventory_number: BU P.06
+web_url: https://collection.kunsthaus.ch/de/collection/item/3775/
+on_loan: true
+on_loan_since: 2021
+region: europe
+provenance:
+  - owner_label: unknown (collector)
+    ended: 1937
+    place: graz
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3775/
+        note: "Footnote: AStEGB, Brief von Lubomira Hédlová, Brünn, an die Stiftung Sammlung E.G. Bührle, 23.11.2001."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/johannes-hinrichsen
+    role: dealer
+    acquired: 1937
+    ended: 1954-09-22
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3775/
+        note: 'Footnote: Erworben in Graz 1937, Brief wie oben Fussnote 3; AStEGB, Inventarkarte Die Jungfrau mit Kind, abweichende Information zum Ankaufszeitpunt, der auf einen Erwerb durch Hinrichsen in Wien 1938 hinweist; AStEGB, Brief von Heinrich Hinrichsen, Alt-Aussee, an Emil Bührle, 11.02.1954, mit einem Hinweis auf die "Steinmadonna", die er zusammen mit zwei anderen Skulpturen für CHF 136.000 anbietet.'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-09-22
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 55000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3775/
+        note: "Footnote: AStEGB, Brief von Johannes Hinrichsen, Alt-Aussee, an Emil Bührle, 29.07.1954, über den Erwerb der Skulptur durch Bührle, den er an das Kunsthaus Zürich schickt, zusammen mit einer Rechnung über CHF 20.000, die einen Teil des Kaufpreises abdeckt; Kopie der obigen Rechnung, mit handschriftlichem Vermerk von Bührle über die Zusammensetzung des Gesamtkaufpreises von CHF 55'000  «Verrechnung 20'000 / …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3775/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. P6
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3775/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: P6
+    institution: foundation-e-g-buhrle-collection
+  - number: "608"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3775/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3775/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3775/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3775/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3775/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3775/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3775/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3775/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

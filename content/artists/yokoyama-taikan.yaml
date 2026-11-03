@@ -32,6 +32,49 @@ death: 1958-02-26
 wikidata_id: Q2034441
 metadata:
   sources: [Wikidata Q2034441 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2034441
+  - type: born_in
+    to: place/mito
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q2034441
+  - type: student_of
+    to: artist/hashimoto-gaho
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q2034441
+  - type: student_of
+    to: artist/kano-hogai
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q2034441
+  - type: student_of
+    to: person/okakura-kakuzo
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q2034441
+  - type: studied_at
+    to: institution/tokyo-academy-of-fine-arts
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q2034441
+  - type: associated_with
+    to: movement/nihonga
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q2034441
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/b/b3/Yokoyama_Taikan.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Yokoyama_Taikan.jpg

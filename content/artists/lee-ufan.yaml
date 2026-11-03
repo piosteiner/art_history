@@ -25,6 +25,31 @@ birth: 1936-06-24
 wikidata_id: Q399775
 metadata:
   sources: [Wikidata Q399775 (retrieved 2026-11-01)]
+relationships:
+  - type: born_in
+    to: place/seoul
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q399775
+  - type: lived_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-02
+        property: P551
+        wikidata: Q399775
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q399775
+  - type: worked_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q399775
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Lee_Ufan.jpg/1280px-Lee_Ufan.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Lee_Ufan.jpg

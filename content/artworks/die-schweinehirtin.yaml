@@ -1,0 +1,143 @@
+public_id: 112428
+title_lang: de
+title: Die Schweinehirtin
+names:
+  - lang: en
+    role: translation
+    text: The Swineherdess
+attribution_label: forgery after Gustave Courbet
+authenticity: forgery
+authenticity_note: 'Kunsthaus Zürich: "Forgery after Gustave Courbet"'
+kind: oil painting
+medium: Oil on canvas
+dimensions: [151, 131]
+institution: kunsthaus-zurich
+inventory_number: BU 0026
+web_url: https://collection.kunsthaus.ch/de/collection/item/805959/
+on_loan: true
+on_loan_since: 2021
+region: europe
+wikidata_id: Q131585333
+relationships:
+  - type: passed_off_as
+    to: artist/gustave-courbet
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Style_of_Gustave_Courbet_-_Girl_Herding_Pigs_%28Stiftung_B%C3%BChrle%29.jpg/1280px-Style_of_Gustave_Courbet_-_Girl_Herding_Pigs_%28Stiftung_B%C3%BChrle%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Style_of_Gustave_Courbet_-_Girl_Herding_Pigs_(Stiftung_B%C3%BChrle).jpg
+    license: Public domain
+    credit: Manner of Gustave Courbet
+provenance:
+  - owner: person/alexandre-berthier-prince-de-wagram
+    place: paris
+    label: 4. Prince de Wagram (*1883, +1918)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805959/
+        note: "Footnote: Archiv ZKG/KHZ, Fragebogen für Bilder von Courbet, ausgeliehen für die Courbet-Ausstellung im Kunsthaus Zürich 1935-36, ausgefüllt von Dr. Hermann Eissler, Wien, ca. Februar 1936: «Ich erwarb das Bild im Jahre 1915 von dem bekannten Wiener Sammler Karl Reininghaus. Dieser hatte es zwei Jahre vorher bei Barbazanges in Paris gekauft. Es kommt aus der Sammlung des Herzogs von Wagram.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-barbazanges
+    role: dealer
+    ended: 1913
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805959/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/carl-von-reininghaus
+    acquired: 1913
+    ended: 1915
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805959/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hermann-eissler
+    acquired: 1915
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805959/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/gottfried-tanner
+    ended: 1950-12-04
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805959/
+        note: "Footnote: AStEGB, Brief von G. Tanner, Zürich, an Emil Bührle, 07.10.1950, in dem er das Gemälde für CHF 35.000 anbietet, Angaben zur Provenienz macht und mitteilt, dass er das Gemälde soeben erworben habe, nachdem es seit 1939 in der Creditanstalt, Wien, deponiert war; Brief von G. Tanner, Zürich, an Emil Bührle, 11.11.1950, in dem er mitteilt, dass er das Gemälde 1913 in seiner Zürcher Galerie ausgestellt…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1950-12-04
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805959/
+        note: "Footnote: Erworben für CHF 25.000 + 1 Gemälde von Toulouse-Lautrec [D.P287], Brief von G. Tanner, Zürich, an Emil Bührle, 04.12.1950, der der (verlorenen) Rechnung beiliegt und den Kauf des Gemäldes durch Bührle bestätigt und den Preis angibt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 26
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "26"
+    institution: foundation-e-g-buhrle-collection
+  - number: "185"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

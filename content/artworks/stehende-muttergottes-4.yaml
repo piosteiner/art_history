@@ -1,0 +1,108 @@
+public_id: 112461
+title_lang: de
+title: Stehende Muttergottes
+names:
+  - lang: en
+    role: translation
+    text: Virgin Mary, Standing
+attribution_label: Anonymous, Lower Bavaria
+created: c. 1400
+created_span: uncertain
+kind: sculpture
+medium: Wood
+dimensions: [133, 47.3, 35]
+institution: kunsthaus-zurich
+inventory_number: BU P.29
+web_url: https://collection.kunsthaus.ch/de/collection/item/849972/
+on_loan: true
+on_loan_since: 2021
+region: europe
+provenance:
+  - owner: person/baumgartner
+    place: konzell
+    label: Haid and Konzell
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849972/
+        note: "Footnote: AStEGB, Brief von Julius Böhler, München, an Emil Bührle, 18.03.1953, wonach die Skulptur früher in einer Kapelle bei Haid/Konzell (Niederbayern) aufbewahrt wurde. Herr Baumgartner wird als Inhaber einer Brauerei identifiziert."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/julius-wilhelm-bohler
+    role: dealer
+    ended: 1952-12-09
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849972/
+        note: "Footnote: AStEGB, Gesuch um Einfuhrbewilligung für eine Holzskulptur, ausgefüllt im Namen von Emil Bührle, 05.01.1953, und identifizierend Julius Böhler, München, als Lieferant einer Holzskulptur Jungfrau mit Kind, versandt in die Schweiz am 02.10.1952. Der angegebene Wert beträgt CHF 15'600."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-12-09
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    label: 10.300 DM
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849972/
+        note: "Footnote: AStEGB, Eingangsbuch I, 31.10.1952, und Schreiben von Julius Böhler, München, an Emil Bührle, 09.12.1952, in dem der Eingang eines Betrages von 10.300 DM zur Deckung einer (inzwischen verlorenen) Rechnung vom 09.11.1952 bestätigt wird."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849972/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. P29
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849972/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: P29
+    institution: foundation-e-g-buhrle-collection
+  - number: "576"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

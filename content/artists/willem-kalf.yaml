@@ -1,0 +1,84 @@
+public_id: 112158
+name: Willem Kalf
+given_name: Willem
+family_name: Kalf
+birth: 1619
+death: 1693-07-31
+wikidata_id: Q28144
+metadata:
+  sources: [Wikidata Q28144 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q28144
+  - type: born_in
+    to: place/rotterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q28144
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q28144
+  - type: worked_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q28144
+  - type: worked_in
+    to: place/rotterdam
+    period: 1634/1638
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q28144
+  - type: worked_in
+    to: place/paris
+    period: 1641/1646
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q28144
+  - type: worked_in
+    to: place/amsterdam
+    period: 1653/1693
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q28144
+  - type: associated_with
+    to: movement/dutch-golden-age-painting
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q28144
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Portret_van_Willem_Kalff%2C_RP-T-1897-A-3435.jpg/1280px-Portret_van_Willem_Kalff%2C_RP-T-1897-A-3435.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portret_van_Willem_Kalff,_RP-T-1897-A-3435.jpg
+    license: CC0
+    credit: Rijksmuseum
+identifiers:
+  bnf: "149597085"
+  dome: "3376"
+  gnd: "118714899"
+  idref: "055312837"
+  lc: n90718235
+  rkd: "43285"
+  ulan: "500006439"
+  viaf: "52484309"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q28144
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q28144

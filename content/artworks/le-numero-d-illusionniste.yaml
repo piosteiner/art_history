@@ -1,0 +1,173 @@
+public_id: 112138
+title_lang: fr
+title: Le Numéro d'illusionniste
+names:
+  - lang: de
+    role: translation
+    text: Der Zauberer
+  - lang: en
+    role: translation
+    text: The Vaudeville Show Magician
+  - lang: en
+    role: translation
+    text: The Conjuring Act
+creator: edouard-vuillard
+created: c. 1895
+created_span: uncertain
+kind: oil painting
+medium: Oil on cardboard on panel
+dimensions: [49, 39]
+institution: kunsthaus-zurich
+inventory_number: BU 0113
+web_url: https://collection.kunsthaus.ch/de/collection/item/604997/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64410178
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a5/%C3%89douard_Vuillard_-_Le_Num%C3%A9ro_d%27illusionniste_-_113_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Vuillard_-_Le_Num%C3%A9ro_d%27illusionniste_-_113_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Édouard Vuillard
+provenance:
+  - owner: person/sergei-iwanowitsch-schtschukin
+    ended: 1900-03-24
+    place: moscow
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+        note: "Footnote: Salomon/Cogeval 2003, Nr. III-50."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1900-03-24
+    ended: 1900-03-24
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    role: dealer
+    ended: 1905
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+        note: "Footnote: Inventar Nr. 10469, Salomon/Cogeval 2003, Nr. III-50."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: artist/edouard-vuillard
+    acquired: 1905-05-03
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 472.5
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/prince-antoine-bibesco
+    ended: 1951-09-02
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+        note: "Footnote: Salomon/Cogeval 2003, Nr. III-50."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/priscilla-hodgson
+    acquired: 1951-09-02
+    method: inheritance
+    direct: true
+    place: london
+    label: née Countess Bibesco; London and Paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+        note: "Footnote: AStEGB, Antwort von Marlborough Fine Art Ltd., London, auf eine Anfrage von Dr. Walter Drack [Kurator der Sammlung Bührle], 28. Mai 1955, betreffend die Provenienz von sieben von Emil Bührle erworbenen Gemälden, darunter Vuillard, Le Numéro d'illusionniste."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    acquired: 1955-01-31 or earlier
+    ended: 1955-02-03
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+        note: "Footnote: AStEGB, Rechnung von Trafo, Anstalt für Handel und Finanz, Vaduz [Marlborough Fine Art Ltd., London], ausgestellt auf Emil Bührle, 31. Januar 1955, für zwei Gemälde, darunter Vuillard, Le Numéro d'illusionniste."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-02-03
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+        note: "Footnote: Erworben zusammen mit dem Gemälde Homme au violon von Georges Braque (Sammlung Emil Bührle, Inv. 9), für einen Gesamtbetrag von CHF 189.000, Rechnung wie oben Fussnote 12, und AStEGB, Schreiben der Industrie- und Handelsbank, Zürich, an Emil Bührle, 3. Februar 1955, zur Bestätigung der Überweisung des obigen Betrags."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 113
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "113"
+    institution: foundation-e-g-buhrle-collection
+  - number: I.200.III-50
+    label: Salomon/Cogeval (catalogue raisonné)
+  - number: "427"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -8,6 +8,7 @@ medium: Iron
 materials: [iron]
 dimensions: [51.6]
 dimensions_note: length
+region: east_asia
 description_md: "A horse’s face guard from Tomb 10.11 at Pokch’ŏn-dong, Pusan: excavations at Kaya sites have produced considerable iron armour for men and horses, like that in Koguryŏ wall paintings — the basis for Egami’s theory of horse-riders who crossed to Japan. [[source/portal-2000|p. 55, fig. 29]]"
 relationships:
   - type: created_in_polity

@@ -21,6 +21,19 @@ death: 1956-09-06
 wikidata_id: Q3789181
 metadata:
   sources: [Wikidata Q3789181 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/south-korea
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3789181
+  - type: died_in
+    to: place/seoul
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q3789181
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/3/3e/%EC%9D%B4%EC%A4%91%EC%84%AD_%ED%99%94%EB%B0%B1.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%EC%9D%B4%EC%A4%91%EC%84%AD_%ED%99%94%EB%B0%B1.jpg

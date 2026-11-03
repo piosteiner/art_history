@@ -1,0 +1,111 @@
+public_id: 112378
+title_lang: fr
+title: La Papeterie, Nanterre
+names:
+  - lang: de
+    role: translation
+    text: Die Fabrik
+  - lang: en
+    role: translation
+    text: The Factory
+creator: maurice-de-vlaminck
+created: 1904
+kind: oil painting
+medium: Oil on canvas
+dimensions: [65, 81]
+institution: kunsthaus-zurich
+inventory_number: BU 0112
+web_url: https://collection.kunsthaus.ch/de/collection/item/752964/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q124294677
+provenance:
+  - owner: person/lupo-stein
+    acquired: 1949 or earlier
+    place: buenos-aires
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752964/
+        note: "Footnote: Vallès-Bled 2008, No. 16."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    ended: 1952-09-08
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752964/
+        note: "Footnote: AStEGB, Eingangsbuch I, 8. September 1952."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-09-08
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752964/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752964/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 112
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752964/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "112"
+    institution: foundation-e-g-buhrle-collection
+  - number: "16"
+    label: Vallès-Bled (catalogue raisonné)
+  - number: "247"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

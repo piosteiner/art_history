@@ -15,6 +15,37 @@ birth: 1951
 wikidata_id: Q595342
 metadata:
   sources: [Wikidata Q595342 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q595342
+  - type: born_in
+    to: place/osaka
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q595342
+  - type: worked_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q595342
+  - type: worked_in
+    to: place/osaka
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q595342
+  - type: studied_at
+    to: institution/kyoto-city-university-of-arts
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q595342
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/14/Yasumasa_Morimura_%28Osaka_1990%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Yasumasa_Morimura_(Osaka_1990).jpg

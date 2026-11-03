@@ -21,6 +21,27 @@ death: 1957-04-03
 wikidata_id: Q3198111
 metadata:
   sources: [Wikidata Q3198111 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3198111
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3198111
+  - type: associated_with
+    to: movement/nihonga
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q3198111
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Kobayashi_Kokei_photographed_by_Shigeru_Tamura.jpg/1280px-Kobayashi_Kokei_photographed_by_Shigeru_Tamura.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Kobayashi_Kokei_photographed_by_Shigeru_Tamura.jpg

@@ -8,12 +8,40 @@ wikidata_id: Q164124
 metadata:
   sources: [Wikidata Q164124 (retrieved 2026-10-30)]
 relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q164124
+  - type: member_of
+    to: movement/die-brucke
+    period: 1905/1907
+    sources:
+      - accessed: 2026-11-02
+        property: P463
+        wikidata: Q164124
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q164124
   - type: founded
     to: movement/die-brucke
     sources:
       - accessed: 2026-10-30
         property: P112
         wikidata: Q152778
+identifiers:
+  bnf: "149699005"
+  dome: "5711"
+  gnd: "119139847"
+  idref: "148392822"
+  lc: n94021123
+  rkd: "223274"
+  ulan: "500073240"
+  viaf: "32269670"
 sources:
   birth:
     - accessed: 2026-10-30

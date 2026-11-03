@@ -1,0 +1,138 @@
+public_id: 112258
+title_lang: en
+title: Pont Saint-Michel, effet de neige
+names:
+  - lang: de
+    role: translation
+    text: Der Pont Saint-Michel, Paris, bei Schnee
+  - lang: en
+    role: translation
+    text: The Pont Saint-Michel, Paris, Snow Effect
+creator: henri-matisse
+created: 1897
+kind: oil painting
+medium: Oil on canvas
+dimensions: [60, 73]
+institution: kunsthaus-zurich
+inventory_number: BU 0067
+web_url: https://collection.kunsthaus.ch/de/collection/item/707970/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131586166
+provenance:
+  - owner: person/andre-level
+    acquired: 1904-03-05
+    method: purchase
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707970/
+        note: "Footnote: Blondel/Ivanoff 2025, No. 93.008, S. 52."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/ambroise-vollard
+    role: dealer
+    ended: 1937-07-12
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707970/
+        note: "Footnote: Musée d'Orsay, Paris, Fonds Vollard, MS 421 (3,1) F° 105, Brief mit Quittung von Etienne Bignou, Paris für Alex Reid & Lefevre, London, ausgestellt auf Ambroise Vollard, Paris, 12.07.1937, Ambroise Vollard Records Wildenstein Plattner Institute, Paris, Ambroise Vollard Records, Matisse_Vollard-1422_WPI -1922 Inventory [1 to 3000]; AStEGB, Brief von Marlborough Fine Art Ltd., London, an Walter Drac…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/etienne-bignou
+    co_owners: [institution/alex-reid-lefevre]
+    acquired: 1937-07-12
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and London
+    price:
+      amount: 3000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707970/
+        note: "Footnote: Musée d'Orsay, Paris, Fonds Vollard, Brief mit Quittung von Etienne Bignou, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    ended: 1954-05-21
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707970/
+        note: "Footnote: Archiv Marlborough International Fine Art, Kopie des Schreibens von Trafo, Anstalt für Handel und Finanz, Vaduz [Marlborough Fine Art Ltd., London] an Emil Bührle, 17.05.1954, mit AStEGB, Rechnung von Trafo, Anstalt für Handel und Finanz, Vaduz [Marlborough Fine Art Ltd., London], ausgestellt auf Emil Bührle, 17.05.1954."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-05-21
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 75000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707970/
+        note: "Footnote: AStEGB, Rechnung, wie oben Fussnote 8; AStEGB, Schreiben der Industrie- und Handelsbank, Zürich, an Emil Bührle, 21.05.1954, mit der Bestätigung der Überweisung des oben genannten Betrags."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707970/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 67
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707970/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "67"
+    institution: foundation-e-g-buhrle-collection
+  - number: Matisse.52.03-008
+    label: Blondel/Ivanoff (catalogue raisonné)
+  - number: "379"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

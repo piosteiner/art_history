@@ -15,6 +15,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 183, fig. 212
+  - type: illustrates
+    to: literature/the-diary-of-lady-murasaki
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 183, fig. 212
 sources:
   kind:
     - source: history-of-japanese-art

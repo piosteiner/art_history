@@ -1,0 +1,37 @@
+public_id: 111828
+name: Giovanni Mazone
+given_name: Giovanni
+family_name: Mazone
+birth: 1433
+death: 1511
+wikidata_id: Q3107271
+metadata:
+  sources: [Wikidata Q3107271 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/italy
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q3107271
+  - type: died_in
+    to: place/genoa
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q3107271
+identifiers:
+  gnd: "188443630"
+  lc: n2021027796
+  rkd: "54269"
+  ulan: "500014134"
+  viaf: "316742277"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q3107271
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q3107271

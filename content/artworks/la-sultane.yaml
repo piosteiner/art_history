@@ -1,0 +1,232 @@
+public_id: 111924
+title_lang: fr
+title: La Sultane
+names:
+  - lang: de
+    role: translation
+    text: Junge Frau in orientalischem Gewand
+  - lang: en
+    role: translation
+    text: Young Woman in Oriental Garb
+creator: edouard-manet
+created: c. 1871
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [96, 74.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0062
+web_url: https://collection.kunsthaus.ch/de/collection/item/48911/
+on_loan: true
+on_loan_since: 2021
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q64174099
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ed/%C3%89douard_Manet_-_La_Sultane_-_62_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Manet_-_La_Sultane_-_62_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Édouard Manet
+provenance:
+  - owner: person/adrien-marx
+    acquired: 1871
+    ended: 1892
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+        note: "Footnote: Vom Künstler erhalten, siehe Widmung auf dem Bild (später übermalt): «à l'ami Adrien Marx»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/roger-marx
+    acquired: 1892
+    ended: 1913-12-13
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 450
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+        note: "Footnote: Sammlungsetikette Werkrückseite; Tabarant 1947, S. 289; Kat. Musée des Beaux-Arts Nancy 2006, No. 3, S. 31; Neffe des Vorgenannten, erworben von dem Vorgenannten (Adrien Marx) für 450 FF."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/roger-marx
+    role: estate
+    acquired: 1913-12-13
+    ended: 1914-05-11
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+        note: "Footnote: Kat. Galerie Manzi-Joyant 1914, No. 60."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    co_owners: [institution/bernheim-jeune, person/paul-cassirer]
+    role: dealer
+    acquired: 1914-05-11
+    ended: 1914-05-20
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and Berlin
+    price:
+      amount: 74000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+        note: "Footnote: o. V. in Scheffler 1914, S. 557; Rouart/Wildenstein 1975, Bd. I, No. 175."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    co_owners: [person/paul-cassirer]
+    role: dealer
+    acquired: 1914-05-20
+    ended: 1915-04-12
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and Berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+        note: "Footnote: Rouart/Wildenstein, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    co_owners: [institution/bernheim-jeune, person/paul-cassirer]
+    role: dealer
+    acquired: 1915-04-12
+    ended: 1923-07-20
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and Berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1923-07-20
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+        note: "Footnote: Ausstellungsetikette auf der Werkrückseite; AStEGB, Kopie des Berichts von Monika Tatzkow, übermittelt an die Stiftung Sammlung E.G. Bührle am 16.04.2009; Kat. Carnegie Institute 1924, No. 19; Kat. Galerie Matthiesen 1928, No. 35, S. 32. Nach den im Archiv der Galerie Durand-Ruel in Paris aufbewahrten Dokumenten, die im Bericht von Dr. Monika Tatzkow an von Trott zu Solz, Kanzlei, Berlin, 20.03.20…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/max-silberberg
+    acquired: 1928-02-06 or earlier
+    ended: 1937
+    method: purchase
+    place: wroc-aw
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+        note: "Footnote: Ausstellungsetikette Bernheim-Jeune 1928 auf der Werkrückseite; Notiz zur Besichtigung Max Silberbergs in der Galerie Thannhauser, Berlin, 04.01.1927, Zentralarchiv des Internationalen Kunsthandels (ZADIK), Köln, Thannhauser Archive A77; Kat. Galerie Matthiesen 1928, S. 32, No. 35; Kat. Bernheim-Jeune 1928, S. 10, No. 24; Wildenstein/Jamot 1932, S. 142, No. 200. Im Archiv der Galerie Durand-Ruel i…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1932 or earlier
+    ended: 1937
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+        note: "Footnote: Etikette Galerie Paul Rosenberg auf der Werkrückseite, No. 3097; Fotoinventar der Galerie Paul Rosenberg, Paris, Nr. 3079, The Paul Rosenberg Archives, Museum of Modern Art, New York; Geschäftsbuch der Galerie Paul Rosenberg, New York, No. 5106, Manet La Sultane, The Paul Rosenberg Archives, Museum of Modern Art, New York; Räumlichkeiten der Galerie Paul Rosenberg 1935 mit dem Gemälde La Sultane i…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1937
+    ended: 1953-09-18
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 17800
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+        note: "Footnote: Etikette Galerie Paul Rosenberg auf der Werkrückseite, Nr. 3097; Fotoinventar der Galerie Paul Rosenberg, wie oben Fussnote 11; Geschäftsbuch der Galerie Paul Rosenberg,, wie oben Fussnote 11; AStEGB, Brief von Paul Rosenberg, New York, an Emil Bührle, 22. September 1952, mit Einzelrechnungen für 10 Bilder, die Bührle bei ihm erworben hat, darunter Manet, La Sultane; Rechnung von Paul Rosenberg, N…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-09-18
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 58500
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+        note: "Footnote: AStEGB, Rechnung von Paul Rosenberg, New York, ausgestellt auf Emil Bührle, 22. September 1952, mit Angabe von Silberberg als Vorbesitzer; Brief von Emil Bührle an Paul Rosenberg, Zürich, 6. Mai 1953, mit einem Scheck zur Bezahlung von 4 Bildern und einem Zahlungsplan für 3 noch ausstehende Bilder, darunter Manet, La Sultane; [Rechnung von Paul Rosenberg, New York, ausgestellt auf Emil Bührle, 14.…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 62
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "62"
+    institution: foundation-e-g-buhrle-collection
+  - number: "175"
+    label: Rouart/Wildenstein (catalogue raisonné)
+  - number: "254"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48911/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

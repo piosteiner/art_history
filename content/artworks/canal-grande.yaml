@@ -1,0 +1,135 @@
+public_id: 111942
+title_lang: en
+title: Canal Grande
+creator: canaletto
+created: 1738/1742
+kind: oil painting
+medium: Oil on canvas
+dimensions: [121, 152]
+institution: kunsthaus-zurich
+inventory_number: BU 0138
+web_url: https://collection.kunsthaus.ch/de/collection/item/585961/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131585976
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/75/Giovanni_Antonio_Canaletto_-_Canal_Grande_-_138_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Antonio_Canaletto_-_Canal_Grande_-_138_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Giovanni Antonio Canal
+provenance:
+  - owner: person/john-campbell
+    ended: 1743-10-04
+    label: 2nd Duke of Argyll; 1st Duke of Greenwich (*1680, +1743) (Sammler/-in); Adderbury House; Oxfordshire
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585961/
+        note: "Footnote: Lloyd 2003, S. 39, 41."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/dukes-of-buccleuch-and-queensberry
+    acquired: 1743-10-04
+    ended: 1953 or earlier
+    method: inheritance
+    direct: true
+    label: Dalkeith Palace, Edinburgh
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585961/
+        note: "Footnote: Constable/Links 1962, Bd. II, Nr. 224; Lloyd 2003, wie oben Fussnote 3. Die Heirat von Caroline, Tochter von John Campbell, 2nd Duke of Argyll & 1st Duke of Greenwich, mit Francis, Earl of Dalkeith, führte zur Überführung der bedeutenden Kunstsammlung ihres Vaters von Adderbury House nach Dalkeith Palace, der Residenz der Herzöge von Bucchleuch, wo die Gemälde mindestens bis zum Beginn des 20. Jah…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/richard-austen-butler
+    acquired: after 1920
+    ended: 1953 or earlier
+    direct: true
+    place: london
+    label: Baron Butler of Saffron Walden (*1902, +1982)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585961/
+        note: 'Footnote: Constable/Links 1962, Nr. 22. Ein Hinweis in Constable/Links Nr. 224, wonach das vorliegende Gemälde seit den 1920er Jahren im Büro des Schatzamtes in London hing, wird bestätigt durch AStEGB, Brief von F. K. Lloyd, Marlborough Fine Art Ltd. in London, an Emil Bührle, 28. Januar 1953, in dem von den Canalettos aus der Sammlung des Herzogs von Buccleuch die Rede ist, die als "Leihgabe" im Privatbür…'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/edward-speelman
+    co_owners: [institution/marlborough-fine-art-ltd]
+    role: dealer
+    acquired: 1953 or earlier
+    ended: 1953-04-20
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585961/
+        note: "Footnote: Constable/Links 1962, Bd. II, Nr. 224; alle sechs Buccleuch Canalettos wurden gemeinsam von Edward Speelman und Marlborough Fine Art Ltd. erworben, Auskunft von Herrn Anthony Speelman, London, Sohn von Edward Speelman, an die Stiftung E.G. Bührle Collection, 23.11.2009, und bestätigt von Marlborough International Fine Art, 24.08.2012."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-04-20
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585961/
+        note: "Footnote: Rechnung der Trafo Anstalt für Handel und Finanz, Vaduz, an Emil Bührle vom 20.04.1953 für vier Gemälde (zwei Ansichten von Venedig von Canaletto, Blumen und Zitronen von Picasso und Der verlorene Sohn von Puvis de Chavannes, Sammlung Emil Bührle, Inv. 138, 139, 77, 42) für einen Gesamtbetrag von 420.000 CHF; AStEGB, Quittung über den Gesamtbetrag von 420.000 CHF für alle vier Gemälde, unterzeichn…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 138
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "138"
+    institution: foundation-e-g-buhrle-collection
+  - number: "224"
+    label: Constable-Links (catalogue raisonné)
+  - number: "281"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

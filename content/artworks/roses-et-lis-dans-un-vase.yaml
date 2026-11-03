@@ -1,0 +1,139 @@
+public_id: 112227
+title_lang: en
+title: Roses et Lis dans un vase
+names:
+  - lang: en
+    role: translation
+    text: Rosen und Lilien in einer Vase
+  - lang: en
+    role: translation
+    text: Roses and Lilies in a Vase
+creator: henri-fantin-latour
+created: 1864
+kind: oil painting
+medium: Oil on canvas
+dimensions: [57, 42.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0043
+web_url: https://collection.kunsthaus.ch/de/collection/item/704965/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131585850
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f7/Henri_Fantin-Latour_-_Roses_et_Lis_dans_un_vase_-_43_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_Fantin-Latour_-_Roses_et_Lis_dans_un_vase_-_43_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Henri Fantin-Latour
+provenance:
+  - owner: artist/james-mcneill-whistler
+    ended: 1903-07-17 or earlier
+    method: gift
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704965/
+        note: "Footnote: Als Geschenk des Künstlers erhalten, Fantin-Latour 1911, No. 242."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/j-russell-buckler
+    ended: 1906-03-10
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704965/
+        note: "Footnote: Auktion Christie's, London (10.03.1906), No. 58 (verkauft für 205 Guineas); Fantin-Latour 1911, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1906-03-10
+    ended: 1906-03-10
+    method: auction
+    direct: true
+    place: london
+    label: Lot 58
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704965/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    ended: 1952-11-10
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704965/
+        note: "Footnote: AStEGB, Eingangsbuch I, 09.10.1952."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-11-10
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704965/
+        note: "Footnote: Wie oben Fussnote 7: mit Verweis auf das Kaufdatum; Brief von F. K. Lloyd, Marlborough Fine Art Ltd, London, an Emil Bührle, 14.11.1952, der die (verlorene) Rechnung für das Gemälde begleitet."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704965/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 43
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704965/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "43"
+    institution: foundation-e-g-buhrle-collection
+  - number: "242"
+    label: Fantin-Latour (catalogue raisonné)
+  - number: "265"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/704965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

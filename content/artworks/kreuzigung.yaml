@@ -1,0 +1,133 @@
+public_id: 112171
+title_lang: en
+title: Kreuzigung
+names:
+  - lang: en
+    role: translation
+    text: Crucifixion
+attribution_label: Anonymous, Austria
+created: c. 1340
+created_span: uncertain
+kind: oil painting
+medium: Tempera on panel
+dimensions: [33, 24]
+institution: kunsthaus-zurich
+inventory_number: BU 0148
+web_url: https://collection.kunsthaus.ch/de/collection/item/699959/
+on_loan: true
+on_loan_since: 2021
+region: europe
+wikidata_id: Q131586044
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ab/Austria_-_Kreuzigung_-_148_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Austria_-_Kreuzigung_-_148_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: anonymous
+provenance:
+  - owner: person/von-stulpnagel
+    place: potsdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699959/
+        note: "Footnote: Kunsthaus Zürich 1958 (Sammlungskatalog), Nr. 49."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/julius-wilhelm-bohler
+    role: dealer
+    acquired: 1913 or earlier
+    ended: 1934 or later
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699959/
+        note: "Footnote: Burger/Schmitz/Beth 1913, S. 202, Abb. 231; Pächt 1929, S. 69; Stange 1934, S. 157-158, Abb. 152."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/oskar-hans-joseph-marcuse
+    place: bad-endorf
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699959/
+        note: "Footnote: AStEGB, Brief von Hans Oskar Marcuse, Endorf, Oberbayern, an Emil Bührle, 08.06.1955, zu einem (heute verschollenen) Gutachten von Prof. Dr. Erich Wiese, Hessisches Landesmuseum, Darmstadt, das von Marcuse in Auftrag gegeben worden war, als er die Tafel hatte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandlung-fritz-und-peter-nathan
+    role: dealer
+    ended: 1954-05-04
+    place: new-york-city
+    label: New York and Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699959/
+        note: "Footnote: AStEGB, Zahlungsauftrag von Emil Bührle an die Industrie- und Handelsbank, Zürich, 04.05.1954, über die Summe von $ 92.500 für vier Gemälde, die von Dr. Peter Nathan, New York, über Dr. Fritz Nathan, Zürich, erworben wurden. Diesem Zahlungsauftrag ist eine maschinengeschriebene, von Emil Bührle initialisierte Liste beigefügt, die die Zahlung durch die Industrie- und Handelsbank, Zürich, am 04.05.1…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-05-04
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 45000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699959/
+        note: "Footnote: AStEGB, Auszahlungsbestätigung der Industrie- und Handelsbank, Zürich, 04.05.1954."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 148
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "148"
+    institution: foundation-e-g-buhrle-collection
+  - number: "378"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

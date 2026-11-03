@@ -12,6 +12,13 @@ death: 1934-05
 wikidata_id: Q46103484
 metadata:
   sources: [Wikidata Q46103484 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q46103484
 identifiers:
   gnd: "1336047321"
   lc: no2008036384

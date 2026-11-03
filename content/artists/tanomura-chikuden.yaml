@@ -24,6 +24,25 @@ death: 1835-10-20
 wikidata_id: Q1358543
 metadata:
   sources: [Wikidata Q1358543 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q1358543
+  - type: died_in
+    to: place/osaka
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q1358543
+  - type: student_of
+    to: artist/tani-buncho
+    sources:
+      - accessed: 2026-11-02
+        property: P802
+        wikidata: Q1375891
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/1a/TanomuraChikuden%E7%94%B0%E8%83%BD%E6%9D%91%E7%AB%B9%E7%94%B0.jpg
     source_url: https://commons.wikimedia.org/wiki/File:TanomuraChikuden%E7%94%B0%E8%83%BD%E6%9D%91%E7%AB%B9%E7%94%B0.jpg

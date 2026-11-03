@@ -1,0 +1,115 @@
+public_id: 112301
+name: Odilon Redon
+given_name: Odilon
+family_name: Redon
+names:
+  - kind: birth
+    lang: fr
+    role: former
+    text: Bertrand Redom
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q154349
+birth: 1840-04-20
+death: 1916-07-06
+wikidata_id: Q154349
+metadata:
+  sources: [Wikidata Q154349 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q154349
+  - type: born_in
+    to: place/bordeaux
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q154349
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q154349
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q154349
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q154349
+  - type: worked_in
+    to: place/netherlands
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q154349
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q154349
+  - type: worked_in
+    to: place/rotterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q154349
+  - type: influenced_by
+    to: artist/eugene-delacroix
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q154349
+  - type: influenced_by
+    to: artist/francisco-goya
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q154349
+  - type: influenced_by
+    to: artist/henri-fantin-latour
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q154349
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q154349
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Odilon_Redon_vers_1880.jpg/1280px-Odilon_Redon_vers_1880.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Odilon_Redon_vers_1880.jpg
+    license: Public domain
+    credit: Guy et Mockel (Pierre Mockel)
+identifiers:
+  bnf: 11921356z
+  dome: "316"
+  gnd: "118743740"
+  idref: "027092445"
+  kulturnav: e55c76d7-f4f6-4804-8798-f08ad6956afb
+  lc: n50046104
+  rkd: "65887"
+  ulan: "500007292"
+  viaf: "73859058"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q154349
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q154349

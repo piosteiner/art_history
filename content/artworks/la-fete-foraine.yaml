@@ -1,0 +1,127 @@
+public_id: 112054
+title_lang: fr
+title: La Fête foraine
+names:
+  - lang: en
+    role: translation
+    text: Jahrmarkt
+  - lang: en
+    role: translation
+    text: The Fun Fair
+creator: raoul-dufy
+created: c. 1906
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [54, 65]
+institution: kunsthaus-zurich
+inventory_number: BU 0042
+web_url: https://collection.kunsthaus.ch/de/collection/item/604958/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q124294673
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6c/Raoul_Dufy_-_La_F%C3%AAte_foraine_-_42_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Raoul_Dufy_-_La_F%C3%AAte_foraine_-_42_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Raoul Dufy
+provenance:
+  - owner: person/nanse
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604958/
+        note: "Footnote: Laffaille 1972, Bd. I, No. 180."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alphonse-bellier
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604958/
+        note: "Footnote: AStEGB, Inventarkarte Dufy, Fête foraine."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    acquired: 1953-12-22 or earlier
+    ended: 1954-01-23
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604958/
+        note: "Footnote: AStEGB, handschriftliche Notiz, die Gemälde auflistet, über die Bührle mit Dr. Fritz Nathan verhandelte, darunter Dufy, Fête foraine, und eine Notiz von anderer Hand, die sich auf Dr. Nathan bezieht, als Anlage zum Zahlungsauftrag von Emil Bührle an die Industrie- und Handelsbank, Zürich, 22.12.1953 [betreffend einer anderen Zahlung]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-01-23
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 3500000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604958/
+        note: "Footnote: AStEGB, Zahlungsauftrag von Emil Bührle an die Industrie- und Handelsbank, Zürich, 06.01.1954 und Ausführungsbestätigung der Industrie- und Handelsbank, Zürich, 23.01.1954, über den Betrag von FF 3,5 Mio. (= CHF 40.162)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 42
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "42"
+    institution: foundation-e-g-buhrle-collection
+  - number: "180"
+    label: Laffaille (catalogue raisonné)
+  - number: "344"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,201 @@
+public_id: 112086
+title_lang: en
+title: Vue sur le village de Marly-le-Roi
+names:
+  - lang: de
+    role: translation
+    text: Blick auf das Dorf Marly-le-Roi
+  - lang: en
+    role: translation
+    text: View of the Village of Marly-le-Roi
+creator: camille-pissarro
+created: 1870
+kind: oil painting
+medium: Oil on canvas
+dimensions: [46, 71]
+institution: kunsthaus-zurich
+inventory_number: BU 0182
+web_url: https://collection.kunsthaus.ch/de/collection/item/604979/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64174090
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7e/Camille_Pissarro_-_Vue_sur_le_village_de_Marly-le-Roi_-_182_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Camille_Pissarro_-_Vue_sur_le_village_de_Marly-le-Roi_-_182_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Camille Pissarro
+provenance:
+  - owner: person/pierre-firmin-martin
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+        note: "Footnote: Pissarro/Durand-Ruel 2005, Nr. 170."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1872-04
+    ended: 1900-04
+    method: purchase
+    direct: true
+    place: paris
+    label: inv. no. 1621
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+        note: "Footnote: Wie oben Fussnote 3. Dieser Eintrag wird durch eine Galerie-Etikette auf dem Keilrahmen des Gemäldes bestätigt mit der Inv. Nr. 1621."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bruno-paul-cassirer-kunst-und-verlagsanstalt
+    role: dealer
+    acquired: 1900-04
+    ended: 1900-04-11
+    method: purchase
+    direct: true
+    label: Berlin; inv. no. 685
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+        note: "Footnote: Wie oben Fussnote 3. Dieser Eintrag wird durch eine Galerie-Etikette auf dem Keilrahmen des Gemäldes bestätigt mit der Inv. Nr. 685."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/eduard-arnhold
+    acquired: 1900-04-11
+    ended: 1925-08-10
+    method: purchase
+    direct: true
+    place: berlin
+    label: 5.000 RM
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+        note: "Footnote: Dorrmann 2002, Nr. A 49."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/eduard-arnhold
+    role: estate
+    acquired: 1925-08-10
+    ended: 1939
+    method: inheritance
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+        note: "Footnote: E-Mail Korrespondenz zwischen Christoph Kunheim, Urenkel von Eduard Arnhold, und der Stiftung Sammlung E.G. Bührle, Nov. 2020 - Juni 2021: Eduard Arnhold hatte in seinem Testament verfügt, dass die Sammlung in seinem Haus zusammenbleiben und nach dem Tod seiner Frau zehn Jahre lang der Öffentlichkeit zugänglich gemacht werden sollte. Johanna Arnhold verstarb 1929, und 1939 wurde die Sammlung unter…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/elisabeth-clewing
+    acquired: 1939
+    ended: 1952-05-22
+    method: inheritance
+    direct: true
+    label: née Mulert; verw. Kunheim (*1883 Lüdenscheid, +1952 Karlsruhe)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+        note: "Footnote: E-Mail-Korrespondenz, wie oben Fussnote 7: Adoptivtochter von Eduard und Johanna Arnhold."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/elisabeth-clewing
+    role: estate
+    acquired: 1952-05-22
+    ended: 1953
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    acquired: 1953
+    ended: 1954-03-22
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+        note: "Footnote: E-Mail-Korrespondenz, wie oben Fussnote 7; AStEGB, Eingangsbuch II, 20.03.1954."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-03-22
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+        note: "Footnote: Eingangsbuch, wie oben Fussnote 10, mit Verweis auf das Kaufdatum."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1967
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+        note: "Footnote: Die Kunstwerke, die 1960 nicht in die Stiftung Sammlung E.G. Bührle gelangten, wurden 1967 unter Emil Bührles Sohn Dr. Dieter Bührle und seiner Tochter Hortense Anda-Bührle aufgeteilt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/dieter-buhrle
+    acquired: 1967
+    ended: 2012-11-09
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+        note: "Footnote: Sohn von Emil Bührle und 1960, zusammen mit seiner Mutter Charlotte Bührle-Schalk und seiner Schwester Hortense (Anda-)Bührle, einer der drei Gründer der Stiftung Sammlung E.G. Bührle, deren Stiftungsrat er von 1960 bis 2012 angehörte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 2012-11-09
+    method: inheritance
+    direct: true
+    place: zurich
+    label: inv. no. 182
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "182"
+    institution: foundation-e-g-buhrle-collection
+  - number: "170"
+    label: Pissarro/Durand-Ruel (catalogue raisonné)
+  - number: "367"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

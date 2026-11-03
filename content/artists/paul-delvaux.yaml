@@ -22,6 +22,26 @@ death: 1994-07-20
 wikidata_id: Q164712
 metadata:
   sources: [Wikidata Q164712 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/belgium
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q164712
+  - type: worked_in
+    to: place/brussels
+    period: 1918/1994
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q164712
+  - type: studied_at
+    to: institution/royal-academy-of-fine-arts-of-brussels
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q164712
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Veurne_Paul_Delvaux.jpg/1280px-Veurne_Paul_Delvaux.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Veurne_Paul_Delvaux.jpg

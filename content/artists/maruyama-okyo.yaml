@@ -6,17 +6,40 @@ names:
   - lang: ja
     role: original
     text: 円山応挙
+  - Maruyama Okyo
+  - Ōkyo Maruyama
+  - lang: zh
+    role: translation
+    text: 丸山応挙
+  - lang: ko
+    role: translation
+    text: 마루야마 오쿄
+  - lang: ru
+    role: translation
+    text: Маруяма Окё
 birth: 1733-06-12
 death: 1795-08-31
 wikidata_id: Q405444
 metadata:
   sources: [Wikidata Q405444 (retrieved 2026-10-05)]
 relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q405444
   - type: died_in
     to: place/kyoto
     sources:
       - accessed: 2026-10-28
         property: P20
+        wikidata: Q405444
+  - type: associated_with
+    to: movement/maruyama-school
+    sources:
+      - accessed: 2026-11-02
+        property: P135
         wikidata: Q405444
   - type: founded
     to: movement/maruyama-school

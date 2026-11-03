@@ -31,6 +31,25 @@ death: 1828-01-04
 wikidata_id: Q3469342
 metadata:
   sources: [Wikidata Q3469342 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3469342
+  - type: worked_in
+    to: place/osaka
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q3469342
+  - type: student_of
+    to: artist/utagawa-toyoharu
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q3469342
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Sakai_Houitsu.jpg/1280px-Sakai_Houitsu.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Sakai_Houitsu.jpg

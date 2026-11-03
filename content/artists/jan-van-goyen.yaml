@@ -1,0 +1,86 @@
+public_id: 112234
+name: Jan van Goyen
+given_name: Jan
+family_name: van Goyen
+names:
+  - kind: birth
+    lang: nl
+    role: alternative
+    text: Jan Josephsz. Van Goyen
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q315996
+birth: 1596-01-13
+death: 1656-04-27
+wikidata_id: Q315996
+metadata:
+  sources: [Wikidata Q315996 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q315996
+  - type: born_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q315996
+  - type: died_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q315996
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q315996
+  - type: worked_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q315996
+  - type: worked_in
+    to: place/the-hague
+    period: 1632/1634
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q315996
+  - type: associated_with
+    to: movement/dutch-golden-age-painting
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q315996
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e8/Terborch_Goyenuv_portret.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Terborch_Goyenuv_portret.jpg
+    license: Public domain
+    credit: Gerard ter Borch
+identifiers:
+  bnf: 12199721j
+  dome: "3375"
+  gnd: "118541072"
+  idref: "030617502"
+  kulturnav: 5cd6b533-a776-44bf-beb8-dd303781a5d9
+  lc: n82134567
+  rkd: "33103"
+  ulan: "500115612"
+  viaf: "14817785"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q315996
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q315996

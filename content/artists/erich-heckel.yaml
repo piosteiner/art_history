@@ -8,12 +8,53 @@ wikidata_id: Q156700
 metadata:
   sources: [Wikidata Q156700 (retrieved 2026-10-30)]
 relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q156700
+  - type: member_of
+    to: movement/berlin-secession
+    sources:
+      - accessed: 2026-11-02
+        property: P463
+        wikidata: Q156700
+  - type: member_of
+    to: movement/die-brucke
+    period: 1905
+    period_label: from 1905
+    sources:
+      - accessed: 2026-11-02
+        property: P463
+        wikidata: Q156700
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q156700
   - type: founded
     to: movement/die-brucke
     sources:
       - accessed: 2026-10-30
         property: P112
         wikidata: Q152778
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6f/Kirchner_-_Erich_Heckel_an_der_Staffelei.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kirchner_-_Erich_Heckel_an_der_Staffelei.jpg
+    license: Public domain
+    credit: Ernst Ludwig Kirchner
+identifiers:
+  bnf: "119675919"
+  dome: "157"
+  gnd: "118547488"
+  idref: "027686353"
+  kulturnav: 73b6c6ea-0e40-4a44-ac08-3dd58286aeb1
+  lc: n50027378
+  rkd: "36792"
+  ulan: "500032971"
+  viaf: "41848647"
 sources:
   birth:
     - accessed: 2026-10-30

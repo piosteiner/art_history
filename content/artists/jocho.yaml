@@ -5,6 +5,28 @@ death: 1057-09-08
 wikidata_id: Q60911
 metadata:
   sources: [Wikidata Q60911 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q60911
+  - type: died_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q60911
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/04/Byodoin_Amitaabha_Buddha.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Byodoin_Amitaabha_Buddha.JPG
+    license: Public domain
+    credit: Jhocho, the master sculptor, book:FUKUYAMA TUNEO and MORI TORU
+identifiers:
+  gnd: "143328778"
+  lc: no2017020350
+  viaf: "164949675"
 sources:
   birth:
     - accessed: 2026-11-01

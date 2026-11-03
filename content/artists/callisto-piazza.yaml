@@ -1,0 +1,26 @@
+public_id: 111830
+name: Callisto Piazza
+given_name: Callisto
+family_name: Piazza
+birth: 1500
+death: 1561
+region: europe
+wikidata_id: Q2934270
+metadata:
+  sources: [Wikidata Q2934270 (retrieved 2026-11-03)]
+identifiers:
+  gnd: "123030048"
+  kulturnav: 6d4b701c-cd87-4467-b7a4-7949c14d6cf1
+  lc: nr91028764
+  rkd: "63247"
+  ulan: "500014283"
+  viaf: "69825406"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q2934270
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q2934270

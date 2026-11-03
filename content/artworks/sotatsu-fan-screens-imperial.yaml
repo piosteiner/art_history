@@ -1,5 +1,20 @@
 public_id: 107689
-title: Screens painted with fans
+title_lang: jp
+title: "{ 扇面散|せんめんちらし}{屏風 |びょうぶ}"
+names:
+  - lang: en
+    role: translation
+    text: Scattered Painted Fans
+    status: official
+    sources:
+      - url: https://shozokan.nich.go.jp/en/collection/object/SZK002945
+        source: shozokan-nich-go-jp
+        accessed: 2026-11-02
+  - lang: en
+    role: translation
+    text: Screens painted with fans
+    sources:
+      - source: history-of-japanese-art
 creator: tawara-sotatsu
 created: c. 1630
 created_span: uncertain
@@ -8,6 +23,8 @@ medium: Pair of eight-panel screens, colour on paper
 materials: [paper]
 dimensions: [136]
 institution: museum-of-the-imperial-collections
+inventory_number: SZK002945
+web_url: https://shozokan.nich.go.jp/en/collection/object/SZK002945
 description_md: "A pair of eight-panel screens on which forty-eight fans by [[artist/tawara-sotatsu]] are pasted — his shop, the Tawaraya, was known for fans with themes from classical literature. One shows an episode of the Tales of Ise ([[person/ariwara-no-narihira]]): a nobleman and the girl he has carried off shelter from a storm in a ruined storehouse, she inside, he guarding the door; at dawn she is gone, eaten by a demon, who climbs through the air above the roof — the twin of the God of Thunder of the Kitano Tenjin engi. [[source/history-of-japanese-art|pp. 268–269, fig. 310]]"
 relationships:
   - type: associated_with
@@ -37,3 +54,10 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: pp. 268–269, fig. 310
+    - url: https://shozokan.nich.go.jp/en/collection/object/SZK002945
+      source: shozokan-nich-go-jp
+      accessed: 2026-11-02
+  inventory_number:
+    - url: https://shozokan.nich.go.jp/en/collection/object/SZK002945
+      source: shozokan-nich-go-jp
+      accessed: 2026-11-02

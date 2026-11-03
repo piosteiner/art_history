@@ -1,0 +1,123 @@
+public_id: 112190
+title_lang: en
+title: Berck, pêcheuses sur la plage, marée basse
+names:
+  - lang: en
+    role: translation
+    text: Strand bei Berck
+  - lang: en
+    role: translation
+    text: Shore at Berck
+creator: eugene-boudin
+created: 1894
+kind: oil painting
+medium: Oil on panel
+dimensions: [22.5, 33]
+institution: kunsthaus-zurich
+inventory_number: BU 0006
+web_url: https://collection.kunsthaus.ch/de/collection/item/699963/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64410173
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fc/Eug%C3%A8ne_Boudin_-_Berck%2C_p%C3%AAcheuses_sur_la_plage%2C_mar%C3%A9e_basse_-_6_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Boudin_-_Berck,_p%C3%AAcheuses_sur_la_plage,_mar%C3%A9e_basse_-_6_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Eugène Louis Boudin
+provenance:
+  - owner: institution/allard-noel
+    acquired: 1885-01
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 300
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699963/
+        note: "Footnote: Schmit 3231."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/francois-daulte
+    ended: 1955-02-22
+    place: lausanne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699963/
+        note: "Footnote: AStEGB, Brief von François Daulte, Lausanne, an Dr. O. Maurer [Generalsekretär von Oerlikon Bührle & Co.], Zürich, 17.02.1955, mit Rechnung von François Daulte, Lausanne, ausgestellt auf Emil Bührle, 17.02.1955."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-02-22
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 28000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699963/
+        note: "Footnote: Wie oben Fussnote 4; Zahlungsauftrag von Emil Bührle an die Industrie- und Handelsbank, Zürich, vom 21.02.1955, über den Betrag von CHF 28.000 zur Überweisung an François Daulte, Lausanne, und Zahlungsbestätigung der Industrie- und Handelsbank, Zürich, ausgeführt am 22.02.1955."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 6
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "6"
+    institution: foundation-e-g-buhrle-collection
+  - number: "3231"
+    label: Schmitt (catalogue raisonné)
+  - number: "432"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

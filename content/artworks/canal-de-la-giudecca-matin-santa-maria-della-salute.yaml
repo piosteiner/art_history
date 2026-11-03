@@ -1,0 +1,162 @@
+public_id: 112103
+title_lang: en
+title: Canal de la Giudecca, Matin (Santa Maria della Salute)
+names:
+  - lang: en
+    role: translation
+    text: Canale della Giudecca, Morgen
+  - lang: en
+    role: translation
+    text: Canale della Giudecca, Morning
+creator: paul-signac
+created: 1905
+kind: oil painting
+medium: Oil on canvas
+dimensions: [65, 81]
+institution: kunsthaus-zurich
+inventory_number: BU 0097
+web_url: https://collection.kunsthaus.ch/de/collection/item/604985/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223640
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9d/Paul_Signac_-_Canal_de_la_Giudecca%2C_Matin_%28Santa_Maria_della_Salute%29_-_97_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Signac_-_Canal_de_la_Giudecca,_Matin_(Santa_Maria_della_Salute)_-_97_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Paul Signac
+provenance:
+  - owner: institution/galerie-eugene-druet
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+        note: "Footnote: Cachin/Ferretti-Bocquillon 2000, No. 420."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/gustave-fayet
+    ended: 1925-09-24 or earlier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/bernhard-koehler
+    ended: 1927-03-30 or earlier
+    place: berlin
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/bernhard-koehler
+    acquired: 1927-03-30
+    method: inheritance
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hugo-perls
+    role: dealer
+    acquired: 1951-06-15 or earlier
+    ended: 1951-06-21
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+        note: "Footnote: AStEGB, Eingangsbuch I, 15.06.1951, und Brief von A. Welti-Furrer AG, Zürich, an Emil Bührle, 15.06.1951, in dem die Lieferung des Gemäldes im Auftrag von Hugo Perls, damals in Zürich, angekündigt wird."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-06-21
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 12500
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+        note: "Footnote: AStEGB, Brief von Hugo Perls, New York, an Emil Bührle, 21.06.1951, mit Bestätigung des Empfangs des Betrages von CHF 12.500."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 97
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "97"
+    institution: foundation-e-g-buhrle-collection
+  - number: "420"
+    label: Cachin (catalogue raisonné)
+  - number: "194"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604985/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

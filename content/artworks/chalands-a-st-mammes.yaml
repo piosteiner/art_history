@@ -1,0 +1,128 @@
+public_id: 112104
+title_lang: en
+title: Chalands à St-Mammès
+names:
+  - lang: en
+    role: translation
+    text: Lastschiffe bei St-Mammès
+  - lang: en
+    role: translation
+    text: Barges at Saint Mammès
+creator: alfred-sisley
+created: c. 1885
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [38, 55]
+institution: kunsthaus-zurich
+inventory_number: BU 0098
+web_url: https://collection.kunsthaus.ch/de/collection/item/604986/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223635
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/81/Alfred_Sisley_-_Chalands_%C3%A0_St-Mamm%C3%A8s_-_98_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Alfred_Sisley_-_Chalands_%C3%A0_St-Mamm%C3%A8s_-_98_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Alfred Sisley
+provenance:
+  - owner: institution/bernheim-jeune
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604986/
+        note: "Footnote: Brame/Laurenceau 2021, No. 640."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/mrs-w-f-robertson
+    ended: 1943 or later
+    place: scotland
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604986/
+        note: "Footnote: Siehe Ausstellungsetikette auf dem Keilrahmen o. l.: THE CORPORATION OF THE CITY OF GLASGOW / Glasgow Art Gallery & Museums / Title «PÉNICHES EN RIVIÈRE» / Artist ALFRED SISLEY / Owner Mrs. W. F. Robertson / Medium  … Size / Exhibition «SPIRIT OF FRANCE» 1943 / Catalogue No. 36 … Registered No. … ."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    ended: 1955-06-27
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604986/
+        note: "Footnote: Kat. Marlborough Fine Art Ltd, London 1955, No. 46."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-06-27
+    method: purchase
+    direct: true
+    place: zurich
+    label: "dates as given in the source: 27.6.1955 – 28.1956"
+    price:
+      amount: 5000
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604986/
+        note: "Footnote: AStEGB, Preisliste, handgeschrieben von Emil Bührle und mit den Namen von fünf Künstlern, darunter Sisley; die Preisliste wurde für eine Gruppe von Gemälden überwiegend Alter Meister erstellt, über deren Kauf Bührle mit Frank Lloyd von Marlborough Fine Art Ltd, London, verhandelte; dieser Teil des Ankaufs belief sich auf £ 30.000 (= CHF 360.000) und umfasste vier Altmeistergemälde, die sich heute …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604986/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 98
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604986/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "98"
+    institution: foundation-e-g-buhrle-collection
+  - number: "640"
+    label: Brame/Lorenceau (catalogue raisonné)
+  - number: "451"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604986/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604986/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604986/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604986/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604986/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604986/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604986/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604986/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

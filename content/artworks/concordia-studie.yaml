@@ -1,0 +1,156 @@
+public_id: 111932
+title_lang: en
+title: Concordia (Studie)
+names:
+  - lang: en
+    role: translation
+    text: Concordia (Study)
+creator: pierre-puvis-de-chavannes
+created: 1854/1866
+created_label: c. 1859/1861
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [76.5, 95.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0081
+web_url: https://collection.kunsthaus.ch/de/collection/item/48914/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223653
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e5/Pierre_Puvis_de_Chavannes_-_Concordia_%28Studie%29_-_81_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre_Puvis_de_Chavannes_-_Concordia_(Studie)_-_81_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Pierre Puvis de Chavannes
+provenance:
+  - owner: person/madame-e-gautier
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48914/
+        note: "Footnote: Widmung auf dem Gemälde unten links; die Adressatin der Widmung war wahrscheinlich Ernesta Grisi, von 1844 bis 1866 die Lebensgefährtin des Kritikers Théophile Gautier, dessen positive Rezension der beiden großen Allegorien «Concordia» (d.h. Frieden) und «Krieg», die im Salon von 1861 ausgestellt wurden, die Aufmerksamkeit der französischen Behörden auf das Werk von Puvis lenkte. Der Erwerb dieser…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/eugene-o-m-linton-hanson
+    place: copenhagen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48914/
+        note: "Footnote: Brown Price 2010, No. 102."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/dikran-khan-kelekian
+    acquired: 1922-01-30 or earlier
+    ended: 1951-01-30
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48914/
+        note: "Footnote: Auktion American Art Association, New York (30.01.-31.01.1922), Lot 143; Kat. [Verkaufskatalog] Rains Gallery, New York (18.01.1935)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/victor-david-spark
+    acquired: 1953-04-18 or earlier
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48914/
+        note: "Footnote: Anzeige von Victor D. Spark, New York, zur Illustration von Puvis de Chavannes, Concordia, in Art Quarterly (16) 1953, S. 170. Der Besitz von Victor D. Spark im Jahr 1953 wird auch durch die Tatsache bestätigt, dass das Gemälde bereits im April 1953 Bührle (mittels einer Fotografie) für $ 2.800 angeboten wurde, AStEGB, Eingangsbuch II, 18.04.1953. Die Auflistung der «Downtown Gallery» als Besitzer…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/m-h-drey-ltd
+    role: dealer
+    ended: 1956-09-11
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48914/
+        note: "Footnote: Kauffmann-Inventar, Journal 4, No. 1547, S. 26, was auf einen Miteigentumsanteil an dem Gemälde ab dem 11.09.1956 hinweist."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/arthur-kauffmann
+    role: dealer
+    acquired: 1956-09-11 or earlier
+    ended: 1956-11-01
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48914/
+        note: "Footnote: Hälftigen Anteil erworben von Drey, Journal wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1956-11-01
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 3000
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48914/
+        note: "Footnote: Journal wie oben Fussnote 9; AStEGB, Eingangsbuch II, 01.11.1956."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48914/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 81
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48914/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "81"
+    institution: foundation-e-g-buhrle-collection
+  - number: "102"
+    label: Brown Price (catalogue raisonné)
+  - number: "536"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48914/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48914/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48914/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48914/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48914/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48914/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48914/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48914/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

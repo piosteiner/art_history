@@ -1,0 +1,141 @@
+public_id: 112310
+title_lang: fr
+title: Nature morte au faisan et à la perdrix
+names:
+  - lang: en
+    role: translation
+    text: Fasan und Rebhuhn
+  - lang: en
+    role: translation
+    text: Pheasant and Fowl
+  - lang: en
+    role: translation
+    text: Faisan et Perdrix
+creator: pierre-auguste-renoir
+created: c. 1881
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [40.5, 65]
+institution: kunsthaus-zurich
+inventory_number: BU 0085
+web_url: https://collection.kunsthaus.ch/de/collection/item/750969/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223617
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a4/Pierre-Auguste_Renoir_-_Faisan_et_Perdrix_-_85_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_Faisan_et_Perdrix_-_85_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    acquired: before 1919
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750969/
+        note: "Footnote: Dauberville/Dauberville 2007, No. 55; Pierre-Auguste Renoir: Catalogue Raisonné Project (https://digitalprojects.wpi.art/renoir/artworks/detail?sort=date&sortDirection=ASC&page=1&a=13736-nature-morte-au-faisan-et-a-la-perdrix, 27.02.2025), hier als Quelle angegeben: Pierre-Auguste Renoir [Restricted], Ambroise Vollard Records [jo924zs1], The Wildenstein Plattner Institute, Inc."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/martin-fabiani
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750969/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/quirico
+    ended: 5 June 1954 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750969/
+        note: "Footnote: AStEGB, Rechnung (und Einlieferungsschein) von Mademoiselle de Quirico, 74 Boulevard Excelmans, Paris, ausgestellt auf das Kunsthaus Zürich, 05.06.1954, für Renoir, Nature morte, zum Preis von FF 3.000.000."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/max-kaganovitch
+    role: dealer
+    ended: 19 June 1954 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750969/
+        note: "Footnote: AStEGB, Eingangsbuch II, 19.06.1954."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-06-22
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 6600000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750969/
+        note: "Footnote: Eingangsbuch wie oben Fussnote 9, mit Verweis auf das Kaufdatum; zum Preis AStEGB, Dossier betreffend den Import des Gemäldes via Kunsthaus Zürich durch Arthur Lénars & Cie, Paris, Juni 1954; und verschiedene Zahlungsaufträge, ausgestellt von Emil Bührle an die Industrie- und Handelsbank, Zürich, im Mai und Juni 1954, mit einem maschinenschriftlichen Vermerk über die Art der Zahlung für dieses Gem…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750969/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 85
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750969/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "85"
+    institution: foundation-e-g-buhrle-collection
+  - number: "55"
+    label: Dauberville (catalogue raisonné)
+  - number: "392"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

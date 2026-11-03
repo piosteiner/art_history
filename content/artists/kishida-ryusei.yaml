@@ -21,6 +21,25 @@ death: 1929-12-20
 wikidata_id: Q3021493
 metadata:
   sources: [Wikidata Q3021493 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3021493
+  - type: student_of
+    to: artist/kuroda-seiki
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q3021493
+  - type: associated_with
+    to: movement/youga
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q3021493
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/5/58/Kishida_Ryusei_Self-Portrait.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Kishida_Ryusei_Self-Portrait.jpg

@@ -1,0 +1,133 @@
+public_id: 112384
+title_lang: de
+title: Das Innere der Oude Kerk in Amsterdam
+names:
+  - lang: en
+    role: translation
+    text: Interior of the Oude Kerk in Amsterdam
+creator: emanuel-de-witte
+created: c. 1685
+created_span: uncertain
+kind: oil painting
+medium: Oil on panel
+dimensions: [54.5, 45]
+institution: kunsthaus-zurich
+inventory_number: BU 0168
+web_url: https://collection.kunsthaus.ch/de/collection/item/752967/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131585941
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/24/Emanuel_de_Witte_-_Das_Innere_der_Oude_Kerk_in_Amsterdam_-_168_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Emanuel_de_Witte_-_Das_Innere_der_Oude_Kerk_in_Amsterdam_-_168_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Emanuel de Witte
+provenance:
+  - owner_label: unknown (collector)
+    place: brussels
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752967/
+        note: "Footnote: Manke 1963, Nr. 48."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-rothmann
+    role: dealer
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752967/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/carl-bilfinger
+    ended: 1925 or later
+    place: halle-saale
+    label: Halle and Heidelberg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752967/
+        note: "Footnote: Kat. Kaiser-Friedrich-Museums-Verein (Akademie der Künste) Berlin 1925, Nr. 475; Rudolf Smend, ‘Carl Bilfinger †’, in: Zeitschrift für ausländisches öffentliches Recht und Völkerrecht (20) 1959/60."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    ended: 1953-12-13
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752967/
+        note: "Footnote: AStEGB, Eingangsbuch II, 15.10.1953."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-12-13
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 14000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752967/
+        note: "Footnote: AStEGB, Eingangsbuch wie oben Fussnote 9, mit Hinweis auf das Kaufdatum, und handschriftlicher Notiz von Emil Bührle, in der Gemälde aufgelistet sind, über die Bührle mit Dr. Fritz Nathan verhandelte, darunter auch das von de Witte, mit einem Preis von CHF 14'000."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 168
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "168"
+    institution: foundation-e-g-buhrle-collection
+  - number: "48"
+    label: Manke (catalogue raisonné)
+  - number: "334"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

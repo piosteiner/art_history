@@ -1,0 +1,299 @@
+public_id: 111883
+title_lang: fr
+title: Le Christ sur le lac de Génésareth
+names:
+  - lang: fr
+    role: translation
+    text: Le Christ sur la mer de Galilée (Le Christ endormi pendant la tempête)
+  - lang: en
+    role: translation
+    text: Christus auf dem See Genezareth
+  - lang: en
+    role: translation
+    text: Christ on the Sea of Galilee
+creator: eugene-delacroix
+created: 1853
+kind: oil painting
+medium: Oil on canvas
+dimensions: [60, 73]
+institution: kunsthaus-zurich
+inventory_number: BU 0125
+web_url: https://collection.kunsthaus.ch/de/collection/item/48904/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q60042005
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/ba/Eug%C3%A8ne_Delacroix_-_Le_Christ_sur_le_lac_de_G%C3%A9n%C3%A9sareth_-_125_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_-_Le_Christ_sur_le_lac_de_G%C3%A9n%C3%A9sareth_-_125_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Eugène Delacroix
+provenance:
+  - owner: person/baptistin-guilhermoz
+    ended: 1860 or later
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: Kat. Galeries du boulevard des Italiens, Paris 1860, Nr. 162; Johnson 1986, Nr. 455."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/davin
+    ended: 1962-03-29
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: Auktion Hôtel Drouot, Paris (29. März 1862), Nr. 8; Johnson 1986, Nr. 455."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1862-03-29
+    ended: 1862-03-29
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 8
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emile-pereire
+    acquired: 1862-03-29
+    ended: 1864 or later
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: Erworben bei der obigen Versteigerung, kommentierte Kopie des obigen Verkaufskatalogs in der Bibliothèque nationale de France, Département des estampes, Paris; wie oben Fussnote 6; Kat. Société nationale des Beaux-Arts 1864, Nr. 77."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/g-edwards
+    ended: 7 March 1870 or later
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: Auktion Hôtel Drouot, Paris (7. März 1870), Nr. 6 (FRF 28.000); Johnson 1986, Nr. 455."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1870-03-07
+    ended: 1870-03-07
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 6
+    price:
+      amount: 28000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/e-carlin
+    ended: 1872-04-29
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: Auktion Hôtel Drouot, Paris (29. April 1872), Nr. 6; Johnson 1896, Nr. 455."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1872-04-29
+    ended: 1872-04-29
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 6
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: Wie oben Fussnote 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/vaisse
+    acquired: 1872-04-27
+    ended: 1873
+    method: purchase
+    direct: true
+    place: marseille
+    price:
+      amount: 27500
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: Kommentierte Kopie des Auktionskatalogs wie oben Fussnote 12, in der Bibliothèque nationale de France, Département des estampes, Paris; Johnson 1986, Nr. 455."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/goupil-cie
+    role: dealer
+    acquired: 1873
+    ended: 1873-06
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: Johnson 1986, Nr. 455."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/schwabacher
+    acquired: 1873-06
+    ended: 1878-05
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 38500
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: Wie oben Fussnote 15."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/boussod-valadon-cie
+    acquired: 1878-05
+    ended: 1878-06
+    method: purchase
+    direct: true
+    place: paris
+    label: Valadon et Cie (Kunsthändler/-in)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: Wie oben Fussnote 15."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/etienne-edmond-martin-de-beurnonville
+    acquired: 1878-06
+    ended: 1880-04-29
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 20000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: Wie oben Fussnote 15; Auktion Hôtel Drouot, Paris (29. April 1880), Nr. 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1880-04-29
+    ended: 1880-04-29
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 12
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: Wie oben Fussnote 18."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/henri-hecht
+    ended: 1885 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: Kat. Ecole nationale des Beaux-Arts, Paris 1885, Nr. 110; Johnson 1986, Nr. 455."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/joseph-gillot
+    acquired: 1892 or earlier
+    place: lyon
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: Johnson 1986, Nr. 455; AStEGB, Brief von Dr. Christoph Bernoulli, Basel, an Emil Bührle, erhalten am 15. April 1950, gibt an, dass sich das Gemälde 50 Jahre lang im Besitz derselben Familie befand."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/cesar-mange-de-hauke
+    role: dealer
+    ended: 1950
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: Getty Research Institute, Santa Monica (Kalifornien), Cooper Archive, Box 46/2, Brief von Cesar de Hauke, Paris, an Douglas Cooper, New York, 15. Mai 1961, mit einer Auflistung der von der Galerie Brame an Emil Bührle verkauften Gemälde und Angaben zu deren Besitz."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/christoph-bernoulli
+    role: dealer
+    acquired: 1950
+    ended: 1950-04-25
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: AStEGB, Schreiben von Dr. Christoph Bernoulli, Basel, an Emil Bührle, 15. Oktober 1950, mit der Bitte um direkte Rückerstattung der Kosten für Transport, Versicherung usw. auf das Schweizer Konto von Herrn Brame, gestützt auf eine Rechnung von Arthur Lenars & Cie., Paris, ausgestellt auf H. Brame, Paris, vom 31. August 1950."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1950-04-25
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 60000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        note: "Footnote: AStEGB, Brief von Emil Bührle an Dr. Christoph Bernoulli, Basel, vom 20. April 1950, in dem er die Überweisung von CHF 60.000 für das Bild ankündigt, sowie Briefe von Alice Bernoulli und von Christoph Bernoulli vom 22. und 25. April 1950, in denen sie den Erhalt dieses Betrags bestätigen."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 125
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "125"
+    institution: foundation-e-g-buhrle-collection
+  - number: "455"
+    label: Johnson (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48904/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

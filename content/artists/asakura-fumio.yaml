@@ -19,6 +19,27 @@ death: 1964-04-18
 wikidata_id: Q1052330
 metadata:
   sources: [Wikidata Q1052330 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q1052330
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q1052330
+  - type: studied_at
+    to: institution/tokyo-academy-of-fine-arts
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q1052330
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Fumio_Asakura_by_Ken_Domon.jpg/1280px-Fumio_Asakura_by_Ken_Domon.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Fumio_Asakura_by_Ken_Domon.jpg

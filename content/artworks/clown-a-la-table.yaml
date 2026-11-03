@@ -1,0 +1,147 @@
+public_id: 112100
+title_lang: en
+title: Clown à la table
+names:
+  - lang: en
+    role: translation
+    text: Clown am Tisch
+  - lang: en
+    role: translation
+    text: Clown at a Table
+creator: georges-rouault
+created: c. 1937
+created_span: uncertain
+kind: oil painting
+medium: Oil on cardboard
+dimensions: [34, 50]
+institution: kunsthaus-zurich
+inventory_number: BU 0092
+web_url: https://collection.kunsthaus.ch/de/collection/item/604983/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q124294675
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    ended: 1939-07-22 or earlier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+        note: "Footnote: Courthion 1962, No. 269, S. 466, 501."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/georges-wildenstein
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+        note: "Footnote: AStEGB, Inventarkarte Rouault, Clown à la table."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bignou-gallery
+    role: dealer
+    acquired: 1945
+    ended: 1945
+    place: new-york-city
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+        note: 'Footnote: Eine andere Quelle verweist auf eine Beteiligung der Galerie Bignou, New York:  Jewell 1945 (Abb., ohne Seitenzahlen, mit Angabe einer "Private Collection" als Eigentümer des Gemäldes und der Bignou Gallery, New York, als Quelle der Fotografie).'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/carstairs-gallery
+    role: dealer
+    acquired: 1951-09-27 or earlier
+    ended: 1953-11-15
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+        note: "Footnote: Archiv Kunstmuseum Bern, Inventarbuch Leihgaben (B-001-005), Eintrag einer Hinterlegung von Max Kaganovitch von Roaults Clown an einem Tisch im Kunstmuseum Bern am 27. September 1951, das Gemälde ist als Nr. 1343 eingetragen. Als (Mit-)Besitzer wird die Carstairs Gallery, New York, angegeben, die damals von Georges Keller geleitet wurde, der enge Beziehungen zum Kunstmuseum Bern unterhielt. Als Da…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/max-kaganovitch
+    role: dealer
+    acquired: 1951-09-27 or earlier
+    ended: 1953-11-15
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+        note: "Footnote: Inventarbuch wie oben Fussnote 7 und Inventarkarte wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-11-15
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 12780
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+        note: "Footnote: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 92
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "92"
+    institution: foundation-e-g-buhrle-collection
+  - number: "1994"
+    label: Dorival (catalogue raisonné)
+  - number: "332"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

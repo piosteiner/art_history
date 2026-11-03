@@ -18,6 +18,13 @@ death: c. 1690
 wikidata_id: Q11644917
 metadata:
   sources: [Wikidata Q11644917 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q11644917
 identifiers:
   lc: n82048805
   ulan: "500121413"

@@ -19,6 +19,13 @@ death: 1784-01-17
 wikidata_id: Q31523
 metadata:
   sources: [Wikidata Q31523 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q31523
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/a/a4/Yosa_Buson.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Yosa_Buson.jpg

@@ -1,0 +1,8 @@
+public_id: 111825
+name: Estoril
+kind: settlement
+parent: lisbon-district
+country_code: PT
+location: [-9.39832, 38.70423]
+metadata:
+  sources: [Wikidata null (retrieved 2026-11-03)]

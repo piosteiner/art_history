@@ -1,0 +1,24 @@
+public_id: 109379
+title_lang: en
+title: "Kanjinchō: Ichikawa Ebizō V as Musashibō Benkei and Ichikawa Danjūrō VIII as Togashi Saemon"
+names:
+  - lang: ja
+    role: original
+    text: 十八番の内 勧進帳 五代目市川海老蔵の武蔵坊弁慶と八代目市川團十郎の富樫左衛門
+creator: utagawa-kunisada
+created: 1852-01
+kind: woodcut
+medium: woodblock print, ink and colour on paper
+institution: national-diet-library
+metadata:
+  series: Kabuki jūhachiban (The Eighteen Great Kabuki Plays)
+  sources: ["Wikimedia Commons: File:Ebizō Ichikawa V as Benkei and Danjūrō Ichikawa VIII as Tokashi.jpg (NDL Digital Collections), retrieved 2026-11-02"]
+relationships:
+  - type: illustrates
+    to: literature/kanjincho
+    label: a scene of the 1852 production
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Ebiz%C5%8D_Ichikawa_V_as_Benkei_and_Danj%C5%ABr%C5%8D_Ichikawa_VIII_as_Tokashi.jpg/1280px-Ebiz%C5%8D_Ichikawa_V_as_Benkei_and_Danj%C5%ABr%C5%8D_Ichikawa_VIII_as_Tokashi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ebiz%C5%8D_Ichikawa_V_as_Benkei_and_Danj%C5%ABr%C5%8D_Ichikawa_VIII_as_Tokashi.jpg
+    license: Public domain
+    credit: Utagawa Kunisada

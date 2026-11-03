@@ -1,0 +1,121 @@
+public_id: 112142
+title_lang: fr
+title: Le Salon des Natanson, rue Saint-Florentin
+names:
+  - lang: de
+    role: translation
+    text: Der Salon Natanson
+  - lang: en
+    role: translation
+    text: Salon Natanson
+  - lang: en
+    role: translation
+    text: The Natansons' Drawing-Room, rue Saint-Florentin
+creator: edouard-vuillard
+created: 1897/1898
+kind: oil painting
+medium: Oil on paper on panel
+dimensions: [45.5, 51.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0114
+web_url: https://collection.kunsthaus.ch/de/collection/item/604998/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q122841410
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/24/%C3%89douard_Vuillard_-_Le_Salon_des_Natanson%2C_rue_Saint-Florentin_-_114_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Vuillard_-_Le_Salon_des_Natanson,_rue_Saint-Florentin_-_114_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Édouard Vuillard
+provenance:
+  - owner: person/paul-sebastien-gallimard
+    acquired: 1898
+    ended: 1929-03-09 or earlier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604998/
+        note: "Footnote: Salomon/Cogeval 2003, Bd. 1, Nr. VI-39."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/georges-wildenstein
+    role: dealer
+    acquired: 1952
+    ended: 1952-07-02
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604998/
+        note: "Footnote: AStEGB, Eingangsbuch I, 2. Juli 1952."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-07-02
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604998/
+        note: "Footnote: Wie oben Fussnote 5, mit Hinweis auf Kaufdatum; AStEGB, Brief von Dr. Walter Drack [Konservator der Sammlung Bührle] an Société Anonyme de Beaux-Arts, Vaduz [Galerie Wildenstein], 25. Juli 1952, mit der Bitte um Auskunft über zwei kürzlich von Bührle erworbene Gemälde von Vuillard, darunter Le Salon des Natanson, und Brief von Daniel Wildenstein, Vaduz, an Dr. Walter Drack, 2. September 1952, mit …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604998/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 114
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604998/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "114"
+    institution: foundation-e-g-buhrle-collection
+  - number: I.280.VI-39
+    label: Salomon/Cogeval (catalogue raisonné)
+  - number: "242"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604998/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604998/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604998/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604998/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604998/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604998/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604998/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604998/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

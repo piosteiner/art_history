@@ -51,6 +51,43 @@ death: 1818-11-05
 wikidata_id: Q213739
 metadata:
   sources: [Wikidata Q213739 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/austrian-empire
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q213739
+  - type: nationality
+    to: polity/holy-roman-empire
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q213739
+  - type: died_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q213739
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q213739
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q213739
+  - type: worked_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q213739
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Heinrich_Friedrich_F%C3%BCger.jpg/1280px-Heinrich_Friedrich_F%C3%BCger.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Heinrich_Friedrich_F%C3%BCger.jpg

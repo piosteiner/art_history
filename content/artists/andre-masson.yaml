@@ -30,6 +30,25 @@ death: 1987-10-28
 wikidata_id: Q312529
 metadata:
   sources: [Wikidata Q312529 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q312529
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q312529
+  - type: associated_with
+    to: movement/surrealism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q312529
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/18/Andr%C3%A9_Masson%2C_Paris.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Andr%C3%A9_Masson,_Paris.jpg

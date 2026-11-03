@@ -16,6 +16,25 @@ death: 1927-05-01
 wikidata_id: Q7706856
 metadata:
   sources: [Wikidata Q7706856 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/empire-of-japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q7706856
+  - type: studied_at
+    to: institution/tokyo-academy-of-fine-arts
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q7706856
+  - type: associated_with
+    to: movement/youga
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q7706856
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/5/5b/Yorozu_Tetsuoro_at_Chigasaki.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Yorozu_Tetsuoro_at_Chigasaki.jpg

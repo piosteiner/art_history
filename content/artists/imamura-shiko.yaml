@@ -21,6 +21,13 @@ death: 1916-02-28
 wikidata_id: Q2270045
 metadata:
   sources: [Wikidata Q2270045 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2270045
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/The_Wind_God_and_Thunder_God_by_Imamura_Shiko%2C_1911.jpg/1280px-The_Wind_God_and_Thunder_God_by_Imamura_Shiko%2C_1911.jpg
     source_url: https://commons.wikimedia.org/wiki/File:The_Wind_God_and_Thunder_God_by_Imamura_Shiko,_1911.jpg

@@ -1,0 +1,159 @@
+public_id: 111982
+title_lang: fr
+title: Le Jardin de Monet à Giverny
+names:
+  - lang: en
+    role: translation
+    text: Monets Garten in Giverny
+  - lang: en
+    role: translation
+    text: Monet's Garden at Giverny
+creator: claude-monet
+created: 1895
+kind: oil painting
+medium: Oil on canvas
+dimensions: [81.5, 92]
+institution: kunsthaus-zurich
+inventory_number: BU 0072
+web_url: https://collection.kunsthaus.ch/de/collection/item/586962/
+on_loan: true
+on_loan_since: 2021
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q64174087
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Monet_-_Im_Garten_-_1895.jpeg/1280px-Monet_-_Im_Garten_-_1895.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Monet_-_Im_Garten_-_1895.jpeg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: institution/durand-ruel
+    co_owners: [institution/bernheim-jeune]
+    role: dealer
+    acquired: 1920
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+        note: "Footnote: Wildenstein 1979, Bd. III, No. 1420: vom Künstler erworben."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1922
+    ended: 1922
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/julius-elias
+    acquired: 1924
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/franz-edgar-ullstein
+    ended: 1936 or later
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+        note: "Footnote: Deutsches Kunstarchiv im Germanischen Nationalmuseum, Nürnberg, Galerie Heinemann Online, Dokument-ID 25271, Galerie Heinemann, München, Kartei angebotene Bilder, Kartei KA-M-341, zu «Monet, Cl. / Frau im Garten 95 / 100 x 90 cm / gesehen von Frau H. / Angebot von Franz Ullstein, Berlin d. Frau Caspari / Juni 1936», bezieht sich auf das einzige Werk von Claude Monet, gemalt 1895, das der Beschreib…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/william-s-kundig
+    role: dealer
+    ended: 7 February 1941 or later
+    place: geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+        note: "Footnote: Archiv Sammlung Oskar Reinhart «Am Römerholz», Winterthur, Brief von W. S. Kundig, Genf, an Oskar Reinhart, Winterthur, 07.02.1941, mit Fotos (später zurückgegeben) von zwei Gemälden, die er anzubieten hat, darunter ein Monet, dessen Grösse von Reinharts Sekretärin vermerkt ist: «80 x 91». Am 14.11.1941 besuchte Reinhart Emil Bührle in Zürich und notiert in seinem Tagebuch die Bilder, die er in Bü…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-aktuaryus
+    role: dealer
+    ended: 1941-03-07
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+        note: "Footnote: Galerie Aktuaryus Zürich - bis 1941 AStEGB, quittierte Rechnung der Galerie Aktuaryus, ausgestellt auf Emil Bührle, 05.03.1941."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1941-03-07
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 16800
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+        note: "Footnote: AStEGB, quittierte Rechnung wie oben Fussnote 12, Quittung vom 07.03.1941."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 72
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "72"
+    institution: foundation-e-g-buhrle-collection
+  - number: III.588.1420
+    label: Wildenstein Monet (catalogue raisonné)
+  - number: "54"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -25,6 +25,31 @@ death: 1784
 wikidata_id: Q23008985
 metadata:
   sources: [Wikidata Q23008985 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q23008985
+  - type: born_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q23008985
+  - type: lived_in
+    to: place/gion
+    sources:
+      - accessed: 2026-11-02
+        property: P551
+        wikidata: Q23008985
+  - type: student_of
+    to: artist/yanagisawa-kien
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q23008985
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Ike_no_Taiga_and_Gyokuran.jpg/1280px-Ike_no_Taiga_and_Gyokuran.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Ike_no_Taiga_and_Gyokuran.jpg

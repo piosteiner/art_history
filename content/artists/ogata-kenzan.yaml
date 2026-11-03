@@ -34,6 +34,19 @@ death: 1743-07-22
 wikidata_id: Q534279
 metadata:
   sources: [Wikidata Q534279 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q534279
+  - type: born_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q534279
 identifiers:
   bnf: 14533924d
   gnd: "124282253"

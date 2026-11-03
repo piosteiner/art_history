@@ -1,0 +1,56 @@
+public_id: 112324
+name: Pieter Jansz Saenredam
+given_name: Pieter Jansz
+family_name: Saenredam
+birth: 1597-06-09
+death: 1665-05-31
+wikidata_id: Q433804
+metadata:
+  sources: [Wikidata Q433804 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q433804
+  - type: died_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q433804
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q433804
+  - type: worked_in
+    to: place/utrecht
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q433804
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Pieter_Saenredam_by_Jacob_van_Campen.jpg/1280px-Pieter_Saenredam_by_Jacob_van_Campen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pieter_Saenredam_by_Jacob_van_Campen.jpg
+    license: Public domain
+    credit: Jacob van Campen
+identifiers:
+  bnf: 12126569t
+  gnd: "118750682"
+  idref: 02969728X
+  lc: n84200371
+  rkd: "69237"
+  ulan: "500115526"
+  viaf: "9881086"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q433804
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q433804

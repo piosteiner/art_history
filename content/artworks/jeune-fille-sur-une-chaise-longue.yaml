@@ -1,0 +1,113 @@
+public_id: 112074
+title_lang: fr
+title: Jeune Fille sur une chaise longue
+names:
+  - lang: de
+    role: translation
+    text: Junge Frau auf einer Chaiselongue
+  - lang: en
+    role: translation
+    text: Young Lady in a Chaise Longue
+creator: berthe-morisot
+created: 1889
+kind: oil painting
+medium: Oil on canvas
+dimensions: [60, 73]
+institution: kunsthaus-zurich
+inventory_number: BU 0076
+web_url: https://collection.kunsthaus.ch/de/collection/item/604968/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223638
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c4/Berthe_Morisot_-_Jeune_Fille_sur_une_chaise_longue_-_76_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Berthe_Morisot_-_Jeune_Fille_sur_une_chaise_longue_-_76_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Berthe Morisot
+provenance:
+  - owner: person/arthur-kauffmann
+    co_owners: [person/fritz-nathan]
+    role: dealer
+    ended: 1952
+    place: london
+    label: London and Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604968/
+        note: "Footnote: AStEGB, Eingangsbuch I, 10.03.1952, das Dr. Fritz Nathan als Einlieferer ausweist; Kauffmann-Inventar, Heft II, beschriftet «1952/USA», mit einer Liste von Gemälden, darunter Morisot, Jeune fille, zum Preis von 4300 £."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-04
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 4300
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604968/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 76
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "76"
+    institution: foundation-e-g-buhrle-collection
+  - number: "245"
+    label: Clairet (catalogue raisonné)
+  - number: "228"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

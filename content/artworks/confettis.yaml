@@ -1,0 +1,111 @@
+public_id: 112363
+title_lang: en
+title: Confettis
+creator: henri-de-toulouse-lautrec
+created: 1893
+kind: oil painting
+medium: Oil on canvas
+dimensions: [55.5, 43]
+institution: kunsthaus-zurich
+inventory_number: BU 0107
+web_url: https://collection.kunsthaus.ch/de/collection/item/752029/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223642
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2f/Henri_de_Toulouse-Lautrec_-_Confettis_-_107_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_de_Toulouse-Lautrec_-_Confettis_-_107_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Henri de Toulouse-Lautrec
+provenance:
+  - owner: person/robin-langlois
+    acquired: 1902 or earlier
+    ended: 1931 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752029/
+        note: 'Footnote: Kat. Galeries Durand-Ruel, Paris 1902, No. 113; Kat. Musée des Arts décoratifs (Louvre, Pavillon de Marsan), Paris, 1931, No. 113. Der Name von Robin-Langlois ist auch in einem Dossier über die Provenienz und die Ausstellungsgeschichte des Gemäldes aufgeführt, das von Dr. Walter Drack [Kurator der Sammlung Bührle] mit "Dr. Nathan" unterzeichnet ist.'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    acquired: 1952-05-20
+    ended: 1952-05-30
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752029/
+        note: "Footnote: AStEGB, Eingangsbuch I, 20. Mai 1952."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-05-30
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752029/
+        note: "Footnote: Eingangsbuch wie oben Fussnote 5, mit Hinweis auf das Kaufdatum."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752029/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 107
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752029/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "107"
+    institution: foundation-e-g-buhrle-collection
+  - number: "517"
+    label: Dortu P. (catalogue raisonné)
+  - number: "239"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

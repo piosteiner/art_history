@@ -18,6 +18,19 @@ death: 1990-12-27
 wikidata_id: Q5071680
 metadata:
   sources: [Wikidata Q5071680 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/south-korea
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q5071680
+  - type: died_in
+    to: place/seoul
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q5071680
 identifiers:
   gnd: "1073234134"
   lc: n83196810

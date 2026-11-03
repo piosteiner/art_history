@@ -1,10 +1,60 @@
 public_id: 107585
 name: Tawara Sōtatsu
+names:
+  - text: Tawaraya Soatsu
+    sources:
+      - url: https://shozokan.nich.go.jp/en/collection/object/SZK002945
+        source: shozokan-nich-go-jp
+        accessed: 2026-11-02
+  - lang: ja
+    role: original
+    text: 俵屋宗達
+  - Nonomura
+  - Inen
+  - Sōtatsu Tawaraya
+  - Sōtatsu
+  - Kitagawa
+  - Taiseiken
+  - Tawaraya Sotatsu
+  - Tawaraya Soutatsu
+  - Tawaraya Sôtatsu
+  - lang: fr
+    role: translation
+    text: Tawaraya Sōtatsu
+  - lang: zh
+    role: translation
+    text: 俵屋宗逹
+  - lang: ko
+    role: translation
+    text: 다와라야 소타쓰
+  - lang: ru
+    role: translation
+    text: Таварая Сотацу
 birth: c. 1570
 death: c. 1643
 wikidata_id: Q1281252
 metadata:
   sources: [Wikidata Q1281252 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q1281252
+  - type: born_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q1281252
+identifiers:
+  bnf: "166511713"
+  gnd: "118751581"
+  idref: "076127796"
+  lc: n82256527
+  ulan: "500121059"
+  viaf: "109924140"
 sources:
   birth:
     - accessed: 2026-11-01

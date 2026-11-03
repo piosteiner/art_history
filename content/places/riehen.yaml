@@ -1,0 +1,26 @@
+public_id: 112374
+name: Riehen
+names:
+  - lang: ru
+    role: translation
+    text: Риэн
+kind: settlement
+parent: baden-wurttemberg
+country_code: CH
+location: [7.64917, 47.58056]
+wikidata_id: Q5262
+metadata:
+  sources: [Wikidata Q5262 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q5262
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q5262
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q5262

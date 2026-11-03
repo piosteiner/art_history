@@ -1,0 +1,103 @@
+public_id: 112293
+title_lang: en
+title: Fleurs et Citrons
+names:
+  - lang: en
+    role: translation
+    text: Blumen und Zitronen
+  - lang: en
+    role: translation
+    text: Flowers and Lemons
+creator: pablo-picasso
+created: 1941
+kind: oil painting
+medium: Oil on canvas
+dimensions: [92, 73]
+institution: kunsthaus-zurich
+inventory_number: BU 0077
+web_url: https://collection.kunsthaus.ch/de/collection/item/750961/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131586120
+provenance:
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    ended: 1953-04-20
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750961/
+        note: "Footnote: AStEGB, Rechnung der Trafo Anstalt für Handel und Finanz, Vaduz [Marlborough Fine Art Ltd., London], ausgestellt auf Emil Bührle, 20.04.1953 für vier Gemälde (zwei Venedig-Ansichten von Canaletto, Blumen und Zitronen von Picasso und Der verlorene Sohn von Puvis de Chavannes, Sammlung Emil Bührle, Inv. No. 138, 139, 77, 42), einschliesslich Blumen und Zitronen von Picasso) über den Gesamtbetrag von…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-04-20
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750961/
+        note: "Footnote: Wie oben Fussnote 3; AStEGB, Quittung über den Gesamtbetrag von CHF 420.000 für alle 4 Gemälde wie oben Fussnote 3, unterzeichnet von F. K. Lloyd [Marlborough Fine Art Ltd., London], 20.04.1953."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 77
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "77"
+    institution: foundation-e-g-buhrle-collection
+  - number: XI-160
+    label: Zervos (catalogue raisonné)
+  - number: "283"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

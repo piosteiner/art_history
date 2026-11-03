@@ -1,0 +1,147 @@
+public_id: 112034
+title_lang: fr
+title: Portrait de l’artiste à la palette
+names:
+  - lang: de
+    role: translation
+    text: Selbstbildnis mit Palette
+  - lang: en
+    role: translation
+    text: Self-Portrait with Palette
+creator: paul-cezanne
+created: c. 1890
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [92, 73]
+institution: kunsthaus-zurich
+inventory_number: BU 0017
+web_url: https://collection.kunsthaus.ch/de/collection/item/600972/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q12843791
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Paul_C%C3%A9zanne_-_Portrait_de_l%27artiste_%C3%A0_la_palette_-_B%C3%BChrle.jpg/1280px-Paul_C%C3%A9zanne_-_Portrait_de_l%27artiste_%C3%A0_la_palette_-_B%C3%BChrle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_Portrait_de_l%27artiste_%C3%A0_la_palette_-_B%C3%BChrle.jpg
+    license: Public domain
+    credit: Paul Cézanne
+provenance:
+  - owner: artist/paul-cezanne
+    acquired: 1906
+    ended: 1947-10-16
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600972/
+        note: "Footnote: Der Sohn des Künstlers; Kat. Kunsthalle Basel 1936, No. 44; Kat. Stedelijk Museum 1938, No. 30."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/renee-celina-riviere
+    acquired: 1947-10-16
+    ended: 1953-01-05
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600972/
+        note: "Footnote: Witwe des oben Genannten; AStEGB, Brief von Emil Bührle an Renée Cézanne, Paris, 05.01.1953."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    role: agent
+    acquired: 1952-10-27 or earlier
+    ended: 1953-01-05
+    direct: true
+    place: zurich
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600972/
+        note: "Footnote: Verkauf an Emil Bührle durch Galerie Renou & Poyet, Paris, und Walter Feilchenfeldt, Zürich; AStEGB, Korrespondenz zwischen Emil Bührle und Renée Cézanne, Paris, Galerie Renou & Poyet, Paris, und Walter Feilchenfeldt, Zürich, 27.10.1952-06.01.1953. Zusätzlich zahlte Bührle an Feilchenfeldt eine Provision von CHF 30.000, AStEGB, Brief von Emil Bührle an die Industrie- und Handelsbank, Zürich, 16.03…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-maurice-renou-et-poyet
+    role: agent
+    ended: 1953-01-05
+    direct: true
+    place: paris
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600972/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-01-05
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 100000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600972/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600972/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 17
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600972/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "17"
+    institution: foundation-e-g-buhrle-collection
+  - number: "670"
+    label: Rewald (catalogue raisonné)
+  - number: "269"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

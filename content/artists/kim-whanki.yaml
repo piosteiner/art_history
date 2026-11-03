@@ -23,6 +23,19 @@ death: 1974-07-25
 wikidata_id: Q10855929
 metadata:
   sources: [Wikidata Q10855929 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/south-korea
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q10855929
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q10855929
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/9d/%EA%B9%80%ED%99%98%EA%B8%B0_%ED%99%94%EB%B0%B1.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%EA%B9%80%ED%99%98%EA%B8%B0_%ED%99%94%EB%B0%B1.jpg

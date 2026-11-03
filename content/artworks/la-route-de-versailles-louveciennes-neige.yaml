@@ -1,0 +1,123 @@
+public_id: 112298
+title_lang: fr
+title: La Route de Versailles, Louveciennes, neige
+names:
+  - lang: de
+    role: translation
+    text: Die Strasse nach Versailles, Louveciennes, bei Schnee
+  - lang: en
+    role: translation
+    text: The Road to Versailles, Louveciennes, Snow
+creator: camille-pissarro
+created: c. 1870
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [43.5, 65.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0173
+web_url: https://collection.kunsthaus.ch/de/collection/item/750966/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64174091
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a0/Camille_Pissarro_-_La_Route_de_Versailles%2C_Louveciennes%2C_neige_-_173_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Camille_Pissarro_-_La_Route_de_Versailles,_Louveciennes,_neige_-_173_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Camille Pissarro
+provenance:
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    ended: 1937
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750966/
+        note: "Footnote: Kat. Thomas Agnew & Sons, Ltd, London 1937, Nr. 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/j-rohner
+    acquired: 1937
+    ended: 1957
+    place: lausanne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750966/
+        note: "Footnote: Auktion Christie's New York (06.11.2002), Nr. 4; Pissarro/Durand-Ruel 2005, Nr. 142."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/regina-thurlimann
+    acquired: 1957
+    ended: 2002
+    method: inheritance
+    direct: true
+    place: zurich
+    label: née Rohner
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750966/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 2002-11-06
+    ended: 2002-11-06
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Lot 4
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750966/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 2002-11-18
+    method: purchase
+    direct: true
+    place: zurich
+    label: inv. no. 173
+    price:
+      amount: 2759500
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750966/
+        note: "Footnote: Rechnung von Christie's, New York, ausgestellt auf die Stiftung Sammlung E. G. Bührle, Zürich, 02.11.2002; Überweisungsbestätigung ausgestellt von der Privatbank Ihag Zürich AG, Abrechnungsdatum 18.11.2002."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "173"
+    institution: foundation-e-g-buhrle-collection
+  - number: "142"
+    label: Pissarro/Durand-Ruel (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -23,6 +23,27 @@ death: 1956-04-02
 wikidata_id: Q1646239
 metadata:
   sources: [Wikidata Q1646239 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q1646239
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q1646239
+  - type: studied_at
+    to: institution/tokyo-academy-of-fine-arts
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q1646239
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/%E9%AB%98%E6%9D%91%E5%85%89%E5%A4%AA%E9%83%8E.jpg/1280px-%E9%AB%98%E6%9D%91%E5%85%89%E5%A4%AA%E9%83%8E.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%E9%AB%98%E6%9D%91%E5%85%89%E5%A4%AA%E9%83%8E.jpg

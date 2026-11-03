@@ -1,0 +1,35 @@
+public_id: 112206
+name: Valbonne
+names:
+  - lang: ja
+    role: translation
+    text: ヴァルボンヌ
+  - lang: zh
+    role: translation
+    text: 瓦尔博讷
+  - lang: ko
+    role: translation
+    text: 발본
+  - lang: ru
+    role: translation
+    text: Вальбонн
+kind: settlement
+parent: alpes-maritimes
+country_code: FR
+location: [7.00889, 43.64139]
+wikidata_id: Q383436
+metadata:
+  sources: [Wikidata Q383436 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q383436
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q383436
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q383436

@@ -1,0 +1,121 @@
+public_id: 112016
+title_lang: en
+title: Homme au violon
+names:
+  - lang: en
+    role: translation
+    text: Violinspieler
+  - lang: en
+    role: translation
+    text: The Violinist
+creator: georges-braque
+created: 1912
+kind: oil painting
+medium: Oil on canvas
+dimensions: [100, 73]
+institution: kunsthaus-zurich
+inventory_number: BU 0009
+web_url: https://collection.kunsthaus.ch/de/collection/item/600965/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131585921
+provenance:
+  - owner: institution/galerie-kahnweiler
+    role: dealer
+    ended: 1914 or earlier
+    place: paris
+    label: Paris, Stock No. 1000
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600965/
+        note: "Footnote: Etikette auf der Rückseite des Keilrahmens: «No 1000 / Galerie Kahnweiler / 28 rue Vignon»; Stempel in Schwarz auf der Rückseite des Keilrahmens: «Galerie Kahnweiler / Photo 105[5]»; Kat. Marlborough Fine Art Ltd. London 1955, No. 4. Das Gemälde wurde höchstwahrscheinlich von Kahnweiler vor 1914 verkauft, da es in den Katalogen der Zwangsversteigerungen der beschlagnahmten Bestände der Galerie Kah…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/p-lhote
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600965/
+        note: "Footnote: AStEGB, Inventarkarte Braque, Homme au violon."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    ended: 1955-02-03
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600965/
+        note: "Footnote: AStEGB, Rechnung von Trafo, Anstalt für Handel und Finanz, Vaduz [Marlborough Fine Art Ltd., London], ausgestellt auf Emil Bührle, 31.01.1955, für zwei Gemälde, darunter Braque, Homme au violon."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-02-03
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600965/
+        note: "Footnote: Wie oben Fussnote 7: Erworben zusammen mit dem Gemälde Le Numéro d'illusionniste von Edouard Vuillard (Sammlung Emil Bührle, Inv.-Nr. 113), für einen Gesamtbetrag von CHF 189.000; AStEGB, Schreiben der Industrie- und Handelsbank, Zürich an Emil Bührle, 03.02.1955, zur Bestätigung der Überweisung des obigen Betrags."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600965/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 9
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600965/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "9"
+    institution: foundation-e-g-buhrle-collection
+  - number: 07-14.125
+    label: Maeght (catalogue raisonné)
+  - number: "426"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

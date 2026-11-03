@@ -5,6 +5,35 @@ death: 1431-10-05
 wikidata_id: Q10917118
 metadata:
   sources: [Wikidata Q10917118 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q10917118
+  - type: died_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q10917118
+  - type: worked_in
+    to: institution/tofuku-ji
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q10917118
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/94/Minch%C5%8D_self%E2%80%90portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Minch%C5%8D_self%E2%80%90portrait.jpg
+    license: Public domain
+    credit: Minchō（1352-1431）
+identifiers:
+  idref: "189084774"
+  lc: no00023694
+  ulan: "500121031"
+  viaf: "266043719"
 sources:
   birth:
     - accessed: 2026-11-01

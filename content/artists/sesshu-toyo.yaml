@@ -5,6 +5,38 @@ death: 1506-09-05
 wikidata_id: Q48514
 metadata:
   sources: [Wikidata Q48514 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q48514
+  - type: worked_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q48514
+  - type: student_of
+    to: artist/tensho-shubun
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q48514
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/75/Portrait_of_Sesshu.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Sesshu.jpg
+    license: Public domain
+    credit: 不詳 unknown
+identifiers:
+  bnf: "135567585"
+  gnd: "119106485"
+  idref: "050840401"
+  lc: n81098132
+  rkd: "309425"
+  ulan: "500121053"
+  viaf: "3273416"
 sources:
   birth:
     - accessed: 2026-11-01

@@ -1,0 +1,151 @@
+public_id: 111896
+title_lang: fr
+title: Le Sultan du Maroc et son Entourage
+names:
+  - lang: en
+    role: translation
+    text: Muley Abd-el-Rahman
+  - lang: de
+    role: translation
+    text: Der Sultan von Marokko mit seinem Gefolge
+  - lang: en
+    role: translation
+    text: The Sultan of Morocco and His Entourage
+creator: eugene-delacroix
+created: 1862
+kind: oil painting
+medium: Oil on canvas on panel
+dimensions: [69.5, 57.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0124
+web_url: https://collection.kunsthaus.ch/de/collection/item/48906/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q19923959
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/22/Eug%C3%A8ne_Delacroix_-_Le_Sultan_du_Maroc_et_son_Entourage_-_124_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_-_Le_Sultan_du_Maroc_et_son_Entourage_-_124_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Eugène Delacroix
+provenance:
+  - owner: person/l-tabourier
+    ended: 1878
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48906/
+        note: "Footnote: Kat. Galerie Durand-Ruel, Paris 1878, Nr. 151."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48906/
+        note: "Footnote: Johnson 1986, S. 210, Nr. 417."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/cornelius-vanderbilt-iii
+    acquired: 1930 or earlier
+    ended: 1942-03-01
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48906/
+        note: "Footnote: Kat. Louvre, Paris 1930, Nr. 197."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/cornelius-vanderbilt-iii
+    role: estate
+    acquired: 1942-03-01
+    ended: 1953
+    method: inheritance
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48906/
+        note: 'Footnote: Kat. Wildenstein Galleries, New York 1944, Nr. 47. Die Witwe von Cornelius Vanderbilt, Grace Vanderbilt, verstarb am 7. Januar 1953; dies könnte zum späteren Verkauf des Gemäldes geführt haben, AStEGB, Telegramm und Brief von F. Delius, New York, an Emil Bührle, 18. Juni 1953, und 24. Juni 1953, in dem mitgeteilt wird, dass der "Vanderbilt Delacroix" soeben in den Besitz von E. & A. Silberman über…'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/e-a-silberman-galleries
+    role: dealer
+    acquired: 1953-08-01 or earlier
+    ended: 1953-08-31
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48906/
+        note: "Footnote: AStEGB, Brief von Abris Silberman, Hotel Dolder, Zürich, an Emil Bührle, 1. August 1953, mit Fotos und anderem Material zum Bild."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-08-31
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 27000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48906/
+        note: "Footnote: AStEGB, Brief von Emil Bührle an die Industrie- und Handelsbank, Zürich, 31. August 1953, mit der Bestätigung der Überweisung von $ 27.000 an Mr. Silberman, New York. Ausserdem Korrespondenz betreffend die Einfuhr des Bildes, das am 22. August 1953 in Zürich eintraf."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48906/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 124
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48906/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "124"
+    institution: foundation-e-g-buhrle-collection
+  - number: "417"
+    label: Johnson (catalogue raisonné)
+  - number: "305"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

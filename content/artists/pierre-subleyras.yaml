@@ -61,6 +61,46 @@ death: 1749-05-28
 wikidata_id: Q464898
 metadata:
   sources: [Wikidata Q464898 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q464898
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q464898
+  - type: worked_in
+    to: place/toulouse
+    period: 1716/1726
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q464898
+  - type: worked_in
+    to: place/paris
+    period: 1726/1727
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q464898
+  - type: worked_in
+    to: place/rome
+    period: 1728/1749
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q464898
+  - type: member_of
+    to: institution/academie-royale-de-peinture-et-de-sculpture
+    sources:
+      - accessed: 2026-11-02
+        property: P463
+        wikidata: Q464898
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Self-portrait_by_Pierre_Subleyras.jpg/1280px-Self-portrait_by_Pierre_Subleyras.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Self-portrait_by_Pierre_Subleyras.jpg

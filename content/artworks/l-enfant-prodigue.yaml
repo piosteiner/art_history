@@ -1,0 +1,196 @@
+public_id: 112090
+title_lang: fr
+title: L'Enfant prodigue
+names:
+  - lang: de
+    role: translation
+    text: Der verlorene Sohn
+  - lang: en
+    role: translation
+    text: The Prodigal Son
+creator: pierre-puvis-de-chavannes
+created: 1879
+kind: oil painting
+medium: Oil on panel
+dimensions: [130, 96]
+institution: kunsthaus-zurich
+inventory_number: BU 0082
+web_url: https://collection.kunsthaus.ch/de/collection/item/604980/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64410175
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ed/Pierre_Puvis_de_Chavannes_-_L%27Enfant_prodigue_-_82_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre_Puvis_de_Chavannes_-_L%27Enfant_prodigue_-_82_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Pierre Puvis de Chavannes
+provenance:
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1880
+    ended: 1883
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+        note: "Footnote: Brown Price 2010, No. 261."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/henry-lerolle
+    acquired: 1883
+    ended: 1929-04-22
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/henry-lerolle
+    role: estate
+    acquired: 1929-04-22
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+        note: "Footnote: Shaw Research Library, National Gallery of Victoria, Melbourne, Australien, Fulton Bequest Papers, Archive Box 2/39, Correspondence and Conferences 1945-1948, Übersetzung eines Briefes von H. Joly, Paris, an Professor Randolph Schwabe, London, 01.03.1947 (Informationen freundlicherweise zur Verfügung gestellt von Benjamin K. Thomas, Department of Fine Arts, University of Melbourne, Melbourne, Aust…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1944-05-10
+    ended: 1944-05-10
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+        note: "Footnote: Im Jahr 1944 wurde das Gemälde auf einer Auktion in Paris angeboten, vielleicht von Joly im Auftrag; ging dann aber entweder zurück oder Joly hatte es erst hier erworben, Auktion Hôtel Drouot, Paris (10.05.1944), No. 26."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/h-joly
+    acquired: 1944 or earlier
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+        note: "Footnote: Brief wie oben Fussnote 4. Im Jahr 1944 wurde das Gemälde auf einer Auktion in Paris angeboten, vielleicht von Joly im Auftrag; ging dann aber entweder zurück oder Joly hatte es erst hier erworben, Auktion Hôtel Drouot, Paris, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    ended: 1952-11-28
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+        note: "Footnote: Auktion Hôtel Drouot, Paris (28.11.1952), No. 109."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1952-11-28
+    ended: 1952-11-28
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+        note: "Footnote: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/henri-puvis-de-chavannes
+    ended: April 1953 or earlier
+    method: purchase
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+        note: "Footnote: Neffe des Künstlers, erworben bei der obigen Versteigerung (?), oder als Vermittler nach dem Ankauf des Gemäldes tätig, Auskunft von Marlborough International Fine Art an die Stiftung Sammlung E. G. Bührle, 24. und 29.08.2012; H. Joly, in seinem Brief wie oben Fussnote 4 erwähnt, dass er Henri Puvis de Chavannes nahe stand."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    acquired: April 1953 or earlier
+    ended: 1953-04-20
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+        note: "Footnote: Erworben zwischen November 1952 und März 1953, Auskunft von Marlborough International Fine Art an die Stiftung Sammlung E.G. Bührle, 24. und 29.08.2012; AStEGB, Rechnung der Trafo Anstalt für Handel und Finanz, Vaduz [Marlborough Fine Art Ltd, London], ausgestellt auf Emil Bührle, 20.04.1953, für 4 Gemälde (zwei Ansichten von Venedig von Canaletto, «Blumen und Zitronen» von Picasso und «Der verlor…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-04-20
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+        note: "Footnote: AStEGB, Quittung über den Gesamtbetrag von CHF 420.000 für alle vier Gemälde wie oben Fussnote 10, unterzeichnet von F. K. Lloyd [Head of Marlborough Fine Art Ltd., London], 20.04.1953."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 82
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "82"
+    institution: foundation-e-g-buhrle-collection
+  - number: "261"
+    label: Brown Price (catalogue raisonné)
+  - number: "284"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604980/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

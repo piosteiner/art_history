@@ -1,0 +1,54 @@
+public_id: 112355
+name: Jorge Manuel Theotocópuli
+given_name: Jorge Manuel
+family_name: Theotocópuli
+birth: 1578
+death: 1631-03-29
+wikidata_id: Q3109427
+metadata:
+  sources: [Wikidata Q3109427 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q3109427
+  - type: born_in
+    to: place/toledo
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q3109427
+  - type: died_in
+    to: place/toledo
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q3109427
+  - type: worked_in
+    to: place/toledo
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q3109427
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4e/El_Greco_-_Portrait_of_the_Artist%27s_Son_Jorge_Manuel_Theotokopoulos_-_WGA10567.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:El_Greco_-_Portrait_of_the_Artist%27s_Son_Jorge_Manuel_Theotokopoulos_-_WGA10567.jpg
+    license: Public domain
+    credit: El Greco
+identifiers:
+  gnd: "122000927"
+  lc: n2001004201
+  rkd: "129245"
+  ulan: "500026646"
+  viaf: "25473660"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q3109427
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q3109427

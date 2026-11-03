@@ -22,6 +22,73 @@ death: 1976-11-11
 wikidata_id: Q151580
 metadata:
   sources: [Wikidata Q151580 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q151580
+  - type: born_in
+    to: place/philadelphia
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q151580
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q151580
+  - type: worked_in
+    to: place/barcelona
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q151580
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q151580
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q151580
+  - type: worked_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q151580
+  - type: worked_in
+    to: place/malaga
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q151580
+  - type: worked_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q151580
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q151580
+  - type: associated_with
+    to: movement/modern-art
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q151580
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/0/05/Alexander_Calder_1968.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Alexander_Calder_1968.jpg

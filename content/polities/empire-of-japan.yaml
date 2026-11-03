@@ -1,6 +1,7 @@
 public_id: 102763
 name: Empire of Japan
 period: 1868-01-03/1947-05-03
+country_codes: [JP, KR, KP, TW]
 wikidata_id: Q188712
 metadata:
   sources: [Wikidata Q188712 (retrieved 2026-10-28)]

@@ -1,0 +1,130 @@
+public_id: 112356
+title_lang: de
+title: Geburt Mariä
+names:
+  - lang: en
+    role: translation
+    text: The Birth of the Virgin
+creator: jorge-manuel-theotocopuli
+created: 1608/1620
+kind: oil painting
+medium: Oil on canvas
+dimensions: [62, 36]
+institution: kunsthaus-zurich
+inventory_number: BU 0141
+web_url: https://collection.kunsthaus.ch/de/collection/item/752019/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q16581524
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/86/Jorge_Manuel_Theotoc%C3%B3puli_-_Geburt_Mari%C3%A4_-_BU_0141_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jorge_Manuel_Theotoc%C3%B3puli_-_Geburt_Mari%C3%A4_-_BU_0141_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: El Greco / Jorge Manuel Theocupulus
+provenance:
+  - owner: person/marques-de-alos
+    acquired: 1908
+    place: barcelona
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752019/
+        note: "Footnote: Cossio 1908, Nr. 18"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/tomas-harris
+    role: dealer
+    ended: 1956
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752019/
+        note: "Footnote: Getty Research Center, Santa Monica (Kalifornien), Knoedler Galley Archive, Stock Book 10, S. 156, Nr. A6100."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/tomas-harris
+    co_owners: [institution/m-knoedler-co]
+    role: dealer
+    acquired: 1956-09-20
+    ended: 1956-09-25
+    method: purchase
+    direct: true
+    place: london
+    label: London and New York
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752019/
+        note: "Footnote: Miteigentum ab 20. September 1956 mit Vorgenanntem, wobei der Anteil der Knoedler Galleries zur Hälfte 29.919 USD beträgt, Stock Book wie oben Fussnote 5; AStEGB, Korrespondenz zwischen M. Knoedler & Co, Inc., New York, und Emil Bührle, 07.02.-08.09.1956, betreffend die Verschiffung des Bildes nach Zürich."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1956-09-25
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 135000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752019/
+        note: "Footnote: Von den Vorgenannten als authentisches Werk von El Greco am 25. September 1956 für 135.000 USD  erworben, Stock Book wie oben Fussnote 5; AStEGB, Rechnung von M. Knoedler & Co., Inc., New York, ausgestellt auf Emil Bührle, 10.09.1956; Brief von M. Knoedler & Co., Inc., New York, an Emil Bührle, 17.10.1956, der den Erhalt des Schecks bestätigt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752019/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 141
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752019/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "141"
+    institution: foundation-e-g-buhrle-collection
+  - number: X-33
+    label: Wethey (catalogue raisonné)
+  - number: "529"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752019/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752019/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752019/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752019/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752019/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752019/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752019/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752019/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

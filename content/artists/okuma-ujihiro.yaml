@@ -9,6 +9,19 @@ death: 1934-03-20
 wikidata_id: Q30255569
 metadata:
   sources: [Wikidata Q30255569 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q30255569
+  - type: student_of
+    to: artist/vincenzo-ragusa
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q30255569
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/0/00/%C5%8Ckuma_Ujihiro.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%C5%8Ckuma_Ujihiro.jpg

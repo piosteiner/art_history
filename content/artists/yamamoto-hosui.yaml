@@ -15,6 +15,31 @@ death: 1906-11-15
 wikidata_id: Q3146372
 metadata:
   sources: [Wikidata Q3146372 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3146372
+  - type: student_of
+    to: artist/antonio-fontanesi
+    sources:
+      - accessed: 2026-11-02
+        property: P802
+        wikidata: Q1081011
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q3146372
+  - type: associated_with
+    to: movement/youga
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q3146372
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/6/6c/Yamamoto_H%C5%8Dsui.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Yamamoto_H%C5%8Dsui.jpg

@@ -1,0 +1,41 @@
+public_id: 112214
+name: Bremen
+names:
+  - lang: ja
+    role: translation
+    text: ブレーメン
+  - lang: zh
+    role: translation
+    text: 不来梅
+  - lang: ko
+    role: translation
+    text: 브레멘
+  - lang: fr
+    role: translation
+    text: Brême
+  - lang: it
+    role: translation
+    text: Brema
+  - lang: ru
+    role: translation
+    text: Бремен
+kind: settlement
+parent: germany
+country_code: DE
+location: [8.80722, 53.07583]
+wikidata_id: Q24879
+metadata:
+  sources: [Wikidata Q24879 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q24879
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q24879
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q24879

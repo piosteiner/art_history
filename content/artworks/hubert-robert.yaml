@@ -1,0 +1,108 @@
+public_id: 112230
+title_lang: en
+title: «Hubert Robert»
+creator: jean-honore-fragonard
+attribution_label: attributed to Jean-Honoré Fragonard
+kind: oil painting
+medium: Oil on paper on canvas
+dimensions: [42.5, 34]
+institution: kunsthaus-zurich
+inventory_number: BU 0131
+web_url: https://collection.kunsthaus.ch/de/collection/item/705959/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131585985
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/02/Honor%C3%A9_Fragonard%2C_attributed_to_-_%C2%ABHubert_Robert%C2%BB_-_131_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Honor%C3%A9_Fragonard,_attributed_to_-_%C2%ABHubert_Robert%C2%BB_-_131_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Attributed to Jean-Honoré Fragonard
+provenance:
+  - owner: person/willibald-wolf-rudinoff
+    ended: 1931 or earlier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/705959/
+        note: "Footnote: AStEGB, Rechnung von Jacques Seligmann & Co, New York, ausgestellt auf Emil Bührle, 26. Januar 1952, für 3 Gemälde, darunter Fragonard, Hubert Robert, mit Provenienz und Ausstellungsgeschichte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/germain-seligman
+    role: dealer
+    acquired: 1932 or earlier
+    ended: 1952-02-20
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/705959/
+        note: "Footnote: Kat. Royal Academy of Arts, London 1932, Nr. 269."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-02-20
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/705959/
+        note: "Footnote: Erworben zusammen mit 2 anderen Gemälden für einen Gesamtbetrag von $ 70.000, AStEGB, Brief von Germain Seligman, New York, an Emil Bührle, 26. Januar 1952; Brief von Germain Seligman, New York, an Emil Bührle, 20. Februar 1952, der den Erhalt von $ 70.000 für 3 Gemälde, darunter Fragonard, Hubert Robert, bestätigt. Siehe auch Akte mit Preisen für 9 Gemälde, darunter Fragonard, Hubert Robert ($ 40…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/705959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 131
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/705959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "131"
+    institution: foundation-e-g-buhrle-collection
+  - number: "223"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/705959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/705959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/705959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/705959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/705959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/705959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/705959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/705959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

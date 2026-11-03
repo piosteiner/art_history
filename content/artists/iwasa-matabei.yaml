@@ -23,6 +23,13 @@ death: 1650-07-20
 wikidata_id: Q3156405
 metadata:
   sources: [Wikidata Q3156405 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3156405
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/d/d4/Iwasa_Matabei_Self_Portrait.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Iwasa_Matabei_Self_Portrait.jpg

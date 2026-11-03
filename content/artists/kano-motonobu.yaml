@@ -23,6 +23,25 @@ death: 1559-11-15
 wikidata_id: Q1078015
 metadata:
   sources: [Wikidata Q1078015 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q1078015
+  - type: born_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q1078015
+  - type: died_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q1078015
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/3/32/Kano_White-robed_Kannon%2C_Bodhisattva_of_Compassion.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Kano_White-robed_Kannon,_Bodhisattva_of_Compassion.jpg

@@ -1,0 +1,175 @@
+public_id: 112316
+title_lang: de
+title: Der heilige Augustin
+names:
+  - lang: en
+    role: translation
+    text: Saint Augustine
+creator: peter-paul-rubens
+created: 1620
+kind: oil painting
+medium: Oil on panel
+dimensions: [48, 63.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0160
+web_url: https://collection.kunsthaus.ch/de/collection/item/750972/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131585949
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6c/Peter_Paul_Rubens_-_Der_heilige_Augustin_-_160_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Der_heilige_Augustin_-_160_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Peter Paul Rubens
+provenance:
+  - owner: person/francois-xavier-de-burtin
+    ended: 1802
+    place: brussels
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+        note: "Footnote: Schuttwolf 2004, S. 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/ernst-ii-ludwig-von-sachsen-gotha-altenburg
+    acquired: 1802
+    ended: 1804-04-20
+    method: purchase
+    direct: true
+    label: Schloss Friedenstein, Gotha
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+        note: "Footnote: Schuttwolf 2004, wie oben Fussnote 3: Erworben zusammen mit 3 weiteren Ölskizzen von Rubens für die Jesuitenkirche in Antwerpen."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/herzoge-von-sachsen-gotha-altenburg
+    acquired: 1804-04-20
+    ended: 1826
+    direct: true
+    label: Schloss Friedenstein, Gotha
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/herzoge-von-sachsen-coburg-und-gotha
+    acquired: 1826
+    ended: 1918
+    direct: true
+    label: Schloss Friedenstein
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+        note: "Footnote: Wie oben Fussnote 3, S. 13, 17, Nr. 345 (Abb.)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/carl-eduard-herzog-von-sachsen-coburg-und-gotha
+    acquired: 1918
+    ended: 1928
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+        note: "Footnote: Wie oben Fussnote 6: Herzog Carl Eduard von Sachsen-Coburg und Gotha wurde 1918 zur Abdankung gezwungen, blieb aber bis 1928 Eigentümer der Kunstsammlung in Gotha, die dann in eine Stiftung unter Aufsicht des Landes Thüringen überführt wurde."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/herzog-von-sachsen-coburg-und-gotha-sche-stiftung-fur-kunst-und-wissenschaft
+    acquired: 1928
+    ended: 1945 or later
+    direct: true
+    place: gotha
+    label: Gotha and Coburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+        note: "Footnote: Krüger 2022, S. 68-69, Abb. 5: Das Werk blieb bis 1945 als Depositum im Herzoglichen Museum Gotha und wurde am 27.03.1945, initiiert und organisiert von Eberhard Freiherr Schenk von Schweinsberg, Direktor des Herzoglichen Museums Gotha, nach Coburg umgezogen mit der Absicht, das Werk vor der Beschlagnahme durch russische Trophäenbrigaden zu schützen und es in die Obhut der dortigen herzoglichen Fa…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/e-a-silberman-galleries
+    role: dealer
+    ended: 1953
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+        note: "Footnote: Anzeige der E. & A. Silberman Galleries, Inc. in New York, mit einer Abbildung von Rubens, Saint Augustine, in: Art Quarterly (16) 1953, S. 87."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    role: dealer
+    acquired: 1953
+    ended: 1953-05-29
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+        note: "Footnote: Auskunft von Walter Feilchenfeldt, Zürich, Sohn von Dr. Walter Feilchenfeldt, an die Stiftung Sammlung E.G. Bührle, Zürich, 22.04.2008. Diese Information wird bestätigt durch AStEGB, Brief von E. and A. Silberman Galleries, Inc., New York, an Emil Bührle, 14.09.1953, der eine Veröffentlichung einer anderen Rubens-Skizze aus derselben Serie begleitet, die von der Albright Art Gallery, Buffalo (New …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-05-29
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+        note: "Footnote: AStEGB, Eingangsbuch II, 22.05.1953; AStEGB, Handschriftliche Notiz von Emil Bührle an Dr. O. Maurer [Generalsekretär von Oerlikon Bührle & Co.], o. D., mit der Ankündigung, dass Dr. Feilchenfeldt demnächst kommt, um CHF 200.000 für eine Landschaft von Cézanne (Sammlung Emil Bührle, Inv. 175) und die Rubens-Skizze abzuholen, wovon CHF 30.000 auf ein Konto bei der Schweizerischen Kreditanstalt zu ü…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 160
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "160"
+    institution: foundation-e-g-buhrle-collection
+  - number: "28"
+    label: Held (catalogue raisonné)
+  - number: "288"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

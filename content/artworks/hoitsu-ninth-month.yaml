@@ -1,5 +1,12 @@
 public_id: 107944
-title: Ninth Month, from Flowers and Birds of the Twelve Months
+title_lang: jp
+title: 八月　秋草に螽斯図  - {花鳥十二ヶ月図 |かちょうじゅうにかげつず}
+names:
+  - role: alternative
+    text: Ninth Month, from Flowers and Birds of the Twelve Months
+    note: wrong month. its actually the 8th month
+    sources:
+      - source: history-of-japanese-art
 creator: sakai-hoitsu
 created: 1823
 kind: kakemono
@@ -7,6 +14,7 @@ medium: Hanging scroll, colour on silk
 materials: [silk]
 dimensions: [140, 50]
 institution: museum-of-the-imperial-collections
+web_url: https://shozokan.nich.go.jp/en/collection/object/SZK000142
 description_md: "One of twelve hanging scrolls painted by [[artist/sakai-hoitsu]] (1761–1828) at sixty-two: four autumn plants under a pale harvest moon, so subtly placed that a slight breeze seems to touch them. Hōitsu, born into the daimyo family of Himeji, became a priest in 1797 and from 1810 revived Kōrin’s style, publishing his Hundred Paintings by Kōrin for the centenary of his death in 1815. [[source/history-of-japanese-art|pp. 316–317, fig. 368]]"
 relationships:
   - type: associated_with
@@ -18,6 +26,8 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 316–317, fig. 368
+  names:
+    - source: history-of-japanese-art
   medium:
     - source: history-of-japanese-art
       locator: pp. 316–317, fig. 368
@@ -36,3 +46,7 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: pp. 316–317, fig. 368
+  title_status:
+    - url: https://shozokan.nich.go.jp/en/collection/object/SZK000142
+      source: shozokan-nich-go-jp
+      accessed: 2026-11-02

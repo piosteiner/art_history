@@ -1,0 +1,170 @@
+public_id: 112331
+title_lang: en
+title: Étude pour «La Parade»
+names:
+  - lang: en
+    role: translation
+    text: Studie zu «La Parade»
+  - lang: en
+    role: translation
+    text: Study for 'The Invitation to the Sideshow'
+creator: georges-seurat
+created: 1887
+kind: oil painting
+medium: Oil on panel
+dimensions: [16.5, 26]
+institution: kunsthaus-zurich
+inventory_number: BU 0095
+web_url: https://collection.kunsthaus.ch/de/collection/item/750975/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64410171
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5b/Georges_Seurat_-_%C3%89tude_pour_Parade_de_cirque_PC_187.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Georges_Seurat_-_%C3%89tude_pour_Parade_de_cirque_PC_187.jpg
+    license: Public domain
+    credit: Georges Seurat
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+        note: "Footnote: Hauke 1961, Bd. 1, No. 186."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-charpentier
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/adolphe-basler
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/rose-vildrac
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+        note: "Footnote: Wie oben Fussnote 3; Dorra/Rewald 1959, No. 180."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/pierre-loeb
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jos-hessel
+    place: paris
+    label: genannt Jos Hessel (*1859 Brüssel, +1942 Paris)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/modern-paintings-inc
+    role: dealer
+    ended: 1934-09-27 or earlier
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+        note: 'Footnote: Archives of American Art, Smithsonian Institution, Washington D.C., Jacques Seligmann & Co. records, Box 417, Folder 4, Inventar vom 27. September 1934 der Kunstwerke im Besitz von Modern Paintings, Inc., der von Germain Seligman gegründeten Gesellschaft, die den größten Teil des Inventars von de Hauke & Co. übernahm, die zwischen 1931 und 1934 liquidiert wurde. Das Gemälde von Seurat, "Etude pour…'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/germain-seligman
+    role: dealer
+    acquired: 1934-09-27 or earlier
+    ended: 1951-07-05
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+        note: "Footnote: Inventar wie oben Fussnote 15, listet einen Ankauf des Gemäldes aus dem Bestand von de Hauke & Co. durch Seligman auf, ohne ein Datum zu nennen; Archives of American Art, Smithsonian Institution, Washington D.C., Jacques Seligmann & Co. records, Box 281, Folder 12, Stock Book 1935/36 listet das Gemälde mit der Inv.-Nr. 3457."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-07-05
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 10500
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+        note: "Footnote: Erworben als eines von sechs Gemälden, fakturiert für insgesamt $ 100.000, AStEGB, Rechnung von Jacques Seligmann & Co., Inc., New York, ausgestellt auf Emil Bührle, 22. Juni 1951; Brief von O. A. Liechti, Jacques Seligmann & Co., Inc., New York, 5. Juli 1951, der den Erhalt des vollen Betrages für die 6 Gemälde, fakturiert am 22. Juni 1951, bestätigt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 95
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "95"
+    institution: foundation-e-g-buhrle-collection
+  - number: "180"
+    label: Dorra-Rewald (catalogue raisonné)
+  - number: "186"
+    label: Hauke (catalogue raisonné)
+  - number: "200"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750975/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

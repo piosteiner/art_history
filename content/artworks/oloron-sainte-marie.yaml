@@ -1,0 +1,174 @@
+public_id: 111953
+title_lang: en
+title: Oloron-Sainte-Marie
+creator: edouard-manet
+created: 1871
+kind: oil painting
+medium: Oil on canvas
+dimensions: [42.5, 62.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0064
+web_url: https://collection.kunsthaus.ch/de/collection/item/585971/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64174096
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8d/%C3%89douard_Manet_-_Oloron-Sainte-Marie_-_64_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Manet_-_Oloron-Sainte-Marie_-_64_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Édouard Manet
+provenance:
+  - owner: person/louis-gauthier-lathuile
+    acquired: 1881-07-29
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 200
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+        note: "Footnote: Rouart/Wildenstein 1975, Bd. I, No. 163."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/mme-joliot
+    place: paris
+    label: née Gauthier-Lathuille
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+        note: "Footnote: Rouart/Wildenstein, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hector-gustave-brame
+    role: dealer
+    ended: 20 February 1936 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+        note: "Footnote: Archives of American Art, Smithsonian Institution, Washington D.C., Jacques Seligman & Co. records, Box 17, Folder 2, Brief von Germain Seligman, New York, an Hector Brame, Paris, 20.02.1936, mit der Bestätigung des Empfangs des Stammbaums von Manet, Oloron-Sainte-Marie, erhalten in Kommission; Brief von Jacques Seligmann & Co, Inc., New York, an Hector Brame, Paris, 22.05.1936, in dem dieser über…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/jacques-seligmann-co-inc
+    role: agent
+    acquired: 1936-02-20
+    ended: 1936-05-22
+    direct: true
+    place: new-york-city
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-louis-brame
+    role: dealer
+    acquired: 1946-03-19 or earlier
+    ended: 11 February 1948 or later
+    place: paris
+    label: wohl Nachlass
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+        note: |-
+          Footnote: Archives of American Art, Smithsonian Institution, Washington D.C., Jacques Seligmann & Co. records, Box 17, Folder 3, Korrespondenz zwischen Germain Seligman und Georges Seligman, New York, und Paul Brame, Paris, 19.03.1946-11.02.1948, Oloron-Sainte-Marie betreffend; Kat. Wildenstein Galleries 1948, No. 19.
+          Das Gemälde war 1938 an Seligman zurückgegeben worden und verblieb bei ihm in Kommission, …
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/jacques-seligmann-co-inc
+    role: agent
+    acquired: 1938
+    ended: 1948-02-26
+    direct: true
+    place: new-york-city
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    acquired: 11 February 1948 or later
+    ended: 1949-03-15
+    method: purchase
+    direct: true
+    place: st-gallen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+        note: "Footnote: AStEGB, Brief von Dr. Fritz Nathan, St. Gallen, an Emil Bührle, 13.02.1949, mit detaillierter Provenienz (zitiert nach Wildenstein/Jamot 1932, No. 188), und dem Zusatz, dass er das Gemälde direkt von [Hector] Brame's Sohn kaufte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1949-03-15
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 20000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+        note: "Footnote: AStEGB, quittierte Rechnung von Dr. Fritz Nathan, St. Gallen, ausgestellt auf Emil Bührle, 15.03.1949."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 64
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "64"
+    institution: foundation-e-g-buhrle-collection
+  - number: "163"
+    label: Rouart/Wildenstein (catalogue raisonné)
+  - number: "169"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

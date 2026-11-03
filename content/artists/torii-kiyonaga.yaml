@@ -20,6 +20,19 @@ death: 1815-06-28
 wikidata_id: Q427642
 metadata:
   sources: [Wikidata Q427642 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q427642
+  - type: associated_with
+    to: movement/torii-school
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q427642
 identifiers:
   bnf: 12522136g
   dome: "4157"

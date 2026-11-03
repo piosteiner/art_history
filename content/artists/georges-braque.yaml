@@ -1,0 +1,137 @@
+public_id: 112009
+name: Georges Braque
+given_name: Georges
+family_name: Braque
+birth: 1882-05-13
+death: 1963-08-31
+wikidata_id: Q153793
+metadata:
+  sources: [Wikidata Q153793 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q153793
+  - type: born_in
+    to: place/argenteuil
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q153793
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q153793
+  - type: worked_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153793
+  - type: worked_in
+    to: place/avignon
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153793
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153793
+  - type: worked_in
+    to: place/honfleur
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153793
+  - type: worked_in
+    to: place/marseille
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153793
+  - type: worked_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153793
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153793
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153793
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153793
+  - type: influenced_by
+    to: artist/pablo-picasso
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q153793
+  - type: influenced_by
+    to: artist/paul-cezanne
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q153793
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q153793
+  - type: associated_with
+    to: movement/cubism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q153793
+  - type: associated_with
+    to: movement/fauvism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q153793
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e1/Georges_Braque%2C_1908%2C_photograph_published_in_Gelett_Burgess%2C_The_Wild_Men_of_Paris%2C_Architectural_Record%2C_May_1910.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Georges_Braque,_1908,_photograph_published_in_Gelett_Burgess,_The_Wild_Men_of_Paris,_Architectural_Record,_May_1910.jpg
+    license: Public domain
+    credit: Photographer non-identified, anonymous
+identifiers:
+  bnf: "120557687"
+  dome: "41"
+  gnd: "118514504"
+  idref: "027284050"
+  kulturnav: d3fcd159-2a07-427e-bad4-d26a3f6b87a8
+  lc: n80050494
+  nlk: KAC201876526
+  rkd: "12125"
+  ulan: "500025200"
+  viaf: "9867924"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q153793
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q153793

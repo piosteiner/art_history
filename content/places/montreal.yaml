@@ -1,0 +1,38 @@
+public_id: 111869
+name: Montreal
+names:
+  - lang: ja
+    role: translation
+    text: モントリオール
+  - lang: zh
+    role: translation
+    text: 蒙特利尔
+  - lang: ko
+    role: translation
+    text: 몬트리올
+  - lang: fr
+    role: translation
+    text: Montréal
+  - lang: ru
+    role: translation
+    text: Монреаль
+kind: settlement
+parent: quebec
+country_code: CA
+location: [-73.58684, 45.50334]
+wikidata_id: Q340
+metadata:
+  sources: [Wikidata Q340 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q340
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q340
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q340

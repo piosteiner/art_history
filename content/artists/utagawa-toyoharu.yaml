@@ -23,6 +23,19 @@ death: 1814-03-03
 wikidata_id: Q3109421
 metadata:
   sources: [Wikidata Q3109421 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3109421
+  - type: associated_with
+    to: movement/utagawa-school
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q3109421
 identifiers:
   bnf: 16903561v
   gnd: "138127239"

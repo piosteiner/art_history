@@ -19,6 +19,27 @@ death: 1985-06-15
 wikidata_id: Q1567766
 metadata:
   sources: [Wikidata Q1567766 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q1567766
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q1567766
+  - type: died_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q1567766
 identifiers:
   bnf: "151123712"
   gnd: "119241099"

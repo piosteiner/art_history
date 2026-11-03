@@ -1,0 +1,83 @@
+public_id: 112375
+name: François-André Vincent
+given_name: François-André
+family_name: Vincent
+birth: 1746-12-30
+death: 1816-08-04
+wikidata_id: Q718975
+metadata:
+  sources: [Wikidata Q718975 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q718975
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q718975
+  - type: died_in
+    to: place/former-10th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q718975
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q718975
+  - type: worked_in
+    to: place/rome
+    period: 1771/1776
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q718975
+  - type: studied_at
+    to: institution/academie-de-saint-luc
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q718975
+  - type: studied_at
+    to: institution/academie-royale-de-peinture-et-de-sculpture
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q718975
+  - type: associated_with
+    to: movement/neoclassicism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q718975
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Ad%C3%A9laide_Labille-Guiard_001.jpg/1280px-Ad%C3%A9laide_Labille-Guiard_001.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ad%C3%A9laide_Labille-Guiard_001.jpg
+    license: Public domain
+    credit: Adélaïde Labille-Guiard
+identifiers:
+  bnf: 12490285r
+  gnd: "119475804"
+  idref: "029270022"
+  kulturnav: b141bc0a-2bdc-4dce-8490-75756f6c087c
+  lc: no89014066
+  rkd: "81097"
+  sikart: "4029859"
+  ulan: "500026118"
+  viaf: "66569236"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q718975
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q718975

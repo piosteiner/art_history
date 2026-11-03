@@ -4,6 +4,19 @@ birth: 1201/1300
 wikidata_id: Q3054373
 metadata:
   sources: [Wikidata Q3054373 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3054373
+  - type: worked_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q3054373
 sources:
   birth:
     - accessed: 2026-11-01

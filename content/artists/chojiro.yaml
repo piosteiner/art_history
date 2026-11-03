@@ -18,6 +18,19 @@ death: 1592
 wikidata_id: Q2972132
 metadata:
   sources: [Wikidata Q2972132 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2972132
+  - type: died_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q2972132
 identifiers:
   gnd: "132912562"
   lc: no2015082173

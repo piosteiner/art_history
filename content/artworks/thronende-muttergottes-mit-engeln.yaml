@@ -1,0 +1,130 @@
+public_id: 112401
+title_lang: en
+title: Thronende Muttergottes mit Engeln
+names:
+  - lang: en
+    role: translation
+    text: The Virgin and Child Enthroned with Angels
+attribution_label: Anonymous, Upper Bavaria
+created: c. 1490
+created_span: uncertain
+kind: sculpture
+medium: Limewood
+dimensions: [139.4, 108.5, 37.5]
+institution: kunsthaus-zurich
+inventory_number: BU P.13
+web_url: https://collection.kunsthaus.ch/de/collection/item/752992/
+on_loan: true
+on_loan_since: 2021
+region: europe
+provenance:
+  - owner_label: unknown (collector)
+    label: Braunau oder München (?)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752992/
+        note: "Footnote: AStEGB, Inventarkarte Jungfrau und Kind."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/johannes-hinrichsen
+    role: dealer
+    place: berlin
+    label: Berlin and Alt-Aussee
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752992/
+        note: "Footnote: Wie oben Fussnote 3: Wonach sich die Skulptur bereits bei Hinrichsen befand, als dieser noch in Berlin ansässig war."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/karl-buchs
+    role: dealer
+    ended: 1953-08-18
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752992/
+        note: "Footnote: AStEGB, Kopie eines Schreibens von Fritz Nathan, Zürich, an René Wehrli, Direktor des Kunsthauses Zürich, 15.08.1953, mit der Bitte um Überweisung von CHF 15.000 an das Bankhaus Neuvians, Reuschel & Co. in München, zugunsten von Herrn Karl Büchs, München, für die von Johannes Hinrichsen in die Schweiz exportierte Skulptur Jungfrau und Kind mit Engeln."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: agent
+    acquired: 1953-07-16 or earlier
+    ended: 1953-08-18
+    direct: true
+    place: zurich
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752992/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-08-18
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 65000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752992/
+        note: 'Footnote: Erworben unter Vermittlung von Fritz Nathan, Zürich, für CHF 50.000 + CHF 15.000 = CHF 65.000, AStEGB, Quittung, unterschrieben mit Monogramm "N" von Fritz Nathan 16.07.1953, ausgestellt auf Emil Bührle über CHF 64.000 für ein Gemälde von Bonnard, bewertet mit CHF 14.000, und für die vorliegende Skulptur; AStEGB, Kopie eines Schreibens von René Wehrli, Direktor des Kunsthauses Zürich, an die Werkz…'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752992/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. P13
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752992/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: P13
+    institution: foundation-e-g-buhrle-collection
+  - number: "586"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752992/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752992/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752992/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752992/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752992/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752992/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752992/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752992/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

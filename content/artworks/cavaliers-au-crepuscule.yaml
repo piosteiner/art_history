@@ -1,0 +1,123 @@
+public_id: 112102
+title_lang: en
+title: Cavaliers au crépuscule
+names:
+  - lang: de
+    role: translation
+    text: Reiter in der Dämmerung
+  - lang: en
+    role: translation
+    text: Riders in the Twilight
+creator: georges-rouault
+created: c. 1920
+created_span: uncertain
+kind: oil painting
+medium: Oil on paper on canvas
+dimensions: [71, 107]
+institution: kunsthaus-zurich
+inventory_number: BU 0093
+web_url: https://collection.kunsthaus.ch/de/collection/item/604984/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q124294676
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    ended: 1939-07-22 or earlier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604984/
+        note: "Footnote: AStEGB, Inventarkarte Rouault, Cavaliers au crépuscule."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/martin-fabiani
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604984/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/max-kaganovitch
+    role: dealer
+    ended: 1955-03-11
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604984/
+        note: "Footnote: AStEGB, Rechnung von Max Kaganovitch, Paris, ausgestellt auf Emil Bührle, 2. März 1955."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-03-11
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 8450000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604984/
+        note: 'Footnote: Rechnung wie oben Fussnote 7, quittiert von Max Kaganovitch über den Betrag von FRF 5.450.000; der Betrag von FRF 3.000.000 wurde auf dem Dienstweg ["Clearing"] bezahlt, AStEGB, Rechnung von Max Kaganovitch, Paris, ausgestellt auf Kunsthaus Zürich, 18. Februar 1955; Schreiben von Emil Bührle an Industrie- und Handelsbank, Zürich, 11. März 1955, mit dem Auftrag zur Überweisung von FRF 3.000.000 "üb…'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604984/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 93
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604984/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "93"
+    institution: foundation-e-g-buhrle-collection
+  - number: "878"
+    label: Dorival (catalogue raisonné)
+  - number: "434"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604984/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604984/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604984/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604984/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604984/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604984/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604984/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604984/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

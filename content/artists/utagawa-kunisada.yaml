@@ -1,0 +1,88 @@
+public_id: 109317
+name: Utagawa Kunisada
+names:
+  - lang: ja
+    role: original
+    text: 歌川国貞
+  - Utagawa Toyokuni III
+  - Kunisada
+  - Kôchôrô Toyokuni
+  - Toyokuni Utagawa
+  - Sanjin
+  - Gototei
+  - Ichiyôsai Toyokuni
+  - Bukiyō Matahei
+  - Kôchôrô Kunisada
+  - Gototei Kunisada
+  - Sumida Shōzō
+  - Hanabusa Ittei
+  - Ichiyūsai Kunisada
+  - Toyokuni III
+  - Shōzō
+  - Gepparō
+  - Toyokuni
+  - Ichiyōsai
+  - Kinraisha
+  - Kunisada Utagawa
+  - Kōchōrō
+  - Fuchō
+  - Kochoro Toyokuni
+  - Ichiyosai Toyokuni
+  - Kochoro Kunisada
+  - Kunisada (Toyokuni III)
+  - lang: zh
+    role: translation
+    text: 歌川國貞
+  - lang: ko
+    role: translation
+    text: 우타가와 구니사다
+  - lang: ru
+    role: translation
+    text: Утагава Кунисада
+birth: 1786
+death: 1865-01-12
+wikidata_id: Q467427
+metadata:
+  sources: [Wikidata Q467427 (retrieved 2026-11-02)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q467427
+  - type: student_of
+    to: artist/utagawa-toyokuni
+    sources:
+      - accessed: 2026-11-02
+        property: P802
+        wikidata: Q950316
+  - type: associated_with
+    to: movement/utagawa-school
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q467427
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c0/Kunisada_shini_e.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kunisada_shini_e.jpg
+    license: Public domain
+    credit: Original uploader was Saboten land at en.wikipedia
+identifiers:
+  bnf: "135718579"
+  gnd: "118725378"
+  idref: "058633707"
+  kulturnav: 7fe815c9-b194-401a-8ccf-166d049a7872
+  lc: n82000979
+  rkd: "301436"
+  ulan: "500121373"
+  viaf: "119785921"
+sources:
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q467427
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q467427

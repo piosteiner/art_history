@@ -1,0 +1,125 @@
+public_id: 112002
+title_lang: fr
+title: Femme à sa toilette
+names:
+  - lang: de
+    role: translation
+    text: Frau bei der Toilette
+  - lang: en
+    role: translation
+    text: Woman at Her Toilet
+creator: pierre-bonnard
+created: c. 1905
+created_span: uncertain
+kind: oil painting
+medium: Oil on cardboard
+dimensions: [53, 51.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0001
+web_url: https://collection.kunsthaus.ch/de/collection/item/600958/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64410177
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/01/Pierre_Bonnard_-_Femme_%C3%A0_sa_toilette_-_1_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre_Bonnard_-_Femme_%C3%A0_sa_toilette_-_1_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Pierre Bonnard
+provenance:
+  - owner_label: unknown (collector)
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600958/
+        note: "Footnote: Dauberville 379."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/eduard-troester
+    ended: 1949 or later
+    place: geneva
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600958/
+        note: "Footnote: Laut einer Korrespondenz zwischen dem Direktor des Kunsthaus Zürich und der Galerie Georges Moos, Genf, die im Auftrag von Eduard Troester, Genf, handelte, wurde ein Bild Femme à sa toilette von Troester an die Bonnard-Ausstellung 1949 im Kunsthaus Zürich ausgeliehen und dort höchstwahrscheinlich als No. 61 ausgestellt (wenn es sich nicht um No. 99 handelt. In diesem Fall müsste das Troester-Gemäl…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    ended: 1955-06-24
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600958/
+        note: 'Footnote: AStEGB, Inventarkarte Bonnard, Femme à sa toilette; ein Hinweis auf einen "Akt im Zimmer" von Bonnard, mit Nathan als Einlieferer, aber ohne das übliche Erwerbsdatum, bezieht sich höchstwahrscheinlich auf dieses Bild, AStEGB, Eingangsbuch II, 24.06.1955.'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-06-24
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600958/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 1
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "1"
+    institution: foundation-e-g-buhrle-collection
+  - number: "379"
+    label: Dauberville (catalogue raisonné)
+  - number: "460"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

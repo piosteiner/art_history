@@ -21,6 +21,8 @@ inventory_number: BU 0099
 web_url: https://collection.kunsthaus.ch/de/collection/item/752012/
 on_loan: true
 on_loan_since: 2021
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
 wikidata_id: Q64223633
 metadata:
   sources: [Wikidata Q64223633 (retrieved 2026-10-07)]

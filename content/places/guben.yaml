@@ -1,0 +1,29 @@
+public_id: 111876
+name: Guben
+names:
+  - lang: zh
+    role: translation
+    text: 古本
+  - lang: ru
+    role: translation
+    text: Гу́бен
+kind: settlement
+parent: poland
+country_code: DE
+location: [14.7143, 51.95042]
+wikidata_id: Q494747
+metadata:
+  sources: [Wikidata Q494747 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q494747
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q494747
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q494747

@@ -17,6 +17,19 @@ death: 1707-04-01
 wikidata_id: Q2118326
 metadata:
   sources: [Wikidata Q2118326 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2118326
+  - type: student_of
+    to: person/matsuo-basho
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q2118326
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/5/5c/Takarai_Kikaku.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Takarai_Kikaku.jpg

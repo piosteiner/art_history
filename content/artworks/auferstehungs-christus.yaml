@@ -1,0 +1,103 @@
+public_id: 112465
+title_lang: en
+title: Auferstehungs-Christus
+names:
+  - lang: en
+    role: translation
+    text: Christ Risen
+attribution_label: Anonymous, Upper Rhine [Austria?]
+created: late 15th century
+created_span: uncertain
+kind: sculpture
+medium: Limewood
+dimensions: [106, 38, 25]
+institution: kunsthaus-zurich
+inventory_number: BU P.17
+web_url: https://collection.kunsthaus.ch/de/collection/item/849974/
+on_loan: true
+on_loan_since: 2021
+region: europe
+provenance:
+  - owner: person/henri-heilbronner
+    role: dealer
+    acquired: 1955-08-25 or earlier
+    ended: 1955-09-07
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849974/
+        note: "Footnote: AStEGB, Brief von Henri Heilbronner, Luzern, an Emil Bührle, 25.08.1955, mit der Empfehlung zum Kauf der Skulptur und dem Angebot eines Preisnachlasses."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-09-07
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 15000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849974/
+        note: "Footnote: AStEGB, Rechnung von Henri Heilbronner, Luzern, ausgestellt auf Emil Bührle, 31.08.1955; Brief der Industrie- und Handelsbank, Zürich, an Emil Bührle, 07.09.1955, mit der Bestätigung der Überweisung dieses Betrages."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849974/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. P17
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849974/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: P17
+    institution: foundation-e-g-buhrle-collection
+  - number: "624"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849974/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849974/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849974/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849974/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849974/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849974/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849974/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849974/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

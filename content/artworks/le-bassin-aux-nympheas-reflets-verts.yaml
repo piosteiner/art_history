@@ -1,0 +1,120 @@
+public_id: 112146
+title_lang: fr
+title: Le Bassin aux nymphéas, reflets verts
+names:
+  - lang: de
+    role: translation
+    text: Seerosenteich mit grüner Spiegelung
+  - lang: de
+    role: translation
+    text: Der Seerosenteich, grüne Spiegelungen
+  - lang: en
+    role: translation
+    text: Water Lilies Pond, Green Reflection
+  - lang: en
+    role: translation
+    text: Green Reflections on the Water-Lily Pond
+creator: claude-monet
+created: 1920/1926
+kind: oil painting
+medium: Oil on canvas
+dimensions: [200, 425]
+institution: kunsthaus-zurich
+inventory_number: BU 0073
+web_url: https://collection.kunsthaus.ch/de/collection/item/6491/
+on_loan: true
+on_loan_since: 2021
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q64174089
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a6/Claude_Monet_-_Le_Bassin_aux_nymph%C3%A9as%2C_reflets_verts_-_73_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Le_Bassin_aux_nymph%C3%A9as,_reflets_verts_-_73_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: person/michel-monet
+    acquired: 1926
+    ended: 1952
+    method: inheritance
+    direct: true
+    label: Sorel-Moussel (Eure-et-Loir)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6491/
+        note: "Footnote: Dossier «Ausstellung Monet 1952» und diverse Korrespondenz mit Michel Monet, Archiv ZKG/KHZ. Das Gemälde war Teil des Nachlasses des Künstlers und eine von 20 Leinwänden mit einer Höhe von 2 Metern, die nicht für die endgültige Installation der Seerosenbilder in der Orangerie des Tuileries in Paris verwendet wurde, und die später im Atelier in Giverny aufbewahrt wurde."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-05-19
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 1500000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6491/
+        note: "Footnote: Erworben während der Monet-Ausstellung, die vom 10.05. bis 15.06.1952 im Kunsthaus Zürich stattfand, Sitzungsprotokoll der Sammlungskommission, 10.06.1952, Archiv ZGK/KHZ, Protokolle der Sammlungskommission, 10.30.10.42 a; der gezahlte Preis betrug 1,5 Mio. FF = 18.750 CHF. Was das Datum des Erwerbs betrifft, so ist in einem im Archiv der Werkzeugmaschinenfabrik Oerlikon aufbewahrten Verzeichnis, …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6491/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 73
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6491/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "73"
+    institution: foundation-e-g-buhrle-collection
+  - number: IV.965.1979
+    label: Wildenstein Monet (catalogue raisonné)
+  - number: "237"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6491/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6491/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6491/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6491/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6491/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6491/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6491/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6491/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

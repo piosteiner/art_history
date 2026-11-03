@@ -1,0 +1,190 @@
+public_id: 112416
+title_lang: de
+title: Blick auf Rhenen
+names:
+  - lang: en
+    role: translation
+    text: View of Rhenen
+creator: salomon-van-ruysdael
+created: 1651
+kind: oil painting
+medium: Oil on panel
+dimensions: [43.5, 54]
+institution: kunsthaus-zurich
+inventory_number: BU 0162
+web_url: https://collection.kunsthaus.ch/de/collection/item/7858/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131585948
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/df/Salomon_van_Ruysdael_-_Blick_auf_Rhenen_-_162_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Salomon_van_Ruysdael_-_Blick_auf_Rhenen_-_162_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Salomon van Ruysdael
+provenance:
+  - owner: person/sir-claud-alexander
+    ended: 1899-05-23 or earlier
+    label: 1st Baronet (*1831 London, +1899 London) (Sammler/-in)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+        note: "Footnote: AStEGB, Dossier von Marlborough Fine Art Ltd., London, auf Anfrage von Dr. Walter Drack (Kurator der Sammlung Bührle), 28.05.1955, betreffend Provenienz von 7 von Emil Bührle erworbenen Gemälden, darunter Ruysdael, Ansicht von Rhenen."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/asscher-welker
+    ended: 1939-06-30
+    place: london
+    label: Amsterdam (Kunsthändler/-in); London/Amsterdem; London & D. A. Hoogendijk
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+        note: "Footnote: Yeide 2009, Nr. A673."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/c-marshall-spink
+    role: dealer
+    acquired: 1939-06-30
+    direct: true
+    place: london
+    label: The Hague (Kunsthändler/-in); London/Den Haag; London & Heldring & Pierson
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+        note: "Footnote: Besitzwechsel mit D. A. Hoogendijk, Amsterdam, als Vermittler, Inventarkarte 0S1206 Hoogendijk-Archiv, Korrespondenz von Bureau Herkomst Gezocht, Den Haag, 23.03.2012."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hermann-goring
+    acquired: 1940-11
+    ended: 1945
+    method: purchase
+    label: RM Nr. 666; Carinhall
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+        note: "Footnote: Yeide, wie oben Fussnote 5, Korrespondenz, wie oben Fussnote 6, und Bundesarchiv Koblenz, MCCP Restitution File, Munich Central Collecting Point, B323/658: Halber Anteil, den Walter Andreas Hofer für Hermann Göring im November 1940 von D. A. Hoogendijk, Amsterdam, für fl. 18'750 gekauft hat (die anderen Anteile blieben unentgeltlich)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/munich-central-collecting-point
+    acquired: 1945
+    ended: 1946
+    direct: true
+    place: munich
+    label: Nr. 6318
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+        note: "Footnote: Yeide 2009, wie oben Fussnote 5: Das Gemälde wurde zusammen mit der Kunstsammlung Hermann Görings in Berchtesgaden geborgen und in den Münchner Central Collecting Point (Nr. 6138) 1945-1946 überführt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: the State of the Netherlands
+    acquired: 1946-11-05
+    ended: 6 January 1953 or later
+    method: restitution
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+        note: "Footnote: Yeide 2009, wie oben Fussnote 5; Korrespondenz, wie oben Fussnote 6: Übergabe an die niederländische Regierung in Amsterdam."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/c-marshall-spink
+    role: dealer
+    acquired: 1953-01-06
+    method: purchase
+    direct: true
+    place: london
+    label: Halbanteil mit der niederländischen Regierung
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+        note: "Footnote: Korrespondenz wie oben Fussnote 6: Nur der Halbanteil der niederländischen Regierung wurde von C. Marshall Spink erworben."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/edward-speelman
+    role: dealer
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+        note: "Footnote: Auskunft von Anthony Speelman, London, Sohn von Edward Speelman, an die Stiftung Sammlung E.G. Bührle, 08.01.2010."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    ended: 1953-10-02
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+        note: "Footnote: Wie oben Fussnote 13; AStEGB, Verkaufsbestätigung von Trafo, Anstalt für Handel und Finanz, Vaduz (Marlborough Fine Art Ltd., London), unterzeichnet von F. K. Lloyd, an Emil Bührle, 01.10.1953, betreffend eine an Bührle verkaufte Gruppe von 10 Kunstwerken für eine Gesamtsumme von £ 40.000 (= CHF 480.000), darunter Ruysdael, Ansicht von Rhenen. Die Zahlung dieses Betrags erfolgt in zwei Raten, 27.0…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-10-02
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 3500
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+        note: "Footnote: Verkaufsbestätigung, wie oben Fussnote 14: erworben für £ 3.500 (mit 6% Rabatt), mit von Emil Bührle handschriftlich notierten Preisen für jedes Kunstwerk; AStEGB, Zahlungsauftrag von Emil Bührle, 01.10.1953, an die Industrie- und Handelsbank, Zürich, über den Betrag von CHF 156.000 zur Überweisung an Trafo, Vaduz, und Ausführungsbestätigung der Industrie- und Handelsbank, Zürich, 02.10.1953."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 162
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "162"
+    institution: foundation-e-g-buhrle-collection
+  - number: 523A
+    label: Stechow (catalogue raisonné)
+  - number: "323"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7858/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

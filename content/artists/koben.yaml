@@ -8,6 +8,18 @@ active: 1215
 biography_md: "Buddhist sculptor, a son of [[artist/unkei]][[source/kobayashi-1954-unkei|“all the six of his sons worked in collaboration in the construction: Tankei, Koun, Koben, Kosho, Unga, Unjo”]]. His standing demon Ryūtōki at Kōfukuji shows his father's realism; he may have used a wrestler as his model[[source/tnm-unkei-exhibition-2017|“Unkei’s influence is more readily apparent in the standing image of the demon Ryutoki (No.35), whose realistically rendered musculature suggests that its sculptor, Koben, may well have used an actual wrestler as his model”]]."
 wikidata_id: Q11486256
 relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q11486256
+  - type: associated_with
+    to: movement/kei-school
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q11486256
   - type: child_of
     to: artist/unkei
     sources:

@@ -9,5 +9,18 @@ names:
 wikidata_id: Q11571481
 metadata:
   sources: [Wikidata Q11571481 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q11571481
+  - type: associated_with
+    to: movement/kano-school
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q11571481
 identifiers:
   viaf: "251204313"

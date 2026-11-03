@@ -1,0 +1,160 @@
+public_id: 112440
+title_lang: en
+title: Laurent Pécheux
+attribution_label: Anonymous (formerly attributed to Jean-Baptiste Greuze)
+kind: oil painting
+medium: Oil on canvas
+dimensions: [73, 60]
+institution: kunsthaus-zurich
+inventory_number: BU 0135
+web_url: https://collection.kunsthaus.ch/de/collection/item/806960/
+on_loan: true
+on_loan_since: 2021
+region: europe
+wikidata_id: Q131585329
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e0/Jean-Baptiste_Greuze_historical_attribution_-_Laurent_P%C3%A9cheux_-_135_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Baptiste_Greuze_historical_attribution_-_Laurent_P%C3%A9cheux_-_135_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: anonymous
+provenance:
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1831-12-01
+    ended: 1831-12-01
+    method: auction
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806960/
+        note: "Footnote: Mauclair/Marcel/Martin 1905, S. 74, Nr. 1201."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    ended: 1940-04
+    place: france
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806960/
+        note: "Footnote: AStEGB, Brief von Roger Dequoy, Paris, an Emil Bührle, 18.11.1944, mit detaillierten Provenienzen von drei der im Oktober 1941 von Wildenstein erworbenen Bilder, im Auftrag der Schweizerischen Verrechnungsstelle, Zürich. Dequoy gibt an, dass sich das Gemälde seit vielen Jahren in der Familie seines früheren Besitzers befand."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/m-r-pernet
+    acquired: 1940/1941
+    ended: 1940/1941
+    direct: true
+    place: france
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806960/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/georges-wildenstein
+    role: dealer
+    ended: 1941-10-01 or earlier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806960/
+        note: "Footnote: Vertreten durch Roger Duquoy, AStEGB, Quittung von Roger Duquoy, 57, rue La Boétie, Paris, ausgestellt auf Emil Bührle, Hôtel Ritz, Paris, 01.10.1941, über den Kauf von fünf Gemälden, darunter Greuze, Laurent Pécheux."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/roger-dequoy
+    role: agent
+    direct: true
+    place: paris
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806960/
+        note: "Footnote: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1941-10-01
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 450000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806960/
+        note: "Footnote: Erworben von Wildenstein für 500.000 FRF abzüglich 10% Rabatt (50.000 FRF) = 450.000 FRF, als Teil einer Gruppe von 5 Gemälden, für die Emil Bührle eine Gesamtsumme von 6.000.000 FRF bezahlte, Quittung wie oben Fussnote 8; Zum Preis von Greuze, Laurent Pécheux, AStEGB, Brief von Emil Bührle an das Office Suisse de compensation (Schweizerische Verrechnungsstelle), Zürich, 13.09.1944. Dieser Brief e…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hans-wendland
+    role: agent
+    acquired: 1941
+    ended: 1942
+    direct: true
+    place: berlin
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806960/
+        note: "Footnote: Zeugenaussage von W. A. Hofer, Frage 45 [Abschrift, S. 8], in: Archiv der Stiftung Sammlung E. G. Bührle, Akten zu den Gerichtsfällen, Archiv ZKG/KHZ, 10.100.20.40. https://apollon.buehrle.ch/supplement/12920/detail/ (Stand: 03.07.2024); Yeide, Nr. A 1257."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hermann-goring
+    role: custodian
+    acquired: 1942-11-28
+    ended: 1944-07
+    direct: true
+    label: safekeeping; Schorfheide (Carinhall)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806960/
+        note: "Footnote: Wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 135
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "135"
+    institution: foundation-e-g-buhrle-collection
+  - number: "65"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

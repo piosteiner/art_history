@@ -30,6 +30,31 @@ death: 1833-07-02
 wikidata_id: Q2090162
 metadata:
   sources: [Wikidata Q2090162 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2090162
+  - type: born_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q2090162
+  - type: died_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q2090162
+  - type: worked_in
+    to: place/kansai-region
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q2090162
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/0/0e/Aoki_by_Tanomura.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Aoki_by_Tanomura.jpg

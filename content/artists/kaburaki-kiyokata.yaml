@@ -23,6 +23,27 @@ death: 1972-03-02
 wikidata_id: Q1241113
 metadata:
   sources: [Wikidata Q1241113 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q1241113
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q1241113
+  - type: associated_with
+    to: movement/nihonga
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q1241113
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/f/f1/Kiyokata_Kaburaki_01.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Kiyokata_Kaburaki_01.jpg

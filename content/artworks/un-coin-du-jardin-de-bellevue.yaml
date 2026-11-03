@@ -1,0 +1,192 @@
+public_id: 111957
+title_lang: fr
+title: Un Coin du jardin de Bellevue
+names:
+  - lang: de
+    role: translation
+    text: Im Garten der Villa Bellevue
+  - lang: en
+    role: translation
+    text: A Garden Nook at Bellevue
+creator: edouard-manet
+created: 1880
+kind: oil painting
+medium: Oil on canvas
+dimensions: [91, 70]
+institution: kunsthaus-zurich
+inventory_number: BU 0058
+web_url: https://collection.kunsthaus.ch/de/collection/item/586958/
+on_loan: true
+on_loan_since: 2021
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q64174080
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d1/%C3%89douard_Manet_-_Un_Coin_du_jardin_de_Bellevue_-_58_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Manet_-_Un_Coin_du_jardin_de_Bellevue_-_58_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Édouard Manet
+provenance:
+  - owner: person/eugene-pertuiset
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+        note: "Footnote: Rouart/Wildenstein 1975, No. 347."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/allaret
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+        note: "Footnote: Rouart/Wildenstein 1975, No. 347."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1900/1902
+    ended: 1900/1902
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+        note: "Footnote: Rouart/Wildenstein 1975, Bd. I, No. 347."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-cassirer
+    role: dealer
+    acquired: c. 1903
+    ended: c. 1903
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+        note: "Footnote: Dorrmann 2001, S. 27, 29, 38, No. 29, 30."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/eduard-arnhold
+    acquired: 1903
+    ended: 1925
+    method: purchase
+    direct: true
+    place: berlin
+    label: 35948.00 DM
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+        note: "Footnote: Dormann 2001, wie oben Fussnote 9. Am 15. Mai 1903 für 35.948 M. für die Nationalgalerie, Berlin, erworben, wobei Eduard Arnhold 30.000 M. zum Kaufpreis beisteuerte und 5.900 M. aus dem Schenkungsfonds des Museums stammten; im Frühjahr 1904 zahlte Arnhold die 5.900 M. zurück und nahm das Gemälde vollständig in Besitz."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/eduard-arnhold
+    role: estate
+    acquired: 1925
+    ended: 1939
+    method: inheritance
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+        note: "Footnote: E-Mail-Korrespondenz zwischen Christoph Kunheim, Urenkel von Eduard Arnhold, und der Stiftung Sammlung E.G. Bührle, November 2020-Juni 2021. Eduard Arnhold hatte in seinem Testament verfügt, dass die Sammlung in seinem Haus aufbewahrt und nach dem Tod seiner Frau zehn Jahre lang der Öffentlichkeit zugänglich gemacht werden sollte. Johanna Arnhold verstarb 1929, und 1939 wurde die Sammlung unter de…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/arnold-kunheim
+    acquired: 1939
+    ended: 1951
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+        note: "Footnote: E-Mailkorrespondenz, wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/carlo-frua-de-angeli
+    role: agent
+    acquired: 1951
+    ended: 1951
+    direct: true
+    place: milan
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+        note: "Footnote: Korrespondenz zwischen Hanna Kiel, Fiesole und Dr. Walter Feilchenfeldt, Zürich, 11.01.-13.05.1951, Paul Cassirer & Walter Feilchenfeldt Archiv, Zürich, betreffend die Verschiffung von Manets Gartenecke am Bellevue von New York nach Zürich, vermittelt durch Carlo Frua de Angeli."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    acquired: 1951-05
+    ended: 1951-11-14
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+        note: "Footnote: Wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-11-14
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+        note: "Footnote: Erworben zusammen mit Toulouse-Lautrec, Messaline [Sammlung Emil Bührle, Inv. 103], für insgesamt $ 100.000, AStEGB, Quittung mit beigefügten Akten, die Provenienz, Ausstellungs- und Publikationsgeschichte dokumentieren, von Dr. Walter Feilchenfeldt, Zürich, ausgestellt auf Emil Bührle, 14.11.1951; siehe auch Brief von Dr. Hugo E. Kunheim (München, Zürich) an Emil Bührle, 21.01.1953, der seine Fre…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 58
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "58"
+    institution: foundation-e-g-buhrle-collection
+  - number: "347"
+    label: Rouart/Wildenstein (catalogue raisonné)
+  - number: "211"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

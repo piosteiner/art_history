@@ -1,0 +1,73 @@
+public_id: 112189
+name: Eugène Boudin
+given_name: Eugène
+family_name: Boudin
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Louis Eugène Boudin
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q212600
+birth: 1824-07-12
+death: 1898-08-08
+wikidata_id: Q212600
+metadata:
+  sources: [Wikidata Q212600 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q212600
+  - type: born_in
+    to: place/honfleur
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q212600
+  - type: died_in
+    to: place/deauville
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q212600
+  - type: influenced_by
+    to: artist/gustave-courbet
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q212600
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q212600
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a1/Boudin-eugene-c-face-half.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Boudin-eugene-c-face-half.jpg
+    license: Public domain
+    credit: Pierre Petit
+identifiers:
+  bnf: 11893199f
+  dome: "1704"
+  gnd: "118816640"
+  idref: "026742586"
+  kulturnav: 6dd1d503-c108-47e5-a02c-f6ec985a9750
+  lc: n81139753
+  rkd: "11369"
+  ulan: "500004513"
+  viaf: "22138922"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q212600
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q212600

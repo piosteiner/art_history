@@ -12,6 +12,7 @@ on_loan: true
 on_loan_since: 2021
 provenance_status: d_seized
 provenance_status_note: "Kunsthaus Zürich: NS-verfolgungsbedingt entzogenes Kulturgut"
+wikidata_id: Q64174085
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/4/45/Paul_Gauguin_-_La_Route_montante_-_48_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_La_Route_montante_-_48_-_Foundation_E.G._B%C3%BChrle_Collection.jpg

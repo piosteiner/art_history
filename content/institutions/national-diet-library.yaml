@@ -1,0 +1,73 @@
+public_id: 109318
+name: National Diet Library
+names:
+  - Kokuritsu Kokkai Toshokan
+  - the National Diet Library of Japan
+  - National Diet Library, Japan
+  - 国立国会図書館
+  - lang: nl
+    role: translation
+    text: Bibliotheek van het Japanse parlement
+  - lang: fr
+    role: translation
+    text: bibliothèque nationale de la Diète
+  - lang: de
+    role: translation
+    text: Nationale Parlamentsbibliothek
+  - lang: it
+    role: translation
+    text: Biblioteca della Dieta Nazionale del Giappone
+  - lang: es
+    role: translation
+    text: Biblioteca Nacional de la Dieta
+  - lang: zh
+    role: translation
+    text: 國立國會圖書館
+  - lang: ko
+    role: translation
+    text: 일본 국립국회도서관
+  - lang: ru
+    role: translation
+    text: Национальная парламентская библиотека
+kind: library
+founded: 1948-02-25
+place: tokyo
+location: [139.74417, 35.67833]
+address: 1-10-1, Nagatacho, Chiyoda-ku, Tokyo
+website_url: https://www.ndl.go.jp/
+wikidata_id: Q477675
+metadata:
+  sources: [Wikidata Q477675 (retrieved 2026-11-02)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/NDL_Tokyo01st3200.jpg/1280px-NDL_Tokyo01st3200.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:NDL_Tokyo01st3200.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  bnf: 12060848w
+  gnd: 2015822-1
+  idref: "027540316"
+  lc: n80004161
+  ulan: "500309711"
+  viaf: "313010548"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q477675
+  place:
+    - accessed: 2026-11-02
+      property: P131
+      wikidata: Q477675
+  address:
+    - accessed: 2026-11-02
+      property: P6375
+      wikidata: Q477675
+  founded:
+    - accessed: 2026-11-02
+      property: P571
+      wikidata: Q477675
+  location:
+    - accessed: 2026-11-02
+      property: P625
+      wikidata: Q477675

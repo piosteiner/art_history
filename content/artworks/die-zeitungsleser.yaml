@@ -1,0 +1,197 @@
+public_id: 112336
+title_lang: de
+title: Die Zeitungsleser
+names:
+  - lang: en
+    role: translation
+    text: The Journal Readers
+creator: jan-steen
+created: 1660/1670
+kind: oil painting
+medium: Oil on panel
+dimensions: [34.5, 44.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0165
+web_url: https://collection.kunsthaus.ch/de/collection/item/752014/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q57558586
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b0/Jan_Steen_-_Die_Zeitungsleser_-_165_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jan_Steen_-_Die_Zeitungsleser_-_165_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Jan Steen / Jan Steen
+provenance:
+  - owner: person/a-phipps
+    acquired: 1815 or earlier
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+        note: "Footnote: Smith 1833, S. 68, Abb. 206."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/williams-phipps
+    acquired: 1834 or earlier
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+        note: "Footnote: Handschriftliche Etikette auf der Rückseite der Tafel «The gift of the Hon. Ws Phipps / 1834»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/francis-davies
+    acquired: 1882 or earlier
+    place: elmley-castle
+    label: Elmley Castle, Pershore
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+        note: "Footnote: Kat. Worcestershire Exhibition 1882, S. 73, No. 440: Jan Steen, Reading the News, Lent by Colonel Davies; siehe auch Etikette auf der Werkrückseite: Old Masters, Worcestershire Exhibition, Fine Arts Section, Worcester 1882, no. 440."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/dowdeswell-and-dowdeswell-ltd
+    role: dealer
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+        note: "Footnote: Etikette auf der Werkrückseite."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/marcus-kappel
+    acquired: 1914 or earlier
+    ended: 1919-01-19
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+        note: "Footnote: Sammlung Kappel 1914, (Sammlungskatalog) No. 31; Auktion Paul Cassirer (25.11.1930), Lot 20."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/marcus-kappel
+    role: estate
+    acquired: 1919-01-19
+    ended: 1930-11-25
+    method: inheritance
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+        note: "Footnote: Wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-paul-cassirer
+    role: agent
+    acquired: 1930-11-25
+    ended: 1930-11-25
+    method: auction
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+        note: "Footnote: Auktion Paul Cassirer (25.11.1930), Lot 20."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-bachstitz-den-haag
+    co_owners: [institution/m-knoedler-co]
+    role: dealer
+    acquired: 1930
+    ended: 1930
+    place: the-hague
+    label: Den Haag and New York
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+        note: "Footnote: Braun 1980, No. 70."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/dr-e-m-ettlinger
+    acquired: 1930
+    ended: 1955-04-16 or earlier
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+        note: "Footnote: AStEGB, Brief von Dr. Arthur Kauffmann, London, an Dr. Walter Drack, Konservator der Sammlung Bührle, 15.04.1955, mit detaillierten Provenienz-, Ausstellungs- und Publikationshinweisen."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/arthur-kauffmann
+    co_owners: [person/fritz-nathan, person/eugene-slatter]
+    role: dealer
+    ended: 1955-04-16
+    method: purchase
+    label: London/Zürich
+    price:
+      amount: 3675
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+        note: "Footnote: Kauffmann-Inventar, Journal 4, Nr. 1478, 14/1/55, mit dem Hinweis, dass Eugene Slatter, London, einen 2/3-Anteil an dem Gemälde hatte; AStEGB, Eingangsbuch II, 12.03.1955, das Dr. Arthur Kauffmann als Einlieferer ausweist."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-04-16
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 5500
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+        note: "Footnote: Wie oben Fussnote 18, mit Gutschrift des Verkaufs des Gemäldes an Dr. Fritz Nathan am 16.04.1955. Die Zahlung des oben genannten Betrags wird durch einen Eintrag im Kauffmann-Inventar, Kontobuch, 16.04.1955, bestätigt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 165
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "165"
+    institution: foundation-e-g-buhrle-collection
+  - number: "437"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752014/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

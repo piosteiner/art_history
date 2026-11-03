@@ -1,0 +1,164 @@
+public_id: 111921
+title_lang: en
+title: Hippolyte-François Devillers
+creator: jean-auguste-dominique-ingres
+created: 1811
+kind: oil painting
+medium: Oil on canvas
+dimensions: [96.5, 78.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0137
+web_url: https://collection.kunsthaus.ch/de/collection/item/48910/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64174094
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/50/Jean-Auguste-Dominique_Ingres_-_Hippolyte-Fran%C3%A7ois_Devillers_-_137_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Auguste-Dominique_Ingres_-_Hippolyte-Fran%C3%A7ois_Devillers_-_137_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Jean-Auguste-Dominique Ingres
+provenance:
+  - owner: person/hippolyte-francois-devillers
+    acquired: 1811
+    ended: 1837
+    direct: true
+    place: rome
+    label: Rom & Vesoul
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+        note: "Footnote: Kat. National Gallery London 1999/2000, Nr. 31."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hippolyte-francois-devillers
+    role: estate
+    acquired: 1837
+    ended: 1842 or later
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/monsieur-lang
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1911
+    ended: 1935 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+        note: "Footnote: AStEGB, Brief von Jean Dauberville, Bernheim-Jeune, Paris, an Emil Bührle, 17.05.1955; Kat. Kunsthaus Zürich 1917, Nr. 116; Kat. Galerie Bernheim-Jeune Paris 1935, Nr. 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/gaston-bernheim-de-villers
+    role: dealer
+    acquired: 1939 or earlier
+    ended: 1953
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+        note: "Footnote: Sohn von Alexandre Bernheim-Jeune und Bruder von Joseph (Josse) Bernheim-Jeune; das Gemälde war von 1939 bis 1942 in einer Wanderausstellung französischer Kunst in Südamerika und den USA zu sehen. Die Ausstellung wurde in der National Gallery of Art in Washington D.C. gezeigt, wo die Gemälde beschlagnahmt und bis zum Ende des Krieges aufbewahrt wurden."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/gaston-bernheim-de-villers
+    role: estate
+    acquired: 1953
+    ended: 1955
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+        note: "Footnote: Als Vertreter der Erben trat Jean Dauberville erstmals im Namen seiner Tante, Mme G. Bernheim de Villers, Monte-Carlo, an Emil Bührle heran und bot einen Renoir aus ihrer Sammlung an, AStEGB, Korrespondenz zwischen Jean Dauberville, Bernheim-Jeune, Paris, und Emil Bührle, 21.06.1954-18.02.1955."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    acquired: 1955
+    ended: 1955-05-03
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+        note: "Footnote: AStEGB, Quittierte Rechnung von Dr. Fritz Nathan, Zürich, an Emil Bührle, 03.05.1955."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-05-03
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 163000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+        note: "Footnote: Erworben von den Erben von Gaston Bernheim de Villers, durch Dr. Fritz Nathan, Zürich, für 163.000 USD, quittierte Rechnung wie oben Fussnote 11, unterzeichnet von Nathan im Namen der Nachlassverwalter. Eine Vermittlerrolle spielte der Händler Sam Salz, New York, der von Dr. Peter Nathan, Zürich, in einem Brief an Douglas Cooper, Château de Castille, Argilliers, 02.06.1961, erwähnt wird, in dem di…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 137
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "137"
+    institution: foundation-e-g-buhrle-collection
+  - number: "79"
+    label: Wildenstein Ingres (catalogue raisonné)
+  - number: "441"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48910/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

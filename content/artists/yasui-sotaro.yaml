@@ -16,6 +16,39 @@ death: 1955-12-14
 wikidata_id: Q729235
 metadata:
   sources: [Wikidata Q729235 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q729235
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q729235
+  - type: died_in
+    to: place/yugawara
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q729235
+  - type: student_of
+    to: artist/asai-chu
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q729235
+  - type: associated_with
+    to: movement/youga
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q729235
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/3/39/Yasui_Sotaro.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Yasui_Sotaro.jpg

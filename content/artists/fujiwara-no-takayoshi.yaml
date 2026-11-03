@@ -3,9 +3,15 @@ name: Fujiwara no Takayoshi
 given_name: Fujiwara no
 family_name: Takayoshi
 birth: 1101/1200
+region: east_asia
 wikidata_id: Q11623630
 metadata:
   sources: [Wikidata Q11623630 (retrieved 2026-11-01)]
+identifiers:
+  lc: nr96011276
+  nlk: KAC202151511
+  ulan: "500123082"
+  viaf: "49124427"
 sources:
   birth:
     - accessed: 2026-11-01

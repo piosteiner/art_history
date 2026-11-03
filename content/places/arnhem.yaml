@@ -1,0 +1,35 @@
+public_id: 112327
+name: Arnhem
+names:
+  - lang: ja
+    role: translation
+    text: アーネム
+  - lang: ko
+    role: translation
+    text: 아른험
+  - lang: de
+    role: translation
+    text: Arnheim
+  - lang: ru
+    role: translation
+    text: Арнем
+kind: settlement
+parent: gelderland
+country_code: NL
+location: [5.91667, 51.98333]
+wikidata_id: Q1310
+metadata:
+  sources: [Wikidata Q1310 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q1310
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q1310
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q1310

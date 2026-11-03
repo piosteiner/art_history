@@ -56,6 +56,25 @@ death: 1806-10-31
 wikidata_id: Q272045
 metadata:
   sources: [Wikidata Q272045 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q272045
+  - type: influenced_by
+    to: artist/torii-kiyonaga
+    sources:
+      - accessed: 2026-11-02
+        property: P737
+        wikidata: Q272045
+  - type: associated_with
+    to: movement/ukiyo-e
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q272045
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Kitagawa_Utamaro_portrait_%28cropped%29.jpg/1280px-Kitagawa_Utamaro_portrait_%28cropped%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Kitagawa_Utamaro_portrait_(cropped).jpg

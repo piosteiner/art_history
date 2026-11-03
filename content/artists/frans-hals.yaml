@@ -1,0 +1,78 @@
+public_id: 111841
+name: Frans Hals
+given_name: Frans
+family_name: Hals
+birth: 1582/1583
+birth_label: c. 1580s
+death: 1666-08-26
+wikidata_id: Q167654
+metadata:
+  sources: [Wikidata Q167654 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q167654
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q167654
+  - type: died_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q167654
+  - type: worked_in
+    to: place/haarlem
+    period: 1608/1616
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q167654
+  - type: worked_in
+    to: place/antwerp
+    period: 1616–1616
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q167654
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q167654
+  - type: associated_with
+    to: movement/dutch-golden-age-painting
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q167654
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Frans_Hals_%281582-83%E2%80%931666%29_MET_DP251935.jpg/1280px-Frans_Hals_%281582-83%E2%80%931666%29_MET_DP251935.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Frans_Hals_(1582-83%E2%80%931666)_MET_DP251935.jpg
+    license: Public domain
+    credit: After Frans Hals
+identifiers:
+  bnf: "119481079"
+  gnd: "118545221"
+  idref: "027440095"
+  kulturnav: 43c8950a-4228-4e94-b1a1-4c778d3fbd3f
+  lc: n78091972
+  rkd: "35550"
+  ulan: "500027794"
+  viaf: "100165653"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q167654
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q167654

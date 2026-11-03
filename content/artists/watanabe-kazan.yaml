@@ -34,6 +34,25 @@ death: 1841-11-23
 wikidata_id: Q3130609
 metadata:
   sources: [Wikidata Q3130609 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3130609
+  - type: worked_in
+    to: place/osaka
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q3130609
+  - type: student_of
+    to: artist/tani-buncho
+    sources:
+      - accessed: 2026-11-02
+        property: P802
+        wikidata: Q1375891
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Watanabe_Kazan.jpg/1280px-Watanabe_Kazan.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Watanabe_Kazan.jpg

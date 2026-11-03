@@ -1,0 +1,135 @@
+public_id: 112444
+title_lang: en
+title: Dr. Louis Devraigne
+creator: amedeo-modigliani
+created: 1915
+kind: oil painting
+medium: Oil on canvas
+dimensions: [61, 50]
+institution: kunsthaus-zurich
+inventory_number: BU 0070
+web_url: https://collection.kunsthaus.ch/de/collection/item/806962/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q122848831
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Amedeo_Modigliani_-_Dr_Louis_Devraigne.jpg/1280px-Amedeo_Modigliani_-_Dr_Louis_Devraigne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Amedeo_Modigliani_-_Dr_Louis_Devraigne.jpg
+    license: Public domain
+    credit: Amedeo Modigliani
+provenance:
+  - owner: person/louis-devraigne
+    method: gift
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806962/
+        note: "Footnote: E-Mail-Korrespondenz, Boddewyn, 25.02.2024."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/klein
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806962/
+        note: "Footnote: Kat. Marlborough Fine Art Ltd. London 1953, No.17."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/adolphe-basler
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806962/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-bing
+    role: dealer
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806962/
+        note: "Footnote: Wie oben Fussnote 2; AStEGB, Inventarkarte Modigliani, Portrait of Dr Devraigne."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    ended: 1953-10-02
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806962/
+        note: "Footnote: AStEGB, Verkaufsbestätigung von Trafo, Anstalt für Handel und Finanz, Vaduz [Marlborough Fine Art Ltd., London], unterzeichnet von F. K. Lloyd, an Emil Bührle, 01.10.1953, betreffend eine Gruppe von 10 Kunstwerken, die an Bührle für eine Gesamtsumme von £ 40.000 (= CHF 480.000) verkauft wurden, darunter Modigliani, Portrait of Dr Devraigne. Die Zahlung dieses Betrags soll in zwei Raten erfolgen: 2…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-10-02
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 3000
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806962/
+        note: "Footnote: Verkaufsbestätigung AStEGB, wie oben Fussnote 10: Von den oben Genannten erworben für £ 3.000 (mit 6% Rabatt), mit handschriftlichen Preisangaben für jedes Kunstwerk von Emil Bührle; AStEGB, Zahlungsauftrag von Emil Bührle an die Industrie- und Handelsbank, Zürich, vom 01.10.1953 über den Betrag von CHF 156.000 zur Überweisung an Trafo, Vaduz, und Bestätigung der Zahlungsausführung von der Industr…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28 or earlier
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806962/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 70
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806962/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "70"
+    institution: foundation-e-g-buhrle-collection
+  - number: "318"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

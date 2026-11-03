@@ -7,6 +7,23 @@ death: 1266
 wikidata_id: Q3090653
 metadata:
   sources: [Wikidata Q3090653 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3090653
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Fujiwara_no_Nobuzane.jpg/1280px-Fujiwara_no_Nobuzane.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fujiwara_no_Nobuzane.jpg
+    license: Public domain
+    credit: Published by 国史大図鑑編輯所(Kokushi Daizukan Henshujo)
+identifiers:
+  gnd: "1213491177"
+  lc: n80027121
+  ulan: "500121197"
+  viaf: "65298404"
 sources:
   birth:
     - accessed: 2026-11-01

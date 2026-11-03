@@ -1,0 +1,138 @@
+public_id: 112037
+title_lang: fr
+title: Le Mariage russe
+names:
+  - lang: en
+    role: translation
+    text: Hochzeit in Russland
+  - lang: en
+    role: translation
+    text: The Russian Wedding
+creator: marc-chagall
+created: 1909
+kind: oil painting
+medium: Oil on canvas
+dimensions: [68.5, 97.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0019
+web_url: https://collection.kunsthaus.ch/de/collection/item/600973/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q105714380
+provenance:
+  - owner: person/maxim-moissejewitsch-vinaver
+    acquired: 1909
+    ended: 1926-10-10 or earlier
+    method: purchase
+    direct: true
+    place: saint-petersburg
+    label: St. Petersburg, Paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600973/
+        note: "Footnote: Erworben vom Künstler, AStEGB, Brief von Franz Meyer, Paris [Schwiegersohn des Künstlers] an Walter Drack [Kurator der Sammlung Bührle], 20.07.1954, aus dem hervorgeht, dass Vinaver [Maxim Moisevitch Vinaver] nach Angaben des Künstlers Russland bei Ausbruch der russischen Revolution in Richtung Paris verliess und das Gemälde mitnahm. Es wurde in Paris verkauft, möglicherweise nach Vinavers Tod im …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alice-marie-manteau
+    role: dealer
+    ended: 1929 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600973/
+        note: "Footnote: AStEGB, Dossier betreffend Provenienz und Referenzen für Chagall, Mariage russe, im Anhang zum Brief von Max Kaganovitch, Paris, an Emil Bührle, 01.03.1954, mit beigefügter Rechnung von Max Kaganovitch, Paris, ausgestellt auf das Kunsthaus Zürich, 01.03.1954, für drei Gemälde, darunter Chagall, Mariage russe; Ridder 1929, S. 66 (Abb.)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/mme-lucien
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600973/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/j-nash
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600973/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/max-kaganovitch
+    role: dealer
+    ended: 1954-03-10
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600973/
+        note: "Footnote: AStEGB, Rechnung, wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-03-10
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600973/
+        note: "Footnote: AStEGB, Rechnung, wie oben Fussnote 4: Erworben von dem oben Genannten, ausgestellt für drei Gemälde, darunter Chagall, Le Mariage russe, über eine Gesamtsumme von FF 5.900.000, mit Zahlungsermächtigung, unterzeichnet von Bührle. Einem zweiten Exemplar dieser Rechnung ist ein handschriftlicher Vermerk von Emil Bührle beigefügt, der die drei in der Rechnung genannten Gemälde auflistet, wiederum übe…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600973/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 19
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600973/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "19"
+    institution: foundation-e-g-buhrle-collection
+  - number: "15"
+    label: Meyer (catalogue raisonné)
+  - number: "363"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -36,6 +36,39 @@ death: 1997-03-15
 wikidata_id: Q154448
 metadata:
   sources: [Wikidata Q154448 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/hungary
+    period: 1906/1997
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q154448
+  - type: nationality
+    to: polity/france
+    period: 1961/1997
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q154448
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q154448
+  - type: worked_in
+    to: place/budapest
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q154448
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q154448
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/b/b2/Victor_Vasarely.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Victor_Vasarely.jpg

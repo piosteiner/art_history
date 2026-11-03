@@ -1,0 +1,167 @@
+public_id: 112370
+title_lang: fr
+title: La Butte Pinson
+names:
+  - lang: de
+    role: translation
+    text: Die Butte Pinson
+  - lang: en
+    role: translation
+    text: The Butte Pinson
+creator: maurice-utrillo
+created: c. 1905
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [38, 46]
+institution: kunsthaus-zurich
+inventory_number: BU 0109
+web_url: https://collection.kunsthaus.ch/de/collection/item/752962/
+on_loan: true
+on_loan_since: 2021
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q122853255
+provenance:
+  - owner: institution/galerie-van-leer
+    role: dealer
+    ended: 1929
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+        note: "Footnote: Bestandsbuch Galerie Dr. Willi Raeber, Basel, Schweizerisches Kunstarchiv, SIK-ISEA Zürich, HNA 213A.1 (25. März 1926 - Oktober 1955), S. 28, 34."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-willi-raeber
+    role: dealer
+    acquired: 1929
+    ended: 1934-04
+    method: purchase
+    direct: true
+    place: basel
+    price:
+      amount: 2000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/dr-walter-hanhart-wolfensberger
+    acquired: 1934-04
+    ended: 1943-04-10
+    method: purchase
+    direct: true
+    place: riehen
+    price:
+      amount: 3500
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+        note: "Footnote: Wie oben Fussnote 3, S. 39."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-willi-raeber
+    role: dealer
+    acquired: 1943-04-10
+    ended: 1943-04-19
+    method: purchase
+    direct: true
+    place: basel
+    label: inv. no. 726
+    price:
+      amount: 6000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+        note: "Footnote: Bestandsbuch Galerie Dr. Willi Raeber, Basel, Schweizerisches Kunstarchiv, SIK-ISEA Zürich, HNA 213A.2 (November 1933 - März 1969), S. 83."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-aktuaryus
+    role: dealer
+    acquired: 1943-04-19
+    ended: 1943-04-22
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 8000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+        note: "Footnote: Wie oben Fussnote 6; AStEGB, quittierte Rechnung der Galerie Aktuaryus, Zürich, ausgestellt auf Emil Bührle, 19.04.1943, quittiert am 22.04.1943."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1943-04-22
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 11000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+        note: "Footnote: Quittierte Rechnung, wie oben Fussnote 7, Quittung vom 22.04.1943. Laut Rechnung war das Werk 1942 in der Ausstellung Maurice Utrillo in der Kunsthalle Basel ausgestellt (Kat. Nr. 171, Privatsammlung Riehen). Leihgeber war Herr Dr. Walter Hanhart, Riehen, siehe Akten zur Utrillo-Ausstellung im Staatsarchiv Basel-Stadt, Archiv des Kunstvereins Basel, PA 888a, N 6 [1] 368."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 109
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "109"
+    institution: foundation-e-g-buhrle-collection
+  - number: "107"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

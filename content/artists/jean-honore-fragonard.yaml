@@ -1,0 +1,118 @@
+public_id: 112229
+name: Jean-Honoré Fragonard
+given_name: Jean-Honoré
+family_name: Fragonard
+birth: 1732-04-05
+death: 1806-08-22
+wikidata_id: Q127171
+metadata:
+  sources: [Wikidata Q127171 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q127171
+  - type: nationality
+    to: polity/french-constitutional-monarchy
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q127171
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q127171
+  - type: worked_in
+    to: place/dresden
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q127171
+  - type: worked_in
+    to: place/frankfurt
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q127171
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q127171
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q127171
+  - type: worked_in
+    to: place/prague
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q127171
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q127171
+  - type: worked_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q127171
+  - type: student_of
+    to: artist/francois-boucher
+    sources:
+      - accessed: 2026-11-03
+        property: P802
+        wikidata: Q180932
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q127171
+  - type: studied_at
+    to: institution/french-academy-in-rome
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q127171
+  - type: associated_with
+    to: movement/rococo
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q127171
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/42/Jean-Honor%C3%A9_Fragonard_self-portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Honor%C3%A9_Fragonard_self-portrait.jpg
+    license: Public domain
+    credit: Jean-Honoré Fragonard
+identifiers:
+  bnf: 11903342b
+  dome: "2647"
+  gnd: "118692437"
+  idref: "027362477"
+  kulturnav: e8337d2a-3c6c-4d37-b779-5e04c6557ec7
+  lc: n50025368
+  rkd: "28857"
+  ulan: "500115329"
+  viaf: "36918358"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q127171
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q127171

@@ -5,6 +5,38 @@ death: 1590-10-12
 wikidata_id: Q536696
 metadata:
   sources: [Wikidata Q536696 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q536696
+  - type: student_of
+    to: artist/kano-motonobu
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q536696
+  - type: associated_with
+    to: movement/kano-school
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q536696
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d9/Kano_Eitoku_002a.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Kano_Eitoku_002a.JPG
+    license: Public domain
+    credit: Kanō Eitoku
+identifiers:
+  bnf: "134983702"
+  gnd: "119099217"
+  idref: "097390038"
+  lc: n82056430
+  rkd: "464820"
+  ulan: "500121009"
+  viaf: "37719308"
 sources:
   birth:
     - accessed: 2026-11-01

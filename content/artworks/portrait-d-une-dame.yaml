@@ -1,0 +1,152 @@
+public_id: 112122
+title_lang: fr
+title: Portrait d'une dame
+names:
+  - lang: en
+    role: translation
+    text: Damenbildnis
+  - lang: fr
+    role: translation
+    text: Portrait of a Lady
+creator: chaim-soutine
+created: c. 1928
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [73, 60]
+institution: kunsthaus-zurich
+inventory_number: BU 0102
+web_url: https://collection.kunsthaus.ch/de/collection/item/604990/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q124294674
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6c/Cha%C3%AFm_Soutine_-_Portrait_d%27une_dame_-_102_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Cha%C3%AFm_Soutine_-_Portrait_d%27une_dame_-_102_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Chaïm Soutine
+provenance:
+  - owner: person/rene-gimpel
+    role: dealer
+    acquired: 1929 or earlier
+    ended: 1945-01-03 or earlier
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604990/
+        note: "Footnote: In den späten 1920er Jahren direkt vom Künstler erworben, AStEGB, quittierte Rechnung von Dr. Fritz Nathan, Zürich, ausgestellt auf Emil Bührle, 3. Februar 1955, mit detaillierter Provenienz."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/rene-gimpel
+    role: estate
+    acquired: 1945-01-03
+    ended: 17 May 1947 or later
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604990/
+        note: "Footnote: Ausst.-Kat. Gimpel fils, London 1947, Nr. 3. Die Identifizierung des vorliegenden Porträts mit Kat. 3 der Soutine-Ausstellung, die vom 23. April bis 17. Mai 1947 in der Londoner Galerie der Familie Gimpel stattfand, wurde anhand des \"Art Gallery's Master Stock Book\" ermöglicht, das am 12. und 13. Dezember 2011 in London zur Einsichtnahme auslag. Auf Seite 112 zeigt das Gallery Book ein kleines Fot…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/herbert-tannenbaum
+    role: dealer
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604990/
+        note: "Footnote: AStEGB, Inventarkarte Soutine, Porträt einer jungen Dame; die Angabe auf der Karte bezieht sich höchstwahrscheinlich auf Dr. Herbert Tannenbaum, Inhaber der Herbert Tannenbaum Galleries, 19 East 57th Street, New York; eine Auskunft von Dr. Johannes Nathan, Berlin, Enkel von Dr. Fritz Nathan, an die Stiftung Sammlung E.G. Bührle, 9. August 2011, bestätigt, dass Dr. Fritz Nathan in regelmässigem Kon…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/max-kaganovitch
+    role: dealer
+    ended: 1955-01-26
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604990/
+        note: "Footnote: Quittierte Rechnung wie oben Fussnote 5; AStEGB, Eingangsbuch II, 26. Januar 1955, weist Max Kaganovitch als Absender aus."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    acquired: 1955-01-26
+    ended: 1955-02-11
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604990/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-02-11
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 80000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604990/
+        note: "Footnote: Erworben von Dr. Fritz Nathan, Zürich, am 11. Februar 1955, quittierte Rechnung wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604990/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 102
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604990/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "102"
+    institution: foundation-e-g-buhrle-collection
+  - number: "428"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604990/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604990/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604990/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604990/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604990/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604990/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604990/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604990/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

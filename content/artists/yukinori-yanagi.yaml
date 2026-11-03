@@ -11,6 +11,25 @@ birth: 1959-05-02
 wikidata_id: Q11534312
 metadata:
   sources: [Wikidata Q11534312 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q11534312
+  - type: born_in
+    to: place/fukuoka
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q11534312
+  - type: worked_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q11534312
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Yukinori_yanagi.jpg/1280px-Yukinori_yanagi.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Yukinori_yanagi.jpg

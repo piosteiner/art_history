@@ -1,0 +1,196 @@
+public_id: 111997
+title_lang: fr
+title: Les Ponts d'Asnières
+names:
+  - lang: de
+    role: translation
+    text: Die Seine-Brücken bei Asnières
+  - lang: en
+    role: translation
+    text: Bridges across the Seine at Asnières
+creator: vincent-van-gogh
+created: 1887
+kind: oil painting
+medium: Oil on canvas
+dimensions: [53.5, 67]
+institution: kunsthaus-zurich
+inventory_number: BU 0050
+web_url: https://collection.kunsthaus.ch/de/collection/item/586968/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q16579374
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1f/Vincent_van_Gogh_-_Les_Ponts_d%27Asni%C3%A8res_-_50_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Les_Ponts_d%27Asni%C3%A8res_-_50_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: artist/vincent-van-gogh
+    role: estate
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+        note: "Footnote: Stolwijk/Han Veenenbos/van Gogh-Bonger 2002, S. 21-22."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/ambroise-vollard
+    role: dealer
+    acquired: 1896
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+        note: "Footnote: Im November 1896 schickte Jo van Gogh-Bonger drei Triptychen von Vincent van Gogh an Ambroise Vollard, der seine neue Galerie in der Rue Lafite 6 in Paris mit einer Van Gogh Ausstellung einweihte, Stolwijk/Veenenbos/van Gogh-Bonger, wie oben Fussnote 2, S. 142-143."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1901-03-15 or earlier
+    ended: 19 January 1905 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+        note: "Footnote: Kat. Galerie Bernheim-Jeune, Paris 1901, No. 15; Kat. Galerie Paul Cassirer, Berlin 1904, No. 37; Feilchenfeldt 2009, S. 85 (ill.), 294, 301, 304, No. 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alexandre-berthier-prince-de-wagram
+    place: paris
+    label: 4. Prince de Wagram (*1883, +1918) (Sammler/-in)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+        note: "Footnote: Galerie Charpentier Paris (23.05.1951), Lot 16."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-eugene-druet
+    role: dealer
+    acquired: 1910-11-08
+    ended: 15 January 1911 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+        note: "Footnote: Kat. Grafton Galleries, London 1910–11, No. 68."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/pierre-etienne-henri-goujon
+    acquired: 1911
+    ended: 1914
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/julie-goujon-reinach
+    acquired: 1914
+    ended: 1951-05-23
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+        note: "Footnote: Kat. Stedelijk Museum Amsterdam 1930, No. 12; Mme Goujon-Reinach lieferte das Werk bei der Galerie Charpentier 1951 ein. Archives de Paris, Serie D.150E3, Procès-verbal, enregistré le 20 juin 1951, Maurice Rheims, commissaire-priseur, die Zuordnung des Einlieferers von Los 16 auf Los 15: «Paris, Goujon, 39 av. Charles Toquet». Dies war die Pariser Anschrift von Mme Goujon-Reinach, wie aus ihrem Sc…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-charpentier
+    role: agent
+    acquired: 1951-05-23
+    ended: 1951-05-23
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 16
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    acquired: 1951-05-23
+    ended: 1951-10-15
+    method: purchase
+    direct: true
+    place: london
+    price:
+      amount: 11500000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+        note: "Footnote: Bei der obigen Versteigerung erworben: Archives de Paris, Procès-verbal, wie oben Fussnote 12; AStEGB, Brief von F. K. Lloyd, Marlborough Fine Art Ltd., London, an Emil Bührle, 21.07.1951, das Bild «kürzlich erworben» anbietend."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-10-15
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 18000
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+        note: "Footnote: AStEGB, Brief von F. K. Lloyd, Marlborough Fine Art Ltd., London, an Emil Bührle, 30.09.1951, der den Kauf von Van Gogh, Bridges Across the Seine at Asnières [Le pont de Chatou] für £ 18.000 bestätigt, zahlbar per Scheck (£ 16.000) und in bar (£ 2.000); Brief von Emil Bührle an F. K. Lloyd, Marlborough Fine Art Ltd., London, 10.10.1951, mit der Ankündigung der Überweisung von £ 14.000 für das Gemä…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28 or earlier
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 50
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "50"
+    institution: foundation-e-g-buhrle-collection
+  - number: "301"
+    label: de la Faille (catalogue raisonné)
+  - number: "205"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

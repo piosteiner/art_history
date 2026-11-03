@@ -1,0 +1,109 @@
+public_id: 112135
+title_lang: en
+title: Chaland sur la Seine au Pecq
+names:
+  - lang: en
+    role: translation
+    text: Lastschiff auf der Seine bei Le Pecq
+  - lang: en
+    role: translation
+    text: Barge on the Seine near Le Pecq
+creator: maurice-de-vlaminck
+created: 1906
+kind: oil painting
+medium: Oil on canvas
+dimensions: [65, 92]
+institution: kunsthaus-zurich
+inventory_number: BU 0110
+web_url: https://collection.kunsthaus.ch/de/collection/item/604995/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q124294679
+provenance:
+  - owner: person/max-kaganovitch
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604995/
+        note: "Footnote: AStEGB, Inventarkarte Vlaminck, Chaland sur la Seine."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    ended: 1944-11-29
+    place: st-gallen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604995/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1944-11-29
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604995/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604995/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 110
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604995/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "110"
+    institution: foundation-e-g-buhrle-collection
+  - number: "144"
+    label: Vallès-Bled (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604995/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604995/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604995/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604995/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604995/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604995/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604995/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604995/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

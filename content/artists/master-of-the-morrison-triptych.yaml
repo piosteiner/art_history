@@ -1,0 +1,46 @@
+public_id: 111811
+name: Master of the Morrison triptych
+birth: 15th century
+death: 16th century
+wikidata_id: Q1918577
+metadata:
+  sources: [Wikidata Q1918577 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/southern-netherlands
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q1918577
+  - type: worked_in
+    to: place/antwerp
+    period: 1502/1524
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q1918577
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q1918577
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Master_of_the_Morrison_Triptych_-_Morrison_Triptych_-_Google_Art_Project.jpg/1280px-Master_of_the_Morrison_Triptych_-_Morrison_Triptych_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Master_of_the_Morrison_Triptych_-_Morrison_Triptych_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Master of the Morrison Triptych
+identifiers:
+  gnd: "129733423"
+  rkd: "53684"
+  ulan: "500006189"
+  viaf: "62636247"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q1918577
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q1918577

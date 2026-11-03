@@ -1,0 +1,45 @@
+public_id: 111813
+name: Allegretto Nuzi
+given_name: Allegretto
+family_name: Nuzi
+birth: 1315
+death: 1373
+wikidata_id: Q2210937
+metadata:
+  sources: [Wikidata Q2210937 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/papal-states
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q2210937
+  - type: born_in
+    to: place/fabriano
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q2210937
+  - type: died_in
+    to: place/fabriano
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q2210937
+identifiers:
+  bnf: 15084178p
+  gnd: "121440818"
+  idref: "090048717"
+  lc: n2005041176
+  rkd: "60148"
+  ulan: "500031701"
+  viaf: "305115014"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q2210937
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q2210937

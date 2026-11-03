@@ -23,6 +23,13 @@ death: 1614-12-25
 wikidata_id: Q368605
 metadata:
   sources: [Wikidata Q368605 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q368605
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Konoe_Nobutada_-_Tenjin_Traveling_to_China_-_2015.300.72_-_Metropolitan_Museum_of_Art.jpg/1280px-Konoe_Nobutada_-_Tenjin_Traveling_to_China_-_2015.300.72_-_Metropolitan_Museum_of_Art.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Konoe_Nobutada_-_Tenjin_Traveling_to_China_-_2015.300.72_-_Metropolitan_Museum_of_Art.jpg

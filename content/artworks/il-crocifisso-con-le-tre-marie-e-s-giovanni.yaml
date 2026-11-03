@@ -1,0 +1,143 @@
+public_id: 112246
+title_lang: it
+title: Il crocifisso con le tre Marie e S. Giovanni
+names:
+  - lang: en
+    role: translation
+    text: Kreuzigung Christi mit den drei Marien und dem heiligen Johannes
+  - lang: en
+    role: translation
+    text: The Crucifixion of Christ with the Three Marys and St. John
+creator: francesco-guardi
+created: 1735/1755
+created_label: c. 1740/1750
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [72.5, 55.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0143
+web_url: https://collection.kunsthaus.ch/de/collection/item/707964/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131586037
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7c/Francesco_Guardi_-_Il_crocifisso_con_le_tre_Marie_e_S._Giovanni_-_143_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Francesco_Guardi_-_Il_crocifisso_con_le_tre_Marie_e_S._Giovanni_-_143_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Francesco Guardi
+provenance:
+  - owner: person/theodore-willy-paul-leuner
+    co_owners: [person/liselotte-leuner]
+    ended: 1952 or earlier
+    place: chaumercenne
+    label: Chaumercenne, Haut-Saône
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707964/
+        note: "Footnote: Matile 1952, S. 36-37, mit Dank an Liselotte Leuner für die Möglichkeit, das Gemälde zu veröffentlichen; Liselotte war die Ehefrau von Théodore Willy Paul Leuner, der den älteren Einwohnern von Chaumercenne als Gemälderestaurator in Erinnerung ist, Informationen, die der Stiftung Sammlung E.G Bührle freundlicherweise von Alain Thiebaut, Chaumercenne, E-Mail-Korrespondenz 26-28 Januar 2021, zur Ver…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    acquired: 1952
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707964/
+        note: "Footnote: Fiocco 1952, S. 118, No. 125."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hans-wendland
+    role: dealer
+    ended: 1956-10-10
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707964/
+        note: "Footnote: AStEGB, Korrespondenz zwischen H. F. Fankhauser, Basel, im Auftrag seines Schwagers Dr. Hans Wendland, und Emil Bührle bzw. Peter Dietschi [Konservator der Sammlung Bührle], 04.09-16.10.1956."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hans-fritz-fankhauser
+    role: agent
+    acquired: 1956-10-10
+    ended: 1956-10-10
+    direct: true
+    place: basel
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707964/
+        note: "Footnote: Erworben von Bührle durch H. F. Fankhauser, Basel, von Vorgenanntem für CHF 62.000. AStEGB,, Rechnung von H. F. Fankhauser, Basel, ausgestellt auf Emil Bührle, 04.09.1956; Brief von H. F. Fankhauser, Basel, an Emil Bührle, 28.09.1956, betreffend die Bezahlung des oben genannten Betrages und handschriftlicher Vermerk von Emil Bührle, der die Bezahlung mit Scheck und das Kaufdatum bestätigt. Siehe a…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1956-10-10
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 62000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707964/
+        note: "Footnote: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707964/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 143
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707964/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "143"
+    institution: foundation-e-g-buhrle-collection
+  - number: "177"
+    label: Morassi (catalogue raisonné)
+  - number: "534"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

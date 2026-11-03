@@ -1,0 +1,138 @@
+public_id: 112420
+title_lang: en
+title: Flussufer mit Dorf
+names:
+  - lang: en
+    role: translation
+    text: Riverbank with a Village
+creator: salomon-van-ruysdael
+created: 1640/1650
+created_label: c. 1645(5?)
+created_span: uncertain
+kind: oil painting
+medium: Oil on panel
+dimensions: [64, 93]
+institution: kunsthaus-zurich
+inventory_number: BU 0163
+web_url: https://collection.kunsthaus.ch/de/collection/item/7861/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131585947
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/07/Salomon_van_Ruysdael_-_Flussufer_mit_Dorf_-_163_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Salomon_van_Ruysdael_-_Flussufer_mit_Dorf_-_163_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Salomon van Ruysdael
+provenance:
+  - owner: person/charles-delbecque
+    ended: 1886 or later
+    place: brussels
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7861/
+        note: "Footnote: Kat. Académie Royale de Belgique Brüssel 1886, Nr. 201."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/eduard-august-veltman
+    acquired: 1935 or earlier
+    ended: 1951 or later
+    place: bloemendaal
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7861/
+        note: "Footnote: Kat. Exposition universelle et internationale, Brüssel 1935, Nr. 766; Kat. Orangerie des Tuileries, Paris 1950, Nr. 80; Heijlbroek 2012, S. 205, über die Sammlung Veltman, für die Frits Lugt als Berater tätig war."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/otto-wertheimer
+    role: dealer
+    ended: 1952-02-29
+    method: purchase
+    direct: true
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7861/
+        note: "Footnote: Heijlbroek, wie oben Fussnote 5, S. 337-338, zum Kauf des größten Teils der Veltman-Sammlung durch Wertheimer."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1952-02-29
+    ended: 1954-05-27
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7861/
+        note: "Footnote: Getty Research Institute, Santa Monica (Kalifornien) Knoedler Gallery Archive, Stock Book 10, S. 74, Nr. 4853; AStEGB, Rechnung von M. Knoedler & Co., Inc., New York, ausgestellt auf Emil Bührle, 26.05.1954, für zwei Gemälde, Rembrandt, Stillleben mit totem Wild (Stiftung Sammlung E.G. Bührle, Inv. 158), und Ruysdael, Au Bord du Fleuve."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-05-27
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7861/
+        note: "Footnote: Rechnung wie oben Fussnote 7: erworben für insgesamt $ 125.000 für die beiden Gemälde; AStEGB, Brief von Charles R. Henschel (Leiter der M. Knoedler & Co., Inc.), New York, an Emil Bührle, 27.05.1954, mit Bestätigung des Scheckempfangs; Lagerbuch, wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7861/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 163
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7861/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "163"
+    institution: foundation-e-g-buhrle-collection
+  - number: "512"
+    label: Stechow (catalogue raisonné)
+  - number: "384"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7861/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7861/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7861/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7861/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7861/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7861/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7861/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7861/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

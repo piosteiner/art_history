@@ -1,0 +1,32 @@
+public_id: 112404
+name: Ravensburg
+names:
+  - lang: zh
+    role: translation
+    text: 拉芬斯堡
+  - lang: ko
+    role: translation
+    text: 라벤스부르크
+  - lang: ru
+    role: translation
+    text: Равенсбург
+kind: settlement
+parent: baden-wurttemberg
+country_code: DE
+location: [9.61139, 47.78306]
+wikidata_id: Q6832
+metadata:
+  sources: [Wikidata Q6832 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q6832
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q6832
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q6832

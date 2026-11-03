@@ -20,6 +20,33 @@ death: 1986-01-16
 wikidata_id: Q934438
 metadata:
   sources: [Wikidata Q934438 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q934438
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q934438
+  - type: student_of
+    to: artist/asai-chu
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q934438
+  - type: student_of
+    to: artist/pierre-auguste-renoir
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q934438
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/23/Umehara_Ryuzaburo.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Umehara_Ryuzaburo.jpg

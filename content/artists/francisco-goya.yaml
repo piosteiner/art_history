@@ -6,20 +6,140 @@ names:
   - lang: es
     role: original
     text: Francisco José de Goya y Lucientes
+  - Francesco Goya
+  - Francisco de Paula Jose Goya y Lucientes
+  - José Goya y Lucientes, Francisco de Paula
+  - Francisco Jose y Lucientes de Goya
+  - Francisko Goja
+  - f. de goya
+  - Francisco Goya Y Lucientes
+  - Francisco de Goya
+  - fr. jose de goya
+  - Francisco José Goya Lucientes
+  - j. f. de goya y lucientes
+  - fr. j. de goya y lucientes
+  - Fransisko Goiia-i-Lusientes
+  - Fransisko Khose de Goia
+  - Don Francesco Goya
+  - Francisco Jose de Goya y Lucientes
+  - francisco jose de goya
+  - franc. jose de goya y lucientes
+  - f. j. de goya
+  - Francisco Jose de Goya y Luzientes
+  - Francisco de Paula Goya y Lucientes
+  - Ko-ya
+  - francisco jose goya
+  - Louis-Philippe Goya
+  - José de Goya y Lucientes
+  - Francisco de Gova y Lucientes
+  - Fransisko Khose de Goiia
+  - Francisco Paula Jose Goya y Lucientes
+  - F. Goya
+  - francisco j. goya
+  - j. de goya
+  - fr. goya
+  - francesco jose goya
+  - Francisco José Goya
+  - Goya y Lucientes
+  - Francisco Paula José Goya y Lucientes
+  - Francisco Goya Lucientes
+  - Francisco Jose Goya Lucientes
+  - de goya y lucientes francisco jose
+  - Jose de Goya y Lucientes
+  - goya f.
+  - lang: ja
+    role: translation
+    text: フランシスコ・デ・ゴヤ
+  - lang: zh
+    role: translation
+    text: 弗朗西斯科·戈雅
+  - lang: ko
+    role: translation
+    text: 프란시스코 데 고야
+  - lang: ru
+    role: translation
+    text: Франсиско Гойя
 birth: 1746-03-30
 death: 1828-04-16
 wikidata_id: Q5432
 metadata:
   sources: [Wikidata Q5432 (retrieved 2026-10-09)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q5432
+  - type: lived_in
+    to: place/quinta-del-sordo
+    period: 27 February 1819 – 1824
+    sources:
+      - accessed: 2026-11-02
+        property: P551
+        wikidata: Q5432
+  - type: worked_in
+    to: place/cadiz
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q5432
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q5432
+  - type: worked_in
+    to: place/seville
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q5432
+  - type: worked_in
+    to: place/madrid
+    period: 1763/1770
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q5432
+  - type: influenced_by
+    to: artist/hieronymus-bosch
+    sources:
+      - accessed: 2026-11-02
+        property: P737
+        wikidata: Q5432
+  - type: studied_at
+    to: institution/royal-academy-of-fine-arts-of-san-fernando
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q5432
+  - type: associated_with
+    to: movement/rococo
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q5432
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q5432
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Vicente_L%C3%B3pez_Porta%C3%B1a_-_el_pintor_Francisco_de_Goya.jpg/1280px-Vicente_L%C3%B3pez_Porta%C3%B1a_-_el_pintor_Francisco_de_Goya.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Vicente_L%C3%B3pez_Porta%C3%B1a_-_el_pintor_Francisco_de_Goya.jpg
     license: Public domain
     credit: Vicente López Portaña
 identifiers:
+  bnf: 11905615r
   dome: "3076"
   gnd: "118541064"
+  idref: "027323765"
+  kulturnav: 124c6e5c-c16f-4b76-9f87-07b1a861641b
   lc: n79003363
+  nlk: KAC199610566
   rkd: "33102"
   ulan: "500118936"
   viaf: "54343141"

@@ -1,0 +1,71 @@
+public_id: 112272
+name: Philips Koninck
+given_name: Philips
+family_name: Koninck
+birth: 1619-11-05
+death: 1688-10-04
+wikidata_id: Q166379
+metadata:
+  sources: [Wikidata Q166379 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q166379
+  - type: born_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q166379
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q166379
+  - type: worked_in
+    to: place/rotterdam
+    period: 1639/1641
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q166379
+  - type: worked_in
+    to: place/amsterdam
+    period: 1641/1676
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q166379
+  - type: student_of
+    to: artist/rembrandt
+    sources:
+      - accessed: 2026-11-03
+        property: P1066
+        wikidata: Q166379
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c5/Philips_Koninck_-_Self_Portrait_-_Uffizi_Gallery.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Philips_Koninck_-_Self_Portrait_-_Uffizi_Gallery.jpg
+    license: Public domain
+    credit: Philips Koninck
+identifiers:
+  bnf: "137456939"
+  gnd: "118565044"
+  idref: 06688778X
+  kulturnav: 3534b41d-2f11-45e2-a3f1-d09c1523c98f
+  lc: n89602888
+  rkd: "45590"
+  ulan: "500000351"
+  viaf: "3262740"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q166379
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q166379

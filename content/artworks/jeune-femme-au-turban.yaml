@@ -1,0 +1,117 @@
+public_id: 112376
+title_lang: fr
+title: Jeune Femme au turban
+names:
+  - lang: de
+    role: translation
+    text: Junge Frau mit Turban
+  - lang: en
+    role: translation
+    text: Young Lady with a Turban
+creator: francois-andre-vincent
+attribution_label: François-André Vincent (formerly attributed to Jean-Honoré Fragonard)
+created: c. 1774
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [56]
+institution: kunsthaus-zurich
+inventory_number: BU 0132
+web_url: https://collection.kunsthaus.ch/de/collection/item/752963/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131585827
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a4/Fran%C3%A7ois-Andr%C3%A9_Vincent%2C_Honor%C3%A9_Fragonard_historical_attribution_-_Jeune_Femme_au_turban_-_132_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois-Andr%C3%A9_Vincent,_Honor%C3%A9_Fragonard_historical_attribution_-_Jeune_Femme_au_turban_-_132_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: François-André Vincent
+provenance:
+  - owner: person/paul-cailleux
+    role: dealer
+    ended: 1947-06-02
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752963/
+        note: "Footnote: AStEGB, Korrespondenz zwischen Paul Cailleux, Paris, und Emil Bührle, 02.05. bis 02.06.1947, betreffend Import und Kauf des Gemäldes Jeune femme au turban, das damals als ein Werk von Fragonard galt und die Frau des Künstlers darstellen sollte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1947-06-02
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 1000000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752963/
+        note: "Footnote: AStEGB, Brief von Paul Cailleux, Paris, an Emil Bührle, 02.06.1947, der den Erhalt Kaufbetrags von 1.000.000 FRF bestätigt, zur Ausgleichsrechnung (heute verloren) vom 05.05.1947."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 132
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "132"
+    institution: foundation-e-g-buhrle-collection
+  - number: 146P
+    label: Cuzin Nr. (catalogue raisonné)
+  - number: "152"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

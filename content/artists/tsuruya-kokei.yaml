@@ -18,6 +18,13 @@ birth: 1946-07
 wikidata_id: Q11487491
 metadata:
   sources: [Wikidata Q11487491 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q11487491
 identifiers:
   lc: nr2003014911
   ulan: "500338156"

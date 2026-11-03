@@ -9,6 +9,13 @@ active: 1069
 wikidata_id: Q29531726
 metadata:
   sources: [Wikidata Q29531726 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q29531726
 sources:
   active:
     - source: history-of-japanese-art

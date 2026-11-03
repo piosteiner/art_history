@@ -20,6 +20,25 @@ death: 1637-02-27
 wikidata_id: Q3139920
 metadata:
   sources: [Wikidata Q3139920 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3139920
+  - type: born_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q3139920
+  - type: died_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q3139920
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/e6/Hon%27ami_Koetsu.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Hon%27ami_Koetsu.jpg

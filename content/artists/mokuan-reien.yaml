@@ -13,6 +13,13 @@ death: 1345
 wikidata_id: Q3319422
 metadata:
   sources: [Wikidata Q3319422 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3319422
 identifiers:
   gnd: "140800905"
   ulan: "500121296"

@@ -8,6 +8,17 @@ active: c. 1173
 wikidata_id: Q5295424
 metadata:
   sources: [Wikidata Q5295424 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q5295424
+identifiers:
+  gnd: "135534453"
+  lc: n84127553
+  viaf: "75256689"
 sources:
   birth:
     - accessed: 2026-11-01

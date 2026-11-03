@@ -26,6 +26,21 @@ death: 1978-01-05
 wikidata_id: Q3090171
 metadata:
   sources: [Wikidata Q3090171 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3090171
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3090171
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/e3/Sh%C5%8Dji_Hamada.png
     source_url: https://commons.wikimedia.org/wiki/File:Sh%C5%8Dji_Hamada.png

@@ -1,0 +1,181 @@
+public_id: 111984
+title_lang: en
+title: Santa Caterina d'Alessandria
+names:
+  - lang: de
+    role: translation
+    text: Die heilige Katharina von Alexandrien
+  - lang: en
+    role: translation
+    text: Saint Catherine of Alexandria
+creator: bernardo-strozzi
+created: 1618/1620
+kind: oil painting
+medium: Oil on canvas
+dimensions: [165, 130]
+institution: kunsthaus-zurich
+inventory_number: BU 0144
+web_url: https://collection.kunsthaus.ch/de/collection/item/586964/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131586032
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/90/Bernardo_Strozzi_-_Santa_Caterina_d%27Alessandria_-_144_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Bernardo_Strozzi_-_Santa_Caterina_d%27Alessandria_-_144_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Bernardo Strozzi
+provenance:
+  - owner: person/antonio-scarpa
+    ended: 1832
+    place: modena
+    label: Modena  and  Pavia
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+        note: "Footnote: Auktion Impresa di Vendite in Italia di Giulio Sambon 14.11.1895, Lot 60."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/pinacoteca-scarpa
+    acquired: 1832
+    ended: 1895-11-14
+    method: inheritance
+    direct: true
+    place: motta-di-livenza
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/impresa-di-vendite-in-italia-giulio-sambon
+    role: agent
+    acquired: 1895-11-14
+    ended: 1895-11-14
+    method: auction
+    direct: true
+    label: Lot 60; Corso Vittorio Emanuele 37, Mailand
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/aldo-noseda
+    ended: 1918
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+        note: "Footnote: Auktion Galleria Pesaro Mailand 02.12.-05.12.1929, Lot 169."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/aldo-noseda
+    acquired: 1918
+    ended: 1929-12-02
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galleria-pesaro
+    role: agent
+    acquired: 1929-12-02
+    ended: 1929-12-05
+    method: auction
+    direct: true
+    label: via Manzoni; 12 a; Lot 169; Palazzo Poldi-Pezzoli
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/italico-brass
+    acquired: 1935 or earlier
+    ended: 1943-08-16
+    place: venice
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+        note: "Footnote: Kat. Palazzo Ducale 2004, Nr. 47."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/italico-brass-jr
+    acquired: 1943-08-16
+    ended: 1956-08-28
+    place: venice
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+        note: "Footnote: Wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1956-08-28
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 25000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+        note: "Footnote: AStEGB, Brief von Emil Bührle an Italico Brass, jr., Venedig, 28.08.1956, der den Kauf des Gemäldes bestätigt, das damals in einer temporären Ausstellung im Kunsthaus Zürich hing. Zahlung fällig bei Übergabe der Exportdokumente durch Brass; AStEGB, Brief von Italico Brass, jr. an Peter Dietschi [Kurator der Sammlung Bührle], 25.11.1956, der seine Ankunft mit den Exportdokumenten ankündigt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 144
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "144"
+    institution: foundation-e-g-buhrle-collection
+  - number: "118"
+    label: Mortari (catalogue raisonné)
+  - number: "525"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

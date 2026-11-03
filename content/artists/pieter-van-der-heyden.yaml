@@ -41,6 +41,25 @@ death: 1572
 wikidata_id: Q2094287
 metadata:
   sources: [Wikidata Q2094287 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/southern-netherlands
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2094287
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q2094287
+  - type: worked_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q2094287
 identifiers:
   bnf: 14966612m
   gnd: "129174327"

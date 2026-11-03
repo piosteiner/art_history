@@ -1,0 +1,106 @@
+public_id: 112369
+title_lang: en
+title: Porte Saint-Martin, Paris
+creator: maurice-utrillo
+created: c. 1910
+created_span: uncertain
+kind: oil painting
+medium: Oil on cardboard
+dimensions: [60, 73]
+institution: kunsthaus-zurich
+inventory_number: BU 0108
+web_url: https://collection.kunsthaus.ch/de/collection/item/752961/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q122853311
+provenance:
+  - owner: institution/wildenstein-co
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752961/
+        note: "Footnote: Kat. Musée Jenisch, Vevey 1955, Nr. 15."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-aktuaryus
+    role: dealer
+    ended: 22 February 1938 or later
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752961/
+        note: "Footnote: AStEGB, Rechnung der Galerie Aktuaryus, Zürich, ausgestellt auf Emil Bührle, 22. Februar 1938."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1938-02-22
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 12000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752961/
+        note: "Footnote: Erworben im Tausch gegen ein Gemälde von Utrillo, das Bührle von Aktuaryus am 17. November 1936 für CHF 6.000 erworben hatte, Rechnung wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 108
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "108"
+    institution: foundation-e-g-buhrle-collection
+  - number: "33"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

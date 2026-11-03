@@ -34,6 +34,23 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 116–118, figs. 140–141
+  - type: illustrates
+    to: literature/genji-kashiwagi
+    label: third illustration
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 117–118, fig. 140
+  - type: illustrates
+    to: literature/genji-minori
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 118, fig. 141
+  - type: illustrates
+    to: literature/the-tale-of-genji
+    label: twenty pictures survive of probably all 54 chapters
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 116–117
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Genji_emaki_Yadorigi.JPG/1280px-Genji_emaki_Yadorigi.JPG
     source_url: https://commons.wikimedia.org/wiki/File:Genji_emaki_Yadorigi.JPG

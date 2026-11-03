@@ -1,5 +1,19 @@
 public_id: 107951
-title: Insects, Reptiles and Amphibians at a Pond (The Colourful Realm of Living Beings)
+title_lang: jp
+title: "{池辺群虫図|ちへんぐんちゅうず} 《動植綵絵》のうち"
+names:
+  - lang: en
+    role: alternative
+    text: Insects, Reptiles and Amphibians at a Pond (The Colourful Realm of Living Beings)
+    sources:
+      - source: history-of-japanese-art
+  - lang: en
+    role: alternative
+    text: Insects and reptiles at a pond (among  Doshoku Sai-e (Colorful Realm of Living Beings))
+    sources:
+      - url: https://shozokan.nich.go.jp/en/collection/object/SZK002949-023
+        source: shozokan-nich-go-jp
+        accessed: 2026-11-02
 creator: ito-jakuchu
 created: 1757/1770
 kind: kakemono
@@ -7,6 +21,8 @@ medium: Hanging scroll, ink and colour on silk
 materials: [ink, silk]
 dimensions: [142, 72.9]
 institution: museum-of-the-imperial-collections
+inventory_number: SZK002949-023
+web_url: https://shozokan.nich.go.jp/en/collection/object/SZK002949-023
 description_md: "One of thirty scrolls of [[artist/ito-jakuchu]]’s Colourful Realm of Living Beings: insects, frogs, lizards and snakes minutely and colourfully depicted, yet flattened, with the plants around them, into a swirling decorative pattern — hyper-realism meeting a Rinpa-inspired aesthetic. [[source/history-of-japanese-art|p. 324, fig. 376]]"
 relationships:
   - type: associated_with
@@ -27,6 +43,9 @@ sources:
   creator:
     - source: history-of-japanese-art
       locator: p. 324, fig. 376
+    - url: https://shozokan.nich.go.jp/en/collection/object/SZK002949-023
+      source: shozokan-nich-go-jp
+      accessed: 2026-11-02
   materials:
     - source: history-of-japanese-art
       locator: p. 324, fig. 376
@@ -36,3 +55,10 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: p. 324, fig. 376
+    - url: https://shozokan.nich.go.jp/en/collection/object/SZK002949-023
+      source: shozokan-nich-go-jp
+      accessed: 2026-11-02
+  inventory_number:
+    - url: https://shozokan.nich.go.jp/en/collection/object/SZK002949-023
+      source: shozokan-nich-go-jp
+      accessed: 2026-11-02

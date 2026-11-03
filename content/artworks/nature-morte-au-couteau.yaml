@@ -12,6 +12,7 @@ on_loan: true
 on_loan_since: 2021
 provenance_status: a_clear
 provenance_status_note: "Kunsthaus Zürich: kein NS-verfolgungsbedingt entzogenes Kulturgut"
+wikidata_id: Q64174084
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/c/cb/Paul_Gauguin_-_Nature_morte_au_couteau_-_178_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_Nature_morte_au_couteau_-_178_-_Foundation_E.G._B%C3%BChrle_Collection.jpg

@@ -16,6 +16,27 @@ death: 1979-12-30
 wikidata_id: Q11483145
 metadata:
   sources: [Wikidata Q11483145 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q11483145
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q11483145
+  - type: died_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q11483145
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/b/bc/Denchu_Hiragushi_bijutsu-techo_kao_at_the_beginning_of_the_1960s.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Denchu_Hiragushi_bijutsu-techo_kao_at_the_beginning_of_the_1960s.jpg

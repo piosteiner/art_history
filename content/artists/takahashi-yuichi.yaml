@@ -18,6 +18,37 @@ death: 1894-07-06
 wikidata_id: Q3514137
 metadata:
   sources: [Wikidata Q3514137 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/empire-of-japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3514137
+  - type: nationality
+    to: polity/tokugawa-shogunate
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3514137
+  - type: worked_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q3514137
+  - type: student_of
+    to: artist/antonio-fontanesi
+    sources:
+      - accessed: 2026-11-02
+        property: P802
+        wikidata: Q1081011
+  - type: associated_with
+    to: movement/youga
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q3514137
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/6/6c/Takahashi_Yuichi.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Takahashi_Yuichi.jpg

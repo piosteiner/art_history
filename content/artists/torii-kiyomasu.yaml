@@ -20,6 +20,13 @@ death: 1720s
 wikidata_id: Q3136190
 metadata:
   sources: [Wikidata Q3136190 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3136190
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Torii_Kiyomasu_-_Ichikawa_Danjuro_I_in_role_of_Takenuki_Goro.jpg/1280px-Torii_Kiyomasu_-_Ichikawa_Danjuro_I_in_role_of_Takenuki_Goro.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Torii_Kiyomasu_-_Ichikawa_Danjuro_I_in_role_of_Takenuki_Goro.jpg

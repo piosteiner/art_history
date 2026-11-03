@@ -8,8 +8,26 @@ names:
     role: romanization
     text: Mokkei
 active: 13th century
+region: east_asia
 biography_md: Chinese Chan monk-painter of the thirteenth century, a scholar who took the tonsure and founded the temple Liutongsi near Hangzhou. Japanese monks brought many of his paintings home; no other Chinese artist had such an impact on Japanese ink painting. [[source/history-of-japanese-art|p. 223]]
 wikidata_id: Q3048317
+relationships:
+  - type: nationality
+    to: polity/southern-song
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3048317
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Guan_Yin_in_white_robe%2C_by_Mu-ch%27i.jpg/1280px-Guan_Yin_in_white_robe%2C_by_Mu-ch%27i.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Guan_Yin_in_white_robe,_by_Mu-ch%27i.jpg
+    license: Public domain
+    credit: Iwanafish at English Wikipedia
+identifiers:
+  gnd: "129192201"
+  lc: n84043282
+  ulan: "500322989"
+  viaf: "260697707"
 sources:
   active:
     - source: history-of-japanese-art

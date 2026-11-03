@@ -26,6 +26,19 @@ death: 1770-06-15
 wikidata_id: Q360978
 metadata:
   sources: [Wikidata Q360978 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q360978
+  - type: associated_with
+    to: movement/ukiyo-e
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q360978
 identifiers:
   bnf: "144772483"
   gnd: "118701894"

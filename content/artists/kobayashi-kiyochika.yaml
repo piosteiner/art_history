@@ -19,6 +19,25 @@ death: 1915-11-28
 wikidata_id: Q3121142
 metadata:
   sources: [Wikidata Q3121142 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3121142
+  - type: student_of
+    to: artist/shibata-zeshin
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q3121142
+  - type: associated_with
+    to: movement/ukiyo-e
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q3121142
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/c/cc/Kobayashi_Kiyochika_Photograph_c1873.png
     source_url: https://commons.wikimedia.org/wiki/File:Kobayashi_Kiyochika_Photograph_c1873.png

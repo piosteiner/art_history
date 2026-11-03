@@ -1,0 +1,163 @@
+public_id: 112166
+title_lang: en
+title: Kalvarienberg
+names:
+  - lang: en
+    role: translation
+    text: Calvary
+attribution_label: Anonymous, Netherlands
+created: c. 1420
+created_span: uncertain
+kind: oil painting
+medium: Tempera on panel
+dimensions: [58, 45.3]
+institution: kunsthaus-zurich
+inventory_number: BU 0147
+web_url: https://collection.kunsthaus.ch/de/collection/item/699958/
+on_loan: true
+on_loan_since: 2021
+region: europe
+wikidata_id: Q129571285
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fd/Netherlands_-_Kalvarienberg_-_147_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Netherlands_-_Kalvarienberg_-_147_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: School of Netherlands
+provenance:
+  - owner: person/unbekannte-r-kunstler-in
+    direct: true
+    place: netherlands
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/johann-peter-weyer
+    ended: 1862-08-25
+    place: cologne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+        note: "Footnote: Auktion J. M. Heberle, Köln (25. August 1862), Nr. 145; für die Sammlung Weyer vgl. Horst Vey, «Johann Peter Weyer, seine Gemäldesammlung und seine Kunstliebe», in: Wallraf-Richartz-Jahrbuch (28) 1966, S. 159-253."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/karl-anton-joachim-zephyrinus-friedrich-meinrad-von-hohenzollern
+    acquired: 1862-08-25
+    ended: 1885-06-02
+    method: purchase
+    direct: true
+    place: dusseldorf
+    label: Düsseldorf & Sigmaringen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+        note: "Footnote: Vey, wie oben Fussnote 3 zum Erwerb von Gemälden aus der Sammlung Weyer durch den Fürsten auf Vermittlung von Adolf Müller, Professor an der Kunstakademie Düsseldorf; Lehner 1871, Nr. 197 (21883). Das Gemälde wurde Teil der Fürstlich Hohenzollernschen Sammlung, die im Schloss Sigmaringen untergebracht ist. Das Museum mit seiner Galerie von Gemälden (hauptsächlich) deutscher Alter Meister wurde 186…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/haus-hohenzollern
+    acquired: 1885-06-02
+    ended: 1928
+    method: inheritance
+    direct: true
+    place: sigmaringen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+        note: "Footnote: Zur Auflösung der Sammlung Hohenzollern-Sigmaringen vgl. Anja Heuss, «Die Auflösung der Fürstlichen Sammlungen Hohenzollern-Sigmaringen», in: Jahrbuch der Staatlichen Kunstsammlungen in Baden-Württemberg (50) 2013/14, S. 59-63."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/arthur-hamilton-1-viscount-lee-of-fareham
+    acquired: 1930 or earlier
+    ended: 1936 or later
+    label: Old Quarries / Avening (Gloucester)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+        note: "Footnote: AStEGB, Brief von Rosenberg & Stiebel, New York, an Dr. Arthur Kauffmann, London, 25.06.1954, mit Provenienz-, Ausstellungs- und Publikationshinweisen, zitiert: «Professor W. G. Constable, 'Northern Painting in the Lee Collection', in International Studio (März) 1930, mit Farbtafel»; Kat. Burlington Fine Arts Club London 1936, Nr. 66."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/arthur-kauffmann
+    role: dealer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+        note: "Footnote: AStEGB, Zahlungsauftrag von Emil Bührle an die Industrie- und Handelsbank, Zürich, 07. 09.1954, über die Summe von 25.000 CHF. In diesem Dokument wird erwähnt, dass Dr. Arthur Kauffmann der Empfänger der Mittel für den Kalvarienberg sein wird, die Bührle von Rosenberg & Stiebel in New York erworben hat."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/rosenberg-stiebel-inc
+    role: dealer
+    ended: 1954-09-09
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-09-09
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 25000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+        note: "Footnote: Wie oben Fussnote 9 und AStEGB, Auszahlungsbestätigung der Industrie- und Handelsbank, Zürich, 09.09.1954."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 147
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "147"
+    institution: foundation-e-g-buhrle-collection
+  - number: "414"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

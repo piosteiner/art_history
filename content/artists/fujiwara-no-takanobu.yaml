@@ -7,6 +7,23 @@ death: 1205-03-26
 wikidata_id: Q2245281
 metadata:
   sources: [Wikidata Q2245281 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2245281
+  - type: born_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q2245281
+identifiers:
+  lc: n88141338
+  ulan: "500121196"
+  viaf: "63099323"
 sources:
   birth:
     - accessed: 2026-11-01

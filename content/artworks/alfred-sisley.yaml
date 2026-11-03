@@ -1,0 +1,148 @@
+public_id: 111938
+title_lang: en
+title: Alfred Sisley
+creator: pierre-auguste-renoir
+created: 1864
+kind: oil painting
+medium: Oil on canvas
+dimensions: [81, 65]
+institution: kunsthaus-zurich
+inventory_number: BU 0086
+web_url: https://collection.kunsthaus.ch/de/collection/item/48915/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223621
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Renoir_-_Alfred_Sisley%2C_1864.jpg/1280px-Renoir_-_Alfred_Sisley%2C_1864.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Renoir_-_Alfred_Sisley,_1864.jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+provenance:
+  - owner: artist/alfred-sisley
+    acquired: 1864
+    ended: 1899-01-29
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and Moret-sur-Long
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48915/
+        note: "Footnote: Auftragsarbeit des Künstlers, Dauberville/Dauberville 2007, Bd. I, No. 525."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jeanne-sisley
+    acquired: 1899
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48915/
+        note: "Footnote: Tochter von Alfred Sisley, wie oben Fussnote 2, Nr. 525."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/henry-lapauze
+    acquired: 1912 or earlier
+    ended: 1917 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48915/
+        note: "Footnote: Meier-Graefe 1912, S. 15; Kat. Paul Rosenberg 1917, No. 51"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/marie-paule-pomaret
+    acquired: 1937 or earlier
+    ended: 1955-06-04
+    place: paris
+    label: wohl Nachlass
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48915/
+        note: "Footnote: Kat. Palais National des Arts (Palais de Tokio), Paris 1937, No. 392. Marie-Paule Pomaret war die Witwe von Henry Lapauze. Vermutlich hatte sie das Gemälde bereits als Nachlass von ihrem Ehemann erhalten."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/cesar-mange-de-hauke
+    role: dealer
+    acquired: 1955-06-04
+    ended: 1955-07-28
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48915/
+        note: "Footnote: Wie oben Fussnote 2; Getty Research Institute, Santa Monica (Kalifornien), Cooper Archive, Box 46/2, Brief von César de Hauke, Paris, an Douglas Cooper, New York, 15.05.961, mit einer Auflistung der von der Galerie Brame an Bührle verkauften Gemälde und Angaben zu deren Besitz."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-07-28
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 330000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48915/
+        note: "Footnote: AStEGB, Zahlungsauftrag von Emil Bührle an die Industrie- und Handelsbank Zürich, 25.07.1955, zur Überweisung von CHF 330.000 auf das Konto von César de Hauke bei der Schweizerischen Bankgesellschaft; Überweisungsbestätigung der Industrie- und Handelsbank, Zürich, an Emil Bührle, 28.07.1955."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48915/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 86
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48915/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "86"
+    institution: foundation-e-g-buhrle-collection
+  - number: "525"
+    label: Dauberville (catalogue raisonné)
+  - number: "469"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48915/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48915/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48915/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48915/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48915/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48915/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48915/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48915/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

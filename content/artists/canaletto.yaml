@@ -1,0 +1,74 @@
+public_id: 111941
+name: Canaletto
+birth: 1697-10-18
+death: 1768-04-20
+wikidata_id: Q182664
+metadata:
+  sources: [Wikidata Q182664 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q182664
+  - type: born_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q182664
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q182664
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q182664
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q182664
+  - type: worked_in
+    to: place/venice
+    period: 1716/1719
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q182664
+  - type: associated_with
+    to: movement/rococo
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q182664
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f6/Giovanni_Antonio_Canal.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Antonio_Canal.jpg
+    license: Public domain
+    credit: Antonio Visentini
+identifiers:
+  bnf: "135268204"
+  gnd: "118638203"
+  idref: "027312062"
+  kulturnav: 66a33d51-ceb2-4339-8496-c6b41c2bbcdc
+  lc: n79065963
+  rkd: "121243"
+  ulan: "500115269"
+  viaf: "88652637"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q182664
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q182664

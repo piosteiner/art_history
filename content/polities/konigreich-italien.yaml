@@ -10,6 +10,7 @@ names:
     text: Regno d'Italia
 kind: kingdom
 period: 1861-03-17/1946-06-18
+country_codes: [IT]
 wikidata_id: Q172579
 metadata:
   sources: [Wikidata Q172579 (retrieved 2026-10-19)]

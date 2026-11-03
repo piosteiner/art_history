@@ -17,6 +17,7 @@ inventory_number: BU 0174
 web_url: https://collection.kunsthaus.ch/de/collection/item/805958/
 on_loan: true
 on_loan_since: 2021
+wikidata_id: Q131585409
 relationships:
   - type: copy_after
     to: artwork/self-portrait-dedicated-to-paul-gauguin

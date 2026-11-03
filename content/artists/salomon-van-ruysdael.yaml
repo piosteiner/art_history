@@ -1,0 +1,46 @@
+public_id: 112415
+name: Salomon van Ruysdael
+given_name: Salomon
+family_name: van Ruysdael
+birth: c. 1602
+death: 1670-10
+wikidata_id: Q247005
+metadata:
+  sources: [Wikidata Q247005 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q247005
+  - type: died_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q247005
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q247005
+identifiers:
+  bnf: 14966624m
+  gnd: "118604090"
+  idref: 07431713X
+  kulturnav: f6688fd5-7ccc-4903-bde4-0e46527bea2f
+  lc: n85381310
+  rkd: "69066"
+  ulan: "500010095"
+  viaf: "74123809"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q247005
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q247005

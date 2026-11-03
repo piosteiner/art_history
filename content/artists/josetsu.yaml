@@ -5,6 +5,24 @@ death: 1428
 wikidata_id: Q3089258
 metadata:
   sources: [Wikidata Q3089258 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3089258
+  - type: died_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q3089258
+identifiers:
+  gnd: "1053351658"
+  lc: no96030308
+  ulan: "500121032"
+  viaf: "258701345"
 sources:
   birth:
     - accessed: 2026-11-01

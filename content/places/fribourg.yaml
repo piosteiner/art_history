@@ -1,0 +1,38 @@
+public_id: 111839
+name: Fribourg
+names:
+  - lang: ja
+    role: translation
+    text: フリブール州
+  - lang: ko
+    role: translation
+    text: 프리부르
+  - lang: de
+    role: translation
+    text: Freiburg
+  - lang: it
+    role: translation
+    text: Friburgo
+  - lang: ru
+    role: translation
+    text: Фрибур
+kind: settlement
+parent: switzerland
+country_code: CH
+location: [7.08333, 46.71667]
+wikidata_id: Q12640
+metadata:
+  sources: [Wikidata Q12640 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q12640
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q12640
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q12640

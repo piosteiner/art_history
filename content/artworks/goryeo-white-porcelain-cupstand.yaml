@@ -7,6 +7,7 @@ kind: cupstand
 medium: Porcelain
 materials: [porcelain]
 dimensions: [5]
+region: east_asia
 description_md: "A cup and stand with incised chrysanthemums and squared spirals: white porcelain was made at some of the celadon kilns in the same shapes, in smaller numbers. [[source/portal-2000|pp. 104, 106, fig. 55]]"
 relationships:
   - type: created_in_polity

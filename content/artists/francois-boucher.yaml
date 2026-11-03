@@ -1,0 +1,71 @@
+public_id: 112184
+name: François Boucher
+given_name: François
+family_name: Boucher
+birth: 1703-09-29
+death: 1770-05-30
+wikidata_id: Q180932
+metadata:
+  sources: [Wikidata Q180932 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q180932
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q180932
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q180932
+  - type: worked_in
+    to: place/paris
+    period: 1720/1770
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q180932
+  - type: member_of
+    to: institution/academie-royale-de-peinture-et-de-sculpture
+    sources:
+      - accessed: 2026-11-03
+        property: P463
+        wikidata: Q180932
+  - type: associated_with
+    to: movement/rococo
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q180932
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f9/Boucher_par_Gustav_Lundberg_1741.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Boucher_par_Gustav_Lundberg_1741.jpg
+    license: Public domain
+    credit: Gustaf Lundberg
+identifiers:
+  bnf: 12218907t
+  dome: "2640"
+  gnd: "118662244"
+  idref: "030857600"
+  kulturnav: 410c2f7f-4f08-4226-80cc-104e9eda4d57
+  lc: n50042112
+  rkd: "11324"
+  ulan: "500032143"
+  viaf: "66517093"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q180932
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q180932

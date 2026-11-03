@@ -1,0 +1,149 @@
+public_id: 111855
+title_lang: en
+title: Fleurs et Fruits
+names:
+  - lang: de
+    role: translation
+    text: Blumen und Früchte
+  - lang: en
+    role: translation
+    text: Flowers and Fruits
+creator: paul-cezanne
+created: 1872/1873
+kind: oil painting
+medium: Oil on canvas
+dimensions: [38, 46]
+institution: kunsthaus-zurich
+inventory_number: BU 0176
+web_url: https://collection.kunsthaus.ch/de/collection/item/48895/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223625
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Paul_C%C3%A9zanne_-_Fleurs_et_fruits_-_B%C3%BChrle.jpg/1280px-Paul_C%C3%A9zanne_-_Fleurs_et_fruits_-_B%C3%BChrle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_Fleurs_et_fruits_-_B%C3%BChrle.jpg
+    license: Public domain
+    credit: Paul Cézanne
+provenance:
+  - owner: person/paul-ferdinand-gachet
+    acquired: c. 1873
+    ended: 1909
+    direct: true
+    place: auvers-sur-oise
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48895/
+        note: "Footnote: Kat. Metropolitan Museum of Art 1999, P.G. II-9, S. 201; wohl erworben beim Künstler."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-gachet-jr
+    acquired: 1909
+    ended: 1936 or later
+    direct: true
+    place: auvers-sur-oise
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48895/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/m-b-pellet
+    ended: 1936 or later
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48895/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/wildenstein-co
+    role: dealer
+    ended: 17 July 1953 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48895/
+        note: "Footnote: Wie oben Fussnote 2; AStEGB, Rechnung (Abschrift) der Société Anonyme de Beaux-Arts, Vaduz [Wildenstein], ausgestellt auf Emil Bührle, 17.07.1953, für sieben Gemälde, darunter Cézanne, Fleurs et fruits, über einen Gesamtbetrag von $ 255.000 (+ eine separate Rechnung für ein achtes Gemälde über $ 105.000)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-08-04
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48895/
+        note: "Footnote: Wie oben Fussnote 4; AStEGB, Korrespondenz zwischen Emil Bührle und der Industrie- und Handelsbank, Zürich, 29.-31.07.1953, betreffend Zahlung von $ 360.000 an die Société Anonyme de Beaux-Arts, Vaduz für 8 Gemälde, darunter Cézanne Fleurs et fruits; Schreiben der Société Anonyme de Beaux-Arts, Vaduz, an Emil Bührle, 04.08.1953 mit der Bestätigung des Empfangs des oben genannten Betrags."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1967
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48895/
+        note: "Footnote: Die Werke, die 1960 nicht in die Stiftung Sammlung E.G. Bührle einverleibt wurden, wurden 1967 zwischen Emil Bühle's Kinder, Dieter Bührle und Hortense Anda-Bührle, aufgeteilt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/dieter-buhrle
+    acquired: 1967
+    ended: 2012
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48895/
+        note: "Footnote: Sohn von Emil Bührle und 1960, zusammen mit seiner Mutter Charlotte Bührle-Schalk und seiner Schwester Hortense (Anda-)Bührle, einer der drei Gründer der Stiftung Sammlung E.G. Bührle, deren Stiftungsrat er von 1960 bis 2012 angehörte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 2012
+    direct: true
+    place: zurich
+    label: inv. no. 176
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48895/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "176"
+    institution: foundation-e-g-buhrle-collection
+  - number: "212"
+    label: Rewald (catalogue raisonné)
+  - number: "292"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48895/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48895/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48895/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48895/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48895/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48895/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48895/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48895/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

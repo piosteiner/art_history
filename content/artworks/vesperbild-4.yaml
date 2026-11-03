@@ -1,0 +1,143 @@
+public_id: 112459
+title_lang: en
+title: Vesperbild
+names:
+  - lang: en
+    role: translation
+    text: Pietà
+attribution_label: Anonymous, Upper Bavaria [Munich?]
+created: late 15th century
+created_span: uncertain
+kind: sculpture
+medium: Limewood
+dimensions: [99, 72, 29.6]
+institution: kunsthaus-zurich
+inventory_number: BU P.28
+web_url: https://collection.kunsthaus.ch/de/collection/item/849971/
+on_loan: true
+on_loan_since: 2021
+region: europe
+provenance:
+  - owner: person/ludwig-gerngross
+    ended: 1938-11-28
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849971/
+        note: "Footnote: AStEGB, Rechnung von Henri Heilbronner, Luzern, ausgestellt auf Emil Bührle, 13.07.1954; Weniger 2005, S. 291-307."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/geheime-staatspolizei
+    acquired: 1938-11-28
+    ended: 1941-06-27
+    method: confiscation
+    direct: true
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849971/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bayerisches-nationalmuseum
+    acquired: 1941-06-27
+    ended: 1952
+    method: purchase
+    direct: true
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849971/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/ludwig-gerngross
+    role: estate
+    acquired: 1952
+    method: restitution
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849971/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/henri-heilbronner
+    role: dealer
+    acquired: 1954-07-13 or earlier
+    ended: 1954-07-20
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849971/
+        note: "Footnote: AStEGB, Rechnung vom 13.07.1954, wie oben Fussnote 3; Eingangsbuch II, 15.07.1954."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-07-20
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 22000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849971/
+        note: "Footnote: AStEGB, Rechnung, wie oben Fussnote 3, mit handschriftlichem Vermerk von Bührle, der die Zahlung genehmigt, für das Datum des Erwerbs; AStEGB, Inventarkarte Pietà."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849971/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. P28
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849971/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: P28
+    institution: foundation-e-g-buhrle-collection
+  - number: "603"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

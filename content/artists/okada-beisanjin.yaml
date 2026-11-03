@@ -17,6 +17,19 @@ death: 1820-09-15
 wikidata_id: Q3350000
 metadata:
   sources: [Wikidata Q3350000 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3350000
+  - type: born_in
+    to: place/osaka
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q3350000
 identifiers:
   gnd: "129015660"
   lc: n88653026

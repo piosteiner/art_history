@@ -11,6 +11,27 @@ death: 1927-03-13
 wikidata_id: Q1750525
 metadata:
   sources: [Wikidata Q1750525 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/konigreich-italien
+    period: 1861-03-17
+    period_label: from 17 March 1861
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q1750525
+  - type: born_in
+    to: place/palermo
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q1750525
+  - type: died_in
+    to: place/palermo
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q1750525
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/23/Vincenzo_Ragusa.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Vincenzo_Ragusa.jpg

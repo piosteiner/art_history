@@ -1,0 +1,142 @@
+public_id: 111842
+title_lang: en
+title: Herrenbildnis
+names:
+  - lang: fr
+    role: translation
+    text: Portrait of a Man
+creator: frans-hals
+created: 1660/1666
+kind: oil painting
+medium: Oil on canvas
+dimensions: [70, 58.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0151
+web_url: https://collection.kunsthaus.ch/de/collection/item/355760/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q18060374
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7d/Frans_Hals_%28I%29_-_Herrenbildnis_-_151_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Frans_Hals_(I)_-_Herrenbildnis_-_151_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Frans Hals
+provenance:
+  - owner: person/francis-thomas-de-grey-cowper
+    acquired: 1883 or earlier
+    ended: 1905-07-18
+    label: Panshanger, Hertford
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/355760/
+        note: "Footnote: Bode 1883, S. 92, Nr. 152; Slive 1974, Bd. 3, Nr. 219."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/katrine-cecilia-cowper
+    acquired: 1905-07-18
+    ended: 1913-03-23
+    method: inheritance
+    direct: true
+    label: née Compton; Panshanger, Hertford
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/355760/
+        note: "Footnote: Slive 1974, Nr. 219."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/ethel-anne-priscilla-grenfell
+    acquired: 1913-03-23
+    ended: 1946-12-12
+    label: née Fane; Panshanger, Hertford
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/355760/
+        note: "Footnote: Kat. Royal Academy of Arts London 1929, S. 50, Abb. 21; Slive 1974, Nr. 219; Davenport-Hines 2008."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/nathan-katz
+    role: agent
+    acquired: 1946
+    ended: 1946
+    direct: true
+    place: basel
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/355760/
+        note: "Footnote: AStEGB, Brief von Emil Bührle an Georges Salles, Paris, 25. April 1953, betreffend das von Lady Desborough gekaufte Porträt eines Mannes von Hals, mit Nathan Katz als Vermittler; Brief von Nathan Katz, Basel, an Emil Bührle, 1. November 1946, der die Lieferung von drei Gemälden bestätigt: ein Gemälde von Frans Hals, Porträt eines Mannes, zwei Gemälde von Rembrandt, Saskia (jetzt Govert Flinck zuge…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1946-12-12
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 810000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/355760/
+        note: "Footnote: AStEGB, erworbenes Protokoll über einen Besuch von Nathan Katz bei Dr. O. Maurer [Generalsekretär von Oerlikon Bührle & Co.] in der Oerlikon-Fabrik am 10.12.1946, aus dem hervorgeht, dass Katz die Begleichung der Bildkäufe vor Ende des Jahres verlangte. Die Gesamtsumme für die 3 Bilder, wie oben in Fussnote 7 aufgeführt, betrug CHF 600'000, ein zusätzlicher Betrag von CHF 210'000, der gleichzeitig…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/355760/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 151
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/355760/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "151"
+    institution: foundation-e-g-buhrle-collection
+  - number: "144"
+    label: Grimm (catalogue raisonné)
+  - number: "219"
+    label: Slive (catalogue raisonné)
+  - number: "142"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/355760/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/355760/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/355760/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/355760/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/355760/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/355760/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/355760/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/355760/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

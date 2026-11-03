@@ -1,0 +1,181 @@
+public_id: 112059
+title_lang: en
+title: Tête de paysanne
+names:
+  - lang: de
+    role: translation
+    text: Kopf einer Bäuerin
+  - lang: en
+    role: translation
+    text: Head of a Peasant Woman
+creator: vincent-van-gogh
+created: 1885
+kind: oil painting
+medium: Oil on canvas on panel
+dimensions: [41, 30.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0052
+web_url: https://collection.kunsthaus.ch/de/collection/item/604961/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q26220115
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/89/Vincent_van_Gogh_-_T%C3%AAte_de_paysanne_-_52_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_T%C3%AAte_de_paysanne_-_52_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: institution/kunstzaal-oldenzeel
+    place: rotterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+        note: "Footnote: De la Faille 1970, No. 80; De la Faille 1939 No. 86, S. 88."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/w-g-h-van-houweninge
+    ended: 1925-04-21
+    place: rotterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+        note: "Footnote: Auktion W. G. H. van Houweninge, van Marle & de Sille Rotterdam (21.–22.04.1925), No. 254, De la Faille 1939 und 1970, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/van-marle-en-de-sille
+    role: agent
+    acquired: 1925-04-21
+    ended: 1925-04-22
+    method: auction
+    direct: true
+    place: rotterdam
+    label: Lot 254
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunstzaal-d-audretsch
+    acquired: 1925-04-22
+    method: purchase
+    direct: true
+    place: the-hague
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+        note: "Footnote: Erworben bei der oben genannten Auktion (?), De la Faille 1939, wie oben Fussnote 3; Kat. Orangerie im Park Sanssouci, Potsdam 1925, No. 36."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/gustav-schweitzer
+    acquired: 1930-08-16 or earlier
+    ended: 20 October 1932 or later
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+        note: "Footnote: Auktion Galerie Paul Cassirer Berlin (20.10.1932), No. 125 (ill.); Besuchsnotiz, Zentralarchiv des Internationalen Kunsthandels (ZADIK), Köln, Thannhauser Archive, A77 XIX 027 0166 012."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-paul-cassirer
+    role: agent
+    acquired: 1932-10-20
+    ended: 1932-10-20
+    method: auction
+    direct: true
+    place: berlin
+    label: Lot 125; zurück
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+        note: "Footnote: Auktion Galerie Paul Cassirer Berlin, wie oben Fussnote 9. Das Werk wurde bei der Auktion nicht verkauft. (Vgl. Bericht Raphael Gross 2024, S. 74; Protokollseite der Sammelversteigerung in der Galerie Paul Cassirer in Berlin am 20.10.1932, PCWFA Zürich, Protokollkatalog 20_Okt_1932. Annotation «Schweitzer» S. 18, Annotation «zurück» Einlegeblatt hinter S. 20, https://digi.ub.uni-heidelberg.de/digl…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: private collection
+    place: france
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-aktuaryus
+    role: dealer
+    ended: 1941-04-02
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+        note: "Footnote: AStEGB, Erhaltene Rechnung von Galerie Aktuaryus, Zürich, ausgestellt auf Emil Bührle, 02.04.1941."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1941-04-02
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 12000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+        note: "Footnote: Wie oben Fussnote 14."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28 or earlier
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 52
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "52"
+    institution: foundation-e-g-buhrle-collection
+  - number: "80"
+    label: De la Faille 1970 (catalogue raisonné)
+  - number: "88.86"
+    label: De la Faille 1939 (catalogue raisonné)
+  - number: "56"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

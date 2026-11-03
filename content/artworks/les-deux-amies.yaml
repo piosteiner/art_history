@@ -1,0 +1,145 @@
+public_id: 112132
+title_lang: fr
+title: Les Deux Amies
+names:
+  - lang: en
+    role: translation
+    text: Zwei Freundinnen
+  - lang: en
+    role: translation
+    text: The Two Friends
+creator: henri-de-toulouse-lautrec
+created: 1895
+kind: oil painting
+medium: Gouache on cardboard
+dimensions: [64.5, 84]
+institution: kunsthaus-zurich
+inventory_number: BU 0106
+web_url: https://collection.kunsthaus.ch/de/collection/item/604994/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q18191111
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/aa/Henri_de_Toulouse-Lautrec_-_Les_Deux_Amies_-_106_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_de_Toulouse-Lautrec_-_Les_Deux_Amies_-_106_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Henri de Toulouse-Lautrec
+provenance:
+  - owner: person/franz-koenigs
+    acquired: 1930 or earlier
+    ended: 1941-05-06
+    place: haarlem
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604994/
+        note: "Footnote: Kat. Stedelijk Museum Amsterdam 1930, No. 306. Das Gemälde war vom 17. Januar 1933 bis zum 24. September 1940 als Leihgabe im Boijmans Museum, Rotterdam, zu sehen (E-Mail-Korrespondenz Christine F. Koenigs, Amsterdam, mit Stiftung Sammlung E. G. Bührle, 26.09./02.10.2014)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/franz-koenigs
+    role: estate
+    acquired: 1941-05-06
+    ended: 1947
+    method: inheritance
+    direct: true
+    place: haarlem
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604994/
+        note: "Footnote: E-Mail-Korrespondenz wie oben Fussnote 3. Der Nachlass von Franz Koenigs wurde erst 1947 geregelt, nachdem Koenigs Frau, Anna Koenigs-von Kalckreuth, im November 1946 gestorben war."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/kornelie-van-eyck-koenigs
+    acquired: 1947/1948
+    ended: 1947/1948
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604994/
+        note: 'Footnote: E-Mail-Korrespondenz wie oben Fussnote 3. Kornelie war die Tochter von Franz und Anna Koenigs, das Bild Les deux amies wurde in der Liste ihres Anteils als "Twee frowen" angegeben.'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/georges-wildenstein
+    role: dealer
+    acquired: 1948
+    ended: 1954
+    direct: true
+    place: new-york-city
+    label: New York and Paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604994/
+        note: "Footnote: Kat. Wildenstein Galleries New York 1948, Nr. 33; AStEGB, Brief von Daniel Wildenstein, New York, an Emil Bührle, 17. April 1954, mit dem Angebot von acht Kunstwerken, darunter Lautrec, Les deux amies."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-06-10
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 65000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604994/
+        note: "Footnote: AStEGB, Rechnung der Anstalt für Kunsthandel, Vaduz [Wildenstein], 24. Mai 1954, für vier Kunstwerke, darunter Toulouse-Lautrec, Les deux amies, im Gesamtwert von $ 172.500, und Schreiben der Anstalt für Kunsthandel, Vaduz, an Emil Bührle, 10. Juni 1954, mit der Bestätigung des Erhalts dieses Betrags."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604994/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 106
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604994/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "106"
+    institution: foundation-e-g-buhrle-collection
+  - number: "602"
+    label: Dortu P. (catalogue raisonné)
+  - number: "388"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

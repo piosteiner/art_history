@@ -1,0 +1,66 @@
+public_id: 112383
+name: Emanuel de Witte
+given_name: Emanuel
+family_name: de Witte
+birth: 1617
+death: 1692
+wikidata_id: Q711203
+metadata:
+  sources: [Wikidata Q711203 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q711203
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q711203
+  - type: worked_in
+    to: place/delft
+    period: 1637/1639
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q711203
+  - type: worked_in
+    to: place/rotterdam
+    period: 1639/1640
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q711203
+  - type: worked_in
+    to: place/amsterdam
+    period: 1652/1692
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q711203
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b3/Portrait_of_Emanuel_de_Witte_by_Jan_Stolker.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Emanuel_de_Witte_by_Jan_Stolker.jpg
+    license: Public domain
+    credit: Jan Stolker
+identifiers:
+  bnf: 14492160w
+  gnd: "118634151"
+  idref: "158271769"
+  kulturnav: fabaed10-7a11-4ab9-9d5d-ed95cd21f09e
+  lc: no99039098
+  rkd: "85180"
+  ulan: "500025645"
+  viaf: "69722781"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q711203
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q711203

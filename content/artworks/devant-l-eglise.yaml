@@ -1,0 +1,134 @@
+public_id: 112078
+title_lang: en
+title: Devant l'église
+names:
+  - lang: en
+    role: translation
+    text: Vor der Kirche
+  - lang: en
+    role: translation
+    text: The Spanish Church
+creator: pablo-picasso
+created: 1901/1902
+kind: oil painting
+medium: Oil on canvas
+dimensions: [46, 55]
+institution: kunsthaus-zurich
+inventory_number: BU 0080
+web_url: https://collection.kunsthaus.ch/de/collection/item/604971/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131586129
+provenance:
+  - owner_label: unknown (collector)
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604971/
+        note: "Footnote: Daix/Boudaille 1966, No. V.49, S. 19."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604971/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/carstairs-gallery
+    role: dealer
+    acquired: 1951-07-21 or earlier
+    ended: 1953-11-27
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604971/
+        note: "Footnote: Archiv Kunstmuseum Bern, Inventarbuch Leihgaben (B-001-005), Eintrag einer Hinterlegung von Max Kaganovitch von Picassos «Devant l'église» im Kunstmuseum Bern am 21.07.1951, wobei das Gemälde zweimal als No. 1327 und No. 1388 registriert ist. Als (Mit-)Besitzer wird die Carstairs Gallery, New York, angegeben, die damals von Georges Keller geleitet wurde, der enge Beziehungen zum Kunstmuseum Bern u…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/max-kaganovitch
+    role: dealer
+    acquired: 1951-07-21 or earlier
+    ended: 1953-11-27
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604971/
+        note: "Footnote: Inventarbuch wie oben Fussnote 7; Kat. Galerie Max Kaganovitch 1951, No. 34; AStEGB, Eingangsbuch II, 15.11.1953."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-11-27
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 10000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604971/
+        note: "Footnote: Inventarbuch wie oben Fussnote 7 und Eingangsbuch wie oben Fussnote 8; Brief von Prof. Max Huggler [Direktor des Kunstmuseums], Bern, an Dr. O. Maurer [Generalsekretär der Oerlikon Bührle & Co.], Zürich, 27.11.1953, mit der Bestätigung der Einfuhr von vier Gemälden, darunter Picasso, Devant l'église, und der Abrechnung der Einfuhr- und Zollgebühren, mit handschriftlichem Vermerk von Emil Bührle: z…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604971/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 80
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604971/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "80"
+    institution: foundation-e-g-buhrle-collection
+  - number: XXI-308
+    label: Zervos (catalogue raisonné)
+  - number: V-49
+    label: Daix (catalogue raisonné)
+  - number: "331"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

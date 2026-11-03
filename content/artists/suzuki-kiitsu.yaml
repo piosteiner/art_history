@@ -14,6 +14,19 @@ death: 1858-10-16
 wikidata_id: Q3196514
 metadata:
   sources: [Wikidata Q3196514 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3196514
+  - type: student_of
+    to: artist/sakai-hoitsu
+    sources:
+      - accessed: 2026-11-02
+        property: P802
+        wikidata: Q3469342
 identifiers:
   gnd: "1057983748"
   idref: "240219775"

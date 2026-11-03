@@ -1,0 +1,134 @@
+public_id: 112388
+title_lang: en
+title: Vesperbild
+names:
+  - lang: en
+    role: translation
+    text: Pietà
+attribution_label: Anonymous, Bavaria/Austria
+created: c. 1400
+created_span: uncertain
+kind: sculpture
+medium: Limewood
+dimensions: [78, 80, 38]
+institution: kunsthaus-zurich
+inventory_number: BU P.03
+web_url: https://collection.kunsthaus.ch/de/collection/item/752971/
+on_loan: true
+on_loan_since: 2021
+region: europe
+provenance:
+  - owner: person/grafen-zu-toerring-jettenbach
+    acquired: 1905 or earlier
+    place: winhoring
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752971/
+        note: "Footnote: Die Grafen zu Toerring-Jettenbach hatten die Skulptur lange Zeit in ihrer Residenz in der Hofmark Winhöring (Oberbayern) aufbewahrt, wie Bezold 1905, Bd. 3, S. 2643 und Bezold 1905, Bd. Tafeln, Abb. 265, belegen."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/carl-theodor-graf-zu-toerring-jettenbach
+    ended: 1953-03-17
+    direct: true
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752971/
+        note: "Footnote: ZI München/Photothek, Archiv Julius Böhler, Karteisystem München, M_53-0009."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/julius-wilhelm-bohler
+    role: dealer
+    acquired: 1953-03-17
+    ended: 1953-04-29
+    method: purchase
+    direct: true
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752971/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/benno-griebert
+    role: dealer
+    acquired: 1953-04-29
+    ended: 1953-09-19
+    method: purchase
+    direct: true
+    place: meersburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752971/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-09-19
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 22000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752971/
+        note: "Footnote: AStEGB, Fotokopie der Rechnung, ausgestellt auf Werkzeugmaschinenfabrik Bührle & Co., 05.09.1953, mit Zahlungsstempel und Datum vom 19.09.1953."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752971/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. P3
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752971/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: P3
+    institution: foundation-e-g-buhrle-collection
+  - number: "587"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

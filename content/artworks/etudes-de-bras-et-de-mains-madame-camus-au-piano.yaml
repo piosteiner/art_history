@@ -19,6 +19,9 @@ inventory_number: BU 0031
 web_url: https://collection.kunsthaus.ch/de/collection/item/703959/
 on_loan: true
 on_loan_since: 2021
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585860
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/7/76/Edgar_Degas_-_%C3%89tudes_de_bras_et_de_mains_%28%C2%AB_Madame_Camus_au_piano_%C2%BB%29_-_31_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Edgar_Degas_-_%C3%89tudes_de_bras_et_de_mains_(%C2%AB_Madame_Camus_au_piano_%C2%BB)_-_31_-_Foundation_E.G._B%C3%BChrle_Collection.jpg

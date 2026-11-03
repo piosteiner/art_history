@@ -1,0 +1,117 @@
+public_id: 112454
+title_lang: de
+title: Die Anbetung der Hirten
+names:
+  - lang: en
+    role: translation
+    text: The Adoration of the Shepherds
+attribution_label: Anonymous, Flanders
+created: 1495/1505
+created_label: c. 1500 (case done later)
+created_span: uncertain
+kind: sculpture
+medium: Wood
+dimensions: [146, 74, 22]
+institution: kunsthaus-zurich
+inventory_number: BU P.27
+web_url: https://collection.kunsthaus.ch/de/collection/item/849968/
+on_loan: true
+on_loan_since: 2021
+region: europe
+provenance:
+  - owner: person/bourgeois
+    place: cologne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849968/
+        note: "Footnote: AStEBG, Rechnung von Henri Heilbronner, Luzern, ausgestellt auf Emil Bührle, 13.08.1953, mit Provenienzangaben."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/edouard-larcade
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849968/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/henri-heilbronner
+    role: dealer
+    ended: 1953-08-13
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849968/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-08-13
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 38000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849968/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. P27
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/849968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: P27
+    institution: foundation-e-g-buhrle-collection
+  - number: "585"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/849968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

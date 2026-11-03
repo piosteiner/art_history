@@ -7,6 +7,7 @@ kind: jar
 medium: Earthenware
 materials: [earthenware]
 dimensions: [43]
+region: east_asia
 description_md: A round-bottomed jar of yŏnjil (earthenware), the type that, with the higher-fired wajil and kyŏngjil, replaced the old term “Kimhae ware” for the paddled pottery of the Iron Age. [[source/portal-2000|pp. 40–41, fig. 21]]
 relationships:
   - type: associated_with

@@ -1,0 +1,126 @@
+public_id: 111862
+title_lang: fr
+title: Les Quatre Arbres en bordure de plaine
+names:
+  - lang: de
+    role: translation
+    text: Die vier Bäume
+  - lang: en
+    role: translation
+    text: The Four Trees by the Plain
+creator: jean-baptiste-camille-corot
+created: 1869/1870
+kind: oil painting
+medium: Oil on canvas
+dimensions: [46, 38]
+institution: kunsthaus-zurich
+inventory_number: BU 0020
+web_url: https://collection.kunsthaus.ch/de/collection/item/48899/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64174100
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7e/Jean-Baptiste-Camille_Corot_-_Les_Quatre_Arbres_en_bordure_de_plaine_-_20_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Baptiste-Camille_Corot_-_Les_Quatre_Arbres_en_bordure_de_plaine_-_20_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Jean-Baptiste Camille Corot
+provenance:
+  - owner: person/madame-veuve-chollet
+    acquired: 1870-01-01
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48899/
+        note: "Footnote: Robaut 1905, No. 1972: Erworben vom Künstler."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/monsieur-passe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48899/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-aktuaryus
+    role: dealer
+    ended: 1937-04-28
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48899/
+        note: "Footnote: AStEGB, quittierte Rechnung der Galerie Aktuaryus, Zürich, ausgestellt auf Emil Bührle, 28.04.1937."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1937-04-28
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 30000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48899/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48899/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 20
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48899/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "20"
+    institution: foundation-e-g-buhrle-collection
+  - number: "1972"
+    label: Robaut (catalogue raisonné)
+  - number: "16"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48899/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48899/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48899/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48899/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48899/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48899/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48899/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48899/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

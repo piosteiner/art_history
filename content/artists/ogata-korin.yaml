@@ -5,6 +5,32 @@ death: 1716-06-02
 wikidata_id: Q952938
 metadata:
   sources: [Wikidata Q952938 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q952938
+  - type: worked_in
+    to: place/osaka
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q952938
+  - type: worked_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q952938
+identifiers:
+  bnf: 16943554d
+  gnd: "128773421"
+  idref: "112626505"
+  lc: n82080371
+  ulan: "500034109"
+  viaf: "95891668"
 sources:
   birth:
     - accessed: 2026-11-01

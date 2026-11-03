@@ -1,0 +1,202 @@
+public_id: 112107
+title_lang: en
+title: Été à Bougival
+names:
+  - lang: en
+    role: translation
+    text: Sommer bei Bougival
+  - lang: en
+    role: translation
+    text: Summer at Bougival
+creator: alfred-sisley
+created: 1876
+kind: oil painting
+medium: Oil on canvas
+dimensions: [47, 62]
+institution: kunsthaus-zurich
+inventory_number: BU 0100
+web_url: https://collection.kunsthaus.ch/de/collection/item/604987/
+on_loan: true
+on_loan_since: 2021
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q64223622
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6f/Alfred_Sisley_-_%C3%89t%C3%A9_%C3%A0_Bougival_-_100_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Alfred_Sisley_-_%C3%89t%C3%A9_%C3%A0_Bougival_-_100_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Alfred Sisley
+provenance:
+  - owner: person/francois-depeaux
+    ended: 1920-10-11 or earlier
+    place: rouen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+        note: "Footnote: Auktion Hôtel Drouot Paris 1921, Lot 67; Tellier 2010, No. 460; Amic 2020, No. 243."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/francois-depeaux
+    role: estate
+    acquired: 1920-10-11
+    ended: 30 June 1921 or later
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+        note: "Footnote: Auktion Hôtel Drouot Paris 1921, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/moise-levi-de-benzion
+    ended: 1941
+    place: cairo
+    label: Cairo & Draveil and Seine-et-Oise
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+        note: "Footnote: Brame/Lorenceau 2021, No. 210."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    acquired: 1941
+    ended: 1941
+    method: confiscation
+    direct: true
+    label: Nr. LB 66
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+        note: "Footnote: Yeide 2009, No. D118."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hermann-goring
+    acquired: 1941-07-12
+    ended: 1941-10-22
+    direct: true
+    label: transfer; taken over from the ERR
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: dealer
+    acquired: 1941-10-22
+    ended: 1942-02-03
+    method: exchange
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+        note: "Footnote: Wie oben Fussnote 7; Francini/Heuss/Kreis 2001, S. 106 (No. 267), S. 286 (No. *1)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1942-02-03
+    ended: 1948-12-15
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 28000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+        note: "Footnote: AStEGB, Brief von Emil Bührle an seinen Anwalt Dr. Walther Huber, Zürich, 14.05.1947, mit dem er Huber zu seinem Bevollmächtigten für den Prozess Lévi de Benzion (Erben) gegen Bührle bestimmt. Die Zahl entspricht dem Betrag, den Bührle später in seinem Prozess gegen Fischer geltend machte, und obwohl Fischer eine Rückerstattungspflicht grundsätzlich ablehnte, wurden die Zahlen als solche nie in Fr…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/moise-levi-de-benzion
+    role: estate
+    acquired: 1948-12-15
+    ended: 1950-05-21
+    method: restitution
+    direct: true
+    place: cairo
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+        note: "Footnote: AStEGB, Schweizerisches Bundesgericht, Kammer zur Beurteilung von Raubgutklagen / Chambre des actions en revendication de biens spoliés, Lausanne, Antrag auf Rückgabe von Kunstwerken durch die Erben von Moïse Lévi de Benzion, vertreten durch Frau Paule-Dinah Lévi de Benzion, gegen verschiedene Beklagte (u. a. Bührle), Urteil vom 15.12.1948 (Typoskript), das die Rückgabe der beanstandeten Gemälde a…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paule-dinah-levi-de-benzion
+    acquired: 1950-05-21
+    ended: 1950-05-31
+    method: inheritance
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+        note: "Footnote: Witwe von Moïse Lévi de Benzion, nach der Verteilung des Nachlasses von Moïse Lévi de Benzion, beschlossen durch das Tribunal Hasby, Kairo, 21.05.1950, Archiv Kunstmuseum Bern, Brief von Maurice-E. Meyer, Avocat, Lausanne, an Professor Max Huggler [Direktor des Kunstmuseums Bern], Bern, 15.09.1952, mit einer Zusammenfassung des Loses, das Frau Paule-Dinah Lévi de Benzion nach der Verteilung des Na…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1950-05-31
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 28000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+        note: "Footnote: Erworben durch Maurice-E. Meyer, Avocat, Lausanne, von Paule-Dinah Lévi de Benzion, AStEGB, Kaufvertrag zwischen Paule-Dinah Lévi de Benzion und Emil Bührle, betreffend Sisley, L'Été à Bougival, Lausanne & Zürich, 31.05.1950. Der bezahlte Preis betrug CHF 28.000, basierend auf einer Schätzung von Max Huggler, die auf Meyers Veranlassung 1948 erstellt wurde und die bestätigt, dass der von Bührle 19…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 100
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "100"
+    institution: foundation-e-g-buhrle-collection
+  - number: "210"
+    label: Brame/Lorenceau (catalogue raisonné)
+  - number: "179"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604987/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,79 @@
+public_id: 112148
+name: Govert Flinck
+given_name: Govert
+family_name: Flinck
+names:
+  - kind: birth
+    lang: nl
+    role: alternative
+    text: Govert Teuniszoon Flinck
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q550401
+birth: 1615-01-25
+death: 1660-02-02
+wikidata_id: Q550401
+metadata:
+  sources: [Wikidata Q550401 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q550401
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q550401
+  - type: worked_in
+    to: place/amsterdam
+    period: 1633/1660
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q550401
+  - type: influenced_by
+    to: artist/rembrandt
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q550401
+  - type: student_of
+    to: artist/rembrandt
+    sources:
+      - accessed: 2026-11-03
+        property: P1066
+        wikidata: Q550401
+  - type: associated_with
+    to: movement/dutch-golden-age-painting
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q550401
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a4/Govaert_Flinck_Self_Portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Govaert_Flinck_Self_Portrait.jpg
+    license: Public domain
+    credit: Govert Flinck
+identifiers:
+  bnf: 14959709h
+  gnd: "123380103"
+  idref: "069037930"
+  kulturnav: b0f8c838-ec37-432d-b13d-c972193e65e6
+  lc: nr2001015472
+  rkd: "28322"
+  ulan: "500026249"
+  viaf: "29801997"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q550401
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q550401

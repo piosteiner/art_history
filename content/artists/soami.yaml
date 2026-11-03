@@ -17,6 +17,13 @@ death: 1525-11-22
 wikidata_id: Q2746002
 metadata:
   sources: [Wikidata Q2746002 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2746002
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/ed/%27Squirrel_on_a_Bamboo_Stalk%27%2C_bearing_the_signature_and_seal_of_S%C3%B4ami%2C_Honolulu_Academy_of_Arts.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%27Squirrel_on_a_Bamboo_Stalk%27,_bearing_the_signature_and_seal_of_S%C3%B4ami,_Honolulu_Academy_of_Arts.jpg

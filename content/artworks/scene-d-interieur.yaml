@@ -1,0 +1,113 @@
+public_id: 112050
+title_lang: en
+title: Scène d’intérieur
+names:
+  - lang: en
+    role: translation
+    text: Interieur
+  - lang: en
+    role: translation
+    text: Interior Scene
+creator: andre-derain
+created: c. 1904
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [94, 85]
+institution: kunsthaus-zurich
+inventory_number: BU 0039
+web_url: https://collection.kunsthaus.ch/de/collection/item/600976/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131585854
+provenance:
+  - owner: person/maurice-antoine-emile-coutot
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600976/
+        note: "Footnote: AStEGB, Brief von Philippe Brame, Paris, an Barbara Steinegger [Sekretärin von Hortense Anda-Bührle, Tochter von Emil Bührle], Zürich, 14.06.1989, in Beantwortung einer Anfrage nach Provenienzinformationen, im Rahmen der Vorbereitung von The Passionate Eye, Impressionist and Other Master Paintings from the Collection of Emil G. Bührle, Zürich, Catalogue of the Exhibition in Commemoration of the 10…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hector-brame
+    role: dealer
+    ended: 1952-02-08
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600976/
+        note: "Footnote: AStEGB, Brief von César de Hauke, Paris, an Emil Bührle, 28.01.1952, mit beigefügter Rechnung von Hector Brame, Paris, ausgestellt auf Emil Bührle, 28.01.1952; Getty Research Institute, Santa Monica (Kalifornien), Cooper Archive, Box 46/2, Brief von Cesar de Hauke, Paris, an Douglas Cooper, New York, 15.05.1961, mit einer Auflistung der von der Galerie Brame an Emil Bührle verkauften Gemälde und A…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-02-08
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 2200000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600976/
+        note: "Footnote: Rechnung, wie oben Fussnote 5: mit Zahlungsstempel, datiert 08.02.1952."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600976/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    direct: true
+    place: zurich
+    label: inv. no. 39
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600976/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "39"
+    institution: foundation-e-g-buhrle-collection
+  - number: "273"
+    label: Kellermann (catalogue raisonné)
+  - number: "221"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600976/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600976/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600976/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600976/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600976/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600976/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600976/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600976/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

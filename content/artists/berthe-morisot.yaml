@@ -1,0 +1,85 @@
+public_id: 112073
+name: Berthe Morisot
+given_name: Berthe
+family_name: Morisot
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Berthe Marie Pauline Morisot
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q105320
+birth: 1841-01-14
+death: 1895-03-02
+wikidata_id: Q105320
+metadata:
+  sources: [Wikidata Q105320 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q105320
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q105320
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q105320
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q105320
+  - type: influenced_by
+    to: artist/edouard-manet
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q105320
+  - type: student_of
+    to: artist/jean-baptiste-camille-corot
+    sources:
+      - accessed: 2026-11-03
+        property: P1066
+        wikidata: Q105320
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q105320
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/91/Morisot_berthe_photo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Morisot_berthe_photo.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 12532737p
+  dome: "1709"
+  gnd: "118736973"
+  idref: "027511987"
+  kulturnav: 5313519b-209f-4be3-964e-172064a32685
+  lc: n81145877
+  rkd: "57772"
+  ulan: "500029669"
+  viaf: "19789146"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q105320
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q105320

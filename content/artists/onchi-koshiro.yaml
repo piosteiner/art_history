@@ -7,11 +7,46 @@ death: 1955-06-03
 wikidata_id: Q2038322
 metadata:
   sources: [Wikidata Q2038322 (retrieved 2026-10-05)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2038322
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2038322
+  - type: died_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q2038322
+  - type: worked_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q2038322
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/d/d7/Onchi_Koshiro.JPG
     source_url: https://commons.wikimedia.org/wiki/File:Onchi_Koshiro.JPG
     license: Public domain
     credit: 朝日新聞社
+identifiers:
+  bnf: 15040038c
+  gnd: "174318871"
+  idref: "073656127"
+  lc: n81053913
+  rkd: "400322"
+  ulan: "500120365"
+  viaf: "10130847"
 sources:
   birth:
     - accessed: 2026-10-05

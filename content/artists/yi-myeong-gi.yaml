@@ -13,6 +13,13 @@ birth: 1756
 wikidata_id: Q15732854
 metadata:
   sources: [Wikidata Q15732854 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/joseon
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q15732854
 sources:
   birth:
     - accessed: 2026-11-01

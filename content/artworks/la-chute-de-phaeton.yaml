@@ -1,0 +1,141 @@
+public_id: 112302
+title_lang: fr
+title: La Chute de Phaëton
+names:
+  - lang: de
+    role: translation
+    text: Der Sturz des Phaëton
+  - lang: en
+    role: translation
+    text: The Fall of Phaeton
+creator: odilon-redon
+created: c. 1910
+created_span: uncertain
+kind: oil painting
+medium: Oil on cardboard
+dimensions: [40, 48]
+institution: kunsthaus-zurich
+inventory_number: BU 0083
+web_url: https://collection.kunsthaus.ch/de/collection/item/750967/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q124294683
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f4/Odilon_Redon_-_La_Chute_de_Pha%C3%ABton_-_83_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Odilon_Redon_-_La_Chute_de_Pha%C3%ABton_-_83_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Odilon Redon
+provenance:
+  - owner: person/jacques-zoubaloff
+    ended: 16 June 1927 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750967/
+        note: "Footnote: Auktion Galerie Georges Petit, Paris (16–17.06.1927), No. 149, Wildenstein/Lacau St Guily 1992, Bd. II, No. 875."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1927-06-16
+    ended: 1927-06-17
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750967/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/van-gelder
+    role: dealer
+    place: amsterdam
+    label: Amsterdam and Den Haag
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750967/
+        note: "Footnote: Wildenstein/Lacau 1992, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    ended: 1953-10-02
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750967/
+        note: "Footnote: AStEGB, Verkaufsbestätigung von Trafo, Anstalt für Handel und Finanz, Vaduz, [Marlborough Fine Art Ltd., London] unterzeichnet von F. K. Lloyd, an Emil Bührle, 01.10.1953, betreffend eine Gruppe von 10 Kunstwerken, die an Bührle für eine Gesamtsumme von £ 40.000 (= CHF 480.000) verkauft wurden, darunter Redon, La Chute de Phaéton. Die Zahlung dieses Betrags erfolgt in zwei Raten, 27.000 £ von eine…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-10-02
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 850
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750967/
+        note: "Footnote: Verkaufsbestätigung wie oben Fussnote 8, mit handschriftlichen Preisangaben zu den einzelnen Werken von Emil Bührle; AStEGB, Zahlungsauftrag von Emil Bührle, 01.10.1953, an die Industrie- und Handelsbank, Zürich, über den Betrag von CHF 156.000 zur Überweisung an Trafo, Vaduz, und Ausführungsbestätigung der Industrie- und Handelsbank, Zürich, 02.10.1953."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 83
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "83"
+    institution: foundation-e-g-buhrle-collection
+  - number: "875"
+    label: Wildenstein (catalogue raisonné)
+  - number: "320"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

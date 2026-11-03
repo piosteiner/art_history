@@ -1,0 +1,27 @@
+public_id: 109380
+name_lang: en
+name: The Tale of Genji
+names:
+  - lang: ja
+    role: original
+    text: "{源氏物語|げんじものがたり}"
+  - lang: ja-Latn
+    role: romanization
+    text: Genji monogatari
+kind: tale
+written: early 11th century
+description_md: |-
+  The first great masterpiece of Japanese prose, written at the Heian court by [[person/murasaki-shikibu]], a lady-in-waiting to the imperial consort Shōshi (988–1074); her contemporaries recognized the author in its heroine, Lady Murasaki, whose name she has been known by since.[[source/history-of-japanese-art|p. 112]]
+
+  Its fifty-four chapters follow Genji, the Shining Prince — the son of an emperor and his favourite consort, a lady too low in rank for her son to be named heir — a handsome, cultured man who kept caring for the women he loved even when he no longer loved them; the last third tells of two young men, Genji's heirs, after his death. Its psychological exploration of its characters made it a genre of its own in Japan, with no real parallel elsewhere before the eighteenth century in Europe.[[source/history-of-japanese-art|p. 112]]
+
+  Two themes run through it: *mono no aware*, "the pathos of things", and the chain of consequences of Genji's affair with his father's youngest consort, whose son by him becomes emperor — repeated when his own young wife bears another man's son.[[source/history-of-japanese-art|p. 117]] It was copied into illustrated editions almost at once and has inspired works of art ever since, above all the [[artwork/genji-monogatari-emaki]] of the first half of the twelfth century.[[source/history-of-japanese-art|pp. 112, 116]]
+wikidata_id: Q8269
+metadata:
+  sources: [Wikidata Q8269 (retrieved 2026-11-02)]
+relationships:
+  - type: written_by
+    to: person/murasaki-shikibu
+    sources:
+      - source: history-of-japanese-art
+        locator: p. 112

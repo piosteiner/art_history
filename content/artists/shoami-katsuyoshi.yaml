@@ -12,6 +12,13 @@ death: 1908-12-19
 wikidata_id: Q18011669
 metadata:
   sources: [Wikidata Q18011669 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q18011669
 sources:
   birth:
     - accessed: 2026-11-01

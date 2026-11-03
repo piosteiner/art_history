@@ -1,0 +1,126 @@
+public_id: 112000
+title_lang: en
+title: Andata del Bucintoro verso S. Nicolò di Lido
+names:
+  - lang: it
+    role: translation
+    text: Il Bacino di San Marco
+  - lang: de
+    role: translation
+    text: Die Bucht von San Marco
+  - lang: en
+    role: translation
+    text: The Bacino di San Marco
+creator: francesco-guardi
+created: 1780/1785
+kind: oil painting
+medium: Oil on canvas
+dimensions: [62, 93.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0142
+web_url: https://collection.kunsthaus.ch/de/collection/item/588958/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131586038
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4d/Francesco_Guardi_-_Andata_del_Bucintoro_verso_S._Nicol%C3%B2_di_Lido_-_142_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Francesco_Guardi_-_Andata_del_Bucintoro_verso_S._Nicol%C3%B2_di_Lido_-_142_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Francesco Guardi
+provenance:
+  - owner: person/karl-haberstock
+    role: dealer
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/588958/
+        note: "Footnote: Haberstock 1967, Nr. 64; das Gemälde ist nicht in den Verkaufsbüchern der Galerie Haberstock, Berlin, aufgeführt, publiziert in: Keßler 2008, S. 265-320; ein Verkaufsdatum vor 1933 wird gestützt durch Arslan 1944, S. 6, Nr. 11, Abb. 7, wo Arslan erwähnt, dass das Gemälde vor ca. einem Dutzend Jahren bei Haberstock war."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: private collection
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/588958/
+        note: "Footnote: AStEGB, Inventarkarte Guardi, Bacino di San Marco."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    ended: 1954-06-25
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/588958/
+        note: "Footnote: AStEGB, Eingangsbuch II, 16.05.1954."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-06-25
+    ended: 1955-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/588958/
+        note: "Footnote: AStEGB, Rechnung der Trafo Anstalt für Handel und Finanz, Vaduz [Marlborough Fine Art Ltd, London], ausgestellt auf Emil Bührle, 08.06.1954, für 4 Gemälde, darunter Guardi, Bacino di San Marco, im Gesamtwert von 560.000 CHF; Brief von Dr. O. Maurer [Generalsekretär von Oerlikon Bührle & Co.] an Trafo Anstalt für Handel und Finanz, Vaduz, 19.06.1954, mit der Bestätigung der Zahlung von 451.250 CHF …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/588958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 142
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/588958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "142"
+    institution: foundation-e-g-buhrle-collection
+  - number: "288"
+    label: Morassi (catalogue raisonné)
+  - number: "399"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/588958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/588958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/588958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/588958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/588958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/588958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/588958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/588958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,102 @@
+public_id: 112450
+title_lang: en
+title: Beweinung Christi
+names:
+  - lang: en
+    role: translation
+    text: The Lamentation
+attribution_label: Anonymous, Upper Austria
+created: c. 1500
+created_span: uncertain
+kind: sculpture
+medium: Limewood
+dimensions: [125, 105, 34]
+institution: kunsthaus-zurich
+inventory_number: BU P.10
+web_url: https://collection.kunsthaus.ch/de/collection/item/847315/
+on_loan: true
+on_loan_since: 2021
+region: europe
+provenance:
+  - owner: person/johannes-hinrichsen
+    role: dealer
+    acquired: 1953-10-10 or earlier
+    ended: 1954-01-18
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/847315/
+        note: "Footnote: AStEGB, Eingangsbuch II, 30.08.1953."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-01-18
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 22000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/847315/
+        note: "Footnote: AStEGB, Quittung, unterzeichnet von Johannes Hinrichsen und ausgestellt auf Emil Bührle, 01.01.1954, zur Bestätigung der Zahlung von CHF 47.000 für 4 Skulpturen, einschliesslich der Lamentation, für insgesamt CHF 57.000, für die bereits am 27.10.1953 eine Anzahlung von CHF 10.000 geleistet worden war. Liste von Dr. Walter Drack [Konservator der Sammlung Bührle] 26.10.1953 über die im Herbst 1953 v…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/847315/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. P10
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/847315/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: P10
+    institution: foundation-e-g-buhrle-collection
+  - number: "591"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/847315/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/847315/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/847315/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/847315/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/847315/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/847315/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/847315/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/847315/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

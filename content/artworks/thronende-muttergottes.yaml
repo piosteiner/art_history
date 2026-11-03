@@ -1,0 +1,120 @@
+public_id: 112392
+title_lang: en
+title: Thronende Muttergottes
+names:
+  - lang: en
+    role: translation
+    text: The Virgin and Child Enthroned
+attribution_label: Anonymous, Auvergne
+created: 1150/1199
+created_label: 2nd half 12th century
+created_span: uncertain
+kind: sculpture
+medium: Walnut
+dimensions: [68, 30.5, 29]
+institution: kunsthaus-zurich
+inventory_number: BU P.04
+web_url: https://collection.kunsthaus.ch/de/collection/item/752978/
+on_loan: true
+on_loan_since: 2021
+region: europe
+provenance:
+  - owner: person/joseph-brummer
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752978/
+        note: "Footnote: Kat. Kunsthaus Zürich 1958, Nr. 19."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/demotte-inc
+    role: dealer
+    ended: 1930 or later
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752978/
+        note: "Footnote: Kat. Demotte Inc. New York 1930; Art News, New York (28), 01.03.1930, S. 6, Titelseite ill."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/august-carl
+    role: dealer
+    ended: 1952-05-09
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752978/
+        note: "Footnote: AStEGB, quittierte Rechnung ausgestellt von August Carl, Zürich, an Emil Bührle, 09.05.1952."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-05-09
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 30000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752978/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752978/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. P4
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752978/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: P4
+    institution: foundation-e-g-buhrle-collection
+  - number: "563"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752978/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752978/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752978/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752978/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752978/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752978/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752978/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752978/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

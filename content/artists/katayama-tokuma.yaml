@@ -19,6 +19,19 @@ death: 1917-10-24
 wikidata_id: Q898689
 metadata:
   sources: [Wikidata Q898689 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q898689
+  - type: student_of
+    to: artist/josiah-conder
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q898689
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/b/b3/Katayama-Tokuma.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Katayama-Tokuma.jpg

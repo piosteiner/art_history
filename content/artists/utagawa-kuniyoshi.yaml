@@ -12,6 +12,12 @@ wikidata_id: Q317736
 metadata:
   sources: [Wikidata Q317736 (retrieved 2026-10-05)]
 relationships:
+  - type: student_of
+    to: artist/utagawa-toyokuni
+    sources:
+      - accessed: 2026-11-02
+        property: P802
+        wikidata: Q950316
   - type: member_of
     to: movement/utagawa-school
     notes_md: studied with Toyokuni (Mason p. 288)

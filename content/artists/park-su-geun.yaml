@@ -22,6 +22,19 @@ death: 1965-05-06
 wikidata_id: Q7138062
 metadata:
   sources: [Wikidata Q7138062 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/south-korea
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q7138062
+  - type: died_in
+    to: place/south-korea
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q7138062
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/9f/%EB%B0%95%EC%88%98%EA%B7%BC_%ED%99%94%EB%B0%B1.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%EB%B0%95%EC%88%98%EA%B7%BC_%ED%99%94%EB%B0%B1.jpg

@@ -1,0 +1,50 @@
+public_id: 112452
+name: Tilman Riemenschneider
+given_name: Tilman
+family_name: Riemenschneider
+birth: 1460
+death: 1531-07-27
+wikidata_id: Q44723
+metadata:
+  sources: [Wikidata Q44723 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/holy-roman-empire
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q44723
+  - type: died_in
+    to: place/wurzburg
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q44723
+  - type: associated_with
+    to: movement/german-renaissance
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q44723
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Das_%28vermutlich%29_Selbstportrait_von_Tilman_Riemenschneider.04.jpg/1280px-Das_%28vermutlich%29_Selbstportrait_von_Tilman_Riemenschneider.04.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Das_(vermutlich)_Selbstportrait_von_Tilman_Riemenschneider.04.jpg
+    license: CC BY-SA 4.0
+    credit: Holger Uwe Schmitt
+identifiers:
+  bnf: "140316189"
+  gnd: "118600885"
+  idref: "027514935"
+  lc: n50053400
+  rkd: "66810"
+  ulan: "500030655"
+  viaf: "27266394"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q44723
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q44723

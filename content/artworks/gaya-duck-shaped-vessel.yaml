@@ -7,6 +7,7 @@ kind: vessel
 medium: Stoneware
 materials: [stoneware]
 dimensions: [16.5]
+region: east_asia
 description_md: A stoneware spouted cup in the shape of a duck, combed and incised for wings and feathers — tomb pottery used in shamanistic burial rites. [[source/portal-2000|pp. 56–57, fig. 31]]
 relationships:
   - type: created_in_polity

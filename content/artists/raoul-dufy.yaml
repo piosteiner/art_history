@@ -1,0 +1,73 @@
+public_id: 112053
+name: Raoul Dufy
+given_name: Raoul
+family_name: Dufy
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Raoul Ernest Joseph Dufy
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q45205
+birth: 1877-06-03
+death: 1953-03-23
+wikidata_id: Q45205
+metadata:
+  sources: [Wikidata Q45205 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q45205
+  - type: born_in
+    to: place/le-havre
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q45205
+  - type: influenced_by
+    to: artist/claude-monet
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q45205
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q45205
+  - type: associated_with
+    to: movement/fauvism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q45205
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Raoul_Dufy%2C_portrait_photograph.jpg/1280px-Raoul_Dufy%2C_portrait_photograph.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Raoul_Dufy,_portrait_photograph.jpg
+    license: Public domain
+    credit: Anonymous
+identifiers:
+  bnf: 12223382x
+  dome: "97"
+  gnd: "118681125"
+  idref: "027379760"
+  kulturnav: a9565f08-ccec-4a0f-a752-b9a5e68e22b8
+  lc: n80082297
+  rkd: "24635"
+  ulan: "500024166"
+  viaf: "56661160"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q45205
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q45205

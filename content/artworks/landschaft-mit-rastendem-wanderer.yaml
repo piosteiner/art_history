@@ -1,0 +1,126 @@
+public_id: 112273
+title_lang: de
+title: Landschaft mit rastendem Wanderer
+names:
+  - lang: en
+    role: translation
+    text: Landscape with Resting Traveller
+creator: philips-koninck
+created: 1665
+kind: oil painting
+medium: Oil on canvas
+dimensions: [65.5, 94.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0154
+web_url: https://collection.kunsthaus.ch/de/collection/item/7468/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131586018
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/15/Philips_Koninck_-_Landschaft_mit_rastendem_Wanderer_-_154_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Philips_Koninck_-_Landschaft_mit_rastendem_Wanderer_-_154_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Philips Koninck
+provenance:
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    acquired: 1921
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7468/
+        note: "Footnote: Gerson 1936, Nr. 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hendrikus-egbertus-ten-cate
+    acquired: 1936 or earlier
+    place: almelo
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7468/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/rosenberg-stiebel-inc
+    role: dealer
+    acquired: 1952 or earlier
+    ended: 1954-02-10
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7468/
+        note: "Footnote: AStEGB, Brief von Rosenberg & Stiebel, New York, an Emil Bührle, 24.12.1952, bezüglich eines weiteren Ankaufs und bei dieser Gelegenheit Beilage einer Kopie der Beschreibung der Landschaft mit rastendem Reisenden, ehemals in der Sammlung Ten Cate; Brief und Rechnung von Rosenberg & Stiebel, New York, an Emil Bührle, 10.02.1954."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-02-10
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 25000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7468/
+        note: "Footnote: Vom Vorgenannten für $ 25.000 erworben, Rechnung wie oben Fussnote 7, mit paraphiertem Stempel, der die Zahlung genehmigt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7468/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 154
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7468/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "154"
+    institution: foundation-e-g-buhrle-collection
+  - number: "1"
+    label: Gerson (catalogue raisonné)
+  - number: "351"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7468/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7468/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7468/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7468/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7468/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7468/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7468/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7468/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

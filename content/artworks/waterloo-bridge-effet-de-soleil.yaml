@@ -1,0 +1,201 @@
+public_id: 111968
+title_lang: en
+title: Waterloo Bridge, effet de soleil
+names:
+  - lang: en
+    role: translation
+    text: Waterloo Bridge, London, in der Sonne
+  - lang: en
+    role: translation
+    text: Waterloo Bridge, London, Sun Effect
+creator: claude-monet
+created: 1899/1901
+kind: oil painting
+medium: Oil on canvas
+dimensions: [65, 100]
+institution: kunsthaus-zurich
+inventory_number: BU 0074
+web_url: https://collection.kunsthaus.ch/de/collection/item/586960/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64174088
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/83/Claude_Monet_-_Waterloo_Bridge%2C_effet_de_soleil_-_74_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Waterloo_Bridge,_effet_de_soleil_-_74_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: institution/durand-ruel
+    co_owners: [institution/bernheim-jeune]
+    role: dealer
+    acquired: 1917-03
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+        note: "Footnote: Wildenstein 1985, No. 1593."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1918
+    ended: 1918
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/franz-burgers
+    ended: 1930
+    direct: true
+    place: genthod
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+        note: "Footnote: Auktion Galerie Fischer, Luzern (25.-26.08.1932), Lot 207."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/franz-burgers
+    role: estate
+    acquired: 1930
+    ended: 1932-10-03
+    direct: true
+    place: genthod
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+        note: "Footnote: Wie oben Fussnote 5; das Gemälde wurde 1935 erneut angeboten (Auktion Galerie Fischer, Luzern, 07.09.1935, Lot 2344), blieb aber wieder unverkauft, Auskunft von Dr. Kuno Fischer, Galerie Fischer, Luzern, an Stiftung Sammlung E.G. Bührle, 01.04.2008; E-Mail-Korrespondenz, Galerie Fischer Luzern, 02.03.2025, 13.03.2025 und 17.04.2025."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1932-08-25
+    ended: 1932-08-26
+    method: auction
+    direct: true
+    place: lucerne
+    label: Lot 207; unverkauft
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+        note: "Footnote: E-Mail-Korrespondenz, Galerie Fischer Luzern, wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/theodor-fischer
+    role: dealer
+    acquired: 1932-10-03
+    ended: 7 September 1935 or later
+    method: purchase
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+        note: "Footnote: E-Mail-Korrespondenz, Galerie Fischer Luzern, wie oben Fussnote 6; Das Gemälde scheint dann in Fischers Privatwohnung verblieben zu sein, bevor es über einen Berner Kunsthändler an Aktuaryus kam, AStEGB, Brief von Emil Bührle an Professor Dr. Hans R. Hahnloser, Bern, 17.06.1942."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1935-09-03
+    ended: 1935-09-07
+    method: auction
+    direct: true
+    place: lucerne
+    label: Lot 2344; unverkauft
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+        note: "Footnote: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    role: dealer
+    direct: true
+    place: bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+        note: "Footnote: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-aktuaryus
+    role: dealer
+    ended: 1942-06-20
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+        note: "Footnote: AStEGB, Rechnung der Galerie Aktuaryus, ausgestellt auf Emil Bührle, 15.06.1942."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1942-06-20
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 14500
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+        note: "Footnote: Erworben von Aktuaryus für CHF 17.500, abzüglich CHF 3.000 für ein «Portrait de Mlle G.» von Edouard Manet, das bei dieser Gelegenheit eingetauscht wurde, Rechnung wie oben Fussnote 9 und Quittung für die Bezahlung per Post, datiert 20.06.1942."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 74
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "74"
+    institution: foundation-e-g-buhrle-collection
+  - number: III.698.1593
+    label: Wildenstein Monet (catalogue raisonné)
+  - number: "260"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

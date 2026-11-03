@@ -1,0 +1,22 @@
+public_id: 112390
+name: Winhöring
+kind: settlement
+parent: bayern
+country_code: DE
+location: [12.65, 48.26667]
+wikidata_id: Q265381
+metadata:
+  sources: [Wikidata Q265381 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q265381
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q265381
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q265381

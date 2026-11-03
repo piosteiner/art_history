@@ -1,0 +1,180 @@
+public_id: 112117
+title_lang: fr
+title: Les Deux Faisans
+names:
+  - lang: en
+    role: translation
+    text: Zwei Fasane
+  - lang: en
+    role: translation
+    text: Two Pheasants
+creator: chaim-soutine
+created: 1924/1925
+kind: oil painting
+medium: Oil on canvas
+dimensions: [50, 61]
+institution: kunsthaus-zurich
+inventory_number: BU 0101
+web_url: https://collection.kunsthaus.ch/de/collection/item/604989/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131584790
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f5/Cha%C3%AFm_Soutine_-_Les_Deux_Faisans_-_101_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Cha%C3%AFm_Soutine_-_Les_Deux_Faisans_-_101_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Chaïm Soutine
+provenance:
+  - owner: person/james-smith
+    ended: 1943 or later
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+        note: "Footnote: Etikette verso auf dem Rahmen: C. E. M. A. Ausstellung / Soutine / 'Zwei Vögel' / Hon. James Smith / Nr. 352F 1943."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/storran-gallery
+    role: dealer
+    acquired: 1945
+    ended: 1945
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+        note: "Footnote: Tuchmann 1993, Nr. 105."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/leicester-galleries
+    role: dealer
+    acquired: 1945
+    ended: 1945
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/mrs-oliver-parker
+    ended: 1947 or later
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+        note: "Footnote: Etikett verso auf dem Rahmen: No / 15 Mrs Oliver Parker; vgl. Ausst.-Kat. Gimpel Fils, London 1947, Nr. 15; die Information wird durch einen Eintrag im Kauffmann-Inventar, Journal 4, S. 20, Nr. 1506, 14/6/55, bestätigt, der außerdem auf den Londoner Kunsthändler Eardley Knollys verweist, ohne jedoch die Art seiner Beteiligung zu spezifizieren."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/eardley-knollys
+    role: dealer
+    acquired: 1947
+    ended: 1947
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/arthur-tooth-sons
+    role: dealer
+    ended: 1955 or earlier
+    method: purchase
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+        note: "Footnote: Kauffmann-Inventar, Journal 4, wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/arthur-kauffmann
+    role: dealer
+    ended: 1955-06-27
+    method: purchase
+    direct: true
+    place: london
+    price:
+      amount: 4500
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+        note: "Footnote: Kauffmann-Inventar, Journal 4, wie oben Fussnote 9; AStEGB, Eingangsbuch II, 27. Juni 1955."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-06-27
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 5200
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+        note: "Footnote: Kauffmann-Inventar, Journal 4, wie oben Fussnote 9 mit Datum des Verkaufs."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 101
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 2021
+    direct: true
+    place: zurich
+    label: Gruppe Junge Kunst (Museum)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "105"
+    label: Tuchmann Still Lifes (catalogue raisonné)
+  - number: "443"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

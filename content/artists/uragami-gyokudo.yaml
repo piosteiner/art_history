@@ -5,6 +5,43 @@ death: 1820-10-10
 wikidata_id: Q737819
 metadata:
   sources: [Wikidata Q737819 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q737819
+  - type: born_in
+    to: place/okayama
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q737819
+  - type: died_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q737819
+  - type: worked_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q737819
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a8/A_portrait_of_Urakami_Gyokudo_%E7%90%B4%E5%A3%AB%E7%8E%89%E5%A0%82%E8%82%96%E5%83%8F.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:A_portrait_of_Urakami_Gyokudo_%E7%90%B4%E5%A3%AB%E7%8E%89%E5%A0%82%E8%82%96%E5%83%8F.jpg
+    license: Public domain
+    credit: 浦上春琴
+identifiers:
+  gnd: "119068478"
+  idref: "112672280"
+  lc: n81061771
+  rkd: "286600"
+  ulan: "500121073"
+  viaf: "417149106004268490125"
 sources:
   birth:
     - accessed: 2026-11-01

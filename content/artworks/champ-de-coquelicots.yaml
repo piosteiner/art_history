@@ -1,0 +1,185 @@
+public_id: 112072
+title_lang: en
+title: Champ de coquelicots
+names:
+  - lang: en
+    role: translation
+    text: Mohnblumenfeld
+  - lang: en
+    role: translation
+    text: Poppy Field
+  - lang: en
+    role: original
+    text: Champ de coquelicots près de Vétheuil
+creator: claude-monet
+created: 1880
+kind: oil painting
+medium: Oil on canvas
+dimensions: [73, 60]
+institution: kunsthaus-zurich
+inventory_number: BU 0180
+web_url: https://collection.kunsthaus.ch/de/collection/item/604966/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64174086
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0c/Claude_Monet_-_Champ_de_coquelicots_-_180_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Champ_de_coquelicots_-_180_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: person/alexandre-berthier-prince-de-wagram
+    ended: 1914-04-04
+    place: paris
+    label: 4. Prince de Wagram (*1883, +1918)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+        note: "Footnote: E-Mail-Nachricht von Durand-Ruel & Cie., Paris, an die Stiftung Sammlung E.G. Bührle, Zürich, 09.11.2021."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1914-04-04
+    ended: 1916
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+        note: "Footnote: Stock Paris 10523 (Foto 7851): übertragen von Durand-Ruel, Paris, an Durand-Ruel, New York, im Jahr 1916; Stock New York 3995: übertragen von Durand-Ruel, New York, an Durand-Ruel, Paris, im Jahr 1937; E-Mail-Nachricht, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1916
+    ended: 1937
+    direct: true
+    place: new-york-city
+    label: transfer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1937
+    ended: 1937-07-02
+    direct: true
+    place: paris
+    label: transfer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jacques-dubourg
+    role: dealer
+    acquired: 1937-07-02
+    ended: 1937
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+        note: "Footnote: E-Mail-Nachricht, wie oben Fussnote 3. Die Transaktion zwischen den beiden Händlern in Paris wurde abgewickelt, nachdem das Gemälde in Zürich verkauft worden war."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-aktuaryus
+    role: dealer
+    acquired: 1937
+    ended: 1937-06-24
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+        note: "Footnote: AStEGB, Rechnung der Galerie Akturaryus, Zürich, ausgestellt auf Emil Bührle, 21.06.1937, für «Claude Monet: Champ de coquelicots à Vétheuil, 1880»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1937-06-24
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 31000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+        note: "Footnote: AStEGB, Voucher, unterzeichnet von Tony Aktuaryus, Zürich, 24.06.1937, zur Bestätigung des Erhalts von CHF 35. 000 von der Credit Suisse, Zürich, für den Kauf des Champ de coquelicots von Monet durch Bührle, wie in Rechnung gestellt (wie in Fussnote 8), und für ein Gemälde von Théodore Rousseau, das am gleichen Tag von Aktuaryus für CHF 4.000 erworben wurde."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1967
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+        note: "Footnote: Die Kunstwerke, die 1960 nicht in die Stiftung Sammlung E.G. Bührle gelangten, wurden 1967 unter Emil Bührles Sohn, Dr. Dieter Bührle, und seiner Tochter, Hortense Anda-Bührle, aufgeteilt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/dieter-buhrle
+    acquired: 1967
+    ended: 2012-11-09
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+        note: "Footnote: Sohn von Emil Bührle und 1960, zusammen mit seiner Mutter Charlotte Bührle-Schalk und seiner Schwester Hortense (Anda-)Bührle, einer der drei Gründer der Stiftung Sammlung E.G. Bührle, deren Stiftungsrat er von 1960 bis 2012 angehörte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 2012-11-09
+    method: inheritance
+    direct: true
+    place: zurich
+    label: inv. no. 180
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "180"
+    institution: foundation-e-g-buhrle-collection
+  - number: II.229.593
+    label: Wildenstein Monet (catalogue raisonné)
+  - number: "21"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

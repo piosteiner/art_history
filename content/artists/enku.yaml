@@ -17,6 +17,13 @@ death: 1695-08-24
 wikidata_id: Q2406940
 metadata:
   sources: [Wikidata Q2406940 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q2406940
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Enk%C5%AB.jpg/1280px-Enk%C5%AB.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Enk%C5%AB.jpg

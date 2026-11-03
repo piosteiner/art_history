@@ -1,0 +1,128 @@
+public_id: 112466
+title_lang: en
+title: «Selbstbildnis»
+names:
+  - lang: en
+    role: translation
+    text: "'Self-Portrait'"
+attribution_label: Anonymous (formerly attributed to Rembrandt)
+kind: oil painting
+medium: Oil on canvas
+dimensions: [77, 64]
+institution: kunsthaus-zurich
+inventory_number: BU VO.20
+web_url: https://collection.kunsthaus.ch/de/collection/item/882958/
+on_loan: true
+on_loan_since: 2021
+region: europe
+wikidata_id: Q131586111
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6f/Rembrandt_Harmenszoon_van_Rijn_historical_attribution_-_%C2%ABSelbstbildnis%C2%BB_-_VO.20_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Rembrandt_Harmenszoon_van_Rijn_historical_attribution_-_%C2%ABSelbstbildnis%C2%BB_-_VO.20_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: anonymous
+provenance:
+  - owner: person/sir-francis-cook
+    ended: 1901-02-17
+    label: Richmond and London
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/882958/
+        note: "Footnote: Die berühmte Sammlung alter Meister von Sir Francis Cook wurde von seinem Sohn, Sir Frederick Cook, geerbt, der die Sammlung anscheinend nicht selbst ergänzt hat, Elon Danziger, «The Cook Collection, Its Founder and its Inheritors», in: Burlington Magazine (146) 2004, S. 444-458. Es ist daher anzunehmen, dass das «Rembrandt-Selbstbildnis» bereits Teil der Sammlung von Sir Francis war."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/sir-francis-cook
+    acquired: 1901-02-17
+    ended: 1920-05-21
+    method: inheritance
+    direct: true
+    label: Richmond and London
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/882958/
+        note: "Footnote: Kronig 1914, No. 322."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/herbert-frederick-cook
+    acquired: 1920-05-21
+    ended: 1932 or later
+    direct: true
+    label: Richmond and London
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/882958/
+        note: "Footnote: Cook/Brockwell 1932, No. 322. Das Datum des Verkaufs des Bildes von Herbert Cook, «in den 1930er Jahren», wird von Porkay 1950, S. 61, angegeben."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/nathan-katz
+    role: dealer
+    ended: 1946-12-12
+    place: dieren
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/882958/
+        note: "Footnote: Nathan Katz war zusammen mit seinem Bruder Benjamin Inhaber einer Kunstgalerie in Dieren und durfte aus den Niederlanden emigrieren. Er liess sich im Februar 1942 in Basel, Schweiz, nieder, Tisa Francini u. a. 2001, S. 43. Ein Miteigentum am «Rembrandt-Selbstbildnis» mit der Londoner Agnews Gallery wird von Porkay angedeutet und von Colin Agnew indirekt bestätigt, als er 1946 Oskar Reinhart in Win…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1946-12-12
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/882958/
+        note: "Footnote: Das Gemälde wurde am 16.08.1945 von Nathan Katz persönlich an Emil Bührle übergeben, der dann eine erste Rate bezahlt haben muss. Eine zweite (?) Rate von CHF 210'000 wurde am 12.12.1946 an Nathan Katz gezahlt, als Bührle drei weitere Gemälde von Katz kaufte (AStEGB, Erklärung von Nathan Katz an Emil Bührle, 16.08.1945, in der die Echtheit des Gemäldes bestätigt und garantiert wird, dass sich das …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/882958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. VO20
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/882958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: VO20
+    institution: foundation-e-g-buhrle-collection
+  - number: "143"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/882958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/882958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/882958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/882958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/882958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/882958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/882958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

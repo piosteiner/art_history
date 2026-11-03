@@ -1,0 +1,178 @@
+public_id: 112028
+title_lang: fr
+title: Paysage
+names:
+  - lang: de
+    role: translation
+    text: Landschaft
+  - lang: en
+    role: translation
+    text: Landscape
+creator: paul-cezanne
+created: c. 1879
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [54, 73]
+institution: kunsthaus-zurich
+inventory_number: BU 0012
+web_url: https://collection.kunsthaus.ch/de/collection/item/600967/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223626
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Paul_C%C3%A9zanne_-_Paysage_-_B%C3%BChrle.jpg/1280px-Paul_C%C3%A9zanne_-_Paysage_-_B%C3%BChrle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_Paysage_-_B%C3%BChrle.jpg
+    license: Public domain
+    credit: Paul Cézanne
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+        note: "Footnote: Rewald 1996, No. 412."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/brunner
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    role: dealer
+    ended: 1924 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+        note: "Footnote: Wie oben Fussnote 3; Kat. Galerie Bernheim-Jeune 1924."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    role: dealer
+    ended: 1927 or earlier
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+        note: "Footnote: Laut einer Autobiographie, die Berthold Nothmann 1936 verfasste, wurde das Gemälde von der Luzerner Filiale des Pariser Händlers erworben, mit freundlicher Genehmigung des Leo Back Institute, New York, Berthold Nothmann, Meine Lebenserinnerungen, Wannsee, November 1936, Typoskript, S. 60."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/berthold-nothmann
+    acquired: 1926 or later
+    ended: 1942-01-29
+    method: purchase
+    direct: true
+    place: dusseldorf
+    label: Düsseldorf, Berlin & London
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+        note: "Footnote: Wie oben Fussnote 8; Die Luzerner Filiale von Bernheim Jeune & Cie. bestand von Juli 1926 bis Februar 1927, Staatsarchiv Luzern, A 1044/4718, Eintragung und Löschung von Bernheim Jeune & Cie., succursale de Lucerne, im Handelsregister Luzern, 06.07.1926 bzw. 26.02.1927."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/martha-nothmann
+    acquired: 1942-01-29
+    ended: 1947
+    method: inheritance
+    direct: true
+    label: London und Stamford, NY
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+        note: "Footnote: Witwe des Obengenannten; Archiv Sammlung Oskar Reinhart  «Am Römerholz» Winterthur, Brief von Martha Nothmann, Stamford N.Y., an Oskar Reinhart, Winterthur, 10.08.1947, Martha Nothman glaubt [irrtümlich], dass die Cézanne-Landschaft, die sie und ihr verstorbener Mann zusammen mit anderen Gemälden aus ihrer Sammlung mitnehmen konnten, als sie 1939 Deutschland verlassen mussten, jetzt bei Reinhart i…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    acquired: 1947
+    ended: 1947
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+        note: "Footnote: Archiv Sammlung Oskar Reinhart «Am Römerholz», Winterthur, Brief von Fritz Nathan, Dayton (Ohio) an Oskar Reinhart, Winterthur,  01.06.1947, betreffend die Cézanne-Landschaft, über die er in New York verhandelt und die früher bei Nothmann war; Archiv Paul Cassirer/Walter Feilchenfeldt, Zürich, Brief von Fritz Nathan, New York, an Walter Feilchenfeldt (Sen.), Zürich, 19.06.1947, betreffend der soeb…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    ended: 1947-09-20
+    direct: true
+    place: st-gallen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+        note: "Footnote: AStEGB, Inventarkarte für Cézanne, Paysage."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1947-09-20
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 25000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+        note: 'Footnote: Staatsarchiv Zürich, Z 418.789, Besteuerung 1947 Emil Bührle-Schalk, ("Steuerpflichtige Fahrhabe") Liste der zwischen November 1945 und Januar 1948 erworbenen Bilder: Zahlung von CHF 25.000 an Dr. Nathan, St. Gallen, am 20.09.1947.'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 12
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "12"
+    institution: foundation-e-g-buhrle-collection
+  - number: "412"
+    label: Rewald (catalogue raisonné)
+  - number: "153"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

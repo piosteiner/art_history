@@ -1,0 +1,133 @@
+public_id: 112436
+title_lang: fr
+title: La salita al Calvario
+names:
+  - lang: de
+    role: translation
+    text: Die Kreuztragung
+  - lang: en
+    role: translation
+    text: The Bearing of the Cross
+creator: jacopo-tintoretto
+attribution_label: workshop of Jacopo Tintoretto
+created: 1585/1590
+kind: oil painting
+medium: Oil on canvas
+dimensions: [149, 125]
+institution: kunsthaus-zurich
+inventory_number: BU 0146
+web_url: https://collection.kunsthaus.ch/de/collection/item/806959/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131585328
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e8/Workshop_of_Jacopo%2C_gen._Tintoretto_Robusti_-_La_salita_al_Calvario_-_146_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Workshop_of_Jacopo,_gen._Tintoretto_Robusti_-_La_salita_al_Calvario_-_146_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Workshop of Jacopo Tintoretto
+provenance:
+  - owner: person/bertha-grafin-von-francken-sierstorpff
+    acquired: 1925 or earlier
+    ended: 1949-01-30
+    place: eltville-am-rhein
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806959/
+        note: "Footnote: Kat. Städelsches Kunstinstitut Frankfurt/Main 1925, Nr. 241; AStEGB, Brief von A. & R. Ball, New York, an Emil Bührle, 25.12.1950, mit dem Hinweis, dass das Gemälde erst im Sommer 1950 auf Antrag der früheren Eigentümer von der Liste der für die Ausfuhr aus Deutschland verbotenen Kunstwerke gestrichen worden sei."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/a-r-ball
+    acquired: 1950-12-12 or earlier
+    ended: 10 March 1951 or later
+    place: new-york-city
+    label: Inc. (Kunsthändler/-in)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806959/
+        note: "Footnote: AStEGB, Korrespondenz zwischen A. & R. Ball, Works of Art, New York, und Emil Bührle bzw. Dr. Walter Drack [Kurator der Sammlung Bührle], 12.12.1950-10.03.1951, Angebot von Gemälden, darunter Tintorettos Salita al Calvario. Brief wie oben Fussnote 3, gibt 35.000 USD als Preisvorstellung für den Tintoretto an."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    acquired: 1953
+    ended: 1954-06-25
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806959/
+        note: "Footnote: Vermutlich von A. & R. Ball, Inc. New York erworben. Information von Marlborough International Fine Art an die Stiftung E.G. Bührle Collection, 24.08.2012; AStEGB, Brief von F. K. Lloyd, Marlborough Fine Art Ltd., London, an Emil Bührle, 02.04.1954, mit dem Angebot des Bildes und detaillierten Referenzen; Kat. Marlborough Fine Art Ltd. London 1953, Nr. 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-06-25
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806959/
+        note: "Footnote: AStEGB, Rechnung der Trafo Anstalt für Handel und Finanz, Vaduz [Marlborough Fine Art Ltd, London], ausgestellt auf Emil Bührle, 08.06.1954, für vier Gemälde, darunter Tintoretto, Salita al Calvario, im Gesamtwert von 560'000 CHF; Brief von Dr. O. Maurer [Generalsekretär von Oerlikon Bührle & Co.] an die Trafo Anstalt für Handel und Finanz, Vaduz, 19.06.1954, mit der Bestätigung der Zahlung von 45…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 146
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "146"
+    institution: foundation-e-g-buhrle-collection
+  - number: "449"
+    label: Pallucchini/Rossi (catalogue raisonné)
+  - number: "400"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/806959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

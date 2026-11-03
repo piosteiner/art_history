@@ -1,0 +1,163 @@
+public_id: 112313
+title_lang: fr
+title: Le Couple (La Loge)
+names:
+  - lang: de
+    role: translation
+    text: Das Paar in der Loge
+  - lang: en
+    role: translation
+    text: The Couple
+creator: georges-rouault
+created: 1905
+kind: oil painting
+medium: Gouache on paper, on wood
+dimensions: [96.5, 79.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0091
+web_url: https://collection.kunsthaus.ch/de/collection/item/750971/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131585025
+provenance:
+  - owner: person/marcel-norero
+    acquired: 1927-02-14 or earlier
+    ended: 27 February 1928 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750971/
+        note: "Footnote: Auktion Hôtel Drouot Paris (14.02.1927), No. 85; Auktion Hôtel Drouot Paris (27.02.1928), No. 149."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1927-02-14
+    ended: 1927-02-14
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 85; zurück
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750971/
+        note: "Footnote: Auktion Hôtel Drouot Paris 1927, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1928-02-27
+    ended: 1928-02-27
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 149
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750971/
+        note: "Footnote: Auktion Hôtel Drouot Paris 1928, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/art-moderne
+    ended: 1935-06-20
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750971/
+        note: "Footnote: AStEGB, Brief von Max Kaganovitch, Paris, an Dr. Walter Drack [Kurator der Sammlung Bührle], 07.02.1952; 1935 bot Kaganovitch das Gemälde in Paris zum Verkauf an, mit dem Hinweis auf einen früheren Besitz in Luzern: Auktion Hôtel Drouot, Paris (20.06.1935), [...] provenant de la «Collection de L'Art Moderne», Luzern, No. 64."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1935-06-20
+    ended: 1935-06-20
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 64
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750971/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/max-kaganovitch
+    role: dealer
+    acquired: 1935
+    ended: 1951-08-14
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750971/
+        note: "Footnote: Wie oben Fussnote 4. Von 1941 bis 1945, mit einer kurzen Unterbrechung 1942, und erneut von 1950 bis 1951, befand sich das Gemälde zusammen mit anderen Kunstwerken im Besitz von Max Kaganovitch im Kunstmuseum Bern, Archiv des Kunstmuseums Bern, Inventarbuch Leihgaben (B-001-005)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-08-14
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 120000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750971/
+        note: "Footnote: AStEGB, Eingangsbuch I, 31.07.1951, mit Angabe des Preises; Inventarkarte Rouault, Le Couple, für das Datum des Erwerbs; Inventarbuch wie oben Fussnote 5, zweites Depot 1950-1951, mit Angabe «an Bührle»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750971/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 91
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750971/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "91"
+    institution: foundation-e-g-buhrle-collection
+  - number: "305"
+    label: Dorival (catalogue raisonné)
+  - number: "201"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

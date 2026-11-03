@@ -1,0 +1,117 @@
+public_id: 112075
+title_lang: fr
+title: L’Italienne
+names:
+  - lang: de
+    role: translation
+    text: Die Italienerin
+  - lang: en
+    role: translation
+    text: Italian Woman
+creator: pablo-picasso
+created: 1917
+kind: oil painting
+medium: Oil on canvas
+dimensions: [149, 101.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0078
+web_url: https://collection.kunsthaus.ch/de/collection/item/604969/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q131586070
+provenance:
+  - owner: person/jane-wildenstein
+    role: dealer
+    acquired: 1917
+    ended: 1939 or later
+    method: purchase
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604969/
+        note: "Footnote: AStEGB, Brief von Gustav Kahnweiler, Ffestiniog (Merioneth), an Dr. Walter Drack [Konservator der Sammlung Bührle], 30.11.1954, betreffend Provenienz und Hinweise auf Picasso, L'Italienne: Das Bild wurde 1917/18 von Frau G . Wildenstein erworben. Bei der Ausstellung 1932 im Kunsthaus Zürich wurde die Leihgabe von Herrn Georges Wildenstein verwaltet, wobei das Gemälde als «zu verkaufen» gekennzeich…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/gustav-kahnweiler
+    role: dealer
+    ended: 1954-12-10
+    place: cambridge-england
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604969/
+        note: "Footnote: AStEGB, Korrespondenz zwischen Gustav Kahnweiler, Ffestiniog (Merioneth) und Emil Bührle (oder Dr. Walter Drack), 20.10.-30.11.1954, betreffend die Einfuhr von Picasso, L'Italienne, und einen Termin mit Bührle in Zürich (am 24.10.1954)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-12-10
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 180000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604969/
+        note: "Footnote: AStEGB, Brief von Dr. O. Maurer [Generalsekretär von Oerlikon Bührle & Co.], Zürich, an Hermann Rupf-Wirz, Bern, vom 09.12.1954, mit einem Scheck über CHF 180.000; Brief von Hermann Rupf, Bern, an Oerlikon Bührle & Co, Zürich, vom 10.10.1954, mit der Bestätigung des Empfangs des Schecks über CHF 180.000, zur Bezahlung von G. Kahnweilers Picasso. Eine Rechnung von Heinz Berggruen, Paris, an Emil Bü…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604969/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 78
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604969/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "78"
+    institution: foundation-e-g-buhrle-collection
+  - number: III-18
+    label: Zervos (catalogue raisonné)
+  - number: "420"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

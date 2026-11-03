@@ -1,0 +1,144 @@
+public_id: 112305
+title_lang: fr
+title: Le Calvaire
+names:
+  - lang: en
+    role: translation
+    text: Kalvarienberg
+  - lang: en
+    role: translation
+    text: Calvary
+creator: odilon-redon
+created: c. 1895
+created_span: uncertain
+kind: pastel
+medium: Pastel on paper
+dimensions: [69, 53]
+institution: kunsthaus-zurich
+inventory_number: BU 0084
+web_url: https://collection.kunsthaus.ch/de/collection/item/750968/
+on_loan: true
+on_loan_since: 2021
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586192
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c4/Odilon_Redon_-_Le_Calvaire_-_84_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Odilon_Redon_-_Le_Calvaire_-_84_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Odilon Redon
+provenance:
+  - owner: person/r-wagner
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750968/
+        note: "Footnote: Wildenstein/Lacau St Guily 1992, Bd. I, No. 511."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/andries-bonger
+    acquired: 1903
+    ended: 1936-01-20
+    place: amsterdam
+    label: Amsterdam and Almen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750968/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/francoise-willemina-maria-van-der-borch-van-verwolde
+    acquired: 1936-01-20
+    ended: 1952
+    method: inheritance
+    direct: true
+    place: almen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750968/
+        note: "Footnote: Witwe von Andries Bonger, Archives of American Art, Smithsonian Institution, Washington D.C., Jacques Seligmann & Co. Records, Box 16, Folder 15, Korrespondenz zwischen Germain Seligman, New York, und «Mme André Bonger-Baronne van der Borch van Verwolde, Almen», ab 28.09.1949 im Hinblick auf eine Ausstellung von Werken Redons in der Seligmann Gallery in New York, mit verschiedenen Verweisen auf da…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/germain-seligman
+    role: dealer
+    acquired: 1952
+    ended: 1953
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750968/
+        note: "Footnote: Korrespondenz wie oben Fussnote 6, Brief von «Mme André Bonger-Baronne van der Borch van Verwolde, Almen», an Germain Seligman, New York, 22.01.1952, in dem er dem Verkauf von vier Werken, darunter No. 13, Le Calvaire, für insgesamt 1.950 $ zustimmt; Kat. Jacques Seligmann Galleries, New York 1951, No. 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-09-26
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 6500
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750968/
+        note: "Footnote: AStEGB, Rechnung von Jacques Seligmann & Co, New York, ausgestellt auf Emil Bührle, 15.06.1953, mit Provenienz und Ausstellungsgeschichte; Brief von Germain Seligman, New York, an Emil Bührle, 26.09.1953, mit der Bestätigung des Empfangs der Gesamtsumme von $ 37.500 für fünf von Bührle erworbene Kunstwerke, darunter Redon, Le Calvaire."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 84
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "84"
+    institution: foundation-e-g-buhrle-collection
+  - number: "511"
+    label: Wildenstein (catalogue raisonné)
+  - number: "314"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -25,6 +25,49 @@ death: 1982-09-11
 wikidata_id: Q465342
 metadata:
   sources: [Wikidata Q465342 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/cuba
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q465342
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q465342
+  - type: died_in
+    to: place/boulogne-billancourt
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q465342
+  - type: worked_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q465342
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q465342
+  - type: influenced_by
+    to: artist/henri-matisse
+    sources:
+      - accessed: 2026-11-02
+        property: P737
+        wikidata: Q465342
+  - type: associated_with
+    to: movement/surrealism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q465342
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/f/f0/Wilfredo_Lam.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Wilfredo_Lam.jpg

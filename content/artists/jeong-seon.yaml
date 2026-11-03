@@ -7,6 +7,26 @@ death: 1759
 wikidata_id: Q489785
 metadata:
   sources: [Wikidata Q489785 (retrieved 2026-11-01)]
+relationships:
+  - type: born_in
+    to: place/seoul
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q489785
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Jeong_Seon-Taking_a_reast_after_reading_books-1.jpg/1280px-Jeong_Seon-Taking_a_reast_after_reading_books-1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jeong_Seon-Taking_a_reast_after_reading_books-1.jpg
+    license: Public domain
+    credit: Jeong Seon
+identifiers:
+  bnf: 15039033m
+  gnd: "135687845"
+  idref: "175924287"
+  lc: n78087391
+  nlk: KAC201620676
+  ulan: "500123121"
+  viaf: "96589982"
 sources:
   birth:
     - accessed: 2026-11-01

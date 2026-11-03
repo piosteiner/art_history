@@ -1,0 +1,32 @@
+public_id: 112022
+name: Hagen
+names:
+  - lang: ja
+    role: translation
+    text: ハーゲン
+  - lang: ko
+    role: translation
+    text: 하겐
+  - lang: ru
+    role: translation
+    text: Хаген
+kind: settlement
+parent: nordrhein-westfalen
+country_code: DE
+location: [7.475, 51.35944]
+wikidata_id: Q2871
+metadata:
+  sources: [Wikidata Q2871 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q2871
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q2871
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q2871

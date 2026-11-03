@@ -16,6 +16,37 @@ death: 1943-03-19
 wikidata_id: Q347220
 metadata:
   sources: [Wikidata Q347220 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q347220
+  - type: student_of
+    to: artist/yamamoto-hosui
+    sources:
+      - accessed: 2026-11-02
+        property: P1066
+        wikidata: Q347220
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q347220
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q347220
+  - type: associated_with
+    to: movement/youga
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q347220
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/c/cc/Fujishima_Takeji.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Fujishima_Takeji.jpg

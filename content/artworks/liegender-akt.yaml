@@ -1,0 +1,168 @@
+public_id: 111963
+title_lang: en
+title: Liegender Akt
+names:
+  - lang: en
+    role: translation
+    text: Reclining Nude
+creator: amedeo-modigliani
+created: 1916
+kind: oil painting
+medium: Oil on canvas
+dimensions: [65.5, 87]
+institution: kunsthaus-zurich
+inventory_number: BU 0069
+web_url: https://collection.kunsthaus.ch/de/collection/item/586959/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q20190498
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b7/Amedeo_Modigliani_-_Liegender_Akt_-_69_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Amedeo_Modigliani_-_Liegender_Akt_-_69_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Amedeo Modigliani
+provenance:
+  - owner: person/leopold-zborowski
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+        note: "Footnote: Pfannstiel 1929, S. 33, 1. Eintrag, Ill. 92."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/henri-pierre-roche
+    acquired: 1920-12-11
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+        note: "Footnote: Kat. Galerie Montaigne 1920, S. 8; Informationen, die freundlicherweise von Herrn Alessandro De Stefani, Monza (Italien), am 2. Januar 2012 bereitgestellt wurden."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1929
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+        note: "Footnote: Etikette auf der Werkrückseite [hs]: L'art moderne S.A. / No. 153 / Artiste Modigliani / Titre Nu / Prix francs suisses - / Prix francs francais -; L'Art Monderne S.A. war die Tochterfirma von Bernheime-Jeune, Paris; Pfannstiel, wie oben Fussnote 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jacques-soubies
+    ended: 1940-12-13
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+        note: "Footnote: Auktion Hôtel Drouot (13.12.1940), Lot 63; Archives de Paris, Archives des commissaires-priseurs parisien, Karton D118E3 81 (1940, Louis de Cagny, Etienne Ader)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1940-12-13
+    ended: 1940-12-13
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 63
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+        note: "Footnote: Auktion Hôtel Drouot, wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-renou-colle
+    role: dealer
+    acquired: 1940-12-13
+    ended: 1951-11-14
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 34000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+        note: "Footnote: Archives de Paris, wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    acquired: 1951-11-14
+    ended: 1951-11-15
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+        note: "Footnote: Auskunft von Herrn Walter Feilchenfeldt, Zürich, Sohn von Dr. Walter Feilchenfeldt, an die Stiftung Sammlung E.G. Bührle, Zürich, 18.06.2019; AStEGB, Rechnung von Dr. Walter Feilchenfeldt, Zürich, ausgestellt auf Emil Bührle, 14.11.1951, mit Hinweisen auf die Provenienz."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-11-15
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 50000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+        note: "Footnote: AStEGB, Brief von Emil Bührle an Dr. Walter Feilchenfeldt, Zürich, 15.11.1951, Bestätigung der Zahlung von CHF 50.000."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 69
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "69"
+    institution: foundation-e-g-buhrle-collection
+  - number: "213"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

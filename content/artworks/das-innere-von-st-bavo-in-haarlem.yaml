@@ -1,0 +1,127 @@
+public_id: 112325
+title_lang: de
+title: Das Innere von St. Bavo in Haarlem
+names:
+  - lang: en
+    role: translation
+    text: Interior of St. Bavo in Haarlem
+creator: pieter-jansz-saenredam
+created: 1636
+kind: oil painting
+medium: Oil on panel
+dimensions: [43, 37]
+institution: kunsthaus-zurich
+inventory_number: BU 0164
+web_url: https://collection.kunsthaus.ch/de/collection/item/750973/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q109934206
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/90/Pieter_Jansz_Saenredam_-_Das_Innere_von_St._Bavo_in_Haarlem_-_164_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pieter_Jansz_Saenredam_-_Das_Innere_von_St._Bavo_in_Haarlem_-_164_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Pieter Jansz. Saenredam
+provenance:
+  - owner: person/d-katz
+    role: dealer
+    acquired: 1934
+    ended: 1934
+    place: dieren
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750973/
+        note: "Footnote: Schwartz/Bok 1989, No. 46."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/joan-hendrik-smidt-van-gelder
+    acquired: 1937 or earlier
+    ended: 1953 or later
+    place: arnhem
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750973/
+        note: "Footnote: Kat. Museum Boymans Rotterdam 1937/38, No. 7; Kat. Gemeentemuseum Arnhem 1953, No. 58, kommentierte Kopie des Katalogs im Rijksbureau voor Kunsthistorische Documentatie (RKD), Den Haag, mit Notizen von Ary Bob de Vries, damals (1953) Direktor des Mauritshuis, Den Haag, mit der Angabe «dr. Smidt van Gelder, Arnheim» als den Namen hinter dem im Katalog angegebenen «particulier bezit» (eine Kopie des…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: dealer
+    ended: 1955-08-31
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750973/
+        note: "Footnote: AStEGB, Eingangsbuch II, Eintrag 28.08.1955."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-08-31
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 150000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750973/
+        note: "Footnote: AStEGB, Brief der Industrie- und Handelsbank, Zürich, an Emil Bührle, 31.08.1955, mit der Bestätigung der Zahlung dieses Betrages an Dr. Fritz Nathan für «P. Saenredam ex Sammlung Dr. Schmidt-van Geldern»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750973/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 164
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750973/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "164"
+    institution: foundation-e-g-buhrle-collection
+  - number: "46"
+    label: Schwartz/Bok (catalogue raisonné)
+  - number: "482"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750973/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

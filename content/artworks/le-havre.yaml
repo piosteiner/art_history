@@ -1,0 +1,149 @@
+public_id: 112256
+title_lang: fr
+title: Le Havre
+creator: albert-marquet
+created: 1906
+kind: oil painting
+medium: Oil on canvas
+dimensions: [65, 81]
+institution: kunsthaus-zurich
+inventory_number: BU 0171
+web_url: https://collection.kunsthaus.ch/de/collection/item/707969/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223643
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5a/Albert_Marquet_-_Le_Havre_-_171_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_Marquet_-_Le_Havre_-_171_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Albert Marquet
+provenance:
+  - owner: institution/galerie-eugene-druet
+    role: dealer
+    ended: 1910 or earlier
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707969/
+        note: "Footnote: AStEGB, Brief von Wilhelm Wartmann, Direktor des Kunsthauses, Zürich, an Emil Bührle, 01.07.1948, zitiert einen Brief von Claude Vallotton, Lausanne, an das Kunsthaus bezüglich der Provenienz des Gemäldes, wonach das Gemälde von Claudes Vater Paul Vallotton um 1908/10 entweder von der Galerie Bernheim-Jeune oder von der Galerie Druet gekauft wurde."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    role: dealer
+    ended: 1910 or earlier
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707969/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-vallotton
+    role: dealer
+    acquired: 1910 or earlier
+    method: purchase
+    direct: true
+    place: lausanne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707969/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-paul-vallotton
+    role: dealer
+    acquired: 1923 or later
+    ended: 1944-11-23
+    method: purchase
+    direct: true
+    place: lausanne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707969/
+        note: "Footnote: Protokoll der Sammlungskommission, 10.11.1944, S. 2, B.3, Archiv ZKG/KHZ, 10.30.10.42: Das Angebot der Galerie Paul Vallotton, Lausanne, an die Zürcher Kunstgesellschaft, das Gemälde zum Preis von CHF 5'500 zu erwerben, wurde zur Sitzung des Sammlungsausschusses vom 10.11.1944 diskutiert. Auf den Vorschlag von Emil Bührle, das Gemälde für den Fall zu erwerben, dass die Kommission dies nicht wünsch…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1944-11-23
+    method: purchase
+    direct: true
+    place: zurich
+    label: "dates as given in the source: 23.11.1944 – 28.0.1956"
+    price:
+      amount: 5500
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707969/
+        note: "Footnote: AStEGB, Brief von Maxime Vallotton, Lausanne, an Emil Bührle, 23.11.1944, mit der Bestätigung des Empfangs des obengenannten Betrages zum Ausgleich der am 14.11.1944 ausgestellten Rechnung [heute verloren]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707969/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    ended: 1965
+    method: gift
+    direct: true
+    place: zurich
+    label: on the list of objects to be sold (paintings, no. 5); inv. no. 14
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707969/
+        note: "Footnote: Geschenk von den Erben Emil Bührles an die Stiftung Sammlung E.G. Bührle, um zu Gunsten der Stiftung verkauft zu werden. AStEGB, Statuten der Stiftung Sammlung E.G. Bührle, Zürich, 24.02.1960, Liste der zu verkaufenden Objekte, Gemälde, Nr. 14."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1965
+    direct: true
+    place: zurich
+    label: transfer; inv. no. 171
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707969/
+        note: "Footnote: Stiftung Sammlung E.G. Bührle, Jahresbericht 1965, S. 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "171"
+    institution: foundation-e-g-buhrle-collection
+  - number: "120"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,51 @@
+public_id: 112283
+name: Joachim Patinir
+given_name: Joachim
+family_name: Patinir
+birth: 1480
+death: 1524-10-05
+wikidata_id: Q442491
+metadata:
+  sources: [Wikidata Q442491 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/southern-netherlands
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q442491
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q442491
+  - type: worked_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q442491
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ea/Joachim_Patinir_by_Aegidius_Sadeler_II.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joachim_Patinir_by_Aegidius_Sadeler_II.jpg
+    license: Public domain
+    credit: Attributed to Aegidius Sadeler / After Albrecht Dürer
+identifiers:
+  bnf: 14965791s
+  gnd: "118591975"
+  idref: "027384306"
+  kulturnav: 31ba8902-893d-480f-9e9d-896afd278445
+  lc: n81068576
+  rkd: "62060"
+  ulan: "500019854"
+  viaf: "74123527"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q442491
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q442491

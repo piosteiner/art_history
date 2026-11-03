@@ -7,6 +7,40 @@ death: 1993-10-28
 wikidata_id: Q677280
 metadata:
   sources: [Wikidata Q677280 (retrieved 2026-11-02)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q677280
+  - type: born_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q677280
+  - type: worked_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q677280
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1c/Portrait_emile_chambon.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_emile_chambon.jpg
+    license: CC BY 3.0
+    credit: (Copyright) Patrik Wüthrich
+identifiers:
+  bnf: "148811697"
+  gnd: "126195137"
+  hls: "031012"
+  idref: "152938508"
+  lc: no2011092153
+  rkd: "16300"
+  sikart: "4000414"
+  ulan: "500018231"
+  viaf: "35441074"
 sources:
   birth:
     - accessed: 2026-11-02

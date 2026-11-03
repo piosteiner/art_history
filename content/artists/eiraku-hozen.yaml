@@ -19,6 +19,19 @@ death: 1854-11-08
 wikidata_id: Q11550137
 metadata:
   sources: [Wikidata Q11550137 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q11550137
+  - type: worked_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q11550137
 identifiers:
   gnd: "1062590805"
   lc: n78012362

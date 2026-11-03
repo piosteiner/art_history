@@ -1,0 +1,231 @@
+public_id: 111952
+title_lang: en
+title: Danseuses au foyer
+names:
+  - lang: de
+    role: translation
+    text: Tänzerinnen im Foyer
+  - lang: en
+    role: translation
+    text: Dancers in the Foyer
+  - lang: en
+    role: translation
+    text: Dancers in the Lobby
+creator: edgar-degas
+created: c. 1889
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [41.5, 92]
+institution: kunsthaus-zurich
+inventory_number: BU 0035
+web_url: https://collection.kunsthaus.ch/de/collection/item/585969/
+on_loan: true
+on_loan_since: 2021
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q64223637
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fa/Edgar_Degas_-_Danseuses_au_foyer_-_35_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Edgar_Degas_-_Danseuses_au_foyer_-_35_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Edgar Degas
+provenance:
+  - owner: artist/edgar-degas
+    role: estate
+    acquired: 1917-09-27
+    ended: 1918-12-13 or earlier
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+        note: "Footnote: Auktion Galerie Georges Petit, Paris (11.–13.12.1918), No. 11 (Abb.)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1918-12-11
+    ended: 1918-12-13
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 11
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1918-12-13
+    method: purchase
+    direct: true
+    place: new-york-city
+    price:
+      amount: 11200
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+        note: "Footnote: Annotierte Kopie des oben genannten Auktionskatalogs im Musée d'Orsay (Dokumentation), Paris; nach dem Kauf inventarisiert als No. 11398; Kat. Grand Palais, Paris/National Gallery of Canada/The Metropolitan Museum of Art 1988, No. 361."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/durand-ruel
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+        note: "Footnote: Lemoisne 1946, No. 996."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alphonse-kann
+    ended: 1941-07-12
+    place: saint-germain-en-laye
+    label: St-Germain-en-Laye and London
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    acquired: 1941-07-12
+    method: confiscation
+    direct: true
+    place: paris
+    label: ERR No. Ka 15
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+        note: "Footnote: Beschlagnahmt und an Hermann Göring übergeben; Yeide 2009, No. D27."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hermann-goring
+    direct: true
+    label: taken over from the ERR
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: dealer
+    acquired: 1941-10-22
+    ended: 1942-02-03
+    method: exchange
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+        note: "Footnote: Yeide wie oben Fussnote 9; An die Galerie Fischer im Tausch gegen Kunstwerke; Francini/Heuss/Kreis 2001, S. 106 (No. 267), 286 (No. *1)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1942-02-03
+    ended: 1948-07-05
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 65000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+        note: "Footnote: AStEGB, Brief von Emil Bührle an seinen Anwalt Dr. Walther Huber, Zürich, 22.08.1947. Die Summe entspricht dem Betrag, den Bührle später in seinem Prozess gegen Fischer einforderte, und während Fischer eine Rückerstattungspflicht grundsätzlich ablehnte, wurde die Summe als solche nie in Frage gestellt. Diese Summe definierte daher die Beträge, die Fischer an Bührle zurückzahlen musste, nachdem das…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alphonse-kann
+    acquired: 1948-07-05
+    ended: 1948-09-24
+    method: restitution
+    direct: true
+    place: london
+    label: London and Paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+        note: "Footnote: AStEGB, Schweizerisches Bundesgericht, Kammer zur Beurteilung von Raubgutklagen/Chambre des actions en revendication de biens spoliés, Lausanne, Gesuch um Rückgabe von Kunstwerken von Alphonse Kann, London, gegen Emil Bührle, Zürich, Urteil vom 05.07.1948 (Typoskript), wonach Bührle die Rückgabe von drei Kunstwerken an Kann akzeptiert, darunter Degas, Danseuses au foyer."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alphonse-kann
+    role: estate
+    acquired: 1948-09-24
+    ended: 1951-02-03
+    method: inheritance
+    direct: true
+    place: london
+    label: London, Paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+        note: "Footnote: AStEGB, zwei Unterlagen mit handschriftlichen Notizen von Bührle, betreffend zweier Besuche von Maître J. Metthey, Paris, im Auftrag der Erben von Alphonse Kann, bei der Werkzeugmaschinenfabrik Oerlikon Bührle & Co. vom 25.01.1951 und 15.02.1951."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-02-03
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+        note: "Footnote: Erworben durch Maître J. Metthey, Paris, zusammen mit zwei Gemälden von Degas für insgesamt £ 24.000. Auf dem ersten Eintrag vermerkt Bührle, dass die Preisvorstellung der Kann-Erben ca. £ 30.000 für die drei Werke Degas, Madame Camus, Degas, Danseuses und das Pastell von Manet beträgt (Sammlung Emil Bührle, Inv. 32, 35, 65). Ein handschriftlicher Vermerk von Bührle, der dem zweiten Eintrag beigef…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 35
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "35"
+    institution: foundation-e-g-buhrle-collection
+  - number: "996"
+    label: Lemoisne (catalogue raisonné)
+  - number: "186"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

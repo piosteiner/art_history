@@ -1,0 +1,205 @@
+public_id: 112276
+title_lang: de
+title: Die Backgammon-Spieler
+names:
+  - lang: en
+    role: translation
+    text: The Backgammon Players
+creator: jacob-ochtervelt
+created: 1667/1669
+kind: oil painting
+medium: Oil on panel
+dimensions: [59, 46.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0155
+web_url: https://collection.kunsthaus.ch/de/collection/item/750958/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q23893213
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/07/Jacob_Ochtervelt_-_Die_Backgammon-Spieler_-_155_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jacob_Ochtervelt_-_Die_Backgammon-Spieler_-_155_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Jacob Ochtervelt
+provenance:
+  - owner: person/jan-gildemeester-jansz
+    acquired: 1794 or earlier
+    ended: 1799
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+        note: "Footnote: Kops 1965, S. 82, Abb. 8: Das Werk ist auf einem Gemälde von Adriaan de Lelie aus den Jahren 1794/95 abgebildet, das die Gemäldegalerie im Haus von Jan Gildemeester Jansz in der Herengracht 475 in Amsterdam zeigt (Rijksmuseum, Amsterdam)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jurrians
+    ended: 1817-08-28 or earlier
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+        note: "Footnote: Donahue 1979, Nr. 42."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1817-08-28
+    ended: 1817-08-28
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Lot 64
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+        note: "Footnote: Donahue 1979, Nr. 42: Sale Jurrians, v.d. Schley, Roos, De Vries, Amsterdam (28.08.1817)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/de-vries
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/j-ancher
+    ended: 1847-04-06 or earlier
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1847-04-06
+    ended: 1847-04-06
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Lot 83
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+        note: "Footnote: Donahue 1979, Nr. 42: Verkauf J. Ancher, De Vries, Roos, Amsterdam (06.04.1847)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/schuller
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/van-doelen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hendrikus-egbertus-ten-cate
+    place: almelo
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/d-katz
+    role: dealer
+    acquired: 1935-07-09 or earlier
+    ended: 1937 or later
+    place: dieren
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+        note: "Footnote: Kat. Museum Boymans 1935, Nr. 73; Plietzsch 1937, S. 370."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    role: dealer
+    ended: 1955 or earlier
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+        note: "Footnote: Gemäss Information von Marlborough International Fine Art an die Stiftung E.G. Bührle Collection, 24.08.2012, wurde das Gemälde vor dem Verkauf an Emil Bührle von einem Londoner Altmeisterhändler erworben."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    acquired: 1955
+    ended: 1955-06-27
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+        note: "Footnote: AStEGB, Eingangsbuch II, 27.06.1955."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-06-27
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 6200
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+        note: "Footnote: AStEGB, Preisliste, handgeschrieben von Emil Bührle und mit den Namen von fünf Künstlern, darunter Ochtervelt. Die Preisliste wurde für eine Gruppe von Gemälden Alter Meister erstellt, deren Kauf Bührle mit Frank Lloyd von Marlborough Fine Art Ltd. London, verhandelte. Dieser Teil des Ankaufs belief sich auf £ 66.000 (= CHF 792.000) und umfasste Bouchers Deux paysannes, Courbets Porträt eines Mann…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 155
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "155"
+    institution: foundation-e-g-buhrle-collection
+  - number: "42"
+    label: Donahue (catalogue raisonné)
+  - number: "448"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,82 @@
+public_id: 112177
+title_lang: de
+title: Emil Bührle
+creator: otto-banninger
+created: 1957
+kind: sculpture
+medium: Bronze
+dimensions: [25, 24, 19]
+institution: kunsthaus-zurich
+inventory_number: BU 0185
+web_url: https://collection.kunsthaus.ch/de/collection/item/699960/
+on_loan: true
+on_loan_since: 2021
+provenance_status: a_clear
+provenance_status_note: The work was created after 1945. This is not a case of cultural property confiscated as a result of Nazi persecution.
+provenance:
+  - owner: person/stadt-zurich
+    acquired: 1957
+    ended: 1957
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1957
+    ended: 2015
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 2015
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. P31
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: P31
+    institution: foundation-e-g-buhrle-collection
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

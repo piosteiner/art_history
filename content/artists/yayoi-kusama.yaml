@@ -8,6 +8,50 @@ biography_md: Yayoi Kusama stand wegen Rassismus in der Kritik.[[source/artrevie
 wikidata_id: Q231121
 metadata:
   sources: [Wikidata Q231121 (retrieved 2026-10-05)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q231121
+  - type: died_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q231121
+  - type: worked_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q231121
+  - type: worked_in
+    to: place/netherlands
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q231121
+  - type: worked_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q231121
+  - type: worked_in
+    to: place/tokyo
+    period: 2000/2015
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q231121
+  - type: studied_at
+    to: institution/kyoto-city-university-of-arts
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q231121
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/12/Yayoi_Kusama_in_2005.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Yayoi_Kusama_in_2005.jpg
@@ -21,6 +65,15 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:20130918Yayoi_Kusama1_(cropped).jpg
     license: CC BY 4.0
     credit: 内閣官房内閣広報室
+identifiers:
+  bnf: 12046820j
+  gnd: "119299755"
+  idref: "059433736"
+  lc: nr91003643
+  nlk: KAC201116576
+  rkd: "122345"
+  ulan: "500122518"
+  viaf: "22415110"
 sources:
   birth:
     - accessed: 2026-10-05

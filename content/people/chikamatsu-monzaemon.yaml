@@ -1,0 +1,47 @@
+public_id: 109315
+name: Chikamatsu Monzaemon
+names:
+  - lang: ja
+    role: original
+    text: 近松門左衛門
+  - lang: ko
+    role: translation
+    text: 지카마쓰 몬자에몬
+  - lang: ru
+    role: translation
+    text: Тикамацу Мондзаэмон
+kind: person
+occupations: [writer, puppet playwright, actor, playwright]
+birth: 1653
+death: 1725-01-06
+wikidata_id: Q324986
+metadata:
+  sources: [Wikidata Q324986 (retrieved 2026-11-02)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6f/Chikamatsu2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Chikamatsu2.jpg
+    license: CC BY-SA 3.0
+identifiers:
+  bnf: "122166096"
+  gnd: "118914707"
+  idref: 03082866X
+  lc: n79107675
+  nlk: KAC199631217
+  viaf: "61595937"
+sources:
+  kind:
+    - accessed: 2026-11-02
+      property: P31
+      wikidata: Q324986
+  birth:
+    - accessed: 2026-11-02
+      property: P569
+      wikidata: Q324986
+  death:
+    - accessed: 2026-11-02
+      property: P570
+      wikidata: Q324986
+  occupations:
+    - accessed: 2026-11-02
+      property: P106
+      wikidata: Q324986

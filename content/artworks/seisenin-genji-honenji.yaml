@@ -15,6 +15,18 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 312–313, fig. 363
+  - type: illustrates
+    to: literature/genji-hatsune
+    label: New Year at Lady Murasaki’s spring palace
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 312–313, fig. 363
+  - type: illustrates
+    to: literature/genji-momiji-no-ga
+    label: the dance of Genji and Tō no Chūjō
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 312–313, fig. 363
 sources:
   kind:
     - source: history-of-japanese-art

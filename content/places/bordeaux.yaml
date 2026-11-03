@@ -1,0 +1,41 @@
+public_id: 111859
+name: Bordeaux
+names:
+  - lang: ja
+    role: translation
+    text: ボルドー
+  - lang: zh
+    role: translation
+    text: 波尔多
+  - lang: ko
+    role: translation
+    text: 보르도
+  - lang: es
+    role: translation
+    text: Burdeos
+  - lang: ru
+    role: translation
+    text: Бордо
+  - lang: pt
+    role: translation
+    text: Bordéus
+kind: settlement
+parent: france
+country_code: FR
+location: [-0.57944, 44.83778]
+wikidata_id: Q1479
+metadata:
+  sources: [Wikidata Q1479 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q1479
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q1479
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q1479

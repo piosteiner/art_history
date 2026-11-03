@@ -14,6 +14,13 @@ birth: 1935-02-19
 wikidata_id: Q6409619
 metadata:
   sources: [Wikidata Q6409619 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/south-korea
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q6409619
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Kim_Yikyung_profile.jpg/1280px-Kim_Yikyung_profile.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Kim_Yikyung_profile.jpg

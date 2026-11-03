@@ -21,6 +21,25 @@ death: 1615-03-01
 wikidata_id: Q3191951
 metadata:
   sources: [Wikidata Q3191951 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q3191951
+  - type: worked_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-02
+        property: P937
+        wikidata: Q3191951
+  - type: studied_at
+    to: institution/tofuku-ji
+    sources:
+      - accessed: 2026-11-02
+        property: P69
+        wikidata: Q3191951
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/8/82/Daruma_by_Yusho.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Daruma_by_Yusho.jpg

@@ -1,0 +1,111 @@
+public_id: 112136
+title_lang: en
+title: Oranges
+names:
+  - lang: en
+    role: translation
+    text: Orangen
+creator: maurice-de-vlaminck
+created: 1907/1908
+kind: oil painting
+medium: Oil on canvas
+dimensions: [44.5, 54]
+institution: kunsthaus-zurich
+inventory_number: BU 0111
+web_url: https://collection.kunsthaus.ch/de/collection/item/604996/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q124294678
+provenance:
+  - owner: person/alfred-abraham-schwabacher
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604996/
+        note: "Footnote: AStEGB, Inventarkarte Vlaminck, Nature morte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandlung-fritz-und-peter-nathan
+    role: dealer
+    acquired: 1954-05-08 or earlier
+    ended: 1954-07-13
+    place: new-york-city
+    label: New York and Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604996/
+        note: "Footnote: AStEGB, Eingangsbuch II, 8. Mai 1954, der Dr. Peter Nathan als Einlieferer ausweist."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-07-13
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 8000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604996/
+        note: 'Footnote: AStEGB, Zahlungsauftrag von Emil Bührle an die Industrie- und Handelsbank, Zürich, vom 9. Juli 1954 über die Summe von $ 40.000 zur Überweisung an Dr. Fritz Nathan, Zürich. Diesem Zahlungsauftrag beigefügt ist eine handschriftliche Notiz von Emil Bührle, datiert vom 9. Juli 1954, in der drei Gemälde mit ihren jeweiligen Preisen aufgeführt sind: "Renoir, Blumen, 24 / Pissarro, Strickerin, 13 / Vlam…'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604996/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 111
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604996/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "111"
+    institution: foundation-e-g-buhrle-collection
+  - number: "404"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604996/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604996/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604996/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604996/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604996/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604996/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604996/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604996/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

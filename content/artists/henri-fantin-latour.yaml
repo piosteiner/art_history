@@ -1,0 +1,103 @@
+public_id: 111908
+name: Henri Fantin-Latour
+given_name: Henri
+family_name: Fantin-Latour
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Ignace-Henri-Jean-Théodore Fantin-Latour
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q310715
+birth: 1836-01-25
+death: 1904-08-25
+wikidata_id: Q310715
+metadata:
+  sources: [Wikidata Q310715 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q310715
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q310715
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q310715
+  - type: influenced_by
+    to: artist/paolo-veronese
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q310715
+  - type: influenced_by
+    to: artist/rembrandt
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q310715
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q310715
+  - type: studied_at
+    to: institution/ecole-nationale-superieure-des-arts-decoratifs
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q310715
+  - type: associated_with
+    to: movement/french-realism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q310715
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q310715
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q310715
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Bemberg_Fondation_Toulouse_-_Self-portrait_paintings_by_Henri_Fantin-Latour.jpg/1280px-Bemberg_Fondation_Toulouse_-_Self-portrait_paintings_by_Henri_Fantin-Latour.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bemberg_Fondation_Toulouse_-_Self-portrait_paintings_by_Henri_Fantin-Latour.jpg
+    license: Public domain
+    credit: Didier Descouens
+identifiers:
+  bnf: "120041778"
+  dome: "2569"
+  gnd: "118683055"
+  idref: "067058531"
+  kulturnav: e5d93f7c-6547-448d-875d-0e86a3cad380
+  lc: n82025255
+  rkd: "27304"
+  ulan: "500025754"
+  viaf: "61556110"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q310715
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q310715

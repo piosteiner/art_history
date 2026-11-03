@@ -1,0 +1,65 @@
+public_id: 111983
+name: Bernardo Strozzi
+given_name: Bernardo
+family_name: Strozzi
+birth: 1581
+death: 1644-08-02
+wikidata_id: Q437724
+metadata:
+  sources: [Wikidata Q437724 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-genoa
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q437724
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q437724
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q437724
+  - type: worked_in
+    to: place/genoa
+    period: 1595/1630
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q437724
+  - type: worked_in
+    to: place/venice
+    period: 1630/1644
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q437724
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Bernardo_Strozzi_by_Guido_Galletti%2C_1939%2C_marble_-_Accademia_Ligustica_di_Belle_Arti_-_DSC02372.JPG/1280px-Bernardo_Strozzi_by_Guido_Galletti%2C_1939%2C_marble_-_Accademia_Ligustica_di_Belle_Arti_-_DSC02372.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Bernardo_Strozzi_by_Guido_Galletti,_1939,_marble_-_Accademia_Ligustica_di_Belle_Arti_-_DSC02372.JPG
+    license: CC0
+    credit: Daderot
+identifiers:
+  bnf: "149600386"
+  gnd: "119332531"
+  idref: "035211997"
+  kulturnav: 53c28304-de0f-48c6-8b93-68e44531fa18
+  lc: n82050793
+  rkd: "75824"
+  ulan: "500115732"
+  viaf: "7657224"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q437724
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q437724

@@ -1,0 +1,122 @@
+public_id: 112312
+title_lang: en
+title: Dahlias
+names:
+  - lang: en
+    role: translation
+    text: Dahlien
+creator: pierre-auguste-renoir
+created: 1885/1890
+kind: oil painting
+medium: Oil on canvas
+dimensions: [65, 64]
+institution: kunsthaus-zurich
+inventory_number: BU 0088
+web_url: https://collection.kunsthaus.ch/de/collection/item/750970/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223618
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ad/Pierre-Auguste_Renoir_-_Dahlias_-_88_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_Dahlias_-_88_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+provenance:
+  - owner: person/berthold-nothmann
+    acquired: 1932 or earlier
+    ended: 27 March 1940 or later
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750970/
+        note: |-
+          Footnote: Leo Baeck Institute New York, Center for Jewish History, Nothmann Family Collection,
+          Berthold Nothmann, Andenken an Düsseldorf 1925–1939, Abb. 35, Ausstellungsansicht, Kunstverein für die Rheinlande und Westfalen, 1932,
+          https://digipres.cjh.org/delivery/DeliveryManagerServlet?dps_pid=IE6664981 (10.06.2024);
+          Zitat aus dem Brief von Walter Feilchenfeldt an Margarete Ring, 27.03.1940, 
+          E-Mail-Korresp…
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandlung-fritz-und-peter-nathan
+    role: dealer
+    ended: 1954-07-13
+    place: zurich
+    label: Zürich and New York
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750970/
+        note: "Footnote: AStEGB, Eingangsbuch II, 20. Mai 1954, der Dr. Peter Nathan (New York) als Einlieferer ausweist."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-07-13
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 24000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750970/
+        note: "Footnote: Erworben von Dr. Fritz Nathan, Vater von Dr. Peter Nathan, für $ 24.000, AStEGB, Zahlungsauftrag von Emil Bührle an die Industrie- und Handelsbank, Zürich, vom 9. Juli 1954 über den Betrag von $ 40.000 zur Überweisung an Dr. Fritz Nathan, Zürich. Diesem Zahlungsauftrag beigefügt ist eine handschriftliche Notiz von Emil Bührle, datiert auf den 9. Juli 1954, in der drei Gemälde mit ihren jeweiligen …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750970/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 88
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750970/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "88"
+    institution: foundation-e-g-buhrle-collection
+  - number: "1659"
+    label: Dauberville (catalogue raisonné)
+  - number: "403"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/750970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

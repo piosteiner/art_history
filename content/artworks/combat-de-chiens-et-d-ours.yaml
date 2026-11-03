@@ -1,0 +1,119 @@
+public_id: 112232
+title_lang: en
+title: Combat de chiens et d'ours
+names:
+  - lang: de
+    role: translation
+    text: Kampf von Hunden und Bären
+  - lang: en
+    role: translation
+    text: Dogs Fighting Bears
+creator: theodore-gericault
+created: 1812/1816
+kind: oil painting
+medium: Oil on canvas
+dimensions: [28, 37]
+institution: kunsthaus-zurich
+inventory_number: BU 0133
+web_url: https://collection.kunsthaus.ch/de/collection/item/707959/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223655
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/25/G%C3%A9ricault_-_Combat_de_chiens_et_d%27ours%2C_1812-1816%2C_BU_0133.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:G%C3%A9ricault_-_Combat_de_chiens_et_d%27ours,_1812-1816,_BU_0133.jpg
+    license: Public domain
+    credit: Théodore Géricault
+provenance:
+  - owner: person/maurice-gobin
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707959/
+        note: "Footnote: AStEGB, Brief von Max Kaganovitch, Paris, an Walter Drack [Konservator der Sammlung Bührle], 16.10.1953."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/max-kaganovitch
+    role: dealer
+    ended: 1953-08-15
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707959/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-08-15
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 3200000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707959/
+        note: 'Footnote: AStEGB, Notizen zu einem Besuch von Max Kaganovitch in Oerlikon, 25. September 1953, mit handschriftlichem Vermerk "Géricault / FF 3.200.000 /- 900.000 payé à Paris / 2.300.000 / 900. 000 à payer par le clearing" und Rechnung (“Facture conditionnelle") der Galerie Max Kaganovitch, Paris, ausgestellt auf das Kunsthaus Zürich, 21.07.1953 für das Gemälde mit einem Preis von FRF 900.000; Inventarkarte…'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 133
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "133"
+    institution: foundation-e-g-buhrle-collection
+  - number: "769"
+    label: Bazin (catalogue raisonné)
+  - number: "300"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

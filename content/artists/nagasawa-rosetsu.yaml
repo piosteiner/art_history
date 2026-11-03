@@ -22,6 +22,31 @@ death: 1799-07-10
 wikidata_id: Q1632536
 metadata:
   sources: [Wikidata Q1632536 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q1632536
+  - type: influenced_by
+    to: artist/maruyama-okyo
+    sources:
+      - accessed: 2026-11-02
+        property: P737
+        wikidata: Q1632536
+  - type: student_of
+    to: artist/maruyama-okyo
+    sources:
+      - accessed: 2026-11-02
+        property: P802
+        wikidata: Q405444
+  - type: associated_with
+    to: movement/maruyama-school
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q1632536
 identifiers:
   gnd: 13409719X
   idref: "229532934"

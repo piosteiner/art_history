@@ -21,6 +21,35 @@ death: 1958-03-01
 wikidata_id: Q368254
 metadata:
   sources: [Wikidata Q368254 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/italy
+    period: 1946-06-18
+    period_label: from 18 June 1946
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q368254
+  - type: nationality
+    to: polity/konigreich-italien
+    period: 1946-06-18
+    period_label: until 18 June 1946
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q368254
+  - type: born_in
+    to: place/turin
+    sources:
+      - accessed: 2026-11-02
+        property: P19
+        wikidata: Q368254
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q368254
 identifiers:
   bnf: 12287205d
   dome: "15"

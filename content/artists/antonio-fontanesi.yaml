@@ -19,6 +19,21 @@ death: 1882-04-17
 wikidata_id: Q1081011
 metadata:
   sources: [Wikidata Q1081011 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/konigreich-italien
+    period: 1861-03-17
+    period_label: from 17 March 1861
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q1081011
+  - type: died_in
+    to: place/turin
+    sources:
+      - accessed: 2026-11-02
+        property: P20
+        wikidata: Q1081011
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/8/8a/Antonio_fontanesi%2C_primi_del_%27900.JPG
     source_url: https://commons.wikimedia.org/wiki/File:Antonio_fontanesi,_primi_del_%27900.JPG

@@ -1,0 +1,164 @@
+public_id: 111831
+title_lang: it
+title: Il gentiluomo con cagnolino
+names:
+  - lang: de
+    role: translation
+    text: Bildnis eines Herrn mit Hund
+  - lang: fr
+    role: translation
+    text: Portrait of a Gentleman with a Dog
+  - lang: fr
+    role: former
+    text: Portrait du Comte de Castiglione
+creator: callisto-piazza
+attribution_label: attributed to Callisto Piazza; formerly attributed to Titian and Giovanni Battista Moroni
+created: c. 1540
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [112, 95]
+institution: kunsthaus-zurich
+inventory_number: 1956/0038
+web_url: https://collection.kunsthaus.ch/de/collection/item/3228/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585459
+provenance:
+  - owner: person/philippe-ii-duke-of-orleans
+    ended: 1723
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3228/
+        note: "Footnote: Auktion Christie, Manson & Woods 1939, S. 8, Lot 26: «TITIAN* PORTRAIT OF A YOUNG BEARDED MAN. Nearly three-quarter facing the spectator, in dark coat lined with fur and white collar at the neck, holding his hat and a book; a dog by his side. 43 in. x 36 ½ in. From the Collection of the Duke of Orleans»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/philippe-ii-duke-of-orleans
+    role: estate
+    acquired: 1723
+    ended: 1798 or later
+    direct: true
+    label: als Tizian
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3228/
+        note: "Footnote: Auktion Bryan/Low 1798, S. 12, Nr. 255: Titiano Vecelli – A Portrait of a Young Man."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/reginald-garton-wilberforce
+    ended: 1914
+    label: Bramlands, Henfield, Sussex
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3228/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/susan-wilberforce
+    co_owners: [person/octavia-wilberforce]
+    acquired: 1914
+    ended: 1939-07-14
+    direct: true
+    label: als Tizian; Bramlands, Henfield, Sussex, Erbe
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3228/
+        note: "Footnote: Wie oben Fussnote 3, S. 1: «the following are the property of Miss Susan Wilberforce and Dr. Octavia Wilberforce removed from Bramlands, Henfield, Sussex and formerly coming from Lavington House, Petworth, Sussex»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1939-07-14
+    ended: 1939-07-14
+    method: auction
+    direct: true
+    place: london
+    label: Lot 26; als Tizian
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3228/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/wildenstein-co
+    role: dealer
+    ended: 1941-10-01
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 1050
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3228/
+        note: "Footnote: Wie oben Fussnote 3: S. 8, Lot 26, Exemplar des Auktionskatalogs der Warburg Institute Library annotiert mit «Wildenstein»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/roger-dequoy
+    role: dealer
+    acquired: 1939-07-14
+    ended: 1941-10-01
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 1050
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3228/
+        note: |-
+          Footnote: Wie oben Fussnote 3; Korrespondenz Christie's Archives London, 05.11.2019; Korrespondenz Roger Dequoy an Emil Bührle, 18.11.1944, Archiv Stiftung Sammlung E.G. Bührle, Zürich. 
+          Roger Dequoy war Kunsthändler und übernahm in den 1930er Jahren die Galerie Wildenstein & Cie (London). (vgl. https://agorha.inha.fr/detail/484 sowie https://agorha.inha.fr/detail/542 [22.05.2025]) Dass sowohl im annotierte…
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1941-10-01
+    ended: 1956
+    method: purchase
+    direct: true
+    place: paris
+    label: als Tizian; Paris and Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3228/
+        note: "Footnote: Lukas Gloor, Der Bestand der Sammlung Emil Bührle: Illustrierte Liste aller 633 Käufe, 2021, S. 258, Nr. 68, https://www.buehrle.ch/fileadmin/user_upload/bilder/stiftung/bestandliste/Extrakt_Gesamtkatalog_Bu__hrle_DE.pdf (13.01.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft-kunsthaus-zurich
+    acquired: 1956
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3228/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3228/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3228/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3228/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3228/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3228/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3228/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3228/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3228/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

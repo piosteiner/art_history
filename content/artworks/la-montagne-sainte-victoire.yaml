@@ -1,0 +1,177 @@
+public_id: 111803
+title_lang: fr
+title: La Montagne Sainte-Victoire
+creator: paul-cezanne
+created: 1902/1906
+kind: oil painting
+medium: Oil on canvas
+dimensions: [63, 83]
+institution: kunsthaus-zurich
+inventory_number: 1946/0014
+web_url: https://collection.kunsthaus.ch/de/collection/item/18/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q3823217
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8e/Paul_C%C3%A9zanne_-_La_Montagne_Sainte-Victoire_-_1946-0014_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_La_Montagne_Sainte-Victoire_-_1946-0014_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Paul Cézanne
+provenance:
+  - owner: artist/paul-cezanne
+    role: estate
+    acquired: 1906-10-22
+    ended: 1907-02-02
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/18/
+        note: "Footnote: Feilchenfeldt/Warman/Nash 2021 FWN 364, https://www.cezannecatalogue.com/catalogue/entry.php?id=890 (05.01.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/ambroise-vollard
+    role: dealer
+    acquired: 1907-02-02
+    ended: 1921
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/18/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/john-quinn
+    acquired: 1921
+    ended: 1924-07-28
+    method: purchase
+    direct: true
+    place: new-york-city
+    price:
+      amount: 60000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/18/
+        note: "Footnote: Kat. Washington D. C. 1978, S. 153 mit unpublizierten Quellenangaben: Ledger 2:84 [Quinn, John. Account Book. Collection of Thomas F. Conroy. Art Ledger. 2 vols. unpublished]; Inventory, 1924 [Estate of John Quinn, Deceased. Catalogue of the Art Collection Belonging to Mr. Quinn. [New York] July 28, 1924. John Quinn Memorial Collection. The New York Public Library, Astor, Lenox and Tilden Foundati…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/john-quinn
+    role: estate
+    acquired: 1924-07-28
+    ended: 1926-10-28 or earlier
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/18/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emile-eichenberger
+    ended: 1926-10-28
+    direct: true
+    place: bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/18/
+        note: "Footnote: Bei ihm handelt es sich vermutlich um einen Erben nach John Quinn. Er war der Einlieferer bei der Auktion von 1926: Protokoll der Auktion vom 28.10.1926, «Déclaration préalable a une vente mobilière», Signatur D149E3 4, Archives de Paris."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1926-10-28
+    ended: 1926-10-28
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 37
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/18/
+        note: "Footnote: Auktion Hôtel Drouot 1926, o. S., Nr. 37."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/henry-bing
+    acquired: 1926-10-28
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 280000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/18/
+        note: "Footnote: Wie oben Fussnote 6; Gazette de L’Hôtel Drouot, 30 octobre 1926 (n°116) und https://research.frick.org/directory/detail/74 (13.05.2024)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/josef-ruckstuhl-siegwart
+    ended: 1931-07-02 or earlier
+    place: bern
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/18/
+        note: "Footnote: Josef Ruckstuhl war der Ehemann von Emma Ruckstuhl und Generaldirektor der Schweiz. Volksbank. Zudem war er «etliche Jahre bei der Banque Nationale de Credit in Paris» tätig (Quelle: Neue Zürcher Nachrichten, Volume 27, Number 179, 6 July 1931). Daher wäre es möglich, dass er der eigentliche Sammler war und auch, dass er das Gemälde von Cézanne evtl. in Paris, evtl. sogar direkt bei der Galerie vo…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emma-ruckstuhl-siegwart
+    acquired: 1936-08-04 or earlier
+    direct: true
+    place: lucerne
+    label: wohl Nachlass
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/18/
+        note: "Footnote: Brief vom Konservator der Kunsthalle Basel, Dr. Lichtenhan, an Frau Ruckstuhl-Siegwart, 04.08.1936, Staatsarchiv Basel, PA 888a N 6 (1) 318."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hermann-ganz
+    acquired: 1944-10-11 or earlier
+    ended: 1946-12-20
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/18/
+        note: "Footnote: Das Gemälde war spätestens ab 1944 im Eigentum von Hermann Ganz, der es am 6. September 1944 dem Kunsthaus Zürich zum Kauf angeboten hat, vgl. Sitzungsprotokoll der Sammlungskommission, 11.10.1944, Archiv ZKG/KHZ, 10.30.10.42; ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft-kunsthaus-zurich
+    acquired: 1946-12-20
+    method: purchase
+    direct: true
+    place: zurich
+    label: mit einem Beitrag von Emil Bührle
+    price:
+      amount: 85000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/18/
+        note: "Footnote: Wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "364"
+    label: FWN (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/18/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/18/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/18/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/18/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/18/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/18/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/18/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

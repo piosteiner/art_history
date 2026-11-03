@@ -21,6 +21,25 @@ death: 1825-02-24
 wikidata_id: Q950316
 metadata:
   sources: [Wikidata Q950316 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-02
+        property: P27
+        wikidata: Q950316
+  - type: student_of
+    to: artist/utagawa-toyoharu
+    sources:
+      - accessed: 2026-11-02
+        property: P802
+        wikidata: Q3109421
+  - type: associated_with
+    to: movement/utagawa-school
+    sources:
+      - accessed: 2026-11-02
+        property: P135
+        wikidata: Q950316
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/8/84/Toyokuni_Utagawa_I_by_Kunisada_cropped.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Toyokuni_Utagawa_I_by_Kunisada_cropped.jpg

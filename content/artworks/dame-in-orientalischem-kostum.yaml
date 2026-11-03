@@ -1,0 +1,168 @@
+public_id: 112149
+title_lang: de
+title: Dame in orientalischem Kostüm
+names:
+  - lang: en
+    role: translation
+    text: Lady in Oriental Costume
+creator: govert-flinck
+attribution_label: Govert Flinck (formerly attributed to Rembrandt)
+created: c. 1635
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [79, 66]
+institution: kunsthaus-zurich
+inventory_number: BU 0159
+web_url: https://collection.kunsthaus.ch/de/collection/item/696963/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q21836990
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/81/Govert_Flinck_-_Dame_in_orientalischem_Kost%C3%BCm_-_159_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Govert_Flinck_-_Dame_in_orientalischem_Kost%C3%BCm_-_159_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Govert Flinck
+provenance:
+  - owner: person/john-carpenter-garnier
+    label: Rookesbury Hall, Hampshire
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+        note: "Footnote: Bode/Hofstede de Groot 1899, No. 156."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/john-charles-robinson
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/charles-sedelmeyer-paris
+    ended: 1899-03
+    label: Lawrie & Co. London und M. Knoedler & Co. Inc. New York, Paris  and  London  and  New York
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+        note: "Footnote: Kat. Stedelijk Museum Amsterdam 1898, No. 38; Galerie Sedelmeyer Paris (Sammlungskatalog) 1899, No. 39; Kat. Frick Art & Historical Center 1997, S. 127."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alexander-mcburney-byers
+    acquired: 1899-03
+    ended: 1900
+    method: purchase
+    direct: true
+    place: pittsburgh
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+        note: "Footnote: Kat. Frick Art & Historical Center, wie oben Fussnote 8, S. 127, 368, No. 53, Abb. 59: Das Gemälde hing in der Bibliothek der Byers Residenz in Pittsburgh."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alexander-mcburney-byers
+    role: estate
+    acquired: 1900
+    ended: 1932 or later
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+        note: "Footnote: Kat. Carnegie Institute Pittsburgh 1925, Nr. 59; Kat. Carnegie Institute Pittsburgh 1932; Kat. Frick Art & Historical Center Pittsburgh 1997, wie oben Fussnote 7, S. 173."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hendrikus-egbertus-ten-cate
+    acquired: November 1940 or earlier
+    place: almelo
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+        note: "Footnote: Kat. Toledo Museum of Art 1940, No. 32."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/d-katz
+    role: dealer
+    place: dieren
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+        note: "Footnote: Kunsthaus Zürich 1958 (Sammlungskatalog), No. 69."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/nathan-katz
+    role: dealer
+    ended: 1946-12-12
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+        note: "Footnote: AStEGB, Brief von Nathan Katz, Basel, an Emil Bührle, Zürich, 01.11.1946, zur Bestätigung der Lieferung von drei Gemälden: zwei Gemälde von Rembrandt, Saskia (das vorliegende Gemälde) und Porträt eines Offiziers, sowie ein Gemälde von Frans Hals, Porträt eines Mannes (Sammlung Emil Bührle, Inv. 151)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1946-12-12
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+        note: "Footnote: AStEGB, Protokoll über einen Besuch von Nathan Katz bei Dr. O. Maurer, Generalsekretär von Oerlikon Bührle & Co., in der Oerlikon-Fabrik am 10.12.1946, aus dem hervorgeht, dass Katz eine Abrechnung für Bildkäufe vor Jahresende verlangte. Die Gesamtsumme für die 3 oben genannten Bilder betrug CHF 600'000, ein zusätzlicher Betrag von CHF 210'000, der gleichzeitig bezahlt wurde, bezog sich auf ein Re…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 159
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "159"
+    institution: foundation-e-g-buhrle-collection
+  - number: "141"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/696963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

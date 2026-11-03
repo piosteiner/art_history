@@ -1,0 +1,22 @@
+public_id: 111987
+name: Motta di Livenza
+kind: settlement
+parent: province-of-treviso
+country_code: IT
+location: [12.60861, 45.77972]
+wikidata_id: Q48065
+metadata:
+  sources: [Wikidata Q48065 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q48065
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q48065
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q48065

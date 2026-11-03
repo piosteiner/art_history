@@ -1,0 +1,149 @@
+public_id: 112432
+title_lang: en
+title: Jagdstillleben mit Rohrdommel
+names:
+  - lang: en
+    role: translation
+    text: Hunting Still Life with Bittern
+creator: rembrandt
+attribution_label: style of Rembrandt
+kind: oil painting
+medium: Oil on canvas
+dimensions: [120, 91.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0158
+web_url: https://collection.kunsthaus.ch/de/collection/item/805960/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q21979869
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/20/Style_of_Rembrandt_Harmenszoon_van_Rijn_-_Jagdstillleben_mit_Rohrdommel_-_158_-_Foundation_E.G._B%C3%BChrle_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Style_of_Rembrandt_Harmenszoon_van_Rijn_-_Jagdstillleben_mit_Rohrdommel_-_158_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Rembrandt / Manner of Rembrandt
+provenance:
+  - owner_label: unknown (collector)
+    place: ireland
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805960/
+        note: "Footnote: AStEGB, Rechnung von M. Knoedler & Co, Inc., New York, ausgestellt auf Emil Bührle, 26.05.1954, für zwei Gemälde, Rembrandt, Stillleben mit totem Wild, und Salomon Ruysdael, Flussufer mit Dorf (jetzt Sammlung Emil Bührle, Inv. 163), mit detaillierten Provenienz-, Ausstellungs- und Publikationshinweisen; zitiert aus Hofstede de Groot 1922, der Anthony Reyre als Entdecker des Bildes in Irland angibt…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/anthony-francis-reyre
+    role: dealer
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805960/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandel-ag
+    ended: 1922
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805960/
+        note: "Footnote: Rechnung, wie oben Fussnote 3, nennt Fritz Steinmeyer, Luzern, als Verkäufer des Bildes. Steinmeyer war ein Geschäftspartner des Münchner Kunsthändlers Julius Böhler, der Böhlers Luzerner Filiale, die Kunsthandels-A.G., leitete."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/john-dexter-mcilhenny
+    acquired: 1922
+    ended: 1925-11-23
+    direct: true
+    place: philadelphia
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805960/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/philadelphia-museum-of-art
+    acquired: 1925
+    ended: 1944-08-02
+    direct: true
+    place: philadelphia
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805960/
+        note: "Footnote: Getty Research Institute, Santa Monica (Kalifornien) Knoedler Gallery Archive, Lager Buch 9, S. 66, Nr. A2750."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1944-08-02
+    ended: 1954-05-27
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805960/
+        note: "Footnote: Lagerbuch, wie oben Fussnote 9. Das Lagerbuch gibt einen halben Anteil von $ 10.000 an, der von der Galerie Knoedler übernommen wurde."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-05-27
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805960/
+        note: "Footnote: Erworben für insgesamt $ 125.000 für den Rembrandt und den Ruysdael, Rechnung wie oben Fussnote 3; AStEGB, Brief von Charles R. Henschel [Leiter von M. Knoedler & Co., Inc.], New York, an Emil Bührle, 27.05.1954, der den Erhalt des Schecks bestätigt; Getty Research Institute, Santa Monica (California) Knoedler Gallery Archive, Lagerbuch 10, S. 20, Nr. A2750."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 158
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "158"
+    institution: foundation-e-g-buhrle-collection
+  - number: "383"
+    label: Die Sammlung Emil Bührle (SIK-ISEA 2021), catalogue no.
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

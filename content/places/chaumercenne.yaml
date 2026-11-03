@@ -1,0 +1,22 @@
+public_id: 112249
+name: Chaumercenne
+kind: settlement
+parent: france
+country_code: FR
+location: [5.62861, 47.29972]
+wikidata_id: Q519754
+metadata:
+  sources: [Wikidata Q519754 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q519754
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q519754
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q519754

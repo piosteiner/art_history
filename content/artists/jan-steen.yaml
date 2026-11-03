@@ -1,0 +1,97 @@
+public_id: 112335
+name: Jan Steen
+given_name: Jan
+family_name: Steen
+names:
+  - kind: birth
+    lang: nl
+    role: alternative
+    text: Jan Havicksz. Steen
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q205863
+birth: 1626
+death: 1679-02-03
+wikidata_id: Q205863
+metadata:
+  sources: [Wikidata Q205863 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q205863
+  - type: born_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q205863
+  - type: died_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q205863
+  - type: worked_in
+    to: place/delft
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q205863
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q205863
+  - type: worked_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q205863
+  - type: worked_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q205863
+  - type: student_of
+    to: artist/jan-van-goyen
+    sources:
+      - accessed: 2026-11-03
+        property: P1066
+        wikidata: Q205863
+  - type: associated_with
+    to: movement/dutch-golden-age-painting
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q205863
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/1670_Jan_Havicksz._Steen_-_zelfportret.jpg/1280px-1670_Jan_Havicksz._Steen_-_zelfportret.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:1670_Jan_Havicksz._Steen_-_zelfportret.jpg
+    license: Public domain
+    credit: Jan Steen
+identifiers:
+  bnf: 13171235n
+  dome: "5646"
+  gnd: "118798545"
+  idref: "035162465"
+  kulturnav: 02aade8f-2c17-4ca7-b77e-21f3ee58978a
+  lc: n79021430
+  rkd: "74809"
+  ulan: "500115664"
+  viaf: "15041897"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q205863
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q205863
