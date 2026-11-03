@@ -111,6 +111,32 @@ test('regions: a copy after a work of another region plays in both, as the close
   expect(pick.options.find((o) => o.slug === 'test-quiz-copy')).toEqual(expect.objectContaining({ correct: false }));
 });
 
+// contemporary art is global (owner 2026-11-03): the round of an artist whose works all date from 1945 on draws its
+// wrong options from every region; a chosen region still holds
+test('regions: a contemporary artist’s round from every region', async ({ request }) => {
+  sql(`INSERT INTO artists (slug, name, region) VALUES ('test-quiz-now', 'Nora Now', 'europe'), ('test-quiz-tokyo', 'Toki Tokyo', 'east_asia');
+       INSERT INTO artworks (slug, title, creator_id, created, created_label, kind) VALUES
+         ('test-quiz-n1', 'Quiz Now 1', entity_id('artist', 'test-quiz-now'), '[1990-01-01,1991-01-01)', '1990', 'installation'),
+         ('test-quiz-n2', 'Quiz Now 2', entity_id('artist', 'test-quiz-now'), '[1992-01-01,1993-01-01)', '1992', 'installation'),
+         ('test-quiz-n3', 'Quiz Now 3', entity_id('artist', 'test-quiz-now'), '[1995-01-01,1996-01-01)', '1995', 'installation'),
+         ('test-quiz-t1', 'Quiz Tokyo 1', entity_id('artist', 'test-quiz-tokyo'), '[1991-01-01,1992-01-01)', '1991', 'installation');
+       INSERT INTO images (artwork_id, position, url, license, credit)
+         SELECT id, 0, 'https://example.org/' || slug || '.jpg', 'Public domain', 'test' FROM artworks WHERE slug IN ('test-quiz-n1', 'test-quiz-n2', 'test-quiz-n3', 'test-quiz-t1');
+       -- one movement for both: the Tokyo work is the artist's closest look-alike (as it would be in the same region)
+       INSERT INTO movements (slug, name, kind) VALUES ('test-quiz-now-art', 'Quiz Now Art', 'movement');
+       INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id) VALUES
+         ('artist', entity_id('artist', 'test-quiz-now'), 'associated_with', 'movement', entity_id('movement', 'test-quiz-now-art')),
+         ('artwork', entity_id('artwork', 'test-quiz-t1'), 'associated_with', 'movement', entity_id('movement', 'test-quiz-now-art'));
+       UPDATE quality_refresh SET quiz_at = NULL; SELECT refresh_quality_global()`);
+  const seen = new Set();
+  for (let i = 0; i < 5; i++) (await get(request, 'artist?for=test-quiz-now'))[0].options.forEach((o) => seen.add(o.slug));
+  expect(seen.has('test-quiz-t1')).toBe(true);                                              // the Tokyo work of its time
+  for (let i = 0; i < 3; i++) {
+    const [round] = await get(request, 'artist?for=test-quiz-now&region=europe');
+    expect(round.options.map((o) => o.slug)).not.toContain('test-quiz-t1');
+  }
+});
+
 test('a picture with every name, the artists, the date and the movements to guess', async ({ request, userA }) => {
   const pub = await get(request, 'image?n=20');
   expect(pub.length).toBeGreaterThan(0);

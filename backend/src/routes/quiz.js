@@ -10,6 +10,7 @@
 //   &for=<slug>: about that work, artist, movement or term only
 //   &region=<world region> (191): only works of that region (entry_regions — worked out, or set by hand). Without one,
 //                                   a round stays in its artist's or movement's region: no ukiyo-e among Swiss painters.
+//                                   Contemporary art (works from 1945, a movement beginning then) keeps to no region.
 //                                   A copy after a work of another region counts in that region too (owner 2026-11-03:
 //                                   Van Gogh's Bridge in the Rain after Hiroshige among Hokusai's look-alikes) — counts().
 // What belongs to a movement is the view movement_works (100): linked directly or through the artist while it lasted,
@@ -100,6 +101,10 @@ const OPTION_COLUMNS = `w.slug, w.public_id, w.title,
 const namesOf = (alias, main) => `array_remove(ARRAY[${alias}.${main}] || ARRAY(SELECT ruby_plain(n->>'text') FROM jsonb_array_elements(${alias}.names) n), NULL)`;
 
 // --- 1. the picture: title, artist, year, movement ----------------------------------------------------------------
+// Contemporary art is global (owner 2026-11-03: "for contemporary and newer art we can ignore them since art has become
+// global by that time"): a round of an artist whose works all date from then, or of a movement beginning then, keeps to
+// no region of its own — a region chosen above the games still applies.
+const GLOBAL_FROM = '1945-01-01';
 /** Wrong options from the round's region — from anywhere when it has too few (a region with only a handful of works). */
 async function enough(query, region) {
   const { rows } = await query(region);
@@ -133,7 +138,8 @@ async function artist(q, { db, pictured }) {
   // the round's region: the one chosen, else the artist's — else the one most of their works are of
   const { rows: artists } = await db.query(`
     SELECT ar.id, ar.slug, ar.public_id, ar.name, ar.birth_label, ar.death_label, ar.active_label,
-           coalesce(${regionSql('artist', 'ar.id')}, (SELECT mode() WITHIN GROUP (ORDER BY w.region) FROM (${PICTURED}) w WHERE w.creator_id = ar.id)) AS region
+           coalesce(${regionSql('artist', 'ar.id')}, (SELECT mode() WITHIN GROUP (ORDER BY w.region) FROM (${PICTURED}) w WHERE w.creator_id = ar.id)) AS region,
+           coalesce((SELECT min(lower(w.created)) FROM (${PICTURED}) w WHERE w.creator_id = ar.id) >= '${GLOBAL_FROM}', false) AS global
     FROM artists ar
     WHERE ar.id IN (SELECT creator_id FROM (${PICTURED}) w GROUP BY creator_id HAVING count(*) >= 3) AND ($2::text IS NULL OR ar.slug = $2)
     ORDER BY random() LIMIT $1`, [n, only(q)]);
@@ -167,7 +173,7 @@ async function artist(q, { db, pictured }) {
                + coalesce(w.kind IN (SELECT kind FROM mine), false)::int
                + 1.5 * random() DESC
         LIMIT $2) w`, [ar.id, OPTIONS - right.length, region]);
-    const others = await enough(lookAlikes, regionOf(q) || ar.region);
+    const others = await enough(lookAlikes, regionOf(q) || (ar.global ? null : ar.region));
     rounds.push({
       artist: { slug: ar.slug, public_id: ar.public_id, name: ar.name, dates: [ar.birth_label, ar.death_label].some(Boolean)
         ? `${ar.birth_label ?? '?'} – ${ar.death_label ?? '?'}` : ar.active_label ? `active ${ar.active_label}` : null },
@@ -190,15 +196,19 @@ async function movement(q, { db, pictured }) {
   const n = count(q.n, 8, 15);
   const mode = ['pick', 'name'].includes(q.mode) ? q.mode : 'mixed';
   const { rows: movements } = await db.query(`
-    SELECT m.id, ${regionSql('movement', 'm.id')} AS region, ${MOVEMENT} FROM movements m
+    SELECT m.id, ${regionSql('movement', 'm.id')} AS region, ${MOVEMENT},
+           coalesce(coalesce(lower(m.period), (SELECT min(lower(a.created)) FROM quiz_movement_works mw JOIN artworks a ON a.id = mw.artwork_id
+             WHERE mw.movement_id = m.id)) >= '${GLOBAL_FROM}', false) AS global
+    FROM movements m
     WHERE m.id IN (SELECT mw.movement_id FROM quiz_movement_works mw JOIN (${PICTURED}) w ON w.id = mw.artwork_id GROUP BY 1 HAVING count(*) >= 3)
       AND ($2::text IS NULL OR m.slug = $2)
     ORDER BY random() LIMIT $1`, [n, only(q)]);
   const rounds = [];
   for (const m of movements) {
     const kind = mode === 'mixed' ? (Math.random() < 0.5 ? 'pick' : 'name') : mode;
-    const { id, region: own, ...movement } = m;
-    const region = regionOf(q) || own;   // the round's: no works or movements of another region among the options
+    const { id, region: own, global, ...movement } = m;
+    // the round's: no works or movements of another region among the options — contemporary art from anywhere
+    const region = regionOf(q) || (global ? null : own);
     if (kind === 'pick') {
       const { rows: own } = await db.query(`SELECT ${OPTION_COLUMNS}, true AS correct FROM (${PICTURED}) w
         WHERE w.id IN (SELECT artwork_id FROM quiz_movement_works WHERE movement_id = $1) ORDER BY random() LIMIT 4`, [id]);

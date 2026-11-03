@@ -4,6 +4,24 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-03
 
+### Quiz: contemporary art from every region; three groups of works completed
+- **What:**
+  - `src/routes/quiz.js`: a round of an artist whose works all date from 1945 on, or of a movement beginning in 1945
+    or later, keeps to no region (`GLOBAL_FROM`); a region chosen above the games still applies. Test in `quiz.spec.js`.
+  - Hall of Realms battles (`battle-series`): the 10 other surviving canvases from Wikidata (`from-wikidata.js
+    --prefer-lang=es`), their Prado pages and the Prado's dates (1634 / 1634–1635, cited; Brisach's page not found —
+    date from the Prado's encyclopedia), Cajés's *Puerto Rico* "completed by another" (Puga, Fernández), and the twelfth,
+    Zurbarán's lost *Expulsion of the Dutch from San Martín* (Wikidata's "Caldercita" = Cadreita; fate lost, cited to
+    Wikipedia). Painters named as the Prado does: Vicente Carducho, Eugenio Cajés, Félix Castello (Wikidata's names kept
+    as other names).
+  - Siena cathedral cycle: Ambrogio Lorenzetti's Presentation (Uffizi), Pietro Lorenzetti's Nativity of the Virgin
+    (Museo dell'Opera), Bulgarini's Adoration of the Shepherds (Harvard 1917.89, the St Victor altar's centre) — 4 of 4.
+  - Thirty-six Views of Mount Fuji: the other 44 prints from Wikidata, numbered 1–46 after Wikipedia's list; 24 as the
+    Met's impression (page, accession number, public-domain image, "c. 1830–1832", cited to the Met), the rest as
+    Wikidata has them (12 without a holding museum). Fujimihara got its item (Q17210582).
+- **Why:** owner, 2026-11-03.
+- **Revert:** quiz: `git revert`; entries: delete the new artworks (created 2026-11-03 with parents 381, 1002, 1246).
+
 ### Era names in the glossary for China, Korea before 1392 and the rest of Japan; Xuanhe fixed (208); chapters connected (209); Quality warnings
 - **What:**
   - 445 glossary entries (category `calendar`) for every era of `calendar_eras` that had none, linked in
