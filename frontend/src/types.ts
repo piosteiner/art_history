@@ -76,7 +76,7 @@ export interface Relationship {
 export interface Citation {
   kind: 'source' | 'wikidata' | 'text';
   /** database (Wikidata, aggregators) < institution (museum) < scholarly (literature) < primary (archive); null for text. */
-  reliability: 'database' | 'institution' | 'scholarly' | 'primary' | null;
+  reliability: 'other' | 'database' | 'institution' | 'scholarly' | 'primary' | null;
   text: string;
   source?: { slug: string; siglum: string } | null;
   wikidata?: { item: string; property: string | null; url: string } | null;

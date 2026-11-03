@@ -2,22 +2,24 @@
 // reliable first — and on hover, keyboard focus or tap a popover with the citations in KHIST style: the short form
 // (linked to the exact page or the Wikidata item), the accessed date, the full reference from the bibliography.
 // Markers: P primary source (archive, letters) · L literature (catalogue raisonné, scholarly) · M museum or collection
-// database · D other database · W Wikidata · T a note in words (not verified). A citation whose value has changed since
+// database · D other database · W Wikidata · O another source (a family tree, a forum — below the databases) ·
+// T a note in words (not verified). A citation whose value has changed since
 // (`outdated`) gets no marker and is listed last, muted.
 import { byKeyboard, hideSoon, openFor, show } from './glossary';
 import { href as entryHref, html, trusted, type Html } from './html';
 import type { Citation, SourceHint } from './types';
 
-const RANK: Record<string, number> = { primary: 4, scholarly: 3, institution: 2, database: 1 };
+const RANK: Record<string, number> = { primary: 4, scholarly: 3, institution: 2, database: 1, other: 0.5 };
 const rank = (c: Citation) => (c.outdated ? -1 : RANK[c.reliability ?? ''] ?? 0);
 
 export const MARKER_TITLE: Record<string, string> = {
-  P: 'primary source', L: 'literature', M: 'museum or collection', D: 'database', W: 'Wikidata', T: 'a note in words, not verified',
+  P: 'primary source', L: 'literature', M: 'museum or collection', D: 'database', W: 'Wikidata', O: 'other source (a family tree, a forum …)',
+  T: 'a note in words, not verified',
 };
 function marker(c: Citation): string {
   if (c.kind === 'wikidata') return 'W';
   if (c.kind === 'text') return 'T';
-  return ({ primary: 'P', scholarly: 'L', institution: 'M', database: 'D' } as Record<string, string>)[c.reliability ?? ''] ?? 'L';
+  return ({ primary: 'P', scholarly: 'L', institution: 'M', database: 'D', other: 'O' } as Record<string, string>)[c.reliability ?? ''] ?? 'L';
 }
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
