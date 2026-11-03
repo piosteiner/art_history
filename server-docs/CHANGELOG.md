@@ -4,6 +4,27 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-03
 
+### Kunsthaus Zürich: all works with a 1933–1945 category B, C or D (247; 220 new)
+- **What:** the Kunsthaus's online collection filtered by its provenance category (Solr `category_provenance_de_s`):
+  31 "NS-verfolgungsbedingt entzogenes Kulturgut" (D), 67 "Hinweise auf …" (C), 149 "keine Hinweise auf …" (B). 27 were
+  ours (Bührle works) — Dalí's *Femme à tête de roses* got its category; 220 imported with the Bührle pipeline (scratchpad
+  `ns/`: fetch → parse → plan → fixplan → load → images): 1,203 provenance steps cited to each Kunsthaus page, the
+  category as `provenance_status` with the Kunsthaus's wording, 88 loans (the lender = the step before the Kunsthaus's
+  "Leihgabe" line: Gottfried Keller-Stiftung, Ruzicka-Stiftung, City of Zürich …), 147 Wikidata items, 88 Commons
+  pictures. New: 111 artists (100 with Wikidata items, filled from Wikidata — dates, places, nationality, teachers),
+  308 people, 77 institutions, 37 places (each with its country), all flagged auto_created.
+  Modelling: seizures and thefts as `possessor` (confiscation/theft), the "Führerzuteilung" too; depots (Führerbau,
+  Merkers mine, Munich Central Collecting Point) as `custodian`; transfers, commissions, foundries, publishers, heirs
+  and restitutions by the source's words; "Privatbesitz", bare surnames and "Mr. …" as labels, not entries; the City and
+  Canton of Zürich as place owners. Creators: "Unknown [Rhenish]" → "Anonymous, Rhenish", "after X", "X and workshop",
+  "unsettled attribution", forgeries as before.
+  Matching fixed: two works had been taken for ours by a coincidence — item 539 of the Vienna Academy's collection site
+  and the Brera's inventory number 2296; works are now matched only by the Kunsthaus's own address or its/the Bührle
+  foundation's inventory numbers.
+- **Why:** owner, 2026-11-03.
+- **Revert:** the new works: `DELETE FROM artworks WHERE current_institution_id = 17 AND created_at >= '2026-11-03 20:45+00'`
+  (one transaction, check the list first); the new entries: auto_created rows from that moment.
+
 ### Site: the bibliography sorted by short reference
 - **What:** the site's lists sort by the API's `sort_key` — for a source the title's (without its article), while the
   bibliography shows and offers "Short reference A–Z": "Museo del Prado, El 2 de mayo …" was filed under "#",
