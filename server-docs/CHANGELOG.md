@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-03
 
+### Open cases, "other" sources, places of birth and death in the form (migrations 197, 198)
+- **What:** 198 `open_cases` + CMS `/open-cases` (menu "Open cases"): "Open case…" next to a finding on the Quality page
+  parks it with a Markdown description and where to look (a source of the bibliography or a link); grouped by that
+  place; a box on the entry's page (also "+ Open a case" without a finding); closed with a result — the finding, if it
+  still holds, is back on Quality; reopen. 197: reliability `other` below `database` (set by hand on a source; marker O
+  on the site, O in the CMS, weakly_sourced counts it); a pasted Wikipedia/Wikimedia link's site is `database`, the
+  three made as `institution` so far (de/en/fr.wikipedia.org) corrected. Artist and person forms: "Place of birth" /
+  "Place of death" next to the dates = the relationships born_in / died_in (written on Publish; another place replaces,
+  empty leaves; names typed are found). e2e tests (open-cases, life-places, citations), menu test updated.
+- **Why:** owner: cases like Berck, pêcheuses sur la plage need a library visit; Geneanet ranked above Wikidata and
+  Wikipedia as a museum; places of birth/death were entered twice.
+- **Revert:** `DROP TABLE open_cases`; the enum value can't be dropped — set sources back
+  (`UPDATE bibliography SET reliability = 'database' WHERE reliability = 'other'`) and restore weakly_sourced's `=`;
+  `git revert`.
+
 ### Dates with German month names; site test less tied to the data
 - **What:** `src/fuzzy-date.js` (`normalizeSourceForms`): "5. Juli 1996", "5 Juli 1996", "Juli 1996", abbreviations
   ("5. Okt. 1996"), "Jänner" — rewritten to ISO before parsing, labels in English as all labels; ranges of them work too.

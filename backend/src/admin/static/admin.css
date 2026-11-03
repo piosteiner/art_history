@@ -229,6 +229,21 @@ mark { background: color-mix(in srgb, var(--accent) 28%, transparent); color: in
 .qa-box { border: 1px solid var(--line); border-radius: 8px; padding: .5rem .8rem; margin: 0 0 1rem; background: var(--panel); }
 .qa-box.has-error { border-color: var(--err); }
 .qa-box ul { margin: .3rem 0; padding-left: 1.1rem; }
+/* open cases (198): the list, and the box on an entry's page */
+.oc-list { list-style: none; padding: 0; margin: .4rem 0 1rem; }
+.oc-case { border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 6px; padding: .5rem .8rem; margin: 0 0 .6rem; background: var(--panel); }
+.oc-head { display: flex; flex-wrap: wrap; gap: .4rem; align-items: baseline; }
+.oc-finding { margin: .2rem 0; }
+.oc-text { margin: .3rem 0; }
+.oc-case .actions { display: flex; flex-wrap: wrap; gap: .5rem; align-items: flex-start; margin: .3rem 0 0; }
+.oc-close > summary { list-style: none; cursor: pointer; }
+.oc-close > summary::-webkit-details-marker { display: none; }
+.oc-close[open] { flex-basis: 100%; }
+.oc-result { border-top: 1px dashed var(--line); margin-top: .4rem; padding-top: .3rem; }
+.oc-closed > summary h2 { display: inline; }
+.oc-box { margin: 0 0 1rem; }
+.oc-box.has-cases { border: 1px solid var(--accent); border-radius: 8px; padding: .5rem .8rem; }
+.oc-box .oc-list { margin-bottom: .4rem; }
 .qa-box li { margin: .2rem 0; }
 .bar select { width: auto; flex: 0 1 auto; }
 .bar .choice input { width: auto; }
@@ -355,7 +370,7 @@ details.field-group[open] { border-left: 3px solid var(--line); padding-left: 0.
 .dup-confirm label.choice { display: block; margin-top: .2rem; }
 .merge-summary li { margin: .3rem 0; }
 
-/* sources for facts (src/admin/citations.js): W database · M institution · L literature · P primary · ? none */
+/* sources for facts (src/admin/citations.js): O other · W database · M institution · L literature · P primary · ? none */
 details.cite { display: inline-block; vertical-align: baseline; }
 details.cite > summary { list-style: none; cursor: pointer; display: inline-flex; gap: 2px; }
 details.cite > summary::-webkit-details-marker { display: none; }
@@ -364,6 +379,7 @@ details.cite > summary::-webkit-details-marker { display: none; }
 .cite-database { color: var(--fg); background: color-mix(in srgb, var(--muted) 18%, transparent); }
 .cite-institution { color: var(--accent-fg); background: var(--accent); border-color: var(--accent); }
 .cite-scholarly, .cite-primary { color: var(--bg); background: var(--ok); border-color: var(--ok); }
+.cite-other { border-style: dotted; }
 .cite-none { border-style: dashed; }
 .cite-text { font-style: italic; }
 .cite-outdated { color: var(--bg); background: var(--err); border-color: var(--err); }

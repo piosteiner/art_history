@@ -312,6 +312,8 @@ async function issues(db, { severity, check, type, entity, acked = false, perChe
   if (type) where.push(`q.entity_type = ${p(type)}::entity_type`);
   if (entity) where.push(`q.entity_type = ${p(entity.type)}::entity_type AND q.entity_id = ${p(entity.id)}`);
   where.push(acked ? 'a.check_id IS NOT NULL' : 'a.check_id IS NULL');
+  // in an open case (198): followed up there, not here
+  where.push('NOT EXISTS (SELECT 1 FROM open_cases oc WHERE oc.check_id = q.check_id AND oc.issue_key = q.issue_key AND oc.closed_at IS NULL)');
   // the rank and the count per check by window functions over the filtered findings; the cut after them
   const { rows } = await db.query(`
     SELECT * FROM (
@@ -334,7 +336,9 @@ async function counts(db) {
   const { rows } = await db.query(`
     SELECT q.severity, q.check_id, count(*)::int AS n FROM quality_issues q
     LEFT JOIN quality_acks a ON a.check_id = q.check_id AND a.issue_key = q.issue_key
-    WHERE a.check_id IS NULL GROUP BY 1, 2`);
+    WHERE a.check_id IS NULL
+      AND NOT EXISTS (SELECT 1 FROM open_cases oc WHERE oc.check_id = q.check_id AND oc.issue_key = q.issue_key AND oc.closed_at IS NULL)
+    GROUP BY 1, 2`);
   return rows;
 }
 
@@ -409,10 +413,12 @@ function ackForm(r, back, acked) {
         <input type="hidden" name="note" value="not the same"><button class="secondary">Not the same</button></form>`
     : html`<form method="post" action="/quality/ack" class="inline qa-ack"><input type="hidden" name="check_id" value="${r.check_id}">
         <input type="hidden" name="issue_key" value="${r.issue_key}"><input type="hidden" name="back" value="${back}">
-        <input name="note" placeholder="why it is right (optional)" aria-label="note"><button class="secondary">Mark as OK</button></form>`;
+        <input name="note" placeholder="why it is right (optional)" aria-label="note"><button class="secondary">Mark as OK</button></form>
+      <a class="button secondary qa-case" title="Takes longer: move it to the open cases with a description"
+        href="/open-cases/new?type=${r.type}&amp;slug=${encodeURIComponent(r.slug)}&amp;check=${r.check_id}&amp;key=${encodeURIComponent(r.issue_key)}&amp;back=${encodeURIComponent(back)}">Open case…</a>`;
 }
 
-function page({ rows, allCounts, filter, back, featured = 0, status: st = null, driftRows = [], failureRows = [] }) {
+function page({ rows, allCounts, filter, back, featured = 0, status: st = null, driftRows = [], failureRows = [], openCases = 0 }) {
   const total = (s) => allCounts.filter((c) => c.severity === s).reduce((n, c) => n + c.n, 0);
   const q = (params) => `/quality?${new URLSearchParams(Object.entries({ ...filter, ...params }).filter(([, v]) => v)).toString()}`;
   const groups = {};
@@ -421,6 +427,7 @@ function page({ rows, allCounts, filter, back, featured = 0, status: st = null, 
     ${statusLine(st)}${failuresBox(failureRows)}${driftBox(driftRows)}
     ${featured ? html`<p class="flash error">${featured} start view${featured === 1 ? ' has' : 's have'} problems (an entry deleted, a key the site doesn't know …) —
       <a href="/featured">Start views</a>.</p>` : ''}
+    ${openCases ? html`<p class="small qa-open-cases"><a href="/open-cases">${openCases} open case${openCases === 1 ? '' : 's'}</a> — findings that take longer are followed up there.</p>` : ''}
     <p class="small">Batch pages: <a href="/quality/batch/wikidata">find Wikidata items</a> ·
       <a href="/quality/batch/wikidata?only=auto">… for entries created automatically</a> ·
       <a href="/quality/batch/images">images for artworks without one</a> ·

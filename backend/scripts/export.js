@@ -35,6 +35,8 @@ async function main() {
       const dateKeys = Object.entries(t.fields).filter(([, k]) => k === 'date' || k === 'period').map(([k]) => k);
       for (const { id, public_id: publicId, slug, doc } of await readDocs(client, t)) {
         yearsAsNumbers(doc, dateKeys);
+        // places of birth / death are their relationships (born_in, died_in), written below — not twice
+        for (const [k, kind] of Object.entries(t.fields)) if (kind.startsWith('life:')) delete doc[k];
         const rels = (await readRelationships(client, t.type, id)).map((r) => r.rel);
         rels.forEach((rel) => yearsAsNumbers(rel, ['period']));
         if (rels.length) doc.relationships = rels;

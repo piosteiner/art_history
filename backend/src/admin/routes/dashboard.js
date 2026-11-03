@@ -165,7 +165,8 @@ router.get('/quality', async (req, res) => {
     quality.counts(adminPool), quality.status(adminPool), quality.drift(adminPool), quality.failures(adminPool)]);
   // start views (069) aren't entries — their problems are counted here, listed on /featured
   const featured = (await adminPool.query('SELECT count(DISTINCT id)::int AS n FROM featured_view_problems')).rows[0].n;
-  send(req, res, { title: 'Data quality', body: quality.page({ rows, allCounts, filter, back: req.originalUrl, featured, status, driftRows, failureRows }) });
+  const openCases = await require('./open-cases').openCount(adminPool);
+  send(req, res, { title: 'Data quality', body: quality.page({ rows, allCounts, filter, back: req.originalUrl, featured, status, driftRows, failureRows, openCases }) });
 });
 
 // "Mark as OK" / undo — back to where it was clicked (only local paths).

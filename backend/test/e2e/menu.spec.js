@@ -8,7 +8,7 @@ test('menu: the groups in order, the site\'s pages and settings in their own gro
     ['Artworks', 'Artists', 'People', 'Institutions'],
     ['Events', 'Movements', 'Places', 'Polities'],
     ['Literature', 'Glossary', 'Bibliography'],
-    ['Quality', 'History'],
+    ['Quality', 'Open cases', 'History'],
     ['Pages', 'Changelog', 'Roadmap', 'Start views', 'Search words', 'Feedback'],
   ]);
   // a group that starts a row has no line before it: the menu's left strip is clipped

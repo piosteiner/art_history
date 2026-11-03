@@ -27,7 +27,8 @@ const nameFrom = (v) => (SLUG.test(v) ? v.split('-').map((w) => w.charAt(0).toUp
 async function resolveRefs(db, t, doc, body) {
   const out = { creates: [], errors: [], confirm: {} };
   for (const [key, kind] of Object.entries(t.fields)) {
-    const type = kind.startsWith('ref:') ? kind.slice(4) : kind === 'parent' && t.type === 'place' ? 'place' : null;
+    const type = kind.startsWith('ref:') ? kind.slice(4) : kind.startsWith('life:') ? 'place'   // place of birth / death
+      : kind === 'parent' && t.type === 'place' ? 'place' : null;
     const v = typeof doc[key] === 'string' ? doc[key].trim() : '';
     if (!type || !(AUTO_TYPES.has(type) || type === 'place') || !v) continue;
     const target = BY_TYPE[type];

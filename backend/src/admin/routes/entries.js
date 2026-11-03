@@ -2,6 +2,24 @@
 // Mounted by src/admin/index.js in a fixed order; shared helpers in src/admin/core.js.
 const phases = require('../../phases');
 const phasesRoutes = require('./phases');
+const openCases = require('./open-cases');
+
+// Place of birth / death from the form (fields of kind life:…, content.js): the relationship born_in / died_in is the
+// one record of it — the form shows its place, saving writes it. The same place (or one of several): nothing.
+// Another: the relationship is replaced (its sources were for the old place). Empty: nothing — a working copy begun
+// before a place was added under Relationships would otherwise remove it on Publish; removing is done there.
+async function saveLifePlaces(db, type, id, life) {
+  for (const { relationship_type: rt, place } of life || []) {
+    const { rows: had } = await db.query(`SELECT r.id, p.slug FROM relationships r JOIN places p ON p.id = r.object_id
+      WHERE r.subject_type = $1 AND r.subject_id = $2 AND r.relationship_type = $3 AND r.object_type = 'place' ORDER BY r.id`, [type, id, rt]);
+    if (place === null || had.some((h) => h.slug === place)) continue;
+    const { rows: [p] } = await db.query('SELECT id FROM places WHERE slug = $1', [place]);
+    if (!p) throw new UserError(`${rt === 'born_in' ? 'Place of birth' : 'Place of death'}: no place “${place}” — pick one from the list (or create the place first).`);
+    if (had.length) await db.query('DELETE FROM relationships WHERE id = $1', [had[0].id]);
+    await db.query(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id) VALUES ($1, $2, $3, 'place', $4)`,
+      [type, id, rt, p.id]);
+  }
+}
 const express = require('express');
 const { keyExpr, sortKey } = require('../../sortkey');
 const { adminPool } = require('../../db');
@@ -219,7 +237,9 @@ async function saveEntity(user, t, body, existing, { probe = false } = {}) {
         [existing.id, String(body.version || '')])).rows.length) await refused();
       const newSlugs = await autocreate.create(db, auto.creates);
       for (const [key, s] of newSlugs) {
-        if (key === 'parent') row.parent = s; else row.refs.find((r) => r.col === REF_COLUMNS[key]).slug = s;
+        if (key === 'parent') row.parent = s;
+        else if (t.fields[key].startsWith('life:')) row.life.find((l) => l.relationship_type === t.fields[key].slice(5)).place = s;
+        else row.refs.find((r) => r.col === REF_COLUMNS[key]).slug = s;
       }
       created = auto.creates;
       if (t.fields.parent) {
@@ -275,6 +295,7 @@ async function saveEntity(user, t, body, existing, { probe = false } = {}) {
           }
         }
         await createdIn(rows[0].id);
+        if (!probe) await saveLifePlaces(db, t.type, rows[0].id, row.life);
         // images picked in the Wikidata review of this new entry (wd.images): saved together with it
         for (const img of pendingImagesOf(t, body)) await images.add(db, t.type, rows[0].id, img);
         for (const c of created) await autocreate.flag(db, c.type, c.id, { type: t.type, id: rows[0].id }, user.id);
@@ -290,6 +311,7 @@ async function saveEntity(user, t, body, existing, { probe = false } = {}) {
       if (!rowCount) await refused();
       await citations.settle(db, t.type, existing.id, body, user.id);
       await createdIn(existing.id);
+      await saveLifePlaces(db, t.type, existing.id, row.life);
     });
   } catch (err) {
     if (err instanceof duplicates.Probe) return { probe: err.candidates };
@@ -450,6 +472,7 @@ function showValue(t, key, kind, doc, links = new Map(), nameMark = () => '') {
   if (kind === 'json' || kind === 'area') return html`<pre>${JSON.stringify(v, null, 2)}</pre>`;
   if (kind === 'parent') return html`<a href="/${t.folder}/${v}">${v}</a>`;
   if (kind.startsWith('ref:')) return html`<a href="/${BY_TYPE[kind.slice(4)].folder}/${v}">${v}</a>`;
+  if (kind.startsWith('life:')) return html`<a href="/places/${v}">${v}</a>`;   // the relationship born_in / died_in
   if (/_url$/.test(key)) return html`<a href="${v}" rel="noopener" target="_blank">${v}</a>`;
   return v;
 }
@@ -511,6 +534,9 @@ router.get('/:plural/:slug', async (req, res) => {
     ? (await adminPool.query('SELECT slug, name FROM artists WHERE slug = $1', [e.doc.creator])).rows[0] : null;
   const name = e.name;
   const qa = await quality.issues(adminPool, { entity: { type: t.type, id: e.id } });
+  // its open cases (198) — the findings parked in them are not among qa
+  const cases = await openCases.ofEntry(adminPool, t.type, e.id);
+  const caseNames = cases.length ? await linkNames(adminPool, cases.map((c) => c.description_md)) : new Map();
   const pending = await collab.unpublished(t, e.id);
   const imgs = t.imageFk ? await readImages(adminPool, t.type, e.id) : [];
   const autoFlag = await autocreate.flagOf(adminPool, t.type, e.id);
@@ -574,6 +600,7 @@ router.get('/:plural/:slug', async (req, res) => {
         <div class="muted small">The mark goes away by itself when the entry is next published.</div></div>` : ''}
       ${req.query.queue ? quality.queueBar(t, e, req.query.queue, qa) : ''}
       ${quality.entityBox(qa, req.query.queue ? req.originalUrl : `/${t.folder}/${e.slug}`, { queued: qaQueued })}
+      ${openCases.entryBox(t, e, cases, caseNames)}
       ${citation ? html`<p class="citation"><b>${citation.siglum}:</b> ${raw(citation.full)}</p>` : ''}
       ${series && series.whole ? html`<p class="part-of">${series.number ? html`<b>${/^\d+$/.test(series.number) ? `No. ${series.number}` : series.number}</b>
         ${series.whole.parts_count && /^\d+$/.test(series.number) ? `of ${series.whole.parts_count} ` : ''}in ` : 'Part of '}<a href="/artworks/${series.whole.slug}">${series.whole.title}</a>

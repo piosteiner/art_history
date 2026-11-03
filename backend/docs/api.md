@@ -265,7 +265,8 @@ Where each fact comes from. The detail has `sources`: `{field: [citation]}` for 
 - `kind`: `source` (an entry of the bibliography: `source: {slug, siglum}`; its full reference is in the response's
   `bibliography` map, like the sources its texts cite), `wikidata` (`wikidata: {item, property, url}`), `text`
   (a note in words, not verified).
-- `reliability`: `database` (Wikidata, aggregators) < `institution` (museum, collection database) < `scholarly`
+- `reliability`: `other` (a family tree, a forum, a blog — set by hand, 197) < `database` (Wikidata, aggregators,
+  Wikipedia) < `institution` (museum, collection database) < `scholarly`
   (catalogue raisonné, literature) < `primary` (archive, letters); `null` for `text`. Show the best one, weaker ones as
   "also".
 - `text`: the short form to show — "Busch 1993, S. 45", "Kunsthaus Zürich, Sammlung online", "Wikidata, Q45585, P2048".

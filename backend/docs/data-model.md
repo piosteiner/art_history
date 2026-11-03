@@ -855,3 +855,25 @@ BCE") or the label alone (Korean Palaeolithic "100,000–40,000 BCE"). `bce_labe
 label names ({from, to}, negative), and `range_json()` uses them for `from_year` / `to_year` where the range has no
 bound — for the site's timeline and sorting. Filters by year work on the ranges: an open start matches any earlier
 window, a label alone none. The export writes an open BCE bound as a year ("-395 or earlier", `formatFuzzyDate`).
+
+## Open cases (migration 198)
+What can't be solved at once, followed up apart from the Quality page: `open_cases` (entity_type/entity_id — the entry;
+check_id + issue_key + finding — the parked finding, if any; description_md; where to look: source_id → a source of the
+bibliography (its shelfmark) or look_url; created_by/at; closed_at/by + resolution_md). One open case per finding
+(partial unique index). While open, its finding is left out of the Quality page (`issues()`, `counts()` in
+`src/admin/quality.js`: NOT EXISTS an open case); closed, the finding — if it still holds — is back. CMS only (no API
+grant): `/open-cases` grouped by where to look, "Open case…" on the Quality page, a box on the entry's page
+(`src/admin/routes/open-cases.js`). Audited.
+
+## Other sources (migration 197)
+`source_reliability` has a lowest value `other` (before `database`): a family tree, a forum, a blog — set by hand on
+the source. "No better than a database" is `<= 'database'` (weakly_sourced). A pasted link's website is `institution`,
+a Wikimedia site's `database` (`websiteSource()` in `src/admin/citations.js`).
+
+## Places of birth and death in the form (2026-11-03)
+Artists and people have form fields `birth_place` / `death_place` of kind `life:born_in` / `life:died_in`
+(`src/content.js`): not columns — the relationship born_in / died_in is the one record. Read as its (first) place
+(`docColumns`); written by the CMS's save (`saveLifePlaces` in `src/admin/routes/entries.js`): another place replaces
+the relationship, an empty field leaves it (removed under Relationships). YAML keeps them among the relationships
+(export leaves the fields out, import ignores them).
+

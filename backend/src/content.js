@@ -31,14 +31,14 @@ const TYPES = [
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'artist', folder: 'artists', table: 'artists', name: 'name', fields: {
     // given/family name (066): sorted by family name; sort_name ("Filed as") overrides
-    name: 'name', given_name: 'text', family_name: 'text', sort_name: 'text', names: 'names', birth: 'date', death: 'date',
+    name: 'name', given_name: 'text', family_name: 'text', sort_name: 'text', names: 'names', birth: 'date', birth_place: 'life:born_in', death: 'date', death_place: 'life:died_in',
     active: 'period',  // when active, where the dates of life are unknown (147)
     region: 'text',  // world region set by hand (191); empty = worked out from where they worked, were born …
     biography_md: 'md', wikidata_id: 'text', metadata: 'json', provenance_flag: 'text' } },  // flag: 068, admin only
   // people: everyone relevant who isn't an artist (poets, rulers, monks, sitters …) and groups (families, orders);
   // "patron" is a role from the relationships commissioned / patron of (migration 024)
   { type: 'person', folder: 'people', table: 'people', name: 'name', fields: {
-    name: 'name', given_name: 'text', family_name: 'text', sort_name: 'text', names: 'names', kind: 'text', occupations: 'text[]', birth: 'date', death: 'date', active: 'period',
+    name: 'name', given_name: 'text', family_name: 'text', sort_name: 'text', names: 'names', kind: 'text', occupations: 'text[]', birth: 'date', birth_place: 'life:born_in', death: 'date', death_place: 'life:died_in', active: 'period',
     description_md: 'md', wikidata_id: 'text', metadata: 'json', provenance_flag: 'text' } },
   { type: 'institution', folder: 'institutions', table: 'institutions', name: 'name', fields: {
     name: 'name', names: 'names', kind: 'text', founded: 'date', dissolved: 'date', place: 'ref:place', location: 'point', address: 'text',
@@ -121,6 +121,7 @@ function toRow(doc, fields) {
   let parent = null;
   const put = (col, value, expr = '$') => { cols[col] = [expr, value]; };
   let nameSources = [];
+  const life = [];   // places of birth / death sent (kind life:…)
 
   for (const key of Object.keys(doc)) {
     if (['relationships', 'images', 'provenance', 'numbers', 'phases', 'sources', 'identifiers', 'slug'].includes(key)) continue;  // their own parts, below
@@ -208,6 +209,11 @@ function toRow(doc, fields) {
       } else if (kind.startsWith('ref:')) {
         if (v !== null && !SLUG.test(v)) throw new Error('must be a slug');
         refs.push({ col: REF_COLUMNS[key], type: kind.slice(4), slug: v });
+      } else if (kind.startsWith('life:')) {
+        // place of birth / death: kept as the relationship born_in / died_in, not a column — the CMS's save writes it
+        // (saveLifePlaces in routes/entries.js); YAML has it in its relationships, so the import leaves it alone
+        if (v !== null && (typeof v !== 'string' || !SLUG.test(v))) throw new Error('must be the slug of a place');
+        if (key in doc) life.push({ relationship_type: kind.slice(5), place: v });
       } else {
         // a number where text is kept (parts_count 7 as the export writes an integer column; inventory 1926.200
         // unquoted) is read as its text
@@ -348,7 +354,7 @@ function toRow(doc, fields) {
     if (typeof doc.identifiers !== 'object' || Array.isArray(doc.identifiers)) errors.push('identifiers must be a mapping authority → number');
     else identifiers = Object.fromEntries(Object.entries(doc.identifiers).map(([k, v]) => [k, String(v)]));
   }
-  return { cols, refs, parent, relationships: Array.isArray(relationships) ? relationships : [], images, provenance, numbers, phases, sources, identifiers, nameSources, errors };
+  return { cols, refs, parent, relationships: Array.isArray(relationships) ? relationships : [], images, provenance, numbers, phases, sources, identifiers, nameSources, life, errors };
 }
 
 // Stored date → { value: '1886-03/1888-02-20', label } where label is null when it is just the generated one.
@@ -386,6 +392,10 @@ function docColumns(t) {
     else if (kind === 'area') cols.push(`ST_AsGeoJSON(t.${key})::jsonb AS ${key}`);
     else if (kind === 'parent') cols.push(`(SELECT p.slug FROM ${t.table} p WHERE p.id = t.parent_id) AS ${key}`);
     else if (kind.startsWith('ref:')) cols.push(`(SELECT r.slug FROM ${BY_TYPE[kind.slice(4)].table} r WHERE r.id = t.${REF_COLUMNS[key]}) AS ${key}`);
+    else if (kind.startsWith('life:')) {
+      cols.push(`(SELECT p.slug FROM relationships r JOIN places p ON p.id = r.object_id WHERE r.subject_type = '${t.type}' AND r.subject_id = t.id
+                   AND r.relationship_type = '${kind.slice(5)}' AND r.object_type = 'place' ORDER BY r.id LIMIT 1) AS ${key}`);
+    }
     else cols.push(`t.${key}`);
   }
   return cols.join(', ');

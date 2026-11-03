@@ -26,6 +26,7 @@ const DONE = {
   reverted: 'Change reverted — the revert itself is in the history and can be reverted too.',
   restored: 'Version restored.',
   'rel-added': 'Relationship added.', 'rel-saved': 'Relationship saved.', 'rel-deleted': 'Relationship deleted.',
+  'case-opened': 'Open case added — its finding waits there (Open cases).', 'case-closed': 'Case closed.', 'case-reopened': 'Case reopened.',
   'auto-done': 'Marked as complete.', merged: 'Merged — the other entry is gone; its address leads here.',
   'img-added': 'Image added.', 'img-saved': 'Image saved.', 'img-deleted': 'Image removed.', 'img-moved': 'Order changed.',
   converted: 'Type changed — everything that could come along is here; the old address leads here.',

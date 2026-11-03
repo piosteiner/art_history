@@ -47,6 +47,9 @@ const LABELS = {
   // given and family names (066): the list sorts by family name; "Filed as" overrides (art names, single names)
   'artist.given_name': 'Given name(s)', 'artist.family_name': 'Family name', 'artist.sort_name': 'Filed as',
   'person.given_name': 'Given name(s)', 'person.family_name': 'Family name', 'person.sort_name': 'Filed as',
+  // places of birth and death (2026-11-03): the relationships born_in / died_in, entered next to the dates
+  'artist.birth_place': 'Place of birth', 'artist.death_place': 'Place of death',
+  'person.birth_place': 'Place of birth', 'person.death_place': 'Place of death',
   provenance_flag: 'Provenance flag (why it needs checking)',
   'place.boundary_code': 'Boundary (outline)', 'artwork.kind': 'Object type',
   'institution.location': 'Exact location', 'institution.place': 'Place (city)',
@@ -142,7 +145,7 @@ const TYPE_HINTS = {
   'source.date_text': 'Letters, events, conference talks: e.g. 30.09.1913.',
   'source.siglum': 'Leave empty: generated from surnames and year (Busch 1993, Kimpel und Suckale 1995, Kat. Paris 2007, Jacobsen 1992a).',
   'source.primary_source': 'Letters, documents, historical texts — listed apart as “Quellen”.',
-  'source.reliability': 'How far a fact cited from it can be trusted. Empty = from the kind: website → institution, literature → scholarly, archival / primary → primary. Set “database” for aggregators (RKD, Getty ULAN …), “scholarly” for a catalogue raisonné online.',
+  'source.reliability': 'How far a fact cited from it can be trusted. Empty = from the kind: website → institution, literature → scholarly, archival / primary → primary. Set “database” for aggregators (RKD, Getty ULAN …), “scholarly” for a catalogue raisonné online, “other” for anything below that — a family tree (Geneanet), a forum, a blog.',
   'source.description_md': 'Your own notes: what it says, what it is good for. Not part of the citation.',
   'artwork.region': 'Leave it worked out: from where the work was made (“created in”), else its artist, else its movements. Set it only when that is wrong or missing — e.g. a work without an artist. Used by the quizzes: rounds stay in one region.',
   'artist.region': 'Leave it worked out: from where they worked or lived, else where they were born, their nationality or movements. Set it only when that is wrong or missing.',
@@ -331,6 +334,12 @@ function fieldInput(key, kind, f, ctx) {
       <input name="${name}_label" value="${f[`${key}_label`]}" placeholder="label (optional)" aria-label="${label} label"></div>
       ${hint(HINTS[kind])}</div>`;
   }
+  if (kind.startsWith('life:')) {
+    // place of birth / death: written as the relationship born_in / died_in when saved (routes/entries.js)
+    return html`<div class="field${err}"><label for="${id}">${label}</label>
+      <input id="${id}" name="${name}" value="${f[key]}" placeholder="start typing a place" autocomplete="off" data-lookup="place">
+      ${hint(`Saved as the relationship “${kind === 'life:born_in' ? 'born in' : 'died in'}” — no need to add it under Relationships. Another place replaces it; removed only there.`)}</div>`;
+  }
   if (kind === 'parent' || kind.startsWith('ref:')) {
     const options = ctx.refs[key] || [];
     const target = kind === 'parent' ? ctx.type : kind.slice(4);
@@ -395,14 +404,14 @@ const SECTIONS = {
   ],
   artist: [
     { title: 'Name', id: 'names', rows: [['name'], ['given_name', 'family_name', 'sort_name'], ['names']] },
-    { title: 'Life', id: 'life', rows: [['birth', 'death'], ['active'], ['region']] },
+    { title: 'Life', id: 'life', rows: [['birth', 'birth_place'], ['death', 'death_place'], ['active'], ['region']] },
     { title: 'Biography', id: 'text', rows: [['biography_md'], FLAG] },
     IDS(),
   ],
   person: [
     { title: 'Name', id: 'names', rows: [['name'], ['given_name', 'family_name', 'sort_name'], ['names']] },
     { title: 'Who', id: 'who', rows: [['kind', 'occupations']] },
-    { title: 'Dates', id: 'life', rows: [['birth', 'death'], ['active']] },
+    { title: 'Dates', id: 'life', rows: [['birth', 'birth_place'], ['death', 'death_place'], ['active']] },
     { title: 'Description', id: 'text', rows: [['description_md'], FLAG] },
     IDS(),
   ],

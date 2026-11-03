@@ -27,7 +27,7 @@ test('a new entry from Wikidata: its values are cited (W); a museum source added
   await expect(birth.locator('summary .cite-badge.cite-database')).toHaveText('W');
   await expect(userA.locator('dt:has-text("Death") + dd summary .cite-badge.cite-none')).toHaveText('+');
   expect(sql(`SELECT detail FROM quality_issues_live WHERE check_id = 'weakly_sourced' AND entity_type = 'artist' AND entity_id = entity_id('artist', 'claude-monet')`))
-    .toBe('no source: death · only Wikidata / databases: birth');
+    .toBe('no source: death · only Wikidata / databases / other sources: birth');
 
   // the museum's website as a source for the death date: an institution (M); the field is then well sourced
   sql(`INSERT INTO bibliography (slug, kind, name, url) VALUES ('van-gogh-museum-website-test', 'web', 'Van Gogh Museum: Collection', 'https://www.vangoghmuseum.nl/')`);
@@ -40,7 +40,7 @@ test('a new entry from Wikidata: its values are cited (W); a museum source added
   await expect(userA.locator('details.cite[open] .cite-status')).toHaveText(/Source added/);   // in place, no reload
   await expect(userA.locator('dt:has-text("Death") + dd summary .cite-badge.cite-institution')).toHaveText('M');
   expect(sql(`SELECT detail FROM quality_issues_live WHERE check_id = 'weakly_sourced' AND entity_type = 'artist' AND entity_id = entity_id('artist', 'claude-monet')`))
-    .toBe('only Wikidata / databases: birth');
+    .toBe('only Wikidata / databases / other sources: birth');
 
   // the birth date changes: Wikidata's citation no longer matches it
   sql("UPDATE artists SET birth = '[1840-01-01,1841-01-01)', birth_label = '1840' WHERE slug = 'claude-monet'");
@@ -155,6 +155,17 @@ test('paste a link: the website becomes a source (once), the page and today are 
   await userA.keyboard.press('Escape');
   await expect(rel.locator('.cite-panel')).toBeHidden();
   sql(`DELETE FROM citations WHERE source_id = entity_id('source', 'collection-test-museum'); DELETE FROM bibliography WHERE slug = 'collection-test-museum'`);
+
+  // a Wikipedia page: the site is a database (W), as Wikidata and the Wikipedia articles of the bibliography (197)
+  sql("DELETE FROM bibliography WHERE url LIKE 'https://nl.wikipedia.org/%'");
+  await userA.reload();
+  await birth.locator('details.cite > summary').click();
+  await birth.locator('.cite-panel input[name=url]').fill('https://nl.wikipedia.org/wiki/Vincent_van_Gogh');
+  await birth.locator('.cite-panel .cite-submit').click();
+  await expect(userA.locator('details.cite[open] .cite-status')).toHaveText(/Source added/);
+  await userA.keyboard.press('Escape');
+  expect(sql("SELECT reliability FROM bibliography WHERE url = 'https://nl.wikipedia.org/'")).toBe('database');
+  sql("DELETE FROM citations WHERE source_id IN (SELECT id FROM bibliography WHERE url = 'https://nl.wikipedia.org/'); DELETE FROM bibliography WHERE url = 'https://nl.wikipedia.org/'");
 });
 
 test('on the edit page: sources next to the labels; for a changed value the citation waits for Publish', async ({ userA }) => {
@@ -254,4 +265,26 @@ test('the quick select remembers the exact page: a museum object page is one chi
               WHERE entity_type = 'artist' AND entity_id = entity_id('artist', 'paul-gauguin')`))
     .toBe('birth https://collection.chip-museum.org/de/collection/item/752012/, death https://collection.chip-museum.org/de/collection/item/752012/');
   sql(`DELETE FROM citations WHERE url LIKE 'https://collection.chip-museum.org/%'; DELETE FROM bibliography WHERE url LIKE 'https://collection.chip-museum.org/%'`);
+});
+
+// 197: "other source" — below the databases (a family tree, a forum); set by hand on the source's edit page
+test('a source moved to "other": an O marker, the fact counts as weakly sourced, the API says so', async ({ userA, request }) => {
+  sql(`DELETE FROM artists WHERE slug = 'other-source-test'; DELETE FROM bibliography WHERE slug = 'family-tree-test';
+       INSERT INTO artists (slug, name, death, death_label) VALUES ('other-source-test', 'Otto Other', '[1900-01-01,1901-01-01)', '1900');
+       INSERT INTO bibliography (slug, kind, name, url, reliability) VALUES ('family-tree-test', 'web', 'A family tree', 'https://gw.example.org/', 'institution');
+       INSERT INTO citations (entity_type, entity_id, field, source_id, cited_value)
+         SELECT 'artist', entity_id('artist', 'other-source-test'), 'death', entity_id('source', 'family-tree-test'), '{"death": "[1900-01-01,1901-01-01)", "death_label": "1900"}'`);
+  await userA.goto('/bibliography/family-tree-test/edit');
+  await expect(userA.locator('#f-reliability option[value=other]')).toHaveCount(1);
+  await userA.selectOption('#f-reliability', 'other');
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/\/bibliography\/family-tree-test\?done=/);
+  expect(sql("SELECT reliability FROM bibliography WHERE slug = 'family-tree-test'")).toBe('other');
+  await userA.goto('/artists/other-source-test');
+  await expect(userA.locator('dt:has-text("Death") + dd summary .cite-badge.cite-other')).toHaveText('O');
+  expect(sql(`SELECT detail FROM quality_issues_live WHERE check_id = 'weakly_sourced' AND entity_type = 'artist' AND entity_id = entity_id('artist', 'other-source-test')`))
+    .toBe('only Wikidata / databases / other sources: death');
+  const res = await request.get(`${API}/artists/other-source-test`, { headers: { Host: 'api.localhost' } });
+  expect((await res.json()).sources.death).toEqual([expect.objectContaining({ kind: 'source', reliability: 'other' })]);
+  sql("DELETE FROM artists WHERE slug = 'other-source-test'; DELETE FROM bibliography WHERE slug = 'family-tree-test'; DELETE FROM live_docs WHERE entity_type = 'source'");
 });

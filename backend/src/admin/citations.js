@@ -9,8 +9,9 @@ const { html } = require('./html');
 
 class CitationError extends Error {}
 
-const BADGE = { database: 'W', institution: 'M', scholarly: 'L', primary: 'P', text: 'T' };
-const BADGE_TITLE = { database: 'aggregated database (Wikidata)', institution: 'institution (museum, collection database)',
+const BADGE = { other: 'O', database: 'W', institution: 'M', scholarly: 'L', primary: 'P', text: 'T' };
+const BADGE_TITLE = { other: 'other source (family tree, forum, blog — below the databases)', database: 'aggregated database (Wikidata)',
+  institution: 'institution (museum, collection database)',
   scholarly: 'scholarly (catalogue raisonné, literature)', primary: 'primary source (archive, letter)', text: 'a note in words — not yet a source of the bibliography' };
 const kindOf = (c) => c.reliability || 'text';
 
@@ -198,7 +199,8 @@ async function confirm(db, id) {
 
 // A pasted link → the bibliography source of its website: ours for that host if we have one (kind web, its url on
 // the same host), else a new one — named as given, else after the host — reliability "institution" (a museum's or
-// collection's site; change it on the source if not).
+// collection's site; change it on the source if not: "other" for a family tree, a forum …), except the Wikimedia
+// projects: "database", as Wikidata and the Wikipedia articles of the bibliography (197).
 async function websiteSource(db, url, site) {
   const host = new URL(url).hostname.replace(/^www\./, '');
   const { rows } = await db.query(`SELECT id FROM bibliography WHERE kind = 'web' AND url IS NOT NULL
@@ -208,8 +210,9 @@ async function websiteSource(db, url, site) {
   const base = name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 70) || 'website';
   let slug = base;
   for (let i = 2; (await db.query('SELECT 1 FROM bibliography WHERE slug = $1', [slug])).rows.length; i += 1) slug = `${base}-${i}`;
-  const ins = await db.query(`INSERT INTO bibliography (slug, kind, name, siglum, url, reliability) VALUES ($1, 'web', $2, $2, $3, 'institution') RETURNING id`,
-    [slug, name, `${new URL(url).protocol}//${new URL(url).host}/`]);
+  const level = /(^|\.)(wikipedia|wikimedia|wikidata|wikisource)\.org$/i.test(host) ? 'database' : 'institution';
+  const ins = await db.query(`INSERT INTO bibliography (slug, kind, name, siglum, url, reliability) VALUES ($1, 'web', $2, $2, $3, $4) RETURNING id`,
+    [slug, name, `${new URL(url).protocol}//${new URL(url).host}/`, level]);
   return ins.rows[0].id;
 }
 
