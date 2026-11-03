@@ -2,6 +2,38 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-03
+
+### Content: the Bührle works of the Kunsthaus Zürich; changelog and documentation drafts
+- **What:**
+  - **All 217 works** the Kunsthaus's online collection finds for "Bührle" are in the database: **181 new**, 36 there
+    already. The importer of 2 November (scratchpad, re-assembled from the session) took from the Solr records and
+    item pages:
+    - title, other titles as names, date, medium, dimensions, inventory number, Kunsthaus page;
+    - the loan by the credit line (the foundation's since 2021, the City of Zurich's since 1958, else the
+      Kunsthaus's own);
+    - the foundation's and the catalogues raisonnés' numbers, and the number in the 2021 complete catalogue;
+    - the Kunsthaus's 1933–1945 category (D 17, C 5, B 2, A 21; also set on the 36 existing works);
+    - 1,547 provenance steps with their places, prices and footnotes, cited with the item page.
+  - **Creators:**
+    - attributions as labels ("attributed to …", "circle of …", "Anonymous, Lower Bavaria", "X (formerly
+      attributed to Y)");
+    - two forgeries marked (`authenticity`, `passed_off_as`).
+  - **New entries:** 356 people, 54 institutions, 41 artists and 37 places, all flagged `auto_created`.
+    - The source's variants were mapped to our entries (Christie's, Durand-Ruel & Cie, Knoedler …).
+    - Wrongly split names were joined, place names put in English with a country hint (OSM).
+  - **Wikidata:** items for 172 works (by inventory number in the collection, Q685038) and 132 pictures from
+    Commons with credit and licence. The 41 new artists got their items (name, human, artistic occupation), then
+    the Wikidata fill.
+  - **Unpublished drafts for the owner:**
+    - changelog entry 2026-11-03 (20 items);
+    - documentation chapters 6 (calendars, world regions, literary works), 8 (the Bührle works) and 10 (regions in
+      the quiz).
+- **Why:** owner 2026-11-02, overnight tasks ("add all 217 artworks as detailed as possible …", "update the
+  documentation and the changelog").
+- **Revert:** audit_log, source `import` (2026-11-03 00:00–03:00 UTC); the drafts in the CMS (Pages → Changes,
+  /changelog).
+
 ## 2026-11-02
 
 ### Every work and artist has a region; a movement's region only where it is regional (migration 194)
