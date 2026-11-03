@@ -592,6 +592,11 @@ Only works with a picture (their first image), not a whole of parts. What belong
   `image_url` = `/private-images/<id>` on the admin host, `own: true`, no credit; `image?mine=only` = those images only.
 
 ## Era dates (185)
+(195) Before 1400: Korea counts the reign years of the kings of Goryeo (918–1392, line `Goryeo`) and of the Three
+Kingdoms (lines `Silla`, `Goguryeo`, `Baekje`, side by side: 414 = "Jangsu 2" with two more parts); China the succession
+Tang (with Wu Zhou) → Later Liang … Later Zhou → Song (to 1279) → Yuan (from 1260 to the Ming), each dynasty a `line` —
+1278 has two parts, Song and Yuan. Source: DDBC/DILA Time Authority (CC BY-SA 3.0). Liao, Jin and Western Xia are not
+included; 761–762 has no Chinese era (Suzong's years without a name).
 (187) Each part also names its `eras: [{name, term}]` — the glossary entries (category `calendar`) of the era names in
 the label, for links. An artist's `artworks` in the detail carry `image_url` (the first image; a whole's from its first
 part) — 2026-11-02.

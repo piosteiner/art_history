@@ -4,6 +4,22 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-03
 
+### Era dates for Korea before 1392 and China before 1368 (migration 195)
+- **What:** `calendar_eras` + 314 rows from the DDBC/DILA Time Authority (Dharma Drum Institute of Liberal Arts,
+  snapshot 2012-02, CC BY-SA 3.0; every month of every era with its first and last day):
+  - **Korea:** the kings' reign years of Goryeo (918–1392) and of Silla, Goguryeo and Baekje (lines side by side),
+    second reigns as rows of their own; Revised Romanization with sound changes (`korean-romanizer` + rules).
+  - **China:** Tang with Wu Zhou, the Five Dynasties, Song (to 1279), Yuan (Kublai's eras from 1260, to the Ming), one
+    line per dynasty. Liao, Jin and Western Xia are left out. Eras DILA splits at an emperor's change are merged;
+    761–762 stays without an era. Pinyin by `pypinyin` with era readings (長 chang, 重 chong, 大和 Taihe).
+  - **Lunar new years** before 640 from the same source (58 BC – 639). `lunar_year()` counts astronomically now, so a
+    reign across the beginning of our era has no year 0; from year 1 on nothing changes.
+  - e2e `eras.spec.js` (Goryeo 1299, the Three Kingdoms in 414, 1 BC/1 CE, Song beside Yuan); `npm run perf` 40/40.
+  - Documentation: a draft for chapter 6 replaces "Noch fehlen Korea vor 1392 und China vor 1368".
+- **Why:** owner 2026-11-03 ("could you do the korean and chinese calendar before 1400").
+- **Revert:** `DELETE FROM calendar_eras WHERE note LIKE 'DILA:%'; DELETE FROM lunar_new_years WHERE year < 640;`, and
+  `lunar_year()` from migration 185.
+
 ### Content: territory today for the remaining 143 polities
 - **What:** `country_codes` (ISO countries their territory lies in today) for every polity that had none — the German
   and Italian states, the French regimes, the Habsburg and Spanish crowns, the Netherlands' and Switzerland's forms,

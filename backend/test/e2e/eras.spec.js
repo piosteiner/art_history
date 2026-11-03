@@ -37,3 +37,22 @@ test('the API gives a Japanese work its era dates, a European one none', async (
   expect(wave.eras.created).toEqual(expect.objectContaining({ calendar: 'jp', parts: [expect.objectContaining({ label: expect.stringMatching(/Tenpō/) })] }));
   expect((await get('the-starry-night')).eras).toBeNull();
 });
+
+// 195: Korea before 1392 and China before 1368 (DILA Time Authority): the kings' reign years of Goryeo and of the Three
+// Kingdoms side by side, China's line of succession with Song and Yuan side by side until 1279, no year 0
+test('era years before 1400: Goryeo and the Three Kingdoms, Tang to Yuan', () => {
+  const parts = (cal, range) => (era(cal, range)?.parts ?? []).map((p) => `${p.line ?? ''}: ${p.label}`);
+  expect(era('kr', '[1299-01-01,1300-01-01)').parts).toEqual([expect.objectContaining({ line: 'Goryeo', label: 'Chungnyeol 25', native: '忠烈王 25年', hangul: '충렬왕 25년' })]);
+  expect(labels('kr', '[0725-01-01,0726-01-01)')).toEqual(['Seongdeok 24']);              // the Sangwonsa bell
+  expect(parts('kr', '[0414-01-01,0415-01-01)')).toContain('Goguryeo: Jangsu 2');           // the Gwanggaeto stele
+  // across the beginning of our era: 57 BC is Hyeokgeose 1, 1 BC 57, 1 CE 58
+  expect(parts('kr', '[0001-03-01 BC,0001-03-02 BC)')).toContain('Silla: Hyeokgeose Geoseogan 57');
+  expect(parts('kr', '[0001-03-01,0001-03-02)')).toContain('Silla: Hyeokgeose Geoseogan 58');
+  expect(labels('cn', '[0751-01-01,0752-01-01)')).toEqual(['Tianbao 10']);
+  expect(labels('cn', '[1127-01-01,1128-01-01)')).toEqual(['Jingkang 2 / Jianyan 1']);
+  expect(parts('cn', '[1278-06-01,1278-06-02)')).toEqual(['Song: Xiangxing 1', 'Yuan: Zhiyuan 15']);
+  expect(era('cn', '[0761-12-01,0761-12-02)')).toBeNull();                                  // Suzong's months without an era name
+  // every year of Goryeo and of China 618–1367 has its era
+  expect(sql("SELECT count(*) FROM generate_series(919, 1391) y WHERE era_label('kr', daterange(make_date(y, 1, 1), make_date(y + 1, 1, 1))) IS NULL")).toBe('0');
+  expect(sql("SELECT string_agg(y::text, ',') FROM generate_series(619, 1367) y WHERE era_label('cn', daterange(make_date(y, 1, 1), make_date(y + 1, 1, 1))) IS NULL")).toBe('');
+});
