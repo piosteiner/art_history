@@ -684,13 +684,19 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     }
 
     // the rows as stored (entry_list_rows, 127 — kept up to date per change by the worker, src/admin/quality.js); an
-    // entry the worker hasn't reached yet (created a moment ago) is computed now
+    // entry the worker hasn't reached yet (created a moment ago) is computed now. The page is chosen on the sort keys
+    // alone, its stored rows joined after: sorting 11,000 artworks with their JSON rows spilled 17 MB to disk
+    // (0.9 s per page on the perf data, 0.15 s now)
+    const order = `${rank}${e.order}`;
     const { rows: hits } = await apiPool.query(`
-      SELECT t.id, r.row, count(*) OVER () AS total
-      FROM ${e.table} t LEFT JOIN entry_list_rows r ON r.type = '${e.type}' AND r.id = t.id
-      ${where.length ? `WHERE ${where.join(' AND ')}` : ''}
-      ORDER BY ${rank}${e.order}
-      LIMIT ${p(limit)} OFFSET ${p(offset)}`, params);
+      WITH page AS (
+        SELECT t.id, count(*) OVER () AS total, row_number() OVER (ORDER BY ${order}) AS n
+        FROM ${e.table} t
+        ${where.length ? `WHERE ${where.join(' AND ')}` : ''}
+        ORDER BY ${order}
+        LIMIT ${p(limit)} OFFSET ${p(offset)})
+      SELECT pg.id, r.row, pg.total FROM page pg LEFT JOIN entry_list_rows r ON r.type = '${e.type}' AND r.id = pg.id
+      ORDER BY pg.n`, params);
     const total = hits.length ? Number(hits[0].total) : 0;
     const missing = hits.filter((h) => !h.row).map((h) => h.id);
     const live = missing.length ? await listRows(apiPool, plural, missing) : new Map();

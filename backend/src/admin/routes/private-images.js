@@ -16,7 +16,7 @@ const { adminPool } = require('../../db');
 const { html } = require('../html');
 const { toWebp } = require('./pages');
 const sharp = require('sharp');
-const { fetchPublic, picturesOn, galleryPictures, FetchError } = require('../fetch-image');
+const { fetchPublic, picturesOn, galleryPictures, viewerPictures, FetchError } = require('../fetch-image');
 
 const router = express.Router();
 
@@ -74,7 +74,7 @@ router.post('/artworks/:slug/private-images/from-link', express.json({ limit: '2
   }
   if (PAGE_TYPES.has(got.type)) {
     const html = got.body.toString('utf8');
-    const pictures = picturesOn(html, got.url, await galleryPictures(html, got.url));
+    const pictures = picturesOn(html, got.url, [...await galleryPictures(html, got.url), ...viewerPictures(html)]);
     return pictures.length ? res.json({ page: got.url, pictures }) : res.status(422).json({ error: 'no pictures found on that page — try the image’s own address' });
   }
   let image;

@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-03
 
+### Faster on 10× data: entry_regions, the global worker part, whole lists (migration 199); reference images from viewers
+- **What:** 199: `entry_regions` rebuilt with the place of making and the works' movements computed once for all works
+  (CTEs made_r, work_mv) instead of a lookup per work — 0.96 s instead of ~9 s on the perf data, the same 14,989 rows;
+  `search_words` ("did you mean") refreshed by the global part at most every 5 minutes (`quality_refresh.words_at`).
+  Global part 13.7 s → 1.9 s (3.6 s when the words are due). API lists: the page chosen on the sort keys alone, the
+  stored rows joined after (the sort carried the JSON rows and spilled 17 MB to disk) — artworks 5.8 → 2.8 s, people
+  1.4 → 0.8 s for the whole list. Reference images from a link: the Micrio viewer's images named in the page's data
+  (`viewerPictures()`, IIIF 2400 px), a IIIF image once in its widest size; "icon1.png" no longer taken for a picture.
+  Tests: search-suggest marks the words due; private-images with a viewer page.
+- **Why:** owner: look into the budgets over the limit (perf data rebuilt from today, ~3× larger); the Philadelphia
+  Museum shows three pictures of a work, the link grabber found one.
+- **Revert:** `git revert`; 199's view: re-run 194's `CREATE MATERIALIZED VIEW entry_regions` (after DROP) and its
+  indexes/grant; `ALTER TABLE quality_refresh DROP COLUMN words_at` after restoring the function's plain refresh.
+
 ### Open cases, "other" sources, places of birth and death in the form (migrations 197, 198)
 - **What:** 198 `open_cases` + CMS `/open-cases` (menu "Open cases"): "Open case…" next to a finding on the Quality page
   parks it with a Markdown description and where to look (a source of the bibliography or a link); grouped by that

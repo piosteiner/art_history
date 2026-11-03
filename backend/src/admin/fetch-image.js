@@ -99,11 +99,17 @@ function picturesOn(html, base, more = []) {
   for (const m of html.matchAll(/<img[^>]+src=["']([^"']+)["']/gi)) add(m[1]);
   for (const u of more) add(u);
   for (const m of html.matchAll(/(?:href|data-src|data-full|data-large|data-zoom-image|data-[a-z-]*-src)=["']([^"']+\.(?:jpe?g|png|webp|gif|tiff?)(?:\?[^"']*)?)["']/gi)) add(m[1]);
-  const pictures = found.filter((u) => /\.(jpe?g|png|webp|gif|tiff?)(\?|$)/i.test(u) && !/(logo|icon|sprite|banner|button|arrow|copy\.png|loading|spacer|blank)\b/i.test(u));
-  // one per picture: …-S / -M / -L, _s / _m / _l, small / medium / large → the largest
+  const pictures = found.filter((u) => /\.(jpe?g|png|webp|gif|tiff?)(\?|$)/i.test(u) && !/(logo|icon|sprite|banner|button|arrow|copy\.png|loading|spacer|blank)\d*\b/i.test(u));
+  // one per picture: …-S / -M / -L, _s / _m / _l, small / medium / large → the largest; a IIIF image
+  // (…/<id>/full/<size>/0/default.jpg) once, in its widest size
   const RANK = { s: 1, small: 1, thumb: 0, t: 0, m: 2, medium: 2, l: 3, large: 3, xl: 4, original: 5, o: 5 };
-  const key = (u) => u.replace(/([-_.](?:s|m|l|xl|t|o|small|medium|large|thumb|original))(\.\w+)(\?.*)?$/i, '$2').toLowerCase();
-  const rank = (u) => RANK[(/[-_.](s|m|l|xl|t|o|small|medium|large|thumb|original)\.\w+(\?.*)?$/i.exec(u) || [])[1]?.toLowerCase()] ?? 2;
+  const IIIF = /^(.*)\/full\/(max|full|\d+,\d*|,\d+|pct:[\d.]+)\/\d+\/default\.\w+$/i;
+  const key = (u) => (IIIF.test(u) ? IIIF.exec(u)[1] : u.replace(/([-_.](?:s|m|l|xl|t|o|small|medium|large|thumb|original))(\.\w+)(\?.*)?$/i, '$2')).toLowerCase();
+  const rank = (u) => {
+    const iiif = IIIF.exec(u);
+    if (iiif) return /^\d+,/.test(iiif[2]) ? 10 + Number.parseInt(iiif[2], 10) / 1e5 : 10;
+    return RANK[(/[-_.](s|m|l|xl|t|o|small|medium|large|thumb|original)\.\w+(\?.*)?$/i.exec(u) || [])[1]?.toLowerCase()] ?? 2;
+  };
   const best = new Map();
   for (const u of pictures) {
     const k = key(u);
@@ -135,4 +141,14 @@ async function galleryPictures(html, base) {
   return out;
 }
 
-module.exports = { fetchPublic, picturesOn, galleryPictures, blocked, FetchError, MAX_BYTES };
+// Pictures a viewer loads only when you click on (owner 2026-11-03: the Philadelphia Museum of Art shows the first of
+// three, the others with "next", without a new page): the Micrio viewer's images named in the page's data —
+// "micrio":{"shortId":"DMfki"…}, also as escaped JSON — → their IIIF image, 2400 px wide (the original can be 10,000 px
+// and over the size limit; a reference image is made smaller anyway).
+function viewerPictures(html) {
+  const ids = new Set();
+  for (const m of html.matchAll(/micrio\\?"\s*:\s*\{\s*\\?"shortId\\?"\s*:\s*\\?"([A-Za-z0-9]{3,20})\\?"/g)) ids.add(m[1]);
+  return [...ids].map((id) => `https://iiif.micr.io/${id}/full/2400,/0/default.jpg`);
+}
+
+module.exports = { fetchPublic, picturesOn, galleryPictures, viewerPictures, blocked, FetchError, MAX_BYTES };

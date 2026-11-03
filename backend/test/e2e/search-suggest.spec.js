@@ -12,7 +12,8 @@ test.beforeEach(cleanup);
 test.afterEach(cleanup);
 
 test('did you mean: unknown words replaced by the nearest of ours, the rest as typed', async ({ request }) => {
-  sql("INSERT INTO artists (slug, name) VALUES ('test-sg-zyxwortel', 'Hanna Zyxwortel'); SELECT refresh_quality();");
+  // the words are refreshed at most every 5 minutes (199): as if that much time had passed
+  sql("INSERT INTO artists (slug, name) VALUES ('test-sg-zyxwortel', 'Hanna Zyxwortel'); UPDATE quality_refresh SET words_at = NULL; SELECT refresh_quality();");
   expect(await api(request, '/search/suggest?q=zyxwortl')).toMatchObject({ query: 'Zyxwortel', words: [{ from: 'zyxwortl', to: 'Zyxwortel', edits: 1 }] });
   // operators and known words stay
   expect((await api(request, `/search/suggest?q=${encodeURIComponent('zyxvortel -hanna "x"')}`)).query).toBe('Zyxwortel -hanna "x"');

@@ -877,3 +877,9 @@ Artists and people have form fields `birth_place` / `death_place` of kind `life:
 the relationship, an empty field leaves it (removed under Relationships). YAML keeps them among the relationships
 (export leaves the fields out, import ignores them).
 
+## Speed at 10× (migration 199)
+`entry_regions` computes the place of making (`made_r`) and the works' movement regions (`work_mv`) once for all works,
+joined by hash — a LATERAL lookup per work had made its refresh ~9 s on the perf data. `search_words` is refreshed by
+the global part at most every 5 minutes (`quality_refresh.words_at`); the API's lists pick a page on the sort keys
+alone and join the stored JSON rows after (`src/routes/entities.js`).
+

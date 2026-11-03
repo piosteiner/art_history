@@ -109,6 +109,13 @@ function handle(req, res) {
     return res.end('<html><body><img src="/image_files/1-M.jpg" data-image-viewer-src="/image_files/1-L.jpg">'
       + '<span class="detailMore" data-id="7" data-artpic_page_number="2"></span><script>$.get("/collection/?at=moreArtpic")</script></body></html>');
   }
+  if (url.pathname === '/museum/viewer.html') {   // the Philadelphia Museum's Micrio viewer: one shown, three in its data
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    return res.end('<html><head><meta property="og:image" content="https://iiif.micr.io/AbCde/full/1200,/0/default.jpg">'
+      + '<link rel="icon" href="/icon1.png"></head><body><micr-io></micr-io><img src="/icon1.png?x=1">'
+      + '<script>self.__next_f.push([1,"{\\"PrimaryView\\":{\\"micrio\\":{\\"shortId\\":\\"AbCde\\"}},\\"SecondaryViews\\":{\\"0\\":'
+      + '{\\"micrio\\":{\\"shortId\\":\\"FgHij\\"}},\\"1\\":{\\"micrio\\":{\\"shortId\\":\\"KlMno\\"}}}}"])</script></body></html>');
+  }
   if (url.pathname === '/museum/collection/' && p.get('at') === 'moreArtpic') {
     const n = Number(p.get('artpic_page_number'));
     const ids = [[1, 2, 3, 4, 5], [6]][n - 1] || [];

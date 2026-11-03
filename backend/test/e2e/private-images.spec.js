@@ -108,6 +108,10 @@ test('a reference image from a link: an image, a page’s pictures to choose fro
   // a gallery that loads the rest on "+" (the Shozokan's): all its pictures, the largest size of each
   const gallery = await (await post({ url: 'https://museum.test/gallery.html' })).json();
   expect(gallery.pictures).toEqual([1, 2, 3, 4, 5, 6].map((i) => `https://museum.test/image_files/${i}-L.jpg`));
+  // a viewer that loads the others on "next" (the Philadelphia Museum's Micrio): all three from the page's data, each
+  // once (not also the 1200 px preview), 2400 px wide; the site's icon not
+  const viewer = await (await post({ url: 'https://museum.test/viewer.html' })).json();
+  expect(viewer.pictures).toEqual(['AbCde', 'FgHij', 'KlMno'].map((id) => `https://iiif.micr.io/${id}/full/2400,/0/default.jpg`));
   // the page shows where it came from; the chooser's preview works
   await userA.goto('/artworks/test-private-images');
   await expect(userA.locator('.private-images .image-item a', { hasText: 'museum.test' }).first()).toBeVisible();
