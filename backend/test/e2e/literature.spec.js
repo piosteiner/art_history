@@ -48,13 +48,13 @@ test('a literary work: created in the CMS, a chapter, its author, a scroll illus
   const w = await api(request, '/literary-works/test-lit-genji');
   expect(w).toEqual(expect.objectContaining({ type: 'literature', kind: 'tale', written: expect.objectContaining({ label: 'c. 1010' }) }));
   expect(w.authors).toEqual([expect.objectContaining({ type: 'person', slug: 'test-lit-murasaki', name: 'Murasaki Shikibu' })]);
-  expect(w.parts).toEqual([expect.objectContaining({ slug: 'test-lit-wakamurasaki', part_number: '5' })]);
+  expect(w.parts).toEqual([expect.objectContaining({ slug: 'test-lit-wakamurasaki', part_number: '5', original: null, summary: null })]);
   expect(w.editions).toEqual([expect.objectContaining({ slug: 'test-lit-tyler-2001', year: '2001' })]);
   expect(w.illustrations).toEqual([expect.objectContaining({ slug: 'test-lit-scroll', part: expect.objectContaining({ slug: 'test-lit-wakamurasaki', part_number: '5' }) })]);
   // the chapter: its whole's author, its place in the whole
   const ch = await api(request, '/literary-works/test-lit-wakamurasaki');
   expect(ch.authors.map((a) => a.slug)).toEqual(['test-lit-murasaki']);
-  expect(ch.part_of).toEqual(expect.objectContaining({ slug: 'test-lit-genji', parts_count: 1 }));
+  expect(ch.part_of).toEqual(expect.objectContaining({ slug: 'test-lit-genji', parts_count: 1, previous: null, next: null }));
   // the list: the whole, its parts and pictures counted
   const list = await api(request, '/literary-works?top=1');
   expect(list.data.find((x) => x.slug === 'test-lit-genji')).toEqual(expect.objectContaining({ parts_count: 1, illustrations_count: 1 }));
@@ -67,4 +67,15 @@ test('a literary work: created in the CMS, a chapter, its author, a scroll illus
   // found by its author's name in the CMS list
   await userA.goto('/literary-works?q=murasaki');
   await expect(userA.locator('table')).toContainText('Wakamurasaki');
+});
+
+// 209: a chapter and its whole are connected through each other, without any relationship
+test('a chapter and its work are not "not connected to anything"', () => {
+  sql(`INSERT INTO literary_works (slug, name, kind) VALUES ('test-lit-lonely', 'Test lonely tale', 'tale');
+       INSERT INTO literary_works (slug, name, kind, parent_id, part_number) VALUES ('test-lit-lonely-1', 'Test chapter', 'chapter', entity_id('literature', 'test-lit-lonely'), '1')`);
+  const unconnected = () => sql(`SELECT count(*) FROM quality_issues_live q JOIN literary_works l ON l.id = q.entity_id
+    WHERE q.check_id = 'no_relationships' AND q.entity_type = 'literature' AND l.slug LIKE 'test-lit-lonely%'`);
+  expect(unconnected()).toBe('0');
+  sql(`DELETE FROM literary_works WHERE slug = 'test-lit-lonely-1'`);
+  expect(unconnected()).toBe('1');                                                          // a work alone still is
 });

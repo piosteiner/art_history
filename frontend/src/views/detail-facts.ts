@@ -1,10 +1,10 @@
 // Detail pages: the fact rows per type (dates, makers, collection, numbers …), their source markers, the work's web page.
 import {
-  countryLink, countryName, creatorsOf, dateLabel, displayName, href, personDates, personWhat, ROLE_LABEL, otherNames, html, link, polityWithToday, previewImg, trusted, type Html,
+  countryLink, countryName, creatorsOf, dateLabel, displayName, href, personDates, personWhat, ROLE_LABEL, otherNames, html, link, nameSpan, polityWithToday, previewImg, trusted, type Html,
 } from '../html';
 import type {
   EraDate, EraPart,
-  Artwork, Citation, CreatorRef, EntityType, ArtworkSummary, Country, Dimensions, Entity, Image, KindRef, PartDimensions, Phase, PolityLink, Term,
+  Artwork, Citation, CreatorRef, EntityType, ArtworkSummary, Country, Dimensions, Entity, Image, KindRef, Literature, PartDimensions, Phase, PolityLink, Term,
 } from '../types';
 import { partsGrid } from '../series';
 import { STATUS_LABEL } from '../catalog';
@@ -372,15 +372,31 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
       // a literary work (API 193): written when and by whom, its place in a larger work, its chapters, the works of
       // art illustrating it (or one of its chapters — named on the card), editions and translations
       const authors = e.authors.length ? html`${e.authors.map((a, i) => html`${i ? ', ' : ''}${link(a.type, a.slug, a.name)}${a.label ? html` <span class="muted">(${a.label})</span>` : ''}`)}` : null;
-      const partOf = e.part_of ? html`${e.part_number ? `No. ${e.part_number}${e.part_of.parts_count ? ` of ${e.part_of.parts_count}` : ''} in ` : ''}${link('literature', e.part_of.slug, e.part_of.name)}` : null;
-      const parts = e.parts.length ? html`<section class="lit-chapters"><h2>Parts <span class="muted small">${String(e.parts.length)}</span></h2>
-        <ol class="plain-list lit-parts">${e.parts.map((p) => html`<li>${p.part_number ? html`<span class="part-number">${p.part_number}</span> ` : ''}${link('literature', p.slug, p.name)}</li>`)}</ol></section>` : null;
-      const pictures = e.illustrations.length ? html`<section class="lit-illustrations"><h2>Works of art illustrating it <span class="muted small">${String(e.illustrations.length)}</span></h2>
-        <ul class="parts-grid">${e.illustrations.map((w) => html`<li><a class="part-card" href="${href('artwork', w.slug)}">
+      const partOf = e.part_of ? html`${e.part_number ? `${e.kind === 'chapter' ? 'Chapter' : 'No.'} ${e.part_number}${e.part_of.parts_count ? ` of ${e.part_of.parts_count}` : ''} in ` : ''}${link('literature', e.part_of.slug, e.part_of.name)}` : null;
+      // the contents: each chapter with its original name, a short summary and the works of art showing it; works of
+      // the whole work (no chapter named) in the grid below
+      const card = (w: Literature['illustrations'][number]) => html`<li><a class="part-card" href="${href('artwork', w.slug)}">
           ${previewImg(w.image_url, w.slug, 250) ?? html`<span class="part-img-empty" aria-hidden="true"></span>`}
           <span class="part-title">${w.title}</span>
-          <span class="muted small">${[w.creator, w.created?.label].filter(Boolean).join(' · ')}</span>
-          ${w.part ? html`<span class="illustration-part">${w.part.part_number ? `No. ${w.part.part_number}: ` : ''}${w.part.name}</span>` : ''}</a></li>`)}</ul></section>` : null;
+          <span class="muted small">${[w.creator, w.created?.label].filter(Boolean).join(' · ')}</span></a></li>`;
+      const byPart = (slug: string) => e.illustrations.filter((w) => w.part?.slug === slug);
+      const parts = e.parts.length ? html`<section class="lit-chapters"><h2>Contents <span class="muted small">${String(e.parts.length)}</span></h2>
+        <ol class="plain-list lit-contents">${e.parts.map((p) => {
+          const works = byPart(p.slug);
+          return html`<li id="part-${p.slug}"><div class="lit-part-head">${p.part_number ? html`<span class="part-number">${p.part_number}</span> ` : ''}${link('literature', p.slug, p.name)}${
+            p.original ? html` ${nameSpan(p.original.text, p.original.lang, p.original.ruby_html, 'lit-part-original')}` : ''}${
+            works.length ? html` <span class="muted small">· ${works.length === 1 ? '1 work of art' : `${works.length} works of art`}</span>` : ''}</div>
+            ${p.summary ? html`<p class="lit-part-summary">${p.summary}</p>` : ''}
+            ${works.length ? html`<ul class="parts-grid lit-part-works">${works.map(card)}</ul>` : ''}</li>`;
+        })}</ol></section>` : null;
+      const whole = e.parts.length ? e.illustrations.filter((w) => !w.part) : e.illustrations;
+      const pictures = whole.length ? html`<section class="lit-illustrations"><h2>${e.parts.length ? 'Works of art illustrating the whole work' : 'Works of art illustrating it'} <span class="muted small">${String(whole.length)}</span></h2>
+        <ul class="parts-grid">${whole.map(card)}</ul></section>` : null;
+      // a chapter: the chapters before and after it, and back to the contents
+      const steps = e.part_of && (e.part_of.previous || e.part_of.next) ? html`<nav class="lit-steps">${
+        e.part_of.previous ? html`<a href="${href('literature', e.part_of.previous.slug)}">← ${e.part_of.previous.part_number ? `${e.part_of.previous.part_number}. ` : ''}${e.part_of.previous.name}</a>` : html`<span></span>`}
+        <a href="${href('literature', e.part_of.slug)}#part-${e.slug}">Contents</a>${
+        e.part_of.next ? html`<a href="${href('literature', e.part_of.next.slug)}">${e.part_of.next.part_number ? `${e.part_of.next.part_number}. ` : ''}${e.part_of.next.name} →</a>` : html`<span></span>`}</nav>` : null;
       const editions = e.editions.length ? html`<section class="lit-editions"><h2>Editions and translations</h2><ul class="plain-list">${e.editions.map((b) => html`<li>
         ${link('source', b.slug, b.name)}${[(b.authors ?? b.editors ?? []).join('; '), b.year].filter(Boolean).length ? html` <span class="muted">${[(b.authors?.length ? b.authors : b.editors ?? []).join('; '), b.year].filter(Boolean).join(', ')}</span>` : ''}</li>`)}</ul></section>` : null;
       return {
@@ -392,7 +408,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ['Part of', partOf],
           ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
         ],
-        extra: [pictures, parts, editions].filter((x): x is Html => !!x),
+        extra: [steps, parts, pictures, editions].filter((x): x is Html => !!x),
       };
     }
     case 'polity':

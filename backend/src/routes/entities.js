@@ -297,9 +297,16 @@ const ENTITIES = {
               AND r.object_type = 'literature' AND r.object_id IN (SELECT t.id UNION ALL SELECT c.id FROM literary_works c WHERE c.parent_id = t.id)
               ORDER BY r.id, i.position, i.id LIMIT 1) AS image_url`,
     detail: `t.kind, range_json(t.written, t.written_label) AS written, t.description_md, ${LIT_AUTHORS}, t.part_number,
-             (SELECT jsonb_build_object('slug', w.slug, 'name', w.name, 'parts_count', (SELECT count(*)::int FROM literary_works s WHERE s.parent_id = w.id))
+             -- a part: its whole, and the parts before and after it (previous / next on its page)
+             (SELECT jsonb_build_object('slug', w.slug, 'name', w.name, 'parts_count', (SELECT count(*)::int FROM literary_works s WHERE s.parent_id = w.id),
+                'previous', (SELECT jsonb_build_object('slug', s.slug, 'name', s.name, 'part_number', s.part_number) FROM literary_works s
+                   WHERE s.parent_id = w.id AND s.id <> t.id AND (s.part_sort, s.id) < (t.part_sort, t.id) ORDER BY s.part_sort DESC, s.id DESC LIMIT 1),
+                'next', (SELECT jsonb_build_object('slug', s.slug, 'name', s.name, 'part_number', s.part_number) FROM literary_works s
+                   WHERE s.parent_id = w.id AND s.id <> t.id AND (s.part_sort, s.id) > (t.part_sort, t.id) ORDER BY s.part_sort, s.id LIMIT 1))
                 FROM literary_works w WHERE w.id = t.parent_id) AS part_of,
-             (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', c.slug, 'name', c.name, 'kind', c.kind, 'part_number', c.part_number)
+             -- the contents: each part with its name in the original language and its summary (shortened below)
+             (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', c.slug, 'name', c.name, 'kind', c.kind, 'part_number', c.part_number,
+                'original', (SELECT n FROM jsonb_array_elements(c.names) n WHERE n->>'role' = 'original' LIMIT 1), 'summary_md', c.description_md)
                 ORDER BY c.part_sort NULLS LAST, c.part_number, ${sortKey('literature', 'c')}), '[]'::jsonb) FROM literary_works c WHERE c.parent_id = t.id) AS parts,
              (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', b.slug, 'name', b.name, 'year', b.year,
                 'authors', b.authors, 'editors', b.editors) ORDER BY b.year NULLS LAST, b.name), '[]'::jsonb) FROM bibliography b WHERE b.edition_of = t.id) AS editions,
@@ -796,8 +803,17 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     ]);
     // [[links]] show the linked entries' names: looked up for exactly the links in these texts
     const steps = extras.provenance || [];
-    const env = { names: await linkNames(apiPool, [...e.md.map((f) => entity[f]), ...rels.map((r) => r.notes_md), ...steps.map((p) => p.notes_md), ...steps.flatMap((p) => (p.alternatives || []).map((a) => a.notes_md)), ...(extras.phases || []).map((p) => p.notes_md)]),
+    const env = { names: await linkNames(apiPool, [...e.md.map((f) => entity[f]), ...rels.map((r) => r.notes_md), ...steps.map((p) => p.notes_md), ...steps.flatMap((p) => (p.alternatives || []).map((a) => a.notes_md)), ...(extras.phases || []).map((p) => p.notes_md),
+      ...(e.type === 'literature' ? entity.parts.map((p) => p.summary_md) : [])]),
       used: new Set(), cited: new Set() };
+    // a literary work's contents: each chapter's summary as a short plain text
+    if (e.type === 'literature') {
+      entity.parts.forEach((p) => {
+        p.summary = previewText(p.summary_md, env, 220);
+        delete p.summary_md;
+        if (p.original) p.original = { text: names.plain(p.original.text), lang: p.original.lang, ruby_html: names.rubyHtml(p.original.text) };
+      });
+    }
     const relationships = rels.map((x) => renderMd(x, ['notes_md'], env));
     steps.forEach((p) => { renderMd(p, ['notes_md'], env); (p.alternatives || []).forEach((a) => renderMd(a, ['notes_md'], env)); });
     (extras.phases || []).forEach((p) => renderMd(p, ['notes_md'], env));

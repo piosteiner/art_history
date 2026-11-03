@@ -557,14 +557,18 @@ export interface Event extends DetailBase, Located, Named {
   images: Image[]; image_url: string | null;
 }
 
+/** A part of a literary work (a chapter): enough to link it. */
+export interface LiteraturePart { slug: string; name: string; part_number: string | null }
+
 /** A literary work (API 193): its authors (a chapter: its whole's), chapters, editions in the bibliography and the
  *  works of art illustrating it or one of its chapters. */
 export interface Literature extends DetailBase, Named {
   type: 'literature';
   name: string; alt_names: string[]; kind: string | null; written: DateRange | null; part_number: string | null;
   authors: LiteratureItem['authors'];
-  part_of: (Ref & { parts_count: number }) | null;
-  parts: { slug: string; name: string; kind: string | null; part_number: string | null }[];
+  part_of: (Ref & { parts_count: number; previous: LiteraturePart | null; next: LiteraturePart | null }) | null;
+  /** The contents: each part with its name in the original language and a short summary. */
+  parts: (LiteraturePart & { kind: string | null; original: { text: string; lang: string | null; ruby_html: string | null } | null; summary: string | null })[];
   editions: { slug: string; name: string; year: string | null; authors: string[] | null; editors: string[] | null }[];
   illustrations: { slug: string; title: string; creator: string | null; created: DateRange | null; label: string | null; image_url: string | null;
     part: { slug: string; name: string; part_number: string | null } | null }[];

@@ -4,6 +4,39 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-03
 
+### Era names in the glossary for China, Korea before 1392 and the rest of Japan; Xuanhe fixed (208); chapters connected (209); Quality warnings
+- **What:**
+  - 445 glossary entries (category `calendar`) for every era of `calendar_eras` that had none, linked in
+    `calendar_era_links` (so `era_label()` names their slugs and the site links "Tianbao 10" to Tianbao): China's eras
+    Tang → Yuan and Ming/Qing ("Chinese era name (天寶) of the Tang …", [[nianhao]], dynasty and emperor; Tianfu under
+    the Later Han and Xuanhe under Qinzong are one entry with the era they continue); the kings' reign years of Goryeo,
+    Silla, Goguryeo, Baekje ("Chungnyeol of Goryeo (reign years)"; a king who reigned twice = one entry for both) and
+    the 12 Joseon kings 187 left out; Japan's 94 remaining eras and 2 of the Southern Court. People linked where the
+    entry exists and the dates agree: Taejo of Joseon, Taejo of Goryeo, Gongmin, Queen Seondeok of Silla (善德, 632–647).
+    The 310 entries from 195's data cite the new source `dila-time-authority`. The Before/After line of 168 existing
+    era entries now links the new neighbours. Script: scratchpad `eras/terms.py` → SQL, one transaction.
+  - 208: 25 January – 1 February 1126 (the end of the lunar year 1125, Qinzong's first days) read "Xuanhe 6"; it is
+    Xuanhe 7 (195's continuation row counted from 1120). Test in `eras.spec.js`.
+  - 209: `quality_issues_live` — a literary work's chapter and the work with chapters are connected through each other
+    (the 49 Genji chapters were "not connected to anything"). Test in `literature.spec.js`.
+  - Literary works shown as one book (owner: chapters as entries of their own were confusing): the site's list shows
+    whole works only (chapters when a search finds them); the work's page has "Contents" — each chapter with its
+    original name, a short summary (API `parts[].original`, `parts[].summary` = `previewText()` of its description)
+    and the works of art illustrating it; the grid below only works of the whole. A chapter's page: "Chapter 5 of 54
+    in …" and ← previous · Contents · next → (API `part_of.previous`/`next`). Chapters stay entries, so pictures,
+    plays and searches can point at one.
+  - Quality warnings that needed no judgement: Bode-Museum from the Bührle import merged into `bode-museum-berlin`;
+    Wakana I/II acknowledged as two chapters; "Zürcher Kunstgesellschaft | Kunsthaus Zürich" renamed Zürcher
+    Kunstgesellschaft (Q107750647) with Kunsthaus Zürich `part_of` it (5 × provenance_last_owner); the lenders of three
+    loans entered (two Bänninger heads of Bührle: City of Zürich; the Vesperbild BU VO.P2: the Bührle foundation),
+    cited to the Kunsthaus pages; Guben and Riehen acknowledged (border towns, coarse outline); three image credits
+    from Commons; Moholy-Nagy's move Vienna → Berlin 1920 acknowledged; BU 0140's museum page set. Parked as an open
+    case: Boudin BU 0006 (acquired before it was made — Schmit 3231).
+- **Why:** owner: "yes do 1 through 3" (era glossary entries, park the error, the warnings that need no judgement).
+- **Revert:** entries: `DELETE FROM glossary WHERE category = 'calendar' AND created_at::date = '2026-11-03'` (links go
+  with them, SET NULL) and the source `dila-time-authority`; 208: `year_one = 1120` on that row; 209: the view as in
+  207 (`git show` 197's/209's file minus the literature condition); data fixes via the history pages.
+
 ### All perf budgets met at 10× today's data (migrations 200–207)
 - **What:** after the perf data was rebuilt from today (production ~3× since the budgets were set), 17 budgets were
   over. Each fixed at its cause, with the same results as before (compared on the perf data):

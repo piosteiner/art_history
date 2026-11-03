@@ -50,6 +50,7 @@ test('era years before 1400: Goryeo and the Three Kingdoms, Tang to Yuan', () =>
   expect(parts('kr', '[0001-03-01,0001-03-02)')).toContain('Silla: Hyeokgeose Geoseogan 58');
   expect(labels('cn', '[0751-01-01,0752-01-01)')).toEqual(['Tianbao 10']);
   expect(labels('cn', '[1127-01-01,1128-01-01)')).toEqual(['Jingkang 2 / Jianyan 1']);
+  expect(labels('cn', '[1126-01-30,1126-01-31)')).toEqual(['Xuanhe 7']);                    // Qinzong kept Huizong's era (208)
   expect(parts('cn', '[1278-06-01,1278-06-02)')).toEqual(['Song: Xiangxing 1', 'Yuan: Zhiyuan 15']);
   expect(era('cn', '[0761-12-01,0761-12-02)')).toBeNull();                                  // Suzong's months without an era name
   // every year of Goryeo and of China 618–1367 has its era

@@ -8,7 +8,7 @@ import type { NameEntry } from '../types';
 
 /** The original-language name, shown small on the card ("神奈川沖浪裏"). */
 const original = (item: unknown) => (item as { names?: NameEntry[] }).names?.find((n) => n.role === 'original');
-import type { ArtistItem, ArtworkItem, InstitutionItem, ItemByPlural, Plural } from '../types';
+import type { ArtistItem, ArtworkItem, InstitutionItem, ItemByPlural, LiteratureItem, Plural } from '../types';
 import { guard, showError } from './common';
 import { entries, explain, fold, highlight, PROVENANCE_CATEGORY_LABEL, STATUS_LABEL, matches, ordered, saveSort, savedSort, sortEntries, sortOptions, type Entry } from '../catalog';
 
@@ -230,7 +230,10 @@ export function list(main: HTMLElement, plural: Plural) {
     const query_ = corrected ?? query;
     const parsed = parseQuery(query_);
     const words = parsed.words;
-    const inWhole = partOf ? all.filter((e) => (e.item as { part_of?: { slug: string } | null }).part_of?.slug === partOf) : all;
+    // literary works: the list shows whole works, their chapters only when a search finds them (on the work's page
+    // as its contents)
+    const inWhole = partOf ? all.filter((e) => (e.item as { part_of?: { slug: string } | null }).part_of?.slug === partOf)
+      : plural === 'literary-works' && !query_ ? all.filter((e) => !(e.item as LiteratureItem).part_of) : all;
     const pool = (category ? inWhole.filter((e) => fieldOf(e) === category) : inWhole).filter((e) => !gapOnly || openQuestion(e))
       .filter((e) => !heldBy || inHolding(e));
     const hits = query_ ? pool.filter((e) => matches(e, parsed)) : pool;

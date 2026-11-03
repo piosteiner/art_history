@@ -705,8 +705,14 @@ ruby rt { font-size: .5em; color: var(--muted); }
 .cat-literature { --cat: var(--c-literature); }
 /* a literary work (API 193): the works of art illustrating it, chapters, editions */
 .illustration-part { font-size: .78rem; color: var(--muted); }
-.lit-parts { columns: 2 16rem; padding-left: 1.4rem; }
-.lit-parts li { break-inside: avoid; }
+.lit-contents { display: grid; gap: .9rem; margin-top: .4rem; }
+.lit-contents > li { scroll-margin-top: 5rem; }
+.lit-contents > li:target { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+.lit-part-head { font-weight: 600; }
+.lit-part-original { font-weight: 400; color: var(--muted); margin-left: .25rem; }
+.lit-part-summary { margin: .2rem 0 0; font-size: .92rem; color: var(--muted); max-width: 46rem; }
+.lit-part-works { margin-top: .5rem; }
+.lit-steps { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin: 1rem 0; font-size: .92rem; }
 
 /* sources for facts (API 049/050): letter markers after a value, the citations in a popover */
 .cite-ref {
