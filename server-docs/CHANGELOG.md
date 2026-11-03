@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-03
 
+### "Through the same hands" answers again: shared_hands() level by level (migration 196); site tests
+- **What:** `shared_hands()` rewritten in PL/pgSQL: from the one work out a level at a time (holders of the works
+  reached → their other works not yet seen), instead of pairing every two works of every holder in the database first.
+  Same results (compared on production: 6933 rows for 8 works × depth 1–2 × with/without current holders, no
+  difference), Irene Cahen d'Anvers 9.1 s → 0.1 s. New perf budget "through the same hands" (perf data rebuilt from
+  today's production). Site tests: the network graph's click sent to the root node itself; the timeline label test
+  waits for the page to load.
+- **Why:** after the Bührle import (Bührle 209 works, his foundation 204) the API timed out (5 s) for works with these
+  holders: the section stayed empty and the Pages build of 748578f failed — the Bührle works' static pages and sitemap
+  entries weren't published. Two more site tests failed on the slower CI runner with more data (graph nodes overlapping,
+  timeline drawn again).
+- **Revert:** run the `CREATE OR REPLACE FUNCTION shared_hands` of `backend/db/migrations/088_network.sql` again (as
+  `arthistory_owner`; it slows down again with large holders); `git revert`.
+
 ### Era dates for Korea before 1392 and China before 1368 (migration 195)
 - **What:** `calendar_eras` + 314 rows from the DDBC/DILA Time Authority (Dharma Drum Institute of Liberal Arts,
   snapshot 2012-02, CC BY-SA 3.0; every month of every era with its first and last day):

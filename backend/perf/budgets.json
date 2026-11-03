@@ -17,6 +17,7 @@
       "path": "/map/artworks/las-meninas",
       "budget": 400
     },
+    "through the same hands (shared_hands, 196)": { "path": "/network/shared-hands?artwork=artworks/irene-cahen-danvers-la-petite-irene&depth=2", "budget": 800 },
     "graph, depth 2": {
       "path": "/graph/artists/francisco-goya?depth=2",
       "budget": 300

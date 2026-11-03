@@ -618,7 +618,9 @@ test('network graph: nodes, details on click, filters in the URL', async ({ page
   await page.goto('/graph/artists/vincent-van-gogh?depth=2');
   await expect(page.locator('.node.root')).toHaveCount(1);
   expect(await page.locator('.node').count()).toBeGreaterThan(2);
-  await page.locator('.node.root circle').click({ force: true });
+  // the click sent to the root node itself: a mouse click at its place can land on another node drifting over it while
+  // the layout settles (CI 2026-11-03: Henri Matisse, Les Ponts d'Asnières — more nodes since the Bührle works)
+  await page.locator('.node.root').dispatchEvent('click');
   await expect(page.locator('.graph-info h2')).toHaveText('Vincent van Gogh');
   await page.locator('.graph-cats input[value=influence]').uncheck();
   await expect(page).toHaveURL(/categories=/);
@@ -3283,6 +3285,9 @@ test('timeline: a name longer than its column slides on hover until its end show
   await page.goto('/?all');
   const long = page.locator('.row-label-long').first();
   await expect(long).toBeVisible();
+  // the timeline is drawn again as its data arrives: hold on to a label only once the page has loaded (CI 2026-11-03:
+  // "element is not attached")
+  await page.waitForLoadState('networkidle');
   await long.scrollIntoViewIfNeeded();
   const box = (await long.boundingBox())!;
   await page.mouse.move(box.x + 10, box.y + box.height / 2);

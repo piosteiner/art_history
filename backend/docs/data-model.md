@@ -733,7 +733,10 @@ whereabouts) — a moment behind a change, never all edges computed per request 
 `provenance_inferences` has its CTEs `NOT MATERIALIZED` (126), so a filter on `artwork_id` reaches the chains: one
 work 1.5 s → 37 ms; `provenance_date_narrowable` is therefore a check per work, not global. `entry_path()` — plpgsql breadth-first search with a jsonb "seen" map (a recursive CTE
 can't skip entries reached before, so it would follow every path); `hands_network(daterange)` → JSON {holders,
-handovers}; `shared_hands()` — recursive CTE over (work, depth) with UNION and `SEARCH BREADTH FIRST`.
+handovers}; `shared_hands()` — since 196 a PL/pgSQL loop, level by level from the one work: the holders of the works reached,
+their other works not yet seen (arrays carry the frontier and the works seen). The recursive CTE of 088 paired every two
+works of every holder first — n² per holder, 9 s once the Bührle collection gave one holder 209 works; a recursive
+query can't drop what an earlier level already reached (UNION only removes rows equal in every column).
 
 ## Versions as of a moment (migration 089)
 From `audit_log`: `rows_as_of(table, ts, filter jsonb)` — a row's state at ts is its last logged state at or before
