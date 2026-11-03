@@ -26,9 +26,13 @@ fs.mkdirSync(DIR, { recursive: true });
 const [TEST_FROM, TEST_TO] = (process.env.THUMB_TEST_SERVER || '').split(' ');
 const fetchUrl = (src) => (TEST_FROM && src.startsWith(TEST_FROM) ? TEST_TO + src.slice(TEST_FROM.length) : src);
 
+// the Art Institute of Chicago serves its IIIF images only to clients naming themselves in its own header (its API's
+// documented AIC-User-Agent); without it every request is refused with 403
+const extraHeaders = (src) => (/^https:\/\/([a-z0-9-]+\.)*artic\.edu\//.test(src) ? { 'AIC-User-Agent': 'arthistory.piogino.ch thumbnails (pioginosteiner@gmail.com)' } : {});
+
 async function make(src, width, file) {
   const res = await fetch(fetchUrl(src), { signal: AbortSignal.timeout(TIMEOUT), redirect: 'follow',
-    headers: { 'User-Agent': 'arthistory.piogino.ch thumbnails (pioginosteiner@gmail.com)', Accept: 'image/*' } });
+    headers: { 'User-Agent': 'arthistory.piogino.ch thumbnails (pioginosteiner@gmail.com)', Accept: 'image/*', ...extraHeaders(src) } });
   if (!res.ok) throw Object.assign(new Error(`HTTP ${res.status}`), { status: 502 });
   if (!/^image\//.test(res.headers.get('content-type') || '')) throw Object.assign(new Error('not an image'), { status: 502 });
   if (Number(res.headers.get('content-length') || 0) > MAX_BYTES) throw Object.assign(new Error('too large'), { status: 502 });

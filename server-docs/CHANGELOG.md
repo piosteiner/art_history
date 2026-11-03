@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-03
 
+### Fuji prints from the Art Institute of Chicago; thumbnails from artic.edu; four entries linked
+- **What:**
+  - Thirty-six Views of Mount Fuji: the 21 prints without a museum page (12 without any museum, 9 whose Wikidata
+    museum gave no page) now as the Art Institute of Chicago's impression (Clarence Buckingham Collection: page,
+    accession number, public-domain IIIF image, "c. 1830–1833", cited to the AIC). 24 are the Met's, Fujimihara stays
+    the Tokyo National Museum's (no picture yet).
+  - `src/routes/thumbs.js`: requests to artic.edu carry the `AIC-User-Agent` header the AIC's API documents — without
+    it their image server refuses every non-browser client (403), so the site's thumbnails stayed empty.
+  - Linked: Martin Flersheim as owner and Florence Flersheim as co-owner of Hodler's *Jungfraumassiv* step (it read
+    "Martin and Florence Flersheim"), married to each other; Christopher Columbus (new, from Wikidata Q7322) took part in
+    "first arrival of Christopher Columbus to America" as commander. Tarrant County kept (owner) and acknowledged: its
+    only place, Fort Worth, was removed on 2026-11-02.
+- **Why:** owner, 2026-11-03 ("choose a public domain impression for each"; "keep them and link if possible").
+- **Revert:** `git revert` (thumbs); the data via the history pages.
+
 ### Quiz: contemporary art from every region; three groups of works completed
 - **What:**
   - `src/routes/quiz.js`: a round of an artist whose works all date from 1945 on, or of a movement beginning in 1945
