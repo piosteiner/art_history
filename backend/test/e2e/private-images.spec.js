@@ -116,6 +116,10 @@ test('a reference image from a link: an image, a page’s pictures to choose fro
   await userA.goto('/artworks/test-private-images');
   await expect(userA.locator('.private-images .image-item a', { hasText: 'museum.test' }).first()).toBeVisible();
   expect((await userA.request.get(`/private-images/preview?url=${encodeURIComponent('https://museum.test/painting.png')}`)).headers()['content-type']).toBe('image/webp');
+  // a bot check (the MFA Boston's): said as one, with what to do instead — not "answered 202"
+  const challenged = await post({ url: 'https://museum.test/challenged.html' });
+  expect(challenged.status()).toBe(422);
+  expect((await challenged.json()).error).toMatch(/only browsers in \(a bot check\).*paste or drop/);
   // never our own server or a private network
   for (const url of ['http://127.0.0.1:3004/v1/health', 'http://localhost/', 'http://169.254.169.254/latest/meta-data/', 'http://[::1]/', 'file:///etc/passwd']) {
     const r = await post({ url });

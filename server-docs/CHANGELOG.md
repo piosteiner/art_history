@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-03
 
+### Reference images from a link: a bot check said as one
+- **What:** `fetchPublic()` (src/admin/fetch-image.js) recognises a bot check — AWS WAF `x-amzn-waf-action` (the MFA
+  Boston answers 202 with nothing), Cloudflare `cf-mitigated` (the British Museum) — and says so: "the site lets only
+  browsers in (a bot check) — open the page, copy or save the picture and paste or drop it here". Not worked around.
+  e2e test with a challenged fixture page.
+- **Why:** owner got "error 202" for collections.mfa.org.
+- **Revert:** `git revert`.
+
 ### Faster on 10× data: entry_regions, the global worker part, whole lists (migration 199); reference images from viewers
 - **What:** 199: `entry_regions` rebuilt with the place of making and the works' movements computed once for all works
   (CTEs made_r, work_mv) instead of a lookup per work — 0.96 s instead of ~9 s on the perf data, the same 14,989 rows;

@@ -109,6 +109,10 @@ function handle(req, res) {
     return res.end('<html><body><img src="/image_files/1-M.jpg" data-image-viewer-src="/image_files/1-L.jpg">'
       + '<span class="detailMore" data-id="7" data-artpic_page_number="2"></span><script>$.get("/collection/?at=moreArtpic")</script></body></html>');
   }
+  if (url.pathname === '/museum/challenged.html') {   // the MFA Boston's firewall: a bot check, 202 and nothing
+    res.writeHead(202, { 'Content-Type': 'text/html; charset=UTF-8', 'x-amzn-waf-action': 'challenge', 'Content-Length': '0' });
+    return res.end();
+  }
   if (url.pathname === '/museum/viewer.html') {   // the Philadelphia Museum's Micrio viewer: one shown, three in its data
     res.writeHead(200, { 'Content-Type': 'text/html' });
     return res.end('<html><head><meta property="og:image" content="https://iiif.micr.io/AbCde/full/1200,/0/default.jpg">'

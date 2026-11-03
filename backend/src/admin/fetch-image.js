@@ -49,6 +49,13 @@ function get(url, { test, referer }) {
         res.resume();
         return resolve({ redirect: new URL(res.headers.location, url) });
       }
+      // a bot check (AWS WAF "challenge" — the MFA Boston —, Cloudflare's "Just a moment" — the British Museum): only a
+      // browser gets through; we don't get around it — said plainly, with what works instead
+      const challenged = res.headers['x-amzn-waf-action'] || res.headers['cf-mitigated'] || (res.statusCode === 202 && !Number(res.headers['content-length'] || 1));
+      if (challenged) {
+        res.resume();
+        return reject(new FetchError('the site lets only browsers in (a bot check) — open the page, copy or save the picture and paste or drop it here'));
+      }
       if (res.statusCode !== 200) { res.resume(); return reject(new FetchError(`the site answered ${res.statusCode}`)); }
       if (Number(res.headers['content-length'] || 0) > MAX_BYTES) { res.destroy(); return reject(new FetchError('larger than 15 MB')); }
       const chunks = [];
