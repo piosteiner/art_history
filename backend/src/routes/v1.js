@@ -80,8 +80,10 @@ router.get('/search', async (req, res) => {
            round(greatest(word_similarity(f_unaccent($1), f_unaccent(name)),
                           0.9 * word_similarity(f_unaccent($1), f_unaccent(coalesce(alt_text, ''))))::numeric, 2) AS score
     FROM entity_index
+    -- the expressions of each table's trigram indexes (<table>_name_trgm, _alt_trgm): no coalesce around alt_text, or
+    -- every entry's names are folded on each search (1.3 s on the perf data, 7 ms with the indexes)
     WHERE f_unaccent(name) ILIKE f_unaccent($2) OR f_unaccent($1) <% f_unaccent(name)
-       OR f_unaccent(coalesce(alt_text, '')) ILIKE f_unaccent($2) OR f_unaccent($1) <% f_unaccent(coalesce(alt_text, ''))
+       OR f_unaccent(alt_text) ILIKE f_unaccent($2) OR f_unaccent($1) <% f_unaccent(alt_text)
     ORDER BY score DESC, sort_key COLLATE sort_natural
     LIMIT 20`, [q, `%${q.replace(/[\\%_]/g, '\\$&')}%`]);
   const preview = await previewsOfHits(rows);

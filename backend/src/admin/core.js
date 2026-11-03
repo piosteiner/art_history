@@ -313,8 +313,14 @@ async function relationshipTypes(db, entityType, { reverse = false } = {}) {
   return rows;
 }
 
+// Every entry for the relationship pickers — kept per data version (src/cache.js: the change counter, while the derived
+// data is current; else computed each time): 41,000 entries sorted took 250–330 ms of every entry page at 10× today
+let entitiesKept = null;
 async function allEntities(db) {
+  const version = await require('../cache').dataVersion();
+  if (version && entitiesKept && entitiesKept.version === version) return entitiesKept.rows;
   const { rows } = await db.query("SELECT type::text || '/' || slug AS ref, name, type::text AS type FROM entity_index ORDER BY sort_key COLLATE sort_natural");
+  if (version) entitiesKept = { version, rows };
   return rows;
 }
 

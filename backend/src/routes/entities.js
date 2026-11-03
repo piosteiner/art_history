@@ -651,6 +651,19 @@ async function listRows(db, plural, ids) {
   return new Map(rows.map(({ _id, ...r }) => [String(_id), nameCountry(shapeNames(r, e.name))]));
 }
 
+// The order of a whole list, kept per data version (src/cache.js: the change counter, while the derived data is current —
+// else computed each time): ids as text, in the list's order.
+const listOrders = new Map();   // plural → { version, ids }
+async function listOrder(plural, e) {
+  const version = await require('../cache').dataVersion();
+  const kept = listOrders.get(plural);
+  if (version && kept && kept.version === version) return kept.ids;
+  const { rows } = await apiPool.query(`SELECT t.id::text AS id FROM ${e.table} t ORDER BY ${e.order}`);
+  const ids = rows.map((r) => r.id);
+  if (version) listOrders.set(plural, { version, ids });
+  return ids;
+}
+
 for (const [plural, e] of Object.entries(ENTITIES)) {
   router.get(`/${plural}`, async (req, res) => {
     const limit = intParam(req.query, 'limit', { min: 1, max: 500, fallback: 100 });
@@ -688,16 +701,30 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     // alone, its stored rows joined after: sorting 11,000 artworks with their JSON rows spilled 17 MB to disk
     // (0.9 s per page on the perf data, 0.15 s now)
     const order = `${rank}${e.order}`;
-    const { rows: hits } = await apiPool.query(`
-      WITH page AS (
-        SELECT t.id, count(*) OVER () AS total, row_number() OVER (ORDER BY ${order}) AS n
-        FROM ${e.table} t
-        ${where.length ? `WHERE ${where.join(' AND ')}` : ''}
-        ORDER BY ${order}
-        LIMIT ${p(limit)} OFFSET ${p(offset)})
-      SELECT pg.id, r.row, pg.total FROM page pg LEFT JOIN entry_list_rows r ON r.type = '${e.type}' AND r.id = pg.id
-      ORDER BY pg.n`, params);
-    const total = hits.length ? Number(hits[0].total) : 0;
+    let hits;
+    let total;
+    if (!where.length) {
+      // the whole list (what the site loads, page after page): its order kept per data version — a page is a slice of
+      // it and its stored rows, not all entries sorted again (sort keys computed for each: 11,000 artworks 0.13 s a page)
+      const ids = await listOrder(plural, e);
+      total = ids.length;
+      const slice = ids.slice(offset, offset + limit);
+      const { rows: stored } = await apiPool.query(`SELECT id::text AS id, row FROM entry_list_rows WHERE type = $1 AND id = ANY ($2::bigint[])`,
+        [e.type, slice]);
+      const byId = new Map(stored.map((r) => [r.id, r.row]));
+      hits = slice.map((id) => ({ id, row: byId.get(String(id)) || null }));
+    } else {
+      ({ rows: hits } = await apiPool.query(`
+        WITH page AS (
+          SELECT t.id, count(*) OVER () AS total, row_number() OVER (ORDER BY ${order}) AS n
+          FROM ${e.table} t
+          WHERE ${where.join(' AND ')}
+          ORDER BY ${order}
+          LIMIT ${p(limit)} OFFSET ${p(offset)})
+        SELECT pg.id, r.row, pg.total FROM page pg LEFT JOIN entry_list_rows r ON r.type = '${e.type}' AND r.id = pg.id
+        ORDER BY pg.n`, params));
+      total = hits.length ? Number(hits[0].total) : 0;
+    }
     const missing = hits.filter((h) => !h.row).map((h) => h.id);
     const live = missing.length ? await listRows(apiPool, plural, missing) : new Map();
     const rows = hits.map((h) => h.row || live.get(String(h.id))).filter(Boolean);
@@ -760,9 +787,9 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     const [rels, extras, mentionedIn] = await Promise.all([
       apiPool.query(RELATIONSHIPS_SQL, [e.type, id]).then((r) => mergePhaseEdges(r.rows)),
       EXTRAS[e.type] ? EXTRAS[e.type](id) : {},
-      // backlinks: the entries whose texts [[link]] this one (view content_links, migration 030); a term has used_in
+      // backlinks: the entries whose texts [[link]] this one (content_links, 030 — stored since 200); a term has used_in
       e.type === 'term' ? null : apiPool.query(`
-        SELECT DISTINCT x.type::text AS type, x.slug, x.public_id, x.name, x.sort_key COLLATE sort_natural AS sort_key FROM content_links l
+        SELECT DISTINCT x.type::text AS type, x.slug, x.public_id, x.name, x.sort_key COLLATE sort_natural AS sort_key FROM content_links_stored l
         JOIN entity_index x ON (x.type, x.id) = (l.entity_type, l.entity_id)
         WHERE l.target_type = $1 AND l.target_slug = $2 AND NOT (x.type = $1::entity_type AND x.id = $3)
         ORDER BY sort_key`, [e.type, entity.slug, id]).then((r) => r.rows.map(({ sort_key: _, ...m }) => m)),

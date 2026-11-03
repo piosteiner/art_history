@@ -8,10 +8,8 @@
 //      words ("painted" matches "painting"), websearch_to_tsquery understands  "exact phrase", -exclude, a OR b
 // and separately finds relationships by their label, notes and sources.
 //
-// There is no index for 2 and 3 yet: at this size a sequential scan of every table takes a few milliseconds.
-// Once there are thousands of long texts, add an expression index per table, e.g.
-//   CREATE INDEX artists_fts ON artists USING gin (to_tsvector('english', f_unaccent(coalesce(biography_md, ''))));
-// (the query below uses exactly that expression, so the planner would pick it up).
+// Searched in stored documents (admin_search_docs, migration 201) through trigram and full-text indexes; the
+// derived-data worker keeps them (refreshDocs).
 const { html, raw } = require('./html');
 const { BY_TYPE, TYPES } = require('../content');
 const { THRESHOLD, likeParam, scoreSql, altScoreSql, altSql } = require('./match');
@@ -23,8 +21,7 @@ const STOP = '\u0003';
 // One row per entity, whatever its table, generated from the content model (src/content.js):
 //   name · alt (alternative names/titles + sort name, fuzzy-matched) · other (short text fields, slug, Wikidata id,
 //   metadata — substring-matched) · body (the Markdown text, full-text searched)
-function docsSql() {
-  return TYPES.map((t) => {
+function docSql(t) {
     const entries = Object.entries(t.fields);
     const shortText = [...entries.filter(([k, kind]) => kind === 'text' && k !== 'sort_name').map(([k]) => `t.${k}`),
       // lists (an artwork's materials) are searchable text too; other names are in alt (altSql)
@@ -34,22 +31,50 @@ function docsSql() {
          concat_ws(' · ', ${[...shortText, "nullif(t.metadata, '{}')::text"].join(', ')}) AS other,
          ${body ? `t.${body[0]}` : 'NULL'} AS body
     FROM ${t.table} t`;
-  }).join('\n  UNION ALL\n  ');
+}
+const docsSql = () => TYPES.map(docSql).join('\n  UNION ALL\n  ');
+
+// The stored documents (admin_search_docs, 201) of some entries brought up to date — by the derived-data worker with
+// the list rows (src/admin/quality.js), so every changed entry is refreshed; an entry gone loses its document.
+async function refreshDocs(db, type, ids) {
+  const t = BY_TYPE[type];
+  if (!t || !ids.length) return;
+  await db.query(`
+    WITH d AS (SELECT * FROM (${docSql(t)}) x WHERE x.id = ANY ($1::bigint[]))
+    INSERT INTO admin_search_docs AS a (type, id, slug, name, alt, other, body, fname, falt, fother, body_tsv)
+      SELECT d.type, d.id, d.slug, d.name, d.alt, d.other, d.body, f_unaccent(d.name), f_unaccent(coalesce(d.alt, '')),
+             f_unaccent(d.slug || ' · ' || coalesce(d.other, '')), to_tsvector('english', f_unaccent(coalesce(d.body, '')))
+      FROM d
+    ON CONFLICT (type, id) DO UPDATE SET slug = EXCLUDED.slug, name = EXCLUDED.name, alt = EXCLUDED.alt, other = EXCLUDED.other,
+      body = EXCLUDED.body, fname = EXCLUDED.fname, falt = EXCLUDED.falt, fother = EXCLUDED.fother, body_tsv = EXCLUDED.body_tsv
+    WHERE (a.slug, a.name, a.alt, a.other, a.body) IS DISTINCT FROM (EXCLUDED.slug, EXCLUDED.name, EXCLUDED.alt, EXCLUDED.other, EXCLUDED.body)`, [ids]);
+  await db.query(`DELETE FROM admin_search_docs a WHERE a.type = $1 AND a.id = ANY ($2::bigint[])
+    AND NOT EXISTS (SELECT 1 FROM ${t.table} x WHERE x.id = a.id)`, [type, ids]);
 }
 
+// The stored documents (admin_search_docs, 201: folded once, text vector stored): first the candidates through the
+// indexes — trigram matches of the name (also without spaces), the other names and the identifiers, or the full text
+// (word similarity from 0.5, set for this transaction: search()) — then scored by match.js's rules (scoreSql,
+// altScoreSql), which every candidate set holds: 0.11 s instead of 5.3 on the perf data.
 const ENTITY_SQL = `
-WITH q AS (SELECT websearch_to_tsquery('english', f_unaccent($1)) AS tsq),
-docs AS (
-  ${docsSql()}
+WITH q AS (SELECT websearch_to_tsquery('english', f_unaccent($1)) AS tsq, f_unaccent($1) AS fq, f_unaccent($2) AS fl),
+cand AS (
+  SELECT d.* FROM admin_search_docs d, q
+  WHERE d.fname ILIKE '%' || q.fl || '%' OR q.fq <% d.fname OR replace(q.fq, ' ', '') <% replace(d.fname, ' ', '')
+     OR d.falt ILIKE '%' || q.fl || '%' OR q.fq <% d.falt
+     OR d.fother ILIKE '%' || q.fl || '%'
+     OR d.body_tsv @@ q.tsq
 ),
 scored AS (
   SELECT d.*,
-         ${scoreSql('d.name')} AS name_score,
-         ${altScoreSql('d.alt')} AS alt_score,
-         f_unaccent(d.slug || ' · ' || d.other) ILIKE '%' || f_unaccent($2) || '%' AS other_hit,
-         to_tsvector('english', f_unaccent(coalesce(d.body, ''))) AS body_tsv,
+         CASE WHEN d.fname ILIKE q.fl || '%' THEN 1.1
+              WHEN ' ' || d.fname ILIKE '% ' || q.fl || '%' THEN 1.05
+              WHEN d.fname ILIKE '%' || q.fl || '%' THEN 1.0
+              ELSE greatest(word_similarity(q.fq, d.fname), word_similarity(replace(q.fq, ' ', ''), replace(d.fname, ' ', ''))) END AS name_score,
+         CASE WHEN d.falt ILIKE '%' || q.fl || '%' THEN 0.9 ELSE 0.9 * word_similarity(q.fq, d.falt) END AS alt_score,
+         d.fother ILIKE '%' || q.fl || '%' AS other_hit,
          q.tsq
-  FROM docs d, q
+  FROM cand d, q
 )
 SELECT type::text, slug, name,
        name_score >= ${THRESHOLD} AS name_hit,
@@ -65,7 +90,7 @@ SELECT type::text, slug, name,
                 CASE WHEN body_tsv @@ tsq THEN 0.2 + ts_rank(body_tsv, tsq) ELSE 0 END) AS score
 FROM scored
 WHERE name_score >= ${THRESHOLD} OR alt_score >= ${THRESHOLD} OR other_hit OR body_tsv @@ tsq
-ORDER BY score DESC, name COLLATE sort_natural
+ORDER BY score DESC, name COLLATE sort_natural, slug   -- two of one name and score (Emil Bührle): always one order
 LIMIT 100`;
 
 // Picker suggestions (GET /lookup): best name / alternative-name matches of the given types.
@@ -108,8 +133,22 @@ LIMIT 50`;
 
 async function search(db, q) {
   const params = [q, likeParam(q)];
-  const [entities, relationships] = await Promise.all([db.query(ENTITY_SQL, params), db.query(RELATIONSHIP_SQL, params)]);
-  return { entities: entities.rows, relationships: relationships.rows };
+  // the entities in a transaction of their own: <% at match.js's THRESHOLD (pg_trgm's default is 0.6)
+  const entities = async () => {
+    const client = await db.connect();
+    try {
+      await client.query('BEGIN');
+      await client.query("SELECT set_config('pg_trgm.word_similarity_threshold', $1, true)", [String(THRESHOLD)]);
+      const r = await client.query(ENTITY_SQL, params);
+      await client.query('COMMIT');
+      return r;
+    } catch (err) {
+      await client.query('ROLLBACK').catch(() => {});
+      throw err;
+    } finally { client.release(); }
+  };
+  const [ents, relationships] = await Promise.all([entities(), db.query(RELATIONSHIP_SQL, params)]);
+  return { entities: ents.rows, relationships: relationships.rows };
 }
 
 // Escaped text with the ts_headline markers turned into <mark>.
@@ -158,4 +197,4 @@ async function lookup(db, q, types) {
   return (await db.query(LOOKUP_SQL, [q, likeParam(q), types])).rows;
 }
 
-module.exports = { search, resultsPage, lookup };
+module.exports = { search, resultsPage, lookup, refreshDocs };

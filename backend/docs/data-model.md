@@ -883,3 +883,16 @@ joined by hash — a LATERAL lookup per work had made its refresh ~9 s on the pe
 the global part at most every 5 minutes (`quality_refresh.words_at`); the API's lists pick a page on the sort keys
 alone and join the stored JSON rows after (`src/routes/entities.js`).
 
+## Stored for speed (migrations 200–207)
+Kept up to date so that pages never compute them over the whole database:
+- `content_links_stored` — the view `content_links` per entry, by triggers on every text table (`content_links_touch`:
+  an entry's own text, a relationship's notes for its subject, a provenance step's for the work). Backlinks read it.
+- `admin_search_docs` — the CMS search's document of each entry (name, other names, identifiers, text; folded,
+  text vector), refreshed by the worker with the list rows (`refreshDocs()`); trigram and full-text indexes. Search:
+  candidates through the indexes (word similarity from 0.5 for that transaction), then match.js's scores.
+- `quiz_movement_works`, `quiz_movement_artists`, `quiz_pictured` — materialized, refreshed by the global part at
+  most every 5 minutes (`quality_refresh.quiz_at`); the visitors' quiz reads them.
+- `provenance_gaps_stored` — each work's gaps in 1933–1945, with its completeness (process_derived).
+- `entry_words` — the words of each entry's names, by triggers (`entry_words_touch`); `search_words` counts them.
+- `encounters(…, etype, eid)` computes only that entry's stays and the others' at its places (203).
+

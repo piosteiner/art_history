@@ -573,9 +573,9 @@ router.get('/:plural/:slug', async (req, res) => {
   const citation = t.type === 'source' ? (await bibliography.loadCatalogue(adminPool)).get(e.slug) : null;
   const linkMap = await linkNames(adminPool, [...Object.entries(t.fields).filter(([, k]) => k === 'md').map(([key]) => e.doc[key]),
     ...provSteps.map((p) => p.notes_md)]);
-  // the entries whose texts [[link]] this one (view content_links, migration 030) — for a term: where it is used
+  // the entries whose texts [[link]] this one (content_links, 030 — stored since 200) — for a term: where it is used
   const usedIn = (await adminPool.query(`
-    SELECT DISTINCT e.type::text AS type, e.slug, e.name, e.sort_key COLLATE sort_natural AS sort_key FROM content_links l JOIN entity_index e ON (e.type, e.id) = (l.entity_type, l.entity_id)
+    SELECT DISTINCT e.type::text AS type, e.slug, e.name, e.sort_key COLLATE sort_natural AS sort_key FROM content_links_stored l JOIN entity_index e ON (e.type, e.id) = (l.entity_type, l.entity_id)
     WHERE l.target_type = $1 AND l.target_slug = $2 AND NOT (e.type = $1::entity_type AND e.id = $3) ORDER BY sort_key`, [t.type, e.slug, e.id])).rows;
   const main = imgs[0];
   send(req, res, {

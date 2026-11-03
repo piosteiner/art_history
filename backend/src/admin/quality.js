@@ -191,6 +191,8 @@ async function listBatch(size) {
       ids.set(q.id, (ids.get(q.id) ?? true) && q.full_run);   // full only if every queuing was the full run
     }
     for (const [type, ids] of byType) {
+      // the CMS search's documents (201) with the list rows: every changed entry passes here
+      await require('./search').refreshDocs(client, type, [...ids.keys()]);
       if (!pluralOf[type]) continue;
       const rows = await listRows(client, pluralOf[type], [...ids.keys()]);
       const { rows: written } = await client.query(`

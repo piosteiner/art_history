@@ -386,10 +386,9 @@ router.post('/quality/batch/terms', async (req, res) => {
 router.get('/quality/provenance-gaps', async (req, res) => {
   const { rows } = await adminPool.query(`
     SELECT w.slug, w.title, a.name AS creator, w.created_label, c.documented_percent, c.gap_1933_1945_days, c.gap_days,
-           (SELECT jsonb_agg(jsonb_build_object('from', extract(year FROM lower(g.period)), 'to', extract(year FROM upper(g.period) - 1),
-                     'before', g.before_name, 'after', g.after_name, 'candidates', coalesce(g.candidates, '{}')) ORDER BY g.period)
-              FROM provenance_coverage(w.id) g WHERE g.kind = 'gap' AND g.in_1933_1945) AS gaps
+           pg.gaps   -- stored with the completeness (204: provenance_gaps_stored), not computed per view
     FROM provenance_completeness_stored c JOIN artworks w ON w.id = c.artwork_id LEFT JOIN artists a ON a.id = w.creator_id  -- stored (129)
+    LEFT JOIN provenance_gaps_stored pg ON pg.artwork_id = c.artwork_id
     WHERE c.has_provenance AND c.gap_1933_1945_days > 0
     ORDER BY c.gap_1933_1945_days DESC, c.gap_days DESC, w.title COLLATE sort_natural`);
   const { rows: [none] } = await adminPool.query(`SELECT count(*)::int AS n FROM provenance_completeness_stored c JOIN artworks w ON w.id = c.artwork_id

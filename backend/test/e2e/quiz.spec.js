@@ -44,6 +44,8 @@ test.beforeAll(() => {
          SELECT a.id, u.id, 'fig. 1', '\\x00'::bytea, 40, 30, 1 FROM artworks a, admin_users u WHERE a.slug LIKE 'test-quiz-p%' AND u.username = 'tester';
        INSERT INTO glossary (slug, name, category, definition) VALUES ('test-quiz-term', 'quizprint', 'technique',
          'A Quizprint is printed from a quiz block; quizprints are rare, and no other technique is quite like it.')`);
+  // the games read a stored basis (202), refreshed with the worker's global part: brought up to date here at once
+  sql('UPDATE quality_refresh SET quiz_at = NULL; SELECT refresh_quality_global()');
 });
 test.afterAll(cleanup);
 
@@ -57,7 +59,7 @@ test('regions: a game of one region; an artist’s look-alikes from their region
          ('artist', entity_id('artist', 'test-quiz-painter'), 'worked_in', 'place', entity_id('place', 'test-quiz-zurich')),
          ('artist', entity_id('artist', 'test-quiz-friend'), 'worked_in', 'place', entity_id('place', 'test-quiz-zurich')),
          ('artist', entity_id('artist', 'test-quiz-stranger'), 'worked_in', 'place', entity_id('place', 'test-quiz-kyoto'));
-       REFRESH MATERIALIZED VIEW entry_regions`);
+       UPDATE quality_refresh SET quiz_at = NULL; SELECT refresh_quality_global()`);
   expect(sql(`SELECT string_agg(a.slug || ' ' || er.region || ' ' || er.basis, ', ' ORDER BY a.slug) FROM entry_regions er JOIN artworks a ON a.id = er.entity_id
               WHERE er.entity_type = 'artwork' AND a.slug IN ('test-quiz-a', 'test-quiz-e')`)).toBe('test-quiz-a europe artist, test-quiz-e east_asia artist');
   const regions = await get(request, 'regions');
@@ -94,7 +96,7 @@ test('regions: a copy after a work of another region plays in both, as the close
          ('artist', entity_id('artist', 'test-quiz-ukiyo'), 'associated_with', 'movement', entity_id('movement', 'test-quiz-other')),
          -- a movement of its own, as Van Gogh's copies have Japonisme (wrong options in the movement game need one)
          ('artwork', entity_id('artwork', 'test-quiz-copy'), 'associated_with', 'movement', entity_id('movement', 'test-quiz-style'));
-       REFRESH MATERIALIZED VIEW entry_regions`);
+       UPDATE quality_refresh SET quiz_at = NULL; SELECT refresh_quality_global()`);
   // its own region stays Europe; in the games it counts in East Asia as well
   expect(sql(`SELECT region FROM entry_regions WHERE entity_type = 'artwork' AND entity_id = entity_id('artwork', 'test-quiz-copy')`)).toBe('europe');
   expect((await get(request, 'image?n=20&region=east_asia')).map((r) => r.slug)).toContain('test-quiz-copy');

@@ -73,7 +73,9 @@ function pictured(owner = null, onlyOwn = false) {
   ${priv ? `LEFT JOIN LATERAL (SELECT ${priv} AS id) pi ON true` : ''}
   WHERE (a.kind_term_id IS NULL OR NOT artwork_is_group(a.kind_term_id)) AND ${priv ? `(${pub} OR pi.id IS NOT NULL)` : 'img.url IS NOT NULL'}`;
 }
-const PUBLIC = { db: apiPool, pictured: pictured() };
+// visitors' games read the stored copies (202: quiz_pictured, quiz_movement_works, quiz_movement_artists — refreshed with
+// the worker's global part; every round recomputing the views took 1.1–1.6 s per game at 10× today's data)
+const PUBLIC = { db: apiPool, pictured: 'SELECT * FROM quiz_pictured' };
 
 /** 'private:<id>' → the image's address on the admin host, marked `own` (only for the account's own answers). */
 function privatize(v, origin) {
@@ -115,12 +117,12 @@ async function image(q, { db, pictured }) {
                      'names', ${namesOf('ar', 'name')}, 'main', (c->>'main')::boolean) ORDER BY (c->>'main')::boolean DESC), '[]')
               FROM jsonb_array_elements(artwork_creators(a.id)) c JOIN artists ar ON ar.slug = c->>'slug') AS creators,
            (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', m.slug, 'public_id', m.public_id, 'name', m.name, 'names', ${namesOf('m', 'name')}) ORDER BY m.name), '[]')
-              FROM movement_works mw JOIN movements m ON m.id = mw.movement_id WHERE mw.artwork_id = a.id) AS movements
+              FROM quiz_movement_works mw JOIN movements m ON m.id = mw.movement_id WHERE mw.artwork_id = a.id) AS movements
     FROM unnest($1::bigint[]) WITH ORDINALITY AS p(id, i) JOIN artworks a ON a.id = p.id JOIN (${PICTURED}) w ON w.id = a.id
     ORDER BY p.i`, [picked.map((r) => r.id)]);
   // the movements a guess can be chosen from: those with works (the input's suggestions)
   const { rows: movements } = await db.query(`SELECT m.name FROM movements m
-    WHERE EXISTS (SELECT 1 FROM movement_works mw WHERE mw.movement_id = m.id) ORDER BY m.name COLLATE sort_natural`);
+    WHERE EXISTS (SELECT 1 FROM quiz_movement_works mw WHERE mw.movement_id = m.id) ORDER BY m.name COLLATE sort_natural`);
   return { data: rows, movements: movements.map((m) => m.name) };
 }
 
@@ -142,10 +144,10 @@ async function artist(q, { db, pictured }) {
     const right = own.slice(0, rightCount(own.length));
     // look-alikes: a movement of the artist or of their works, the same years (±20), the same kind of object
     const lookAlikes = (region) => db.query(`
-      WITH mw AS MATERIALIZED (SELECT movement_id, artwork_id FROM movement_works),
+      WITH mw AS (SELECT movement_id, artwork_id FROM quiz_movement_works),
       mine AS (SELECT id, created, kind FROM artworks WHERE creator_id = $1),
       mov AS (SELECT movement_id FROM mw WHERE artwork_id IN (SELECT id FROM mine)
-              UNION SELECT movement_id FROM movement_artists WHERE artist_id = $1),
+              UNION SELECT movement_id FROM quiz_movement_artists WHERE artist_id = $1),
       alike AS MATERIALIZED (SELECT DISTINCT artwork_id FROM mw WHERE movement_id IN (SELECT movement_id FROM mov)),
       -- a copy after one of them looks most alike (Van Gogh after Hiroshige for Hokusai): it borrows the look, so it ranks
       -- above works that merely match in time and kind — whatever its own date and medium
@@ -177,7 +179,7 @@ async function artist(q, { db, pictured }) {
 
 // --- 3. the movement: its works, or the movement of three works -------------------------------------------------
 // movement_works once per query, and when each movement was: its dates, else the years of its works
-const SPANS = `mw AS MATERIALIZED (SELECT movement_id, artwork_id FROM movement_works),
+const SPANS = `mw AS (SELECT movement_id, artwork_id FROM quiz_movement_works),
   spans AS MATERIALIZED (SELECT m.id, m.kind, m.period AS own, coalesce(m.period, x.span) AS span FROM movements m
     LEFT JOIN (SELECT mw.movement_id, range_merge(range_agg(a.created)) AS span FROM mw JOIN artworks a ON a.id = mw.artwork_id
                WHERE a.created IS NOT NULL GROUP BY 1) x ON x.movement_id = m.id)`;
@@ -189,7 +191,7 @@ async function movement(q, { db, pictured }) {
   const mode = ['pick', 'name'].includes(q.mode) ? q.mode : 'mixed';
   const { rows: movements } = await db.query(`
     SELECT m.id, ${regionSql('movement', 'm.id')} AS region, ${MOVEMENT} FROM movements m
-    WHERE m.id IN (SELECT mw.movement_id FROM movement_works mw JOIN (${PICTURED}) w ON w.id = mw.artwork_id GROUP BY 1 HAVING count(*) >= 3)
+    WHERE m.id IN (SELECT mw.movement_id FROM quiz_movement_works mw JOIN (${PICTURED}) w ON w.id = mw.artwork_id GROUP BY 1 HAVING count(*) >= 3)
       AND ($2::text IS NULL OR m.slug = $2)
     ORDER BY random() LIMIT $1`, [n, only(q)]);
   const rounds = [];
@@ -199,7 +201,7 @@ async function movement(q, { db, pictured }) {
     const region = regionOf(q) || own;   // the round's: no works or movements of another region among the options
     if (kind === 'pick') {
       const { rows: own } = await db.query(`SELECT ${OPTION_COLUMNS}, true AS correct FROM (${PICTURED}) w
-        WHERE w.id IN (SELECT artwork_id FROM movement_works WHERE movement_id = $1) ORDER BY random() LIMIT 4`, [id]);
+        WHERE w.id IN (SELECT artwork_id FROM quiz_movement_works WHERE movement_id = $1) ORDER BY random() LIMIT 4`, [id]);
       const right = own.slice(0, rightCount(own.length));
       // works of another movement, not of this one nor by one of its artists — of its time and of movements beside it first
       const outside = (region) => db.query(`
@@ -215,7 +217,7 @@ async function movement(q, { db, pictured }) {
         SELECT ${OPTION_COLUMNS}, false AS correct FROM (
         SELECT w.* FROM (${PICTURED}) w CROSS JOIN me LEFT JOIN copies c ON c.artwork_id = w.id
         WHERE w.id NOT IN (SELECT artwork_id FROM mw WHERE movement_id = $1)
-          AND (w.creator_id IS NULL OR w.creator_id NOT IN (SELECT artist_id FROM movement_artists WHERE movement_id = $1))
+          AND (w.creator_id IS NULL OR w.creator_id NOT IN (SELECT artist_id FROM quiz_movement_artists WHERE movement_id = $1))
           AND w.id IN (SELECT artwork_id FROM mw) AND ($3::text IS NULL OR ${counts('w', '$3')})
           AND NOT (me.kind = 'period' AND coalesce(w.created && me.period, false))
         ORDER BY 3 * (w.id IN (SELECT artwork_id FROM alike))::int
@@ -227,7 +229,7 @@ async function movement(q, { db, pictured }) {
       rounds.push({ kind, movement, options: shuffle([...right, ...others]) });
     } else {
       const { rows: works } = await db.query(`SELECT ${OPTION_COLUMNS} FROM (${PICTURED}) w
-        WHERE w.id IN (SELECT artwork_id FROM movement_works WHERE movement_id = $1) ORDER BY random() LIMIT 3`, [id]);
+        WHERE w.id IN (SELECT artwork_id FROM quiz_movement_works WHERE movement_id = $1) ORDER BY random() LIMIT 3`, [id]);
       // three other movements holding none of the shown works, outside this one's tree (its parts are in it, its
       // wholes hold the works): the same kind and time first
       const besides = (region) => db.query(`

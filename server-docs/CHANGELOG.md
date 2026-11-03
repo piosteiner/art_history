@@ -4,6 +4,31 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-03
 
+### All perf budgets met at 10× today's data (migrations 200–207)
+- **What:** after the perf data was rebuilt from today (production ~3× since the budgets were set), 17 budgets were
+  over. Each fixed at its cause, with the same results as before (compared on the perf data):
+  - 200 `content_links_stored` + triggers per text table: backlinks ("Linked from") no longer parse every text of the
+    database per page (~600 ms): artist page 621 → 105 ms, museum 626 → 29, artwork 808 → 174.
+  - site search (`/v1/search`): the trigram indexes used (no `coalesce` around the other names) 1.4 s → 0.14 s.
+  - 201 `admin_search_docs` (documents folded and full-text indexed, kept by the worker with the list rows;
+    `refreshDocs()` in src/admin/search.js): the CMS search 5.2 s → 0.17 s; ties ordered by slug.
+  - 202 quiz basis stored (`quiz_movement_works`, `quiz_movement_artists`, `quiz_pictured`; visitors' games), 207
+    refreshed with the global part at most every 5 minutes: artist game 1.1 s → 0.1 s, movement games 1.6/0.6 s →
+    0.28/0.18 s.
+  - 203 `encounters()` for one entry: only its stays and the others at its places (or within the distance) — crossed
+    paths 1.9 s → 0.18 s.
+  - 204 `provenance_gaps_stored` (with the completeness, by the worker): the CMS page of the gaps 4.2 s → 0.04 s.
+  - 205 `entry_words` + triggers: search_words counts stored words (1.7 s → 0.4 s); 206 entry_regions asks
+    place_country() only for the places it reads (1.1 s → 0.66 s). Global part 13.7 s → 1.1 s (1.9 s with everything
+    due).
+  - API lists: a whole list's order kept per data version (a page = its slice + stored rows): artworks 2.8 s → 0.38 s,
+    places 1.2 s → 0.15 s. CMS: the relationship pickers' entries kept per data version (250–330 ms of every entry page).
+  `npm run perf`: all 41 within budget. Tests: quiz and search-suggest mark the stored data due.
+- **Why:** owner: solve every case over the budget.
+- **Revert:** `git revert`; the tables and triggers of 200–207 can stay (they are only read by the reverted code) or be
+  dropped (`content_links_stored`, `admin_search_docs`, `provenance_gaps_stored`, `entry_words` with their triggers;
+  `quiz_*` views); 203's function: 091's definition; 205's search_words: 113's (from `dup_facts`).
+
 ### Reference images from a link: a bot check said as one
 - **What:** `fetchPublic()` (src/admin/fetch-image.js) recognises a bot check — AWS WAF `x-amzn-waf-action` (the MFA
   Boston answers 202 with nothing), Cloudflare `cf-mitigated` (the British Museum) — and says so: "the site lets only
