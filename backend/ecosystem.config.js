@@ -8,7 +8,8 @@ module.exports = {
     exec_mode: 'fork',
     autorestart: true,
     watch: false,
-    max_memory_restart: '300M',
+    // it idles at ~280 MB (caches per data version); 300 M restarted it twice on 2026-11-03 — a 502 each time
+    max_memory_restart: '450M',
     env: {
       NODE_ENV: 'production',
       HOST: '127.0.0.1',

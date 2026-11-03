@@ -177,6 +177,7 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .card-text { display: flex; flex-direction: column; min-width: 0; }
 .card-name { font-weight: 600; }
 .card-date, .card-detail { font-size: .85rem; color: var(--muted); }
+.card-text > * { overflow-wrap: anywhere; }   /* a long address in a citation wraps instead of widening the page */
 
 /* detail */
 .crumbs { font-size: .85rem; color: var(--muted); margin: .3rem 0 0; }

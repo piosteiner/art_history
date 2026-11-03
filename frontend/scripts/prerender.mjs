@@ -254,6 +254,16 @@ await write('quiz/index.html', page(template, {
   title: 'Quiz · Art History', url: `${SITE}/quiz/`, description: 'Quizzes on the collection: name a picture, find an artist’s works, movements and periods, glossary terms.',
 }));
 urls.push(`${SITE}/quiz/`);
+// the periods timeline and the statistics: pages of their own (they load with the app) — else GitHub Pages answers
+// them with the 404 shell (status 404 for visitors and search engines, 2026-11-03)
+await write('periods/index.html', page(template, {
+  title: 'Periods · Art History', url: `${SITE}/periods/`, description: 'Periods, movements and schools on a timeline, with their artists and works.',
+}));
+urls.push(`${SITE}/periods/`);
+await write('statistik/index.html', page(template, {
+  title: 'Statistik · Art History', url: `${SITE}/statistik/`, description: 'Die Zahlen von Art History: Einträge, Quellen, Tests und wie sie gewachsen sind.',
+}));
+urls.push(`${SITE}/statistik/`);
 // the search page: served with 200 (not the 404 shell), but kept out of search engines — results follow the query
 await write('search/index.html', page(template, { title: 'Search · Art History', description: SITE_DESCRIPTION, noindex: true }));
 

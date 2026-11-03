@@ -4,6 +4,25 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-03
 
+### Stability check: memory limit, thumbnails two at a time, retries, niced deploy tests; site fixes
+- **What** (from a check of two days of API traffic, the logs and the live site on desktop and mobile):
+  - pm2 restarted `arthistory-api` twice today for memory (318 MB at 13:08, 390 MB at 13:22 — a few seconds of 502s and
+    cold caches each). It idles at ~280 MB, so `max_memory_restart` 300M → 450M (`ecosystem.config.js`).
+  - `src/routes/thumbs.js`: new thumbnails are made two at a time and libvips keeps no cache (`sharp.cache(false)`) —
+    a list page asking for 40 new ones decoded up to 40 museum originals at once.
+  - `deploy.sh`: unit and e2e tests at `nice -n 10` — during deploys the tests' browsers took the CPU production's
+    requests needed (56 API statements hit the 5 s timeout in two days, all at busy moments; the same queries take
+    0.06–0.4 s otherwise).
+  - Site (`frontend/src/api.ts`): reading requests try again after 1.5 and 4 s on 502/503/504 or a dropped connection
+    (a deploy's reload, a busy database) instead of showing an error. Test in `site.spec.ts`.
+  - Site: `/periods` and `/statistik` are written by the prerender (they were served by the 404 shell: status 404 for
+    visitors and search engines); bibliography cards decode their citation (`&quot;` was shown as such) and long
+    addresses wrap (the list was 508 px wider than a 1366 px window).
+  - Checked and fine: nightly backup, export and test reset; disk 43 %; site search since 14:47 median 0.17 s (was
+    1.3 s); entry pages warm 1.6–2 s, lists ~1 s; no console errors besides the two 404s.
+- **Why:** owner: "conduct a full check of the user interface and stability … to see if we can optimise or improve".
+- **Revert:** `git revert`; the limit: `max_memory_restart: '300M'` and `pm2 reload ecosystem.config.js`.
+
 ### Fuji prints from the Art Institute of Chicago; thumbnails from artic.edu; four entries linked
 - **What:**
   - Thirty-six Views of Mount Fuji: the 21 prints without a museum page (12 without any museum, 9 whose Wikidata

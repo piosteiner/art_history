@@ -20,6 +20,18 @@ const TIMEOUT = 20000;
 const pending = new Map();                     // key → promise: one fetch per image, however many ask at once
 
 fs.mkdirSync(DIR, { recursive: true });
+// memory (2026-11-03): a list page asks for 40 thumbnails at once, and each new one decodes a museum's original (up to
+// 40 MB) — all at once that took the process past pm2's limit (restarted at 318 and 390 MB). New thumbnails are made
+// two at a time, and libvips keeps no cache of its own (each original is read once anyway).
+sharp.cache(false);
+const SLOTS = 2;
+let busy = 0;
+const waiting = [];
+async function slot(fn) {
+  if (busy >= SLOTS) await new Promise((resolve) => waiting.push(resolve));
+  busy += 1;
+  try { return await fn(); } finally { busy -= 1; waiting.shift()?.(); }
+}
 
 // the end-to-end tests' museum (env THUMB_TEST_SERVER = "https://museum.test/ http://127.0.0.1:3007/museum/"), as the
 // other outside services point at the fixture server there
@@ -58,7 +70,7 @@ router.get('/', async (req, res) => {
   try {
     body = await fs.promises.readFile(file);
   } catch {
-    if (!pending.has(key)) pending.set(key, make(src, w, file).finally(() => pending.delete(key)));
+    if (!pending.has(key)) pending.set(key, slot(() => make(src, w, file)).finally(() => pending.delete(key)));
     try {
       body = await pending.get(key);
     } catch (err) {

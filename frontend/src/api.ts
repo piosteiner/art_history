@@ -55,6 +55,21 @@ const listPlural = (path: string) => {
   return m && (Object.values(PLURAL) as string[]).includes(m[1]) ? (m[1] as Plural) : undefined;
 };
 
+// The API's moments away (a deploy reloads it, a busy database answers 503 "try again"): a reading request tries again
+// twice, after 1.5 and 4 s, before the page shows an error.
+const RETRY_STATUS = new Set([502, 503, 504]);
+async function fetchRetry(url: string, init: RequestInit, waits = [1500, 4000]): Promise<Response> {
+  for (let i = 0; ; i++) {
+    try {
+      const res = await fetch(url, init);
+      if (!RETRY_STATUS.has(res.status) || i >= waits.length) return res;
+    } catch (err) {
+      if (i >= waits.length || (err as Error).name === 'AbortError') throw err;
+    }
+    await new Promise((resolve) => setTimeout(resolve, waits[i]));
+  }
+}
+
 function get<T>(path: string, params: Params = {}): Promise<T> {
   const qs = new URLSearchParams();
   for (const [k, v] of Object.entries(params)) {
@@ -66,7 +81,7 @@ function get<T>(path: string, params: Params = {}): Promise<T> {
   let p = cache.get(url) as Promise<T> | undefined;
   if (!p) {
     fetchedAt.set(url, Date.now());
-    p = fetch(url, { headers: { Accept: 'application/json' } }).then(async (res) => {
+    p = fetchRetry(url, { headers: { Accept: 'application/json' } }).then(async (res) => {
       const body = await res.json().catch(() => null);
       if (!res.ok) throw new ApiError(res.status, body?.error ?? 'internal_error', body?.message ?? res.statusText, body);
       remember(body, listPlural(path));

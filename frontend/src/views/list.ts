@@ -15,6 +15,9 @@ import { entries, explain, fold, highlight, PROVENANCE_CATEGORY_LABEL, STATUS_LA
 type AnyItem = ItemByPlural[Plural];
 
 /** What a card shows: name, a date line, a detail line and an optional thumbnail. */
+/** HTML as plain text, its entities decoded (a citation's "&quot;" read as "). */
+const plainText = (html: string) => new DOMParser().parseFromString(html, 'text/html').body.textContent ?? '';
+
 export function cardParts(plural: Plural, item: AnyItem) {
   let name = '';
   let date = '';
@@ -57,7 +60,7 @@ export function cardParts(plural: Plural, item: AnyItem) {
     }
     case 'bibliography': {
       const s = item as ItemByPlural['bibliography'];
-      [name, date, detail] = [s.siglum || s.name, s.reading_status ? STATUS_LABEL[s.reading_status] : '', s.citation.replace(/<[^>]+>/g, '')];
+      [name, date, detail] = [s.siglum || s.name, s.reading_status ? STATUS_LABEL[s.reading_status] : '', plainText(s.citation)];
       break;
     }
     case 'glossary': {

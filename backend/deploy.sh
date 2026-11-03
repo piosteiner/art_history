@@ -27,7 +27,9 @@ if [ "$1" != "--skip-tests" ]; then
   LOG_DIR=../logs; mkdir -p "$LOG_DIR"; LOG="$LOG_DIR/deploy-$(date +%Y%m%d-%H%M%S).log"
   ls -1t "$LOG_DIR"/deploy-*.log 2>/dev/null | tail -n +21 | xargs -r rm --
   echo "  tests … (output: $LOG)"
-  if ! { npm test --silent && E2E_RETRIES=1 npm run --silent test:e2e; } > "$LOG" 2>&1; then
+  # at a lower CPU priority: on this 2-CPU server the tests' browsers and servers took the time production's requests
+  # needed — API queries hit the 5 s statement timeout during deploys (2026-11-03)
+  if ! { nice -n 10 npm test --silent && E2E_RETRIES=1 nice -n 10 npm run --silent test:e2e; } > "$LOG" 2>&1; then
     echo "✗ tests failed — production was not touched (still running $PREVIOUS)."
     grep -E "✘|^# fail|^not ok|[0-9]+ failed" "$LOG" | sort -u | head -20
     echo "  Full output: $LOG"

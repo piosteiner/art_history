@@ -1179,6 +1179,20 @@ async function patch(page: Page, url: RegExp, change: (body: Record<string, unkn
   });
 }
 
+// a deploy's moment away or a busy database (503 "try again"): the page asks again instead of showing an error
+test('a 502/503 from the API is tried again, the page loads', async ({ page }) => {
+  let calls = 0;
+  await page.route(/\/v1\/artworks\/the-great-wave-off-kanagawa$/, async (route) => {
+    calls += 1;
+    if (calls === 1) return route.fulfill({ status: 502, body: 'Bad Gateway' });
+    if (calls === 2) return route.fulfill({ status: 503, json: { error: 'timeout' } });
+    return route.fulfill({ response: await route.fetch() });
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect(page.locator('h1')).toHaveText('The Great Wave off Kanagawa', { timeout: 15000 });
+  expect(calls).toBe(3);
+});
+
 test('an artist known only by when he was active: "active …" as subtitle and fact (API 147)', async ({ page }) => {
   await patch(page, /\/v1\/artists\/vincent-van-gogh$/, (b) => {
     b.birth = null; b.death = null;
@@ -2003,7 +2017,7 @@ test('institution page: address and its own point', async ({ page }) => {
 
 // ---- bibliography and footnotes (the live bibliography may still be empty: the tests bring two sample sources) ----
 const BUSCH = { slug: 'busch-1993', siglum: 'Busch 1993', citation: 'Werner Busch, <i>Das sentimentalische Bild</i>, München 1993.' };
-const KAT = { slug: 'kat-paris-2007', siglum: 'Kat. Paris 2007', citation: '<i>Hokusai</i>, hg. von X, Ausst.-Kat. Paris 2007.' };
+const KAT = { slug: 'kat-paris-2007', siglum: 'Kat. Paris 2007', citation: '<i>Hokusai</i> o &quot;La gran ola&quot;, hg. von X, Ausst.-Kat. Paris 2007, https://www.example.org/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1-and-a-very-long-address.' };
 async function sampleBibliography(page: Page) {
   const item = (s: typeof BUSCH, status: string, year: number) => ({ ...s, name: s.siglum, kind: 'monograph', subtitle: null, authors: ['Werner Busch'], year,
     reading_status: status, read_on: null, primary_source: false, names: [], sort_key: s.siglum, search_text: '' });
@@ -2030,6 +2044,9 @@ test('bibliography: A–Z by short reference with reading statistics and status 
   await page.goto('/bibliography');
   await expect(page.locator('#stats')).toHaveText('1 read · 0 reading · 1 to read');
   await expect(page.locator('.card')).toHaveCount(2);
+  // a citation's quotes read as quotes, its long address wraps instead of widening the page (2026-11-03)
+  await expect(page.locator('.card', { hasText: 'Kat. Paris 2007' }).locator('.card-detail')).toContainText('Hokusai o "La gran ola"');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(0);
   await page.locator('#categories button', { hasText: 'to read' }).click();
   await expect(page).toHaveURL(/\/bibliography\?status=to_read$/);
   await expect(page.locator('.card')).toHaveCount(1);
