@@ -1101,13 +1101,13 @@ async function sampleGlossary(page: Page) {
 test('glossary: A–Z with category buttons, term page with definition, related terms and "used in"', async ({ page }) => {
   await sampleGlossary(page);
   await page.goto('/glossary');
-  await expect(page.locator('.card')).toHaveCount(2);
+  await expect(page.locator('#items .row')).toHaveCount(2);
   await expect(page.locator('.cards-heading').first()).toHaveText('T'); // letter headings
   await page.locator('#categories button', { hasText: 'technique' }).click();
   await expect(page).toHaveURL(/\/glossary\?category=technique$/);
-  await expect(page.locator('.card')).toHaveCount(1);
-  await expect(page.locator('.card')).toContainText('A print made from a carved block of wood.');
-  await page.locator('.card-link').click();
+  await expect(page.locator('#items .row')).toHaveCount(1);
+  await expect(page.locator('#items .row')).toContainText('A print made from a carved block of wood.');
+  await page.locator('.row-link').click();
   await expect(page.locator('h1')).toHaveText('Woodblock print');
   await expect(page.locator('.lead')).toHaveText('A print made from a carved block of wood.');
   await expect(page.locator('main')).toContainText('Related terms');
@@ -1178,6 +1178,30 @@ async function patch(page: Page, url: RegExp, change: (body: Record<string, unkn
     await route.fulfill({ response: res, json: body });
   });
 }
+
+// cards or a compact list (2026-11-03): sections without pictures start as a list, the others as cards; the choice is
+// kept per section; on a phone the list doesn't scroll sideways
+test('lists: compact rows for places, cards for artworks, a switch that is remembered', async ({ page }) => {
+  await page.goto('/places');
+  await expect(page.locator('#items.rows .row').first()).toBeVisible();
+  await expect(page.locator('.view-switch button.on')).toHaveText('☰ List');
+  const first = page.locator('#items .row').first();
+  await expect(first.locator('.row-name')).not.toBeEmpty();
+  await page.locator('.view-switch button', { hasText: 'Cards' }).click();
+  await expect(page.locator('#items.cards .card').first()).toBeVisible();
+  await page.reload();
+  await expect(page.locator('#items.cards .card').first()).toBeVisible();   // remembered
+  await page.goto('/artworks');
+  await expect(page.locator('#items.cards .card').first()).toBeVisible();   // its own default
+  await page.locator('.view-switch button', { hasText: 'List' }).click();
+  await expect(page.locator('#items.rows .row-thumbs').first()).toBeVisible();   // artworks have pictures: shown small
+  await page.goto('/bibliography');
+  await expect(page.locator('#items.rows .row').first()).toBeVisible();
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('/glossary');
+  await expect(page.locator('#items.rows .row').first()).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(0);
+});
 
 // a deploy's moment away or a busy database (503 "try again"): the page asks again instead of showing an error
 test('a 502/503 from the API is tried again, the page loads', async ({ page }) => {
@@ -2043,15 +2067,15 @@ test('bibliography: A–Z by short reference with reading statistics and status 
   await sampleBibliography(page);
   await page.goto('/bibliography');
   await expect(page.locator('#stats')).toHaveText('1 read · 0 reading · 1 to read');
-  await expect(page.locator('.card')).toHaveCount(2);
+  await expect(page.locator('#items .row')).toHaveCount(2);
   // a citation's quotes read as quotes, its long address wraps instead of widening the page (2026-11-03)
-  await expect(page.locator('.card', { hasText: 'Kat. Paris 2007' }).locator('.card-detail')).toContainText('Hokusai o "La gran ola"');
+  await expect(page.locator('.row', { hasText: 'Kat. Paris 2007' }).locator('.row-detail')).toContainText('Hokusai o "La gran ola"');
   expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(0);
   await page.locator('#categories button', { hasText: 'to read' }).click();
   await expect(page).toHaveURL(/\/bibliography\?status=to_read$/);
-  await expect(page.locator('.card')).toHaveCount(1);
+  await expect(page.locator('#items .row')).toHaveCount(1);
   await page.locator('#categories button', { hasText: 'All' }).click();
-  await page.locator('.card-link', { hasText: 'Busch 1993' }).click();
+  await page.locator('.row-link', { hasText: 'Busch 1993' }).click();
   await expect(page.locator('h1')).toHaveText('Busch 1993');
   await expect(page.locator('.lead.citation i')).toHaveText('Das sentimentalische Bild'); // italic title
   await expect(page.locator('main')).toContainText('Cited in');

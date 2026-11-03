@@ -10,7 +10,7 @@ import type { NameEntry } from '../types';
 const original = (item: unknown) => (item as { names?: NameEntry[] }).names?.find((n) => n.role === 'original');
 import type { ArtistItem, ArtworkItem, InstitutionItem, ItemByPlural, LiteratureItem, Plural } from '../types';
 import { guard, showError } from './common';
-import { entries, explain, fold, highlight, PROVENANCE_CATEGORY_LABEL, STATUS_LABEL, matches, ordered, saveSort, savedSort, sortEntries, sortOptions, type Entry } from '../catalog';
+import { entries, explain, fold, highlight, PROVENANCE_CATEGORY_LABEL, STATUS_LABEL, matches, ordered, saveSort, savedSort, saveView, savedView, sortEntries, sortOptions, type Entry, type ListView } from '../catalog';
 
 type AnyItem = ItemByPlural[Plural];
 
@@ -111,12 +111,34 @@ export function card(plural: Plural, item: AnyItem, words: string[] = [], why: H
   </li>`;
 }
 
+/**
+ * One row of the compact list: the name (and its original) in the first column, the date line and the detail beside
+ * it — on a phone below it. A small picture only where the entry has one and the list shows pictures (`thumbs`).
+ */
+function row(plural: Plural, item: AnyItem, words: string[] = [], why: Html | null = null, extra: Html | null = null, thumbs = false): Html {
+  const { name, date, detail, image } = cardParts(plural, item);
+  const orig = original(item);
+  return html`<li class="row${thumbs ? ' row-thumbs' : ''}">
+    <a class="row-link" href="${href(plural, item.slug)}">
+      ${thumbs ? previewImg(image, plural === 'artworks' ? item.slug : null, 120, 'row-img') ?? html`<span class="row-img" aria-hidden="true"></span>` : ''}
+      <span class="row-name"><span class="card-name"${langAttr(displayName(item as never).lang)}>${highlight(name, words)}</span>${
+        orig ? html` <span class="card-original"${langAttr(orig.lang)}>${highlight(orig.text, words)}</span>` : ''}</span>
+      <span class="row-date">${date ? highlight(date, words) : ''}</span>
+      <span class="row-detail">${detail ? highlight(detail, words) : ''}${why ? html`<span class="card-why">${why}</span>` : ''}</span>
+    </a>
+    ${extra ? html`<div class="card-extra">${extra}</div>` : ''}
+  </li>`;
+}
+
 export function list(main: HTMLElement, plural: Plural) {
   render(main, html`<section class="page">
     <h1>${PLURAL_LABEL[plural]}</h1>
     <div class="list-tools">
       <input class="filter" type="search" placeholder="Search ${PLURAL_LABEL[plural].toLowerCase()}…" aria-label="Search">
       <label class="list-sort" hidden>Sort <select aria-label="Sort"></select></label>
+      <span class="view-switch" role="group" aria-label="Show as">
+        <button type="button" data-view="cards" title="Cards with pictures">▦ Cards</button><button type="button" data-view="rows" title="A compact list">☰ List</button>
+      </span>
     </div>
     <p class="muted small" id="stats"></p>
     <div class="category-filter" id="categories" hidden role="group" aria-label="Filter"></div>
@@ -130,6 +152,25 @@ export function list(main: HTMLElement, plural: Plural) {
   const sortLabel = main.querySelector<HTMLLabelElement>('.list-sort')!;
   const sortSelect = sortLabel.querySelector('select')!;
   const current = guard();
+  // cards or the compact list (savedView: the section's default, or the visitor's choice)
+  let view: ListView = savedView(plural);
+  const switchEl = main.querySelector<HTMLElement>('.view-switch')!;
+  const showView = () => {
+    items.className = view === 'rows' ? 'rows' : 'cards';
+    switchEl.querySelectorAll<HTMLButtonElement>('button').forEach((b) => {
+      b.classList.toggle('on', b.dataset.view === view);
+      b.setAttribute('aria-pressed', String(b.dataset.view === view));
+    });
+  };
+  showView();
+  switchEl.addEventListener('click', (ev) => {
+    const b = (ev.target as Element).closest<HTMLButtonElement>('button[data-view]');
+    if (!b || b.dataset.view === view) return;
+    view = b.dataset.view as ListView;
+    saveView(plural, view);
+    showView();
+    draw();
+  });
   filter.value = new URLSearchParams(location.search).get('q') ?? '';
 
   let sort = '';
@@ -241,12 +282,18 @@ export function list(main: HTMLElement, plural: Plural) {
       .filter((e) => !heldBy || inHolding(e));
     const hits = query_ ? pool.filter((e) => matches(e, parsed)) : pool;
     let last = '';
-    const row = (e: Entry<AnyItem>) => {
+    // the list's small pictures: only where a good share of the section has them (artists, artworks …)
+    const thumbs = view === 'rows' && all.filter((e) => cardParts(plural, e.item).image).length >= all.length / 10;
+    // a date column only when an entry has something for it (the bibliography's reading status, mostly empty)
+    items.classList.toggle('rows-nodate', view === 'rows' && !all.some((e) => cardParts(plural, e.item).date));
+    const one = (e: Entry<AnyItem>) => (view === 'rows' ? row(plural, e.item, words, null, null, thumbs) : card(plural, e.item));
+    const entryHtml = (e: Entry<AnyItem>) => {
       const p = cardParts(plural, e.item);
       const byArtist = heldMatched(e, words);
       // a museum found through an artist: how many of their works, linked to them (instead of "Works by: …")
-      return card(plural, e.item, words, query_ && !byArtist.length ? explain(e, query_, `${p.date} ${p.detail} ${original(e.item)?.text ?? ""}`).why : null, '',
-        byArtist.length ? html`${byArtist.map((a, i) => html`${i ? ' · ' : ''}${worksLink(e, a)}`)}` : null);
+      const why = query_ && !byArtist.length ? explain(e, query_, `${p.date} ${p.detail} ${original(e.item)?.text ?? ""}`).why : null;
+      const extra = byArtist.length ? html`${byArtist.map((a, i) => html`${i ? ' · ' : ''}${worksLink(e, a)}`)}` : null;
+      return view === 'rows' ? row(plural, e.item, words, why, extra, thumbs) : card(plural, e.item, words, why, '', extra);
     };
     const worksOf = (e: Entry<AnyItem>) => heldMatched(e, words).reduce((n, a) => n + a.now + a.before, 0);
     const list = heldBy ? holdingSections(hits) : ordered(hits, query_, sort);
@@ -267,9 +314,9 @@ export function list(main: HTMLElement, plural: Plural) {
         const n = sizes.get(h);
         const head = h !== last ? html`<li class="cards-heading">${h}${n ? html` <span class="muted heading-count">${String(n)}</span>` : ''}</li>` : '';
         last = h;
-        return html`${head}${row(e)}`;
+        return html`${head}${entryHtml(e)}`;
       })}
-      ${similar.length ? html`<li class="cards-heading cards-heading-similar">Similar names</li>${similar.map((e) => card(plural, e.item))}` : ''}
+      ${similar.length ? html`<li class="cards-heading cards-heading-similar">Similar names</li>${similar.map(one)}` : ''}
       ${!hits.length && !similar.length ? html`<li class="muted">${query_ ? `Nothing found for “${query_}”.` : 'No entries yet.'}</li>` : ''}`);
     const total = pool.length;
     render(count, query_

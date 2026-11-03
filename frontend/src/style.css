@@ -408,6 +408,34 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
   font: 600 1.05rem var(--serif); color: var(--text);
 }
 .cards-heading:first-child { margin-top: 0; }
+/* the compact list (2026-11-03): name | date | detail in columns; on a phone the detail goes below */
+.rows { list-style: none; padding: 0; margin: .8rem 0; border-top: 1px solid var(--line); }
+.rows .cards-heading { margin-top: 1rem; border-bottom-color: var(--text); }
+.rows > .row { border-bottom: 1px solid var(--line); }
+.row-link { display: grid; grid-template-columns: minmax(12rem, 2fr) minmax(10rem, 1.2fr) 3fr; gap: .2rem 1rem; align-items: baseline;
+  padding: .45rem .4rem; text-decoration: none; color: var(--text); }
+.row-thumbs .row-link { grid-template-columns: 40px minmax(12rem, 2fr) minmax(10rem, 1.2fr) 3fr; align-items: center; }
+.row-link:hover { background: var(--surface); color: var(--text); }
+.rows-nodate .row-date { display: none; }
+.rows-nodate .row-link { grid-template-columns: minmax(12rem, 2fr) 4fr; }
+.rows-nodate .row-thumbs .row-link { grid-template-columns: 40px minmax(12rem, 2fr) 4fr; }
+.row-img { width: 40px; height: 40px; object-fit: cover; border-radius: 3px; background: var(--bg); }
+.row-name, .row-date, .row-detail { min-width: 0; overflow-wrap: anywhere; }
+.row-date, .row-detail { font-size: .88rem; color: var(--muted); }
+.row-detail { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.row-detail .card-why { display: block; }
+.row .card-extra { border: 0; background: none; padding: 0 .4rem .4rem; }
+@media (max-width: 640px) {
+  .row-link { grid-template-columns: 1fr auto; }
+  .row-thumbs .row-link { grid-template-columns: 40px 1fr auto; }
+  .row-detail { grid-column: 1 / -1; -webkit-line-clamp: 2; }
+  .row-thumbs .row-detail { grid-column: 2 / -1; }
+  .rows-nodate .row-link { grid-template-columns: 1fr; }
+}
+.view-switch { display: inline-flex; margin-left: auto; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+.view-switch button { font: inherit; font-size: .85rem; padding: .2rem .7rem; border: 0; background: var(--surface); color: var(--muted); cursor: pointer; }
+.view-switch button + button { border-left: 1px solid var(--line); }
+.view-switch button.on { background: var(--picked-bg); color: var(--text); font-weight: 600; }
 .today { color: var(--muted); }
 .today a { color: inherit; }
 

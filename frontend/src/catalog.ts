@@ -458,6 +458,28 @@ export function sortEntries<T extends Entry>(list: T[], sortId: string): T[] {
 
 // ---- remembered choice (per type, shared by picker and list page) ---------------------------------
 
+// Cards or a compact list (2026-11-03): sections whose entries rarely have a picture start as a list — places,
+// movements, polities, literary works, the glossary, the bibliography; the visitor's choice is kept per section.
+export type ListView = 'cards' | 'rows';
+const ROWS_FIRST: Plural[] = ['places', 'movements', 'polities', 'literary-works', 'glossary', 'bibliography'];
+const viewKey = (plural: Plural) => `arthistory:view:${plural}`;
+export function savedView(plural: Plural): ListView {
+  try {
+    const v = localStorage.getItem(viewKey(plural));
+    if (v === 'cards' || v === 'rows') return v;
+  } catch {
+    /* no storage */
+  }
+  return ROWS_FIRST.includes(plural) ? 'rows' : 'cards';
+}
+export function saveView(plural: Plural, view: ListView) {
+  try {
+    localStorage.setItem(viewKey(plural), view);
+  } catch {
+    /* no storage */
+  }
+}
+
 const key = (plural: Plural) => `arthistory:sort:${plural}`;
 
 export function savedSort(plural: Plural, options: SortOption[]) {

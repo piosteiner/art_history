@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-03
 
+### Site: lists as cards or a compact list
+- **What:** every list page has a switch "Cards | List" (kept per section in the browser, `arthistory:view:<plural>`).
+  Sections whose entries rarely have a picture start as the list — places, movements, polities, literary works,
+  glossary, bibliography (0–16 % with pictures); artworks, artists, institutions, people, events stay cards. A row: name
+  (and original) | date line | details (the definition, the citation …, up to three lines); small pictures only in
+  sections where at least a tenth have one; an empty date column folds away (bibliography); on a phone the details go
+  below the name. Search, sort, filters, headings, "did you mean" as before. `frontend/src/views/list.ts` (`row()`),
+  `catalog.ts` (`savedView`), CSS `.rows`; tests in `site.spec.ts`.
+- **Why:** owner: "a compact list might be better for the user" for sections without images.
+- **Revert:** `git revert` (frontend only).
+
 ### Stability check: memory limit, thumbnails two at a time, retries, niced deploy tests; site fixes
 - **What** (from a check of two days of API traffic, the logs and the live site on desktop and mobile):
   - pm2 restarted `arthistory-api` twice today for memory (318 MB at 13:08, 390 MB at 13:22 — a few seconds of 502s and
