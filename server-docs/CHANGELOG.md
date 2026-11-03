@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-03
 
+### Content: territory today for the remaining 143 polities
+- **What:** `country_codes` (ISO countries their territory lies in today) for every polity that had none — the German
+  and Italian states, the French regimes, the Habsburg and Spanish crowns, the Netherlands' and Switzerland's forms,
+  the shogunates, the Russian Empire with its Asian part; overseas colonies left out. A polity of one country gives
+  its people that country (`entity_country()`), one of several only its region when they share one (`entry_regions`):
+  108 artists now get their region from their nationality; 332 artists and 106 people have a country.
+- **Why:** owner 2026-11-03 ("do the 143 polities").
+- **Revert:** audit_log (source `script`, 2026-11-03), or `UPDATE polities SET country_codes = '{}'` for these slugs.
+
 ### Content: the Bührle works of the Kunsthaus Zürich; changelog and documentation drafts
 - **What:**
   - **All 217 works** the Kunsthaus's online collection finds for "Bührle" are in the database: **181 new**, 36 there
