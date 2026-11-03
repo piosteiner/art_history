@@ -10,6 +10,8 @@
 //   &for=<slug>: about that work, artist, movement or term only
 //   &region=<world region> (191): only works of that region (entry_regions — worked out, or set by hand). Without one,
 //                                   a round stays in its artist's or movement's region: no ukiyo-e among Swiss painters.
+//                                   A copy after a work of another region counts in that region too (owner 2026-11-03:
+//                                   Van Gogh's Bridge in the Rain after Hiroshige among Hokusai's look-alikes) — counts().
 // What belongs to a movement is the view movement_works (100): linked directly or through the artist while it lasted,
 // parts rolled up into their whole. Wrong options never belong to it: works with a movement of their own (an unlinked
 // work might belong after all) whose artist isn't linked to it; movements that hold none of the shown works.
@@ -43,9 +45,17 @@ const OPTIONS = 8;
 const REGIONS = ['europe', 'middle_east', 'africa', 'central_asia', 'south_asia', 'east_asia', 'southeast_asia', 'oceania', 'north_america', 'south_america'];
 const regionOf = (q) => (REGIONS.includes(q.region) ? q.region : null);
 /** The works of one region only (a value of REGIONS — safe to write into the query). */
-const inRegion = (pictured, region) => (region ? `SELECT * FROM (${pictured}) p WHERE p.region = '${region}'` : pictured);
+const inRegion = (pictured, region) => (region ? `SELECT * FROM (${pictured}) p WHERE ${counts('p', `'${region}'`)}` : pictured);
 /** An entry's worked-out region (entry_regions) as SQL */
 const regionSql = (type, idExpr) => `(SELECT er.region::text FROM entry_regions er WHERE er.entity_type = '${type}' AND er.entity_id = ${idExpr})`;
+/**
+ * A work counts in a region for the games when it is its own, or the region of a work (or artist) it is a copy after —
+ * relationship copy_after: a Japanese print copied in Paris belongs to East Asia as much as to Europe here. As a
+ * condition on a pictured work `w` (its own region already in the row), the few copies looked up apart.
+ */
+const counts = (w, region) => `(${w}.region = ${region} OR ${w}.id IN (SELECT cp.subject_id FROM relationships cp
+    JOIN entry_regions cpr ON (cpr.entity_type, cpr.entity_id) = (cp.object_type, cp.object_id)
+    WHERE cp.subject_type = 'artwork' AND cp.relationship_type = 'copy_after' AND cpr.region::text = ${region}))`;
 
 // works the quiz can show: with a picture (the first, as on the entry page), not a whole made of parts (a series).
 // `owner`: also with a private image of this account — 'private:<id>' as image_url, made an address by privatize();
@@ -137,14 +147,20 @@ async function artist(q, { db, pictured }) {
       mov AS (SELECT movement_id FROM mw WHERE artwork_id IN (SELECT id FROM mine)
               UNION SELECT movement_id FROM movement_artists WHERE artist_id = $1),
       alike AS MATERIALIZED (SELECT DISTINCT artwork_id FROM mw WHERE movement_id IN (SELECT movement_id FROM mov)),
+      -- a copy after one of them looks most alike (Van Gogh after Hiroshige for Hokusai): it borrows the look, so it ranks
+      -- above works that merely match in time and kind — whatever its own date and medium
+      copies AS MATERIALIZED (SELECT DISTINCT r.subject_id AS artwork_id FROM relationships r
+                              WHERE r.relationship_type = 'copy_after' AND r.subject_type = 'artwork' AND r.object_type = 'artwork'
+                                AND r.object_id = ANY (ARRAY(SELECT artwork_id FROM alike))),   -- built once, not a loop over the CTE
       span AS (SELECT daterange((min(lower(created)) - interval '20 years')::date, (max(upper(created)) + interval '20 years')::date) AS r
                FROM mine WHERE created IS NOT NULL)
       SELECT ${OPTION_COLUMNS}, false AS correct FROM (
-        SELECT w.* FROM (${PICTURED}) w, span
-        WHERE w.creator_id IS DISTINCT FROM $1 AND ($3::text IS NULL OR w.region = $3)
+        SELECT w.* FROM (${PICTURED}) w CROSS JOIN span LEFT JOIN copies c ON c.artwork_id = w.id
+        WHERE w.creator_id IS DISTINCT FROM $1 AND ($3::text IS NULL OR ${counts('w', '$3')})
           AND NOT EXISTS (SELECT 1 FROM relationships r WHERE r.subject_type = 'artwork' AND r.subject_id = w.id
                             AND r.relationship_type = 'co_creator' AND r.object_type = 'artist' AND r.object_id = $1)
         ORDER BY 4 * (w.id IN (SELECT artwork_id FROM alike))::int
+               + 8 * (c.artwork_id IS NOT NULL)::int
                + 2 * coalesce(w.created && span.r, false)::int
                + coalesce(w.kind IN (SELECT kind FROM mine), false)::int
                + 1.5 * random() DESC
@@ -191,14 +207,19 @@ async function movement(q, { db, pictured }) {
         me AS (SELECT span AS period, kind FROM spans WHERE id = $1),
         -- works of movements beside it: of its time or of its kind
         alike AS MATERIALIZED (SELECT DISTINCT mw.artwork_id FROM mw JOIN spans o ON o.id = mw.movement_id, me
-                               WHERE coalesce(o.span && me.period, false) OR o.kind = me.kind)
+                               WHERE coalesce(o.span && me.period, false) OR o.kind = me.kind),
+        -- copies after the movement's own works: the closest trap, whatever their own date
+        copies AS MATERIALIZED (SELECT DISTINCT r.subject_id AS artwork_id FROM relationships r
+                                WHERE r.relationship_type = 'copy_after' AND r.subject_type = 'artwork' AND r.object_type = 'artwork'
+                                  AND r.object_id = ANY (ARRAY(SELECT artwork_id FROM mw WHERE movement_id = $1)))   -- built once, not a loop over mw
         SELECT ${OPTION_COLUMNS}, false AS correct FROM (
-        SELECT w.* FROM (${PICTURED}) w, me
+        SELECT w.* FROM (${PICTURED}) w CROSS JOIN me LEFT JOIN copies c ON c.artwork_id = w.id
         WHERE w.id NOT IN (SELECT artwork_id FROM mw WHERE movement_id = $1)
           AND (w.creator_id IS NULL OR w.creator_id NOT IN (SELECT artist_id FROM movement_artists WHERE movement_id = $1))
-          AND w.id IN (SELECT artwork_id FROM mw) AND ($3::text IS NULL OR w.region = $3)
+          AND w.id IN (SELECT artwork_id FROM mw) AND ($3::text IS NULL OR ${counts('w', '$3')})
           AND NOT (me.kind = 'period' AND coalesce(w.created && me.period, false))
         ORDER BY 3 * (w.id IN (SELECT artwork_id FROM alike))::int
+               + 6 * (c.artwork_id IS NOT NULL)::int
                + 2 * coalesce(w.created && daterange((lower(me.period) - interval '50 years')::date, (upper(me.period) + interval '50 years')::date), false)::int
                + 1.5 * random() DESC
         LIMIT $2) w`, [id, OPTIONS - right.length, region]);
@@ -274,8 +295,14 @@ async function glossary(q, { db }) {
 
 // --- the regions: how many works each one has for the games ---------------------------------------------------------
 async function regions(q, { db, pictured }) {
-  const { rows } = await db.query(`SELECT r.region::text AS region, r.name, r.name_de, r.note, count(w.id)::int AS works
-    FROM world_regions r LEFT JOIN (${pictured}) w ON w.region = r.region::text GROUP BY r.region ORDER BY r.region`);
+  // each work in its own region, and copies in their models' regions too (counts(), in one pass)
+  const { rows } = await db.query(`WITH w AS MATERIALIZED (${pictured}),
+    x AS (SELECT w.id, w.region FROM w
+          UNION SELECT cp.subject_id, cpr.region::text FROM relationships cp
+          JOIN entry_regions cpr ON (cpr.entity_type, cpr.entity_id) = (cp.object_type, cp.object_id)
+          WHERE cp.subject_type = 'artwork' AND cp.relationship_type = 'copy_after' AND cp.subject_id IN (SELECT id FROM w))
+    SELECT r.region::text AS region, r.name, r.name_de, r.note, count(x.id)::int AS works
+    FROM world_regions r LEFT JOIN x ON x.region = r.region::text GROUP BY r.region ORDER BY r.region`);
   return { data: rows };
 }
 

@@ -78,6 +78,37 @@ test('regions: a game of one region; an artist’s look-alikes from their region
   await expect(userA.locator('#f-region option[value=""]')).toHaveText('worked out: Europe — from where they worked');
 });
 
+// a copy after a work of another region counts in that region too, and is the first trap among an artist's look-alikes
+// (owner 2026-11-03: Van Gogh's Bridge in the Rain after Hiroshige in Hokusai's round)
+test('regions: a copy after a work of another region plays in both, as the closest look-alike', async ({ request }) => {
+  sql(`INSERT INTO artists (slug, name, region) VALUES ('test-quiz-ukiyo', 'Uki Yoshi', 'east_asia'), ('test-quiz-copyist', 'Cora Copyist', 'europe');
+       INSERT INTO artworks (slug, title, creator_id, created, created_label, region) VALUES
+         ('test-quiz-u1', 'Quiz Print 1', entity_id('artist', 'test-quiz-ukiyo'), '[1857-01-01,1858-01-01)', '1857', NULL),
+         ('test-quiz-u2', 'Quiz Print 2', entity_id('artist', 'test-quiz-ukiyo'), '[1857-01-01,1858-01-01)', '1857', NULL),
+         ('test-quiz-u3', 'Quiz Print 3', entity_id('artist', 'test-quiz-ukiyo'), '[1858-01-01,1859-01-01)', '1858', NULL),
+         ('test-quiz-copy', 'Quiz Bridge after Uki', entity_id('artist', 'test-quiz-copyist'), '[1887-01-01,1888-01-01)', '1887', 'europe');
+       INSERT INTO images (artwork_id, position, url, license, credit)
+         SELECT id, 0, 'https://example.org/' || slug || '.jpg', 'Public domain', 'test' FROM artworks WHERE slug IN ('test-quiz-u1', 'test-quiz-u2', 'test-quiz-u3', 'test-quiz-copy');
+       INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id) VALUES
+         ('artwork', entity_id('artwork', 'test-quiz-copy'), 'copy_after', 'artwork', entity_id('artwork', 'test-quiz-u1')),
+         ('artist', entity_id('artist', 'test-quiz-ukiyo'), 'associated_with', 'movement', entity_id('movement', 'test-quiz-other')),
+         -- a movement of its own, as Van Gogh's copies have Japonisme (wrong options in the movement game need one)
+         ('artwork', entity_id('artwork', 'test-quiz-copy'), 'associated_with', 'movement', entity_id('movement', 'test-quiz-style'));
+       REFRESH MATERIALIZED VIEW entry_regions`);
+  // its own region stays Europe; in the games it counts in East Asia as well
+  expect(sql(`SELECT region FROM entry_regions WHERE entity_type = 'artwork' AND entity_id = entity_id('artwork', 'test-quiz-copy')`)).toBe('europe');
+  expect((await get(request, 'image?n=20&region=east_asia')).map((r) => r.slug)).toContain('test-quiz-copy');
+  expect((await get(request, 'image?n=20&region=europe')).map((r) => r.slug)).toContain('test-quiz-copy');
+  // the print artist's round: the copy after their print is always among the wrong options, never a right one
+  for (let i = 0; i < 3; i++) {
+    const [round] = await get(request, 'artist?for=test-quiz-ukiyo');
+    expect(round.options.find((o) => o.slug === 'test-quiz-copy')).toEqual(expect.objectContaining({ correct: false }));
+  }
+  // the movement game: a copy after one of its works is the first trap too
+  const [pick] = await get(request, 'movement?for=test-quiz-other&mode=pick');
+  expect(pick.options.find((o) => o.slug === 'test-quiz-copy')).toEqual(expect.objectContaining({ correct: false }));
+});
+
 test('a picture with every name, the artists, the date and the movements to guess', async ({ request, userA }) => {
   const pub = await get(request, 'image?n=20');
   expect(pub.length).toBeGreaterThan(0);

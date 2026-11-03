@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-03
 
+### Quiz: a copy after a work of another region counts there too
+- **What:** `src/routes/quiz.js` — `counts(w, region)`: a work is in a region when it is its own or the region of a
+  work it is a `copy_after`; used by `&region=`, the artist's and the movement's rounds and `/quiz/regions` (copies
+  counted in both). A copy after one of the look-alikes (artist game) or after a work of the movement (movement game)
+  ranks first among the wrong options (+8 / +6), whatever its own date and kind. The copies' lookups as arrays built
+  once (a semi join over the CTE `mw` ran 120 times on 10× data). Today: Van Gogh's two copies after Hiroshige; Hokusai's
+  rounds show one in 25 of 25 draws (before: 0). e2e test; perf: the quiz budgets as before the change (they and 14
+  others are over on the rebuilt 10× data — production tripled since the budgets were set; not caused by this).
+- **Why:** owner: Van Gogh's Bridge in the Rain after Hiroshige belongs in Hokusai's quiz, as an automatic exception
+  to "rounds keep to their region".
+- **Revert:** `git revert` (no schema change).
+
 ### "Through the same hands" answers again: shared_hands() level by level (migration 196); site tests
 - **What:** `shared_hands()` rewritten in PL/pgSQL: from the one work out a level at a time (holders of the works
   reached → their other works not yet seen), instead of pairing every two works of every holder in the database first.

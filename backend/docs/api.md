@@ -582,8 +582,11 @@ Only works with a picture (their first image), not a whole of parts. What belong
   outside its tree (and for a period: don't overlap it). Its time = its dates, else its works' years.
 - World regions (191): `&region=<europe|middle_east|africa|central_asia|south_asia|east_asia|southeast_asia|oceania|north_america|south_america>`
   on image/artist/movement keeps every work in that region (view `entry_regions`); without it, an artist's or movement's
-  round takes its wrong options from its own region (anywhere when it has fewer than 2). `GET /v1/quiz/regions` →
-  `{data: [{region, name, name_de, note, works}]}` (pictured works per region).
+  round takes its wrong options from its own region (anywhere when it has fewer than 2). A copy after a work of another
+  region (relationship `copy_after`) counts in that region too — Van Gogh's Bridge in the Rain after Hiroshige plays in
+  Europe and East Asia — and a copy after one of the look-alikes (artist game) or after a work of the movement (movement
+  game) is ranked first among the wrong options. `GET /v1/quiz/regions` → `{data: [{region, name, name_de, note, works}]}`
+  (pictured works per region, copies in both).
 - `GET /v1/quiz/glossary?n=10&mode=definition|term|describe|mixed[&for=<slug>]` → `{data: [{kind: 'definition'|'term', term,
   answer, options: [term × 4]} | {kind: 'describe', term}]}`; terms with a definition of ≥ 40 characters; the others of
   the same category first, not its broader/narrower term; every shown definition without its own term's names (`…`).
