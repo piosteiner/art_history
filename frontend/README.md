@@ -107,7 +107,7 @@ its backlinks (`mentioned_in`) as "Mentioned in", a term's as "Used in".
 the detail's `entries` map (`src/glossary.ts`); every other internal link (fields, relationships, map popups, the graph
 panel) from `GET /v1/previews` (`src/previews.ts`: a MutationObserver on `#app` collects the links as views render and
 fetches what isn't known in one request per 100). Mouse: after a 250 ms pause; keyboard: on focus; touch: on entry pages
-the first tap shows it. Not on the header, breadcrumbs, previous/next, buttons, list cards, the explore pickers or the
+the first tap shows it. Not on the header, breadcrumbs, previous/next, buttons, list cards and rows, the explore pickers or the
 page's own link.
 
 ## Creators and provenance
@@ -376,3 +376,10 @@ click is held back), Esc or Done ends. Each element is sent described (`label`, 
 with a CSS `selector` (`selectorOf`: from the closest ancestor with an id, `tag:nth-of-type` steps). `POST /v1/feedback`
 through `sendFeedback` in `api.ts`. The CMS links a feedback's page with `#fb=<JSON list of selectors>`;
 `highlightFeedback()` outlines those elements once the view has drawn them. The privacy page has a section on it.
+
+## Cards or a compact list (2026-11-03)
+Every list page has a "Cards | List" switch, kept per section in localStorage (`arthistory:view:<plural>`, `savedView()` in
+`src/catalog.ts`). Places, movements, polities, literary works, glossary and bibliography start as the list, the other
+sections as cards. A row (`row()` in `src/views/list.ts`, CSS `.rows`): name and original | date line | details (up to
+three lines); small pictures only where at least a tenth of the section has one; an empty date column folds away
+(`.rows-nodate`); on a phone the details go below the name.
