@@ -145,6 +145,18 @@ test('forms provenance sources write: between … and …, Roman months, German 
   assert.throws(() => parseFuzzyDate('32.13.1891'));   // no such month: left alone, then refused
 });
 
+test('German month names (owner 2026-11-03): "5. Juli 1996", abbreviations, Jänner; labels in English', () => {
+  const p = (s) => { const r = parseFuzzyDate(s); return [r.range, r.label]; };
+  assert.deepStrictEqual(p('5. Juli 1996'), ['[1996-07-05,1996-07-06)', '5 July 1996']);
+  assert.deepStrictEqual(p('5 Juli 1996'), ['[1996-07-05,1996-07-06)', '5 July 1996']);
+  assert.deepStrictEqual(p('Juli 1996'), ['[1996-07-01,1996-08-01)', 'July 1996']);
+  assert.deepStrictEqual(p('5. Okt. 1996'), ['[1996-10-05,1996-10-06)', '5 October 1996']);
+  assert.deepStrictEqual(p('Jänner 1900'), ['[1900-01-01,1900-02-01)', 'January 1900']);
+  assert.deepStrictEqual(p('1. März 1880 – 3. Mai 1890'), ['[1880-03-01,1890-05-04)', '1 March 1880 – 3 May 1890']);
+  assert.deepStrictEqual(p('26 March 1952'), ['[1952-03-26,1952-03-27)', '26 March 1952']);   // English as before
+  assert.throws(() => parseFuzzyDate('31. Februar 1900'));   // no such day
+});
+
 test('ranges as people write them (099): any two forms, with -, –, " - ", "to"; open ends', () => {
   const r = (s, o) => parseFuzzyDate(s, o);
   for (const s of ['1900-1905', '1900–1905', '1900 - 1905', '1900 to 1905', '1900 – 1905']) {

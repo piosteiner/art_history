@@ -2526,7 +2526,9 @@ test('a long selection gets a short address; the short address opens the same se
   const slugs = await page.locator('.card a[href^="/artists/"]').evaluateAll((as) => [...new Set(as.map((a) => a.getAttribute('href')!.split('/').at(-1)!))].slice(0, 30));
   expect(slugs.length).toBeGreaterThan(10);
   await page.goto(`/?artists=${slugs.join(',')}&movements=none`);
-  await expect(page.locator('#map-status')).toContainText('places');
+  // loaded, whatever it says: the first 30 artists may have no places yet ("0 of 30 chosen entries on the map", CI
+  // 2026-11-03 after the Bührle works) — the map takes longer with more data
+  await expect(page.locator('#map-status')).not.toHaveText('Loading…', { timeout: 30000 });
   await page.fill('input[name=from]', '1850');                                   // a change: the address is written
   await page.fill('input[name=to]', '1900');
   await page.press('input[name=to]', 'Enter');
@@ -2534,7 +2536,7 @@ test('a long selection gets a short address; the short address opens the same se
   const short = new URL(page.url());
 
   await page.goto(`${short.pathname}${short.search}`);                           // opened again: the same view
-  await expect(page.locator('#map-status')).toContainText('in 1850–1900');
+  await expect(page.locator('#map-status')).toContainText('in 1850–1900', { timeout: 30000 });
   await expect(page).toHaveURL(new RegExp(`\\?v=${short.searchParams.get('v')}$`)); // and the short address stays
   await page.goto('/?v=00000000');
   await expect(page.locator('.explore')).toContainText('This short link is unknown');

@@ -150,7 +150,14 @@ const BEFORE = /^before\s+(.+)$/i;
 // openEnd allows "1808/" (still ongoing: upper bound infinite) — for periods, not for births or creation dates.
 // Forms as provenance sources write them (Kunsthaus Zürich …), rewritten to the ones below (077):
 //   "between 1917 and 1930" → 1917/1930 · "13.VI.1913" (Roman month) and "1.7.1949" → 1913-06-13, 1949-07-01 ·
-//   "7.1934" → 1934-07
+//   "7.1934" → 1934-07 · German month names (owner 2026-11-03): "5. Juli 1996", "5 Juli 1996", "Juli 1996",
+//   "5. Okt. 1996", "Jänner 1900" → 1996-07-05, 1996-07, 1996-10-05, 1900-01 (the label then in English, as all labels)
+const DE_MONTHS = {
+  januar: 1, jänner: 1, jan: 1, februar: 2, feber: 2, feb: 2, märz: 3, maerz: 3, mär: 3, mrz: 3, april: 4, apr: 4, mai: 5,
+  juni: 6, jun: 6, juli: 7, jul: 7, august: 8, aug: 8, september: 9, sept: 9, sep: 9, oktober: 10, okt: 10,
+  november: 11, nov: 11, dezember: 12, dez: 12,
+};
+const DE_DATE = new RegExp(`(^|[^\\p{L}\\d.])(?:(\\d{1,2})\\.?\\s*)?(${Object.keys(DE_MONTHS).sort((a, b) => b.length - a.length).join('|')})\\.?\\s+(\\d{3,4})(?![\\d.])`, 'giu');
 const ROMAN = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10, XI: 11, XII: 12 };
 function normalizeSourceForms(text) {
   let t = text.replace(/^between\s+(.+?)\s+and\s+(.+)$/i, '$1/$2');
@@ -159,6 +166,7 @@ function normalizeSourceForms(text) {
     return month >= 1 && month <= 12 ? `${pre}${y}-${pad(month, 2)}-${pad(Number(d), 2)}` : m;
   });
   t = t.replace(/(^|[^\d.])(\d{1,2})\.(\d{4})(?![\d.])/g, (m, pre, mo, y) => (Number(mo) >= 1 && Number(mo) <= 12 ? `${pre}${y}-${pad(Number(mo), 2)}` : m));
+  t = t.replace(DE_DATE, (m, pre, d, name, y) => `${pre}${y}-${pad(DE_MONTHS[name.toLowerCase()], 2)}${d ? `-${pad(Number(d), 2)}` : ''}`);
   return t;
 }
 

@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-03
 
+### Dates with German month names; site test less tied to the data
+- **What:** `src/fuzzy-date.js` (`normalizeSourceForms`): "5. Juli 1996", "5 Juli 1996", "Juli 1996", abbreviations
+  ("5. Okt. 1996"), "Jänner" — rewritten to ISO before parsing, labels in English as all labels; ranges of them work too.
+  Unit test. Site test "short address": waits until the map has loaded, whatever its status says (the first 30 artists
+  may have no places since the Bührle works), 30 s. Source gw.geneanet.org (a user's family tree, created as
+  "institution" by a pasted link): reliability → database (data, not a migration).
+- **Why:** owner: a clear, common date format was refused; the Pages build of 7a16422 failed on the test.
+- **Revert:** `git revert`; the source's reliability back with `UPDATE bibliography SET reliability = 'institution'
+  WHERE slug = 'gw-geneanet-org'`.
+
 ### Quiz: a copy after a work of another region counts there too
 - **What:** `src/routes/quiz.js` — `counts(w, region)`: a work is in a region when it is its own or the region of a
   work it is a `copy_after`; used by `&region=`, the artist's and the movement's rounds and `/quiz/regions` (copies
