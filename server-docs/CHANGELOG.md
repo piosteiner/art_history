@@ -8,7 +8,7 @@ Format: date — what — why — how to revert.
 - **What:** `relevance.js` SOURCE_KINDS.web `need` = url, accessed (was also container — the KHIST guide § 9.5 asks
   for author, title, URL, date of access). "Appeared in" and the year stay offered: the note under the kind explains
   that the year makes the short reference ("Iversen 2012", else "o. J."). CSS: a field pair whose fields are all
-  hidden takes no room (the empty gaps between sections). `forms.spec.js` updated.
+  hidden takes no room (the empty gaps between sections) — only rows made of `.field`s (the first version hid the provenance form's place rows; caught by provenance-cases.spec). `forms.spec.js` updated.
 - **Why:** owner 2026-11-04 ("why is for a web source the appeared in required and why is there a publication year?").
 - **Revert:** `git revert` of the commit.
 
