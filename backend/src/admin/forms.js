@@ -14,8 +14,13 @@ const LANGS = [['en', 'English'], ['de', 'German'], ['fr', 'French'], ['it', 'It
   ['zh-Latn-pinyin', 'Chinese, pinyin'], ['ko', 'Korean'], ['ko-Latn', 'Korean, romanized'], ['ru', 'Russian'], ['ru-Latn', 'Russian, romanized'],
   ['ar', 'Arabic'], ['fa', 'Persian'], ['el', 'Greek'], ['la', 'Latin']];
 
-const DATE_HINT = html`e.g. <code>1853</code> · <code>1888-02</code> · <code>1853-03-30</code> · <code>1886-03/1888-02-20</code> (from/to, inclusive)
-  · <code>c. 1755</code> (±5 years) · <code>13th century</code> · <code>late 13th century</code> · <code>first half of the 13th century</code> · <code>1880s</code>`;
+// every form the date parser takes (src/fuzzy-date.js) — behind the ⓘ, so complete; each example parses (checked 2026-11-04)
+const DATE_HINT = html`<b>Exact:</b> <code>1853</code> · <code>1888-02</code> · <code>1853-03-30</code> — or written out: <code>30 March 1853</code> · <code>March 1853</code> · <code>5. Juli 1996</code> · <code>13.VI.1913</code><br>
+  <b>Roughly:</b> <code>c. 1755</code> (±5 years) · <code>c. 1755–1760</code> · <code>1880s</code> · <code>13th century</code> · <code>late 13th century</code> (early / mid / late = thirds) · <code>first half of the 13th century</code> · <code>13th–14th century</code><br>
+  <b>From … to</b> (both ends included): <code>1886-03/1888-02-20</code> · <code>1900–1905</code> · <code>1900 to 1905</code> · <code>between 1917 and 1930</code> · <code>c. 1900–c. 1905</code><br>
+  <b>Known from one side only:</b> <code>1952-03-26 or later</code> · <code>not before 1952</code> · <code>1904 or earlier</code> · <code>by 1904</code> · <code>after 1952</code> · <code>before 1928</code> (these two without the year named)<br>
+  <b>Before Christ:</b> <code>-500</code> or <code>500 BCE</code> · <code>c. 500 BCE</code> · <code>5th century BCE</code> (years only; there is no year 0)<br>
+  <b>Label</b> (optional): how the date is shown when it should read differently — “c. 1480”, “21 May 1471 (Julian calendar)”. Empty = made from the date.`;
 const HINTS = {
   family_name: html`With its particle: “van Gogh”, “de la Tour” — sorted under G, T (a lowercase particle is skipped); filled from the name for new entries.`,
   given_name: html`With a suffix: “Jan, the Elder”. Japanese names: the given name here, the family name beside it.`,
@@ -26,10 +31,13 @@ const HINTS = {
     Cite: <code>[[source/busch-1993|55]]</code> → footnote "Busch 1993, S. 55."; own footnote: <code>^[Vgl. [[source/busch-1993|bes. S. 55]].]</code>
     Further reading: under a heading <code>## Weiterführende Literatur</code>, <code>- [[source/busch-1993]]</code> is listed in full, not as a footnote.`,
   'text[]': 'One per line.',
-  names: html`One per line: <code>name | language | role</code> — role: original, translation, romanization or alternative
-    (the default). E.g. <code>Kanagawa-oki nami ura | ja-Latn | romanization</code> · <code>The Great Wave off Kanagawa | en | translation, official</code>.
-    A translation is <b>official</b> (the holding institution’s — cite it), <b>common</b> (in use; the default) or <b>own</b> (yours).
-    Furigana work here too.`,
+  names: html`Each other name of the entry in its own row — <b>+ Add a name</b> for another. After the name:<br>
+    <b>language</b> as a code: <code>ja</code>, <code>ja-Latn</code> (romanized), <code>en</code>, <code>de</code>, <code>zh-Hant</code><br>
+    <b>role:</b> <i>original</i> (in its own language and script) · <i>translation</i> · <i>romanization</i> (Kanagawa-oki nami ura) · <i>alternative</i> (the default) · <i>former</i> (no longer used — say since when)<br>
+    a translation is <b>official</b> (the holding institution’s or a publisher’s — cite it), <b>common</b> (in use; the default) or <b>own</b> (yours, shown [in brackets])<br>
+    <b>kind of name:</b> birth name · married name · pseudonym · art name (gō) · religious name · nickname · abbreviation<br>
+    <b>in use when</b> — a date as everywhere (<code>until 1945</code>, <code>1912–1940</code>) — and a short <b>context</b> (“renamed … in 1945”).
+    Furigana: select kanji and press “Add reading”.`,
   name: html`Furigana: <code>{神奈川|かながわ}</code> — or select kanji and press “Add reading”. Language: e.g. <code>ja</code>, <code>en</code>, <code>zh-Hant</code>.`,
   country_codes: 'Modern countries on its territory, ISO codes, one per line (e.g. CN for the Han dynasty; UA, RU, BY … for the USSR). Shown as "today …" only for entries without a place.',
   inventory_number: 'Only together with the institution above — the number belongs to its collection.',
@@ -37,7 +45,7 @@ const HINTS = {
   area: 'GeoJSON Polygon or MultiPolygon, [longitude, latitude] pairs (optional outline for regions).',
   line: 'GeoJSON LineString, [longitude, latitude] pairs — a road or river (the Tōkaidō through its stations); drawn on the maps of the works that depict it.',
   date: DATE_HINT,
-  period: html`${DATE_HINT} · <code>1808/</code> (since 1808, ongoing)`,
+  period: html`${DATE_HINT}<br><b>Still going on / open start:</b> <code>1808/</code> · <code>since 1808</code> · <code>from 1900</code> · <code>until 1905</code>`,
   label: 'Optional display text, e.g. "c. 1480". Empty = generated from the date.',
   point: 'Decimal degrees. Tip: right-click a spot in OpenStreetMap → "Show address" shows its coordinates.',
   slug: 'Lowercase, digits and hyphens: used in URLs (typed text is converted). New entries: made from the title. To make it anew later, empty the field — it then follows the title, and the old address redirects to the new one.',
@@ -104,6 +112,8 @@ const TYPE_HINTS = {
   'artwork.inventory_number': 'Only together with the institution above — the number belongs to its collection, as it publishes it (Kunsthaus: BU 0099). The owner’s number, former numbers and catalogue raisonné numbers: “Further numbers” just below.',
   'artwork.on_loan': 'Yes: lent to (deposited at) the institution above — the owner stays someone else; record the owner (the lender) in the provenance. A permanent loan (Dauerleihgabe) is a loan too.',
   'artwork.on_loan_since': 'Since when it is there on loan, e.g. 2021.',
+  'artwork.attribution_label': 'Only when the work is not simply by its creator: “Workshop of …” · “Attributed to …” · “Circle of …” · “After …” — shown instead of the plain name.',
+  'artwork.dimensions_note': 'What the dimensions measure, when it isn’t the work itself: sheet · image · with frame · diameter.',
   'artwork.web_url': 'The work’s page at the museum or collection that holds it — or another good page about it (the artist’s, a catalogue). The site links it: the way to see the work when we have no free image.',
   'artwork.parent': 'The series, album, triptych or altarpiece it belongs to — an artwork of its own (object type series, album …). Empty = none.',
   'artwork.part_number': 'Its place in the whole: 21 · left panel · plate 3 · leaf 12. A number in it sorts the parts.',
@@ -113,11 +123,20 @@ const TYPE_HINTS = {
     bridge, temple hall … Pick a term from the list so works group together — in English or German: types are glossary terms with
     their translations (Holzschnitt → woodblock print), stored under the term's name. A new word becomes a new term, to translate on its
     glossary page. A building that houses an institution: link them with <i>houses</i>.`,
-  'place.kind': 'settlement (city, town, village) · building · site (archaeological site, landscape) · region · country',
-  'movement.kind': 'period (Edo period) · movement (Impressionism) · school (Ukiyo-e, Rinpa) · style',
+  'place.kind': html`<b>settlement</b> (city, town, village) · <b>district</b> (a quarter, a ward) · <b>street</b> (also a road — its course as a line) · <b>building</b> · <b>site</b> (a garden, a landscape spot) · <b>archaeological</b> site · <b>natural</b> feature (mountain, lake, island, river) · <b>region</b> (province, canton, prefecture) · <b>country</b> · <b>continent</b>. The form shows the fields the kind needs.`,
+  'place.designation': 'What it is as a unit, in a few words — “canton of Switzerland”, “prefecture of Japan”, “street in Paris”. Shown under the name instead of the kind, and in lists; it tells places of one name apart.',
+  'place.existed': 'Only for a unit that no longer exists as such — a dissolved province, a city merged into another: when it existed (e.g. 1871/1945).',
+  'place.parent': 'The place it lies in — a district in its city, a city in its region or country. Chains build the hierarchy shown on the site.',
+  'place.country_code': html`The modern country it lies in, as an ISO code: <code>JP</code>, <code>FR</code>, <code>CH</code>. Usually found from the parent or the point.`,
+  'movement.kind': 'period (Edo period) · movement (Impressionism) · school (Ukiyo-e, Rinpa, Kanō) · style (Baroque)',
+  'movement.parent': 'The broader movement or period it belongs to (Rinpa → Edo period). Empty = none.',
+  'polity.parent': 'The larger state it belonged to — a domain in the shogunate, a kingdom in an empire. Empty = none.',
+  'literature.parent': 'The whole this is a part of — a chapter of a tale, an act of a play, a poem of an anthology. Empty = none (the whole itself).',
+  'literature.part_number': 'Its place in the whole: 5 · Act II · “Wakamurasaki”. A number in it sorts the parts.',
   'institution.dissolved': 'When it closed, was dissolved or merged into another — empty while it exists. With “Founded” it says when it existed: the start map shows it in a time window only then.',
-  'institution.kind': 'museum · academy · temple · church · gallery · library … — pick a term from the list',
-  'person.kind': 'person — or a group: family · dynasty · religious order · guild',
+  'institution.kind': 'museum · gallery · temple · church · art academy · auction house · foundation · collection · library … — pick a term from the list. A kind with a building of its own (museum, temple …) asks for its location; a collection, foundation or dealer only for its city.',
+  'institution.website_url': 'Its own website (the front page) — not a page about one work; that is the work’s “Web page”.',
+  'person.kind': 'person (the default) — or a group: family · dynasty · couple · religious order · guild · workshop · company · group. A group has a time it was active instead of dates of life.',
   'polity.kind': 'empire · kingdom · dynasty · republic · shogunate …',
   'event.kind': 'fire · earthquake · war · battle · trial · exhibition · auction · festival · founding … — pick a term from the list',
   'event.parent': 'A larger event it belongs to (a battle in a war, a session of a trial). Empty = none.',
@@ -126,12 +145,12 @@ const TYPE_HINTS = {
   'event.location': 'Only if there is one spot: the building of a trial, an exhibition or an auction.',
   'event.area': 'Optional: the area it covered — the burned districts, a battlefield.',
   'event.description_md': html`What happened and why it matters here. Link people, works and places with <code>[[type/slug]]</code>; who took part (and as what), what it depicts or concerns: relationships below.`,
-  'term.category': 'technique · architecture · material · iconography · style · format · performing arts · other — what the glossary is browsed by',
+  'term.category': 'What the glossary is browsed by: technique · material · object type · format · mounting (frames, mounts) · style · iconography · architecture · performing arts · group of works (series, versions, cycle) · heritage designation · calendar (era names) · other',
   'artist.active': html`Only when birth and death are unknown: when the artist is known to have worked — <code>first half of the 1st century BCE</code> · <code>-0100/-0050</code> · <code>1480/1510</code>. Leave birth and death empty rather than guessing them.`,
   'term.parent': 'The wider term this one belongs under (Yoroboshi → Noh → performing arts as a term …): one, or none. Not a category — the site shows the chain and, on the broader term, everything under it.',
   'term.definition': 'One or two sentences (max. 500 characters): shown as a tooltip wherever a text links the term, and in the A–Z list. Plain text.',
   'term.description_md': html`The full explanation (Markdown). Link other terms with <code>[[slug]]</code> or <code>[[slug|own words]]</code>, other entries with <code>[[type/slug]]</code>.`,
-  'source.kind': 'Decides how the citation is put together (KHIST guide): book, exhibition catalogue, chapter in a volume, journal article, lexicon or catalogue entry, website, video, archival source.',
+  'source.kind': 'Decides how the citation is put together (KHIST guide) and which fields the form asks for: book · exhibition catalogue · chapter in a volume · journal article · lexicon entry · catalogue entry (a number in a catalogue) · web page · video · archival source (a letter, a document) · other.',
   'source.authors': html`One per line, <b>Surname, Given names</b>: <code>Busch, Werner</code>. More than three are cited as “… u. a.”.`,
   'source.editors': 'hrsg. von — one per line, Surname, Given names.',
   'source.compilers': 'Bearb. (catalogues, editions) — one per line, Surname, Given names.',
@@ -141,14 +160,29 @@ const TYPE_HINTS = {
   'source.volumes_total': 'e.g. 4 → "4 Bde."',
   'source.thesis': 'e.g. Diss. masch. — written before the place: "Diss. masch. Hamburg 1924".',
   'source.place': 'e.g. München, or Stuttgart und Teufen.',
-  'source.year': 'Also a span: 1955–1989.',
+  'source.year': 'The year of this edition — also a span for a work in several volumes: 1955–1989. With authors it makes the short reference (Busch 1993); without a year: “o. J.”.',
+  'source.publisher': 'Optional in the citation (KHIST): “Paris: Gallimard 1990”. Leave it out rather than guess.',
+  'source.edition': 'Only from the second edition on, as the book says: 2. Aufl. · überarb. Ausgabe · 3rd ed.',
+  'source.original_year': 'The year of the first edition when you use a later one: shown in brackets after the title — “[1985]”.',
+  'source.series': 'The series the book appeared in, with its number: Bibliothek klassischer Texte · Studien zur Kunstgeschichte 112.',
+  'source.volume': 'The volume of the journal (Jahrgang) or of the lexicon (Bd.): Artforum 10 · Lexikon des Mittelalters, Bd. 7.',
+  'source.issue': 'The issue (Nr.) — only when the pages start anew in every issue.',
+  'source.catalogue_number': 'The number of the entry in the catalogue: 32 → “Kat.-Nr. 32”.',
+  'source.url': 'The address of the page itself (not the site’s front page). Typed in: “last accessed” becomes today.',
+  'source.accessed': html`The day you read the page — today when you enter the link. A date as everywhere: <code>2026-11-04</code>.`,
+  'source.uploader': 'For a clip on a platform (YouTube, Vimeo): the account that uploaded it.',
+  'source.archive': 'The archive or collection that keeps it, with its abbreviation once: Staatsarchiv Basel (StABS), Archiv des Basler Kunstvereins.',
+  'source.shelfmark': 'Its signature in the archive: PA888 H 2.1 (1).',
+  'source.isbn': 'Only for reference; “Fill in” at the top fills the whole form from an ISBN.',
+  'source.doi': 'Only for reference; “Fill in” at the top fills the whole form from a DOI.',
+  'source.reading_status': 'Your reading list: to read · reading · read (then the day you finished it) — shown in the bibliography’s list here and on the site.',
   'source.pages': 'The page range of the part: 190–221.',
   'source.pages_are_columns': 'Lexicons often count columns: "Sp. 1209–1210".',
   'source.exhibition': 'Place: institution — e.g. Paris: Bibliothèque Nationale.',
   'source.date_text': 'Letters, events, conference talks: e.g. 30.09.1913.',
   'source.siglum': 'Leave empty: generated from surnames and year (Busch 1993, Kimpel und Suckale 1995, Kat. Paris 2007, Jacobsen 1992a).',
   'source.primary_source': 'Letters, documents, historical texts — listed apart as “Quellen”.',
-  'source.reliability': 'How far a fact cited from it can be trusted. Empty = from the kind: website → institution, literature → scholarly, archival / primary → primary. Set “database” for aggregators (RKD, Getty ULAN …), “scholarly” for a catalogue raisonné online, “other” for anything below that — a family tree (Geneanet), a forum, a blog.',
+  'source.reliability': 'How far a fact cited from it can be trusted, from most to least: primary (the document itself) · scholarly · institution (a museum’s own page) · database (aggregators: RKD, Getty ULAN, Wikipedia) · other (a family tree, a forum, a blog). Empty = from the kind: web page → institution, literature → scholarly, archival / primary source → primary.',
   'source.description_md': 'Your own notes: what it says, what it is good for. Not part of the citation.',
   'artwork.region': 'Leave it worked out: from where the work was made (“created in”), else its artist, else its movements. Set it only when that is wrong or missing — e.g. a work without an artist. Used by the quizzes: rounds stay in one region.',
   'artist.region': 'Leave it worked out: from where they worked or lived, else where they were born, their nationality or movements. Set it only when that is wrong or missing.',

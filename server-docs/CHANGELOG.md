@@ -4,6 +4,22 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### CMS: hints checked against what the forms accept
+- **What:** owner: can the hints be improved, do some not show all options? `forms.js`:
+  - Dates: every form the parser takes (written out, German, Roman months, ranges, "between … and …", "or later" /
+    "not before" / "by" / "or earlier", "before"/"after", BCE, early/mid/late = thirds) and what the label is for;
+    periods add the open forms (`1808/`, `since`, `from`, `until`). Each example checked with `parseFuzzyDate`.
+  - Other names: describes the widget (role incl. *former*, translation standing, the 7 kinds of name, in use when,
+    context) instead of the old one-line syntax.
+  - Complete lists: place kinds (10, was 5), person groups (8, was 4), glossary categories (13, was 8), source
+    reliability in order incl. *primary*, kinds of source incl. *other*, institution kinds (what the kind changes).
+  - New hints for 22 fields that had none: place designation/existed/parent/country code; parent and part number of
+    movements, polities, literary works; source publisher (optional), edition, first edition, series, volume, issue,
+    catalogue number, URL, last accessed, uploader, archive, shelfmark, ISBN/DOI, reading status; institution
+    website; artwork attribution label, dimensions note; better source year.
+- **Why:** owner 2026-11-04.
+- **Revert:** `git revert` of the commit.
+
 ### CMS: a field's help behind an ⓘ beside its label
 - **What:** owner: hints of any length, shown only when needed. `forms.js` `hint()` (and the slug's) render
   `<div class="hint help">`; `editor/hints.js` hides them and puts an ⓘ button (aria-expanded/-controls) in the
