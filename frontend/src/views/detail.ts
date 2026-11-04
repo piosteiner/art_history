@@ -6,7 +6,7 @@ import { keepInView, markWords, wordsToMark } from '../highlight';
 import { citeSection, connectSection, sharedHandsSection } from './detail-network';
 import { GROUPS, type Group } from '../selection';
 import {
-  titleStatusLine, displayName, langAttr, originalLine, gallery, html, PLURAL_LABEL, render, trusted, TYPE_LABEL, wireGalleries, wireImageFallbacks, wireLightbox,
+  titleStatusLine, displayName, langAttr, originalLine, gallery, html, PLURAL_LABEL, render, trusted, TYPE_LABEL, wireGalleries, wireImageFallbacks, wireLightbox, href,
 } from '../html';
 import { COLORS } from '../colors';
 import type { DetailByPlural, Plural } from '../types';
@@ -145,7 +145,7 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
       const mapEl = main.querySelector<HTMLElement>('#map')!;
       const legend = main.querySelector<HTMLElement>('#legend')!;
       // MapLibre loads only for pages with a map (terms and sources have none)
-      mapModule!.then(({ createMap, gapList, showEntity, showOwnSite, showPoint, showProvenance, unplacedSteps, placedProvenance, probable }) => {
+      mapModule!.then(({ createMap, gapList, showEntity, showOwnSite, showParts, showPoint, showProvenance, unplacedSteps, placedProvenance, probable }) => {
         if (!current()) return;
         const map = createMap(mapEl);
         cleanup = () => map.remove();
@@ -174,12 +174,14 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
               && !(prov && f.properties.layer === 'presence' && ['kept_in', 'created_in'].includes(f.properties.relationship)));
             // an institution's own point, or where an immovable artwork stands
             const own = e.type === 'institution' ? e.location ?? null : e.type === 'artwork' ? e.area ?? e.location ?? null : null;
-            if (own) showOwnSite(map, own, v.title, !stops.length && !prov);
-            if (!stops.length && !prov && own) {
+            // a whole's parts where they are (a series' views on the series' map, API 2026-11-04)
+            const parts = fc.parts?.features.length ? fc.parts : null;
+            if (own) showOwnSite(map, own, v.title, !stops.length && !prov && !parts);
+            if (!stops.length && !prov && !parts && own) {
               render(legend, html`<span><i class="dot" style="background:${COLORS.site}"></i>${e.type === 'artwork' ? 'where it stands' : 'its building'}</span>`);
               return;
             }
-            if (!stops.length && !prov) {
+            if (!stops.length && !prov && !parts) {
               main.querySelector('.detail-side')?.remove();
               map.remove();
               cleanup = undefined;
@@ -188,7 +190,10 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
             // what the dates imply (API 086), by step position: the distance a work travelled labels its segment
             const inferences = e.type === 'artwork'
               ? new Map((e.provenance ?? []).filter((s) => s.inferences?.length).map((s) => [s.position, s.inferences!])) : undefined;
-            const view = prov ? showProvenance(map, fc, inferences, e.type === 'artwork' && !!e.fate && e.fate.status !== 'partly_destroyed') : showEntity(map, fc);
+            const view = prov ? showProvenance(map, fc, inferences, e.type === 'artwork' && !!e.fate && e.fate.status !== 'partly_destroyed')
+              : stops.length ? showEntity(map, fc) : null;
+            if (parts) showParts(map, parts, { alsoFit: !view });
+            const partProps = parts?.features.map((f) => f.properties) ?? [];
             const layers = new Set(stops.map((f) => f.properties.layer));
             const both = (layers.has('presence') || !!prov) && layers.has('association');
             const c = COLORS.provenance;
@@ -205,17 +210,23 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
               ${!prov && fc.features.some((f) => f.properties.layer === 'route') ? html`<span><i class="line" style="background:${COLORS.route}"></i>route, in date order</span>` : ''}
               ${layers.has('association') ? html`<span><i class="ring" style="border-color:${COLORS.association}"></i>association (not travel)</span>` : ''}
               ${own ? html`<span><i class="dot" style="background:${COLORS.site}"></i>${e.type === 'artwork' ? 'where it stands' : 'its building'}</span>` : ''}
+              ${parts ? html`
+                ${partProps.some((p) => p.certainty !== 'possible' && p.certainty !== 'disputed') ? html`<span><i class="dot dot-num" style="background:${COLORS.association}"></i>its parts, numbered as in the series, at the places they show</span>` : ''}
+                ${partProps.some((p) => p.certainty === 'possible' || p.certainty === 'disputed') ? html`<span><i class="ring ring-dashed" style="border-color:${COLORS.association}"></i>viewpoint uncertain</span>` : ''}
+                ${partProps.some((p) => p.precision === 'region' || p.precision === 'country') ? html`<span><i class="ring ring-area" style="border-color:${COLORS.association}"></i>only the region known</span>` : ''}` : ''}
               ${both ? html`<button type="button" class="link-button" data-fit="all">show associations</button>` : ''}
               ${prov?.unplaced.length ? html`<div class="legend-note" id="unplaced">Not on the map (place not recorded):
                 ${unplacedSteps(prov)}</div>` : ''}
               ${prov && e.type === 'artwork' && e.travel ? html`<div class="legend-note" id="travel" title="${String(e.travel.legs)} ${e.travel.legs === 1 ? 'move' : 'moves'} between different places, along the line through the provenance's stops">Travelled ≈ ${e.travel.km.toLocaleString('en')} km over ${String(e.travel.placed)} of ${String(e.travel.steps)} steps</div>` : ''}
               ${prov?.gaps?.length ? html`<div class="legend-note" id="gaps">Gaps in the provenance:
-                ${gapList(prov)}</div>` : ''}`);
+                ${gapList(prov)}</div>` : ''}
+              ${parts?.unplaced.length ? html`<div class="legend-note" id="unplaced-parts">Parts without a place on the map:
+                ${parts.unplaced.map((p, i) => html`${i ? ', ' : ''}<a href="${href('artwork', p.slug)}">${p.number ? `${p.number} · ` : ''}${p.title}</a>`)}</div>` : ''}`);
             legend.querySelector<HTMLButtonElement>('[data-fit]')?.addEventListener('click', (ev) => {
               const btn = ev.currentTarget as HTMLButtonElement;
               const all = btn.dataset.fit === 'all';
-              if (all) view.fitAll();
-              else view.fitPresence();
+              if (all) view?.fitAll();
+              else view?.fitPresence();
               btn.dataset.fit = all ? 'presence' : 'all';
               btn.textContent = all ? 'zoom to the route' : 'show associations';
             });

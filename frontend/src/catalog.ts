@@ -7,6 +7,7 @@ import type { Country, DateRange, EntityType, ItemByPlural, NameEntry, Plural, P
 export interface SortValue {
   value: string | number | null; // null sorts last
   heading: string; // section heading in the sorted list ("G", "19th century", "Netherlands")
+  desc?: boolean; // the greatest first (the newest movement on top); unknown still last
 }
 
 /** Searchable text that isn't on screen; shown as the reason when the search matched it ("Type: woodblock print"). */
@@ -200,8 +201,16 @@ type Built<T> = Omit<Entry<T>, 'item' | 'search' | 'type' | 'lang'>;
 interface TypeCatalog<P extends Plural> {
   type: EntityType;
   sorts: SortOption[];
+  /** The order a list opens in until the visitor chooses (owner 2026-11-04); without it, the first option. */
+  defaultSort?: string;
   build: (item: ItemByPlural[P]) => Built<ItemByPlural[P]>;
 }
+
+/** World regions (API 191) as the site names them, for the polities' sort. */
+export const REGION_LABEL: Record<string, string> = {
+  europe: 'Europe', middle_east: 'Middle East', africa: 'Africa', central_asia: 'Central Asia', south_asia: 'South Asia',
+  east_asia: 'East Asia', southeast_asia: 'Southeast Asia', oceania: 'Oceania', north_america: 'North America', south_america: 'South America',
+};
 
 /** A place's qualifier unless the row says it already (its designation, kind or country). */
 const apart = (p: PlaceItem): string | null =>
@@ -273,12 +282,13 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
     type: 'movement',
     sorts: [
       { id: 'name', label: 'Name A–Z' },
-      { id: 'start', label: 'Start year' },
+      { id: 'start', label: 'Start year, newest first' },
       { id: 'kind', label: 'Kind' },
     ],
+    defaultSort: 'start',
     build: (m) => ({
       slug: m.slug, name: m.name, meta: m.period?.label ?? '', fields: [],
-      sorts: { name: byName(m.name), start: byYear(m.period), kind: byText(m.kind, 'Other') },
+      sorts: { name: byName(m.name), start: { ...byYear(m.period), desc: true }, kind: byText(m.kind, 'Other') },
     }),
   },
   people: {
@@ -312,6 +322,7 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       { id: 'country', label: 'Country' },
       { id: 'kind', label: 'Kind' },
     ],
+    defaultSort: 'country',
     build: (p) => ({
       // what it is, and — where others share its name (API 162) — what sets it apart: "Cambridge: city · Massachusetts"
       slug: p.slug, name: p.name, meta: [p.designation ?? p.kind, apart(p), countryName(p.country_code)].filter(Boolean).join(' · '), fields: [],
@@ -370,10 +381,11 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
     type: 'literature',
     sorts: [
       { id: 'name', label: 'A–Z' },
-      { id: 'written', label: 'Written' },
+      { id: 'written', label: 'Date' },
       { id: 'author', label: 'Author' },
       { id: 'kind', label: 'Kind' },
     ],
+    defaultSort: 'author',
     build: (w) => ({
       slug: w.slug, name: w.name,
       meta: [w.kind, w.authors.map((a) => a.name).join(', '), w.written?.label, w.part_of ? `part of ${w.part_of.name}` : ''].filter(Boolean).join(' · '),
@@ -399,11 +411,12 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       { id: 'name', label: 'Name A–Z' },
       { id: 'start', label: 'Start year' },
       { id: 'kind', label: 'Kind' },
+      { id: 'region', label: 'World region' },
     ],
     build: (p) => ({
       slug: p.slug, name: p.name, meta: [p.period?.label, p.kind].filter(Boolean).join(' · '),
       fields: [],
-      sorts: { name: byName(p.name), start: byYear(p.period), kind: byText(p.kind, 'Other') },
+      sorts: { name: byName(p.name), start: byYear(p.period), kind: byText(p.kind, 'Other'), region: byText(p.region ? REGION_LABEL[p.region] ?? p.region : null, 'Region unknown') },
     }),
   },
 };
@@ -428,10 +441,10 @@ export function entries<P extends Plural>(plural: P, items: ItemByPlural[P][]): 
     // sort by the API's sort_key for every type: "Family, Given" (or sort_name) for artists and people, titles
     // without a leading article in their language ("Starry Night", "Phare de Honfleur"), romanizations of other scripts
     // — except the bibliography, which shows and sorts by the short reference ("Mason 2005"; its sort_key is the
-    // title's: "El 2 de mayo …" filed under "#", "Wikipedia, Aargau" under A — 2026-11-03)
-    const first = cat.sorts[0].id;
+    // title's: "El 2 de mayo …" filed under "#", "Wikipedia, Aargau" under A — 2026-11-03). It replaces the name sort
+    // only (the events' first option is the date: it was overwritten until 2026-11-04).
     if (named.sort_key && plural !== 'bibliography') {
-      e.sorts[first] = byName(named.sort_key);
+      e.sorts[nameSortId(e.sorts)] = byName(named.sort_key);
     }
     const lang = named.title_lang ?? named.name_lang ?? null;
     return { ...e, lang, type: cat.type, item, search: fold([e.name, e.meta, ...e.fields.map((x) => x.match ?? x.text)].join(' ')) };
@@ -444,16 +457,20 @@ export function sortOptions(plural: Plural, list: Entry[]): SortOption[] {
   return all.filter((o, i) => i === 0 || list.some((e) => e.sorts[o.id]?.value !== null));
 }
 
+/** The sort by name (title, short reference) among an entry's sorts: the fallback within a section. */
+const nameSortId = (sorts: Record<string, SortValue>) => ['name', 'title', 'siglum'].find((id) => id in sorts) ?? Object.keys(sorts)[0];
+
 export function sortEntries<T extends Entry>(list: T[], sortId: string): T[] {
   const cmp = (a: SortValue | undefined, b: SortValue | undefined) => {
     const x = a?.value ?? null;
     const y = b?.value ?? null;
     if (x === null || y === null) return x === y ? 0 : x === null ? 1 : -1;
-    return typeof x === 'number' && typeof y === 'number' ? x - y : String(x).localeCompare(String(y), 'en', { numeric: true });
+    const d = a?.desc || b?.desc ? -1 : 1;   // newest first where the sort says so (movements by start year)
+    return d * (typeof x === 'number' && typeof y === 'number' ? x - y : String(x).localeCompare(String(y), 'en', { numeric: true }));
   };
-  // within a section (same country, same century…) fall back to the name order (the first sort option)
+  // within a section (same country, same century…) fall back to the name order
   return [...list].sort((a, b) => {
-    const byName = Object.keys(a.sorts)[0];
+    const byName = nameSortId(a.sorts);
     return cmp(a.sorts[sortId], b.sorts[sortId]) || cmp(a.sorts[byName], b.sorts[byName]) || a.name.localeCompare(b.name, 'en', { numeric: true });
   });
 }
@@ -491,7 +508,9 @@ export function savedSort(plural: Plural, options: SortOption[]) {
   } catch {
     /* no storage */
   }
-  return options[0].id;
+  // the type's own default (places by country, movements newest first, literary works by author — owner 2026-11-04)
+  const own = CATALOG[plural].defaultSort;
+  return own && options.some((o) => o.id === own) ? own : options[0].id;
 }
 
 export function saveSort(plural: Plural, id: string) {

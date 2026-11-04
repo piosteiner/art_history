@@ -2,7 +2,7 @@
 // museums and sites, events. Setup and shared helpers: map-core.ts; an artwork's provenance: map-provenance.ts.
 import { Marker, Popup, type Map as MapLibre } from 'maplibre-gl';
 import type { ExpressionSpecification } from 'maplibre-gl';
-import { html, href, link, type Html } from './html';
+import { html, href, link, thumb, type Html } from './html';
 import { encounterLine } from './crossings';
 import { encounterKeys, type Encounter } from './encounters';
 import { COLORS, PALETTE } from './colors';
@@ -13,13 +13,14 @@ import {
   clearProvenanceMarkers, drawProvenance, holderText, placedProvenance, provenanceLayers, provenanceStops, stepsAtPlace, withoutReplaced,
 } from './map-provenance';
 import type {
-  ClustersMap, EntityMap, EntityType, EventMapProps, EventsMap, Feature, Inference, LineStringGeometry, PlacesMap, PresenceMap,
+  ClustersMap, EntityMap, EntityType, EventMapProps, EventsMap, Feature, Inference, LineStringGeometry, PartProps, PartsMap, PlacesMap, PointGeometry, PresenceMap,
   ProvenanceMap, ProvenanceSegmentProps, SiteProps, SitesMap, StopFeature,
 } from './types';
 
 export { COLORS, PALETTE };
 export { createMap, whenReady } from './map-core';
 export { gapList, placedProvenance, probable, provenanceHolder, provenanceInWindow, stepRuns, unplacedSteps } from './map-provenance';
+import { stepRuns } from './map-provenance';
 
 /**
  * Numbers the dated presence stops as `stop` / `stops` properties, in the order the API sends them — the route's
@@ -111,6 +112,48 @@ export function showProvenance(map: MapLibre, fc: EntityMap, inferences?: Map<nu
   // gone: destroyed or lost (API 103) — its last stop is the last known place, not where it is today
   whenReady(map, () => drawProvenance(map, 'prov', [{ prov, color: COLORS.provenance, inferences }], { ends: gone ? 'gone' : true }));
   return view;
+}
+
+const partMarkers = new WeakMap<MapLibre, Marker[]>();
+/**
+ * A whole's parts where they are (a series' views on its own map): numbered HTML markers at the places the parts
+ * depict, as the provenance's stops — several parts at one place in one marker ("2, 3, 46"); hollow when every part
+ * there has an uncertain viewpoint (possible, disputed). A click: the parts there, each with its picture.
+ */
+export function showParts(map: MapLibre, parts: PartsMap, { alsoFit = false } = {}) {
+  const byPlace = new Map<string, Feature<PointGeometry, PartProps>[]>();
+  for (const f of parts.features) {
+    const key = f.geometry.coordinates.join(',');
+    byPlace.set(key, [...(byPlace.get(key) ?? []), f]);
+  }
+  whenReady(map, () => {
+    for (const m of partMarkers.get(map) ?? []) m.remove();
+    const markers: Marker[] = [];
+    for (const group of byPlace.values()) {
+      const ps = group.map((f) => f.properties);
+      const numbers = ps.map((p) => p.number).filter((n): n is string => !!n && /^\d+$/.test(n)).map(Number);
+      const label = numbers.length === ps.length ? stepRuns(numbers) : ps.map((p) => p.number ?? '·').join(', ');
+      const el = document.createElement('div');
+      const hollow = ps.every((p) => p.certainty === 'possible' || p.certainty === 'disputed');
+      const area = ps.every((p) => p.precision === 'region' || p.precision === 'country');
+      el.className = `prov-stop part-stop${hollow ? ' hollow' : ''}${area ? ' area' : ''}`;
+      el.style.setProperty('--pc', COLORS.association);
+      el.textContent = label;
+      el.setAttribute('role', 'button');
+      el.setAttribute('aria-label', `${ps[0].place.name}: ${ps.length > 1 ? 'parts' : 'part'} ${label}`);
+      const popup = new Popup({ maxWidth: '320px', offset: area ? 20 : 13 }).setHTML(html`<div class="popup-row">
+        <strong>${link('place', ps[0].place.slug, ps[0].place.name)}</strong>
+        <ol class="popup-list popup-parts">${ps.map((p) => html`<li>
+          ${p.image_url ? html`<img class="popup-thumb" src="${thumb(p.image_url, 160)}" alt="" loading="lazy">` : ''}
+          <a href="${href('artwork', p.slug)}">${p.number ? html`<span class="muted">${p.number}</span> ` : ''}${p.title}</a>
+          ${p.note ? html`<br><em>${p.note}</em>` : ''}
+          ${p.certainty && p.certainty !== 'attested' ? html` <span class="tag">${p.certainty}</span>` : ''}</li>`)}</ol>
+      </div>`.value);
+      markers.push(new Marker({ element: el }).setLngLat(group[0].geometry.coordinates as [number, number]).setPopup(popup).addTo(map));
+    }
+    partMarkers.set(map, markers);
+    if (alsoFit) fit(map, parts.features.map((f) => f.geometry.coordinates as [number, number]), 9);
+  });
 }
 
 /** A single place (its own detail page). */

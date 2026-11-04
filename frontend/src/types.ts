@@ -283,7 +283,7 @@ export interface SourceItem extends Named {
   primary_source: boolean | null;
 }
 export interface TermItem extends Named { slug: string; name: string; category: TermCategory; definition: string | null; image_url: string | null }
-export interface PolityItem extends Named { slug: string; name: string; kind: string | null; period: DateRange | null; country_codes: string[] }
+export interface PolityItem extends Named { slug: string; name: string; kind: string | null; period: DateRange | null; country_codes: string[]; region?: string | null }
 /** Something that happened: a fire, a trial, an auction, an exhibition (migration 047). */
 export interface EventItem extends Located, Named {
   slug: string; name: string; kind: string | null; period: DateRange | null; place: Ref | null;
@@ -641,6 +641,20 @@ export interface EntityMap {
   features: (StopFeature | RouteFeature)[];
   /** Artworks: the provenance in the chain's order (not by date), every step on the map or in `unplaced`. */
   provenance?: ProvenanceMap;
+  /** A whole (a series, a cycle …): its parts at the places they show (API 2026-11-04), the others in `unplaced`. */
+  parts?: PartsMap;
+}
+
+/** A part of a whole: number and title, its picture, and — placed — the place it depicts and how sure that is. */
+export interface MapPartRef { number: string | null; slug: string; public_id: number | null; title: string; image_url: string | null }
+export interface PartProps extends MapPartRef {
+  layer: 'part';
+  place: Ref; precision: string | null; certainty: string | null; note: string | null;
+}
+export interface PartsMap {
+  type: 'FeatureCollection';
+  features: Feature<PointGeometry, PartProps>[];
+  unplaced: MapPartRef[];
 }
 
 /** One step of the provenance as the map has it: number `step` of `steps` in the chain (creation, steps, loan). */

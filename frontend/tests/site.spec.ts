@@ -708,6 +708,29 @@ test('artworks A–Z by the API sort_key: titles without a leading article in th
   await expect(heading('The Starry Night')).toHaveText('S');
 });
 
+test('lists open in their own order (owner 2026-11-04): movements newest first, places by country, literary works by author, events by date', async ({ page }) => {
+  await page.goto('/movements');
+  const sort = page.locator('.list-sort select');
+  await expect(sort).toHaveValue('start');
+  await expect(sort.locator('option[value=start]')).toHaveText('Start year, newest first');
+  const headings = page.locator('.cards-heading');
+  await expect(headings.first()).not.toHaveText('Date unknown');
+  // "21st century" … "26th century BCE": the latest century on top
+  const centuries = (await headings.allTextContents()).map((t) => Number(t.match(/\d+/)?.[0]) * (/BCE/.test(t) ? -1 : 1)).filter((n) => !Number.isNaN(n));
+  expect(centuries.length).toBeGreaterThan(1);
+  expect(centuries).toEqual([...centuries].sort((a, b) => b - a));
+  await page.goto('/places');
+  await expect(sort).toHaveValue('country');
+  await page.goto('/literary-works');
+  await expect(sort).toHaveValue('author');
+  await expect(sort.locator('option[value=written]')).toHaveText('Date');
+  await page.goto('/events');
+  await expect(sort).toHaveValue('date');                     // the name key no longer overwrites the date sort
+  await expect(page.locator('.cards-heading').first()).toContainText(/century|BCE/);
+  await page.goto('/polities');
+  await expect(sort.locator('option[value=region]')).toHaveText('World region');
+});
+
 test('privacy page from the footer (the CMS page "privacy"); the site sets no cookies', async ({ page, context }) => {
   await page.goto('/artworks/the-great-wave-off-kanagawa');
   await expect(page.locator('.figure img')).toBeVisible();
@@ -2126,7 +2149,18 @@ async function sampleSeries(page: Page) {
       ] };
     await route.fulfill({ json: base });
   });
-  await page.route(/\/v1\/map\/artworks\/mock-thirty-six-views$/, (r) => r.fulfill({ json: { type: 'FeatureCollection', entity: { type: 'artwork', slug: SERIES.slug, name: SERIES.title }, features: [] } }));
+  // the whole's map: its parts where they are (API 2026-11-04) — No. 20 and 46 at Mount Fuji, No. 21 off Kanagawa (disputed), No. 30 unplaced
+  const part = (number: string, slug: string, title: string, place: [string, string], at: [number, number], certainty = 'attested', precision = 'natural') => ({
+    type: 'Feature', geometry: { type: 'Point', coordinates: at },
+    properties: { layer: 'part', number, slug, public_id: null, title, image_url: null, place: { slug: place[0], name: place[1] }, precision, certainty, note: `the view of ${title}` } });
+  await page.route(/\/v1\/map\/artworks\/mock-thirty-six-views$/, (r) => r.fulfill({ json: {
+    type: 'FeatureCollection', entity: { type: 'artwork', slug: SERIES.slug, name: SERIES.title }, features: [],
+    provenance: null,
+    parts: { type: 'FeatureCollection', features: [
+      part('20', 'south-wind-clear-sky', 'South Wind, Clear Sky', ['mount-fuji', 'Mount Fuji'], [138.7274, 35.3606]),
+      part('21', 'the-great-wave-off-kanagawa', 'The Great Wave off Kanagawa', ['yokohama', 'Yokohama'], [139.63, 35.44], 'disputed', 'settlement'),
+      part('46', 'shojin-tozan', 'Climbing the Mountain', ['mount-fuji', 'Mount Fuji'], [138.7274, 35.3606]),
+    ], unplaced: [{ number: '30', slug: 'kazusa-sea-route', public_id: null, title: 'The Kazusa Sea Route', image_url: null }] } } }));
 }
 
 test('series: "No. 21 of 36 in …" with previous/next; the series page shows its parts', async ({ page }) => {
@@ -2146,6 +2180,25 @@ test('series: "No. 21 of 36 in …" with previous/next; the series page shows it
   expect(new URL(tab.url()).pathname).toMatch(/\/artworks\/(\d+\/)?the-great-wave-off-kanagawa$/);
   await expect(page.locator('h1')).toHaveText('Thirty-six Views of Mount Fuji');
   await tab.close();
+});
+
+test('a series\' map shows its parts where they are: one marker per place with the parts\' numbers, hollow when the viewpoint is uncertain, the unplaced listed', async ({ page }) => {
+  await sampleSeries(page);
+  await page.goto('/artworks/mock-thirty-six-views');
+  await expect(page.locator('h1')).toHaveText('Thirty-six Views of Mount Fuji');
+  const stops = page.locator('.part-stop');
+  await expect(stops).toHaveText(['20, 46', '21']);
+  await expect(stops.nth(1)).toHaveClass(/hollow/);            // disputed → dashed
+  await expect(stops.nth(0)).not.toHaveClass(/hollow/);
+  await expect(page.locator('#legend')).toContainText('its parts, numbered as in the series');
+  await expect(page.locator('#legend')).toContainText('viewpoint uncertain');
+  await expect(page.locator('#unplaced-parts')).toContainText('30 · The Kazusa Sea Route');
+  await stops.nth(0).click();
+  const popup = page.locator('.maplibregl-popup');
+  await expect(popup).toContainText('Mount Fuji');
+  await expect(popup.locator('.popup-parts li')).toHaveCount(2);
+  await expect(popup.locator('.popup-parts li').first()).toContainText('South Wind, Clear Sky');
+  await expect(popup.locator('.popup-parts li').first()).toContainText('the view of South Wind, Clear Sky');
 });
 
 test('versions of one composition (API 132): "Version 2 of 3 in …", the whole lists its versions', async ({ page }) => {

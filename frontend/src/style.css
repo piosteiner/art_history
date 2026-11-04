@@ -1244,3 +1244,10 @@ span.quiz-tile { cursor: default; }
 /* a timeline name longer than its column (timeline.ts): clipped, left-aligned, slides on hover */
 .row-label-long { text-anchor: start; }
 @media (prefers-reduced-motion: reduce) { .row-label-long { transition: none !important; } }
+
+/* a whole's parts on its map (the 46 views of Mount Fuji, 2026-11-04): numbered like provenance stops, in the association colour */
+.prov-stop.part-stop { font-size: 11px; letter-spacing: -.02em; }
+.popup-parts li { margin: .3rem 0; clear: both; min-height: 1.5rem; }
+.popup-parts .popup-thumb { float: left; width: 48px; height: 36px; object-fit: cover; margin: 0 .5rem .2rem 0; border-radius: 3px; }
+.legend .dot-num { font-size: 8px; line-height: 12px; text-align: center; color: #fff; }
+.legend .dot-num::before { content: '1'; }
