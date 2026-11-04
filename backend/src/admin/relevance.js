@@ -169,7 +169,8 @@ const RULES = {
 function rulesFor(type, ctx = {}) {
   const base = RULES[type];
   if (!base) return null;
-  const rules = { ...base, values: { ...(base.values || {}) } };
+  // the Wikidata id comes from the "Wikidata…" button (owner 2026-11-04): hidden while empty on every form
+  const rules = { ...base, values: { ...(base.values || {}) }, rare: [...new Set([...(base.rare || []), 'wikidata_id'])] };
   if (type === 'artwork') {
     const all = Object.keys(FIELDS.artwork.fields);
     for (const k of ctx.groupKinds || WHOLES) {

@@ -33,3 +33,7 @@ test('a kind of source needs only fields it uses; a group of works keeps its par
   assert.ok(!art.values.series.only.includes('inventory_number'));
   assert.equal(rulesFor('nothing'), null);
 });
+
+test('the Wikidata id is a rare field on every form', () => {
+  for (const type of Object.keys(RULES)) assert.ok(rulesFor(type).rare.includes('wikidata_id'), type);
+});

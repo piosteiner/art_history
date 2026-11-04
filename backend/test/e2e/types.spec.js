@@ -1,5 +1,5 @@
 // The wrong kind of entry (migration 055): noticed while typing, from Wikidata's class, on the quality page — and moved.
-const { test, expect, sql, submitForm, API } = require('./helpers');
+const { test, expect, sql, submitForm, showAllFields, API } = require('./helpers');
 
 const api = (request, path) => request.get(`${API}${path}`, { headers: { Host: 'api.localhost' }, maxRedirects: 0 });
 
@@ -21,6 +21,7 @@ test('a person\'s name typed as an institution, a human from Wikidata: warned; c
   await userA.goto('/institutions/new');
   await userA.fill('#f-name', 'Claude Monet');
   await userA.fill('#f-slug', 'claude-monet');
+  await showAllFields(userA);   // the Wikidata id is hidden while empty (it comes from the Wikidata… button)
   await userA.fill('#f-wikidata_id', 'Q100');
   await submitForm(userA);
   await expect(userA.locator('.type-check')).toContainText('Wikidata says this is an artist or a person');

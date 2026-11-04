@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### CMS: the Wikidata id hidden while empty on every form
+- **What:** `relevance.rulesFor()` adds `wikidata_id` to every type's `rare` list — hidden while empty, shown with a
+  value, back with "show all". Tests: `test/relevance.test.js`, `types.spec.js` (shows all before typing a Q-id).
+- **Why:** owner 2026-11-04 — the id always comes from the "Wikidata…" button.
+- **Revert:** `git revert` of the commit.
+
 ### CMS: a web source needs only its address and the day it was read
 - **What:** `relevance.js` SOURCE_KINDS.web `need` = url, accessed (was also container — the KHIST guide § 9.5 asks
   for author, title, URL, date of access). "Appeared in" and the year stay offered: the note under the kind explains
