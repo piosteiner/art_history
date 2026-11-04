@@ -1,5 +1,5 @@
 // Creating, editing, deleting entities; relationships (incl. reverse types); pickers.
-const { test, expect, sql, submitForm, API, BASE } = require('./helpers');
+const { test, expect, sql, submitForm, API, BASE, showAllFields } = require('./helpers');
 
 test('the browser refuses an invalid slug (pattern) — typed ones are cleaned first; the server checks it too', async ({ userA }) => {
   await userA.goto('/artists/new');
@@ -109,6 +109,7 @@ test('pickers: typo-tolerant, keyboard selection, filtered by relationship type'
 
 test('artwork dimensions (2D and 3D) and materials: form, page, public API with material filter', async ({ userA, request }) => {
   await userA.goto('/artworks/the-great-wave-off-kanagawa/edit');
+  await showAllFields(userA);   // fills a field hidden while empty (relevance.js)
   await userA.fill('input[name="f.dimensions_h"]', '25,7');           // decimal comma is fine
   await userA.fill('input[name="f.dimensions_d"]', '3');              // depth without width → refused
   await userA.click('form.form > .actions button');
@@ -135,6 +136,7 @@ test('artwork dimensions (2D and 3D) and materials: form, page, public API with 
 
 test('an inventory number needs the institution (readable message, hint in the form)', async ({ userA }) => {
   await userA.goto('/artworks/plum-park-in-kameido/edit');  // has no institution
+  await showAllFields(userA);   // fills a field hidden while empty (relevance.js)
   await expect(userA.locator('#f-inventory_number').locator('..')).toContainText('Only together with the institution');
   await userA.fill('#f-inventory_number', 'JP 1234');
   await userA.click('form.form > .actions button');
@@ -360,6 +362,7 @@ test('dimensions: a pasted line fills the boxes; inches and mm are converted wit
 
 test('further measurements (mount, frame): rows with paste and conversion, on the page and in the API', async ({ userA, request }) => {
   await userA.goto('/artworks/plum-park-in-kameido/edit');
+  await showAllFields(userA);   // fills a field hidden while empty (relevance.js)
   await userA.click('text=+ Add a measurement');
   const row = userA.locator('.dimset-row').first();
   await row.locator('.d-part').fill('mount');

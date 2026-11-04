@@ -1,5 +1,5 @@
 // Translations of titles and names: official, common or own (migration 052).
-const { test, expect, sql, submitForm, API } = require('./helpers');
+const { test, expect, sql, submitForm, API, showAllFields } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
@@ -12,6 +12,7 @@ test('the title as an official translation with its source; other names with the
   sql(`UPDATE artworks SET names = '[]', title_status = NULL, current_institution_id = entity_id('institution', 'metropolitan-museum-of-art')
        WHERE slug = 'the-great-wave-off-kanagawa'`);
   await userA.goto('/artworks/the-great-wave-off-kanagawa/edit');
+  await showAllFields(userA);   // fills a field hidden while empty (relevance.js)
   await userA.selectOption('#f-title_status', 'common');
   const rows = userA.locator('#sec-names .names-row');
   await rows.nth(0).locator('.n-text').fill('神奈川沖浪裏');

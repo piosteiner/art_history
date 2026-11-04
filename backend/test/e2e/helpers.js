@@ -72,4 +72,11 @@ async function submitForm(page) {
   await Promise.all([page.waitForNavigation(), page.click('form.form > .actions button')]);
 }
 
-module.exports = { test, expect, sql, settled, adminChange, login, liveReady, submitForm, API, BASE };
+// The form hides fields its kind doesn't use, rare ones and dependent ones while empty (editor/relevance.js): show
+// them all for a test that fills one — a no-op when they are shown already (remembered per type in the browser).
+async function showAllFields(page) {
+  const t = page.locator('.form-relevance .relevance-toggle');
+  if (await t.count() && /show all/i.test(await t.innerText())) await t.click();
+}
+
+module.exports = { test, expect, sql, settled, adminChange, login, liveReady, submitForm, showAllFields, API, BASE };

@@ -1,6 +1,6 @@
 // Places know their country and first-level division from their point (migration 155: within_code from the Natural Earth
 // outlines, place_country() with a code by hand first); checks place_outside_country / place_without_parent.
-const { test, expect, sql, settled, API } = require('./helpers');
+const { test, expect, sql, settled, API, showAllFields } = require('./helpers');
 
 test.afterAll(() => sql("DELETE FROM places WHERE slug IN ('test-kyoto-within', 'test-kanagawa-region')"));
 
@@ -29,6 +29,7 @@ test('a place with a point: its division and country follow; a different code by
 // 157/158: finer kinds and the designation, in the form and the API
 test('a street with its designation: the new kinds and the designation field', async ({ userA, request }) => {
   await userA.goto('/places/new');
+  await showAllFields(userA);   // fills a field hidden while empty (relevance.js)
   await userA.fill('#f-name', 'Test Rue du Bac');
   await userA.fill('#f-slug', 'test-rue-du-bac');
   await userA.selectOption('#f-kind', 'street');   // the options are the enum's values (157)
