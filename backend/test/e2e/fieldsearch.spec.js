@@ -92,3 +92,20 @@ test('the admin finds what the site finds: museums now and before, birthplaces, 
     }
   }
 });
+
+test('a part is found by every name of its whole: "77 views" finds the prints of a series whose German name has the 77 (217)', async ({ userA }) => {
+  sql(`DELETE FROM artworks WHERE slug LIKE 'test-whole-names-%';
+       INSERT INTO artworks (slug, title, kind, names) VALUES ('test-whole-names-series', 'Seventy-seven Views of Testberg', 'series',
+         '[{"text": "77 Ansichten des Testbergs", "lang": "de", "role": "translation"}]');
+       INSERT INTO artworks (slug, title, parent_id, part_number) VALUES
+         ('test-whole-names-a', 'Testbridge at Dawn', entity_id('artwork', 'test-whole-names-series'), '1'),
+         ('test-whole-names-b', 'Testlake in Snow', entity_id('artwork', 'test-whole-names-series'), '2')`);
+  try {
+    await expect.poll(() => sql(`SELECT count(*) FROM entry_search_fields_stored f JOIN artworks a ON a.id = f.id AND f.type = 'artwork'
+      WHERE a.slug LIKE 'test-whole-names-_' AND f.label = 'Series' AND f.match LIKE '%77 Ansichten%'`), { timeout: 20000 }).toBe('2');
+    await userA.goto('/artworks?q=77%20views');
+    for (const t of ['Testbridge at Dawn', 'Testlake in Snow']) await expect(userA.locator('tbody')).toContainText(t);
+  } finally {
+    sql("DELETE FROM artworks WHERE slug IN ('test-whole-names-a', 'test-whole-names-b'); DELETE FROM artworks WHERE slug = 'test-whole-names-series'");
+  }
+});

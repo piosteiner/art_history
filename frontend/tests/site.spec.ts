@@ -2668,7 +2668,8 @@ test('a long selection gets a short address; the short address opens the same se
   await page.fill('input[name=from]', '1850');                                   // a change: the address is written
   await page.fill('input[name=to]', '1900');
   await page.press('input[name=to]', 'Enter');
-  await expect(page).toHaveURL(/\/\?v=[0-9a-f]{8,}$/);                          // stored once the choosing pauses
+  // stored once the choosing pauses (a debounce, then POST /v1/views) — more than 8 s on a busy CI runner (flaky 2026-11-04)
+  await expect(page).toHaveURL(/\/\?v=[0-9a-f]{8,}$/, { timeout: 20000 });
   const short = new URL(page.url());
 
   await page.goto(`${short.pathname}${short.search}`);                           // opened again: the same view

@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### Search: a part is found by every name of its whole (217)
+- **What:** owner: "36 views" found 2 of the 46 Fuji prints — "Views" came from the series' title, "36" only from its
+  German name "36 Ansichten des Berges Fuji", which only the series carried. Migration 217 redefines
+  `entry_search_fields` (from its current definition) with a match text for the artworks' "Series" field: the whole's
+  title, the part's number and `names_text(p.names)` (all names, furigana readings too); shown as before. The parts'
+  stored fields and list rows queued once; later a renamed whole spreads to its parts (125). Checked on production:
+  46 of 46 prints match "36 views". Test: `fieldsearch.spec.js`. Also: the site test of the short address waits up
+  to 20 s (flaky once on a slow CI runner after GitHub's outage).
+- **Why:** owner 2026-11-04.
+- **Revert:** the view from migration 193 (the definition before 217).
+
 ### CMS + site: mosaics in the CMS and from reference images; red "Close the case"; quiz peek stays while moving; CMS roadmap scrolls
 - **What** (owner 2026-11-04, follow-ups):
   - Open cases: the buttons in a spaced row (they were in a `<p>`, which a `<details>` closes — no flex); "Close…" →
