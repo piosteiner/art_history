@@ -64,7 +64,9 @@ export function initRelevance() {
     if (set.note) notes.push(set.note);
     for (const c of rules.when || []) {
       const on = holds(c);
-      for (const k of c.show || []) shownWhen.set(k, (shownWhen.get(k) || false) || on);
+      // a "show only when" rule hides nothing before its field is filled in (no object type yet: "Designed earlier" stays)
+      const undecided = c.field && !String(valueOf(c.field)).trim();
+      for (const k of c.show || []) shownWhen.set(k, (shownWhen.get(k) || false) || on || !!undecided);
       if (on) {
         for (const k of c.need || []) needed.add(k);
         if (c.note) notes.push(c.note);
