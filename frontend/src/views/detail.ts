@@ -1,4 +1,5 @@
 // Detail page for every entity type: facts, images with credits, long text, relationships by category, map.
+import { addToSetButton } from '../sets-button';
 import { getEntity, getEntityMap, PLURAL } from '../api';
 import { navigate, replaceUrl } from '../router';
 import { asOfView } from './asof';
@@ -72,6 +73,7 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
           ${GROUPS.includes(e.type as Group) ? html`<a class="button-link" href="/?${PLURAL[e.type]}=${encodeURIComponent(e.slug)}">Show on the map and timeline →</a>` : ''}
           ${eventWindow?.[0] != null ? html`<a class="button-link" href="/?from=${String(eventWindow[0])}&to=${String(eventWindow[1])}">Show on the map and timeline →</a>` : ''}
           ${e.type !== 'place' && e.type !== 'term' && e.type !== 'source' ? html`<a class="button-link" href="/graph/${plural}/${encodeURIComponent(e.slug)}?depth=2">Show the network →</a>` : ''}
+          <span class="set-slot"></span>
         </p>
         <div class="detail-grid">
           <div class="detail-main">
@@ -131,6 +133,7 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
       // network questions and versions (API 088/089)
       if (e.type === 'artwork') sharedHandsSection(main.querySelector<HTMLElement>('#shared-hands')!, e, current);
       connectSection(main.querySelector<HTMLElement>('#connect')!, e, current);
+      addToSetButton(main.querySelector<HTMLElement>('.set-slot'), e.type, e.slug, v.title);   // logged in: keep it in a study set
       citeSection(main.querySelector<HTMLElement>('#cite-version')!, plural, e, v.title, current);
       // a search hit (src/views/search.ts): its provenance step, else the Provenance section, with the matched words
       // (?hl=) marked there — or, for a hit in the texts, marked on the page and the first one in view

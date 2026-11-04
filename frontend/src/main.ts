@@ -155,6 +155,10 @@ function onRoute(route: Route) {
       document.title = 'Quiz · Art History';
       cleanup = lazyView(() => import('./views/quiz').then((m) => () => m.quizPage(main, route.kind, route.params)));
       break;
+    case 'sets':
+      document.title = 'Your study sets · Art History';
+      cleanup = lazyView(() => import('./views/sets').then((m) => () => m.setsPage(main, route.id, route.study, route.params)));
+      break;
     case 'roadmap':
       cleanup = lazyView(() => import('./views/changelog').then((m) => () => m.roadmapPage(main)));
       break;

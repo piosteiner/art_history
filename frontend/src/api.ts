@@ -298,13 +298,17 @@ export const getClusters = (zoom: number, window: { from: number; to: number } |
 // The owner's login (backend src/admin/routes/site-account.js): the CMS account, its session cookie on the admin host
 // (same site as this one, so it is sent). Not cached — what a login shows must go away with the logout.
 // VITE_ADMIN_BASE: the test environment's CMS; none in development (the dev server has no admin host to ask).
-export const ADMIN: string | null = import.meta.env.DEV ? null : (import.meta.env.VITE_ADMIN_BASE as string | undefined) || 'https://admin.arthistory.piogino.ch';
+// The tests set it on the dev server too (playwright.config.ts: a stand-in admin host the tests answer themselves).
+export const ADMIN: string | null = (import.meta.env.VITE_ADMIN_BASE as string | undefined) || (import.meta.env.DEV ? null : 'https://admin.arthistory.piogino.ch');
 export interface PrivateImage { url: string; source: string | null; locator: string | null; width: number; height: number }
 async function account<T>(path: string, init: RequestInit = {}): Promise<T | null> {
   if (!ADMIN) return null;
   const res = await fetch(`${ADMIN}/site${path}`, { ...init, credentials: 'include', headers: { Accept: 'application/json' } });
   if (res.status === 401) return null;
-  if (!res.ok) throw new ApiError(res.status, 'account', res.statusText);
+  if (!res.ok) {
+    const body = await res.json().catch(() => null) as { error?: string } | null;
+    throw new ApiError(res.status, 'account', body?.error ?? res.statusText);
+  }
   return res.status === 204 ? null : (res.json() as Promise<T>);
 }
 /** Works that only have this account's reference images: slug → the image's address (none for visitors). */
@@ -315,6 +319,29 @@ export const getAccount = () => account<{ username: string }>('/me');
 export const getPrivateImages = (slug: string) =>
   account<{ images: PrivateImage[] }>(`/artworks/${encodeURIComponent(slug)}/private-images`).then((r) => r?.images ?? null);
 export const logOut = () => account<null>('/logout', { method: 'POST' });
+// Study sets (backend routes/site-sets.js, 218): the account's own lists of entries and their index cards. Writes are
+// form posts (no CORS preflight); every call null when not logged in.
+export interface StudySet { id: string; name: string; description: string | null; count: number; updated_at: string }
+export interface StudyItem { type: EntityType; slug: string; name: string; subtitle: string | null; image: string | null; own: boolean; added_at: string }
+export interface CardProgress { box: number; seen: number; known: number }
+export interface StudyCard {
+  type: EntityType; slug: string; name: string; facts: { label: string; value: string }[]; text: string;
+  image: string | null; own: boolean; progress: { forward?: CardProgress; reverse?: CardProgress };
+}
+const form = (data: Record<string, string>): RequestInit => ({ method: 'POST', body: new URLSearchParams(data) });
+export const getSets = () => account<{ sets: StudySet[] }>('/sets').then((r) => r?.sets ?? null);
+export const createSet = (name: string, description = '') => account<{ set: StudySet }>('/sets', form({ name, description })).then((r) => r?.set ?? null);
+export const updateSet = (id: string, name: string, description: string) => account<{ set: StudySet }>(`/sets/${id}`, form({ name, description })).then((r) => r?.set ?? null);
+export const deleteSet = (id: string) => account<null>(`/sets/${id}/delete`, form({}));
+export const getSet = (id: string) => account<{ set: StudySet; items: StudyItem[] }>(`/sets/${id}`);
+export const setsOf = (type: EntityType, slug: string) =>
+  account<{ sets: { id: string; name: string; has: boolean }[] }>(`/sets/of?${new URLSearchParams({ type, slug })}`).then((r) => r?.sets ?? null);
+export const addToSet = (id: string, type: EntityType, slug: string) => account<{ count: number }>(`/sets/${id}/items`, form({ type, slug }));
+export const removeFromSet = (id: string, type: EntityType, slug: string) => account<{ count: number }>(`/sets/${id}/items/remove`, form({ type, slug }));
+export const getCards = (id: string) => account<{ set: StudySet; cards: StudyCard[] }>(`/sets/${id}/cards`);
+export const answerCard = (type: EntityType, slug: string, direction: 'forward' | 'reverse', known: boolean) =>
+  account<CardProgress>('/sets/progress', form({ type, slug, direction, known: known ? '1' : '0' }));
+
 /** The CMS login, back to `next` (an address of this site) afterwards. */
 export const loginUrl = (next: string) => (ADMIN ? `${ADMIN}/login?${new URLSearchParams({ next })}` : null);
 

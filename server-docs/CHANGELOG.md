@@ -4,6 +4,36 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### Study sets: an account's own lists of entries, learnt as index cards both ways (218)
+- **What** (owner 2026-11-04: sets of any entries for art-history students — to keep for reference and to study, with
+  quizzes "like index cards in both ways"):
+  - Migration 218: `study_sets` (owner → admin_users ON DELETE CASCADE, name ≤ 120, description), `study_set_items`
+    (set, entity_type + entity_id — any of the 11 types, resolved through `entity_index`; deleted entries drop out),
+    `study_progress` (per account, entry and direction `forward`/`reverse`: a Leitner box 1–5, seen, known,
+    last_seen_at). Private like the reference images: arthistory_admin only, not audited, not exported, emptied in the
+    test copy (`scripts/test-env.sh`), in the encrypted backup.
+  - `src/study.js` cards(): per type the facts one learns (artwork: artist, date, type, medium, collection — its
+    picture, else the account's reference image; artist/person: lived, born/died in; term: its definition; event:
+    kind, date, place; source: short reference ↔ full reference as the bibliography cites it …).
+  - `src/admin/routes/site-sets.js` under `/site/sets` (the site's origin only, writes as form posts — no CORS
+    preflight —, the session's account in every query): list, create, rename, delete, add/remove entries, "which of my
+    sets hold this entry", cards with progress, answers (known → a box up, not known → box 1).
+  - Site: "+ Set" on every entry page when logged in (`sets-button.ts`: tick sets, create one, the panel opens where
+    there is room); `/sets`, `/sets/<id>`, `/sets/<id>/study?dir=forward|reverse|both&skip=known` (`views/sets.ts`):
+    "Name it" (picture / definition / facts with the name blanked → the name) and "Describe it" (the name → picture,
+    facts, text), the low boxes first, a card not known once more at the end of the round, Space/←/→; footer link
+    "Your study sets". `VITE_ADMIN_BASE` may be set on the dev server: the site tests use a stand-in admin host
+    (`frontend/tests/sets.spec.ts`, an in-memory account).
+  - Privacy statement (CMS page `privacy`): section "Accounts and study sets"; the browser-storage list completed
+    (`arthistory:view:…`, `arthistory.quiz.best`/`.region`, `arthistory.account` were missing).
+  - Tests: `backend/test/e2e/study-sets.spec.js` (a set through its life, cards of three types, progress, another
+    account sees and changes nothing, no login / another site refused), `frontend/tests/sets.spec.ts`.
+  - Not yet: accounts for students (sign-up, an account that may use the site but not the CMS) — every account today
+    is a CMS account; the sets don't depend on it.
+- **Why:** owner 2026-11-04.
+- **Revert:** `git revert`; `DROP TABLE study_progress, study_set_items, study_sets; DROP FUNCTION study_set_touch()`;
+  the privacy page from its history in the CMS.
+
 ### Search: a part is found by every name of its whole (217)
 - **What:** owner: "36 views" found 2 of the 46 Fuji prints — "Views" came from the series' title, "36" only from its
   German name "36 Ansichten des Berges Fuji", which only the series carried. Migration 217 redefines

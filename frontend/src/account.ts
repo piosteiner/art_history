@@ -33,7 +33,7 @@ export function mountAccount(footer: HTMLElement) {
   };
   const show = (name: string | null) => {
     if (name) {
-      render(slot, html`Logged in as ${name} · <button type="button" class="link-button">Log out</button>`);
+      render(slot, html`Logged in as ${name} · <a href="/sets">Your study sets</a> · <button type="button" class="link-button">Log out</button>`);
       slot.querySelector('button')!.addEventListener('click', () => {
         logOut().catch(() => null).finally(() => { remember(false); location.reload(); });
       });

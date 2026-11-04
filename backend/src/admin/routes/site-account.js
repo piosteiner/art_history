@@ -7,6 +7,7 @@
 //   GET  /site/quiz/<image|artist|movement|glossary>?…   the quiz (src/routes/quiz.js) with this account's private
 //                                               images counted as pictures too ({image_url, own: true}); ?mine=only
 //   GET  /site/thumbs                           {images: {slug: address}} — works with only this account's images
+//   /site/sets/…                                study sets and their index cards (routes/site-sets.js, 218)
 //   POST /site/logout                           ends the session (the CMS's too: it is the same one)
 // The images themselves: GET /private-images/:id (routes/private-images.js), owner-only as before.
 const express = require('express');
@@ -34,6 +35,9 @@ router.use((req, res, next) => {
   }
   next();
 }, loadUser);
+
+// study sets (218): the account's own lists of entries and their index cards (routes/site-sets.js)
+router.use('/sets', require('./site-sets'));
 
 router.get('/me', (req, res) => (req.user ? res.json({ username: req.user.username }) : res.status(401).json({ error: 'not_logged_in' })));
 

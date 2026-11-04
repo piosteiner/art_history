@@ -23,7 +23,8 @@ export default defineConfig({
     { name: 'phone', use: { ...devices['Pixel 7'] }, testMatch: /mobile\.spec\.ts/ },
   ],
   webServer: {
-    command: `npx vite --port ${PORT} --strictPort`,
+    // a stand-in admin host for the account's pages (study sets): the tests answer its requests (tests/sets.spec.ts)
+    command: `VITE_ADMIN_BASE=http://admin.test npx vite --port ${PORT} --strictPort`,
     url: `http://localhost:${PORT}/`,
     reuseExistingServer: !process.env.CI,
     timeout: 60_000,

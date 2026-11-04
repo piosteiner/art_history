@@ -24,6 +24,8 @@ export type Route =
   | { name: 'search'; params: URLSearchParams }
   /** The quiz (API /v1/quiz): /quiz = the games, /quiz/<kind>?mode=… one of them. */
   | { name: 'quiz'; kind: string | null; params: URLSearchParams }
+  /** The account's study sets (218): /sets, /sets/<id>, /sets/<id>/study?dir=… */
+  | { name: 'sets'; id: string | null; study: boolean; params: URLSearchParams }
   /** Through whose hands works went in a window (API 088): /provenance/1933-1945. */
   | { name: 'hands'; from: number; to: number }
   | { name: 'not-found' };
@@ -44,6 +46,11 @@ export function parse(pathname: string, search: string): Route {
   if (parts.length === 1 && parts[0] === 'roadmap') return { name: 'roadmap' };
   if (parts.length === 1 && parts[0] === 'statistik') return { name: 'stats' };
   if (parts[0] === 'quiz' && parts.length <= 2) return { name: 'quiz', kind: parts[1] ?? null, params: query };
+  if (parts[0] === 'sets' && parts.length <= 3) {
+    const [, id, more] = parts;
+    if ((id && !/^\d+$/.test(id)) || (more && more !== 'study')) return { name: 'not-found' };
+    return { name: 'sets', id: id ?? null, study: more === 'study', params: query };
+  }
   if (parts[0] === 'provenance' && parts.length <= 2) {
     const m = /^(\d{3,4})-(\d{3,4})$/.exec(parts[1] ?? '1933-1945');
     return m ? { name: 'hands', from: Number(m[1]), to: Number(m[2]) } : { name: 'not-found' };
