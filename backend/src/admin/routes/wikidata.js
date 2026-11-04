@@ -100,10 +100,23 @@ async function wikidataApply(req, res, t, e) {
     if (saved) return entries.refusedNew(req, res, t, draft, saved);
     return res.redirect(303, `/${t.folder}/new?draft=1`);
   }
+  // someone else's unpublished changes in the working copy: not published over them — the edit page, as before
+  const others = await collab.unpublished(t, e.id);
+  const othersWorking = others && (others.contributors || []).some((u) => u !== req.user.username);
   if (Object.keys(form).length) await collab.applyForm(t, e.id, form, req.user.username);
   // the values in the working copy came from Wikidata: citations, settled when published (049)
   if (result.cites.length) await withTx(req.user, (db) => citations.pendingFromWikidata(db, t.type, e.id, qid, result.cites, req.user.id), { source: 'wikidata' });
-  res.redirect(303, `/${t.folder}/${e.slug}/edit?done=wikidata&rels=${result.relationships}&created=${result.created.length}&imgs=${result.images}`);
+  const counts = `rels=${result.relationships}&created=${result.created.length}&imgs=${result.images}`;
+  if (othersWorking) return res.redirect(303, `/${t.folder}/${e.slug}/edit?done=wikidata-others&${counts}`);
+  // Applied = published (owner 2026-11-04): whoever applies a Wikidata selection wants it public; editing more is the
+  // rarer case and starts from the entry's page. The same path as Publish on the edit page (saveEntity: validation,
+  // duplicates, citations settled); refused, the edit page opens with the reason and the values kept in the copy.
+  const { form: working } = await collab.currentForm(t, e.id);
+  const saved = await entries.saveEntity(req.user, t, working, e);
+  if (saved.errors) return entries.refusedEdit(req, res, t, e, saved);
+  await drafts.deleteDraft(adminPool, req.user.id, t.type, e.id);
+  await collab.publishedNow(t, e.id, req.user.username);
+  res.redirect(303, `/${t.folder}/${saved.slug}?done=wikidata-published&${counts}`);
 }
 
 // A new bibliography entry from its ISBN or DOI (src/admin/booklookup.js): fills the new-entry form (the user's draft)

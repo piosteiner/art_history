@@ -20,13 +20,15 @@ const DONE = {
   'from-feedback': 'A roadmap item was made from the feedback (unpublished, in Später) — word it for the roadmap and publish it.',
   created: 'Created.', saved: 'Saved.', deleted: 'Deleted.', unchanged: 'No changes.',
   wikidata: 'Wikidata values applied — the field values are in the working copy: check them below and Publish.',
+  'wikidata-published': 'Wikidata values applied and published.',
+  'wikidata-others': 'Wikidata values applied to the working copy — not published, others have unpublished changes here: check them below and Publish.',
   published: 'Published — the working copy is now the public version.',
   discarded: 'Unpublished changes discarded — the working copy is back to the published version.',
   'page-published': 'Published — the changes are on the site.', 'page-discarded': 'Changes discarded — the text is as it is on the site.',
   reverted: 'Change reverted — the revert itself is in the history and can be reverted too.',
   restored: 'Version restored.',
   'rel-added': 'Relationship added.', 'rel-saved': 'Relationship saved.', 'rel-deleted': 'Relationship deleted.',
-  'case-opened': 'Open case added — its finding waits there (Open cases).', 'case-closed': 'Case closed.', 'case-reopened': 'Case reopened.',
+  'case-opened': 'Open case added — follow it up under Open cases.', 'case-closed': 'Case closed.', 'case-reopened': 'Case reopened.', 'case-updated': 'Update added to the case.',
   'auto-done': 'Marked as complete.', merged: 'Merged — the other entry is gone; its address leads here.',
   'img-added': 'Image added.', 'img-saved': 'Image saved.', 'img-deleted': 'Image removed.', 'img-moved': 'Order changed.',
   converted: 'Type changed — everything that could come along is here; the old address leads here.',
@@ -47,7 +49,7 @@ function send(req, res, { title, body, status = 200, flash, page = null }) {
   if (!flash && DONE[req.query.done]) {
     // Numbers only from the URL — never reflect free text.
     const n = (k) => Math.max(0, Number.parseInt(req.query[k], 10) || 0);
-    const extra = ['wikidata', 'gnd', 'gnd-applied', 'enrich', 'enrich-applied'].includes(req.query.done) ? [n('rels') && `${n('rels')} relationship${n('rels') === 1 ? '' : 's'} added`,
+    const extra = ['wikidata', 'wikidata-published', 'wikidata-others', 'gnd', 'gnd-applied', 'enrich', 'enrich-applied'].includes(req.query.done) ? [n('rels') && `${n('rels')} relationship${n('rels') === 1 ? '' : 's'} added`,
       n('created') && `${n('created')} new entr${n('created') === 1 ? 'y' : 'ies'} created`,
       n('imgs') && `${n('imgs')} image${n('imgs') === 1 ? '' : 's'} added`,
       n('ids') && `${n('ids')} reference record${n('ids') === 1 ? '' : 's'} added — Enrich again to compare with them`].filter(Boolean).join(', ')

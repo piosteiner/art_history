@@ -540,7 +540,7 @@ router.get('/:plural/:slug', async (req, res) => {
   const qa = await quality.issues(adminPool, { entity: { type: t.type, id: e.id } });
   // its open cases (198) — the findings parked in them are not among qa
   const cases = await openCases.ofEntry(adminPool, t.type, e.id);
-  const caseNames = cases.length ? await linkNames(adminPool, cases.map((c) => c.description_md)) : new Map();
+  const caseNames = cases.length ? await linkNames(adminPool, openCases.textsOf(cases)) : new Map();
   const pending = await collab.unpublished(t, e.id);
   const imgs = t.imageFk ? await readImages(adminPool, t.type, e.id) : [];
   const autoFlag = await autocreate.flagOf(adminPool, t.type, e.id);
@@ -590,6 +590,7 @@ router.get('/:plural/:slug', async (req, res) => {
         <a class="button" href="/${t.folder}/${e.slug}/edit">Edit</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/enrich" title="Wikidata, the GND and SIKART on one page">Enrich…</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/wikidata">Wikidata…</a>
+        <a class="button secondary" href="/open-cases/new?type=${t.type}&amp;slug=${encodeURIComponent(e.slug)}&amp;back=${encodeURIComponent(`/${t.folder}/${e.slug}`)}" title="Something to follow up — a book to consult, a museum to ask — also when the Quality page finds nothing">Open a case…</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/history">History</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/merge">Merge…</a>
         ${CONVERTIBLE.includes(t.type) ? html`<a class="button secondary" href="/${t.folder}/${e.slug}/convert">Change type…</a>` : ''}
@@ -919,25 +920,28 @@ async function citeDialogs(t, e, user) {
     { type: t.type, id: e.id, field, label: `“${fieldLabel(t.type, field)}”` }, back, { edit: true, recent }))}${numbers.dialogs(e, nums, await citations.forNumbers(adminPool, nums.map((n) => n.id)), recent)}${nameDialogs}</div>`;
 }
 
+// Refused (validation, or the entry changed elsewhere meanwhile): the working copy is rebased if needed and shown
+// again with the messages — nothing typed is lost, it is all in the shared copy. Also for "Apply selected" on the
+// Wikidata page, which publishes at once (routes/wikidata.js).
+async function refusedEdit(req, res, t, e, result) {
+  await collab.changedElsewhere(t, e.id);
+  const { form: working, epoch, state } = await collab.currentForm(t, e.id);
+  const ctx = await formContext(t, e.id);
+  ctx.errorKeys = errorKeysOf(result.errors);
+  ctx.confirmNew = result.confirm || {};
+  const published = drafts.formKeys((await findEntity(t, e.slug) || e).doc, t, e.slug);
+  const form = entityForm({ t, slug: working.slug || e.slug, f: formFromBody(working), ctx,
+    action: `/${t.folder}/${e.slug}`, errors: result.errors, version: working.version, collab: { key: `${t.type}:${e.id}:${epoch}`, state, published } });
+  return send(req, res, { title: `Edit ${e.name}`, status: 422, page: { type: t.type, slug: e.slug, mode: 'edit' },
+    body: html`<h1>Edit ${e.name}</h1>${form}` });
+}
+
 router.post('/:plural/:slug', async (req, res) => {
   const { t } = req;
   const e = await findEntity(t, req.params.slug);
   if (!e) return notFoundPage(req, res);
   const result = await saveEntity(req.user, t, req.body, e);
-  if (result.errors) {
-    // Refused (validation, or the entry changed elsewhere meanwhile): the working copy is rebased if needed and shown
-    // again with the messages — nothing typed is lost, it is all in the shared copy.
-    await collab.changedElsewhere(t, e.id);
-    const { form: working, epoch, state } = await collab.currentForm(t, e.id);
-    const ctx = await formContext(t, e.id);
-    ctx.errorKeys = errorKeysOf(result.errors);
-    ctx.confirmNew = result.confirm || {};
-    const published = drafts.formKeys((await findEntity(t, e.slug) || e).doc, t, e.slug);
-    const form = entityForm({ t, slug: working.slug || e.slug, f: formFromBody(working), ctx,
-      action: `/${t.folder}/${e.slug}`, errors: result.errors, version: working.version, collab: { key: `${t.type}:${e.id}:${epoch}`, state, published } });
-    return send(req, res, { title: `Edit ${e.name}`, status: 422, page: { type: t.type, slug: e.slug, mode: 'edit' },
-      body: html`<h1>Edit ${e.name}</h1>${form}` });
-  }
+  if (result.errors) return refusedEdit(req, res, t, e, result);
   await drafts.deleteDraft(adminPool, req.user.id, t.type, e.id);  // step-1 draft, if any from before
   await collab.publishedNow(t, e.id, req.user.username);
   res.redirect(303, `/${t.folder}/${result.slug}?done=published${result.created.length ? `&auto=${result.created.length}` : ''}${result.city ? `&city=1${result.city.created ? `&places=${result.city.created}` : ''}` : ''}`);
@@ -947,3 +951,4 @@ module.exports = router;
 module.exports.saveEntity = saveEntity;  // the Create / Publish path, also for scripts/from-wikidata.js
 module.exports.refusedNew = refusedNew;    // "Create now" on the Wikidata page (routes/wikidata.js)
 module.exports.createdUrl = createdUrl;
+module.exports.refusedEdit = refusedEdit;  // Apply selected on the Wikidata page, refused on publishing

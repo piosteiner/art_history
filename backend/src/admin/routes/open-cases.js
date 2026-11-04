@@ -28,10 +28,23 @@ const SELECT = `
   LEFT JOIN admin_users cu ON cu.id = oc.created_by
   LEFT JOIN admin_users xu ON xu.id = oc.closed_by`;
 
+// a case's updates (214), oldest first — a log reads downwards; attached to each case as c.updates
+async function withUpdates(db, cases) {
+  if (!cases.length) return cases;
+  const { rows } = await db.query(`SELECT u.*, au.username AS by_name FROM open_case_updates u LEFT JOIN admin_users au ON au.id = u.created_by
+    WHERE u.case_id = ANY($1) ORDER BY u.case_id, u.on_day, u.id`, [cases.map((c) => c.id)]);
+  for (const c of cases) c.updates = rows.filter((u) => String(u.case_id) === String(c.id));
+  return cases;
+}
 /** The open cases of one entry (the box on its page). */
 async function ofEntry(db, type, id) {
-  return (await db.query(`${SELECT} WHERE oc.entity_type = $1 AND oc.entity_id = $2 AND oc.closed_at IS NULL ORDER BY oc.created_at`, [type, id])).rows;
+  return withUpdates(db, (await db.query(`${SELECT} WHERE oc.entity_type = $1 AND oc.entity_id = $2 AND oc.closed_at IS NULL ORDER BY oc.created_at`, [type, id])).rows);
 }
+/** The texts of cases and their updates, for the [[link]] names of the Markdown. */
+const textsOf = (cases) => cases.flatMap((c) => [c.description_md, c.resolution_md, ...(c.updates || []).map((u) => u.text_md)]);
+// today in Zürich (the date field's default): the day of the work, not UTC's
+const today = () => new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Zurich' });
+const dayOf = (d) => (d instanceof Date ? d.toLocaleDateString('sv-SE') : String(d || '').slice(0, 10));
 /** How many cases are open (the menu, the Quality page). */
 async function openCount(db) {
   return (await db.query('SELECT count(*)::int AS n FROM open_cases WHERE closed_at IS NULL')).rows[0].n;
@@ -53,12 +66,26 @@ function caseItem(c, names, { back = '/open-cases' } = {}) {
     ${c.finding ? html`<div class="muted small oc-finding">${c.finding}</div>` : ''}
     <div class="md oc-text">${raw(renderMarkdown(c.description_md, { names }))}</div>
     ${c.look_url ? html`<p class="small"><a href="${c.look_url}" rel="noopener" target="_blank">${c.look_url}</a></p>` : ''}
+    ${(c.updates || []).length ? html`<ol class="oc-updates">${c.updates.map((u) => html`<li id="update-${String(u.id)}">
+      <span class="oc-update-day">${dayOf(u.on_day)}</span>${u.by_name ? html` <span class="muted small">${u.by_name}</span>` : ''}
+      <div class="md">${raw(renderMarkdown(u.text_md, { names }))}</div>
+      ${!c.closed_at ? html`<form method="post" action="/open-cases/${String(c.id)}/updates/${String(u.id)}/delete" class="inline oc-update-delete">
+        <input type="hidden" name="back" value="${back}"><button class="link small" title="Delete this update">delete</button></form>` : ''}</li>`)}</ol>` : ''}
     ${c.closed_at
       ? html`<div class="oc-result"><b>Closed ${day(c.closed_at)}${c.closed_by_name ? ` by ${c.closed_by_name}` : ''}:</b>
           ${c.resolution_md ? html`<div class="md">${raw(renderMarkdown(c.resolution_md, { names }))}</div>` : ''}
           <form method="post" action="/open-cases/${String(c.id)}/reopen" class="inline"><input type="hidden" name="back" value="${back}"><button class="link">reopen</button></form></div>`
-      : html`<p class="actions"><a class="button secondary" href="/open-cases/${String(c.id)}/edit?back=${encodeURIComponent(back)}">Edit</a>
-          <details class="oc-close"><summary class="button">Close…</summary>
+      : html`<p class="actions">
+          <details class="oc-update-add"><summary class="button">Add an update…</summary>
+            <form method="post" action="/open-cases/${String(c.id)}/updates" class="form">
+              <input type="hidden" name="back" value="${back}">
+              <div class="field"><label for="upd-day-${String(c.id)}">Date</label>
+                <input id="upd-day-${String(c.id)}" name="on_day" type="date" value="${today()}" required max="${today()}"></div>
+              <div class="field"><label for="upd-${String(c.id)}">What happened</label>
+                <textarea id="upd-${String(c.id)}" name="text_md" rows="4" class="md" required placeholder="asked the library; the catalogue has no picture either …"></textarea></div>
+              <button>Add the update</button></form></details>
+          <a class="button secondary" href="/open-cases/${String(c.id)}/edit?back=${encodeURIComponent(back)}">Edit</a>
+          <details class="oc-close"><summary class="button secondary">Close…</summary>
             <form method="post" action="/open-cases/${String(c.id)}/close" class="form">
               <input type="hidden" name="back" value="${back}">
               <div class="field"><label for="res-${String(c.id)}">Result</label>
@@ -75,9 +102,9 @@ function entryBox(t, e, cases, names) {
 }
 
 router.get('/open-cases', async (req, res) => {
-  const { rows: open } = await adminPool.query(`${SELECT} WHERE oc.closed_at IS NULL ORDER BY oc.created_at`);
-  const { rows: closed } = await adminPool.query(`${SELECT} WHERE oc.closed_at IS NOT NULL ORDER BY oc.closed_at DESC LIMIT 50`);
-  const names = await linkNames(adminPool, [...open, ...closed].flatMap((c) => [c.description_md, c.resolution_md]));
+  const open = await withUpdates(adminPool, (await adminPool.query(`${SELECT} WHERE oc.closed_at IS NULL ORDER BY oc.created_at`)).rows);
+  const closed = await withUpdates(adminPool, (await adminPool.query(`${SELECT} WHERE oc.closed_at IS NOT NULL ORDER BY oc.closed_at DESC LIMIT 50`)).rows);
+  const names = await linkNames(adminPool, textsOf([...open, ...closed]));
   const groups = new Map();
   for (const c of open) {
     const k = whereOf(c);
@@ -206,6 +233,30 @@ router.post('/open-cases/:id', async (req, res) => {
   res.redirect(303, `${back}${back.includes('?') ? '&' : '?'}done=saved#case-${c.id}`);
 });
 
+// an update (214): the day it happened (today unless set; not in the future) and what was found
+router.post('/open-cases/:id/updates', async (req, res) => {
+  const c = await caseOf(req, res); if (!c) return;
+  const back = backTo(req.body.back, '/open-cases');
+  const text = String(req.body.text_md ?? '').replace(/\r\n/g, '\n').trim();
+  const onDay = String(req.body.on_day || '').trim() || today();
+  const fail = (msg) => send(req, res, { title: 'Open cases', status: 422, flash: { kind: 'error', text: msg },
+    body: html`<p><a href="${back}">← back</a></p>` });
+  if (!text) return fail('an update needs a text');
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(onDay) || Number.isNaN(Date.parse(onDay))) return fail('the date must be a day (YYYY-MM-DD)');
+  if (onDay > today()) return fail('an update is about a day that has come — not one in the future');
+  if (c.closed_at) return fail('the case is closed — reopen it to add an update');
+  const { rows: [u] } = await withTx(req.user, (db) => db.query(
+    'INSERT INTO open_case_updates (case_id, on_day, text_md, created_by) VALUES ($1, $2, $3, $4) RETURNING id', [c.id, onDay, text, req.user.id]));
+  res.redirect(303, `${back.split('#')[0]}${back.includes('?') ? '&' : '?'}done=case-updated#update-${u.id}`);
+});
+router.post('/open-cases/:id/updates/:update/delete', async (req, res) => {
+  const c = await caseOf(req, res); if (!c) return;
+  if (!ID.test(req.params.update)) return notFoundPage(req, res);
+  await withTx(req.user, (db) => db.query('DELETE FROM open_case_updates WHERE id = $1 AND case_id = $2', [req.params.update, c.id]));
+  const back = backTo(req.body.back, '/open-cases');
+  res.redirect(303, `${back.split('#')[0]}${back.includes('?') ? '&' : '?'}done=deleted#case-${c.id}`);
+});
+
 router.post('/open-cases/:id/close', async (req, res) => {
   const c = await caseOf(req, res); if (!c) return;
   const result = String(req.body.resolution_md ?? '').replace(/\r\n/g, '\n').trim();
@@ -231,3 +282,4 @@ module.exports = router;
 module.exports.ofEntry = ofEntry;
 module.exports.openCount = openCount;
 module.exports.entryBox = entryBox;
+module.exports.textsOf = textsOf;

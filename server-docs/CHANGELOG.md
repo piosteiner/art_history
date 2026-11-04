@@ -4,6 +4,29 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### CMS: open cases with dated updates and from any entry; Wikidata "Apply selected" publishes; dictionary note; mosaics for wholes
+- **What** (owner 2026-11-04):
+  - Migration 214 `open_case_updates` (case_id, `on_day` date — today unless set, never in the future —, text_md,
+    created_by; audited, CMS only): "Add an update…" on every open case (date field defaulting to today in Zürich,
+    Markdown), shown under the case's text as a dated log, deletable while the case is open (`routes/open-cases.js`).
+  - "Open a case…" as a button in every entry's action row (beside Edit, Enrich …) — a case needs no Quality
+    finding; the small link in the box stays.
+  - Wikidata "Apply selected" on an existing entry = published (`routes/wikidata.js`): the values go into the
+    working copy and are published at once through `saveEntity` (validation, duplicates, citations settled); refused
+    → the edit page with the reason (`entries.refusedEdit`, factored out of the edit POST); someone else's
+    unpublished changes in the copy → not published over them, the edit page as before (`done=wikidata-others`).
+    New done message `wikidata-published`.
+  - Spell check: the first time a Markdown field is German, a note on adding the German dictionary (Firefox add-on;
+    Chrome/Edge settings) with "Got it", remembered per browser (`editor.js` dictNote).
+  - Wholes in the site's lists: API list rows of artworks get `part_images` (the first picture of up to four parts,
+    in their order); migration 215 queues every whole's list row once. Site (`views/list.ts` preview): two or more →
+    a mosaic of them, else its own (or first part's) picture; a corner mark — the kind's first letter (S series, V
+    versions, C cycle, P pair …) or the number of parts, the kind in words as its title.
+  - Tests: `open-cases.spec.js` (updates, the button), `citations.spec.js` / `wikidata.spec.js` (applied = published;
+    the working copy reset after direct SQL), `spelling.spec.js` (the note).
+- **Why:** owner 2026-11-04.
+- **Revert:** `git revert`; migration 214's table can be dropped (`DROP TABLE open_case_updates`) — 215 changes no schema.
+
 ### Site: "Clear" on the start map, entry links in a new tab, quiz pictures large on a hold, roadmap fixes
 - **What** (owner 2026-11-04, several requests at once — frontend, GitHub Pages):
   - Start map: "Clear" beside "Show everything" sets every picker (layers too) to none (`picker.ts`).

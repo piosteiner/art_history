@@ -91,6 +91,7 @@ test('relationship suggestions: link by name, create a missing place, skip — a
 
 test('own values win: never pre-selected; "decide later" records nothing, "keep mine" is remembered', async ({ userA }) => {
   sql("UPDATE artists SET death = '[1926-12-01,1927-01-01)', death_label = 'December 1926' WHERE slug = 'claude-monet'");  // ours
+  sql("DELETE FROM live_docs WHERE entity_type = 'artist' AND entity_id = entity_id('artist', 'claude-monet')");   // the working copy follows the database
   await userA.goto('/artists/claude-monet/wikidata');
   await expect(row(userA, 'Death').locator('input[value=later]')).toBeChecked();
   await apply(userA);  // left at "decide later"

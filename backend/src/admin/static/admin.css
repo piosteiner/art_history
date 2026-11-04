@@ -244,6 +244,15 @@ mark { background: color-mix(in srgb, var(--accent) 28%, transparent); color: in
 .oc-box { margin: 0 0 1rem; }
 .oc-box.has-cases { border: 1px solid var(--accent); border-radius: 8px; padding: .5rem .8rem; }
 .oc-box .oc-list { margin-bottom: .4rem; }
+/* updates on a case (214): a dated log under its text */
+.oc-updates { list-style: none; margin: .5rem 0; padding: 0 0 0 .8rem; border-left: 2px solid var(--line); display: grid; gap: .45rem; }
+.oc-updates > li { position: relative; }
+.oc-updates > li::before { content: ''; position: absolute; left: calc(-.8rem - 5px); top: .45rem; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+.oc-update-day { font-weight: 600; font-variant-numeric: tabular-nums; }
+.oc-updates .md p { margin: .15rem 0; }
+.oc-update-delete { margin-left: .3rem; }
+.oc-case .actions { display: flex; flex-wrap: wrap; gap: .4rem; align-items: flex-start; }
+.oc-update-add[open], .oc-close[open] { flex-basis: 100%; }
 .qa-box li { margin: .2rem 0; }
 .bar select { width: auto; flex: 0 1 auto; }
 .bar .choice input { width: auto; }
@@ -698,3 +707,6 @@ button.theme-toggle:hover { color: var(--fg); border-color: var(--accent); }
 .fill-chips { display: flex; flex-wrap: wrap; gap: .3rem; align-items: center; margin-top: .3rem; }
 .fill-chips .chip { padding: .1rem .55rem; border: 1px solid var(--line); border-radius: 999px; background: var(--panel); color: inherit; font-size: .8rem; cursor: pointer; }
 .fill-chips .chip:hover { border-color: var(--accent); color: var(--accent); }
+/* the one-time note on the German dictionary (editor.js dictNote) */
+.md-dict-note { margin: .2rem 0 .35rem; padding: .35rem .6rem; border-left: 3px solid var(--accent); background: var(--panel); border-radius: 4px; }
+.md-dict-note button { margin-left: .4rem; }

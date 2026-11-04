@@ -3,7 +3,7 @@ import { applySuggestion, listAll, listEntities, suggest } from '../api';
 import { describeQuery, parseQuery } from '../query';
 import { replaceUrl } from '../router';
 import { ofVersions, partLabel, wholeKind } from '../series';
-import { countryName, countryText, creatorNames, creatorsOf, dateLabel, displayName, link, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, previewImg, render, type Html } from '../html';
+import { countryName, countryText, creatorNames, creatorsOf, dateLabel, displayName, link, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, previewImg, render, thumb, type Html } from '../html';
 import type { NameEntry } from '../types';
 
 /** The original-language name, shown small on the card ("神奈川沖浪裏"). */
@@ -89,6 +89,32 @@ export function cardParts(plural: Plural, item: AnyItem) {
   return { name, date, detail, image };
 }
 
+// A whole's mark in the corner of its preview: S series, V versions, C cycle, P pair … (the kind's first letter), else
+// its number of parts — with the kind in words as the title (owner 2026-11-04)
+const wholeMark = (a: ItemByPlural['artworks']) => {
+  const letter = a.is_group && a.kind ? a.kind.trim().charAt(0).toUpperCase() : a.parts ? String(a.parts) : '';
+  return letter ? html`<span class="whole-mark" title="${wholeKind(a)}" aria-label="${wholeKind(a)}">${letter}</span>` : '';
+};
+/**
+ * The preview of a list entry. A whole (a series, a cycle, versions — or any work with parts): with two or more of
+ * its parts pictured, a mosaic of up to four of them, else its own picture (or its first part's); either way its mark
+ * in the corner, so it is told apart from a single work at a glance (owner 2026-11-04).
+ */
+function preview(plural: Plural, item: AnyItem, image: string | null | undefined, width: number, cls: string): Html | null {
+  const single = previewImg(image, plural === 'artworks' ? item.slug : null, width, cls);
+  if (plural !== 'artworks') return single;
+  const a = item as ItemByPlural['artworks'];
+  if (!a.is_group && !a.parts) return single;
+  const pics = (a.part_images ?? []).slice(0, 4);
+  if (pics.length >= 2) {
+    return html`<span class="${cls} whole-preview mosaic mosaic-${String(pics.length)}">${pics.map((u) => {
+      const small = thumb(u, 120);   // a cell is a quarter of the preview: the smallest rendition does
+      return html`<img src="${small}" alt="" loading="lazy" crossorigin="anonymous" data-full="${u}"${small !== u ? html` data-fallback="${u}"` : ''}>`;
+    })}${wholeMark(a)}</span>`;
+  }
+  return single ? html`<span class="${cls} whole-preview">${single}${wholeMark(a)}</span>` : null;
+}
+
 /**
  * One card. While searching, the matched words are highlighted and `why` names the hidden field that matched
  * ("Born in: Zundert").
@@ -97,7 +123,7 @@ export function card(plural: Plural, item: AnyItem, words: string[] = [], why: H
   const { name, date, detail, image } = cardParts(plural, item);
   return html`<li class="card">
     <a class="card-link" href="${href(plural, item.slug)}">
-      ${previewImg(image, plural === 'artworks' ? item.slug : null, 250, 'card-img') ?? html`<span class="card-img card-img-empty" aria-hidden="true"></span>`}
+      ${preview(plural, item, image, 250, 'card-img') ?? html`<span class="card-img card-img-empty" aria-hidden="true"></span>`}
       <span class="card-text">
         ${typeLabel ? html`<span class="card-type">${typeLabel}</span>` : ''}
         <span class="card-name"${langAttr(displayName(item as never).lang)}>${highlight(name, words)}</span>
@@ -120,7 +146,7 @@ function row(plural: Plural, item: AnyItem, words: string[] = [], why: Html | nu
   const orig = original(item);
   return html`<li class="row${thumbs ? ' row-thumbs' : ''}">
     <a class="row-link" href="${href(plural, item.slug)}">
-      ${thumbs ? previewImg(image, plural === 'artworks' ? item.slug : null, 120, 'row-img') ?? html`<span class="row-img" aria-hidden="true"></span>` : ''}
+      ${thumbs ? preview(plural, item, image, 120, 'row-img') ?? html`<span class="row-img" aria-hidden="true"></span>` : ''}
       <span class="row-name"><span class="card-name"${langAttr(displayName(item as never).lang)}>${highlight(name, words)}</span>${
         orig ? html` <span class="card-original"${langAttr(orig.lang)}>${highlight(orig.text, words)}</span>` : ''}</span>
       <span class="row-date">${date ? highlight(date, words) : ''}</span>

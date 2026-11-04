@@ -99,6 +99,14 @@ const ENTITIES = {
                       ORDER BY c.part_sort NULLS LAST, c.part_number, c.id, i.position, i.id LIMIT 1)) AS image_url,
            artwork_is_group(t.kind_term_id) AS is_group, t.parts_count,
            (SELECT count(*)::int FROM artworks c WHERE c.parent_id = t.id) AS parts,
+           -- a whole's preview (owner 2026-11-04): the first picture of up to four of its parts, in their order — the
+           -- site draws them as a mosaic, so a series or cycle is told apart from a single work at a glance
+           (SELECT jsonb_agg(p.url ORDER BY p.ord) FROM (
+              SELECT x.url, x.ord FROM (
+                SELECT (SELECT i.url FROM images i WHERE i.artwork_id = c.id ORDER BY i.position, i.id LIMIT 1) AS url,
+                       row_number() OVER (ORDER BY c.part_sort NULLS LAST, c.part_number, c.id) AS ord
+                FROM artworks c WHERE c.parent_id = t.id) x
+              WHERE x.url IS NOT NULL ORDER BY x.ord LIMIT 4) p) AS part_images,
            (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = t.creator_id) AS creator,
            (SELECT jsonb_build_object('slug', w.slug, 'title', w.title, 'kind', w.kind) FROM artworks w WHERE w.id = t.parent_id) AS part_of, t.part_number,
            artwork_creators(t.id) AS creators, t.on_loan, ${countryCols('artwork')},

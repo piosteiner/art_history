@@ -57,7 +57,7 @@ test('a finding moved to an open case: described, grouped by where to look, clos
   // closed with a result: the finding (still true) is back on Quality; the case under "Closed"
   const open = userA.locator('.oc-group .oc-case', { hasText: 'Test Case Berck' });
   await open.locator('.oc-close summary').click();
-  await open.locator('.md-editor .cm-content').click();                                    // the result's Markdown editor
+  await open.locator('.oc-close .md-editor .cm-content').click();                                    // the result's Markdown editor
   await userA.keyboard.insertText('Checked: the catalogue gives no web page either.');
   await open.locator('button:has-text("Close the case")').click();
   await expect(userA).toHaveURL(/done=case-closed/);
@@ -93,4 +93,34 @@ test('a case opened from an entry, without a finding; a wrong source is refused'
   await expect(userA.locator('.oc-box .oc-case')).toContainText('Ask the museum about the date.');
   await userA.goto('/open-cases');
   await expect(userA.locator('.oc-group', { hasText: 'No place given' })).toContainText('Test Case Plain');
+});
+
+test('a case opened from the button beside Edit, without any finding; dated updates (today unless set), deleted again', async ({ userA }) => {
+  sql("INSERT INTO artworks (slug, title) VALUES ('test-case-updates', 'Test Case Updates')");
+  await userA.goto('/artworks/test-case-updates');
+  await userA.locator('.bar a.button', { hasText: 'Open a case…' }).click();
+  await md(userA, 'No picture anywhere — ask the library.');
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/\/artworks\/test-case-updates\?done=case-opened/);
+  const box = userA.locator('.oc-box .oc-case');
+  await box.locator('summary', { hasText: 'Add an update…' }).click();
+  const today = await userA.evaluate(() => new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Zurich' }));
+  const day = box.locator('input[name="on_day"]');
+  await expect(day).toHaveValue(today);                                  // today by default
+  await expect(day).toHaveAttribute('type', 'date');
+  await day.fill('2026-10-30');
+  await box.locator('.oc-update-add .md-editor .cm-content').click();
+  await userA.keyboard.insertText('The library has no copy either.');
+  await box.locator('.oc-update-add button', { hasText: 'Add the update' }).click();
+  await expect(userA).toHaveURL(/done=case-updated/);
+  const upd = userA.locator('.oc-box .oc-updates li');
+  await expect(upd).toHaveCount(1);
+  await expect(upd).toContainText('2026-10-30');
+  await expect(upd).toContainText('The library has no copy either.');
+  expect(sql("SELECT on_day || ' ' || text_md FROM open_case_updates u JOIN open_cases c ON c.id = u.case_id JOIN artworks a ON a.id = c.entity_id WHERE a.slug = 'test-case-updates'"))
+    .toBe('2026-10-30 The library has no copy either.');
+  await userA.goto('/open-cases');
+  await expect(userA.locator('.oc-case', { hasText: 'Test Case Updates' }).locator('.oc-updates')).toContainText('The library has no copy either.');
+  await userA.locator('.oc-case', { hasText: 'Test Case Updates' }).locator('.oc-update-delete button').click();
+  await expect(userA.locator('.oc-case', { hasText: 'Test Case Updates' }).locator('.oc-updates')).toHaveCount(0);
 });

@@ -59,20 +59,20 @@ test('a new entry from Wikidata: its values are cited (W); a museum source added
   expect(sql(`SELECT accessed = current_date FROM citations WHERE entity_type = 'artist' AND entity_id = entity_id('artist', 'claude-monet') AND field = 'birth'`)).toBe('t');
 });
 
-test('an existing entry compared with Wikidata: pending in the working copy, cited when published; relationships cited at once', async ({ userA }) => {
+test('an existing entry compared with Wikidata: applied = published, its values cited at once; relationships cited too', async ({ userA }) => {
   sql(`DELETE FROM artists WHERE slug = 'claude-monet';
        INSERT INTO artists (slug, name, wikidata_id) VALUES ('claude-monet-cite', 'Claude Monet', 'Q100')`);
   await userA.goto('/artists/claude-monet-cite/wikidata');
   await expect(row(userA, 'Birth').locator('input[value=take]')).toBeChecked();
   await row(userA, 'born in').locator('input[value=link]').check();             // our Paris, same name
   await apply(userA);
-  await expect(userA).toHaveURL(/\/artists\/claude-monet-cite\/edit\?done=wikidata/);
-  expect(cites('artist', 'claude-monet-cite')).toContain('birth:Q100:true');  // pending: only in the working copy
+  // "Apply selected" publishes (owner 2026-11-04): the entry's page, not the edit page
+  await expect(userA).toHaveURL(/\/artists\/claude-monet-cite\?done=wikidata-published/);
+  await expect(userA.locator('.flash.ok')).toContainText('applied and published');
+  expect(sql("SELECT birth_label FROM artists WHERE slug = 'claude-monet-cite'")).not.toBe('');
   expect(sql(`SELECT c.wikidata_item || ' ' || c.wikidata_property FROM citations c JOIN relationships r ON r.id = c.relationship_id
               WHERE r.subject_type = 'artist' AND r.subject_id = entity_id('artist', 'claude-monet-cite') AND r.relationship_type = 'born_in'`)).toBe('Q100 P19');
-  await submitForm(userA);                                                       // Publish
-  await expect(userA).toHaveURL(/\/artists\/claude-monet-cite\?done=/);
-  expect(cites('artist', 'claude-monet-cite')).toContain('birth:Q100:false');   // settled
+  expect(cites('artist', 'claude-monet-cite')).toContain('birth:Q100:false');   // settled at once
   await expect(userA.locator('#relationships + .table-wrap summary .cite-badge.cite-database').first()).toHaveText('W');
   sql("DELETE FROM live_docs WHERE entity_type = 'artist'");
 });
@@ -82,8 +82,8 @@ test('values Wikidata agrees with are cited when comparing — nothing to take, 
        INSERT INTO artists (slug, name, wikidata_id, birth, birth_label) VALUES ('claude-monet-cite', 'Claude Monet', 'Q100', '[1840-11-14,1840-11-15)', '14 November 1840')`);
   await userA.goto('/artists/claude-monet-cite/wikidata');
   await apply(userA);
-  // birth: the same as ours → cited and settled at once; death (empty here, taken) waits for Publish
-  expect(cites('artist', 'claude-monet-cite')).toBe('birth:Q100:false death:Q100:true');
+  // birth: the same as ours → cited; death (empty here, taken) — published with the apply, so settled too
+  expect(cites('artist', 'claude-monet-cite')).toBe('birth:Q100:false death:Q100:false');
   sql("DELETE FROM live_docs WHERE entity_type = 'artist'");
 });
 

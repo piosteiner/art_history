@@ -465,8 +465,29 @@ function enhance(textarea, collab = null) {
     langButton.textContent = lang.toUpperCase();
     langButton.title = `Spelling: ${LANG_NAME[lang]} — ${langByHand ? 'chosen by you' : 'recognised from the text'}. Click to switch to ${LANG_NAME[lang === 'de' ? 'en' : 'de']}.`;
   };
+  // A dictionary the browser lacks can't be seen from the page: German words would stay underlined though the field
+  // is set to German (owner 2026-11-04). The first time a field switches to German, a note says how to add it — once
+  // per browser ("Got it" is remembered).
+  const DICT_NOTE = 'arthistory.cms.dictNote.de';
+  const dictNote = () => {
+    if (lang !== 'de' || wrapper.querySelector('.md-dict-note')) return;
+    try { if (localStorage.getItem(DICT_NOTE) === '1') return; } catch { return; }
+    const note = document.createElement('div');
+    note.className = 'md-dict-note hint';
+    note.innerHTML = `Spelling now in <b>German</b>. Are German words still marked as wrong? Then your browser has no German
+      dictionary yet — <b>Firefox:</b> install “German Dictionary” from <a href="https://addons.mozilla.org/firefox/language-tools/" target="_blank" rel="noopener">addons.mozilla.org</a>;
+      <b>Chrome / Edge:</b> Settings › Languages › add German and switch on its spell check. `;
+    const ok = document.createElement('button');
+    ok.type = 'button';
+    ok.className = 'link small';
+    ok.textContent = 'Got it';
+    ok.addEventListener('click', () => { try { localStorage.setItem(DICT_NOTE, '1'); } catch { /* no storage */ } note.remove(); });
+    note.append(ok);
+    editorBox.before(note);
+  };
   const setLang = (l) => {
     lang = l;
+    dictNote();
     view.dispatch({ effects: langOf.reconfigure(EditorView.contentAttributes.of({ lang: l })) });
     // Firefox picks the dictionary when spell checking starts (on focus): off and on again makes it check the text
     // anew with the new language, without leaving the field
@@ -569,6 +590,7 @@ function enhance(textarea, collab = null) {
     previewButton,
   );
   preview.lang = lang;
+  dictNote();   // a text recognised as German from the start: the dictionary note too (once per browser)
   showLang();
   toolbar.children[0].style.fontWeight = '700';
   toolbar.children[1].style.fontStyle = 'italic';

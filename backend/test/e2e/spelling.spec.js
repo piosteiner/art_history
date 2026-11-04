@@ -25,3 +25,23 @@ test('a German description switches the spell check to German; the toolbar butto
   await expect(content).toHaveAttribute('lang', 'en');
   await expect(langButton).toHaveAttribute('title', /English — chosen by you/);
 });
+
+test('the first switch to German shows how to add the German dictionary — once, "Got it" is remembered', async ({ userA }) => {
+  await userA.goto('/artworks/new');
+  await userA.evaluate(() => localStorage.removeItem('arthistory.cms.dictNote.de'));
+  await userA.reload();
+  await liveReady(userA);
+  const editor = userA.locator('.md-editor').first();
+  await expect(userA.locator('.md-dict-note')).toHaveCount(0);           // English: nothing to say
+  await editor.locator('.cm-content').click();
+  await userA.keyboard.type('Das Blatt gehört zu der Serie und ist eines der bekanntesten Werke von ihm.', { delay: 5 });
+  await expect(userA.locator('.md-dict-note')).toContainText('no German dictionary');
+  await userA.locator('.md-dict-note button', { hasText: 'Got it' }).click();
+  await expect(userA.locator('.md-dict-note')).toHaveCount(0);
+  await userA.reload();
+  await liveReady(userA);
+  await userA.locator('.md-editor .cm-content').first().click();
+  await userA.keyboard.type('Das Blatt gehört zu der Serie und ist eines der bekanntesten Werke von ihm.', { delay: 5 });
+  await expect(userA.locator('.md-editor .cm-content').first()).toHaveAttribute('lang', 'de');
+  await expect(userA.locator('.md-dict-note')).toHaveCount(0);            // remembered in this browser
+});
