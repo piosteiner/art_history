@@ -70,9 +70,13 @@ export function mountPickers(
       </details>`;
     })}
     <button type="button" class="link-button pickers-reset" hidden>Show everything</button>
+    <button type="button" class="link-button pickers-clear" hidden title="Every picker to none — an empty map to start from">Clear</button>
   </div>`);
 
   const reset = root.querySelector<HTMLButtonElement>('.pickers-reset')!;
+  // the counterpart of "Show everything" (owner 2026-11-04): nothing chosen, layers included
+  const clear = root.querySelector<HTMLButtonElement>('.pickers-clear')!;
+  const isClear = () => groups.every((g) => sel[g.group].mode === 'none');
   const detailsOf = (g: Key) => root.querySelector<HTMLDetailsElement>(`details.pick[data-group="${g}"]`)!;
   // an artwork's artists, for the "by chosen artists" mode
   const artists = new Map((byGroup.get('artwork')?.entries ?? []).map((e) => [e.slug, creatorsOf(e.item as ArtworkItem).map((c) => c.slug)]));
@@ -143,6 +147,7 @@ export function mountPickers(
       d.querySelector<HTMLElement>('.pick-auto')?.toggleAttribute('hidden', p.mode !== 'auto');
     }
     reset.hidden = isDefault(sel);
+    clear.hidden = isClear();
   }
 
   /** Nothing ticked = "none"; every entry ticked = "all" (which also includes entries added later). */
@@ -206,6 +211,13 @@ export function mountPickers(
     }
     const btn = (e.target as Element).closest<HTMLButtonElement>('button');
     if (!btn) return;
+    if (btn === clear) {
+      for (const g of groups) sel[g.group] = { mode: 'none' };
+      syncSummaries();
+      groups.forEach((g) => renderList(g.group));
+      onChange(sel);
+      return;
+    }
     if (btn === reset) {
       sel = structuredClone(ALL);
       syncSummaries();

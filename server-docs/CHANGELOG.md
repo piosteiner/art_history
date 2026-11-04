@@ -4,6 +4,22 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### Site: "Clear" on the start map, entry links in a new tab, quiz pictures large on a hold, roadmap fixes
+- **What** (owner 2026-11-04, several requests at once — frontend, GitHub Pages):
+  - Start map: "Clear" beside "Show everything" sets every picker (layers too) to none (`picker.ts`).
+  - Start map: a link to an entry anywhere in the section — the view's text, map popups, the lists under the map —
+    opens in a new tab (`linksInNewTab` in `explore.ts`); stay: picker names (a click ticks), the view switches and
+    "Explore everything" (`/?…`), the site menu.
+  - Quiz: press and hold a picture (⅓ s) → large, in its own proportions (Wikimedia 1280 px, else the museum's
+    original), let go → closed; moving first = scrolling; the click ending a hold picks no tile; no long-press menu on
+    phones (`quiz.ts` `wirePeek`, CSS `.quiz-peek`); "Press and hold a picture to see it large." in picture games.
+  - Roadmap: a long link in a card's notes wraps (`overflow-wrap: anywhere`, the card `min-width: 0`); "Erledigt" no
+    longer sets the board's height — as tall as the other columns, its list scrolls (two/four columns; stacked on
+    phones it stays whole).
+  - Tests: `frontend/tests/site.spec.ts` (Clear + new tab, quiz peek).
+- **Why:** owner 2026-11-04.
+- **Revert:** `git revert` of the commit.
+
 ### CMS: common kinds as chips under the kind field
 - **What:** owner: "pick a term from the list" — but the list (a browser datalist) only opens while typing, and if it
   were visible the hint would be needless. `core.formContext` adds `common.kind` = the 12 kinds used most in that

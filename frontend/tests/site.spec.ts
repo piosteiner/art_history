@@ -3446,3 +3446,44 @@ test('timeline: a name longer than its column slides on hover until its end show
   await page.mouse.move(5, 5);
   await expect.poll(() => long.evaluate((t) => (t as SVGElement).style.transform)).toBe('translateX(0px)');
 });
+
+test('explore: "Clear" empties every picker; a link to an entry in the view\'s text opens in a new tab, the view switches stay', async ({ page, context }) => {
+  await page.goto('/?all');
+  await expect(page.locator('.pickers-clear')).toBeVisible();
+  await page.locator('.pickers-clear').click();
+  for (const g of ['artist', 'artwork', 'movement', 'polity', 'person', 'institution', 'event']) {
+    await expect(page.locator(`details.pick[data-group="${g}"] .pick-count`)).toHaveText('none');
+  }
+  await expect(page.locator('.pickers-clear')).toBeHidden();
+  await expect(page.locator('.pickers-reset')).toBeVisible();     // and back: Show everything
+  // a curated view: its text's links to entries open in a new tab, the map stays
+  await page.goto('/');
+  const link = page.locator('.explore a.entry-link').first();
+  await expect(link).toBeVisible();
+  const [tab] = await Promise.all([context.waitForEvent('page'), link.click()]);
+  await tab.waitForLoadState();
+  expect(new URL(tab.url()).pathname).toMatch(/^\/(artworks|artists)\//);
+  expect(new URL(page.url()).pathname).toBe('/');
+  await tab.close();
+});
+
+test('quiz: press and hold a picture to see it large; the click after the hold picks nothing', async ({ page }) => {
+  await page.route(/\/v1\/quiz\/regions(\?.*)?$/, (r) => r.fulfill({ json: { data: [] } }));
+  await page.route(/\/v1\/quiz\/image(\?.*)?$/, (r) => r.fulfill({ json: { movements: ['Post-Impressionism'], data: [{
+    slug: 'the-starry-night', public_id: 100001, title: 'The Starry Night', titles: ['The Starry Night'],
+    created: { label: '1889', from: '1889-01-01', to: '1889-12-31', from_year: 1889, to_year: 1889 },
+    image_url: PNG, credit: null, license: null, attribution: null, creators: [], movements: [],
+  }] } }));
+  await page.goto('/quiz/picture');
+  await expect(page.locator('.quiz-peek-hint')).toBeVisible();
+  const img = page.locator('.quiz-figure img');
+  const box = (await img.boundingBox())!;
+  await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
+  await page.mouse.down();
+  await expect(page.locator('.quiz-peek img')).toBeVisible();
+  await page.mouse.up();
+  await expect(page.locator('.quiz-peek')).toHaveCount(0);
+  // a short click opens nothing
+  await img.click();
+  await expect(page.locator('.quiz-peek')).toHaveCount(0);
+});

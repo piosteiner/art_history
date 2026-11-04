@@ -12,7 +12,7 @@
 import { getClusters, getEntityMap, getEventsMap, getFeatured, getPlacesMap, getPresence, getPreviews, getProvenances, getSites, getView, listAll, PLURAL } from '../api';
 import { wireTextLinks } from '../glossary';
 import { entries } from '../catalog';
-import { creatorsOf, href, html, render, trusted } from '../html';
+import { creatorsOf, href, html, linksInNewTab, render, trusted } from '../html';
 import { compareUrl, encounterLine } from '../crossings';
 import { findEncounters, type Encounter, type Stay } from '../encounters';
 import {
@@ -120,6 +120,10 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
     <section class="encounters" id="encounters" hidden aria-live="polite"></section>
     <div id="timeline"></div>
   </section>`);
+  // a link to an entry anywhere on the page (the view's text, map popups, the lists under the map) opens in a new tab,
+  // so the map stays as it is (owner 2026-11-04); stay in the tab: the picker names (a click ticks them; Ctrl+click
+  // opens), the view switches and "explore everything" (/?…), and the site's own menu (outside this section)
+  linksInNewTab(main.querySelector('.explore')!, '.explore a:not(.pick-link)', (h) => h === '/' || h.startsWith('/?') || h.startsWith('?'));
 
   const map = createMap(main.querySelector<HTMLElement>('#map')!);
   const status = main.querySelector<HTMLElement>('#map-status')!;

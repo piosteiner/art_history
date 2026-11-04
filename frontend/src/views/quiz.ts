@@ -147,8 +147,10 @@ function game(main: HTMLElement, kind: Kind, params: URLSearchParams) {
   const start = () => {
     render(main, html`<section class="page quiz-page"><p class="quiz-back"><a href="/quiz">← All quizzes</a></p>
       <h1>${quiz.title}${modeLabel ? html` <span class="muted quiz-mode">${modeLabel}</span>` : ''}${regionLabel ? html` <span class="muted quiz-mode">· ${regionLabel}</span>` : ''}</h1>
+      ${kind === 'picture' || kind === 'movement' ? html`<p class="muted small quiz-peek-hint">Press and hold a picture to see it large.</p>` : ''}
       <div class="quiz-stage"><p class="muted loading">Drawing questions…</p></div></section>`);
     const stage = main.querySelector<HTMLElement>('.quiz-stage')!;
+    wirePeek(stage);   // press and hold a picture: large
     rounds(kind, mode, params).then((list) => {
       if (gone || !current()) return;
       if (!list.length) {
@@ -208,8 +210,61 @@ async function rounds(kind: Kind, mode: string, params: URLSearchParams): Promis
 // ---- pieces shared by the rounds --------------------------------------------------------------------------------
 /** A museum image at this width (thumb(): Wikimedia serves its standard widths only — 120, 250, 330, 500, 960 …), or the owner's private one as it is (with the login's cookie, no CORS mode). */
 const picture = (url: string, alt: string, width: number, own = false) => (own
-  ? html`<img src="${url}" alt="${alt}" decoding="async">`
-  : html`<img src="${thumb(url, width)}" alt="${alt}" decoding="async" crossorigin="anonymous"${thumb(url, width) !== url ? html` data-fallback="${url}"` : ''}>`);
+  ? html`<img src="${url}" alt="${alt}" decoding="async" data-peek="${url}">`
+  : html`<img src="${thumb(url, width)}" alt="${alt}" decoding="async" crossorigin="anonymous"${thumb(url, width) !== url ? html` data-fallback="${url}"` : ''} data-peek="${peekSource(url)}">`);
+/** The large rendition for a peek: Wikimedia's 1280 px, else the museum's original (the thumbnail service stops at 800). */
+const peekSource = (url: string) => (/wikimedia\.org\//.test(url) ? thumb(url, 1280) : url);
+
+/**
+ * Press and hold a quiz picture to see it large, in its own proportions; let go and it closes (owner 2026-11-04). A
+ * click can't do it: on the tiles a click picks the work. Moving before the hold is a scroll, not a peek; the click
+ * that ends a hold picks nothing; the phone's long-press menu (save image) is kept off the pictures.
+ */
+function wirePeek(root: HTMLElement) {
+  const HOLD = 320;
+  let timer = 0;
+  let start = { x: 0, y: 0 };
+  let peek: HTMLElement | null = null;
+  let swallowClick = false;
+  const close = () => {
+    clearTimeout(timer);
+    if (!peek) return;
+    peek.remove();
+    peek = null;
+    swallowClick = true;
+    setTimeout(() => { swallowClick = false; }, 400);
+  };
+  const open = (img: HTMLImageElement) => {
+    peek = document.createElement('div');
+    peek.className = 'quiz-peek';
+    peek.setAttribute('role', 'presentation');
+    const big = document.createElement('img');
+    big.alt = img.alt;
+    if (img.crossOrigin) big.crossOrigin = 'anonymous';
+    big.src = img.currentSrc || img.src;                 // at once: what is already loaded
+    const sharp = new Image();
+    if (img.crossOrigin) sharp.crossOrigin = 'anonymous';
+    sharp.addEventListener('load', () => { if (peek) big.src = sharp.src; }, { once: true });
+    sharp.src = img.dataset.peek || big.src;              // then the large one, once it is there
+    peek.append(big);
+    document.body.append(peek);
+  };
+  root.addEventListener('pointerdown', (e) => {
+    const img = (e.target as Element).closest<HTMLImageElement>('.quiz-figure img, .quiz-tile img');
+    if (!img || e.button > 0) return;
+    start = { x: e.clientX, y: e.clientY };
+    clearTimeout(timer);
+    timer = window.setTimeout(() => open(img), HOLD);
+  });
+  root.addEventListener('pointermove', (e) => {
+    if (!peek && Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10) clearTimeout(timer);
+  });
+  for (const type of ['pointerup', 'pointercancel', 'pointerleave'] as const) document.addEventListener(type, close);
+  window.addEventListener('blur', close);
+  // the click that ends a hold picks nothing
+  root.addEventListener('click', (e) => { if (swallowClick) { e.preventDefault(); e.stopImmediatePropagation(); swallowClick = false; } }, true);
+  root.addEventListener('contextmenu', (e) => { if ((e.target as Element).closest('.quiz-figure img, .quiz-tile img')) e.preventDefault(); });
+}
 const workTitle = (w: { title: string; title_en?: string | null }) => html`${w.title}${w.title_en && w.title_en !== w.title ? html` <span class="muted">(${w.title_en})</span>` : ''}`;
 const workLink = (w: QuizWork) => html`<a href="${href('artworks', w.slug)}">${workTitle(w)}</a>`;
 const workLine = (w: QuizWork) => html`${workLink(w)}${w.creator ? html` · ${w.creator}` : ''}${w.created ? html` · ${w.created.label}` : ''}`;
