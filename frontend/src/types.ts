@@ -282,7 +282,13 @@ export interface SourceItem extends Named {
   authors: string[] | null; year: string | number | null; reading_status: ReadingStatus | null; read_on: DateRange | null;
   primary_source: boolean | null;
 }
-export interface TermItem extends Named { slug: string; name: string; category: TermCategory; definition: string | null; image_url: string | null }
+export interface TermItem extends Named {
+  slug: string; name: string; category: TermCategory; definition: string | null; image_url: string | null;
+  /** The broader term (API 145); `collection`: that term files its narrower terms — the list shows them under it only (2026-11-04). */
+  parent?: { slug: string; name: string; collection: boolean } | null;
+  /** A collection: how many terms it files. */
+  collects?: number | null;
+}
 export interface PolityItem extends Named { slug: string; name: string; kind: string | null; period: DateRange | null; country_codes: string[]; region?: string | null }
 /** Something that happened: a fire, a trial, an auction, an exhibition (migration 047). */
 export interface EventItem extends Located, Named {
@@ -496,6 +502,8 @@ export interface ProvenanceAlternative {
 
 export interface Place extends DetailBase, Named {
   type: 'place';
+  /** A road or river as a line (API 212): the Tōkaidō through its stations. */
+  route?: LineStringGeometry | null;
   /** country_code: its country today — by hand, else where its point lies, else its parent's (API 155). */
   name: string; alt_names: string[]; kind: string | null; country_code: string | null;
   /** What it is as a unit — "canton of Switzerland", "province of Italy" (API 158); `kind` the coarse kind. */
@@ -651,10 +659,13 @@ export interface PartProps extends MapPartRef {
   layer: 'part';
   place: Ref; precision: string | null; certainty: string | null; note: string | null;
 }
+export interface RoadProps { layer: 'road'; slug: string; name: string; public_id: number | null; points: number; note: string | null }
 export interface PartsMap {
   type: 'FeatureCollection';
   features: Feature<PointGeometry, PartProps>[];
   unplaced: MapPartRef[];
+  /** The roads the parts look from: a depicted place drawn as a line (the Tōkaidō through its stations). */
+  routes?: Feature<LineStringGeometry, RoadProps>[];
 }
 
 /** One step of the provenance as the map has it: number `step` of `steps` in the chain (creation, steps, loan). */

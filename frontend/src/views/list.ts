@@ -8,7 +8,7 @@ import type { NameEntry } from '../types';
 
 /** The original-language name, shown small on the card ("神奈川沖浪裏"). */
 const original = (item: unknown) => (item as { names?: NameEntry[] }).names?.find((n) => n.role === 'original');
-import type { ArtistItem, ArtworkItem, InstitutionItem, ItemByPlural, LiteratureItem, Plural } from '../types';
+import type { ArtistItem, ArtworkItem, InstitutionItem, ItemByPlural, LiteratureItem, Plural, TermItem } from '../types';
 import { guard, showError } from './common';
 import { entries, explain, fold, highlight, PROVENANCE_CATEGORY_LABEL, STATUS_LABEL, matches, ordered, saveSort, savedSort, saveView, savedView, sortEntries, sortOptions, type Entry, type ListView } from '../catalog';
 
@@ -65,7 +65,7 @@ export function cardParts(plural: Plural, item: AnyItem) {
     }
     case 'glossary': {
       const t = item as ItemByPlural['glossary'];
-      [name, date, detail, image] = [t.name, t.category, t.definition ?? '', t.image_url];
+      [name, date, detail, image] = [t.name, t.category, `${t.collects ? `Files ${t.collects} terms. ` : ''}${t.definition ?? ''}`, t.image_url];
       break;
     }
     case 'events': {
@@ -189,6 +189,10 @@ export function list(main: HTMLElement, plural: Plural) {
     events: { field: 'kind', param: 'kind' }, artworks: { field: 'provenance_category', param: 'provenance' } } as Record<string, { field: string; param: string }>)[plural];
   const fieldOf = (e: Entry<AnyItem>) => String((e.item as unknown as Record<string, unknown>)[FILTER?.field ?? ''] ?? 'other');
   const labelOf = (v: string) => (plural === 'bibliography' ? STATUS_LABEL[v] ?? v : plural === 'artworks' ? PROVENANCE_CATEGORY_LABEL[v] ?? v : v);
+  // glossary: a term filed under a collection (the era names under Japanese, Korean, Chinese calendar — API `parent.collection`,
+  // owner 2026-11-04) is left out of the list and its counts; a search still finds it
+  const filed = (e: Entry<AnyItem>) => plural === 'glossary' && !!(e.item as TermItem).parent?.collection;
+  const listed = () => all.filter((e) => !filed(e));
   let category = FILTER ? new URLSearchParams(location.search).get(FILTER.param) : null;
   // artworks: the parts of one whole (`?part_of=<slug>`, linked from the series page), in their order
   const partOf = plural === 'artworks' ? new URLSearchParams(location.search).get('part_of') : null;
@@ -238,11 +242,15 @@ export function list(main: HTMLElement, plural: Plural) {
   });
   function drawCategories() {
     const counts = new Map<string, number>();
-    for (const e of all) { const c = fieldOf(e); counts.set(c, (counts.get(c) ?? 0) + 1); }
+    const shown = listed();
+    for (const e of shown) { const c = fieldOf(e); counts.set(c, (counts.get(c) ?? 0) + 1); }
     if (category && !counts.has(category)) category = null;
     categoriesEl.hidden = counts.size < 2 && !category;
-    render(categoriesEl, html`${plural === 'artworks' ? html`<span class="category-filter-label" title="Categories of the Swiss Federal Office of Culture">Provenance 1933–1945</span>` : ''}<button type="button" data-category="" class="${category ? '' : 'on'}" aria-pressed="${String(!category)}">All <span class="muted">${String(all.length)}</span></button>
-      ${[...counts].sort(([a], [b]) => a.localeCompare(b)).map(([c, n]) => html`<button type="button" data-category="${c}" class="${c === category ? 'on' : ''}" aria-pressed="${String(c === category)}">${labelOf(c)} <span class="muted">${String(n)}</span></button>`)}`);
+    const collections = all.filter((e) => (e.item as TermItem).collects);
+    const filedCount = all.length - shown.length;
+    render(categoriesEl, html`${plural === 'artworks' ? html`<span class="category-filter-label" title="Categories of the Swiss Federal Office of Culture">Provenance 1933–1945</span>` : ''}<button type="button" data-category="" class="${category ? '' : 'on'}" aria-pressed="${String(!category)}">All <span class="muted">${String(shown.length)}</span></button>
+      ${[...counts].sort(([a], [b]) => a.localeCompare(b)).map(([c, n]) => html`<button type="button" data-category="${c}" class="${c === category ? 'on' : ''}" aria-pressed="${String(c === category)}">${labelOf(c)} <span class="muted">${String(n)}</span></button>`)}
+      ${filedCount ? html`<p class="muted small filed-note">${String(filedCount)} era names are filed under ${collections.map((c, i) => html`${i ? (i === collections.length - 1 ? ' and ' : ', ') : ''}<a href="${href('term', c.slug)}">${c.name}</a>`)} — search finds them by name.</p>` : ''}`);
   }
   categoriesEl.addEventListener('click', (ev) => {
     const b = (ev.target as Element).closest<HTMLButtonElement>('button[data-category]');
@@ -277,7 +285,8 @@ export function list(main: HTMLElement, plural: Plural) {
     // literary works: the list shows whole works, their chapters only when a search finds them (on the work's page
     // as its contents)
     const inWhole = partOf ? all.filter((e) => (e.item as { part_of?: { slug: string } | null }).part_of?.slug === partOf)
-      : plural === 'literary-works' && !query_ ? all.filter((e) => !(e.item as LiteratureItem).part_of) : all;
+      : plural === 'literary-works' && !query_ ? all.filter((e) => !(e.item as LiteratureItem).part_of)
+        : plural === 'glossary' && !query_ ? listed() : all;
     const pool = (category ? inWhole.filter((e) => fieldOf(e) === category) : inWhole).filter((e) => !gapOnly || openQuestion(e))
       .filter((e) => !heldBy || inHolding(e));
     const hits = query_ ? pool.filter((e) => matches(e, parsed)) : pool;

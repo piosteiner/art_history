@@ -731,6 +731,20 @@ test('lists open in their own order (owner 2026-11-04): movements newest first, 
   await expect(sort.locator('option[value=region]')).toHaveText('World region');
 });
 
+test('glossary: era names filed under their calendar (API parent.collection) are out of the list and its counts, found by search; the calendar says how many it files', async ({ page }) => {
+  await page.goto('/glossary');
+  const all = page.locator('#categories button[data-category=""] .muted');
+  const total = Number((await all.textContent())?.trim());
+  expect(total).toBeLessThan(900);                                   // 1,024 terms, 613 filed
+  await expect(page.locator('.filed-note')).toContainText('era names are filed under');
+  await expect(page.locator('.filed-note a', { hasText: 'Japanese calendar' })).toHaveAttribute('href', /\/glossary\/(\d+\/)?japanese-calendar$/);
+  await expect(page.locator('#items > li', { hasText: 'Adalla Isageum' })).toHaveCount(0);
+  await page.fill('.filter', 'Adalla');
+  await expect(page.locator('#items > li', { hasText: 'Adalla Isageum' })).toHaveCount(1);   // a search still finds a filed term
+  await page.goto('/glossary?category=calendar');
+  await expect(page.locator('#items > li', { hasText: 'Japanese calendar' })).toContainText('Files 249 terms');
+});
+
 test('privacy page from the footer (the CMS page "privacy"); the site sets no cookies', async ({ page, context }) => {
   await page.goto('/artworks/the-great-wave-off-kanagawa');
   await expect(page.locator('.figure img')).toBeVisible();
@@ -2160,7 +2174,9 @@ async function sampleSeries(page: Page) {
       part('20', 'south-wind-clear-sky', 'South Wind, Clear Sky', ['mount-fuji', 'Mount Fuji'], [138.7274, 35.3606]),
       part('21', 'the-great-wave-off-kanagawa', 'The Great Wave off Kanagawa', ['yokohama', 'Yokohama'], [139.63, 35.44], 'disputed', 'settlement'),
       part('46', 'shojin-tozan', 'Climbing the Mountain', ['mount-fuji', 'Mount Fuji'], [138.7274, 35.3606]),
-    ], unplaced: [{ number: '30', slug: 'kazusa-sea-route', public_id: null, title: 'The Kazusa Sea Route', image_url: null }] } } }));
+    ], unplaced: [{ number: '30', slug: 'kazusa-sea-route', public_id: null, title: 'The Kazusa Sea Route', image_url: null }],
+    routes: [{ type: 'Feature', geometry: { type: 'LineString', coordinates: [[139.774, 35.684], [139.742, 35.620], [139.596, 35.444], [138.487, 35.023], [135.772, 35.009]] },
+      properties: { layer: 'road', slug: 'tokaido', name: 'Tōkaidō', public_id: null, points: 5, note: 'the road along which many of the views are taken' } }] } } }));
 }
 
 test('series: "No. 21 of 36 in …" with previous/next; the series page shows its parts', async ({ page }) => {
@@ -2193,6 +2209,9 @@ test('a series\' map shows its parts where they are: one marker per place with t
   await expect(page.locator('#legend')).toContainText('its parts, numbered as in the series');
   await expect(page.locator('#legend')).toContainText('viewpoint uncertain');
   await expect(page.locator('#unplaced-parts')).toContainText('30 · The Kazusa Sea Route');
+  await expect(page.locator('#legend')).toContainText('Tōkaidō, the road the views look from (through its 3 stations)');
+  await expect(page.locator('#parts-sources')).toContainText('follows the sources cited on the print');
+  await expect.poll(() => page.evaluate(() => ((window as unknown as { __maps?: { getLayer: (id: string) => unknown }[] }).__maps?.at(-1)?.getLayer('parts-roads') ? 'drawn' : 'no')), { timeout: 10000 }).toBe('drawn');
   await stops.nth(0).click();
   const popup = page.locator('.maplibregl-popup');
   await expect(popup).toContainText('Mount Fuji');
@@ -3294,12 +3313,12 @@ test('quiz: name a picture — typed answers in any of its names, with typos, a 
 test('quiz: a world region — chosen on the quiz page, in the game\'s request and title, remembered', async ({ page }) => {
   const errors = noErrors(page);
   const region = (r: string, name: string, works: number) => ({ region: r, name, name_de: name, note: null, works });
-  await page.route(/\/v1\/quiz\/regions(\?.*)?$/, (r) => r.fulfill({ json: { data: [region('europe', 'Europe', 365), region('east_asia', 'East Asia', 344), region('africa', 'Africa', 2)] } }));
+  await page.route(/\/v1\/quiz\/regions(\?.*)?$/, (r) => r.fulfill({ json: { data: [region('europe', 'Europe', 365), region('east_asia', 'East Asia', 344), region('oceania', 'Oceania', 40), region('africa', 'Africa', 2)] } }));
   const asked: string[] = [];
   await page.route(/\/v1\/quiz\/artist(\?.*)?$/, (r) => { asked.push(r.request().url()); return r.fulfill({ json: { data: [] } }); });
   await page.goto('/quiz');
   const chips = page.locator('.quiz-regions .chip');
-  await expect(chips).toHaveText(['all regions', 'Europe 365', 'East Asia 344']);   // too few works: not offered
+  await expect(chips).toHaveText(['all regions', 'Europe 365', 'East Asia 344', 'Oceania 40']);   // too few works: not offered
   await chips.filter({ hasText: 'East Asia' }).click();
   await expect(page).toHaveURL(/\/quiz\?region=east_asia$/);
   await expect(page.locator('.quiz-card', { hasText: 'Glossary' }).getByRole('link', { name: 'Mixed' })).toHaveAttribute('href', '/quiz/glossary?mode=mixed');
@@ -3309,6 +3328,19 @@ test('quiz: a world region — chosen on the quiz page, in the game\'s request a
   expect(asked.some((u) => u.includes('region=east_asia'))).toBe(true);
   await page.goto('/quiz');
   await expect(page.locator('.quiz-regions .chip.active')).toHaveText('East Asia 344');   // remembered
+  // tick boxes (owner 2026-11-04): a second region added, both in the address and the request; "all regions" unticks
+  await expect(chips.filter({ hasText: 'Europe' })).toHaveAttribute('aria-pressed', 'false');
+  await chips.filter({ hasText: 'Europe' }).click();
+  await expect(page).toHaveURL(/\/quiz\?region=europe,east_asia$/);                   // in the regions' own order
+  await expect(page.locator('.quiz-regions .chip.active')).toHaveText(['Europe 365', 'East Asia 344']);
+  await page.locator('.quiz-card', { hasText: 'Whose works?' }).getByRole('link', { name: 'Start' }).click();
+  await expect(page.locator('h1')).toContainText('Whose works? · Europe · East Asia');
+  expect(asked.some((u) => decodeURIComponent(u).includes('region=europe,east_asia'))).toBe(true);
+  await page.goto('/quiz');
+  await chips.filter({ hasText: 'all regions' }).click();
+  await expect(page).toHaveURL(/\/quiz$/);
+  await expect(chips.filter({ hasText: 'Europe' })).toHaveAttribute('aria-pressed', 'true');   // all ticked
+  await expect(page.locator('.quiz-regions .chip.active')).toHaveText('all regions');
   expect(errors).toEqual([]);
 });
 

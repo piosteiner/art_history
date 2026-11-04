@@ -6,7 +6,7 @@ import { keepInView, markWords, wordsToMark } from '../highlight';
 import { citeSection, connectSection, sharedHandsSection } from './detail-network';
 import { GROUPS, type Group } from '../selection';
 import {
-  titleStatusLine, displayName, langAttr, originalLine, gallery, html, PLURAL_LABEL, render, trusted, TYPE_LABEL, wireGalleries, wireImageFallbacks, wireLightbox, href,
+  titleStatusLine, displayName, langAttr, originalLine, gallery, html, PLURAL_LABEL, render, trusted, TYPE_LABEL, wireGalleries, wireImageFallbacks, wireLightbox, href, link,
 } from '../html';
 import { COLORS } from '../colors';
 import type { DetailByPlural, Plural } from '../types';
@@ -151,6 +151,8 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
         cleanup = () => map.remove();
         if (e.type === 'place') {
           showPoint(map, e.location!.coordinates, e.name);
+          // a road or river (API 212): its line, the map fitted to it
+          if (e.route) showOwnSite(map, e.route, e.name, true, COLORS.route);
           return;
         }
         if (e.type === 'event') {
@@ -171,11 +173,14 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
             const provStops = prov?.features.flatMap((f) => (f.properties.layer === 'provenance_stop' ? [f.properties] : [])) ?? [];
             const provSegments = prov?.features.flatMap((f) => (f.properties.layer === 'provenance_segment' ? [f.properties] : [])) ?? [];
             const stops = fc.features.filter((f) => f.geometry.type === 'Point'
-              && !(prov && f.properties.layer === 'presence' && ['kept_in', 'created_in'].includes(f.properties.relationship)));
+              && !(prov && f.properties.layer === 'presence' && ['kept_in', 'created_in'].includes(f.properties.relationship))
+              // a road drawn as a line on the parts' map needs no ring at its midpoint
+              && !(fc.parts?.routes ?? []).some((r) => f.properties.layer === 'association' && f.properties.place?.slug === r.properties.slug));
             // an institution's own point, or where an immovable artwork stands
             const own = e.type === 'institution' ? e.location ?? null : e.type === 'artwork' ? e.area ?? e.location ?? null : null;
             // a whole's parts where they are (a series' views on the series' map, API 2026-11-04)
             const parts = fc.parts?.features.length ? fc.parts : null;
+            const roads = parts?.routes ?? [];
             if (own) showOwnSite(map, own, v.title, !stops.length && !prov && !parts);
             if (!stops.length && !prov && !parts && own) {
               render(legend, html`<span><i class="dot" style="background:${COLORS.site}"></i>${e.type === 'artwork' ? 'where it stands' : 'its building'}</span>`);
@@ -213,7 +218,9 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
               ${parts ? html`
                 ${partProps.some((p) => p.certainty !== 'possible' && p.certainty !== 'disputed') ? html`<span><i class="dot dot-num" style="background:${COLORS.association}"></i>its parts, numbered as in the series, at the places they show</span>` : ''}
                 ${partProps.some((p) => p.certainty === 'possible' || p.certainty === 'disputed') ? html`<span><i class="ring ring-dashed" style="border-color:${COLORS.association}"></i>viewpoint uncertain</span>` : ''}
-                ${partProps.some((p) => p.precision === 'region' || p.precision === 'country') ? html`<span><i class="ring ring-area" style="border-color:${COLORS.association}"></i>only the region known</span>` : ''}` : ''}
+                ${partProps.some((p) => p.precision === 'region' || p.precision === 'country') ? html`<span><i class="ring ring-area" style="border-color:${COLORS.association}"></i>only the region known</span>` : ''}
+                ${roads.map((r) => html`<span><i class="line line-dashed" style="border-color:${COLORS.route}"></i>${link('place', r.properties.slug, r.properties.name)}, the road the views look from${r.properties.points > 2 ? html` <span class="muted">(through its ${String(r.properties.points - 2)} stations)</span>` : ''}</span>`)}
+                <div class="legend-note" id="parts-sources">Each viewpoint follows the sources cited on the print's page (the certainty is theirs).</div>` : ''}
               ${both ? html`<button type="button" class="link-button" data-fit="all">show associations</button>` : ''}
               ${prov?.unplaced.length ? html`<div class="legend-note" id="unplaced">Not on the map (place not recorded):
                 ${unplacedSteps(prov)}</div>` : ''}

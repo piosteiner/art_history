@@ -1251,3 +1251,7 @@ span.quiz-tile { cursor: default; }
 .popup-parts .popup-thumb { float: left; width: 48px; height: 36px; object-fit: cover; margin: 0 .5rem .2rem 0; border-radius: 3px; }
 .legend .dot-num { font-size: 8px; line-height: 12px; text-align: center; color: #fff; }
 .legend .dot-num::before { content: '1'; }
+
+/* quiz regions as tick boxes (owner 2026-11-04): a box before each region, ticked when its works play */
+.quiz-regions .chip-tick::before { content: '☐ '; }
+.quiz-regions .chip-tick[aria-pressed="true"]::before { content: '☑ '; }

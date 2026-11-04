@@ -13,7 +13,7 @@ import {
   clearProvenanceMarkers, drawProvenance, holderText, placedProvenance, provenanceLayers, provenanceStops, stepsAtPlace, withoutReplaced,
 } from './map-provenance';
 import type {
-  ClustersMap, EntityMap, EntityType, EventMapProps, EventsMap, Feature, Inference, LineStringGeometry, PartProps, PartsMap, PlacesMap, PointGeometry, PresenceMap,
+  ClustersMap, EntityMap, EntityType, EventMapProps, EventsMap, Feature, Inference, LineStringGeometry, PartProps, PartsMap, PlacesMap, PointGeometry, PresenceMap, RoadProps,
   ProvenanceMap, ProvenanceSegmentProps, SiteProps, SitesMap, StopFeature,
 } from './types';
 
@@ -127,6 +127,16 @@ export function showParts(map: MapLibre, parts: PartsMap, { alsoFit = false } = 
     byPlace.set(key, [...(byPlace.get(key) ?? []), f]);
   }
   whenReady(map, () => {
+    // the roads the parts look from (the Tōkaidō): a dashed line under the markers, its name on a click
+    const roads: Feature<LineStringGeometry, RoadProps>[] = parts.routes ?? [];
+    setData(map, 'parts-roads', { type: 'FeatureCollection', features: roads });
+    if (!map.getLayer('parts-roads')) {
+      map.addLayer({ id: 'parts-roads', type: 'line', source: 'parts-roads', paint: { 'line-color': COLORS.route, 'line-width': 2.5, 'line-dasharray': [2, 2], 'line-opacity': .8 } });
+      popupOnClick(map, ['parts-roads'], (features) => {
+        const p = features?.[0]?.properties as unknown as RoadProps;
+        return html`<div class="popup-row"><strong>${link('place', p.slug, p.name)}</strong>${p.note ? html`<br><em>${p.note}</em>` : ''}</div>`;
+      });
+    }
     for (const m of partMarkers.get(map) ?? []) m.remove();
     const markers: Marker[] = [];
     for (const group of byPlace.values()) {
@@ -573,7 +583,8 @@ export function showOwnSite(map: MapLibre, geometry: GeoJSON.Geometry, name: str
     setData(map, 'own-site', { type: 'FeatureCollection', features: [{ type: 'Feature', geometry, properties: { name } }] });
     const isArea: ExpressionSpecification = ['in', ['geometry-type'], ['literal', ['Polygon', 'MultiPolygon']]];
     map.addLayer({ id: 'own-site-area', type: 'fill', source: 'own-site', filter: isArea, paint: { 'fill-color': color, 'fill-opacity': 0.25 } });
-    map.addLayer({ id: 'own-site-line', type: 'line', source: 'own-site', filter: isArea, paint: { 'line-color': color, 'line-width': 2 } });
+    const isLine: ExpressionSpecification = ['in', ['geometry-type'], ['literal', ['LineString', 'MultiLineString']]];
+    map.addLayer({ id: 'own-site-line', type: 'line', source: 'own-site', filter: ['any', isArea, isLine], paint: { 'line-color': color, 'line-width': 2 } });
     map.addLayer({
       id: 'own-site-point', type: 'circle', source: 'own-site', filter: ['==', ['geometry-type'], 'Point'],
       paint: { 'circle-radius': 7, 'circle-color': color, 'circle-stroke-color': '#fff', 'circle-stroke-width': 2 },

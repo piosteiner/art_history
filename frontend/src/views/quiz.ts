@@ -4,8 +4,9 @@
 // and are checked here (src/quiz-match.ts for typed ones). The best result per game stays in this browser.
 // Logged in (account.ts), the games come from the admin host and also use works that have only the account's private
 // reference images, shown with that image; ?mine=only: a picture quiz of those images only.
-// ?region=<world region> (owner 2026-11-02): the works of one region only — chosen above the games, remembered in
-// this browser; without one, each round still keeps to its artist's or movement's region (backend src/routes/quiz.js).
+// ?region=<world regions, comma-separated> (owner 2026-11-02; several ticked at once 2026-11-04): the works of those
+// regions only — chosen above the games, remembered in this browser; without one, each round still keeps to its
+// artist's or movement's region (backend src/routes/quiz.js). "all regions" = no choice (works of no known region too).
 import {
   getQuizArtists, getQuizGlossary, getQuizMovements, getQuizPictures, getQuizRegions, type QuizRegion,
   type QuizArtistRound, type QuizMovementRound, type QuizPicture, type QuizTermRound, type QuizWork,
@@ -88,12 +89,16 @@ function menu(main: HTMLElement, params: URLSearchParams) {
   account().then((name) => { loggedIn = !!name; showMine(); });
   // the regions with enough works: one to choose, or all
   const box = main.querySelector<HTMLElement>('.quiz-regions')!;
+  const chosen = () => region.split(',').filter(Boolean);
+  let offered: QuizRegion[] = [];
   const drawRegions = (list: QuizRegion[]) => {
-    const offered = list.filter((r) => r.works >= MIN_WORKS || r.region === region);
-    if (!offered.some((r) => r.region === region)) region = '';
+    offered = list.filter((r) => r.works >= MIN_WORKS || chosen().includes(r.region));
+    const kept = chosen().filter((c) => offered.some((r) => r.region === c));
+    region = kept.length && kept.length < offered.length ? kept.join(',') : '';   // every region ticked = all
+    const ticked = (r: string) => !region || chosen().includes(r);
     render(box, html`<span class="muted small">Works from</span>
       <button type="button" class="chip${region ? '' : ' active'}" data-region="" aria-pressed="${region ? 'false' : 'true'}">all regions</button>
-      ${offered.map((r) => html`<button type="button" class="chip${r.region === region ? ' active' : ''}" data-region="${r.region}" aria-pressed="${r.region === region ? 'true' : 'false'}"
+      ${offered.map((r) => html`<button type="button" class="chip chip-tick${region && ticked(r.region) ? ' active' : ''}" data-region="${r.region}" aria-pressed="${ticked(r.region) ? 'true' : 'false'}"
         title="${r.note ?? ''}">${r.name} <span class="muted">${r.works}</span></button>`)}`);
     box.hidden = offered.length < 2;
   };
@@ -106,7 +111,14 @@ function menu(main: HTMLElement, params: URLSearchParams) {
   box.addEventListener('click', (e) => {
     const chip = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-region]');
     if (!chip) return;
-    region = chip.dataset.region ?? '';
+    const r = chip.dataset.region ?? '';
+    if (!r) region = '';                       // all regions
+    else {
+      // tick boxes: from "all", the first click keeps that region alone; then each click adds or removes one
+      const set = region ? chosen() : [];
+      const next = set.includes(r) ? set.filter((x) => x !== r) : [...set, r];
+      region = offered.filter((o) => next.includes(o.region)).map((o) => o.region).join(',');
+    }
     saveRegion(region);
     history.replaceState(history.state, '', region ? `/quiz?region=${region}` : '/quiz');
     drawRegions(regions);
@@ -128,7 +140,7 @@ function game(main: HTMLElement, kind: Kind, params: URLSearchParams) {
   const mode = quiz.modes.some((m) => m.mode === params.get('mode')) ? params.get('mode')! : quiz.modes[0].mode;
   const modeLabel = quiz.modes.length > 1 ? quiz.modes.find((m) => m.mode === mode)?.label : null;
   const region = kind === 'glossary' ? '' : params.get('region') ?? '';
-  const regionLabel = region ? regionNames.get(region) ?? region.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()) : null;
+  const regionLabel = region ? region.split(',').filter(Boolean).map((r) => regionNames.get(r) ?? r.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())).join(' · ') : null;
   document.title = `${quiz.title} · Quiz · Art History`;
   const current = guard();
   let gone = false;
