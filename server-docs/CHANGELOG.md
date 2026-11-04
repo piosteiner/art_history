@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### Documentation: two chapters restored after this morning's section rewrite cut them
+- **What:** the script that rewrote "Bildrechte der Museen" at 06:02 replaced too much: from that section to the
+  section "Vorschaubilder" — the chapters **Content Management System** (Funktionen, Beschreibungsfeld, Projektinternes
+  Verlinken, Karte im CMS, History und Rückgängigmachen, Gleichzeitiges Bearbeiten, Datenqualität) and **Website**
+  (Funktionen, Kuratierte Startseite, Bewegungslinien und Crossed Paths) — 23,148 characters, 3,290 words, 12 headings.
+  Noticed by the owner from /statistik ("why did my documentation shrink?"). Restored from the audit log (row 139143,
+  old_row) at the same place; the heading list is again the 93 of before, in the same order; no drafts existed. Audited
+  as user 1 / source script.
+- **Why:** my mistake — the cut ran to the next heading of the same level without checking what lay between.
+- **Lesson:** a script that replaces a section compares the heading list before and after, and stops on a difference.
+- **Revert:** CMS history of the page.
+
 ### The Tōkaidō: a glossary term, the road as a line, drawn on the Fuji series' map
 - **What:** owner 2026-11-04. Migration 212: `places.route geography(LineString)` (a road or river as a line; citable
   field `route`). The place `tokaido` gets the road through its 55 points — Nihonbashi, the 53 stations, Sanjō Ōhashi —
