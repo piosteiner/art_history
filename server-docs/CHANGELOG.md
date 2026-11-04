@@ -4,6 +4,27 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### Documentation: image rights of every museum used so far
+- **What:** the CMS page `projekt-dokumentation`, section "Bildrechte der Museen", rewritten (26.7 k → 21.4 k chars,
+  audited as user 1 / source script; no page_drafts existed). The terms of use of every museum and image service the
+  project has used — holders of the works, provenance sources, the CMS image search, the sources of private reference
+  images — read on 2026-11-04 (sites with a bot check — Prado, British Museum, MFA Boston, Gallica — read with headless
+  Chromium or the r.jina.ai reader; images were never fetched that way). Three tables with a "So gehe ich damit um"
+  rule per house: free (Met, AIC, Cleveland, Smithsonian, Getty, LACMA, Rijksmuseum, SMK, Nasjonalmuseet, Belvedere —
+  now CC0, not CC BY-SA —, Albertina ≤ 1200 px, Akademie Wien CC BY 4.0, Pinakothek CC BY-SA 4.0, SMB PDM, Tokyo Fuji
+  CC0, ColBase CC BY-compatible, Korea KOGL, Commons); with conditions (Prado form + credit, British Museum
+  CC BY-NC-SA, Van Gogh Museum, National Gallery CC BY-NC-ND, V&A ≤ 768 px, Harvard, Philadelphia, MFA Boston, TNM,
+  Gallica, Italian state museums, aggregators by item, Khalili CC BY-SA set); not usable (Kunsthaus Zürich, Louvre
+  — "digital educational publications" unclear —, Orsay/Orangerie, Rodin, KHM, Leopold — private downloads only —,
+  mumok, Hamburger Kunsthalle, Kröller-Müller, Stedelijk, Sotheby's, Shōzōkan's own site, e-Museum, Cultural Heritage
+  Online + kunishitei DB, temples and shrines, Japanese private museums, SAM/McNay, Web Gallery of Art). Plus the
+  general rules (only licensed images enter `images`; the thumbnail service copies, so only where allowed; everything
+  else stays a private reference image; NC fine, ND = no cropping; Swiss URG Art. 2 Abs. 3bis — photos of 3D objects
+  protected 50 years since 2020). Site changelog item (inhalt / Projektdokumentation) added to the unpublished
+  2026-11-04 entry. Terms texts kept in the scratchpad `rights/` (not in the repo).
+- **Why:** owner, 2026-11-04 — check the image rights of every museum used and write per museum how its images must be handled.
+- **Revert:** the previous section text is in `audit_log` (table pages, 2026-11-04) → CMS history / restore.
+
 ### Curated start views: thirteen sets for the home page
 - **What:** 13 published `featured_views` beside the owner's Arles view (now third): *Half a million kilometres* (the
   twelve farthest-travelled works, routes mode), *Seized in Paris, settled in Zürich* (23 D-category works in the
