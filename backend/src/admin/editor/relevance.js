@@ -105,7 +105,8 @@ export function initRelevance() {
     for (const f of fields) {
       const empty = isEmpty(f);
       const need = needed.has(f.key) && empty;
-      const used = need || ((!only || only.has(f.key)) && !(shownWhen.has(f.key) && !shownWhen.get(f.key)) && !(rare.has(f.key) && !shownWhen.get(f.key)));
+      // a field the server marked in red is never hidden
+      const used = need || f.el.classList.contains('has-error') || ((!only || only.has(f.key)) && !(shownWhen.has(f.key) && !shownWhen.get(f.key)) && !(rare.has(f.key) && !shownWhen.get(f.key)));
       f.el.classList.toggle('needed', need);
       f.el.classList.toggle('unusual', !used && !empty && !rare.has(f.key));
       f.el.hidden = !used && empty && !showAll;

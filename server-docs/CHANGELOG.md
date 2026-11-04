@@ -29,7 +29,7 @@ Format: date — what — why — how to revert.
   web = kind + online first), `test/e2e/forms.spec.js` (section order, rare fields, fate date, on loan after the
   institution); five tests that fill a now-hidden field (dimensions note, inventory number without institution,
   further measurements, a place's designation, the title status) call the new helper `showAllFields()`
-  (`test/e2e/helpers.js`). Web page form 27 → 18 visible fields, artwork 32 → 22, artist 19 → 15 (dev screenshots).
+  (`test/e2e/helpers.js`); a field the server marked in red (`has-error`) is never hidden (errors.spec). Web page form 27 → 18 visible fields, artwork 32 → 22, artist 19 → 15 (dev screenshots).
   Not added to the site changelog: the 4 November entry is already published.
 - **Incident:** restarting the dev server I killed the PIDs found by `pgrep -f "src/server.js"` — they were the
   production `arthistory-api` and `arthistory-test`; pm2 restarted both within a second (12:40:37, health 200, no
