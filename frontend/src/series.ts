@@ -39,7 +39,8 @@ export function partNav(e: { previous_part?: SiblingRef | null; next_part?: Sibl
   </nav>`;
 }
 
-/** The parts of a whole, in order, as a grid (a sub-series shows how many parts it has itself). */
+/** The parts of a whole, in order, as a grid (a sub-series shows how many parts it has itself). A part opens in a new
+ * tab (owner 2026-11-04): the whole stays where it was, to go on from. */
 export function partsGrid(e: { slug: string; kind?: string | null; parts?: PartRef[]; parts_count?: number | null }) {
   const parts = e.parts ?? [];
   if (!parts.length) return null;
@@ -48,7 +49,7 @@ export function partsGrid(e: { slug: string; kind?: string | null; parts?: PartR
   return html`<section class="parts"><h2>${versions ? 'Versions' : 'Parts'} <span class="muted small">(${count})</span></h2>
     <p class="small"><a href="/artworks?part_of=${encodeURIComponent(e.slug)}">See them in the artworks list →</a></p>
     <ul class="parts-grid">${parts.map((p) => html`<li>
-      <a class="part-card" href="${href('artworks', p.slug)}">
+      <a class="part-card" href="${href('artworks', p.slug)}" target="_blank" rel="noopener" title="Opens in a new tab">
         ${previewImg(p.image_url, p.slug, 250) ?? html`<span class="part-img-empty" aria-hidden="true"></span>`}
         <span class="part-number">${partLabel(p.part_number, versions)}</span>
         <span class="part-title">${p.title}</span>

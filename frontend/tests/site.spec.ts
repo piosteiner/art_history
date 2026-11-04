@@ -2140,6 +2140,12 @@ test('series: "No. 21 of 36 in …" with previous/next; the series page shows it
   await expect(page.locator('.parts h2')).toContainText('2 of 36');
   await expect(page.locator('.parts-grid .part-card')).toHaveCount(2);
   await expect(page.locator('.parts-grid .part-card').nth(1)).toContainText('No. 21');
+  // a part opens in a new tab (owner 2026-11-04): the series stays where it was
+  const [tab] = await Promise.all([page.context().waitForEvent('page'), page.locator('.parts-grid .part-card').nth(1).click()]);
+  await tab.waitForLoadState();
+  expect(new URL(tab.url()).pathname).toMatch(/\/artworks\/(\d+\/)?the-great-wave-off-kanagawa$/);
+  await expect(page.locator('h1')).toHaveText('Thirty-six Views of Mount Fuji');
+  await tab.close();
 });
 
 test('versions of one composition (API 132): "Version 2 of 3 in …", the whole lists its versions', async ({ page }) => {

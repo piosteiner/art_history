@@ -375,7 +375,8 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
       const partOf = e.part_of ? html`${e.part_number ? `${e.kind === 'chapter' ? 'Chapter' : 'No.'} ${e.part_number}${e.part_of.parts_count ? ` of ${e.part_of.parts_count}` : ''} in ` : ''}${link('literature', e.part_of.slug, e.part_of.name)}` : null;
       // the contents: each chapter with its original name, a short summary and the works of art showing it; works of
       // the whole work (no chapter named) in the grid below
-      const card = (w: Literature['illustrations'][number]) => html`<li><a class="part-card" href="${href('artwork', w.slug)}">
+      // a work opens in a new tab, as a whole's parts do (series.ts): the book stays where it was
+      const card = (w: Literature['illustrations'][number]) => html`<li><a class="part-card" href="${href('artwork', w.slug)}" target="_blank" rel="noopener" title="Opens in a new tab">
           ${previewImg(w.image_url, w.slug, 250) ?? html`<span class="part-img-empty" aria-hidden="true"></span>`}
           <span class="part-title">${w.title}</span>
           <span class="muted small">${[w.creator, w.created?.label].filter(Boolean).join(' · ')}</span></a></li>`;
