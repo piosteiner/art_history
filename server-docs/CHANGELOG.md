@@ -4,6 +4,60 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### Content: the art dealership Walter Feilchenfeldt (Kunsthandel), Zürich
+- **What:** the Kunsthaus names the holder of Braque's *La Cheminée* (115496) 1954–1956 as "Walter Feilchenfeldt
+  (Kunsthandel), Zürich" — the firm, without dates of life; our step named the person, who had died on 9 December 1953
+  (owner 2026-11-04). New institution `walter-feilchenfeldt-kunsthandel` (gallery, Zürich, 1948–2011, Wikidata
+  Q78158827, Freiestrasse 116, history with footnotes to the firm's own page walterfeilchenfeldt.ch/en/art-dealing —
+  source `walterfeilchenfeldt-art-dealing`, institution level), the step's holder changed to it (note on the step).
+  People: Walter Feilchenfeldt (1894–1953) `founded` + `worked_in` director 1948–1953; Marianne Feilchenfeldt (Q90927)
+  given her dates (20 Nov 1909 Berlin – 7 Feb 2001 Zürich, Wikidata cited), birth name Breslauer (former/birth),
+  photographer + art dealer, `married_to`, co-founder, director 1953–1990 (from 1966 with her son) — source
+  `wikipedia-de-marianne-feilchenfeldt` (database); new person `walter-feilchenfeldt-jun` (Q107177051, *21 Jan 1939
+  Amsterdam, `child_of` both, director 1966–2011). The auto-created duplicate "Walter Feilchenfeldt senior" (two
+  Ruzicka steps of 21 Nov 1949) merged into him with `merge_entries()`. The other 20 Kunsthaus/Bührle steps name the
+  person with dates ("Walter Feilchenfeldt senior (*1894 Berlin, +1953 Zürich)") and stay. Script
+  `scratchpad/feilchenfeldt.js` (audited as user 1 / source admin).
+- **Why:** owner: the firm, not the person; a dealership outlives its founder.
+- **Revert:** CMS history (audit_log of 2026-11-04, user 1): restore the step's holder, delete the institution, the
+  person and the relationships; the merge is not reversible (recreate the duplicate from the audit log if ever needed).
+
+### Site: lists open in their own order; API: a polity's world region
+- **What:** owner 2026-11-04 — places by country, movements by start year with the newest on top (option "Start year,
+  newest first", `desc` on the sort value), literary works by author ("Written" renamed "Date"), events by date as
+  before but working now: `entries()` in frontend/src/catalog.ts replaced the *first* sort option by the API's
+  `sort_key` — for events that was the date (and for artworks the series sort was the within-section fallback); now it
+  replaces the name/title/siglum sort only (`nameSortId()`), `defaultSort` per type in `CATALOG`, `savedSort()` falls
+  back to it. Polities sort by "World region": `/v1/polities` list rows carry `region` (the `country_regions` region of
+  the first country code — `src/routes/entities.js`; `REGION_LABEL` on the site). Site test "lists open in their own
+  order". The stored list rows of the polities queued once after the deploy (`INSERT INTO list_queue … polities`).
+- **Why:** the owner's reading order per list; the events' date sort was silently broken.
+- **Revert:** `git revert`; the list rows need no migration.
+
+### Site + API: a whole's parts on its map — the 46 views of Mount Fuji located
+- **What:** every print of Hokusai's *Thirty-six Views of Mount Fuji* (series 1246, 46 parts) now `depicts` the place
+  of its viewpoint — a relationship with a label (where exactly) and a certainty: 33 attested, 7 probable, 5 possible
+  (province or river only), 1 disputed (The Great Wave: off Kanagawa by its title, Yokohama today). Sources cited per
+  print: higonote.net's ukiyo-e maps (`higonote-fugaku36`, per-print map pages), the Ukiyo-e yawa list of present-day
+  locations (`ukiyoe-yawa-fugaku36`), Nathan C. Shephard's ArcGIS map "Hokusai's Views of Mt. Fuji" (Esri 2017,
+  `arcgis-hokusai-views-of-mt-fuji`, 36 graded points — kept as a cited note, several of its placements are wrong,
+  e.g. the Sazai Hall at Kawagoe); all three at the new lowest source level "other". 43 places created from Wikidata
+  (`scripts/from-wikidata.js`: bridges, temples, passes, lakes, post stations; Ōjima/Honjo by hand from OSM), kinds and
+  parents corrected (Kai/Tōtōmi/Suruga/Kazusa provinces = region, the Tōkaidō = region). The series text gains "Where
+  the views are" (publication order in five signature groups after Hinohara 2019 via ja.wikipedia,
+  `wikipedia-ja-fugaku-sanjurokkei`) and "Further reading" (the Cincinnati Public Library's first-edition set — a
+  36-page scan, `cincinnati-library-36-views-of-mount-fuji`, linked only: no rights statement —, the ESRI Japan story
+  map of 2025, the three maps above). Script `scratchpad/fuji/link-views.js` (46 relationships, 126 citations).
+  API: `GET /v1/map/artworks/:slug` of a whole carries `parts` — each part's first `depicts` → place as a Point
+  (`number`, `title`, `image_url`, `place`, `precision`, `certainty`, `note`) and `unplaced` (`partsOf()` in
+  `src/routes/map.js`; backend/docs/api.md → Map). Site: `showParts()` in frontend/src/map.ts draws numbered markers
+  like provenance stops (several parts at one place in one marker "2, 3, 46"; hollow when every part there is
+  possible/disputed; area ring for region precision; popup with thumbnails and links), the detail page keeps the map
+  for a whole whose parts are placed, legend lines + "Parts without a place on the map". Tests: backend
+  series.spec.js, site "a series' map shows its parts where they are".
+- **Why:** owner 2026-11-04: all prints on the map; the ArcGIS/Medium efforts were the only ones in English.
+- **Revert:** `git revert` the code; the data via the CMS history of 2026-11-04 (user 1 / source admin).
+
 ### Site: a whole's parts open in a new tab
 - **What:** on the page of a series, cycle, versions or other whole, its parts (`partsGrid` in frontend/src/series.ts),
   and on a literary work's page the works illustrating it, open in a new tab (`target="_blank"`, the router leaves such

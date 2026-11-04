@@ -329,7 +329,8 @@ const ENTITIES = {
   },
   polities: {
     type: 'polity', table: 'polities', alt: 'alt_names', name: 'name', period: 't.period',
-    list: 't.kind, range_json(t.period, t.period_label) AS period, t.country_codes',
+    // region: the world region (191) of its first country, for the site's sort (owner 2026-11-04)
+    list: 't.kind, range_json(t.period, t.period_label) AS period, t.country_codes, (SELECT cr.region::text FROM country_regions cr WHERE cr.country_code = t.country_codes[1]) AS region',
     detail: 't.kind, range_json(t.period, t.period_label) AS period, t.country_codes, t.description_md',
     md: ['description_md'],
     filters: { kind: 't.kind = $', country: 't.country_codes @> ARRAY[upper($)]' },  // GIN index polities_country_gin

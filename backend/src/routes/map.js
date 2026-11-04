@@ -160,9 +160,36 @@ router.get('/:plural/:slug', async (req, res) => {
   if (result.route && result.route.coordinates.length > 1) {
     features.push({ type: 'Feature', geometry: result.route, properties: { layer: 'route' } });
   }
-  const extra = e.type === 'artwork' ? { provenance: await cachedProvenanceRoute(id, await dataVersion()) } : {};
+  const extra = e.type === 'artwork' ? { provenance: await cachedProvenanceRoute(id, await dataVersion()), ...await partsOf(id) } : {};
   res.json({ type: 'FeatureCollection', entity: { type: e.type, ...entity }, features, ...extra });
 });
+
+// A whole's parts where they are (owner 2026-11-04: the 46 views of Mount Fuji on the series' map): each part's first
+// `depicts` → place (the viewpoint — label = the note, certainty as recorded, precision = the place's kind), a point per
+// part with a place; the parts without one listed beside, in the series' order. Nothing for a work without parts.
+async function partsOf(artworkId) {
+  const { rows } = await apiPool.query(`
+    SELECT p.part_number AS number, p.slug, p.public_id, p.title, img.url AS image_url,
+           pl.slug AS place_slug, pl.name AS place_name, pl.kind::text AS precision, d.certainty::text AS certainty, d.label AS note,
+           ST_AsGeoJSON(g.marker)::jsonb AS geometry
+    FROM artworks p
+    LEFT JOIN LATERAL (SELECT r.object_id, r.label, r.certainty FROM relationships r
+                       WHERE r.subject_type = 'artwork' AND r.subject_id = p.id AND r.relationship_type = 'depicts' AND r.object_type = 'place'
+                       ORDER BY r.id LIMIT 1) d ON true
+    LEFT JOIN places pl ON pl.id = d.object_id
+    LEFT JOIN site_geo g ON (g.type, g.id) = ('place', pl.id)
+    LEFT JOIN LATERAL (SELECT i.url FROM images i WHERE i.artwork_id = p.id ORDER BY i.position, i.id LIMIT 1) img ON true
+    WHERE p.parent_id = $1
+    ORDER BY p.part_sort NULLS LAST, p.part_number, p.id`, [artworkId]);
+  if (!rows.length) return {};
+  const part = (r) => ({ number: r.number, slug: r.slug, public_id: r.public_id, title: r.title, image_url: r.image_url });
+  return { parts: {
+    type: 'FeatureCollection',
+    features: rows.filter((r) => r.geometry).map((r) => ({ type: 'Feature', geometry: r.geometry, properties: { layer: 'part', ...part(r),
+      place: { slug: r.place_slug, name: r.place_name }, precision: r.precision, certainty: r.certainty, note: r.note } })),
+    unplaced: rows.filter((r) => !r.geometry).map(part),
+  } };
+}
 
 // An artwork's provenance on the map, in the order of the chain (view provenance_chain: the creation, the recorded
 // steps by position, the loan) — not by date: the sources' order is what every provenance has, dates often not.

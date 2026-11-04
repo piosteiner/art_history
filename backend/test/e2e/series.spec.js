@@ -68,5 +68,18 @@ test('a series with numbered parts: new and existing parts, order, neighbours, m
   await settled();   // the entry page reads graph_links, a moment behind (126)
   await userA.goto('/artworks/thirty-six-views-test');
   await expect(userA.locator('tr', { hasText: 'Theo van Gogh' })).toContainText('published by');
+
+  // the whole's map carries its parts at the places they depict (2026-11-04): No. 21 at The Hague (the wave left the series above)
+  sql(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, label, certainty)
+       VALUES ('artwork', entity_id('artwork', 'print-twenty-one'), 'depicts', 'place', entity_id('place', 'the-hague'), 'the beach at Scheveningen', 'probable')`);
+  const map = await api(request, '/map/artworks/thirty-six-views-test');
+  const placed = map.parts.features.map((f) => f.properties);
+  expect(placed.find((p) => p.slug === 'print-twenty-one')).toMatchObject({ layer: 'part', number: '21', title: 'Print Twenty-one',
+    place: { slug: 'the-hague', name: 'The Hague' }, certainty: 'probable', note: 'the beach at Scheveningen' });
+  expect(placed.map((p) => p.slug)).toEqual(['print-twenty-one']);
+  expect(map.parts.unplaced).toEqual([]);
+  sql("DELETE FROM relationships WHERE subject_id = entity_id('artwork', 'print-twenty-one') AND relationship_type = 'depicts'");
+  expect((await api(request, '/map/artworks/thirty-six-views-test')).parts.unplaced).toMatchObject([{ number: '21', slug: 'print-twenty-one' }]);
+  expect((await api(request, '/map/artworks/print-twenty-one')).parts).toBeUndefined();   // a part, not a whole
   sql("DELETE FROM artworks WHERE slug IN ('print-twenty-one', 'thirty-six-views-test')");
 });
