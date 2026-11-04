@@ -54,7 +54,7 @@ export function addToSetButton(slot: HTMLElement | null, type: EntityType, slug:
       const input = (e.target as HTMLFormElement).elements.namedItem('name') as HTMLInputElement;
       const name = input.value.trim();
       if (!name) return;
-      createSet(name).then((set) => (set ? addToSet(set.id, type, slug) : null))
+      createSet(name).then((set) => (set?.id ? addToSet(set.id, type, slug) : null))
         .then(() => { input.value = ''; msg.textContent = `Added to “${name}”.`; return fill(); })
         .catch((err: Error) => { msg.textContent = err.message; });
     });

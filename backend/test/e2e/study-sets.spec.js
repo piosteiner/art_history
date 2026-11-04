@@ -15,7 +15,7 @@ const post = async (user, path, form, status = 200) => {
   expect(res.status()).toBe(status);
   return status === 204 ? null : res.json();
 };
-const cleanup = () => sql(`DELETE FROM study_sets WHERE name LIKE 'Test set%'; DELETE FROM study_progress WHERE entity_type = 'artwork' AND entity_id IN (SELECT id FROM artworks WHERE slug LIKE 'test-study-%');
+const cleanup = () => sql(`DELETE FROM study_sets WHERE name LIKE 'Test set%'; UPDATE admin_users SET public_name = NULL WHERE public_name LIKE 'Test %'; DELETE FROM study_progress WHERE entity_type = 'artwork' AND entity_id IN (SELECT id FROM artworks WHERE slug LIKE 'test-study-%');
   DELETE FROM artworks WHERE slug LIKE 'test-study-%'; DELETE FROM artists WHERE slug LIKE 'test-study-%'; DELETE FROM glossary WHERE slug LIKE 'test-study-%'`);
 test.beforeAll(() => {
   cleanup();
@@ -69,6 +69,58 @@ test('a set: created, filled with entries of three types, renamed; the cards sho
   expect((await post(userA, `/${set.id}/items/remove`, { type: 'term', slug: 'test-study-term' })).count).toBe(2);
   await post(userA, `/${set.id}/delete`, {}, 204);
   await get(userA, `/${set.id}`, 404);
+});
+
+test('a set shared by link and in public: topic, creator, dates; seen without a login, copied, studied — results stay the learner\'s', async ({ userA, userB, request }) => {
+  const { set } = await post(userA, '', { name: 'Test set Shared', topic: 'Test topic Baroque' }, 201);
+  expect(set).toEqual(expect.objectContaining({ topic: 'Test topic Baroque', visibility: 'private', code: null }));
+  await post(userA, `/${set.id}/items`, { type: 'artwork', slug: 'test-study-work' });
+  await post(userA, `/${set.id}/items`, { type: 'term', slug: 'test-study-term' });
+
+  // sharing shows a public name — never the login name, and not without one
+  await post(userA, `/${set.id}/share`, { visibility: 'link', public_name: '' }, 422);
+  const shared = (await post(userA, `/${set.id}/share`, { visibility: 'link', public_name: 'Test Teacher' })).set;
+  expect(shared.visibility).toBe('link');
+  expect(shared.code).toMatch(/^[A-Za-z0-9_-]{12}$/);
+
+  // anyone with the link — no login: name, topic, creator, dates, entries, cards (without anyone's progress)
+  const look = await (await request.get(`/site/shared/${shared.code}`, { headers: H })).json();
+  expect(look.set).toEqual(expect.objectContaining({ name: 'Test set Shared', topic: 'Test topic Baroque', creator: 'Test Teacher', count: 2, mine: false }));
+  expect(look.set.id).toBeUndefined();
+  expect(look.set.created_at).toBeTruthy();
+  expect(look.items.map((i) => i.slug)).toEqual(['test-study-work', 'test-study-term']);
+  const { cards } = await (await request.get(`/site/shared/${shared.code}/cards`, { headers: H })).json();
+  expect(cards.map((c) => c.name)).toEqual(['The Test of Memory', 'Testsfumato']);
+  expect((await request.post(`/site/shared/${shared.code}/copy`, { headers: H })).status()).toBe(401);
+  // by link only: not in the public list; in public: listed with its topic
+  const listed = async () => (await (await request.get('/site/shared?topic=Test%20topic%20Baroque', { headers: H })).json()).sets;
+  expect(await listed()).toEqual([]);
+  await post(userA, `/${set.id}/share`, { visibility: 'public' });
+  expect((await listed()).map((s) => s.name)).toEqual(['Test set Shared']);
+
+  // another account studies it: its rounds and results are its own; it saves a copy
+  await post(userB, `/../shared/${shared.code}/sessions`, { mode: 'choice', answered: '2', known: '1', seconds: '30' }, 201);
+  await post(userB, `/../shared/${shared.code}/sessions`, { mode: 'choice', answered: '2', known: '2', seconds: '20' }, 201);
+  const theirs = await (await userB.request.get(`/site/shared/${shared.code}/stats`, { headers: H })).json();
+  expect(theirs.modes.choice).toEqual(expect.objectContaining({ rounds: 2, answered: 4, known: 3, best: 100, recent: [100, 50], seconds: 50 }));
+  expect(theirs.boxes.forward).toEqual([2, 0, 0, 0, 0, 0]);
+  expect((await get(userA, `/${set.id}/stats`)).modes).toEqual({});
+  const copy = (await post(userB, `/../shared/${shared.code}/copy`, {}, 201)).set;
+  const mine = await get(userB, `/${copy.id}`);
+  expect(mine.set).toEqual(expect.objectContaining({ name: 'Test set Shared', topic: 'Test topic Baroque', visibility: 'private', count: 2 }));
+  expect(mine.set.copied_from).toEqual({ name: 'Test set Shared', code: shared.code, creator: 'Test Teacher' });
+
+  // the owner's own rounds; sharing is not a change of the set, a new link ends the old one, private ends both
+  await post(userA, `/${set.id}/sessions`, { mode: 'typed', answered: '2', known: '0' }, 201);
+  await post(userA, `/${set.id}/sessions`, { mode: 'nonsense', answered: '2', known: '0' }, 422);
+  expect((await get(userA, `/${set.id}/stats`)).modes.typed.rounds).toBe(1);
+  const renewed = (await post(userA, `/${set.id}/share`, { new_link: '1' })).set;
+  expect(renewed.code).not.toBe(shared.code);
+  expect(renewed.updated_at).toBe(shared.updated_at);
+  expect((await request.get(`/site/shared/${shared.code}`, { headers: H })).status()).toBe(404);
+  await post(userA, `/${set.id}/share`, { visibility: 'private' });
+  expect((await request.get(`/site/shared/${renewed.code}`, { headers: H })).status()).toBe(404);
+  expect(await listed()).toEqual([]);
 });
 
 test('sets: not without a login, not from another site', async ({ userA, request }) => {

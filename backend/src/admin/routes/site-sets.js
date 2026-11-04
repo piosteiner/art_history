@@ -2,38 +2,86 @@
 // cards to learn them. Mounted under /site/sets by routes/site-account.js — the site's origin only (CORS with
 // credentials), writes only from the site's pages, the session's account in every query: a set is only ever its
 // owner's. Writes are form posts (application/x-www-form-urlencoded: a "simple" request, no CORS preflight).
-//   GET  /site/sets                       {sets: [{id, name, description, count, updated_at}]}
-//   POST /site/sets                       name, description → {set}
+//   GET  /site/sets                       {sets: [{id, name, topic, description, visibility, code, count, created_at, updated_at}],
+//                                         public_name, topics} — topics: the account's and the public sets', to offer again
+//   POST /site/sets                       name, topic, description → {set}
 //   GET  /site/sets/of?type=&slug=        {sets: [{id, name, has}]} — every set, and whether it holds this entry
 //   GET  /site/sets/:id                   {set, items: [{type, slug, name, subtitle, image, own, added_at}]}
-//   POST /site/sets/:id                   name, description → {set}
+//   POST /site/sets/:id                   name, topic, description → {set}
+//   POST /site/sets/:id/share             visibility (private|link|public), public_name, new_link=1 → {set, public_name} (219)
+//   POST /site/sets/:id/sessions          mode, answered, known, seconds, complete → 201 — one round of a quiz (219)
+//   POST /site/sets/preview               text → {html} — a description as it will look (Markdown, src/markdown.js)
+//   GET  /site/sets/:id/stats             the account's results on this set per kind of quiz, its boxes, hardest cards
 //   POST /site/sets/:id/delete            → 204
 //   POST /site/sets/:id/items             type, slug → {count}   (adding twice changes nothing)
 //   POST /site/sets/:id/items/remove      type, slug → {count}
 //   GET  /site/sets/:id/cards             {set, cards: [card + progress {forward, reverse}]} (src/study.js)
 //   POST /site/sets/progress              type, slug, direction (forward|reverse), known (1|0) → {box}
+// Shared sets (219) — the router `shared` below, mounted at /site/shared before any login is asked:
+//   GET  /site/shared?topic=&q=           {sets: [public sets with creator], topics: [{topic, count}]}
+//   GET  /site/shared/:code               {set (+ creator, mine), items} — a set shared by link or public; anyone
+//   GET  /site/shared/:code/cards         its index cards (logged in: with the account's own progress)
+//   POST /site/shared/:code/copy          logged in: a copy among the account's sets → {set}
+//   POST /site/shared/:code/sessions      logged in: one round of a quiz on it (the account's results, never the owner's)
+//   GET  /site/shared/:code/stats         logged in: the account's results on it
+const crypto = require('node:crypto');
 const express = require('express');
 const { adminPool } = require('../../db');
 const { adminOrigin } = require('../auth');
 const { cards } = require('../../study');
+const { renderMarkdown, linkNames, previewText } = require('../../markdown');
 
 const router = express.Router();
+const shared = express.Router();
 const ID = /^[1-9][0-9]{0,17}$/;
+const CODE = /^[A-Za-z0-9_-]{12}$/;
 const TYPES = ['artwork', 'artist', 'person', 'institution', 'event', 'movement', 'place', 'polity', 'literature', 'term', 'source'];
+const MODES = ['forward', 'reverse', 'both', 'typed', 'choice'];
+const VISIBILITY = ['private', 'link', 'public'];
 const MAX_SETS = 300;
 const MAX_ITEMS = 3000;
+const MAX_DESCRIPTION = 10000;
 
-router.use((req, res, next) => {
-  if (!req.user) return res.status(401).json({ error: 'not_logged_in' });
-  res.set('Cache-Control', 'no-store');
-  next();
-});
 const fail = (res, status, error) => res.status(status).json({ error });
 const text = (v, max) => String(v ?? '').replace(/\r\n/g, '\n').trim().slice(0, max);
+const newCode = () => crypto.randomBytes(9).toString('base64url');   // 12 characters, 72 bits: not guessed
+// what a set shows of itself (to its owner: everything; others never see owner_id or copied_from's id)
+const SET_COLS = `s.id, s.name, s.topic, s.description, s.visibility, s.share_code AS code, s.created_at, s.updated_at,
+  (SELECT count(*)::int FROM study_set_items i WHERE i.set_id = s.id) AS count`;
+const CREATOR = `(SELECT u.public_name FROM admin_users u WHERE u.id = s.owner_id) AS creator`;
+
+/** Descriptions are Markdown (entries' [[links]], ==highlight==, callouts …): a set gets `description_html` (its page)
+ *  and `description_text` (a line of plain text for the lists) beside the source. */
+async function described(sets) {
+  const env = { names: await linkNames(adminPool, sets.map((s) => s && s.description)), used: new Set(), cited: new Set() };
+  // the list's line: the first paragraph, else (a heading first, a list …) the whole text as plain words
+  const plain = (html) => {
+    const t = String(html || '').replace(/<[^>]+>/g, ' ').replace(/&(amp|lt|gt|quot|#39);/g, (m) => ({ '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'" })[m])
+      .replace(/\s+/g, ' ').trim();
+    return t.length > 200 ? `${t.slice(0, 200).replace(/\s+\S*$/, '')} …` : t || null;
+  };
+  return sets.map((s) => {
+    if (!s || !s.description) return s && { ...s, description_html: null, description_text: null };
+    const html = renderMarkdown(s.description, env);
+    return { ...s, description_html: html, description_text: previewText(s.description, env, 200) || plain(html) };
+  });
+}
+const describe = async (set) => (await described([set]))[0];
+
 /** The account's set `id`, or null. */
 async function ownSet(req) {
   if (!ID.test(req.params.id)) return null;
-  const { rows } = await adminPool.query('SELECT id, name, description, created_at, updated_at FROM study_sets WHERE id = $1 AND owner_id = $2', [req.params.id, req.user.id]);
+  const { rows } = await adminPool.query(`SELECT ${SET_COLS}, ${CREATOR},
+      (SELECT jsonb_build_object('name', o.name, 'code', o.share_code, 'creator', (SELECT u.public_name FROM admin_users u WHERE u.id = o.owner_id))
+         FROM study_sets o WHERE o.id = s.copied_from AND o.visibility <> 'private') AS copied_from
+    FROM study_sets s WHERE s.id = $1 AND s.owner_id = $2`, [req.params.id, req.user.id]);
+  return rows[0] || null;
+}
+/** A set shared by link or in public, by its code — or null. `mine`: the viewer is its owner. */
+async function sharedSet(req) {
+  if (!CODE.test(req.params.code)) return null;
+  const { rows } = await adminPool.query(`SELECT ${SET_COLS}, ${CREATOR}, s.owner_id IS NOT DISTINCT FROM $2 AS mine
+    FROM study_sets s WHERE s.share_code = $1 AND s.visibility <> 'private'`, [req.params.code, req.user ? req.user.id : null]);
   return rows[0] || null;
 }
 /** type + slug → the entry's id (entity_index), or null */
@@ -44,11 +92,149 @@ async function entryId(type, slug) {
 }
 const countOf = async (setId) => (await adminPool.query('SELECT count(*)::int AS n FROM study_set_items WHERE set_id = $1', [setId])).rows[0].n;
 
+/** A set's entries as the lists show them (entry_previews: name, the line under it, a picture; an artwork without a
+ *  public picture: the viewer's own reference image — never its owner's for anyone else); those deleted since left out. */
+async function itemsOf(req, setId) {
+  const viewer = req.user ? req.user.id : null;
+  const { rows } = await adminPool.query(`SELECT i.entity_type::text AS type, e.slug, coalesce(p.name, e.name) AS name, p.subtitle, p.image_url AS image,
+      CASE WHEN i.entity_type = 'artwork' AND p.image_url IS NULL THEN (SELECT x.id FROM private_images x WHERE x.artwork_id = i.entity_id AND x.owner_id = $2
+        ORDER BY x.position, x.id LIMIT 1) END AS own_image, i.added_at
+    FROM study_set_items i JOIN entity_index e ON (e.type, e.id) = (i.entity_type, i.entity_id)
+    LEFT JOIN entry_previews p ON (p.type, p.slug) = (e.type, e.slug)
+    WHERE i.set_id = $1 ORDER BY i.added_at, e.slug`, [setId, viewer]);
+  const origin = adminOrigin(req);
+  return rows.map(({ own_image: own, ...r }) => (own ? { ...r, image: `${origin}/private-images/${own}?w=250`, own: true } : { ...r, own: false }));
+}
+
+/** The set's index cards, with the viewer's progress (none for visitors). */
+async function cardsOf(req, setId) {
+  const viewer = req.user ? req.user.id : null;
+  const { rows: entries } = await adminPool.query(`SELECT i.entity_type::text AS type, i.entity_id AS id,
+      (SELECT jsonb_object_agg(p.direction, jsonb_build_object('box', p.box, 'seen', p.seen, 'known', p.known))
+         FROM study_progress p WHERE p.owner_id = $2 AND (p.entity_type, p.entity_id) = (i.entity_type, i.entity_id)) AS progress
+    FROM study_set_items i WHERE i.set_id = $1 ORDER BY i.added_at`, [setId, viewer]);
+  const progress = new Map(entries.map((e) => [`${e.type}:${e.id}`, e.progress || {}]));
+  const list = await cards(adminPool, entries, viewer, adminOrigin(req));
+  return list.map(({ key, ...c }) => ({ ...c, progress: progress.get(key) || {} }));
+}
+
+/** One round of a quiz on a set by the account (its own set or a shared one). */
+async function recordSession(req, res, setId) {
+  const mode = MODES.includes(req.body.mode) ? req.body.mode : null;
+  const answered = Number.parseInt(req.body.answered, 10);
+  const known = Number.parseInt(req.body.known, 10);
+  const seconds = Number.parseInt(req.body.seconds, 10);
+  if (!mode || !(answered > 0 && answered <= 20000) || !(known >= 0 && known <= answered)) return fail(res, 422, 'which round?');
+  await adminPool.query(`INSERT INTO study_sessions (owner_id, set_id, mode, answered, known, seconds, complete) VALUES ($1, $2, $3, $4, $5, $6, $7)`,
+    [req.user.id, setId, mode, answered, known, seconds >= 0 && seconds < 86400 ? seconds : null, req.body.complete !== '0']);
+  res.status(201).json({ ok: true });
+}
+
+/** The account's results on a set: per kind of quiz (rounds, share known — the last ten, the best whole round), the
+ *  cards' Leitner boxes per direction, and the entries most often not known. */
+async function statsOf(req, setId) {
+  const [modes, boxes, hardest] = await Promise.all([
+    adminPool.query(`SELECT mode, count(*)::int AS rounds, sum(answered)::int AS answered, sum(known)::int AS known,
+        (array_agg(round(100.0 * known / answered)::int ORDER BY finished_at DESC))[1:10] AS recent,
+        max(round(100.0 * known / answered)::int) FILTER (WHERE complete) AS best,
+        max(finished_at) AS last_at, coalesce(sum(seconds), 0)::int AS seconds
+      FROM study_sessions WHERE owner_id = $1 AND set_id = $2 GROUP BY mode`, [req.user.id, setId]),
+    adminPool.query(`SELECT d.direction, coalesce(p.box, 0)::int AS box, count(*)::int AS n
+      FROM study_set_items i CROSS JOIN (VALUES ('forward'), ('reverse')) d (direction)
+      LEFT JOIN study_progress p ON p.owner_id = $1 AND (p.entity_type, p.entity_id, p.direction) = (i.entity_type, i.entity_id, d.direction)
+      WHERE i.set_id = $2 GROUP BY 1, 2 ORDER BY 1, 2`, [req.user.id, setId]),
+    adminPool.query(`SELECT e.type::text AS type, e.slug, e.name, sum(p.seen)::int AS seen, sum(p.known)::int AS known
+      FROM study_set_items i JOIN study_progress p ON p.owner_id = $1 AND (p.entity_type, p.entity_id) = (i.entity_type, i.entity_id)
+      JOIN entity_index e ON (e.type, e.id) = (i.entity_type, i.entity_id)
+      WHERE i.set_id = $2 GROUP BY e.type, e.slug, e.name HAVING sum(p.seen) > sum(p.known)
+      ORDER BY (sum(p.seen) - sum(p.known))::float / sum(p.seen) DESC, sum(p.seen) DESC LIMIT 5`, [req.user.id, setId]),
+  ]);
+  const box = { forward: [0, 0, 0, 0, 0, 0], reverse: [0, 0, 0, 0, 0, 0] };   // [new, box 1 … box 5]
+  for (const r of boxes.rows) box[r.direction][r.box] = r.n;
+  return { modes: Object.fromEntries(modes.rows.map(({ mode, ...m }) => [mode, m])), boxes: box, hardest: hardest.rows };
+}
+
+// ---- shared sets: anyone with the link, logged in or not ----------------------------------------------------------
+shared.use((req, res, next) => { res.set('Cache-Control', 'no-store'); next(); });
+const needLogin = (req, res, next) => (req.user ? next() : fail(res, 401, 'not_logged_in'));
+
+shared.get('/', async (req, res) => {
+  const topic = text(req.query.topic, 80);
+  const q = text(req.query.q, 100);
+  const [{ rows: sets }, { rows: topics }] = await Promise.all([
+    adminPool.query(`SELECT ${SET_COLS}, ${CREATOR} FROM study_sets s WHERE s.visibility = 'public'
+        AND ($1 = '' OR s.topic = $1)
+        AND ($2 = '' OR f_unaccent(concat_ws(' ', s.name, s.topic, s.description)) ILIKE '%' || f_unaccent($2) || '%')
+      ORDER BY s.updated_at DESC, s.id DESC LIMIT 200`, [topic, q]),
+    adminPool.query(`SELECT topic, count(*)::int AS count FROM study_sets WHERE visibility = 'public' AND topic IS NOT NULL
+      GROUP BY topic ORDER BY count(*) DESC, topic LIMIT 60`),
+  ]);
+  res.json({ sets: (await described(sets)).map(({ id, ...s }) => s), topics });
+});
+
+shared.get('/:code', async (req, res) => {
+  const set = await sharedSet(req);
+  if (!set) return fail(res, 404, 'not_found');
+  const { id, ...rest } = await describe(set);
+  res.json({ set: set.mine ? { id, ...rest } : rest, items: await itemsOf(req, set.id) });
+});
+
+shared.get('/:code/cards', async (req, res) => {
+  const set = await sharedSet(req);
+  if (!set) return fail(res, 404, 'not_found');
+  const { id, ...rest } = set;
+  res.json({ set: set.mine ? set : rest, cards: await cardsOf(req, set.id) });
+});
+
+shared.post('/:code/copy', needLogin, async (req, res) => {
+  const set = await sharedSet(req);
+  if (!set) return fail(res, 404, 'not_found');
+  const { rows: [{ n }] } = await adminPool.query('SELECT count(*)::int AS n FROM study_sets WHERE owner_id = $1', [req.user.id]);
+  if (n >= MAX_SETS) return fail(res, 422, `at most ${MAX_SETS} sets`);
+  const client = await adminPool.connect();
+  try {
+    await client.query('BEGIN');
+    const { rows: [copy] } = await client.query(`INSERT INTO study_sets (owner_id, name, topic, description, copied_from)
+      SELECT $1, name, topic, description, id FROM study_sets WHERE id = $2 RETURNING id`, [req.user.id, set.id]);
+    await client.query(`INSERT INTO study_set_items (set_id, entity_type, entity_id)
+      SELECT $1, entity_type, entity_id FROM study_set_items WHERE set_id = $2 ORDER BY added_at`, [copy.id, set.id]);
+    await client.query('COMMIT');
+    res.status(201).json({ set: { id: copy.id, name: set.name } });
+  } catch (err) {
+    await client.query('ROLLBACK');
+    throw err;
+  } finally {
+    client.release();
+  }
+});
+
+shared.post('/:code/sessions', needLogin, async (req, res) => {
+  const set = await sharedSet(req);
+  if (!set) return fail(res, 404, 'not_found');
+  return recordSession(req, res, set.id);
+});
+
+shared.get('/:code/stats', needLogin, async (req, res) => {
+  const set = await sharedSet(req);
+  if (!set) return fail(res, 404, 'not_found');
+  res.json(await statsOf(req, set.id));
+});
+
+// ---- the account's own sets ---------------------------------------------------------------------------------------
+router.use((req, res, next) => {
+  if (!req.user) return res.status(401).json({ error: 'not_logged_in' });
+  res.set('Cache-Control', 'no-store');
+  next();
+});
+
 router.get('/', async (req, res) => {
-  const { rows } = await adminPool.query(`SELECT s.id, s.name, s.description, s.updated_at, count(i.*)::int AS count
-    FROM study_sets s LEFT JOIN study_set_items i ON i.set_id = s.id WHERE s.owner_id = $1
-    GROUP BY s.id ORDER BY s.updated_at DESC, s.id DESC`, [req.user.id]);
-  res.json({ sets: rows });
+  const [{ rows: sets }, { rows: [me] }, { rows: topics }] = await Promise.all([
+    adminPool.query(`SELECT ${SET_COLS} FROM study_sets s WHERE s.owner_id = $1 ORDER BY s.updated_at DESC, s.id DESC`, [req.user.id]),
+    adminPool.query('SELECT public_name FROM admin_users WHERE id = $1', [req.user.id]),
+    adminPool.query(`SELECT topic FROM study_sets WHERE topic IS NOT NULL AND (owner_id = $1 OR visibility = 'public')
+      GROUP BY topic ORDER BY bool_or(owner_id = $1) DESC, count(*) DESC, topic LIMIT 100`, [req.user.id]),
+  ]);
+  res.json({ sets: await described(sets), public_name: me ? me.public_name : null, topics: topics.map((t) => t.topic) });
 });
 
 router.post('/', async (req, res) => {
@@ -56,9 +242,10 @@ router.post('/', async (req, res) => {
   if (!name) return fail(res, 422, 'a set needs a name');
   const { rows: [{ n }] } = await adminPool.query('SELECT count(*)::int AS n FROM study_sets WHERE owner_id = $1', [req.user.id]);
   if (n >= MAX_SETS) return fail(res, 422, `at most ${MAX_SETS} sets`);
-  const { rows: [set] } = await adminPool.query(`INSERT INTO study_sets (owner_id, name, description) VALUES ($1, $2, $3)
-    RETURNING id, name, description, created_at, updated_at`, [req.user.id, name, text(req.body.description, 2000) || null]);
-  res.status(201).json({ set: { ...set, count: 0 } });
+  const { rows: [{ id }] } = await adminPool.query(`INSERT INTO study_sets (owner_id, name, topic, description) VALUES ($1, $2, $3, $4) RETURNING id`,
+    [req.user.id, name, text(req.body.topic, 80) || null, text(req.body.description, MAX_DESCRIPTION) || null]);
+  req.params.id = String(id);
+  res.status(201).json({ set: await ownSet(req) });
 });
 
 // the answer to one card (Leitner): known → one box up (at most 5), not known → back to box 1
@@ -87,16 +274,7 @@ router.get('/of', async (req, res) => {
 router.get('/:id', async (req, res) => {
   const set = await ownSet(req);
   if (!set) return fail(res, 404, 'not_found');
-  // its entries as the lists show them (entry_previews: name, the line under it, a picture; an artwork without a public
-  // picture: this account's reference image) — those deleted since are left out
-  const { rows } = await adminPool.query(`SELECT i.entity_type::text AS type, e.slug, coalesce(p.name, e.name) AS name, p.subtitle, p.image_url AS image,
-      CASE WHEN i.entity_type = 'artwork' AND p.image_url IS NULL THEN (SELECT x.id FROM private_images x WHERE x.artwork_id = i.entity_id AND x.owner_id = $2
-        ORDER BY x.position, x.id LIMIT 1) END AS own_image, i.added_at
-    FROM study_set_items i JOIN entity_index e ON (e.type, e.id) = (i.entity_type, i.entity_id)
-    LEFT JOIN entry_previews p ON (p.type, p.slug) = (e.type, e.slug)
-    WHERE i.set_id = $1 ORDER BY i.added_at, e.slug`, [set.id, req.user.id]);
-  const origin = adminOrigin(req);
-  res.json({ set: { ...set, count: rows.length }, items: rows.map(({ own_image: own, ...r }) => (own ? { ...r, image: `${origin}/private-images/${own}?w=250`, own: true } : { ...r, own: false })) });
+  res.json({ set: await describe(set), items: await itemsOf(req, set.id) });
 });
 
 router.post('/:id', async (req, res) => {
@@ -104,10 +282,30 @@ router.post('/:id', async (req, res) => {
   if (!set) return fail(res, 404, 'not_found');
   const name = text(req.body.name ?? set.name, 120);
   if (!name) return fail(res, 422, 'a set needs a name');
-  const description = req.body.description === undefined ? set.description : text(req.body.description, 2000) || null;
-  const { rows: [s] } = await adminPool.query('UPDATE study_sets SET name = $3, description = $4 WHERE id = $1 AND owner_id = $2 RETURNING id, name, description, created_at, updated_at',
-    [set.id, req.user.id, name, description]);
-  res.json({ set: s });
+  const keep = (field, max) => (req.body[field] === undefined ? set[field] : text(req.body[field], max) || null);
+  await adminPool.query('UPDATE study_sets SET name = $3, topic = $4, description = $5 WHERE id = $1 AND owner_id = $2',
+    [set.id, req.user.id, name, keep('topic', 80), keep('description', MAX_DESCRIPTION)]);
+  res.json({ set: await describe(await ownSet(req)) });
+});
+
+// sharing: private, by link, in public — a shared set shows the account's public name, so sharing needs one
+router.post('/:id/share', async (req, res) => {
+  const set = await ownSet(req);
+  if (!set) return fail(res, 404, 'not_found');
+  const visibility = VISIBILITY.includes(req.body.visibility) ? req.body.visibility : set.visibility;
+  let publicName = req.body.public_name === undefined ? undefined : text(req.body.public_name, 60) || null;
+  if (publicName !== undefined) {
+    if (publicName && publicName.toLowerCase() === req.user.username.toLowerCase()) return fail(res, 422, 'choose a public name other than your login name');
+    await adminPool.query('UPDATE admin_users SET public_name = $2 WHERE id = $1', [req.user.id, publicName]);
+  } else {
+    publicName = (await adminPool.query('SELECT public_name FROM admin_users WHERE id = $1', [req.user.id])).rows[0].public_name;
+  }
+  if (visibility !== 'private' && !publicName) return fail(res, 422, 'a shared set shows your public name — choose one first');
+  const code = req.body.new_link === '1' || (visibility !== 'private' && !set.code) ? newCode() : set.code;
+  await adminPool.query(`UPDATE study_sets SET visibility = $3, share_code = $4,
+      shared_at = CASE WHEN $3 = 'private' THEN NULL ELSE coalesce(shared_at, now()) END WHERE id = $1 AND owner_id = $2`,
+    [set.id, req.user.id, visibility, code]);
+  res.json({ set: await ownSet(req), public_name: publicName });
 });
 
 router.post('/:id/delete', async (req, res) => {
@@ -138,13 +336,20 @@ router.post('/:id/items/remove', async (req, res) => {
 router.get('/:id/cards', async (req, res) => {
   const set = await ownSet(req);
   if (!set) return fail(res, 404, 'not_found');
-  const { rows: entries } = await adminPool.query(`SELECT i.entity_type::text AS type, i.entity_id AS id,
-      (SELECT jsonb_object_agg(p.direction, jsonb_build_object('box', p.box, 'seen', p.seen, 'known', p.known))
-         FROM study_progress p WHERE p.owner_id = $2 AND (p.entity_type, p.entity_id) = (i.entity_type, i.entity_id)) AS progress
-    FROM study_set_items i WHERE i.set_id = $1 ORDER BY i.added_at`, [set.id, req.user.id]);
-  const progress = new Map(entries.map((e) => [`${e.type}:${e.id}`, e.progress || {}]));
-  const list = await cards(adminPool, entries, req.user.id, adminOrigin(req));
-  res.json({ set, cards: list.map(({ key, ...c }) => ({ ...c, progress: progress.get(key) || {} })) });
+  res.json({ set, cards: await cardsOf(req, set.id) });
+});
+
+router.post('/:id/sessions', async (req, res) => {
+  const set = await ownSet(req);
+  if (!set) return fail(res, 404, 'not_found');
+  return recordSession(req, res, set.id);
+});
+
+router.get('/:id/stats', async (req, res) => {
+  const set = await ownSet(req);
+  if (!set) return fail(res, 404, 'not_found');
+  res.json(await statsOf(req, set.id));
 });
 
 module.exports = router;
+module.exports.shared = shared;

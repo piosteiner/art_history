@@ -321,26 +321,63 @@ export const getPrivateImages = (slug: string) =>
 export const logOut = () => account<null>('/logout', { method: 'POST' });
 // Study sets (backend routes/site-sets.js, 218): the account's own lists of entries and their index cards. Writes are
 // form posts (no CORS preflight); every call null when not logged in.
-export interface StudySet { id: string; name: string; description: string | null; count: number; updated_at: string }
+export type Visibility = 'private' | 'link' | 'public';
+export type StudyMode = 'forward' | 'reverse' | 'both' | 'typed' | 'choice';
+export interface StudySet {
+  id?: string; name: string; topic: string | null; visibility: Visibility; code: string | null;
+  /** Markdown as written; rendered for the set's page (`_html`) and as a line of plain text for the lists (`_text`) */
+  description: string | null; description_html?: string | null; description_text?: string | null;
+  count: number; created_at: string; updated_at: string;
+  /** shared sets: the owner's public name; `mine` = the viewer's own */
+  creator?: string | null; mine?: boolean;
+  /** a copy of someone's shared set (while that one is still shared) */
+  copied_from?: { name: string; code: string; creator: string | null } | null;
+}
 export interface StudyItem { type: EntityType; slug: string; name: string; subtitle: string | null; image: string | null; own: boolean; added_at: string }
 export interface CardProgress { box: number; seen: number; known: number }
 export interface StudyCard {
   type: EntityType; slug: string; name: string; facts: { label: string; value: string }[]; text: string;
   image: string | null; own: boolean; progress: { forward?: CardProgress; reverse?: CardProgress };
 }
+export interface ModeStats { rounds: number; answered: number; known: number; recent: number[]; best: number | null; last_at: string; seconds: number }
+export interface StudyStats {
+  modes: Partial<Record<StudyMode, ModeStats>>;
+  /** per direction: [new, box 1 … box 5] */
+  boxes: { forward: number[]; reverse: number[] };
+  hardest: { type: EntityType; slug: string; name: string; seen: number; known: number }[];
+}
+/** Where a set is read from: the account's own (`/sets/<id>`) or a shared one (`/shared/<code>`). */
+export type SetRef = { own: string } | { code: string };
+const base = (ref: SetRef) => ('own' in ref ? `/sets/${ref.own}` : `/shared/${ref.code}`);
 const form = (data: Record<string, string>): RequestInit => ({ method: 'POST', body: new URLSearchParams(data) });
-export const getSets = () => account<{ sets: StudySet[] }>('/sets').then((r) => r?.sets ?? null);
-export const createSet = (name: string, description = '') => account<{ set: StudySet }>('/sets', form({ name, description })).then((r) => r?.set ?? null);
-export const updateSet = (id: string, name: string, description: string) => account<{ set: StudySet }>(`/sets/${id}`, form({ name, description })).then((r) => r?.set ?? null);
+export const getSets = () => account<{ sets: StudySet[]; public_name: string | null; topics: string[] }>('/sets');
+export const createSet = (name: string, topic = '', description = '') =>
+  account<{ set: StudySet }>('/sets', form({ name, topic, description })).then((r) => r?.set ?? null);
+export const updateSet = (id: string, data: { name: string; topic: string; description: string }) =>
+  account<{ set: StudySet }>(`/sets/${id}`, form(data)).then((r) => r?.set ?? null);
+export const shareSet = (id: string, data: { visibility?: Visibility; public_name?: string; new_link?: '1' }) =>
+  account<{ set: StudySet; public_name: string | null }>(`/sets/${id}/share`, form(data as Record<string, string>));
 export const deleteSet = (id: string) => account<null>(`/sets/${id}/delete`, form({}));
-export const getSet = (id: string) => account<{ set: StudySet; items: StudyItem[] }>(`/sets/${id}`);
+export const getSet = (ref: SetRef) => account<{ set: StudySet; items: StudyItem[] }>(base(ref));
 export const setsOf = (type: EntityType, slug: string) =>
   account<{ sets: { id: string; name: string; has: boolean }[] }>(`/sets/of?${new URLSearchParams({ type, slug })}`).then((r) => r?.sets ?? null);
 export const addToSet = (id: string, type: EntityType, slug: string) => account<{ count: number }>(`/sets/${id}/items`, form({ type, slug }));
 export const removeFromSet = (id: string, type: EntityType, slug: string) => account<{ count: number }>(`/sets/${id}/items/remove`, form({ type, slug }));
-export const getCards = (id: string) => account<{ set: StudySet; cards: StudyCard[] }>(`/sets/${id}/cards`);
+export const getCards = (ref: SetRef) => account<{ set: StudySet; cards: StudyCard[] }>(`${base(ref)}/cards`);
 export const answerCard = (type: EntityType, slug: string, direction: 'forward' | 'reverse', known: boolean) =>
   account<CardProgress>('/sets/progress', form({ type, slug, direction, known: known ? '1' : '0' }));
+/** One round of a quiz on a set (the account's results); `beacon` when the page is being left. */
+export function recordRound(ref: SetRef, round: { mode: StudyMode; answered: number; known: number; seconds: number; complete: boolean }, beacon = false) {
+  const data = { mode: round.mode, answered: String(round.answered), known: String(round.known), seconds: String(round.seconds), complete: round.complete ? '1' : '0' };
+  if (beacon && ADMIN && navigator.sendBeacon) { navigator.sendBeacon(`${ADMIN}/site${base(ref)}/sessions`, new URLSearchParams(data)); return Promise.resolve(null); }
+  return account<{ ok: boolean }>(`${base(ref)}/sessions`, form(data));
+}
+/** A description as it will look (the backend's Markdown, as in the entries' texts). */
+export const previewDescription = (text: string) => account<{ html: string }>('/sets/preview', form({ text })).then((r) => r?.html ?? '');
+export const getSetStats = (ref: SetRef) => account<StudyStats>(`${base(ref)}/stats`);
+export const getPublicSets = (topic = '', q = '') =>
+  account<{ sets: StudySet[]; topics: { topic: string; count: number }[] }>(`/shared?${new URLSearchParams({ topic, q })}`);
+export const copySet = (code: string) => account<{ set: { id: string; name: string } }>(`/shared/${code}/copy`, form({})).then((r) => r?.set ?? null);
 
 /** The CMS login, back to `next` (an address of this site) afterwards. */
 export const loginUrl = (next: string) => (ADMIN ? `${ADMIN}/login?${new URLSearchParams({ next })}` : null);

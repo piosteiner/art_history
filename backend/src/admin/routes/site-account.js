@@ -8,6 +8,7 @@
 //                                               images counted as pictures too ({image_url, own: true}); ?mine=only
 //   GET  /site/thumbs                           {images: {slug: address}} — works with only this account's images
 //   /site/sets/…                                study sets and their index cards (routes/site-sets.js, 218)
+//   /site/shared/…                              shared study sets — no login needed to look and learn (219)
 //   POST /site/logout                           ends the session (the CMS's too: it is the same one)
 // The images themselves: GET /private-images/:id (routes/private-images.js), owner-only as before.
 const express = require('express');
@@ -38,6 +39,8 @@ router.use((req, res, next) => {
 
 // study sets (218): the account's own lists of entries and their index cards (routes/site-sets.js)
 router.use('/sets', require('./site-sets'));
+// shared sets (219): anyone with the link, logged in or not
+router.use('/shared', require('./site-sets').shared);
 
 router.get('/me', (req, res) => (req.user ? res.json({ username: req.user.username }) : res.status(401).json({ error: 'not_logged_in' })));
 

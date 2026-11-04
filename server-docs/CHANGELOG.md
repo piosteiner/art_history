@@ -4,6 +4,39 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### Study sets shared, with a topic and a Markdown description; results per set and kind of quiz; Type it, Pick it (219)
+- **What** (owner 2026-11-04: "sets … shareable … at least a creation date, the creator name, the date of the last
+  change, a name and a topic … track the performance … per set and quiz type"; "a description … with our markdown
+  formatting environment"):
+  - Migration 219: `study_sets.topic` (≤ 80), `visibility` private | link | public with `share_code` (12 characters
+    from `crypto.randomBytes` — 72 bits; "New link" replaces it, the old link stops working), `shared_at`,
+    `copied_from` (ON DELETE SET NULL); description now Markdown up to 10,000 characters; `updated_at` = the last
+    change of the content only (trigger `WHEN (name, topic, description) IS DISTINCT FROM …` — sharing is no change);
+    `admin_users.public_name` (shown on shared sets — never the login name; sharing needs one; column grant to
+    arthistory_admin); `study_sessions` (account, set, mode forward/reverse/both/typed/choice, answered, known,
+    seconds, complete) — private like `study_progress`, emptied in the test copy.
+  - `routes/site-sets.js`: `/site/shared` (no login: the public sets by topic and search; a set by its code with
+    creator and dates; its cards — logged in with the account's own progress and reference images, never the owner's;
+    logged in: Save a copy, rounds, results), `/site/sets/:id/share`, `/sessions`, `/stats` (per mode: rounds, share
+    known, the last ten, the best whole round, time; boxes per direction; the entries most often not known),
+    `/site/sets/preview`; descriptions rendered by `src/markdown.js` (`description_html`, `description_text`).
+  - Site: `/sets` grouped by topic (topic offered from own and public ones), `/sets/<id>` with meta line (topic ·
+    created · last changed), the description rendered, an editor (`md-editor.ts`: toolbar, Write | Preview from the
+    server, Ctrl+B/I, `[[` + letters → entries from the site search), Share… (Only you / Anyone with the link / Public,
+    "Shown as", Copy link, New link), "Your results"; `/sets/shared` (public sets, topic chips, search);
+    `/sets/s/<code>[/study]` for anyone (visitors learn without anything kept; logged in: Save a copy, results).
+    Kinds of quiz: Name it, Describe it, both, **Type it** (typed, checked like the site quiz — `quiz-match.ts`) and
+    **Pick it** (four names of the set, the same type first; from four entries); each round recorded at its end or
+    when the page is left (`sendBeacon`). `?dir=` addresses still work (`?mode=` now).
+  - Privacy statement: "Accounts and study sets" says what sharing shows (name, topic, description, entries, dates,
+    public name — never login name, progress or results), results, visitors on shared sets.
+  - Tests: `backend/test/e2e/study-sets.spec.js` (+ sharing: no login, link vs public list, another account's rounds
+    and copy, owner sees none of them, new link / private end the old link), `frontend/tests/sets.spec.ts` (5 tests).
+- **Why**: art-history students share sets with each other; a teacher can hand out one set by its link.
+- **Revert**: the previous commit's backend + site; `ALTER TABLE study_sets DROP COLUMN topic, DROP COLUMN visibility,
+  DROP COLUMN share_code, DROP COLUMN shared_at, DROP COLUMN copied_from; ALTER TABLE admin_users DROP COLUMN
+  public_name; DROP TABLE study_sessions;` (+ the 218 trigger without WHEN) and delete 219 from `schema_migrations`.
+
 ### Study sets: an account's own lists of entries, learnt as index cards both ways (218)
 - **What** (owner 2026-11-04: sets of any entries for art-history students — to keep for reference and to study, with
   quizzes "like index cards in both ways"):
