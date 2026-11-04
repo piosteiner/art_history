@@ -365,7 +365,12 @@ async function recentSources(db, userId, type = null, id = null) {
     ORDER BY x.here DESC NULLS LAST, x.created_at DESC LIMIT 12`, [userId, type, id]);
   if (!rows.length) return rows;
   const sigla = await catalogueOf(db);  // the generated short references ("Busch 1993") where no own one is set
-  return rows.map((r) => ({ ...r, label: (sigla.get(r.slug) || {}).siglum || r.label }));
+  // a source without authors and year has the siglum "Anon. o. J.c" — useless on a chip: its title instead
+  const anon = require('../bibliography').T.anon;
+  return rows.map((r) => {
+    const s = (sigla.get(r.slug) || {}).siglum;
+    return { ...r, label: s && !s.startsWith(anon) ? s : r.label };
+  });
 }
 // "collection.kunsthaus.ch/…/item/752012" — the end of a page's address, enough to tell the pages of one site apart
 const pageOf = (url) => {

@@ -105,7 +105,8 @@ test('relevance: a web source needs its address and the day it was read; publish
   const bar = userA.locator('.form-relevance');
   await expect(bar).toContainText('Still to fill in for a web page');
   // the sections in the web page's order: the address right after the kind (relevance.js SOURCE_KINDS[].sections)
-  await expect(userA.locator('.form-section:visible .form-section-title')).toHaveText(['Kind', 'Online', 'Title', 'People', 'Appeared in', 'Publication', 'Cited and read', 'Notes', 'Identifiers', 'Source']);
+  await expect(userA.locator('.form-section:visible .form-section-title')).toHaveText(['Kind', 'Online', 'Title', 'People', 'Appeared in', 'Publication', 'Cited and read', 'Notes', 'Identifiers']);   // no "Source": a bibliography entry is the source itself
+  await expect(userA.locator('#cite-url')).toHaveCount(0);           // one place for the address: its own URL field
   await expect(userA.locator('.form-nav a').first()).toHaveText('Kind');
   await expect(userA.locator('.form-nav a', { hasText: 'Video, archive' })).toBeHidden();   // its section is hidden: no jump link
   await expect(bar.locator('a[data-focus]')).toHaveText(['URL', 'Last accessed', 'Title', 'Appeared in']);   // in the form's order

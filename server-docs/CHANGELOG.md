@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### CMS: a new bibliography entry has no "Source" section; chips of anonymous sources by title
+- **What:** owner: the web source had two places for its address — its own URL (Online) and the new-entry section
+  "Source" (where an entry's details come from, `citations.newEntrySection`). A bibliography entry is the source
+  itself: the section is no longer rendered for type `source` (`forms.js` `entityForm`). On every other form, a
+  "Used recently" chip whose generated siglum is only "Anon. o. J.c" (no authors, no year — most web pages) shows the
+  source's title instead (`citations.recentSources`). Test: `forms.spec.js` (no `#cite-url` on /bibliography/new).
+- **Why:** owner 2026-11-04 ("im not even sure the 'source' section makes sense for web sources").
+- **Revert:** `git revert` of the commit.
+
 ### CMS forms: the bibliography follows the kind of source; rare and dependent fields hidden; short hints
 - **What:** owner (other device): a web source still asked for year, edition, "appeared in", volume and pages like
   an article; make every form as short and friendly as the filled fields allow. `src/admin/relevance.js`:

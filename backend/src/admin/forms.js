@@ -512,6 +512,8 @@ function sectionsOf(t) {
 // collab: { key: 'artist:12:<epoch>', state: base64 } for a working copy.
 // pendingImages: JSON of images picked in the Wikidata review of a new entry — kept in a hidden field (and so in the
 // draft) and saved with the entry on Create.
+// A new entry asks where its details come from (citations.newEntrySection) — not a bibliography entry: it is the
+// source itself, its link is its own URL field (owner 2026-11-04).
 function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = null, pendingImages = null, pendingCites = null, pendingIds = null }) {
   let pending = [];
   try { pending = pendingImages ? JSON.parse(pendingImages) : []; } catch { pending = []; }
@@ -546,7 +548,7 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
           ${sec.rows.map((r) => html`${r.group ? fieldGroup(r.group, t, f, ctx, one) : r.length > 1 ? html`<div class="field-pair">${r.map(one)}</div>` : one(r[0])}${
             (Array.isArray(r) ? r : []).map((k) => (ctx.afterField || {})[k] || '')}`)}</section>`)}`;
     })()}
-    ${isNew && ctx.recentSources ? citations.newEntrySection(ctx.recentSources, ctx.citeValues || {}) : ''}
+    ${isNew && ctx.recentSources && t.type !== 'source' ? citations.newEntrySection(ctx.recentSources, ctx.citeValues || {}) : ''}
     <div class="actions"><button>${isNew ? 'Create' : collab ? 'Publish' : 'Save'}</button>
       <a class="button secondary" href="${isNew ? `/${t.folder}` : `/${t.folder}/${slug}`}">${collab ? 'Close' : 'Cancel'}</a>
       ${collab ? html`<a class="button secondary" href="${action}/discard-changes">Discard unpublished changes…</a>
