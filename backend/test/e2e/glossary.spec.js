@@ -1,6 +1,6 @@
 // The glossary (migration 027): terms with a category and short definition, [[links]] in texts with completion in the
 // editor, "used in", the public API with definitions for tooltips, and the check for links to missing terms.
-const { test, expect, sql, liveReady, submitForm, API } = require('./helpers');
+const { test, expect, sql, liveReady, settled, submitForm, API } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
@@ -74,6 +74,16 @@ test('broader terms: a performing-arts term under another, shown both ways; no l
   expect(play).toMatchObject({ category: 'performing arts', broader: [{ slug: 'noh', name: 'Noh' }], narrower: [] });
   const genre = await api(request, '/glossary/noh');
   expect(genre.narrower).toEqual([{ slug: 'yoroboshi', name: 'Yoroboshi', category: 'performing arts', definition: 'Noh play.' }]);
+  // the list rows name the broader term; a collection (metadata.collection — the calendars) says how many it files
+  // and its narrower terms say so (the site lists them under it only, 2026-11-04)
+  await settled();
+  const listed = async () => (await api(request, '/glossary?limit=500')).data;
+  expect((await listed()).find((t) => t.slug === 'yoroboshi').parent).toEqual({ slug: 'noh', name: 'Noh', collection: false });
+  sql(`UPDATE glossary SET metadata = '{"collection": true}' WHERE slug = 'noh'`);
+  await settled();
+  expect((await listed()).find((t) => t.slug === 'noh').collects).toBe(1);
+  expect((await listed()).find((t) => t.slug === 'yoroboshi').parent.collection).toBe(true);
+  sql("UPDATE glossary SET metadata = '{}' WHERE slug = 'noh'");
 
   // a loop is refused with a readable message, nothing saved
   await userA.goto('/glossary/noh/edit');

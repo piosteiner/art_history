@@ -233,7 +233,7 @@ router.post('/changelog/:id', async (req, res) => {
   } catch (err) {
     return send(req, res, { ...entryForm({ ...e, ...v, savedPublished: e.published }, { action: `/changelog/${e.id}`, items: req.body.items, key, base: e.base, flash: { kind: 'error', text: friendly(err) } }), status: 422 });
   }
-  res.redirect(303, `/changelog/${e.id}/edit?done=saved`);
+  res.redirect(303, '/changelog?done=saved');   // back to the overview (owner 2026-11-04)
 });
 
 // Deleting takes a second step on a page of its own (owner, 2026-10-20: an entry was deleted by accident): what goes

@@ -110,8 +110,10 @@ test('changelog: autosaved draft restored, edits in place in the history, a dele
   // one bullet changed: an update of that bullet, not all deleted and written anew
   await typeItems(userA, 'Neu: Markdown-Editor mit Live-Formatierung\nBehoben: Anmeldung');
   await Promise.all([userA.waitForNavigation(), userA.click('.changelog-form button:has-text("Save")')]);
+  await expect(userA).toHaveURL(/\/changelog\?done=saved$/);                       // Save returns to the overview (owner 2026-11-04)
   expect(sql(`SELECT string_agg(action::text, ',' ORDER BY id) FROM audit_log WHERE table_name = 'changelog_items' AND (new_row->>'entry_id') = '${id}'
     AND txid = (SELECT max(txid) FROM audit_log WHERE table_name = 'changelog_items')`)).toBe('update');
+  await userA.goto(`/changelog/${id}/edit`);
   await expect(userA.locator('table.diff')).toContainText('Live-Formatierung');
 
   // deleted only after confirming on a page of its own: a bare POST deletes nothing, Cancel goes back

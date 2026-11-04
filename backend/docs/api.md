@@ -131,7 +131,10 @@ object type · group of works · mounting · performing arts · other; filter `?
 `description_html`, `images`/`image_url`, related terms as relationships (`related_term`), and in the detail
 `used_in: [{type, slug, name}]` — the entries whose texts link the term. Broader terms (145): `broader: [{slug, name}]`
 upwards, nearest first (Yoroboshi → Noh → …), and `narrower: [{slug, name, category, definition}]` — the terms
-directly under it. Lists sort A–Z by `sort_key`.
+directly under it — a collection's in their eras' order (the calendars: Taika … Reiwa, 2026-11-04). Lists sort A–Z by
+`sort_key`. List rows (2026-11-04): `parent` `{slug, name, collection}` = the broader term, `collection` when it files
+its narrower terms (`metadata.collection`: Japanese, Korean, Chinese calendar — the site lists the 613 era names under
+them only, found by search), and `collects` = how many such a term files.
 The artwork filters `?kind=` and `?material=` include the terms under the one asked for (146): `?material=wood` finds
 the oak panels, `?kind=print` the woodcuts; a work's search names carry the names of its terms' broader terms too.
 
@@ -582,8 +585,9 @@ Only works with a picture (their first image), not a whole of parts. What belong
   one, and not by one of its artists (a period: none made during it); wrong movements hold none of the shown works, are
   outside its tree (and for a period: don't overlap it). Its time = its dates, else its works' years.
 - World regions (191): `&region=<europe|middle_east|africa|central_asia|south_asia|east_asia|southeast_asia|oceania|north_america|south_america>`
-  on image/artist/movement keeps every work in that region (view `entry_regions`); without it, an artist's or movement's
-  round takes its wrong options from its own region (anywhere when it has fewer than 2). A copy after a work of another
+  — several with commas (`region=oceania,southeast_asia`, 2026-11-04) — on image/artist/movement keeps every work in those
+  regions (view `entry_regions`); without it, an artist's or movement's round takes its wrong options from its own region
+  (anywhere when it has fewer than 2; with exactly one region chosen, from that one). A copy after a work of another
   region (relationship `copy_after`) counts in that region too — Van Gogh's Bridge in the Rain after Hiroshige plays in
   Europe and East Asia — and a copy after one of the look-alikes (artist game) or after a work of the movement (movement
   game) is ranked first among the wrong options. `GET /v1/quiz/regions` → `{data: [{region, name, name_de, note, works}]}`

@@ -70,6 +70,10 @@ test('regions: a game of one region; an artist’s look-alikes from their region
   expect(asia.map((r) => r.slug)).toContain('test-quiz-e');
   expect(asia.some((r) => r.slug.startsWith('test-quiz-') && r.slug !== 'test-quiz-e')).toBe(false);
   expect((await get(request, 'artist?for=test-quiz-painter&region=east_asia'))).toEqual([]);   // no three works there
+  // several regions at once (owner 2026-11-04): their works together
+  const both = await get(request, 'image?n=40&region=east_asia,europe');
+  expect(both.map((r) => r.slug)).toEqual(expect.arrayContaining(['test-quiz-a', 'test-quiz-e']));
+  expect((await get(request, 'image?n=20&region=east_asia,oceania')).some((r) => r.slug === 'test-quiz-a')).toBe(false);
   // no region chosen: the painter's round never shows the Kyoto work
   for (let i = 0; i < 3; i++) {
     const [round] = await get(request, 'artist?for=test-quiz-painter');

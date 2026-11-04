@@ -44,9 +44,13 @@ const rightCount = (available) => Math.min(available, 2 + Math.floor(Math.random
 const OPTIONS = 8;
 // the world regions (migration 191: enum world_region, in its order)
 const REGIONS = ['europe', 'middle_east', 'africa', 'central_asia', 'south_asia', 'east_asia', 'southeast_asia', 'oceania', 'north_america', 'south_america'];
-const regionOf = (q) => (REGIONS.includes(q.region) ? q.region : null);
-/** The works of one region only (a value of REGIONS — safe to write into the query). */
-const inRegion = (pictured, region) => (region ? `SELECT * FROM (${pictured}) p WHERE ${counts('p', `'${region}'`)}` : pictured);
+/** The regions chosen (`region=east_asia,oceania`, owner 2026-11-04: several at once), values of REGIONS; [] = all. */
+const regionsOf = (q) => [...new Set(String(q.region ?? '').split(',').filter((r) => REGIONS.includes(r)))];
+/** One chosen region — the round's region when exactly one is chosen (its wrong options keep to it); null otherwise. */
+const regionOf = (q) => (regionsOf(q).length === 1 ? regionsOf(q)[0] : null);
+/** The works of the chosen regions only (values of REGIONS — safe to write into the query). */
+const inRegion = (pictured, regions) => (regions.length
+  ? `SELECT * FROM (${pictured}) p WHERE ${regions.map((r) => counts('p', `'${r}'`)).join(' OR ')}` : pictured);
 /** An entry's worked-out region (entry_regions) as SQL */
 const regionSql = (type, idExpr) => `(SELECT er.region::text FROM entry_regions er WHERE er.entity_type = '${type}' AND er.entity_id = ${idExpr})`;
 /**
@@ -112,7 +116,7 @@ async function enough(query, region) {
 }
 
 async function image(q, { db, pictured }) {
-  const PICTURED = inRegion(pictured, regionOf(q));
+  const PICTURED = inRegion(pictured, regionsOf(q));
   const n = count(q.n, 10, 20);
   const { rows: picked } = await db.query(`SELECT id FROM (${PICTURED}) w WHERE $2::text IS NULL OR w.slug = $2 ORDER BY random() LIMIT $1`, [n, only(q)]);
   const { rows } = await db.query(`
@@ -133,7 +137,7 @@ async function image(q, { db, pictured }) {
 
 // --- 2. the artist: which works are theirs ------------------------------------------------------------------------
 async function artist(q, { db, pictured }) {
-  const PICTURED = inRegion(pictured, regionOf(q));
+  const PICTURED = inRegion(pictured, regionsOf(q));
   const n = count(q.n, 8, 15);
   // the round's region: the one chosen, else the artist's — else the one most of their works are of
   const { rows: artists } = await db.query(`
@@ -192,7 +196,7 @@ const SPANS = `mw AS (SELECT movement_id, artwork_id FROM quiz_movement_works),
 const MOVEMENT = `m.slug, m.public_id, m.name, m.kind::text AS kind, range_json(m.period, m.period_label) AS period`;
 
 async function movement(q, { db, pictured }) {
-  const PICTURED = inRegion(pictured, regionOf(q));
+  const PICTURED = inRegion(pictured, regionsOf(q));
   const n = count(q.n, 8, 15);
   const mode = ['pick', 'name'].includes(q.mode) ? q.mode : 'mixed';
   const { rows: movements } = await db.query(`

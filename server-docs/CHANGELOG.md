@@ -4,6 +4,40 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### Glossary: the era names collected under Japanese, Korean and Chinese calendar
+- **What:** owner 2026-11-04 ("the glossary is bloated with the calendar names"): three new terms of category
+  `calendar` — `japanese-calendar`, `korean-calendar`, `chinese-calendar` (definition + text: how dates are written,
+  where the dates come from) with `metadata.collection = true`; the 613 era-name terms get them as broader term
+  (`parent_id` from `calendar_era_links` → `calendar_eras.calendar`), the general terms too (nengō, one reign one era →
+  Japanese; reign years (Korea) → Korean; nianhao → Chinese; the sexagenary cycle stays on its own). Script
+  `scratchpad/calendars.js` (audited, user 1). API: glossary list rows carry `parent` {slug, name, collection} and
+  `collects` (a collection: how many it files); a term's `narrower` come in their eras' order (join `calendar_eras`),
+  else by name. Migration 211: `derived_touch`'s `termtree` branch also queues the narrower terms' list rows (their
+  `parent` changes with the parent's name or flag). Site: the glossary list leaves filed terms out (and out of the
+  category counts) unless a search finds them, with a note "613 era names are filed under … — search finds them by
+  name"; a collection's card says "Files 249 terms." Tests: glossary.spec.js (list rows), site test (list).
+- **Why:** 613 of 1,071 glossary entries were era names; they belong to their calendar.
+- **Revert:** `git revert` + migration 212 restoring the old function body; the data via the CMS history (parent_id).
+
+### Quiz: regions ticked, several at once
+- **What:** owner 2026-11-04 — `region=east_asia,oceania` (comma list) on image/artist/movement keeps the works of
+  those regions (`regionsOf()` in `src/routes/quiz.js`; `regionOf()` = the one chosen when exactly one, for the
+  look-alikes); the site's chips are tick boxes (☐/☑ by CSS): from "all regions" the first click keeps that region
+  alone, further clicks add or remove one, every region ticked or none = all (no `region` in the request, so works of
+  no known region play too); remembered as before. backend/docs/api.md, quiz.spec.js, site test.
+- **Why:** with more regions a visitor may want two or three, not one.
+- **Revert:** `git revert`.
+
+### CMS: the changelog's Save returns to the overview
+- **What:** `POST /changelog/:id` redirects to `/changelog?done=saved` instead of the entry's edit page (owner
+  2026-11-04); changelog.spec.js follows. Create and Publish stay on the entry.
+- **Revert:** `git revert`.
+
+### Content: Châtaigniers en fleurs — the DeSylvas "until at least 1950" (sale watcher, 2026-11-04)
+- **What:** the watcher reported the lot's provenance as changed; ours of 2026-10-31 already matched every line
+  (co-owner Vincent Willem van Gogh included). Step 11 (DeSylva) gets `ended` "1950 or later" from "until at least 1950".
+- **Revert:** CMS history of the step.
+
 ### Content: the art dealership Walter Feilchenfeldt (Kunsthandel), Zürich
 - **What:** the Kunsthaus names the holder of Braque's *La Cheminée* (115496) 1954–1956 as "Walter Feilchenfeldt
   (Kunsthandel), Zürich" — the firm, without dates of life; our step named the person, who had died on 9 December 1953

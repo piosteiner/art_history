@@ -246,7 +246,12 @@ const ENTITIES = {
   },
   glossary: {
     type: 'term', table: 'glossary', alt: 'alt_names', name: 'name', period: null,
-    list: `t.category, t.definition, ${mainImage('glossary_id')}`,
+    // parent: the broader term (145) — with `collection` when that term files its narrower terms (metadata.collection,
+    // the calendars: the site's list shows them under it only, owner 2026-11-04); collects: how many it files
+    list: `t.category, t.definition, ${mainImage('glossary_id')},
+           (SELECT jsonb_build_object('slug', p.slug, 'name', p.name, 'collection', coalesce((p.metadata ->> 'collection')::boolean, false))
+            FROM glossary p WHERE p.id = t.parent_id) AS parent,
+           CASE WHEN coalesce((t.metadata ->> 'collection')::boolean, false) THEN (SELECT count(*)::int FROM glossary n WHERE n.parent_id = t.id) END AS collects`,
     detail: `t.category, t.definition, t.description_md, ${allImages('glossary_id')}`,
     md: ['description_md'],
     filters: { category: 't.category::text = $' },
@@ -588,7 +593,9 @@ const EXTRAS = {
   term: async (id) => ({
     broader: (await apiPool.query(ancestorsSql('glossary'), [id])).rows,
     narrower: (await apiPool.query(`
-      SELECT slug, name, category::text AS category, definition FROM glossary t WHERE parent_id = $1 ORDER BY ${sortKey('term', 't')}`, [id])).rows,
+      SELECT t.slug, t.name, t.category::text AS category, t.definition FROM glossary t
+      LEFT JOIN calendar_era_links l ON l.term_id = t.id LEFT JOIN calendar_eras e ON e.id = l.era_id
+      WHERE t.parent_id = $1 ORDER BY lower(e.period) NULLS LAST, ${sortKey('term', 't')}`, [id])).rows,
     used_in: (await apiPool.query(`
       SELECT e.type::text AS type, e.slug, e.name FROM glossary_links l
       JOIN glossary g ON g.slug = l.term_slug JOIN entity_index e ON (e.type, e.id) = (l.entity_type, l.entity_id)
