@@ -222,3 +222,15 @@ test('quick entry: Wikidata search on a new entry, an empty other-names row is o
   await Promise.all([userA.waitForURL(/\/artists\/test-quick-entry/), userA.keyboard.press('Control+s')]);
   await expect(userA.locator('h1')).toContainText('Test Quick Entry');
 });
+
+test('kind fields show their common values as chips; a click fills the field in', async ({ userA }) => {
+  await userA.goto('/events/new');
+  const chips = userA.locator('.field', { has: userA.locator('#f-kind') }).locator('.fill-chips .chip');
+  expect(await chips.count()).toBeGreaterThan(3);
+  const first = await chips.first().textContent();
+  await chips.first().click();
+  await expect(userA.locator('#f-kind')).toHaveValue(first);
+  await expect(userA.locator('#f-kind')).toBeFocused();
+  await userA.goto('/institutions/new');
+  await expect(userA.locator('.field', { has: userA.locator('#f-kind') }).locator('.fill-chips')).toContainText('museum');
+});

@@ -526,6 +526,16 @@ async function formContext(t, id = null) {
     terms.materials = Object.fromEntries(mats.map((r) => [r.name.toLowerCase(), r.main]));
     used.materials = [...new Set([...mats.map((r) => r.main), ...(used.materials || [])])].sort();
   }
+  // the kinds used most, as chips under the field — a click fills it in (owner 2026-11-04: a list you can see, not a
+  // browser suggestion list that only opens while typing); the whole list stays in the field's suggestions
+  const common = {};
+  if (suggestions.kind && t.fields.kind === 'text' && !enums.kind) {
+    const top = (await adminPool.query(`SELECT kind AS v FROM ${t.table} WHERE kind IS NOT NULL AND kind <> ''
+      GROUP BY 1 ORDER BY count(*) DESC, 1 LIMIT 12`)).rows.map((r) => r.v);
+    // too few in use yet: filled up from the offered ones (events, literary works, immovable works …)
+    const offered = suggestions.kind.map((v) => (typeof v === 'object' ? v.value : v)).filter((v) => !top.includes(v));
+    common.kind = [...top, ...offered.slice(0, Math.max(0, 8 - top.length))];
+  }
   const refs = {};
   for (const [key, kind] of Object.entries(t.fields)) {
     const target = kind === 'parent' ? t : kind.startsWith('ref:') ? BY_TYPE[kind.slice(4)] : null;
@@ -540,7 +550,7 @@ async function formContext(t, id = null) {
     const { rows: [r] } = await adminPool.query(`SELECT region::text, basis FROM entry_regions WHERE entity_type = $1 AND entity_id = $2 AND basis <> 'set'`, [t.type, id]);
     if (r) workedOut.region = r;
   }
-  return { groupKinds, enums, enumsNullable, suggestions, refs, used, terms, coCreators, workedOut, errorKeys: new Set(), confirmNew: {} };
+  return { groupKinds, enums, enumsNullable, suggestions, common, refs, used, terms, coCreators, workedOut, errorKeys: new Set(), confirmNew: {} };
 }
 
 async function findEntity(t, slug) {

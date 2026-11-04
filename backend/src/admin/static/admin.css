@@ -694,3 +694,7 @@ button.theme-toggle:hover { color: var(--fg); border-color: var(--accent); }
   vertical-align: middle; cursor: pointer; }
 .hint-toggle:hover, .hint-toggle[aria-expanded="true"] { border-color: var(--accent); color: var(--accent); }
 .hint.help:not([hidden]) { border-left: 2px solid var(--line); padding-left: .5rem; }
+/* "Common:" values under a field, a click fills it in (forms.js fill-chips, editor/hints.js) */
+.fill-chips { display: flex; flex-wrap: wrap; gap: .3rem; align-items: center; margin-top: .3rem; }
+.fill-chips .chip { padding: .1rem .55rem; border: 1px solid var(--line); border-radius: 999px; background: var(--panel); color: inherit; font-size: .8rem; cursor: pointer; }
+.fill-chips .chip:hover { border-color: var(--accent); color: var(--accent); }

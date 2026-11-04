@@ -119,10 +119,10 @@ const TYPE_HINTS = {
   'artwork.part_number': 'Its place in the whole: 21 · left panel · plate 3 · leaf 12. A number in it sorts the parts.',
   'artwork.parts_count': 'Only for a whole (series, album …): how many parts it has, e.g. 46 — pages then show “No. 21 of 46”.',
   'artwork.location': 'Only for works that don’t move — buildings, gardens, bridges, temple halls, monuments, murals. Paintings, prints and sculptures in collections: leave empty (they are where their institution is). Its city is found when you save and linked as “created in” (unless it has a place of creation).',
-  'artwork.kind': html`What sort of object it is, in a word or two: painting, woodblock print, hanging scroll, sculpture, vase — or building, garden,
-    bridge, temple hall … Pick a term from the list so works group together — in English or German: types are glossary terms with
-    their translations (Holzschnitt → woodblock print), stored under the term's name. A new word becomes a new term, to translate on its
-    glossary page. A building that houses an institution: link them with <i>houses</i>.`,
+  'artwork.kind': html`What sort of object it is, in a word or two — painting, woodblock print, hanging scroll, sculpture, vase, or building,
+    garden, bridge, temple hall … The same word for the same sort, so works group together: types are glossary terms with their
+    translations, so a German word is fine too (Holzschnitt → woodblock print) and is stored under the term’s name. A new word becomes
+    a new term, to translate on its glossary page. A building that houses an institution: link them with <i>houses</i>.`,
   'place.kind': html`<b>settlement</b> (city, town, village) · <b>district</b> (a quarter, a ward) · <b>street</b> (also a road — its course as a line) · <b>building</b> · <b>site</b> (a garden, a landscape spot) · <b>archaeological</b> site · <b>natural</b> feature (mountain, lake, island, river) · <b>region</b> (province, canton, prefecture) · <b>country</b> · <b>continent</b>. The form shows the fields the kind needs.`,
   'place.designation': 'What it is as a unit, in a few words — “canton of Switzerland”, “prefecture of Japan”, “street in Paris”. Shown under the name instead of the kind, and in lists; it tells places of one name apart.',
   'place.existed': 'Only for a unit that no longer exists as such — a dissolved province, a city merged into another: when it existed (e.g. 1871/1945).',
@@ -134,11 +134,11 @@ const TYPE_HINTS = {
   'literature.parent': 'The whole this is a part of — a chapter of a tale, an act of a play, a poem of an anthology. Empty = none (the whole itself).',
   'literature.part_number': 'Its place in the whole: 5 · Act II · “Wakamurasaki”. A number in it sorts the parts.',
   'institution.dissolved': 'When it closed, was dissolved or merged into another — empty while it exists. With “Founded” it says when it existed: the start map shows it in a time window only then.',
-  'institution.kind': 'museum · gallery · temple · church · art academy · auction house · foundation · collection · library … — pick a term from the list. A kind with a building of its own (museum, temple …) asks for its location; a collection, foundation or dealer only for its city.',
+  'institution.kind': 'One or two words, the same for the same kind (institutions are grouped and filtered by it). A kind with a building of its own (museum, temple, church …) asks for its location; a collection, foundation or dealer only for its city.',
   'institution.website_url': 'Its own website (the front page) — not a page about one work; that is the work’s “Web page”.',
   'person.kind': 'person (the default) — or a group: family · dynasty · couple · religious order · guild · workshop · company · group. A group has a time it was active instead of dates of life.',
   'polity.kind': 'empire · kingdom · dynasty · republic · shogunate …',
-  'event.kind': 'fire · earthquake · war · battle · trial · exhibition · auction · festival · founding … — pick a term from the list',
+  'event.kind': 'One or two words, in English, the same for the same kind (events are grouped and filtered by it): a fire is “fire”, not “Brand” or “great fire”.',
   'event.parent': 'A larger event it belongs to (a battle in a war, a session of a trial). Empty = none.',
   'event.period': html`As exact as known: <code>1657-03-02/1657-03-04</code> (2–4 March 1657) · <code>1970</code> · <code>c. 1600</code>. The label shows it as written.`,
   'event.place': 'Where it happened: the city (Edo, Lausanne) — or a region or country for something larger.',
@@ -411,7 +411,9 @@ function fieldInput(key, kind, f, ctx) {
   return html`<div class="field${err}" data-key="${key}"><label for="${id}">${label}</label>
     <input id="${id}" name="${name}" value="${f[key]}"${list ? html` list="${id}-list" autocomplete="off"` : ''}>
     ${list ? html`<datalist id="${id}-list">${list.map((v) => (typeof v === 'object'
-      ? html`<option value="${v.value}"${v.label ? html` label="${v.value} → ${v.label}"` : ''}>` : html`<option value="${v}">`))}</datalist>` : ''}${hint(typeHint || HINTS[key])}</div>`;
+      ? html`<option value="${v.value}"${v.label ? html` label="${v.value} → ${v.label}"` : ''}>` : html`<option value="${v}">`))}</datalist>` : ''}${
+    (ctx.common || {})[key] && ctx.common[key].length ? html`<div class="fill-chips" data-fill="${id}"><span class="muted small">Common:</span>${
+      ctx.common[key].map((v) => html`<button type="button" class="chip" data-value="${v}">${v}</button>`)}<span class="muted small">— or type any other</span></div>` : ''}${hint(typeHint || HINTS[key])}</div>`;
 }
 
 // The form in sections with slim titles: rows of one field or a pair (side by side on wide screens), and groups that

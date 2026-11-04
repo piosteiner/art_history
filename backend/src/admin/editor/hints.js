@@ -33,3 +33,18 @@ export function initHints(root = document) {
     label.parentElement.append(btn);
   }
 }
+
+// "Common:" chips under a field (forms.js fill-chips): a click puts the value in the field, as if typed
+export function initFillChips(root = document) {
+  root.addEventListener('click', (e) => {
+    const chip = e.target.closest('.fill-chips .chip');
+    if (!chip) return;
+    e.preventDefault();
+    const input = document.getElementById(chip.closest('.fill-chips').dataset.fill);
+    if (!input) return;
+    input.value = chip.dataset.value;
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+    input.dispatchEvent(new Event('change', { bubbles: true }));
+    input.focus();
+  });
+}

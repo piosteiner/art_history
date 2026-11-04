@@ -37,7 +37,7 @@ import { initCiteDialogs, initCiteTriggers } from './cites';
 import { initErrorFields } from './errors';
 import { imageHandlers, initImageUploads } from './uploads';
 import { initFormDrafts } from './formdrafts';
-import { initHints } from './hints';
+import { initHints, initFillChips } from './hints';
 
 // Colours come from the admin stylesheet's CSS variables, so light/dark mode just works.
 const liveStyle = HighlightStyle.define([
@@ -599,6 +599,7 @@ initSourceForm();
 initPrivateImages();
 initRelevance();
 initHints();
+initFillChips();
 // Ctrl+S / Cmd+S in an entry form: Create, Save or Publish — the button below the form (owner 2026-11-04: fill in
 // entries quickly); the browser's "save page" is never what is meant here
 {

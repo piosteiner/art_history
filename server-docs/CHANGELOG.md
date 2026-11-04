@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### CMS: common kinds as chips under the kind field
+- **What:** owner: "pick a term from the list" — but the list (a browser datalist) only opens while typing, and if it
+  were visible the hint would be needless. `core.formContext` adds `common.kind` = the 12 kinds used most in that
+  table (filled up from the offered kinds while few are in use); `forms.js` renders them as chips under the field
+  ("Common: … — or type any other"), a click fills the field (`editor/hints.js` `initFillChips`). The datalist stays
+  for typing. Hints of artwork, institution and event kinds no longer say "pick from the list"; they say why the same
+  word matters. Note: production has one event of kind "Brand" beside six of "fire" — left for the owner.
+  Test: `forms.spec.js`.
+- **Why:** owner 2026-11-04.
+- **Revert:** `git revert` of the commit.
+
 ### CMS: hints checked against what the forms accept
 - **What:** owner: can the hints be improved, do some not show all options? `forms.js`:
   - Dates: every form the parser takes (written out, German, Roman months, ranges, "between … and …", "or later" /
