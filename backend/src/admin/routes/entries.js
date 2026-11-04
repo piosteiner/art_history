@@ -119,8 +119,8 @@ router.get('/:plural', async (req, res) => {
         ${t.type === 'place' ? html`<a class="button secondary" href="/places/new/find">+ find a place…</a>` : ''}</form>
       <div data-live-results="list">${rows.length ? html`<div class="table-wrap"><table${t.imageFk ? html` class="with-thumbs thumbs-${t.type}"` : ''}><thead><tr>${t.imageFk ? html`<th></th>` : ''}<th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
         ${rows.slice(0, PAGE).map((r, i, shown) => html`${q ? heading(r, i, shown) : ''}<tr>${t.imageFk ? html`<td class="thumb">${r.image_url
-          ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1"><img src="${thumbUrl(r.image_url, 120)}" alt="" loading="lazy" decoding="async"></a>`
-          : r.own_image ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1" class="own-image" title="your reference image (private)"><img src="/private-images/${r.own_image}?w=250" alt="" loading="lazy" decoding="async"></a>`
+          ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1"><img referrerpolicy="strict-origin-when-cross-origin" src="${thumbUrl(r.image_url, 120)}" alt="" loading="lazy" decoding="async"></a>`
+          : r.own_image ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1" class="own-image" title="your reference image (private)"><img referrerpolicy="strict-origin-when-cross-origin" src="/private-images/${r.own_image}?w=250" alt="" loading="lazy" decoding="async"></a>`
           : html`<span class="thumb-empty" title="no image"></span>`}</td>` : ''}<td><a href="/${t.folder}/${r.slug}">${r.name}</a>${r.to_complete ? html` <span class="tag warn" title="created automatically — fill in the details">to complete</span>` : ''}
           ${sources && sources.get(r.slug) ? html`<div class="small">${sources.get(r.slug).siglum}${r.status ? html` <span class="tag">${r.status.replace('_', ' ')}</span>` : ''}</div>` : ''}
           ${r.creators ? html`<div class="muted small">${r.creators}</div>` : ''}
@@ -606,7 +606,7 @@ router.get('/:plural/:slug', async (req, res) => {
         ${series.whole.parts_count && /^\d+$/.test(series.number) ? `of ${series.whole.parts_count} ` : ''}in ` : 'Part of '}<a href="/artworks/${series.whole.slug}">${series.whole.title}</a>
         ${series.prev ? html` · <a href="/artworks/${series.prev.slug}">← ${series.prev.title}</a>` : ''}${series.next ? html` · <a href="/artworks/${series.next.slug}">${series.next.title} →</a>` : ''}</p>` : ''}
       ${main ? html`<figure class="image-preview"><a href="${main.source_url || main.url}" target="_blank" rel="noopener">
-        <img src="${thumbUrl(main.url, 500)}" alt="${name}"></a>
+        <img referrerpolicy="strict-origin-when-cross-origin" src="${thumbUrl(main.url, 500)}" alt="${name}"></a>
         <figcaption class="muted small">${[main.caption, main.credit, main.license].filter(Boolean).join(' · ') || 'no credit / license yet'}
           ${imgs.length > 1 ? html` · <a href="#images">${imgs.length} images</a>` : ''}</figcaption></figure>` : ''}
       ${names.hasRuby(e.doc[t.name]) || e.doc[`${t.name}_lang`] ? html`<p class="main-name"${e.doc[`${t.name}_lang`] ? html` lang="${e.doc[`${t.name}_lang`]}"` : ''}>
@@ -636,8 +636,8 @@ router.get('/:plural/:slug', async (req, res) => {
       ${series && (series.parts.length || series.isWhole) ? html`<h2 id="parts">Parts</h2>
         <p class="muted">${series.parts.length}${e.doc.parts_count ? ` of ${e.doc.parts_count}` : ''} entered${series.missing.length ? ` — missing numbers: ${series.missing.join(', ')}` : ''}</p>
         <div class="image-list parts-list">${series.parts.map((p) => html`<figure class="image-item"><a href="/artworks/${p.slug}">${p.image_url
-          ? html`<img src="${thumbUrl(p.image_url, 250)}" alt="" loading="lazy">`
-          : p.own_image ? html`<img src="/private-images/${p.own_image}?w=250" alt="" loading="lazy" class="own-image" title="your reference image (private)">`
+          ? html`<img referrerpolicy="strict-origin-when-cross-origin" src="${thumbUrl(p.image_url, 250)}" alt="" loading="lazy">`
+          : p.own_image ? html`<img referrerpolicy="strict-origin-when-cross-origin" src="/private-images/${p.own_image}?w=250" alt="" loading="lazy" class="own-image" title="your reference image (private)">`
           : html`<span class="thumb-empty"></span>`}</a>
           <figcaption>${p.part_number ? html`<b>${p.part_number}</b> · ` : ''}<a href="/artworks/${p.slug}">${p.title}</a></figcaption></figure>`)}</div>` : ''}
       ${t.type === 'artwork' ? html`<details${series && series.isWhole ? ' open' : ''}><summary><b>+ Add a part</b> <span class="muted small">(for a series, album, triptych …)</span></summary>
@@ -847,7 +847,7 @@ router.get('/:plural/:slug/images/find', async (req, res) => {
       ${error ? html`<p class="flash error">${error}</p>` : ''}
       ${!error && !results.length ? html`<p class="muted">Nothing found here — try another source or fewer words (e.g. only the artist).</p>` : ''}
       <div class="find-results">${results.map((r) => html`<figure class="image-item find-item">
-        <a href="${r.source_url || r.url}" target="_blank" rel="noopener"><img src="${thumbUrl(r.thumb, 330)}" alt="" loading="lazy" decoding="async"></a>
+        <a href="${r.source_url || r.url}" target="_blank" rel="noopener"><img referrerpolicy="strict-origin-when-cross-origin" src="${thumbUrl(r.thumb, 330)}" alt="" loading="lazy" decoding="async"></a>
         <figcaption><b>${r.title || ''}</b>${r.by ? html`<div class="small">${r.by}</div>` : ''}
           <div class="muted small">${[r.credit, r.license].filter(Boolean).join(' · ')}</div>
           ${have.has(r.url) ? html`<div class="tag">added ✓</div>` : html`<form method="post" action="/${t.folder}/${e.slug}/images">

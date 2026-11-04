@@ -531,7 +531,7 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
       <div class="field"><label>Reference records from Wikidata</label><div class="hint">${(() => { try { return JSON.parse(pendingIds).map((x) => `${x.authority.toUpperCase()} ${x.value}`).join(' · '); } catch { return ''; } })()} — added with the entry when you press Create.</div></div>` : ''}
     ${pending.length ? html`<input type="hidden" name="wd.images" value="${pendingImages}">
       <div class="field pending-images"><label>Images from Wikidata</label>
-        <div class="image-list">${pending.map((img) => html`<figure class="image-item"><img src="${thumbUrl(img.url, 250)}" alt="" loading="lazy">
+        <div class="image-list">${pending.map((img) => html`<figure class="image-item"><img referrerpolicy="strict-origin-when-cross-origin" src="${thumbUrl(img.url, 250)}" alt="" loading="lazy">
           <figcaption class="muted small">${[img.credit, img.license].filter(Boolean).join(' · ')}</figcaption></figure>`)}</div>
         <div class="hint">Added with the entry when you press Create.</div></div>` : ''}
 

@@ -83,7 +83,7 @@ function suggestionRow(s, i, t) {
 function imageChoice(img, i) {
   const pre = img.declined ? 'skip' : img.suggested ? 'add' : 'later';
   const radio = (value, label) => html`<label class="choice"><input type="radio" name="img.${i}" value="${value}"${pre === value ? ' checked' : ''}> ${label}</label>`;
-  return html`<div class="wd-image${img.declined ? ' wd-declined' : ''}"><img src="${thumbUrl(img.url, 250)}" alt="" loading="lazy">
+  return html`<div class="wd-image${img.declined ? ' wd-declined' : ''}"><img referrerpolicy="strict-origin-when-cross-origin" src="${thumbUrl(img.url, 250)}" alt="" loading="lazy">
     <div><div><b>${img.file}</b></div><div><b>License:</b> ${img.license || '?'}</div><div><b>Credit:</b> ${img.credit || '?'}</div>
       <div class="small"><a href="${img.source_url}" target="_blank" rel="noopener">file page ↗</a></div>
       ${img.status === 'same' ? html`<p class="muted">Already one of ours.</p>`

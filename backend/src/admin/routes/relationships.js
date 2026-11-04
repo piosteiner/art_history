@@ -72,7 +72,7 @@ function imageEditPage(req, res, img, { status = 200, flash, values = img } = {}
   return images.licenses(adminPool).then((licenseList) => send(req, res, {
     title: 'Edit image', status, flash,
     body: html`<h1>Edit image</h1><p><a href="${img.entityUrl}#images">← ${img.name}</a></p>
-      <p><img class="image-edit-preview" src="${thumbUrl(img.url, 250)}" alt=""></p>
+      <p><img referrerpolicy="strict-origin-when-cross-origin" class="image-edit-preview" src="${thumbUrl(img.url, 250)}" alt=""></p>
       ${images.form({ action: `/images/${img.id}`, img: values, submit: 'Save', licenseList })}
       <form method="post" action="/images/${img.id}/delete" class="actions" style="margin-top:1.5rem">
         <button class="danger">Remove this image</button></form>`,

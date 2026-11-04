@@ -93,7 +93,7 @@ function section({ t, e, images, licenseList }) {
       ? html`No image here — the site links the work's <a href="${e.doc.web_url}" target="_blank" rel="noopener">web page</a> instead.`
       : html`No free image? Add the work's page at its museum as <a href="${base}/edit#f-web_url">Web page</a> — the site links it instead.`}</p>` : ''}
     ${images.length ? html`<div class="image-list">${images.map((img, i) => html`<figure class="image-item${i === 0 ? ' main' : ''}">
-      <a href="${img.source_url || img.url}" target="_blank" rel="noopener"><img src="${thumbUrl(img.url, 250)}" alt="${img.caption || ''}" loading="lazy" decoding="async"></a>
+      <a href="${img.source_url || img.url}" target="_blank" rel="noopener"><img referrerpolicy="strict-origin-when-cross-origin" src="${thumbUrl(img.url, 250)}" alt="${img.caption || ''}" loading="lazy" decoding="async"></a>
       <figcaption>${i === 0 ? html`<span class="tag">main image</span> ` : ''}${img.caption || ''}
         <div class="muted small">${[img.credit, img.license].filter(Boolean).join(' · ') || 'no credit / license yet'}</div>
         <div class="image-actions">${i > 0 ? moveBtn(img, 'up', '↑', 'Move earlier') : ''}${i < images.length - 1 ? moveBtn(img, 'down', '↓', 'Move later') : ''}

@@ -37,7 +37,7 @@ async function section(e, user) {
     <p class="muted small">Only you see these — from your own books, for your private use. Not on the site, not in the API,
       not in the test environment.</p>
     ${rows.length ? html`<div class="image-list">${rows.map((i, n) => html`<figure class="image-item${n === 0 ? ' main' : ''}">
-        <a href="/private-images/${i.id}" target="_blank" rel="noopener"><img src="/private-images/${i.id}" alt="" loading="lazy"></a>
+        <a href="/private-images/${i.id}" target="_blank" rel="noopener"><img referrerpolicy="strict-origin-when-cross-origin" src="/private-images/${i.id}" alt="" loading="lazy"></a>
         <figcaption class="muted small">${n === 0 && rows.length > 1 ? html`<span class="tag">main image</span> ` : ''}${[i.source_name, i.locator].filter(Boolean).join(', ') || (i.source_url ? '' : '—')}
           ${i.source_url ? html`<a href="${i.source_url}" target="_blank" rel="noopener noreferrer">${hostOf(i.source_url)} ↗</a>` : ''}
           <div class="image-actions">${n > 0 ? move(i, 'up', '↑', 'Move earlier') : ''}${n < rows.length - 1 ? move(i, 'down', '↓', 'Move later') : ''}

@@ -214,7 +214,7 @@ function editPage(p, images, { flash = null, values = null, part = null, sync = 
       ${missing.length ? html`<div class="flash warning page-images-missing"><b>Embedded, not uploaded yet (${String(missing.length)}):</b>
         ${missing.map((n, i) => html`${i ? ', ' : ''}<code>${n}</code>`)}</div>` : ''}
       <ul class="page-image-list" data-image-list>${images.map((i) => html`<li data-image-id="${String(i.id)}">
-        <img src="/pages/${p.slug}/images/${encodeURIComponent(i.name)}" alt="" loading="lazy">
+        <img referrerpolicy="strict-origin-when-cross-origin" src="/pages/${p.slug}/images/${encodeURIComponent(i.name)}" alt="" loading="lazy">
         <code>${i.name}</code> <span class="muted small">${kb(Number(i.size))}${i.original_bytes ? ` WebP (was ${kb(i.original_bytes)})` : ''}${i.width ? ` · ${i.width} × ${i.height}` : ''}${unused.includes(i) ? ' · not embedded' : ''}</span>
         <button type="button" class="link-button" data-copy="![[${i.name}]]">copy embed</button>
         <button type="button" class="link-button danger" data-image-delete="/pages/${p.slug}/images/${String(i.id)}/delete">delete</button></li>`)}</ul>

@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### CMS: museum images that need a Referer (Art Institute of Chicago)
+- **What:** the CMS showed empty frames for images hosted by the Art Institute of Chicago (many of the 36 Views):
+  its Cloudflare answers 403 (`cf-mitigated: challenge`) to image requests without a Referer, and the CMS sends none
+  to other sites (`Referrer-Policy: same-origin`, app.js — chosen so form posts keep their Origin). The site sends its
+  origin and was fine. Every `<img>` the CMS renders now carries `referrerpolicy="strict-origin-when-cross-origin"`
+  (as the map tiles since 2026-10: only `https://admin.arthistory.piogino.ch`, never the page path) — 13 tags in
+  images.js, wikidata-ui.js, forms.js, routes/entries|queue|relationships|private-images|pages.js.
+- **Why:** owner 2026-11-04: previews broken in the CMS, fine on the site.
+- **Revert:** `git revert`.
+
 ### CMS: forms that fill themselves out (relevance rules for every type)
 - **What:** owner 2026-11-04 ("forms as round and easy as possible"). One declarative mechanism replaces the two
   special cases (`editor/sourceform.js` hid a source's fields by kind, `editor/artworkform.js` an artwork's object
