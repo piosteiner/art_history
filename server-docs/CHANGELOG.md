@@ -21,7 +21,11 @@ Format: date — what — why — how to revert.
   general rules (only licensed images enter `images`; the thumbnail service copies, so only where allowed; everything
   else stays a private reference image; NC fine, ND = no cropping; Swiss URG Art. 2 Abs. 3bis — photos of 3D objects
   protected 50 years since 2020). Site changelog item (inhalt / Projektdokumentation) added to the unpublished
-  2026-11-04 entry. Terms texts kept in the scratchpad `rights/` (not in the repo).
+  2026-11-04 entry. Terms texts kept in the scratchpad `rights/` (not in the repo). Second pass the same morning
+  (owner: "verlinke jeweils die Quelle"): every table got a fourth column *Quelle* linking the museum's own terms
+  page; rows added for MOMAT (public-domain downloads from the union catalogue since 2026-05-29), Yamatane,
+  Idemitsu, Tokugawa, Yamato Bunkakan, Geidai, Seattle, McNay, Web Gallery of Art (legal.html), Tōdai-ji as the
+  temples' example, DigitaltMuseum/Kulturpool/Google terms, Korea Heritage Service, Commons reuse page.
 - **Why:** owner, 2026-11-04 — check the image rights of every museum used and write per museum how its images must be handled.
 - **Revert:** the previous section text is in `audit_log` (table pages, 2026-11-04) → CMS history / restore.
 
