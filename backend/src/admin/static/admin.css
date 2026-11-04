@@ -673,7 +673,13 @@ button.theme-toggle:hover { color: var(--fg); border-color: var(--accent); }
 .form-relevance[hidden] { display: none; }
 .form-relevance .relevance-missing a { margin-right: .1rem; }
 .form-relevance .relevance-done { color: var(--ok); }
-.form-relevance .relevance-toggle { margin-left: auto; color: var(--muted); font-size: .85rem; }
+.form-relevance .relevance-tools { margin-left: auto; display: flex; gap: 1rem; }
+.form-relevance .relevance-toggle, .form-relevance .relevance-hints { color: var(--muted); font-size: .85rem; }
+/* a pair with one field hidden: the other takes the row */
+@media (min-width: 900px) { .field-pair:has(> .field[hidden]) { grid-template-columns: 1fr; } }
+/* short hints: one line each, the whole on a click */
+.form.short-hints .field .hint:not(.open):not(.relevance-note) { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; cursor: pointer; }
+.form.short-hints .field .hint.open { cursor: pointer; }
 .field.needed > label::after, .field.needed .label-row > label::after { content: 'needed'; font-size: .7rem; font-weight: 600; letter-spacing: .05em;
   text-transform: uppercase; color: var(--accent); margin-left: .5rem; vertical-align: middle; }
 .field.needed input, .field.needed select, .field.needed textarea { border-color: var(--accent); }

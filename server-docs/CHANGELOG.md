@@ -4,6 +4,37 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### CMS forms: the bibliography follows the kind of source; rare and dependent fields hidden; short hints
+- **What:** owner (other device): a web source still asked for year, edition, "appeared in", volume and pages like
+  an article; make every form as short and friendly as the filled fields allow. `src/admin/relevance.js`:
+  `SOURCE_KINDS` rewritten after the KHIST guide §§ 8–9 — per kind the fields its citation pattern uses, the needed ones
+  (book: authors, place, year — the publisher is optional; article: journal, volume, year, pages; web: address, day
+  read, the site as "appeared in"; …), a note quoting the guide's example, and `sections` = the order of the form's
+  sections for that kind (a web page: Kind → Online → Title → People …; a book: Kind → People → Title → Publication …).
+  `SOURCE_COMMON` slimmed (url, isbn, doi, names, subtitle, edition_of now per kind). `rare` lists per type — fields
+  hidden while empty whatever the kind, "show all" brings them back: source siglum/wikidata_id/edition_of; artwork
+  title_status, attribution_label, dimensions_note, other_dimensions, region; artist/person given_name, family_name,
+  sort_name (split from the name on save), artist region; institution dissolved, address; place existed, designation;
+  movement region (no longer "needed"). Dependent fields shown only once their trigger is set (`show` on `when`
+  rules): fate_date/fate_note, provenance_status_note, completion_*, authenticity_*, on_loan_since (on loan = yes),
+  inventory_number and on_loan (institution filled), accessed (url filled), read_on (status read) — a `matches` rule
+  still waits for its field, a `filled`/`is` rule decides at once. `forms.js`: SECTIONS.source = Kind | Online (url,
+  accessed) | Title | People | Appeared in | Publication (+ volumes_total, isbn, doi) | Video, archive | Cited and read
+  | Notes | Identifiers; `SECTIONS` exported; every `.field` carries `data-key` (the browser took `attribution_label`
+  for a date's label and never hid it); place designation/existed placed in "Kind and position" (were in "More").
+  `editor/relevance.js`: reorders the sections and the jump links per kind (hidden sections lose their link), the
+  checklist in the order shown, `rare`, emptiness judged by the field's own inputs only (the other-names widget's role
+  menus no longer count), "Short hints" toggle (one line per hint, click to read all; remembered in the browser).
+  CSS: a pair with one hidden field spans the row; short hints. Tests: `test/relevance.test.js` (section ids exist,
+  web = kind + online first), `test/e2e/forms.spec.js` (section order, rare fields, fate date, on loan after the
+  institution). Web page form 27 → 18 visible fields, artwork 32 → 22, artist 19 → 15 (dev screenshots).
+  Not added to the site changelog: the 4 November entry is already published.
+- **Incident:** restarting the dev server I killed the PIDs found by `pgrep -f "src/server.js"` — they were the
+  production `arthistory-api` and `arthistory-test`; pm2 restarted both within a second (12:40:37, health 200, no
+  requests seen failing). Memory note `never-kill-by-pattern`: dev servers only by recorded PID.
+- **Why:** owner 2026-11-04 ("please make everything as user friendly as possible").
+- **Revert:** `git revert` of the commit; nothing in the database.
+
 ### CMS: museum images that need a Referer (Art Institute of Chicago)
 - **What:** the CMS showed empty frames for images hosted by the Art Institute of Chicago (many of the 36 Views):
   its Cloudflare answers 403 (`cf-mitigated: challenge`) to image requests without a Referer, and the CMS sends none

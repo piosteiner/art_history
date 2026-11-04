@@ -279,67 +279,67 @@ function fieldInput(key, kind, f, ctx) {
 
   if (kind === 'name') {
     // the browser adds the "Add reading" button and the furigana preview (editor/names.js)
-    return html`<div class="field name-field${err}"><label for="${id}">${label}</label>
+    return html`<div class="field name-field${err}" data-key="${key}"><label for="${id}">${label}</label>
       <input id="${id}" name="${name}" value="${f[key]}" data-ruby lang="${f[`${key}_lang`] || ''}">
       <div class="name-meta"><input name="${name}_lang" value="${f[`${key}_lang`]}" placeholder="language" aria-label="${label} language" class="lang-input" list="lang-list" autocomplete="off"></div>
       <div class="ruby-preview" hidden></div>${hint(HINTS.name)}
       <datalist id="lang-list">${LANGS.map(([v, l]) => html`<option value="${v}">${l}</option>`)}</datalist></div>`;
   }
   if (kind === 'bool') {
-    return html`<div class="field${err}"><label for="${id}">${label}</label>
+    return html`<div class="field${err}" data-key="${key}"><label for="${id}">${label}</label>
       <select id="${id}" name="${name}" class="short"><option value=""${f[key] ? '' : ' selected'}>no</option><option value="yes"${f[key] ? ' selected' : ''}>yes</option></select>
       ${hint(typeHint)}</div>`;
   }
   if (kind === 'dimsets') {
     // a plain textarea (one "part | h × w × d" per line); the browser shows it as rows (editor/dims.js)
-    return html`<div class="field${err}"><label for="${id}">Further measurements (cm)</label>
+    return html`<div class="field${err}" data-key="${key}"><label for="${id}">Further measurements (cm)</label>
       <textarea id="${id}" name="${name}" rows="2" data-dimsets>${f[key]}</textarea>
       <datalist id="part-list">${dimensions.PARTS.map((p) => html`<option value="${p}">`)}</datalist>
       ${hint(html`Optional — other parts measured separately: mount, frame, sheet, overall, with base … One per line: <code>mount | 180 × 95.5</code>. The dimensions above are the work itself.`)}</div>`;
   }
   if (kind === 'names') {
     // a plain textarea (works without script); the browser turns it into rows (editor/names.js)
-    return html`<div class="field${err}"><label for="${id}">Other names, translations, romanizations</label>
+    return html`<div class="field${err}" data-key="${key}"><label for="${id}">Other names, translations, romanizations</label>
       <textarea id="${id}" name="${name}" rows="3" data-names>${f[key]}</textarea>${hint(HINTS.names)}</div>`;
   }
   if (kind === 'md') {
-    return html`<div class="field${err}"><label for="${id}">${label}</label>
+    return html`<div class="field${err}" data-key="${key}"><label for="${id}">${label}</label>
       <textarea class="md" id="${id}" name="${name}">${f[key]}</textarea>${hint(typeHint || HINTS.md)}</div>`;
   }
   if (kind === 'area' || kind === 'line') {
     // Drawn on the map (see the point field); the raw GeoJSON stays editable for pasting or fine-tuning.
-    return html`<div class="field${err}"><label>${label}</label>
+    return html`<div class="field${err}" data-key="${key}"><label>${label}</label>
       <details${err ? ' open' : ''}><summary class="muted">${kind === 'line' ? 'Draw it on the map above with the line tool' : 'Draw it on the map above'} — or edit the GeoJSON (advanced)</summary>
       <textarea id="${id}" name="${name}" rows="3">${f[key]}</textarea>${hint(HINTS[kind])}</details></div>`;
   }
   if (kind === 'text[]' || kind === 'json') {
-    return html`<div class="field${err}"><label for="${id}">${label}</label>
+    return html`<div class="field${err}" data-key="${key}"><label for="${id}">${label}</label>
       <textarea id="${id}" name="${name}" rows="3"${key === 'materials' ? html` data-suggest-from="f-medium" data-used="${JSON.stringify(used || [])}" data-terms="${JSON.stringify((ctx.terms || {}).materials || {})}"` : ''}>${f[key]}</textarea>${hint(typeHint || HINTS[key] || HINTS[kind])}
       ${used && used.length ? html`<div class="hint used-terms">Used so far: ${used.join(' · ')}</div>` : ''}</div>`;
   }
   if (kind === 'dimensions') {
     const box = (x, label) => html`<input name="${name}_${x}" value="${f[`${key}_${x}`]}" placeholder="${label}" inputmode="decimal" aria-label="${label} in cm">`;
-    return html`<div class="field${err}"><label>${label} (cm) — the work itself</label>
+    return html`<div class="field${err}" data-key="${key}"><label>${label} (cm) — the work itself</label>
       <div class="row dims">${box('h', 'height')}<span class="x">×</span>${box('w', 'width')}<span class="x">×</span>${box('d', 'depth (3D only)')}</div>
       ${hint('Height × width, plus depth for objects. Height alone is fine (e.g. a sculpture). Decimals allowed. Paste a whole line ("139.4 × 85.1 cm", "54 7/8 × 33 1/2 in.") to fill all boxes — inches and mm are converted.')}
       <div class="hint dims-height-only">Height only — shown as “50 cm (height)”.</div></div>`;
   }
   if (kind === 'point') {
-    return html`<div class="field${err}"><label>${label}</label>
+    return html`<div class="field${err}" data-key="${key}"><label>${label}</label>
       <div class="row"><input name="${name}_lon" value="${f[`${key}_lon`]}" placeholder="longitude (east +)" inputmode="decimal" aria-label="longitude">
       <input name="${name}_lat" value="${f[`${key}_lat`]}" placeholder="latitude (north +)" inputmode="decimal" aria-label="latitude"></div>
       <div class="map-picker" data-point="${name}"${ctx.areaKey ? html` data-area="f.${ctx.areaKey}"` : ''}${ctx.routeKey ? html` data-route="f.${ctx.routeKey}"` : ''}></div>
       ${hint(typeHint)}<noscript>${hint(HINTS.point)}</noscript></div>`;
   }
   if (kind === 'date' || kind === 'period') {
-    return html`<div class="field${err}"><label for="${id}">${label}</label>
+    return html`<div class="field${err}" data-key="${key}"><label for="${id}">${label}</label>
       <div class="row"><input id="${id}" name="${name}" value="${f[key]}" placeholder="date">
       <input name="${name}_label" value="${f[`${key}_label`]}" placeholder="label (optional)" aria-label="${label} label"></div>
       ${hint(HINTS[kind])}</div>`;
   }
   if (kind.startsWith('life:')) {
     // place of birth / death: written as the relationship born_in / died_in when saved (routes/entries.js)
-    return html`<div class="field${err}"><label for="${id}">${label}</label>
+    return html`<div class="field${err}" data-key="${key}"><label for="${id}">${label}</label>
       <input id="${id}" name="${name}" value="${f[key]}" placeholder="start typing a place" autocomplete="off" data-lookup="place">
       ${hint(`Saved as the relationship “${kind === 'life:born_in' ? 'born in' : 'died in'}” — no need to add it under Relationships. Another place replaces it; removed only there.`)}</div>`;
   }
@@ -349,7 +349,7 @@ function fieldInput(key, kind, f, ctx) {
     const canCreate = ['artist', 'institution'].includes(target) && kind !== 'parent';  // src/admin/autocreate.js
     const placeParent = kind === 'parent' && target === 'place';
     const confirm = (ctx.confirmNew || {})[key];
-    return html`<div class="field${err}"><label for="${id}">${label}</label>
+    return html`<div class="field${err}" data-key="${key}"><label for="${id}">${label}</label>
       <input id="${id}" name="${name}" value="${f[key]}" list="${id}-list" placeholder="start typing a name (typos are fine)" autocomplete="off"
         data-lookup="${kind === 'parent' ? ctx.type : kind.slice(4)}">
       <datalist id="${id}-list">${options.map((o) => html`<option value="${o.slug}">${o.name}</option>`)}</datalist>
@@ -362,15 +362,15 @@ function fieldInput(key, kind, f, ctx) {
         : 'The main creator. Further creators: “+ Add co-creator” on the artwork\'s page.') : ''}</div>`;
   }
   if (ctx.enums[key]) {
-    return html`<div class="field${err}"><label for="${id}">${label}</label>
+    return html`<div class="field${err}" data-key="${key}"><label for="${id}">${label}</label>
       <select id="${id}" name="${name}">${ctx.enumsNullable && ctx.enumsNullable.has(key) ? html`<option value=""${!f[key] ? ' selected' : ''}>${emptyChoice(ctx, key)}</option>` : ''}${ctx.enums[key].map((v) => html`<option value="${v}"${v === f[key] ? ' selected' : ''}>${ENUM_LABELS[`${ctx.type}.${key}.${v}`] || v}</option>`)}</select>${hint(typeHint)}</div>`;
   }
   if (key === 'definition') {
-    return html`<div class="field${err}"><label for="${id}">${label}</label>
+    return html`<div class="field${err}" data-key="${key}"><label for="${id}">${label}</label>
       <textarea id="${id}" name="${name}" rows="2" maxlength="500">${f[key]}</textarea>${hint(typeHint)}</div>`;
   }
   const list = ctx.suggestions[key];
-  return html`<div class="field${err}"><label for="${id}">${label}</label>
+  return html`<div class="field${err}" data-key="${key}"><label for="${id}">${label}</label>
     <input id="${id}" name="${name}" value="${f[key]}"${list ? html` list="${id}-list" autocomplete="off"` : ''}>
     ${list ? html`<datalist id="${id}-list">${list.map((v) => (typeof v === 'object'
       ? html`<option value="${v.value}"${v.label ? html` label="${v.value} → ${v.label}"` : ''}>` : html`<option value="${v}">`))}</datalist>` : ''}${hint(typeHint || HINTS[key])}</div>`;
@@ -426,7 +426,7 @@ const SECTIONS = {
   ],
   place: [
     { title: 'Name', id: 'names', rows: [['name'], ['names']] },
-    { title: 'Kind and position', id: 'kind', rows: [['kind', 'parent'], ['country_code', 'boundary_code']] },
+    { title: 'Kind and position', id: 'kind', rows: [['kind', 'parent'], ['designation', 'existed'], ['country_code', 'boundary_code']] },
     { title: 'On the map', id: 'map', rows: [['location'], ['area'], ['route']] },
     { title: 'Description', id: 'text', rows: [['description_md']] },
     IDS(),
@@ -463,16 +463,19 @@ const SECTIONS = {
     { title: 'Description', id: 'text', rows: [['description_md']] },
     IDS(),
   ],
-  // the bibliography: which fields show depends on the kind of source (editor/sourceform.js); a section whose fields
-  // are all hidden hides with them
+  // the bibliography: which fields show, and in which order the sections come, depends on the kind of source
+  // (relevance.js SOURCE_KINDS: a web page asks for its address right after the kind, a book for its authors first);
+  // a section whose fields are all hidden hides with them
   source: [
-    { title: 'What it is', id: 'what', rows: [['kind'], ['name'], ['subtitle'], ['names']] },
+    { title: 'Kind', id: 'kind', rows: [['kind']] },
+    { title: 'Online', id: 'online', rows: [['url', 'accessed']] },
+    { title: 'Title', id: 'title', rows: [['name'], ['subtitle'], ['names']] },
     { title: 'People', id: 'people', rows: [['authors', 'editors'], ['compilers']] },
-    { title: 'Appeared in', id: 'container', rows: [['container', 'container_editors'], ['volume', 'issue'], ['issue_date', 'volumes_total'],
+    { title: 'Appeared in', id: 'container', rows: [['container', 'container_editors'], ['volume', 'issue'], ['issue_date'],
       ['catalogue_number', 'exhibition'], ['pages', 'pages_are_columns']] },
-    { title: 'Publication', id: 'publication', rows: [['place', 'publisher'], ['year', 'original_year'], ['edition', 'series'], ['thesis'], ['edition_of']] },
-    { title: 'Online, video, archive', id: 'online', rows: [['url', 'accessed'], ['uploader', 'uploaded'], ['date_text'], ['archive', 'shelfmark']] },
-    { title: 'References and reading', id: 'reading', rows: [['isbn', 'doi'], ['siglum', 'primary_source'], ['reliability'], ['reading_status', 'read_on']] },
+    { title: 'Publication', id: 'publication', rows: [['place', 'publisher'], ['year', 'original_year'], ['edition', 'volumes_total'], ['series', 'thesis'], ['isbn', 'doi'], ['edition_of']] },
+    { title: 'Video, archive', id: 'more', rows: [['date_text'], ['uploader', 'uploaded'], ['archive', 'shelfmark']] },
+    { title: 'Cited and read', id: 'reading', rows: [['siglum', 'primary_source'], ['reliability'], ['reading_status', 'read_on']] },
     { title: 'Notes', id: 'text', rows: [['description_md']] },
     IDS(),
   ],
@@ -551,4 +554,4 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
   </form>`;
 }
 
-module.exports = { docToForm, formToDoc, entityForm, humanize, fieldLabel, HINTS, LANGS };
+module.exports = { docToForm, formToDoc, entityForm, humanize, fieldLabel, HINTS, LANGS, SECTIONS };

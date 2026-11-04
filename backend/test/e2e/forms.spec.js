@@ -62,8 +62,8 @@ test('forms in sections: titles and jump links, short fields in pairs, every fie
   await userA.goto('/artworks/new');
   await expect(userA.locator('.form-section-title')).toHaveText(['Title and names', 'Who and when', 'Object', 'Where it is', 'Description', 'Provenance status', 'Fate', 'Identifiers', 'Source']);
   await expect(userA.locator('.form-nav a')).toHaveCount(8);   // "Source" (new entries only, after the fields) has no jump link
-  // creator and attribution side by side
-  const [a, b] = await Promise.all(['#f-creator', '#f-attribution_label'].map((s) => userA.locator(s).boundingBox()));
+  // object type and medium side by side (creator and attribution label too — the label is a rare field, hidden while empty)
+  const [a, b] = await Promise.all(['#f-kind', '#f-medium'].map((s) => userA.locator(s).boundingBox()));
   expect(Math.abs(a.y - b.y)).toBeLessThan(5);
   expect(b.x).toBeGreaterThan(a.x + 200);
   // the hints are shown without clicking anything
@@ -104,22 +104,30 @@ test('relevance: a web source needs its address and the day it was read; publish
   await userA.selectOption('#f-kind', 'web');
   const bar = userA.locator('.form-relevance');
   await expect(bar).toContainText('Still to fill in for a web page');
-  await expect(bar.locator('a[data-focus]')).toHaveText(['Title', 'URL', 'Last accessed']);
+  // the sections in the web page's order: the address right after the kind (relevance.js SOURCE_KINDS[].sections)
+  await expect(userA.locator('.form-section:visible .form-section-title')).toHaveText(['Kind', 'Online', 'Title', 'People', 'Appeared in', 'Publication', 'Cited and read', 'Notes', 'Identifiers', 'Source']);
+  await expect(userA.locator('.form-nav a').first()).toHaveText('Kind');
+  await expect(userA.locator('.form-nav a', { hasText: 'Video, archive' })).toBeHidden();   // its section is hidden: no jump link
+  await expect(bar.locator('a[data-focus]')).toHaveText(['URL', 'Last accessed', 'Title', 'Appeared in']);   // in the form's order
   await expect(userA.locator('.field', { has: userA.locator('#f-accessed') })).toHaveClass(/needed/);
   await expect(userA.locator('#f-publisher')).toBeHidden();            // not used by a web page
-  await expect(userA.locator('#f-edition')).toBeHidden();                // (the section stays: year and edition_of are used)
+  await expect(userA.locator('#f-edition')).toBeHidden();
+  await expect(userA.locator('#f-pages')).toBeHidden();
+  await expect(userA.locator('#f-siglum')).toBeHidden();                // rare: an override, hidden while empty
   await userA.fill('#f-name', 'Sammlung online');
   await userA.fill('#f-url', 'https://collection.kunsthaus.ch/');
-  await expect(bar.locator('a[data-focus]')).toHaveText(['Last accessed']);
+  await expect(bar.locator('a[data-focus]')).toHaveText(['Last accessed', 'Appeared in']);
   await bar.locator('a[data-focus="accessed"]').click();
   await expect(userA.locator('#f-accessed')).toBeFocused();
   await userA.fill('#f-accessed', '2026-11-04');
+  await userA.fill('#f-container', 'Kunsthaus Zürich, Sammlung Online');
   await expect(bar).toContainText('Everything for a web page is filled in');
   await expect(userA.locator('.field', { has: userA.locator('#f-accessed') })).not.toHaveClass(/needed/);
-  // a book cited with a link: the day it was read is needed too
+  // a book: its authors first; cited with a link, the day it was read is needed too
   await userA.selectOption('#f-kind', 'book');
+  await expect(userA.locator('.form-section:visible .form-section-title').nth(1)).toHaveText('People');
   await expect(userA.locator('#f-publisher')).toBeVisible();
-  await expect(bar.locator('a[data-focus]')).toHaveText(['Authors', 'Place of publication', 'Publisher', 'Year']);   // in the form's order
+  await expect(bar.locator('a[data-focus]')).toHaveText(['Authors', 'Place of publication', 'Year']);   // the publisher is optional (KHIST § 9)
   await userA.fill('#f-accessed', '');
   await expect(bar.locator('a[data-focus]')).toContainText(['Last accessed']);
   // show all: the fields a book doesn't use come back, remembered in this browser
@@ -151,9 +159,18 @@ test('relevance: a place form follows its kind; an artwork on loan needs its len
 
   await userA.goto('/artworks/new');
   await expect(bar.locator('a[data-focus]')).toHaveText(['Title', 'Created', 'Object type']);   // in the form's order
-  await expect(userA.locator('#f-on_loan_since')).toBeVisible();
+  await expect(userA.locator('#f-title_status')).toBeHidden();          // rare: hidden while empty
+  await expect(userA.locator('#f-fate_date')).toBeHidden();             // no fate: no date of it
+  await userA.selectOption('#f-fate', 'lost');
+  await expect(userA.locator('#f-fate_date')).toBeVisible();
+  await expect(bar.locator('a[data-focus]')).toContainText(['Fate: when']);
+  await expect(userA.locator('#f-on_loan')).toBeHidden();               // no institution: no loan there
+  await userA.fill('#f-institution', 'Kunsthaus Zürich');
+  await expect(userA.locator('#f-on_loan')).toBeVisible();
+  await expect(bar.locator('a[data-focus]')).toContainText(['Inventory number', 'Web page']);
   await userA.selectOption('#f-on_loan', 'yes');
-  await expect(bar.locator('a[data-focus]')).toContainText(['Institution', 'On loan since']);
+  await expect(bar.locator('a[data-focus]')).toContainText(['On loan since']);
+  await userA.fill('#f-institution', '');
   await userA.fill('#f-kind', 'series');
   await expect(userA.locator('#f-inventory_number')).toBeHidden();      // a group of works: no object fields while empty
   await expect(userA.locator('.relevance-note')).toContainText('A group of works');

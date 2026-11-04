@@ -9,8 +9,11 @@
 //   values   { value: { label, only, need, note } } — only: the fields that matter (the rest hidden while empty);
 //            need: fields to fill; note: shown under the driver; label: how the checklist names it ("a web page")
 //   always   { need: [...] } for every entry of the type
+//   rare     fields hidden while empty whatever the kind (overrides, rarities) — "show all" brings them back
 //   when     cross-field rules, each { field, filled | is | matches | allEmpty: [...] , need, show, note } —
-//            show: these fields matter only while the condition holds (hidden while empty otherwise)
+//            show: these fields matter only while the condition holds (hidden while empty otherwise; a `matches`
+//            rule waits until its field has a value)
+//   values[].sections  the order of the form's sections for that value (ids of forms.js SECTIONS; the rest follow)
 const FIELDS = require('../content').BY_TYPE;
 
 // object types that open a group as soon as they are typed (editor.js) and that the rules below use
@@ -20,26 +23,49 @@ const WHOLES = ['series', 'versions', 'cycle', 'pair', 'album', 'diptych', 'trip
 const OBJECT_FIELDS = ['conceived', 'medium', 'materials', 'dimensions', 'dimensions_note', 'other_dimensions', 'institution',
   'inventory_number', 'on_loan', 'on_loan_since', 'location', 'area', 'provenance_status', 'provenance_status_note', 'fate',
   'fate_date', 'fate_note', 'web_url'];
-// the bibliography: the fields each kind of source uses (the citation patterns of the KHIST guide, src/bibliography.js)
-const SOURCE_COMMON = ['kind', 'name', 'subtitle', 'names', 'authors', 'year', 'url', 'isbn', 'doi', 'siglum', 'primary_source', 'reliability',
-  'reading_status', 'read_on', 'description_md', 'wikidata_id', 'metadata', 'edition_of'];
+// the bibliography: the fields each kind of source uses, in the order of its citation pattern (KHIST guide §§ 8–9,
+// src/bibliography.js). `sections` = the order of the form's sections for that kind (forms.js SECTIONS.source): a web
+// page asks for its address right after the kind, a book for its authors — the browser reorders the sections.
+// SOURCE_COMMON: what every entry has besides (how it is cited, read and trusted); not in it: url, isbn, doi, names,
+// subtitle, edition_of — per kind, and "show all" brings them back.
+const SOURCE_COMMON = ['kind', 'name', 'siglum', 'primary_source', 'reliability', 'reading_status', 'read_on', 'description_md', 'wikidata_id', 'metadata'];
 const SOURCE_KINDS = {
-  book: { label: 'a book', only: ['editors', 'compilers', 'edition', 'original_year', 'series', 'volumes_total', 'thesis', 'place', 'publisher'],
-    need: ['authors', 'year', 'place', 'publisher'] },
-  catalogue: { label: 'an exhibition catalogue', only: ['editors', 'compilers', 'exhibition', 'place', 'publisher', 'original_year'],
-    need: ['exhibition', 'year', 'place', 'publisher'] },
-  chapter: { label: 'a chapter in a volume', only: ['container', 'container_editors', 'place', 'publisher', 'pages', 'pages_are_columns', 'original_year'],
-    need: ['authors', 'container', 'pages', 'year'] },
-  article: { label: 'a journal article', only: ['container', 'volume', 'issue', 'issue_date', 'pages', 'pages_are_columns'],
-    need: ['authors', 'container', 'year', 'pages'] },
-  lexicon_entry: { label: 'a lexicon entry', only: ['container', 'container_editors', 'volumes_total', 'volume', 'place', 'publisher', 'pages', 'pages_are_columns'],
-    need: ['container', 'volume', 'pages', 'year'] },
-  catalogue_entry: { label: 'a catalogue entry', only: ['catalogue_number', 'container', 'compilers', 'exhibition', 'place', 'pages'],
-    need: ['container', 'catalogue_number', 'year'] },
-  web: { label: 'a web page', only: ['container', 'volume', 'pages', 'accessed'], need: ['url', 'accessed'],
-    note: 'A web page: its address and the day you read it are what a citation needs; the site as “appeared in”.' },
-  video: { label: 'a video', only: ['container', 'place', 'date_text', 'uploader', 'uploaded', 'accessed'], need: ['url', 'accessed', 'uploader'] },
-  archival: { label: 'an archival source', only: ['date_text', 'archive', 'shelfmark'], need: ['archive', 'shelfmark'] },
+  book: { label: 'a book', sections: ['kind', 'people', 'title', 'publication', 'reading', 'text', 'ids'],
+    only: ['subtitle', 'names', 'authors', 'editors', 'compilers', 'edition', 'original_year', 'series', 'volumes_total', 'thesis', 'place', 'publisher', 'year', 'isbn', 'edition_of'],
+    need: ['authors', 'place', 'year'],
+    note: 'Cited “Busch 1993: Werner Busch, Das sentimentalische Bild. Die Krise der Kunst …, München 1993.” — the publisher is optional.' },
+  catalogue: { label: 'an exhibition catalogue', sections: ['kind', 'title', 'people', 'container', 'publication', 'reading', 'text', 'ids'],
+    only: ['subtitle', 'names', 'editors', 'compilers', 'exhibition', 'place', 'publisher', 'year', 'original_year', 'isbn'],
+    need: ['exhibition', 'place', 'year'],
+    note: 'Cited “Kat. Paris 2007: Trésors carolingiens …, Bearb. Marie-Pierre Laffitte u. a., Ausst.-Kat. Paris: Bibliothèque Nationale, Paris 2007.” — the exhibition as “City: Institution”.' },
+  chapter: { label: 'a chapter in a volume', sections: ['kind', 'people', 'title', 'container', 'publication', 'online', 'reading', 'text', 'ids'],
+    only: ['subtitle', 'authors', 'container', 'container_editors', 'place', 'publisher', 'year', 'pages', 'pages_are_columns', 'original_year', 'doi', 'url', 'accessed'],
+    need: ['authors', 'container', 'place', 'year', 'pages'],
+    note: 'Cited “Raev und Labuda 2003: …, Der Mythos Sibirien …, in: Kunst, Kontext, Geschichte, hrsg. von Tatjana Bartsch und Jörg Meiner, Berlin 2003, S. 190–221.”' },
+  article: { label: 'a journal article', sections: ['kind', 'people', 'title', 'container', 'publication', 'online', 'reading', 'text', 'ids'],
+    only: ['subtitle', 'authors', 'container', 'volume', 'issue', 'issue_date', 'year', 'pages', 'pages_are_columns', 'doi', 'url', 'accessed'],
+    need: ['authors', 'container', 'volume', 'year', 'pages'],
+    note: 'Cited “Krauss 1972: Rosalind Krauss, Richard Serra. Sculpture Redrawn, in: Artforum 10 (Mai 1972), Nr. 9, S. 39–43.” — the journal as “appeared in”, its volume (Jahrgang), the issue only when the pages don’t run through the year.' },
+  lexicon_entry: { label: 'a lexicon entry', sections: ['kind', 'people', 'title', 'container', 'publication', 'online', 'reading', 'text', 'ids'],
+    only: ['authors', 'container', 'container_editors', 'volumes_total', 'volume', 'place', 'publisher', 'year', 'pages', 'pages_are_columns', 'url', 'accessed'],
+    need: ['container', 'year'],
+    note: 'Cited “Binding 1995: Günther Binding, Saalkirche, in: Lexikon des Mittelalters, 9 Bde., Bd. 7, München 1995, Sp. 1209–1210.” — no author: “Anon.”. An online lexicon (Wikipedia): its address and the day you read it.' },
+  catalogue_entry: { label: 'a catalogue entry', sections: ['kind', 'people', 'title', 'container', 'publication', 'reading', 'text', 'ids'],
+    only: ['authors', 'catalogue_number', 'container', 'compilers', 'exhibition', 'place', 'publisher', 'year', 'pages'],
+    need: ['catalogue_number', 'container', 'year'],
+    note: 'Cited “Denoël 2007: Charlotte Denoël, Kat.-Nr. 32 (Évangiles de Saint-Martin de Tours), in: Trésors carolingiens …, Ausst.-Kat. Paris: Bibliothèque Nationale, 2007, S. 154.”' },
+  web: { label: 'a web page', sections: ['kind', 'online', 'title', 'people', 'container', 'publication', 'reading', 'text', 'ids'],
+    only: ['url', 'accessed', 'subtitle', 'authors', 'container', 'year'],
+    need: ['url', 'accessed', 'container'],
+    note: 'Cited “Iversen 2012: Margaret Iversen, Index, Diagram, Graphic Trace, in: Tate Papers 18 (2012), http://… (aufgerufen am 2.8.2020).” — the address and the day you read it; the site or journal as “appeared in”; the year when the page gives one.' },
+  video: { label: 'a video', sections: ['kind', 'online', 'title', 'people', 'container', 'more', 'reading', 'text', 'ids'],
+    only: ['url', 'accessed', 'subtitle', 'authors', 'container', 'place', 'date_text', 'year', 'uploader', 'uploaded'],
+    need: ['url', 'accessed'],
+    note: 'Cited “Kodwo Eshun, Beitrag zur Tagung Public Assets …, Video-Dokumentation der Konferenz, organisiert von …, London, 1.5.2015, http://… (zuletzt abgerufen am 21.5.2020).” — a clip on a platform: who uploaded it and when.' },
+  archival: { label: 'an archival source', sections: ['kind', 'title', 'more', 'online', 'reading', 'text', 'ids'],
+    only: ['date_text', 'archive', 'shelfmark', 'url', 'accessed'],
+    need: ['archive', 'shelfmark'],
+    note: 'Cited “Brief von J.E. Wolfensberger an Wilhelm Barth, 30.09.1913, StABS, PA888 H 2.1 (1)” — the title describes the document; then its date, the archive and the shelfmark.' },
   other: { label: 'a source of another kind' },
 };
 // institutions: kinds with a building of their own (a point on the map) and kinds without one
@@ -55,9 +81,10 @@ const RULES = {
     driver: 'kind',
     values: Object.fromEntries(Object.entries(SOURCE_KINDS).map(([k, v]) => [k, { ...v, only: v.only ? [...SOURCE_COMMON, ...v.only] : undefined }])),
     always: { need: ['name'] },
+    rare: ['siglum', 'wikidata_id', 'edition_of'],
     when: [
-      { field: 'url', filled: true, need: ['accessed'], note: 'A link needs the day you read it.' },
-      { field: 'reading_status', is: 'read', need: ['read_on'] },
+      { field: 'url', filled: true, need: ['accessed'], show: ['accessed'], note: 'A link needs the day you read it.' },
+      { field: 'reading_status', is: 'read', show: ['read_on'], need: ['read_on'] },
     ],
   },
   artwork: {
@@ -67,19 +94,24 @@ const RULES = {
       '*': { label: null },
     },
     always: { need: ['title', 'kind', 'created'] },
+    // overrides and rarities, hidden while empty: a title's translation status, "attributed to", the region by hand …
+    rare: ['title_status', 'attribution_label', 'dimensions_note', 'other_dimensions', 'region'],
     when: [
-      { field: 'on_loan', is: 'yes', need: ['institution', 'on_loan_since'] },
-      { field: 'institution', filled: true, need: ['inventory_number', 'web_url'], note: 'In a museum: its inventory number and its page there.' },
+      { field: 'on_loan', is: 'yes', show: ['on_loan_since'], need: ['institution', 'on_loan_since'] },
+      { field: 'institution', filled: true, show: ['inventory_number', 'on_loan'], need: ['inventory_number', 'web_url'], note: 'In a museum: its inventory number and its page there.' },
       { field: 'parent', filled: true, need: ['part_number'] },
-      { field: 'fate', filled: true, need: ['fate_date'] },
-      { field: 'completion', filled: true, need: ['completion_date'] },
-      { field: 'authenticity', filled: true, need: ['authenticity_note'] },
+      { field: 'fate', filled: true, show: ['fate_date', 'fate_note'], need: ['fate_date'] },
+      { field: 'provenance_status', filled: true, show: ['provenance_status_note'] },
+      { field: 'completion', filled: true, show: ['completion_date', 'completion_note'], need: ['completion_date'] },
+      { field: 'authenticity', filled: true, show: ['authenticity_date', 'authenticity_note'], need: ['authenticity_note'] },
       { field: 'created', matches: '/|c\\.|ca\\.|circa|century|\\?', show: ['created_span'] },
       { field: 'kind', matches: 'print|cast|bronze|etch|engrav|woodcut|woodblock|lithograph|medal|plaster|relief', show: ['conceived'] },
     ],
   },
   artist: {
     always: { need: ['name'] },
+    // given and family name are split from the name on save; "filed as" and the region override what is worked out
+    rare: ['given_name', 'family_name', 'sort_name', 'region'],
     when: [{ allEmpty: ['birth', 'death'], show: ['active'], need: ['active'], note: 'No dates of life: when were they active?' }],
   },
   person: {
@@ -90,6 +122,7 @@ const RULES = {
       '*': { label: null },
     },
     always: { need: ['name'] },
+    rare: ['given_name', 'family_name', 'sort_name'],
     when: [{ allEmpty: ['birth', 'death'], show: ['active'], need: ['active'], note: 'No dates of life: when were they active?' }],
   },
   institution: {
@@ -101,6 +134,7 @@ const RULES = {
       '*': { label: null, need: ['place'] },
     },
     always: { need: ['name', 'kind'] },
+    rare: ['dissolved', 'address'],
   },
   place: {
     driver: 'kind',
@@ -122,8 +156,9 @@ const RULES = {
       street: { label: 'a street or road', only: ['name', 'names', 'kind', 'designation', 'parent', 'country_code', 'location', 'route', 'existed', 'description_md', 'wikidata_id', 'metadata'], need: ['parent', 'location'] },
     },
     always: { need: ['name', 'kind'] },
+    rare: ['existed', 'designation'],
   },
-  movement: { always: { need: ['name', 'kind', 'period', 'region'] } },
+  movement: { always: { need: ['name', 'kind', 'period'] }, rare: ['region'] },
   polity: { always: { need: ['name', 'kind', 'period', 'country_codes'] } },
   event: { always: { need: ['name', 'kind', 'period', 'place'] } },
   literature: { always: { need: ['name', 'kind', 'written'] }, when: [{ field: 'parent', filled: true, need: ['part_number'] }] },

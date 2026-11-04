@@ -11,8 +11,15 @@ test('every field a rule names exists on its type', () => {
     const named = new Set([...(r.always?.need || []), ...(r.driver ? [r.driver] : [])]);
     for (const v of Object.values(r.values || {})) for (const k of [...(v.only || []), ...(v.need || [])]) named.add(k);
     for (const c of r.when || []) for (const k of [...(c.need || []), ...(c.show || []), ...(c.allEmpty || []), ...(c.field ? [c.field] : [])]) named.add(k);
+    for (const k of r.rare || []) named.add(k);
     for (const k of named) assert.ok(fields.includes(k), `${type}: no field "${k}"`);
   }
+  // a kind's section order names the form's sections (forms.js SECTIONS), the web page's address right after the kind
+  const { SECTIONS } = require('../src/admin/forms');
+  const ids = SECTIONS.source.map((s) => s.id);
+  for (const [kind, v] of Object.entries(SOURCE_KINDS)) for (const id of v.sections || []) assert.ok(ids.includes(id), `source ${kind}: no section "${id}"`);
+  assert.deepEqual(SOURCE_KINDS.web.sections.slice(0, 2), ['kind', 'online']);
+  assert.deepEqual(SOURCE_KINDS.book.sections.slice(0, 2), ['kind', 'people']);
   for (const k of OBJECT_FIELDS) assert.ok(Object.keys(BY_TYPE.artwork.fields).includes(k), `artwork: no field "${k}"`);
 });
 
