@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### Documentation draft: the Kunsthaus's photographs on Commons; bot protection on museum sites
+- **What:** two sections for the chapter "Inhalte erfassen", after "Bildrechte der Museen", saved as the owner's draft
+  (`page_drafts`, part 8, base = the chapter as it was; nothing published): "Bilder des Kunsthauses über Wikimedia
+  Commons" (all 296 Kunsthaus images on the site come from Commons; 34 of 40 sampled files name the Kunsthaus as
+  their source; the law — PD-Art, Art. 2 Abs. 3bis URG, Bridgeman — and the owner's three rules incl. writing to the
+  museum) and "Bot-Schutz auf Museumsseiten" (how a challenge works, why it is weak, terms of use / UWG / database
+  right / DMCA § 1201 / Art. 39a URG / hiQ, the CMS's rule). In the owner's voice, from the owner's questions of
+  2026-11-04; script `scratchpad/doc-drafts.js`. Also: Maxim Vinaver's dates by hand (Wikidata's "31 November 1863"
+  is impossible; Wikipedia: 30 [O.S. 18] November 1863) — `fill-from-wikidata.js` aborts an entry on such a date
+  (noted, not fixed).
+- **Revert:** discard the draft in the CMS.
+
 ### Quality: a pass over the open findings; a year-only boundary is no proof of presence (213)
 - **What:** owner 2026-11-04. The one error — Maiko, made in Gion in 1893 while Kuroda Seiki "was in Paris then":
   his stay ran "1884–1893" and a year-only date means the whole year. Data: the stay now ends "July 1893" (he landed
