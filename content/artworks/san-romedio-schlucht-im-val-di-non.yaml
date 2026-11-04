@@ -1,0 +1,79 @@
+public_id: 115337
+title_lang: it
+title: San Romedio-Schlucht im Val di Non
+names:
+  - lang: it
+    role: translation
+    text: San Romedio Gorge in Val di Non
+  - lang: en
+    role: former
+    text: Bergbach. Sant Romedioschlucht im Val di Non
+creator: robert-russ
+created: 1892
+kind: oil painting
+medium: Oil on canvas
+dimensions: [159.5, 107]
+institution: kunsthaus-zurich
+inventory_number: "2474"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3355/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/moriz-von-kuffner
+    acquired: 1938-07-11 or earlier
+    ended: 1939
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3355/
+        note: "Footnote: Lillie 2003, S. 620."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/stephan-von-kuffner
+    acquired: 1939
+    ended: 1939
+    method: inheritance
+    direct: true
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3355/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 23.03.1939 III.2, Archiv ZKG/KHZ, 10.30.10.42: «Angebot Stephan von Kuffner, Wien / 'zur Erinnerung an Moriz von Kuffner gewidmet von seiner Familie', 16. März 1939»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1939
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3355/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3355/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3355/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3355/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3355/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3355/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3355/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3355/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

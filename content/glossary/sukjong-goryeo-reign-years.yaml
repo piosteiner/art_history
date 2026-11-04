@@ -1,0 +1,18 @@
+public_id: 113317
+name: Sukjong of Goryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 숙종
+  - lang: ko-Hani
+    role: alternative
+    text: 肅宗
+category: calendar
+definition: "The reign years of King Sukjong of Goryeo (肅宗, 숙종), by which Korean histories date 1096–1105: 1096 is Sukjong 1, 1105 Sukjong 10."
+description_md: |-
+  **Sukjong** (肅宗, 숙종): the years of the reign of King Sukjong of Goryeo. The Goryeosa, the history of Goryeo, dates events by the reigning king's year ([[korean-reign-years]]): 1105 is Sukjong 10 (숙종 10년). The year of the accession, 1096, counts as the first year.
+
+  Before: [[heonjong-goryeo-reign-years|Heonjong]]. After: [[yejong-goryeo-reign-years|Yejong]].
+sources:
+  definition:
+    - source: dila-time-authority

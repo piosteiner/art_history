@@ -1,0 +1,73 @@
+public_id: 115106
+title_lang: en
+title: Tête de Séverine, masque
+names:
+  - lang: en
+    role: translation
+    text: Mulâtresse
+  - lang: de
+    role: translation
+    text: Kopf von Séverine, Maske
+  - lang: en
+    role: translation
+    text: Head of Séverine, Mask
+creator: auguste-rodin
+created: 1893
+kind: sculpture
+medium: Bronze
+dimensions: [15, 13, 15]
+institution: kunsthaus-zurich
+inventory_number: 1948/0014
+web_url: https://collection.kunsthaus.ch/de/collection/item/2293/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/helene-de-mandrot
+    ended: 1947-01-31
+    place: la-sarraz
+    label: née Revilliod de Muralt; La Sarraz and Le Pradet
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2293/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1947-01-31
+    method: gift
+    direct: true
+    place: zurich
+    label: offizielle Übernahme am 27.05.1948
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2293/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2293/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2293/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2293/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2293/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2293/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2293/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2293/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

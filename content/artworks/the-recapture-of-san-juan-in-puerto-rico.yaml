@@ -1,0 +1,64 @@
+public_id: 113404
+title_lang: es
+title: La recuperación de San Juan de Puerto Rico
+names:
+  - Recovery of San Juan de Puerto Rico by Governor Juan de Haro
+  - The recovery of the island of Puerto Rico by Don Juan de Haro
+  - lang: en
+    role: translation
+    text: The Recapture of San Juan in Puerto Rico
+parent: battle-series
+creator: eugenio-cajes
+created: 1634/1635
+created_span: uncertain
+completion: completed_by_another
+completion_note: Eugenio Cajés died in December 1634 before finishing it; his pupils Antonio Puga (the landscape) and Luis Fernández completed it.
+materials: [oil paint, canvas]
+dimensions: [290, 344]
+institution: museo-del-prado
+inventory_number: P000653
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/la-recuperacion-de-san-juan-de-puerto-rico/7646323d-bd74-410b-a061-9e968e53c675
+wikidata_id: Q27700873
+metadata:
+  sources: [Wikidata Q27700873 (retrieved 2026-11-03)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/La_recuperaci%C3%B3n_de_la_isla_de_Puerto_Rico_por_el_gobernador_de_la_isla%2C_Juan_de_Haro._Por_Eugenio_Caj%C3%A9s..jpg/1280px-La_recuperaci%C3%B3n_de_la_isla_de_Puerto_Rico_por_el_gobernador_de_la_isla%2C_Juan_de_Haro._Por_Eugenio_Caj%C3%A9s..jpg
+    source_url: https://commons.wikimedia.org/wiki/File:La_recuperaci%C3%B3n_de_la_isla_de_Puerto_Rico_por_el_gobernador_de_la_isla,_Juan_de_Haro._Por_Eugenio_Caj%C3%A9s..jpg
+    license: Public domain
+    credit: Eugenio Caxés
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q27700873
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q27700873
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/la-recuperacion-de-san-juan-de-puerto-rico/7646323d-bd74-410b-a061-9e968e53c675
+      source: museo-del-prado-coleccion
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q27700873
+  materials:
+    - accessed: 2026-11-03
+      property: P186
+      wikidata: Q27700873
+  completion:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/la-recuperacion-de-san-juan-de-puerto-rico/7646323d-bd74-410b-a061-9e968e53c675
+      source: museo-del-prado-coleccion
+      accessed: 2026-11-03
+  dimensions:
+    - accessed: 2026-11-03
+      property: P2048
+      wikidata: Q27700873
+  institution:
+    - accessed: 2026-11-03
+      property: P195
+      wikidata: Q27700873
+  inventory_number:
+    - accessed: 2026-11-03
+      property: P217
+      wikidata: Q27700873

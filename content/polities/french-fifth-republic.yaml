@@ -35,6 +35,7 @@ names:
     role: translation
     text: Пятая французская республика
 period: 1958-10-04/
+country_codes: [FR]
 wikidata_id: Q200686
 metadata:
   sources: [Wikidata Q200686 (retrieved 2026-10-29)]

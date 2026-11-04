@@ -32,6 +32,7 @@ names:
     role: translation
     text: Королевство Испания
 period: 1874/1931
+country_codes: [ES]
 wikidata_id: Q1044536
 metadata:
   sources: [Wikidata Q1044536 (retrieved 2026-10-29)]

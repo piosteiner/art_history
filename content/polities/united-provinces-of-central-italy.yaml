@@ -29,6 +29,7 @@ names:
     role: translation
     text: Объединённые провинции Центральной Италии
 period: 1859-12-08/1860-03-22
+country_codes: [IT]
 wikidata_id: Q2268597
 metadata:
   sources: [Wikidata Q2268597 (retrieved 2026-10-29)]

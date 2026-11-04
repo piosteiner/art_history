@@ -1,0 +1,16 @@
+public_id: 113235
+name: Munjong (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 문종
+  - lang: ko-Hani
+    role: alternative
+    text: 文宗
+category: calendar
+definition: "The reign years of King Munjong of Joseon (文宗, 문종), by which Korean sources date 1451–1452: 1451 is Munjong 1, 1452 Munjong 2."
+description_md: |-
+  **Munjong** (文宗, 문종): the years of the reign of King Munjong of Joseon. Korean sources of the Joseon period count years by the reigning king ([[korean-reign-years]]): 1452 is Munjong 2 (문종 2년). The year of the accession, 1451, counts as the first year.
+
+  Before: [[sejong-reign-years|Sejong]]. After: [[danjong-reign-years|Danjong]].
+wikidata_id: Q483821

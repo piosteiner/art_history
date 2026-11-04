@@ -1,0 +1,16 @@
+public_id: 113420
+name: Cooper Hewitt, Smithsonian Design Museum
+kind: museum
+founded: 1896
+wikidata_id: Q1129820
+metadata:
+  sources: [Wikidata Q1129820 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q1129820
+  founded:
+    - accessed: 2026-11-03
+      property: P571
+      wikidata: Q1129820

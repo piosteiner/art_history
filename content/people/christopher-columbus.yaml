@@ -1,0 +1,83 @@
+public_id: 113467
+name: Christopher Columbus
+given_name: Christopher
+family_name: Columbus
+names:
+  - kind: birth
+    lang: it
+    role: former
+    text: Cristoforo Colombo
+  - lang: lij
+    role: original
+    text: Christoffa Corombo
+  - Cristoffer Columbus
+  - Don Cristobál Colón
+  - Columbus
+  - Cristobal Colon
+  - lang: nl
+    role: translation
+    text: Christoffel Columbus
+  - lang: fr
+    role: translation
+    text: Christophe Colomb
+  - lang: de
+    role: translation
+    text: Christoph Kolumbus
+  - lang: es
+    role: translation
+    text: Cristóbal Colón
+  - lang: ja
+    role: translation
+    text: クリストファー・コロンブス
+  - lang: zh
+    role: translation
+    text: 克里斯托弗·哥伦布
+  - lang: ko
+    role: translation
+    text: 크리스토퍼 콜럼버스
+  - lang: ru
+    role: translation
+    text: Христофор Колумб
+kind: person
+occupations: [explorer, seafarer, traveler, sailor, inventor]
+birth: 1451-09-03/1451-11-09
+birth_label: c. 1451
+death: 1506-05-30
+wikidata_id: Q7322
+metadata:
+  sources: [Wikidata Q7322 (retrieved 2026-11-03)]
+relationships:
+  - type: participated_in
+    to: event/first-arrival-of-christopher-columbus-to-america
+    label: commander
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/05/Ridolfo_del_Ghirlandaio_-_Ritratto_di_Cristoforo_Colombo_%281520%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ridolfo_del_Ghirlandaio_-_Ritratto_di_Cristoforo_Colombo_(1520).jpg
+    license: Public domain
+    credit: Ridolfo del Ghirlandaio
+identifiers:
+  bnf: "119304566"
+  gnd: "118564994"
+  idref: "027213595"
+  kulturnav: d4544c9e-f29a-450f-a0de-c55f3ee8cdf3
+  lc: n78085478
+  nlk: KAC199605497
+  ulan: "500237956"
+  viaf: "17231583"
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q7322
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q7322
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q7322
+  occupations:
+    - accessed: 2026-11-03
+      property: P106
+      wikidata: Q7322

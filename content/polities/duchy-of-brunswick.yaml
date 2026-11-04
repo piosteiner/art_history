@@ -32,6 +32,7 @@ names:
     role: translation
     text: Герцогство Брауншвейг
 period: 1815/1918
+country_codes: [DE]
 wikidata_id: Q326029
 metadata:
   sources: [Wikidata Q326029 (retrieved 2026-10-29)]

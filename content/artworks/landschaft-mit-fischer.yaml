@@ -1,0 +1,129 @@
+public_id: 115192
+title_lang: de
+title: Landschaft mit Fischer
+creator: jacobus-sibrandi-mancadan
+kind: oil painting
+medium: Oil on oak panel
+dimensions: [33, 28.2]
+institution: kunsthaus-zurich
+inventory_number: R 15
+web_url: https://collection.kunsthaus.ch/de/collection/item/2683/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586306
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/05/Jacobus_Sibrandi_Mancadan_-_Landschaft_mit_Fischer_-_R_15_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jacobus_Sibrandi_Mancadan_-_Landschaft_mit_Fischer_-_R_15_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jacobus Mancadan
+provenance:
+  - owner: person/a-bruchmann
+    acquired: 1885 or later
+    ended: 1904-03-01
+    place: magdeburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2683/
+        note: "Footnote: Auktion Rudolph Lepke's Kunst-Auctions-Haus Berlin 01.- 02.03.1904, S. 9, Lot 47: Titelseite: «Gemälde alter Meister in Tempera und Öl. Sammlung des Herrn A. Bruchmann, Magdeburg, welche wegen Umzuges versteigert wird.»; Kronig 1910, S. 187, Nr. 47; Nederlands Instituut voor Kunstgeschiedenis RKD, fichescollectie Cornelis Hofstede de Groot, Nummer 1296306."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/rudolph-lepke-s-kunst-auctions-haus
+    role: agent
+    acquired: 1904-03-01
+    ended: 1904-03-02
+    method: auction
+    direct: true
+    place: berlin
+    label: Lot 47
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2683/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Herr Thies
+    acquired: 1910 or earlier
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2683/
+        note: "Footnote: Kronig, wie oben Fussnote 3, S. 183."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/albert-grossmann
+    acquired: February 1920 or earlier
+    label: Brombach (Baden); Nr. 696
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2683/
+        note: "Footnote: Nederlands Instituut voor Kunstgeschiedenis RKD, Nummer 1296306 und 1296307 wie oben Fussnote 3; Ausst.-Kat. Kunsthaus Zürich 1949, S. 16, Nr. 15. Albert Grossmann war dritter Sohn des Fabrikanten Adolf Grossmann (1816-1874), gelernter Kaufmann, Fabrikant und ein zeitgenössisch bekannter Sammler, Kunstexperte und Mäzen. Gemäß vorliegenden Informationen und Dokumenten liegen keine Anhaltspunkte für…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-neupert
+    role: dealer
+    ended: 1939-11-18
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2683/
+        note: "Footnote: ZKG/KHZ Werkdossier, Rechnung der Galerie Neupert an Leopold Ruzicka, 18.11.1939."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1939-11-18
+    ended: 1948-12-27
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2683/
+        note: "Footnote: ZKG/KHZ Werkdossier, wie oben Fussnote 10; Sitzungsprotokoll der Sammlungskommission, 23.12.1948 I., Archiv ZKG/KHZ, 10.30.10.42; Zürcher Kunstgesellschaft 1949 Jahresbericht, S. 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1948-12-27
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2683/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 11; Zürcher Kunstgesellschaft 1949 Jahresbericht, wie oben Fussnote 11; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 100."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2683/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2683/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2683/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2683/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2683/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2683/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2683/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2683/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

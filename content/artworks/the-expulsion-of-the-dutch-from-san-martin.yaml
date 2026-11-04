@@ -1,0 +1,26 @@
+public_id: 113410
+title_lang: en
+title: The Expulsion of the Dutch from the Island of San Martín by the Marquis of Cadreita
+names:
+  - lang: es
+    role: alternative
+    text: Marqués de Cadreita mandando una flota
+parent: battle-series
+creator: francisco-de-zurbaran
+created: 1634/1635
+fate: lost
+fate_note: Lost; known from the descriptions and inventories of the Hall of Realms. It hung on the north wall.
+wikidata_id: Q113999474
+metadata:
+  sources: [Wikidata Q113999474 (retrieved 2026-11-03)]
+sources:
+  fate: ["Wikipedia (en): Hall of Realms"]
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q113999474
+  created: ["Wikipedia (en): Hall of Realms"]
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q113999474

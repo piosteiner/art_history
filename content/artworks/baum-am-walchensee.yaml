@@ -1,0 +1,105 @@
+public_id: 115500
+title_lang: en
+title: Baum am Walchensee
+names:
+  - lang: en
+    role: translation
+    text: A Tree at Walchensee
+creator: lovis-corinth
+created: 1923
+kind: oil painting
+medium: Oil on canvas
+dimensions: [70, 91]
+institution: kunsthaus-zurich
+inventory_number: "2417"
+web_url: https://collection.kunsthaus.ch/de/collection/item/5134/
+on_loan: true
+on_loan_since: 1933
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q117884311
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8c/Lovis_Corinth_-_Baum_am_Walchensee_-_2417_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Lovis_Corinth_-_Baum_am_Walchensee_-_2417_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Lovis Corinth
+provenance:
+  - owner: institution/kunsthalle-bern
+    acquired: 1924-09-28
+    ended: 1924-10-26
+    direct: true
+    place: bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5134/
+        note: "Footnote: Kat. Kunsthalle Bern 1924, S. 4, Nr. 31."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/charlotte-berend-corinth
+    acquired: 1925
+    ended: 1937-04-03
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5134/
+        note: "Footnote: Berend-Corinth 1958, S. 174, Nr. 930: «Bes. Charlotte Berend-Corinth / Ksth. Zürich»; Berend-Corinth 1992, S. 195, Nr. 930: «Provenienz: Charlotte Berend-Corinth / Kunsthaus Zürich»; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 587; Sitzungsprotokoll der Sammlungskommission, 04.03.1937, Archiv ZKG/KHZ, 10.30.10.41."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthalle-basel
+    acquired: 1936-03-14
+    ended: 1936-04-13
+    direct: true
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5134/
+        note: "Footnote: Kat. Kunsthalle Basel 1936, S. 9, Nr. 63."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1937-03-04
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 21816.1
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5134/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; ZKG/KHZ, Depotbuch Nr. 2, ab 1919, S. 219: «Am Walchensee (Baum?) 1923 Ankauf Kunsthaus Zürich 1937»; ZKG/KHZ, Inventarbogen/Werkdossier Slg.; Sitzungsprotokoll der Sammlungskommission, 04.03.1937, Archiv ZKG/KHZ, 10.30.10.41."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "195.930"
+    label: Berend-Corinth 1992 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5134/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5134/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5134/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5134/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5134/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5134/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5134/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5134/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

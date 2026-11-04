@@ -12,6 +12,11 @@ institution: cantor-arts-center
 inventory_number: "1985.86"
 web_url: https://museum.stanford.edu/node/904
 description_md: 1981 bei Coubertin im Wachsausschmelzverfahren gegossen, wie Rodin es bevorzugte; ein Geschenk der B. Gerald Cantor Collection am östlichen Ende des Rodin-Skulpturengartens der Stanford University.[[source/cantor-gates-of-hell-1985-86|“cast by the Coubertin Foundry in 1981” · “using the lost-wax process favored by Rodin” · “Gift of the B. Gerald Cantor Collection, 1985.86.” · “Visually anchoring the garden at its eastern end”]]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/2015-Auguste_Rodin-The_Gates_of_Hell-a_bronze_sculpture_in_Stanford_University.jpg/1280px-2015-Auguste_Rodin-The_Gates_of_Hell-a_bronze_sculpture_in_Stanford_University.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:2015-Auguste_Rodin-The_Gates_of_Hell-a_bronze_sculpture_in_Stanford_University.jpg
+    license: CC BY-SA 4.0
+    credit: M. B., Jr. (Wikimedia Commons)
 provenance:
   - owner: institution/fonderie-de-coubertin
     role: foundry

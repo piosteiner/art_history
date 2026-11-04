@@ -1,0 +1,86 @@
+public_id: 115335
+title_lang: de
+title: Frau mit Schüssel
+names:
+  - lang: en
+    role: translation
+    text: Woman with Bowl
+creator: johann-wilhelm-von-tscharner
+created: 1920/1935
+created_label: c. 1925/1930
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [76, 57]
+institution: kunsthaus-zurich
+inventory_number: 1952/0004
+web_url: https://collection.kunsthaus.ch/de/collection/item/3349/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586349
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/be/Johann_Wilhelm_von_Tscharner_-_Frau_mit_Sch%C3%BCssel_-_1952-0004_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Wilhelm_von_Tscharner_-_Frau_mit_Sch%C3%BCssel_-_1952-0004_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Johann Wilhelm von Tscharner
+provenance:
+  - owner: institution/galerie-max-g-bollag
+    role: agent
+    acquired: 1952-03-20
+    ended: 1952-03-21
+    method: auction
+    place: zurich
+    label: Lot 240
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3349/
+        note: "Footnote: Auktion Bollag (20.-21.03.1952), S. 16, Lot 240: hier als «Frau in Grün»; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 392."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hans-mayenfisch
+    acquired: 1952-03-21
+    ended: 1952
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3349/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1952
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3349/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3349/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3349/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3349/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3349/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3349/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3349/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3349/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,59 @@
+public_id: 115068
+name: Wilhelm Lehmbruck
+given_name: Wilhelm
+family_name: Lehmbruck
+birth: 1881-01-04
+death: 1919-03-25
+wikidata_id: Q551282
+metadata:
+  sources: [Wikidata Q551282 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/german-empire
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q551282
+  - type: died_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q551282
+  - type: studied_at
+    to: institution/kunstakademie-dusseldorf
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q551282
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q551282
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e5/Wilhelm_Lehmbruck%2C_Selbstbildnis%2C_1902.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wilhelm_Lehmbruck,_Selbstbildnis,_1902.jpg
+    license: Public domain
+    credit: Wilhelm Lehmbruck (1881-1919)
+identifiers:
+  bnf: 14967588t
+  dome: "217"
+  gnd: "118571117"
+  idref: "027328333"
+  kulturnav: 2c3ad0c1-ee94-42b4-80c3-2b3685d27a06
+  lc: n85094151
+  rkd: "49130"
+  sikart: "9608170"
+  ulan: "500019056"
+  viaf: "32269139"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q551282
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q551282

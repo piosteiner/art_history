@@ -1,0 +1,102 @@
+public_id: 115628
+title_lang: fr
+title: Portrait Ambroise Vollard
+names:
+  - lang: fr
+    role: translation
+    text: Portrait of Ambroise Vollard
+  - lang: fr
+    role: original
+    text: Portrait d'Ambroise Vollard
+creator: pierre-bonnard
+created: 1899/1910
+created_label: c. 1904/1905
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [74, 93]
+institution: kunsthaus-zurich
+inventory_number: 1950/0007
+web_url: https://collection.kunsthaus.ch/de/collection/item/991/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q2842419
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/af/Pierre_Bonnard_-_Portrait_Ambroise_Vollard_-_1950-0007_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre_Bonnard_-_Portrait_Ambroise_Vollard_-_1950-0007_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Pierre Bonnard
+provenance:
+  - owner: person/ambroise-vollard
+    ended: 1939-07-22 or earlier
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/991/
+        note: "Footnote: Dauberville 1992 (Bd. 1), S. 282, Nr. 306."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jean-dufresne
+    ended: 1950
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/991/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; ZKG/KHZ Inventarbogen/Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-maeght
+    role: agent
+    ended: 1950
+    direct: true
+    place: paris
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/991/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 01.02.1950 und 14.03.1950, Archiv ZKG/KHZ, 10.30.10.42."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1950
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 22000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/991/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: I.282.306
+    label: Dauberville Bonnard (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

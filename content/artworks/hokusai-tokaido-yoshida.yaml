@@ -1,0 +1,62 @@
+public_id: 113448
+title_lang: en
+title: Yoshida on the Tōkaidō
+names:
+  - lang: ja
+    role: original
+    text: 東海道吉田
+  - Tōkaidō Yoshida
+  - Yoshida on the Tōkaidō Road
+  - lang: en
+    role: original
+    text: Yoshida at Tokaido
+  - lang: fr
+    role: translation
+    text: Yoshida dans la région de Tōkaidō
+  - lang: es
+    role: translation
+    text: Yoshida en la Tōkaidō
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 東海道吉田
+parent: thirty-six-views-of-mount-fuji
+part_number: "29"
+creator: katsushika-hokusai
+created: 1830/1832
+created_label: c. 1830–1832
+created_span: uncertain
+institution: metropolitan-museum-of-art
+inventory_number: JP1324
+web_url: https://www.metmuseum.org/art/collection/search/55283
+wikidata_id: Q18173417
+metadata:
+  sources: [Wikidata Q18173417 (retrieved 2026-11-03)]
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/original/DP141007.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/55283
+    license: Public domain
+    credit: The Metropolitan Museum of Art
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173417
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173417
+  created:
+    - url: https://www.metmuseum.org/art/collection/search/55283
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173417
+  institution:
+    - url: https://www.metmuseum.org/art/collection/search/55283
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.metmuseum.org/art/collection/search/55283
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03

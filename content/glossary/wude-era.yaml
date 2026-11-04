@@ -1,0 +1,15 @@
+public_id: 113046
+name: Wude
+names:
+  - lang: zh
+    role: original
+    text: 武德
+category: calendar
+definition: "Chinese era name (武德) of the Tang for the years 618–626: 618 is Wude 1 (元年) and Wude 9 is 626."
+description_md: |-
+  **Wude** (武德) is a Chinese era name ([[nianhao]]) of the Tang, proclaimed in 618 under Emperor Gaozu (高祖). Its years are counted in lunar years: 618 is Wude 1 (元年), 626 its last year, Wude 9. A Chinese source dates a year within it as "Wude 2" (武德二年) rather than by a continuous count.
+
+  After: [[zhenguan-era|Zhenguan]].
+sources:
+  definition:
+    - source: dila-time-authority

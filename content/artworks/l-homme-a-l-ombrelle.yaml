@@ -1,0 +1,201 @@
+public_id: 115224
+title_lang: fr
+title: L’Homme à l’ombrelle
+names:
+  - lang: de
+    role: translation
+    text: Mann mit Sonnenschirm
+  - lang: en
+    role: translation
+    text: Man with a Parasol
+  - lang: fr
+    role: translation
+    text: Portrait de Victor Jacquemont au parasol
+  - lang: de
+    role: former
+    text: Bildnis von Victor Jacquemont mit Sonnenschirm
+  - lang: fr
+    role: former
+    text: Portrait of Victor Jacquemont with Sunshade
+  - lang: fr
+    role: original
+    text: L’homme au parasol
+creator: claude-monet
+created: 1865/1867
+kind: oil painting
+medium: Oil on canvas
+dimensions: [99, 61]
+institution: kunsthaus-zurich
+inventory_number: "2334"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2816/
+on_loan: true
+on_loan_since: 1934
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q50807967
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c5/Claude_Monet_-_L%E2%80%99Homme_%C3%A0_l%E2%80%99ombrelle_-_2334_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_L%E2%80%99Homme_%C3%A0_l%E2%80%99ombrelle_-_2334_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: person/victor-jacquemont-du-donjon
+    ended: 1906-08-14
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+        note: "Footnote: Der Porträtierte Victor Jacquemont war ein Jugendfreund von Claude Monet. Es ist nicht klar, ob es ein Auftragswerk war. Vgl. Recherchen Wildenstein Plattner Institute, E-Mail Korrespondenz 04.12.2024"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/victor-jacquemont-du-donjon
+    role: estate
+    acquired: 1906-08-14
+    ended: 1907-01-21
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+        note: "Footnote: Bei der Auktion vom 15-16. Januar 1907 wurde das Bild von der Witwe von Victor Jacquemont, Victorie Thierry, eingeliefert. Vgl. Minutes de vente, Auktion Hôtel Drouot 15.-16. Januar 1907, zur Verfügung gestellt von Wildenstein Plattner Institute, E-Mail-Korrespondenz , 04.12.2024; Auktion Hôtel Drouot (15.-16.01.1907), Lot 129."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1907-01-15
+    ended: 1907-01-15
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 129
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+        note: "Footnote: Das Bild wurde bei der Auktion nicht verkauft und ging vermutlich an die Einlieferin, der Witwe von Victor Jacquemont, zurück, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fernand-lair-dubreuil
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+        note: "Footnote: Wildenstein 1996, II. S. 28, Nr. 54.; Fernand Lair-Dubreuil war Auktionator beim Hôtel Drouot als das Werk 1907 dort angeboten wurde. Es ist wahrscheinlich, dass er nie Eigentümer des Werkes war."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1907-01-21
+    ended: 1907-02-02
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+        note: "Footnote: E-Mail Korrespondenz, 04.12.2024, wie oben Fussnote 2; E-Mail Korrespondenz Paul Cassirer & Walter Feilchenfeldt Archiv, Zürich, 03.07.2023."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-paul-cassirer
+    role: dealer
+    acquired: 1907-02-02
+    ended: 1908-05-06
+    method: purchase
+    direct: true
+    place: berlin
+    price:
+      amount: 3000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+        note: "Footnote: E-Mail Korrespondenz E-Mail Korrespondenz Paul Cassirer & Walter Feilchenfeldt Archiv, wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/kunstsalon-franz-hancke
+    acquired: 1908-05-06
+    method: purchase
+    direct: true
+    place: wroc-aw
+    label: 3300 RM; Breslau
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+        note: "Footnote: «Kunstausstellungen», 1908, S. 439; E-Mail Korrespondenz Paul Cassirer & Walter Feilchenfeldt Archiv, wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/carl-sachs
+    acquired: 1911 or earlier
+    ended: 1939-04-21
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+        note: "Footnote: Das Werk wurde an der vierten Ausstellung für Malerei der Gegenwart, die im Schlesischen Museum der Bildenden Künste im Frühling 1911 veranstaltet wurde ausgestellt. Vgl. Kat. Schlesische Museum der bildenden Künste 1911, S. 23, Nr. 189 «Besitzer: Herrn Carl Sachs», https://obc.opole.pl/dlibra/publication/2012/edition/8826/content?&meta-lang=de [Zugriff: 18.11.2025]; Tatzkow/Hinz, 2006, S. 161; Ti…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunstmuseum-luzern
+    acquired: 1933 or later
+    ended: 1934-09-14
+    direct: true
+    place: lucerne
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+        note: "Footnote: Brief Wilhelm Wartmann an Schweizerische Verrechnungsstelle 15.04.1942, Schweizerisches Bundesarchiv, E7160-08#1968/28#487*, Az. 2.4, Zürcher Kunstgesellschaft Zürich, 1940–1943: «Was nun die weitern von Herrn Sachs eingeführten Bilder anbetrifft, teilen wir Ihnen mit, dass diese im Jahr 1934 zum Teil durch uns vom Kunstmuseum Luzern übernommen worden sind, das diese mit Freipass Nr. 4877 Zollamt …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    role: agent
+    acquired: 1939
+    ended: 1939
+    direct: true
+    place: st-gallen
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+        note: "Footnote: Brief Wilhelm Wartmann an Carls Sachs, 21.04.1939, Archiv ZKG/KHZ, Ausgehende Korrespondenz Archiv 10.30.20.88, S. 347; Eintrag im Terminkalender von Fritz Nathan, 01.03.1939: «Zürich: Sachs», 25.03.1939: «Besprechung Wartmann w Sachs», E-Mail Korrespondenz Nathan Fine Art GmbH, 28.02.2023."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1939-04-20
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 22500
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission 17. April 1939, Archiv ZKG/KHZ, 10.30.10.41-42, 2.; Sitzungsprotokoll des Vorstands 20. April 1939 Archiv ZKG/KHZ, 10.30.10.12, 1. b."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: II.28.54
+    label: Wildenstein Monet (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2816/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,6 +1,7 @@
 public_id: 100997
 name: Kingdom of Prussia
 period: 1701-01-18/1918-11-09
+country_codes: [DE, PL, RU, LT]
 wikidata_id: Q27306
 metadata:
   sources: [Wikidata Q27306 (retrieved 2026-10-18)]

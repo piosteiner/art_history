@@ -1,0 +1,146 @@
+public_id: 114919
+title_lang: de
+title: Die Erinnyen vertreiben Alkmaion von der Leiche seiner von ihm getöteten Mutter Eriphyle
+names:
+  - lang: en
+    role: translation
+    text: The Erinyes Drive Alcmaeon from the Corpse of His Mother, Eriphyle, Whom He Has Killed
+creator: henry-fuseli
+created: 1821
+kind: oil painting
+medium: Oil on canvas
+dimensions: [122.5, 157]
+institution: kunsthaus-zurich
+inventory_number: "2441"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1176/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q107543371
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8f/Erinyes_Drive_Alcmaeon_from_the_Corpse_of_Eriphyle_%28F%C3%BCssli%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Erinyes_Drive_Alcmaeon_from_the_Corpse_of_Eriphyle_(F%C3%BCssli).jpg
+    license: Public domain
+    credit: Henry Fuseli
+provenance:
+  - owner: artist/henry-fuseli
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1176/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1827-05-28
+    ended: 1827-05-28
+    method: auction
+    place: london
+    label: Lot 43
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1176/
+        note: "Footnote: Auktion Christie London 28.05.1827, S. 5, Lot 43, https://archive.org/details/frick-31072001230384/mode/2up (22.04.2026)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/john-knowles
+    acquired: 1827-05-28
+    method: purchase
+    direct: true
+    place: london
+    price:
+      amount: 52
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1176/
+        note: "Footnote: Auktion Christie, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Lord North of Wroxton Abbey
+    label: Wroxton Abbey
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1176/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 21.02.1934, Archiv ZKG/KHZ, 10.30.10.41, I.o. Ankaufsfragen."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/baroness-susan-north
+    direct: true
+    label: Wroxton Abbey; Wroxten Abbey, Erbe
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1176/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/susan-north
+    method: inheritance
+    direct: true
+    label: Countess of Guilford (*1771, +1837)
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1176/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/louis-meier
+    role: dealer
+    acquired: 1934-02-21
+    ended: 1934-08-30
+    place: dornach
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1176/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 6; Wilhelm Wartmann an Gemälde-Galerie Meier, 30.08.1934, Archiv ZKG/KHZ, 10.30.20.75, S. 272; Hinweis auf der Rückseite einer Fotografie des Werks, ZKG/KHZ, Künstlerdossier Slg. zu Johann Heinrich Füssli."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/friedrich-eugen-girtanner
+    role: dealer
+    ended: 1938-09-24
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1176/
+        note: "Footnote: Brief von Wilhelm Wartmann an Friedrich Girtanner, 30.04.1938, Archiv ZKG/KHZ, 10.30.20.85, Ausgehende Korrespondenz, S. 489; Sitzungsprotokoll der Sammlungskommission, 01.07.1938, Archiv ZKG/KHZ, 10.30.10.41, I.b.3; Sitzungsprotokoll des Vorstands der ZKG, 24.09.1938, Archiv ZKG/KHZ, 10.30.10.12, II.a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1938-09-24
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 1800
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1176/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 11; Sitzungsprotokoll des Vorstandes, wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: I.601.1489
+    label: Schiff (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1176/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1176/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1176/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1176/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1176/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1176/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1176/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

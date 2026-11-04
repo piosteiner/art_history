@@ -1,0 +1,40 @@
+public_id: 115018
+name: Roger Bissière
+given_name: Roger
+family_name: Bissière
+birth: 1886-09-22
+death: 1964-12-02
+wikidata_id: Q518444
+metadata:
+  sources: [Wikidata Q518444 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q518444
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/BISSIERE_1960.jpg/1280px-BISSIERE_1960.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:BISSIERE_1960.jpg
+    license: CC BY-SA 4.0
+    credit: Christ-schmitt
+identifiers:
+  bnf: 12215566h
+  dome: "8597"
+  gnd: "119286165"
+  idref: "028634535"
+  kulturnav: 0d8e45e8-089e-47d1-8cc0-98c0ea0c80e9
+  lc: n50026219
+  rkd: "8658"
+  ulan: "500021487"
+  viaf: "49275774"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q518444
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q518444

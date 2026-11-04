@@ -1,0 +1,163 @@
+public_id: 115160
+title_lang: en
+title: Hafenszene mit Galeerensklaven
+names:
+  - lang: en
+    role: translation
+    text: Harbour Scene with Galley Slaves
+  - lang: de
+    role: former
+    text: Ruine an einem Gewässer
+  - lang: en
+    role: former
+    text: Rundbau am Meer mit Orientalien
+  - lang: en
+    role: former
+    text: Rundbau am Meer, Schiffsanlegestelle
+  - lang: de
+    role: former
+    text: Landschaft mit Ruinen
+  - lang: en
+    role: former
+    text: Burgruine am Wasser
+  - lang: de
+    role: former
+    text: Ein italienischer Seehafen
+creator: jan-asselijn
+created: c. 1652
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [49.5, 42.5]
+institution: kunsthaus-zurich
+inventory_number: R 1
+web_url: https://collection.kunsthaus.ch/de/collection/item/258/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586239
+provenance:
+  - owner: artist/jan-asselijn
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/258/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/staatliche-museen-zu-berlin
+    acquired: 1698 or earlier
+    ended: 1926
+    place: berlin
+    label: «Gemälde-Sammlung des Königlichen Museums zu Berlin»; Nr. 1698
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/258/
+        note: "Footnote: E-Mail-Korrespondenz Stiftung Preussische Schlösser und Gärten (SPSG), Ulrike Schmiegelt, 18.02.2022: «Das Gemälde ist (dank dem Hinweis auf die Galerienummer) 1698 im Potsdamer Stadtschloss nachweisbar. 1710 gelangte es von dort ins Berliner Schloss. 1793 ist es im Schloss Berlin in den Paradekammern. 1829 wurde es an das Königliche Museum Berlin abgegeben. 1906 zurück an die Schlösser. 1926 ist …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/haus-hohenzollern
+    acquired: 1926
+    method: transfer
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/258/
+        note: "Footnote: Wie oben Fussnote 3; E-Mail-Korrespondenz SMB, Franziska May, 17.02.2022: «1926, vermutlich im Zuge der Fürstenabfindung, kam das Gemälde in den Besitz der Hohenzollern, die es über den Kunsthandel veräußerten.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hugo-moses
+    role: agent
+    direct: true
+    place: berlin
+    label: on consignment
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/258/
+        note: "Footnote: E-Mail-Korrespondenz SMB, Franziska May, wie oben Fussnote 4: «Ausfindig machen konnte ich aber einen Zeitungsartikel (Sign. SMB-ZA, IV/NL Bode 0433, in: Erste Beilage zur Vossischen Zeitung, Morgenausgabe, 13.11.1928), der sich auf die Veräußerung von Kunstwerken durch die Hohenzollern ab 1926 über den Schweizer Kunsthandel bezieht (s. Anhang). Darin werden eine Berliner Kunsthändlerin Moser [Nam…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/heinrich-zuppinger
+    role: dealer
+    direct: true
+    place: switzerland
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/258/
+        note: "Footnote: Wie oben Fussnote 5; Ergebnisse der Provenienzrecherche, Museum Wiesbaden, Inv.-Nr. M 411: «Der Kunsthändler Heinrich Zuppinger ist im Züricher Adressbuch von 1936 unter der Rubrik 'Antiquitätengeschäfte' mit dem Eintrag 'Zuppinger, Hch., Bahnhofstrass 73' aufgeführt. Im Jahr 1947 ist er von Zürich nach Herrliberg umgezogen. Eine Anfrage bei der R. Zuppinger Gemälde AG, RZ Galerie nach erhaltenen …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-neupert
+    role: dealer
+    ended: 1942-09-23
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/258/
+        note: "Footnote: Rechnung der Galerie Neupert an Leopold Ruzicka, 23.09.1942, ZKG/KHZ, Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1942-09-23
+    ended: 1948-12-27
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/258/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 23.12.1948 I., Archiv ZKG/KHZ, 10.30.10.42; Zürcher Kunstgesellschaft 1949 Jahresbericht; ZKG/KHZ Werkdossier, wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1948-12-27
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/258/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 12; Zürcher Kunstgesellschaft 1949 Jahresbericht, wie oben Fussnote 9; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 101."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/258/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "158.208"
+    label: Steland-Stief 1971 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/258/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/258/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/258/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/258/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/258/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/258/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/258/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/258/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

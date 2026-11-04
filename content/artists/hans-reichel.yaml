@@ -1,0 +1,58 @@
+public_id: 115137
+name: Hans Reichel
+given_name: Hans
+family_name: Reichel
+birth: 1892-08-09
+death: 1958-12-07
+wikidata_id: Q989893
+metadata:
+  sources: [Wikidata Q989893 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q989893
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q989893
+  - type: born_in
+    to: place/wurzburg
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q989893
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q989893
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q989893
+identifiers:
+  bnf: "155544313"
+  gnd: "118599119"
+  idref: "050549782"
+  kulturnav: 812e48f5-fcb8-4b87-873d-3561106bb11d
+  lc: n81050102
+  rkd: "66040"
+  ulan: "500007293"
+  viaf: "56925841"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q989893
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q989893

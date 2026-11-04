@@ -1,0 +1,157 @@
+public_id: 115244
+title_lang: en
+title: Maria mit Kind
+names:
+  - lang: en
+    role: translation
+    text: Mary and Child
+creator: tilman-riemenschneider
+attribution_label: circle of Tilman Riemenschneider
+created: 1510/1525
+created_label: c. 1515/1520
+created_span: uncertain
+kind: sculpture
+medium: Limewood with traces of polychromy
+dimensions: [65, 41, 25]
+institution: kunsthaus-zurich
+inventory_number: 1944/0022
+web_url: https://collection.kunsthaus.ch/de/collection/item/2842/
+on_loan: true
+on_loan_since: 1944
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner_label: Paul
+    place: gro-ostheim
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+        note: "Footnote: Julius Baum, Beurteilung der 6 Skulpturen des Katalogs ‘Ausländische Kunst in Zürich 1943’ Nr. 5, 7, 9, 10, 14, 15, undatiert, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.145: «Das anmutige Bildwerk gehörte Sanitätsrat Dr. Otto Grossmann in Frankfurt a. M., wo ich es wiederholt sah. Es befand sich gegen 1900 in Privatbesitz in Obernburg bei Aschaffenburg; die Vorfahren der Besitzerin hatten…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown
+    method: inheritance
+    direct: true
+    label: Unbekannt (Sammlung); Obernburg am Main; dated gegen 1900
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/otto-karl-eduard-grossmann
+    acquired: 1909 or earlier
+    method: purchase
+    direct: true
+    place: frankfurt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+        note: "Footnote: Wie oben Fussnote 3. Die Figur wurde 1921 bei der Ausstellung «Mittelalterliche Bildwerke aus Frankfurter Privatbesitz» des Frankfurter Kunstvereins gezeigt und im Katalog (Kat. Frankfurter Kunstverein 1921, S. 21, Nr. 67) abgebildet, aber ohne Angabe zur konkreten Provenienz. Möglicherweise ist dies aber ein Hinweis, dass sie sich zu diesem Zeitpunkt noch bei Grossmann in Frankfurt am Main befand…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/anna-maria-melior
+    acquired: 1914 or later
+    direct: true
+    place: darmstadt
+    label: née Grossmann
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+        note: "Footnote: Brief von Justus Bier, University of Lousville, an die Direktion des Kunsthaus Zürich, 13.01.1954, ZKG/KHZ, Werkdossier: «Die Halbfigur ist mir im Original bekannt. Ich sah sie zuerst in der Sammlung des Sanitätsrats Dr. Otto Grossmann in Frankfurt a. Main, der die Büste aus Grossostheim bei Aschaffenburg erworben hatte und sie im Hessenkalender 1909 veröffentlichte. Die Büste war später im Besitz…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/friedrich-andreae
+    acquired: 1929 or earlier
+    ended: 1944
+    method: purchase
+    place: berlin
+    label: Berlin and Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+        note: "Footnote: Kaufvertrag, 31.08.1944, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.145: «Herr Fritz Andreae erklärt ausdrücklich mit voller Haftbarkeit in Bezug auf die gegenwärtigen, ihm bekannten kriegsbedingten Eigentumsnachweise beim Handel mit Kunstwerken, dass er alle die oben genannten Werke in den 20er Jahren im deutschen Kunsthandel erworben und bei Anlass seines Umzuges nach Zürich mit behördli…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/adolf-johr
+    acquired: 1944-09-11 or earlier
+    ended: 1953
+    method: purchase
+    direct: true
+    place: zurich
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg.: «1955 laut Aussage v. Frau Dr. Jöhr nun dem Kunsthaus gehörend»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/fides-treuhand-vereinigung
+    acquired: 1944-09-11
+    ended: 1955
+    direct: true
+    place: zurich
+    label: «treuhänderisch namens und im Auftrag eines ungenannten Eigentümers»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; Sitzungsprotokoll der Sammlungskommission, 11.10.1944, S. 3, II.3., Archiv ZKG/KHZ, 10.30.10.42; Leihgabe-Vertrag der Zürcher Kunstgesellschaft zu Leihgabe Inv.-Nr. 1944/24, 11.09.1944, ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1955
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

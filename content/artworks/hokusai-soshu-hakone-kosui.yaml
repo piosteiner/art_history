@@ -1,0 +1,58 @@
+public_id: 113454
+title_lang: en
+title: The Lake at Hakone in Sagami Province
+names:
+  - lang: ja
+    role: original
+    text: 相州箱根湖水
+  - Sōshū Hakone kosui
+  - lang: fr
+    role: translation
+    text: Le lac d'Hakone dans la province de Sagami
+  - lang: es
+    role: translation
+    text: El lago de Hakone en la provincia de Sagami
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 相州箱根湖水
+parent: thirty-six-views-of-mount-fuji
+part_number: "34"
+creator: katsushika-hokusai
+created: 1830/1833
+created_label: c. 1830–1833
+created_span: uncertain
+institution: art-institute-of-chicago
+inventory_number: "1925.3277"
+web_url: https://www.artic.edu/artworks/87013
+wikidata_id: Q18173424
+metadata:
+  sources: [Wikidata Q18173424 (retrieved 2026-11-03)]
+images:
+  - url: https://www.artic.edu/iiif/2/d91792a7-92b8-4090-78af-9b5156639350/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/87013
+    license: Public domain
+    credit: Art Institute of Chicago, Clarence Buckingham Collection
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173424
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173424
+  created:
+    - url: https://www.artic.edu/artworks/87013
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173424
+  institution:
+    - url: https://www.artic.edu/artworks/87013
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.artic.edu/artworks/87013
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03

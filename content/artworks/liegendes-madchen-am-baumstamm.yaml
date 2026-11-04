@@ -1,0 +1,70 @@
+public_id: 115605
+title_lang: de
+title: Liegendes Mädchen am Baumstamm
+names:
+  - lang: en
+    role: translation
+    text: Badende
+creator: otto-mueller
+created: c. 1914
+created_span: uncertain
+kind: print
+medium: Lithograph, watercoloured, on laid paper
+dimensions: [31.5, 43.3]
+institution: kunsthaus-zurich
+inventory_number: Gr.1933/0112
+web_url: https://collection.kunsthaus.ch/de/collection/item/9023/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/hugo-moser
+    role: dealer
+    ended: 1933-08-03
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/9023/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 23.08.1933 III. Schenkungen, Archiv ZKG/KHZ, 10.30.10.41."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1933-08-03
+    method: gift
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/9023/
+        note: "Footnote: ZKG/KHZ Inventarbuch Gr. Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "49.34"
+    label: Karsch (catalogue raisonné)
+  - number: "63"
+    label: Buchheim (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

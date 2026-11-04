@@ -1,0 +1,92 @@
+public_id: 115466
+title_lang: fr
+title: Femme nue tenant un livre
+names:
+  - lang: en
+    role: translation
+    text: Liegender Akt mit Buch
+  - lang: en
+    role: translation
+    text: Nude Holding a Book
+  - lang: en
+    role: former
+    text: Nu‚ tendu tenant un livre
+  - lang: en
+    role: original
+    text: Nu au livre
+creator: felix-vallotton
+created: 1924
+kind: oil painting
+medium: Oil on canvas
+dimensions: [115, 146]
+institution: kunsthaus-zurich
+inventory_number: "2458"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3971/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q116869771
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c0/F%C3%A9lix_Vallotton_-_Femme_nue_tenant_un_livre_-_2458_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Vallotton_-_Femme_nue_tenant_un_livre_-_2458_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Félix Vallotton
+provenance:
+  - owner: artist/felix-vallotton
+    role: estate
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3971/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jacques-rodrigues-hendriques
+    role: dealer
+    ended: 1938
+    method: inheritance
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3971/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1938
+    method: purchase
+    direct: true
+    place: zurich
+    label: aus der Ausstellung im Kunsthaus Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3971/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "1628"
+    label: Ducrey (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

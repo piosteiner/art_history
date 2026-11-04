@@ -26,6 +26,7 @@ names:
     role: translation
     text: Ашаффенбург
 period: 1803/1810
+country_codes: [DE]
 wikidata_id: Q569202
 metadata:
   sources: [Wikidata Q569202 (retrieved 2026-10-29)]

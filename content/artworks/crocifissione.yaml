@@ -1,0 +1,109 @@
+public_id: 114992
+title_lang: en
+title: Crocifissione
+names:
+  - lang: en
+    role: translation
+    text: Kreuzigung
+  - lang: en
+    role: translation
+    text: Crucifixion
+  - lang: fr
+    role: former
+    text: Le Calvaire
+creator: giuliano-di-simone
+attribution_label: Giuliano di Simone (formerly attributed to Lorenzo di Niccolò)
+created: c. 1400
+created_span: uncertain
+kind: painting
+medium: Tempera on panel
+dimensions: [79, 48]
+institution: kunsthaus-zurich
+inventory_number: 1946/0015
+web_url: https://collection.kunsthaus.ch/de/collection/item/1505/
+on_loan: true
+on_loan_since: 1946
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585413
+provenance:
+  - owner: institution/galerie-bachstitz
+    role: dealer
+    acquired: 1921 or earlier
+    place: the-hague
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1505/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 20.12.1946, Archiv ZKG/KHZ, 10.30.10.42; Samml.-Kat. Galerie Bachstitz 1921, Bd. I, Nr. 83, «Le Calvaire»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jacques-hubert-pierre-francois-menten
+    ended: 1946-12-18
+    place: rheinfelden
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1505/
+        note: "Footnote: Schreiben von Wilhelm Wartmann an Jacques Menten, 27.12.1946, Archiv ZKG/KHZ, Allgemeine Korrespondenz, 2001/001:106; Sitzungsprotokoll der Sammlungskommission, 20.12.1946, Archiv ZKG/KHZ, 10.30.10.42."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/kurt-walter-bachstitz
+    role: agent
+    acquired: 1946-05-18 or earlier
+    ended: 1946-12-18
+    direct: true
+    place: the-hague
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1505/
+        note: "Footnote: Briefe von Kurt Walter Bachstitz an Wilhelm Wartmann, 18.05., 03.09., 05.09. und 16.09.1946, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.147.; Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1946-12-18
+    method: purchase
+    direct: true
+    place: zurich
+    label: als Lorenzo di Niccolò Gerini
+    price:
+      amount: 11500
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1505/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1505/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1505/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1505/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1505/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1505/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1505/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1505/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1505/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1505/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

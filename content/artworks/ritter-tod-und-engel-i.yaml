@@ -1,0 +1,152 @@
+public_id: 114958
+title_lang: en
+title: Ritter, Tod und Engel I
+names:
+  - lang: en
+    role: translation
+    text: The Knight, Death, and the Angel I
+  - lang: fr
+    role: translation
+    text: Le Chevalier, la Mort et l’Ange I
+creator: oskar-kokoschka
+created: 1911
+kind: oil painting
+medium: Oil on canvas
+dimensions: [86, 75.5]
+institution: kunsthaus-zurich
+inventory_number: 1987/0016
+web_url: https://collection.kunsthaus.ch/de/collection/item/129/
+on_loan: true
+on_loan_since: 1987
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585421
+provenance:
+  - owner: person/stephan-kriser
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/129/
+        note: "Footnote: Winkler/Erling 1995, S. 37-38, Nr. 63."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hugo-simon
+    acquired: 1934-05-29 or earlier
+    ended: 1950-07
+    place: berlin
+    label: später Paris und Rio de Janeiro
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/129/
+        note: "Footnote: Wie oben Fussnote 3; ZKG/KHZ, Depotbuch, Nr. 2, S. 213–214."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunstmuseum-basel
+    acquired: 1938-04
+    ended: 1951-11-15
+    direct: true
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/129/
+        note: "Footnote: ZKG/KHZ, Depotbuch, S. 213–214; Kunstmuseum Basel, Depositenbuch und Handakte Hugo Simon; Korrespondenz mit Katharina Georgi (Kunstmuseum Basel), 12.03.2019; Francini/Heuss/Kreis 2001, S. 171-179, hier S. 173."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1939-08-23
+    ended: 1939-08-26
+    method: auction
+    direct: true
+    place: lucerne
+    label: Lot 1675; nicht verkauft
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/129/
+        note: "Footnote: Auktionskatalog der Galerie Fischer, Luzern, 23.-26.08.1939, https://doi.org/10.11588/diglit.5518#0120 (27.01.2022); Fondation Oskar Kokoschka 2019, Kat. 1911/6, https://www.oskar-kokoschka.ch/en/1020/1315/Ritter%2C%20Tod%20und%20Engel%20I (27.01.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: heirs of Hugo Simon
+    acquired: 1950-07
+    ended: 1952 or earlier
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/129/
+        note: "Footnote: Korrespondenz mit Katharina Erling (Werkkatalog Kokoschka), 18.03.2019."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/christoph-bernoulli
+    role: agent
+    direct: true
+    place: basel
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/129/
+        note: "Footnote: Korrespondenz mit Katharina Erling, wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hans-fetscherin
+    role: dealer
+    ended: 1952-06
+    direct: true
+    place: salzburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/129/
+        note: "Footnote: Fondation Oskar Kokoschka 2019, wie oben Fussnote 8; Korrespondenz mit Katharina Erling, wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/elisabeth-bechtler
+    co_owners: [person/hans-c-bechtler]
+    acquired: 1952-06
+    ended: 1987
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/129/
+        note: "Footnote: Korrespondenz mit Katharina Erling, wie oben Fussnote 9; ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1987-09-29
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/129/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: 1995.37-38.63
+    label: Winzler/Erling (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/129/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/129/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/129/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/129/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/129/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/129/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/129/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/129/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

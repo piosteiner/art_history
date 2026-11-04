@@ -1,0 +1,15 @@
+public_id: 113064
+name: Guangzhai
+names:
+  - lang: zh
+    role: original
+    text: 光宅
+category: calendar
+definition: "Chinese era name (光宅) of the Tang for the year 684: 684 is Guangzhai 1 (元年), its only year."
+description_md: |-
+  **Guangzhai** (光宅) is a Chinese era name ([[nianhao]]) of the Tang, proclaimed in 684 under Emperor Ruizong (睿宗). Its years are counted in lunar years: 684 is Guangzhai 1 (元年), its only year.
+
+  Before: [[wenming-era|Wenming]]. After: [[chuigong-era|Chuigong]].
+sources:
+  definition:
+    - source: dila-time-authority

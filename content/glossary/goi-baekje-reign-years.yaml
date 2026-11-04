@@ -1,0 +1,18 @@
+public_id: 113251
+name: Goi of Baekje (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 고이왕
+  - lang: ko-Hani
+    role: alternative
+    text: 古尒王
+category: calendar
+definition: "The reign years of King Goi of Baekje (古尒王, 고이왕), by which Korean histories date 234–286: 234 is Goi 1, 286 Goi 53."
+description_md: |-
+  **Goi** (古尒王, 고이왕): the years of the reign of King Goi of Baekje. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 243 is Goi 10 (고이왕 10년). The year of the accession, 234, counts as the first year.
+
+  Before: [[gusu-baekje-reign-years|Gusu]]. After: [[chaekgye-baekje-reign-years|Chaekgye]].
+sources:
+  definition:
+    - source: dila-time-authority

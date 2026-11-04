@@ -1,0 +1,16 @@
+public_id: 113442
+name: Ashmolean Museum
+kind: museum
+founded: 1683
+wikidata_id: Q636400
+metadata:
+  sources: [Wikidata Q636400 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q636400
+  founded:
+    - accessed: 2026-11-03
+      property: P571
+      wikidata: Q636400

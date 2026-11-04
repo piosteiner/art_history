@@ -1,0 +1,99 @@
+public_id: 115527
+name: Giovanni Benedetto Castiglione
+given_name: Giovanni Benedetto
+family_name: Castiglione
+birth: 1609-03
+death: 1664-05-05
+wikidata_id: Q40823
+metadata:
+  sources: [Wikidata Q40823 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-genoa
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q40823
+  - type: born_in
+    to: place/genoa
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q40823
+  - type: died_in
+    to: place/mantua
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q40823
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q40823
+  - type: worked_in
+    to: place/genoa
+    period: 1631
+    period_label: until 1631
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q40823
+  - type: worked_in
+    to: place/rome
+    period: 1632/1650
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q40823
+  - type: worked_in
+    to: place/mantua
+    period: 1650/1651
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q40823
+  - type: worked_in
+    to: place/venice
+    period: 1659/1660
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q40823
+  - type: worked_in
+    to: place/parma
+    period: 1661/1664
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q40823
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q40823
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Portret_Giovanni_Benedetto_Castiglione%2C_RP-P-2004-72-91.jpg/1280px-Portret_Giovanni_Benedetto_Castiglione%2C_RP-P-2004-72-91.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portret_Giovanni_Benedetto_Castiglione,_RP-P-2004-72-91.jpg
+    license: CC0
+    credit: Rijksmuseum
+identifiers:
+  bnf: "120038429"
+  gnd: "119044021"
+  idref: "028145828"
+  kulturnav: 8c06e156-8fa8-4d1c-8b90-ee7f0197e4c1
+  lc: n80098292
+  rkd: "15874"
+  ulan: "500115299"
+  viaf: "34728703"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q40823
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q40823

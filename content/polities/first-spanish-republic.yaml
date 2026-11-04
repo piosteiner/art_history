@@ -29,6 +29,7 @@ names:
     role: translation
     text: Первая Испанская Республика
 period: 1873-02-11/1874-12-29
+country_codes: [ES]
 wikidata_id: Q497777
 metadata:
   sources: [Wikidata Q497777 (retrieved 2026-10-29)]

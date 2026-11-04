@@ -32,6 +32,7 @@ names:
     role: translation
     text: Королевство Франция
 period: 987/1791-09-04
+country_codes: [FR]
 wikidata_id: Q70972
 metadata:
   sources: [Wikidata Q70972 (retrieved 2026-10-29)]

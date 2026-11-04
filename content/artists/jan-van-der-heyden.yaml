@@ -1,0 +1,52 @@
+public_id: 115469
+name: Jan van der Heyden
+given_name: Jan
+family_name: van der Heyden
+birth: 1637-03-05
+death: 1712-03-28
+wikidata_id: Q370567
+metadata:
+  sources: [Wikidata Q370567 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q370567
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q370567
+  - type: worked_in
+    to: place/amsterdam
+    period: 1660/1712
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q370567
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Portrait_of_Jan_van_der_Heyden_001_cropped.jpg/1280px-Portrait_of_Jan_van_der_Heyden_001_cropped.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Jan_van_der_Heyden_001_cropped.jpg
+    license: Public domain
+    credit: anonymous
+identifiers:
+  bnf: "136138520"
+  gnd: "101206003"
+  idref: 11469267X
+  kulturnav: 692f39aa-92c5-4dd6-9548-5e872610bc56
+  lc: n85228618
+  rkd: "38227"
+  ulan: "500010213"
+  viaf: "311485744"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q370567
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q370567

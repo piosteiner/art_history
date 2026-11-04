@@ -1,0 +1,64 @@
+public_id: 115145
+name: Rudolf Koller
+given_name: Rudolf
+family_name: Koller
+birth: 1828-05-21
+death: 1905-01-05
+wikidata_id: Q123734
+metadata:
+  sources: [Wikidata Q123734 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q123734
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q123734
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q123734
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q123734
+  - type: studied_at
+    to: institution/kunstakademie-dusseldorf
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q123734
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0c/Rudolfkoller.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rudolfkoller.jpg
+    license: Public domain
+    credit: Rudolf Ganz
+identifiers:
+  bnf: 15054318r
+  dome: "11681"
+  gnd: "118713825"
+  hls: "022039"
+  lc: no2003022119
+  rkd: "45524"
+  sikart: "4000080"
+  ulan: "500029641"
+  viaf: "30331638"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q123734
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q123734

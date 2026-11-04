@@ -1,0 +1,109 @@
+public_id: 115310
+title_lang: en
+title: Thronende Maria mit Kind (Madonna Seligmann)
+names:
+  - lang: en
+    role: translation
+    text: Enthroned Madonna (Seligmann Madonna)
+  - lang: en
+    role: translation
+    text: Vierge à l’enfant trônant (Vierge Seligmann)
+attribution_label: Anonymous, Rhenish
+created: c. 1250–1274
+created_span: uncertain
+kind: sculpture
+medium: Limewood with original polychromy
+dimensions: [71, 36, 28]
+institution: kunsthaus-zurich
+inventory_number: 1951/0016
+web_url: https://collection.kunsthaus.ch/de/collection/item/3242/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/leopold-seligmann
+    role: dealer
+    acquired: 1921 or earlier
+    ended: 1930-04-29
+    place: cologne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3242/
+        note: "Footnote: Lüthgen 1921, Tafel 35: Slg. L. Seligmann, Köln."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hermann-ball
+    co_owners: [institution/paul-graupe]
+    role: agent
+    acquired: 1930-04-28
+    ended: 1930-04-29
+    method: auction
+    direct: true
+    place: berlin
+    label: Lot 137
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3242/
+        note: "Footnote: Auktion Ball/Graupe 1930, S. 19, Nr. 137; im Exemplar der Kunstbibliothek, Staatliche Museen zu Berlin: rechts daneben annotiert: «7200,- (Hauptmann)»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Hauptmann
+    acquired: 1930-04-29 or earlier
+    method: purchase
+    direct: true
+    place: berlin
+    label: 72.000 RM
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3242/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-bornheim
+    role: dealer
+    ended: 1951
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3242/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1951
+    method: purchase
+    direct: true
+    place: zurich
+    label: 1954 nachfinanziert aus dem Legat Karl Näf
+    price:
+      amount: 24000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3242/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3242/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3242/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3242/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3242/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3242/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3242/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3242/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

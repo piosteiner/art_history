@@ -1,0 +1,35 @@
+public_id: 115185
+name: Leverkusen
+names:
+  - lang: ja
+    role: translation
+    text: レーヴァークーゼン
+  - lang: zh
+    role: translation
+    text: 勒沃库森
+  - lang: ko
+    role: translation
+    text: 레버쿠젠
+  - lang: ru
+    role: translation
+    text: Леверкузен
+kind: settlement
+parent: nordrhein-westfalen
+country_code: DE
+location: [6.98333, 51.03333]
+wikidata_id: Q2938
+metadata:
+  sources: [Wikidata Q2938 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q2938
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q2938
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q2938

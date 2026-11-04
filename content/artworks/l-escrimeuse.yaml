@@ -1,0 +1,71 @@
+public_id: 115090
+title_lang: fr
+title: L'Escrimeuse
+names:
+  - lang: de
+    role: translation
+    text: Die Fechterin
+  - lang: en
+    role: translation
+    text: The Fencer
+  - lang: en
+    role: original
+    text: Escrimeuse
+creator: germaine-richier
+created: 1943
+kind: sculpture
+medium: Bronze
+dimensions: [100, 67, 36]
+institution: kunsthaus-zurich
+inventory_number: 1946/0021
+web_url: https://collection.kunsthaus.ch/de/collection/item/2159/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/hans-mayenfisch
+    ended: 1946
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2159/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1946
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2159/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2159/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2159/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2159/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2159/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2159/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2159/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2159/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -27,6 +27,7 @@ names:
     role: translation
     text: Реставрация в Швейцарии
 period: 1814-04-06/1848-09-12
+country_codes: [CH]
 wikidata_id: Q568452
 metadata:
   sources: [Wikidata Q568452 (retrieved 2026-10-29)]

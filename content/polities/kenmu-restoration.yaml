@@ -30,6 +30,7 @@ names:
     role: translation
     text: Реставрация Кэмму
 period: 1333-07-25/1336-10-18
+country_codes: [JP]
 wikidata_id: Q826021
 metadata:
   sources: [Wikidata Q826021 (retrieved 2026-10-29)]

@@ -1,0 +1,46 @@
+public_id: 115218
+name: Claes Cornelisz Moeyaert
+given_name: Claes Cornelisz
+family_name: Moeyaert
+birth: c. 1592
+death: 1655-08-26
+wikidata_id: Q59661
+metadata:
+  sources: [Wikidata Q59661 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q59661
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q59661
+  - type: worked_in
+    to: place/amsterdam
+    period: 1612/1655
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q59661
+identifiers:
+  bnf: 14966260c
+  gnd: "132522462"
+  kulturnav: 6101a659-2609-4cd1-984a-8ff1d7cb4746
+  lc: n89665551
+  rkd: "56541"
+  ulan: "500019802"
+  viaf: "30701177"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q59661
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q59661

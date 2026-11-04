@@ -31,6 +31,7 @@ names:
     role: translation
     text: Мекленбург-Шверин
 period: 1815/1918
+country_codes: [DE]
 wikidata_id: Q158445
 metadata:
   sources: [Wikidata Q158445 (retrieved 2026-10-29)]

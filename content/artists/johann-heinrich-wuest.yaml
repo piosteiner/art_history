@@ -1,0 +1,51 @@
+public_id: 114930
+name: Johann Heinrich Wüest
+given_name: Johann Heinrich
+family_name: Wüest
+birth: 1741-05-14
+death: 1821-04-07
+wikidata_id: Q1602910
+metadata:
+  sources: [Wikidata Q1602910 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q1602910
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q1602910
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q1602910
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q1602910
+identifiers:
+  gnd: "138829217"
+  hls: "022122"
+  lc: no2007149079
+  rkd: "85753"
+  sikart: "4022970"
+  ulan: "500026128"
+  viaf: "17018893"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q1602910
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q1602910

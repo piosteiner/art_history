@@ -1,0 +1,161 @@
+public_id: 115594
+title_lang: fr
+title: La Route de Tarascon
+names:
+  - lang: de
+    role: translation
+    text: Die Strasse von Tarascon
+  - lang: en
+    role: translation
+    text: The Road to Tarascon
+  - lang: en
+    role: former
+    text: Strasse nach Arles
+creator: vincent-van-gogh
+created: 1888-04
+kind: drawing
+medium: Pen and reed pen in brown and black over pencil on wove paper
+dimensions: [25.8, 35]
+institution: kunsthaus-zurich
+inventory_number: Z.1940/0001
+web_url: https://collection.kunsthaus.ch/de/collection/item/8539/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: artist/vincent-van-gogh
+    acquired: 1888-07
+    ended: 1888-07
+    direct: true
+    place: arles
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8539/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/theo-van-gogh
+    acquired: 1888
+    ended: 1891
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8539/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/johanna-van-gogh-bonger
+    acquired: 1891
+    ended: 1912 or later
+    method: inheritance
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8539/
+        note: "Footnote: Beschriftung auf der Werkrückseite o. l. 1[8]2 verweist auf ein heute nicht mehr auffindbares Verzeichnis, welches Johanna van Gogh-Bonger für Ausstellungen vor 1905 verwendet hat. In dem von van Gogh-Bogner erstellte Inventar für die van Gogh-Retrospektive im Stedelijk Museum von 1905 wird die Zeichnung als «laan Arles pentenkening [Allee Arles Federzeichnung]» mit der alten Inventar-Nummer 182 u…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Artz and De Bois
+    acquired: 1912
+    ended: 1913 or earlier
+    direct: true
+    place: the-hague
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8539/
+        note: 'Footnote: Das Werk ist als Nr. 37 mit "Landschap weg met figuur" (Preis 900 Guilders) auf einer Liste von Van Gogh Zeichnungen aufgeführt, die im Auftrag von Johanna van Gogh-Bonger 1912 bei Artz and De Bois, Den Haag lagerten, vgl. Van Gogh Museum, Amsterdam, Inv.-Nr. b5423V1996); vgl. Korrespondenz Teio Meedendorp, wie Fussnote 3; Heijbroek/Wouthuysen 1993, S. 205'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown
+    direct: true
+    label: Johannes Henricus de Bois (*1878 Amsterdam, +1946 Haarlem) (Kunsthändler/-in); Haarlem; dated Sommer 1913 - mindestens bis 1926
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8539/
+        note: "Footnote: Faille 1992 I.391.1502;  J.H. de Bois eröffnete 1913 seine eigene Galerie und übernahm das Werk von Artz & De Bois. Ob er das Werk erworben oder es nur in Kommission hatte, konnte nicht abschliessend geklärt werden. Zwischen 1913-1926 wurde das Werk mehrmals in der Galerie ausgestellt und im De Bois Bulletin erwähnt, vgl. Kat. de Bois, 1913, Nr. 5; Kat. de Bois, 1917, Nr. 5; Kat. de Bois 1926; vgl…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    acquired: 1926
+    ended: 1926
+    method: purchase
+    direct: true
+    place: england
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8539/
+        note: "Footnote: vgl. Faille 1992, wie oben Fussnote 5.  Es ist nicht bekannt um welche englische Privatsammlung es sich handelt könnte. Das Werk war im November 1926 in der Van Gogh Ausstellung der Leicester Galleries in London ausgestellt, vgl. Kat. Leicester Galleries 1926, S. 13, No. 28."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-otto-wacker
+    role: dealer
+    acquired: 1927-12-06 or earlier
+    ended: 1 February 1928 or later
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8539/
+        note: "Footnote: Vgl. Faille, wie oben Fussnote; Kat. Galerie Otto Wacker 1927, No. 63; Cicerone, 1928, S. 32; Meier-graefe, 1928, Abb. 33; Kat. Neue Galerie, 1928, S. 6, No. 63; Brief Toni Aktuaryus an Wilhelm Wartmann 10.07.1940, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.143."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/julian-manheimer
+    acquired: 1927/1928
+    ended: 1940-03-12
+    method: purchase
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8539/
+        note: "Footnote: Brief Toni Aktuaryus an Wilhelm Wartmann, 10.07.1940, wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-aktuaryus
+    role: dealer
+    ended: 1940-03-12
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8539/
+        note: "Footnote: Am 16. Februar 1940 schickte Toni Aktuaryus die Zeichnung zur Ansicht dem Kunsthaus Zürich, vgl. Lieferschein und Ansichtsrechnung Galerie Aktuaryus, 16.02.1940, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.143. Es konnte nicht abschliessend geklärt werden, ob das Werk bei der Galerie Aktuaryus in Kommission war und wann es in Besitz der Galerie gelangte. Inventarbuch Gr. Slg ZKG/KHZ; Fangbl…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1940-03-12
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 4800
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8539/
+        note: "Footnote: Brief Wilhelm Wartmann an Toni Aktuaryus 13.03.1940; Archiv ZKG/KHZ, Ausgehende Korrespondenz, 10.30.20.30. S. 389; Sitzungsprotokoll des Vorstands ZKG, 12.03.1940, Archiv ZKG/KHZ, 10.30.10.12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "340.1492"
+    label: Hulsker 1996 (catalogue raisonné)
+  - number: I.391.1502
+    label: de la Faille 1992 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/8539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/8539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/8539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/8539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/8539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/8539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/8539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,63 @@
+public_id: 113400
+title_lang: es
+title: Socorro de Génova por el II marqués de Santa Cruz
+names:
+  - El socorro de Génova por el II marqués de Santa Cruz
+  - lang: en
+    role: translation
+    text: The Relief of Genoa by the II Marquis of Santa Cruz
+  - lang: de
+    role: translation
+    text: Die Entsetzung Genuas durch den Marqués de Santa Cruz
+  - lang: ja
+    role: translation
+    text: 第2代サンタ・クルス侯爵によるジェノヴァ救援
+parent: battle-series
+creator: antonio-de-pereda
+created: 1634/1635
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [290, 370]
+institution: museo-del-prado
+inventory_number: P007126
+web_url: https://www.museodelprado.es/en/the-collection/art-work/the-relief-of-genoa-by-the-2nd-marquis-of-santa/d413f99b-41c6-4659-bf17-c7d2c7451e6a
+wikidata_id: Q27700857
+metadata:
+  sources: [Wikidata Q27700857 (retrieved 2026-11-03)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/El_socorro_de_G%C3%A9nova_por_el_II_marqu%C3%A9s_de_Santa_Cruz_%28Antonio_de_Pereda%29.jpg/1280px-El_socorro_de_G%C3%A9nova_por_el_II_marqu%C3%A9s_de_Santa_Cruz_%28Antonio_de_Pereda%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:El_socorro_de_G%C3%A9nova_por_el_II_marqu%C3%A9s_de_Santa_Cruz_(Antonio_de_Pereda).jpg
+    license: Public domain
+    credit: Antonio de Pereda
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q27700857
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q27700857
+  created:
+    - url: https://www.museodelprado.es/en/the-collection/art-work/the-relief-of-genoa-by-the-2nd-marquis-of-santa/d413f99b-41c6-4659-bf17-c7d2c7451e6a
+      source: museo-del-prado-coleccion
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q27700857
+  materials:
+    - accessed: 2026-11-03
+      property: P186
+      wikidata: Q27700857
+  dimensions:
+    - accessed: 2026-11-03
+      property: P2048
+      wikidata: Q27700857
+  institution:
+    - accessed: 2026-11-03
+      property: P195
+      wikidata: Q27700857
+  inventory_number:
+    - accessed: 2026-11-03
+      property: P217
+      wikidata: Q27700857

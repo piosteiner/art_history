@@ -1,0 +1,18 @@
+public_id: 113350
+name: Yurye Isageum of Silla (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 유례이사금
+  - lang: ko-Hani
+    role: alternative
+    text: 儒禮尼師今
+category: calendar
+definition: "The reign years of Yurye Isageum of Silla (儒禮尼師今, 유례이사금), by which Korean histories date 284–298: 284 is Yurye Isageum 1, 298 Yurye Isageum 15."
+description_md: |-
+  **Yurye Isageum** (儒禮尼師今, 유례이사금): the years of the reign of Yurye Isageum of Silla. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 293 is Yurye Isageum 10 (유례이사금 10년). The year of the accession, 284, counts as the first year.
+
+  Before: [[michu-isageum-silla-reign-years|Michu Isageum]]. After: [[girim-isageum-silla-reign-years|Girim Isageum]].
+sources:
+  definition:
+    - source: dila-time-authority

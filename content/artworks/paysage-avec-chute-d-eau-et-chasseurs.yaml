@@ -1,0 +1,103 @@
+public_id: 115058
+title_lang: fr
+title: Paysage avec chute d’eau et chasseurs
+names:
+  - lang: de
+    role: translation
+    text: Landschaft mit Wasserfall und Jägern
+  - lang: en
+    role: translation
+    text: Landscape with Waterfall and Huntsmen
+creator: claude-lorrain
+created: 1625/1640
+created_label: c. 1630/1635
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [61, 83.5]
+institution: kunsthaus-zurich
+inventory_number: R 57
+web_url: https://collection.kunsthaus.ch/de/collection/item/197/
+on_loan: true
+on_loan_since: 1995
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124288359
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e9/Claude_Lorrain_-_Paysage_avec_chute_d%E2%80%99eau_et_chasseurs_-_R_57_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Lorrain_-_Paysage_avec_chute_d%E2%80%99eau_et_chasseurs_-_R_57_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Claude Lorrain
+provenance:
+  - owner_label: private collection
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/197/
+        note: "Footnote: Roethlisberger 1992, S. 209: «Private collection […] Courtesy Adolphe Stein»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/adolphe-stein
+    role: dealer
+    ended: 1995-04-20
+    place: crans-montana
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/197/
+        note: "Footnote: ZKG/KHZ Werkdossier, Rechnung von Adolphe Stein ans Kunsthaus Zürich, 20.04.1995; ZKG/KHZ Werkdokument, Korrespondenz an Ernst von Siemens-Stiftung, Dr. Heribald Närger, 03.05.1995."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1995-04-20
+    ended: 2005
+    method: exchange
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/197/
+        note: "Footnote: Zur Finanzierung dieses Werkes wurden zwei Gemälde des frühen 16. Jahrhunderts, eine Landschaft von Patenier (Landschaft mit der Himmelfahrt der Maria Aegyptiaca, ehemals R 24) und ein Flügelaltärchen von Jan Provost (Flügelaltärchen mit der Anbetung der Könige, ehemals R 25), an das Vermächtnis Walter und Annemarie Boveri abgetreten; ZKG/KHZ Werkdossier, wie oben Fussnote 5; Tätigkeitsbericht der…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/197/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "1975"
+    label: nicht in Röthlisberger (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/197/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/197/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/197/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/197/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/197/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/197/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/197/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/197/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

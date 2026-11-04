@@ -1,0 +1,8 @@
+public_id: 115055
+name: Agnuzzo
+kind: settlement
+parent: ticino
+country_code: CH
+location: [8.91505, 45.99352]
+metadata:
+  sources: [Wikidata null (retrieved 2026-11-03)]

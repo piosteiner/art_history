@@ -1,0 +1,58 @@
+public_id: 114892
+name: Johann Gottfried Schadow
+given_name: Johann Gottfried
+family_name: Schadow
+birth: 1764-05-20
+death: 1850-01-27
+wikidata_id: Q51989
+metadata:
+  sources: [Wikidata Q51989 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-prussia
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q51989
+  - type: born_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q51989
+  - type: died_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q51989
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q51989
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/HermannBiow.JohannGottfriedSchadow.Daguerreotypie.1846.P1162289.jpg/1280px-HermannBiow.JohannGottfriedSchadow.Daguerreotypie.1846.P1162289.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:HermannBiow.JohannGottfriedSchadow.Daguerreotypie.1846.P1162289.jpg
+    license: CC0
+    credit: Bautsch
+identifiers:
+  bnf: 12498849g
+  dome: "6999"
+  gnd: "118606115"
+  idref: 03420847X
+  kulturnav: b8d80c82-45b4-4607-8eaf-18473731d848
+  lc: n83006938
+  rkd: "70069"
+  ulan: "500020339"
+  viaf: "27170885"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q51989
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q51989

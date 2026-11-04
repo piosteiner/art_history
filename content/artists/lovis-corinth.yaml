@@ -1,0 +1,134 @@
+public_id: 115499
+name: Lovis Corinth
+given_name: Lovis
+family_name: Corinth
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Franz Heinrich Louis Corinth
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q157610
+birth: 1858-07-21
+death: 1925-07-17
+wikidata_id: Q157610
+metadata:
+  sources: [Wikidata Q157610 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q157610
+  - type: nationality
+    to: polity/kingdom-of-prussia
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q157610
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q157610
+  - type: worked_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q157610
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q157610
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q157610
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q157610
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q157610
+  - type: worked_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q157610
+  - type: influenced_by
+    to: artist/peter-paul-rubens
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q157610
+  - type: influenced_by
+    to: artist/rembrandt
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q157610
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q157610
+  - type: member_of
+    to: movement/berlin-secession
+    sources:
+      - accessed: 2026-11-03
+        property: P463
+        wikidata: Q157610
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q157610
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q157610
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b9/Lovis_Corinth_1887.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lovis_Corinth_1887.jpg
+    license: Public domain
+    credit: Unidentified photographer
+identifiers:
+  bnf: 14971924f
+  dome: "65"
+  gnd: "118522140"
+  idref: "027398919"
+  kulturnav: adb7823f-16aa-424a-ab63-8cf7df7973ee
+  lc: n80002302
+  nlk: KAC202272078
+  rkd: "18353"
+  ulan: "500115384"
+  viaf: "15044719"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q157610
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q157610

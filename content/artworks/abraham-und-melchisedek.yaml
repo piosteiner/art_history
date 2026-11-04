@@ -1,0 +1,111 @@
+public_id: 115219
+title_lang: en
+title: Abraham und Melchisedek
+names:
+  - lang: en
+    role: translation
+    text: Abraham and Melchizidek
+  - lang: en
+    role: former
+    text: Verteilung von Brot, Abraham und Melchisedek
+creator: claes-cornelisz-moeyaert
+created: 1639
+kind: oil painting
+medium: Oil on oak panel
+dimensions: [73.5, 121.5]
+institution: kunsthaus-zurich
+inventory_number: R 16
+web_url: https://collection.kunsthaus.ch/de/collection/item/2811/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585490
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/33/Claes_Cornelisz_Moeyaert_-_Abraham_und_Melchisedek_-_R_16_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Claes_Cornelisz_Moeyaert_-_Abraham_und_Melchisedek_-_R_16_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Claes Corneliszoon Moeyaert
+provenance:
+  - owner: person/albert-grossmann
+    acquired: February 1920 or earlier
+    label: Brombach (Baden); Nr. 642
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2811/
+        note: "Footnote: Nederlands Instituut voor Kunstgeschiedenis RKD, fichescollectie Cornelis Hofstede de Groot, Kartennummer 1326983. Albert Grossmann war dritter Sohn des Fabrikanten Adolf Grossmann (1816-1874), gelernter Kaufmann, Fabrikant und ein zeitgenössisch bekannter Sammler, Kunstexperte und Mäzen. Gemäß vorliegenden Informationen und Dokumenten liegen keine Anhaltspunkte für eine NS-Verfolgung vor (vgl. E-…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-neupert
+    role: dealer
+    ended: 1939-11-18
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2811/
+        note: "Footnote: ZKG/KHZ Werkdossier, Rechnung der Galerie Neupert an Leopold Ruzicka, 18.11.1939."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1939-11-18
+    ended: 1948-12-27
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2811/
+        note: "Footnote: ZKG/KHZ Werkdossier, wie oben Fussnote 5; Sitzungsprotokoll der Sammlungskommission, 23.12.1948 I., Archiv ZKG/KHZ, 10.30.10.42; Zürcher Kunstgesellschaft 1949 Jahresbericht, S. 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1948-12-27
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2811/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 6; Zürcher Kunstgesellschaft 1949 Jahresbericht, wie oben Fussnote 6; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 97."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2811/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2811/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2811/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2811/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2811/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2811/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2811/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2811/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2811/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

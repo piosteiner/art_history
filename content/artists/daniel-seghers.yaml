@@ -1,0 +1,72 @@
+public_id: 115044
+name: Daniël Seghers
+given_name: Daniël
+family_name: Seghers
+birth: 1590-12-03
+death: 1661-11-02
+wikidata_id: Q928466
+metadata:
+  sources: [Wikidata Q928466 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q928466
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q928466
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q928466
+  - type: worked_in
+    to: place/utrecht
+    period: 1605/1609
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q928466
+  - type: worked_in
+    to: place/antwerp
+    period: 1609/1625
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q928466
+  - type: worked_in
+    to: place/rome
+    period: 1625/1627
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q928466
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Daniel_Seghers_%281590-1661%29.jpg/1280px-Daniel_Seghers_%281590-1661%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Daniel_Seghers_(1590-1661).jpg
+    license: Public domain
+    credit: Paulus Pontius / After Jan Lievens
+identifiers:
+  bnf: 14932352f
+  gnd: "121973263"
+  idref: "232475628"
+  kulturnav: 8b3cbb41-0d18-4697-bb12-c4f45a44236c
+  lc: n2011028281
+  rkd: "71799"
+  ulan: "500020602"
+  viaf: "13178397"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q928466
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q928466

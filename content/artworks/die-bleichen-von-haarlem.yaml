@@ -1,0 +1,178 @@
+public_id: 115278
+title_lang: de
+title: Die Bleichen von Haarlem
+names:
+  - lang: en
+    role: translation
+    text: View of Haarlem with Bleaching Grounds
+  - lang: en
+    role: translation
+    text: Vue de Haarlem
+  - lang: en
+    role: original
+    text: Gezicht op Haarlem vanaf Bloemendaal
+creator: jacob-van-ruisdael
+created: 1665/1680
+created_label: c. 1670/1675
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [62, 55]
+institution: kunsthaus-zurich
+inventory_number: R 32
+web_url: https://collection.kunsthaus.ch/de/collection/item/3095/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q15805700
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a2/Jacob_van_Ruisdael_-_Die_Bleichen_von_Haarlem_-_R_32_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jacob_van_Ruisdael_-_Die_Bleichen_von_Haarlem_-_R_32_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jacob van Ruisdael
+provenance:
+  - owner_label: Count Sierstorpff
+    acquired: 1864
+    ended: 1878-04-19
+    label: Schloss Driburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+        note: "Footnote: Auktion Rudolph Lepke's Kunst-Auctions-Haus Berlin (18.03.1930), S. 35, Lot 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/rudolph-lepke-s-kunst-auctions-haus
+    role: agent
+    acquired: 1887-04-19
+    ended: 1887-04-19
+    method: auction
+    direct: true
+    place: berlin
+    label: Lot 67
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/heinrich-vieweg
+    acquired: 1887-05-11
+    ended: 1930-03-18
+    method: purchase
+    direct: true
+    place: brunswick
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+        note: "Footnote: Wie oben Fussnote 3; Ausst.-Kat. Mauritshuis/Fogg Art Museum, New York 1981, S. 131."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/rudolph-lepke-s-kunst-auctions-haus
+    role: agent
+    acquired: 1930-03-18
+    ended: 1930-03-18
+    method: auction
+    direct: true
+    place: berlin
+    label: Lot 13
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+        note: "Footnote: Wie oben Fussnote 5, vgl. https://doi.org/10.11588/diglit.5274#0037 und https://doi.org/10.11588/diglit.5274#0120 (06.07.2023)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-paul-cassirer
+    role: agent
+    acquired: 1930-03-18
+    direct: true
+    label: probably on consignment; wohl Berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+        note: "Footnote: Mail-Korrespondenz Feilchenfeldt, 12.04.2023: «Dieser 'Ankauf' ist in unseren Geschöftsdokumenten[sic] nicht vermerkt. Daraus schliesse ich, dass das Bild für einen Kunden erworben wurde, der selbst anonym bleiben wollte.»; Nederlands Instituut voor Kunstgeschiedenis (RKD), Fichescollectie Cornelis Hofstede de Groot, baknummer 226; Ausst.-Kat. Mauritshuis/Fogg Art Museum, New York 1981, wie oben F…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hans-duensing
+    ended: 1949-11-21 or earlier
+    place: boizenburg-elbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+        note: "Footnote: Feilchenfeldt Archivmaterialien: «Ruzicka hat die beiden Ruisdaels erworben. [...] Die Besitzerin ist erschreckt, weil der 'böse' Onkel D [Duensing] die Bilder dem Händler Hugo Moser versprochen hatte. [Die Bilder waren aber in der Schweiz bei der Nichte].»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alice-scherrer-von-guggenberger
+    role: agent
+    direct: true
+    place: schaffhausen
+    label: intermediary; Schaffhausen and Sorengo
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+        note: "Footnote: Wie oben Fussnote 9; LIVE AUCTION 5422. IMPRESSIONIST & MODERN PAINTINGS,WATERCOLOURS & SCULPTURE PI,  Christie’s, London, 01.10.1995, https://www.christies.com/en/lot/lot-265438 (08.05.2023), Lot 6: «Mrs. Alice Scherrer von Guggenberger, Sorengo (Hans Duensing's niece)»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt-senior
+    role: agent
+    acquired: 1949-11-21
+    ended: 1949-11-21
+    direct: true
+    place: zurich
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+        note: "Footnote: ZKG/KHZ Werkdossier, Rechnung von Walter Feilchenfeldt an Leopold Ruzicka, 21.11.1949."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1949-11-21
+    ended: 2005
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+        note: "Footnote: ZKG/KHZ Werkdossier, wie oben Fussnote 11; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 107."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+        note: "Footnote: Wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "93.70"
+    label: Slive 2001 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

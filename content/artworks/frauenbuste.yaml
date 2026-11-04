@@ -1,0 +1,97 @@
+public_id: 115069
+title_lang: de
+title: Frauenbüste
+names:
+  - lang: de
+    role: translation
+    text: Büste Frau L.[ehmbruck]
+  - lang: en
+    role: translation
+    text: Bust of a Woman
+  - lang: en
+    role: former
+    text: Frauentorso
+creator: wilhelm-lehmbruck
+created: 1910
+created_label: 1910; probably posthumous cast
+kind: sculpture
+medium: Bronze
+dimensions: [80, 53.5, 28]
+institution: kunsthaus-zurich
+inventory_number: "2498"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2032/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/anita-lehmbruck
+    method: commission
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2032/
+        note: "Footnote: Schubert 2001, No. 50.B.2, S. 191: Gemäss S. 33 wurden posthume Bronzegüsse im Auftrag der Witwe Anita Lehmbruck gegossen; Gemäss S. 116 Hinweis auf einen posthumen Nachguss, da die Bronzen, die zu Lebzeiten Lehmbrucks entstanden mit «W.Lehmbruck» bezeichnet waren und lediglich die Steingüsse mit «Lehmbruck». Hierbei handelt es sich um eine Bronze mit der den Steingüssen eigenen Bezeichnung «Lehmb…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2032/
+        note: "Footnote: Brief von Wilhelm Wartmann an Anita Lehmbruck, 20.05.1941, Archiv ZKG/KHZ, Ausgehende Korrespondenz, 10.30.20.93."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/paul-cassirer-co-amsterdam
+    role: dealer
+    acquired: 1939-11-24 or earlier
+    ended: 1939-12-29
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2032/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 15.12.1939 II.f, 21.12.1939 I.1, 20.01.1940 I.a, Archiv ZKG/KHZ, 10.30.10.42; Sitzungsprotokoll des Vorstands, 29.12.1939, Archiv ZKG/KHZ, 10.30.10.12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1939-12-29
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 10000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2032/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: 191.50.B.b.2
+    label: Schubert 2001 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2032/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2032/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2032/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2032/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2032/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2032/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2032/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,66 @@
+public_id: 115515
+title_lang: en
+title: Dame en blanc assise
+names:
+  - lang: de
+    role: translation
+    text: Sitzende Frau in Weiss
+creator: maurice-barraud
+created: 1909/1923
+created_label: c. 1914/1918
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [65, 54.5]
+institution: kunsthaus-zurich
+inventory_number: 1953/0034
+web_url: https://collection.kunsthaus.ch/de/collection/item/539/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586339
+provenance:
+  - owner: person/hans-mayenfisch
+    ended: 1953
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/539/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1953
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/539/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

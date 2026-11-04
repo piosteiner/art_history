@@ -1,6 +1,7 @@
 public_id: 103289
 name: Kingdom of Great Britain
 period: 1707-05-12/1801-01-01
+country_codes: [GB]
 wikidata_id: Q161885
 metadata:
   sources: [Wikidata Q161885 (retrieved 2026-10-28)]

@@ -1,0 +1,81 @@
+public_id: 115166
+title_lang: en
+title: Kleiner weiblicher Torso. sog. Hagener Torso
+names:
+  - lang: en
+    role: translation
+    text: Small female Torso
+creator: wilhelm-lehmbruck
+created: 1910/1911
+created_label: 1910/1911; probably cast between 1919/1933
+kind: sculpture
+medium: White plaster with thin cement frame and grey-brown patina
+dimensions: [69.5, 26, 23]
+institution: kunsthaus-zurich
+inventory_number: "2291"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2621/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/anita-lehmbruck
+    method: commission
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2621/
+        note: "Footnote: Schubert 2001, No. 56.A.27, S. 227: Gemäss S. 107 wurde dieser posthume Guss wohl ab 1920 im Auftrag der Witwe Anita Lehmbruck gegossen."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/graphisches-kabinett
+    role: agent
+    acquired: 1933-02-07 or earlier
+    ended: 1933-07-31
+    place: munich
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2621/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; Brief Günther Franke (Graphisches Kabinett München) an Kunsthaus Zürich, 07.02.1933, Archiv ZKG/KHZ, Eingehende Korrespondenz Sammlung, 10.30.30.137: «Wir sind daraufhin beim Besitzer vorstellig geworden […]»; Sitzungsprotokoll der Sammlungskommission, 02.06.1933, I.1.c; 07.07.1933, II.2.a; 30.08.1933, 1.b.3, Archiv ZKG/KHZ, 10.30.10.41; Sitzungsprotokoll des Vorstands,…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1933-07-31
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2621/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg., wie oben Fussnote 3; Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 3; Sitzungsprotokoll des Vorstands, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: 227.56.A.27
+    label: Schubert (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2621/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2621/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2621/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2621/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2621/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2621/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2621/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

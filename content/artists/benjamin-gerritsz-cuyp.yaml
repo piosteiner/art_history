@@ -1,0 +1,64 @@
+public_id: 115559
+name: Benjamin Gerritsz. Cuyp
+given_name: Benjamin Gerritsz.
+family_name: Cuyp
+birth: 1612
+death: 1652-08-28
+wikidata_id: Q552910
+metadata:
+  sources: [Wikidata Q552910 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q552910
+  - type: born_in
+    to: place/dordrecht
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q552910
+  - type: died_in
+    to: place/dordrecht
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q552910
+  - type: worked_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q552910
+  - type: worked_in
+    to: place/dordrecht
+    period: 1631/1652
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q552910
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Benjamin_Gerritsz_Cuyp_-_Adoration_of_Shepherds.jpg/1280px-Benjamin_Gerritsz_Cuyp_-_Adoration_of_Shepherds.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Benjamin_Gerritsz_Cuyp_-_Adoration_of_Shepherds.jpg
+    license: Public domain
+    credit: Benjamin Gerritsz Cuyp
+identifiers:
+  bnf: "149721296"
+  gnd: "120607204"
+  idref: "166777897"
+  kulturnav: 0dada095-830c-4ec4-9b6f-e9671d3a58df
+  lc: n00008632
+  rkd: "19499"
+  ulan: "500013051"
+  viaf: "24874339"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q552910
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q552910

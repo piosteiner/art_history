@@ -1,0 +1,15 @@
+public_id: 113085
+name: Taiji
+names:
+  - lang: zh
+    role: original
+    text: 太極
+category: calendar
+definition: "Chinese era name (太極) of the Tang for the year 712: 712 is Taiji 1 (元年), its only year."
+description_md: |-
+  **Taiji** (太極) is a Chinese era name ([[nianhao]]) of the Tang, proclaimed in 712 under Emperor Ruizong (睿宗). Its years are counted in lunar years: 712 is Taiji 1 (元年), its only year.
+
+  Before: [[jingyun-era|Jingyun]]. After: [[yanhe-era|Yanhe]].
+sources:
+  definition:
+    - source: dila-time-authority

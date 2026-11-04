@@ -30,6 +30,7 @@ names:
     role: translation
     text: Вторая испанская республика
 period: 1931-04-14/1939-04-01
+country_codes: [ES]
 wikidata_id: Q178038
 metadata:
   sources: [Wikidata Q178038 (retrieved 2026-10-29)]

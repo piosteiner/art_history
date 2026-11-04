@@ -1,0 +1,58 @@
+public_id: 113466
+title_lang: en
+title: Groups of Mountain Climbers
+names:
+  - lang: ja
+    role: original
+    text: 諸人登山
+  - Shojin tozan
+  - lang: fr
+    role: translation
+    text: L'ascension du Fuji
+  - lang: es
+    role: translation
+    text: Subiendo el Fuji
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 諸人登山
+parent: thirty-six-views-of-mount-fuji
+part_number: "46"
+creator: katsushika-hokusai
+created: 1830/1833
+created_label: c. 1830–1833
+created_span: uncertain
+institution: art-institute-of-chicago
+inventory_number: "1925.3241"
+web_url: https://www.artic.edu/artworks/87001
+wikidata_id: Q18173437
+metadata:
+  sources: [Wikidata Q18173437 (retrieved 2026-11-03)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Climbing_on_Mt._Fuji.jpg/1280px-Climbing_on_Mt._Fuji.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Climbing_on_Mt._Fuji.jpg
+    license: Public domain
+    credit: Katsushika Hokusai
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173437
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173437
+  created:
+    - url: https://www.artic.edu/artworks/87001
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173437
+  institution:
+    - url: https://www.artic.edu/artworks/87001
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.artic.edu/artworks/87001
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03

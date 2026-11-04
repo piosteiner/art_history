@@ -1,0 +1,101 @@
+public_id: 115305
+title_lang: de
+title: Stehende Madonna
+names:
+  - lang: it
+    role: translation
+    text: Madonna
+  - lang: en
+    role: translation
+    text: Vierge à l’enfant
+creator: claux-de-werve
+attribution_label: attributed to Claux de Werve
+created: c. 1425
+created_span: uncertain
+kind: sculpture
+medium: Limestone with traces of polychromy
+dimensions: [72.5, 30, 22]
+institution: kunsthaus-zurich
+inventory_number: 1945/0006
+web_url: https://collection.kunsthaus.ch/de/collection/item/3195/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/juliette-ramet
+    co_owners: [person/andre-ramet]
+    acquired: 1937-09-02 or earlier
+    ended: 1945-02-28
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3195/
+        note: "Footnote: Auktion Galerie Fischer Luzern (30.08.1937-04.09.1937),(https://doi.org/10.11588/diglit.5522#0001, 13.08.2026), S. 20, Lot 287: Stehende Madonna mit Kind. Die Maria mit Kopftuch und in faltenreichem Gewand steht aufrecht mit nach links schön ausgeschwungener Hüfte. Das Kind hält die Hand der Mutter und in der Linken eine Schriftrolle. Die Statue ist hervorragend modelliert und trägt die alte Polyc…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1937-09-02
+    ended: 1937-09-02
+    method: auction
+    direct: true
+    place: lucerne
+    label: Lot 287; als "aus Moulins"; nicht zugeschlagen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3195/
+        note: "Footnote: Vgl. Auktion Galerie Fischer, Luzern (30.08.1937-04.09.1937), S. 19, Lot 280, vgl. https://doi.org/10.11588/diglit.5522#0030 (12.08.2026), wie Fussnote 3; Kommissionsbuch «1924-1938 Mai», fol. 379, Kommissionsbuch «1938-1941 Mai», fol. 284 und 285 sowie Kommissionsbuch «1927-1943», fol. 81 und 82, Archiv der Galerie Fischer, Galerie Fischer Auktionen AG, Luzern. Recherche: Dr. Sandra Sykora, sowie…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1937-09-02
+    ended: 1945-02-28
+    direct: true
+    place: lucerne
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3195/
+        note: "Footnote: Wie oben Fussnote 4; ZKG/KHZ, Inventarbuch Slg.; Sitzungsprotokoll der Sammlungskommission, 28.02.1945, Archiv ZKG/KHZ, 10.30.10.42."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1945-02-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3195/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3195/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3195/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3195/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3195/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3195/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3195/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3195/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3195/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

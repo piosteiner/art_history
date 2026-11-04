@@ -26,6 +26,7 @@ names:
     role: translation
     text: Княжество Лукка и Пьомбино
 period: 1805/1814
+country_codes: [IT]
 wikidata_id: Q1995553
 metadata:
   sources: [Wikidata Q1995553 (retrieved 2026-10-29)]

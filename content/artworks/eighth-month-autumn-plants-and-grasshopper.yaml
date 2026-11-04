@@ -1,0 +1,71 @@
+public_id: 107944
+title_lang: en
+title: "Eighth Month: Autumn Plants and Grasshopper"
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 八月　秋草に螽斯図
+    sources:
+      - source: history-of-japanese-art
+  - lang: en
+    role: translation
+    text: August Autumn Plants and Grasshopper
+    status: official
+    note: the museum’s English title
+  - lang: en
+    role: alternative
+    text: Ninth Month, from Flowers and Birds of the Twelve Months
+    note: so in Mason 2005 (fig. 368); in the museum’s set it is the eighth month (八月)
+parent: birds-and-flowers-through-the-twelve-months
+part_number: "8"
+creator: sakai-hoitsu
+created: 1823
+kind: kakemono
+medium: Hanging scroll, colour on silk
+materials: [silk]
+dimensions: [140, 50]
+institution: museum-of-the-imperial-collections
+web_url: https://shozokan.nich.go.jp/en/collection/object/SZK000142
+description_md: "One of twelve hanging scrolls painted by [[artist/sakai-hoitsu]] (1761–1828) at sixty-two: four autumn plants under a pale harvest moon, so subtly placed that a slight breeze seems to touch them. Hōitsu, born into the daimyo family of Himeji, became a priest in 1797 and from 1810 revived Kōrin’s style, publishing his Hundred Paintings by Kōrin for the centenary of his death in 1815. [[source/history-of-japanese-art|pp. 316–317, fig. 368]]"
+relationships:
+  - type: associated_with
+    to: movement/edo-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 316–317, fig. 368
+sources:
+  kind:
+    - source: history-of-japanese-art
+      locator: pp. 316–317, fig. 368
+  names:
+    - source: history-of-japanese-art
+    - source: shozokan-szk000142-twelve-months
+      locator: picture 8 of 12 (八月　秋草に螽斯図)
+      accessed: 2026-11-03
+  medium:
+    - source: history-of-japanese-art
+      locator: pp. 316–317, fig. 368
+  parent:
+    - source: shozokan-szk000142-twelve-months
+      locator: picture 8 of 12 (八月　秋草に螽斯図)
+      accessed: 2026-11-03
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 316–317, fig. 368
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 316–317, fig. 368
+  materials:
+    - source: history-of-japanese-art
+      locator: pp. 316–317, fig. 368
+  dimensions:
+    - source: history-of-japanese-art
+      locator: pp. 316–317, fig. 368
+  institution:
+    - source: history-of-japanese-art
+      locator: pp. 316–317, fig. 368
+  title_status:
+    - url: https://shozokan.nich.go.jp/en/collection/object/SZK000142
+      source: shozokan-nich-go-jp
+      accessed: 2026-11-02

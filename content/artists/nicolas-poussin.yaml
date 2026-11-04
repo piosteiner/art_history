@@ -1,0 +1,84 @@
+public_id: 115172
+name: Nicolas Poussin
+given_name: Nicolas
+family_name: Poussin
+names:
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: Le Raphaël français
+    sources:
+      - accessed: 2026-11-03
+        property: P1449
+        wikidata: Q41554
+birth: 1594-06
+death: 1665-11-19
+wikidata_id: Q41554
+metadata:
+  sources: [Wikidata Q41554 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q41554
+  - type: nationality
+    to: polity/kingdom-of-france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q41554
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q41554
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q41554
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q41554
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q41554
+  - type: influenced_by
+    to: artist/domenichino
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q41554
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d9/Nicolas_Poussin_078.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nicolas_Poussin_078.jpg
+    license: Public domain
+    credit: Nicolas Poussin
+identifiers:
+  bnf: "119204967"
+  gnd: "118596047"
+  idref: "027081370"
+  kulturnav: dfef6729-3180-42a8-96b7-d2334a3948a2
+  lc: n80028152
+  rkd: "64559"
+  ulan: "500005036"
+  viaf: "24606800"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q41554
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q41554

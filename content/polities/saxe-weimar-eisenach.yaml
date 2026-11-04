@@ -30,6 +30,7 @@ names:
     role: translation
     text: Саксен-Веймар-Эйзенах
 period: 1809/1918
+country_codes: [DE]
 wikidata_id: Q155570
 metadata:
   sources: [Wikidata Q155570 (retrieved 2026-10-29)]

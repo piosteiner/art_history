@@ -1,0 +1,205 @@
+public_id: 115098
+title_lang: en
+title: Orpheus und Eurydike vor Pluto und Proserpina
+names:
+  - lang: en
+    role: translation
+    text: Orpheus and Eurydice Leaving Pluto and Proserpina
+  - lang: en
+    role: translation
+    text: Orphée et Eurydice devant Pluton et Proserpine
+  - lang: en
+    role: former
+    text: Orphee et eurydice
+  - lang: en
+    role: former
+    text: Orpheusé et Eurydike
+  - lang: en
+    role: former
+    text: Orpheus Leads Eurydice From Hades
+  - lang: en
+    role: former
+    text: Orpheus leaves Hades with Eurydite
+creator: peter-paul-rubens
+created: 1636
+kind: oil painting
+medium: Oil on oak panel
+dimensions: [28.5, 33]
+institution: kunsthaus-zurich
+inventory_number: R 27
+web_url: https://collection.kunsthaus.ch/de/collection/item/2263/
+on_loan: true
+on_loan_since: 1988
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586301
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d6/Peter_Paul_Rubens_-_Orpheus_und_Eurydike_vor_Pluto_und_Proserpina_-_R_27_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Orpheus_und_Eurydike_vor_Pluto_und_Proserpina_-_R_27_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Peter Paul Rubens
+provenance:
+  - owner_label: the Duke of the Infantado
+    place: madrid
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: "Footnote: Alpers 1971, Bd. 9, S. 245-246."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1896-05-11
+    ended: 1896-05-11
+    method: auction
+    place: madrid
+    label: Lot 136
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: the Duke of Osuna
+    acquired: 1896-05
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: "Footnote: Ausst.-Kat. Musées royaux des beaux-arts de Belgique 1937, S. 121-122, Nr. 1365."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/p-d-colnaghi-co-ltd
+    role: dealer
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: "Footnote: Wie oben Fussnote 3; Werkrückseite."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/mor-lipot-herzog
+    acquired: 1912
+    place: budapest
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/stefan-auspitz-von-artenegg
+    acquired: 1932 or earlier
+    place: vienna
+    label: V/231
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: |-
+          Footnote: Wie oben Fussnote 6; RKD Nederlands Instituut voor Kunstgeschiedenis, Archiv Bachstitz Gallery, 186 Voorraadboek I met stukken uit de Von Auspitz Collectie die voor verkoop in New York zijn bedoeld, 1932-1933: V/231.
+          Stefan Auspitz führte das Bankhaus Auspitz, Lieben & Co. in Wien. Infolge der Weltwirtschaftskrise 1931 ging es in Konkurs und er haftete mit seinem persönlichen Vermögen. Seine Kunst…
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-bachstitz
+    role: dealer
+    ended: 1937 or later
+    direct: true
+    place: the-hague
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: |-
+          Footnote: Wie oben Fussnote 6; Werkrückseite; ZKG/KHZ Werkdossier, handschriftliche Notizen von Leopold Ruzicka; Restitutions Committee, «Recommendation regarding Bachstitz», Report number: RC 1.78, https://www.restitutiecommissie.nl/en/recommendation/bachstitz/ (25.05.2023).
+          Kurt Walter Bachstitz, der jüdischer Herkunft war und die österreichische Staatsbürgerschaft besass, übernahm die bedeutende Sammlung…
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/sir-felix-cassel
+    acquired: 1944 or earlier
+    ended: 1949-07-22
+    label: Luton (Bedfordshire)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: "Footnote: Wie oben Fussnote 3; Korrespondenz von Matthiesen an Leopold Ruzicka, 20.07.1949; E-Mail-Korrespondenz Ruth Krul, 05.11.2024."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1949-07-22
+    ended: 1949-07-22
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: "Footnote: ZKG/KHZ Werkdossier, wie oben Fussnote 14: Erworben 1949 durch die Vermittlung der Galerie Matthiesen; ZKG/KHZ Ruzicka-Akten, Abrechnung Ruzicka-Stiftung 1949, S. 5: «am 22. Juli 1949 von Herrn F.M.Z. Matthiesen, via Jean Pierre Durand, Genf»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1949-07-22
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: "Footnote: Wie oben Fussnote 15."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (thief)
+    role: possessor
+    acquired: 1985-01-10
+    ended: 1988-10-12
+    method: theft
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: "Footnote: ZKG/KHZ Werkdokument."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurich-versicherungs-gesellschaft-ag
+    acquired: 1988-10-12
+    ended: 1988-11-22
+    direct: true
+    label: Zürich (in Kunsthaus als Leihgabe)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: "Footnote: Wie oben Fussnote 18."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1989
+    method: gift
+    direct: true
+    place: zurich
+    label: durch ein Geschenk der Karl und Sophie Binding Stiftung zurückerworben
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: "Footnote: ZKG/KHZ Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

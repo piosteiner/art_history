@@ -23,6 +23,7 @@ names:
     role: translation
     text: Сёгунат Муромати
 period: 1336-06-15/1573-09-04
+country_codes: [JP]
 wikidata_id: Q1154406
 metadata:
   sources: [Wikidata Q1154406 (retrieved 2026-10-29)]

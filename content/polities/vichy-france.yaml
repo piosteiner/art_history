@@ -31,6 +31,7 @@ names:
     role: translation
     text: Режим Виши
 period: 1940-07-10/1944-08-29
+country_codes: [FR]
 wikidata_id: Q69808
 metadata:
   sources: [Wikidata Q69808 (retrieved 2026-10-29)]

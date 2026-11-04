@@ -29,6 +29,7 @@ names:
     role: translation
     text: Временное правительство Французской республики
 period: 1944-06-03/1946-10-27
+country_codes: [FR]
 wikidata_id: Q783684
 metadata:
   sources: [Wikidata Q783684 (retrieved 2026-10-29)]

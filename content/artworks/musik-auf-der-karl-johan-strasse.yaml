@@ -1,0 +1,145 @@
+public_id: 115508
+title_lang: en
+title: Musik auf der Karl Johan Strasse
+names:
+  - lang: en
+    role: translation
+    text: Music on the Karl Johan Street
+  - lang: en
+    role: translation
+    text: Musique dans la rue Karl Johan
+  - lang: en
+    role: former
+    text: Musik auf der Strasse
+  - lang: en
+    role: original
+    text: Musikken på Karl Johan
+creator: edvard-munch
+created: 1889
+kind: oil painting
+medium: Oil on canvas
+dimensions: [101.5, 140.5]
+institution: kunsthaus-zurich
+inventory_number: "2534"
+web_url: https://collection.kunsthaus.ch/de/collection/item/5240/
+on_loan: true
+on_loan_since: 1939
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q18890546
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Edvard_Munch_-_Music_on_the_Karl_Johan_Street_%281889%29.jpg/1280px-Edvard_Munch_-_Music_on_the_Karl_Johan_Street_%281889%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_Music_on_the_Karl_Johan_Street_(1889).jpg
+    license: Public domain
+    credit: Edvard Munch
+provenance:
+  - owner: artist/edvard-munch
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5240/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: M. With
+    place: oslo
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5240/
+        note: "Footnote: Kunsthaus Zürich 2007 Sammlungskatalog;  Werkverzeichnis Woll 2009 I. 182.176."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/oskar-moll
+    acquired: 1899
+    ended: 1916 or earlier
+    method: purchase
+    place: wroc-aw
+    label: Breslau
+    price:
+      amount: 700
+      currency: NOK
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5240/
+        note: "Footnote: Frühere Provenienzangaben zum Werk nennen fälschlicherweise den Maler Carl Moll (1861-1945) als Vorbesitzer des Werkes. Auf die Verwechslung hat schon Michael Kirchner hingewiesen. Vgl. Kat. Landesmuseum Mainz 1997 (Oskar Moll), S. 34-35."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/curt-glaser
+    acquired: 1916 or earlier
+    ended: 1932-10-18
+    direct: true
+    place: berlin
+    label: Berlin, Kauf oder Tausch
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5240/
+        note: "Footnote: Wie oben Fussnote 3. Es ist gemäss der vorhandenen Quellen nicht klar, ob Glaser das Werk getauscht oder gekauft hat. Einerseits soll Glaser das Bild von Moll gegen ein nicht näher identifiziertes Bild von van Gogh eingetauscht haben, vgl. Munchmuseet, MM K 2309, Brief von Curt Glaser an Edvard Munch, 13.06.1916, S. 3, https://www.emunch.no/HYBRIDNo-MM_K2309.xhtml (02.03.2022). Andererseits schrei…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/alte-nationalgalerie
+    acquired: 1932-10-18
+    ended: 1939
+    method: gift
+    direct: true
+    label: Staatliche Museen zu Berlin (Museum); Berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5240/
+        note: "Footnote: Staatliche Museen zu Berlin, Zentral Archiv, SMB-ZA, I-NG 999, wie oben Fussnote 6; Staatliche Museen zu Berlin, Zentral Archiv, SMB-ZA, I-NG 946, Bl. 629-646."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/curt-glaser
+    acquired: 1939
+    ended: 1941
+    method: restitution
+    direct: true
+    place: ascona
+    label: returned
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5240/
+        note: "Footnote: Staatliche Museen zu Berlin, Zentral Archiv, SMB-ZA, I-NG 946, wie oben Fussnote 7; Sitzungsprotokoll der Sammlungskommission, 12.02.1941, I.b.14 und 02.04.1941, I.b., Archiv ZKG/KHZ, 10.30.10.42."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1941
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 12000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5240/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: I.182.176
+    label: Woll (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5240/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5240/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5240/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5240/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5240/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5240/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5240/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5240/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -29,6 +29,7 @@ names:
     role: translation
     text: Великое герцогство Франкфурт
 period: 1810/1813
+country_codes: [DE]
 wikidata_id: Q704312
 metadata:
   sources: [Wikidata Q704312 (retrieved 2026-10-29)]

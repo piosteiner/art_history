@@ -1,0 +1,57 @@
+public_id: 114916
+name: Abraham Govaerts
+given_name: Abraham
+family_name: Govaerts
+birth: 1589-08-30
+death: 1626-09-09
+wikidata_id: Q651521
+metadata:
+  sources: [Wikidata Q651521 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/southern-netherlands
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q651521
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q651521
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q651521
+  - type: worked_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q651521
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q651521
+identifiers:
+  bnf: 15037013h
+  gnd: "129235954"
+  idref: "080475132"
+  lc: nr2004019173
+  rkd: "33074"
+  ulan: "500006639"
+  viaf: "6005962"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q651521
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q651521

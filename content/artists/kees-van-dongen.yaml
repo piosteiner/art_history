@@ -1,0 +1,101 @@
+public_id: 115487
+name: Kees van Dongen
+given_name: Kees
+family_name: van Dongen
+names:
+  - kind: birth
+    lang: nl
+    role: alternative
+    text: Cornelis Théodorus Marie van Dongen
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q170345
+birth: 1877-01-26
+death: 1968-05-28
+wikidata_id: Q170345
+metadata:
+  sources: [Wikidata Q170345 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    period: 1929-01-30
+    period_label: until 30 January 1929
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q170345
+  - type: nationality
+    to: polity/france
+    period: 1929-01-31
+    period_label: from 31 January 1929
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q170345
+  - type: worked_in
+    to: place/morocco
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q170345
+  - type: worked_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q170345
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q170345
+  - type: worked_in
+    to: place/rotterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q170345
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q170345
+  - type: associated_with
+    to: movement/die-brucke
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q170345
+  - type: associated_with
+    to: movement/fauvism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q170345
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Kees_van_Dongen_1923.jpg/1280px-Kees_van_Dongen_1923.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kees_van_Dongen_1923.jpg
+    license: Public domain
+    credit: Agence de presse Meurisse
+identifiers:
+  bnf: "119275815"
+  dome: "400"
+  gnd: "118638858"
+  idref: "027437469"
+  kulturnav: 0a3a2148-c033-4c96-97e8-6dd7a93c26de
+  lc: n50046695
+  rkd: "23712"
+  ulan: "500005833"
+  viaf: "56617272"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q170345
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q170345

@@ -1,0 +1,47 @@
+public_id: 115089
+name: Germaine Richier
+given_name: Germaine
+family_name: Richier
+birth: 1902-09-16
+death: 1959-07-31
+wikidata_id: Q435149
+metadata:
+  sources: [Wikidata Q435149 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q435149
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q435149
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Buste_de_Germaine_Richier%2C_par_D%C3%A9lie_Duparc.jpg/1280px-Buste_de_Germaine_Richier%2C_par_D%C3%A9lie_Duparc.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Buste_de_Germaine_Richier,_par_D%C3%A9lie_Duparc.jpg
+    license: CC BY-SA 4.0
+    credit: Œuvres de Délie Duparc Photographies réalisées par Délie Duparc
+identifiers:
+  bnf: "119574131"
+  gnd: "118744941"
+  hls: "022591"
+  idref: "027559718"
+  kulturnav: b49a2542-91d9-4871-87b0-962360623c02
+  lc: n88645250
+  rkd: "66661"
+  sikart: "4000073"
+  ulan: "500031209"
+  viaf: "5863149198339074940003"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q435149
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q435149

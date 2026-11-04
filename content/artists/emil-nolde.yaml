@@ -1,0 +1,126 @@
+public_id: 115182
+name: Emil Nolde
+given_name: Emil
+family_name: Nolde
+names:
+  - kind: birth
+    lang: de
+    role: former
+    text: Hans Emil Hansen
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q152788
+birth: 1867-08-07
+death: 1956-04-13
+wikidata_id: Q152788
+metadata:
+  sources: [Wikidata Q152788 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q152788
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q152788
+  - type: worked_in
+    to: place/bern
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q152788
+  - type: worked_in
+    to: place/copenhagen
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q152788
+  - type: worked_in
+    to: place/hamburg
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q152788
+  - type: worked_in
+    to: place/moscow
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q152788
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q152788
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q152788
+  - type: worked_in
+    to: place/people-s-republic-of-china
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q152788
+  - type: worked_in
+    to: place/st-gallen
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q152788
+  - type: member_of
+    to: movement/die-brucke
+    period: 1906
+    period_label: from 1906
+    sources:
+      - accessed: 2026-11-03
+        property: P463
+        wikidata: Q152788
+  - type: member_of
+    to: movement/berlin-secession
+    period: 1908/1910-12-17
+    sources:
+      - accessed: 2026-11-03
+        property: P463
+        wikidata: Q152788
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q152788
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/WP_Emil_Nolde.jpg/1280px-WP_Emil_Nolde.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:WP_Emil_Nolde.jpg
+    license: Public domain
+    credit: Minya Diez-Dührkoop (* 21. Juni 1873; † 17. November 1929), deutsche Fotografin
+identifiers:
+  bnf: 12704529q
+  dome: "284"
+  gnd: "118588494"
+  hls: "022553"
+  idref: "027384063"
+  kulturnav: fad3905d-65f2-4f88-b8b6-893b92f1daee
+  lc: n79135037
+  rkd: "59808"
+  sikart: "4023354"
+  ulan: "500003109"
+  viaf: "37040576"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q152788
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q152788

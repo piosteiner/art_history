@@ -33,6 +33,12 @@ relationships:
       - accessed: 2026-10-31
         property: P937
         wikidata: Q15429125
+  - type: student_of
+    to: artist/antoine-bourdelle
+    sources:
+      - accessed: 2026-11-03
+        property: P802
+        wikidata: Q314350
 sources:
   birth:
     - accessed: 2026-10-07

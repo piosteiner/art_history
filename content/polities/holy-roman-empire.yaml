@@ -1,6 +1,7 @@
 public_id: 100897
 name: Holy Roman Empire
 period: 962-02-07/1806-08-06
+country_codes: [DE, AT, CZ, IT, NL, BE, LU, CH, SI, FR, PL, LI]
 wikidata_id: Q12548
 metadata:
   sources: [Wikidata Q12548 (retrieved 2026-10-18)]

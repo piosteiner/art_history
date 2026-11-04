@@ -1,0 +1,130 @@
+public_id: 115129
+title_lang: en
+title: À la Suite de l'eau, les nuages
+names:
+  - lang: en
+    role: translation
+    text: Nach dem Wasser, die Wolken
+  - lang: en
+    role: translation
+    text: After the Water, the Clouds
+creator: rene-magritte
+created: 1926
+kind: oil painting
+medium: Oil on canvas
+dimensions: [120, 80]
+institution: kunsthaus-zurich
+inventory_number: 1980/0013
+web_url: https://collection.kunsthaus.ch/de/collection/item/2409/
+on_loan: true
+on_loan_since: 1980
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585604
+provenance:
+  - owner: artist/rene-magritte
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/camille-goemans
+    ended: 1927 or earlier
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+        note: "Footnote: Sylvester/Whitfield 1992, I.176.91."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/rene-gaffe
+    acquired: 1926/1927
+    ended: c. 1935
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/robert-cocriamont
+    acquired: 1935 or later
+    method: purchase
+    direct: true
+    place: brussels
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/yvonne-maertens
+    acquired: 1978-10-27 or earlier
+    label: Rosière; Rosière, St. André
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+        note: "Footnote: Ausstellungsetikette auf der Werkrückseite; ZKG/KHZ Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alec-wildenstein
+    ended: 1979-01
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+        note: "Footnote: Wie oben Fussnote 2; ZKG/KHZ Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-haefner
+    acquired: 1979-01
+    ended: 1995
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+        note: "Footnote: ZKG/KHZ Werkdossier; Eingehende Korrespondenz, Careal Holding AG, Dietrich, 21.04.1992."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1995
+    direct: true
+    place: zurich
+    label: Zürich, Geschenk anlässlich des 50-jährigen Jubiläums der AMAG, Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; ZKG/KHZ Werkdossier; Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: I.176.91
+    label: Sylvester 1992 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

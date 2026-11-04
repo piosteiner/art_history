@@ -33,6 +33,7 @@ names:
     role: translation
     text: Первая Австрийская Республика
 period: 1919-10-21/1934-05-01
+country_codes: [AT]
 wikidata_id: Q518101
 metadata:
   sources: [Wikidata Q518101 (retrieved 2026-10-29)]

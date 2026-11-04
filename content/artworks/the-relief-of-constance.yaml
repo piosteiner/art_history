@@ -1,0 +1,56 @@
+public_id: 113407
+title_lang: es
+title: Socorro de la plaza de Constanza
+names:
+  - The relief of the Plaza de Constanza
+  - lang: en
+    role: translation
+    text: The Relief of Constance
+parent: battle-series
+creator: vicente-carducho
+created: 1634
+materials: [oil paint, canvas]
+dimensions: [297, 374]
+institution: museo-del-prado
+inventory_number: P000636
+web_url: https://www.museodelprado.es/en/the-collection/art-work/the-relief-of-constance/4a009c5d-f49f-404d-8669-81333ef69bb4
+wikidata_id: Q59684560
+metadata:
+  sources: [Wikidata Q59684560 (retrieved 2026-11-03)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Vicente_Carducho%2C_Socorro_de_la_plaza_de_Constanza..jpg/1280px-Vicente_Carducho%2C_Socorro_de_la_plaza_de_Constanza..jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vicente_Carducho,_Socorro_de_la_plaza_de_Constanza..jpg
+    license: Public domain
+    credit: Vicente Carducho (c. 1576-1638)
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q59684560
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q59684560
+  created:
+    - url: https://www.museodelprado.es/en/the-collection/art-work/the-relief-of-constance/4a009c5d-f49f-404d-8669-81333ef69bb4
+      source: museo-del-prado-coleccion
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q59684560
+  materials:
+    - accessed: 2026-11-03
+      property: P186
+      wikidata: Q59684560
+  dimensions:
+    - accessed: 2026-11-03
+      property: P2048
+      wikidata: Q59684560
+  institution:
+    - accessed: 2026-11-03
+      property: P195
+      wikidata: Q59684560
+  inventory_number:
+    - accessed: 2026-11-03
+      property: P217
+      wikidata: Q59684560

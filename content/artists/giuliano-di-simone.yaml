@@ -1,0 +1,22 @@
+public_id: 114991
+name: Giuliano di Simone
+given_name: Giuliano
+family_name: di Simone
+birth: 14th century
+death: 14th century
+wikidata_id: Q22002508
+metadata:
+  sources: [Wikidata Q22002508 (retrieved 2026-11-03)]
+identifiers:
+  rkd: "32023"
+  ulan: "500025777"
+  viaf: "95840654"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q22002508
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q22002508

@@ -1,0 +1,41 @@
+public_id: 115366
+name: Johann Melchior Wyrsch
+given_name: Johann Melchior
+family_name: Wyrsch
+birth: 1732-08-21
+death: 1798-09-09
+wikidata_id: Q118462
+metadata:
+  sources: [Wikidata Q118462 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q118462
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/aa/Melchior_Wyrsch.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Melchior_Wyrsch.jpg
+    license: Public domain
+    credit: Lithographie de J. Jeanneney, d'après l'autoportrait de Melchior Wyrsch. se trouvant au musée des beaux-arts de Besançon
+identifiers:
+  bnf: "149565124"
+  gnd: "120663171"
+  hls: "022705"
+  idref: "191951749"
+  kulturnav: 922d5e28-e6bc-4ee0-b5ed-4513bfa83ea3
+  lc: nr99011649
+  rkd: "85862"
+  sikart: "4023362"
+  ulan: "500085606"
+  viaf: "7656531"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q118462
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q118462

@@ -1,0 +1,59 @@
+public_id: 113408
+title_lang: es
+title: Expugnación de Rheinfelden
+names:
+  - The capture of Rheinfelden
+  - lang: en
+    role: translation
+    text: The Storming of Rheinfelden
+  - lang: de
+    role: translation
+    text: Die Einnahme von Rheinfelden (1633).
+parent: battle-series
+creator: vicente-carducho
+created: 1634
+materials: [oil paint, canvas]
+dimensions: [297, 357]
+institution: museo-del-prado
+inventory_number: P000637
+web_url: https://museodelprado.es/coleccion/obra-de-arte/expugnacion-de-rheinfelden/f3c34316-af33-4056-a3cf-db34d402b901
+wikidata_id: Q59684565
+metadata:
+  sources: [Wikidata Q59684565 (retrieved 2026-11-03)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/La_expugnaci%C3%B3n_de_Rheinfelden_por_Vicente_Carducho.jpg/1280px-La_expugnaci%C3%B3n_de_Rheinfelden_por_Vicente_Carducho.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:La_expugnaci%C3%B3n_de_Rheinfelden_por_Vicente_Carducho.jpg
+    license: Public domain
+    credit: Vincenzo Carducci
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q59684565
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q59684565
+  created:
+    - url: https://museodelprado.es/coleccion/obra-de-arte/expugnacion-de-rheinfelden/f3c34316-af33-4056-a3cf-db34d402b901
+      source: museo-del-prado-coleccion
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q59684565
+  materials:
+    - accessed: 2026-11-03
+      property: P186
+      wikidata: Q59684565
+  dimensions:
+    - accessed: 2026-11-03
+      property: P2048
+      wikidata: Q59684565
+  institution:
+    - accessed: 2026-11-03
+      property: P195
+      wikidata: Q59684565
+  inventory_number:
+    - accessed: 2026-11-03
+      property: P217
+      wikidata: Q59684565

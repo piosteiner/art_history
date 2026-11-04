@@ -45,6 +45,27 @@ relationships:
       - accessed: 2026-11-02
         property: P19
         wikidata: Q2034441
+  - type: visited
+    to: place/india
+    period: 1903
+    sources:
+      - note: Travelled to India with Hishida Shunsō in 1903; they witnessed the floating lights at Varanasi that Taikan painted in 1909.
+        source: history-of-japanese-art
+        locator: pp. 364–365
+  - type: visited
+    to: place/europe
+    period: 1904
+    sources:
+      - note: Visited Europe and the United States with Hishida Shunsō the year after India.
+        source: history-of-japanese-art
+        locator: p. 365
+  - type: visited
+    to: place/united-states
+    period: 1904
+    sources:
+      - note: Visited Europe and the United States with Hishida Shunsō the year after India.
+        source: history-of-japanese-art
+        locator: p. 365
   - type: student_of
     to: artist/hashimoto-gaho
     sources:

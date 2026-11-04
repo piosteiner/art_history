@@ -36,6 +36,7 @@ names:
     role: translation
     text: Третья французская республика
 period: 1870-09-04/1940-07-10
+country_codes: [FR]
 wikidata_id: Q70802
 metadata:
   sources: [Wikidata Q70802 (retrieved 2026-10-29)]

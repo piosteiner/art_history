@@ -1,0 +1,15 @@
+public_id: 113098
+name: Xingyuan
+names:
+  - lang: zh
+    role: original
+    text: 興元
+category: calendar
+definition: "Chinese era name (興元) of the Tang for the year 784: 784 is Xingyuan 1 (元年), its only year."
+description_md: |-
+  **Xingyuan** (興元) is a Chinese era name ([[nianhao]]) of the Tang, proclaimed in 784 under Emperor Dezong (德宗). Its years are counted in lunar years: 784 is Xingyuan 1 (元年), its only year.
+
+  Before: [[jianzhong-era|Jianzhong]]. After: [[zhenyuan-era|Zhenyuan]].
+sources:
+  definition:
+    - source: dila-time-authority

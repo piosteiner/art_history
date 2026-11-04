@@ -1,0 +1,109 @@
+public_id: 114917
+title_lang: en
+title: Waldlandschaft
+names:
+  - lang: en
+    role: translation
+    text: Forest Landscape
+  - lang: en
+    role: former
+    text: Waldlandschaft mit Ausblick auf Dorf
+creator: abraham-govaerts
+created: after 1620
+kind: oil painting
+medium: Oil on panel
+dimensions: [35.5, 52]
+institution: kunsthaus-zurich
+inventory_number: R 54
+web_url: https://collection.kunsthaus.ch/de/collection/item/1116/
+on_loan: true
+on_loan_since: 1977
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/paul-larsen
+    role: dealer
+    ended: 1937-04-30
+    place: london
+    label: Nr. 1053
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1116/
+        note: "Footnote: E-Mail-Korrespondenz Galerie Fischer, Sykora, 18.01.2023."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: dealer
+    acquired: 1937-04-30 or earlier
+    ended: 1939-11-23
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1116/
+        note: "Footnote: Wie oben Fussnote 3; ZKG/KHZ Werkdossier, Rechnung der Galerie Fischer an Leopold Ruzicka, 23.11.1939."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1939-11-23
+    ended: 1976
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1116/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1977-05-06
+    ended: 2005
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1116/
+        note: "Footnote: M+: «[…] kam erst nach dem Tod von Ruzicka ins Kunsthaus (erster erfasster Standort: 1977 Restaurierungsatelier, Paul Pfister) und wurde an der ersten Sitzung des erneuerten Stiftungsrates am 6. Mai 1977 in die Stiftung aufgenommen»; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 96."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1116/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1116/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1116/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1116/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1116/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1116/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1116/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1116/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1116/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -31,6 +31,7 @@ names:
     role: translation
     text: Королевство Италия
 period: 1805-03-17/1814-05-25
+country_codes: [IT]
 wikidata_id: Q223936
 metadata:
   sources: [Wikidata Q223936 (retrieved 2026-10-29)]

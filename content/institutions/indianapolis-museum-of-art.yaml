@@ -1,0 +1,16 @@
+public_id: 113417
+name: Indianapolis Museum of Art
+kind: museum
+founded: 1883
+wikidata_id: Q1117704
+metadata:
+  sources: [Wikidata Q1117704 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q1117704
+  founded:
+    - accessed: 2026-11-03
+      property: P571
+      wikidata: Q1117704

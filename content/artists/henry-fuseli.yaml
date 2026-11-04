@@ -1,0 +1,84 @@
+public_id: 114907
+name: Henry Fuseli
+given_name: Henry
+family_name: Fuseli
+birth: 1741-02-07
+death: 1825-04-16
+wikidata_id: Q122382
+metadata:
+  sources: [Wikidata Q122382 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q122382
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q122382
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q122382
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q122382
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q122382
+  - type: member_of
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-11-03
+        property: P463
+        wikidata: Q122382
+  - type: associated_with
+    to: movement/neoclassicism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q122382
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q122382
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/13/Henry_fuseli_por_James_Northcote_1778.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Henry_fuseli_por_James_Northcote_1778.jpg
+    license: Public domain
+    credit: James Northcote
+identifiers:
+  bnf: 12176361j
+  dodis: P14435
+  gnd: "118536745"
+  hls: "011809"
+  idref: "030324890"
+  kulturnav: a0858227-71b0-40da-8f41-631bdb559d3f
+  lc: n79021856
+  rkd: "29715"
+  sikart: "4022806"
+  ulan: "500115235"
+  viaf: "53061"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q122382
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q122382

@@ -1,0 +1,22 @@
+public_id: 115038
+name: Rüschlikon
+kind: settlement
+parent: canton-of-zurich
+country_code: CH
+location: [8.55417, 47.30806]
+wikidata_id: Q66819
+metadata:
+  sources: [Wikidata Q66819 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q66819
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q66819
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q66819

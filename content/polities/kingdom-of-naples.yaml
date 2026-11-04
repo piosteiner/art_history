@@ -27,6 +27,7 @@ names:
     role: translation
     text: Неаполитанское королевство
 period: 1282-04-06/1816-12-12
+country_codes: [IT]
 wikidata_id: Q173065
 metadata:
   sources: [Wikidata Q173065 (retrieved 2026-10-29)]

@@ -1,0 +1,18 @@
+public_id: 113381
+name: Sinmu of Silla (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 신무왕
+  - lang: ko-Hani
+    role: alternative
+    text: 神武王
+category: calendar
+definition: "The reign years of King Sinmu of Silla (神武王, 신무왕), by which Korean histories date 839: 839 is Sinmu 1, 839 Sinmu 1."
+description_md: |-
+  **Sinmu** (神武王, 신무왕): the years of the reign of King Sinmu of Silla. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 839 is Sinmu 1 (신무왕 1년). The year of the accession, 839, counts as the first year.
+
+  Before: [[minae-silla-reign-years|Minae]]. After: [[munseong-silla-reign-years|Munseong]].
+sources:
+  definition:
+    - source: dila-time-authority

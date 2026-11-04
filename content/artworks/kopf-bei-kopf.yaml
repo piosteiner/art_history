@@ -1,0 +1,79 @@
+public_id: 115030
+title_lang: de
+title: Kopf bei Kopf
+names:
+  - lang: de
+    role: translation
+    text: Mann und Weib sich küssend
+  - lang: de
+    role: translation
+    text: Zwei Köpfe
+  - lang: en
+    role: translation
+    text: Head by Head
+creator: edvard-munch
+created: 1905
+kind: print
+medium: Woodcut in blue, brown-red, green and red on yellowish wove paper
+dimensions: [39.5, 54]
+institution: kunsthaus-zurich
+inventory_number: Gr.1950/0018
+web_url: https://collection.kunsthaus.ch/de/collection/item/16887/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/harald-holst-halvorsen
+    role: dealer
+    ended: 1950-02-01
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/16887/
+        note: "Footnote: Inventarbuch Gr. Slg.; Sitzungsprotokoll der Sammlungskommission Archiv 10.30.10.41-42, 01.02.1950, II.12; Zürcher Kunstgesellschaft Jahresbericht 1950, S. 9-10; Ausgehende Korrespondenz Archiv 10.30.20.112, S. 333, Bakke, 08.09.1949, Archiv 10.30.20.280, S. 413, Bakke, 17.09.1949 und ebd., S. 506, Bakke, 09.11.1949; Eingehende Korrespondenz Archiv 10.30.30.036, Norwegische Graphik, Bakke, 07.11.1…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1950-02-01
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 1400
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/16887/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: I.141.230a
+    label: Schiefler 1974 (catalogue raisonné)
+  - number: "219.268"
+    label: Woll 2001 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16887/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16887/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16887/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16887/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16887/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16887/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16887/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

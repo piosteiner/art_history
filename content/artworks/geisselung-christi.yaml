@@ -1,0 +1,111 @@
+public_id: 115456
+title_lang: en
+title: Geisselung Christi
+creator: master-of-the-hohenlandberg-altarpiece
+attribution_label: workshop of Master of the Hohenlandberg altarpiece
+created: c. 1490
+created_span: uncertain
+kind: oil painting
+medium: Oil on panel
+dimensions: [142.5, 124.5]
+institution: kunsthaus-zurich
+inventory_number: 1948/0009
+web_url: https://collection.kunsthaus.ch/de/collection/item/3921/
+on_loan: true
+on_loan_since: 1948
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584963
+provenance:
+  - owner_label: Mr. Schaposhnikoff
+    ended: 1938-11-09
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3921/
+        note: "Footnote: Auktion Hôtel Drouot 1938, Lot 62; Procès-verbal de la vente du 09/11/1938 administrée par Me Rheims, S. 1, Archives de Paris, Commissaire priseurs, Maurice Rheims, D126E3 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1938-11-09
+    ended: 1938-11-09
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 62
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3921/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Lejeune
+    acquired: 1938-11-09
+    method: purchase
+    direct: true
+    place: neuilly-sur-seine
+    price:
+      amount: 17250
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3921/
+        note: "Footnote: Procès-verbal de la vente du 09/11/1938 administrée par Me Rheims, S. 2, Archives de Paris, Commissaire priseurs, Maurice Rheims, D126E3 12; Gazette de L’Hôtel Drouot, 11.11.1938, S. 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/pierre-mussard-hirth
+    ended: 1948
+    place: lausanne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3921/
+        note: "Footnote: ZKG/KHZ, Künstlerdossier, «Zuwendungen der Vereinigung Zürcher Kunstfreunde»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1948
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 15000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3921/
+        note: "Footnote: Sitzungsprotokoll des Vorstands der VZK, 30. 01.1948, Archiv ZKG/KHZ, 10.50.20."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3921/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3921/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3921/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3921/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3921/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3921/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3921/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3921/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3921/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

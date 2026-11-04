@@ -1,0 +1,98 @@
+public_id: 115074
+title_lang: en
+title: Stehender Bischof
+names:
+  - lang: en
+    role: translation
+    text: Standing Bishop
+creator: matthaus-krinis
+created: c. 1515
+created_span: uncertain
+kind: sculpture
+medium: Limewood with original polychromy, added to
+dimensions: [94, 31, 21]
+institution: kunsthaus-zurich
+inventory_number: 1944/0024
+web_url: https://collection.kunsthaus.ch/de/collection/item/2050/
+on_loan: true
+on_loan_since: 1944
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/friedrich-andreae
+    acquired: 1929 or earlier
+    ended: 1944
+    method: purchase
+    place: berlin
+    label: Berlin and Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2050/
+        note: "Footnote: Kaufvertrag, 31.08.1944, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.145: «Herr Fritz Andreae erklärt ausdrücklich mit voller Haftbarkeit in Bezug auf die gegenwärtigen, ihm bekannten kriegsbedingten Eigentumsnachweise beim Handel mit Kunstwerken, dass er alle die oben genannten Werke in den 20er Jahren im deutschen Kunsthandel erworben und bei Anlass seines Umzuges nach Zürich mit behördli…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/adolf-johr
+    acquired: 1944-09-11 or earlier
+    ended: 1953
+    method: purchase
+    direct: true
+    place: zurich
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2050/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg.: «1955 laut Aussage v. Frau Dr. Jöhr nun dem Kunsthaus gehörend»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/fides-treuhand-vereinigung
+    acquired: 1944-09-11
+    ended: 1955
+    direct: true
+    place: zurich
+    label: «treuhänderisch namens und im Auftrag eines ungenannten Eigentümers»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2050/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; Sitzungsprotokoll der Sammlungskommission, 11.10.1944, S. 3, II.3., Archiv ZKG/KHZ, 10.30.10.42; Leihgabe-Vertrag der Zürcher Kunstgesellschaft zu Leihgabe Inv.-Nr. 1944/24, 11.09.1944, ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1955
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2050/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2050/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2050/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2050/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2050/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2050/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2050/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2050/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2050/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,18 @@
+public_id: 113260
+name: Asin of Baekje (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 아신왕
+  - lang: ko-Hani
+    role: alternative
+    text: 阿莘王
+category: calendar
+definition: "The reign years of King Asin of Baekje (阿莘王, 아신왕), by which Korean histories date 392–405: 392 is Asin 1, 405 Asin 14."
+description_md: |-
+  **Asin** (阿莘王, 아신왕): the years of the reign of King Asin of Baekje. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 401 is Asin 10 (아신왕 10년). The year of the accession, 392, counts as the first year.
+
+  Before: [[jinsa-baekje-reign-years|Jinsa]]. After: [[jeonji-baekje-reign-years|Jeonji]].
+sources:
+  definition:
+    - source: dila-time-authority

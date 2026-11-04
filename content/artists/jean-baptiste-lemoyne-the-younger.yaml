@@ -1,0 +1,57 @@
+public_id: 115063
+name: Jean-Baptiste Lemoyne the Younger
+given_name: Jean-Baptiste, the Younger
+family_name: Lemoyne
+birth: 1704-02-15
+death: 1778-05-25
+wikidata_id: Q507800
+metadata:
+  sources: [Wikidata Q507800 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q507800
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q507800
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q507800
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q507800
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/26/Jean-Baptiste_II_Lemoyne.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Baptiste_II_Lemoyne.jpg
+    license: Public domain
+    credit: Jean Valade
+identifiers:
+  bnf: "119642745"
+  gnd: "124288839"
+  idref: "074318209"
+  kulturnav: 61f7aa9d-51cf-4146-8942-64d9061314ce
+  lc: nr2001006648
+  rkd: "49312"
+  ulan: "500015004"
+  viaf: "37847387"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q507800
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q507800

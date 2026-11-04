@@ -29,6 +29,7 @@ names:
     role: translation
     text: Австрийские Нидерланды
 period: 1714/1797
+country_codes: [BE, LU]
 wikidata_id: Q700283
 metadata:
   sources: [Wikidata Q700283 (retrieved 2026-10-29)]

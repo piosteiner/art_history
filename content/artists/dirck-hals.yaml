@@ -1,0 +1,78 @@
+public_id: 114996
+name: Dirck Hals
+given_name: Dirck
+family_name: Hals
+birth: 1591-03-19
+death: 1656-05-17
+wikidata_id: Q759486
+metadata:
+  sources: [Wikidata Q759486 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q759486
+  - type: born_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q759486
+  - type: died_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q759486
+  - type: worked_in
+    to: place/haarlem
+    period: 1618/1656
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q759486
+  - type: worked_in
+    to: place/leiden
+    period: 1641/1642
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q759486
+  - type: student_of
+    to: artist/frans-hals
+    sources:
+      - accessed: 2026-11-03
+        property: P1066
+        wikidata: Q759486
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q759486
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Beaux-Arts_de_Carcassonne_-_Sc%C3%A8ne_Galante_-_Dirck_Hals_Joconde0440000028.jpg/1280px-Beaux-Arts_de_Carcassonne_-_Sc%C3%A8ne_Galante_-_Dirck_Hals_Joconde0440000028.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Beaux-Arts_de_Carcassonne_-_Sc%C3%A8ne_Galante_-_Dirck_Hals_Joconde0440000028.jpg
+    license: CC BY-SA 4.0
+    credit: Didier Descouens
+identifiers:
+  bnf: 14975458b
+  dome: "10609"
+  gnd: "124403867"
+  idref: "077083512"
+  kulturnav: edd51745-45cf-4542-a6f3-891b5e2be3de
+  lc: nr91037831
+  rkd: "35549"
+  ulan: "500022109"
+  viaf: "71667732"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q759486
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q759486

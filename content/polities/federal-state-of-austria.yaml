@@ -30,6 +30,7 @@ names:
     role: translation
     text: Федеративное государство Австрия
 period: 1 May 1934 – 13 March 1938
+country_codes: [AT]
 wikidata_id: Q176495
 metadata:
   sources: [Wikidata Q176495 (retrieved 2026-10-29)]

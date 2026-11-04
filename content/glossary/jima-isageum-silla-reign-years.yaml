@@ -1,0 +1,18 @@
+public_id: 113342
+name: Jima Isageum of Silla (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 지마이사금
+  - lang: ko-Hani
+    role: alternative
+    text: 祇摩尼師今
+category: calendar
+definition: "The reign years of Jima Isageum of Silla (祇摩尼師今, 지마이사금), by which Korean histories date 112–134: 112 is Jima Isageum 1, 134 Jima Isageum 23."
+description_md: |-
+  **Jima Isageum** (祇摩尼師今, 지마이사금): the years of the reign of Jima Isageum of Silla. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 121 is Jima Isageum 10 (지마이사금 10년). The year of the accession, 112, counts as the first year.
+
+  Before: [[pasa-isageum-silla-reign-years|Pasa Isageum]]. After: [[ilseong-isageum-silla-reign-years|Ilseong Isageum]].
+sources:
+  definition:
+    - source: dila-time-authority

@@ -1,0 +1,52 @@
+public_id: 115049
+name: Heinrich Freudweiler
+given_name: Heinrich
+family_name: Freudweiler
+birth: 1755-10-16
+death: 1795-12-01
+wikidata_id: Q16832428
+metadata:
+  sources: [Wikidata Q16832428 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q16832428
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q16832428
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q16832428
+  - type: studied_at
+    to: institution/kunstakademie-dusseldorf
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q16832428
+identifiers:
+  gnd: "116774290"
+  hls: "022298"
+  kulturnav: 787449c3-75a7-439a-bfa7-571fda242c2d
+  lc: no2007147942
+  rkd: "29420"
+  sikart: "4022895"
+  ulan: "500013052"
+  viaf: "8148371"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q16832428
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q16832428

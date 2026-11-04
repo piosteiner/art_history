@@ -1,0 +1,62 @@
+public_id: 113424
+title_lang: en
+title: Cushion Pine at Aoyama
+names:
+  - lang: ja
+    role: original
+    text: 青山円座松
+  - Aoyama Enza-no-matsu
+  - "'Round Cushion' Pine at Aoyama"
+  - lang: fr
+    role: translation
+    text: Le pin-coussin à Aoyama
+  - lang: de
+    role: translation
+    text: Die Kiefer im Aoyama-Park
+  - lang: es
+    role: translation
+    text: Pinos redondeados en Aoyama
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 青山円座松
+parent: thirty-six-views-of-mount-fuji
+part_number: "6"
+creator: katsushika-hokusai
+created: 1830/1833
+created_label: c. 1830–1833
+created_span: uncertain
+institution: art-institute-of-chicago
+inventory_number: "1925.3237"
+web_url: https://www.artic.edu/artworks/24610
+wikidata_id: Q18173388
+metadata:
+  sources: [Wikidata Q18173388 (retrieved 2026-11-03)]
+images:
+  - url: https://www.artic.edu/iiif/2/2d4304b7-9f62-e58d-89c1-e90919f53c42/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/24610
+    license: Public domain
+    credit: Art Institute of Chicago, Clarence Buckingham Collection
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173388
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173388
+  created:
+    - url: https://www.artic.edu/artworks/24610
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173388
+  institution:
+    - url: https://www.artic.edu/artworks/24610
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.artic.edu/artworks/24610
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03

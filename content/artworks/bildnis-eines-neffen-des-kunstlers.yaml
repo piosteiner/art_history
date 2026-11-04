@@ -1,0 +1,67 @@
+public_id: 115475
+title_lang: de
+title: Bildnis eines Neffen des Künstlers
+names:
+  - lang: fr
+    role: translation
+    text: Portrait of the Artist's Nephew
+  - lang: fr
+    role: translation
+    text: Portrait d'un neveu de l'artiste
+creator: adolf-dietrich
+created: 1929
+kind: oil painting
+medium: Oil on cardboard, on panel
+dimensions: [82.5, 54.5]
+institution: kunsthaus-zurich
+inventory_number: "2610"
+web_url: https://collection.kunsthaus.ch/de/collection/item/50/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585738
+provenance:
+  - owner: person/franz-meyer
+    ended: 1942
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/50/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1942
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/50/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/50/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/50/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/50/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/50/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/50/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/50/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/50/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

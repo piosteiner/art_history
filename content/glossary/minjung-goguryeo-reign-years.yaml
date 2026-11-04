@@ -1,0 +1,18 @@
+public_id: 113278
+name: Minjung of Goguryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 민중왕
+  - lang: ko-Hani
+    role: alternative
+    text: 閔中王
+category: calendar
+definition: "The reign years of King Minjung of Goguryeo (閔中王, 민중왕), by which Korean histories date 44–48: 44 is Minjung 1, 48 Minjung 5."
+description_md: |-
+  **Minjung** (閔中王, 민중왕): the years of the reign of King Minjung of Goguryeo. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 48 is Minjung 5 (민중왕 5년). The year of the accession, 44, counts as the first year.
+
+  Before: [[daemusin-goguryeo-reign-years|Daemusin]]. After: [[mobon-goguryeo-reign-years|Mobon]].
+sources:
+  definition:
+    - source: dila-time-authority

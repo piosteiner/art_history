@@ -32,6 +32,7 @@ names:
     role: translation
     text: Батавская республика
 period: 1795-01-19/1806-06-05
+country_codes: [NL]
 wikidata_id: Q188553
 metadata:
   sources: [Wikidata Q188553 (retrieved 2026-10-29)]

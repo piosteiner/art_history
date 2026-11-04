@@ -1,0 +1,18 @@
+public_id: 113264
+name: Gaero of Baekje (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 개로왕
+  - lang: ko-Hani
+    role: alternative
+    text: 蓋鹵王
+category: calendar
+definition: "The reign years of King Gaero of Baekje (蓋鹵王, 개로왕), by which Korean histories date 455–475: 455 is Gaero 1, 475 Gaero 21."
+description_md: |-
+  **Gaero** (蓋鹵王, 개로왕): the years of the reign of King Gaero of Baekje. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 464 is Gaero 10 (개로왕 10년). The year of the accession, 455, counts as the first year.
+
+  Before: [[biyu-baekje-reign-years|Biyu]]. After: [[munju-baekje-reign-years|Munju]].
+sources:
+  definition:
+    - source: dila-time-authority

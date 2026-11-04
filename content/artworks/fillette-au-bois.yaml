@@ -1,0 +1,174 @@
+public_id: 115488
+title_lang: en
+title: Fillette au bois
+names:
+  - lang: de
+    role: translation
+    text: Mädchen im Wald
+  - lang: en
+    role: translation
+    text: Girl in the Forest
+  - lang: fr
+    role: former
+    text: La Petite Écuyère
+  - lang: nl
+    role: former
+    text: De Rijles
+  - lang: en
+    role: former
+    text: Meisje (Bois de Boulogne)
+  - lang: en
+    role: former
+    text: Young Lady Rider
+  - lang: nl
+    role: former
+    text: Het kind in het bosch
+creator: kees-van-dongen
+created: c. 1912
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [65.5, 55]
+institution: kunsthaus-zurich
+inventory_number: 1995/0008
+web_url: https://collection.kunsthaus.ch/de/collection/item/509/
+on_loan: true
+on_loan_since: 1990
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584969
+provenance:
+  - owner: institution/frans-buffa-sons
+    role: agent
+    ended: 1937 or later
+    direct: true
+    place: amsterdam
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/509/
+        note: "Footnote: Ausstellungsetikette auf der Werkrückseite: Auf der rechten Leiste des Keilrahmens befindet sich braune, liniierte Ausstellungsetikette. Darauf wird als Einsender/in eine Person namens «Siedenburg» genannt und eine handschriftliche Nummer 65 ist erkennbar; Kat. Singer Laren 2016, S. 51-132, Abb. 134: In Amsterdam gab es eine Galerie namens Frans Buffa & Zonen, die ab den 20er Jahren von einem gewi…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/roger-varenne
+    ended: 1959
+    place: geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/509/
+        note: "Footnote: ZKG/KHZ, Werkdossier; Kat. Galerie des Ponchettes Nizza 1959, Kat.-Nr. 30; Auktion Christie's London (15.05.1990), S. 104, Lot 36; E-Mail-Korrespondenz, Feilchenfeldt, 29.07.2022."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/marianne-feilchenfeldt
+    acquired: 1959
+    ended: 1960
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/509/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/charles-lock
+    role: agent
+    acquired: 1960
+    ended: 1960
+    direct: true
+    place: new-york-city
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/509/
+        note: "Footnote: E-Mail-Korrespondenz, Feilchenfeldt, 29.07.2022: «Unsere Firma 'Walter Feilchenfeldt, Zürich' – damals allein geführt von meiner Mutter Marianne Feilchenfeldt – hat dieses Bild im Jahre 1959 von «Roger Varenne, Genf» erworben und in Jahre 1960, vermittelt durch Charles Lock (Kunsthandlung in New York) an den New Yorker Sammler Robert Lehman verkauft.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/robert-lehman
+    acquired: 1960
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/509/
+        note: "Footnote: ZKG/KHZ, Werkdossier; Auktion Christie's London (15.05.1990), S. 104, Lot 36."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/robert-lehman
+    role: estate
+    acquired: 1969 or later
+    ended: 1990-05-15
+    method: inheritance
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/509/
+        note: "Footnote: Rita Reif: «Christie's Reverses Stand on Price Guarantees», in: The New York Times, Section C, 12.03.1990, S. 13: «Mr. Lehman, the financier, was chairman of the Metropolitan Museum of Art at his death in 1969. He left the paintings - an 1888 self-portrait by Vincent van Gogh and studies of women by Henri de Toulouse-Lautrec, Amedeo Modigliani, Pierre Auguste Renoir and Kees van Dongen -to the chi…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1990-05-15
+    ended: 1990-05-15
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Lot 36
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/509/
+        note: "Footnote: Auktion Christie's London (15.05.1990), S. 104, Lot 36; Suzanne Muchnic: The Battle of the Auction Houses Heats Up: Art: Christie's has announced that it will guarantee a price for a collection, matching the practice of Sotheby's [13.03.1990], in: Los Angeles Times, https://www.latimes.com/archives/la-xpm-1990-03-13-ca-312-story.html (30.08.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-haefner
+    acquired: 1990-06-21
+    ended: 1990-06-21
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/509/
+        note: "Footnote: ZKG/KHZ, Werkdossier: ab 21.6.1990 als Leihgabe im Kunsthaus Zürich."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1995
+    method: gift
+    direct: true
+    place: zurich
+    label: anlässlich des 50-jährigen Jubiläums der AMAG Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/509/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; ZKG/KHZ, Werkdossier; Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: 327.XVII
+    label: Chaumeil 1967 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/509/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/509/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/509/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/509/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/509/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/509/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/509/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/509/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

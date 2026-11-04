@@ -34,6 +34,13 @@ relationships:
       - accessed: 2026-11-02
         property: P20
         wikidata: Q1081011
+  - type: worked_in
+    to: place/tokyo
+    period: 1876/1878
+    sources:
+      - note: Invited from the Royal Academy of Turin to teach painting at the Kōbu Bijutsu Gakkō; forced by ill health to return to Italy in 1878.
+        source: history-of-japanese-art
+        locator: pp. 372–373
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/8/8a/Antonio_fontanesi%2C_primi_del_%27900.JPG
     source_url: https://commons.wikimedia.org/wiki/File:Antonio_fontanesi,_primi_del_%27900.JPG

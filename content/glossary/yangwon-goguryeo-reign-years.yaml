@@ -1,0 +1,18 @@
+public_id: 113298
+name: Yangwon of Goguryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 양원왕
+  - lang: ko-Hani
+    role: alternative
+    text: 陽原王
+category: calendar
+definition: "The reign years of King Yangwon of Goguryeo (陽原王, 양원왕), by which Korean histories date 545–559: 545 is Yangwon 1, 559 Yangwon 15."
+description_md: |-
+  **Yangwon** (陽原王, 양원왕): the years of the reign of King Yangwon of Goguryeo. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 554 is Yangwon 10 (양원왕 10년). The year of the accession, 545, counts as the first year.
+
+  Before: [[anwon-goguryeo-reign-years|Anwon]]. After: [[pyeongwon-goguryeo-reign-years|Pyeongwon]].
+sources:
+  definition:
+    - source: dila-time-authority

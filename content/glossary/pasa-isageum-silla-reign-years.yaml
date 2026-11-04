@@ -1,0 +1,18 @@
+public_id: 113341
+name: Pasa Isageum of Silla (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 파사이사금
+  - lang: ko-Hani
+    role: alternative
+    text: 婆娑尼師今
+category: calendar
+definition: "The reign years of Pasa Isageum of Silla (婆娑尼師今, 파사이사금), by which Korean histories date 80–112: 80 is Pasa Isageum 1, 112 Pasa Isageum 33."
+description_md: |-
+  **Pasa Isageum** (婆娑尼師今, 파사이사금): the years of the reign of Pasa Isageum of Silla. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 89 is Pasa Isageum 10 (파사이사금 10년). The year of the accession, 80, counts as the first year.
+
+  Before: [[talhae-isageum-silla-reign-years|Talhae Isageum]]. After: [[jima-isageum-silla-reign-years|Jima Isageum]].
+sources:
+  definition:
+    - source: dila-time-authority

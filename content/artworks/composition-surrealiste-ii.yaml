@@ -1,0 +1,133 @@
+public_id: 114965
+title_lang: en
+title: Composition surréaliste II
+names:
+  - lang: en
+    role: translation
+    text: Figure
+  - lang: en
+    role: translation
+    text: Surrealist Composition II
+creator: alberto-giacometti
+created: 1935
+kind: drawing
+medium: Pen in black on paper
+dimensions: [28.4, 19.9]
+institution: kunsthaus-zurich
+inventory_number: GS 427
+web_url: https://collection.kunsthaus.ch/de/collection/item/1296961/
+on_loan: true
+on_loan_since: 2024
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/edmond-bomsel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1296961/
+        note: "Footnote: E-Mail-Korrespondenz Christine Stauffer (Galerie Kornfeld, Bern), 19.05.2025, ZKG/KHZ, Werkdossier; Kat. Kunstmuseum Bern 2003, No. 27, S. 90."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/edmond-bomsel
+    role: estate
+    method: inheritance
+    direct: true
+    place: geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1296961/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    role: agent
+    acquired: 1975
+    ended: 1975
+    direct: true
+    place: france
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1296961/
+        note: "Footnote: E-Mail-Korrespondenz, Christine Stauffer (Galerie Kornfeld, Bern), 19.05.2025, ZKG/KHZ, Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kornfeld-cie
+    role: agent
+    acquired: 1975-06-13
+    ended: 1975-06-13
+    method: auction
+    direct: true
+    place: bern
+    label: Lot 355
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1296961/
+        note: "Footnote: Auktion Kornfeld & Cie, 11.06.-13.06.1975, Lot 355; Kat. Kunsthaus Zürich 2001, Nr. 60, S. 272; Kat. Szépmüvészeti-Museum, Budapest 2004, Nr. 36,  S. 118-119; Fondation Giacometti, Nr. AGD 3816, https://www.fondation-giacometti.fr/fr/database/187021/composition-surrealiste-ii (14.05.2025)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/eberhard-w-kornfeld
+    acquired: 1975-06-13
+    ended: 2023
+    method: purchase
+    direct: true
+    place: bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1296961/
+        note: "Footnote: E-Mail-Korrespondenz, Christine Stauffer (Galerie Kornfeld, Bern), wie oben Fussnote 5; Kat. Kunsthaus Zürich 2001, Nr. 60, S. 272; Kat. Kunstmuseum Bern 2003, Nr. 27; Kat. Szépmüvészeti-Museum, Budapest 2004, Nr. 36, S. 118-119."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/eberhard-w-kornfeld
+    role: estate
+    acquired: 2023
+    ended: 2024
+    method: inheritance
+    direct: true
+    place: bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1296961/
+        note: "Footnote: E-Mail-Korrespondenz, Christine Stauffer (Galerie Kornfeld, Bern), wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/alberto-giacometti-stiftung
+    acquired: 2024
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1296961/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "3816"
+    label: AGD (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1296961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1296961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1296961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1296961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1296961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1296961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1296961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1296961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

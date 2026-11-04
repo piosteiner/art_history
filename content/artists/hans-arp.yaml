@@ -1,0 +1,123 @@
+public_id: 115041
+name: Hans Arp
+given_name: Hans
+family_name: Arp
+birth: 1886-09-16
+death: 1966-06-07
+wikidata_id: Q153739
+metadata:
+  sources: [Wikidata Q153739 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/german-empire
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q153739
+  - type: nationality
+    to: polity/france
+    period: 1926
+    period_label: from 1926
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q153739
+  - type: born_in
+    to: place/strasbourg
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q153739
+  - type: died_in
+    to: place/basel
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q153739
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153739
+  - type: worked_in
+    to: place/clamart
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153739
+  - type: worked_in
+    to: place/meudon
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153739
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153739
+  - type: worked_in
+    to: place/strasbourg
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153739
+  - type: worked_in
+    to: place/weimar
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153739
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153739
+  - type: member_of
+    to: institution/academy-of-arts-berlin
+    sources:
+      - accessed: 2026-11-03
+        property: P463
+        wikidata: Q153739
+  - type: associated_with
+    to: movement/dada
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q153739
+  - type: associated_with
+    to: movement/surrealism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q153739
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/14/Hans_Arp.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_Arp.JPG
+    license: Public domain
+    credit: Original uploader was Vincent Steenberg at nl.wikipedia
+identifiers:
+  bnf: "118892095"
+  dodis: P48568
+  dome: "12"
+  gnd: "118504398"
+  hls: "011477"
+  idref: "086114166"
+  kulturnav: 520ca0fe-d6dd-4a25-801f-0dd88c34ab42
+  lc: n79134995
+  rkd: "2590"
+  sikart: "4023372"
+  ulan: "500031000"
+  viaf: "7386175"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q153739
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q153739

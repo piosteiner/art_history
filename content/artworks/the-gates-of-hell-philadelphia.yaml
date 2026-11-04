@@ -14,6 +14,11 @@ institution: rodin-museum-philadelphia
 inventory_number: F1929-7-128
 web_url: https://philamuseum.org/collection/object/103360
 description_md: Gegossen 1926–1928 von Alexis Rudier, Paris; ein Vermächtnis von [[person/jules-mastbaum|Jules E. Mastbaum]] von 1929, aufgestellt im Rodin Museum am Benjamin Franklin Parkway.[[source/pma-f1929-7-128|“Modeled 1880-1917; cast 1926-1928” · “Cast by the founder Alexis Rudier, Paris” · “Bequest of Jules E. Mastbaum, 1929” · “Rodin Museum, Parkway”]]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/The_Gates_of_Hell_Philadelphia.jpg/1280px-The_Gates_of_Hell_Philadelphia.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Gates_of_Hell_Philadelphia.jpg
+    license: Public domain
+    credit: Юкатан
 provenance:
   - owner: institution/fonderie-alexis-rudier
     role: foundry

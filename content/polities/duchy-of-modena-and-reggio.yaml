@@ -29,6 +29,7 @@ names:
     role: translation
     text: Моденское герцогство
 period: 1452/1859
+country_codes: [IT]
 wikidata_id: Q252580
 metadata:
   sources: [Wikidata Q252580 (retrieved 2026-10-29)]

@@ -1,0 +1,18 @@
+public_id: 113265
+name: Munju of Baekje (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 문주왕
+  - lang: ko-Hani
+    role: alternative
+    text: 文周王
+category: calendar
+definition: "The reign years of King Munju of Baekje (文周王, 문주왕), by which Korean histories date 475–477: 475 is Munju 1, 477 Munju 3."
+description_md: |-
+  **Munju** (文周王, 문주왕): the years of the reign of King Munju of Baekje. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 477 is Munju 3 (문주왕 3년). The year of the accession, 475, counts as the first year.
+
+  Before: [[gaero-baekje-reign-years|Gaero]]. After: [[samgeun-baekje-reign-years|Samgeun]].
+sources:
+  definition:
+    - source: dila-time-authority

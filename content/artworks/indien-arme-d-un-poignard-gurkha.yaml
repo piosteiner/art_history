@@ -1,0 +1,189 @@
+public_id: 115518
+title_lang: en
+title: Indien armé d’un poignard Gurkha
+names:
+  - lang: en
+    role: translation
+    text: Inder bewaffnet mit Gurkha-Dolch
+  - lang: en
+    role: translation
+    text: Indian Armed with Gurkha Dagger
+  - lang: fr
+    role: original
+    text: Un Indien armé du Gourka-kree
+creator: eugene-delacroix
+created: c. 1830
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [40.5, 32.5]
+institution: kunsthaus-zurich
+inventory_number: "2476"
+web_url: https://collection.kunsthaus.ch/de/collection/item/56/
+on_loan: true
+on_loan_since: 1939
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q120872072
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1c/Eug%C3%A8ne_Delacroix_-_Indien_arm%C3%A9_d%E2%80%99un_poignard_Gurkha_-_2476_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_-_Indien_arm%C3%A9_d%E2%80%99un_poignard_Gurkha_-_2476_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Eugène Delacroix
+provenance:
+  - owner: person/jean-baptiste-pierret
+    acquired: 1830
+    ended: 1854
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/56/
+        note: "Footnote: Johnson 1981, Bd. I, No. 39, S. 28-29; Robaut 1885, No. 325, S. 91."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: the widow of Jean-Baptiste Pierret
+    acquired: 1854
+    ended: 1864 or later
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/56/
+        note: "Footnote: Johnson 1981, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-durand-ruel
+    role: dealer
+    acquired: 1873
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/56/
+        note: "Footnote: Johnson 1981, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Laurent
+    role: dealer
+    ended: 1878-08-16
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/56/
+        note: "Footnote: Getty Provenance Index, Goupil Stock Book 9, Page 175, Row 12, Stock No. 12966; Johnson 1981, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/boussod-valadon-cie
+    acquired: 1878-08-16
+    ended: 1879-01-23
+    method: purchase
+    direct: true
+    place: paris
+    label: Valadon et Cie (Kunsthandel)
+    price:
+      amount: 2000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/56/
+        note: "Footnote: Getty Provenance Index, Goupil Stock Book 9, wie oben Fussnote 7; Johnson 1981, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/henri-hecht
+    role: dealer
+    acquired: 1879-01-23
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 2500
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/56/
+        note: "Footnote: Wie oben Fussnote 7; Johnson 1981, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fernand-crouan
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 2500
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/56/
+        note: "Footnote: Johnson 1981, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: M. Fayard
+    acquired: 1913
+    method: purchase
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/56/
+        note: "Footnote: Johnson 1981, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-rosenberg
+    acquired: June 1937 or earlier
+    place: paris
+    label: Inv.-No. 3858
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/56/
+        note: "Footnote: The Paul Rosenberg Archives, a Gift of Elaine and Alexandre Rosenberg, The Museum of Modern Art Archives, New York, stock book, IV.A: Das Werk wird nach Juni 1937 im stock book gelistet; Johnson 1981, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-rosengart
+    role: agent
+    acquired: 1939-01-19 or earlier
+    ended: 1939-04-28
+    place: lucerne
+    label: probably on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/56/
+        note: "Footnote: Brief Siegfried Rosengart (Galerie Rosengart, Luzern) an Wilhelm Wartmann (Kunsthaus Zürich), 19.01.1939, Archiv ZGK/KHZ, Eingehende Korrespondenz, 10.30.30.67; Brief Siegfried Rosengart an Wilhelm Wartmann, 25.04.1939, Akten Sammlungskommission, Archiv ZKG/KHZ 10.30.10.56; Brief Wilhelm Wartmann an Dr. Henry Bodmer (Rechnungsführer der Vereinigung Zürcher Kunstfreunde), 06.06.1939, Archiv ZKG/KHZ…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1939-04-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 22500
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/56/
+        note: "Footnote: Sitzungsprotokoll des Vorstands der ZKG, 07.12.1939, wie oben Fussnote 16; ZKG/KHZ, Inventarbuch Slg.; Brief von Wilhelm Wartmann an Dr. Henry Bodmer, Ausgehende Korrespondenz der V.Z.K. (Vereinigung Zürcher Kunstfreunde), wie oben Fussnote 16; Johnson 1981, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: I.28.39
+    label: Johnson 1981 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/56/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/56/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/56/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/56/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/56/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/56/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/56/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/56/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

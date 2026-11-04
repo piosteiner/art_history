@@ -1,0 +1,116 @@
+public_id: 115496
+title_lang: fr
+title: La Cheminée
+names:
+  - lang: de
+    role: translation
+    text: Der Kamin
+  - lang: en
+    role: translation
+    text: The Chimney
+creator: georges-braque
+created: 1928
+kind: oil painting
+medium: Oil on canvas
+dimensions: [130, 74]
+institution: kunsthaus-zurich
+inventory_number: 1956/0010
+web_url: https://collection.kunsthaus.ch/de/collection/item/513/
+on_loan: true
+on_loan_since: 1956
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584730
+provenance:
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1930-10-16 or earlier
+    ended: 4 May 1933 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/513/
+        note: "Footnote: Etikette der Kunsthalle Basel auf der Werkrückseite, No. 122; Staatsarchiv Basel-Stadt, PA 888a N 6 (1) 286, 1933/4 Georges Braque (9.4.-14.5.), Leihgeberliste;  Kat. Kunsthalle Basel 1933, No. 137; Kat. Carnegie Institute, Pittsburgh 1930, No. 222; Kat. Palais des Beaux-Art, Brüssel 1936, No. 38."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/albert-bellanger
+    acquired: November 1936 or earlier
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/513/
+        note: "Footnote: Index Card No. 2272, MoMA, Paul Rosenberg Archives, III.D.1.c Paris Files: Bonnard - Courbet, darauf in Bleistift «Bellanger»; Kat. Palais des Beaux-Art 1936, Nr. 38; Mangin 1962, Bd. III, o. S., o. No."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hans-oppenheimer
+    co_owners: [person/martin-fabiani]
+    ended: 1954
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/513/
+        note: "Footnote: E-Mail-Korrespondenz mit dem Paul Cassirer & Walter Feilchenfeldt Archiv, Zürich, 14.08.2024."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    acquired: 1954
+    ended: 1956-04-13
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/513/
+        note: "Footnote: Protokoll der Hauptversammlung der VZK, 13.04.1956, Archiv ZKG/KHZ, 10.50.21; Jahresbericht 1956, hrsg. von Zürcher Kunstgesellschaft, 1956, S. 5-6 und 9; ZKG/KHZ, Inventarbuch Slg; ZKG/KHZ, Werkdossier; E-Mail-Korrespondenz mit dem Paul Cassirer & Walter Feilchenfeldt Archiv, wie oben Fussnote 6; Mangin 1962, wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1956-04-13
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 120000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/513/
+        note: "Footnote: Protokoll der Hauptversammlung der VZK, wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "200"
+    label: Valsecchi/Carra 1971 (catalogue raisonné)
+  - number: 1962.III
+    label: Mangin (catalogue raisonné)
+  - number: 27.485.
+    label: Isarlov 1932 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/513/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/513/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/513/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/513/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/513/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/513/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/513/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/513/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

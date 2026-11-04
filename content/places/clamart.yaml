@@ -1,0 +1,35 @@
+public_id: 115477
+name: Clamart
+names:
+  - lang: ja
+    role: translation
+    text: クラマール
+  - lang: zh
+    role: translation
+    text: 克拉马
+  - lang: ko
+    role: translation
+    text: 클라마르
+  - lang: ru
+    role: translation
+    text: Кламар
+kind: settlement
+parent: hauts-de-seine
+country_code: FR
+location: [2.26194, 48.80083]
+wikidata_id: Q194160
+metadata:
+  sources: [Wikidata Q194160 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q194160
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q194160
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q194160

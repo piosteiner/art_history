@@ -1,0 +1,47 @@
+public_id: 115169
+name: Max von Moos
+given_name: Max
+family_name: von Moos
+birth: 1903-12-06
+death: 1979-05-28
+wikidata_id: Q1516080
+metadata:
+  sources: [Wikidata Q1516080 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q1516080
+  - type: born_in
+    to: place/lucerne
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q1516080
+  - type: died_in
+    to: place/lucerne
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q1516080
+identifiers:
+  bnf: 11939549c
+  gnd: "118583891"
+  hls: "022086"
+  idref: "027329801"
+  lc: n83065064
+  rkd: "57562"
+  sikart: "4000066"
+  ulan: "500000645"
+  viaf: "119150514"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q1516080
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q1516080

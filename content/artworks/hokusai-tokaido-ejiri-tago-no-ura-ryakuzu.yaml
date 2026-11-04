@@ -1,0 +1,63 @@
+public_id: 113447
+title_lang: en
+title: Tago Bay near Ejiri on the Tōkaidō
+names:
+  - lang: ja
+    role: original
+    text: 東海道江尻田子の浦略図
+  - Tōkaidō Ejiri Tagonoura ryakuzu
+  - Tōkaidō Ejiri Tago-no-ura ryakuzu
+  - Tagonoura Beach seen from Ejiri on the Tōkaidō Road
+  - lang: en
+    role: original
+    text: Shore of Tago Bay, Ejiri at Tokaido
+  - lang: fr
+    role: translation
+    text: Côte de la baie de Tago, Ejiri dans la région de Tōkaidō
+  - lang: es
+    role: translation
+    text: La bahía de Tago cerca de Ejiri en la Tōkaidō
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 東海道江尻田子の浦略図
+parent: thirty-six-views-of-mount-fuji
+part_number: "28"
+creator: katsushika-hokusai
+created: 1830/1832
+created_label: c. 1830–1832
+created_span: uncertain
+institution: metropolitan-museum-of-art
+inventory_number: JP2561
+web_url: https://www.metmuseum.org/art/collection/search/57000
+wikidata_id: Q18173416
+metadata:
+  sources: [Wikidata Q18173416 (retrieved 2026-11-03)]
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/original/DP141037.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/57000
+    license: Public domain
+    credit: The Metropolitan Museum of Art
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173416
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173416
+  created:
+    - url: https://www.metmuseum.org/art/collection/search/57000
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173416
+  institution:
+    - url: https://www.metmuseum.org/art/collection/search/57000
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.metmuseum.org/art/collection/search/57000
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03

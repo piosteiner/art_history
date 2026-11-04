@@ -31,6 +31,7 @@ names:
     role: translation
     text: Королевство Бавария
 period: 1 January 1806 – 9 November 1918
+country_codes: [DE]
 wikidata_id: Q154195
 metadata:
   sources: [Wikidata Q154195 (retrieved 2026-10-29)]

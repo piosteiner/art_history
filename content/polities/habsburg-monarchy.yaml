@@ -31,6 +31,7 @@ names:
     role: translation
     text: Габсбургская монархия
 period: 1526-09-08/1918-11-12
+country_codes: [AT, CZ, HU, SK, SI, HR, PL, UA, RO, IT, RS, BE]
 wikidata_id: Q153136
 metadata:
   sources: [Wikidata Q153136 (retrieved 2026-10-29)]

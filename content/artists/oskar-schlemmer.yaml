@@ -1,0 +1,61 @@
+public_id: 115415
+name: Oskar Schlemmer
+given_name: Oskar
+family_name: Schlemmer
+birth: 1888-09-04
+death: 1943-04-13
+wikidata_id: Q458816
+metadata:
+  sources: [Wikidata Q458816 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/german-empire
+    period: 1888/1918
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q458816
+  - type: nationality
+    to: polity/weimar-republic
+    period: 1918/1933
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q458816
+  - type: nationality
+    to: polity/nazi-germany
+    period: 1933/1943
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q458816
+  - type: born_in
+    to: place/stuttgart
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q458816
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/07/Oskar_Schlemmer_by_Hugo_Erfurth%2C_1920.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Oskar_Schlemmer_by_Hugo_Erfurth,_1920.jpg
+    license: Public domain
+    credit: Hugo Erfurth
+identifiers:
+  bnf: "122824241"
+  gnd: "118608088"
+  idref: "027626881"
+  kulturnav: 448eb545-2a71-408e-ae72-a5ac29d87420
+  lc: n50002710
+  nlk: KAC202113987
+  rkd: "70607"
+  ulan: "500010968"
+  viaf: "9910342"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q458816
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q458816

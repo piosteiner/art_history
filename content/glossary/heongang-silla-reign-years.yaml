@@ -1,0 +1,18 @@
+public_id: 113385
+name: Heongang of Silla (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 헌강왕
+  - lang: ko-Hani
+    role: alternative
+    text: 憲康王
+category: calendar
+definition: "The reign years of King Heongang of Silla (憲康王, 헌강왕), by which Korean histories date 875–886: 875 is Heongang 1, 886 Heongang 12."
+description_md: |-
+  **Heongang** (憲康王, 헌강왕): the years of the reign of King Heongang of Silla. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 884 is Heongang 10 (헌강왕 10년). The year of the accession, 875, counts as the first year.
+
+  Before: [[gyeongmun-silla-reign-years|Gyeongmun]]. After: [[jeonggang-silla-reign-years|Jeonggang]].
+sources:
+  definition:
+    - source: dila-time-authority

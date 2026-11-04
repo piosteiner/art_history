@@ -1,0 +1,18 @@
+public_id: 113253
+name: Bunseo of Baekje (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 분서왕
+  - lang: ko-Hani
+    role: alternative
+    text: 汾西王
+category: calendar
+definition: "The reign years of King Bunseo of Baekje (汾西王, 분서왕), by which Korean histories date 298–304: 298 is Bunseo 1, 304 Bunseo 7."
+description_md: |-
+  **Bunseo** (汾西王, 분서왕): the years of the reign of King Bunseo of Baekje. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 304 is Bunseo 7 (분서왕 7년). The year of the accession, 298, counts as the first year.
+
+  Before: [[chaekgye-baekje-reign-years|Chaekgye]]. After: [[biryu-baekje-reign-years|Biryu]].
+sources:
+  definition:
+    - source: dila-time-authority

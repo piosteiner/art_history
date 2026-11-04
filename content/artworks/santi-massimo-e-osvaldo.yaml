@@ -1,0 +1,165 @@
+public_id: 115369
+title_lang: en
+title: Santi Massimo e Osvaldo
+names:
+  - lang: en
+    role: translation
+    text: St. Maximus und St. Oswaldus
+  - lang: en
+    role: translation
+    text: Saint Maximus and Saint Oswald
+  - lang: en
+    role: translation
+    text: Saint Maxime et saint Oswald
+creator: giovanni-battista-tiepolo
+created: 1742
+kind: oil painting
+medium: Oil on canvas
+dimensions: [50.5, 27.8]
+institution: kunsthaus-zurich
+inventory_number: R 37
+web_url: https://collection.kunsthaus.ch/de/collection/item/3543/
+on_loan: true
+on_loan_since: 1949
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584727
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/31/Giovanni_Battista_Tiepolo_-_Santi_Massimo_e_Osvaldo_-_R_37_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Battista_Tiepolo_-_Santi_Massimo_e_Osvaldo_-_R_37_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Giovanni Battista Tiepolo
+provenance:
+  - owner: person/antonio-grandi-baslini
+    ended: 1910 or later
+    place: milan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+        note: "Footnote: Sack 1910, S. 75, Abb. 62a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/robert-langton-douglas
+    acquired: 1911-12-23 or earlier
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+        note: "Footnote: Ausst.-Kat. Electa, Abbeville und Kimbell Art Museum 1993, S. 232-234, Nr. 30: «Douglas offered the picture to John G. Johnson, who turned it down in 1911, see Johnson Correspondence File, Philadelphia Museum of Art.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/george-w-elkins
+    direct: true
+    place: philadelphia
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+        note: "Footnote: Wie oben Fussnote 4: «The picture is next listed in the Elkins collection in Philadelphia, which suggests that it had been acquired by Johnson's fellow Philadelphia collector, George W. Elkins (rather than his father, William L., who died in 1903). When George W. died in October 1919, he left his collection to the Philadelphia Museum of Art, but none of the paintings were specifically identified i…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    ended: 1912
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+        note: "Footnote: Bode und Friedländer 1912, S. 30, Nr. 7: «Erworben 1912 aus dem Pariser Kunsthandel.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/carl-von-hollitscher
+    acquired: 1912 or earlier
+    ended: 1914 or later
+    method: purchase
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+        note: "Footnote: ZKG/KHZ Werkdossier, Rechnung Dr. Walter Feilchenfeldt an Ruzicka-Stiftung, 12.01.1949; Ausst.-Kat. Königliche Akademie der Künste, Berlin 1914: S. 43, Nr. 170; Bode und Friedländer 1912, S. 30, Nr. 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alice-neumann
+    co_owners: [person/richard-neumann]
+    acquired: 1920-07-01
+    ended: 1937 or later
+    label: Nr. 10
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+        note: "Footnote: Verzeichnis Eigentum Alice und Dr. Richard Neumann, Staatsgesetzblatt No. 371, Inv. Nr. 10, 01.07.1920; Ausst.-Kat. Galerie Sanct Lucas, 1937, S. 43, Nr. 126: «Sammlung Hollitscher, Berlin. Privatbesitz Wien»; Neues Wiener Tagblatt, 26.05.1937, Nr. 143, S. 10: «Diese Darbietung ist die von der Galerie St. Lucas in den Kunsträumen des Palais Pallavicini am Josefsplatz 5 veranstaltete Ausstellung it…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    role: dealer
+    ended: 1949-01-24
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+        note: "Footnote: ZKG/KHZ, Ruzicka-Akten, Abrechnung Ruzicka-Stiftung 1949, S. 4; Paul Cassirer & Walter Feilchenfeldt Archiv, Zürich: «27.12.48 WF hat Tiepolo und Langhi an Ruzicka verkauft»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1949-01-24
+    ended: 1949-01-24
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+        note: "Footnote: ZKG/KHZ, Werkdossier, Rechnung Dr. Walter Feilchenfeldt an Ruzicka, 12.01.1949."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1949-01-24
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+        note: "Footnote: ZKG/KHZ, Ruzicka-Akten, Abrechnung, wie oben Fussnote 13; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 126."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+        note: "Footnote: Wie oben Fussnote 15."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "140"
+    label: Morassi 1962 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

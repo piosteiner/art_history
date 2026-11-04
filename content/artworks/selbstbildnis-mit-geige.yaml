@@ -1,0 +1,219 @@
+public_id: 115231
+title_lang: de
+title: Selbstbildnis mit Geige
+names:
+  - lang: en
+    role: translation
+    text: Self-Portrait with Violin
+  - lang: de
+    role: former
+    text: Bildnis eines Violine spielenden Malers
+  - lang: en
+    role: former
+    text: Violinspieler
+  - lang: en
+    role: former
+    text: Violinspielender Maler
+creator: johannes-lingelbach
+created: 1650
+kind: oil painting
+medium: Oil on oak panel
+dimensions: [35, 25]
+institution: kunsthaus-zurich
+inventory_number: R 56
+web_url: https://collection.kunsthaus.ch/de/collection/item/2823/
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585446
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a8/Johannes_Lingelbach_-_Selbstbildnis_mit_Geige_-_R_56_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Johannes_Lingelbach_-_Selbstbildnis_mit_Geige_-_R_56_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Johannes Lingelbach
+provenance:
+  - owner: person/friedrich-moritz-von-brabeck
+    acquired: 1792 or earlier
+    ended: 1814 or later
+    place: hildesheim
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+        note: "Footnote: Burger-Wegener 1976, S. 153, Kat.-Nr. 232; Ausst.-Kat. Museum Angewandte Kunst 2023, S. 376, Kat.-Nr. #575: «Vgl. Ramdohr (1792), S. 46, Kat.-Nr. 45»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/philippine-von-brabeck
+    acquired: 1814 or earlier
+    ended: 1821 or later
+    method: inheritance
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+        note: "Footnote: Wie oben Fussnote 3: «Philippine von Brabeck, die Tochter von Friedrich Moritz von Brabeck und Anna Franziska Freiin von Brabeck, geb. von Weichs zur Wenne (gest. 1805), beerbte ihren Vater.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/andreas-graf-zu-stolberg-stolberg
+    acquired: 1821
+    ended: 1859-10-31
+    method: inheritance
+    direct: true
+    label: Schloss Söder
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+        note: "Footnote: Wie oben Fussnote 3: «wohl erworben im Erbgang von seiner Frau, Philippine von Brabeck»; «Philippine von Brabeck war verheiratet mit Andreas Graf zu Stolberg-Stolberg, der sie um viele Jahre überlebte.»; Nederlands Instituut voor Kunstgeschiedenis RKD, Friedrich Moritz von Brabeck (Graf), https://rkd.nl/explore/artists/488029 (29.04.2022): «His daughter [Philippine von Brabeck] inherited her fathe…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1859-10-31
+    ended: 1859-10-31
+    method: auction
+    direct: true
+    place: hanover
+    label: Lot 153
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+        note: "Footnote: Wie oben Fussnote 3: «Laut Frederich (1859) verkaufte Andreas Graf zu Stolberg-Stolberg den Brabeck’schen Nachlass mitsamt der Gemäldesammlung am 31.10.1859 in Hannover; das Selbstporträt von J. Lingelbach wurde hier laut Gwinner (1862) für 173 Taler versteigert.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    acquired: 1859-10-31
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/maximilian-von-goldschmidt-rothschild
+    ended: 1938-11-11
+    place: frankfurt
+    label: inv. no. 575
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+        note: "Footnote: Wie oben Fussnote 3: Kopie des Kaufvertrags zwischen M. von Goldschmidt-Rothschild und der Stadt Frankfurt, 11.11.1938, Rechneiamt IV/2, fol. 29r-30r; Nr. 575 gemäss Inventarliste (1938), ISG, Museum für Kunsthandwerk 46; E-Korrespondenz, Weiler, 15.01.2021: «Maximilian von Goldschmidt-Rothschild (1843-1940), der im Nationalsozialismus als Jude verfolgt wurde, sah sich gezwungen, seine bedeutende …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: place/frankfurt
+    acquired: 1938-11-11
+    ended: 1938-11-11
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/stadtische-galerie-frankfurt
+    role: dealer
+    acquired: 1938
+    ended: 1949-02-15
+    direct: true
+    place: frankfurt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+        note: "Footnote: Wie oben Fussnote 3: «Inventarbuch der Städtische Galerie, Inv.-Nr. 840, Städel Museum, Frankfurt.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: heirs of Maximilian von Goldschmidt-Rothschild
+    acquired: 1949-02-15
+    method: restitution
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+        note: "Footnote: Wie oben Fussnote 3: «Restituiert nach Beschluss der Stadtverordnetenversammlung vom 10.12.1948; vgl. Empfangsbescheinigung v.H. Bräutigam vom 15. Februar 1949, Städelsches Kunstinstitut/ Städtische Galerie, Archiv, Signatur 609, unfol.; Inventarbuch der Städtischen Galerie, Inv.-Nr. 840, Städel Museum, Frankfurt; H. Bräutigam quittiert in einer Liste alle von der Stadt zurückgegebenen Objekte (Lf…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Mr. Rule
+    acquired: 1950-04-20 or earlier
+    method: gift
+    direct: true
+    place: united-states
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+        note: "Footnote: Wie oben Fussnote 3: «Schreiben v. H. Bräutigam an S. Rosenberg vom 20.4.1950: 'Ein guter Bekannter des Herrn Baron Alexis, Amerikaner (jetziger Besitzer des «Lingelbach») übersiedelte im Juli 1950 in seine Heimat (USA) unter Mitnahme seiner gesamten Wohnungseinrichtung.' MS.065 Rosenberg & Stiebel Archive - Subject Files - Rosenberg & Stiebel, The Frick Collection/Frick Art Reference Library Arch…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: private collection
+    ended: 1987 or later
+    place: washington-d-c
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+        note: "Footnote: Wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/arthur-k-wheelock
+    acquired: 1987 or later
+    ended: 1989-05-18
+    method: purchase
+    direct: true
+    place: washington-d-c
+    label: Washington, D. C.
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+        note: "Footnote: Wie oben Fussnote 3: «Auskunft Arthur K. Wheelock, 12.2.2021.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/johnny-van-haeften
+    acquired: 1989-05-18
+    ended: 1989-07-12
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+        note: "Footnote: Wie oben Fussnote 3: «Auskunft Johnny van Haeften, 30.9.2022.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-bruno-meissner
+    role: dealer
+    acquired: 1989-07-12
+    ended: 1989-12-31 or earlier
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+        note: "Footnote: Wie oben Fussnote 3; ZKG/KHZ Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1989-12-31
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+        note: "Footnote: Wie oben Fussnote 3: «Kauf aus dem Rest der Versicherungssumme für Peter Paul Rubens' Philipp IV. (R28) mit einem Beitrag von Frau G. Ruzicka-Frei»; ZKG/KHZ Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2823/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

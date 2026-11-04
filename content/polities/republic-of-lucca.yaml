@@ -29,6 +29,7 @@ names:
     role: translation
     text: Республика Лукка
 period: 1160/1805-06-22
+country_codes: [IT]
 wikidata_id: Q1235720
 metadata:
   sources: [Wikidata Q1235720 (retrieved 2026-10-29)]

@@ -1,0 +1,121 @@
+public_id: 115589
+title_lang: en
+title: Vue de Martigues
+names:
+  - lang: de
+    role: translation
+    text: Landschaft bei Martigues
+  - lang: en
+    role: translation
+    text: View of Martigues
+creator: andre-derain
+created: 1908
+kind: oil painting
+medium: Oil on canvas
+dimensions: [73, 91]
+institution: kunsthaus-zurich
+inventory_number: "2345"
+web_url: https://collection.kunsthaus.ch/de/collection/item/792/
+on_loan: true
+on_loan_since: 1933
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586248
+provenance:
+  - owner: institution/galerie-kahnweiler
+    role: dealer
+    ended: 1920
+    place: paris
+    label: Paris, Photo Nr. 2200
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/792/
+        note: "Footnote: Stempel auf der Werkrückseite; Kellermann 1992, Bd. I, No. 149, S. 93."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-simon
+    role: dealer
+    acquired: 1920
+    ended: 1924 or later
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/792/
+        note: "Footnote: Kellermann 1992, wie oben Fussnote 3; Carrà 1924, o.S. (Werkabbildung); Henry 1920, o. S. (Werkabbildung)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alfred-flechtheim
+    acquired: April 1929 or earlier
+    ended: 1933-05-19 or earlier
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/792/
+        note: "Footnote: Etikette auf der Werkrückseite: «Kat. 2. Vues Martigues I Privatslg A.F. 1908»; Kat. Galerie Alfred Flechtheim Berlin, 1929, S. 6, Nr. 2 «1908-1928 I. Ölgemälde, Les Martigues I (Privatslg. A.F.)», https://doi.org/10.11588/diglit.62388#0001 (23.04.2026). Das Gemälde befand sich möglicherweise schon früher im Besitz von Alfred Flechtheim, da das Werk im November 1927 in der Galerie Flechtheim in Dü…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-alfred-flechtheim
+    role: custodian
+    acquired: 1933-05-19 or earlier
+    ended: 1933-07-18 or earlier
+    direct: true
+    place: berlin
+    label: safekeeping
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/792/
+        note: "Footnote: Brief Eduard von der Heydt, Berlin, an Wilhelm Wartmann, Zürich, 19.05.1933, Archiv ZKG/KHZ, Akten der Sammlungskommission zur Sitzung, 02.06.1933, Mappe «Sammlung 2. Juni 1933 III Leihgaben», 10.30.10.45."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/eduard-von-der-heydt
+    acquired: 1933-05-19 or earlier
+    ended: 1935-11-07
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/792/
+        note: "Footnote: Brief Eduard von der Heydt, 19.05.1933, wie oben Fussnote 7; Sitzungsprotokoll der Sammlungskommission, 02.06.1933, Archiv ZKG/KHZ 10.30.10.41, III.b."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1935-11-07
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/792/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 20.04.1934, Archiv ZKG/KHZ, 10.30.10.41, III.e."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: 1992.I.93.149
+    label: Kellermann (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/792/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/792/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/792/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/792/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/792/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/792/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/792/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/792/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -26,6 +26,7 @@ names:
     role: translation
     text: Сардинское королевство
 period: 1720-08-24/1861-03-17
+country_codes: [IT, FR]
 wikidata_id: Q2577303
 metadata:
   sources: [Wikidata Q2577303 (retrieved 2026-10-29)]

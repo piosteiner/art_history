@@ -1,0 +1,85 @@
+public_id: 114964
+name: Alberto Giacometti
+given_name: Alberto
+family_name: Giacometti
+birth: 1901-10-10
+death: 1966-01-11
+wikidata_id: Q157194
+metadata:
+  sources: [Wikidata Q157194 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q157194
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q157194
+  - type: worked_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q157194
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q157194
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q157194
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q157194
+  - type: student_of
+    to: artist/antoine-bourdelle
+    sources:
+      - accessed: 2026-11-03
+        property: P1066
+        wikidata: Q157194
+  - type: associated_with
+    to: movement/surrealism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q157194
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Emmy_Andriesse_-_Alberto_Giacometti_%28Ende_1940er_PK-F-A.06801%29_cut.jpg/1280px-Emmy_Andriesse_-_Alberto_Giacometti_%28Ende_1940er_PK-F-A.06801%29_cut.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emmy_Andriesse_-_Alberto_Giacometti_(Ende_1940er_PK-F-A.06801)_cut.jpg
+    license: Public domain
+    credit: Emmy Andriesse
+identifiers:
+  bnf: 11904811p
+  dodis: P42007
+  gnd: "118539094"
+  hls: "021881"
+  idref: "026890143"
+  kulturnav: 78d301e8-9d5d-4d9d-b622-cc7f4480016d
+  lc: n80032247
+  nlk: KAC202104330
+  rkd: "31399"
+  sikart: "4000048"
+  ulan: "500118871"
+  viaf: "49226067"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q157194
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q157194

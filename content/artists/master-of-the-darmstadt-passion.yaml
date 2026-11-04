@@ -1,0 +1,29 @@
+public_id: 115255
+name: Master of the Darmstadt Passion
+birth: 15th century
+wikidata_id: Q1918361
+metadata:
+  sources: [Wikidata Q1918361 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q1918361
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Meister_der_Darmst%C3%A4dter_Passion_001.jpg/1280px-Meister_der_Darmst%C3%A4dter_Passion_001.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Meister_der_Darmst%C3%A4dter_Passion_001.jpg
+    license: Public domain
+    credit: Master of the Darmstadt Passion
+identifiers:
+  gnd: "118910299"
+  lc: nr2001024744
+  rkd: "375121"
+  ulan: "500022527"
+  viaf: "41769126"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q1918361

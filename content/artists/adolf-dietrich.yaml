@@ -1,0 +1,35 @@
+public_id: 115118
+name: Adolf Dietrich
+given_name: Adolf
+family_name: Dietrich
+birth: 1877-11-09
+death: 1957-06-04
+wikidata_id: Q361262
+metadata:
+  sources: [Wikidata Q361262 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q361262
+identifiers:
+  bnf: "124479275"
+  gnd: "118525557"
+  hls: "022004"
+  idref: 12441947X
+  lc: nr95001496
+  rkd: "125629"
+  sikart: "4000040"
+  ulan: "500048101"
+  viaf: "18013427"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q361262
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q361262

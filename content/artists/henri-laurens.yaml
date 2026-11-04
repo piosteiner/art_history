@@ -1,0 +1,51 @@
+public_id: 115091
+name: Henri Laurens
+given_name: Henri
+family_name: Laurens
+birth: 1885-02-18
+death: 1954-05-05
+wikidata_id: Q738892
+metadata:
+  sources: [Wikidata Q738892 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q738892
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q738892
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q738892
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Jean_Vincent_de_Crozals_et_Henri_Laurens.jpg/1280px-Jean_Vincent_de_Crozals_et_Henri_Laurens.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean_Vincent_de_Crozals_et_Henri_Laurens.jpg
+    license: CC BY-SA 3.0
+    credit: Succession Jean Vincent de Crozals
+identifiers:
+  bnf: 12055767w
+  gnd: "118726722"
+  idref: "028795792"
+  kulturnav: 4a98cc74-6194-42b1-b64f-0f23448c6049
+  lc: n81015770
+  rkd: "48315"
+  ulan: "500010480"
+  viaf: "14790249"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q738892
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q738892

@@ -1,0 +1,80 @@
+public_id: 113394
+title_lang: es
+title: Defensa de Cádiz contra los ingleses
+names:
+  - lang: en
+    role: original
+    text: The Defence of Cadiz against the English
+  - lang: nl
+    role: original
+    text: Verdediging van Cadiz tegen de Engelsen
+  - lang: en
+    role: original
+    text: Defence of Cadiz against the English
+  - The Hostile Landing of the English near Cádiz in 1625 under the command of the Earl of Leicester
+  - The Defence of Cadiz
+  - The Defense of Cadiz
+  - lang: en
+    role: original
+    text: The Defense of Cadiz Against the English
+  - lang: fr
+    role: translation
+    text: La Défense de Cadix contre les Anglais
+  - lang: de
+    role: translation
+    text: Die Verteidigung von Cádiz
+  - lang: ja
+    role: translation
+    text: カディスの防衛
+  - lang: zh
+    role: translation
+    text: 加的斯的防守
+parent: battle-series
+creator: francisco-de-zurbaran
+created: 1634
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [302, 323]
+institution: museo-del-prado
+inventory_number: P000656
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/db80532c-f6c4-4f96-ac52-748e6abcefd0
+wikidata_id: Q5801323
+metadata:
+  sources: [Wikidata Q5801323 (retrieved 2026-11-03)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Defensa_de_C%C3%A1diz_contra_los_ingleses.jpg/1280px-Defensa_de_C%C3%A1diz_contra_los_ingleses.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Defensa_de_C%C3%A1diz_contra_los_ingleses.jpg
+    license: Public domain
+    credit: Francisco de Zurbarán
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q5801323
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q5801323
+  created:
+    - url: https://www.museodelprado.es/en/the-collection/art-work/the-defence-of-cadiz-against-the-english/db80532c-f6c4-4f96-ac52-748e6abcefd0
+      source: museo-del-prado-coleccion
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q5801323
+  materials:
+    - accessed: 2026-11-03
+      property: P186
+      wikidata: Q5801323
+  dimensions:
+    - accessed: 2026-11-03
+      property: P2048
+      wikidata: Q5801323
+  institution:
+    - accessed: 2026-11-03
+      property: P195
+      wikidata: Q5801323
+  inventory_number:
+    - accessed: 2026-11-03
+      property: P217
+      wikidata: Q5801323

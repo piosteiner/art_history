@@ -1,0 +1,35 @@
+public_id: 115248
+name: Darmstadt
+names:
+  - lang: ja
+    role: translation
+    text: ダルムシュタット
+  - lang: zh
+    role: translation
+    text: 达姆施塔特
+  - lang: ko
+    role: translation
+    text: 다름슈타트
+  - lang: ru
+    role: translation
+    text: Дармштадт
+kind: settlement
+parent: hessen
+country_code: DE
+location: [8.65, 49.86667]
+wikidata_id: Q2973
+metadata:
+  sources: [Wikidata Q2973 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q2973
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q2973
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q2973

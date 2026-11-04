@@ -5,6 +5,7 @@ names:
     role: translation
     text: Kaisertum Österreich
 period: 1804-08-11/1867-06-08
+country_codes: [AT, CZ, SK, HU, SI, HR, PL, UA, RO, IT, RS]
 wikidata_id: Q131964
 metadata:
   sources: [Wikidata Q131964 (retrieved 2026-10-21)]

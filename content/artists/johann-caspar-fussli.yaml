@@ -1,0 +1,58 @@
+public_id: 115005
+name: Johann Caspar Füssli
+given_name: Johann Caspar
+family_name: Füssli
+birth: 1706-01-03
+death: 1782-05-06
+wikidata_id: Q667640
+metadata:
+  sources: [Wikidata Q667640 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q667640
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q667640
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q667640
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q667640
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b5/Johann_Caspar_F%C3%BCssli_1765.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Caspar_F%C3%BCssli_1765.jpg
+    license: Public domain
+    credit: Anton Graff
+identifiers:
+  bnf: "149743146"
+  gnd: "117752266"
+  hls: "022018"
+  idref: "229507255"
+  lc: nr96036467
+  rkd: "29826"
+  sikart: "4023049"
+  ulan: "500027778"
+  viaf: "12578853"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q667640
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q667640

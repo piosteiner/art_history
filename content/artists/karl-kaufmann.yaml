@@ -1,0 +1,36 @@
+public_id: 114987
+name: Karl Kaufmann
+given_name: Karl
+family_name: Kaufmann
+birth: 1843
+death: 1905-04-27
+wikidata_id: Q1731891
+metadata:
+  sources: [Wikidata Q1731891 (retrieved 2026-11-03)]
+relationships:
+  - type: died_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q1731891
+  - type: worked_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q1731891
+identifiers:
+  gnd: "131959719"
+  rkd: "43644"
+  ulan: "500072267"
+  viaf: "1159597"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q1731891
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q1731891

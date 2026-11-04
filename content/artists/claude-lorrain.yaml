@@ -1,0 +1,57 @@
+public_id: 115057
+name: Claude Lorrain
+given_name: Claude
+family_name: Lorrain
+birth: 1600
+death: 1682-11-23
+wikidata_id: Q214074
+metadata:
+  sources: [Wikidata Q214074 (retrieved 2026-11-03)]
+relationships:
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q214074
+  - type: influenced_by
+    to: artist/domenichino
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q214074
+  - type: student_of
+    to: person/agostino-tassi
+    sources:
+      - accessed: 2026-11-03
+        property: P1066
+        wikidata: Q214074
+  - type: member_of
+    to: institution/accademia-di-san-luca
+    sources:
+      - accessed: 2026-11-03
+        property: P463
+        wikidata: Q214074
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/42/Claude_Lorrain.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Lorrain.jpg
+    license: Public domain
+    credit: Unknown artist
+identifiers:
+  bnf: "119360258"
+  gnd: "118574450"
+  idref: "027284883"
+  kulturnav: 38cf394e-1f05-425e-8fef-0a35709b3269
+  lc: n50036071
+  rkd: "30816"
+  ulan: "500115366"
+  viaf: "54156251"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q214074
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q214074

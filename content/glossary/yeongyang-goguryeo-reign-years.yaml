@@ -1,0 +1,18 @@
+public_id: 113300
+name: Yeongyang of Goguryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 영양왕
+  - lang: ko-Hani
+    role: alternative
+    text: 嬰陽王
+category: calendar
+definition: "The reign years of King Yeongyang of Goguryeo (嬰陽王, 영양왕), by which Korean histories date 590–618: 590 is Yeongyang 1, 618 Yeongyang 29."
+description_md: |-
+  **Yeongyang** (嬰陽王, 영양왕): the years of the reign of King Yeongyang of Goguryeo. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 599 is Yeongyang 10 (영양왕 10년). The year of the accession, 590, counts as the first year.
+
+  Before: [[pyeongwon-goguryeo-reign-years|Pyeongwon]]. After: [[yeongnyu-goguryeo-reign-years|Yeongnyu]].
+sources:
+  definition:
+    - source: dila-time-authority

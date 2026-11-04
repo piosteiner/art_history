@@ -1,0 +1,221 @@
+public_id: 115413
+title_lang: de
+title: Bildnis einer jungen Dame
+names:
+  - lang: fr
+    role: translation
+    text: Portrait of a Young Woman
+  - lang: de
+    role: former
+    text: Bildnis einer jungen sitzenden Dame
+creator: cornelis-de-vos
+created: 1618/1629
+created_label: c. 1623/1624
+created_span: uncertain
+kind: oil painting
+medium: Oil on oak panel
+dimensions: [118.5, 91.5]
+institution: kunsthaus-zurich
+inventory_number: R 41
+web_url: https://collection.kunsthaus.ch/de/collection/item/3691/
+on_loan: true
+on_loan_since: 1949
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586241
+provenance:
+  - owner: person/charles-butler
+    acquired: 1892
+    ended: 1892
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+        note: "Footnote: Jewish Digital Cultural Recovery Project (JDCRP), «Portrait de femme», https://pilot-demo.jdcrp.org/artwork/vos_portrait_52609/ (07.09.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/robert-langton-douglas
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/charles-sedelmeyer
+    role: dealer
+    acquired: 1911
+    ended: 1911
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+        note: "Footnote: Wie oben Fussnote 3: «Art dealer, Charles Sedelmeyer, Paris, 1911 (cat. 1911, no. 45)»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/lucie-mathilde-schloss
+    acquired: 1911
+    ended: 1938
+    place: paris
+    label: Paris, Erbe
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+        note: "Footnote: Wie oben Fussnote 3: Es ist nicht geklärt, ob Adolphe Schloss (*1842 Fürth, +1910 Paris) das Werk bereits besass oder ob es erst von dessen Frau Lucie Mathilde Schloss direkt oder indirekt über Charles Sedelmeyer erworben wurde."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: heirs of Adolphe Schloss
+    acquired: 1939-08-20
+    ended: 1943-04-16
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+        note: "Footnote: Wie oben Fussnote 3: «Schloss heirs, by descent from their mother Lucie Haas Schloss, Paris, 1938; Château de Chambon, Laguenne, (Corrèze), France, 20 August 1939 – 16 April 1943.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/vichy-france
+    role: possessor
+    acquired: 1943-04-16
+    ended: 1943-11-24
+    method: confiscation
+    direct: true
+    place: paris
+    label: Tulle; Jeu de Paume
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+        note: "Footnote: Wie oben Fussnote 3; Cultural Plunder by the Einsatzstab Reichsleiter Rosenberg (ERR),  https://www.errproject.org/jeudepaume/card_view.php?CardId=52609 (05.01.2022): 1943 Beschlagnahme in Tulle  von Vertretern des Vichy-Regimes sowie SS-Angehörigen, anschließend Verbringung in das Jeu de Paume, Paris. Dort Auswahl von 262 Werken für den «Sonderauftrag Linz»; Verbringung dieses Konvoluts in den «F…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Führerbau, Munich
+    role: custodian
+    acquired: 1943-11-24
+    ended: 1945-04-29
+    direct: true
+    place: munich
+    label: ausgewählt für den «Sonderauftrag Linz»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+        note: "Footnote: Wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (thief)
+    role: possessor
+    acquired: 1945-04-29
+    ended: 1945-08-24
+    method: theft
+    direct: true
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+        note: "Footnote: Wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    acquired: 1945-08-23
+    ended: 1946-03-27
+    direct: true
+    place: munich
+    label: München, Munich No. 7590
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+        note: "Footnote: Wie oben Fussnote 11; München Central Collecting Point (MCCP), Property Card, Münchner-Nummer 7590, https://www.dhm.de/datenbank/ccp/dhm_ccp_add.php?seite=6&fld_1=7590&fld_1_exakt=exakt&suchen=Suchen (05.01.2022); Bundesarchiv Koblenz, B323/616 und B323/660."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: heirs of Adolphe Schloss
+    acquired: 1946-03-27
+    ended: 1949-05-25
+    method: restitution
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+        note: "Footnote: Wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-charpentier
+    role: agent
+    acquired: 1949-05-25
+    ended: 1949-05-25
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 65
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+        note: "Footnote: Wie oben Fussnote 3; Auktion Galerie Charpentier Paris (25.05.1949), Lot 65."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/francis-matthiesen
+    role: agent
+    acquired: 1949-05-25
+    ended: 1949-06-16
+    method: purchase
+    direct: true
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+        note: "Footnote: ZKG/KHZ Werkdossier, handschriftliche Notizen Leopold Ruzicka; ZKG/KHZ Ruzicka-Akten, Abrechnung Ruzicka-Stiftung 1949, S. 4: «Am 16. Juni 1949 von Herrn F.M.Z. Matthiesen aus der Versteigerung der Sammlung Adolphe Schloss»; Jean Pierre Durand war für den Transport zuständig: «Für Steigerungshonorar und Transportspesen für diese Gemälde (...) an Herrn Jean Pierre Durand.» (vgl. ZKG/KHZ Ruzicka-Akt…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1949-06-16
+    ended: 1949-06-16
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+        note: "Footnote: Wie oben Fussnote 17."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1949-06-16
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+        note: "Footnote: Wie oben Fussnote 17; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 96."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+        note: "Footnote: Wie oben Fussnote 19."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3691/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

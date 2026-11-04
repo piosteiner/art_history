@@ -1,0 +1,18 @@
+public_id: 113335
+name: Chang of Goryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 창왕
+  - lang: ko-Hani
+    role: alternative
+    text: 昌王
+category: calendar
+definition: "The reign years of King Chang of Goryeo (昌王, 창왕), by which Korean histories date 1389: 1389 is Chang 1, 1389 Chang 1."
+description_md: |-
+  **Chang** (昌王, 창왕): the years of the reign of King Chang of Goryeo. The Goryeosa, the history of Goryeo, dates events by the reigning king's year ([[korean-reign-years]]): 1389 is Chang 1 (창왕 1년). The year of the accession, 1389, counts as the first year.
+
+  Before: [[u-goryeo-reign-years|U]]. After: [[gongyang-goryeo-reign-years|Gongyang]].
+sources:
+  definition:
+    - source: dila-time-authority

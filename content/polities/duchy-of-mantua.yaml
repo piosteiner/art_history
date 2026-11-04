@@ -29,6 +29,7 @@ names:
     role: translation
     text: Мантуанское герцогство
 period: 1530-04-04/1797-10-17
+country_codes: [IT]
 wikidata_id: Q766501
 metadata:
   sources: [Wikidata Q766501 (retrieved 2026-10-29)]

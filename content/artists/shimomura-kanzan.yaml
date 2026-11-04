@@ -31,6 +31,15 @@ relationships:
       - accessed: 2026-10-28
         property: P20
         wikidata: Q2113306
+  - type: visited
+    to: place/england
+    period: 1903/1904
+    period_label: c. 1903–1904
+    certainty: probable
+    sources:
+      - note: Studying watercolour painting in England "during these years" — while Taikan and Hishida were in India and the West (1903–04); the exact years are not given.
+        source: history-of-japanese-art
+        locator: p. 365
   - type: student_of
     to: artist/hashimoto-gaho
     sources:

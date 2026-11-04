@@ -1,0 +1,119 @@
+public_id: 115097
+title_lang: en
+title: Kartenspielende Kinder
+names:
+  - lang: en
+    role: translation
+    text: Children Playing Cards
+  - lang: en
+    role: former
+    text: Interieur mit Kartenspielern und Kindern
+  - lang: en
+    role: former
+    text: Lustige Kartenspieler
+creator: jan-miense-molenaer
+created: c. 1635
+created_span: uncertain
+kind: oil painting
+medium: Oil on oak panel
+dimensions: [39.5, 55.5]
+institution: kunsthaus-zurich
+inventory_number: R 17
+web_url: https://collection.kunsthaus.ch/de/collection/item/2209/
+on_loan: true
+on_loan_since: 1949
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q46047024
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Clean_Sweep_%E2%80%93_Jan_Miense_Molenaer_%28Kunsthaus_Z%C3%BCrich%29.jpg/1280px-Clean_Sweep_%E2%80%93_Jan_Miense_Molenaer_%28Kunsthaus_Z%C3%BCrich%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Clean_Sweep_%E2%80%93_Jan_Miense_Molenaer_(Kunsthaus_Z%C3%BCrich).jpg
+    license: Public domain
+    credit: Jane023
+provenance:
+  - owner: person/julius-wilhelm-bohler
+    role: dealer
+    ended: 12 July 1938 or later
+    method: purchase
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2209/
+        note: "Footnote: Archiv Kunsthandlung Böhler, ZIKG München, Inventarkarte [LK 00200], http://boehler.zikg.eu/wisski/navigate/212209/view (26.05.2023)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandlung-bohler-steinmeyer
+    role: agent
+    acquired: 1938-07-12
+    ended: 1942-10-27
+    direct: true
+    place: lucerne
+    label: on consignment; Nr. 200
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2209/
+        note: "Footnote: Rechnung der Kunsthandlung Boehler & Steinmeyer an Leopold Ruzicka, 07.10.1942, ZKG/KHZ, Werkdossier; Archiv Kunsthandlung Böhler, ZIKG München, Böhler-Fotokarte [Nr. 8027]; Archiv Kunsthandlung Böhler, ZIKG München, Inventarkarte [LK 00200], wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1942-10-27
+    ended: 1948-12-27
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2209/
+        note: "Footnote: ZKG/KHZ Werkdossier, wie oben Fussnote 3; Sitzungsprotokoll der Sammlungskommission, 23.12.1948 I., Archiv ZKG/KHZ, 10.30.10.42; Zürcher Kunstgesellschaft 1949 Jahresbericht, S. 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1948-12-27
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2209/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 5; Zürcher Kunstgesellschaft 1949 Jahresbericht, wie oben Fussnote 5; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 102."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2209/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2209/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2209/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2209/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2209/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2209/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2209/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2209/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2209/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

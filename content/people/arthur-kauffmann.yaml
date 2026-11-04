@@ -3,35 +3,38 @@ name: Arthur Kauffmann
 given_name: Arthur
 family_name: Kauffmann
 kind: person
-birth: 1887-05-29
-death: 1943/1945
-death_label: c. 1940s
-wikidata_id: Q105355124
+birth: 1887-06-11
+death: 1983
+wikidata_id: Q18694613
 metadata:
-  sources: [Wikidata Q105355124 (retrieved 2026-10-30)]
+  sources: [Wikidata Q18694613 (retrieved 2026-11-03), "Kunsthaus Zürich, BU 0157"]
 relationships:
   - type: born_in
-    to: place/frankfurt
+    to: place/stuttgart
     sources:
-      - accessed: 2026-10-30
-        property: P19
-        wikidata: Q105355124
-  - type: lived_in
-    to: place/frankfurt
+      - note: Arthur Kauffmann (*1887 Stuttgart, +1983 London) (Kunsthändler/-in), London
+        source: kunsthaus-zurich-bu-0157
+        accessed: 2026-11-03
+  - type: died_in
+    to: place/london
     sources:
-      - accessed: 2026-10-30
-        property: P551
-        wikidata: Q105355124
+      - note: Arthur Kauffmann (*1887 Stuttgart, +1983 London) (Kunsthändler/-in), London
+        source: kunsthaus-zurich-bu-0157
+        accessed: 2026-11-03
+identifiers:
+  gnd: "1022270338"
 sources:
-  kind:
-    - accessed: 2026-10-30
-      property: P31
-      wikidata: Q105355124
   birth:
-    - accessed: 2026-10-30
+    - accessed: 2026-11-03
       property: P569
-      wikidata: Q105355124
+      wikidata: Q18694613
+    - note: Arthur Kauffmann (*1887 Stuttgart, +1983 London) (Kunsthändler/-in), London
+      source: kunsthaus-zurich-bu-0157
+      accessed: 2026-11-03
   death:
-    - accessed: 2026-10-30
+    - accessed: 2026-11-03
       property: P570
-      wikidata: Q105355124
+      wikidata: Q18694613
+    - note: Arthur Kauffmann (*1887 Stuttgart, +1983 London) (Kunsthändler/-in), London
+      source: kunsthaus-zurich-bu-0157
+      accessed: 2026-11-03

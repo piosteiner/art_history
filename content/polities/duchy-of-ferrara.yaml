@@ -29,6 +29,7 @@ names:
     role: translation
     text: герцогство Феррара
 period: 1264/1597
+country_codes: [IT]
 wikidata_id: Q693570
 metadata:
   sources: [Wikidata Q693570 (retrieved 2026-10-29)]

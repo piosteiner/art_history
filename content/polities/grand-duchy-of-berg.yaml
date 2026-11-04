@@ -29,6 +29,7 @@ names:
     role: translation
     text: Великое герцогство Берг
 period: 1806/1813
+country_codes: [DE]
 wikidata_id: Q249428
 metadata:
   sources: [Wikidata Q249428 (retrieved 2026-10-29)]

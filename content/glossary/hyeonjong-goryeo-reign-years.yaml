@@ -1,0 +1,18 @@
+public_id: 113310
+name: Hyeonjong of Goryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 현종
+  - lang: ko-Hani
+    role: alternative
+    text: 顯宗
+category: calendar
+definition: "The reign years of King Hyeonjong of Goryeo (顯宗, 현종), by which Korean histories date 1010–1031: 1010 is Hyeonjong 1, 1031 Hyeonjong 22."
+description_md: |-
+  **Hyeonjong** (顯宗, 현종): the years of the reign of King Hyeonjong of Goryeo. The Goryeosa, the history of Goryeo, dates events by the reigning king's year ([[korean-reign-years]]): 1019 is Hyeonjong 10 (현종 10년). The year of the accession, 1010, counts as the first year.
+
+  Before: [[mokjong-goryeo-reign-years|Mokjong]]. After: [[deokjong-goryeo-reign-years|Deokjong]].
+sources:
+  definition:
+    - source: dila-time-authority

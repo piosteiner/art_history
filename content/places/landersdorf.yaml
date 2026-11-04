@@ -1,0 +1,22 @@
+public_id: 115355
+name: Landersdorf
+kind: settlement
+parent: bayern
+country_code: DE
+location: [12.08825, 48.29067]
+wikidata_id: Q1802014
+metadata:
+  sources: [Wikidata Q1802014 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q1802014
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q1802014
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q1802014

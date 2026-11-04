@@ -1,0 +1,51 @@
+public_id: 115336
+name: Robert Russ
+given_name: Robert
+family_name: Russ
+birth: 1847-06-08
+death: 1922-03-16
+wikidata_id: Q1169604
+metadata:
+  sources: [Wikidata Q1169604 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/austria
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q1169604
+  - type: born_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q1169604
+  - type: died_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q1169604
+  - type: worked_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q1169604
+identifiers:
+  bnf: 17722119x
+  dome: "10719"
+  gnd: "130139025"
+  lc: no2010043444
+  rkd: "68938"
+  ulan: "500100547"
+  viaf: "42936698"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q1169604
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q1169604

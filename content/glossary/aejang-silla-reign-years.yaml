@@ -1,0 +1,18 @@
+public_id: 113376
+name: Aejang of Silla (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 애장왕
+  - lang: ko-Hani
+    role: alternative
+    text: 哀莊王
+category: calendar
+definition: "The reign years of King Aejang of Silla (哀莊王, 애장왕), by which Korean histories date 800–809: 800 is Aejang 1, 809 Aejang 10."
+description_md: |-
+  **Aejang** (哀莊王, 애장왕): the years of the reign of King Aejang of Silla. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 809 is Aejang 10 (애장왕 10년). The year of the accession, 800, counts as the first year.
+
+  Before: [[soseong-silla-reign-years|Soseong]]. After: [[heondeok-silla-reign-years|Heondeok]].
+sources:
+  definition:
+    - source: dila-time-authority

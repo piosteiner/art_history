@@ -1,0 +1,135 @@
+public_id: 115328
+title_lang: de
+title: Interieur mit drei Frauen und einem Mädchen
+names:
+  - lang: en
+    role: translation
+    text: Interior with Three Women and a Girl
+  - lang: en
+    role: translation
+    text: Intérieur avec trois femmes et une fillette
+  - lang: de
+    role: former
+    text: Interieur mit drei Frauen und einem kleinen Mädchen
+creator: quiringh-van-brekelenkam
+created: 1663
+kind: oil painting
+medium: Oil on oak panel
+dimensions: [52, 44.79]
+institution: kunsthaus-zurich
+inventory_number: R 3
+web_url: https://collection.kunsthaus.ch/de/collection/item/334/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586293
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1f/Quiringh_van_Brekelenkam_-_Interieur_mit_drei_Frauen_und_einem_M%C3%A4dchen_-_R_3_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Quiringh_van_Brekelenkam_-_Interieur_mit_drei_Frauen_und_einem_M%C3%A4dchen_-_R_3_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Quirijn van Brekelenkam
+provenance:
+  - owner: artist/quiringh-van-brekelenkam
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/334/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/francois-xavier-de-burtin
+    ended: 1819-07-21
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/334/
+        note: "Footnote: Auktion Maison du Défunt (21.07.1819); Netherlands Institute for Art History (RKD), «Quiringh van Brekelenkam. Interior with a woman giving money to her maid, with a girl and another maid», https://rkd.nl/explore/images/247771 (24.08.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1819-07-21
+    ended: 1819-07-21
+    method: auction
+    direct: true
+    place: brussels
+    label: Lot 23; Versteigerung Burtin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/334/
+        note: "Footnote: Wie oben Fussnote 3; Lasius 1992 (Ars picturae 3), S. 131, Nr. 179."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1910-12-10
+    ended: 1910-12-10
+    method: auction
+    place: london
+    label: Lot 25 (?); Versteigerung H.G. Smith
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/334/
+        note: "Footnote: Lasius 1992, wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/doris-e-greif
+    ended: 1949-11-17
+    place: geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/334/
+        note: "Footnote: ZKG/KHZ Werkdossier, Korrespondenz Doris E. Greif an Leopold Ruzicka, 02.11.1949; ZKG/KHZ Ruzicka-Akten, Korrespondenzen Leopold Ruzicka an Otto Hirschmann, 27.11.1949; ZKG/KHZ Ruzicka-Akten, Abrechnung Ruzicka-Stiftung 1949, S. 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1949-11-17
+    ended: 2005
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/334/
+        note: "Footnote: ZKG/KHZ Werkdossier, wie oben Fussnote 8; ZKG/KHZ, Ruzicka-Akten, Abrechnung, wie oben Fussnote 8; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 105."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/334/
+        note: "Footnote: Wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "131.179"
+    label: Lasius 1992 (Ars picturae 3) (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/334/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/334/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/334/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/334/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/334/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/334/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/334/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/334/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

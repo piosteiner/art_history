@@ -28,6 +28,7 @@ names:
     role: translation
     text: Великое герцогство Гессен
 period: 1806/1918
+country_codes: [DE]
 wikidata_id: Q20135
 metadata:
   sources: [Wikidata Q20135 (retrieved 2026-10-29)]

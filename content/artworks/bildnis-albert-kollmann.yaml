@@ -1,0 +1,101 @@
+public_id: 115512
+title_lang: de
+title: Bildnis Albert Kollmann
+names:
+  - lang: fr
+    role: translation
+    text: Portrait of Albert Kollmann
+  - lang: fr
+    role: translation
+    text: Portrait d’Albert Kollmann
+creator: edvard-munch
+created: 1896/1907
+created_label: c. 1901/1902
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [81.5, 66]
+institution: kunsthaus-zurich
+inventory_number: "2620"
+web_url: https://collection.kunsthaus.ch/de/collection/item/5305/
+on_loan: true
+on_loan_since: 1935
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q18889297
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a6/Edvard_Munch_-_Bildnis_Albert_Kollmann_-_2620_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_Bildnis_Albert_Kollmann_-_2620_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Edvard Munch
+provenance:
+  - owner: person/albert-kollmann
+    method: commission
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5305/
+        note: "Footnote: Woll, Bd. 2, S. 540, Nr. 499."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/curt-glaser
+    acquired: 1913 or earlier
+    ended: 1943-10-21
+    direct: true
+    place: berlin
+    label: Berlin and Ascona and Lake Placid, NY
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5305/
+        note: "Footnote: Woll, wie oben Fussnote 2;  Brief Curt Glaser an Edvard Munch 20.03.1913, Munchmuseet, Oslo, MM K 2264: «Die Secession bittet mich, noch einmal an Sie zu schreiben, um Sie zu fragen, ob Sie für die Frühjahrausstellung Bilder senden können. [...] Wenn Sie nicht genügend Bilder selbst haben, könnte ich Herrn Consul Kolker veranlassen, daß die Schneearbeiter schickt, und ich selbst könnte das Porträt…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1943-10-21
+    ended: 1943-10-21
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 7000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5305/
+        note: "Footnote: Sitzungsprotokoll Sammlungskommission 21.10.1943, Archiv ZKG/KHZ, 10.30.10.42, I.a.2.: «Der Direktor teilt mit, dass das Bildnis Albert Kollmann von Edvard Munch endgültig in den Besitz der Zürcher Kunstgesellschaft übergegangen ist. Der Kaufpreis von Fr. 7000.- ist am 3. September 1943 an Professor Glaser überwiesen worden.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: II.540.499
+    label: Woll (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5305/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5305/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5305/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5305/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5305/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5305/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5305/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5305/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

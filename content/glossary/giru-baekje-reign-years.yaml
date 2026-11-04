@@ -1,0 +1,18 @@
+public_id: 113247
+name: Giru of Baekje (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 기루왕
+  - lang: ko-Hani
+    role: alternative
+    text: 己婁王
+category: calendar
+definition: "The reign years of King Giru of Baekje (己婁王, 기루왕), by which Korean histories date 77–128: 77 is Giru 1, 128 Giru 52."
+description_md: |-
+  **Giru** (己婁王, 기루왕): the years of the reign of King Giru of Baekje. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 86 is Giru 10 (기루왕 10년). The year of the accession, 77, counts as the first year.
+
+  Before: [[daru-baekje-reign-years|Daru]]. After: [[gaeru-baekje-reign-years|Gaeru]].
+sources:
+  definition:
+    - source: dila-time-authority

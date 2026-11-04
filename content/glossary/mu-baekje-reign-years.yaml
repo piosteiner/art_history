@@ -1,0 +1,18 @@
+public_id: 113273
+name: Mu of Baekje (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 무왕
+  - lang: ko-Hani
+    role: alternative
+    text: 武王
+category: calendar
+definition: "The reign years of King Mu of Baekje (武王, 무왕), by which Korean histories date 600–641: 600 is Mu 1, 641 Mu 42."
+description_md: |-
+  **Mu** (武王, 무왕): the years of the reign of King Mu of Baekje. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 609 is Mu 10 (무왕 10년). The year of the accession, 600, counts as the first year.
+
+  Before: [[beop-baekje-reign-years|Beop]]. After: [[uija-baekje-reign-years|Uija]].
+sources:
+  definition:
+    - source: dila-time-authority

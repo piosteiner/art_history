@@ -1,0 +1,63 @@
+public_id: 113459
+title_lang: en
+title: Fuji from Gotenyama on the Tōkaidō at Shinagawa
+names:
+  - lang: ja
+    role: original
+    text: 東海道品川御殿山の不二
+  - Tōkaidō Shinagawa Goten'yama no Fuji
+  - lang: fr
+    role: translation
+    text: Shinagawa sur le Tōkaidō
+  - lang: es
+    role: translation
+    text: El Fuji desde la colina Goten en Shinagawa en la Tōkaidō
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 東海道品川御殿山ノ不二
+parent: thirty-six-views-of-mount-fuji
+part_number: "39"
+creator: katsushika-hokusai
+created: 1830/1833
+created_label: c. 1830–1833
+created_span: uncertain
+dimensions: [26.2, 38.7]
+institution: art-institute-of-chicago
+inventory_number: "1925.3274"
+web_url: https://www.artic.edu/artworks/24756
+wikidata_id: Q18173429
+metadata:
+  sources: [Wikidata Q18173429 (retrieved 2026-11-03)]
+images:
+  - url: https://www.artic.edu/iiif/2/f387a8e6-f284-08a1-1e26-3a0fe933fa35/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/24756
+    license: Public domain
+    credit: Art Institute of Chicago, Clarence Buckingham Collection
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173429
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173429
+  created:
+    - url: https://www.artic.edu/artworks/24756
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173429
+  dimensions:
+    - accessed: 2026-11-03
+      property: P2048
+      wikidata: Q18173429
+  institution:
+    - url: https://www.artic.edu/artworks/24756
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.artic.edu/artworks/24756
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03

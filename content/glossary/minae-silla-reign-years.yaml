@@ -1,0 +1,18 @@
+public_id: 113380
+name: Minae of Silla (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 민애왕
+  - lang: ko-Hani
+    role: alternative
+    text: 閔哀王
+category: calendar
+definition: "The reign years of King Minae of Silla (閔哀王, 민애왕), by which Korean histories date 838–839: 838 is Minae 1, 839 Minae 2."
+description_md: |-
+  **Minae** (閔哀王, 민애왕): the years of the reign of King Minae of Silla. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 839 is Minae 2 (민애왕 2년). The year of the accession, 838, counts as the first year.
+
+  Before: [[huigang-silla-reign-years|Huigang]]. After: [[sinmu-silla-reign-years|Sinmu]].
+sources:
+  definition:
+    - source: dila-time-authority

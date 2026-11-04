@@ -1,0 +1,59 @@
+public_id: 115459
+name: Guido Tallone
+given_name: Guido
+family_name: Tallone
+birth: 1894-05-11
+death: 1967-09-30
+wikidata_id: Q3779475
+metadata:
+  sources: [Wikidata Q3779475 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/italy
+    period: 18 June 1946 – 1967
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q3779475
+  - type: nationality
+    to: polity/konigreich-italien
+    period: 1946-06-18
+    period_label: until 18 June 1946
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q3779475
+  - type: born_in
+    to: place/bergamo
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q3779475
+  - type: worked_in
+    to: place/milan
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q3779475
+  - type: studied_at
+    to: institution/brera-academy
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q3779475
+identifiers:
+  gnd: "121177750"
+  idref: "154947490"
+  lc: n99050265
+  rkd: "260161"
+  ulan: "500348278"
+  viaf: "62397537"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q3779475
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q3779475

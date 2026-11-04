@@ -1,0 +1,18 @@
+public_id: 113399
+name: Antonio de Pereda
+given_name: Antonio
+family_name: de Pereda
+birth: 1611-03-20
+death: 1678-01-30
+wikidata_id: Q604088
+metadata:
+  sources: [Wikidata Q604088 (retrieved 2026-11-03)]
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q604088
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q604088

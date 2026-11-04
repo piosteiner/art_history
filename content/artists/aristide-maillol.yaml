@@ -1,0 +1,79 @@
+public_id: 115022
+name: Aristide Maillol
+given_name: Aristide
+family_name: Maillol
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Aristide Bonaventure Jean Maillol
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q153920
+birth: 1861-12-08
+death: 1944-09-27
+wikidata_id: Q153920
+metadata:
+  sources: [Wikidata Q153920 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q153920
+  - type: influenced_by
+    to: artist/paul-gauguin
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q153920
+  - type: influenced_by
+    to: artist/pierre-puvis-de-chavannes
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q153920
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q153920
+  - type: associated_with
+    to: movement/les-nabis
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q153920
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q153920
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Maillol1925.jpg/1280px-Maillol1925.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Maillol1925.jpg
+    license: Public domain
+    credit: Alfred Kuhn (1885-1940)
+identifiers:
+  bnf: 11913991d
+  dome: "235"
+  gnd: "118730274"
+  idref: "027273520"
+  kulturnav: 69234718-de79-4439-876f-dbd52a6a88be
+  lc: n80015568
+  rkd: "52024"
+  ulan: "500001596"
+  viaf: "14228"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q153920
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q153920

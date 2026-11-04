@@ -34,6 +34,7 @@ names:
     role: translation
     text: ФРГ
 period: 1949-05-23/1990-10-03
+country_codes: [DE]
 wikidata_id: Q713750
 metadata:
   sources: [Wikidata Q713750 (retrieved 2026-10-29)]

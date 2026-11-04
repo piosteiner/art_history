@@ -29,6 +29,7 @@ names:
     role: translation
     text: Флорентийское герцогство
 period: 1532/1569
+country_codes: [IT]
 wikidata_id: Q2252973
 metadata:
   sources: [Wikidata Q2252973 (retrieved 2026-10-29)]

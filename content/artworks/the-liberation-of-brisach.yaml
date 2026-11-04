@@ -1,0 +1,61 @@
+public_id: 113409
+title_lang: es
+title: Socorro de Brisach
+names:
+  - The Relief of Brisach
+  - lang: en
+    role: translation
+    text: The Liberation of Brisach
+  - lang: de
+    role: translation
+    text: Die Befreiung von Breisach
+  - lang: ru
+    role: translation
+    text: Взятие Брайзаха
+parent: battle-series
+creator: jusepe-leonardo
+created: 1634/1635
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [305, 333]
+institution: museo-del-prado
+inventory_number: P000859
+wikidata_id: Q59689172
+metadata:
+  sources: [Wikidata Q59689172 (retrieved 2026-11-03)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Leonardo-socorro_de_brisach.jpg/1280px-Leonardo-socorro_de_brisach.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Leonardo-socorro_de_brisach.jpg
+    license: Public domain
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q59689172
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q59689172
+  created:
+    - url: https://www.museodelprado.es/aprende/enciclopedia/voz/leonardo-jusepe/a1eb37e0-7ca5-4ae9-8df2-ab98d153c7e3
+      source: museo-del-prado-coleccion
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q59689172
+  materials:
+    - accessed: 2026-11-03
+      property: P186
+      wikidata: Q59689172
+  dimensions:
+    - accessed: 2026-11-03
+      property: P2048
+      wikidata: Q59689172
+  institution:
+    - accessed: 2026-11-03
+      property: P195
+      wikidata: Q59689172
+  inventory_number:
+    - accessed: 2026-11-03
+      property: P217
+      wikidata: Q59689172

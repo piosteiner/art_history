@@ -1,0 +1,69 @@
+public_id: 115431
+name: Johannes Cornelisz. Verspronck
+given_name: Johannes Cornelisz.
+family_name: Verspronck
+birth: 1606
+death: 1662
+wikidata_id: Q577974
+metadata:
+  sources: [Wikidata Q577974 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q577974
+  - type: born_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q577974
+  - type: died_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q577974
+  - type: worked_in
+    to: place/haarlem
+    period: 1632/1662
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q577974
+  - type: student_of
+    to: artist/frans-hals
+    sources:
+      - accessed: 2026-11-03
+        property: P1066
+        wikidata: Q577974
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q577974
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Portretten_van_Cornelis_Jacobsz._Delff%2C_Gheraert_Verspronck_en_Jan_Snellinck%2C_RP-P-1907-4288.jpg/1280px-Portretten_van_Cornelis_Jacobsz._Delff%2C_Gheraert_Verspronck_en_Jan_Snellinck%2C_RP-P-1907-4288.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portretten_van_Cornelis_Jacobsz._Delff,_Gheraert_Verspronck_en_Jan_Snellinck,_RP-P-1907-4288.jpg
+    license: CC0
+    credit: Rijksmuseum
+identifiers:
+  gnd: "132292602"
+  idref: 14465508X
+  kulturnav: ee43e2c7-1fd2-4f11-bb3c-cf94ced2eee0
+  lc: n80155420
+  rkd: "80665"
+  ulan: "500013071"
+  viaf: "50536592"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q577974
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q577974

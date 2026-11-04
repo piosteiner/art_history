@@ -1,0 +1,18 @@
+public_id: 113287
+name: Seocheon of Goguryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 서천왕
+  - lang: ko-Hani
+    role: alternative
+    text: 西川王
+category: calendar
+definition: "The reign years of King Seocheon of Goguryeo (西川王, 서천왕), by which Korean histories date 270–292: 270 is Seocheon 1, 292 Seocheon 23."
+description_md: |-
+  **Seocheon** (西川王, 서천왕): the years of the reign of King Seocheon of Goguryeo. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 279 is Seocheon 10 (서천왕 10년). The year of the accession, 270, counts as the first year.
+
+  Before: [[jungcheon-goguryeo-reign-years|Jungcheon]]. After: [[bongsang-goguryeo-reign-years|Bongsang]].
+sources:
+  definition:
+    - source: dila-time-authority

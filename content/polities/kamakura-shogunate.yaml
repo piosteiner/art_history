@@ -30,6 +30,7 @@ names:
     role: translation
     text: Сёгунат Камакура
 period: 1180/1333-07-12
+country_codes: [JP]
 wikidata_id: Q736839
 metadata:
   sources: [Wikidata Q736839 (retrieved 2026-10-29)]

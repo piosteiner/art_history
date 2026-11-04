@@ -1,0 +1,92 @@
+public_id: 115039
+title_lang: en
+title: Ferdinand Bloch-Bauer
+names:
+  - lang: de
+    role: translation
+    text: Ferdinand Bloch-Bauer als Jäger
+  - lang: de
+    role: former
+    text: Bildnis Ferdinand Bloch-Bauer
+creator: oskar-kokoschka
+created: 1936
+kind: oil painting
+medium: Oil on canvas
+dimensions: [137.5, 107]
+institution: kunsthaus-zurich
+inventory_number: "2592"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1765/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585780
+provenance:
+  - owner: person/ferdinand-bloch-bauer
+    acquired: 1936
+    ended: 1942-07-11
+    method: purchase
+    direct: true
+    price:
+      amount: 60000
+      currency: ATS
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1765/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 11.07.1942, Archiv ZKG/KHZ, 10.30.10.42, I.a; Brief von Wilhelm Wartmann an Ferdinand Bloch-Bauer, Zürich, 31.07.1942, Akten Sammlungskommission, Archiv 10.30.10.57, 30.09.1942 III Schenkungen; Brief von Ferdinand Bloch-Bauer an Wilhelm Wartmann, 17.11.1942, ZKG/KHZ, Werkdokument; Brief von Ferdinand Bloch-Bauer an Oskar Kokoschka, Zürich, 02.04.[1941], Z…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/erich-fuhrer
+    role: agent
+    acquired: 1939-01
+    ended: 1942-06-23
+    method: confiscation
+    direct: true
+    place: vienna
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1765/
+        note: "Footnote: Etikette auf der Werkrückseite zur Ausfuhrbewilligung; Müller/Tatzkow 2009, S. 162; Czernin 1999, Bd. 1, S. 217; Lillie/Gaugusch 2007, S. 70. Der Rechtsanwalt Erich Führer wurde von den Nationalsozialisten für die Verwaltung und Verwertung des Eigentums der Bloch-Bauers eingesetzt. Ab Ende Januar 1939 begann er mit der Vermittlung und dem Verkauf der Objekte aus der Sammlung Bloch-Bauers. (Vgl. Mü…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1942-07-11
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1765/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "325.296"
+    label: Wingler 1956 (catalogue raisonné)
+  - number: "279"
+    label: EH (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1765/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1765/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1765/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1765/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1765/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1765/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1765/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

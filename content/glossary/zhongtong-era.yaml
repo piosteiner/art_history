@@ -1,0 +1,15 @@
+public_id: 113121
+name: Zhongtong
+names:
+  - lang: zh
+    role: original
+    text: 中統
+category: calendar
+definition: "Chinese era name (中統) of the Mongol empire and the Yuan for the years 1260–1263: 1260 is Zhongtong 1 (元年) and Zhongtong 4 is 1263."
+description_md: |-
+  **Zhongtong** (中統) is a Chinese era name ([[nianhao]]) of the Mongol empire, which took the dynastic name Yuan in 1271, proclaimed in 1260 under Khubilai Khan (世祖). Its years are counted in lunar years: 1260 is Zhongtong 1 (元年), 1263 its last year, Zhongtong 4. A Chinese source dates a year within it as "Zhongtong 2" (中統二年) rather than by a continuous count.
+
+  After: [[zhiyuan-era|Zhiyuan]].
+sources:
+  definition:
+    - source: dila-time-authority

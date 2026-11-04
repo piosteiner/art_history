@@ -27,6 +27,7 @@ names:
     role: translation
     text: Вюрцбургское княжество-епископство
 period: 1168/1803
+country_codes: [DE]
 wikidata_id: Q13427044
 metadata:
   sources: [Wikidata Q13427044 (retrieved 2026-10-29)]

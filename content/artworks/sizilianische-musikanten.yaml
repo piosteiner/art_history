@@ -1,0 +1,87 @@
+public_id: 115020
+title_lang: en
+title: Sizilianische Musikanten
+names:
+  - lang: en
+    role: translation
+    text: Sizilianische Musikanten, Paris
+  - lang: en
+    role: translation
+    text: Sicilian Musicians
+creator: max-gubler
+created: 1930/1931
+kind: oil painting
+medium: Oil on canvas
+dimensions: [206, 190]
+institution: kunsthaus-zurich
+inventory_number: 1953/0006
+web_url: https://collection.kunsthaus.ch/de/collection/item/1637/
+on_loan: true
+on_loan_since: 1953
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586340
+provenance:
+  - owner: person/gotthard-jedlicka
+    ended: 1965-11-09
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1637/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Mrs. Jedlicka (wife of Gotthard Jedlicka)
+    acquired: 1965-11-09
+    ended: 1973
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1637/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; Sitzungsprotokoll der Sammlungskommission, 03.05.1972, 27.05.1972, 12.07.1972, Archiv ZKG/KHZ, 10.30.10.42a; Sitzungsprotokoll der Sammlungskommission, 28.03.1973, 06.04.1973 2.1, 20.09.1973, 12.12.1973 3, 04.01.1974, Archiv ZKG/KHZ, 10.30.10.42aa."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1973
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1637/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: II.227.278
+    label: Frauenfelder (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1637/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1637/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1637/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1637/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1637/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1637/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1637/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1637/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

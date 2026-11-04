@@ -1,0 +1,78 @@
+public_id: 114988
+title_lang: de
+title: Der Markusplatz in Venedig
+creator: karl-kaufmann
+created: 1892
+kind: oil painting
+medium: Oil on canvas
+dimensions: [69, 106]
+institution: kunsthaus-zurich
+inventory_number: 1960/0007
+web_url: https://collection.kunsthaus.ch/de/collection/item/1457/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585457
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4c/Karl_Kaufmann_-_Der_Markusplatz_in_Venedig_-_1960-0007_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Karl_Kaufmann_-_Der_Markusplatz_in_Venedig_-_1960-0007_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Karl Kaufmann
+provenance:
+  - owner: person/emil-glattfelder
+    ended: 1941 or earlier
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1457/
+        note: "Footnote: Kopie eines Briefes von Emma Glattfelder an «die Direktion des Kunsthauses der Stadt Zürich» vom 24.02.1960: «Zwei grosse Oelgemälde von Venedig «Markusplatz» und Hafen mit Piazetta» gemalt von Karl Kaufmann, vermachte ich seinerzeit testamentarisch der Sammlung des Kunsthauses der Stadt Zürich, als Andenken an meinen verstorb. Bruder Emil Glattfelder, gewesenes Mitglied der Kunstgesellschaft Züri…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emma-glattfelder
+    acquired: 1941 or earlier
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1457/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1457/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1457/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1457/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1457/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1457/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1457/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1457/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1457/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

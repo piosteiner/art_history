@@ -1,0 +1,22 @@
+public_id: 115581
+name: Talence
+kind: settlement
+parent: france
+country_code: FR
+location: [-0.58831, 44.8086]
+wikidata_id: Q192481
+metadata:
+  sources: [Wikidata Q192481 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q192481
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q192481
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q192481

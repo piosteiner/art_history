@@ -11,6 +11,7 @@ names:
     role: translation
     text: Генерал-губернаторство Берг
 period: 1813-11-25/1815-06-15
+country_codes: [DE]
 wikidata_id: Q1501799
 metadata:
   sources: [Wikidata Q1501799 (retrieved 2026-10-29)]

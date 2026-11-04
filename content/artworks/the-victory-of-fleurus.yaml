@@ -1,0 +1,64 @@
+public_id: 113398
+title_lang: es
+title: La Victoria de Fleurus
+names:
+  - lang: en
+    role: translation
+    text: The Victory of Fleurus
+  - lang: fr
+    role: translation
+    text: La Victoire de Fleurus
+  - lang: de
+    role: translation
+    text: Der Sieg von Fleurus
+  - lang: es
+    role: original
+    text: Victoria de Fleurus
+parent: battle-series
+creator: vicente-carducho
+created: 1634
+materials: [oil paint, canvas]
+dimensions: [297, 365]
+institution: museo-del-prado
+inventory_number: P000635
+web_url: https://www.museodelprado.es/en/the-collection/art-work/the-victory-at-fleurus/6b8c3a87-6e7c-4485-958c-bbaa2155ca23
+wikidata_id: Q18719664
+metadata:
+  sources: [Wikidata Q18719664 (retrieved 2026-11-03)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Batalla_Fleurus_%281622%29.jpg/1280px-Batalla_Fleurus_%281622%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Batalla_Fleurus_(1622).jpg
+    license: Public domain
+    credit: Vincenzo Carducci
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18719664
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18719664
+  created:
+    - url: https://www.museodelprado.es/en/the-collection/art-work/the-victory-at-fleurus/6b8c3a87-6e7c-4485-958c-bbaa2155ca23
+      source: museo-del-prado-coleccion
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18719664
+  materials:
+    - accessed: 2026-11-03
+      property: P186
+      wikidata: Q18719664
+  dimensions:
+    - accessed: 2026-11-03
+      property: P2048
+      wikidata: Q18719664
+  institution:
+    - accessed: 2026-11-03
+      property: P195
+      wikidata: Q18719664
+  inventory_number:
+    - accessed: 2026-11-03
+      property: P217
+      wikidata: Q18719664

@@ -1,0 +1,62 @@
+public_id: 113462
+title_lang: en
+title: View from the Other Side of Fuji from the Minobu River
+names:
+  - lang: ja
+    role: original
+    text: 身延川裏不二
+  - Minobu-gawa Ura Fuji
+  - Minobugawa Ura Fuji
+  - lang: en
+    role: original
+    text: The back of the Fuji from the Minobu river
+  - lang: fr
+    role: translation
+    text: L'arrière du Fuji depuis la Minobu
+  - lang: es
+    role: translation
+    text: El reverso del monte Fuji desde el río Minobu
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 身延川裏不二
+parent: thirty-six-views-of-mount-fuji
+part_number: "42"
+creator: katsushika-hokusai
+created: 1830/1833
+created_label: c. 1830–1833
+created_span: uncertain
+institution: art-institute-of-chicago
+inventory_number: "1932.19"
+web_url: https://www.artic.edu/artworks/86735
+wikidata_id: Q18173433
+metadata:
+  sources: [Wikidata Q18173433 (retrieved 2026-11-03)]
+images:
+  - url: https://www.artic.edu/iiif/2/af1b286d-565e-aaaa-1cc7-d117a217a91d/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/86735
+    license: Public domain
+    credit: Art Institute of Chicago, Clarence Buckingham Collection
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173433
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173433
+  created:
+    - url: https://www.artic.edu/artworks/86735
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173433
+  institution:
+    - url: https://www.artic.edu/artworks/86735
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.artic.edu/artworks/86735
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03

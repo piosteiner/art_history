@@ -30,6 +30,7 @@ names:
     role: translation
     text: Германская Австрия
 period: 1918-11-12/1919-09-10
+country_codes: [AT]
 wikidata_id: Q268970
 metadata:
   sources: [Wikidata Q268970 (retrieved 2026-10-29)]

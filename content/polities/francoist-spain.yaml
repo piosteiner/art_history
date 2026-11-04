@@ -31,6 +31,7 @@ names:
     role: translation
     text: Франкистская Испания
 period: 1 April 1939 – 20 November 1975
+country_codes: [ES]
 wikidata_id: Q13474305
 metadata:
   sources: [Wikidata Q13474305 (retrieved 2026-10-29)]

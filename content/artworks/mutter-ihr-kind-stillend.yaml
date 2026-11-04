@@ -1,0 +1,154 @@
+public_id: 115077
+title_lang: en
+title: Mutter, ihr Kind stillend
+creator: jacob-ochtervelt
+created: c. 1665
+created_span: uncertain
+kind: oil painting
+medium: Oil on oak panel
+dimensions: [15, 12.2]
+institution: kunsthaus-zurich
+inventory_number: R 22
+web_url: https://collection.kunsthaus.ch/de/collection/item/2114/
+on_loan: true
+on_loan_since: 1949
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586302
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4a/Jacob_Ochtervelt_-_Mutter%2C_ihr_Kind_stillend_-_R_22_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jacob_Ochtervelt_-_Mutter,_ihr_Kind_stillend_-_R_22_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jacob Ochtervelt
+provenance:
+  - owner_label: Landry
+    acquired: 1934
+    ended: 1934
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+        note: "Footnote: ZKG/KHZ Werkdossier, handschriftliche Notiz von Leopold Ruzicka."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jacques-goudstikker
+    acquired: 1933 or later
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+        note: "Footnote: ZKG/KHZ, Werkdossier, Korrespondenz, unbekannt, 06.06.1943: «Herr Dr. Horschmann [sic], der das Bild im Original gesehen hat, glaubt es von etwa 10 Jahren in Paris gesehen zu haben, und hält es für möglich, dass es in den Besitz von Goudstikker ging.»; Forschungsprojekt 01.07.2004, Willibald Duschnitz. Kunst, Architektur und Sammeln in Wien 1900-1945 Österreichische Gesellschaft für Provenienzfors…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunst-goldschmidt
+    co_owners: [person/antiquitatenhandlung-j-s-goldschmidt]
+    direct: true
+    place: frankfurt
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-sanct-lucas
+    role: dealer
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+        note: "Footnote: Kuretsky 1979, S. 65, Kat.-Nr. 29; Kat. Museum Boymans 1935, Kat.-Nr. 71, Abb. 115."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/willibald-duschnitz
+    acquired: 1935 or earlier
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+        note: "Footnote: Chipman/Weidinger 2014, S. 91-92: «Für eine umfangreiche Vermeer-Ausstellung zur Einweihung des neuen Boymans-Museums in Rotterdam stellt er [Duschnitz] zwei kleine Gemälde, Mutter ihr Kind stillend von Jacob Ochtervelt und Die Alte Kirche in Delft mit sieben Figuren von Hendrik Cornelisz. van Vliet zur Verfügung». Willibald Duschnitz war ein führender Filzfabrikant jüdischer Herkunft und einer de…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/louis-ferriere
+    ended: 1943-06-28
+    direct: true
+    place: geneva
+    label: unbekannt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+        note: "Footnote: Wie oben Fussnote 9; E-Mail-Korrespondenz, Sykora, 30.09.2022: «Jacob Ochtervelts Objekt war dagegen Kommissionsware. Der Verkauf an Ruzicka ist unter dieser Rubrik unter dem 28.06.1943 in dem Bad 'Buchhaltung 1943' auf fol. 90 wie folgt aufzufinden: 'Ferrière Mad. 4.6. Gemälde Ochterfelde, sowie 'Ruzicka Prof. 2.18 Madonna Klein, Die genannten Ziffern 4.6 und 2.18 beziehen sich auf so genannte Ku…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1942-12-22
+    ended: 1943-06-28
+    direct: true
+    place: lucerne
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+        note: "Footnote: Wie oben Fussnote 10; ZKG/KHZ, Werkdossier, Korrespondenz, Dr. Freimüller Univ.-Doz., Dr. Noll, 10.08.2007: «Dr. Louis Ferrière (bzw. seiner Gattin) zunächst in der Galerie Fischer in Zürich verkauft wurde und in weiterer Folge von der Galerie Vogler in Luzern». Es handelt sich bei diesen beiden Galerien wohl um eine Verwechslung von der Galerie Fischer, Luzern, die in den besagten Jahren auch Auk…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1943-06-28
+    ended: 1948-12-27
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 23.12.1948 I., Archiv ZKG/KHZ, 10.30.10.42; Zürcher Kunstgesellschaft 1949 Jahresbericht, S. 4; ZKG/KHZ Werkdossier, Rechnung der Galerie Fischer, 03.07.1943."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1948-12-27
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission wie oben Fussnote 12; Zürcher Kunstgesellschaft 1949 Jahresbericht, wie oben Fussnote 12; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 109."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2114/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

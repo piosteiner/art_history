@@ -1,0 +1,132 @@
+public_id: 114926
+title_lang: de
+title: Stilleben mit Gemüse und Krug
+names:
+  - lang: en
+    role: translation
+    text: Still Life with Vegetables and Jar
+  - lang: de
+    role: former
+    text: Gemüsestilleben mit Tonkrug
+creator: jan-fyt
+created: 1653
+kind: oil painting
+medium: Oil on canvas
+dimensions: [88.5, 128]
+institution: kunsthaus-zurich
+inventory_number: R 8
+web_url: https://collection.kunsthaus.ch/de/collection/item/1189/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586284
+provenance:
+  - owner: person/carl-friedrich-alexander-von-frey
+    role: dealer
+    ended: 1936-02-28
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1189/
+        note: "Footnote: Nederlands Instituut voor Kunstgeschiedenis RKD, Archiv Kunsthandel D.A. Hoogendijk & Co, RKD, Den Haag, Hoogendijk Karte Nr. 0.S.1030."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/d-a-hoogendijk-co
+    role: dealer
+    acquired: 1936-02-28
+    ended: 1936-06-16
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1189/
+        note: "Footnote: Wie oben Fussnote 3; Brief F. Steinmeyer an Leopold Ruzicka, 10.10.1949, ZKG/KHZ, Werkdossier; Gemäss Lagerbuch 1937 und Karte 10433 der Kunsthandlung Böhler & Steinmeyer, ZIKG, München."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandlung-bohler-steinmeyer
+    acquired: 1936-06-16
+    ended: 1940-03-13
+    direct: true
+    place: lucerne
+    label: stock no. 10433
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1189/
+        note: "Footnote: Es besteht eine zeitliche Diskrepanz zwischen dem dokumentierten Verkauf am 16.06.1936 bei D. A. Hoogendijk & Co. und dem ebenfalls dokumentierten Ankauf der Kunsthandlung Böhler & Steinmeyer am 13.10.1937; Brief, ZKG/KHZ, Werkdossier, wie oben Fussnote 4: «Ich danke Ihnen für Ihre feundl. Zeilen vom 9. Ort. Ich kaufte das FYT Stilleben 1937 von D. A. Hoogendijk & Co. In *Amsterdam [Kaizersgracht …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1939-12-27
+    ended: 1940-03-13
+    direct: true
+    place: lucerne
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1189/
+        note: "Footnote: ZKG/KHZ, Werkdossier, Korrespondenz wie oben Fussnote 4; Kunsthandlung Böhler & Steinmeyer, wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1940-03-13
+    ended: 1948-12-27
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1189/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 23.12.1948 I., Archiv ZKG/KHZ, 10.30.10.42; Zürcher Kunstgesellschaft 1949 Jahresbericht, S. 4; ZKG/KHZ, Werkdossier, handschriftliche Notizen von Leopold Ruzicka; Kunsthandlung Böhler & Steinmeyer, wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1948-12-27
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1189/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 7; Zürcher Kunstgesellschaft 1949 Jahresbericht, wie oben Fussnote 7; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 102."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1189/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 102, wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1189/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1189/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1189/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1189/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1189/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1189/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1189/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1189/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

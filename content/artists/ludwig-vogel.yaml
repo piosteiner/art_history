@@ -1,0 +1,64 @@
+public_id: 115273
+name: Ludwig Vogel
+given_name: Ludwig
+family_name: Vogel
+birth: 1788-07-10
+death: 1879-08-20
+wikidata_id: Q324629
+metadata:
+  sources: [Wikidata Q324629 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q324629
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q324629
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q324629
+  - type: worked_in
+    to: place/rome
+    period: 1810/1813
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q324629
+  - type: studied_at
+    to: institution/akademie-der-bildenden-kunste-wien
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q324629
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8d/Ludwig_Vogel.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ludwig_Vogel.jpg
+    license: Public domain
+    credit: Ludwig Vogel (1788-1879)
+identifiers:
+  gnd: "118627457"
+  hls: "022114"
+  idref: "148074987"
+  lc: nr97020540
+  rkd: "81575"
+  sikart: "4022961"
+  ulan: "500087575"
+  viaf: "64800504"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q324629
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q324629

@@ -1,0 +1,82 @@
+public_id: 115263
+title_lang: en
+title: Jean d’Aire (étude de nu pour les Bourgeois de Calais)
+names:
+  - lang: de
+    role: translation
+    text: Mann mit geballten Fäusten
+  - lang: de
+    role: translation
+    text: Jean d’Aire (Grosse Aktstudie zu den Bürgern von Calais)
+  - lang: en
+    role: translation
+    text: Jean d’Aire (Nude Study for the Burghers of Calais, Large Version)
+creator: auguste-rodin
+created: 1887
+kind: sculpture
+medium: Bronze
+dimensions: [205, 68, 67]
+institution: kunsthaus-zurich
+inventory_number: 1949/0009
+web_url: https://collection.kunsthaus.ch/de/collection/item/2990/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/eugene-rudier
+    acquired: June 1947 or earlier
+    ended: 1949
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2990/
+        note: "Footnote: Korrespondenz mit Eugen Rudier von 1947 bis 1948, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.29; Korrespondenz vom Nov. 1947, Archiv ZKG/KHZ, Mappe «Rudier 1947», 10.30.50.1 (1895-1974). Vgl. zudem Kat. Kunsthaus Zürich 1947, o. S., Nr. 342: Männlicher Akt zu «Les Bourgeois de Calais», 1886; Nr. 343: Männlicher Akt zu «Les Bourgeois de Calais», 1886, https://digital.kunsthaus.ch/viewer/ima…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: place/canton-of-zurich
+    acquired: 1949
+    method: purchase
+    direct: true
+    place: zurich
+    label: aus der Kunsthaus-Ausstellung «Metallgüsse aus der Werkstatt von Eugène Rudier Paris»; Juni–August 1947; Nr. 342/343; inv. no. 941
+    price:
+      amount: 32000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2990/
+        note: "Footnote: Wie oben Fussnote 3; ZKG/KHZ Inventarbuch Slg. und ZKG/KHZ Inventarbogen/Werkdossier sowie «Regierungsratsbeschlüsse seit 1803 online»: http://www.staatsarchiv.zh.ch/query, S. 254-255: Die kantonale Kunstkommission hatte am 26.02.1948 den Ankauf der Bronze beantragt und beschlossen."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2990/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2990/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2990/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2990/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2990/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2990/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2990/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2990/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

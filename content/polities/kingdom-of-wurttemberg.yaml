@@ -30,6 +30,7 @@ names:
     role: translation
     text: Королевство Вюртемберг
 period: 1 January 1806 – 6 November 1918
+country_codes: [DE]
 wikidata_id: Q159631
 metadata:
   sources: [Wikidata Q159631 (retrieved 2026-10-29)]

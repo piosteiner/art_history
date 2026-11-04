@@ -1,0 +1,47 @@
+public_id: 113416
+title_lang: en
+title: The Adoration of the Shepherds
+names:
+  - lang: de
+    role: translation
+    text: Anbetung der Hirten
+parent: cycle-of-four-altar-pieces-for-the-patron-saints-of-siena
+creator: bartolomeo-bulgarini
+created: c. 1350
+created_span: uncertain
+materials: [tempera, panel]
+institution: harvard-art-museums
+inventory_number: "1917.89"
+web_url: https://harvardartmuseums.org/collections/object/232007
+wikidata_id: Q106868065
+metadata:
+  sources: [Wikidata Q106868065 (retrieved 2026-11-03)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Bartolommeo_Bulgarini_-_The_Adoration_of_the_Shepherds_-_1917.89_-_Fogg_Museum.jpg/1280px-Bartolommeo_Bulgarini_-_The_Adoration_of_the_Shepherds_-_1917.89_-_Fogg_Museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bartolommeo_Bulgarini_-_The_Adoration_of_the_Shepherds_-_1917.89_-_Fogg_Museum.jpg
+    license: Public domain
+    credit: Bartolomeo Bulgarini
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q106868065
+  created:
+    - accessed: 2026-11-03
+      property: P571
+      wikidata: Q106868065
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q106868065
+  materials:
+    - accessed: 2026-11-03
+      property: P186
+      wikidata: Q106868065
+  institution:
+    - accessed: 2026-11-03
+      property: P195
+      wikidata: Q106868065
+  inventory_number:
+    - accessed: 2026-11-03
+      property: P217
+      wikidata: Q106868065

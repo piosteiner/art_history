@@ -29,6 +29,7 @@ names:
     role: translation
     text: Сиенская республика
 period: 1125/1555
+country_codes: [IT]
 wikidata_id: Q736727
 metadata:
   sources: [Wikidata Q736727 (retrieved 2026-10-29)]

@@ -1,0 +1,41 @@
+public_id: 115592
+name: Alexandre Calame
+given_name: Alexandre
+family_name: Calame
+birth: 1810-05-28
+death: 1864-03-19
+wikidata_id: Q621994
+metadata:
+  sources: [Wikidata Q621994 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q621994
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d9/Alexandre_Calame.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Alexandre_Calame.jpg
+    license: Public domain
+    credit: Jules Hébert
+identifiers:
+  bnf: 12573331k
+  gnd: "116430907"
+  hls: "021996"
+  idref: "035050128"
+  kulturnav: 1cccf595-4b3f-4872-a3b1-2bcf36b4e58c
+  lc: n88617561
+  rkd: "14748"
+  sikart: "4000036"
+  ulan: "500023774"
+  viaf: "9966326"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q621994
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q621994

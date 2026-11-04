@@ -1,0 +1,70 @@
+public_id: 115321
+title_lang: de
+title: Sitzende Madonna
+names:
+  - lang: en
+    role: translation
+    text: Seated Madonna
+attribution_label: Anonymous, Northeastern France
+created: c. 1340
+created_span: uncertain
+kind: sculpture
+medium: Hardwood with parts of older polychromy
+dimensions: [84, 34, 26.5]
+institution: kunsthaus-zurich
+inventory_number: 1956/0008
+web_url: https://collection.kunsthaus.ch/de/collection/item/3286/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: institution/galerie-sautier
+    role: dealer
+    ended: 1956
+    place: geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3286/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; ZKG/KHZ Inventarbogen/Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1956
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 6000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3286/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3286/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3286/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3286/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3286/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3286/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3286/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3286/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

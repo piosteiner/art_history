@@ -1,0 +1,64 @@
+public_id: 113425
+title_lang: en
+title: Senju in Musashi Province
+names:
+  - lang: ja
+    role: original
+    text: 武州千住
+  - Bushū Senju
+  - lang: fr
+    role: translation
+    text: Senju dans la province de Musashi
+  - lang: de
+    role: translation
+    text: Senju in der Provinz Musashi
+  - lang: es
+    role: translation
+    text: Senju en la provincia de Musashi
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 武州千住
+  - lang: ko
+    role: translation
+    text: 부슈 센주
+parent: thirty-six-views-of-mount-fuji
+part_number: "7"
+creator: katsushika-hokusai
+created: 1830/1832
+created_label: c. 1830–1832
+created_span: uncertain
+institution: metropolitan-museum-of-art
+inventory_number: JP2988
+web_url: https://www.metmuseum.org/art/collection/search/56390
+wikidata_id: Q18173389
+metadata:
+  sources: [Wikidata Q18173389 (retrieved 2026-11-03)]
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/original/DP141087.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/56390
+    license: Public domain
+    credit: The Metropolitan Museum of Art
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173389
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173389
+  created:
+    - url: https://www.metmuseum.org/art/collection/search/56390
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173389
+  institution:
+    - url: https://www.metmuseum.org/art/collection/search/56390
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.metmuseum.org/art/collection/search/56390
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03

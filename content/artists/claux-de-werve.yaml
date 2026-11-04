@@ -1,0 +1,49 @@
+public_id: 115304
+name: Claux de Werve
+given_name: Claux
+family_name: de Werve
+birth: 1380-03-06
+death: 1439-10-08
+wikidata_id: Q724570
+metadata:
+  sources: [Wikidata Q724570 (retrieved 2026-11-03)]
+relationships:
+  - type: born_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q724570
+  - type: died_in
+    to: place/dijon
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q724570
+  - type: worked_in
+    to: place/dijon
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q724570
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/66/WLA_metmuseum_Poligny_Virgin.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:WLA_metmuseum_Poligny_Virgin.jpg
+    license: CC BY 2.5
+    credit: Wikipedia Loves Art participant "Random_Variables"
+identifiers:
+  gnd: "130305375"
+  idref: "074697870"
+  lc: no2008110836
+  rkd: "204020"
+  ulan: "500044477"
+  viaf: "95973064"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q724570
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q724570

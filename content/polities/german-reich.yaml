@@ -1,6 +1,7 @@
 public_id: 103114
 name: German Reich
 period: 1 January 1871 – 23 May 1949
+country_codes: [DE, PL, RU, FR, LT]
 wikidata_id: Q1206012
 metadata:
   sources: [Wikidata Q1206012 (retrieved 2026-10-28)]

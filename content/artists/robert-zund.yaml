@@ -1,0 +1,59 @@
+public_id: 115521
+name: Robert Zünd
+given_name: Robert
+family_name: Zünd
+birth: 1827-05-03
+death: 1909-01-15
+wikidata_id: Q563312
+metadata:
+  sources: [Wikidata Q563312 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q563312
+  - type: born_in
+    to: place/lucerne
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q563312
+  - type: died_in
+    to: place/lucerne
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q563312
+  - type: worked_in
+    to: place/lucerne
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q563312
+  - type: student_of
+    to: artist/alexandre-calame
+    sources:
+      - accessed: 2026-11-03
+        property: P802
+        wikidata: Q621994
+identifiers:
+  bnf: 15017733n
+  gnd: "124175511"
+  hls: "022125"
+  idref: "082086613"
+  lc: nr2004005507
+  rkd: "86636"
+  sikart: "4022853"
+  ulan: "500003371"
+  viaf: "23067477"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q563312
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q563312

@@ -8,6 +8,7 @@ names:
     role: translation
     text: Генерал-губернаторство Саксония
 period: 1813/1815
+country_codes: [DE]
 wikidata_id: Q1501808
 metadata:
   sources: [Wikidata Q1501808 (retrieved 2026-10-29)]

@@ -29,6 +29,7 @@ names:
     role: translation
     text: Германский союз
 period: 1815-06-08/1866-08-24
+country_codes: [DE, AT, CZ, LU, LI, SI, PL, IT]
 wikidata_id: Q151624
 metadata:
   sources: [Wikidata Q151624 (retrieved 2026-10-29)]

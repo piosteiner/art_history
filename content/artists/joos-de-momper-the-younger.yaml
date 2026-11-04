@@ -1,0 +1,58 @@
+public_id: 115082
+name: Joos de Momper the Younger
+given_name: Joos, the Younger
+family_name: de Momper
+birth: 1564
+death: 1635-02-05
+wikidata_id: Q560548
+metadata:
+  sources: [Wikidata Q560548 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q560548
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q560548
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q560548
+  - type: worked_in
+    to: place/antwerp
+    period: 1581/1635
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q560548
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e9/Dyck_Anthonis_van_-_Etching_of_Joost_de_Momper_the_Younger%2C_fifth_state_-_circa_1632_to_1641.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dyck_Anthonis_van_-_Etching_of_Joost_de_Momper_the_Younger,_fifth_state_-_circa_1632_to_1641.jpg
+    license: Public domain
+    credit: Anthony van Dyck
+identifiers:
+  bnf: "120458627"
+  gnd: "118830643"
+  idref: "028671155"
+  kulturnav: 1a0bfc4c-0ee8-43a8-a1aa-f62c11012c61
+  lc: n86020740
+  rkd: "56801"
+  ulan: "500029526"
+  viaf: "8184591"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q560548
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q560548

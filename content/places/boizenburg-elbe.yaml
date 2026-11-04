@@ -1,0 +1,26 @@
+public_id: 115282
+name: Boizenburg/Elbe
+names:
+  - lang: ru
+    role: translation
+    text: Бойценбург (Эльба)
+kind: settlement
+parent: mecklenburg-vorpommern
+country_code: DE
+location: [10.72314, 53.37434]
+wikidata_id: Q160879
+metadata:
+  sources: [Wikidata Q160879 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q160879
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q160879
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q160879

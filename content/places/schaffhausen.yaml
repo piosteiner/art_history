@@ -1,0 +1,44 @@
+public_id: 114940
+name: Schaffhausen
+names:
+  - lang: ja
+    role: translation
+    text: シャフハウゼン
+  - lang: zh
+    role: translation
+    text: 沙夫豪森
+  - lang: ko
+    role: translation
+    text: 샤프하우젠
+  - lang: fr
+    role: translation
+    text: Schaffhouse
+  - lang: it
+    role: translation
+    text: Sciaffusa
+  - lang: es
+    role: translation
+    text: Escafusa
+  - lang: ru
+    role: translation
+    text: Шаффхаузен
+kind: settlement
+parent: switzerland
+country_code: CH
+location: [8.63386, 47.69653]
+wikidata_id: Q9009
+metadata:
+  sources: [Wikidata Q9009 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q9009
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q9009
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q9009

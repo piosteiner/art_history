@@ -1,0 +1,79 @@
+public_id: 115315
+title_lang: de
+title: Auferweckung eines verunglückten Kindes durch Anrufung des Heiligen Stephan
+names:
+  - lang: en
+    role: former
+    text: Bewahrung eines Kindes durch den Hl. Stephan
+  - lang: en
+    role: former
+    text: Szene aus dem Leben des hl. Zenobius
+  - lang: en
+    role: former
+    text: Wiederbelebung eines toten Knaben durch den hl. Stephanus
+creator: maestro-de-lanaja
+kind: oil painting
+medium: Oil on panel
+dimensions: [102, 75]
+institution: kunsthaus-zurich
+inventory_number: 1957/0006
+web_url: https://collection.kunsthaus.ch/de/collection/item/3275/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585451
+provenance:
+  - owner: person/tomas-harris
+    place: london
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3275/
+        note: "Footnote: ZKG/KHZ Werkdossier: «Kauf von Kurt Meissner, aus Slg. Harris London.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/kurt-meissner
+    acquired: 1956-04-13 or earlier
+    ended: 1957-07-12
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3275/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 12.07.1957, S. 1, Archiv ZKG/KHZ, 10.30.10.42a; Auflistung der Leihgaben zur Ausstellung «Unbekannte Schönheit» von Kurt Meissner, 13.04.1956, Archiv ZKG/KHZ, Eingehende Korrespondenz Ausstellung, 10.30.30.442."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1957-07-12
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 7500
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3275/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3275/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3275/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3275/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3275/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3275/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3275/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

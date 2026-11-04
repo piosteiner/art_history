@@ -1,0 +1,18 @@
+public_id: 113295
+name: Munjamyeong of Goguryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 문자명왕
+  - lang: ko-Hani
+    role: alternative
+    text: 文咨明王
+category: calendar
+definition: "The reign years of King Munjamyeong of Goguryeo (文咨明王, 문자명왕), by which Korean histories date 492–519: 492 is Munjamyeong 1, 519 Munjamyeong 28."
+description_md: |-
+  **Munjamyeong** (文咨明王, 문자명왕): the years of the reign of King Munjamyeong of Goguryeo. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 501 is Munjamyeong 10 (문자명왕 10년). The year of the accession, 492, counts as the first year.
+
+  Before: [[jangsu-goguryeo-reign-years|Jangsu]]. After: [[anjang-goguryeo-reign-years|Anjang]].
+sources:
+  definition:
+    - source: dila-time-authority

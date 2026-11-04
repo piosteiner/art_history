@@ -1,0 +1,72 @@
+public_id: 115350
+name: Philips Wouwerman
+given_name: Philips
+family_name: Wouwerman
+birth: 1619-05-24
+birth_label: c. 24 May 1619
+death: 1668-05-19
+wikidata_id: Q454671
+metadata:
+  sources: [Wikidata Q454671 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q454671
+  - type: born_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q454671
+  - type: died_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q454671
+  - type: worked_in
+    to: place/hamburg
+    period: 1638/1639
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q454671
+  - type: worked_in
+    to: place/haarlem
+    period: 1640/1668
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q454671
+  - type: student_of
+    to: artist/frans-hals
+    sources:
+      - accessed: 2026-11-03
+        property: P1066
+        wikidata: Q454671
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Portret_van_kunstenaar_Philips_Wouwermans_Portretten_van_kunstenaars_%28serietitel%29%2C_RP-P-1907-210.jpg/1280px-Portret_van_kunstenaar_Philips_Wouwermans_Portretten_van_kunstenaars_%28serietitel%29%2C_RP-P-1907-210.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portret_van_kunstenaar_Philips_Wouwermans_Portretten_van_kunstenaars_(serietitel),_RP-P-1907-210.jpg
+    license: CC0
+    credit: Rijksmuseum
+identifiers:
+  bnf: "149531578"
+  gnd: "118969137"
+  idref: 11159801X
+  kulturnav: 3d8aea71-3298-4418-885f-c960010b7228
+  lc: nr99019017
+  rkd: "85690"
+  ulan: "500019917"
+  viaf: "15040910"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q454671
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q454671

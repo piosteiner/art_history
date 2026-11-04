@@ -29,7 +29,8 @@ images:
     license: Public domain
     credit: Ferdinand Hodler
 provenance:
-  - owner_label: Martin and Florence Flersheim
+  - owner: person/martin-flersheim
+    co_owners: [person/florence-flersheim]
     further_places: [amsterdam]
     acquired: 1922-01-28 or earlier
     ended: December 1938 or later

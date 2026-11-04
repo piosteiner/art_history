@@ -1,0 +1,63 @@
+public_id: 113430
+title_lang: en
+title: Shichirigahama in Sagami Province
+names:
+  - lang: ja
+    role: original
+    text: 相州七里浜
+  - Sōshū Shichirigahama
+  - Shichirigahama Beach in Sagami Province
+  - Seven-mile beach in Sagami province
+  - lang: en
+    role: original
+    text: Shichiri beach in Sagami province
+  - lang: fr
+    role: translation
+    text: La plage de Shichiri dans la province de Sagami
+  - lang: es
+    role: translation
+    text: Playa de Shichiri en la provincia de Sagami
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 相州七里浜
+parent: thirty-six-views-of-mount-fuji
+part_number: "13"
+creator: katsushika-hokusai
+created: 1830/1832
+created_label: c. 1830–1832
+created_span: uncertain
+institution: metropolitan-museum-of-art
+inventory_number: JP15
+web_url: https://www.metmuseum.org/art/collection/search/36496
+wikidata_id: Q18173395
+metadata:
+  sources: [Wikidata Q18173395 (retrieved 2026-11-03)]
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/original/DP140979.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/36496
+    license: Public domain
+    credit: The Metropolitan Museum of Art
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173395
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173395
+  created:
+    - url: https://www.metmuseum.org/art/collection/search/36496
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173395
+  institution:
+    - url: https://www.metmuseum.org/art/collection/search/36496
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.metmuseum.org/art/collection/search/36496
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03

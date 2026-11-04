@@ -1,0 +1,65 @@
+public_id: 113421
+title_lang: en
+title: Under the Mannen Bridge at Fukagawa
+names:
+  - lang: ja
+    role: original
+    text: 深川万年橋下
+  - Fukagawa Mannen-bashi shita
+  - Under Mannen-bashi Bridge at Fukagawa
+  - lang: fr
+    role: translation
+    text: Sous le pont Mannen à Fukagawa
+  - lang: de
+    role: translation
+    text: Unter der Mannen-Brücke in Fukagawa
+  - lang: es
+    role: translation
+    text: Bajo el puente Mannen en Fukagawa
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 深川万年橋下
+  - lang: ko
+    role: translation
+    text: 후카가와 만년교 아래
+parent: thirty-six-views-of-mount-fuji
+part_number: "4"
+creator: katsushika-hokusai
+created: 1830/1832
+created_label: c. 1830–1832
+created_span: uncertain
+institution: metropolitan-museum-of-art
+inventory_number: JP1332
+web_url: https://www.metmuseum.org/art/collection/search/55289
+wikidata_id: Q18173386
+metadata:
+  sources: [Wikidata Q18173386 (retrieved 2026-11-03)]
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/original/DP141017.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/55289
+    license: Public domain
+    credit: The Metropolitan Museum of Art
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173386
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173386
+  created:
+    - url: https://www.metmuseum.org/art/collection/search/55289
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173386
+  institution:
+    - url: https://www.metmuseum.org/art/collection/search/55289
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.metmuseum.org/art/collection/search/55289
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03

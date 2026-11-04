@@ -1,0 +1,98 @@
+public_id: 115607
+name: Käthe Kollwitz
+given_name: Käthe
+family_name: Kollwitz
+names:
+  - kind: birth
+    lang: de
+    role: former
+    text: Käthe Schmidt
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q142472
+birth: 1867-07-08
+death: 1945-04-22
+wikidata_id: Q142472
+metadata:
+  sources: [Wikidata Q142472 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/german-empire
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q142472
+  - type: nationality
+    to: polity/weimar-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q142472
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q142472
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q142472
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q142472
+  - type: influenced_by
+    to: artist/max-liebermann
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q142472
+  - type: member_of
+    to: institution/academy-of-arts-berlin
+    sources:
+      - accessed: 2026-11-03
+        property: P463
+        wikidata: Q142472
+  - type: member_of
+    to: movement/berlin-secession
+    sources:
+      - accessed: 2026-11-03
+        property: P463
+        wikidata: Q142472
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q142472
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9e/K%C3%A4the_Kollwitz_by_Hugo_Erfurth%2C_1927.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:K%C3%A4the_Kollwitz_by_Hugo_Erfurth,_1927.jpg
+    license: Public domain
+    credit: Hugo Erfurth
+identifiers:
+  bnf: "121426299"
+  dome: "192"
+  gnd: "118564943"
+  idref: "029898137"
+  kulturnav: 0326fd74-3c56-466a-8b9d-6f9b07d23792
+  lc: n50044456
+  nlk: KAC202284128
+  rkd: "45532"
+  ulan: "500016751"
+  viaf: "19714096"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q142472
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q142472

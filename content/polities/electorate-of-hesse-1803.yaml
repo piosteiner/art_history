@@ -11,6 +11,7 @@ names:
     role: translation
     text: electorado de Hesse
 period: 1803/1807
+country_codes: [DE]
 wikidata_id: Q100594799
 metadata:
   sources: [Wikidata Q100594799 (retrieved 2026-10-29)]

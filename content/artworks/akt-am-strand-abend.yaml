@@ -1,0 +1,132 @@
+public_id: 115552
+title_lang: en
+title: Akt am Strand / Abend
+names:
+  - lang: en
+    role: translation
+    text: Nude on the Beach / Evening
+creator: albert-von-keller
+created: 1874
+kind: oil painting
+medium: Oil on panel
+dimensions: [22.5, 49.5]
+institution: kunsthaus-zurich
+inventory_number: 2009/0028
+web_url: https://collection.kunsthaus.ch/de/collection/item/6623/
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586279
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/27/Albert_von_Keller_-_Akt_am_Strand_-_Abend_-_2009-0028_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_von_Keller_-_Akt_am_Strand_-_Abend_-_2009-0028_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Albert von Keller
+provenance:
+  - owner: person/karl-haberstock
+    role: dealer
+    ended: 1919-02-10
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6623/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jean-baer
+    co_owners: [person/ida-baer]
+    acquired: 1919
+    ended: May 1939 or earlier
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6623/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: lost through Nazi persecution
+    acquired: 1939-05
+    ended: 1942-08
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6623/
+        note: |-
+          Footnote: Beschluss des Kunstrückgabebeirat, 72. Beiratssitzung, 03.07.2014,  S. 2
+
+          «Ida Baer und ihr Sohn Heinz Albert Baer wurden von den NS-Machthabern als Juden verfolgt. Heinz Albert Baer, der nach dem Novemberpogrom in ein Konzentrationslager verschleppt wurde, flüchtete im Mai 1939 nach England. Zuvor, im März 1939, zog Ida Baer mit ihrer Mutter und ihrer Schwester und deren Ehemann in eine Wohnung i…
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/klaus-keller
+    co_owners: [person/dorothea-von-keller]
+    ended: 1972-09-13
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6623/
+        note: 'Footnote: Verzeichnis "Alb. von Keller 1844-1920, Gesamtkosten d. Sammlung Dr. Oskar A. Müller" II, Nr. 379: Am Strande liegender Akt, 1874, Claus Keller/Pyrmont, ZKG/KHZ Werkdokument-Ordner Alb. v. Keller - Sammlung Oskar A. Müller.'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/oskar-a-muller
+    acquired: 1972-09-13
+    ended: 1994
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6623/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hannelore-muller-behrendt
+    acquired: 1994
+    ended: 2007
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6623/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2007
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6623/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2012
+    direct: true
+    place: zurich
+    label: gütliche Einigung mit den Erben und Schenkung von Hannelore Müller
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6623/
+        note: "Footnote: Eintrag auf Lost Art-Datenbank, vgl. https://www.lostart.de/de/verlust/objekt/nach-dem-sturm-akt-am-strande/297676, 27.02.2025."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6623/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6623/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6623/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6623/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6623/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6623/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6623/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

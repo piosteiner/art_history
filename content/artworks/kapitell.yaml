@@ -1,0 +1,67 @@
+public_id: 115453
+title_lang: en
+title: Kapitell
+names:
+  - lang: en
+    role: translation
+    text: Capital
+attribution_label: Anonymous, Apulia
+created: 1150/1199
+created_label: 2nd half 12th century
+created_span: uncertain
+kind: sculpture
+medium: Limestone
+dimensions: [34, 43, 14]
+institution: kunsthaus-zurich
+inventory_number: 1957/0005
+web_url: https://collection.kunsthaus.ch/de/collection/item/3916/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/elie-borowski
+    ended: 1957
+    place: toronto
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3916/
+        note: "Footnote: ZKG/KHZ Inventarbogen/Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1957
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3916/
+        note: "Footnote: Wie oben Fussnote 3; Sitzungsprotokoll der Sammlungskommission, 12.07.1957, S. 2, Archiv ZKG/KHZ 10.30.10.42a: das Kapitell wurde zusammen mit einem koptischen Relief (1957/0004; 1991 deakzessioniert) aus Apulien für $ 8’200 erworben."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3916/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3916/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3916/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3916/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3916/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3916/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3916/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

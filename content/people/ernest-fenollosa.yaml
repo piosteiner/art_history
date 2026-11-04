@@ -27,6 +27,13 @@ wikidata_id: Q933253
 metadata:
   sources: [Wikidata Q933253 (retrieved 2026-10-28)]
 relationships:
+  - type: lived_in
+    to: place/tokyo
+    period: 1878/1890
+    sources:
+      - note: Came from Harvard in 1878 to teach philosophy and political economy at the new Tokyo University; denounced the study of Western art in 1882, founded the Kangakai with Okakura in 1884 and the Tokyo School of Fine Arts; returned to the United States in 1890.
+        source: history-of-japanese-art
+        locator: pp. 362–363
   - type: founded
     to: institution/kangakai
     sources:

@@ -1,0 +1,18 @@
+public_id: 113304
+name: Hyejong of Goryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 혜종
+  - lang: ko-Hani
+    role: alternative
+    text: 惠宗
+category: calendar
+definition: "The reign years of King Hyejong of Goryeo (惠宗, 혜종), by which Korean histories date 944–945: 944 is Hyejong 1, 945 Hyejong 2."
+description_md: |-
+  **Hyejong** (惠宗, 혜종): the years of the reign of King Hyejong of Goryeo. The Goryeosa, the history of Goryeo, dates events by the reigning king's year ([[korean-reign-years]]): 945 is Hyejong 2 (혜종 2년). The year of the accession, 944, counts as the first year.
+
+  Before: [[taejo-goryeo-reign-years|Taejo]]. After: [[jeongjong-goryeo-reign-years|Jeongjong]].
+sources:
+  definition:
+    - source: dila-time-authority

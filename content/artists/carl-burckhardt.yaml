@@ -1,0 +1,46 @@
+public_id: 115538
+name: Carl Burckhardt
+given_name: Carl
+family_name: Burckhardt
+birth: 1878-01-13
+death: 1923-12-24
+wikidata_id: Q1037181
+metadata:
+  sources: [Wikidata Q1037181 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q1037181
+  - type: worked_in
+    to: place/basel
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q1037181
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/15/Burckhardt-Studio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Burckhardt-Studio.jpg
+    license: Public domain
+    credit: unknown/uncredited
+identifiers:
+  bnf: 11935803x
+  gnd: "120651858"
+  hls: "022176"
+  idref: "164461035"
+  lc: n86048918
+  rkd: "14102"
+  sikart: "4023385"
+  ulan: "500021889"
+  viaf: "59921057"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q1037181
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q1037181

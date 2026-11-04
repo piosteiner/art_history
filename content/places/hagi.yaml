@@ -1,0 +1,26 @@
+public_id: 112500
+name: Hagi
+names:
+  - lang: ja
+    role: translation
+    text: 萩市
+kind: settlement
+parent: japan
+country_code: JP
+location: [131.39917, 34.40811]
+wikidata_id: Q378225
+metadata:
+  sources: [Wikidata Q378225 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q378225
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q378225
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q378225

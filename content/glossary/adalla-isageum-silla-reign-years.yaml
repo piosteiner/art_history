@@ -1,0 +1,18 @@
+public_id: 113344
+name: Adalla Isageum of Silla (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 아달라이사금
+  - lang: ko-Hani
+    role: alternative
+    text: 阿達羅尼師今
+category: calendar
+definition: "The reign years of Adalla Isageum of Silla (阿達羅尼師今, 아달라이사금), by which Korean histories date 154–184: 154 is Adalla Isageum 1, 184 Adalla Isageum 31."
+description_md: |-
+  **Adalla Isageum** (阿達羅尼師今, 아달라이사금): the years of the reign of Adalla Isageum of Silla. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 163 is Adalla Isageum 10 (아달라이사금 10년). The year of the accession, 154, counts as the first year.
+
+  Before: [[ilseong-isageum-silla-reign-years|Ilseong Isageum]]. After: [[beolhyu-isageum-silla-reign-years|Beolhyu Isageum]].
+sources:
+  definition:
+    - source: dila-time-authority

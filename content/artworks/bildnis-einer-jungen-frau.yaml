@@ -1,0 +1,199 @@
+public_id: 115432
+title_lang: de
+title: Bildnis einer jungen Frau
+names:
+  - lang: fr
+    role: translation
+    text: Portrait of a Young Lady
+creator: johannes-cornelisz-verspronck
+created: 1647
+kind: oil painting
+medium: Oil on canvas
+dimensions: [73, 55]
+institution: kunsthaus-zurich
+inventory_number: R 40
+web_url: https://collection.kunsthaus.ch/de/collection/item/3817/
+on_loan: true
+on_loan_since: 1949
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585170
+provenance:
+  - owner: person/adolphe-schloss
+    ended: 1910
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+        note: "Footnote: Jewish Digital Cultural Recovery Project (JDCRP), «Portrait de jeune femme», https://pilot-demo.jdcrp.org/artwork/verspronck_portrait_52581/ (07.09.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/lucie-mathilde-schloss
+    acquired: 1911
+    ended: 1938
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: heirs of Adolphe Schloss
+    acquired: 1939-08-20
+    ended: 1943-04-16
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+        note: "Footnote: Wie oben Fussnote 3: «Schloss heirs, by descent from their mother Lucie Haas Schloss, Paris, 1938; Château de Chambon, Laguenne, (Corrèze), France, 20 August 1939 - 16 April 1943.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/vichy-france
+    role: possessor
+    acquired: 1943-04-16
+    ended: 1943-11-24
+    method: confiscation
+    direct: true
+    place: paris
+    label: Tulle; Jeu de Paume
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+        note: |-
+          Footnote: Wie oben Fussnote 3; Cultural Plunder by the Einsatzstab Reichsleiter Rosenberg (ERR), https://www.errproject.org/jeudepaume/card_view.php?CardId=52581 (13.01.2022):
+          1943 Beschlagnahme in Tulle von Vertretern des Vichy-Regimes sowie SS-Angehörigen, anschließend Verbringung in das Jeu de Paume, Paris. Dort Auswahl von 262 Werken für den «Sonderauftrag Linz»; Verbringung dieses Konvolutus in den «Fü…
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Führerbau, Munich
+    role: custodian
+    acquired: 1943-11-24
+    ended: 1945-04-29
+    direct: true
+    place: munich
+    label: ausgewählt für den «Sonderauftrag Linz»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (thief)
+    role: possessor
+    acquired: 1945-04-29
+    ended: 1945-04-30
+    method: theft
+    direct: true
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    acquired: 1945-11-12
+    ended: 1946-01-30
+    direct: true
+    place: munich
+    label: München, Munich No. 13942
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+        note: "Footnote: Wie oben Fussnote 6;  Central Collecting Point (CCP), Property Card, Münchner Nummer 13942, vgl. Deutsch Historisches Museum-Datenbank, http://www.dhm.de/datenbank/ccp (22.08.2019); Bundesarchiv Koblenz (BArch), B323/621sowie B323/668."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: heirs of Adolphe Schloss
+    acquired: 1946-01-30
+    ended: 1949-05-25
+    method: restitution
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-charpentier
+    role: agent
+    acquired: 1949-05-25
+    ended: 1949-05-25
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 64
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+        note: "Footnote: Wie oben Fussnote 3; Auktion Galerie Charpentier Paris (25.05.1949), Lot 64."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/francis-matthiesen
+    role: agent
+    acquired: 1949-05-25
+    ended: 1949-06-16
+    method: purchase
+    direct: true
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+        note: "Footnote: ZKG/KHZ Werkdossier, handschriftliche Notizen Leopold Ruzicka; ZKG/KHZ Ruzicka-Akten, Abrechnung Ruzicka-Stiftung 1949, S. 4: «Am 16. Juni 1949 von Herrn F.M.Z. Matthiesen aus der Versteigerung der Sammlung Adolphe Schloss»; Jean Pierre Durand war für den Transport zuständig: «Für Steigerungshonorar und Transportspesen für diese Gemälde (...) an Herrn Jean Pierre Durand.» (vgl. ZKG/KHZ Ruzicka-Akt…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1949-06-16
+    ended: 1949-06-16
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+        note: "Footnote: Wie oben Fussnote 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1949-06-16
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+        note: "Footnote: Wie oben Fussnote 12; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 100."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+        note: "Footnote: Wie oben Fussnote 15."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

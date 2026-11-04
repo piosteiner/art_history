@@ -1,14 +1,52 @@
 public_id: 108048
-name: Ogawa Jihei
+name: Ogawa Jihei VII
 given_name: Ogawa
 family_name: Jihei
-death: 1925
+names:
+  - lang: ja
+    role: original
+    text: "{小川|おがわ}{治兵衛|じへい}"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ogawa_Jihei_VII
+        source: en-wikipedia-org
+        accessed: 2026-11-03
+birth: 1860-05-25
+death: 1933-12-02
 region: east_asia
-wikidata_id: Q134709014
+wikidata_id: Q758744
 metadata:
-  sources: [Wikidata Q134709014 (retrieved 2026-11-01)]
+  sources: [Wikidata Q134709014 (retrieved 2026-11-01), Wikidata Q758744 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q758744
+  - type: born_in
+    to: place/shinkotari
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q758744
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b3/Ogawa-zihe1860.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Ogawa-zihe1860.JPG
+    license: CC BY-SA 3.0
+    credit: Jnn。
+identifiers:
+  bnf: "177761475"
+  gnd: "1094548626"
+  idref: "168720876"
+  lc: no2014092370
+  ulan: "500245674"
+  viaf: "252979754"
 sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q758744
   death:
-    - accessed: 2026-11-01
+    - accessed: 2026-11-03
       property: P570
-      wikidata: Q134709014
+      wikidata: Q758744

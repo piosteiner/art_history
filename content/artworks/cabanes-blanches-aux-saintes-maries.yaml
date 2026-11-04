@@ -1,0 +1,222 @@
+public_id: 115597
+title_lang: en
+title: Cabanes blanches aux Saintes-Maries
+names:
+  - lang: de
+    role: translation
+    text: Weisse Hütten bei Saintes-Maries
+  - lang: en
+    role: translation
+    text: White Cottages at Saintes-Maries
+  - lang: en
+    role: former
+    text: Mas blancs à Saintes-Maries
+creator: vincent-van-gogh
+created: 1888
+kind: oil painting
+medium: Oil on canvas
+dimensions: [33.5, 41.5]
+institution: kunsthaus-zurich
+inventory_number: 1995/0006
+web_url: https://collection.kunsthaus.ch/de/collection/item/872/
+on_loan: true
+on_loan_since: 1974
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q26220263
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8e/Vincent_van_Gogh_-_Cabanes_blanches_aux_Saintes-Maries_-_1995-0006_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Cabanes_blanches_aux_Saintes-Maries_-_1995-0006_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: person/theo-van-gogh
+    acquired: 1888-08-13
+    ended: 1888-08-13
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/872/
+        note: "Footnote: Feilchenfeldt 2013 148.F419; Kat. The Metropolitan Museum of Art, New York 1984, S. 92: «The painting was included in the batch taken to Paris by Milliet […] in August», S. 172: «[…] Milliet, who was going on leave for some weeks to the north of France, agreed to take to Paris the thirty-six rolled canavas that formed van Goghs’s second batch of paintings for Theo. He delivered them on 17. August.…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/johanna-van-gogh-bonger
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/872/
+        note: "Footnote: Feilchenfeldt 2013, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: artist/vincent-van-gogh
+    acquired: 1890 or earlier
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/872/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/willy-gretor
+    acquired: 1891-11
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/872/
+        note: "Footnote: Wie oben Fussnote 3; Feilchenfeldt 2009 F419: Kassenbuch von Johanna von Gogh-Bonger Nov 1891."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/julien-leclercq
+    acquired: 1901
+    ended: 1901
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/872/
+        note: "Footnote: Faille 1970, S. 627."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1901 or earlier
+    ended: 1904 or later
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/872/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/maurice-fabre
+    acquired: 1908
+    ended: 1908
+    place: paris
+    label: Paris and Gasparets
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/872/
+        note: "Footnote: Wie oben Fussnote 3 und 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/gustave-fayet
+    acquired: 1909
+    ended: 1925
+    place: igny
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/872/
+        note: "Footnote: Wie oben Fussnote 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/wildenstein-co
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/872/
+        note: "Footnote: Wie oben Fussnote 8, S. 628."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1927
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/872/
+        note: "Footnote: Wie oben Fussnote 3; The Paul Rosenberg Archives, MoMA, New York, «Register» [Nr. 2204]: Das Gemälde wird im Verzeichnis unter der Nr. 2204 aufgelistet. Da die Liste chronologisch geordnet ist und den Eingang der Gemälde in den Bestand (oder als Kommission festhält?) aufzeichnet, lässt sich daraus schliessen, dass das Gemälde von van Gogh zwischen 1925 und 1928 in den Bestand aufgenommen wurde. Da…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Mr. and Mrs. William H. Crocker
+    acquired: 1934
+    place: san-francisco
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/872/
+        note: "Footnote: Wie oben Fussnote 3 und 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: the estate of William H. Crocker
+    acquired: 1940 or earlier
+    ended: 1965 or later
+    method: inheritance
+    direct: true
+    place: burlingame
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/872/
+        note: "Footnote: Wie oben Fussnote 6; Kat. Palace of Fine Arts San Francisco 1940, S. 15, Kat.-Nr. 10; Kat. UCLA Art Galleries et al.1965, S. 12, Kat.-Nr. 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/henry-potter-russell
+    acquired: 1960 or earlier
+    ended: 1971 or later
+    method: inheritance
+    direct: true
+    place: san-francisco
+    label: Helen Victoria Crocker; später Henry Potter Russell; Tochter von William H. Crocker
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/872/
+        note: "Footnote: Wie oben Fussnote 3 und 6; Kat. San Francisco Museum of Art 1960; Lecaldano 1971, Bd. 2, S. 207, Kat.-Nr. 510."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/wildenstein-co
+    role: dealer
+    ended: 1974 or earlier
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/872/
+        note: "Footnote: Wie oben Fussnote 3 und 6; Kunsthaus Zürich 1995 (Sammlungskatalog), Vorwort."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-haefner
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/872/
+        note: "Footnote: Wie oben Fussnote 24."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1995
+    method: gift
+    direct: true
+    place: zurich
+    label: anlässlich des 50-jährigen Jubiläums der AMAG; Zürich, Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/872/
+        note: "Footnote: Wie oben Fussnote 3; ZKG/KHZ, Inventarbuch Slg; Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 26."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: 148.F419
+    label: Feilchenfeldt 2013 (catalogue raisonné)
+  - number: "320.419"
+    label: de la Faille 1939 (catalogue raisonné)
+  - number: "1465"
+    label: Hulsker (catalogue raisonné)
+  - number: "358"
+    label: WM S. (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/872/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/872/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/872/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/872/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/872/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/872/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/872/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/872/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

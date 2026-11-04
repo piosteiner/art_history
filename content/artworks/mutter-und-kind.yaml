@@ -1,0 +1,165 @@
+public_id: 114904
+title_lang: en
+title: Mutter und Kind
+names:
+  - lang: en
+    role: translation
+    text: Mother and Child
+creator: ernst-barlach
+created: 1919/1920
+kind: sculpture
+medium: Oak wood
+dimensions: [97, 52, 9.5]
+institution: kunsthaus-zurich
+inventory_number: 1946/0008
+web_url: https://collection.kunsthaus.ch/de/collection/item/11/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: institution/galerie-paul-cassirer
+    role: agent
+    acquired: 1921-03-08
+    ended: 1922-04-03
+    direct: true
+    place: berlin
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/11/
+        note: "Footnote: E-Mail-Korrespondenz mit dem Paul Cassirer & Walter Feilchenfeldt Archiv, Zürich, 20.08.2024, sowie rote Stockkarte Nr. 17780, Paul Cassirer & Walter Feilchenfeldt Archiv, Zürich."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-hess
+    acquired: 1922-04-03
+    ended: 1934-12-18
+    method: purchase
+    direct: true
+    place: berlin
+    label: 50'000 Mark; Berlin and London
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/11/
+        note: "Footnote: Wie oben Fussnote 2; Laur/Probst/Bubrowski 2006, S. 160, Nr. 287 sowie Auszug aus dem Kommissionsbuch 1924-1938 Mai, fol. 174, Archiv der Galerie Fischer, Galerie Fischer Auktionen AG, Luzern. Recherche: Dr. Sandra Sykora. Zur Sammlung von Fritz Hess: Von der Schulenburg 1981: «Nach dem Krieg [Erster Weltkrieg] begann Fritz Hess Bilder zu sammeln. Seine Kunstsammlung [...]: ein Roger van der Weyde…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1931-09-01
+    ended: 1931-09-01
+    method: auction
+    direct: true
+    place: lucerne
+    label: Lot 46; unverkauft
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/11/
+        note: |-
+          Footnote: Auktion Cassirer/Fischer 1931, o. S., Nr. 46 (mit Abb. auf Tafel XXXVII); Getty Provenance Index: Sales Catalogs»: «Transaction: Unverkauft», vgl. http://piprod.getty.edu/starweb/pi/servlet.starweb?path=pi/pi.web (30.09.2024).
+          Unter den Preisberichten zu der Auktion ist in der «Weltkunst» im Gegensatz dazu ein Preis von CHF 1200 angegeben; vgl. Weltkunst, Jg. V, 13.09.1931, S. 4: Preisberichte; ht…
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1931-09-01
+    ended: 1931-09-21
+    direct: true
+    place: lucerne
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/11/
+        note: "Footnote: Auszug aus dem Kommissionsbuch 1924-1938 Mai, wie oben Fussnote 4: «Laut Aufstellung vom 2. Sept. 1931 & Brief an ihn [Fritz Hess] bleiben folgende Gegenstände hier zu den angegebenen Nettopreisen und wird bei jedem Verkauf der Betrag Herrn Hess gutgeschrieben an seiner Schuld»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-paul-cassirer
+    role: agent
+    acquired: 1931-09-21
+    ended: 1934-06-21
+    direct: true
+    place: berlin
+    label: on consignment; Luzern (Galerie); Berlin/Luzern; and Galerie Fischer, Lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/11/
+        note: "Footnote: E-Mail-Korrespondenz vom 20.08.2024 und rote Stockkarte Nr. 20502, Paul Cassirer/Walter Feilchenfeldt Archiv, Zürich: 21.9.31 «von Fritz Hess, Dahlem»; 21.6.34 «an Fischer Luzern»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1934-06-21
+    ended: 1934-12-18
+    direct: true
+    place: lucerne
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/11/
+        note: "Footnote: Wie oben Fussnote 6; Auszug aus dem Kommissionsbuch 1924-1938 Mai, fol. 174, Archiv der Galerie Fischer, Galerie Fischer Auktionen AG, Luzern. Recherche: Dr. Sandra Sykora."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: dealer
+    acquired: 1934-12-18
+    ended: 1947-02-19
+    method: purchase
+    direct: true
+    place: lucerne
+    label: unter Verrechnung einer Schuld
+    price:
+      amount: 1000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/11/
+        note: "Footnote: Wie oben Fussnote 5: «18/12/34 alle Bilder gehen in mein [Fischer] Eigentum über. Die Schuld wird ausgeglichen & ich bezahle ihm noch bar F 5000.»; Objektkarte Inv.-Nr. 4364, Archiv der Galerie Fischer, Galerie Fischer Auktionen AG, Luzern. Recherche: Dr. Sandra Sykora. Bei der Schuld könnte es sich um die Verbindlichkeit von Hess gegenüber Fischer aus der Zahlung eines Auktionsvorschusses gehande…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/librairie-du-chateau-d-art-e-beyeler
+    acquired: 1947-02-19
+    ended: 1947-02-19
+    method: purchase
+    direct: true
+    place: basel
+    price:
+      amount: 2000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/11/
+        note: "Footnote: Objektkarte Inv.-Nr. 4364, Archiv der Galerie Fischer, wie oben Fussnote 8. Laut ZKG/KHZ Inventarbuch Slg. wurde das Relief bereits am 20. März 1946 vom Kunsthaus Zürich erworben. Dennoch wurde der Eigentumsübertrag von Fischer auf Beyeler erst 1947 abgeschlossen."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1946-03-20
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 2600
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/11/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/11/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/11/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/11/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/11/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/11/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/11/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/11/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

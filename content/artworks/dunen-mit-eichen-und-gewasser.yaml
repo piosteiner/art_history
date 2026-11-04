@@ -1,0 +1,206 @@
+public_id: 115445
+title_lang: de
+title: Dünen mit Eichen und Gewässer
+names:
+  - lang: en
+    role: translation
+    text: Dune Landscape with Oak Trees and Stretch of Water
+  - lang: de
+    role: former
+    text: Dünenlandschaft mit Eichen und Gewässer
+  - lang: de
+    role: former
+    text: Düne mit Weg
+  - lang: en
+    role: former
+    text: Tree overhanging a stream
+creator: jacob-van-ruisdael
+created: c. 1650
+created_span: uncertain
+kind: oil painting
+medium: Oil on oak panel
+dimensions: [25.5, 34.5]
+institution: kunsthaus-zurich
+inventory_number: R 29
+web_url: https://collection.kunsthaus.ch/de/collection/item/3903/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586295
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/22/Jacob_van_Ruisdael_-_D%C3%BCnen_mit_Eichen_und_Gew%C3%A4sser_-_R_29_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jacob_van_Ruisdael_-_D%C3%BCnen_mit_Eichen_und_Gew%C3%A4sser_-_R_29_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jacob van Ruisdael
+provenance:
+  - owner: person/william-courtenay
+    ended: 1816-04-26
+    label: 9th Earl of Devon (*1768, +1835) (Sammler/-in); Devon
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+        note: "Footnote: Slive 2001, S. 436, Nr. 622."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1816-04-26
+    ended: 1816-04-27
+    method: auction
+    direct: true
+    place: london
+    label: Lot 44
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/george-watson-taylor
+    ended: 1823-06-18
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1823-06-13
+    ended: 1823-06-13
+    method: auction
+    direct: true
+    place: london
+    label: Lot 44
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alexander-baring
+    acquired: 1823-06-18
+    ended: 1907-08-21
+    method: purchase
+    direct: true
+    place: london
+    label: 1st Baron Ashburton (*1774, +1848) (Sammler/-in)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    acquired: 1907-08-21
+    ended: 1909-07-21
+    method: purchase
+    direct: true
+    place: london
+    label: Nr. J 1364
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+        note: "Footnote: Wie oben Fussnote 3; E-Mail-Korrespondenz National Gallery Library, Keiller, 28.07.2022: «The picture, listed as Tree overhanging a stream by Ruisdael, was acquired by Agnew’s on the 21st of August 1907 from the Ashburton collection. Agnew’s handled the sale on behalf of four dealers who had jointly acquired many pictures from the Ashburton collection at the same time. The picture was sold on the …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/ferdinand-raphael-bischoffsheim
+    acquired: 1909-07-21
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+        note: "Footnote: ZKG/KHZ Werkdossier; E-Mail-Korrespondenz National Gallery Library, Keiller, 28.07.2022."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/maurice-bischoffsheim
+    method: inheritance
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+        note: "Footnote: Graphéine, «The Noailles 'A Life of philanthropy'», https://www.grapheine.com/en/history-of-graphic-design/the-noailles-philanthropy-design (04.05.2023): «Marie-Laure Bischoffsheim […] was only two years old when her father, Maurice, passed away, leaving her to inherit a considerable family wealth, along with an outstanding collection of paintings belonging to her grandparents.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/marie-laure-henriette-anne-de-noailles
+    method: inheritance
+    direct: true
+    place: paris
+    label: Vicomtesse de Noailles (*1902 Paris, +1970 Paris) (Sammler/-in)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+        note: "Footnote: Wie oben Fussnote 3; Udo Kittelmann, Petra Winter: Systematische Provenienzforschung an der Nationalgalerie, Museum Berggruen (31.10.2018), in: Proveana, https://www.proveana.de/de/link/pro10000247 (03.05.2023), S. 29: «Noailles, Marie-Laure Vicomtesse de (1902–1970). Französische Mäzenin und Sammlerin aus Paris. Sie war eine Nachfahrin des Marquis de Sade und die Tochter des Bankiers Maurice Bisc…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/nathan-katz
+    ended: 1948-05-18
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+        note: "Footnote: ZKG/KHZ Werkdossier, Rechnung der Galerie Katz an Leopold Ruzicka, 23.02.1948 und 18.05.1948."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1948-05-18
+    ended: 1948-12-27
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+        note: "Footnote: ZKG/KHZ Werkdossier, Rechnung, wie oben Fussnote 14; ZKG/KHZ Ruzicka-Akten, Abrechnung Ruzicka-Stiftung 1949, S. 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1948-12-27
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+        note: "Footnote: ZKG/KHZ Ruzicka-Akten, Abrechnung, wie oben Fussnote 15; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 107."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+        note: "Footnote: Wie oben Fussnote 17."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "436.622"
+    label: Slive 2001 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

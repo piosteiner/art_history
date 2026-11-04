@@ -1,0 +1,64 @@
+public_id: 115614
+title_lang: de
+title: Römerkopf
+names:
+  - lang: en
+    role: translation
+    text: Roman Head
+creator: august-boesch
+created: 1899
+kind: sculpture
+medium: Marble
+dimensions: [53, 48, 29]
+institution: kunsthaus-zurich
+inventory_number: 1952/0023
+web_url: https://collection.kunsthaus.ch/de/collection/item/946/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/a-haegler-rutschi
+    ended: 1952
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/946/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 14.11.1952 IV.c, Archiv ZKG/KHZ, 10.30.10.42a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1952
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/946/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/946/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/946/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/946/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/946/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/946/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/946/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/946/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

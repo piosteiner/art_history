@@ -1,0 +1,66 @@
+public_id: 115506
+title_lang: en
+title: Schale mit Äpfeln
+names:
+  - lang: en
+    role: translation
+    text: Bowl with Apples
+creator: cuno-amiet
+created: 1927
+kind: oil painting
+medium: Oil on canvas
+dimensions: [38.2, 46.5]
+institution: kunsthaus-zurich
+inventory_number: 2003/0014
+web_url: https://collection.kunsthaus.ch/de/collection/item/5236/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585559
+provenance:
+  - owner: person/alice-schafer-albrecht
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5236/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 306."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2003
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5236/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "1927.23"
+    label: Müller/Radlach Amiet (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5236/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5236/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5236/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5236/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5236/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5236/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5236/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

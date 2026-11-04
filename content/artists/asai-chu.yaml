@@ -14,6 +14,20 @@ relationships:
       - accessed: 2026-10-13
         property: P19
         wikidata: Q720550
+  - type: worked_in
+    to: place/kyoto
+    period: 1902/1907
+    sources:
+      - note: After his return from France he established himself in Kyoto, at the Kyoto Higher School of Design.
+        source: history-of-japanese-art
+        locator: p. 373
+  - type: visited
+    to: place/grez-sur-loing
+    period: 1900/1902
+    sources:
+      - note: Two years of study in France from 1900, painting prodigiously (Autumn at Grez, 1901); severed his ties with Tokyo yōga circles.
+        source: history-of-japanese-art
+        locator: p. 373
   - type: student_of
     to: artist/antonio-fontanesi
     sources:

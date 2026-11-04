@@ -1,0 +1,67 @@
+public_id: 113453
+title_lang: en
+title: Noboto Bay
+names:
+  - lang: ja
+    role: original
+    text: 登戸浦
+  - Noboto-ura
+  - Noboto-no-ura
+  - Noboto no Ura
+  - Seashore at Nobotoura
+  - lang: en
+    role: original
+    text: Bay of Noboto
+  - lang: fr
+    role: translation
+    text: La baie de Noboto
+  - lang: de
+    role: translation
+    text: Die Noborito Bucht
+  - lang: es
+    role: translation
+    text: Bahía de Noboto
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 登戸浦
+parent: thirty-six-views-of-mount-fuji
+part_number: "33"
+creator: katsushika-hokusai
+created: 1830/1832
+created_label: c. 1830–1832
+created_span: uncertain
+institution: metropolitan-museum-of-art
+inventory_number: JP1337
+web_url: https://www.metmuseum.org/art/collection/search/39655
+wikidata_id: Q18173421
+metadata:
+  sources: [Wikidata Q18173421 (retrieved 2026-11-03)]
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/original/DP141022.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/39655
+    license: Public domain
+    credit: The Metropolitan Museum of Art
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173421
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173421
+  created:
+    - url: https://www.metmuseum.org/art/collection/search/39655
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173421
+  institution:
+    - url: https://www.metmuseum.org/art/collection/search/39655
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.metmuseum.org/art/collection/search/39655
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03

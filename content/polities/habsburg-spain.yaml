@@ -27,6 +27,7 @@ names:
     role: translation
     text: Габсбургская Испания
 period: 1516/1700
+country_codes: [ES, PT, IT, BE, NL, LU]
 wikidata_id: Q600093
 metadata:
   sources: [Wikidata Q600093 (retrieved 2026-10-29)]

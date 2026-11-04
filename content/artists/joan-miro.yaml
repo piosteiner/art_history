@@ -1,0 +1,76 @@
+public_id: 115086
+name: Joan Miró
+given_name: Joan
+family_name: Miró
+birth: 1893-04-20
+death: 1983-12-25
+wikidata_id: Q152384
+metadata:
+  sources: [Wikidata Q152384 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q152384
+  - type: born_in
+    to: place/barcelona
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q152384
+  - type: worked_in
+    to: place/barcelona
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q152384
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q152384
+  - type: influenced_by
+    to: artist/hieronymus-bosch
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q152384
+  - type: member_of
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-11-03
+        property: P463
+        wikidata: Q152384
+  - type: associated_with
+    to: movement/surrealism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q152384
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7e/Joan_Miro_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joan_Miro_(cropped).jpg
+    license: Public domain
+    credit: Carl Van Vechten
+identifiers:
+  bnf: "119162738"
+  gnd: "118582712"
+  idref: "027031748"
+  kulturnav: cee6a6fe-b871-4682-a541-5692302c8746
+  lc: n79038450
+  nlk: KAC201763424
+  rkd: "56373"
+  ulan: "500014094"
+  viaf: "9850739"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q152384
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q152384

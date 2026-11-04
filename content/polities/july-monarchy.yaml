@@ -28,6 +28,7 @@ names:
     role: translation
     text: Июльская монархия
 period: 1830/1848-02-24
+country_codes: [FR]
 wikidata_id: Q58202
 metadata:
   sources: [Wikidata Q58202 (retrieved 2026-10-29)]

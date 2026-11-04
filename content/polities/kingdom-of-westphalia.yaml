@@ -30,6 +30,7 @@ names:
     role: translation
     text: Королевство Вестфалия
 period: 1807/1813
+country_codes: [DE]
 wikidata_id: Q153943
 metadata:
   sources: [Wikidata Q153943 (retrieved 2026-10-29)]

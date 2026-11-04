@@ -1,0 +1,15 @@
+public_id: 113086
+name: Yanhe
+names:
+  - lang: zh
+    role: original
+    text: 延和
+category: calendar
+definition: "Chinese era name (延和) of the Tang for the year 712: 712 is Yanhe 1 (元年), its only year."
+description_md: |-
+  **Yanhe** (延和) is a Chinese era name ([[nianhao]]) of the Tang, proclaimed in 712 under Emperor Ruizong (睿宗). Its years are counted in lunar years: 712 is Yanhe 1 (元年), its only year.
+
+  Before: [[taiji-era|Taiji]]. After: [[xiantian-era|Xiantian]].
+sources:
+  definition:
+    - source: dila-time-authority

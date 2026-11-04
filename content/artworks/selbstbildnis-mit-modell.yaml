@@ -1,0 +1,102 @@
+public_id: 115529
+title_lang: de
+title: Selbstbildnis mit Modell
+names:
+  - lang: en
+    role: translation
+    text: Self-Portrait with Model
+  - lang: fr
+    role: translation
+    text: Autoportrait au modèle
+  - lang: de
+    role: former
+    text: Selbstbildnis mit Rückenakt
+creator: lovis-corinth
+created: 1903
+kind: oil painting
+medium: Oil on canvas
+dimensions: [121, 89]
+institution: kunsthaus-zurich
+inventory_number: 1951/0017
+web_url: https://collection.kunsthaus.ch/de/collection/item/5811/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q118124231
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/72/Lovis_Corinth_-_Selbstbildnis_mit_Modell_-_1951-0017_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Lovis_Corinth_-_Selbstbildnis_mit_Modell_-_1951-0017_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Lovis Corinth
+provenance:
+  - owner: person/georg-theodor-hirzel
+    acquired: 1909 or earlier
+    ended: 1923 or later
+    place: leipzig
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5811/
+        note: "Footnote: Die Jugend 1909 (Bd. I), S. 189, Nr. 9; Kat. Nationalgalerie Berlin 1923, S. 11, Nr. 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/heinrich-hirzel
+    acquired: 1926 or earlier
+    method: inheritance
+    direct: true
+    place: leipzig
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5811/
+        note: "Footnote: Kat. Nationalgalerie Berlin 1926, S. 36, Nr. 97."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Mrs. van der Velde
+    ended: 1951
+    place: netherlands
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5811/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1951
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 6000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5811/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "92.256"
+    label: Berend-Corinth 1992 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5811/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5811/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5811/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5811/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5811/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5811/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5811/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

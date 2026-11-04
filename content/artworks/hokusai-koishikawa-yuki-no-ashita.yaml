@@ -1,0 +1,73 @@
+public_id: 113443
+title_lang: en
+title: Morning after the Snow at Koishikawa in Edo
+names:
+  - lang: ja
+    role: original
+    text: 礫川雪の旦
+  - lang: en
+    role: original
+    text: Morning after a Snowfall at Koishikawa
+  - Koishikawa yuki no ashita
+  - Morning after the Snow at Koishikawa
+  - lang: nl
+    role: translation
+    text: Besneeuwde ochtend in Koishikawa
+  - lang: fr
+    role: translation
+    text: Maison de thé à Koishikawa, le matin après une chute de neige
+  - lang: de
+    role: translation
+    text: Verschneiter Morgen bei Koishikawa
+  - lang: es
+    role: translation
+    text: La mañana después de una nevada en Koishikawa
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 礫川雪の旦
+parent: thirty-six-views-of-mount-fuji
+part_number: "24"
+creator: katsushika-hokusai
+created: 1830/1833
+created_label: c. 1830–1833
+created_span: uncertain
+dimensions: [26.1, 38.7]
+institution: art-institute-of-chicago
+inventory_number: "1925.3262"
+web_url: https://www.artic.edu/artworks/24704
+wikidata_id: Q18173409
+metadata:
+  sources: [Wikidata Q18173409 (retrieved 2026-11-03)]
+images:
+  - url: https://www.artic.edu/iiif/2/a7bba48d-f214-feac-c857-bf434a7d90fb/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/24704
+    license: Public domain
+    credit: Art Institute of Chicago, Clarence Buckingham Collection
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173409
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173409
+  created:
+    - url: https://www.artic.edu/artworks/24704
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173409
+  dimensions:
+    - accessed: 2026-11-03
+      property: P2048
+      wikidata: Q18173409
+  institution:
+    - url: https://www.artic.edu/artworks/24704
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.artic.edu/artworks/24704
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03

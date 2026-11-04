@@ -1,0 +1,38 @@
+public_id: 115141
+name: Jan Provost
+given_name: Jan
+family_name: Provost
+birth: c. 1465
+death: 1529-01
+wikidata_id: Q672255
+metadata:
+  sources: [Wikidata Q672255 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/southern-netherlands
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q672255
+  - type: died_in
+    to: place/bruges
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q672255
+identifiers:
+  gnd: 12231297X
+  idref: "123709210"
+  lc: no95045884
+  rkd: "64993"
+  ulan: "500022669"
+  viaf: "8041149108498568780003"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q672255
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q672255

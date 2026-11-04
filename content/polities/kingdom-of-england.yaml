@@ -30,6 +30,7 @@ names:
     role: translation
     text: Королевство Англия
 period: 927/1707-05-11
+country_codes: [GB]
 wikidata_id: Q179876
 metadata:
   sources: [Wikidata Q179876 (retrieved 2026-10-29)]

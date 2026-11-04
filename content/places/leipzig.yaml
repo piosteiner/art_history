@@ -1,0 +1,38 @@
+public_id: 115531
+name: Leipzig
+names:
+  - lang: ja
+    role: translation
+    text: ライプツィヒ
+  - lang: zh
+    role: translation
+    text: 莱比锡
+  - lang: ko
+    role: translation
+    text: 라이프치히
+  - lang: it
+    role: translation
+    text: Lipsia
+  - lang: ru
+    role: translation
+    text: Лейпциг
+kind: settlement
+parent: sachsen
+country_code: DE
+location: [12.37473, 51.34063]
+wikidata_id: Q2079
+metadata:
+  sources: [Wikidata Q2079 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q2079
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q2079
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q2079

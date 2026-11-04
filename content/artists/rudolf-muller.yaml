@@ -1,0 +1,48 @@
+public_id: 115541
+name: Rudolf Müller
+given_name: Rudolf
+family_name: Müller
+birth: 1802-06-24
+death: 1885-02-22
+wikidata_id: Q2173493
+metadata:
+  sources: [Wikidata Q2173493 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q2173493
+  - type: born_in
+    to: place/basel
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q2173493
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q2173493
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2d/Grave_of_Rudolf_Mueller_at_Cimitero_acattolico_Rome_%28portrait_cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Grave_of_Rudolf_Mueller_at_Cimitero_acattolico_Rome_(portrait_cropped).jpg
+    license: CC BY 3.0
+    credit: Picture taken by Marcus Cyron
+identifiers:
+  gnd: "124154301"
+  rkd: "58401"
+  sikart: "4031832"
+  ulan: "500021526"
+  viaf: "45228002"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q2173493
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q2173493

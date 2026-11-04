@@ -1,0 +1,38 @@
+public_id: 115191
+name: Jacobus Sibrandi Mancadan
+given_name: Jacobus Sibrandi
+family_name: Mancadan
+birth: 1602
+death: 1680-10-04
+wikidata_id: Q576009
+metadata:
+  sources: [Wikidata Q576009 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q576009
+  - type: associated_with
+    to: movement/dutch-golden-age-painting
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q576009
+identifiers:
+  gnd: "124409547"
+  idref: "260788880"
+  kulturnav: d5f04025-9bb1-4df0-9267-14dfec11e83a
+  rkd: "52236"
+  ulan: "500000294"
+  viaf: "67398457"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q576009
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q576009

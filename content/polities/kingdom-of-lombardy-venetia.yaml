@@ -30,6 +30,7 @@ names:
     role: translation
     text: Ломбардо-Венецианское королевство
 period: 1815-04-07/1866-08-23
+country_codes: [IT]
 wikidata_id: Q209857
 metadata:
   sources: [Wikidata Q209857 (retrieved 2026-10-29)]

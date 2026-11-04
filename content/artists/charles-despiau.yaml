@@ -1,0 +1,65 @@
+public_id: 115479
+name: Charles Despiau
+given_name: Charles
+family_name: Despiau
+birth: 1874-11-04
+death: 1946-10-28
+wikidata_id: Q82291
+metadata:
+  sources: [Wikidata Q82291 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q82291
+  - type: worked_in
+    to: place/paris
+    period: 1892/1946
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q82291
+  - type: student_of
+    to: artist/auguste-rodin
+    sources:
+      - accessed: 2026-11-03
+        property: P1066
+        wikidata: Q82291
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q82291
+  - type: studied_at
+    to: institution/ecole-nationale-superieure-des-arts-decoratifs
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q82291
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8b/Charles_Despiau_%281874%E2%80%931946%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Charles_Despiau_(1874%E2%80%931946).jpg
+    license: CC BY-SA 4.0
+    credit: Unknown author
+identifiers:
+  bnf: 11958537j
+  dome: "86"
+  gnd: "120846926"
+  idref: "027574385"
+  kulturnav: f7dc8981-7841-4d4f-9e03-8fc8b19a9241
+  lc: n50001634
+  rkd: "22222"
+  ulan: "500115511"
+  viaf: "4938656"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q82291
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q82291

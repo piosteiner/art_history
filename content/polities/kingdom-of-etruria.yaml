@@ -29,6 +29,7 @@ names:
     role: translation
     text: Королевство Этрурия
 period: 1801-03-21/1807-12-10
+country_codes: [IT]
 wikidata_id: Q223793
 metadata:
   sources: [Wikidata Q223793 (retrieved 2026-10-29)]

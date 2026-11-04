@@ -1,0 +1,62 @@
+public_id: 115409
+name: Jan Verkolje
+given_name: Jan
+family_name: Verkolje
+birth: 1650-02-09
+death: 1693
+wikidata_id: Q120609
+metadata:
+  sources: [Wikidata Q120609 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q120609
+  - type: born_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q120609
+  - type: died_in
+    to: place/delft
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q120609
+  - type: worked_in
+    to: place/delft
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q120609
+  - type: worked_in
+    to: place/amsterdam
+    period: 1672–1672
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q120609
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Jan_Verkolje_-_Self_portrait.jpg/1280px-Jan_Verkolje_-_Self_portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jan_Verkolje_-_Self_portrait.jpg
+    license: Public domain
+    credit: Jan Verkolje
+identifiers:
+  gnd: "138807515"
+  kulturnav: 408473f0-fcf2-4157-bf9d-2baa810d4851
+  lc: no2015136300
+  rkd: "80426"
+  ulan: "500027617"
+  viaf: "95431515"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q120609
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q120609

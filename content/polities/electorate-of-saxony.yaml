@@ -34,6 +34,7 @@ names:
     role: translation
     text: курфюршество Саксония
 period: 1356/1806-12-19
+country_codes: [DE]
 wikidata_id: Q156199
 metadata:
   sources: [Wikidata Q156199 (retrieved 2026-10-29)]

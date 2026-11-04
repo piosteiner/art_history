@@ -1,0 +1,123 @@
+public_id: 115593
+title_lang: en
+title: L'Éboulement (après l'orage)
+names:
+  - lang: en
+    role: translation
+    text: Bergsturz (Nach dem Sturm)
+  - lang: en
+    role: translation
+    text: Rockslide (After the Storm)
+  - lang: en
+    role: original
+    text: L'éboulement
+creator: alexandre-calame
+created: 1841
+kind: oil painting
+medium: Oil on canvas
+dimensions: [118.5, 177.5]
+institution: kunsthaus-zurich
+inventory_number: 2015/0019
+web_url: https://collection.kunsthaus.ch/de/collection/item/7991/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586278
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/34/Alexandre_Calame_-_L%27%C3%89boulement_%28apr%C3%A8s_l%27orage%29_-_2015-0019_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Alexandre_Calame_-_L%27%C3%89boulement_(apr%C3%A8s_l%27orage)_-_2015-0019_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Alexandre Calame
+provenance:
+  - owner_label: M. Stouvenel
+    acquired: 1841
+    direct: true
+    place: geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7991/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1954-11-16
+    ended: 1954-11-20
+    method: auction
+    place: lucerne
+    label: Lot 1923; Tafel 26
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7991/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: private collection
+    acquired: 1954-11-20
+    ended: 2015-12-04
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7991/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    acquired: 1972
+    ended: 1972
+    direct: true
+    place: switzerland
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7991/
+        note: "Footnote: Anker 1987, S. 353, Nr. 185."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/koller-auktionen
+    role: agent
+    acquired: 2015-12-04
+    ended: 2015-12-04
+    method: auction
+    direct: true
+    place: zurich
+    label: Lot 3030
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7991/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2015-12-04
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7991/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "353.185"
+    label: Anker 1987 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

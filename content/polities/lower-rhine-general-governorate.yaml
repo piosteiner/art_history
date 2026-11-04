@@ -8,6 +8,7 @@ names:
     role: translation
     text: Генерал-губернаторство Нижний Рейн
 period: 1814–1814
+country_codes: [DE]
 wikidata_id: Q1501805
 metadata:
   sources: [Wikidata Q1501805 (retrieved 2026-10-29)]

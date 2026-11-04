@@ -1,0 +1,76 @@
+public_id: 115504
+title_lang: en
+title: Apollon, masque
+names:
+  - lang: en
+    role: translation
+    text: Tête d'Apollon (Jianou/Dufet 1965); Apollon, Masque sans cou (Jianou/Dufet 1975)
+  - lang: en
+    role: translation
+    text: Apollo, Maske
+  - lang: en
+    role: translation
+    text: Apollo, Mask
+  - lang: en
+    role: original
+    text: Apollon (Masque)
+creator: antoine-bourdelle
+created: 1900
+kind: sculpture
+medium: Bronze
+dimensions: [35, 20, 28]
+institution: kunsthaus-zurich
+inventory_number: 1949/0019
+web_url: https://collection.kunsthaus.ch/de/collection/item/5179/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/eugene-rudier
+    acquired: June 1947 or earlier
+    ended: 1949
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5179/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.: Die Bronze wurde zusammen mit 3 Werken von Auguste Rodin (1949/0020, 1949/0021 und 1949/0022) mit einem Beitrag der Stadt Zürich für das Kunsthaus Zürich erworben; Kat. Kunsthaus Zürich 1947, o. S., Nr. 332, https://digital.kunsthaus.ch/viewer/image/44370/5/ (21.02.2025)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1949
+    method: purchase
+    direct: true
+    place: zurich
+    label: mit einem Beitrag der Stadt Zürich aus der Kunsthaus-Ausstellung «Metallgüsse aus der Werkstatt von Eugène Rudier Paris»; Juni–August 1947; Nr. 332
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5179/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.: zusammen mit 3 Werken von Auguste Rodin (1949/0020, 1949/0021 und 1949/0022) für 16'000'000 frz. Fr. erworben; Sitzungsprotokoll des Vorstands, 02.12.1949, S. 5-6, Archiv ZKG/KHZ, 10.30.10.13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5179/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5179/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5179/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5179/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5179/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5179/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5179/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

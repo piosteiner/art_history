@@ -1,0 +1,73 @@
+public_id: 115042
+title_lang: en
+title: Concrétion humaine
+names:
+  - lang: en
+    role: translation
+    text: Menschliche Konkretion
+  - lang: en
+    role: translation
+    text: Human Concretion
+creator: hans-arp
+created: 1933
+kind: sculpture
+medium: French limestone
+dimensions: [56, 81, 54.5]
+institution: kunsthaus-zurich
+inventory_number: "2377"
+web_url: https://collection.kunsthaus.ch/de/collection/item/179/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/emil-friedrich
+    acquired: 1935
+    ended: 1935
+    method: purchase
+    direct: true
+    label: bought from the exhibition at the Kunsthaus Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1935
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission Archiv 10.30.10.41-42, 02.11.1934, I; 25.01.1935, I.c."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "022"
+    label: Giedion-Welcker (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

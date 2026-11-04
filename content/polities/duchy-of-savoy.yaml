@@ -30,6 +30,7 @@ names:
     role: translation
     text: Савойское герцогство
 period: 1416/1860-04-23
+country_codes: [FR, IT, CH]
 wikidata_id: Q426025
 metadata:
   sources: [Wikidata Q426025 (retrieved 2026-10-29)]

@@ -1,0 +1,18 @@
+public_id: 113288
+name: Bongsang of Goguryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 봉상왕
+  - lang: ko-Hani
+    role: alternative
+    text: 烽上王
+category: calendar
+definition: "The reign years of King Bongsang of Goguryeo (烽上王, 봉상왕), by which Korean histories date 292–300: 292 is Bongsang 1, 300 Bongsang 9."
+description_md: |-
+  **Bongsang** (烽上王, 봉상왕): the years of the reign of King Bongsang of Goguryeo. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 300 is Bongsang 9 (봉상왕 9년). The year of the accession, 292, counts as the first year.
+
+  Before: [[seocheon-goguryeo-reign-years|Seocheon]]. After: [[micheon-goguryeo-reign-years|Micheon]].
+sources:
+  definition:
+    - source: dila-time-authority

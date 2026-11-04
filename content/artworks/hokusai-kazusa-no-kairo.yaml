@@ -1,0 +1,76 @@
+public_id: 113450
+title_lang: en
+title: At Sea off Kazusa
+names:
+  - lang: ja
+    role: original
+    text: 上総の海路
+  - lang: en
+    role: original
+    text: Sea Lane off Kazusa Province
+  - lang: en
+    role: original
+    text: The Kazusa Sea Route, from "The Thirty-six Views of Mt. Fuji"°
+  - Kazusa no kairo
+  - Sea of Kazusa Province
+  - lang: en
+    role: original
+    text: The Kazusa sea route
+  - lang: fr
+    role: translation
+    text: La route maritime de la province de Kazusa
+  - lang: de
+    role: translation
+    text: Auf See vor Kazusa
+  - lang: es
+    role: translation
+    text: La ruta marítima de la provincia de Kazusa
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 上総の海路
+parent: thirty-six-views-of-mount-fuji
+part_number: "30"
+creator: katsushika-hokusai
+created: 1830/1832
+created_label: c. 1830–1832
+created_span: uncertain
+dimensions: [24.77, 36.2]
+institution: metropolitan-museum-of-art
+inventory_number: JP2963
+web_url: https://www.metmuseum.org/art/collection/search/56238
+wikidata_id: Q18173418
+metadata:
+  sources: [Wikidata Q18173418 (retrieved 2026-11-03)]
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/original/DP141056.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/56238
+    license: Public domain
+    credit: The Metropolitan Museum of Art
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173418
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173418
+  created:
+    - url: https://www.metmuseum.org/art/collection/search/56238
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173418
+  dimensions:
+    - accessed: 2026-11-03
+      property: P2048
+      wikidata: Q18173418
+  institution:
+    - url: https://www.metmuseum.org/art/collection/search/56238
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.metmuseum.org/art/collection/search/56238
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03

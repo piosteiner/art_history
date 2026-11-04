@@ -32,6 +32,7 @@ names:
     role: translation
     text: Первая Французская республика
 period: 1792-09-21/1804-05-18
+country_codes: [FR, BE]
 wikidata_id: Q58296
 metadata:
   sources: [Wikidata Q58296 (retrieved 2026-10-29)]

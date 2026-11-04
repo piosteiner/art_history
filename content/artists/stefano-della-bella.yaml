@@ -1,0 +1,57 @@
+public_id: 115620
+name: Stefano della Bella
+given_name: Stefano
+family_name: della Bella
+birth: 1610-05-18
+death: 1664-07-12
+wikidata_id: Q921242
+metadata:
+  sources: [Wikidata Q921242 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/grand-duchy-of-tuscany
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q921242
+  - type: born_in
+    to: place/florence
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q921242
+  - type: died_in
+    to: place/florence
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q921242
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q921242
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2f/Dolci_Stefano_Della_Bella.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dolci_Stefano_Della_Bella.jpg
+    license: Public domain
+    credit: Carlo Dolci
+identifiers:
+  bnf: "125498909"
+  gnd: "119078244"
+  idref: "068525265"
+  kulturnav: c8a4bde2-2479-4079-a000-baf11908f7b8
+  lc: n79018351
+  rkd: "6188"
+  ulan: "500018966"
+  viaf: "7502835"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q921242
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q921242

@@ -1,6 +1,7 @@
 public_id: 100839
 name: German Empire
 period: 1 January 1871 – 9 November 1918
+country_codes: [DE, PL, FR, RU, LT]
 wikidata_id: Q43287
 metadata:
   sources: [Wikidata Q43287 (retrieved 2026-10-18)]

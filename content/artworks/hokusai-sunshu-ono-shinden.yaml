@@ -1,0 +1,61 @@
+public_id: 113463
+title_lang: en
+title: The New Fields at Ōno in Suruga Province
+names:
+  - lang: ja
+    role: original
+    text: 駿州大野新田
+  - Sunshū Ōno-shinden
+  - lang: en
+    role: original
+    text: Ōno Shinden in Suruga Province
+  - lang: fr
+    role: translation
+    text: Ono Shinden dans la province de Suruga
+  - lang: es
+    role: translation
+    text: Ōno Shinden en la provincia de Suruga
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 駿州大野新田
+parent: thirty-six-views-of-mount-fuji
+part_number: "43"
+creator: katsushika-hokusai
+created: 1830/1833
+created_label: c. 1830–1833
+created_span: uncertain
+institution: art-institute-of-chicago
+inventory_number: "1925.3286"
+web_url: https://www.artic.edu/artworks/87017
+wikidata_id: Q18173434
+metadata:
+  sources: [Wikidata Q18173434 (retrieved 2026-11-03)]
+images:
+  - url: https://www.artic.edu/iiif/2/aa20c0d1-4651-7fc2-3627-a6e3324bc99d/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/87017
+    license: Public domain
+    credit: Art Institute of Chicago, Clarence Buckingham Collection
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173434
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173434
+  created:
+    - url: https://www.artic.edu/artworks/87017
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173434
+  institution:
+    - url: https://www.artic.edu/artworks/87017
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.artic.edu/artworks/87017
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03

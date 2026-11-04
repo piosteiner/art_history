@@ -1,0 +1,54 @@
+public_id: 115514
+name: Maurice Barraud
+given_name: Maurice
+family_name: Barraud
+birth: 1889-02-20
+death: 1954-11-11
+wikidata_id: Q3300357
+metadata:
+  sources: [Wikidata Q3300357 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q3300357
+  - type: born_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q3300357
+  - type: died_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q3300357
+  - type: worked_in
+    to: place/geneva
+    period: 1904/1954
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q3300357
+identifiers:
+  bnf: 14968903z
+  gnd: "131918702"
+  hls: "021978"
+  idref: "071085807"
+  lc: no98119013
+  rkd: "4623"
+  sikart: "4000020"
+  ulan: "500006110"
+  viaf: "23285023"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q3300357
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q3300357

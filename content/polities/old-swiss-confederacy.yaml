@@ -31,6 +31,7 @@ names:
     role: translation
     text: Швейцарский союз
 period: 1291-08/1798-03-05
+country_codes: [CH]
 wikidata_id: Q435583
 metadata:
   sources: [Wikidata Q435583 (retrieved 2026-10-29)]

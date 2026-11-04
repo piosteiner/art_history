@@ -1,0 +1,90 @@
+public_id: 115150
+title_lang: en
+title: Petite Vénus debout
+names:
+  - lang: en
+    role: translation
+    text: Kleine stehende Venus
+  - lang: en
+    role: translation
+    text: Small Standing Venus
+creator: pierre-auguste-renoir
+created: 1913
+kind: sculpture
+medium: Bronze
+dimensions: [60.3, 32, 21]
+institution: kunsthaus-zurich
+inventory_number: 1968/0057
+web_url: https://collection.kunsthaus.ch/de/collection/item/2537/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2537/
+        note: "Footnote: Kunsthaus Zürich 1970 (Sammlungskatalog), S. 99-103: «Dank der Vermittlung des Kunsthändlers Ambroise Vollard machte Renoir 1913 die Bekanntschaft mit dem damals 23jährigen spanischen Bildhauer Richard Guino. […] Als erstes Werk, das aus der Zusammenarbeit Renoir-Guino hervorgegangen ist, entstand im Sommer 1913 im Atelier in Essoyes Petite Venus debout. […] Nicht ganz geklärt ist auch die Frage, …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alfred-flechtheim
+    direct: true
+    place: berlin
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2537/
+        note: "Footnote: Wie oben Fussnote 2; Kat. Flechtheim 1927, S. 26: «Die Bronzen werden von den Galerien Hodebert (Barbazanges) in Paris und Flechtheim ausgegeben. Sie sind numeriert [sic] und zeigen die Höhe der Auflage und tragen die Signatur Renoirs. Sie werden bei Valsuani in Paris unter Aufsicht von Charles Despiau gegossen.» Es konnten bis auf den Ausstellungskatalog Baumann/Hnikova 1970 bisher keine weiteren…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/werner-bar
+    co_owners: [person/nelly-bar]
+    acquired: 1933
+    ended: 1968
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2537/
+        note: "Footnote: Werner und Nelly Bär 1965 (Sammlungskatalog), S. 257; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 147."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1968
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2537/
+        note: "Footnote: ZKG/KHZ, Werkdossier; Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2537/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2537/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2537/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2537/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2537/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2537/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2537/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

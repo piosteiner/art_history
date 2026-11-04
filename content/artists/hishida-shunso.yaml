@@ -36,6 +36,27 @@ relationships:
       - accessed: 2026-11-02
         property: P937
         wikidata: Q2113595
+  - type: visited
+    to: place/india
+    period: 1903
+    sources:
+      - note: Travelled to India with Yokoyama Taikan in 1903.
+        source: history-of-japanese-art
+        locator: pp. 364–365
+  - type: visited
+    to: place/europe
+    period: 1904
+    sources:
+      - note: Visited Europe and the United States with Yokoyama Taikan the year after India.
+        source: history-of-japanese-art
+        locator: p. 365
+  - type: visited
+    to: place/united-states
+    period: 1904
+    sources:
+      - note: Visited Europe and the United States with Yokoyama Taikan the year after India.
+        source: history-of-japanese-art
+        locator: p. 365
   - type: student_of
     to: artist/hashimoto-gaho
     sources:

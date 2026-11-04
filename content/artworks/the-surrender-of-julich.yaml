@@ -1,0 +1,63 @@
+public_id: 113402
+title_lang: es
+title: Rendición de Juliers
+names:
+  - lang: en
+    role: original
+    text: The rendition of Jülich on 3rd February 1622
+  - pintura
+  - lang: en
+    role: original
+    text: The Surrender of Jülich
+  - lang: fr
+    role: translation
+    text: La Reddition de Juliers
+  - lang: nl
+    role: translation
+    text: De overgave van Jülich op 3 februari 1622
+parent: battle-series
+creator: jusepe-leonardo
+created: 1634/1635
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [307, 381]
+institution: museo-del-prado
+inventory_number: P000858
+web_url: https://www.museodelprado.es/en/the-collection/art-work/the-surrender-of-julich/2db742c5-e3c7-41e0-a6ff-25bd14c9f521
+wikidata_id: Q27700875
+metadata:
+  sources: [Wikidata Q27700875 (retrieved 2026-11-03)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/La_rendici%C3%B3n_de_Juliers.jpg/1280px-La_rendici%C3%B3n_de_Juliers.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:La_rendici%C3%B3n_de_Juliers.jpg
+    license: Public domain
+    credit: Jusepe Leonardo
+sources:
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q27700875
+  created:
+    - url: https://www.museodelprado.es/en/the-collection/art-work/the-surrender-of-julich/2db742c5-e3c7-41e0-a6ff-25bd14c9f521
+      source: museo-del-prado-coleccion
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q27700875
+  materials:
+    - accessed: 2026-11-03
+      property: P186
+      wikidata: Q27700875
+  dimensions:
+    - accessed: 2026-11-03
+      property: P2048
+      wikidata: Q27700875
+  institution:
+    - accessed: 2026-11-03
+      property: P195
+      wikidata: Q27700875
+  inventory_number:
+    - accessed: 2026-11-03
+      property: P217
+      wikidata: Q27700875

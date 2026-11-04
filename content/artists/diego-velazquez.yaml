@@ -35,12 +35,6 @@ relationships:
       - url: https://data.bnf.fr/ark:/12148/cb11935168k
         source: bnf
         accessed: 2026-10-28
-  - type: born_in
-    to: place/trouville-sur-mer
-    sources:
-      - accessed: 2026-10-28
-        property: P19
-        wikidata: Q297
   - type: died_in
     to: place/madrid
     sources:

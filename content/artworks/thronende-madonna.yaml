@@ -1,0 +1,81 @@
+public_id: 115299
+title_lang: en
+title: Thronende Madonna
+names:
+  - lang: en
+    role: translation
+    text: Enthroned Madonna
+  - lang: en
+    role: translation
+    text: Vierge trônant
+attribution_label: Anonymous, Auvergne
+created: c. 1200
+created_span: uncertain
+kind: sculpture
+medium: Hardwood with polychromy
+dimensions: [73.5, 26.5, 23.5]
+institution: kunsthaus-zurich
+inventory_number: 1948/0010
+web_url: https://collection.kunsthaus.ch/de/collection/item/3141/
+on_loan: true
+on_loan_since: 1948
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/joseph-altounian-lorbet
+    role: dealer
+    acquired: 1939 or earlier
+    ended: 1948-05-14
+    place: macon
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3141/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg. und ZKG/KHZ, Inventarbogen/Werkdossier sowie Korrespondenz mit der Direktion, 25.07.1947, Archiv ZKG/KHZ, 10.30.30.700."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1948-05-14
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 3900
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3141/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3141/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3141/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3141/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3141/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3141/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3141/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3141/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3141/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -27,6 +27,7 @@ names:
     role: translation
     text: Мекленбург-Стрелиц
 period: 1815-06-28/1918-02-23
+country_codes: [DE]
 wikidata_id: Q161215
 metadata:
   sources: [Wikidata Q161215 (retrieved 2026-10-29)]

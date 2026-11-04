@@ -1,0 +1,98 @@
+public_id: 115013
+title_lang: en
+title: Familie Leroy im Atelier
+names:
+  - lang: de
+    role: translation
+    text: Bildnis des Bildhauers Leroy
+  - lang: en
+    role: translation
+    text: Familie Leroy im Atelier, Unterengstringen
+  - lang: en
+    role: translation
+    text: The Leroy Family in the Studio
+creator: max-gubler
+created: 1939
+kind: oil painting
+medium: Oil on canvas
+dimensions: [55, 46]
+institution: kunsthaus-zurich
+inventory_number: 1952/0003
+web_url: https://collection.kunsthaus.ch/de/collection/item/1585/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586350
+provenance:
+  - owner: institution/galerie-max-g-bollag
+    role: agent
+    acquired: 1951-03-15
+    ended: 1951-03-16
+    method: auction
+    label: Kongresshaus Zürich; Lot 101
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1585/
+        note: "Footnote: Frauenfelder/Hess u. a. 1997, Bd. II, S. 69, S. 296, Nr. 607; Auktion Bollag (15.-16.03.1951), S. 7, Lot 101: hier als «Atelier»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/max-g-bollag
+    role: agent
+    acquired: 1952-03-20
+    ended: 1952-03-21
+    method: auction
+    label: Kongresshaus Zürich; Lot 169
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1585/
+        note: "Footnote: Kunsthaus Zürich (Sammlungskatalog) 2007, S. 452; Auktion Bollag (20.-21.03.1952), S. 12, Lot 169: hier als «Bildnis des Bildhauers Leroy»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hans-mayenfisch
+    acquired: 1952-03-21
+    ended: 1952
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1585/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; Kunsthaus Zürich (Sammlungskatalog) 2007, S. 452."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1952
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1585/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: III.607
+    label: Frauenfelder (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1585/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1585/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1585/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1585/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1585/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1585/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1585/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

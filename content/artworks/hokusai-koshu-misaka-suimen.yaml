@@ -1,0 +1,61 @@
+public_id: 113455
+title_lang: en
+title: Reflection in Lake at Misaka in Kai Province
+names:
+  - lang: ja
+    role: original
+    text: 甲州三坂水面
+  - lang: en
+    role: original
+    text: Surface of the Water, Misaka, Kai Province
+  - Kōshū Misaka suimen
+  - lang: fr
+    role: translation
+    text: Reflet du mont Fuji dans le lac Kawaguchi, vu depuis le col Misaka dans la province de Kai
+  - lang: es
+    role: translation
+    text: Reflejo en el lago de Misaka en la provincia de Kai
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 甲州三坂水面
+parent: thirty-six-views-of-mount-fuji
+part_number: "35"
+creator: katsushika-hokusai
+created: 1830/1832
+created_label: c. 1830–1832
+created_span: uncertain
+institution: metropolitan-museum-of-art
+inventory_number: JP2969
+web_url: https://www.metmuseum.org/art/collection/search/54868
+wikidata_id: Q18173425
+metadata:
+  sources: [Wikidata Q18173425 (retrieved 2026-11-03)]
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/original/DP141064.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/54868
+    license: Public domain
+    credit: The Metropolitan Museum of Art
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173425
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173425
+  created:
+    - url: https://www.metmuseum.org/art/collection/search/54868
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173425
+  institution:
+    - url: https://www.metmuseum.org/art/collection/search/54868
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.metmuseum.org/art/collection/search/54868
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03

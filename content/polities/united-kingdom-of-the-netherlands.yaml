@@ -29,6 +29,7 @@ names:
     role: translation
     text: Объединённое королевство Нидерланды
 period: 1815/1839-04-19
+country_codes: [NL, BE, LU]
 wikidata_id: Q15864
 metadata:
   sources: [Wikidata Q15864 (retrieved 2026-10-29)]

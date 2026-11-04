@@ -1,0 +1,69 @@
+public_id: 115524
+title_lang: de
+title: Im Wirtshaus
+names:
+  - lang: en
+    role: translation
+    text: At the Inn
+  - lang: fr
+    role: translation
+    text: Au bistro
+creator: adolf-dietrich
+created: 1924
+kind: oil painting
+medium: Oil on cardboard
+dimensions: [49, 46.5]
+institution: kunsthaus-zurich
+inventory_number: 1959/0006
+web_url: https://collection.kunsthaus.ch/de/collection/item/576/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584962
+provenance:
+  - owner: person/max-haller
+    ended: 1959
+    method: purchase
+    place: bregenz
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/576/
+        note: "Footnote: Dokumente zu den Vorarbeiten zum Werkverzeichnis Dietrichs von 1994, Nr. 24.05, Heinrich Ammann Nachlass, Archiv des Kunstmuseum Thurgau.; ZKG/KHZ Inventarbuch Slg.; Sitzungsprotokoll der Sammlungskommission, 16.06.1959 VI., 21.07.1959 2., Archiv ZKG/KHZ, 10.30.10.42.1948."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1959
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/576/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/576/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/576/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/576/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/576/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/576/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/576/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/576/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

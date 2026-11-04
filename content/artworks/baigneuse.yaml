@@ -1,0 +1,113 @@
+public_id: 115023
+title_lang: en
+title: Baigneuse
+names:
+  - lang: en
+    role: translation
+    text: Badende
+  - lang: en
+    role: translation
+    text: Bather
+creator: aristide-maillol
+created: after 1925
+kind: drawing
+medium: Red chalk on paper
+dimensions: [30.5, 17.7]
+institution: kunsthaus-zurich
+inventory_number: Z.1968/0005
+web_url: https://collection.kunsthaus.ch/de/collection/item/16857/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/p-schmitz
+    ended: 1932-09-22
+    place: bremen
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/16857/
+        note: "Footnote: Auktion Max Perl, Mai 1932, S. 63, Lot. 961 (mit * markiert: aus der Sammlung P. Schmitz, vgl. S. 3); Auktion Max Perl, Sept. 1932, S. 59, Lot. 992: «Weiblicher Halbakt. Rötelzeichnung. 32:19 cm. Monogrammiert. (25.-)», wurde 21.9.1932-22.9.1932 im Auktionshaus Max Perl versteigert; in beiden Fällen ist die Werkidentität nicht geklärt, u. a. da im Auktionskatalog keine Abbildungen vorhanden sind."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/max-perl
+    role: agent
+    acquired: 1932-05-25
+    ended: 1932-09-22
+    method: auction
+    direct: true
+    place: berlin
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/16857/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-schulthess
+    role: dealer
+    ended: 1935
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/16857/
+        note: "Footnote: Baumann/Hnikova 1970, S. 58-60."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/werner-bar
+    co_owners: [person/nelly-bar]
+    acquired: 1935
+    ended: 1960
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/16857/
+        note: "Footnote: George 1964, S. 237, Nr. 16."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/nelly-bar
+    acquired: 1960
+    ended: 1968
+    direct: true
+    place: zurich
+    label: Zürich, Erbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/16857/
+        note: "Footnote: ZKG/KHZ, Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1968
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/16857/
+        note: "Footnote: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16857/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16857/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16857/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16857/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16857/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16857/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16857/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,22 @@
+public_id: 115258
+name: Baindt
+kind: settlement
+parent: baden-wurttemberg
+country_code: DE
+location: [9.66194, 47.84139]
+wikidata_id: Q527565
+metadata:
+  sources: [Wikidata Q527565 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q527565
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q527565
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q527565

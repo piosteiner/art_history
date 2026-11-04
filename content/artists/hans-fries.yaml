@@ -1,0 +1,46 @@
+public_id: 114975
+name: Hans Fries
+given_name: Hans
+family_name: Fries
+birth: c. 1465
+death: c. 1520
+wikidata_id: Q115997
+metadata:
+  sources: [Wikidata Q115997 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q115997
+  - type: died_in
+    to: place/bern
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q115997
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Hans_Fries_002.jpg/1280px-Hans_Fries_002.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_Fries_002.jpg
+    license: Public domain
+    credit: Hans Fries
+identifiers:
+  bnf: 14974250s
+  gnd: "118693638"
+  hls: "018291"
+  idref: "067242111"
+  lc: nr93051313
+  rkd: "29519"
+  sikart: "4022832"
+  ulan: "500005756"
+  viaf: "45096689"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q115997
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q115997

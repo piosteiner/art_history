@@ -1,0 +1,43 @@
+public_id: 115317
+name: Eduard Zimmermann
+given_name: Eduard
+family_name: Zimmermann
+birth: 1872-08-02
+death: 1949-12-07
+wikidata_id: Q27229252
+metadata:
+  sources: [Wikidata Q27229252 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q27229252
+  - type: died_in
+    to: place/zollikon
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q27229252
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/57/Eduard_Zimmermann.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Eduard_Zimmermann.jpg
+    license: CC BY-SA 4.0
+    credit: EinDao
+identifiers:
+  dome: "669"
+  gnd: "1038591287"
+  rkd: "430725"
+  sikart: "4023842"
+  ulan: "500427653"
+  viaf: "305151469"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q27229252
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q27229252

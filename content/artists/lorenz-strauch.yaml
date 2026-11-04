@@ -1,0 +1,50 @@
+public_id: 115427
+name: Lorenz Strauch
+given_name: Lorenz
+family_name: Strauch
+birth: 1554
+death: 1630
+wikidata_id: Q22341217
+metadata:
+  sources: [Wikidata Q22341217 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q22341217
+  - type: born_in
+    to: place/nuremberg
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q22341217
+  - type: died_in
+    to: place/nuremberg
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q22341217
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/1614_Strauch_Selbstbildnis_im_Alter_von_60_Jahren_anagoria.JPG/1280px-1614_Strauch_Selbstbildnis_im_Alter_von_60_Jahren_anagoria.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:1614_Strauch_Selbstbildnis_im_Alter_von_60_Jahren_anagoria.JPG
+    license: Public domain
+    credit: Lorenz Strauch
+identifiers:
+  gnd: "122837606"
+  idref: "170527174"
+  kulturnav: 38412a3b-8ec2-4070-be60-986f8be3399f
+  lc: nr2004023889
+  rkd: "75662"
+  ulan: "500326547"
+  viaf: "74744743"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q22341217
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q22341217

@@ -1,0 +1,47 @@
+public_id: 115493
+name: Conrad Gessner
+given_name: Conrad
+family_name: Gessner
+birth: 1764-10-02
+death: 1826-05-08
+wikidata_id: Q55191839
+metadata:
+  sources: [Wikidata Q55191839 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q55191839
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q55191839
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q55191839
+identifiers:
+  bnf: 14974676k
+  gnd: "116595671"
+  hls: "022317"
+  kulturnav: e324c27a-206e-43a2-af43-3b0ac3d8d052
+  lc: nr2003025256
+  rkd: "31212"
+  sikart: "4022903"
+  ulan: "500001070"
+  viaf: "66739883"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q55191839
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q55191839

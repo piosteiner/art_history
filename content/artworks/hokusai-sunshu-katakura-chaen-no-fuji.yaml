@@ -1,0 +1,64 @@
+public_id: 113464
+title_lang: en
+title: Fuji from the Katakura Tea Fields in Suruga
+names:
+  - lang: ja
+    role: original
+    text: 駿州片倉茶園ノ不二
+  - lang: ja
+    role: original
+    text: 駿州片倉茶園の不二
+  - lang: en
+    role: original
+    text: Fuji from the Tea Plantation at Katakura in Suruga Province
+  - Sunshū Katakura chaen no Fuji
+  - lang: fr
+    role: translation
+    text: La plantation de thé de Katakura dans la province de Suruga
+  - lang: es
+    role: translation
+    text: El Fuji desde los campos de té de Katakura en la provincia de Suruga
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 駿州片倉茶園ノ不二
+parent: thirty-six-views-of-mount-fuji
+part_number: "44"
+creator: katsushika-hokusai
+created: 1830/1833
+created_label: c. 1830–1833
+created_span: uncertain
+institution: art-institute-of-chicago
+inventory_number: "1925.3231"
+web_url: https://www.artic.edu/artworks/86985
+wikidata_id: Q18173435
+metadata:
+  sources: [Wikidata Q18173435 (retrieved 2026-11-03)]
+images:
+  - url: https://www.artic.edu/iiif/2/4c778fe4-64ac-ff00-20f8-9bc456507da4/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/86985
+    license: Public domain
+    credit: Art Institute of Chicago, Clarence Buckingham Collection
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173435
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173435
+  created:
+    - url: https://www.artic.edu/artworks/86985
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173435
+  institution:
+    - url: https://www.artic.edu/artworks/86985
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.artic.edu/artworks/86985
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03

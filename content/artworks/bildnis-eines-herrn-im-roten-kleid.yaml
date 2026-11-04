@@ -1,0 +1,82 @@
+public_id: 115367
+title_lang: de
+title: Bildnis eines Herrn im roten Kleid
+names:
+  - lang: fr
+    role: translation
+    text: Portrait of a Gentleman in a Red Coat
+creator: johann-melchior-wyrsch
+created: 1776
+kind: oil painting
+medium: Oil on canvas
+dimensions: [42.5, 34.5]
+institution: kunsthaus-zurich
+inventory_number: "2624"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3542/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586318
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/64/Johann_Melchior_Wyrsch_-_Bildnis_eines_Herrn_im_roten_Kleid_-_2624_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Melchior_Wyrsch_-_Bildnis_eines_Herrn_im_roten_Kleid_-_2624_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Johann Melchior Wyrsch
+provenance:
+  - owner: institution/hotel-drouot
+    role: agent
+    method: auction
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3542/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 09.11.1943, I.a, Archiv ZKG/KHZ, 10.30.10.42: «Das Bild sei vor eini­gen Jahren im Hotel des ventes de la rue Drouot ersteigert worden. Am 30.7.43. traf das Bild in Zürich ein. (Brief der Abtei­lung für Auswärtiges vom 30.7.43, Bestätigung durch das Kunsthaus 6.8.)»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/maurice-hottinguer
+    ended: 1943
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3542/
+        note: "Footnote: Wie oben Fussnote 3; Sitzungsprotokoll der Sammlungskommission, 31.03.1943, II.3, 21.10.1943, II.b, Archiv ZKG/KHZ, 10.30.10.42; Archiv ZKG/KHZ, Korrespondenz Slg., 10.30.20.97-98; ZKG/KHZ, Inventarbuch Slg.; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 56."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1943
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3542/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3542/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3542/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3542/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3542/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3542/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3542/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3542/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

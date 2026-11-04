@@ -1,0 +1,38 @@
+public_id: 115472
+name: Felix Maria Diogg
+given_name: Felix Maria
+family_name: Diogg
+birth: 1762-07-01
+death: 1834-02-19
+wikidata_id: Q1403642
+metadata:
+  sources: [Wikidata Q1403642 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q1403642
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/70/Diogg_Selbstportrait_1825.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Diogg_Selbstportrait_1825.jpg
+    license: Public domain
+    credit: Felix Maria Diogg
+identifiers:
+  gnd: "103142479"
+  hls: "022005"
+  lc: no2021037324
+  rkd: "23243"
+  sikart: "4022830"
+  ulan: "500005714"
+  viaf: "25007076"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q1403642
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q1403642

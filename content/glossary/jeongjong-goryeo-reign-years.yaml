@@ -1,0 +1,18 @@
+public_id: 113305
+name: Jeongjong of Goryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 정종
+  - lang: ko-Hani
+    role: alternative
+    text: 定宗
+category: calendar
+definition: "The reign years of King Jeongjong of Goryeo (定宗, 정종), by which Korean histories date 946–949: 946 is Jeongjong 1, 949 Jeongjong 4."
+description_md: |-
+  **Jeongjong** (定宗, 정종): the years of the reign of King Jeongjong of Goryeo. The Goryeosa, the history of Goryeo, dates events by the reigning king's year ([[korean-reign-years]]): 949 is Jeongjong 4 (정종 4년). The year of the accession, 946, counts as the first year.
+
+  Before: [[hyejong-goryeo-reign-years|Hyejong]]. After: [[gwangjong-goryeo-reign-years|Gwangjong]].
+sources:
+  definition:
+    - source: dila-time-authority

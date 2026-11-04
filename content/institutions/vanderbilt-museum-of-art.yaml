@@ -1,0 +1,11 @@
+public_id: 113449
+name: Vanderbilt Museum of Art
+kind: museum
+wikidata_id: Q18563658
+metadata:
+  sources: [Wikidata Q18563658 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q18563658

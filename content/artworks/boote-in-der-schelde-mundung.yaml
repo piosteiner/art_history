@@ -1,0 +1,185 @@
+public_id: 115535
+title_lang: de
+title: Boote in der Schelde-Mündung
+names:
+  - lang: en
+    role: translation
+    text: Boats on the Mouth of the Scheldt
+  - lang: en
+    role: translation
+    text: Barques dans l’estuaire de l'Escaut
+  - lang: en
+    role: former
+    text: View on the River Excaut, A Calm
+  - lang: en
+    role: former
+    text: Calm sea with boats
+  - lang: en
+    role: former
+    text: Ruhige See mit drei Booten
+  - lang: en
+    role: former
+    text: A Scene On The River Scheldt
+creator: jan-van-de-cappelle
+created: 1651
+kind: oil painting
+medium: Oil on canvas
+dimensions: [66, 97]
+institution: kunsthaus-zurich
+inventory_number: R 49
+web_url: https://collection.kunsthaus.ch/de/collection/item/589/
+on_loan: true
+on_loan_since: 1950
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586233
+provenance:
+  - owner: person/welbore-ellis-agar
+    label: second Earl of Normanton (*1778, +1868) (Sammler/-in); Somerley Hall; Ringwood (Hampshire)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/589/
+        note: "Footnote: The Getty Research Institute, Archiv Duveen Brothers, «Collector's files: Mellon, Andrew W., circa 1940-1945, undated», http://hdl.handle.net/10020/2007d1_d2515 (11.05.2023), Nr. 21."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/sidney-james-agar
+    ended: 1907
+    method: inheritance
+    direct: true
+    label: fourth Earl of Normanton (*1865, +1933); Somerley Hall; Ringwood (Hampshire)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/589/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    direct: true
+    place: london
+    label: Nr. 2715
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/589/
+        note: "Footnote: Werkrückseite."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/james-simon
+    acquired: 1907
+    ended: 1927
+    method: purchase
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/589/
+        note: "Footnote: Wie oben Fussnote 3; Hofstede de Groot 1918, Bd. 7, S. 185, Nr. 21; Auktion Frederik Muller & Cie. Amsterdam 1927."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/frederik-muller-cie
+    role: agent
+    acquired: 1927
+    ended: 1927-10-31
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Lot 8
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/589/
+        note: "Footnote: Auktion, wie oben Fussnote 5; The Getty Research Institute, M. Knoedler & Co. records, circa 1848–1971, «Painting stock book 7: 15140-17039, 1921 January-1927 December», https://primo.getty.edu/permalink/f/mlc5om/GETTY_ROSETTAIE531925 (11.05.2023), S. 153."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1927-10-31
+    ended: 1928-10-17
+    direct: true
+    place: new-york-city
+    label: Nr. 16990
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/589/
+        note: "Footnote: Wie oben Fussnote 6; The Getty Research Institute, M. Knoedler & Co. records, circa 1848–1971, Inventory cards: Buyers, LO - MI, 1878-1969, bulk 1900-1969, Item 472, Stock No.16990 https://primo.getty.edu/permalink/f/tjqn6u/GETTY_ROSETTAIE3556279 (11.05.2023); The Getty Research Institute, M. Knoedler & Co. records, circa 1848–1971, Knoedler Stock Book 8, Page 21, Row 21, Stock No. 16990, https://…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/andrew-w-mellon
+    acquired: 1928-10-17
+    ended: 1939 or later
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/589/
+        note: "Footnote: Wie oben Fussnote 7; E-Mail-Korrespondenz Halpern, 18.11.2022."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/frederick-mont
+    role: dealer
+    ended: 1950-06-10
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/589/
+        note: "Footnote: ZKG/KHZ Werkdossier, Rechnung von Frederick Mont an Leopold Ruzicka, 10.05.1950; Archivdokumente Feilchenfeldt; ZKG/KHZ Ruzicka-Akten, Abrechnung Ruzicka-Stiftung 1950."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    role: agent
+    acquired: 1950
+    ended: 1950
+    direct: true
+    place: new-york-city
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/589/
+        note: "Footnote: ZKG/KHZ Werkdossier, wie oben Fussnote 12; Archivdokumente Feilchenfeldt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1950-06-10
+    ended: 2005
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/589/
+        note: "Footnote: ZKG/KHZ Werkdossier; Ruzicka Akten Korrespondenz Otto Hirschmann, 25.05.1950; ZKG/KHZ Ruzicka-Akten, Beleg der Schweizerischen Kreditanstalt an Leopold Ruzicka, 10.06.1950; ZKG/KHZ Ruzicka-Akten, Abrechnung, wie oben Fussnote 12; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 106."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/589/
+        note: "Footnote: Wie oben Fussnote 15."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/589/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/589/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/589/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/589/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/589/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/589/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/589/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/589/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

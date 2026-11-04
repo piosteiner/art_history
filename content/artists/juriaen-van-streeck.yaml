@@ -1,0 +1,59 @@
+public_id: 115295
+name: Juriaen van Streeck
+given_name: Juriaen
+family_name: van Streeck
+birth: 1632-02
+death: 1687-06
+wikidata_id: Q2072325
+metadata:
+  sources: [Wikidata Q2072325 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q2072325
+  - type: born_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q2072325
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q2072325
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q2072325
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q2072325
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/08/Schouburg_Plate_K_-_Juriaan_van_Streek.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Schouburg_Plate_K_-_Juriaan_van_Streek.jpg
+    license: Public domain
+    credit: Arnold Houbraken
+identifiers:
+  gnd: "1020091762"
+  rkd: "75695"
+  ulan: "500000433"
+  viaf: "95683299"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q2072325
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q2072325

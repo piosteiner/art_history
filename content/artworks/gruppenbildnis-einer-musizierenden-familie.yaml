@@ -1,0 +1,154 @@
+public_id: 115410
+title_lang: en
+title: Gruppenbildnis einer musizierenden Familie
+names:
+  - lang: en
+    role: translation
+    text: Group Portrait of a Family Making Music
+creator: jan-verkolje
+created: 1671
+kind: oil painting
+medium: Oil on canvas
+dimensions: [76, 88]
+institution: kunsthaus-zurich
+inventory_number: R 39
+web_url: https://collection.kunsthaus.ch/de/collection/item/3688/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585489
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/20/Jan_Verkolje_%28I%29_-_Gruppenbildnis_einer_musizierenden_Familie_-_R_39_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jan_Verkolje_(I)_-_Gruppenbildnis_einer_musizierenden_Familie_-_R_39_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jan Verkolje
+provenance:
+  - owner: person/iddekinge-van-drogershorst
+    ended: 1906-11-28
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+        note: "Footnote: ZKG/KHZ Werkdossier, handschriftliche Notizen von Leopold Ruzicka."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/frederik-muller-cie
+    role: agent
+    acquired: 1906-11-28
+    ended: 1906-11-28
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Lot 26
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+        note: "Footnote: Wie oben Fussnote 3; Auktion Frederick Muller & Cie. (27./28.11.1906), Lot 26, handschriftlich annotiertes Exemplar im Nederlands Instituut voor Kunstgeschiedenis (RKD)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandlung-bohler-steinmeyer
+    acquired: 1906-11-28
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+        note: "Footnote: Auktion Frederik Muller & Cie., wie oben Fussnote 4"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/christoph-bernoulli
+    role: dealer
+    ended: 1943-10-06
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+        note: "Footnote: E-Mail-Korrespondenz Galerie Fischer, Sykora, 18.01.2023."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1943-09-11
+    ended: 1943-09-11
+    method: auction
+    direct: true
+    place: lucerne
+    label: Lot 947
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+        note: "Footnote: Wie oben Fussnote 7; ZKG/KHZ Werkdossier, Rechnung der Galerie Neupert an Leopold Ruzicka, 28.09.1943; Auktion Galerie Fischer (9./10./11.09.1943), Lot 947."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-neupert
+    role: dealer
+    acquired: 1943-09-11
+    ended: 1943-10-06
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+        note: "Footnote: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1943-10-06
+    ended: 1948-12-27
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+        note: "Footnote: ZKG/KHZ Werkdossier, wie oben Fussnote 8; Sitzungsprotokoll der Sammlungskommission, 23.12.1948 I., Archiv ZKG/KHZ, 10.30.10.42; Zürcher Kunstgesellschaft 1949 Jahresbericht, S. 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1949-12-27
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 10; Zürcher Kunstgesellschaft 1949 Jahresbericht, wie oben Fussnote 10; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 110."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

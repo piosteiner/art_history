@@ -1,0 +1,132 @@
+public_id: 115220
+title_lang: en
+title: Grand nu accroupi (Olga)
+names:
+  - lang: en
+    role: translation
+    text: Sitzender Akt (Olga)
+  - lang: en
+    role: translation
+    text: Seated Nude (Olga)
+  - lang: fr
+    role: former
+    text: Femme assise
+  - lang: en
+    role: former
+    text: Nu assis
+  - lang: de
+    role: former
+    text: Sitzender Mädchenakt
+creator: henri-matisse
+created: 1909/1910
+kind: sculpture
+medium: Bronze
+dimensions: [43, 24.5, 33]
+institution: kunsthaus-zurich
+inventory_number: 1968/0055
+web_url: https://collection.kunsthaus.ch/de/collection/item/2814/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/alfred-flechtheim
+    acquired: 1926
+    direct: true
+    place: dusseldorf
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2814/
+        note: "Footnote: Einstein 1926, Bd. 16, S. 559: Es ist unklar, ob es sich dabei um diesen Guss handelt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-pierre
+    role: dealer
+    acquired: 1929-05
+    ended: 1929-05
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2814/
+        note: "Footnote: Duthuit/de Guébriant 1997, 134.49."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/daniel-tzanck
+    acquired: 1930
+    ended: 1930
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2814/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alfred-meyer-braam
+    place: paris
+    label: Paris and Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2814/
+        note: "Footnote: Wie oben Fussnote 2; ZKG/KHZ, Werkdossier, Ausgehende Korrespondenz, Marguertite G. Duthuit, 15.10.1971; https://www.kunstbreite.ch/Kuenstlerwerdegaenge_aargau_meyer_alfred.htm (21.06.2023)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/werner-bar
+    co_owners: [person/nelly-bar]
+    acquired: 1948
+    ended: 1960
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2814/
+        note: "Footnote: Wie oben Fussnote 7; Wappenschmidt 1991, S. 305."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/nelly-bar
+    acquired: 1960
+    ended: 1968
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2814/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 599."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1968
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2814/
+        note: "Footnote: ZKG/KHZ, Werkdossier; Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "134.49"
+    label: Duthuit/de Guébriant 1997 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2814/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2814/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2814/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2814/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2814/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2814/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2814/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,59 @@
+public_id: 113461
+title_lang: en
+title: Dawn at Isawa in Kai Province
+names:
+  - lang: ja
+    role: original
+    text: 甲州伊沢暁
+  - Kōshū Isawa no akatsuki
+  - Koshu Isawa no akatsuki
+  - lang: fr
+    role: translation
+    text: L'aurore à Isawa dans la province de Kai
+  - lang: es
+    role: translation
+    text: Amanecer en Isawa en la provincia de Kai
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 甲州伊沢暁
+parent: thirty-six-views-of-mount-fuji
+part_number: "41"
+creator: katsushika-hokusai
+created: 1830/1833
+created_label: c. 1830–1833
+created_span: uncertain
+institution: art-institute-of-chicago
+inventory_number: "1925.3235"
+web_url: https://www.artic.edu/artworks/24604
+wikidata_id: Q17209457
+metadata:
+  sources: [Wikidata Q17209457 (retrieved 2026-11-03)]
+images:
+  - url: https://www.artic.edu/iiif/2/fdbad9fc-7e08-213d-1e6c-9354afca4e1f/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/24604
+    license: Public domain
+    credit: Art Institute of Chicago, Clarence Buckingham Collection
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q17209457
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q17209457
+  created:
+    - url: https://www.artic.edu/artworks/24604
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q17209457
+  institution:
+    - url: https://www.artic.edu/artworks/24604
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.artic.edu/artworks/24604
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03

@@ -1,0 +1,35 @@
+public_id: 115526
+name: Bregenz
+names:
+  - lang: zh
+    role: translation
+    text: 布雷根茨
+  - lang: ko
+    role: translation
+    text: 브레겐츠
+  - lang: fr
+    role: translation
+    text: Brégence
+  - lang: ru
+    role: translation
+    text: Брегенц
+kind: settlement
+parent: austria
+country_code: AT
+location: [9.74917, 47.505]
+wikidata_id: Q1737
+metadata:
+  sources: [Wikidata Q1737 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q1737
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q1737
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q1737

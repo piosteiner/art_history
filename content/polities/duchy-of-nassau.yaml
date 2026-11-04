@@ -27,6 +27,7 @@ names:
     role: translation
     text: Нассау
 period: 1806/1866
+country_codes: [DE]
 wikidata_id: Q836680
 metadata:
   sources: [Wikidata Q836680 (retrieved 2026-10-29)]

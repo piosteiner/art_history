@@ -1,0 +1,59 @@
+public_id: 113456
+title_lang: en
+title: Hodogaya on the Tōkaidō
+names:
+  - lang: ja
+    role: original
+    text: 東海道程ケ谷
+  - Tōkaidō Hodogaya
+  - Hodogaya on the Tokaido
+  - lang: fr
+    role: translation
+    text: Hodogaya sur le Tōkaidō
+  - lang: es
+    role: translation
+    text: Hodogaya en la Tōkaidō
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 東海道程ケ谷
+parent: thirty-six-views-of-mount-fuji
+part_number: "36"
+creator: katsushika-hokusai
+created: 1830/1832
+created_label: c. 1830–1832
+created_span: uncertain
+institution: metropolitan-museum-of-art
+inventory_number: JP1427
+web_url: https://www.metmuseum.org/art/collection/search/55458
+wikidata_id: Q18173426
+metadata:
+  sources: [Wikidata Q18173426 (retrieved 2026-11-03)]
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/original/DP141025.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/55458
+    license: Public domain
+    credit: The Metropolitan Museum of Art
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173426
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173426
+  created:
+    - url: https://www.metmuseum.org/art/collection/search/55458
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173426
+  institution:
+    - url: https://www.metmuseum.org/art/collection/search/55458
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.metmuseum.org/art/collection/search/55458
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03

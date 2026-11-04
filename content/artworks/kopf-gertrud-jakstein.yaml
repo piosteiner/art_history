@@ -1,0 +1,65 @@
+public_id: 115393
+title_lang: de
+title: Kopf Gertrud Jakstein
+names:
+  - lang: en
+    role: translation
+    text: Head Gertrud Jakstein
+creator: friedrich-wield
+created: 1925
+created_label: 1925 [?]
+kind: sculpture
+medium: Bronze
+dimensions: [36, 19.5, 19.5]
+institution: kunsthaus-zurich
+inventory_number: 1954/0004
+web_url: https://collection.kunsthaus.ch/de/collection/item/3594/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/alfred-meyer
+    ended: 1954
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3594/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 23.11.1954, S. 3, Archiv ZKG/KHZ, 10.30.10.42a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1954
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3594/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3594/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3594/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3594/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3594/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3594/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3594/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3594/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

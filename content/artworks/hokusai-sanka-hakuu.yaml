@@ -1,0 +1,79 @@
+public_id: 113419
+title_lang: en
+title: Storm below Mount Fuji
+names:
+  - lang: ja
+    role: original
+    text: 山下白雨
+  - lang: en
+    role: original
+    text: Sudden Shower beneath the Summit
+  - Sanka hakuu
+  - Sanka no hakuu
+  - Sanka no haku u
+  - Sanka no haku'u
+  - Sanka haku-u
+  - Shower below the Summit
+  - Thunderstorm Beneath the Summit
+  - lang: en
+    role: original
+    text: Lightnings below the summit
+  - lang: fr
+    role: translation
+    text: L'Orage sous le sommet
+  - lang: it
+    role: translation
+    text: Tempesta di pioggia sotto la cima
+  - lang: es
+    role: translation
+    text: Tormenta debajo de la cumbre
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 山下白雨
+  - lang: ko
+    role: translation
+    text: 산 아래의 소나기
+  - lang: ru
+    role: translation
+    text: Ливень под горой
+parent: thirty-six-views-of-mount-fuji
+part_number: "3"
+creator: katsushika-hokusai
+created: 1830/1833
+created_label: c. 1830–1833
+created_span: uncertain
+institution: art-institute-of-chicago
+inventory_number: "1925.3244"
+web_url: https://www.artic.edu/artworks/87008
+wikidata_id: Q18173384
+metadata:
+  sources: [Wikidata Q18173384 (retrieved 2026-11-03)]
+images:
+  - url: https://www.artic.edu/iiif/2/bbb6d024-f931-2e2f-eb95-750991834b1c/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/87008
+    license: Public domain
+    credit: Art Institute of Chicago, Clarence Buckingham Collection
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173384
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173384
+  created:
+    - url: https://www.artic.edu/artworks/87008
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173384
+  institution:
+    - url: https://www.artic.edu/artworks/87008
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.artic.edu/artworks/87008
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03

@@ -11,6 +11,11 @@ dimensions: [635, 400, 94]
 institution: musee-d-orsay
 web_url: https://www.musee-orsay.fr/fr/oeuvres/porte-de-lenfer-15645
 description_md: Das Gipsmodell, nach dem Staatsauftrag von 1880 angekauft und seit 1986 als Depositum des Musée Rodin im Musée d'Orsay; ohne die Gruppe der Drei Schatten ist es 520 cm hoch, es wiegt 1715 kg.[[source/musee-orsay-porte-de-lenfer]]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Auguste_Rodin%2C_Porte_de_l%27Enfer%2C_1880-1917_%283807828604%29.jpg/1280px-Auguste_Rodin%2C_Porte_de_l%27Enfer%2C_1880-1917_%283807828604%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Auguste_Rodin,_Porte_de_l%27Enfer,_1880-1917_(3807828604).jpg
+    license: CC BY 2.0
+    credit: Sharon Mollerus
 sources:
   created:
     - source: musee-orsay-porte-de-lenfer

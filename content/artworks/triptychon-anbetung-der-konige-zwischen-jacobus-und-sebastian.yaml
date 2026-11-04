@@ -1,0 +1,118 @@
+public_id: 115142
+title_lang: de
+title: Triptychon. Anbetung der Könige zwischen Jacobus und Sebastian
+names:
+  - lang: en
+    role: translation
+    text: Triptych (Adoration of the Magi between James and Sebastian)
+  - lang: en
+    role: former
+    text: The Adoration of the Magi A Triptych
+creator: jan-provost
+created: 1495/1515
+created_label: c. 1500/1510
+created_span: uncertain
+kind: painting
+medium: Tempera on oak panel
+dimensions: [27.1, 19]
+institution: kunsthaus-zurich
+inventory_number: R 25
+web_url: https://collection.kunsthaus.ch/de/collection/item/2470/
+on_loan: true
+on_loan_since: 1949
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586231
+provenance:
+  - owner_label: Westmacott
+    ended: 1906
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2470/
+        note: "Footnote: Nederlands Instituut voor Kunstgeschiedenis RKD, https://rkd.nl/explore/images/64011 (11.05.2023)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/charles-sedelmeyer
+    role: dealer
+    acquired: 1906
+    ended: 1925-08-09 or earlier
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2470/
+        note: "Footnote: Huemer 1999, S. 19: Das Werk war höchstens bis 1925 im Besitz von Sedelmeyer, da er in diesem Jahr verstarb."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/curt-benedict
+    role: dealer
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2470/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/vitale-bloch
+    role: agent
+    ended: 1949-06-03
+    place: the-hague
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2470/
+        note: "Footnote: ZKG/KHZ Werkdossier, handschriftliche Notizen Leopold Ruzicka, 1949."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1949-06-03
+    ended: 1996
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2470/
+        note: "Footnote: ZKG/KHZ Werkdossier Empfangsbescheinigung, Ruzicka-Stiftung, 03.06.1949; ZKG/KHZ Ruzicka-Akten, Abrechnung Ruzicka-Stiftung 1949, S. 4; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 31."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1996
+    direct: true
+    place: zurich
+    label: Zürich, Tausch mit der Ruzicka-Stiftung mit Mitteln aus dem Legat Walter und Annemarie Boveri
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2470/
+        note: "Footnote: Wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2470/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2470/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2470/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2470/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2470/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2470/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2470/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2470/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

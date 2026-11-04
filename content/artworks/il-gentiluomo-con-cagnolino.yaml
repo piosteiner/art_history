@@ -119,7 +119,7 @@ provenance:
         note: "Footnote: Lukas Gloor, Der Bestand der Sammlung Emil Bührle: Illustrierte Liste aller 633 Käufe, 2021, S. 258, Nr. 68, https://www.buehrle.ch/fileadmin/user_upload/bilder/stiftung/bestandliste/Extrakt_Gesamtkatalog_Bu__hrle_DE.pdf (13.01.2022)."
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-03
-  - owner: institution/zurcher-kunstgesellschaft-kunsthaus-zurich
+  - owner: institution/zurcher-kunstgesellschaft
     acquired: 1956
     method: gift
     direct: true

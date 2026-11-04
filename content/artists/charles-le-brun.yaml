@@ -91,6 +91,12 @@ relationships:
       - accessed: 2026-11-02
         property: P937
         wikidata: Q271676
+  - type: student_of
+    to: artist/nicolas-poussin
+    sources:
+      - accessed: 2026-11-03
+        property: P802
+        wikidata: Q41554
   - type: member_of
     to: institution/academie-royale-de-peinture-et-de-sculpture
     sources:

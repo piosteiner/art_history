@@ -1,0 +1,129 @@
+public_id: 115348
+title_lang: de
+title: Schiffe auf stürmischer See
+names:
+  - lang: en
+    role: translation
+    text: Two Dutch Ships at Sea in a Gale
+  - lang: en
+    role: former
+    text: Leicht bewegtes Meer mit einigen Schiffen
+creator: willem-van-de-velde-ii
+created: c. 1700
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [57.5, 76.5]
+institution: kunsthaus-zurich
+inventory_number: R 38
+web_url: https://collection.kunsthaus.ch/de/collection/item/3454/
+on_loan: true
+on_loan_since: 1949
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585308
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/03/Willem_van_de_Velde_%28II%29_-_Schiffe_auf_st%C3%BCrmischer_See_-_R_38_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Willem_van_de_Velde_(II)_-_Schiffe_auf_st%C3%BCrmischer_See_-_R_38_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Willem van de Velde the Elder
+provenance:
+  - owner_label: De Boer
+    acquired: 1939
+    ended: 1939
+    place: amsterdam
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3454/
+        note: "Footnote: ZKG/KHZ, Werkdossier, handschriftliche Notiz Leopold Ruzicka."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/douwes-fine-art-ltd
+    role: dealer
+    ended: 1939-09-07
+    direct: true
+    place: amsterdam
+    label: Nr. 2242
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3454/
+        note: "Footnote: ZI. Zentralinstitut für Kunstgeschichte, «Karteikarte Luzern: L_10458», http://boehler.zikg.eu/wisski/navigate/213063/view (08.05.2023); Robinson 1990, Bd. 2, S. 1029-1030, Nr. 176."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandel-ag
+    acquired: 1939-09-07
+    ended: 1948-06-21
+    method: purchase
+    direct: true
+    place: lucerne
+    label: Nr. 10458
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3454/
+        note: "Footnote: Wie oben Fussnote 4; ZKG/KHZ, Werkdossier, Korrespondenz von Steinmeyer an Leopold Ruzicka, 21.06.1948."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1948-06-21
+    ended: 1948-12-27
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3454/
+        note: "Footnote: ZKG/KHZ, Werkdossier, Korrespondenz, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1948-12-27
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3454/
+        note: "Footnote: ZKG/KHZ, Ruzicka-Akten, Abrechnung, wie oben Fussnote 6; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 109."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3454/
+        note: "Footnote: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: 2.1029/1030.176
+    label: Robinson 1990 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3454/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3454/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3454/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3454/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3454/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3454/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3454/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3454/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

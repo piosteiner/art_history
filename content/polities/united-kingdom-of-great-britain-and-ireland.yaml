@@ -1,6 +1,7 @@
 public_id: 100217
 name: United Kingdom of Great Britain and Ireland
 period: 1 January 1801 – 12 April 1927
+country_codes: [GB, IE]
 wikidata_id: Q174193
 metadata:
   sources: [Wikidata Q174193 (retrieved 2026-10-12)]

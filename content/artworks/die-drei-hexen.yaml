@@ -1,0 +1,127 @@
+public_id: 114908
+title_lang: de
+title: Die drei Hexen
+names:
+  - lang: en
+    role: translation
+    text: The Three Witches
+  - lang: fr
+    role: translation
+    text: Les Trois Sorcières
+creator: henry-fuseli
+created: 1783
+kind: oil painting
+medium: Oil on canvas
+dimensions: [65, 91.5]
+institution: kunsthaus-zurich
+inventory_number: "2540"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1107/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585785
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/05/Henry_Fuseli_-_Die_drei_Hexen_-_2540_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henry_Fuseli_-_Die_drei_Hexen_-_2540_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Henry Fuseli
+provenance:
+  - owner: artist/henry-fuseli
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1107/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/richard-kisling
+    ended: 1917-03-07
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1107/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hedwig-kisling
+    acquired: 1917-03-07
+    ended: 1929-11-18
+    method: inheritance
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1107/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/g-l-bollag
+    role: agent
+    acquired: 1929-11-18
+    ended: 1929-11-18
+    method: auction
+    direct: true
+    place: zurich
+    label: Lot 253; aus dem Nachlass Richard Kisling u. a. anderem Besitz
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1107/
+        note: "Footnote: Auktion Bollag 1929, Lot 253, siehe https://doi.org/10.11588/diglit.21692#0030 (22.05.2025)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/g-l-bollag
+    acquired: 1929-11-18
+    ended: 1941
+    direct: true
+    place: zurich
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1107/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 24.07.1941, I., Archiv ZKG/KHZ, 10.30.10.42: Das Kaufangebot stammt von der Galerie Bollag; Kat. Kunsthaus Zürich 1936 Schweizer Maler, S. 10, Nr. 21: «Die drei Hexen, aus Macbeth, Oel a. Lwd., 91/65, Galerie Bollag, Zürich». Ob das Werk im Eigentum der Galerie oder nur in Kommission war, konnte bisher nicht geklärt werden."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: place/zurich
+    acquired: 1941
+    ended: 1941
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1107/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 63."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1941
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1107/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 24.07.1941, I. und 07.08.1941, I.b, Archiv ZKG/KHZ, 10.30.10.42."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: I.492.733
+    label: Schiff (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1107/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1107/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1107/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1107/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1107/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1107/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1107/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

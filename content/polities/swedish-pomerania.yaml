@@ -26,6 +26,7 @@ names:
     role: translation
     text: Шведская Померания
 period: 1648/1815
+country_codes: [DE, PL]
 wikidata_id: Q682318
 metadata:
   sources: [Wikidata Q682318 (retrieved 2026-10-29)]

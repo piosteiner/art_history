@@ -1,6 +1,7 @@
 public_id: 102991
 name: Russian Empire
 period: 1721-11-02/1917-09-14
+country_codes: [RU, UA, BY, PL, LT, LV, EE, FI, MD, GE, AM, AZ, KZ, UZ, TM, KG, TJ]
 wikidata_id: Q34266
 metadata:
   sources: [Wikidata Q34266 (retrieved 2026-10-28)]

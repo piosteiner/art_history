@@ -1,0 +1,237 @@
+public_id: 115357
+title_lang: en
+title: Innenansicht einer barocken Kirche
+names:
+  - lang: en
+    role: translation
+    text: Interior of a Baroque Church
+  - lang: en
+    role: former
+    text: Kircheninneres
+  - lang: en
+    role: former
+    text: Interior of a Church in Holland, with Figures
+creator: emanuel-de-witte
+created: 1685
+kind: oil painting
+medium: Oil on canvas
+dimensions: [67, 56.5]
+institution: kunsthaus-zurich
+inventory_number: R 51
+web_url: https://collection.kunsthaus.ch/de/collection/item/3499/
+on_loan: true
+on_loan_since: 1951
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586287
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e6/Emanuel_de_Witte_-_Innenansicht_einer_barocken_Kirche_-_R_51_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Emanuel_de_Witte_-_Innenansicht_einer_barocken_Kirche_-_R_51_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Emanuel de Witte
+provenance:
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1772-05-25
+    ended: 1772-05-25
+    method: auction
+    place: the-hague
+    label: Lot 279
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+        note: "Footnote: Manke 1963 112-113.148; Ausst.-Kat. Basel 1987, S. 284."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1776-05-29
+    ended: 1776-05-29
+    method: auction
+    place: amsterdam
+    label: Lot 140; Versteigerung Lambert ten Kate
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/cornelis-hofstede-de-groot
+    acquired: 1776-05-29
+    method: purchase
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: H. or J. Stewart
+    label: London?
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+        note: "Footnote: Wie oben Fussnote 3; ZKG/KHZ Ruzicka-Akten, Korrespondenz, Otto Hirschmann, 02.02.1951: «Das Gemälde soll aus der Sammlung H. Steward stammen und aus dem Besitz Weymouth 1944 bei Sotheby versteigert worden sein und sich 1946 bei Duits befunden haben.»; Norton Hall 1848 (Sammlungskatalog): S. 58-59."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/beriah-botfield
+    ended: 1863
+    label: Norton Hall; Norton Hall, Northamptonshire
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+        note: "Footnote: Norton Hall 1848 (Sammlungskatalog), S. 58-59: Im Sammlungskatalog der Norton Hall werden insgesamt vier Gemälde von de Witte (allesamt Kircheninterieurs) aufgelistet. Von den Beschreibung passt Folgendes am besten: «Interior of a Church in Holland, with Figures; with the date 1685; signed. From the Collection of J. Stewart, Esq. H. 3 ft. 1 in. W. 2 ft. 9 in.» Der Hinweis der Provenienz «Stewart» …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/isabella-botfield
+    acquired: 1863
+    ended: 1911
+    direct: true
+    label: Norton Hall; Norton Hall, Northamptonshire, Erbe
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+        note: "Footnote: Baugh 1998, wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alexander-george-boteville-thynne
+    acquired: 1911
+    ended: 1918
+    method: inheritance
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+        note: "Footnote: Wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/beatrice-thynne
+    acquired: 1918
+    ended: 1941
+    method: inheritance
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+        note: "Footnote: Wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/henry-frederick-thynne
+    acquired: 1941
+    ended: 1944-10-04
+    method: inheritance
+    direct: true
+    place: london
+    label: known as the 6th Marquess of Bath and Viscount Weymouth
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+        note: "Footnote: Wie oben Fussnote 3; wie oben Fussnote 11; Auktion Sotheby 04.10.1944, Lot 152."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1944-10-04
+    ended: 1944-10-04
+    method: auction
+    direct: true
+    place: london
+    label: Lot 152; London, Versteigerung Viscount Weymouth u. a., London
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+        note: "Footnote: Wie oben Fussnote 3; ZKG/KHZ Ruzicka-Akten Korrespondenz, wie oben Fussnote 8; Auktion Sotheby & Co. London (04.10.1944), Lot 152."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    ended: 1945 or later
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+        note: "Footnote: ZKG/KHZ Ruzicka Akten, wie oben Fussnote 8: «Ich fand zu Hause (s. Beilage) die Abbildung des gleichen Gemäldes, in Bristol ausgestellt aus dem Besitz von Agnew. Ich erinnere mich tatsächlich, ein ähnliches Bild in schmutzigem Zustand bei Agnew vor einigen Jahren gesehen zu haben. Es ist möglich, dass es in inzwischen gereinigt worden ist und daher jetzt recht gut aussieht.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/w-e-duits
+    role: dealer
+    acquired: 1946
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/martin-prokay
+    ended: 1951-02-09
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+        note: "Footnote: ZKG/KHZ Ruzicka-Akten, Korrespondenz, Otto Hirschmann, 27.02.1951; ZKG/KHZ Werkdossier, Bestätigungsschreiben Martin Porkay, 08.02.1951; ZKG/KHZ Ruzicka-Akten, Abrechnung Ruzicka-Stiftung 1951."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    role: agent
+    acquired: 1951-02-09
+    ended: 1951-02-09
+    direct: true
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+        note: "Footnote: ZKG/KHZ Ruzicka-Akten, wie oben Fussnote 21: «Feilchenfeldt hat die Vermittlung desselben durchgeführt, weil ihm Porkay Geld schuldig war.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1951-02-09
+    ended: 2005
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+        note: "Footnote: ZKG/KHZ Werkdossier, wie oben Fussnote 21; ZKG/KHZ Ruzicka-Akten, wie oben Fussnote 20: «Wir haben den DE WITTE inzwischen erworben, und zwar für Fr.13’000.--.»; ZKG/KHZ Ruzicka-Akten, Abrechnung Ruzicka-Stiftung 1951; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 103."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+        note: "Footnote: Wie oben Fussnote 24."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: 112-113.148
+    label: Manke 1963 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3499/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

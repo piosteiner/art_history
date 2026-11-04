@@ -1,0 +1,120 @@
+public_id: 115173
+title_lang: en
+title: Vénus endormie surprise par des satyres
+names:
+  - lang: de
+    role: translation
+    text: Schlafende Venus von Satyren überrascht
+  - lang: en
+    role: translation
+    text: Sleeping Venus Surprised by Satyrs
+creator: nicolas-poussin
+created: c. 1625
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [77, 100]
+institution: kunsthaus-zurich
+inventory_number: "2480"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2659/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q62514508
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a8/Nicolas_Poussin_-_V%C3%A9nus_endormie_surprise_par_des_satyres_-_2480_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Nicolas_Poussin_-_V%C3%A9nus_endormie_surprise_par_des_satyres_-_2480_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Nicolas Poussin
+provenance:
+  - owner: person/agostino-tassi
+    ended: 1634
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2659/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paolo-falconieri
+    label: Rom [?]
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2659/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Casa Falconieri
+    ended: c. 1800
+    direct: true
+    place: rome
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2659/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/phillips
+    acquired: 14 March 1809 – 1815
+    ended: 14 March 1809 – 1815
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2659/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: the Earl of Yarborough
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2659/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/edward-speelman
+    ended: 1939-09-15
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2659/
+        note: "Footnote: Thos. Agnew & Sons Ltd Archive, National Gallery, London, NGA27, Stock number 8559."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    acquired: 1939-09-15
+    ended: 1939
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2659/
+        note: "Footnote: wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1939
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2659/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2659/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2659/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2659/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2659/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2659/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2659/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2659/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -33,6 +33,7 @@ names:
     role: translation
     text: оккупация Японии
 period: 1945/1952-04-28
+country_codes: [JP]
 wikidata_id: Q696251
 metadata:
   sources: [Wikidata Q696251 (retrieved 2026-10-29)]

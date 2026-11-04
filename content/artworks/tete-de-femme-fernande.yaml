@@ -1,0 +1,95 @@
+public_id: 115067
+title_lang: en
+title: Tête de femme (Fernande)
+names:
+  - lang: en
+    role: translation
+    text: Frauenkopf (Fernande)
+  - lang: en
+    role: translation
+    text: Head of a Woman (Fernande)
+creator: pablo-picasso
+created: 1906
+kind: sculpture
+medium: Bronze
+dimensions: [35.5, 24.5, 24]
+institution: kunsthaus-zurich
+inventory_number: 1968/0056
+web_url: https://collection.kunsthaus.ch/de/collection/item/2031/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/ambroise-vollard
+    role: publisher
+    ended: 16 June 1932 or later
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2031/
+        note: "Footnote: Kat. Georges Petit 1932, annotiertes Exemplar im Kunsthaus Zürich, S. 71 und 77, nennt Vollard als Einsender (Bibliothekssignatur a3/Z 80:19320911)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/werner-bar
+    co_owners: [person/nelly-bar]
+    acquired: 1933
+    ended: 1960
+    method: purchase
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2031/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/nelly-bar
+    acquired: 1960
+    ended: 1968
+    direct: true
+    place: zurich
+    label: Zürich, Erbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2031/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 621."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1968
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2031/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "318"
+    label: Chipp/Wofsy 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2031/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2031/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2031/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2031/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2031/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2031/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2031/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

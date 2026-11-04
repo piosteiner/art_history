@@ -1,0 +1,97 @@
+public_id: 115571
+title_lang: de
+title: Mädchen mit gestreifter Schürze
+names:
+  - lang: en
+    role: translation
+    text: Girl with Striped Apron
+  - lang: en
+    role: translation
+    text: Fillette au tablier rayé
+  - lang: de
+    role: former
+    text: Brustbild eines Mädchens
+creator: adolf-dietrich
+created: 1923
+kind: oil painting
+medium: Oil on cardboard
+dimensions: [37, 28]
+institution: kunsthaus-zurich
+inventory_number: 1957/0018
+web_url: https://collection.kunsthaus.ch/de/collection/item/69/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584737
+provenance:
+  - owner_label: private collection
+    acquired: 1926-09-05 or earlier
+    ended: 26 September 1926 or later
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/69/
+        note: "Footnote: Kat. Kunstverein Winterthur 1926, S. 90, Nr. 28: «Mädchenkopf III 1923 P.B. [Privatbesitz]»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/herbert-tannenbaum
+    role: agent
+    acquired: 1926-08-24 or earlier
+    ended: 26 September 1926 or later
+    direct: true
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/69/
+        note: "Footnote: Kat. Kunstverein Winterthur 1926, wie oben Fussnote 3. Für die Ausstellung in Winterthur wurden alle 50 Werke in vier Kisten von Herbert Tannenbaum nach Winterthur versandt, der Dietrich geschäftlich vertrat. (Vgl. Brief von Herbert Tannenbaum an Adolf Dietrich, 13.08.1926, Brief von Herbert Tannenbaum an Adolf Dietrich, 24.08.1926 und Vereinbarung zwischen Tannenbaum und Dietrich zur geschäftlich…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/wilhelm-landmann
+    ended: 1957-12-13
+    place: toronto
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/69/
+        note: "Footnote: Ausstellungsakten Adolf Dietrich, Bescheinigung des Erhalts des Werks als Leihgabe für die Gedächtnisausstellung Adolf Dietrich, 11.10.1957, daraus Sammlungsankauf, Archiv ZKG/KHZ, Ausstellungsakten, 10.30.30.452."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1957-12-13
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 3800
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/69/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: 1994.188.23.03
+    label: Ammann/Vögele (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/69/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/69/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/69/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/69/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/69/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/69/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/69/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,127 @@
+public_id: 115440
+title_lang: de
+title: Sitzende Maria mit Kind
+names:
+  - lang: en
+    role: translation
+    text: Seated Madonna with Child
+attribution_label: Anonymous, German
+created: late 13th century
+created_span: uncertain
+kind: sculpture
+medium: Limestone with baroque setting
+dimensions: [96, 42, 34]
+institution: kunsthaus-zurich
+inventory_number: 1945/0015
+web_url: https://collection.kunsthaus.ch/de/collection/item/3896/
+on_loan: true
+on_loan_since: 1945
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner_label: unknown (German)
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3896/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/juliette-ramet
+    co_owners: [person/andre-ramet]
+    acquired: 1937-09-02 or earlier
+    ended: 1945-09-27
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3896/
+        note: "Footnote: Auktion Galerie Fischer Luzern (30.08.1937-04.09.1937), S. 19, Nr. 278: «Thronende Madonna mit Kind, in monumentaler hieratischer Auffassung. Streng frontal. Die Maria trägt eine Krone und ein blaues Kopftuch, einen blauen Mantel über einem rot gemusterten Kleid mit Golddekor. Das Kind sitzt auf ihrem linken Knie mit einem Buch in der Hand. / Um 1250/60. / Stammt aus Chartres / Siehe Abb. Tafel 16…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1937-09-02
+    ended: 1937-09-02
+    method: auction
+    direct: true
+    place: lucerne
+    label: Lot 278; als «aus Chartres»; nicht zugeschlagen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3896/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1937-09-02
+    ended: 1945-09-27
+    direct: true
+    place: lucerne
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3896/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; Sitzungsprotokoll der Sammlungskommission, 28.02.1945 und 27.09.1945, Archiv ZKG/KHZ, 10.30.10.42. Kommissionsbuch «1924-1938 Mai», fol. 379, Kommissionsbuch «1938-1941 Mai», fol. 284 und 285 sowie Kommissionsbuch «1927-1943», fol. 81 und 82, Archiv der Galerie Fischer, Galerie Fischer Auktionen AG, Luzern. Recherche: Dr. Sandra Sykora, sowie E-Mail von Sandra Sykora, 0…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/adolf-johr
+    acquired: 1945-09-27
+    ended: 1953
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3896/
+        note: 'Footnote: Sitzungsprotokoll der Sammlungskommission, 27.09.1945, S. 4, IV. Leihgaben, Archiv ZKG/KHZ, 10.30.10.42: «a. Uebernahme oder Rückzug, 3. Französisch 14. Jahrhundert, Madonna mit Kind, Nr. 278 des Auktionskataloges August/September 1937 der Galerie Fischer, Luzern "Collection R. Paris, Nachlass eines Wiener Arztes". […] Herr Dr. Jöhr (V. V. Brazil ?) bot sich in der Folge an, das Werk im Tausch geg…'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/fides-treuhand-vereinigung
+    acquired: 1945-10-30
+    ended: 1955
+    direct: true
+    place: zurich
+    label: «treuhänderisch namens und im Auftrag eines ungenannten Eigentümers»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3896/
+        note: "Footnote: Leihgabe-Vertrag zu Inv.-Nr. 1945/15, ZKG/KHZ, Inventarbogen/Werkdossier Slg.: «[…] Die Fides Treuhand-Vereinigung in Zürich überlässt treuhänderisch namens und im Auftrag eines ungenannten Eigentümers der Zürcher Kunstgesellschaft als Leihgabe zur Ausstellung in den sammlungsräumen des Kunsthauses oder an anderem geeigneten Orte das Werk: Titel: Sitzende Madonna mit Kind, Technik: Kalkstein, bema…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1955
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3896/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3896/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3896/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3896/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3896/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3896/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3896/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3896/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3896/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

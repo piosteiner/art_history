@@ -1,0 +1,42 @@
+public_id: 115575
+name: Camille Bombois
+given_name: Camille
+family_name: Bombois
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Camille Aristide Bombois
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q683264
+birth: 1883-02-03
+death: 1970-06-11
+wikidata_id: Q683264
+metadata:
+  sources: [Wikidata Q683264 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q683264
+identifiers:
+  bnf: 11943197w
+  gnd: "119471612"
+  idref: "027377083"
+  lc: nr98009701
+  rkd: "10215"
+  ulan: "500024562"
+  viaf: "19535"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q683264
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q683264

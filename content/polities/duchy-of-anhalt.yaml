@@ -30,6 +30,7 @@ names:
     role: translation
     text: Герцогство Ангальт
 period: 1863/1918
+country_codes: [DE]
 wikidata_id: Q16550783
 metadata:
   sources: [Wikidata Q16550783 (retrieved 2026-10-29)]

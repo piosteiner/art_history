@@ -1,0 +1,77 @@
+public_id: 115006
+title_lang: de
+title: Quodlibet mit einem Gemälde, Zeichnungen, einem Schabkunstblatt und Briefen
+names:
+  - lang: en
+    role: translation
+    text: Quodlibet with a Painting, Drawings, a Mezzotinto, and Letters
+  - lang: en
+    role: translation
+    text: Trompe-l’œil représentant une peinture, des dessins, une eau-forte et des lettres
+creator: johann-caspar-fussli
+created: 1755
+kind: oil painting
+medium: Oil on canvas
+dimensions: [56.5, 77.5]
+institution: kunsthaus-zurich
+inventory_number: "2560"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1568/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586247
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d2/Johann_Caspar_F%C3%BCssli_-_Quodlibet_mit_einem_Gem%C3%A4lde%2C_Zeichnungen%2C_einem_Schabkunstblatt_und_Briefen_-_2560_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Caspar_F%C3%BCssli_-_Quodlibet_mit_einem_Gem%C3%A4lde,_Zeichnungen,_einem_Schabkunstblatt_und_Briefen_-_2560_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Johann Caspar Füssli
+provenance:
+  - owner: person/hans-e-pfleghard
+    ended: 1941
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1568/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; Sitzungsprotokoll der Sammlungskommission, 08.10.1941, III.i, 15.01.1942, VI.f, Archiv ZKG/KHZ, 10.30.10.42; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 54."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1941
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 250
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1568/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1568/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1568/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1568/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1568/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1568/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1568/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1568/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

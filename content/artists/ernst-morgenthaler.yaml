@@ -1,0 +1,46 @@
+public_id: 115109
+name: Ernst Morgenthaler
+given_name: Ernst
+family_name: Morgenthaler
+birth: 1887-12-11
+death: 1962-09-07
+wikidata_id: Q1359543
+metadata:
+  sources: [Wikidata Q1359543 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q1359543
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q1359543
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b2/Zonder_titel_PK-F-EAA.7018_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Zonder_titel_PK-F-EAA.7018_(cropped).jpg
+    license: Public domain
+    credit: Emmy Andriesse for Anefo
+identifiers:
+  bnf: 12555974k
+  gnd: "118736922"
+  hls: "022537"
+  idref: "182551008"
+  lc: n83300875
+  rkd: "57742"
+  sikart: "4000068"
+  ulan: "500085340"
+  viaf: "32791894"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q1359543
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q1359543

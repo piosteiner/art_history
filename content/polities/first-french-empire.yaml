@@ -36,6 +36,7 @@ names:
     role: translation
     text: Первая французская империя
 period: 1804-05-18/1815-07-07
+country_codes: [FR, BE, NL, LU, DE, IT]
 wikidata_id: Q71084
 metadata:
   sources: [Wikidata Q71084 (retrieved 2026-10-29)]

@@ -1,0 +1,81 @@
+public_id: 115140
+title_lang: es
+title: Elément mécanique
+names:
+  - lang: en
+    role: translation
+    text: Mechanisches Element
+  - lang: en
+    role: translation
+    text: Mechanical Element
+creator: fernand-leger
+created: 1924
+kind: oil painting
+medium: Oil on canvas
+dimensions: [97, 130]
+institution: kunsthaus-zurich
+inventory_number: 1952/0059
+web_url: https://collection.kunsthaus.ch/de/collection/item/2443/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584929
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/%C3%89l%C3%A9ment_m%C3%A9canique%2C_1924_-_Fernand_L%C3%A9ger.jpg/1280px-%C3%89l%C3%A9ment_m%C3%A9canique%2C_1924_-_Fernand_L%C3%A9ger.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89l%C3%A9ment_m%C3%A9canique,_1924_-_Fernand_L%C3%A9ger.jpg
+    license: Public domain
+    credit: Fernand Léger
+provenance:
+  - owner: institution/galerie-louis-carre
+    role: dealer
+    ended: 1952-12-05
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2443/
+        note: "Footnote: Brief von René Wehrli an die Galerie Louis Carré, 5.12.1952, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.309."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1952-12-05
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 34020
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2443/
+        note: "Footnote: Wie oben Fussnote 3; ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: 1992.II.322-323.385
+    label: Bauquier (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2443/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2443/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2443/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2443/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2443/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2443/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2443/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

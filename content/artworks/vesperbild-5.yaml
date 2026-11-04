@@ -1,0 +1,123 @@
+public_id: 115267
+title_lang: en
+title: Vesperbild
+names:
+  - lang: en
+    role: translation
+    text: Pietà
+attribution_label: Anonymous, Central German
+created: before 1320–1340
+kind: sculpture
+medium: Hardwood with parts of original and later polychromy
+dimensions: [116, 47, 33]
+institution: kunsthaus-zurich
+inventory_number: 1955/0006
+web_url: https://collection.kunsthaus.ch/de/collection/item/3012/
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/rosa-weiller
+    acquired: 1921 or earlier
+    ended: 1929 or earlier
+    place: frankfurt
+    label: née Goldschmidt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3012/
+        note: "Footnote: Lübbecke 1922, Tafel 72: Vesperbild. Lindenholz, mit Resten alter Fassung. Mittelrheinischer Meister des ersten Viertels des dreizehnten Jahrhunderts. In der Sammlung Weiller zu Frankfurt a. M.; Kat. Frankfurter Kunstverein 1921, S. 18, Nr. 18; Auktion Helbing 1930: Da die Pieta in dem Auktionskatalog nicht aufgeführt wird, kann angenommen werden, dass sie noch zuvor verkauft worden war. Ob noch z…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/oscar-bondy
+    ended: 1939-12-01
+    place: vienna
+    label: Wien and New York
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3012/
+        note: "Footnote: Sicherstellungsbescheid des Wiener Magistrates über die Kunstsammlung des Industriellen Oskar Bondy erging am 1. Juli 1938 und die Beschlagnahmung der Sammlung wurde am 1. Dezember 1939 vorgenommen per Beschluss des Landgerichtes Wien über die Einziehung zugunsten des Deutschen Reiches; siehe Theodor Brückler, Summarium Karton 15, 15, BDA-Archiv Wien, https://www.provenienzforschung.gv.at/wp-conte…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bundesdenkmalamt
+    role: possessor
+    acquired: 1939-12-01
+    ended: 1940-10
+    method: confiscation
+    direct: true
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3012/
+        note: "Footnote: Wie oben Fussnote 5; Auskunft per E-Mail aus dem Landesmuseum Kärtnen, Klagenfurt, 21.11.2024: «bei der sogenannten Großen Führerzuteilung am 2. Juli 1940 einige Objekte auch dem Museum in Klagenfurt zugesprochen (Bondy Nr. 928), wohin das betroffene Stück Mitte Oktober 1940 auch tatsächlich gebracht wurde»; sowie Liste aus dem Wiener Denkmalamt mit der Führerzuteilung vom 02.07.1940, darin: Nr. B…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/landesmuseum-karnten
+    role: possessor
+    acquired: 1940-10
+    ended: 7 September 1949 or later
+    method: transfer
+    direct: true
+    place: klagenfurt
+    label: allocated by order of Hitler (Führerzuteilung) of 2 July 1940
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3012/
+        note: "Footnote: Wie oben Fussnote 6, Quelle hier angegeben als BDAArchiv_RestMat_K13_M00_04_ListeAIII_Gaumuseen der Ostmark_Niededonau, Salzburg, Innsbruck, Klagenfurt, Graz, Bregenz; ab April 1943 wurde die Pietà im Rahmen von Luftschutzmassnahmen ausgelagert; vgl. zudem Akten des Bundesdenkmalamts Wien, BDA-Archiv K15-1, PM Bondy Oscar M 6877-47, fol. 16: Gegenstand: Sammlung Bondy, Oskar – vom Mus. Klagenfurt …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/elisabeth-anna-bondy
+    acquired: 7 September 1949 or later
+    method: restitution
+    direct: true
+    place: new-york-city
+    label: née Soinig
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3012/
+        note: "Footnote: Ausfuhrbewilligung vom 07.09.1949, wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/johannes-hinrichsen
+    role: dealer
+    ended: 1955
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3012/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; ZKG/KHZ, Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1955
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 36000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3012/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

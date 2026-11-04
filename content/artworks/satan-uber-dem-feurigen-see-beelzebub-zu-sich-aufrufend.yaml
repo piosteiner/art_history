@@ -1,0 +1,160 @@
+public_id: 114981
+title_lang: de
+title: Satan über dem feurigen See, Beelzebub zu sich aufrufend
+names:
+  - lang: en
+    role: translation
+    text: Satan ruft seine Legionen auf
+  - lang: en
+    role: translation
+    text: Satan Summoning His Legions
+creator: henry-fuseli
+created: 1802
+kind: oil painting
+medium: Oil on canvas
+dimensions: [91.5, 71]
+institution: kunsthaus-zurich
+inventory_number: 1946/0013
+web_url: https://collection.kunsthaus.ch/de/collection/item/1408/
+on_loan: true
+on_loan_since: 1946
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584964
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e2/Henry_Fuseli_-_Satan_%C3%BCber_dem_feurigen_See%2C_Beelzebub_zu_sich_aufrufend_-_1946-0013_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henry_Fuseli_-_Satan_%C3%BCber_dem_feurigen_See,_Beelzebub_zu_sich_aufrufend_-_1946-0013_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Henry Fuseli
+provenance:
+  - owner: artist/henry-fuseli
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1827-05-28
+    ended: 1827-05-28
+    method: auction
+    place: london
+    label: Lot 90
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+        note: "Footnote: Auktion Christie London 28.05.1827, S. 7, Lot 90, https://archive.org/details/frick-31072001230384/mode/2up (22.04.2026)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/thomas-lawrence
+    acquired: 1827-05-28
+    ended: 1830 or earlier
+    method: purchase
+    direct: true
+    price:
+      amount: 26
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+        note: "Footnote: Auktion Christie, wie oben Fussnote 3; Knowles 1831, Bd. 1, S. 205; Schiff 1978, S. 96/97, Nr. 119."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/thomas-lawrence
+    role: estate
+    acquired: 1830
+    method: inheritance
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/john-st-aubyn
+    label: St Aubyn
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+        note: "Footnote: Beschriftung auf dem Keilrahmen der Werkrückseite."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-hurlimann
+    acquired: 1941-08-17 or earlier
+    ended: 1944-02-15
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+        note: "Footnote: Sitzungsprotokoll des Vorstandes der VZK, 04.12.1946, Archiv ZKG/KHZ, 10.50.20."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/lily-hurlimann-meyer
+    acquired: 1944-02-15
+    ended: 1946-12-04
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 29.11.1946, II. S. 4, Archiv ZKG/KHZ, 10.30.10.42."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zentralbibliothek-zurich
+    role: agent
+    acquired: 1946-11-29
+    ended: 1946-12-04
+    direct: true
+    place: zurich
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 10; Sitzungsprotokoll des Vorstands, 20.12.1946, S. 3, Archiv ZKG/KHZ, 10.30.10.12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1946-12-04
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 1500
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+        note: "Footnote: Sitzungsprotokoll des Vorstands, wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "104.235"
+    label: Schiff 1978 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

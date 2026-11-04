@@ -1,0 +1,134 @@
+public_id: 115265
+title_lang: en
+title: Hochzeitsfest in einer Bauernschenke
+names:
+  - lang: en
+    role: translation
+    text: Wedding Party in a Farmer's Tavern
+  - lang: en
+    role: former
+    text: Hochzeitsfest in einer holl. Bauernscheure
+  - lang: de
+    role: former
+    text: Ein Hochzeitsfest mit zahlreichen Figuren
+creator: jan-steen
+created: c. 1665
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [85, 109.5]
+institution: kunsthaus-zurich
+inventory_number: R 35
+web_url: https://collection.kunsthaus.ch/de/collection/item/3011/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586292
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8d/Jan_Steen_-_Hochzeitsfest_in_einer_Bauernschenke_-_R_35_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jan_Steen_-_Hochzeitsfest_in_einer_Bauernschenke_-_R_35_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jan Steen
+provenance:
+  - owner: person/gregory-osborne-page-turner
+    ended: 1815-04-19
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3011/
+        note: "Footnote: Smith 1833, Bd. 4, Kat.-Nr. 99; Hofstede de Groot 1907 Bd. I, Nr. 480 a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/phillips
+    role: agent
+    acquired: 1815-04-19
+    ended: 1815-04-19
+    method: auction
+    direct: true
+    place: london
+    label: the Property of Sir G. Osborne Page Turner; Bart. at Battlesden Park; Near Woburn; Bedfordshire; Lot. 198
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3011/
+        note: "Footnote: Wie oben Fussnote 3; RKD Nederlands Instituut voor Kunstgeschiedenis, fichescollectie Cornelis Hofstede de Groot, card number: 1512923, https://rkd.nl/en/explore/excerpts/record?query=steen+marriage&start=5 (25.05.2023)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Mrs. M. Berryman
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3011/
+        note: "Footnote: Etikette Werkrückseite: Nr. 94 ersichtlich; ZKG/KHZ, Werkdossier, handschriftliche Notiz von Leopold Ruzicka."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/nathan-katz
+    ended: 1947
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3011/
+        note: "Footnote: ZKG/KHZ Werkdossier, schriftliche Aufstellung von Nathan Katz."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1947
+    ended: 1948-12-17
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3011/
+        note: "Footnote: ZKG/KHZ Werkdossier, wie oben Fussnote 6; Inventarkarte; Sitzungsprotokoll der Sammlungskommission, 23.12.1948 I., Archiv ZKG/KHZ, 10.30.10.42; Zürcher Kunstgesellschaft 1949 Jahresbericht, S. 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1948-12-27
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3011/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 9; Zürcher Kunstgesellschaft 1949 Jahresbericht, wie oben Fussnote 9; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 106."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3011/
+        note: "Footnote: Wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3011/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3011/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3011/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3011/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3011/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3011/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3011/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3011/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

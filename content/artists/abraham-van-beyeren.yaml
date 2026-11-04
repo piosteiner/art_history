@@ -1,0 +1,52 @@
+public_id: 115052
+name: Abraham van Beyeren
+given_name: Abraham
+family_name: van Beyeren
+birth: c. 1620
+death: 1690-03
+wikidata_id: Q330848
+metadata:
+  sources: [Wikidata Q330848 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q330848
+  - type: born_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q330848
+  - type: died_in
+    to: place/overschie
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q330848
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f6/Abraham_van_Beyeren_-_reflected_self-portrait_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Abraham_van_Beyeren_-_reflected_self-portrait_(cropped).jpg
+    license: Public domain
+    credit: Abraham van Beijeren
+identifiers:
+  bnf: 14969709q
+  dome: "3371"
+  gnd: "174184522"
+  idref: "189713151"
+  kulturnav: c4161632-57ab-48af-9be7-f3f44dcb55e3
+  lc: nr91043036
+  rkd: "7990"
+  ulan: "500029249"
+  viaf: "24459171"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q330848
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q330848

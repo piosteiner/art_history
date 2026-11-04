@@ -1,0 +1,79 @@
+public_id: 115438
+title_lang: de
+title: Bildnis Louise Berchtold, Tochter von Jacques Berchtold
+names:
+  - lang: fr
+    role: translation
+    text: Portrait of Louise Berchtold, Daughter of Jacques Berchtold
+attribution_label: Anonymous, Zürich
+created: early 19th century
+created_span: uncertain
+kind: painting
+medium: Wax painting
+dimensions: [13.5]
+institution: kunsthaus-zurich
+inventory_number: 1951/0003
+web_url: https://collection.kunsthaus.ch/de/collection/item/3845/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584731
+provenance:
+  - owner: person/hedwig-homberger
+    ended: 1950-06-16
+    method: inheritance
+    place: uster
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3845/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 25.02.1951, IV. Schenkungen, S. 3, Archiv ZKG/KHZ, 10.30.10.42a. Das Werk kam zusammen mit weiteren Werken (zwei Portraits von der Familie Homberger und zwei Portraits der Familie Berchtold), als Legat an das Kunsthaus. Laut Stadtarchiv Uster hiess die Mutter von Hedwig Homberger Rosina geb. Berchtold, demnach ist es wahrscheinlich, dass sie mit der darge…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hedwig-homberger
+    role: estate
+    acquired: 1950-06-16
+    ended: 1951-02-25
+    method: inheritance
+    direct: true
+    place: uster
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3845/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1951-02-25
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3845/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3845/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3845/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3845/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3845/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3845/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3845/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3845/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

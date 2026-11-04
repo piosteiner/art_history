@@ -1,0 +1,41 @@
+public_id: 115569
+name: Solothurn
+names:
+  - lang: ja
+    role: translation
+    text: ゾロトゥルン州
+  - lang: ko
+    role: translation
+    text: 졸로투른
+  - lang: fr
+    role: translation
+    text: Soleure
+  - lang: it
+    role: translation
+    text: Soletta
+  - lang: es
+    role: translation
+    text: Soleura
+  - lang: ru
+    role: translation
+    text: Золотурн
+kind: settlement
+parent: canton-of-berne
+country_code: CH
+location: [7.63333, 47.15]
+wikidata_id: Q11929
+metadata:
+  sources: [Wikidata Q11929 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q11929
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q11929
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q11929

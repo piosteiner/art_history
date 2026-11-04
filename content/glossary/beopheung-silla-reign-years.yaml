@@ -1,0 +1,18 @@
+public_id: 113359
+name: Beopheung of Silla (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 법흥왕
+  - lang: ko-Hani
+    role: alternative
+    text: 法興王
+category: calendar
+definition: "The reign years of King Beopheung of Silla (法興王, 법흥왕), by which Korean histories date 514–540: 514 is Beopheung 1, 540 Beopheung 27."
+description_md: |-
+  **Beopheung** (法興王, 법흥왕): the years of the reign of King Beopheung of Silla. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 523 is Beopheung 10 (법흥왕 10년). The year of the accession, 514, counts as the first year.
+
+  Before: [[jijeung-maripgan-silla-reign-years|Jijeung Maripgan]]. After: [[jinheung-silla-reign-years|Jinheung]].
+sources:
+  definition:
+    - source: dila-time-authority

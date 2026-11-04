@@ -1,0 +1,200 @@
+public_id: 114999
+title_lang: de
+title: Bauernhäuser unter Bäumen
+names:
+  - lang: en
+    role: translation
+    text: Farmhouses under Trees
+  - lang: de
+    role: former
+    text: Landschaft
+  - lang: de
+    role: former
+    text: Landschaft mit Bäumen und Häusern
+creator: meindert-hobbema
+created: 1665
+kind: oil painting
+medium: Oil on oak panel
+dimensions: [60.5, 84.5]
+institution: kunsthaus-zurich
+inventory_number: R 14
+web_url: https://collection.kunsthaus.ch/de/collection/item/1524/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586232
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/38/Meindert_Hobbema_-_Bauernh%C3%A4user_unter_B%C3%A4umen_-_R_14_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Meindert_Hobbema_-_Bauernh%C3%A4user_unter_B%C3%A4umen_-_R_14_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Meindert Hobbema
+provenance:
+  - owner: person/george-vivian
+    ended: 1833-06-01
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+        note: "Footnote: ZKG/KHZ Werkdossier, Korrespondenz, Christopher Wright, 28.10.1983: «The picture was certainly in the George Vivian Sale, London, Christie’s, 1833 when it made £399. (380 guineas). By 1835 it was in the collection of Charles Heusch, London and it was still there in 1854 when Waagen saw it.»; Smith 1835, Bd. 6, S. 150, Nr. 101."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1833-06-01
+    ended: 1833-06-01
+    method: auction
+    direct: true
+    place: london
+    label: Lot 97
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+        note: "Footnote: Wie oben Fussnote 3; Hofstede de Groot 1911 Bd. 4, S. 444, Nr. 223."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/charles-heusch
+    acquired: 1835 or earlier
+    ended: 1848
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Frederick Heusch
+    acquired: 1848
+    ended: 1854 or later
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+        note: "Footnote: Waagen 1854, Bd. 2, S. 252-255."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/lionel-von-rothschild
+    acquired: 1855
+    ended: 1911
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+        note: "Footnote: E-Mail-Korrespondenz, Natalie Attwood, 10.01.2023: «The Hobbema was in Alfred de Rothschild's (1842-1918) collection at the time of his death and I have found it in the inventory (RAL 000/174C) of his country estate, Halton House, made in 1919.  It was marked E for Exbury, which meant it was inherited by his nephew Lionel de Rothschild (1882-1942) who lived at Exbury House.»; Gerson 1947, S. 43: D…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alfred-charles-de-rothschild
+    acquired: 1911 or earlier
+    ended: 1918-01-31
+    method: inheritance
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+        note: "Footnote: ZKG/KHZ Werkdossier, Rechnung der Galerie Katz an Leopold Ruzicka, 11.9.1947; ZKG/KHZ Werkdossier, Korrespondenz H. Gerson an Leopold Ruzicka, 16.12.1947: «Hofstede de Groot hat in seinem Handexemplar bei nr.223 notiert, dass das Bild identisch ist mit einem Gemälde, das er […] gesehen hat auf der Ausstellung der Grafton Gallery, London, 1911, nr. 64»; E-Mail-Korrespondenz, Attwood, wie oben Fussn…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/lionel-von-rothschild
+    acquired: 31 January 1918 or later
+    ended: 1942-01-28
+    method: inheritance
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+        note: "Footnote: E-Mail-Korrespondenz, Attwood, wie oben Fussnote 8; «Lionel died in 1942 and his son Edmund (1916-2009), to pay for death duties etc., sold items from his father's collection. I have found the Hobbema in the April 1942 inventory (000/920) of Lionel's possessions, with a pencil annotation which explains it was sold to Mr Partridge.  In his biography, Edmund de Rothschild explains that the sale occu…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/edmund-leopold-de-rothschild
+    acquired: 28 January 1942 or later
+    ended: 1942-04
+    method: inheritance
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+        note: "Footnote: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/claude-partridge
+    acquired: 1942-04
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+        note: "Footnote: Wie oben Fussnote 10; ZKG/KHZ Werkdossier, Rechnung der Galerie Katz an Leopold Ruzicka, 11.09.1947."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/nathan-katz
+    role: dealer
+    ended: 1947-09-11
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+        note: "Footnote: ZKG/KHZ Werkdossier, Rechnung, wie oben Fussnote 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1947-09-11
+    ended: 1948-12-27
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+        note: "Footnote: ZKG/KHZ Werkdossier, wie oben Fussnote 12; Sitzungsprotokoll der Sammlungskommission, 23.12.1948 I., Archiv ZKG/KHZ, 10.30.10.42; Zürcher Kunstgesellschaft 1949 Jahresbericht, S. 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1948-12-27
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 15; Zürcher Kunstgesellschaft 1949 Jahresbericht, wie oben Fussnote 15; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 110."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 16."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1524/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

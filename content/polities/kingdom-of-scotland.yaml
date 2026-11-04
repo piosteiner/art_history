@@ -31,6 +31,7 @@ names:
     role: translation
     text: Королевство Шотландия
 period: 801 – 30 April 1707
+country_codes: [GB]
 wikidata_id: Q230791
 metadata:
   sources: [Wikidata Q230791 (retrieved 2026-10-29)]

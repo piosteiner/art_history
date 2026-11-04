@@ -1,0 +1,84 @@
+public_id: 113441
+title_lang: en
+title: Sazai Hall at the Temple of the Five Hundred Arhats
+names:
+  - lang: ja
+    role: original
+    text: 五百らかん寺さざゐどう
+  - Gohyaku-Rakan-ji Sazaidō
+  - Gohyakurakan-ji Sazaidō
+  - Gohyaku Rakanji Sazaidō
+  - Gohyakurakanji Sazaidō
+  - lang: en
+    role: original
+    text: Sazai hall - Temple of Five Hundred Rakan
+  - lang: fr
+    role: translation
+    text: Terrasse Sazai - le Temple de 500 Rakan
+  - lang: de
+    role: translation
+    text: Der Turban-Turm im Tempel der 500 Rakan
+  - lang: es
+    role: translation
+    text: El salón Sazai en el templo de los quinientos rakan
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 五百らかん寺さざゐどう
+  - lang: zh
+    role: translation
+    text: 五百羅漢寺榮螺堂
+parent: thirty-six-views-of-mount-fuji
+part_number: "23"
+creator: katsushika-hokusai
+created: 1830/1832
+created_label: c. 1830–1832
+created_span: uncertain
+dimensions: [25.5, 38.3]
+institution: metropolitan-museum-of-art
+inventory_number: JP1335
+web_url: https://www.metmuseum.org/art/collection/search/37321
+location: [139.82667, 35.68958]
+wikidata_id: Q18173408
+metadata:
+  sources: [Wikidata Q18173408 (retrieved 2026-11-03)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+    period: 1831
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/original/DP141020.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/37321
+    license: Public domain
+    credit: The Metropolitan Museum of Art
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173408
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173408
+  created:
+    - url: https://www.metmuseum.org/art/collection/search/37321
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173408
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q18173408
+  dimensions:
+    - accessed: 2026-11-03
+      property: P2048
+      wikidata: Q18173408
+  institution:
+    - url: https://www.metmuseum.org/art/collection/search/37321
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.metmuseum.org/art/collection/search/37321
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03

@@ -29,6 +29,7 @@ names:
     role: translation
     text: оккупированная союзниками Австрия
 period: 1945/1955
+country_codes: [AT]
 wikidata_id: Q596239
 metadata:
   sources: [Wikidata Q596239 (retrieved 2026-10-29)]

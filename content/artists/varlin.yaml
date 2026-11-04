@@ -1,0 +1,39 @@
+public_id: 114889
+name: Varlin
+birth: 1900-03-16
+death: 1977-10-30
+wikidata_id: Q685428
+metadata:
+  sources: [Wikidata Q685428 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q685428
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q685428
+identifiers:
+  bnf: 13165572f
+  gnd: "118626159"
+  hls: "022113"
+  idref: "035078510"
+  lc: n83069535
+  rkd: "79468"
+  sikart: "4000086"
+  ulan: "500008515"
+  viaf: "12479902"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q685428
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q685428

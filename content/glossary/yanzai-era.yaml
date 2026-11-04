@@ -1,0 +1,15 @@
+public_id: 113071
+name: Yanzai
+names:
+  - lang: zh
+    role: original
+    text: 延載
+category: calendar
+definition: "Chinese era name (延載) of the Zhou of Empress Wu for the year 694: 694 is Yanzai 1 (元年), its only year."
+description_md: |-
+  **Yanzai** (延載) is a Chinese era name ([[nianhao]]) of the Zhou of Empress Wu, proclaimed in 694 under Empress Wu Zetian (則天皇后). Its years are counted in lunar years: 694 is Yanzai 1 (元年), its only year.
+
+  Before: [[changshou-era|Changshou]]. After: [[zhengsheng-era|Zhengsheng]].
+sources:
+  definition:
+    - source: dila-time-authority

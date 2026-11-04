@@ -1,0 +1,18 @@
+public_id: 113291
+name: Sosurim of Goguryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 소수림왕
+  - lang: ko-Hani
+    role: alternative
+    text: 小獸林王
+category: calendar
+definition: "The reign years of King Sosurim of Goguryeo (小獸林王, 소수림왕), by which Korean histories date 371–384: 371 is Sosurim 1, 384 Sosurim 14."
+description_md: |-
+  **Sosurim** (小獸林王, 소수림왕): the years of the reign of King Sosurim of Goguryeo. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 380 is Sosurim 10 (소수림왕 10년). The year of the accession, 371, counts as the first year.
+
+  Before: [[gogugwon-goguryeo-reign-years|Gogugwon]]. After: [[gogugyang-goguryeo-reign-years|Gogugyang]].
+sources:
+  definition:
+    - source: dila-time-authority

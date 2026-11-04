@@ -1,0 +1,101 @@
+public_id: 115032
+title_lang: en
+title: Pain et Gigot d’agneau
+names:
+  - lang: en
+    role: translation
+    text: Hammelkeule und Brot
+  - lang: en
+    role: translation
+    text: Still Life of a Leg of Mutton and Bread
+creator: paul-cezanne
+created: c. 1866
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [27, 35.5]
+institution: kunsthaus-zurich
+inventory_number: "2440"
+web_url: https://collection.kunsthaus.ch/de/collection/item/170/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q108558566
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/45/Paul_C%C3%A9zanne_-_Pain_et_Gigot_d%E2%80%99agneau_-_2440_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_Pain_et_Gigot_d%E2%80%99agneau_-_2440_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Paul Cézanne
+provenance:
+  - owner: person/ambroise-vollard
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/170/
+        note: "Footnote: Feilchenfeldt/Warman/Nash 2021 FWN 705, https://www.cezannecatalogue.com/catalogue/entry.php?id=94 (11.01.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/anna-emma-dodeck
+    role: dealer
+    ended: 13 October 1927 or later
+    place: hamburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/170/
+        note: "Footnote: Vgl. https://heinemann.gnm.de/de/recherche.html (15.06.2026): Cézanne, Paul (1839-1906), PND-Nr.: 118519964, Kunstwerk-ID: 40105, Hammelkeule, Direktlink: http://heinemann.gnm.de/de/kunstwerk-40105.htm, Maße (h x b): 27 x 38 cm, Ankaufspreis: 14000, Ausgangsdatum: 13.10.1927, Typ: Angebot, Kunde(n): Frl. Dodeck, Hamburg, Anbieter, Anmerkungen: Frühbild, nicht signiert; Kartei angebotene Bilder, Do…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-neupert
+    role: dealer
+    acquired: 1936 or earlier
+    ended: 1938-07-01
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/170/
+        note: "Footnote: Venturi 1936, S. 80, Nr. 65: «Collection Galerie Neupert, Zurich. Photo Galerie Neupert»; ZKG/KHZ, Inventarbuch Slg.; Sitzungsprotokolle der Sammlungskommission, 01.07.1938 und 07.07.1938, Archiv ZKG/KHZ, 10.30.10.41."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1938-07-01
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/170/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; Sitzungsprotokoll der Sammlungskommission, 07.07.1938, Archiv ZKG/KHZ, 10.30.10.41"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "65"
+    label: Venturi 1936 (catalogue raisonné)
+  - number: II.80
+    label: Rewald 1996 (catalogue raisonné)
+  - number: "705"
+    label: FWN (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/170/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/170/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/170/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/170/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/170/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/170/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/170/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

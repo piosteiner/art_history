@@ -1,0 +1,58 @@
+public_id: 115412
+name: Cornelis de Vos
+given_name: Cornelis
+family_name: de Vos
+birth: 1584
+death: 1651-05-09
+wikidata_id: Q474934
+metadata:
+  sources: [Wikidata Q474934 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/spanish-netherlands
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q474934
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q474934
+  - type: worked_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q474934
+  - type: associated_with
+    to: movement/flemish-baroque-painting
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q474934
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Van_Dyck_and_Lucas_Vorsterman_I_-_Portrait_of_Cornelis_de_Vos.jpeg/1280px-Van_Dyck_and_Lucas_Vorsterman_I_-_Portrait_of_Cornelis_de_Vos.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Van_Dyck_and_Lucas_Vorsterman_I_-_Portrait_of_Cornelis_de_Vos.jpeg
+    license: Public domain
+    credit: After Anthony van Dyck / Lucas Vorsterman the Elder
+identifiers:
+  bnf: 12273750f
+  dome: "3405"
+  gnd: "119055252"
+  idref: 03154231X
+  kulturnav: 1ea2e28d-ed3b-4bb1-8c8c-f4d10175cea3
+  lc: nr92021137
+  rkd: "81876"
+  ulan: "500022702"
+  viaf: "88862647"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q474934
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q474934

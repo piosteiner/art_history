@@ -23,6 +23,19 @@ death: 1922-02-01
 wikidata_id: Q297636
 metadata:
   sources: [Wikidata Q297636 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q297636
+  - type: born_in
+    to: place/hagi
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q297636
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Yamagata_Aritomo.jpg/1280px-Yamagata_Aritomo.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Yamagata_Aritomo.jpg

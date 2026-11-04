@@ -1,0 +1,174 @@
+public_id: 115577
+title_lang: fr
+title: L'Entrée des croisés à Constantinople (d'après Delacroix)
+names:
+  - lang: en
+    role: translation
+    text: Einzug der Kreuzritter in Konstantinopel (Nach Delacroix)
+  - lang: en
+    role: translation
+    text: The Entry of the Crusaders into Constantinople (After Delacroix)
+creator: edgar-degas
+created: c. 1860
+created_span: uncertain
+kind: oil painting
+medium: Oil on cardboard
+dimensions: [35, 38]
+institution: kunsthaus-zurich
+inventory_number: 2006/0019
+web_url: https://collection.kunsthaus.ch/de/collection/item/6920/
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124288350
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e3/Edgar_Degas%2C_after_Eug%C3%A8ne_Delacroix_-_L%27Entr%C3%A9e_des_crois%C3%A9s_%C3%A0_Constantinople_%28d%27apr%C3%A8s_Delacroix%29_-_2006-0019_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Edgar_Degas,_after_Eug%C3%A8ne_Delacroix_-_L%27Entr%C3%A9e_des_crois%C3%A9s_%C3%A0_Constantinople_(d%27apr%C3%A8s_Delacroix)_-_2006-0019_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: After Eugène Delacroix / Edgar Degas
+provenance:
+  - owner: person/jeanne-fevre
+    ended: 1934-06-12
+    method: inheritance
+    direct: true
+    place: nice
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6920/
+        note: "Footnote: Werkverzeichnis Schulmann 2019 MS-42, https://www.degas-catalogue.com/recherche_fiches.php?id=42 (12.01.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-charpentier
+    role: agent
+    acquired: 1934-06-12
+    ended: 1934-06-12
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 138; Experts MM. Schoeller & A. Weill; Paris, Vente Fèvre
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6920/
+        note: "Footnote: Wie oben Fussnote 2: «André Schoeller [par ou pour lui ?]»; Brief von Alfred Vallotton, Les Arts Plastiques Moderne, Galerie Mouradian & Vallotton, Paris, 20.11.1969 an René Wehrli, Kunsthaus Zürich, vgl. ZKG/KHZ, Dossier Depot Wehrli gelöscht."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/andre-schoeller
+    role: dealer
+    acquired: 1934-06-12
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 4350
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6920/
+        note: "Footnote: Archives de Paris, Fonds Bellier, cote D149 E3 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/robert-ellissen
+    ended: 1944
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6920/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    role: possessor
+    acquired: 1944-06
+    method: confiscation
+    direct: true
+    place: talence
+    label: Château Raba; Talence (Gironde)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6920/
+        note: "Footnote: Wie oben Fussnote 2: «Spolié en juillet 1944 au château de Raba, Talence près de Bordeaux [Voir liste de réclamation des biens spoliés au Ministère des Affaires étrangères : https://www2.culture.gouv.fr/documentation/mnr/MnR-rbs.htm] - Liste des réclamations du 3 juillet 1945»; Cultural Plunder by the Einsatzstab Reichsleiter Rosenberg. Database of Art Objects at the Jeu de Paume, https://www.errp…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jean-ellissen
+    ended: 1959-03-18
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6920/
+        note: "Footnote: Archives de Paris, versement D150E3 30. Procès-verbal de vente: Etude Rheims, 9471, 18.03.1959, Galerie Charpentier, Paris, dossier Georges Arnaud: Das Werk wird als Nr. 10 (Ellissen), Nr. 39 (Lot-Nr.), Nr. 46 (Laufnr. Georges Arnaud) vermerkt und für 520 000 FRF von Jean Ellissen an Mouradian, 41 rue de Seine, verkauft (Galerie Mouradian-Vallotton)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-charpentier
+    role: agent
+    acquired: 1959-03-18
+    ended: 1959-03-18
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 39
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6920/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-mouradian-vallotton
+    role: dealer
+    acquired: 1959-03-18
+    ended: 1970 or later
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 520000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6920/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/rene-wehrli
+    acquired: 1970
+    ended: 2005
+    method: purchase
+    direct: true
+    place: zurich
+    label: (Direktor des Kunsthaus Zürich 1950–1976); Zürich, Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6920/
+        note: "Footnote: Korrespondenz Claude Vallotton an René Wehrli, 24.02.1970, vgl. ZKG/KHZ, Dossier Depot Wehrli gelöscht."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6920/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: (Online)
+    label: Schulman 2021 42 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6920/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6920/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6920/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6920/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6920/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6920/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6920/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

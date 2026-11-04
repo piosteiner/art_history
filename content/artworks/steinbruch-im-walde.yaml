@@ -1,0 +1,146 @@
+public_id: 115330
+title_lang: en
+title: Steinbruch im Walde
+names:
+  - lang: en
+    role: translation
+    text: Stone Quarry in a Wood
+  - lang: de
+    role: former
+    text: Steinsegmente unterhalb eines verwaldeten Hügels
+  - lang: de
+    role: former
+    text: Steinsegmente unterhalb eines verwaldeten Hügels
+  - lang: en
+    role: former
+    text: Grosse Landschaft
+  - lang: en
+    role: former
+    text: Steingrube mit Wald
+  - lang: de
+    role: former
+    text: Steingrube unterhalb eines Waldhügels
+creator: jacob-van-ruisdael
+created: 1650/1665
+created_label: c. 1655/1660
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [64.5, 71.5]
+institution: kunsthaus-zurich
+inventory_number: R 30
+web_url: https://collection.kunsthaus.ch/de/collection/item/3340/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584728
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/37/Jacob_van_Ruisdael_-_Steinbruch_im_Walde_-_R_30_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jacob_van_Ruisdael_-_Steinbruch_im_Walde_-_R_30_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jacob van Ruisdael
+provenance:
+  - owner: person/ralph-william-grey
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+        note: "Footnote: ZKG/KHZ, Archivmaterialien Feilchenfeldt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/gotz-martius
+    acquired: 1890
+    ended: 1911 or later
+    place: kiel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+        note: "Footnote: Hofstede de Groot 1911, S. 182, Nr. 616; Rosenberg 1928, S. 97, Nr. 407."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hans-duensing
+    ended: 1949-11-21 or earlier
+    place: boizenburg-elbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alice-scherrer-von-guggenberger
+    role: agent
+    direct: true
+    place: schaffhausen
+    label: intermediary; Schaffhausen and Sorengo
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+        note: "Footnote: Wie oben Fussnote 3: «Ruzicka hat die beiden Ruisdaels erworben. […] Die Besitzerin ist erschreckt, weil der 'böse' Onkel D [Duensing] die Bilder dem Händler Hugo Moser versprochen hatte. [Die Bilder waren aber in der Schweiz bei der Nichte].»; LIVE AUCTION 5422. IMPRESSIONIST & MODERN PAINTINGS,WATERCOLOURS & SCULPTURE PI, Christie’s, London, 01.10.1995, https://www.christies.com/en/lot/lot-26543…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt-senior
+    role: agent
+    acquired: 1949-11-21
+    ended: 1949-11-21
+    direct: true
+    place: zurich
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+        note: "Footnote: Wie oben Fussnote 3; ZKG/KHZ Werkdossier, Rechnung von Walter Feilchenfeldt an Leopold Ruzicka, 21.11.1949."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1949-11-21
+    ended: 2005
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+        note: "Footnote: ZKG/KHZ Werkdossier, wie oben Fussnote 9; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 107."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+        note: "Footnote: Wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "356.484"
+    label: Slive 2001 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

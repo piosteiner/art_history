@@ -1,0 +1,89 @@
+public_id: 115302
+title_lang: en
+title: Gabrielle Vallotton à sa table de toilette
+names:
+  - lang: en
+    role: translation
+    text: Madame Félix Vallotton à sa table de toilette
+  - lang: en
+    role: translation
+    text: Gabrielle Vallotton am Toilettentisch
+  - lang: en
+    role: translation
+    text: Gabrielle Vallotton at Her Dressing Table
+creator: felix-vallotton
+created: 1899
+kind: painting
+medium: Tempera on cardboard
+dimensions: [57.5, 78]
+institution: kunsthaus-zurich
+inventory_number: "2457"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3186/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124288385
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f8/F%C3%A9lix_Vallotton_-_Gabrielle_Vallotton_%C3%A0_sa_table_de_toilette_-_2457_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Vallotton_-_Gabrielle_Vallotton_%C3%A0_sa_table_de_toilette_-_2457_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Félix Vallotton
+provenance:
+  - owner: artist/felix-vallotton
+    role: estate
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3186/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jacques-rodrigues-hendriques
+    role: dealer
+    ended: 1938
+    method: inheritance
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3186/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1938
+    method: purchase
+    direct: true
+    place: zurich
+    label: bought from the exhibition at the Kunsthaus Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3186/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "289"
+    label: Ducrey (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3186/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3186/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3186/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3186/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3186/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3186/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3186/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

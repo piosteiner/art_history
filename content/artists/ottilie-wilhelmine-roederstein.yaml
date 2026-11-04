@@ -1,0 +1,53 @@
+public_id: 115163
+name: Ottilie Wilhelmine Roederstein
+given_name: Ottilie Wilhelmine
+family_name: Roederstein
+birth: 1859-04-22
+death: 1937-11-26
+wikidata_id: Q2037804
+metadata:
+  sources: [Wikidata Q2037804 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/german-reich
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q2037804
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q2037804
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q2037804
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Roederstein_1904_Selbstportrait_mit_weissem_Hut.jpg/1280px-Roederstein_1904_Selbstportrait_mit_weissem_Hut.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Roederstein_1904_Selbstportrait_mit_weissem_Hut.jpg
+    license: Public domain
+    credit: Ottilie Roederstein
+identifiers:
+  bnf: "145000415"
+  dome: "2668"
+  gnd: "116580968"
+  hls: "022605"
+  idref: "086104926"
+  lc: n83049795
+  rkd: "67575"
+  sikart: "4022946"
+  ulan: "500081337"
+  viaf: "62303819"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q2037804
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q2037804

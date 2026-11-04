@@ -1,0 +1,97 @@
+public_id: 115117
+title_lang: en
+title: Peinture
+names:
+  - lang: en
+    role: translation
+    text: Composition
+  - lang: de
+    role: translation
+    text: Gemälde
+  - lang: en
+    role: translation
+    text: Painting
+creator: joan-miro
+created: 1925
+kind: oil painting
+medium: Oil on canvas
+dimensions: [99, 81]
+institution: kunsthaus-zurich
+inventory_number: 1955/0027
+web_url: https://collection.kunsthaus.ch/de/collection/item/2358/
+on_loan: true
+on_loan_since: 1954
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585386
+provenance:
+  - owner: person/martha-widmer
+    acquired: 1954-03-24 or earlier
+    ended: 1964-03-07
+    place: winterthur
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2358/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 28.05.1964, S. 3, Archiv ZKG/KHZ 10.30.10.42a; Speditionszettel Kunsthaus Zürich, 24.03.1954, ZKG/KHZ Ordner «Gelöschte Depots Wel-Z»; Zürcher Kunstgesellschaft, Jahresbericht 1955, S. 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/martha-widmer
+    role: estate
+    acquired: 1964-03-07
+    ended: 1964-05-28
+    method: inheritance
+    direct: true
+    place: winterthur
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2358/
+        note: "Footnote: Wie oben Fussnote 3; Brief von Dr. Hans Glarner an die Direktion des Kunsthaus Zürich, 18.03.1964, ZKG/KHZ Ordner «Gelöschte Depots Wel-Z»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1964-05-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 50000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2358/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: I.176
+    label: Dupin/Lelong-Mainaud 1999 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2358/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2358/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2358/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2358/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2358/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2358/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2358/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2358/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

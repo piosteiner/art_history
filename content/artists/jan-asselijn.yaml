@@ -1,0 +1,98 @@
+public_id: 115159
+name: Jan Asselijn
+given_name: Jan
+family_name: Asselijn
+names:
+  - kind: nickname
+    lang: nl
+    role: alternative
+    text: Crabbetje
+    sources:
+      - accessed: 2026-11-03
+        property: P1449
+        wikidata: Q541976
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: "''Crabbetje'' ( Petit Crabe )"
+    sources:
+      - accessed: 2026-11-03
+        property: P1449
+        wikidata: Q541976
+birth: 1610
+death: 1652-09-28
+wikidata_id: Q541976
+metadata:
+  sources: [Wikidata Q541976 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q541976
+  - type: born_in
+    to: place/dieppe
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q541976
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q541976
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q541976
+  - type: worked_in
+    to: place/lyon
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q541976
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q541976
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q541976
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q541976
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/59/JanAsselyn.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:JanAsselyn.jpg
+    license: Public domain
+    credit: Rembrandt
+identifiers:
+  bnf: "149597054"
+  gnd: "118892959"
+  idref: "165616598"
+  kulturnav: 77f9dd7d-b106-40c5-b9b9-2e1e5df8239e
+  lc: nr91001305
+  rkd: "2761"
+  ulan: "500017296"
+  viaf: "224130843"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q541976
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q541976

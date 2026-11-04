@@ -1,0 +1,130 @@
+public_id: 115480
+title_lang: en
+title: Bacchante
+names:
+  - lang: en
+    role: translation
+    text: Bacchantin
+creator: charles-despiau
+created: 1909
+created_label: 1909; cast 1929
+kind: sculpture
+medium: Bronze
+dimensions: [57, 46, 47]
+institution: kunsthaus-zurich
+inventory_number: 1968/0045
+web_url: https://collection.kunsthaus.ch/de/collection/item/506/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/fonderie-valsuani
+    role: foundry
+    acquired: 1929
+    ended: 1929
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/506/
+        note: "Footnote: Lebon 1995, Bd. II, Volume I, No. 38-11(2) B, S. 98."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/marie-rudel
+    acquired: 1946-10-30 or earlier
+    method: inheritance
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/506/
+        note: "Footnote: Lebon 1995, Bd. I, Volume I, S. 217; Institut Art & Droit, «Cour d'appel de Paris, arret du 1 octobre 2013», n° 232, https://artdroit.org/wp-content/uploads/2013/11/CA-Paris-11-oct.-2013.pdf (26.06.2023), S. 2: «Selon testament olographe daté du 12 octobre 1942 et déposé au rang des minutes d'un notaire parisien, Monsieur Charles Despiau, sculpteur, décédé le 28 octobre 1946, exprimait ainsi sa vo…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/gaston-jacquart
+    acquired: 1946-10-30
+    ended: 1955-06-11 or earlier
+    method: inheritance
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/506/
+        note: "Footnote: Wie oben Fussnote 4; Lebon 1995, wie oben Fussnote 2; Kunsthaus Zürich 1970 (Sammlungskatalog), S. 22; Kat. Middelheimpark Antwerpen 1955, No. 126, S. 22."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/augusta-fauveau
+    acquired: 1955-06-11 or earlier
+    ended: 2 October 1955 or later
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/506/
+        note: "Footnote: Wie oben Fussnote 4; Kat. Middelheimpark Antwerpen 1955, wie oben Fussnote 5: «Mevrouw Jacquart, Parijs»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jean-osouf
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/506/
+        note: "Footnote: Kunsthaus Zürich 1970, wie oben Fussnote 5; Lebon 1995, wie oben Fussnote 2; E-Mail-Korrespondenz Musée des Beaux-Arts, Bouré, 01.06.2022: «Hélas rien dans les archives sur la collection d’œuvres de Despiau chez Jean Osouf. Ce dernier, élève de Despiau en 1928 à l’académie scandinave va lui vouer une profonde admiration et un soutien sans failles. Après la guerre, Osouf le défendra contre les atta…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/werner-bar
+    co_owners: [person/nelly-bar]
+    acquired: 1956
+    ended: 1960
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/506/
+        note: "Footnote: Kunsthaus Zürich 1970, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/nelly-bar
+    acquired: 1960
+    ended: 1968
+    direct: true
+    place: zurich
+    label: Zürich, Erbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/506/
+        note: "Footnote: ZKG/KHZ Werkdossier; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 608."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1968
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/506/
+        note: "Footnote: Wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/506/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/506/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/506/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/506/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/506/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/506/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/506/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

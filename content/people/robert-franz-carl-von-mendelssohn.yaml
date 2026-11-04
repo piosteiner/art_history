@@ -1,0 +1,26 @@
+public_id: 112495
+name: Robert Franz Carl von Mendelssohn
+given_name: Robert Franz Carl
+family_name: von Mendelssohn
+birth: 1902-02-19
+death: 1996-07-05
+relationships:
+  - type: born_in
+    to: place/berlin
+  - type: died_in
+    to: place/worpswede
+sources:
+  birth:
+    - url: https://gw.geneanet.org/pfdm?lang=de&n=von+mendelssohn&p=robert+franz+carl
+      source: gw-geneanet-org
+      accessed: 2026-11-03
+    - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  death:
+    - url: https://gw.geneanet.org/pfdm?lang=de&n=von+mendelssohn&p=robert+franz+carl
+      source: gw-geneanet-org
+      accessed: 2026-11-03
+    - url: https://collection.kunsthaus.ch/de/collection/item/586967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

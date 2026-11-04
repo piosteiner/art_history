@@ -1,0 +1,73 @@
+public_id: 115167
+title_lang: de
+title: Mutterschaf mit zwei Lämmern
+creator: rudolf-koller
+created: 1866
+kind: oil painting
+medium: Oil on canvas
+dimensions: [71, 103]
+institution: kunsthaus-zurich
+inventory_number: 1959/0012
+web_url: https://collection.kunsthaus.ch/de/collection/item/2623/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586336
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f3/Rudolf_Koller_-_Mutterschaf_mit_zwei_L%C3%A4mmern_-_1959-0012_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Rudolf_Koller_-_Mutterschaf_mit_zwei_L%C3%A4mmern_-_1959-0012_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Rudolf Koller
+provenance:
+  - owner: person/karl-gustav-henneberg
+    acquired: 1898
+    ended: 1898
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2623/
+        note: "Footnote: Kunsthaus Zürich, Sammlungskatalog, 2007, S. 193."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/sophie-susanna-bodmer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2623/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1959
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2623/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2623/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2623/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2623/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2623/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2623/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2623/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2623/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

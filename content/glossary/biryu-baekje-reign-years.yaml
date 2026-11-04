@@ -1,0 +1,18 @@
+public_id: 113254
+name: Biryu of Baekje (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 비류왕
+  - lang: ko-Hani
+    role: alternative
+    text: 比流王
+category: calendar
+definition: "The reign years of King Biryu of Baekje (比流王, 비류왕), by which Korean histories date 304–344: 304 is Biryu 1, 344 Biryu 41."
+description_md: |-
+  **Biryu** (比流王, 비류왕): the years of the reign of King Biryu of Baekje. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 313 is Biryu 10 (비류왕 10년). The year of the accession, 304, counts as the first year.
+
+  Before: [[bunseo-baekje-reign-years|Bunseo]]. After: [[gye-baekje-reign-years|Gye]].
+sources:
+  definition:
+    - source: dila-time-authority

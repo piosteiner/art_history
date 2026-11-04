@@ -1,0 +1,93 @@
+public_id: 115071
+title_lang: en
+title: Tête de femme (Fernande)
+names:
+  - lang: en
+    role: translation
+    text: Frauenkopf (Fernande)
+  - lang: en
+    role: translation
+    text: Head of a Woman (Fernande)
+creator: pablo-picasso
+created: 1909
+kind: sculpture
+medium: Bronze
+dimensions: [41, 24.5, 25.5]
+institution: kunsthaus-zurich
+inventory_number: 1944/0012
+web_url: https://collection.kunsthaus.ch/de/collection/item/2044/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    ended: 1920 or later
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2044/
+        note: 'Footnote: Spies 1998, No. 24 II: "Auflage von wenigen Exemplaren für den Kunsthändler Ambroise Vollard".'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    acquired: 1920 or later
+    direct: true
+    place: switzerland
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2044/
+        note: 'Footnote: Sitzungsprotokoll der Sammlungskommission, 07.07.1944 I.c.1, Archiv ZKG/KHZ, 10.30.10.42. Im Protokoll heisst es: "In einem Brief vom 21. Juni 1944 teilt der Verkäufer, Hans Ulrich Gasser mit, dass der Kopf aus der Sammlung Vollard stamme, dann zu Beginn der zwanziger Jahre in eine Privatsammlung in der Schweiz gelangt sei und von dort in seinen Besitz."'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-hans-ulrich-gasser
+    role: dealer
+    ended: 1944
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2044/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1944
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 3500
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2044/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2044/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2044/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2044/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2044/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2044/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2044/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2044/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

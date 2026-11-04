@@ -1,0 +1,32 @@
+public_id: 115291
+name: Mariánské Lázně
+names:
+  - lang: fr
+    role: translation
+    text: Marienbad
+  - lang: nl
+    role: translation
+    text: Mariënbad
+  - lang: ru
+    role: translation
+    text: Марианске-Лазне
+kind: settlement
+parent: czechia
+country_code: CZ
+location: [12.70125, 49.9647]
+wikidata_id: Q523469
+metadata:
+  sources: [Wikidata Q523469 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q523469
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q523469
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q523469

@@ -1,0 +1,105 @@
+public_id: 115251
+title_lang: en
+title: Composition à la feuille
+names:
+  - lang: en
+    role: translation
+    text: Komposition mit Blatt
+  - lang: en
+    role: translation
+    text: Composition with Leaf
+creator: fernand-leger
+created: 1928
+kind: oil painting
+medium: Oil on canvas
+dimensions: [91, 65]
+institution: kunsthaus-zurich
+inventory_number: 1951/0024
+web_url: https://collection.kunsthaus.ch/de/collection/item/2879/
+on_loan: true
+on_loan_since: 1951
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585126
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Composition_%C3%A0_la_feuille%2C_1928_-_Fernand_L%C3%A9ger.jpg/1280px-Composition_%C3%A0_la_feuille%2C_1928_-_Fernand_L%C3%A9ger.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Composition_%C3%A0_la_feuille,_1928_-_Fernand_L%C3%A9ger.jpg
+    license: Public domain
+    credit: Fernand Léger
+provenance:
+  - owner: person/francis-picabia
+    direct: true
+    place: cannes
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2879/
+        note: "Footnote: Brief von der Galerie Rosengart an das Kunsthaus Zürich, 01.09.1972; Brief von der Galerie Rosengart an das Musée National F. Léger, Biot, 08.03.1982, beide ZKG/KHZ Künstlerdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jan-constant-heyligers
+    acquired: 1947-07-19 or earlier
+    place: netherlands
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2879/
+        note: "Footnote: Etikette auf der Werkrückseite; ZKG/KHZ Künstlerdossier, wie oben Fussnote 2; Aust.-Kat. Stedelijk Museum Amsterdam 1947, Nr. 61, S. 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-rosengart
+    role: dealer
+    ended: 1951
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2879/
+        note: "Footnote: Etikette auf der Werkrückseite; Brief von der Galerie Rosengart an das Musée National F. Léger, Biot, 08.03.1982, ZKG/KHZ Künstlerdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1951
+    ended: 1951
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 5000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2879/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: III.246.536
+    label: Bauquier 1993 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2879/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2879/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2879/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2879/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2879/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2879/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2879/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2879/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

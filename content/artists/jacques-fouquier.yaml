@@ -41,6 +41,12 @@ relationships:
       - accessed: 2026-10-28
         property: P1066
         wikidata: Q327364
+  - type: student_of
+    to: artist/joos-de-momper-the-younger
+    sources:
+      - accessed: 2026-11-03
+        property: P802
+        wikidata: Q560548
   - type: associated_with
     to: movement/baroque
     sources:

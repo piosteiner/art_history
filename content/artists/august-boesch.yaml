@@ -1,0 +1,41 @@
+public_id: 115613
+name: August Boesch
+given_name: August
+family_name: Boesch
+birth: 1857-08-20
+death: 1911-08-22
+wikidata_id: Q761037
+metadata:
+  sources: [Wikidata Q761037 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q761037
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q761037
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7d/August_B%C3%B6sch_%281857%E2%80%931911%29_Bildhauer%2C_Medailleur.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:August_B%C3%B6sch_(1857%E2%80%931911)_Bildhauer,_Medailleur.jpg
+    license: CC BY-SA 4.0
+    credit: Unknown author
+identifiers:
+  gnd: "129533289"
+  hls: "021987"
+  sikart: "4023485"
+  viaf: "62630955"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q761037
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q761037

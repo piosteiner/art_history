@@ -1,0 +1,86 @@
+public_id: 115177
+name: Paula Modersohn-Becker
+given_name: Paula
+family_name: Modersohn-Becker
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Paula Becker.
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q234370
+birth: 1876-02-08
+death: 1907-11-20
+wikidata_id: Q234370
+metadata:
+  sources: [Wikidata Q234370 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/german-empire
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q234370
+  - type: born_in
+    to: place/dresden
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q234370
+  - type: died_in
+    to: place/worpswede
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q234370
+  - type: worked_in
+    to: place/worpswede
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q234370
+  - type: influenced_by
+    to: artist/paul-gauguin
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q234370
+  - type: influenced_by
+    to: artist/vincent-van-gogh
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q234370
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q234370
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Paula_Modersohn-Becker.jpg/1280px-Paula_Modersohn-Becker.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paula_Modersohn-Becker.jpg
+    license: Public domain
+    credit: Paula Modersohn-Becker
+identifiers:
+  bnf: "118870032"
+  dome: "263"
+  gnd: "118582933"
+  idref: "026664607"
+  kulturnav: be75605b-b49e-4662-a41b-9b961c0dbfda
+  lc: n50000154
+  nlk: KAC202275965
+  rkd: "56463"
+  ulan: "500422180"
+  viaf: "36913211"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q234370
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q234370

@@ -1,0 +1,133 @@
+public_id: 115113
+title_lang: it
+title: Madonna auf der Mondsichel
+names:
+  - lang: it
+    role: translation
+    text: Madonna on the Crescent Moon
+  - lang: en
+    role: translation
+    text: Vierge sur le croissant de lune
+creator: tilman-riemenschneider
+attribution_label: Tilman Riemenschneider and workshop
+created: c. 1505
+created_span: uncertain
+kind: sculpture
+medium: Limewood with traces of polychromy
+dimensions: [101.5, 30.5, 25]
+institution: kunsthaus-zurich
+inventory_number: 1944/0023
+web_url: https://collection.kunsthaus.ch/de/collection/item/2355/
+on_loan: true
+on_loan_since: 1944
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/franz-greb
+    ended: 1903 or later
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+        note: "Footnote: Schmid 1903/04, S. 17, Fussnote 2: «Das Original, welches Eigentum des Herrn Juwelier Franz Greb ist, stammt aus Würzburg.»; Brief von Justus Bier, University of Lousville, an die Direktion des Kunsthaus Zürich, 13.01.1954, ZKG/KHZ, Werkdossier: «Die Madonna mit Kind auf der Mondsichel war mir durch die Abbildung der Figur in der Zeitschrift des Münchner Alterthums-Vereins, Neue Folge XIV-XV (1903…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/carl-jourdan
+    ended: 1911 or later
+    direct: true
+    place: frankfurt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+        note: "Footnote: Julius Baum, Beurteilung der 6 Skulpturen des Katalogs ‘Ausländische Kunst in Zürich 1943’ Nr. 5, 7, 9, 10, 14, 15, undatiert, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.145: «Ich sah das Bildwerk 1911 bei Herrn Carl Jordan in Frankfurt. Eine Photographie, die ich damals vom Besitzer erhielt, zeigt es im gleichen Zustand wie heute. Es ist daher mit dem oben erwähnten, 1921 in Frankfurt aus…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/arthur-goldschmidt
+    role: dealer
+    ended: 1927/1928
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+        note: "Footnote: Brief von Fritz Andreae an Dr. Wartmann, 24.08.1944, Archiv ZKG/KHZ, Akten der Sammlungskommission zur Sitzung, 11.10.1944, 10.30.10.58: «Die sogenannte grosse Madonna […] habe ich im Jahre 27/28 bei dem Antiquitätenhändler Goldschmidt aus Frankfurt a/M. in Berlin, Victoriastr. 3/4 gekauft.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/friedrich-andreae
+    acquired: 1927/1928
+    ended: 1944
+    method: purchase
+    direct: true
+    place: berlin
+    label: Berlin and Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+        note: "Footnote: Wie oben Fussnote 6; Kaufvertrag mit Fritz Andreae, 31.08.1944, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.145."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/adolf-johr
+    acquired: 1944-09-11 or earlier
+    ended: 1953
+    method: purchase
+    direct: true
+    place: zurich
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg.: «1955 laut Aussage v. Frau Dr. Jöhr nun dem Kunsthaus gehörend»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/fides-treuhand-vereinigung
+    acquired: 1944-09-11
+    ended: 1955
+    direct: true
+    place: zurich
+    label: «treuhänderisch namens und im Auftrag eines ungenannten Eigentümers»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; Sitzungsprotokoll der Sammlungskommission, 11.10.1944, S. 3, II.3., Archiv ZKG/KHZ, 10.30.10.42; Leihgabe-Vertrag der Zürcher Kunstgesellschaft zu Leihgabe Inv.-Nr. 1944/24, 11.09.1944, ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1955
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

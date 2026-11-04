@@ -1,0 +1,39 @@
+public_id: 115241
+name: Ernst Georg Rüegg
+given_name: Ernst Georg
+family_name: Rüegg
+birth: 1883-08-21
+death: 1948-04-20
+wikidata_id: Q47522955
+metadata:
+  sources: [Wikidata Q47522955 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q47522955
+  - type: born_in
+    to: place/milan
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q47522955
+identifiers:
+  gnd: "128961554"
+  hls: "022614"
+  lc: n84019555
+  rkd: "68784"
+  sikart: "4000075"
+  ulan: "500013445"
+  viaf: "25669684"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q47522955
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q47522955

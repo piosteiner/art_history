@@ -24,6 +24,7 @@ names:
     role: translation
     text: Свободный имперский город Нюрнберг
 period: 1201/1806
+country_codes: [DE]
 wikidata_id: Q117020
 metadata:
   sources: [Wikidata Q117020 (retrieved 2026-10-29)]

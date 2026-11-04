@@ -1,0 +1,18 @@
+public_id: 113373
+name: Seondeok of Silla (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 선덕왕
+  - lang: ko-Hani
+    role: alternative
+    text: 宣德王
+category: calendar
+definition: "The reign years of King Seondeok of Silla (宣德王, 선덕왕), by which Korean histories date 780–785: 780 is Seondeok 1, 785 Seondeok 6."
+description_md: |-
+  **Seondeok** (宣德王, 선덕왕): the years of the reign of King Seondeok of Silla. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 785 is Seondeok 6 (선덕왕 6년). The year of the accession, 780, counts as the first year.
+
+  Before: [[hyegong-silla-reign-years|Hyegong]]. After: [[wonseong-silla-reign-years|Wonseong]].
+sources:
+  definition:
+    - source: dila-time-authority

@@ -1,0 +1,61 @@
+public_id: 113429
+title_lang: en
+title: Tsukudajima in Musashi Province
+names:
+  - lang: ja
+    role: original
+    text: 武陽佃島
+  - Buyō Tsukudajima
+  - lang: fr
+    role: translation
+    text: L'île Tsukada dans la province de Musashi
+  - lang: de
+    role: translation
+    text: Die Insel Tsukuda in der Provinz Musashi
+  - lang: es
+    role: translation
+    text: Isla Tsukuda en la provincia de Musashi
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 武陽佃島
+parent: thirty-six-views-of-mount-fuji
+part_number: "12"
+creator: katsushika-hokusai
+created: 1830/1832
+created_label: c. 1830–1832
+created_span: uncertain
+institution: metropolitan-museum-of-art
+inventory_number: JP2990
+web_url: https://www.metmuseum.org/art/collection/search/55741
+wikidata_id: Q18173394
+metadata:
+  sources: [Wikidata Q18173394 (retrieved 2026-11-03)]
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/original/DP141089.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/55741
+    license: Public domain
+    credit: The Metropolitan Museum of Art
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173394
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173394
+  created:
+    - url: https://www.metmuseum.org/art/collection/search/55741
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173394
+  institution:
+    - url: https://www.metmuseum.org/art/collection/search/55741
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.metmuseum.org/art/collection/search/55741
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03

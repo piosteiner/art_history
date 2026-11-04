@@ -1,0 +1,18 @@
+public_id: 113372
+name: Hyegong of Silla (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 혜공왕
+  - lang: ko-Hani
+    role: alternative
+    text: 惠恭王
+category: calendar
+definition: "The reign years of King Hyegong of Silla (惠恭王, 혜공왕), by which Korean histories date 765–780: 765 is Hyegong 1, 780 Hyegong 16."
+description_md: |-
+  **Hyegong** (惠恭王, 혜공왕): the years of the reign of King Hyegong of Silla. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 774 is Hyegong 10 (혜공왕 10년). The year of the accession, 765, counts as the first year.
+
+  Before: [[gyeongdeok-silla-reign-years|Gyeongdeok]]. After: [[seondeok-silla-reign-years-780|Seondeok]].
+sources:
+  definition:
+    - source: dila-time-authority

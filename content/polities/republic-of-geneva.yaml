@@ -29,6 +29,7 @@ names:
     role: translation
     text: Республика Женева
 period: 1534/1815-05-19
+country_codes: [CH]
 wikidata_id: Q23366230
 metadata:
   sources: [Wikidata Q23366230 (retrieved 2026-10-29)]

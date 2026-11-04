@@ -1,0 +1,18 @@
+public_id: 113367
+name: Sinmun of Silla (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 신문왕
+  - lang: ko-Hani
+    role: alternative
+    text: 神文王
+category: calendar
+definition: "The reign years of King Sinmun of Silla (神文王, 신문왕), by which Korean histories date 681–692: 681 is Sinmun 1, 692 Sinmun 12."
+description_md: |-
+  **Sinmun** (神文王, 신문왕): the years of the reign of King Sinmun of Silla. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 690 is Sinmun 10 (신문왕 10년). The year of the accession, 681, counts as the first year.
+
+  Before: [[munmu-silla-reign-years|Munmu]]. After: [[hyoso-silla-reign-years|Hyoso]].
+sources:
+  definition:
+    - source: dila-time-authority

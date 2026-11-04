@@ -1,0 +1,93 @@
+public_id: 115341
+title_lang: de
+title: Bildnis Lydia Welti-Escher
+names:
+  - lang: fr
+    role: translation
+    text: Portrait of Lydia Welti-Escher
+  - lang: fr
+    role: translation
+    text: Portrait de Lydia Welti-Escher
+creator: karl-stauffer-bern
+created: 1886
+kind: oil painting
+medium: Oil on canvas
+dimensions: [150.5, 100]
+institution: kunsthaus-zurich
+inventory_number: "2538"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3360/
+on_loan: true
+on_loan_since: 1941
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585744
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cf/Karl_Stauffer-Bern_-_Bildnis_Lydia_Welti-Escher_-_2538_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Karl_Stauffer-Bern_-_Bildnis_Lydia_Welti-Escher_-_2538_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Karl Stauffer-Bern
+provenance:
+  - owner: person/lydia-welti-escher
+    acquired: 1886
+    ended: 1891
+    direct: true
+    place: zurich
+    label: später Genf; Villa Ashburn; Zürich, Belvoir
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3360/
+        note: "Footnote: Korrespondenz mit Vanessa Lages Alves, Diogenes-Verlag und Joseph Jung, Gottfried-Keller Stiftung, 07.09.2020."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/emil-welti
+    acquired: 1891
+    ended: 1940
+    direct: true
+    place: bern
+    label: unbekannt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3360/
+        note: "Footnote: Korrespondenz, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/gottfried-keller-stiftung
+    acquired: 1940
+    direct: true
+    label: GKS890; Federal Office of Culture; Bundesamt für Kultur, Bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3360/
+        note: "Footnote: Die Kunstsammlungen des Bundes, Sammlung der Gottfried Keller-Stiftung, vgl. https://www.bundessammlungen.ch/de/collection/item/17555/ [Zugriff: 25.06.2025]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3360/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3360/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3360/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3360/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3360/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3360/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3360/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3360/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

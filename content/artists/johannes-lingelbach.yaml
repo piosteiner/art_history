@@ -1,0 +1,49 @@
+public_id: 115230
+name: Johannes Lingelbach
+given_name: Johannes
+family_name: Lingelbach
+birth: 1622-10-10
+death: 1674
+wikidata_id: Q629856
+metadata:
+  sources: [Wikidata Q629856 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q629856
+  - type: born_in
+    to: place/frankfurt
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q629856
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q629856
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Portret_van_de_schilder_Johannes_Lingelbach%2C_RP-P-1898-A-20655.jpg/1280px-Portret_van_de_schilder_Johannes_Lingelbach%2C_RP-P-1898-A-20655.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portret_van_de_schilder_Johannes_Lingelbach,_RP-P-1898-A-20655.jpg
+    license: CC0
+    credit: Rijksmuseum
+identifiers:
+  bnf: 14959703f
+  gnd: "118780077"
+  kulturnav: 37c1e8c6-c072-4eda-84fa-eae03ebe94c9
+  rkd: "50219"
+  ulan: "500005640"
+  viaf: "5200310"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q629856
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q629856

@@ -1,0 +1,75 @@
+public_id: 115544
+name: Adriaen Brouwer
+given_name: Adriaen
+family_name: Brouwer
+birth: 1605
+death: 1638
+wikidata_id: Q364139
+metadata:
+  sources: [Wikidata Q364139 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/southern-netherlands
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q364139
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q364139
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q364139
+  - type: worked_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q364139
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q364139
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q364139
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q364139
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b5/Portrait_of_Adriaen_Brouwer_by_Anthony_van_Dyck.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Adriaen_Brouwer_by_Anthony_van_Dyck.jpg
+    license: Public domain
+    credit: Anthony van Dyck
+identifiers:
+  bnf: 12045628h
+  gnd: "118674382"
+  idref: "185470068"
+  kulturnav: 088f8d6c-3a18-430e-87d5-00bcfc2260a4
+  lc: n85349860
+  rkd: "13036"
+  ulan: "500012394"
+  viaf: "8181420"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q364139
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q364139

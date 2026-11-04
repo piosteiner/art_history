@@ -1,0 +1,35 @@
+public_id: 115280
+name: Brunswick
+names:
+  - lang: ko
+    role: translation
+    text: 브라운슈바이크
+  - lang: de
+    role: original
+    text: Braunschweig
+  - lang: nl
+    role: translation
+    text: Brunswijk
+  - lang: ru
+    role: translation
+    text: Брауншвейг
+kind: settlement
+parent: niedersachsen
+country_code: DE
+location: [10.52111, 52.26917]
+wikidata_id: Q2773
+metadata:
+  sources: [Wikidata Q2773 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q2773
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q2773
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q2773

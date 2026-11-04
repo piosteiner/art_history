@@ -1,0 +1,112 @@
+public_id: 115213
+title_lang: fr
+title: La Source de la Loue
+names:
+  - lang: de
+    role: translation
+    text: Die Quelle der Loue
+  - lang: en
+    role: translation
+    text: The Source of the Loue
+creator: gustave-courbet
+created: 1863
+kind: oil painting
+medium: Oil on canvas
+dimensions: [84, 106.5]
+institution: kunsthaus-zurich
+inventory_number: 1946/0011
+web_url: https://collection.kunsthaus.ch/de/collection/item/277/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q50321867
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6b/Gustave_Courbet_-_La_Source_de_la_Loue_-_1946-0011_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_La_Source_de_la_Loue_-_1946-0011_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Gustave Courbet
+provenance:
+  - owner: person/francois-antoine-felix-gaudy
+    ended: 1895
+    place: vuillafans
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/277/
+        note: "Footnote: Léger 1929, S. 70 und S. 101: Möglicherweise hatte Gaudy das Gemälde noch direkt vom Künstler, denn er war ein Freund Courbets und hatte auch andere Werke direkt bei ihm erworben."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/maurice-felix-gaudy
+    acquired: 1895
+    ended: 1929
+    method: inheritance
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/277/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/maurice-felix-gaudy
+    role: estate
+    acquired: 1929
+    ended: 1938 or later
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/277/
+        note: "Footnote: Korrespondenz mit Madame Maurice Gaudy, Jacques Gaudy und Pierre Gaudy bis 1938, Archiv ZKG/KHZ, Akten Sammlungskommission, 10.30.10.64."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/andre-goetschel
+    ended: 1946
+    place: lausanne
+    label: in Vermittlung für einen Freund
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/277/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg. und Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.147."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1946
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 5000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/277/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 29.11.1946, Archiv ZKG/KHZ, 10.30.10.42."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: I.200.347
+    label: Fernier (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/277/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/277/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/277/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/277/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/277/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/277/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/277/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

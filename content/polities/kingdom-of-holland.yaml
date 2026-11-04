@@ -29,6 +29,7 @@ names:
     role: translation
     text: Голландское королевство
 period: 1806-06-05/1810-07-09
+country_codes: [NL]
 wikidata_id: Q212278
 metadata:
   sources: [Wikidata Q212278 (retrieved 2026-10-29)]

@@ -1,0 +1,159 @@
+public_id: 115405
+title_lang: de
+title: Eisvergnügen auf der Merwede bei Dordrecht
+names:
+  - lang: en
+    role: translation
+    text: Winterscene at Dordrecht
+  - lang: en
+    role: former
+    text: Winterlandschaft auf der Merwede bei Dordrecht
+  - lang: en
+    role: former
+    text: Winter bei Dordrecht
+  - lang: en
+    role: former
+    text: Vor Dordrecht
+creator: salomon-van-ruysdael
+created: 1653
+kind: oil painting
+medium: Oil on oak panel
+dimensions: [56, 83.5]
+institution: kunsthaus-zurich
+inventory_number: R 33
+web_url: https://collection.kunsthaus.ch/de/collection/item/3682/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586230
+provenance:
+  - owner: person/e-b-forster
+    ended: 1929-03-15
+    label: Warmwell House (Dorchester)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+        note: "Footnote: Stechow 1938 68.6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1929-03-15
+    ended: 1929-03-15
+    method: auction
+    direct: true
+    place: london
+    label: Lot 95
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+        note: "Footnote: ZKG/KHZ Werkdossier, handschriftliche Notiz von Leopold Ruzicka."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/frank-t-sabin
+    acquired: 1929-03-15
+    ended: 1934 or later
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+        note: "Footnote: Wie oben Fussnote 3; wie oben Fussnote 4: «In London 1929 versteigert für £ 3465 an den Kunsthändler F. T. Sabin London»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/d-katz
+    acquired: 1935 or earlier
+    ended: 1941
+    place: dieren
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hanns-schaeffer
+    acquired: 1941
+    ended: 1941
+    direct: true
+    label: Kommission?
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+        note: "Footnote: Etikette auf der Werkrückseite. Sabine Beneke: «Bruno Lohse und die Kaiserbilder Albrecht Dürers im Deutschen Historischen Museum. Eine Spurensuche», https://www.dhm.de/assets/DHM/Download/Sammlung/Forschung/Beneke_Lohse.pdf (25.05.2023); Schaeffer Galleries records, «Biographical / Historical Note», https://oac.cdlib.org/findaid/ark:/13030/kt8w103782/admin/ (25.05.2023): Ab 1936 und während der K…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/nathan-katz
+    role: dealer
+    acquired: 1941
+    ended: 1947-09-11
+    direct: true
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+        note: "Footnote: ZKG/KHZ Werkdossier, Rechnung der Galerie Katz Basel an Leopold Ruzicka, 11.09.1947."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1947-09-11
+    ended: 1948-12-27
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 23.12.1948 I., Archiv ZKG/KHZ, 10.30.10.42; Zürcher Kunstgesellschaft 1949 Jahresbericht, S. 4; ZKG/KHZ Werkdossier, wie oben Fussnote 9; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 100."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1948-12-27
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 10; Zürcher Kunstgesellschaft 1949 Jahresbericht, wie oben Fussnote 10; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 100."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: 68.6.
+    label: Stechow 1938 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

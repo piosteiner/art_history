@@ -1,0 +1,259 @@
+public_id: 114941
+title_lang: de
+title: Bildnis eines älteren dunkelhaarigen Mannes
+names:
+  - lang: fr
+    role: translation
+    text: Portrait of an Elderly Dark-Haired Man
+  - lang: fr
+    role: translation
+    text: Portrait d’un vieil homme aux cheveux sombres
+  - lang: fr
+    role: former
+    text: L’Homme aux gants
+  - lang: de
+    role: former
+    text: Männerbildnis mit Handschuh i.d. Linken
+creator: frans-hals
+created: c. 1657
+created_span: uncertain
+kind: oil painting
+medium: Oil on oak panel
+dimensions: [57, 45]
+institution: kunsthaus-zurich
+inventory_number: R 12
+web_url: https://collection.kunsthaus.ch/de/collection/item/1235/
+on_loan: true
+on_loan_since: 1949
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q63350572
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/57/Frans_Hals_-_Portrait_of_a_man_with_a_tassle_collar_holding_gloves_or_flax%2C_Zurich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portrait_of_a_man_with_a_tassle_collar_holding_gloves_or_flax,_Zurich.jpg
+    license: Public domain
+    credit: Frans Hals or follower
+provenance:
+  - owner: person/h-pickersgill-cunliffe
+    ended: 1903-05-09
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: ZKG/KHZ Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1903-05-09
+    ended: 1903-05-09
+    method: auction
+    direct: true
+    place: london
+    label: Nr. 100
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Simons
+    acquired: 1903-05-09
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/louis-cavens
+    acquired: 1909
+    ended: 1909
+    label: Nr. 29
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: Kat. Galerie Royale Brüssel 1909, Nr. 29, «l’homme aux gants», aus der Slg. Comte Cavens."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-von-schwabach
+    acquired: 1906
+    ended: 1938-09-29
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: Valentiner 1921, S. 260; ZKG/KHZ, Werkdossier, S. 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/eleanor-schwabach
+    co_owners: [person/paul-von-schwabach]
+    acquired: July 1934 or earlier
+    ended: 1938-09-29
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: Nederlands Instituut voor Kunstgeschiedenis RKD, Sammlung Schwabach im Archiv des Rijksmuseums, Blatt 1: Leihverkehr Sammlung Frau von Schwabach, Matthäikirchplatz 7, Berlin W. 35, Juli 1934, sowie Blatt 17, Korrespondenz Frau Eleanor von Schwabach an Direktor Schmidt-Degener, 29.09.1938: «Hierdurch beehre ich mich, ihnen mitzuteilen, dass das Eigentum an den Bildern, Zeichnungen und sonstigen Geg…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/rijksmuseum
+    acquired: 1934-07-20
+    ended: 1938-12-19
+    direct: true
+    place: amsterdam
+    label: Nr. 152
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: Wie oben Fussnote 10, Blatt 4, Liste, 16.12.1938, Nr. 152: «Schildery van Frans Hals, Mansportret»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/adolf-arnhold
+    acquired: 1938-09-29
+    ended: 1938-12-16
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: Wie oben Fussnote 10, Blatt 17, sowie Blatt 3, Amsterdam, 16.12.1938: F. H. Brunner, Bevollmächtigter des Herrn Adolf Arnhold «[…] erklärt, dass er die Bilder und Zeichnungen der ehemaligen Sammlung des verstorbenen Herrn Paul von Schwabach, welche in den Besitz des Herrn Adolf [Arnold] übergegangen sind und welche im Rijksmuseum zu Amsterdam aufbewahrt worden sind und die auf nebengehender Liste …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/frederick-h-brunner
+    acquired: 1938-12-16
+    direct: true
+    place: morcote
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: Wie oben Fussnote 10, Blatt 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/d-katz
+    ended: 1940-07-19
+    place: dieren
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: Deutsches Historisches Museum, Datenbank «Central Collection Point München», Karteikarte: Mü.-Nummer 4317, Linz-Nr. 1311, Aussee Nummer: 2966, https://www.dhm.de/datenbank/ccp/prj_dhm_ccp/displayimg.php?laufnrid=cp067055_0&prj_short=dhm_ccp&format=gr&folder=ccp und https://www.dhm.de/datenbank/ccp/prj_dhm_ccp/displayimg.php?laufnrid=cp067055_1&prj_short=dhm_ccp&format=gr&folder=ccp (29.06.2023); B…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hans-posse
+    role: agent
+    acquired: 1940-07-19
+    method: purchase
+    direct: true
+    label: intermediary; München-Nr. 4317; Aussee Nr. 2966
+    price:
+      amount: 70000
+      currency: NLG
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: Wie oben Fussnote 15. Hans Posse war neben seiner Tätigkeit als Direktor der Dresdner Gemäldegalerie ab Sommer 1939 als Sonderbeauftragter Adolf Hitlers tätig. Im Rahmen dieser Tätigkeit war er für den Aufbau einer Kunstsammlung für das geplante 'Führermuseum Linz' sowie für die Vorbereitung und Umsetzung eines Verteilungsprogramms von NS-Raubkunst auf 'ostmärkische' und weitere Museen im Deutsche…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Führerbau, Munich
+    role: custodian
+    direct: true
+    place: munich
+    label: ausgewählt für den «Sonderauftrag Linz»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: Wie oben Fussnote 16."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    acquired: 1945-07-15
+    ended: 1946-07-08
+    direct: true
+    place: munich
+    label: Munich no. 4317
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: Wie oben Fussnote 16."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: the State of the Netherlands
+    acquired: 1946-07-08
+    method: restitution
+    direct: true
+    label: external restitution (to the country)
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: Wie oben Fussnote 16."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/nathan-katz
+    role: dealer
+    ended: 1949-07-01
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: ZKG/KHZ, Werkdossier, Vereinbarung Nathan Katz und Ruzicka, 02.06.1949; ZKG/KHZ, Werkdossier, Korrespondenz Leopold Ruzicka an Nathan Katz, 01.07.1949."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1949-07-01
+    ended: 1949-07-01
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: ZKG/KHZ, Werkdossier, wie oben Fussnote 21; ZKG/KHZ, Ruzicka-Akten, Abrechnung Ruzicka-Stiftung 1949, S. 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1949-07-01
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: Wie oben Fussnote 22; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 95."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+        note: "Footnote: Wie oben Fussnote 24."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: 150.D63
+    label: Slive 1974 (catalogue raisonné)
+  - number: "1989"
+    label: nicht bei Grimm (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1235/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

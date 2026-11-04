@@ -1,6 +1,7 @@
 public_id: 100206
 name: Habsburg Netherlands
 period: 1482/1797
+country_codes: [NL, BE, LU, FR]
 wikidata_id: Q1031430
 metadata:
   sources: [Wikidata Q1031430 (retrieved 2026-10-09)]

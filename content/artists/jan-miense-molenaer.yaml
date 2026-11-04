@@ -1,0 +1,77 @@
+public_id: 115096
+name: Jan Miense Molenaer
+given_name: Jan Miense
+family_name: Molenaer
+birth: 1610
+death: 1668-09-19
+wikidata_id: Q759588
+metadata:
+  sources: [Wikidata Q759588 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q759588
+  - type: born_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q759588
+  - type: died_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q759588
+  - type: worked_in
+    to: place/haarlem
+    period: 1629/1636
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q759588
+  - type: worked_in
+    to: place/amsterdam
+    period: 1637/1648
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q759588
+  - type: student_of
+    to: artist/frans-hals
+    sources:
+      - accessed: 2026-11-03
+        property: P1066
+        wikidata: Q759588
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q759588
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3c/Jan_Miense_Molenaer_-_self_portrait_1640.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jan_Miense_Molenaer_-_self_portrait_1640.jpg
+    license: Public domain
+    credit: Attributed to Jan Miense Molenaer
+identifiers:
+  dome: "10636"
+  gnd: "124520073"
+  idref: "074496867"
+  kulturnav: 38a90edf-2099-4e73-ab9c-28929da104d9
+  lc: no92026834
+  rkd: "56664"
+  ulan: "500004943"
+  viaf: "95711019"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q759588
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q759588

@@ -1,0 +1,87 @@
+public_id: 115473
+title_lang: de
+title: Bildnis Johann Caspar Lavater
+names:
+  - lang: fr
+    role: translation
+    text: Portrait of Johann Caspar Lavater
+creator: felix-maria-diogg
+created: c. 1795
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [59, 52.5]
+institution: kunsthaus-zurich
+inventory_number: "2539"
+web_url: https://collection.kunsthaus.ch/de/collection/item/464/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585507
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/95/Felix_Maria_Diogg_-_Bildnis_Johann_Caspar_Lavater_-_2539_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Felix_Maria_Diogg_-_Bildnis_Johann_Caspar_Lavater_-_2539_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Felix Maria Diogg
+provenance:
+  - owner_label: unknown (collector)
+    acquired: before 1934
+    ended: before 1934
+    place: darmstadt
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/464/
+        note: "Footnote: Bezüglich eines Stempels «K[arl] Gieselberg, Wilhelminenstrasse, Darmstadt» auf dem Keilrahmen des Gemäldes ergab eine Personenrecherche, dass es sich um einen Papier- und Zeichenwarenhandel handelte, der schon vor 1933 existiert und nach 1945 weiter bestanden hatte: Dies liess sich anhand der online zugänglichen Adressbücher der Stadt Darmstadt eruieren (vgl. Adressbücher Darmstadt online https:/…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/julius-weise-s-hofbuchhandlung
+    ended: 1941
+    method: purchase
+    place: stuttgart
+    label: 500 RM
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/464/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; Sitzungsprotokoll der Sammlungskommission, 02.04.1941 II.2.n, Archiv ZKG/KHZ, 10.30.10.42; Brief von Paul Erpf (Inhaber Julius Weises Hofbuchhandlung, Stuttgart) an das Kunsthaus Zürich, 19.06.1941, Archiv ZKG/KHZ, 10.30.30.144."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1941
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 865.05
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/464/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/464/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/464/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/464/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/464/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/464/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/464/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/464/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

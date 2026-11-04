@@ -1,0 +1,95 @@
+public_id: 115064
+title_lang: de
+title: Porträtbüste Jean Jacques Rousseau
+names:
+  - lang: fr
+    role: translation
+    text: Portrait Bust Jean Jacques Rousseau
+creator: jean-baptiste-lemoyne-the-younger
+attribution_label: circle of Jean-Baptiste Lemoyne the Younger
+created: c. 1780
+created_span: uncertain
+kind: sculpture
+medium: Marble
+dimensions: [35, 21, 22.5]
+institution: kunsthaus-zurich
+inventory_number: 1944/0017
+web_url: https://collection.kunsthaus.ch/de/collection/item/2022/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/h-doucet
+    ended: 1938-04-08
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2022/
+        note: |-
+          Footnote: Mündliche Auskunft von Sotheby’s London, 27.03.2026. 
+          «H. Doucet» konnte bislang nicht identifiziert werden. Es könnte sich dabei um die Galerie «Maison Doucet» in Paris handeln (vgl. Clémence Becquet (trad. Irène Besson/Kristina Lowis) (18/11/2021), DOUCET Maison (DE) in Répertoire des acteurs du marché de l'art en France sous l'Occupation, 1940 1945, RAMA (FR) - INHA, https://agorha.inha.fr/deta…
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1938-04-08
+    ended: 1938-04-08
+    method: auction
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2022/
+        note: "Footnote: Réau 1937, S. 303-311. Der französische Kunsthistoriker Louis Réau bespricht die Büste in einem Artikel in den Annales de Société Jean-Jacques Rousseau aus dem Jahr 1937, kurz bevor das Werk in einer Auktion von Sotheby’s in London 1938 angeboten wird (und erwähnt die Auktion in der Fussnote). Im Artikel erwähnt Réau zudem eine Marmorbüste ausgeführt von Lemoyne, die sich bei dessen Tod 1778 noch …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/charles-albert-de-burlet
+    role: dealer
+    ended: 1944
+    direct: true
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2022/
+        note: "Footnote: Mündliche Auskunft von Sotheby’s London, 27.03.2026; Sitzungsprotokoll der Sammlungskommission, 21.10.1943, I.d.3; 25.11.1943, I; 09.06.1944, III.c; 11.10.1944, I.c & 11.10.1944, III.a.1, Archiv ZKG/KHZ, 10.30.10.42."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1944
+    method: purchase
+    direct: true
+    place: zurich
+    label: with a contribution from the City and Canton of Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2022/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2022/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2022/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2022/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2022/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2022/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2022/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2022/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2022/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

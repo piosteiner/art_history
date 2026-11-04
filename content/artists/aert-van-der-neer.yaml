@@ -1,0 +1,55 @@
+public_id: 115204
+name: Aert van der Neer
+given_name: Aert
+family_name: van der Neer
+birth: 1603/1604
+birth_label: c. 1600s
+death: 1677-11-09
+wikidata_id: Q381801
+metadata:
+  sources: [Wikidata Q381801 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q381801
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q381801
+  - type: worked_in
+    to: place/amsterdam
+    period: 1632/1677
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q381801
+  - type: associated_with
+    to: movement/dutch-golden-age-painting
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q381801
+identifiers:
+  bnf: 14952944w
+  dome: "3802"
+  gnd: "118586807"
+  idref: "194483258"
+  kulturnav: f2296385-6566-47b9-9787-5ff284dc0b76
+  lc: n83216250
+  rkd: "59047"
+  ulan: "500001738"
+  viaf: "51959012"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q381801
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q381801

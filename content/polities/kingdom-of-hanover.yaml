@@ -29,6 +29,7 @@ names:
     role: translation
     text: Королевство Ганновер
 period: 1814-10-12/1866-09-20
+country_codes: [DE]
 wikidata_id: Q164079
 metadata:
   sources: [Wikidata Q164079 (retrieved 2026-10-29)]

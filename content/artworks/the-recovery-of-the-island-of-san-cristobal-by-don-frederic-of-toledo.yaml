@@ -1,0 +1,59 @@
+public_id: 113406
+title_lang: es
+title: La recuperación de la isla de San Cristóbal
+names:
+  - pintura
+  - lang: en
+    role: translation
+    text: The recovery of the island of San Cristobal by Don Frederic of Toledo
+  - lang: es
+    role: original
+    text: Recuperación de la isla de San Cristóbal
+parent: battle-series
+creator: felix-castello
+created: 1634/1635
+materials: [oil paint, canvas]
+dimensions: [297, 311]
+institution: museo-del-prado
+inventory_number: P000654
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/recuperacion-de-la-isla-de-san-cristobal/5a952526-5896-4f26-b6a0-b76924eeaf37
+wikidata_id: Q31187682
+metadata:
+  sources: [Wikidata Q31187682 (retrieved 2026-11-03)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Recuperaci%C3%B3n_de_la_Isla_de_San_Crist%C3%B3bal_Lienzo._297_x_311_cm._Museo_del_Prado.jpg/1280px-Recuperaci%C3%B3n_de_la_Isla_de_San_Crist%C3%B3bal_Lienzo._297_x_311_cm._Museo_del_Prado.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Recuperaci%C3%B3n_de_la_Isla_de_San_Crist%C3%B3bal_Lienzo._297_x_311_cm._Museo_del_Prado.jpg
+    license: Public domain
+    credit: Felix Castello
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q31187682
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q31187682
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/recuperacion-de-la-isla-de-san-cristobal/5a952526-5896-4f26-b6a0-b76924eeaf37
+      source: museo-del-prado-coleccion
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q31187682
+  materials:
+    - accessed: 2026-11-03
+      property: P186
+      wikidata: Q31187682
+  dimensions:
+    - accessed: 2026-11-03
+      property: P2048
+      wikidata: Q31187682
+  institution:
+    - accessed: 2026-11-03
+      property: P195
+      wikidata: Q31187682
+  inventory_number:
+    - accessed: 2026-11-03
+      property: P217
+      wikidata: Q31187682

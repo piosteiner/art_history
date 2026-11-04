@@ -1,0 +1,88 @@
+public_id: 114925
+name: Jan Fyt
+given_name: Jan
+family_name: Fyt
+birth: 1611-03-15
+death: 1661-09-11
+wikidata_id: Q624802
+metadata:
+  sources: [Wikidata Q624802 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/spanish-netherlands
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q624802
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q624802
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q624802
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q624802
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q624802
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q624802
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q624802
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q624802
+  - type: worked_in
+    to: place/antwerp
+    period: 1622/1631
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q624802
+  - type: associated_with
+    to: movement/flemish-baroque-painting
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q624802
+identifiers:
+  bnf: 14959719t
+  dome: "3374"
+  gnd: "118694383"
+  kulturnav: d63d07b8-e919-4227-8c43-4ee90173a5ca
+  rkd: "29840"
+  ulan: "500115452"
+  viaf: "22410948"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q624802
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q624802

@@ -29,6 +29,7 @@ names:
     role: translation
     text: Цизальпинская республика
 period: 1797-06-29/1802-01-25
+country_codes: [IT]
 wikidata_id: Q213353
 metadata:
   sources: [Wikidata Q213353 (retrieved 2026-10-29)]

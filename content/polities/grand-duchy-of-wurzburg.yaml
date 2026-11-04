@@ -26,6 +26,7 @@ names:
     role: translation
     text: Великое герцогство Вюрцбург
 period: 1806/1814
+country_codes: [DE]
 wikidata_id: Q698089
 metadata:
   sources: [Wikidata Q698089 (retrieved 2026-10-29)]

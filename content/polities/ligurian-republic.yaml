@@ -27,6 +27,7 @@ names:
     role: translation
     text: Лигурийская республика
 period: 1797-06-14/1805-06-04
+country_codes: [IT]
 wikidata_id: Q659312
 metadata:
   sources: [Wikidata Q659312 (retrieved 2026-10-29)]

@@ -1,0 +1,52 @@
+public_id: 115347
+name: Willem van de Velde (II)
+given_name: Willem van de Velde
+family_name: (II)
+birth: 1633-12-18
+death: 1707-04-06
+wikidata_id: Q432266
+metadata:
+  sources: [Wikidata Q432266 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q432266
+  - type: born_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q432266
+  - type: worked_in
+    to: place/amsterdam
+    period: 1652/1656
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q432266
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Willem_van_de_Velde_II_%281633-1707%29_-_%28by_Lodewijk_van_der_Helst%2C_1672%29.jpg/1280px-Willem_van_de_Velde_II_%281633-1707%29_-_%28by_Lodewijk_van_der_Helst%2C_1672%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Willem_van_de_Velde_II_(1633-1707)_-_(by_Lodewijk_van_der_Helst,_1672).jpg
+    license: Public domain
+    credit: Lodewijk van der Helst
+identifiers:
+  bnf: "149665548"
+  gnd: "118977350"
+  idref: "035768916"
+  kulturnav: 08f51b5a-2156-4095-a256-09f65a5d3314
+  lc: n82056731
+  rkd: "79794"
+  ulan: "500023744"
+  viaf: "27337373"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q432266
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q432266

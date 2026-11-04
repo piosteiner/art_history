@@ -1,0 +1,283 @@
+public_id: 115545
+title_lang: en
+title: Bauernfest
+names:
+  - lang: en
+    role: translation
+    text: Peasants’s Feast
+  - lang: en
+    role: translation
+    text: Fête paysanne
+  - lang: en
+    role: former
+    text: Interieur mit singenden Bauern beim Mahl
+  - lang: en
+    role: former
+    text: Bauernmahlzeit
+creator: adriaen-brouwer
+created: c. 1626
+created_span: uncertain
+kind: oil painting
+medium: Oil on oak panel
+dimensions: [35, 53.5]
+institution: kunsthaus-zurich
+inventory_number: R 4
+web_url: https://collection.kunsthaus.ch/de/collection/item/66/
+on_loan: true
+on_loan_since: 1949
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q52393366
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b2/Adriaen_Brouwer_-_Bauernfest_-_R_4_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Adriaen_Brouwer_-_Bauernfest_-_R_4_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Adriaen Brouwer
+provenance:
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1796-12-05
+    ended: 1796-12-05
+    method: auction
+    place: amsterdam
+    label: Lot 14
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: Jewish Digital Cultural Recovery Project (JDCRP), «Fête de paysans», https://pilot-demo.jdcrp.org/artwork/brouwer_festival_52570/ (07.09.2022): «AUCTION OF LOT: Philippus van der Schley; Cornelis Sebille Roos, Lugt no. 5512, Amsterdam, 5 December 1796 (lot 14)»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Thompson
+    acquired: 1796-12-05
+    method: purchase
+    direct: true
+    label: 44 Gulden
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: ZKG/KHZ Werkdossier, handschriftliche Notizen von Leopold Ruzicka."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/willem-gruyter-senior
+    role: dealer
+    ended: 1808
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1808-11-28
+    ended: 1808-11-28
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Lot 7
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: Wie oben Fussnote 3: «AUCTION OF LOT: Philippus van der Schley, Lugt no. 7482, Amsterdam, 28 November 1808 (lot 7)»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Spaan
+    acquired: 1808-11-28
+    method: purchase
+    direct: true
+    label: 16 Gulden
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/j-o-waller
+    place: baarn
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/franz-kleinberger
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/adolphe-schloss
+    ended: 1910
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/lucie-mathilde-schloss
+    acquired: 1911
+    ended: 1938
+    direct: true
+    place: paris
+    label: Paris, Erbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: Wie oben Fussnote 3: «Lucie Haas Schloss, by descent from her husband, Adolphe Schloss, Paris, 1911-1938.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: heirs of Adolphe Schloss
+    acquired: 1939-08-20
+    ended: 1943-04-16
+    method: inheritance
+    direct: true
+    label: (Corrèze); Château de Chambon; Château de Chambon, Laguenne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: Wie oben Fussnote 3: «Schloss heirs, by descent from their mother Lucie Haas Schloss, Paris, 1938; Château de Chambon, Laguenne, (Corrèze), France, 20 August 1939 – 16 April 1943.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/vichy-france
+    role: possessor
+    acquired: 1943-04-16
+    ended: 1943-11-24
+    method: confiscation
+    direct: true
+    place: paris
+    label: Tulle; Jeu de Paume
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: 'Footnote: Wie oben Fussnote 3; 1943 Beschlagnahme in Tulle  von Vertretern des Vichy-Regimes sowie SS-Angehörigen, anschließend Verbringung in das Jeu de Paume, Paris. Dort Auswahl von 262 Werken für den "Sonderauftrag Linz"; Verbringung dieses Konvoluts in den «Führerbau» («Verwaltungsbau»), München, wo es am 27. November 1943 einging. Von dem in den «Führerbau» verbrachten Bestand wurden 253 Werke vom 29.…'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Führerbau, Munich
+    role: custodian
+    acquired: 1943-11-24
+    ended: 1945-04-29
+    direct: true
+    place: munich
+    label: ausgewählt für den «Sonderauftrag Linz»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: Wie oben Fussnote 17."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/katharina-neumayer
+    role: possessor
+    acquired: 1945-04-29
+    ended: 1945-04-30
+    method: theft
+    direct: true
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    acquired: 1945-09-19
+    ended: 1946-01-30
+    direct: true
+    place: munich
+    label: München, Munich No. 8426
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: Koblenz, BArch B323/617 sowie B323/662, Property Card des CCP, Münchner Nummer 8426, http://www.dhm.de/datenbank/ccp (22.08.2019)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: heirs of Adolphe Schloss
+    acquired: 1946-01-30
+    ended: 1949-05-25
+    method: restitution
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-charpentier
+    role: agent
+    acquired: 1949-05-25
+    ended: 1949-05-25
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 6
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: Wie oben Fussnote 3; Auktion Galerie Charpentier Paris (25.05.1949), Lot 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/francis-matthiesen
+    role: agent
+    acquired: 1949-05-25
+    ended: 1949-06-16
+    method: purchase
+    direct: true
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: ZKG/KHZ Werkdossier, handschriftliche Notizen Leopold Ruzicka; ZKG/KHZ Ruzicka-Akten, Abrechnung Ruzicka-Stiftung 1949, S. 4: «Am 16. Juni 1949 von Herrn F.M.Z. Matthiesen aus der Versteigerung der Sammlung Adolphe Schloss»; Jean Pierre Durand war für den Transport zuständig: «Für Steigerungshonorar und Transportspesen für diese Gemälde (...) an Herrn Jean Pierre Durand.» (vgl. ZKG/KHZ Ruzicka-Akt…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1949-06-16
+    ended: 1949-06-16
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: Wie oben Fussnote 23."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1949-06-16
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: Wie oben Fussnote 23; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 100."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/66/
+        note: "Footnote: Wie oben Fussnote 26."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/66/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/66/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/66/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/66/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/66/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/66/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/66/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/66/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

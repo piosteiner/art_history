@@ -1,0 +1,22 @@
+public_id: 113403
+name: Eugenio Cajés
+given_name: Eugenio
+family_name: Caxés
+names:
+  - lang: es
+    role: alternative
+    text: Eugenio Caxés
+birth: 1574
+death: 1634-12-15
+wikidata_id: Q3059605
+metadata:
+  sources: [Wikidata Q3059605 (retrieved 2026-11-03)]
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q3059605
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q3059605

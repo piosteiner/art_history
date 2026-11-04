@@ -1,0 +1,22 @@
+public_id: 115128
+name: Arlesheim
+kind: settlement
+parent: switzerland
+country_code: CH
+location: [7.62028, 47.49222]
+wikidata_id: Q581647
+metadata:
+  sources: [Wikidata Q581647 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q581647
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q581647
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q581647

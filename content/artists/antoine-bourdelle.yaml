@@ -1,0 +1,82 @@
+public_id: 115503
+name: Antoine Bourdelle
+given_name: Antoine
+family_name: Bourdelle
+names:
+  - kind: birth
+    lang: fr
+    role: former
+    text: Émile-Antoine Bordelles
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q314350
+birth: 1861-10-30
+death: 1929-10-01
+wikidata_id: Q314350
+metadata:
+  sources: [Wikidata Q314350 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q314350
+  - type: born_in
+    to: place/montauban
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q314350
+  - type: worked_in
+    to: place/toulouse
+    period: 1876/1884
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q314350
+  - type: worked_in
+    to: place/paris
+    period: 1884/1929
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q314350
+  - type: student_of
+    to: artist/auguste-rodin
+    sources:
+      - accessed: 2026-11-03
+        property: P1066
+        wikidata: Q314350
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    period: 1884/1886
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q314350
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Antoine_Bourdelle_b_Meurisse_1925.jpg/1280px-Antoine_Bourdelle_b_Meurisse_1925.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Antoine_Bourdelle_b_Meurisse_1925.jpg
+    license: Public domain
+    credit: Agence de presse Meurisse
+identifiers:
+  bnf: 11893395m
+  dome: "39"
+  gnd: "118659537"
+  idref: "026745151"
+  kulturnav: e43347cc-c8b0-4e30-ba57-81d22fa682fd
+  lc: n50042128
+  rkd: "11484"
+  ulan: "500028923"
+  viaf: "64002371"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q314350
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q314350

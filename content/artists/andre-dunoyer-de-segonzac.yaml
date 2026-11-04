@@ -1,0 +1,56 @@
+public_id: 114950
+name: André Dunoyer de Segonzac
+given_name: André Dunoyer
+family_name: de Segonzac
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Albert André Marie Dunoyer de Segonzac
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q518406
+birth: 1884-07-06
+death: 1974-09-17
+wikidata_id: Q518406
+metadata:
+  sources: [Wikidata Q518406 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q518406
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q518406
+  - type: member_of
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-11-03
+        property: P463
+        wikidata: Q518406
+identifiers:
+  bnf: 11901152m
+  dome: "98"
+  gnd: "119356198"
+  idref: "026843684"
+  kulturnav: d9cacc58-bfc3-420d-a3d7-a42bdce8b872
+  lc: n82024449
+  rkd: "24887"
+  ulan: "500024152"
+  viaf: "59081879"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q518406
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q518406

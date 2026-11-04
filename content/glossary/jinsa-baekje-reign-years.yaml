@@ -1,0 +1,18 @@
+public_id: 113259
+name: Jinsa of Baekje (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 진사왕
+  - lang: ko-Hani
+    role: alternative
+    text: 辰斯王
+category: calendar
+definition: "The reign years of King Jinsa of Baekje (辰斯王, 진사왕), by which Korean histories date 385–392: 385 is Jinsa 1, 392 Jinsa 8."
+description_md: |-
+  **Jinsa** (辰斯王, 진사왕): the years of the reign of King Jinsa of Baekje. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 392 is Jinsa 8 (진사왕 8년). The year of the accession, 385, counts as the first year.
+
+  Before: [[chimnyu-baekje-reign-years|Chimnyu]]. After: [[asin-baekje-reign-years|Asin]].
+sources:
+  definition:
+    - source: dila-time-authority

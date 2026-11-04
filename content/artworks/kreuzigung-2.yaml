@@ -1,0 +1,190 @@
+public_id: 115121
+title_lang: en
+title: Kreuzigung
+names:
+  - lang: en
+    role: translation
+    text: Crucifixion
+creator: master-from-the-circle-of-the-manesse-codex
+created: c. 1320
+created_span: uncertain
+kind: painting
+medium: Tempera on panel
+dimensions: [18, 10.5]
+institution: kunsthaus-zurich
+inventory_number: 1954/0025.a
+web_url: https://collection.kunsthaus.ch/de/collection/item/2375/
+on_loan: true
+on_loan_since: 1954
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584794
+provenance:
+  - owner: person/anna-katharina-feuerstein
+    ended: 1930
+    place: bezau
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+        note: "Footnote: ZI München/Photothek, Archiv Julius Böhler, Karteisystem Luzern, L_10381, S. 1, Karteisystem Luzern, L_07771, S. 1; Stange 1932, S. 43, Abb. 15a und 15 b; Stange 1934, S. 56; Martin, 1961, S. 17."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leo-blumenreich
+    ended: 1931-10-01
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+        note: "Footnote: ZI München/Photothek, Archiv Julius Böhler, Karteisystem Luzern, L_10381, S. 1, Karteisystem Luzern, L_07771, S. 1, Karteisystem Kommission, K_102_31, S.1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/the-john-and-mable-ringling-museum-of-art
+    acquired: 1931-10-01
+    ended: 1932-10-01
+    direct: true
+    place: sarasota
+    label: wohl Kauf
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+        note: "Footnote: ZI München/Photothek, Archiv Julius Böhler, Karteisystem Kommission, K_102_31, S. 1, Karteisystem Luzern, L_07430, S. 1; ZI München/Photothek, Archiv Julius Böhler, Kontokurrentbuch, Eintrag vom 24. Juli 1931. Julius Böhler arbeitete als Kunsthändler für John und Mable Ringling, die eine Kunstsammlung aufbauten, die dann zum Grundstock des John and Mable Ringling Museum of Art in Sarasota wurde. J…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandel-ag
+    role: agent
+    acquired: 1931-09-09
+    ended: 1932-10-01
+    direct: true
+    place: lucerne
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+        note: "Footnote: ZI München/Photothek, Archiv Julius Böhler, Karteisystem Kommission, K_102_31, S. 1, Karteisystem Luzern, L_07771, S. 2, Karteisystem Luzern, L_7430, S.1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandlung-julius-bohler
+    acquired: 1931-09-09
+    ended: 1931-12-07
+    direct: true
+    place: munich
+    label: München, Kommission und Restaurierung
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+        note: "Footnote: ZI München/Photothek, Archiv Julius Böhler, Karteisystem Luzern, L_7430, S.1 «7. Dez. 1931 Zoll München – Luz.», Karteisystem Kommission, K_102_31, S. 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-hugelshofer
+    role: agent
+    acquired: 1931-12-07
+    ended: 1931-12-16
+    direct: true
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+        note: "Footnote: ZI München/Photothek, Archiv Julius Böhler, Karteisystem Luzern, L_7430, S. 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandel-ag
+    acquired: 1932-10-01
+    ended: 1943-02-03
+    method: purchase
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+        note: "Footnote: ZI München/Photothek, Archiv Julius Böhler, Karteisystem Luzern, L_10381, S. 1, Karteisystem Luzern, L_7430, S. 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-hugelshofer
+    role: agent
+    acquired: 1933-04-01
+    ended: 1935-05-02
+    direct: true
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+        note: "Footnote: ZI München/Photothek, Archiv Julius Böhler, Karteisystem Luzern, L_07771, S. 2 «1.4.33 Dr. Hugelshofer Zürich 2.5.35 zurück»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-hugelshofer
+    role: agent
+    acquired: 1937-09-10
+    ended: 1943-02-03
+    direct: true
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+        note: "Footnote: ZI München/Photothek, Archiv Julius Böhler, Karteisystem Luzern, L_10381, S. 1-2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/charles-albert-de-burlet
+    role: agent
+    acquired: 1942
+    ended: 1942
+    direct: true
+    place: basel
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+        note: "Footnote: Protokoll Nr. 183, Traktandum 8, 11.09.1942, Eidg. Kommission der Gottfried Keller-Stiftung: Kaufangebot von Burlet. Der Kauf wird abgelehnt; Korrespondenz, Gottfried Keller-Stiftung an Charles Albert de Burlet, Basel, 12.09.1942, Eidg. Kommission der Gottfried Keller-Stiftung."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-hugelshofer
+    acquired: 1943-02-03
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+        note: "Footnote: ZI München/Photothek, Archiv Julius Böhler, Karteisystem Luzern, L_10381, S. 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hans-leemann-geymuller
+    acquired: 1951-05-08 or earlier
+    ended: 1954
+    place: arlesheim
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+        note: "Footnote: Brief von René Wehrli an Dr. Hans Leemann-Geymüller, 09.05.1951, Archiv ZKG/KHZ, Ausstellung Korrespondenz Zürich 1351-1951 L-Z, Archiv 10.30.30.402; Brief von Dr. Hans Leemann-Geymüller an René Wehrli, 15.05.1951, Archiv ZKG/KHZ, Ausstellungen Korrespondenz Zürich 1351-1951 L-Z, Archiv 10.30.30.402: Hans Leemann-Geymüller gibt darin an, dass er das Werk schon Anfang der 1930er Jahre, kurz nach se…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/gottfried-keller-stiftung
+    acquired: 1954
+    method: purchase
+    direct: true
+    place: bern
+    label: GKS994
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+        note: "Footnote: Wie oben Fussnote 13; Gottfried-Keller-Stiftung, Jahresbericht 1954-55, S. 24: «erworben aus Privatbesitz / Vor etwa 25 Jahren tauchte im süddeutschen Kunsthandel ein gotisches Bildtäfelchen auf»; Protokoll Nr. 220 und 221, Eidg. Kommission der Gottfried Keller-Stiftung, wie oben Fussnote 16."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

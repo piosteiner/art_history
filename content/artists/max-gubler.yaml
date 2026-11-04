@@ -1,0 +1,48 @@
+public_id: 114978
+name: Max Gubler
+given_name: Max
+family_name: Gubler
+birth: 1898-05-26
+death: 1973-07-29
+wikidata_id: Q1912614
+metadata:
+  sources: [Wikidata Q1912614 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q1912614
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q1912614
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q1912614
+identifiers:
+  bnf: 13194922c
+  dodis: P40554
+  gnd: "118543148"
+  hls: "022026"
+  idref: "035530839"
+  lc: n83200500
+  rkd: "34427"
+  sikart: "4000053"
+  ulan: "500012013"
+  viaf: "42629386"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q1912614
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q1912614

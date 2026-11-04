@@ -1,0 +1,60 @@
+public_id: 115505
+name: Cuno Amiet
+given_name: Cuno
+family_name: Amiet
+birth: 1868-03-28
+death: 1961-07-06
+wikidata_id: Q566797
+metadata:
+  sources: [Wikidata Q566797 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q566797
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q566797
+  - type: member_of
+    to: movement/die-brucke
+    sources:
+      - accessed: 2026-11-03
+        property: P463
+        wikidata: Q566797
+  - type: associated_with
+    to: movement/pont-aven-school
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q566797
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/ETH-BIB_Cuno_Amiet_Portraitfoto_Com_M01-0004-0013.tif/lossy-page1-1280px-ETH-BIB_Cuno_Amiet_Portraitfoto_Com_M01-0004-0013.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:ETH-BIB_Cuno_Amiet_Portraitfoto_Com_M01-0004-0013.tif
+    license: CC BY-SA 4.0
+    credit: Comet Photo AG (Zürich)
+identifiers:
+  bnf: "119354761"
+  dodis: P25359
+  dome: "4"
+  gnd: "118502557"
+  hls: "021974"
+  idref: "027277852"
+  lc: n83224756
+  rkd: "1538"
+  sikart: "4000011"
+  ulan: "500005153"
+  viaf: "7399068"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q566797
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q566797

@@ -1,0 +1,64 @@
+public_id: 113451
+title_lang: en
+title: Nihonbashi in Edo
+names:
+  - lang: ja
+    role: original
+    text: 江戸日本橋
+  - Edo Nihonbashi
+  - lang: en
+    role: original
+    text: Nihonbashi bridge in Edo
+  - lang: fr
+    role: translation
+    text: Le pont de Nihonbashi à Edo
+  - lang: de
+    role: translation
+    text: Nihon-brücke in Edo
+  - lang: es
+    role: translation
+    text: Puente Nihonbashi en Edo
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 江戸日本橋
+parent: thirty-six-views-of-mount-fuji
+part_number: "31"
+creator: katsushika-hokusai
+created: 1830/1832
+created_label: c. 1830–1832
+created_span: uncertain
+institution: metropolitan-museum-of-art
+inventory_number: JP1295
+web_url: https://www.metmuseum.org/art/collection/search/55237
+wikidata_id: Q18173419
+metadata:
+  sources: [Wikidata Q18173419 (retrieved 2026-11-03)]
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/original/DP141003.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/55237
+    license: Public domain
+    credit: The Metropolitan Museum of Art
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173419
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173419
+  created:
+    - url: https://www.metmuseum.org/art/collection/search/55237
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173419
+  institution:
+    - url: https://www.metmuseum.org/art/collection/search/55237
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.metmuseum.org/art/collection/search/55237
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03

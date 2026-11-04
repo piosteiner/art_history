@@ -16,6 +16,13 @@ relationships:
       - accessed: 2026-11-02
         property: P27
         wikidata: Q30251109
+  - type: visited
+    to: place/venice
+    period: 1880s
+    sources:
+      - note: Worked for the Italian delegation in Tokyo and through it studied in Venice during the 1880s; on his return the leading Western-style sculptor.
+        source: history-of-japanese-art
+        locator: p. 357
   - type: studied_at
     to: institution/accademia-di-belle-arti-di-venezia
     period: 1885

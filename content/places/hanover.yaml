@@ -1,0 +1,47 @@
+public_id: 115236
+name: Hanover
+names:
+  - lang: ja
+    role: translation
+    text: ハノーファー
+  - lang: zh
+    role: translation
+    text: 汉诺威
+  - lang: ko
+    role: translation
+    text: 하노버
+  - lang: fr
+    role: translation
+    text: Hanovre
+  - lang: de
+    role: original
+    text: Hannover
+  - lang: es
+    role: translation
+    text: Hanóver
+  - lang: ru
+    role: translation
+    text: Ганновер
+  - lang: pt
+    role: translation
+    text: Hanôver
+kind: settlement
+parent: niedersachsen
+country_code: DE
+location: [9.73861, 52.37444]
+wikidata_id: Q1715
+metadata:
+  sources: [Wikidata Q1715 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q1715
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q1715
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q1715

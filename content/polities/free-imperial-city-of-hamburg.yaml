@@ -5,6 +5,7 @@ names:
   - lang: de
     role: translation
     text: Reichsstadt Hamburg
+country_codes: [DE]
 wikidata_id: Q2614104
 metadata:
   sources: [Wikidata Q2614104 (retrieved 2026-10-29)]

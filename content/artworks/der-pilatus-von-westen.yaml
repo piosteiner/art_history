@@ -1,0 +1,93 @@
+public_id: 115522
+title_lang: de
+title: Der Pilatus von Westen
+names:
+  - lang: en
+    role: translation
+    text: Mount Pilatus from the West
+creator: robert-zund
+created: 1851
+kind: oil painting
+medium: Oil on paper on cardboard
+dimensions: [27, 34.5]
+institution: kunsthaus-zurich
+inventory_number: 2003/0029
+web_url: https://collection.kunsthaus.ch/de/collection/item/5745/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586446
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/09/Robert_Z%C3%BCnd_-_Der_Pilatus_von_Westen_-_2003-0029_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Robert_Z%C3%BCnd_-_Der_Pilatus_von_Westen_-_2003-0029_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Robert Zünd
+provenance:
+  - owner: artist/robert-zund
+    role: estate
+    acquired: 1909-01-15
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5745/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 186."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1966-06
+    ended: 1966-06
+    method: auction
+    place: lucerne
+    label: Lot 2420; zurück
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5745/
+        note: "Footnote: Kunsthaus Zürich 2007, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/katharina-zust-feller
+    acquired: 1978
+    ended: 1978
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5745/
+        note: "Footnote: Kunsthaus Zürich 2007, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2003
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5745/
+        note: "Footnote: Kunsthaus Zürich 2007, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5745/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5745/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5745/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5745/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5745/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5745/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5745/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,77 @@
+public_id: 115458
+title_lang: en
+title: Pietà
+attribution_label: Anonymous, Burgundy
+created: 1450/1499
+created_label: 2nd half 15th century
+created_span: uncertain
+kind: sculpture
+medium: Limestone
+dimensions: [77, 93.5, 40]
+institution: kunsthaus-zurich
+inventory_number: 1952/0009
+web_url: https://collection.kunsthaus.ch/de/collection/item/3928/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner_label: private collection
+    ended: 1952
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3928/
+        note: "Footnote: Brief von Max Kaganovitch, 31.05.1952, Eingehende Korrespondenz, ZKG/KHZ Archiv, 10.30.30.309."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/max-kaganovitch
+    role: agent
+    acquired: 1952
+    ended: 1952
+    direct: true
+    place: paris
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3928/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; ZKG/KHZ Inventarbogen/Werkdossier; sowie wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1952
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 2000000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3928/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; ZKG/KHZ Inventarbogen/Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3928/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3928/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3928/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3928/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3928/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3928/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3928/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,23 @@
+public_id: 113397
+name: Vicente Carducho
+given_name: Vincenzo
+family_name: Carducci
+names:
+  - kind: birth
+    lang: it
+    role: alternative
+    text: Vincenzo Carducci
+birth: 1576
+death: 1638-11
+wikidata_id: Q369521
+metadata:
+  sources: [Wikidata Q369521 (retrieved 2026-11-03)]
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q369521
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q369521

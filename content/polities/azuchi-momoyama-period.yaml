@@ -29,6 +29,7 @@ names:
     role: translation
     text: Период Адзути-Момояма
 period: 1568/1600
+country_codes: [JP]
 wikidata_id: Q319531
 metadata:
   sources: [Wikidata Q319531 (retrieved 2026-10-29)]

@@ -1,0 +1,105 @@
+public_id: 115053
+title_lang: de
+title: Stillleben mit Hummer und grosser Zinnkanne
+names:
+  - lang: en
+    role: translation
+    text: Still Life with Lobster and Large Pewter Mug
+  - lang: en
+    role: former
+    text: Stilleben mit Hummer und grossem Krug
+creator: abraham-van-beyeren
+created: 1640/1655
+created_label: c. 1645/1650
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [105, 130]
+institution: kunsthaus-zurich
+inventory_number: R 2
+web_url: https://collection.kunsthaus.ch/de/collection/item/192/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586237
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/33/Abraham_van_Beyeren_-_Stillleben_mit_Hummer_und_grosser_Zinnkanne_-_R_2_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Abraham_van_Beyeren_-_Stillleben_mit_Hummer_und_grosser_Zinnkanne_-_R_2_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Abraham van Beijeren
+provenance:
+  - owner: artist/abraham-van-beyeren
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/192/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: the late Lord Byron
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/192/
+        note: "Footnote: ZKG/KHZ Ruzicka Akten, Korrespondenz C. Marshall Spink an Leopold Ruzicka, 10.05.1949 und 05.07.1949."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/c-marshall-spink
+    ended: 1949-07-12
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/192/
+        note: "Footnote: ZKG/KHZ Werkdossier, Rechnung C. Marshall Spink an Leopold Ruzicka, o.D; ZKG/KHZ Ruzicka-Akten, Abrechnung Ruzicka-Stiftung 1949, S. 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1949-07-12
+    ended: 2005
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/192/
+        note: "Footnote: ZKG/KHZ Werkdossier, handschriftliche Notiz Leopold Ruzicka 1949; ZKG/KHZ Ruzicka-Akten, Abrechnung, wie oben Fussnote 5; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 105."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/192/
+        note: "Footnote: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/192/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/192/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/192/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/192/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/192/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/192/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/192/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/192/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,52 @@
+public_id: 115327
+name: Quiringh van Brekelenkam
+given_name: Quiringh
+family_name: van Brekelenkam
+birth: 1622
+death: 1668
+wikidata_id: Q2123501
+metadata:
+  sources: [Wikidata Q2123501 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q2123501
+  - type: born_in
+    to: place/zuid-holland
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q2123501
+  - type: died_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q2123501
+  - type: worked_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q2123501
+identifiers:
+  bnf: 14965507h
+  gnd: "118968998"
+  idref: 18976323X
+  kulturnav: 4ec8cd69-f179-4bac-8c29-e07ff7a9fdb1
+  lc: no93002907
+  rkd: "12321"
+  ulan: "500004118"
+  viaf: "32268678"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q2123501
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q2123501

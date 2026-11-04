@@ -1,0 +1,15 @@
+public_id: 113131
+name: Tianshun
+names:
+  - lang: zh
+    role: original
+    text: 天順
+category: calendar
+definition: "Chinese era name (天順) of the Yuan for the year 1328: 1328 is Tianshun 1 (元年), its only year."
+description_md: |-
+  **Tianshun** (天順) is a Chinese era name ([[nianhao]]) of the Yuan, proclaimed in 1328 under Ragibagh (天順帝). Its years are counted in lunar years: 1328 is Tianshun 1 (元年), its only year.
+
+  Before: [[zhihe-era-1328|Zhihe]]. After: [[tianli-era|Tianli]].
+sources:
+  definition:
+    - source: dila-time-authority

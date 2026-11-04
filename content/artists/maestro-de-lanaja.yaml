@@ -1,0 +1,24 @@
+public_id: 115314
+name: Maestro de Lanaja
+given_name: Maestro
+family_name: de Lanaja
+death: 1459-10
+wikidata_id: Q3297636
+metadata:
+  sources: [Wikidata Q3297636 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/crown-of-aragon
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q3297636
+identifiers:
+  lc: nr2006015962
+  ulan: "500121292"
+  viaf: "30626273"
+sources:
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q3297636

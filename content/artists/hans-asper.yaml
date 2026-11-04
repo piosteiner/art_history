@@ -1,0 +1,59 @@
+public_id: 115573
+name: Hans Asper
+given_name: Hans
+family_name: Asper
+birth: 1499
+death: 1571-03-31
+wikidata_id: Q115752
+metadata:
+  sources: [Wikidata Q115752 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q115752
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q115752
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q115752
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q115752
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/10/Hans_Asper.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_Asper.jpg
+    license: Public domain
+    credit: J. Rodolf Füssli
+identifiers:
+  bnf: "119446307"
+  dome: "11617"
+  gnd: "135772923"
+  hls: "018317"
+  idref: "111615577"
+  lc: n82068203
+  rkd: "2728"
+  sikart: "4022859"
+  ulan: "500017252"
+  viaf: "22412757"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q115752
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q115752

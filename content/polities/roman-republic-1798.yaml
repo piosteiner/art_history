@@ -32,6 +32,7 @@ names:
     role: translation
     text: Римская республика
 period: 15 February 1798 – 30 September 1799
+country_codes: [IT]
 wikidata_id: Q175881
 metadata:
   sources: [Wikidata Q175881 (retrieved 2026-10-29)]

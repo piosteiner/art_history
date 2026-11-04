@@ -1,0 +1,46 @@
+public_id: 115156
+name: Hans Jakob Oeri
+given_name: Hans Jakob
+family_name: Oeri
+birth: 1782-12-16
+death: 1868-02-24
+wikidata_id: Q3126967
+metadata:
+  sources: [Wikidata Q3126967 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q3126967
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q3126967
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8d/Hans_Jakob_Oeri_%E2%80%93_Selbstportr%C3%A4t_1810-1820.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_Jakob_Oeri_%E2%80%93_Selbstportr%C3%A4t_1810-1820.jpg
+    license: Public domain
+    credit: Hans Jakob Oeri (1782-1868)
+identifiers:
+  bnf: 14801903v
+  gnd: "133225631"
+  hls: "022555"
+  idref: "197033849"
+  lc: no2007093585
+  rkd: "60298"
+  sikart: "4023196"
+  ulan: "500080774"
+  viaf: "76580409"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q3126967
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q3126967

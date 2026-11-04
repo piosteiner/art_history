@@ -33,6 +33,7 @@ names:
     role: translation
     text: Королевство Обеих Сицилий
 period: 1738/1861-02-21
+country_codes: [IT]
 wikidata_id: Q180393
 metadata:
   sources: [Wikidata Q180393 (retrieved 2026-10-29)]

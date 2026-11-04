@@ -27,6 +27,7 @@ names:
     role: translation
     text: Реставрация Бурбонов
 period: 1814-04-06/1830-08-09
+country_codes: [FR]
 wikidata_id: Q207162
 metadata:
   sources: [Wikidata Q207162 (retrieved 2026-10-29)]

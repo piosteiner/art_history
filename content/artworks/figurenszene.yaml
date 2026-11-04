@@ -1,0 +1,88 @@
+public_id: 115566
+title_lang: en
+title: Figurenszene
+names:
+  - lang: en
+    role: translation
+    text: Figure Scene
+attribution_label: Anonymous
+created: c. 1915
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [95.8, 85.4]
+institution: kunsthaus-zurich
+inventory_number: ZKG.2020/0021
+web_url: https://collection.kunsthaus.ch/de/collection/item/682958/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586331
+provenance:
+  - owner: person/otto-morach
+    ended: 1973-12-25
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/682958/
+        note: "Footnote: Etikette auf der Werkrückseite «Atelier-Nachlass / Otto Morach / Zürich 1974 / Nr.»; Jahresbericht 2020, hrsg. von Zürcher Kunstgesellschaft, 2020, S. 22-23."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hugo-studeli
+    acquired: 1973-12-25
+    ended: 2020-07-07
+    method: inheritance
+    direct: true
+    place: solothurn
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/682958/
+        note: "Footnote: Etikette auf der Werkrückseite, wie oben Fussnote 3; Schenkungsvertrag zwischen Hugo Stüdeli und der Zürcher Kunstgesellschaft, 07.07.2020, ZKG/KHZ Werkdossier;  Jahresbericht 2020, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/raimund-meyer
+    role: agent
+    acquired: 2020
+    ended: 2020
+    direct: true
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/682958/
+        note: "Footnote: Jahresbericht 2020, hrsg. von Zürcher Kunstgesellschaft, 2020, S. 22-23."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2020-07-07
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/682958/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/682958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/682958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/682958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/682958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/682958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/682958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/682958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

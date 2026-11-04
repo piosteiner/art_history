@@ -1,0 +1,81 @@
+public_id: 115212
+title_lang: fr
+title: Femme à la draperie
+names:
+  - lang: de
+    role: translation
+    text: Frau mit Tuch
+  - lang: fr
+    role: former
+    text: Femme drapée debout
+creator: henri-laurens
+created: 1928
+kind: sculpture
+medium: Bronze
+dimensions: [71, 31, 19.7]
+institution: kunsthaus-zurich
+inventory_number: 1969/0014
+web_url: https://collection.kunsthaus.ch/de/collection/item/2743/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: institution/galerie-louise-leiris
+    role: dealer
+    ended: 1960 or later
+    place: paris
+    label: Nr. 05849^6; Nr. 6775
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2743/
+        note: "Footnote: Kat. Musée d’Art et d’Industrie 1960, S. 19, Nr. 59; Etikette auf der Unterseite der Skulptur. Nr. 05849 6 [hochgestellte 6, mögl. Gussnummer), Nr. 6775 [Fotonummer]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/werner-bar
+    co_owners: [person/nelly-bar]
+    acquired: 1960 or later
+    ended: 1960 or later
+    method: purchase
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2743/
+        note: "Footnote: Kat. Kunsthaus Zürich 1959, S. 17, Nr. 54; Werner und Nelly Bär 1965 (Sammlungskatalog), S. 248. Werner und Nelly Bär besassen noch einen zweiten Abguss derselben Bronze (Guss 5/6), der 1958 erworben wurde, im Familienbesitz verblieb und 2004 über Sotheby’s veräussert wurde, vgl. Kat. Auktion Sotheby 2004, S. 20, Lot 40. Ob die hier besprochene Bronze (Guss 6/6) zur selben Zeit gekauft wurde, konn…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1969
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2743/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 26.11.1969, Archiv ZKG/KHZ, 10.30.10.42a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2743/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2743/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2743/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2743/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2743/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2743/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2743/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

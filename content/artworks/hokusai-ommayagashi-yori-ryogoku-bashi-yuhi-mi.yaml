@@ -1,0 +1,65 @@
+public_id: 113440
+title_lang: en
+title: Viewing the Sunset over Ryōgoku Bridge from the Onmaya Embankment
+names:
+  - lang: ja
+    role: original
+    text: 御厩川岸より両国橋夕陽見
+  - Ommaya-gashi yori Ryōgoku-bashi yūhi mi
+  - Onmaya-gashi yori Ryōgoku-bashi yūhi mi
+  - lang: en
+    role: original
+    text: Sunset across the Ryogoku bridge from the bank of the Sumida river at Onmaya-gashi
+  - lang: fr
+    role: translation
+    text: Coucher de soleil à travers le pont de Ryōgoku depuis la rive de la Sumida à Onmayagashi
+  - lang: de
+    role: translation
+    text: Blick auf den Sonnenuntergang über der Ryogoku-Brücke von der Ufermauer in Onmaya
+  - lang: es
+    role: translation
+    text: Puesta de sol a través del puente Ryōgoku desde la orilla del río Sumida en Onmayagashi
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 御厩川岸より両国橋夕陽見
+parent: thirty-six-views-of-mount-fuji
+part_number: "22"
+creator: katsushika-hokusai
+created: 1830/1833
+created_label: c. 1830–1833
+created_span: uncertain
+institution: art-institute-of-chicago
+inventory_number: "1925.3260"
+web_url: https://www.artic.edu/artworks/24696
+wikidata_id: Q18173407
+metadata:
+  sources: [Wikidata Q18173407 (retrieved 2026-11-03)]
+images:
+  - url: https://www.artic.edu/iiif/2/c2a13a9d-dbce-4e8f-2d6a-8bc3f1a1328b/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/24696
+    license: Public domain
+    credit: Art Institute of Chicago, Clarence Buckingham Collection
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173407
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173407
+  created:
+    - url: https://www.artic.edu/artworks/24696
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173407
+  institution:
+    - url: https://www.artic.edu/artworks/24696
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.artic.edu/artworks/24696
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03

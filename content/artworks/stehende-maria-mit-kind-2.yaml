@@ -1,0 +1,82 @@
+public_id: 115343
+title_lang: de
+title: Stehende Maria mit Kind
+names:
+  - lang: en
+    role: translation
+    text: Standing Madonna with Child
+attribution_label: Anonymous, Southern German
+created: 1425/1445
+created_label: c. 1430/1440
+created_span: uncertain
+kind: sculpture
+medium: Hardwood with heavily supplemented old polychromy
+dimensions: [126, 43, 31]
+institution: kunsthaus-zurich
+inventory_number: 1951/0011
+web_url: https://collection.kunsthaus.ch/de/collection/item/3412/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner_label: private collection
+    ended: 1951
+    place: germany
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3412/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 27.04.1951, Archiv ZKG/KHZ, 10.30.10.42a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/benno-griebert
+    role: agent
+    acquired: 1951
+    ended: 1951
+    direct: true
+    place: meersburg
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3412/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1951
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 14000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3412/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; ZKG/KHZ Inventarbogen/Werkdossier; und wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3412/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3412/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3412/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3412/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3412/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3412/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3412/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

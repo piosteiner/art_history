@@ -30,6 +30,7 @@ names:
     role: translation
     text: Германия в 1945—1949 годах
 period: 1945-05-09/1949-05-23
+country_codes: [DE]
 wikidata_id: Q2415901
 metadata:
   sources: [Wikidata Q2415901 (retrieved 2026-10-29)]

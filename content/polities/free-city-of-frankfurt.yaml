@@ -29,6 +29,7 @@ names:
     role: translation
     text: Вольный город Франкфурт
 period: 1372/1866-10-08
+country_codes: [DE]
 wikidata_id: Q704300
 metadata:
   sources: [Wikidata Q704300 (retrieved 2026-10-29)]

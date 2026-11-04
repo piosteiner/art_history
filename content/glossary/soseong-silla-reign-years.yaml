@@ -1,0 +1,18 @@
+public_id: 113375
+name: Soseong of Silla (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 소성왕
+  - lang: ko-Hani
+    role: alternative
+    text: 昭聖王
+category: calendar
+definition: "The reign years of King Soseong of Silla (昭聖王, 소성왕), by which Korean histories date 799–800: 799 is Soseong 1, 800 Soseong 2."
+description_md: |-
+  **Soseong** (昭聖王, 소성왕): the years of the reign of King Soseong of Silla. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 800 is Soseong 2 (소성왕 2년). The year of the accession, 799, counts as the first year.
+
+  Before: [[wonseong-silla-reign-years|Wonseong]]. After: [[aejang-silla-reign-years|Aejang]].
+sources:
+  definition:
+    - source: dila-time-authority

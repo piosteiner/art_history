@@ -1,0 +1,178 @@
+public_id: 115441
+title_lang: de
+title: Bildnis eines jungen Herrn im Interieur
+names:
+  - lang: fr
+    role: translation
+    text: Portrait of a Young Man in an Interior
+  - lang: de
+    role: former
+    text: Bildnis eines stehenden Herrn
+creator: gerard-ter-borch
+created: 1668
+kind: oil painting
+medium: Oil on canvas
+dimensions: [76, 62]
+institution: kunsthaus-zurich
+inventory_number: R 48
+web_url: https://collection.kunsthaus.ch/de/collection/item/3900/
+on_loan: true
+on_loan_since: 1950
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586288
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b8/Gerard_ter_Borch_-_Bildnis_eines_jungen_Herrn_im_Interieur_-_R_48_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Gerard_ter_Borch_-_Bildnis_eines_jungen_Herrn_im_Interieur_-_R_48_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Gerard ter Borch
+provenance:
+  - owner: person/f-i-gsell
+    ended: 1872
+    place: vienna
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+        note: "Footnote: Ausst.-Kat. Cleveland Museum of Art 1936, S. 97; Gudlaugsson 1959, Bd. 1, S. 206, Nr. 222."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1875-01-25
+    ended: 1875-01-25
+    method: auction
+    place: paris
+    label: Lot 82; Paris, Versteigerung Marquis de Salamanca
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+        note: "Footnote: Gudlaugsson 1959, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1896-06-08
+    ended: 1896-06-08
+    method: auction
+    place: paris
+    label: Lot 9; Paris, Versteigerung Dreyfus de Gonzales
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+        note: "Footnote: Wie oben Fussnote 5: «Verst. Dreyfus de Gonzales, Paris, 8-6-1896, Nr. 9 [mit Angabe, dass das Bild vorher auf der Auktion F. I. Gsell gewesen sein soll, wo es jedoch nicht vorkommt. Es könnte sich jedoch in der Sammlung F. I. Gsell befunden haben].»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1896-11-24
+    ended: 1896-11-24
+    method: auction
+    place: amsterdam
+    label: Lot 88; Amsterdam, Amsterdam, Versteigerung Van Oudshoorn u.a.
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+        note: "Footnote: Wie oben Fussnote 5; ZKG/KHZ Werkdossier, handschriftliche Notiz von Leopold Ruzicka."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/f-p-wood
+    acquired: 1936 or earlier
+    ended: 1936 or earlier
+    place: toronto
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/d-katz
+    acquired: 1936 or earlier
+    place: dieren
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+        note: "Footnote: Archiv fichescollectie Cornelis Hofstede de Groot, RKD – Netherlands Institute for Art History, den Haag, Kartennummer 1067208."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hanns-schaeffer
+    acquired: 1936 or earlier
+    direct: true
+    place: new-york-city
+    label: Kommission?
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+        note: "Footnote: Ab 1936 und während der Kriegsjahre war Schaeffer in einer Konsignationspartnerschaft mit der niederländischen Handelsfirma D. Katz in Dieren. Bereits Ende 1939 schickte Katz Teile der umfangreichen Gemäldesendung der Firma D. Katz als Kommissionsware für den amerikanischen Markt an den New Yorker Kunsthandel Schaeffer. Mit dem Ziel die Bilder vor dem befürchteten Zugriff der Deutschen in Sicherhe…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/doris-e-greif
+    acquired: 1949-10-27 or earlier
+    ended: 1950-05-11
+    place: geneva
+    label: früher Amerika
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+        note: "Footnote: Korrespondenz Doris Greif an Leopold Ruzicka, 14.10.1949, ZKG/KHZ, Werkdossier; Abrechnung Ruzicka-Stiftung 1950, ZKG/KHZ, Ruzicka-Akten; Gudlaugsson 1959, wie oben Fussnote 3; E-Mail-Korrespondenz Monti, 28.08.2023."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/musee-d-art-et-d-histoire-de-geneve
+    acquired: 1949-10-27
+    ended: 1951-07-21
+    direct: true
+    place: geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+        note: "Footnote: E-Mail-Korrespondenz, wie oben Fussnote 16."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1950-05-11
+    ended: 2005
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+        note: "Footnote: Korrespondenz Leopold Ruzicka an Steinmeyer, 26.12.1949, ZKG/KHZ, Werkdossier; Abrechnung, ZKG/KHZ, Ruzicka-Akten, wie oben Fussnote 16; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 103."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+        note: "Footnote: Wie oben Fussnote 18."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: vorhanden
+    label: Nicht (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

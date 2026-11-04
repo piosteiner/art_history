@@ -1,0 +1,29 @@
+public_id: 114948
+name: Morcote
+names:
+  - lang: zh
+    role: translation
+    text: 莫爾科特
+  - lang: ru
+    role: translation
+    text: Моркоте
+kind: settlement
+parent: ticino
+country_code: CH
+location: [8.916, 45.925]
+wikidata_id: Q68224
+metadata:
+  sources: [Wikidata Q68224 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q68224
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q68224
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q68224

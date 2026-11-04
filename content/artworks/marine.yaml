@@ -1,0 +1,143 @@
+public_id: 115103
+title_lang: en
+title: Marine
+names:
+  - lang: de
+    role: translation
+    text: Blick aufs Meer
+  - lang: en
+    role: translation
+    text: Seascape
+  - lang: de
+    role: former
+    text: Blick aufs Meer, Guernsey
+creator: pierre-auguste-renoir
+created: 1879/1880
+kind: oil painting
+medium: Oil on canvas
+dimensions: [50.5, 61.5]
+institution: kunsthaus-zurich
+inventory_number: "2634"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2265/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q108515220
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fa/Pierre-Auguste_Renoir_-_Marine_-_2634_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_Marine_-_2634_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+provenance:
+  - owner: person/raphael-gerard
+    role: dealer
+    ended: 1941-04-08
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+        note: "Footnote: Archives Wildenstein Plattner Institute, Paris. Geschäftsbücher der Galerie Raphaël Gérard (Mai 1937 – April 1941): Die Nummer auf der Werkrückseite «D 1510» verweist auf den belgischen Kunsthändler Raphaël Gérard. In seinem Geschäftsbuch ist unter der Nr. 1510 ein Gemälde von Renoir aufgelistet «Bord de la Mer», welches am 18.04.1941 an einen zurzeit nicht identifizierbaren «Hein» für 250'000 FFR…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Hein
+    acquired: 1941-04-18
+    method: purchase
+    direct: true
+    certainty: probable
+    price:
+      amount: 250000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/roger-dequoy
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+        note: "Footnote: Dauberville/Dauberville 2007 I.12.153; Sitzungsprotokoll des Vorstands, 20.5.1943, I.a.1, Archiv ZKG/KHZ, 10.30.10.12; Briefe von Theodor Fischer, 19.05.1943, von Fritz Nathan, 03.05.1943 und 19.05.1943, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.144a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/wildenstein-co
+    role: dealer
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/carl-montag
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+        note: "Footnote: Brief von Theodor Fischer, 19.05.1943, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.144a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/theodor-fischer
+    role: dealer
+    ended: 1943
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and Luzern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+        note: "Footnote: Dauberville/Dauberville 2007, wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-nathan
+    acquired: 1943
+    ended: 1943
+    direct: true
+    place: st-gallen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+        note: "Footnote: Dauberville/Dauberville 2007, wie oben Fussnote 6; Fritz Nathan erläuterte in einem Brief, dass das Gemälde «Marine», welches in der damaligen Korrespondenz auch als «Dünenlandschaft» oder «Guernsey» bezeichnet wurde, sowohl Fritz Nathan als auch Theodor Fischer gemeinsam gehörte. Auf einer Liste von Fritz Nathan zuhanden der Schweizerischen Verrechnungsstelle (SVST) vom 20.08.1946 fungiert auf S.…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1943
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+        note: "Footnote: Dauberville/Dauberville 2007, wie oben Fussnote 6; ZKG/KHZ, Inventarbuch Slg.; Sitzungsprotokoll der Sammlungskommission, 31.03.1943, I.A.6.f, 06.05.1943, IV.d und 21.10.1943 I.a.1, Archiv ZKG/KHZ, 10.30.10.42; Sitzungsprotokoll des Vorstands, 20.5.1943 I.a.1, Archiv ZKG/KHZ, 10.30.10.12; Zürcher Kunstgesellschaft Jahresbericht 1943, S. 10; Archiv ZKG/KHZ, Ausgehende Korrespondenz, 10.30.20.97: S.…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: I.12.153
+    label: Dauberville 2007 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

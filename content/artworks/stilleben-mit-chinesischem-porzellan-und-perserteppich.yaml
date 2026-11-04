@@ -1,0 +1,124 @@
+public_id: 115296
+title_lang: en
+title: Stilleben mit chinesischem Porzellan und Perserteppich
+creator: juriaen-van-streeck
+created: 1672
+kind: oil painting
+medium: Oil on canvas
+dimensions: [83.5, 102.5]
+institution: kunsthaus-zurich
+inventory_number: R 36
+web_url: https://collection.kunsthaus.ch/de/collection/item/3112/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586290
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ee/Juriaen_van_Streeck_-_Stilleben_mit_chinesischem_Porzellan_und_Perserteppich_-_R_36_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Juriaen_van_Streeck_-_Stilleben_mit_chinesischem_Porzellan_und_Perserteppich_-_R_36_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Juriaen van Streeck
+provenance:
+  - owner_label: unknown (collector)
+    ended: 1936
+    place: england
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3112/
+        note: "Footnote: ZKG/KHZ, Werkdossier, Korrespondenz von Fritz Steinmeyer an Leopold Ruzicka, 21.06.1948: «Erworben 1936 aus englischem Privatbesitz»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/jean-schmitt
+    role: dealer
+    ended: 1936-02-26
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3112/
+        note: "Footnote: Zentralinstitut für Kunstgeschichte ZIKG, München, Archiv Kunsthandlung Böhler, Böhler-Inventarkarte Luzern [L_10399]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandel-ag
+    acquired: 1936-02-26
+    ended: 1939-09-07
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3112/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-steinmeyer
+    acquired: 1936
+    ended: 1948-06-21
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3112/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1948-06-21
+    ended: 1948-12-27
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3112/
+        note: "Footnote: ZKG/KHZ, Werkdossier, wie oben Fussnote 3; Abrechnung Ruzicka-Stiftung 1949, S. 2, ZKG/KHZ, Ruzicka-Akten."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1949-12-27
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3112/
+        note: "Footnote: ZKG/KHZ, Ruzicka-Akten, Abrechnung, wie oben Fussnote 8; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 108."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3112/
+        note: "Footnote: Wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3112/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3112/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3112/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3112/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3112/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3112/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3112/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3112/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

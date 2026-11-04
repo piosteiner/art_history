@@ -6,6 +6,8 @@ names:
   - lang: ja
     role: translation
     text: 菱川師信
+birth: 1618
+death: 1694-06-25
 wikidata_id: Q11620184
 metadata:
   sources: [Wikidata Q11620184 (retrieved 2026-11-01)]
@@ -16,3 +18,12 @@ relationships:
       - accessed: 2026-11-02
         property: P27
         wikidata: Q11620184
+sources:
+  birth:
+    - url: https://de.wikipedia.org/wiki/Hishikawa_Moronobu
+      source: de-wikipedia-org
+      accessed: 2026-11-03
+  death:
+    - url: https://de.wikipedia.org/wiki/Hishikawa_Moronobu
+      source: de-wikipedia-org
+      accessed: 2026-11-03

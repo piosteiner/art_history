@@ -1,0 +1,47 @@
+public_id: 115462
+name: Peter Dell the Elder
+given_name: Peter, the Elder
+family_name: Dell
+birth: 1490
+death: 1552
+wikidata_id: Q7173617
+metadata:
+  sources: [Wikidata Q7173617 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q7173617
+  - type: born_in
+    to: place/wurzburg
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q7173617
+  - type: died_in
+    to: place/wurzburg
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q7173617
+  - type: worked_in
+    to: place/wurzburg
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q7173617
+identifiers:
+  gnd: "122781147"
+  rkd: "114423"
+  viaf: "20572524"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q7173617
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q7173617

@@ -1,0 +1,71 @@
+public_id: 115050
+title_lang: en
+title: Auferstehung
+names:
+  - lang: en
+    role: translation
+    text: Resurrection
+creator: heinrich-freudweiler
+created: c. 1790
+created_span: uncertain
+kind: oil painting
+medium: Oil on panel
+dimensions: [47, 35.5]
+institution: kunsthaus-zurich
+inventory_number: 1945/0017
+web_url: https://collection.kunsthaus.ch/de/collection/item/1899/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585621
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/58/Heinrich_Freudweiler_-_Auferstehung_-_1945-0017_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Heinrich_Freudweiler_-_Auferstehung_-_1945-0017_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Heinrich Freudweiler
+provenance:
+  - owner: person/eugene-lambert
+    ended: 1945
+    place: geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1899/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1945
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1899/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission Archiv 10.30.10.41-42, 27.09.1945 VI.e."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1899/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1899/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1899/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1899/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1899/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1899/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1899/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

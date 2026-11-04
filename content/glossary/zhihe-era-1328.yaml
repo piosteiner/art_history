@@ -1,0 +1,15 @@
+public_id: 113130
+name: Zhihe
+names:
+  - lang: zh
+    role: original
+    text: 致和
+category: calendar
+definition: "Chinese era name (致和) of the Yuan for the year 1328: 1328 is Zhihe 1 (元年), its only year."
+description_md: |-
+  **Zhihe** (致和) is a Chinese era name ([[nianhao]]) of the Yuan, proclaimed in 1328 under Yesün Temür (泰定帝). Its years are counted in lunar years: 1328 is Zhihe 1 (元年), its only year.
+
+  Before: [[taiding-era|Taiding]]. After: [[tianshun-era-1328|Tianshun]].
+sources:
+  definition:
+    - source: dila-time-authority

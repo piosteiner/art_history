@@ -1,0 +1,91 @@
+public_id: 115395
+name: Otto Dix
+given_name: Otto
+family_name: Dix
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Wilhelm Heinrich Otto Dix
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q153104
+birth: 1891-12-02
+death: 1969-07-25
+wikidata_id: Q153104
+metadata:
+  sources: [Wikidata Q153104 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q153104
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153104
+  - type: worked_in
+    to: place/colmar
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153104
+  - type: worked_in
+    to: place/dresden
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153104
+  - type: worked_in
+    to: place/dusseldorf
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153104
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153104
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q153104
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q153104
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/90/Otto_Dix%2C_May_1955%2C_by_Hans-Joachim_Koch_%282%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Otto_Dix,_May_1955,_by_Hans-Joachim_Koch_(2).jpg
+    license: CC BY-SA 4.0
+    credit: Hans-Joachim Koch
+identifiers:
+  bnf: "119419770"
+  gnd: "118526103"
+  idref: "027361217"
+  lc: n50028833
+  nlk: KAC202283174
+  rkd: "23331"
+  sikart: "9605361"
+  ulan: "500028047"
+  viaf: "46769170"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q153104
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q153104

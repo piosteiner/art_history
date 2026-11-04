@@ -1,0 +1,18 @@
+public_id: 113393
+name: Francisco de Zurbarán
+given_name: Francisco
+family_name: de Zurbarán
+birth: 1598-11-07
+death: 1664-08-27
+wikidata_id: Q209615
+metadata:
+  sources: [Wikidata Q209615 (retrieved 2026-11-03)]
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q209615
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q209615

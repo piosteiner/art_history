@@ -1,0 +1,60 @@
+public_id: 113457
+title_lang: en
+title: Tatekawa in Honjo
+names:
+  - lang: ja
+    role: original
+    text: 本所立川
+  - lang: en
+    role: original
+    text: Honjo Tatekawa
+  - lang: fr
+    role: translation
+    text: La scierie à Honjo
+  - lang: es
+    role: translation
+    text: Tatekawa en Honjō
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 本所立川
+parent: thirty-six-views-of-mount-fuji
+part_number: "37"
+creator: katsushika-hokusai
+created: 1830/1833
+created_label: c. 1830–1833
+created_span: uncertain
+institution: art-institute-of-chicago
+inventory_number: "1925.3265"
+web_url: https://www.artic.edu/artworks/24715
+wikidata_id: Q18173427
+metadata:
+  sources: [Wikidata Q18173427 (retrieved 2026-11-03)]
+images:
+  - url: https://www.artic.edu/iiif/2/63d00c93-89fc-e111-cbfe-88a136795e71/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/24715
+    license: Public domain
+    credit: Art Institute of Chicago, Clarence Buckingham Collection
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173427
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173427
+  created:
+    - url: https://www.artic.edu/artworks/24715
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173427
+  institution:
+    - url: https://www.artic.edu/artworks/24715
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.artic.edu/artworks/24715
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03

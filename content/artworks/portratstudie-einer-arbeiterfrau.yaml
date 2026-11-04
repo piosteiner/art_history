@@ -1,0 +1,113 @@
+public_id: 115608
+title_lang: de
+title: Porträtstudie einer Arbeiterfrau
+names:
+  - lang: en
+    role: translation
+    text: Brustbild einer Arbeiterfrau. Im 3/4 Profil nach rechts gewendet
+  - lang: en
+    role: translation
+    text: Brustbild einer Arbeiterfrau
+  - lang: fr
+    role: translation
+    text: Portrait Study of a Working Woman
+creator: kathe-kollwitz
+created: 1910
+kind: drawing
+medium: Black chalk on laid paper
+dimensions: [44.2, 46.5]
+institution: kunsthaus-zurich
+inventory_number: Z.1942/0004
+web_url: https://collection.kunsthaus.ch/de/collection/item/9070/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/julius-freund
+    acquired: 1927-07-30 or earlier
+    ended: 1933-12-17
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/9070/
+        note: "Footnote: Urkunde zwischen Julius Freund und Clara Freund, geb. Dresel, Amtsgericht Schöneberg, 30.06.1927 (U-Rolle-Rep. 048, Karton 489-91, Nr. 102/1927) mit Protokoll vom 30.07.1927 sowie Anlage zum Protokoll, Mappe XIII, Nr. 160: Käthe Kollwitz Arbeiterfrau mit dem Ohrring. Laut der notariellen Urkunde vom 30. Juni 1927 ging das Eigentum an den gesamten, in der Anlage verzeichneten Kunstwerken von Julius…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunstmuseum-winterthur
+    acquired: 1933-09
+    ended: 1941-12-03
+    direct: true
+    place: winterthur
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/9070/
+        note: "Footnote: Liste «Nämlichkeitsschein Julius Freund, Berlin: Aufstellung der Zeichnungen, Radierungen u. Gemälde» (handschriftlich dazu in Rot notiert «I. Sendung»), undatiert, sowie Liste «Copie des Nämlichkeitsschein No. 836 der Zeichnungen, Radierungen u. Gemälde Bezirk des Landesfinanzamts: Berlin, Ausfertigung Zollamt: Zollzweigstelle Berlin, Bahnhof Friedrichstr. Berlin, 1. September 1933», S. 4, Nr. 17…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/gisele-freund
+    acquired: 1933-12-17
+    ended: 1942-03-21
+    method: gift
+    direct: true
+    place: berlin
+    label: Berlin and Paris and Buenos Aires
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/9070/
+        note: "Footnote: Brief von Julius Freund an Gisela Freund, 17.12.1933, Institut Mémoires de l'édition contemporaine (IMEC), Caen, FND 237, Correspondence familiale/Gisèle Freund: «meine in Winterthur befindlichen Kunstblätter und Bilder[…] sollen dir gehören und ich weiß dass sie bei dir in guten Händen sind»; auch im Kunstmuseum Winterthur gibt Freund Kenntnis davon, «daß du von nun an die Besitzerin bist, aber n…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1942-03-21
+    ended: 1942-03-21
+    method: auction
+    direct: true
+    place: lucerne
+    label: Lot 140
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/9070/
+        note: "Footnote: ZKG/KHZ Inventarbuch Gr. Slg.; Fangblatt Gr. Slg.; Sitzungsprotokoll der Sammlungskommission, 13.04.1942, Archiv ZKG/KHZ, 10.30.10.42; Auktion Galerie Fischer Luzern 21.03.1942, https://doi.org/10.11588/diglit.6024#0025 [06.01.2022]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1942-03-21
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 127.6
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/9070/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "303.587"
+    label: Nagel/Timm (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9070/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9070/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9070/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9070/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9070/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9070/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/9070/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

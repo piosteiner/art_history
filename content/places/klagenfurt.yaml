@@ -1,0 +1,41 @@
+public_id: 115271
+name: Klagenfurt
+names:
+  - lang: ja
+    role: translation
+    text: クラーゲンフルト・アム・ヴェルターゼー
+  - lang: zh
+    role: translation
+    text: 克拉根福
+  - lang: ko
+    role: translation
+    text: 클라겐푸르트암뵈르테제
+  - lang: de
+    role: original
+    text: Klagenfurt am Wörthersee
+  - lang: it
+    role: translation
+    text: Clanforte
+  - lang: ru
+    role: translation
+    text: Клагенфурт
+kind: settlement
+parent: austria
+country_code: AT
+location: [14.3, 46.61667]
+wikidata_id: Q41753
+metadata:
+  sources: [Wikidata Q41753 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q41753
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q41753
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q41753

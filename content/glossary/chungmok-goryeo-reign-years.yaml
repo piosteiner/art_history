@@ -1,0 +1,18 @@
+public_id: 113331
+name: Chungmok of Goryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 충목왕
+  - lang: ko-Hani
+    role: alternative
+    text: 忠穆王
+category: calendar
+definition: "The reign years of King Chungmok of Goryeo (忠穆王, 충목왕), by which Korean histories date 1345–1348: 1345 is Chungmok 1, 1348 Chungmok 4."
+description_md: |-
+  **Chungmok** (忠穆王, 충목왕): the years of the reign of King Chungmok of Goryeo. The Goryeosa, the history of Goryeo, dates events by the reigning king's year ([[korean-reign-years]]): 1348 is Chungmok 4 (충목왕 4년). The year of the accession, 1345, counts as the first year.
+
+  Before: [[chunghye-goryeo-reign-years|Chunghye]]. After: [[chungjeong-goryeo-reign-years|Chungjeong]].
+sources:
+  definition:
+    - source: dila-time-authority

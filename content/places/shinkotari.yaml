@@ -1,0 +1,16 @@
+public_id: 112499
+name: Shinkōtari
+kind: site
+location: [135.69569, 34.92678]
+wikidata_id: Q30936914
+metadata:
+  sources: [Wikidata Q30936914 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q30936914
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q30936914

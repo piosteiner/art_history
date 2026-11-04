@@ -1,0 +1,78 @@
+public_id: 115391
+title_lang: de
+title: Sitzende Maria mit Kind
+names:
+  - lang: en
+    role: translation
+    text: Seated Madonna with Child
+attribution_label: Anonymous, Modena
+created: 1115/1135
+created_label: c. 1120/1130
+created_span: uncertain
+kind: sculpture
+medium: Stone
+dimensions: [50, 27, 19]
+institution: kunsthaus-zurich
+inventory_number: 1954/0012
+web_url: https://collection.kunsthaus.ch/de/collection/item/3588/
+on_loan: true
+on_loan_since: 1954
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/jakob-hirsch
+    role: dealer
+    ended: 1954
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3588/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; ZKG/KHZ Inventarbogen/Werkdossier; Brief von Jacob Hirsch, New York, 11.09.1952, Eingehende Korrespondenz, Archiv ZKG/KHZ, 10.30.30.309."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1954
+    ended: 1954
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 6000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3588/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3588/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3588/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3588/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3588/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3588/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3588/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3588/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3588/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

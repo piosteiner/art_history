@@ -1,0 +1,15 @@
+public_id: 113079
+name: Dazu
+names:
+  - lang: zh
+    role: original
+    text: 大足
+category: calendar
+definition: "Chinese era name (大足) of the Zhou of Empress Wu for the year 701: 701 is Dazu 1 (元年), its only year."
+description_md: |-
+  **Dazu** (大足) is a Chinese era name ([[nianhao]]) of the Zhou of Empress Wu, proclaimed in 701 under Empress Wu Zetian (則天皇后). Its years are counted in lunar years: 701 is Dazu 1 (元年), its only year.
+
+  Before: [[jiushi-era|Jiushi]]. After: [[changan-era|Chang'an]].
+sources:
+  definition:
+    - source: dila-time-authority

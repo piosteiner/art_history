@@ -1,0 +1,452 @@
+public_id: 115376
+title_lang: de
+title: Blick von den Dünen aufs Meer
+names:
+  - lang: en
+    role: translation
+    text: View from the Dunes to the Sea
+  - lang: de
+    role: former
+    text: Ruine mit Dünen
+  - lang: de
+    role: former
+    text: Dünenlandschaft
+  - lang: de
+    role: former
+    text: Dünenlandschaft mit Ausblick auf das Meer bei Unwetter
+  - lang: de
+    role: former
+    text: Küstenlandschaft bei Unwetter
+  - lang: en
+    role: former
+    text: Wasserlandschaft
+  - lang: en
+    role: former
+    text: Zee u duinen
+  - lang: en
+    role: former
+    text: Petit paysage de dunes
+  - lang: en
+    role: former
+    text: Sand-hill landscape
+  - lang: de
+    role: former
+    text: Dünenlandschaft mit Meer
+  - lang: de
+    role: former
+    text: Landschaft mit Ruine Egmont
+  - lang: en
+    role: former
+    text: The dunes near Sheveningen
+creator: jacob-van-ruisdael
+created: c. 1655
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [26, 35]
+institution: kunsthaus-zurich
+inventory_number: R 31
+web_url: https://collection.kunsthaus.ch/de/collection/item/3560/
+on_loan: true
+on_loan_since: 1949
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q20796305
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/57/Jacob_van_Ruisdael_-_Blick_von_den_D%C3%BCnen_aufs_Meer_-_R_31_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jacob_van_Ruisdael_-_Blick_von_den_D%C3%BCnen_aufs_Meer_-_R_31_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jacob van Ruisdael
+provenance:
+  - owner: person/alexandre-joseph-paillet
+    role: dealer
+    ended: 1777-12-15
+    place: netherlands
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Auktion A. Paillet, Paris (1777), S. 82, Lot 236; Slive 2001.446.634"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alexandre-joseph-paillet
+    role: agent
+    acquired: 1777-12-15
+    ended: 1777-12-15
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 236
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/louis-francois-trouard
+    role: agent
+    acquired: 1779-02-22
+    ended: 1779-02-22
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 132; Paris, Versteigerung Paillet, Paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Slive 2001, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/andrew-fountaine
+    acquired: 1850
+    ended: 1894-07-07
+    label: Narford Hall
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Wie oben Fussnote 5; Ausst.-Kat. Mauritshuis/The Fogg Art Museum, New York 1981, S. 86-87, Nr. 26."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1894-07-07
+    ended: 1894-07-07
+    method: auction
+    direct: true
+    place: london
+    label: Lot 33; Sale Andrew Fountaine
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1901-04-27
+    ended: 1901-04-27
+    method: auction
+    place: london
+    label: Lot 57; Sale Hope Edwardes u. a.; an Wallis
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Wallis
+    acquired: 1901-04-27
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/maurice-kann
+    ended: 1909-10-19
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Wie oben Fussnote 7; Archiv F. Kleinberger Galleries Inc. Records, The Metropolitan Museum of Art, Fotokarte [ARC-Kleinberger-G-08377_recto]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/maurice-kann
+    role: estate
+    acquired: 1906
+    ended: 1909-10-19
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-f-kleinberger
+    role: dealer
+    acquired: 1909-10-19
+    ended: 1909-12-18
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/august-de-ridder
+    ended: 1911
+    direct: true
+    place: kronberg-im-taunus
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/august-de-ridder
+    role: estate
+    acquired: 1911
+    ended: 1924-06-02
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-f-kleinberger
+    role: agent
+    acquired: 1913-11/1913-12
+    ended: 1913-11/1913-12
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Lot 57; zurück
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1924-06-02
+    ended: 1924-06-02
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 63; sale de Ridder
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Ausst.-Kat. 1981, wie oben Fussnote 7; ZKG/KHZ Werkdossier, handschriftliche Notiz von Leopold Ruzicka."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-f-kleinberger
+    role: dealer
+    acquired: 1924-06-02
+    method: purchase
+    direct: true
+    place: paris
+    label: Nr. 8377
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Archiv F. Kleinberger Galleries Inc. Records, The Metropolitan Museum of Art, Fotokarte [ARC-Kleinberger-G-Unknown-14_recto]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/a-berg
+    acquired: 1924-06
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Wie oben Fussnote 20."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/kurt-walter-bachstitz
+    role: dealer
+    place: the-hague
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Archivdokumente Feilchenfeldt; Restitutions Committee, «Recommendation regarding Bachstitz», Report number: RC 1.78, https://www.restitutiecommissie.nl/en/recommendation/bachstitz/ (25.05.2023)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fr-seiler
+    ended: 1936-01-06
+    place: berlin
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Treuhandverwaltung von Kulturgut bei der Oberfinanzdirektion München, Bundesarchiv, Kunsthandlung Walter Andreas Hofer, Berlin, B 323/71, S. 13: in einer alphabetisch geordneten Liste sind unter Ruisdael sieben Werke aufgelistet: u.a. Wasserlandschaft 10.1.36 Fr. Seiler, Berlin und 10.1.36 J. Böhler, München. Im selben Ordner ist auch ein Warenausgangsbuch bzw. Wareneingangsbuch von W.A. Hofer ent…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-andreas-hofer
+    role: agent
+    acquired: 1936-01-06
+    ended: 1936-01-06
+    method: purchase
+    direct: true
+    place: berlin
+    label: on behalf of Hermann Göring
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Wie oben Fussnote 25; Archiv Kunsthandlung Böhler, ZIKG München, Inventarkarte [Nr. 36 2]; Eingehende Korrespondenz, Zentralinstitut für Kunstgeschichte, Dr. Stephan Klingen, 23.11.2018."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/julius-bohler
+    acquired: 1936-01-06
+    ended: 1936-05-16
+    method: purchase
+    direct: true
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Wie oben Fussnote 26."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/grete-s-ring
+    role: dealer
+    acquired: 1936-06-06
+    ended: 1942-12-10
+    method: exchange
+    direct: true
+    label: Nr. 5286; via Galerie Paul Cassirer; Galerie Paul Cassirer, Berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Wie oben Fussnote 7; Eingehende Korrespondenz, wie oben Fussnote 26: «Und dann am 16. Mai des gleichen Jahres [1936] gegen den Anteil Cassirers an einem Barthel Bruyn aus der Sammlung Cremer (Böhler 36-73) getauscht worden zu sein.»; E-Mail-Korrespondenz, Strelow, 15.02.2023: Entsprechend einer Karteikarte des Zentralinstituts für Kunstgeschichte München (http://boehler.zikg.eu/wisski/navigate/112…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/robert-haberling
+    role: custodian
+    acquired: 1940-09-04
+    ended: 1942-12-10 or earlier
+    direct: true
+    place: berlin
+    label: safekeeping
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: E-Mail-Korrespondenz, Staatliche Museen zu Berlin SMB, Strzoda, 03.02.2023: «Das Bild wurde von Grete Ring bei ihrer Emigration bei der Spedition Heberling eingelagert und dort durch die Behörden beschlagnahmt.»; E-Mail-Korrespondenz Strelow, wie oben Fussnote 28: «1941 meldete die Spedition Haberling der nationalsozialistischen Finanzbehörde, dass sich in ihrer Verwahrung ein Bild von Ruisdael 'D…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/oberfinanzprasident-berlin-vermogensverwertungsstelle
+    acquired: 1942-12-10
+    ended: 1943-07-12
+    direct: true
+    label: Berlin-Brandenburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Staatliche Museen zu Berlin SMB, wie oben Fussnote 29: «1941 wurde es als 'feindliches Vermögen' dem Finanzamt gemeldet.»; E-Mail-Korrespondenz Strelow, wie oben Fussnote 27; State Museums Berlin: Summary Lists Of Objects Transferred To Marburg And Wiesbaden (Parts I-VI), Fold3, S. 94, https://www.fold3.com/image/232013947?terms=ruisdael,dune: «The J. Ruisdael was bought from Mühlmann, who acquire…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/staatliche-museen-zu-berlin
+    acquired: 1943-07-12
+    method: purchase
+    direct: true
+    label: Gemäldegalerie (Museum); Berlin; Kat.-Nr. 2181; inv. no. 1213
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Staatliche Museen zu Berlin SMB, wie oben Fussnote 29: «Im Mai 1942 wurde es dem Kaiser-Friedrich-Museum zur Begutachtung vorgelegt. Die Staatlichen Museen zu Berlin erklärten, das Bild zum genannten Preis erwerben zu wollen.»; E-Mail-Korrespondenz Strelow, wie oben Fussnote 28; Akten der nationalsozialistischen Vermögensverwertungsstelle des Oberfinanzpräsidenten Berlin-Brandenburg, wie oben Fuss…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: the Kaiseroda mine (Merkers) or Ransbach
+    role: custodian
+    acquired: 1944-03
+    ended: 1944-03
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: E-Mail-Korrespondenz Strelow, wie oben Fussnote 28, Inventarkarte, WIE 211/110/1: «Deposited in Kaiseroda Mine (Merkers) or Ransbach in March 1944. Removed to Frankfurt April – May 45. Received CCP from Frankfurt»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: transport from the Heilbronn salt mine to Wiesbaden
+    role: custodian
+    acquired: 1945-10-11
+    ended: 1945-10-11
+    direct: true
+    label: crate G234; Kiste G234, Mü-Nr. 1883 and 5
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Bundesarchiv, Treuhandverwaltung von Kulturgut bei der Oberfinanzdirektion München, B 323/234, Erklärung der MFA&A Section zur Beschlagnahme und Zurückgabe der im Krieg durch die Generalverwaltung der Oberrheinischen Museen erworbenen Kunstwerken, 23.10.1946; E-Mail-Korrespondenz Strelow, wie oben Fussnote 33."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bode-museum-berlin
+    acquired: 1946-09
+    ended: 1946-09
+    direct: true
+    place: berlin
+    label: Nr. 1277; KFM 2181
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: List of Photographs of Cultural Objects made at the Wiesbaden Central Collecting Point by PHOTO MARBURG, May 1946 to July 1946, Monthly Report: Office Of Military Government For Hesse, September 1946, fold3, https://www.fold3.com/image/232059191 (31.05.2023)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/staatliche-kunsthalle-karlsruhe
+    acquired: 1946-10-23
+    ended: 1946-10-23
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Bundesarchiv, Treuhandverwaltung von Kulturgut bei der Oberfinanzdirektion München, 323/504."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: the State of the Netherlands
+    acquired: 1946-03-02
+    ended: 1946-03-02
+    method: restitution
+    direct: true
+    label: transported to the Netherlands
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Out-Shipment 2 (March 21, 1946), Fold3, S. 29: Unter «Case 2» aufgelistet, «WIE 1883/5 Dune Landscape, Ruisdael Jacob»; E-Mail-Korrespondenz, Strelow, wie oben Fussnote 28: «Bei der Restitution der Dünenlandschaft 1947 nach 'Holland' handelte es sich um eine sogenannte Länder-Restitution. Ich habe bislang keine Dokumente gefunden, die auf eine Restitution an Grete Ring persönlich verweisen.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/paul-cassirer-co-amsterdam
+    role: dealer
+    acquired: 1947 or later
+    ended: 1949-11-21
+    method: restitution
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Mail-Korrespondenz Feilchenfeldt, 28.05.2024: «Dieses Bild wurde im Sommer 1947 der Firma Paul Cassirer restituiert. Ein Freund der Familie, Bob de Vries, der spätere Direktor des Mauritshuis in den Haag, der im Team des 'Collecting Points' mitarbeitete, hatte das Bild als Besitz von Paul Cassirer wiedererkannt und es umgehend dem befreundeten Dr. Lütjens, Direktor der Amsterdamer Firma Paul Cassi…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    role: dealer
+    ended: 1949-11-21
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Mail-Korrespondenz Feilchfeldt, wie oben Fussnote 38: «Walter Feilchenfeldt, nach dem Krieg, Inhaber der Firma Paul Cassirer Amsterdam, veranlasste Dr. Lütjens, ihm das Bild nach Zürich zu schicken, wo er es an Ruzicka verlaufte[sic].»; ZKG/KHZ, Werkdossier, Rechnung Walter Feilchenfeldt an Leopold Ruzicka, 21.11.1949."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1949-11-21
+    ended: 2005
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: ZKG/KHZ Werkdossier, wie oben Fussnote 39; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 107."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: "Footnote: Wie oben Fussnote 41."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: 2001.446.634
+    label: Slive (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

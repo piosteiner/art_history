@@ -1,0 +1,104 @@
+public_id: 115323
+title_lang: de
+title: Bildnis Franz Rose von Döhlau vor orientalischem Tuch
+names:
+  - lang: de
+    role: translation
+    text: Portrait of Franz Rose von Döhlau in Front of an Oriental Cloth
+creator: albert-welti
+created: 1897
+kind: painting
+medium: Tempera on panel
+dimensions: [49, 39.5]
+institution: kunsthaus-zurich
+inventory_number: "1448"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3327/
+on_loan: true
+on_loan_since: 1957
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586725
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3b/Albert_Welti_-_Bildnis_Franz_Rose_von_D%C3%B6hlau_vor_orientalischem_Tuch_-_1448_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_Welti_-_Bildnis_Franz_Rose_von_D%C3%B6hlau_vor_orientalischem_Tuch_-_1448_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Albert Welti
+provenance:
+  - owner: person/franz-friedrich-adolph-rose
+    acquired: 1897
+    ended: 1912
+    method: commission
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3327/
+        note: |-
+          Footnote: Das Werk ist 1897 (in Doehlau) entstanden. Es befand sich mindestens zum Zeitpunkt des Entstehens im Besitz des Künstlers und spätestens bis zu dessen Ableben 1912. Da das vorliegende Portrait von Rose offenbar in Döhlau bei einem Besuch bei Weltis Förderer Franz Rose entstanden ist, kann vermutetet werden, dass der Künstler ihm das Werk bereits bei diesem Aufenthalt übergeben hat.
+          Zu Franz (Fried…
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/franz-friedrich-adolph-rose
+    role: estate
+    acquired: 1912
+    ended: 1955 or later
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3327/
+        note: "Footnote: Nach dem Ableben von Franz Rose waren der Bruder des Verstorbenen, Carl von Rose (1863-1945), und dessen Sohn Botho von Rose (1897-1938) für den Nachlass zuständig. Ersterer erbte auch das grosse Grundstück in Döhlau, wo er wohl zwischen 1912 und 1928 den Nachlass verwaltete, vgl. Mikocki 2006/2008, S. 197, FN 7. Aus diversen Unterlagen zur Leihgabe der Erben nach Franz Rose an das Kunsthaus Züric…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-neupert
+    role: dealer
+    acquired: 1955-06
+    ended: 1957-12-17
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3327/
+        note: "Footnote: Kunsthaus Zürich 2007 (Samml.-Kat.), S. 223; Inventarbuch der Kunstsammlung der Stadt Zürich, S. 35, 17.12.1957."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: place/zurich
+    acquired: 1957-12-17
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3327/
+        note: "Footnote: Siehe Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3327/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3327/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3327/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3327/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3327/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3327/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3327/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3327/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

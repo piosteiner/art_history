@@ -1,0 +1,117 @@
+public_id: 115083
+title_lang: de
+title: Gebirgslandschaft mit Gewässer
+names:
+  - lang: en
+    role: translation
+    text: Mountain Landscape with Expanses of Water
+creator: joos-de-momper-the-younger
+created: c. 1630
+created_span: uncertain
+kind: oil painting
+medium: Oil on oak panel
+dimensions: [45.5, 70]
+institution: kunsthaus-zurich
+inventory_number: R 18
+web_url: https://collection.kunsthaus.ch/de/collection/item/2137/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586304
+provenance:
+  - owner: person/arthur-pinson
+    acquired: 1927-05-07
+    label: Villa «de Pricure» Chemin du Cissere; Nizza
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2137/
+        note: "Footnote: E-Mail-Korrespondenz ZIKG, Hopp, 06.08.2019."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandel-j-r-bier
+    ended: 1947-01-02
+    place: haarlem
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2137/
+        note: "Footnote: Gemäss Lagerbuch 1948 der Kunsthandlung Böhler & Steinmeyer, Bayerischen Wirtschaftsarchiv, München, Bestand F 43 – Julius Böhler Kunsthandlung München (vgl. https://www.bwa.recherche.findbuch.net/php/main.php#4620303433 (10.05.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandlung-bohler-steinmeyer
+    acquired: 1947-01-02
+    ended: 1948-11-16
+    method: purchase
+    direct: true
+    place: lucerne
+    label: Lager-Nr. 10501 (Teniers)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2137/
+        note: "Footnote: Wie oben Fussnote 6; Eingehende Korrespondenz, Böhler & Steinmeyer, 03.06.1948, ZKG/KHZ Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1948-11-16
+    ended: 1948-12-27
+    method: exchange
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2137/
+        note: "Footnote: Gemäss ZIKG München, Archiv Kunsthandlung Böhler, Böhler-Karteikarte (Nr. 10501): «16.11.1948 ausgewechselt gegen n° 10520 A. Calame»; Sitzungsprotokoll der Sammlungskommission, 23.12.1948 I., Archiv ZKG/KHZ, 10.30.10.42; Zürcher Kunstgesellschaft 1949 Jahresbericht, S. 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1948-12-27
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2137/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 8; Zürcher Kunstgesellschaft 1949 Jahresbericht, S. 4, wie oben Fussnote 8; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 93."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2137/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "571.372"
+    label: Ertz 1986 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2137/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2137/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2137/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2137/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2137/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2137/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2137/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2137/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

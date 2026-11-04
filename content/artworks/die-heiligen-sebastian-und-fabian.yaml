@@ -1,0 +1,93 @@
+public_id: 115260
+title_lang: de
+title: Die Heiligen Sebastian und Fabian
+names:
+  - lang: en
+    role: translation
+    text: Saints Sebastian and Fabian
+creator: master-of-the-darmstadt-passion
+created: c. 1460
+created_span: uncertain
+kind: painting
+medium: Tempera on pinewood
+dimensions: [88, 70.5]
+institution: kunsthaus-zurich
+inventory_number: "2365"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2924/
+on_loan: true
+on_loan_since: 1935
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586326
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4a/Master_of_the_Darmstadt_Passion_-_Die_Heiligen_Sebastian_und_Fabian_-_2365_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Master_of_the_Darmstadt_Passion_-_Die_Heiligen_Sebastian_und_Fabian_-_2365_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Master of the Darmstadt Passion
+provenance:
+  - owner: person/zisterzienser-nonnenkloster-baindt
+    ended: 1802 or earlier
+    direct: true
+    place: baindt
+    label: Baindt, Kreis Ravensburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2924/
+        note: "Footnote: Hugelshofer 1932, S. 74; Held 1934, S. 53. Die Herkunft der Tafel leitet sich daraus ab, dass Held sie 1934 dem gleichen Altarwerk zuordnet, welches Hugelshofer zwei Jahre zuvor in einem Artikel über vier Bilder des Meisters der Darmstädter Passion im Kloster Baindt, Kreis Ravensburg verortete."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/david-reder
+    role: dealer
+    acquired: February 1934 or earlier
+    ended: 1935-02-04
+    place: brussels
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2924/
+        note: "Footnote: Held 1934, S. 53f."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1935
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 23000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2924/
+        note: "Footnote: Brief Wilhelm Wartmann an David Reder, 04.02.1935, Brief Wilhelm Wartmann an Schweizerische Kreditanstalt, 04.02.1935, Archiv ZKG/KHZ, Ausgehende Korrespondenz VZK, 10.50.25.2, S. 41, 42."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2924/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2924/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2924/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2924/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2924/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2924/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2924/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2924/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

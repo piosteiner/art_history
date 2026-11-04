@@ -1,0 +1,66 @@
+public_id: 114903
+name: Ernst Barlach
+given_name: Ernst
+family_name: Barlach
+names:
+  - kind: pseudonym
+    role: alternative
+    text: Barlah
+    sources:
+      - accessed: 2026-11-03
+        property: P742
+        wikidata: Q156890
+birth: 1870-01-02
+death: 1938-10-24
+wikidata_id: Q156890
+metadata:
+  sources: [Wikidata Q156890 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/german-reich
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q156890
+  - type: member_of
+    to: institution/academy-of-arts-berlin
+    sources:
+      - accessed: 2026-11-03
+        property: P463
+        wikidata: Q156890
+  - type: member_of
+    to: movement/berlin-secession
+    sources:
+      - accessed: 2026-11-03
+        property: P463
+        wikidata: Q156890
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q156890
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e1/ErnstBarlachYoung.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:ErnstBarlachYoung.jpg
+    license: Public domain
+    credit: Unknown
+identifiers:
+  bnf: 12427524m
+  dome: "17"
+  gnd: "118506617"
+  idref: "033406499"
+  kulturnav: 800d0ef7-2f34-485c-8231-6bba8f7051f0
+  lc: n50017799
+  rkd: "4503"
+  ulan: "500013940"
+  viaf: "17313204"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q156890
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q156890

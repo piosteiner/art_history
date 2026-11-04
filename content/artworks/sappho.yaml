@@ -1,0 +1,60 @@
+public_id: 115533
+title_lang: en
+title: Sappho
+creator: antoine-bourdelle
+created: 1887/1925
+kind: sculpture
+medium: Bronze
+dimensions: [207, 100, 145]
+institution: kunsthaus-zurich
+inventory_number: 1957/0032
+web_url: https://collection.kunsthaus.ch/de/collection/item/5833/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/eugene-rudier
+    ended: 1951
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5833/
+        note: "Footnote: Brief von Eugen Rudier, 21.08.1951, Archiv ZKG/KHZ, Ordner Schenkungen 1950-1961."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1951
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5833/
+        note: "Footnote: Wie oben Fussnote 3; ZKG/KHZ Inventarbogen/Werkdossier: Figur wurde erst 1957 als «aus dem Nachlass des Giessers Alexis Rudier, Malakoff-Paris» inventarisiert."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5833/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5833/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5833/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5833/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5833/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5833/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5833/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

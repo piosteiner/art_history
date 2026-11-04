@@ -1,0 +1,196 @@
+public_id: 115008
+title_lang: de
+title: Stillleben mit Meerschnecken
+names:
+  - lang: en
+    role: translation
+    text: Still Life with Shells
+  - lang: fr
+    role: translation
+    text: Nature morte aux coquillages
+  - lang: en
+    role: former
+    text: Meermuscheln und Korallen
+creator: willem-kalf
+created: 1645/1660
+created_label: c. 1650/1655
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [53.5, 44.5]
+institution: kunsthaus-zurich
+inventory_number: R 52
+web_url: https://collection.kunsthaus.ch/de/collection/item/1579/
+on_loan: true
+on_loan_since: 1951
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585725
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/ce/Willem_Kalf_-_Stillleben_mit_Meerschnecken_-_R_52_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Willem_Kalf_-_Stillleben_mit_Meerschnecken_-_R_52_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Willem Kalf
+provenance:
+  - owner: person/leonardus-daniel-van-hengel
+    ended: 1935-05-25
+    place: arnhem
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+        note: "Footnote: Auktion Galerie Moos 1935 (25.05.1935), vgl. https://doi.org/10.11588/diglit.8733#0027 und https://doi.org/10.11588/diglit.8733#0071 (26.06.2023); Annotierter Auktionskatalog der Galerie Moos, Genf aus dem Archiv der Kunstsammlung Arthur Stoll (SIK-ISEA, Schweizerisches Kunstarchiv, HNA 92.4.6); Nederlands Instituut voor Kunstgeschiedenis RKD, fichescollectie Cornelis Hofstede de Groot, Kartennumm…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-moos
+    role: agent
+    acquired: 1935-05-25
+    ended: 1935-05-25
+    method: auction
+    direct: true
+    place: geneva
+    label: Lot 75
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+        note: "Footnote: Wie oben Fussnote 3; Grisebach 1974 280.142; Ausst.-Kat. Museum Boijmans Van Beuningen 2007, S. 104, Kat.-Nr. 22."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-paech
+    role: dealer
+    acquired: 1935-05-25
+    method: purchase
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+        note: "Footnote: Grisebach 1974, wie oben Fussnote 4; Ausst.-Kat. 2007, wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/h-m-calmann
+    role: dealer
+    acquired: 1938
+    ended: 1938
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/christopher-norris
+    acquired: 1939
+    ended: 1939
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/julius-wilhelm-bohler
+    role: dealer
+    acquired: 1939
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+        note: "Footnote: Kleinberger & Co., Inc. records: Boehler, 1946-1967, The Getty Research Institute, Korrespondenz Paul. A. Gillmann an Mr. Bohler, 27.04.1951; ZKG/KHZ Werkdossier, Korrespondenz Steinmeyer an Leopold Ruzicka, 15.06.1951: «Das Stilleben von Willem Kalf erwarb mein Schwager Herr Julius W. Böhler vor dem Krieg durch einen Agenten in London nach dessen Angaben aus englischem Privatbesitz»; E-Mail-Korre…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1947-06-11
+    ended: 1947-06-11
+    method: auction
+    label: Lot 10; "The Property of a Lady"
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+        note: "Footnote: Grisebach 1974, wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-f-kleinberger
+    role: dealer
+    ended: 1951-10-15
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+        note: "Footnote: Archiv Kunsthandlung Böhler, ZIKG München, Böhler-Karte [Nr. 34]; Kleinberger & Co., Inc. records, wie oben Fussnote 10: «This amount has been credited to the account of Mr. Allen Loebl in accord with your instructions. I wish to advise you that the painting by Kalf 'Still Life' has been sent to Baumeler via Air Express Agency.», vermutlich war Paul. A. Gillman die Mittelperson zwischen F. Kleinbe…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandlung-bohler-steinmeyer
+    role: agent
+    acquired: 1951-05-11
+    ended: 1951-10-11
+    direct: true
+    place: lucerne
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+        note: "Footnote: Wie oben Fussnote 14; ZKG/KHZ Werkdossier, handschriftliche Korrespondenz F. Steinmeyer an Leopold Ruzicka, 03.06.1951; ZKG/KHZ Werkdossier, Rechnung Böhler & Steinmeyer an Leopold Ruzicka, 16.7.1951."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1951-10-11
+    ended: 1951-10-11
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+        note: "Footnote: ZKG/KHZ Werkdossier, Korrespondenz Steinmeyer, wie oben Fussnote 15: 7000.-; ZKG/KHZ Werkdossier, Rechnung Boehler & Steinmeyer, wie oben Fussnote 15; ZKG/KHZ Ruzicka-Akten, Abrechnung, wie oben Fussnote 15; E-Mail-Korrespondenz Anna-Lena Lang, wie oben Fussnote 15; Grisebach 1974, wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1951-10-11
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+        note: "Footnote: Wie oben Fussnote 16."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+        note: "Footnote: Wie oben Fussnote 18."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "280.142"
+    label: Grisebach 1974 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1579/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

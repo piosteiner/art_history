@@ -1,0 +1,105 @@
+public_id: 115550
+title_lang: en
+title: Branche de lierre
+names:
+  - lang: en
+    role: translation
+    text: Rama de hiedra
+  - lang: en
+    role: translation
+    text: Efeuzweig
+  - lang: en
+    role: translation
+    text: Branch of Ivy
+creator: henri-matisse
+created: 1915
+kind: oil painting
+medium: Oil on canvas
+dimensions: [62, 50.5]
+institution: kunsthaus-zurich
+inventory_number: 2005/0030
+web_url: https://collection.kunsthaus.ch/de/collection/item/6606/
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585180
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8a/Matisse_-_Carra%2C_194.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Matisse_-_Carra,_194.jpg
+    license: Public domain
+    credit: Henri Matisse
+provenance:
+  - owner: person/alphonse-kann
+    acquired: 1916 or earlier
+    ended: 1940-10-18
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6606/
+        note: "Footnote: Kat. Art Institute of Chicago, Museum of Modern Art, New York, Chicago 2010, S. 263: Brief Matisse an Léonce Rosenberg 01.06.1916, Alfred Barr hat 1951 den Adressaten mit Purrmann verwechselt. Korrektur im Katalog «Matisse. Radical Invention 1913-1917» (Chicago/New York 2010), S. 263."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    role: possessor
+    acquired: 1940-10-18
+    method: confiscation
+    direct: true
+    place: saint-germain-en-laye
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6606/
+        note: "Footnote: Cultural Plunder by the Einsatzstab Reichsleiter Rosenberg, Database of Art Objects at the Jeu de Paume, https://www.errproject.org/jeudepaume/card_view.php?CardId=1547 [Zugriff: 13.01.2022]: RG 260 M1943 Reel 10 NARA; Bundesarchiv, B323/273; RA 3, RA 618, RV 103, MAEE, Paris, France."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alphonse-kann
+    acquired: 1947-07
+    ended: 1948
+    method: restitution
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6606/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/gustav-zumsteg
+    acquired: 1982 or earlier
+    ended: 2005
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6606/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6606/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: Matisse.239.16-021
+    label: Blondel/Ivanoff (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6606/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6606/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6606/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6606/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6606/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6606/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6606/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

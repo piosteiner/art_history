@@ -26,6 +26,7 @@ names:
     role: translation
     text: Три Лиги
 period: 1524/1798
+country_codes: [CH, IT]
 wikidata_id: Q672685
 metadata:
   sources: [Wikidata Q672685 (retrieved 2026-10-29)]

@@ -1,0 +1,90 @@
+public_id: 115242
+title_lang: de
+title: Grimmige Tiere und wilde Männer bedrohen das Menschenkind
+names:
+  - lang: en
+    role: translation
+    text: Ferocious Animals and Wild Men Threatening the Innocent Child
+  - lang: en
+    role: translation
+    text: Animaux féroces et hommes sauvages menaçant l’enfant
+creator: ernst-georg-ruegg
+created: 1918
+kind: oil painting
+medium: Oil on canvas
+dimensions: [93, 121]
+institution: kunsthaus-zurich
+inventory_number: "2609"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2829/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586263
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d0/Ernst_Georg_R%C3%BCegg_-_Grimmige_Tiere_und_wilde_M%C3%A4nner_bedrohen_das_Menschenkind_-_2609_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ernst_Georg_R%C3%BCegg_-_Grimmige_Tiere_und_wilde_M%C3%A4nner_bedrohen_das_Menschenkind_-_2609_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ernst Georg Rüegg
+provenance:
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1942-03-19
+    ended: 1942-03-21
+    method: auction
+    place: lucerne
+    label: Lot 1193
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2829/
+        note: "Footnote: Grosse Kunstauktion in Luzern. Nachlaß eines Luzerner Sammlers, Aus Solothurner Privatbesitz, Porzellan-Sammlung M.-L. Bachofen-Burckhardt, Basel, Gemälde alter und neuer Meister, Galerie Fischer, Luzern, 19.–21.03.1942, vgl. https://doi.org/10.11588/diglit.8380#0091 [Zugriff: 22.12.2021]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/georg-schmidt
+    role: agent
+    acquired: 1942-03-21
+    ended: 1942-09
+    method: purchase
+    direct: true
+    place: basel
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2829/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1942
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2829/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission Archiv 10.30.10.41-42,30.09.1942 I.b.; 11.11.1942 I.3.c."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2829/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2829/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2829/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2829/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2829/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2829/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2829/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

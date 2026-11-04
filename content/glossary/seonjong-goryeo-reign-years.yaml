@@ -1,0 +1,18 @@
+public_id: 113315
+name: Seonjong of Goryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 선종
+  - lang: ko-Hani
+    role: alternative
+    text: 宣宗
+category: calendar
+definition: "The reign years of King Seonjong of Goryeo (宣宗, 선종), by which Korean histories date 1084–1095: 1084 is Seonjong 1, 1095 Seonjong 12."
+description_md: |-
+  **Seonjong** (宣宗, 선종): the years of the reign of King Seonjong of Goryeo. The Goryeosa, the history of Goryeo, dates events by the reigning king's year ([[korean-reign-years]]): 1093 is Seonjong 10 (선종 10년). The first year is 1084, the year after the accession in 1083; the rest of 1083 still counts for the predecessor.
+
+  Before: [[sunjong-goryeo-reign-years|Sunjong]]. After: [[heonjong-goryeo-reign-years|Heonjong]].
+sources:
+  definition:
+    - source: dila-time-authority

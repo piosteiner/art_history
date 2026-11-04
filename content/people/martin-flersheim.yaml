@@ -9,6 +9,9 @@ death: 1935-12-07
 wikidata_id: Q94766666
 metadata:
   sources: [Wikidata Q94766666 (retrieved 2026-11-02)]
+relationships:
+  - type: married_to
+    to: person/florence-flersheim
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/f/fc/Martin_ludwig_flersheim_frankfurt_am_main.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Martin_ludwig_flersheim_frankfurt_am_main.jpg

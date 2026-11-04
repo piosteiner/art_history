@@ -1,0 +1,22 @@
+public_id: 115599
+name: Igny
+kind: settlement
+parent: france
+country_code: FR
+location: [5.76222, 47.47889]
+wikidata_id: Q901923
+metadata:
+  sources: [Wikidata Q901923 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q901923
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q901923
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q901923

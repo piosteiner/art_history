@@ -29,6 +29,7 @@ names:
     role: translation
     text: герцогство Урбино
 period: 1443-05-04/1631-04-23
+country_codes: [IT]
 wikidata_id: Q649202
 metadata:
   sources: [Wikidata Q649202 (retrieved 2026-10-29)]

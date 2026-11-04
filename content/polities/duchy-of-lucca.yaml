@@ -29,6 +29,7 @@ names:
     role: translation
     text: Герцогство Лукка
 period: 1815/1847-10-05
+country_codes: [IT]
 wikidata_id: Q158290
 metadata:
   sources: [Wikidata Q158290 (retrieved 2026-10-29)]

@@ -1,0 +1,45 @@
+public_id: 115626
+name: Joos van Cleve
+given_name: Joos
+family_name: van Cleve
+birth: 1485
+death: 1540-11-10
+wikidata_id: Q153472
+metadata:
+  sources: [Wikidata Q153472 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q153472
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q153472
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Joos_van_Cleve_-_Self-Portrait_-_WGA5048.jpg/1280px-Joos_van_Cleve_-_Self-Portrait_-_WGA5048.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joos_van_Cleve_-_Self-Portrait_-_WGA5048.jpg
+    license: Public domain
+    credit: Joos van Cleve
+identifiers:
+  bnf: 14966522n
+  gnd: "119024268"
+  idref: 03066425X
+  kulturnav: 6e8e363e-4fa7-4db0-aca6-b884d547ceb9
+  lc: nr91022860
+  rkd: "17248"
+  ulan: "500007799"
+  viaf: "69201794"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q153472
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q153472

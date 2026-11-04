@@ -1,0 +1,177 @@
+public_id: 114953
+title_lang: fr
+title: La vanità
+names:
+  - lang: en
+    role: translation
+    text: Venere allo specchio; Vanità e insidia; Vanità e invidia
+  - lang: de
+    role: translation
+    text: Die Eitelkeit
+  - lang: en
+    role: translation
+    text: Vanity
+  - lang: en
+    role: translation
+    text: Vanity
+  - lang: fr
+    role: translation
+    text: La Vanité
+  - lang: fr
+    role: original
+    text: La vanità (la fonte del male)
+creator: giovanni-segantini
+created: 1897
+kind: oil painting
+medium: Oil on canvas
+dimensions: [77, 124]
+institution: kunsthaus-zurich
+inventory_number: 1996/0003
+web_url: https://collection.kunsthaus.ch/de/collection/item/1263/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584933
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/01/Giovanni_Segantini_-_La_vanit%C3%A0_-_1996-0003_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Segantini_-_La_vanit%C3%A0_-_1996-0003_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Giovanni Segantini
+provenance:
+  - owner: person/karl-wittgenstein
+    acquired: 1898
+    ended: 1913-01-20
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+        note: "Footnote: Der Industrielle und Kunstsammler Karl Wittgenstein erwarb das Werk auf der Ausstellung der Wiener Secession von 1898. Arcangeli/Gozzoli 1973, S. 122, Nr. 401; Servaes 1902, S. 128, Nr. 117: «Besitzer: Herr C. Wittgenstein, Wien»; Waugh 2009, S. 290."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-wittgenstein
+    acquired: April 1938 or earlier
+    ended: 1939-08-29
+    method: inheritance
+    direct: true
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+        note: "Footnote: Paul Wittgenstein flüchtete im Herbst 1938 über Zürich nach New York. Am 1. Dezember 1938 legte sein Schiff von Le Havre ab. Auflistung der Schätzung der im Besitze von Herrn Paul Wittgenstein befindlichen Gemälde, Bilder, Plastiken etc., 09.12.1939, Bundesdenkmalamt Wien, K 50 PM WittgensteinPaul, M1, fol 40-44; Waugh 2009, S. 290."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hermine-wittgenstein
+    co_owners: [person/helene-wittgenstein]
+    acquired: 1939-08-29
+    method: transfer
+    direct: true
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+        note: "Footnote: Die Deutsche Reichsbank überschrieb Pauls Vermögen an seine Schwestern Hermine und Helene Wittgenstein. Die Schwestern schlossen ein Abkommen mit den Nationalsozialisten, wodurch Paul einen grossen Teil seines Vermögens verlor. Die Schwestern erhielten dadurch am 29. August 1939 den «Mischlingsstatus» mit dem sie im Land verbleiben konnten. Bewegliche Güter sollte Paul nach der Vereinbarung zunäch…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/paul-wittgenstein
+    acquired: 1949-03-10 or earlier
+    ended: 30 August 1950 or later
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+        note: "Footnote: Die Ausfuhr wurde gemeinsam mit anderen Werken und Kunstgegenständen von Paul Wittgenstein nach dem Krieg am 03.01.1950 bewilligt. Bitte um Ausfuhrgenehmigung vom 10. März 1949, Bundesdenkmalamt Wien, K 50 PM WittgensteinPaul M2 fol. 84-85; Ausfuhrgenehmigung Paul Wittgenstein vom 30. August 1950, darunter: «Segantini, Quelle des Übels, 78 x 128 cm», Bundesdenkmalamt Wien, K 50 PM WittgensteinPaul…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/luigi-vigevano
+    acquired: 1956-07-07 or earlier
+    place: milan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+        note: "Footnote: Nicodemi 1956, S. 237, Nr. 134; Kat. Kunstmuseum St. Gallen 1956 Segantini, Nr. 96: «Privatbesitz Mailand»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: private collection
+    acquired: 1971
+    ended: 1973
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+        note: "Footnote: ZKG/KHZ, Werkdossier; ZKG/KHZ, Werkdokument; Quinsac 1982, Bd. II, S. 500–501, Nr. 587."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: private collection
+    role: agent
+    acquired: 1974
+    ended: 1975
+    direct: true
+    place: london
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+        note: "Footnote: ZKG/KHZ, Werkdokument."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: private collection
+    acquired: 1975
+    ended: 1996-04-15
+    direct: true
+    place: tokyo
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+        note: "Footnote: Rechnung vom 24.10.1995, ZKG/KHZ, Werkdokument."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/artemis-group-david-carritt-ltd
+    role: agent
+    acquired: 1996-04-15
+    ended: 1996-04-15
+    direct: true
+    place: london
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+        note: "Footnote: Rechnung vom 15.4.1996, ZKG/KHZ, Werkdokument."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1996-04-15
+    method: purchase
+    direct: true
+    place: zurich
+    label: with a contribution from the Schweizerische Bankgesellschaft
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+        note: "Footnote: Wie oben Fussnote 12; ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: II.500.587
+    label: Quinsac 1982 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

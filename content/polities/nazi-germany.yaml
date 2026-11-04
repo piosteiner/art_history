@@ -1,6 +1,7 @@
 public_id: 100841
 name: Nazi Germany
 period: 1933-01-30/1945-05-23
+country_codes: [DE, AT, CZ, PL]
 wikidata_id: Q7318
 metadata:
   sources: [Wikidata Q7318 (retrieved 2026-10-18)]

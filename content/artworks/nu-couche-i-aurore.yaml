@@ -1,0 +1,119 @@
+public_id: 115262
+title_lang: en
+title: Nu couché I. Aurore
+names:
+  - lang: fr
+    role: translation
+    text: Femme nue couchée; Figure couchée
+  - lang: en
+    role: translation
+    text: Liegender Frauenakt I (Aurora)
+  - lang: en
+    role: translation
+    text: Reclining Nude I (Aurore)
+  - lang: en
+    role: former
+    text: Nu couché
+attribution_label: forgery after Henri Matisse
+created: 1907
+authenticity: forgery
+authenticity_note: 'Kunsthaus Zürich: "Forgery after Henri Matisse"'
+kind: sculpture
+medium: Bronze
+dimensions: [35, 50, 28]
+institution: kunsthaus-zurich
+inventory_number: 1968/0054
+web_url: https://collection.kunsthaus.ch/de/collection/item/2938/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+relationships:
+  - type: passed_off_as
+    to: artist/henri-matisse
+provenance:
+  - owner: person/walter-p-chrysler
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2938/
+        note: "Footnote: Korrespondenz, Marguerite G. Duthuit, 15.10.1971, ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alfred-flechtheim
+    ended: 1937 or earlier
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2938/
+        note: "Footnote: E-Mail Sandra Sykora (Galerie Fischer, Luzern), 18.01.2023: «Herkunft von Flechtheim Berlin wird in einem (nicht unterzeichneten) Schreiben der Galerie Fischer an Paul Vallotton vom 14. September 1949 bestätigt»; Bibliothèques & Archives, Lausanne, P610, Korrespondenz carton 17 lettre b: «D’autre part nous vous informons que le propriétaire [Flechtheim=?] de ces bronzes est très pressé de les réal…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: dealer
+    ended: 1949-10-15
+    direct: true
+    place: lucerne
+    label: Nr. 274
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2938/
+        note: "Footnote: E-Mail Sandra Sykora (Galerie Fischer, Luzern) wie oben Fussnote 5; Korrespondenz, Paul Vallotton S.A. an Theodor Fischer, 09.09.1949, ZKG/KHZ, Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-paul-vallotton
+    role: agent
+    acquired: 1949-09-09
+    direct: true
+    place: lausanne
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2938/
+        note: "Footnote: Korrespondenz, wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/werner-bar
+    co_owners: [person/nelly-bar]
+    acquired: 1949-10-15
+    ended: 1968
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2938/
+        note: "Footnote: ZKG/KHZ Werkdossier, Korrespondenz, Paul Vallotton S.A. an T. Fischer, 15.10.1949; ZKG/KHZ Werkdossier, Rechnung Paul Vallotton an Werner Bär, 07.10.1949."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1968
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2938/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 598."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2938/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2938/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2938/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2938/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2938/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2938/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2938/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

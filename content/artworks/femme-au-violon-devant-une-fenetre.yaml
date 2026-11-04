@@ -1,0 +1,68 @@
+public_id: 115019
+title_lang: fr
+title: Femme au violon devant une fenêtre
+names:
+  - lang: de
+    role: translation
+    text: Frau am Fenster mit Violine
+  - lang: en
+    role: translation
+    text: Woman at the Window with Violin
+creator: roger-bissiere
+created: c. 1930
+created_span: uncertain
+kind: oil painting
+medium: Oil on hardboard
+dimensions: [55, 46]
+institution: kunsthaus-zurich
+inventory_number: 1967/0008
+web_url: https://collection.kunsthaus.ch/de/collection/item/16/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584973
+provenance:
+  - owner: person/willy-junker
+    ended: 1967
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/16/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1967
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/16/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/16/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

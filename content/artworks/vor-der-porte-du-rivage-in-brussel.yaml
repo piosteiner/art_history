@@ -1,0 +1,192 @@
+public_id: 115470
+title_lang: de
+title: Vor der Porte du Rivage in Brüssel
+names:
+  - lang: de
+    role: former
+    text: Am Stadttor von Leiden
+  - lang: de
+    role: former
+    text: Brüssel, Porte du Rivage
+creator: jan-van-der-heyden
+created: 1667/1679
+created_label: c. 1672/1674
+created_span: uncertain
+kind: oil painting
+medium: Oil on oak panel
+dimensions: [23.8, 19.2]
+institution: kunsthaus-zurich
+inventory_number: R 13
+web_url: https://collection.kunsthaus.ch/de/collection/item/416/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586308
+provenance:
+  - owner_label: the widow of Jan van der Heyden
+    role: estate
+    acquired: 1712
+    ended: 1712
+    method: inheritance
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/416/
+        note: "Footnote: Heikamp-Wagner 1971 71.22."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1745-06-09
+    ended: 1745-06-09
+    method: auction
+    place: the-hague
+    label: Lot 108; 75 Gulden; Den Haag, Versteigerung E. van Dishoek
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/416/
+        note: "Footnote: De Groot 1923, Bd. 8, S. 446, Kat.-Nr. 312d."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/willem-lormier
+    acquired: 1752
+    ended: 1752
+    place: the-hague
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/416/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1763-07-04
+    ended: 1763-07-04
+    method: auction
+    direct: true
+    place: the-hague
+    label: 210.00 Gulden; Lot 140; Versteigerung W. Lormier
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/416/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1766-09-17
+    ended: 1766-09-17
+    method: auction
+    place: amsterdam
+    label: Lot 25
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/416/
+        note: "Footnote: Wie oben Fussnote 4: «fl. 195 an Yver laut’ Anmerkungen von J. van der Marck zurückgekauft»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: Duits
+    acquired: 1933
+    ended: 1933
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/416/
+        note: "Footnote: Korrespondenz, Helga Heikamp-Wagner, 16.2.1970, ZKG/KHZ Werkdossier; Ausst.-Kat. Kunstmuseum Basel 1987, S. 134, Kat. Nr. 41."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/robert-langton-douglas
+    ended: 1937-04-02
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/416/
+        note: "Footnote: Brief F. Steinmeyer an Leopold Ruzicka, 21.06.1948, ZKG/KHZ Werkdossier; Ausst.-Kat. Kunstmuseum Basel 1987, wie oben Fussnote 11; Heikamp-Wagner 1971, wie oben Fussnote 2; Archiv Kunsthandlung Böhler, ZIKG München, Karteikarte Luzern [L_10415]: http://boehler.zikg.eu/wisski/navigate/224192/view (26.06.2023)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthandel-ag
+    acquired: 1937-04-02
+    ended: 1938-05-07
+    method: purchase
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/416/
+        note: "Footnote: Archiv Kunsthandlung Böhler, ZIKG München, wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/fritz-steinmeyer
+    role: dealer
+    acquired: 1938-05-07
+    ended: 1948-06-21
+    method: purchase
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/416/
+        note: "Footnote: Wie oben Fussnote 14."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1948-06-21
+    ended: 1948-12-27
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/416/
+        note: "Footnote: Brief F. Steinmeyer an Leopold Ruzicka, wie oben Fussnote 13; ZKG/KHZ Ruzicka-Akten, Abrechnung Ruzicka-Stiftung 1949, S. 2; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 109; Heikamp-Wagner 1971, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1948-12-27
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/416/
+        note: "Footnote: ZKG/KHZ Ruzicka-Akten, Abrechnung, wie oben Fussnote 16; Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 16; Heikamp-Wagner 1971, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/416/
+        note: "Footnote: Wie oben Fussnote 18."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "71.22"
+    label: Heikamp-Wagner 1971 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/416/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/416/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/416/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/416/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/416/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/416/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/416/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/416/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

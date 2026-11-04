@@ -1,0 +1,32 @@
+public_id: 115233
+name: Hildesheim
+names:
+  - lang: ja
+    role: translation
+    text: ヒルデスハイム
+  - lang: ko
+    role: translation
+    text: 힐데스하임
+  - lang: ru
+    role: translation
+    text: Хильдесхайм
+kind: settlement
+parent: niedersachsen
+country_code: DE
+location: [9.95, 52.15]
+wikidata_id: Q3185
+metadata:
+  sources: [Wikidata Q3185 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q3185
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q3185
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q3185

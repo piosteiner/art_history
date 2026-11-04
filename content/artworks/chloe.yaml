@@ -1,0 +1,65 @@
+public_id: 115157
+title_lang: en
+title: Chloe
+creator: hans-jakob-oeri
+created: 1806
+kind: oil painting
+medium: Oil on canvas
+dimensions: [160, 135]
+institution: kunsthaus-zurich
+inventory_number: 1945/0009
+web_url: https://collection.kunsthaus.ch/de/collection/item/2572/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586256
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d6/Hans_Jakob_Oeri_-_Chloe_-_1945-0009_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_Jakob_Oeri_-_Chloe_-_1945-0009_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Hans Jakob Oeri
+provenance:
+  - owner: person/lili-usteri
+    ended: 1945
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2572/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1945
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2572/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission Archiv 10.30.10.41-42, 27.09.1945 II.a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2572/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2572/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2572/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2572/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2572/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2572/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2572/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

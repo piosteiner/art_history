@@ -1,0 +1,138 @@
+public_id: 115196
+title_lang: de
+title: Mädchen mit Puppe. Erdmute Esche mit Eisbär und Puppe
+names:
+  - lang: en
+    role: translation
+    text: Girl with Doll. Erdmute Esche with Polar Bear and Doll
+  - lang: en
+    role: translation
+    text: Fillette avec poupée. Erdmute Esche avec ours polaire et poupée
+creator: edvard-munch
+created: 1905
+kind: oil painting
+medium: Oil on canvas
+dimensions: [76, 68]
+institution: kunsthaus-zurich
+inventory_number: D.2022/0019
+web_url: https://collection.kunsthaus.ch/de/collection/item/26873/
+on_loan: true
+on_loan_since: 2022
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q18889793
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/77/Edvard_Munch_-_M%C3%A4dchen_mit_Puppe._Erdmute_Esche_mit_Eisb%C3%A4r_und_Puppe_-_D.2022-0019_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_M%C3%A4dchen_mit_Puppe._Erdmute_Esche_mit_Eisb%C3%A4r_und_Puppe_-_D.2022-0019_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Edvard Munch
+provenance:
+  - owner: person/herbert-eugen-esche
+    acquired: 1905
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+        note: "Footnote: Kat. Kunsthaus Zürich 2016, S. 57."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/erdmute-luchsinger-esche
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1949/1950
+    ended: 1949/1950
+    method: auction
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-feilchenfeldt
+    role: dealer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+        note: "Footnote: Etikette auf der Werkrückseite; Woll 2009, Bd. II, 664.652."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/marianne-feilchenfeldt
+    role: dealer
+    acquired: 1958 or earlier
+    ended: 2001
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+        note: "Footnote: Ausstellungsetikette auf der Werkrückseite, Kunstmuseum Bern."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: private collection
+    acquired: 2001
+    ended: 2022
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: private collection
+    acquired: 2022
+    ended: 2022
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/herbert-eugen-esche-stiftung
+    acquired: 2022
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+        note: "Footnote: Jahresbericht 2022, hrsg. von Zürcher Kunstgesellschaft, 2022, S. 55."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: II.652
+    label: Woll (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

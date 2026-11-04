@@ -1,0 +1,57 @@
+public_id: 115534
+name: Jan van de Cappelle
+given_name: Jan
+family_name: van de Cappelle
+birth: 1624
+death: 1679-12-22
+wikidata_id: Q759804
+metadata:
+  sources: [Wikidata Q759804 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q759804
+  - type: born_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q759804
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q759804
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q759804
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/36/Gerbrand_van_den_Eeckhout_-_Jan_van_de_Capelle_%281624-%2725-1679%29_%5E_-_SA_40424_-_Amsterdam_Museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gerbrand_van_den_Eeckhout_-_Jan_van_de_Capelle_(1624-%2725-1679)_%5E_-_SA_40424_-_Amsterdam_Museum.jpg
+    license: Public domain
+    credit: Gerbrand van den Eeckhout
+identifiers:
+  bnf: 14965529t
+  gnd: "134029186"
+  idref: "189766212"
+  kulturnav: 76ae238a-e10e-4868-884d-e96777d51ce8
+  lc: nr91044184
+  rkd: "15220"
+  ulan: "500019121"
+  viaf: "12576638"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q759804
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q759804

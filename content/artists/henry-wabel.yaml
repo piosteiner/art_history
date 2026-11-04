@@ -1,0 +1,54 @@
+public_id: 115292
+name: Henry Wabel
+given_name: Henry
+family_name: Wabel
+birth: 1889-02-18
+death: 1981-01-17
+wikidata_id: Q43077684
+metadata:
+  sources: [Wikidata Q43077684 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q43077684
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q43077684
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q43077684
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q43077684
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q43077684
+identifiers:
+  gnd: "1090003633"
+  rkd: "126820"
+  sikart: "4001705"
+  viaf: "1593145857117322922303"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q43077684
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q43077684

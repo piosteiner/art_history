@@ -1,0 +1,29 @@
+public_id: 115277
+name: Küsnacht (ZH)
+names:
+  - lang: de
+    role: translation
+    text: Küsnacht
+  - lang: ru
+    role: translation
+    text: Кюснахт
+kind: settlement
+parent: canton-of-zurich
+country_code: CH
+location: [8.5825, 47.31806]
+wikidata_id: Q69216
+metadata:
+  sources: [Wikidata Q69216 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q69216
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q69216
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q69216

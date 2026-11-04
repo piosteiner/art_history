@@ -1,0 +1,94 @@
+public_id: 115418
+title_lang: fr
+title: Le Jardinier
+names:
+  - lang: de
+    role: translation
+    text: Der Gärtner
+  - lang: en
+    role: translation
+    text: The Gardener
+creator: georges-seurat
+created: c. 1882
+created_span: uncertain
+kind: oil painting
+medium: Oil on panel
+dimensions: [15.7, 24.7]
+institution: kunsthaus-zurich
+inventory_number: 1995/0005
+web_url: https://collection.kunsthaus.ch/de/collection/item/3716/
+on_loan: true
+on_loan_since: 1974
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q19710108
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e7/Georges_Seurat_-_Le_Jardinier_-_1995-0005_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Georges_Seurat_-_Le_Jardinier_-_1995-0005_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Georges Seurat
+provenance:
+  - owner: institution/wildenstein-co
+    role: dealer
+    ended: 1965 or later
+    place: new-york-city
+    label: Paris?
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3716/
+        note: "Footnote: Kunsthaus Zürich 1995 (Sammlungskatalog), Vorwort; Rewald 1973, S. 507: «Private collection, Paris». Bisher konnte die «Private collection, Paris» noch nicht identifiziert werden. Möglicherweise handelt es sich dabei um die Filiale der Galerie Wildenstein in Paris, diese Annahme konnte jedoch noch nicht belegt werden."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-haefner
+    acquired: 1965 or later
+    ended: 1995
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3716/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1995
+    method: gift
+    direct: true
+    place: zurich
+    label: anlässlich des 50-jährigen Jubiläums der AMAG Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3716/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; ZKG/KHZ Werkdossier; Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3716/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3716/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3716/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3716/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3716/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3716/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3716/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3716/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,77 @@
+public_id: 113428
+title_lang: en
+title: Honganji at Asakusa in Edo
+names:
+  - lang: ja
+    role: original
+    text: 東都浅草本願寺
+  - lang: ja
+    role: original
+    text: 東都浅艸本願寺
+  - Tōto Asakusa Honganji
+  - Hongan-ji temple at Asakusa in Edo
+  - lang: en
+    role: original
+    text: Asakusa Hongan-ji temple in the Eastern capital
+  - lang: fr
+    role: translation
+    text: Le temple d'Asakusa Honganji dans la capitale orientale
+  - lang: de
+    role: translation
+    text: Der Hongan-ji-Tempel bei Asakusa in Edo
+  - lang: es
+    role: translation
+    text: Hongan-ji en Asakusa en la capital oriental
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 東都浅草本願寺
+parent: thirty-six-views-of-mount-fuji
+part_number: "11"
+creator: katsushika-hokusai
+created: 1830/1833
+created_label: c. 1830–1833
+created_span: uncertain
+institution: art-institute-of-chicago
+inventory_number: "1925.3259"
+web_url: https://www.artic.edu/artworks/24690
+location: [139.78944, 35.71181]
+wikidata_id: Q18173393
+metadata:
+  sources: [Wikidata Q18173393 (retrieved 2026-11-03)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+    period: 1831
+images:
+  - url: https://www.artic.edu/iiif/2/221e30b6-b4ab-d345-5def-2b83e76b3b90/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/24690
+    license: Public domain
+    credit: Art Institute of Chicago, Clarence Buckingham Collection
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173393
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173393
+  created:
+    - url: https://www.artic.edu/artworks/24690
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173393
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q18173393
+  institution:
+    - url: https://www.artic.edu/artworks/24690
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.artic.edu/artworks/24690
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03

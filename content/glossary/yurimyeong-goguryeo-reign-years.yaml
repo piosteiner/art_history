@@ -1,0 +1,18 @@
+public_id: 113276
+name: Yurimyeong of Goguryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 유리명왕
+  - lang: ko-Hani
+    role: alternative
+    text: 琉璃明王
+category: calendar
+definition: "The reign years of King Yurimyeong of Goguryeo (琉璃明王, 유리명왕), by which Korean histories date 19 BC – 18 CE: 19 BC is Yurimyeong 1, 18 Yurimyeong 37."
+description_md: |-
+  **Yurimyeong** (琉璃明王, 유리명왕): the years of the reign of King Yurimyeong of Goguryeo. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 10 BC is Yurimyeong 10 (유리명왕 10년). The year of the accession, 19 BC, counts as the first year.
+
+  Before: [[dongmyeongseong-goguryeo-reign-years|Dongmyeongseong]]. After: [[daemusin-goguryeo-reign-years|Daemusin]].
+sources:
+  definition:
+    - source: dila-time-authority

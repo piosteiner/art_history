@@ -25,6 +25,7 @@ names:
     role: translation
     text: Королевство Испания
 period: 1700/1873-02-11
+country_codes: [ES]
 wikidata_id: Q3399982
 metadata:
   sources: [Wikidata Q3399982 (retrieved 2026-10-29)]

@@ -1,0 +1,107 @@
+public_id: 115345
+title_lang: en
+title: Des sables au bord de la Loire
+names:
+  - lang: de
+    role: translation
+    text: Sandbänke an der Loire
+  - lang: en
+    role: translation
+    text: Sandbanks on the Loire
+creator: felix-vallotton
+created: 1923
+kind: oil painting
+medium: Oil on canvas
+dimensions: [73, 100]
+institution: kunsthaus-zurich
+inventory_number: "2456"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3433/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q47544420
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/89/F%C3%A9lix_Vallotton_-_Des_sables_au_bord_de_la_Loire_-_2456_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Vallotton_-_Des_sables_au_bord_de_la_Loire_-_2456_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Félix Vallotton
+provenance:
+  - owner: artist/felix-vallotton
+    role: estate
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3433/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-paul-vallotton
+    role: dealer
+    method: inheritance
+    direct: true
+    place: lausanne
+    label: Nr. 1010
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3433/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/walter-baumann
+    acquired: 1930
+    ended: 1930
+    direct: true
+    place: zollikon
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3433/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-paul-vallotton
+    role: dealer
+    acquired: 1932
+    ended: 1938
+    direct: true
+    place: lausanne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3433/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1938
+    method: purchase
+    direct: true
+    place: zurich
+    label: bought from the exhibition at the Kunsthaus Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3433/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "1531"
+    label: Ducrey (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

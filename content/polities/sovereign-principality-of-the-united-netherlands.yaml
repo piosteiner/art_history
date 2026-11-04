@@ -30,6 +30,7 @@ names:
     role: translation
     text: Суверенное княжество Объединённых Нидерландов
 period: 1813-11-21/1815-03-16
+country_codes: [NL]
 wikidata_id: Q774783
 metadata:
   sources: [Wikidata Q774783 (retrieved 2026-10-29)]

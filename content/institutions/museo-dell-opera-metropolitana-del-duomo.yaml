@@ -1,0 +1,16 @@
+public_id: 113412
+name: Museo dell'Opera Metropolitana del Duomo
+kind: museum
+founded: 1869
+wikidata_id: Q869130
+metadata:
+  sources: [Wikidata Q869130 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q869130
+  founded:
+    - accessed: 2026-11-03
+      property: P571
+      wikidata: Q869130

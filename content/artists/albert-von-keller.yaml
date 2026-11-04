@@ -1,0 +1,65 @@
+public_id: 115551
+name: Albert von Keller
+given_name: Albert
+family_name: von Keller
+birth: 1844-04-27
+death: 1920-07-14
+wikidata_id: Q567382
+metadata:
+  sources: [Wikidata Q567382 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q567382
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q567382
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q567382
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q567382
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q567382
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e3/Albert_von_Keller_1904.png
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_von_Keller_1904.png
+    license: Public domain
+    credit: not credited
+identifiers:
+  bnf: "149710019"
+  dome: "479"
+  gnd: "118561057"
+  hls: "022472"
+  idref: "145947130"
+  lc: n81127818
+  rkd: "43786"
+  sikart: "4022921"
+  ulan: "500003471"
+  viaf: "71666794"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q567382
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q567382

@@ -1,0 +1,46 @@
+public_id: 115398
+name: Walter Kurt Wiemken
+given_name: Walter Kurt
+family_name: Wiemken
+birth: 1907-09-14
+death: 1940-12-30
+wikidata_id: Q690581
+metadata:
+  sources: [Wikidata Q690581 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q690581
+  - type: born_in
+    to: place/basel
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q690581
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/35/Walter_Kurt_Wiemken_Selbstbildnis.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Walter_Kurt_Wiemken_Selbstbildnis.jpg
+    license: Public domain
+    credit: Walter Kurt Wiemken
+identifiers:
+  bnf: "121613316"
+  gnd: "118632523"
+  hls: "022119"
+  idref: "076080668"
+  lc: nr98021695
+  rkd: "84201"
+  sikart: "4000363"
+  ulan: "500003358"
+  viaf: "62341849"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q690581
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q690581

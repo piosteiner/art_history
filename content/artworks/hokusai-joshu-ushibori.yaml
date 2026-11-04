@@ -1,0 +1,69 @@
+public_id: 113438
+title_lang: en
+title: Ushibori in Hitachi Province
+names:
+  - lang: ja
+    role: original
+    text: 常州牛堀
+  - lang: en
+    role: original
+    text: Fuji from Ushibori, Province of Hitachi
+  - Jōshū Ushibori
+  - lang: fr
+    role: translation
+    text: Ushibori dans la province de Hitachi
+  - lang: de
+    role: translation
+    text: Ushibori in der Provinz Hitachi
+  - lang: es
+    role: translation
+    text: Ushibori en la provincia de Hitachi
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 常州牛堀
+parent: thirty-six-views-of-mount-fuji
+part_number: "20"
+creator: katsushika-hokusai
+created: 1830/1832
+created_label: c. 1830–1832
+created_span: uncertain
+dimensions: [26.4, 38.7]
+institution: metropolitan-museum-of-art
+inventory_number: JP2565
+web_url: https://www.metmuseum.org/art/collection/search/56785
+wikidata_id: Q18173405
+metadata:
+  sources: [Wikidata Q18173405 (retrieved 2026-11-03)]
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/original/DP141044.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/56785
+    license: Public domain
+    credit: The Metropolitan Museum of Art
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173405
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173405
+  created:
+    - url: https://www.metmuseum.org/art/collection/search/56785
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173405
+  dimensions:
+    - accessed: 2026-11-03
+      property: P2048
+      wikidata: Q18173405
+  institution:
+    - url: https://www.metmuseum.org/art/collection/search/56785
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.metmuseum.org/art/collection/search/56785
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03

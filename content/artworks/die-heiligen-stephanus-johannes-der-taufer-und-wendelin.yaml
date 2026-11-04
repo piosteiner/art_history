@@ -1,0 +1,97 @@
+public_id: 115404
+title_lang: de
+title: Die Heiligen Stephanus, Johannes der Täufer und Wendelin
+names:
+  - lang: en
+    role: translation
+    text: The Saints Stephan, John the Baptist and Wendelin
+creator: hans-strigel-the-younger
+created: c. 1460
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas on panel
+dimensions: [158.5, 106]
+institution: kunsthaus-zurich
+inventory_number: 1944/0015
+web_url: https://collection.kunsthaus.ch/de/collection/item/3678/
+on_loan: true
+on_loan_since: 1944
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: institution/galerie-neupert
+    role: dealer
+    acquired: 1940 or earlier
+    ended: 9 June 1942 or later
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3678/
+        note: "Footnote: Brief von der Galerie Neupert (Bahnhofstrasse 1, Zürich) an Dr. Wilhelm Wartmann, 09.06.1942, Archiv ZKG/KHZ, Akten der Sammlungskommission zur Sitzung, 10.06.1942, 10.30.10.57: «Ihrem Wunsch gemäss senden wir Ihnen folgende Gemälde zur gfl. Ansicht: 1. Yvo Strigel (um 1470), «Drei Heilige» Rückseite: Fragment einer Sebastiandarstellung, Abgebildet im beiliegenden Auszug der Zeitschrift für Schwei…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/adolf-johr
+    acquired: 1944-06-20 or earlier
+    ended: 1953
+    method: purchase
+    direct: true
+    place: zurich
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3678/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg.: «1955: laut Aussage Frau Dr. Jöhr nun dem Kunsthaus gehörend»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/fides-treuhand-vereinigung
+    acquired: 1944-06-20 or earlier
+    ended: 1955
+    direct: true
+    place: zurich
+    label: «treuhänderisch namens und im Auftrag eines ungenannten Eigentümers»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3678/
+        note: "Footnote: Vereinbarung der Zürcher Kunstgesellschaft mit der Fides-Treuhand-Vereinigung (St. Peterstr. 11, Zürich) über die Leihgabe von Inv.-Nr. 1944/15 und 1944/16, 20.06.1944, ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1955
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3678/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3678/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3678/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3678/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3678/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3678/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3678/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3678/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3678/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

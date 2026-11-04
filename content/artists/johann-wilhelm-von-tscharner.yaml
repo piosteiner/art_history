@@ -1,0 +1,46 @@
+public_id: 115334
+name: Johann Wilhelm von Tscharner
+given_name: Johann Wilhelm
+family_name: von Tscharner
+birth: 1886-05-12
+death: 1946-06-20
+wikidata_id: Q1696648
+metadata:
+  sources: [Wikidata Q1696648 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q1696648
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q1696648
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7e/Johann_von_Tscharner%2C_ca_1910.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_von_Tscharner,_ca_1910.jpg
+    license: CC BY-SA 4.0
+    credit: Unknown author
+identifiers:
+  dome: "6163"
+  gnd: "118814982"
+  hls: "022679"
+  idref: "240885988"
+  lc: n86090798
+  rkd: "78352"
+  sikart: "4023424"
+  ulan: "500075443"
+  viaf: "57411329"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q1696648
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q1696648

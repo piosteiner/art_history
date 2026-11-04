@@ -1,0 +1,60 @@
+public_id: 115539
+title_lang: en
+title: Frauenraub
+creator: carl-burckhardt
+created: 1918
+kind: sculpture
+medium: Cast stone
+dimensions: [73, 43, 47.5]
+institution: kunsthaus-zurich
+inventory_number: 1963/0040
+web_url: https://collection.kunsthaus.ch/de/collection/item/608/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: institution/galerie-am-stadelhofen
+    role: dealer
+    ended: 1963
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/608/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; Sitzungsprotokoll der Sammlungskommission, 31.10.1963 I., Archiv ZKG/KHZ, 10.30.10.42a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1963
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/608/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/608/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/608/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/608/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/608/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/608/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/608/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/608/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

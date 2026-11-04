@@ -1,0 +1,93 @@
+public_id: 115092
+title_lang: en
+title: Grande femme assise
+names:
+  - lang: en
+    role: translation
+    text: Grosse sitzende Frau
+creator: henri-laurens
+created: 1932
+kind: sculpture
+medium: Bronze
+dimensions: [69, 53, 36]
+institution: kunsthaus-zurich
+inventory_number: 1968/0048
+web_url: https://collection.kunsthaus.ch/de/collection/item/2201/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: institution/galerie-louise-leiris
+    role: dealer
+    place: paris
+    label: Nr. 062965
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2201/
+        note: "Footnote: Etikette auf der Unterseite der Skulptur."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-louis-carre
+    role: dealer
+    acquired: 1954 or earlier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2201/
+        note: "Footnote: Kat. Kunsthaus Zürich 1954, S. 39, Kat.-Nr. 127."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/fine-arts-associates
+    acquired: 1959
+    ended: 1959
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2201/
+        note: "Footnote: Baumann/Hnikova 1970, S. 37."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/nelly-bar
+    acquired: 1960
+    ended: 1968
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2201/
+        note: "Footnote: Werner und Nelly Bär 1965 (Sammlungskatalog), S. 248; Kat. Aargauer Kunsthaus 1965, S. 6; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 630."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1968
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2201/
+        note: "Footnote: Werkdossier; Kunsthaus Zürich 2007, wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2201/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2201/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2201/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2201/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2201/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2201/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2201/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

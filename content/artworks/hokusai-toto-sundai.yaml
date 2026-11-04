@@ -1,0 +1,76 @@
+public_id: 113423
+title_lang: en
+title: Surugadai in Edo
+names:
+  - lang: ja
+    role: original
+    text: 東都駿台
+  - lang: ja
+    role: original
+    text: 東都駿臺
+  - Tōto Sundai
+  - Tōto Surugadai
+  - lang: en
+    role: original
+    text: Sundai, Edo
+  - lang: fr
+    role: translation
+    text: Surugadai à Edo
+  - lang: de
+    role: translation
+    text: Sundai in Edo
+  - lang: es
+    role: translation
+    text: Sundai en Edo
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 東都駿台
+  - lang: ko
+    role: translation
+    text: 동도 슨다이
+parent: thirty-six-views-of-mount-fuji
+part_number: "5"
+creator: katsushika-hokusai
+created: 1830/1832
+created_label: c. 1830–1832
+created_span: uncertain
+dimensions: [24.8, 36.5]
+institution: metropolitan-museum-of-art
+inventory_number: JP1287
+web_url: https://www.metmuseum.org/art/collection/search/55227
+wikidata_id: Q18173387
+metadata:
+  sources: [Wikidata Q18173387 (retrieved 2026-11-03)]
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/original/DP140999.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/55227
+    license: Public domain
+    credit: The Metropolitan Museum of Art
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173387
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173387
+  created:
+    - url: https://www.metmuseum.org/art/collection/search/55227
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173387
+  dimensions:
+    - accessed: 2026-11-03
+      property: P2048
+      wikidata: Q18173387
+  institution:
+    - url: https://www.metmuseum.org/art/collection/search/55227
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.metmuseum.org/art/collection/search/55227
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03

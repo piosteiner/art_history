@@ -1,0 +1,18 @@
+public_id: 113302
+name: Bojang of Goguryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 보장왕
+  - lang: ko-Hani
+    role: alternative
+    text: 寶臧王
+category: calendar
+definition: "The reign years of King Bojang of Goguryeo (寶臧王, 보장왕), by which Korean histories date 642–668: 642 is Bojang 1, 668 Bojang 27."
+description_md: |-
+  **Bojang** (寶臧王, 보장왕): the years of the reign of King Bojang of Goguryeo. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 651 is Bojang 10 (보장왕 10년). The year of the accession, 642, counts as the first year.
+
+  Before: [[yeongnyu-goguryeo-reign-years|Yeongnyu]].
+sources:
+  definition:
+    - source: dila-time-authority

@@ -1,0 +1,18 @@
+public_id: 113401
+name: Jusepe Leonardo
+given_name: Jusepe
+family_name: Leonardo
+birth: 1601-03-21
+death: 1652
+wikidata_id: Q5655766
+metadata:
+  sources: [Wikidata Q5655766 (retrieved 2026-11-03)]
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q5655766
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q5655766

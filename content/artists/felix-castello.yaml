@@ -1,0 +1,22 @@
+public_id: 113405
+name: Félix Castello
+given_name: Felix
+family_name: Castello
+names:
+  - lang: es
+    role: alternative
+    text: Félix Castelo
+birth: 1595-07-04
+death: 1651-09-12
+wikidata_id: Q5442161
+metadata:
+  sources: [Wikidata Q5442161 (retrieved 2026-11-03)]
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q5442161
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q5442161

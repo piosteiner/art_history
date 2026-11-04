@@ -11,6 +11,7 @@ names:
     role: translation
     text: Gobierno provisional de Belgica (1814-1815)
 period: 1814/1815-03-16
+country_codes: [BE]
 wikidata_id: Q2536329
 metadata:
   sources: [Wikidata Q2536329 (retrieved 2026-10-29)]

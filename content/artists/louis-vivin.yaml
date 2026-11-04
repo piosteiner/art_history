@@ -1,0 +1,39 @@
+public_id: 115061
+name: Louis Vivin
+given_name: Louis
+family_name: Vivin
+birth: 1861-07-28
+death: 1936-05-28
+wikidata_id: Q1563526
+metadata:
+  sources: [Wikidata Q1563526 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q1563526
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q1563526
+identifiers:
+  bnf: "119354401"
+  gnd: "119471604"
+  idref: "027277461"
+  lc: n81072369
+  rkd: "81405"
+  ulan: "500022853"
+  viaf: "3281404"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q1563526
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q1563526

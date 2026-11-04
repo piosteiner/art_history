@@ -1,0 +1,70 @@
+public_id: 115416
+title_lang: en
+title: Unterweisung
+names:
+  - lang: en
+    role: translation
+    text: Instruction
+  - lang: en
+    role: translation
+    text: Enseignement
+creator: oskar-schlemmer
+created: 1932
+kind: oil painting
+medium: Oil on canvas on cardboard
+dimensions: [67.5, 66.5]
+institution: kunsthaus-zurich
+inventory_number: 1964/0029
+web_url: https://collection.kunsthaus.ch/de/collection/item/3711/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586502
+provenance:
+  - owner: institution/galerie-krugier-co
+    role: dealer
+    ended: 1964
+    place: geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3711/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; Sitzungsprotokoll der Sammlungskommission, 22.10.1964, Archiv ZKG/KHZ, 10.30.10.42a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1964
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3711/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3711/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3711/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3711/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3711/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3711/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3711/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3711/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

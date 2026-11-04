@@ -1,0 +1,53 @@
+public_id: 113413
+title_lang: it
+title: Natività della Vergine
+names:
+  - lang: en
+    role: translation
+    text: Nativity of the Virgin
+  - lang: fr
+    role: translation
+    text: Naissance de la Vierge
+  - lang: de
+    role: translation
+    text: Geburt Mariens
+parent: cycle-of-four-altar-pieces-for-the-patron-saints-of-siena
+creator: pietro-lorenzetti
+created: c. 1342
+created_span: uncertain
+materials: [tempera, panel]
+dimensions: [187, 182]
+institution: museo-dell-opera-metropolitana-del-duomo
+web_url: https://operaduomo.siena.it/en/cathedral-museum/
+wikidata_id: Q3873247
+metadata:
+  sources: [Wikidata Q3873247 (retrieved 2026-11-03)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/79/Nativity_of_the_Virgin_%281335-42%29_by_Pietro_Lorenzetti.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nativity_of_the_Virgin_(1335-42)_by_Pietro_Lorenzetti.jpg
+    license: Public domain
+    credit: Pietro Lorenzetti
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q3873247
+  created:
+    - accessed: 2026-11-03
+      property: P571
+      wikidata: Q3873247
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q3873247
+  materials:
+    - accessed: 2026-11-03
+      property: P186
+      wikidata: Q3873247
+  dimensions:
+    - accessed: 2026-11-03
+      property: P2048
+      wikidata: Q3873247
+  institution:
+    - accessed: 2026-11-03
+      property: P195
+      wikidata: Q3873247

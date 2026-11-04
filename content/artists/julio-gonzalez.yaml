@@ -1,0 +1,66 @@
+public_id: 114912
+name: Julio González
+given_name: Julio
+family_name: González
+names:
+  - kind: birth
+    lang: es
+    role: former
+    text: Julio Luis Jesus González Pellicer a
+    sources:
+      - accessed: 2026-11-03
+        property: P1477
+        wikidata: Q316531
+birth: 1876-09-21
+death: 1942-03-27
+wikidata_id: Q316531
+metadata:
+  sources: [Wikidata Q316531 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q316531
+  - type: born_in
+    to: place/barcelona
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q316531
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q316531
+  - type: influenced_by
+    to: artist/pablo-picasso
+    sources:
+      - accessed: 2026-11-03
+        property: P737
+        wikidata: Q316531
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0d/Julio_Gonz%C3%A1lez_%281912%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Julio_Gonz%C3%A1lez_(1912).jpg
+    license: Public domain
+    credit: Unknown photographer
+identifiers:
+  bnf: "121027183"
+  dome: "12017"
+  gnd: "118540742"
+  idref: "029389429"
+  lc: n50043484
+  rkd: "32599"
+  ulan: "500024353"
+  viaf: "4960044"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q316531
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q316531

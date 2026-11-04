@@ -30,6 +30,7 @@ names:
     role: translation
     text: Королевство Франция
 period: 1791-09-04/1792-09-21
+country_codes: [FR]
 wikidata_id: Q69323
 metadata:
   sources: [Wikidata Q69323 (retrieved 2026-10-29)]

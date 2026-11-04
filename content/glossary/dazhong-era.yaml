@@ -1,0 +1,15 @@
+public_id: 113107
+name: Dazhong
+names:
+  - lang: zh
+    role: original
+    text: 大中
+category: calendar
+definition: "Chinese era name (大中) of the Tang for the years 847–860: 847 is Dazhong 1 (元年) and Dazhong 14 is 860."
+description_md: |-
+  **Dazhong** (大中) is a Chinese era name ([[nianhao]]) of the Tang, proclaimed in 847 under Emperor Xuanzong (宣宗). Its years are counted in lunar years: 847 is Dazhong 1 (元年), 860 its last year, Dazhong 14. A Chinese source dates a year within it as "Dazhong 2" (大中二年) rather than by a continuous count.
+
+  Before: [[huichang-era|Huichang]]. After: [[xiantong-era|Xiantong]].
+sources:
+  definition:
+    - source: dila-time-authority

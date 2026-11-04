@@ -1,0 +1,147 @@
+public_id: 115561
+title_lang: en
+title: Adele von Le-Suire, stehend
+names:
+  - lang: en
+    role: translation
+    text: Adele von Le-Suire, Standing
+creator: albert-von-keller
+created: c. 1887
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [111, 49, 2.5]
+institution: kunsthaus-zurich
+inventory_number: AvK 238.A
+web_url: https://collection.kunsthaus.ch/de/collection/item/6748/
+provenance_status: d_seized
+provenance_status_note: cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q108549472
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/65/Albert_von_Keller_-_Adele_von_Le-Suire%2C_stehend_-_AvK_238.A_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_von_Keller_-_Adele_von_Le-Suire,_stehend_-_AvK_238.A_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Albert von Keller
+provenance:
+  - owner: person/gertrud-sommerguth
+    co_owners: [person/alfred-sommerguth]
+    ended: 1939-02-07 or earlier
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6748/
+        note: "Footnote: Eintrag zu Alfred Sommerguth in der Datenbank «Proveana», https://www.proveana.de/de/person/sommerguth-alfred, 27.02.2025; siehe auch: Abschlussbericht zu «Systematische Provenienzforschung der Bestände am Städelschen Kunstinstitut und der Städtischen Galerie Frankfurt», Projekt-ID LA07-II2009 von Nicole Roth, 27.03.2013, S. 9 (https://www.proveana.de/de/link/pro10000150): Bei der am 7. Februar 19…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: confiscated (holder unknown)
+    role: possessor
+    acquired: before 7 February 1939
+    ended: before 7 February 1939
+    method: confiscation
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6748/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/h-w-lange
+    role: agent
+    acquired: 1939-02-07
+    ended: 1939-02-07
+    method: auction
+    direct: true
+    place: berlin
+    label: Lot 34
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6748/
+        note: "Footnote: Wie oben Fussnote 3; Auktion Hans W. Lange 1939, S. 52, Nr. 34."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthaus-lempertz
+    role: agent
+    acquired: 1964-04-15
+    ended: 1964-04-17
+    method: auction
+    place: cologne
+    label: Lot 206
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6748/
+        note: "Footnote: Verzeichnis «Alb. von Keller 1844-1920, Gesamtkosten d. Sammlung Dr. Oskar A. Müller» II, Nr. 238: Frau Le-Suire stehend (1887), Stössel aus Köln, Lempertz, sowie Notizzettel: «von Herrn David Stössel aus der Auktion Lempertz/Köln 15-17/4/64 erworben für DM. 2.240 inkl. Zuschlag, Nr. 238, und Rechnung des Kunsthaus Lempertz zur Auktion Nr. 477», ZKG/KHZ Werkdokument-Ordner Alb. v. Keller - Sammlun…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/david-stossel
+    role: agent
+    direct: true
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6748/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/oskar-a-muller
+    acquired: 1964-04-17
+    ended: 1994
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6748/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hannelore-muller-behrendt
+    acquired: 1994
+    ended: 2007
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6748/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2007
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6748/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2010
+    direct: true
+    place: zurich
+    label: gütliche Einigung mit den Erben und Schenkung der Erben und Hannelore Müller
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6748/
+        note: "Footnote: Eintrag auf Lost Art-Datenbank, http://www.lostart.de/DE/Verlust/275983, 27.02.2025."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6748/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6748/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6748/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6748/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6748/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6748/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6748/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

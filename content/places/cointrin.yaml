@@ -1,0 +1,8 @@
+public_id: 114973
+name: Cointrin
+kind: settlement
+parent: geneve
+country_code: CH
+location: [6.10348, 46.22762]
+metadata:
+  sources: [Wikidata null (retrieved 2026-11-03)]

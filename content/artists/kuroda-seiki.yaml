@@ -24,6 +24,13 @@ relationships:
       - accessed: 2026-10-28
         property: P20
         wikidata: Q910913
+  - type: lived_in
+    to: place/paris
+    period: 1884/1893
+    sources:
+      - note: Sent to Paris in 1884 to study law, turned to painting through Yamamoto Hōsui and studied with Raphaël Collin; returned to Japan in 1893 "from a decade in France" with the plein-air palette. Morning Toilet (1893) was first shown at the Société Nationale des Beaux-Arts.
+        source: history-of-japanese-art
+        locator: pp. 373–375
   - type: associated_with
     to: movement/pleinairisme
     sources:

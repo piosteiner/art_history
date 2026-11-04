@@ -1,0 +1,26 @@
+public_id: 115600
+name: Burlingame
+names:
+  - lang: zh
+    role: translation
+    text: 伯林甘
+kind: settlement
+parent: california
+country_code: US
+location: [-122.36361, 37.58333]
+wikidata_id: Q986867
+metadata:
+  sources: [Wikidata Q986867 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q986867
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q986867
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q986867

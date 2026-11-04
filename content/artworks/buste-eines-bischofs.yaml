@@ -1,0 +1,72 @@
+public_id: 115426
+title_lang: de
+title: Büste eines Bischofs
+names:
+  - lang: en
+    role: translation
+    text: Bust of a Bishop
+attribution_label: Anonymous, Tyrol
+created: 1435/1455
+created_label: c. 1440/1450
+created_span: uncertain
+kind: sculpture
+medium: Wood with exposed original polychromy
+dimensions: [47, 30.5, 15.5]
+institution: kunsthaus-zurich
+inventory_number: 1954/0029
+web_url: https://collection.kunsthaus.ch/de/collection/item/3779/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/benno-griebert
+    role: dealer
+    acquired: 1951 or earlier
+    ended: 1954
+    place: meersburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3779/
+        note: "Footnote: ZKG/KHZ Inventarbogen/Werkdossier: Eingang 1951 sowie Zürcher Kunstgesellschaft, Jahresbericht 1954, S. 7, Ankäufe: «Alle drei Leihgaben seit 1951»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1954
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 8000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3779/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3779/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3779/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3779/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3779/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3779/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3779/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3779/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

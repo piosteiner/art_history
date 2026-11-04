@@ -1,0 +1,141 @@
+public_id: 115200
+title_lang: fr
+title: La Promenade dans la forêt
+names:
+  - lang: de
+    role: translation
+    text: Am Waldrand
+  - lang: en
+    role: translation
+    text: Waldspaziergang
+  - lang: en
+    role: translation
+    text: The Walk in the Forest
+creator: henri-rousseau
+created: c. 1886
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [70, 60.5]
+institution: kunsthaus-zurich
+inventory_number: "2479"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2697/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q97924813
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b0/Henri_Rousseau_-_La_Promenade_dans_la_for%C3%AAt_-_2479_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_Rousseau_-_La_Promenade_dans_la_for%C3%AAt_-_2479_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Henri Rousseau
+provenance:
+  - owner_label: unknown (collector)
+    ended: 1911
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2697/
+        note: "Footnote: Certigny 1984, Bd. I, S. 54, Nr. 28: Zum Erwerb des Gemäldes durch Wilhelm Uhde hat sich die Angabe überliefert, dass dieser auf der Suche nach Werken Henri Rousseaus in Paris dieses Gemälde bei einer Wäscherin gefunden hatte und es von dieser für nur 40 France abgekauft hatte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/wilhelm-uhde
+    acquired: 1911
+    ended: 1921-05-30
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 40
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2697/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1921-05-30
+    ended: 1921-05-30
+    method: auction
+    direct: true
+    place: paris
+    label: seized as German enemy property and auctioned; als deutscher Feindbesitz konfisziert und versteigert; Lot 58 (La Femme en rouge dans le forêt)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2697/
+        note: "Footnote: Kat. Lille Métropole musée d'art moderne, d'art contemporain et d'art brut (LAM), Villeneuve-d'Ascq: Musée d'art moderne de Lille-Métropole, 2017, S. 56; Auktion Hotel Drouot 1921, o. S., Nr. 58."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leon-giraud
+    acquired: 1921-05-30
+    method: purchase
+    direct: true
+    price:
+      amount: 26000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2697/
+        note: "Footnote: Gazette de l’Hotel Drouot, o. S.: Collection Uhde «Vente après s’équestre de guerre faite salle 1, le 30 mai 1921, par Me Bareillier-Fouche, assitse de M. le Président des Commissaires-priseurs adjoint-technique et de M. Léonce Rosenberg, expert. Produit: 168.000 fr. Prix complets Peintures: […] Henri Rousseau. […] 58. La femme en rouge dans la fôret (70-60) (d. 15.000), à M. Giraud : 26.000.«"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/antoine-villard
+    acquired: March 1933 or earlier
+    ended: 1934-02-04
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2697/
+        note: "Footnote: Kat. Kunsthalle Basel 1933, S. 10, Nr. 19."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/louise-caroline-villard
+    acquired: 1934-02-04
+    ended: 1939
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2697/
+        note: "Footnote: Kat. Petit Palais 1937, S. 18, Nr. 4 und Brief von Charles Montag, 22.06.1939, Archiv KHZ/ZKG, Eingehende Korrespondenz, 10.30.30.142."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1939
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2697/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: I.54.28
+    label: Certigny 1984 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2697/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2697/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2697/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2697/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2697/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2697/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2697/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

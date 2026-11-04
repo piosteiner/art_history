@@ -1,0 +1,63 @@
+public_id: 113396
+title_lang: es
+title: La recuperación de Bahía de Todos los Santos
+names:
+  - The Recovery of Bahia de Todos los Santos
+  - lang: es
+    role: translation
+    text: Recuperación de Bahía de Todos los Santos
+  - lang: ja
+    role: translation
+    text: バイーアの奪還
+  - lang: zh
+    role: translation
+    text: 奪回巴伊亞
+parent: battle-series
+creator: juan-bautista-maino
+created: 1634/1635
+created_span: uncertain
+materials: [oil paint]
+dimensions: [309, 381]
+institution: museo-del-prado
+inventory_number: P000885
+web_url: https://www.museodelprado.es/en/the-collection/art-work/the-recapture-of-bahia-de-todos-los-santos/6097f5ec-0faa-46b4-bee6-aa48043ab2c1
+wikidata_id: Q9067298
+metadata:
+  sources: [Wikidata Q9067298 (retrieved 2026-11-03)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/La_recuperaci%C3%B3n_de_Bah%C3%ADa%2C_Ma%C3%ADno.jpg/1280px-La_recuperaci%C3%B3n_de_Bah%C3%ADa%2C_Ma%C3%ADno.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:La_recuperaci%C3%B3n_de_Bah%C3%ADa,_Ma%C3%ADno.jpg
+    license: Public domain
+    credit: Juan Bautista Maíno
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q9067298
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q9067298
+  created:
+    - url: https://www.museodelprado.es/en/the-collection/art-work/the-recapture-of-bahia-de-todos-los-santos/6097f5ec-0faa-46b4-bee6-aa48043ab2c1
+      source: museo-del-prado-coleccion
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q9067298
+  materials:
+    - accessed: 2026-11-03
+      property: P186
+      wikidata: Q9067298
+  dimensions:
+    - accessed: 2026-11-03
+      property: P2048
+      wikidata: Q9067298
+  institution:
+    - accessed: 2026-11-03
+      property: P195
+      wikidata: Q9067298
+  inventory_number:
+    - accessed: 2026-11-03
+      property: P217
+      wikidata: Q9067298

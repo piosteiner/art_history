@@ -1,0 +1,82 @@
+public_id: 115054
+title_lang: de
+title: Sitzendes Mädchen mit Pfirsich
+names:
+  - lang: de
+    role: translation
+    text: Sitzendes Mädchen in blauem Mantel
+  - lang: en
+    role: translation
+    text: Seated Girl with Peach
+creator: max-gubler
+created: 1925
+kind: oil painting
+medium: Oil on canvas
+dimensions: [108, 89]
+institution: kunsthaus-zurich
+inventory_number: 1971/0028
+web_url: https://collection.kunsthaus.ch/de/collection/item/1942/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586487
+provenance:
+  - owner: person/han-coray
+    acquired: 1962-09-01 or earlier
+    place: agnuzzo
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1942/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 451; Kat. Galleria Castelnuovo Ascona 1967, Abb. auf der Katalogrückseite: Inhaberin der Galerie war die Tochter von Han Coray, Trudi Neuburg-Coray, S. 2: Danksagung unter anderem an Han Coray und an Hans Soraperra; Kat. Museum zu Allerheiligen Schaffhausen 1962, No. 26, S. 36."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hans-johann-soraperra-blattmann
+    acquired: 1967
+    ended: 1969
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1942/
+        note: "Footnote: Stempel auf der Werkrückseite: «Sammlung Johann Soraperra-Blattmann Zurich 1969»; Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 3; Frauenfelder/Hess/Mannhart 1997, Bd. I, No. 118, S. 174."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1971
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1942/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: I.118
+    label: Frauenfelder (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1942/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1942/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1942/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1942/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1942/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1942/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1942/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,55 @@
+public_id: 115249
+name: Emanuel Murant
+given_name: Emanuel
+family_name: Murant
+birth: 1622-12-22
+death: 1700
+wikidata_id: Q765989
+metadata:
+  sources: [Wikidata Q765989 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q765989
+  - type: born_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P19
+        wikidata: Q765989
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q765989
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q765989
+  - type: student_of
+    to: artist/philips-wouwerman
+    sources:
+      - accessed: 2026-11-03
+        property: P1066
+        wikidata: Q765989
+identifiers:
+  bnf: 14917708v
+  gnd: "133445917"
+  rkd: "58523"
+  ulan: "500006539"
+  viaf: "60270865"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q765989
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q765989

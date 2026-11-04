@@ -30,6 +30,7 @@ names:
     role: translation
     text: Гельветическая республика
 period: 1798-04-12/1803-02-19
+country_codes: [CH]
 wikidata_id: Q206696
 metadata:
   sources: [Wikidata Q206696 (retrieved 2026-10-29)]

@@ -1,0 +1,174 @@
+public_id: 114897
+title_lang: de
+title: Blick über das Haarlemer Meer
+names:
+  - lang: en
+    role: translation
+    text: View over the Haarlemer Meer
+  - lang: en
+    role: translation
+    text: Vue sur la mer de Haarlem
+  - lang: en
+    role: former
+    text: Flusslandschaft
+  - lang: en
+    role: former
+    text: Haarlemer Meer mit der Stadt im Hintergrund
+  - lang: en
+    role: former
+    text: Spaarne by Harlem
+  - lang: de
+    role: former
+    text: Am Spaarne in Haarlem
+  - lang: en
+    role: former
+    text: Auf dem Spaarne bei Haarlem
+  - lang: en
+    role: former
+    text: Wasserlandschaft mit Segler bei Harlem
+  - lang: en
+    role: original
+    text: Gezicht over het Haarlemmermeer
+creator: jan-van-goyen
+created: 1646
+kind: oil painting
+medium: Oil on oak panel
+dimensions: [37, 62]
+institution: kunsthaus-zurich
+inventory_number: R 9
+web_url: https://collection.kunsthaus.ch/de/collection/item/1065/
+on_loan: true
+on_loan_since: 1949
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q123464393
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/57/Jan_van_Goyen_-_Blick_%C3%BCber_das_Haarlemer_Meer_-_R_9_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jan_van_Goyen_-_Blick_%C3%BCber_das_Haarlemer_Meer_-_R_9_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jan van Goyen
+provenance:
+  - owner: person/charles-william-dowdeswell
+    direct: true
+    place: london
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1065/
+        note: "Footnote: Beck II.1973, S. 243-244, Nr. 520."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hugh-percy-lane
+    role: dealer
+    ended: 1903 or later
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1065/
+        note: "Footnote: Hofstede de Groot 1923, S. 36, Kat.-Nr. 130; Beck II.1973, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alfred-schindler
+    ended: 1926-07-13
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1065/
+        note: "Footnote: ZKG/KHZ, Werkdossier, Rechnung, Galerie Katz an Leopold Ruzicka, 11.09.1947; Beck II.1973, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/frederik-muller-cie
+    role: agent
+    acquired: 1926-07-13
+    ended: 1926-07-13
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Lot 665; Versteigerung Sammlung Schindler
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1065/
+        note: "Footnote: ZKG/KHZ, Werkdossier, handschriftliche Notiz von Leopold Ruzicka: «Eigentümer Firma Frederik Muller, A’dam, Slg Alfred Schindler, Wien (…) versteigert (…) bei Frederik Muller, A’dam, für 10200 (…) an van Burren»; Beck II.1973, wie oben Fussnote 2: «Versteigerung Alfred Schindler aus Wien in Amsterdam am 13.7.1926 Nr. 665 mit Abb. (fl 10200 van Buren)»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: van Buren
+    acquired: 1926-07-13
+    method: purchase
+    direct: true
+    place: the-hague
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1065/
+        note: "Footnote: Beck II.1973, wie oben Fussnote 2; ZKG/KHZ Werkdossier, wie oben Fussnote 7: «N°=665: 'steht im Haag'». «Van Buren» konnte bislang nicht identifiziert werden. Es könnte sich hierbei um Alexander N.C.S. van Buren (1854–1941) handeln."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/nathan-katz
+    role: dealer
+    ended: 1947
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1065/
+        note: "Footnote: Beck II.1973, wie oben Fussnote 2; ZKG/KHZ Werkdossier, wie oben Fussnote 7: «erworben 1947 von Galerie Katz»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1947
+    ended: 1948-12-27
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1065/
+        note: "Footnote: ZKG/KHZ Werkdossier, wie oben Fussnote 7; Sitzungsprotokoll der Sammlungskommission, 23.12.1948 I., Archiv ZKG/KHZ, 10.30.10.42; Zürcher Kunstgesellschaft 1949 Jahresbericht; Beck II.1973, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1948-12-27
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1065/
+        note: "Footnote: Wie oben Fussnote 11; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 98."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1065/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: II.243-244.520.
+    label: Beck 1973 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1065/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1065/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1065/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1065/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1065/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1065/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1065/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1065/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

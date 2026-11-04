@@ -34,6 +34,7 @@ names:
     role: translation
     text: Королевство Италия
 period: 961/1806-08-06
+country_codes: [IT]
 wikidata_id: Q838931
 metadata:
   sources: [Wikidata Q838931 (retrieved 2026-10-29)]

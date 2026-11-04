@@ -1,0 +1,18 @@
+public_id: 113348
+name: Cheomhae Isageum of Silla (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 첨해이사금
+  - lang: ko-Hani
+    role: alternative
+    text: 沾解尼師今
+category: calendar
+definition: "The reign years of Cheomhae Isageum of Silla (沾解尼師今, 첨해이사금), by which Korean histories date 247–261: 247 is Cheomhae Isageum 1, 261 Cheomhae Isageum 15."
+description_md: |-
+  **Cheomhae Isageum** (沾解尼師今, 첨해이사금): the years of the reign of Cheomhae Isageum of Silla. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 256 is Cheomhae Isageum 10 (첨해이사금 10년). The year of the accession, 247, counts as the first year.
+
+  Before: [[jobun-isageum-silla-reign-years|Jobun Isageum]]. After: [[michu-isageum-silla-reign-years|Michu Isageum]].
+sources:
+  definition:
+    - source: dila-time-authority

@@ -1,0 +1,18 @@
+public_id: 113333
+name: Gongmin of Goryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 공민왕
+  - lang: ko-Hani
+    role: alternative
+    text: 恭愍王
+category: calendar
+definition: "The reign years of King Gongmin of Goryeo (恭愍王, 공민왕), by which Korean histories date 1352–1374: 1352 is Gongmin 1, 1374 Gongmin 23."
+description_md: |-
+  **Gongmin** (恭愍王, 공민왕): the years of the reign of [[person/gongmin-of-goryeo|King Gongmin]] of Goryeo. The Goryeosa, the history of Goryeo, dates events by the reigning king's year ([[korean-reign-years]]): 1361 is Gongmin 10 (공민왕 10년). The year of the accession, 1352, counts as the first year.
+
+  Before: [[chungjeong-goryeo-reign-years|Chungjeong]]. After: [[u-goryeo-reign-years|U]].
+sources:
+  definition:
+    - source: dila-time-authority

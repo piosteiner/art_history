@@ -1,0 +1,119 @@
+public_id: 115463
+title_lang: de
+title: Stehende Heilige mit Buch
+names:
+  - lang: en
+    role: translation
+    text: Standing Saint with Book
+creator: peter-dell-the-elder
+created: c. 1525
+created_span: uncertain
+kind: sculpture
+medium: Limewood with polychromy
+dimensions: [103, 33, 19.5]
+institution: kunsthaus-zurich
+inventory_number: 1944/0025
+web_url: https://collection.kunsthaus.ch/de/collection/item/3956/
+on_loan: true
+on_loan_since: 1944
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/johannes-noll
+    ended: 1928
+    place: frankfurt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3956/
+        note: "Footnote: Auktion Helbing (12.06.1928), Lot 97 (https://doi.org/10.11588/diglit.20557). Die Figur wurde 1921 bei der Ausstellung «Mittelalterliche Bildwerke aus Frankfurter Privatbesitz» des Frankfurter Kunstvereins gezeigt und im Katalog (Kat. Frankfurter Kunstverein 1921, S. 24, Nr. 111) abgebildet, aber ohne Angabe zur konkreten Provenienz."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hugo-helbing
+    role: agent
+    acquired: 1928-06-12
+    ended: 1928-06-12
+    method: auction
+    direct: true
+    place: frankfurt
+    label: Lot 97; als Hans Leinberger
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3956/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/friedrich-andreae
+    acquired: 1929 or earlier
+    ended: 1944
+    method: purchase
+    place: berlin
+    label: Berlin and Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3956/
+        note: "Footnote: Kaufvertrag, 31.08.1944, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.145: «Herr Fritz Andreae erklärt ausdrücklich mit voller Haftbarkeit in Bezug auf die gegenwärtigen, ihm bekannten kriegsbedingten Eigentumsnachweise beim Handel mit Kunstwerken, dass er alle die oben genannten Werke in den 20er Jahren im deutschen Kunsthandel erworben und bei Anlass seines Umzuges nach Zürich mit behördli…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/adolf-johr
+    acquired: 1944-09-11 or earlier
+    ended: 1953
+    method: purchase
+    direct: true
+    place: zurich
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3956/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg.: «1955 laut Aussage v. Frau Dr. Jöhr nun dem Kunsthaus gehörend»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/fides-treuhand-vereinigung
+    acquired: 1944-09-11
+    ended: 1955
+    direct: true
+    place: zurich
+    label: «treuhänderisch namens und im Auftrag eines ungenannten Eigentümers»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3956/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; Sitzungsprotokoll der Sammlungskommission, 11.10.1944, S. 3, II.3., Archiv ZKG/KHZ, 10.30.10.42; Leihgabe-Vertrag der Zürcher Kunstgesellschaft zu Leihgabe Inv.-Nr. 1944/24, 11.09.1944, ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1955
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3956/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

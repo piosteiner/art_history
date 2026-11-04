@@ -1,0 +1,65 @@
+public_id: 113465
+title_lang: en
+title: Fuji Seen from Kanaya on the Tōkaidō
+names:
+  - lang: ja
+    role: original
+    text: 東海道金谷の不二
+  - Tōkaidō Kanaya no Fuji
+  - The Fuji seen from Kanaya on the Tokaido
+  - lang: en
+    role: original
+    text: The Fuji from Kanaya on the Tokaido
+  - lang: fr
+    role: translation
+    text: Le Fuji depuis Kanaya dans la région de Tōkaidō
+  - lang: de
+    role: translation
+    text: Fuji gesehen von Kanaya an der Tokaido-Straße
+  - lang: es
+    role: translation
+    text: El Fuji desde Kanaya en la Tōkaidō
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 東海道金谷の不二
+parent: thirty-six-views-of-mount-fuji
+part_number: "45"
+creator: katsushika-hokusai
+created: 1830/1832
+created_label: c. 1830–1832
+created_span: uncertain
+institution: metropolitan-museum-of-art
+inventory_number: JP2975
+web_url: https://www.metmuseum.org/art/collection/search/56365
+wikidata_id: Q18173436
+metadata:
+  sources: [Wikidata Q18173436 (retrieved 2026-11-03)]
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/original/DP141070.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/56365
+    license: Public domain
+    credit: The Metropolitan Museum of Art
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173436
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173436
+  created:
+    - url: https://www.metmuseum.org/art/collection/search/56365
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173436
+  institution:
+    - url: https://www.metmuseum.org/art/collection/search/56365
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.metmuseum.org/art/collection/search/56365
+      source: metropolitan-museum-collection
+      accessed: 2026-11-03

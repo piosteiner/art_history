@@ -1,0 +1,112 @@
+public_id: 115152
+title_lang: de
+title: Bildnis Königs Philipp IV [verbrannt]
+names:
+  - lang: fr
+    role: translation
+    text: Portrait King Philipp IV [destroyed]
+creator: peter-paul-rubens
+created: 1628
+kind: oil painting
+medium: Oil
+dimensions: [78.5, 62.5]
+institution: kunsthaus-zurich
+inventory_number: R 28
+web_url: https://collection.kunsthaus.ch/de/collection/item/2541/
+on_loan: true
+on_loan_since: 1949
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/james-hamilton-of-hamilton
+    label: Hamilton Palace
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2541/
+        note: "Footnote: Ausst.-Kat. Königliches Museum der Schönen Künste, Antwerpen 1977, S. 191, Nr. 81."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1882-06-17
+    ended: 1882-06-17
+    method: auction
+    place: london
+    label: Lot 22
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2541/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alfred-beit
+    ended: 1906-07-16 or earlier
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2541/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/otto-john-beit
+    ended: 1930-12-07 or earlier
+    method: inheritance
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2541/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/c-marshall-spink
+    role: agent
+    acquired: 1949-06-06
+    ended: 1949-12-14
+    place: london
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2541/
+        note: "Footnote: ZKG/KHZ Ruzicka-Akten, Abrechnung Ruzicka-Stiftung 1949, S. 5; ZKG/KHZ Ruzicka-Akten, Korrespondenz Spink, Brief 06.06.1949: «I DECLARE that the Portrait of PHILIP IV by RUBENS from the Collection of Sir Alfred Beit becomes the property of Professor Ruzicka, President of the Ruzicka Foundation upon the payment in full of Seven thousand five hundred pounds (£ 7,500) to my account.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1949-12-14
+    ended: 1985-06-13
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2541/
+        note: "Footnote: ZKG/KHZ Ruzicka-Akten, Abrechnung, wie oben Fussnote 6. Das Gemälde fiel am 13. Juni 1985 einem Brandanschlag zum Opfer."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2541/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2541/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2541/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2541/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2541/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2541/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2541/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2541/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

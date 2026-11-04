@@ -1,0 +1,18 @@
+public_id: 113312
+name: Jeongjong of Goryeo (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 정종
+  - lang: ko-Hani
+    role: alternative
+    text: 靖宗
+category: calendar
+definition: "The reign years of King Jeongjong of Goryeo (靖宗, 정종), by which Korean histories date 1035–1046: 1035 is Jeongjong 1, 1046 Jeongjong 12."
+description_md: |-
+  **Jeongjong** (靖宗, 정종): the years of the reign of King Jeongjong of Goryeo. The Goryeosa, the history of Goryeo, dates events by the reigning king's year ([[korean-reign-years]]): 1044 is Jeongjong 10 (정종 10년). The year of the accession, 1035, counts as the first year.
+
+  Before: [[deokjong-goryeo-reign-years|Deokjong]]. After: [[munjong-goryeo-reign-years|Munjong]].
+sources:
+  definition:
+    - source: dila-time-authority

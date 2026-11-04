@@ -1,0 +1,15 @@
+public_id: 113113
+name: Wende
+names:
+  - lang: zh
+    role: original
+    text: 文德
+category: calendar
+definition: "Chinese era name (文德) of the Tang for the year 888: 888 is Wende 1 (元年), its only year."
+description_md: |-
+  **Wende** (文德) is a Chinese era name ([[nianhao]]) of the Tang, proclaimed in 888 under Emperor Xizong (僖宗). Its years are counted in lunar years: 888 is Wende 1 (元年), its only year.
+
+  Before: [[guangqi-era|Guangqi]]. After: [[longji-era|Longji]].
+sources:
+  definition:
+    - source: dila-time-authority

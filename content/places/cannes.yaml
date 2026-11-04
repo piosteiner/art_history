@@ -1,0 +1,35 @@
+public_id: 115253
+name: Cannes
+names:
+  - lang: ja
+    role: translation
+    text: カンヌ
+  - lang: zh
+    role: translation
+    text: 戛纳
+  - lang: ko
+    role: translation
+    text: 칸
+  - lang: ru
+    role: translation
+    text: Канны
+kind: settlement
+parent: alpes-maritimes
+country_code: FR
+location: [7.02139, 43.5525]
+wikidata_id: Q39984
+metadata:
+  sources: [Wikidata Q39984 (retrieved 2026-11-03)]
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q39984
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q39984
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q39984

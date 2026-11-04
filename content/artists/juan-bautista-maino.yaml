@@ -1,0 +1,18 @@
+public_id: 113395
+name: Juan Bautista Maíno
+given_name: Juan Bautista
+family_name: Maíno
+birth: 1581-10-15
+death: 1649-04-01
+wikidata_id: Q2555566
+metadata:
+  sources: [Wikidata Q2555566 (retrieved 2026-11-03)]
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q2555566
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q2555566

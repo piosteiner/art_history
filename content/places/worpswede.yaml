@@ -1,0 +1,24 @@
+public_id: 112497
+name: Worpswede
+kind: settlement
+parent: germany
+country_code: DE
+location: [8.92778, 53.22222]
+wikidata_id: Q269174
+metadata:
+  sources: [Wikidata Q269174 (retrieved 2026-11-03)]
+identifiers:
+  gnd: 4066947-6
+sources:
+  kind:
+    - accessed: 2026-11-03
+      property: P31
+      wikidata: Q269174
+  parent:
+    - accessed: 2026-11-03
+      property: P131
+      wikidata: Q269174
+  location:
+    - accessed: 2026-11-03
+      property: P625
+      wikidata: Q269174

@@ -1,0 +1,68 @@
+public_id: 113439
+title_lang: en
+title: Mitsui Shop at Surugachō in Edo
+names:
+  - lang: ja
+    role: original
+    text: 江都駿河町三井見世略図
+  - lang: ja
+    role: original
+    text: 江都駿河町三井見世略圖
+  - Kōto Suruga-chō Mitsui-mise Ryakuzu
+  - Mitsui Shop at Suruga-chō in Edo
+  - lang: en
+    role: original
+    text: A sketch of the Mitsui shop in Suruga street in Edo
+  - lang: fr
+    role: translation
+    text: Un croquis des magasins Mitsui dans la rue Suruga à Edo
+  - lang: de
+    role: translation
+    text: Szene von den Mitsui-Läden bei Sarugacho in Edo
+  - lang: es
+    role: translation
+    text: Croquis de la tienda Mitsui de la calle Suruga en Edo
+  - lang: ja
+    role: original
+    text: 富嶽三十六景 江都駿河町三井見世略図
+parent: thirty-six-views-of-mount-fuji
+part_number: "21"
+creator: katsushika-hokusai
+created: 1830/1833
+created_label: c. 1830–1833
+created_span: uncertain
+institution: art-institute-of-chicago
+inventory_number: "1925.3264"
+web_url: https://www.artic.edu/artworks/24712
+wikidata_id: Q18173406
+metadata:
+  sources: [Wikidata Q18173406 (retrieved 2026-11-03)]
+images:
+  - url: https://www.artic.edu/iiif/2/b36f8b14-b299-c299-bfa0-5859d91deba6/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/24712
+    license: Public domain
+    credit: Art Institute of Chicago, Clarence Buckingham Collection
+sources:
+  names:
+    - accessed: 2026-11-03
+      wikidata: Q18173406
+  parent:
+    - accessed: 2026-11-03
+      property: P179
+      wikidata: Q18173406
+  created:
+    - url: https://www.artic.edu/artworks/24712
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  creator:
+    - accessed: 2026-11-03
+      property: P170
+      wikidata: Q18173406
+  institution:
+    - url: https://www.artic.edu/artworks/24712
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://www.artic.edu/artworks/24712
+      source: art-institute-of-chicago-collection
+      accessed: 2026-11-03

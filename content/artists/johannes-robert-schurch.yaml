@@ -1,0 +1,46 @@
+public_id: 115285
+name: Johannes Robert Schürch
+given_name: Johannes Robert
+family_name: Schürch
+birth: 1895-11-18
+death: 1941-05-14
+wikidata_id: Q1695991
+metadata:
+  sources: [Wikidata Q1695991 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q1695991
+  - type: died_in
+    to: place/ascona
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q1695991
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/37/Johann_Robert_Sch%C3%BCrch_Selbstportrait_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Robert_Sch%C3%BCrch_Selbstportrait_1.jpg
+    license: Public domain
+    credit: Johann Robert Schürch
+identifiers:
+  bnf: "125316522"
+  gnd: "118920456"
+  hls: "022638"
+  idref: "231720556"
+  lc: n88081211
+  rkd: "71384"
+  sikart: "4000078"
+  ulan: "500008621"
+  viaf: "208895642"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q1695991
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q1695991

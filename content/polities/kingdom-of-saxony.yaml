@@ -30,6 +30,7 @@ names:
     role: translation
     text: Королевство Саксония
 period: 1806-12-20/1918-11-11
+country_codes: [DE]
 wikidata_id: Q153015
 metadata:
   sources: [Wikidata Q153015 (retrieved 2026-10-29)]

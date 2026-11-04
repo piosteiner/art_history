@@ -8,6 +8,7 @@ names:
     role: translation
     text: Генерал-губернаторство Средний Рейн
 period: 2 February 1814 – 1815
+country_codes: [DE]
 wikidata_id: Q1501803
 metadata:
   sources: [Wikidata Q1501803 (retrieved 2026-10-29)]

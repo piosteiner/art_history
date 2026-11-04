@@ -1,0 +1,88 @@
+public_id: 115576
+title_lang: fr
+title: Le Pont Saint-Antoine à Clisson
+names:
+  - lang: de
+    role: translation
+    text: Antonius-Brücke in Clisson
+  - lang: en
+    role: translation
+    text: The Bridge Saint-Antoine in Clisson
+creator: camille-bombois
+kind: oil painting
+medium: Oil on canvas
+dimensions: [65, 81]
+institution: kunsthaus-zurich
+inventory_number: "2436"
+web_url: https://collection.kunsthaus.ch/de/collection/item/691/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586335
+provenance:
+  - owner: person/wilhelm-uhde
+    role: dealer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/691/
+        note: "Footnote: Brief Walter Feilchenfeldt an Wilhelm Wartmann, 26.12.1937, Archiv ZKG/KHZ, Akten Sammlungskommission zur Sitzung 29.01.1938, 10.30.10.54: «eine Frankfurter Dame, die ich neulich in Paris sprach, besitzt ein Bild von Vivin und eines von Bombois, die sie vor Jahren einmal bei oder durch Wilhelm Uhde gekauft hat. Die Dame, die Deutschland verlassen hat und jetzt in Paris lebt, möchte gern diese beid…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: private collection
+    ended: 1938-03-24
+    method: purchase
+    direct: true
+    place: frankfurt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/691/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/paul-cassirer-co-amsterdam
+    role: agent
+    acquired: 1938
+    ended: 1938
+    direct: true
+    place: amsterdam
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/691/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1938-03-24
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 750
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/691/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/691/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/691/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/691/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/691/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/691/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/691/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

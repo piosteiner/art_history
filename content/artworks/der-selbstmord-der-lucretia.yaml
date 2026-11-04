@@ -1,0 +1,119 @@
+public_id: 115627
+title_lang: de
+title: Der Selbstmord der Lucretia
+names:
+  - lang: en
+    role: translation
+    text: Lucretia
+  - lang: fr
+    role: translation
+    text: Le Suicide de Lucrèce
+creator: joos-van-cleve
+created: 1515/1518
+kind: oil painting
+medium: Oil on oak panel
+dimensions: [47.7, 35.3]
+institution: kunsthaus-zurich
+inventory_number: R 6
+web_url: https://collection.kunsthaus.ch/de/collection/item/99/
+on_loan: true
+on_loan_since: 1948
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586229
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/52/Joos_van_Cleve_-_Der_Selbstmord_der_Lucretia_-_R_6_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Joos_van_Cleve_-_Der_Selbstmord_der_Lucretia_-_R_6_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Joos van Cleve
+provenance:
+  - owner: person/stefan-auspitz-von-artenegg
+    acquired: 1925 or earlier
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/99/
+        note: |-
+          Footnote: Vgl. Lillie 2003, S. 113-136; Hand 2004 47.21; Friedländer 1931, Bd. 9, S. 49; Archiv Bachstitz Gallery, RKD Nederlands Instituut voor Kunstgeschiedenis, Index of the Baldass Catalogue of the v. Auspitz Collection; Baldass 1925, S. 20.
+          Stefan Auspitz führte das Bankhaus Auspitz, Lieben & Co. in Wien. Infolge der Weltwirtschaftskrise 1931 ging es in Konkurs und er haftete mit seinem persönlichen Ve…
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/kurt-walter-bachstitz
+    ended: 1948-10-12
+    method: purchase
+    direct: true
+    place: the-hague
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/99/
+        note: |-
+          Footnote: Stefan Auspitz verkaufte einen großen Teil der Sammlung infolge eines Konkurses an den Kunsthändler Kurt Walter Bachstitz in Den Haag (1931), vgl. https://www.proveana.de/de/link/col10000139 (21.12.2021); Beatrix Piezonka, Erwerbungen des DLM Offenbach in den Jahren 1933-1945, DZK-Abschlussbericht, Projekt-ID LA05-II2010, vgl. https://www.proveana.de/de/link/pro10000025 (21.12.2021). 
+          Kurt Walter …
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/leopold-ruzicka
+    acquired: 1948-10-12
+    ended: 1948-12-27
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/99/
+        note: "Footnote: Durch die Vermittlung des damaligen Kunsthaus Direktor, Dr. Wartmann, erwarb Leopold Ruzicka das Werk von van Cleve. Dafür wurde am 12. Oktober 1948 ein Check des Schweizerischen Bankvereins durch Dr. Wartmann, persönlich gegen Quittung, an Walter Bachstitz überreicht. Ausserdem wurde am 26. Nov. 1948 Geld von Ruzickas Konto beim Schweizerischen Bankverein Zürich auf das Konto von Herrn Bachstitz …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/ruzicka-stiftung
+    acquired: 1948-12-27
+    ended: 2005
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/99/
+        note: "Footnote: ZKG/KHZ Ruzicka-Akten, Abrechnung, wie oben Fussnote 6; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 32."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/99/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "47.21"
+    label: Hand 2004 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/99/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/99/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/99/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/99/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/99/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/99/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/99/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/99/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

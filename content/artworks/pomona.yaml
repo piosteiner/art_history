@@ -1,0 +1,117 @@
+public_id: 115516
+title_lang: en
+title: Pomona
+creator: aristide-maillol
+created: 1922
+kind: sculpture
+medium: Bronze
+dimensions: [88.5, 27, 19]
+institution: kunsthaus-zurich
+inventory_number: 1968/0050
+web_url: https://collection.kunsthaus.ch/de/collection/item/5425/
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/fonderie-valsuani
+    role: foundry
+    acquired: 1922
+    ended: 1922
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5425/
+        note: "Footnote: Bibliothèques & Archives, Lausanne, P610, Korrespondenz carton 17 lettre b."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alfred-flechtheim
+    ended: 1937 or earlier
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5425/
+        note: "Footnote: E-Mail Sandra Sykora (Galerie Fischer, Luzern), 18.01.2023: «Herkunft von Flechtheim Berlin wird in einem (nicht unterzeichneten) Schreiben der Galerie Fischer an Paul Vallotton vom 14. September 1949 bestätigt»; Bibliothèques & Archives, wie oben Fussnote 2: «D’autre part nous vous informons que le propriétaire [Flechtheim=?] de ces bronzes est très pressé de les réaliser, aussi nous croyons que …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: dealer
+    ended: 1949-11-05
+    place: lucerne
+    label: inv. no. 4154
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5425/
+        note: "Footnote: E-Mail Sandra Sykora (Galerie Fischer, Luzern) wie oben Fussnote 4; E-Mail Bibliothèques & Archives Lausanne, Dekens, 01.06.2022 : «Quant à l’œuvre de Maillol, je peux vous confirmer qu’elle a bien été vendue par la Galerie Vallotton à M. Bär le 5 novembre 1949 après l’avoir achetée à la Galerie Fischer le 5 novembre.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-paul-vallotton
+    role: agent
+    acquired: 1949-11-05
+    ended: 1949-11-05
+    direct: true
+    place: lausanne
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5425/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/werner-bar
+    co_owners: [person/nelly-bar]
+    acquired: 1949-11-05
+    ended: 1960
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5425/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/nelly-bar
+    acquired: 1960
+    ended: 1968
+    direct: true
+    place: zurich
+    label: Zürich, Erbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5425/
+        note: "Footnote: ZKG/KHZ, Werkdossier; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 590."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1968
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5425/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5425/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5425/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5425/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5425/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5425/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5425/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5425/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

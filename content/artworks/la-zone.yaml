@@ -1,0 +1,90 @@
+public_id: 115517
+title_lang: fr
+title: La Zone
+names:
+  - lang: de
+    role: translation
+    text: Die Zone
+  - lang: en
+    role: translation
+    text: The Zone
+creator: otto-banninger
+created: 1936
+kind: sculpture
+medium: Bronze
+dimensions: [38, 25, 26]
+institution: kunsthaus-zurich
+inventory_number: 1968/0043
+web_url: https://collection.kunsthaus.ch/de/collection/item/550/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: person/max-kaganovitch
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/550/
+        note: "Footnote: Werner und Nelly Bär 1965 (Sammlungskatalog), S. 234."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/werner-bar
+    co_owners: [person/nelly-bar]
+    acquired: 1937
+    ended: 1960
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/550/
+        note: "Footnote: Wie oben Fussnote 3; Kat. Stockholm et al. 1950, Kat. Nr. 34."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/nelly-bar
+    acquired: 1960
+    ended: 1968
+    direct: true
+    place: zurich
+    label: Zürich, Erbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/550/
+        note: "Footnote: Werkdossier; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 444."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1968
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/550/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/550/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/550/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/550/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/550/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/550/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/550/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/550/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

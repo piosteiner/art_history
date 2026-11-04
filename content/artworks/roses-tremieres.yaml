@@ -1,0 +1,212 @@
+public_id: 115585
+title_lang: en
+title: Roses trémières
+names:
+  - lang: en
+    role: translation
+    text: Malven
+  - lang: en
+    role: translation
+    text: Hollyhocks
+creator: vincent-van-gogh
+created: 1886
+kind: oil painting
+medium: Oil on canvas
+dimensions: [91, 50.5]
+institution: kunsthaus-zurich
+inventory_number: "2414"
+web_url: https://collection.kunsthaus.ch/de/collection/item/740/
+on_loan: true
+on_loan_since: 1933
+provenance_status: c_indications
+provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q4008948
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/ca/Vincent_van_Gogh_-_Roses_tr%C3%A9mi%C3%A8res_-_2414_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Roses_tr%C3%A9mi%C3%A8res_-_2414_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: person/eugene-blot
+    ended: 1906-05-10
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/740/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1900-05-09
+    ended: 1900-05-09
+    method: auction
+    direct: true
+    place: paris
+    label: Vente Blot; Lot 162; zurück
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/740/
+        note: "Footnote: Wie oben Fussnote 2; Auktion Hôtel Drouot Paris (09.-10.05.1900), S. 121, Lot 162."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1906-05-10
+    ended: 1906-05-10
+    method: auction
+    direct: true
+    place: paris
+    label: Vente Blot; Lot 81
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/740/
+        note: "Footnote: Wie oben Fussnote 2; Auktion Hôtel Drouot Paris (10.05.1906), S. 36, Lot 81."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-eugene-druet
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/740/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/bernheim-jeune
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/740/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/adolph-rothermundt
+    acquired: 1907 or earlier
+    ended: 1920 or later
+    place: dresden
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/740/
+        note: "Footnote: Wie oben Fussnote 2; Biedermann 2019, S. 254: «Im Zeitraum bis 1914 waren zudem vier Werke van Goghs Bestandteil der beiden Ausstellungen aus Dresdner Privatbesitz im Sächsischen Kunstverein: 1907 […] als Eigentum von Adolf Rothermundt das Ölbild Blumen, welches sich heute unter dem Titel Malven im Kunsthaus Zürich befindet (Abb. 4) […].»; S. 256: «Insgesamt lassen sich fünf Ölbilder und ein Aquar…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-caspari
+    role: dealer
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/740/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/ludwig-katzenellenbogen
+    ended: 1928
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/740/
+        note: "Footnote: Wie oben Fussnote 2; Kat. Neue Galerie, Wien 1933, Nr. 34 (Malven), Besitzerangaben: «Slg. Katzenellenbogen, Berlin»; Korrespondenz, Feilchenfeldt, 06.06.2023: «Aus steuerlichen Gründen nach 1928 an die Gattin übertragen und von dieser nach Amsterdam geschickt (Eingang im Lagerbuch Paul Cassirer Amsterdam, am 1.4.1932 [...]»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/tilla-durieux
+    acquired: 1932-04-01 or earlier
+    ended: 1937-05
+    direct: true
+    place: berlin
+    label: Berlin and Abbazzia
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/740/
+        note: "Footnote: Wie oben Fussnote 2; Korrespondenz, wie oben Fussnote 15."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/paul-cassirer-co-amsterdam
+    role: dealer
+    acquired: 1932-04-01
+    ended: 1937-03-19
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/740/
+        note: "Footnote: Wie oben Fussnote 16."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/neue-galerie-vienna
+    role: dealer
+    acquired: 1933-02
+    ended: 1933-03
+    direct: true
+    place: vienna
+    label: Ausstellung «Französische Impressionisten»; Nr. 34 (Malven)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/740/
+        note: "Footnote: Kat. Neue Galerie 1933, wie oben Fussnote 15: Korrespondenz, wie oben Fussnote 15."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/museum-boijmans-van-beuningen
+    acquired: 1933-12-20
+    ended: 1934-01-21
+    direct: true
+    place: rotterdam
+    label: Ausstellung «Schilderijen van Delacroix tot Cezanne en Vincent van Gogh»; Nr. 36 (Malven)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/740/
+        note: "Footnote: Korrespondenz, wie oben Fussnote 15."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunsthalle-bern
+    acquired: 1934-02-18
+    ended: 1934-04-02
+    direct: true
+    place: bern
+    label: Ausstellung «Französische Malerei des 19. Jahrhunderts und van Gogh»; Nr. 60 (Malven)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/740/
+        note: "Footnote: Korrespondenz, wie oben Fussnote 15."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1937-05
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/740/
+        note: "Footnote: Wie oben Fussnote 16; Sitzungsprotokoll der Sammlungskommission, 22.02.1937, I.b, 04.03.1937; 21.04.1937, I.b und 08.12.1937, I.f., Archiv ZKG/KHZ, 10.30.10.41."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "55.235"
+    label: Feilchenfeldt 2013 (catalogue raisonné)
+  - number: "235"
+    label: de la Faille 1970 (catalogue raisonné)
+  - number: "1136"
+    label: JH (catalogue raisonné)
+  - number: S.181
+    label: WM (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/740/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/740/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/740/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/740/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/740/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/740/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/740/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/740/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

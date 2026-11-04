@@ -32,6 +32,7 @@ names:
     role: translation
     text: Арагонская корона
 period: 13 August 1162 – 1715
+country_codes: [ES, IT, FR]
 wikidata_id: Q204920
 metadata:
   sources: [Wikidata Q204920 (retrieved 2026-10-29)]

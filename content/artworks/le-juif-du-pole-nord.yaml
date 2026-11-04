@@ -1,0 +1,95 @@
+public_id: 115467
+title_lang: fr
+title: Le Juif du pôle Nord
+names:
+  - lang: de
+    role: translation
+    text: Der Jude vom Nordpol
+  - lang: en
+    role: translation
+    text: The Jew from the North Pole
+creator: max-ernst
+created: 1928
+kind: oil painting
+medium: Oil on canvas
+dimensions: [53.5, 65]
+institution: kunsthaus-zurich
+inventory_number: 1959/0029
+web_url: https://collection.kunsthaus.ch/de/collection/item/406/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584928
+provenance:
+  - owner: institution/galerie-alfred-flechtheim
+    role: dealer
+    acquired: 1929-03
+    ended: 1929-05
+    place: berlin
+    label: Berlin and Düsseldorf
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/406/
+        note: "Footnote: Kat. Galerie Alfred Flechtheim 1929, S. 12, Nr. 29. Eine Angabe zum Besitz wird hier nicht gemacht. Es ist also nicht klar, ob es sich zu diesem Zeitpunkt in Flechtheims Eigentum oder in Kommission oder nur als Leihgabe bei ihm befunden hat."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: unknown (collector)
+    role: dealer
+    ended: 1934 or earlier
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/406/
+        note: "Footnote: Kopie eines Briefes von Elsa Burckhardt-Blum, 12.01.1960, ZKG/KHZ, Inventarbogen/Werkdossier: «Das Bild habe ich 1936 bei einem inzwischen verschwundenen Kunsthändler gekauft. Max Ernst war seinerzeit sehr erfreut, dass ich dieses Bild erworben hatte und teilte mir mit, dass dieser Kunsthändler ungefähr die Produktion seiner zwei bis drei letzten Jahre besessen hatte.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/elsa-burckhardt-blum
+    acquired: 1934 or earlier
+    ended: 1959
+    direct: true
+    place: kusnacht-zh
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/406/
+        note: |-
+          Footnote: Kat. Kunsthaus Zürich 1934, S. 9, Nr. 25: Max Ernst, Paris, Le Juif du Pôle-Nord, 1927
+          Privatbesitz Küsnacht; Angabe «25» auf der Rückseite des Gemäldes.
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1959
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 15000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/406/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/406/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/406/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/406/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/406/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/406/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/406/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/406/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

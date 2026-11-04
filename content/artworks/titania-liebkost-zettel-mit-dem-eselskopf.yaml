@@ -1,0 +1,119 @@
+public_id: 114970
+title_lang: en
+title: Titania liebkost Zettel mit dem Eselskopf
+names:
+  - lang: de
+    role: translation
+    text: Titania erwacht, von aufwartenden Fairies umgeben und in Verzückung an den eselsköpfigen Bottom geschmiegt
+  - lang: en
+    role: translation
+    text: Titania, Bottom and the Fairies
+  - lang: en
+    role: translation
+    text: Titania enlaçant Bottom à la tête d’âne
+creator: henry-fuseli
+created: 1793/1794
+kind: oil painting
+medium: Oil on canvas
+dimensions: [169, 135]
+institution: kunsthaus-zurich
+inventory_number: "2543"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1342/
+on_loan: true
+on_loan_since: 1941
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q19968926
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/F%C3%BCssli%2C_Johann_Heinrich_-_Titania_liebkost_den_eselk%C3%B6pfigen_Bottom_-_hi_res.jpg/1280px-F%C3%BCssli%2C_Johann_Heinrich_-_Titania_liebkost_den_eselk%C3%B6pfigen_Bottom_-_hi_res.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%BCssli,_Johann_Heinrich_-_Titania_liebkost_den_eselk%C3%B6pfigen_Bottom_-_hi_res.jpg
+    license: Public domain
+    credit: Henry Fuseli
+provenance:
+  - owner: artist/henry-fuseli
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1342/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/susan-north
+    direct: true
+    label: Countess of Guilford (*1771, +1837)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1342/
+        note: "Footnote: Kat. Kunsthaus Zürich 2007, S. 64."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/john-ryder
+    method: inheritance
+    direct: true
+    label: 5th Earl of Harrowby (*1864, +1956); Stafford
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1342/
+        note: "Footnote: Wie oben Fussnote 2; ZKG/KHZ, Werkdossier."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/alfred-kern
+    acquired: 1926-07-18 or earlier
+    direct: true
+    place: cointrin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1342/
+        note: "Footnote: Werkliste Füssli Gemälde, undatiert, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.57; ; Kat. Kunsthaus Zürich 1926, No. 12, S. 7: «Squenz, Zettel mit Eselskopf, Titania, Elfen, Pyramus, Thisbe, Droll und Schnauz»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/fussli-konsortium
+    ended: 1941
+    direct: true
+    place: basel
+    label: Basel and Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1342/
+        note: 'Footnote: Werkliste Füssli Gemälde, 21.07.1941, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.68, als «Sommernachtstraum»; Kat. Kunsthaus Zürich 1941, No. 17, S. 6: «Titania liebkost Zettel mit dem Eselskopf, dabei Squenz, Elfen Pyramus und Thisbe, Droll und Schnauz, Shakespear "Ein Sommernachtstraum" III, 1».'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1941
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1342/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: I.515.885
+    label: Schiff (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

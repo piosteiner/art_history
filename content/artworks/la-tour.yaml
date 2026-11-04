@@ -1,0 +1,160 @@
+public_id: 115616
+title_lang: fr
+title: La Tour
+names:
+  - lang: de
+    role: translation
+    text: Der Turm
+  - lang: en
+    role: translation
+    text: The Tower
+creator: giorgio-de-chirico
+created: 1913
+kind: oil painting
+medium: Oil on canvas
+dimensions: [115.5, 45]
+institution: kunsthaus-zurich
+inventory_number: 1954/0008
+web_url: https://collection.kunsthaus.ch/de/collection/item/980/
+on_loan: true
+on_loan_since: 1954
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585246
+provenance:
+  - owner: person/paul-guillaume
+    role: dealer
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/980/
+        note: "Footnote: Baldacci/Roos 2022, Bd. I, 2, 33, S. 146-148; Baldacci 1997, S. 175, Nr. 36."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/guillaume-apollinaire
+    role: agent
+    place: paris
+    label: intermediary
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/980/
+        note: "Footnote: Baldacci/Roos 2022, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/andre-level
+    acquired: March 1914 or later
+    ended: 1927-03-03
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/980/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1927-03-03
+    ended: 1927-03-03
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 81
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/980/
+        note: "Footnote: Auktion Hôtel Drouot 1927, Lot 81."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/camille-goemans
+    role: dealer
+    acquired: 1927-03-03
+    method: purchase
+    direct: true
+    place: brussels
+    price:
+      amount: 6500
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/980/
+        note: "Footnote: Baldacci/Roos 2022, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/aram-mouradian
+    role: dealer
+    acquired: 1935-03-30 or earlier
+    ended: 4 July 1936 or later
+    method: purchase
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/980/
+        note: "Footnote: Baldacci/Roos 2022, wie oben Fussnote 2; Kat. New Burlington Galleries 1936, Nr. 46; Kat. Musée du Jeu de Paume 1937, Nr. 102. Gemäss Baldacci/Roos 2022, S. 146-148: Erwerb für die Galerie A. D. Mouradian, Paris; laut Baldacci/Roos 2022, S. 149: Mouradian bietet das Werk bereits in einem Brief vom 30. März 1935 Mesens für 2500 FF zum Kauf an."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/bernard-poissonnier
+    role: dealer
+    acquired: July 1937 or earlier
+    ended: 1954-09-09
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/980/
+        note: "Footnote: Baldacci/Roos 2022, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/kunstmuseum-basel
+    acquired: 1949-11-23
+    ended: 1954-09-09
+    direct: true
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/980/
+        note: "Footnote: Vorstandsprotokoll der VZK, 09.09.1954, Archiv ZKG/KHZ, 10.50.20; Baldacci/Roos 2022, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1954-09-09
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 20000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/980/
+        note: "Footnote: Vorstandsprotokoll der VZK, 09.09.1954, wie oben Fussnote 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: I,2.146-149.33
+    label: Baldacci/Roos 2020 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/980/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/980/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/980/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/980/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/980/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/980/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/980/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/980/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

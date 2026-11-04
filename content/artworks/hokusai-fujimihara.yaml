@@ -1,6 +1,7 @@
 public_id: 107947
 title: The Barrel-maker of Fujimihara (Bishū Fujimigahara)
 parent: thirty-six-views-of-mount-fuji
+part_number: "10"
 creator: katsushika-hokusai
 created: c. 1830
 created_span: uncertain
@@ -11,6 +12,7 @@ dimensions: [23.2, 38.1]
 dimensions_note: horizontal ōban
 institution: tokyo-national-museum
 description_md: "From [[artwork/thirty-six-views-of-mount-fuji]], begun in 1823 and completed around 1831: a tiny man kneels inside an enormous barrel, smoothing the joints between its planks, beyond him a parched rice field and, in the far distance, the snow-covered tip of Fuji — the circle of the barrel encloses the craftsman, his work and the beauty of the landscape. [[source/history-of-japanese-art|pp. 290–291, fig. 331]]"
+wikidata_id: Q17210582
 relationships:
   - type: associated_with
     to: movement/edo-period

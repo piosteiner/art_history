@@ -1,0 +1,66 @@
+public_id: 115604
+name: Otto Mueller
+given_name: Otto
+family_name: Mueller
+birth: 1874-10-16
+death: 1930-09-24
+wikidata_id: Q317041
+metadata:
+  sources: [Wikidata Q317041 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q317041
+  - type: died_in
+    to: place/wroc-aw
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q317041
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q317041
+  - type: member_of
+    to: movement/die-brucke
+    period: 1910
+    period_label: from 1910
+    sources:
+      - accessed: 2026-11-03
+        property: P463
+        wikidata: Q317041
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-03
+        property: P135
+        wikidata: Q317041
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/65/Otto_Mueller_-_Self-Portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Otto_Mueller_-_Self-Portrait.jpg
+    license: Public domain
+    credit: Otto Mueller
+identifiers:
+  bnf: 12311100p
+  dome: "275"
+  gnd: "118737554"
+  idref: "031998836"
+  kulturnav: d57828ea-542c-4bd3-9a49-e7b74a5452a8
+  lc: n83180971
+  rkd: "58133"
+  ulan: "500125010"
+  viaf: "25397524"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q317041
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q317041

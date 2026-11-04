@@ -30,6 +30,7 @@ names:
     role: translation
     text: Великое герцогство Баден
 period: 12 July 1806 – 1918
+country_codes: [DE]
 wikidata_id: Q186320
 metadata:
   sources: [Wikidata Q186320 (retrieved 2026-10-29)]

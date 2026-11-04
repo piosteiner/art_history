@@ -29,6 +29,7 @@ names:
     role: translation
     text: Четвёртая французская республика
 period: 1946/1958-10-04
+country_codes: [FR]
 wikidata_id: Q69829
 metadata:
   sources: [Wikidata Q69829 (retrieved 2026-10-29)]

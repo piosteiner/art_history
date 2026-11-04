@@ -1,0 +1,18 @@
+public_id: 113268
+name: Muryeong of Baekje (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 무령왕
+  - lang: ko-Hani
+    role: alternative
+    text: 武寧王
+category: calendar
+definition: "The reign years of King Muryeong of Baekje (武寧王, 무령왕), by which Korean histories date 501–523: 501 is Muryeong 1, 523 Muryeong 23."
+description_md: |-
+  **Muryeong** (武寧王, 무령왕): the years of the reign of King Muryeong of Baekje. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 510 is Muryeong 10 (무령왕 10년). The year of the accession, 501, counts as the first year.
+
+  Before: [[dongseong-baekje-reign-years|Dongseong]]. After: [[seong-baekje-reign-years|Seong]].
+sources:
+  definition:
+    - source: dila-time-authority

@@ -1,0 +1,137 @@
+public_id: 114934
+title_lang: en
+title: Schaffhauser Rheinfall
+names:
+  - lang: en
+    role: translation
+    text: The Rhine Falls near Schaffhausen
+creator: johann-heinrich-wuest
+created: c. 1775
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+dimensions: [126, 88]
+institution: kunsthaus-zurich
+inventory_number: ZKG.2023/0019
+web_url: https://collection.kunsthaus.ch/de/collection/item/1232958/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585082
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/46/Johann_Heinrich_W%C3%BCest_-_Schaffhauser_Rheinfall_-_ZKG.2023-0019_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Heinrich_W%C3%BCest_-_Schaffhauser_Rheinfall_-_ZKG.2023-0019_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Heinrich Wüest
+provenance:
+  - owner: person/salomon-escher-vom-glas
+    acquired: 1775
+    ended: 1806
+    method: commission
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1232958/
+        note: "Footnote: Vuilleumier-Kirschbaum 2015, S. 37."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/hans-heinrich-escher-vom-glas
+    acquired: 1806
+    ended: 1867
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1232958/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/heinrich-escher-vom-glas
+    acquired: 1867
+    ended: 1877
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1232958/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner_label: private collection
+    acquired: 1988 or earlier
+    ended: 1999
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1232958/
+        note: "Footnote: E-Mail-Korrespondenz Peter Mettler, 16.05.2023; Vuilleumier-Kirschbaum 2015, S. 38: Das Werk wurde 1988 wiederentdeckt und befand sich in «Privatbesitz innerhalb der Familie Escher». Der letzte Eigentümer verstarb und das Werke wurde 1999 bei Koller Auktionen Zürich eingeliefert."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/koller-auktionen
+    role: agent
+    acquired: 1999
+    ended: 1999
+    method: auction
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1232958/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/peter-mettler
+    acquired: 1999
+    ended: 2023
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1232958/
+        note: "Footnote: Rechnung, 22.05.2023, Werkdossier, ZKG/KHZ; Vuilleumier-Kirschbaum 2015, wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/klostergut-paradies-der-stiftung-georg-fischer-ag
+    acquired: 2004
+    direct: true
+    place: schaffhausen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1232958/
+        note: "Footnote: Vuilleumier-Kirschbaum 2015, wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2023
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1232958/
+        note: "Footnote: Rechnung, 22.05.2023, Werkdossier ZKG/KHZ."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: "70953"
+    label: SIK (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1232958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1232958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1232958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1232958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1232958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1232958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1232958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

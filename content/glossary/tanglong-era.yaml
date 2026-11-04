@@ -1,0 +1,15 @@
+public_id: 113083
+name: Tanglong
+names:
+  - lang: zh
+    role: original
+    text: 唐隆
+category: calendar
+definition: "Chinese era name (唐隆) of the Tang for the year 710: 710 is Tanglong 1 (元年), its only year."
+description_md: |-
+  **Tanglong** (唐隆) is a Chinese era name ([[nianhao]]) of the Tang, proclaimed in 710 under Emperor Shang (殤帝). Its years are counted in lunar years: 710 is Tanglong 1 (元年), its only year.
+
+  Before: [[jinglong-era|Jinglong]]. After: [[jingyun-era|Jingyun]].
+sources:
+  definition:
+    - source: dila-time-authority

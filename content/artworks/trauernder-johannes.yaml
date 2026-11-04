@@ -1,0 +1,76 @@
+public_id: 115419
+title_lang: en
+title: Trauernder Johannes
+names:
+  - lang: en
+    role: translation
+    text: John Grieving
+attribution_label: Anonymous, France
+created: c. 1300
+created_span: uncertain
+kind: sculpture
+medium: Wood with few parts of older polychromy
+dimensions: [135, 25, 24]
+institution: kunsthaus-zurich
+inventory_number: 1957/0015
+web_url: https://collection.kunsthaus.ch/de/collection/item/3743/
+on_loan: true
+on_loan_since: 1957
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+provenance:
+  - owner: institution/galerie-les-tourette
+    role: dealer
+    ended: 1957
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3743/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; ZKG/KHZ Inventarbogen/Werkdossier; Berichte und Protokolle des Vorstands der VZK, Archiv ZKG/KHZ, 10.50.21."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1957
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 40000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3743/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3743/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3743/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3743/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3743/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3743/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3743/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3743/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3743/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

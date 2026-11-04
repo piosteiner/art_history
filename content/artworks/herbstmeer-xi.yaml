@@ -1,0 +1,125 @@
+public_id: 115183
+title_lang: en
+title: Herbstmeer XI
+names:
+  - lang: de
+    role: translation
+    text: Herbstmeer XI (Küste u. orang. Himmel) (Werkkatalog)
+  - lang: en
+    role: translation
+    text: Autumn Sea XI (Coast and Orange Sky)
+creator: emil-nolde
+created: 1910
+kind: oil painting
+medium: Oil on canvas
+dimensions: [70, 89.5]
+institution: kunsthaus-zurich
+inventory_number: 1950/0002
+web_url: https://collection.kunsthaus.ch/de/collection/item/2682/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585471
+provenance:
+  - owner: person/carl-hagemann
+    acquired: February 1916 or earlier
+    ended: 1940 or earlier
+    method: purchase
+    direct: true
+    place: leverkusen
+    label: 800.00 Mark
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2682/
+        note: |-
+          Footnote: Handliste Nolde «Gemälde-Verzeichnis Dec. 1910», Nr. 321, Archiv Nolde Stiftung Seebüll: hier ist «Dr. Hagemann, Leverkusen» später nachgetragen worden, der das Gemälde für 800 Mark vom Künstler erworben hatte; Kat. Kunstverein Köln 1916, o. S., Nr. 72; Brief von Ernst Gosebruch an Emil Nolde, 27.10.1920, Archiv Nolde Stiftung Seebüll.
+          Unbekannt ist, wie lange es bei Hagemann blieb. Bislang ist ma…
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/rudolf-probst
+    role: dealer
+    acquired: after June 1937
+    direct: true
+    place: dresden
+    label: Dresden and Mannheim
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2682/
+        note: "Footnote: Brief von Ernst Gosebruch an Carl Hagemann, 25.08.1936, in: Delfs 2004, S. 572-573, Nr. 741: «Ich bin bezüglich der Verkaufsmöglichkeiten für die Bilder, die Sie eventuell ausscheiden müssten, nicht so skeptisch. Am Ende ginge das ganz gut mit Hilfe einer Versteigerung in Berlin oder Köln, wo man dann auch, damit die Sache gewichtiger aussieht, noch Werke aus anderen Sammlungen nehmen müsste. Darü…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/hauswedell-nolte
+    role: agent
+    acquired: 1948-02-07
+    ended: 1948-02-07
+    method: auction
+    place: hamburg
+    label: Lot 2240
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2682/
+        note: "Footnote: Auktion Dr. Ernst Hauswedell & Co. 1948, S. 32, Nr. 2240, siehe https://doi.org/10.11588/diglit.48057#0034 (22.05.2025)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/rudolf-frank
+    co_owners: [person/bertha-frank]
+    acquired: 1948-02-07
+    method: purchase
+    direct: true
+    place: mannheim
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2682/
+        note: 'Footnote: Korrespondenz mit Hauswedell & Nolte, 26.11.2007, ZKG/KHZ, Werkdokument, Ordner «Dokumentation der Inventarwerke N-O"; Korrespondenz mit dem ZADIK Köln zu Bestand A 100 Hauswedell & Nolte Auktionen, Hamburg, August 2024.'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: person/chichio-haller
+    role: dealer
+    ended: 1950
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2682/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 596; Urban 1987, S. 343, Nr. 399."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1950
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 3500
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2682/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: I.343.399
+    label: Urban 1987 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2682/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2682/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2682/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2682/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2682/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2682/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2682/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

@@ -1,0 +1,90 @@
+public_id: 114976
+title_lang: de
+title: Anbetung der Heiligen Drei Könige
+names:
+  - lang: en
+    role: translation
+    text: Adoration of the Magi
+  - lang: fr
+    role: translation
+    text: L’Adoration des Mages
+creator: hans-fries
+created: c. 1490
+created_span: uncertain
+kind: oil painting
+medium: Oil on panel
+dimensions: [87, 71]
+institution: kunsthaus-zurich
+inventory_number: "2296"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1378/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586329
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3c/Hans_Fries_-_Anbetung_der_Heiligen_Drei_K%C3%B6nige_-_2296_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_Fries_-_Anbetung_der_Heiligen_Drei_K%C3%B6nige_-_2296_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Hans Fries
+provenance:
+  - owner: person/georges-solpray
+    ended: 1933-08-03
+    place: neuilly-sur-seine
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1378/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 03.08.1933, 3.5, Archiv ZKG/KHZ, 10.30.10.41."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1933-07-24 or earlier
+    ended: 1933-07-31
+    direct: true
+    place: lucerne
+    label: intermediary; on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1378/
+        note: "Footnote: Brief Theodor Fischer, Luzern, an Wilhelm Wartmann, 24.07.1933, Archiv ZKG/KHZ, 10.30.10.46 Akten Sammlungskommission, Sitzung 03.08.1933; Brief Wilhelm Wartmann an Joseph Baumeler, Luzern, 15.09.1933, Archiv ZKG/KHZ, 10.30.20.073, Ausgehende Korrespondenz, S. 120."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1933-08-03
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 12000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1378/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1378/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1378/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1378/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1378/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1378/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1378/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1378/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03

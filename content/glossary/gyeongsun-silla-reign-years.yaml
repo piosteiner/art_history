@@ -1,0 +1,18 @@
+public_id: 113392
+name: Gyeongsun of Silla (reign years)
+names:
+  - lang: ko
+    role: original
+    text: 경순왕
+  - lang: ko-Hani
+    role: alternative
+    text: 敬順王
+category: calendar
+definition: "The reign years of King Gyeongsun of Silla (敬順王, 경순왕), by which Korean histories date 927–935: 927 is Gyeongsun 1, 935 Gyeongsun 9."
+description_md: |-
+  **Gyeongsun** (敬順王, 경순왕): the years of the reign of King Gyeongsun of Silla. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 935 is Gyeongsun 9 (경순왕 9년). The year of the accession, 927, counts as the first year.
+
+  Before: [[gyeongae-silla-reign-years|Gyeongae]].
+sources:
+  definition:
+    - source: dila-time-authority

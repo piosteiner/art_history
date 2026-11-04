@@ -1,0 +1,67 @@
+public_id: 115340
+name: Karl Stauffer-Bern
+given_name: Karl
+family_name: Stauffer-Bern
+birth: 1857-09-02
+death: 1891-01-24
+wikidata_id: Q117489
+metadata:
+  sources: [Wikidata Q117489 (retrieved 2026-11-03)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-03
+        property: P27
+        wikidata: Q117489
+  - type: died_in
+    to: place/florence
+    sources:
+      - accessed: 2026-11-03
+        property: P20
+        wikidata: Q117489
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q117489
+  - type: worked_in
+    to: place/bern
+    sources:
+      - accessed: 2026-11-03
+        property: P937
+        wikidata: Q117489
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    period: 1876/1880
+    sources:
+      - accessed: 2026-11-03
+        property: P69
+        wikidata: Q117489
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Karl_Stauffer-Bern.jpg/1280px-Karl_Stauffer-Bern.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Karl_Stauffer-Bern.jpg
+    license: Public domain
+    credit: Karl Stauffer-Bern
+identifiers:
+  bnf: 14934696c
+  dodis: P25963
+  gnd: 11875288X
+  hls: "012314"
+  idref: "102442843"
+  kulturnav: 212d3d88-046f-4f55-a58e-90e42eab29af
+  lc: n50054049
+  rkd: "74755"
+  sikart: "4022842"
+  ulan: "500000670"
+  viaf: "27334403"
+sources:
+  birth:
+    - accessed: 2026-11-03
+      property: P569
+      wikidata: Q117489
+  death:
+    - accessed: 2026-11-03
+      property: P570
+      wikidata: Q117489

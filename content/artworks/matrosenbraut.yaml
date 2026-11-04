@@ -1,0 +1,72 @@
+public_id: 115396
+title_lang: en
+title: Matrosenbraut
+names:
+  - lang: en
+    role: translation
+    text: Matrosenliebste
+  - lang: en
+    role: translation
+    text: Bride of a Sailor
+creator: otto-dix
+created: 1921
+kind: oil painting
+medium: Oil on canvas on cardboard
+dimensions: [48.5, 32.5]
+institution: kunsthaus-zurich
+inventory_number: 1958/0014
+web_url: https://collection.kunsthaus.ch/de/collection/item/366/
+provenance_status: b_no_indications
+provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585199
+provenance:
+  - owner: person/margarete-bachmann
+    ended: 1958
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/366/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; ZKG/KHZ Inventarbogen/Werkdossier. Eine Anfrage im Stadtarchiv München ergab, dass Frl. Bachmann 1891 in New York geboren wurde, seit 1931 in München wohnte, als städtische Gewerbeoberlehrerin tätig war und bis an ihr Lebensende 1976 in München geblieben war. (Quelle: E-Mail-Korrespondenz Stadtarchiv München, 17.01.2024) Es wird angenommen, dass sie aus Dresden zugezogen…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1958
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/366/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-03
+numbers:
+  - number: 1921/2
+    label: Löffler (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/366/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/366/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/366/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/366/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/366/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/366/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/366/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-03
