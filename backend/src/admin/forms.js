@@ -195,7 +195,9 @@ function emptyChoice(ctx, key) {
   return w ? `${label}: ${(ENUM_LABELS[`${ctx.type}.${key}.${w.region}`] || w.region).replace(/ \(.*\)$/, '')} — from ${BASIS[w.basis] || w.basis}` : label;
 }
 const humanize = (key) => key.replace(/_md$/, '').replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase());
-const fieldLabel = (type, key) => LABELS[`${type}.${key}`] || humanize(key);
+// labels the same for every type, where humanize() gets the capitals wrong ("Isbn", "Website url")
+const COMMON_LABELS = { wikidata_id: 'Wikidata ID', website_url: 'Website', isbn: 'ISBN', doi: 'DOI', web_url: 'Web page' };
+const fieldLabel = (type, key) => LABELS[`${type}.${key}`] || COMMON_LABELS[key] || humanize(key);
 
 // doc → the string values the inputs show.
 function docToForm(doc, fields) {

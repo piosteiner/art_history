@@ -190,6 +190,10 @@ function initNamesEditor(ta) {
     r.append(panel, preview);
     remove.addEventListener('click', () => { r.remove(); write(); });
     for (const x of [text, lang, role, period, note]) x.addEventListener('input', write);
+    // a row without a name shows only the name field — language, role, kind, period and note come with the name
+    const bare = () => r.classList.toggle('bare', !text.value.trim() && !lang.value.trim() && !period.value.trim() && !note.value.trim());
+    text.addEventListener('input', bare);
+    bare();
     role.addEventListener('change', () => { status.hidden = role.value !== 'translation'; write(); });
     status.addEventListener('change', write);
     kind.addEventListener('change', write);
@@ -200,7 +204,8 @@ function initNamesEditor(ta) {
     rows.replaceChildren(...parse(ta.value).map(row));
     if (!rows.children.length) rows.append(row());
   };
-  add.addEventListener('click', () => { const r = row(); rows.append(r); r.querySelector('.n-text').focus(); });
+  // a new row added on purpose shows all its fields at once
+  add.addEventListener('click', () => { const r = row(); r.classList.remove('bare'); rows.append(r); r.querySelector('.n-text').focus(); });
   // Changed from outside (another editor via the shared working copy, a restored draft): redraw, keeping the caret.
   ta.addEventListener('change', () => {
     const a = document.activeElement;

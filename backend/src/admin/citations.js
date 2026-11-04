@@ -317,7 +317,7 @@ function newEntrySection(recent = [], values = {}) {
         ${sources.map((r) => html`<label class="choice cite-chip cite-chip-${r.reliability}"><input type="radio" name="cite.source" value="${r.slug}"${val('source') === r.slug ? ' checked' : ''}> ${r.label}</label>`)}</div>` : ''}</div>
     <div class="field-pair"><div class="field"><label for="cite-locator">Page, catalogue no.</label><input id="cite-locator" name="cite.locator" value="${val('locator')}" placeholder="45 · Kat.-Nr. 12"></div>
       <div class="field"><label for="cite-note">Note</label><input id="cite-note" name="cite.note" value="${val('note')}" placeholder="optional"></div></div>
-    <div class="field"><label for="cite-text">Or in words (stays a note: T)</label><input id="cite-text" name="cite.text" value="${val('text')}" placeholder="e.g. letter to Theo, 1888"></div>
+    <div class="field"><label for="cite-text">Or in words — a note, not a bibliography entry</label><input id="cite-text" name="cite.text" value="${val('text')}" placeholder="e.g. letter to Theo, 1888"></div>
   </section>`;
 }
 
@@ -455,7 +455,7 @@ function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
         <details class="cite-more"><summary class="small muted">more: website name, accessed date, a source in words</summary>
           <div class="field-pair"><div class="field"><label>Name of the website (new ones)</label><input name="site" placeholder="e.g. Van Gogh Museum, Collection" aria-label="name of the website"></div>
             <div class="field"><label>Accessed</label><input name="accessed" type="date" aria-label="accessed"></div></div>
-          <div class="field"><label>Or in words (stays a note: T)</label><input name="text" placeholder="e.g. letter to Theo, 1888" aria-label="source in words"></div></details>
+          <div class="field"><label>Or in words — a note, not a bibliography entry</label><input name="text" placeholder="e.g. letter to Theo, 1888" aria-label="source in words"></div></details>
         <div class="cite-actions"><button class="cite-submit">Add source</button></div>
       </form></div></details>`;
 }

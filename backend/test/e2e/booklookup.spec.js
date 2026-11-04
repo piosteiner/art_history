@@ -33,5 +33,20 @@ test('a DOI fills an article: journal, volume, issue, pages; unknown ones say so
   await userA.goto('/bibliography/new/lookup?id=10.9999/nothing');
   await expect(userA.locator('.flash.error')).toContainText('Nothing found for 10.9999/nothing');
   await userA.goto('/bibliography/new/lookup?id=hello');
-  await expect(userA.locator('.flash.error')).toContainText('neither an ISBN');
+  await expect(userA.locator('.flash.error')).toContainText('neither a web address');
+});
+
+test('a web address fills a web source: title without the site name, the site as "appeared in", author, year, today as accessed', async ({ userA }) => {
+  await userA.goto('/bibliography/new');
+  await userA.fill('#lookup input[name="id"]', 'https://museum.test/catalogue-entry.html');
+  await userA.click('#lookup button');
+  await expect(userA.locator('#f-kind')).toHaveValue('web');
+  await expect(userA.locator('#f-name')).toHaveValue('Seerosen');
+  await expect(userA.locator('#f-container')).toHaveValue('Sammlung Test');
+  await expect(userA.locator('#f-authors')).toHaveValue('Müller, Anna');
+  await expect(userA.locator('#f-year')).toHaveValue('2019');
+  await expect(userA.locator('#f-url')).toHaveValue('https://museum.test/catalogue-entry.html');
+  await expect(userA.locator('#f-accessed')).not.toHaveValue('');
+  await userA.goto('/bibliography/new/lookup?id=https://museum.test/challenged.html');
+  await expect(userA.locator('.flash.error')).toContainText('Could not read the page');
 });

@@ -689,3 +689,5 @@ button.theme-toggle:hover { color: var(--fg); border-color: var(--accent); }
 .field.unusual::after { content: attr(data-unusual); display: block; color: var(--muted); font-size: .8rem; margin-top: .15rem; }
 .field[hidden] { display: none; }
 .relevance-note[hidden] { display: none; }
+/* the other-names widget: a row without a name is only its name field (editor/names.js) */
+.names-row.bare > .name-meta, .names-row.bare > .name-context { display: none; }

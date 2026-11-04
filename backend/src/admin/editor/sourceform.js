@@ -5,6 +5,22 @@ export function initSourceForm() {
   const kind = document.querySelector('form.form select[name="f.kind"]');
   if (!kind) return;
   initCitedAs(kind.form);
+  initAccessedToday(kind.form);
+}
+
+// A link typed (or pasted) while "last accessed" is empty: today — the day you read it is nearly always the day you
+// enter it (owner 2026-11-04). Shown and changeable like any value; nothing is set over an existing date.
+function initAccessedToday(form) {
+  const url = form.querySelector('[name="f.url"]');
+  const day = form.querySelector('[name="f.accessed"]');
+  if (!url || !day) return;
+  url.addEventListener('change', () => {
+    if (!/^https?:\/\/\S+/i.test(url.value.trim()) || day.value.trim()) return;
+    const d = new Date();
+    day.value = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    day.dispatchEvent(new Event('input', { bubbles: true }));
+    day.dispatchEvent(new Event('change', { bubbles: true }));
+  });
 }
 
 // "Cited as …" above the form: the short reference and full entry as the site will show them, and a warning for names

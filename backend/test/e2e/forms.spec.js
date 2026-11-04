@@ -116,12 +116,18 @@ test('relevance: a web source needs its address and the day it was read; publish
   await expect(userA.locator('#f-pages')).toBeHidden();
   await expect(userA.locator('#f-siglum')).toBeHidden();                // rare: an override, hidden while empty
   await userA.fill('#f-name', 'Sammlung online');
+  // the checklist links to a needed field
+  await bar.locator('a[data-focus="url"]').click();
+  await expect(userA.locator('#f-url')).toBeFocused();
+  // a link entered: "last accessed" becomes today (sourceform.js), the checklist is done
   await userA.fill('#f-url', 'https://collection.kunsthaus.ch/');
-  await expect(bar.locator('a[data-focus]')).toHaveText(['Last accessed']);
-  await bar.locator('a[data-focus="accessed"]').click();
-  await expect(userA.locator('#f-accessed')).toBeFocused();
-  await userA.fill('#f-accessed', '2026-11-04');
-  await userA.fill('#f-container', 'Kunsthaus Zürich, Sammlung Online');
+  await userA.locator('#f-url').blur();
+  const today = await userA.evaluate(() => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; });
+  await expect(userA.locator('#f-accessed')).toHaveValue(today);
+  await userA.fill('#f-accessed', '2026-11-03');                     // changeable like any value
+  await userA.fill('#f-url', 'https://collection.kunsthaus.ch/de/');
+  await userA.locator('#f-url').blur();
+  await expect(userA.locator('#f-accessed')).toHaveValue('2026-11-03');   // an existing date is never replaced
   await expect(bar).toContainText('Everything for a web page is filled in');
   await expect(userA.locator('.field', { has: userA.locator('#f-accessed') })).not.toHaveClass(/needed/);
   // a book: its authors first; cited with a link, the day it was read is needed too
@@ -177,9 +183,34 @@ test('relevance: a place form follows its kind; an artwork on loan needs its len
   await expect(userA.locator('.relevance-note')).toContainText('A group of works');
   await expect(bar.locator('a[data-focus]')).toContainText(['Number of parts']);
 
+  // an artist: birth asked for first, "active" offered beside it — either settles it; the note under Birth
   await userA.goto('/artists/new');
-  await expect(userA.locator('.field', { has: userA.locator('#f-active') })).toHaveClass(/needed/);
-  await expect(userA.locator('.relevance-note')).toContainText('when were they active');
+  await expect(bar.locator('a[data-focus]')).toHaveText(['Name', 'Birth']);
+  await expect(userA.locator('.field', { has: userA.locator('#f-active') })).not.toHaveClass(/needed/);
+  await expect(userA.locator('.field', { has: userA.locator('#f-birth') }).locator('.relevance-field-note')).toContainText('when they were active');
+  await userA.fill('#f-active', '1520/1540');
+  await expect(bar.locator('a[data-focus]')).toHaveText(['Name']);
+  await userA.fill('#f-active', '');
   await userA.fill('#f-birth', '1853');
   await expect(userA.locator('#f-active')).toBeHidden();                 // dates of life: no need for an active period
+  // a rule's note under its own field: "In a museum …" under the institution, not under the object type
+  await userA.goto('/artworks/new');
+  await userA.fill('#f-institution', 'Kunsthaus Zürich');
+  await expect(userA.locator('.field', { has: userA.locator('#f-institution') }).locator('.relevance-field-note')).toContainText('In a museum');
+  await expect(userA.locator('.relevance-note')).not.toContainText('In a museum');
+});
+
+test('quick entry: Wikidata search on a new entry, an empty other-names row is only its name field, Ctrl+S creates', async ({ userA }) => {
+  await userA.goto('/artists/new');
+  await expect(userA.locator('#from-wikidata input[name="search"]')).toBeVisible();
+  await expect(userA.locator('#from-wikidata')).toHaveAttribute('action', '/artists/new/wikidata');
+  const row = userA.locator('.names-row').first();
+  await expect(row.locator('.n-lang')).toBeHidden();                     // no name yet: no language, role, kind …
+  await row.locator('.n-text').fill('Test Quick Name');
+  await expect(row.locator('.n-lang')).toBeVisible();
+  await userA.fill('#f-name', 'Test Quick Entry');
+  await userA.fill('#f-birth', '1850');
+  await expect(userA.locator('form.form > .actions > button')).toHaveAttribute('title', /\+S\)$/);
+  await Promise.all([userA.waitForURL(/\/artists\/test-quick-entry/), userA.keyboard.press('Control+s')]);
+  await expect(userA.locator('h1')).toContainText('Test Quick Entry');
 });

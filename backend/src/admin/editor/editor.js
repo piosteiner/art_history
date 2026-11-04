@@ -597,6 +597,21 @@ initDims();
 initSourceForm();
 initPrivateImages();
 initRelevance();
+// Ctrl+S / Cmd+S in an entry form: Create, Save or Publish — the button below the form (owner 2026-11-04: fill in
+// entries quickly); the browser's "save page" is never what is meant here
+{
+  const entryForm = document.querySelector('form.form[data-relevance]');
+  const submit = entryForm && entryForm.querySelector(':scope > .actions > button');
+  if (submit) {
+    submit.title = `${submit.textContent.trim()} (${/Mac|iPhone|iPad/.test(navigator.platform) ? '⌘' : 'Ctrl'}+S)`;
+    document.addEventListener('keydown', (e) => {
+      if (!(e.ctrlKey || e.metaKey) || e.altKey || e.key.toLowerCase() !== 's') return;
+      e.preventDefault();
+      if (document.activeElement && typeof document.activeElement.blur === 'function') document.activeElement.blur();   // a field's change event first (drafts, live copy)
+      entryForm.requestSubmit(submit);
+    }, true);
+  }
+}
 initLiveSearch();
 initInfinite();
 initDuplicates();

@@ -10,7 +10,8 @@
 //            need: fields to fill; note: shown under the driver; label: how the checklist names it ("a web page")
 //   always   { need: [...] } for every entry of the type
 //   rare     fields hidden while empty whatever the kind (overrides, rarities) — "show all" brings them back
-//   when     cross-field rules, each { field, filled | is | matches | allEmpty: [...] , need, show, note } —
+//   when     cross-field rules, each { field, filled | is | matches | allEmpty: [...] , need, show, note } — the note
+//            shows under `field` (or, for allEmpty, under the first of them);
 //            show: these fields matter only while the condition holds (hidden while empty otherwise; a `matches`
 //            rule waits until its field has a value)
 //   values[].sections  the order of the form's sections for that value (ids of forms.js SECTIONS; the rest follow)
@@ -112,7 +113,12 @@ const RULES = {
     always: { need: ['name'] },
     // given and family name are split from the name on save; "filed as" and the region override what is worked out
     rare: ['given_name', 'family_name', 'sort_name', 'region'],
-    when: [{ allEmpty: ['birth', 'death'], show: ['active'], need: ['active'], note: 'No dates of life: when were they active?' }],
+    // birth (or death) is the normal case; "active" only stands in when the dates of life are unknown — asked for
+    // birth first, active offered beside it; either one settles it
+    when: [
+      { allEmpty: ['birth', 'death'], show: ['active'] },
+      { allEmpty: ['birth', 'death', 'active'], need: ['birth'], note: 'Dates of life unknown? Then when they were active.' },
+    ],
   },
   person: {
     driver: 'kind',
@@ -123,7 +129,10 @@ const RULES = {
     },
     always: { need: ['name'] },
     rare: ['given_name', 'family_name', 'sort_name'],
-    when: [{ allEmpty: ['birth', 'death'], show: ['active'], need: ['active'], note: 'No dates of life: when were they active?' }],
+    when: [
+      { allEmpty: ['birth', 'death'], show: ['active'] },
+      { allEmpty: ['birth', 'death', 'active'], need: ['birth'], note: 'Dates of life unknown? Then when they were active.' },
+    ],
   },
   institution: {
     driver: 'kind',

@@ -4,6 +4,29 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### CMS: quicker entry — Wikidata search and web-page fill on new entries, Ctrl+S, today as "last accessed"
+- **What** (owner: look once more for what helps fill in new and existing entries efficiently):
+  - Every new-entry page (but the bibliography) starts with a Wikidata search box (`/<plural>/new/wikidata?search=`)
+    — the item fills the form; before, the button was only on the list page.
+  - The bibliography's "Fill in" box takes a web address too (`booklookup.js` `byPage`/`fromPage`): the page's own
+    tags (citation_*, og:*, Dublin Core, `<title>`) → title (without " | site name"), the site as "appeared in"
+    (a journal: kind article with volume, issue, pages), authors "Surname, Given", year, DOI, URL, today as
+    "last accessed". Fetched through `fetch-image.js` `fetchPublic` (public addresses only; a bot check is reported,
+    not passed). An address already in the bibliography leads to that entry.
+  - Typing a link into a source with no "last accessed" fills in today (`sourceform.js`); an existing date stays.
+  - Ctrl+S / ⌘+S in an entry form = Create / Save / Publish (`editor.js`; the button's title says so).
+  - The other-names widget: an empty row is only its name field; language, role, kind, period, note come with the
+    name (`names.js`, CSS `.names-row.bare`).
+  - Artists and people: birth is asked for first, "active" offered beside it — either settles it (was: "active"
+    needed on every fresh form). A rule's note shows under the field it is about (`.relevance-field-note`: "In a
+    museum: …" under Institution, not under Object type).
+  - Labels: ISBN, DOI, Website, Wikidata ID, Web page (`COMMON_LABELS`); "Or in words — a note, not a bibliography
+    entry" (was "stays a note: T").
+  - Tests: `forms.spec.js` (new test "quick entry", artist/institution notes, today as accessed), `booklookup.spec.js`
+    (a web address; fixture `/museum/catalogue-entry.html` in `wikidata-fixtures.js`).
+- **Why:** owner 2026-11-04.
+- **Revert:** `git revert` of the commit.
+
 ### CMS: the Wikidata id hidden while empty on every form
 - **What:** `relevance.rulesFor()` adds `wikidata_id` to every type's `rare` list — hidden while empty, shown with a
   value, back with "show all". Tests: `test/relevance.test.js`, `types.spec.js` (shows all before typing a Q-id).

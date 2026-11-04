@@ -89,6 +89,7 @@ export function initRelevance() {
     const needed = new Set([...(rules.always?.need || []), ...(set.need || [])]);
     const shownWhen = new Map();   // key → relevant only while a rule holds
     const notes = [];
+    const fieldNotes = new Map();   // key → notes under that field (a rule's note under the field it is about)
     if (set.note) notes.push(set.note);
     for (const c of rules.when || []) {
       const on = holds(c);
@@ -98,8 +99,16 @@ export function initRelevance() {
       for (const k of c.show || []) shownWhen.set(k, (shownWhen.get(k) || false) || on || !!undecided);
       if (on) {
         for (const k of c.need || []) needed.add(k);
-        if (c.note) notes.push(c.note);
+        const at = c.field || (c.allEmpty || [])[0];
+        if (c.note && at && byKey.has(at) && at !== rules.driver) fieldNotes.set(at, [...(fieldNotes.get(at) || []), c.note]);
+        else if (c.note) notes.push(c.note);
       }
+    }
+    for (const f of fields) {
+      let n = f.el.querySelector(':scope > .relevance-field-note');
+      const text = (fieldNotes.get(f.key) || []).join(' ');
+      if (!n && text) { n = document.createElement('div'); n.className = 'hint relevance-field-note'; f.el.append(n); }
+      if (n) { n.textContent = text; n.hidden = !text; }
     }
     const missing = [];
     for (const f of fields) {
