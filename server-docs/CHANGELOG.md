@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### GitHub Actions: the Pages workflow's concurrency group renamed (a hung run blocked every build)
+- **What:** run #228 (1324b3f7) was cancelled by the next push at 15:53 UTC but stayed "in progress" — GitHub refused
+  "Cancel" ("not in progress"), and the next run (d0c1c1dc) waited queued behind it in the group `pages`. The group
+  is now `pages-2` (`.github/workflows/pages.yml`); this push builds the newest commit at once. The old queued run, if
+  it ever starts, stops at "only deploy the newest commit". Without an API token on the server the hung run can be
+  force-cancelled only from outside: `gh api -X POST repos/piosteiner/art_history/actions/runs/41860284811/force-cancel`.
+- **Why:** owner 2026-11-04 ("are the github actions stuck").
+- **Revert:** the group's old name — once no run hangs in it.
+
 ### Data: media, object types and materials made consistent (93 changes on 91 works)
 - **What:** owner: "oil on canvas", "Öl auf Leinwand", "Oil on canvas" … as consistent as possible; object type and
   materials checked too. Rule kept (owner, memory "institution-language"): the medium in the institution's language —

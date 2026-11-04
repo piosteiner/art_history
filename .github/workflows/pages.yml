@@ -17,8 +17,11 @@ permissions:
   pages: write
   id-token: write
 
+# one build at a time, a newer one cancels the older. Renamed from "pages" on 2026-11-04: run #228 hung "in
+# progress" after its cancel (GitHub could neither cancel nor finish it) and held the old group, so every later build
+# waited behind it. A hung run again: give the group a new name.
 concurrency:
-  group: pages
+  group: pages-2
   cancel-in-progress: true
 
 jobs:
