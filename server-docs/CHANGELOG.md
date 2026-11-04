@@ -4,6 +4,28 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### Data: media, object types and materials made consistent (93 changes on 91 works)
+- **What:** owner: "oil on canvas", "Öl auf Leinwand", "Oil on canvas" … as consistent as possible; object type and
+  materials checked too. Rule kept (owner, memory "institution-language"): the medium in the institution's language —
+  German for German-speaking houses (AT, DE, Kunsthaus Zürich), English elsewhere — in sentence case, one spelling.
+  Script `scratchpad/media/fix-media.js` (audited, source script):
+  - 35 Kunsthaus works with an English medium → the Kunsthaus's own German wording from its page
+    (`ObjMaterialTechniqueTxt_de`): e.g. "Gouache auf Papier (vélin) auf Pavatex", "Öl und Ölfarbenstifte auf Leinwand".
+  - other German-speaking houses (Akademie, KHM, Belvedere, Leopold, Alte/Neue Nationalgalerie, Hamburger Kunsthalle,
+    Albertina): "Oil on canvas/wood/copper/cardboard" → "Öl auf …", "black chalk on paper" → "Schwarze Kreide auf
+    Papier", the typo "Oil on canvas ion oak" → "Öl auf Leinwand auf Eichenholz".
+  - French wordings in English (Versailles ceiling "Oil on canvas, marouflaged", Lascaux "Cave paintings and
+    engravings"); sentence case; "Color" → "Colour", "ink and colours" → "ink and colour", "slight" → "light colour"
+    ("mineral colours" kept). Distinct media 393 → 382.
+  - object types: "Pastell auf Papier" → pastel, "Tempera auf Holz" → painting, "wall-painting" → wall painting (now
+    its glossary term).
+  - materials holding a medium: 6 works ("oil, canvas" → oil paint, canvas; "Pastell, Papier" → pastel crayon, paper …).
+  - Left for the owner: two works of the Museum für Asiatische Kunst Berlin without a museum page (English from
+    Mason); object types without a glossary term yet — pagoda, tomb, maebyeong, folding book (need a cited
+    definition); "bronze" as the type of a Korean bronze implement.
+- **Why:** owner 2026-11-04.
+- **Revert:** audit_log (table artworks, source script, 2026-11-04 ~16:10 UTC) → History / restore per entry.
+
 ### CMS: open cases with dated updates and from any entry; Wikidata "Apply selected" publishes; dictionary note; mosaics for wholes
 - **What** (owner 2026-11-04):
   - Migration 214 `open_case_updates` (case_id, `on_day` date — today unless set, never in the future —, text_md,
