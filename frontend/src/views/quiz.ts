@@ -217,8 +217,8 @@ const peekSource = (url: string) => (/wikimedia\.org\//.test(url) ? thumb(url, 1
 
 /**
  * Press and hold a quiz picture to see it large, in its own proportions; let go and it closes (owner 2026-11-04). A
- * click can't do it: on the tiles a click picks the work. Moving before the hold is a scroll, not a peek; the click
- * that ends a hold picks nothing; the phone's long-press menu (save image) is kept off the pictures.
+ * click can't do it: on the tiles a click picks the work. Moving before the hold is a scroll, not a peek; moving during
+ * it keeps it open; the click that ends a hold picks nothing; the phone's long-press menu (save image) is kept off.
  */
 function wirePeek(root: HTMLElement) {
   const HOLD = 320;
@@ -259,8 +259,12 @@ function wirePeek(root: HTMLElement) {
   root.addEventListener('pointermove', (e) => {
     if (!peek && Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10) clearTimeout(timer);
   });
-  for (const type of ['pointerup', 'pointercancel', 'pointerleave'] as const) document.addEventListener(type, close);
+  // only letting go closes it (owner 2026-11-04: moving the mouse while holding keeps it open) — so the browser must not
+  // turn the hold into dragging the picture, nor a phone into scrolling the page while it is open
+  for (const type of ['pointerup', 'pointercancel'] as const) document.addEventListener(type, close);
   window.addEventListener('blur', close);
+  root.addEventListener('dragstart', (e) => { if ((e.target as Element).closest?.('.quiz-figure img, .quiz-tile img')) e.preventDefault(); });
+  document.addEventListener('touchmove', (e) => { if (peek) e.preventDefault(); }, { passive: false });
   // the click that ends a hold picks nothing
   root.addEventListener('click', (e) => { if (swallowClick) { e.preventDefault(); e.stopImmediatePropagation(); swallowClick = false; } }, true);
   root.addEventListener('contextmenu', (e) => { if ((e.target as Element).closest('.quiz-figure img, .quiz-tile img')) e.preventDefault(); });

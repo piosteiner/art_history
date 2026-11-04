@@ -72,6 +72,16 @@ router.get('/:plural', async (req, res) => {
              ${t.imageFk ? `(SELECT i.url FROM images i WHERE i.${t.imageFk} = t.id ORDER BY i.position, i.id LIMIT 1)` : 'NULL'} AS image_url,
              -- the account's main reference image (184/189): shown where a work has no public picture, to that account only
              ${t.type === 'artwork' ? `(SELECT p.id FROM private_images p WHERE p.artwork_id = t.id AND p.owner_id = ${Number(req.user.id)} ORDER BY p.position, p.id LIMIT 1)` : 'NULL'} AS own_image,
+             -- a whole (owner 2026-11-04): its kind and number of parts, and the first four of its parts that have a picture —
+             -- public, else this account's reference image — for a mosaic with a mark, as on the site
+             ${t.type === 'artwork' ? `t.kind AS kind_text, artwork_is_group(t.kind_term_id) AS is_group, (SELECT count(*)::int FROM artworks c WHERE c.parent_id = t.id) AS parts,
+               (SELECT jsonb_agg(jsonb_build_object('url', x.url, 'own', x.own) ORDER BY x.ord) FROM (
+                  SELECT y.url, y.own, y.ord FROM (
+                    SELECT (SELECT i.url FROM images i WHERE i.artwork_id = c.id ORDER BY i.position, i.id LIMIT 1) AS url,
+                           (SELECT p.id FROM private_images p WHERE p.artwork_id = c.id AND p.owner_id = ${Number(req.user.id)} ORDER BY p.position, p.id LIMIT 1) AS own,
+                           row_number() OVER (ORDER BY c.part_sort NULLS LAST, c.part_number, c.id) AS ord
+                    FROM artworks c WHERE c.parent_id = t.id) y
+                  WHERE y.url IS NOT NULL OR y.own IS NOT NULL ORDER BY y.ord LIMIT 4) x) AS part_cells` : 'NULL AS kind_text, false AS is_group, 0 AS parts, NULL AS part_cells'},
              EXISTS (SELECT 1 FROM auto_created ac WHERE ac.entity_type = $${p}::entity_type AND ac.entity_id = t.id) AS to_complete,
              ${t.type === 'source' ? 't.reading_status::text' : 'NULL'} AS status,
              ${t.type === 'artwork' ? `(SELECT string_agg(c ->> 'name', ', ') FROM jsonb_array_elements(artwork_creators(t.id)) c)` : 'NULL'} AS creators,
@@ -118,10 +128,10 @@ router.get('/:plural', async (req, res) => {
         <a class="button secondary" href="/${t.folder}/new/wikidata">+ from Wikidata…</a>
         ${t.type === 'place' ? html`<a class="button secondary" href="/places/new/find">+ find a place…</a>` : ''}</form>
       <div data-live-results="list">${rows.length ? html`<div class="table-wrap"><table${t.imageFk ? html` class="with-thumbs thumbs-${t.type}"` : ''}><thead><tr>${t.imageFk ? html`<th></th>` : ''}<th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
-        ${rows.slice(0, PAGE).map((r, i, shown) => html`${q ? heading(r, i, shown) : ''}<tr>${t.imageFk ? html`<td class="thumb">${r.image_url
+        ${rows.slice(0, PAGE).map((r, i, shown) => html`${q ? heading(r, i, shown) : ''}<tr>${t.imageFk ? html`<td class="thumb">${wholeThumb(t, r) || (r.image_url
           ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1"><img referrerpolicy="strict-origin-when-cross-origin" src="${thumbUrl(r.image_url, 120)}" alt="" loading="lazy" decoding="async"></a>`
           : r.own_image ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1" class="own-image" title="your reference image (private)"><img referrerpolicy="strict-origin-when-cross-origin" src="/private-images/${r.own_image}?w=250" alt="" loading="lazy" decoding="async"></a>`
-          : html`<span class="thumb-empty" title="no image"></span>`}</td>` : ''}<td><a href="/${t.folder}/${r.slug}">${r.name}</a>${r.to_complete ? html` <span class="tag warn" title="created automatically — fill in the details">to complete</span>` : ''}
+          : html`<span class="thumb-empty" title="no image"></span>`)}</td>` : ''}<td><a href="/${t.folder}/${r.slug}">${r.name}</a>${r.to_complete ? html` <span class="tag warn" title="created automatically — fill in the details">to complete</span>` : ''}
           ${sources && sources.get(r.slug) ? html`<div class="small">${sources.get(r.slug).siglum}${r.status ? html` <span class="tag">${r.status.replace('_', ' ')}</span>` : ''}</div>` : ''}
           ${r.creators ? html`<div class="muted small">${r.creators}</div>` : ''}
           ${r.why ? html`<div class="small search-why">${r.why.map((f, j) => html`${j ? ' · ' : ''}<span class="muted">${f.label}:</span> ${f.text}`)}</div>` : ''}
@@ -142,6 +152,26 @@ async function newDocFrom(t, query) {
   if (t.type !== 'artwork' || !SLUG.test(String(query.part_of || ''))) return {};
   const w = await findEntity(t, String(query.part_of));
   return w ? { parent: w.slug, ...(w.doc.creator ? { creator: w.doc.creator } : {}) } : {};
+}
+
+// A whole in the list (owner 2026-11-04): a mosaic of the first four of its parts that have a picture, its mark in the
+// corner — the kind's first letter (S series, V versions, C cycle …) or its number of parts; null: the usual picture
+function wholeThumb(t, r) {
+  if (t.type !== 'artwork' || (!r.is_group && !r.parts)) return null;
+  const cells = r.part_cells || [];
+  const letter = r.is_group && r.kind_text ? r.kind_text.trim().charAt(0).toUpperCase() : r.parts ? String(r.parts) : '';
+  const what = `${r.kind_text || 'whole'} · ${r.parts} ${r.parts === 1 ? 'part' : 'parts'}`;
+  const mark = letter ? html`<span class="whole-mark" title="${what}">${letter}</span>` : '';
+  if (cells.length < 2) {
+    const one = r.image_url ? html`<img referrerpolicy="strict-origin-when-cross-origin" src="${thumbUrl(r.image_url, 120)}" alt="" loading="lazy" decoding="async">`
+      : r.own_image ? html`<img class="own-image" src="/private-images/${r.own_image}?w=250" alt="" loading="lazy" decoding="async">`
+      : cells[0] ? (cells[0].url ? html`<img referrerpolicy="strict-origin-when-cross-origin" src="${thumbUrl(cells[0].url, 120)}" alt="" loading="lazy">`
+        : html`<img class="own-image" src="/private-images/${cells[0].own}?w=250" alt="" loading="lazy">`) : html`<span class="thumb-empty"></span>`;
+    return html`<a href="/${t.folder}/${r.slug}" tabindex="-1" class="whole-thumb" title="${what}">${one}${mark}</a>`;
+  }
+  return html`<a href="/${t.folder}/${r.slug}" tabindex="-1" class="whole-thumb mosaic mosaic-${String(cells.length)}" title="${what}">${cells.map((c) => (c.url
+    ? html`<img referrerpolicy="strict-origin-when-cross-origin" src="${thumbUrl(c.url, 120)}" alt="" loading="lazy" decoding="async">`
+    : html`<img class="own-image" src="/private-images/${c.own}?w=250" alt="" loading="lazy" decoding="async" title="your reference image (private)">`))}${mark}</a>`;
 }
 
 router.get('/:plural/new', async (req, res) => {

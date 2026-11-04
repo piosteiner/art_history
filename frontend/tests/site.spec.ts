@@ -3481,6 +3481,8 @@ test('quiz: press and hold a picture to see it large; the click after the hold p
   await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
   await page.mouse.down();
   await expect(page.locator('.quiz-peek img')).toBeVisible();
+  await page.mouse.move(box.x + box.width / 2 + 150, box.y + box.height / 2 + 120, { steps: 8 });   // moving keeps it open
+  await expect(page.locator('.quiz-peek img')).toBeVisible();
   await page.mouse.up();
   await expect(page.locator('.quiz-peek')).toHaveCount(0);
   // a short click opens nothing

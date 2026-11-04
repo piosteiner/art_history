@@ -99,8 +99,13 @@ const ENTITIES = {
                       ORDER BY c.part_sort NULLS LAST, c.part_number, c.id, i.position, i.id LIMIT 1)) AS image_url,
            artwork_is_group(t.kind_term_id) AS is_group, t.parts_count,
            (SELECT count(*)::int FROM artworks c WHERE c.parent_id = t.id) AS parts,
-           -- a whole's preview (owner 2026-11-04): the first picture of up to four of its parts, in their order — the
-           -- site draws them as a mosaic, so a series or cycle is told apart from a single work at a glance
+           -- a whole's preview (owner 2026-11-04): its first parts in their order (up to 8), each with its first picture
+           -- (null without one) — the site draws a mosaic of the first four pictured, a logged-in account's own reference
+           -- images filling in for parts without a public one; part_images: those public pictures alone (up to 4)
+           (SELECT jsonb_agg(jsonb_build_object('slug', x.slug, 'url', x.url) ORDER BY x.ord) FROM (
+              SELECT c.slug, (SELECT i.url FROM images i WHERE i.artwork_id = c.id ORDER BY i.position, i.id LIMIT 1) AS url,
+                     row_number() OVER (ORDER BY c.part_sort NULLS LAST, c.part_number, c.id) AS ord
+              FROM artworks c WHERE c.parent_id = t.id) x WHERE x.ord <= 8) AS part_previews,
            (SELECT jsonb_agg(p.url ORDER BY p.ord) FROM (
               SELECT x.url, x.ord FROM (
                 SELECT (SELECT i.url FROM images i WHERE i.artwork_id = c.id ORDER BY i.position, i.id LIMIT 1) AS url,

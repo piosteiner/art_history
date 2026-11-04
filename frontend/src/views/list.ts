@@ -3,7 +3,7 @@ import { applySuggestion, listAll, listEntities, suggest } from '../api';
 import { describeQuery, parseQuery } from '../query';
 import { replaceUrl } from '../router';
 import { ofVersions, partLabel, wholeKind } from '../series';
-import { countryName, countryText, creatorNames, creatorsOf, dateLabel, displayName, link, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, previewImg, render, thumb, type Html } from '../html';
+import { countryName, countryText, creatorNames, creatorsOf, dateLabel, displayName, link, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, ownThumb, previewImg, render, thumb, type Html } from '../html';
 import type { NameEntry } from '../types';
 
 /** The original-language name, shown small on the card ("神奈川沖浪裏"). */
@@ -105,11 +105,16 @@ function preview(plural: Plural, item: AnyItem, image: string | null | undefined
   if (plural !== 'artworks') return single;
   const a = item as ItemByPlural['artworks'];
   if (!a.is_group && !a.parts) return single;
-  const pics = (a.part_images ?? []).slice(0, 4);
-  if (pics.length >= 2) {
-    return html`<span class="${cls} whole-preview mosaic mosaic-${String(pics.length)}">${pics.map((u) => {
-      const small = thumb(u, 120);   // a cell is a quarter of the preview: the smallest rendition does
-      return html`<img src="${small}" alt="" loading="lazy" crossorigin="anonymous" data-full="${u}"${small !== u ? html` data-fallback="${u}"` : ''}>`;
+  // the parts in order: a public picture, else the logged-in account's own reference image (Birds and Flowers: its
+  // twelve months have only the owner's) — the first four there are
+  const cells = (a.part_previews ?? (a.part_images ?? []).map((url) => ({ slug: '', url })))
+    .map((p) => (p.url ? { url: p.url, own: null } : { url: null, own: p.slug ? ownThumb(p.slug, 250) : null }))
+    .filter((c) => c.url || c.own).slice(0, 4);
+  if (cells.length >= 2) {
+    return html`<span class="${cls} whole-preview mosaic mosaic-${String(cells.length)}">${cells.map((c) => {
+      if (!c.url) return html`<img class="own-image" src="${c.own!}" alt="" loading="lazy" title="your reference image (private)">`;
+      const small = thumb(c.url, 120);   // a cell is a quarter of the preview: the smallest rendition does
+      return html`<img src="${small}" alt="" loading="lazy" crossorigin="anonymous" data-full="${c.url}"${small !== c.url ? html` data-fallback="${c.url}"` : ''}>`;
     })}${wholeMark(a)}</span>`;
   }
   return single ? html`<span class="${cls} whole-preview">${single}${wholeMark(a)}</span>` : null;

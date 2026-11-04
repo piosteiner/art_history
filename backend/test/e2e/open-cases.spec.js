@@ -56,6 +56,8 @@ test('a finding moved to an open case: described, grouped by where to look, clos
 
   // closed with a result: the finding (still true) is back on Quality; the case under "Closed"
   const open = userA.locator('.oc-group .oc-case', { hasText: 'Test Case Berck' });
+  await expect(open.locator('.oc-close summary')).toHaveText('Close the case…');   // red, so it is not pressed by mistake
+  await expect(open.locator('.oc-close summary')).toHaveClass(/danger/);
   await open.locator('.oc-close summary').click();
   await open.locator('.oc-close .md-editor .cm-content').click();                                    // the result's Markdown editor
   await userA.keyboard.insertText('Checked: the catalogue gives no web page either.');

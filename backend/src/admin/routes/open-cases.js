@@ -75,7 +75,7 @@ function caseItem(c, names, { back = '/open-cases' } = {}) {
       ? html`<div class="oc-result"><b>Closed ${day(c.closed_at)}${c.closed_by_name ? ` by ${c.closed_by_name}` : ''}:</b>
           ${c.resolution_md ? html`<div class="md">${raw(renderMarkdown(c.resolution_md, { names }))}</div>` : ''}
           <form method="post" action="/open-cases/${String(c.id)}/reopen" class="inline"><input type="hidden" name="back" value="${back}"><button class="link">reopen</button></form></div>`
-      : html`<p class="actions">
+      : html`<div class="actions oc-actions">
           <details class="oc-update-add"><summary class="button">Add an update…</summary>
             <form method="post" action="/open-cases/${String(c.id)}/updates" class="form">
               <input type="hidden" name="back" value="${back}">
@@ -85,12 +85,12 @@ function caseItem(c, names, { back = '/open-cases' } = {}) {
                 <textarea id="upd-${String(c.id)}" name="text_md" rows="4" class="md" required placeholder="asked the library; the catalogue has no picture either …"></textarea></div>
               <button>Add the update</button></form></details>
           <a class="button secondary" href="/open-cases/${String(c.id)}/edit?back=${encodeURIComponent(back)}">Edit</a>
-          <details class="oc-close"><summary class="button secondary">Close…</summary>
+          <details class="oc-close"><summary class="button danger-outline" title="Closes the case with a result — reopen it from the list if needed">Close the case…</summary>
             <form method="post" action="/open-cases/${String(c.id)}/close" class="form">
               <input type="hidden" name="back" value="${back}">
               <div class="field"><label for="res-${String(c.id)}">Result</label>
                 <textarea id="res-${String(c.id)}" name="resolution_md" rows="4" class="md" placeholder="what was found, where — the entry corrected?"></textarea></div>
-              <button>Close the case</button></form></details></p>`}
+              <button class="danger">Close the case</button></form></details></div>`}
   </li>`;
 }
 

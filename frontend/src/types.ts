@@ -245,6 +245,8 @@ export interface ArtworkItem extends Located, Titled {
   is_group?: boolean; parts?: number; parts_count?: number | null;
   /** A whole's preview: the first picture of up to four parts, in their order (API, owner 2026-11-04). */
   part_images?: string[] | null;
+  /** Its first parts (up to 8) in order with their public picture; the account's own reference images fill in. */
+  part_previews?: { slug: string; url: string | null }[] | null;
   /** Lent to (deposited at) `institution`; the owner is the provenance's last step (migration 048). */
   on_loan?: boolean;
   /** The 1933–1945 provenance category (API 074): A–D, null when not assessed — a filter on the list. */

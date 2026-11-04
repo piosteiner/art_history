@@ -68,3 +68,20 @@ test('the works of one group are not duplicates of each other (144): a cycle, a 
          DELETE FROM artworks WHERE slug = 'test-cyc-ver'; DELETE FROM artworks WHERE slug LIKE 'test-cyc%'; DELETE FROM artists WHERE slug = 'test-cyc-painter'`);
   }
 });
+
+test('a whole in the CMS list: a mosaic of its parts with a mark in the corner', async ({ userA }) => {
+  sql(`DELETE FROM artworks WHERE slug LIKE 'test-mosaic-%';
+       INSERT INTO artworks (slug, title, kind) VALUES ('test-mosaic-whole', 'Test Mosaic Whole', 'series');
+       INSERT INTO artworks (slug, title, parent_id, part_number) SELECT 'test-mosaic-part-' || g, 'Test Mosaic Part ' || g, entity_id('artwork', 'test-mosaic-whole'), g::text FROM generate_series(1, 3) g;
+       INSERT INTO images (artwork_id, url, license, credit) SELECT id, 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Tsunami_by_hokusai_19th_century.jpg', 'Public domain', 'Hokusai'
+         FROM artworks WHERE slug LIKE 'test-mosaic-part-%'`);
+  try {
+    await userA.goto('/artworks?q=test%20mosaic%20whole');
+    const cell = userA.locator('tr', { hasText: 'Test Mosaic Whole' }).locator('td.thumb .whole-thumb');
+    await expect(cell).toHaveClass(/mosaic-3/);
+    await expect(cell.locator('img')).toHaveCount(3);
+    await expect(cell.locator('.whole-mark')).toHaveText(/^(S|3)$/);
+  } finally {
+    sql("DELETE FROM images WHERE artwork_id IN (SELECT id FROM artworks WHERE slug LIKE 'test-mosaic-%'); DELETE FROM artworks WHERE slug LIKE 'test-mosaic-part-%'; DELETE FROM artworks WHERE slug = 'test-mosaic-whole'");
+  }
+});

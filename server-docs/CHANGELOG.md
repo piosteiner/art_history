@@ -4,6 +4,23 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### CMS + site: mosaics in the CMS and from reference images; red "Close the case"; quiz peek stays while moving; CMS roadmap scrolls
+- **What** (owner 2026-11-04, follow-ups):
+  - Open cases: the buttons in a spaced row (they were in a `<p>`, which a `<details>` closes — no flex); "Close…" →
+    a red outlined "Close the case…" (`.danger-outline`), its submit button red (`.danger`).
+  - Quiz peek: only letting go closes it — no close on `pointerleave`; the image can't be dragged (`dragstart`
+    prevented) and a phone doesn't scroll while it is open (non-passive `touchmove`). Site test moves the mouse.
+  - Wholes: "Birds and Flowers Through the Twelve Months" had no mosaic — its parts have only the owner's private
+    reference images. List rows get `part_previews` (slug + public picture of the first 8 parts; migration 216
+    requeues the wholes); the site fills the mosaic with the logged-in account's own images (`ownThumb`). The CMS
+    list draws the same mosaic and mark (`entries.js` wholeThumb: public picture, else the account's reference image).
+    A precedence slip (`a || b ? c : d`) first rendered an empty image — caught on the dev screenshot.
+  - CMS roadmap: as on the site — "Erledigt" as tall as the other columns, scrolling, its heading kept in view;
+    long links in cards wrap (admin.css).
+  - Tests: `groups.spec.js` (CMS mosaic), `open-cases.spec.js` (the red button), site `press and hold`.
+- **Why:** owner 2026-11-04.
+- **Revert:** `git revert`; 216 changes no schema.
+
 ### GitHub Actions: the Pages workflow's concurrency group renamed (a hung run blocked every build)
 - **What:** run #228 (1324b3f7) was cancelled by the next push at 15:53 UTC but stayed "in progress" — GitHub refused
   "Cancel" ("not in progress"), and the next run (d0c1c1dc) waited queued behind it in the group `pages`. The group
