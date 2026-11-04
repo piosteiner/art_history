@@ -4,6 +4,28 @@ const { test, expect, sql, submitForm, API } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
+test('a road as a line (212): the route typed as GeoJSON, in the API, shown as text in the history', async ({ userA, request }) => {
+  await userA.goto('/places/new');
+  await userA.fill('#f-name', 'Test Road');
+  await userA.selectOption('#f-kind', 'street');
+  await userA.fill('input[name="f.location_lon"]', '139.5');
+  await userA.fill('input[name="f.location_lat"]', '35.4');
+  await userA.locator('details', { has: userA.locator('#f-route') }).locator('summary').click();
+  await userA.fill('#f-route', '{"type": "LineString", "coordinates": [[139.774, 35.684], [139.596, 35.444], [135.772, 35.009]]}');
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/\/places\/test-road\?done=created/);
+  const p = await api(request, '/places/test-road');
+  expect(p.route).toEqual({ type: 'LineString', coordinates: [[139.774, 35.684], [139.596, 35.444], [135.772, 35.009]] });
+  await userA.goto('/places/test-road/history');
+  await expect(userA.locator('main')).toContainText('LINESTRING(139.774 35.684');
+  await userA.goto('/places/test-road/edit');
+  await userA.locator('details', { has: userA.locator('#f-route') }).locator('summary').click();
+  await userA.fill('#f-route', '{"type": "Polygon", "coordinates": []}');
+  await submitForm(userA);
+  await expect(userA.locator('.has-error')).toContainText('LineString');            // refused with a readable message
+  sql("DELETE FROM places WHERE slug = 'test-road'");
+});
+
 test('a country needs only its code: outline and marker come from the boundary', async ({ userA, request }) => {
   await userA.goto('/places/new');
   await userA.fill('#f-name', 'Italy');

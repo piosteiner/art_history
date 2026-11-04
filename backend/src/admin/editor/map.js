@@ -29,6 +29,7 @@ function init(box) {
   const lonInput = form.querySelector(`[name="${prefix}_lon"]`);
   const latInput = form.querySelector(`[name="${prefix}_lat"]`);
   const areaInput = box.dataset.area ? form.querySelector(`[name="${box.dataset.area}"]`) : null;
+  const routeInput = box.dataset.route ? form.querySelector(`[name="${box.dataset.route}"]`) : null;   // a road or river as a line (212)
 
   // --- search bar -------------------------------------------------------------------------------------------
   const bar = el('div', { className: 'map-search' });
@@ -39,7 +40,7 @@ function init(box) {
   const mapDiv = el('div', { className: 'map-canvas' });
   const help = el('div', { className: 'hint' });
   help.textContent = areaInput
-    ? 'Click the map to set the location (drag the pin to adjust). Draw the area with the polygon tool on the left; edit, cut holes or delete with the tools below it.'
+    ? `Click the map to set the location (drag the pin to adjust). Draw the area with the polygon tool on the left${routeInput ? ', a road or river with the line tool' : ''}; edit, cut holes or delete with the tools below it.`
     : 'Click the map to set the location (drag the pin to adjust).';
   box.append(bar, results, mapDiv, help);
 
@@ -96,6 +97,23 @@ function init(box) {
   function polygonsOnMap() {
     return map.pm.getGeomanLayers().filter((l) => l instanceof L.Polygon);
   }
+  // Route: one line drawn on the map ↔ a GeoJSON LineString in the route textarea (a polygon is a polyline too: left out)
+  function linesOnMap() {
+    return map.pm.getGeomanLayers().filter((l) => l instanceof L.Polyline && !(l instanceof L.Polygon));
+  }
+  function writeRoute() {
+    if (!routeInput) return;
+    const lines = linesOnMap().map((l) => l.toGeoJSON(6).geometry).filter((g) => g.type === 'LineString');
+    routeInput.value = !lines.length ? '' : JSON.stringify({ type: 'LineString', coordinates: lines[0].coordinates.map(([x, y]) => [round(x), round(y)]) });
+    routeInput.dispatchEvent(new Event('input', { bubbles: true }));
+  }
+  function loadRoute(geojson) {
+    for (const l of linesOnMap()) l.remove();
+    if (!geojson || geojson.type !== 'LineString') return;
+    const layer = L.polyline(geojson.coordinates.map(([x, y]) => [y, x]), { color: '#2f6f9f', weight: 3 });
+    layer.addTo(areaLayer);
+    layer.on('pm:edit pm:dragend pm:remove', writeRoute);
+  }
   function writeArea() {
     if (!areaInput) return;
     const polys = polygonsOnMap().map((l) => l.toGeoJSON(6).geometry)
@@ -118,6 +136,12 @@ function init(box) {
       watch(layer);
     }
   }
+  if (routeInput) {
+    try { loadRoute(routeInput.value.trim() ? JSON.parse(routeInput.value) : null); } catch { /* invalid JSON: leave the map empty */ }
+    routeInput.addEventListener('change', () => {
+      try { loadRoute(routeInput.value.trim() ? JSON.parse(routeInput.value) : null); } catch { /* shown as an error on save */ }
+    });
+  }
   if (areaInput) {
     try { loadArea(areaInput.value.trim() ? JSON.parse(areaInput.value) : null); } catch { /* invalid JSON: leave the map empty */ }
     areaInput.addEventListener('change', () => {
@@ -127,10 +151,19 @@ function init(box) {
     map.pm.addControls({
       position: 'topleft',
       drawPolygon: true, drawRectangle: true, cutPolygon: true, editMode: true, dragMode: true, removalMode: true,
-      drawMarker: false, drawCircleMarker: false, drawPolyline: false, drawCircle: false, drawText: false, rotateMode: false,
+      drawMarker: false, drawCircleMarker: false, drawPolyline: !!routeInput, drawCircle: false, drawText: false, rotateMode: false,
     });
-    map.on('pm:create', (e) => { watch(e.layer); writeArea(); });
-    map.on('pm:remove', writeArea);
+    map.on('pm:create', (e) => {
+      if (e.layer instanceof L.Polyline && !(e.layer instanceof L.Polygon)) {
+        // one route: a second line replaces the first
+        for (const l of linesOnMap()) if (l !== e.layer) l.remove();
+        e.layer.on('pm:edit pm:dragend pm:remove', writeRoute);
+        writeRoute();
+        return;
+      }
+      watch(e.layer); writeArea();
+    });
+    map.on('pm:remove', () => { writeArea(); writeRoute(); });
     map.on('pm:cut', (e) => { watch(e.layer); writeArea(); });
   }
 

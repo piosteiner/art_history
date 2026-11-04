@@ -21,7 +21,7 @@ const TYPES = [
     // designation: what it is as a unit — "canton of Switzerland", "province of Italy" (158)
     // existed: when it existed as such — a dissolved unit, a merged city (159)
     name: 'name', names: 'names', kind: 'text', designation: 'text', existed: 'period', parent: 'parent', country_code: 'text', boundary_code: 'text',
-    location: 'point', area: 'area', description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
+    location: 'point', area: 'area', route: 'line', description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'movement', folder: 'movements', table: 'movements', name: 'name', fields: {
     name: 'name', names: 'names', kind: 'text', parent: 'parent', period: 'period',
     region: 'text',  // world region set by hand (191); empty = worked out (entry_regions)
@@ -192,6 +192,13 @@ function toRow(doc, fields) {
           && Math.abs(v[0]) <= 180 && Math.abs(v[1]) <= 90) {
           put(key, `SRID=4326;POINT(${v[0]} ${v[1]})`, '$::geography');
         } else throw new Error('must be [longitude, latitude]');
+      } else if (kind === 'line') {
+        // a road or river (212): one GeoJSON LineString, [longitude, latitude] pairs
+        if (v !== null && !(v && typeof v === 'object' && v.type === 'LineString' && Array.isArray(v.coordinates) && v.coordinates.length >= 2
+            && v.coordinates.every((c) => Array.isArray(c) && c.length === 2 && c.every(Number.isFinite) && Math.abs(c[0]) <= 180 && Math.abs(c[1]) <= 90))) {
+          throw new Error('must be a GeoJSON LineString of [longitude, latitude] pairs');
+        }
+        put(key, v && JSON.stringify(v), 'ST_GeomFromGeoJSON($)::geography');
       } else if (kind === 'area') {
         if (v !== null && !(v && typeof v === 'object' && ['Polygon', 'MultiPolygon'].includes(v.type) && Array.isArray(v.coordinates))) {
           throw new Error('must be a GeoJSON Polygon or MultiPolygon');
@@ -389,7 +396,7 @@ function docColumns(t) {
       cols.push(`CASE WHEN t.height_cm IS NOT NULL THEN (SELECT jsonb_agg(x ORDER BY i) FROM unnest(ARRAY[t.height_cm, t.width_cm, t.depth_cm])
                    WITH ORDINALITY AS u(x, i) WHERE x IS NOT NULL) END AS ${key}`);
     }
-    else if (kind === 'area') cols.push(`ST_AsGeoJSON(t.${key})::jsonb AS ${key}`);
+    else if (kind === 'area' || kind === 'line') cols.push(`ST_AsGeoJSON(t.${key})::jsonb AS ${key}`);
     else if (kind === 'parent') cols.push(`(SELECT p.slug FROM ${t.table} p WHERE p.id = t.parent_id) AS ${key}`);
     else if (kind.startsWith('ref:')) cols.push(`(SELECT r.slug FROM ${BY_TYPE[kind.slice(4)].table} r WHERE r.id = t.${REF_COLUMNS[key]}) AS ${key}`);
     else if (kind.startsWith('life:')) {

@@ -469,7 +469,7 @@ function showValue(t, key, kind, doc, links = new Map(), nameMark = () => '') {
   if (key === 'title_status') return `${v === 'own' ? 'own' : v} translation${v === 'own' ? ' — shown in [square brackets]' : ''}`;
   if (kind === 'dimensions') return `${v.join(' × ')} cm${v.length === 1 ? ' (height)' : ''}${doc.dimensions_note ? ` (${doc.dimensions_note})` : ''}`;
   if (kind === 'point') return html`${v[1]}, ${v[0]} <a href="https://www.openstreetmap.org/?mlat=${v[1]}&mlon=${v[0]}#map=12/${v[1]}/${v[0]}" rel="noopener" target="_blank">map ↗</a>`;
-  if (kind === 'json' || kind === 'area') return html`<pre>${JSON.stringify(v, null, 2)}</pre>`;
+  if (kind === 'json' || kind === 'area' || kind === 'line') return html`<pre>${JSON.stringify(v, null, 2)}</pre>`;
   if (kind === 'parent') return html`<a href="/${t.folder}/${v}">${v}</a>`;
   if (kind.startsWith('ref:')) return html`<a href="/${BY_TYPE[kind.slice(4)].folder}/${v}">${v}</a>`;
   if (kind.startsWith('life:')) return html`<a href="/places/${v}">${v}</a>`;   // the relationship born_in / died_in

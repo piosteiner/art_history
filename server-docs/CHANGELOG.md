@@ -16,7 +16,11 @@ Format: date — what — why — how to revert.
   "Tōkaidō, the road the views look from (through its 53 stations)", the association ring of a drawn road left out; a
   place's own page draws its route (`showOwnSite` now draws lines too); the legend of a parts map says "Each viewpoint
   follows the sources cited on the print's page" (owner: not guesses — every print has 2–3 cited sources). Script
-  `scratchpad/tokaido.js`; tests series.spec.js, site series-map test.
+  `scratchpad/tokaido.js`; tests series.spec.js, site series-map test. The place is a `street` ("highway of the Edo
+  period"), not a region. CMS (owner: "a line of points, not a point"): `route` is a field of places (content kind
+  `line` — GeoJSON LineString, validated; YAML `route`), drawn and edited with the map picker's line tool (Geoman
+  polyline ↔ the textarea, one line per place), shown as text in the history; a place with a route shows the line
+  without its point marker on the site. Test places.spec.js.
 - **Why:** owner: draw the Tōkaidō, with a glossary entry; make the sourcing visible.
 - **Revert:** `git revert` + a migration dropping the column; the data via the CMS history.
 

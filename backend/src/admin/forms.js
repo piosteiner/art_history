@@ -34,6 +34,7 @@ const HINTS = {
   inventory_number: 'Only together with the institution above — the number belongs to its collection.',
   json: 'JSON object, e.g. {"sources": ["…"]}. Leave empty for none.',
   area: 'GeoJSON Polygon or MultiPolygon, [longitude, latitude] pairs (optional outline for regions).',
+  line: 'GeoJSON LineString, [longitude, latitude] pairs — a road or river (the Tōkaidō through its stations); drawn on the maps of the works that depict it.',
   date: DATE_HINT,
   period: html`${DATE_HINT} · <code>1808/</code> (since 1808, ongoing)`,
   label: 'Optional display text, e.g. "c. 1480". Empty = generated from the date.',
@@ -204,7 +205,7 @@ function docToForm(doc, fields) {
     else if (kind === 'dimsets') f[key] = dimensions.setsToLines(v);
     else if (kind === 'bool') f[key] = v ? 'yes' : '';
     else if (kind === 'names') f[key] = names.namesToLines((v || []).map((n) => (typeof n === 'string' ? { text: n, role: 'alternative' } : n)));
-    else if (kind === 'json' || kind === 'area') f[key] = v ? JSON.stringify(v, null, 2) : '';
+    else if (kind === 'json' || kind === 'area' || kind === 'line') f[key] = v ? JSON.stringify(v, null, 2) : '';
     else if (kind === 'point') { f[`${key}_lon`] = v ? String(v[0]) : ''; f[`${key}_lat`] = v ? String(v[1]) : ''; }
     else if (kind === 'dimensions') ['h', 'w', 'd'].forEach((x, i) => { f[`${key}_${x}`] = v && v[i] !== undefined ? String(v[i]) : ''; });
     else if (kind === 'date' || kind === 'period') { f[key] = v ?? ''; f[`${key}_label`] = doc[`${key}_label`] ?? ''; }
@@ -235,7 +236,7 @@ function formToDoc(body, fields) {
     } else if (kind === 'text[]') {
       const items = v.split('\n').map((s) => s.trim()).filter(Boolean);
       if (items.length) doc[key] = items;
-    } else if (kind === 'json' || kind === 'area') {
+    } else if (kind === 'json' || kind === 'area' || kind === 'line') {
       if (!v) continue;
       try { doc[key] = JSON.parse(v); } catch (err) { errors.push(`${key}: not valid JSON (${err.message})`); }
     } else if (kind === 'dimensions') {
@@ -303,10 +304,10 @@ function fieldInput(key, kind, f, ctx) {
     return html`<div class="field${err}"><label for="${id}">${label}</label>
       <textarea class="md" id="${id}" name="${name}">${f[key]}</textarea>${hint(typeHint || HINTS.md)}</div>`;
   }
-  if (kind === 'area') {
+  if (kind === 'area' || kind === 'line') {
     // Drawn on the map (see the point field); the raw GeoJSON stays editable for pasting or fine-tuning.
     return html`<div class="field${err}"><label>${label}</label>
-      <details${err ? ' open' : ''}><summary class="muted">Draw it on the map above — or edit the GeoJSON (advanced)</summary>
+      <details${err ? ' open' : ''}><summary class="muted">${kind === 'line' ? 'Draw it on the map above with the line tool' : 'Draw it on the map above'} — or edit the GeoJSON (advanced)</summary>
       <textarea id="${id}" name="${name}" rows="3">${f[key]}</textarea>${hint(HINTS[kind])}</details></div>`;
   }
   if (kind === 'text[]' || kind === 'json') {
@@ -325,7 +326,7 @@ function fieldInput(key, kind, f, ctx) {
     return html`<div class="field${err}"><label>${label}</label>
       <div class="row"><input name="${name}_lon" value="${f[`${key}_lon`]}" placeholder="longitude (east +)" inputmode="decimal" aria-label="longitude">
       <input name="${name}_lat" value="${f[`${key}_lat`]}" placeholder="latitude (north +)" inputmode="decimal" aria-label="latitude"></div>
-      <div class="map-picker" data-point="${name}"${ctx.areaKey ? html` data-area="f.${ctx.areaKey}"` : ''}></div>
+      <div class="map-picker" data-point="${name}"${ctx.areaKey ? html` data-area="f.${ctx.areaKey}"` : ''}${ctx.routeKey ? html` data-route="f.${ctx.routeKey}"` : ''}></div>
       ${hint(typeHint)}<noscript>${hint(HINTS.point)}</noscript></div>`;
   }
   if (kind === 'date' || kind === 'period') {
@@ -425,7 +426,7 @@ const SECTIONS = {
   place: [
     { title: 'Name', id: 'names', rows: [['name'], ['names']] },
     { title: 'Kind and position', id: 'kind', rows: [['kind', 'parent'], ['country_code', 'boundary_code']] },
-    { title: 'On the map', id: 'map', rows: [['location'], ['area']] },
+    { title: 'On the map', id: 'map', rows: [['location'], ['area'], ['route']] },
     { title: 'Description', id: 'text', rows: [['description_md']] },
     IDS(),
   ],
@@ -510,7 +511,8 @@ function sectionsOf(t) {
 function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = null, pendingImages = null, pendingCites = null, pendingIds = null }) {
   let pending = [];
   try { pending = pendingImages ? JSON.parse(pendingImages) : []; } catch { pending = []; }
-  ctx = { ...ctx, type: t.type, areaKey: Object.keys(t.fields).find((k) => t.fields[k] === 'area') };  // map draws into areaKey
+  ctx = { ...ctx, type: t.type, areaKey: Object.keys(t.fields).find((k) => t.fields[k] === 'area'),      // map draws into areaKey
+    routeKey: Object.keys(t.fields).find((k) => t.fields[k] === 'line') };                                   // … and the line into routeKey
   const slugField = html`<div class="field${ctx.errorKeys.has('slug') ? ' has-error' : ''}"><label for="f-slug">Slug</label>
       <input id="f-slug" name="slug" value="${slug}" required pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="${isNew ? `filled in from the ${t.name} — e.g. pine-trees-in-the-snow` : ''}"
         autocapitalize="none" spellcheck="false" data-slug-from="f-${t.name}"${isNew ? '' : html` data-slug-existing="1"`}>
