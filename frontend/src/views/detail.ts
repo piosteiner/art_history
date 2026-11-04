@@ -150,9 +150,9 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
         const map = createMap(mapEl);
         cleanup = () => map.remove();
         if (e.type === 'place') {
-          showPoint(map, e.location!.coordinates, e.name);
-          // a road or river (API 212): its line, the map fitted to it
+          // a road or river (API 212): its line, the map fitted to it — no point marker; else its point
           if (e.route) showOwnSite(map, e.route, e.name, true, COLORS.route);
+          else showPoint(map, e.location!.coordinates, e.name);
           return;
         }
         if (e.type === 'event') {
