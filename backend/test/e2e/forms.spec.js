@@ -109,7 +109,7 @@ test('relevance: a web source needs its address and the day it was read; publish
   await expect(userA.locator('#cite-url')).toHaveCount(0);           // one place for the address: its own URL field
   await expect(userA.locator('.form-nav a').first()).toHaveText('Kind');
   await expect(userA.locator('.form-nav a', { hasText: 'Video, archive' })).toBeHidden();   // its section is hidden: no jump link
-  await expect(bar.locator('a[data-focus]')).toHaveText(['URL', 'Last accessed', 'Title', 'Appeared in']);   // in the form's order
+  await expect(bar.locator('a[data-focus]')).toHaveText(['URL', 'Last accessed', 'Title']);   // appeared in, year: optional (KHIST § 9.5)   // in the form's order
   await expect(userA.locator('.field', { has: userA.locator('#f-accessed') })).toHaveClass(/needed/);
   await expect(userA.locator('#f-publisher')).toBeHidden();            // not used by a web page
   await expect(userA.locator('#f-edition')).toBeHidden();
@@ -117,7 +117,7 @@ test('relevance: a web source needs its address and the day it was read; publish
   await expect(userA.locator('#f-siglum')).toBeHidden();                // rare: an override, hidden while empty
   await userA.fill('#f-name', 'Sammlung online');
   await userA.fill('#f-url', 'https://collection.kunsthaus.ch/');
-  await expect(bar.locator('a[data-focus]')).toHaveText(['Last accessed', 'Appeared in']);
+  await expect(bar.locator('a[data-focus]')).toHaveText(['Last accessed']);
   await bar.locator('a[data-focus="accessed"]').click();
   await expect(userA.locator('#f-accessed')).toBeFocused();
   await userA.fill('#f-accessed', '2026-11-04');

@@ -677,6 +677,8 @@ button.theme-toggle:hover { color: var(--fg); border-color: var(--accent); }
 .form-relevance .relevance-toggle, .form-relevance .relevance-hints { color: var(--muted); font-size: .85rem; }
 /* a pair with one field hidden: the other takes the row */
 @media (min-width: 900px) { .field-pair:has(> .field[hidden]) { grid-template-columns: 1fr; } }
+/* a row whose fields are all hidden takes no room (no gap between sections) */
+.field-pair:not(:has(> .field:not([hidden]))) { display: none; }
 /* short hints: one line each, the whole on a click */
 .form.short-hints .field .hint:not(.open):not(.relevance-note) { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; cursor: pointer; }
 .form.short-hints .field .hint.open { cursor: pointer; }

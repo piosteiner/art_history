@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### CMS: a web source needs only its address and the day it was read
+- **What:** `relevance.js` SOURCE_KINDS.web `need` = url, accessed (was also container — the KHIST guide § 9.5 asks
+  for author, title, URL, date of access). "Appeared in" and the year stay offered: the note under the kind explains
+  that the year makes the short reference ("Iversen 2012", else "o. J."). CSS: a field pair whose fields are all
+  hidden takes no room (the empty gaps between sections). `forms.spec.js` updated.
+- **Why:** owner 2026-11-04 ("why is for a web source the appeared in required and why is there a publication year?").
+- **Revert:** `git revert` of the commit.
+
 ### CMS: a new bibliography entry has no "Source" section; chips of anonymous sources by title
 - **What:** owner: the web source had two places for its address — its own URL (Online) and the new-entry section
   "Source" (where an entry's details come from, `citations.newEntrySection`). A bibliography entry is the source
