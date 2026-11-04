@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### Site: a whole's parts open in a new tab
+- **What:** on the page of a series, cycle, versions or other whole, its parts (`partsGrid` in frontend/src/series.ts),
+  and on a literary work's page the works illustrating it, open in a new tab (`target="_blank"`, the router leaves such
+  links alone). Previous/next on a part's page stay in the tab. Site test.
+- **Why:** owner: go back easily to where one was.
+- **Revert:** `git revert`.
+
 ### Documentation: image rights of every museum used so far
 - **What:** the CMS page `projekt-dokumentation`, section "Bildrechte der Museen", rewritten (26.7 k → 21.4 k chars,
   audited as user 1 / source script; no page_drafts existed). The terms of use of every museum and image service the
