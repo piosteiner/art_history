@@ -6,10 +6,8 @@
 //  - a section or group whose fields are all hidden hides with them; "show all fields" brings everything back
 //    (remembered per type in this browser)
 //  - a kind may order the sections (a web page: its address right after the kind; a book: its authors first)
-//  - "short hints": every hint clamped to one line, the whole on a click (remembered in this browser)
 const SUFFIX = /_(label|lang|lon|lat|h|w|d|unit)$/;
 const STORE = (type) => `arthistory.cms.showAll:${type}`;
-const HINTS = 'arthistory.cms.shortHints';
 
 export function initRelevance() {
   const form = document.querySelector('form.form[data-relevance]');
@@ -34,8 +32,7 @@ export function initRelevance() {
   note.className = 'hint relevance-note';
   if (driver) driver.closest('.field').append(note); else bar.insertAdjacentElement('afterend', note);   // no driver: under the checklist
   let showAll = false;
-  let shortHints = false;
-  try { showAll = localStorage.getItem(STORE(type)) === '1'; shortHints = localStorage.getItem(HINTS) === '1'; } catch { /* no storage */ }
+  try { showAll = localStorage.getItem(STORE(type)) === '1'; } catch { /* no storage */ }
   const opened = new Set();
   let lastBar = '';
   let lastOrder = '';
@@ -138,7 +135,6 @@ export function initRelevance() {
       const sep = a.previousSibling;
       if (sep && sep.nodeType === Node.TEXT_NODE) sep.textContent = a.hidden ? '' : ' · ';
     }
-    form.classList.toggle('short-hints', shortHints);
     const hidden = fields.filter((f) => f.el.hidden).length;
     const hideable = fields.filter((f) => f.el.classList.contains('unusual') || f.el.hidden
       || ((only && !only.has(f.key)) || (shownWhen.has(f.key) && !shownWhen.get(f.key)) || rare.has(f.key))).length;
@@ -153,23 +149,17 @@ export function initRelevance() {
       ? `<span class="relevance-missing">Still to fill in${what ? ` ${escapeHtml(what)}` : ''}: ${list}</span>`
       : `<span class="relevance-done">✓ Everything${what ? ` ${escapeHtml(what)}` : ''} is filled in.</span>`}<span class="relevance-tools">${
       hideable ? `<button type="button" class="link relevance-toggle">${showAll ? `Hide the ${hideable} fields not used ${what ? escapeHtml(what) : 'here'}` : hidden ? `${hidden} ${hidden === 1 ? 'field' : 'fields'} not used ${what ? escapeHtml(what) : 'here'} — show all` : 'Show all fields'}</button>` : ''
-    }<button type="button" class="link relevance-hints" title="Hints in one line each — click a hint to read all of it">${shortHints ? 'Full hints' : 'Short hints'}</button></span>`;
+    }</span>`;
     if (barHtml !== lastBar) { bar.innerHTML = barHtml; lastBar = barHtml; }
     bar.hidden = false;
   }
   bar.addEventListener('click', (e) => {
-    const t = e.target.closest('.relevance-toggle, .relevance-hints, [data-focus]');
+    const t = e.target.closest('.relevance-toggle, [data-focus]');
     if (!t) return;
     e.preventDefault();
     if (t.classList.contains('relevance-toggle')) {
       showAll = !showAll;
       try { localStorage.setItem(STORE(type), showAll ? '1' : '0'); } catch { /* no storage */ }
-      update();
-      return;
-    }
-    if (t.classList.contains('relevance-hints')) {
-      shortHints = !shortHints;
-      try { localStorage.setItem(HINTS, shortHints ? '1' : '0'); } catch { /* no storage */ }
       update();
       return;
     }
@@ -179,11 +169,6 @@ export function initRelevance() {
     if (d) d.open = true;
     const input = f.el.querySelector('input, select, textarea');
     if (input) { input.focus(); input.scrollIntoView({ block: 'center' }); }
-  });
-  // a clamped hint opens on a click (and closes again)
-  form.addEventListener('click', (e) => {
-    const h = e.target.closest('.hint');
-    if (h && form.classList.contains('short-hints') && !e.target.closest('a, button, input, select, textarea')) h.classList.toggle('open');
   });
   form.addEventListener('input', update);
   form.addEventListener('change', update);

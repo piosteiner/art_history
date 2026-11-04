@@ -80,10 +80,14 @@ function placeTrigger(d) {
       if (target) target.open = true;
     });
     // next to the label, not inside it: the label's text (and what a screen reader announces) stays the field's name
-    const row = document.createElement('div');
-    row.className = 'label-row';
-    label.before(row);
-    row.append(label, btn);
+    // (the ⓘ of the help may have made the row already — editor/hints.js: then the badges go right after the label)
+    if (label.parentElement.classList.contains('label-row')) label.after(btn);
+    else {
+      const row = document.createElement('div');
+      row.className = 'label-row';
+      label.before(row);
+      row.append(label, btn);
+    }
   }
   btn.innerHTML = d.querySelector(':scope > summary').innerHTML;  // the badges, rendered (and escaped) by the server
 }

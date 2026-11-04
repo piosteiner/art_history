@@ -277,7 +277,9 @@ function fieldInput(key, kind, f, ctx) {
   const name = `f.${key}`;
   const id = `f-${key}`;
   const err = ctx.errorKeys.has(key) ? ' has-error' : '';
-  const hint = (h) => (h ? html`<div class="hint">${h}</div>` : '');
+  // help text: behind an ⓘ beside the label, opened on a click (editor/hints.js, owner 2026-11-04) — so a hint may
+  // be as long as it needs; live notices (dimensions, picker feedback, the relevance notes) stay in view
+  const hint = (h) => (h ? html`<div class="hint help">${h}</div>` : '');
 
   if (kind === 'name') {
     // the browser adds the "Add reading" button and the furigana preview (editor/names.js)
@@ -380,7 +382,7 @@ function fieldInput(key, kind, f, ctx) {
 
 // The form in sections with slim titles: rows of one field or a pair (side by side on wide screens), and groups that
 // most entries don't need behind a button (<details>: no script needed; open from the start when one of their fields
-// has a value or an error). The hints stay visible everywhere — clean input the first time saves revisiting entries.
+// has a value or an error). A field's help text sits behind an ⓘ beside its label (owner 2026-11-04, editor/hints.js).
 // Every field of a type appears once; one not placed here lands in "More" (so a new field is never lost).
 const g = (summary, keys, hint = '', openForKinds = []) => ({ group: { summary, keys, hint, openForKinds } });
 // object types that open a group as soon as they are typed (editor.js): works that don't move, and wholes
@@ -524,7 +526,7 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
   const slugField = html`<div class="field${ctx.errorKeys.has('slug') ? ' has-error' : ''}"><label for="f-slug">Slug</label>
       <input id="f-slug" name="slug" value="${slug}" required pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="${isNew ? `filled in from the ${t.name} — e.g. pine-trees-in-the-snow` : ''}"
         autocapitalize="none" spellcheck="false" data-slug-from="f-${t.name}"${isNew ? '' : html` data-slug-existing="1"`}>
-      <div class="hint">${HINTS.slug}</div></div>`;
+      <div class="hint help">${HINTS.slug}</div></div>`;
   return html`
   ${errors.length ? html`<ul class="errors">${errors.map((e) => html`<li>${e}</li>`)}</ul>` : ''}
   ${ctx.errorKeys && ctx.errorKeys.size ? html`<p class="small error-fields">Marked in red: ${[...ctx.errorKeys].filter((k) => k === 'slug' || t.fields[k]).map((k, i) => html`${i ? ' · ' : ''}<a href="#f-${k}" data-error-field="${k}">${k === 'slug' ? 'Slug' : fieldLabel(t.type, k)}</a>`)}</p>` : ''}

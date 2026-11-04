@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### CMS: a field's help behind an ⓘ beside its label
+- **What:** owner: hints of any length, shown only when needed. `forms.js` `hint()` (and the slug's) render
+  `<div class="hint help">`; `editor/hints.js` hides them and puts an ⓘ button (aria-expanded/-controls) in the
+  label's row — click opens, click closes. Live notices stay in view (picker feedback "→ …", dimensions notices,
+  "used so far", relevance notes). The citation badges share the same label row (`cites.js` reuses it). "Short
+  hints" removed (relevance.js, CSS). Without the script the hints stay visible. Test: `forms.spec.js`.
+- **Why:** owner 2026-11-04 (replaces the earlier rule "hints stay visible everywhere").
+- **Revert:** `git revert` of the commit.
+
 ### CMS: quicker entry — Wikidata search and web-page fill on new entries, Ctrl+S, today as "last accessed"
 - **What** (owner: look once more for what helps fill in new and existing entries efficiently):
   - Every new-entry page (but the bibliography) starts with a Wikidata search box (`/<plural>/new/wikidata?search=`)

@@ -674,14 +674,11 @@ button.theme-toggle:hover { color: var(--fg); border-color: var(--accent); }
 .form-relevance .relevance-missing a { margin-right: .1rem; }
 .form-relevance .relevance-done { color: var(--ok); }
 .form-relevance .relevance-tools { margin-left: auto; display: flex; gap: 1rem; }
-.form-relevance .relevance-toggle, .form-relevance .relevance-hints { color: var(--muted); font-size: .85rem; }
+.form-relevance .relevance-toggle { color: var(--muted); font-size: .85rem; }
 /* a pair with one field hidden: the other takes the row */
 @media (min-width: 900px) { .field-pair:has(> .field[hidden]) { grid-template-columns: 1fr; } }
 /* a row whose fields are all hidden takes no room (no gap between sections) */
 .field-pair:has(> .field):not(:has(> .field:not([hidden]))) { display: none; }
-/* short hints: one line each, the whole on a click */
-.form.short-hints .field .hint:not(.open):not(.relevance-note) { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; cursor: pointer; }
-.form.short-hints .field .hint.open { cursor: pointer; }
 .field.needed > label::after, .field.needed .label-row > label::after { content: 'needed'; font-size: .7rem; font-weight: 600; letter-spacing: .05em;
   text-transform: uppercase; color: var(--accent); margin-left: .5rem; vertical-align: middle; }
 .field.needed input, .field.needed select, .field.needed textarea { border-color: var(--accent); }
@@ -691,3 +688,9 @@ button.theme-toggle:hover { color: var(--fg); border-color: var(--accent); }
 .relevance-note[hidden] { display: none; }
 /* the other-names widget: a row without a name is only its name field (editor/names.js) */
 .names-row.bare > .name-meta, .names-row.bare > .name-context { display: none; }
+/* a field's help behind an ⓘ beside its label (editor/hints.js) */
+.hint-toggle { display: inline-flex; align-items: center; justify-content: center; width: 1.15rem; height: 1.15rem; margin-left: .4rem;
+  padding: 0; border: 1px solid var(--muted); border-radius: 50%; background: transparent; color: var(--muted); font: italic 600 .72rem/1 Georgia, serif;
+  vertical-align: middle; cursor: pointer; }
+.hint-toggle:hover, .hint-toggle[aria-expanded="true"] { border-color: var(--accent); color: var(--accent); }
+.hint.help:not([hidden]) { border-left: 2px solid var(--line); padding-left: .5rem; }

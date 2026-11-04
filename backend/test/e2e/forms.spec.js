@@ -57,7 +57,7 @@ test('an artwork\'s web page: saved, checked, in the API; the images section poi
   sql("UPDATE artworks SET web_url = NULL WHERE slug = 'plum-park-in-kameido'");
 });
 
-test('forms in sections: titles and jump links, short fields in pairs, every field once, hints stay visible', async ({ userA }) => {
+test('forms in sections: titles and jump links, short fields in pairs, every field once, help behind an ⓘ', async ({ userA }) => {
   await userA.setViewportSize({ width: 1280, height: 900 });
   await userA.goto('/artworks/new');
   await expect(userA.locator('.form-section-title')).toHaveText(['Title and names', 'Who and when', 'Object', 'Where it is', 'Description', 'Provenance status', 'Fate', 'Identifiers', 'Source']);
@@ -67,7 +67,15 @@ test('forms in sections: titles and jump links, short fields in pairs, every fie
   expect(Math.abs(a.y - b.y)).toBeLessThan(5);
   expect(b.x).toBeGreaterThan(a.x + 200);
   // the hints are shown without clicking anything
-  await expect(userA.locator('.field', { has: userA.locator('#f-medium') }).locator('.hint')).toBeVisible();
+  // a field's help behind its ⓘ (editor/hints.js): closed, opened and closed again with a click
+  const medium = userA.locator('.field', { has: userA.locator('#f-medium') });
+  await expect(medium.locator('.hint.help')).toBeHidden();
+  await medium.locator('.hint-toggle').click();
+  await expect(medium.locator('.hint.help')).toBeVisible();
+  await expect(medium.locator('.hint-toggle')).toHaveAttribute('aria-expanded', 'true');
+  await medium.locator('.hint-toggle').click();
+  await expect(medium.locator('.hint.help')).toBeHidden();
+  await expect(userA.locator('.field', { has: userA.locator('#f-medium') }).locator('label')).toHaveText('Medium');   // the ⓘ is not part of the label
   // the slug right before the title it is made from (owner, 2026-10-07)
   await expect(userA.locator('#sec-names #f-slug')).toHaveCount(1);
   // no field twice, none lost
