@@ -4,6 +4,26 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### Content: the Kunsthaus Zürich's works in German; their reference images
+- **What:** owner 2026-11-04 — German first for German-speaking institutions, English for English-speaking ones. All
+  484 works of the Kunsthaus (`current_institution_id` 17) read again from their collection pages (cached once,
+  `scratchpad/kh-fetch.js`; the page's JSON carries both languages): `medium` = `ObjMaterialTechniqueTxt` ("Öl auf
+  Leinwand", 430 changed from the English, the Kunsthaus citation's `cited_value` follows); `title` = `ObjTitleTxt`
+  (already right but for 4: "Le Garçon …", « » spacing, ’, "Lied in der Ferne" with the old title kept as `former`);
+  `title_lang` from the words (198, e.g. "Avant le départ" was `en` — the import had set `en` blindly); the further
+  titles (`ObjTitleFurtherTxt`: German then English after a title in another language, English alone after a German
+  one; `[historic]`/`[historisch]` → role `former`, `[original]` → `original`; French and Italian ones by their words;
+  no language where the words don't tell) — 701 names corrected (German ones tagged `en`, e.g. "Vor dem Start"), 60
+  added, translations `status: official`, 895 name citations (`citations.name_id`) to the page. Script
+  `scratchpad/kh-titles.js` (audited, user 1 / source script). Then the private reference images
+  (`scratchpad/kh-images.js`): for each work without one from the Kunsthaus, its pictures in the "extra-large" size
+  (main image first, every further one) through `fetchPublic`, WebP like the panel, `private_images` of user 1 with
+  the collection as source and the photo credit as locator — never public (Kunsthaus images are not free). Every work
+  already had its `web_url`.
+- **Why:** owner: German titles and words from the German site; images without opening each page by hand.
+- **Revert:** CMS history (title/medium/names, 2026-11-04, source script); `DELETE FROM private_images WHERE source_url
+  LIKE '%kunsthaus.ch%' AND created_at::date = '2026-11-04'`.
+
 ### Documentation: two chapters restored after this morning's section rewrite cut them
 - **What:** the script that rewrote "Bildrechte der Museen" at 06:02 replaced too much: from that section to the
   section "Vorschaubilder" — the chapters **Content Management System** (Funktionen, Beschreibungsfeld, Projektinternes
