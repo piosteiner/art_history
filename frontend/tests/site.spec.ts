@@ -2516,7 +2516,10 @@ test('lists beyond 500 entries: the rest is fetched with offset, nothing is cut 
   }));
   await page.goto('/glossary');
   await expect(page.locator('.card-name', { hasText: 'Zz paged term' })).toBeVisible();
-  await expect(page.locator('#count')).toHaveText(`${firstCount + 1} entries`);
+  // the count: the listed terms + the era names filed under their calendars (2026-11-04) = every entry fetched
+  await expect(page.locator('#count')).toContainText('entries');
+  const counted = (await page.locator('#count').textContent())!.match(/\d+/g)!.map(Number).reduce((a, b) => a + b, 0);
+  expect(counted).toBe(firstCount + 1);
 });
 
 test('back to a list returns to where the reader was; a new page starts at the top', async ({ page }) => {

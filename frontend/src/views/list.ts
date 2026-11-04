@@ -333,7 +333,7 @@ export function list(main: HTMLElement, plural: Plural) {
         parsed.special ? html` <span class="query-read" title="How the search was read">· ${describeQuery(parsed)}</span>` : ''}${
         corrected ? html`<span class="query-fix"> — nothing for “${asked}”, showing “${corrected}”. <button type="button" class="link-button" data-literal>Search for “${asked}” instead</button></span>` : ''}${
         suggested ? html`<span class="query-fix"> — did you mean <button type="button" class="link-button" data-suggest="${suggested}">${suggested}</button>?</span>` : ''}`
-      : html`${total} ${total === 1 ? 'entry' : 'entries'}`);
+      : html`${total} ${total === 1 ? 'entry' : 'entries'}${all.length > total ? html` <span class="muted">(${String(all.length - total)} more filed under their calendars)</span>` : ''}`);
   }
 
   // same search as the explore pickers: every word in name, details or hidden fields (type, birthplace …)
