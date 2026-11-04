@@ -4,6 +4,26 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### Quality: a pass over the open findings; a year-only boundary is no proof of presence (213)
+- **What:** owner 2026-11-04. The one error — Maiko, made in Gion in 1893 while Kuroda Seiki "was in Paris then":
+  his stay ran "1884–1893" and a year-only date means the whole year. Data: the stay now ends "July 1893" (he landed
+  in Japan on 30 July 1893 — ja.wikipedia 黒田清輝, source `wikipedia-ja-kuroda-seiki`, cited on the relationship).
+  Check: migration 213 — `created_where_artist_was_not` shrinks the union of the stays elsewhere by a year at each
+  boundary that is a 1 January (year precision) before testing whether it covers the creation span; exact dates count
+  as they are. Also: 30 Kunsthaus `names` citations and 3 Wikidata P186 `medium` citations refreshed after today's
+  German wording, 44 Fuji prints' `parent` citations refreshed after the part numbers, 17 Wikidata P131 `parent`
+  citations of places removed (their parents were set differently by hand on 2026-11-04); Mount Fuji / Fuji city
+  acked as not the same; the image of The Liberation of Brisach credited to Jusepe Leonardo; artists without dates:
+  Friedrich Wield (Q1462823, 1880–1940, Hamburg — verified against the work, a head of the Hamburg sculptor Gertrud
+  Jakstein), the Master of the Darmstadt Passion active c. 1430–1450 (Wikidata work period), five anonymous masters
+  active when their one dated work was made (cited to the Kunsthaus's dating). The 127 auto-created people with a
+  Wikidata item filled by `scripts/fill-from-wikidata.js --user=pio person …` (dates, places, kind, authority numbers;
+  log in the scratchpad). Script `scratchpad/quality-pass.js`. Left for the owner: 1,143 auto-created entries (an
+  ack each), 460 provenance gaps 1933–1945, 420 works without a museum page, 44 seizures recorded as ownership, 39
+  forced transfers, 5 unused museums created on 2026-11-03 (Indianapolis, Cooper Hewitt, Cleveland, Ashmolean,
+  Vanderbilt — nothing refers to them yet).
+- **Revert:** migration 214 with the old HAVING; CMS history for the data.
+
 ### Content: the Kunsthaus Zürich's works in German; their reference images
 - **What:** owner 2026-11-04 — German first for German-speaking institutions, English for English-speaking ones. All
   484 works of the Kunsthaus (`current_institution_id` 17) read again from their collection pages (cached once,
