@@ -19,7 +19,7 @@ import {
   CLUSTER_BELOW, COLORS, createMap, focusEncounter, showClusters, highlightRoute, PALETTE, placedProvenance, provenanceInWindow, showEncounters, showEvents, showPlaces, showPresence, showSelection,
   showSites, unplacedSteps, type ColoredEntityMap, type RouteInfo,
 } from '../map';
-import { overlaps } from '../map-core';
+import { fit, overlaps } from '../map-core';
 import { mountPickers, type PickerGroup } from '../picker';
 import { replaceQuery } from '../router';
 import { chosen, GROUPS, includes, layerIncludes, parseSelection, writeSelection, type Selection } from '../selection';
@@ -503,6 +503,22 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
     ].filter(Boolean).join(' ');
   }
 
+  // In a time window the viewport stays put while the window is dragged along the timeline; the map fits the stops
+  // when the picks change (a curated view opened, an artist added) — before, a window view kept whatever the last
+  // view showed, and "Seized in Paris" opened on the whole world with Europe a thumbnail.
+  let fittedPicks = '';
+  function fitWindow(points: [number, number][], provenances: Map<string, ProvenanceMap>) {
+    const picks = new URLSearchParams();
+    writeSelection(sel, picks);
+    const key = picks.toString();
+    if (key === fittedPicks) return;
+    const stops = [...provenances.values()].flatMap((p) => p.features.flatMap((f) => (f.geometry.type === 'Point' ? [f.geometry.coordinates as [number, number]] : [])));
+    const coords = points.length ? points : stops;
+    if (!coords.length) return;
+    fittedPicks = key;
+    fit(map, coords);
+  }
+
   async function presence(w: NonNullable<Window>, stale: () => boolean) {
     const types = (['artist', 'person', 'artwork'] as const).filter((t) => sel[t].mode !== 'none');
     const span = w.from === w.to ? `${w.from}` : `${w.from}–${w.to}`;
@@ -527,6 +543,7 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
     if (stale()) return;
     provenances = new Map([...all].map(([key, prov]) => [key, provenanceInWindow(prov, w)]));
     useRoutes(showPresence(map, { ...fc, features }, provenances));
+    fitWindow(features.map((f) => f.geometry.coordinates as [number, number]), provenances);
     redrawLegend();
     const at = new Map(features.map((f) => [f.properties.place.slug, f.geometry.coordinates] as const));
     useVenues(features.map((f) => f.properties.institution));

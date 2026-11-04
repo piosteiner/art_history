@@ -2,6 +2,55 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-04
+
+### Curated start views: thirteen sets for the home page
+- **What:** 13 published `featured_views` beside the owner's Arles view (now third): *Half a million kilometres* (the
+  twelve farthest-travelled works, routes mode), *Seized in Paris, settled in Zürich* (23 D-category works in the
+  window 1933–1950 with the seized-from owners, Göring, Wendland, Bührle; ERR, Galerie Fischer), *Napoleon's museum*
+  (11 works in the window 1796–1816, Napoleonic polities), *Ten thefts, 1608–1985*, *Caravaggio on the run* (artist +
+  21 works + Borghese/Paul V), *Bruegel's road to Vienna*, *Haarlem and Amsterdam: who could have met whom* (16 Dutch
+  painters 1620–1680 — the crossed-paths list), *Vienna 1900* (window 1897–1918, by-artists), *Hokusai's Fuji reaches
+  Paris*, *Nara burns, the Kei school rebuilds*, *Japan opens, 1853–1912* (window), *Hodler's Switzerland* (window).
+  Intros in Markdown with `[[type/slug]]` links; `featured_view_problems` empty. Every view screenshotted on the live
+  site (scratchpad `featured/shots.mjs`); a *Hall of Realms* view was dropped — all twelve battle paintings sit in
+  Madrid, the map had nothing to draw. Lessons: in routes mode (no window) only entries named in the query get routes
+  (`artworks=by-artists` draws none), so works are listed by slug, ≤ 24; `events=auto` in a window pulls the map out
+  to the world when a far event falls in it (Japan 1639 in the Dutch view, "World War II" placed in Russia in the
+  seized view) — those views set `events=none`.
+- **Why:** owner, 2026-11-04 ("sets where the potential and the power of our tool really shines").
+- **Revert:** `DELETE FROM featured_views WHERE created_at::date = '2026-11-04'`; `UPDATE featured_views SET sort_order = 0 WHERE slug = 'gauguin-turnesols-gogh'`.
+
+### Site: a time-window view fits the map to its stops when the picks change
+- **What:** the start map in a time window (presence mode) never fitted the viewport — it kept whatever the previous
+  view showed, so a curated window view opened on the world with Europe a thumbnail. `fitWindow()` in
+  `frontend/src/views/explore.ts` fits the presence stops (else the provenance stops in the window) once per set of
+  picks (`writeSelection` key); dragging the window along the timeline keeps the viewport as before.
+- **Why:** seen on the screenshots of the new views.
+- **Revert:** `git revert`.
+
+### Where a work was made: the artist's stay covering most of the creation span (migration 210)
+- **What:** `provenance_stops()`'s derived creation place (`place_basis = 'artist_residence'`, the hollow "probably"
+  marker) was the artist's *one* stay overlapping the creation dates; two overlapping stays gave nothing and the rule
+  fell to the one undated workplace — Velázquez's *Surrender of Breda* started in Venice, Bruegel's paintings in Rome
+  (his Italian journey). Now every overlapping stay is measured (`period * created`, upper − lower, summed per place)
+  and the longest wins; a tie still gives nothing. 28 works change place (Bruegel → Brussels/Antwerp, Velázquez →
+  Madrid, Van Gogh's Saint-Rémy and Arles works, Gauguin's Tahiti ones, Raphael's *Lady with a Unicorn* → Florence);
+  year-only dates can still mislead (*The Plain of Auvers*, 1890, → Saint-Rémy, where he spent more of 1890). Test in
+  `test/e2e/provenance.spec.js`; `npm run perf` 41/41 within budget; `backend/docs/api.md` and CLAUDE.md updated.
+- **Why:** found while screenshotting the Hall of Realms view.
+- **Revert:** re-create the function from migration 104 (`CREATE OR REPLACE FUNCTION provenance_stops` there).
+
+### Meiji painters' journeys after Mason; Velázquez's birthplace
+- **What:** 14 dated stays with citations to Mason, *History of Japanese Art* (bibliography 144, pages): Ragusa and
+  Fontanesi teaching in Tokyo (1876–82, 1876–78), Fenollosa in Tokyo 1878–90, Kuroda in Paris 1884–93, Asai at
+  Grez-sur-Loing 1900–02 then Kyoto, Taikan and Hishida in India 1903 and Europe/USA 1904, Kanzan in England
+  (c. 1903–04, probable), Naganuma in Venice (1880s). New places `india` (Q668) and `grez-sur-loing`. Deleted the
+  relationship "Velázquez born in Trouville-sur-Mer" (id 1273, a bad place match of 2026-10-28; Seville is recorded).
+  Scratchpad `featured/meiji-stays.sql`.
+- **Why:** the *Japan opens* view had almost nothing to place.
+- **Revert:** `DELETE FROM relationships WHERE id IN (SELECT relationship_id FROM citations WHERE source_id = 144 AND created_at::date = '2026-11-04')`.
+
 ## 2026-11-03
 
 ### Kunsthaus Zürich: all works with a 1933–1945 category B, C or D (247; 220 new)

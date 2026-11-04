@@ -667,8 +667,9 @@ subject_types, object_types, description, derived`. `category` is meant for map/
     `site` · `settlement` · `region` · `country`) and `place_basis` — how we know the place:
     `recorded` (the step's own) · `holder_seat` (an institution holder without a place: its seat; the loan) ·
     `created_in` (creation: the artwork's recorded place of creation, Wikidata P1071) · `artist_residence`
-    (creation: the one place the artist is recorded at while it was made — say "probably") · `artist_workplace`
-    (creation: else the artist's one undated "worked in" place — "probably" too).
+    (creation: the artist's stay that covers most of the creation span — say "probably"; two stays covering the
+    same length give nothing, migration 210) · `artist_workplace` (creation: else the artist's one undated "worked
+    in" place — "probably" too).
   - `layer: "provenance_segment"` (LineString), between consecutive placed stops (none between two stops at the same
     point): `from_step`, `to_step`, `direct` (every handover on it documented as direct), `implied` (an end not
     recorded: creation, loan, or a place not recorded), `between` (the steps it passes over that have no place, same

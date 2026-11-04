@@ -182,6 +182,17 @@ test('the provenance on the map: where it was made from where the artist lived, 
   expect(seg.properties.between.map((b) => b.holder.slug)).toEqual(['test-michel-monet']);
   expect(pr.unplaced.map((u) => [u.step, u.holder.slug])).toEqual([[2, 'test-michel-monet']]);
 
+  // two stays overlapping the creation: the one covering more of it (210) — a summer elsewhere doesn't move it
+  sql(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period)
+         VALUES ('artist', entity_id('artist', 'test-painter'), 'visited', 'place', entity_id('place', 'test-zurich'), '[1885-06-01,1885-08-01)')`);
+  const visit = (await api(request, '/map/artworks/test-bassin')).provenance;
+  expect(visit.features.find((f) => f.properties.kind === 'creation').properties.place.slug).toBe('test-sorel');
+  // both the whole year: no answer, the creation step stays unplaced
+  sql(`UPDATE relationships SET period = '[1885-01-01,1886-01-01)' WHERE relationship_type = 'visited' AND subject_type = 'artist' AND subject_id = entity_id('artist', 'test-painter')`);
+  const tie = (await api(request, '/map/artworks/test-bassin')).provenance;
+  expect(tie.features.find((f) => f.properties.kind === 'creation')).toBeUndefined();
+  sql(`DELETE FROM relationships WHERE relationship_type = 'visited' AND subject_type = 'artist' AND subject_id = entity_id('artist', 'test-painter')`);
+
   // no dated place then: the artist's one undated place of work
   sql(`UPDATE relationships SET relationship_type = 'worked_in', period = NULL WHERE subject_type = 'artist' AND subject_id = entity_id('artist', 'test-painter')`);
   const workshop = (await api(request, '/map/artworks/test-bassin')).provenance;
