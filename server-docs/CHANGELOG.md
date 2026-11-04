@@ -4,6 +4,22 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### The Tōkaidō: a glossary term, the road as a line, drawn on the Fuji series' map
+- **What:** owner 2026-11-04. Migration 212: `places.route geography(LineString)` (a road or river as a line; citable
+  field `route`). The place `tokaido` gets the road through its 55 points — Nihonbashi, the 53 stations, Sanjō Ōhashi —
+  from the stations' articles on the Japanese Wikipedia (seven from their Wikidata items, Okitsu from its railway
+  station; source `wikipedia-ja-tokaido-gojusan-tsugi`, `scratchpad/tokaido-stations.json`). Glossary term `tokaido`
+  (category other, Q1196306) after Mason 2005 pp. 279 and 292–293 (inline notes with the quotes and pages). The series
+  Thirty-six Views `depicts` the road (five prints name it in their titles; cited to the ja.wikipedia series article).
+  API: a whole's `parts.routes` = the `route` lines of places depicted by the whole or a part (`layer: "road"`); a
+  place's detail carries `route`. Site: dashed line (COLORS.route) under the part markers with a popup, legend line
+  "Tōkaidō, the road the views look from (through its 53 stations)", the association ring of a drawn road left out; a
+  place's own page draws its route (`showOwnSite` now draws lines too); the legend of a parts map says "Each viewpoint
+  follows the sources cited on the print's page" (owner: not guesses — every print has 2–3 cited sources). Script
+  `scratchpad/tokaido.js`; tests series.spec.js, site series-map test.
+- **Why:** owner: draw the Tōkaidō, with a glossary entry; make the sourcing visible.
+- **Revert:** `git revert` + a migration dropping the column; the data via the CMS history.
+
 ### Glossary: the era names collected under Japanese, Korean and Chinese calendar
 - **What:** owner 2026-11-04 ("the glossary is bloated with the calendar names"): three new terms of category
   `calendar` — `japanese-calendar`, `korean-calendar`, `chinese-calendar` (definition + text: how dates are written,

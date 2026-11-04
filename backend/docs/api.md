@@ -235,6 +235,7 @@ Show both together as e.g. **"Soviet Union (today Ukraine)"**: the polity's `nam
 from a polity's `country_codes` when there are several (the USSR covers 15 countries) — `country` already did the right thing.
 Filters: `?country=NL` (today's country, ISO code) and `?polity=<slug>`.
 
+Places also carry `route` (212, detail: a road or river as a LineString — the Tōkaidō through its 53 stations; null for most).
 Polities (`/v1/polities`): `kind`, `period` (when it existed), `region` (list rows: the world region of the first country, 191 — the site's sort, 2026-11-04), `country_codes` (modern countries on its territory;
 filter `?country=UA`); the detail adds `ancestors` / `children` (Western Han ⊂ Han dynasty) and, as relationships,
 everyone and everything linked to it ("nationality of" …).
@@ -685,7 +686,9 @@ subject_types, object_types, description, derived`. `category` is meant for map/
   `image_url`, `place` `{slug, name}`, `precision` (the place's kind), `certainty` (the relationship's: `attested` ·
   `probable` · `possible` · `disputed`) and `note` (the relationship's label — where exactly the view was taken);
   `unplaced`: the parts without such a place (`number`, `slug`, `public_id`, `title`, `image_url`), in the series'
-  order. Absent on a work without parts.
+  order; `routes`: the roads the views look from — a place whose `route` (212) is a line (the Tōkaidō through its 55
+  points), depicted by the whole or one of its parts — as LineString features with `layer: "road"`, `slug`, `name`,
+  `public_id`, `points`, `note` (the relationship's label). Absent on a work without parts.
 - `GET /v1/map/presence?from=1888&to=1889[&types=artist,person,artwork]` — who/what was physically where during
   the window (for a timeline slider); `institution` may be added to `types` (earlier locations via `located_in`). Undated links are left out.
 - `GET /v1/map/places[?from=&to=]` — every place with `presence_count` and `association_count` (in the window).

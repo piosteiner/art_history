@@ -182,12 +182,22 @@ async function partsOf(artworkId) {
     WHERE p.parent_id = $1
     ORDER BY p.part_sort NULLS LAST, p.part_number, p.id`, [artworkId]);
   if (!rows.length) return {};
+  // the roads the views look from (2026-11-04): a place with a `route` line (212; the Tōkaidō through its
+  // stations), depicted by the whole itself or by one of its parts — drawn on the map, with its stations in `points`
+  const { rows: routes } = await apiPool.query(`
+    SELECT DISTINCT pl.slug, pl.name, pl.public_id, ST_AsGeoJSON(pl.route)::jsonb AS geometry, ST_NPoints(pl.route::geometry) AS points, d.label AS note
+    FROM relationships d JOIN places pl ON pl.id = d.object_id
+    WHERE d.subject_type = 'artwork' AND d.relationship_type = 'depicts' AND d.object_type = 'place'
+      AND (d.subject_id = $1 OR d.subject_id IN (SELECT id FROM artworks WHERE parent_id = $1))
+      AND pl.route IS NOT NULL
+    ORDER BY pl.name`, [artworkId]);
   const part = (r) => ({ number: r.number, slug: r.slug, public_id: r.public_id, title: r.title, image_url: r.image_url });
   return { parts: {
     type: 'FeatureCollection',
     features: rows.filter((r) => r.geometry).map((r) => ({ type: 'Feature', geometry: r.geometry, properties: { layer: 'part', ...part(r),
       place: { slug: r.place_slug, name: r.place_name }, precision: r.precision, certainty: r.certainty, note: r.note } })),
     unplaced: rows.filter((r) => !r.geometry).map(part),
+    routes: routes.map((r) => ({ type: 'Feature', geometry: r.geometry, properties: { layer: 'road', slug: r.slug, name: r.name, public_id: r.public_id, points: r.points, note: r.note } })),
   } };
 }
 

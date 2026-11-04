@@ -196,6 +196,7 @@ const ENTITIES = {
     detail: `t.kind, t.designation, place_qualifier(t.id) AS qualifier, range_json(t.existed, t.existed_label) AS existed, place_country(t.id)->>'code' AS country_code, t.boundary_code, (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = t.id) AS location,
              (SELECT jsonb_build_object('code', b.code, 'name', b.name) FROM boundaries b WHERE b.code = t.within_code AND b.level = 1) AS within,
              (SELECT ST_AsGeoJSON(g.outline)::jsonb FROM place_geo g WHERE g.id = t.id) AS area,
+             ST_AsGeoJSON(t.route)::jsonb AS route,
              (SELECT jsonb_build_object('location', CASE WHEN t.location IS NOT NULL THEN 'own' ELSE 'derived' END,
                                         'area', g.outline_source) FROM place_geo g WHERE g.id = t.id) AS geometry_source,
              t.description_md`,

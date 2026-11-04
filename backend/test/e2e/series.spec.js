@@ -78,6 +78,12 @@ test('a series with numbered parts: new and existing parts, order, neighbours, m
     place: { slug: 'the-hague', name: 'The Hague' }, certainty: 'probable', note: 'the beach at Scheveningen' });
   expect(placed.map((p) => p.slug)).toEqual(['print-twenty-one']);
   expect(map.parts.unplaced).toEqual([]);
+  // a road the views look from (212): a depicted place with a route line comes as `routes`, drawn on the map
+  sql("UPDATE places SET route = ST_GeogFromText('SRID=4326;LINESTRING(4.30 52.08, 4.60 52.20, 4.90 52.37)') WHERE slug = 'the-hague'");
+  const withRoad = await api(request, '/map/artworks/thirty-six-views-test');
+  expect(withRoad.parts.routes).toMatchObject([{ type: 'Feature', geometry: { type: 'LineString' }, properties: { layer: 'road', slug: 'the-hague', name: 'The Hague', points: 3, note: 'the beach at Scheveningen' } }]);
+  expect((await api(request, '/places/the-hague')).route).toMatchObject({ type: 'LineString' });
+  sql("UPDATE places SET route = NULL WHERE slug = 'the-hague'");
   sql("DELETE FROM relationships WHERE subject_id = entity_id('artwork', 'print-twenty-one') AND relationship_type = 'depicts'");
   expect((await api(request, '/map/artworks/thirty-six-views-test')).parts.unplaced).toMatchObject([{ number: '21', slug: 'print-twenty-one' }]);
   expect((await api(request, '/map/artworks/print-twenty-one')).parts).toBeUndefined();   // a part, not a whole
