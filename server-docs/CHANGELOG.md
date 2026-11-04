@@ -4,6 +4,29 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-04
 
+### CMS: forms that fill themselves out (relevance rules for every type)
+- **What:** owner 2026-11-04 ("forms as round and easy as possible"). One declarative mechanism replaces the two
+  special cases (`editor/sourceform.js` hid a source's fields by kind, `editor/artworkform.js` an artwork's object
+  fields for a group of works): `src/admin/relevance.js` declares per type a driver field (kind / category), per value
+  the fields it uses (`only`), the fields it needs (`need`), a note, plus cross-field rules (`when`: a link needs the
+  day it was read; a work on loan needs its lender and the date; a work in a museum its inventory number and page;
+  `fate`/`completion`/`authenticity` their date or note; a part its number; a creation span only for a dated range or
+  circa; `conceived` only for prints and casts; an artist or person without dates of life is asked when they were
+  active; a group of people has no life; an institution with a building needs its place and point, one without
+  (collection, foundation, firm …) only its place; a place's fields by kind — a country its codes, a region parent and
+  country, a settlement its point, a street or river its route …). The form carries the rules as `data-relevance`;
+  `editor/relevance.js` applies them as you type: unused fields hidden while empty (with a value: shown dimmed,
+  "unusual for a web page — kept because it has a value"), needed fields marked NEEDED with an accent border, a
+  checklist above the form ("Still to fill in for a web page: URL · Last accessed", links that open the group and
+  focus the field; "✓ Everything … is filled in"), "N fields not used … — show all" (remembered per type in the
+  browser), sections and groups hide when all their fields are, a closed group with a needed field opens once. Label
+  `URL` for a source's address. Unit test `test/relevance.test.js` (every rule names existing fields; a kind never
+  needs what it hides); e2e in forms.spec.js (two tests), groups.spec.js adjusted (`.relevance-note`). The citation
+  preview of sources stays in sourceform.js. The checklist is rebuilt only when it changes (a blur's change event
+  must not replace the link being clicked).
+- **Why:** 42 fields on a source, 39 on an artwork — the form should say what matters for what is being entered.
+- **Revert:** `git revert`; the forms work without script.
+
 ### Documentation draft: the Kunsthaus's photographs on Commons; bot protection on museum sites
 - **What:** two sections for the chapter "Inhalte erfassen", after "Bildrechte der Museen", saved as the owner's draft
   (`page_drafts`, part 8, base = the chapter as it was; nothing published): "Bilder des Kunsthauses über Wikimedia

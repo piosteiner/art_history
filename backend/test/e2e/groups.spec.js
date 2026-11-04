@@ -23,13 +23,13 @@ test('a group of versions: slim form, no web page asked of it, parts counted, la
 
   // the form: the fields of a single object hidden while empty; a painting again shows them
   await userA.goto('/artworks/test-grp/edit');
-  await expect(userA.locator('.group-note')).toBeVisible();
+  await expect(userA.locator('.relevance-note')).toContainText('A group of works');   // the relevance engine's note (2026-11-04)
   await expect(userA.locator('#f-medium')).toBeHidden();
   await expect(userA.locator('#f-inventory_number')).toBeHidden();
   await expect(userA.locator('#f-parts_count')).toBeVisible();
   await userA.fill('#f-kind', 'painting');
   await expect(userA.locator('#f-medium')).toBeVisible();
-  await expect(userA.locator('.group-note')).toBeHidden();
+  await expect(userA.locator('.relevance-note')).toBeHidden();
 
   // the API: the whole marked, with its parts and the first part's image; a part knows its whole's kind
   const list = (await api(request, '/artworks?limit=500')).data;

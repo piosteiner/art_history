@@ -665,3 +665,19 @@ button.theme-toggle:hover { color: var(--fg); border-color: var(--accent); }
 
 /* the account's own reference image standing in for a missing picture (entries.js) — marked as private */
 .own-image img, img.own-image { outline: 2px dashed var(--accent, #b4462b); outline-offset: -2px; }
+
+/* Forms that fill themselves out (editor/relevance.js, rules in src/admin/relevance.js): what the chosen kind needs is
+   marked and listed above the form; what it doesn't use is hidden while empty, dimmed when it has a value */
+.form-relevance { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; align-items: baseline; font-size: .9rem; padding: .5rem .75rem;
+  border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 6px; background: var(--panel); }
+.form-relevance[hidden] { display: none; }
+.form-relevance .relevance-missing a { margin-right: .1rem; }
+.form-relevance .relevance-done { color: var(--ok); }
+.form-relevance .relevance-toggle { margin-left: auto; color: var(--muted); font-size: .85rem; }
+.field.needed > label::after, .field.needed .label-row > label::after { content: 'needed'; font-size: .7rem; font-weight: 600; letter-spacing: .05em;
+  text-transform: uppercase; color: var(--accent); margin-left: .5rem; vertical-align: middle; }
+.field.needed input, .field.needed select, .field.needed textarea { border-color: var(--accent); }
+.field.unusual { opacity: .6; }
+.field.unusual::after { content: attr(data-unusual); display: block; color: var(--muted); font-size: .8rem; margin-top: .15rem; }
+.field[hidden] { display: none; }
+.relevance-note[hidden] { display: none; }

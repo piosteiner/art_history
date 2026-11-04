@@ -6,6 +6,7 @@ const { thumbUrl } = require('./images');
 const dimensions = require('../dimensions');
 const duplicates = require('./duplicates');
 const citations = require('./citations');
+const relevance = require('./relevance');
 
 // Language tags offered in the pickers (any BCP 47 tag can be typed).
 const LANGS = [['en', 'English'], ['de', 'German'], ['fr', 'French'], ['it', 'Italian'], ['nl', 'Dutch'], ['es', 'Spanish'],
@@ -45,6 +46,7 @@ const HINTS = {
 // Field names and explanations per entry type, where one word means different things ("kind" of an artwork vs. of a
 // place) or two fields are easily confused (an artwork's object type, medium and materials).
 const LABELS = {
+  'source.url': 'URL',
   // given and family names (066): the list sorts by family name; "Filed as" overrides (art names, single names)
   'artist.given_name': 'Given name(s)', 'artist.family_name': 'Family name', 'artist.sort_name': 'Filed as',
   'person.given_name': 'Given name(s)', 'person.family_name': 'Family name', 'person.sort_name': 'Filed as',
@@ -380,8 +382,7 @@ function fieldInput(key, kind, f, ctx) {
 // Every field of a type appears once; one not placed here lands in "More" (so a new field is never lost).
 const g = (summary, keys, hint = '', openForKinds = []) => ({ group: { summary, keys, hint, openForKinds } });
 // object types that open a group as soon as they are typed (editor.js): works that don't move, and wholes
-const IMMOVABLE = ['building', 'garden', 'park', 'bridge', 'temple hall', 'shrine', 'pagoda', 'gate', 'monument', 'tower', 'mural'];
-const WHOLES = ['series', 'versions', 'cycle', 'pair', 'album', 'diptych', 'triptych', 'polyptych', 'altarpiece', 'set'];
+const { IMMOVABLE, WHOLES } = relevance;
 const METADATA = g('Metadata (JSON)…', ['metadata'], 'Free-form extras — sources noted by the Wikidata comparison end up here.');
 const IDS = (...more) => ({ title: 'Identifiers', id: 'ids', rows: [...more, ['wikidata_id'], METADATA] });
 // provenance flag (068): the owner's research list — a group, closed unless it has a value
@@ -520,7 +521,7 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
   return html`
   ${errors.length ? html`<ul class="errors">${errors.map((e) => html`<li>${e}</li>`)}</ul>` : ''}
   ${ctx.errorKeys && ctx.errorKeys.size ? html`<p class="small error-fields">Marked in red: ${[...ctx.errorKeys].filter((k) => k === 'slug' || t.fields[k]).map((k, i) => html`${i ? ' · ' : ''}<a href="#f-${k}" data-error-field="${k}">${k === 'slug' ? 'Slug' : fieldLabel(t.type, k)}</a>`)}</p>` : ''}
-  <form method="post" action="${action}" class="form"${ctx.groupKinds && ctx.groupKinds.length ? html` data-group-kinds="${ctx.groupKinds.join('|')}"` : ''}${collab ? html` data-collab="${collab.key}" data-state="${collab.state}"` : html` data-draft="1"`}${collab && collab.published ? html` data-published="${Buffer.from(JSON.stringify(collab.published)).toString('base64')}" data-published-url="${action}/published.json"` : ''}>
+  <form method="post" action="${action}" class="form"${ctx.groupKinds && ctx.groupKinds.length ? html` data-group-kinds="${ctx.groupKinds.join('|')}"` : ''}${(() => { const r = relevance.rulesFor(t.type, ctx); return r ? html` data-relevance="${JSON.stringify(r)}"` : ''; })()}${collab ? html` data-collab="${collab.key}" data-state="${collab.state}"` : html` data-draft="1"`}${collab && collab.published ? html` data-published="${Buffer.from(JSON.stringify(collab.published)).toString('base64')}" data-published-url="${action}/published.json"` : ''}>
     ${version ? html`<input type="hidden" name="version" value="${version}">` : ''}
     ${isNew && ctx.duplicates ? duplicates.confirmBox(t, ctx.duplicates) : ''}
     ${isNew && ctx.typeCheck ? html`<div class="type-check">${ctx.typeCheck}</div>` : ''}

@@ -97,3 +97,71 @@ test('bibliography: a section whose fields the kind of source doesn\'t use is hi
   await userA.selectOption('#f-kind', 'article');
   await expect(userA.locator('#sec-container')).toBeVisible();
 });
+
+// ---- forms that fill themselves out (editor/relevance.js, rules in src/admin/relevance.js; owner 2026-11-04) ----
+test('relevance: a web source needs its address and the day it was read; publisher hidden; the checklist links to the field; show all', async ({ userA }) => {
+  await userA.goto('/bibliography/new');
+  await userA.selectOption('#f-kind', 'web');
+  const bar = userA.locator('.form-relevance');
+  await expect(bar).toContainText('Still to fill in for a web page');
+  await expect(bar.locator('a[data-focus]')).toHaveText(['Title', 'URL', 'Last accessed']);
+  await expect(userA.locator('.field', { has: userA.locator('#f-accessed') })).toHaveClass(/needed/);
+  await expect(userA.locator('#f-publisher')).toBeHidden();            // not used by a web page
+  await expect(userA.locator('#f-edition')).toBeHidden();                // (the section stays: year and edition_of are used)
+  await userA.fill('#f-name', 'Sammlung online');
+  await userA.fill('#f-url', 'https://collection.kunsthaus.ch/');
+  await expect(bar.locator('a[data-focus]')).toHaveText(['Last accessed']);
+  await bar.locator('a[data-focus="accessed"]').click();
+  await expect(userA.locator('#f-accessed')).toBeFocused();
+  await userA.fill('#f-accessed', '2026-11-04');
+  await expect(bar).toContainText('Everything for a web page is filled in');
+  await expect(userA.locator('.field', { has: userA.locator('#f-accessed') })).not.toHaveClass(/needed/);
+  // a book cited with a link: the day it was read is needed too
+  await userA.selectOption('#f-kind', 'book');
+  await expect(userA.locator('#f-publisher')).toBeVisible();
+  await expect(bar.locator('a[data-focus]')).toHaveText(['Authors', 'Place of publication', 'Publisher', 'Year']);   // in the form's order
+  await userA.fill('#f-accessed', '');
+  await expect(bar.locator('a[data-focus]')).toContainText(['Last accessed']);
+  // show all: the fields a book doesn't use come back, remembered in this browser
+  await bar.locator('.relevance-toggle').click();
+  await expect(userA.locator('#f-pages')).toBeVisible();
+  await userA.reload();
+  await expect(userA.locator('#f-pages')).toBeVisible();
+  await userA.locator('.form-relevance .relevance-toggle').click();
+  await expect(userA.locator('#f-pages')).toBeHidden();
+  // a value in a field the kind doesn't use is never hidden: shown dimmed
+  await userA.selectOption('#f-kind', 'article');
+  await userA.fill('#f-pages', '12–30');
+  await userA.selectOption('#f-kind', 'book');
+  await expect(userA.locator('#f-pages')).toBeVisible();
+  await expect(userA.locator('.field', { has: userA.locator('#f-pages') })).toHaveClass(/unusual/);
+});
+
+test('relevance: a place form follows its kind; an artwork on loan needs its lender date; an artist without dates of life is asked when they were active', async ({ userA }) => {
+  await userA.goto('/places/new');
+  await userA.selectOption('#f-kind', 'country');
+  const bar = userA.locator('.form-relevance');
+  await expect(bar.locator('a[data-focus]')).toHaveText(['Name', 'Country code', 'Boundary']);
+  await expect(userA.locator('.field', { has: userA.locator('#f-route') })).toBeHidden();
+  await expect(userA.locator('.relevance-note')).toContainText('outline comes with the boundary code');
+  await userA.selectOption('#f-kind', 'street');
+  await expect(userA.locator('.field', { has: userA.locator('#f-route') })).toBeVisible();   // (its GeoJSON sits in a closed details)
+  await expect(bar.locator('a[data-focus]')).toHaveText(['Name', 'Parent', 'Location']);
+  await expect(userA.locator('#f-boundary_code')).toBeHidden();
+
+  await userA.goto('/artworks/new');
+  await expect(bar.locator('a[data-focus]')).toHaveText(['Title', 'Created', 'Object type']);   // in the form's order
+  await expect(userA.locator('#f-on_loan_since')).toBeVisible();
+  await userA.selectOption('#f-on_loan', 'yes');
+  await expect(bar.locator('a[data-focus]')).toContainText(['Institution', 'On loan since']);
+  await userA.fill('#f-kind', 'series');
+  await expect(userA.locator('#f-inventory_number')).toBeHidden();      // a group of works: no object fields while empty
+  await expect(userA.locator('.relevance-note')).toContainText('A group of works');
+  await expect(bar.locator('a[data-focus]')).toContainText(['Number of parts']);
+
+  await userA.goto('/artists/new');
+  await expect(userA.locator('.field', { has: userA.locator('#f-active') })).toHaveClass(/needed/);
+  await expect(userA.locator('.relevance-note')).toContainText('when were they active');
+  await userA.fill('#f-birth', '1853');
+  await expect(userA.locator('#f-active')).toBeHidden();                 // dates of life: no need for an active period
+});
