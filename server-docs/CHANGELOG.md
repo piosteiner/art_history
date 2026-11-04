@@ -28,6 +28,9 @@ Format: date — what — why — how to revert.
   picks (`writeSelection` key); dragging the window along the timeline keeps the viewport as before.
 - **Why:** seen on the screenshots of the new views.
 - **Revert:** `git revert`.
+- Also: the Pages build failed on the site test "artists list: a museum's name finds the artists …" — with 554 artists
+  the list is now fetched in two pages of 500 and the test's route handler invented its three artists on each page
+  (counts doubled). It now rewrites the first page only; the other artists' fields are blanked so no real match slips in.
 
 ### Where a work was made: the artist's stay covering most of the creation span (migration 210)
 - **What:** `provenance_stops()`'s derived creation place (`place_basis = 'artist_residence'`, the hollow "probably"

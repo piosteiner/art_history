@@ -2373,14 +2373,17 @@ test('artists list: a museum’s name finds the artists with works there, now be
   await page.route(/\/v1\/artists\?/, async (route) => {
     const res = await route.fetch();
     const body = await res.json();
-    if (body.data.length < 3) return route.fulfill({ response: res });
+    // only the first page: the list is fetched in pages of 500 (listAll) and the three invented artists must not recur
+    if (body.data.length < 3 || /[?&]offset=[1-9]/.test(route.request().url())) return route.fulfill({ response: res });
     const field = (rank: number) => [rank === 1 ? { label: 'Works now in', text: 'Musée Test', tier: { rank: 1, heading: 'With works now in a matching collection' } }
       : { label: 'Works formerly in', text: 'Musée Test', tier: { rank: 2, heading: 'With works formerly in a matching collection' } }];
     const [a, b, c] = body.data;
     a.search_fields = field(2); a.collections = [{ slug: 'musee-test', name: 'Musée Test', now: 0, before: 2 }];
     b.search_fields = field(1); b.collections = [{ slug: 'musee-test', name: 'Musée Test', now: 1, before: 0 }];
     c.search_fields = field(1); c.collections = [{ slug: 'musee-test', name: 'Musée Test', now: 3, before: 1 }];
-    await route.fulfill({ response: res, json: { ...body, data: [a, b, c, ...body.data.slice(3)] } });
+    // the others must not match "musee test" through their real collections (a museum of Testaccio …)
+    const rest = body.data.slice(3).map((x: { search_fields?: unknown[]; collections?: unknown[] }) => ({ ...x, search_fields: [], collections: [] }));
+    await route.fulfill({ response: res, json: { ...body, data: [a, b, c, ...rest] } });
   });
   await page.goto('/artists');
   await page.fill('input.filter', 'musee test');
