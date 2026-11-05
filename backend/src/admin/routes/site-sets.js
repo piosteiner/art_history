@@ -379,6 +379,7 @@ router.get('/', async (req, res) => {
         (SELECT count(*)::int FROM study_set_proposals q WHERE q.set_id = s.id AND q.decided_at IS NULL) AS proposals,
         s.chat_on, CASE WHEN s.chat_on AND NOT EXISTS (SELECT 1 FROM set_chat_removed x WHERE x.set_id = s.id AND x.account_id = $1)
           THEN (SELECT count(*)::int FROM set_chat_messages m WHERE m.set_id = s.id AND m.sender_id IS DISTINCT FROM $1
+            AND NOT EXISTS (SELECT 1 FROM set_chat_hidden h WHERE h.set_id = s.id AND h.hider_id = $1 AND h.hidden_id = m.sender_id)
             AND m.id > coalesce((SELECT r.last_read_id FROM set_chat_reads r WHERE r.set_id = s.id AND r.account_id = $1), 0)) ELSE 0 END AS chat_unread,
         (SELECT count(*)::int FROM study_set_proposals q WHERE q.set_id = s.id AND q.decided_at IS NULL
            AND NOT EXISTS (SELECT 1 FROM study_set_votes v WHERE v.proposal_id = q.id AND v.voter_id = $1)) AS to_vote
@@ -726,7 +727,8 @@ router.get('/:id/chat', async (req, res) => {
   const set = await chatMember(req, res);
   if (!set) return;
   const members = (await adminPool.query(`SELECT u.id::text AS id, u.public_name AS name, u.id = s.owner_id AS owner, u.id = $2 AS me,
-      EXISTS (SELECT 1 FROM set_chat_removed x WHERE x.set_id = s.id AND x.account_id = u.id) AS removed
+      EXISTS (SELECT 1 FROM set_chat_removed x WHERE x.set_id = s.id AND x.account_id = u.id) AS removed,
+      EXISTS (SELECT 1 FROM set_chat_hidden h WHERE h.set_id = s.id AND h.hider_id = $2 AND h.hidden_id = u.id) AS hidden
     FROM study_sets s JOIN admin_users u ON u.id = s.owner_id OR u.id IN (SELECT e.account_id FROM study_set_editors e WHERE e.set_id = s.id)
     WHERE s.id = $1 ORDER BY u.id = s.owner_id DESC, lower(u.public_name)`, [set.id, req.user.id])).rows;
   if (!set.chat_on || (set.removed && !owns(set))) return res.json({ on: set.chat_on, removed: set.removed, messages: [], members: owns(set) ? members : [], more: false });
@@ -734,7 +736,8 @@ router.get('/:id/chat', async (req, res) => {
   const { rows } = await adminPool.query(`SELECT m.id::text AS id, m.kind, m.sender_id::text AS by_id, m.sender_id = $2 AS mine,
       (SELECT u.public_name FROM admin_users u WHERE u.id = m.sender_id) AS by,
       CASE WHEN m.deleted_at IS NULL THEN m.body END AS body, m.sent_at AS at,
-      CASE WHEN m.deleted_at IS NULL THEN NULL WHEN m.deleted_by_owner THEN 'owner' ELSE 'author' END AS deleted
+      CASE WHEN m.deleted_at IS NULL THEN NULL WHEN m.deleted_by_owner THEN 'owner' ELSE 'author' END AS deleted,
+      EXISTS (SELECT 1 FROM set_chat_hidden h WHERE h.set_id = m.set_id AND h.hider_id = $2 AND h.hidden_id = m.sender_id) AS hidden
     FROM set_chat_messages m WHERE m.set_id = $1 AND ($3::bigint IS NULL OR m.id < $3) ORDER BY m.id DESC LIMIT ${CHAT_PAGE + 1}`, [set.id, req.user.id, before]);
   if (rows[0]) await adminPool.query(`INSERT INTO set_chat_reads (set_id, account_id, last_read_id) VALUES ($1, $2, $3)
     ON CONFLICT (set_id, account_id) DO UPDATE SET last_read_id = greatest(set_chat_reads.last_read_id, EXCLUDED.last_read_id)`, [set.id, req.user.id, rows[0].id]);
@@ -778,6 +781,33 @@ const readmitOrRemove = (remove) => async (req, res) => {
   res.status(204).end();
 };
 router.post('/:id/chat/remove', readmitOrRemove(true));
+// hiding someone in the set's chat (226): only one's own view — nobody is told
+router.post('/:id/chat/hide', async (req, res) => {
+  const set = await chatMember(req, res);
+  if (!set) return;
+  const id = ID.test(String(req.body.account || '')) && String(req.body.account) !== String(req.user.id) ? req.body.account : null;
+  const { rows: [m] } = id ? await adminPool.query(`SELECT 1 FROM study_sets s WHERE s.id = $1 AND (s.owner_id = $2
+      OR EXISTS (SELECT 1 FROM study_set_editors e WHERE e.set_id = s.id AND e.account_id = $2))`, [set.id, id]) : { rows: [] };
+  if (!m) return fail(res, 404, 'not a member of this set');
+  if (req.body.hide === '0') await adminPool.query('DELETE FROM set_chat_hidden WHERE set_id = $1 AND hider_id = $2 AND hidden_id = $3', [set.id, req.user.id, id]);
+  else await adminPool.query('INSERT INTO set_chat_hidden (set_id, hider_id, hidden_id) VALUES ($1, $2, $3) ON CONFLICT DO NOTHING', [set.id, req.user.id, id]);
+  res.status(204).end();
+});
+
+// the set's members (226): its owner and editors — for the owner and the editors
+router.get('/:id/members', async (req, res) => {
+  const set = await ownSet(req);
+  if (!set) return fail(res, 404, 'not_found');
+  const { rows } = await adminPool.query(`SELECT u.id::text AS id, u.public_name AS name, CASE WHEN u.id = s.owner_id THEN 'owner' ELSE 'editor' END AS role,
+      CASE WHEN u.id = s.owner_id THEN s.created_at ELSE (SELECT e.added_at FROM study_set_editors e WHERE e.set_id = s.id AND e.account_id = u.id) END AS since,
+      (SELECT count(*)::int FROM study_set_items i WHERE i.set_id = s.id AND i.added_by = u.id) AS added,
+      u.id = $2 AS me, s.chat_on AS chat,
+      EXISTS (SELECT 1 FROM set_chat_removed x WHERE x.set_id = s.id AND x.account_id = u.id) AS removed,
+      EXISTS (SELECT 1 FROM set_chat_hidden h WHERE h.set_id = s.id AND h.hider_id = $2 AND h.hidden_id = u.id) AS hidden
+    FROM study_sets s JOIN admin_users u ON u.id = s.owner_id OR u.id IN (SELECT e.account_id FROM study_set_editors e WHERE e.set_id = s.id)
+    WHERE s.id = $1 ORDER BY u.id = s.owner_id DESC, lower(u.public_name)`, [set.id, req.user.id]);
+  res.json({ members: rows });
+});
 router.post('/:id/chat/readmit', readmitOrRemove(false));
 router.post('/:id/chat/report', async (req, res) => {
   const set = await chatMember(req, res);

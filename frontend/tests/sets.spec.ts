@@ -474,3 +474,45 @@ test('a set\'s owner: proposed removals with votes and the decision, the history
   await expect.poll(() => posts).toContain('/share:visibility=private');
   await expect(page.locator('.sets-share-link')).toHaveCount(0);
 });
+
+// 226: a set's members; someone hidden in the set's chat — their message a "hidden message" line, shown on a click
+test('a set\'s members, and a hidden member\'s message in the set\'s chat', async ({ page }) => {
+  await loggedIn(page);
+  const posts: string[] = [];
+  let hidden = true;
+  await page.route(/^http:\/\/admin\.test\/site\/sets\/56(\/.*)?$/, async (route) => {
+    const req = route.request();
+    const path = new URL(req.url()).pathname.replace(/^\/site\/sets\/56/, '');
+    const body = new URLSearchParams(req.postData() ?? '');
+    if (req.method() === 'POST') posts.push(`${path}:${body.toString()}`);
+    if (path === '/chat/hide') hidden = body.get('hide') !== '0';
+    const json = (b: unknown) => route.fulfill({ contentType: 'application/json', body: JSON.stringify(b),
+      headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' } });
+    if (path === '') return json({ set: { id: '56', name: 'Fuji together', topic: null, description: null, visibility: 'private', code: null, count: 0, created_at: '2026-11-01T12:00:00Z',
+      updated_at: '2026-11-05T09:00:00Z', role: 'editor', chat_on: true, editors: [{ id: '9', name: 'Me Editor', me: true }], creator: 'Ann Owner' }, items: [], proposals: [] });
+    if (path === '/members') return json({ members: [
+      { id: '8', name: 'Ann Owner', role: 'owner', since: '2026-11-01T12:00:00Z', added: 3, me: false, chat: true, removed: false, hidden },
+      { id: '9', name: 'Me Editor', role: 'editor', since: '2026-11-02T12:00:00Z', added: 1, me: true, chat: true, removed: false, hidden: false }] });
+    if (path === '/chat') return json({ on: true, removed: false, more: false,
+      members: [{ id: '8', name: 'Ann Owner', owner: true, removed: false, me: false, hidden }, { id: '9', name: 'Me Editor', owner: false, removed: false, me: true, hidden: false }],
+      messages: [{ id: '1', kind: 'message', by: 'Ann Owner', by_id: '8', mine: false, body: 'Something unkind', at: '2026-11-05T09:00:00Z', deleted: null, hidden }] });
+    if (path === '/stats') return json({ modes: {}, boxes: { forward: [0, 0, 0, 0, 0, 0], reverse: [0, 0, 0, 0, 0, 0] }, hardest: [] });
+    if (path === '/chat/hide') return route.fulfill({ status: 204, headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' } });
+    return json({});
+  });
+  await page.goto('/sets/56');
+  const members = page.locator('#sets-members');
+  await expect(members.locator('li')).toHaveCount(2);
+  await expect(members.locator('li').first()).toContainText('Ann Owner');
+  await expect(members.locator('li').first()).toContainText('3 entries added');
+  await expect(members.locator('li').first()).toContainText('hidden by you');
+  const chat = page.locator('#sets-chat');
+  await expect(chat.locator('.chat-hidden')).toContainText('hidden message');
+  await expect(chat).not.toContainText('Something unkind');
+  await chat.locator('[data-reveal="1"]').click();
+  await expect(chat).toContainText('Something unkind');
+  // shown again for good, from the members list
+  await members.locator('[data-hide="8"]').click();
+  await expect.poll(() => posts).toContain('/chat/hide:account=8&hide=0');
+  await expect(members.locator('li').first()).not.toContainText('hidden by you');
+});

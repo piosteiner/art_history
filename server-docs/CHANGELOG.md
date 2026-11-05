@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-05
 
+### A set's members; hiding someone in a set's chat (226)
+- **What:** owner 2026-11-05 (against harassment; unlike a report nothing leaves the account): `set_chat_hidden` (set,
+  hider, hidden). The hider's view gets the hidden member's messages as "hidden message" lines (`hidden: true`, a click
+  shows one), their messages don't count as unread; nobody is told — no system line, the owner and the hidden person
+  see nothing. `POST /site/sets/:id/chat/hide` (hide=0 shows again; members of the set only, not oneself);
+  `GET /site/sets/:id/members` (owner + editors: role, since, entries added, removed from the chat, hidden by the
+  viewer). Site: a "Members" section on a set's page (hide / show their messages, report, the owner's remove from /
+  let back into the chat); "hide" also in the chat's member list. Privacy statement: one sentence. Tests:
+  friends-chat.spec.js, frontend sets.spec.ts.
+- **Revert:** `git revert`; `DROP TABLE set_chat_hidden`.
+
 ### Friends and chat; a study set's chat; editors copy a set (224, 225)
 - **What** (owner 2026-11-05; chosen: live, private to the two with block and report, kept until the users delete):
   - Migration 224: `friendships` (one row per pair, `low_id < high_id` + primary key; `accepted_at` NULL = an open

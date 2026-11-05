@@ -1442,6 +1442,12 @@ button.danger { border-color: var(--accent); color: var(--accent); }
 .sets-propose { white-space: nowrap; }
 .sets-votes-waiting a { font-weight: 600; }
 
+/* a set's members (226) */
+.sets-members { margin: 1rem 0; }
+.sets-member-list { list-style: none; padding: 0; margin: .3rem 0; display: grid; gap: .35rem; }
+.sets-member-list li { display: flex; flex-wrap: wrap; gap: .3rem .6rem; align-items: baseline; }
+.sets-member-actions { margin-left: auto; display: inline-flex; gap: .7rem; }
+.chat-hidden { opacity: .75; }
 /* friends and chat (224, 225) */
 .friends-list { list-style: none; padding: 0; margin: .3rem 0 1rem; display: grid; gap: .35rem; }
 .friend { display: flex; flex-wrap: wrap; align-items: baseline; gap: .3rem .6rem; }

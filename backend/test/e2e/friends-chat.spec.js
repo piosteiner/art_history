@@ -118,3 +118,35 @@ test('a message arrives live: the event stream of the recipient gets it as it is
   const { message } = await call(userB, 'post', `/friends/chat/${a}`, { body: 'live?' }, 201);
   expect(await got).toEqual({ from: b, id: message.id });
 });
+
+test('a set\'s members; hiding someone in the set\'s chat: their messages stay as hidden lines for the hider only, no one is told', async ({ userA, userB }) => {
+  const a = sql("SELECT id FROM admin_users WHERE username = 'tester'");
+  const b = sql("SELECT id FROM admin_users WHERE username = 'tester2'");
+  const { set } = await call(userA, 'post', '/sets', { name: 'Test set chat hide' }, 201);
+  const code = (await call(userA, 'post', `/sets/${set.id}/editors`, { action: 'invite' }, 200)).set.edit_code;
+  await call(userB, 'post', `/shared/join/${code}`, {}, 201);
+  await call(userA, 'post', `/sets/${set.id}/items`, { type: 'artwork', slug: 'the-great-wave-off-kanagawa' }, 200);
+  await call(userA, 'post', `/sets/${set.id}/chat/switch`, { on: '1' }, 200);
+
+  // the members: owner and editor, since when, entries added — for both
+  const list = (await call(userB, 'get', `/sets/${set.id}/members`, null, 200)).members;
+  expect(list.map((m) => [m.name, m.role, m.added, m.me])).toEqual([['Test Ann', 'owner', 1, false], ['Test Bo', 'editor', 0, true]]);
+
+  // Bo hides Ann: Ann's messages are hidden lines in Bo's view only; not unread for Bo; Ann sees nothing of it
+  await call(userB, 'post', `/sets/${set.id}/chat/hide`, { account: a }, 204);
+  await call(userA, 'post', `/sets/${set.id}/chat`, { body: 'Test: something unkind' }, 201);
+  const bo = await call(userB, 'get', `/sets/${set.id}/chat`, null, 200);
+  expect(bo.messages.at(-1)).toEqual(expect.objectContaining({ by: 'Test Ann', hidden: true }));
+  expect(bo.members.find((m) => m.id === a).hidden).toBe(true);
+  expect((await call(userB, 'get', '/sets', null, 200)).sets.find((s) => s.id === set.id).chat_unread).toBe(0);
+  const ann = await call(userA, 'get', `/sets/${set.id}/chat`, null, 200);
+  expect(ann.messages.every((m) => !m.hidden)).toBe(true);
+  expect(ann.members.find((m) => m.id === b).hidden).toBe(false);
+  expect(ann.messages.some((m) => m.kind === 'system')).toBe(false);          // no line tells anyone
+  expect((await call(userA, 'get', `/sets/${set.id}/members`, null, 200)).members.every((m) => !m.hidden)).toBe(true);
+  // shown again
+  await call(userB, 'post', `/sets/${set.id}/chat/hide`, { account: a, hide: '0' }, 204);
+  expect((await call(userB, 'get', `/sets/${set.id}/chat`, null, 200)).messages.at(-1).hidden).toBe(false);
+  // not someone outside the set, not oneself
+  await call(userB, 'post', `/sets/${set.id}/chat/hide`, { account: b }, 404);
+});

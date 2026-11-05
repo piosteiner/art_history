@@ -25,7 +25,7 @@
 // with its result (per set and kind of quiz: the set page's "Your results"); visitors learn too, nothing is kept.
 import { account } from '../account';
 import {
-  answerCard, ApiError, chatEvents, copyOwnSet, copySet, deleteSetChat, getSetChat, postSetChat, reportSetChat, setChatMember, switchSetChat, createSet, decideRemoval, deleteSet, editSetEditors, getCards, getInvitation, getPublicSets, getSet, getSetHistory, getSets, getSetStats, joinSet,
+  answerCard, ApiError, chatEvents, copyOwnSet, getSetMembers, hideInSetChat, copySet, deleteSetChat, getSetChat, postSetChat, reportSetChat, setChatMember, switchSetChat, createSet, decideRemoval, deleteSet, editSetEditors, getCards, getInvitation, getPublicSets, getSet, getSetHistory, getSets, getSetStats, joinSet,
   leaveSet, lockSet, loginUrl, previewDescription, proposeRemoval, recordRound, removeFromSet, restoreSet, savePlan, shareSet, updateSet, voteRemoval,
   type SetChatMessage, type SetEvent, type SetRef, type StudyCard, type StudyItem, type StudyMode, type StudyPlan, type StudySet, type StudyStats,
 } from '../api';
@@ -267,6 +267,7 @@ function one(main: HTMLElement, ref: SetRef) {
       ${studyForm(ref, items.length, Boolean(me))}
       <p class="sets-msg small" role="status"></p>
       ${me ? html`<section class="sets-stats" aria-label="Your results"></section>` : ''}
+      ${own && set.editors?.length ? html`<section class="sets-members" id="sets-members" aria-label="Members"></section>` : ''}
       ${own && (set.chat_on || owner) && (set.editors?.length || set.chat_on) ? html`<section class="sets-chat" id="sets-chat" aria-label="The set's chat"></section>` : ''}
       ${own && proposals.length ? html`<section class="sets-proposals" id="sets-proposals"><h2>Proposed removals <span class="muted">${String(proposals.length)}</span></h2>
         <p class="muted small">${owner ? 'Your editors propose and vote; you decide — whenever you like, whatever the votes.' : 'Vote whether these entries should go; the owner decides.'}</p>
@@ -346,6 +347,8 @@ function one(main: HTMLElement, ref: SetRef) {
     });
     const chatBox = main.querySelector<HTMLElement>('.sets-chat');
     if (chatBox) setChat(chatBox, id, owner);
+    const membersBox = main.querySelector<HTMLElement>('.sets-members');
+    if (membersBox) members(membersBox, id, owner, () => { if (chatBox) setChat(chatBox, id, owner); });
     if (location.hash === '#sets-chat') chatBox?.scrollIntoView();
     main.querySelector('.sets-lock')?.addEventListener('click', () => {
       if (!locked && !confirm('Lock this set? Its editors can still study it, but change nothing until you unlock it.')) return;
@@ -371,6 +374,39 @@ function one(main: HTMLElement, ref: SetRef) {
   }).catch(() => failed(main, 'This set could not be loaded.'));
 }
 
+/** A set's members (226): its owner and editors with since when and how many entries they added; hide someone in
+ *  the chat (only your view — no one is told), report a name; the owner removes someone from the chat. */
+function members(box: HTMLElement, id: string, owner: boolean, chatChanged: () => void) {
+  const since = (iso: string | null) => (iso ? new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '');
+  const load = () => getSetMembers(id).then((list) => {
+    render(box, html`<h2>Members <span class="muted">${String(list.length)}</span></h2>
+      <ul class="sets-member-list">${list.map((m) => html`<li data-member="${m.id}"><b>${m.name ?? '—'}</b>
+        <span class="tag">${m.role}</span>${m.me ? html` <span class="muted small">(you)</span>` : ''}
+        <span class="muted small">since ${since(m.since)} · ${String(m.added)} ${m.added === 1 ? 'entry' : 'entries'} added</span>
+        ${m.chat && m.removed ? html` <span class="tag">removed from the chat</span>` : ''}${m.hidden ? html` <span class="tag" title="Only you see this">hidden by you</span>` : ''}
+        ${m.me ? '' : html`<span class="sets-member-actions small">
+          ${m.chat ? html`<button type="button" class="link-button" data-hide="${m.id}" data-on="${m.hidden ? '0' : '1'}" title="${m.hidden ? 'Show their messages again' : 'Hide their messages in your view of the chat — no one is told, not the owner and not them'}">${m.hidden ? 'Show their messages' : 'Hide in the chat'}</button>` : ''}
+          <button type="button" class="link-button" data-report="${m.id}">Report</button>
+          ${owner && m.chat && m.role !== 'owner' ? html`<button type="button" class="link-button" data-${m.removed ? 'readmit' : 'remove'}="${m.id}">${m.removed ? 'Let back into the chat' : 'Remove from the chat'}</button>` : ''}</span>`}</li>`)}</ul>
+      <p class="sets-members-msg small" role="status"></p>`);
+    const msg = box.querySelector<HTMLElement>('.sets-members-msg')!;
+    const after = () => { void load(); chatChanged(); };
+    box.querySelectorAll<HTMLButtonElement>('[data-hide]').forEach((b) => b.addEventListener('click', () => {
+      hideInSetChat(id, b.dataset.hide!, b.dataset.on === '1').then(after).catch((err: Error) => { msg.textContent = err.message; });
+    }));
+    box.querySelectorAll<HTMLButtonElement>('[data-report]').forEach((b) => b.addEventListener('click', () => {
+      const note = window.prompt('Report this member (their name or what they do) to the site\'s administrators? What happened? (optional)');
+      if (note === null) return;
+      reportSetChat(id, { account: b.dataset.report! }, note).then(() => { msg.textContent = 'Reported — thank you.'; }).catch((err: Error) => { msg.textContent = err.message; });
+    }));
+    box.querySelectorAll<HTMLButtonElement>('[data-remove]').forEach((b) => b.addEventListener('click', () => {
+      if (confirm('Remove them from the chat? Everyone sees that they were removed.')) setChatMember(id, 'remove', b.dataset.remove!).then(after).catch((err: Error) => { msg.textContent = err.message; });
+    }));
+    box.querySelectorAll<HTMLButtonElement>('[data-readmit]').forEach((b) => b.addEventListener('click', () => { setChatMember(id, 'readmit', b.dataset.readmit!).then(after).catch(() => {}); }));
+  }).catch(() => render(box, html`<p class="muted small">The members could not be loaded.</p>`));
+  void load();
+}
+
 let chatStream: EventSource | null = null;
 /** A set's chat (225): its owner and editors; the owner switches it on, removes members, deletes messages; anyone
  *  reports a message or a member. Live: the account's event stream says when the set has a new line. */
@@ -381,6 +417,8 @@ function setChat(box: HTMLElement, id: string, owner: boolean) {
   const when = (iso: string) => new Date(iso).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
   const line = (m: SetChatMessage) => (m.kind === 'system' ? html`<li class="chat-system muted small">${m.body} · ${when(m.at)}</li>`
     : m.deleted ? html`<li class="chat-msg chat-deleted muted small"><i>${m.deleted === 'owner' ? 'message deleted by the owner of the set' : 'message deleted'}</i></li>`
+      : m.hidden ? html`<li class="chat-msg chat-hidden muted small" data-id="${m.id}"><b class="chat-by">${m.by ?? '—'}</b> <i>hidden message</i>
+        <button type="button" class="link-button" data-reveal="${m.id}" title="You hid ${m.by ?? 'them'} in this chat — show this one message">show</button></li>`
       : html`<li class="chat-msg${m.mine ? ' mine' : ''}" data-id="${m.id}"><b class="chat-by">${m.by ?? '—'}</b> <span class="chat-body">${m.body}</span>
         <span class="chat-meta muted small">${when(m.at)}
           ${m.mine || owner ? html` <button type="button" class="link-button" data-del="${m.id}" title="${m.mine ? 'Delete your message' : 'Delete as the owner of the set'}">delete</button>` : ''}
@@ -401,7 +439,8 @@ function setChat(box: HTMLElement, id: string, owner: boolean) {
       <form class="chat-form"><textarea name="body" rows="2" maxlength="4000" placeholder="Write to everyone in this set — Enter sends" aria-label="Message to the set" required></textarea><button type="submit">Send</button></form>
       <details class="sets-chat-members small"><summary>Members</summary><ul>${r.members.map((m) => html`<li data-member="${m.id}">${m.name ?? '—'}${m.owner ? html` <span class="tag">owner</span>` : ''}${m.removed ? html` <span class="tag">removed</span>` : ''}${m.me ? html` <span class="muted">(you)</span>` : ''}
         ${owner && !m.owner ? (m.removed ? html` <button type="button" class="link-button" data-readmit="${m.id}">Let back in</button>` : html` <button type="button" class="link-button" data-remove="${m.id}">Remove from the chat</button>`) : ''}
-        ${m.me ? '' : html` <button type="button" class="link-button" data-report-user="${m.id}">report</button>`}</li>`)}</ul>
+        ${m.me ? '' : html` <button type="button" class="link-button" data-hide="${m.id}" data-on="${m.hidden ? '0' : '1'}" title="${m.hidden ? 'Show their messages again' : 'Hide their messages in your view — no one is told'}">${m.hidden ? 'show their messages' : 'hide'}</button>
+          <button type="button" class="link-button" data-report-user="${m.id}">report</button>`}</li>`)}</ul>
         ${owner ? html`<p><button type="button" class="link-button sets-chat-off">Switch the chat off</button> <span class="muted">— the messages stay; on again, they are back.</span></p>` : ''}</details>
       <p class="chat-msg-status small" role="status"></p>`);
     void others;
@@ -412,6 +451,10 @@ function setChat(box: HTMLElement, id: string, owner: boolean) {
     const ta = form.querySelector('textarea')!;
     form.addEventListener('submit', (e) => { e.preventDefault(); const b = ta.value.trim(); if (!b) return; postSetChat(id, b).then(() => { ta.value = ''; return load(); }).catch((err: Error) => { status.textContent = err.message; }); });
     ta.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); } });
+    box.querySelectorAll<HTMLButtonElement>('[data-reveal]').forEach((b) => b.addEventListener('click', () => {
+      const m = shown.find((x) => x.id === b.dataset.reveal);
+      if (m) { m.hidden = false; b.closest('li')!.outerHTML = line(m).value; }
+    }));
     box.querySelectorAll<HTMLButtonElement>('[data-del]').forEach((b) => b.addEventListener('click', () => {
       if (!confirm(owner && !b.closest('.mine') ? 'Delete this message? Everyone sees “message deleted by the owner of the set”.' : 'Delete your message?')) return;
       deleteSetChat(id, b.dataset.del!).then(load).catch((err: Error) => { status.textContent = err.message; });
@@ -425,6 +468,9 @@ function setChat(box: HTMLElement, id: string, owner: boolean) {
     box.querySelectorAll<HTMLButtonElement>('[data-report-user]').forEach((b) => b.addEventListener('click', () => report({ account: b.dataset.reportUser! }, 'this member (their name)')));
     box.querySelectorAll<HTMLButtonElement>('[data-remove]').forEach((b) => b.addEventListener('click', () => {
       if (confirm('Remove them from the chat? Everyone sees that they were removed; they stay an editor of the set unless you remove them there too.')) setChatMember(id, 'remove', b.dataset.remove!).then(load).catch((err: Error) => { status.textContent = err.message; });
+    }));
+    box.querySelectorAll<HTMLButtonElement>('[data-hide]').forEach((b) => b.addEventListener('click', () => {
+      hideInSetChat(id, b.dataset.hide!, b.dataset.on === '1').then(load).catch((err: Error) => { status.textContent = err.message; });
     }));
     box.querySelectorAll<HTMLButtonElement>('[data-readmit]').forEach((b) => b.addEventListener('click', () => { setChatMember(id, 'readmit', b.dataset.readmit!).then(load).catch(() => {}); }));
     box.querySelector('.sets-chat-off')?.addEventListener('click', () => { if (confirm('Switch the chat off for everyone?')) switchSetChat(id, false).then(load).catch(() => {}); });

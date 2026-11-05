@@ -340,8 +340,12 @@ export const reportChat = (id: string, note: string) => account<{ ok: boolean }>
 /** The live stream of chat events for the logged-in account (null in development without an admin host). */
 export const chatEvents = () => (ADMIN ? new EventSource(`${ADMIN}/site/friends/events`, { withCredentials: true }) : null);
 // a set's chat (225)
-export interface SetChatMessage { id: string; kind: 'message' | 'system'; by: string | null; by_id: string | null; mine: boolean; body: string | null; at: string; deleted: 'owner' | 'author' | null }
-export interface SetChatMember { id: string; name: string | null; owner: boolean; removed: boolean; me: boolean }
+export interface SetChatMessage { id: string; kind: 'message' | 'system'; by: string | null; by_id: string | null; mine: boolean; body: string | null; at: string; deleted: 'owner' | 'author' | null; hidden?: boolean }
+export interface SetChatMember { id: string; name: string | null; owner: boolean; removed: boolean; me: boolean; hidden?: boolean }
+/** A set's members (226): owner and editors, since when, how many entries they added; hidden = the viewer hid them in the chat */
+export interface SetMember { id: string; name: string | null; role: 'owner' | 'editor'; since: string | null; added: number; me: boolean; chat: boolean; removed: boolean; hidden: boolean }
+export const getSetMembers = (id: string) => account<{ members: SetMember[] }>(`/sets/${id}/members`).then((r) => r?.members ?? []);
+export const hideInSetChat = (id: string, accountId: string, hide: boolean) => account<null>(`/sets/${id}/chat/hide`, form({ account: accountId, hide: hide ? '1' : '0' }));
 export const getSetChat = (id: string, before = '') => account<{ on: boolean; removed: boolean; messages: SetChatMessage[]; members: SetChatMember[]; more: boolean }>(`/sets/${id}/chat${before ? `?before=${before}` : ''}`);
 export const switchSetChat = (id: string, on: boolean) => account<{ on: boolean }>(`/sets/${id}/chat/switch`, form({ on: on ? '1' : '0' }));
 export const postSetChat = (id: string, body: string) => account<{ id: string }>(`/sets/${id}/chat`, form({ body }));
