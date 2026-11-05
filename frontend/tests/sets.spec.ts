@@ -9,7 +9,7 @@ interface FakeSet {
   id: string; name: string; topic: string | null; description: string | null; visibility: 'private' | 'shared' | 'public'; code: string | null;
   items: { type: string; slug: string; name: string }[];
   members?: { id: string; name: string; me: boolean; rights: string; chat: boolean }[]; updated_by?: string | null;
-  links?: { id: string; code: string; rights: string; created_at: string; ended_at: string | null; joined: number }[];
+  links?: { id: string; code: string; rights: string; created_at: string; ended_at: string | null; joined: number; expires_at: string | null; max_joins: number | null; closed: string | null }[];
 }
 const CODE = 'AbCdEfGh1234';
 const JOIN = 'JoinMeToEdit1234';   // a link to join set 77 as an editor with approval (228)
@@ -59,6 +59,7 @@ async function loggedIn(page: Page, { login = true, conflict = false } = {}) {
       return json(route, { set: { ...(joined ? { id: '77' } : {}), name: 'Baroque together', topic: 'Baroque', creator: 'Mr Owner', count: 3, members: 1, editors: 1, viewers: 0, vote_mode: 'advisory' },
         rights: 'approval', role: joined ? 'editor' : null, public_name: publicName });
     }
+    if (path === '/shared/join/ExpiredLink12345') return json(route, { error: 'this link has expired', closed: 'expired' }, 410);
     if (path === '/signup') return json(route, { open: true, url: 'http://admin.test/signup' });
     if (!login) return json(route, { error: 'not_logged_in' }, 401);
     if (path === `/shared/join/${JOIN}`) {
@@ -113,11 +114,13 @@ async function loggedIn(page: Page, { login = true, conflict = false } = {}) {
       publicName = publicName ?? (form.get('public_name') || null);
       if (!publicName) return json(route, { error: 'the members see your public name — choose one first' }, 422);
       if (s.visibility === 'private') s.visibility = 'shared';
-      const link = { id: String((s.links ?? []).length + 1), code: 'InviteLink123456', rights: form.get('rights')!, created_at: '2026-11-05T12:00:00Z', ended_at: null, joined: 0 };
+      posts.push(`limits:${form.get('expires_on') ?? ''}:${form.get('max_joins') ?? ''}`);
+      const link = { id: String((s.links ?? []).length + 1), code: 'InviteLink123456', rights: form.get('rights')!, created_at: '2026-11-05T12:00:00Z', ended_at: null, joined: 0,
+        expires_at: form.get('expires_on') ? `${form.get('expires_on')!}T23:00:00Z` : null, max_joins: form.get('max_joins') ? Number(form.get('max_joins')) : null, closed: null };
       s.links = [...(s.links ?? []), link];
       return json(route, { link }, 201);
     }
-    if (m![2]?.endsWith('/end')) { s.links = (s.links ?? []).map((l) => ({ ...l, ended_at: '2026-11-05T13:00:00Z' })); posts.push('link:end'); return route.fulfill({ status: 204, headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' } }); }
+    if (m![2]?.endsWith('/end')) { s.links = (s.links ?? []).map((l) => ({ ...l, ended_at: '2026-11-05T13:00:00Z', closed: 'off' })); posts.push('link:end'); return route.fulfill({ status: 204, headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' } }); }
     if (m![2]?.startsWith('/members/')) {
       const who = m![2].split('/')[2];
       posts.push(`member:${who}:${form.toString()}`);
@@ -376,12 +379,17 @@ test('members: the owner\'s panel — rights changed, a link with rights, a memb
   await panel.locator('.sets-link-form button').click();
   await expect(page.locator('.sets-panel-msg')).toContainText('public name');
   await panel.locator('.sets-vis-form input[name=public_name]').fill('Mr Owner');
+  // optional limits (230): a last day and at most how many join
+  await panel.locator('.sets-link-form input[name=expires_on]').fill('2026-12-31');
+  await panel.locator('.sets-link-form input[name=max_joins]').fill('3');
   await panel.locator('.sets-link-form button').click();
   await expect(panel.locator('.sets-links input')).toHaveValue(/\/sets\/join\/InviteLink123456$/);
   await expect(panel.locator('.sets-links .tag')).toHaveText('Editor with approval');
+  await expect(panel.locator('.sets-links')).toContainText('0 of 3 joined · works until 31 December 2026');
+  expect(account.posts).toContain('limits:2026-12-31:3');
   await panel.locator('[data-end]').click();
   await expect(panel.locator('.sets-links')).toHaveCount(0);
-  await expect(panel).toContainText('Turned off (1)');
+  await expect(panel).toContainText('No longer open (1)');
   await panel.locator('[data-remove="5"]').click();
   await expect(panel).toContainText('No members yet');
 
@@ -405,6 +413,9 @@ test('members: the owner\'s panel — rights changed, a link with rights, a memb
   await expect(page.locator('.sets-join button')).toHaveText('Join as an editor');
   await page.locator('.sets-join button').click();
   await expect(page).toHaveURL(/\/sets\/77$/);
+  // a link past its last day says so
+  await page.goto('/sets/join/ExpiredLink12345');
+  await expect(page.locator('.flash')).toContainText('This link has expired — ask the owner of the set for a new one.');
   expect(errors).toEqual([]);
 });
 
@@ -568,6 +579,7 @@ test('rights on the member\'s side: editing with approval proposes; a viewer onl
   const posts: string[] = [];
   let rights = 'approval';
   let invited = true;
+  let stale = true;   // the first Accept: the set was made private meanwhile
   const cors = { 'access-control-allow-origin': 'http://localhost:5180', 'access-control-allow-credentials': 'true' };
   await page.route(/^http:\/\/admin\.test\/site\/sets(\/57(\/.*)?|\/invitations\/57)?$/, async (route) => {
     const req = route.request();
@@ -577,7 +589,10 @@ test('rights on the member\'s side: editing with approval proposes; a viewer onl
     const json = (b: unknown, status = 200) => route.fulfill({ status, contentType: 'application/json', body: JSON.stringify(b), headers: { ...cors, 'access-control-allow-origin': new URL(page.url()).origin } });
     if (path === '') return json({ sets: [], public_name: 'Me Member', topics: [], invitations: invited ? [{ set_id: 57, name: 'Fuji together', topic: 'Japanese art', creator: 'Ann Owner', rights: 'vote', chat: false,
       invited_at: '2026-11-05T09:00:00Z', vote_mode: 'binding', count: 2 }] : [] });
-    if (path === '/invitations/57') { invited = false; return json({ set: { id: '57' } }); }
+    if (path === '/invitations/57') {
+      if (stale) { stale = false; invited = false; return json({ error: 'this invitation is no longer valid — the set was deleted or made private, or the owner withdrew it' }, 404); }
+      invited = false; return json({ set: { id: '57' } });
+    }
     if (path === '/57') return json({ set: { id: '57', name: 'Fuji together', topic: null, description: null, visibility: 'shared', code: null, count: 1, created_at: '2026-11-01T12:00:00Z',
       updated_at: '2026-11-05T09:00:00Z', role: rights === 'view' ? 'viewer' : 'editor', rights, chat_on: false, chat_allowed: rights !== 'view', vote_mode: 'binding', vote_hours: 6, owner_veto: true,
       members: [{ id: '9', name: 'Me Member', me: true, rights, chat: false }], creator: 'Ann Owner' },
@@ -595,6 +610,12 @@ test('rights on the member\'s side: editing with approval proposes; a viewer onl
   await expect(inv).toContainText('as Editor with votes');
   await expect(inv.locator('.sets-invitation-rights')).toContainText('more Yes than No accepts the change');
   await inv.locator('[data-accept="1"]').click();
+  // no longer valid: a sentence that says why, and the list as it is now
+  await expect(page.locator('.sets-msg')).toContainText('This invitation is no longer valid — the set was deleted or made private');
+  await expect(page.locator('.sets-invitations')).toHaveCount(0);
+  invited = true;
+  await page.reload();
+  await page.locator('.sets-invitations [data-accept="1"]').click();
   await expect(page).toHaveURL(/\/sets\/57$/);
   expect(posts).toContain('/invitations/57:accept=1');
 

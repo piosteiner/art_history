@@ -500,14 +500,16 @@ export const forgetResults = (key: string) => account<{ deleted: number }>('/set
 /** The account's exam date for a set (YYYY-MM-DD; '' = none) → the day's plan */
 export const savePlan = (ref: SetRef, examOn: string) => account<{ plan: StudyPlan }>(`${base(ref)}/plan`, form({ exam_on: examOn })).then((r) => r?.plan ?? null);
 // members, links, invitations, the kind of vote (228) — the owner's
-export interface SetLink { id: string; code: string; rights: SetRights; created_at: string; ended_at: string | null; joined: number }
+/** A link to join (228); `closed`: why no one new joins with it any more — turned off, past its end date, full (230) */
+export interface SetLink { id: string; code: string; rights: SetRights; created_at: string; ended_at: string | null; joined: number; expires_at: string | null; max_joins: number | null; closed: 'off' | 'expired' | 'full' | null }
 export interface SetSharing {
   links: SetLink[]; invitations: { id: string; name: string | null; rights: SetRights; chat: boolean; invited_at: string }[];
   friends: { id: string; name: string | null }[];
   settings: { visibility: Visibility; vote_mode: VoteMode; vote_hours: number; owner_veto: boolean };
 }
 export const getSharing = (id: string) => account<SetSharing>(`/sets/${id}/sharing`);
-export const newSetLink = (id: string, rights: SetRights, publicName = '') => account<{ link: SetLink }>(`/sets/${id}/links`, form({ rights, public_name: publicName })).then((r) => r?.link ?? null);
+export const newSetLink = (id: string, rights: SetRights, publicName = '', limits: { expires_on?: string; max_joins?: string } = {}) =>
+  account<{ link: SetLink }>(`/sets/${id}/links`, form({ rights, public_name: publicName, expires_on: limits.expires_on ?? '', max_joins: limits.max_joins ?? '' })).then((r) => r?.link ?? null);
 export const endSetLink = (id: string, lid: string) => account<null>(`/sets/${id}/links/${lid}/end`, form({}));
 export const inviteToSet = (id: string, accountId: string, rights: SetRights, chat: boolean, publicName = '') =>
   account<{ ok: boolean }>(`/sets/${id}/invitations`, form({ account: accountId, rights, chat: chat ? '1' : '0', public_name: publicName }));

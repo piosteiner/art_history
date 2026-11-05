@@ -216,11 +216,33 @@ test('members: links with rights, joined, turned off; friends invited; a full ed
   await post(userB, `/../shared/join/${link.code}`, {}, 201);
   await post(userA, `/${set.id}/links/${link.id}/end`, {}, 204);
   await get(userB, `/${set.id}`);   // who joined stays
-  expect((await request.get(`/site/shared/join/${link.code}`, { headers: H })).status()).toBe(404);
+  const off = await request.get(`/site/shared/join/${link.code}`, { headers: H });
+  expect(off.status()).toBe(410);
+  expect((await off.json()).closed).toBe('off');
   const member = (await get(userA, `/${set.id}`)).set.members[0];
   await post(userA, `/${set.id}/members/${member.id}`, { action: 'remove' });
   await get(userB, `/${set.id}`, 404);
-  await post(userB, `/../shared/join/${link.code}`, {}, 404);
+  await post(userB, `/../shared/join/${link.code}`, {}, 410);
+
+  // a link with a limit (230): full after one join; one with an end date: expired after it — no one new joins
+  await post(userA, `/${set.id}/links`, { rights: 'view', max_joins: '0' }, 422);
+  await post(userA, `/${set.id}/links`, { rights: 'full', max_joins: '51' }, 422);
+  await post(userA, `/${set.id}/links`, { rights: 'view', expires_on: '2001-01-01' }, 422);
+  const once = (await post(userA, `/${set.id}/links`, { rights: 'view', max_joins: '1' }, 201)).link;
+  expect(once).toEqual(expect.objectContaining({ max_joins: 1, joined: 0, closed: null }));
+  await post(userB, `/../shared/join/${once.code}`, {}, 201);
+  await post(userB, `/${set.id}/leave`, {}, 204);
+  const full = await request.get(`/site/shared/join/${once.code}`, { headers: H });
+  expect(full.status()).toBe(410);
+  expect(await full.json()).toEqual(expect.objectContaining({ closed: 'full' }));
+  const lastDay = sql("SELECT ((now() AT TIME ZONE 'Europe/Zurich')::date + 3)::text");
+  const dated = (await post(userA, `/${set.id}/links`, { rights: 'view', expires_on: lastDay }, 201)).link;
+  // valid until the end of that day in Zurich
+  expect(sql(`SELECT (expires_at AT TIME ZONE 'Europe/Zurich')::text FROM study_set_links WHERE id = ${dated.id}`)).toBe(`${sql(`SELECT ('${lastDay}'::date + 1)::text`)} 00:00:00`);
+  expect((await request.get(`/site/shared/join/${dated.code}`, { headers: H })).status()).toBe(200);
+  sql(`UPDATE study_set_links SET expires_at = now() - interval '1 minute' WHERE id = ${dated.id}`);
+  await post(userB, `/../shared/join/${dated.code}`, {}, 410);
+  expect((await get(userA, `/${set.id}/sharing`)).links.filter((l) => l.closed).map((l) => l.closed).sort()).toEqual(['expired', 'full', 'off']);
 
   // friends are invited with rights: the invitation waits in their list until accepted or declined
   const [a, b] = ['tester', 'tester2'].map((u) => sql(`SELECT id FROM admin_users WHERE username = '${u}'`));
@@ -235,6 +257,13 @@ test('members: links with rights, joined, turned off; friends invited; a full ed
     await post(userA, `/${set.id}/invitations`, { account: b, rights: 'view' }, 201);
     await post(userB, `/invitations/${set.id}`, { accept: '1' });
     expect((await get(userB, `/${set.id}`)).set).toEqual(expect.objectContaining({ role: 'viewer', rights: 'view', chat_allowed: false }));
+    // an invitation to a set made private meanwhile: refused with a sentence that says why
+    await post(userB, `/${set.id}/leave`, {}, 204);
+    await post(userA, `/${set.id}/invitations`, { account: b, rights: 'view' }, 201);
+    await post(userA, `/${set.id}/share`, { visibility: 'private' });
+    const stale = await userB.request.post(`/site/sets/invitations/${set.id}`, { headers: H, form: { accept: '1' } });
+    expect(stale.status()).toBe(404);
+    expect((await stale.json()).error).toContain('no longer valid');
   } finally {
     sql(`DELETE FROM friendships WHERE (low_id, high_id) = (least(${a}, ${b}), greatest(${a}, ${b}))`);
   }

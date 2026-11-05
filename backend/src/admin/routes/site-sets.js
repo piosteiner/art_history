@@ -35,7 +35,8 @@
 //   GET  /site/shared/join/:code          {set: {name, topic, creator, count, members}, rights, role} — what the link is for
 //   POST /site/shared/join/:code          logged in: public_name (if none yet) → {set: {id}} — joined with the link's rights
 //   GET  /site/sets/:id/sharing           the owner: {links, invitations, friends, settings}
-//   POST /site/sets/:id/links             the owner: rights → a new link (a private set becomes shared)
+//   POST /site/sets/:id/links             the owner: rights, expires_on (optional, the last day), max_joins (optional) → a
+//                                         new link (a private set becomes shared). A link off, expired or full → 410 on joining
 //   POST /site/sets/:id/links/:lid/end    the owner: no one new joins with it; those who did stay
 //   POST /site/sets/:id/invitations       the owner: account (a friend), rights, chat → invited; action=cancel
 //   POST /site/sets/invitations/:sid      the invited: accept=1|0
@@ -308,7 +309,8 @@ shared.get('/', async (req, res) => {
   res.json({ sets: (await described(sets)).map(({ id, ...s }) => s), topics });
 });
 
-// links to join a set with the rights they carry (228) — a link turned off lets no one new in
+// links to join a set with the rights they carry (228) — a link turned off, past its end date or full (230: l.usable)
+// lets no one new in; `closed` says which
 async function linkedSet(req) {
   if (!LINK_CODE.test(req.params.code)) return null;
   const { rows: [set] } = await adminPool.query(`SELECT s.id, s.name, s.topic, s.visibility, ${CREATOR}, l.id AS link_id, l.rights::text AS rights,
@@ -318,9 +320,9 @@ async function linkedSet(req) {
       (SELECT count(*)::int FROM study_set_members e WHERE e.set_id = s.id AND e.rights = 'view') AS viewers,
       CASE WHEN s.owner_id = $2 THEN 'owner' ELSE (SELECT CASE WHEN e.rights = 'view' THEN 'viewer' ELSE 'editor' END
         FROM study_set_members e WHERE e.set_id = s.id AND e.account_id = $2) END AS role,
-      s.vote_mode
+      s.vote_mode, l.closed_because AS closed, l.expires_at, l.max_joins, l.joined
     FROM study_set_links l JOIN study_sets s ON s.id = l.set_id
-    WHERE l.code = $1 AND l.ended_at IS NULL AND s.visibility <> 'private' AND ${ALIVE}`, [req.params.code, req.user ? req.user.id : null]);
+    WHERE l.code = $1 AND s.visibility <> 'private' AND ${ALIVE}`, [req.params.code, req.user ? req.user.id : null]);
   return set || null;
 }
 /** The public name others see — chosen now if there is none yet; an error text or null. */
@@ -341,26 +343,35 @@ async function roomFor(setId, rights) {
   if (rights === 'view' && n.viewers >= MAX_VIEWERS) return `at most ${MAX_VIEWERS} viewers in a set`;
   return null;
 }
+// a link that no longer lets anyone new in: 410 with why (off | expired | full) — its members are sent to the set
+const LINK_CLOSED = { off: 'the owner has turned this link off', expired: 'this link has expired', full: 'as many people as this link allows have joined with it' };
+const linkClosed = (res, set) => res.status(410).json({ error: LINK_CLOSED[set.closed], closed: set.closed });
 shared.get('/join/:code', async (req, res) => {
   const set = await linkedSet(req);
   if (!set) return fail(res, 404, 'not_found');
-  const { id, link_id: lid, role, ...rest } = set;
+  if (set.closed && !set.role) return linkClosed(res, set);
+  const { id, link_id: lid, role, closed, joined, ...rest } = set;
   res.json({ set: role ? { id, ...rest } : rest, rights: set.rights, role, public_name: req.user ? req.user.public_name : null });
 });
 shared.post('/join/:code', needLogin, async (req, res) => {
   const set = await linkedSet(req);
   if (!set) return fail(res, 404, 'not_found');
   if (set.role) return res.json({ set: { id: set.id } });
+  if (set.closed) return linkClosed(res, set);
   const why = await ensurePublicName(req, 'the other members see your public name — choose one first');
   if (why) return fail(res, 422, why);
   const full = await roomFor(set.id, set.rights);
   if (full) return fail(res, 422, full);
-  const { rowCount } = await adminPool.query(`INSERT INTO study_set_members (set_id, account_id, rights, via) VALUES ($1, $2, $3, 'link') ON CONFLICT DO NOTHING`,
-    [set.id, req.user.id, set.rights]);
-  if (rowCount) {
-    await adminPool.query('UPDATE study_set_links SET joined = joined + 1 WHERE id = $1', [set.link_id]);
-    await adminPool.query('DELETE FROM study_set_invitations WHERE set_id = $1 AND account_id = $2', [set.id, req.user.id]);
-  }
+  // counted and joined in one transaction: the link's row is taken only while it is usable — of two joining at once
+  // for its last place, the second finds it full
+  const joined = await asUser(req, async (db) => {
+    const { rowCount: counted } = await db.query('UPDATE study_set_links l SET joined = joined + 1 WHERE l.id = $1 AND l.usable', [set.link_id]);
+    if (!counted) return false;
+    await db.query(`INSERT INTO study_set_members (set_id, account_id, rights, via) VALUES ($1, $2, $3, 'link') ON CONFLICT DO NOTHING`, [set.id, req.user.id, set.rights]);
+    await db.query('DELETE FROM study_set_invitations WHERE set_id = $1 AND account_id = $2', [set.id, req.user.id]);
+    return true;
+  });
+  if (!joined) return linkClosed(res, (await linkedSet(req)) || { closed: 'off' });
   res.status(201).json({ set: { id: set.id } });
 });
 
@@ -785,8 +796,9 @@ router.get('/:id/sharing', async (req, res) => {
   if (!set) return fail(res, 404, 'not_found');
   if (ownerOnly(res, set)) return;
   const [{ rows: links }, { rows: invitations }, { rows: friends }] = await Promise.all([
-    adminPool.query(`SELECT id::text AS id, code, rights::text AS rights, created_at, ended_at, joined FROM study_set_links
-      WHERE set_id = $1 ORDER BY ended_at IS NULL DESC, created_at DESC LIMIT ${LINKS_SHOWN}`, [set.id]),
+    adminPool.query(`SELECT l.id::text AS id, l.code, l.rights::text AS rights, l.created_at, l.ended_at, l.joined, l.expires_at, l.max_joins,
+        l.closed_because AS closed FROM study_set_links l
+      WHERE l.set_id = $1 ORDER BY l.usable DESC, l.created_at DESC LIMIT ${LINKS_SHOWN}`, [set.id]),
     adminPool.query(`SELECT i.account_id::text AS id, u.public_name AS name, i.rights::text AS rights, i.chat, i.invited_at
       FROM study_set_invitations i JOIN admin_users u ON u.id = i.account_id WHERE i.set_id = $1 ORDER BY i.invited_at DESC`, [set.id]),
     // friends one may invite: not yet a member, not invited
@@ -814,12 +826,24 @@ router.post('/:id/links', async (req, res) => {
   if (ownerOnly(res, set)) return;
   const rights = RIGHTS.includes(req.body.rights) ? req.body.rights : null;
   if (!rights) return fail(res, 422, 'which rights does the link give?');
-  const { rows: [{ n }] } = await adminPool.query('SELECT count(*)::int AS n FROM study_set_links WHERE set_id = $1 AND ended_at IS NULL', [set.id]);
+  // optional (230): the last day it works (YYYY-MM-DD, until midnight in Zurich), at most how many join with it
+  const until = String(req.body.expires_on || '').trim();
+  if (until) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(until)) return fail(res, 422, 'a date, please (YYYY-MM-DD)');
+    const { rows: [ok] } = await adminPool.query(`SELECT $1::date >= ${TODAY} AND $1::date <= ${TODAY} + 2 * 365 AS fine`, [until]).catch(() => ({ rows: [{ fine: false }] }));
+    if (!ok.fine) return fail(res, 422, 'an end date from today on, within two years');
+  }
+  const most = String(req.body.max_joins || '').trim();
+  const cap = rights === 'view' ? MAX_VIEWERS : MAX_EDITORS;
+  if (most && !(/^\d+$/.test(most) && Number(most) >= 1 && Number(most) <= cap)) return fail(res, 422, `at most how many: a number from 1 to ${cap}`);
+  const { rows: [{ n }] } = await adminPool.query('SELECT count(*)::int AS n FROM study_set_links l WHERE l.set_id = $1 AND l.usable', [set.id]);
   if (n >= 20) return fail(res, 422, 'at most 20 links at a time — turn one off first');
   const why = await shareFirst(req, set);
   if (why) return fail(res, 422, why);
-  const { rows: [link] } = await adminPool.query(`INSERT INTO study_set_links (set_id, code, rights) VALUES ($1, $2, $3)
-    RETURNING id::text AS id, code, rights::text AS rights, created_at, ended_at, joined`, [set.id, newLinkCode(), rights]);
+  const { rows: [link] } = await adminPool.query(`INSERT INTO study_set_links AS l (set_id, code, rights, expires_at, max_joins)
+      VALUES ($1, $2, $3, CASE WHEN $4 <> '' THEN ($4::date + 1)::timestamp AT TIME ZONE 'Europe/Zurich' END, nullif($5, '')::int)
+    RETURNING l.id::text AS id, l.code, l.rights::text AS rights, l.created_at, l.ended_at, l.joined, l.expires_at, l.max_joins, l.closed_because AS closed`,
+  [set.id, newLinkCode(), rights, until, most]);
   res.status(201).json({ link });
 });
 
@@ -863,7 +887,7 @@ router.post('/invitations/:sid', async (req, res) => {
   if (!ID.test(req.params.sid)) return fail(res, 404, 'not_found');
   const { rows: [inv] } = await adminPool.query(`SELECT i.rights::text AS rights, i.chat FROM study_set_invitations i JOIN study_sets s ON s.id = i.set_id
     WHERE i.set_id = $1 AND i.account_id = $2 AND s.visibility <> 'private' AND ${ALIVE}`, [req.params.sid, req.user.id]);
-  if (!inv) return fail(res, 404, 'no such invitation');
+  if (!inv) return fail(res, 404, 'this invitation is no longer valid — the set was deleted or made private, or the owner withdrew it');
   if (req.body.accept === '1') {
     const full = await roomFor(req.params.sid, inv.rights);
     if (full) return fail(res, 422, full);

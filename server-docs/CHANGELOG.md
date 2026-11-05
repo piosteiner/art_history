@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-05
 
+### Links with a last day and a maximum of joins (230); clear words for invitations that are gone
+- **What:** owner 2026-11-05. `study_set_links.expires_at` (the end of the chosen last day, Zurich) and `max_joins`
+  (≥ 1; the route caps it at the set's limits); computed fields `l.usable` / `l.closed_because` (off | expired | full);
+  joining counts and joins in one transaction (`UPDATE … WHERE l.usable`), a closed link answers 410 with why. Site:
+  "Last day" and "At most … people" when making a link, "2 of 3 joined · works until …", the join page says why a link
+  no longer works; an invitation accepted after the set was deleted / made private says so and reloads the list.
+- **Revert:** `git revert`; `ALTER TABLE study_set_links DROP COLUMN expires_at, DROP COLUMN max_joins`, drop the two functions.
+
 ### Results keep the set as it was (229)
 - **What:** owner 2026-11-05 ("die set daten automatisch mit den resultaten gespeichert …, so dass die ergebnisse und
   das set zu jeder zeit nachvollziehbar bleiben"). `study_set_snapshots` (name, topic, description, entries with their

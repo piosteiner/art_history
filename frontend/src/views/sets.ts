@@ -154,7 +154,7 @@ const together = (s: StudySet) => {
 const topicOptions = (topics: string[]) => html`${topics.map((t) => html`<option value="${t}"></option>`)}`;
 
 // ---- the account's sets -----------------------------------------------------------------------------------------
-function list(main: HTMLElement) {
+function list(main: HTMLElement, note = '') {
   getSets().then((r) => {
     if (!r) return loggedOut(main);
     const { sets, topics } = r;
@@ -186,6 +186,7 @@ function list(main: HTMLElement) {
         : html`<p class="muted">No sets yet.</p>`}
     </section>`);
     const msg = main.querySelector<HTMLElement>('.sets-msg')!;
+    if (note) msg.textContent = note;
     main.querySelector<HTMLFormElement>('.sets-new')!.addEventListener('submit', (e) => {
       e.preventDefault();
       const f = e.target as HTMLFormElement;
@@ -194,7 +195,11 @@ function list(main: HTMLElement) {
     });
     main.querySelectorAll<HTMLButtonElement>('[data-accept]').forEach((b) => b.addEventListener('click', () => {
       const setId = b.closest<HTMLElement>('[data-set]')!.dataset.set!;
-      answerInvitation(setId, b.dataset.accept === '1').then((x) => { if (x?.set) location.assign(`/sets/${x.set.id}`); else list(main); }).catch((err: Error) => { msg.textContent = err.message; });
+      answerInvitation(setId, b.dataset.accept === '1').then((x) => { if (x?.set) location.assign(`/sets/${x.set.id}`); else list(main); }).catch((err: Error) => {
+        // gone meanwhile (the set deleted or made private, the invitation withdrawn): say so, and show the list as it is now
+        if (err instanceof ApiError && err.status === 404) { list(main, 'This invitation is no longer valid — the set was deleted or made private, or the owner withdrew it.'); return; }
+        msg.textContent = err.message;
+      });
     }));
     main.querySelectorAll<HTMLButtonElement>('.sets-delete').forEach((b) => b.addEventListener('click', () => {
       if (!confirm(`Delete the set “${b.dataset.name}”? Its entries stay on the site; what you know of them stays too, and your results on it stay under “Your results” with the set as it was. Its members lose it, its links and its public address stop working.`)) return;
@@ -648,8 +653,9 @@ function ownerPanel(details: HTMLDetailsElement, set: StudySet, id: string, relo
   const draw = (sh: SetSharing, note = '') => {
     const members = set.members ?? [];
     const vis = sh.settings.visibility;
-    const active = sh.links.filter((l) => !l.ended_at);
-    const ended = sh.links.filter((l) => l.ended_at);
+    const active = sh.links.filter((l) => !l.closed);
+    const ended = sh.links.filter((l) => l.closed);
+    const today = new Date().toISOString().slice(0, 10);
     render(box, html`<div class="sets-panel">
       <p class="sets-share-msg small flash ok" role="status"${note ? '' : ' hidden'}>${note}</p>
       <section><h3>Who can see it</h3>
@@ -677,12 +683,18 @@ function ownerPanel(details: HTMLDetailsElement, set: StudySet, id: string, relo
           <span class="muted">invited ${day(i.invited_at)}, not answered yet</span> <button type="button" class="link-button" data-cancel="${i.id}">Cancel</button></li>`)}</ul>` : ''}</section>
 
       <section><h3>Links</h3>
-        <p class="muted small">Anyone with an account who has a link can join with the rights it gives — send each only to those you mean. Turned off, a link lets no one new in; who joined with it stays.</p>
-        <form class="sets-link-form">${rightsSelect('rights')} <button type="submit">Make a link</button></form>
+        <p class="muted small">Anyone with an account who has a link can join with the rights it gives — send each only to those you mean. A link can end by itself on a day you choose or after a number of people have joined; turned off, expired or full, it lets no one new in — who joined with it stays.</p>
+        <form class="sets-link-form">${rightsSelect('rights')}
+          <label class="small">Last day <input type="date" name="expires_on" min="${today}" aria-label="Last day the link works (optional)"></label>
+          <label class="small">At most <input type="number" name="max_joins" min="1" max="5000" placeholder="any" aria-label="At most how many people join with it (optional)"> people</label>
+          <button type="submit">Make a link</button></form>
+        <p class="muted small">Both optional: without a last day the link works until you turn it off; without a number anyone who has it can join.</p>
         ${active.length ? html`<ul class="sets-links">${active.map((l) => html`<li data-link="${l.id}"><span class="tag">${RIGHTS_NAME[l.rights]}</span>
           <input readonly value="${joinUrl(l.code)}" aria-label="Link: ${RIGHTS_NAME[l.rights]}"> <button type="button" class="sets-link-copy">Copy</button>
-          <span class="muted small">${plural(l.joined, 'person', 'people')} joined</span> <button type="button" class="link-button" data-end="${l.id}">Turn off</button></li>`)}</ul>` : ''}
-        ${ended.length ? html`<details class="small"><summary>Turned off (${String(ended.length)})</summary><ul>${ended.map((l) => html`<li class="muted">${RIGHTS_NAME[l.rights]} · made ${day(l.created_at)} · off since ${day(l.ended_at!)} · ${plural(l.joined, 'person', 'people')} joined</li>`)}</ul></details>` : ''}</section>
+          <span class="muted small">${l.max_joins ? `${String(l.joined)} of ${String(l.max_joins)} joined` : `${plural(l.joined, 'person', 'people')} joined`}${l.expires_at ? ` · works until ${linkEnd(l.expires_at)}` : ''}</span>
+          <button type="button" class="link-button" data-end="${l.id}">Turn off</button></li>`)}</ul>` : ''}
+        ${ended.length ? html`<details class="small"><summary>No longer open (${String(ended.length)})</summary><ul>${ended.map((l) => html`<li class="muted">${RIGHTS_NAME[l.rights]} · made ${day(l.created_at)} ·
+          ${l.closed === 'off' ? `turned off ${day(l.ended_at!)}` : l.closed === 'expired' ? `expired ${linkEnd(l.expires_at!)}` : 'full'} · ${l.max_joins ? `${String(l.joined)} of ${String(l.max_joins)}` : plural(l.joined, 'person', 'people')} joined</li>`)}</ul></details>` : ''}</section>
 
       <section><h3>Votes</h3>
         <form class="sets-votes-form"><p class="small">For members who edit <b>with votes</b> — a set votes one way or the other:</p>
@@ -748,7 +760,8 @@ function ownerPanel(details: HTMLDetailsElement, set: StudySet, id: string, relo
     linkForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const rights = (linkForm.elements.namedItem('rights') as HTMLSelectElement).value as SetRights;
-      newSetLink(id, rights, typedName()).then(() => { publicName = typedName() || publicName; }).then(() => changed(`Link made: ${RIGHTS_NAME[rights]} — copy it and send it.`)).catch(fail);
+      const field = (n: string) => (linkForm.elements.namedItem(n) as HTMLInputElement).value.trim();
+      newSetLink(id, rights, typedName(), { expires_on: field('expires_on'), max_joins: field('max_joins') }).then(() => { publicName = typedName() || publicName; }).then(() => changed(`Link made: ${RIGHTS_NAME[rights]} — copy it and send it.`)).catch(fail);
     });
     box.querySelectorAll<HTMLButtonElement>('.sets-link-copy').forEach((b) => b.addEventListener('click', () => copyFrom(b.previousElementSibling as HTMLInputElement, msg)));
     box.querySelectorAll<HTMLButtonElement>('[data-end]').forEach((b) => b.addEventListener('click', () => {
@@ -768,6 +781,8 @@ function ownerPanel(details: HTMLDetailsElement, set: StudySet, id: string, relo
       .catch(() => render(box, html`<p class="muted">This could not be loaded.</p>`));
   });
 }
+/** a link's end: the last day it works (it ends at midnight after it, Zurich) — "12 November 2026" */
+const linkEnd = (iso: string) => new Date(new Date(iso).getTime() - 1000).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Zurich' });
 const copyFrom = (input: HTMLInputElement, msg: HTMLElement) => {
   navigator.clipboard?.writeText(input.value).then(() => { msg.textContent = 'Link copied.'; }, () => { input.select(); });
 };
@@ -797,7 +812,12 @@ function joinView(main: HTMLElement, code: string) {
       joinSet(code, name).then((s) => { if (s) location.assign(`/sets/${s.id}`); })
         .catch((err: Error) => { f.querySelector('.sets-msg')!.textContent = err.message; });
     });
-  }).catch(() => failed(main, 'This link is not valid (any more) — the owner may have turned it off. Ask them for a new one.'));
+  }).catch((err: unknown) => {
+    const closed = err instanceof ApiError ? (err.body as { closed?: string } | null)?.closed : undefined;
+    failed(main, closed === 'expired' ? 'This link has expired — ask the owner of the set for a new one.'
+      : closed === 'full' ? 'As many people as this link allows have joined with it already — ask the owner of the set for a new one.'
+        : 'This link is not valid (any more) — the owner may have turned it off. Ask them for a new one.');
+  });
 }
 
 /** /sets/results (229): every round of the account, by set — each with the set as it was then (name, description,
