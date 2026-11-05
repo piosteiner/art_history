@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-05
 
+### Public changelog and documentation caught up
+- **What:** site changelog: six items added to 2026-11-04 (study sets, sharing, quick entry, ⓘ help, search by the
+  whole's names, media cleanup) and an unpublished entry 2026-11-05 with four items (accounts and sign-up, exam dates,
+  sets edited together, account management). Documentation drafts for the owner (`page_drafts`, nothing published):
+  chapter "Website" + "Die Ansichten des Fuji auf der Karte" and "Lernsets und Konten"; the waiting draft of
+  "Content Management System" (Formulare, die mitdenken) + "Hilfe hinter dem ⓘ" and "Offene Fälle". Heading lists
+  checked before and after. Script `scratchpad/doc-drafts3.js`.
+- **Revert:** delete the changelog items / discard the drafts in the CMS.
+
 ### Accounts managed in the CMS, site-only accounts, sign-up; exam dates per set; sets edited together (220)
 - **What** (owner 2026-11-05: "manage accounts in the cms … create accounts that do not have cms access. exam date per
   set … self service sign up … shared editing"):
