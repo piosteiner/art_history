@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-05
 
+### Sign-up form: what the username and the public name are for; checkbox lines that hold together
+- **What:** owner 2026-11-05. Sign-up: "Username — only for logging in, never shown to anyone"; "Public name — optional;
+  how others see you" with a line why (sharing, editing together, friends and chat; addable later). `label.check` in
+  admin.css: the box its own size, the sentence in one `<span>` (flex had split loose words and the link into
+  columns — sign-up's privacy box and the Accounts page's sign-up switch). Test in accounts.spec.js.
+- **Revert:** `git revert`.
+
 ### A road's places numbered, and on its map
 - **What:** owner 2026-11-05 (the Tōkaidō's stations "not really visible on the map"): the API's place `children` of a
   parent with a `route` carry `number` (their position along it: `row_number()` over `ST_LineLocatePoint`) and

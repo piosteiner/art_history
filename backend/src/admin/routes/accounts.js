@@ -82,7 +82,7 @@ router.get('/accounts', async (req, res) => {
       never the CMS. <b>CMS editors</b> also edit everything in the CMS; <b>admins</b> also manage the accounts here.</p>
     <section class="accounts-box"><h2>Sign-up on the site</h2>
       <form method="post" action="/accounts/settings" class="form inline-form">
-        <label class="check"><input type="checkbox" name="signup_open" value="1"${settings.open ? ' checked' : ''}> Anyone may create a <b>site-only</b> account</label>
+        <label class="check"><input type="checkbox" name="signup_open" value="1"${settings.open ? ' checked' : ''}> <span>Anyone may create a <b>site-only</b> account</span></label>
         <label>at most <input type="number" name="signup_daily_limit" value="${String(settings.daily_limit)}" min="0" max="10000" class="narrow"> new per day</label>
         <button class="secondary">Save</button>
         <span class="muted small">${String(settings.today)} today · the form: <a href="/signup" target="_blank">/signup</a></span></form></section>

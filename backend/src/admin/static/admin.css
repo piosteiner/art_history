@@ -766,3 +766,9 @@ button.danger, .button.danger { background: var(--err); border-color: var(--err)
 .filter-bar select { width: auto; flex: none; }
 .filter-bar button { flex: none; }
 .tag.account-test { border-color: var(--accent); color: var(--accent); }
+
+/* a checkbox with its sentence: the box its own size, the words together (sign-up, Accounts) */
+label.check { display: flex; gap: .6em; align-items: flex-start; font-weight: normal; }
+label.check input[type="checkbox"], label.check input[type="radio"] { width: auto; flex: none; margin: .25em 0 0; }
+label.check > span { flex: 1; }
+.signup .hint { color: var(--muted); font-size: .85rem; margin: .3rem 0 0; }

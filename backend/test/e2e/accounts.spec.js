@@ -214,3 +214,23 @@ test('an account for the test environment: created here, refused by the live log
   expect(sql("SELECT count(*) FROM admin_users WHERE username = 'test-acc-tester-env'")).toBe('0');
   await live.http.dispose();
 });
+
+// the sign-up form (owner 2026-11-05): the username is said to be for logging in only, the public name why; the
+// privacy box its own size with its sentence in one block
+test('the sign-up form explains username and public name; the privacy box sits beside one sentence', async ({ browser }) => {
+  sql("UPDATE site_settings SET value = 'true' WHERE key = 'signup_open'");
+  const ctx = await browser.newContext({ baseURL: BASE });
+  const page = await ctx.newPage();
+  try {
+    await page.goto('/signup');
+    await expect(page.locator('label[for="u"]')).toContainText('only for logging in, never shown to anyone');
+    await expect(page.locator('.field', { has: page.locator('#n') }).locator('.hint')).toContainText('when you share a set');
+    const box = await page.locator('input[name="privacy"]').boundingBox();
+    const text = await page.locator('label.check > span').boundingBox();
+    expect(box.width).toBeLessThan(30);
+    expect(text.width).toBeGreaterThan(250);   // one block of text, not words in columns
+  } finally {
+    sql("UPDATE site_settings SET value = 'false' WHERE key = 'signup_open'");
+    await ctx.close();
+  }
+});

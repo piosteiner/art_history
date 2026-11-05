@@ -27,16 +27,17 @@ const page = ({ error, next, values = {}, closed }) => html`<div class="login si
   ${error ? html`<p class="flash error">${error}</p>` : ''}
   <form method="post" action="/signup" class="form">
     ${next ? html`<input type="hidden" name="next" value="${next}">` : ''}
-    <div class="field"><label for="u">Username <span class="muted small">— to log in; 2–40 small letters, digits, _ . -</span></label>
+    <div class="field"><label for="u">Username <span class="muted small">— only for logging in, never shown to anyone; 2–40 small letters, digits, _ . -</span></label>
       <input id="u" name="username" value="${values.username || ''}" autocomplete="username" required pattern="[a-z0-9_.\\-]{2,40}" maxlength="40" autofocus autocapitalize="none" spellcheck="false"></div>
-    <div class="field"><label for="n">Public name <span class="muted small">— optional; shown on sets you share, never your username</span></label>
-      <input id="n" name="public_name" value="${values.public_name || ''}" maxlength="60" autocomplete="nickname"></div>
+    <div class="field"><label for="n">Public name <span class="muted small">— optional; how others see you</span></label>
+      <input id="n" name="public_name" value="${values.public_name || ''}" maxlength="60" autocomplete="nickname">
+      <p class="hint">Others see this name — never your username — when you share a set, edit one together with others, or have friends and chat with them. Without one you can still keep and learn your own sets; you can add it later under “Your account”.</p></div>
     <div class="field"><label for="p">Password <span class="muted small">— at least ${String(MIN_PASSWORD)} characters</span></label>
       <input id="p" name="password" type="password" autocomplete="new-password" required minlength="${String(MIN_PASSWORD)}"></div>
     <div class="field"><label for="p2">Password again</label><input id="p2" name="password2" type="password" autocomplete="new-password" required></div>
     <div class="field signup-website" aria-hidden="true"><label for="w">Leave this empty</label><input id="w" name="website" tabindex="-1" autocomplete="off"></div>
     <div class="field"><label class="check"><input type="checkbox" name="privacy" value="1" required${values.privacy ? ' checked' : ''}>
-      I have read the <a href="${config.corsOrigin}/privacy" target="_blank" rel="noopener">privacy statement</a> (what an account keeps, and that I can delete it).</label></div>
+      <span>I have read the <a href="${config.corsOrigin}/privacy" target="_blank" rel="noopener">privacy statement</a> (what an account keeps, and that I can delete it).</span></label></div>
     <div class="actions"><button>Create account</button></div>
   </form>
   <p class="small">Keep your password safe: there is no e-mail to reset it — if it is lost, the site's owner can set a new one.</p>`}
