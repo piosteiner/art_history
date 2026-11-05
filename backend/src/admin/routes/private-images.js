@@ -116,7 +116,7 @@ router.post('/artworks/:slug/private-images', express.raw({ type: () => true, li
 
 router.get('/private-images/:id', async (req, res) => {
   if (!/^\d+$/.test(req.params.id)) return res.status(404).end();
-  const { rows: [img] } = await adminPool.query('SELECT content_type, bytes FROM private_images WHERE id = $1 AND owner_id = $2', [req.params.id, req.user.id]);
+  const { rows: [img] } = await adminPool.query('SELECT content_type, bytes FROM private_images WHERE id = $1 AND owner_id = image_owner($2)', [req.params.id, req.user.id]);
   if (!img) return res.status(404).end();
   // ?w=250 / 500: a smaller rendition for the site's previews (lists, an artist's works)
   const w = Number(req.query.w);

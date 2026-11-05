@@ -88,6 +88,24 @@ test('the site sees its own account’s reference images, nobody else’s', asyn
 
   // logging out from the site: only from its origin
   expect((await userB.request.post('/site/logout', { headers: { Origin: 'https://evil.example' } })).status()).toBe(403);
+
+  // an admin lets another account see this account's reference images (223) — read only
+  const b = sql("SELECT id FROM admin_users WHERE username = 'tester2'");
+  await userA.goto(`/accounts/${b}`);
+  await userA.selectOption('select[name="of"]', { label: 'also see those of tester (1)' });
+  await Promise.all([userA.waitForURL(/ok=reference_images/), userA.click('form[action$="/reference-images"] button')]);
+  try {
+    const seen = (await (await userB.request.get('/site/artworks/test-private-images/private-images', asSite)).json()).images;
+    expect(seen).toHaveLength(1);
+    expect((await userB.request.get(seen[0].url.replace(/^https?:\/\/[^/]+/, ''))).status()).toBe(200);
+    expect((await (await userB.request.get('/site/thumbs', asSite)).json()).images['test-private-images']).toBeTruthy();
+    // read only: deleting is its owner's
+    const id = seen[0].url.match(/(\d+)$/)[1];
+    await userB.request.post(`/private-images/${id}/delete`, { headers: { Origin: BASE }, maxRedirects: 0 });
+    expect(sql(`SELECT count(*) FROM private_images WHERE id = ${id}`)).toBe('1');
+  } finally {
+    sql("UPDATE admin_users SET reference_images_of = NULL WHERE username = 'tester2'");
+  }
 });
 
 // From another website (188, fetch-image.js): an image's link is stored at once, with where it came from; a page offers

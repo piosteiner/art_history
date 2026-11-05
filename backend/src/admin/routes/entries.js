@@ -71,14 +71,14 @@ router.get('/:plural', async (req, res) => {
   const cols = (p) => `t.slug, t.${t.name} AS name, t.updated_at, ${altSql(t, 't') || 'NULL'} AS alt, ${keyExpr(t.type, 't', t.name)} AS sort_key,
              ${t.imageFk ? `(SELECT i.url FROM images i WHERE i.${t.imageFk} = t.id ORDER BY i.position, i.id LIMIT 1)` : 'NULL'} AS image_url,
              -- the account's main reference image (184/189): shown where a work has no public picture, to that account only
-             ${t.type === 'artwork' ? `(SELECT p.id FROM private_images p WHERE p.artwork_id = t.id AND p.owner_id = ${Number(req.user.id)} ORDER BY p.position, p.id LIMIT 1)` : 'NULL'} AS own_image,
+             ${t.type === 'artwork' ? `(SELECT p.id FROM private_images p WHERE p.artwork_id = t.id AND p.owner_id = image_owner(${Number(req.user.id)}) ORDER BY p.position, p.id LIMIT 1)` : 'NULL'} AS own_image,
              -- a whole (owner 2026-11-04): its kind and number of parts, and the first four of its parts that have a picture —
              -- public, else this account's reference image — for a mosaic with a mark, as on the site
              ${t.type === 'artwork' ? `t.kind AS kind_text, artwork_is_group(t.kind_term_id) AS is_group, (SELECT count(*)::int FROM artworks c WHERE c.parent_id = t.id) AS parts,
                (SELECT jsonb_agg(jsonb_build_object('url', x.url, 'own', x.own) ORDER BY x.ord) FROM (
                   SELECT y.url, y.own, y.ord FROM (
                     SELECT (SELECT i.url FROM images i WHERE i.artwork_id = c.id ORDER BY i.position, i.id LIMIT 1) AS url,
-                           (SELECT p.id FROM private_images p WHERE p.artwork_id = c.id AND p.owner_id = ${Number(req.user.id)} ORDER BY p.position, p.id LIMIT 1) AS own,
+                           (SELECT p.id FROM private_images p WHERE p.artwork_id = c.id AND p.owner_id = image_owner(${Number(req.user.id)}) ORDER BY p.position, p.id LIMIT 1) AS own,
                            row_number() OVER (ORDER BY c.part_sort NULLS LAST, c.part_number, c.id) AS ord
                     FROM artworks c WHERE c.parent_id = t.id) y
                   WHERE y.url IS NOT NULL OR y.own IS NOT NULL ORDER BY y.ord LIMIT 4) x) AS part_cells` : 'NULL AS kind_text, false AS is_group, 0 AS parts, NULL AS part_cells'},
@@ -765,7 +765,7 @@ async function seriesOf(e, user) {
   const { rows: parts } = await adminPool.query(`
     SELECT a.slug, a.title, a.part_number, a.part_sort,
            (SELECT i.url FROM images i WHERE i.artwork_id = a.id ORDER BY i.position, i.id LIMIT 1) AS image_url,
-           (SELECT p.id FROM private_images p WHERE p.artwork_id = a.id AND p.owner_id = $2 ORDER BY p.position, p.id LIMIT 1) AS own_image
+           (SELECT p.id FROM private_images p WHERE p.artwork_id = a.id AND p.owner_id = image_owner($2) ORDER BY p.position, p.id LIMIT 1) AS own_image
     FROM artworks a WHERE a.parent_id = $1 ORDER BY a.part_sort NULLS LAST, a.part_number, ${sortKey('artwork', 'a', 'title')}`, [e.id, user ? user.id : null]);
   const { rows: [me] } = await adminPool.query(`
     SELECT w.slug, w.title, w.parts_count, a.part_number FROM artworks a LEFT JOIN artworks w ON w.id = a.parent_id WHERE a.id = $1`, [e.id]);

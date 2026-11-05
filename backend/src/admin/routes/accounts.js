@@ -29,7 +29,7 @@ const ACTION = {
   created: 'created', signed_up: 'signed up', role: 'role changed', disabled: 'switched off', enabled: 'switched on',
   'password_reset': 'new password set', 'password_changed': 'password changed by the account', sessions_ended: 'sessions ended',
   public_name: 'public name changed', note: 'note changed', deleted: 'deleted', restored: 'restored after deletion',
-  purged: 'removed for good', set_rolled_back: 'a set rolled back',
+  purged: 'removed for good', set_rolled_back: 'a set rolled back', reference_images: 'reference images shown changed',
 };
 const KEEP_DAYS = 30;   // a deleted account waits this long for a restore (221)
 const until = (d) => when(new Date(new Date(d).getTime() + KEEP_DAYS * 86400000));
@@ -37,6 +37,7 @@ const OK = {
   created: 'Account created.', saved: 'Saved.', disabled: 'Switched off — its sessions have ended.', enabled: 'Switched on again.',
   sessions: 'Its sessions have ended.', deleted: `Account deleted — it can be restored for ${'30'} days.`, settings: 'Sign-up settings saved.',
   deleted_test: 'Test-environment account deleted — here and in the test environment.',
+  reference_images: 'Saved: which reference images it sees.',
   restored: 'Account restored — switched on again, its sets back where they were.', rolled_back: 'The set is back as it was then (the step is in its history).',
 };
 
@@ -147,7 +148,7 @@ router.post('/accounts/new', async (req, res) => {
 /** The account of the address, or null. */
 async function accountOf(req) {
   if (!ID.test(req.params.id)) return null;
-  const { rows: [u] } = await adminPool.query(`SELECT u.id, u.username, u.public_name, u.role::text AS role, u.disabled_at, u.deleted_at, u.test_env, u.created_at, u.created_via,
+  const { rows: [u] } = await adminPool.query(`SELECT u.id, u.username, u.public_name, u.role::text AS role, u.disabled_at, u.deleted_at, u.test_env, u.reference_images_of, u.created_at, u.created_via,
       u.last_login_at, u.note, u.password_set_at, c.username AS created_by,
       (SELECT count(*)::int FROM study_sets s WHERE s.owner_id = u.id) AS sets,
       (SELECT count(*)::int FROM study_set_editors e WHERE e.account_id = u.id) AS edits,
@@ -187,6 +188,7 @@ router.get('/accounts/:id', async (req, res) => {
       <div class="field"><label for="a-n">Public name</label><input id="a-n" name="public_name" value="${u.public_name || ''}" maxlength="60"></div>
       <div class="field"><label for="a-o">Note</label><input id="a-o" name="note" value="${u.note || ''}" maxlength="1000"></div>
       <div class="actions"><button>Save</button></div></form>
+    ${await referenceImagesBox(u)}
     <div class="accounts-box accounts-actions">
       <form method="post" action="/accounts/${String(u.id)}/password" class="inline" data-confirm="Set a new password for ${u.username}? The old one stops working, the account is logged out everywhere; the new one is shown once.">
         <button class="secondary">New password…</button></form>
@@ -203,6 +205,29 @@ router.get('/accounts/:id', async (req, res) => {
     <h2>Log</h2>
     ${log.length ? html`<table class="list"><tbody>${log.map((l) => html`<tr><td class="small">${when(l.at)}</td><td>${ACTION[l.action] || l.action}${l.detail && l.detail.role ? html` → ${accounts.ROLES[l.detail.role] ? accounts.ROLES[l.detail.role].label : l.detail.role}` : ''}</td>
       <td class="muted small">${l.actor ? `by ${l.actor}` : ''}</td></tr>`)}</tbody></table>` : html`<p class="muted">Nothing yet.</p>`}` });
+});
+
+/** Which reference images an account sees (223): its own, or another account's — read only. Offered: the accounts that
+ *  have reference images. */
+async function referenceImagesBox(u) {
+  const { rows: owners } = await adminPool.query(`SELECT a.id, a.username, count(*)::int AS n FROM private_images i JOIN admin_users a ON a.id = i.owner_id
+    WHERE a.id <> $1 GROUP BY a.id, a.username ORDER BY a.username`, [u.id]);
+  if (!owners.length && !u.reference_images_of) return '';
+  return html`<form method="post" action="/accounts/${String(u.id)}/reference-images" class="form inline-form accounts-box">
+    <label>Reference images <select name="of"><option value="">its own only</option>${owners.map((o) => html`<option value="${String(o.id)}"${String(o.id) === String(u.reference_images_of) ? ' selected' : ''}>also see those of ${o.username} (${String(o.n)})</option>`)}</select></label>
+    <button class="secondary">Save</button>
+    <span class="muted small">Read only — adding, ordering and deleting stay with the images' owner.</span></form>`;
+}
+
+router.post('/accounts/:id/reference-images', async (req, res) => {
+  const u = await accountOf(req);
+  if (!u) return notFoundPage(req, res);
+  const of = ID.test(String(req.body.of || '')) && String(req.body.of) !== String(u.id) ? req.body.of : null;
+  await withTx(req.user, async (db) => {
+    await db.query('UPDATE admin_users SET reference_images_of = $2 WHERE id = $1', [u.id, of]);
+    await accounts.log(db, { account: u.id, username: u.username, actor: req.user.id, action: 'reference_images', detail: { of } });
+  });
+  await back(res, u, 'reference_images');
 });
 
 const back = async (res, u, ok) => {

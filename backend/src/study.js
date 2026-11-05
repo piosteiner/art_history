@@ -27,7 +27,7 @@ const REL_PLACE = (type, rel) => `(SELECT p.name FROM relationships r JOIN place
 const IMG = (fk) => `(SELECT i.url FROM images i WHERE i.${fk} = t.id ORDER BY i.position, i.id LIMIT 1)`;
 const QUERIES = {
   artwork: `SELECT t.id, t.slug, t.title AS name, md_plain(t.description_md) AS text, ${IMG('artwork_id')} AS image,
-              (SELECT p.id FROM private_images p WHERE p.artwork_id = t.id AND p.owner_id = $2 ORDER BY p.position, p.id LIMIT 1) AS own_image,
+              (SELECT p.id FROM private_images p WHERE p.artwork_id = t.id AND p.owner_id = image_owner($2) ORDER BY p.position, p.id LIMIT 1) AS own_image,
               coalesce(t.attribution_label, (SELECT string_agg(c ->> 'name', ', ') FROM jsonb_array_elements(artwork_creators(t.id)) c)) AS artist,
               t.created_label AS date, t.kind, t.medium,
               (SELECT i.name FROM institutions i WHERE i.id = t.current_institution_id) AS collection

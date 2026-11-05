@@ -129,7 +129,7 @@ router.get('/artworks/:slug/private-images', async (req, res) => {
   if (!req.user) return res.status(401).json({ error: 'not_logged_in' });
   const { rows } = await adminPool.query(`SELECT i.id, i.locator, i.width, i.height, i.source_url, coalesce(b.siglum, b.name) AS source
       FROM private_images i JOIN artworks a ON a.id = i.artwork_id LEFT JOIN bibliography b ON b.id = i.source_id
-     WHERE a.slug = $1 AND i.owner_id = $2 ORDER BY i.position, i.id`, [req.params.slug, req.user.id]);
+     WHERE a.slug = $1 AND i.owner_id = image_owner($2) ORDER BY i.position, i.id`, [req.params.slug, req.user.id]);
   res.json({ images: rows.map((i) => ({ url: `${adminOrigin(req)}/private-images/${i.id}`, source: i.source, locator: i.locator, link: i.source_url, width: i.width, height: i.height })) });
 });
 
@@ -145,7 +145,7 @@ router.get('/thumbs', async (req, res) => {
   if (!req.user) return res.status(401).json({ error: 'not_logged_in' });
   res.set('Cache-Control', 'no-store');
   const { rows } = await adminPool.query(`SELECT DISTINCT ON (a.id) a.slug, i.id FROM private_images i JOIN artworks a ON a.id = i.artwork_id
-     WHERE i.owner_id = $1 AND NOT EXISTS (SELECT 1 FROM images p WHERE p.artwork_id = a.id) ORDER BY a.id, i.position, i.id`, [req.user.id]);
+     WHERE i.owner_id = image_owner($1) AND NOT EXISTS (SELECT 1 FROM images p WHERE p.artwork_id = a.id) ORDER BY a.id, i.position, i.id`, [req.user.id]);
   res.json({ images: Object.fromEntries(rows.map((r) => [r.slug, `${adminOrigin(req)}/private-images/${r.id}`])) });
 });
 

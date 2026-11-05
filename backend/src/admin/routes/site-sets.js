@@ -154,7 +154,7 @@ const countOf = async (setId) => (await adminPool.query('SELECT count(*)::int AS
 async function itemsOf(req, setId, together = false) {
   const viewer = req.user ? req.user.id : null;
   const { rows } = await adminPool.query(`SELECT i.entity_type::text AS type, e.slug, coalesce(p.name, e.name) AS name, p.subtitle, p.image_url AS image,
-      CASE WHEN i.entity_type = 'artwork' AND p.image_url IS NULL THEN (SELECT x.id FROM private_images x WHERE x.artwork_id = i.entity_id AND x.owner_id = $2
+      CASE WHEN i.entity_type = 'artwork' AND p.image_url IS NULL THEN (SELECT x.id FROM private_images x WHERE x.artwork_id = i.entity_id AND x.owner_id = image_owner($2)
         ORDER BY x.position, x.id LIMIT 1) END AS own_image, i.added_at,
       CASE WHEN $3 THEN (SELECT u.public_name FROM admin_users u WHERE u.id = i.added_by) END AS added_by,
       i.added_by IS NOT DISTINCT FROM $4::bigint AS mine

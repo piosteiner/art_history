@@ -107,3 +107,16 @@ test('place finder: a prefecture gets its outline; a parent region typed by name
   await expect(userA.locator('main')).toContainText('lies inside');
   sql("DELETE FROM places WHERE slug IN ('hakone', 'kyoto', 'kyoto-prefecture'); DELETE FROM places WHERE slug = 'kanagawa'");
 });
+
+// a road's places in their order along it (owner 2026-11-05: the Tōkaidō's stations from Edo to Kyoto), not A–Z
+test('a road\'s places come in their order along its route', async ({ request }) => {
+  sql(`DELETE FROM places WHERE slug LIKE 'test-road-%';
+       INSERT INTO places (slug, name, kind, location, route) VALUES ('test-road-r', 'Test Road', 'street', 'SRID=4326;POINT(139.7 35.6)', 'SRID=4326;LINESTRING(139.7 35.6, 138.0 35.0, 135.8 35.0)');
+       INSERT INTO places (slug, name, kind, location, parent_id) VALUES
+         ('test-road-a', 'Aa last', 'settlement', 'SRID=4326;POINT(135.9 35.0)', entity_id('place', 'test-road-r')),
+         ('test-road-b', 'Bb first', 'settlement', 'SRID=4326;POINT(139.6 35.55)', entity_id('place', 'test-road-r')),
+         ('test-road-c', 'Cc middle', 'settlement', 'SRID=4326;POINT(138.0 35.0)', entity_id('place', 'test-road-r'))`);
+  try {
+    expect((await api(request, '/places/test-road-r')).children.map((c) => c.slug)).toEqual(['test-road-b', 'test-road-c', 'test-road-a']);
+  } finally { sql("DELETE FROM places WHERE slug LIKE 'test-road-%'"); }
+});

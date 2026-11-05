@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-05
 
+### Places along a road in order; an account may see another account's reference images (223)
+- **What:** a place's `children` (API detail) come in their order along the parent's `route` when it has one
+  (`ST_LineLocatePoint`; the Tōkaidō's 53 stations from Shinagawa to Ōtsu), else A–Z as before. Migration 223:
+  `admin_users.reference_images_of` + `image_owner(viewer)` — an admin sets on an account (Accounts → the account)
+  whose reference images it also sees, read only; every read of reference images goes through `image_owner()`
+  (study cards, quiz, sets, CMS lists, the site's account routes, `/private-images/:id`); writes stay owner-only.
+  Tests: places.spec.js, private-images.spec.js.
+- **Revert:** `git revert`; `DROP FUNCTION image_owner; ALTER TABLE admin_users DROP COLUMN reference_images_of`.
+
 ### Content: the 53 stations of the Tōkaidō as places under the road
 - **What:** owner 2026-11-05. 49 places made (`scratchpad/tokaido-53.js`): English name from Wikidata, the Japanese
   name as original, kind settlement, designation "post station of the Tōkaidō (no. N)", a line of text with the

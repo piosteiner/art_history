@@ -593,7 +593,9 @@ const EXTRAS = {
       JOIN relationships r ON r.id = t.relationship_id
       ORDER BY lower(t.period) NULLS FIRST`, [id])).rows,
     ancestors: (await apiPool.query(ancestorsSql('places'), [id])).rows,
-    children: (await apiPool.query(`SELECT slug, name, kind FROM places WHERE parent_id = $1 ORDER BY ${natural('name')}`, [id])).rows,
+    // a road's or river's places in their order along it (the Tōkaidō's stations from Edo to Kyoto), else A–Z
+    children: (await apiPool.query(`SELECT c.slug, c.name, c.kind FROM places c LEFT JOIN places r ON r.id = c.parent_id AND r.route IS NOT NULL
+      WHERE c.parent_id = $1 ORDER BY ST_LineLocatePoint(r.route::geometry, c.location::geometry) NULLS LAST, ${natural('c.name')}`, [id])).rows,
     institutions: (await apiPool.query(`SELECT slug, name, kind FROM institutions t WHERE place_id = $1 ORDER BY ${sortKey('institution', 't')}`, [id])).rows,
   }),
   polity: async (id) => ({
