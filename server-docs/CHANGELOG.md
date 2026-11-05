@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-05
 
+### Event names written like English titles (231)
+- **What** (owner 2026-11-05: "treat event names like titles in the english language"): 24 English event names and 11
+  other names renamed by hand, audited as script changes of the owner ("surrender of Japan" → "Surrender of Japan",
+  "Mongol invasions of Korea" → "Mongol Invasions of Korea", "Closing of Japan (sakoku)" → "… (Sakoku)", "Transfer of
+  the Capital to Heian-kyō" …; particles and suffixes kept: Minamoto no Yoritomo, Dos de Mayo, Kinkaku-ji). Migration
+  231: `title_case_slip(name)` (Chicago style: the first word and every word but articles, short conjunctions,
+  prepositions and particles of other languages; nothing after a hyphen inside a word) and the check
+  `event_name_not_title_case` (warning) on English event names and other names. Left flagged for the owner: "Marina in
+  the night" as another name of the Battle of Mühlberg (looks like a painting's title). Test `event-titles.spec.js`.
+- **Why**: Wikidata's lowercase labels read wrong as titles on the site.
+- **Revert**: `git revert`; `DROP FUNCTION title_case_slip CASCADE` needs the view rebuilt (re-run 230's view
+  definition); the renames are in the history (restore per entry).
+
 ### Site: the account menu in the header; Sets in the main nav; the feedback F centred
 - **What** (owner 2026-11-05): the footer's account line (Logged in as … · study sets · friends · Log out) is gone —
   at the header's end, after the theme switch: logged out "Log in" and "Sign up" (always shown); logged in a button with
