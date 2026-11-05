@@ -50,6 +50,7 @@ router.use('/sets', require('./site-sets'));
 // shared sets (219): anyone with the link, logged in or not
 router.use('/shared', require('./site-sets').shared);
 router.use('/friends', require('./site-friends'));   // friends and chat (224)
+router.use('/views', require('./site-views'));       // the account's own start-map views (227)
 
 router.get('/me', (req, res) => (req.user
   ? res.json({ username: req.user.username, role: req.user.role, cms: req.user.cms, public_name: req.user.public_name })

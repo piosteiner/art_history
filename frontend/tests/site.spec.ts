@@ -3514,3 +3514,52 @@ test('a road: its places numbered in the list and on the map', async ({ page }) 
   await page.locator('.along-stop', { hasText: /^2$/ }).click();
   await expect(page.locator('.maplibregl-popup')).toContainText('Okitsu-juku');
 });
+
+// an account's own start-map views (227): "Your views" when logged in — save the current selection with a name and a
+// description, open it at /?mine=<id> with its text above the map, update it after a change
+test('own views on the start page: saved with a description, opened with its text, updated', async ({ page }) => {
+  await mockFeatured(page, FEATURED);
+  await page.addInitScript(() => localStorage.setItem('arthistory.account', '1'));
+  const views: { id: string; name: string; description: string | null; description_html: string | null; query: string; created_at: string; updated_at: string }[] = [];
+  const posts: string[] = [];
+  await page.route(/^http:\/\/admin\.test\/site\//, async (route) => {
+    const req = route.request();
+    const path = new URL(req.url()).pathname.replace(/^\/site/, '');
+    const form = new URLSearchParams(req.postData() ?? '');
+    const json = (b: unknown, status = 200) => route.fulfill({ status, contentType: 'application/json', body: JSON.stringify(b),
+      headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' } });
+    if (req.method() === 'POST') posts.push(`${path}:${form.toString()}`);
+    if (path === '/me') return json({ username: 'tester', role: 'member', cms: false, public_name: 'Test Me' });
+    if (path === '/thumbs') return json({ images: {} });
+    if (path === '/friends') return json({ me: { public_name: 'Test Me', friend_code: 'FriendCode12' }, people: [], unread: 0 });
+    if (path === '/friends/events') return route.fulfill({ status: 200, contentType: 'text/event-stream', body: 'retry: 60000\n\n',
+      headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' } });
+    if (path === '/sets/preview') return json({ html: `<p>${form.get('text') ?? ''}</p>` });
+    if (path === '/views' && req.method() === 'GET') return json({ views });
+    if (path === '/views') {
+      const v = { id: '5', name: form.get('name')!, description: form.get('description'), description_html: `<p><strong>${form.get('description') ?? ''}</strong></p>`, query: form.get('query')!, created_at: '', updated_at: '' };
+      views.push(v);
+      return json({ view: v }, 201);
+    }
+    if (path === '/views/5') { Object.assign(views[0], form.get('query') ? { query: form.get('query') } : {}); return json({ view: views[0] }); }
+    return json({});
+  });
+  await page.goto('/?featured=sebastian');
+  const mine = page.locator('#my-views');
+  await expect(mine).toContainText('Your views');
+  await mine.locator('.my-save').click();
+  await mine.locator('input[name=name]').fill('My Sebastian');
+  await mine.locator('.md-editor textarea, textarea[name=description]').first().fill('Where it went');
+  await mine.locator('button[type=submit]').click();
+  await expect(page).toHaveURL(/\/\?mine=5$/);
+  expect(posts.find((p) => p.startsWith('/views:'))).toContain('query=artworks%3Dheiliger-sebastian');
+  await expect(page.locator('#featured-intro h2')).toHaveText('My Sebastian');
+  await expect(page.locator('#featured-intro strong')).toHaveText('Where it went');
+  await expect(mine.locator('.chip.on')).toHaveText('My Sebastian');
+  // changed: offered to update the saved view with the new selection
+  await page.fill('input[name=from]', '1950');
+  await page.fill('input[name=to]', '1960');
+  await page.press('input[name=to]', 'Enter');
+  await mine.locator('.my-update').click();
+  await expect.poll(() => posts.find((p) => p.startsWith('/views/5:')) ?? '').toContain('from%3D1950');
+});

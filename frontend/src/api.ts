@@ -352,6 +352,13 @@ export const postSetChat = (id: string, body: string) => account<{ id: string }>
 export const deleteSetChat = (id: string, message: string) => account<null>(`/sets/${id}/chat/delete`, form({ message }));
 export const setChatMember = (id: string, action: 'remove' | 'readmit', accountId: string) => account<null>(`/sets/${id}/chat/${action}`, form({ account: accountId }));
 export const reportSetChat = (id: string, what: { message?: string; account?: string }, note: string) => account<{ ok: boolean }>(`/sets/${id}/chat/report`, form({ ...what, note } as Record<string, string>));
+// an account's own start-map views (227)
+export interface MyView { id: string; name: string; description: string | null; description_html: string | null; query: string; created_at: string; updated_at: string }
+export const getMyViews = () => account<{ views: MyView[] }>('/views').then((r) => r?.views ?? null);
+export const saveMyView = (data: { name: string; description: string; query: string }) => account<{ view: MyView }>('/views', form(data)).then((r) => r?.view ?? null);
+export const updateMyView = (id: string, data: { name?: string; description?: string; query?: string }) =>
+  account<{ view: MyView }>(`/views/${id}`, form(Object.fromEntries(Object.entries(data).filter(([, v]) => v !== undefined)) as Record<string, string>)).then((r) => r?.view ?? null);
+export const deleteMyView = (id: string) => account<null>(`/views/${id}/delete`, form({}));
 export const copyOwnSet = (id: string) => account<{ set: { id: string; name: string } }>(`/sets/${id}/copy`, form({})).then((r) => r?.set ?? null);
 /** Whether "Create an account" is offered (asked only where an account is the point: /sets, /account). */
 export const getSignup = () => account<{ open: boolean; url: string }>('/signup');

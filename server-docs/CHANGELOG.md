@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-05
 
+### An account's own start-map views (227)
+- **What:** owner 2026-11-05. `account_views` (owner, name, Markdown description, the start map's URL query — only its
+  own keys; private like the sets, emptied in the test copy). `routes/site-views.js` (/site/views: list with
+  `description_html`, create, update, delete). Site start page: "Your views" when logged in — chips to open
+  (`/?mine=<id>`: the selection with its name and description above the map, as a curated view), "Save this view…"
+  (name + the Markdown editor), Edit, Delete, "Update … with this selection" after a change. Privacy statement: a
+  paragraph on saved views. Also: `scripts/test-env.sh` empties `set_chat_hidden` (226 — it references study_sets).
+  NB: migration 227 and the routes went live with the sign-up deploy (0a4cad45) because the files were already in the
+  working tree while it ran — committed and deployed properly with this entry.
+- **Revert:** `git revert`; `DROP TABLE account_views`.
+
 ### Sign-up form: what the username and the public name are for; checkbox lines that hold together
 - **What:** owner 2026-11-05. Sign-up: "Username — only for logging in, never shown to anyone"; "Public name — optional;
   how others see you" with a line why (sharing, editing together, friends and chat; addable later). `label.check` in

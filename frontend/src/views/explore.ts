@@ -9,7 +9,9 @@
 // The state lives in the URL (/?artists=…&movements=none&institutions=all&from=1888&to=1889) and is remembered locally.
 // The home page (/) shows curated views (/v1/featured, edited in the admin panel): the first one, others at
 // /?featured=<slug>, everything at /?all. A view is a saved URL query; changing the picks or the window makes it your own.
-import { getClusters, getEntityMap, getEventsMap, getFeatured, getPlacesMap, getPresence, getPreviews, getProvenances, getSites, getView, listAll, PLURAL } from '../api';
+import { deleteMyView, getClusters, getEntityMap, getEventsMap, getFeatured, getMyViews, getPlacesMap, getPresence, getPreviews, getProvenances, getSites, getView, listAll, PLURAL, previewDescription, saveMyView, updateMyView, type MyView } from '../api';
+import { account } from '../account';
+import { markdownEditor } from '../md-editor';
 import { wireTextLinks } from '../glossary';
 import { entries } from '../catalog';
 import { creatorsOf, href, html, linksInNewTab, render, trusted } from '../html';
@@ -55,7 +57,7 @@ function remembered(): URLSearchParams | null {
 }
 
 /** The curated views around the one shown; `home`: shown at a plain / (the first view). */
-interface Curated { views: FeaturedView[]; view: FeaturedView; home: boolean }
+interface Curated { views: FeaturedView[]; view: FeaturedView; home: boolean; mine?: MyView }
 
 export function explore(main: HTMLElement, params: URLSearchParams) {
   // a short address (/?v=<code>, API 072): the stored selection, shown under that address until it is changed
@@ -75,6 +77,20 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       gone = true;
       cleanup?.();
     };
+  }
+  // an account's own saved view (/?mine=<id>, API 227): its selection with its name and description
+  const mine = params.get('mine');
+  if (mine) {
+    let gone = false;
+    let cleanup: (() => void) | undefined;
+    render(main, html`<section class="explore"><p class="muted small">Loading…</p></section>`);
+    getMyViews().then((list) => {
+      if (gone) return;
+      const v = list?.find((x) => x.id === mine);
+      if (!v) { render(main, html`<section class="explore"><p class="flash">${list ? 'This view is not among your saved views.' : 'Log in to open your saved views.'} <a href="/?all">Show everything</a></p></section>`); return; }
+      cleanup = start(main, new URLSearchParams(v.query), { views: [], view: { slug: '', title: v.name, intro_html: v.description_html, query: v.query }, home: false, mine: v });
+    }).catch(() => { if (!gone) render(main, html`<section class="explore"><p class="flash">Your views could not be loaded.</p></section>`); });
+    return () => { gone = true; cleanup?.(); };
   }
   const slug = params.get('featured');
   if ([...params.keys()].length && slug === null) return start(main, params, null);
@@ -105,6 +121,7 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
     </div>
     <nav class="featured" id="featured" aria-label="Curated views" hidden></nav>
     <div class="featured-intro" id="featured-intro" hidden></div>
+    <div class="my-views" id="my-views" hidden></div>
     <p class="restored" id="restored" hidden></p>
     <div id="pickers" class="pickers-wrap"><p class="muted small">Loading entries…</p></div>
     <div class="view-chips" id="chips" hidden></div>
@@ -220,7 +237,7 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
   let own = !curated; // the picks or the window were changed: the view is the reader's own now
   function drawFeatured() {
     if (!curated) return;
-    featuredEl.hidden = false;
+    featuredEl.hidden = !curated.views.length && !curated.mine;
     const at = (v: FeaturedView) => (v === curated.views[0] ? '/' : `/?featured=${encodeURIComponent(v.slug)}`);
     render(featuredEl, html`${curated.views.map((v) => html`<a class="chip${!own && v === curated.view ? ' on' : ''}" href="${at(v)}"${!own && v === curated.view ? html` aria-current="page"` : ''}>${v.title}</a>`)}
       <a class="featured-all" href="/?all">Explore everything →</a>`);
@@ -238,6 +255,63 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
     }).catch(() => { /* plain links */ });
   }
   drawFeatured();
+
+  // ---- the account's own views (API 227): open one, save the current selection, update or edit the one shown ----------
+  const myEl = main.querySelector<HTMLElement>('#my-views')!;
+  let myViews: MyView[] = [];
+  /** the start map's query as it is now (what persist() writes to the address) */
+  const queryNow = () => {
+    const p = new URLSearchParams();
+    writeSelection(sel, p);
+    if (win) { p.set('from', String(win.from)); p.set('to', String(win.to)); }
+    return p.toString();
+  };
+  function drawMine(note = '') {
+    myEl.hidden = false;
+    const shown = curated?.mine;
+    render(myEl, html`<span class="muted small">Your views</span>
+      ${myViews.map((v) => html`<a class="chip${shown && v.id === shown.id && !own ? ' on' : ''}" href="/?mine=${v.id}">${v.name}</a>`)}
+      <button type="button" class="link-button my-save">${shown && own ? `Save as a new view…` : 'Save this view…'}</button>
+      ${shown && own ? html`<button type="button" class="link-button my-update">Update “${shown.name}” with this selection</button>` : ''}
+      ${shown ? html`<button type="button" class="link-button my-edit">Edit “${shown.name}”…</button> <button type="button" class="link-button muted my-delete">Delete</button>` : ''}
+      <span class="small my-msg" role="status">${note}</span>
+      <form class="my-form" hidden><label>Name <input name="name" maxlength="120" required></label>
+        <label class="my-desc"><span>Description</span><textarea name="description" rows="5" maxlength="10000" placeholder="What this view shows, what to look at …"></textarea></label>
+        <button type="submit">Save</button> <button type="button" class="secondary my-cancel">Cancel</button></form>`);
+    const form = myEl.querySelector<HTMLFormElement>('.my-form')!;
+    const nameIn = form.querySelector<HTMLInputElement>('input[name=name]')!;
+    const area = form.querySelector<HTMLTextAreaElement>('textarea')!;
+    let editing: MyView | null = null;
+    const open = (v: MyView | null) => {
+      editing = v;
+      nameIn.value = v?.name ?? '';
+      area.value = v?.description ?? '';
+      form.hidden = false;
+      if (!form.querySelector('.md-editor')) markdownEditor(area, previewDescription);
+      nameIn.focus();
+    };
+    const msg = myEl.querySelector<HTMLElement>('.my-msg')!;
+    myEl.querySelector('.my-save')?.addEventListener('click', () => open(null));
+    myEl.querySelector('.my-edit')?.addEventListener('click', () => open(shown!));
+    myEl.querySelector('.my-cancel')?.addEventListener('click', () => { form.hidden = true; });
+    myEl.querySelector('.my-update')?.addEventListener('click', () => {
+      updateMyView(shown!.id, { query: queryNow() }).then((v) => { if (v) location.assign(`/?mine=${v.id}`); }).catch((err: Error) => { msg.textContent = err.message; });
+    });
+    myEl.querySelector('.my-delete')?.addEventListener('click', () => {
+      if (!confirm(`Delete your view “${shown!.name}”? The entries stay; only the saved selection and its text go.`)) return;
+      deleteMyView(shown!.id).then(() => location.assign('/?all')).catch((err: Error) => { msg.textContent = err.message; });
+    });
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const description = (form.querySelector<HTMLTextAreaElement>('textarea[name=description]') ?? area).value;
+      const save = editing ? updateMyView(editing.id, { name: nameIn.value, description }) : saveMyView({ name: nameIn.value, description, query: queryNow() });
+      save.then((v) => { if (v) location.assign(`/?mine=${v.id}`); }).catch((err: Error) => { msg.textContent = err.message; });
+    });
+  }
+  account().then((who) => {
+    if (!who || !main.contains(myEl)) return;
+    getMyViews().then((list) => { myViews = list ?? []; drawMine(); }).catch(() => drawMine());
+  }).catch(() => {});
 
   // the reader's last own view, one click away from the home page (no longer restored by itself)
   const restoredEl = main.querySelector<HTMLElement>('#restored')!;
@@ -367,6 +441,7 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
     if (!own) {
       own = true;
       drawFeatured();
+      if (!myEl.hidden) drawMine();
     }
     const p = new URLSearchParams();
     writeSelection(sel, p);
