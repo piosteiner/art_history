@@ -57,7 +57,7 @@ test('the site sees its own account’s reference images, nobody else’s', asyn
 
   const asSite = { headers: { Origin: SITE } };
   const me = await userA.request.get('/site/me', asSite);
-  expect(await me.json()).toEqual({ username: 'tester' });
+  expect(await me.json()).toEqual({ username: 'tester', role: 'admin', cms: true, public_name: null });
   expect(me.headers()['access-control-allow-origin']).toBe(SITE);
   expect(me.headers()['access-control-allow-credentials']).toBe('true');
   const own = await (await userA.request.get('/site/artworks/test-private-images/private-images', asSite)).json();
