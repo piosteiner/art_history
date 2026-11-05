@@ -136,7 +136,7 @@ test('a set\'s members; hiding someone in the set\'s chat: their messages stay a
   await call(userB, 'post', `/sets/${set.id}/chat/hide`, { account: a }, 204);
   await call(userA, 'post', `/sets/${set.id}/chat`, { body: 'Test: something unkind' }, 201);
   const bo = await call(userB, 'get', `/sets/${set.id}/chat`, null, 200);
-  expect(bo.messages.at(-1)).toEqual(expect.objectContaining({ by: 'Test Ann', hidden: true }));
+  expect(bo.messages.at(-1)).toEqual(expect.objectContaining({ by: 'Test Ann', hidden: 'hidden' }));
   expect(bo.members.find((m) => m.id === a).hidden).toBe(true);
   expect((await call(userB, 'get', '/sets', null, 200)).sets.find((s) => s.id === set.id).chat_unread).toBe(0);
   const ann = await call(userA, 'get', `/sets/${set.id}/chat`, null, 200);
@@ -146,7 +146,19 @@ test('a set\'s members; hiding someone in the set\'s chat: their messages stay a
   expect((await call(userA, 'get', `/sets/${set.id}/members`, null, 200)).members.every((m) => !m.hidden)).toBe(true);
   // shown again
   await call(userB, 'post', `/sets/${set.id}/chat/hide`, { account: a, hide: '0' }, 204);
-  expect((await call(userB, 'get', `/sets/${set.id}/chat`, null, 200)).messages.at(-1).hidden).toBe(false);
+  expect((await call(userB, 'get', `/sets/${set.id}/chat`, null, 200)).messages.at(-1).hidden).toBeNull();
+  // blocked (owner 2026-11-05): hidden in the set's chat by the block alone, also not unread; the blocked one still
+  // sees the blocker's messages — a block changes only the blocker's view
+  await call(userB, 'post', '/friends/block', { account: a }, 204);
+  const blocked = await call(userB, 'get', `/sets/${set.id}/chat`, null, 200);
+  expect(blocked.messages.at(-1)).toEqual(expect.objectContaining({ by: 'Test Ann', hidden: 'blocked' }));
+  expect(blocked.members.find((m) => m.id === a)).toEqual(expect.objectContaining({ blocked: true }));
+  expect((await call(userB, 'get', `/sets/${set.id}/members`, null, 200)).members.find((m) => m.id === a).blocked).toBe(true);
+  await call(userA, 'post', `/sets/${set.id}/chat`, { body: 'Test: after the block' }, 201);
+  expect((await call(userB, 'get', '/sets', null, 200)).sets.find((x) => x.id === set.id).chat_unread).toBe(0);
+  await call(userB, 'post', `/sets/${set.id}/chat`, { body: 'Test: Bo still writes' }, 201);
+  expect((await call(userA, 'get', `/sets/${set.id}/chat`, null, 200)).messages.at(-1)).toEqual(expect.objectContaining({ body: 'Test: Bo still writes', hidden: null }));
+  await call(userB, 'post', '/friends/unblock', { account: a }, 204);
   // not someone outside the set, not oneself
   await call(userB, 'post', `/sets/${set.id}/chat/hide`, { account: b }, 404);
 });

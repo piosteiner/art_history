@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-05
 
+### Higher set limits; blocked members hidden in set chats
+- **What:** owner 2026-11-05. A set: 200 members with editing rights (was 50), 5000 viewers (was 500) — `MAX_EDITORS`,
+  `MAX_VIEWERS` in `routes/site-sets.js`; beyond that the members list would want paging. A set's chat: someone the
+  viewer has blocked (`account_blocks`, 224) is hidden in every shared set chat by the block alone (message
+  `hidden: 'blocked'`, members `blocked`, not counted unread); hidden by hand (226) reads "You have hidden this
+  user's message." A block changes only the blocker's view — their own messages stay visible to everyone.
+- **Revert:** `git revert`.
+
 ### Links with a last day and a maximum of joins (230); clear words for invitations that are gone
 - **What:** owner 2026-11-05. `study_set_links.expires_at` (the end of the chosen last day, Zurich) and `max_joins`
   (≥ 1; the route caps it at the set's limits); computed fields `l.usable` / `l.closed_because` (off | expired | full);

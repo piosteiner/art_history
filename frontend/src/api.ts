@@ -340,12 +340,13 @@ export const reportChat = (id: string, note: string) => account<{ ok: boolean }>
 /** The live stream of chat events for the logged-in account (null in development without an admin host). */
 export const chatEvents = () => (ADMIN ? new EventSource(`${ADMIN}/site/friends/events`, { withCredentials: true }) : null);
 // a set's chat (225)
-export interface SetChatMessage { id: string; kind: 'message' | 'system'; by: string | null; by_id: string | null; mine: boolean; body: string | null; at: string; deleted: 'owner' | 'author' | null; hidden?: boolean }
-export interface SetChatMember { id: string; name: string | null; owner: boolean; removed: boolean; me: boolean; hidden?: boolean }
+export interface SetChatMessage { id: string; kind: 'message' | 'system'; by: string | null; by_id: string | null; mine: boolean; body: string | null; at: string; deleted: 'owner' | 'author' | null; /** in the viewer's own view: they hid the author, or blocked them */ hidden?: 'hidden' | 'blocked' | null }
+export interface SetChatMember { id: string; name: string | null; owner: boolean; removed: boolean; me: boolean; hidden?: boolean; blocked?: boolean }
 /** A set's members (226): owner and editors, since when, how many entries they added; hidden = the viewer hid them in the chat */
 export interface SetMember {
   id: string; name: string | null; role: 'owner' | 'editor' | 'viewer'; rights: SetRights | 'owner'; since: string | null; via: 'link' | 'invitation' | null;
   added: number; me: boolean; /** may use the set's chat now */ chat: boolean; /** a viewer the owner let into the chat */ chat_allowed: boolean; removed: boolean; hidden: boolean;
+  /** blocked by the viewer (224): their messages hidden in every set's chat */ blocked?: boolean;
 }
 export const getSetMembers = (id: string) => account<{ members: SetMember[] }>(`/sets/${id}/members`).then((r) => r?.members ?? []);
 export const hideInSetChat = (id: string, accountId: string, hide: boolean) => account<null>(`/sets/${id}/chat/hide`, form({ account: accountId, hide: hide ? '1' : '0' }));

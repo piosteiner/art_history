@@ -81,8 +81,8 @@ const RIGHTS = ['view', 'full', 'approval', 'vote'];
 const MAX_SETS = 300;
 const MAX_ITEMS = 3000;
 const MAX_DESCRIPTION = 10000;
-const MAX_EDITORS = 50;          // members with editing rights
-const MAX_VIEWERS = 500;
+const MAX_EDITORS = 200;         // members with editing rights (owner 2026-11-05: 50 → 200)
+const MAX_VIEWERS = 5000;        // (500 → 5000; beyond that the members list would want paging)
 const MAX_OPEN_PROPOSALS = 300;
 const NEW_PER_DAY = 20;          // new cards a day without an exam date
 const LINK_CODE = /^[A-Za-z0-9_-]{16}$/;
@@ -467,6 +467,7 @@ router.get('/', async (req, res) => {
         s.chat_on, CASE WHEN s.chat_on AND (s.owner_id = $1 OR ${CHATTER('m')}) AND NOT EXISTS (SELECT 1 FROM set_chat_removed x WHERE x.set_id = s.id AND x.account_id = $1)
           THEN (SELECT count(*)::int FROM set_chat_messages c WHERE c.set_id = s.id AND c.sender_id IS DISTINCT FROM $1
             AND NOT EXISTS (SELECT 1 FROM set_chat_hidden h WHERE h.set_id = s.id AND h.hider_id = $1 AND h.hidden_id = c.sender_id)
+            AND NOT EXISTS (SELECT 1 FROM account_blocks b WHERE b.blocker_id = $1 AND b.blocked_id = c.sender_id)
             AND c.id > coalesce((SELECT r.last_read_id FROM set_chat_reads r WHERE r.set_id = s.id AND r.account_id = $1), 0)) ELSE 0 END AS chat_unread
       FROM study_sets s LEFT JOIN study_set_members m ON m.set_id = s.id AND m.account_id = $1
       WHERE ${ALIVE} AND (s.owner_id = $1 OR m.account_id IS NOT NULL)
@@ -1103,7 +1104,8 @@ router.get('/:id/chat', async (req, res) => {
   if (!set) return;
   const members = (await adminPool.query(`SELECT u.id::text AS id, u.public_name AS name, u.id = s.owner_id AS owner, u.id = $2 AS me,
       EXISTS (SELECT 1 FROM set_chat_removed x WHERE x.set_id = s.id AND x.account_id = u.id) AS removed,
-      EXISTS (SELECT 1 FROM set_chat_hidden h WHERE h.set_id = s.id AND h.hider_id = $2 AND h.hidden_id = u.id) AS hidden
+      EXISTS (SELECT 1 FROM set_chat_hidden h WHERE h.set_id = s.id AND h.hider_id = $2 AND h.hidden_id = u.id) AS hidden,
+      EXISTS (SELECT 1 FROM account_blocks b WHERE b.blocker_id = $2 AND b.blocked_id = u.id) AS blocked
     FROM study_sets s JOIN admin_users u ON u.id = s.owner_id OR u.id IN (SELECT e.account_id FROM study_set_members e WHERE e.set_id = s.id AND ${CHATTER('e')})
     WHERE s.id = $1 ORDER BY u.id = s.owner_id DESC, lower(u.public_name)`, [set.id, req.user.id])).rows;
   if (!set.chat_on || (set.removed && !owns(set))) return res.json({ on: set.chat_on, removed: set.removed, messages: [], members: owns(set) ? members : [], more: false });
@@ -1112,7 +1114,8 @@ router.get('/:id/chat', async (req, res) => {
       (SELECT u.public_name FROM admin_users u WHERE u.id = m.sender_id) AS by,
       CASE WHEN m.deleted_at IS NULL THEN m.body END AS body, m.sent_at AS at,
       CASE WHEN m.deleted_at IS NULL THEN NULL WHEN m.deleted_by_owner THEN 'owner' ELSE 'author' END AS deleted,
-      EXISTS (SELECT 1 FROM set_chat_hidden h WHERE h.set_id = m.set_id AND h.hider_id = $2 AND h.hidden_id = m.sender_id) AS hidden
+      CASE WHEN EXISTS (SELECT 1 FROM account_blocks b WHERE b.blocker_id = $2 AND b.blocked_id = m.sender_id) THEN 'blocked'
+           WHEN EXISTS (SELECT 1 FROM set_chat_hidden h WHERE h.set_id = m.set_id AND h.hider_id = $2 AND h.hidden_id = m.sender_id) THEN 'hidden' END AS hidden
     FROM set_chat_messages m WHERE m.set_id = $1 AND ($3::bigint IS NULL OR m.id < $3) ORDER BY m.id DESC LIMIT ${CHAT_PAGE + 1}`, [set.id, req.user.id, before]);
   if (rows[0]) await adminPool.query(`INSERT INTO set_chat_reads (set_id, account_id, last_read_id) VALUES ($1, $2, $3)
     ON CONFLICT (set_id, account_id) DO UPDATE SET last_read_id = greatest(set_chat_reads.last_read_id, EXCLUDED.last_read_id)`, [set.id, req.user.id, rows[0].id]);
@@ -1156,7 +1159,9 @@ const readmitOrRemove = (remove) => async (req, res) => {
   res.status(204).end();
 };
 router.post('/:id/chat/remove', readmitOrRemove(true));
-// hiding someone in the set's chat (226): only one's own view — nobody is told
+// hiding someone in the set's chat (226): only one's own view — nobody is told. Someone the account has blocked (224) is
+// hidden in every set's chat by that alone (owner 2026-11-05) — the block works on the blocker's view only: their own
+// messages stay visible to everyone, the blocked person too
 router.post('/:id/chat/hide', async (req, res) => {
   const set = await chatMember(req, res);
   if (!set) return;
@@ -1181,7 +1186,8 @@ router.get('/:id/members', async (req, res) => {
       (SELECT count(*)::int FROM study_set_items i WHERE i.set_id = s.id AND i.added_by = u.id) AS added,
       u.id = $2 AS me, s.chat_on AND (u.id = s.owner_id OR e.rights <> 'view' OR e.chat) AS chat, coalesce(e.chat, false) AS chat_allowed,
       EXISTS (SELECT 1 FROM set_chat_removed x WHERE x.set_id = s.id AND x.account_id = u.id) AS removed,
-      EXISTS (SELECT 1 FROM set_chat_hidden h WHERE h.set_id = s.id AND h.hider_id = $2 AND h.hidden_id = u.id) AS hidden
+      EXISTS (SELECT 1 FROM set_chat_hidden h WHERE h.set_id = s.id AND h.hider_id = $2 AND h.hidden_id = u.id) AS hidden,
+      EXISTS (SELECT 1 FROM account_blocks b WHERE b.blocker_id = $2 AND b.blocked_id = u.id) AS blocked
     FROM study_sets s JOIN admin_users u ON u.id = s.owner_id OR u.id IN (SELECT x.account_id FROM study_set_members x WHERE x.set_id = s.id)
     LEFT JOIN study_set_members e ON e.set_id = s.id AND e.account_id = u.id
     WHERE s.id = $1 ORDER BY u.id = s.owner_id DESC, e.rights = 'view', lower(u.public_name)`, [set.id, req.user.id]);

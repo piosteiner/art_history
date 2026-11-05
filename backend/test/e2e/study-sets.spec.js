@@ -226,7 +226,7 @@ test('members: links with rights, joined, turned off; friends invited; a full ed
 
   // a link with a limit (230): full after one join; one with an end date: expired after it — no one new joins
   await post(userA, `/${set.id}/links`, { rights: 'view', max_joins: '0' }, 422);
-  await post(userA, `/${set.id}/links`, { rights: 'full', max_joins: '51' }, 422);
+  await post(userA, `/${set.id}/links`, { rights: 'full', max_joins: '201' }, 422);   // more than the set's 200 editors
   await post(userA, `/${set.id}/links`, { rights: 'view', expires_on: '2001-01-01' }, 422);
   const once = (await post(userA, `/${set.id}/links`, { rights: 'view', max_joins: '1' }, 201)).link;
   expect(once).toEqual(expect.objectContaining({ max_joins: 1, joined: 0, closed: null }));

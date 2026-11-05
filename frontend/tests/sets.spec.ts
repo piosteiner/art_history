@@ -547,7 +547,8 @@ test('a set\'s members, and a hidden member\'s message in the set\'s chat', asyn
       { id: '9', name: 'Me Editor', role: 'editor', rights: 'full', via: 'link', since: '2026-11-02T12:00:00Z', added: 1, me: true, chat: true, chat_allowed: false, removed: false, hidden: false }] });
     if (path === '/chat') return json({ on: true, removed: false, more: false,
       members: [{ id: '8', name: 'Ann Owner', owner: true, removed: false, me: false, hidden }, { id: '9', name: 'Me Editor', owner: false, removed: false, me: true, hidden: false }],
-      messages: [{ id: '1', kind: 'message', by: 'Ann Owner', by_id: '8', mine: false, body: 'Something unkind', at: '2026-11-05T09:00:00Z', deleted: null, hidden }] });
+      messages: [{ id: '1', kind: 'message', by: 'Ann Owner', by_id: '8', mine: false, body: 'Something unkind', at: '2026-11-05T09:00:00Z', deleted: null, hidden: hidden ? 'hidden' : null },
+        { id: '2', kind: 'message', by: 'Cy Blocked', by_id: '10', mine: false, body: 'Spam from a blocked one', at: '2026-11-05T09:01:00Z', deleted: null, hidden: 'blocked' }] });
     if (path === '/stats') return json({ modes: {}, boxes: { forward: [0, 0, 0, 0, 0, 0], reverse: [0, 0, 0, 0, 0, 0] }, hardest: [] });
     if (path === '/chat/hide') return route.fulfill({ status: 204, headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' } });
     return json({});
@@ -562,7 +563,9 @@ test('a set\'s members, and a hidden member\'s message in the set\'s chat', asyn
   await expect(page.locator('.sets-your-part')).toContainText('Your part: Editor with full rights');
   await expect(page.locator('.sets-your-part')).toContainText('given by the owner, Ann Owner');
   const chat = page.locator('#sets-chat');
-  await expect(chat.locator('.chat-hidden')).toContainText('hidden message');
+  await expect(chat.locator('.chat-hidden').first()).toHaveText(/You have hidden this user's message\./);
+  await expect(chat.locator('.chat-hidden').nth(1)).toContainText('You have blocked this user; their message is hidden.');
+  await expect(chat).not.toContainText('Spam from a blocked one');
   await expect(chat).not.toContainText('Something unkind');
   await chat.locator('[data-reveal="1"]').click();
   await expect(chat).toContainText('Something unkind');
