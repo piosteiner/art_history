@@ -78,7 +78,7 @@ test('admins create, change, switch off and delete accounts; a site-only account
   await userA.fill('input[name="confirm"]', 'test-acc-student');
   await Promise.all([userA.waitForURL(/ok=deleted/), userA.click('button.danger')]);
   // kept 30 days (221): no login, its sets hidden; restored by an admin — with its old password and its set
-  sql(`INSERT INTO study_sets (owner_id, name, visibility, share_code) SELECT id, 'Test set kept', 'link', 'TestKept1234' FROM admin_users WHERE username = 'test-acc-student'`);
+  sql(`INSERT INTO study_sets (owner_id, name, visibility, share_code) SELECT id, 'Test set kept', 'public', 'TestKept1234' FROM admin_users WHERE username = 'test-acc-student'`);
   expect(sql("SELECT deleted_at IS NOT NULL AND disabled_at IS NOT NULL FROM admin_users WHERE username = 'test-acc-student'")).toBe('t');
   const gone = await loginAs('test-acc-student', fresh);
   expect(await gone.res.text()).toContain('deleted');

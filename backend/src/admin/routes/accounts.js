@@ -153,7 +153,7 @@ async function accountOf(req) {
   const { rows: [u] } = await adminPool.query(`SELECT u.id, u.username, u.public_name, u.role::text AS role, u.disabled_at, u.deleted_at, u.test_env, u.reference_images_of, u.created_at, u.created_via,
       u.last_login_at, u.note, u.password_set_at, c.username AS created_by,
       (SELECT count(*)::int FROM study_sets s WHERE s.owner_id = u.id) AS sets,
-      (SELECT count(*)::int FROM study_set_editors e WHERE e.account_id = u.id) AS edits,
+      (SELECT count(*)::int FROM study_set_members e WHERE e.account_id = u.id) AS edits,
       (SELECT count(*)::int FROM study_sessions s WHERE s.owner_id = u.id) AS rounds,
       (SELECT count(*)::int FROM private_images i WHERE i.owner_id = u.id) AS images,
       (SELECT count(*)::int FROM admin_sessions x WHERE x.user_id = u.id AND x.expires_at > now()) AS sessions,
@@ -195,7 +195,7 @@ router.get('/accounts/:id', async (req, res) => {
   const { rows: log } = await adminPool.query(`SELECT l.at, l.action, l.detail, a.username AS actor FROM account_log l LEFT JOIN admin_users a ON a.id = l.actor_id
     WHERE l.account_id = $1 ORDER BY l.at DESC, l.id DESC LIMIT 100`, [u.id]);
   const { rows: sets } = await adminPool.query(`SELECT id, name, visibility, share_code, locked_at, (SELECT count(*)::int FROM study_set_items i WHERE i.set_id = s.id) AS n,
-      (SELECT count(*)::int FROM study_set_editors e WHERE e.set_id = s.id) AS editors
+      (SELECT count(*)::int FROM study_set_members e WHERE e.set_id = s.id) AS editors
     FROM study_sets s WHERE owner_id = $1 ORDER BY updated_at DESC LIMIT 100`, [u.id]);
   send(req, res, { title: u.username, flash: req.query.error ? { kind: 'error', text: String(req.query.error).slice(0, 200) } : flashOf(req), body: html`
     <p class="crumbs"><a href="/accounts">Accounts</a> / ${u.username}</p>
@@ -209,7 +209,7 @@ router.get('/accounts/:id', async (req, res) => {
       <form method="post" action="/accounts/${String(u.id)}/restore" class="inline" data-confirm="Restore ${u.username}? It can log in again with its old password; its sets come back as they were."><button>Restore the account</button></form></section>` : ''}
     ${sets.length ? html`<h2>Study sets</h2><table class="list"><tbody>${sets.map((s) => html`<tr><td><a href="/accounts/${String(u.id)}/sets/${String(s.id)}">${s.name}</a></td>
       <td class="small">${String(s.n)} entries${s.editors ? ` · ${String(s.editors)} editor${s.editors === 1 ? '' : 's'}` : ''}${s.locked_at ? ' · locked' : ''}</td>
-      <td class="small">${s.visibility === 'private' ? html`<span class="muted">private</span>` : html`<a href="${process.env.PUBLIC_SITE_URL || 'https://arthistory.piogino.ch'}/sets/s/${s.share_code}" target="_blank" rel="noopener">${s.visibility}</a>`}</td></tr>`)}</tbody></table>
+      <td class="small">${s.visibility !== 'public' ? html`<span class="muted">${s.visibility}</span>` : html`<a href="${process.env.PUBLIC_SITE_URL || 'https://arthistory.piogino.ch'}/sets/s/${s.share_code}" target="_blank" rel="noopener">${s.visibility}</a>`}</td></tr>`)}</tbody></table>
       <p class="muted small">A set's page shows its history and rolls it back to a moment — for a set an editor emptied or flooded.</p>` : ''}
     <form method="post" action="/accounts/${String(u.id)}" class="form accounts-box">
       <div class="field"><label>Role</label>${roleSelect('role', u.role, self)}${self ? html`<p class="muted small">Not your own — another admin can change it.</p>` : ''}</div>
@@ -378,7 +378,7 @@ async function setOf(req, u) {
   if (!ID.test(req.params.sid)) return null;
   const { rows: [s] } = await adminPool.query(`SELECT s.id, s.name, s.topic, s.visibility, s.share_code, s.locked_at, s.created_at, s.updated_at,
       (SELECT count(*)::int FROM study_set_items i WHERE i.set_id = s.id) AS n,
-      (SELECT string_agg(coalesce(a.public_name, a.username), ', ') FROM study_set_editors e JOIN admin_users a ON a.id = e.account_id WHERE e.set_id = s.id) AS editors
+      (SELECT string_agg(coalesce(a.public_name, a.username), ', ') FROM study_set_members e JOIN admin_users a ON a.id = e.account_id WHERE e.set_id = s.id) AS editors
     FROM study_sets s WHERE s.id = $1 AND s.owner_id = $2`, [req.params.sid, u.id]);
   return s || null;
 }
@@ -400,7 +400,7 @@ router.get('/accounts/:id/sets/:sid', async (req, res) => {
   send(req, res, { title: set.name, flash: req.query.error ? { kind: 'error', text: String(req.query.error).slice(0, 200) } : flashOf(req), body: html`
     <p class="crumbs"><a href="/accounts">Accounts</a> / <a href="/accounts/${String(u.id)}">${u.username}</a> / study set</p>
     <h1>${set.name}</h1>
-    <p class="muted small">${String(set.n)} entries · ${set.visibility}${set.locked_at ? ' · locked' : ''} · created ${when(set.created_at)} · last changed ${when(set.updated_at)}${set.editors ? ` · editors: ${set.editors}` : ''}</p>
+    <p class="muted small">${String(set.n)} entries · ${set.visibility}${set.locked_at ? ' · locked' : ''} · created ${when(set.created_at)} · last changed ${when(set.updated_at)}${set.editors ? ` · members: ${set.editors}` : ''}</p>
     <section class="accounts-box"><h2>Roll back</h2>
       <p class="small">The set as it was at a moment: its name, topic and description, and its entries — those added since are removed, those removed since come back (if they still exist). The rollback is a step in the history itself, so it can be undone the same way.</p>
       <form method="post" action="/accounts/${String(u.id)}/sets/${String(set.id)}/rollback" class="form inline-form" data-confirm="Roll the set back to this moment?">

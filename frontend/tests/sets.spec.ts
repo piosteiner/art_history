@@ -6,12 +6,13 @@ import { expect, test } from './fixtures';
 
 const PNG = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==';
 interface FakeSet {
-  id: string; name: string; topic: string | null; description: string | null; visibility: 'private' | 'link' | 'public'; code: string | null;
+  id: string; name: string; topic: string | null; description: string | null; visibility: 'private' | 'shared' | 'public'; code: string | null;
   items: { type: string; slug: string; name: string }[];
-  editors?: { id: string; name: string; me: boolean }[]; edit_code?: string | null; updated_by?: string | null;
+  members?: { id: string; name: string; me: boolean; rights: string; chat: boolean }[]; updated_by?: string | null;
+  links?: { id: string; code: string; rights: string; created_at: string; ended_at: string | null; joined: number }[];
 }
 const CODE = 'AbCdEfGh1234';
-const JOIN = 'JoinMeToEdit1234';   // an invitation to edit set 77 (220)
+const JOIN = 'JoinMeToEdit1234';   // a link to join set 77 as an editor with approval (228)
 const CARD: Record<string, object> = {
   'the-great-wave-off-kanagawa': { type: 'artwork', name: 'The Great Wave off Kanagawa', facts: [{ label: 'Artist', value: 'Katsushika Hokusai' }, { label: 'Date', value: 'c. 1831' }], text: '', image: PNG, own: true },
   'nishiki-e': { type: 'term', name: 'Ukiyo-e', facts: [{ label: 'Category', value: 'style' }], text: 'Ukiyo-e: pictures of the floating world, woodblock prints of the Edo period.', image: null, own: false },
@@ -30,7 +31,7 @@ async function loggedIn(page: Page, { login = true, conflict = false } = {}) {
   let examOn: string | null = null;
   let clash = conflict;         // the next save of a set's text: someone else changed it meanwhile (409)
   let next = 1;
-  const others: FakeSet = { id: '99', name: 'Hokusai for beginners', topic: 'Japanese art', description: '**Read** the [[artist/katsushika-hokusai]] page first.', visibility: 'link', code: CODE,
+  const others: FakeSet = { id: '99', name: 'Hokusai for beginners', topic: 'Japanese art', description: '**Read** the [[artist/katsushika-hokusai]] page first.', visibility: 'public', code: CODE,
     items: ['the-great-wave-off-kanagawa', 'nishiki-e', 'katsushika-hokusai', 'diego-velazquez'].map((slug) => ({ type: (CARD[slug] as { type: string }).type, slug, name: slug })) };
   if (login) await page.addInitScript(() => localStorage.setItem('arthistory.account', '1'));
   const json = (route: Route, body: unknown, status = 200) => route.fulfill({ status, contentType: 'application/json', body: JSON.stringify(body),
@@ -39,7 +40,8 @@ async function loggedIn(page: Page, { login = true, conflict = false } = {}) {
   const md = (t: string) => `<p>${t.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/\[\[(\w+)\/([\w-]+)\]\]/g, '<a class="entry-link" href="/$1s/$2">$2</a>')}</p>`;
   const summary = (s: FakeSet) => ({ id: s.id, name: s.name, topic: s.topic, description: s.description, description_html: s.description ? md(s.description) : null,
     description_text: s.description, visibility: s.visibility, code: s.code, count: s.items.length, created_at: '2026-11-01T12:00:00Z', updated_at: '2026-11-04T12:00:00Z',
-    role: 'owner', editors: s.editors ?? [], edit_code: s.edit_code ?? null, updated_by: s.updated_by ?? null, exam_on: examOn, creator: publicName });
+    role: 'owner', rights: 'owner', members: s.members ?? [], editors: (s.members ?? []).filter((x) => x.rights !== 'view'), updated_by: s.updated_by ?? null, exam_on: examOn, creator: publicName,
+    chat_allowed: true, vote_mode: 'advisory', vote_hours: 24, owner_veto: false });
   // the day's plan: the term due again, one of the new cards today (an exam in 12 days when one is set)
   const plan = () => ({ exam_on: examOn, days_left: examOn ? 12 : null,
     directions: { forward: { due: 1, new: 3, new_left_today: 1, new_today: 0 }, reverse: { due: 0, new: 4, new_left_today: 1, new_today: 0 } } });
@@ -54,14 +56,15 @@ async function loggedIn(page: Page, { login = true, conflict = false } = {}) {
     if (path === '/shared') return json(route, { sets: [{ ...summary(others), creator: 'Ms Teacher' }], topics: [{ topic: 'Japanese art', count: 1 }] });
     if (path === `/shared/join/${JOIN}` && req.method() === 'GET') {
       const joined = sets.some((x) => x.id === '77');
-      return json(route, { set: { ...(joined ? { id: '77' } : {}), name: 'Baroque together', topic: 'Baroque', creator: 'Mr Owner', count: 3, editors: 1 }, role: joined ? 'editor' : null, public_name: publicName });
+      return json(route, { set: { ...(joined ? { id: '77' } : {}), name: 'Baroque together', topic: 'Baroque', creator: 'Mr Owner', count: 3, members: 1, editors: 1, viewers: 0, vote_mode: 'advisory' },
+        rights: 'approval', role: joined ? 'editor' : null, public_name: publicName });
     }
     if (path === '/signup') return json(route, { open: true, url: 'http://admin.test/signup' });
     if (!login) return json(route, { error: 'not_logged_in' }, 401);
     if (path === `/shared/join/${JOIN}`) {
       if (!publicName && !form.get('public_name')) return json(route, { error: 'the other editors see your public name — choose one first' }, 422);
       publicName = publicName ?? form.get('public_name');
-      sets.push({ id: '77', name: 'Baroque together', topic: 'Baroque', description: null, visibility: 'private', code: null, items: [], editors: [{ id: '5', name: 'Ms Other', me: false }] });
+      sets.push({ id: '77', name: 'Baroque together', topic: 'Baroque', description: null, visibility: 'shared', code: null, items: [], members: [{ id: '5', name: 'Ms Other', me: false, rights: 'full', chat: false }] });
       return json(route, { set: { id: '77' } }, 201);
     }
     if (path === '/account' && req.method() === 'GET') {
@@ -82,7 +85,7 @@ async function loggedIn(page: Page, { login = true, conflict = false } = {}) {
     }
     if (path === '/me') return json(route, { username: 'tester', role: 'member', cms: false, public_name: publicName });
     if (path === '/thumbs') return json(route, { images: {} });
-    if (path === '/sets' && req.method() === 'GET') return json(route, { sets: sets.map(summary), public_name: publicName, topics: ['Japanese art'] });
+    if (path === '/sets' && req.method() === 'GET') return json(route, { sets: sets.map(summary), public_name: publicName, topics: ['Japanese art'], invitations: [] });
     if (path === '/sets' && req.method() === 'POST') {
       const s: FakeSet = { id: String(next++), name: form.get('name')!, topic: form.get('topic') || null, description: form.get('description') || null, visibility: 'private', code: null, items: [] };
       sets.unshift(s);
@@ -91,7 +94,7 @@ async function loggedIn(page: Page, { login = true, conflict = false } = {}) {
     if (path === '/sets/preview') return json(route, { html: md(form.get('text') ?? '') });
     if (path === '/sets/of') return json(route, { sets: sets.map((s) => ({ id: s.id, name: s.name, has: s.items.some((i) => i.type === url.searchParams.get('type') && i.slug === url.searchParams.get('slug')) })) });
     if (path === '/sets/progress') { answers.push(`${form.get('slug')}:${form.get('direction')}:${form.get('known')}`); return json(route, { box: form.get('known') === '1' ? 2 : 1, seen: 1, known: Number(form.get('known')) }); }
-    const m = /^\/sets\/(\d+)(\/items|\/items\/remove|\/cards|\/delete|\/share|\/sessions|\/stats|\/plan|\/editors|\/leave)?$/.exec(path);
+    const m = /^\/sets\/(\d+)(\/items|\/items\/remove|\/cards|\/delete|\/share|\/sessions|\/stats|\/plan|\/sharing|\/links|\/links\/\d+\/end|\/members\/\d+|\/members|\/settings|\/leave)?$/.exec(path);
     const s = m && sets.find((x) => x.id === m[1]);
     if (!s) return json(route, { error: 'not_found' }, 404);
     if (m![2] === '/items') { if (!s.items.some((i) => i.slug === form.get('slug'))) s.items.push({ type: form.get('type')!, slug: form.get('slug')!, name: form.get('slug')! }); return json(route, { count: s.items.length }); }
@@ -103,15 +106,23 @@ async function loggedIn(page: Page, { login = true, conflict = false } = {}) {
         boxes: { forward: [0, 1, 1, 0, 0, 0], reverse: [2, 0, 0, 0, 0, 0] }, hardest: [{ type: 'artwork', slug: 'the-great-wave-off-kanagawa', name: 'The Great Wave off Kanagawa', seen: 2, known: 1 }], plan: plan() });
     }
     if (m![2] === '/plan') { examOn = form.get('exam_on') || null; posts.push(`plan:${examOn ?? ''}`); return json(route, { plan: plan() }); }
-    if (m![2] === '/editors') {
-      posts.push(`editors:${form.get('action') ?? ''}`);
-      if (form.get('action') === 'invite') {
-        publicName = publicName ?? (form.get('public_name') || null);
-        if (!publicName) return json(route, { error: 'the editors see your public name — choose one first' }, 422);
-        s.edit_code = 'InviteLink123456';
-      }
-      if (form.get('action') === 'stop') s.edit_code = null;
-      if (form.get('action') === 'remove') s.editors = (s.editors ?? []).filter((e) => e.id !== form.get('account'));
+    // members, links (228)
+    if (m![2] === '/sharing') return json(route, { links: s.links ?? [], invitations: [], friends: [{ id: '6', name: 'Ms Friend' }], settings: { visibility: s.visibility, vote_mode: 'advisory', vote_hours: 24, owner_veto: false } });
+    if (m![2] === '/links') {
+      posts.push(`links:${form.get('rights') ?? ''}`);
+      publicName = publicName ?? (form.get('public_name') || null);
+      if (!publicName) return json(route, { error: 'the members see your public name — choose one first' }, 422);
+      if (s.visibility === 'private') s.visibility = 'shared';
+      const link = { id: String((s.links ?? []).length + 1), code: 'InviteLink123456', rights: form.get('rights')!, created_at: '2026-11-05T12:00:00Z', ended_at: null, joined: 0 };
+      s.links = [...(s.links ?? []), link];
+      return json(route, { link }, 201);
+    }
+    if (m![2]?.endsWith('/end')) { s.links = (s.links ?? []).map((l) => ({ ...l, ended_at: '2026-11-05T13:00:00Z' })); posts.push('link:end'); return route.fulfill({ status: 204, headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' } }); }
+    if (m![2]?.startsWith('/members/')) {
+      const who = m![2].split('/')[2];
+      posts.push(`member:${who}:${form.toString()}`);
+      if (form.get('action') === 'remove') s.members = (s.members ?? []).filter((x) => x.id !== who);
+      if (form.get('action') === 'rights') s.members = (s.members ?? []).map((x) => (x.id === who ? { ...x, rights: form.get('rights')! } : x));
       return json(route, { set: summary(s) });
     }
     if (m![2] === '/leave') { sets.splice(sets.indexOf(s), 1); return route.fulfill({ status: 204, headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' } }); }
@@ -119,7 +130,8 @@ async function loggedIn(page: Page, { login = true, conflict = false } = {}) {
       if (form.has('public_name')) publicName = form.get('public_name') || null;
       if (form.get('visibility')) s.visibility = form.get('visibility') as FakeSet['visibility'];
       if (s.visibility !== 'private' && !publicName) return json(route, { error: 'a shared set shows your public name — choose one first' }, 422);
-      if (s.visibility !== 'private' && (!s.code || form.get('new_link'))) s.code = form.get('new_link') ? 'NewLink12345' : 'Shared123456';
+      s.code = s.visibility === 'public' ? 'Shared123456' : null;
+      if (s.visibility === 'private') s.members = [];
       return json(route, { set: summary(s), public_name: publicName });
     }
     if (req.method() === 'POST' && !m![2]) {
@@ -204,7 +216,7 @@ test('study sets: visitors are asked to log in; no "+ Set" on entry pages', asyn
   await expect(page.locator('.set-menu')).toHaveCount(0);
 });
 
-test('a set: topic and a Markdown description (toolbar, preview), shared by link with a public name, results per kind of quiz', async ({ page }) => {
+test('a set: topic and a Markdown description (toolbar, preview), made public with a public name, results per kind of quiz', async ({ page }) => {
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
   const account = await loggedIn(page);
@@ -236,15 +248,16 @@ test('a set: topic and a Markdown description (toolbar, preview), shared by link
   await expect(page.locator('.sets-results')).toContainText('80 %');
   await expect(page.locator('.sets-stats')).toContainText('Most often not known: The Great Wave off Kanagawa');
 
-  // sharing: not without a public name; then a link to copy
+  // public: not without a public name; then its address to copy
   await page.locator('.sets-share summary').click();
-  await page.locator('.sets-share-form input[value=link]').check();
-  await page.locator('.sets-share-form button[type=submit]').click();
-  await expect(page.locator('.sets-share-msg')).toContainText('public name');
-  await page.fill('.sets-share-form input[name=public_name]', 'Ms Teacher');
-  await page.locator('.sets-share-form button[type=submit]').click();
-  await expect(page.locator('.sets-share-link input')).toHaveValue(/\/sets\/s\/Shared123456$/);
-  await expect(page.locator('main h1 .sets-vis')).toHaveText('shared by link');
+  await expect(page.locator('.sets-vis-form')).toContainText('anyone can look at it and study it');
+  await page.locator('.sets-vis-form input[value=public]').check();
+  await page.locator('.sets-vis-form button[type=submit]').click();
+  await expect(page.locator('.sets-panel-msg')).toContainText('public name');
+  await page.fill('.sets-vis-form input[name=public_name]', 'Ms Teacher');
+  await page.locator('.sets-vis-form button[type=submit]').click();
+  await expect(page.locator('.sets-vis-form .sets-share-link input')).toHaveValue(/\/sets\/s\/Shared123456$/);
+  await expect(page.locator('main h1 .sets-vis')).toHaveText('public');
   expect(errors).toEqual([]);
 });
 
@@ -338,24 +351,38 @@ test('an exam date plans the day\'s cards: the days counted, today\'s cards stud
   expect(errors).toEqual([]);
 });
 
-test('a set edited together: the owner\'s invitation link; joining by it; a save after someone else\'s change shows theirs', async ({ page }) => {
+test('members: the owner\'s panel — rights changed, a link with rights, a member removed; joining by a link that says what it gives; a save after someone else\'s change shows theirs', async ({ page }) => {
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
+  page.on('dialog', (d) => { void d.accept(); });
   const account = await loggedIn(page, { conflict: true });
-  account.sets.push({ id: '9', name: 'Exam: Edo', topic: null, description: 'Mine', visibility: 'private', code: null, items: [],
-    editors: [{ id: '5', name: 'Ms Other', me: false }], updated_by: 'Ms Other' });
+  account.sets.push({ id: '9', name: 'Exam: Edo', topic: null, description: 'Mine', visibility: 'shared', code: null, items: [],
+    members: [{ id: '5', name: 'Ms Other', me: false, rights: 'full', chat: false }], updated_by: 'Ms Other' });
   await page.goto('/sets/9');
-  await expect(page.locator('main h1 .sets-together-tag')).toHaveText('1 editor');
+  await expect(page.locator('main h1 .sets-together-tag')).toHaveText('1 member');
   await expect(page.locator('.sets-meta')).toContainText('by Ms Other');
-  await page.locator('.sets-together summary').click();
-  await expect(page.locator('.sets-editors')).toContainText('Ms Other');
-  await page.locator('.sets-invite').click();
-  await expect(page.locator('.sets-together-msg')).toContainText('public name');
-  await page.fill('.sets-invite-name input', 'Mr Owner');
-  await page.locator('.sets-invite').click();
-  await expect(page.locator('.sets-together .sets-share-link input')).toHaveValue(/\/sets\/join\/InviteLink123456$/);
-  await page.locator('.sets-editor-remove').click();
-  await expect(page.locator('.sets-together')).toContainText('No one else edits it yet');
+  await expect(page.locator('.sets-your-part')).toContainText('Your part: Owner');
+  await page.locator('.sets-share summary').click();
+  const panel = page.locator('.sets-panel');
+  // what each part may do, in the same words the members see
+  await expect(panel.locator('.sets-rights-legend')).toContainText('Editor with approval');
+  await expect(panel.locator('.sets-rights-legend')).toContainText('each waits until the owner accepts or rejects it');
+  // a member's rights changed
+  await panel.locator('[data-member="5"] select').selectOption('vote');
+  await expect.poll(() => account.posts).toContain('member:5:action=rights&rights=vote');
+  // a link with rights: not without a public name — then one to copy, marked with what it gives
+  await panel.locator('.sets-link-form select').selectOption('approval');
+  await panel.locator('.sets-link-form button').click();
+  await expect(page.locator('.sets-panel-msg')).toContainText('public name');
+  await panel.locator('.sets-vis-form input[name=public_name]').fill('Mr Owner');
+  await panel.locator('.sets-link-form button').click();
+  await expect(panel.locator('.sets-links input')).toHaveValue(/\/sets\/join\/InviteLink123456$/);
+  await expect(panel.locator('.sets-links .tag')).toHaveText('Editor with approval');
+  await panel.locator('[data-end]').click();
+  await expect(panel.locator('.sets-links')).toHaveCount(0);
+  await expect(panel).toContainText('Turned off (1)');
+  await panel.locator('[data-remove="5"]').click();
+  await expect(panel).toContainText('No members yet');
 
   // a save from an older text: refused, theirs shown, mine kept; saving again replaces theirs
   await page.locator('.sets-edit summary').click();
@@ -367,11 +394,14 @@ test('a set edited together: the owner\'s invitation link; joining by it; a save
   await page.locator('.sets-edit-form button[type=submit]').click();
   await expect(page.locator('.sets-description')).toContainText('My new text');
 
-  // an invitation from someone else: joined with a public name, then the set opens
+  // a link from someone else: what it gives, in plain words, before joining; then the set opens
   await page.goto(`/sets/join/${JOIN}`);
-  await expect(page.locator('main h1')).toHaveText('Edit “Baroque together” together');
-  await expect(page.locator('main')).toContainText('Mr Owner invites you');
+  await expect(page.locator('main h1')).toHaveText('Join “Baroque together”');
+  await expect(page.locator('main')).toContainText('Mr Owner shares this set');
+  await expect(page.locator('.sets-your-part')).toContainText('You join as: Editor with approval');
+  await expect(page.locator('.sets-your-part')).toContainText('each waits until the owner accepts or rejects it');
   await expect(page.locator('main')).toContainText('The others see you as Mr Owner');
+  await expect(page.locator('.sets-join button')).toHaveText('Join as an editor');
   await page.locator('.sets-join button').click();
   await expect(page).toHaveURL(/\/sets\/77$/);
   expect(errors).toEqual([]);
@@ -412,19 +442,21 @@ test('visitors: /sets and /account offer Log in and, while open, Create an accou
   await expect(page.locator('main a', { hasText: 'Log in' })).toBeVisible();
 });
 
-// 221: the owner's set page — a removal proposed by an editor with the votes, decided by the owner; the history with
-// "Back to here"; lock; the share link turned off. The set (55) answered by its own stand-in routes.
-test('a set\'s owner: proposed removals with votes and the decision, the history and a restore, lock, the link turned off', async ({ page }) => {
+// 221, 228: the owner's set page — a removal proposed by an editor with votes, the votes and the decision; the history
+// with "Back to here"; lock; made private. The set (55) answered by its own stand-in routes.
+test('a set\'s owner: a proposed change with votes and the decision, the history and a restore, lock, made private', async ({ page }) => {
   await loggedIn(page);
   const posts: string[] = [];
   let open = true;
   let locked = false;
-  let visibility: 'private' | 'link' = 'link';
-  const set = () => ({ id: '55', name: 'Baroque exam', topic: null, description: null, visibility, code: visibility === 'link' ? 'LinkLink1234' : null,
-    count: open ? 2 : 1, created_at: '2026-11-01T12:00:00Z', updated_at: '2026-11-05T09:00:00Z', role: 'owner', locked_at: locked ? '2026-11-05T10:00:00Z' : null,
-    editors: [{ id: '8', name: 'Ann Helper', me: false }], edit_code: null, updated_by: 'Ann Helper', exam_on: null, creator: 'Test Owner' });
-  const proposal = { id: '3', type: 'artist', slug: 'diego-velazquez', name: 'Diego Velázquez', reason: 'Not on the exam', created_at: '2026-11-05T08:00:00Z',
-    proposed_by: 'Ann Helper', added_by: 'Test Owner', votes: [{ by: 'Ann Helper', remove: true }, { by: 'Bo Other', remove: true }], my_vote: null };
+  let visibility: 'private' | 'shared' = 'shared';
+  const set = () => ({ id: '55', name: 'Baroque exam', topic: null, description: null, visibility, code: null,
+    count: open ? 2 : 1, created_at: '2026-11-01T12:00:00Z', updated_at: '2026-11-05T09:00:00Z', role: 'owner', rights: 'owner', locked_at: locked ? '2026-11-05T10:00:00Z' : null,
+    members: visibility === 'shared' ? [{ id: '8', name: 'Ann Helper', me: false, rights: 'vote', chat: false }, { id: '9', name: 'Bo Other', me: false, rights: 'full', chat: false }] : [],
+    updated_by: 'Ann Helper', exam_on: null, creator: 'Test Owner', chat_allowed: true, vote_mode: 'advisory', vote_hours: 24, owner_veto: false });
+  const proposal = { id: '3', kind: 'remove', field: null, old: null, new: null, type: 'artist', slug: 'diego-velazquez', name: 'Diego Velázquez', procedure: 'advisory',
+    reason: 'Not on the exam', created_at: '2026-11-05T08:00:00Z', closes_at: null, tie_at: null, mine: false, proposed_by: 'Ann Helper', added_by: 'Test Owner',
+    votes: [{ by: 'Ann Helper', vote: 'yes' }, { by: 'Bo Other', vote: 'yes' }], my_vote: null, voters: 3, decided_at: null, outcome: null, decided_by: null, by_vote: false };
   await page.route(/^http:\/\/admin\.test\/site\/sets\/55(\/.*)?$/, async (route) => {
     const req = route.request();
     const path = new URL(req.url()).pathname.replace(/^\/site\/sets\/55/, '');
@@ -433,30 +465,36 @@ test('a set\'s owner: proposed removals with votes and the decision, the history
     const json = (b: unknown) => route.fulfill({ contentType: 'application/json', body: JSON.stringify(b),
       headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' } });
     if (path === '') return json({ set: set(), items: [{ type: 'artwork', slug: 'the-great-wave-off-kanagawa', name: 'The Great Wave', subtitle: null, image: null, own: false, added_at: '', mine: true },
-      ...(open ? [{ type: 'artist', slug: 'diego-velazquez', name: 'Diego Velázquez', subtitle: null, image: null, own: false, added_at: '', mine: true }] : [])], proposals: open ? [proposal] : [] });
+      ...(open ? [{ type: 'artist', slug: 'diego-velazquez', name: 'Diego Velázquez', subtitle: null, image: null, own: false, added_at: '', mine: true }] : [])], proposals: open ? [proposal] : [],
+      decided: open ? [] : [{ ...proposal, decided_at: '2026-11-05T11:00:00Z', outcome: 'accepted', decided_by: 'Test Owner' }] });
+    if (path === '/sharing') return json({ links: [], invitations: [], friends: [], settings: { visibility, vote_mode: 'advisory', vote_hours: 24, owner_veto: false } });
+    if (path === '/members') return json({ members: [] });
     if (path === '/stats') return json({ modes: {}, boxes: { forward: [2, 0, 0, 0, 0, 0], reverse: [2, 0, 0, 0, 0, 0] }, hardest: [] });
     if (path === '/history') return json({ more: false, events: [
       { id: '12', at: '2026-11-05T09:00:00.123456Z', action: 'added', field: null, old: null, new: null, by: 'Ann Helper', seeded: false, entry: { type: 'term', slug: 'nishiki-e', name: 'Ukiyo-e' }, detail: null },
       { id: '11', at: '2026-11-05T08:00:00Z', action: 'changed', field: 'name', old: 'Baroque', new: 'Baroque exam', by: 'Test Owner', seeded: false, entry: null, detail: null },
       { id: '10', at: '2026-11-01T12:00:00Z', action: 'created', field: null, old: null, new: null, by: 'Test Owner', seeded: false, entry: null, detail: null }] });
-    if (path === '/proposals/3/decide') { open = false; return json({ proposals: [], count: 1 }); }
+    if (path === '/proposals/3/decide') { open = false; return json({ outcome: 'accepted', proposals: [], count: 1 }); }
     if (path === '/proposals/3/vote') return json({ proposals: [proposal] });
     if (path === '/restore') return json({ restored: { removed: 1, added: 0 } });
     if (path === '/lock') { locked = body.get('locked') === '1'; return json({ set: set() }); }
-    if (path === '/share') { visibility = body.get('visibility') === 'private' ? 'private' : 'link'; return json({ set: set(), public_name: 'Test Owner' }); }
+    if (path === '/share') { visibility = body.get('visibility') === 'private' ? 'private' : 'shared'; return json({ set: set(), public_name: 'Test Owner' }); }
     return json({});
   });
   page.on('dialog', (d) => { void d.accept(); });
   await page.goto('/sets/55');
   const box = page.locator('#sets-proposals');
   await expect(box).toContainText('Diego Velázquez');
+  await expect(box).toContainText('remove Diego Velázquez');
   await expect(box).toContainText('proposed by Ann Helper');
-  await expect(box.locator('.sets-votes')).toContainText('2 remove · 0 keep');
-  await box.locator('[data-vote="0"]').click();
-  await expect.poll(() => posts).toContain('/proposals/3/vote:remove=0');
-  await box.locator('[data-decide="removed"]').click();
-  await expect(page.locator('#sets-proposals')).toHaveCount(0);
-  expect(posts).toContain('/proposals/3/decide:decision=removed');
+  await expect(box.locator('.sets-proposal-how')).toContainText('the owner decides, seeing the votes');
+  await expect(box.locator('.sets-votes')).toContainText('2 yes · 0 no · 0 abstain · 1 not voted yet');
+  await box.locator('[data-vote="no"]').click();
+  await expect.poll(() => posts).toContain('/proposals/3/vote:vote=no');
+  await box.locator('[data-decide="accepted"]').click();
+  await expect(box.locator('.sets-proposal')).toHaveCount(0);
+  await expect(box.locator('.sets-decided')).toContainText('accepted');
+  expect(posts).toContain('/proposals/3/decide:decision=accepted');
 
   // the history: who did what; the owner brings the set back to a step, by the step itself
   await page.locator('.sets-history summary').click();
@@ -465,14 +503,15 @@ test('a set\'s owner: proposed removals with votes and the decision, the history
   await page.locator('.sets-history-list li').nth(1).locator('.sets-restore').click();
   await expect.poll(() => posts).toContain('/restore:event=11&reason=');
 
-  // lock, then the share link turned off
+  // lock, then private again: the members go (asked first)
   await page.locator('.sets-lock').click();
   await expect(page.locator('h1 .tag', { hasText: 'locked' })).toBeVisible();
   await expect(page.locator('.sets-lock')).toHaveText('Unlock');
   await page.locator('.sets-share summary').click();
-  await page.locator('.sets-share-off').click();
-  await expect.poll(() => posts).toContain('/share:visibility=private');
-  await expect(page.locator('.sets-share-link')).toHaveCount(0);
+  await page.locator('.sets-vis-form input[value=private]').check();
+  await page.locator('.sets-vis-form button[type=submit]').click();
+  await expect.poll(() => posts.some((p) => p.startsWith('/share:visibility=private'))).toBe(true);
+  await expect(page.locator('.sets-panel .sets-share-msg')).toContainText('Private: only you see it now');
 });
 
 // 226: a set's members; someone hidden in the set's chat — their message a "hidden message" line, shown on a click
@@ -489,10 +528,11 @@ test('a set\'s members, and a hidden member\'s message in the set\'s chat', asyn
     const json = (b: unknown) => route.fulfill({ contentType: 'application/json', body: JSON.stringify(b),
       headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' } });
     if (path === '') return json({ set: { id: '56', name: 'Fuji together', topic: null, description: null, visibility: 'private', code: null, count: 0, created_at: '2026-11-01T12:00:00Z',
-      updated_at: '2026-11-05T09:00:00Z', role: 'editor', chat_on: true, editors: [{ id: '9', name: 'Me Editor', me: true }], creator: 'Ann Owner' }, items: [], proposals: [] });
+      updated_at: '2026-11-05T09:00:00Z', role: 'editor', rights: 'full', chat_on: true, chat_allowed: true, vote_mode: 'advisory', vote_hours: 24, owner_veto: false,
+      members: [{ id: '9', name: 'Me Editor', me: true, rights: 'full', chat: false }], creator: 'Ann Owner' }, items: [], proposals: [] });
     if (path === '/members') return json({ members: [
-      { id: '8', name: 'Ann Owner', role: 'owner', since: '2026-11-01T12:00:00Z', added: 3, me: false, chat: true, removed: false, hidden },
-      { id: '9', name: 'Me Editor', role: 'editor', since: '2026-11-02T12:00:00Z', added: 1, me: true, chat: true, removed: false, hidden: false }] });
+      { id: '8', name: 'Ann Owner', role: 'owner', rights: 'owner', via: null, since: '2026-11-01T12:00:00Z', added: 3, me: false, chat: true, chat_allowed: false, removed: false, hidden },
+      { id: '9', name: 'Me Editor', role: 'editor', rights: 'full', via: 'link', since: '2026-11-02T12:00:00Z', added: 1, me: true, chat: true, chat_allowed: false, removed: false, hidden: false }] });
     if (path === '/chat') return json({ on: true, removed: false, more: false,
       members: [{ id: '8', name: 'Ann Owner', owner: true, removed: false, me: false, hidden }, { id: '9', name: 'Me Editor', owner: false, removed: false, me: true, hidden: false }],
       messages: [{ id: '1', kind: 'message', by: 'Ann Owner', by_id: '8', mine: false, body: 'Something unkind', at: '2026-11-05T09:00:00Z', deleted: null, hidden }] });
@@ -506,6 +546,9 @@ test('a set\'s members, and a hidden member\'s message in the set\'s chat', asyn
   await expect(members.locator('li').first()).toContainText('Ann Owner');
   await expect(members.locator('li').first()).toContainText('3 entries added');
   await expect(members.locator('li').first()).toContainText('hidden by you');
+  await expect(members.locator('li').nth(1)).toContainText('Editor with full rights');
+  await expect(page.locator('.sets-your-part')).toContainText('Your part: Editor with full rights');
+  await expect(page.locator('.sets-your-part')).toContainText('given by the owner, Ann Owner');
   const chat = page.locator('#sets-chat');
   await expect(chat.locator('.chat-hidden')).toContainText('hidden message');
   await expect(chat).not.toContainText('Something unkind');
@@ -515,4 +558,63 @@ test('a set\'s members, and a hidden member\'s message in the set\'s chat', asyn
   await members.locator('[data-hide="8"]').click();
   await expect.poll(() => posts).toContain('/chat/hide:account=8&hide=0');
   await expect(members.locator('li').first()).not.toContainText('hidden by you');
+});
+
+// 228: a member editing with approval — their part in plain words; a change proposed instead of made; a viewer sees no
+// tools to change; an invitation from a friend, with what it gives, accepted from the list
+test('rights on the member\'s side: editing with approval proposes; a viewer only reads; an invitation says what it gives', async ({ page }) => {
+  await loggedIn(page);
+  const posts: string[] = [];
+  let rights = 'approval';
+  let invited = true;
+  const cors = { 'access-control-allow-origin': 'http://localhost:5180', 'access-control-allow-credentials': 'true' };
+  await page.route(/^http:\/\/admin\.test\/site\/sets(\/57(\/.*)?|\/invitations\/57)?$/, async (route) => {
+    const req = route.request();
+    const path = new URL(req.url()).pathname.replace(/^\/site\/sets/, '');
+    const body = new URLSearchParams(req.postData() ?? '');
+    if (req.method() === 'POST') posts.push(`${path}:${body.toString()}`);
+    const json = (b: unknown, status = 200) => route.fulfill({ status, contentType: 'application/json', body: JSON.stringify(b), headers: { ...cors, 'access-control-allow-origin': new URL(page.url()).origin } });
+    if (path === '') return json({ sets: [], public_name: 'Me Member', topics: [], invitations: invited ? [{ set_id: 57, name: 'Fuji together', topic: 'Japanese art', creator: 'Ann Owner', rights: 'vote', chat: false,
+      invited_at: '2026-11-05T09:00:00Z', vote_mode: 'binding', count: 2 }] : [] });
+    if (path === '/invitations/57') { invited = false; return json({ set: { id: '57' } }); }
+    if (path === '/57') return json({ set: { id: '57', name: 'Fuji together', topic: null, description: null, visibility: 'shared', code: null, count: 1, created_at: '2026-11-01T12:00:00Z',
+      updated_at: '2026-11-05T09:00:00Z', role: rights === 'view' ? 'viewer' : 'editor', rights, chat_on: false, chat_allowed: rights !== 'view', vote_mode: 'binding', vote_hours: 6, owner_veto: true,
+      members: [{ id: '9', name: 'Me Member', me: true, rights, chat: false }], creator: 'Ann Owner' },
+      items: [{ type: 'artwork', slug: 'the-great-wave-off-kanagawa', name: 'The Great Wave', subtitle: null, image: null, own: false, added_at: '', added_by: 'Ann Owner', mine: false }], proposals: [], decided: [] });
+    if (path === '/57/items/remove') return json({ proposed: true, proposal: { id: '4', procedure: 'approval', outcome: null } }, 202);
+    if (path === '/57/members') return json({ members: [] });
+    if (path === '/57/stats') return json({ modes: {}, boxes: { forward: [1, 0, 0, 0, 0, 0], reverse: [1, 0, 0, 0, 0, 0] }, hardest: [] });
+    return json({});
+  });
+  page.on('dialog', (d) => { void d.accept('Not on the exam'); });
+  // the invitation in the list: who, which set, which rights — and what they mean here (binding votes)
+  await page.goto('/sets');
+  const inv = page.locator('.sets-invitations li');
+  await expect(inv).toContainText('Ann Owner invites you to Fuji together');
+  await expect(inv).toContainText('as Editor with votes');
+  await expect(inv.locator('.sets-invitation-rights')).toContainText('more Yes than No accepts the change');
+  await inv.locator('[data-accept="1"]').click();
+  await expect(page).toHaveURL(/\/sets\/57$/);
+  expect(posts).toContain('/invitations/57:accept=1');
+
+  // editing with approval: the part explained; the tools propose
+  const part = page.locator('.sets-your-part');
+  await expect(part).toContainText('Your part: Editor with approval');
+  await expect(part).toContainText('given by the owner, Ann Owner');
+  await expect(part).toContainText('Votes in this set:');
+  await expect(part).toContainText('The owner keeps a veto');
+  await expect(page.locator('.sets-edit summary')).toHaveText('Propose a new name, topic, description');
+  await page.locator('.sets-propose').click();
+  await expect.poll(() => posts).toContain('/57/items/remove:type=artwork&slug=the-great-wave-off-kanagawa&reason=Not+on+the+exam');
+  await expect(page.locator('.sets-msg')).toContainText('it applies once the owner accepts it');
+
+  // a viewer: reads and studies — no tools to change, no history
+  rights = 'view';
+  await page.reload();
+  await expect(part).toContainText('Your part: Viewer');
+  await expect(part).toContainText('Changes nothing and votes on nothing');
+  await expect(page.locator('.sets-edit')).toHaveCount(0);
+  await expect(page.locator('.sets-history')).toHaveCount(0);
+  await expect(page.locator('.sets-propose, .sets-remove')).toHaveCount(0);
+  await expect(page.locator('.sets-study')).toBeVisible();
 });

@@ -480,6 +480,25 @@ async function refusedNew(req, res, t, body, result) {
 }
 const createdUrl = (t, result) => `/${t.folder}/${result.slug}?done=created${result.created.length ? `&auto=${result.created.length}` : ''}${result.city ? `&city=1${result.city.created ? `&places=${result.city.created}` : ''}` : ''}`;
 
+/** A route or an area on the view page (2026-11-05, owner: the Tōkaidō's route was a long list of coordinates): a line
+ *  of what it is (points, length), a small read-only map (map.js, .map-view) and the GeoJSON folded away. */
+function geoView(kind, v, point) {
+  const lines = v.type === 'LineString' ? [v.coordinates] : v.type === 'MultiLineString' ? v.coordinates
+    : v.type === 'Polygon' ? v.coordinates : v.type === 'MultiPolygon' ? v.coordinates.flat() : [];
+  const n = lines.reduce((sum, l) => sum + l.length, 0);
+  const rad = (d) => (d * Math.PI) / 180;
+  const km = kind === 'line' ? lines.reduce((sum, l) => sum + l.slice(1).reduce((acc, [lon, lat], i) => {
+    const [lon0, lat0] = l[i];
+    const h = Math.sin(rad(lat - lat0) / 2) ** 2 + Math.cos(rad(lat0)) * Math.cos(rad(lat)) * Math.sin(rad(lon - lon0) / 2) ** 2;
+    return acc + 2 * 6371 * Math.asin(Math.sqrt(h));
+  }, 0), 0) : null;
+  const what = kind === 'line' ? `A line through ${n} points, about ${Math.round(km).toLocaleString('en')} km as drawn`
+    : `An outline of ${n} points${v.type === 'MultiPolygon' ? ` in ${v.coordinates.length} parts` : ''}`;
+  return html`<div class="geo-view"><p class="muted small">${what}</p>
+    <div class="map-view" data-geojson="${JSON.stringify(v)}"${point ? html` data-point="${JSON.stringify(point)}"` : ''}></div>
+    <details><summary class="muted small">GeoJSON</summary><pre>${JSON.stringify(v, null, 2)}</pre></details></div>`;
+}
+
 // Display of one field's value on the view page.
 // links: "type/slug" → name, for [[links]] in Markdown (loaded by the page, linkNames)
 // nameMark(i, text): the sources marker of the i-th other name (152), on the view page
@@ -503,7 +522,8 @@ function showValue(t, key, kind, doc, links = new Map(), nameMark = () => '') {
   if (key === 'title_status') return `${v === 'own' ? 'own' : v} translation${v === 'own' ? ' — shown in [square brackets]' : ''}`;
   if (kind === 'dimensions') return `${v.join(' × ')} cm${v.length === 1 ? ' (height)' : ''}${doc.dimensions_note ? ` (${doc.dimensions_note})` : ''}`;
   if (kind === 'point') return html`${v[1]}, ${v[0]} <a href="https://www.openstreetmap.org/?mlat=${v[1]}&mlon=${v[0]}#map=12/${v[1]}/${v[0]}" rel="noopener" target="_blank">map ↗</a>`;
-  if (kind === 'json' || kind === 'area' || kind === 'line') return html`<pre>${JSON.stringify(v, null, 2)}</pre>`;
+  if (kind === 'area' || kind === 'line') return geoView(kind, v, doc.location);
+  if (kind === 'json') return html`<pre>${JSON.stringify(v, null, 2)}</pre>`;
   if (kind === 'parent') return html`<a href="/${t.folder}/${v}">${v}</a>`;
   if (kind.startsWith('ref:')) return html`<a href="/${BY_TYPE[kind.slice(4)].folder}/${v}">${v}</a>`;
   if (kind.startsWith('life:')) return html`<a href="/places/${v}">${v}</a>`;   // the relationship born_in / died_in

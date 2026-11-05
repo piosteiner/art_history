@@ -4,6 +4,25 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-05
 
+### Members and rights in study sets (228); routes drawn on the CMS view page
+- **What:** owner 2026-11-05. A set is private / shared (members only) / public (listed, seen by anyone). Members
+  (`study_set_editors` renamed `study_set_members`) have rights — domain `set_rights`: view, full, approval, vote —
+  and `chat` (a viewer allowed into the set's chat). Links with rights (`study_set_links`, several per set, each
+  turned off on its own — who joined stays; `edit_code` dropped) and invitations to friends (`study_set_invitations`,
+  accepted / declined in the list). Changes by members without full rights become proposals (`study_set_proposals`
+  rebuilt: add / remove / field, procedure approval / advisory / binding; `study_set_votes` yes / no / abstain).
+  The set's `vote_mode` (advisory: the owner decides; binding: the vote decides after `vote_hours` 1–24, early when
+  the missing votes can't change it, a tie → the owner, two voters → accepted at once) and `owner_veto`. Rules in
+  plpgsql: `study_proposal_accept()` (as the proposer's change, or outdated), `study_proposal_reject()`,
+  `study_proposal_settle()`, `study_proposals_settle()` (on reads and a minute timer in the API process),
+  `study_set_transfer()` (hand a set over). Site: "Your part" box on every set, rights explained on invitations and
+  links before joining, owner's "Sharing and members" panel, "Proposed changes" with votes; "+ Set" proposes where
+  the account may only propose. Privacy statement updated; documentation draft (Website chapter) extended.
+  CMS view page: a place's route / area as a small read-only map (`.map-view`, map.js) with a summary line; the
+  GeoJSON folded away (it filled the Tōkaidō's page). `scripts/test-env.sh` empties the new tables.
+- **Revert:** `git revert`; a down migration would rename `study_set_members` back, drop the new tables, columns and
+  functions and restore 221's proposals (no proposals or sets existed before 228).
+
 ### An account's own start-map views (227)
 - **What:** owner 2026-11-05. `account_views` (owner, name, Markdown description, the start map's URL query — only its
   own keys; private like the sets, emptied in the test copy). `routes/site-views.js` (/site/views: list with

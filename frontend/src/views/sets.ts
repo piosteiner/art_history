@@ -5,12 +5,16 @@
 //                            sharing, the account's results, "Study"
 //   /sets/<id>/study?mode=…  a round of a quiz on it
 //   /sets/shared             the public sets of every account, by topic
-//   /sets/s/<code>           a set shared by link or in public — anyone may look and learn; logged in: "Save a copy",
+//   /sets/s/<code>           a public set — anyone may look and learn; logged in: "Save a copy",
 //   /sets/s/<code>/study       and the round counts among the account's results (never the owner's)
-//   /sets/join/<code>        an invitation to edit a set together (220): logged in with a public name → one of its editors
-// Edited together (220): the owner and its editors change name, topic, description and entries (who changed it last,
-// who added an entry is shown); sharing, the editors and deleting stay the owner's. A save from an older version of a
-// field someone else changed meanwhile is refused (409) — their version is shown, yours stays in the form.
+//   /sets/join/<code>        a link to join a set with the rights it carries (228): logged in with a public name → a member
+// Members (228): private (its owner only), shared (its members), public (anyone, listed). Members are viewers or edit
+// it — with full rights (at once), with the owner's approval, or with votes (the set's kind: advisory → the owner
+// decides; binding → the vote decides, ties → the owner, a veto if the owner keeps one). Everyone sees their own part
+// in plain words at the top of the set (yourPart) and before joining; the owner's "Sharing and members" panel says the
+// same for every kind of rights (RIGHTS_NAME / rightsText / voteRules — one wording everywhere). Proposed changes
+// with their votes under "Proposed changes". A save from an older version of a field someone else changed meanwhile
+// is refused (409) — their version is shown, yours stays in the form.
 // Exam date (220): per account and set; the set page counts the days and plans the day's cards — ?cards=today in the
 // study view: the cards due again (Leitner intervals, shortened before the exam) and today's share of the new ones.
 // Kinds of quiz (mode):
@@ -25,9 +29,12 @@
 // with its result (per set and kind of quiz: the set page's "Your results"); visitors learn too, nothing is kept.
 import { account } from '../account';
 import {
-  answerCard, ApiError, chatEvents, copyOwnSet, getSetMembers, hideInSetChat, copySet, deleteSetChat, getSetChat, postSetChat, reportSetChat, setChatMember, switchSetChat, createSet, decideRemoval, deleteSet, editSetEditors, getCards, getInvitation, getPublicSets, getSet, getSetHistory, getSets, getSetStats, joinSet,
-  leaveSet, lockSet, loginUrl, previewDescription, proposeRemoval, recordRound, removeFromSet, restoreSet, savePlan, shareSet, updateSet, voteRemoval,
-  type SetChatMessage, type SetEvent, type SetRef, type StudyCard, type StudyItem, type StudyMode, type StudyPlan, type StudySet, type StudyStats,
+  answerCard, answerInvitation, ApiError, cancelInvitation, changeMember, chatEvents, copyOwnSet, copySet, createSet, decideProposal, deleteSet, deleteSetChat,
+  endSetLink, getCards, getInvitation, getPublicSets, getSet, getSetChat, getSetHistory, getSetMembers, getSets, getSetStats, getSharing, hideInSetChat,
+  inviteToSet, joinSet, leaveSet, lockSet, loginUrl, newSetLink, postSetChat, previewDescription, recordRound, removeFromSet, reportSetChat, restoreSet,
+  savePlan, saveVoteSettings, setChatMember, shareSet, switchSetChat, updateSet, voteOn, withdrawProposal,
+  type Proposed, type SetChatMessage, type SetEvent, type SetProposal, type SetRef, type SetRights, type SetSharing, type StudyCard, type StudyItem,
+  type StudyMode, type StudyPlan, type StudySet, type StudyStats, type Visibility, type Vote, type VoteMode,
 } from '../api';
 import { accountLinks } from './account';
 import { href, html, PLURAL_LABEL, render, thumb, trusted, TYPE_LABEL, type Html } from '../html';
@@ -53,8 +60,36 @@ const plural = (n: number, one: string, many = `${one}s`) => `${String(n)} ${n =
 const studyHref = (ref: SetRef) => ('own' in ref ? `/sets/${ref.own}/study` : `/sets/s/${ref.code}/study`);
 const pageHref = (ref: SetRef) => ('own' in ref ? `/sets/${ref.own}` : `/sets/s/${ref.code}`);
 const shareUrl = (code: string) => `${location.origin}/sets/s/${code}`;
-const VIS_LABEL = { private: 'Only you', link: 'Anyone with the link', public: 'Public' } as const;
+const VISIBILITY: Visibility[] = ['private', 'shared', 'public'];
+const VIS_LABEL: Record<Visibility, string> = { private: 'Private', shared: 'Shared', public: 'Public' };
+const VIS_HELP: Record<Visibility, string> = {
+  private: 'only you see it. Making a set private again removes all members, ends open invitations and links, and closes open proposals.',
+  shared: 'only its members see it: friends you invite and people who join with one of your links — each with the rights you give them. Not listed anywhere.',
+  public: 'anyone can look at it and study it, also without an account, and it is listed under Shared sets. Only you and the members you give editing rights change it, in the way their rights say.',
+};
 const joinUrl = (code: string) => `${location.origin}/sets/join/${code}`;
+
+// ---- rights in a set (228): one wording wherever someone meets them (owner 2026-11-05: "clearly communicated to any
+// person involved") — the owner's panel, the member's own part, invitations and links before joining, the list
+type RightsKey = SetRights | 'owner';
+const RIGHTS: SetRights[] = ['view', 'full', 'approval', 'vote'];
+const RIGHTS_NAME: Record<RightsKey, string> = { owner: 'Owner', view: 'Viewer', full: 'Editor with full rights', approval: 'Editor with approval', vote: 'Editor with votes' };
+const RIGHTS_SHORT: Record<RightsKey, string> = { owner: 'yours', view: 'viewer', full: 'editor', approval: 'editor with approval', vote: 'editor with votes' };
+const VOTE_LABEL: Record<Vote, string> = { yes: 'Yes', no: 'No', abstain: 'Abstain' };
+function voteRules(mode: VoteMode, hours: number, veto: boolean) {
+  return mode === 'advisory'
+    ? 'The owner and everyone with editing rights vote Yes, No or Abstain; whoever proposes votes Yes by proposing. The owner sees the votes and decides whenever they like — also before everyone has voted.'
+    : `The owner and everyone with editing rights vote Yes, No or Abstain; whoever proposes votes Yes by proposing. After ${plural(hours, 'hour')} — or earlier, as soon as the votes still missing can no longer change the result — more Yes than No accepts the change and more No than Yes rejects it; a single vote is enough. If it ends even, the owner decides. When only the owner and the proposer can vote, there is no vote: the change applies at once. ${veto ? 'The owner keeps a veto: they may decide a vote before it ends.' : 'The owner cannot overrule the vote.'}`;
+}
+function rightsText(r: RightsKey, s: { vote_mode?: VoteMode; vote_hours?: number; owner_veto?: boolean }) {
+  switch (r) {
+    case 'owner': return 'Decides who sees the set, invites members and gives each their rights, makes and turns off links, chooses how votes work, and changes the set directly. Only the owner locks, restores, hands over or deletes it.';
+    case 'view': return 'Reads and studies the set. Changes nothing and votes on nothing; the set\'s chat only if the owner allows it to them.';
+    case 'full': return 'Adds and removes entries and changes the name, topic and description — at once, without asking. Votes on the proposals that are put to the vote.';
+    case 'approval': return 'Proposes changes — entries added or removed, a new name, topic or description; each waits until the owner accepts or rejects it. Votes on the proposals that are put to the vote.';
+    case 'vote': return `Proposes changes, which are put to the vote. ${voteRules(s.vote_mode ?? 'advisory', s.vote_hours ?? 24, Boolean(s.owner_veto))}`;
+  }
+}
 /** "in 12 days" / "tomorrow" / "today" / "was 3 days ago" — an exam date from the plan's days left */
 const examIn = (days: number) => (days > 1 ? `in ${String(days)} days` : days === 1 ? 'tomorrow' : days === 0 ? 'today' : `was ${String(-days)} day${days === -1 ? '' : 's'} ago`);
 const longDay = (ymd: string) => new Date(`${ymd}T12:00:00`).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
@@ -108,10 +143,13 @@ function meta(set: StudySet, withCreator: boolean) {
   return html`<p class="sets-meta muted small">${parts.map((p, i) => html`${i ? ' · ' : ''}${p}`)}</p>`;
 }
 const visBadge = (set: StudySet) => (set.visibility === 'private' ? ''
-  : html` <span class="tag sets-vis sets-vis-${set.visibility}" title="${VIS_LABEL[set.visibility]}">${set.visibility === 'public' ? 'public' : 'shared by link'}</span>`);
-/** "with 2 editors" (the owner's) / "edited with Ms X" (an editor's) */
-const together = (s: StudySet) => (s.role === 'editor' ? html` <span class="tag sets-together-tag" title="You edit it with its owner">edited with ${s.creator ?? 'its owner'}</span>`
-  : (s.editor_count ?? s.editors?.length) ? html` <span class="tag sets-together-tag" title="Others edit it with you">${plural(s.editor_count ?? s.editors!.length, 'editor')}</span>` : '');
+  : html` <span class="tag sets-vis sets-vis-${set.visibility}" title="${VIS_HELP[set.visibility]}">${set.visibility}</span>`);
+/** "3 members" (the owner's) / "editor with approval · Ms X's" (a member's) */
+const together = (s: StudySet) => {
+  if (s.role && s.role !== 'owner') return html` <span class="tag sets-together-tag" title="${rightsText((s.rights ?? 'view') as RightsKey, s)}">${RIGHTS_SHORT[(s.rights ?? 'view') as RightsKey]} · ${s.creator ?? 'its owner'}'s</span>`;
+  const n = s.members?.length ?? (s.editor_count ?? 0) + (s.viewer_count ?? 0);
+  return n ? html` <span class="tag sets-together-tag" title="Others are members of it">${plural(n, 'member')}</span>` : '';
+};
 const topicOptions = (topics: string[]) => html`${topics.map((t) => html`<option value="${t}"></option>`)}`;
 
 // ---- the account's sets -----------------------------------------------------------------------------------------
@@ -131,14 +169,19 @@ function list(main: HTMLElement) {
         <input name="topic" placeholder="Topic (optional)" aria-label="Topic" maxlength="80" list="sets-topics" autocomplete="off">
         <button type="submit">Create</button><datalist id="sets-topics">${topicOptions(topics)}</datalist></form>
       <p class="sets-msg small" role="status"></p>
-      ${sets.some((s) => s.to_vote) ? html`<p class="flash sets-votes-waiting">Removals proposed in your sets wait for your vote:
-        ${sets.filter((s) => s.to_vote).map((s, i) => html`${i ? ' · ' : ''}<a href="/sets/${s.id!}#sets-proposals">${s.name}</a> <span class="muted">(${String(s.to_vote)})</span>`)}</p>` : ''}
+      ${r.invitations.length ? html`<section class="sets-invitations"><h2>Invitations</h2><ul>${r.invitations.map((i) => html`<li data-set="${String(i.set_id)}">
+        <b>${i.creator ?? 'Someone'}</b> invites you to <b>${i.name}</b>${i.topic ? html` <span class="sets-topic">${i.topic}</span>` : ''} <span class="muted small">(${plural(i.count, 'entry', 'entries')})</span>
+        as <b>${RIGHTS_NAME[i.rights]}</b>${i.chat && i.rights === 'view' ? ', with the chat' : ''}.
+        <span class="small muted sets-invitation-rights">${rightsText(i.rights, { vote_mode: i.vote_mode })}</span>
+        <span class="sets-actions"><button type="button" data-accept="1">Accept</button> <button type="button" class="secondary" data-accept="0">Decline</button></span></li>`)}</ul></section>` : ''}
+      ${sets.some((s) => s.to_vote || s.to_decide) ? html`<p class="flash sets-votes-waiting">Proposed changes wait for you:
+        ${sets.filter((s) => s.to_vote || s.to_decide).map((s, i) => html`${i ? ' · ' : ''}<a href="/sets/${s.id!}#sets-proposals">${s.name}</a> <span class="muted">(${[s.to_vote ? `${String(s.to_vote)} to vote on` : '', s.to_decide ? `${String(s.to_decide)} to decide` : ''].filter(Boolean).join(', ')})</span>`)}</p>` : ''}
       ${sets.length ? groups.map(([topic, list]) => html`<section class="sets-group">${groups.length > 1 || topic ? html`<h2>${topic || 'No topic'}</h2>` : ''}
         <ul class="sets-list">${list.map((s) => html`<li class="sets-item">
-          <a class="sets-name" href="/sets/${s.id!}">${s.name}</a>${visBadge(s)}${together(s)}${s.locked_at ? html` <span class="tag" title="The owner locked it: no changes by its editors">locked</span>` : ''}${s.proposals ? html` <a class="tag sets-proposal-tag" href="/sets/${s.id!}#sets-proposals" title="Entries proposed for removal">${plural(s.proposals, 'removal')} proposed</a>` : ''}${s.chat_unread ? html` <a class="tag sets-chat-tag" href="/sets/${s.id!}#sets-chat" title="Unread messages in the set's chat">${plural(s.chat_unread, 'new message')}</a>` : ''}${s.exam_on ? html` <span class="tag sets-exam" title="Your exam date">exam ${longDay(s.exam_on)}</span>` : ''}
+          <a class="sets-name" href="/sets/${s.id!}">${s.name}</a>${visBadge(s)}${together(s)}${s.locked_at ? html` <span class="tag" title="The owner locked it: no changes by its editors">locked</span>` : ''}${s.proposals ? html` <a class="tag sets-proposal-tag" href="/sets/${s.id!}#sets-proposals" title="Changes proposed and not decided yet">${plural(s.proposals, 'change')} proposed</a>` : ''}${s.chat_unread ? html` <a class="tag sets-chat-tag" href="/sets/${s.id!}#sets-chat" title="Unread messages in the set's chat">${plural(s.chat_unread, 'new message')}</a>` : ''}${s.exam_on ? html` <span class="tag sets-exam" title="Your exam date">exam ${longDay(s.exam_on)}</span>` : ''}
           <span class="muted small">${plural(s.count, 'entry', 'entries')} · changed ${day(s.updated_at)}${s.description_text ? html` · ${s.description_text}` : ''}</span>
           <span class="sets-actions">${s.count ? html`<a class="button-link" href="/sets/${s.id!}/study">Study</a>` : ''}
-            ${s.role === 'editor' ? '' : html`<button type="button" class="link-button sets-delete" data-id="${s.id!}" data-name="${s.name}">Delete</button>`}</span></li>`)}</ul></section>`)
+            ${s.role && s.role !== 'owner' ? '' : html`<button type="button" class="link-button sets-delete" data-id="${s.id!}" data-name="${s.name}">Delete</button>`}</span></li>`)}</ul></section>`)
         : html`<p class="muted">No sets yet.</p>`}
     </section>`);
     const msg = main.querySelector<HTMLElement>('.sets-msg')!;
@@ -148,8 +191,12 @@ function list(main: HTMLElement) {
       const val = (n: string) => (f.elements.namedItem(n) as HTMLInputElement).value.trim();
       createSet(val('name'), val('topic')).then((set) => { if (set) location.assign(`/sets/${set.id!}`); }).catch((err: Error) => { msg.textContent = err.message; });
     });
+    main.querySelectorAll<HTMLButtonElement>('[data-accept]').forEach((b) => b.addEventListener('click', () => {
+      const setId = b.closest<HTMLElement>('[data-set]')!.dataset.set!;
+      answerInvitation(setId, b.dataset.accept === '1').then((x) => { if (x?.set) location.assign(`/sets/${x.set.id}`); else list(main); }).catch((err: Error) => { msg.textContent = err.message; });
+    }));
     main.querySelectorAll<HTMLButtonElement>('.sets-delete').forEach((b) => b.addEventListener('click', () => {
-      if (!confirm(`Delete the set “${b.dataset.name}”? Its entries stay on the site; what you know of them stays too. A shared link stops working.`)) return;
+      if (!confirm(`Delete the set “${b.dataset.name}”? Its entries stay on the site; what you know of them stays too. Its members lose it, its links and its public address stop working.`)) return;
       deleteSet(b.dataset.id!).then(() => list(main)).catch((err: Error) => { msg.textContent = err.message; });
     }));
   }).catch(() => failed(main, 'Your sets could not be loaded.'));
@@ -224,75 +271,75 @@ function planBox(box: HTMLElement, ref: SetRef, plan: StudyPlan, onChange: (p: S
   box.querySelector('.sets-exam-remove')?.addEventListener('click', () => save(''));
 }
 
-function one(main: HTMLElement, ref: SetRef) {
+function one(main: HTMLElement, ref: SetRef, note = '') {
   Promise.all([getSet(ref), account()]).then(([r, me]) => {
     if (!r) return 'own' in ref ? loggedOut(main) : failed(main, 'This set is not shared (any more).');
     const { set, items } = r;
     const proposals = r.proposals ?? [];
+    const decided = r.decided ?? [];
     const own = 'own' in ref;
-    const owner = own && (set.role ?? 'owner') === 'owner';
+    const role = own ? set.role ?? 'owner' : null;
+    const owner = role === 'owner';
+    const viewer = role === 'viewer';
     const locked = Boolean(set.locked_at);
-    const editor = own && !owner;
-    const proposed = new Set(proposals.map((p) => `${p.type}/${p.slug}`));
-    if (!own && set.mine && set.id) { location.replace(`/sets/${set.id}`); return; }   // the owner's own page
+    const editor = role === 'editor';
+    const directly = owner || set.rights === 'full';
+    const canChange = own && !viewer && !(editor && locked);
+    const pending = new Map(proposals.filter((p) => p.kind !== 'field').map((p) => [`${p.type ?? ''}/${p.slug ?? ''}`, p]));
+    if (!own && set.mine && set.id) { location.replace(`/sets/${set.id}`); return; }   // the owner's or a member's own page
     document.title = `${set.name} · Study sets · Art History`;
     const byType = new Map<string, StudyItem[]>();
     for (const i of items) { if (!byType.has(i.type)) byType.set(i.type, []); byType.get(i.type)!.push(i); }
     const crumbs = own ? html`<a href="/sets">Your study sets</a>` : html`<a href="/sets/shared">Shared sets</a>`;
+    const hasMembers = Boolean(set.members?.length);
     render(main, html`<section class="page sets-page">
       <p class="crumbs">${crumbs} / ${set.name}</p>
-      <h1>${set.name}${own ? visBadge(set) : ''}${own ? together(set) : ''}${own && locked ? html` <span class="tag" title="Its editors read and study it but change nothing">locked</span>` : ''}</h1>
+      <h1>${set.name}${own ? visBadge(set) : ''}${own ? together(set) : ''}${own && locked ? html` <span class="tag" title="Its members read and study it but change nothing">locked</span>` : ''}</h1>
       ${meta(set, !owner)}
-      ${editor && locked ? html`<p class="flash">The owner has locked this set: you can study it, but not change it.</p>` : ''}
+      ${own && (!owner || hasMembers) ? yourPart(set) : ''}
+      ${editor && locked ? html`<p class="flash">The owner has locked this set: you can study it, but not change or propose anything until they unlock it.</p>` : ''}
       ${set.description_html ? html`<div class="prose sets-description">${trusted(set.description_html)}</div>` : ''}
       ${own && set.copied_from ? html`<p class="muted small">A copy of <a href="/sets/s/${set.copied_from.code}">${set.copied_from.name}</a>${set.copied_from.creator ? ` by ${set.copied_from.creator}` : ''}.</p>` : ''}
       ${own ? html`<div class="sets-tools">
-        <details class="sets-edit"${editor && locked ? ' hidden' : ''}><summary class="link-button">Edit name, topic, description</summary>
+        ${viewer ? '' : html`<details class="sets-edit"${editor && locked ? ' hidden' : ''}><summary class="link-button">${directly ? 'Edit name, topic, description' : 'Propose a new name, topic, description'}</summary>
           <form class="sets-edit-form"><p class="sets-conflict flash" hidden></p>
+            ${directly ? '' : html`<p class="small muted">${set.rights === 'approval' ? 'What you change here is proposed to the owner; it applies once they accept it.'
+              : set.vote_mode === 'binding' ? 'What you change here is put to the vote; the vote decides.' : 'What you change here is put to the vote; the owner decides.'}</p>`}
             <input type="hidden" name="base_name" value="${set.name}"><input type="hidden" name="base_topic" value="${set.topic ?? ''}">
             <textarea name="base_description" hidden>${set.description ?? ''}</textarea>
             <label>Name <input name="name" value="${set.name}" maxlength="120" required></label>
             <label>Topic <input name="topic" value="${set.topic ?? ''}" maxlength="80" list="sets-topics" autocomplete="off" placeholder="e.g. Japanese art"></label>
             <label class="sets-edit-desc"><span>Description</span>
               <textarea name="description" rows="7" maxlength="10000" placeholder="What it is for, what to look out for, notes for learning …">${set.description ?? ''}</textarea></label>
-            <button type="submit">Save</button><datalist id="sets-topics"></datalist></form></details>
-        ${owner ? html`<details class="sets-share"><summary class="link-button">Share…</summary><div class="sets-share-body"></div></details>` : ''}
-        <details class="sets-together"><summary class="link-button">${owner ? 'Edit together…' : 'Edited together'}</summary><div class="sets-together-body"></div></details>
-        ${owner ? html`<button type="button" class="link-button sets-lock" title="${locked ? 'Its editors may change it again' : 'Its editors can still study it, but change nothing'}">${locked ? 'Unlock' : 'Lock'}</button>` : ''}
-        <details class="sets-history"><summary class="link-button">History</summary><div class="sets-history-body"></div></details>
-        <button type="button" class="link-button sets-copy-own" title="A set of your own with the same entries — yours to share and to invite to">Make my own copy</button></div>`
+            ${directly ? '' : html`<label>Why <span class="muted small">(optional — the others see it)</span> <input name="reason" maxlength="500"></label>`}
+            <button type="submit">${directly ? 'Save' : 'Propose'}</button><datalist id="sets-topics"></datalist></form></details>`}
+        ${owner ? html`<details class="sets-share" id="sets-sharing"><summary class="link-button">Sharing and members…</summary><div class="sets-share-body"></div></details>` : ''}
+        ${owner ? html`<button type="button" class="link-button sets-lock" title="${locked ? 'Its members may change and propose again' : 'Its members can still study it, but change and propose nothing'}">${locked ? 'Unlock' : 'Lock'}</button>` : ''}
+        ${viewer ? '' : html`<details class="sets-history"><summary class="link-button">History</summary><div class="sets-history-body"></div></details>`}
+        ${viewer ? '' : html`<button type="button" class="link-button sets-copy-own" title="A set of your own with the same entries — yours to share and to invite to">Make my own copy</button>`}
+        ${owner ? '' : html`<button type="button" class="link-button sets-leave">Leave this set</button>`}</div>`
         : html`<p class="sets-tools">${me ? html`<button type="button" class="sets-copy">Save a copy to your sets</button>`
           : html`<span class="muted small">${loginLink() ?? 'Log in'} to keep track of what you know and to save a copy.</span>`}</p>`}
       ${me ? html`<section class="sets-plan" aria-label="Your plan"></section>` : ''}
       ${studyForm(ref, items.length, Boolean(me))}
       <p class="sets-msg small" role="status"></p>
       ${me ? html`<section class="sets-stats" aria-label="Your results"></section>` : ''}
-      ${own && set.editors?.length ? html`<section class="sets-members" id="sets-members" aria-label="Members"></section>` : ''}
-      ${own && (set.chat_on || owner) && (set.editors?.length || set.chat_on) ? html`<section class="sets-chat" id="sets-chat" aria-label="The set's chat"></section>` : ''}
-      ${own && proposals.length ? html`<section class="sets-proposals" id="sets-proposals"><h2>Proposed removals <span class="muted">${String(proposals.length)}</span></h2>
-        <p class="muted small">${owner ? 'Your editors propose and vote; you decide — whenever you like, whatever the votes.' : 'Vote whether these entries should go; the owner decides.'}</p>
-        <ul class="sets-proposal-list">${proposals.map((p) => {
-          const remove = p.votes.filter((v) => v.remove).length;
-          const keep = p.votes.length - remove;
-          return html`<li class="sets-proposal" data-id="${p.id}">
-            <a href="${href(PLURAL[p.type], p.slug)}">${p.name}</a> <span class="muted small">${TYPE_LABEL[p.type]}${p.added_by ? ` · added by ${p.added_by}` : ''} · proposed by ${p.proposed_by ?? '—'} ${day(p.created_at)}</span>
-            ${p.reason ? html`<q class="sets-proposal-reason">${p.reason}</q>` : ''}
-            <span class="sets-votes" title="${p.votes.map((v) => `${v.by ?? '—'}: ${v.remove ? 'remove' : 'keep'}`).join(', ')}"><b>${String(remove)}</b> remove · <b>${String(keep)}</b> keep</span>
-            ${locked ? '' : html`<span class="sets-vote">
-              <button type="button" class="link-button${p.my_vote === true ? ' on' : ''}" data-vote="1" aria-pressed="${String(p.my_vote === true)}">Remove</button>
-              <button type="button" class="link-button${p.my_vote === false ? ' on' : ''}" data-vote="0" aria-pressed="${String(p.my_vote === false)}">Keep</button></span>`}
-            ${owner ? html`<span class="sets-decide"><button type="button" class="danger-outline" data-decide="removed">Remove it</button> <button type="button" class="secondary" data-decide="kept">Keep it</button></span>` : ''}</li>`;
-        })}</ul></section>` : ''}
+      ${own && (proposals.length || decided.length) ? html`<section class="sets-proposals" id="sets-proposals"></section>` : ''}
+      ${own && hasMembers ? html`<section class="sets-members" id="sets-members" aria-label="Members"></section>` : ''}
+      ${own && set.chat_allowed && (set.chat_on || owner) && (hasMembers || set.chat_on) ? html`<section class="sets-chat" id="sets-chat" aria-label="The set's chat"></section>` : ''}
       ${[...byType.entries()].map(([type, list]) => html`<section class="sets-group"><h2>${PLURAL_LABEL[PLURAL[type as StudyItem['type']]]} <span class="muted">${String(list.length)}</span></h2>
-        <ul class="sets-items">${list.map((i) => html`<li class="sets-entry">
+        <ul class="sets-items">${list.map((i) => {
+          const p = pending.get(`${i.type}/${i.slug}`);
+          return html`<li class="sets-entry">
           <a class="sets-entry-link" href="${href(PLURAL[i.type], i.slug)}">${itemPicture(i)}<span><span class="sets-entry-name">${i.name}</span>
             ${i.subtitle ? html`<span class="muted small">${i.subtitle}</span>` : ''}${i.added_by ? html`<span class="muted small sets-added-by">added by ${i.added_by}</span>` : ''}</span></a>
-          ${!own || (editor && locked) ? '' : owner || i.mine
+          ${!canChange ? '' : p ? html`<a class="muted small" href="#sets-proposals">removal proposed</a>` : directly
             ? html`<button type="button" class="link-button sets-remove" data-type="${i.type}" data-slug="${i.slug}" title="Remove from this set" aria-label="Remove ${i.name} from this set">×</button>`
-            : proposed.has(`${i.type}/${i.slug}`) ? html`<a class="muted small" href="#sets-proposals">proposed</a>`
-              : html`<button type="button" class="link-button sets-propose small" data-type="${i.type}" data-slug="${i.slug}" data-name="${i.name}" title="Someone else added it: propose its removal — the owner decides">Propose removal</button>`}</li>`)}</ul></section>`)}
+            : html`<button type="button" class="link-button sets-propose small" data-type="${i.type}" data-slug="${i.slug}" data-name="${i.name}" title="${set.rights === 'approval' ? 'Propose its removal — the owner decides' : 'Propose its removal — it is put to the vote'}">Propose removal</button>`}</li>`;
+        })}</ul></section>`)}
     </section>`);
     const msg = main.querySelector<HTMLElement>('.sets-msg')!;
+    msg.textContent = note;
     const stats = main.querySelector<HTMLElement>('.sets-stats');
     const planEl = main.querySelector<HTMLElement>('.sets-plan');
     const todayCount = (p: StudyPlan) => {
@@ -314,74 +361,154 @@ function one(main: HTMLElement, ref: SetRef) {
       return;
     }
     const id = ref.own;
-    const editForm = main.querySelector<HTMLFormElement>('.sets-edit-form')!;
-    markdownEditor(editForm.querySelector<HTMLTextAreaElement>('textarea[name=description]')!, previewDescription);
-    editForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const val = (n: string) => (editForm.elements.namedItem(n) as HTMLInputElement).value;
-      const conflict = editForm.querySelector<HTMLElement>('.sets-conflict')!;
-      updateSet(id, { name: val('name'), topic: val('topic'), description: val('description'), base_name: val('base_name'), base_topic: val('base_topic'), base_description: val('base_description') })
-        .then(() => one(main, ref))
-        .catch((err: Error) => {
-          if (!(err instanceof ApiError && err.status === 409)) { msg.textContent = err.message; return; }
-          // someone else changed it meanwhile: their version shown, yours kept in the form; Save again replaces theirs
-          const now = (err.body?.set ?? null) as StudySet | null;
-          if (!now) return;
-          const set = (n: string, v: string) => { (editForm.elements.namedItem(n) as HTMLInputElement).value = v; };
-          set('base_name', now.name); set('base_topic', now.topic ?? ''); set('base_description', now.description ?? '');
-          conflict.hidden = false;
-          render(conflict, html`<b>${now.updated_by ?? 'Someone'} changed this set meanwhile.</b> Their version is below — yours is still in the form:
-            Save again to replace theirs, or copy what you need first.
-            <span class="sets-conflict-theirs"><b>Name:</b> ${now.name}${now.topic ? html` · <b>Topic:</b> ${now.topic}` : ''}</span>
-            ${now.description_html ? html`<span class="prose sets-conflict-theirs">${trusted(now.description_html)}</span>` : ''}`);
-        });
-    });
-    main.querySelector('.sets-edit')!.addEventListener('toggle', () => {
-      getSets().then((x) => { const dl = main.querySelector('#sets-topics'); if (x && dl) render(dl, topicOptions(x.topics)); }).catch(() => {});
-    }, { once: true });
-    if (owner) sharing(main.querySelector<HTMLElement>('.sets-share-body')!, set, id);
-    editors(main.querySelector<HTMLElement>('.sets-together-body')!, set, id, owner);
-    history(main.querySelector<HTMLDetailsElement>('.sets-history')!, id, owner, () => one(main, ref));
+    const reload = () => one(main, ref);
+    /** a change made — or proposed (228): the message says which, then the page is drawn again */
+    const after = (r: unknown, what: string) => {
+      const p = r && typeof r === 'object' && 'proposed' in r ? r as Proposed : null;
+      one(main, ref, p ? proposedText(p, set, what) : '');
+    };
+    const editForm = main.querySelector<HTMLFormElement>('.sets-edit-form');
+    if (editForm) {
+      markdownEditor(editForm.querySelector<HTMLTextAreaElement>('textarea[name=description]')!, previewDescription);
+      editForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const val = (n: string) => (editForm.elements.namedItem(n) as HTMLInputElement | null)?.value ?? '';
+        const conflict = editForm.querySelector<HTMLElement>('.sets-conflict')!;
+        updateSet(id, { name: val('name'), topic: val('topic'), description: val('description'), base_name: val('base_name'), base_topic: val('base_topic'), base_description: val('base_description'), reason: val('reason') })
+          .then((r) => after(r, 'Your changes'))
+          .catch((err: Error) => {
+            if (!(err instanceof ApiError && err.status === 409 && (err.body as { error?: string } | null)?.error === 'changed')) { msg.textContent = err.message; return; }
+            // someone else changed it meanwhile: their version shown, yours kept in the form; Save again replaces theirs
+            const now = (err.body?.set ?? null) as StudySet | null;
+            if (!now) return;
+            const put = (n: string, v: string) => { (editForm.elements.namedItem(n) as HTMLInputElement).value = v; };
+            put('base_name', now.name); put('base_topic', now.topic ?? ''); put('base_description', now.description ?? '');
+            conflict.hidden = false;
+            render(conflict, html`<b>${now.updated_by ?? 'Someone'} changed this set meanwhile.</b> Their version is below — yours is still in the form:
+              Save again to replace theirs, or copy what you need first.
+              <span class="sets-conflict-theirs"><b>Name:</b> ${now.name}${now.topic ? html` · <b>Topic:</b> ${now.topic}` : ''}</span>
+              ${now.description_html ? html`<span class="prose sets-conflict-theirs">${trusted(now.description_html)}</span>` : ''}`);
+          });
+      });
+      main.querySelector('.sets-edit')!.addEventListener('toggle', () => {
+        getSets().then((x) => { const dl = main.querySelector('#sets-topics'); if (x && dl) render(dl, topicOptions(x.topics)); }).catch(() => {});
+      }, { once: true });
+    }
+    if (owner) ownerPanel(main.querySelector<HTMLDetailsElement>('.sets-share')!, set, id, reload);
+    const historyBox = main.querySelector<HTMLDetailsElement>('.sets-history');
+    if (historyBox) history(historyBox, id, owner, reload);
     main.querySelector('.sets-copy-own')?.addEventListener('click', () => {
       copyOwnSet(id).then((c) => { if (c) location.assign(`/sets/${c.id}`); }).catch((err: Error) => { msg.textContent = err.message; });
+    });
+    main.querySelector('.sets-leave')?.addEventListener('click', () => {
+      if (!confirm('Leave this set? It goes from your sets; your progress on its entries stays yours. To come back you need a new invitation or link.')) return;
+      leaveSet(id).then(() => location.assign('/sets')).catch((err: Error) => { msg.textContent = err.message; });
     });
     const chatBox = main.querySelector<HTMLElement>('.sets-chat');
     if (chatBox) setChat(chatBox, id, owner);
     const membersBox = main.querySelector<HTMLElement>('.sets-members');
-    if (membersBox) members(membersBox, id, owner, () => { if (chatBox) setChat(chatBox, id, owner); });
+    if (membersBox) members(membersBox, set, id, owner, () => { if (chatBox) setChat(chatBox, id, owner); });
+    const proposalsBox = main.querySelector<HTMLElement>('.sets-proposals');
+    if (proposalsBox) proposalList(proposalsBox, set, id, proposals, decided, reload);
     if (location.hash === '#sets-chat') chatBox?.scrollIntoView();
+    if (location.hash === '#sets-proposals') proposalsBox?.scrollIntoView();
+    if (location.hash === '#sets-sharing') { const d = main.querySelector<HTMLDetailsElement>('.sets-share'); if (d) { d.open = true; d.scrollIntoView(); } }
     main.querySelector('.sets-lock')?.addEventListener('click', () => {
-      if (!locked && !confirm('Lock this set? Its editors can still study it, but change nothing until you unlock it.')) return;
-      lockSet(id, !locked).then(() => one(main, ref)).catch((err: Error) => { msg.textContent = err.message; });
+      if (!locked && !confirm('Lock this set? Its members can still study it, but change, propose and vote on nothing until you unlock it.')) return;
+      lockSet(id, !locked).then(reload).catch((err: Error) => { msg.textContent = err.message; });
     });
     main.querySelectorAll<HTMLButtonElement>('.sets-propose').forEach((b) => b.addEventListener('click', () => {
-      const reason = window.prompt(`Why should “${b.dataset.name}” go? (optional — the owner decides)`);
+      const reason = window.prompt(`Why should “${b.dataset.name}” go? (optional — the others see it)`);
       if (reason === null) return;
-      proposeRemoval(id, b.dataset.type as StudyItem['type'], b.dataset.slug!, reason).then(() => one(main, ref)).catch((err: Error) => { msg.textContent = err.message; });
+      removeFromSet(id, b.dataset.type as StudyItem['type'], b.dataset.slug!, reason).then((r) => after(r, 'Removing it')).catch((err: Error) => { msg.textContent = err.message; });
     }));
-    main.querySelectorAll<HTMLElement>('.sets-proposal').forEach((li) => {
-      li.querySelectorAll<HTMLButtonElement>('[data-vote]').forEach((b) => b.addEventListener('click', () => {
-        voteRemoval(id, li.dataset.id!, b.dataset.vote === '1').then(() => one(main, ref)).catch((err: Error) => { msg.textContent = err.message; });
-      }));
-      li.querySelectorAll<HTMLButtonElement>('[data-decide]').forEach((b) => b.addEventListener('click', () => {
-        decideRemoval(id, li.dataset.id!, b.dataset.decide as 'removed' | 'kept').then(() => one(main, ref)).catch((err: Error) => { msg.textContent = err.message; });
-      }));
-    });
-    if (location.hash === '#sets-proposals') main.querySelector('#sets-proposals')?.scrollIntoView();
     main.querySelectorAll<HTMLButtonElement>('.sets-remove').forEach((b) => b.addEventListener('click', () => {
-      removeFromSet(id, b.dataset.type as StudyItem['type'], b.dataset.slug!).then(() => one(main, ref)).catch((err: Error) => { msg.textContent = err.message; });
+      removeFromSet(id, b.dataset.type as StudyItem['type'], b.dataset.slug!).then(reload).catch((err: Error) => { msg.textContent = err.message; });
     }));
   }).catch(() => failed(main, 'This set could not be loaded.'));
 }
 
-/** A set's members (226): its owner and editors with since when and how many entries they added; hide someone in
- *  the chat (only your view — no one is told), report a name; the owner removes someone from the chat. */
-function members(box: HTMLElement, id: string, owner: boolean, chatChanged: () => void) {
+/** "Proposed: … waits for the owner" — what happens to a change the account proposed (228). */
+function proposedText(p: Proposed, set: StudySet, what: string) {
+  const outcomes = [p.proposal?.outcome, ...(p.proposals ?? []).map((x) => x.outcome)].filter(Boolean);
+  if (outcomes.length && outcomes.every((o) => o === 'accepted')) return `${what}: done — with only you and the owner voting, there is no vote.`;
+  return `${what}: proposed — ${set.rights === 'approval' ? 'it applies once the owner accepts it.'
+    : set.vote_mode === 'binding' ? `put to the vote (at most ${String(set.vote_hours ?? 24)} h).` : 'put to the vote; the owner decides.'} See “Proposed changes” below.`;
+}
+
+/** The viewer's part in a set (228): their rights in plain words — and how its votes work. */
+function yourPart(set: StudySet) {
+  const r = (set.rights ?? 'owner') as RightsKey;
+  const votes = set.vote_mode && (r !== 'view');
+  return html`<div class="sets-your-part"><p><b>Your part: ${RIGHTS_NAME[r]}</b>${r === 'owner' ? '' : html` <span class="muted small">— given by the owner, ${set.creator ?? '—'}</span>`}</p>
+    <p class="small">${rightsText(r, set)}</p>
+    ${votes && r !== 'vote' ? html`<p class="small muted">Votes in this set: ${voteRules(set.vote_mode!, set.vote_hours ?? 24, Boolean(set.owner_veto))}</p>` : ''}
+    ${r === 'owner' ? '' : html`<p class="small muted">Your progress, results and exam date are your own — nobody else sees them. Your public name is shown to the other members.</p>`}</div>`;
+}
+
+const OUTCOME: Record<string, string> = { accepted: 'accepted', rejected: 'rejected', withdrawn: 'withdrawn', outdated: 'outdated — done or changed meanwhile', closed: 'closed — the set became private' };
+/** "add X" / "remove X" / "rename to Y" — what a proposal changes */
+function changeOf(p: SetProposal) {
+  const entry = p.slug && p.type ? html`<a href="${href(PLURAL[p.type], p.slug)}">${p.name ?? p.slug}</a>` : html`<span class="muted">an entry since deleted</span>`;
+  if (p.kind === 'add') return html`add ${entry}`;
+  if (p.kind === 'remove') return html`remove ${entry}${p.added_by ? html` <span class="muted small">(added by ${p.added_by})</span>` : ''}`;
+  if (p.field === 'description') return html`a new description <details class="sets-proposal-text"><summary class="small">show</summary><div class="small"><b>Now:</b> ${p.old ?? '—'}</div><div class="small"><b>Proposed:</b> ${p.new ?? '—'}</div></details>`;
+  return html`${p.field === 'name' ? 'rename it' : 'a new topic'}: <s class="muted">${p.old ?? '—'}</s> → <b>${p.new ?? '—'}</b>`;
+}
+const until = (iso: string) => {
+  const min = Math.round((new Date(iso).getTime() - Date.now()) / 60000);
+  return min <= 0 ? 'now' : min < 60 ? `in ${String(min)} min` : `in ${String(Math.floor(min / 60))} h ${String(min % 60)} min`;
+};
+
+/** The set's proposed changes (228): what each changes, who proposed it and why, how it is decided, the votes; the
+ *  members vote Yes / No / Abstain where it is put to the vote; the owner accepts or rejects where they may; the
+ *  proposer withdraws. The last decided ones below. */
+function proposalList(box: HTMLElement, set: StudySet, id: string, open: SetProposal[], decided: SetProposal[], reload: () => void) {
+  const owner = set.role === 'owner';
+  const locked = Boolean(set.locked_at);
+  const how = (p: SetProposal) => (p.procedure === 'approval' ? 'The owner accepts or rejects it.'
+    : p.procedure === 'advisory' ? 'Put to the vote; the owner decides, seeing the votes.'
+      : p.tie_at ? 'The vote ended even — the owner decides.'
+        : `Put to the vote: it decides ${until(p.closes_at!)} (${at(p.closes_at!)}) or earlier, once the missing votes can't change it.${set.owner_veto ? ' The owner may decide before.' : ''}`);
+  const count = (p: SetProposal, v: Vote) => (p.votes ?? []).filter((x) => x.vote === v).length;
+  const mayDecide = (p: SetProposal) => owner && (p.procedure !== 'binding' || Boolean(p.tie_at) || Boolean(set.owner_veto));
+  render(box, html`<h2>Proposed changes${open.length ? html` <span class="muted">${String(open.length)}</span>` : ''}</h2>
+    ${open.length ? html`<ul class="sets-proposal-list">${open.map((p) => {
+      const missing = Math.max(0, (p.voters ?? 0) - (p.votes ?? []).length);
+      return html`<li class="sets-proposal" data-id="${p.id}">
+        <span>${changeOf(p)}</span> <span class="muted small">proposed by ${p.proposed_by ?? '—'}${p.mine ? ' (you)' : ''} · ${at(p.created_at)}</span>
+        ${p.reason ? html`<q class="sets-proposal-reason">${p.reason}</q>` : ''}
+        <span class="small sets-proposal-how">${how(p)}</span>
+        ${p.procedure === 'approval' ? '' : html`<span class="sets-votes small" title="${(p.votes ?? []).map((v) => `${v.by ?? '—'}: ${VOTE_LABEL[v.vote]}`).join(', ')}">
+          <b>${String(count(p, 'yes'))}</b> yes · <b>${String(count(p, 'no'))}</b> no · <b>${String(count(p, 'abstain'))}</b> abstain${missing ? ` · ${String(missing)} not voted yet` : ''}
+          ${(p.votes ?? []).length ? html` <span class="muted">(${(p.votes ?? []).map((v) => `${v.by ?? '—'}: ${VOTE_LABEL[v.vote]}`).join(', ')})</span>` : ''}</span>`}
+        ${p.procedure === 'approval' || p.tie_at || locked ? '' : html`<span class="sets-vote">${(['yes', 'no', 'abstain'] as const).map((v) => html`<button type="button"
+          class="link-button${p.my_vote === v ? ' on' : ''}" data-vote="${v}" aria-pressed="${String(p.my_vote === v)}">${VOTE_LABEL[v]}</button> `)}</span>`}
+        ${mayDecide(p) ? html`<span class="sets-decide"><button type="button" data-decide="accepted">Accept</button> <button type="button" class="secondary" data-decide="rejected">Reject</button></span>` : ''}
+        ${p.mine ? html`<button type="button" class="link-button small" data-withdraw="${p.id}">Withdraw</button>` : ''}</li>`;
+    })}</ul>` : html`<p class="muted small">Nothing waiting.</p>`}
+    ${decided.length ? html`<details class="sets-decided"><summary class="small">Decided lately (${String(decided.length)})</summary><ul class="small">${decided.map((p) => html`<li>${changeOf(p)} — <b>${OUTCOME[p.outcome ?? ''] ?? p.outcome}</b>
+      <span class="muted">${p.by_vote ? 'by the vote' : p.decided_by ? `by ${p.decided_by}` : ''} · ${p.decided_at ? at(p.decided_at) : ''} · proposed by ${p.proposed_by ?? '—'}</span></li>`)}</ul></details>` : ''}
+    <p class="sets-proposals-msg small" role="status"></p>`);
+  const msg = box.querySelector<HTMLElement>('.sets-proposals-msg')!;
+  const fail = (err: Error) => { msg.textContent = err.message; };
+  box.querySelectorAll<HTMLElement>('.sets-proposal').forEach((li) => {
+    li.querySelectorAll<HTMLButtonElement>('[data-vote]').forEach((b) => b.addEventListener('click', () => { voteOn(id, li.dataset.id!, b.dataset.vote as Vote).then(reload).catch(fail); }));
+    li.querySelectorAll<HTMLButtonElement>('[data-decide]').forEach((b) => b.addEventListener('click', () => { decideProposal(id, li.dataset.id!, b.dataset.decide as 'accepted' | 'rejected').then(reload).catch(fail); }));
+    li.querySelector<HTMLButtonElement>('[data-withdraw]')?.addEventListener('click', () => { withdrawProposal(id, li.dataset.id!).then(reload).catch(fail); });
+  });
+}
+
+/** A set's members (226, 228): the owner and everyone else with their part, since when, how many entries they added;
+ *  hide someone in the chat (only your view — no one is told), report a name; the owner removes someone from the chat
+ *  (their rights: "Sharing and members"). */
+function members(box: HTMLElement, set: StudySet, id: string, owner: boolean, chatChanged: () => void) {
   const since = (iso: string | null) => (iso ? new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '');
   const load = () => getSetMembers(id).then((list) => {
     render(box, html`<h2>Members <span class="muted">${String(list.length)}</span></h2>
+      ${owner ? html`<p class="muted small">Rights, invitations and links: <a href="#sets-sharing">Sharing and members</a>.</p>` : ''}
       <ul class="sets-member-list">${list.map((m) => html`<li data-member="${m.id}"><b>${m.name ?? '—'}</b>
-        <span class="tag">${m.role}</span>${m.me ? html` <span class="muted small">(you)</span>` : ''}
+        <span class="tag" title="${rightsText(m.rights as RightsKey, set)}">${RIGHTS_NAME[m.rights as RightsKey]}</span>${m.me ? html` <span class="muted small">(you)</span>` : ''}
         <span class="muted small">since ${since(m.since)} · ${String(m.added)} ${m.added === 1 ? 'entry' : 'entries'} added</span>
         ${m.chat && m.removed ? html` <span class="tag">removed from the chat</span>` : ''}${m.hidden ? html` <span class="tag" title="Only you see this">hidden by you</span>` : ''}
         ${m.me ? '' : html`<span class="sets-member-actions small">
@@ -509,107 +636,157 @@ function history(details: HTMLDetailsElement, id: string, owner: boolean, reload
   });
 }
 
-/** Sharing a set: who sees it, the name shown, the link (copied; "New link" ends the old one). */
-function sharing(box: HTMLElement, set: StudySet, id: string) {
+/** The owner's "Sharing and members" (228): who sees the set; its members with their rights (changed, chat for
+ *  viewers, handed the set, removed); friends invited with rights; links with rights (turned off one by one); how
+ *  votes work — and what every kind of rights means, in the same words the members see. */
+function ownerPanel(details: HTMLDetailsElement, set: StudySet, id: string, reload: () => void) {
+  const box = details.querySelector<HTMLElement>('.sets-share-body')!;
   let publicName: string | null = null;
-  const draw = (note = '') => {
-    render(box, html`<form class="sets-share-form">
-      <fieldset><legend>Who can see it</legend>
-        ${(['private', 'link', 'public'] as const).map((v) => html`<label><input type="radio" name="visibility" value="${v}"${set.visibility === v ? ' checked' : ''}> ${VIS_LABEL[v]}
-          <span class="muted small">${v === 'private' ? '' : v === 'link' ? '— not listed; only who gets the link' : '— also listed under Shared sets'}</span></label>`)}</fieldset>
-      <label>Shown as <input name="public_name" value="${publicName ?? ''}" maxlength="60" placeholder="Your name on shared sets" autocomplete="nickname">
-        <span class="muted small">— not your login name; the same on all your shared sets</span></label>
-      <button type="submit">Save</button>
-      ${set.visibility !== 'private' && set.code ? html`<p class="sets-share-link"><input readonly value="${shareUrl(set.code)}" aria-label="Link to this set">
-        <button type="button" class="sets-share-copy">Copy link</button> <button type="button" class="link-button sets-share-new" title="The old link stops working">New link</button>
-        <button type="button" class="link-button sets-share-off" title="The link stops working for good; shared again, the set gets a new one">Turn the link off</button></p>` : ''}
-      <p class="muted small">Others see the name, topic, description, entries, your public name and the dates — never your results.</p>
-      <p class="sets-share-msg small" role="status">${note}</p></form>`);
-    const form = box.querySelector<HTMLFormElement>('form')!;
-    const msg = box.querySelector<HTMLElement>('.sets-share-msg')!;
-    const save = (data: Parameters<typeof shareSet>[1], done: string) => shareSet(id, data).then((r) => {
-      if (!r) return;
-      Object.assign(set, { visibility: r.set.visibility, code: r.set.code });
-      publicName = r.public_name;
-      draw(done);
-      const h1 = document.querySelector('.sets-page h1');
-      if (h1) render(h1, html`${set.name}${visBadge(set)}${together(set)}`);
-    }).catch((err: Error) => { msg.textContent = err.message; });
-    form.addEventListener('submit', (e) => {
+  const rightsSelect = (name: string, value: SetRights = 'view') => html`<select name="${name}" aria-label="Rights">${RIGHTS.map((r) => html`<option value="${r}"${r === value ? ' selected' : ''}>${RIGHTS_NAME[r]}</option>`)}</select>`;
+  const draw = (sh: SetSharing, note = '') => {
+    const members = set.members ?? [];
+    const vis = sh.settings.visibility;
+    const active = sh.links.filter((l) => !l.ended_at);
+    const ended = sh.links.filter((l) => l.ended_at);
+    render(box, html`<div class="sets-panel">
+      <p class="sets-share-msg small flash ok" role="status"${note ? '' : ' hidden'}>${note}</p>
+      <section><h3>Who can see it</h3>
+        <form class="sets-vis-form">${VISIBILITY.map((v) => html`<label class="check"><input type="radio" name="visibility" value="${v}"${vis === v ? ' checked' : ''}> <span><b>${VIS_LABEL[v]}</b> <span class="muted small">— ${VIS_HELP[v]}</span></span></label>`)}
+          <label>Your public name <input name="public_name" value="${publicName ?? ''}" maxlength="60" placeholder="Shown to members and on public sets" autocomplete="nickname">
+            <span class="muted small">— never your login name; the same on all your sets</span></label>
+          <button type="submit">Save</button>
+          ${vis === 'public' && set.code ? html`<p class="sets-share-link"><input readonly value="${shareUrl(set.code)}" aria-label="Address of the public set"> <button type="button" class="sets-copy-link">Copy</button></p>` : ''}</form></section>
+
+      <section><h3>Members <span class="muted">${String(members.length)}</span></h3>
+        ${members.length ? html`<ul class="sets-panel-members">${members.map((m) => html`<li data-member="${m.id}"><b>${m.name ?? '—'}</b>
+          ${rightsSelect('rights', m.rights)}
+          ${m.rights === 'view' ? html`<label class="check small"><input type="checkbox" name="chat"${m.chat ? ' checked' : ''}> <span>may use the chat</span></label>` : ''}
+          <button type="button" class="link-button small" data-owner="${m.id}" title="They own the set from then on; you stay as a member with full rights">Hand the set over</button>
+          <button type="button" class="link-button small danger-link" data-remove="${m.id}">Remove</button></li>`)}</ul>`
+          : html`<p class="muted small">No members yet — invite friends or send a link.</p>`}</section>
+
+      <section><h3>Invite a friend</h3>
+        ${sh.friends.length ? html`<form class="sets-invite-form"><select name="account" aria-label="Friend">${sh.friends.map((f) => html`<option value="${f.id}">${f.name ?? '—'}</option>`)}</select>
+          ${rightsSelect('rights')}<label class="check small sets-invite-chat"><input type="checkbox" name="chat"> <span>may use the chat (viewers)</span></label>
+          <button type="submit">Invite</button></form>
+          <p class="muted small">They find the invitation, with the rights it gives, among their sets and accept or decline it.</p>`
+          : html`<p class="muted small">Friends who aren't members yet appear here — add friends on <a href="/friends">Friends</a>, or send a link.</p>`}
+        ${sh.invitations.length ? html`<ul class="small">${sh.invitations.map((i) => html`<li>${i.name ?? '—'} — ${RIGHTS_NAME[i.rights]}${i.chat && i.rights === 'view' ? ', with the chat' : ''}
+          <span class="muted">invited ${day(i.invited_at)}, not answered yet</span> <button type="button" class="link-button" data-cancel="${i.id}">Cancel</button></li>`)}</ul>` : ''}</section>
+
+      <section><h3>Links</h3>
+        <p class="muted small">Anyone with an account who has a link can join with the rights it gives — send each only to those you mean. Turned off, a link lets no one new in; who joined with it stays.</p>
+        <form class="sets-link-form">${rightsSelect('rights')} <button type="submit">Make a link</button></form>
+        ${active.length ? html`<ul class="sets-links">${active.map((l) => html`<li data-link="${l.id}"><span class="tag">${RIGHTS_NAME[l.rights]}</span>
+          <input readonly value="${joinUrl(l.code)}" aria-label="Link: ${RIGHTS_NAME[l.rights]}"> <button type="button" class="sets-link-copy">Copy</button>
+          <span class="muted small">${plural(l.joined, 'person', 'people')} joined</span> <button type="button" class="link-button" data-end="${l.id}">Turn off</button></li>`)}</ul>` : ''}
+        ${ended.length ? html`<details class="small"><summary>Turned off (${String(ended.length)})</summary><ul>${ended.map((l) => html`<li class="muted">${RIGHTS_NAME[l.rights]} · made ${day(l.created_at)} · off since ${day(l.ended_at!)} · ${plural(l.joined, 'person', 'people')} joined</li>`)}</ul></details>` : ''}</section>
+
+      <section><h3>Votes</h3>
+        <form class="sets-votes-form"><p class="small">For members who edit <b>with votes</b> — a set votes one way or the other:</p>
+          <label class="check"><input type="radio" name="vote_mode" value="advisory"${sh.settings.vote_mode === 'advisory' ? ' checked' : ''}> <span><b>Advisory</b> <span class="muted small">— ${voteRules('advisory', sh.settings.vote_hours, false)}</span></span></label>
+          <label class="check"><input type="radio" name="vote_mode" value="binding"${sh.settings.vote_mode === 'binding' ? ' checked' : ''}> <span><b>Binding</b> <span class="muted small">— the vote decides; it lasts the hours below.</span></span></label>
+          <label>A vote lasts <input type="number" name="vote_hours" min="1" max="24" value="${String(sh.settings.vote_hours)}"> hours <span class="muted small">(1–24)</span></label>
+          <label class="check"><input type="checkbox" name="owner_veto"${sh.settings.owner_veto ? ' checked' : ''}> <span>Keep a veto: I may decide a binding vote before it ends <span class="muted small">— the members see that you have it</span></span></label>
+          <button type="submit">Save</button></form></section>
+
+      <section><h3>What each part may do</h3><dl class="sets-rights-legend small">
+        ${(['owner', ...RIGHTS] as RightsKey[]).map((r) => html`<dt>${RIGHTS_NAME[r]}</dt><dd>${rightsText(r, sh.settings)}</dd>`)}</dl>
+        <p class="muted small">Every member sees their own part in these words at the top of the set, and on an invitation or link before they join.</p></section>
+      <p class="sets-panel-msg small" role="status"></p></div>`);
+    const msg = box.querySelector<HTMLElement>('.sets-panel-msg')!;
+    const fail = (err: Error) => { msg.textContent = err.message; };
+    /** the public name as typed above — sharing with someone needs one */
+    const typedName = () => box.querySelector<HTMLInputElement>('.sets-vis-form input[name=public_name]')?.value.trim() || publicName || '';
+    const again = (note: string) => getSharing(id).then((x) => { if (x) draw(x, note); }).catch(fail);
+    const changed = (note: string) => getSet({ own: id }).then((r) => { if (r) Object.assign(set, r.set); return again(note); });
+    box.querySelector<HTMLFormElement>('.sets-vis-form')!.addEventListener('submit', (e) => {
       e.preventDefault();
-      const visibility = (form.elements.namedItem('visibility') as RadioNodeList).value as StudySet['visibility'];
-      save({ visibility, public_name: (form.elements.namedItem('public_name') as HTMLInputElement).value }, visibility === 'private' ? 'Only you see it now.' : 'Shared.');
+      const f = e.target as HTMLFormElement;
+      const visibility = (f.elements.namedItem('visibility') as RadioNodeList).value as Visibility;
+      if (visibility === 'private' && (set.members?.length || sh.links.some((l) => !l.ended_at) || sh.invitations.length)
+        && !confirm('Make it private? All members leave the set, open invitations end, links stop working and open proposals close. Only you will see it.')) return;
+      shareSet(id, { visibility, public_name: (f.elements.namedItem('public_name') as HTMLInputElement).value }).then((r) => {
+        if (!r) return;
+        publicName = r.public_name;
+        Object.assign(set, r.set);
+        void again(visibility === 'private' ? 'Private: only you see it now.' : visibility === 'public' ? 'Public: anyone can see it and it is listed under Shared sets.' : 'Shared: only its members see it.');
+        const h1 = document.querySelector('.sets-page h1');
+        if (h1) render(h1, html`${set.name}${visBadge(set)}${together(set)}`);
+      }).catch(fail);
     });
-    box.querySelector('.sets-share-copy')?.addEventListener('click', () => {
-      const input = box.querySelector<HTMLInputElement>('.sets-share-link input')!;
-      navigator.clipboard?.writeText(input.value).then(() => { msg.textContent = 'Link copied.'; }, () => { input.select(); });
+    box.querySelector('.sets-copy-link')?.addEventListener('click', (e) => copyFrom((e.target as HTMLElement).previousElementSibling as HTMLInputElement, msg));
+    box.querySelectorAll<HTMLLIElement>('[data-member]').forEach((li) => {
+      const who = li.dataset.member!;
+      li.querySelector('select')!.addEventListener('change', (e) => {
+        const rights = (e.target as HTMLSelectElement).value as SetRights;
+        changeMember(id, who, { action: 'rights', rights }).then(() => changed(`Now: ${RIGHTS_NAME[rights]}.`)).catch(fail);
+      });
+      li.querySelector<HTMLInputElement>('input[name=chat]')?.addEventListener('change', (e) => {
+        changeMember(id, who, { action: 'chat', on: (e.target as HTMLInputElement).checked ? '1' : '0' }).then(() => changed('Saved.')).catch(fail);
+      });
     });
-    box.querySelector('.sets-share-off')?.addEventListener('click', () => {
-      if (confirm('Turn the link off? It stops working for everyone who has it; only you see the set. Shared again, it gets a new link.')) save({ visibility: 'private' }, 'The link is off — only you see the set.');
+    box.querySelectorAll<HTMLButtonElement>('[data-remove]').forEach((b) => b.addEventListener('click', () => {
+      if (confirm('Remove them from the set? Their progress stays theirs; their open proposals stay until decided.')) changeMember(id, b.dataset.remove!, { action: 'remove' }).then(() => changed('Removed.')).catch(fail);
+    }));
+    box.querySelectorAll<HTMLButtonElement>('[data-owner]').forEach((b) => b.addEventListener('click', () => {
+      if (confirm('Hand the set over? They own it from then on — they decide about members, links and votes, and can delete it. You stay as a member with full rights.')) {
+        changeMember(id, b.dataset.owner!, { action: 'owner' }).then(reload).catch(fail);
+      }
+    }));
+    const invite = box.querySelector<HTMLFormElement>('.sets-invite-form');
+    invite?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const v = (n: string) => (invite.elements.namedItem(n) as HTMLInputElement | HTMLSelectElement).value;
+      inviteToSet(id, v('account'), v('rights') as SetRights, (invite.elements.namedItem('chat') as HTMLInputElement).checked, typedName())
+        .then(() => changed('Invited — they see the invitation among their sets.')).catch(fail);
     });
-    box.querySelector('.sets-share-new')?.addEventListener('click', () => {
-      if (confirm('Make a new link? The old one stops working.')) save({ new_link: '1' }, 'New link made — the old one no longer works.');
+    box.querySelectorAll<HTMLButtonElement>('[data-cancel]').forEach((b) => b.addEventListener('click', () => { cancelInvitation(id, b.dataset.cancel!).then(() => again('Invitation cancelled.')).catch(fail); }));
+    const linkForm = box.querySelector<HTMLFormElement>('.sets-link-form')!;
+    linkForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const rights = (linkForm.elements.namedItem('rights') as HTMLSelectElement).value as SetRights;
+      newSetLink(id, rights, typedName()).then(() => { publicName = typedName() || publicName; }).then(() => changed(`Link made: ${RIGHTS_NAME[rights]} — copy it and send it.`)).catch(fail);
+    });
+    box.querySelectorAll<HTMLButtonElement>('.sets-link-copy').forEach((b) => b.addEventListener('click', () => copyFrom(b.previousElementSibling as HTMLInputElement, msg)));
+    box.querySelectorAll<HTMLButtonElement>('[data-end]').forEach((b) => b.addEventListener('click', () => {
+      if (confirm('Turn this link off? No one new can join with it; who joined stays. This can\'t be undone — make a new link instead.')) endSetLink(id, b.dataset.end!).then(() => again('The link is off.')).catch(fail);
+    }));
+    const votes = box.querySelector<HTMLFormElement>('.sets-votes-form')!;
+    votes.addEventListener('submit', (e) => {
+      e.preventDefault();
+      saveVoteSettings(id, { vote_mode: (votes.elements.namedItem('vote_mode') as RadioNodeList).value as VoteMode, vote_hours: (votes.elements.namedItem('vote_hours') as HTMLInputElement).value,
+        owner_veto: (votes.elements.namedItem('owner_veto') as HTMLInputElement).checked ? '1' : '0' })
+        .then((s) => { if (s) Object.assign(set, s); return changed('Saved — open votes keep the rules they started with.'); }).catch(fail);
     });
   };
-  getSets().then((r) => { publicName = r?.public_name ?? null; draw(); }).catch(() => draw());
+  details.addEventListener('toggle', () => {
+    if (!details.open) return;
+    Promise.all([getSharing(id), getSets()]).then(([sh, r]) => { publicName = r?.public_name ?? null; if (sh) draw(sh); })
+      .catch(() => render(box, html`<p class="muted">This could not be loaded.</p>`));
+  });
 }
+const copyFrom = (input: HTMLInputElement, msg: HTMLElement) => {
+  navigator.clipboard?.writeText(input.value).then(() => { msg.textContent = 'Link copied.'; }, () => { input.select(); });
+};
 
-/** Editing together: the owner's invitation link (copied; a new one ends the old; stop), the editors (removed with ×);
- *  an editor sees who else edits it and can leave. */
-function editors(box: HTMLElement, set: StudySet, id: string, owner: boolean) {
-  const draw = (note = '') => {
-    const list = set.editors ?? [];
-    render(box, html`<div class="sets-together-form">
-      <p class="small">${owner ? 'Those you invite change the name, topic, description and entries with you; sharing, the editors and deleting stay yours. Each keeps their own progress, results and exam date.'
-        : html`You edit this set with its owner <b>${set.creator ?? '—'}</b>. Sharing and deleting it are theirs; your progress and results are your own.`}</p>
-      ${list.length ? html`<ul class="sets-editors">${list.map((e) => html`<li>${e.name ?? '—'}${e.me ? html` <span class="muted small">(you)</span>` : ''}
-        ${owner ? html`<button type="button" class="link-button sets-editor-remove" data-id="${e.id}" aria-label="Remove ${e.name ?? 'this editor'}" title="Remove from the editors">×</button>` : ''}</li>`)}</ul>`
-        : html`<p class="muted small">No one else edits it yet.</p>`}
-      ${owner ? (set.edit_code
-        ? html`<p class="sets-share-link"><input readonly value="${joinUrl(set.edit_code)}" aria-label="Invitation link">
-            <button type="button" class="sets-invite-copy">Copy link</button> <button type="button" class="link-button sets-invite-new" title="The old link stops working">New link</button>
-            <button type="button" class="link-button sets-invite-stop">Stop inviting</button></p>
-          <p class="muted small">Anyone with this link and an account can join as an editor — send it only to those you mean. Editors who joined stay until you remove them.</p>`
-        : html`<p><label class="sets-invite-name">Your public name (the editors see it) <input name="public_name" maxlength="60" autocomplete="nickname"></label>
-            <button type="button" class="sets-invite">Make an invitation link</button></p>`)
-        : html`<p><button type="button" class="link-button sets-leave">Leave this set</button></p>`}
-      <p class="sets-together-msg small" role="status">${note}</p></div>`);
-    const msg = box.querySelector<HTMLElement>('.sets-together-msg')!;
-    const act = (data: Parameters<typeof editSetEditors>[1], done: string) => editSetEditors(id, data).then((s) => {
-      if (s) Object.assign(set, { edit_code: s.edit_code, editors: s.editors });
-      draw(done);
-    }).catch((err: Error) => { msg.textContent = err.message; });
-    box.querySelector('.sets-invite')?.addEventListener('click', () => act({ action: 'invite', public_name: (box.querySelector('input[name=public_name]') as HTMLInputElement).value }, 'Invitation link made — copy it and send it.'));
-    box.querySelector('.sets-invite-new')?.addEventListener('click', () => { if (confirm('Make a new invitation link? The old one stops working (editors who joined stay).')) void act({ action: 'invite' }, 'New link made.'); });
-    box.querySelector('.sets-invite-stop')?.addEventListener('click', () => act({ action: 'stop' }, 'No one can join any more; the editors stay.'));
-    box.querySelector('.sets-invite-copy')?.addEventListener('click', () => {
-      const input = box.querySelector<HTMLInputElement>('.sets-share-link input')!;
-      navigator.clipboard?.writeText(input.value).then(() => { msg.textContent = 'Link copied.'; }, () => { input.select(); });
-    });
-    box.querySelectorAll<HTMLButtonElement>('.sets-editor-remove').forEach((b) => b.addEventListener('click', () => act({ action: 'remove', account: b.dataset.id! }, 'Removed.')));
-    box.querySelector('.sets-leave')?.addEventListener('click', () => {
-      if (!confirm('Leave this set? It goes from your sets; the owner can invite you again.')) return;
-      leaveSet(id).then(() => location.assign('/sets')).catch((err: Error) => { msg.textContent = err.message; });
-    });
-  };
-  // the owner's public name: asked only when an invitation is made and none is set yet
-  getSets().then((r) => { draw(); if (r?.public_name) box.querySelector('.sets-invite-name')?.remove(); }).catch(() => draw());
-}
-
-/** /sets/join/<code>: what the invitation is for; logged in → join (a public name first if none). */
+/** /sets/join/<code>: what the link is for and the rights it gives, in plain words; logged in → join (a public name
+ *  first if none). */
 function joinView(main: HTMLElement, code: string) {
-  document.title = 'Edit a set together · Art History';
+  document.title = 'Join a study set · Art History';
   Promise.all([getInvitation(code), account()]).then(async ([inv, me]) => {
-    if (!inv) return failed(main, 'This invitation could not be loaded.');
+    if (!inv) return failed(main, 'This link could not be loaded.');
     if (inv.role && inv.set.id) { location.replace(`/sets/${inv.set.id}`); return; }
-    render(main, html`<section class="page sets-page"><p class="crumbs"><a href="/sets">Study sets</a> / Invitation</p>
-      <h1>Edit “${inv.set.name}” together</h1>
-      <p>${inv.set.creator ?? 'Someone'} invites you to edit this set${inv.set.topic ? html` (<span class="sets-topic">${inv.set.topic}</span>)` : ''} with
-        ${inv.set.editors ? plural(inv.set.editors + 1, 'other') : 'them'}: ${plural(inv.set.count, 'entry', 'entries')} so far. You change its name, description and entries with them;
-        what you know of the cards, your results and your exam date stay your own.</p>
+    const r = inv.rights;
+    render(main, html`<section class="page sets-page"><p class="crumbs"><a href="/sets">Study sets</a> / Join</p>
+      <h1>Join “${inv.set.name}”</h1>
+      <p>${inv.set.creator ?? 'Someone'} shares this set${inv.set.topic ? html` (<span class="sets-topic">${inv.set.topic}</span>)` : ''} with you:
+        ${plural(inv.set.count, 'entry', 'entries')} so far, ${plural(inv.set.members, 'member')} besides the owner.</p>
+      <div class="sets-your-part"><p><b>You join as: ${RIGHTS_NAME[r]}</b></p><p class="small">${rightsText(r, { vote_mode: inv.set.vote_mode })}</p>
+        <p class="small muted">The owner can change your rights later, and you can leave the set at any time. What you know of the cards, your results and your exam date stay your own; the other members see your public name.</p></div>
       ${me ? html`<form class="sets-join">${inv.public_name ? html`<p class="muted small">The others see you as <b>${inv.public_name}</b>.</p>`
         : html`<label>Your public name — the others see it, never your username <input name="public_name" maxlength="60" required autocomplete="nickname"></label>`}
-        <button type="submit">Join as an editor</button> <span class="sets-msg small" role="status"></span></form>`
+        <button type="submit">Join as ${r === 'view' ? 'a viewer' : 'an editor'}</button> <span class="sets-msg small" role="status"></span></form>`
         : html`<p>${await accountLinks()}</p>`}</section>`);
     main.querySelector<HTMLFormElement>('.sets-join')?.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -618,7 +795,7 @@ function joinView(main: HTMLElement, code: string) {
       joinSet(code, name).then((s) => { if (s) location.assign(`/sets/${s.id}`); })
         .catch((err: Error) => { f.querySelector('.sets-msg')!.textContent = err.message; });
     });
-  }).catch(() => failed(main, 'This invitation is not valid (any more) — ask for a new link.'));
+  }).catch(() => failed(main, 'This link is not valid (any more) — the owner may have turned it off. Ask them for a new one.'));
 }
 
 /** "Your results": per kind of quiz, the boxes, the hardest entries. */

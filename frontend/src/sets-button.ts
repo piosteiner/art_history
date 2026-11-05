@@ -1,10 +1,19 @@
 // "+ Set" on an entry's page (owner 2026-11-04: study sets — backend routes/site-sets.js, migration 218): logged in,
 // a small menu lists the account's sets with a tick for those holding the entry (a click adds or removes it) and a
 // field for a new set, which gets the entry at once. Visitors see nothing (the site has no accounts for them yet).
+// A set the account edits with approval or votes (228): a click proposes the change — the menu says so and marks it
+// "proposed" until it is decided; a locked set can't be changed.
 import { account } from './account';
 import { addToSet, createSet, removeFromSet, setsOf } from './api';
 import { html, render } from './html';
 import type { EntityType } from './types';
+
+/** What a change in a set does for this account (228) — the title of its line */
+const HOW: Record<string, string> = {
+  owner: 'Your set: changes apply at once', full: 'You edit it with full rights: changes apply at once',
+  approval: 'You edit it with the owner\'s approval: a change is a proposal until the owner accepts it',
+  advisory: 'You edit it with votes: the members vote on a change, the owner decides', binding: 'You edit it with votes: the vote decides a change',
+};
 
 export function addToSetButton(slot: HTMLElement | null, type: EntityType, slug: string, title: string) {
   if (!slot) return;
@@ -29,7 +38,9 @@ export function addToSetButton(slot: HTMLElement | null, type: EntityType, slug:
       const n = sets.filter((s) => s.has).length;
       summary.textContent = n ? `✓ In ${n} set${n === 1 ? '' : 's'}` : '+ Set';
       render(list, sets.length
-        ? html`${sets.map((s) => html`<li><label><input type="checkbox" value="${s.id}"${s.has ? ' checked' : ''}> ${s.name}</label></li>`)}`
+        ? html`${sets.map((s) => html`<li><label title="${HOW[s.rights === 'vote' ? s.vote_mode : s.rights]}"><input type="checkbox" value="${s.id}" data-rights="${s.rights}" data-mode="${s.vote_mode}"${s.has ? ' checked' : ''}${s.proposed || s.locked ? ' disabled' : ''}> ${s.name}${
+          s.proposed ? html` <span class="tag">${s.proposed === 'add' ? 'adding' : 'removal'} proposed</span>` : s.locked ? html` <span class="tag">locked</span>`
+            : s.rights === 'approval' || s.rights === 'vote' ? html` <span class="muted small">(${s.rights === 'approval' ? 'the owner approves' : s.vote_mode === 'binding' ? 'by vote' : 'vote, the owner decides'})</span>` : ''}</label></li>`)}`
         : html`<li class="muted small">No sets yet — name your first one below.</li>`);
     }).catch(() => { msg.textContent = 'Your sets could not be loaded.'; });
     // the panel opens towards where there is room: to the right of the button, or ending at its right edge
@@ -45,7 +56,14 @@ export function addToSetButton(slot: HTMLElement | null, type: EntityType, slug:
       if (box.type !== 'checkbox') return;
       box.disabled = true;
       (box.checked ? addToSet(box.value, type, slug) : removeFromSet(box.value, type, slug))
-        .then(() => { msg.textContent = box.checked ? 'Added.' : 'Removed.'; return fill(); })
+        .then((r) => {
+          if (r && 'proposed' in r) {
+            const done = r.proposal?.outcome === 'accepted';
+            msg.textContent = done ? (box.checked ? 'Added — with only you and the owner voting, no vote is needed.' : 'Removed — with only you and the owner voting, no vote is needed.')
+              : `Proposed: ${box.checked ? 'adding' : 'removing'} it ${box.dataset.rights === 'approval' ? 'waits for the owner\'s approval' : box.dataset.mode === 'binding' ? 'is put to the vote' : 'is put to the vote; the owner decides'}.`;
+          } else msg.textContent = box.checked ? 'Added.' : 'Removed.';
+          return fill();
+        })
         .catch((err: Error) => { box.checked = !box.checked; msg.textContent = err.message; })
         .finally(() => { box.disabled = false; });
     });

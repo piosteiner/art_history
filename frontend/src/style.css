@@ -1396,10 +1396,33 @@ span.quiz-tile { cursor: default; }
 
 /* Accounts, exam dates, sets edited together (backend migration 220) */
 .sets-page .flash.ok { padding: .5rem .8rem; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: var(--radius); background: var(--surface); }
-.sets-together { margin: 0; }
-.sets-together-form { display: grid; gap: .5rem; max-width: 40rem; margin-top: .5rem; padding: .7rem .9rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
-.sets-together-form p { margin: 0; }
-.sets-editors { margin: 0; padding-left: 1.2rem; }
+/* members and rights (228): the member's own part; the owner's panel; invitations in the list */
+.sets-your-part { max-width: 46rem; margin: .6rem 0 1rem; padding: .6rem .9rem; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 6px; background: var(--surface); }
+.sets-your-part p { margin: .2rem 0; }
+.sets-panel { display: grid; gap: 1.1rem; max-width: 46rem; margin-top: .5rem; padding: .8rem 1rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.sets-panel section { display: grid; gap: .45rem; }
+.sets-panel h3 { margin: 0; font-size: 1rem; }
+.sets-panel p { margin: 0; }
+.sets-panel form { display: grid; gap: .45rem; }
+.sets-panel form > label { display: flex; flex-wrap: wrap; gap: .4rem; align-items: baseline; }
+.sets-panel form button[type=submit] { justify-self: start; }
+.sets-panel .sets-link-form, .sets-panel .sets-invite-form { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+.sets-panel-members, .sets-links { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
+.sets-panel-members li, .sets-links li { display: flex; flex-wrap: wrap; gap: .4rem .7rem; align-items: center; }
+.sets-links input { flex: 1 1 14rem; min-width: 0; font-family: ui-monospace, monospace; font-size: .85rem; }
+.sets-panel input[type=number] { width: 4.5rem; }
+.sets-rights-legend { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: .35rem .9rem; }
+.sets-rights-legend dt { font-weight: 600; }
+.sets-rights-legend dd { margin: 0; }
+@media (max-width: 560px) { .sets-rights-legend { grid-template-columns: 1fr; } .sets-rights-legend dd { margin-bottom: .4rem; } }
+.danger-link { color: var(--err, #b42318); }
+.sets-invitations ul { list-style: none; padding: 0; margin: 0 0 1rem; display: grid; gap: .6rem; }
+.sets-invitations li { padding: .6rem .9rem; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 6px; }
+.sets-invitation-rights { display: block; margin: .25rem 0 .4rem; }
+.sets-proposal-how { flex-basis: 100%; }
+.sets-proposal-text { display: inline-block; }
+.sets-decided { margin-top: .6rem; }
+.sets-decided ul { margin: .3rem 0; padding-left: 1.2rem; }
 .sets-invite-name { display: flex; flex-wrap: wrap; gap: .4rem; align-items: baseline; margin-bottom: .4rem; }
 .sets-together-tag, .sets-exam { margin-left: .3rem; }
 .sets-added-by { display: block; }

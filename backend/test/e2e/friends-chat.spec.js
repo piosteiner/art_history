@@ -62,7 +62,7 @@ test('friends: a request by friend link, accepted; a chat only the two see; read
 test('a set\'s chat: the owner switches it on, an editor writes without being a friend; the owner deletes and removes; reports; editors copy the set', async ({ userA, userB }) => {
   const b = sql("SELECT id FROM admin_users WHERE username = 'tester2'");
   const { set } = await call(userA, 'post', '/sets', { name: 'Test set chat' }, 201);
-  const code = (await call(userA, 'post', `/sets/${set.id}/editors`, { action: 'invite' }, 200)).set.edit_code;
+  const { code } = (await call(userA, 'post', `/sets/${set.id}/links`, { rights: 'full' }, 201)).link;
   await call(userB, 'post', `/shared/join/${code}`, {}, 201);
 
   // off: nobody writes; the owner switches it on
@@ -123,7 +123,7 @@ test('a set\'s members; hiding someone in the set\'s chat: their messages stay a
   const a = sql("SELECT id FROM admin_users WHERE username = 'tester'");
   const b = sql("SELECT id FROM admin_users WHERE username = 'tester2'");
   const { set } = await call(userA, 'post', '/sets', { name: 'Test set chat hide' }, 201);
-  const code = (await call(userA, 'post', `/sets/${set.id}/editors`, { action: 'invite' }, 200)).set.edit_code;
+  const { code } = (await call(userA, 'post', `/sets/${set.id}/links`, { rights: 'full' }, 201)).link;
   await call(userB, 'post', `/shared/join/${code}`, {}, 201);
   await call(userA, 'post', `/sets/${set.id}/items`, { type: 'artwork', slug: 'the-great-wave-off-kanagawa' }, 200);
   await call(userA, 'post', `/sets/${set.id}/chat/switch`, { on: '1' }, 200);

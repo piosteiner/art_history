@@ -44,7 +44,7 @@ function draw(main: HTMLElement, a: AccountInfo) {
     <dl class="account-facts"><dt>Username</dt><dd><b>${a.username}</b> <span class="muted small">— to log in; never shown to others</span></dd>
       <dt>Kind</dt><dd>${KIND[a.role]}${a.cms && ADMIN ? html` · <a href="${ADMIN}/">Open the CMS ↗</a>` : ''}</dd>
       <dt>Since</dt><dd>${day(a.created_at)}</dd>
-      <dt>Study sets</dt><dd><a href="/sets">${String(a.sets)} of your own${a.edits ? `, ${String(a.edits)} edited with others` : ''}</a></dd></dl>
+      <dt>Study sets</dt><dd><a href="/sets">${String(a.sets)} of your own${a.edits ? `, member of ${String(a.edits)} more` : ''}</a></dd></dl>
 
     <section class="account-section"><h2>Public name</h2>
       <p class="muted small">Shown on the sets you share and to those you edit sets with — choose any name; your username is never shown.</p>

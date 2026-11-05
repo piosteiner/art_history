@@ -69,7 +69,7 @@ router.get('/account', async (req, res) => {
   const { rows: [a] } = await adminPool.query(`SELECT u.username, u.role::text AS role, u.role >= 'editor' AS cms, u.public_name, u.created_at, u.created_via,
       u.password_set_at, (SELECT count(*)::int FROM admin_sessions x WHERE x.user_id = u.id AND x.expires_at > now()) AS sessions,
       (SELECT count(*)::int FROM study_sets s WHERE s.owner_id = u.id) AS sets,
-      (SELECT count(*)::int FROM study_set_editors e WHERE e.account_id = u.id) AS edits
+      (SELECT count(*)::int FROM study_set_members e WHERE e.account_id = u.id) AS edits
     FROM admin_users u WHERE u.id = $1`, [req.user.id]);
   res.json(a);
 });
@@ -80,7 +80,7 @@ router.post('/account/public-name', async (req, res) => {
   // a shared set or one edited together shows the name: it can be changed, not removed then
   if (!name) {
     const { rows: [{ shown }] } = await adminPool.query(`SELECT EXISTS (SELECT 1 FROM study_sets WHERE owner_id = $1 AND visibility <> 'private')
-      OR EXISTS (SELECT 1 FROM study_set_editors WHERE account_id = $1) AS shown`, [req.user.id]);
+      OR EXISTS (SELECT 1 FROM study_set_members WHERE account_id = $1) AS shown`, [req.user.id]);
     if (shown) return res.status(422).json({ error: 'your shared sets and sets edited together show your public name — change it, or stop sharing first' });
   }
   await adminPool.query('UPDATE admin_users SET public_name = $2 WHERE id = $1', [req.user.id, name]);

@@ -343,7 +343,10 @@ export const chatEvents = () => (ADMIN ? new EventSource(`${ADMIN}/site/friends/
 export interface SetChatMessage { id: string; kind: 'message' | 'system'; by: string | null; by_id: string | null; mine: boolean; body: string | null; at: string; deleted: 'owner' | 'author' | null; hidden?: boolean }
 export interface SetChatMember { id: string; name: string | null; owner: boolean; removed: boolean; me: boolean; hidden?: boolean }
 /** A set's members (226): owner and editors, since when, how many entries they added; hidden = the viewer hid them in the chat */
-export interface SetMember { id: string; name: string | null; role: 'owner' | 'editor'; since: string | null; added: number; me: boolean; chat: boolean; removed: boolean; hidden: boolean }
+export interface SetMember {
+  id: string; name: string | null; role: 'owner' | 'editor' | 'viewer'; rights: SetRights | 'owner'; since: string | null; via: 'link' | 'invitation' | null;
+  added: number; me: boolean; /** may use the set's chat now */ chat: boolean; /** a viewer the owner let into the chat */ chat_allowed: boolean; removed: boolean; hidden: boolean;
+}
 export const getSetMembers = (id: string) => account<{ members: SetMember[] }>(`/sets/${id}/members`).then((r) => r?.members ?? []);
 export const hideInSetChat = (id: string, accountId: string, hide: boolean) => account<null>(`/sets/${id}/chat/hide`, form({ account: accountId, hide: hide ? '1' : '0' }));
 export const getSetChat = (id: string, before = '') => account<{ on: boolean; removed: boolean; messages: SetChatMessage[]; members: SetChatMember[]; more: boolean }>(`/sets/${id}/chat${before ? `?before=${before}` : ''}`);
@@ -370,7 +373,10 @@ export const getPrivateImages = (slug: string) =>
 export const logOut = () => account<null>('/logout', { method: 'POST' });
 // Study sets (backend routes/site-sets.js, 218): the account's own lists of entries and their index cards. Writes are
 // form posts (no CORS preflight); every call null when not logged in.
-export type Visibility = 'private' | 'link' | 'public';
+export type Visibility = 'private' | 'shared' | 'public';
+/** A member's rights (228): view; edit at once (full), with the owner's approval, or by the set's kind of vote */
+export type SetRights = 'view' | 'full' | 'approval' | 'vote';
+export type VoteMode = 'advisory' | 'binding';
 export type StudyMode = 'forward' | 'reverse' | 'both' | 'typed' | 'choice';
 export interface StudySet {
   id?: string; name: string; topic: string | null; visibility: Visibility; code: string | null;
@@ -381,22 +387,34 @@ export interface StudySet {
   creator?: string | null; mine?: boolean;
   /** a copy of someone's shared set (while that one is still shared) */
   copied_from?: { name: string; code: string; creator: string | null } | null;
-  /** edited together (220): the viewer's role in it; the editors (owner: their ids to remove); the invitation code
-   *  (owner only); who changed it last; the viewer's exam date for it (YYYY-MM-DD) */
-  role?: 'owner' | 'editor'; editors?: { id: string; name: string | null; me: boolean }[]; editor_count?: number;
-  edit_code?: string | null; updated_by?: string | null; exam_on?: string | null;
+  /** members (228): the viewer's role and rights in it; everyone else with their rights; who changed it last; the
+   *  viewer's exam date for it (YYYY-MM-DD); may the viewer use its chat */
+  role?: 'owner' | 'editor' | 'viewer'; rights?: SetRights | 'owner';
+  members?: { id: string; name: string | null; me: boolean; rights: SetRights; chat: boolean }[];
+  editors?: { id: string; name: string | null; me: boolean; rights: SetRights }[]; editor_count?: number; viewer_count?: number;
+  updated_by?: string | null; exam_on?: string | null; chat_allowed?: boolean;
+  /** the set's kind of vote, its length in hours, the owner's veto on binding votes (228) */
+  vote_mode?: VoteMode; vote_hours?: number; owner_veto?: boolean;
   /** locked by the owner (221): editors read and study, change nothing */
   locked_at?: string | null;
   /** the set's chat is on (225); the list: unread messages in it */
   chat_on?: boolean; chat_unread?: number;
-  /** the list (221): open removal proposals, and those the viewer has not voted on yet */
-  proposals?: number; to_vote?: number;
+  /** the list (228): open proposals, those the viewer may vote on and hasn't, those waiting for the owner */
+  proposals?: number; to_vote?: number; to_decide?: number;
 }
-/** An entry proposed for removal from a set (221): the votes by public name; the viewer's own (null = not voted). */
+export type Vote = 'yes' | 'no' | 'abstain';
+/** A proposed change of a set (228): an entry added or removed, or a field; decided by the owner (approval, advisory)
+ *  or the vote (binding; `tie_at`: ended even — the owner decides). Open ones carry the votes and the viewer's own. */
 export interface SetProposal {
-  id: string; type: EntityType; slug: string; name: string; reason: string | null; created_at: string;
-  proposed_by: string | null; added_by: string | null; votes: { by: string | null; remove: boolean }[]; my_vote: boolean | null;
+  id: string; kind: 'add' | 'remove' | 'field'; field: 'name' | 'topic' | 'description' | null; old: string | null; new: string | null;
+  type: EntityType | null; slug: string | null; name: string | null; procedure: 'approval' | 'advisory' | 'binding';
+  reason: string | null; created_at: string; closes_at: string | null; tie_at: string | null; mine: boolean;
+  proposed_by: string | null; added_by: string | null;
+  votes?: { by: string | null; vote: Vote }[]; my_vote?: Vote | null; voters?: number;
+  decided_at: string | null; outcome: 'accepted' | 'rejected' | 'withdrawn' | 'outdated' | 'closed' | null; decided_by: string | null; by_vote: boolean;
 }
+/** A change the account proposed instead of making it (228: editing with approval or votes) */
+export interface Proposed { proposed: true; proposal?: { id: string; procedure: SetProposal['procedure']; outcome: string | null }; proposals?: { id: string; outcome: string | null }[] }
 /** A step in a set's history (221). */
 export interface SetEvent {
   id: string; at: string; action: 'created' | 'changed' | 'added' | 'removed' | 'restored' | 'locked' | 'unlocked';
@@ -428,29 +446,32 @@ export interface StudyStats {
 export type SetRef = { own: string } | { code: string };
 const base = (ref: SetRef) => ('own' in ref ? `/sets/${ref.own}` : `/shared/${ref.code}`);
 const form = (data: Record<string, string>): RequestInit => ({ method: 'POST', body: new URLSearchParams(data) });
-export const getSets = () => account<{ sets: StudySet[]; public_name: string | null; topics: string[] }>('/sets');
+/** An invitation from a friend to a set, with the rights it gives (228) */
+export interface SetInvitation { set_id: string | number; name: string; topic: string | null; creator: string | null; rights: SetRights; chat: boolean; invited_at: string; vote_mode: VoteMode; count: number }
+export const getSets = () => account<{ sets: StudySet[]; public_name: string | null; topics: string[]; invitations: SetInvitation[] }>('/sets');
+export const answerInvitation = (setId: string, accept: boolean) => account<{ set: { id: string } | null }>(`/sets/invitations/${setId}`, form({ accept: accept ? '1' : '0' }));
 export const createSet = (name: string, topic = '', description = '') =>
   account<{ set: StudySet }>('/sets', form({ name, topic, description })).then((r) => r?.set ?? null);
 /** `base_*`: what the form started from — a field someone else changed meanwhile: ApiError 409 'changed' (220) */
-export const updateSet = (id: string, data: { name: string; topic: string; description: string; base_name?: string; base_topic?: string; base_description?: string }) =>
-  account<{ set: StudySet }>(`/sets/${id}`, form(data as Record<string, string>)).then((r) => r?.set ?? null);
-export const shareSet = (id: string, data: { visibility?: Visibility; public_name?: string; new_link?: '1' }) =>
+export const updateSet = (id: string, data: { name: string; topic: string; description: string; base_name?: string; base_topic?: string; base_description?: string; reason?: string }) =>
+  account<{ set: StudySet } | Proposed>(`/sets/${id}`, form(data as Record<string, string>));
+export const shareSet = (id: string, data: { visibility?: Visibility; public_name?: string }) =>
   account<{ set: StudySet; public_name: string | null }>(`/sets/${id}/share`, form(data as Record<string, string>));
 export const deleteSet = (id: string) => account<null>(`/sets/${id}/delete`, form({}));
-export const getSet = (ref: SetRef) => account<{ set: StudySet; items: StudyItem[]; proposals?: SetProposal[] }>(base(ref));
+export const getSet = (ref: SetRef) => account<{ set: StudySet; items: StudyItem[]; proposals?: SetProposal[]; decided?: SetProposal[] }>(base(ref));
 // history, restore, lock, proposals (221)
 export const getSetHistory = (id: string) => account<{ events: SetEvent[]; more: boolean }>(`/sets/${id}/history`);
 export const restoreSet = (id: string, event: string, reason = '') => account<{ restored: { removed: number; added: number } }>(`/sets/${id}/restore`, form({ event, reason }));
 export const lockSet = (id: string, locked: boolean) => account<{ set: StudySet }>(`/sets/${id}/lock`, form({ locked: locked ? '1' : '0' })).then((r) => r?.set ?? null);
-export const proposeRemoval = (id: string, type: EntityType, slug: string, reason = '') =>
-  account<{ proposals: SetProposal[] }>(`/sets/${id}/proposals`, form({ type, slug, reason }));
-export const voteRemoval = (id: string, pid: string, remove: boolean) => account<{ proposals: SetProposal[] }>(`/sets/${id}/proposals/${pid}/vote`, form({ remove: remove ? '1' : '0' }));
-export const decideRemoval = (id: string, pid: string, decision: 'removed' | 'kept') =>
-  account<{ proposals: SetProposal[]; count: number }>(`/sets/${id}/proposals/${pid}/decide`, form({ decision }));
+export const voteOn = (id: string, pid: string, vote: Vote) => account<{ proposals: SetProposal[] }>(`/sets/${id}/proposals/${pid}/vote`, form({ vote }));
+export const decideProposal = (id: string, pid: string, decision: 'accepted' | 'rejected') =>
+  account<{ outcome: string; proposals: SetProposal[]; count: number }>(`/sets/${id}/proposals/${pid}/decide`, form({ decision }));
+export const withdrawProposal = (id: string, pid: string) => account<{ proposals: SetProposal[] }>(`/sets/${id}/proposals/${pid}/withdraw`, form({}));
 export const setsOf = (type: EntityType, slug: string) =>
-  account<{ sets: { id: string; name: string; has: boolean }[] }>(`/sets/of?${new URLSearchParams({ type, slug })}`).then((r) => r?.sets ?? null);
-export const addToSet = (id: string, type: EntityType, slug: string) => account<{ count: number }>(`/sets/${id}/items`, form({ type, slug }));
-export const removeFromSet = (id: string, type: EntityType, slug: string) => account<{ count: number }>(`/sets/${id}/items/remove`, form({ type, slug }));
+  account<{ sets: { id: string; name: string; has: boolean; rights: SetRights | 'owner'; vote_mode: VoteMode; locked: boolean; proposed: 'add' | 'remove' | null }[] }>(`/sets/of?${new URLSearchParams({ type, slug })}`).then((r) => r?.sets ?? null);
+/** Added / removed — or, editing with approval or votes (228), proposed (`proposed: true`) */
+export const addToSet = (id: string, type: EntityType, slug: string, reason = '') => account<{ count: number } | Proposed>(`/sets/${id}/items`, form({ type, slug, reason }));
+export const removeFromSet = (id: string, type: EntityType, slug: string, reason = '') => account<{ count: number } | Proposed>(`/sets/${id}/items/remove`, form({ type, slug, reason }));
 export const getCards = (ref: SetRef) => account<{ set: StudySet; cards: StudyCard[] }>(`${base(ref)}/cards`);
 export const answerCard = (type: EntityType, slug: string, direction: 'forward' | 'reverse', known: boolean) =>
   account<CardProgress>('/sets/progress', form({ type, slug, direction, known: known ? '1' : '0' }));
@@ -467,12 +488,29 @@ export const getPublicSets = (topic = '', q = '') =>
   account<{ sets: StudySet[]; topics: { topic: string; count: number }[] }>(`/shared?${new URLSearchParams({ topic, q })}`);
 /** The account's exam date for a set (YYYY-MM-DD; '' = none) → the day's plan */
 export const savePlan = (ref: SetRef, examOn: string) => account<{ plan: StudyPlan }>(`${base(ref)}/plan`, form({ exam_on: examOn })).then((r) => r?.plan ?? null);
-// sets edited together (220)
-export const editSetEditors = (id: string, data: { action: 'invite' | 'stop' | 'remove'; account?: string; public_name?: string }) =>
-  account<{ set: StudySet }>(`/sets/${id}/editors`, form(data as Record<string, string>)).then((r) => r?.set ?? null);
+// members, links, invitations, the kind of vote (228) — the owner's
+export interface SetLink { id: string; code: string; rights: SetRights; created_at: string; ended_at: string | null; joined: number }
+export interface SetSharing {
+  links: SetLink[]; invitations: { id: string; name: string | null; rights: SetRights; chat: boolean; invited_at: string }[];
+  friends: { id: string; name: string | null }[];
+  settings: { visibility: Visibility; vote_mode: VoteMode; vote_hours: number; owner_veto: boolean };
+}
+export const getSharing = (id: string) => account<SetSharing>(`/sets/${id}/sharing`);
+export const newSetLink = (id: string, rights: SetRights, publicName = '') => account<{ link: SetLink }>(`/sets/${id}/links`, form({ rights, public_name: publicName })).then((r) => r?.link ?? null);
+export const endSetLink = (id: string, lid: string) => account<null>(`/sets/${id}/links/${lid}/end`, form({}));
+export const inviteToSet = (id: string, accountId: string, rights: SetRights, chat: boolean, publicName = '') =>
+  account<{ ok: boolean }>(`/sets/${id}/invitations`, form({ account: accountId, rights, chat: chat ? '1' : '0', public_name: publicName }));
+export const cancelInvitation = (id: string, accountId: string) => account<null>(`/sets/${id}/invitations`, form({ account: accountId, action: 'cancel' }));
+export const changeMember = (id: string, accountId: string, data: { action: 'rights'; rights: SetRights } | { action: 'chat'; on: '1' | '0' } | { action: 'remove' | 'owner' }) =>
+  account<{ set: StudySet | null }>(`/sets/${id}/members/${accountId}`, form(data as Record<string, string>));
+export const saveVoteSettings = (id: string, data: { vote_mode?: VoteMode; vote_hours?: string; owner_veto?: '1' | '0' }) =>
+  account<{ set: StudySet }>(`/sets/${id}/settings`, form(data as Record<string, string>)).then((r) => r?.set ?? null);
 export const leaveSet = (id: string) => account<null>(`/sets/${id}/leave`, form({}));
-export interface Invitation { set: { id?: string; name: string; topic: string | null; creator: string | null; count: number; editors: number }; role: 'owner' | 'editor' | null; public_name: string | null }
-/** What an invitation to edit is for — anyone may look (a 404 is an ApiError) */
+export interface Invitation {
+  set: { id?: string; name: string; topic: string | null; creator: string | null; count: number; members: number; editors: number; viewers: number; vote_mode: VoteMode };
+  rights: SetRights; role: 'owner' | 'editor' | 'viewer' | null; public_name: string | null;
+}
+/** What a link to a set is for and which rights it gives — anyone may look (a 404 is an ApiError) */
 export const getInvitation = (code: string) => account<Invitation>(`/shared/join/${code}`);
 export const joinSet = (code: string, publicName = '') => account<{ set: { id: string } }>(`/shared/join/${code}`, form({ public_name: publicName })).then((r) => r?.set ?? null);
 export const copySet = (code: string) => account<{ set: { id: string; name: string } }>(`/shared/${code}/copy`, form({})).then((r) => r?.set ?? null);

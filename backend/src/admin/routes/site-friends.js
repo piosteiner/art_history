@@ -62,10 +62,10 @@ router.get('/', async (req, res) => {
   const { rows } = await adminPool.query(`
     WITH my_sets AS (
       SELECT s.id, s.name, s.owner_id FROM study_sets s
-      WHERE s.owner_id = $1 OR EXISTS (SELECT 1 FROM study_set_editors e WHERE e.set_id = s.id AND e.account_id = $1)),
+      WHERE s.owner_id = $1 OR EXISTS (SELECT 1 FROM study_set_members e WHERE e.set_id = s.id AND e.account_id = $1)),
     co AS (
       SELECT ms.owner_id AS who, ms.id, ms.name FROM my_sets ms
-      UNION SELECT e.account_id, ms.id, ms.name FROM my_sets ms JOIN study_set_editors e ON e.set_id = ms.id),
+      UNION SELECT e.account_id, ms.id, ms.name FROM my_sets ms JOIN study_set_members e ON e.set_id = ms.id),
     rel AS (
       SELECT CASE WHEN f.low_id = $1 THEN f.high_id ELSE f.low_id END AS who FROM friendships f WHERE $1 IN (f.low_id, f.high_id)
       UNION SELECT blocked_id FROM account_blocks WHERE blocker_id = $1),
@@ -242,9 +242,9 @@ function listen() {
       if (m.kind === 'message') send(m.to, 'message', { from: String(m.from), id: String(m.id) });
       else if (m.kind === 'read') send(m.from, 'read', { by: String(m.to) });
       else if (m.kind === 'set') {
-        // a set's chat (225): its owner and editors still in the chat
+        // a set's chat (225): its owner and the members allowed in it (228: editors, viewers the owner allows) still in the chat
         adminPool.query(`SELECT s.owner_id::text AS id FROM study_sets s WHERE s.id = $1
-            UNION SELECT e.account_id::text FROM study_set_editors e WHERE e.set_id = $1
+            UNION SELECT e.account_id::text FROM study_set_members e WHERE e.set_id = $1 AND (e.rights <> 'view' OR e.chat)
               AND NOT EXISTS (SELECT 1 FROM set_chat_removed x WHERE x.set_id = e.set_id AND x.account_id = e.account_id)`, [m.set])
           .then(({ rows }) => { for (const r of rows) send(r.id, 'set', { set: String(m.set), id: String(m.id) }); }).catch(() => {});
       }

@@ -683,8 +683,9 @@ if (collabForm && live) {
   document.querySelectorAll('textarea.md').forEach((ta) => enhance(ta));
 }
 
-// The map picker (Leaflet + Geoman, ~200 KB) is only fetched on pages that have one (place forms).
-if (document.querySelector('.map-picker')) {
+// The map picker (Leaflet + Geoman, ~200 KB) is only fetched on pages that have one (place forms) or show a route or
+// an area (the view page's .map-view).
+if (document.querySelector('.map-picker, .map-view')) {
   // versioned URLs from the page (src/admin/assets.js), so a new deploy is never served from the browser cache
   document.head.append(Object.assign(document.createElement('link'), { rel: 'stylesheet', href: document.body.dataset.mapCss || '/static/map.css' }));
   document.head.append(Object.assign(document.createElement('script'), { src: document.body.dataset.mapJs || '/static/map.js' }));

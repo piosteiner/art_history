@@ -218,3 +218,19 @@ function init(box) {
 }
 
 document.querySelectorAll('.map-picker').forEach(init);
+
+// A route or an area on an entry's view page (2026-11-05): read-only, fitted to the shape; the place's point too.
+function view(box) {
+  const map = L.map(box, { scrollWheelZoom: false });
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19, referrerPolicy: 'strict-origin-when-cross-origin', attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  }).addTo(map);
+  const shape = L.geoJSON(JSON.parse(box.dataset.geojson), { style: { color: '#d9480f', weight: 4, opacity: 0.85 } }).addTo(map);
+  if (box.dataset.point) {
+    const [lon, lat] = JSON.parse(box.dataset.point);
+    L.marker([lat, lon], { icon: markerIcon, interactive: false }).addTo(map);
+  }
+  map.fitBounds(shape.getBounds(), { padding: [16, 16] });
+  setTimeout(() => map.invalidateSize(), 0);
+}
+document.querySelectorAll('.map-view').forEach(view);

@@ -133,6 +133,9 @@ button.md-tool.md-lang { font-size: .72rem; letter-spacing: .06em; color: var(--
 .map-results { font-size: .9rem; }
 .map-result { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; padding: .3rem 0; border-bottom: 1px solid var(--line); }
 .map-result .actions { gap: 1rem; }
+.geo-view p { margin: 0 0 .3rem; }
+.map-view { height: 320px; border: 1px solid var(--line); border-radius: 6px; z-index: 0; }
+.geo-view details { margin-top: .3rem; }
 .map-canvas { height: 420px; border: 1px solid var(--line); border-radius: 6px; margin-top: .4rem; z-index: 0; }
 .map-pin { background: var(--accent); border: 3px solid #fff; border-radius: 50%; box-shadow: 0 0 0 1px rgba(0,0,0,.4), 0 1px 4px rgba(0,0,0,.4); }
 .leaflet-container { font: inherit; }

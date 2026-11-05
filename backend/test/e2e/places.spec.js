@@ -16,6 +16,11 @@ test('a road as a line (212): the route typed as GeoJSON, in the API, shown as t
   await expect(userA).toHaveURL(/\/places\/test-road\?done=created/);
   const p = await api(request, '/places/test-road');
   expect(p.route).toEqual({ type: 'LineString', coordinates: [[139.774, 35.684], [139.596, 35.444], [135.772, 35.009]] });
+  // the view page: what the line is, drawn on a small map; the GeoJSON folded away (owner 2026-11-05)
+  const route = userA.locator('.geo-view');
+  await expect(route).toContainText('A line through 3 points, about');
+  await expect(route.locator('.map-view.leaflet-container path.leaflet-interactive')).toHaveCount(1);
+  await expect(route.locator('details pre')).toBeHidden();
   await userA.goto('/places/test-road/history');
   await expect(userA.locator('main')).toContainText('LINESTRING(139.774 35.684');
   await userA.goto('/places/test-road/edit');
