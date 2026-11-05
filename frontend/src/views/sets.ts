@@ -25,9 +25,9 @@
 // with its result (per set and kind of quiz: the set page's "Your results"); visitors learn too, nothing is kept.
 import { account } from '../account';
 import {
-  answerCard, ApiError, copySet, createSet, decideRemoval, deleteSet, editSetEditors, getCards, getInvitation, getPublicSets, getSet, getSetHistory, getSets, getSetStats, joinSet,
+  answerCard, ApiError, chatEvents, copyOwnSet, copySet, deleteSetChat, getSetChat, postSetChat, reportSetChat, setChatMember, switchSetChat, createSet, decideRemoval, deleteSet, editSetEditors, getCards, getInvitation, getPublicSets, getSet, getSetHistory, getSets, getSetStats, joinSet,
   leaveSet, lockSet, loginUrl, previewDescription, proposeRemoval, recordRound, removeFromSet, restoreSet, savePlan, shareSet, updateSet, voteRemoval,
-  type SetEvent, type SetRef, type StudyCard, type StudyItem, type StudyMode, type StudyPlan, type StudySet, type StudyStats,
+  type SetChatMessage, type SetEvent, type SetRef, type StudyCard, type StudyItem, type StudyMode, type StudyPlan, type StudySet, type StudyStats,
 } from '../api';
 import { accountLinks } from './account';
 import { href, html, PLURAL_LABEL, render, thumb, trusted, TYPE_LABEL, type Html } from '../html';
@@ -135,7 +135,7 @@ function list(main: HTMLElement) {
         ${sets.filter((s) => s.to_vote).map((s, i) => html`${i ? ' · ' : ''}<a href="/sets/${s.id!}#sets-proposals">${s.name}</a> <span class="muted">(${String(s.to_vote)})</span>`)}</p>` : ''}
       ${sets.length ? groups.map(([topic, list]) => html`<section class="sets-group">${groups.length > 1 || topic ? html`<h2>${topic || 'No topic'}</h2>` : ''}
         <ul class="sets-list">${list.map((s) => html`<li class="sets-item">
-          <a class="sets-name" href="/sets/${s.id!}">${s.name}</a>${visBadge(s)}${together(s)}${s.locked_at ? html` <span class="tag" title="The owner locked it: no changes by its editors">locked</span>` : ''}${s.proposals ? html` <a class="tag sets-proposal-tag" href="/sets/${s.id!}#sets-proposals" title="Entries proposed for removal">${plural(s.proposals, 'removal')} proposed</a>` : ''}${s.exam_on ? html` <span class="tag sets-exam" title="Your exam date">exam ${longDay(s.exam_on)}</span>` : ''}
+          <a class="sets-name" href="/sets/${s.id!}">${s.name}</a>${visBadge(s)}${together(s)}${s.locked_at ? html` <span class="tag" title="The owner locked it: no changes by its editors">locked</span>` : ''}${s.proposals ? html` <a class="tag sets-proposal-tag" href="/sets/${s.id!}#sets-proposals" title="Entries proposed for removal">${plural(s.proposals, 'removal')} proposed</a>` : ''}${s.chat_unread ? html` <a class="tag sets-chat-tag" href="/sets/${s.id!}#sets-chat" title="Unread messages in the set's chat">${plural(s.chat_unread, 'new message')}</a>` : ''}${s.exam_on ? html` <span class="tag sets-exam" title="Your exam date">exam ${longDay(s.exam_on)}</span>` : ''}
           <span class="muted small">${plural(s.count, 'entry', 'entries')} · changed ${day(s.updated_at)}${s.description_text ? html` · ${s.description_text}` : ''}</span>
           <span class="sets-actions">${s.count ? html`<a class="button-link" href="/sets/${s.id!}/study">Study</a>` : ''}
             ${s.role === 'editor' ? '' : html`<button type="button" class="link-button sets-delete" data-id="${s.id!}" data-name="${s.name}">Delete</button>`}</span></li>`)}</ul></section>`)
@@ -259,13 +259,15 @@ function one(main: HTMLElement, ref: SetRef) {
         ${owner ? html`<details class="sets-share"><summary class="link-button">Share…</summary><div class="sets-share-body"></div></details>` : ''}
         <details class="sets-together"><summary class="link-button">${owner ? 'Edit together…' : 'Edited together'}</summary><div class="sets-together-body"></div></details>
         ${owner ? html`<button type="button" class="link-button sets-lock" title="${locked ? 'Its editors may change it again' : 'Its editors can still study it, but change nothing'}">${locked ? 'Unlock' : 'Lock'}</button>` : ''}
-        <details class="sets-history"><summary class="link-button">History</summary><div class="sets-history-body"></div></details></div>`
+        <details class="sets-history"><summary class="link-button">History</summary><div class="sets-history-body"></div></details>
+        <button type="button" class="link-button sets-copy-own" title="A set of your own with the same entries — yours to share and to invite to">Make my own copy</button></div>`
         : html`<p class="sets-tools">${me ? html`<button type="button" class="sets-copy">Save a copy to your sets</button>`
           : html`<span class="muted small">${loginLink() ?? 'Log in'} to keep track of what you know and to save a copy.</span>`}</p>`}
       ${me ? html`<section class="sets-plan" aria-label="Your plan"></section>` : ''}
       ${studyForm(ref, items.length, Boolean(me))}
       <p class="sets-msg small" role="status"></p>
       ${me ? html`<section class="sets-stats" aria-label="Your results"></section>` : ''}
+      ${own && (set.chat_on || owner) && (set.editors?.length || set.chat_on) ? html`<section class="sets-chat" id="sets-chat" aria-label="The set's chat"></section>` : ''}
       ${own && proposals.length ? html`<section class="sets-proposals" id="sets-proposals"><h2>Proposed removals <span class="muted">${String(proposals.length)}</span></h2>
         <p class="muted small">${owner ? 'Your editors propose and vote; you decide — whenever you like, whatever the votes.' : 'Vote whether these entries should go; the owner decides.'}</p>
         <ul class="sets-proposal-list">${proposals.map((p) => {
@@ -339,6 +341,12 @@ function one(main: HTMLElement, ref: SetRef) {
     if (owner) sharing(main.querySelector<HTMLElement>('.sets-share-body')!, set, id);
     editors(main.querySelector<HTMLElement>('.sets-together-body')!, set, id, owner);
     history(main.querySelector<HTMLDetailsElement>('.sets-history')!, id, owner, () => one(main, ref));
+    main.querySelector('.sets-copy-own')?.addEventListener('click', () => {
+      copyOwnSet(id).then((c) => { if (c) location.assign(`/sets/${c.id}`); }).catch((err: Error) => { msg.textContent = err.message; });
+    });
+    const chatBox = main.querySelector<HTMLElement>('.sets-chat');
+    if (chatBox) setChat(chatBox, id, owner);
+    if (location.hash === '#sets-chat') chatBox?.scrollIntoView();
     main.querySelector('.sets-lock')?.addEventListener('click', () => {
       if (!locked && !confirm('Lock this set? Its editors can still study it, but change nothing until you unlock it.')) return;
       lockSet(id, !locked).then(() => one(main, ref)).catch((err: Error) => { msg.textContent = err.message; });
@@ -361,6 +369,69 @@ function one(main: HTMLElement, ref: SetRef) {
       removeFromSet(id, b.dataset.type as StudyItem['type'], b.dataset.slug!).then(() => one(main, ref)).catch((err: Error) => { msg.textContent = err.message; });
     }));
   }).catch(() => failed(main, 'This set could not be loaded.'));
+}
+
+let chatStream: EventSource | null = null;
+/** A set's chat (225): its owner and editors; the owner switches it on, removes members, deletes messages; anyone
+ *  reports a message or a member. Live: the account's event stream says when the set has a new line. */
+function setChat(box: HTMLElement, id: string, owner: boolean) {
+  chatStream?.close();
+  chatStream = null;
+  let shown: SetChatMessage[] = [];
+  const when = (iso: string) => new Date(iso).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+  const line = (m: SetChatMessage) => (m.kind === 'system' ? html`<li class="chat-system muted small">${m.body} · ${when(m.at)}</li>`
+    : m.deleted ? html`<li class="chat-msg chat-deleted muted small"><i>${m.deleted === 'owner' ? 'message deleted by the owner of the set' : 'message deleted'}</i></li>`
+      : html`<li class="chat-msg${m.mine ? ' mine' : ''}" data-id="${m.id}"><b class="chat-by">${m.by ?? '—'}</b> <span class="chat-body">${m.body}</span>
+        <span class="chat-meta muted small">${when(m.at)}
+          ${m.mine || owner ? html` <button type="button" class="link-button" data-del="${m.id}" title="${m.mine ? 'Delete your message' : 'Delete as the owner of the set'}">delete</button>` : ''}
+          ${m.mine ? '' : html` <button type="button" class="link-button" data-report-msg="${m.id}">report</button>`}</span></li>`);
+  const load = () => getSetChat(id).then((r) => {
+    if (!r) return;
+    if (!r.on) {
+      render(box, owner ? html`<h2>Chat</h2><p class="small">A chat for you and the set's editors — whether they are friends or not. You can remove members from it and delete messages.</p>
+        <button type="button" class="sets-chat-on">Allow a chat for this set</button>` : html``);
+      box.querySelector('.sets-chat-on')?.addEventListener('click', () => { switchSetChat(id, true).then(load).catch(() => {}); });
+      return;
+    }
+    if (r.removed && !owner) { render(box, html`<h2>Chat</h2><p class="muted small">The owner removed you from this set's chat.</p>`); return; }
+    shown = r.messages;
+    const others = r.members.filter((m) => !m.me);
+    render(box, html`<h2>Chat <span class="muted small">${String(r.members.filter((m) => !m.removed).length)} members</span></h2>
+      <ol class="chat-list sets-chat-list" aria-live="polite">${shown.length ? shown.map(line) : html`<li class="muted">No messages yet.</li>`}</ol>
+      <form class="chat-form"><textarea name="body" rows="2" maxlength="4000" placeholder="Write to everyone in this set — Enter sends" aria-label="Message to the set" required></textarea><button type="submit">Send</button></form>
+      <details class="sets-chat-members small"><summary>Members</summary><ul>${r.members.map((m) => html`<li data-member="${m.id}">${m.name ?? '—'}${m.owner ? html` <span class="tag">owner</span>` : ''}${m.removed ? html` <span class="tag">removed</span>` : ''}${m.me ? html` <span class="muted">(you)</span>` : ''}
+        ${owner && !m.owner ? (m.removed ? html` <button type="button" class="link-button" data-readmit="${m.id}">Let back in</button>` : html` <button type="button" class="link-button" data-remove="${m.id}">Remove from the chat</button>`) : ''}
+        ${m.me ? '' : html` <button type="button" class="link-button" data-report-user="${m.id}">report</button>`}</li>`)}</ul>
+        ${owner ? html`<p><button type="button" class="link-button sets-chat-off">Switch the chat off</button> <span class="muted">— the messages stay; on again, they are back.</span></p>` : ''}</details>
+      <p class="chat-msg-status small" role="status"></p>`);
+    void others;
+    const status = box.querySelector<HTMLElement>('.chat-msg-status')!;
+    const ol = box.querySelector<HTMLElement>('.sets-chat-list')!;
+    ol.scrollTop = ol.scrollHeight;
+    const form = box.querySelector<HTMLFormElement>('.chat-form')!;
+    const ta = form.querySelector('textarea')!;
+    form.addEventListener('submit', (e) => { e.preventDefault(); const b = ta.value.trim(); if (!b) return; postSetChat(id, b).then(() => { ta.value = ''; return load(); }).catch((err: Error) => { status.textContent = err.message; }); });
+    ta.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); } });
+    box.querySelectorAll<HTMLButtonElement>('[data-del]').forEach((b) => b.addEventListener('click', () => {
+      if (!confirm(owner && !b.closest('.mine') ? 'Delete this message? Everyone sees “message deleted by the owner of the set”.' : 'Delete your message?')) return;
+      deleteSetChat(id, b.dataset.del!).then(load).catch((err: Error) => { status.textContent = err.message; });
+    }));
+    const report = (what: { message?: string; account?: string }, label: string) => {
+      const note = window.prompt(`Report ${label} to the site's administrators? What happened? (optional)`);
+      if (note === null) return;
+      reportSetChat(id, what, note).then(() => { status.textContent = 'Reported — thank you.'; }).catch((err: Error) => { status.textContent = err.message; });
+    };
+    box.querySelectorAll<HTMLButtonElement>('[data-report-msg]').forEach((b) => b.addEventListener('click', () => report({ message: b.dataset.reportMsg! }, 'this message')));
+    box.querySelectorAll<HTMLButtonElement>('[data-report-user]').forEach((b) => b.addEventListener('click', () => report({ account: b.dataset.reportUser! }, 'this member (their name)')));
+    box.querySelectorAll<HTMLButtonElement>('[data-remove]').forEach((b) => b.addEventListener('click', () => {
+      if (confirm('Remove them from the chat? Everyone sees that they were removed; they stay an editor of the set unless you remove them there too.')) setChatMember(id, 'remove', b.dataset.remove!).then(load).catch((err: Error) => { status.textContent = err.message; });
+    }));
+    box.querySelectorAll<HTMLButtonElement>('[data-readmit]').forEach((b) => b.addEventListener('click', () => { setChatMember(id, 'readmit', b.dataset.readmit!).then(load).catch(() => {}); }));
+    box.querySelector('.sets-chat-off')?.addEventListener('click', () => { if (confirm('Switch the chat off for everyone?')) switchSetChat(id, false).then(load).catch(() => {}); });
+  }).catch(() => render(box, html`<p class="muted small">The chat could not be loaded.</p>`));
+  void load();
+  chatStream = chatEvents();
+  chatStream?.addEventListener('set', (e) => { if ((JSON.parse((e as MessageEvent<string>).data) as { set: string }).set === id && document.body.contains(box)) void load(); });
 }
 
 const WHAT: Record<SetEvent['action'], string> = { created: 'created the set', changed: 'changed the', added: 'added', removed: 'removed', restored: 'restored the set to', locked: 'locked the set', unlocked: 'unlocked the set' };

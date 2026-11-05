@@ -29,6 +29,8 @@ export type Route =
   | { name: 'sets'; id: string | null; code: string | null; study: boolean; browse: boolean; join: string | null; params: URLSearchParams }
   /** The logged-in account's own settings (220): public name, password, sessions, deleting it */
   | { name: 'account'; params: URLSearchParams }
+  /** Friends and chat (224): /friends, /friends/<id> (a chat), /friends/add/<code> (a friend link) */
+  | { name: 'friends'; id: string | null; add: string | null }
   /** Through whose hands works went in a window (API 088): /provenance/1933-1945. */
   | { name: 'hands'; from: number; to: number }
   | { name: 'not-found' };
@@ -49,6 +51,9 @@ export function parse(pathname: string, search: string): Route {
   if (parts.length === 1 && parts[0] === 'roadmap') return { name: 'roadmap' };
   if (parts.length === 1 && parts[0] === 'statistik') return { name: 'stats' };
   if (parts.length === 1 && parts[0] === 'account') return { name: 'account', params: query };
+  if (parts[0] === 'friends' && parts.length === 1) return { name: 'friends', id: null, add: null };
+  if (parts[0] === 'friends' && parts.length === 2 && /^[1-9][0-9]{0,17}$/.test(parts[1])) return { name: 'friends', id: parts[1], add: null };
+  if (parts[0] === 'friends' && parts.length === 3 && parts[1] === 'add' && /^[A-Za-z0-9_-]{12}$/.test(parts[2])) return { name: 'friends', id: null, add: parts[2] };
   if (parts[0] === 'quiz' && parts.length <= 2) return { name: 'quiz', kind: parts[1] ?? null, params: query };
   if (parts[0] === 'sets' && parts.length <= 4) {
     const sets = { name: 'sets' as const, id: null, code: null, study: false, browse: false, join: null, params: query };

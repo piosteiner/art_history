@@ -323,6 +323,32 @@ export const setPublicName = (name: string) => account<{ public_name: string | n
 export const changePassword = (current: string, password: string, password2: string) => account<null>('/account/password', form({ current, password, password2 }));
 export const endOtherSessions = () => account<{ ended: number }>('/account/sessions', form({}));
 export const deleteAccount = (password: string) => account<null>('/account/delete', form({ password }));
+// Friends and chat (backend routes/site-friends.js, migration 224)
+export type FriendStatus = 'friend' | 'sent' | 'received' | 'none' | 'blocked';
+export interface Person { id: string; name: string; status: FriendStatus; sets: { id: string; name: string }[]; unread: number; last_at: string | null }
+export interface ChatMessage { id: string; mine: boolean; body: string; at: string; read: boolean }
+export const getFriends = () => account<{ me: { public_name: string | null; friend_code: string }; people: Person[]; unread: number }>('/friends');
+export const friendAction = (action: 'request' | 'accept' | 'decline' | 'withdraw' | 'remove' | 'block' | 'unblock', id: string) =>
+  account<{ status?: FriendStatus } | null>(`/friends/${action}`, form({ account: id }));
+export const requestByCode = (code: string) => account<{ status: FriendStatus }>('/friends/request', form({ code }));
+export const getFriendLink = (code: string) => account<{ name: string; status: FriendStatus | 'me' }>(`/friends/link/${code}`);
+export const newFriendCode = () => account<{ friend_code: string }>('/friends/code', form({ new: '1' }));
+export const getChat = (id: string, before = '') => account<{ friend: { id: string; name: string }; messages: ChatMessage[]; more: boolean }>(`/friends/chat/${id}${before ? `?before=${before}` : ''}`);
+export const sendChat = (id: string, body: string) => account<{ message: ChatMessage }>(`/friends/chat/${id}`, form({ body }));
+export const deleteChat = (id: string, what: { message?: string; all?: '1' }) => account<null>(`/friends/chat/${id}/delete`, form(what as Record<string, string>));
+export const reportChat = (id: string, note: string) => account<{ ok: boolean }>(`/friends/chat/${id}/report`, form({ note }));
+/** The live stream of chat events for the logged-in account (null in development without an admin host). */
+export const chatEvents = () => (ADMIN ? new EventSource(`${ADMIN}/site/friends/events`, { withCredentials: true }) : null);
+// a set's chat (225)
+export interface SetChatMessage { id: string; kind: 'message' | 'system'; by: string | null; by_id: string | null; mine: boolean; body: string | null; at: string; deleted: 'owner' | 'author' | null }
+export interface SetChatMember { id: string; name: string | null; owner: boolean; removed: boolean; me: boolean }
+export const getSetChat = (id: string, before = '') => account<{ on: boolean; removed: boolean; messages: SetChatMessage[]; members: SetChatMember[]; more: boolean }>(`/sets/${id}/chat${before ? `?before=${before}` : ''}`);
+export const switchSetChat = (id: string, on: boolean) => account<{ on: boolean }>(`/sets/${id}/chat/switch`, form({ on: on ? '1' : '0' }));
+export const postSetChat = (id: string, body: string) => account<{ id: string }>(`/sets/${id}/chat`, form({ body }));
+export const deleteSetChat = (id: string, message: string) => account<null>(`/sets/${id}/chat/delete`, form({ message }));
+export const setChatMember = (id: string, action: 'remove' | 'readmit', accountId: string) => account<null>(`/sets/${id}/chat/${action}`, form({ account: accountId }));
+export const reportSetChat = (id: string, what: { message?: string; account?: string }, note: string) => account<{ ok: boolean }>(`/sets/${id}/chat/report`, form({ ...what, note } as Record<string, string>));
+export const copyOwnSet = (id: string) => account<{ set: { id: string; name: string } }>(`/sets/${id}/copy`, form({})).then((r) => r?.set ?? null);
 /** Whether "Create an account" is offered (asked only where an account is the point: /sets, /account). */
 export const getSignup = () => account<{ open: boolean; url: string }>('/signup');
 /** The admin host's sign-up form, back to `next` (an address of this site) afterwards. */
@@ -350,6 +376,8 @@ export interface StudySet {
   edit_code?: string | null; updated_by?: string | null; exam_on?: string | null;
   /** locked by the owner (221): editors read and study, change nothing */
   locked_at?: string | null;
+  /** the set's chat is on (225); the list: unread messages in it */
+  chat_on?: boolean; chat_unread?: number;
   /** the list (221): open removal proposals, and those the viewer has not voted on yet */
   proposals?: number; to_vote?: number;
 }

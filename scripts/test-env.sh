@@ -48,7 +48,9 @@ sudo -u postgres pg_restore -p $PORT -d arthistory --exit-on-error < "$DUMP"
 #    download log, editing scopes. Production's accounts stay (the history names them) but can't log in here.
 sudo -u postgres psql -p $PORT -d arthistory -q -v ON_ERROR_STOP=1 <<'SQL'
 TRUNCATE admin_sessions, admin_drafts, page_drafts, form_drafts, live_docs, page_downloads, feedback, editor_scopes, private_images,
-  study_sets, study_set_items, study_progress, study_sessions, study_plans, study_set_editors, account_log;
+  study_sets, study_set_items, study_progress, study_sessions, study_plans, study_set_editors, account_log,
+  study_set_events, study_set_proposals, study_set_votes,   -- a set's history and proposals (221): they reference study_sets
+  friendships, account_blocks, chat_messages, chat_reports, set_chat_messages, set_chat_removed, set_chat_reads;   -- private (224, 225)
 -- site-only accounts (220: members — visitors who signed up) are people, not editors of the content: not in the test copy
 -- accounts made for the test environment (222) stay, with their password and role; deleted ones go
 DELETE FROM admin_users WHERE role = 'member' AND NOT test_env;

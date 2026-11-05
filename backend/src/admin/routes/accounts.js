@@ -75,7 +75,9 @@ router.get('/accounts', async (req, res) => {
   ]);
   const n = Object.fromEntries(counts.map((c) => [c.role, c.n]));
   const total = counts.reduce((a, c) => a + c.n, 0);
+  const { rows: [{ open: reports }] } = await adminPool.query('SELECT count(*)::int AS open FROM chat_reports WHERE handled_at IS NULL');
   send(req, res, { title: 'Accounts', flash: req.query.error ? { kind: 'error', text: String(req.query.error).slice(0, 200) } : flashOf(req), body: html`<h1>Accounts <span class="muted">${String(total)}</span></h1>
+    ${reports ? html`<p class="flash"><a href="/accounts/reports">${String(reports)} reported conversation${reports === 1 ? '' : 's'} to look at →</a></p>` : html`<p class="small"><a href="/accounts/reports">Reported conversations</a></p>`}
     <p class="muted">Who may log in, and to what: <b>Site only</b> accounts have study sets and their quiz results on the site —
       never the CMS. <b>CMS editors</b> also edit everything in the CMS; <b>admins</b> also manage the accounts here.</p>
     <section class="accounts-box"><h2>Sign-up on the site</h2>
@@ -159,6 +161,32 @@ async function accountOf(req) {
     FROM admin_users u LEFT JOIN admin_users c ON c.id = u.created_by WHERE u.id = $1`, [req.params.id]);
   return u || null;
 }
+
+// reported conversations (224): what a reporter sent — the last 100 messages at that moment; nothing else of the
+// chat is ever shown here
+router.get('/accounts/reports', async (req, res) => {
+  const { rows } = await adminPool.query(`SELECT r.id, r.reporter, r.reported, r.reporter_id, r.reported_id, r.note, r.messages, r.at, r.handled_at,
+      h.username AS handled_by FROM chat_reports r LEFT JOIN admin_users h ON h.id = r.handled_by ORDER BY r.handled_at IS NOT NULL, r.at DESC LIMIT 200`);
+  send(req, res, { title: 'Reports', flash: req.query.ok ? { kind: 'ok', text: 'Marked as handled.' } : null, body: html`
+    <p class="crumbs"><a href="/accounts">Accounts</a> / Reports</p>
+    <h1>Reported conversations</h1>
+    <p class="muted">A report sends a copy of the conversation as it was then (its last 100 messages) — chats are otherwise seen by no one but the two people.</p>
+    ${rows.length ? rows.map((r) => html`<section class="accounts-box${r.handled_at ? ' muted' : ''}">
+      <h2>${r.reporter} reported ${r.reported} <span class="muted small">${when(r.at)}</span></h2>
+      <p class="small">${r.reporter_id ? html`<a href="/accounts/${String(r.reporter_id)}">reporter's account</a>` : 'reporter gone'} ·
+        ${r.reported_id ? html`<a href="/accounts/${String(r.reported_id)}">reported account</a>` : 'reported account gone'}
+        ${r.handled_at ? html` · handled ${when(r.handled_at)} by ${r.handled_by || '—'}` : ''}</p>
+      ${r.note ? html`<p><b>Note:</b> ${r.note}</p>` : ''}
+      <details><summary>The conversation (${String(r.messages.length)} messages)</summary>
+        <ol class="report-messages">${r.messages.map((m) => html`<li><span class="muted small">${when(new Date(m.at))}</span> <b>${m.from === 'reporter' ? r.reporter : r.reported}:</b> ${m.body}</li>`)}</ol></details>
+      ${r.handled_at ? '' : html`<form method="post" action="/accounts/reports/${String(r.id)}/handled" class="inline"><button class="secondary">Mark as handled</button></form>`}
+    </section>`) : html`<p class="muted">No reports.</p>`}` });
+});
+router.post('/accounts/reports/:rid/handled', async (req, res) => {
+  if (!ID.test(req.params.rid)) return notFoundPage(req, res);
+  await adminPool.query('UPDATE chat_reports SET handled_at = now(), handled_by = $2 WHERE id = $1 AND handled_at IS NULL', [req.params.rid, req.user.id]);
+  res.redirect(303, '/accounts/reports?ok=1');
+});
 
 router.get('/accounts/:id', async (req, res) => {
   const u = await accountOf(req);

@@ -2,7 +2,7 @@
 // which sends the browser back here with ?login=1. Only then — remembered in localStorage — does a page ask the admin
 // host who is logged in; visitors' pages never contact it. Logged in, artwork pages show the account's private
 // reference images (views/detail.ts).
-import { getAccount, getOwnThumbs, getPrivateImages, logOut, loginUrl, type Me, type PrivateImage } from './api';
+import { chatEvents, getAccount, getFriends, getOwnThumbs, getPrivateImages, logOut, loginUrl, type Me, type PrivateImage } from './api';
 import { setOwnThumbs, gallery } from './html';
 import { html, render } from './html';
 
@@ -34,7 +34,8 @@ export function mountAccount(footer: HTMLElement) {
   };
   const show = (name: string | null) => {
     if (name) {
-      render(slot, html`Logged in as <a href="/account">${name}</a> · <a href="/sets">Your study sets</a> · <button type="button" class="link-button">Log out</button>`);
+      render(slot, html`Logged in as <a href="/account">${name}</a> · <a href="/sets">Your study sets</a> · <a href="/friends" class="friends-link">Friends<span class="unread-badge" hidden></span></a> · <button type="button" class="link-button">Log out</button>`);
+      watchUnread(slot.querySelector<HTMLElement>('.unread-badge')!);
       slot.querySelector('button')!.addEventListener('click', () => {
         logOut().catch(() => null).finally(() => { remember(false); location.reload(); });
       });
@@ -51,6 +52,15 @@ export function mountAccount(footer: HTMLElement) {
   who.then((name) => { if (!name) remember(false); show(name); });
   // works without a public picture show the account's reference image instead (lists, an artist's works, search …)
   ownThumbsReady = who.then((name) => (name ? getOwnThumbs().then((m) => setOwnThumbs(m)).catch(() => {}) : undefined));
+}
+
+/** The footer's unread badge: counted once, then kept up to date by the chat's live stream (224). */
+function watchUnread(badge: HTMLElement) {
+  const count = () => getFriends().then((r) => { const n = r?.unread ?? 0; badge.hidden = !n; badge.textContent = n ? ` ${String(n)}` : ''; }).catch(() => {});
+  void count();
+  const events = chatEvents();
+  events?.addEventListener('message', () => { void count(); });
+  window.addEventListener('chat-read', () => { void count(); });
 }
 
 /** The logged-in account's name, or null (visitors: at once, without asking the admin host). */

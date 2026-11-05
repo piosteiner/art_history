@@ -1441,3 +1441,25 @@ button.danger { border-color: var(--accent); color: var(--accent); }
 .sets-history-list .sets-restore { margin-left: .4rem; }
 .sets-propose { white-space: nowrap; }
 .sets-votes-waiting a { font-weight: 600; }
+
+/* friends and chat (224, 225) */
+.friends-list { list-style: none; padding: 0; margin: .3rem 0 1rem; display: grid; gap: .35rem; }
+.friend { display: flex; flex-wrap: wrap; align-items: baseline; gap: .3rem .6rem; }
+.friend-name { font-weight: 600; }
+.friend-actions { margin-left: auto; display: inline-flex; gap: .6rem; align-items: baseline; }
+.friends-sort .link-button.on { font-weight: 700; text-decoration: none; }
+.friends-requests { border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 6px; padding: .4rem .9rem; margin: 1rem 0; }
+.unread-badge { display: inline-block; min-width: 1.3em; padding: 0 .35em; border-radius: 999px; background: var(--accent); color: var(--bg, #fff); font-size: .75rem; font-weight: 700; text-align: center; line-height: 1.4; }
+.unread-badge[hidden] { display: none; }
+.chat-list { list-style: none; padding: .5rem; margin: .5rem 0; display: flex; flex-direction: column; gap: .4rem; max-height: 60vh; overflow-y: auto;
+  border: 1px solid var(--line); border-radius: 8px; }
+.chat-msg { align-self: flex-start; max-width: 80%; padding: .35rem .6rem; border-radius: 10px; background: var(--panel, rgba(127,127,127,.1)); white-space: pre-wrap; overflow-wrap: anywhere; }
+.chat-msg.mine { align-self: flex-end; background: color-mix(in srgb, var(--accent) 16%, transparent); }
+.chat-msg .chat-meta { display: block; margin-top: .1rem; }
+.chat-system, .chat-deleted { align-self: center; background: none; }
+.chat-form { display: flex; gap: .5rem; align-items: flex-end; }
+.chat-form textarea { flex: 1; min-height: 2.6rem; }
+.sets-chat { border: 1px solid var(--line); border-radius: 6px; padding: .5rem .9rem; margin: 1rem 0; }
+.sets-chat .chat-list { max-height: 24rem; }
+.sets-chat-members ul { list-style: none; padding: 0; margin: .3rem 0; display: grid; gap: .2rem; }
+.chat-by { margin-right: .2rem; }

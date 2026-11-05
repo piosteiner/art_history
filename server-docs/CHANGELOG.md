@@ -4,6 +4,35 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-05
 
+### Friends and chat; a study set's chat; editors copy a set (224, 225)
+- **What** (owner 2026-11-05; chosen: live, private to the two with block and report, kept until the users delete):
+  - Migration 224: `friendships` (one row per pair, `low_id < high_id` + primary key; `accepted_at` NULL = an open
+    request), `account_blocks`, `chat_messages` (read_at, hidden per side; a sender's delete removes the row; both
+    sides hidden → removed), `chat_reports` (a copy of the last 100 messages, the reporter's note, handled_at),
+    `admin_users.friend_code` (the personal link `/friends/add/<code>`), trigger `chat_notify()` → `NOTIFY chat`.
+  - Migration 225: `study_sets.chat_on`, `set_chat_messages` (kind message/system; deleted keeps the line,
+    `deleted_by_owner`), `set_chat_removed`, `set_chat_reads` (unread per set), `chat_reports.kind/set_id/set_name`;
+    trigger `set_chat_notify()`.
+  - `src/admin/routes/site-friends.js` (/site/friends: list of everyone in one's sets + friendships, requests by list
+    or link, accept/decline/withdraw/remove, block/unblock, chat, delete, report, `GET /events` = Server-Sent Events;
+    the process LISTENs on `chat` with a connection of its own and pushes to the accounts' open streams;
+    `X-Accel-Buffering: no` keeps nginx from buffering; 30 requests a day, 30 messages a minute). Set chat routes in
+    `site-sets.js` (`/:id/chat`, switch, delete, remove/readmit with a system line "<public name> removed", report);
+    `POST /:id/copy` — the owner or an editor copies a set (not its editors, history or sharing).
+  - CMS: Accounts → "Reported conversations" (`/accounts/reports`): the reported copy, mark as handled. No other page
+    shows chats.
+  - Site: `/friends` (by set or A–Z, requests, friend link, blocked), `/friends/<id>` (chat: Enter sends, earlier
+    messages, read marks, delete, report), `/friends/add/<code>`; footer "Friends" with an unread badge (live);
+    set page "Chat" (owner: allow / switch off, members, remove / let back in, delete; everyone: report a message or
+    a member) and "Make my own copy"; sets list: unread messages per set.
+  - Privacy statement: section "Friends and chats"; deleting an account takes its friendships and messages.
+  - `scripts/test-env.sh`: the reset's TRUNCATE now lists 221's tables (they reference `study_sets` — tonight's reset
+    would have failed) and 224/225's.
+  - Tests: `test/e2e/friends-chat.spec.js` (3, incl. the live event), `frontend/tests/friends.spec.ts`.
+- **Revert:** `git revert`; `DROP TABLE set_chat_reads, set_chat_removed, set_chat_messages, chat_reports, chat_messages,
+  account_blocks, friendships; ALTER TABLE study_sets DROP COLUMN chat_on; ALTER TABLE admin_users DROP COLUMN
+  friend_code`; the privacy page from its history.
+
 ### Places along a road in order; an account may see another account's reference images (223)
 - **What:** a place's `children` (API detail) come in their order along the parent's `route` when it has one
   (`ST_LineLocatePoint`; the Tōkaidō's 53 stations from Shinagawa to Ōtsu), else A–Z as before. Migration 223:
