@@ -5,9 +5,15 @@ names:
   - lang: en
     role: translation
     text: View over the Gulf of Sorrento to the Island of Capri
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/655958/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: rudolf-muller
 kind: drawing
-medium: Watercolour over preparatory drawing with graphite pencil on wove paper
+medium: Aquarell über Vorzeichnung mit Grafitstift auf Papier (vélin)
 dimensions: [28, 38.5]
 institution: kunsthaus-zurich
 inventory_number: ZKG.2020/0007

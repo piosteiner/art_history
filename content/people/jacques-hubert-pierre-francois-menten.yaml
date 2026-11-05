@@ -2,4 +2,43 @@ public_id: 114994
 name: Jacques Hubert Pierre Francois Menten
 given_name: Jacques Hubert Pierre Francois
 family_name: Menten
+kind: person
+birth: 1873-09-12
+death: 1964-05-08
 wikidata_id: Q1885057
+metadata:
+  sources: [Wikidata Q1885057 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q1885057
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q1885057
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Dutch_Bobsleigh_Team_-_1928_Winter_Olympics.jpg/1280px-Dutch_Bobsleigh_Team_-_1928_Winter_Olympics.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dutch_Bobsleigh_Team_-_1928_Winter_Olympics.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "1401831567"
+  viaf: "5288178467036735190003"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1885057
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q1885057
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q1885057

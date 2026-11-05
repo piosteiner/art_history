@@ -1,0 +1,25 @@
+public_id: 115722
+name: Zaragoza
+names: [Saragossa]
+kind: settlement
+parent: zaragoza-province
+country_code: ES
+location: [-0.88333, 41.65]
+wikidata_id: Q10305
+metadata:
+  sources: [Wikidata Q10305 (retrieved 2026-11-04)]
+identifiers:
+  gnd: 4079463-5
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q10305
+  parent:
+    - accessed: 2026-11-04
+      property: P131
+      wikidata: Q10305
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q10305

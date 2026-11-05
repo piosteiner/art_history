@@ -1,20 +1,38 @@
 public_id: 115302
-title_lang: en
+title_lang: fr
 title: Gabrielle Vallotton à sa table de toilette
 names:
-  - lang: en
+  - lang: fr
     role: translation
     text: Madame Félix Vallotton à sa table de toilette
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3186/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
     role: translation
     text: Gabrielle Vallotton am Toilettentisch
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3186/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Gabrielle Vallotton at Her Dressing Table
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3186/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: felix-vallotton
 created: 1899
 kind: painting
-medium: Tempera on cardboard
+medium: Tempera auf Karton
 dimensions: [57.5, 78]
 institution: kunsthaus-zurich
 inventory_number: "2457"

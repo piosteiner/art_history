@@ -1,10 +1,29 @@
 public_id: 100287
 title: Le Suicidé
+names:
+  - lang: de
+    role: translation
+    text: Der Selbstmörder
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: en
+    role: translation
+    text: The Suicide
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: edouard-manet
 created: c. 1877
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [38, 46]
 institution: kunsthaus-zurich
 inventory_number: BU 0063

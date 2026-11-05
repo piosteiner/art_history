@@ -2,4 +2,35 @@ public_id: 111838
 name: Heribert Reiners
 given_name: Heribert
 family_name: Reiners
+kind: person
+birth: 1884-08-23
+death: 1960-06-04
 wikidata_id: Q23062432
+metadata:
+  sources: [Wikidata Q23062432 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q23062432
+identifiers:
+  gnd: "116419067"
+  hls: "042824"
+  idref: "077142446"
+  lc: no96049642
+  viaf: "56984955"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q23062432
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q23062432
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q23062432

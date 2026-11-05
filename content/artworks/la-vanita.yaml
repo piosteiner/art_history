@@ -2,28 +2,62 @@ public_id: 114953
 title_lang: fr
 title: La vanità
 names:
-  - lang: en
+  - lang: it
     role: translation
     text: Venere allo specchio; Vanità e insidia; Vanità e invidia
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: translation
     text: Die Eitelkeit
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Vanity
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Vanity
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: fr
     role: translation
     text: La Vanité
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: fr
     role: original
     text: La vanità (la fonte del male)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1263/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: giovanni-segantini
 created: 1897
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [77, 124]
 institution: kunsthaus-zurich
 inventory_number: 1996/0003

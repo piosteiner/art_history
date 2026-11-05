@@ -2,3 +2,10 @@ public_id: 115403
 name: Hans Strigel the Younger
 given_name: Hans, the Younger
 family_name: Strigel
+active: c. 1460
+sources:
+  active:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3678/
+      note: active when the work held was made — the Kunsthaus dates “Die Heiligen Stephanus, Johannes der Täufer und Wendelin” c. 1460
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-04

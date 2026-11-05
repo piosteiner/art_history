@@ -2,4 +2,33 @@ public_id: 114960
 name: Hugo Simon
 given_name: Hugo
 family_name: Simon
+kind: person
+birth: 1880-09-01
+death: 1950-07-04
 wikidata_id: Q1635718
+metadata:
+  sources: [Wikidata Q1635718 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q1635718
+identifiers:
+  gnd: "129962317"
+  lc: no2012045861
+  viaf: "77408512"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1635718
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q1635718
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q1635718

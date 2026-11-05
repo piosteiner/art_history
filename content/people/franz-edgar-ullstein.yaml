@@ -2,4 +2,43 @@ public_id: 111822
 name: Franz Edgar Ullstein
 given_name: Franz Edgar
 family_name: Ullstein
+kind: person
+birth: 1868-01-16
+death: 1945-11-11
 wikidata_id: Q55896209
+metadata:
+  sources: [Wikidata Q55896209 (retrieved 2026-11-04)]
+relationships:
+  - type: born_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q55896209
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q55896209
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Franz_Ullstein.jpg/1280px-Franz_Ullstein.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Franz_Ullstein.jpg
+    license: Public domain
+    credit: Suse Byk
+identifiers:
+  gnd: "117283096"
+  viaf: "64779958"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q55896209
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q55896209
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q55896209

@@ -36,6 +36,20 @@ web_url: https://www.metmuseum.org/art/collection/search/39655
 wikidata_id: Q18173421
 metadata:
   sources: [Wikidata Q18173421 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/chiba-city
+    label: Noboto on the Chiba shore of Edo Bay, then a shallow beach, today Noboto in Chūō ward
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/nobotonoura.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：千葉県千葉市中央区登戸周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade B, placed at 35.60421, 140.09666 — “Noboto was a fishing village on the east coast of Edo (Tokyo) Bay. The painting suggests it was near a curve in the coastline.”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP141022.jpg
     source_url: https://www.metmuseum.org/art/collection/search/39655

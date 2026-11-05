@@ -6,8 +6,14 @@ names:
     role: translation
     text: Entrance to a Village with a Windmill
     status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/7999/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: jan-brueghel-the-elder
 created: 1603/1605
+medium: Öl auf Kupfer
 materials: [copper, oil paint]
 dimensions: [18, 25.4]
 institution: kunsthaus-zurich

@@ -2,13 +2,19 @@ public_id: 115429
 title_lang: de
 title: Kantonsspital Zürich
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Cantonal Hospital Zurich
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3797/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: varlin
 created: 1941/1945
 kind: oil painting
-medium: Oil and litho pencil on canvas
+medium: Öl und Lithostift auf Leinwand
 dimensions: [70, 165]
 institution: kunsthaus-zurich
 inventory_number: 1945/0013

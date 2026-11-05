@@ -5,17 +5,35 @@ names:
   - lang: de
     role: translation
     text: Der Zauberer
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Vaudeville Show Magician
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Conjuring Act
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604997/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: edouard-vuillard
 created: c. 1895
 created_span: uncertain
 kind: oil painting
-medium: Oil on cardboard on panel
+medium: Öl auf Karton auf Holz
 dimensions: [49, 39]
 institution: kunsthaus-zurich
 inventory_number: BU 0113

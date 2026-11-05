@@ -29,6 +29,17 @@ web_url: https://www.artic.edu/artworks/24715
 wikidata_id: Q18173427
 metadata:
   sources: [Wikidata Q18173427 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/tatekawa-river
+    label: the timber yards on the Tatekawa canal in Honjo
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/honjotatekawa.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：東京都墨田区立川周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
 images:
   - url: https://www.artic.edu/iiif/2/63d00c93-89fc-e111-cbfe-88a136795e71/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/24715

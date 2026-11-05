@@ -2,13 +2,19 @@ public_id: 115432
 title_lang: de
 title: Bildnis einer jungen Frau
 names:
-  - lang: fr
+  - lang: en
     role: translation
     text: Portrait of a Young Lady
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3817/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: johannes-cornelisz-verspronck
 created: 1647
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [73, 55]
 institution: kunsthaus-zurich
 inventory_number: R 40

@@ -5,19 +5,40 @@ names:
   - lang: en
     role: translation
     text: Winterscene at Dordrecht
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
     role: former
     text: Winterlandschaft auf der Merwede bei Dordrecht
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: former
     text: Winter bei Dordrecht
-  - lang: en
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
     role: former
     text: Vor Dordrecht
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3682/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: salomon-van-ruysdael
 created: 1653
 kind: oil painting
-medium: Oil on oak panel
+medium: Öl auf Eichenholz
 dimensions: [56, 83.5]
 institution: kunsthaus-zurich
 inventory_number: R 33

@@ -1,0 +1,47 @@
+public_id: 115709
+name: Walter Feilchenfeldt jun.
+given_name: Walter Feilchenfeldt
+family_name: jun.
+names:
+  - lang: en
+    role: translation
+    text: Walter Feilchenfeldt Jr.
+kind: person
+occupations: [art dealer, art historian, collector]
+birth: 1939-01-21
+description_md: "Art dealer and art historian in Zürich, son of [[person/walter-feilchenfeldt]] and [[person/marianne-feilchenfeldt]]. Joined the family dealership [[institution/walter-feilchenfeldt-kunsthandel]] in 1966, directed it alone from 1990 and turned it into Walter Feilchenfeldt AG in 2011.[[source/walterfeilchenfeldt-art-dealing|“1966–1990: Marianne and Walter Feilchenfeldt jun.” · “1990–2011: Walter Feilchenfeldt jun.”]] Museums cite his information and the firm's archive for the provenance of works his father handled (“Auskunft von Walter Feilchenfeldt, Zürich, Sohn von Dr. Walter Feilchenfeldt”)."
+wikidata_id: Q107177051
+relationships:
+  - type: born_in
+    to: place/amsterdam
+    sources:
+      - property: P19
+        wikidata: Q107177051
+  - type: worked_in
+    to: institution/walter-feilchenfeldt-kunsthandel
+    period: 1966/2011
+    label: director (with his mother until 1990)
+    sources:
+      - url: https://walterfeilchenfeldt.ch/en/art-dealing
+        note: "“1966–1990: Marianne and Walter Feilchenfeldt jun.” · “1990–2011: Walter Feilchenfeldt jun.”"
+        source: walterfeilchenfeldt-art-dealing
+        accessed: 2026-11-04
+  - type: child_of
+    to: person/marianne-feilchenfeldt
+    label: son
+    sources:
+      - property: P25
+        wikidata: Q107177051
+  - type: child_of
+    to: person/walter-feilchenfeldt
+    label: son
+    sources:
+      - property: P22
+        wikidata: Q107177051
+sources:
+  birth:
+    - property: P569
+      wikidata: Q107177051
+  occupations:
+    - property: P106
+      wikidata: Q107177051

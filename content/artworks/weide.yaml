@@ -1,14 +1,19 @@
 public_id: 115110
-title_lang: en
 title: Weide
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Meadow
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2303/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: ernst-morgenthaler
 created: 1937
 kind: oil painting
-medium: Oil on cardboard
+medium: Öl auf Karton
 dimensions: [26, 45]
 institution: kunsthaus-zurich
 inventory_number: 1957/0029

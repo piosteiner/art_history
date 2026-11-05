@@ -5,13 +5,24 @@ names:
   - lang: en
     role: translation
     text: View to Infinity
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1607/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Blick in die Unendlichkeit
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1607/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: ferdinand-hodler
 created: 1916
 kind: painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 materials: [oil paint, canvas]
 dimensions: [343, 723]
 institution: kunsthaus-zurich

@@ -2,4 +2,42 @@ public_id: 112204
 name: Alfred Ernest Robaut
 given_name: Alfred Ernest
 family_name: Robaut
+kind: person
+birth: 1830-05-20
+death: 1909-04-08
 wikidata_id: Q2835426
+metadata:
+  sources: [Wikidata Q2835426 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q2835426
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/28/Alfred_Robaut_-_portrait_photographique.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Alfred_Robaut_-_portrait_photographique.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "121604228"
+  gnd: "119028816"
+  idref: "030125677"
+  lc: n88681206
+  rkd: "67248"
+  ulan: "500015553"
+  viaf: "9145857774823020320"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q2835426
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q2835426
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q2835426

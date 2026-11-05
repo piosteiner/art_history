@@ -1,10 +1,30 @@
 public_id: 100411
+title_lang: fr
 title: L'Univers est créé
+names:
+  - lang: de
+    role: translation
+    text: Die Erschaffung des Universums
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/12830/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: en
+    role: translation
+    text: The Universe is Created
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/12830/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: paul-gauguin
 created: 1921
 conceived: 1893/1894
 kind: woodcut
-medium: Woodcut on China paper
+medium: Holzschnitt auf Chinapapier
 dimensions: [20.3, 35.1]
 institution: kunsthaus-zurich
 inventory_number: Gr.2003/0154

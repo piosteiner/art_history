@@ -2,4 +2,34 @@ public_id: 115239
 name: Johnny van Haeften
 given_name: Johnny
 family_name: van Haeften
+kind: person
+birth: 1952-06-22
 wikidata_id: Q23061862
+metadata:
+  sources: [Wikidata Q23061862 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q23061862
+  - type: born_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q23061862
+identifiers:
+  gnd: 13425144X
+  lc: nr2005023198
+  viaf: "163705257"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q23061862
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q23061862

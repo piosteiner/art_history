@@ -45,6 +45,16 @@ relationships:
   - type: created_in
     to: place/tokyo
     period: 1831
+  - type: depicts
+    to: place/ojima-koto
+    label: the Sazai Hall of the Gohyaku Rakan-ji in Honjo; the temple stood at today’s Ōjima 4-chōme until it moved to Meguro
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/gohyakurakanjisazaidou.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：東京都江東区大島付近にあった五百羅漢寺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP141020.jpg
     source_url: https://www.metmuseum.org/art/collection/search/37321

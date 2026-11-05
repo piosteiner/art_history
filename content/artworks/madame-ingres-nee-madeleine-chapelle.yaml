@@ -6,11 +6,16 @@ names:
     role: translation
     text: Madame Ingres, geb. Madeleine Chapelle
     status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: jean-auguste-dominique-ingres
 created: c. 1814
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 materials: [oil paint, canvas]
 dimensions: [70, 57]
 institution: kunsthaus-zurich

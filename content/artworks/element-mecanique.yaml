@@ -1,17 +1,29 @@
 public_id: 115140
-title_lang: es
+title_lang: fr
 title: Elément mécanique
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Mechanisches Element
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2443/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Mechanical Element
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2443/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: fernand-leger
 created: 1924
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [97, 130]
 institution: kunsthaus-zurich
 inventory_number: 1952/0059

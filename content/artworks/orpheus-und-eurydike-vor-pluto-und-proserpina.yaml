@@ -1,29 +1,61 @@
 public_id: 115098
-title_lang: en
+title_lang: de
 title: Orpheus und Eurydike vor Pluto und Proserpina
 names:
   - lang: en
     role: translation
     text: Orpheus and Eurydice Leaving Pluto and Proserpina
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: fr
     role: translation
     text: Orphée et Eurydice devant Pluton et Proserpine
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: fr
     role: former
     text: Orphee et eurydice
-  - lang: en
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: fr
     role: former
     text: Orpheusé et Eurydike
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: former
     text: Orpheus Leads Eurydice From Hades
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: former
     text: Orpheus leaves Hades with Eurydite
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2263/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: peter-paul-rubens
 created: 1636
 kind: oil painting
-medium: Oil on oak panel
+medium: Öl auf Eichenholz
 dimensions: [28.5, 33]
 institution: kunsthaus-zurich
 inventory_number: R 27

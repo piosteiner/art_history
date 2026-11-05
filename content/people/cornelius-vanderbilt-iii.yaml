@@ -2,4 +2,44 @@ public_id: 111898
 name: Cornelius Vanderbilt III
 given_name: Cornelius, III
 family_name: Vanderbilt
+kind: person
+birth: 1873-09-05
+death: 1942-03-01
 wikidata_id: Q1875953
+metadata:
+  sources: [Wikidata Q1875953 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q1875953
+  - type: born_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q1875953
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Gen_cornelius_vanderbilt_iii_Bain_News_Service_1910_LC-B2-_2587-6_%28P%26P%29.jpg/1280px-Gen_cornelius_vanderbilt_iii_Bain_News_Service_1910_LC-B2-_2587-6_%28P%26P%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gen_cornelius_vanderbilt_iii_Bain_News_Service_1910_LC-B2-_2587-6_(P%26P).jpg
+    license: Public domain
+    credit: Bain News Service, 1910
+identifiers:
+  bnf: "167584844"
+  lc: n99054952
+  viaf: "21474689"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1875953
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q1875953
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q1875953

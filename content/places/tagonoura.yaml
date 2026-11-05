@@ -1,0 +1,26 @@
+public_id: 115672
+name: Tagonoura
+names:
+  - Tago-no-ura
+  - lang: ja
+    role: translation
+    text: 田子の浦
+  - lang: zh
+    role: translation
+    text: 田子之浦
+kind: natural
+parent: fuji
+country_code: JP
+location: [138.71028, 35.13722]
+wikidata_id: Q11576466
+metadata:
+  sources: [Wikidata Q11576466 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q11576466
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q11576466

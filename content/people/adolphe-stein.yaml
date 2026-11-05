@@ -2,4 +2,32 @@ public_id: 115059
 name: Adolphe Stein
 given_name: Adolphe
 family_name: Stein
+kind: person
+birth: 1913
+death: 2002
 wikidata_id: Q133791573
+metadata:
+  sources: [Wikidata Q133791573 (retrieved 2026-11-04)]
+relationships:
+  - type: born_in
+    to: place/prague
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q133791573
+identifiers:
+  gnd: 17368632X
+  viaf: "213435470"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q133791573
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q133791573
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q133791573

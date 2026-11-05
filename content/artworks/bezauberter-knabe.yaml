@@ -5,18 +5,35 @@ names:
   - lang: de
     role: alternative
     text: Studie zu «Anbetung» (Knabe stehend)
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1158/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Delighted Boy
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1158/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: fr
     role: translation
     text: Le Garçon enchanté
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1158/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: ferdinand-hodler
 created: 1893/1894
 created_label: c. 1890s
 created_span: uncertain
 kind: painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 materials: [oil paint, canvas]
 dimensions: [106, 70]
 institution: kunsthaus-zurich

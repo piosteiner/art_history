@@ -1,19 +1,31 @@
 public_id: 115113
-title_lang: it
+title_lang: de
 title: Madonna auf der Mondsichel
 names:
-  - lang: it
-    role: translation
-    text: Madonna on the Crescent Moon
   - lang: en
     role: translation
+    text: Madonna on the Crescent Moon
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: fr
+    role: translation
     text: Vierge sur le croissant de lune
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2355/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: tilman-riemenschneider
 attribution_label: Tilman Riemenschneider and workshop
 created: c. 1505
 created_span: uncertain
 kind: sculpture
-medium: Limewood with traces of polychromy
+medium: Lindenholz mit Resten alter Fassung
 dimensions: [101.5, 30.5, 25]
 institution: kunsthaus-zurich
 inventory_number: 1944/0023

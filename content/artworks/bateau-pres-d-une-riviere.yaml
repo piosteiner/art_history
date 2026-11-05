@@ -6,15 +6,25 @@ names:
     role: translation
     text: Landscape with a Boat
     status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699968/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: translation
     text: Flusslandschaft mit Boot
     status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699968/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: jean-baptiste-camille-corot
 created: c. 1862
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 materials: [oil paint, canvas]
 dimensions: [38, 55]
 institution: kunsthaus-zurich

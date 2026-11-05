@@ -2,4 +2,65 @@ public_id: 115143
 name: Charles Sedelmeyer
 given_name: Charles
 family_name: Sedelmeyer
+kind: person
+birth: 1837-04-30
+death: 1925-08-09
 wikidata_id: Q2960213
+metadata:
+  sources: [Wikidata Q2960213 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/austria-hungary
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q2960213
+  - type: nationality
+    to: polity/austrian-empire
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q2960213
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q2960213
+  - type: born_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q2960213
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q2960213
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Gabriel_Ferrier_-_Portrait_de_Charles_Sedelmeyer_%281837-1925%29%2C_marchand_de_tableaux_-_P2657_-_Mus%C3%A9e_Carnavalet.jpg/1280px-Gabriel_Ferrier_-_Portrait_de_Charles_Sedelmeyer_%281837-1925%29%2C_marchand_de_tableaux_-_P2657_-_Mus%C3%A9e_Carnavalet.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gabriel_Ferrier_-_Portrait_de_Charles_Sedelmeyer_(1837-1925),_marchand_de_tableaux_-_P2657_-_Mus%C3%A9e_Carnavalet.jpg
+    license: Public domain
+    credit: Gabriel Ferrier
+identifiers:
+  bnf: "149640683"
+  gnd: "117469033"
+  idref: "182655687"
+  lc: n87916378
+  rkd: "447553"
+  viaf: "47033005"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q2960213
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q2960213
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q2960213

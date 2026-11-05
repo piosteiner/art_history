@@ -2,4 +2,30 @@ public_id: 112128
 name: Ludwig Katzenellenbogen
 given_name: Ludwig
 family_name: Katzenellenbogen
+kind: person
+birth: 1877-02-21
+death: 1944-05-30
 wikidata_id: Q1361426
+metadata:
+  sources: [Wikidata Q1361426 (retrieved 2026-11-04)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cb/WP_Ludwig_Katzenellenbogen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:WP_Ludwig_Katzenellenbogen.jpg
+    license: Public domain
+    credit: Anonymous photographer, not identified anywhere
+identifiers:
+  gnd: "116067780"
+  viaf: "32739083"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1361426
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q1361426
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q1361426

@@ -2,4 +2,29 @@ public_id: 115313
 name: Walter Bornheim
 given_name: Walter
 family_name: Bornheim
+kind: person
+birth: 1888-08-23
+death: 1971
 wikidata_id: Q19766281
+metadata:
+  sources: [Wikidata Q19766281 (retrieved 2026-11-04)]
+relationships:
+  - type: born_in
+    to: place/cologne
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q19766281
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q19766281
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q19766281
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q19766281

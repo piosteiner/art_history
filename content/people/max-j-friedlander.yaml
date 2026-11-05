@@ -2,4 +2,68 @@ public_id: 115259
 name: Max J. Friedländer
 given_name: Max J.
 family_name: Friedländer
+names:
+  - kind: pseudonym
+    role: alternative
+    text: Robert Breuer
+    sources:
+      - accessed: 2026-11-04
+        property: P742
+        wikidata: Q62110
+kind: person
+birth: 1867-06-05
+death: 1958-10-11
 wikidata_id: Q62110
+metadata:
+  sources: [Wikidata Q62110 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q62110
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q62110
+  - type: born_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q62110
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q62110
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/83/Friedlaender-max-j-aus-aan-max-j-friedlaender-1867-5-juni-1942-vorsatz.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Friedlaender-max-j-aus-aan-max-j-friedlaender-1867-5-juni-1942-vorsatz.jpg
+    license: Public domain
+    credit: Julius Guggenheimer (1885–1943)
+identifiers:
+  bnf: "120075146"
+  gnd: "118693441"
+  idref: "028189663"
+  lc: n82143205
+  rkd: "29492"
+  ulan: "500064435"
+  viaf: "56620139"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q62110
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q62110
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q62110

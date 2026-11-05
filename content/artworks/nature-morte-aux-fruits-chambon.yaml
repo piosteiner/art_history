@@ -5,10 +5,16 @@ names:
   - lang: de
     role: translation
     text: Früchtestilleben
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/9/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: emile-chambon
 created: 1943
 kind: painting
-medium: Oil on canvas on cardboard
+medium: Öl auf Leinwand auf Karton
 materials: [oil paint, canvas, cardboard]
 dimensions: [25.5, 38]
 institution: kunsthaus-zurich

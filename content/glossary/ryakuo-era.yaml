@@ -5,6 +5,7 @@ names:
     role: original
     text: 暦応
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (暦応) for the years 1338–1341: 1338 is Ryakuō 1 (元年) and Ryakuō 4 is 1341."
 description_md: |-
   **Ryakuō** (暦応) is a Japanese era name ([[nengo]]), proclaimed in 1338. Its years are counted in lunar years from the new year before the proclamation: 1338 is Ryakuō 1 (元年), 1341 its last year, Ryakuō 4. A Japanese source dates a year within it as "Ryakuō 2" (暦応2年) rather than by a continuous count.

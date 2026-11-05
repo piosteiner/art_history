@@ -1,0 +1,44 @@
+public_id: 115678
+name: Lake Ashi
+names:
+  - Ashinoko
+  - Lake Ashinoko
+  - Ashinoko Lake
+  - Hakone Lake
+  - lang: fr
+    role: translation
+    text: lac Ashi
+  - lang: de
+    role: translation
+    text: Ashi-See
+  - lang: it
+    role: translation
+    text: Lago Ashi
+  - lang: ja
+    role: translation
+    text: 芦ノ湖
+  - lang: zh
+    role: translation
+    text: 蘆之湖
+  - lang: ko
+    role: translation
+    text: 아시노호
+  - lang: ru
+    role: translation
+    text: Аси
+kind: natural
+parent: kanagawa
+country_code: JP
+location: [139.00389, 35.21167]
+wikidata_id: Q187053
+metadata:
+  sources: [Wikidata Q187053 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q187053
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q187053

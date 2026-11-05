@@ -5,14 +5,26 @@ names:
   - lang: en
     role: translation
     text: Adoration of the Magi
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1378/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: fr
     role: translation
     text: L’Adoration des Mages
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1378/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: hans-fries
 created: c. 1490
 created_span: uncertain
 kind: oil painting
-medium: Oil on panel
+medium: Öl auf Holz
 dimensions: [87, 71]
 institution: kunsthaus-zurich
 inventory_number: "2296"

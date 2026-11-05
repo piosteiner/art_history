@@ -34,6 +34,20 @@ web_url: https://www.artic.edu/artworks/24696
 wikidata_id: Q18173407
 metadata:
   sources: [Wikidata Q18173407 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/ryogoku-bridge
+    label: the Ryōgoku Bridge seen across the Sumida from the Onmaya ferry landing at Kuramae
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/onmayagashiyoriryougokubashiyuuhimi.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：東京都台東区蔵前付近の旧御厩川岸から隅田川を望む景観
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade A+, placed at 35.69552, 139.79004 — “The Ryogoku Bridge still spans the Sumida River and the perspective of the banks provide a great indication of the view point. That is, it is from the eastern b”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://www.artic.edu/iiif/2/c2a13a9d-dbce-4e8f-2d6a-8bc3f1a1328b/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/24696

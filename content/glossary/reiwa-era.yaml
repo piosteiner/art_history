@@ -5,6 +5,7 @@ names:
     role: original
     text: 令和
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (令和) for the years 2019–: 2019 is Reiwa 1 (元年)."
 description_md: |-
   **Reiwa** (令和) is a Japanese era name ([[nengo]]), proclaimed in 2019. Its years are counted in lunar years from the new year before the proclamation: 2019 is Reiwa 1 (元年). A Japanese source dates a year within it as "Reiwa 2" (令和2年) rather than by a continuous count. Since 1868 an era is that of an emperor ([[one-reign-one-era]]): Reiwa is the era of [[person/naruhito|Naruhito]], who came to the throne on 1 May 2019.

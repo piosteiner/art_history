@@ -2,4 +2,68 @@ public_id: 111965
 name: Henri-Pierre Roché
 given_name: Henri-Pierre
 family_name: Roché
+names:
+  - kind: pseudonym
+    role: alternative
+    text: Jean Roc
+    sources:
+      - accessed: 2026-11-04
+        property: P742
+        wikidata: Q1605686
+  - kind: pseudonym
+    role: alternative
+    text: Pierre Roché
+    sources:
+      - accessed: 2026-11-04
+        property: P742
+        wikidata: Q1605686
+kind: person
+birth: 1879-05-28
+death: 1959-04-09
 wikidata_id: Q1605686
+metadata:
+  sources: [Wikidata Q1605686 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q1605686
+  - type: born_in
+    to: place/6th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q1605686
+  - type: died_in
+    to: place/meudon
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q1605686
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c2/Olga_Bozna%C5%84ska%2C_Henri-Pierre_Roch%C3%A9.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Olga_Bozna%C5%84ska,_Henri-Pierre_Roch%C3%A9.jpg
+    license: Public domain
+    credit: Olga Boznańska
+identifiers:
+  bnf: "119222965"
+  gnd: "118890166"
+  idref: "030117801"
+  lc: n82117695
+  nlk: KAC201501899
+  viaf: "24183730"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1605686
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q1605686
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q1605686

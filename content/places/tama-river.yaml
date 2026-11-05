@@ -1,0 +1,41 @@
+public_id: 115650
+name: Tama River
+names:
+  - lang: nl
+    role: translation
+    text: Tama
+  - lang: fr
+    role: translation
+    text: rivière Tama
+  - lang: es
+    role: translation
+    text: Río Tama
+  - lang: ja
+    role: translation
+    text: 多摩川
+  - lang: ko
+    role: translation
+    text: 다마강
+  - lang: ru
+    role: translation
+    text: Тама
+kind: natural
+parent: tokyo
+country_code: JP
+location: [139.79833, 35.52178]
+wikidata_id: Q1063006
+metadata:
+  sources: [Wikidata Q1063006 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1063006
+  parent:
+    - accessed: 2026-11-04
+      property: P131
+      wikidata: Q1063006
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q1063006

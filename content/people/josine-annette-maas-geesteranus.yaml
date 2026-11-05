@@ -2,4 +2,24 @@ public_id: 112058
 name: Josine Annette Maas Geesteranus
 given_name: Josine Annette Maas
 family_name: Geesteranus
+kind: person
+birth: 1896-07-11
 wikidata_id: Q119949448
+metadata:
+  sources: [Wikidata Q119949448 (retrieved 2026-11-04)]
+relationships:
+  - type: born_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q119949448
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q119949448
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q119949448

@@ -5,6 +5,7 @@ names:
     role: original
     text: 仁安
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (仁安) for the years 1166–1169: 1166 is Nin'an 1 (元年) and Nin'an 4 is 1169."
 description_md: |-
   **Nin'an** (仁安) is a Japanese era name ([[nengo]]), proclaimed in 1166. Its years are counted in lunar years from the new year before the proclamation: 1166 is Nin'an 1 (元年), 1169 its last year, Nin'an 4. A Japanese source dates a year within it as "Nin'an 2" (仁安2年) rather than by a continuous count.

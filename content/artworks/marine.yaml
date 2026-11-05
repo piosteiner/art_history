@@ -1,20 +1,36 @@
 public_id: 115103
-title_lang: en
 title: Marine
 names:
   - lang: de
     role: translation
     text: Blick aufs Meer
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Seascape
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Blick aufs Meer, Guernsey
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2265/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: pierre-auguste-renoir
 created: 1879/1880
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [50.5, 61.5]
 institution: kunsthaus-zurich
 inventory_number: "2634"

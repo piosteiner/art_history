@@ -1,0 +1,29 @@
+public_id: 115762
+name: Pietà
+names:
+  - lang: de
+    role: alternative
+    text: Vesperbild
+  - lang: de
+    role: alternative
+    text: Marienklage
+category: iconography
+definition: biblical and artistic theme of the Virgin Mary cradling the dead body of Jesus
+wikidata_id: Q223689
+metadata:
+  sources: [Wikidata Q223689 (retrieved 2026-11-04)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Accademia_-_Piet%C3%A0_Martinengo_by_Giovanni_Bellini_Cat.883.jpg/1280px-Accademia_-_Piet%C3%A0_Martinengo_by_Giovanni_Bellini_Cat.883.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Accademia_-_Piet%C3%A0_Martinengo_by_Giovanni_Bellini_Cat.883.jpg
+    license: Public domain
+    credit: Didier Descouens
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/The_Piet%C3%A0_by_Michelangelo_%2848135182552%29.jpg/1280px-The_Piet%C3%A0_by_Michelangelo_%2848135182552%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Piet%C3%A0_by_Michelangelo_(48135182552).jpg
+    license: CC BY-SA 2.0
+    credit: Michelangelo
+identifiers:
+  gnd: 4046048-4
+sources:
+  definition:
+    - accessed: 2026-11-04
+      wikidata: Q223689

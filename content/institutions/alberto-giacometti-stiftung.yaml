@@ -1,2 +1,22 @@
 public_id: 114969
 name: Alberto Giacometti-Stiftung
+kind: collection
+founded: 1965
+place: zurich
+website_url: https://www.giacometti-stiftung.ch/
+wikidata_id: Q115645112
+metadata:
+  sources: [Wikidata Q115645112 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q115645112
+  place:
+    - accessed: 2026-11-04
+      property: P131
+      wikidata: Q115645112
+  founded:
+    - accessed: 2026-11-04
+      property: P571
+      wikidata: Q115645112

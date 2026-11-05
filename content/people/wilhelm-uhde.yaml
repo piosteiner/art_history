@@ -2,4 +2,54 @@ public_id: 112020
 name: Wilhelm Uhde
 given_name: Wilhelm
 family_name: Uhde
+kind: person
+birth: 1874-10-28
+death: 1947-08-17
 wikidata_id: Q69574
+metadata:
+  sources: [Wikidata Q69574 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q69574
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q69574
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q69574
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c4/Uhde%2C_Style_de_France%2C_15-04-1947.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Uhde,_Style_de_France,_15-04-1947.jpg
+    license: CC BY-SA 4.0
+    credit: Sebastien93430
+identifiers:
+  bnf: 11927314g
+  gnd: "117267716"
+  idref: "162131429"
+  lc: n79055556
+  rkd: "448025"
+  ulan: "500327304"
+  viaf: "14777632"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q69574
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q69574
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q69574

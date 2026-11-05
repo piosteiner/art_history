@@ -2,4 +2,44 @@ public_id: 112342
 name: Marcus Kappel
 given_name: Marcus
 family_name: Kappel
+kind: person
+birth: 1839-02-24
+death: 1919-01-19
 wikidata_id: Q1640356
+metadata:
+  sources: [Wikidata Q1640356 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q1640356
+  - type: born_in
+    to: place/cologne
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q1640356
+  - type: died_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q1640356
+identifiers:
+  gnd: "128804211"
+  viaf: "35518153"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1640356
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q1640356
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q1640356

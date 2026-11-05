@@ -2,4 +2,31 @@ public_id: 114894
 name: Julius Freund
 given_name: Julius
 family_name: Freund
+kind: person
+birth: 1869-04-18
+death: 1941-03-11
 wikidata_id: Q19287233
+metadata:
+  sources: [Wikidata Q19287233 (retrieved 2026-11-04)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d3/Max_Slevogt_Portrait_Julius_Freund.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Max_Slevogt_Portrait_Julius_Freund.jpg
+    license: Public domain
+    credit: Max Slevogt
+identifiers:
+  gnd: "128575964"
+  rkd: "449459"
+  viaf: "45357691"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q19287233
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q19287233
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q19287233

@@ -5,13 +5,25 @@ names:
   - lang: en
     role: translation
     text: Girl with Doll. Erdmute Esche with Polar Bear and Doll
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: fr
     role: translation
     text: Fillette avec poupée. Erdmute Esche avec ours polaire et poupée
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/26873/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: edvard-munch
 created: 1905
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [76, 68]
 institution: kunsthaus-zurich
 inventory_number: D.2022/0019

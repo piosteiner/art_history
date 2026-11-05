@@ -1,14 +1,20 @@
 public_id: 115399
-title_lang: en
+title_lang: de
 title: Traum, Wirklichkeit und Tod
 names:
   - lang: en
     role: translation
     text: Dream, Reality and Death
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3667/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: walter-kurt-wiemken
 created: 1937
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [98.5, 200]
 institution: kunsthaus-zurich
 inventory_number: 1962/0030

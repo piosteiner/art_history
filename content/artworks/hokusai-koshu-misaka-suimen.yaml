@@ -30,6 +30,20 @@ web_url: https://www.metmuseum.org/art/collection/search/54868
 wikidata_id: Q18173425
 metadata:
   sources: [Wikidata Q18173425 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/lake-kawaguchi
+    label: Lake Kawaguchi from the Misaka Pass side, Fuji reflected
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/koushuumisakasuimen.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：山梨県南都留郡富士河口湖町、河口湖周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade B+, placed at 35.5209, 138.76487 — “Lake Kawaguchi is to the north of Mt Fuji, and the Misaka Pass is on the east end of the lake. A point was chosen on the lake coastline, opposite from the Mt Fu”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP141064.jpg
     source_url: https://www.metmuseum.org/art/collection/search/54868

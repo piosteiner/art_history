@@ -1,0 +1,22 @@
+public_id: 115659
+name: Kagosaka Pass
+names:
+  - lang: ja
+    role: translation
+    text: 籠坂峠
+kind: natural
+parent: yamanashi-prefecture
+country_code: JP
+location: [138.86389, 35.39278]
+wikidata_id: Q11603849
+metadata:
+  sources: [Wikidata Q11603849 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q11603849
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q11603849

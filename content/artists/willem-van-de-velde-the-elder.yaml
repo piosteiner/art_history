@@ -1,0 +1,18 @@
+public_id: 115749
+name: Willem van de Velde the Elder
+given_name: Willem, the Elder
+family_name: van de Velde
+birth: c. 1611
+death: 1693-12-13
+wikidata_id: Q722912
+metadata:
+  sources: [Wikidata Q722912 (retrieved 2026-11-04)]
+sources:
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q722912
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q722912

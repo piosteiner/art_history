@@ -1,0 +1,38 @@
+public_id: 115660
+name: Lake Suwa
+names:
+  - Suwa-ko
+  - lang: fr
+    role: translation
+    text: lac Suwa
+  - lang: de
+    role: translation
+    text: Suwa-See
+  - lang: es
+    role: translation
+    text: Lago Suwa
+  - lang: ja
+    role: translation
+    text: 諏訪湖
+  - lang: ko
+    role: translation
+    text: 스와호
+  - lang: ru
+    role: translation
+    text: Сува (озеро)
+kind: natural
+parent: nagano-prefecture
+country_code: JP
+location: [138.08417, 36.04833]
+wikidata_id: Q1206692
+metadata:
+  sources: [Wikidata Q1206692 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1206692
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q1206692

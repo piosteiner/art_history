@@ -5,15 +5,26 @@ names:
   - lang: en
     role: translation
     text: Still Life with Lobster and Large Pewter Mug
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/192/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
     role: former
     text: Stilleben mit Hummer und grossem Krug
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/192/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: abraham-van-beyeren
 created: 1640/1655
 created_label: c. 1645/1650
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [105, 130]
 institution: kunsthaus-zurich
 inventory_number: R 2

@@ -5,6 +5,7 @@ names:
     role: original
     text: 安永
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (安永) for the years 1772–1781: 1772 is An'ei 1 (元年) and An'ei 10 is 1781."
 description_md: |-
   **An'ei** (安永) is a Japanese era name ([[nengo]]), proclaimed in 1772. Its years are counted in lunar years from the new year before the proclamation: 1772 is An'ei 1 (元年), 1781 its last year, An'ei 10. A Japanese source dates a year within it as "An'ei 2" (安永2年) rather than by a continuous count.

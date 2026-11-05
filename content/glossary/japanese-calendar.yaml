@@ -1,0 +1,10 @@
+public_id: 115719
+name: Japanese calendar
+category: calendar
+definition: "How Japanese sources date a year: by the era name (nengō) and a count of years within it — 1831 is Tenpō 2 —, since 1868 one era per reign. The era names from Taika (645) to Reiwa are filed under this term."
+description_md: |-
+  Japanese dates name the era ([[nengo]]) and the year within it: 天保2年, "Tenpō 2", is 1831. The count begins anew with every era; until 1868 an era could change at any time — for a good omen, a disaster, the fixed years of the [[sexagenary-cycle]] — and since the decree of [[one-reign-one-era]] it changes only with the emperor. From 1336 to 1392 the Southern Court kept its own era names beside the Northern Court's; both lines are here.
+
+  Every era name has its own entry under this term, with its years and, where one is known, the entry of the emperor; an entry page gives a date in the era of its time ("Tenpō 2") beside the Western year. The dates follow Wikidata.
+metadata:
+  collection: true

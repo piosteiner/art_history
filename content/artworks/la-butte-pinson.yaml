@@ -5,14 +5,26 @@ names:
   - lang: de
     role: translation
     text: Die Butte Pinson
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Butte Pinson
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752962/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: maurice-utrillo
 created: c. 1905
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [38, 46]
 institution: kunsthaus-zurich
 inventory_number: BU 0109

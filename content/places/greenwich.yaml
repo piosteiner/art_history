@@ -1,0 +1,16 @@
+public_id: 115747
+name: Greenwich
+kind: settlement
+location: [0, 51.48]
+wikidata_id: Q179385
+metadata:
+  sources: [Wikidata Q179385 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q179385
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q179385

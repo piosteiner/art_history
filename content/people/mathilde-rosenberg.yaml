@@ -2,4 +2,22 @@ public_id: 111951
 name: Mathilde Rosenberg
 given_name: Mathilde
 family_name: Rosenberg
+kind: person
+birth: 1857-08-07
+death: 1923-04-22
 wikidata_id: Q116472137
+metadata:
+  sources: [Wikidata Q116472137 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q116472137
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q116472137
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q116472137

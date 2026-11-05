@@ -1,2 +1,9 @@
 public_id: 115455
 name: Master of the Hohenlandberg altarpiece
+active: c. 1490
+sources:
+  active:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3921/
+      note: active when the work held was made — the Kunsthaus dates “Geisselung Christi” c. 1490
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-04

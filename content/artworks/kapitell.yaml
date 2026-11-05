@@ -1,16 +1,21 @@
 public_id: 115453
-title_lang: en
 title: Kapitell
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Capital
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3916/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 attribution_label: Anonymous, Apulia
 created: 1150/1199
 created_label: 2nd half 12th century
 created_span: uncertain
 kind: sculpture
-medium: Limestone
+medium: Kalkstein
 dimensions: [34, 43, 14]
 institution: kunsthaus-zurich
 inventory_number: 1957/0005

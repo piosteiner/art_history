@@ -5,11 +5,17 @@ names:
   - lang: en
     role: translation
     text: Mountain Landscape with Expanses of Water
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2137/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: joos-de-momper-the-younger
 created: c. 1630
 created_span: uncertain
 kind: oil painting
-medium: Oil on oak panel
+medium: Öl auf Eichenholz
 dimensions: [45.5, 70]
 institution: kunsthaus-zurich
 inventory_number: R 18

@@ -1,0 +1,31 @@
+public_id: 115683
+name: Goten-yama
+names:
+  - Gotenyama
+  - Goten'yama
+  - lang: ja
+    role: translation
+    text: 御殿山
+  - lang: zh
+    role: translation
+    text: 御殿山 (品川區)
+kind: natural
+parent: tokyo
+country_code: JP
+location: [139.73695, 35.62081]
+wikidata_id: Q11489168
+metadata:
+  sources: [Wikidata Q11489168 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q11489168
+  parent:
+    - accessed: 2026-11-04
+      property: P131
+      wikidata: Q11489168
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q11489168

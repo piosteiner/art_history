@@ -1,9 +1,20 @@
 public_id: 100298
+title_lang: de
 title: Heilige Barbara
+names:
+  - lang: en
+    role: translation
+    text: Saint Barbara
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/847316/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 attribution_label: Swabia [Ulm?]
 created: 1470/1475
 kind: sculpture
-medium: Limewood
+medium: Lindenholz
 dimensions: [127, 39, 34.3]
 institution: kunsthaus-zurich
 inventory_number: BU P.11

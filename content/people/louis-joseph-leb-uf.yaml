@@ -2,4 +2,40 @@ public_id: 111819
 name: Louis-Joseph Lebœuf
 given_name: Louis-Joseph
 family_name: Lebœuf
+kind: person
+birth: 1823-08-30
+death: 1871-08-19
 wikidata_id: Q64223773
+metadata:
+  sources: [Wikidata Q64223773 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q64223773
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q64223773
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Courbet_-_Der_Bildhauer_Louis-Joseph_Leboeuf%2C_1863.jpg/1280px-Courbet_-_Der_Bildhauer_Louis-Joseph_Leboeuf%2C_1863.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Courbet_-_Der_Bildhauer_Louis-Joseph_Leboeuf,_1863.jpg
+    license: CC BY-SA 4.0
+    credit: Gustave Courbet
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q64223773
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q64223773
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q64223773

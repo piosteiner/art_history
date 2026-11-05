@@ -2,4 +2,17 @@ public_id: 115261
 name: David Reder
 given_name: David
 family_name: Reder
+kind: person
+birth: 1893
 wikidata_id: Q111014598
+metadata:
+  sources: [Wikidata Q111014598 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q111014598
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q111014598

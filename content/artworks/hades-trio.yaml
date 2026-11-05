@@ -1,15 +1,20 @@
 public_id: 115170
-title_lang: en
 title: Hades-Trio
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Hadestrio
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2627/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: max-von-moos
 created: c. 1935
 created_span: uncertain
 kind: oil painting
-medium: Tempera and oil on cardboard
+medium: Tempera und Öl auf Karton
 dimensions: [59, 83]
 institution: kunsthaus-zurich
 inventory_number: 1963/0032

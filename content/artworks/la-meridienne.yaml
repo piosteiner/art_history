@@ -2,18 +2,30 @@ public_id: 115356
 title_lang: fr
 title: La Méridienne
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Mittagsruhe
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/348/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Midday Rest
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/348/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: rene-victor-auberjonois
 created: 1935/1946
 created_label: c. 1940/1941
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [30, 44]
 institution: kunsthaus-zurich
 inventory_number: 1967/0005

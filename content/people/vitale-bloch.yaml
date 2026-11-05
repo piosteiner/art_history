@@ -2,4 +2,49 @@ public_id: 115144
 name: Vitale Bloch
 given_name: Vitale
 family_name: Bloch
+kind: person
+birth: 1900
+death: 1975-09-21
 wikidata_id: Q47487054
+metadata:
+  sources: [Wikidata Q47487054 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q47487054
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q47487054
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q47487054
+identifiers:
+  bnf: 11939406t
+  gnd: "138696977"
+  idref: "083994483"
+  lc: n84189547
+  rkd: "356532"
+  ulan: "500643833"
+  viaf: "43250690"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q47487054
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q47487054
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q47487054

@@ -5,6 +5,7 @@ names:
     role: original
     text: 재위 연도
 category: calendar
+parent: korean-calendar
 definition: "Korean sources of the Joseon period date years by the reigning king: 1446 is Sejong 28 (세종 28년), 1749 Yeongjo 25."
 description_md: |-
   Under the **Joseon** dynasty (1392–1897) Korean documents date a year by the reigning king: "Sejong 28" (世宗 28年, 세종 28년) is 1446 — the year the Korean alphabet was proclaimed. Official documents for China used the Chinese emperors' era names ([[nianhao]]) beside it, and the year's name in the sixty-year cycle ([[sexagenary-cycle]]) is often given too.

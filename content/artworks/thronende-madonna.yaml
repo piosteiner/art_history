@@ -1,18 +1,29 @@
 public_id: 115299
-title_lang: en
 title: Thronende Madonna
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Enthroned Madonna
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3141/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: fr
     role: translation
     text: Vierge trônant
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3141/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 attribution_label: Anonymous, Auvergne
 created: c. 1200
 created_span: uncertain
 kind: sculpture
-medium: Hardwood with polychromy
+medium: Laubholz mit alter Fassung
 dimensions: [73.5, 26.5, 23.5]
 institution: kunsthaus-zurich
 inventory_number: 1948/0010

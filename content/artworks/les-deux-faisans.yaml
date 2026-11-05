@@ -2,16 +2,28 @@ public_id: 112117
 title_lang: fr
 title: Les Deux Faisans
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Zwei Fasane
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Two Pheasants
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604989/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: chaim-soutine
 created: 1924/1925
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [50, 61]
 institution: kunsthaus-zurich
 inventory_number: BU 0101

@@ -5,12 +5,24 @@ names:
   - lang: de
     role: translation
     text: Antonius-Brücke in Clisson
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/691/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Bridge Saint-Antoine in Clisson
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/691/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: camille-bombois
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [65, 81]
 institution: kunsthaus-zurich
 inventory_number: "2436"

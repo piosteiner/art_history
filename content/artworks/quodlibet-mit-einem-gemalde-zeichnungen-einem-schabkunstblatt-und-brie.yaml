@@ -5,13 +5,25 @@ names:
   - lang: en
     role: translation
     text: Quodlibet with a Painting, Drawings, a Mezzotinto, and Letters
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1568/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: fr
     role: translation
     text: Trompe-l’œil représentant une peinture, des dessins, une eau-forte et des lettres
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1568/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: johann-caspar-fussli
 created: 1755
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [56.5, 77.5]
 institution: kunsthaus-zurich
 inventory_number: "2560"

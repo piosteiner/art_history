@@ -229,6 +229,7 @@ provenance:
         document: Wildenstein, The Art and Life of Vincent van Gogh
   - owner: person/buddy-desylva
     acquired: 1945
+    ended: 1950 or later
     method: purchase
     direct: true
     place: los-angeles

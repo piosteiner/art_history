@@ -2,4 +2,47 @@ public_id: 112243
 name: Léonce Rosenberg
 given_name: Léonce
 family_name: Rosenberg
+kind: person
+birth: 1879-09-12
+death: 1947-07-31
 wikidata_id: Q947522
+metadata:
+  sources: [Wikidata Q947522 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q947522
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q947522
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/11/Juan_Gris%2C_invitation%2C_galerie_L%27Effort_Moderne%2C_L%C3%A9once_Rosenberg%2C_April_1919.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Juan_Gris,_invitation,_galerie_L%27Effort_Moderne,_L%C3%A9once_Rosenberg,_April_1919.jpg
+    license: Public domain
+    credit: Juan Gris
+identifiers:
+  bnf: "121798473"
+  gnd: "119078945"
+  idref: "030369320"
+  lc: n91067883
+  ulan: "500347855"
+  viaf: "300871072"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q947522
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q947522
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q947522

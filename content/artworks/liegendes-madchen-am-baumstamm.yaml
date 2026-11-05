@@ -5,11 +5,17 @@ names:
   - lang: en
     role: translation
     text: Badende
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/9023/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: otto-mueller
 created: c. 1914
 created_span: uncertain
 kind: print
-medium: Lithograph, watercoloured, on laid paper
+medium: Lithografie, aquarelliert, auf Papier (vergé)
 dimensions: [31.5, 43.3]
 institution: kunsthaus-zurich
 inventory_number: Gr.1933/0112

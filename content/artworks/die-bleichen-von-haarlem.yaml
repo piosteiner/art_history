@@ -5,18 +5,35 @@ names:
   - lang: en
     role: translation
     text: View of Haarlem with Bleaching Grounds
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Vue de Haarlem
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: nl
     role: original
     text: Gezicht op Haarlem vanaf Bloemendaal
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3095/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: jacob-van-ruisdael
 created: 1665/1680
 created_label: c. 1670/1675
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [62, 55]
 institution: kunsthaus-zurich
 inventory_number: R 32
@@ -107,7 +124,7 @@ provenance:
         note: "Footnote: Wie oben Fussnote 9; LIVE AUCTION 5422. IMPRESSIONIST & MODERN PAINTINGS,WATERCOLOURS & SCULPTURE PI,  Christie’s, London, 01.10.1995, https://www.christies.com/en/lot/lot-265438 (08.05.2023), Lot 6: «Mrs. Alice Scherrer von Guggenberger, Sorengo (Hans Duensing's niece)»."
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-03
-  - owner: person/walter-feilchenfeldt-senior
+  - owner: person/walter-feilchenfeldt
     role: agent
     acquired: 1949-11-21
     ended: 1949-11-21

@@ -5,6 +5,7 @@ names:
     role: original
     text: 大宝
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (大宝) for the years 701–703: 701 is Taihō 1 (元年) and Taihō 3 is 703."
 description_md: |-
   **Taihō** (大宝) is a Japanese era name ([[nengo]]), proclaimed in 701. Its years are counted in lunar years from the new year before the proclamation: 701 is Taihō 1 (元年), 703 its last year, Taihō 3. A Japanese source dates a year within it as "Taihō 2" (大宝2年) rather than by a continuous count.

@@ -35,6 +35,20 @@ web_url: https://www.artic.edu/artworks/87003
 wikidata_id: Q17227585
 metadata:
   sources: [Wikidata Q17227585 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/kajikazawa
+    label: the Fuji River at Kajikazawa, below the confluence of the Kamanashi and the Fuefuki
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/koushuukajikazawa.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：山梨県南巨摩郡富士川町鰍沢周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade B, placed at 35.54272, 138.46377 — “The town of Kajikazawa lies to the north-west of Mt Fuji and the river that runs through it provides some context for the view to the mountain”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://www.artic.edu/iiif/2/89cbc945-4fd0-a732-6932-11bbd98ae143/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/87003

@@ -2,4 +2,70 @@ public_id: 115502
 name: Charlotte Berend-Corinth
 given_name: Charlotte
 family_name: Berend-Corinth
+names:
+  - kind: nickname
+    lang: de
+    role: alternative
+    text: Petermannchen
+    sources:
+      - accessed: 2026-11-04
+        property: P1449
+        wikidata: Q215045
+kind: person
+birth: 1880-05-25
+death: 1967-01-10
 wikidata_id: Q215045
+metadata:
+  sources: [Wikidata Q215045 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q215045
+  - type: nationality
+    to: polity/italy
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q215045
+  - type: born_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q215045
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q215045
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/19/Lovis_Corinth_Portrait_Charlotte_Berend.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lovis_Corinth_Portrait_Charlotte_Berend.jpg
+    license: Public domain
+    credit: Lovis Corinth
+identifiers:
+  bnf: 12376559w
+  dome: "791"
+  gnd: "118655809"
+  idref: "032807813"
+  lc: n80125294
+  rkd: "6760"
+  ulan: "500008039"
+  viaf: "36998031"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q215045
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q215045
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q215045

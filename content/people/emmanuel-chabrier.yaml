@@ -2,4 +2,49 @@ public_id: 112113
 name: Emmanuel Chabrier
 given_name: Emmanuel
 family_name: Chabrier
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Alexis-Emmanuel Chabrier
+    sources:
+      - accessed: 2026-11-04
+        property: P1477
+        wikidata: Q313374
+kind: person
+birth: 1841-01-18
+death: 1894-09-13
 wikidata_id: Q313374
+metadata:
+  sources: [Wikidata Q313374 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q313374
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/ce/Emmanuel_Chabrier.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emmanuel_Chabrier.jpg
+    license: Public domain
+identifiers:
+  bnf: "138923333"
+  gnd: 11866901X
+  idref: "027511227"
+  lc: n79105801
+  nlk: KAC199604724
+  viaf: "102317293"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q313374
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q313374
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q313374

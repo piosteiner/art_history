@@ -1,17 +1,29 @@
 public_id: 112293
-title_lang: en
+title_lang: fr
 title: Fleurs et Citrons
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Blumen und Zitronen
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750961/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Flowers and Lemons
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750961/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: pablo-picasso
 created: 1941
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [92, 73]
 institution: kunsthaus-zurich
 inventory_number: BU 0077

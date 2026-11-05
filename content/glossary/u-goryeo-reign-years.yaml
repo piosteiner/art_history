@@ -8,6 +8,7 @@ names:
     role: alternative
     text: 禑王
 category: calendar
+parent: korean-calendar
 definition: "The reign years of King U of Goryeo (禑王, 우왕), by which Korean histories date 1375–1388: 1375 is U 1, 1388 U 14."
 description_md: |-
   **U** (禑王, 우왕): the years of the reign of King U of Goryeo. The Goryeosa, the history of Goryeo, dates events by the reigning king's year ([[korean-reign-years]]): 1384 is U 10 (우왕 10년). The year of the accession, 1375, counts as the first year.

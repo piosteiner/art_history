@@ -48,6 +48,20 @@ web_url: https://www.artic.edu/artworks/87008
 wikidata_id: Q18173384
 metadata:
   sources: [Wikidata Q18173384 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/mount-fuji
+    label: the mountain alone, from the south; no viewpoint is identified
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/sankahakuu.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：富士山そのものを主題とした作品で、特定の観察地点には断定できません
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade C-, placed at 35.30686, 138.81407 — “Close to base of Mt Fuji (based on the size of the mountain), with low hills on the left side in the background lining up OK from this viewpoint”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://www.artic.edu/iiif/2/bbb6d024-f931-2e2f-eb95-750991834b1c/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/87008

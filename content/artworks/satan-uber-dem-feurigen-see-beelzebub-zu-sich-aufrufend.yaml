@@ -2,16 +2,28 @@ public_id: 114981
 title_lang: de
 title: Satan über dem feurigen See, Beelzebub zu sich aufrufend
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Satan ruft seine Legionen auf
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Satan Summoning His Legions
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1408/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: henry-fuseli
 created: 1802
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [91.5, 71]
 institution: kunsthaus-zurich
 inventory_number: 1946/0013

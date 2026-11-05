@@ -2,4 +2,34 @@ public_id: 114909
 name: Richard Kisling
 given_name: Richard
 family_name: Kisling
+kind: person
+birth: 1862-02-19
+death: 1917-03-07
 wikidata_id: Q94842192
+metadata:
+  sources: [Wikidata Q94842192 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q94842192
+identifiers:
+  bnf: "158001564"
+  gnd: "130332127"
+  idref: "125270771"
+  viaf: "72496836"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q94842192
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q94842192
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q94842192

@@ -2,4 +2,55 @@ public_id: 112169
 name: Karl Anton Joachim Zephyrinus Friedrich Meinrad von Hohenzollern
 given_name: Karl Anton Joachim Zephyrinus Friedrich Meinrad
 family_name: von Hohenzollern
+names:
+  - kind: birth
+    lang: de
+    role: former
+    text: Karl Anton Joachim Zephyrin Friedrich Meinrad von Hohenzollern-Sigmaringen
+    sources:
+      - accessed: 2026-11-04
+        property: P1477
+        wikidata: Q58012
+kind: person
+birth: 1811-09-07
+death: 1885-06-02
 wikidata_id: Q58012
+metadata:
+  sources: [Wikidata Q58012 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-prussia
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q58012
+  - type: died_in
+    to: place/sigmaringen
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q58012
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/ba/Richard_Lauchert_-_F%C3%BCrst_Karl_Anton_von_Hohenzollern-Sigmaringen_%281811%E2%80%931885%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Richard_Lauchert_-_F%C3%BCrst_Karl_Anton_von_Hohenzollern-Sigmaringen_(1811%E2%80%931885).jpg
+    license: Public domain
+    credit: Richard Lauchert
+identifiers:
+  gnd: "131601598"
+  idref: "144634635"
+  lc: no2011128473
+  ulan: "500353514"
+  viaf: "67604074"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q58012
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q58012
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q58012

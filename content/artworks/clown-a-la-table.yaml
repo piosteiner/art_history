@@ -1,18 +1,30 @@
 public_id: 112100
-title_lang: en
+title_lang: fr
 title: Clown à la table
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Clown am Tisch
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Clown at a Table
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604983/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: georges-rouault
 created: c. 1937
 created_span: uncertain
 kind: oil painting
-medium: Oil on cardboard
+medium: Öl auf Karton
 dimensions: [34, 50]
 institution: kunsthaus-zurich
 inventory_number: BU 0092

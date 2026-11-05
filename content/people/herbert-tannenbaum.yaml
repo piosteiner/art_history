@@ -2,4 +2,46 @@ public_id: 112124
 name: Herbert Tannenbaum
 given_name: Herbert
 family_name: Tannenbaum
+kind: person
+birth: 1892-03-07
+death: 1958-09-30
 wikidata_id: Q60461097
+metadata:
+  sources: [Wikidata Q60461097 (retrieved 2026-11-04)]
+relationships:
+  - type: born_in
+    to: place/mannheim
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q60461097
+  - type: died_in
+    to: place/frankfurt
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q60461097
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Max_Beckmann_-_Tannenbaum_geht_nach_New_York.jpg/1280px-Max_Beckmann_-_Tannenbaum_geht_nach_New_York.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Max_Beckmann_-_Tannenbaum_geht_nach_New_York.jpg
+    license: CC BY 2.0
+    credit: Max Beckmann
+identifiers:
+  bnf: "145329810"
+  gnd: "118867679"
+  idref: "252857399"
+  lc: n91010316
+  viaf: "12542449"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q60461097
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q60461097
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q60461097

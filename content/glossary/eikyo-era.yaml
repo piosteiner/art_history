@@ -5,6 +5,7 @@ names:
     role: original
     text: 永享
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (永享) for the years 1429–1441: 1429 is Eikyō 1 (元年) and Eikyō 13 is 1441."
 description_md: |-
   **Eikyō** (永享) is a Japanese era name ([[nengo]]), proclaimed in 1429. Its years are counted in lunar years from the new year before the proclamation: 1429 is Eikyō 1 (元年), 1441 its last year, Eikyō 13. A Japanese source dates a year within it as "Eikyō 2" (永享2年) rather than by a continuous count.

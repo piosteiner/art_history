@@ -5,6 +5,7 @@ names:
     role: original
     text: 乾元
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (乾元) for the year 1302: 1302 is Kengen 1 (元年), its only year."
 description_md: |-
   **Kengen** (乾元) is a Japanese era name ([[nengo]]), proclaimed in 1302. Its years are counted in lunar years from the new year before the proclamation: 1302 is Kengen 1 (元年), its only year.

@@ -1,20 +1,30 @@
 public_id: 108864
 title_lang: de
-title: Das Lied aus der Ferne
+title: Lied in der Ferne
 names:
   - lang: en
     role: alternative
     text: Song from Afar
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1511/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: fr
     role: translation
     text: Chant lointain
   - lang: de
-    role: original
-    text: Lied in der Ferne
+    role: former
+    text: Das Lied aus der Ferne
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1511/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: ferdinand-hodler
 created: 1913
 kind: painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 materials: [oil paint, canvas]
 dimensions: [180, 129]
 institution: kunsthaus-zurich

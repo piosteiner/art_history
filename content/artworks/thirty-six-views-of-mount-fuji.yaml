@@ -27,7 +27,26 @@ description_md: |-
 
   # Exhibitions
   Die [Dulwich Picture Gallery](https://www.dulwichpicturegallery.org.uk/whats-on/hokusai-thirty-six-views-of-mt-fuji-from-the-iuchi-collection/) zeigte bis Januar 2027 die [[artwork/thirty-six-views-of-mount-fuji]]. ([the Guardian Artikel zur Ausstellung](https://www.theguardian.com/artanddesign/2026/oct/19/hokusai-thirty-six-views-of-mount-fuji-review-dulwich-picture-gallery?shem=dsdf,sharefoc,agadiscoversdl,,sh/x/discover/m1/4)) Die 46 ausgestellten Holzschnittdrucke an der Ausstellung sind jedoch nicht online zugänglich.
+
+  ## Where the views are
+  Each print is linked to the place it shows, as far as it can be told — the viewpoint, how sure it is and the reasoning are on each print’s page, and the series page maps all 46. Hokusai did not travel a route for them: the views reach from Fujimigahara in Owari, where Fuji cannot be seen, to Ushibori 174 km east of the summit, and many are composed from famous-place conventions rather than drawn on the spot. The prints appeared in five groups, told apart by the signatures: ten with “Hokusai aratame Iitsu hitsu” (the Great Wave, Red Fuji, the Storm, Fukagawa, Fujimigahara, Inume, Senju, Aoyama, Surugadai, the Tama River) first, then ten, five and eleven more signed “zen Hokusai Iitsu hitsu”, and last the ten with black key blocks, the “Fuji from behind” (ura Fuji)[[source/wikipedia-ja-fugaku-sanjurokkei|“個々の作品は、落款の違いによって … 5グループに分けられる … 主版が墨摺の「前北斎為一筆」10図（裏富士）が一番新しい” (after Hinohara 2019)]].
+
+  ## Further reading
+  - [[source/cincinnati-library-36-views-of-mount-fuji]] — a complete set of the 36 views of the first issue, scanned page by page (the titles follow Wikipedia); the ten later views are not in it.
+  - [[source/higonote-fugaku36]] — the place of every print with a map and street views, the sources weighed (Japanese).
+  - [[source/ukiyoe-yawa-fugaku36]] — all 46 with their readings and today’s place names (Japanese).
+  - [[source/esrij-ukiyoe-map-fugaku36]] — ESRI Japan’s story map of where all 46 were drawn, with a 3D film.
+  - [[source/arcgis-hokusai-views-of-mt-fuji]] — the 36 views georeferenced from their topography, each with a confidence grade A–D.
 wikidata_id: Q227494
+relationships:
+  - type: depicts
+    to: place/tokaido
+    label: the road along which many of the views are taken — five prints name it in their titles (Hodogaya, Yoshida, Kanaya, Ejiri and Tago Bay, Shinagawa)
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E5%AF%8C%E5%B6%BD%E4%B8%89%E5%8D%81%E5%85%AD%E6%99%AF
+        note: the titles 東海道程ヶ谷, 東海道吉田, 東海道金谷ノ不二, 東海道江尻田子の浦略図, 東海道品川御殿山ノ不二
+        source: wikipedia-ja-fugaku-sanjurokkei
+        accessed: 2026-11-04
 sources:
   kind:
     - url: https://www.metmuseum.org/art/collection/search/45434

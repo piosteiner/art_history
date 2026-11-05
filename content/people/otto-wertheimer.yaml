@@ -2,4 +2,36 @@ public_id: 112424
 name: Otto Wertheimer
 given_name: Otto
 family_name: Wertheimer
+kind: person
+birth: 1896-12-28
+death: 1972
 wikidata_id: Q61504427
+metadata:
+  sources: [Wikidata Q61504427 (retrieved 2026-11-04)]
+relationships:
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q61504427
+identifiers:
+  gnd: "127982434"
+  idref: "196780241"
+  lc: no2017065835
+  rkd: "460585"
+  ulan: "500709324"
+  viaf: "101147422946044880725"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q61504427
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q61504427
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q61504427

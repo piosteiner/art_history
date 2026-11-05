@@ -2,4 +2,52 @@ public_id: 111886
 name: Émile Péreire
 given_name: Émile
 family_name: Péreire
+kind: person
+birth: 1800-12-03
+death: 1875-01-06
 wikidata_id: Q19260104
+metadata:
+  sources: [Wikidata Q19260104 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q19260104
+  - type: born_in
+    to: place/bordeaux
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q19260104
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q19260104
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Portrait_d%27Emile_P%C3%A9reire%2C_%281800-1875%29%2C_%28banquier%2C_d%C3%A9put%C3%A9%29%2C_PH55056_%28cropped%29.jpg/1280px-Portrait_d%27Emile_P%C3%A9reire%2C_%281800-1875%29%2C_%28banquier%2C_d%C3%A9put%C3%A9%29%2C_PH55056_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_d%27Emile_P%C3%A9reire,_(1800-1875),_(banquier,_d%C3%A9put%C3%A9),_PH55056_(cropped).jpg
+    license: CC0
+    credit: Atelier Nadar, photographe
+identifiers:
+  bnf: "119191057"
+  gnd: "118592688"
+  idref: "058588744"
+  lc: n84099668
+  viaf: "7395442"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q19260104
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q19260104
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q19260104

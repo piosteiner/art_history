@@ -2,6 +2,7 @@ public_id: 100264
 name: Walter Feilchenfeldt
 given_name: Walter
 family_name: Feilchenfeldt
+names: [Walter Feilchenfeldt senior]
 kind: person
 birth: 1894-01-21
 death: 1953-12-09
@@ -27,6 +28,32 @@ relationships:
       - accessed: 2026-10-30
         property: P20
         wikidata: Q2544162
+  - type: worked_in
+    to: institution/walter-feilchenfeldt-kunsthandel
+    period: 1948/1953
+    label: director
+    sources:
+      - url: https://walterfeilchenfeldt.ch/en/art-dealing
+        note: "“1948–1953: Walter Feilchenfeldt sen.”"
+        source: walterfeilchenfeldt-art-dealing
+        accessed: 2026-11-04
+  - type: founded
+    to: institution/walter-feilchenfeldt-kunsthandel
+    period: 1948
+    label: founder
+    sources:
+      - url: https://walterfeilchenfeldt.ch/en/art-dealing
+        note: "“1948–1953: Walter Feilchenfeldt sen.”"
+        source: walterfeilchenfeldt-art-dealing
+        accessed: 2026-11-04
+  - type: married_to
+    to: person/marianne-feilchenfeldt
+    label: wife
+    sources:
+      - url: https://de.wikipedia.org/wiki/Marianne_Feilchenfeldt
+        note: “1936 heiratete sie den Kunsthändler Walter Feilchenfeldt”
+        source: wikipedia-de-marianne-feilchenfeldt
+        accessed: 2026-11-04
 identifiers:
   gnd: "131409085"
   ulan: "500353266"

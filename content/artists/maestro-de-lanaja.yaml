@@ -2,7 +2,10 @@ public_id: 115314
 name: Maestro de Lanaja
 given_name: Maestro
 family_name: de Lanaja
+names: [Master of the Prelate Don Dalmáu de Mur, Blasco de Grañen]
+birth: c. 1400
 death: 1459-10
+biography_md: Eintrag wurde erstellt für das Kunstwerk [[artwork/auferweckung-eines-verungluckten-kindes-durch-anrufung-des-heiligen-st]]. Das Kunsthaus Zürich schreibt dazu, dass Maestro de Lanaja wohl Blasco de Grañén sei.[[source/kunsthaus-zurich-1957-0006]]
 wikidata_id: Q3297636
 metadata:
   sources: [Wikidata Q3297636 (retrieved 2026-11-03)]
@@ -12,6 +15,24 @@ relationships:
     sources:
       - accessed: 2026-11-03
         property: P27
+        wikidata: Q3297636
+  - type: born_in
+    to: place/zaragoza
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q3297636
+  - type: died_in
+    to: place/zaragoza
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q3297636
+  - type: worked_in
+    to: place/zaragoza
+    sources:
+      - accessed: 2026-11-04
+        property: P937
         wikidata: Q3297636
 identifiers:
   lc: nr2006015962

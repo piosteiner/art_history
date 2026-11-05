@@ -2,4 +2,36 @@ public_id: 111902
 name: Michail Melas
 given_name: Michail
 family_name: Melas
+kind: person
+birth: 1833
+death: 1897
 wikidata_id: Q6835697
+metadata:
+  sources: [Wikidata Q6835697 (retrieved 2026-11-04)]
+relationships:
+  - type: died_in
+    to: place/athens
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q6835697
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e5/Michail_Melas.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Michail_Melas.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  viaf: "5778158792789439040004"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q6835697
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q6835697
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q6835697

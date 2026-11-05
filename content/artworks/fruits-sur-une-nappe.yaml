@@ -1,17 +1,29 @@
 public_id: 112010
-title_lang: en
+title_lang: fr
 title: Fruits sur une nappe
 names:
   - lang: de
     role: translation
     text: Früchte auf einem Tuch
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Still Life with Fruits
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600963/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: georges-braque
 created: 1924
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [31.5, 65.5]
 institution: kunsthaus-zurich
 inventory_number: BU 0008

@@ -1,11 +1,22 @@
 public_id: 100297
+title_lang: de
 title: Heiliger Sebastian
+names:
+  - lang: en
+    role: translation
+    text: Saint Sebastian
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/754987/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: niklaus-weckmann
 attribution_label: Circle of
 created: early 16th century
 created_span: uncertain
 kind: sculpture
-medium: Limewood
+medium: Lindenholz
 dimensions: [112, 35, 23]
 institution: kunsthaus-zurich
 inventory_number: BU P.19

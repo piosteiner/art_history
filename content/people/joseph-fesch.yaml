@@ -2,4 +2,48 @@ public_id: 115352
 name: Joseph Fesch
 given_name: Joseph
 family_name: Fesch
+kind: person
+birth: 1763-01-03
+death: 1839-05-13
 wikidata_id: Q450181
+metadata:
+  sources: [Wikidata Q450181 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q450181
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q450181
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/81/Joseph_Fesch.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joseph_Fesch.jpg
+    license: Public domain
+    credit: Charles Meynier
+identifiers:
+  bnf: 12008789w
+  gnd: "116473894"
+  idref: "028205529"
+  lc: no2006085593
+  rkd: "434687"
+  ulan: "500317650"
+  viaf: "92145857803723020209"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q450181
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q450181
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q450181

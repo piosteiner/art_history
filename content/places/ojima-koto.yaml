@@ -1,0 +1,16 @@
+public_id: 115692
+name_lang: en
+name: Ōjima
+names:
+  - lang: ja
+    role: original
+    text: 大島
+  - lang: en
+    role: alternative
+    text: Ōjima, Kōtō
+kind: district
+parent: tokyo
+country_code: JP
+location: [139.8295, 35.6876]
+metadata:
+  sources: ["location: the centre of Ōjima 4-chōme, Kōtō, by OpenStreetMap (Nominatim), 2026-11-04 — where the Gohyaku Rakan-ji stood (a marker, per higonote.net)"]

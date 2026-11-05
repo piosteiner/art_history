@@ -2,4 +2,37 @@ public_id: 112411
 name: Siegfried Lämmle
 given_name: Siegfried
 family_name: Lämmle
+kind: person
+birth: 1863-02-14
+death: 1953-06-11
 wikidata_id: Q94937026
+metadata:
+  sources: [Wikidata Q94937026 (retrieved 2026-11-04)]
+relationships:
+  - type: died_in
+    to: place/los-angeles
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q94937026
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7a/Siegfried_Laemmle_1926.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Siegfried_Laemmle_1926.jpg
+    license: Public domain
+    credit: Unknown photographer
+identifiers:
+  gnd: "132723255"
+  viaf: "3641830"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q94937026
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q94937026
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q94937026

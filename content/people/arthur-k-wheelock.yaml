@@ -2,4 +2,36 @@ public_id: 115238
 name: Arthur K. Wheelock
 given_name: Arthur K.
 family_name: Wheelock
+kind: person
+birth: 1943
 wikidata_id: Q4799309
+metadata:
+  sources: [Wikidata Q4799309 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q4799309
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/90/Wheelockak.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wheelockak.jpg
+    license: Public domain
+    credit: National Gallery of Art
+identifiers:
+  bnf: 12013079n
+  gnd: "1018221905"
+  idref: "028257944"
+  lc: n81015754
+  nlk: KAC202251825
+  viaf: "59093595"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q4799309
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q4799309

@@ -8,6 +8,7 @@ names:
     role: alternative
     text: 平原王
 category: calendar
+parent: korean-calendar
 definition: "The reign years of King Pyeongwon of Goguryeo (平原王, 평원왕), by which Korean histories date 559–590: 559 is Pyeongwon 1, 590 Pyeongwon 32."
 description_md: |-
   **Pyeongwon** (平原王, 평원왕): the years of the reign of King Pyeongwon of Goguryeo. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 568 is Pyeongwon 10 (평원왕 10년). The year of the accession, 559, counts as the first year.

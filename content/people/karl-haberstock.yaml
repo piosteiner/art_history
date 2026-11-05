@@ -2,4 +2,53 @@ public_id: 112001
 name: Karl Haberstock
 given_name: Karl
 family_name: Haberstock
+kind: person
+birth: 1878-06-19
+death: 1956-09-06
 wikidata_id: Q1731388
+metadata:
+  sources: [Wikidata Q1731388 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q1731388
+  - type: born_in
+    to: place/augsburg
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q1731388
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q1731388
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d1/Wilhelm_Tr%C3%BCbner_Karl_Haberstock.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wilhelm_Tr%C3%BCbner_Karl_Haberstock.jpg
+    license: Public domain
+    credit: Wilhelm Trübner
+identifiers:
+  bnf: 16205040s
+  dodis: P22416
+  gnd: 11905406X
+  idref: "144242265"
+  lc: n92097619
+  viaf: "52491017"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1731388
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q1731388
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q1731388

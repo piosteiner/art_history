@@ -1,0 +1,31 @@
+public_id: 115750
+name: Alexander Ball
+given_name: Alexander
+family_name: Ball
+kind: person
+occupations: [art dealer]
+wikidata_id: Q56218741
+metadata:
+  sources: [Wikidata Q56218741 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q56218741
+  - type: founded
+    to: institution/a-r-ball
+    sources:
+      - accessed: 2026-11-04
+        property: P112
+        wikidata: Q56218992
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q56218741
+  occupations:
+    - accessed: 2026-11-04
+      property: P106
+      wikidata: Q56218741

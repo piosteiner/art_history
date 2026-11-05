@@ -5,6 +5,7 @@ names:
     role: original
     text: 万延
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (万延) for the years 1860–1861: 1860 is Man'en 1 (元年) and Man'en 2 is 1861."
 description_md: |-
   **Man'en** (万延) is a Japanese era name ([[nengo]]), proclaimed in 1860. Its years are counted in lunar years from the new year before the proclamation: 1860 is Man'en 1 (元年), 1861 its last year, Man'en 2. A Japanese source dates a year within it as "Man'en 2" (万延2年) rather than by a continuous count.

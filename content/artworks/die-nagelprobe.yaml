@@ -5,19 +5,40 @@ names:
   - lang: en
     role: translation
     text: The Fingernail Test
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1520/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Holländerin mit Glas
-  - lang: en
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1520/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
     role: former
     text: Fischersfrau
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1520/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Frau Mit Glas
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1520/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: dirck-hals
 created: 1636
 kind: oil painting
-medium: Oil on panel
+medium: Öl auf Holz
 dimensions: [21.7, 18.7]
 institution: kunsthaus-zurich
 inventory_number: R 11

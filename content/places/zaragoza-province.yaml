@@ -1,0 +1,31 @@
+public_id: 115723
+name: Zaragoza Province
+names:
+  - lang: de
+    role: translation
+    text: Provinz Saragossa
+  - lang: es
+    role: translation
+    text: provincia de Zaragoza
+kind: region
+parent: aragon
+country_code: ES
+location: [-1, 41.58333]
+wikidata_id: Q55180
+metadata:
+  sources: [Wikidata Q55180 (retrieved 2026-11-04)]
+identifiers:
+  gnd: 4119217-5
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q55180
+  parent:
+    - accessed: 2026-11-04
+      property: P131
+      wikidata: Q55180
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q55180

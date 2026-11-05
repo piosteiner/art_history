@@ -1,17 +1,29 @@
 public_id: 115610
-title_lang: en
+title_lang: de
 title: Brustbild Charlotte Berend-Corinth
 names:
   - lang: de
     role: translation
     text: Bildnis seiner Frau. Brustbild mit verschränkten Händen
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/93938/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: translation
     text: Die Frau des Künstlers, Brustbild
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/93938/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: lovis-corinth
 created: 1908
 kind: drawing
-medium: Graphite pencil on paper
+medium: Grafitstift auf Papier
 dimensions: [33.6, 29]
 institution: kunsthaus-zurich
 inventory_number: Z.1942/0002

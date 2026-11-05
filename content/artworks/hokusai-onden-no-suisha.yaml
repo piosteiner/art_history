@@ -33,6 +33,20 @@ web_url: https://www.metmuseum.org/art/collection/search/37322
 wikidata_id: Q18173411
 metadata:
   sources: [Wikidata Q18173411 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/jingumae
+    label: Onden village on the Shibuya River, today Jingūmae; the stream is covered
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/ondennosuisha.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：東京都渋谷区神宮前周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade D, placed at 35.65291, 139.70873 — “Onden is most likely in the western area in Tokyo and, with two streams to choose from, a location next to a modern-day power plant was chosen”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP141021.jpg
     source_url: https://www.metmuseum.org/art/collection/search/37322

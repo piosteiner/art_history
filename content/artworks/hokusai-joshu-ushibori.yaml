@@ -34,6 +34,20 @@ web_url: https://www.metmuseum.org/art/collection/search/56785
 wikidata_id: Q18173405
 metadata:
   sources: [Wikidata Q18173405 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/ushibori
+    label: Ushibori at the lower end of Lake Kasumigaura — the easternmost view, about 174 km from the summit
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/joushuuushibori.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：茨城県潮来市牛堀周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade B+, placed at 35.96592, 140.50257 — “The town of Ushibori was located in the Hitachi Province, and the water body is most likely Lake Kasimugi. Although Mt Fuji is overly large for the viewing dist”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP141044.jpg
     source_url: https://www.metmuseum.org/art/collection/search/56785

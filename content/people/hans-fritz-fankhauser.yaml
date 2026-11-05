@@ -2,4 +2,29 @@ public_id: 112250
 name: Hans Fritz Fankhauser
 given_name: Hans Fritz
 family_name: Fankhauser
+kind: person
+birth: 1895
+death: 1966
 wikidata_id: Q108687368
+metadata:
+  sources: [Wikidata Q108687368 (retrieved 2026-11-04)]
+relationships:
+  - type: lived_in
+    to: place/basel
+    sources:
+      - accessed: 2026-11-04
+        property: P551
+        wikidata: Q108687368
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q108687368
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q108687368
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q108687368

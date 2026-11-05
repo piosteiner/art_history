@@ -2,4 +2,38 @@ public_id: 115264
 name: Eugène Rudier
 given_name: Eugène
 family_name: Rudier
+kind: person
+birth: 1879-01-11
+death: 1952-06-18
 wikidata_id: Q113517460
+metadata:
+  sources: [Wikidata Q113517460 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q113517460
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Eug%C3%A8ne_Rudier_par_Bourdelle_1902.JPG/1280px-Eug%C3%A8ne_Rudier_par_Bourdelle_1902.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Rudier_par_Bourdelle_1902.JPG
+    license: CC BY-SA 3.0
+    credit: Langladure œuvre de Bourdelle en 1902
+identifiers:
+  bnf: 15841650h
+  gnd: "1049351126"
+  viaf: "5263039"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q113517460
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q113517460
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q113517460

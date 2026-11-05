@@ -1,15 +1,21 @@
 public_id: 100418
+title_lang: de
 title: Kopie nach van Goghs Selbstbildnis für Gauguin
 names:
   - lang: en
     role: translation
     text: Copy After van Gogh's Self-Portrait for Gauguin
     status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: judith-gerard
 attribution_label: copy after Vincent van Gogh
 created: 1897/1898
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 materials: [oil paint, canvas]
 dimensions: [61, 50]
 institution: kunsthaus-zurich

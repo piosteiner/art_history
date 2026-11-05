@@ -1,17 +1,29 @@
 public_id: 115416
-title_lang: en
+title_lang: de
 title: Unterweisung
 names:
   - lang: en
     role: translation
     text: Instruction
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3711/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Enseignement
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3711/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: oskar-schlemmer
 created: 1932
 kind: oil painting
-medium: Oil on canvas on cardboard
+medium: Öl auf Leinwand über Karton
 dimensions: [67.5, 66.5]
 institution: kunsthaus-zurich
 inventory_number: 1964/0029

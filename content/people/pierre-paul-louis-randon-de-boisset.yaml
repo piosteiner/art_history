@@ -2,4 +2,48 @@ public_id: 112186
 name: Pierre Paul Louis Randon de Boisset
 given_name: Pierre Paul Louis Randon
 family_name: de Boisset
+kind: person
+birth: 1708
+death: 1776-09-28
 wikidata_id: Q17352287
+metadata:
+  sources: [Wikidata Q17352287 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q17352287
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q17352287
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c5/Jean-Baptiste_Greuze_002.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Baptiste_Greuze_002.jpg
+    license: Public domain
+    credit: Jean-Baptiste Greuze
+identifiers:
+  bnf: "130049648"
+  gnd: "122589904"
+  idref: "128805544"
+  lc: no96006672
+  rkd: "433142"
+  ulan: "500324606"
+  viaf: "100209175"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q17352287
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q17352287
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q17352287

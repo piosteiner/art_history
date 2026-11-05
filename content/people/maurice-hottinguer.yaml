@@ -2,4 +2,32 @@ public_id: 115368
 name: Maurice Hottinguer
 given_name: Maurice
 family_name: Hottinguer
+kind: person
+birth: 1872-08-30
+death: 1969-01-15
 wikidata_id: Q116191644
+metadata:
+  sources: [Wikidata Q116191644 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q116191644
+identifiers:
+  gnd: "1105782638"
+  viaf: "238146822457307382847"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q116191644
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q116191644
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q116191644

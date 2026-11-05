@@ -1,17 +1,28 @@
 public_id: 115023
-title_lang: en
 title: Baigneuse
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Badende
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/16857/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Bather
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/16857/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: aristide-maillol
 created: after 1925
 kind: drawing
-medium: Red chalk on paper
+medium: Rötel auf Papier
 dimensions: [30.5, 17.7]
 institution: kunsthaus-zurich
 inventory_number: Z.1968/0005

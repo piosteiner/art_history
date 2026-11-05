@@ -5,6 +5,7 @@ names:
     role: original
     text: 天暦
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (天暦) for the years 947–956: 947 is Tenryaku 1 (元年) and Tenryaku 10 is 956."
 description_md: |-
   **Tenryaku** (天暦) is a Japanese era name ([[nengo]]), proclaimed in 947. Its years are counted in lunar years from the new year before the proclamation: 947 is Tenryaku 1 (元年), 956 its last year, Tenryaku 10. A Japanese source dates a year within it as "Tenryaku 2" (天暦2年) rather than by a continuous count.

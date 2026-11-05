@@ -5,6 +5,7 @@ names:
     role: original
     text: 天平感宝
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (天平感宝) for the year 749: 749 is Tenpyō-kanpō 1 (元年), its only year."
 description_md: |-
   **Tenpyō-kanpō** (天平感宝) is a Japanese era name ([[nengo]]), proclaimed in 749. Its years are counted in lunar years from the new year before the proclamation: 749 is Tenpyō-kanpō 1 (元年), its only year.

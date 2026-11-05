@@ -1,14 +1,20 @@
 public_id: 115138
-title_lang: en
+title_lang: de
 title: Interieur mit Mond und Taube
 names:
   - lang: en
     role: translation
     text: Interior with Moon and Dove
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2425/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: hans-reichel
 created: 1931
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [18, 23.5]
 institution: kunsthaus-zurich
 inventory_number: 1967/0048

@@ -37,6 +37,21 @@ web_url: https://www.artic.edu/artworks/24601
 wikidata_id: Q18173396
 metadata:
   sources: [Wikidata Q18173396 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/ninomiya
+    label: Umezawa, a rest stop between Ōiso and Odawara, today in Ninomiya; the spot itself is not identified
+    certainty: probable
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/soushuuumezawanohidari.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：神奈川県中郡二宮町梅沢周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade D-, placed at 35.34622, 139.12986 — “There was absolutely no help for this location, other than the province name, so it is solely a partial fit to the general terrain”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://www.artic.edu/iiif/2/59031f75-1a96-8f05-cbbb-2074ac9aa099/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/24601

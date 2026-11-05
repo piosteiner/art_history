@@ -5,6 +5,7 @@ names:
     role: original
     text: 徳治
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (徳治) for the year 1307: 1307 is Tokuji 1 (元年), its only year."
 description_md: |-
   **Tokuji** (徳治) is a Japanese era name ([[nengo]]), proclaimed in 1307. Its years are counted in lunar years from the new year before the proclamation: 1307 is Tokuji 1 (元年), its only year.

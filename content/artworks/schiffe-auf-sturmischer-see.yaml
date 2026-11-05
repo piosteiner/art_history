@@ -5,14 +5,25 @@ names:
   - lang: en
     role: translation
     text: Two Dutch Ships at Sea in a Gale
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3454/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
     role: former
     text: Leicht bewegtes Meer mit einigen Schiffen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3454/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: willem-van-de-velde-ii
 created: c. 1700
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [57.5, 76.5]
 institution: kunsthaus-zurich
 inventory_number: R 38

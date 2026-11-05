@@ -1,10 +1,15 @@
 public_id: 115480
-title_lang: en
 title: Bacchante
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Bacchantin
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/506/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: charles-despiau
 created: 1909
 created_label: 1909; cast 1929

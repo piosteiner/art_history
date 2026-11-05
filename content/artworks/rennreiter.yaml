@@ -1,14 +1,19 @@
 public_id: 115293
-title_lang: en
 title: Rennreiter
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Jockey
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3111/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: henry-wabel
 created: 1945
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [100, 81]
 institution: kunsthaus-zurich
 inventory_number: 1962/0014

@@ -1,0 +1,44 @@
+public_id: 115663
+name: Tōtōmi Province
+names:
+  - Totomi Province
+  - lang: nl
+    role: translation
+    text: Totomi
+  - lang: fr
+    role: translation
+    text: province de Tōtōmi
+  - lang: de
+    role: translation
+    text: Provinz Tōtōmi
+  - lang: es
+    role: translation
+    text: Provincia de Totomi
+  - lang: ja
+    role: translation
+    text: 遠江国
+  - lang: zh
+    role: translation
+    text: 遠江國
+  - lang: ko
+    role: translation
+    text: 도토미국
+  - lang: ru
+    role: translation
+    text: Тотоми
+kind: region
+parent: shizuoka-prefecture
+country_code: JP
+location: [137.94778, 34.95972]
+wikidata_id: Q1048864
+metadata:
+  sources: [Wikidata Q1048864 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1048864
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q1048864

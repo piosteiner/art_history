@@ -5,10 +5,16 @@ names:
   - lang: de
     role: translation
     text: Head Emil G. Bührle
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: otto-banninger
 created: 1956
 kind: sculpture
-medium: Plaster
+medium: Gips
 dimensions: [32.5, 18.5, 24]
 institution: kunsthaus-zurich
 inventory_number: 1958/0015

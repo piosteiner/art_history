@@ -2,4 +2,42 @@ public_id: 112151
 name: John Charles Robinson
 given_name: John Charles
 family_name: Robinson
+kind: person
+birth: 1824-12-16
+death: 1913-04-10
 wikidata_id: Q18753463
+metadata:
+  sources: [Wikidata Q18753463 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q18753463
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Sir_John_Robinson_by_John_James_Napier.jpg/1280px-Sir_John_Robinson_by_John_James_Napier.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sir_John_Robinson_by_John_James_Napier.jpg
+    license: Public domain
+    credit: John James Napier
+identifiers:
+  bnf: "128973993"
+  gnd: "116577797"
+  idref: "254942369"
+  lc: no99040607
+  rkd: "67421"
+  ulan: "500098581"
+  viaf: "96409402"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q18753463
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q18753463
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q18753463

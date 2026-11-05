@@ -1,0 +1,27 @@
+public_id: 115665
+name: Nihonbashi-Muromachi
+names:
+  - Muromachi
+  - lang: ja
+    role: translation
+    text: 日本橋室町
+kind: district
+parent: tokyo
+country_code: JP
+location: [139.77339, 35.68706]
+wikidata_id: Q11508327
+metadata:
+  sources: [Wikidata Q11508327 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q11508327
+  parent:
+    - accessed: 2026-11-04
+      property: P131
+      wikidata: Q11508327
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q11508327

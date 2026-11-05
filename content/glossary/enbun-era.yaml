@@ -5,6 +5,7 @@ names:
     role: original
     text: 延文
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (延文) for the years 1356–1361: 1356 is Enbun 1 (元年) and Enbun 6 is 1361."
 description_md: |-
   **Enbun** (延文) is a Japanese era name ([[nengo]]), proclaimed in 1356. Its years are counted in lunar years from the new year before the proclamation: 1356 is Enbun 1 (元年), 1361 its last year, Enbun 6. A Japanese source dates a year within it as "Enbun 2" (延文2年) rather than by a continuous count.

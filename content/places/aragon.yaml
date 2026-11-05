@@ -1,0 +1,28 @@
+public_id: 115726
+name: Aragon
+names:
+  - lang: de
+    role: translation
+    text: Aragonien
+kind: region
+parent: spain
+country_code: ES
+location: [-1, 41]
+wikidata_id: Q4040
+metadata:
+  sources: [Wikidata Q4040 (retrieved 2026-11-04)]
+identifiers:
+  gnd: 4068794-6
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q4040
+  parent:
+    - accessed: 2026-11-04
+      property: P131
+      wikidata: Q4040
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q4040

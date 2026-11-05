@@ -2,4 +2,20 @@ public_id: 112038
 name: Maxim Moissejewitsch Vinaver
 given_name: Maxim Moissejewitsch
 family_name: Vinaver
+kind: person
+occupations: [lawyer, politician, patron]
+birth: 1863-11-30
+birth_label: 30 November 1863 (18 November, Old Style)
+death: 1926-10-11
 wikidata_id: Q4111461
+sources:
+  birth:
+    - url: https://en.wikipedia.org/wiki/Maxim_Vinaver
+      note: "Wikidata's own date, 31 November 1863, is impossible: Wikipedia gives 30 November [O.S. 18 November] 1863"
+      source: wikipedia-en-maxim-vinaver
+      accessed: 2026-11-04
+  death:
+    - url: https://en.wikipedia.org/wiki/Maxim_Vinaver
+      note: "Wikidata's own date, 31 November 1863, is impossible: Wikipedia gives 30 November [O.S. 18 November] 1863"
+      source: wikipedia-en-maxim-vinaver
+      accessed: 2026-11-04

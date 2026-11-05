@@ -5,6 +5,7 @@ names:
     role: original
     text: 天和
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (天和) for the years 1681–1684: 1681 is Tenna 1 (元年) and Tenna 4 is 1684."
 description_md: |-
   **Tenna** (天和) is a Japanese era name ([[nengo]]), proclaimed in 1681. Its years are counted in lunar years from the new year before the proclamation: 1681 is Tenna 1 (元年), 1684 its last year, Tenna 4. A Japanese source dates a year within it as "Tenna 2" (天和2年) rather than by a continuous count.

@@ -5,13 +5,25 @@ names:
   - lang: de
     role: translation
     text: Die Fabrik
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752964/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Factory
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752964/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: maurice-de-vlaminck
 created: 1904
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [65, 81]
 institution: kunsthaus-zurich
 inventory_number: BU 0112

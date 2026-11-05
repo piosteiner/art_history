@@ -5,6 +5,7 @@ names:
     role: original
     text: 朱鳥
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (朱鳥) for the year 686: 686 is Shuchō 1 (元年), its only year."
 description_md: |-
   **Shuchō** (朱鳥) is a Japanese era name ([[nengo]]), proclaimed in 686. Its years are counted in lunar years from the new year before the proclamation: 686 is Shuchō 1 (元年), its only year.

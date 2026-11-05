@@ -5,14 +5,26 @@ names:
   - lang: de
     role: translation
     text: Mädchenkopf II
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2679/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Girl's Head
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2679/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: paula-modersohn-becker
 created: c. 1905
 created_span: uncertain
 kind: oil painting
-medium: Oil on cardboard
+medium: Öl auf Karton
 dimensions: [21.5, 16.5]
 institution: kunsthaus-zurich
 inventory_number: 1949/0017

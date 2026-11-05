@@ -2,4 +2,54 @@ public_id: 112168
 name: Johann Peter Weyer
 given_name: Johann Peter
 family_name: Weyer
+kind: person
+birth: 1794-05-19
+death: 1864-08-25
 wikidata_id: Q1695814
+metadata:
+  sources: [Wikidata Q1695814 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q1695814
+  - type: born_in
+    to: place/cologne
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q1695814
+  - type: died_in
+    to: place/cologne
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q1695814
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/17/Johann_Peter_Weyer_Gem%C3%A4lde_1859.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Peter_Weyer_Gem%C3%A4lde_1859.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 17796247v
+  gnd: "119166100"
+  idref: "253190150"
+  lc: nr93048494
+  rkd: "361746"
+  ulan: "500056362"
+  viaf: "40182355"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1695814
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q1695814
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q1695814

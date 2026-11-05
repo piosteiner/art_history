@@ -1,20 +1,38 @@
 public_id: 112000
-title_lang: en
+title_lang: it
 title: Andata del Bucintoro verso S. Nicolò di Lido
 names:
   - lang: it
     role: translation
     text: Il Bacino di San Marco
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/588958/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: translation
     text: Die Bucht von San Marco
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/588958/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Bacino di San Marco
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/588958/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: francesco-guardi
 created: 1780/1785
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [62, 93.5]
 institution: kunsthaus-zurich
 inventory_number: BU 0142

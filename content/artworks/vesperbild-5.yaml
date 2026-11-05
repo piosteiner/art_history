@@ -1,14 +1,20 @@
 public_id: 115267
-title_lang: en
+title_lang: de
 title: Vesperbild
 names:
   - lang: en
     role: translation
     text: Pietà
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3012/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 attribution_label: Anonymous, Central German
 created: before 1320–1340
 kind: sculpture
-medium: Hardwood with parts of original and later polychromy
+medium: Laubholz mit Fragmenten ursprünglicher und späterer Fassungen
 dimensions: [116, 47, 33]
 institution: kunsthaus-zurich
 inventory_number: 1955/0006

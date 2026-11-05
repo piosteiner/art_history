@@ -2,6 +2,10 @@ public_id: 108038
 name: Shigeru Aoki
 given_name: Shigeru
 family_name: Aoki
+names:
+  - lang: ja
+    role: original
+    text: "{青木|あおき}{繁|しげる}"
 birth: 1882-07-13
 death: 1911-03-25
 wikidata_id: Q347298
@@ -47,6 +51,10 @@ relationships:
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/99/Aoki_Shigeru.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Aoki_Shigeru.jpg
+    license: Public domain
+    credit: Unknown author
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f2/Aoki_Shigeru_02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Aoki_Shigeru_02.jpg
     license: Public domain
     credit: Unknown author
 identifiers:

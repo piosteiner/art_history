@@ -2,4 +2,50 @@ public_id: 112358
 name: Tomas Harris
 given_name: Tomas
 family_name: Harris
+kind: person
+birth: 1908-04-10
+death: 1964-01-27
 wikidata_id: Q7820472
+metadata:
+  sources: [Wikidata Q7820472 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q7820472
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    period: 1927-04-12
+    period_label: until 12 April 1927
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q7820472
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e2/MI5_Case_Officer_Tom%C3%A1s_%28Tommy%29_Harris_1942.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:MI5_Case_Officer_Tom%C3%A1s_(Tommy)_Harris_1942.jpg
+    license: OGL v1.0
+    credit: HM Government
+identifiers:
+  bnf: 12420866p
+  gnd: "1056312688"
+  idref: "074339117"
+  lc: n82111897
+  rkd: "202977"
+  ulan: "500032030"
+  viaf: "56699105"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q7820472
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q7820472
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q7820472

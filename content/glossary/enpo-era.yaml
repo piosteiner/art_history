@@ -5,6 +5,7 @@ names:
     role: original
     text: 延宝
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (延宝) for the years 1673–1681: 1673 is Enpō 1 (元年) and Enpō 9 is 1681."
 description_md: |-
   **Enpō** (延宝) is a Japanese era name ([[nengo]]), proclaimed in 1673. Its years are counted in lunar years from the new year before the proclamation: 1673 is Enpō 1 (元年), 1681 its last year, Enpō 9. A Japanese source dates a year within it as "Enpō 2" (延宝2年) rather than by a continuous count.

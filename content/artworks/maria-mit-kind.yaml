@@ -1,17 +1,23 @@
 public_id: 115244
-title_lang: en
+title_lang: de
 title: Maria mit Kind
 names:
   - lang: en
     role: translation
     text: Mary and Child
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2842/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: tilman-riemenschneider
 attribution_label: circle of Tilman Riemenschneider
 created: 1510/1525
 created_label: c. 1515/1520
 created_span: uncertain
 kind: sculpture
-medium: Limewood with traces of polychromy
+medium: Lindenholz mit alter Fassung
 dimensions: [65, 41, 25]
 institution: kunsthaus-zurich
 inventory_number: 1944/0022

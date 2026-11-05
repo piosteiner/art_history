@@ -2,16 +2,28 @@ public_id: 112185
 title_lang: fr
 title: Deux Paysannes près d'une fontaine rustique
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Beim Brunnen
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Pausing by the Fountain
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699962/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: francois-boucher
 created: 1765
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [35.5, 44]
 institution: kunsthaus-zurich
 inventory_number: BU 0122

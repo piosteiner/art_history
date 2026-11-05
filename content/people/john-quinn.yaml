@@ -2,4 +2,46 @@ public_id: 111804
 name: John Quinn
 given_name: John
 family_name: Quinn
+kind: person
+birth: 1870-04-14
+death: 1924-07-28
 wikidata_id: Q1701486
+metadata:
+  sources: [Wikidata Q1701486 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q1701486
+  - type: lived_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-04
+        property: P551
+        wikidata: Q1701486
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/John_Quinn_%28collector%29_c.1913.jpg/1280px-John_Quinn_%28collector%29_c.1913.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:John_Quinn_(collector)_c.1913.jpg
+    license: Public domain
+identifiers:
+  bnf: "123722907"
+  gnd: "119034360"
+  idref: "032754337"
+  lc: n50050562
+  ulan: "500324521"
+  viaf: "24681312"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1701486
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q1701486
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q1701486

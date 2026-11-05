@@ -5,6 +5,7 @@ names:
     role: original
     text: 文治
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (文治) for the years 1185–1189: 1185 is Bunji 1 (元年) and Bunji 5 is 1189."
 description_md: |-
   **Bunji** (文治) is a Japanese era name ([[nengo]]), proclaimed in 1185. Its years are counted in lunar years from the new year before the proclamation: 1185 is Bunji 1 (元年), 1189 its last year, Bunji 5. A Japanese source dates a year within it as "Bunji 2" (文治2年) rather than by a continuous count.

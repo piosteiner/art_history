@@ -2,4 +2,57 @@ public_id: 114896
 name: Gisèle Freund
 given_name: Gisèle
 family_name: Freund
+names:
+  - kind: pseudonym
+    role: alternative
+    text: Girix
+    sources:
+      - accessed: 2026-11-04
+        property: P742
+        wikidata: Q64354
+kind: person
+birth: 1908-12-19
+death: 2000-03-31
 wikidata_id: Q64354
+metadata:
+  sources: [Wikidata Q64354 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q64354
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q64354
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/49/Gis%C3%A8le-Freund.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gis%C3%A8le-Freund.jpg
+    license: CC BY-SA 3.0 de
+    credit: Hans Puttnies
+identifiers:
+  bnf: 11903586h
+  gnd: 11853534X
+  idref: "026874970"
+  lc: n79109184
+  nlk: KAC199633894
+  rkd: "206418"
+  ulan: "500094124"
+  viaf: "56609984"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q64354
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q64354
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q64354

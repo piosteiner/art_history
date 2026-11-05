@@ -31,6 +31,17 @@ web_url: https://www.artic.edu/artworks/86735
 wikidata_id: Q18173433
 metadata:
   sources: [Wikidata Q18173433 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/minobu
+    label: "the Fuji River below Mount Minobu (not the small Minobu River): Fuji from behind"
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/minobugawaurafuji.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：山梨県南巨摩郡身延町、富士川・身延山周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
 images:
   - url: https://www.artic.edu/iiif/2/af1b286d-565e-aaaa-1cc7-d117a217a91d/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/86735

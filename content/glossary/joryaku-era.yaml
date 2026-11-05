@@ -5,6 +5,7 @@ names:
     role: original
     text: 承暦
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (承暦) for the years 1077–1080: 1077 is Jōryaku 1 (元年) and Jōryaku 4 is 1080."
 description_md: |-
   **Jōryaku** (承暦) is a Japanese era name ([[nengo]]), proclaimed in 1077. Its years are counted in lunar years from the new year before the proclamation: 1077 is Jōryaku 1 (元年), 1080 its last year, Jōryaku 4. A Japanese source dates a year within it as "Jōryaku 2" (承暦2年) rather than by a continuous count.

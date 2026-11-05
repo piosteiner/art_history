@@ -1,16 +1,34 @@
 public_id: 115263
-title_lang: en
+title_lang: fr
 title: Jean d’Aire (étude de nu pour les Bourgeois de Calais)
 names:
   - lang: de
     role: translation
     text: Mann mit geballten Fäusten
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2990/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: translation
     text: Jean d’Aire (Grosse Aktstudie zu den Bürgern von Calais)
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2990/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Jean d’Aire (Nude Study for the Burghers of Calais, Large Version)
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2990/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: auguste-rodin
 created: 1887
 kind: sculpture

@@ -5,13 +5,25 @@ names:
   - lang: de
     role: translation
     text: Der Kamin
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/513/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Chimney
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/513/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: georges-braque
 created: 1928
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [130, 74]
 institution: kunsthaus-zurich
 inventory_number: 1956/0010
@@ -50,12 +62,13 @@ provenance:
         note: "Footnote: E-Mail-Korrespondenz mit dem Paul Cassirer & Walter Feilchenfeldt Archiv, Zürich, 14.08.2024."
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-03
-  - owner: person/walter-feilchenfeldt
+  - owner: institution/walter-feilchenfeldt-kunsthandel
     acquired: 1954
     ended: 1956-04-13
     method: purchase
     direct: true
     place: zurich
+    notes_md: "The Kunsthaus names “Walter Feilchenfeldt (Kunsthandel), Zürich” — the firm, not a person: Walter Feilchenfeldt sen. had died on 9 December 1953."
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/513/
         note: "Footnote: Protokoll der Hauptversammlung der VZK, 13.04.1956, Archiv ZKG/KHZ, 10.50.21; Jahresbericht 1956, hrsg. von Zürcher Kunstgesellschaft, 1956, S. 5-6 und 9; ZKG/KHZ, Inventarbuch Slg; ZKG/KHZ, Werkdossier; E-Mail-Korrespondenz mit dem Paul Cassirer & Walter Feilchenfeldt Archiv, wie oben Fussnote 6; Mangin 1962, wie oben Fussnote 4."

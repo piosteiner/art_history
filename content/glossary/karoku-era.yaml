@@ -5,6 +5,7 @@ names:
     role: original
     text: 嘉禄
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (嘉禄) for the years 1225–1227: 1225 is Karoku 1 (元年) and Karoku 3 is 1227."
 description_md: |-
   **Karoku** (嘉禄) is a Japanese era name ([[nengo]]), proclaimed in 1225. Its years are counted in lunar years from the new year before the proclamation: 1225 is Karoku 1 (元年), 1227 its last year, Karoku 3. A Japanese source dates a year within it as "Karoku 2" (嘉禄2年) rather than by a continuous count.

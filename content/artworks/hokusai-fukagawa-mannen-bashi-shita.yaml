@@ -34,6 +34,20 @@ web_url: https://www.metmuseum.org/art/collection/search/55289
 wikidata_id: Q18173386
 metadata:
   sources: [Wikidata Q18173386 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/mannen-bridge
+    label: under the Mannen Bridge over the Onagi canal at its mouth into the Sumida, Fukagawa
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/fukagawamannenbashishita.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：東京都江東区の萬年橋周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade A, placed at 35.68347, 139.79462 — “The Mannen Bridge in the Fukagawa district of Edo still spans the small Onagigawa River, near where it flows into the Sumida River. By backing away from the bri”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP141017.jpg
     source_url: https://www.metmuseum.org/art/collection/search/55289

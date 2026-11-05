@@ -1,17 +1,29 @@
 public_id: 111850
-title_lang: en
+title_lang: fr
 title: Usines près du Mont de Cengle
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Fabriken beim Mont de Cengle
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Factories near the Mont de Cengle
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48894/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: paul-cezanne
 created: 1867/1869
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [41, 55]
 institution: kunsthaus-zurich
 inventory_number: BU 0175

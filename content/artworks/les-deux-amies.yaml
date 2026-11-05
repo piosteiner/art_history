@@ -2,16 +2,28 @@ public_id: 112132
 title_lang: fr
 title: Les Deux Amies
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Zwei Freundinnen
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604994/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Two Friends
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604994/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: henri-de-toulouse-lautrec
 created: 1895
 kind: oil painting
-medium: Gouache on cardboard
+medium: Gouache auf Karton
 dimensions: [64.5, 84]
 institution: kunsthaus-zurich
 inventory_number: BU 0106

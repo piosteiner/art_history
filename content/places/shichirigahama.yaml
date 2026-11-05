@@ -1,0 +1,32 @@
+public_id: 115656
+name: Shichirigahama
+names:
+  - lang: ja
+    role: translation
+    text: 七里ヶ浜
+  - lang: zh
+    role: translation
+    text: 七里濱
+  - lang: ko
+    role: translation
+    text: 시치리가하마
+kind: natural
+parent: kamakura
+country_code: JP
+location: [139.50946, 35.30636]
+wikidata_id: Q7496115
+metadata:
+  sources: [Wikidata Q7496115 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q7496115
+  parent:
+    - accessed: 2026-11-04
+      property: P131
+      wikidata: Q7496115
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q7496115

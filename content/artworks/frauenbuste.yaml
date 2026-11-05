@@ -5,12 +5,29 @@ names:
   - lang: de
     role: translation
     text: Büste Frau L.[ehmbruck]
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2032/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Bust of a Woman
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2032/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: former
     text: Frauentorso
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2032/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: wilhelm-lehmbruck
 created: 1910
 created_label: 1910; probably posthumous cast

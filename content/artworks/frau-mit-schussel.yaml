@@ -5,12 +5,18 @@ names:
   - lang: en
     role: translation
     text: Woman with Bowl
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3349/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: johann-wilhelm-von-tscharner
 created: 1920/1935
 created_label: c. 1925/1930
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [76, 57]
 institution: kunsthaus-zurich
 inventory_number: 1952/0004

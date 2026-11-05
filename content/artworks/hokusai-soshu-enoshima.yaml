@@ -27,6 +27,20 @@ web_url: https://www.artic.edu/artworks/24743
 wikidata_id: Q18173413
 metadata:
   sources: [Wikidata Q18173413 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/enoshima
+    label: Enoshima from the sandbar at Katase
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/soushuuenoshima.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：神奈川県藤沢市片瀬から江の島周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade A, placed at 35.30286, 139.48194 — “Enoshima is an island at the mouth of the Katase River. The sandy landbridge from the mainland lines up with the modern day causeway, providing a very clear vie”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://www.artic.edu/iiif/2/d5e056cf-0f2e-1763-3109-dbd2afc02246/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/24743

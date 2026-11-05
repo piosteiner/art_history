@@ -2,4 +2,38 @@ public_id: 115186
 name: Rudolf Probst
 given_name: Rudolf
 family_name: Probst
+kind: person
+birth: 1890-03-12
+death: 1968-11-19
 wikidata_id: Q19299454
+metadata:
+  sources: [Wikidata Q19299454 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q19299454
+  - type: died_in
+    to: place/heidelberg
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q19299454
+identifiers:
+  gnd: "117760056"
+  viaf: "25388182"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q19299454
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q19299454
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q19299454

@@ -5,6 +5,7 @@ names:
     role: original
     text: 長暦
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (長暦) for the years 1037–1039: 1037 is Chōryaku 1 (元年) and Chōryaku 3 is 1039."
 description_md: |-
   **Chōryaku** (長暦) is a Japanese era name ([[nengo]]), proclaimed in 1037. Its years are counted in lunar years from the new year before the proclamation: 1037 is Chōryaku 1 (元年), 1039 its last year, Chōryaku 3. A Japanese source dates a year within it as "Chōryaku 2" (長暦2年) rather than by a continuous count.

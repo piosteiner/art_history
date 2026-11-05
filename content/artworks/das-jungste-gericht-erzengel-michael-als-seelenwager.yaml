@@ -5,14 +5,26 @@ names:
   - lang: en
     role: translation
     text: The Last Judgment (Archangel Michael Judging Souls)
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2310/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: fr
     role: translation
     text: Le Jugement dernier (L'Archange Saint Michel pesant les âmes)
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2310/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: younger-zurich-master-of-the-carnation
 created: c. 1490
 created_span: uncertain
 kind: painting
-medium: Tempera on canvas on pinewood
+medium: Tempera auf Leinwand auf Nadelholz
 dimensions: [165.5, 116]
 institution: kunsthaus-zurich
 inventory_number: "1917"

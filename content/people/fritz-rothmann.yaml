@@ -2,4 +2,25 @@ public_id: 112385
 name: Fritz Rothmann
 given_name: Fritz
 family_name: Rothmann
+kind: person
+birth: 1893
+death: 1983
 wikidata_id: Q112062702
+metadata:
+  sources: [Wikidata Q112062702 (retrieved 2026-11-04)]
+identifiers:
+  gnd: "125651872"
+  viaf: "142151246510344130784"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q112062702
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q112062702
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q112062702

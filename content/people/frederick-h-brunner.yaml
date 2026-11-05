@@ -2,4 +2,25 @@ public_id: 114947
 name: Frederick H. Brunner
 given_name: Frederick H.
 family_name: Brunner
+kind: person
+birth: 1895-12-11
+death: 1974-07-19
 wikidata_id: Q94911235
+metadata:
+  sources: [Wikidata Q94911235 (retrieved 2026-11-04)]
+identifiers:
+  gnd: "130124044"
+  viaf: "60180792"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q94911235
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q94911235
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q94911235

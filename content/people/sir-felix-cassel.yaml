@@ -1,3 +1,42 @@
 public_id: 115101
 name: Sir Felix Cassel
+kind: person
+birth: 1869-09-16
+death: 1953-02-22
 wikidata_id: Q5442158
+metadata:
+  sources: [Wikidata Q5442158 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q5442158
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    period: 1927-04-12
+    period_label: until 12 April 1927
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q5442158
+  - type: born_in
+    to: place/cologne
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q5442158
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q5442158
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q5442158
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q5442158

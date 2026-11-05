@@ -32,6 +32,21 @@ web_url: https://www.metmuseum.org/art/collection/search/57000
 wikidata_id: Q18173416
 metadata:
   sources: [Wikidata Q18173416 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/tagonoura
+    label: Tago Bay seen from the sea off Ejiri and Miho, as the title says
+    certainty: probable
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/toukaidouejiritagonouraryakuzu.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：静岡県静岡市清水区から田子の浦方面を題材とした景観
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade B-, placed at 35.09795, 138.61064 — “Could not find a Tago Bay, but one source said it was near the mouth of the Fuji River. Coastline alignment and the general flat, sweeping topography also helpe”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP141037.jpg
     source_url: https://www.metmuseum.org/art/collection/search/57000

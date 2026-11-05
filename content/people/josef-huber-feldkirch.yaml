@@ -2,4 +2,34 @@ public_id: 115289
 name: Josef Huber-Feldkirch
 given_name: Josef
 family_name: Huber-Feldkirch
+kind: person
+birth: 1858-03-16
+death: 1932-07-26
 wikidata_id: Q873888
+metadata:
+  sources: [Wikidata Q873888 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/austria
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q873888
+identifiers:
+  dome: "653"
+  gnd: "124459196"
+  rkd: "221270"
+  viaf: "40312505"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q873888
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q873888
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q873888

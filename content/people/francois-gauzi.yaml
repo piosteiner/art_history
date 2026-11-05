@@ -2,4 +2,47 @@ public_id: 112131
 name: François Gauzi
 given_name: François
 family_name: Gauzi
+kind: person
+birth: 1862-12-26
+death: 1933-10-23
 wikidata_id: Q17452502
+metadata:
+  sources: [Wikidata Q17452502 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q17452502
+  - type: died_in
+    to: place/toulouse
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q17452502
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Toulouse-Lautrec_-_Fran%C3%A7ois_Gauzi%2C_1886.jpg/1280px-Toulouse-Lautrec_-_Fran%C3%A7ois_Gauzi%2C_1886.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Toulouse-Lautrec_-_Fran%C3%A7ois_Gauzi,_1886.jpg
+    license: CC BY-SA 4.0
+    credit: Henri de Toulouse-Lautrec
+identifiers:
+  bnf: 14974571k
+  dome: "7372"
+  gnd: "1078125368"
+  idref: "030506018"
+  ulan: "500141044"
+  viaf: "4976066"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q17452502
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q17452502
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q17452502

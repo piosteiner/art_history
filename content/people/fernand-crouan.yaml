@@ -2,4 +2,40 @@ public_id: 115520
 name: Fernand Crouan
 given_name: Fernand
 family_name: Crouan
+kind: person
+birth: 1845-04-23
+death: 1905-05-22
 wikidata_id: Q3069096
+metadata:
+  sources: [Wikidata Q3069096 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q3069096
+  - type: died_in
+    to: place/8th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q3069096
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/92/Fernandcrouanphoto.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fernandcrouanphoto.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q3069096
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q3069096
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q3069096

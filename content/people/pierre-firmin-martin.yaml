@@ -2,4 +2,32 @@ public_id: 112087
 name: Pierre-Firmin Martin
 given_name: Pierre-Firmin
 family_name: Martin
+kind: person
+birth: 1817-02-17
+death: 1891-10-01
 wikidata_id: Q2090789
+metadata:
+  sources: [Wikidata Q2090789 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q2090789
+identifiers:
+  bnf: "154367654"
+  viaf: "177511372"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q2090789
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q2090789
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q2090789

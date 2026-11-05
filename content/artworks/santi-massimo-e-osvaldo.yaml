@@ -1,20 +1,38 @@
 public_id: 115369
-title_lang: en
+title_lang: it
 title: Santi Massimo e Osvaldo
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: St. Maximus und St. Oswaldus
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Saint Maximus and Saint Oswald
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Saint Maxime et saint Oswald
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3543/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: giovanni-battista-tiepolo
 created: 1742
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [50.5, 27.8]
 institution: kunsthaus-zurich
 inventory_number: R 37

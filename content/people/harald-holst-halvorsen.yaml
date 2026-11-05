@@ -2,4 +2,22 @@ public_id: 115031
 name: Harald Holst Halvorsen
 given_name: Harald Holst
 family_name: Halvorsen
+kind: person
+birth: 1889-07-06
+death: 1960-09-14
 wikidata_id: Q58717556
+metadata:
+  sources: [Wikidata Q58717556 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q58717556
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q58717556
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q58717556

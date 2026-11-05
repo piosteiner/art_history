@@ -2,4 +2,48 @@ public_id: 112164
 name: Walter Hugelshofer
 given_name: Walter
 family_name: Hugelshofer
+kind: person
+birth: 1899-04-01
+death: 1987-10-18
 wikidata_id: Q59527119
+metadata:
+  sources: [Wikidata Q59527119 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q59527119
+  - type: born_in
+    to: place/basel
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q59527119
+  - type: died_in
+    to: place/zollikon
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q59527119
+identifiers:
+  dodis: P14429
+  gnd: 13332415X
+  hls: "043023"
+  idref: "181043041"
+  lc: nr96035884
+  viaf: "18410197"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q59527119
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q59527119
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q59527119

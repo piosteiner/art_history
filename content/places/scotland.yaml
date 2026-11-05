@@ -31,7 +31,8 @@ names:
   - lang: pt
     role: translation
     text: Escócia
-kind: settlement
+kind: region
+designation: constituent country
 parent: united-kingdom
 country_code: GB
 location: [-5, 57]

@@ -1,18 +1,30 @@
 public_id: 112207
-title_lang: en
+title_lang: fr
 title: Biches et Chevreuil près d'une rivière
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Winterlandschaft
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699969/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Winter Landscape with Deer
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699969/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: gustave-courbet
 created: c. 1866
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [73, 92]
 institution: kunsthaus-zurich
 inventory_number: BU 0023

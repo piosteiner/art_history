@@ -2,4 +2,63 @@ public_id: 112224
 name: Ernest Rouart
 given_name: Ernest
 family_name: Rouart
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Ernest Henri Rouart
+    sources:
+      - accessed: 2026-11-04
+        property: P1477
+        wikidata: Q7127637
+kind: person
+birth: 1874-08-24
+death: 1942-02-27
 wikidata_id: Q7127637
+metadata:
+  sources: [Wikidata Q7127637 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q7127637
+  - type: born_in
+    to: place/8th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q7127637
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q7127637
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6a/Ernest_Rouart_1900.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ernest_Rouart_1900.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "149805547"
+  dome: "3047"
+  gnd: "129237558"
+  lc: no2015015161
+  rkd: "68516"
+  ulan: "500089194"
+  viaf: "66741072"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q7127637
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q7127637
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q7127637

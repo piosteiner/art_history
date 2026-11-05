@@ -5,6 +5,7 @@ names:
     role: original
     text: 天喜
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (天喜) for the years 1053–1058: 1053 is Tengi 1 (元年) and Tengi 6 is 1058."
 description_md: |-
   **Tengi** (天喜) is a Japanese era name ([[nengo]]), proclaimed in 1053. Its years are counted in lunar years from the new year before the proclamation: 1053 is Tengi 1 (元年), 1058 its last year, Tengi 6. A Japanese source dates a year within it as "Tengi 2" (天喜2年) rather than by a continuous count.

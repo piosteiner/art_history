@@ -2,4 +2,32 @@ public_id: 111966
 name: Jacques Soubies
 given_name: Jacques
 family_name: Soubies
+kind: person
+birth: 1880
+death: 1940
 wikidata_id: Q113946141
+metadata:
+  sources: [Wikidata Q113946141 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q113946141
+identifiers:
+  gnd: "1020039701"
+  viaf: "231897001"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q113946141
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q113946141
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q113946141

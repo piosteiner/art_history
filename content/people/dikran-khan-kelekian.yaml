@@ -2,4 +2,46 @@ public_id: 111935
 name: Dikran Khan Kelekian
 given_name: Dikran Khan
 family_name: Kelekian
+kind: person
+birth: 1868-01-19
+death: 1951-01-30
 wikidata_id: Q5276568
+metadata:
+  sources: [Wikidata Q5276568 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q5276568
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q5276568
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/56/Dikran_Kelekian_%281902%29.png
+    source_url: https://commons.wikimedia.org/wiki/File:Dikran_Kelekian_(1902).png
+    license: Public domain
+    credit: Unknown photographer
+identifiers:
+  gnd: "122114973"
+  idref: "223883808"
+  lc: no2001069391
+  ulan: "500450070"
+  viaf: "32870175"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q5276568
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q5276568
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q5276568

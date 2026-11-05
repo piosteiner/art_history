@@ -2,4 +2,38 @@ public_id: 114944
 name: Paul von Schwabach
 given_name: Paul
 family_name: von Schwabach
+kind: person
+birth: 1867-05-06
+death: 1938-11-17
 wikidata_id: Q2063474
+metadata:
+  sources: [Wikidata Q2063474 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/german-reich
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q2063474
+  - type: born_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q2063474
+identifiers:
+  gnd: 11733295X
+  viaf: "45077592"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q2063474
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q2063474
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q2063474

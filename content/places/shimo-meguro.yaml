@@ -1,0 +1,33 @@
+public_id: 115668
+name: Shimo-Meguro
+names:
+  - Shimomeguro
+  - lang: ja
+    role: translation
+    text: 下目黒
+  - lang: zh
+    role: translation
+    text: 下目黑
+  - lang: ko
+    role: translation
+    text: 시모메구로
+kind: district
+parent: tokyo
+country_code: JP
+location: [139.70796, 35.62875]
+wikidata_id: Q3541543
+metadata:
+  sources: [Wikidata Q3541543 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q3541543
+  parent:
+    - accessed: 2026-11-04
+      property: P131
+      wikidata: Q3541543
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q3541543

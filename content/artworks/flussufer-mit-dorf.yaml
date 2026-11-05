@@ -1,16 +1,22 @@
 public_id: 112420
-title_lang: en
+title_lang: de
 title: Flussufer mit Dorf
 names:
   - lang: en
     role: translation
     text: Riverbank with a Village
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7861/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: salomon-van-ruysdael
 created: 1640/1650
 created_label: c. 1645(5?)
 created_span: uncertain
 kind: oil painting
-medium: Oil on panel
+medium: Öl auf Holz
 dimensions: [64, 93]
 institution: kunsthaus-zurich
 inventory_number: BU 0163

@@ -1,0 +1,27 @@
+public_id: 115648
+name: Ryūgan-ji Temple
+names:
+  - Ryūgan-ji
+  - lang: ja
+    role: translation
+    text: 龍巌寺
+kind: building
+parent: tokyo
+country_code: JP
+location: [139.71321, 35.67358]
+wikidata_id: Q66720424
+metadata:
+  sources: [Wikidata Q66720424 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q66720424
+  parent:
+    - accessed: 2026-11-04
+      property: P131
+      wikidata: Q66720424
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q66720424

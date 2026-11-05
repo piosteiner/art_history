@@ -1,10 +1,63 @@
 public_id: 100195
-title_lang: de
+title_lang: it
 title: Le cattive madri
+names:
+  - role: translation
+    text: Le infanticide
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1306/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
+    role: translation
+    text: Die bösen Mütter
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1306/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: en
+    role: translation
+    text: The Evil Mothers
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1306/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: fr
+    role: translation
+    text: Les Marâtres
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1306/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: it
+    role: former
+    text: Il castigo delle cattive madri
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1306/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: it
+    role: former
+    text: Le lussuriose
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1306/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: giovanni-segantini
 created: 1896/1897
 created_label: c. 1890s
 created_span: uncertain
+medium: Öl auf Karton
 materials: [oil paint]
 institution: kunsthaus-zurich
 inventory_number: 1967/0066

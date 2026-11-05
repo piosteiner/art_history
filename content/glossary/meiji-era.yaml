@@ -5,6 +5,7 @@ names:
     role: original
     text: 明治
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (明治) for the years 1868–1912: 1868 is Meiji 1 (元年) and Meiji 45 is 1912."
 description_md: |-
   **Meiji** (明治) is a Japanese era name ([[nengo]]), proclaimed in 1868. Its years are counted in lunar years from the new year before the proclamation: 1868 is Meiji 1 (元年), 1912 its last year, Meiji 45. A Japanese source dates a year within it as "Meiji 2" (明治2年) rather than by a continuous count. Since 1868 an era is that of an emperor ([[one-reign-one-era]]): Meiji is the era of [[person/emperor-meiji|Emperor Meiji]], who is called after it since his death.

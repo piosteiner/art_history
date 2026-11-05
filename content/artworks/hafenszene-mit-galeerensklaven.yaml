@@ -1,33 +1,69 @@
 public_id: 115160
-title_lang: en
+title_lang: de
 title: Hafenszene mit Galeerensklaven
 names:
   - lang: en
     role: translation
     text: Harbour Scene with Galley Slaves
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/258/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Ruine an einem Gewässer
-  - lang: en
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/258/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
     role: former
     text: Rundbau am Meer mit Orientalien
-  - lang: en
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/258/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
     role: former
     text: Rundbau am Meer, Schiffsanlegestelle
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/258/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Landschaft mit Ruinen
-  - lang: en
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/258/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
     role: former
     text: Burgruine am Wasser
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/258/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Ein italienischer Seehafen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/258/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: jan-asselijn
 created: c. 1652
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [49.5, 42.5]
 institution: kunsthaus-zurich
 inventory_number: R 1

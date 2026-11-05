@@ -5,13 +5,25 @@ names:
   - lang: de
     role: translation
     text: Der Turm
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/980/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Tower
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/980/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: giorgio-de-chirico
 created: 1913
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [115.5, 45]
 institution: kunsthaus-zurich
 inventory_number: 1954/0008

@@ -1,31 +1,62 @@
 public_id: 115330
-title_lang: en
+title_lang: de
 title: Steinbruch im Walde
 names:
   - lang: en
     role: translation
     text: Stone Quarry in a Wood
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Steinsegmente unterhalb eines verwaldeten Hügels
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Steinsegmente unterhalb eines verwaldeten Hügels
-  - lang: en
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
     role: former
     text: Grosse Landschaft
-  - lang: en
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
     role: former
     text: Steingrube mit Wald
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Steingrube unterhalb eines Waldhügels
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3340/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: jacob-van-ruisdael
 created: 1650/1665
 created_label: c. 1655/1660
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [64.5, 71.5]
 institution: kunsthaus-zurich
 inventory_number: R 30
@@ -75,7 +106,7 @@ provenance:
         note: "Footnote: Wie oben Fussnote 3: «Ruzicka hat die beiden Ruisdaels erworben. […] Die Besitzerin ist erschreckt, weil der 'böse' Onkel D [Duensing] die Bilder dem Händler Hugo Moser versprochen hatte. [Die Bilder waren aber in der Schweiz bei der Nichte].»; LIVE AUCTION 5422. IMPRESSIONIST & MODERN PAINTINGS,WATERCOLOURS & SCULPTURE PI, Christie’s, London, 01.10.1995, https://www.christies.com/en/lot/lot-26543…"
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-03
-  - owner: person/walter-feilchenfeldt-senior
+  - owner: person/walter-feilchenfeldt
     role: agent
     acquired: 1949-11-21
     ended: 1949-11-21

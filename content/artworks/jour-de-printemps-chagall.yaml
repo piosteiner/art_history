@@ -5,10 +5,16 @@ names:
   - lang: de
     role: translation
     text: Frühlingstag
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1277060/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: marc-chagall
 created: 1972
 kind: print
-medium: Colour lithograph on paper
+medium: Lithografie in Farbe auf Papier
 materials: [paper]
 dimensions: [38, 27.4]
 institution: kunsthaus-zurich

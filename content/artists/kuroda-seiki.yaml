@@ -26,11 +26,15 @@ relationships:
         wikidata: Q910913
   - type: lived_in
     to: place/paris
-    period: 1884/1893
+    period: 1884/1893-07
     sources:
       - note: Sent to Paris in 1884 to study law, turned to painting through Yamamoto Hōsui and studied with Raphaël Collin; returned to Japan in 1893 "from a decade in France" with the plein-air palette. Morning Toilet (1893) was first shown at the Société Nationale des Beaux-Arts.
         source: history-of-japanese-art
         locator: pp. 373–375
+      - url: https://ja.wikipedia.org/wiki/%E9%BB%92%E7%94%B0%E6%B8%85%E8%BC%9D
+        note: 「1893年7月30日に帰国するまで」 — he returned to Japan on 30 July 1893, having left Paris that month
+        source: wikipedia-ja-kuroda-seiki
+        accessed: 2026-11-04
   - type: associated_with
     to: movement/pleinairisme
     sources:

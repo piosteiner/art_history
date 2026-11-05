@@ -5,6 +5,7 @@ names:
     role: original
     text: 元亨
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (元亨) for the years 1321–1324: 1321 is Genkō 1 (元年) and Genkō 4 is 1324."
 description_md: |-
   **Genkō** (元亨) is a Japanese era name ([[nengo]]), proclaimed in 1321. Its years are counted in lunar years from the new year before the proclamation: 1321 is Genkō 1 (元年), 1324 its last year, Genkō 4. A Japanese source dates a year within it as "Genkō 2" (元亨2年) rather than by a continuous count.

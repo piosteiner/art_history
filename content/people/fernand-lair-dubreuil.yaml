@@ -2,4 +2,34 @@ public_id: 115226
 name: Fernand Lair-Dubreuil
 given_name: Fernand
 family_name: Lair-Dubreuil
+kind: person
+birth: 1867
+death: 1931
 wikidata_id: Q113486600
+metadata:
+  sources: [Wikidata Q113486600 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q113486600
+identifiers:
+  bnf: 15436643j
+  gnd: "141256044"
+  ulan: "500443265"
+  viaf: "8794526"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q113486600
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q113486600
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q113486600

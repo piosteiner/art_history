@@ -1,17 +1,29 @@
 public_id: 112294
-title_lang: en
+title_lang: fr
 title: Paysanne démêlant de la laine
 names:
   - lang: de
     role: translation
     text: Die Wollkämmerin
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750962/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Peasant Woman Carding Wool
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750962/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: camille-pissarro
 created: 1875
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [56, 47]
 institution: kunsthaus-zurich
 inventory_number: BU 0119

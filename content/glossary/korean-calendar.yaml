@@ -1,0 +1,10 @@
+public_id: 115720
+name: Korean calendar
+category: calendar
+definition: "How Korean sources date a year: by the reign year of the king — 1446 is Sejong 28 — under the Three Kingdoms, Goryeo and Joseon, and by era names under the Korean Empire (1896–1910). The reign years and eras are filed under this term."
+description_md: |-
+  Korean histories count years by the reigning king ([[korean-reign-years]]): 세종 28년, "Sejong 28", is 1446. The kingdoms of Goguryeo, Baekje and Silla, then Goryeo and Joseon, each have their own line of reigns; the Korean Empire (1896–1910) proclaimed era names of its own — Geonyang, Gwangmu, Yunghui — before the Japanese annexation. Chinese era names were used beside the reign years for most of this time, and the [[sexagenary-cycle]] throughout.
+
+  Every reign and era has its own entry under this term, with its years and, where one is known, the entry of the ruler. The dates before 1400 follow the DILA Time Authority Database (CC BY-SA 3.0), the later ones Wikidata.
+metadata:
+  collection: true

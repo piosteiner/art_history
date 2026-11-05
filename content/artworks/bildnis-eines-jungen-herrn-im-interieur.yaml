@@ -2,16 +2,27 @@ public_id: 115441
 title_lang: de
 title: Bildnis eines jungen Herrn im Interieur
 names:
-  - lang: fr
+  - lang: en
     role: translation
     text: Portrait of a Young Man in an Interior
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Bildnis eines stehenden Herrn
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3900/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: gerard-ter-borch
 created: 1668
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [76, 62]
 institution: kunsthaus-zurich
 inventory_number: R 48

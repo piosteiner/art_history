@@ -31,11 +31,26 @@ web_url: https://www.artic.edu/artworks/24610
 wikidata_id: Q18173388
 metadata:
   sources: [Wikidata Q18173388 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/ryugan-ji-temple
+    label: the Enza pine in the grounds of Ryūgan-ji, Aoyama (the pine is gone)
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/aoyamaenzamatsu.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：東京都渋谷区神宮前、龍巌寺周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
 images:
   - url: https://www.artic.edu/iiif/2/2d4304b7-9f62-e58d-89c1-e90919f53c42/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/24610
     license: Public domain
     credit: Art Institute of Chicago, Clarence Buckingham Collection
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/The_coast_of_seven_leages_in_Kamakura.jpg/1280px-The_coast_of_seven_leages_in_Kamakura.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_coast_of_seven_leages_in_Kamakura.jpg
+    license: Public domain
+    credit: Katsushika Hokusai
 sources:
   names:
     - accessed: 2026-11-03

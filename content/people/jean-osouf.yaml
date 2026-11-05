@@ -2,4 +2,34 @@ public_id: 115485
 name: Jean Osouf
 given_name: Jean
 family_name: Osouf
+kind: person
+birth: 1898-06-15
+death: 1996-03-19
 wikidata_id: Q3173802
+metadata:
+  sources: [Wikidata Q3173802 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q3173802
+identifiers:
+  kulturnav: 3165e347-4df3-48ee-9c3d-bd57834f5d1b
+  rkd: "214097"
+  ulan: "500195141"
+  viaf: "123149294102680520848"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q3173802
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q3173802
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q3173802

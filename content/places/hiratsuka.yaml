@@ -1,0 +1,32 @@
+public_id: 115684
+name: Hiratsuka
+names:
+  - lang: ja
+    role: translation
+    text: 平塚市
+  - lang: ko
+    role: translation
+    text: 히라쓰카시
+  - lang: ru
+    role: translation
+    text: Хирацука
+kind: settlement
+parent: kanagawa
+country_code: JP
+location: [139.34944, 35.33553]
+wikidata_id: Q502199
+metadata:
+  sources: [Wikidata Q502199 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q502199
+  parent:
+    - accessed: 2026-11-04
+      property: P131
+      wikidata: Q502199
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q502199

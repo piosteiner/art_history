@@ -1,0 +1,29 @@
+public_id: 115647
+name: Kanda-Surugadai
+names:
+  - lang: nl
+    role: translation
+    text: Surugadai
+  - lang: ja
+    role: translation
+    text: 神田駿河台
+kind: district
+parent: tokyo
+country_code: JP
+location: [139.76374, 35.69936]
+wikidata_id: Q3276871
+metadata:
+  sources: [Wikidata Q3276871 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q3276871
+  parent:
+    - accessed: 2026-11-04
+      property: P131
+      wikidata: Q3276871
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q3276871

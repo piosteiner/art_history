@@ -1,2 +1,10 @@
 public_id: 115308
 name: Master of the Churwalden altarpiece
+active: 1480/1490
+active_label: c. 1480–1490
+sources:
+  active:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3230/
+      note: active when the work held was made — the Kunsthaus dates “Stehende Maria mit Kind” c. 1480–1490
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-04

@@ -1,0 +1,22 @@
+public_id: 115746
+name: reredos
+category: object type
+definition: altarpiece, screen or decoration behind the altar in a church
+wikidata_id: Q46686
+metadata:
+  sources: [Wikidata Q46686 (retrieved 2026-11-04)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Altar_piece_Santar%C3%A9m_May_2015-1.jpg/1280px-Altar_piece_Santar%C3%A9m_May_2015-1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Altar_piece_Santar%C3%A9m_May_2015-1.jpg
+    license: CC BY-SA 4.0
+    credit: Alvesgaspar
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/St._Mary%27s_Church%2C_Krakow_2014-08-12-475.jpg/1280px-St._Mary%27s_Church%2C_Krakow_2014-08-12-475.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:St._Mary%27s_Church,_Krakow_2014-08-12-475.jpg
+    license: CC BY-SA 3.0
+    credit: Hans A. Rosbach
+identifiers:
+  gnd: 4136462-4
+sources:
+  definition:
+    - accessed: 2026-11-04
+      wikidata: Q46686

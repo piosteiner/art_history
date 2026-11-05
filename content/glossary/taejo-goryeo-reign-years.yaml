@@ -8,6 +8,7 @@ names:
     role: alternative
     text: 太祖
 category: calendar
+parent: korean-calendar
 definition: "The reign years of King Taejo of Goryeo (太祖, 태조), by which Korean histories date 918–943: 918 is Taejo 1, 943 Taejo 26."
 description_md: |-
   **Taejo** (太祖, 태조): the years of the reign of [[person/taejo-of-goryeo|King Taejo]] of Goryeo. The Goryeosa, the history of Goryeo, dates events by the reigning king's year ([[korean-reign-years]]): 927 is Taejo 10 (태조 10년). The year of the accession, 918, counts as the first year.

@@ -5,11 +5,17 @@ names:
   - lang: en
     role: translation
     text: Still Life
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/806961/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 attribution_label: forgery after Henri Matisse
 authenticity: forgery
 authenticity_note: 'Kunsthaus Zürich: "Forgery after Henri Matisse"'
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [65, 81]
 institution: kunsthaus-zurich
 inventory_number: BU 0068

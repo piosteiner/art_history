@@ -34,6 +34,20 @@ web_url: https://www.artic.edu/artworks/24798
 wikidata_id: Q18173402
 metadata:
   sources: [Wikidata Q18173402 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/lake-suwa
+    label: from above the lake, Takashima Castle on the far shore — perhaps from the Shiojiri Pass
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/shinshuusuwako.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：長野県諏訪湖周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade A-, placed at 36.06518, 138.09055 — “Lake Suwa - to the north of Mt Fuji - has a clear view towards the mountain. The shape of the distant hills, like an inverted 'V', provided a general viewing di”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://www.artic.edu/iiif/2/abb0d377-b570-a9de-a540-ff468545d9cd/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/24798

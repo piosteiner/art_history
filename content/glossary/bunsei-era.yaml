@@ -5,6 +5,7 @@ names:
     role: original
     text: 文政
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (文政) for the years 1818–1830: 1818 is Bunsei 1 (元年) and Bunsei 13 is 1830."
 description_md: |-
   **Bunsei** (文政) is a Japanese era name ([[nengo]]), proclaimed in 1818. Its years are counted in lunar years from the new year before the proclamation: 1818 is Bunsei 1 (元年), 1830 its last year, Bunsei 13. A Japanese source dates a year within it as "Bunsei 2" (文政2年) rather than by a continuous count.

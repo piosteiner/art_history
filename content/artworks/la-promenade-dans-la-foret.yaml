@@ -5,17 +5,35 @@ names:
   - lang: de
     role: translation
     text: Am Waldrand
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2697/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Waldspaziergang
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2697/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Walk in the Forest
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2697/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: henri-rousseau
 created: c. 1886
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [70, 60.5]
 institution: kunsthaus-zurich
 inventory_number: "2479"

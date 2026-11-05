@@ -1,17 +1,29 @@
 public_id: 112193
-title_lang: en
+title_lang: fr
 title: Trouville, les jetées, marée basse
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Trouville, bei Ebbe
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699964/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Low Tide near Trouville
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699964/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: eugene-boudin
 created: 1883/1887
 kind: oil painting
-medium: Oil on panel
+medium: Öl auf Holz
 dimensions: [23.5, 32.5]
 institution: kunsthaus-zurich
 inventory_number: BU 0007

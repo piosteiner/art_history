@@ -2,4 +2,49 @@ public_id: 115371
 name: Robert Langton Douglas
 given_name: Robert Langton
 family_name: Douglas
+kind: person
+birth: 1864
+death: 1951
 wikidata_id: Q7346708
+metadata:
+  sources: [Wikidata Q7346708 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q7346708
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q7346708
+  - type: died_in
+    to: place/fiesole
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q7346708
+identifiers:
+  bnf: 15102102g
+  gnd: "132191636"
+  idref: "113985177"
+  lc: nr95036562
+  rkd: "350453"
+  ulan: "500055981"
+  viaf: "15067012"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q7346708
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q7346708
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q7346708

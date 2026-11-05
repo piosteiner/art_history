@@ -41,6 +41,20 @@ web_url: https://www.metmuseum.org/art/collection/search/55227
 wikidata_id: Q18173387
 metadata:
   sources: [Wikidata Q18173387 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/kanda-surugadai
+    label: Surugadai, the hill north of Kanda, a famous place for seeing Fuji (Fujimi-zaka)
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/toutosurugadai.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：東京都千代田区神田駿河台周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade D, placed at 35.77768, 139.71931 — “Could not locate Suruga St in a modern map, so have placed this one on a small hill in the eastern Edo area”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP140999.jpg
     source_url: https://www.metmuseum.org/art/collection/search/55227

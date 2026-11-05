@@ -1,17 +1,29 @@
 public_id: 111984
-title_lang: en
+title_lang: fr
 title: Santa Caterina d'Alessandria
 names:
   - lang: de
     role: translation
     text: Die heilige Katharina von Alexandrien
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Saint Catherine of Alexandria
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586964/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: bernardo-strozzi
 created: 1618/1620
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [165, 130]
 institution: kunsthaus-zurich
 inventory_number: BU 0144

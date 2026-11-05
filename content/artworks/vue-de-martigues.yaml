@@ -1,17 +1,28 @@
 public_id: 115589
-title_lang: en
 title: Vue de Martigues
 names:
   - lang: de
     role: translation
     text: Landschaft bei Martigues
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/792/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: View of Martigues
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/792/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: andre-derain
 created: 1908
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [73, 91]
 institution: kunsthaus-zurich
 inventory_number: "2345"

@@ -34,6 +34,18 @@ web_url: https://www.artic.edu/artworks/24781
 wikidata_id: Q18173428
 metadata:
   sources: [Wikidata Q18173428 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/yoshiwara
+    label: the Shin-Yoshiwara quarter seen from the Nikkō road near Minowa; Fuji does not lie in that direction
+    certainty: probable
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/senjuhanamachiyorichoubounofuji.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：東京都足立区千住周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
 images:
   - url: https://www.artic.edu/iiif/2/323c862c-f8b0-117c-580d-84c2a2a96c37/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/24781

@@ -2,4 +2,25 @@ public_id: 115408
 name: Hanns Schaeffer
 given_name: Hanns
 family_name: Schaeffer
+kind: person
+birth: 1892-11-15
+death: 1967-05-02
 wikidata_id: Q53790860
+metadata:
+  sources: [Wikidata Q53790860 (retrieved 2026-11-04)]
+identifiers:
+  idref: "261911201"
+  rkd: "353503"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q53790860
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q53790860
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q53790860

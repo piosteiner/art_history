@@ -2,4 +2,29 @@ public_id: 115436
 name: Xaver Scheidwimmer
 given_name: Xaver
 family_name: Scheidwimmer
+kind: person
+birth: 1893-09-06
+death: 1980-07-30
 wikidata_id: Q125165289
+metadata:
+  sources: [Wikidata Q125165289 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q125165289
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q125165289
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q125165289
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q125165289

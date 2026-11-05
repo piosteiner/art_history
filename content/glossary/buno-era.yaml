@@ -5,6 +5,7 @@ names:
     role: original
     text: 文応
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (文応) for the year 1260: 1260 is Bun'ō 1 (元年), its only year."
 description_md: |-
   **Bun'ō** (文応) is a Japanese era name ([[nengo]]), proclaimed in 1260. Its years are counted in lunar years from the new year before the proclamation: 1260 is Bun'ō 1 (元年), its only year.

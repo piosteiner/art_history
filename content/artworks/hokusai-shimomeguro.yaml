@@ -28,6 +28,21 @@ web_url: https://www.metmuseum.org/art/collection/search/55226
 wikidata_id: Q18173410
 metadata:
   sources: [Wikidata Q18173410 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/shimo-meguro
+    label: Shimo-Meguro, the shogunate’s falconry grounds; the spot is not identified
+    certainty: probable
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/shimomeguro.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：東京都目黒区下目黒周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade C+, placed at 35.62863, 139.70625 — “The Shimomeguro area is in Tokyo and, although the painting depicts tall hills, only some slight bumps could be found”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP140998.jpg
     source_url: https://www.metmuseum.org/art/collection/search/55226

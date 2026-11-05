@@ -2,4 +2,62 @@ public_id: 112407
 name: James Simon
 given_name: James
 family_name: Simon
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: James Henry Simon
+    sources:
+      - accessed: 2026-11-04
+        property: P1477
+        wikidata: Q84859
+kind: person
+birth: 1851-09-17
+death: 1932-05-23
 wikidata_id: Q84859
+metadata:
+  sources: [Wikidata Q84859 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q84859
+  - type: born_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q84859
+  - type: died_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q84859
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b8/James_Simon.png
+    source_url: https://commons.wikimedia.org/wiki/File:James_Simon.png
+    license: Public domain
+    credit: Anonymous
+identifiers:
+  bnf: 10594066s
+  gnd: "117392634"
+  idref: 12525590X
+  lc: no2001012389
+  rkd: "361668"
+  viaf: "71381388"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q84859
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q84859
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q84859

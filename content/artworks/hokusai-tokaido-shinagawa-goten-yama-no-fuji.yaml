@@ -28,6 +28,17 @@ web_url: https://www.artic.edu/artworks/24756
 wikidata_id: Q18173429
 metadata:
   sources: [Wikidata Q18173429 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/goten-yama
+    label: Gotenyama above the Shinagawa station of the Tōkaidō, famous for its cherry trees
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/toukaidoushinagawagotenyamanofuji.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：東京都品川区北品川、御殿山周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
 images:
   - url: https://www.artic.edu/iiif/2/f387a8e6-f284-08a1-1e26-3a0fe933fa35/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/24756

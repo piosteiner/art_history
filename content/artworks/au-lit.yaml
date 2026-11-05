@@ -5,13 +5,25 @@ names:
   - lang: de
     role: translation
     text: Im Bett
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: In Bed
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752960/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: henri-de-toulouse-lautrec
 created: 1892
 kind: oil painting
-medium: Gouache on cardboard
+medium: Gouache auf Karton
 dimensions: [53, 34]
 institution: kunsthaus-zurich
 inventory_number: BU 0184

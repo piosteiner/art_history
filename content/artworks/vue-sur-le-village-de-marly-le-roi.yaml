@@ -1,17 +1,29 @@
 public_id: 112086
-title_lang: en
+title_lang: fr
 title: Vue sur le village de Marly-le-Roi
 names:
   - lang: de
     role: translation
     text: Blick auf das Dorf Marly-le-Roi
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: View of the Village of Marly-le-Roi
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604979/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: camille-pissarro
 created: 1870
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [46, 71]
 institution: kunsthaus-zurich
 inventory_number: BU 0182

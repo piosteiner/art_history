@@ -33,6 +33,18 @@ web_url: https://www.artic.edu/artworks/86985
 wikidata_id: Q18173435
 metadata:
   sources: [Wikidata Q18173435 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/suruga-province
+    label: "“Katakura” is not identified: tea fields with a large Fuji somewhere in Suruga (the tea fields of Fuji City are the usual guess)"
+    certainty: possible
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/sunshuukatakurachaennofuji.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：駿河国の茶園を描いた作品ですが、現在地の特定には諸説があります
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
 images:
   - url: https://www.artic.edu/iiif/2/4c778fe4-64ac-ff00-20f8-9bc456507da4/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/86985

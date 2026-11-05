@@ -27,6 +27,20 @@ web_url: https://www.artic.edu/artworks/87013
 wikidata_id: Q18173424
 metadata:
   sources: [Wikidata Q18173424 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/lake-ashi
+    label: Lake Ashi from its south shore by the Hakone checkpoint, the Hakone Shrine on the right
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/soushuuhakonekosui.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：神奈川県足柄下郡箱根町、芦ノ湖周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade A-, placed at 35.22678, 138.99982 — “The Lake of Hakone - also known as Lake Ashinoko - is to the south-east of Mt Fuji and was easy to locate. The shape and location of the water in the painting i”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://www.artic.edu/iiif/2/d91792a7-92b8-4090-78af-9b5156639350/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/87013

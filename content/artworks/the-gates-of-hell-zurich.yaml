@@ -1,11 +1,28 @@
 public_id: 103193
 title_lang: fr
-title: La Porte de l'enfer
+title: La Porte de l’enfer
 names:
   - lang: de
     role: translation
     text: Das Höllentor
     status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2070
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: en
+    role: translation
+    text: The Gates of Hell
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2070
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: fr
+    role: translation
+    text: La Porte de l'enfer
 parent: the-gates-of-hell
 part_number: "4"
 creator: auguste-rodin
@@ -13,6 +30,7 @@ created: 1942/1947
 created_span: duration
 conceived: 1880/1917
 kind: sculpture
+medium: Bronze
 materials: [bronze]
 dimensions: [680, 400, 85]
 institution: kunsthaus-zurich

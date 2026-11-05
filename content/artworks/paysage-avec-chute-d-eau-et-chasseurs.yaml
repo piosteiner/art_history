@@ -5,15 +5,27 @@ names:
   - lang: de
     role: translation
     text: Landschaft mit Wasserfall und Jägern
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/197/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Landscape with Waterfall and Huntsmen
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/197/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: claude-lorrain
 created: 1625/1640
 created_label: c. 1630/1635
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [61, 83.5]
 institution: kunsthaus-zurich
 inventory_number: R 57

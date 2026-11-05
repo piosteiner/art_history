@@ -1,14 +1,20 @@
 public_id: 115034
-title_lang: en
+title_lang: de
 title: Studie zum Bierkonzert. Begegnung eines Mannes und einer Frau
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: "Begegnung von Mann und Frau, zwei Handstudien; verso: alte Frau"
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/17036/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: max-liebermann
 created: 1883
 kind: drawing
-medium: "Graphite pencil on paper; verso: graphite pencil on paper"
+medium: "Grafitstift auf Papier; verso: Grafitstift auf Papier"
 dimensions: [30, 23]
 institution: kunsthaus-zurich
 inventory_number: Z.1942/0005

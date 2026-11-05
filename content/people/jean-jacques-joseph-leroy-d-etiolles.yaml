@@ -2,4 +2,52 @@ public_id: 115353
 name: Jean-Jacques-Joseph Leroy d'Etiolles
 given_name: Jean-Jacques-Joseph Leroy
 family_name: d'Etiolles
+kind: person
+birth: 1798-04-05
+death: 1860-08-25
 wikidata_id: Q3807594
+metadata:
+  sources: [Wikidata Q3807594 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q3807594
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q3807594
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q3807594
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/96/Jean-Jacques-Joseph_Leroy_d%27Etiolles.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Jacques-Joseph_Leroy_d%27Etiolles.jpg
+    license: Public domain
+    credit: Belliard, Zéphirin Félix
+identifiers:
+  bnf: "100315848"
+  gnd: "104165685"
+  idref: 06089055X
+  lc: no2017056840
+  viaf: "98744183"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q3807594
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q3807594
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q3807594

@@ -5,9 +5,20 @@ names:
   - lang: de
     role: translation
     text: Frau mit Tuch
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2743/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: fr
     role: former
     text: Femme drapée debout
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2743/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: henri-laurens
 created: 1928
 kind: sculpture

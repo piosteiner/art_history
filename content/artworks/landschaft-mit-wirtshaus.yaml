@@ -1,10 +1,21 @@
 public_id: 100294
+title_lang: de
 title: Landschaft mit Wirtshaus
+names:
+  - lang: en
+    role: translation
+    text: Landscape with an Inn
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: meindert-hobbema
 created: c. 1665
 created_span: uncertain
 kind: oil painting
-medium: Oil on panel
+medium: Öl auf Holz
 dimensions: [47, 53.5]
 institution: kunsthaus-zurich
 inventory_number: BU 0152

@@ -2,4 +2,37 @@ public_id: 115104
 name: Raphael Gérard
 given_name: Raphael
 family_name: Gérard
+kind: person
+birth: 1886-03-04
+death: 1963-05-06
 wikidata_id: Q59192187
+metadata:
+  sources: [Wikidata Q59192187 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q59192187
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q59192187
+identifiers:
+  bnf: 11636942t
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q59192187
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q59192187
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q59192187

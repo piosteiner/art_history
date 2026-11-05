@@ -1,9 +1,29 @@
 public_id: 100292
+title_lang: fr
 title: Femme s'essuyant
+names:
+  - lang: de
+    role: translation
+    text: Sich trocknende Frau
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: en
+    role: translation
+    text: After the Bath
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: edgar-degas
 created: 1896/1898
 kind: pastel
-medium: Pastel on cardboard
+medium: Pastell auf Karton
 dimensions: [66, 61]
 institution: kunsthaus-zurich
 inventory_number: BU 0033

@@ -1,20 +1,38 @@
 public_id: 111919
-title_lang: en
+title_lang: fr
 title: Pivoines et Pêches
 names:
-  - lang: en
+  - lang: fr
     role: translation
     text: Roses blanches et Pêches
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48909/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
     role: translation
     text: Pfingstrosen und Pfirsiche
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48909/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Peonies and Peaches
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48909/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: henri-fantin-latour
 created: 1873
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [55, 55]
 institution: kunsthaus-zurich
 inventory_number: BU 0177

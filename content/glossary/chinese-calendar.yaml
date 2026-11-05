@@ -1,0 +1,10 @@
+public_id: 115721
+name: Chinese calendar
+category: calendar
+definition: "How Chinese sources date a year: by the era name (nianhao) proclaimed by the emperor — under the Ming and Qing one per reign — from the Tang to the end of the empire in 1912. The era names from the Tang to the Qing are filed under this term."
+description_md: |-
+  Chinese dates name the era ([[nianhao]]) and the year within it. The emperors of the Tang, the Five Dynasties, the Song and the Yuan changed their era names freely; from the Ming on, each emperor kept one era for his whole reign, and is known by its name — the Qianlong Emperor reigned in the Qianlong era (1736–1795). The years of the [[sexagenary-cycle]] run beside the eras.
+
+  Every era name has its own entry under this term, with its years. The dates before 1400 (Tang to Yuan) follow the DILA Time Authority Database (CC BY-SA 3.0), the Ming and Qing eras Wikidata.
+metadata:
+  collection: true

@@ -27,6 +27,20 @@ web_url: https://www.metmuseum.org/art/collection/search/36493
 wikidata_id: Q18173403
 metadata:
   sources: [Wikidata Q18173403 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/ejiri-juku
+    label: the marsh near Ejiri, the 18th station of the Tōkaidō (perhaps at Ubagaike)
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/sunshuuejiri.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：静岡県静岡市清水区江尻周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade B-, placed at 35.0165, 138.48375 — “Ejiri is a town to the south-south-west of Mt Fuji. The painting suggests a coastline running from the lower-left, wrapping around to the right, which helps to ”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP140977.jpg
     source_url: https://www.metmuseum.org/art/collection/search/36493

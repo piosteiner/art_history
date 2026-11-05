@@ -5,14 +5,26 @@ names:
   - lang: en
     role: translation
     text: Monks by the Fire
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/2134/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: fr
     role: translation
     text: Moines autour de l’âtre
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/2134/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: alessandro-magnasco
 created: c. 1725
 created_span: uncertain
 kind: oil painting
-medium: oil on canvas
+medium: Öl auf Leinwand
 materials: [oil paint, canvas]
 dimensions: [111, 143]
 institution: kunsthaus-zurich

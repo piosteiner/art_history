@@ -2,4 +2,63 @@ public_id: 114982
 name: Thomas Lawrence
 given_name: Thomas
 family_name: Lawrence
+kind: person
+birth: 1769-04-13
+death: 1830-01-07
 wikidata_id: Q312096
+metadata:
+  sources: [Wikidata Q312096 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q312096
+  - type: nationality
+    to: polity/kingdom-of-great-britain
+    period: 1801-01-01
+    period_label: until 1 January 1801
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q312096
+  - type: born_in
+    to: place/bristol
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q312096
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q312096
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Self-Portrait-1788%29_by_Sir_Thomas_Lawrence%2C_PRA.jpg/1280px-Self-Portrait-1788%29_by_Sir_Thomas_Lawrence%2C_PRA.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Self-Portrait-1788)_by_Sir_Thomas_Lawrence,_PRA.jpg
+    license: Public domain
+    credit: Thomas Lawrence
+identifiers:
+  bnf: "121571118"
+  dome: "4210"
+  gnd: "118778994"
+  idref: "030083478"
+  lc: n81008170
+  rkd: "48440"
+  ulan: "500022619"
+  viaf: "59122598"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q312096
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q312096
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q312096

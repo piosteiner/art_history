@@ -2,4 +2,44 @@ public_id: 112430
 name: Hermann Eissler
 given_name: Hermann
 family_name: Eissler
+kind: person
+birth: 1860-07-20
+death: 1953-02-26
 wikidata_id: Q51131634
+metadata:
+  sources: [Wikidata Q51131634 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/austria-hungary
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q51131634
+  - type: born_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q51131634
+  - type: died_in
+    to: place/nice
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q51131634
+identifiers:
+  gnd: "1063682088"
+  viaf: "311756511"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q51131634
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q51131634
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q51131634

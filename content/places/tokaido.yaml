@@ -1,0 +1,82 @@
+public_id: 115662
+name: Tōkaidō
+kind: street
+designation: highway of the Edo period
+parent: japan
+location: [138.97536, 35.29194]
+route:
+  type: LineString
+  coordinates:
+    - [139.774362, 35.683734]
+    - [139.742148, 35.619974]
+    - [139.70292, 35.53251]
+    - [139.632958, 35.474995]
+    - [139.6, 35.44]
+    - [139.53, 35.4]
+    - [139.48, 35.35]
+    - [139.34, 35.33]
+    - [139.32, 35.31]
+    - [139.160525, 35.248573]
+    - [139.025375, 35.189493]
+    - [138.91447, 35.11931]
+    - [138.856815, 35.096122]
+    - [138.797854, 35.125262]
+    - [138.68772083, 35.16238472]
+    - [138.60555556, 35.12]
+    - [138.5675, 35.1075]
+    - [138.52196667, 35.05247222]
+    - [138.48222222, 35.01944444]
+    - [138.38777778, 34.97472222]
+    - [138.34277778, 34.94916667]
+    - [138.28222222, 34.91888889]
+    - [138.25277778, 34.87027778]
+    - [138.175934, 34.832792]
+    - [138.13, 34.82]
+    - [138.0758, 34.8028]
+    - [138.02, 34.77]
+    - [137.92, 34.75]
+    - [137.86, 34.73]
+    - [137.728045, 34.706018]
+    - [137.608976, 34.684626]
+    - [137.56133, 34.69472]
+    - [137.5, 34.69]
+    - [137.44982, 34.72329]
+    - [137.389618, 34.766647]
+    - [137.317339, 34.844969]
+    - [137.308214, 34.855752]
+    - [137.222143, 34.911291]
+    - [137.169232, 34.957956]
+    - [137.041, 35.008]
+    - [136.949756, 35.080497]
+    - [136.906903, 35.120359]
+    - [136.696094, 35.06841]
+    - [136.625487, 34.970538]
+    - [136.54808, 34.904342]
+    - [136.524741, 34.883344]
+    - [136.45, 34.85]
+    - [136.40035278, 34.85166389]
+    - [136.354073, 34.888588]
+    - [136.282336, 34.934838]
+    - [136.182085, 34.966188]
+    - [136.054554, 35.010129]
+    - [135.96047222, 35.01766667]
+    - [135.86141667, 35.00597222]
+    - [135.77173611, 35.00907222]
+description_md: "The Eastern Sea Road from Edo (Nihonbashi) to Kyoto (Sanjō Ōhashi) with its fifty-three post stations — see [[term/tokaido]]. Its course here runs through the stations’ present-day locations.^[The stations in order, each station’s article with its location (Hakone, Hara, Okazaki, Chiryū, Kuwana, Seki, Minakuchi from their Wikidata items; Okitsu: its railway station): [[source/wikipedia-ja-tokaido-gojusan-tsugi]]]"
+wikidata_id: Q1196306
+metadata:
+  sources: [Wikidata Q1196306 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1196306
+  route:
+    - url: https://ja.wikipedia.org/wiki/%E6%9D%B1%E6%B5%B7%E9%81%93%E4%BA%94%E5%8D%81%E4%B8%89%E6%AC%A1
+      note: "a line through the 55 points: Nihonbashi, the 53 stations, Sanjō Ōhashi — the coordinates of each station’s article (Hakone, Hara, Okazaki, Chiryū, Kuwana, Seki, Minakuchi: their Wikidata items; Okitsu: its railway station)"
+      source: wikipedia-ja-tokaido-gojusan-tsugi
+      accessed: 2026-11-04
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q1196306

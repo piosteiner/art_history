@@ -33,6 +33,20 @@ web_url: https://www.metmuseum.org/art/collection/search/55456
 wikidata_id: Q18173391
 metadata:
   sources: [Wikidata Q18173391 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/inume-juku
+    label: the pass above Inume, the 21st station of the Kōshū road, with the Katsura River mist below
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/koushuuinumetouge.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：山梨県上野原市犬目周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade B+, placed at 35.63355, 139.04674 — “There is an existing pass through the hills near Inume in the Kai Province, and near its top is a location that has a rising hill to the right side, per the pai”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP141045.jpg
     source_url: https://www.metmuseum.org/art/collection/search/55456

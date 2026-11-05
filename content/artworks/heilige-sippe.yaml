@@ -5,12 +5,18 @@ names:
   - lang: en
     role: translation
     text: Holy Kinship
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752989/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: niklaus-weckmann
 attribution_label: workshop of Niklaus Weckmann
 created: c. 1515
 created_span: uncertain
 kind: sculpture
-medium: Limewood
+medium: Lindenholz
 dimensions: [160, 110.3, 29]
 institution: kunsthaus-zurich
 inventory_number: BU P.12

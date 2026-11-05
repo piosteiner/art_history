@@ -1,20 +1,38 @@
 public_id: 115013
-title_lang: en
+title_lang: de
 title: Familie Leroy im Atelier
 names:
   - lang: de
     role: translation
     text: Bildnis des Bildhauers Leroy
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1585/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
     role: translation
     text: Familie Leroy im Atelier, Unterengstringen
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1585/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Leroy Family in the Studio
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1585/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: max-gubler
 created: 1939
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [55, 46]
 institution: kunsthaus-zurich
 inventory_number: 1952/0003

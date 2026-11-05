@@ -5,13 +5,24 @@ names:
   - lang: de
     role: translation
     text: Porträt III
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2148/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: fr
     role: former
     text: Portrait
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2148/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: joan-miro
 created: 1938
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [145, 114]
 institution: kunsthaus-zurich
 inventory_number: 1956/0012

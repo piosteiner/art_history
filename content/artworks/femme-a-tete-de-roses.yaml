@@ -6,18 +6,39 @@ names:
     role: translation
     text: Frau mit Rosenhaupt
     status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/418/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Woman with Head of Roses
     status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/418/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: fr
     role: alternative
     text: Deux femmes
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/418/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: es
     role: alternative
     text: Mujer con cabeza de rosas
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/418/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: salvador-dali
 created: 1935
+medium: Öl auf Holz
 dimensions: [35, 27]
 institution: kunsthaus-zurich
 web_url: https://collection.kunsthaus.ch/de/collection/item/418/

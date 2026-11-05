@@ -2,4 +2,42 @@ public_id: 111918
 name: Germain Seligman
 given_name: Germain
 family_name: Seligman
+kind: person
+birth: 1893-02-25
+death: 1978-03-27
 wikidata_id: Q5550990
+metadata:
+  sources: [Wikidata Q5550990 (retrieved 2026-11-04)]
+relationships:
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q5550990
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q5550990
+identifiers:
+  bnf: 12074507n
+  gnd: "129421650"
+  idref: "029034728"
+  lc: n82001442
+  rkd: "451019"
+  viaf: "2494741"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q5550990
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q5550990
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q5550990

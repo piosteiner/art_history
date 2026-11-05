@@ -1,3 +1,45 @@
 public_id: 112321
 name: Carl Eduard Herzog von Sachsen-Coburg und Gotha
+kind: person
+birth: 1884-07-19
+death: 1954-03-06
 wikidata_id: Q160467
+metadata:
+  sources: [Wikidata Q160467 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/german-reich
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q160467
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q160467
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0a/Carl_Eduard_Sachsen_Coburg_und_Gotha.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Carl_Eduard_Sachsen_Coburg_und_Gotha.jpg
+    license: Public domain
+    credit: A. Gimm, Gotha
+identifiers:
+  bnf: 16727130h
+  gnd: "118800590"
+  idref: "221386904"
+  lc: n78018513
+  viaf: "72190552"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q160467
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q160467
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q160467

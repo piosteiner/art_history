@@ -1,17 +1,28 @@
 public_id: 115219
-title_lang: en
+title_lang: de
 title: Abraham und Melchisedek
 names:
   - lang: en
     role: translation
     text: Abraham and Melchizidek
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2811/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
     role: former
     text: Verteilung von Brot, Abraham und Melchisedek
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2811/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: claes-cornelisz-moeyaert
 created: 1639
 kind: oil painting
-medium: Oil on oak panel
+medium: Öl auf Eichenholz
 dimensions: [73.5, 121.5]
 institution: kunsthaus-zurich
 inventory_number: R 16

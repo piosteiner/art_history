@@ -2,4 +2,56 @@ public_id: 115587
 name: Tilla Durieux
 given_name: Tilla
 family_name: Durieux
+names:
+  - kind: birth
+    lang: fr
+    role: former
+    text: Ottilie Godeffroy
+    sources:
+      - accessed: 2026-11-04
+        property: P1477
+        wikidata: Q78793
+kind: person
+birth: 1880-08-18
+death: 1971-02-21
 wikidata_id: Q78793
+metadata:
+  sources: [Wikidata Q78793 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/austria
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q78793
+  - type: born_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q78793
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Hilsdorf%2C_Jacob_-_Tilla_Durieux_%28Zeno_Fotografie%29.jpg/1280px-Hilsdorf%2C_Jacob_-_Tilla_Durieux_%28Zeno_Fotografie%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hilsdorf,_Jacob_-_Tilla_Durieux_(Zeno_Fotografie).jpg
+    license: Public domain
+    credit: Hilsdorf, Jacob
+identifiers:
+  bnf: 12770954h
+  gnd: "118528262"
+  idref: "091524261"
+  kulturnav: 4611a031-722b-483c-bcc4-fbf84c680cf0
+  lc: n90645880
+  viaf: "27862694"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q78793
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q78793
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q78793

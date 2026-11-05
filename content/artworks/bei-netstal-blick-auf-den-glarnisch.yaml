@@ -1,8 +1,28 @@
 public_id: 100197
 title_lang: de
 title: Bei Netstal. Blick auf den Glärnisch
+names:
+  - lang: en
+    role: translation
+    text: Near Netstal (View of the Glärnisch)
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/3990/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: fr
+    role: translation
+    text: Près de Tetstal (Vue sur le Glärnisch)
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/3990/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: johann-gottfried-steffan
 created: 1873
+medium: Öl auf Leinwand
 materials: [oil paint, canvas]
 institution: kunsthaus-zurich
 inventory_number: "2630"

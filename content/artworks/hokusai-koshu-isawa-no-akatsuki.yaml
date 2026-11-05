@@ -28,6 +28,17 @@ web_url: https://www.artic.edu/artworks/24604
 wikidata_id: Q17209457
 metadata:
   sources: [Wikidata Q17209457 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/isawa
+    label: Isawa, a station of the Kōshū road on the Fuefuki River, today Isawa-onsen
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/koushuuisawanoakatsuki.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：山梨県笛吹市石和町周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
 images:
   - url: https://www.artic.edu/iiif/2/fdbad9fc-7e08-213d-1e6c-9354afca4e1f/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/24604

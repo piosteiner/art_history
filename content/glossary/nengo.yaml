@@ -5,6 +5,7 @@ names:
     role: original
     text: 年号
 category: calendar
+parent: japanese-calendar
 definition: "The Japanese era name: years are counted from the proclamation of an era — 1831 is Tenpō 2 — and the count begins anew with the next era."
 description_md: |-
   A **nengō** (年号, also gengō 元号) names a span of years in Japan: a date in a Japanese source reads "Tenpō 2" (天保2年) rather than a year of a continuous count. The custom came from China; the first era, [[taika-era|Taika]], was proclaimed in 645, and with gaps in the 7th century eras have followed one another ever since.

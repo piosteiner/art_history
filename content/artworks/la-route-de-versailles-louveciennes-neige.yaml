@@ -5,14 +5,26 @@ names:
   - lang: de
     role: translation
     text: Die Strasse nach Versailles, Louveciennes, bei Schnee
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750966/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Road to Versailles, Louveciennes, Snow
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750966/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: camille-pissarro
 created: c. 1870
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [43.5, 65.5]
 institution: kunsthaus-zurich
 inventory_number: BU 0173

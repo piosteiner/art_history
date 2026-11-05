@@ -2,17 +2,29 @@ public_id: 112054
 title_lang: fr
 title: La Fête foraine
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Jahrmarkt
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604958/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Fun Fair
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604958/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: raoul-dufy
 created: c. 1906
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [54, 65]
 institution: kunsthaus-zurich
 inventory_number: BU 0042

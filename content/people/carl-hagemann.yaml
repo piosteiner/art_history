@@ -2,4 +2,51 @@ public_id: 115184
 name: Carl Hagemann
 given_name: Carl
 family_name: Hagemann
+kind: person
+birth: 1867-04-09
+death: 1940-11-20
 wikidata_id: Q109282
+metadata:
+  sources: [Wikidata Q109282 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/german-reich
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q109282
+  - type: born_in
+    to: place/essen
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q109282
+  - type: died_in
+    to: place/frankfurt
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q109282
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/27/Hagemann.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hagemann.jpg
+    license: Public domain
+identifiers:
+  bnf: 15680100t
+  gnd: "122998928"
+  idref: "082047332"
+  lc: nr2004025509
+  viaf: "22467082"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q109282
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q109282
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q109282

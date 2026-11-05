@@ -5,6 +5,7 @@ names:
     role: original
     text: 永祚
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (永祚) for the years 989–990: 989 is Eiso 1 (元年) and Eiso 2 is 990."
 description_md: |-
   **Eiso** (永祚) is a Japanese era name ([[nengo]]), proclaimed in 989. Its years are counted in lunar years from the new year before the proclamation: 989 is Eiso 1 (元年), 990 its last year, Eiso 2. A Japanese source dates a year within it as "Eiso 2" (永祚2年) rather than by a continuous count.

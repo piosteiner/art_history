@@ -1,17 +1,29 @@
 public_id: 115129
-title_lang: en
+title_lang: fr
 title: À la Suite de l'eau, les nuages
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Nach dem Wasser, die Wolken
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: After the Water, the Clouds
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2409/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: rene-magritte
 created: 1926
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [120, 80]
 institution: kunsthaus-zurich
 inventory_number: 1980/0013

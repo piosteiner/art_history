@@ -1,2 +1,19 @@
 public_id: 112439
 name: A. & R. Ball
+names: [Ball Gallery, Alexander Ball Gallery]
+kind: gallery
+place: new-york-city
+wikidata_id: Q56218992
+metadata:
+  sources: [Wikidata Q56218992 (retrieved 2026-11-04)]
+identifiers:
+  ulan: "500445069"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q56218992
+  place:
+    - accessed: 2026-11-04
+      property: P131
+      wikidata: Q56218992

@@ -8,6 +8,7 @@ names:
     role: alternative
     text: 新大王
 category: calendar
+parent: korean-calendar
 definition: "The reign years of King Sindae of Goguryeo (新大王, 신대왕), by which Korean histories date 165–179: 165 is Sindae 1, 179 Sindae 15."
 description_md: |-
   **Sindae** (新大王, 신대왕): the years of the reign of King Sindae of Goguryeo. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 174 is Sindae 10 (신대왕 10년). The year of the accession, 165, counts as the first year.

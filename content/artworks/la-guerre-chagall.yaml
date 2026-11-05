@@ -8,14 +8,26 @@ names:
   - lang: de
     role: translation
     text: Der Krieg
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/320/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: War
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/320/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: marc-chagall
 created: 1960s
 created_span: uncertain
 kind: painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 materials: [oil paint, canvas]
 dimensions: [163, 231]
 institution: kunsthaus-zurich

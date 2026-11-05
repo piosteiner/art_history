@@ -1,6 +1,8 @@
 public_id: 115255
 name: Master of the Darmstadt Passion
 birth: 15th century
+active: 1430/1450
+active_label: c. 1430–1450
 wikidata_id: Q1918361
 metadata:
   sources: [Wikidata Q1918361 (retrieved 2026-11-03)]
@@ -26,4 +28,7 @@ sources:
   birth:
     - accessed: 2026-11-03
       property: P569
+      wikidata: Q1918361
+  active:
+    - property: P2031
       wikidata: Q1918361

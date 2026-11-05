@@ -2,4 +2,56 @@ public_id: 115174
 name: Agostino Tassi
 given_name: Agostino
 family_name: Tassi
+kind: person
+birth: c. 1580
+death: 1644-02-25
 wikidata_id: Q395741
+metadata:
+  sources: [Wikidata Q395741 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/papal-states
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q395741
+  - type: born_in
+    to: place/perugia
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q395741
+  - type: born_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q395741
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q395741
+identifiers:
+  bnf: 14564388v
+  gnd: "123622115"
+  idref: "081358970"
+  kulturnav: 33c09b16-0d38-4d7c-acc3-1e8a4e15cf57
+  lc: nr91040091
+  rkd: "76559"
+  ulan: "500029953"
+  viaf: "10758921"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q395741
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q395741
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q395741

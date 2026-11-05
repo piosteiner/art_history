@@ -2,4 +2,30 @@ public_id: 115570
 name: Raimund Meyer
 given_name: Raimund
 family_name: Meyer
+kind: person
+birth: 1954
 wikidata_id: Q95346084
+metadata:
+  sources: [Wikidata Q95346084 (retrieved 2026-11-04)]
+relationships:
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q95346084
+identifiers:
+  bnf: "120380736"
+  gnd: "124842771"
+  idref: "028571746"
+  lc: n85182049
+  viaf: "76333139"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q95346084
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q95346084

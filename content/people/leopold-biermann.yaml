@@ -2,4 +2,38 @@ public_id: 112213
 name: Leopold Biermann
 given_name: Leopold
 family_name: Biermann
+kind: person
+birth: 1875-08-08
+death: 1922-09-09
 wikidata_id: Q1819583
+metadata:
+  sources: [Wikidata Q1819583 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q1819583
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q1819583
+identifiers:
+  gnd: "116166339"
+  viaf: "13050884"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1819583
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q1819583
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q1819583

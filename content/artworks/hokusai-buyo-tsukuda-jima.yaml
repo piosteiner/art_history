@@ -30,6 +30,20 @@ web_url: https://www.metmuseum.org/art/collection/search/55741
 wikidata_id: Q18173394
 metadata:
   sources: [Wikidata Q18173394 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/tsukuda-island
+    label: Tsukuda Island at the mouth of the Sumida, seen from the water (today the Harumi canal)
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/buyoutsukudashima.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：東京都中央区佃
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: "grade C, placed at 35.60126, 139.8417 — “The small island in the painting does not appear in modern aerial imagery in the only major water area for Musashi Province - ie: Tokyo Bay. A position where mo”"
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP141089.jpg
     source_url: https://www.metmuseum.org/art/collection/search/55741

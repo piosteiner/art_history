@@ -1,14 +1,20 @@
 public_id: 111842
-title_lang: en
+title_lang: de
 title: Herrenbildnis
 names:
-  - lang: fr
+  - lang: en
     role: translation
     text: Portrait of a Man
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/355760/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: frans-hals
 created: 1660/1666
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [70, 58.5]
 institution: kunsthaus-zurich
 inventory_number: BU 0151

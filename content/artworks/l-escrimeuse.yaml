@@ -5,12 +5,29 @@ names:
   - lang: de
     role: translation
     text: Die Fechterin
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2159/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Fencer
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2159/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: original
     text: Escrimeuse
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2159/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: germaine-richier
 created: 1943
 kind: sculpture

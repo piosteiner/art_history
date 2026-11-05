@@ -6,15 +6,25 @@ names:
     role: translation
     text: Madame Cézanne mit dem Fächer
     status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Madame Cézanne with a Fan
     status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: paul-cezanne
 created: c. 1879–1888
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 materials: [oil paint, canvas]
 dimensions: [92.5, 73]
 institution: kunsthaus-zurich

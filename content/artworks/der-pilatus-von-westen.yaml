@@ -5,10 +5,16 @@ names:
   - lang: en
     role: translation
     text: Mount Pilatus from the West
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5745/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: robert-zund
 created: 1851
 kind: oil painting
-medium: Oil on paper on cardboard
+medium: Öl auf Papier über Karton
 dimensions: [27, 34.5]
 institution: kunsthaus-zurich
 inventory_number: 2003/0029

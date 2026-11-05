@@ -34,6 +34,17 @@ web_url: https://www.metmuseum.org/art/collection/search/56365
 wikidata_id: Q18173436
 metadata:
   sources: [Wikidata Q18173436 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/kanaya-juku
+    label: from the west bank of the Ōi River at Kanaya, the 24th station, where travellers were carried across
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/toukaidoukanayanofuji.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：静岡県島田市金谷周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP141070.jpg
     source_url: https://www.metmuseum.org/art/collection/search/56365

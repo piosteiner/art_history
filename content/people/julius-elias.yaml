@@ -2,4 +2,46 @@ public_id: 111821
 name: Julius Elias
 given_name: Julius
 family_name: Elias
+kind: person
+birth: 1861-07-12
+death: 1927-07-02
 wikidata_id: Q1712584
+metadata:
+  sources: [Wikidata Q1712584 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q1712584
+  - type: died_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q1712584
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6e/Julius_Elias_%28Art_historian%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Julius_Elias_(Art_historian).jpg
+    license: Public domain
+    credit: Ludwig Boedecker
+identifiers:
+  bnf: "128876433"
+  gnd: "116447710"
+  idref: "089629132"
+  lc: n2003089508
+  viaf: "139882"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1712584
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q1712584
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q1712584

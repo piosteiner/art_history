@@ -1,18 +1,30 @@
 public_id: 112195
-title_lang: en
+title_lang: fr
 title: Bateau au Havre
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Schiff in Le Havre
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699965/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Ship at Le Havre
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699965/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: georges-braque
 created: c. 1905
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [54, 65]
 institution: kunsthaus-zurich
 inventory_number: BU 0169

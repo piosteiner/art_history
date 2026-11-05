@@ -2,16 +2,28 @@ public_id: 115475
 title_lang: de
 title: Bildnis eines Neffen des Künstlers
 names:
-  - lang: fr
+  - lang: en
     role: translation
     text: Portrait of the Artist's Nephew
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/50/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: fr
     role: translation
     text: Portrait d'un neveu de l'artiste
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/50/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: adolf-dietrich
 created: 1929
 kind: oil painting
-medium: Oil on cardboard, on panel
+medium: Öl auf Karton, auf Holz
 dimensions: [82.5, 54.5]
 institution: kunsthaus-zurich
 inventory_number: "2610"

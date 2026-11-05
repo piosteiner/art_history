@@ -1,0 +1,28 @@
+public_id: 115658
+name: Kajikazawa
+names:
+  - lang: ja
+    role: translation
+    text: 鰍沢町
+  - lang: zh
+    role: translation
+    text: 鰍澤町
+  - lang: ko
+    role: translation
+    text: 가지카자와정
+kind: settlement
+parent: yamanashi-prefecture
+country_code: JP
+location: [138.45989, 35.54664]
+wikidata_id: Q1042636
+metadata:
+  sources: [Wikidata Q1042636 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1042636
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q1042636

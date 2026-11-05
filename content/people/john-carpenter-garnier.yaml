@@ -2,4 +2,29 @@ public_id: 112150
 name: John Carpenter Garnier
 given_name: John Carpenter
 family_name: Garnier
+kind: person
+birth: 1839-02-28
+death: 1926-10-05
 wikidata_id: Q6225256
+metadata:
+  sources: [Wikidata Q6225256 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q6225256
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q6225256
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q6225256
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q6225256

@@ -42,6 +42,19 @@ relationships:
   - type: created_in
     to: place/tokyo
     period: 1831
+  - type: depicts
+    to: place/higashi-hongan-ji-temple
+    label: the roof of the Higashi Hongan-ji at Asakusa (not the Sensō-ji)
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/toutoasakusahonganji.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：東京都台東区西浅草
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade A+, placed at 35.71146, 139.78977 — “The Honganji Temple still exists today, and the rooftop corner depicted in the painting can be recognized in modern images of the site. Choosing a view point th”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://www.artic.edu/iiif/2/221e30b6-b4ab-d345-5def-2b83e76b3b90/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/24690

@@ -1,9 +1,45 @@
 public_id: 100048
+title_lang: fr
 title: Le Phare de Honfleur
-names: [Der Leuchtturm von Honfleur]
+names:
+  - lang: de
+    role: alternative
+    text: Der Leuchtturm von Honfleur
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2206/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: fr
+    role: translation
+    text: Le Phare de lʼHospice
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2206/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: en
+    role: translation
+    text: The Lighthouse at Honfleur
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2206/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: fr
+    role: original
+    text: Le Phare de l'Hospice. Etude pour le no. 51
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2206/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: claude-monet
 created: 1864
-materials: [oil paint on canvas]
+medium: Öl auf Leinwand
+materials: [oil paint, canvas]
 dimensions: [54, 81]
 institution: kunsthaus-zurich
 inventory_number: 1968/0004

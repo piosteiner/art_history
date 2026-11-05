@@ -2,4 +2,41 @@ public_id: 112025
 name: Hugo Perls
 given_name: Hugo
 family_name: Perls
+kind: person
+birth: 1886-05-24
+death: 1977-08-14
 wikidata_id: Q5934356
+metadata:
+  sources: [Wikidata Q5934356 (retrieved 2026-11-04)]
+relationships:
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q5934356
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Edvard_Munch_-_K%C3%A4te_and_Hugo_Perls_-_MM.M.00259_-_Munch_Museum.jpg/1280px-Edvard_Munch_-_K%C3%A4te_and_Hugo_Perls_-_MM.M.00259_-_Munch_Museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_K%C3%A4te_and_Hugo_Perls_-_MM.M.00259_-_Munch_Museum.jpg
+    license: Public domain
+    credit: Edvard Munch
+identifiers:
+  gnd: "124822177"
+  idref: "079892906"
+  lc: nr98009021
+  rkd: "434284"
+  ulan: "500449502"
+  viaf: "212461235"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q5934356
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q5934356
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q5934356

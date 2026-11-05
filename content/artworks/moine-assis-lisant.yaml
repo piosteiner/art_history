@@ -1,18 +1,29 @@
 public_id: 112202
-title_lang: en
 title: Moine assis, lisant
 names:
   - lang: de
     role: translation
     text: Lesender Mönch
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Sitting Monk, Reading
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699967/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: jean-baptiste-camille-corot
 created: c. 1865
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [73, 50]
 institution: kunsthaus-zurich
 inventory_number: BU 0021

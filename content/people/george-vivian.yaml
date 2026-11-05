@@ -2,4 +2,47 @@ public_id: 115000
 name: George Vivian
 given_name: George
 family_name: Vivian
+kind: person
+birth: 1798-08-10
+death: 1873-01-05
 wikidata_id: Q49512446
+metadata:
+  sources: [Wikidata Q49512446 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-great-britain
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q49512446
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q49512446
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q49512446
+identifiers:
+  gnd: "1041708726"
+  lc: nr98015410
+  rkd: "81396"
+  ulan: "500020646"
+  viaf: "29446480"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q49512446
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q49512446
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q49512446

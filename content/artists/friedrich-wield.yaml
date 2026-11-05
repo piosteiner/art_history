@@ -2,3 +2,24 @@ public_id: 115392
 name: Friedrich Wield
 given_name: Friedrich
 family_name: Wield
+birth: 1880-03-15
+death: 1940-06-10
+wikidata_id: Q1462823
+relationships:
+  - type: born_in
+    to: place/hamburg
+    sources:
+      - property: P19
+        wikidata: Q1462823
+  - type: died_in
+    to: place/hamburg
+    sources:
+      - property: P20
+        wikidata: Q1462823
+sources:
+  birth:
+    - property: P569
+      wikidata: Q1462823
+  death:
+    - property: P570
+      wikidata: Q1462823

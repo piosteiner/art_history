@@ -1,17 +1,29 @@
 public_id: 112227
-title_lang: en
+title_lang: fr
 title: Roses et Lis dans un vase
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Rosen und Lilien in einer Vase
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704965/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Roses and Lilies in a Vase
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704965/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: henri-fantin-latour
 created: 1864
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [57, 42.5]
 institution: kunsthaus-zurich
 inventory_number: BU 0043

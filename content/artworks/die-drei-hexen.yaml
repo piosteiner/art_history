@@ -5,13 +5,25 @@ names:
   - lang: en
     role: translation
     text: The Three Witches
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1107/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: fr
     role: translation
     text: Les Trois Sorcières
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1107/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: henry-fuseli
 created: 1783
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [65, 91.5]
 institution: kunsthaus-zurich
 inventory_number: "2540"

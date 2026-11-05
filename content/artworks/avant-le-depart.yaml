@@ -1,17 +1,29 @@
 public_id: 111949
-title_lang: en
+title_lang: fr
 title: Avant le départ
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Vor dem Start
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Before the Start
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585966/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: edgar-degas
 created: 1878/1880
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [39.5, 89]
 institution: kunsthaus-zurich
 inventory_number: BU 0034

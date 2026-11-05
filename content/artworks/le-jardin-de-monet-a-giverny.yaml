@@ -2,16 +2,28 @@ public_id: 111982
 title_lang: fr
 title: Le Jardin de Monet à Giverny
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Monets Garten in Giverny
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Monet's Garden at Giverny
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586962/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: claude-monet
 created: 1895
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [81.5, 92]
 institution: kunsthaus-zurich
 inventory_number: BU 0072

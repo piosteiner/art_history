@@ -2,4 +2,48 @@ public_id: 112021
 name: Karl Ernst Osthaus
 given_name: Karl Ernst
 family_name: Osthaus
+kind: person
+birth: 1874-04-15
+death: 1921-03-25
 wikidata_id: Q74432
+metadata:
+  sources: [Wikidata Q74432 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q74432
+  - type: born_in
+    to: place/hagen
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q74432
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0d/Osthaus_by_Gerhardi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Osthaus_by_Gerhardi.jpg
+    license: Public domain
+    credit: Ida Gerhardi
+identifiers:
+  bnf: "127045271"
+  gnd: "118590502"
+  idref: "145541703"
+  lc: n82144677
+  rkd: "357280"
+  ulan: "500216666"
+  viaf: "54940791"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q74432
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q74432
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q74432

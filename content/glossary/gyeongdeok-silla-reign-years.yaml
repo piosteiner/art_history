@@ -8,6 +8,7 @@ names:
     role: alternative
     text: 景德王
 category: calendar
+parent: korean-calendar
 definition: "The reign years of King Gyeongdeok of Silla (景德王, 경덕왕), by which Korean histories date 742–765: 742 is Gyeongdeok 1, 765 Gyeongdeok 24."
 description_md: |-
   **Gyeongdeok** (景德王, 경덕왕): the years of the reign of King Gyeongdeok of Silla. The Samguk sagi, the history of the Three Kingdoms, dates events by the reigning king's year ([[korean-reign-years]]): 751 is Gyeongdeok 10 (경덕왕 10년). The year of the accession, 742, counts as the first year.

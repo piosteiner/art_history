@@ -2,4 +2,57 @@ public_id: 115591
 name: Eduard von der Heydt
 given_name: Eduard
 family_name: von der Heydt
+kind: person
+birth: 1882-09-26
+death: 1964-04-03
 wikidata_id: Q1290744
+metadata:
+  sources: [Wikidata Q1290744 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q1290744
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q1290744
+  - type: died_in
+    to: place/ascona
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q1290744
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Eduard_von_der_Heydt_im_Tresor_der_Von_der_Heydt%E2%80%98s_Bank_AG%2C_Berlin.jpg/1280px-Eduard_von_der_Heydt_im_Tresor_der_Von_der_Heydt%E2%80%98s_Bank_AG%2C_Berlin.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Eduard_von_der_Heydt_im_Tresor_der_Von_der_Heydt%E2%80%98s_Bank_AG,_Berlin.jpg
+    license: Public domain
+    credit: Sasha Stone (1895-1940)
+identifiers:
+  bnf: "150378680"
+  dodis: P5880
+  gnd: "118704486"
+  hls: "027726"
+  idref: "074185594"
+  kulturnav: 58fb0a95-ae2f-4376-bf9f-4869d0b9e670
+  lc: nr89012420
+  rkd: "475546"
+  ulan: "500433907"
+  viaf: "59367938"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1290744
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q1290744
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q1290744

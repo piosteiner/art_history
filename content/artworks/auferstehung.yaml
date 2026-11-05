@@ -1,15 +1,21 @@
 public_id: 115050
-title_lang: en
+title_lang: de
 title: Auferstehung
 names:
   - lang: en
     role: translation
     text: Resurrection
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1899/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: heinrich-freudweiler
 created: c. 1790
 created_span: uncertain
 kind: oil painting
-medium: Oil on panel
+medium: Öl auf Holz
 dimensions: [47, 35.5]
 institution: kunsthaus-zurich
 inventory_number: 1945/0017

@@ -2,4 +2,33 @@ public_id: 112062
 name: Gustav Schweitzer
 given_name: Gustav
 family_name: Schweitzer
+kind: person
+birth: 1880
+death: 1939-11-14
 wikidata_id: Q139283961
+metadata:
+  sources: [Wikidata Q139283961 (retrieved 2026-11-04)]
+relationships:
+  - type: born_in
+    to: place/wroc-aw
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q139283961
+identifiers:
+  gnd: "125478488"
+  lc: no2024055258
+  viaf: "50190400"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q139283961
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q139283961
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q139283961

@@ -2,15 +2,21 @@ public_id: 115064
 title_lang: de
 title: Porträtbüste Jean Jacques Rousseau
 names:
-  - lang: fr
+  - lang: en
     role: translation
     text: Portrait Bust Jean Jacques Rousseau
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2022/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: jean-baptiste-lemoyne-the-younger
 attribution_label: circle of Jean-Baptiste Lemoyne the Younger
 created: c. 1780
 created_span: uncertain
 kind: sculpture
-medium: Marble
+medium: Marmor
 dimensions: [35, 21, 22.5]
 institution: kunsthaus-zurich
 inventory_number: 1944/0017

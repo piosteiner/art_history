@@ -32,6 +32,20 @@ web_url: https://www.metmuseum.org/art/collection/search/36496
 wikidata_id: Q18173395
 metadata:
   sources: [Wikidata Q18173395 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/shichirigahama
+    label: Shichirigahama beach near Cape Koyurugi, Enoshima on the left
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/soushuushichirigahama.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：神奈川県鎌倉市七里ヶ浜周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade B+, placed at 35.30289, 139.52732 — “The Shichiriga-hama coastline, in the Sagami Province, lines up nicely with the painting - including a hillside on the right side”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP140979.jpg
     source_url: https://www.metmuseum.org/art/collection/search/36496

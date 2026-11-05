@@ -2,4 +2,29 @@ public_id: 115331
 name: Ralph William Grey
 given_name: Ralph William
 family_name: Grey
+kind: person
+birth: 1819
+death: 1869-10-01
 wikidata_id: Q7287568
+metadata:
+  sources: [Wikidata Q7287568 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q7287568
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q7287568
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q7287568
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q7287568

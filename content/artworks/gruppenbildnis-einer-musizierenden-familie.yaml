@@ -1,14 +1,20 @@
 public_id: 115410
-title_lang: en
+title_lang: de
 title: Gruppenbildnis einer musizierenden Familie
 names:
   - lang: en
     role: translation
     text: Group Portrait of a Family Making Music
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3688/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: jan-verkolje
 created: 1671
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [76, 88]
 institution: kunsthaus-zurich
 inventory_number: R 39

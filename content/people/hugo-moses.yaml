@@ -2,4 +2,17 @@ public_id: 115161
 name: Hugo Moses
 given_name: Hugo
 family_name: Moses
+kind: person
+birth: 1881-10-01
 wikidata_id: Q118322543
+metadata:
+  sources: [Wikidata Q118322543 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q118322543
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q118322543

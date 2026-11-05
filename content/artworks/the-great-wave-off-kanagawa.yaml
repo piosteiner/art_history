@@ -28,6 +28,20 @@ relationships:
   - type: created_in
     to: place/tokyo
     period: 1830/1832
+  - type: depicts
+    to: place/yokohama
+    label: off Kanagawa, the third station of the Tōkaidō (today Kanagawa ward, Yokohama); where the view is taken from is disputed — off Kisarazu is another reading
+    certainty: disputed
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/kanagawaokinamiura.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：神奈川宿沖を示す題名ですが、具体的な視点位置には諸説があります
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade C+, placed at 35.17424, 139.27029 — “Using the relatively small size of the mountain as a guide, a viewing distance of approximately 12 km south-west off the coast of the Kanawaga region was chosen”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
   - type: associated_with
     to: movement/ukiyo-e
 images:

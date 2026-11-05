@@ -5,10 +5,16 @@ names:
   - lang: en
     role: translation
     text: Roman Head
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/946/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: august-boesch
 created: 1899
 kind: sculpture
-medium: Marble
+medium: Marmor
 dimensions: [53, 48, 29]
 institution: kunsthaus-zurich
 inventory_number: 1952/0023

@@ -5,6 +5,7 @@ names:
     role: original
     text: 文亀
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (文亀) for the years 1501–1504: 1501 is Bunki 1 (元年) and Bunki 4 is 1504."
 description_md: |-
   **Bunki** (文亀) is a Japanese era name ([[nengo]]), proclaimed in 1501. Its years are counted in lunar years from the new year before the proclamation: 1501 is Bunki 1 (元年), 1504 its last year, Bunki 4. A Japanese source dates a year within it as "Bunki 2" (文亀2年) rather than by a continuous count.

@@ -5,14 +5,26 @@ names:
   - lang: de
     role: translation
     text: Der Erzengel Raphael mit Tobias
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2877/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Archangel Raphael with Tobias
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2877/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: giovanni-mazone
 attribution_label: Giovanni Mazone (formerly attributed to Benedetto Bembo)
 created: 1466
 kind: oil painting
-medium: Tempera on panel
+medium: Tempera auf Holz
 dimensions: [89.5, 33]
 institution: kunsthaus-zurich
 inventory_number: "2599"

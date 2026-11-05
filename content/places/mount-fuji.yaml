@@ -1,0 +1,51 @@
+public_id: 115645
+name: Mount Fuji
+names:
+  - Mt Fuji
+  - Fuji Mountain
+  - Fuji-san
+  - Mt. Fuji
+  - Fujisan
+  - Fuji-yama
+  - Fujiyama
+  - 🗻
+  - lang: nl
+    role: translation
+    text: Fuji
+  - lang: fr
+    role: translation
+    text: mont Fuji
+  - lang: es
+    role: translation
+    text: Monte Fuji
+  - lang: ja
+    role: translation
+    text: 富士山
+  - lang: ko
+    role: translation
+    text: 후지산
+  - lang: ru
+    role: translation
+    text: Фудзияма
+kind: natural
+parent: japan
+country_code: JP
+location: [138.7275, 35.36056]
+wikidata_id: Q39231
+metadata:
+  sources: [Wikidata Q39231 (retrieved 2026-11-04)]
+identifiers:
+  gnd: 4018768-8
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q39231
+  parent:
+    - accessed: 2026-11-04
+      property: P131
+      wikidata: Q39231
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q39231

@@ -5,15 +5,25 @@ names:
   - lang: de
     role: former
     text: Am Stadttor von Leiden
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/416/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Brüssel, Porte du Rivage
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/416/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: jan-van-der-heyden
 created: 1667/1679
 created_label: c. 1672/1674
 created_span: uncertain
 kind: oil painting
-medium: Oil on oak panel
+medium: Öl auf Eichenholz
 dimensions: [23.8, 19.2]
 institution: kunsthaus-zurich
 inventory_number: R 13

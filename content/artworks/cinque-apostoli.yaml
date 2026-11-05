@@ -1,21 +1,37 @@
 public_id: 111814
-title_lang: en
 title: Cinque apostoli
 names:
   - lang: de
     role: translation
     text: Fünf Apostel
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2389/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Five Apostles
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2389/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Fünf Apostel in Predella-Nischen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2389/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: allegretto-nuzi
 created: c. 1370
 created_span: uncertain
 kind: oil painting
-medium: Tempera on hardwood
+medium: Tempera auf Laubholz
 dimensions: [35, 134.5]
 institution: kunsthaus-zurich
 inventory_number: "2598"

@@ -1,18 +1,29 @@
 public_id: 112211
-title_lang: en
 title: Triomphe de Bacchus
 names:
   - lang: de
     role: translation
     text: Der Triumph des Bacchus
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704960/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Triumph of Bacchus
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/704960/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: eugene-delacroix
 created: c. 1861
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [92, 143]
 institution: kunsthaus-zurich
 inventory_number: BU 0128

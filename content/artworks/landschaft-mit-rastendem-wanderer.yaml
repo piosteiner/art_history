@@ -5,10 +5,16 @@ names:
   - lang: en
     role: translation
     text: Landscape with Resting Traveller
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7468/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: philips-koninck
 created: 1665
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [65.5, 94.5]
 institution: kunsthaus-zurich
 inventory_number: BU 0154

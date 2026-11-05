@@ -2,4 +2,50 @@ public_id: 115237
 name: Maximilian von Goldschmidt-Rothschild
 given_name: Maximilian
 family_name: von Goldschmidt-Rothschild
+kind: person
+birth: 1843-06-20
+death: 1940-02-18
 wikidata_id: Q1575206
+metadata:
+  sources: [Wikidata Q1575206 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/german-reich
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q1575206
+  - type: born_in
+    to: place/frankfurt
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q1575206
+  - type: died_in
+    to: place/frankfurt
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q1575206
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ab/Max_von_Goldschmidt-Rothschild.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Max_von_Goldschmidt-Rothschild.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "116757310"
+  lc: no2023141610
+  viaf: "49984954"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1575206
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q1575206
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q1575206

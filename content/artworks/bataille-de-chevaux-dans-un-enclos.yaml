@@ -1,16 +1,28 @@
 public_id: 112425
-title_lang: en
+title_lang: fr
 title: Bataille de chevaux dans un enclos
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Pferde in der Koppel
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/804963/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Horses in the Paddock
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/804963/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 attribution_label: Anonymous (formerly attributed to Théodore Géricault)
 kind: oil painting
-medium: Oil on paper on canvas
+medium: Öl auf Papier, auf Leinwand
 dimensions: [24.5, 33]
 institution: kunsthaus-zurich
 inventory_number: BU 0134

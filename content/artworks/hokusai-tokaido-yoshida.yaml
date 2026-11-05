@@ -31,6 +31,20 @@ web_url: https://www.metmuseum.org/art/collection/search/55283
 wikidata_id: Q18173417
 metadata:
   sources: [Wikidata Q18173417 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/yoshida-juku
+    label: the Fuji-viewing teahouse west of Yoshida, the 34th station, at Shimo-Goi
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/toukaidouyoshida.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：愛知県豊橋市、旧吉田宿周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade C+, placed at 34.76724, 137.38871 — “The best guess is that this refers to Yoshida-juku (the 34th of the 53 stations of the Tōkaidō), which was located in the center of what is now the city of Toyo”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP141007.jpg
     source_url: https://www.metmuseum.org/art/collection/search/55283

@@ -5,13 +5,25 @@ names:
   - lang: en
     role: translation
     text: Sunflowers on an Armchair
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512959/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: translation
     text: Sonnenblumen auf einem Armsessel
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512959/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: paul-gauguin
 created: 1901
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 materials: [oil paint, canvas]
 dimensions: [68, 75.5]
 institution: kunsthaus-zurich

@@ -5,6 +5,7 @@ names:
     role: original
     text: 建武
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (建武) for the years 1334–1337: 1334 is Kemmu 1 (元年) and Kemmu 4 is 1337."
 description_md: |-
   **Kemmu** (建武) is a Japanese era name ([[nengo]]), proclaimed in 1334. Its years are counted in lunar years from the new year before the proclamation: 1334 is Kemmu 1 (元年), 1337 its last year, Kemmu 4. A Japanese source dates a year within it as "Kemmu 2" (建武2年) rather than by a continuous count.

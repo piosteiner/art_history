@@ -2,4 +2,89 @@ public_id: 112443
 name: Marianne Feilchenfeldt
 given_name: Marianne
 family_name: Feilchenfeldt
+names:
+  - kind: birth
+    lang: de
+    role: former
+    text: Marianne Breslauer
+  - Marianne Feilchenfeldt
+  - Marianne Breslauer Feilchenfeldt
+  - Marianne Breslauer-Feilchenfeldt
+  - lang: ru
+    role: translation
+    text: Марианна Бреслауэр
+kind: person
+occupations: [photographer, art dealer, merchant]
+birth: 1909-11-20
+death: 2001-02-07
+description_md: "Photographer and art dealer. Born Marianne Breslauer in Berlin, a photographer of the New Vision in the late 1920s and 1930s; married the art dealer [[person/walter-feilchenfeldt]] in 1936 and emigrated with him to Amsterdam and, in 1939, to Switzerland. In 1948 the two founded the dealership [[institution/walter-feilchenfeldt-kunsthandel]] in Zürich, which she directed after his death in 1953 — from 1966 with their son [[person/walter-feilchenfeldt-jun]] — until 1990.[[source/wikipedia-de-marianne-feilchenfeldt|“1948 gründete sie mit ihrem Mann … eine Kunsthandlung” · “Nach dem Tod ihres Mannes 1953 übernahm sie das Geschäft” · “1966 bis 1990 … mit ihrem Sohn Walter”]][[source/walterfeilchenfeldt-art-dealing|“1953–1966: Marianne Feilchenfeldt” · “1966–1990: Marianne and Walter Feilchenfeldt jun.”]]"
 wikidata_id: Q90927
+metadata:
+  sources: [Wikidata Q90927 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q90927
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q90927
+  - type: born_in
+    to: place/berlin
+    sources:
+      - property: P19
+        wikidata: Q90927
+  - type: died_in
+    to: place/zurich
+    sources:
+      - property: P20
+        wikidata: Q90927
+  - type: worked_in
+    to: institution/walter-feilchenfeldt-kunsthandel
+    period: 1953/1990
+    label: director (from 1966 with her son)
+    sources:
+      - url: https://walterfeilchenfeldt.ch/en/art-dealing
+        note: "“1953–1966: Marianne Feilchenfeldt” · “1966–1990: Marianne and Walter Feilchenfeldt jun.”"
+        source: walterfeilchenfeldt-art-dealing
+        accessed: 2026-11-04
+  - type: founded
+    to: institution/walter-feilchenfeldt-kunsthandel
+    period: 1948
+    label: co-founder
+    sources:
+      - url: https://de.wikipedia.org/wiki/Marianne_Feilchenfeldt
+        note: “1948 gründete sie mit ihrem Mann … eine Kunsthandlung”
+        source: wikipedia-de-marianne-feilchenfeldt
+        accessed: 2026-11-04
+identifiers:
+  bnf: 17148777k
+  gnd: "118945335"
+  idref: "155683187"
+  lc: n80055998
+  rkd: "236818"
+  sikart: "12584137"
+  ulan: "500087670"
+  viaf: "108360509"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q90927
+  birth:
+    - property: P569
+      wikidata: Q90927
+  death:
+    - property: P570
+      wikidata: Q90927
+  occupations:
+    - property: P106
+      wikidata: Q90927
+    - accessed: 2026-11-04
+      property: P106
+      wikidata: Q90927

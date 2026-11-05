@@ -1,0 +1,45 @@
+public_id: 115708
+name_lang: de
+name: Walter Feilchenfeldt (Kunsthandel)
+names:
+  - lang: de
+    role: alternative
+    text: Kunsthandlung Walter Feilchenfeldt
+  - lang: en
+    role: translation
+    text: Walter Feilchenfeldt Gallery
+kind: gallery
+founded: 1948
+dissolved: 2011
+place: zurich
+location: [8.559474, 47.3659]
+address: Freiestrasse 116, 8032 Zürich
+description_md: |-
+  Art dealership in Zürich, founded in 1948 by [[person/walter-feilchenfeldt]] (1894–1953), who had run the Berlin firm of Paul Cassirer with Grete Ring from 1926 and emigrated to Amsterdam in 1933 and to Switzerland in 1939.[[source/walterfeilchenfeldt-art-dealing|“1948–1953: Walter Feilchenfeldt sen.” · “1933: Feilchenfeldt emigrates to Amsterdam”]] After his death in 1953 his widow [[person/marianne-feilchenfeldt]] directed it, from 1966 together with their son [[person/walter-feilchenfeldt-jun]], who ran it alone from 1990.[[source/walterfeilchenfeldt-art-dealing|“1953–1966: Marianne Feilchenfeldt” · “1966–1990: Marianne and Walter Feilchenfeldt jun.” · “1990–2011: Walter Feilchenfeldt jun.”]] In 2011 it became Walter Feilchenfeldt AG, Art Negociation & Research, which keeps the Paul Cassirer & Walter Feilchenfeldt archive — the dealer's records cited by museums for the provenance of works that passed through the firm.[[source/walterfeilchenfeldt-art-dealing|“2011–present: Transformed into Walter Feilchenfeldt AG Art Negociation & Research”]] Member of the Swiss Art Trade Association since 1951.[[source/walterfeilchenfeldt-art-dealing|“1951–present: Member of the Swiss Art Trade Association (KHVS)”]]
+
+  Museum provenances name the firm as “Walter Feilchenfeldt (Kunsthandel), Zürich” — without dates of life, unlike the persons.
+website_url: https://walterfeilchenfeldt.ch/
+wikidata_id: Q78158827
+sources:
+  kind:
+    - url: https://walterfeilchenfeldt.ch/en/art-dealing
+      source: walterfeilchenfeldt-art-dealing
+      accessed: 2026-11-04
+  place:
+    - url: https://walterfeilchenfeldt.ch/en/art-dealing
+      source: walterfeilchenfeldt-art-dealing
+      accessed: 2026-11-04
+  address:
+    - property: P6375
+      wikidata: Q78158827
+  founded:
+    - url: https://walterfeilchenfeldt.ch/en/art-dealing
+      source: walterfeilchenfeldt-art-dealing
+      accessed: 2026-11-04
+  location:
+    - property: P625
+      wikidata: Q78158827
+  dissolved:
+    - url: https://walterfeilchenfeldt.ch/en/art-dealing
+      source: walterfeilchenfeldt-art-dealing
+      accessed: 2026-11-04

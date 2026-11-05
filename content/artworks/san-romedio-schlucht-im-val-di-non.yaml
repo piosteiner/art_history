@@ -5,13 +5,24 @@ names:
   - lang: it
     role: translation
     text: San Romedio Gorge in Val di Non
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3355/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: former
     text: Bergbach. Sant Romedioschlucht im Val di Non
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3355/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: robert-russ
 created: 1892
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [159.5, 107]
 institution: kunsthaus-zurich
 inventory_number: "2474"

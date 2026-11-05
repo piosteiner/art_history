@@ -5,10 +5,16 @@ names:
   - lang: de
     role: translation
     text: Portrait Elisabeth Froschauer-Müller
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3782/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: lorenz-strauch
 created: 1586
 kind: oil painting
-medium: Oil on copper in silver-gilt engraved round metal capsule
+medium: Öl auf Kupfer in silbervergoldeter gravierter runder Metallkapsel
 dimensions: [9.1]
 institution: kunsthaus-zurich
 inventory_number: "2558"

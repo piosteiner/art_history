@@ -1,0 +1,19 @@
+public_id: 115748
+name: Great Britain
+kind: natural
+designation: island
+parent: united-kingdom
+country_code: GB
+location: [-2.41667, 53.83333]
+wikidata_id: Q23666
+metadata:
+  sources: [Wikidata Q23666 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q23666
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q23666

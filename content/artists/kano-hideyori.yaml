@@ -26,3 +26,12 @@ relationships:
         wikidata: Q11571481
 identifiers:
   viaf: "251204313"
+sources:
+  birth:
+    - url: https://ja.wikipedia.org/wiki/%E7%8B%A9%E9%87%8E%E7%A7%80%E9%A0%BC
+      source: ja-wikipedia-org
+      accessed: 2026-11-04
+  death:
+    - url: https://ja.wikipedia.org/wiki/%E7%8B%A9%E9%87%8E%E7%A7%80%E9%A0%BC
+      source: ja-wikipedia-org
+      accessed: 2026-11-04

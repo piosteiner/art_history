@@ -5,6 +5,7 @@ names:
     role: original
     text: 大德
 category: calendar
+parent: chinese-calendar
 definition: "Chinese era name (大德) of the Yuan for the years 1297–1307: 1297 is Dade 1 (元年) and Dade 11 is 1307."
 description_md: |-
   **Dade** (大德) is a Chinese era name ([[nianhao]]) of the Yuan, proclaimed in 1297 under Temür (成宗). Its years are counted in lunar years: 1297 is Dade 1 (元年), 1307 its last year, Dade 11. A Chinese source dates a year within it as "Dade 2" (大德二年) rather than by a continuous count.

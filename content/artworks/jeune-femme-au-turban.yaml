@@ -5,15 +5,27 @@ names:
   - lang: de
     role: translation
     text: Junge Frau mit Turban
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752963/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Young Lady with a Turban
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752963/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: francois-andre-vincent
 attribution_label: François-André Vincent (formerly attributed to Jean-Honoré Fragonard)
 created: c. 1774
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [56]
 institution: kunsthaus-zurich
 inventory_number: BU 0132

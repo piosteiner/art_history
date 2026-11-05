@@ -2,4 +2,47 @@ public_id: 112377
 name: Paul Cailleux
 given_name: Paul
 family_name: Cailleux
+kind: person
+birth: 1884-11-12
+death: 1964-08-16
 wikidata_id: Q47310686
+metadata:
+  sources: [Wikidata Q47310686 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q47310686
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q47310686
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q47310686
+identifiers:
+  bnf: 12533992m
+  gnd: 116297253X
+  lc: nr2001020836
+  rkd: "464331"
+  viaf: "31923904"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q47310686
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q47310686
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q47310686

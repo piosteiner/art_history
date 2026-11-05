@@ -2,4 +2,35 @@ public_id: 115454
 name: Elie Borowski
 given_name: Elie
 family_name: Borowski
+kind: person
+birth: 1913-05-27
+death: 2003-01-14
 wikidata_id: Q383074
+metadata:
+  sources: [Wikidata Q383074 (retrieved 2026-11-04)]
+relationships:
+  - type: born_in
+    to: place/warsaw
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q383074
+identifiers:
+  bnf: "125917261"
+  gnd: "122072170"
+  idref: "200606522"
+  lc: n85017062
+  viaf: "202633248"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q383074
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q383074
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q383074

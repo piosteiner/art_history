@@ -5,20 +5,41 @@ names:
   - lang: en
     role: translation
     text: Dune Landscape with Oak Trees and Stretch of Water
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Dünenlandschaft mit Eichen und Gewässer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Düne mit Weg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: former
     text: Tree overhanging a stream
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3903/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: jacob-van-ruisdael
 created: c. 1650
 created_span: uncertain
 kind: oil painting
-medium: Oil on oak panel
+medium: Öl auf Eichenholz
 dimensions: [25.5, 34.5]
 institution: kunsthaus-zurich
 inventory_number: R 29

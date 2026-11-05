@@ -31,6 +31,21 @@ web_url: https://www.metmuseum.org/art/collection/search/36506
 wikidata_id: Q18173404
 metadata:
   sources: [Wikidata Q18173404 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/totomi-province
+    label: somewhere in the mountains of Tōtōmi, the west of today’s Shizuoka; nothing in the print identifies the spot
+    certainty: possible
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/tootoumisanchuu.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：遠江国、現在の静岡県西部
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade D-, placed at 35.21567, 138.20043 — “This could be from any hilltop anywhere within the Totomi Province, so I picked a location closer to the mountain (based on its size in the painting)”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP140988.jpg
     source_url: https://www.metmuseum.org/art/collection/search/36506

@@ -37,6 +37,20 @@ web_url: https://www.artic.edu/artworks/24712
 wikidata_id: Q18173406
 metadata:
   sources: [Wikidata Q18173406 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/nihonbashi-muromachi
+    label: the Mitsui Echigoya drapery in Surugachō, today Mitsukoshi in Nihonbashi-Muromachi
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/koutosurugachoumitsuimiseryakuzu.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：東京都中央区日本橋室町
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade D, placed at 35.77768, 139.71931 — “Could not locate Suruga St in a modern map, so have placed this one on a small hill in the eastern Edo area”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://www.artic.edu/iiif/2/b36f8b14-b299-c299-bfa0-5859d91deba6/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/24712

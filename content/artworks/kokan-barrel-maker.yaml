@@ -14,6 +14,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 318–319, fig. 370
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e7/Barrel-makers_by_Shiba_Kokan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Barrel-makers_by_Shiba_Kokan.jpg
+    license: Public domain
+    credit: Shiba Kōkan
 sources:
   kind:
     - source: history-of-japanese-art

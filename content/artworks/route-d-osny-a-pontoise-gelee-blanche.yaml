@@ -1,17 +1,29 @@
 public_id: 112083
-title_lang: en
+title_lang: fr
 title: Route d'Osny à Pontoise, gelée blanche
 names:
   - lang: de
     role: translation
     text: Die Strasse nach Osny in Pontoise, bei Reif
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604978/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Road to Osny at Pontoise, Hoar Frost
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604978/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: camille-pissarro
 created: 1873
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [50, 65]
 institution: kunsthaus-zurich
 inventory_number: BU 0118

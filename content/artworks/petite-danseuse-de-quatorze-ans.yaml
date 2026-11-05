@@ -1,9 +1,29 @@
 public_id: 100283
+title_lang: fr
 title: Petite Danseuse de quatorze ans
+names:
+  - lang: de
+    role: translation
+    text: Kleine vierzehnjährige Tänzerin
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585967/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: en
+    role: translation
+    text: Little Dancer Aged Fourteen
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585967/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: edgar-degas
 created: 1880/1881
 kind: sculpture
-medium: Bronze, partially painted, cotton skirt, silk ribbon
+medium: Bronze, teilweise bemalt, Baumwollrock, Seidenband
 dimensions: [98]
 institution: kunsthaus-zurich
 inventory_number: BU 0037

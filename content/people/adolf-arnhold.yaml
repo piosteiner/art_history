@@ -2,4 +2,39 @@ public_id: 114946
 name: Adolf Arnhold
 given_name: Adolf
 family_name: Arnhold
+kind: person
+birth: 1884-09-05
+death: 1950-12-15
 wikidata_id: Q56438234
+metadata:
+  sources: [Wikidata Q56438234 (retrieved 2026-11-04)]
+relationships:
+  - type: born_in
+    to: place/dresden
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q56438234
+  - type: died_in
+    to: place/heidelberg
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q56438234
+identifiers:
+  gnd: "1166328422"
+  rkd: "441668"
+  viaf: "5034153653250055900008"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q56438234
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q56438234
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q56438234

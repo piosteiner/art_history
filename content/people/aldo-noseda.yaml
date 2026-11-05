@@ -2,4 +2,32 @@ public_id: 111989
 name: Aldo Noseda
 given_name: Aldo
 family_name: Noseda
+kind: person
+birth: 1853
+death: 1916
 wikidata_id: Q139184300
+metadata:
+  sources: [Wikidata Q139184300 (retrieved 2026-11-04)]
+relationships:
+  - type: born_in
+    to: place/milan
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q139184300
+identifiers:
+  gnd: "117058181"
+  viaf: "89227041"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q139184300
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q139184300
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q139184300

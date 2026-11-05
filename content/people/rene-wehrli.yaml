@@ -2,4 +2,42 @@ public_id: 115584
 name: René Wehrli
 given_name: René
 family_name: Wehrli
+kind: person
+birth: 1910-07-09
+death: 2005-12-11
 wikidata_id: Q78074852
+metadata:
+  sources: [Wikidata Q78074852 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q78074852
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q78074852
+identifiers:
+  dodis: P14269
+  gnd: 102907089X
+  hls: "027785"
+  idref: "194669815"
+  lc: n50022729
+  viaf: "32366675"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q78074852
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q78074852
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q78074852

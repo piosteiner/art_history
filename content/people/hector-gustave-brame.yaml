@@ -2,4 +2,38 @@ public_id: 111956
 name: Hector-Gustave Brame
 given_name: Hector-Gustave
 family_name: Brame
+kind: person
+birth: 1866-04-28
+death: 1936
 wikidata_id: Q98805178
+metadata:
+  sources: [Wikidata Q98805178 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q98805178
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q98805178
+identifiers:
+  ulan: "500434094"
+  viaf: "197979419"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q98805178
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q98805178
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q98805178

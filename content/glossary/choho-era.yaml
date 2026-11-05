@@ -5,6 +5,7 @@ names:
     role: original
     text: 長保
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (長保) for the years 999–1003: 999 is Chōhō 1 (元年) and Chōhō 5 is 1003."
 description_md: |-
   **Chōhō** (長保) is a Japanese era name ([[nengo]]), proclaimed in 999. Its years are counted in lunar years from the new year before the proclamation: 999 is Chōhō 1 (元年), 1003 its last year, Chōhō 5. A Japanese source dates a year within it as "Chōhō 2" (長保2年) rather than by a continuous count.

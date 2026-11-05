@@ -2,4 +2,29 @@ public_id: 115222
 name: Daniel Tzanck
 given_name: Daniel
 family_name: Tzanck
+kind: person
+birth: 1874
+death: 1964
 wikidata_id: Q99593593
+metadata:
+  sources: [Wikidata Q99593593 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q99593593
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q99593593
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q99593593
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q99593593

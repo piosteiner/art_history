@@ -1,15 +1,21 @@
 public_id: 115561
-title_lang: en
+title_lang: de
 title: Adele von Le-Suire, stehend
 names:
   - lang: en
     role: translation
     text: Adele von Le-Suire, Standing
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6748/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: albert-von-keller
 created: c. 1887
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [111, 49, 2.5]
 institution: kunsthaus-zurich
 inventory_number: AvK 238.A

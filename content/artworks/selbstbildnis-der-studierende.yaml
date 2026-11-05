@@ -5,16 +5,33 @@ names:
   - lang: de
     role: alternative
     text: Der Student
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1800/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Self-Portrait (The Student)
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1800/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: fr
     role: translation
     text: Autoportrait (L'Etudiant)
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1800/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: ferdinand-hodler
 created: 1874
 kind: painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 materials: [oil paint, canvas]
 dimensions: [113, 73]
 institution: kunsthaus-zurich

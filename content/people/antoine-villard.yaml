@@ -2,4 +2,50 @@ public_id: 115202
 name: Antoine Villard
 given_name: Antoine
 family_name: Villard
+kind: person
+birth: 1867-04-17
+death: 1934-02-04
 wikidata_id: Q19844737
+metadata:
+  sources: [Wikidata Q19844737 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q19844737
+  - type: born_in
+    to: place/macon
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q19844737
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q19844737
+identifiers:
+  bnf: "177794122"
+  dome: "8949"
+  gnd: "1176761951"
+  idref: "234078367"
+  lc: nr2004001160
+  rkd: "81051"
+  ulan: "500099893"
+  viaf: "41788134"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q19844737
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q19844737
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q19844737

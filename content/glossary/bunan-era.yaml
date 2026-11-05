@@ -5,6 +5,7 @@ names:
     role: original
     text: 文安
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (文安) for the years 1444–1449: 1444 is Bun'an 1 (元年) and Bun'an 6 is 1449."
 description_md: |-
   **Bun'an** (文安) is a Japanese era name ([[nengo]]), proclaimed in 1444. Its years are counted in lunar years from the new year before the proclamation: 1444 is Bun'an 1 (元年), 1449 its last year, Bun'an 6. A Japanese source dates a year within it as "Bun'an 2" (文安2年) rather than by a continuous count.

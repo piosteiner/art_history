@@ -48,6 +48,20 @@ web_url: https://www.artic.edu/artworks/87005
 wikidata_id: Q3565037
 metadata:
   sources: [Wikidata Q3565037 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/mount-fuji
+    label: the mountain alone, seen from the south-west; no viewpoint is identified (Kikuchi compared it with the red Fuji seen from Gotemba)
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/gaifuukaisei.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：富士山そのものを主題とした作品
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade D+, placed at 35.31487, 138.63938 — “Placed close to the base of Mt Fuji (based on mountain size) to the south-west of the peak (so a southern wind crosses it)”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://www.artic.edu/iiif/2/38726da7-8122-dc49-9243-766a1eeba9ed/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/87005

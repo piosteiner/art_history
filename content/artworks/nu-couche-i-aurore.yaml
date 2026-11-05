@@ -1,19 +1,42 @@
 public_id: 115262
-title_lang: en
+title_lang: fr
 title: Nu couché I. Aurore
 names:
   - lang: fr
     role: translation
     text: Femme nue couchée; Figure couchée
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2938/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
     role: translation
     text: Liegender Frauenakt I (Aurora)
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2938/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Reclining Nude I (Aurore)
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2938/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: fr
     role: former
     text: Nu couché
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2938/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 attribution_label: forgery after Henri Matisse
 created: 1907
 authenticity: forgery

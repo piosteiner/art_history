@@ -1,0 +1,26 @@
+public_id: 115661
+name: Ejiri-juku
+names:
+  - lang: ja
+    role: translation
+    text: 江尻宿
+kind: settlement
+parent: shizuoka
+country_code: JP
+location: [138.48704, 35.02349]
+wikidata_id: Q3033380
+metadata:
+  sources: [Wikidata Q3033380 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q3033380
+  parent:
+    - accessed: 2026-11-04
+      property: P131
+      wikidata: Q3033380
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q3033380

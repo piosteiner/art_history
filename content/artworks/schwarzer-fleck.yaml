@@ -6,12 +6,23 @@ names:
     role: translation
     text: Black Spot
     status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1889/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: fr
     role: translation
     text: Tache noire
     status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/1889/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: wassily-kandinsky
 created: 1921
+medium: Öl auf Leinwand
 materials: [oil paint, canvas]
 dimensions: [138, 120]
 institution: kunsthaus-zurich

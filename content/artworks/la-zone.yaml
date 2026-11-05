@@ -5,9 +5,21 @@ names:
   - lang: de
     role: translation
     text: Die Zone
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/550/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Zone
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/550/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: otto-banninger
 created: 1936
 kind: sculpture

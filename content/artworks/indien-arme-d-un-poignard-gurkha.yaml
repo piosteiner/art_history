@@ -1,21 +1,38 @@
 public_id: 115518
-title_lang: en
+title_lang: fr
 title: Indien armé d’un poignard Gurkha
 names:
-  - lang: en
+  - lang: de
     role: translation
     text: Inder bewaffnet mit Gurkha-Dolch
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/56/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Indian Armed with Gurkha Dagger
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/56/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: fr
     role: original
     text: Un Indien armé du Gourka-kree
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/56/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: eugene-delacroix
 created: c. 1830
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [40.5, 32.5]
 institution: kunsthaus-zurich
 inventory_number: "2476"

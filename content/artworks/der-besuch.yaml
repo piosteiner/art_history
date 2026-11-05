@@ -5,11 +5,17 @@ names:
   - lang: en
     role: translation
     text: The Visit
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752017/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: gerard-ter-borch
 created: c. 1660
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [91.5, 107]
 institution: kunsthaus-zurich
 inventory_number: BU 0167

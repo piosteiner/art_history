@@ -5,6 +5,7 @@ names:
     role: original
     text: 永和
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (永和) for the years 1375–1379: 1375 is Eiwa 1 (元年) and Eiwa 5 is 1379."
 description_md: |-
   **Eiwa** (永和) is a Japanese era name ([[nengo]]), proclaimed in 1375. Its years are counted in lunar years from the new year before the proclamation: 1375 is Eiwa 1 (元年), 1379 its last year, Eiwa 5. A Japanese source dates a year within it as "Eiwa 2" (永和2年) rather than by a continuous count.

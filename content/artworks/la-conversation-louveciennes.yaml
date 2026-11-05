@@ -5,18 +5,33 @@ names:
   - lang: fr
     role: alternative
     text: La conversation, Louveciennes (La route de Versailles à Louveciennes)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: translation
     text: Das Gespräch, Louveciennes
     status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Conversation, Louveciennes
     status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: camille-pissarro
 created: 1870
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 materials: [canvas, oil paint]
 dimensions: [100, 81]
 institution: kunsthaus-zurich

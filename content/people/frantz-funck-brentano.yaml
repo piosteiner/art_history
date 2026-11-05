@@ -2,4 +2,46 @@ public_id: 112426
 name: Frantz Funck-Brentano
 given_name: Frantz
 family_name: Funck-Brentano
+kind: person
+birth: 1862-06-15
+death: 1947-06-13
 wikidata_id: Q1445752
+metadata:
+  sources: [Wikidata Q1445752 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q1445752
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q1445752
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/05/Frantz_Funck-Brentano_02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Frantz_Funck-Brentano_02.jpg
+    license: Public domain
+    credit: Unknown (Bain News Service, publisher)
+identifiers:
+  bnf: "119037386"
+  gnd: "116873043"
+  idref: "026876809"
+  lc: n85326345
+  viaf: "12308558"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1445752
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q1445752
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q1445752

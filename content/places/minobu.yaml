@@ -1,0 +1,28 @@
+public_id: 115686
+name: Minobu
+names:
+  - lang: ja
+    role: translation
+    text: 身延町
+  - lang: ko
+    role: translation
+    text: 미노부정
+  - lang: ru
+    role: translation
+    text: Минобу
+kind: settlement
+parent: yamanashi-prefecture
+country_code: JP
+location: [138.44244, 35.46747]
+wikidata_id: Q1204435
+metadata:
+  sources: [Wikidata Q1204435 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1204435
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q1204435

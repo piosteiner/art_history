@@ -1,15 +1,21 @@
 public_id: 115528
-title_lang: en
+title_lang: de
 title: Auffindung der Leichname der Heiligen Petrus und Paulus
 names:
   - lang: en
     role: translation
     text: The Finding of the Bodies of Sts Peter and Paul
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/577960/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: giovanni-benedetto-castiglione
 created: c. 1647–1651
 created_span: uncertain
 kind: print
-medium: Etching on paper
+medium: Radierung auf Papier
 dimensions: [28.7, 20.4]
 institution: kunsthaus-zurich
 inventory_number: ZKG.2020/0001

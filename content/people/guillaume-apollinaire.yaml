@@ -2,4 +2,107 @@ public_id: 115617
 name: Guillaume Apollinaire
 given_name: Guillaume
 family_name: Apollinaire
+names:
+  - kind: birth
+    lang: fr
+    role: former
+    text: Albert Wladimir Alexandre Apollinaire Kostrowitzky
+    sources:
+      - accessed: 2026-11-04
+        property: P1477
+        wikidata: Q133855
+  - kind: pseudonym
+    role: alternative
+    text: Fernand Laviet
+    sources:
+      - accessed: 2026-11-04
+        property: P742
+        wikidata: Q133855
+kind: person
+birth: 1880-08-26
+death: 1918-11-09
 wikidata_id: Q133855
+metadata:
+  sources: [Wikidata Q133855 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    period: 1916-03-09
+    period_label: from 9 March 1916
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q133855
+  - type: born_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q133855
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q133855
+  - type: lived_in
+    to: place/cannes
+    sources:
+      - accessed: 2026-11-04
+        property: P551
+        wikidata: Q133855
+  - type: lived_in
+    to: place/lyon
+    sources:
+      - accessed: 2026-11-04
+        property: P551
+        wikidata: Q133855
+  - type: lived_in
+    to: place/nice
+    sources:
+      - accessed: 2026-11-04
+        property: P551
+        wikidata: Q133855
+  - type: lived_in
+    to: place/rome
+    period: 1880/1887
+    sources:
+      - accessed: 2026-11-04
+        property: P551
+        wikidata: Q133855
+  - type: lived_in
+    to: place/paris
+    period: 1918
+    period_label: until 1918
+    sources:
+      - accessed: 2026-11-04
+        property: P551
+        wikidata: Q133855
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/82/Guillaume_Apollinaire_-_Septembre_1911.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Guillaume_Apollinaire_-_Septembre_1911.jpg
+    license: Public domain
+    credit: Unknown photographer
+identifiers:
+  bnf: 11888978p
+  gnd: "118503634"
+  idref: "027269590"
+  kulturnav: 42ce692f-f2d8-437d-851c-4a2d42d91d55
+  lc: n78080654
+  nlk: KAC199600854
+  rkd: "2191"
+  ulan: "500010539"
+  viaf: "66462795"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q133855
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q133855
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q133855

@@ -1,0 +1,17 @@
+public_id: 115651
+name: Kai Province
+kind: region
+parent: yamanashi-prefecture
+location: [138.62861, 35.67861]
+wikidata_id: Q858076
+metadata:
+  sources: [Wikidata Q858076 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q858076
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q858076

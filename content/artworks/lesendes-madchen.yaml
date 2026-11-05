@@ -5,11 +5,17 @@ names:
   - lang: de
     role: translation
     text: Lesendes Mädchen (Friederike Unger?)
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/10353/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: johann-gottfried-schadow
 created: c. 1800
 created_span: uncertain
 kind: drawing
-medium: Counterproof in black chalk, with black chalk, on laid paper
+medium: Abklatsch in Kreide in Schwarz, mit Kreide in Schwarz, auf Papier (vergé)
 dimensions: [39.5, 32]
 institution: kunsthaus-zurich
 inventory_number: Z.1942/0007

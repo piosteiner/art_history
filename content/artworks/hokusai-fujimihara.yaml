@@ -14,6 +14,19 @@ institution: tokyo-national-museum
 description_md: "From [[artwork/thirty-six-views-of-mount-fuji]], begun in 1823 and completed around 1831: a tiny man kneels inside an enormous barrel, smoothing the joints between its planks, beyond him a parched rice field and, in the far distance, the snow-covered tip of Fuji — the circle of the barrel encloses the craftsman, his work and the beauty of the landscape. [[source/history-of-japanese-art|pp. 290–291, fig. 331]]"
 wikidata_id: Q17210582
 relationships:
+  - type: depicts
+    to: place/fujimi-cho
+    label: Fujimigahara in Owari, today Fujimi-chō in Naka ward, Nagoya — the westernmost view; Fuji cannot be seen from there
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/bishuufujimigahara.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：愛知県名古屋市中区富士見町周辺とされます
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade D+, placed at 34.73771, 137.48951 — “The Owari Province is in this general area, and we needed an elevated view point - with fields in the distance - to be able to see Mt Fuji”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
   - type: associated_with
     to: movement/edo-period
     sources:

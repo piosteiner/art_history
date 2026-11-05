@@ -2,4 +2,39 @@ public_id: 111840
 name: Heinz Kisters
 given_name: Heinz
 family_name: Kisters
+kind: person
+birth: 1912-05-22
+death: 1977-07-05
 wikidata_id: Q1458012
+metadata:
+  sources: [Wikidata Q1458012 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q1458012
+  - type: born_in
+    to: place/cologne
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q1458012
+identifiers:
+  gnd: "129468053"
+  rkd: "346986"
+  viaf: "42917983"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1458012
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q1458012
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q1458012

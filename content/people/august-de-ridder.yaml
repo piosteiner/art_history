@@ -2,4 +2,56 @@ public_id: 115381
 name: August de Ridder
 given_name: August
 family_name: de Ridder
+kind: person
+birth: 1837-05-04
+death: 1911-05-13
 wikidata_id: Q15434398
+metadata:
+  sources: [Wikidata Q15434398 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/belgium
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q15434398
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q15434398
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q15434398
+  - type: lived_in
+    to: place/kronberg-im-taunus
+    sources:
+      - accessed: 2026-11-04
+        property: P551
+        wikidata: Q15434398
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/03/August_de_Ridder.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:August_de_Ridder.jpg
+    license: CC0
+    credit: Original Foto,it represents the Grand-Grandfather of my brother in law, Prof.Johannes Küchler, Berlin, who gave it to me
+identifiers:
+  gnd: "1013881710"
+  rkd: "458200"
+  viaf: "172202245"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q15434398
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q15434398
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q15434398

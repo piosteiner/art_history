@@ -2,4 +2,46 @@ public_id: 111806
 name: Henry Bing
 given_name: Henry
 family_name: Bing
+kind: person
+birth: 1888-08-23
+death: 1965-06-03
 wikidata_id: Q51562230
+metadata:
+  sources: [Wikidata Q51562230 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q51562230
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q51562230
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q51562230
+identifiers:
+  dome: "1322"
+  gnd: "116183861"
+  ulan: "500075590"
+  viaf: "251092884"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q51562230
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q51562230
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q51562230

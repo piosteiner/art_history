@@ -33,6 +33,20 @@ web_url: https://www.metmuseum.org/art/collection/search/56390
 wikidata_id: Q18173389
 metadata:
   sources: [Wikidata Q18173389 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/senju
+    label: Senju-Motojuku, by the weir on a canal into the Sumida
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/bushuusenju.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：東京都足立区千住周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade B, placed at 35.74862, 139.80033 — “Now part of Tokyo, Senju is a residential area in the Mushachi Province that (per the painting) used to be more rural”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP141087.jpg
     source_url: https://www.metmuseum.org/art/collection/search/56390

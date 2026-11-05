@@ -1,0 +1,23 @@
+public_id: 115653
+name: Fujimi-chō
+names:
+  - Fujimi-cho
+  - lang: ja
+    role: translation
+    text: 富士見町
+kind: district
+parent: nagoya
+country_code: JP
+location: [136.9071, 35.15285]
+wikidata_id: Q29363686
+metadata:
+  sources: [Wikidata Q29363686 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q29363686
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q29363686

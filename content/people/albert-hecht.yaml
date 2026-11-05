@@ -2,4 +2,35 @@ public_id: 111929
 name: Albert Hecht
 given_name: Albert
 family_name: Hecht
+kind: person
+birth: 1842-07-02
+death: 1889-08-21
 wikidata_id: Q93947267
+metadata:
+  sources: [Wikidata Q93947267 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q93947267
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q93947267
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q93947267
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q93947267
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q93947267

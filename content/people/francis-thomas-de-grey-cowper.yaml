@@ -2,4 +2,38 @@ public_id: 111843
 name: Francis Thomas de Grey Cowper
 given_name: Francis Thomas de Grey
 family_name: Cowper
+kind: person
+birth: 1834-06-11
+death: 1905-07-18
 wikidata_id: Q4247435
+metadata:
+  sources: [Wikidata Q4247435 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q4247435
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d6/Francis_Cowper%2C_7th_Earl_Cowper.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Francis_Cowper,_7th_Earl_Cowper.jpg
+    license: Public domain
+    credit: Southwell Brothers
+identifiers:
+  gnd: "116706295"
+  idref: "106010816"
+  viaf: "74610270"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q4247435
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q4247435
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q4247435

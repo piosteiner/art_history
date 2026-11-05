@@ -5,6 +5,7 @@ names:
     role: original
     text: 暦仁
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (暦仁) for the year 1238: 1238 is Ryakunin 1 (元年), its only year."
 description_md: |-
   **Ryakunin** (暦仁) is a Japanese era name ([[nengo]]), proclaimed in 1238. Its years are counted in lunar years from the new year before the proclamation: 1238 is Ryakunin 1 (元年), its only year.

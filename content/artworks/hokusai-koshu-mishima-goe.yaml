@@ -28,6 +28,21 @@ web_url: https://www.metmuseum.org/art/collection/search/56786
 wikidata_id: Q18173401
 metadata:
   sources: [Wikidata Q18173401 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/kagosaka-pass
+    label: the Kagosaka Pass between Lake Yamanaka and Gotemba, on the way from Kai to Mishima
+    certainty: probable
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/koushuumishimagoe.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：山梨県南都留郡山中湖村から籠坂峠周辺と考えられます
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade C-, placed at 35.1588, 138.99559 — “The pass from Tokyo to Mishima is long and this painting could be anywhere along it. The topography at this location lined up well, though.”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP141043.jpg
     source_url: https://www.metmuseum.org/art/collection/search/56786

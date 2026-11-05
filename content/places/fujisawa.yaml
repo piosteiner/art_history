@@ -1,0 +1,17 @@
+public_id: 115670
+name: Fujisawa
+kind: settlement
+parent: kanagawa
+location: [139.49089, 35.33878]
+wikidata_id: Q386661
+metadata:
+  sources: [Wikidata Q386661 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q386661
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q386661

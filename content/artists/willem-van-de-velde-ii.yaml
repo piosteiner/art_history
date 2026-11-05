@@ -2,6 +2,12 @@ public_id: 115347
 name: Willem van de Velde (II)
 given_name: Willem van de Velde
 family_name: (II)
+names:
+  - lang: nl
+    role: original
+    text: Willem van de Velde
+  - William Vandevelde Jr.
+  - William Vanderveldt the Younger
 birth: 1633-12-18
 death: 1707-04-06
 wikidata_id: Q432266
@@ -20,12 +26,31 @@ relationships:
       - accessed: 2026-11-03
         property: P19
         wikidata: Q432266
+  - type: died_in
+    to: place/greenwich
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q432266
   - type: worked_in
     to: place/amsterdam
     period: 1652/1656
     sources:
       - accessed: 2026-11-03
         property: P937
+        wikidata: Q432266
+  - type: worked_in
+    to: place/great-britain
+    period: 1673/1707
+    sources:
+      - accessed: 2026-11-04
+        property: P937
+        wikidata: Q432266
+  - type: student_of
+    to: artist/willem-van-de-velde-the-elder
+    sources:
+      - accessed: 2026-11-04
+        property: P1066
         wikidata: Q432266
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Willem_van_de_Velde_II_%281633-1707%29_-_%28by_Lodewijk_van_der_Helst%2C_1672%29.jpg/1280px-Willem_van_de_Velde_II_%281633-1707%29_-_%28by_Lodewijk_van_der_Helst%2C_1672%29.jpg

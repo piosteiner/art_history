@@ -6,10 +6,20 @@ names:
     role: translation
     text: Die Opfergabe
     status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Offering
     status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: paul-gauguin
 created: 1902
 kind: oil painting

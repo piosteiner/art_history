@@ -2,4 +2,49 @@ public_id: 112339
 name: Francis Davies
 given_name: Francis
 family_name: Davies
+kind: person
+birth: 1864-07-03
+death: 1948-03-18
 wikidata_id: Q3750919
+metadata:
+  sources: [Wikidata Q3750919 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q3750919
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q3750919
+  - type: born_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q3750919
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Gen_Sir_Francis_Davies.jpg/1280px-Gen_Sir_Francis_Davies.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gen_Sir_Francis_Davies.jpg
+    license: Public domain
+    credit: Official British military photograph
+identifiers:
+  gnd: 107816939X
+  viaf: "258144782958660297893"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q3750919
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q3750919
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q3750919

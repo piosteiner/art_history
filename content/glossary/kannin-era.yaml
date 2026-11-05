@@ -5,6 +5,7 @@ names:
     role: original
     text: 寛仁
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (寛仁) for the years 1017–1020: 1017 is Kannin 1 (元年) and Kannin 4 is 1020."
 description_md: |-
   **Kannin** (寛仁) is a Japanese era name ([[nengo]]), proclaimed in 1017. Its years are counted in lunar years from the new year before the proclamation: 1017 is Kannin 1 (元年), 1020 its last year, Kannin 4. A Japanese source dates a year within it as "Kannin 2" (寛仁2年) rather than by a continuous count.

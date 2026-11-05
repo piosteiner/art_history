@@ -5,16 +5,33 @@ names:
   - lang: en
     role: translation
     text: Girl with Striped Apron
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/69/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: fr
     role: translation
     text: Fillette au tablier rayé
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/69/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Brustbild eines Mädchens
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/69/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: adolf-dietrich
 created: 1923
 kind: oil painting
-medium: Oil on cardboard
+medium: Öl auf Karton
 dimensions: [37, 28]
 institution: kunsthaus-zurich
 inventory_number: 1957/0018

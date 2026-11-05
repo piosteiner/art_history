@@ -33,6 +33,20 @@ web_url: https://www.metmuseum.org/art/collection/search/55291
 wikidata_id: Q18173420
 metadata:
   sources: [Wikidata Q18173420 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/senju
+    label: Sekiya village on the Sumida, today Senju-Nakachō, where a stone marks the view
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/sumidagawasekiyanosato.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：東京都足立区千住関屋町周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade B+, placed at 35.7492, 139.79274 — “While I couldn't locate a Sekiya Village, I did find a section of the Sumida River with a very close resemblance to the sharp corner in the painting.”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP141023.jpg
     source_url: https://www.metmuseum.org/art/collection/search/55291

@@ -5,13 +5,24 @@ names:
   - lang: de
     role: translation
     text: Der Seerosenteich mit Iris
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2737/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: alternative
     text: The Water Lily Pond with Irises
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2737/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: claude-monet
 created: 1914/1922
 kind: oil painting
-medium: oil on canvas
+medium: Öl auf Leinwand
 materials: [oil paint, canvas]
 dimensions: [200, 600]
 institution: kunsthaus-zurich

@@ -5,9 +5,15 @@ names:
   - lang: de
     role: translation
     text: Malerin, vom Rücken gesehen, in Landschaft
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/93937/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: lovis-corinth
 kind: drawing
-medium: Graphite pencil on paper
+medium: Grafitstift auf Papier
 dimensions: [22.8, 32.9]
 institution: kunsthaus-zurich
 inventory_number: Z.1942/0001

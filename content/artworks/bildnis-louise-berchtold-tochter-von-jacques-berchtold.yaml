@@ -2,14 +2,20 @@ public_id: 115438
 title_lang: de
 title: Bildnis Louise Berchtold, Tochter von Jacques Berchtold
 names:
-  - lang: fr
+  - lang: en
     role: translation
     text: Portrait of Louise Berchtold, Daughter of Jacques Berchtold
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3845/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 attribution_label: Anonymous, Zürich
 created: early 19th century
 created_span: uncertain
 kind: painting
-medium: Wax painting
+medium: Wachsbild
 dimensions: [13.5]
 institution: kunsthaus-zurich
 inventory_number: 1951/0003

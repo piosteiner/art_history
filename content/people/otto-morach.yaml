@@ -2,4 +2,50 @@ public_id: 115567
 name: Otto Morach
 given_name: Otto
 family_name: Morach
+kind: person
+birth: 1887-08-02
+death: 1973-12-25
 wikidata_id: Q119369
+metadata:
+  sources: [Wikidata Q119369 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q119369
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q119369
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4d/Fritz_Baumann_Portr%C3%A4t_Otto_Morach_1913.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fritz_Baumann_Portr%C3%A4t_Otto_Morach_1913.jpg
+    license: Public domain
+    credit: Fritz Baumann
+identifiers:
+  bnf: 12161332j
+  gnd: "119127075"
+  hls: "022087"
+  idref: "224936867"
+  lc: n84175331
+  rkd: "57581"
+  sikart: "4000067"
+  ulan: "500030671"
+  viaf: "67268992"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q119369
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q119369
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q119369

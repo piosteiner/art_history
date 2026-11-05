@@ -5,11 +5,17 @@ names:
   - lang: en
     role: translation
     text: Standing Madonna with Child
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3332/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 attribution_label: Anonymous, German
 created: c. 1420
 created_span: uncertain
 kind: sculpture
-medium: Wood, with remains of old paint
+medium: Holz, mit Resten alter Bemalung
 dimensions: [75, 27, 20.5]
 institution: kunsthaus-zurich
 inventory_number: 1951/0015

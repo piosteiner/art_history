@@ -1,0 +1,34 @@
+public_id: 115690
+name: Chiba
+names:
+  - lang: ja
+    role: translation
+    text: 千葉市
+  - lang: ko
+    role: translation
+    text: 지바시
+  - lang: ru
+    role: translation
+    text: Тиба
+kind: settlement
+parent: chiba
+country_code: JP
+location: [140.10636, 35.60728]
+wikidata_id: Q170616
+metadata:
+  sources: [Wikidata Q170616 (retrieved 2026-11-04)]
+identifiers:
+  gnd: 4388993-1
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q170616
+  parent:
+    - accessed: 2026-11-04
+      property: P131
+      wikidata: Q170616
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q170616

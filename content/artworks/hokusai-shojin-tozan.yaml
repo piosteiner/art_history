@@ -27,6 +27,17 @@ web_url: https://www.artic.edu/artworks/87001
 wikidata_id: Q18173437
 metadata:
   sources: [Wikidata Q18173437 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/mount-fuji
+    label: on the mountain itself, near the summit
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/shonintozan.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：富士山中
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Climbing_on_Mt._Fuji.jpg/1280px-Climbing_on_Mt._Fuji.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Climbing_on_Mt._Fuji.jpg

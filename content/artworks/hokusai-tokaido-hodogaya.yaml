@@ -28,6 +28,21 @@ web_url: https://www.metmuseum.org/art/collection/search/55458
 wikidata_id: Q18173426
 metadata:
   sources: [Wikidata Q18173426 (retrieved 2026-11-03)]
+relationships:
+  - type: depicts
+    to: place/hodogaya-juku
+    label: the Tōkaidō near Hodogaya — probably the Shinano slope on the way to Totsuka
+    certainty: probable
+    sources:
+      - url: https://higonote.net/ukiyoemap/fugaku36/toukaidouhodogaya.html
+        source: higonote-fugaku36
+        accessed: 2026-11-04
+      - note: 現在地の目安：神奈川県横浜市保土ケ谷区、旧程ヶ谷宿周辺
+        source: ukiyoe-yawa-fugaku36
+        accessed: 2026-11-04
+      - note: grade A-, placed at 35.44619, 139.59947 — “Hodogaya Station on the Tokaido road - one of the Five Routes of the Edo period - is still an active station today. The exact location may have changed over the”
+        source: arcgis-hokusai-views-of-mt-fuji
+        accessed: 2026-11-04
 images:
   - url: https://images.metmuseum.org/CRDImages/as/original/DP141025.jpg
     source_url: https://www.metmuseum.org/art/collection/search/55458

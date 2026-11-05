@@ -2,4 +2,27 @@ public_id: 112262
 name: Mattheus van den Broucke
 given_name: Mattheus
 family_name: van den Broucke
+kind: person
+birth: 1620
+death: 1685
 wikidata_id: Q139066685
+metadata:
+  sources: [Wikidata Q139066685 (retrieved 2026-11-04)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/84/Samuel_van_Hoogstraten_-_Portret_van_Mattheus_van_den_Broucke_%281620-1685%29_-_DM-890-499_-_Dordrechts_Museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Samuel_van_Hoogstraten_-_Portret_van_Mattheus_van_den_Broucke_(1620-1685)_-_DM-890-499_-_Dordrechts_Museum.jpg
+    license: Public domain
+    credit: Samuel van Hoogstraten
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q139066685
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q139066685
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q139066685

@@ -1,20 +1,38 @@
 public_id: 114970
-title_lang: en
+title_lang: de
 title: Titania liebkost Zettel mit dem Eselskopf
 names:
   - lang: de
     role: translation
     text: Titania erwacht, von aufwartenden Fairies umgeben und in Verzückung an den eselsköpfigen Bottom geschmiegt
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1342/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Titania, Bottom and the Fairies
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1342/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: fr
     role: translation
     text: Titania enlaçant Bottom à la tête d’âne
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1342/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: henry-fuseli
 created: 1793/1794
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [169, 135]
 institution: kunsthaus-zurich
 inventory_number: "2543"

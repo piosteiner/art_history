@@ -2,4 +2,38 @@ public_id: 112445
 name: Louis Devraigne
 given_name: Louis
 family_name: Devraigne
+kind: person
+birth: 1876
+death: 1946
 wikidata_id: Q50822285
+metadata:
+  sources: [Wikidata Q50822285 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q50822285
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/%2829-4-26%29_Dr_Devraigne%2C_m%C3%A9decin_accoucheur_des_h%C3%B4pitaux_-_btv1b53161670v.jpg/1280px-%2829-4-26%29_Dr_Devraigne%2C_m%C3%A9decin_accoucheur_des_h%C3%B4pitaux_-_btv1b53161670v.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:(29-4-26)_Dr_Devraigne,_m%C3%A9decin_accoucheur_des_h%C3%B4pitaux_-_btv1b53161670v.jpg
+    license: Public domain
+    credit: Agence Rol. Agence photographique (commanditaire)
+identifiers:
+  bnf: 12389262w
+  idref: "032972865"
+  viaf: "84860113"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q50822285
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q50822285
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q50822285

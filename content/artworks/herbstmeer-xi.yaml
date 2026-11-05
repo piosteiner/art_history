@@ -1,17 +1,28 @@
 public_id: 115183
-title_lang: en
 title: Herbstmeer XI
 names:
   - lang: de
     role: translation
     text: Herbstmeer XI (Küste u. orang. Himmel) (Werkkatalog)
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2682/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Autumn Sea XI (Coast and Orange Sky)
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2682/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: emil-nolde
 created: 1910
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [70, 89.5]
 institution: kunsthaus-zurich
 inventory_number: 1950/0002

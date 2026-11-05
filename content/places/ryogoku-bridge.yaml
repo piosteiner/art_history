@@ -1,0 +1,37 @@
+public_id: 115666
+name: Ryōgoku Bridge
+names:
+  - Ryogoku Bridge
+  - Ryōgoku-bashi
+  - lang: fr
+    role: translation
+    text: pont de Ryōgoku
+  - lang: es
+    role: translation
+    text: puente Ryōgoku
+  - lang: ja
+    role: translation
+    text: 両国橋
+  - lang: zh
+    role: translation
+    text: 兩國橋
+kind: building
+parent: tokyo
+country_code: JP
+location: [139.78872, 35.69431]
+wikidata_id: Q3080489
+metadata:
+  sources: [Wikidata Q3080489 (retrieved 2026-11-04)]
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q3080489
+  parent:
+    - accessed: 2026-11-04
+      property: P131
+      wikidata: Q3080489
+  location:
+    - accessed: 2026-11-04
+      property: P625
+      wikidata: Q3080489

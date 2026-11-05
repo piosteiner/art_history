@@ -5,44 +5,105 @@ names:
   - lang: en
     role: translation
     text: View from the Dunes to the Sea
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Ruine mit Dünen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Dünenlandschaft
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Dünenlandschaft mit Ausblick auf das Meer bei Unwetter
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Küstenlandschaft bei Unwetter
-  - lang: en
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
     role: former
     text: Wasserlandschaft
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: former
     text: Zee u duinen
-  - lang: en
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: fr
     role: former
     text: Petit paysage de dunes
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: former
     text: Sand-hill landscape
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Dünenlandschaft mit Meer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: de
     role: former
     text: Landschaft mit Ruine Egmont
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: former
     text: The dunes near Sheveningen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3560/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: jacob-van-ruisdael
 created: c. 1655
 created_span: uncertain
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [26, 35]
 institution: kunsthaus-zurich
 inventory_number: R 31

@@ -2,4 +2,29 @@ public_id: 115011
 name: H M Calmann
 given_name: H M
 family_name: Calmann
+kind: person
+birth: 1899
+death: 1982
 wikidata_id: Q118144224
+metadata:
+  sources: [Wikidata Q118144224 (retrieved 2026-11-04)]
+relationships:
+  - type: born_in
+    to: place/hamburg
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q118144224
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q118144224
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q118144224
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q118144224

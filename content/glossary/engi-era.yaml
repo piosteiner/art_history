@@ -5,6 +5,7 @@ names:
     role: original
     text: 延喜
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (延喜) for the years 901–922: 901 is Engi 1 (元年) and Engi 22 is 922."
 description_md: |-
   **Engi** (延喜) is a Japanese era name ([[nengo]]), proclaimed in 901. Its years are counted in lunar years from the new year before the proclamation: 901 is Engi 1 (元年), 922 its last year, Engi 22. A Japanese source dates a year within it as "Engi 2" (延喜2年) rather than by a continuous count.

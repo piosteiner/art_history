@@ -1,17 +1,29 @@
 public_id: 112232
-title_lang: en
+title_lang: fr
 title: Combat de chiens et d'ours
 names:
   - lang: de
     role: translation
     text: Kampf von Hunden und Bären
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707959/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: Dogs Fighting Bears
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707959/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: theodore-gericault
 created: 1812/1816
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [28, 37]
 institution: kunsthaus-zurich
 inventory_number: BU 0133

@@ -1,2 +1,20 @@
 public_id: 115120
-name: Master from the circle of the Manesse codex
+name_lang: de
+name: Meister aus dem Kreis der Manesse-Handschrift
+given_name: Meister aus dem Kreis der Manesse-Handschrift
+names:
+  - lang: en
+    role: translation
+    text: Master from the circle of the Manesse codex
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/en/collection/item/2375/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+active: c. 1320
+sources:
+  active:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2375/
+      note: active when the work held was made — the Kunsthaus dates “Kreuzigung” c. 1320
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-04

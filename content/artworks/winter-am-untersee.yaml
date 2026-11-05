@@ -1,20 +1,37 @@
 public_id: 115486
-title_lang: en
+title_lang: de
 title: Winter am Untersee
 names:
   - lang: en
     role: translation
     text: Winter at Lake Untersee
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/507/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: fr
     role: translation
     text: L'Hiver à l'Untersee
-  - lang: en
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/507/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
+  - lang: de
     role: former
     text: Winterlandschaft
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/507/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: adolf-dietrich
 created: 1941
 kind: oil painting
-medium: Oil on cardboard
+medium: Öl auf Karton
 dimensions: [46, 59.5]
 institution: kunsthaus-zurich
 inventory_number: "2548"

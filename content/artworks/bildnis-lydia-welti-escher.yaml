@@ -2,16 +2,28 @@ public_id: 115341
 title_lang: de
 title: Bildnis Lydia Welti-Escher
 names:
-  - lang: fr
+  - lang: en
     role: translation
     text: Portrait of Lydia Welti-Escher
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3360/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: fr
     role: translation
     text: Portrait de Lydia Welti-Escher
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3360/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: karl-stauffer-bern
 created: 1886
 kind: oil painting
-medium: Oil on canvas
+medium: Öl auf Leinwand
 dimensions: [150.5, 100]
 institution: kunsthaus-zurich
 inventory_number: "2538"

@@ -5,10 +5,16 @@ names:
   - lang: en
     role: translation
     text: Interior of St. Bavo in Haarlem
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/750973/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: pieter-jansz-saenredam
 created: 1636
 kind: oil painting
-medium: Oil on panel
+medium: Öl auf Holz
 dimensions: [43, 37]
 institution: kunsthaus-zurich
 inventory_number: BU 0164

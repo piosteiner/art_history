@@ -5,9 +5,21 @@ names:
   - lang: de
     role: translation
     text: Die grosse Trompete
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1110/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
   - lang: en
     role: translation
     text: The Big Trumpet
+    status: official
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1110/
+        note: title on the museum's page (German site)
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-04
 creator: julio-gonzalez
 created: 1927/1938
 created_label: c. 1932/1933

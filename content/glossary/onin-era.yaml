@@ -5,6 +5,7 @@ names:
     role: original
     text: 応仁
 category: calendar
+parent: japanese-calendar
 definition: "Japanese era name (応仁) for the years 1467–1469: 1467 is Ōnin 1 (元年) and Ōnin 3 is 1469."
 description_md: |-
   **Ōnin** (応仁) is a Japanese era name ([[nengo]]), proclaimed in 1467. Its years are counted in lunar years from the new year before the proclamation: 1467 is Ōnin 1 (元年), 1469 its last year, Ōnin 3. A Japanese source dates a year within it as "Ōnin 2" (応仁2年) rather than by a continuous count.

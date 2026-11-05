@@ -2,4 +2,45 @@ public_id: 112043
 name: Jules Luquet
 given_name: Jules
 family_name: Luquet
+kind: person
+birth: 1824-07-07
+death: 1904-11-28
 wikidata_id: Q110239495
+metadata:
+  sources: [Wikidata Q110239495 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q110239495
+  - type: died_in
+    to: place/neuilly-sur-seine
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q110239495
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1c/Jules_Luquet_by_Charles-Emile_Jacque.png
+    source_url: https://commons.wikimedia.org/wiki/File:Jules_Luquet_by_Charles-Emile_Jacque.png
+    license: Public domain
+    credit: Charles Jacque
+identifiers:
+  bnf: "161829610"
+  gnd: 123750659X
+  idref: "187486662"
+  viaf: "107073778"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q110239495
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q110239495
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q110239495

@@ -2,4 +2,50 @@ public_id: 115525
 name: Max Haller
 given_name: Max
 family_name: Haller
+kind: person
+birth: 1895-10-13
+death: 1971-07-19
 wikidata_id: Q1238217
+metadata:
+  sources: [Wikidata Q1238217 (retrieved 2026-11-04)]
+relationships:
+  - type: nationality
+    to: polity/austria
+    sources:
+      - accessed: 2026-11-04
+        property: P27
+        wikidata: Q1238217
+  - type: born_in
+    to: place/bregenz
+    sources:
+      - accessed: 2026-11-04
+        property: P19
+        wikidata: Q1238217
+  - type: died_in
+    to: place/bregenz
+    sources:
+      - accessed: 2026-11-04
+        property: P20
+        wikidata: Q1238217
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/54/Rudolf_Wacker_Max_Haller_im_Atelier.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rudolf_Wacker_Max_Haller_im_Atelier.jpg
+    license: Public domain
+    credit: Rudolf Wacker
+identifiers:
+  gnd: "129077585"
+  lc: no2012121313
+  viaf: "33066972"
+sources:
+  kind:
+    - accessed: 2026-11-04
+      property: P31
+      wikidata: Q1238217
+  birth:
+    - accessed: 2026-11-04
+      property: P569
+      wikidata: Q1238217
+  death:
+    - accessed: 2026-11-04
+      property: P570
+      wikidata: Q1238217
