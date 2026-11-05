@@ -25,9 +25,9 @@
 // with its result (per set and kind of quiz: the set page's "Your results"); visitors learn too, nothing is kept.
 import { account } from '../account';
 import {
-  answerCard, ApiError, copySet, createSet, deleteSet, editSetEditors, getCards, getInvitation, getPublicSets, getSet, getSets, getSetStats, joinSet,
-  leaveSet, loginUrl, previewDescription, recordRound, removeFromSet, savePlan, shareSet, updateSet,
-  type SetRef, type StudyCard, type StudyItem, type StudyMode, type StudyPlan, type StudySet, type StudyStats,
+  answerCard, ApiError, copySet, createSet, decideRemoval, deleteSet, editSetEditors, getCards, getInvitation, getPublicSets, getSet, getSetHistory, getSets, getSetStats, joinSet,
+  leaveSet, lockSet, loginUrl, previewDescription, proposeRemoval, recordRound, removeFromSet, restoreSet, savePlan, shareSet, updateSet, voteRemoval,
+  type SetEvent, type SetRef, type StudyCard, type StudyItem, type StudyMode, type StudyPlan, type StudySet, type StudyStats,
 } from '../api';
 import { accountLinks } from './account';
 import { href, html, PLURAL_LABEL, render, thumb, trusted, TYPE_LABEL, type Html } from '../html';
@@ -131,9 +131,11 @@ function list(main: HTMLElement) {
         <input name="topic" placeholder="Topic (optional)" aria-label="Topic" maxlength="80" list="sets-topics" autocomplete="off">
         <button type="submit">Create</button><datalist id="sets-topics">${topicOptions(topics)}</datalist></form>
       <p class="sets-msg small" role="status"></p>
+      ${sets.some((s) => s.to_vote) ? html`<p class="flash sets-votes-waiting">Removals proposed in your sets wait for your vote:
+        ${sets.filter((s) => s.to_vote).map((s, i) => html`${i ? ' · ' : ''}<a href="/sets/${s.id!}#sets-proposals">${s.name}</a> <span class="muted">(${String(s.to_vote)})</span>`)}</p>` : ''}
       ${sets.length ? groups.map(([topic, list]) => html`<section class="sets-group">${groups.length > 1 || topic ? html`<h2>${topic || 'No topic'}</h2>` : ''}
         <ul class="sets-list">${list.map((s) => html`<li class="sets-item">
-          <a class="sets-name" href="/sets/${s.id!}">${s.name}</a>${visBadge(s)}${together(s)}${s.exam_on ? html` <span class="tag sets-exam" title="Your exam date">exam ${longDay(s.exam_on)}</span>` : ''}
+          <a class="sets-name" href="/sets/${s.id!}">${s.name}</a>${visBadge(s)}${together(s)}${s.locked_at ? html` <span class="tag" title="The owner locked it: no changes by its editors">locked</span>` : ''}${s.proposals ? html` <a class="tag sets-proposal-tag" href="/sets/${s.id!}#sets-proposals" title="Entries proposed for removal">${plural(s.proposals, 'removal')} proposed</a>` : ''}${s.exam_on ? html` <span class="tag sets-exam" title="Your exam date">exam ${longDay(s.exam_on)}</span>` : ''}
           <span class="muted small">${plural(s.count, 'entry', 'entries')} · changed ${day(s.updated_at)}${s.description_text ? html` · ${s.description_text}` : ''}</span>
           <span class="sets-actions">${s.count ? html`<a class="button-link" href="/sets/${s.id!}/study">Study</a>` : ''}
             ${s.role === 'editor' ? '' : html`<button type="button" class="link-button sets-delete" data-id="${s.id!}" data-name="${s.name}">Delete</button>`}</span></li>`)}</ul></section>`)
@@ -226,8 +228,12 @@ function one(main: HTMLElement, ref: SetRef) {
   Promise.all([getSet(ref), account()]).then(([r, me]) => {
     if (!r) return 'own' in ref ? loggedOut(main) : failed(main, 'This set is not shared (any more).');
     const { set, items } = r;
+    const proposals = r.proposals ?? [];
     const own = 'own' in ref;
     const owner = own && (set.role ?? 'owner') === 'owner';
+    const locked = Boolean(set.locked_at);
+    const editor = own && !owner;
+    const proposed = new Set(proposals.map((p) => `${p.type}/${p.slug}`));
     if (!own && set.mine && set.id) { location.replace(`/sets/${set.id}`); return; }   // the owner's own page
     document.title = `${set.name} · Study sets · Art History`;
     const byType = new Map<string, StudyItem[]>();
@@ -235,12 +241,13 @@ function one(main: HTMLElement, ref: SetRef) {
     const crumbs = own ? html`<a href="/sets">Your study sets</a>` : html`<a href="/sets/shared">Shared sets</a>`;
     render(main, html`<section class="page sets-page">
       <p class="crumbs">${crumbs} / ${set.name}</p>
-      <h1>${set.name}${own ? visBadge(set) : ''}${own ? together(set) : ''}</h1>
+      <h1>${set.name}${own ? visBadge(set) : ''}${own ? together(set) : ''}${own && locked ? html` <span class="tag" title="Its editors read and study it but change nothing">locked</span>` : ''}</h1>
       ${meta(set, !owner)}
+      ${editor && locked ? html`<p class="flash">The owner has locked this set: you can study it, but not change it.</p>` : ''}
       ${set.description_html ? html`<div class="prose sets-description">${trusted(set.description_html)}</div>` : ''}
       ${own && set.copied_from ? html`<p class="muted small">A copy of <a href="/sets/s/${set.copied_from.code}">${set.copied_from.name}</a>${set.copied_from.creator ? ` by ${set.copied_from.creator}` : ''}.</p>` : ''}
       ${own ? html`<div class="sets-tools">
-        <details class="sets-edit"><summary class="link-button">Edit name, topic, description</summary>
+        <details class="sets-edit"${editor && locked ? ' hidden' : ''}><summary class="link-button">Edit name, topic, description</summary>
           <form class="sets-edit-form"><p class="sets-conflict flash" hidden></p>
             <input type="hidden" name="base_name" value="${set.name}"><input type="hidden" name="base_topic" value="${set.topic ?? ''}">
             <textarea name="base_description" hidden>${set.description ?? ''}</textarea>
@@ -250,18 +257,37 @@ function one(main: HTMLElement, ref: SetRef) {
               <textarea name="description" rows="7" maxlength="10000" placeholder="What it is for, what to look out for, notes for learning …">${set.description ?? ''}</textarea></label>
             <button type="submit">Save</button><datalist id="sets-topics"></datalist></form></details>
         ${owner ? html`<details class="sets-share"><summary class="link-button">Share…</summary><div class="sets-share-body"></div></details>` : ''}
-        <details class="sets-together"><summary class="link-button">${owner ? 'Edit together…' : 'Edited together'}</summary><div class="sets-together-body"></div></details></div>`
+        <details class="sets-together"><summary class="link-button">${owner ? 'Edit together…' : 'Edited together'}</summary><div class="sets-together-body"></div></details>
+        ${owner ? html`<button type="button" class="link-button sets-lock" title="${locked ? 'Its editors may change it again' : 'Its editors can still study it, but change nothing'}">${locked ? 'Unlock' : 'Lock'}</button>` : ''}
+        <details class="sets-history"><summary class="link-button">History</summary><div class="sets-history-body"></div></details></div>`
         : html`<p class="sets-tools">${me ? html`<button type="button" class="sets-copy">Save a copy to your sets</button>`
           : html`<span class="muted small">${loginLink() ?? 'Log in'} to keep track of what you know and to save a copy.</span>`}</p>`}
       ${me ? html`<section class="sets-plan" aria-label="Your plan"></section>` : ''}
       ${studyForm(ref, items.length, Boolean(me))}
       <p class="sets-msg small" role="status"></p>
       ${me ? html`<section class="sets-stats" aria-label="Your results"></section>` : ''}
+      ${own && proposals.length ? html`<section class="sets-proposals" id="sets-proposals"><h2>Proposed removals <span class="muted">${String(proposals.length)}</span></h2>
+        <p class="muted small">${owner ? 'Your editors propose and vote; you decide — whenever you like, whatever the votes.' : 'Vote whether these entries should go; the owner decides.'}</p>
+        <ul class="sets-proposal-list">${proposals.map((p) => {
+          const remove = p.votes.filter((v) => v.remove).length;
+          const keep = p.votes.length - remove;
+          return html`<li class="sets-proposal" data-id="${p.id}">
+            <a href="${href(PLURAL[p.type], p.slug)}">${p.name}</a> <span class="muted small">${TYPE_LABEL[p.type]}${p.added_by ? ` · added by ${p.added_by}` : ''} · proposed by ${p.proposed_by ?? '—'} ${day(p.created_at)}</span>
+            ${p.reason ? html`<q class="sets-proposal-reason">${p.reason}</q>` : ''}
+            <span class="sets-votes" title="${p.votes.map((v) => `${v.by ?? '—'}: ${v.remove ? 'remove' : 'keep'}`).join(', ')}"><b>${String(remove)}</b> remove · <b>${String(keep)}</b> keep</span>
+            ${locked ? '' : html`<span class="sets-vote">
+              <button type="button" class="link-button${p.my_vote === true ? ' on' : ''}" data-vote="1" aria-pressed="${String(p.my_vote === true)}">Remove</button>
+              <button type="button" class="link-button${p.my_vote === false ? ' on' : ''}" data-vote="0" aria-pressed="${String(p.my_vote === false)}">Keep</button></span>`}
+            ${owner ? html`<span class="sets-decide"><button type="button" class="danger-outline" data-decide="removed">Remove it</button> <button type="button" class="secondary" data-decide="kept">Keep it</button></span>` : ''}</li>`;
+        })}</ul></section>` : ''}
       ${[...byType.entries()].map(([type, list]) => html`<section class="sets-group"><h2>${PLURAL_LABEL[PLURAL[type as StudyItem['type']]]} <span class="muted">${String(list.length)}</span></h2>
         <ul class="sets-items">${list.map((i) => html`<li class="sets-entry">
           <a class="sets-entry-link" href="${href(PLURAL[i.type], i.slug)}">${itemPicture(i)}<span><span class="sets-entry-name">${i.name}</span>
             ${i.subtitle ? html`<span class="muted small">${i.subtitle}</span>` : ''}${i.added_by ? html`<span class="muted small sets-added-by">added by ${i.added_by}</span>` : ''}</span></a>
-          ${own ? html`<button type="button" class="link-button sets-remove" data-type="${i.type}" data-slug="${i.slug}" title="Remove from this set" aria-label="Remove ${i.name} from this set">×</button>` : ''}</li>`)}</ul></section>`)}
+          ${!own || (editor && locked) ? '' : owner || i.mine
+            ? html`<button type="button" class="link-button sets-remove" data-type="${i.type}" data-slug="${i.slug}" title="Remove from this set" aria-label="Remove ${i.name} from this set">×</button>`
+            : proposed.has(`${i.type}/${i.slug}`) ? html`<a class="muted small" href="#sets-proposals">proposed</a>`
+              : html`<button type="button" class="link-button sets-propose small" data-type="${i.type}" data-slug="${i.slug}" data-name="${i.name}" title="Someone else added it: propose its removal — the owner decides">Propose removal</button>`}</li>`)}</ul></section>`)}
     </section>`);
     const msg = main.querySelector<HTMLElement>('.sets-msg')!;
     const stats = main.querySelector<HTMLElement>('.sets-stats');
@@ -312,10 +338,58 @@ function one(main: HTMLElement, ref: SetRef) {
     }, { once: true });
     if (owner) sharing(main.querySelector<HTMLElement>('.sets-share-body')!, set, id);
     editors(main.querySelector<HTMLElement>('.sets-together-body')!, set, id, owner);
+    history(main.querySelector<HTMLDetailsElement>('.sets-history')!, id, owner, () => one(main, ref));
+    main.querySelector('.sets-lock')?.addEventListener('click', () => {
+      if (!locked && !confirm('Lock this set? Its editors can still study it, but change nothing until you unlock it.')) return;
+      lockSet(id, !locked).then(() => one(main, ref)).catch((err: Error) => { msg.textContent = err.message; });
+    });
+    main.querySelectorAll<HTMLButtonElement>('.sets-propose').forEach((b) => b.addEventListener('click', () => {
+      const reason = window.prompt(`Why should “${b.dataset.name}” go? (optional — the owner decides)`);
+      if (reason === null) return;
+      proposeRemoval(id, b.dataset.type as StudyItem['type'], b.dataset.slug!, reason).then(() => one(main, ref)).catch((err: Error) => { msg.textContent = err.message; });
+    }));
+    main.querySelectorAll<HTMLElement>('.sets-proposal').forEach((li) => {
+      li.querySelectorAll<HTMLButtonElement>('[data-vote]').forEach((b) => b.addEventListener('click', () => {
+        voteRemoval(id, li.dataset.id!, b.dataset.vote === '1').then(() => one(main, ref)).catch((err: Error) => { msg.textContent = err.message; });
+      }));
+      li.querySelectorAll<HTMLButtonElement>('[data-decide]').forEach((b) => b.addEventListener('click', () => {
+        decideRemoval(id, li.dataset.id!, b.dataset.decide as 'removed' | 'kept').then(() => one(main, ref)).catch((err: Error) => { msg.textContent = err.message; });
+      }));
+    });
+    if (location.hash === '#sets-proposals') main.querySelector('#sets-proposals')?.scrollIntoView();
     main.querySelectorAll<HTMLButtonElement>('.sets-remove').forEach((b) => b.addEventListener('click', () => {
       removeFromSet(id, b.dataset.type as StudyItem['type'], b.dataset.slug!).then(() => one(main, ref)).catch((err: Error) => { msg.textContent = err.message; });
     }));
   }).catch(() => failed(main, 'This set could not be loaded.'));
+}
+
+const WHAT: Record<SetEvent['action'], string> = { created: 'created the set', changed: 'changed the', added: 'added', removed: 'removed', restored: 'restored the set to', locked: 'locked the set', unlocked: 'unlocked the set' };
+const at = (iso: string) => new Date(iso).toLocaleString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+
+/** A set's history (221), loaded when opened: who changed what, newest first; the owner restores the set to any step. */
+function history(details: HTMLDetailsElement, id: string, owner: boolean, reload: () => void) {
+  const box = details.querySelector<HTMLElement>('.sets-history-body')!;
+  details.addEventListener('toggle', () => {
+    if (!details.open) return;
+    getSetHistory(id).then((r) => {
+      if (!r) return;
+      const ev = r.events;
+      const entry = (e: SetEvent) => (e.entry ? html`<a href="${href(PLURAL[e.entry.type], e.entry.slug)}">${e.entry.name}</a>` : html`<span class="muted">an entry since deleted</span>`);
+      const what = (e: SetEvent) => (e.action === 'changed' ? html`${WHAT.changed} ${e.field}${e.field === 'description' ? '' : html`: <s class="muted">${e.old ?? '—'}</s> → ${e.new ?? '—'}`}`
+        : e.action === 'added' || e.action === 'removed' ? html`${WHAT[e.action]} ${entry(e)}`
+          : e.action === 'restored' ? html`${WHAT.restored} ${e.detail?.to ? at(e.detail.to) : '?'} <span class="muted small">(${String(e.detail?.removed ?? 0)} removed, ${String(e.detail?.added ?? 0)} back${e.detail?.reason ? ` · ${e.detail.reason}` : ''})</span>`
+            : WHAT[e.action]);
+      render(box, html`<p class="muted small">${owner ? 'Every change, newest first. “Back to here” makes the set as it was right after that step — the restore is a step too, so it can be undone.' : 'Every change, newest first. The owner can bring the set back to any step.'}
+        ${ev.some((e) => e.seeded) ? ' Changes before 5 November 2026 are not recorded; entries added before then are.' : ''}</p>
+        <ol class="sets-history-list">${ev.map((e, i) => html`<li><span class="muted small">${at(e.at)}</span> <b>${e.by ?? '—'}</b> ${what(e)}
+          ${owner && i > 0 ? html`<button type="button" class="link-button small sets-restore" data-event="${e.id}" data-at="${e.at}">Back to here</button>` : ''}</li>`)}</ol>
+        ${r.more ? html`<p class="muted small">The 1000 most recent steps.</p>` : ''}<p class="sets-history-msg small" role="status"></p>`);
+      box.querySelectorAll<HTMLButtonElement>('.sets-restore').forEach((b) => b.addEventListener('click', () => {
+        if (!confirm(`Make the set as it was on ${at(b.dataset.at!)}? Entries added since go, entries removed since come back. You can undo this the same way.`)) return;
+        restoreSet(id, b.dataset.event!).then(() => reload()).catch((err: Error) => { box.querySelector('.sets-history-msg')!.textContent = err.message; });
+      }));
+    }).catch(() => render(box, html`<p class="muted">The history could not be loaded.</p>`));
+  });
 }
 
 /** Sharing a set: who sees it, the name shown, the link (copied; "New link" ends the old one). */
@@ -330,7 +404,8 @@ function sharing(box: HTMLElement, set: StudySet, id: string) {
         <span class="muted small">— not your login name; the same on all your shared sets</span></label>
       <button type="submit">Save</button>
       ${set.visibility !== 'private' && set.code ? html`<p class="sets-share-link"><input readonly value="${shareUrl(set.code)}" aria-label="Link to this set">
-        <button type="button" class="sets-share-copy">Copy link</button> <button type="button" class="link-button sets-share-new" title="The old link stops working">New link</button></p>` : ''}
+        <button type="button" class="sets-share-copy">Copy link</button> <button type="button" class="link-button sets-share-new" title="The old link stops working">New link</button>
+        <button type="button" class="link-button sets-share-off" title="The link stops working for good; shared again, the set gets a new one">Turn the link off</button></p>` : ''}
       <p class="muted small">Others see the name, topic, description, entries, your public name and the dates — never your results.</p>
       <p class="sets-share-msg small" role="status">${note}</p></form>`);
     const form = box.querySelector<HTMLFormElement>('form')!;
@@ -351,6 +426,9 @@ function sharing(box: HTMLElement, set: StudySet, id: string) {
     box.querySelector('.sets-share-copy')?.addEventListener('click', () => {
       const input = box.querySelector<HTMLInputElement>('.sets-share-link input')!;
       navigator.clipboard?.writeText(input.value).then(() => { msg.textContent = 'Link copied.'; }, () => { input.select(); });
+    });
+    box.querySelector('.sets-share-off')?.addEventListener('click', () => {
+      if (confirm('Turn the link off? It stops working for everyone who has it; only you see the set. Shared again, it gets a new link.')) save({ visibility: 'private' }, 'The link is off — only you see the set.');
     });
     box.querySelector('.sets-share-new')?.addEventListener('click', () => {
       if (confirm('Make a new link? The old one stops working.')) save({ new_link: '1' }, 'New link made — the old one no longer works.');

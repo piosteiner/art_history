@@ -35,6 +35,7 @@ function shard(i) {
       SMITHSONIAN_BASE: `${FIXTURES}/si`, JAPANSEARCH_BASE: `${FIXTURES}/jps`, KULTURNAV_BASE: `${FIXTURES}/kulturnav`,
       NLK_BASE: `${FIXTURES}/nlk`, ARCO_BASE: `${FIXTURES}/arco`, SMK_BASE: `${FIXTURES}/smk`, DIMU_BASE: `${FIXTURES}/dimu`,
       DIMU_KEY: 'test', EUROPEANA_KEY: 'test', SMITHSONIAN_KEY: 'test',
+      TEST_ENV_FILE: '/nonexistent/test.env',   // never the real test environment's database (src/admin/test-accounts.js)
       THUMB_TEST_SERVER: `https://museum.test/ ${FIXTURES}/museum/`, THUMB_DIR: path.join(STATE_DIR, `thumbs-${i}`) }),
   };
 }

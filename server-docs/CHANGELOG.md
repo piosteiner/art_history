@@ -4,6 +4,47 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-05
 
+### Accounts kept 30 days after deletion, test-environment accounts; a study set's history, restore, lock, proposed removals (221, 222)
+- **What** (owner 2026-11-05):
+  - Migration 221: `admin_users.deleted_at`/`deleted_by` — deleting an account (an admin's, or a member's own on the
+    site) switches it off and hides its sets (`ALIVE` in routes/site-sets.js: shared links, the public list,
+    invitations, editors' views); an admin restores it within 30 days (Accounts → the account → "Restore the
+    account"); `purge_deleted_accounts()` removes it for good afterwards (called after the worker's nightly full
+    run, `src/admin/quality.js`); account_log actions `restored`, `purged`, `set_rolled_back`. `study_set_events`
+    written by triggers on `study_sets`/`study_set_items` (created · changed field old → new · added · removed ·
+    restored · locked/unlocked; actor = `arthistory.user_id`, so the set routes write through `asUser()`); existing
+    sets seeded from their items' `added_at`/`added_by` and current fields. `study_set_state(set, at)` (two DISTINCT
+    ON queries) and `study_set_restore(set, at, why)` — fields back, entries removed/added back, one "restored" event,
+    itself undoable. `study_sets.locked_at`. `study_set_proposals` (one open per entry, partial unique index) and
+    `study_set_votes`; an entry removed any other way closes its proposal (trigger).
+  - Routes (`routes/site-sets.js`): `GET /:id/history` (owner + editors), `POST /:id/restore` (owner; by `event` id —
+    read as text, a JS Date drops the microseconds — or `at`), `POST /:id/lock` (owner), `POST /:id/proposals`
+    (editor; proposing votes "remove"), `…/vote`, `…/decide` (owner only, any time, whatever the votes). An editor may
+    remove only entries they added (`mine` on the items); a locked set refuses editors' changes (423). Turning a
+    shared set private now ends its link for good (`share_code` NULL; shared again = a new link). The list carries
+    `proposals` and `to_vote` per set.
+  - CMS Accounts: an account's study sets listed (all, not only shared) → `/accounts/:id/sets/:sid` with its history
+    and "Roll back" to a moment (Zurich time, to the end of the typed second/minute, never later than now; "this
+    moment" links pre-fill the form — no inline script, the CSP forbids it).
+  - Migration 222: `admin_users.test_env` — "Where it logs in: the test environment only" on New account; production's
+    login refuses it (`auth.js`), `src/admin/test-accounts.js` copies it to the test database (:5433, credentials from
+    `~/.config/arthistory/test.env`) on every change; `scripts/test-env.sh` keeps such accounts at the nightly reset
+    (password, role, public name) and drops deleted ones; `keep_an_admin()` counts production's admins only. The e2e
+    server gets `TEST_ENV_FILE=/nonexistent` (never the real test database).
+  - Accounts page layout (owner): "User search" title, the search line in one row (field, role, environment, Search),
+    the sign-up line in one row (the checkbox was stretched by the global `input { width: 100% }`), more room per box.
+  - Site (`views/sets.ts`): "Proposed removals" box (votes, Remove/Keep, the owner's Remove it / Keep it), "Propose
+    removal" on entries someone else added, History (loaded when opened; "Back to here" for the owner), Lock/Unlock,
+    "Turn the link off" in Share; the sets list says which sets wait for the account's vote.
+  - Privacy statement: history, proposals and votes, lock, admins rolling a set back, accounts kept 30 days.
+  - Tests: accounts.spec.js (restore, purge, self-delete kept, test-environment account), study-sets.spec.js (history,
+    proposals, votes, decision, restore, lock, link off, admin rollback), frontend tests/sets.spec.ts (owner's page).
+- **Why:** owner: misuse by an editor must be reversible; deletion should be undoable for a while; test accounts.
+- **Revert:** `git revert`; `DROP TABLE study_set_votes, study_set_proposals, study_set_events; DROP FUNCTION
+  study_set_restore, study_set_state, study_set_log, study_set_actor, purge_deleted_accounts; ALTER TABLE study_sets
+  DROP COLUMN locked_at; ALTER TABLE admin_users DROP COLUMN test_env, DROP COLUMN deleted_by, DROP COLUMN deleted_at`
+  (+ keep_an_admin from 220, the account_log check from 220); the privacy page from its history.
+
 ### Public changelog and documentation caught up
 - **What:** site changelog: six items added to 2026-11-04 (study sets, sharing, quick entry, ⓘ help, search by the
   whole's names, media cleanup) and an unpublished entry 2026-11-05 with four items (accounts and sign-up, exam dates,

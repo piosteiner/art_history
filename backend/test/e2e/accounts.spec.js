@@ -77,7 +77,23 @@ test('admins create, change, switch off and delete accounts; a site-only account
   await userA.locator('summary', { hasText: 'Delete the account' }).click();
   await userA.fill('input[name="confirm"]', 'test-acc-student');
   await Promise.all([userA.waitForURL(/ok=deleted/), userA.click('button.danger')]);
+  // kept 30 days (221): no login, its sets hidden; restored by an admin — with its old password and its set
+  sql(`INSERT INTO study_sets (owner_id, name, visibility, share_code) SELECT id, 'Test set kept', 'link', 'TestKept1234' FROM admin_users WHERE username = 'test-acc-student'`);
+  expect(sql("SELECT deleted_at IS NOT NULL AND disabled_at IS NOT NULL FROM admin_users WHERE username = 'test-acc-student'")).toBe('t');
+  const gone = await loginAs('test-acc-student', fresh);
+  expect(await gone.res.text()).toContain('deleted');
+  expect((await userA.request.get('/site/shared/TestKept1234', { headers: { Origin: SITE } })).status()).toBe(404);
+  await userA.goto('/accounts?q=test-acc-student');
+  await expect(userA.locator('.accounts-list')).toContainText('deleted — restorable until');
+  await userA.goto(`/accounts/${id}`);
+  await Promise.all([userA.waitForURL(/ok=restored/), userA.click('button:has-text("Restore the account")')]);
+  expect((await loginAs('test-acc-student', fresh)).res.status()).toBe(303);
+  expect((await userA.request.get('/site/shared/TestKept1234', { headers: { Origin: SITE } })).status()).toBe(200);
+  await expect(userA.locator('h2:has-text("Log") + table')).toContainText('restored after deletion');
+  // after 30 days: gone for good, with its set
+  sql(`UPDATE admin_users SET disabled_at = now() - interval '31 days', deleted_at = now() - interval '31 days' WHERE username = 'test-acc-student'; SELECT purge_deleted_accounts()`);
   expect(sql("SELECT count(*) FROM admin_users WHERE username = 'test-acc-student'")).toBe('0');
+  expect(sql("SELECT count(*) FROM study_sets WHERE name = 'Test set kept'")).toBe('0');
   const own = sql("SELECT id FROM admin_users WHERE username = 'tester'");
   await userA.goto(`/accounts/${own}`);
   await expect(userA.locator('button:has-text("Switch off")')).toHaveCount(0);
@@ -152,14 +168,40 @@ test('an account on the site: public name, password, log out elsewhere, delete i
 
   // a CMS account isn't deleted from the site
   expect((await userA.request.post('/site/account/delete', { headers: S, form: { password: 'x' } })).status()).toBe(403);
-  // the member deletes itself: everything goes, the log keeps no name
+  // the member deletes itself: kept 30 days (an admin can restore it on request), then everything goes (221)
   sql("INSERT INTO study_sets (owner_id, name) SELECT id, 'Test set of a leaver' FROM admin_users WHERE username = 'test-acc-self'");
   expect((await http.post('/site/account/delete', { headers: S, form: { password: 'first secret 1' } })).status()).toBe(403);
   expect((await http.post('/site/account/delete', { headers: S, form: { password: 'second secret 2' } })).status()).toBe(204);
+  expect(sql("SELECT deleted_at IS NOT NULL FROM admin_users WHERE username = 'test-acc-self'")).toBe('t');
+  expect((await http.get('/site/me', { headers: S })).status()).toBe(401);
+  expect((await loginAs('test-acc-self', 'second secret 2')).res.status()).toBe(401);
+  sql(`UPDATE admin_users SET deleted_at = now() - interval '31 days' WHERE username = 'test-acc-self'; SELECT purge_deleted_accounts()`);
   expect(sql("SELECT count(*) FROM admin_users WHERE username = 'test-acc-self'")).toBe('0');
   expect(sql("SELECT count(*) FROM study_sets WHERE name = 'Test set of a leaver'")).toBe('0');
   expect(sql("SELECT count(*) FROM account_log WHERE username = 'test-acc-self'")).toBe('0');
-  expect((await http.get('/site/me', { headers: S })).status()).toBe(401);
   await http.dispose();
   await other.dispose();
+});
+
+// 222: an account for the test environment — made here, refused here; marked in the list; found with the filter
+test('an account for the test environment: created here, refused by the live login, marked and filtered', async ({ userA }) => {
+  await userA.goto('/accounts?new=1');
+  await userA.fill('#a-u', 'test-acc-tester-env');
+  await userA.selectOption('select[name="role"] >> nth=0', 'editor');
+  await userA.check('input[name="env"][value="test"]');
+  await userA.fill('#a-p', 'a test env secret 7');
+  await Promise.all([userA.waitForURL(/ok=created/), userA.click('button:has-text("Create account")')]);
+  await expect(userA.locator('h1 .account-test')).toHaveText('test environment');
+  await expect(userA.locator('.flash')).toContainText('not set up on this server');          // no test database in the e2e run
+  expect(sql("SELECT test_env::text || role::text FROM admin_users WHERE username = 'test-acc-tester-env'")).toBe('trueeditor');
+  const live = await loginAs('test-acc-tester-env', 'a test env secret 7');
+  expect(live.res.status()).toBe(401);
+  expect(await live.res.text()).toContain('test environment');
+  await userA.goto('/accounts?env=test');
+  await expect(userA.locator('.accounts-list tbody tr')).toHaveCount(1);
+  await expect(userA.locator('h2.accounts-search-title')).toHaveText('User search');
+  await expect(userA.locator('.accounts-search button')).toHaveText('Search');
+  // a test admin keeps no one able to log in here: the last live admin still can't be switched off
+  expect(() => sql("UPDATE admin_users SET role = 'admin' WHERE username = 'test-acc-tester-env'; UPDATE admin_users SET disabled_at = now() WHERE NOT test_env AND role = 'admin'")).toThrow(/active admin/);
+  await live.http.dispose();
 });

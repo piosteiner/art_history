@@ -348,13 +348,29 @@ export interface StudySet {
    *  (owner only); who changed it last; the viewer's exam date for it (YYYY-MM-DD) */
   role?: 'owner' | 'editor'; editors?: { id: string; name: string | null; me: boolean }[]; editor_count?: number;
   edit_code?: string | null; updated_by?: string | null; exam_on?: string | null;
+  /** locked by the owner (221): editors read and study, change nothing */
+  locked_at?: string | null;
+  /** the list (221): open removal proposals, and those the viewer has not voted on yet */
+  proposals?: number; to_vote?: number;
+}
+/** An entry proposed for removal from a set (221): the votes by public name; the viewer's own (null = not voted). */
+export interface SetProposal {
+  id: string; type: EntityType; slug: string; name: string; reason: string | null; created_at: string;
+  proposed_by: string | null; added_by: string | null; votes: { by: string | null; remove: boolean }[]; my_vote: boolean | null;
+}
+/** A step in a set's history (221). */
+export interface SetEvent {
+  id: string; at: string; action: 'created' | 'changed' | 'added' | 'removed' | 'restored' | 'locked' | 'unlocked';
+  field: 'name' | 'topic' | 'description' | null; old: string | null; new: string | null; by: string | null; seeded: boolean;
+  entry: { type: EntityType; slug: string; name: string } | null;
+  detail: { to?: string; removed?: number; added?: number; reason?: string | null } | null;
 }
 /** The day's cards per direction: due again, never asked, new ones today brings (220). */
 export interface StudyPlan {
   exam_on: string | null; days_left: number | null;
   directions: Partial<Record<'forward' | 'reverse', { due: number; new: number; new_left_today: number; new_today: number }>>;
 }
-export interface StudyItem { type: EntityType; slug: string; name: string; subtitle: string | null; image: string | null; own: boolean; added_at: string; added_by?: string | null }
+export interface StudyItem { type: EntityType; slug: string; name: string; subtitle: string | null; image: string | null; own: boolean; added_at: string; added_by?: string | null; /** added by the viewer (221) */ mine?: boolean }
 /** `due`: asked again today (its Leitner interval is over — shorter before an exam) */
 export interface CardProgress { box: number; seen: number; known: number; due?: boolean }
 export interface StudyCard {
@@ -382,7 +398,16 @@ export const updateSet = (id: string, data: { name: string; topic: string; descr
 export const shareSet = (id: string, data: { visibility?: Visibility; public_name?: string; new_link?: '1' }) =>
   account<{ set: StudySet; public_name: string | null }>(`/sets/${id}/share`, form(data as Record<string, string>));
 export const deleteSet = (id: string) => account<null>(`/sets/${id}/delete`, form({}));
-export const getSet = (ref: SetRef) => account<{ set: StudySet; items: StudyItem[] }>(base(ref));
+export const getSet = (ref: SetRef) => account<{ set: StudySet; items: StudyItem[]; proposals?: SetProposal[] }>(base(ref));
+// history, restore, lock, proposals (221)
+export const getSetHistory = (id: string) => account<{ events: SetEvent[]; more: boolean }>(`/sets/${id}/history`);
+export const restoreSet = (id: string, event: string, reason = '') => account<{ restored: { removed: number; added: number } }>(`/sets/${id}/restore`, form({ event, reason }));
+export const lockSet = (id: string, locked: boolean) => account<{ set: StudySet }>(`/sets/${id}/lock`, form({ locked: locked ? '1' : '0' })).then((r) => r?.set ?? null);
+export const proposeRemoval = (id: string, type: EntityType, slug: string, reason = '') =>
+  account<{ proposals: SetProposal[] }>(`/sets/${id}/proposals`, form({ type, slug, reason }));
+export const voteRemoval = (id: string, pid: string, remove: boolean) => account<{ proposals: SetProposal[] }>(`/sets/${id}/proposals/${pid}/vote`, form({ remove: remove ? '1' : '0' }));
+export const decideRemoval = (id: string, pid: string, decision: 'removed' | 'kept') =>
+  account<{ proposals: SetProposal[]; count: number }>(`/sets/${id}/proposals/${pid}/decide`, form({ decision }));
 export const setsOf = (type: EntityType, slug: string) =>
   account<{ sets: { id: string; name: string; has: boolean }[] }>(`/sets/of?${new URLSearchParams({ type, slug })}`).then((r) => r?.sets ?? null);
 export const addToSet = (id: string, type: EntityType, slug: string) => account<{ count: number }>(`/sets/${id}/items`, form({ type, slug }));

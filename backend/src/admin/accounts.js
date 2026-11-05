@@ -28,11 +28,11 @@ async function signupSettings(db = adminPool) {
   return s;
 }
 
-async function create(db, { username, password, role = 'member', publicName = null, via, actor = null, note = null }) {
-  const { rows: [u] } = await db.query(`INSERT INTO admin_users (username, password_hash, role, public_name, created_via, created_by, note, password_set_at)
-      VALUES ($1, $2, $3, $4, $5, $6, $7, now()) RETURNING id, username, role::text AS role, role >= 'editor' AS cms`,
-  [username, await hashPassword(password), role, publicName, via, actor, note]);
-  await log(db, { account: u.id, username: u.username, actor, action: via === 'signup' ? 'signed_up' : 'created', detail: { role } });
+async function create(db, { username, password, role = 'member', publicName = null, via, actor = null, note = null, testEnv = false }) {
+  const { rows: [u] } = await db.query(`INSERT INTO admin_users (username, password_hash, role, public_name, created_via, created_by, note, password_set_at, test_env)
+      VALUES ($1, $2, $3, $4, $5, $6, $7, now(), $8) RETURNING id, username, role::text AS role, role >= 'editor' AS cms, test_env`,
+  [username, await hashPassword(password), role, publicName, via, actor, note, testEnv]);
+  await log(db, { account: u.id, username: u.username, actor, action: via === 'signup' ? 'signed_up' : 'created', detail: testEnv ? { role, test_env: true } : { role } });
   return u;
 }
 

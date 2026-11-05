@@ -256,6 +256,9 @@ async function fullRunDue() {
   if (!rows[0].due) return;
   const n = (await pool.query('SELECT refresh_quality_full() AS n')).rows[0].n;
   console.log(`quality: nightly full run — ${n} entries queued`);
+  // accounts deleted more than 30 days ago removed for good (221)
+  const gone = (await pool.query('SELECT purge_deleted_accounts() AS n')).rows[0].n;
+  if (gone) console.log(`accounts: ${gone} deleted account(s) removed for good`);
 }
 
 // LISTEN on a connection of its own (a pooled one goes back to the pool); reconnects after an outage and refreshes

@@ -104,7 +104,7 @@ async function endSessions(userId, req = null) {
 // → { user } or { error }. Creates the session and sets the cookie on success.
 async function login(req, res, username, password) {
   if (tooManyAttempts(req.ip)) return { error: 'Too many failed attempts — try again in 15 minutes.' };
-  const { rows } = await adminPool.query(`SELECT id, username, password_hash, disabled_at, role >= 'editor' AS cms
+  const { rows } = await adminPool.query(`SELECT id, username, password_hash, disabled_at, deleted_at, test_env, role >= 'editor' AS cms
       FROM admin_users WHERE username = $1`, [String(username || '').trim().toLowerCase()]);
   const user = rows[0];
   const ok = await verifyPassword(String(password || ''), user ? user.password_hash : await getDummyHash());
@@ -115,6 +115,9 @@ async function login(req, res, username, password) {
   }
   attempts.delete(req.ip);
   // switched off (220): only said to whoever knows the password
+  // an account for the test environment (222) logs in there only
+  if (user.test_env && !config.testEnv) return { error: 'This account is for the test environment: log in at admin.test.arthistory.piogino.ch or on test.arthistory.piogino.ch.' };
+  if (user.deleted_at) return { error: 'This account was deleted. It is kept for 30 days — ask the site\'s owner if you want it back.' };
   if (user.disabled_at) return { error: 'This account is switched off. Ask the site\'s owner if you think that is a mistake.' };
   await startSession(req, res, user);
   return { user: { id: user.id, username: user.username, cms: user.cms } };

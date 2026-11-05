@@ -116,11 +116,12 @@ router.post('/account/sessions', async (req, res) => {
 router.post('/account/delete', async (req, res) => {
   if (req.user.cms) return res.status(403).json({ error: 'a CMS account is deleted by an admin (CMS → Accounts)' });
   if (!await rightPassword(req, req.body.password)) return res.status(403).json({ error: 'the password is not right' });
-  // nothing of it stays: its log lines go too, one line without a name says that an account deleted itself
-  await adminPool.query('DELETE FROM account_log WHERE account_id = $1', [req.user.id]);
-  await adminPool.query('DELETE FROM admin_users WHERE id = $1', [req.user.id]);   // sets, progress, results, sessions go with it
-  await accounts.log(adminPool, { account: null, username: '(deleted by itself)', action: 'deleted', detail: { by: 'self' } });
+  // kept 30 days, switched off and its sets hidden — the owner can restore it on request; afterwards
+  // purge_deleted_accounts() removes it with its sets, results and log lines (221)
+  await accounts.log(adminPool, { account: req.user.id, username: req.user.username, actor: req.user.id, action: 'deleted', detail: { by: 'self' } });
+  await adminPool.query('UPDATE admin_users SET disabled_at = coalesce(disabled_at, now()), deleted_at = now(), deleted_by = $1 WHERE id = $1', [req.user.id]);
   await logout(req, res);
+  await adminPool.query('DELETE FROM admin_sessions WHERE user_id = $1', [req.user.id]);
   res.status(204).end();
 });
 

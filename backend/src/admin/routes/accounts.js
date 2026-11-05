@@ -13,6 +13,12 @@ const { html } = require('../html');
 const { send, withTx, notFoundPage } = require('../core');
 const { endSessions, generatePassword, hashPassword, passwordProblem, USERNAME } = require('../auth');
 const accounts = require('../accounts');
+const testAccounts = require('../test-accounts');
+const TEST_CMS = 'https://admin.test.arthistory.piogino.ch';
+const TEST_SITE = 'https://test.arthistory.piogino.ch';
+const envTag = (u) => (u.test_env ? html` <span class="tag account-test" title="Logs in only on the test CMS and test site">test environment</span>` : '');
+/** a test-environment account changed here: copied to the test database now; a problem shown with the flash */
+async function synced(u) { return u.test_env ? testAccounts.sync(u.id, u.username) : null; }
 
 const router = express.Router();
 const ID = /^[1-9][0-9]{0,15}$/;
@@ -22,11 +28,15 @@ const VIA = { script: 'by script', cms: 'in the CMS', signup: 'signed up' };
 const ACTION = {
   created: 'created', signed_up: 'signed up', role: 'role changed', disabled: 'switched off', enabled: 'switched on',
   'password_reset': 'new password set', 'password_changed': 'password changed by the account', sessions_ended: 'sessions ended',
-  public_name: 'public name changed', note: 'note changed', deleted: 'deleted',
+  public_name: 'public name changed', note: 'note changed', deleted: 'deleted', restored: 'restored after deletion',
+  purged: 'removed for good', set_rolled_back: 'a set rolled back',
 };
+const KEEP_DAYS = 30;   // a deleted account waits this long for a restore (221)
+const until = (d) => when(new Date(new Date(d).getTime() + KEEP_DAYS * 86400000));
 const OK = {
   created: 'Account created.', saved: 'Saved.', disabled: 'Switched off — its sessions have ended.', enabled: 'Switched on again.',
-  sessions: 'Its sessions have ended.', deleted: 'Account deleted.', settings: 'Sign-up settings saved.',
+  sessions: 'Its sessions have ended.', deleted: `Account deleted — it can be restored for ${'30'} days.`, settings: 'Sign-up settings saved.',
+  restored: 'Account restored — switched on again, its sets back where they were.', rolled_back: 'The set is back as it was then (the step is in its history).',
 };
 
 router.use('/accounts', (req, res, next) => (req.user.is_admin ? next()
@@ -41,20 +51,23 @@ const flashOf = (req) => (OK[req.query.ok] ? { kind: 'ok', text: OK[req.query.ok
 const passwordShown = (req, res, user, password, what) => send(req, res, { title: 'Password', body: html`<h1>${what}: ${user.username}</h1>
   <p>The password — shown <b>only now</b>; hand it over safely (in person, a message to the person only):</p>
   <p class="password-once"><code>${password}</code></p>
-  <p class="muted small">They log in at the site's “Log in” with the username <b>${user.username}</b>, and can change the password under “Your account” on the site.</p>
+  <p class="muted small">${user.test_env ? html`A test-environment account: it logs in only at <a href="${TEST_CMS}/login" target="_blank" rel="noopener">${TEST_CMS.replace('https://', '')}</a> or on the test site — with the username <b>${user.username}</b>.`
+    : html`They log in at the site's “Log in” with the username <b>${user.username}</b>, and can change the password under “Your account” on the site.`}</p>
   <p><a href="/accounts/${String(user.id)}">Back to the account</a> · <a href="/accounts">All accounts</a></p>` });
 
 router.get('/accounts', async (req, res) => {
   const q = String(req.query.q || '').trim().slice(0, 60);
   const role = accounts.ROLES[req.query.role] ? req.query.role : '';
+  const env = ['live', 'test'].includes(req.query.env) ? req.query.env : '';
   const [{ rows }, settings, { rows: counts }] = await Promise.all([
-    adminPool.query(`SELECT u.id, u.username, u.public_name, u.role::text AS role, u.disabled_at, u.created_at, u.created_via, u.last_login_at,
+    adminPool.query(`SELECT u.id, u.username, u.public_name, u.role::text AS role, u.disabled_at, u.deleted_at, u.test_env, u.created_at, u.created_via, u.last_login_at,
         (SELECT count(*)::int FROM study_sets s WHERE s.owner_id = u.id) AS sets,
         (SELECT count(*)::int FROM study_sets s WHERE s.owner_id = u.id AND s.visibility <> 'private') AS shared,
         (SELECT count(*)::int FROM admin_sessions x WHERE x.user_id = u.id AND x.expires_at > now()) AS sessions
       FROM admin_users u
       WHERE ($1 = '' OR u.username ILIKE '%' || $1 || '%' OR u.public_name ILIKE '%' || $1 || '%') AND ($2 = '' OR u.role::text = $2)
-      ORDER BY u.role DESC, u.disabled_at IS NOT NULL, lower(u.username) LIMIT 500`, [q, role]),
+        AND ($3 = '' OR u.test_env = ($3 = 'test'))
+      ORDER BY u.test_env, u.role DESC, u.disabled_at IS NOT NULL, lower(u.username) LIMIT 500`, [q, role, env]),
     accounts.signupSettings(),
     adminPool.query(`SELECT role::text AS role, count(*)::int AS n FROM admin_users GROUP BY role`),
   ]);
@@ -74,17 +87,22 @@ router.get('/accounts', async (req, res) => {
         <div class="field"><label for="a-u">Username <span class="muted small">— 2–40 small letters, digits, _ . -</span></label>
           <input id="a-u" name="username" required pattern="[a-z0-9_.\\-]{2,40}" maxlength="40" autocomplete="off" autocapitalize="none" spellcheck="false"></div>
         <div class="field"><label for="a-r">Role</label>${roleSelect('role', 'member')}</div>
+        <fieldset class="field accounts-env"><legend>Where it logs in</legend>
+          <label class="check"><input type="radio" name="env" value="live" checked> <span>Here — <b>arthistory.piogino.ch</b> and this CMS</span></label>
+          <label class="check"><input type="radio" name="env" value="test"> <span>The <b>test environment</b> only — <a href="${TEST_CMS}" target="_blank" rel="noopener">test CMS</a> and <a href="${TEST_SITE}" target="_blank" rel="noopener">test site</a>; refused here, kept by the nightly reset, its changes there undone each night</span></label></fieldset>
         <div class="field"><label for="a-n">Public name <span class="muted small">— optional; shown on shared sets</span></label><input id="a-n" name="public_name" maxlength="60"></div>
         <div class="field"><label for="a-p">Password <span class="muted small">— leave empty for a generated one (shown once)</span></label>
           <input id="a-p" name="password" type="text" autocomplete="off" spellcheck="false"></div>
         <div class="field"><label for="a-o">Note <span class="muted small">— for you: who it is, why</span></label><input id="a-o" name="note" maxlength="1000"></div>
         <div class="actions"><button>Create account</button></div></form></details>
-    <form class="filter-bar" method="get" action="/accounts">
-      <input type="search" name="q" value="${q}" placeholder="Username or public name" aria-label="Search accounts">
-      <select name="role"><option value="">every role</option>${Object.entries(accounts.ROLES).map(([k, r]) => html`<option value="${k}"${k === role ? ' selected' : ''}>${r.label} (${String(n[k] || 0)})</option>`)}</select>
-      <button class="secondary">Show</button></form>
+    <h2 class="accounts-search-title">User search</h2>
+    <form class="filter-bar accounts-search" method="get" action="/accounts" role="search">
+      <input type="search" name="q" value="${q}" placeholder="Username or public name" aria-label="Username or public name">
+      <select name="role" aria-label="Role"><option value="">every role</option>${Object.entries(accounts.ROLES).map(([k, r]) => html`<option value="${k}"${k === role ? ' selected' : ''}>${r.label} (${String(n[k] || 0)})</option>`)}</select>
+      <select name="env" aria-label="Environment"><option value="">live and test</option><option value="live"${env === 'live' ? ' selected' : ''}>live only</option><option value="test"${env === 'test' ? ' selected' : ''}>test environment only</option></select>
+      <button class="secondary">Search</button></form>
     <table class="list accounts-list"><thead><tr><th>Username</th><th>Public name</th><th>Role</th><th>Created</th><th>Last login</th><th>Sets</th><th>Sessions</th></tr></thead><tbody>
-      ${rows.map((u) => html`<tr class="${u.disabled_at ? 'account-off' : ''}"><td><a href="/accounts/${String(u.id)}">${u.username}</a>${u.id === req.user.id ? html` <span class="muted small">(you)</span>` : ''}${u.disabled_at ? html` <span class="tag">switched off</span>` : ''}</td>
+      ${rows.map((u) => html`<tr class="${u.disabled_at ? 'account-off' : ''}"><td><a href="/accounts/${String(u.id)}">${u.username}</a>${envTag(u)}${u.id === req.user.id ? html` <span class="muted small">(you)</span>` : ''}${u.deleted_at ? html` <span class="tag account-deleted">deleted — restorable until ${until(u.deleted_at)}</span>` : u.disabled_at ? html` <span class="tag">switched off</span>` : ''}</td>
         <td>${u.public_name || html`<span class="muted">—</span>`}</td><td>${roleTag(u.role)}</td>
         <td class="small">${when(u.created_at)} <span class="muted">${VIA[u.created_via]}</span></td><td class="small">${when(u.last_login_at)}</td>
         <td>${String(u.sets)}${u.shared ? html` <span class="muted small">(${String(u.shared)} shared)</span>` : ''}</td><td>${String(u.sessions)}</td></tr>`)}
@@ -114,20 +132,21 @@ router.post('/accounts/new', async (req, res) => {
   const password = given || generatePassword();
   let user;
   try {
-    user = await accounts.create(adminPool, { username, password, role, publicName, via: 'cms', actor: req.user.id, note: String(req.body.note || '').trim().slice(0, 1000) || null });
+    user = await accounts.create(adminPool, { username, password, role, publicName, via: 'cms', actor: req.user.id, note: String(req.body.note || '').trim().slice(0, 1000) || null, testEnv: req.body.env === 'test' });
   } catch (err) {
     const why = accounts.problem(err);
     if (why) return again(why);
     throw err;
   }
-  if (given) return res.redirect(303, `/accounts/${user.id}?ok=created`);
-  passwordShown(req, res, user, password, 'Account created');
+  const problem = await synced(user);
+  if (given) return res.redirect(303, `/accounts/${user.id}?ok=created${problem ? `&error=${encodeURIComponent(problem)}` : ''}`);
+  passwordShown(req, res, user, password, user.test_env ? 'Test account created' : 'Account created');
 });
 
 /** The account of the address, or null. */
 async function accountOf(req) {
   if (!ID.test(req.params.id)) return null;
-  const { rows: [u] } = await adminPool.query(`SELECT u.id, u.username, u.public_name, u.role::text AS role, u.disabled_at, u.created_at, u.created_via,
+  const { rows: [u] } = await adminPool.query(`SELECT u.id, u.username, u.public_name, u.role::text AS role, u.disabled_at, u.deleted_at, u.test_env, u.created_at, u.created_via,
       u.last_login_at, u.note, u.password_set_at, c.username AS created_by,
       (SELECT count(*)::int FROM study_sets s WHERE s.owner_id = u.id) AS sets,
       (SELECT count(*)::int FROM study_set_editors e WHERE e.account_id = u.id) AS edits,
@@ -145,16 +164,23 @@ router.get('/accounts/:id', async (req, res) => {
   const self = u.id === req.user.id;
   const { rows: log } = await adminPool.query(`SELECT l.at, l.action, l.detail, a.username AS actor FROM account_log l LEFT JOIN admin_users a ON a.id = l.actor_id
     WHERE l.account_id = $1 ORDER BY l.at DESC, l.id DESC LIMIT 100`, [u.id]);
-  const { rows: sets } = await adminPool.query(`SELECT name, visibility, share_code, (SELECT count(*)::int FROM study_set_items i WHERE i.set_id = s.id) AS n
-    FROM study_sets s WHERE owner_id = $1 AND visibility <> 'private' ORDER BY updated_at DESC LIMIT 50`, [u.id]);
+  const { rows: sets } = await adminPool.query(`SELECT id, name, visibility, share_code, locked_at, (SELECT count(*)::int FROM study_set_items i WHERE i.set_id = s.id) AS n,
+      (SELECT count(*)::int FROM study_set_editors e WHERE e.set_id = s.id) AS editors
+    FROM study_sets s WHERE owner_id = $1 ORDER BY updated_at DESC LIMIT 100`, [u.id]);
   send(req, res, { title: u.username, flash: req.query.error ? { kind: 'error', text: String(req.query.error).slice(0, 200) } : flashOf(req), body: html`
     <p class="crumbs"><a href="/accounts">Accounts</a> / ${u.username}</p>
-    <h1>${u.username} ${roleTag(u.role)}${u.disabled_at ? html` <span class="tag">switched off ${when(u.disabled_at)}</span>` : ''}${self ? html` <span class="muted small">(you)</span>` : ''}</h1>
+    <h1>${u.username} ${roleTag(u.role)}${envTag(u)}${u.deleted_at ? html` <span class="tag account-deleted">deleted ${when(u.deleted_at)}</span>` : u.disabled_at ? html` <span class="tag">switched off ${when(u.disabled_at)}</span>` : ''}${self ? html` <span class="muted small">(you)</span>` : ''}</h1>
     <p class="muted small">Created ${when(u.created_at)} ${VIA[u.created_via]}${u.created_by ? ` by ${u.created_by}` : ''} · last login ${when(u.last_login_at)} ·
       password set ${when(u.password_set_at)} · ${String(u.sessions)} active session${u.sessions === 1 ? '' : 's'}</p>
     <p class="small">${String(u.sets)} study set${u.sets === 1 ? '' : 's'} · editor of ${String(u.edits)} other${u.edits === 1 ? '' : 's'} · ${String(u.rounds)} quiz rounds ·
       ${String(u.images)} private reference images · ${String(u.changes)} changes to the content</p>
-    ${sets.length ? html`<p class="small">Shared: ${sets.map((s, i) => html`${i ? ', ' : ''}<a href="${process.env.PUBLIC_SITE_URL || 'https://arthistory.piogino.ch'}/sets/s/${s.share_code}" target="_blank" rel="noopener">${s.name}</a> <span class="muted">(${s.visibility}, ${String(s.n)})</span>`)}</p>` : ''}
+    ${u.deleted_at ? html`<section class="accounts-box account-deleted-box"><h2>Deleted ${when(u.deleted_at)}</h2>
+      <p>It can't log in and its sets are hidden. Kept until <b>${until(u.deleted_at)}</b>, then removed for good with its sets, results and images.</p>
+      <form method="post" action="/accounts/${String(u.id)}/restore" class="inline" data-confirm="Restore ${u.username}? It can log in again with its old password; its sets come back as they were."><button>Restore the account</button></form></section>` : ''}
+    ${sets.length ? html`<h2>Study sets</h2><table class="list"><tbody>${sets.map((s) => html`<tr><td><a href="/accounts/${String(u.id)}/sets/${String(s.id)}">${s.name}</a></td>
+      <td class="small">${String(s.n)} entries${s.editors ? ` · ${String(s.editors)} editor${s.editors === 1 ? '' : 's'}` : ''}${s.locked_at ? ' · locked' : ''}</td>
+      <td class="small">${s.visibility === 'private' ? html`<span class="muted">private</span>` : html`<a href="${process.env.PUBLIC_SITE_URL || 'https://arthistory.piogino.ch'}/sets/s/${s.share_code}" target="_blank" rel="noopener">${s.visibility}</a>`}</td></tr>`)}</tbody></table>
+      <p class="muted small">A set's page shows its history and rolls it back to a moment — for a set an editor emptied or flooded.</p>` : ''}
     <form method="post" action="/accounts/${String(u.id)}" class="form accounts-box">
       <div class="field"><label>Role</label>${roleSelect('role', u.role, self)}${self ? html`<p class="muted small">Not your own — another admin can change it.</p>` : ''}</div>
       <div class="field"><label for="a-n">Public name</label><input id="a-n" name="public_name" value="${u.public_name || ''}" maxlength="60"></div>
@@ -168,8 +194,8 @@ router.get('/accounts/:id', async (req, res) => {
     ? html`<form method="post" action="/accounts/${String(u.id)}/enable" class="inline"><button class="secondary">Switch on again</button></form>`
     : html`<form method="post" action="/accounts/${String(u.id)}/disable" class="inline" data-confirm="Switch off ${u.username}? It can't log in until switched on again; its sets stay (shared ones too)."><button class="secondary">Switch off</button></form>`}
     </div>
-    ${self ? '' : html`<details class="accounts-box danger"><summary>Delete the account</summary>
-      <p class="small">Gone for good: its study sets (shared ones too), what it knows, its results and private images. Its changes to the content stay in the history, without its name.</p>
+    ${self || u.deleted_at ? '' : html`<details class="accounts-box danger"><summary>Delete the account</summary>
+      <p class="small">Switched off at once and its sets hidden; kept ${String(KEEP_DAYS)} days in case it should come back (Restore), then gone for good: its study sets (shared ones too), what it knows, its results and private images. Its changes to the content stay in the history, without its name.</p>
       <form method="post" action="/accounts/${String(u.id)}/delete" class="inline"><label>Type <b>${u.username}</b> to confirm <input name="confirm" autocomplete="off" required></label>
         <button class="danger">Delete</button></form></details>`}
     <h2>Log</h2>
@@ -177,7 +203,11 @@ router.get('/accounts/:id', async (req, res) => {
       <td class="muted small">${l.actor ? `by ${l.actor}` : ''}</td></tr>`)}</tbody></table>` : html`<p class="muted">Nothing yet.</p>`}` });
 });
 
-const back = (res, u, ok) => res.redirect(303, `/accounts/${u.id}?ok=${ok}`);
+const back = async (res, u, ok) => {
+  // a test-environment account: the change copied to the test database now (222)
+  const problem = u.test_env ? await testAccounts.sync(u.id, u.username) : null;
+  res.redirect(303, `/accounts/${u.id}?ok=${ok}${problem ? `&error=${encodeURIComponent(problem)}` : ''}`);
+};
 const refuse = (res, u, text) => res.redirect(303, `/accounts/${u.id}?error=${encodeURIComponent(text)}`);
 
 router.post('/accounts/:id', async (req, res) => {
@@ -205,7 +235,7 @@ router.post('/accounts/:id', async (req, res) => {
     if (why) return refuse(res, u, why);
     throw err;
   }
-  back(res, u, 'saved');
+  await back(res, u, 'saved');
 });
 
 router.post('/accounts/:id/password', async (req, res) => {
@@ -215,6 +245,7 @@ router.post('/accounts/:id/password', async (req, res) => {
   await adminPool.query('UPDATE admin_users SET password_hash = $2, password_set_at = now() WHERE id = $1', [u.id, await hashPassword(generated)]);
   await endSessions(u.id, u.id === req.user.id ? req : null);
   await accounts.log(adminPool, { account: u.id, username: u.username, actor: req.user.id, action: 'password_reset' });
+  await synced(u);
   passwordShown(req, res, u, generated, 'New password');
 });
 
@@ -223,7 +254,7 @@ router.post('/accounts/:id/sessions', async (req, res) => {
   if (!u) return notFoundPage(req, res);
   await endSessions(u.id, u.id === req.user.id ? req : null);   // your own: all but this one
   await accounts.log(adminPool, { account: u.id, username: u.username, actor: req.user.id, action: 'sessions_ended' });
-  back(res, u, 'sessions');
+  await back(res, u, 'sessions');
 });
 
 const switchAccount = (off) => async (req, res) => {
@@ -241,7 +272,7 @@ const switchAccount = (off) => async (req, res) => {
     if (why) return refuse(res, u, why);
     throw err;
   }
-  back(res, u, off ? 'disabled' : 'enabled');
+  await back(res, u, off ? 'disabled' : 'enabled');
 };
 router.post('/accounts/:id/disable', switchAccount(true));
 router.post('/accounts/:id/enable', switchAccount(false));
@@ -254,14 +285,101 @@ router.post('/accounts/:id/delete', async (req, res) => {
   try {
     await withTx(req.user, async (db) => {
       await accounts.log(db, { account: u.id, username: u.username, actor: req.user.id, action: 'deleted', detail: { role: u.role } });
-      await db.query('DELETE FROM admin_users WHERE id = $1', [u.id]);
+      // kept 30 days, switched off (221); purge_deleted_accounts() removes it afterwards
+      await db.query('UPDATE admin_users SET disabled_at = coalesce(disabled_at, now()), deleted_at = now(), deleted_by = $2 WHERE id = $1', [u.id, req.user.id]);
+      await db.query('DELETE FROM admin_sessions WHERE user_id = $1', [u.id]);
     });
   } catch (err) {
     const why = accounts.problem(err);
     if (why) return refuse(res, u, why);
     throw err;
   }
-  res.redirect(303, '/accounts?ok=deleted');
+  await back(res, u, 'deleted');
 });
+
+// a deleted account back within the 30 days (221): switched on, its sets visible again
+router.post('/accounts/:id/restore', async (req, res) => {
+  const u = await accountOf(req);
+  if (!u) return notFoundPage(req, res);
+  if (!u.deleted_at) return back(res, u, 'saved');
+  await withTx(req.user, async (db) => {
+    await db.query('UPDATE admin_users SET deleted_at = NULL, deleted_by = NULL, disabled_at = NULL WHERE id = $1', [u.id]);
+    await accounts.log(db, { account: u.id, username: u.username, actor: req.user.id, action: 'restored' });
+  });
+  await back(res, u, 'restored');
+});
+
+// ---- an account's study set: its history, rolled back to a moment by an admin (221) ------------------------------
+async function setOf(req, u) {
+  if (!ID.test(req.params.sid)) return null;
+  const { rows: [s] } = await adminPool.query(`SELECT s.id, s.name, s.topic, s.visibility, s.share_code, s.locked_at, s.created_at, s.updated_at,
+      (SELECT count(*)::int FROM study_set_items i WHERE i.set_id = s.id) AS n,
+      (SELECT string_agg(coalesce(a.public_name, a.username), ', ') FROM study_set_editors e JOIN admin_users a ON a.id = e.account_id WHERE e.set_id = s.id) AS editors
+    FROM study_sets s WHERE s.id = $1 AND s.owner_id = $2`, [req.params.sid, u.id]);
+  return s || null;
+}
+const EVENT = { created: 'created the set', changed: 'changed', added: 'added', removed: 'removed', restored: 'restored the set to', locked: 'locked the set', unlocked: 'unlocked the set' };
+const ZURICH = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Zurich', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' });
+const localInput = (d) => ZURICH.format(d).replace(' ', 'T');   // for <input type=datetime-local>, Zurich time
+
+router.get('/accounts/:id/sets/:sid', async (req, res) => {
+  const u = await accountOf(req);
+  const set = u && await setOf(req, u);
+  if (!set) return notFoundPage(req, res);
+  const { rows: events } = await adminPool.query(`SELECT ev.at, ev.action, ev.field, left(ev.old_value, 120) AS old, left(ev.new_value, 120) AS new, ev.detail,
+      coalesce(a.username, '—') AS by, e.name AS entry, e.type::text AS type
+    FROM study_set_events ev LEFT JOIN admin_users a ON a.id = ev.actor_id LEFT JOIN entity_index e ON (e.type, e.id) = (ev.entity_type, ev.entity_id)
+    WHERE ev.set_id = $1 ORDER BY ev.at DESC, ev.id DESC LIMIT 1000`, [set.id]);
+  const what = (ev) => (ev.action === 'changed' ? html`${ev.field}: <s class="muted">${ev.old || '—'}</s> → ${ev.new || '—'}`
+    : ev.action === 'added' || ev.action === 'removed' ? html`${ev.entry || '(an entry since deleted)'} <span class="muted small">${ev.type || ''}</span>`
+      : ev.action === 'restored' ? html`${when(new Date(ev.detail.to))} <span class="muted small">(−${String(ev.detail.removed)} +${String(ev.detail.added)}${ev.detail.reason ? ` · ${ev.detail.reason}` : ''})</span>` : '');
+  send(req, res, { title: set.name, flash: req.query.error ? { kind: 'error', text: String(req.query.error).slice(0, 200) } : flashOf(req), body: html`
+    <p class="crumbs"><a href="/accounts">Accounts</a> / <a href="/accounts/${String(u.id)}">${u.username}</a> / study set</p>
+    <h1>${set.name}</h1>
+    <p class="muted small">${String(set.n)} entries · ${set.visibility}${set.locked_at ? ' · locked' : ''} · created ${when(set.created_at)} · last changed ${when(set.updated_at)}${set.editors ? ` · editors: ${set.editors}` : ''}</p>
+    <section class="accounts-box"><h2>Roll back</h2>
+      <p class="small">The set as it was at a moment: its name, topic and description, and its entries — those added since are removed, those removed since come back (if they still exist). The rollback is a step in the history itself, so it can be undone the same way.</p>
+      <form method="post" action="/accounts/${String(u.id)}/sets/${String(set.id)}/rollback" class="form inline-form" data-confirm="Roll the set back to this moment?">
+        <label>To <input type="datetime-local" name="at" step="1" required value="${/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?$/.test(String(req.query.at || '')) ? req.query.at : events[1] ? localInput(events[1].at) : ''}"${req.query.at ? ' autofocus' : ''}></label> <span class="muted small">Zurich time</span>
+        <label>Why <input name="reason" maxlength="300" placeholder="e.g. flooded by an editor"></label>
+        <button>Roll back</button></form></section>
+    <h2>History</h2>
+    <table class="list set-history"><tbody>${events.map((ev) => html`<tr><td class="small nowrap">${when(ev.at)}</td><td class="small">${ev.by}</td>
+      <td>${EVENT[ev.action]} ${what(ev)}</td>
+      <td><a class="small" href="?at=${encodeURIComponent(localInput(ev.at))}" data-fill-at="${localInput(ev.at)}" title="Put this moment into the form above">this moment</a></td></tr>`)}</tbody></table>` });
+});
+
+router.post('/accounts/:id/sets/:sid/rollback', async (req, res) => {
+  const u = await accountOf(req);
+  const set = u && await setOf(req, u);
+  if (!set) return notFoundPage(req, res);
+  const typed = zurichTime(String(req.body.at || ''));
+  const backTo = (q) => res.redirect(303, `/accounts/${u.id}/sets/${set.id}?${q}`);
+  // the typed second / minute counts to its end — but never later than now
+  if (!typed || typed.getTime() - 60000 > Date.now()) return backTo(`error=${encodeURIComponent('Which moment? A date and time in the past.')}`);
+  const at = typed > new Date() ? new Date() : typed;
+  try {
+    await withTx(req.user, async (db) => {
+      const reason = String(req.body.reason || '').trim().slice(0, 300) || null;
+      await db.query('SELECT study_set_restore($1, $2, $3)', [set.id, at.toISOString(), reason ? `by an admin: ${reason}` : 'by an admin']);
+      await accounts.log(db, { account: u.id, username: u.username, actor: req.user.id, action: 'set_rolled_back', detail: { set: set.name, to: at.toISOString(), reason } });
+    }, { source: 'admin' });
+  } catch (err) {
+    if (err.code === '23514') return backTo(`error=${encodeURIComponent('The set did not exist yet then.')}`);
+    throw err;
+  }
+  backTo('ok=rolled_back');
+});
+
+/** "2026-11-05T14:30[:15]" read as Zurich time → a Date (or null) */
+function zurichTime(v) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})(?::(\d{2}))?$/.exec(v);
+  if (!m) return null;
+  const asUtc = Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4], +m[5], +(m[6] || 0));
+  // the offset of Zurich at that moment (one hour in winter, two in summer)
+  const shown = new Date(ZURICH.format(new Date(asUtc)).replace(' ', 'T') + 'Z').getTime();
+  // "as it was at 14:30:15": everything up to the end of that second (of that minute when no seconds are given)
+  return new Date(asUtc - (shown - asUtc) + (m[6] ? 999 : 59999));
+}
 
 module.exports = router;

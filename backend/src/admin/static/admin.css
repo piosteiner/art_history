@@ -748,3 +748,21 @@ button.danger, .button.danger { background: var(--err); border-color: var(--err)
 .tag.role-admin { border-color: var(--accent); color: var(--fg); font-weight: 600; }
 .tag.role-editor { border-color: var(--accent); color: var(--fg); }
 
+
+/* Accounts page (owner 2026-11-05): room for each section; the sign-up line and the user search in one row each */
+.accounts-box { padding: 1rem 1.25rem; margin: 1.25rem 0; }
+.accounts-box > h2, .accounts-box > summary { margin: 0 0 .75rem; }
+.accounts-box details[open] > summary, details.accounts-box[open] > summary { margin-bottom: .9rem; }
+.inline-form { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1.25rem; }
+.inline-form label { display: inline-flex; align-items: center; gap: .45rem; font-weight: normal; }
+.accounts-box .check { align-items: center; }
+.accounts-box input[type="checkbox"], .accounts-box input[type="radio"] { width: auto; flex: none; margin: 0; }
+.accounts-box input.narrow { width: 6em; }
+.accounts-env { border: none; padding: 0; margin: 0; display: grid; gap: .4rem; }
+.accounts-env legend { font-weight: 600; margin-bottom: .3rem; padding: 0; }
+.accounts-search-title { margin: 2rem 0 .6rem; }
+.filter-bar { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-bottom: 1rem; }
+.filter-bar input[type="search"] { flex: 1 1 18rem; width: auto; }
+.filter-bar select { width: auto; flex: none; }
+.filter-bar button { flex: none; }
+.tag.account-test { border-color: var(--accent); color: var(--accent); }

@@ -209,3 +209,74 @@ test('sets: not without a login, not from another site', async ({ userA, request
   expect(res.status()).toBe(403);
   expect(sql("SELECT count(*) FROM study_sets WHERE name = 'Test set evil'")).toBe('0');
 });
+
+// 221: a set's history, restored to a step; locked; the link turned off; removals proposed, voted on, decided;
+// an admin rolls a member's set back in the CMS
+test('a set\'s history and restore; locked; link off; an editor proposes removing what another added, all vote, the owner decides; an admin rolls it back', async ({ userA, userB, request }) => {
+  sql("UPDATE admin_users SET public_name = 'Test Owner' WHERE username = 'tester'; UPDATE admin_users SET public_name = 'Test Helper' WHERE username = 'tester2'");
+  const { set } = await post(userA, '', { name: 'Test set History' }, 201);
+  await post(userA, `/${set.id}/items`, { type: 'artwork', slug: 'test-study-work' });
+  const code = (await post(userA, `/${set.id}/editors`, { action: 'invite' })).set.edit_code;
+  await post(userB, `/../shared/join/${code}`, {}, 201);
+
+  // the editor adds an entry and renames the set; the history names who did what
+  await post(userB, `/${set.id}/items`, { type: 'term', slug: 'test-study-term' });
+  await post(userB, `/${set.id}`, { name: 'Test set History flooded' });
+  const { events } = await get(userB, `/${set.id}/history`);
+  expect(events.map((e) => [e.action, e.by, e.field || (e.entry && e.entry.slug)])).toEqual(expect.arrayContaining([
+    ['changed', 'Test Helper', 'name'], ['added', 'Test Helper', 'test-study-term'], ['added', 'Test Owner', 'test-study-work'], ['created', 'Test Owner', null]]));
+
+  // an editor removes their own addition, not the owner's: they propose it instead; proposing votes "remove"
+  await post(userB, `/${set.id}/items/remove`, { type: 'artwork', slug: 'test-study-work' }, 403);
+  const { proposals } = await post(userB, `/${set.id}/proposals`, { type: 'artwork', slug: 'test-study-work', reason: 'Test: not on the exam' }, 201);
+  expect(proposals[0]).toEqual(expect.objectContaining({ slug: 'test-study-work', proposed_by: 'Test Helper', added_by: 'Test Owner', my_vote: true, reason: 'Test: not on the exam' }));
+  // the owner sees it to vote on in the list, votes "keep", and alone decides
+  expect((await get(userA, '')).sets.find((s) => s.id === set.id)).toEqual(expect.objectContaining({ proposals: 1, to_vote: 1 }));
+  const voted = (await post(userA, `/${set.id}/proposals/${proposals[0].id}/vote`, { remove: '0' })).proposals[0];
+  expect(voted.votes.map((v) => [v.by, v.remove])).toEqual([['Test Helper', true], ['Test Owner', false]]);
+  await post(userB, `/${set.id}/proposals/${proposals[0].id}/decide`, { decision: 'removed' }, 403);
+  expect((await post(userA, `/${set.id}/proposals/${proposals[0].id}/decide`, { decision: 'kept' })).proposals).toEqual([]);
+  expect((await get(userA, `/${set.id}`)).items.map((i) => i.slug)).toContain('test-study-work');
+  // proposed again and removed by the owner's decision
+  const again = (await post(userB, `/${set.id}/proposals`, { type: 'artwork', slug: 'test-study-work' }, 201)).proposals[0];
+  expect((await post(userA, `/${set.id}/proposals/${again.id}/decide`, { decision: 'removed' })).count).toBe(1);
+
+  // the owner brings the set back to the step before the editor came: the name and the work back, the term gone
+  const steps = (await get(userA, `/${set.id}/history`)).events;
+  const before = steps.find((e) => e.action === 'added' && e.entry && e.entry.slug === 'test-study-work');
+  await post(userB, `/${set.id}/restore`, { event: before.id }, 403);
+  expect((await post(userA, `/${set.id}/restore`, { event: before.id })).restored).toEqual({ removed: 1, added: 1 });
+  const back = await get(userA, `/${set.id}`);
+  expect(back.set.name).toBe('Test set History');
+  expect(back.items.map((i) => i.slug)).toEqual(['test-study-work']);
+  expect((await get(userA, `/${set.id}/history`)).events[0].action).toBe('restored');
+  await new Promise((r) => { setTimeout(r, 1100); });   // the CMS form below works to the second: the next steps in a later one
+
+  // locked: the editor studies but changes nothing
+  expect((await post(userA, `/${set.id}/lock`, { locked: '1' })).set.locked_at).toBeTruthy();
+  await post(userB, `/${set.id}/items`, { type: 'term', slug: 'test-study-term' }, 423);
+  await post(userB, `/${set.id}`, { name: 'Test set changed while locked' }, 423);
+  await get(userB, `/${set.id}/cards`);
+  await post(userA, `/${set.id}/lock`, { locked: '0' });
+  await post(userB, `/${set.id}/items`, { type: 'term', slug: 'test-study-term' });
+
+  // the link turned off ends for good; shared again it is a new one
+  const first = (await post(userA, `/${set.id}/share`, { visibility: 'link' })).set.code;
+  expect((await request.get(`/site/shared/${first}`, { headers: H })).status()).toBe(200);
+  await post(userA, `/${set.id}/share`, { visibility: 'private' });
+  expect((await request.get(`/site/shared/${first}`, { headers: H })).status()).toBe(404);
+  const second = (await post(userA, `/${set.id}/share`, { visibility: 'link' })).set.code;
+  expect(second).not.toBe(first);
+  expect((await request.get(`/site/shared/${first}`, { headers: H })).status()).toBe(404);
+
+  // an admin (CMS → Accounts → the owner → the set) rolls it back to a moment: the history shows the step
+  const owner = sql("SELECT id FROM admin_users WHERE username = 'tester'");
+  await userA.goto(`/accounts/${owner}/sets/${set.id}`);
+  await expect(userA.locator('.set-history')).toContainText('added');
+  await Promise.all([userA.waitForURL(/\?at=/), userA.locator('.set-history tr', { hasText: 'restored the set to' }).locator('[data-fill-at]').click()]);
+  await userA.fill('input[name="reason"]', 'test rollback');
+  userA.once('dialog', (d) => d.accept());
+  await Promise.all([userA.waitForURL(/ok=rolled_back/), userA.click('button:has-text("Roll back")')]);
+  expect((await get(userA, `/${set.id}`)).items.map((i) => i.slug)).toEqual(['test-study-work']);
+  await expect(userA.locator('.set-history tr').first()).toContainText('by an admin: test rollback');
+});

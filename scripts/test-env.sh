@@ -50,12 +50,14 @@ sudo -u postgres psql -p $PORT -d arthistory -q -v ON_ERROR_STOP=1 <<'SQL'
 TRUNCATE admin_sessions, admin_drafts, page_drafts, form_drafts, live_docs, page_downloads, feedback, editor_scopes, private_images,
   study_sets, study_set_items, study_progress, study_sessions, study_plans, study_set_editors, account_log;
 -- site-only accounts (220: members — visitors who signed up) are people, not editors of the content: not in the test copy
-DELETE FROM admin_users WHERE role = 'member';
-UPDATE admin_users SET public_name = NULL, note = NULL;
+-- accounts made for the test environment (222) stay, with their password and role; deleted ones go
+DELETE FROM admin_users WHERE role = 'member' AND NOT test_env;
+DELETE FROM admin_users WHERE deleted_at IS NOT NULL;
+UPDATE admin_users SET public_name = NULL, note = NULL WHERE NOT test_env;
 UPDATE site_settings SET value = 'false' WHERE key = 'signup_open';   -- no sign-up in the test environment
 -- private_images (184): the owner's reference images from their books — never in the test copy; study sets, their
 -- progress (218) and results (219): an account's own, never in the test copy either (shared ones included)
-UPDATE admin_users SET password_hash = '!locked';
+UPDATE admin_users SET password_hash = '!locked' WHERE NOT test_env;
 -- the owner's unpublished work (owner 2026-10-31: "mein Unveröffentlichtes … soll nicht in das CMS der
 -- Testumgebung"): changelog days, roadmap items, pages, start views not published (their parts go along), sources
 -- waiting for a working copy's Publish — and what the history still holds of rows that are gone (also "Recently

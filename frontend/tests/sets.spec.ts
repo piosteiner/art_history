@@ -411,3 +411,66 @@ test('visitors: /sets and /account offer Log in and, while open, Create an accou
   await page.goto('/account');
   await expect(page.locator('main a', { hasText: 'Log in' })).toBeVisible();
 });
+
+// 221: the owner's set page — a removal proposed by an editor with the votes, decided by the owner; the history with
+// "Back to here"; lock; the share link turned off. The set (55) answered by its own stand-in routes.
+test('a set\'s owner: proposed removals with votes and the decision, the history and a restore, lock, the link turned off', async ({ page }) => {
+  await loggedIn(page);
+  const posts: string[] = [];
+  let open = true;
+  let locked = false;
+  let visibility: 'private' | 'link' = 'link';
+  const set = () => ({ id: '55', name: 'Baroque exam', topic: null, description: null, visibility, code: visibility === 'link' ? 'LinkLink1234' : null,
+    count: open ? 2 : 1, created_at: '2026-11-01T12:00:00Z', updated_at: '2026-11-05T09:00:00Z', role: 'owner', locked_at: locked ? '2026-11-05T10:00:00Z' : null,
+    editors: [{ id: '8', name: 'Ann Helper', me: false }], edit_code: null, updated_by: 'Ann Helper', exam_on: null, creator: 'Test Owner' });
+  const proposal = { id: '3', type: 'artist', slug: 'diego-velazquez', name: 'Diego Velázquez', reason: 'Not on the exam', created_at: '2026-11-05T08:00:00Z',
+    proposed_by: 'Ann Helper', added_by: 'Test Owner', votes: [{ by: 'Ann Helper', remove: true }, { by: 'Bo Other', remove: true }], my_vote: null };
+  await page.route(/^http:\/\/admin\.test\/site\/sets\/55(\/.*)?$/, async (route) => {
+    const req = route.request();
+    const path = new URL(req.url()).pathname.replace(/^\/site\/sets\/55/, '');
+    const body = new URLSearchParams(req.postData() ?? '');
+    if (req.method() === 'POST') posts.push(`${path}:${body.toString()}`);
+    const json = (b: unknown) => route.fulfill({ contentType: 'application/json', body: JSON.stringify(b),
+      headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' } });
+    if (path === '') return json({ set: set(), items: [{ type: 'artwork', slug: 'the-great-wave-off-kanagawa', name: 'The Great Wave', subtitle: null, image: null, own: false, added_at: '', mine: true },
+      ...(open ? [{ type: 'artist', slug: 'diego-velazquez', name: 'Diego Velázquez', subtitle: null, image: null, own: false, added_at: '', mine: true }] : [])], proposals: open ? [proposal] : [] });
+    if (path === '/stats') return json({ modes: {}, boxes: { forward: [2, 0, 0, 0, 0, 0], reverse: [2, 0, 0, 0, 0, 0] }, hardest: [] });
+    if (path === '/history') return json({ more: false, events: [
+      { id: '12', at: '2026-11-05T09:00:00.123456Z', action: 'added', field: null, old: null, new: null, by: 'Ann Helper', seeded: false, entry: { type: 'term', slug: 'nishiki-e', name: 'Ukiyo-e' }, detail: null },
+      { id: '11', at: '2026-11-05T08:00:00Z', action: 'changed', field: 'name', old: 'Baroque', new: 'Baroque exam', by: 'Test Owner', seeded: false, entry: null, detail: null },
+      { id: '10', at: '2026-11-01T12:00:00Z', action: 'created', field: null, old: null, new: null, by: 'Test Owner', seeded: false, entry: null, detail: null }] });
+    if (path === '/proposals/3/decide') { open = false; return json({ proposals: [], count: 1 }); }
+    if (path === '/proposals/3/vote') return json({ proposals: [proposal] });
+    if (path === '/restore') return json({ restored: { removed: 1, added: 0 } });
+    if (path === '/lock') { locked = body.get('locked') === '1'; return json({ set: set() }); }
+    if (path === '/share') { visibility = body.get('visibility') === 'private' ? 'private' : 'link'; return json({ set: set(), public_name: 'Test Owner' }); }
+    return json({});
+  });
+  page.on('dialog', (d) => { void d.accept(); });
+  await page.goto('/sets/55');
+  const box = page.locator('#sets-proposals');
+  await expect(box).toContainText('Diego Velázquez');
+  await expect(box).toContainText('proposed by Ann Helper');
+  await expect(box.locator('.sets-votes')).toContainText('2 remove · 0 keep');
+  await box.locator('[data-vote="0"]').click();
+  await expect.poll(() => posts).toContain('/proposals/3/vote:remove=0');
+  await box.locator('[data-decide="removed"]').click();
+  await expect(page.locator('#sets-proposals')).toHaveCount(0);
+  expect(posts).toContain('/proposals/3/decide:decision=removed');
+
+  // the history: who did what; the owner brings the set back to a step, by the step itself
+  await page.locator('.sets-history summary').click();
+  await expect(page.locator('.sets-history-list li').first()).toContainText('Ann Helper added Ukiyo-e');
+  await expect(page.locator('.sets-history-list li').nth(1)).toContainText('changed the name: Baroque → Baroque exam');
+  await page.locator('.sets-history-list li').nth(1).locator('.sets-restore').click();
+  await expect.poll(() => posts).toContain('/restore:event=11&reason=');
+
+  // lock, then the share link turned off
+  await page.locator('.sets-lock').click();
+  await expect(page.locator('h1 .tag', { hasText: 'locked' })).toBeVisible();
+  await expect(page.locator('.sets-lock')).toHaveText('Unlock');
+  await page.locator('.sets-share summary').click();
+  await page.locator('.sets-share-off').click();
+  await expect.poll(() => posts).toContain('/share:visibility=private');
+  await expect(page.locator('.sets-share-link')).toHaveCount(0);
+});
