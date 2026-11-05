@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-05
 
+### Content: the 53 stations of the Tōkaidō as places under the road
+- **What:** owner 2026-11-05. 49 places made (`scratchpad/tokaido-53.js`): English name from Wikidata, the Japanese
+  name as original, kind settlement, designation "post station of the Tōkaidō (no. N)", a line of text with the
+  number, the point of the station's ja.wikipedia article (Okitsu: its railway station; seven from Wikidata), Wikidata
+  id; parent = the place `tokaido`. Hodogaya, Ejiri, Kanaya, Yoshida (made for the Fuji prints) moved under it, their
+  Wikidata P131 parent citations removed. Location and parent cited to `wikipedia-ja-tokaido-gojusan-tsugi`. Quality:
+  four "possible duplicate" with today's cities (Fujisawa, Hiratsuka, Odawara, Ōtsu) and 49 "no relationships"
+  acknowledged with a reason. Audited (user 1 / script).
+- **Revert:** CMS history; `DELETE FROM places WHERE designation LIKE 'post station of the Tōkaidō%' AND created_at::date = '2026-11-05'`.
+
 ### Test-environment accounts are deleted at once
 - **What:** owner 2026-11-05 ("test-environment accounts don't need to be kept"): deleting an account with `test_env`
   removes the row at once (no 30-day keep, no Restore) and from the test database (`testAccounts.sync`); the delete box
