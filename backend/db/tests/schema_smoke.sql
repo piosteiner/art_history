@@ -76,7 +76,9 @@ DECLARE
     ['admin role tries TRUNCATE',       $q$TRUNCATE artists CASCADE$q$],
     ['admin role forges history',       $q$INSERT INTO audit_log (table_name, row_id, action, source) VALUES ('artists', 1, 'delete', 'admin')$q$],
     ['admin role rewrites history',     $q$UPDATE audit_log SET source = 'x'$q$],
-    ['admin role creates a user',       $q$INSERT INTO admin_users (username, password_hash) VALUES ('eve', 'x')$q$],
+    -- since 220 the app creates accounts (the Accounts page, sign-up) — but not with a made-up past or id
+    ['admin role backdates a user',     $q$INSERT INTO admin_users (username, password_hash, created_at) VALUES ('eve', 'x', '2000-01-01')$q$],
+    ['admin role demotes the last admin', $q$UPDATE admin_users SET role = 'member'$q$],
     ['admin role renames a user',       $q$UPDATE admin_users SET username = 'eve'$q$]
   ];
   c text[];

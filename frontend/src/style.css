@@ -1393,3 +1393,36 @@ span.quiz-tile { cursor: default; }
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
 .md-hit { padding: .3rem .7rem; cursor: pointer; }
 .md-hit-on, .md-hit:hover { background: var(--picked-bg); }
+
+/* Accounts, exam dates, sets edited together (backend migration 220) */
+.sets-page .flash.ok { padding: .5rem .8rem; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: var(--radius); background: var(--surface); }
+.sets-together { margin: 0; }
+.sets-together-form { display: grid; gap: .5rem; max-width: 40rem; margin-top: .5rem; padding: .7rem .9rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.sets-together-form p { margin: 0; }
+.sets-editors { margin: 0; padding-left: 1.2rem; }
+.sets-invite-name { display: flex; flex-wrap: wrap; gap: .4rem; align-items: baseline; margin-bottom: .4rem; }
+.sets-together-tag, .sets-exam { margin-left: .3rem; }
+.sets-added-by { display: block; }
+.sets-conflict { display: grid; gap: .4rem; padding: .6rem .8rem; border: 1px solid var(--accent); border-radius: var(--radius); }
+.sets-conflict-theirs { display: block; padding: .4rem .6rem; border-left: 3px solid var(--line); }
+.sets-plan { margin: 1rem 0; padding: .7rem .9rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); max-width: 40rem; }
+.sets-plan h2 { margin: 0 0 .3rem; font-size: 1.1rem; }
+.sets-plan-today { margin: .3rem 0; padding-left: 1.2rem; }
+.sets-exam-form { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin: .5rem 0 .2rem; }
+.sets-exam-form label { display: flex; gap: .4rem; align-items: center; }
+.sets-cards-choice { border: 0; padding: 0; margin: .2rem 0; display: flex; flex-wrap: wrap; gap: .3rem 1rem; }
+.sets-cards-choice legend { float: left; margin-right: .6rem; font-weight: 600; }
+.sets-join { display: grid; gap: .5rem; max-width: 30rem; }
+.sets-join label { display: grid; gap: .2rem; }
+.account-page { max-width: 44rem; }
+.account-facts { display: grid; grid-template-columns: max-content 1fr; gap: .3rem 1rem; }
+.account-facts dt { color: var(--muted); }
+.account-facts dd { margin: 0; }
+.account-section { margin: 1.4rem 0; padding-top: .6rem; border-top: 1px solid var(--line); }
+.account-section h2 { font-size: 1.1rem; margin: 0 0 .4rem; }
+.account-form { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+.account-form-stack { display: grid; max-width: 24rem; }
+.account-form-stack label { display: grid; gap: .2rem; }
+.account-danger h2 { color: var(--accent); }
+button.danger { border-color: var(--accent); color: var(--accent); }
+@media (max-width: 560px) { .account-facts { grid-template-columns: 1fr; } .account-facts dd { margin-bottom: .4rem; } }

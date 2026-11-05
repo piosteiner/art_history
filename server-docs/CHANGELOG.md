@@ -2,6 +2,57 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-05
+
+### Accounts managed in the CMS, site-only accounts, sign-up; exam dates per set; sets edited together (220)
+- **What** (owner 2026-11-05: "manage accounts in the cms … create accounts that do not have cms access. exam date per
+  set … self service sign up … shared editing"):
+  - Migration 220: enum `account_role` member (the site only) < editor (also the CMS) < admin (also the accounts) —
+    ordered, so `role >= 'editor'` = CMS access; a new row is a member unless said otherwise; every existing account
+    → admin. `admin_users.disabled_at`, `created_via` script/cms/signup, `created_by`, `note`, `password_set_at`;
+    `account_log` (who did what to which account; the username kept as text); a statement trigger with transition
+    tables (`keep_an_admin()`) refuses any UPDATE/DELETE that leaves no active admin; column grants so the app may
+    create, change and delete accounts; `site_settings` `signup_open` (false) and `signup_daily_limit` (50) with checks.
+    `study_plans` (exam date per account and set), `study_interval(box, days_left)` (Leitner 1/2/4/8/16 days, at most
+    half the days left before an exam), `study_progress.first_seen_at`; `study_set_editors`, `study_sets.edit_code`
+    (16 characters, 96 bits) and `updated_by`, `study_set_items.added_by`.
+  - Login (`src/admin/auth.js`): switched-off accounts refused (said only after the right password), sessions only of
+    active accounts, `req.user` with role/cms/is_admin; the CMS gate needs `cms` (a member gets "No access to the
+    CMS" with a link to the site; the live socket refuses it); after login a member goes back to the site.
+  - CMS **Accounts** (`routes/accounts.js`, admins only; nav link): sign-up switch and daily limit; new account (role,
+    public name, password given or generated — shown once); list with role, state, created how, last login, sets,
+    sessions; an account's page: role, public name, note, new password (generated, shown once, its sessions end), log
+    out everywhere, switch off/on, delete (username typed), its log. Not one's own role/switch/delete.
+  - **Sign-up** (`routes/signup.js`, `/signup` on the admin host): username, optional public name, password twice,
+    privacy box; members only; a hidden honeypot field, 3 per address an hour, the daily limit, the origin check;
+    logged in at once, back to the site. Login page: "Create one" while open, "Forgot your password? ask the owner".
+  - Site account routes (`routes/site-account.js`): `/site/me` (+ role, cms, public_name), `/site/signup`,
+    `/site/account` (+ `/public-name`, `/password` — current one asked, other sessions end —, `/sessions`, `/delete` —
+    members only, password asked; its log lines go along, one nameless line stays).
+  - Study sets (`routes/site-sets.js`): owner or editor reach a set (`role`); editors change name, topic, description,
+    entries; share/delete/editors stay the owner's (403); invitation `/site/shared/join/<code>` (GET anyone, POST
+    logged in with a public name), `/site/sets/:id/editors` invite/stop/remove, `/leave`; saves carry `base_*` — a
+    field someone else changed meanwhile → 409 with the set as it is now; `/plan` (own and shared sets); stats carry
+    `plan` (per direction: due, new, new left today), cards carry `progress.*.due`. Also `/site/sets/preview` — the
+    description editor's Preview: the route was missing from 219 (the tab said "could not be made").
+  - Site: footer name → `/account` (public name, password, log out elsewhere, delete); `/sets` and `/account`
+    logged out: Log in + Create an account (while open); `/sets` welcome after sign-up; sets list with "n editors" /
+    "edited with …" and exam tags; a set's page: plan box (exam date, "Exam in 12 days", per kind the cards to review
+    + new today), "Which cards: All / Today's / leave out known well" (`?cards=today`), "Edit together…" (invitation
+    link, editors, leave), who changed it last and who added an entry, the conflict box; `/sets/join/<code>`.
+  - `scripts/admin-user.js --role member|editor|admin` (new accounts without it: editor); e2e: tester admin, tester2
+    editor; test copy: members deleted, public names/notes emptied, sign-up closed, plans/editors/log emptied, the
+    shared login `test` an editor (no Accounts page for visitors of the test environment).
+  - Privacy statement: sign-up, sessions (IP, user agent), account log, editing together, exam dates, what admins see,
+    deleting one's account.
+- **Why**: accounts for students without the CMS; the owner manages them; students can sign up, plan for an exam and
+  build sets together.
+- **Revert**: `git revert` the commit; in the database `DROP TABLE study_plans, study_set_editors, account_log;
+  DROP FUNCTION study_interval, keep_an_admin, study_editor_not_owner CASCADE; ALTER TABLE study_sets DROP COLUMN
+  edit_code, DROP COLUMN updated_by; ALTER TABLE study_set_items DROP COLUMN added_by; ALTER TABLE study_progress DROP
+  COLUMN first_seen_at; ALTER TABLE admin_users DROP COLUMN role, …; DROP TYPE account_role; DELETE FROM site_settings
+  WHERE key LIKE 'signup%'` (members first: `DELETE FROM admin_users WHERE role = 'member'`).
+
 ## 2026-11-04
 
 ### Study sets shared, with a topic and a Markdown description; results per set and kind of quiz; Type it, Pick it (219)

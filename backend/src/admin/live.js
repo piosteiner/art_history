@@ -30,7 +30,7 @@ function attach(server) {
       if (new URL(req.url, 'http://x').pathname !== '/live' || host !== config.adminHost) return reject(socket, 404, 'Not Found');
       if (req.headers.origin !== adminOrigin(req)) return reject(socket, 403, 'Forbidden');
       const user = await userFromRequest(req);
-      if (!user) return reject(socket, 401, 'Unauthorized');
+      if (!user || !user.cms) return reject(socket, 401, 'Unauthorized');   // site-only accounts (220) have no live connection
       wss.handleUpgrade(req, socket, head, (ws) => connected(ws, user));
     } catch (err) {
       console.error('live upgrade failed', err);

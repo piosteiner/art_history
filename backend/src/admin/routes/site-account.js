@@ -2,7 +2,14 @@
 // opens the CMS login (/login?next=<site address>), and the CMS session then shows the owner's private reference images
 // (184) on the site's artwork pages too. These routes answer the site only (CORS with credentials for its origin); the
 // session cookie stays on the admin host (SameSite=Strict, sent because site and admin host are the same site).
-//   GET  /site/me                               {username} or 401
+//   GET  /site/me                               {username, role, cms, public_name} or 401
+//   GET  /site/signup                           {open, url} — whether "Create an account" is offered (220)
+//   GET  /site/account                          {username, role, cms, public_name, created_at, created_via, sessions, sets, edits}
+//   POST /site/account/public-name              public_name → {public_name}
+//   POST /site/account/password                 current, password, password2 → 204 (other sessions end)
+//   POST /site/account/sessions                 → {ended} — log out everywhere else
+//   POST /site/account/delete                   password → 204: a site-only account deletes itself with everything
+//                                               it holds (CMS accounts are deleted by an admin)
 //   GET  /site/artworks/:slug/private-images    {images: [{url, source, locator, width, height}]} — this account's only
 //   GET  /site/quiz/<image|artist|movement|glossary>?…   the quiz (src/routes/quiz.js) with this account's private
 //                                               images counted as pictures too ({image_url, own: true}); ?mine=only
@@ -14,7 +21,8 @@
 const express = require('express');
 const config = require('../../config');
 const { adminPool } = require('../../db');
-const { loadUser, logout, adminOrigin } = require('../auth');
+const { loadUser, logout, adminOrigin, verifyPassword, hashPassword, passwordProblem, endSessions, tooManyAttempts, recordFailure } = require('../auth');
+const accounts = require('../accounts');
 const { forAccount } = require('../../routes/quiz');
 
 const router = express.Router();
@@ -42,7 +50,79 @@ router.use('/sets', require('./site-sets'));
 // shared sets (219): anyone with the link, logged in or not
 router.use('/shared', require('./site-sets').shared);
 
-router.get('/me', (req, res) => (req.user ? res.json({ username: req.user.username }) : res.status(401).json({ error: 'not_logged_in' })));
+router.get('/me', (req, res) => (req.user
+  ? res.json({ username: req.user.username, role: req.user.role, cms: req.user.cms, public_name: req.user.public_name })
+  : res.status(401).json({ error: 'not_logged_in' })));
+
+// ---- the account itself (220) -------------------------------------------------------------------------------------
+router.get('/signup', async (req, res) => {
+  const s = await accounts.signupSettings();
+  res.json({ open: s.open && s.today < s.daily_limit, url: `${adminOrigin(req)}/signup` });
+});
+
+const needLogin = (req, res, next) => (req.user ? next() : res.status(401).json({ error: 'not_logged_in' }));
+router.use('/account', needLogin, (req, res, next) => { res.set('Cache-Control', 'no-store'); next(); });
+
+router.get('/account', async (req, res) => {
+  const { rows: [a] } = await adminPool.query(`SELECT u.username, u.role::text AS role, u.role >= 'editor' AS cms, u.public_name, u.created_at, u.created_via,
+      u.password_set_at, (SELECT count(*)::int FROM admin_sessions x WHERE x.user_id = u.id AND x.expires_at > now()) AS sessions,
+      (SELECT count(*)::int FROM study_sets s WHERE s.owner_id = u.id) AS sets,
+      (SELECT count(*)::int FROM study_set_editors e WHERE e.account_id = u.id) AS edits
+    FROM admin_users u WHERE u.id = $1`, [req.user.id]);
+  res.json(a);
+});
+
+router.post('/account/public-name', async (req, res) => {
+  const name = String(req.body.public_name ?? '').trim().slice(0, 60) || null;
+  if (name && name.toLowerCase() === req.user.username.toLowerCase()) return res.status(422).json({ error: 'choose a public name other than your login name' });
+  // a shared set or one edited together shows the name: it can be changed, not removed then
+  if (!name) {
+    const { rows: [{ shown }] } = await adminPool.query(`SELECT EXISTS (SELECT 1 FROM study_sets WHERE owner_id = $1 AND visibility <> 'private')
+      OR EXISTS (SELECT 1 FROM study_set_editors WHERE account_id = $1) AS shown`, [req.user.id]);
+    if (shown) return res.status(422).json({ error: 'your shared sets and sets edited together show your public name — change it, or stop sharing first' });
+  }
+  await adminPool.query('UPDATE admin_users SET public_name = $2 WHERE id = $1', [req.user.id, name]);
+  await accounts.log(adminPool, { account: req.user.id, username: req.user.username, actor: req.user.id, action: 'public_name' });
+  res.json({ public_name: name });
+});
+
+/** The account's password is right (the login's brake against guessing applies here too). */
+async function rightPassword(req, password) {
+  if (tooManyAttempts(req.ip)) return false;
+  const { rows: [u] } = await adminPool.query('SELECT password_hash FROM admin_users WHERE id = $1', [req.user.id]);
+  const ok = Boolean(u) && await verifyPassword(String(password || ''), u.password_hash);
+  if (!ok) recordFailure(req.ip);
+  return ok;
+}
+
+router.post('/account/password', async (req, res) => {
+  if (!await rightPassword(req, req.body.current)) return res.status(403).json({ error: 'your current password is not right' });
+  const weak = passwordProblem(req.body.password, req.user.username);
+  if (weak) return res.status(422).json({ error: weak });
+  if (req.body.password !== req.body.password2) return res.status(422).json({ error: 'the two new passwords differ' });
+  await adminPool.query('UPDATE admin_users SET password_hash = $2, password_set_at = now() WHERE id = $1', [req.user.id, await hashPassword(req.body.password)]);
+  await endSessions(req.user.id, req);   // logged out everywhere else
+  await accounts.log(adminPool, { account: req.user.id, username: req.user.username, actor: req.user.id, action: 'password_changed' });
+  res.status(204).end();
+});
+
+router.post('/account/sessions', async (req, res) => {
+  const { rowCount } = await adminPool.query('SELECT 1 FROM admin_sessions WHERE user_id = $1', [req.user.id]);
+  await endSessions(req.user.id, req);
+  await accounts.log(adminPool, { account: req.user.id, username: req.user.username, actor: req.user.id, action: 'sessions_ended' });
+  res.json({ ended: Math.max(0, rowCount - 1) });
+});
+
+router.post('/account/delete', async (req, res) => {
+  if (req.user.cms) return res.status(403).json({ error: 'a CMS account is deleted by an admin (CMS → Accounts)' });
+  if (!await rightPassword(req, req.body.password)) return res.status(403).json({ error: 'the password is not right' });
+  // nothing of it stays: its log lines go too, one line without a name says that an account deleted itself
+  await adminPool.query('DELETE FROM account_log WHERE account_id = $1', [req.user.id]);
+  await adminPool.query('DELETE FROM admin_users WHERE id = $1', [req.user.id]);   // sets, progress, results, sessions go with it
+  await accounts.log(adminPool, { account: null, username: '(deleted by itself)', action: 'deleted', detail: { by: 'self' } });
+  await logout(req, res);
+  res.status(204).end();
+});
 
 router.get('/artworks/:slug/private-images', async (req, res) => {
   if (!req.user) return res.status(401).json({ error: 'not_logged_in' });

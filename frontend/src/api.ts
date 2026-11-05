@@ -307,14 +307,26 @@ async function account<T>(path: string, init: RequestInit = {}): Promise<T | nul
   if (res.status === 401) return null;
   if (!res.ok) {
     const body = await res.json().catch(() => null) as { error?: string } | null;
-    throw new ApiError(res.status, 'account', body?.error ?? res.statusText);
+    throw new ApiError(res.status, 'account', body?.error ?? res.statusText, body);   // body: a 409 carries the set as it is now
   }
   return res.status === 204 ? null : (res.json() as Promise<T>);
 }
 /** Works that only have this account's reference images: slug → the image's address (none for visitors). */
 export const getOwnThumbs = () => account<{ images: Record<string, string> }>('/thumbs').then((r) => r?.images ?? {});
-/** The logged-in account, or null. */
-export const getAccount = () => account<{ username: string }>('/me');
+/** The logged-in account, or null: member = the site only; editor, admin = also the CMS (backend migration 220). */
+export interface Me { username: string; role: 'member' | 'editor' | 'admin'; cms: boolean; public_name: string | null }
+export const getAccount = () => account<Me>('/me');
+/** The account's own page (/account): settings and what it holds. */
+export interface AccountInfo extends Me { created_at: string; created_via: 'script' | 'cms' | 'signup'; sessions: number; sets: number; edits: number }
+export const getAccountInfo = () => account<AccountInfo>('/account');
+export const setPublicName = (name: string) => account<{ public_name: string | null }>('/account/public-name', form({ public_name: name }));
+export const changePassword = (current: string, password: string, password2: string) => account<null>('/account/password', form({ current, password, password2 }));
+export const endOtherSessions = () => account<{ ended: number }>('/account/sessions', form({}));
+export const deleteAccount = (password: string) => account<null>('/account/delete', form({ password }));
+/** Whether "Create an account" is offered (asked only where an account is the point: /sets, /account). */
+export const getSignup = () => account<{ open: boolean; url: string }>('/signup');
+/** The admin host's sign-up form, back to `next` (an address of this site) afterwards. */
+export const signupUrl = (next: string) => (ADMIN ? `${ADMIN}/signup?${new URLSearchParams({ next })}` : null);
 /** This account's private reference images of a work (184) — null when not logged in. */
 export const getPrivateImages = (slug: string) =>
   account<{ images: PrivateImage[] }>(`/artworks/${encodeURIComponent(slug)}/private-images`).then((r) => r?.images ?? null);
@@ -332,9 +344,19 @@ export interface StudySet {
   creator?: string | null; mine?: boolean;
   /** a copy of someone's shared set (while that one is still shared) */
   copied_from?: { name: string; code: string; creator: string | null } | null;
+  /** edited together (220): the viewer's role in it; the editors (owner: their ids to remove); the invitation code
+   *  (owner only); who changed it last; the viewer's exam date for it (YYYY-MM-DD) */
+  role?: 'owner' | 'editor'; editors?: { id: string; name: string | null; me: boolean }[]; editor_count?: number;
+  edit_code?: string | null; updated_by?: string | null; exam_on?: string | null;
 }
-export interface StudyItem { type: EntityType; slug: string; name: string; subtitle: string | null; image: string | null; own: boolean; added_at: string }
-export interface CardProgress { box: number; seen: number; known: number }
+/** The day's cards per direction: due again, never asked, new ones today brings (220). */
+export interface StudyPlan {
+  exam_on: string | null; days_left: number | null;
+  directions: Partial<Record<'forward' | 'reverse', { due: number; new: number; new_left_today: number; new_today: number }>>;
+}
+export interface StudyItem { type: EntityType; slug: string; name: string; subtitle: string | null; image: string | null; own: boolean; added_at: string; added_by?: string | null }
+/** `due`: asked again today (its Leitner interval is over — shorter before an exam) */
+export interface CardProgress { box: number; seen: number; known: number; due?: boolean }
 export interface StudyCard {
   type: EntityType; slug: string; name: string; facts: { label: string; value: string }[]; text: string;
   image: string | null; own: boolean; progress: { forward?: CardProgress; reverse?: CardProgress };
@@ -345,6 +367,7 @@ export interface StudyStats {
   /** per direction: [new, box 1 … box 5] */
   boxes: { forward: number[]; reverse: number[] };
   hardest: { type: EntityType; slug: string; name: string; seen: number; known: number }[];
+  plan?: StudyPlan;
 }
 /** Where a set is read from: the account's own (`/sets/<id>`) or a shared one (`/shared/<code>`). */
 export type SetRef = { own: string } | { code: string };
@@ -353,8 +376,9 @@ const form = (data: Record<string, string>): RequestInit => ({ method: 'POST', b
 export const getSets = () => account<{ sets: StudySet[]; public_name: string | null; topics: string[] }>('/sets');
 export const createSet = (name: string, topic = '', description = '') =>
   account<{ set: StudySet }>('/sets', form({ name, topic, description })).then((r) => r?.set ?? null);
-export const updateSet = (id: string, data: { name: string; topic: string; description: string }) =>
-  account<{ set: StudySet }>(`/sets/${id}`, form(data)).then((r) => r?.set ?? null);
+/** `base_*`: what the form started from — a field someone else changed meanwhile: ApiError 409 'changed' (220) */
+export const updateSet = (id: string, data: { name: string; topic: string; description: string; base_name?: string; base_topic?: string; base_description?: string }) =>
+  account<{ set: StudySet }>(`/sets/${id}`, form(data as Record<string, string>)).then((r) => r?.set ?? null);
 export const shareSet = (id: string, data: { visibility?: Visibility; public_name?: string; new_link?: '1' }) =>
   account<{ set: StudySet; public_name: string | null }>(`/sets/${id}/share`, form(data as Record<string, string>));
 export const deleteSet = (id: string) => account<null>(`/sets/${id}/delete`, form({}));
@@ -377,6 +401,16 @@ export const previewDescription = (text: string) => account<{ html: string }>('/
 export const getSetStats = (ref: SetRef) => account<StudyStats>(`${base(ref)}/stats`);
 export const getPublicSets = (topic = '', q = '') =>
   account<{ sets: StudySet[]; topics: { topic: string; count: number }[] }>(`/shared?${new URLSearchParams({ topic, q })}`);
+/** The account's exam date for a set (YYYY-MM-DD; '' = none) → the day's plan */
+export const savePlan = (ref: SetRef, examOn: string) => account<{ plan: StudyPlan }>(`${base(ref)}/plan`, form({ exam_on: examOn })).then((r) => r?.plan ?? null);
+// sets edited together (220)
+export const editSetEditors = (id: string, data: { action: 'invite' | 'stop' | 'remove'; account?: string; public_name?: string }) =>
+  account<{ set: StudySet }>(`/sets/${id}/editors`, form(data as Record<string, string>)).then((r) => r?.set ?? null);
+export const leaveSet = (id: string) => account<null>(`/sets/${id}/leave`, form({}));
+export interface Invitation { set: { id?: string; name: string; topic: string | null; creator: string | null; count: number; editors: number }; role: 'owner' | 'editor' | null; public_name: string | null }
+/** What an invitation to edit is for — anyone may look (a 404 is an ApiError) */
+export const getInvitation = (code: string) => account<Invitation>(`/shared/join/${code}`);
+export const joinSet = (code: string, publicName = '') => account<{ set: { id: string } }>(`/shared/join/${code}`, form({ public_name: publicName })).then((r) => r?.set ?? null);
 export const copySet = (code: string) => account<{ set: { id: string; name: string } }>(`/shared/${code}/copy`, form({})).then((r) => r?.set ?? null);
 
 /** The CMS login, back to `next` (an address of this site) afterwards. */

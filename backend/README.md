@@ -48,7 +48,7 @@ definitions the import/export use, so a form save and a YAML import validate ide
   `WIKIDATA_BASE` / `COMMONS_BASE` override the API hosts (the e2e tests use a fixture server).
 - Data quality (`/quality`, `src/admin/quality.js`): checks are the SQL view `quality_issues` (migration 013);
   findings can be marked OK (`quality_acks`). New check = new migration with `CREATE OR REPLACE VIEW` + an entry in CHECKS.
-- Users: `npm run admin:user -- <name>` (asks for the password; also resets it and logs out that user's sessions).
+- Users: `npm run admin:user -- <name> [--role member|editor|admin]` (asks for the password; also resets it and logs out that user's sessions). Since 220 accounts are managed in the CMS too (Accounts, admins only): members use the site only, editors the CMS, admins also the accounts; visitors may sign up (members) while `signup_open` is on.
 - Every write runs in a transaction tagged with the user → the `audit_log` trigger records who changed what
   (History pages). Edits use optimistic locking (the form carries `updated_at`; a concurrent save is refused).
 

@@ -86,7 +86,7 @@ The same CMS and site as production for people who want to try the project, rese
 
 ## Secrets
 Never in any git repo. Art history project: `~/.config/arthistory/*.env` + `backup-passphrase` (700/600). See CHANGELOG 2026-09-23 "Secrets policy".
-Admin panel: WebSocket `/live` (presence, drafts) proxied by nginx with Upgrade headers. One login — app users in the `admin_users` table (scrypt); the password lives in the owner's password manager only.
+Admin panel: WebSocket `/live` (presence, drafts) proxied by nginx with Upgrade headers. Accounts in the `admin_users` table (scrypt) with a role (220): members (the site only — study sets, quiz results; also by sign-up at `/signup` while the CMS's Accounts page has it open), editors (the CMS), admins (also the Accounts page). The owner's password lives in their password manager only; a member who forgets theirs gets a new one from an admin (no e-mail is kept). NB fail2ban counts members' failed logins too — many people behind one address (a school) share the 5 tries.
 
 ## Source books (private)
 `/home/ubuntu/books` (700, outside the repo; since 2026-10-30): PDFs of the owner's books, read with Claude and cited

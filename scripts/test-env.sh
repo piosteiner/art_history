@@ -48,7 +48,11 @@ sudo -u postgres pg_restore -p $PORT -d arthistory --exit-on-error < "$DUMP"
 #    download log, editing scopes. Production's accounts stay (the history names them) but can't log in here.
 sudo -u postgres psql -p $PORT -d arthistory -q -v ON_ERROR_STOP=1 <<'SQL'
 TRUNCATE admin_sessions, admin_drafts, page_drafts, form_drafts, live_docs, page_downloads, feedback, editor_scopes, private_images,
-  study_sets, study_set_items, study_progress, study_sessions;
+  study_sets, study_set_items, study_progress, study_sessions, study_plans, study_set_editors, account_log;
+-- site-only accounts (220: members — visitors who signed up) are people, not editors of the content: not in the test copy
+DELETE FROM admin_users WHERE role = 'member';
+UPDATE admin_users SET public_name = NULL, note = NULL;
+UPDATE site_settings SET value = 'false' WHERE key = 'signup_open';   -- no sign-up in the test environment
 -- private_images (184): the owner's reference images from their books — never in the test copy; study sets, their
 -- progress (218) and results (219): an account's own, never in the test copy either (shared ones included)
 UPDATE admin_users SET password_hash = '!locked';
@@ -71,7 +75,7 @@ SQL
 
 # 4. the shared login, then the process and the site
 cd "$ROOT/backend"
-grep '^TEST_LOGIN_PASSWORD=' "$ENV_FILE" | cut -d= -f2- | ENV_FILE="$ENV_FILE" DB_PORT=$PORT node scripts/admin-user.js test >/dev/null
+grep '^TEST_LOGIN_PASSWORD=' "$ENV_FILE" | cut -d= -f2- | ENV_FILE="$ENV_FILE" DB_PORT=$PORT node scripts/admin-user.js test --role editor >/dev/null
 pm2 startOrReload ecosystem.test.config.js --update-env >/dev/null
 pm2 save >/dev/null
 build_site

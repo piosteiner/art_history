@@ -65,19 +65,26 @@ function recordFailure(ip) {
   else a.count += 1;
 }
 
-// → user row, or null. Creates the session and sets the cookie on success.
-async function login(req, res, username, password) {
-  if (tooManyAttempts(req.ip)) return { error: 'Too many failed attempts — try again in 15 minutes.' };
-  const { rows } = await adminPool.query('SELECT id, username, password_hash FROM admin_users WHERE username = $1',
-    [String(username || '').trim().toLowerCase()]);
-  const user = rows[0];
-  const ok = await verifyPassword(String(password || ''), user ? user.password_hash : await getDummyHash());
-  if (!user || !ok) {
-    recordFailure(req.ip);
-    console.warn(`admin login failed for "${username}" from ${req.ip}`);
-    return { error: 'Wrong username or password.' };
-  }
-  attempts.delete(req.ip);
+// Accounts (220): a username of 2–40 a-z 0-9 _ . - (the schema's check); a password of at least 10 characters
+const USERNAME = /^[a-z0-9_.-]{2,40}$/;
+const MIN_PASSWORD = 10;
+/** Why a new password won't do, or null. */
+function passwordProblem(password, username) {
+  const p = String(password || '');
+  if (p.length < MIN_PASSWORD) return `The password needs at least ${MIN_PASSWORD} characters.`;
+  if (p.length > 200) return 'The password is too long (200 characters at most).';
+  if (username && p.toLowerCase().includes(String(username).toLowerCase())) return 'The password must not contain the username.';
+  return null;
+}
+/** A password to hand over (shown once on the Accounts page): 4 groups of 4 letters and digits, ~80 bits. */
+function generatePassword() {
+  const abc = 'abcdefghjkmnpqrstuvwxyz23456789';   // no l/1, o/0 to misread
+  const bytes = crypto.randomBytes(16);
+  return [0, 4, 8, 12].map((i) => [...bytes.subarray(i, i + 4)].map((b) => abc[b % abc.length]).join('')).join('-');
+}
+
+/** A new session for `user` (the cookie set): after a login or a sign-up. */
+async function startSession(req, res, user) {
   const token = crypto.randomBytes(32).toString('base64url');
   await adminPool.query('DELETE FROM admin_sessions WHERE expires_at < now()');
   await adminPool.query(`
@@ -86,7 +93,31 @@ async function login(req, res, username, password) {
     [sha256(token), user.id, SESSION_DAYS, req.ip, String(req.headers['user-agent'] || '').slice(0, 300)]);
   await adminPool.query('UPDATE admin_users SET last_login_at = now() WHERE id = $1', [user.id]);
   setSessionCookie(res, token, SESSION_DAYS * 86400);
-  return { user: { id: user.id, username: user.username } };
+}
+
+/** Ends an account's sessions — all, or all but the request's own. */
+async function endSessions(userId, req = null) {
+  const own = req && readCookie(req, COOKIE);
+  await adminPool.query('DELETE FROM admin_sessions WHERE user_id = $1 AND ($2::bytea IS NULL OR token_hash <> $2)', [userId, own ? sha256(own) : null]);
+}
+
+// → { user } or { error }. Creates the session and sets the cookie on success.
+async function login(req, res, username, password) {
+  if (tooManyAttempts(req.ip)) return { error: 'Too many failed attempts — try again in 15 minutes.' };
+  const { rows } = await adminPool.query(`SELECT id, username, password_hash, disabled_at, role >= 'editor' AS cms
+      FROM admin_users WHERE username = $1`, [String(username || '').trim().toLowerCase()]);
+  const user = rows[0];
+  const ok = await verifyPassword(String(password || ''), user ? user.password_hash : await getDummyHash());
+  if (!user || !ok) {
+    recordFailure(req.ip);
+    console.warn(`admin login failed for "${username}" from ${req.ip}`);
+    return { error: 'Wrong username or password.' };
+  }
+  attempts.delete(req.ip);
+  // switched off (220): only said to whoever knows the password
+  if (user.disabled_at) return { error: 'This account is switched off. Ask the site\'s owner if you think that is a mistake.' };
+  await startSession(req, res, user);
+  return { user: { id: user.id, username: user.username, cms: user.cms } };
 }
 
 async function logout(req, res) {
@@ -95,13 +126,14 @@ async function logout(req, res) {
   setSessionCookie(res, '', 0);
 }
 
-// The logged-in user of a request (Express request or the raw HTTP request of a WebSocket upgrade), or null.
+// The logged-in user of a request — {id, username, role, public_name, cms (may use the CMS), is_admin} — (Express request or the raw HTTP request of a WebSocket upgrade), or null.
 async function userFromRequest(req) {
   const cookie = readCookie(req, COOKIE);
   if (!cookie) return null;
   const { rows } = await adminPool.query(`
-    SELECT u.id, u.username FROM admin_sessions s JOIN admin_users u ON u.id = s.user_id
-    WHERE s.token_hash = $1 AND s.expires_at > now()`, [sha256(cookie)]);
+    SELECT u.id, u.username, u.role::text AS role, u.public_name, u.role >= 'editor' AS cms, u.role = 'admin' AS is_admin
+      FROM admin_sessions s JOIN admin_users u ON u.id = s.user_id
+     WHERE s.token_hash = $1 AND s.expires_at > now() AND u.disabled_at IS NULL`, [sha256(cookie)]);
   return rows[0] || null;
 }
 
@@ -126,4 +158,7 @@ function checkOrigin(req, res, next) {
   res.status(403).type('text').send('Forbidden: cross-site request.');
 }
 
-module.exports = { hashPassword, verifyPassword, login, logout, loadUser, checkOrigin, userFromRequest, adminOrigin };
+module.exports = {
+  hashPassword, verifyPassword, login, logout, loadUser, checkOrigin, userFromRequest, adminOrigin,
+  startSession, endSessions, passwordProblem, generatePassword, USERNAME, MIN_PASSWORD, tooManyAttempts, recordFailure,
+};

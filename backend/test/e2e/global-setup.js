@@ -22,7 +22,8 @@ async function prepare(s, auth, built) {
   await run('node', ['scripts/import.js'], { CONTENT_DIR: `${BACKEND}/test/e2e/fixtures/content` });
   for (const user of Object.keys(auth)) {
     // the password on stdin (never in the process list)
-    execFileSync('node', ['scripts/admin-user.js', user], { cwd: BACKEND, env: s.serverEnv(), input: auth[user], stdio: ['pipe', 'pipe', 'pipe'] });
+    // tester: an admin (the Accounts page, 220); tester2: a CMS editor
+    execFileSync('node', ['scripts/admin-user.js', user, '--role', user === 'tester' ? 'admin' : 'editor'], { cwd: BACKEND, env: s.serverEnv(), input: auth[user], stdio: ['pipe', 'pipe', 'pipe'] });
   }
   await built;           // the server serves the admin bundles from static-dev/
   await server.stop(s);  // a leftover from an aborted run

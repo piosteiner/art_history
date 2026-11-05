@@ -15,7 +15,7 @@ const post = async (user, path, form, status = 200) => {
   expect(res.status()).toBe(status);
   return status === 204 ? null : res.json();
 };
-const cleanup = () => sql(`DELETE FROM study_sets WHERE name LIKE 'Test set%'; UPDATE admin_users SET public_name = NULL WHERE public_name LIKE 'Test %'; DELETE FROM study_progress WHERE entity_type = 'artwork' AND entity_id IN (SELECT id FROM artworks WHERE slug LIKE 'test-study-%');
+const cleanup = () => sql(`DELETE FROM study_sets WHERE name LIKE 'Test set%'; UPDATE admin_users SET public_name = NULL WHERE public_name LIKE 'Test %'; DELETE FROM study_progress WHERE (entity_type = 'artwork' AND entity_id IN (SELECT id FROM artworks WHERE slug LIKE 'test-study-%')) OR (entity_type = 'term' AND entity_id IN (SELECT id FROM glossary WHERE slug LIKE 'test-study-%'));
   DELETE FROM artworks WHERE slug LIKE 'test-study-%'; DELETE FROM artists WHERE slug LIKE 'test-study-%'; DELETE FROM glossary WHERE slug LIKE 'test-study-%'`);
 test.beforeAll(() => {
   cleanup();
@@ -55,7 +55,7 @@ test('a set: created, filled with entries of three types, renamed; the cards sho
   expect((await post(userA, '/progress', { type: 'artwork', slug: 'test-study-work', direction: 'forward', known: '1' })).box).toBe(3);
   expect((await post(userA, '/progress', { type: 'artwork', slug: 'test-study-work', direction: 'forward', known: '0' })).box).toBe(1);
   const again = await get(userA, `/${set.id}/cards`);
-  expect(again.cards.find((c) => c.type === 'artwork').progress.forward).toEqual({ box: 1, seen: 3, known: 2 });
+  expect(again.cards.find((c) => c.type === 'artwork').progress.forward).toEqual({ box: 1, seen: 3, known: 2, due: false });   // box 1: tomorrow again
 
   // another account sees nothing of it and can change nothing
   await get(userB, `/${set.id}`, 404);
@@ -121,6 +121,86 @@ test('a set shared by link and in public: topic, creator, dates; seen without a 
   await post(userA, `/${set.id}/share`, { visibility: 'private' });
   expect((await request.get(`/site/shared/${renewed.code}`, { headers: H })).status()).toBe(404);
   expect(await listed()).toEqual([]);
+});
+
+test('a description is previewed as it will be shown (Markdown, [[links]], no raw HTML)', async ({ userA }) => {
+  const { html } = await post(userA, '/preview', { text: '## For the exam\n\n**Look** at [[term/test-study-term]] <script>alert(1)</script>' });
+  expect(html).toContain('<h2');
+  expect(html).toContain('<strong>Look</strong>');
+  expect(html).toContain('Testsfumato');
+  expect(html).not.toContain('<script>');
+  expect((await post(userA, '/preview', { text: '' })).html).toBe('');
+});
+
+test('a set edited together: invitation link, joined, changed by an editor (who and when), conflicts, the owner\'s rights; exam dates plan the day\'s cards', async ({ userA, userB, request }) => {
+  const { set } = await post(userA, '', { name: 'Test set Together', description: 'First text' }, 201);
+  await post(userA, `/${set.id}/items`, { type: 'artwork', slug: 'test-study-work' });
+  // an invitation needs the owner's public name (the editors see it); a new link ends the old one
+  sql("UPDATE admin_users SET public_name = NULL WHERE username IN ('tester', 'tester2')");
+  await post(userA, `/${set.id}/editors`, { action: 'invite' }, 422);
+  const first = (await post(userA, `/${set.id}/editors`, { action: 'invite', public_name: 'Test Owner' })).set.edit_code;
+  expect(first).toMatch(/^[A-Za-z0-9_-]{16}$/);
+  const code = (await post(userA, `/${set.id}/editors`, { action: 'invite' })).set.edit_code;
+  expect(code).not.toBe(first);
+  expect((await request.get(`/site/shared/join/${first}`, { headers: H })).status()).toBe(404);
+
+  // anyone sees what the invitation is for; joining needs a login and a public name
+  const invite = await (await request.get(`/site/shared/join/${code}`, { headers: H })).json();
+  expect(invite.set).toEqual(expect.objectContaining({ name: 'Test set Together', creator: 'Test Owner', count: 1, editors: 0 }));
+  expect(invite.set.id).toBeUndefined();
+  expect((await request.post(`/site/shared/join/${code}`, { headers: H })).status()).toBe(401);
+  await post(userB, `/../shared/join/${code}`, {}, 422);
+  expect((await post(userB, `/../shared/join/${code}`, { public_name: 'Test Helper' }, 201)).set.id).toBe(set.id);
+
+  // the editor: in its list, changes the description and adds an entry — who did it is shown
+  const listed = (await get(userB, '')).sets.find((s) => s.id === set.id);
+  expect(listed).toEqual(expect.objectContaining({ role: 'editor', creator: 'Test Owner' }));
+  await post(userB, `/${set.id}`, { description: 'Second text', base_description: 'First text' });
+  await post(userB, `/${set.id}/items`, { type: 'term', slug: 'test-study-term' });
+  const seen = await get(userA, `/${set.id}`);
+  expect(seen.set).toEqual(expect.objectContaining({ description: 'Second text', updated_by: 'Test Helper', role: 'owner' }));
+  expect(seen.set.editors).toEqual([expect.objectContaining({ name: 'Test Helper', me: false })]);
+  expect(seen.items.find((i) => i.slug === 'test-study-term').added_by).toBe('Test Helper');
+
+  // the owner saves from the old text: a conflict — nothing saved, the set as it is now comes back
+  const clash = await userA.request.post(`/site/sets/${set.id}`, { headers: H, form: { description: 'Owner text', base_description: 'First text' } });
+  expect(clash.status()).toBe(409);
+  expect((await clash.json()).set.description).toBe('Second text');
+  await post(userA, `/${set.id}`, { description: 'Owner text', base_description: 'Second text' });
+
+  // sharing, the editors and deleting stay the owner's
+  await post(userB, `/${set.id}/share`, { visibility: 'public' }, 403);
+  await post(userB, `/${set.id}/delete`, {}, 403);
+  await post(userB, `/${set.id}/editors`, { action: 'stop' }, 403);
+  await post(userA, `/${set.id}/leave`, {}, 422);
+
+  // exam dates are each account's own: the plan counts the days and the day's cards
+  await post(userB, `/${set.id}/plan`, { exam_on: '2001-01-01' }, 422);
+  const exam = sql("SELECT ((now() AT TIME ZONE 'Europe/Zurich')::date + 11)::text");
+  const { plan } = await post(userB, `/${set.id}/plan`, { exam_on: exam });
+  expect(plan).toEqual(expect.objectContaining({ exam_on: exam, days_left: 11 }));
+  // two new cards in each direction, spread over the ten days before the exam: one today
+  expect(plan.directions.forward).toEqual({ due: 0, new: 2, new_left_today: 1, new_today: 0 });
+  expect((await get(userA, `/${set.id}/stats`)).plan.exam_on).toBeNull();
+  await post(userB, '/progress', { type: 'term', slug: 'test-study-term', direction: 'forward', known: '1' });
+  const after = (await get(userB, `/${set.id}/stats`)).plan.directions.forward;
+  expect(after).toEqual({ due: 0, new: 1, new_left_today: 0, new_today: 1 });
+  // a card asked 6 days ago in box 5: due again before the exam (16 days shortened to 5) — not without the exam
+  sql(`UPDATE study_progress SET box = 5, last_seen_at = now() - interval '6 days' WHERE entity_type = 'term' AND direction = 'forward'
+         AND owner_id = (SELECT id FROM admin_users WHERE username = 'tester2')`);
+  expect((await get(userB, `/${set.id}/cards`)).cards.find((c) => c.type === 'term').progress.forward.due).toBe(true);
+  await post(userB, `/${set.id}/plan`, { exam_on: '' });
+  expect((await get(userB, `/${set.id}/cards`)).cards.find((c) => c.type === 'term').progress.forward.due).toBe(false);
+
+  // the editor leaves; or is removed by the owner; no more invitations
+  await post(userB, `/${set.id}/leave`, {}, 204);
+  await get(userB, `/${set.id}`, 404);
+  await post(userB, `/../shared/join/${code}`, {}, 201);
+  const editor = (await get(userA, `/${set.id}`)).set.editors[0];
+  await post(userA, `/${set.id}/editors`, { action: 'remove', account: editor.id });
+  await post(userA, `/${set.id}/editors`, { action: 'stop' });
+  await get(userB, `/${set.id}`, 404);
+  expect((await request.get(`/site/shared/join/${code}`, { headers: H })).status()).toBe(404);
 });
 
 test('sets: not without a login, not from another site', async ({ userA, request }) => {

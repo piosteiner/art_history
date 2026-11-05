@@ -533,7 +533,7 @@ details.records > summary { cursor: pointer; color: var(--muted); }
 /* pages (migration 114): the image list of a page, and images in its preview */
 .page-image-list { list-style: none; padding: 0; display: grid; gap: .4rem; }
 .page-image-list li { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
-.page-image-list img { width: 64px; height: 48px; object-fit: cover; border-radius: 3px; border: 1px solid var(--border, #ddd); }
+.page-image-list img { width: 64px; height: 48px; object-fit: cover; border-radius: 3px; border: 1px solid var(--line); }
 .md-preview img { max-width: 100%; height: auto; }
 /* [[#Heading]] to no heading of the page (src/pages.js) */
 .page-link-missing { color: #c62828; text-decoration: underline dashed; }
@@ -732,3 +732,19 @@ td.thumb .mosaic-4 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr
 button.danger, .button.danger { background: var(--err); border-color: var(--err); color: #fff; }
 .button.danger-outline, button.danger-outline { background: transparent; border: 1px solid var(--err); color: var(--err); }
 .button.danger-outline:hover, button.danger:hover { filter: brightness(1.08); }
+
+/* Accounts (220): the sign-up form, the Accounts page */
+.signup { max-width: 460px; }
+.signup-website { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.login .check, .accounts-box .check { display: flex; gap: .5em; align-items: baseline; font-weight: normal; }
+.accounts-box { border: 1px solid var(--line); border-radius: 6px; padding: .6em 1em; margin: 1em 0; }
+.accounts-box summary { cursor: pointer; }
+.accounts-box.danger summary { color: var(--err); }
+.accounts-actions { display: flex; flex-wrap: wrap; gap: .5em; }
+.inline-form { display: flex; flex-wrap: wrap; gap: .8em; align-items: center; }
+.inline-form .narrow { width: 6em; }
+.password-once code { font-size: 1.4em; padding: .3em .6em; user-select: all; }
+.accounts-list tr.account-off td { opacity: .6; }
+.tag.role-admin { border-color: var(--accent); color: var(--fg); font-weight: 600; }
+.tag.role-editor { border-color: var(--accent); color: var(--fg); }
+

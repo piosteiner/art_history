@@ -7,6 +7,8 @@
 //   /relationships/<id>/edit   edit one relationship    /history             all changes
 //   /images/<id>/edit          edit one image           (images are added and reordered on the entry's page)
 //   /search-words              groups of equivalent search words (102)
+//   /accounts                  accounts: who may use the CMS, the site-only accounts, sign-up (220; admins only)
+//   /login · /signup           log in; a site-only account of one's own (220, when the owner has opened sign-up)
 //   (the pages themselves: src/admin/routes/*.js, mounted below in this order; shared helpers: src/admin/core.js)
 const express = require('express');
 const path = require('path');
@@ -37,39 +39,57 @@ router.use(checkOrigin);
 router.use(loadUser);
 
 // ---------------------------------------------------------------------------------------------------------------
-// Login
+// Login, sign-up (220)
 // ---------------------------------------------------------------------------------------------------------------
-// ?next=<an address of the public site>: back there after logging in ("Log in" on the site, routes/site-account.js)
-const loginPage = (error, next) => html`<div class="login"><h1>Art history admin</h1>
+// ?next=<an address of the public site>: back there after logging in ("Log in" on the site, routes/site-account.js).
+// A site-only account (member, 220) goes to the site afterwards anyway: the CMS isn't theirs.
+const accounts = require('./accounts');
+const loginPage = (error, next, signupOpen) => html`<div class="login"><h1>${next ? 'Art History — log in' : 'Art history admin'}</h1>
   ${error ? html`<p class="flash error">${error}</p>` : ''}
   <form method="post" action="/login" class="form">
     ${next ? html`<input type="hidden" name="next" value="${next}"><p class="muted small">You'll return to the site afterwards.</p>` : ''}
     <div class="field"><label for="u">Username</label><input id="u" name="username" autocomplete="username" required autofocus></div>
     <div class="field"><label for="p">Password</label><input id="p" name="password" type="password" autocomplete="current-password" required></div>
     <div class="actions"><button>Log in</button></div>
-  </form></div>`;
+  </form>
+  ${signupOpen ? html`<p class="small">No account yet? <a href="/signup${next ? `?next=${encodeURIComponent(next)}` : ''}">Create one</a> — free, for study sets and your quiz results.</p>` : ''}
+  <p class="muted small">Forgot your password? Ask the site's owner (the F button on the site) — accounts have no e-mail address to send one to.</p></div>`;
 
-router.get('/login', (req, res) => {
+const siteHome = (path = '/sets') => `${config.corsOrigin}${path}${path.includes('?') ? '&' : '?'}login=1`;
+const afterLogin = (user, next) => next || (user.cms ? '/' : siteHome());
+
+router.get('/login', async (req, res) => {
   const next = siteAccount.siteUrl(req.query.next);
-  if (req.user) return res.redirect(next || '/');
-  send(req, res, { title: 'Log in', body: loginPage(null, next) });
+  if (req.user) return res.redirect(afterLogin(req.user, next));
+  send(req, res, { title: 'Log in', body: loginPage(null, next, (await accounts.signupSettings()).open) });
 });
 
 router.post('/login', async (req, res) => {
   const next = siteAccount.siteUrl(req.body.next);
   const result = await login(req, res, req.body.username, req.body.password);
-  if (result.error) return send(req, res, { title: 'Log in', body: loginPage(result.error, next), status: 401 });
-  res.redirect(303, next || '/');
+  if (result.error) return send(req, res, { title: 'Log in', body: loginPage(result.error, next, (await accounts.signupSettings()).open), status: 401 });
+  res.redirect(303, afterLogin(result.user, next));
 });
 
 router.post('/logout', async (req, res) => {
+  const cms = req.user && req.user.cms;
   await logout(req, res);
-  res.redirect(303, '/login');
+  res.redirect(303, cms ? '/login' : config.corsOrigin);
 });
 
-// Everything below needs a logged-in user.
+router.use(require('./routes/signup'));   // /signup: a site-only account of one's own, if the owner has opened it
+
+// Everything below needs a logged-in account with CMS access (editor or admin, 220).
 router.use((req, res, next) => {
-  if (req.user) return next();
+  if (req.user && req.user.cms) return next();
+  if (req.user) {
+    if (req.method !== 'GET') return res.status(403).type('text').send('This account has no access to the CMS.');
+    return res.status(403).type('html').send(String(layout({ title: 'No access', user: null, nav: false,
+      body: html`<div class="login"><h1>No access to the CMS</h1>
+        <p>You're logged in as <b>${req.user.username}</b> — an account for the site: study sets and your quiz results.</p>
+        <p><a href="${siteHome()}">Go to the site →</a></p>
+        <form method="post" action="/logout"><button class="secondary">Log out</button></form></div>` })));
+  }
   if (req.method === 'GET') return res.redirect('/login');
   res.status(401).type('text').send('Not logged in.');
 });
@@ -91,6 +111,7 @@ router.use(require('./routes/provenance'));
 router.use(require('./routes/phases'));         // a work's building history (169)
 router.use(require('./routes/open-cases'));     // cases to follow up, out of the Quality page (198)
 router.use(require('./routes/private-images')); // the owner's reference images from their books (184)
+router.use(require('./routes/accounts'));       // accounts, roles, sign-up settings — admins only (220)
 router.use(require('./routes/wikidata'));
 router.use(require('./routes/entries'));
 router.use(require('./routes/tools'));

@@ -24,8 +24,11 @@ export type Route =
   | { name: 'search'; params: URLSearchParams }
   /** The quiz (API /v1/quiz): /quiz = the games, /quiz/<kind>?mode=… one of them. */
   | { name: 'quiz'; kind: string | null; params: URLSearchParams }
-  /** Study sets (218/219): /sets, /sets/<id>[/study], /sets/shared (public ones), /sets/s/<code>[/study] (shared) */
-  | { name: 'sets'; id: string | null; code: string | null; study: boolean; browse: boolean; params: URLSearchParams }
+  /** Study sets (218/219/220): /sets, /sets/<id>[/study], /sets/shared (public ones), /sets/s/<code>[/study] (shared),
+   *  /sets/join/<code> (an invitation to edit a set together) */
+  | { name: 'sets'; id: string | null; code: string | null; study: boolean; browse: boolean; join: string | null; params: URLSearchParams }
+  /** The logged-in account's own settings (220): public name, password, sessions, deleting it */
+  | { name: 'account'; params: URLSearchParams }
   /** Through whose hands works went in a window (API 088): /provenance/1933-1945. */
   | { name: 'hands'; from: number; to: number }
   | { name: 'not-found' };
@@ -45,10 +48,12 @@ export function parse(pathname: string, search: string): Route {
   if (parts.length === 1 && parts[0] === 'changelog') return { name: 'changelog', params: query };
   if (parts.length === 1 && parts[0] === 'roadmap') return { name: 'roadmap' };
   if (parts.length === 1 && parts[0] === 'statistik') return { name: 'stats' };
+  if (parts.length === 1 && parts[0] === 'account') return { name: 'account', params: query };
   if (parts[0] === 'quiz' && parts.length <= 2) return { name: 'quiz', kind: parts[1] ?? null, params: query };
   if (parts[0] === 'sets' && parts.length <= 4) {
-    const sets = { name: 'sets' as const, id: null, code: null, study: false, browse: false, params: query };
+    const sets = { name: 'sets' as const, id: null, code: null, study: false, browse: false, join: null, params: query };
     if (parts.length === 1) return sets;
+    if (parts.length === 3 && parts[1] === 'join' && /^[A-Za-z0-9_-]{16}$/.test(parts[2])) return { ...sets, join: parts[2] };
     if (parts.length === 2 && parts[1] === 'shared') return { ...sets, browse: true };
     if (parts[1] === 's' && /^[A-Za-z0-9_-]{12}$/.test(parts[2] ?? '') && (parts.length === 3 || parts[3] === 'study')) {
       return { ...sets, code: parts[2], study: parts[3] === 'study' };

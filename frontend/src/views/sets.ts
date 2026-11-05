@@ -7,6 +7,12 @@
 //   /sets/shared             the public sets of every account, by topic
 //   /sets/s/<code>           a set shared by link or in public — anyone may look and learn; logged in: "Save a copy",
 //   /sets/s/<code>/study       and the round counts among the account's results (never the owner's)
+//   /sets/join/<code>        an invitation to edit a set together (220): logged in with a public name → one of its editors
+// Edited together (220): the owner and its editors change name, topic, description and entries (who changed it last,
+// who added an entry is shown); sharing, the editors and deleting stay the owner's. A save from an older version of a
+// field someone else changed meanwhile is refused (409) — their version is shown, yours stays in the form.
+// Exam date (220): per account and set; the set page counts the days and plans the day's cards — ?cards=today in the
+// study view: the cards due again (Leitner intervals, shortened before the exam) and today's share of the new ones.
 // Kinds of quiz (mode):
 //   forward  "Name it"      what it is → its name: an artwork's picture → title, artist, date; a term's definition →
 //                           the term; an artist's dates and places (and portrait) → the name. The name is blanked out.
@@ -19,16 +25,18 @@
 // with its result (per set and kind of quiz: the set page's "Your results"); visitors learn too, nothing is kept.
 import { account } from '../account';
 import {
-  answerCard, copySet, createSet, deleteSet, getCards, getPublicSets, getSet, getSets, getSetStats, loginUrl, previewDescription, recordRound,
-  removeFromSet, shareSet, updateSet, type SetRef, type StudyCard, type StudyItem, type StudyMode, type StudySet, type StudyStats,
+  answerCard, ApiError, copySet, createSet, deleteSet, editSetEditors, getCards, getInvitation, getPublicSets, getSet, getSets, getSetStats, joinSet,
+  leaveSet, loginUrl, previewDescription, recordRound, removeFromSet, savePlan, shareSet, updateSet,
+  type SetRef, type StudyCard, type StudyItem, type StudyMode, type StudyPlan, type StudySet, type StudyStats,
 } from '../api';
+import { accountLinks } from './account';
 import { href, html, PLURAL_LABEL, render, thumb, trusted, TYPE_LABEL, type Html } from '../html';
 import { PLURAL } from '../api';
 import { markdownEditor } from '../md-editor';
 import { bestMatch, points } from '../quiz-match';
 
 type Dir = 'forward' | 'reverse';
-export interface SetsRoute { id: string | null; code: string | null; study: boolean; browse: boolean; params: URLSearchParams }
+export interface SetsRoute { id: string | null; code: string | null; study: boolean; browse: boolean; join: string | null; params: URLSearchParams }
 
 const MODE_NAME: Record<StudyMode, string> = { forward: 'Name it', reverse: 'Describe it', both: 'Name it and describe it', typed: 'Type it', choice: 'Pick it' };
 const MODE_HELP: Record<StudyMode, string> = {
@@ -46,6 +54,10 @@ const studyHref = (ref: SetRef) => ('own' in ref ? `/sets/${ref.own}/study` : `/
 const pageHref = (ref: SetRef) => ('own' in ref ? `/sets/${ref.own}` : `/sets/s/${ref.code}`);
 const shareUrl = (code: string) => `${location.origin}/sets/s/${code}`;
 const VIS_LABEL = { private: 'Only you', link: 'Anyone with the link', public: 'Public' } as const;
+const joinUrl = (code: string) => `${location.origin}/sets/join/${code}`;
+/** "in 12 days" / "tomorrow" / "today" / "was 3 days ago" — an exam date from the plan's days left */
+const examIn = (days: number) => (days > 1 ? `in ${String(days)} days` : days === 1 ? 'tomorrow' : days === 0 ? 'today' : `was ${String(-days)} day${days === -1 ? '' : 's'} ago`);
+const longDay = (ymd: string) => new Date(`${ymd}T12:00:00`).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
 
 /** Leaving the page (another route): the round in progress is still recorded. */
 let leave: (() => void) | null = null;
@@ -53,7 +65,8 @@ let leave: (() => void) | null = null;
 export function setsPage(main: HTMLElement, route: SetsRoute) {
   document.title = 'Study sets · Art History';
   render(main, html`<section class="page sets-page"><p class="muted">Loading…</p></section>`);
-  if (route.browse) browse(main, route.params);
+  if (route.join) joinView(main, route.join);
+  else if (route.browse) browse(main, route.params);
   else if (route.code) {
     const ref = { code: route.code };
     if (route.study) studyView(main, ref, route.params); else one(main, ref);
@@ -75,12 +88,12 @@ const loginLink = (text = 'Log in') => {
   return login ? html`<a href="${login}" rel="nofollow">${text}</a>` : null;
 };
 function loggedOut(main: HTMLElement) {
-  const login = loginLink();
   render(main, html`<section class="page sets-page"><h1>Study sets</h1>
     <p>Keep artworks, artists, terms, places … from this site in sets of your own — to look them up again, or to learn them
-      as index cards for an exam — and share them.</p>
-    <p>${login ? html`${login} to see your sets.` : 'Sets need an account.'}</p>
+      as index cards for an exam (with a plan for each day until it) — share them, and edit them together with others.</p>
+    <p class="sets-account-links">…</p>
     <p><a href="/sets/shared">Browse the sets others have shared →</a></p></section>`);
+  accountLinks().then((links) => { const p = main.querySelector('.sets-account-links'); if (p) render(p, links); }).catch(() => {});
 }
 const failed = (main: HTMLElement, what: string) => render(main, html`<section class="page sets-page"><p class="flash">${what} <a href="/sets">Study sets</a></p></section>`);
 
@@ -90,12 +103,15 @@ function meta(set: StudySet, withCreator: boolean) {
   if (set.topic) parts.push(html`<span class="sets-topic">${set.topic}</span>`);
   if (withCreator && set.creator) parts.push(html`by <b>${set.creator}</b>`);
   parts.push(`created ${day(set.created_at)}`);
-  if (day(set.updated_at) !== day(set.created_at)) parts.push(`last changed ${day(set.updated_at)}`);
+  if (day(set.updated_at) !== day(set.created_at) || set.updated_by) parts.push(`last changed ${day(set.updated_at)}${set.updated_by && set.editors?.length ? ` by ${set.updated_by}` : ''}`);
   parts.push(plural(set.count, 'entry', 'entries'));
   return html`<p class="sets-meta muted small">${parts.map((p, i) => html`${i ? ' · ' : ''}${p}`)}</p>`;
 }
 const visBadge = (set: StudySet) => (set.visibility === 'private' ? ''
   : html` <span class="tag sets-vis sets-vis-${set.visibility}" title="${VIS_LABEL[set.visibility]}">${set.visibility === 'public' ? 'public' : 'shared by link'}</span>`);
+/** "with 2 editors" (the owner's) / "edited with Ms X" (an editor's) */
+const together = (s: StudySet) => (s.role === 'editor' ? html` <span class="tag sets-together-tag" title="You edit it with its owner">edited with ${s.creator ?? 'its owner'}</span>`
+  : (s.editor_count ?? s.editors?.length) ? html` <span class="tag sets-together-tag" title="Others edit it with you">${plural(s.editor_count ?? s.editors!.length, 'editor')}</span>` : '');
 const topicOptions = (topics: string[]) => html`${topics.map((t) => html`<option value="${t}"></option>`)}`;
 
 // ---- the account's sets -----------------------------------------------------------------------------------------
@@ -106,7 +122,8 @@ function list(main: HTMLElement) {
     const byTopic = new Map<string, StudySet[]>();
     for (const s of sets) { const k = s.topic ?? ''; if (!byTopic.has(k)) byTopic.set(k, []); byTopic.get(k)!.push(s); }
     const groups = [...byTopic.entries()].sort(([a], [b]) => (a === '' ? 1 : b === '' ? -1 : a.localeCompare(b)));
-    render(main, html`<section class="page sets-page"><h1>Your study sets</h1>
+    const welcome = new URLSearchParams(location.search).get('welcome') === '1';
+    render(main, html`<section class="page sets-page">${welcome ? html`<p class="flash ok">Welcome — your account is ready. Your settings: <a href="/account">Your account</a>.</p>` : ''}<h1>Your study sets</h1>
       <p class="muted">Your own lists of entries — only you see them unless you share one. Add an entry with <b>+ Set</b>
         on its page; learn a set with <b>Study</b>. <a href="/sets/shared">Browse shared sets →</a></p>
       <form class="sets-new">
@@ -116,10 +133,10 @@ function list(main: HTMLElement) {
       <p class="sets-msg small" role="status"></p>
       ${sets.length ? groups.map(([topic, list]) => html`<section class="sets-group">${groups.length > 1 || topic ? html`<h2>${topic || 'No topic'}</h2>` : ''}
         <ul class="sets-list">${list.map((s) => html`<li class="sets-item">
-          <a class="sets-name" href="/sets/${s.id!}">${s.name}</a>${visBadge(s)}
+          <a class="sets-name" href="/sets/${s.id!}">${s.name}</a>${visBadge(s)}${together(s)}${s.exam_on ? html` <span class="tag sets-exam" title="Your exam date">exam ${longDay(s.exam_on)}</span>` : ''}
           <span class="muted small">${plural(s.count, 'entry', 'entries')} · changed ${day(s.updated_at)}${s.description_text ? html` · ${s.description_text}` : ''}</span>
           <span class="sets-actions">${s.count ? html`<a class="button-link" href="/sets/${s.id!}/study">Study</a>` : ''}
-            <button type="button" class="link-button sets-delete" data-id="${s.id!}" data-name="${s.name}">Delete</button></span></li>`)}</ul></section>`)
+            ${s.role === 'editor' ? '' : html`<button type="button" class="link-button sets-delete" data-id="${s.id!}" data-name="${s.name}">Delete</button>`}</span></li>`)}</ul></section>`)
         : html`<p class="muted">No sets yet.</p>`}
     </section>`);
     const msg = main.querySelector<HTMLElement>('.sets-msg')!;
@@ -170,14 +187,39 @@ const itemPicture = (i: StudyItem) => (i.image
   ? html`<img class="sets-thumb${i.own ? ' own-image' : ''}" src="${i.own ? i.image : thumb(i.image, 120)}" alt="" loading="lazy"${i.own ? '' : html` crossorigin="anonymous"`}>`
   : html`<span class="sets-thumb sets-thumb-empty" aria-hidden="true"></span>`);
 
-function studyForm(ref: SetRef, count: number) {
+function studyForm(ref: SetRef, count: number, learner: boolean) {
   if (!count) return html`<p class="muted">Nothing in it yet — add entries with <b>+ Set</b> on their pages.</p>`;
   const modes = MODES.filter((m) => m !== 'choice' || count >= CHOICE_MIN);
   return html`<form class="sets-study" action="${studyHref(ref)}">
     <span>Study the ${plural(count, 'entry', 'entries')}:</span>
     ${modes.map((m, i) => html`<label><input type="radio" name="mode" value="${m}"${i ? '' : ' checked'}> ${MODE_NAME[m]} <span class="muted small">(${MODE_HELP[m]})</span></label>`)}
-    <label><input type="checkbox" name="skip" value="known"> Leave out cards you know well</label>
+    <fieldset class="sets-cards-choice"><legend class="small">Which cards</legend>
+      <label><input type="radio" name="cards" value="all" checked> All</label>
+      ${learner ? html`<label><input type="radio" name="cards" value="today"> Today's <span class="muted small sets-today-count"></span></label>` : ''}
+      <label><input type="radio" name="cards" value="weak"> Leave out those you know well</label></fieldset>
     <button type="submit">Study</button></form>`;
+}
+
+/** The exam date and the day's plan (logged in): set, changed, removed; per kind of card the cards due today. */
+function planBox(box: HTMLElement, ref: SetRef, plan: StudyPlan, onChange: (p: StudyPlan) => void) {
+  const f = plan.directions.forward;
+  const r = plan.directions.reverse;
+  const todayOf = (d?: { due: number; new_left_today: number }) => (d ? d.due + d.new_left_today : 0);
+  const line = (label: string, d?: { due: number; new: number; new_left_today: number }) => (d
+    ? html`<li><b>${label}</b>: ${plural(d.due, 'card')} to review${d.new_left_today ? html` + ${String(d.new_left_today)} new` : ''}${d.new ? html` <span class="muted small">(${String(d.new)} not asked yet)</span>` : ''}</li>` : '');
+  const exam = plan.exam_on && plan.days_left !== null;
+  render(box, html`<h2>${exam ? html`Exam ${examIn(plan.days_left!)}` : 'Today'}</h2>
+    ${exam ? html`<p class="muted small">${longDay(plan.exam_on!)} — every card comes round again before it; the new ones are spread over the days until then.</p>` : ''}
+    <ul class="sets-plan-today">${line('Name it', f)}${line('Describe it', r)}</ul>
+    ${todayOf(f) + todayOf(r) === 0 ? html`<p class="small">Nothing due today${exam ? '' : ' — or set an exam date and the plan fits it'}. </p>` : ''}
+    <form class="sets-exam-form"><label>Exam date <input type="date" name="exam_on" value="${plan.exam_on ?? ''}" min="${new Date().toISOString().slice(0, 10)}"></label>
+      <button type="submit">${plan.exam_on ? 'Change' : 'Set'}</button>${plan.exam_on ? html` <button type="button" class="link-button sets-exam-remove">Remove</button>` : ''}
+      <span class="sets-exam-msg small" role="status"></span></form>
+    <p class="muted small">Only you see your exam date and plan.</p>`);
+  const save = (value: string) => savePlan(ref, value).then((p) => { if (p) { planBox(box, ref, p, onChange); onChange(p); } })
+    .catch((err: Error) => { box.querySelector('.sets-exam-msg')!.textContent = err.message; });
+  box.querySelector('form')!.addEventListener('submit', (e) => { e.preventDefault(); save((box.querySelector('input[name=exam_on]') as HTMLInputElement).value); });
+  box.querySelector('.sets-exam-remove')?.addEventListener('click', () => save(''));
 }
 
 function one(main: HTMLElement, ref: SetRef) {
@@ -185,6 +227,7 @@ function one(main: HTMLElement, ref: SetRef) {
     if (!r) return 'own' in ref ? loggedOut(main) : failed(main, 'This set is not shared (any more).');
     const { set, items } = r;
     const own = 'own' in ref;
+    const owner = own && (set.role ?? 'owner') === 'owner';
     if (!own && set.mine && set.id) { location.replace(`/sets/${set.id}`); return; }   // the owner's own page
     document.title = `${set.name} · Study sets · Art History`;
     const byType = new Map<string, StudyItem[]>();
@@ -192,32 +235,49 @@ function one(main: HTMLElement, ref: SetRef) {
     const crumbs = own ? html`<a href="/sets">Your study sets</a>` : html`<a href="/sets/shared">Shared sets</a>`;
     render(main, html`<section class="page sets-page">
       <p class="crumbs">${crumbs} / ${set.name}</p>
-      <h1>${set.name}${own ? visBadge(set) : ''}</h1>
-      ${meta(set, !own)}
+      <h1>${set.name}${own ? visBadge(set) : ''}${own ? together(set) : ''}</h1>
+      ${meta(set, !owner)}
       ${set.description_html ? html`<div class="prose sets-description">${trusted(set.description_html)}</div>` : ''}
       ${own && set.copied_from ? html`<p class="muted small">A copy of <a href="/sets/s/${set.copied_from.code}">${set.copied_from.name}</a>${set.copied_from.creator ? ` by ${set.copied_from.creator}` : ''}.</p>` : ''}
       ${own ? html`<div class="sets-tools">
         <details class="sets-edit"><summary class="link-button">Edit name, topic, description</summary>
-          <form class="sets-edit-form"><label>Name <input name="name" value="${set.name}" maxlength="120" required></label>
+          <form class="sets-edit-form"><p class="sets-conflict flash" hidden></p>
+            <input type="hidden" name="base_name" value="${set.name}"><input type="hidden" name="base_topic" value="${set.topic ?? ''}">
+            <textarea name="base_description" hidden>${set.description ?? ''}</textarea>
+            <label>Name <input name="name" value="${set.name}" maxlength="120" required></label>
             <label>Topic <input name="topic" value="${set.topic ?? ''}" maxlength="80" list="sets-topics" autocomplete="off" placeholder="e.g. Japanese art"></label>
             <label class="sets-edit-desc"><span>Description</span>
               <textarea name="description" rows="7" maxlength="10000" placeholder="What it is for, what to look out for, notes for learning …">${set.description ?? ''}</textarea></label>
             <button type="submit">Save</button><datalist id="sets-topics"></datalist></form></details>
-        <details class="sets-share"><summary class="link-button">Share…</summary><div class="sets-share-body"></div></details></div>`
+        ${owner ? html`<details class="sets-share"><summary class="link-button">Share…</summary><div class="sets-share-body"></div></details>` : ''}
+        <details class="sets-together"><summary class="link-button">${owner ? 'Edit together…' : 'Edited together'}</summary><div class="sets-together-body"></div></details></div>`
         : html`<p class="sets-tools">${me ? html`<button type="button" class="sets-copy">Save a copy to your sets</button>`
           : html`<span class="muted small">${loginLink() ?? 'Log in'} to keep track of what you know and to save a copy.</span>`}</p>`}
-      ${studyForm(ref, items.length)}
+      ${me ? html`<section class="sets-plan" aria-label="Your plan"></section>` : ''}
+      ${studyForm(ref, items.length, Boolean(me))}
       <p class="sets-msg small" role="status"></p>
       ${me ? html`<section class="sets-stats" aria-label="Your results"></section>` : ''}
       ${[...byType.entries()].map(([type, list]) => html`<section class="sets-group"><h2>${PLURAL_LABEL[PLURAL[type as StudyItem['type']]]} <span class="muted">${String(list.length)}</span></h2>
         <ul class="sets-items">${list.map((i) => html`<li class="sets-entry">
           <a class="sets-entry-link" href="${href(PLURAL[i.type], i.slug)}">${itemPicture(i)}<span><span class="sets-entry-name">${i.name}</span>
-            ${i.subtitle ? html`<span class="muted small">${i.subtitle}</span>` : ''}</span></a>
+            ${i.subtitle ? html`<span class="muted small">${i.subtitle}</span>` : ''}${i.added_by ? html`<span class="muted small sets-added-by">added by ${i.added_by}</span>` : ''}</span></a>
           ${own ? html`<button type="button" class="link-button sets-remove" data-type="${i.type}" data-slug="${i.slug}" title="Remove from this set" aria-label="Remove ${i.name} from this set">×</button>` : ''}</li>`)}</ul></section>`)}
     </section>`);
     const msg = main.querySelector<HTMLElement>('.sets-msg')!;
     const stats = main.querySelector<HTMLElement>('.sets-stats');
-    if (stats) getSetStats(ref).then((s) => { if (s) render(stats, results(s, set.count)); }).catch(() => {});
+    const planEl = main.querySelector<HTMLElement>('.sets-plan');
+    const todayCount = (p: StudyPlan) => {
+      const n = (d?: { due: number; new_left_today: number }) => String(d ? d.due + d.new_left_today : 0);
+      const el = main.querySelector('.sets-today-count');
+      if (el) el.textContent = `(${n(p.directions.forward)} Name it · ${n(p.directions.reverse)} Describe it)`;
+    };
+    if (stats) {
+      getSetStats(ref).then((s) => {
+        if (!s) return;
+        render(stats, results(s, set.count));
+        if (planEl && s.plan && set.count) { planBox(planEl, ref, s.plan, todayCount); todayCount(s.plan); }
+      }).catch(() => {});
+    }
     if (!own) {
       main.querySelector('.sets-copy')?.addEventListener('click', () => {
         copySet((ref as { code: string }).code).then((c) => { if (c) location.assign(`/sets/${c.id}`); }).catch((err: Error) => { msg.textContent = err.message; });
@@ -226,16 +286,32 @@ function one(main: HTMLElement, ref: SetRef) {
     }
     const id = ref.own;
     const editForm = main.querySelector<HTMLFormElement>('.sets-edit-form')!;
-    markdownEditor(editForm.querySelector('textarea')!, previewDescription);
+    markdownEditor(editForm.querySelector<HTMLTextAreaElement>('textarea[name=description]')!, previewDescription);
     editForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const val = (n: string) => (editForm.elements.namedItem(n) as HTMLInputElement).value;
-      updateSet(id, { name: val('name'), topic: val('topic'), description: val('description') }).then(() => one(main, ref)).catch((err: Error) => { msg.textContent = err.message; });
+      const conflict = editForm.querySelector<HTMLElement>('.sets-conflict')!;
+      updateSet(id, { name: val('name'), topic: val('topic'), description: val('description'), base_name: val('base_name'), base_topic: val('base_topic'), base_description: val('base_description') })
+        .then(() => one(main, ref))
+        .catch((err: Error) => {
+          if (!(err instanceof ApiError && err.status === 409)) { msg.textContent = err.message; return; }
+          // someone else changed it meanwhile: their version shown, yours kept in the form; Save again replaces theirs
+          const now = (err.body?.set ?? null) as StudySet | null;
+          if (!now) return;
+          const set = (n: string, v: string) => { (editForm.elements.namedItem(n) as HTMLInputElement).value = v; };
+          set('base_name', now.name); set('base_topic', now.topic ?? ''); set('base_description', now.description ?? '');
+          conflict.hidden = false;
+          render(conflict, html`<b>${now.updated_by ?? 'Someone'} changed this set meanwhile.</b> Their version is below — yours is still in the form:
+            Save again to replace theirs, or copy what you need first.
+            <span class="sets-conflict-theirs"><b>Name:</b> ${now.name}${now.topic ? html` · <b>Topic:</b> ${now.topic}` : ''}</span>
+            ${now.description_html ? html`<span class="prose sets-conflict-theirs">${trusted(now.description_html)}</span>` : ''}`);
+        });
     });
     main.querySelector('.sets-edit')!.addEventListener('toggle', () => {
       getSets().then((x) => { const dl = main.querySelector('#sets-topics'); if (x && dl) render(dl, topicOptions(x.topics)); }).catch(() => {});
     }, { once: true });
-    sharing(main.querySelector<HTMLElement>('.sets-share-body')!, set, id);
+    if (owner) sharing(main.querySelector<HTMLElement>('.sets-share-body')!, set, id);
+    editors(main.querySelector<HTMLElement>('.sets-together-body')!, set, id, owner);
     main.querySelectorAll<HTMLButtonElement>('.sets-remove').forEach((b) => b.addEventListener('click', () => {
       removeFromSet(id, b.dataset.type as StudyItem['type'], b.dataset.slug!).then(() => one(main, ref)).catch((err: Error) => { msg.textContent = err.message; });
     }));
@@ -265,7 +341,7 @@ function sharing(box: HTMLElement, set: StudySet, id: string) {
       publicName = r.public_name;
       draw(done);
       const h1 = document.querySelector('.sets-page h1');
-      if (h1) render(h1, html`${set.name}${visBadge(set)}`);
+      if (h1) render(h1, html`${set.name}${visBadge(set)}${together(set)}`);
     }).catch((err: Error) => { msg.textContent = err.message; });
     form.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -281,6 +357,73 @@ function sharing(box: HTMLElement, set: StudySet, id: string) {
     });
   };
   getSets().then((r) => { publicName = r?.public_name ?? null; draw(); }).catch(() => draw());
+}
+
+/** Editing together: the owner's invitation link (copied; a new one ends the old; stop), the editors (removed with ×);
+ *  an editor sees who else edits it and can leave. */
+function editors(box: HTMLElement, set: StudySet, id: string, owner: boolean) {
+  const draw = (note = '') => {
+    const list = set.editors ?? [];
+    render(box, html`<div class="sets-together-form">
+      <p class="small">${owner ? 'Those you invite change the name, topic, description and entries with you; sharing, the editors and deleting stay yours. Each keeps their own progress, results and exam date.'
+        : html`You edit this set with its owner <b>${set.creator ?? '—'}</b>. Sharing and deleting it are theirs; your progress and results are your own.`}</p>
+      ${list.length ? html`<ul class="sets-editors">${list.map((e) => html`<li>${e.name ?? '—'}${e.me ? html` <span class="muted small">(you)</span>` : ''}
+        ${owner ? html`<button type="button" class="link-button sets-editor-remove" data-id="${e.id}" aria-label="Remove ${e.name ?? 'this editor'}" title="Remove from the editors">×</button>` : ''}</li>`)}</ul>`
+        : html`<p class="muted small">No one else edits it yet.</p>`}
+      ${owner ? (set.edit_code
+        ? html`<p class="sets-share-link"><input readonly value="${joinUrl(set.edit_code)}" aria-label="Invitation link">
+            <button type="button" class="sets-invite-copy">Copy link</button> <button type="button" class="link-button sets-invite-new" title="The old link stops working">New link</button>
+            <button type="button" class="link-button sets-invite-stop">Stop inviting</button></p>
+          <p class="muted small">Anyone with this link and an account can join as an editor — send it only to those you mean. Editors who joined stay until you remove them.</p>`
+        : html`<p><label class="sets-invite-name">Your public name (the editors see it) <input name="public_name" maxlength="60" autocomplete="nickname"></label>
+            <button type="button" class="sets-invite">Make an invitation link</button></p>`)
+        : html`<p><button type="button" class="link-button sets-leave">Leave this set</button></p>`}
+      <p class="sets-together-msg small" role="status">${note}</p></div>`);
+    const msg = box.querySelector<HTMLElement>('.sets-together-msg')!;
+    const act = (data: Parameters<typeof editSetEditors>[1], done: string) => editSetEditors(id, data).then((s) => {
+      if (s) Object.assign(set, { edit_code: s.edit_code, editors: s.editors });
+      draw(done);
+    }).catch((err: Error) => { msg.textContent = err.message; });
+    box.querySelector('.sets-invite')?.addEventListener('click', () => act({ action: 'invite', public_name: (box.querySelector('input[name=public_name]') as HTMLInputElement).value }, 'Invitation link made — copy it and send it.'));
+    box.querySelector('.sets-invite-new')?.addEventListener('click', () => { if (confirm('Make a new invitation link? The old one stops working (editors who joined stay).')) void act({ action: 'invite' }, 'New link made.'); });
+    box.querySelector('.sets-invite-stop')?.addEventListener('click', () => act({ action: 'stop' }, 'No one can join any more; the editors stay.'));
+    box.querySelector('.sets-invite-copy')?.addEventListener('click', () => {
+      const input = box.querySelector<HTMLInputElement>('.sets-share-link input')!;
+      navigator.clipboard?.writeText(input.value).then(() => { msg.textContent = 'Link copied.'; }, () => { input.select(); });
+    });
+    box.querySelectorAll<HTMLButtonElement>('.sets-editor-remove').forEach((b) => b.addEventListener('click', () => act({ action: 'remove', account: b.dataset.id! }, 'Removed.')));
+    box.querySelector('.sets-leave')?.addEventListener('click', () => {
+      if (!confirm('Leave this set? It goes from your sets; the owner can invite you again.')) return;
+      leaveSet(id).then(() => location.assign('/sets')).catch((err: Error) => { msg.textContent = err.message; });
+    });
+  };
+  // the owner's public name: asked only when an invitation is made and none is set yet
+  getSets().then((r) => { draw(); if (r?.public_name) box.querySelector('.sets-invite-name')?.remove(); }).catch(() => draw());
+}
+
+/** /sets/join/<code>: what the invitation is for; logged in → join (a public name first if none). */
+function joinView(main: HTMLElement, code: string) {
+  document.title = 'Edit a set together · Art History';
+  Promise.all([getInvitation(code), account()]).then(async ([inv, me]) => {
+    if (!inv) return failed(main, 'This invitation could not be loaded.');
+    if (inv.role && inv.set.id) { location.replace(`/sets/${inv.set.id}`); return; }
+    render(main, html`<section class="page sets-page"><p class="crumbs"><a href="/sets">Study sets</a> / Invitation</p>
+      <h1>Edit “${inv.set.name}” together</h1>
+      <p>${inv.set.creator ?? 'Someone'} invites you to edit this set${inv.set.topic ? html` (<span class="sets-topic">${inv.set.topic}</span>)` : ''} with
+        ${inv.set.editors ? plural(inv.set.editors + 1, 'other') : 'them'}: ${plural(inv.set.count, 'entry', 'entries')} so far. You change its name, description and entries with them;
+        what you know of the cards, your results and your exam date stay your own.</p>
+      ${me ? html`<form class="sets-join">${inv.public_name ? html`<p class="muted small">The others see you as <b>${inv.public_name}</b>.</p>`
+        : html`<label>Your public name — the others see it, never your username <input name="public_name" maxlength="60" required autocomplete="nickname"></label>`}
+        <button type="submit">Join as an editor</button> <span class="sets-msg small" role="status"></span></form>`
+        : html`<p>${await accountLinks()}</p>`}</section>`);
+    main.querySelector<HTMLFormElement>('.sets-join')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const f = e.target as HTMLFormElement;
+      const name = (f.elements.namedItem('public_name') as HTMLInputElement | null)?.value ?? '';
+      joinSet(code, name).then((s) => { if (s) location.assign(`/sets/${s.id}`); })
+        .catch((err: Error) => { f.querySelector('.sets-msg')!.textContent = err.message; });
+    });
+  }).catch(() => failed(main, 'This invitation is not valid (any more) — ask for a new link.'));
 }
 
 /** "Your results": per kind of quiz, the boxes, the hardest entries. */
@@ -358,8 +501,9 @@ interface Turn { card: StudyCard; dir: Dir; again: boolean }
 function studyView(main: HTMLElement, ref: SetRef, params: URLSearchParams) {
   const asked = (params.get('mode') ?? params.get('dir')) as StudyMode | null;
   let mode: StudyMode = asked && MODES.includes(asked) ? asked : 'forward';
-  const skipKnown = params.get('skip') === 'known';
-  Promise.all([getCards(ref), account()]).then(([r, me]) => {
+  const which = params.get('cards') ?? (params.get('skip') === 'known' ? 'weak' : 'all');
+  const skipKnown = which === 'weak';
+  Promise.all([getCards(ref), account()]).then(async ([r, me]) => {
     if (!r) return 'own' in ref ? loggedOut(main) : failed(main, 'This set is not shared (any more).');
     const { set, cards } = r;
     if (mode === 'choice' && cards.length < 2) mode = 'forward';
@@ -367,8 +511,20 @@ function studyView(main: HTMLElement, ref: SetRef, params: URLSearchParams) {
     document.title = `Study: ${set.name} · Art History`;
     const dirs: Dir[] = mode === 'both' ? ['forward', 'reverse'] : mode === 'reverse' ? ['reverse'] : ['forward'];
     // every card in the chosen directions; the low boxes first, at random within a box
+    // today's cards (220): those due again, and the day's share of the new ones (in the set's order)
+    const today = which === 'today' && learner;
+    const plan = today ? (await getSetStats(ref).catch(() => null))?.plan ?? null : null;
+    const newLeft: Record<Dir, number> = { forward: plan?.directions.forward?.new_left_today ?? 0, reverse: plan?.directions.reverse?.new_left_today ?? 0 };
     const queue: Turn[] = cards.flatMap((card) => dirs.map((dir) => ({ card, dir, again: false })))
       .filter((t) => !skipKnown || (t.card.progress[t.dir]?.box ?? 0) < 5)
+      .filter((t) => {
+        if (!today) return true;
+        const p = t.card.progress[t.dir];
+        if (p) return Boolean(p.due);
+        if (newLeft[t.dir] <= 0) return false;
+        newLeft[t.dir] -= 1;
+        return true;
+      })
       .map((t) => ({ t, k: (t.card.progress[t.dir]?.box ?? 0) + Math.random() }))
       .sort((a, b) => a.k - b.k).map((x) => x.t);
     const total = queue.length;
@@ -390,7 +546,7 @@ function studyView(main: HTMLElement, ref: SetRef, params: URLSearchParams) {
     const crumbs = 'own' in ref ? html`<a href="/sets">Your study sets</a>` : html`<a href="/sets/shared">Shared sets</a>`;
     render(main, html`<section class="page sets-page study-page">
       <p class="crumbs">${crumbs} / <a href="${pageHref(ref)}">${set.name}</a> / Study</p>
-      <h1>${set.name} <span class="muted study-mode">${MODE_NAME[mode]}</span></h1>
+      <h1>${set.name} <span class="muted study-mode">${MODE_NAME[mode]}${today ? ' · today\'s cards' : ''}</span></h1>
       ${learner ? '' : html`<p class="muted small">${loginLink() ?? 'Log in'} to keep what you know and your results — as a visitor nothing is kept.</p>`}
       <p class="study-count muted small" aria-live="polite"></p>
       <div class="study-card" tabindex="0" aria-live="polite"></div>
@@ -462,7 +618,7 @@ function studyView(main: HTMLElement, ref: SetRef, params: URLSearchParams) {
       render(box, html`<div class="study-side study-done"><p class="study-name">Done</p>
         <p>${String(known)} known · ${String(notYet)} not yet${missed.length ? html` (they came back once)` : ''} — ${String(pct)} %.</p>
         ${learner ? html`<p class="muted small">${String(weak)} of ${String(cards.length)} ${cards.length === 1 ? 'entry is' : 'entries are'} still in the first box.</p><p class="study-compare small"></p>` : ''}</div>`);
-      render(buttons, html`<a class="button-link" href="${studyHref(ref)}?mode=${mode}">Again</a>
+      render(buttons, html`<a class="button-link" href="${studyHref(ref)}?mode=${mode}${today ? '&cards=today' : ''}">Again</a>
         <a class="button-link" href="${pageHref(ref)}">Back to the set</a>`);
       if (learner) {
         // the round is being saved: the comparison a moment later
@@ -502,7 +658,8 @@ function studyView(main: HTMLElement, ref: SetRef, params: URLSearchParams) {
     document.addEventListener('keydown', keys);
     leave = () => { window.removeEventListener('pagehide', onHide); document.removeEventListener('keydown', keys); round(false); };
     if (!total) {
-      render(box, html`<div class="study-side study-done"><p>${skipKnown ? 'You know every card of this set well.' : 'This set has no entries yet.'}</p></div>`);
+      render(box, html`<div class="study-side study-done"><p>${today ? 'Nothing due today — well done. Come back tomorrow, or study all the cards.'
+        : skipKnown ? 'You know every card of this set well.' : 'This set has no entries yet.'}</p></div>`);
       render(buttons, html`<a class="button-link" href="${pageHref(ref)}">Back to the set</a>`);
       return;
     }
