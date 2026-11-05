@@ -1504,3 +1504,10 @@ button.danger { border-color: var(--accent); color: var(--accent); }
 .my-form { flex-basis: 100%; display: grid; gap: .6rem; margin-top: .4rem; padding: .7rem .9rem; border: 1px solid var(--line); border-radius: 6px; }
 .my-form[hidden] { display: none; }
 .my-form label { display: grid; gap: .25rem; }
+
+/* your results with the set as it was (229) */
+.results-set h2 .tag { font-size: .75rem; vertical-align: middle; }
+.results-gone { opacity: .75; }
+.results-snapshot { margin: .6rem 0; padding: .6rem .9rem; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 6px; background: var(--surface); }
+.results-snapshot h3 { margin: 0 0 .3rem; font-size: 1rem; }
+.results-items { margin: .3rem 0; padding-left: 1.4rem; }

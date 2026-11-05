@@ -486,6 +486,17 @@ export const previewDescription = (text: string) => account<{ html: string }>('/
 export const getSetStats = (ref: SetRef) => account<StudyStats>(`${base(ref)}/stats`);
 export const getPublicSets = (topic = '', q = '') =>
   account<{ sets: StudySet[]; topics: { topic: string; count: number }[] }>(`/shared?${new URLSearchParams({ topic, q })}`);
+// the account's results with the sets as they were (229)
+export interface ResultRound { id: string; at: string; mode: StudyMode; answered: number; known: number; seconds: number | null; complete: boolean;
+  snapshot: { id: string; name: string; item_count: number; taken_at: string } }
+/** access: own | member | public — the set can still be opened (id: own or member; code: public); null = gone for this account */
+export interface ResultSet { key: string; name: string; topic: string | null; access: 'own' | 'member' | 'public' | null; id: string | null; code: string | null; rounds: ResultRound[] }
+export interface SetSnapshot { id: string; name: string; topic: string | null; description_html: string | null; taken_at: string;
+  items: { type: EntityType; name: string; slug: string | null; now_name: string | null }[] }
+export const getResults = () => account<{ sets: ResultSet[]; more: boolean }>('/sets/results');
+export const getSnapshot = (id: string) => account<{ snapshot: SetSnapshot }>(`/sets/results/snapshots/${id}`).then((r) => r?.snapshot ?? null);
+export const copySnapshot = (id: string) => account<{ set: { id: string; name: string; entries: number; missing: number } }>(`/sets/results/snapshots/${id}/copy`, form({})).then((r) => r?.set ?? null);
+export const forgetResults = (key: string) => account<{ deleted: number }>('/sets/results/forget', form({ key }));
 /** The account's exam date for a set (YYYY-MM-DD; '' = none) → the day's plan */
 export const savePlan = (ref: SetRef, examOn: string) => account<{ plan: StudyPlan }>(`${base(ref)}/plan`, form({ exam_on: examOn })).then((r) => r?.plan ?? null);
 // members, links, invitations, the kind of vote (228) — the owner's

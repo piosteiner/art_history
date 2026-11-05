@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-05
 
+### Results keep the set as it was (229)
+- **What:** owner 2026-11-05 ("die set daten automatisch mit den resultaten gespeichert …, so dass die ergebnisse und
+  das set zu jeder zeit nachvollziehbar bleiben"). `study_set_snapshots` (name, topic, description, entries with their
+  names then; one row per content via md5 fingerprint + `ON CONFLICT … RETURNING`), `study_set_snapshot(set)` called
+  when a round is recorded; `study_sessions.snapshot_id`, `set_id` now `ON DELETE SET NULL` (results outlive the set);
+  statement triggers tidy snapshots no round refers to. Routes `/site/sets/results` (+ `/snapshots/:id`, `/copy`,
+  `/forget`); site `/sets/results` ("Your results": rounds by set, the set as it was per round, saved again as a new
+  set, results deleted). Privacy statement and documentation draft updated.
+- **Revert:** `git revert`; `ALTER TABLE study_sessions DROP COLUMN snapshot_id`, FK back to CASCADE, `DROP TABLE study_set_snapshots`.
+
 ### Members and rights in study sets (228); routes drawn on the CMS view page
 - **What:** owner 2026-11-05. A set is private / shared (members only) / public (listed, seen by anyone). Members
   (`study_set_editors` renamed `study_set_members`) have rights — domain `set_rights`: view, full, approval, vote —

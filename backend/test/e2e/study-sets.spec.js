@@ -424,3 +424,43 @@ test('rights in a set: a viewer reads; changes with approval wait for the owner;
     sql("DELETE FROM study_sets WHERE name LIKE 'Test set Rights%'; DELETE FROM admin_users WHERE username = 'test-voter'");
   }
 });
+
+// 229: every round keeps the set as it was — results stay traceable when the set changes or is gone
+test('results keep the set as it was: a snapshot per content, kept when the set is deleted; copied back; forgotten', async ({ userA, userB }) => {
+  sql("UPDATE admin_users SET public_name = 'Test Owner' WHERE username = 'tester'");
+  const { set } = await post(userA, '', { name: 'Test set Snap', topic: 'Test topic Snap', description: 'Old **text**' }, 201);
+  await post(userA, `/${set.id}/items`, { type: 'artwork', slug: 'test-study-work' });
+  const { code } = (await post(userA, `/${set.id}/share`, { visibility: 'public' })).set;
+  // two rounds on the same content: one snapshot; the set changes: a second one
+  await post(userB, `/../shared/${code}/sessions`, { mode: 'forward', answered: '1', known: '1' }, 201);
+  await post(userB, `/../shared/${code}/sessions`, { mode: 'typed', answered: '1', known: '0' }, 201);
+  await post(userA, `/${set.id}/items`, { type: 'term', slug: 'test-study-term' });
+  await post(userA, `/${set.id}`, { name: 'Test set Snap renamed' });
+  await post(userB, `/../shared/${code}/sessions`, { mode: 'choice', answered: '2', known: '2' }, 201);
+  let mine = (await get(userB, '/results')).sets.find((s) => s.key === String(set.id));
+  expect(mine).toEqual(expect.objectContaining({ name: 'Test set Snap renamed', access: 'public', code, id: null }));
+  expect(mine.rounds.map((r) => [r.mode, r.snapshot.name, r.snapshot.item_count])).toEqual([
+    ['choice', 'Test set Snap renamed', 2], ['typed', 'Test set Snap', 1], ['forward', 'Test set Snap', 1]]);
+  expect(mine.rounds[1].snapshot.id).toBe(mine.rounds[2].snapshot.id);
+  // the owner's own results are not mixed in; another account can't read the snapshot
+  expect((await get(userA, '/results')).sets.find((s) => s.key === String(set.id))).toBeUndefined();
+  await get(userA, `/results/snapshots/${mine.rounds[2].snapshot.id}`, 404);
+
+  // the owner deletes the set: the rounds stay, with the set as it was
+  await post(userA, `/${set.id}/delete`, {}, 204);
+  mine = (await get(userB, '/results')).sets.find((s) => s.key === String(set.id));
+  expect(mine).toEqual(expect.objectContaining({ name: 'Test set Snap renamed', access: null, code: null }));
+  expect(mine.rounds).toHaveLength(3);
+  const old = (await get(userB, `/results/snapshots/${mine.rounds[2].snapshot.id}`)).snapshot;
+  expect(old).toEqual(expect.objectContaining({ name: 'Test set Snap', topic: 'Test topic Snap' }));
+  expect(old.description_html).toContain('<strong>text</strong>');
+  expect(old.items).toEqual([{ type: 'artwork', name: 'The Test of Memory', slug: 'test-study-work', now_name: 'The Test of Memory' }]);
+  // saved again as an own set from the snapshot
+  const back = (await post(userB, `/results/snapshots/${mine.rounds[0].snapshot.id}/copy`, {}, 201)).set;
+  expect(back).toEqual(expect.objectContaining({ name: 'Test set Snap renamed', entries: 2, missing: 0 }));
+  expect((await get(userB, `/${back.id}`)).items.map((i) => i.slug).sort()).toEqual(['test-study-term', 'test-study-work']);
+  // forgotten: the rounds and their snapshots go
+  expect((await post(userB, '/results/forget', { key: String(set.id) })).deleted).toBe(3);
+  expect((await get(userB, '/results')).sets.find((s) => s.key === String(set.id))).toBeUndefined();
+  expect(sql(`SELECT count(*) FROM study_set_snapshots WHERE origin_set_id = ${set.id}`)).toBe('0');
+});

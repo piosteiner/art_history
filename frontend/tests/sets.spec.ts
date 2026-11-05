@@ -370,6 +370,7 @@ test('members: the owner\'s panel — rights changed, a link with rights, a memb
   // a member's rights changed
   await panel.locator('[data-member="5"] select').selectOption('vote');
   await expect.poll(() => account.posts).toContain('member:5:action=rights&rights=vote');
+  await expect(panel.locator('.sets-share-msg')).toContainText('Now: Editor with votes');   // the panel drawn again
   // a link with rights: not without a public name — then one to copy, marked with what it gives
   await panel.locator('.sets-link-form select').selectOption('approval');
   await panel.locator('.sets-link-form button').click();
@@ -617,4 +618,45 @@ test('rights on the member\'s side: editing with approval proposes; a viewer onl
   await expect(page.locator('.sets-history')).toHaveCount(0);
   await expect(page.locator('.sets-propose, .sets-remove')).toHaveCount(0);
   await expect(page.locator('.sets-study')).toBeVisible();
+});
+
+// 229: every round with the set as it was — also for a set since deleted; a version saved again as a new set
+test('your results: rounds by set, each with the set as it was; a deleted set\'s results stay; saved again as a set', async ({ page }) => {
+  const account = await loggedIn(page);
+  account.sets.push({ id: '1', name: 'Edo prints', topic: 'Japanese art', description: null, visibility: 'private', code: null,
+    items: [{ type: 'artwork', slug: 'the-great-wave-off-kanagawa', name: 'The Great Wave off Kanagawa' }, { type: 'term', slug: 'nishiki-e', name: 'Ukiyo-e' }] });
+  const posts: string[] = [];
+  const cors = () => ({ 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' });
+  await page.route(/^http:\/\/admin\.test\/site\/sets\/results(\/.*)?$/, async (route) => {
+    const req = route.request();
+    const path = new URL(req.url()).pathname.replace(/^\/site\/sets\/results/, '');
+    if (req.method() === 'POST') posts.push(`${path}:${req.postData() ?? ''}`);
+    const json = (b: unknown, status = 200) => route.fulfill({ status, contentType: 'application/json', body: JSON.stringify(b), headers: cors() });
+    if (path === '') return json({ more: false, sets: [{ key: '31', name: 'Edo exam', topic: 'Japanese art', access: null, id: null, code: null, rounds: [
+      { id: '2', at: '2026-11-05T10:00:00Z', mode: 'typed', answered: 4, known: 3, seconds: 120, complete: true, snapshot: { id: '8', name: 'Edo exam', item_count: 2, taken_at: '2026-11-05T10:00:00Z' } },
+      { id: '1', at: '2026-11-04T10:00:00Z', mode: 'forward', answered: 3, known: 1, seconds: 40, complete: false, snapshot: { id: '7', name: 'Edo prints', item_count: 3, taken_at: '2026-11-04T10:00:00Z' } }] }] });
+    if (path === '/snapshots/7') return json({ snapshot: { id: '7', name: 'Edo prints', topic: 'Japanese art', description_html: '<p>For the <strong>exam</strong></p>', taken_at: '2026-11-04T10:00:00Z',
+      items: [{ type: 'artwork', name: 'The Great Wave', slug: 'the-great-wave-off-kanagawa', now_name: 'The Great Wave off Kanagawa' }, { type: 'term', name: 'Ukiyo-e', slug: 'nishiki-e', now_name: 'Ukiyo-e' },
+        { type: 'artist', name: 'A deleted painter', slug: null, now_name: null }] } });
+    if (path === '/snapshots/7/copy') return json({ set: { id: '1', name: 'Edo prints', entries: 2, missing: 1 } }, 201);
+    return json({});
+  });
+  await page.goto('/sets/results');
+  const set = page.locator('.results-set');
+  await expect(set.locator('h2')).toContainText('Edo exam');
+  await expect(set.locator('h2 .tag')).toHaveText('no longer available');
+  await expect(set).toContainText('2 rounds · 57 % known');
+  await expect(set.locator('tbody tr').nth(1)).toContainText('1 of 3 (33 %)');
+  await expect(set.locator('tbody tr').nth(1)).toContainText('left early');
+  // the set as it was for the older round: its text, its entries (renamed since, deleted since)
+  await set.locator('[data-snapshot="7"]').click();
+  const then = set.locator('.results-snapshot');
+  await expect(then.locator('h3')).toContainText('Edo prints');
+  await expect(then.locator('strong')).toHaveText('exam');
+  await expect(then.locator('li').first()).toContainText('now “The Great Wave off Kanagawa”');
+  await expect(then.locator('li').nth(2)).toContainText('no longer on the site');
+  await then.locator('[data-copy-this]').click();
+  await expect(page).toHaveURL(/\/sets\/1\?missing=1$/);
+  expect(posts).toContain('/snapshots/7/copy:');
+  await expect(page.locator('.sets-msg')).toContainText('1 entry of that version is no longer on the site');
 });

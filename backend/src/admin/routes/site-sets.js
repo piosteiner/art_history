@@ -9,7 +9,8 @@
 //   GET  /site/sets/:id                   {set, items: [{type, slug, name, subtitle, image, own, added_at}]}
 //   POST /site/sets/:id                   name, topic, description → {set}
 //   POST /site/sets/:id/share             visibility (private|shared|public), public_name → {set, public_name} (219, 228: private = its members out)
-//   POST /site/sets/:id/sessions          mode, answered, known, seconds, complete → 201 — one round of a quiz (219)
+//   POST /site/sets/:id/sessions          mode, answered, known, seconds, complete → 201 — one round of a quiz (219), with the
+//                                         set as it was then (229: study_set_snapshot(); see "results" below)
 //   POST /site/sets/preview               text → {html} — a description as it will look (Markdown, src/markdown.js)
 //   GET  /site/sets/:id/stats             the account's results on this set per kind of quiz, its boxes, hardest cards
 //   POST /site/sets/:id/delete            → 204
@@ -243,8 +244,10 @@ async function recordSession(req, res, setId) {
   const known = Number.parseInt(req.body.known, 10);
   const seconds = Number.parseInt(req.body.seconds, 10);
   if (!mode || !(answered > 0 && answered <= 20000) || !(known >= 0 && known <= answered)) return fail(res, 422, 'which round?');
-  await adminPool.query(`INSERT INTO study_sessions (owner_id, set_id, mode, answered, known, seconds, complete) VALUES ($1, $2, $3, $4, $5, $6, $7)`,
-    [req.user.id, setId, mode, answered, known, seconds >= 0 && seconds < 86400 ? seconds : null, req.body.complete !== '0']);
+  // the set as this round saw it (229): kept with the result, also when the set is gone later
+  await asUser(req, (db) => db.query(`INSERT INTO study_sessions (owner_id, set_id, mode, answered, known, seconds, complete, snapshot_id)
+      VALUES ($1, $2, $3, $4, $5, $6, $7, study_set_snapshot($2))`,
+    [req.user.id, setId, mode, answered, known, seconds >= 0 && seconds < 86400 ? seconds : null, req.body.complete !== '0']));
   res.status(201).json({ ok: true });
 }
 
@@ -491,6 +494,79 @@ router.post('/progress', async (req, res) => {
       box = CASE WHEN $5 THEN least(p.box + 1, 5) ELSE 1 END, seen = p.seen + 1, known = p.known + (CASE WHEN $5 THEN 1 ELSE 0 END), last_seen_at = now()
     RETURNING box, seen, known`, [req.user.id, req.body.type, id, direction, known]);
   res.json(p);
+});
+
+// ---- the account's results with the sets as they were (229) -------------------------------------------------------
+//   GET  /site/sets/results                       {sets: [{key, name, topic, access, id, code, rounds: [{…, snapshot}]}]}
+//                                                 — every round, grouped by set; access: own | member | public | null (gone)
+//   GET  /site/sets/results/snapshots/:sid        the set as it was: {snapshot: {name, topic, description_html, items}}
+//   POST /site/sets/results/snapshots/:sid/copy   a new set of the account's own from it (the entries still on the site)
+//   POST /site/sets/results/forget                key → the account's rounds on that set deleted
+const MAX_ROUNDS_SHOWN = 3000;
+router.get('/results', async (req, res) => {
+  const { rows } = await adminPool.query(`SELECT s.id::text AS id, s.mode, s.answered, s.known, s.seconds, s.complete, s.finished_at AS at,
+      x.origin_set_id::text AS key, x.id::text AS snapshot_id, x.name, x.topic, x.item_count, x.taken_at
+    FROM study_sessions s JOIN study_set_snapshots x ON x.id = s.snapshot_id
+    WHERE s.owner_id = $1 ORDER BY s.finished_at DESC LIMIT ${MAX_ROUNDS_SHOWN}`, [req.user.id]);
+  const keys = [...new Set(rows.map((r) => r.key))];
+  const { rows: live } = keys.length ? await adminPool.query(`SELECT s.id::text AS key, s.name, s.topic,
+      CASE WHEN s.owner_id = $1 THEN 'own' WHEN EXISTS (SELECT 1 FROM study_set_members m WHERE m.set_id = s.id AND m.account_id = $1) THEN 'member'
+           WHEN s.visibility = 'public' THEN 'public' END AS access,
+      CASE WHEN s.visibility = 'public' THEN s.share_code END AS code
+    FROM study_sets s WHERE s.id = ANY($2::bigint[]) AND ${ALIVE}`, [req.user.id, keys]) : { rows: [] };
+  const now = new Map(live.filter((l) => l.access).map((l) => [l.key, l]));
+  const sets = new Map();
+  for (const r of rows) {
+    if (!sets.has(r.key)) {
+      const l = now.get(r.key);
+      // the set's name as it is now where the account can still open it, else as it was in its latest round
+      sets.set(r.key, { key: r.key, name: l ? l.name : r.name, topic: l ? l.topic : r.topic, access: l ? l.access : null,
+        id: l && l.access !== 'public' ? r.key : null, code: l ? l.code : null, rounds: [] });
+    }
+    sets.get(r.key).rounds.push({ id: r.id, at: r.at, mode: r.mode, answered: r.answered, known: r.known, seconds: r.seconds, complete: r.complete,
+      snapshot: { id: r.snapshot_id, name: r.name, item_count: r.item_count, taken_at: r.taken_at } });
+  }
+  res.json({ sets: [...sets.values()], more: rows.length === MAX_ROUNDS_SHOWN });
+});
+
+/** A snapshot the account played a round on — or null. */
+async function ownSnapshot(req) {
+  if (!ID.test(req.params.sid)) return null;
+  const { rows: [x] } = await adminPool.query(`SELECT x.id, x.set_id, x.name, x.topic, x.description, x.items, x.taken_at FROM study_set_snapshots x
+    WHERE x.id = $1 AND EXISTS (SELECT 1 FROM study_sessions s WHERE s.snapshot_id = x.id AND s.owner_id = $2)`, [req.params.sid, req.user.id]);
+  return x || null;
+}
+router.get('/results/snapshots/:sid', async (req, res) => {
+  const x = await ownSnapshot(req);
+  if (!x) return fail(res, 404, 'not_found');
+  // each entry as it was named then — and where it is now, if it is still on the site
+  const { rows: now } = await adminPool.query(`SELECT e.type::text AS type, e.id, e.slug, e.name FROM entity_index e
+    JOIN jsonb_to_recordset($1::jsonb) AS i (type text, id bigint) ON (e.type::text, e.id) = (i.type, i.id)`, [JSON.stringify(x.items)]);
+  const here = new Map(now.map((e) => [`${e.type}:${e.id}`, e]));
+  const [described1] = await described([{ description: x.description }]);
+  res.json({ snapshot: { id: String(x.id), name: x.name, topic: x.topic, description_html: described1.description_html, taken_at: x.taken_at,
+    items: x.items.map((i) => { const e = here.get(`${i.type}:${i.id}`); return { type: i.type, name: i.name, slug: e ? e.slug : null, now_name: e ? e.name : null }; }) } });
+});
+router.post('/results/snapshots/:sid/copy', async (req, res) => {
+  const x = await ownSnapshot(req);
+  if (!x) return fail(res, 404, 'not_found');
+  const { rows: [{ n }] } = await adminPool.query('SELECT count(*)::int AS n FROM study_sets WHERE owner_id = $1', [req.user.id]);
+  if (n >= MAX_SETS) return fail(res, 422, `at most ${MAX_SETS} sets`);
+  const copy = await asUser(req, async (db) => {
+    const { rows: [c] } = await db.query(`INSERT INTO study_sets (owner_id, name, topic, description, copied_from) VALUES ($1, $2, $3, $4,
+      (SELECT id FROM study_sets WHERE id = $5 AND visibility = 'public')) RETURNING id`, [req.user.id, x.name, x.topic, x.description, x.set_id]);
+    const { rowCount } = await db.query(`INSERT INTO study_set_items (set_id, entity_type, entity_id, added_by)
+      SELECT $1, e.type, e.id, $2 FROM jsonb_array_elements($3::jsonb) WITH ORDINALITY AS i (item, ord)
+      JOIN entity_index e ON (e.type::text, e.id) = (i.item ->> 'type', (i.item ->> 'id')::bigint) ORDER BY i.ord`, [c.id, req.user.id, JSON.stringify(x.items)]);
+    return { id: String(c.id), entries: rowCount };
+  });
+  res.status(201).json({ set: { ...copy, name: x.name, missing: x.items.length - copy.entries } });
+});
+router.post('/results/forget', async (req, res) => {
+  if (!ID.test(String(req.body.key || ''))) return fail(res, 422, 'which set?');
+  const { rowCount } = await adminPool.query(`DELETE FROM study_sessions WHERE owner_id = $1
+    AND snapshot_id IN (SELECT id FROM study_set_snapshots WHERE origin_set_id = $2)`, [req.user.id, req.body.key]);
+  res.json({ deleted: rowCount });
 });
 
 // a description as it will be shown (the Preview tab of the site's Markdown editor, md-editor.ts)
