@@ -3,6 +3,9 @@
 // hidden or closed; [data-form-draft-status] says when. Save (the form) applies it and the server removes the draft;
 // opening the form again restores one that was never saved. Like the pages' autosave (uploads.js), for many fields.
 // Also: a form [data-confirm="question"] asks before it is sent (delete buttons).
+// A new form (…/new) with nothing written in it is no draft (blank.js): instead of saving it, its draft is removed.
+import { hasContent } from './blank.js';
+
 export function initFormDrafts() {
   for (const form of document.querySelectorAll('form[data-confirm]')) {
     form.addEventListener('submit', (e) => { if (!window.confirm(form.dataset.confirm)) e.preventDefault(); });
@@ -26,14 +29,15 @@ function setup(form) {
     clearTimeout(timer);
     const now = JSON.stringify(fields());
     if (submitting || now === last) return;
-    const body = JSON.stringify({ fields: JSON.parse(now), base: form.dataset.formDraftBase || '' });
+    const empty = /\/new$/.test(form.dataset.formDraft) && !hasContent(form);
+    const body = JSON.stringify(empty ? { discard: true } : { fields: JSON.parse(now), base: form.dataset.formDraftBase || '' });
     if (beacon && navigator.sendBeacon) { if (navigator.sendBeacon(form.dataset.formDraft, new Blob([body], { type: 'application/json' }))) last = now; return; }
     say('Saving draft…');
     try {
       const r = await fetch(form.dataset.formDraft, { method: 'POST', body, headers: { 'Content-Type': 'application/json' }, credentials: 'same-origin', keepalive: true });
       if (!r.ok) throw new Error(String(r.status));
       last = now;
-      say(`Draft saved ${time()} — not saved to the entry until you press the button.`);
+      say(empty ? '' : `Draft saved ${time()} — not saved to the entry until you press the button.`);
     } catch {
       say('Draft not saved (offline?) — retrying when you type; keep this tab open.');
     }
@@ -47,6 +51,7 @@ function setup(form) {
   window.addEventListener('beforeunload', (e) => {
     if (submitting || JSON.stringify(fields()) === last) return;
     void send(true);
+    if (/\/new$/.test(form.dataset.formDraft) && !hasContent(form)) return;   // nothing written: nothing to lose
     e.preventDefault();
   });
 }

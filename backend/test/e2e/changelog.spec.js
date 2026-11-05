@@ -337,3 +337,19 @@ test('changelog: a source in a bullet is a link in the text, without footnotes',
     sql("DELETE FROM bibliography WHERE slug = 'test-cl-source'");
   }
 });
+
+test('changelog: a new entry with nothing written is no draft — one typed and emptied again goes', async ({ userA }) => {
+  const draft = () => sql("SELECT count(*) FROM form_drafts WHERE form_key = 'changelog/new' AND user_id = (SELECT id FROM admin_users WHERE username = 'tester')");
+  sql("DELETE FROM form_drafts WHERE form_key = 'changelog/new'");
+  await userA.goto('/changelog/new');
+  await userA.fill('#cl-day', '2026-09-30');                   // the day alone: no content
+  await userA.waitForTimeout(2500);
+  expect(draft()).toBe('0');
+  await typeItems(userA, 'Neu: etwas');
+  await expect.poll(draft).toBe('1');
+  await typeItems(userA, '');
+  await userA.keyboard.press('Backspace');
+  await expect.poll(draft).toBe('0');
+  await userA.goto('/changelog');
+  await expect(userA.locator('.unsaved-drafts')).toHaveCount(0);
+});

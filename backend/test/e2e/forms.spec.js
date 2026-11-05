@@ -234,3 +234,22 @@ test('kind fields show their common values as chips; a click fills the field in'
   await userA.goto('/institutions/new');
   await expect(userA.locator('.field', { has: userA.locator('#f-kind') }).locator('.fill-chips')).toContainText('museum');
 });
+
+// Nothing written, no draft (owner 2026-11-05): a new entry where only a choice was made — the kind, a recent source —
+// is not kept as an "unsaved draft"; a draft saved once goes again when its text is removed (editor/blank.js).
+test('a new entry with nothing written in it is not kept as a draft', async ({ userA }) => {
+  const drafts = () => sql("SELECT count(*) FROM admin_drafts WHERE entity_type = 'source' AND entity_id IS NULL AND user_id = (SELECT id FROM admin_users WHERE username = 'tester')");
+  sql("DELETE FROM admin_drafts WHERE entity_type = 'source' AND entity_id IS NULL");
+  await userA.goto('/bibliography/new');
+  await liveReady(userA);
+  await userA.selectOption('#f-kind', 'web');                 // a choice only
+  await userA.waitForTimeout(2500);                            // past the 1.5 s autosave
+  expect(drafts()).toBe('0');
+  await userA.locator('#f-name').pressSequentially('A page', { delay: 20 });
+  await expect.poll(drafts).toBe('1');                         // written: a draft
+  await userA.locator('#f-name').fill('');
+  await userA.locator('#f-slug').fill('');
+  await expect.poll(drafts).toBe('0');                         // emptied again: gone, the kind still chosen
+  await userA.goto('/bibliography/new');
+  await expect(userA.locator('.flash.draft')).toHaveCount(0);
+});

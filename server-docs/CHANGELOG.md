@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-05
 
+### A new entry with nothing written in it is no draft
+- **What** (owner 2026-11-05: "entries with no content at all should not be saved as draft"): `src/admin/editor/blank.js`
+  `hasContent(form)` — a text field, text area or picker value that isn't empty; choices (selects, the recent-source
+  chips, tick boxes), date fields the form fills in itself and the slug don't count. New entry forms (`editor/live.js`)
+  send "discard" instead of a draft while nothing is written (also offline: nothing kept in the browser); new changelog
+  and roadmap forms (`editor/formdrafts.js`) send `{discard: true}` (`POST /drafts/:kind/new` removes the draft) and no
+  "leave the page?" question. Seen in production: a new institution's draft holding only a ticked recent source, a new
+  source's only the kind "web". Tests in `forms.spec.js`, `changelog.spec.js`.
+- **Why**: such drafts showed up as "unsaved draft" banners for forms that were only opened.
+- **Revert**: `git revert` the commit (no migration).
+
 ### Higher set limits; blocked members hidden in set chats
 - **What:** owner 2026-11-05. A set: 200 members with editing rights (was 50), 5000 viewers (was 500) — `MAX_EDITORS`,
   `MAX_VIEWERS` in `routes/site-sets.js`; beyond that the members list would want paging. A set's chat: someone the

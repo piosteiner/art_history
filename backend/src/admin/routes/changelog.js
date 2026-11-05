@@ -39,6 +39,8 @@ const draftStatus = html`<span class="muted small" data-form-draft-status aria-l
 router.post('/drafts/:kind/:id', express.json({ limit: '1mb' }), async (req, res) => {
   if (!['changelog', 'roadmap'].includes(req.params.kind)) return notFoundPage(req, res);
   const key = `${req.params.kind}/${req.params.id}`;
+  // a new form emptied again (editor/blank.js): no draft
+  if (req.body && req.body.discard === true && req.params.id === 'new') { await dropDraft(adminPool, req.user, key); return res.status(204).end(); }
   const { fields, base } = req.body || {};
   if (!(req.params.id === 'new' || idOk(req.params.id)) || !fields || typeof fields !== 'object' || Array.isArray(fields) || typeof base !== 'string'
       || Object.values(fields).some((v) => typeof v !== 'string')) return res.status(422).json({ error: 'bad draft' });

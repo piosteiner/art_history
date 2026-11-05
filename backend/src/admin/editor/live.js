@@ -5,6 +5,8 @@
 // (Markdown editor, map picker, pickers), which fire no input events — and changes are sent as a draft.
 // Offline, the latest state is kept in localStorage and sent when the connection is back.
 
+import { hasContent } from './blank.js';
+
 const RETRY = [500, 1000, 2000, 4000, 8000, 15000];
 
 function el(tag, className, text) {
@@ -54,13 +56,16 @@ export function initLive() {
 
   function sendDraft(snap) {
     lastSent = snap;
+    // a new entry with nothing written in it is no draft (blank.js) — one saved a moment ago goes again
+    const empty = snap === initial || (page.mode === 'new' && !hasContent(form));
     if (!isOpen()) {  // keep it until we are back
+      if (empty) { safeStore((s) => s.removeItem(storeKey)); return; }
       safeStore((s) => s.setItem(storeKey, JSON.stringify({ snap, at: Date.now() })));
       setStatus('Offline — your changes are kept in this browser and saved when the connection is back', 'warn');
       return;
     }
     seq += 1;
-    send(snap === initial ? { t: 'discard', seq } : { t: 'draft', form: JSON.parse(snap), seq });
+    send(empty ? { t: 'discard', seq } : { t: 'draft', form: JSON.parse(snap), seq });
   }
 
   function enableDrafts(f) {
