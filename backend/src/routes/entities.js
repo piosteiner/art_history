@@ -594,7 +594,13 @@ const EXTRAS = {
       ORDER BY lower(t.period) NULLS FIRST`, [id])).rows,
     ancestors: (await apiPool.query(ancestorsSql('places'), [id])).rows,
     // a road's or river's places in their order along it (the Tōkaidō's stations from Edo to Kyoto), else A–Z
-    children: (await apiPool.query(`SELECT c.slug, c.name, c.kind FROM places c LEFT JOIN places r ON r.id = c.parent_id AND r.route IS NOT NULL
+    // on a road or river (a parent with a route): `number` = the place's position along it (the Tōkaidō's stations
+    // 1–53 from Edo) and its `location` for the map; elsewhere neither
+    children: (await apiPool.query(`SELECT c.slug, c.name, c.kind,
+        CASE WHEN r.id IS NOT NULL AND c.location IS NOT NULL THEN row_number() OVER (PARTITION BY c.location IS NOT NULL
+          ORDER BY ST_LineLocatePoint(r.route::geometry, c.location::geometry)) END::int AS number,
+        CASE WHEN r.id IS NOT NULL THEN ST_AsGeoJSON(c.location)::jsonb END AS location
+      FROM places c LEFT JOIN places r ON r.id = c.parent_id AND r.route IS NOT NULL
       WHERE c.parent_id = $1 ORDER BY ST_LineLocatePoint(r.route::geometry, c.location::geometry) NULLS LAST, ${natural('c.name')}`, [id])).rows,
     institutions: (await apiPool.query(`SELECT slug, name, kind FROM institutions t WHERE place_id = $1 ORDER BY ${sortKey('institution', 't')}`, [id])).rows,
   }),

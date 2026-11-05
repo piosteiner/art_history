@@ -148,14 +148,18 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
       const mapEl = main.querySelector<HTMLElement>('#map')!;
       const legend = main.querySelector<HTMLElement>('#legend')!;
       // MapLibre loads only for pages with a map (terms and sources have none)
-      mapModule!.then(({ createMap, gapList, showEntity, showOwnSite, showParts, showPoint, showProvenance, unplacedSteps, placedProvenance, probable }) => {
+      mapModule!.then(({ createMap, gapList, showAlong, showEntity, showOwnSite, showParts, showPoint, showProvenance, unplacedSteps, placedProvenance, probable }) => {
         if (!current()) return;
         const map = createMap(mapEl);
         cleanup = () => map.remove();
         if (e.type === 'place') {
           // a road or river (API 212): its line, the map fitted to it — no point marker; else its point
-          if (e.route) showOwnSite(map, e.route, e.name, true, COLORS.route);
-          else showPoint(map, e.location!.coordinates, e.name);
+          if (e.route) {
+            showOwnSite(map, e.route, e.name, true, COLORS.route);
+            // its places along it, numbered as in the list (the Tōkaidō's stations)
+            const along = e.children.filter((c) => c.number && c.location);
+            if (along.length) showAlong(map, along.map((c) => ({ number: c.number!, slug: c.slug, name: c.name, at: c.location!.coordinates as [number, number] })));
+          } else showPoint(map, e.location!.coordinates, e.name);
           return;
         }
         if (e.type === 'event') {

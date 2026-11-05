@@ -281,7 +281,9 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ['Part of', refs('place', [...e.ancestors].reverse())],
           // the division its point lies in (Natural Earth), when it isn't among the places it is part of already
           ['Region', e.within && !e.ancestors.some((a) => a.name === e.within!.name) ? e.within.name : null],
-          ['Includes', refs('place', e.children)],
+          // along a road or river: numbered in order (the Tōkaidō's stations 1–53), as on its map
+          ['Includes', e.children.some((c) => c.number) ? html`<ol class="along-list">${e.children.map((c) => html`<li value="${String(c.number ?? '')}">${link('place', c.slug, c.name)}</li>`)}</ol>`
+            : refs('place', e.children)],
           ['Institutions', refs('institution', e.institutions)],
           ['Coordinates', e.location ? `${e.location.coordinates[1].toFixed(4)}, ${e.location.coordinates[0].toFixed(4)}` : null],
           ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],

@@ -3490,3 +3490,27 @@ test('quiz: press and hold a picture to see it large; the click after the hold p
   await img.click();
   await expect(page.locator('.quiz-peek')).toHaveCount(0);
 });
+
+// a road with its places (owner 2026-11-05: the Tōkaidō's stations numbered, and on its map): a numbered list in
+// "Includes" and a numbered marker per place on the line
+test('a road: its places numbered in the list and on the map', async ({ page }) => {
+  await page.route(/\/v1\/places\/paris$/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    Object.assign(body, {
+      route: { type: 'LineString', coordinates: [[139.77, 35.68], [138.5, 35.0], [135.77, 35.0]] },
+      children: [
+        { slug: 'shinagawa-juku', name: 'Shinagawa-juku', kind: 'settlement', number: 1, location: { type: 'Point', coordinates: [139.74, 35.62] } },
+        { slug: 'okitsu-juku', name: 'Okitsu-juku', kind: 'settlement', number: 2, location: { type: 'Point', coordinates: [138.52, 35.05] } },
+        { slug: 'otsu-juku', name: 'Ōtsu-juku', kind: 'settlement', number: 3, location: { type: 'Point', coordinates: [135.86, 35.0] } },
+      ],
+    });
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto('/places/paris');
+  await expect(page.locator('.along-list li')).toHaveText(['Shinagawa-juku', 'Okitsu-juku', 'Ōtsu-juku']);
+  await expect(page.locator('.along-list li').nth(1)).toHaveAttribute('value', '2');
+  await expect(page.locator('.along-stop')).toHaveText(['1', '2', '3']);
+  await page.locator('.along-stop', { hasText: /^2$/ }).click();
+  await expect(page.locator('.maplibregl-popup')).toContainText('Okitsu-juku');
+});

@@ -114,6 +114,23 @@ export function showProvenance(map: MapLibre, fc: EntityMap, inferences?: Map<nu
   return view;
 }
 
+/** Places along a road or river (the Tōkaidō's stations): numbered markers on its line, a click names and links them. */
+export function showAlong(map: MapLibre, places: { number: number; slug: string; name: string; at: [number, number] }[]) {
+  whenReady(map, () => {
+    for (const p of places) {
+      const el = document.createElement('div');
+      el.className = 'prov-stop along-stop';
+      el.style.setProperty('--pc', COLORS.route);
+      el.textContent = String(p.number);
+      el.setAttribute('role', 'button');
+      el.setAttribute('aria-label', `${String(p.number)}: ${p.name}`);
+      el.title = `${String(p.number)} · ${p.name}`;
+      const popup = new Popup({ offset: 13 }).setHTML(html`<div class="popup-row"><span class="muted">${String(p.number)}</span> <strong>${link('place', p.slug, p.name)}</strong></div>`.value);
+      new Marker({ element: el }).setLngLat(p.at).setPopup(popup).addTo(map);
+    }
+  });
+}
+
 const partMarkers = new WeakMap<MapLibre, Marker[]>();
 /**
  * A whole's parts where they are (a series' views on its own map): numbered HTML markers at the places the parts

@@ -117,6 +117,8 @@ test('a road\'s places come in their order along its route', async ({ request })
          ('test-road-b', 'Bb first', 'settlement', 'SRID=4326;POINT(139.6 35.55)', entity_id('place', 'test-road-r')),
          ('test-road-c', 'Cc middle', 'settlement', 'SRID=4326;POINT(138.0 35.0)', entity_id('place', 'test-road-r'))`);
   try {
-    expect((await api(request, '/places/test-road-r')).children.map((c) => c.slug)).toEqual(['test-road-b', 'test-road-c', 'test-road-a']);
+    const kids = (await api(request, '/places/test-road-r')).children;
+    expect(kids.map((c) => [c.slug, c.number])).toEqual([['test-road-b', 1], ['test-road-c', 2], ['test-road-a', 3]]);   // numbered along the road
+    expect(kids[0].location).toEqual({ type: 'Point', coordinates: [139.6, 35.55] });
   } finally { sql("DELETE FROM places WHERE slug LIKE 'test-road-%'"); }
 });

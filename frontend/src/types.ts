@@ -522,7 +522,8 @@ export interface Place extends DetailBase, Named {
   within?: { code: string; name: string } | null;
   location: PointGeometry | null; area: unknown | null;
   description_html: string | null;
-  ancestors: KindRef[]; children: KindRef[]; institutions: KindRef[];
+  /** children: on a road or river (a parent with a route) numbered along it, with their point (API 2026-11-05) */
+  ancestors: KindRef[]; children: (KindRef & { number?: number | null; location?: PointGeometry | null })[]; institutions: KindRef[];
 }
 
 export interface Movement extends DetailBase, Named {

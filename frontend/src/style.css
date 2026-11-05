@@ -1469,3 +1469,8 @@ button.danger { border-color: var(--accent); color: var(--accent); }
 .sets-chat .chat-list { max-height: 24rem; }
 .sets-chat-members ul { list-style: none; padding: 0; margin: .3rem 0; display: grid; gap: .2rem; }
 .chat-by { margin-right: .2rem; }
+
+/* places along a road (the Tōkaidō's stations): numbered list and smaller numbered markers on its line */
+.along-list { margin: 0; padding-left: 2.2em; columns: 2 14em; column-gap: 2em; }
+.along-list li { break-inside: avoid; }
+.prov-stop.along-stop { min-width: 20px; height: 20px; border-radius: 10px; font-size: 10.5px; }

@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-05
 
+### A road's places numbered, and on its map
+- **What:** owner 2026-11-05 (the Tōkaidō's stations "not really visible on the map"): the API's place `children` of a
+  parent with a `route` carry `number` (their position along it: `row_number()` over `ST_LineLocatePoint`) and
+  `location`. Site: "Includes" becomes a numbered list (two columns), the place's map draws a numbered marker per
+  place on the line (`showAlong()` in map.ts, the provenance-stop style, smaller; a click names and links it).
+  Tests: places.spec.js, site "a road: its places numbered …".
+- **Revert:** `git revert`.
+
 ### A set's members; hiding someone in a set's chat (226)
 - **What:** owner 2026-11-05 (against harassment; unlike a report nothing leaves the account): `set_chat_hidden` (set,
   hider, hidden). The hider's view gets the hidden member's messages as "hidden message" lines (`hidden: true`, a click
