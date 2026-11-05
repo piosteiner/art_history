@@ -28,7 +28,8 @@ if (import.meta.env.VITE_TEST_ENV === '1') {
   document.body.insertAdjacentHTML('afterbegin', '<div class="test-env" role="note"><b>Test environment</b> — changes made here are reset every night. The real site is <a href="https://arthistory.piogino.ch">arthistory.piogino.ch</a>.</div>');
 }
 const nav = document.getElementById('nav')!;
-render(nav, html`<span class="nav-group"><a href="/">Explore</a><a href="/graph">Network</a><a href="/periods">Periods</a><a href="/quiz">Quiz</a></span>
+// "Sets": the shared study sets for visitors, the account's own once it is known to be logged in (account.ts)
+render(nav, html`<span class="nav-group"><a href="/">Explore</a><a href="/graph">Network</a><a href="/periods">Periods</a><a href="/quiz">Quiz</a><a href="/sets/shared" data-section="sets" class="nav-sets">Sets</a></span>
   ${NAV.map((g) => html`<span class="nav-group" title="${g.title}">${g.plurals.map((p) => html`<a href="/${p}">${PLURAL_LABEL[p]}</a>`)}</span>`)}`);
 mountSearch(document.getElementById('search')!);
 watchLinks(main); // previews on the internal links of every page
@@ -39,8 +40,9 @@ mountThemeToggle(document.getElementById('theme')!);
 // feedback: the "F" at the bottom right, and a page opened from the CMS with the elements outlined (#fb=…)
 mountFeedback();
 mountHoverImages();
-// the owner's login (footer): their private reference images on artwork pages — before the router reads the address
-mountAccount(document.querySelector<HTMLElement>('.site-footer')!);
+// the account menu at the header's end (Log in · Sign up, or the account's pages and Log out) — before the router reads
+// the address (?login=1)
+mountAccount(document.getElementById('account')!, nav.querySelector<HTMLAnchorElement>('.nav-sets'));
 
 let cleanup: Cleanup;
 
@@ -109,8 +111,8 @@ function onRoute(route: Route) {
   if (typeof cleanup === 'function') cleanup();
   cleanup = undefined;
   document.title = 'Art History';
-  const section = route.name === 'list' || route.name === 'detail' ? route.plural : route.name === 'explore' ? '' : route.name === 'graph' ? 'graph' : route.name === 'periods' ? 'periods' : route.name === 'quiz' ? 'quiz' : null;
-  nav.querySelectorAll('a').forEach((a) => a.classList.toggle('current', a.getAttribute('href') === `/${section ?? '-'}`));
+  const section = route.name === 'list' || route.name === 'detail' ? route.plural : route.name === 'explore' ? '' : route.name === 'graph' ? 'graph' : route.name === 'periods' ? 'periods' : route.name === 'quiz' ? 'quiz' : route.name === 'sets' ? 'sets' : null;
+  nav.querySelectorAll('a').forEach((a) => a.classList.toggle('current', (a.dataset.section ? `/${a.dataset.section}` : a.getAttribute('href')) === `/${section ?? '-'}`));
 
   if (!firstRoute) queueMicrotask(focusHeading); // after the view's first render
   firstRoute = false;

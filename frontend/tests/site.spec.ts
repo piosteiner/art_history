@@ -3123,6 +3123,9 @@ test('feedback (API 141): the F widens to "Feedback"; a message with a picked el
   await expect(page.locator('.card').first()).toBeVisible();
   const fab = page.locator('.fb-fab');
   await expect(fab.locator('.fb-rest')).toHaveCSS('max-width', '0px');
+  // the F in the middle of the round bubble (owner 2026-11-05)
+  const [b, f] = [await fab.boundingBox(), await fab.locator('.fb-f').boundingBox()];
+  expect(Math.abs((f!.x + f!.width / 2) - (b!.x + b!.width / 2))).toBeLessThan(1.5);
   await fab.hover();
   await expect.poll(async () => (await fab.boundingBox())!.width).toBeGreaterThan(80);   // "Feedback"
   await fab.click();

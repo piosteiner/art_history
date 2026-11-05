@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-05
 
+### Site: the account menu in the header; Sets in the main nav; the feedback F centred
+- **What** (owner 2026-11-05): the footer's account line (Logged in as … · study sets · friends · Log out) is gone —
+  at the header's end, after the theme switch: logged out "Log in" and "Sign up" (always shown); logged in a button with
+  the public name, else the username's initial in a circle, a dot for unread chat messages, opening a menu: Study sets,
+  Your results, Your views, Friends (count), Your account, CMS ↗ (CMS accounts), Log out — keyboard (↓, ↑, Esc),
+  closes on a click elsewhere; on phones full width under the header (`frontend/src/account.ts` `mountAccount`,
+  `index.html` `.header-end`). "Sets" in the main nav after Quiz: the shared sets for visitors, the account's own when
+  logged in. The feedback bubble's F centred (`justify-content: center`). Tests in `tests/sets.spec.ts`, `site.spec.ts`.
+- **Why**: the account features are prominent now; the footer is for the site's own pages.
+- **Revert**: `git revert` the commit.
+
 ### A new entry with nothing written in it is no draft
 - **What** (owner 2026-11-05: "entries with no content at all should not be saved as draft"): `src/admin/editor/blank.js`
   `hasContent(form)` — a text field, text area or picker value that isn't empty; choices (selects, the recent-source

@@ -159,7 +159,7 @@ test('study sets: "+ Set" on an entry creates a set and fills it; the list and t
 
   // an entry's page: "+ Set" → a new set with this entry in it
   await page.goto('/artworks/the-great-wave-off-kanagawa');
-  await expect(page.locator('.account')).toContainText('Logged in as tester');
+  await expect(page.locator('.account-button .account-initial')).toHaveText('T');   // no public name: the initial
   await page.locator('.set-menu summary').click();
   await expect(page.locator('.set-menu-list')).toContainText('No sets yet');
   await page.fill('.set-menu-new input', 'Exam: Japan');
@@ -442,7 +442,7 @@ test('the account page: public name, password, other sessions; visitors get Log 
   await expect(page.locator('main')).toContainText('1 other session ended');
   await expect(page.locator('[data-form=delete] button')).toHaveText('Delete my account');
   expect(account.posts).toEqual(['/account/public-name:public_name', '/account/password:current,password,password2', '/account/password:current,password,password2', '/account/sessions:']);
-  await expect(page.locator('.account a[href="/account"]')).toHaveText('tester');
+  await expect(page.locator('.account-button .account-name')).toHaveText('Ms Student');   // the header follows the new name
   expect(errors).toEqual([]);
 });
 
@@ -683,4 +683,41 @@ test('your results: rounds by set, each with the set as it was; a deleted set\'s
   await expect(page).toHaveURL(/\/sets\/1\?missing=1$/);
   expect(posts).toContain('/snapshots/7/copy:');
   await expect(page.locator('.sets-msg')).toContainText('1 entry of that version is no longer on the site');
+});
+
+test('the account menu in the header: logged out Log in and Sign up; logged in the pages, unread messages, Log out', async ({ page, browser }) => {
+  const errors: string[] = [];
+  page.on('pageerror', (e) => errors.push(e.message));
+  await loggedIn(page);
+  await page.goto('/artworks');
+  const button = page.locator('.site-header .account-button');
+  await expect(button.locator('.account-initial')).toHaveText('T');
+  await expect(page.locator('.site-footer .account')).toHaveCount(0);                    // no longer in the footer
+  await expect(page.locator('.nav a', { hasText: 'Sets' })).toHaveAttribute('href', '/sets');
+  await expect(page.locator('.account-items')).toBeHidden();
+  await button.click();
+  await expect(button).toHaveAttribute('aria-expanded', 'true');
+  await expect(page.locator('.account-items [role=menuitem]')).toHaveText(['Study sets', 'Your results', 'Your views', /^Friends/, 'Your account', 'Log out']);
+  await page.keyboard.press('Escape');                                                    // closed (focus in the menu first)
+  await button.press('ArrowDown');
+  await expect(page.locator('.account-items a').first()).toBeFocused();
+  await page.keyboard.press('Escape');
+  await expect(page.locator('.account-items')).toBeHidden();
+  await button.click();
+  await page.locator('.account-items a', { hasText: 'Your account' }).click();
+  await expect(page).toHaveURL(/\/account$/);
+  await expect(page.locator('.account-items')).toBeHidden();
+  await expect(page.locator('.nav a.current')).toHaveCount(0);
+  await page.goto('/sets');
+  await expect(page.locator('.nav a.current')).toHaveText('Sets');
+
+  // visitors: Log in and Sign up, both back to the page they were on; Sets leads to the shared sets
+  const visitor = await browser.newPage();
+  await loggedIn(visitor, { login: false });
+  await visitor.goto('/quiz');
+  await expect(visitor.locator('.account-login')).toHaveAttribute('href', /^http:\/\/admin\.test\/login\?next=.*%2Fquiz%3Flogin%3D1/);
+  await expect(visitor.locator('.account-signup')).toHaveAttribute('href', /^http:\/\/admin\.test\/signup\?next=/);
+  await expect(visitor.locator('.nav a', { hasText: 'Sets' })).toHaveAttribute('href', '/sets/shared');
+  await visitor.close();
+  expect(errors).toEqual([]);
 });

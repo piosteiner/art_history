@@ -79,7 +79,7 @@ function draw(main: HTMLElement, a: AccountInfo) {
     const msg = msgOf(f);
     msg.textContent = '…';
     if (f.dataset.form === 'name') {
-      setPublicName(val('public_name')).then((r) => { msg.textContent = r?.public_name ? 'Saved.' : 'Removed.'; }).catch(fail(f));
+      setPublicName(val('public_name')).then((r) => { msg.textContent = r?.public_name ? 'Saved.' : 'Removed.'; window.dispatchEvent(new CustomEvent('account-changed', { detail: { public_name: r?.public_name ?? null } })); }).catch(fail(f));
     } else if (f.dataset.form === 'password') {
       changePassword(val('current'), val('password'), val('password2')).then(() => { f.reset(); msg.textContent = 'Changed — you are logged out everywhere else.'; }).catch(fail(f));
     } else if (f.dataset.form === 'delete') {
