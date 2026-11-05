@@ -36,6 +36,7 @@ const until = (d) => when(new Date(new Date(d).getTime() + KEEP_DAYS * 86400000)
 const OK = {
   created: 'Account created.', saved: 'Saved.', disabled: 'Switched off — its sessions have ended.', enabled: 'Switched on again.',
   sessions: 'Its sessions have ended.', deleted: `Account deleted — it can be restored for ${'30'} days.`, settings: 'Sign-up settings saved.',
+  deleted_test: 'Test-environment account deleted — here and in the test environment.',
   restored: 'Account restored — switched on again, its sets back where they were.', rolled_back: 'The set is back as it was then (the step is in its history).',
 };
 
@@ -73,7 +74,7 @@ router.get('/accounts', async (req, res) => {
   ]);
   const n = Object.fromEntries(counts.map((c) => [c.role, c.n]));
   const total = counts.reduce((a, c) => a + c.n, 0);
-  send(req, res, { title: 'Accounts', flash: flashOf(req), body: html`<h1>Accounts <span class="muted">${String(total)}</span></h1>
+  send(req, res, { title: 'Accounts', flash: req.query.error ? { kind: 'error', text: String(req.query.error).slice(0, 200) } : flashOf(req), body: html`<h1>Accounts <span class="muted">${String(total)}</span></h1>
     <p class="muted">Who may log in, and to what: <b>Site only</b> accounts have study sets and their quiz results on the site —
       never the CMS. <b>CMS editors</b> also edit everything in the CMS; <b>admins</b> also manage the accounts here.</p>
     <section class="accounts-box"><h2>Sign-up on the site</h2>
@@ -195,7 +196,8 @@ router.get('/accounts/:id', async (req, res) => {
     : html`<form method="post" action="/accounts/${String(u.id)}/disable" class="inline" data-confirm="Switch off ${u.username}? It can't log in until switched on again; its sets stay (shared ones too)."><button class="secondary">Switch off</button></form>`}
     </div>
     ${self || u.deleted_at ? '' : html`<details class="accounts-box danger"><summary>Delete the account</summary>
-      <p class="small">Switched off at once and its sets hidden; kept ${String(KEEP_DAYS)} days in case it should come back (Restore), then gone for good: its study sets (shared ones too), what it knows, its results and private images. Its changes to the content stay in the history, without its name.</p>
+      <p class="small">${u.test_env ? 'A test-environment account: deleted at once, here and in the test environment — not kept.'
+        : `Switched off at once and its sets hidden; kept ${String(KEEP_DAYS)} days in case it should come back (Restore), then gone for good: its study sets (shared ones too), what it knows, its results and private images. Its changes to the content stay in the history, without its name.`}</p>
       <form method="post" action="/accounts/${String(u.id)}/delete" class="inline"><label>Type <b>${u.username}</b> to confirm <input name="confirm" autocomplete="off" required></label>
         <button class="danger">Delete</button></form></details>`}
     <h2>Log</h2>
@@ -285,14 +287,23 @@ router.post('/accounts/:id/delete', async (req, res) => {
   try {
     await withTx(req.user, async (db) => {
       await accounts.log(db, { account: u.id, username: u.username, actor: req.user.id, action: 'deleted', detail: { role: u.role } });
-      // kept 30 days, switched off (221); purge_deleted_accounts() removes it afterwards
-      await db.query('UPDATE admin_users SET disabled_at = coalesce(disabled_at, now()), deleted_at = now(), deleted_by = $2 WHERE id = $1', [u.id, req.user.id]);
-      await db.query('DELETE FROM admin_sessions WHERE user_id = $1', [u.id]);
+      if (u.test_env) {
+        // a test-environment account isn't kept (owner 2026-11-05): gone at once, here and in the test database
+        await db.query('DELETE FROM admin_users WHERE id = $1', [u.id]);
+      } else {
+        // kept 30 days, switched off (221); purge_deleted_accounts() removes it afterwards
+        await db.query('UPDATE admin_users SET disabled_at = coalesce(disabled_at, now()), deleted_at = now(), deleted_by = $2 WHERE id = $1', [u.id, req.user.id]);
+        await db.query('DELETE FROM admin_sessions WHERE user_id = $1', [u.id]);
+      }
     });
   } catch (err) {
     const why = accounts.problem(err);
     if (why) return refuse(res, u, why);
     throw err;
+  }
+  if (u.test_env) {
+    const problem = await testAccounts.sync(u.id, u.username);
+    return res.redirect(303, `/accounts?ok=deleted_test${problem ? `&error=${encodeURIComponent(problem)}` : ''}`);
   }
   await back(res, u, 'deleted');
 });

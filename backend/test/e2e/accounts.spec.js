@@ -203,5 +203,14 @@ test('an account for the test environment: created here, refused by the live log
   await expect(userA.locator('.accounts-search button')).toHaveText('Search');
   // a test admin keeps no one able to log in here: the last live admin still can't be switched off
   expect(() => sql("UPDATE admin_users SET role = 'admin' WHERE username = 'test-acc-tester-env'; UPDATE admin_users SET disabled_at = now() WHERE NOT test_env AND role = 'admin'")).toThrow(/active admin/);
+  // deleted: gone at once, not kept 30 days (owner 2026-11-05)
+  const id = sql("SELECT id FROM admin_users WHERE username = 'test-acc-tester-env'");
+  sql("UPDATE admin_users SET role = 'editor' WHERE username = 'test-acc-tester-env'");
+  await userA.goto(`/accounts/${id}`);
+  await expect(userA.locator('details.danger')).toContainText('not kept');
+  await userA.locator('summary', { hasText: 'Delete the account' }).click();
+  await userA.fill('input[name="confirm"]', 'test-acc-tester-env');
+  await Promise.all([userA.waitForURL(/ok=deleted_test/), userA.click('button.danger')]);
+  expect(sql("SELECT count(*) FROM admin_users WHERE username = 'test-acc-tester-env'")).toBe('0');
   await live.http.dispose();
 });

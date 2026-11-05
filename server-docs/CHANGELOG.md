@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-05
 
+### Test-environment accounts are deleted at once
+- **What:** owner 2026-11-05 ("test-environment accounts don't need to be kept"): deleting an account with `test_env`
+  removes the row at once (no 30-day keep, no Restore) and from the test database (`testAccounts.sync`); the delete box
+  says so; the list page shows a sync problem as an error. Test in accounts.spec.js.
+- **Revert:** `git revert`.
+
 ### Accounts kept 30 days after deletion, test-environment accounts; a study set's history, restore, lock, proposed removals (221, 222)
 - **What** (owner 2026-11-05):
   - Migration 221: `admin_users.deleted_at`/`deleted_by` — deleting an account (an admin's, or a member's own on the
