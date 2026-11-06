@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Content: two works of the Keio Art Collection (script)
+- **What:** owner 2026-11-06. `taikan-mount-fuji-keio` (Keio Object Hub 5982, KAC-2020-0090, colour on paper,
+  59.5 × 94.2 cm, undated; kept by `keio-yochisha-elementary-school`, new from Q11495151 by `from-wikidata.js`) and
+  `hanasaki-himawari` (6332, KAC-2020-0459, 1958; kept on the Mita Campus → `keio-university`); new artist
+  `hanasaki-toshiyoshi` without dates — Keio gives none; the businessman of that name (1899–1994, ja.wikipedia,
+  Q128841727) is mentioned in the text but not linked: identity not attested. Owner's observation that the Sunflowers
+  recall van Gogh's: no source found, so `influenced_by` → `sunflowers-arles` *possible*, labelled "own observation".
+  Images: Keio's JSON marks each image "In Copyright" (the page's CC BY covers the data); Taikan † 1958 is protected
+  until the end of 2028 — the six photographs are the owner's private reference images only, not `images`.
+- **Revert:** delete the two artworks (their provenance, citations and private images go with them), the artist, and the
+  Yochisha institution by slug.
+
 ### Content: the Hyakunin Isshu's 100 poems, the 1865/1867 missions, works linked to texts, Berthier (scripts)
 - **What:** owner 2026-11-06 ("2. yes", "3. yes", "6. yes"; Berthier asked for). (1) `ogura-hyakunin-isshu` gets 100
   parts `hyakunin-isshu-1…100` (kind waka, named by their first line, Japanese first line as original name) with

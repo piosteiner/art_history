@@ -1,0 +1,45 @@
+public_id: 116437
+name: Keio Yochisha Elementary School
+names:
+  - lang: ja
+    role: translation
+    text: 慶應義塾幼稚舎
+  - lang: zh
+    role: translation
+    text: 慶應義塾幼稚舍
+  - lang: ru
+    role: translation
+    text: начальная школа Кэйо Ётися
+founded: 1874
+place: tokyo
+location: [139.72317, 35.64675]
+address: 〒150-0013東京都渋谷区恵比寿二丁目35番1号
+website_url: https://www.yochisha.keio.ac.jp/
+wikidata_id: Q11495151
+metadata:
+  sources: [Wikidata Q11495151 (retrieved 2026-11-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Keio_Yochisha_Elementary_School_Tokyo.jpg/1280px-Keio_Yochisha_Elementary_School_Tokyo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Keio_Yochisha_Elementary_School_Tokyo.jpg
+    license: CC BY-SA 3.0
+    credit: Harani0403
+identifiers:
+  lc: no2016166407
+  viaf: "259067949"
+sources:
+  place:
+    - accessed: 2026-11-06
+      property: P131
+      wikidata: Q11495151
+  address:
+    - accessed: 2026-11-06
+      property: P6375
+      wikidata: Q11495151
+  founded:
+    - accessed: 2026-11-06
+      property: P571
+      wikidata: Q11495151
+  location:
+    - accessed: 2026-11-06
+      property: P625
+      wikidata: Q11495151

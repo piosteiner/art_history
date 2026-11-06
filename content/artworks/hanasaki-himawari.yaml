@@ -1,0 +1,53 @@
+public_id: 116446
+title_lang: ja
+title: ひまわり
+names:
+  - lang: en
+    role: translation
+    text: Sunflowers
+    status: own
+creator: hanasaki-toshiyoshi
+created: 1958
+kind: painting
+institution: keio-art-collection
+inventory_number: KAC-2020-0459
+web_url: https://objecthub.keio.ac.jp/en/object/6332
+description_md: |-
+  Sunflowers past their bloom — heavy, drooping heads with curling petals — in a red and black vase before a blue-green ground, signed and dated at the lower left. By [[artist/hanasaki-toshiyoshi]], 1958; it belongs to the [[institution/keio-art-collection|Keio Art Collection]] (KAC-2020-0459) and is kept on the Mita Campus of [[institution/keio-university|Keio University]].[[source/objecthub-keio-ac-jp|object 6332 (ひまわり)]]
+
+  The wilting sunflowers in a vase recall [[artwork/sunflowers-arles|Vincent van Gogh’s Sunflowers]] — an own observation: no source that connects the painting with van Gogh’s series has been found.
+relationships:
+  - type: influenced_by
+    to: artwork/sunflowers-arles
+    label: own observation — no source found
+    certainty: possible
+provenance:
+  - owner: institution/keio-art-collection
+    sources:
+      - source: objecthub-keio-ac-jp
+        locator: object 6332 (ひまわり)
+        accessed: 2026-11-06
+  - owner: institution/keio-university
+    role: custodian
+    label: Mita Campus, in its charge (所管)
+    sources:
+      - source: objecthub-keio-ac-jp
+        locator: object 6332 (ひまわり)
+        accessed: 2026-11-06
+sources:
+  created:
+    - source: objecthub-keio-ac-jp
+      locator: object 6332 (ひまわり)
+      accessed: 2026-11-06
+  creator:
+    - source: objecthub-keio-ac-jp
+      locator: object 6332 (ひまわり)
+      accessed: 2026-11-06
+  institution:
+    - source: objecthub-keio-ac-jp
+      locator: object 6332 (ひまわり)
+      accessed: 2026-11-06
+  inventory_number:
+    - source: objecthub-keio-ac-jp
+      locator: object 6332 (ひまわり)
+      accessed: 2026-11-06

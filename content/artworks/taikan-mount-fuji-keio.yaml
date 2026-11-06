@@ -1,0 +1,51 @@
+public_id: 116445
+title_lang: ja
+title: "{富士山|ふじさん}"
+names:
+  - lang: en
+    role: translation
+    text: Mount Fuji
+    status: official
+creator: yokoyama-taikan
+kind: painting
+medium: Colour on paper
+materials: [paper]
+dimensions: [59.5, 94.2]
+institution: keio-art-collection
+inventory_number: KAC-2020-0090
+web_url: https://objecthub.keio.ac.jp/en/object/5982
+description_md: "[[artist/yokoyama-taikan]]’s Mount Fuji: the snow-covered summit above a sea of clouds, in colour on paper, signed “大観” with a seal at the lower right. Keio gives no date. It belongs to the [[institution/keio-art-collection|Keio Art Collection]] (KAC-2020-0090) and is in the charge of [[institution/keio-yochisha-elementary-school|Keio Yochisha Elementary School]].[[source/objecthub-keio-ac-jp|object 5982 (富士山)]]"
+provenance:
+  - owner: institution/keio-art-collection
+    sources:
+      - source: objecthub-keio-ac-jp
+        locator: object 5982 (富士山)
+        accessed: 2026-11-06
+  - owner: institution/keio-yochisha-elementary-school
+    role: custodian
+    label: in its charge (所管)
+    sources:
+      - source: objecthub-keio-ac-jp
+        locator: object 5982 (富士山)
+        accessed: 2026-11-06
+sources:
+  medium:
+    - source: objecthub-keio-ac-jp
+      locator: object 5982 (富士山)
+      accessed: 2026-11-06
+  creator:
+    - source: objecthub-keio-ac-jp
+      locator: object 5982 (富士山)
+      accessed: 2026-11-06
+  dimensions:
+    - source: objecthub-keio-ac-jp
+      locator: object 5982 (富士山)
+      accessed: 2026-11-06
+  institution:
+    - source: objecthub-keio-ac-jp
+      locator: object 5982 (富士山)
+      accessed: 2026-11-06
+  inventory_number:
+    - source: objecthub-keio-ac-jp
+      locator: object 5982 (富士山)
+      accessed: 2026-11-06
