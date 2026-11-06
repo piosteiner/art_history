@@ -37,6 +37,9 @@ relationships:
   - type: founded
     to: movement/mingei
     period: 1926
+  - type: founded
+    to: institution/japan-folk-crafts-museum
+    period: 1936
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/e5/Soetsu.JPG
     source_url: https://commons.wikimedia.org/wiki/File:Soetsu.JPG

@@ -6,6 +6,9 @@ names:
     role: translation
     text: Sunflowers
     status: own
+  - lang: ja
+    role: romanization
+    text: himawari
 creator: hanasaki-toshiyoshi
 created: 1958
 kind: painting

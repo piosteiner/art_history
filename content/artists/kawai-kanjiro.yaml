@@ -1,0 +1,49 @@
+public_id: 116451
+name: Kawai Kanjirō
+names:
+  - lang: ja
+    role: original
+    text: 河井寛次郎
+  - Kanjirō Kawai
+  - Kawai Kanjiro
+  - Kawai Kanjirou
+  - lang: zh
+    role: translation
+    text: 河井寬次郎
+  - lang: ko
+    role: translation
+    text: 가와이 간지로
+  - lang: ru
+    role: translation
+    text: Кандзиро Каваи
+birth: 1890-08-24
+death: 1966-11-18
+biography_md: "Potter, and with [[person/yanagi-soetsu]] and [[artist/hamada-shoji]] one of the three who coined the word mingei in 1925.[[source/mingeikan-about]] Born in Yasugi in Shimane, he graduated from the Tokyo Higher Polytechnical School in 1914 and worked at the Kyoto Research Institute for Ceramics, where Hamada, whom he had met in Tokyo, followed him; in 1920 he built his own climbing kiln in Kyoto. Trained in chemical glazes and soon known for them, he turned — after meeting Yanagi and Hamada — to natural ones, and is regarded as a master of glazes: copper red, iron brown, chrome and cobalt. Like Hamada he never signed his work (“My work itself is my best signature”), and he refused every official honour, among them the title of Living National Treasure. His house in Gojōzaka, Kyoto, is a museum run by his family.[[source/wikipedia-en-kawai-kanjiro]]"
+wikidata_id: Q6379524
+metadata:
+  sources: [Wikidata Q6379524 (retrieved 2026-11-06)]
+relationships:
+  - type: member_of
+    to: movement/mingei
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Kawai_Kanjir%C5%8D_photographed_by_Shigeru_Tamura.jpg/1280px-Kawai_Kanjir%C5%8D_photographed_by_Shigeru_Tamura.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kawai_Kanjir%C5%8D_photographed_by_Shigeru_Tamura.jpg
+    license: Public domain
+    credit: Shigeru Tamura
+identifiers:
+  bnf: 13564685h
+  gnd: "136810950"
+  idref: "130251356"
+  lc: n81032407
+  rkd: "253977"
+  ulan: "500234059"
+  viaf: "17389135"
+sources:
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q6379524
+  death:
+    - accessed: 2026-11-06
+      property: P570
+      wikidata: Q6379524

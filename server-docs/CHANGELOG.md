@@ -18,6 +18,11 @@ Format: date — what — why — how to revert.
   style), now also in aesthetics, with a line pointing to the movement. Kawai Kanjirō and the Japan Folk Crafts Museum
   are named, not entries.
 - **Revert:** delete movement `mingei` (its relationships go with it); the term's `also_in`/text from its history page.
+- **Then (owner: "yes add Kawai Kanjirō and the Japan Folk Crafts Museum"):** both made by `from-wikidata.js` (Q6379524,
+  Q3789149); the museum renamed to its own English name `japan-folk-crafts-museum` "Japan Folk Crafts Museum"
+  (mingeikan.or.jp; 日本民藝館 original, Wikidata's "Japanese …" kept as another name), its text from the museum's
+  "About the Museum" (new source `mingeikan-about`), Yanagi `founded` it (1936); Kawai's text from en.wikipedia, member
+  of Mingei; the museum `associated_with` Mingei; the movement's text links both (script `mingei2.js`).
 
 ### Site: list filters as tick boxes
 - **What:** owner 2026-11-06 ("select all, clear all or tick one or multiple, similar to the regions in the quiz"). The
