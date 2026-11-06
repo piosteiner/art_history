@@ -1,0 +1,28 @@
+public_id: 115865
+name_lang: jp
+name: "{宿|しゅく}{場|ば}"
+names:
+  - lang: jp
+    role: alternative
+    text: shukueki
+  - lang: ja
+    role: romanization
+    text: shukuba
+category: other
+definition: post stations of Japan in the Edo period
+wikidata_id: Q1209783
+metadata:
+  sources: [Wikidata Q1209783 (retrieved 2026-11-05)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Tsumago-juku_6-Jun-2020.jpg/1280px-Tsumago-juku_6-Jun-2020.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tsumago-juku_6-Jun-2020.jpg
+    license: CC BY-SA 4.0
+    credit: 皓月旗
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fb/Tokaido47_Seki.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tokaido47_Seki.jpg
+    license: Public domain
+    credit: Utagawa Hiroshige
+sources:
+  definition:
+    - accessed: 2026-11-05
+      wikidata: Q1209783

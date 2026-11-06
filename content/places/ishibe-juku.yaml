@@ -1,0 +1,24 @@
+public_id: 115862
+name: Ishibe-juku
+names:
+  - lang: ja
+    role: original
+    text: 石部宿
+kind: settlement
+designation: post station of the Tōkaidō (no. 51)
+parent: tokaido
+country_code: JP
+location: [136.054554, 35.010129]
+description_md: "The 51st of the fifty-three post stations of the [[place/tokaido]], counted from Edo.^[The stations in order: [[source/wikipedia-ja-tokaido-gojusan-tsugi]]]"
+wikidata_id: Q3155270
+sources:
+  parent:
+    - url: https://ja.wikipedia.org/wiki/%E6%9D%B1%E6%B5%B7%E9%81%93%E4%BA%94%E5%8D%81%E4%B8%89%E6%AC%A1
+      note: station no. 51 of the Tōkaidō
+      source: wikipedia-ja-tokaido-gojusan-tsugi
+      accessed: 2026-11-05
+  location:
+    - url: https://ja.wikipedia.org/wiki/%E6%9D%B1%E6%B5%B7%E9%81%93%E4%BA%94%E5%8D%81%E4%B8%89%E6%AC%A1
+      note: the coordinates of the article on 石部宿
+      source: wikipedia-ja-tokaido-gojusan-tsugi
+      accessed: 2026-11-05

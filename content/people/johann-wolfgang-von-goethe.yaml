@@ -1,0 +1,64 @@
+public_id: 115868
+name: Johann Wolfgang von Goethe
+given_name: Johann Wolfgang
+family_name: von Goethe
+kind: person
+birth: 1749-08-28
+death: 1832-03-22
+wikidata_id: Q5879
+metadata:
+  sources: [Wikidata Q5879 (retrieved 2026-11-05)]
+relationships:
+  - type: born_in
+    to: place/frankfurt
+    sources:
+      - url: https://d-nb.info/gnd/118540238
+        source: gnd
+        accessed: 2026-11-05
+  - type: died_in
+    to: place/weimar
+    sources:
+      - url: https://d-nb.info/gnd/118540238
+        source: gnd
+        accessed: 2026-11-05
+  - type: worked_in
+    to: place/weimar
+    sources:
+      - url: https://d-nb.info/gnd/118540238
+        source: gnd
+        accessed: 2026-11-05
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Goethe_%28Stieler_1828%29.jpg/1280px-Goethe_%28Stieler_1828%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Goethe_(Stieler_1828).jpg
+    license: Public domain
+    credit: Joseph Karl Stieler
+identifiers:
+  bnf: 11905269k
+  dodis: P10432
+  gnd: "118540238"
+  hls: "011638"
+  idref: "026895528"
+  kulturnav: 0ae628fa-b9e1-4fc0-a78a-82265d31c0ab
+  lc: n79003362
+  rkd: "32385"
+  ulan: "500014761"
+  viaf: "24602065"
+sources:
+  kind:
+    - accessed: 2026-11-05
+      property: P31
+      wikidata: Q5879
+  birth:
+    - accessed: 2026-11-05
+      property: P569
+      wikidata: Q5879
+    - url: https://d-nb.info/gnd/118540238
+      source: gnd
+      accessed: 2026-11-05
+  death:
+    - accessed: 2026-11-05
+      property: P570
+      wikidata: Q5879
+    - url: https://d-nb.info/gnd/118540238
+      source: gnd
+      accessed: 2026-11-05

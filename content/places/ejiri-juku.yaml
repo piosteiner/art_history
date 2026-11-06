@@ -5,9 +5,11 @@ names:
     role: translation
     text: 江尻宿
 kind: settlement
-parent: shizuoka
+designation: post station of the Tōkaidō (no. 18)
+parent: tokaido
 country_code: JP
 location: [138.48704, 35.02349]
+description_md: "The 18th of the fifty-three post stations of the [[place/tokaido]], counted from Edo.^[The stations in order: [[source/wikipedia-ja-tokaido-gojusan-tsugi]]]"
 wikidata_id: Q3033380
 metadata:
   sources: [Wikidata Q3033380 (retrieved 2026-11-04)]
@@ -17,9 +19,10 @@ sources:
       property: P31
       wikidata: Q3033380
   parent:
-    - accessed: 2026-11-04
-      property: P131
-      wikidata: Q3033380
+    - url: https://ja.wikipedia.org/wiki/%E6%9D%B1%E6%B5%B7%E9%81%93%E4%BA%94%E5%8D%81%E4%B8%89%E6%AC%A1
+      note: station no. 18 of the Tōkaidō
+      source: wikipedia-ja-tokaido-gojusan-tsugi
+      accessed: 2026-11-05
   location:
     - accessed: 2026-11-04
       property: P625
