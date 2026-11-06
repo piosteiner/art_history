@@ -4,6 +4,11 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Content: the lecture source marked as unpublished
+- **What:** source `thomsen-2019-war-and-peace` renamed "(lecture, unpublished; slides, image lists and vocabulary lists)", reliability `other`, note that it is an unpublished course and institutions are cited beside it.
+- **Why:** owner keeps the lecture citations (the course's view stays traceable); readers should see it is not a published work, and institutional sources rank above it.
+- **Revert:** edit the source in the CMS (history page) or restore from audit_log.
+
 ### Content: the "War and Peace" course entries cited to institutions instead of the lecture
 - **What** (owner 2026-11-06: the lecture cannot be cited by anyone who did not attend it): the lecture replaced by
   museum records, reference works and Wikidata wherever they record the facts — NPM Taipei (Early Spring: dated 1072,
