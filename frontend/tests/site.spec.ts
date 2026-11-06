@@ -2069,11 +2069,15 @@ test('institution page: address and its own point', async ({ page }) => {
     const body = await res.json();
     body.address = 'Heimplatz 1, 8001 Zürich';
     body.location = { type: 'Point', coordinates: KH_POINT };
+    body.collection_url = 'https://collection.kunsthaus.ch/de/collection/';   // its online collection (backend 238)
     await route.fulfill({ response: res, json: body });
   });
   await page.goto('/institutions/kunsthaus-zurich');
   await expect(page.locator('.facts')).toContainText('Heimplatz 1, 8001 Zürich');
   await expect(page.locator('#legend')).toContainText('its building');
+  // one click to the museum's own collection search (owner 2026-11-06)
+  await expect(page.locator('.facts a.collection-link')).toHaveText('Search the collection ↗');
+  await expect(page.locator('.facts a.collection-link')).toHaveAttribute('href', 'https://collection.kunsthaus.ch/de/collection/');
 });
 
 // ---- bibliography and footnotes (the live bibliography may still be empty: the tests bring two sample sources) ----

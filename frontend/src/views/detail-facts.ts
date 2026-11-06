@@ -311,6 +311,8 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ['Location', e.place ? html`${link('place', e.place.slug, e.place.name)}${e.country ? html`, ${countryLink(e.country)}` : ''}` : null],
           ...(e.polities.some((p) => p.relationship === 'located_in_polity') ? polityFacts(e, 'located_in_polity', 'Historically in', '') : []),
           ['Website', e.website_url ? html`<a href="${e.website_url}" target="_blank" rel="noopener">${e.website_url.replace(/^https?:\/\/(www\.)?/, '')}</a>` : null],
+          // its online collection: one click to search its holdings (owner 2026-11-06)
+          ['Online collection', e.collection_url ? html`<a class="collection-link" href="${e.collection_url}" target="_blank" rel="noopener">Search the collection ↗</a>` : null],
           ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
         ],
         extra: e.artworks.length ? [html`<section><h2>Artworks in the collection</h2>${artworkList(e.artworks, true)}</section>`] : [],

@@ -539,6 +539,8 @@ export interface Movement extends DetailBase, Named {
 export interface Institution extends DetailBase, Located, Named {
   type: 'institution';
   name: string; alt_names: string[]; kind: string | null; founded: DateRange | null; website_url: string | null;
+  /** its online collection — where its works can be searched (backend 238) */
+  collection_url?: string | null;
   dissolved?: DateRange | null; // closed / dissolved (API 106)
   description_html: string | null;
   images: Image[]; image_url: string | null;
