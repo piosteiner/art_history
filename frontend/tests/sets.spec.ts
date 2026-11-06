@@ -792,9 +792,16 @@ test('the account menu in the header: logged out Log in and Sign up; logged in t
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
   await loggedIn(page);
+  // a friend request and two unread messages: the red dot on the button, the number beside Friends
+  await page.route('http://admin.test/site/friends', (route) => route.fulfill({ contentType: 'application/json', body: JSON.stringify({
+    me: { public_name: null, friend_code: 'F1' }, unread: 2,
+    people: [{ id: '7', name: 'Ada', status: 'received', sets: [], unread: 0, last_at: null }, { id: '8', name: 'Bo', status: 'friend', sets: [], unread: 2, last_at: null }] }) }));
   await page.goto('/artworks');
   const button = page.locator('.site-header .account-button');
   await expect(button.locator('.account-initial')).toHaveText('T');
+  await expect(button.locator('.account-dot')).toBeVisible();
+  await expect(button.locator('.account-dot')).toHaveAttribute('title', '1 friend request, 2 unread messages');
+  await expect(page.locator('.account-items .unread-badge')).toHaveText('3');
   await expect(page.locator('.site-footer .account')).toHaveCount(0);                    // no longer in the footer
   await expect(page.locator('.nav a', { hasText: 'Sets' })).toHaveAttribute('href', '/sets');
   await expect(page.locator('.account-items')).toBeHidden();

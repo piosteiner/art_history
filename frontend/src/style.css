@@ -1560,7 +1560,9 @@ button.danger { border-color: var(--accent); color: var(--accent); }
 .account-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .account-button:has(.account-initial) { padding: 0; width: 2rem; height: 2rem; justify-content: center; }
 .account-initial { font-weight: 600; }
-.account-dot { position: absolute; top: -2px; right: -2px; width: .6rem; height: .6rem; border-radius: 50%; background: var(--accent); border: 2px solid var(--surface); }
+/* unread messages or a friend request: a red dot in the button's corner (its text only for screen readers) */
+.account-dot { position: absolute; top: -3px; right: -3px; width: .7rem; height: .7rem; border-radius: 50%; background: #e0302a; border: 2px solid var(--surface);
+  overflow: hidden; font-size: 0; color: transparent; }
 .account-dot[hidden] { display: none; }
 .account-items { position: absolute; right: 0; top: calc(100% + .4rem); z-index: 950; min-width: 16rem; padding: .35rem 0;
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 6px 24px rgb(0 0 0 / .15); }

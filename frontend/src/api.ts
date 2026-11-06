@@ -329,7 +329,7 @@ export interface Person { id: string; name: string; status: FriendStatus; sets: 
 export interface ChatMessage { id: string; mine: boolean; body: string; at: string; read: boolean }
 export const getFriends = () => account<{ me: { public_name: string | null; friend_code: string }; people: Person[]; unread: number }>('/friends');
 export const friendAction = (action: 'request' | 'accept' | 'decline' | 'withdraw' | 'remove' | 'block' | 'unblock', id: string) =>
-  account<{ status?: FriendStatus } | null>(`/friends/${action}`, form({ account: id }));
+  account<{ status?: FriendStatus } | null>(`/friends/${action}`, form({ account: id })).then((r) => { window.dispatchEvent(new Event('friends-changed')); return r; });
 export const requestByCode = (code: string) => account<{ status: FriendStatus }>('/friends/request', form({ code }));
 export const getFriendLink = (code: string) => account<{ name: string; status: FriendStatus | 'me' }>(`/friends/link/${code}`);
 export const newFriendCode = () => account<{ friend_code: string }>('/friends/code', form({ new: '1' }));

@@ -16,7 +16,8 @@
 //   POST /site/friends/chat/:id             body → {message}   (friends only)
 //   POST /site/friends/chat/:id/delete      message=<id> (one's own: gone for both) | all=1 (the conversation, for oneself)
 //   POST /site/friends/chat/:id/report      note → 201 — a copy of the last 100 messages to the admins
-//   GET  /site/friends/events               text/event-stream: `message` {from, id} and `read` {by} as they happen
+//   GET  /site/friends/events               text/event-stream: `message` {from, id} and `read` {by} as they happen;
+//                                           `friend` {} when a request between the account and someone changed
 // The stream: Postgres NOTIFY chat (a trigger on chat_messages) → this process LISTENs on a connection of its own →
 // the open streams of the two accounts get an event. One process today; with several, each would LISTEN the same way.
 const crypto = require('node:crypto');
@@ -100,12 +101,14 @@ router.post('/request', async (req, res) => {
   const [lo, hi] = pair(req.user.id, o.id);
   if (status === 'received') {
     await adminPool.query('UPDATE friendships SET accepted_at = now() WHERE (low_id, high_id) = ($1, $2)', [lo, hi]);
+    friendsChanged(req.user.id, o.id);
     return res.json({ status: 'friend' });
   }
   const { rows: [{ n }] } = await adminPool.query(`SELECT count(*)::int AS n FROM friendships WHERE requested_by = $1 AND accepted_at IS NULL
     AND requested_at > now() - interval '1 day'`, [req.user.id]);
   if (n >= 30) return fail(res, 429, 'at most 30 open requests a day');
   await adminPool.query('INSERT INTO friendships (low_id, high_id, requested_by) VALUES ($1, $2, $3)', [lo, hi, req.user.id]);
+  friendsChanged(req.user.id, o.id);
   res.status(201).json({ status: 'sent' });
 });
 
@@ -114,6 +117,7 @@ const relation = (sql) => async (req, res) => {
   if (!o) return fail(res, 404, 'not_found');
   const [lo, hi] = pair(req.user.id, o.id);
   await adminPool.query(sql, [lo, hi, req.user.id]);
+  friendsChanged(req.user.id, o.id);
   res.status(204).end();
 };
 router.post('/accept', relation('UPDATE friendships SET accepted_at = now() WHERE (low_id, high_id) = ($1, $2) AND accepted_at IS NULL AND requested_by <> $3'));
@@ -132,6 +136,7 @@ router.post('/block', async (req, res) => {
     await client.query('DELETE FROM friendships WHERE (low_id, high_id) = ($1, $2)', [lo, hi]);
     await client.query('COMMIT');
   } catch (err) { await client.query('ROLLBACK').catch(() => {}); throw err; } finally { client.release(); }
+  friendsChanged(req.user.id, o.id);
   res.status(204).end();
 });
 router.post('/unblock', async (req, res) => {
@@ -227,6 +232,8 @@ router.get('/events', (req, res) => {
   req.on('close', () => { clearInterval(ping); streams.get(id)?.delete(res); if (!streams.get(id)?.size) streams.delete(id); });
   listen();
 });
+// requests made, accepted, declined, withdrawn: both accounts' open pages count their open requests again (the header's dot)
+function friendsChanged(...accounts) { for (const a of accounts) send(String(a), 'friend', {}); }
 const send = (account, event, data) => {
   for (const res of streams.get(String(account)) || []) res.write(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`);
 };

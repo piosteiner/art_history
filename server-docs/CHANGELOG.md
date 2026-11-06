@@ -4,6 +4,11 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Site: friend requests in the header
+- **What:** the account button's dot (now red, `#e0302a`) and the number beside Friends in its menu count open friend requests to the account as well as unread messages (`watchUnread()` in `frontend/src/account.ts`; title says which). `backend/src/admin/routes/site-friends.js` sends a `friend` event on the live stream to both accounts when a request is made, accepted, declined, withdrawn, a friendship ends or someone blocks (`friendsChanged()`); `friendAction()` fires `friends-changed` in the page.
+- **Why:** owner 2026-11-06 — a friend request should show at the top right like unread messages.
+- **Revert:** `git revert` the commit, `backend/deploy.sh`; Pages redeploys.
+
 ### Site: Markdown editor with live styling, members list
 - **What:** `frontend/src/md-editor.ts` on CodeMirror 6 (same packages and versions as the CMS editor, added to `frontend/package.json` exactly pinned; loaded only by the pages that edit a text, own chunk ~117 KB gzip): live styling of bold, italics, headings, ==highlight==, [[links]], `[[` completion from the site search; the textarea stays in the form, hidden and in sync (`md-set` event for values set from outside). Set page: owner's Members panel with name ⟷ controls rows, friend requests (`friendAction`), hide in the chat, report, chat removal (the separate members section only for non-owners now); one Manage panel open at a time, its button staying in its place in the row while the panel opens below the whole row (`display: contents` on the open `<details>` and its `::details-content`); "What each part may do" folded; "Hide ▴" at the foot of About. Tests updated (`.cm-content`, mock `/friends`, `/members`, `/chat/hide`).
 - **Why:** owner 2026-11-06 — formatting "like in Obsidian" as in the CMS; the members list and panel layout as asked.

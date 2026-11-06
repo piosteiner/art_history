@@ -50,7 +50,7 @@ export function mountAccount(slot: HTMLElement, setsLink: HTMLAnchorElement | nu
       : html`<span class="account-initial" aria-hidden="true">${(who.username[0] ?? '?').toUpperCase()}</span><span class="visually-hidden">${who.username}</span>`);
     render(slot, html`<div class="account-menu">
       <button type="button" class="account-button" aria-haspopup="menu" aria-expanded="false" aria-controls="account-items" title="Your account">
-        ${label(a)}<span class="account-dot" hidden title="unread messages"></span></button>
+        ${label(a)}<span class="account-dot" hidden></span></button>
       <div class="account-items" id="account-items" role="menu" hidden>
         <p class="account-who">${a.public_name ?? a.username} <span class="muted small">· ${a.cms ? 'site and CMS' : 'site account'}</span></p>
         <a role="menuitem" href="/sets">Study sets</a>
@@ -99,14 +99,27 @@ export function mountAccount(slot: HTMLElement, setsLink: HTMLAnchorElement | nu
   ownThumbsReady = who.then((name) => (name ? getOwnThumbs().then((m) => setOwnThumbs(m)).catch(() => {}) : undefined));
 }
 
-/** The menu's unread count and the button's dot: counted once, then kept up to date by the chat's live stream (224). */
+/** The button's red dot and the number beside Friends: unread messages and open friend requests to the account
+ *  (owner 2026-11-06) — counted once, then kept up to date by the live stream (224: `message`, `friend`) and the
+ *  site's own actions. */
 function watchUnread(badge: HTMLElement, dot: HTMLElement) {
-  const count = () => getFriends().then((r) => { const n = r?.unread ?? 0; badge.hidden = !n; dot.hidden = !n; badge.textContent = n ? String(n) : ''; }).catch(() => {});
+  const count = () => getFriends().then((r) => {
+    const unread = r?.unread ?? 0;
+    const requests = (r?.people ?? []).filter((p) => p.status === 'received').length;
+    const n = unread + requests;
+    const what = [requests ? plural(requests, 'friend request') : '', unread ? plural(unread, 'unread message') : ''].filter(Boolean).join(', ');
+    badge.hidden = !n; dot.hidden = !n; badge.textContent = n ? String(n) : '';
+    badge.title = what; dot.title = what;
+    dot.textContent = n ? `(${what})` : '';
+  }).catch(() => {});
   void count();
   const events = chatEvents();
   events?.addEventListener('message', () => { void count(); });
+  events?.addEventListener('friend', () => { void count(); });
   window.addEventListener('chat-read', () => { void count(); });
+  window.addEventListener('friends-changed', () => { void count(); });
 }
+const plural = (n: number, word: string) => `${String(n)} ${word}${n === 1 ? '' : 's'}`;
 
 /** The logged-in account's name, or null (visitors: at once, without asking the admin host). */
 export const account = () => who;
