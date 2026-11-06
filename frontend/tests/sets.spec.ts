@@ -38,6 +38,8 @@ async function loggedIn(page: Page, { login = true, conflict = false } = {}) {
   let examOn: string | null = null;
   let clash = conflict;         // the next save of a set's text: someone else changed it meanwhile (409)
   let next = 1;
+  const friendships = new Map<string, string>();
+  const hidden = new Set<string>();
   const others: FakeSet = { id: '99', name: 'Hokusai for beginners', topic: 'Japanese art', description: '**Read** the [[artist/katsushika-hokusai]] page first.', visibility: 'public', code: CODE,
     items: ['the-great-wave-off-kanagawa', 'nishiki-e', 'katsushika-hokusai', 'diego-velazquez'].map((slug) => ({ type: (CARD[slug] as { type: string }).type, slug, name: slug })) };
   if (login) await page.addInitScript(() => localStorage.setItem('arthistory.account', '1'));
@@ -102,6 +104,12 @@ async function loggedIn(page: Page, { login = true, conflict = false } = {}) {
     if (path === '/sets/preview') return json(route, { html: md(form.get('text') ?? '') });
     if (path === '/sets/of') return json(route, { sets: sets.map((s) => ({ id: s.id, name: s.name, has: s.items.some((i) => i.type === url.searchParams.get('type') && i.slug === url.searchParams.get('slug')) })) });
     if (path === '/sets/progress') { answers.push(`${form.get('slug')}:${form.get('direction')}:${form.get('known')}`); return json(route, { box: form.get('known') === '1' ? 2 : 1, seen: 1, known: Number(form.get('known')) }); }
+    // friendships (224) and hiding in a set's chat (226), as far as the set page asks for them
+    if (path === '/friends') return json(route, { me: { public_name: publicName, friend_code: 'F1' }, unread: 0,
+      people: sets.flatMap((x) => x.members ?? []).map((x) => ({ id: x.id, name: x.name, status: friendships.get(x.id) ?? 'none', sets: [], unread: 0, last_at: null })) });
+    if (path === '/friends/request') { friendships.set(form.get('account')!, 'sent'); posts.push(`friend:${form.get('account')!}`); return json(route, { status: 'sent' }); }
+    const hideIn = /^\/sets\/(\d+)\/chat\/hide$/.exec(path);
+    if (hideIn) { if (form.get('hide') === '1') hidden.add(form.get('account')!); else hidden.delete(form.get('account')!); posts.push(`hide:${form.get('account')!}:${form.get('hide')!}`); return json(route, null); }
     const m = /^\/sets\/(\d+)(\/items|\/items\/remove|\/cards|\/delete|\/share|\/sessions|\/stats|\/plan|\/sharing|\/links|\/links\/\d+\/end|\/members\/\d+|\/members|\/settings|\/leave)?$/.exec(path);
     const s = m && sets.find((x) => x.id === m[1]);
     if (!s) return json(route, { error: 'not_found' }, 404);
@@ -128,6 +136,8 @@ async function loggedIn(page: Page, { login = true, conflict = false } = {}) {
       return json(route, { link }, 201);
     }
     if (m![2]?.endsWith('/end')) { s.links = (s.links ?? []).map((l) => ({ ...l, ended_at: '2026-11-05T13:00:00Z', closed: 'off' })); posts.push('link:end'); return route.fulfill({ status: 204, headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' } }); }
+    if (m![2] === '/members') return json(route, { members: (s.members ?? []).map((x) => ({ id: x.id, name: x.name, role: x.rights === 'view' ? 'viewer' : 'editor', rights: x.rights,
+      since: '2026-11-02T12:00:00Z', via: 'link', added: 2, me: false, chat: true, chat_allowed: false, removed: false, hidden: hidden.has(x.id), blocked: false })) });
     if (m![2]?.startsWith('/members/')) {
       const who = m![2].split('/')[2];
       posts.push(`member:${who}:${form.toString()}`);
@@ -262,11 +272,13 @@ test('a set: topic and a Markdown description (toolbar, preview), made public wi
 
   // the description: Markdown with the toolbar, a preview from the server, shown rendered
   await page.locator('.sets-edit summary').click();
-  const area = page.locator('.md-editor textarea');
-  await area.fill('Learn ');
+  const area = page.locator('.md-editor textarea');                  // hidden, kept in step with the editor
+  const editor = page.locator('.md-editor .cm-content');               // CodeMirror with live styling
+  await editor.fill('Learn ');
   await page.locator('.md-tool', { hasText: /^B$/ }).click();          // **bold** with "bold" selected
   await page.keyboard.type('these');
   await expect(area).toHaveValue('Learn **these**');
+  await expect(editor.locator('span', { hasText: /^these$/ })).toHaveCSS('font-weight', '700');   // bold looks bold while writing
   await page.locator('.md-tab', { hasText: 'Preview' }).click();
   await expect(page.locator('.md-preview strong')).toHaveText('these');
   await page.locator('.md-tab', { hasText: 'Write' }).click();
@@ -279,8 +291,8 @@ test('a set: topic and a Markdown description (toolbar, preview), made public wi
   await page.locator('.sets-copy-cancel').click();
   await expect(page.locator('.sets-copy-info')).toBeHidden();
   expect(account.sets).toHaveLength(1);
-  // the description folds away and stays folded on this set
-  await page.locator('.sets-about-summary').click();
+  // the description folds away (Hide at its foot) and stays folded on this set
+  await page.locator('.sets-about-hide').click();
   await expect(page.locator('.sets-description')).toBeHidden();
   await page.reload();
   await expect(page.locator('.sets-about')).not.toHaveAttribute('open');
@@ -417,23 +429,34 @@ test('members: the owner\'s panel — rights changed, a link with rights, a memb
   await expect(page.locator('main h1 .sets-together-tag')).toHaveText('1 member');
   await expect(page.locator('.sets-meta')).toContainText('by Ms Other');
   await expect(page.locator('.sets-your-part')).toContainText('Your part: Owner');
-  await page.locator('#sets-members-panel summary').click();
-  await page.locator('#sets-sharing summary').click();
   const panel = page.locator('#sets-sharing');
   const membersPanel = page.locator('#sets-members-panel');
-  // what each part may do, in the same words the members see
+  await membersPanel.locator('summary').first().click();
+  // what each part may do, in the same words the members see — folded until asked for
+  await expect(membersPanel.locator('.sets-rights-legend')).toBeHidden();
+  await membersPanel.locator('.sets-legend summary').click();
   await expect(membersPanel.locator('.sets-rights-legend')).toContainText('Editor with approval');
   await expect(membersPanel.locator('.sets-rights-legend')).toContainText('each waits until the owner accepts or rejects it');
+  // a member's row: name on the left, rights and actions on the right; a friend request; hidden in the chat
+  await expect(membersPanel.locator('[data-member="5"] .sets-member-who')).toContainText('2 entries added');
+  await membersPanel.locator('[data-befriend="5"]').click();
+  await expect(membersPanel.locator('[data-member="5"]')).toContainText('friend request sent');
+  await membersPanel.locator('[data-hide="5"]').click();
+  await expect(membersPanel.locator('[data-member="5"]')).toContainText('hidden by you');
+  expect(account.posts).toEqual(expect.arrayContaining(['friend:5', 'hide:5:1']));
+  // a member's rights changed
+  await membersPanel.locator('[data-member="5"] select').selectOption('vote');
+  await expect.poll(() => account.posts).toContain('member:5:action=rights&rights=vote');
+  await expect(membersPanel.locator('.sets-share-msg')).toContainText('Now: Editor with votes');   // the panel drawn again
+  // one panel at a time: opening Sharing closes Members
+  await panel.locator('summary').first().click();
+  await expect(membersPanel).not.toHaveAttribute('open');
   // hours and the veto only for binding votes — with advisory ones the owner decides anyway
   await expect(panel.locator('input[name=owner_veto]')).toBeHidden();
   await panel.locator('.sets-votes-form input[value=binding]').check();
   await expect(panel.locator('input[name=owner_veto]')).toBeVisible();
   await panel.locator('.sets-votes-form input[value=advisory]').check();
   await expect(panel.locator('input[name=vote_hours]')).toBeHidden();
-  // a member's rights changed
-  await membersPanel.locator('[data-member="5"] select').selectOption('vote');
-  await expect.poll(() => account.posts).toContain('member:5:action=rights&rights=vote');
-  await expect(membersPanel.locator('.sets-share-msg')).toContainText('Now: Editor with votes');   // the panel drawn again
   // a link with rights: not without a public name — then one to copy, marked with what it gives
   await panel.locator('.sets-link-form select').selectOption('approval');
   await panel.locator('.sets-link-form button').click();
@@ -462,7 +485,7 @@ test('members: the owner\'s panel — rights changed, a link with rights, a memb
 
   // a save from an older text: refused, theirs shown, mine kept; saving again replaces theirs
   await page.locator('.sets-edit summary').click();
-  await page.locator('.md-editor textarea').fill('My new text');
+  await page.locator('.md-editor .cm-content').fill('My new text');
   await page.locator('.sets-edit-form button[type=submit]').click();
   await expect(page.locator('.sets-conflict')).toContainText('Ms Other changed this set meanwhile');
   await expect(page.locator('.sets-conflict strong')).toHaveText('newer');

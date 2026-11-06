@@ -33,14 +33,13 @@ import {
   answerCard, answerInvitation, ApiError, copySnapshot, forgetResults, getResults, getSnapshot, cancelInvitation, changeMember, chatEvents, copyOwnSet, copySet, createSet, decideProposal, deleteSet, deleteSetChat,
   endSetLink, getCards, getInvitation, getPublicSets, getSet, getSetChat, getSetHistory, getSetMembers, getSets, getSetStats, getSharing, hideInSetChat,
   inviteToSet, joinSet, leaveSet, lockSet, loginUrl, newSetLink, postSetChat, previewDescription, recordRound, removeFromSet, reportSetChat, restoreSet,
-  savePlan, saveVoteSettings, setChatMember, shareSet, switchSetChat, updateSet, voteOn, withdrawProposal,
+  savePlan, saveVoteSettings, setChatMember, getFriends, friendAction, type FriendStatus, type SetMember, shareSet, switchSetChat, updateSet, voteOn, withdrawProposal,
   type Proposed, type SetChatMessage, type SetEvent, type SetProposal, type SetRef, type SetRights, type SetSharing, type StudyCard, type StudyItem,
   type StudyMode, type StudyPlan, type StudySet, type StudyStats, type Visibility, type Vote, type VoteMode,
 } from '../api';
 import { accountLinks } from './account';
 import { href, html, PLURAL_LABEL, render, thumb, trusted, TYPE_LABEL, type Html } from '../html';
 import { PLURAL } from '../api';
-import { markdownEditor } from '../md-editor';
 import { bestMatch, points } from '../quiz-match';
 
 type Dir = 'forward' | 'reverse';
@@ -346,7 +345,8 @@ function one(main: HTMLElement, ref: SetRef, note = '') {
       ${set.description_html || (own && set.copied_from) ? html`<details class="sets-about sets-card"${aboutClosed(ref) ? '' : ' open'}>
         <summary class="sets-about-summary"><span class="sets-card-title">About this set</span><span class="muted small sets-about-toggle"></span></summary>
         ${set.description_html ? html`<div class="prose sets-description">${trusted(set.description_html)}</div>` : ''}
-        ${own && set.copied_from ? html`<p class="muted small">A copy of <a href="/sets/s/${set.copied_from.code}">${set.copied_from.name}</a>${set.copied_from.creator ? ` by ${set.copied_from.creator}` : ''}.</p>` : ''}</details>` : ''}
+        ${own && set.copied_from ? html`<p class="muted small">A copy of <a href="/sets/s/${set.copied_from.code}">${set.copied_from.name}</a>${set.copied_from.creator ? ` by ${set.copied_from.creator}` : ''}.</p>` : ''}
+        <p class="sets-about-foot"><button type="button" class="link-button small sets-about-hide">Hide ▴</button></p></details>` : ''}
       ${own ? html`<section class="sets-manage sets-card" aria-labelledby="sets-manage-title"><h2 class="sets-card-title" id="sets-manage-title">${viewer ? 'This set' : 'Manage this set'}</h2><div class="sets-tools">
         ${viewer ? '' : html`<details class="sets-edit"${editor && locked ? ' hidden' : ''}><summary class="link-button">${directly ? 'Edit name, topic, description' : 'Propose a new name, topic, description'}</summary>
           <form class="sets-edit-form"><p class="sets-conflict flash" hidden></p>
@@ -378,7 +378,7 @@ function one(main: HTMLElement, ref: SetRef, note = '') {
         ${studyForm(ref, items.length, Boolean(me))}</div>
       ${me ? html`<section class="sets-stats sets-card" aria-label="Your results"></section>` : ''}
       ${own && (proposals.length || decided.length) ? html`<section class="sets-proposals" id="sets-proposals"></section>` : ''}
-      ${own && hasMembers ? html`<section class="sets-members sets-card" id="sets-members" aria-label="Members"></section>` : ''}
+      ${own && hasMembers && !owner ? html`<section class="sets-members sets-card" id="sets-members" aria-label="Members"></section>` : ''}
       ${own && set.chat_allowed && (set.chat_on || owner) && (hasMembers || set.chat_on) ? html`<section class="sets-chat" id="sets-chat" aria-label="The set's chat"></section>` : ''}
       ${items.length ? html`<section class="sets-entries" aria-labelledby="sets-entries-title"><h2 id="sets-entries-title" class="sets-entries-title">Entries <span class="muted">${String(items.length)}</span></h2>
       ${byType.size > 1 ? html`<nav class="sets-jump" aria-label="Kinds of entries">${[...byType.entries()].map(([type, list]) => html`<a class="chip" href="#sets-${type}">${PLURAL_LABEL[PLURAL[type as StudyItem['type']]]} <span class="muted">${String(list.length)}</span></a>`)}</nav>` : ''}
@@ -395,6 +395,10 @@ function one(main: HTMLElement, ref: SetRef, note = '') {
     </section>`);
     const msg = main.querySelector<HTMLElement>('.sets-msg')!;
     main.querySelector<HTMLDetailsElement>('.sets-about')?.addEventListener('toggle', (e) => rememberAbout(ref, !(e.target as HTMLDetailsElement).open));
+    main.querySelector('.sets-about-hide')?.addEventListener('click', () => { const d = main.querySelector<HTMLDetailsElement>('.sets-about')!; d.open = false; d.scrollIntoView({ block: 'nearest' }); });
+    // Manage this set: one of its panels open at a time (owner 2026-11-06)
+    const tools = [...main.querySelectorAll<HTMLDetailsElement>('.sets-manage .sets-tools > details')];
+    for (const d of tools) d.addEventListener('toggle', () => { if (d.open) for (const o of tools) if (o !== d) o.open = false; });
     const missing = Number(new URLSearchParams(location.search).get('missing') || 0);
     msg.textContent = note || (missing ? `Saved as a new set. ${plural(missing, 'entry', 'entries')} of that version ${missing === 1 ? 'is' : 'are'} no longer on the site and left out.` : '');
     const stats = main.querySelector<HTMLElement>('.sets-stats');
@@ -426,7 +430,8 @@ function one(main: HTMLElement, ref: SetRef, note = '') {
     };
     const editForm = main.querySelector<HTMLFormElement>('.sets-edit-form');
     if (editForm) {
-      markdownEditor(editForm.querySelector<HTMLTextAreaElement>('textarea[name=description]')!, previewDescription);
+      const desc = editForm.querySelector<HTMLTextAreaElement>('textarea[name=description]')!;
+      void import('../md-editor').then((m) => m.markdownEditor(desc, previewDescription));
       editForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const val = (n: string) => (editForm.elements.namedItem(n) as HTMLInputElement | null)?.value ?? '';
@@ -563,7 +568,7 @@ function proposalList(box: HTMLElement, set: StudySet, id: string, open: SetProp
  *  (their rights: "Sharing and members"). */
 function members(box: HTMLElement, set: StudySet, id: string, owner: boolean, chatChanged: () => void) {
   const since = (iso: string | null) => (iso ? new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '');
-  const load = () => getSetMembers(id).then((list) => {
+  const load = (): Promise<void> => Promise.all([getSetMembers(id), friendStatuses()]).then(([list, friends]) => {
     render(box, html`<h2>Members <span class="muted">${String(list.length)}</span></h2>
       ${owner ? html`<p class="muted small">Rights and invitations: <a href="#sets-members-panel">Members</a> · links: <a href="#sets-sharing">Sharing</a>.</p>` : ''}
       <ul class="sets-member-list">${list.map((m) => html`<li data-member="${m.id}"><b>${m.name ?? '—'}</b>
@@ -572,12 +577,14 @@ function members(box: HTMLElement, set: StudySet, id: string, owner: boolean, ch
         ${m.chat && m.removed ? html` <span class="tag">removed from the chat</span>` : ''}${m.blocked ? html` <span class="tag" title="Their messages are hidden for you in every set's chat; unblock them on Friends">blocked by you</span>`
           : m.hidden ? html` <span class="tag" title="Only you see this">hidden by you</span>` : ''}
         ${m.me ? '' : html`<span class="sets-member-actions small">
+          ${friendButton(m.id, friends.get(m.id) ?? 'none')}
           ${m.chat && !m.blocked ? html`<button type="button" class="link-button" data-hide="${m.id}" data-on="${m.hidden ? '0' : '1'}" title="${m.hidden ? 'Show their messages again' : 'Hide their messages in your view of the chat — no one is told, not the owner and not them'}">${m.hidden ? 'Show their messages' : 'Hide in the chat'}</button>` : ''}
           <button type="button" class="link-button" data-report="${m.id}">Report</button>
           ${owner && m.chat && m.role !== 'owner' ? html`<button type="button" class="link-button" data-${m.removed ? 'readmit' : 'remove'}="${m.id}">${m.removed ? 'Let back into the chat' : 'Remove from the chat'}</button>` : ''}</span>`}</li>`)}</ul>
       <p class="sets-members-msg small" role="status"></p>`);
     const msg = box.querySelector<HTMLElement>('.sets-members-msg')!;
     const after = () => { void load(); chatChanged(); };
+    friendButtons(box, (note) => { void load().then(() => { const x = box.querySelector('.sets-members-msg'); if (x) x.textContent = note; }); }, (err) => { msg.textContent = err.message; });
     box.querySelectorAll<HTMLButtonElement>('[data-hide]').forEach((b) => b.addEventListener('click', () => {
       hideInSetChat(id, b.dataset.hide!, b.dataset.on === '1').then(after).catch((err: Error) => { msg.textContent = err.message; });
     }));
@@ -593,6 +600,20 @@ function members(box: HTMLElement, set: StudySet, id: string, owner: boolean, ch
   }).catch(() => render(box, html`<p class="muted small">The members could not be loaded.</p>`));
   void load();
 }
+
+/** A member's friendship with the viewer, as a button or a note (owner 2026-11-06: friend requests from the members list) */
+const friendButton = (id: string, status: FriendStatus | undefined) => (status === 'none' ? html`<button type="button" class="link-button" data-befriend="${id}">Add as friend</button>`
+  : status === 'received' ? html`<button type="button" class="link-button" data-accept-friend="${id}">Accept their friend request</button>`
+    : status === 'sent' ? html`<span class="muted">friend request sent</span>` : status === 'friend' ? html`<a class="muted" href="/friends">friend</a>` : '');
+function friendButtons(box: HTMLElement, done: (note: string) => void, fail: (err: Error) => void) {
+  box.querySelectorAll<HTMLButtonElement>('[data-befriend]').forEach((b) => b.addEventListener('click', () => {
+    friendAction('request', b.dataset.befriend!).then(() => done('Friend request sent.')).catch(fail);
+  }));
+  box.querySelectorAll<HTMLButtonElement>('[data-accept-friend]').forEach((b) => b.addEventListener('click', () => {
+    friendAction('accept', b.dataset.acceptFriend!).then(() => done('You are friends now.')).catch(fail);
+  }));
+}
+const friendStatuses = () => getFriends().then((r) => new Map((r?.people ?? []).map((p) => [p.id, p.status]))).catch(() => new Map<string, FriendStatus>());
 
 let chatStream: EventSource | null = null;
 /** A set's chat (225): its owner and editors; the owner switches it on, removes members, deletes messages; anyone
@@ -705,7 +726,15 @@ function ownerPanel(shareD: HTMLDetailsElement, membersD: HTMLDetailsElement, se
   const sbox = shareD.querySelector<HTMLElement>('.sets-share-body')!;
   const mbox = membersD.querySelector<HTMLElement>('.sets-share-body')!;
   let publicName: string | null = null;
+  let extra = new Map<string, SetMember>();          // per member: since, entries added, chat state (226)
+  let friends = new Map<string, FriendStatus>();     // per member: friendship with the owner (224)
   type Where = 'share' | 'members';
+  const load = () => Promise.all([getSharing(id), getSets(), getSetMembers(id).catch(() => []), friendStatuses()]).then(([sh, r, list, fr]) => {
+    publicName = r?.public_name ?? null;
+    extra = new Map(list.map((m) => [m.id, m]));
+    friends = fr;
+    return sh;
+  });
   const rightsSelect = (name: string, value: SetRights = 'view') => html`<select name="${name}" aria-label="Rights">${RIGHTS.map((r) => html`<option value="${r}"${r === value ? ' selected' : ''}>${RIGHTS_NAME[r]}</option>`)}</select>`;
   const draw = (sh: SetSharing, note = '', where: Where = 'share') => {
     const members = set.members ?? [];
@@ -746,13 +775,20 @@ function ownerPanel(shareD: HTMLDetailsElement, membersD: HTMLDetailsElement, se
           <button type="submit">Save</button></form></section>
 
       <p class="sets-panel-msg small" role="status"></p></div>`);
-    render(mbox, html`<div class="sets-panel sets-panel-members">${head('members')}
+    render(mbox, html`<div class="sets-panel sets-panel-people">${head('members')}
       <section><h3>Members <span class="muted">${String(members.length)}</span></h3>
-        ${members.length ? html`<ul class="sets-panel-members">${members.map((m) => html`<li data-member="${m.id}"><b>${m.name ?? '—'}</b>
-          ${rightsSelect('rights', m.rights)}
-          ${m.rights === 'view' ? html`<label class="check small"><input type="checkbox" name="chat"${m.chat ? ' checked' : ''}> <span>may use the chat</span></label>` : ''}
-          <button type="button" class="link-button small" data-owner="${m.id}" title="They own the set from then on; you stay as a member with full rights">Hand the set over</button>
-          <button type="button" class="link-button small danger-link" data-remove="${m.id}">Remove</button></li>`)}</ul>`
+        ${members.length ? html`<ul class="sets-panel-members">${members.map((m) => { const x = extra.get(m.id); return html`<li data-member="${m.id}">
+          <span class="sets-member-who"><b>${m.name ?? '—'}</b>${x ? html`<span class="muted small">since ${day(x.since ?? '')} · ${plural(x.added, 'entry', 'entries')} added</span>` : ''}
+            ${x?.removed ? html`<span class="tag">removed from the chat</span>` : ''}${x?.blocked ? html`<span class="tag" title="Their messages are hidden for you in every set's chat; unblock them on Friends">blocked by you</span>` : x?.hidden ? html`<span class="tag" title="Only you see this">hidden by you</span>` : ''}</span>
+          <span class="sets-member-controls">
+            <span class="sets-member-rights">${rightsSelect('rights', m.rights)}
+              ${m.rights === 'view' ? html`<label class="check small"><input type="checkbox" name="chat"${m.chat ? ' checked' : ''}> <span>may use the chat</span></label>` : ''}</span>
+            <span class="sets-member-actions small">${friendButton(m.id, friends.get(m.id) ?? 'none')}
+              ${x?.chat && !x.blocked ? html`<button type="button" class="link-button" data-hide="${m.id}" data-on="${x.hidden ? '0' : '1'}" title="${x.hidden ? 'Show their messages again' : 'Hide their messages in your view of the chat — no one is told'}">${x.hidden ? 'Show their messages' : 'Hide in the chat'}</button>` : ''}
+              ${x?.chat ? html`<button type="button" class="link-button" data-chat-${x.removed ? 'readmit' : 'out'}="${m.id}">${x.removed ? 'Let back into the chat' : 'Remove from the chat'}</button>` : ''}
+              <button type="button" class="link-button" data-report="${m.id}">Report</button>
+              <button type="button" class="link-button" data-owner="${m.id}" title="They own the set from then on; you stay as a member with full rights">Hand the set over</button>
+              <button type="button" class="link-button danger-link" data-remove="${m.id}">Remove from the set</button></span></span></li>`; })}</ul>`
           : html`<p class="muted small">No members yet — invite friends or send a link.</p>`}</section>
 
       <section><h3>Invite a friend</h3>
@@ -764,9 +800,9 @@ function ownerPanel(shareD: HTMLDetailsElement, membersD: HTMLDetailsElement, se
         ${sh.invitations.length ? html`<ul class="small">${sh.invitations.map((i) => html`<li>${i.name ?? '—'} — ${RIGHTS_NAME[i.rights]}${i.chat && i.rights === 'view' ? ', with the chat' : ''}
           <span class="muted">invited ${day(i.invited_at)}, not answered yet</span> <button type="button" class="link-button" data-cancel="${i.id}">Cancel</button></li>`)}</ul>` : ''}</section>
 
-      <section><h3>What each part may do</h3><dl class="sets-rights-legend small">
+      <details class="sets-legend"><summary><h3>What each part may do</h3></summary><dl class="sets-rights-legend small">
         ${(['owner', ...RIGHTS] as RightsKey[]).map((r) => html`<dt>${RIGHTS_NAME[r]}</dt><dd>${rightsText(r, sh.settings)}</dd>`)}</dl>
-        <p class="muted small">Every member sees their own part in these words at the top of the set, and on an invitation or link before they join.</p></section>
+        <p class="muted small">Every member sees their own part in these words at the top of the set, and on an invitation or link before they join.</p></details>
       <p class="sets-panel-msg small" role="status"></p></div>`);
     const smsg = sbox.querySelector<HTMLElement>('.sets-panel-msg')!;
     const mmsg = mbox.querySelector<HTMLElement>('.sets-panel-msg')!;
@@ -775,7 +811,7 @@ function ownerPanel(shareD: HTMLDetailsElement, membersD: HTMLDetailsElement, se
     const mfail = (err: Error) => { mmsg.textContent = err.message; };
     /** the account's public name (set on the account page) — sharing with someone needs one */
     const typedName = () => publicName ?? '';
-    const again = (note: string, w: Where = 'share') => getSharing(id).then((x) => { if (x) draw(x, note, w); }).catch(w === 'share' ? fail : mfail);
+    const again = (note: string, w: Where = 'share') => load().then((x) => { if (x) draw(x, note, w); }).catch(w === 'share' ? fail : mfail);
     const changed = (note: string, w: Where = 'share') => getSet({ own: id }).then((r) => { if (r) Object.assign(set, r.set); return again(note, w); });
     sbox.querySelector<HTMLFormElement>('.sets-vis-form')!.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -811,6 +847,18 @@ function ownerPanel(shareD: HTMLDetailsElement, membersD: HTMLDetailsElement, se
         changeMember(id, b.dataset.owner!, { action: 'owner' }).then(reload).catch(mfail);
       }
     }));
+    friendButtons(mbox, (n) => { void again(n, 'members'); }, mfail);
+    mbox.querySelectorAll<HTMLButtonElement>('[data-hide]').forEach((b) => b.addEventListener('click', () => {
+      hideInSetChat(id, b.dataset.hide!, b.dataset.on === '1').then(() => again(b.dataset.on === '1' ? 'Hidden in your view of the chat.' : 'Shown again.', 'members')).catch(mfail);
+    }));
+    mbox.querySelectorAll<HTMLButtonElement>('[data-chat-out]').forEach((b) => b.addEventListener('click', async () => {
+      if (await ask('Everyone sees that they were removed; they stay a member of the set.', { title: 'Remove them from the chat?', ok: 'Remove', danger: true })) setChatMember(id, 'remove', b.dataset.chatOut!).then(() => again('Removed from the chat.', 'members')).catch(mfail);
+    }));
+    mbox.querySelectorAll<HTMLButtonElement>('[data-chat-readmit]').forEach((b) => b.addEventListener('click', () => { setChatMember(id, 'readmit', b.dataset.chatReadmit!).then(() => again('Back in the chat.', 'members')).catch(mfail); }));
+    mbox.querySelectorAll<HTMLButtonElement>('[data-report]').forEach((b) => b.addEventListener('click', async () => {
+      const note = await askText('Report this member (their name or what they do) to the site\'s administrators?', { title: 'Report this member', label: 'What happened? (optional)', multiline: true, maxLength: 1000, ok: 'Report' });
+      if (note !== null) reportSetChat(id, { account: b.dataset.report! }, note).then(() => again('Reported — thank you.', 'members')).catch(mfail);
+    }));
     const invite = mbox.querySelector<HTMLFormElement>('.sets-invite-form');
     invite?.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -842,7 +890,7 @@ function ownerPanel(shareD: HTMLDetailsElement, membersD: HTMLDetailsElement, se
   };
   for (const d of [shareD, membersD]) d.addEventListener('toggle', () => {
     if (!d.open) return;
-    Promise.all([getSharing(id), getSets()]).then(([sh, r]) => { publicName = r?.public_name ?? null; if (sh) draw(sh); })
+    load().then((sh) => { if (sh) draw(sh); })
       .catch(() => render(d.querySelector<HTMLElement>('.sets-share-body')!, html`<p class="muted">This could not be loaded.</p>`));
   });
 }

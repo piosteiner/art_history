@@ -3591,7 +3591,7 @@ test('own views on the start page: saved with a description, opened with its tex
   await expect(mine).toContainText('Your views');
   await mine.locator('.my-save').click();
   await mine.locator('input[name=name]').fill('My Sebastian');
-  await mine.locator('.md-editor textarea, textarea[name=description]').first().fill('Where it went');
+  await mine.locator('.md-editor .cm-content').fill('Where it went');
   await mine.locator('button[type=submit]').click();
   await expect(page).toHaveURL(/\/\?mine=5$/);
   expect(posts.find((p) => p.startsWith('/views:'))).toContain('query=artworks%3Dheiliger-sebastian');

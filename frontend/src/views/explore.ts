@@ -12,7 +12,6 @@
 import { ask } from '../dialog';
 import { deleteMyView, getClusters, getEntityMap, getEventsMap, getFeatured, getMyViews, getPlacesMap, getPresence, getPreviews, getProvenances, getSites, getView, listAll, PLURAL, previewDescription, saveMyView, updateMyView, type MyView } from '../api';
 import { account } from '../account';
-import { markdownEditor } from '../md-editor';
 import { wireTextLinks } from '../glossary';
 import { entries } from '../catalog';
 import { creatorsOf, href, html, linksInNewTab, render, trusted } from '../html';
@@ -287,8 +286,9 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
       editing = v;
       nameIn.value = v?.name ?? '';
       area.value = v?.description ?? '';
+      area.dispatchEvent(new Event('md-set'));   // the editor shows it too, once it exists
       form.hidden = false;
-      if (!form.querySelector('.md-editor')) markdownEditor(area, previewDescription);
+      if (!form.querySelector('.md-editor')) void import('../md-editor').then((m) => { if (!form.querySelector('.md-editor')) m.markdownEditor(area, previewDescription); });
       nameIn.focus();
     };
     const msg = myEl.querySelector<HTMLElement>('.my-msg')!;

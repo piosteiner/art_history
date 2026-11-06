@@ -1700,3 +1700,29 @@ p.sets-tools.sets-card { display: flex; }
 .site-dialog-field textarea { resize: vertical; }
 .site-dialog-buttons { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .5rem; margin-top: .2rem; }
 .site-dialog .site-dialog-ok.danger-fill { background: var(--prov-d); border-color: var(--prov-d); color: #fff; }
+/* follow-ups (owner 2026-11-06): Hide at the foot of "About", panels across the card, member rows name ⟷ controls */
+.sets-about[open] .sets-about-toggle { display: none; }
+.sets-about-foot { display: flex; justify-content: flex-end; margin: .6rem 0 0 !important; }
+.sets-manage .sets-panel, .sets-manage .sets-copy-info { max-width: none; }
+.sets-panel h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; margin: 0 0 .5rem; }
+.sets-panel > section > h3:first-child { margin-top: 0; }
+.sets-legend > summary { display: flex; align-items: baseline; gap: .5rem; cursor: pointer; list-style: none; }
+.sets-legend > summary::-webkit-details-marker { display: none; }
+.sets-legend > summary::before { content: '▸'; color: var(--muted); font-size: .8rem; transition: transform .15s; }
+.sets-legend[open] > summary::before { transform: rotate(90deg); }
+.sets-legend > summary h3 { margin: 0; }
+.sets-legend[open] > summary { margin-bottom: .5rem; }
+.sets-panel-members { gap: 0 !important; }
+.sets-panel-members > li { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "who rights" "actions actions"; align-items: center; gap: .35rem 1rem; padding: .6rem 0; border-top: 1px solid var(--line); }
+.sets-panel-members .sets-member-who { grid-area: who; }
+.sets-panel-members .sets-member-controls { display: contents; }
+.sets-panel-members .sets-member-rights { grid-area: rights; }
+.sets-panel-members .sets-member-actions { grid-area: actions; }
+.sets-panel-members > li:last-child { border-bottom: 1px solid var(--line); }
+.sets-member-who { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .6rem; min-width: 12rem; }
+.sets-member-controls { display: flex; flex-direction: column; align-items: flex-end; gap: .3rem; margin-left: auto; text-align: right; }
+.sets-member-rights { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; justify-content: flex-end; }
+.sets-member-controls .sets-member-actions { display: flex; flex-wrap: wrap; gap: .2rem .9rem; justify-content: flex-end; }
+@media (max-width: 40rem) { .sets-panel-members > li { grid-template-columns: 1fr; grid-template-areas: "who" "rights" "actions"; } .sets-member-rights, .sets-member-controls .sets-member-actions { justify-content: flex-start; } }
+/* the Markdown editor (CodeMirror, md-editor.ts): taller in the set's edit form */
+.sets-manage .sets-edit-form .md-editor { --md-min-height: 14rem; }

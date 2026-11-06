@@ -4,6 +4,11 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Site: Markdown editor with live styling, members list
+- **What:** `frontend/src/md-editor.ts` on CodeMirror 6 (same packages and versions as the CMS editor, added to `frontend/package.json` exactly pinned; loaded only by the pages that edit a text, own chunk ~117 KB gzip): live styling of bold, italics, headings, ==highlight==, [[links]], `[[` completion from the site search; the textarea stays in the form, hidden and in sync (`md-set` event for values set from outside). Set page: owner's Members panel with name ⟷ controls rows, friend requests (`friendAction`), hide in the chat, report, chat removal (the separate members section only for non-owners now); one Manage panel open at a time; "What each part may do" folded; "Hide ▴" at the foot of About. Tests updated (`.cm-content`, mock `/friends`, `/members`, `/chat/hide`).
+- **Why:** owner 2026-11-06 — formatting "like in Obsidian" as in the CMS; the members list and panel layout as asked.
+- **Revert:** `git revert` the commit (and `npm ci` in frontend/); Pages redeploys.
+
 ### Site: set page follow-ups, the site's own dialogs
 - **What:** `frontend/src/dialog.ts` (`ask`/`askText`, a modal `<dialog>` in the site's style) replaces every `confirm()`/`prompt()` on the site (sets, friends, account, explore); set page: "About this set" collapsible and remembered per set (localStorage, convenience only), "Sharing" and "Members" as two panels, no public-name field in the panel (notice → `/account#public-name`, highlighted there), hours and veto shown only for binding votes, "Make my own copy" behind an explanation with Cancel, edit form across the card; study cards blank every word of the name except filler words (`FILLER` in `blank()`). Tests: `answerDialogs()` in `tests/sets.spec.ts`. Site changelog draft: seven bullets.
 - **Why:** owner 2026-11-06 — browser dialogs can be blocked by add-ons and don't look like the site; the rest as asked on the set page; "Li" stayed visible in a Li Jun card while "the" was blanked everywhere.
