@@ -6,7 +6,8 @@ const api = async (request, path) => (await request.get(`${API}${path}`, { heade
 const cleanup = () => sql(`DELETE FROM relationships WHERE subject_type = 'literature' OR object_type = 'literature';
   DELETE FROM bibliography WHERE slug = 'test-lit-tyler-2001';
   DELETE FROM literary_works WHERE parent_id IS NOT NULL AND slug LIKE 'test-lit-%'; DELETE FROM literary_works WHERE slug LIKE 'test-lit-%';
-  DELETE FROM people WHERE slug = 'test-lit-murasaki'; DELETE FROM artworks WHERE slug = 'test-lit-scroll'`);
+  DELETE FROM people WHERE slug = 'test-lit-murasaki'; DELETE FROM artworks WHERE slug = 'test-lit-scroll';
+  DELETE FROM glossary WHERE slug = 'test-lit-heroic-epic'; DELETE FROM glossary WHERE slug = 'test-lit-epic-poem'`);
 test.beforeAll(cleanup);
 test.afterAll(cleanup);
 
@@ -78,4 +79,37 @@ test('a chapter and its work are not "not connected to anything"', () => {
   expect(unconnected()).toBe('0');
   sql(`DELETE FROM literary_works WHERE slug = 'test-lit-lonely-1'`);
   expect(unconnected()).toBe('1');                                                          // a work alone still is
+});
+
+// 233: the kind is a literary genre of the glossary — typed in any language, stored as the term's name, found by every
+// name of the genre and of its broader terms; ?kind= takes a term and the narrower ones; a renamed term carries the works
+test('a literary work\'s kind is a genre: Heldenepos → heroic epic, found as Epos and epic poem; filtered by the broader term', async ({ userA, request }) => {
+  sql(`INSERT INTO glossary (slug, name, category, definition, names) VALUES ('test-lit-epic-poem', 'test epic poem', 'literary genre', 'A long narrative poem.',
+         '[{"text": "Testepos", "lang": "de", "role": "translation"}]');
+       INSERT INTO glossary (slug, name, category, definition, parent_id, names) VALUES ('test-lit-heroic-epic', 'test heroic epic', 'literary genre', 'An epic about a hero.',
+         (SELECT id FROM glossary WHERE slug = 'test-lit-epic-poem'), '[{"text": "Testheldenepos", "lang": "de", "role": "translation"}]')`);
+  await userA.goto('/literary-works/new');
+  await userA.fill('#f-name', 'Test Nibelungenlied');
+  await userA.fill('#f-slug', 'test-lit-nibelungen');
+  await userA.fill('#f-kind', 'Testheldenepos');
+  await userA.keyboard.press('Escape');
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/\/literary-works\/test-lit-nibelungen\?done=created/);
+  const work = await api(request, '/literary-works/test-lit-nibelungen');
+  expect(work.kind).toBe('test heroic epic');
+  expect(work.kind_term).toEqual({ slug: 'test-lit-heroic-epic', name: 'test heroic epic' });
+
+  // the list's search field "Kind" matches every name of the genre and of the broader one
+  await settled();
+  const row = (await api(request, '/literary-works?limit=500')).data.find((w) => w.slug === 'test-lit-nibelungen');
+  const kind = row.search_fields.find((f) => f.label === 'Kind');
+  expect(kind.text).toBe('test heroic epic');
+  for (const word of ['Testheldenepos', 'Testepos', 'test epic poem']) expect(kind.match).toContain(word);
+  // ?kind= by the broader term (slug or a name in another language) finds the narrower one's works
+  for (const k of ['test-lit-epic-poem', 'Testepos', 'test heroic epic']) {
+    expect((await api(request, `/literary-works?kind=${encodeURIComponent(k)}`)).data.map((w) => w.slug)).toContain('test-lit-nibelungen');
+  }
+  // the term renamed: the work's kind follows
+  sql(`UPDATE glossary SET name = 'test heroic poem' WHERE slug = 'test-lit-heroic-epic'`);
+  expect(sql(`SELECT kind FROM literary_works WHERE slug = 'test-lit-nibelungen'`)).toBe('test heroic poem');
 });

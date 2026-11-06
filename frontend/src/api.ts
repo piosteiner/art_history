@@ -367,7 +367,7 @@ export const copyOwnSet = (id: string) => account<{ set: { id: string; name: str
 /** Whether "Create an account" is offered (asked only where an account is the point: /sets, /account). */
 export const getSignup = () => account<{ open: boolean; url: string }>('/signup');
 /** The admin host's sign-up form, back to `next` (an address of this site) afterwards. */
-export const signupUrl = (next: string) => (ADMIN ? `${ADMIN}/signup?${new URLSearchParams({ next })}` : null);
+export const signupUrl = (next: string) => (ADMIN ? `${ADMIN}/signup?${new URLSearchParams({ next, theme: siteTheme() })}` : null);
 /** This account's private reference images of a work (184) — null when not logged in. */
 export const getPrivateImages = (slug: string) =>
   account<{ images: PrivateImage[] }>(`/artworks/${encodeURIComponent(slug)}/private-images`).then((r) => r?.images ?? null);
@@ -530,7 +530,15 @@ export const joinSet = (code: string, publicName = '') => account<{ set: { id: s
 export const copySet = (code: string) => account<{ set: { id: string; name: string } }>(`/shared/${code}/copy`, form({})).then((r) => r?.set ?? null);
 
 /** The CMS login, back to `next` (an address of this site) afterwards. */
-export const loginUrl = (next: string) => (ADMIN ? `${ADMIN}/login?${new URLSearchParams({ next })}` : null);
+/** The site's light/dark choice (theme.ts) — passed to the login and sign-up pages on the admin host, which can't read
+ *  this site's storage (another origin) and should look the same (owner 2026-11-06) */
+function siteTheme() {
+  try {
+    const v = localStorage.getItem('arthistory:theme');
+    return v === 'light' || v === 'dark' ? v : 'auto';
+  } catch { return 'auto'; }
+}
+export const loginUrl = (next: string) => (ADMIN ? `${ADMIN}/login?${new URLSearchParams({ next, theme: siteTheme() })}` : null);
 
 // The quiz (API /v1/quiz, backend src/routes/quiz.js): a new draw every time — never from the cache above.
 async function fresh<T>(path: string, params: Params = {}): Promise<T> {

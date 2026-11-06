@@ -2,6 +2,31 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-06
+
+### Logging in from the site works in Brave/Chrome; the login pages follow the site's theme and lead back
+- **What:** owner 2026-11-06 (Brave: no response after logging in, a reload needed; Firefox fine). The CMS's
+  Content-Security-Policy had `form-action 'self'`; Chromium browsers apply form-action to the redirect after a form
+  post too, so the 303 from /login (and /signup, /logout) to the site was silently stopped — Firefox doesn't check
+  redirects. `form-action` now allows `config.corsOrigin` (`src/app.js`). The site passes its light/dark choice to the
+  login and sign-up pages (`?theme=` in `loginUrl`/`signupUrl`, `frontend/src/api.ts`); `static/theme.js` uses it on
+  /login and /signup (kept for the tab in sessionStorage, the CMS's own choice untouched). Both pages have
+  "← Back to the site" (to where Log in was pressed). Test: `auth.spec.js` (fails without the fix: ERR_ABORTED).
+- **Revert:** `git revert`.
+
+### A literary work's kind is a glossary genre (232, 233)
+- **What:** owner 2026-11-06 ("the Nibelungenlied should appear when searching for Heldenepos as well as Epos or epic
+  poem"). Glossary category `literary genre` (232, its own migration — a new enum value can't be used in the
+  transaction that adds it). `literary_works.kind_term_id`, set by a BEFORE trigger from the kind typed (`term_by_name`,
+  any language; the term's name stored), `literary_kind_names()` (the term and its broader terms, recursive CTE) as the
+  match of the search field "Kind" (`entry_search_fields`, patched from its view definition); terms renamed / given
+  names → the works follow (trigger on glossary); `derived_touch` termtree queues the works; `?kind=` on the API list
+  takes a term with its narrower ones; detail `kind_term` (site links the kind); the kind citable (P136). Content: the
+  genres "epic poem" (Q37484) › "heroic epic" with names and definitions cited to Wikipedia (en Epic poetry, de Epos,
+  de Heldendichtung), the Nibelungenlied's kind "heroic epic" cited to de.wikipedia "Nibelungenlied".
+- **Revert:** `git revert`; `ALTER TABLE literary_works DROP COLUMN kind_term_id`, drop the functions and the trigger,
+  the view as in 217; an enum value can't be dropped (unused, it does no harm).
+
 ## 2026-11-05
 
 ### Event names written like English titles (231)

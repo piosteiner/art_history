@@ -49,3 +49,32 @@ test('the live WebSocket needs a session and the admin origin', async ({ userA }
   expect(await attempt({ Origin: BASE, Cookie: cookie }, '/other')).toBe(404);  // wrong path
   expect(await attempt({ Origin: BASE, Cookie: cookie })).toBe('open');
 });
+
+// The site's login (owner 2026-11-06): the redirect back to the site after the form is allowed by the page's
+// Content-Security-Policy (form-action) — Chromium stops it otherwise and the page just stays; the login and sign-up
+// pages take the site's light/dark choice (?theme=, kept for the tab) and lead back to the site.
+test('logging in from the site: back to the site (Chromium checks form-action on the redirect), the site\'s theme, a way back', async ({ browser }) => {
+  const fs = require('fs');
+  const { AUTH_FILE } = require('./env');
+  const SITE = 'https://arthistory.piogino.ch';
+  const next = `${SITE}/sets?login=1`;
+  const context = await browser.newContext({ baseURL: BASE, serviceWorkers: 'block' });
+  const page = await context.newPage();
+  // the document after the redirect can't be intercepted (Playwright, Chromium); what it would load is refused
+  await page.route('**/*', (route) => (route.request().url().startsWith(`${SITE}/`) ? route.abort() : route.continue()));
+  const res = await page.goto(`/login?${new URLSearchParams({ next, theme: 'light' })}`);
+  expect(res.headers()['content-security-policy']).toContain(`form-action 'self' ${SITE}`);
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+  await expect(page.locator('.login-back a')).toHaveAttribute('href', next);
+  // the sign-up page in the same tab keeps the site's choice and leads back too
+  await page.goto(`/signup?${new URLSearchParams({ next })}`);
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+  await expect(page.locator('.login-back a')).toHaveAttribute('href', next);
+  await page.goto(`/login?${new URLSearchParams({ next, theme: 'auto' })}`);
+  await expect(page.locator('html')).not.toHaveAttribute('data-theme', /./);
+  await page.fill('#u', 'tester2');
+  await page.fill('#p', JSON.parse(fs.readFileSync(AUTH_FILE, 'utf8')).tester2);
+  // the form's redirect reaches the site (before the fix, Chromium stayed on the login page)
+  await Promise.all([page.waitForURL(next, { waitUntil: 'commit' }), page.click('form[action="/login"] button')]);
+  await context.close();
+});

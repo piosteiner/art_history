@@ -20,7 +20,7 @@ const recent = new Map();   // ip → [times of sign-ups in the last hour]
 const tooMany = (ip) => (recent.get(ip) || []).filter((t) => Date.now() - t < 3600e3).length >= PER_HOUR;
 const count = (ip) => recent.set(ip, [...(recent.get(ip) || []).filter((t) => Date.now() - t < 3600e3), Date.now()]);
 
-const page = ({ error, next, values = {}, closed }) => html`<div class="login signup"><h1>Create an account</h1>
+const page = ({ error, next, values = {}, closed }) => html`<div class="login signup"><p class="login-back small"><a href="${next || config.corsOrigin}">← Back to the site</a></p><h1>Create an account</h1>
   ${closed ? html`<p class="flash warn">${closed}</p>` : html`
   <p class="muted small">For the site <a href="${config.corsOrigin}">${config.corsOrigin.replace(/^https?:\/\//, '')}</a>: your own study sets
     (to learn as index cards, to share, to edit together) and your quiz results. Not the CMS. No e-mail address needed.</p>

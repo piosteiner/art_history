@@ -10,6 +10,17 @@
     var v = localStorage.getItem(KEY);
     if (v === 'light' || v === 'dark') choice = v;
   } catch (e) { /* no storage: auto */ }
+  // The login and sign-up pages for the public site (owner 2026-11-06) follow the site's own choice, which the site
+  // passes as ?theme=auto|light|dark (it lives in the site's storage, another origin) — kept for this tab, so the
+  // way from "Log in" to "Create one" and back looks the same; the CMS's own choice is left as it is.
+  if (/^\/(login|signup)\/?$/.test(location.pathname)) {
+    try {
+      var site = new URLSearchParams(location.search).get('theme');
+      if (site === 'auto' || site === 'light' || site === 'dark') sessionStorage.setItem('arthistory-site:theme', site);
+      else site = sessionStorage.getItem('arthistory-site:theme');
+      if (site === 'auto' || site === 'light' || site === 'dark') choice = site;
+    } catch (e) { /* no storage: the CMS's choice */ }
+  }
 
   function apply() {
     if (choice === 'auto') document.documentElement.removeAttribute('data-theme');

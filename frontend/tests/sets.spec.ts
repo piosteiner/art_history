@@ -717,6 +717,12 @@ test('the account menu in the header: logged out Log in and Sign up; logged in t
   await visitor.goto('/quiz');
   await expect(visitor.locator('.account-login')).toHaveAttribute('href', /^http:\/\/admin\.test\/login\?next=.*%2Fquiz%3Flogin%3D1/);
   await expect(visitor.locator('.account-signup')).toHaveAttribute('href', /^http:\/\/admin\.test\/signup\?next=/);
+  // the site's light/dark choice goes along (the login pages live on another origin, 2026-11-06)
+  await expect(visitor.locator('.account-login')).toHaveAttribute('href', /&theme=auto$/);
+  await visitor.evaluate(() => localStorage.setItem('arthistory:theme', 'light'));
+  await visitor.locator('.account-login').dispatchEvent('pointerdown');
+  await expect(visitor.locator('.account-login')).toHaveAttribute('href', /&theme=light$/);
+  await expect(visitor.locator('.account-signup')).toHaveAttribute('href', /&theme=light$/);
   await expect(visitor.locator('.nav a', { hasText: 'Sets' })).toHaveAttribute('href', '/sets/shared');
   await visitor.close();
   expect(errors).toEqual([]);

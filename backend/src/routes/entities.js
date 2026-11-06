@@ -316,6 +316,7 @@ const ENTITIES = {
               AND r.object_type = 'literature' AND r.object_id IN (SELECT t.id UNION ALL SELECT c.id FROM literary_works c WHERE c.parent_id = t.id)
               ORDER BY r.id, i.position, i.id LIMIT 1) AS image_url`,
     detail: `t.kind, range_json(t.written, t.written_label) AS written, t.description_md, ${LIT_AUTHORS}, t.part_number,
+           (SELECT jsonb_build_object('slug', g.slug, 'name', g.name) FROM glossary g WHERE g.id = t.kind_term_id) AS kind_term,  -- the genre's term (233)
              -- a part: its whole, and the parts before and after it (previous / next on its page)
              (SELECT jsonb_build_object('slug', w.slug, 'name', w.name, 'parts_count', (SELECT count(*)::int FROM literary_works s WHERE s.parent_id = w.id),
                 'previous', (SELECT jsonb_build_object('slug', s.slug, 'name', s.name, 'part_number', s.part_number) FROM literary_works s
@@ -341,7 +342,10 @@ const ENTITIES = {
                  WHERE r.relationship_type = 'illustrates' AND r.object_type = 'literature' AND r.subject_type = 'artwork'
                  ORDER BY w.id, p.part_sort NULLS FIRST) x) AS illustrations`,
     md: ['description_md'],
-    filters: { kind: 't.kind = $', part_of: "t.parent_id = entity_id('literature', $)",
+    // ?kind=: the name as stored, or a genre's term (slug or any of its names) with every narrower one (233): kind=epic-poem
+    // finds the heroic epics too
+    filters: { kind: `(t.kind = $ OR t.kind_term_id IN (SELECT glossary_with_narrower(coalesce((SELECT id FROM glossary WHERE slug = $), term_by_name($, literary_kind_categories())))))`,
+      part_of: "t.parent_id = entity_id('literature', $)",
       author: "EXISTS (SELECT 1 FROM relationships r WHERE r.subject_type = 'literature' AND r.subject_id IN (t.id, t.parent_id) AND r.relationship_type = 'written_by' AND r.object_id = coalesce(entity_id('person', $), entity_id('artist', $)))",
       top: "(t.parent_id IS NULL) = ($ = '1')" },
     order: `coalesce((SELECT p.name FROM literary_works p WHERE p.id = t.parent_id), t.name) COLLATE sort_natural, t.part_sort NULLS FIRST, ${sortKey('literature', 't', 'name')}`,

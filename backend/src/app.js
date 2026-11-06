@@ -20,7 +20,10 @@ app.use(helmet({
   contentSecurityPolicy: {
     // Images from any https host: artwork previews (Wikimedia, museum sites — image_url only requires https).
     // Scripts, styles, frames etc. stay 'self' (helmet's defaults).
-    directives: { 'img-src': ["'self'", 'data:', 'https:'] },
+    // form-action: the login, sign-up and logout forms end in a redirect to the public site — Chromium browsers (Brave,
+    // Chrome, Edge) apply form-action to that redirect too and silently stop it (owner 2026-11-06: no response after
+    // logging in on Brave; Firefox doesn't check redirects)
+    directives: { 'img-src': ["'self'", 'data:', 'https:'], 'form-action': ["'self'", config.corsOrigin] },
   },
 }));
 

@@ -144,7 +144,7 @@ export interface SourceHint { siglum: string; citation: string }
 export interface EntryHint { type: EntityType; slug: string; name: string; subtitle: string | null; image_url: string | null; excerpt: string | null }
 
 export interface GlossaryHint { name: string; category: TermCategory; definition: string | null }
-export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'style' | 'format' | 'object type' | 'group of works' | 'mounting' | 'performing arts' | 'heritage designation' | 'calendar' | 'other';  // group of works: API 131, mounting: 133, performing arts: 145, heritage designation: 165
+export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'style' | 'format' | 'object type' | 'group of works' | 'mounting' | 'performing arts' | 'heritage designation' | 'calendar' | 'literary genre' | 'other';  // group of works: API 131, mounting: 133, performing arts: 145, heritage designation: 165
 
 // ---- countries and polities ---------------------------------------------------------------------
 
@@ -577,7 +577,7 @@ export interface LiteraturePart { slug: string; name: string; part_number: strin
  *  works of art illustrating it or one of its chapters. */
 export interface Literature extends DetailBase, Named {
   type: 'literature';
-  name: string; alt_names: string[]; kind: string | null; written: DateRange | null; part_number: string | null;
+  name: string; alt_names: string[]; kind: string | null; /** the genre as a glossary term (API 233) */ kind_term?: Ref | null; written: DateRange | null; part_number: string | null;
   authors: LiteratureItem['authors'];
   part_of: (Ref & { parts_count: number; previous: LiteraturePart | null; next: LiteraturePart | null }) | null;
   /** The contents: each part with its name in the original language and a short summary. */

@@ -406,7 +406,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
         title: e.name, subtitle: [e.kind, e.authors.map((a) => a.name).join(', '), e.written?.label].filter(Boolean).join(' · '), text: e.description_html, images: [],
         facts: [
           ['Written', withEra(dateLabel(e.written), e.eras?.written)],
-          ['Kind', e.kind],
+          ['Kind', e.kind_term ? link('term', e.kind_term.slug, e.kind ?? e.kind_term.name) : e.kind],   // a genre of the glossary (API 233)
           [e.authors.length > 1 ? 'Authors' : 'Author', authors],
           ['Part of', partOf],
           ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],

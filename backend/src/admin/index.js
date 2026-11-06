@@ -44,7 +44,9 @@ router.use(loadUser);
 // ?next=<an address of the public site>: back there after logging in ("Log in" on the site, routes/site-account.js).
 // A site-only account (member, 220) goes to the site afterwards anyway: the CMS isn't theirs.
 const accounts = require('./accounts');
-const loginPage = (error, next, signupOpen) => html`<div class="login"><h1>${next ? 'Art History — log in' : 'Art history admin'}</h1>
+// "← Back to the site": where "Log in" was pressed (next), else the site's start page (owner 2026-11-06)
+const backLink = (next) => html`<p class="login-back small"><a href="${next || config.corsOrigin}">← Back to the site</a></p>`;
+const loginPage = (error, next, signupOpen) => html`<div class="login">${backLink(next)}<h1>${next ? 'Art History — log in' : 'Art history admin'}</h1>
   ${error ? html`<p class="flash error">${error}</p>` : ''}
   <form method="post" action="/login" class="form">
     ${next ? html`<input type="hidden" name="next" value="${next}"><p class="muted small">You'll return to the site afterwards.</p>` : ''}
