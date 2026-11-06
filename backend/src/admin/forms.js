@@ -580,7 +580,8 @@ function sectionsOf(t) {
 // draft) and saved with the entry on Create.
 // A new entry asks where its details come from (citations.newEntrySection) — not a bibliography entry: it is the
 // source itself, its link is its own URL field (owner 2026-11-04).
-function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = null, pendingImages = null, pendingCites = null, pendingIds = null }) {
+// queue: the Quality queue the page was opened from (?queue=…) — the form posts with it, so saving returns to the queue
+function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = null, pendingImages = null, pendingCites = null, pendingIds = null, queue = null }) {
   let pending = [];
   try { pending = pendingImages ? JSON.parse(pendingImages) : []; } catch { pending = []; }
   ctx = { ...ctx, type: t.type, areaKey: Object.keys(t.fields).find((k) => t.fields[k] === 'area'),      // map draws into areaKey
@@ -592,7 +593,7 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
   return html`
   ${errors.length ? html`<ul class="errors">${errors.map((e) => html`<li>${e}</li>`)}</ul>` : ''}
   ${ctx.errorKeys && ctx.errorKeys.size ? html`<p class="small error-fields">Marked in red: ${[...ctx.errorKeys].filter((k) => k === 'slug' || t.fields[k]).map((k, i) => html`${i ? ' · ' : ''}<a href="#f-${k}" data-error-field="${k}">${k === 'slug' ? 'Slug' : fieldLabel(t.type, k)}</a>`)}</p>` : ''}
-  <form method="post" action="${action}" class="form"${ctx.groupKinds && ctx.groupKinds.length ? html` data-group-kinds="${ctx.groupKinds.join('|')}"` : ''}${(() => { const r = relevance.rulesFor(t.type, ctx); return r ? html` data-relevance="${JSON.stringify(r)}"` : ''; })()}${collab ? html` data-collab="${collab.key}" data-state="${collab.state}"` : html` data-draft="1"`}${collab && collab.published ? html` data-published="${Buffer.from(JSON.stringify(collab.published)).toString('base64')}" data-published-url="${action}/published.json"` : ''}>
+  <form method="post" action="${action}${queue ? `?queue=${encodeURIComponent(queue)}` : ''}" class="form"${ctx.groupKinds && ctx.groupKinds.length ? html` data-group-kinds="${ctx.groupKinds.join('|')}"` : ''}${(() => { const r = relevance.rulesFor(t.type, ctx); return r ? html` data-relevance="${JSON.stringify(r)}"` : ''; })()}${collab ? html` data-collab="${collab.key}" data-state="${collab.state}"` : html` data-draft="1"`}${collab && collab.published ? html` data-published="${Buffer.from(JSON.stringify(collab.published)).toString('base64')}" data-published-url="${action}/published.json"` : ''}>
     ${version ? html`<input type="hidden" name="version" value="${version}">` : ''}
     ${isNew && ctx.duplicates ? duplicates.confirmBox(t, ctx.duplicates) : ''}
     ${isNew && ctx.typeCheck ? html`<div class="type-check">${ctx.typeCheck}</div>` : ''}

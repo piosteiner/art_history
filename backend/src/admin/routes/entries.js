@@ -564,6 +564,8 @@ router.get('/:plural/:slug', async (req, res) => {
   // after a change just made: until this entry's derived data — findings, its links — is computed again (a moment;
   // the quality box says if not yet)
   const qaQueued = !(await quality.settled(adminPool, t.type, e.id));
+  // opened from the Quality queue: Edit keeps it, so Publish comes back here with the queue's bar
+  const inQueue = typeof req.query.queue === 'string' && req.query.queue ? `?queue=${encodeURIComponent(req.query.queue)}` : '';
   const [outgoing, incoming, types, entities] = await Promise.all([
     readRelationships(adminPool, t.type, e.id),
     // links towards this entry, plus the derived ones from it (edges, 031: provenance, the creator field — stored in
@@ -639,7 +641,7 @@ router.get('/:plural/:slug', async (req, res) => {
     body: html`<p class="muted"><a href="/${t.folder}">${humanize(t.folder)}</a> / ${e.slug}
       <span class="small">· no. <b>${e.public_id}</b> · <a href="${SITE}/${t.folder}/${e.public_id}/${e.slug}" target="_blank" rel="noopener" title="the public address — the number stays when the name changes">public page ↗</a></span></p>
       <div class="bar"><h1 class="grow">${name}</h1>
-        <a class="button" href="/${t.folder}/${e.slug}/edit">Edit</a>
+        <a class="button" href="/${t.folder}/${e.slug}/edit${inQueue}">Edit</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/enrich" title="Wikidata, the GND and SIKART on one page">Enrich…</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/wikidata">Wikidata…</a>
         <a class="button secondary" href="/open-cases/new?type=${t.type}&amp;slug=${encodeURIComponent(e.slug)}&amp;back=${encodeURIComponent(`/${t.folder}/${e.slug}`)}" title="Something to follow up — a book to consult, a museum to ask — also when the Quality page finds nothing">Open a case…</a>
@@ -651,7 +653,7 @@ router.get('/:plural/:slug', async (req, res) => {
       ${autoFlag ? html`<div class="flash warn auto-banner"><b>To complete:</b> created automatically
         ${autoFlag.from ? html`while adding <a href="/${BY_TYPE[autoFlag.from.type].folder}/${autoFlag.from.slug}">${autoFlag.from.name}</a>` : ''}
         on ${autoFlag.created_at.toISOString().slice(0, 10)} — it has little more than a name.
-        <a class="button" href="/${t.folder}/${e.slug}/edit">Fill in the details</a>
+        <a class="button" href="/${t.folder}/${e.slug}/edit${inQueue}">Fill in the details</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/enrich">Enrich…</a>
         <form method="post" action="/${t.folder}/${e.slug}/auto-done" class="inline"><button class="link">it's complete — remove the mark</button></form>
         <div class="muted small">The mark goes away by itself when the entry is next published.</div></div>` : ''}
@@ -939,9 +941,10 @@ router.get('/:plural/:slug/edit', async (req, res) => {
   }
   const form = entityForm({ t, slug: working.slug || e.slug, f: formFromBody(working), ctx,
     action: `/${t.folder}/${e.slug}`, errors: [], version: working.version,
-    collab: { key: `${t.type}:${e.id}:${epoch}`, state, published: drafts.formKeys(e.doc, t, e.slug) } });
+    collab: { key: `${t.type}:${e.id}:${epoch}`, state, published: drafts.formKeys(e.doc, t, e.slug) }, queue: queueOf(req) });
+  const bar = queueOf(req) ? quality.queueBar(t, e, queueOf(req), await quality.issues(adminPool, { entity: { type: t.type, id: e.id } })) : '';
   send(req, res, { title: `Edit ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'edit' },
-    body: html`<h1>Edit ${e.name}</h1>${banner}${form}${t.type === 'artwork' ? numbers.formsAfter(e) : ''}${authorityList.length ? identifiers.formsAfter(t, e) : ''}${await citeDialogs(t, e, req.user)}` });
+    body: html`<h1>Edit ${e.name}</h1>${bar}${banner}${form}${t.type === 'artwork' ? numbers.formsAfter(e) : ''}${authorityList.length ? identifiers.formsAfter(t, e) : ''}${await citeDialogs(t, e, req.user)}` });
 });
 
 // The sources of the fields on the edit page: one dialog per citable field, after the form (forms can't nest);
@@ -983,10 +986,13 @@ async function refusedEdit(req, res, t, e, result) {
   ctx.confirmNew = result.confirm || {};
   const published = drafts.formKeys((await findEntity(t, e.slug) || e).doc, t, e.slug);
   const form = entityForm({ t, slug: working.slug || e.slug, f: formFromBody(working), ctx,
-    action: `/${t.folder}/${e.slug}`, errors: result.errors, version: working.version, collab: { key: `${t.type}:${e.id}:${epoch}`, state, published } });
+    action: `/${t.folder}/${e.slug}`, errors: result.errors, version: working.version, collab: { key: `${t.type}:${e.id}:${epoch}`, state, published }, queue: queueOf(req) });
   return send(req, res, { title: `Edit ${e.name}`, status: 422, page: { type: t.type, slug: e.slug, mode: 'edit' },
     body: html`<h1>Edit ${e.name}</h1>${form}` });
 }
+
+// the Quality queue a page was opened from (?queue=…, quality.queueLink) — kept through Edit and Publish
+const queueOf = (req) => (typeof req.query.queue === 'string' && req.query.queue.length < 1000 ? req.query.queue : null);
 
 router.post('/:plural/:slug', async (req, res) => {
   const { t } = req;
@@ -996,7 +1002,9 @@ router.post('/:plural/:slug', async (req, res) => {
   if (result.errors) return refusedEdit(req, res, t, e, result);
   await drafts.deleteDraft(adminPool, req.user.id, t.type, e.id);  // step-1 draft, if any from before
   await collab.publishedNow(t, e.id, req.user.username);
-  res.redirect(303, `/${t.folder}/${result.slug}?done=published${result.created.length ? `&auto=${result.created.length}` : ''}${result.city ? `&city=1${result.city.created ? `&places=${result.city.created}` : ''}` : ''}`);
+  // from the Quality queue: back to the entry with the queue's bar ("Done here" or what is left, "Next issue →")
+  const q = queueOf(req) ? `&queue=${encodeURIComponent(queueOf(req))}` : '';
+  res.redirect(303, `/${t.folder}/${result.slug}?done=published${result.created.length ? `&auto=${result.created.length}` : ''}${result.city ? `&city=1${result.city.created ? `&places=${result.city.created}` : ''}` : ''}${q}`);
 });
 
 module.exports = router;

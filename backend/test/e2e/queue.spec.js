@@ -76,3 +76,27 @@ test('batch: cite where the GND agrees — weakly sourced birth cited with the G
   // no longer weak there: off this batch page
   await expect(userA.locator('tr[data-entry="artist/claude-monet-q"] input[value=birth]')).toHaveCount(0);
 });
+
+// Edit and Publish keep the queue (owner 2026-11-06: "when i add the missing part and publish it im not on the quality
+// page anymore"): the edit page shows the bar too, Publish returns to the entry with it — "Done here", "Next issue →".
+test('the queue survives Edit and Publish: back on the entry with the bar, the finding gone', async ({ userA }) => {
+  const { settled, liveReady, showAllFields } = require('./helpers');
+  sql("DELETE FROM artworks WHERE slug = 'test-queue-work'; INSERT INTO artworks (slug, title, kind) VALUES ('test-queue-work', 'Test Queue Work', 'painting')");
+  await settled();
+  await userA.goto(`/artworks/test-queue-work?queue=${encodeURIComponent('check=artwork_without_web_page&pos=0')}`);
+  await expect(userA.locator('.queue-bar')).toContainText('Artwork without a web page');
+  await Promise.all([userA.waitForNavigation(), userA.locator('a.button:has-text("Edit")').click()]);
+  expect(new URL(userA.url()).searchParams.get('queue')).toBe('check=artwork_without_web_page&pos=0');
+  await expect(userA.locator('.queue-bar')).toContainText('Artwork without a web page');   // the bar on the edit page too
+  await liveReady(userA);
+  await showAllFields(userA);
+  await userA.fill('#f-web_url', 'https://www.example.org/collection/test-queue-work');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  expect(new URL(userA.url()).pathname).toBe('/artworks/test-queue-work');
+  expect(new URL(userA.url()).searchParams.get('queue')).toBe('check=artwork_without_web_page&pos=0');
+  await settled();
+  await userA.reload();
+  await expect(userA.locator('.queue-bar')).toContainText('Done here');
+  await expect(userA.locator('.queue-bar a:has-text("Next issue →")')).toBeVisible();
+  sql("DELETE FROM artworks WHERE slug = 'test-queue-work'");
+});

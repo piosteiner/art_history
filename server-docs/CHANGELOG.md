@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### CMS: the Quality queue survives Edit and Publish
+- **What** (owner 2026-11-06: "when i add the missing part and publish it im not on the quality page anymore"): an entry
+  opened from "Work through these" (`?queue=…`) keeps the queue through "Edit" / "Fill in the details" (the links carry
+  it), the edit page shows the queue's bar too, the form posts with it (also after a refused save), and Publish returns
+  to the entry with the bar — "Done here" once the finding is gone, "Next issue →" (`queueOf()` in
+  `routes/entries.js`, `entityForm({ queue })`). Test in `queue.spec.js`.
+- **Why**: after Publish the queue was lost and one had to go back to the Quality page by hand.
+- **Revert**: `git revert` the commit.
+
 ### CMS: an entry's own web page offered in the sources dialogs
 - **What** (owner 2026-11-06): every sources dialog ("Sources of …") offers "This entry's web page …" first as soon as
   the entry has one — an artwork's Web page, an institution's website; on the edit page read from the form, so also
