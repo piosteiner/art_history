@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Content: the Amitābha Sūtra of 1341 (British Museum 1983,1008,0.1) completed
+- **What** (owner 2026-11-06, with the museum's object record as PDF): number, title "Amitābha Sūtra" with the Korean
+  and hanja names (`ko-Hani`, as `nlk.js`), the scribe — new artist Chŏnggo (聰古), active 1340–1341 after the NRICH
+  2016 entry quoted there —, medium "Gold and silver on indigo-dyed paper", dimensions (21.7 × 8.5 × 1.1 cm per page,
+  263.5 cm unfolded, 31 panels), a paragraph from the record; provenance Harry Garner (new person) → British Museum 1983
+  (year from the registration number, "probable") with four exhibitions 2003–2023; all cited to the new web source
+  `british-museum-1983-1008-0-1`.
+- **Why**: owner's request. **Revert**: audit_log (source 'script', 2026-11-06).
+
 ### Content: the course "War and Peace in East Asian Art" (Thomsen, UZH, FS 2019) and its study set
 - **What** (owner 2026-11-06: "take all the resources … and in the end create a study set" — a test of the study sets):
   from the owner's course files (Google Drive → `/home/ubuntu/books/War and Peace FS19/`: syllabus, image and vocabulary
