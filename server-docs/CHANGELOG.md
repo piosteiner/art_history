@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Site: the documentation's contents below the header, with where the reader is
+- **What** (owner 2026-11-06): the sticky header's height is kept as `--header-h` (`frontend/src/main.ts`,
+  ResizeObserver — it wraps on narrower screens); the documentation's contents stick below it instead of 1rem from the
+  top (they were cut off), headings and footnotes jumped to land below it. The contents mark the section being read
+  (`followReading()` in `views/page.ts`: the last heading passed under the header, bold with an accent bar and
+  `aria-current`, its parents darker) and keep that entry in view inside their own scroll. Test in `site.spec.ts`.
+- **Why**: the contents' first entries were hidden under the header; no sign of where one was in a long chapter.
+- **Revert**: `git revert` the commit.
+
 ### Search: sources after the entries, under "In the bibliography"
 - **What:** owner 2026-11-06 ("1. yes"). The API already ordered sources last (2026-10-28); `/v1/search/text` now also
   says how many of the total are sources (`sources`, a window count). The site's search in "All" puts a heading

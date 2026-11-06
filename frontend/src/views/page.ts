@@ -101,6 +101,48 @@ function chapter(box: HTMLElement, p: Page, c: PageChapter) {
       <div class="doc-body">${trusted(c.html)}${nav}</div>
     </div>`);
   wireSearch(box, null);
+  if (toc.length) followReading(box);
+}
+
+/** The contents beside a chapter mark where the reader is (owner 2026-11-06): the section whose heading was passed
+ *  last under the header — with its parents — and keep that entry in view inside the contents' own scroll. */
+function followReading(box: HTMLElement) {
+  const nav = box.querySelector<HTMLElement>('.doc-toc');
+  if (!nav) return;
+  const links = [...nav.querySelectorAll<HTMLAnchorElement>('a[href^="#"]')];
+  const targets = links.map((a) => document.getElementById(decodeURIComponent(a.hash.slice(1)))).filter((h): h is HTMLElement => Boolean(h));
+  const level = (a: HTMLAnchorElement) => Number(/doc-toc-(\d)/.exec(a.parentElement!.className)?.[1] ?? 1);
+  let shown = -1;
+  let frame = 0;
+  const update = () => {
+    frame = 0;
+    if (!nav.isConnected) { window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); return; }
+    const line = (parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 60) + 24;
+    let i = -1;
+    for (let k = 0; k < targets.length; k++) { if (targets[k].getBoundingClientRect().top <= line) i = k; else break; }
+    // at the very end of the page the last sections may never reach the line: the last one counts
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) i = targets.length - 1;
+    if (i === shown) return;
+    shown = i;
+    const a = i >= 0 ? links.find((l) => l.hash.slice(1) === targets[i].id) ?? null : null;
+    links.forEach((l) => { l.classList.remove('doc-toc-current', 'doc-toc-within'); l.removeAttribute('aria-current'); });
+    if (!a) return;
+    a.classList.add('doc-toc-current');
+    a.setAttribute('aria-current', 'location');
+    // its parents: the nearest earlier entry of each higher level
+    let lv = level(a);
+    for (let k = links.indexOf(a) - 1; k >= 0 && lv > 1; k--) {
+      if (level(links[k]) < lv) { links[k].classList.add('doc-toc-within'); lv = level(links[k]); }
+    }
+    // keep it in view inside the contents (never scrolls the page itself)
+    const n = nav.getBoundingClientRect();
+    const r = a.getBoundingClientRect();
+    if (r.top < n.top + 30 || r.bottom > n.bottom - 30) nav.scrollTop += r.top - n.top - n.height / 3;
+  };
+  const onScroll = () => { if (!frame) frame = requestAnimationFrame(update); };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  update();
 }
 
 /** A short page in one piece: its title and whole text (its headings are sections, not chapters). */

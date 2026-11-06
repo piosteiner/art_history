@@ -28,6 +28,13 @@ if (import.meta.env.VITE_TEST_ENV === '1') {
   document.body.insertAdjacentHTML('afterbegin', '<div class="test-env" role="note"><b>Test environment</b> — changes made here are reset every night. The real site is <a href="https://arthistory.piogino.ch">arthistory.piogino.ch</a>.</div>');
 }
 const nav = document.getElementById('nav')!;
+// the sticky header's height as --header-h (it wraps on narrower screens): sticky boxes and jump targets sit below it
+{
+  const header = document.querySelector<HTMLElement>('.site-header')!;
+  const setHeight = () => document.documentElement.style.setProperty('--header-h', `${String(Math.ceil(header.getBoundingClientRect().height))}px`);
+  setHeight();
+  new ResizeObserver(setHeight).observe(header);
+}
 // "Sets": the shared study sets for visitors, the account's own once it is known to be logged in (account.ts)
 render(nav, html`<span class="nav-group"><a href="/">Explore</a><a href="/graph">Network</a><a href="/periods">Periods</a><a href="/quiz">Quiz</a><a href="/sets/shared" data-section="sets" class="nav-sets">Sets</a></span>
   ${NAV.map((g) => html`<span class="nav-group" title="${g.title}">${g.plurals.map((p) => html`<a href="/${p}">${PLURAL_LABEL[p]}</a>`)}</span>`)}`);

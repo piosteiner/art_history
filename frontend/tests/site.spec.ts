@@ -2883,6 +2883,16 @@ test('project documentation (API 114/116): from the footer, the overview with it
   await page.locator('.doc-body a', { hasText: 'zur Node App' }).click();
   await expect(page).toHaveURL(/\/dokumentation\/projektstart#node-app$/);
   await expect(page.locator('#node-app')).toBeInViewport();
+  // below the sticky header, not under it: the heading jumped to and the contents (owner 2026-11-06)
+  const headerBottom = (await page.locator('.site-header').boundingBox())!.height;
+  expect((await page.locator('#node-app').boundingBox())!.y).toBeGreaterThanOrEqual(headerBottom);
+  expect((await page.locator('.doc-toc').boundingBox())!.y).toBeGreaterThanOrEqual(headerBottom);
+  // the contents mark where the reader is: Node App with its parent Backend Setup; back at the top, none
+  await expect(page.locator('.doc-toc a.doc-toc-current')).toHaveText('Node App');
+  await expect(page.locator('.doc-toc a.doc-toc-current')).toHaveAttribute('aria-current', 'location');
+  await expect(page.locator('.doc-toc a.doc-toc-within')).toHaveText('Backend Setup');
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await expect(page.locator('.doc-toc a.doc-toc-current')).toHaveCount(0);
   // an old link to a heading of the whole text opens its chapter; an unknown chapter: a way back
   await page.goto('/dokumentation#projektstart');
   await expect(page).toHaveURL(/\/dokumentation\/projektstart/);
