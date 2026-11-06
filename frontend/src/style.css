@@ -46,6 +46,33 @@
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
+
+/* Base look of fields and buttons (owner 2026-11-06: the study sets' fields and Create button showed the browser's
+   grey defaults, in dark mode too). Zero specificity (:where), so every form that styles its own controls keeps its
+   look and only unstyled ones take this: fields like the header search, buttons as the site's pills, a form's submit
+   button filled with the accent. */
+:where(input:not([type=checkbox], [type=radio], [type=range], [type=color], [type=file], [type=hidden], [type=submit], [type=button], [type=reset], [type=image]), select, textarea) {
+  font: inherit; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: .45rem .7rem; line-height: 1.3;
+}
+:where(input, select, textarea):focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+:where(input, textarea)::placeholder { color: var(--muted); opacity: 1; }
+:where(input, select, textarea):disabled { opacity: .6; cursor: not-allowed; }
+:where(input[type=checkbox], input[type=radio]) { accent-color: var(--accent); }
+/* a tick box or radio with its text beside it, the text wrapping under itself */
+label.check { display: flex; gap: .5rem; align-items: baseline; }
+label.check > input { flex: none; margin: 0; transform: translateY(.1em); }
+:where(button:not(.link-button, [class*="maplibregl"]), input[type=submit], input[type=button]) {
+  font: inherit; font-size: .95rem; line-height: 1.3; color: var(--text); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 999px; padding: .45rem 1rem; cursor: pointer;
+}
+:where(button:not(.link-button, [class*="maplibregl"]), input[type=submit], input[type=button]):hover:not(:disabled) { border-color: var(--accent); }
+:where(form) :where(button:not([type=button], [type=reset], .link-button, .secondary, [class*="maplibregl"]), input[type=submit]) {
+  background: var(--accent); border-color: var(--accent); color: var(--surface); font-weight: 600;
+}
+:where(form) :where(button:not([type=button], [type=reset], .link-button, .secondary, [class*="maplibregl"]), input[type=submit]):hover:not(:disabled) { filter: brightness(1.08); }
+:where(button, input[type=submit], input[type=button]):disabled { opacity: .55; cursor: default; }
+:where(button, input[type=submit], input[type=button]):focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 var(--sans); }
 a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
 a:hover { color: var(--accent); }
@@ -792,12 +819,9 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .popup-steps-block + .popup-list { margin-top: .2rem; }
 /* search page (/search): the type of each card above its name; the header's "All results" line */
 .card-type { font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
-.search-page-form { display: flex; gap: .5rem; margin: .5rem 0; }
+.search-page-form { display: flex; gap: .5rem; margin: .5rem 0; max-width: 40rem; align-items: center; }
 .search-page-form input { flex: 1; min-width: 0; font-size: 1.05rem; }
 .search-results .hit-all { border-top: 1px solid var(--line); }
-.search-page-form button { font: inherit; font-size: .95rem; padding: .3rem 1rem; border: 1px solid var(--accent); border-radius: 999px;
-  background: var(--surface); color: var(--accent); font-weight: 600; cursor: pointer; }
-.search-page-form button:hover { background: var(--picked-bg); }
 
 /* full-text search (API 087) */
 .search-help code { font-size: .85em; }
@@ -1292,7 +1316,8 @@ span.quiz-tile { cursor: default; }
 .set-menu-new { display: flex; gap: .4rem; }
 .set-menu-new input { flex: 1; min-width: 0; }
 .set-menu-msg:empty { display: none; }
-.sets-new { display: flex; gap: .5rem; max-width: 40rem; margin: 1rem 0; }
+.sets-new { display: flex; flex-wrap: wrap; gap: .5rem; max-width: 50rem; margin: 1rem 0; }
+.sets-new input[name="name"] { flex: 1 1 20rem; }
 .sets-new input { flex: 1; min-width: 0; }
 .sets-list, .sets-items { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
 .sets-item { display: flex; flex-wrap: wrap; gap: .3rem 1rem; align-items: baseline; padding: .6rem .8rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
@@ -1300,6 +1325,7 @@ span.quiz-tile { cursor: default; }
 .sets-actions { margin-left: auto; display: flex; gap: .8rem; align-items: baseline; }
 .sets-edit { margin: .3rem 0 1rem; }
 .sets-edit-form { display: grid; gap: .4rem; max-width: 40rem; margin-top: .5rem; }
+.sets-edit-form > button { justify-self: start; }
 .sets-study { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; align-items: center; padding: .7rem .9rem; margin: 1rem 0;
   border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 .sets-study > span:first-child { flex-basis: 100%; font-weight: 600; }
@@ -1405,6 +1431,7 @@ span.quiz-tile { cursor: default; }
 .sets-panel p { margin: 0; }
 .sets-panel form { display: grid; gap: .45rem; }
 .sets-panel form > label { display: flex; flex-wrap: wrap; gap: .4rem; align-items: baseline; }
+.sets-panel form > label.check { flex-wrap: nowrap; }   /* the box beside its text, not above it */
 .sets-panel form button[type=submit] { justify-self: start; }
 .sets-panel .sets-link-form, .sets-panel .sets-invite-form { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
 .sets-panel-members, .sets-links { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
@@ -1428,6 +1455,7 @@ span.quiz-tile { cursor: default; }
 .sets-added-by { display: block; }
 .sets-conflict { display: grid; gap: .4rem; padding: .6rem .8rem; border: 1px solid var(--accent); border-radius: var(--radius); }
 .sets-conflict-theirs { display: block; padding: .4rem .6rem; border-left: 3px solid var(--line); }
+.sets-plan:empty { display: none; }
 .sets-plan { margin: 1rem 0; padding: .7rem .9rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); max-width: 40rem; }
 .sets-plan h2 { margin: 0 0 .3rem; font-size: 1.1rem; }
 .sets-plan-today { margin: .3rem 0; padding-left: 1.2rem; }

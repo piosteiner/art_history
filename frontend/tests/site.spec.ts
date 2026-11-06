@@ -3566,3 +3566,26 @@ test('own views on the start page: saved with a description, opened with its tex
   await mine.locator('.my-update').click();
   await expect.poll(() => posts.find((p) => p.startsWith('/views/5:')) ?? '').toContain('from%3D1950');
 });
+
+// Names of one language together; a romanization after its script — also when the Japanese name is a translation, not
+// the original (owner 2026-11-06: "ryōsai kenbo" didn't show at all, and stood apart from 良妻賢母)
+test('other names: grouped by language, the romanization next to the name in its script', async ({ page }) => {
+  await page.route(/\/v1\/glossary\/good-wife-wise-mother$/, (r) => r.fulfill({ json: {
+    type: 'term', slug: 'good-wife-wise-mother', name: 'Good Wife, Wise Mother', category: 'other', definition: 'traditional ideal for womanhood in East Asia',
+    alt_names: [], description_html: null, images: [], image_url: null, wikidata_id: 'Q5583058', metadata: {}, updated_at: '', glossary: {}, used_in: [], relationships: [],
+    names: [
+      { text: 'bonne épouse, sage mère', lang: 'fr', role: 'translation', status: 'common' },
+      { text: '良妻賢母', lang: 'ja', role: 'translation', status: 'common', ruby_html: '<ruby>良妻賢母<rt>りょうさいけんぼ</rt></ruby>' },
+      { text: '贤妻良母', lang: 'zh', role: 'translation', status: 'common' },
+      { text: '현모양처', lang: 'ko', role: 'translation', status: 'common' },
+      { text: 'ryōsai kenbo', lang: 'ja', role: 'romanization' },
+    ],
+  } }));
+  await page.goto('/glossary/good-wife-wise-mother');
+  const names = page.locator('dt:has-text("Also known as") + dd');
+  await expect(names).toContainText('ryōsai kenbo');
+  const text = (await names.innerText()).replace(/\s+/g, ' ');
+  expect(text.indexOf('ryōsai kenbo')).toBeGreaterThan(text.indexOf('良妻賢母'));
+  expect(text.indexOf('ryōsai kenbo')).toBeLessThan(text.indexOf('贤妻良母'));
+  await expect(names.locator('.romanization')).toHaveAttribute('lang', 'ja-Latn');
+});

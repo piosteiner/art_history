@@ -133,5 +133,16 @@ const namesToLines = (names) => (names || []).map((n) => {
   return cols.join(' | ');
 }).join('\n');
 
-module.exports = { ROLES, STATUSES, KINDS, KIND_LABEL, plain, reading, hasRuby, rubyError, rubyHtml, normLang, langOk, normName, linesToNames,
+/** Names in display order (owner 2026-11-06): the names of one language together — languages in the order they first
+ *  appear, ja-Latn counting as ja — and in each language the romanizations after the names in its script.
+ *  → [{ n, i }] with i the name's place in the stored list (its sources are kept by that place). */
+function byLanguage(list) {
+  const base = (n) => String((n && n.lang) || '').split('-')[0].toLowerCase();
+  const items = (list || []).map((n, i) => ({ n, i }));
+  const order = [...new Set(items.map(({ n }) => base(n)))];
+  return items.sort((a, b) => (order.indexOf(base(a.n)) - order.indexOf(base(b.n)))
+    || ((a.n.role === 'romanization') - (b.n.role === 'romanization')) || (a.i - b.i));
+}
+
+module.exports = { byLanguage, ROLES, STATUSES, KINDS, KIND_LABEL, plain, reading, hasRuby, rubyError, rubyHtml, normLang, langOk, normName, linesToNames,
   namesToLines, splitLine };

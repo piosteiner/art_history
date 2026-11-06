@@ -441,13 +441,20 @@ const STATUS_HINT: Record<TranslationStatus, string> = {
 export const nameSpan = (text: string, lang: string | null | undefined, ruby?: string | null, cls = '') =>
   html`<span${cls ? html` class="${cls}"` : ''}${langAttr(lang)}>${ruby ? trusted(ruby) : text}</span>`;
 
+/** A language without its script or region: ja-Latn → ja (a romanization belongs to the names of its language). */
+const baseLang = (lang: string | null | undefined) => (lang ?? '').split('-')[0].toLowerCase();
+/** The romanization of the original name: one of the original's language (or, without a language, the only one). */
+const romanOf = (e: Nameable, original: NameEntry) => (e.names ?? []).find((n) => n.role === 'romanization'
+  && (baseLang(n.lang) === baseLang(original.lang) || !n.lang));
+const romanSpan = (roman: { text: string; lang?: string | null }) =>
+  html` <span class="romanization"${langAttr(roman.lang?.includes('-') ? roman.lang : roman.lang ? `${roman.lang}-Latn` : null)}>${roman.text}</span>`;
+
 /** The original-language name as a second line ("神奈川沖浪裏" with furigana), with its romanization next to it. */
 export function originalLine(e: Nameable) {
   const original = e.names?.find((n) => n.role === 'original');
   if (!original) return null;
-  const roman = e.names?.find((n) => n.role === 'romanization');
-  return html`<p class="original-name">${nameSpan(original.text, original.lang, original.ruby_html)}${roman
-    ? html` <span class="romanization"${langAttr(roman.lang?.includes('-') ? roman.lang : roman.lang ? `${roman.lang}-Latn` : null)}>${roman.text}</span>` : ''}</p>`;
+  const roman = romanOf(e, original);
+  return html`<p class="original-name">${nameSpan(original.text, original.lang, original.ruby_html)}${roman ? romanSpan(roman) : ''}</p>`;
 }
 
 /** Translations and other names (not the original or its romanization, shown above), each with its lang. */
@@ -457,13 +464,32 @@ export function originalLine(e: Nameable) {
 // `keep`: which of them (the "Born as" row takes the birth names, "Also known as" the rest — API 153).
 export function otherNames(e: Nameable, marks: (n: NameEntry) => Html | string = () => '', keep: (n: Partial<NameEntry>) => boolean = () => true) {
   const official = officialInstead(e);
-  const rest: (Pick<NameEntry, 'text' | 'lang' | 'ruby_html' | 'status'> & { role?: NameEntry['role'] })[] = [
+  type Shown = Pick<NameEntry, 'text' | 'lang' | 'ruby_html' | 'status'> & { role?: NameEntry['role'] };
+  // the original's romanization is shown with it above; every other romanization follows a name of its language
+  const original = e.names?.find((n) => n.role === 'original');
+  const shownAbove = original ? romanOf(e, original) : undefined;
+  const all: Shown[] = [
     ...(official ? [{ text: e.title!, lang: e.title_lang ?? null, ruby_html: e.title_ruby_html ?? null, status: e.title_status ?? null }] : []),
-    ...(e.names ?? []).filter((n) => n.role !== 'original' && n.role !== 'romanization' && n !== official),
+    ...(e.names ?? []).filter((n) => n.role !== 'original' && n !== official && n !== shownAbove),
   ].filter((n) => keep(n as Partial<NameEntry>));
-  return rest.length ? html`${rest.map((n, i) => html`${i ? ' · ' : ''}${n.status ? html`<span title="${STATUS_HINT[n.status]}">${
+  const romans = all.filter((n) => n.role === 'romanization');
+  const names = all.filter((n) => n.role !== 'romanization');
+  // the names of one language together (owner 2026-11-06), languages in the order they first appear
+  const order = [...new Set(names.map((n) => baseLang(n.lang)))];
+  names.sort((a, b) => order.indexOf(baseLang(a.lang)) - order.indexOf(baseLang(b.lang)));
+  const used = new Set<Shown>();
+  const items = names.map((n) => {
+    // a romanization goes with the first name of its language that isn't in Latin letters
+    const roman = baseLang(n.lang) && !/^[\p{Script=Latin}\s\p{P}\d]+$/u.test(n.text)
+      ? romans.find((r) => !used.has(r) && baseLang(r.lang) === baseLang(n.lang)) : undefined;
+    if (roman) used.add(roman);
+    return { n, roman };
+  });
+  // a romanization without a name of its language in its script: on its own
+  for (const r of romans) if (!used.has(r)) items.push({ n: r, roman: undefined });
+  return items.length ? html`${items.map(({ n, roman }, i) => html`${i ? ' · ' : ''}${n.status ? html`<span title="${STATUS_HINT[n.status]}">${
     nameSpan(translated(n.text, n.status), n.lang, n.ruby_html && n.status === 'own' ? `[${n.ruby_html}]` : n.ruby_html)}</span>` : nameSpan(n.text, n.lang, n.ruby_html)}${
-    n.status === 'official' ? html` <span class="tag">official</span>` : ''}${kindTag(n as Partial<NameEntry>)}${context(n as Partial<NameEntry>, marks)}`)}` : null;
+    roman ? html`${romanSpan(roman)}${context(roman as Partial<NameEntry>, marks)}` : ''}${n.status === 'official' ? html` <span class="tag">official</span>` : ''}${kindTag(n as Partial<NameEntry>)}${context(n as Partial<NameEntry>, marks)}`)}` : null;
 }
 
 const KIND_LABEL: Record<NameKind, string> = { birth: 'birth name', married: 'married name', pseudonym: 'pseudonym', art_name: 'art name',

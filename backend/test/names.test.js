@@ -74,3 +74,12 @@ test('the kind of name (153): after the role in form lines, stored as `kind`, re
   assert.equal(n.linesToNames('X | en | translation, own, pseudonym')[0].kind, 'pseudonym');
   assert.throws(() => n.linesToNames('X | en | alternative, stage'), /kind of name "stage"/);
 });
+
+// byLanguage (owner 2026-11-06): the names of one language together, a romanization after the names in its script; each
+// keeps its stored place (sources are kept by it)
+test('names in display order: grouped by language, romanizations after their script, stored places kept', () => {
+  const list = [{ text: 'bonne épouse, sage mère', lang: 'fr' }, { text: '良妻賢母', lang: 'ja' }, { text: '贤妻良母', lang: 'zh' },
+    { text: '현모양처', lang: 'ko' }, { text: 'ryōsai kenbo', lang: 'ja-Latn', role: 'romanization' }, { text: 'good wife', role: 'alternative' }];
+  assert.deepEqual(n.byLanguage(list).map(({ n, i }) => `${n.text}#${i}`),
+    ['bonne épouse, sage mère#0', '良妻賢母#1', 'ryōsai kenbo#4', '贤妻良母#2', '현모양처#3', 'good wife#5']);
+});

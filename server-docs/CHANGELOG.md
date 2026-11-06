@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Fields and buttons in the site's design; other names grouped by language
+- **What:** owner 2026-11-06. Site (`frontend/src/style.css`): a base look for fields, selects and buttons with zero
+  specificity (`:where`) — forms that style their own keep it; fields like the header search, buttons as pills, a form's
+  submit button filled with the accent (light and dark). Fixed with it: the new-set row too narrow, the set's Save
+  stretched, tick boxes above their text in "Sharing and members", the empty plan box under a set without entries, the
+  search page's button. Other names: grouped by language, a romanization right after the name in its script — on the
+  site (`otherNames()`/`originalLine()` in `html.ts`: romanizations were shown only with an *original* name, so a
+  Japanese *translation*'s romanization vanished) and in the CMS view (`names.byLanguage()`).
+- **Revert:** `git revert`.
+
 ### Logging in from the site works in Brave/Chrome; the login pages follow the site's theme and lead back
 - **What:** owner 2026-11-06 (Brave: no response after logging in, a reload needed; Firefox fine). The CMS's
   Content-Security-Policy had `form-action 'self'`; Chromium browsers apply form-action to the redirect after a form
