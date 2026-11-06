@@ -28,6 +28,11 @@ Format: date — what — why — how to revert.
   "diary" (nikki) — definitions cited to Mason, History of Japanese Art (104–105, 110–111, 274–275, 278–279) and the
   English Wikipedia; Yoroboshi, Kanjinchō, Genji, Murasaki's diary (Wikidata P31/P136) and Sonezaki Shinjū (Wikipedia)
   linked, their kinds cited.
+  Poetry (content, same day): genres under "poem" (Q5185279) — waka › tanka, chōka, sedōka; renga › haikai no renga;
+  haiku (the existing term moved here, Wikidata Q37707, with the hokku → haiku naming after Masaoka Shiki's reform from
+  1892); senryū; kanshi; epic poem moved under poem; "poetry anthology". Works: Man'yōshū, Kokin Wakashū, Shin Kokin
+  Wakashū, Hyakunin Isshu (anthologies), Bashō's "Furuike ya" (1686, written by Matsuo Bashō). Sources: Mason (110–111,
+  180–181, 332), English and Japanese Wikipedia. A work's `written` date is not citable yet (footnotes in its text).
 - **Revert:** `git revert`; `ALTER TABLE literary_works DROP COLUMN kind_term_id`, drop the functions and the trigger,
   the view as in 217; an enum value can't be dropped (unused, it does no harm).
 
