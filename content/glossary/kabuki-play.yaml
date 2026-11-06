@@ -1,0 +1,20 @@
+public_id: 115899
+name: Kabuki play
+names:
+  - lang: fr
+    role: translation
+    text: pièce de kabuki
+  - lang: ja
+    role: translation
+    text: "{歌舞伎|かぶき}の{演目|えんもく}"
+category: literary genre
+parent: play
+definition: A play of the [[kabuki]] theatre, the classical Japanese theatre of drama and dance that arose in the early Edo period. Kabuki plays and their actors were favourite subjects of ukiyo-e paintings and woodblock prints.
+wikidata_id: Q47513101
+sources:
+  definition:
+    - source: wikipedia-en-kabuki
+      accessed: 2026-11-06
+    - source: history-of-japanese-art
+      locator: 278–279
+      accessed: 2026-11-06

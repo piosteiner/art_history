@@ -1,0 +1,14 @@
+public_id: 116188
+name: ukiyo
+names:
+  - lang: ja
+    role: translation
+    text: "{浮世|うきよ}"
+  - floating world
+category: society
+definition: '"Floating world": the urban lifestyle and culture of Edo-period Japan (1600–1867), especially its pleasure-seeking side — the world of [[movement/ukiyo-e|ukiyo-e]].'
+wikidata_id: Q3547880
+sources:
+  definition:
+    - source: wikipedia-en-ukiyo
+      accessed: 2026-11-06

@@ -1,0 +1,16 @@
+public_id: 116179
+name: kanpaku
+names:
+  - lang: ja
+    role: translation
+    text: "{関白|かんぱく}"
+  - kampaku
+category: politics
+definition: In theory the chief adviser of the emperor, in practice the first secretary and regent of an adult emperor. With the [[sessho|sesshō]], the kanpaku governed Japan in the Middle Heian period (951–1086).
+sources:
+  definition:
+    - source: wikipedia-en-sessho-and-kampaku
+      accessed: 2026-11-06
+    - source: history-of-japanese-art
+      locator: Glossary, s.v. sesshō
+      accessed: 2026-11-06

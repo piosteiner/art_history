@@ -14,3 +14,8 @@ wikidata_id: Q3179266
 relationships:
   - type: written_by
     to: person/namiki-gohei-iii
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q3179266

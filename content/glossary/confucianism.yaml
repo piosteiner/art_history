@@ -1,0 +1,19 @@
+public_id: 116171
+name: Confucianism
+names:
+  - lang: ja
+    role: translation
+    text: "{儒教|じゅきょう}"
+  - lang: de
+    role: translation
+    text: Konfuzianismus
+  - lang: fr
+    role: translation
+    text: confucianisme
+category: philosophy
+definition: A system of thought and behaviour from ancient China, founded by Confucius around 500 BCE, and variously described as a tradition, a philosophy, a religion, a theory of government or a way of life.
+wikidata_id: Q9581
+sources:
+  definition:
+    - source: wikipedia-en-confucianism
+      accessed: 2026-11-06

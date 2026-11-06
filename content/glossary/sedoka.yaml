@@ -1,0 +1,14 @@
+public_id: 115978
+name: sedōka
+names:
+  - lang: ja
+    role: translation
+    text: "{旋頭歌|せどうか}"
+category: literary genre
+parent: waka
+definition: A waka of six lines in 5-7-7-5-7-7 (旋頭歌), recorded in the Man’yōshū and the Kokinshū.
+wikidata_id: Q678489
+sources:
+  definition:
+    - source: wikipedia-en-waka
+      accessed: 2026-11-06

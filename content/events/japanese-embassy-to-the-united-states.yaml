@@ -1,0 +1,13 @@
+public_id: 116014
+name: Japanese Embassy to the United States
+names:
+  - lang: ja
+    role: original
+    text: "{万延元年遣米使節|まんえんがんねんけんべいしせつ}"
+  - lang: ja-Latn
+    role: romanization
+    text: Man’en gannen kenbei shisetsu
+kind: embassy
+period: 1860
+description_md: The Tokugawa shogunate’s first diplomatic mission to the United States, sent in 1860 to ratify the new Treaty of Friendship, Commerce and Navigation — the first since Commodore Perry’s opening of Japan in 1854. The warship Kanrin Maru, crewed by Japanese sailors, accompanied the delegation across the Pacific to show how far Japan had mastered Western navigation.[[source/wikipedia-en-japanese-embassy-to-the-united-states]] [[person/fukuzawa-yukichi]] sailed on it as steward to its captain, Kimura Yoshitake.[[source/wikipedia-en-fukuzawa-yukichi]]
+wikidata_id: Q6158166

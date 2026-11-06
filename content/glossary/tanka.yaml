@@ -1,0 +1,17 @@
+public_id: 115976
+name: tanka
+names:
+  - lang: ja
+    role: translation
+    text: "{短歌|たんか}"
+  - misohitomoji
+category: literary genre
+parent: waka
+definition: '"Short poem" (短歌): the waka of five lines of 5-7-5-7-7 on (syllabic units), thirty-one in all — hence also misohitomoji (三十一文字). In time the word waka came to mean the tanka alone; the name tanka was taken up again at the end of the nineteenth century.'
+wikidata_id: Q258331
+sources:
+  definition:
+    - source: wikipedia-en-waka
+      accessed: 2026-11-06
+    - source: wikipedia-en-tanka
+      accessed: 2026-11-06

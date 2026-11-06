@@ -1,0 +1,23 @@
+public_id: 116164
+name: Shinto
+names:
+  - lang: ja
+    role: translation
+    text: "{神道|しんとう}"
+  - lang: de
+    role: translation
+    text: Shintō
+  - lang: fr
+    role: translation
+    text: shintoïsme
+  - Shintoism
+category: religion
+definition: A religion of Japan, often regarded by its practitioners as Japan’s indigenous religion and as a nature religion, whose gods and spirits are the [[kami]].
+wikidata_id: Q812767
+sources:
+  definition:
+    - source: wikipedia-en-shinto
+      accessed: 2026-11-06
+    - source: history-of-japanese-art
+      locator: Glossary, s.v. kami
+      accessed: 2026-11-06

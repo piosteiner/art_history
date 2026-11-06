@@ -1,0 +1,15 @@
+public_id: 115987
+name: Hyakunin Isshu
+names:
+  - lang: ja
+    role: original
+    text: "{百人一首|ひゃくにんいっしゅ}"
+  - Ogura Hyakunin Isshu
+  - One Hundred Poets, One Poem Each
+kind: poetry anthology
+description_md: One hundred [[waka]] by one hundred poets, one poem each; the standard version was compiled by Fujiwara no Teika (1162–1241) while he lived in the Ogura district of Kyoto, hence Ogura Hyakunin Isshu. The name also stands for the card game uta-garuta played with these poems.[[source/wikipedia-en-ogura-hyakunin-isshu]]
+wikidata_id: Q1145042
+sources:
+  kind:
+    - source: wikipedia-en-ogura-hyakunin-isshu
+      accessed: 2026-11-06

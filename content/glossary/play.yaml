@@ -1,0 +1,26 @@
+public_id: 115897
+name: play
+names:
+  - lang: de
+    role: translation
+    text: Theaterstück
+  - lang: de
+    role: alternative
+    text: Bühnenwerk
+  - lang: de
+    role: alternative
+    text: Drama
+  - lang: fr
+    role: translation
+    text: pièce de théâtre
+  - lang: ja
+    role: translation
+    text: "{戯曲|ぎきょく}"
+  - drama
+category: literary genre
+definition: A work for the theatre written mainly as speech — dialogue between characters, monologues or both — to be performed by actors before an audience rather than read; its text is also called a script, its author a playwright.
+wikidata_id: Q25379
+sources:
+  definition:
+    - source: wikipedia-en-play-theatre
+      accessed: 2026-11-06

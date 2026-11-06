@@ -20,3 +20,8 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 107, 112
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P136
+      wikidata: Q772766

@@ -1,0 +1,13 @@
+public_id: 116185
+name: rōnin
+names:
+  - lang: ja
+    role: translation
+    text: "{浪人|ろうにん}"
+category: society
+definition: In Japan from 1185 to 1868, a [[samurai]] without a lord or master — in some cases also cut off from his family or clan.
+wikidata_id: Q212418
+sources:
+  definition:
+    - source: wikipedia-en-ronin
+      accessed: 2026-11-06

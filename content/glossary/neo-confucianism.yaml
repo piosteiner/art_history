@@ -1,0 +1,16 @@
+public_id: 116172
+name: Neo-Confucianism
+names:
+  - lang: de
+    role: translation
+    text: Neokonfuzianismus
+  - lang: fr
+    role: translation
+    text: néoconfucianisme
+category: philosophy
+definition: The revival of [[confucianism|Confucianism]] as an ethical, social and religious system, which dominated Chinese philosophy from the thirteenth to the nineteenth century; its origins lie in the Tang dynasty.
+wikidata_id: Q825754
+sources:
+  definition:
+    - source: wikipedia-en-neo-confucianism
+      accessed: 2026-11-06

@@ -1,0 +1,16 @@
+public_id: 116192
+name: man’yōgana
+names:
+  - lang: ja
+    role: translation
+    text: "{万葉仮名|まんようがな}"
+category: language
+definition: The early writing system of the seventh and eighth centuries in which Chinese characters were used for their sound — the first phonetic syllabary, to spell out Japanese words. It is named after the [[literature/manyoshu|Man’yōshū]].
+wikidata_id: Q862803
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: Glossary, s.v. manyogana
+      accessed: 2026-11-06
+    - source: wikipedia-en-man-yogana
+      accessed: 2026-11-06

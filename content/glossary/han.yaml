@@ -1,0 +1,17 @@
+public_id: 116182
+name: han
+names:
+  - lang: ja
+    role: translation
+    text: "{藩|はん}"
+  - domain
+category: politics
+definition: "A feudal domain or fief, the territory of a [[daimyo|daimyō]] in the Edo period and early Meiji period: a de facto administrative division beside the provinces, until the domains were abolished in the 1870s."
+wikidata_id: Q841985
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: Glossary, s.v. han
+      accessed: 2026-11-06
+    - source: wikipedia-en-han-system
+      accessed: 2026-11-06

@@ -1,0 +1,17 @@
+public_id: 116180
+name: sakoku
+names:
+  - lang: ja
+    role: translation
+    text: "{鎖国|さこく}"
+  - lang: de
+    role: translation
+    text: Abschließung Japans
+  - closed country
+category: politics
+definition: '"Locked country": the isolationist foreign policy of the Tokugawa shogunate in the Edo period (1603–1867), under which relations and trade with other countries were severely limited and almost all foreigners were barred from entering Japan.'
+wikidata_id: Q332075
+sources:
+  definition:
+    - source: wikipedia-en-sakoku
+      accessed: 2026-11-06

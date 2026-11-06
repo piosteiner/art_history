@@ -1,0 +1,21 @@
+public_id: 115898
+name: Noh play
+names:
+  - lang: de
+    role: translation
+    text: Nō-Stück
+  - lang: fr
+    role: translation
+    text: pièce de théâtre nō
+  - lang: ja
+    role: translation
+    text: "{能|のう}の{演目|えんもく}"
+  - nō play
+category: literary genre
+parent: play
+definition: "A play of the [[noh]] repertoire, the classical Japanese dance-drama performed since the 14th century: often based on tales from traditional literature, with a supernatural being who appears as a human and narrates the story."
+wikidata_id: Q47485959
+sources:
+  definition:
+    - source: wikipedia-en-noh
+      accessed: 2026-11-06

@@ -1,0 +1,21 @@
+public_id: 115901
+name: tale
+names:
+  - lang: de
+    role: translation
+    text: Erzählung
+  - lang: ja
+    role: translation
+    text: "{物語|ものがたり}"
+  - lang: ja-Latn
+    role: romanization
+    text: monogatari
+category: literary genre
+definition: A prose narrative of invented or retold events. In traditional Japanese literature the monogatari (物語) is an extended prose tale, closely tied to oral tradition and almost always fictional or fictionalised — among them The Tale of Genji and The Tale of the Heike. The women of the Heian court were famous for such tales, and for their diaries.
+sources:
+  definition:
+    - source: wikipedia-en-monogatari
+      accessed: 2026-11-06
+    - source: history-of-japanese-art
+      locator: 110–111
+      accessed: 2026-11-06

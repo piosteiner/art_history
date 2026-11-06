@@ -1,0 +1,14 @@
+public_id: 116194
+name: kigo
+names:
+  - lang: ja
+    role: translation
+    text: "{季語|きご}"
+  - season word
+category: language
+definition: '"Season word": a word or phrase associated with a particular season, used in [[renga]], renku and [[haiku]] to indicate the season of the stanza.'
+wikidata_id: Q1085881
+sources:
+  definition:
+    - source: wikipedia-en-kigo
+      accessed: 2026-11-06

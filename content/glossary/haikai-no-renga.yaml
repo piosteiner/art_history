@@ -1,0 +1,16 @@
+public_id: 115980
+name: haikai no renga
+names:
+  - lang: ja
+    role: translation
+    text: "{俳諧|はいかい}"
+  - haikai
+  - renku
+category: literary genre
+parent: renga
+definition: 'Comic, unorthodox linked verse (俳諧, haikai: "vulgar", "earthy"), which developed in the sixteenth century out of the aristocratic renga and drew its effect from satire and puns; under Matsuo Bashō (1644–1694) its tone became more serious.'
+wikidata_id: Q17049321
+sources:
+  definition:
+    - source: wikipedia-en-haikai
+      accessed: 2026-11-06

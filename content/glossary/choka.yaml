@@ -1,0 +1,15 @@
+public_id: 115977
+name: chōka
+names:
+  - lang: ja
+    role: translation
+    text: "{長歌|ちょうか}"
+  - long poem
+category: literary genre
+parent: waka
+definition: '"Long poem" (長歌): a waka of 5-7 phrases repeated at least twice and closing 5-7-7 — the shortest in the Man’yōshū (no. 802, by Yamanoue no Okura) runs 5-7 5-7 5-7 5-7-7. The form vanished soon after the beginning of the Heian period.'
+wikidata_id: Q773298
+sources:
+  definition:
+    - source: wikipedia-en-waka
+      accessed: 2026-11-06

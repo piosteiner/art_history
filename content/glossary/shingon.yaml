@@ -1,0 +1,21 @@
+public_id: 116167
+name: Shingon
+names:
+  - lang: ja
+    role: translation
+    text: "{真言宗|しんごんしゅう}"
+  - lang: de
+    role: translation
+    text: Shingon-shū
+  - Shingon Buddhism
+  - True Word school
+category: religion
+definition: The "True Word" (mantra) school, the form of [[esoteric-buddhism|Esoteric Buddhism]] brought to Japan in the ninth century by Kūkai (774–835) as a synthesis of the Tantric schools — one of the few surviving Vajrayāna lineages in East Asian Buddhism.
+wikidata_id: Q550182
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: Glossary, s.v. Buddhism (traditions and schools)
+      accessed: 2026-11-06
+    - source: wikipedia-en-shingon-buddhism
+      accessed: 2026-11-06

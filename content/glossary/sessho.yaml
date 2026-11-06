@@ -1,0 +1,16 @@
+public_id: 116178
+name: sesshō
+names:
+  - lang: ja
+    role: translation
+    text: "{摂政|せっしょう}"
+  - regent
+category: politics
+definition: A regent who governed in the name of a child emperor, or for an empress regnant. Administration by sesshō or [[kanpaku]] was the main form of government in the Middle Heian period (951–1086).
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: Glossary, s.v. sesshō
+      accessed: 2026-11-06
+    - source: wikipedia-en-sessho-and-kampaku
+      accessed: 2026-11-06

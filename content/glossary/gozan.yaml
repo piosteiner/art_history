@@ -1,0 +1,18 @@
+public_id: 116170
+name: Five Mountains
+names:
+  - lang: ja
+    role: translation
+    text: "{五山|ござん}"
+  - lang: ja-Latn
+    role: romanization
+    text: Gozan
+  - Five Mountain System
+  - Gozan jissetsu
+category: religion
+definition: "The Five Mountains and Ten Monasteries System (Gozan jissetsu): a network of state-sponsored Chan ([[zen|Zen]]) temples created in China under the Southern Song (1127–1279), and later adopted for temples in Japan."
+wikidata_id: Q44372
+sources:
+  definition:
+    - source: wikipedia-en-five-mountain-system
+      accessed: 2026-11-06

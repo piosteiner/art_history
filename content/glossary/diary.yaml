@@ -1,0 +1,23 @@
+public_id: 115902
+name: diary
+names:
+  - lang: de
+    role: translation
+    text: Tagebuch
+  - lang: ja
+    role: translation
+    text: "{日記|にっき}"
+  - lang: ja-Latn
+    role: romanization
+    text: nikki
+  - nikki bungaku
+  - diary literature
+category: literary genre
+definition: "A record of the writer’s days and thoughts. As literature, the Japanese diary (nikki, 日記; nikki bungaku, diary literature) flourished in the Heian period: the Tosa nikki of about 935, the Kagerō nikki (The Gossamer Years) of Fujiwara no Michitsuna’s mother and the diary of Murasaki Shikibu."
+sources:
+  definition:
+    - source: wikipedia-en-poetic-diary
+      accessed: 2026-11-06
+    - source: history-of-japanese-art
+      locator: 104–105, 110–111
+      accessed: 2026-11-06

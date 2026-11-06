@@ -1,0 +1,16 @@
+public_id: 116190
+name: katakana
+names:
+  - lang: ja
+    role: translation
+    text: "{片仮名|かたかな}"
+category: language
+definition: '"Fragmentary kana": the Japanese syllabary whose characters derive from parts of more complex [[kanji-characters|kanji]] — with [[hiragana]] one of the two [[kana]].'
+wikidata_id: Q82946
+sources:
+  definition:
+    - source: wikipedia-en-katakana
+      accessed: 2026-11-06
+    - source: history-of-japanese-art
+      locator: Glossary, s.v. kana
+      accessed: 2026-11-06

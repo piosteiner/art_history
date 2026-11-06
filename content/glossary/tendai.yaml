@@ -1,0 +1,20 @@
+public_id: 116166
+name: Tendai
+names:
+  - lang: ja
+    role: translation
+    text: "{天台宗|てんだいしゅう}"
+  - lang: de
+    role: translation
+    text: Tendai-shū
+  - Tendai-shū
+category: religion
+definition: A school of Mahāyāna Buddhism with strong esoteric elements, brought to Japan by Saichō (767–822) and officially established in 806, based on Mount Hiei. Centred on the Lotus Sutra, it sought to unite the different strains of Buddhism in one teaching.
+wikidata_id: Q855964
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: Glossary, s.v. Buddhism (traditions and schools)
+      accessed: 2026-11-06
+    - source: wikipedia-en-tendai
+      accessed: 2026-11-06

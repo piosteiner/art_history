@@ -1,0 +1,18 @@
+public_id: 115985
+name: Kokin Wakashū
+names:
+  - lang: ja
+    role: original
+    text: "{古今和歌集|こきんわかしゅう}"
+  - kind: abbreviation
+    role: alternative
+    text: Kokinshū
+  - Collection of Japanese Poems of Ancient and Modern Times
+kind: poetry anthology
+written: c. 905
+description_md: "The first imperial anthology of [[waka]]: conceived by Emperor Uda and published by order of his son Emperor Daigo in about 905; its finished form dates to about 920.[[source/wikipedia-en-kokin-wakashu]]"
+wikidata_id: Q1047167
+sources:
+  kind:
+    - source: wikipedia-en-kokin-wakashu
+      accessed: 2026-11-06

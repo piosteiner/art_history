@@ -29,3 +29,7 @@ metadata:
 relationships:
   - type: written_by
     to: person/chikamatsu-monzaemon
+sources:
+  kind:
+    - source: wikipedia-en-love-suicides-at-sonezaki
+      accessed: 2026-11-06

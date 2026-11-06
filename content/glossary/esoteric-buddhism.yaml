@@ -1,0 +1,19 @@
+public_id: 116165
+name: Esoteric Buddhism
+names:
+  - lang: de
+    role: translation
+    text: Vajrayana
+  - Vajrayāna
+  - Mantrayāna
+  - Tantric Buddhism
+category: religion
+definition: 'The Vajrayāna ("Diamond Vehicle"), also called Mantrayāna or Tantric Buddhism: a vehicle of Mahāyāna Buddhism, and one of the three great Buddhist traditions. In Japan its teaching came with the [[tendai|Tendai]] and [[shingon|Shingon]] schools in the ninth century.'
+wikidata_id: Q172175
+sources:
+  definition:
+    - source: wikipedia-en-vajrayana
+      accessed: 2026-11-06
+    - source: history-of-japanese-art
+      locator: Glossary, s.v. Buddhism (traditions and schools)
+      accessed: 2026-11-06

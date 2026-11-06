@@ -1,0 +1,19 @@
+public_id: 115876
+name: heroic epic
+names:
+  - lang: de
+    role: translation
+    text: Heldenepos
+  - lang: de
+    role: alternative
+    text: Heldenepik
+  - heroic epic poem
+category: literary genre
+parent: epic-poem
+definition: An epic poem centred on a figure of a heroic age, such as the Nibelungenlied. It belongs to heroic poetry (German Heldendichtung), the wider term for every poetic form centred on such a figure, which also takes in shorter heroic lays.
+sources:
+  definition:
+    - source: wikipedia-de-heldendichtung
+      accessed: 2026-11-06
+    - source: wikipedia-de-nibelungenlied
+      accessed: 2026-11-06

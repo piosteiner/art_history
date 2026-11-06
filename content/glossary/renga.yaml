@@ -1,0 +1,18 @@
+public_id: 115979
+name: renga
+names:
+  - lang: ja
+    role: translation
+    text: "{連歌|れんが}"
+  - linked verse
+category: literary genre
+parent: poem
+definition: '"Linked poem" (連歌): collaborative poetry in which several poets add stanzas of 5-7-5 and 7-7 on in turn, each linked to the one before. In the medieval period it was the main form of court verse — chains could grow to a thousand stanzas — and spread to poet-monks and the samurai; the shogun Ashikaga Yoshimitsu gathered the greatest renga poets of his day at his Kinkakuji retreat.'
+wikidata_id: Q1506883
+sources:
+  definition:
+    - source: wikipedia-en-renga
+      accessed: 2026-11-06
+    - source: history-of-japanese-art
+      locator: 180–181
+      accessed: 2026-11-06

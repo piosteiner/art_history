@@ -1,0 +1,15 @@
+public_id: 116186
+name: geisha
+names:
+  - lang: ja
+    role: translation
+    text: "{芸者|げいしゃ}"
+  - geiko
+  - geigi
+category: society
+definition: Japanese performing artists and entertainers trained in the traditional performing arts — dance, music and singing — and accomplished as conversationalists and hosts; in Kyoto and Kanazawa they are called geiko.
+wikidata_id: Q82723
+sources:
+  definition:
+    - source: wikipedia-en-geisha
+      accessed: 2026-11-06

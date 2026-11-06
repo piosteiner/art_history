@@ -1,0 +1,17 @@
+public_id: 116196
+name: way of incense
+names:
+  - lang: ja
+    role: translation
+    text: "{香道|こうどう}"
+  - lang: ja-Latn
+    role: romanization
+    text: kōdō
+  - kōdō
+category: arts and customs
+definition: 'Kōdō (香道, "way of fragrance"): the art of appreciating Japanese incense within a codified conduct, from its tools to incense-comparing games such as kumikō and genjikō.'
+wikidata_id: Q1797580
+sources:
+  definition:
+    - source: wikipedia-en-kodo
+      accessed: 2026-11-06

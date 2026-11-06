@@ -1,0 +1,13 @@
+public_id: 116169
+name: Shugendō
+names:
+  - lang: ja
+    role: translation
+    text: "{修験道|しゅげんどう}"
+category: religion
+definition: '"The way of trial and practice": an Esoteric Buddhist religion of ascetic practices that originated in the Nara period, evolving from the seventh century out of beliefs and rituals drawn from [[esoteric-buddhism|Esoteric Buddhism]] and other traditions.'
+wikidata_id: Q1483875
+sources:
+  definition:
+    - source: wikipedia-en-shugendo
+      accessed: 2026-11-06

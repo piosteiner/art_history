@@ -1,0 +1,19 @@
+public_id: 115975
+name: waka
+names:
+  - lang: ja
+    role: translation
+    text: "{和歌|わか}"
+  - yamato-uta
+  - Japanese poem
+category: literary genre
+parent: poem
+definition: 'Poetry in classical Japanese (和歌, "Japanese poem"). Up to the Man’yōshū in the eighth century the word covered several forms — tanka, chōka, sedōka and others; as the others fell out of use early in the Heian period, waka came to mean the tanka alone: thirty-one syllables in five lines (5-7-5-7-7), the basic form from which most other Japanese forms derived.'
+wikidata_id: Q737148
+sources:
+  definition:
+    - source: wikipedia-en-waka
+      accessed: 2026-11-06
+    - source: history-of-japanese-art
+      locator: 110–111
+      accessed: 2026-11-06

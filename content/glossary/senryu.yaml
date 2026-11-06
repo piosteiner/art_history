@@ -1,0 +1,14 @@
+public_id: 115981
+name: senryū
+names:
+  - lang: ja
+    role: translation
+    text: "{川柳|せんりゅう}"
+category: literary genre
+parent: poem
+definition: A short Japanese poem built like a haiku — three phrases of 17 on — but about human foibles rather than nature, and often cynical or darkly humorous.
+wikidata_id: Q1321402
+sources:
+  definition:
+    - source: wikipedia-en-senryu
+      accessed: 2026-11-06

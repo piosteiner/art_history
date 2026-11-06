@@ -1,0 +1,14 @@
+public_id: 116195
+name: makurakotoba
+names:
+  - lang: ja
+    role: translation
+    text: "{枕詞|まくらことば}"
+  - pillow word
+category: language
+definition: '"Pillow words": figures of speech used in [[waka]] in association with certain words — a "pillow" for the noun or verb they accompany.'
+wikidata_id: Q845474
+sources:
+  definition:
+    - source: wikipedia-en-makurakotoba
+      accessed: 2026-11-06

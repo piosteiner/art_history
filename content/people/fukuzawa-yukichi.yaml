@@ -18,9 +18,29 @@ kind: person
 occupations: [translator, pedagogue, philosopher, professor, critic, journalist, writer, politician, businessperson, political scientist, opinion journalist]
 birth: 1835-01-10
 death: 1901-02-03
+description_md: |-
+  Writer, educator and thinker, regarded as one of the founders of the new Japan after the Meiji Restoration: through his teaching and his writings he sought to instil the ideas that, he believed, had put the West ahead of Japan.[[source/history-of-japanese-art|p. 356]]
+
+  Born in Osaka into a low-ranking samurai family of the Nakatsu domain, he studied Dutch learning ([[rangaku]]) at Ogata Kōan’s Tekijuku in Osaka. In 1858 his domain sent him to Edo to set up a school of Dutch studies — the beginning of [[institution/keio-university|Keio University]]. When he found in Yokohama that the foreigners there spoke English, not Dutch, he taught himself English and became a translator for the shogunate.[[source/wikipedia-en-fukuzawa-yukichi]]
+
+  He travelled with the shogunate’s [[event/japanese-embassy-to-the-united-states|embassy to the United States]] in 1860, as steward to Kimura Yoshitake, the captain of the escort ship Kanrin Maru,[[source/wikipedia-en-fukuzawa-yukichi]] and in 1862 as one of the two translators of the [[event/first-japanese-embassy-to-europe|first embassy to Europe]], which negotiated in France, Britain, the Netherlands, Prussia, Russia and Portugal.[[source/wikipedia-en-first-japanese-embassy-to-europe-1862]] These journeys convinced him that Japan needed not only Western technology but also the West’s social, economic and political institutions.[[source/wikipedia-en-fukuzawa-yukichi]]
+
+  In 1868, while fighting raged in Edo, he moved his school to an estate in Mita and named it Keio Gijuku after the era name Keiō. He declined every government post and remained an independent educator and writer. His *Seiyō jijō* (Conditions in the West, published 1867–1879) and *Gakumon no susume* (An Encouragement of Learning) — “Heaven never created a man above another nor a man below another” — were bestsellers; in 1882 he founded the newspaper *Jiji shinpō*. In later writings such as the editorial “Datsu-A ron” (“Leaving Asia”, 1885) he called on Japan to distance itself from its Asian neighbours, and he supported the First Sino-Japanese War of 1894–95 — a side of his work that remains debated. His portrait was on the 10,000-yen note from 1984 to 2024.[[source/wikipedia-en-fukuzawa-yukichi]]
+
+  [[artwork/okuma-fukuzawa-yukichi|Ōkuma Ujihiro’s seated portrait]] of him was completed in 1892.[[source/history-of-japanese-art|p. 356]]
 wikidata_id: Q355447
 metadata:
   sources: [Wikidata Q355447 (retrieved 2026-11-01)]
+relationships:
+  - type: founded
+    to: institution/keio-university
+    period: 1858
+  - type: participated_in
+    to: event/first-japanese-embassy-to-europe
+    label: translator
+  - type: participated_in
+    to: event/japanese-embassy-to-the-united-states
+    label: steward to the captain of the Kanrin Maru
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/d/db/Fukuzawa_Yukichi_1891.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Fukuzawa_Yukichi_1891.jpg

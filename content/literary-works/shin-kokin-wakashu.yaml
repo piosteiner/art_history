@@ -1,0 +1,18 @@
+public_id: 115986
+name: Shin Kokin Wakashū
+names:
+  - lang: ja
+    role: original
+    text: "{新古今和歌集|しんこきんわかしゅう}"
+  - kind: abbreviation
+    role: alternative
+    text: Shin Kokinshū
+  - New Collection of Poems Ancient and Modern
+kind: poetry anthology
+written: 1205
+description_md: The eighth imperial anthology of [[waka]], commissioned in 1201 by the retired emperor Go-Toba, who set up a Bureau of Poetry for it, and presented in 1205, three hundred years after the [[literature/kokin-wakashu|Kokinshū]]. With the [[literature/manyoshu|Man’yōshū]] and the Kokinshū it counts among the three most influential anthologies of Japanese poetry.[[source/wikipedia-en-shin-kokin-wakashu]]
+wikidata_id: Q659439
+sources:
+  kind:
+    - source: wikipedia-en-shin-kokin-wakashu
+      accessed: 2026-11-06

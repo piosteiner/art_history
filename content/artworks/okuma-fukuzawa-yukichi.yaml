@@ -1,13 +1,26 @@
 public_id: 108242
 title: Fukuzawa Yukichi
+names:
+  - lang: ja
+    role: original
+    text: "{福澤諭吉座像|ふくざわゆきちざぞう}"
+  - lang: en
+    role: translation
+    text: Seated Figure of Fukuzawa Yukichi
+    status: official
 creator: okuma-ujihiro
 created: 1892
 kind: sculpture
 medium: Bronze
 materials: [bronze]
-dimensions: [120]
-institution: keio-shiki-senior-high-school
-description_md: "The masterwork of [[artist/okuma-ujihiro]] (1856–1934), Ragusa’s most talented student: [[person/fukuzawa-yukichi]] (1835–1901), founder of Keiō University and one of the founders of new Japan, seated in a formal pose with an alert, enquiring expression; the textures of jacket and trousers differ so that natural light makes a believable pattern of highlights and shadows. [[source/history-of-japanese-art|p. 356, fig. 418]]"
+dimensions: [118, 112, 90.5]
+institution: keio-art-collection
+inventory_number: KAC-2020-0255
+web_url: https://objecthub.keio.ac.jp/en/object/6130
+description_md: |-
+  The masterwork of [[artist/okuma-ujihiro]] (1856–1934), Ragusa’s most talented student: [[person/fukuzawa-yukichi]] (1835–1901), founder of Keiō University and one of the founders of new Japan, seated in a formal pose with an alert, enquiring expression; the textures of jacket and trousers differ so that natural light makes a believable pattern of highlights and shadows. [[source/history-of-japanese-art|p. 356, fig. 418]]
+
+  The statue belongs to the [[institution/keio-art-collection|Keio Art Collection]] (KAC-2020-0255) and is in the charge of [[institution/keio-shiki-senior-high-school|Keio Shiki Senior High School]] (所管). Keio dates it to 1893 (Meiji 26) and measures it 118.0 × 112.0 × 90.5 cm;[[source/objecthub-keio-ac-jp|object 6130 (福澤諭吉座像)]] Mason gives 1892 and a height of 120 cm.[[source/history-of-japanese-art|p. 356, fig. 418]]
 relationships:
   - type: depicts_person
     to: person/fukuzawa-yukichi
@@ -19,6 +32,19 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 356, fig. 418
+provenance:
+  - owner: institution/keio-art-collection
+    sources:
+      - source: objecthub-keio-ac-jp
+        locator: object 6130 (福澤諭吉座像)
+        accessed: 2026-11-06
+  - owner: institution/keio-shiki-senior-high-school
+    role: custodian
+    label: in its charge (所管)
+    sources:
+      - source: objecthub-keio-ac-jp
+        locator: object 6130 (福澤諭吉座像)
+        accessed: 2026-11-06
 sources:
   kind:
     - source: history-of-japanese-art
@@ -38,6 +64,14 @@ sources:
   dimensions:
     - source: history-of-japanese-art
       locator: p. 356, fig. 418
+    - source: objecthub-keio-ac-jp
+      locator: object 6130 (福澤諭吉座像)
+      accessed: 2026-11-06
   institution:
-    - source: history-of-japanese-art
-      locator: p. 356, fig. 418
+    - url: https://objecthub.keio.ac.jp/en/object/6130
+      source: objecthub-keio-ac-jp
+      accessed: 2026-11-06
+  inventory_number:
+    - url: https://objecthub.keio.ac.jp/en/object/6130
+      source: objecthub-keio-ac-jp
+      accessed: 2026-11-06

@@ -1,0 +1,16 @@
+public_id: 116197
+name: bonsai
+names:
+  - lang: ja
+    role: translation
+    text: "{盆栽|ぼんさい}"
+  - lang: fr
+    role: translation
+    text: bonsaï
+category: arts and customs
+definition: '"Pot planting": the Japanese art of growing and shaping miniature trees in containers, with a documented history of over a thousand years.'
+wikidata_id: Q64365
+sources:
+  definition:
+    - source: wikipedia-en-bonsai
+      accessed: 2026-11-06

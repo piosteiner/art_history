@@ -1,0 +1,14 @@
+public_id: 116200
+name: hanami
+names:
+  - lang: ja
+    role: translation
+    text: "{花見|はなみ}"
+  - flower viewing
+category: arts and customs
+definition: '"Flower viewing": the custom of enjoying the transient beauty of flowers — almost always cherry, less often plum blossoms.'
+wikidata_id: Q210150
+sources:
+  definition:
+    - source: wikipedia-en-hanami
+      accessed: 2026-11-06

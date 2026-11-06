@@ -1,0 +1,27 @@
+public_id: 115988
+name: The Old Pond
+names:
+  - lang: ja
+    role: original
+    text: "{古池|ふるいけ}や{蛙|かわづ}{飛|と}びこむ{水|みず}の{音|おと}"
+  - lang: ja-Latn
+    role: romanization
+    text: Furuike ya kawazu tobikomu mizu no oto
+  - Furuike ya
+kind: haiku
+written: 1686
+description_md: |-
+  > 古池や　蛙飛びこむ　水の音
+  > *furuike ya / kawazu tobikomu / mizu no oto*
+  > An old pond — / a frog jumps in: / the sound of water. *(own literal translation)*
+
+  The best known of [[person/matsuo-basho]]’s verses, and held to be the one with which he established his own style; since the Edo period it has stood for the [[haiku]] as such. Its season word is the frog (spring). It was first printed in the third, intercalary month of 1686 in *Kawazu awase* (“frog contest”), compiled by his pupil Senka, and in the same year in the anthology *Haru no hi*; 1686 is taken as the year it was written.[[source/wikipedia-ja-furuike-ya]] In Bashō’s time it was a hokku — the name haiku came only with Masaoka Shiki’s reform from 1892.[[source/wikipedia-en-haiku]][[source/wikipedia-en-masaoka-shiki]]
+  The "ya" is a [[kireji]].
+wikidata_id: Q11411329
+relationships:
+  - type: written_by
+    to: person/matsuo-basho
+sources:
+  kind:
+    - source: wikipedia-ja-furuike-ya
+      accessed: 2026-11-06

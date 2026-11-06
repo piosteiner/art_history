@@ -1,0 +1,15 @@
+public_id: 116174
+name: kokugaku
+names:
+  - lang: ja
+    role: translation
+    text: "{国学|こくがく}"
+  - National Learning
+category: philosophy
+also_in: [language]
+definition: '"National study": an antiquarian movement and school of Japanese philology and philosophy of the Edo period, which turned Japanese scholarship away from the then dominant study of Chinese, Confucian and Buddhist works.'
+wikidata_id: Q855159
+sources:
+  definition:
+    - source: wikipedia-en-kokugaku
+      accessed: 2026-11-06

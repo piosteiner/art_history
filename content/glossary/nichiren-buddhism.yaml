@@ -1,0 +1,17 @@
+public_id: 116168
+name: Nichiren Buddhism
+names:
+  - lang: ja
+    role: translation
+    text: "{日蓮仏教|にちれんぶっきょう}"
+  - lang: de
+    role: translation
+    text: Nichiren-Buddhismus
+  - Hokkeshū
+category: religion
+definition: A branch of Mahāyāna Buddhism based on the teachings of the priest Nichiren (1222–1282), one of the schools of the Kamakura period; also called Hokkeshū, the Lotus school.
+wikidata_id: Q871371
+sources:
+  definition:
+    - source: wikipedia-en-nichiren-buddhism
+      accessed: 2026-11-06

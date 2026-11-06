@@ -1,0 +1,14 @@
+public_id: 116181
+name: sankin-kōtai
+names:
+  - lang: ja
+    role: translation
+    text: "{参勤交代|さんきんこうたい}"
+  - alternate attendance
+category: politics
+definition: '"Alternate attendance": a policy of the Tokugawa shogunate during most of the Edo period, created to control the [[daimyo|daimyō]] and keep them from overthrowing the regime, which required most of them to alternate their residence.'
+wikidata_id: Q1151844
+sources:
+  definition:
+    - source: wikipedia-en-sankin-kotai
+      accessed: 2026-11-06

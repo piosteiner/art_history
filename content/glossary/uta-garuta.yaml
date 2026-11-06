@@ -1,0 +1,13 @@
+public_id: 116198
+name: uta-garuta
+names:
+  - lang: ja
+    role: translation
+    text: "{歌|うた}がるた"
+category: arts and customs
+definition: '"Poetry karuta": a deck of Japanese playing cards, two sets of 100 cards with a [[waka]] on each — usually the poems of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]] — and the game played with it.'
+wikidata_id: Q1430569
+sources:
+  definition:
+    - source: wikipedia-en-uta-garuta
+      accessed: 2026-11-06

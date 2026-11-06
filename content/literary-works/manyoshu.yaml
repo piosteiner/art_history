@@ -1,0 +1,16 @@
+public_id: 115984
+name: Man’yōshū
+names:
+  - lang: ja
+    role: original
+    text: "{万葉集|まんようしゅう}"
+  - Collection of Ten Thousand Leaves
+kind: poetry anthology
+written: 760/794
+written_label: after 759, Nara period
+description_md: The oldest surviving collection of [[waka]], compiled sometime after 759 in the Nara period; its compiler, or the last of several, is widely believed to be Ōtomo no Yakamochi.[[source/wikipedia-en-manyoshu]] Besides [[tanka]] it holds [[choka|chōka]] and [[sedoka|sedōka]].[[source/wikipedia-en-waka]] Its centuries of court poetry fixed the imagery of nature and the seasons on which later poets drew.[[source/history-of-japanese-art|110–111]]
+wikidata_id: Q834321
+sources:
+  kind:
+    - source: wikipedia-en-manyoshu
+      accessed: 2026-11-06

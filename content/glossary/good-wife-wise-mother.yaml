@@ -1,0 +1,32 @@
+public_id: 115991
+name: Good Wife, Wise Mother
+names:
+  - lang: fr
+    role: translation
+    text: bonne épouse, sage mère
+  - lang: ja
+    role: translation
+    text: "{良妻|りょうさい}{賢母|けんぼ}"
+  - lang: zh
+    role: translation
+    text: 贤妻良母
+  - lang: ko
+    role: translation
+    text: 현모양처
+  - lang: ja
+    role: romanization
+    text: ryōsai kenbo
+category: society
+definition: traditional ideal for womanhood in East Asia
+wikidata_id: Q5583058
+metadata:
+  sources: [Wikidata Q5583058 (retrieved 2026-11-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Madonna_of_China_NGM-v31-p555.jpg/1280px-Madonna_of_China_NGM-v31-p555.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Madonna_of_China_NGM-v31-p555.jpg
+    license: Public domain
+    credit: Anonymous
+sources:
+  definition:
+    - accessed: 2026-11-06
+      wikidata: Q5583058

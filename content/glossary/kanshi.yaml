@@ -1,0 +1,15 @@
+public_id: 115982
+name: kanshi
+names:
+  - lang: ja
+    role: translation
+    text: "{漢詩|かんし}"
+  - Chinese poetry
+category: literary genre
+parent: poem
+definition: Poetry written in Chinese by Japanese poets (漢詩, "Han poetry"; the word also means Chinese poetry in general) — the most popular form among the aristocrats of the early Heian period, and written until modern times.
+wikidata_id: Q3276281
+sources:
+  definition:
+    - source: wikipedia-en-kanshi
+      accessed: 2026-11-06

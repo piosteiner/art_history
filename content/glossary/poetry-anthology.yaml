@@ -1,0 +1,23 @@
+public_id: 115983
+name: poetry anthology
+names:
+  - lang: de
+    role: translation
+    text: Gedichtsammlung
+  - lang: de
+    role: alternative
+    text: Anthologie
+  - lang: fr
+    role: translation
+    text: anthologie de poésie
+  - anthology
+category: literary genre
+definition: A collection of poems by several poets, chosen by a compiler. In Japan, from early in the Heian period, imperial anthologies of waka were commissioned by the court.
+wikidata_id: Q19357149
+sources:
+  definition:
+    - source: wikipedia-en-anthology
+      accessed: 2026-11-06
+    - source: history-of-japanese-art
+      locator: 110–111
+      accessed: 2026-11-06

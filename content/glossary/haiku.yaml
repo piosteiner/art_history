@@ -4,9 +4,23 @@ names:
   - lang: ja
     role: original
     text: "{俳句|はいく}"
-category: other
-definition: A poem of seventeen syllables (five, seven, five) that grew out of the opening verses of linked verse in the sixteenth and seventeenth centuries; perfected by Matsuo Bashō.
+  - lang: ja
+    role: former
+    text: "{発句|ほっく}"
+  - role: former
+    text: hokku
+  - lang: fr
+    role: translation
+    text: haïku
+category: literary genre
+parent: poem
+definition: "A poem of seventeen syllables (five, seven, five) that grew out of the opening verses of linked verse in the sixteenth and seventeenth centuries; perfected by Matsuo Bashō. It holds a season word (kigo) and usually a cutting word (kireji). In Bashō’s time such a verse was still called hokku (発句, “opening verse”): the stand-alone hokku was renamed haiku by Masaoka Shiki (1867–1902), who began his reform of the form in 1892, and the name is now used for the earlier verses as well."
+wikidata_id: Q37707
 sources:
   definition:
     - source: history-of-japanese-art
       locator: p. 332
+    - source: wikipedia-en-haiku
+      accessed: 2026-11-06
+    - source: wikipedia-en-masaoka-shiki
+      accessed: 2026-11-06

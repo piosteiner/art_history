@@ -1,0 +1,23 @@
+public_id: 115974
+name: poem
+names:
+  - lang: de
+    role: translation
+    text: Gedicht
+  - lang: de
+    role: alternative
+    text: Dichtung
+  - lang: fr
+    role: translation
+    text: poème
+  - lang: ja
+    role: translation
+    text: "{詩|し}"
+  - poetry
+category: literary genre
+definition: "A work of poetry: language used for its aesthetic and often rhythmic qualities, to evoke meanings in addition to, or in place of, the literal ones. A poem is written by a poet."
+wikidata_id: Q5185279
+sources:
+  definition:
+    - source: wikipedia-en-poetry
+      accessed: 2026-11-06

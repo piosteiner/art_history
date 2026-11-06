@@ -1,0 +1,13 @@
+public_id: 116199
+name: kemari
+names:
+  - lang: ja
+    role: translation
+    text: "{蹴鞠|けまり}"
+category: arts and customs
+definition: A ball game popular in the Heian and Kamakura periods in which the players keep a ball in the air with their feet; from the aristocracy of Kyoto it spread to the samurai and the townspeople.
+wikidata_id: Q12224003
+sources:
+  definition:
+    - source: wikipedia-en-kemari
+      accessed: 2026-11-06

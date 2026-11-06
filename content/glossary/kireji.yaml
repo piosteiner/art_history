@@ -1,0 +1,21 @@
+public_id: 115994
+name: kireji
+names:
+  - lang: de
+    role: translation
+    text: Schneidewort
+  - lang: ja
+    role: translation
+    text: 切れ字
+  - lang: zh
+    role: translation
+    text: 切字
+category: language
+definition: Special class of words in Japanese traditional poetry
+wikidata_id: Q4994760
+metadata:
+  sources: [Wikidata Q4994760 (retrieved 2026-11-06)]
+sources:
+  definition:
+    - accessed: 2026-11-06
+      wikidata: Q4994760

@@ -1,0 +1,20 @@
+public_id: 116173
+name: Daoism
+names:
+  - lang: ja
+    role: translation
+    text: "{道教|どうきょう}"
+  - lang: de
+    role: translation
+    text: Daoismus
+  - lang: fr
+    role: translation
+    text: taoïsme
+  - Taoism
+category: philosophy
+definition: A philosophical and religious tradition indigenous to China, emphasising harmony with the Dao (道, "the way").
+wikidata_id: Q9598
+sources:
+  definition:
+    - source: wikipedia-en-taoism
+      accessed: 2026-11-06

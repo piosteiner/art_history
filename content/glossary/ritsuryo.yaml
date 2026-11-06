@@ -1,0 +1,13 @@
+public_id: 116183
+name: ritsuryō
+names:
+  - lang: ja
+    role: translation
+    text: "{律令|りつりょう}"
+category: politics
+definition: The historical legal system of Japan based on the philosophies of [[confucianism|Confucianism]] and Chinese Legalism; the state governed by it is called ritsuryō-sei (律令制).
+wikidata_id: Q742460
+sources:
+  definition:
+    - source: wikipedia-en-ritsuryo
+      accessed: 2026-11-06

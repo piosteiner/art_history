@@ -1,0 +1,16 @@
+public_id: 116189
+name: kana
+names:
+  - lang: ja
+    role: translation
+    text: "{仮名|かな}"
+category: language
+definition: The two syllabaries — [[hiragana]] and [[katakana]] — developed at the end of the eighth century to represent the syllables of the Japanese language; kana are used together with [[kanji-characters|kanji]] in writing.
+wikidata_id: Q187659
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: Glossary, s.v. kana
+      accessed: 2026-11-06
+    - source: wikipedia-en-kana
+      accessed: 2026-11-06

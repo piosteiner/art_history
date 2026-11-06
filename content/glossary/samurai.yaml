@@ -1,0 +1,17 @@
+public_id: 116184
+name: samurai
+names:
+  - lang: ja
+    role: translation
+    text: "{侍|さむらい}"
+category: society
+also_in: [politics]
+definition: '"One who serves": the military class that developed in the Heian period (794–1185), largely out of the aristocratic and imperial clans, first as a kind of police force in the cities and on the great estates. By the end of the twelfth century the samurai had in effect taken over the government, and dominated it until 1868.'
+wikidata_id: Q38142
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: Glossary, s.v. samurai
+      accessed: 2026-11-06
+    - source: wikipedia-en-samurai
+      accessed: 2026-11-06
