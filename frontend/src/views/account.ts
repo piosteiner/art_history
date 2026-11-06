@@ -3,6 +3,7 @@
 //   password (the current one asked; other sessions end), log out everywhere else, and — for site-only accounts —
 //   delete the account with everything it holds. A forgotten password: the owner sets a new one (no e-mail is kept).
 // Logged out: Log in / Create an account (when sign-up is open).
+import { ask } from '../dialog';
 import { account, rememberLogin } from '../account';
 import {
   changePassword, deleteAccount, endOtherSessions, getAccountInfo, getSignup, loginUrl, setPublicName, signupUrl, ADMIN, type AccountInfo,
@@ -46,7 +47,7 @@ function draw(main: HTMLElement, a: AccountInfo) {
       <dt>Since</dt><dd>${day(a.created_at)}</dd>
       <dt>Study sets</dt><dd><a href="/sets">${String(a.sets)} of your own${a.edits ? `, member of ${String(a.edits)} more` : ''}</a></dd></dl>
 
-    <section class="account-section"><h2>Public name</h2>
+    <section class="account-section" id="public-name"><h2>Public name</h2>
       <p class="muted small">Shown on the sets you share and to those you edit sets with — choose any name; your username is never shown.</p>
       <form class="account-form" data-form="name"><input name="public_name" value="${a.public_name ?? ''}" maxlength="60" autocomplete="nickname" aria-label="Public name">
         <button type="submit">Save</button><span class="account-msg small" role="status"></span></form></section>
@@ -73,7 +74,7 @@ function draw(main: HTMLElement, a: AccountInfo) {
 
   const msgOf = (el: Element) => el.querySelector<HTMLElement>('.account-msg')!;
   const fail = (el: Element) => (err: Error) => { msgOf(el).textContent = err.message.replace(/^./, (c) => c.toUpperCase()); };
-  main.querySelectorAll<HTMLFormElement>('.account-form').forEach((f) => f.addEventListener('submit', (e) => {
+  main.querySelectorAll<HTMLFormElement>('.account-form').forEach((f) => f.addEventListener('submit', async (e) => {
     e.preventDefault();
     const val = (n: string) => (f.elements.namedItem(n) as HTMLInputElement).value;
     const msg = msgOf(f);
@@ -83,13 +84,20 @@ function draw(main: HTMLElement, a: AccountInfo) {
     } else if (f.dataset.form === 'password') {
       changePassword(val('current'), val('password'), val('password2')).then(() => { f.reset(); msg.textContent = 'Changed — you are logged out everywhere else.'; }).catch(fail(f));
     } else if (f.dataset.form === 'delete') {
-      if (!confirm('Delete your account and everything it holds? This can\'t be undone.')) { msg.textContent = ''; return; }
+      if (!(await ask('Delete your account and everything it holds? This can\'t be undone.', { title: 'Delete your account?', ok: 'Delete my account', danger: true }))) { msg.textContent = ''; return; }
       deleteAccount(val('password')).then(() => {
         try { localStorage.removeItem('arthistory.account'); } catch { /* private window */ }
         location.assign('/?deleted=1');
       }).catch(fail(f));
     }
   }));
+  // /account#public-name (from a set's sharing panel): the section stands out, its field ready to type in
+  if (location.hash === '#public-name') {
+    const sec = main.querySelector<HTMLElement>('#public-name')!;
+    sec.classList.add('account-highlight');
+    sec.scrollIntoView({ block: 'center' });
+    sec.querySelector<HTMLInputElement>('input[name=public_name]')!.focus({ preventScroll: true });
+  }
   const sessions = main.querySelector('.account-sessions');
   sessions?.addEventListener('click', () => {
     const p = sessions.parentElement!;

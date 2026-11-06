@@ -3,6 +3,7 @@
 // personal friend link, blocked accounts; /friends/<id>: the chat with a friend, live (Server-Sent Events: a message
 // arrives while the page is open); /friends/add/<code>: someone's friend link — send them a request.
 // People are shown by their public name only.
+import { ask, askText } from '../dialog';
 import {
   ApiError, chatEvents, deleteChat, friendAction, getChat, getFriendLink, getFriends, newFriendCode, reportChat, requestByCode, sendChat,
   type ChatMessage, type Person,
@@ -82,19 +83,19 @@ function listView(main: HTMLElement, note = '') {
       try { localStorage.setItem(KEY, b.dataset.by!); } catch { /* no storage */ }
       listView(main);
     }));
-    main.querySelectorAll<HTMLButtonElement>('[data-do]').forEach((b) => b.addEventListener('click', () => {
+    main.querySelectorAll<HTMLButtonElement>('[data-do]').forEach((b) => b.addEventListener('click', async () => {
       const li = b.closest<HTMLElement>('[data-id]')!;
       const what = b.dataset.do as Parameters<typeof friendAction>[0];
-      if (what === 'block' && !confirm('Block them? Your friendship ends; neither of you can send the other a request or a message until you unblock them.')) return;
-      if (what === 'remove' && !confirm('Remove this friend? You can no longer chat (your messages stay until you delete them).')) return;
+      if (what === 'block' && !(await ask('Block them? Your friendship ends; neither of you can send the other a request or a message until you unblock them.', { title: 'Block them?', ok: 'Block', danger: true }))) return;
+      if (what === 'remove' && !(await ask('Remove this friend? You can no longer chat (your messages stay until you delete them).', { title: 'Remove this friend?', ok: 'Remove', danger: true }))) return;
       friendAction(what, li.dataset.id!).then(() => listView(main)).catch((err: Error) => { msg.textContent = err.message; });
     }));
     main.querySelector('.friends-copy')?.addEventListener('click', () => {
       const input = main.querySelector<HTMLInputElement>('.friends-link input')!;
       navigator.clipboard?.writeText(input.value).then(() => { msg.textContent = 'Link copied.'; }, () => input.select());
     });
-    main.querySelector('.friends-new-link')?.addEventListener('click', () => {
-      if (confirm('Make a new friend link? The old one stops working.')) newFriendCode().then(() => listView(main, 'New link made.')).catch((err: Error) => { msg.textContent = err.message; });
+    main.querySelector('.friends-new-link')?.addEventListener('click', async () => {
+      if ((await ask('Make a new friend link? The old one stops working.', { ok: 'Make a new link' }))) newFriendCode().then(() => listView(main, 'New link made.')).catch((err: Error) => { msg.textContent = err.message; });
     });
     stream = chatEvents();
     stream?.addEventListener('message', () => listView(main));
@@ -180,12 +181,12 @@ function chatView(main: HTMLElement, id: string) {
         .catch((err: Error) => { msg.textContent = err.message; });
     });
     ta.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); } });
-    main.querySelector('.chat-clear')!.addEventListener('click', () => {
-      if (!confirm('Delete the whole conversation for you? The other person keeps their copy.')) return;
+    main.querySelector('.chat-clear')!.addEventListener('click', async () => {
+      if (!(await ask('Delete the whole conversation for you? The other person keeps their copy.', { title: 'Delete the conversation?', ok: 'Delete', danger: true }))) return;
       deleteChat(id, { all: '1' }).then(() => { messages = []; more = false; draw(); }).catch((err: Error) => { msg.textContent = err.message; });
     });
-    main.querySelector('.chat-report')!.addEventListener('click', () => {
-      const note = window.prompt('Report this conversation to the site\'s administrators? They receive a copy of its last 100 messages. What happened? (optional)');
+    main.querySelector('.chat-report')!.addEventListener('click', async () => {
+      const note = (await askText('Report this conversation to the site\'s administrators? They receive a copy of its last 100 messages.', { title: 'Report this conversation', label: 'What happened? (optional)', multiline: true, maxLength: 1000, ok: 'Report' }));
       if (note === null) return;
       reportChat(id, note).then(() => { msg.textContent = 'Reported — thank you. You can also block them on the Friends page.'; }).catch((err: Error) => { msg.textContent = err.message; });
     });

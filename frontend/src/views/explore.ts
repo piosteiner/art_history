@@ -9,6 +9,7 @@
 // The state lives in the URL (/?artists=…&movements=none&institutions=all&from=1888&to=1889) and is remembered locally.
 // The home page (/) shows curated views (/v1/featured, edited in the admin panel): the first one, others at
 // /?featured=<slug>, everything at /?all. A view is a saved URL query; changing the picks or the window makes it your own.
+import { ask } from '../dialog';
 import { deleteMyView, getClusters, getEntityMap, getEventsMap, getFeatured, getMyViews, getPlacesMap, getPresence, getPreviews, getProvenances, getSites, getView, listAll, PLURAL, previewDescription, saveMyView, updateMyView, type MyView } from '../api';
 import { account } from '../account';
 import { markdownEditor } from '../md-editor';
@@ -297,8 +298,8 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
     myEl.querySelector('.my-update')?.addEventListener('click', () => {
       updateMyView(shown!.id, { query: queryNow() }).then((v) => { if (v) location.assign(`/?mine=${v.id}`); }).catch((err: Error) => { msg.textContent = err.message; });
     });
-    myEl.querySelector('.my-delete')?.addEventListener('click', () => {
-      if (!confirm(`Delete your view “${shown!.name}”? The entries stay; only the saved selection and its text go.`)) return;
+    myEl.querySelector('.my-delete')?.addEventListener('click', async () => {
+      if (!(await ask(`Delete your view “${shown!.name}”? The entries stay; only the saved selection and its text go.`, { title: 'Delete this view?', ok: 'Delete', danger: true }))) return;
       deleteMyView(shown!.id).then(() => location.assign('/?all')).catch((err: Error) => { msg.textContent = err.message; });
     });
     form.addEventListener('submit', (e) => {

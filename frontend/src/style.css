@@ -1661,3 +1661,42 @@ p.sets-tools.sets-card { display: flex; }
 .sets-remove.held .hold-ring circle { stroke-dashoffset: 0; }
 .sets-remove.hold-hint::after { content: 'Hold to remove'; position: absolute; right: 0; bottom: calc(100% + .3rem); white-space: nowrap; padding: .2rem .5rem;
   border-radius: 6px; background: var(--text); color: var(--surface); font-size: .75rem; pointer-events: none; z-index: 5; }
+/* the public name: asked for in a set's sharing panel, chosen on the account page (owner 2026-11-06) */
+.sets-public-name { margin: 0 0 .6rem; }
+.sets-need-name { margin: 0 0 .8rem; }
+.sets-binding { display: grid; gap: .4rem; margin-left: 1.6rem; padding-left: .7rem; border-left: 2px solid var(--line); }
+.sets-binding[hidden] { display: none; }
+.account-section.account-highlight { padding: .6rem .9rem; border: 1px solid var(--accent); border-radius: 12px; background: var(--picked-bg);
+  animation: account-flash 1.6s ease-out 1; }
+@keyframes account-flash { from { box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 45%, transparent); } to { box-shadow: 0 0 0 0 transparent; } }
+@media (prefers-reduced-motion: reduce) { .account-section.account-highlight { animation: none; } }
+/* "About this set" folds away and stays folded (per set, this browser) */
+.sets-about > .sets-about-summary { display: flex; align-items: baseline; gap: .6rem; cursor: pointer; list-style: none; }
+.sets-about > .sets-about-summary::-webkit-details-marker { display: none; }
+.sets-about > .sets-about-summary .sets-card-title { margin: 0; }
+.sets-about > .sets-about-summary::before { content: '▸'; color: var(--muted); font-size: .85rem; transition: transform .15s; align-self: center; }
+.sets-about[open] > .sets-about-summary::before { transform: rotate(90deg); }
+.sets-about[open] > .sets-about-summary { margin-bottom: .7rem; }
+.sets-about-toggle::after { content: 'show'; }
+.sets-about[open] .sets-about-toggle::after { content: 'hide'; }
+.sets-about:not([open]) { padding-top: .7rem; padding-bottom: .7rem; }
+/* "Make my own copy" asks first; the edit form across the whole card (owner 2026-11-06) */
+.sets-manage .sets-edit-form { max-width: none; }
+.sets-manage .sets-edit-form .md-body textarea { min-height: 14rem; }
+.sets-copy-info { max-width: 46rem; padding: .7rem .9rem; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 8px; background: var(--surface); }
+.sets-copy-info p { margin: .2rem 0 .5rem; }
+.sets-copy-buttons { display: flex; gap: 1rem; align-items: center; margin-bottom: 0 !important; }
+.sets-copy-buttons .sets-copy-own { background: var(--accent); border-color: var(--accent); color: var(--surface); font-weight: 600; }
+/* the site's own questions (src/dialog.ts) instead of the browser's confirm/prompt (owner 2026-11-06) */
+.site-dialog { width: min(30rem, calc(100vw - 2rem)); padding: 0; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--text); box-shadow: var(--shadow); }
+.site-dialog::backdrop { background: rgb(0 0 0 / .45); }
+.site-dialog[open] { animation: site-dialog-in .14s ease-out; }
+@keyframes site-dialog-in { from { opacity: 0; transform: translateY(6px) scale(.98); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .site-dialog[open] { animation: none; } }
+.site-dialog-form { display: grid; gap: .8rem; padding: 1.1rem 1.3rem 1.2rem; }
+.site-dialog-title { margin: 0; font-family: var(--serif); font-size: 1.25rem; }
+.site-dialog-text { margin: 0; line-height: 1.5; }
+.site-dialog-field { display: grid; gap: .3rem; font-size: .92rem; }
+.site-dialog-field textarea { resize: vertical; }
+.site-dialog-buttons { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .5rem; margin-top: .2rem; }
+.site-dialog .site-dialog-ok.danger-fill { background: var(--prov-d); border-color: var(--prov-d); color: #fff; }

@@ -12,6 +12,13 @@ interface FakeSet {
   links?: { id: string; code: string; rights: string; created_at: string; ended_at: string | null; joined: number; expires_at: string | null; max_joins: number | null; closed: string | null }[];
 }
 const CODE = 'AbCdEfGh1234';
+/** The site asks in its own dialog (src/dialog.ts), never the browser's: answered with its action button, typing `text` first when given. */
+async function answerDialogs(page: Page, text?: string) {
+  await page.addLocatorHandler(page.locator('dialog.site-dialog[open]'), async (d) => {
+    if (text !== undefined && await d.locator('[name=value]').count()) await d.locator('[name=value]').fill(text);
+    await d.locator('.site-dialog-ok').click();
+  });
+}
 const JOIN = 'JoinMeToEdit1234';   // a link to join set 77 as an editor with approval (228)
 const CARD: Record<string, object> = {
   'the-great-wave-off-kanagawa': { type: 'artwork', name: 'The Great Wave off Kanagawa', facts: [{ label: 'Artist', value: 'Katsushika Hokusai' }, { label: 'Date', value: 'c. 1831' }], text: '', image: PNG, own: true },
@@ -266,6 +273,19 @@ test('a set: topic and a Markdown description (toolbar, preview), made public wi
   await page.locator('.sets-edit-form button[type=submit]').click();
   await expect(page.locator('.sets-description strong')).toHaveText('these');
   expect(account.sets[0].description).toBe('Learn **these**');
+  // "Make my own copy" first says what it does; Cancel closes it, nothing is copied
+  await page.locator('.sets-copy-box summary').click();
+  await expect(page.locator('.sets-copy-info')).toContainText('A new, private set of your own');
+  await page.locator('.sets-copy-cancel').click();
+  await expect(page.locator('.sets-copy-info')).toBeHidden();
+  expect(account.sets).toHaveLength(1);
+  // the description folds away and stays folded on this set
+  await page.locator('.sets-about-summary').click();
+  await expect(page.locator('.sets-description')).toBeHidden();
+  await page.reload();
+  await expect(page.locator('.sets-about')).not.toHaveAttribute('open');
+  await page.locator('.sets-about-summary').click();
+  await expect(page.locator('.sets-description strong')).toHaveText('these');
 
   // results: per kind of quiz, the boxes, the hardest entry
   await expect(page.locator('.sets-results')).toContainText('Name it');
@@ -273,12 +293,23 @@ test('a set: topic and a Markdown description (toolbar, preview), made public wi
   await expect(page.locator('.sets-stats')).toContainText('Most often not known: The Great Wave off Kanagawa');
 
   // public: not without a public name; then its address to copy
-  await page.locator('.sets-share summary').click();
+  await page.locator('#sets-sharing summary').click();
   await expect(page.locator('.sets-vis-form')).toContainText('anyone can look at it and study it');
   await page.locator('.sets-vis-form input[value=public]').check();
   await page.locator('.sets-vis-form button[type=submit]').click();
-  await expect(page.locator('.sets-panel-msg')).toContainText('public name');
-  await page.fill('.sets-vis-form input[name=public_name]', 'Ms Teacher');
+  await expect(page.locator('#sets-sharing .sets-panel-msg')).toContainText('public name');
+  // no field for it here: a notice leads to the account page, where the section stands out with its field focused
+  await expect(page.locator('.sets-vis-form input[name=public_name]')).toHaveCount(0);
+  await page.locator('#sets-sharing .sets-need-name a').click();
+  await expect(page).toHaveURL(/\/account#public-name$/);
+  await expect(page.locator('#public-name')).toHaveClass(/account-highlight/);
+  await expect(page.locator('#public-name input[name=public_name]')).toBeFocused();
+  await page.keyboard.type('Ms Teacher');
+  await page.locator('#public-name button[type=submit]').click();
+  await expect(page.locator('#public-name .account-msg')).toHaveText('Saved.');
+  await page.goto('/sets/1#sets-sharing');
+  await expect(page.locator('#sets-sharing .sets-public-name')).toContainText('see you as Ms Teacher');
+  await page.locator('.sets-vis-form input[value=public]').check();
   await page.locator('.sets-vis-form button[type=submit]').click();
   await expect(page.locator('.sets-vis-form .sets-share-link input')).toHaveValue(/\/sets\/s\/Shared123456$/);
   await expect(page.locator('main h1 .sets-vis')).toHaveText('public');
@@ -378,7 +409,7 @@ test('an exam date plans the day\'s cards: the days counted, today\'s cards stud
 test('members: the owner\'s panel — rights changed, a link with rights, a member removed; joining by a link that says what it gives; a save after someone else\'s change shows theirs', async ({ page }) => {
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
-  page.on('dialog', (d) => { void d.accept(); });
+  await answerDialogs(page);
   const account = await loggedIn(page, { conflict: true });
   account.sets.push({ id: '9', name: 'Exam: Edo', topic: null, description: 'Mine', visibility: 'shared', code: null, items: [],
     members: [{ id: '5', name: 'Ms Other', me: false, rights: 'full', chat: false }], updated_by: 'Ms Other' });
@@ -386,20 +417,34 @@ test('members: the owner\'s panel — rights changed, a link with rights, a memb
   await expect(page.locator('main h1 .sets-together-tag')).toHaveText('1 member');
   await expect(page.locator('.sets-meta')).toContainText('by Ms Other');
   await expect(page.locator('.sets-your-part')).toContainText('Your part: Owner');
-  await page.locator('.sets-share summary').click();
-  const panel = page.locator('.sets-panel');
+  await page.locator('#sets-members-panel summary').click();
+  await page.locator('#sets-sharing summary').click();
+  const panel = page.locator('#sets-sharing');
+  const membersPanel = page.locator('#sets-members-panel');
   // what each part may do, in the same words the members see
-  await expect(panel.locator('.sets-rights-legend')).toContainText('Editor with approval');
-  await expect(panel.locator('.sets-rights-legend')).toContainText('each waits until the owner accepts or rejects it');
+  await expect(membersPanel.locator('.sets-rights-legend')).toContainText('Editor with approval');
+  await expect(membersPanel.locator('.sets-rights-legend')).toContainText('each waits until the owner accepts or rejects it');
+  // hours and the veto only for binding votes — with advisory ones the owner decides anyway
+  await expect(panel.locator('input[name=owner_veto]')).toBeHidden();
+  await panel.locator('.sets-votes-form input[value=binding]').check();
+  await expect(panel.locator('input[name=owner_veto]')).toBeVisible();
+  await panel.locator('.sets-votes-form input[value=advisory]').check();
+  await expect(panel.locator('input[name=vote_hours]')).toBeHidden();
   // a member's rights changed
-  await panel.locator('[data-member="5"] select').selectOption('vote');
+  await membersPanel.locator('[data-member="5"] select').selectOption('vote');
   await expect.poll(() => account.posts).toContain('member:5:action=rights&rights=vote');
-  await expect(panel.locator('.sets-share-msg')).toContainText('Now: Editor with votes');   // the panel drawn again
+  await expect(membersPanel.locator('.sets-share-msg')).toContainText('Now: Editor with votes');   // the panel drawn again
   // a link with rights: not without a public name — then one to copy, marked with what it gives
   await panel.locator('.sets-link-form select').selectOption('approval');
   await panel.locator('.sets-link-form button').click();
-  await expect(page.locator('.sets-panel-msg')).toContainText('public name');
-  await panel.locator('.sets-vis-form input[name=public_name]').fill('Mr Owner');
+  await expect(page.locator('#sets-sharing .sets-panel-msg')).toContainText('public name');
+  await page.goto('/account#public-name');
+  await expect(page.locator('#public-name input[name=public_name]')).toBeFocused();
+  await page.keyboard.type('Mr Owner');
+  await page.locator('#public-name button[type=submit]').click();
+  await expect(page.locator('#public-name .account-msg')).toHaveText('Saved.');
+  await page.goto('/sets/9#sets-sharing');
+  await panel.locator('.sets-link-form select').selectOption('approval');
   // optional limits (230): a last day and at most how many join
   await panel.locator('.sets-link-form input[name=expires_on]').fill('2026-12-31');
   await panel.locator('.sets-link-form input[name=max_joins]').fill('3');
@@ -411,8 +456,9 @@ test('members: the owner\'s panel — rights changed, a link with rights, a memb
   await panel.locator('[data-end]').click();
   await expect(panel.locator('.sets-links')).toHaveCount(0);
   await expect(panel).toContainText('No longer open (1)');
-  await panel.locator('[data-remove="5"]').click();
-  await expect(panel).toContainText('No members yet');
+  await membersPanel.locator('summary').first().click();
+  await membersPanel.locator('[data-remove="5"]').click();
+  await expect(membersPanel).toContainText('No members yet');
 
   // a save from an older text: refused, theirs shown, mine kept; saving again replaces theirs
   await page.locator('.sets-edit summary').click();
@@ -514,7 +560,7 @@ test('a set\'s owner: a proposed change with votes and the decision, the history
     if (path === '/share') { visibility = body.get('visibility') === 'private' ? 'private' : 'shared'; return json({ set: set(), public_name: 'Test Owner' }); }
     return json({});
   });
-  page.on('dialog', (d) => { void d.accept(); });
+  await answerDialogs(page);
   await page.goto('/sets/55');
   const box = page.locator('#sets-proposals');
   await expect(box).toContainText('Diego Velázquez');
@@ -534,17 +580,19 @@ test('a set\'s owner: a proposed change with votes and the decision, the history
   await expect(page.locator('.sets-history-list li').first()).toContainText('Ann Helper added Ukiyo-e');
   await expect(page.locator('.sets-history-list li').nth(1)).toContainText('changed the name: Baroque → Baroque exam');
   await page.locator('.sets-history-list li').nth(1).locator('.sets-restore').click();
+  await expect(page.locator('dialog.site-dialog')).toHaveCount(0);           // asked and answered
   await expect.poll(() => posts).toContain('/restore:event=11&reason=');
 
   // lock, then private again: the members go (asked first)
   await page.locator('.sets-lock').click();
   await expect(page.locator('h1 .tag', { hasText: 'locked' })).toBeVisible();
   await expect(page.locator('.sets-lock')).toHaveText('Unlock');
-  await page.locator('.sets-share summary').click();
+  await page.locator('#sets-sharing summary').click();
   await page.locator('.sets-vis-form input[value=private]').check();
   await page.locator('.sets-vis-form button[type=submit]').click();
+  await expect(page.locator('dialog.site-dialog')).toHaveCount(0);
   await expect.poll(() => posts.some((p) => p.startsWith('/share:visibility=private'))).toBe(true);
-  await expect(page.locator('.sets-panel .sets-share-msg')).toContainText('Private: only you see it now');
+  await expect(page.locator('#sets-sharing .sets-share-msg')).toContainText('Private: only you see it now');
 });
 
 // 226: a set's members; someone hidden in the set's chat — their message a "hidden message" line, shown on a click
@@ -626,7 +674,7 @@ test('rights on the member\'s side: editing with approval proposes; a viewer onl
     if (path === '/57/stats') return json({ modes: {}, boxes: { forward: [1, 0, 0, 0, 0, 0], reverse: [1, 0, 0, 0, 0, 0] }, hardest: [] });
     return json({});
   });
-  page.on('dialog', (d) => { void d.accept('Not on the exam'); });
+  await answerDialogs(page, 'Not on the exam');
   // the invitation in the list: who, which set, which rights — and what they mean here (binding votes)
   await page.goto('/sets');
   const inv = page.locator('.sets-invitations li');
@@ -651,6 +699,7 @@ test('rights on the member\'s side: editing with approval proposes; a viewer onl
   await expect(part).toContainText('The owner keeps a veto');
   await expect(page.locator('.sets-edit summary')).toHaveText('Propose a new name, topic, description');
   await page.locator('.sets-propose').click();
+  await expect(page.locator('dialog.site-dialog')).toHaveCount(0);
   await expect.poll(() => posts).toContain('/57/items/remove:type=artwork&slug=the-great-wave-off-kanagawa&reason=Not+on+the+exam');
   await expect(page.locator('.sets-msg')).toContainText('it applies once the owner accepts it');
 

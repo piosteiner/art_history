@@ -4,6 +4,11 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Site: set page follow-ups, the site's own dialogs
+- **What:** `frontend/src/dialog.ts` (`ask`/`askText`, a modal `<dialog>` in the site's style) replaces every `confirm()`/`prompt()` on the site (sets, friends, account, explore); set page: "About this set" collapsible and remembered per set (localStorage, convenience only), "Sharing" and "Members" as two panels, no public-name field in the panel (notice → `/account#public-name`, highlighted there), hours and veto shown only for binding votes, "Make my own copy" behind an explanation with Cancel, edit form across the card; study cards blank every word of the name except filler words (`FILLER` in `blank()`). Tests: `answerDialogs()` in `tests/sets.spec.ts`. Site changelog draft: seven bullets.
+- **Why:** owner 2026-11-06 — browser dialogs can be blocked by add-ons and don't look like the site; the rest as asked on the set page; "Li" stayed visible in a Li Jun card while "the" was blanked everywhere.
+- **Revert:** `git revert` the commit; Pages redeploys.
+
 ### Site: a set's page in sections, removing an entry by holding the ×
 - **What:** `frontend/src/views/sets.ts` + `style.css`: the set page in cards (about, "Manage this set" with the tools as pills, plan beside the study form with quiz kinds as tiles, results, entries with jump chips); the × of an entry removes it only after a 3-second hold while a ring fills (`holdToConfirm`, keyboard Enter/Space held too); e2e step in `tests/sets.spec.ts`. Site changelog draft: two bullets.
 - **Why:** owner 2026-11-06 — the elements weren't divided, the settings hard to see, removing too easy.

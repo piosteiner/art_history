@@ -27,6 +27,7 @@
 // Each answer moves the card's Leitner box (1–5, per account, entry and direction; typed and picked answers count for
 // "Name it"): the low boxes come first; a card not known comes back once at the end of the round. Every round is kept
 // with its result (per set and kind of quiz: the set page's "Your results"); visitors learn too, nothing is kept.
+import { ask, askText } from '../dialog';
 import { account } from '../account';
 import {
   answerCard, answerInvitation, ApiError, copySnapshot, forgetResults, getResults, getSnapshot, cancelInvitation, changeMember, chatEvents, copyOwnSet, copySet, createSet, decideProposal, deleteSet, deleteSetChat,
@@ -201,8 +202,8 @@ function list(main: HTMLElement, note = '') {
         msg.textContent = err.message;
       });
     }));
-    main.querySelectorAll<HTMLButtonElement>('.sets-delete').forEach((b) => b.addEventListener('click', () => {
-      if (!confirm(`Delete the set “${b.dataset.name}”? Its entries stay on the site; what you know of them stays too, and your results on it stay under “Your results” with the set as it was. Its members lose it, its links and its public address stop working.`)) return;
+    main.querySelectorAll<HTMLButtonElement>('.sets-delete').forEach((b) => b.addEventListener('click', async () => {
+      if (!(await ask(`Delete the set “${b.dataset.name}”? Its entries stay on the site; what you know of them stays too, and your results on it stay under “Your results” with the set as it was. Its members lose it, its links and its public address stop working.`, { title: 'Delete this set?', ok: 'Delete the set', danger: true }))) return;
       deleteSet(b.dataset.id!).then(() => list(main)).catch((err: Error) => { msg.textContent = err.message; });
     }));
   }).catch(() => failed(main, 'Your sets could not be loaded.'));
@@ -241,6 +242,14 @@ function browse(main: HTMLElement, params: URLSearchParams) {
 const itemPicture = (i: StudyItem) => (i.image
   ? html`<img class="sets-thumb${i.own ? ' own-image' : ''}" src="${i.own ? i.image : thumb(i.image, 120)}" alt="" loading="lazy"${i.own ? '' : html` crossorigin="anonymous"`}>`
   : html`<span class="sets-thumb sets-thumb-empty" aria-hidden="true"></span>`);
+
+/** The description folded away is remembered per set in this browser (owner 2026-11-06: of no interest once you are
+ *  learning the set) — a convenience only, so a blocked storage just shows it open. */
+const aboutKey = (ref: SetRef) => `arthistory.set-about.${'own' in ref ? ref.own : `s-${ref.code}`}`;
+function aboutClosed(ref: SetRef) { try { return localStorage.getItem(aboutKey(ref)) === 'closed'; } catch { return false; } }
+function rememberAbout(ref: SetRef, closed: boolean) {
+  try { if (closed) localStorage.setItem(aboutKey(ref), 'closed'); else localStorage.removeItem(aboutKey(ref)); } catch { /* private window */ }
+}
 
 export const HOLD_MS = 3000;
 const HOLD_RING = html`<svg class="hold-ring" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="16" pathLength="100"></circle></svg>`;
@@ -334,9 +343,10 @@ function one(main: HTMLElement, ref: SetRef, note = '') {
       ${meta(set, !owner)}</header>
       ${own && (!owner || hasMembers) ? yourPart(set) : ''}
       ${editor && locked ? html`<p class="flash">The owner has locked this set: you can study it, but not change or propose anything until they unlock it.</p>` : ''}
-      ${set.description_html || (own && set.copied_from) ? html`<section class="sets-about sets-card" aria-label="About this set">
+      ${set.description_html || (own && set.copied_from) ? html`<details class="sets-about sets-card"${aboutClosed(ref) ? '' : ' open'}>
+        <summary class="sets-about-summary"><span class="sets-card-title">About this set</span><span class="muted small sets-about-toggle"></span></summary>
         ${set.description_html ? html`<div class="prose sets-description">${trusted(set.description_html)}</div>` : ''}
-        ${own && set.copied_from ? html`<p class="muted small">A copy of <a href="/sets/s/${set.copied_from.code}">${set.copied_from.name}</a>${set.copied_from.creator ? ` by ${set.copied_from.creator}` : ''}.</p>` : ''}</section>` : ''}
+        ${own && set.copied_from ? html`<p class="muted small">A copy of <a href="/sets/s/${set.copied_from.code}">${set.copied_from.name}</a>${set.copied_from.creator ? ` by ${set.copied_from.creator}` : ''}.</p>` : ''}</details>` : ''}
       ${own ? html`<section class="sets-manage sets-card" aria-labelledby="sets-manage-title"><h2 class="sets-card-title" id="sets-manage-title">${viewer ? 'This set' : 'Manage this set'}</h2><div class="sets-tools">
         ${viewer ? '' : html`<details class="sets-edit"${editor && locked ? ' hidden' : ''}><summary class="link-button">${directly ? 'Edit name, topic, description' : 'Propose a new name, topic, description'}</summary>
           <form class="sets-edit-form"><p class="sets-conflict flash" hidden></p>
@@ -350,10 +360,15 @@ function one(main: HTMLElement, ref: SetRef, note = '') {
               <textarea name="description" rows="7" maxlength="10000" placeholder="What it is for, what to look out for, notes for learning …">${set.description ?? ''}</textarea></label>
             ${directly ? '' : html`<label>Why <span class="muted small">(optional — the others see it)</span> <input name="reason" maxlength="500"></label>`}
             <button type="submit">${directly ? 'Save' : 'Propose'}</button><datalist id="sets-topics"></datalist></form></details>`}
-        ${owner ? html`<details class="sets-share" id="sets-sharing"><summary class="link-button">Sharing and members…</summary><div class="sets-share-body"></div></details>` : ''}
+        ${owner ? html`<details class="sets-share" id="sets-sharing"><summary class="link-button">Sharing</summary><div class="sets-share-body"></div></details>
+          <details class="sets-share sets-members-panel" id="sets-members-panel"><summary class="link-button">Members${hasMembers ? html` <span class="muted">${String(set.members!.length)}</span>` : ''}</summary><div class="sets-share-body"></div></details>` : ''}
         ${owner ? html`<button type="button" class="link-button sets-lock" title="${locked ? 'Its members may change and propose again' : 'Its members can still study it, but change and propose nothing'}">${locked ? 'Unlock' : 'Lock'}</button>` : ''}
         ${viewer ? '' : html`<details class="sets-history"><summary class="link-button">History</summary><div class="sets-history-body"></div></details>`}
-        ${viewer ? '' : html`<button type="button" class="link-button sets-copy-own" title="A set of your own with the same entries — yours to share and to invite to">Make my own copy</button>`}
+        ${viewer ? '' : html`<details class="sets-copy-box"><summary class="link-button">Make my own copy</summary>
+          <div class="sets-copy-info"><p><b>A new, private set of your own</b> with the same name, topic, description and the ${plural(items.length, 'entry', 'entries')} as they are now.
+            ${owner ? 'This set stays as it is.' : 'This set stays as it is, and you stay a member of it.'}</p>
+            <p class="muted small">Not copied: members, links, chat, proposals and history. What you know of the cards stays — boxes are the same in every set holding an entry.</p>
+            <p class="sets-copy-buttons"><button type="button" class="sets-copy-own">Make the copy</button> <button type="button" class="link-button sets-copy-cancel">Cancel</button></p></div></details>`}
         ${owner ? '' : html`<button type="button" class="link-button sets-leave">Leave this set</button>`}</div></section>`
         : html`<p class="sets-tools sets-card">${me ? html`<button type="button" class="sets-copy">Save a copy to your sets</button>`
           : html`<span class="muted small">${loginLink() ?? 'Log in'} to keep track of what you know and to save a copy.</span>`}</p>`}
@@ -379,6 +394,7 @@ function one(main: HTMLElement, ref: SetRef, note = '') {
         })}</ul></section>`)}</section>` : ''}
     </section>`);
     const msg = main.querySelector<HTMLElement>('.sets-msg')!;
+    main.querySelector<HTMLDetailsElement>('.sets-about')?.addEventListener('toggle', (e) => rememberAbout(ref, !(e.target as HTMLDetailsElement).open));
     const missing = Number(new URLSearchParams(location.search).get('missing') || 0);
     msg.textContent = note || (missing ? `Saved as a new set. ${plural(missing, 'entry', 'entries')} of that version ${missing === 1 ? 'is' : 'are'} no longer on the site and left out.` : '');
     const stats = main.querySelector<HTMLElement>('.sets-stats');
@@ -435,14 +451,15 @@ function one(main: HTMLElement, ref: SetRef, note = '') {
         getSets().then((x) => { const dl = main.querySelector('#sets-topics'); if (x && dl) render(dl, topicOptions(x.topics)); }).catch(() => {});
       }, { once: true });
     }
-    if (owner) ownerPanel(main.querySelector<HTMLDetailsElement>('.sets-share')!, set, id, reload);
+    if (owner) ownerPanel(main.querySelector<HTMLDetailsElement>('#sets-sharing')!, main.querySelector<HTMLDetailsElement>('#sets-members-panel')!, set, id, reload);
     const historyBox = main.querySelector<HTMLDetailsElement>('.sets-history');
     if (historyBox) history(historyBox, id, owner, reload);
+    main.querySelector('.sets-copy-cancel')?.addEventListener('click', () => { main.querySelector<HTMLDetailsElement>('.sets-copy-box')!.open = false; });
     main.querySelector('.sets-copy-own')?.addEventListener('click', () => {
       copyOwnSet(id).then((c) => { if (c) location.assign(`/sets/${c.id}`); }).catch((err: Error) => { msg.textContent = err.message; });
     });
-    main.querySelector('.sets-leave')?.addEventListener('click', () => {
-      if (!confirm('Leave this set? It goes from your sets; your progress on its entries stays yours. To come back you need a new invitation or link.')) return;
+    main.querySelector('.sets-leave')?.addEventListener('click', async () => {
+      if (!(await ask('Leave this set? It goes from your sets; your progress on its entries stays yours. To come back you need a new invitation or link.', { title: 'Leave this set?', ok: 'Leave', danger: true }))) return;
       leaveSet(id).then(() => location.assign('/sets')).catch((err: Error) => { msg.textContent = err.message; });
     });
     const chatBox = main.querySelector<HTMLElement>('.sets-chat');
@@ -453,13 +470,13 @@ function one(main: HTMLElement, ref: SetRef, note = '') {
     if (proposalsBox) proposalList(proposalsBox, set, id, proposals, decided, reload);
     if (location.hash === '#sets-chat') chatBox?.scrollIntoView();
     if (location.hash === '#sets-proposals') proposalsBox?.scrollIntoView();
-    if (location.hash === '#sets-sharing') { const d = main.querySelector<HTMLDetailsElement>('.sets-share'); if (d) { d.open = true; d.scrollIntoView(); } }
-    main.querySelector('.sets-lock')?.addEventListener('click', () => {
-      if (!locked && !confirm('Lock this set? Its members can still study it, but change, propose and vote on nothing until you unlock it.')) return;
+    for (const h of ['#sets-sharing', '#sets-members-panel']) if (location.hash === h) { const d = main.querySelector<HTMLDetailsElement>(h); if (d) { d.open = true; d.scrollIntoView(); } }
+    main.querySelector('.sets-lock')?.addEventListener('click', async () => {
+      if (!locked && !(await ask('Lock this set? Its members can still study it, but change, propose and vote on nothing until you unlock it.', { title: 'Lock this set?', ok: 'Lock' }))) return;
       lockSet(id, !locked).then(reload).catch((err: Error) => { msg.textContent = err.message; });
     });
-    main.querySelectorAll<HTMLButtonElement>('.sets-propose').forEach((b) => b.addEventListener('click', () => {
-      const reason = window.prompt(`Why should “${b.dataset.name}” go? (optional — the others see it)`);
+    main.querySelectorAll<HTMLButtonElement>('.sets-propose').forEach((b) => b.addEventListener('click', async () => {
+      const reason = (await askText(`Why should “${b.dataset.name}” go? (optional — the others see it)`, { title: 'Propose its removal', label: 'Why? (optional — the others see it)', maxLength: 500, ok: 'Propose' }));
       if (reason === null) return;
       removeFromSet(id, b.dataset.type as StudyItem['type'], b.dataset.slug!, reason).then((r) => after(r, 'Removing it')).catch((err: Error) => { msg.textContent = err.message; });
     }));
@@ -548,7 +565,7 @@ function members(box: HTMLElement, set: StudySet, id: string, owner: boolean, ch
   const since = (iso: string | null) => (iso ? new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '');
   const load = () => getSetMembers(id).then((list) => {
     render(box, html`<h2>Members <span class="muted">${String(list.length)}</span></h2>
-      ${owner ? html`<p class="muted small">Rights, invitations and links: <a href="#sets-sharing">Sharing and members</a>.</p>` : ''}
+      ${owner ? html`<p class="muted small">Rights and invitations: <a href="#sets-members-panel">Members</a> · links: <a href="#sets-sharing">Sharing</a>.</p>` : ''}
       <ul class="sets-member-list">${list.map((m) => html`<li data-member="${m.id}"><b>${m.name ?? '—'}</b>
         <span class="tag" title="${rightsText(m.rights as RightsKey, set)}">${RIGHTS_NAME[m.rights as RightsKey]}</span>${m.me ? html` <span class="muted small">(you)</span>` : ''}
         <span class="muted small">since ${since(m.since)} · ${String(m.added)} ${m.added === 1 ? 'entry' : 'entries'} added</span>
@@ -564,13 +581,13 @@ function members(box: HTMLElement, set: StudySet, id: string, owner: boolean, ch
     box.querySelectorAll<HTMLButtonElement>('[data-hide]').forEach((b) => b.addEventListener('click', () => {
       hideInSetChat(id, b.dataset.hide!, b.dataset.on === '1').then(after).catch((err: Error) => { msg.textContent = err.message; });
     }));
-    box.querySelectorAll<HTMLButtonElement>('[data-report]').forEach((b) => b.addEventListener('click', () => {
-      const note = window.prompt('Report this member (their name or what they do) to the site\'s administrators? What happened? (optional)');
+    box.querySelectorAll<HTMLButtonElement>('[data-report]').forEach((b) => b.addEventListener('click', async () => {
+      const note = (await askText('Report this member (their name or what they do) to the site\'s administrators?', { title: 'Report this member', label: 'What happened? (optional)', multiline: true, maxLength: 1000, ok: 'Report' }));
       if (note === null) return;
       reportSetChat(id, { account: b.dataset.report! }, note).then(() => { msg.textContent = 'Reported — thank you.'; }).catch((err: Error) => { msg.textContent = err.message; });
     }));
-    box.querySelectorAll<HTMLButtonElement>('[data-remove]').forEach((b) => b.addEventListener('click', () => {
-      if (confirm('Remove them from the chat? Everyone sees that they were removed.')) setChatMember(id, 'remove', b.dataset.remove!).then(after).catch((err: Error) => { msg.textContent = err.message; });
+    box.querySelectorAll<HTMLButtonElement>('[data-remove]').forEach((b) => b.addEventListener('click', async () => {
+      if ((await ask('Remove them from the chat? Everyone sees that they were removed.', { title: 'Remove them from the chat?', ok: 'Remove', danger: true }))) setChatMember(id, 'remove', b.dataset.remove!).then(after).catch((err: Error) => { msg.textContent = err.message; });
     }));
     box.querySelectorAll<HTMLButtonElement>('[data-readmit]').forEach((b) => b.addEventListener('click', () => { setChatMember(id, 'readmit', b.dataset.readmit!).then(after).catch(() => {}); }));
   }).catch(() => render(box, html`<p class="muted small">The members could not be loaded.</p>`));
@@ -625,25 +642,25 @@ function setChat(box: HTMLElement, id: string, owner: boolean) {
       const m = shown.find((x) => x.id === b.dataset.reveal);
       if (m) { m.hidden = null; b.closest('li')!.outerHTML = line(m).value; }
     }));
-    box.querySelectorAll<HTMLButtonElement>('[data-del]').forEach((b) => b.addEventListener('click', () => {
-      if (!confirm(owner && !b.closest('.mine') ? 'Delete this message? Everyone sees “message deleted by the owner of the set”.' : 'Delete your message?')) return;
+    box.querySelectorAll<HTMLButtonElement>('[data-del]').forEach((b) => b.addEventListener('click', async () => {
+      if (!(await ask(owner && !b.closest('.mine') ? 'Delete this message? Everyone sees “message deleted by the owner of the set”.' : 'Delete your message?', { ok: 'Delete', danger: true }))) return;
       deleteSetChat(id, b.dataset.del!).then(load).catch((err: Error) => { status.textContent = err.message; });
     }));
-    const report = (what: { message?: string; account?: string }, label: string) => {
-      const note = window.prompt(`Report ${label} to the site's administrators? What happened? (optional)`);
+    const report = async (what: { message?: string; account?: string }, label: string) => {
+      const note = (await askText(`Report ${label} to the site's administrators?`, { title: 'Report', label: 'What happened? (optional)', multiline: true, maxLength: 1000, ok: 'Report' }));
       if (note === null) return;
       reportSetChat(id, what, note).then(() => { status.textContent = 'Reported — thank you.'; }).catch((err: Error) => { status.textContent = err.message; });
     };
     box.querySelectorAll<HTMLButtonElement>('[data-report-msg]').forEach((b) => b.addEventListener('click', () => report({ message: b.dataset.reportMsg! }, 'this message')));
     box.querySelectorAll<HTMLButtonElement>('[data-report-user]').forEach((b) => b.addEventListener('click', () => report({ account: b.dataset.reportUser! }, 'this member (their name)')));
-    box.querySelectorAll<HTMLButtonElement>('[data-remove]').forEach((b) => b.addEventListener('click', () => {
-      if (confirm('Remove them from the chat? Everyone sees that they were removed; they stay an editor of the set unless you remove them there too.')) setChatMember(id, 'remove', b.dataset.remove!).then(load).catch((err: Error) => { status.textContent = err.message; });
+    box.querySelectorAll<HTMLButtonElement>('[data-remove]').forEach((b) => b.addEventListener('click', async () => {
+      if ((await ask('Remove them from the chat? Everyone sees that they were removed; they stay an editor of the set unless you remove them there too.', { title: 'Remove them from the chat?', ok: 'Remove', danger: true }))) setChatMember(id, 'remove', b.dataset.remove!).then(load).catch((err: Error) => { status.textContent = err.message; });
     }));
     box.querySelectorAll<HTMLButtonElement>('[data-hide]').forEach((b) => b.addEventListener('click', () => {
       hideInSetChat(id, b.dataset.hide!, b.dataset.on === '1').then(load).catch((err: Error) => { status.textContent = err.message; });
     }));
     box.querySelectorAll<HTMLButtonElement>('[data-readmit]').forEach((b) => b.addEventListener('click', () => { setChatMember(id, 'readmit', b.dataset.readmit!).then(load).catch(() => {}); }));
-    box.querySelector('.sets-chat-off')?.addEventListener('click', () => { if (confirm('Switch the chat off for everyone?')) switchSetChat(id, false).then(load).catch(() => {}); });
+    box.querySelector('.sets-chat-off')?.addEventListener('click', async () => { if ((await ask('Switch the chat off for everyone?', { ok: 'Switch it off' }))) switchSetChat(id, false).then(load).catch(() => {}); });
   }).catch(() => render(box, html`<p class="muted small">The chat could not be loaded.</p>`));
   void load();
   chatStream = chatEvents();
@@ -671,8 +688,8 @@ function history(details: HTMLDetailsElement, id: string, owner: boolean, reload
         <ol class="sets-history-list">${ev.map((e, i) => html`<li><span class="muted small">${at(e.at)}</span> <b>${e.by ?? '—'}</b> ${what(e)}
           ${owner && i > 0 ? html`<button type="button" class="link-button small sets-restore" data-event="${e.id}" data-at="${e.at}">Back to here</button>` : ''}</li>`)}</ol>
         ${r.more ? html`<p class="muted small">The 1000 most recent steps.</p>` : ''}<p class="sets-history-msg small" role="status"></p>`);
-      box.querySelectorAll<HTMLButtonElement>('.sets-restore').forEach((b) => b.addEventListener('click', () => {
-        if (!confirm(`Make the set as it was on ${at(b.dataset.at!)}? Entries added since go, entries removed since come back. You can undo this the same way.`)) return;
+      box.querySelectorAll<HTMLButtonElement>('.sets-restore').forEach((b) => b.addEventListener('click', async () => {
+        if (!(await ask(`Make the set as it was on ${at(b.dataset.at!)}? Entries added since go, entries removed since come back. You can undo this the same way.`, { title: 'Go back to this moment?', ok: 'Restore' }))) return;
         restoreSet(id, b.dataset.event!).then(() => reload()).catch((err: Error) => { box.querySelector('.sets-history-msg')!.textContent = err.message; });
       }));
     }).catch(() => render(box, html`<p class="muted">The history could not be loaded.</p>`));
@@ -682,41 +699,28 @@ function history(details: HTMLDetailsElement, id: string, owner: boolean, reload
 /** The owner's "Sharing and members" (228): who sees the set; its members with their rights (changed, chat for
  *  viewers, handed the set, removed); friends invited with rights; links with rights (turned off one by one); how
  *  votes work — and what every kind of rights means, in the same words the members see. */
-function ownerPanel(details: HTMLDetailsElement, set: StudySet, id: string, reload: () => void) {
-  const box = details.querySelector<HTMLElement>('.sets-share-body')!;
+function ownerPanel(shareD: HTMLDetailsElement, membersD: HTMLDetailsElement, set: StudySet, id: string, reload: () => void) {
+  // two panels (owner 2026-11-06): Sharing = who can see it, links, votes; Members = the members with their rights,
+  // invitations, what each part may do. Drawn together from one answer; a note goes to the panel it concerns.
+  const sbox = shareD.querySelector<HTMLElement>('.sets-share-body')!;
+  const mbox = membersD.querySelector<HTMLElement>('.sets-share-body')!;
   let publicName: string | null = null;
+  type Where = 'share' | 'members';
   const rightsSelect = (name: string, value: SetRights = 'view') => html`<select name="${name}" aria-label="Rights">${RIGHTS.map((r) => html`<option value="${r}"${r === value ? ' selected' : ''}>${RIGHTS_NAME[r]}</option>`)}</select>`;
-  const draw = (sh: SetSharing, note = '') => {
+  const draw = (sh: SetSharing, note = '', where: Where = 'share') => {
     const members = set.members ?? [];
     const vis = sh.settings.visibility;
     const active = sh.links.filter((l) => !l.closed);
     const ended = sh.links.filter((l) => l.closed);
     const today = new Date().toISOString().slice(0, 10);
-    render(box, html`<div class="sets-panel">
-      <p class="sets-share-msg small flash ok" role="status"${note ? '' : ' hidden'}>${note}</p>
+    const head = (w: Where) => html`<p class="sets-share-msg small flash ok" role="status"${note && where === w ? '' : ' hidden'}>${where === w ? note : ''}</p>
+      ${publicName ? html`<p class="small sets-public-name">Members${vis === 'public' ? ' and visitors' : ''} see you as <b>${publicName}</b> · <a href="/account#public-name">change it on your account page</a></p>`
+        : html`<p class="flash sets-need-name">Sharing a set shows your public name — you haven't chosen one yet. <a href="/account#public-name">Choose it on your account page →</a></p>`}`;
+    render(sbox, html`<div class="sets-panel sets-panel-share">${head('share')}
       <section><h3>Who can see it</h3>
         <form class="sets-vis-form">${VISIBILITY.map((v) => html`<label class="check"><input type="radio" name="visibility" value="${v}"${vis === v ? ' checked' : ''}> <span><b>${VIS_LABEL[v]}</b> <span class="muted small">— ${VIS_HELP[v]}</span></span></label>`)}
-          <label>Your public name <input name="public_name" value="${publicName ?? ''}" maxlength="60" placeholder="Shown to members and on public sets" autocomplete="nickname">
-            <span class="muted small">— never your login name; the same on all your sets</span></label>
           <button type="submit">Save</button>
           ${vis === 'public' && set.code ? html`<p class="sets-share-link"><input readonly value="${shareUrl(set.code)}" aria-label="Address of the public set"> <button type="button" class="sets-copy-link">Copy</button></p>` : ''}</form></section>
-
-      <section><h3>Members <span class="muted">${String(members.length)}</span></h3>
-        ${members.length ? html`<ul class="sets-panel-members">${members.map((m) => html`<li data-member="${m.id}"><b>${m.name ?? '—'}</b>
-          ${rightsSelect('rights', m.rights)}
-          ${m.rights === 'view' ? html`<label class="check small"><input type="checkbox" name="chat"${m.chat ? ' checked' : ''}> <span>may use the chat</span></label>` : ''}
-          <button type="button" class="link-button small" data-owner="${m.id}" title="They own the set from then on; you stay as a member with full rights">Hand the set over</button>
-          <button type="button" class="link-button small danger-link" data-remove="${m.id}">Remove</button></li>`)}</ul>`
-          : html`<p class="muted small">No members yet — invite friends or send a link.</p>`}</section>
-
-      <section><h3>Invite a friend</h3>
-        ${sh.friends.length ? html`<form class="sets-invite-form"><select name="account" aria-label="Friend">${sh.friends.map((f) => html`<option value="${f.id}">${f.name ?? '—'}</option>`)}</select>
-          ${rightsSelect('rights')}<label class="check small sets-invite-chat"><input type="checkbox" name="chat"> <span>may use the chat (viewers)</span></label>
-          <button type="submit">Invite</button></form>
-          <p class="muted small">They find the invitation, with the rights it gives, among their sets and accept or decline it.</p>`
-          : html`<p class="muted small">Friends who aren't members yet appear here — add friends on <a href="/friends">Friends</a>, or send a link.</p>`}
-        ${sh.invitations.length ? html`<ul class="small">${sh.invitations.map((i) => html`<li>${i.name ?? '—'} — ${RIGHTS_NAME[i.rights]}${i.chat && i.rights === 'view' ? ', with the chat' : ''}
-          <span class="muted">invited ${day(i.invited_at)}, not answered yet</span> <button type="button" class="link-button" data-cancel="${i.id}">Cancel</button></li>`)}</ul>` : ''}</section>
 
       <section><h3>Links</h3>
         <p class="muted small">Anyone with an account who has a link can join with the rights it gives — send each only to those you mean. A link can end by itself on a day you choose or after a number of people have joined; turned off, expired or full, it lets no one new in — who joined with it stays.</p>
@@ -736,27 +740,50 @@ function ownerPanel(details: HTMLDetailsElement, set: StudySet, id: string, relo
         <form class="sets-votes-form"><p class="small">For members who edit <b>with votes</b> — a set votes one way or the other:</p>
           <label class="check"><input type="radio" name="vote_mode" value="advisory"${sh.settings.vote_mode === 'advisory' ? ' checked' : ''}> <span><b>Advisory</b> <span class="muted small">— ${voteRules('advisory', sh.settings.vote_hours, false)}</span></span></label>
           <label class="check"><input type="radio" name="vote_mode" value="binding"${sh.settings.vote_mode === 'binding' ? ' checked' : ''}> <span><b>Binding</b> <span class="muted small">— the vote decides; it lasts the hours below.</span></span></label>
-          <label>A vote lasts <input type="number" name="vote_hours" min="1" max="24" value="${String(sh.settings.vote_hours)}"> hours <span class="muted small">(1–24)</span></label>
-          <label class="check"><input type="checkbox" name="owner_veto"${sh.settings.owner_veto ? ' checked' : ''}> <span>Keep a veto: I may decide a binding vote before it ends <span class="muted small">— the members see that you have it</span></span></label>
+          <div class="sets-binding"${sh.settings.vote_mode === 'binding' ? '' : ' hidden'}>
+            <label>A vote lasts <input type="number" name="vote_hours" min="1" max="24" value="${String(sh.settings.vote_hours)}"> hours <span class="muted small">(1–24)</span></label>
+            <label class="check"><input type="checkbox" name="owner_veto"${sh.settings.owner_veto ? ' checked' : ''}> <span>Keep a veto: I may decide a vote before it ends <span class="muted small">— the members see that you have it</span></span></label></div>
           <button type="submit">Save</button></form></section>
+
+      <p class="sets-panel-msg small" role="status"></p></div>`);
+    render(mbox, html`<div class="sets-panel sets-panel-members">${head('members')}
+      <section><h3>Members <span class="muted">${String(members.length)}</span></h3>
+        ${members.length ? html`<ul class="sets-panel-members">${members.map((m) => html`<li data-member="${m.id}"><b>${m.name ?? '—'}</b>
+          ${rightsSelect('rights', m.rights)}
+          ${m.rights === 'view' ? html`<label class="check small"><input type="checkbox" name="chat"${m.chat ? ' checked' : ''}> <span>may use the chat</span></label>` : ''}
+          <button type="button" class="link-button small" data-owner="${m.id}" title="They own the set from then on; you stay as a member with full rights">Hand the set over</button>
+          <button type="button" class="link-button small danger-link" data-remove="${m.id}">Remove</button></li>`)}</ul>`
+          : html`<p class="muted small">No members yet — invite friends or send a link.</p>`}</section>
+
+      <section><h3>Invite a friend</h3>
+        ${sh.friends.length ? html`<form class="sets-invite-form"><select name="account" aria-label="Friend">${sh.friends.map((f) => html`<option value="${f.id}">${f.name ?? '—'}</option>`)}</select>
+          ${rightsSelect('rights')}<label class="check small sets-invite-chat"><input type="checkbox" name="chat"> <span>may use the chat (viewers)</span></label>
+          <button type="submit">Invite</button></form>
+          <p class="muted small">They find the invitation, with the rights it gives, among their sets and accept or decline it.</p>`
+          : html`<p class="muted small">Friends who aren't members yet appear here — add friends on <a href="/friends">Friends</a>, or send a link.</p>`}
+        ${sh.invitations.length ? html`<ul class="small">${sh.invitations.map((i) => html`<li>${i.name ?? '—'} — ${RIGHTS_NAME[i.rights]}${i.chat && i.rights === 'view' ? ', with the chat' : ''}
+          <span class="muted">invited ${day(i.invited_at)}, not answered yet</span> <button type="button" class="link-button" data-cancel="${i.id}">Cancel</button></li>`)}</ul>` : ''}</section>
 
       <section><h3>What each part may do</h3><dl class="sets-rights-legend small">
         ${(['owner', ...RIGHTS] as RightsKey[]).map((r) => html`<dt>${RIGHTS_NAME[r]}</dt><dd>${rightsText(r, sh.settings)}</dd>`)}</dl>
         <p class="muted small">Every member sees their own part in these words at the top of the set, and on an invitation or link before they join.</p></section>
       <p class="sets-panel-msg small" role="status"></p></div>`);
-    const msg = box.querySelector<HTMLElement>('.sets-panel-msg')!;
-    const fail = (err: Error) => { msg.textContent = err.message; };
-    /** the public name as typed above — sharing with someone needs one */
-    const typedName = () => box.querySelector<HTMLInputElement>('.sets-vis-form input[name=public_name]')?.value.trim() || publicName || '';
-    const again = (note: string) => getSharing(id).then((x) => { if (x) draw(x, note); }).catch(fail);
-    const changed = (note: string) => getSet({ own: id }).then((r) => { if (r) Object.assign(set, r.set); return again(note); });
-    box.querySelector<HTMLFormElement>('.sets-vis-form')!.addEventListener('submit', (e) => {
+    const smsg = sbox.querySelector<HTMLElement>('.sets-panel-msg')!;
+    const mmsg = mbox.querySelector<HTMLElement>('.sets-panel-msg')!;
+    const msg = smsg;
+    const fail = (err: Error) => { smsg.textContent = err.message; };
+    const mfail = (err: Error) => { mmsg.textContent = err.message; };
+    /** the account's public name (set on the account page) — sharing with someone needs one */
+    const typedName = () => publicName ?? '';
+    const again = (note: string, w: Where = 'share') => getSharing(id).then((x) => { if (x) draw(x, note, w); }).catch(w === 'share' ? fail : mfail);
+    const changed = (note: string, w: Where = 'share') => getSet({ own: id }).then((r) => { if (r) Object.assign(set, r.set); return again(note, w); });
+    sbox.querySelector<HTMLFormElement>('.sets-vis-form')!.addEventListener('submit', async (e) => {
       e.preventDefault();
       const f = e.target as HTMLFormElement;
       const visibility = (f.elements.namedItem('visibility') as RadioNodeList).value as Visibility;
       if (visibility === 'private' && (set.members?.length || sh.links.some((l) => !l.ended_at) || sh.invitations.length)
-        && !confirm('Make it private? All members leave the set, open invitations end, links stop working and open proposals close. Only you will see it.')) return;
-      shareSet(id, { visibility, public_name: (f.elements.namedItem('public_name') as HTMLInputElement).value }).then((r) => {
+        && !(await ask('Make it private? All members leave the set, open invitations end, links stop working and open proposals close. Only you will see it.', { title: 'Make it private?', ok: 'Make it private', danger: true }))) return;
+      shareSet(id, { visibility }).then((r) => {
         if (!r) return;
         publicName = r.public_name;
         Object.assign(set, r.set);
@@ -765,45 +792,47 @@ function ownerPanel(details: HTMLDetailsElement, set: StudySet, id: string, relo
         if (h1) render(h1, html`${set.name}${visBadge(set)}${together(set)}`);
       }).catch(fail);
     });
-    box.querySelector('.sets-copy-link')?.addEventListener('click', (e) => copyFrom((e.target as HTMLElement).previousElementSibling as HTMLInputElement, msg));
-    box.querySelectorAll<HTMLLIElement>('[data-member]').forEach((li) => {
+    sbox.querySelector('.sets-copy-link')?.addEventListener('click', (e) => copyFrom((e.target as HTMLElement).previousElementSibling as HTMLInputElement, msg));
+    mbox.querySelectorAll<HTMLLIElement>('[data-member]').forEach((li) => {
       const who = li.dataset.member!;
       li.querySelector('select')!.addEventListener('change', (e) => {
         const rights = (e.target as HTMLSelectElement).value as SetRights;
-        changeMember(id, who, { action: 'rights', rights }).then(() => changed(`Now: ${RIGHTS_NAME[rights]}.`)).catch(fail);
+        changeMember(id, who, { action: 'rights', rights }).then(() => changed(`Now: ${RIGHTS_NAME[rights]}.`, 'members')).catch(mfail);
       });
       li.querySelector<HTMLInputElement>('input[name=chat]')?.addEventListener('change', (e) => {
-        changeMember(id, who, { action: 'chat', on: (e.target as HTMLInputElement).checked ? '1' : '0' }).then(() => changed('Saved.')).catch(fail);
+        changeMember(id, who, { action: 'chat', on: (e.target as HTMLInputElement).checked ? '1' : '0' }).then(() => changed('Saved.', 'members')).catch(mfail);
       });
     });
-    box.querySelectorAll<HTMLButtonElement>('[data-remove]').forEach((b) => b.addEventListener('click', () => {
-      if (confirm('Remove them from the set? Their progress stays theirs; their open proposals stay until decided.')) changeMember(id, b.dataset.remove!, { action: 'remove' }).then(() => changed('Removed.')).catch(fail);
+    mbox.querySelectorAll<HTMLButtonElement>('[data-remove]').forEach((b) => b.addEventListener('click', async () => {
+      if ((await ask('Remove them from the set? Their progress stays theirs; their open proposals stay until decided.', { title: 'Remove this member?', ok: 'Remove', danger: true }))) changeMember(id, b.dataset.remove!, { action: 'remove' }).then(() => changed('Removed.', 'members')).catch(mfail);
     }));
-    box.querySelectorAll<HTMLButtonElement>('[data-owner]').forEach((b) => b.addEventListener('click', () => {
-      if (confirm('Hand the set over? They own it from then on — they decide about members, links and votes, and can delete it. You stay as a member with full rights.')) {
-        changeMember(id, b.dataset.owner!, { action: 'owner' }).then(reload).catch(fail);
+    mbox.querySelectorAll<HTMLButtonElement>('[data-owner]').forEach((b) => b.addEventListener('click', async () => {
+      if ((await ask('Hand the set over? They own it from then on — they decide about members, links and votes, and can delete it. You stay as a member with full rights.', { title: 'Hand the set over?', ok: 'Hand it over', danger: true }))) {
+        changeMember(id, b.dataset.owner!, { action: 'owner' }).then(reload).catch(mfail);
       }
     }));
-    const invite = box.querySelector<HTMLFormElement>('.sets-invite-form');
+    const invite = mbox.querySelector<HTMLFormElement>('.sets-invite-form');
     invite?.addEventListener('submit', (e) => {
       e.preventDefault();
       const v = (n: string) => (invite.elements.namedItem(n) as HTMLInputElement | HTMLSelectElement).value;
       inviteToSet(id, v('account'), v('rights') as SetRights, (invite.elements.namedItem('chat') as HTMLInputElement).checked, typedName())
-        .then(() => changed('Invited — they see the invitation among their sets.')).catch(fail);
+        .then(() => changed('Invited — they see the invitation among their sets.', 'members')).catch(mfail);
     });
-    box.querySelectorAll<HTMLButtonElement>('[data-cancel]').forEach((b) => b.addEventListener('click', () => { cancelInvitation(id, b.dataset.cancel!).then(() => again('Invitation cancelled.')).catch(fail); }));
-    const linkForm = box.querySelector<HTMLFormElement>('.sets-link-form')!;
+    mbox.querySelectorAll<HTMLButtonElement>('[data-cancel]').forEach((b) => b.addEventListener('click', () => { cancelInvitation(id, b.dataset.cancel!).then(() => again('Invitation cancelled.', 'members')).catch(mfail); }));
+    const linkForm = sbox.querySelector<HTMLFormElement>('.sets-link-form')!;
     linkForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const rights = (linkForm.elements.namedItem('rights') as HTMLSelectElement).value as SetRights;
       const field = (n: string) => (linkForm.elements.namedItem(n) as HTMLInputElement).value.trim();
       newSetLink(id, rights, typedName(), { expires_on: field('expires_on'), max_joins: field('max_joins') }).then(() => { publicName = typedName() || publicName; }).then(() => changed(`Link made: ${RIGHTS_NAME[rights]} — copy it and send it.`)).catch(fail);
     });
-    box.querySelectorAll<HTMLButtonElement>('.sets-link-copy').forEach((b) => b.addEventListener('click', () => copyFrom(b.previousElementSibling as HTMLInputElement, msg)));
-    box.querySelectorAll<HTMLButtonElement>('[data-end]').forEach((b) => b.addEventListener('click', () => {
-      if (confirm('Turn this link off? No one new can join with it; who joined stays. This can\'t be undone — make a new link instead.')) endSetLink(id, b.dataset.end!).then(() => again('The link is off.')).catch(fail);
+    sbox.querySelectorAll<HTMLButtonElement>('.sets-link-copy').forEach((b) => b.addEventListener('click', () => copyFrom(b.previousElementSibling as HTMLInputElement, msg)));
+    sbox.querySelectorAll<HTMLButtonElement>('[data-end]').forEach((b) => b.addEventListener('click', async () => {
+      if ((await ask('Turn this link off? No one new can join with it; who joined stays. This can\'t be undone — make a new link instead.', { title: 'Turn this link off?', ok: 'Turn it off', danger: true }))) endSetLink(id, b.dataset.end!).then(() => again('The link is off.')).catch(fail);
     }));
-    const votes = box.querySelector<HTMLFormElement>('.sets-votes-form')!;
+    const votes = sbox.querySelector<HTMLFormElement>('.sets-votes-form')!;
+    // hours and veto only mean something for binding votes: with advisory ones the owner decides anyway
+    votes.addEventListener('change', () => { votes.querySelector<HTMLElement>('.sets-binding')!.hidden = (votes.elements.namedItem('vote_mode') as RadioNodeList).value !== 'binding'; });
     votes.addEventListener('submit', (e) => {
       e.preventDefault();
       saveVoteSettings(id, { vote_mode: (votes.elements.namedItem('vote_mode') as RadioNodeList).value as VoteMode, vote_hours: (votes.elements.namedItem('vote_hours') as HTMLInputElement).value,
@@ -811,10 +840,10 @@ function ownerPanel(details: HTMLDetailsElement, set: StudySet, id: string, relo
         .then((s) => { if (s) Object.assign(set, s); return changed('Saved — open votes keep the rules they started with.'); }).catch(fail);
     });
   };
-  details.addEventListener('toggle', () => {
-    if (!details.open) return;
+  for (const d of [shareD, membersD]) d.addEventListener('toggle', () => {
+    if (!d.open) return;
     Promise.all([getSharing(id), getSets()]).then(([sh, r]) => { publicName = r?.public_name ?? null; if (sh) draw(sh); })
-      .catch(() => render(box, html`<p class="muted">This could not be loaded.</p>`));
+      .catch(() => render(d.querySelector<HTMLElement>('.sets-share-body')!, html`<p class="muted">This could not be loaded.</p>`));
   });
 }
 /** a link's end: the last day it works (it ends at midnight after it, Zurich) — "12 November 2026" */
@@ -910,8 +939,8 @@ function resultsPage(main: HTMLElement) {
       }).catch(fail);
     }));
     main.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((b) => b.addEventListener('click', () => { void copy(b.dataset.copy!); }));
-    main.querySelectorAll<HTMLButtonElement>('[data-forget]').forEach((b) => b.addEventListener('click', () => {
-      if (!confirm('Delete your results on this set, with the versions of the set kept for them? What you know of its entries stays.')) return;
+    main.querySelectorAll<HTMLButtonElement>('[data-forget]').forEach((b) => b.addEventListener('click', async () => {
+      if (!(await ask('Delete your results on this set, with the versions of the set kept for them? What you know of its entries stays.', { title: 'Delete your results?', ok: 'Delete', danger: true }))) return;
       forgetResults(b.dataset.forget!).then(() => resultsPage(main)).catch(fail);
     }));
   }).catch(() => failed(main, 'Your results could not be loaded.'));
@@ -942,11 +971,15 @@ function results(s: StudyStats, count: number): Html {
 
 // ---- the index cards --------------------------------------------------------------------------------------------
 /** The text with the entry's name blanked out (its words of three letters or more, any case). */
+const FILLER = new Set(['the', 'a', 'an', 'of', 'in', 'on', 'at', 'to', 'by', 'for', 'from', 'with', 'and', 'or', 'as',
+  'de', 'del', 'della', 'di', 'da', 'du', 'des', 'la', 'le', 'les', 'el', 'los', 'las', 'il', 'lo', 'et', 'y', 'e',
+  'der', 'die', 'das', 'dem', 'den', 'des', 'und', 'von', 'vom', 'zu', 'zum', 'zur', 'im', 'am', 'van', 'het', 'een', 'no']);
 export function blank(text: string, name: string) {
   const esc = (w: string) => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  // the whole name first ("Ukiyo-e", "The Great Wave"), then its words of three letters or more
+  // the whole name first ("Ukiyo-e", "The Great Wave"), then each of its words but the small filler words — short
+  // names count too ("Li" in "Li Jun"), "the" and "in" give nothing away (owner 2026-11-06)
   let out = name.trim() ? text.replace(new RegExp(`(?<![\\p{L}\\p{N}])${esc(name.trim())}(?![\\p{L}\\p{N}])`, 'giu'), '▁▁▁') : text;
-  const words = [...new Set(name.split(/[\s,.;:()«»"“”‘’'–—-]+/).filter((w) => w.length >= 3))].sort((a, b) => b.length - a.length);
+  const words = [...new Set(name.split(/[\s,.;:()«»"“”‘’'–—-]+/).filter((w) => w.length >= 2 && !FILLER.has(w.toLowerCase())))].sort((a, b) => b.length - a.length);
   for (const w of words) out = out.replace(new RegExp(`(?<![\\p{L}\\p{N}])${esc(w)}(?![\\p{L}\\p{N}])`, 'giu'), '▁▁▁');
   return out;
 }
