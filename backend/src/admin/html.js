@@ -40,7 +40,7 @@ function layout({ title, user, body, flash, nav = true, page = null }) {
 <script src="${asset('theme.js')}"></script>
 <script src="${asset('editor.js')}" defer></script>
 </head>
-<body data-map-js="${asset('map.js')}" data-map-css="${asset('map.css')}"${user ? html` data-live="1"` : ''}${page ? html` data-page-type="${page.type}" data-page-slug="${page.slug || ''}" data-page-mode="${page.mode}"` : ''}>
+<body data-map-js="${asset('map.js')}" data-map-css="${asset('map.css')}"${user ? html` data-live="1"` : ''}${page ? html` data-page-type="${page.type}" data-page-slug="${page.slug || ''}" data-page-mode="${page.mode}"${page.webUrl ? html` data-page-web-url="${page.webUrl}"` : ''}` : ''}>
 ${config.testEnv ? html`<div class="test-env" role="note"><b>Test environment</b> — changes here are reset every night to the live data and never reach
   <a href="https://arthistory.piogino.ch">arthistory.piogino.ch</a>. See them on the <a href="${config.testSite}">test site</a>.</div>` : ''}
 ${nav && user ? html`<header class="top">

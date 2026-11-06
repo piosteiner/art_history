@@ -783,3 +783,6 @@ label.check { display: flex; gap: .6em; align-items: flex-start; font-weight: no
 label.check input[type="checkbox"], label.check input[type="radio"] { width: auto; flex: none; margin: .25em 0 0; }
 label.check > span { flex: 1; }
 .signup .hint { color: var(--muted); font-size: .85rem; margin: .3rem 0 0; }
+/* the entry's own web page, offered first in a sources dialog (editor/cites.js offerWebPage) */
+.cite-webpage { margin: 0 0 .6rem; }
+.cite-chip-webpage { font-weight: 600; }

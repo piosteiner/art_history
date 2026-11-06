@@ -288,3 +288,37 @@ test('a source moved to "other": an O marker, the fact counts as weakly sourced,
   expect((await res.json()).sources.death).toEqual([expect.objectContaining({ kind: 'source', reliability: 'other' })]);
   sql("DELETE FROM artists WHERE slug = 'other-source-test'; DELETE FROM bibliography WHERE slug = 'family-tree-test'; DELETE FROM live_docs WHERE entity_type = 'source'");
 });
+
+// The entry's own web page as a source (owner 2026-11-06): offered first in every sources dialog as soon as the field
+// holds an address — on the edit page also before it is published; once a source here, no longer offered.
+test('the entry\'s web page is offered in the sources dialogs — on the edit page before it is published', async ({ userA }) => {
+  const { liveReady, showAllFields } = require('./helpers');
+  sql(`DELETE FROM artworks WHERE slug = 'test-webpage-work'; DELETE FROM bibliography WHERE url LIKE 'https://www.test-webpage-museum.org%';
+       INSERT INTO artworks (slug, title, kind) VALUES ('test-webpage-work', 'Test Webpage Work', 'painting')`);
+  await userA.goto('/artworks/test-webpage-work/edit');
+  await liveReady(userA);
+  await showAllFields(userA);
+  const kindLabel = userA.locator('.label-row:has(label[for="f-kind"])');
+  const dialog = userA.locator('details.cite-edit[data-cite-field="kind"] .cite-panel');
+  await kindLabel.locator('.cite-trigger').click();
+  await expect(dialog.locator('.cite-chip-webpage')).toHaveCount(0);           // no web page yet
+  await userA.keyboard.press('Escape');
+
+  await userA.fill('#f-web_url', 'https://www.test-webpage-museum.org/collection/item/7');   // in the working copy only
+  await kindLabel.locator('.cite-trigger').click();
+  await expect(dialog.locator('.cite-chip-webpage')).toContainText('test-webpage-museum.org/collection/item/7');
+  await dialog.locator('.cite-chip-webpage').click();
+  await expect(userA.locator('details.cite[open] .cite-status')).toHaveText(/Source added/);
+  await expect(userA.locator('details.cite[open] .cite-chip-webpage')).toHaveCount(0);   // a source here now
+  expect(sql(`SELECT c.url FROM citations c WHERE c.entity_type = 'artwork' AND c.entity_id = entity_id('artwork', 'test-webpage-work') AND c.field = 'kind'`))
+    .toBe('https://www.test-webpage-museum.org/collection/item/7');
+  expect(sql("SELECT (published IS NULL)::text FROM (SELECT web_url AS published FROM artworks WHERE slug = 'test-webpage-work') x")).toBe('true');   // not published
+
+  // the entry's page: the published address
+  sql("UPDATE artworks SET web_url = 'https://www.test-webpage-museum.org/collection/item/8' WHERE slug = 'test-webpage-work'; DELETE FROM live_docs WHERE entity_type = 'artwork' AND entity_id = entity_id('artwork', 'test-webpage-work')");
+  await userA.goto('/artworks/test-webpage-work');
+  const medium = userA.locator('details.cite').first();
+  await medium.locator('> summary').click();
+  await expect(userA.locator('details.cite[open] .cite-chip-webpage')).toContainText('collection/item/8');
+  sql("DELETE FROM artworks WHERE slug = 'test-webpage-work'; DELETE FROM bibliography WHERE url LIKE 'https://www.test-webpage-museum.org%'");
+});

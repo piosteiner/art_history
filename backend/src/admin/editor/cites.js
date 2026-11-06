@@ -5,6 +5,9 @@
 // On the edit page the dialogs sit after the entry's form (forms can't nest): a button with the same badges stands
 // next to each field's label, and each chosen field's current form values go along (`expect`) — a source for a value
 // changed in the working copy waits for it to be published.
+// The entry's own web page (an artwork's "Web page", an institution's website) is offered first in every dialog as
+// soon as the field holds an address — on the edit page from the form, so also before it is published (owner
+// 2026-11-06); one click adds it like a pasted link (the website as the source, this page and today's date).
 import { initAutocomplete } from './autocomplete';
 
 const mainForm = () => document.querySelector('form.form[data-collab], form.form[data-draft]');
@@ -51,6 +54,43 @@ function fillAlso(d) {
   }
   box.hidden = false;
   box.dataset.filled = '1';
+}
+
+// the entry's web page: the form's field (the working copy, published or not), else the published one (view page)
+function entryWebPage() {
+  const main = mainForm();
+  const field = main && (main.elements['f.web_url'] || main.elements['f.website_url']);
+  const v = (field ? field.value : document.body.dataset.pageWebUrl || '').trim();
+  return /^https?:\/\/\S+$/.test(v) ? v : '';
+}
+
+// "This entry's web page …" at the top of a dialog's add form — not when that page is a source here already
+function offerWebPage(d) {
+  if (!d) return;
+  const form = d.querySelector('form.cite-add');
+  if (!form) return;
+  form.querySelector('.cite-webpage')?.remove();
+  const url = entryWebPage();
+  if (!url || [...d.querySelectorAll('.cite-panel > ul a[href]')].some((a) => a.getAttribute('href') === url)) return;
+  const box = document.createElement('div');
+  box.className = 'cite-webpage';
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'cite-chip cite-chip-webpage';
+  let shown = url;
+  try { const u = new URL(url); shown = `${u.host}${u.pathname}`.replace(/\/$/, ''); } catch { /* as typed */ }
+  btn.textContent = 'This entry’s web page';
+  const page = document.createElement('span');
+  page.className = 'cite-chip-page';
+  page.textContent = ` ${shown.length > 60 ? `${shown.slice(0, 57)}…` : shown}`;
+  btn.append(page);
+  btn.title = `${url} — adds it as a source (with the page no. and note above, if any)`;
+  btn.addEventListener('click', () => {
+    form.elements.url.value = url;
+    form.requestSubmit();
+  });
+  box.append(btn);
+  form.prepend(box);
 }
 
 function status(d, text, kind = 'ok') {
@@ -163,6 +203,7 @@ async function send(form, submitter) {
   if (!res.ok || result.error) { status(d, result.error || 'Not saved.', 'warn'); return; }
   apply(result, d.dataset.citeKey, edit);
   const fresh = markerFor(d.dataset.citeKey, edit);
+  offerWebPage(fresh);   // gone once that page is a source here
   const n = keys.length;
   status(fresh, form.classList.contains('cite-add') ? (n > 1 ? `Source added to ${n} fields.` : 'Source added.') : confirming ? 'Noted: the source still supports it.' : 'Source removed.');
   const first = fresh && fresh.querySelector('form.cite-add input[name="url"]');
@@ -200,7 +241,7 @@ export function badgesFor(key) {
 export function initCiteDialogs() {
   const closeAll = (except) => document.querySelectorAll('details.cite[open]').forEach((d) => { if (d !== except) d.open = false; });
   document.addEventListener('toggle', (e) => {
-    if (e.target.matches && e.target.matches('details.cite') && e.target.open) { closeAll(e.target); fillAlso(e.target); }
+    if (e.target.matches && e.target.matches('details.cite') && e.target.open) { closeAll(e.target); fillAlso(e.target); offerWebPage(e.target); }
   }, true);
   // Esc: not when something inside used it already (an autocomplete list closes first)
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !e.defaultPrevented) closeAll(null); });

@@ -635,7 +635,7 @@ router.get('/:plural/:slug', async (req, res) => {
     WHERE l.target_type = $1 AND l.target_slug = $2 AND NOT (e.type = $1::entity_type AND e.id = $3) ORDER BY sort_key`, [t.type, e.slug, e.id])).rows;
   const main = imgs[0];
   send(req, res, {
-    title: name, page: { type: t.type, slug: e.slug, mode: 'view' },
+    title: name, page: { type: t.type, slug: e.slug, mode: 'view', webUrl: e.doc.web_url || e.doc.website_url || null },   // its web page: offered in the sources dialogs (editor/cites.js)
     body: html`<p class="muted"><a href="/${t.folder}">${humanize(t.folder)}</a> / ${e.slug}
       <span class="small">· no. <b>${e.public_id}</b> · <a href="${SITE}/${t.folder}/${e.public_id}/${e.slug}" target="_blank" rel="noopener" title="the public address — the number stays when the name changes">public page ↗</a></span></p>
       <div class="bar"><h1 class="grow">${name}</h1>

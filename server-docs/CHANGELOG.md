@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### CMS: an entry's own web page offered in the sources dialogs
+- **What** (owner 2026-11-06): every sources dialog ("Sources of …") offers "This entry's web page …" first as soon as
+  the entry has one — an artwork's Web page, an institution's website; on the edit page read from the form, so also
+  before it is published; on the entry's page the published one (`data-page-web-url`). One click adds it like a pasted
+  link (the website as the source, the page and today's date; page no. and note typed above go along); not offered in
+  a dialog where that page is a source already (`offerWebPage()` in `editor/cites.js`). Test in `citations.spec.js`.
+- **Why**: a museum page entered as the work's web page had to be pasted again into each dialog.
+- **Revert**: `git revert` the commit.
+
 ### CMS: a new series from a work's "Part of"; unpublished fields marked inside their box
 - **What** (owner 2026-11-06, at Tsuruya Kōkei's print in the British Museum): an artwork's "Part of" picker offers
   "+ New series “…”" (`data-quick-new="artwork"`, `data-quick-label="series"` in `forms.js`/`editor/autocomplete.js`);
