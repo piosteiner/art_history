@@ -1,0 +1,39 @@
+public_id: 116428
+name: Kaze soyogu
+names:
+  - lang: ja
+    role: original
+    text: 風そよぐ
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "98"
+text_original: |-
+  風そよぐ
+  ならの小川の
+  夕ぐれは
+  みそぎぞ夏の
+  しるしなりける
+text_lang: ja
+text_romanization: |-
+  Kaze soyogu
+  Nara no ogawa no
+  Yūgure wa
+  Misogi zo natsu no
+  Shirushi nari keru
+text_translation: |-
+  To Nara's brook comes
+  Evening, and the rustling winds
+  Stir the oak-trees' leaves.
+  Not a sign of summer left
+  But the sacred bathing there.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 98 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Ietaka (従二位家隆, Junii Ietaka).[[source/jti-ogura-hyakunin-isshu|poem 98]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 98
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 98
+      accessed: 2026-11-06

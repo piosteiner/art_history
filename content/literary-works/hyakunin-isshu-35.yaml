@@ -1,0 +1,39 @@
+public_id: 116365
+name: Hito wa isa
+names:
+  - lang: ja
+    role: original
+    text: 人はいさ
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "35"
+text_original: |-
+  人はいさ
+  心も知らず
+  ふるさとは
+  花ぞむかしの
+  香に匂ひける
+text_lang: ja
+text_romanization: |-
+  Hito wa isa
+  Kokoro mo shirazu
+  Furusato wa
+  Hana zo mukashi no
+  Ka ni nioi keru
+text_translation: |-
+  The depths of the hearts
+  Of humankind cannot be known.
+  But in my birthplace
+  The plum blossoms smell the same
+  As in the years gone by.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 35 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Ki no Tsurayuki (紀貫之, Ki no Tsurayuki).[[source/jti-ogura-hyakunin-isshu|poem 35]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 35
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 35
+      accessed: 2026-11-06

@@ -1,0 +1,39 @@
+public_id: 116395
+name: Urami wabi
+names:
+  - lang: ja
+    role: original
+    text: 恨みわび
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "65"
+text_original: |-
+  恨みわび
+  ほさぬ袖だに
+  あるものを
+  恋に朽ちなん
+  名こそ惜しけれ
+text_lang: ja
+text_romanization: |-
+  Urami wabi
+  Hosanu sode da ni
+  Aru mono o
+  Koi ni kuchinan
+  Na koso oshi kere
+text_translation: |-
+  Even when your hate
+  Makes me stain my sleeves with tears
+  In cold misery,
+  Worse than hate and misery
+  Is the loss of my good name.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 65 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Lady Sagami (相模, Sagami).[[source/jti-ogura-hyakunin-isshu|poem 65]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 65
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 65
+      accessed: 2026-11-06

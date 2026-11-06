@@ -1,0 +1,39 @@
+public_id: 116383
+name: Nageki tsutsu
+names:
+  - lang: ja
+    role: original
+    text: なげきつつ
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "53"
+text_original: |-
+  なげきつつ
+  ひとりぬる夜の
+  明くる間は
+  いかに久しき
+  ものとかは知る
+text_lang: ja
+text_romanization: |-
+  Nageki tsutsu
+  Hitori nuru yo no
+  Akuru ma wa
+  Ikani hisashiki
+  Mono to ka wa shiru
+text_translation: |-
+  Lying all alone,
+  Through the hours of the night,
+  Till the daylight comes:
+  Can you realize at all
+  The emptiness of that night?
+text_translator: Clay MacCauley, 1917
+description_md: Poem 53 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by The Mother of Michitsuna (右大将道綱母, Udaishō Michitsuna no Haha).[[source/jti-ogura-hyakunin-isshu|poem 53]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 53
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 53
+      accessed: 2026-11-06

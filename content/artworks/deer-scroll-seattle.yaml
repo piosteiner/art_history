@@ -21,6 +21,9 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 268, fig. 309
+  - type: illustrates
+    to: literature/shin-kokin-wakashu
+    label: twenty-eight poems
 sources:
   kind:
     - source: history-of-japanese-art

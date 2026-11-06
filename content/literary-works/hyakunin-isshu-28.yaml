@@ -1,0 +1,39 @@
+public_id: 116358
+name: Yama-zato wa
+names:
+  - lang: ja
+    role: original
+    text: 山里は
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "28"
+text_original: |-
+  山里は
+  冬ぞさびしさ
+  まさりける
+  人めも草も
+  かれぬとおもへば
+text_lang: ja
+text_romanization: |-
+  Yama-zato wa
+  Fuyu zo sabishisa
+  Masari keru
+  Hitome mo kusa mo
+  Karenu to omoeba
+text_translation: |-
+  Winter loneliness
+  In a mountain village grows
+  Only deeper, when
+  Guests are gone, and leaves and grass
+  Are withered: troubling thoughts.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 28 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Minamoto no Muneyuki (源宗于朝臣, Minamoto no Muneyuki Ason).[[source/jti-ogura-hyakunin-isshu|poem 28]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 28
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 28
+      accessed: 2026-11-06

@@ -1,0 +1,39 @@
+public_id: 116356
+name: Ogurayama
+names:
+  - lang: ja
+    role: original
+    text: 小倉山
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "26"
+text_original: |-
+  小倉山
+  峰のもみじ葉
+  心あらば
+  今ひとたびの
+  みゆきまたなむ
+text_lang: ja
+text_romanization: |-
+  Ogurayama
+  Mine no momijiba
+  Kokoro araba
+  Ima hitotabi no
+  Miyuki matanan
+text_translation: |-
+  If the maple leaves
+  On Ogura mountain
+  Could only have hearts,
+  They would longingly await
+  The emperor's pilgrimage.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 26 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Tadahira (貞信公, Teishin Kō).[[source/jti-ogura-hyakunin-isshu|poem 26]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 26
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 26
+      accessed: 2026-11-06

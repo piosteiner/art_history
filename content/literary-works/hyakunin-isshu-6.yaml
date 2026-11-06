@@ -1,0 +1,39 @@
+public_id: 116336
+name: Kasasagi no
+names:
+  - lang: ja
+    role: original
+    text: かささぎの
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "6"
+text_original: |-
+  かささぎの
+  渡せる橋に
+  置く霜の
+  白きを見れば
+  夜ぞふけにける
+text_lang: ja
+text_romanization: |-
+  Kasasagi no
+  Wataseru hashi ni
+  Oku shimo no
+  Shiroki o mireba
+  Yo zo fuke ni keru
+text_translation: |-
+  If I see that bridge
+  That is spanned by flights of magpies
+  Across the arc of heaven
+  Made white with a deep-laid frost,
+  Then the night is almost past.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 6 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Otomo no Yakamochi (中納言家持, Chūnagon Yakamochi).[[source/jti-ogura-hyakunin-isshu|poem 6]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 6
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 6
+      accessed: 2026-11-06

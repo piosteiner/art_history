@@ -4,6 +4,28 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Content: the Hyakunin Isshu's 100 poems, the 1865/1867 missions, works linked to texts, Berthier (scripts)
+- **What:** owner 2026-11-06 ("2. yes", "3. yes", "6. yes"; Berthier asked for). (1) `ogura-hyakunin-isshu` gets 100
+  parts `hyakunin-isshu-1…100` (kind waka, named by their first line, Japanese first line as original name) with
+  `text_original`, romanization and Clay MacCauley's translation (1917) from the Japanese Text Initiative (new source
+  `jti-ogura-hyakunin-isshu`, `edition_of` the anthology; text and translation cited per poem); the anthology dated
+  1235 as the JTI dates it. `written_by` only for poets we have, dates checked: Narihira (17), Michizane = Kanke (24),
+  Murasaki Shikibu (57), Go-Toba (99). The Old Pond's quotation moved from its text into the fields, with furigana;
+  text and date cited to ja.wikipedia. (2) Events `shibata-mission` (1865–66), `tokugawa-akitake-mission` (Feb. 1867 –
+  6 Dec. 1868; en.wikipedia's "11 January 1867" is the lunar date — ja.wikipedia: Keiō 3/1 = February 1867),
+  `1867-paris-world-s-fair` (Q1345539, Paris, concerns Japonisme); people Shibata Takenaka (Q3482025) and Tokugawa
+  Akitake (Q3530485) with participated_in; the 1862 embassy's text links Shibata and the fair. (3) New literary works
+  `the-tales-of-ise` (tale; written_by Narihira *possible*) and `oku-no-hosomichi` (diary; Bashō); `illustrates` from the
+  Berlin shikishi and the Deer Scroll → Shin Kokin Wakashū, the imperial fan screens and Kōrin's Irises → Tales of Ise
+  (Matsushima screens *possible*), Buson's handscroll → Oku no hosomichi — each as the work's own (Mason) text says.
+  (4) Person 207 `alexandre-berthier-prince-de-wagram` (auto-created from provenance) = the collector Alexandre Berthier
+  (1883–1918), Q4720868 — dates as in the museums' steps; `fill-from-wikidata.js` filled dates, image, authority
+  numbers, birth place; text, names, occupations from de.wikipedia; place `barenton-sur-serre` (Q428084) + `died_in`;
+  auto_created flag removed (as Save does). Scripts in the session scratchpad (`hyakunin.js`, `missions.js`,
+  `anthologies.js`, `berthier.js`).
+- **Revert:** restore from the history pages (audit_log), or delete the new rows (parts by `parent_id`, the events,
+  people, places, sources by slug) — the relationships go with their entries.
+
 ### A literary work's text; its date citable (237)
 - **What:** owner 2026-11-06. `literary_works.text_original` (furigana as in names), `text_lang`, `text_romanization`,
   `text_translation`, `text_translator`; citable fields `written`, `text`, `translation`. CMS: section "The text" with a

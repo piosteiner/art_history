@@ -1,0 +1,39 @@
+public_id: 116412
+name: Omoi wabi
+names:
+  - lang: ja
+    role: original
+    text: 思ひわび
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "82"
+text_original: |-
+  思ひわび
+  さても命は
+  あるものを
+  憂きに堪へぬは
+  なみだなりけり
+text_lang: ja
+text_romanization: |-
+  Omoi wabi
+  Satemo inochi wa
+  Aru mono o
+  Uki ni taenu wa
+  Namida nari keri
+text_translation: |-
+  Though in deep distress
+  Through your cruel blow, my life
+  Still is left to me.
+  But I cannot keep my tears;
+  They break forth from my grief.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 82 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by The Monk Doin (道因法師, Dōin Hōshi).[[source/jti-ogura-hyakunin-isshu|poem 82]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 82
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 82
+      accessed: 2026-11-06

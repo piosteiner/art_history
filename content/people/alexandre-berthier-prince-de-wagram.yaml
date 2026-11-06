@@ -1,2 +1,75 @@
 public_id: 100454
 name: Alexandre Berthier, prince de Wagram
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Alexandre Louis Philippe Marie Berthier
+  - lang: fr
+    role: alternative
+    text: Alexandre Berthier de Wagram
+  - lang: en
+    role: alternative
+    text: 4th Prince of Wagram
+  - lang: de
+    role: alternative
+    text: 4. Prince de Wagram
+kind: person
+occupations: [military officer, art collector]
+birth: 1883-07-20
+death: 1918-05-30
+description_md: |-
+  French nobleman, officer and art collector, from his father’s death in 1911 the 4th Prince and 3rd Duke of Wagram — a great-grandson of Napoleon’s marshal Louis-Alexandre Berthier. His mother, Bertha Clara (1862–1903), was a daughter of the Frankfurt banker Mayer Carl von Rothschild. After the military school of Saint-Cyr he served as an officer.[[source/wikipedia-de-alexandre-berthier-kunstsammler]]
+
+  At his mother’s death he inherited a fortune at twenty-one and, advised by the art founder Adrien-Aurélien Hébrard, bought some 400 works between March 1905 and March 1907: Delacroix, Courbet, Corot, Manet, Degas, Renoir, Monet, Puvis de Chavannes, the Barbizon painters, Sisley and Pissarro, [[artist/vincent-van-gogh|van Gogh]] and above all [[artist/paul-gauguin|Gauguin]], whose works Hébrard expected to rise most in value. To avoid paying at once he never bought at auction, but from dealers — [[institution/bernheim-jeune]] (of which he became a partner in 1907), [[institution/galerie-paul-cassirer|Paul Cassirer]], [[institution/durand-ruel]], [[institution/galerie-eugene-druet|Druet]], [[institution/galerie-barbazanges|Barbazanges]], [[institution/galerie-georges-petit|Georges Petit]], [[person/ambroise-vollard|Vollard]] — on credit or in instalments, and many of the works stayed with the seller unpaid. Bought, sold and exchanged in quick succession, his collection can hardly be pinned down; Marie-José Salmon and Anne Distel found him acting as a middleman, and he is often seen as a speculator rather than a collector. In 1907 his creditors, mostly dealers, called in their money, and in 1908 he had to sell most of the collection again, partly below what he had paid.[[source/wikipedia-de-alexandre-berthier-kunstsammler]]
+
+  He went on buying: Durand-Ruel’s inventory of his flat on the Quai d’Orsay in April 1914 lists 30 works, 16 paintings by [[artist/pierre-auguste-renoir|Renoir]] among them, and he commissioned Maurice Denis’s *L’Âge d’or* (1911–1912). A captain in the First World War, he was mortally wounded at [[place/barenton-sur-serre|Barenton-sur-Serre]] on 30 May 1918, in the Battle of the Aisne, by French artillery fire. His sisters inherited; in 1929 they sold the last 26 paintings to the [[institution/alex-reid-lefevre|Lefevre Gallery]] in London and [[institution/m-knoedler-co|M. Knoedler & Co.]] in New York. Proust drew on him for the young prince in *Le Côté de Guermantes* who collects Impressionist paintings and drives motor cars.[[source/wikipedia-de-alexandre-berthier-kunstsammler]]
+wikidata_id: Q4720868
+metadata:
+  sources: [Wikidata Q4720868 (retrieved 2026-11-06)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-06
+        property: P27
+        wikidata: Q4720868
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-06
+        property: P19
+        wikidata: Q4720868
+  - type: died_in
+    to: place/barenton-sur-serre
+    period: 1918-05-30
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/88/Capitaine_alexandre_Berthier_prince_de_Wagram_03413.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Capitaine_alexandre_Berthier_prince_de_Wagram_03413.JPG
+    license: CC BY-SA 4.0
+    credit: G.Garitan
+identifiers:
+  bnf: 12651174k
+  gnd: "124372740"
+  idref: "050590847"
+  viaf: "214073535"
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q4720868
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q4720868
+    - source: wikipedia-de-alexandre-berthier-kunstsammler
+      accessed: 2026-11-06
+  death:
+    - accessed: 2026-11-06
+      property: P570
+      wikidata: Q4720868
+    - source: wikipedia-de-alexandre-berthier-kunstsammler
+      accessed: 2026-11-06
+  occupations:
+    - source: wikipedia-de-alexandre-berthier-kunstsammler
+      accessed: 2026-11-06

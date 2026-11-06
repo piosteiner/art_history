@@ -1,0 +1,39 @@
+public_id: 116415
+name: Yo mo sugara
+names:
+  - lang: ja
+    role: original
+    text: 夜もすがら
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "85"
+text_original: |-
+  夜もすがら
+  物思ふ頃は
+  明けやらぬ
+  ねやのひまさへ
+  つれなかりけり
+text_lang: ja
+text_romanization: |-
+  Yo mo sugara
+  Mono omou koro wa
+  Ake yaranu
+  Neya no hima sae
+  Tsure nakari keri
+text_translation: |-
+  Through an unsleeping night
+  Longingly I pass the hours,
+  While the day's dawn lags.
+  And now the bedroom shutters
+  Are keeping light and life from me.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 85 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by The Monk Shun'e (俊恵法師, Shun'e Hōshi).[[source/jti-ogura-hyakunin-isshu|poem 85]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 85
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 85
+      accessed: 2026-11-06

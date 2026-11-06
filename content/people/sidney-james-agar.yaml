@@ -1,4 +1,40 @@
 public_id: 115537
-name: Sidney James Agar
+name: Sidney Agar, 4th Earl of Normanton
 given_name: Sidney James
 family_name: Agar
+names:
+  - lang: fr
+    role: translation
+    text: Sidney Agar
+kind: person
+birth: 1865
+death: 1933
+wikidata_id: Q21674882
+metadata:
+  sources: [Wikidata Q21674882 (retrieved 2026-11-06)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-06
+        property: P27
+        wikidata: Q21674882
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-06
+        property: P27
+        wikidata: Q21674882
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q21674882
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q21674882
+  death:
+    - accessed: 2026-11-06
+      property: P570
+      wikidata: Q21674882

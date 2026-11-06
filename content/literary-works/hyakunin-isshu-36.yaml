@@ -1,0 +1,39 @@
+public_id: 116366
+name: Natsu no yo wa
+names:
+  - lang: ja
+    role: original
+    text: 夏の夜は
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "36"
+text_original: |-
+  夏の夜は
+  まだ宵ながら
+  明けぬるを
+  雲のいづくに
+  月やどるらむ
+text_lang: ja
+text_romanization: |-
+  Natsu no yo wa
+  Mada yoi nagara
+  Akenuru o
+  Kumo no izuko ni
+  Tsuki yadoruran
+text_translation: |-
+  In the summer night
+  The evening still seems present,
+  But the dawn is here.
+  To what region of the clouds
+  Has the wandering moon come home?
+text_translator: Clay MacCauley, 1917
+description_md: Poem 36 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Kiyohara no Fukayabu (清原深養父, Kiyohara no Fukayabu).[[source/jti-ogura-hyakunin-isshu|poem 36]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 36
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 36
+      accessed: 2026-11-06

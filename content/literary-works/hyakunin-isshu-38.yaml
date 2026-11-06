@@ -1,0 +1,39 @@
+public_id: 116368
+name: Wasuraruru
+names:
+  - lang: ja
+    role: original
+    text: 忘らるる
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "38"
+text_original: |-
+  忘らるる
+  身をば思はず
+  誓ひてし
+  人の命の
+  惜しくもあるかな
+text_lang: ja
+text_romanization: |-
+  Wasuraruru
+  Mi o ba omowazu
+  Chikaite shi
+  Hito no inochi no
+  Oshiku mo aru kana
+text_translation: |-
+  Though he forsook me,
+  For myself I do not care:
+  He made a promise,
+  And his life, who is forsworn,
+  Oh how pitiful that is.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 38 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Lady Ukon (右近, Ukon).[[source/jti-ogura-hyakunin-isshu|poem 38]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 38
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 38
+      accessed: 2026-11-06

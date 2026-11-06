@@ -1,0 +1,39 @@
+public_id: 116399
+name: Arashi fuku
+names:
+  - lang: ja
+    role: original
+    text: あらし吹く
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "69"
+text_original: |-
+  あらし吹く
+  三室の山の
+  もみぢ葉は
+  龍田の川の
+  にしきなりけり
+text_lang: ja
+text_romanization: |-
+  Arashi fuku
+  Mimuro no yama no
+  Momijiba wa
+  Tatsuta no kawa no
+  Nishiki nari keri
+text_translation: |-
+  By the wind storm's blast
+  From Mimuro's mountain slopes
+  Maples leaves are torn,
+  Which turn Tatsuta River
+  Into a rich brocade.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 69 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by The Monk Noin (能因法師, Nōin Hōshi).[[source/jti-ogura-hyakunin-isshu|poem 69]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 69
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 69
+      accessed: 2026-11-06

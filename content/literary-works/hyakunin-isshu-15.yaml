@@ -1,0 +1,39 @@
+public_id: 116345
+name: Kimi ga tame
+names:
+  - lang: ja
+    role: original
+    text: 君がため
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "15"
+text_original: |-
+  君がため
+  春の野に出でて
+  若菜つむ
+  わが衣手に
+  雪はふりつつ
+text_lang: ja
+text_romanization: |-
+  Kimi ga tame
+  Haru no no ni idete
+  Wakana tsumu
+  Waga koromode ni
+  Yuki wa furi tsutsu
+text_translation: |-
+  It is for your sake
+  That I walk the fields in spring,
+  Gathering green herbs,
+  While my garment's hanging sleeves
+  Are speckled with falling snow.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 15 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Emperor Koko (光孝天皇, Kokō Tennō).[[source/jti-ogura-hyakunin-isshu|poem 15]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 15
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 15
+      accessed: 2026-11-06

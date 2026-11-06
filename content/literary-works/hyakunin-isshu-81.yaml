@@ -1,0 +1,39 @@
+public_id: 116411
+name: Hototogisu
+names:
+  - lang: ja
+    role: original
+    text: ほととぎす
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "81"
+text_original: |-
+  ほととぎす
+  鳴きつる方を
+  眺むれば
+  ただ有明の
+  月ぞのこれる
+text_lang: ja
+text_romanization: |-
+  Hototogisu
+  Nakitsuru kata o
+  Nagamureba
+  Tada ariake no
+  Tsuki zo nokoreru
+text_translation: |-
+  When I turned my look
+  Toward the place where I had heard
+  The cuckoo's call,
+  The only thing I found
+  Was the moon of early dawn.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 81 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Sanesada (後徳大寺左大臣, Go Tokudaiji no Sadaijin).[[source/jti-ogura-hyakunin-isshu|poem 81]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 81
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 81
+      accessed: 2026-11-06

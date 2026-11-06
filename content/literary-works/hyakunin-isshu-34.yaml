@@ -1,0 +1,39 @@
+public_id: 116364
+name: Tare o ka mo
+names:
+  - lang: ja
+    role: original
+    text: 誰をかも
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "34"
+text_original: |-
+  誰をかも
+  知る人にせむ
+  高砂の
+  松もむかしの
+  友ならなくに
+text_lang: ja
+text_romanization: |-
+  Tare o ka mo
+  Shiru hito ni sen
+  Takasago no
+  Matsu mo mukashi no
+  Tomo nara naku ni
+text_translation: |-
+  Who is still alive
+  When I have grown so old
+  That I can call my friends?
+  Even Takasago's pines
+  No longer offer comfort.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 34 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Okikaze (藤原興風, Fujiwara no Okikaze).[[source/jti-ogura-hyakunin-isshu|poem 34]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 34
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 34
+      accessed: 2026-11-06

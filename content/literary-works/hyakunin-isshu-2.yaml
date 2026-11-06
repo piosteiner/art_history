@@ -1,0 +1,39 @@
+public_id: 116332
+name: Haru sugite
+names:
+  - lang: ja
+    role: original
+    text: 春過ぎて
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "2"
+text_original: |-
+  春過ぎて
+  夏来にけらし
+  白妙の
+  衣ほすてふ
+  天の香具山
+text_lang: ja
+text_romanization: |-
+  Haru sugite
+  Natsu ki ni kerashi
+  Shirotae no
+  Koromo hosu chō
+  Ama no Kaguyama
+text_translation: |-
+  The spring has passed
+  And the summer come again;
+  For the silk-white robes,
+  So they say, are spread to dry
+  On the "Mount of Heaven's Perfume."
+text_translator: Clay MacCauley, 1917
+description_md: Poem 2 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Empress Jito (持統天皇, Jito Tennō).[[source/jti-ogura-hyakunin-isshu|poem 2]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 2
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 2
+      accessed: 2026-11-06

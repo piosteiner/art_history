@@ -1,0 +1,39 @@
+public_id: 116386
+name: Arazaran
+names:
+  - lang: ja
+    role: original
+    text: あらざらむ
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "56"
+text_original: |-
+  あらざらむ
+  この世の外の
+  思ひ出に
+  今ひとたびの
+  逢ふこともがな
+text_lang: ja
+text_romanization: |-
+  Arazaran
+  Kono yo no hoka no
+  Omoide ni
+  Ima hitotabi no
+  Au koto mo gana
+text_translation: |-
+  Soon my life will close.
+  When I am beyond this world
+  And have forgotten it,
+  Let me remember only this:
+  One final meeting with you.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 56 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Lady Izumi Shikibu (和泉式部, Izumi Shikibu).[[source/jti-ogura-hyakunin-isshu|poem 56]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 56
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 56
+      accessed: 2026-11-06

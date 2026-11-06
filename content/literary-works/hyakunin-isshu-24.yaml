@@ -1,0 +1,42 @@
+public_id: 116354
+name: Kono tabi wa
+names:
+  - lang: ja
+    role: original
+    text: このたびは
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "24"
+text_original: |-
+  このたびは
+  幣もとりあへず
+  手向山
+  紅葉のにしき
+  神のまにまに
+text_lang: ja
+text_romanization: |-
+  Kono tabi wa
+  Nusa mo toriaezu
+  Tamukeyama
+  Momiji no nishiki
+  Kami no mani mani
+text_translation: |-
+  At the present time,
+  Since I could bring no offering,
+  See Mount Tamuke!
+  Here are brocades of red leaves,
+  As a tribute to the gods.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 24 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by [[person/sugawara-no-michizane|Sugawara no Michizane]] (菅家, Kan Ke).[[source/jti-ogura-hyakunin-isshu|poem 24]]
+relationships:
+  - type: written_by
+    to: person/sugawara-no-michizane
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 24
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 24
+      accessed: 2026-11-06

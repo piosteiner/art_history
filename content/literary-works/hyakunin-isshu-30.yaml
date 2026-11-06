@@ -1,0 +1,39 @@
+public_id: 116360
+name: Ariake no
+names:
+  - lang: ja
+    role: original
+    text: 有明の
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "30"
+text_original: |-
+  有明の
+  つれなくみえし
+  別れより
+  暁ばかり
+  うきものはなし
+text_lang: ja
+text_romanization: |-
+  Ariake no
+  Tsurenaku mieshi
+  Wakare yori
+  Akatsuki bakari
+  Uki mono wa nashi
+text_translation: |-
+  Like the morning moon,
+  Cold, unpitying was my love.
+  And since we parted,
+  I dislike nothing so much
+  As the breaking light of day.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 30 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Mibu no Tadamine (壬生忠岑, Mibu no Tadamine).[[source/jti-ogura-hyakunin-isshu|poem 30]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 30
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 30
+      accessed: 2026-11-06

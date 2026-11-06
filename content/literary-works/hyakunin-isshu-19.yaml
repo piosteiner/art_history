@@ -1,0 +1,39 @@
+public_id: 116349
+name: Naniwa gata
+names:
+  - lang: ja
+    role: original
+    text: 難波潟
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "19"
+text_original: |-
+  難波潟
+  みじかき芦の
+  ふしのまも
+  あはでこの世を
+  過ぐしてよとや
+text_lang: ja
+text_romanization: |-
+  Naniwa gata
+  Mijikaki ashi no
+  Fushi no ma mo
+  Awade kono yo o
+  Sugushite yo to ya
+text_translation: |-
+  Even for a time
+  Short as a piece of the reeds
+  In Naniwa's marsh,
+  We must never meet again:
+  Is this what you are asking me?
+text_translator: Clay MacCauley, 1917
+description_md: Poem 19 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Lady Ise (伊勢, Ise).[[source/jti-ogura-hyakunin-isshu|poem 19]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 19
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 19
+      accessed: 2026-11-06

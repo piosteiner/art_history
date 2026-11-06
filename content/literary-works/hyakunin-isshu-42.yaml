@@ -1,0 +1,39 @@
+public_id: 116372
+name: Chigiriki na
+names:
+  - lang: ja
+    role: original
+    text: ちぎりきな
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "42"
+text_original: |-
+  ちぎりきな
+  かたみに袖を
+  しぼりつつ
+  末の松山
+  波こさじとは
+text_lang: ja
+text_romanization: |-
+  Chigiriki na
+  Katami ni sode o
+  Shibori tsutsu
+  Sue no Matsuyama
+  Nami kosaji to wa
+text_translation: |-
+  Our sleeves were wet with tears
+  As pledges that our love--
+  Will last until
+  Over Sue's Mount of Pines
+  Ocean waves are breaking.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 42 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Kiyohara no Motosuke (清原元輔, Kiyohara no Motosuke).[[source/jti-ogura-hyakunin-isshu|poem 42]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 42
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 42
+      accessed: 2026-11-06

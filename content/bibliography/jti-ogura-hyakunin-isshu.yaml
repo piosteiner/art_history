@@ -1,0 +1,17 @@
+public_id: 116330
+kind: web
+name: Ogura hyakunin isshu (100 Poems by 100 Poets)
+names:
+  - lang: ja
+    role: original
+    text: 小倉百人一首
+compilers: [Fujiwara no Teika]
+container: Japanese Text Initiative
+place: Charlottesville
+publisher: University of Virginia Library
+year: "1997"
+url: https://jti.lib.virginia.edu/japanese/texts/hyakunin/text.html
+accessed: 2026-11-06
+reliability: institution
+edition_of: ogura-hyakunin-isshu
+description_md: "Each poem in Japanese, in romanization and in the English translation by Clay MacCauley, *Hyakunin-Isshu (Single Songs of a Hundred Poets) and Nori no Hatsu-Ne (The Dominant Note of the Law)* (Yokohama: Kelly and Walsh, 1917). Machine-readable version by Sachie Noguchi, University of Pittsburgh; TEI markup by the Japanese Text Initiative, 1997."

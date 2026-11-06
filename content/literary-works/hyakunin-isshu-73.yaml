@@ -1,0 +1,39 @@
+public_id: 116403
+name: Takasago no
+names:
+  - lang: ja
+    role: original
+    text: 高砂の
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "73"
+text_original: |-
+  高砂の
+  尾の上の桜
+  咲きにけり
+  外山の霞
+  たたずもあらなん
+text_lang: ja
+text_romanization: |-
+  Takasago no
+  Onoe no sakura
+  Saki ni keri
+  Toyama no kasumi
+  Tatazu mo aranan
+text_translation: |-
+  On that far mountain
+  On the slope below the peak
+  Cherries are in flower.
+  Oh, let the mountain mists
+  Not arise to hide the scene.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 73 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Oe no Masafusa (権中納言匡房, GonChūnagon Masafusa).[[source/jti-ogura-hyakunin-isshu|poem 73]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 73
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 73
+      accessed: 2026-11-06

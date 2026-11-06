@@ -1,0 +1,39 @@
+public_id: 116381
+name: Kaku to dani
+names:
+  - lang: ja
+    role: original
+    text: かくとだに
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "51"
+text_original: |-
+  かくとだに
+  えやはいぶきの
+  さしも草
+  さしも知らじな
+  もゆる思ひを
+text_lang: ja
+text_romanization: |-
+  Kaku to dani
+  Eyawa ibuki no
+  Sashimogusa
+  Sashimo shiraji na
+  Moyuru omoi o
+text_translation: |-
+  How can I tell her
+  How fierce my love for her is?
+  Will she understand
+  That the love I feel for her
+  Burns like Ibuki's fire plant?
+text_translator: Clay MacCauley, 1917
+description_md: Poem 51 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Sanekata (藤原実方朝臣, Fujiwara no Sanekata Ason).[[source/jti-ogura-hyakunin-isshu|poem 51]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 51
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 51
+      accessed: 2026-11-06

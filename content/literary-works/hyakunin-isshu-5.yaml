@@ -1,0 +1,39 @@
+public_id: 116335
+name: Okuyama ni
+names:
+  - lang: ja
+    role: original
+    text: 奥山に
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "5"
+text_original: |-
+  奥山に
+  紅葉ふみわけ
+  鳴く鹿の
+  声きく時ぞ
+  秋は悲しき
+text_lang: ja
+text_romanization: |-
+  Okuyama ni
+  Momiji fumiwake
+  Naku shika no
+  Koe kiku toki zo
+  Aki wa kanashiki
+text_translation: |-
+  In the mountain depths,
+  Treading through the crimson leaves,
+  The wandering stag calls.
+  When I hear the lonely cry,
+  Sad--how sad!--the autumn is.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 5 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Sarumaru (猿丸大夫, Sarumaru Dayū).[[source/jti-ogura-hyakunin-isshu|poem 5]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 5
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 5
+      accessed: 2026-11-06

@@ -1,0 +1,39 @@
+public_id: 116337
+name: Ama no hara
+names:
+  - lang: ja
+    role: original
+    text: 天の原
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "7"
+text_original: |-
+  天の原
+  ふりさけ見れば
+  春日なる
+  三笠の山に
+  出でし月かも
+text_lang: ja
+text_romanization: |-
+  Ama no hara
+  Furisake mireba
+  Kasuga naru
+  Mikasa no yama ni
+  Ideshi tsuki kamo
+text_translation: |-
+  When I look up at
+  The wide-stretched plain of heaven,
+  Is the moon the same
+  That rose on Mount Mikasa
+  In the land of Kasuga?
+text_translator: Clay MacCauley, 1917
+description_md: Poem 7 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Abe no Nakamaro (安倍仲麿, Abe no Nakamaro).[[source/jti-ogura-hyakunin-isshu|poem 7]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 7
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 7
+      accessed: 2026-11-06

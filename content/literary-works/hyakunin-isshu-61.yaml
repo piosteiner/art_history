@@ -1,0 +1,39 @@
+public_id: 116391
+name: Inishie no
+names:
+  - lang: ja
+    role: original
+    text: いにしへの
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "61"
+text_original: |-
+  いにしへの
+  奈良の都の
+  八重桜
+  今日九重に
+  匂ひぬるかな
+text_lang: ja
+text_romanization: |-
+  Inishie no
+  Nara no miyako no
+  Yae-zakura
+  Kyō kokonoe ni
+  Nioi nuru kana
+text_translation: |-
+  Eight-fold cherry flowers
+  That at Nara--ancient seat
+  Of our state--have bloomed,
+  In our nine-fold palace court
+  Shed their sweet perfume today.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 61 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Lady Ise no Osuke (伊勢大輔, Ise no Ōsuke).[[source/jti-ogura-hyakunin-isshu|poem 61]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 61
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 61
+      accessed: 2026-11-06

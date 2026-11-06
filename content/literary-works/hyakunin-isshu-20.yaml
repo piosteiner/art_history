@@ -1,0 +1,39 @@
+public_id: 116350
+name: Wabi nureba
+names:
+  - lang: ja
+    role: original
+    text: わびぬれば
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "20"
+text_original: |-
+  わびぬれば
+  今はた同じ
+  難波なる
+  身をつくしても
+  逢はむとぞ思ふ
+text_lang: ja
+text_romanization: |-
+  Wabi nureba
+  Ima hata onaji
+  Naniwa naru
+  Mi o tsukushite mo
+  Awan to zo omou
+text_translation: |-
+  In this dire distress
+  My life is meaningless.
+  So we must meet now,
+  Even though it costs my life
+  In the Bay of Naniwa.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 20 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Prince Motoyoshi (元良親王, Motoyoshi Shinnō).[[source/jti-ogura-hyakunin-isshu|poem 20]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 20
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 20
+      accessed: 2026-11-06

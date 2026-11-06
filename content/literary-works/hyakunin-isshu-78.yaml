@@ -1,0 +1,39 @@
+public_id: 116408
+name: Awaji shima
+names:
+  - lang: ja
+    role: original
+    text: 淡路島
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "78"
+text_original: |-
+  淡路島
+  かよふ千鳥の
+  なく声に
+  いくよねざめぬ
+  すまの関守
+text_lang: ja
+text_romanization: |-
+  Awaji shima
+  Kayou chidori no
+  Naku koe ni
+  Ikuyo nezamenu
+  Suma no sekimori
+text_translation: |-
+  Guard of Suma Gate,
+  From your sleep, how many nights
+  Have you awakened
+  At the cries of sanderlings,
+  Flying from Awaji Island?
+text_translator: Clay MacCauley, 1917
+description_md: Poem 78 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Minamoto no Kanemasa (源兼昌, Minamoto no Kanemasa).[[source/jti-ogura-hyakunin-isshu|poem 78]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 78
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 78
+      accessed: 2026-11-06

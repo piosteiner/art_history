@@ -1,0 +1,39 @@
+public_id: 116409
+name: Akikaze ni
+names:
+  - lang: ja
+    role: original
+    text: 秋風に
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "79"
+text_original: |-
+  秋風に
+  たなびく雲の
+  たえまより
+  もれ出づる月の
+  かげのさやけさ
+text_lang: ja
+text_romanization: |-
+  Akikaze ni
+  Tanabiku kumo no
+  Taema yori
+  More izuru tsuki no
+  Kage no sayakesa
+text_translation: |-
+  See how clear and bright
+  Is the moonlight finding ways
+  Through the riven clouds
+  That, with drifting autumn wind,
+  Gracefully float in the sky.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 79 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Akisuke (左京大夫顕輔, Sakyo no Daibu Akisuke).[[source/jti-ogura-hyakunin-isshu|poem 79]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 79
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 79
+      accessed: 2026-11-06

@@ -1,0 +1,39 @@
+public_id: 116346
+name: Tachi wakare
+names:
+  - lang: ja
+    role: original
+    text: 立ち別れ
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "16"
+text_original: |-
+  立ち別れ
+  いなばの山の
+  峰に生ふる
+  まつとしきかば
+  今かへりこむ
+text_lang: ja
+text_romanization: |-
+  Tachi wakare
+  Inaba no yama no
+  Mine ni ōru
+  Matsu to shi kikaba
+  Ima kaeri kon
+text_translation: |-
+  Though we are parted,
+  If on Mount Inaba's peak
+  I should hear the sound
+  Of the pine trees growing there,
+  I'll come back again to you.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 16 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Ariwara no Yukihira (中納言行平, Chūnagon Yukihira).[[source/jti-ogura-hyakunin-isshu|poem 16]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 16
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 16
+      accessed: 2026-11-06

@@ -1,0 +1,39 @@
+public_id: 116422
+name: Waga sode wa
+names:
+  - lang: ja
+    role: original
+    text: わが袖は
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "92"
+text_original: |-
+  わが袖は
+  潮干に見えぬ
+  沖の石の
+  人こそしらね
+  かはくまもなし
+text_lang: ja
+text_romanization: |-
+  Waga sode wa
+  Shiohi ni mienu
+  Oki no ishi no
+  Hito koso shirane
+  Kawaku ma mo nashi
+text_translation: |-
+  Like a rock at sea,
+  At ebb-tide hidden from view,
+  Is my tear-drenched sleeve:
+  Never for a moment dry,
+  And no one knows it is there.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 92 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Lady Sanuki (二条院讃岐, Nijō In no Sanuki).[[source/jti-ogura-hyakunin-isshu|poem 92]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 92
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 92
+      accessed: 2026-11-06

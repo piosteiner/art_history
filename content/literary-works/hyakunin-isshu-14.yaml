@@ -1,0 +1,39 @@
+public_id: 116344
+name: Michinoku no
+names:
+  - lang: ja
+    role: original
+    text: みちのくの
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "14"
+text_original: |-
+  みちのくの
+  しのぶもぢずり
+  誰故に
+  乱れそめにし
+  我ならなくに
+text_lang: ja
+text_romanization: |-
+  Michinoku no
+  Shinobu moji-zuri
+  Tare yue ni
+  Midare some ni shi
+  Ware naranaku ni
+text_translation: |-
+  Like Michinoku prints
+  Of the tangled leaves of ferns,
+  It is because of you
+  That I have become confused;
+  But my love for you remains.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 14 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Minamoto no Toru (河原左大臣, Kawara no Sadaijin).[[source/jti-ogura-hyakunin-isshu|poem 14]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 14
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 14
+      accessed: 2026-11-06

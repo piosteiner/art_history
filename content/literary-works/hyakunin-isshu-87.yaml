@@ -1,0 +1,39 @@
+public_id: 116417
+name: Murasame no
+names:
+  - lang: ja
+    role: original
+    text: むらさめの
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "87"
+text_original: |-
+  むらさめの
+  露もまだひぬ
+  まきの葉に
+  霧立ちのぼる
+  秋の夕暮
+text_lang: ja
+text_romanization: |-
+  Murasame no
+  Tsuyu mo mada hinu
+  Maki no ha ni
+  Kiri tachinoboru
+  Aki no yugure
+text_translation: |-
+  An autumn eve:
+  See the valley mists arise
+  Among the fir leaves
+  That still hold the dripping wet
+  Of the chill day's sudden showers.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 87 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by The Monk Jakuren (寂蓮法師, Jakuren Hōshi).[[source/jti-ogura-hyakunin-isshu|poem 87]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 87
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 87
+      accessed: 2026-11-06

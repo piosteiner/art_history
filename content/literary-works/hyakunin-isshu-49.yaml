@@ -1,0 +1,39 @@
+public_id: 116379
+name: Mikakimori
+names:
+  - lang: ja
+    role: original
+    text: みかき守
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "49"
+text_original: |-
+  みかき守
+  衛士のたく火の
+  夜はもえ
+  昼は消えつつ
+  物をこそおもへ
+text_lang: ja
+text_romanization: |-
+  Mikakimori
+  Eji no taku hi no
+  Yoru wa moe
+  Hiru wa kie tsutsu
+  Mono o koso omoe
+text_translation: |-
+  Like the guard's fires
+  Kept at the imperial gateway--
+  Burning through the night,
+  Dull in ashes through the day--
+  Is the love aglow in me.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 49 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Onakatomi no Yoshinobu (大中臣能宣朝臣, Ōnakatomi no Yoshinobu Ason).[[source/jti-ogura-hyakunin-isshu|poem 49]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 49
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 49
+      accessed: 2026-11-06

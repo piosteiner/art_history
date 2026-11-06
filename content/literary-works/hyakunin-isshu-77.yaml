@@ -1,0 +1,39 @@
+public_id: 116407
+name: Se o hayami
+names:
+  - lang: ja
+    role: original
+    text: 瀬をはやみ
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "77"
+text_original: |-
+  瀬をはやみ
+  岩にせかるる
+  滝川の
+  われても末に
+  逢はむとぞ思ふ
+text_lang: ja
+text_romanization: |-
+  Se o hayami
+  Iwa ni sekaruru
+  Takigawa no
+  Warete mo sue ni
+  Awan to zo omou
+text_translation: |-
+  Though a swift stream is
+  Divided by a boulder
+  In its headlong flow,
+  Though divided, on it rushes,
+  And at last unites again.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 77 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Emperor Sutoku (崇徳院御製, Sutoku In).[[source/jti-ogura-hyakunin-isshu|poem 77]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 77
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 77
+      accessed: 2026-11-06

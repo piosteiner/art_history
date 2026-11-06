@@ -1,0 +1,39 @@
+public_id: 116334
+name: Tago no Ura ni
+names:
+  - lang: ja
+    role: original
+    text: 田子の浦に
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "4"
+text_original: |-
+  田子の浦に
+  打ち出でてみれば
+  白妙の
+  富士の高嶺に
+  雪はふりつつ
+text_lang: ja
+text_romanization: |-
+  Tago no Ura ni
+  Uchi idete mireba
+  Shirotae no
+  Fuji no takane ni
+  Yuki wa furi tsutsu
+text_translation: |-
+  When I take the path
+  To Tago's coast, I see
+  Perfect whiteness laid
+  On Mount Fuji's lofty peak
+  By the drift of falling snow.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 4 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Yamabe no Akahito (山辺赤人, Yamabe no Akahito).[[source/jti-ogura-hyakunin-isshu|poem 4]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 4
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 4
+      accessed: 2026-11-06

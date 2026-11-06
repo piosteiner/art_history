@@ -1,0 +1,39 @@
+public_id: 116416
+name: Nageke tote
+names:
+  - lang: ja
+    role: original
+    text: なげけとて
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "86"
+text_original: |-
+  なげけとて
+  月やは物を
+  思はする
+  かこちがほなる
+  わがなみだかな
+text_lang: ja
+text_romanization: |-
+  Nageke tote
+  Tsuki ya wa mono o
+  Omowasuru
+  Kakochi gao naru
+  Waga namida kana
+text_translation: |-
+  Should I blame the moon
+  For bringing forth this sadness,
+  As if it pictured grief?
+  Lifting up my troubled face,
+  I regard it through my tears.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 86 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by The Monk Saigyo (西行法師, Saigyō Hōshi).[[source/jti-ogura-hyakunin-isshu|poem 86]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 86
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 86
+      accessed: 2026-11-06

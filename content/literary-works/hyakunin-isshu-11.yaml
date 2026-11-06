@@ -1,0 +1,39 @@
+public_id: 116341
+name: Wata no hara
+names:
+  - lang: ja
+    role: original
+    text: わたの原
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "11"
+text_original: |-
+  わたの原
+  八十島かけて
+  こぎ出ぬと
+  人には告げよ
+  あまのつり舟
+text_lang: ja
+text_romanization: |-
+  Wata no hara
+  Yasoshima kakete
+  Kogi idenu to
+  Hito ni wa tsugeyo
+  Ama no tsuri bune
+text_translation: |-
+  Over the wide sea
+  Towards its many distant isles
+  My ship sets sail.
+  Will the fishing boats thronged here
+  Proclaim my journey to the world?
+text_translator: Clay MacCauley, 1917
+description_md: Poem 11 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Ono no Takamura (参議篁, Sangi Takamura).[[source/jti-ogura-hyakunin-isshu|poem 11]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 11
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 11
+      accessed: 2026-11-06

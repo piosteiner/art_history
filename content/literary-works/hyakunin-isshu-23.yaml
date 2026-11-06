@@ -1,0 +1,39 @@
+public_id: 116353
+name: Tsuki mireba
+names:
+  - lang: ja
+    role: original
+    text: 月見れば
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "23"
+text_original: |-
+  月見れば
+  千々に物こそ
+  悲しけれ
+  わが身ひとつの
+  秋にはあらねど
+text_lang: ja
+text_romanization: |-
+  Tsuki mireba
+  Chiji ni mono koso
+  Kanashi kere
+  Waga mi hitotsu no
+  Aki ni wa aranedo
+text_translation: |-
+  As I view the moon,
+  Many things come into my mind,
+  And my thoughts are sad;
+  Yet it's not for me alone,
+  That the autumn time has come.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 23 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Oe no Chisato (大江千里, Ōe no Chisato).[[source/jti-ogura-hyakunin-isshu|poem 23]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 23
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 23
+      accessed: 2026-11-06

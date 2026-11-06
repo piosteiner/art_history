@@ -1,0 +1,39 @@
+public_id: 116421
+name: Kirigirisu
+names:
+  - lang: ja
+    role: original
+    text: きりぎりす
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "91"
+text_original: |-
+  きりぎりす
+  鳴くや霜夜の
+  さむしろに
+  衣かたしき
+  ひとりかも寝む
+text_lang: ja
+text_romanization: |-
+  Kirigirisu
+  Naku ya shimo yo no
+  Samushiro ni
+  Koromo katashiki
+  Hitori kamo nen
+text_translation: |-
+  In my cold bed,
+  Drawing close my folded quilt,
+  I sleep alone,
+  While all through the frosty night
+  I hear a cricket's lonely sound.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 91 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Yoshitsune (後京極摂政太政大臣, Go Kyōgoku no Sessho Dajodaijin).[[source/jti-ogura-hyakunin-isshu|poem 91]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 91
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 91
+      accessed: 2026-11-06

@@ -1,0 +1,39 @@
+public_id: 116338
+name: Waga io wa
+names:
+  - lang: ja
+    role: original
+    text: わが庵は
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "8"
+text_original: |-
+  わが庵は
+  都のたつみ
+  しかぞすむ
+  世をうぢ山と
+  人はいふなり
+text_lang: ja
+text_romanization: |-
+  Waga io wa
+  Miyako no tatsumi
+  Shika zo sumu
+  Yo o Ujiyama to
+  Hito wa iu nari
+text_translation: |-
+  My lowly hut is
+  Southeast from the capital.
+  Thus I choose to live.
+  And the world in which I live
+  Men have named a "Mount of Gloom."
+text_translator: Clay MacCauley, 1917
+description_md: Poem 8 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by The Monk Kisen (喜撰法師, Kisen Hōshi).[[source/jti-ogura-hyakunin-isshu|poem 8]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 8
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 8
+      accessed: 2026-11-06

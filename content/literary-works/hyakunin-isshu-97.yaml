@@ -1,0 +1,39 @@
+public_id: 116427
+name: Konu hito o
+names:
+  - lang: ja
+    role: original
+    text: こぬ人を
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "97"
+text_original: |-
+  こぬ人を
+  まつほの浦の
+  夕なぎに
+  やくやもしほの
+  身もこがれつつ
+text_lang: ja
+text_romanization: |-
+  Konu hito o
+  Matsuho no ura no
+  Yunagi ni
+  Yaku ya moshio no
+  Mi mo kogare tsutsu
+text_translation: |-
+  Like the salt sea-weed,
+  Burning in the evening calm.
+  On Matsuo's shore,
+  All my being is aflame,
+  Awaiting her who does not come.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 97 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Sadaie, Fujiwara no Teika (権中納言定家, GonChūnagon Sadaie).[[source/jti-ogura-hyakunin-isshu|poem 97]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 97
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 97
+      accessed: 2026-11-06

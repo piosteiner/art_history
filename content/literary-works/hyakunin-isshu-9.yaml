@@ -1,0 +1,39 @@
+public_id: 116339
+name: Hana no iro wa
+names:
+  - lang: ja
+    role: original
+    text: 花の色は
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "9"
+text_original: |-
+  花の色は
+  うつりにけりな
+  いたづらに
+  わが身世にふる
+  ながめせしまに
+text_lang: ja
+text_romanization: |-
+  Hana no iro wa
+  Utsuri ni keri na
+  Itazura ni
+  Waga mi yo ni furu
+  Nagame seshi ma ni
+text_translation: |-
+  Color of the flower
+  Has already faded away,
+  While in idle thoughts
+  My life passes vainly by,
+  As I watch the long rains fall.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 9 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Ono no Komachi (小野小町, Ono no Komachi).[[source/jti-ogura-hyakunin-isshu|poem 9]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 9
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 9
+      accessed: 2026-11-06

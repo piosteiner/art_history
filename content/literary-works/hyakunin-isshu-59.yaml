@@ -1,0 +1,39 @@
+public_id: 116389
+name: Yasurawade
+names:
+  - lang: ja
+    role: original
+    text: やすらはで
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "59"
+text_original: |-
+  やすらはで
+  寝なまし物を
+  小夜更けて
+  かたぶくまでの
+  月を見しかな
+text_lang: ja
+text_romanization: |-
+  Yasurawade
+  Nenamashi mono o
+  Sayo fukete
+  Katabuku made no
+  Tsuki o mishi kana
+text_translation: |-
+  Better to have slept
+  Care-free, than to keep vain watch
+  Through the passing night,
+  Till I saw the lonely moon
+  Traverse her descending path.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 59 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Lady Akazome Emon (赤染衛門, Akazome Emon).[[source/jti-ogura-hyakunin-isshu|poem 59]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 59
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 59
+      accessed: 2026-11-06

@@ -1,4 +1,24 @@
 public_id: 115536
-name: Welbore Ellis Agar
+name: Welbore Ellis Agar, 2nd Earl of Normanton
 given_name: Welbore Ellis
 family_name: Agar
+names: [Welbore Ellis Agar]
+kind: person
+birth: 1778-11-12
+death: 1868-08-26
+wikidata_id: Q51180294
+metadata:
+  sources: [Wikidata Q51180294 (retrieved 2026-11-06)]
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q51180294
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q51180294
+  death:
+    - accessed: 2026-11-06
+      property: P570
+      wikidata: Q51180294

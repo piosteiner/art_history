@@ -1,0 +1,39 @@
+public_id: 116333
+name: Ashibiki no
+names:
+  - lang: ja
+    role: original
+    text: あしびきの
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "3"
+text_original: |-
+  あしびきの
+  山鳥の尾の
+  しだり尾の
+  ながながし夜を
+  ひとりかもねむ
+text_lang: ja
+text_romanization: |-
+  Ashibiki no
+  Yamadori no o no
+  Shidari o no
+  Naganagashi yo o
+  Hitori ka mo nen
+text_translation: |-
+  Oh, the foot-drawn trail
+  Of the mountain-pheasant's tail
+  Drooped like down-curved branch!
+  Through this long, long-dragging night
+  Must I lie in bed alone?
+text_translator: Clay MacCauley, 1917
+description_md: Poem 3 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Kakinomoto no Hitomaro (柿本人麿, Kakinomoto no Hitomaro).[[source/jti-ogura-hyakunin-isshu|poem 3]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 3
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 3
+      accessed: 2026-11-06

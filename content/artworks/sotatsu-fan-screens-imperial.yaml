@@ -32,6 +32,9 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 268–269, fig. 310
+  - type: illustrates
+    to: literature/the-tales-of-ise
+    label: one of the fans
 sources:
   kind:
     - source: history-of-japanese-art

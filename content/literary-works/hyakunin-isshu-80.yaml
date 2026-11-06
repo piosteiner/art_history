@@ -1,0 +1,39 @@
+public_id: 116410
+name: Nagakaran
+names:
+  - lang: ja
+    role: original
+    text: 長からむ
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "80"
+text_original: |-
+  長からむ
+  心もしらず
+  黒髪の
+  みだれてけさは
+  物をこそ思へ
+text_lang: ja
+text_romanization: |-
+  Nagakaran
+  Kokoro mo shirazu
+  Kurokami no
+  Midarete kesa wa
+  Mono o koso omoe
+text_translation: |-
+  Is it forever
+  That he hopes our love will last?
+  He did not answer.
+  And now my daylight thoughts
+  Are as tangled as my black hair.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 80 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Lady Horikawa (待賢門院堀河, Taiken Moin no Horikawa).[[source/jti-ogura-hyakunin-isshu|poem 80]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 80
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 80
+      accessed: 2026-11-06

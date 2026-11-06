@@ -1,0 +1,39 @@
+public_id: 116369
+name: Asajiu no
+names:
+  - lang: ja
+    role: original
+    text: 浅茅生の
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "39"
+text_original: |-
+  浅茅生の
+  小野の篠原
+  忍ぶれど
+  あまりてなどか
+  人の恋しき
+text_lang: ja
+text_romanization: |-
+  Asajiu no
+  Ono no shinohara
+  Shinoburedo
+  Amarite nado ka
+  Hito no koishiki
+text_translation: |-
+  Bamboo growing
+  Among the tangled reeds
+  Like my hidden love:
+  But it is too much to bear
+  That I still love her so.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 39 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Minamoto no Hitoshi (参議等, Sangi Hitoshi).[[source/jti-ogura-hyakunin-isshu|poem 39]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 39
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 39
+      accessed: 2026-11-06

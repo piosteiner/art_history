@@ -1,0 +1,39 @@
+public_id: 116370
+name: Shinoburedo
+names:
+  - lang: ja
+    role: original
+    text: 忍ぶれど
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "40"
+text_original: |-
+  忍ぶれど
+  色に出でにけり
+  わが恋は
+  物や思ふと
+  人の問ふまで
+text_lang: ja
+text_romanization: |-
+  Shinoburedo
+  Iro ni ide ni keri
+  Waga koi wa
+  Mono ya omou to
+  Hito no tou made
+text_translation: |-
+  Though I would hide it,
+  In my face it still appears--
+  My fond, secret love.
+  And now he questions me:
+  "Is something bothering you?"
+text_translator: Clay MacCauley, 1917
+description_md: Poem 40 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Taira no Kanemori (平兼盛, Taira no Kanemori).[[source/jti-ogura-hyakunin-isshu|poem 40]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 40
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 40
+      accessed: 2026-11-06

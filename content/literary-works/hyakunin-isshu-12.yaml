@@ -1,0 +1,39 @@
+public_id: 116342
+name: Ama tsu kaze
+names:
+  - lang: ja
+    role: original
+    text: 天つ風
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "12"
+text_original: |-
+  天つ風
+  雲のかよひ路
+  吹きとぢよ
+  乙女のすがた
+  しばしとどめむ
+text_lang: ja
+text_romanization: |-
+  Ama tsu kaze
+  Kumo no kayoiji
+  Fuki toji yo
+  Otome no sugata
+  Shibashi todomen
+text_translation: |-
+  Let the winds of heaven
+  Blow through the paths among the clouds
+  And close their gates.
+  Then for a while I could detain
+  These messengers in maiden form.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 12 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by The Monk Henjo (僧正遍昭, Sōjō Henjō).[[source/jti-ogura-hyakunin-isshu|poem 12]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 12
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 12
+      accessed: 2026-11-06

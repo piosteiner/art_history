@@ -1,0 +1,42 @@
+public_id: 116387
+name: Meguri aite
+names:
+  - lang: ja
+    role: original
+    text: めぐりあひて
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "57"
+text_original: |-
+  めぐりあひて
+  見しやそれとも
+  わかぬ間に
+  雲がくれにし
+  夜半の月かげ
+text_lang: ja
+text_romanization: |-
+  Meguri aite
+  Mishi ya sore to mo
+  Wakanu ma ni
+  Kumo-gakure ni shi
+  Yowa no tsuki kage
+text_translation: |-
+  Meeting on the path:
+  But I cannot clearly know
+  If it was he,
+  Because the midnight moon
+  In a cloud had disappeared.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 57 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by [[person/murasaki-shikibu|Lady Murasaki Shikibu]] (紫式部, Murasaki Shikibu).[[source/jti-ogura-hyakunin-isshu|poem 57]]
+relationships:
+  - type: written_by
+    to: person/murasaki-shikibu
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 57
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 57
+      accessed: 2026-11-06

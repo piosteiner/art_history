@@ -1,0 +1,16 @@
+public_id: 116228
+name: Oku no hosomichi
+names:
+  - lang: ja
+    role: original
+    text: "{奥の細道|おくのほそみち}"
+  - lang: en
+    role: translation
+    text: The Narrow Road to the Deep North
+    status: common
+kind: diary
+description_md: "[[person/matsuo-basho]]’s poetic diary of his journey with his companion Sora into the north,[[source/history-of-japanese-art|pp. 333–334]] begun in the late spring of 1689: about 156 days, mostly on foot, to the places of which the old poets — above all Saigyō — had written, among them Nikkō, the Shirakawa barrier, Matsushima and Hiraizumi. Its prose and haiku together are a haibun; it was published after his death, in 1702.[[source/wikipedia-en-oku-no-hosomichi]] [[artist/yosa-buson]] wrote it out and illustrated it in a [[artwork/buson-oku-no-hosomichi-knm|handscroll]].[[source/history-of-japanese-art|pp. 333–334]]"
+wikidata_id: Q1287971
+relationships:
+  - type: written_by
+    to: person/matsuo-basho

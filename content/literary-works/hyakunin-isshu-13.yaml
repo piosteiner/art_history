@@ -1,0 +1,39 @@
+public_id: 116343
+name: Tsukuba ne no
+names:
+  - lang: ja
+    role: original
+    text: 筑波嶺の
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "13"
+text_original: |-
+  筑波嶺の
+  峰より落つる
+  みなの川
+  恋ぞつもりて
+  淵となりぬる
+text_lang: ja
+text_romanization: |-
+  Tsukuba ne no
+  Mine yori otsuru
+  Minano-gawa
+  Koi zo tsumorite
+  Fuchi to nari nuru
+text_translation: |-
+  From Tsukuba's peak
+  Falling waters have become
+  Mina's still, full flow:
+  So my love has grown to be
+  Like the river's quiet deeps.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 13 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Emperor Yozei (陽成院, Yōzei In).[[source/jti-ogura-hyakunin-isshu|poem 13]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 13
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 13
+      accessed: 2026-11-06

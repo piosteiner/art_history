@@ -1,0 +1,39 @@
+public_id: 116393
+name: Ima wa tada
+names:
+  - lang: ja
+    role: original
+    text: 今はただ
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "63"
+text_original: |-
+  今はただ
+  思ひ絶えなむ
+  とばかりを
+  人づてならで
+  いふよしもがな
+text_lang: ja
+text_romanization: |-
+  Ima wa tada
+  Omoi taenan
+  To bakari wo
+  Hito-zute nara de
+  Iu yoshi mo gana
+text_translation: |-
+  Is there any way
+  Except by a messenger
+  To send these words to you?
+  If I could, I'd come to you
+  To say goodbye forever.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 63 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Michimasa (左京大夫道雅, Sakyō no Daibu Michimasa).[[source/jti-ogura-hyakunin-isshu|poem 63]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 63
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 63
+      accessed: 2026-11-06

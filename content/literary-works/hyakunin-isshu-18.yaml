@@ -1,0 +1,39 @@
+public_id: 116348
+name: Sumi no e no
+names:
+  - lang: ja
+    role: original
+    text: 住の江の
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "18"
+text_original: |-
+  住の江の
+  岸による波
+  よるさへや
+  夢の通ひ路
+  人目よくらむ
+text_lang: ja
+text_romanization: |-
+  Sumi no e no
+  Kishi ni yoru nami
+  Yoru sae ya
+  Yume no kayoi ji
+  Hito me yoku ran
+text_translation: |-
+  The waves are gathered
+  On the shore of Sumi Bay,
+  And in the gathered night,
+  When in dreams I go to you,
+  I hide from people's eyes.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 18 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Toshiyuki (藤原敏行朝臣, Fujiwara no Toshiyuki Ason).[[source/jti-ogura-hyakunin-isshu|poem 18]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 18
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 18
+      accessed: 2026-11-06

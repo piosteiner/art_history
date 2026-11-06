@@ -1,0 +1,39 @@
+public_id: 116397
+name: Haru no yo no
+names:
+  - lang: ja
+    role: original
+    text: 春の夜の
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "67"
+text_original: |-
+  春の夜の
+  夢ばかりなる
+  手枕に
+  かひなく立たむ
+  名こそ惜しけれ
+text_lang: ja
+text_romanization: |-
+  Haru no yo no
+  Yume bakari naru
+  Tamakura ni
+  Kainaku tatan
+  Na koso oshi kere
+text_translation: |-
+  If I lay my head
+  Upon his arm in the dark
+  Of a short spring night,
+  This innocent dream pillow
+  Will be the death of my good name.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 67 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Lady Suo (周防内侍, Suō no Naishi).[[source/jti-ogura-hyakunin-isshu|poem 67]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 67
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 67
+      accessed: 2026-11-06

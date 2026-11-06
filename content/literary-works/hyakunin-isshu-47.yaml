@@ -1,0 +1,39 @@
+public_id: 116377
+name: Yaemugura
+names:
+  - lang: ja
+    role: original
+    text: 八重むぐら
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "47"
+text_original: |-
+  八重むぐら
+  しげれる宿の
+  さびしきに
+  人こそ見えね
+  秋は来にけり
+text_lang: ja
+text_romanization: |-
+  Yaemugura
+  Shigereru yado no
+  Sabishiki ni
+  Hito koso miene
+  Aki wa ki ni keri
+text_translation: |-
+  To the dim cottage
+  Overgrown with thick-leaved vines
+  In its loneliness
+  Comes the dreary autumn time:
+  But there no people come.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 47 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by The Monk Egyo (恵慶法師, Egyō Hōshi).[[source/jti-ogura-hyakunin-isshu|poem 47]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 47
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 47
+      accessed: 2026-11-06

@@ -1,0 +1,39 @@
+public_id: 116420
+name: Misebaya na
+names:
+  - lang: ja
+    role: original
+    text: 見せばやな
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "90"
+text_original: |-
+  見せばやな
+  雄島のあまの
+  袖だにも
+  ぬれにぞぬれし
+  色はかはらず
+text_lang: ja
+text_romanization: |-
+  Misebaya na
+  Ojima no ama no
+  Sode dani mo
+  Nure ni zo nureshi
+  Iro wa kawarazu
+text_translation: |-
+  Let me show him these!
+  Even the fishermen's sleeves
+  On Ojima's shores,
+  Though wet through and wet again,
+  Do not so change their colors.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 90 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Attendant to Empress Inpu (殷富門院大輔, Inpu Moin no Taifu).[[source/jti-ogura-hyakunin-isshu|poem 90]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 90
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 90
+      accessed: 2026-11-06

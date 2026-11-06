@@ -1,0 +1,39 @@
+public_id: 116404
+name: Ukari keru
+names:
+  - lang: ja
+    role: original
+    text: うかりける
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "74"
+text_original: |-
+  うかりける
+  人をはつせの
+  山おろしよ
+  はげしかれとは
+  祈らぬものを
+text_lang: ja
+text_romanization: |-
+  Ukari keru
+  Hito o Hatsuse no
+  Yama oroshiyo
+  Hageshikare to wa
+  Inoranu mono o
+text_translation: |-
+  It was not for this
+  I prayed at the holy shrine:
+  That she would become
+  As pitiless and as cold
+  As the storms on Hase's hills.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 74 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Minamoto no Toshiyori (源俊頼朝臣, Minamoto no Toshiyori Ason).[[source/jti-ogura-hyakunin-isshu|poem 74]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 74
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 74
+      accessed: 2026-11-06

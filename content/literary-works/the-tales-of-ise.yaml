@@ -1,0 +1,19 @@
+public_id: 116227
+name: The Tales of Ise
+names:
+  - lang: ja
+    role: original
+    text: "{伊勢物語|いせものがたり}"
+  - lang: ja-Latn
+    role: romanization
+    text: Ise monogatari
+kind: tale
+description_md: |-
+  An uta monogatari of the Heian period — waka poems, each with a short prose account of how it came to be written: 125 sections with 209 poems in the standard versions. With the [[literature/kokin-wakashu|Kokin Wakashū]] and [[literature/the-tale-of-genji|The Tale of Genji]] it counts among the fundamental works of Heian literature. Its nameless central character, followed from his coming of age in the first section to his death in the last, is thought to be [[person/ariwara-no-narihira]] (825–880); thirty of its poems are in the Kokinshū, all ascribed to him. Whether he also wrote it is uncertain — some sections tell of events after his death.[[source/wikipedia-en-the-tales-of-ise]] Mason calls it “attributed to the ninth-century aristocrat Ariwara no Narihira”.[[source/history-of-japanese-art|p. 269]]
+
+  Painters took up its episodes again and again: the lover who carries off a girl destined for the emperor and loses her to a demon in a storehouse, on one of [[artwork/sotatsu-fan-screens-imperial|Sōtatsu’s fans]];[[source/history-of-japanese-art|p. 269]] the irises at Yatsuhashi in [[artwork/korin-irises-nezu|Kōrin’s screens]].[[source/history-of-japanese-art|pp. 314–315]]
+wikidata_id: Q1539995
+relationships:
+  - type: written_by
+    to: person/ariwara-no-narihira
+    certainty: possible

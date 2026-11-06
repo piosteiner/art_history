@@ -1,0 +1,39 @@
+public_id: 116414
+name: Nagaraeba
+names:
+  - lang: ja
+    role: original
+    text: ながらへば
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "84"
+text_original: |-
+  ながらへば
+  またこの頃や
+  しのばれむ
+  憂しと見し世ぞ
+  今は恋しき
+text_lang: ja
+text_romanization: |-
+  Nagaraeba
+  Mata konogoro ya
+  Shinobaren
+  Ushi to mishi yo zo
+  Ima wa koishiki
+text_translation: |-
+  If I should live long,
+  Then perhaps the present days
+  May be dear to me,
+  Just as past time filled with grief
+  Comes quietly back in thought.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 84 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Kiyosuke (藤原清輔朝臣, Fujiwara no Kiyosuke Ason).[[source/jti-ogura-hyakunin-isshu|poem 84]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 84
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 84
+      accessed: 2026-11-06

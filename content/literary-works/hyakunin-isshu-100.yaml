@@ -1,0 +1,39 @@
+public_id: 116430
+name: Momoshiki ya
+names:
+  - lang: ja
+    role: original
+    text: 百敷や
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "100"
+text_original: |-
+  百敷や
+  古き軒端の
+  しのぶにも
+  なほあまりある
+  むかしなりけり
+text_lang: ja
+text_romanization: |-
+  Momoshiki ya
+  Furuki nokiba no
+  Shinobu ni mo
+  Nao amari aru
+  Mukashi nari keri
+text_translation: |-
+  In this ancient house,
+  Paved with a hundred stones,
+  Ferns grow in the eaves;
+  But numerous as they are,
+  My old memories are more.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 100 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Emperor Juntoku (順徳院御製, Juntoku In).[[source/jti-ogura-hyakunin-isshu|poem 100]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 100
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 100
+      accessed: 2026-11-06

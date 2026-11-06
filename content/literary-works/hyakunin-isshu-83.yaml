@@ -1,0 +1,39 @@
+public_id: 116413
+name: Yo no naka yo
+names:
+  - lang: ja
+    role: original
+    text: 世の中よ
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "83"
+text_original: |-
+  世の中よ
+  道こそなけれ
+  思ひ入る
+  山のおくにも
+  鹿ぞ鳴くなる
+text_lang: ja
+text_romanization: |-
+  Yo no naka yo
+  Michi koso nakere
+  Omoi iru
+  Yama no oku ni mo
+  Shika zo naku naru
+text_translation: |-
+  From this world I think
+  That there is nowhere to escape.
+  I wanted to hide
+  In the mountains' farthest depths;
+  But there I hear the stag's cry.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 83 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Toshinari (皇太后宮大夫俊成, Kōtaigōgū no Daibu Toshinari).[[source/jti-ogura-hyakunin-isshu|poem 83]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 83
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 83
+      accessed: 2026-11-06

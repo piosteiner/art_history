@@ -1,0 +1,39 @@
+public_id: 116340
+name: Kore ya kono
+names:
+  - lang: ja
+    role: original
+    text: これやこの
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "10"
+text_original: |-
+  これやこの
+  行くも帰るも
+  別れては
+  知るも知らぬも
+  逢坂の関
+text_lang: ja
+text_romanization: |-
+  Kore ya kono
+  Yuku mo kaeru mo
+  Wakarete wa
+  Shiru mo shiranu mo
+  Ōsaka no seki
+text_translation: |-
+  Truly, this is where
+  Travelers who go or come
+  Over parting ways--
+  Friends or strangers--all must meet:
+  The gate of "Meeting Hill."
+text_translator: Clay MacCauley, 1917
+description_md: Poem 10 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Semimaru (蝉丸, Semimaru).[[source/jti-ogura-hyakunin-isshu|poem 10]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 10
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 10
+      accessed: 2026-11-06

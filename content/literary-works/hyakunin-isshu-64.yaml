@@ -1,0 +1,39 @@
+public_id: 116394
+name: Asaborake
+names:
+  - lang: ja
+    role: original
+    text: 朝ぼらけ
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "64"
+text_original: |-
+  朝ぼらけ
+  宇治の川ぎり
+  たえだえに
+  あらはれわたる
+  ぜぜの網代木
+text_lang: ja
+text_romanization: |-
+  Asaborake
+  Uji no kawagiri
+  Tae-dae ni
+  Araware wataru
+  Zeze no ajirogi
+text_translation: |-
+  In the early dawn
+  When the mists on Uji River
+  Slowly lift and clear,
+  From the shallows to the deep,
+  The stakes of fishing nets appear.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 64 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Sadayori (権中納言定頼, GonChūnagon Sadayori).[[source/jti-ogura-hyakunin-isshu|poem 64]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 64
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 64
+      accessed: 2026-11-06

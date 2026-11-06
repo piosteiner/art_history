@@ -1,0 +1,14 @@
+public_id: 116220
+name: 1867 Paris World’s Fair
+names:
+  - lang: fr
+    role: original
+    text: Exposition universelle de 1867
+kind: world’s fair
+period: 1 April – 3 November 1867
+place: paris
+description_md: The second world’s fair in Paris, decreed by Napoleon III in 1864 and held on the Champ de Mars from 1 April to 3 November 1867.[[source/wikipedia-en-exposition-universelle-1867]] It was the first in which Japan formally took part:[[source/wikipedia-en-first-japanese-embassy-to-europe-1862]] the shogunate sent the [[event/tokugawa-akitake-mission|Tokugawa Akitake Mission]],[[source/wikipedia-en-tokugawa-akitake]] and for the first time Japan showed works of art in a national pavilion, many of them from the Satsuma and Saga domains. The fair brought many visitors into contact with Japanese art, and French artists took up the influence that grew into [[movement/japonisme|Japonisme]].[[source/wikipedia-en-exposition-universelle-1867]]
+wikidata_id: Q1345539
+relationships:
+  - type: concerns
+    to: movement/japonisme

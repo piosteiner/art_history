@@ -1,0 +1,39 @@
+public_id: 116401
+name: Yū sareba
+names:
+  - lang: ja
+    role: original
+    text: 夕されば
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "71"
+text_original: |-
+  夕されば
+  門田の稲葉
+  おとづれて
+  あしのまろやに
+  秋風ぞふく
+text_lang: ja
+text_romanization: |-
+  Yū sareba
+  Kadota no inaba
+  Otozurete
+  Ashi no maroya ni
+  Akikaze zo fuku
+text_translation: |-
+  When the evening comes,
+  From the rice leaves at my gate,
+  Gentle knocks are heard,
+  And, into my round rush-hut,
+  Enters autumn's roaming breeze.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 71 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Minamoto no Tsunenobu (大納言経信, Dainagon Tsunenobu).[[source/jti-ogura-hyakunin-isshu|poem 71]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 71
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 71
+      accessed: 2026-11-06

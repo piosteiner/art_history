@@ -1,0 +1,39 @@
+public_id: 116376
+name: Yura no to o
+names:
+  - lang: ja
+    role: original
+    text: 由良のとを
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "46"
+text_original: |-
+  由良のとを
+  わたる舟人
+  かぢをたえ
+  行く方もしらぬ
+  恋の道かな
+text_lang: ja
+text_romanization: |-
+  Yura no to o
+  Wataru funabito
+  Kaji o tae
+  Yukue mo shiranu
+  Koi no michi kana
+text_translation: |-
+  Like a mariner
+  Sailing over Yura's strait
+  With his rudder gone:
+  Where, over the deep of love,
+  The end lies, I do not know.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 46 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Sone no Yoshitada (曽禰好忠, Sone no Yoshitada).[[source/jti-ogura-hyakunin-isshu|poem 46]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 46
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 46
+      accessed: 2026-11-06

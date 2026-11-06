@@ -1,0 +1,39 @@
+public_id: 116418
+name: Naniwae no
+names:
+  - lang: ja
+    role: original
+    text: 難波江の
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "88"
+text_original: |-
+  難波江の
+  芦のかりねの
+  一夜ゆへ
+  身をつくしてや
+  恋わたるべき
+text_lang: ja
+text_romanization: |-
+  Naniwae no
+  Ashi no karine no
+  Hitoyo yue
+  Mi o tsukushite ya
+  Koi wataru beki
+text_translation: |-
+  After one brief night--
+  Short as a piece of the reeds
+  Growing in Naniwa bay--
+  Must I forever long for him
+  With my whole heart, till life ends?
+text_translator: Clay MacCauley, 1917
+description_md: Poem 88 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Attendant to Empress Koka (皇嘉門院別当, Kōka Moin no Bettō).[[source/jti-ogura-hyakunin-isshu|poem 88]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 88
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 88
+      accessed: 2026-11-06

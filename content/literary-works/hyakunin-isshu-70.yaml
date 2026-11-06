@@ -1,0 +1,39 @@
+public_id: 116400
+name: Sabishisa ni
+names:
+  - lang: ja
+    role: original
+    text: 寂しさに
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "70"
+text_original: |-
+  寂しさに
+  宿を立出て
+  ながむれば
+  いづこもおなじ
+  秋の夕暮
+text_lang: ja
+text_romanization: |-
+  Sabishisa ni
+  Yado o tachi idete
+  Nagamureba
+  Izuko mo onaji
+  Aki no yūgure
+text_translation: |-
+  In my loneliness
+  I leave my little hut.
+  When I look around,
+  Everywhere it is the same:
+  One lone, darkening autumn eve.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 70 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by The Monk Ryosen (良暹法師, Ryōsen Hōshi).[[source/jti-ogura-hyakunin-isshu|poem 70]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 70
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 70
+      accessed: 2026-11-06

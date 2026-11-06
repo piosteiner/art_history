@@ -1,0 +1,39 @@
+public_id: 116378
+name: Kaze o itami
+names:
+  - lang: ja
+    role: original
+    text: 風をいたみ
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "48"
+text_original: |-
+  風をいたみ
+  岩うつ波の
+  おのれのみ
+  くだけて物を
+  おもふ頃かな
+text_lang: ja
+text_romanization: |-
+  Kaze o itami
+  Iwa utsu nami no
+  Onore nomi
+  Kudakete mono o
+  Omou koro kana
+text_translation: |-
+  Like a driven wave,
+  Dashed by fierce winds on a rock,
+  So am I:  alone
+  And crushed upon the shore,
+  Remembering what has been.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 48 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Minamoto no Shigeyuki (源重之, Minamoto no Shigeyuki).[[source/jti-ogura-hyakunin-isshu|poem 48]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 48
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 48
+      accessed: 2026-11-06

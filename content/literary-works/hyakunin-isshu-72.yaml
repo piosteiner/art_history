@@ -1,0 +1,39 @@
+public_id: 116402
+name: Oto ni kiku
+names:
+  - lang: ja
+    role: original
+    text: 音にきく
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "72"
+text_original: |-
+  音にきく
+  高師の浜の
+  あだ浪は
+  かけじや袖の
+  ぬれもこそすれ
+text_lang: ja
+text_romanization: |-
+  Oto ni kiku
+  Takashi no hama no
+  Adanami wa
+  Kakeji ya sode no
+  Nure mo koso sure
+text_translation: |-
+  Famous are the waves
+  That break on Takashi beach
+  In noisy arrogance.
+  If I should go near that shore.
+  I would only wet my sleeves.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 72 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Lady Kii (祐子内親王家紀伊, Yūshi Naishinnō-ke no Kii).[[source/jti-ogura-hyakunin-isshu|poem 72]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 72
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 72
+      accessed: 2026-11-06

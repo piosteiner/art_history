@@ -1,0 +1,39 @@
+public_id: 116382
+name: Akenureba
+names:
+  - lang: ja
+    role: original
+    text: 明けぬれば
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "52"
+text_original: |-
+  明けぬれば
+  暮るるものとは
+  知りながら
+  なをうらめしき
+  あさぼらけかな
+text_lang: ja
+text_romanization: |-
+  Akenureba
+  Kururu mono to wa
+  Shiri nagara
+  Nao urameshiki
+  Asaborake kana
+text_translation: |-
+  Though I know indeed
+  That the night will come again
+  After day has dawned,
+  Still, in truth, I hate the sight
+  Of the morning's coming light.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 52 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Michinobu (藤原道信朝臣, Fujiwara no Michinobu Ason).[[source/jti-ogura-hyakunin-isshu|poem 52]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 52
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 52
+      accessed: 2026-11-06

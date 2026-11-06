@@ -1,0 +1,39 @@
+public_id: 116425
+name: Ōkenaku
+names:
+  - lang: ja
+    role: original
+    text: おほけなく
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "95"
+text_original: |-
+  おほけなく
+  うき世の民に
+  おほふかな
+  わがたつそまに
+  墨染の袖
+text_lang: ja
+text_romanization: |-
+  Ōkenaku
+  Ukiyo no tami ni
+  Ōu kana
+  Waga tatsu soma ni
+  Sumizome no sode
+text_translation: |-
+  From the monastery
+  On Mount Hiei I look out
+  On this world of tears,
+  And though I am unworthy,
+  I shield it with my black sleeves.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 95 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Abbot Jien (前大僧正慈円, Saki no Daisōjō Jien).[[source/jti-ogura-hyakunin-isshu|poem 95]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 95
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 95
+      accessed: 2026-11-06

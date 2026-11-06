@@ -1,0 +1,39 @@
+public_id: 116374
+name: Au koto no
+names:
+  - lang: ja
+    role: original
+    text: 逢ふことの
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "44"
+text_original: |-
+  逢ふことの
+  絶えてしなくは
+  中々に
+  人をも身をも
+  恨みざらまし
+text_lang: ja
+text_romanization: |-
+  Au koto no
+  Taete shi nakuwa
+  Nakanaka ni
+  Hito o mo mi o mo
+  Urami zaramashi
+text_translation: |-
+  If it should happen
+  That we never met again,
+  I would not complain;
+  And I doubt that she or I
+  Would feel that we were left alone.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 44 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Asatada (中納言朝忠, Chūnagon Asatada).[[source/jti-ogura-hyakunin-isshu|poem 44]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 44
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 44
+      accessed: 2026-11-06

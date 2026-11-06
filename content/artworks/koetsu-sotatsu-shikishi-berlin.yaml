@@ -21,6 +21,9 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 267–268, fig. 308
+  - type: illustrates
+    to: literature/shin-kokin-wakashu
+    label: a poem by Kamo no Chōmei
 sources:
   kind:
     - source: history-of-japanese-art

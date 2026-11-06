@@ -1,0 +1,39 @@
+public_id: 116426
+name: Hana sasou
+names:
+  - lang: ja
+    role: original
+    text: 花さそふ
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "96"
+text_original: |-
+  花さそふ
+  あらしの庭の
+  雪ならで
+  ふりゆくものは
+  わが身なりけり
+text_lang: ja
+text_romanization: |-
+  Hana sasou
+  Arashi no niwa no
+  Yuki nara de
+  Furi yuku mono wa
+  Waga mi nari keri
+text_translation: |-
+  Not the snow of flowers,
+  That the hurrying wild wind whirls
+  Round the garden court:
+  What withers and falls away
+  In this place is I myself.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 96 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Kintsune (入道前太政大臣, Nyūdō Saki no Dajōdaijin).[[source/jti-ogura-hyakunin-isshu|poem 96]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 96
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 96
+      accessed: 2026-11-06

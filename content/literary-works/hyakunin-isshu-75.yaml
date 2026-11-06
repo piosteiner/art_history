@@ -1,0 +1,39 @@
+public_id: 116405
+name: Chigiri okishi
+names:
+  - lang: ja
+    role: original
+    text: 契りをきし
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "75"
+text_original: |-
+  契りをきし
+  させもが露を
+  命にて
+  あはれことしの
+  秋もいぬめり
+text_lang: ja
+text_romanization: |-
+  Chigiri okishi
+  Sasemo ga tsuyu o
+  Inochi ni te
+  Aware kotoshi no
+  Aki mo inumeri
+text_translation: |-
+  As dew promises
+  New life to the thirsty plant,
+  So did your vow to me.
+  Yet the year has passed away,
+  And autumn has come again.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 75 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Mototoshi (藤原基俊, Fujiwara no Mototoshi).[[source/jti-ogura-hyakunin-isshu|poem 75]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 75
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 75
+      accessed: 2026-11-06

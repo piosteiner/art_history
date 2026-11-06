@@ -1,0 +1,39 @@
+public_id: 116375
+name: Aware to mo
+names:
+  - lang: ja
+    role: original
+    text: あはれとも
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "45"
+text_original: |-
+  あはれとも
+  いふべき人は
+  思ほえで
+  身のいたづらに
+  なりぬべきかな
+text_lang: ja
+text_romanization: |-
+  Aware to mo
+  Iu beki hito wa
+  Omooede
+  Mi no itazura ni
+  Narinu beki kana
+text_translation: |-
+  Surely there is none
+  Who will speak a pitying word
+  About my lost love.
+  Now my folly's fitting end
+  Is my own nothingness.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 45 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Koremasa (謙徳公, Kentoku Kō).[[source/jti-ogura-hyakunin-isshu|poem 45]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 45
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 45
+      accessed: 2026-11-06

@@ -1,0 +1,39 @@
+public_id: 116390
+name: Ōeyama
+names:
+  - lang: ja
+    role: original
+    text: 大江山
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "60"
+text_original: |-
+  大江山
+  いく野の道の
+  とほければ
+  まだふみも見ず
+  天の橋立
+text_lang: ja
+text_romanization: |-
+  Ōeyama
+  Ikuno no michi no
+  Tō kereba
+  Mada fumi mo mizu
+  Ama no Hashidate
+text_translation: |-
+  By Oe Mountain
+  The road to Ikuno
+  Is far away,
+  And neither have I beheld
+  Nor crossed its bridge of heaven.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 60 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Lady Koshikibu (小式部内侍, Koshikibu no Naishi).[[source/jti-ogura-hyakunin-isshu|poem 60]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 60
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 60
+      accessed: 2026-11-06

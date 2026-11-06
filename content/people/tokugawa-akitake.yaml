@@ -1,0 +1,25 @@
+public_id: 116217
+name: Tokugawa Akitake
+names:
+  - lang: ja
+    role: original
+    text: "{徳川昭武|とくがわあきたけ}"
+  - kind: birth
+    role: former
+    text: Matsudaira Yohachimaro
+  - kind: birth
+    lang: ja
+    role: former
+    text: 松平余八麿
+occupations: [diplomat, daimyō]
+birth: 1853-10-26
+death: 1910-07-03
+description_md: The eighteenth son of Tokugawa Nariaki of the Mito domain and younger half-brother of the last shogun, Tokugawa Yoshinobu. Aged fourteen, he represented the shogunate at the [[event/1867-paris-world-s-fair|Paris World’s Fair of 1867]] and at the courts of Europe ([[event/tokugawa-akitake-mission|his mission]]) and stayed in Paris to study, until the new Meiji government called him home in 1868 to succeed his half-brother as head of the Mito Tokugawa — the domain’s last daimyō. In 1876 he was in charge of Japan’s exhibition at the Philadelphia World’s Fair, then studied in France again.[[source/wikipedia-en-tokugawa-akitake]]
+wikidata_id: Q3530485
+relationships:
+  - type: participated_in
+    to: event/1867-paris-world-s-fair
+    label: representing the shogun
+  - type: participated_in
+    to: event/tokugawa-akitake-mission
+    label: head, representing the shogun

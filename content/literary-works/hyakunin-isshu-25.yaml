@@ -1,0 +1,39 @@
+public_id: 116355
+name: Na ni shi owaba
+names:
+  - lang: ja
+    role: original
+    text: 名にしおはば
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "25"
+text_original: |-
+  名にしおはば
+  逢坂山の
+  さねかづら
+  人にしられで
+  くるよしもがな
+text_lang: ja
+text_romanization: |-
+  Na ni shi owaba
+  Ōsakayama no
+  Sanekazura
+  Hito ni shirarede
+  Kuru yoshi mo gana
+text_translation: |-
+  If your name is true,
+  Trailing vine of "Meeting Hill,"
+  Isn't there some way,
+  Hidden from people's gaze,
+  That you can draw her to my side?
+text_translator: Clay MacCauley, 1917
+description_md: Poem 25 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Sadakata (三条右大臣, Sanjō Udaijin).[[source/jti-ogura-hyakunin-isshu|poem 25]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 25
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 25
+      accessed: 2026-11-06

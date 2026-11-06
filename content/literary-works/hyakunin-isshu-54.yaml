@@ -1,0 +1,39 @@
+public_id: 116384
+name: Wasureji no
+names:
+  - lang: ja
+    role: original
+    text: 忘れじの
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "54"
+text_original: |-
+  忘れじの
+  行末までは
+  難ければ
+  今日を限りの
+  命ともがな
+text_lang: ja
+text_romanization: |-
+  Wasureji no
+  Yukusue made wa
+  Katakereba
+  Kyō o kagiri no
+  Inochi to mo gana
+text_translation: |-
+  If remembering me
+  Will for him in future years
+  Be too difficult,
+  It would be well this very day
+  That I should end my life.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 54 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by The Mother of Gido Sanshi (儀同三司母, Gidō Sanshi no Haha).[[source/jti-ogura-hyakunin-isshu|poem 54]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 54
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 54
+      accessed: 2026-11-06

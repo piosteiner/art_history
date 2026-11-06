@@ -1,0 +1,39 @@
+public_id: 116357
+name: Mika no Hara
+names:
+  - lang: ja
+    role: original
+    text: みかの原
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "27"
+text_original: |-
+  みかの原
+  わきてながるる
+  泉川
+  いつ見きとてか
+  恋しかるらむ
+text_lang: ja
+text_romanization: |-
+  Mika no Hara
+  Wakite nagaruru
+  Izumi-gawa
+  Itsu mi kitote ka
+  Koishi karuran
+text_translation: |-
+  Over Mika's plain,
+  Gushing forth and flowing free,
+  Is Izumi's stream.
+  I do not know if we have met:
+  Why, then, do I long for her?
+text_translator: Clay MacCauley, 1917
+description_md: Poem 27 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Kanesuke (中納言兼輔, Chūnagon Kanesuke).[[source/jti-ogura-hyakunin-isshu|poem 27]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 27
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 27
+      accessed: 2026-11-06

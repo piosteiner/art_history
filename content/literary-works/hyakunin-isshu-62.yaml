@@ -1,0 +1,39 @@
+public_id: 116392
+name: Yo o komete
+names:
+  - lang: ja
+    role: original
+    text: 夜をこめて
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "62"
+text_original: |-
+  夜をこめて
+  鳥の空音は
+  はかるとも
+  よにあふさかの
+  関はゆるさじ
+text_lang: ja
+text_romanization: |-
+  Yo o komete
+  Tori no sorane wa
+  Hakaru tomo
+  Yo ni Ōsaka no
+  Seki wa yurusaji
+text_translation: |-
+  The rooster's crowing
+  In the middle of the night
+  Deceived the hearers;
+  But at Osaka's gateway
+  The guards are never fooled.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 62 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Lady Sei Shonagon (清少納言, Sei Shōnagon).[[source/jti-ogura-hyakunin-isshu|poem 62]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 62
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 62
+      accessed: 2026-11-06

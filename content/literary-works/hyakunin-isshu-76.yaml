@@ -1,0 +1,41 @@
+public_id: 116406
+name: Wata no hara
+names:
+  - lang: ja
+    role: original
+    text: わたの原
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "76"
+text_original: |-
+  わたの原
+  こぎ出でて見れば
+  久方の
+  雲井にまよふ
+  おきつしらなみ
+text_lang: ja
+text_romanization: |-
+  Wata no hara
+  Kogi idete mireba
+  Hisakata no
+  Kumoi ni mayoo
+  Okitsu shiranami
+text_translation: |-
+  Over the wide sea
+  As I sail and look around,
+  It appears to me
+  That the white waves, far away,
+  Are the ever shining sky.
+text_translator: Clay MacCauley, 1917
+description_md: |-
+  Poem 76 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Tadamichi (法性寺入道関白太政大臣, Hōshōji no Nyūdō Kanpaku
+  Dajodaijin).[[source/jti-ogura-hyakunin-isshu|poem 76]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 76
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 76
+      accessed: 2026-11-06

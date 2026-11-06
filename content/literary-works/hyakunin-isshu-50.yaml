@@ -1,0 +1,39 @@
+public_id: 116380
+name: Kimi ga tame
+names:
+  - lang: ja
+    role: original
+    text: 君がため
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "50"
+text_original: |-
+  君がため
+  惜しからざりし
+  命さへ
+  ながくもがなと
+  おもひけるかな
+text_lang: ja
+text_romanization: |-
+  Kimi ga tame
+  Oshi karazarishi
+  Inochi sae
+  Nagaku mo gana to
+  Omoi keru kana
+text_translation: |-
+  For your precious sake,
+  Once my eager life itself
+  Was not dear to me.
+  But now it is my heart's desire
+  It may long, long years endure.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 50 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Yoshitaka (藤原義孝, Fujiwara no Yoshitaka).[[source/jti-ogura-hyakunin-isshu|poem 50]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 50
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 50
+      accessed: 2026-11-06

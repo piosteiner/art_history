@@ -1,0 +1,39 @@
+public_id: 116423
+name: Yo no naka wa
+names:
+  - lang: ja
+    role: original
+    text: 世の中は
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "93"
+text_original: |-
+  世の中は
+  つねにもがもな
+  なぎさこぐ
+  あまの小舟の
+  綱手かなしも
+text_lang: ja
+text_romanization: |-
+  Yo no naka wa
+  Tsune ni mo ga mo na
+  Nagisa kogu
+  Ama no obune no
+  Tsuna de kanashi mo
+text_translation: |-
+  If only our world
+  Could be always as it is!
+  How moving the sight
+  Of the little fishing boat
+  Drawn by ropes along the bank.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 93 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Minamoto no Sanetomo (鎌倉右大臣, Kamakura no Udaijin).[[source/jti-ogura-hyakunin-isshu|poem 93]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 93
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 93
+      accessed: 2026-11-06

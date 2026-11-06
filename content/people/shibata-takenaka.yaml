@@ -1,0 +1,22 @@
+public_id: 116216
+name: Shibata Takenaka
+names:
+  - lang: ja
+    role: original
+    text: "{柴田剛中|しばたたけなか}"
+  - Shibata Sadatarō
+  - lang: ja
+    role: alternative
+    text: 柴田貞太郎
+occupations: [diplomat]
+birth: 1823-02-27
+death: 1877-08-24
+description_md: Official and diplomat of the Tokugawa shogunate. In 1858 he became chief of staff of the office for foreign affairs and negotiated the opening of the port of Yokohama. On the [[event/first-japanese-embassy-to-europe|first embassy to Europe]] of 1862 he was the head of the staff and first secretary — in the talks he listened and took notes rather than spoke, and reported on the negotiators on his return; the newspapers nicknamed him “the shadow”. In 1863 he became commissioner for foreign affairs (gaikoku bugyō), and in 1865 he led the [[event/shibata-mission|Shibata Mission]] to France and Britain. Put in charge of opening the port of Kobe, he built its piers and the foreigners’ settlement and declared the port open in 1868. He declined to serve the Meiji government but answered its requests for advice.[[source/wikipedia-en-shibata-takenaka]]
+wikidata_id: Q3482025
+relationships:
+  - type: participated_in
+    to: event/first-japanese-embassy-to-europe
+    label: head of the staff and first secretary
+  - type: participated_in
+    to: event/shibata-mission
+    label: chief envoy

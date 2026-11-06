@@ -1,0 +1,39 @@
+public_id: 116396
+name: Morotomo ni
+names:
+  - lang: ja
+    role: original
+    text: もろともに
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "66"
+text_original: |-
+  もろともに
+  哀れと思へ
+  山桜
+  花より外に
+  知る人もなし
+text_lang: ja
+text_romanization: |-
+  Morotomo ni
+  Aware to omoe
+  Yama-zakura
+  Hana yori hoka ni
+  Shiru hito mo nashi
+text_translation: |-
+  On a mountain slope,
+  Solitary, uncompanioned,
+  Stands a cherry tree.
+  Except for you, lonely friend,
+  To others I am unknown.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 66 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Abbot Gyoson (大僧正行尊, Daisōjō Gyōson).[[source/jti-ogura-hyakunin-isshu|poem 66]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 66
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 66
+      accessed: 2026-11-06

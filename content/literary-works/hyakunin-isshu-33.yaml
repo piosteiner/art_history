@@ -1,0 +1,39 @@
+public_id: 116363
+name: Hisakata no
+names:
+  - lang: ja
+    role: original
+    text: 久方の
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "33"
+text_original: |-
+  久方の
+  光のどけき
+  春の日に
+  しづ心なく
+  花のちるらむ
+text_lang: ja
+text_romanization: |-
+  Hisakata no
+  Hikari nodokeki
+  Haru no hi ni
+  Shizu-gokoro naku
+  Hana no chiruran
+text_translation: |-
+  In the peaceful light
+  Of the ever-shining sun
+  In the days of spring,
+  Why do the cherry's new-blown blooms
+  Scatter like restless thoughts?
+text_translator: Clay MacCauley, 1917
+description_md: Poem 33 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Ki no Tomonori (紀友則, Ki no Tomonori).[[source/jti-ogura-hyakunin-isshu|poem 33]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 33
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 33
+      accessed: 2026-11-06

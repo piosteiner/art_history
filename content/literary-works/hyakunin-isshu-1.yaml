@@ -1,0 +1,39 @@
+public_id: 116331
+name: Aki no ta no
+names:
+  - lang: ja
+    role: original
+    text: 秋の田の
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "1"
+text_original: |-
+  秋の田の
+  かりほの庵の
+  苫をあらみ
+  わが衣手は
+  露にぬれつつ
+text_lang: ja
+text_romanization: |-
+  Aki no ta no
+  Kariho no io no
+  Toma o arami
+  Waga koromode wa
+  Tsuyu ni nure tsutsu
+text_translation: |-
+  Coarse the rush-mat roof
+  Sheltering the harvest-hut
+  Of the autumn rice-field;
+  And my sleeves are growing wet
+  With the moisture dripping through.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 1 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Emperor Tenchi (天智天皇, Tenchi Tennō).[[source/jti-ogura-hyakunin-isshu|poem 1]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 1
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 1
+      accessed: 2026-11-06

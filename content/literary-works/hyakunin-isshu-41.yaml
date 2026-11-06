@@ -1,0 +1,39 @@
+public_id: 116371
+name: Koisu chō
+names:
+  - lang: ja
+    role: original
+    text: 恋すてふ
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "41"
+text_original: |-
+  恋すてふ
+  我が名はまだき
+  立ちにけり
+  人しれずこそ
+  思ひそめしか
+text_lang: ja
+text_romanization: |-
+  Koisu chō
+  Waga na wa madaki
+  Tachi ni keri
+  Hito shirezu koso
+  Omoi someshi ka
+text_translation: |-
+  It is true I love,
+  But the rumor of my love
+  Had gone far and wide,
+  When people should not have known
+  That I had begun to love.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 41 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Mibu no Tadami (壬生忠見, Mibu no Tadami).[[source/jti-ogura-hyakunin-isshu|poem 41]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 41
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 41
+      accessed: 2026-11-06

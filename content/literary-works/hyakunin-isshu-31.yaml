@@ -1,0 +1,39 @@
+public_id: 116361
+name: Asaborake
+names:
+  - lang: ja
+    role: original
+    text: 朝ぼらけ
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "31"
+text_original: |-
+  朝ぼらけ
+  有明の月と
+  みるまでに
+  吉野の里に
+  ふれる白雪
+text_lang: ja
+text_romanization: |-
+  Asaborake
+  Ariake no tsuki to
+  Miru made ni
+  Yoshino no sato ni
+  Fureru shirayuki
+text_translation: |-
+  At the break of day,
+  Just as though the morning moon
+  Lightened the dim scene,
+  Yoshino's village lay
+  In a haze of falling snow.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 31 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Sakanoue no Korenori (坂上是則, Sakanoue no Korenori).[[source/jti-ogura-hyakunin-isshu|poem 31]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 31
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 31
+      accessed: 2026-11-06

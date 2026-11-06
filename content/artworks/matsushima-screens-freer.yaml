@@ -27,6 +27,10 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 269–271, fig. 311
+  - type: illustrates
+    to: literature/the-tales-of-ise
+    label: the exile gazing at the surf
+    certainty: possible
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/%E4%BF%B5%E5%B1%8B%E5%AE%97%E9%81%94%E3%80%8A%E6%9D%BE%E5%B3%B6%E5%9B%B3%E3%80%8B17%E4%B8%96%E7%B4%80%E3%80%81%E3%83%95%E3%83%AA%E3%83%BC%E3%82%A2%E7%BE%8E%E8%A1%93%E9%A4%A82.jpg/1280px-%E4%BF%B5%E5%B1%8B%E5%AE%97%E9%81%94%E3%80%8A%E6%9D%BE%E5%B3%B6%E5%9B%B3%E3%80%8B17%E4%B8%96%E7%B4%80%E3%80%81%E3%83%95%E3%83%AA%E3%83%BC%E3%82%A2%E7%BE%8E%E8%A1%93%E9%A4%A82.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%E4%BF%B5%E5%B1%8B%E5%AE%97%E9%81%94%E3%80%8A%E6%9D%BE%E5%B3%B6%E5%9B%B3%E3%80%8B17%E4%B8%96%E7%B4%80%E3%80%81%E3%83%95%E3%83%AA%E3%83%BC%E3%82%A2%E7%BE%8E%E8%A1%93%E9%A4%A82.jpg

@@ -1,0 +1,39 @@
+public_id: 116367
+name: Shiratsuyu o
+names:
+  - lang: ja
+    role: original
+    text: 白露を
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "37"
+text_original: |-
+  白露を
+  風のふきしく
+  秋の野は
+  つらぬきとめぬ
+  玉ぞちりける
+text_lang: ja
+text_romanization: |-
+  Shiratsuyu o
+  Kaze no fukishiku
+  Aki no no wa
+  Tsuranuki tomenu
+  Tama zo chiri keru
+text_translation: |-
+  In the autumn fields
+  When the heedless wind blows by
+  Over the pure-white dew,
+  How the myriad unstrung gems
+  Are scattered everywhere around
+text_translator: Clay MacCauley, 1917
+description_md: Poem 37 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fun'ya no Asayasu (文屋朝康, Fun'ya no Asayasu).[[source/jti-ogura-hyakunin-isshu|poem 37]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 37
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 37
+      accessed: 2026-11-06

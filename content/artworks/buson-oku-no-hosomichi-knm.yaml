@@ -19,6 +19,8 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 333–334, fig. 389
+  - type: illustrates
+    to: literature/oku-no-hosomichi
 sources:
   kind:
     - source: history-of-japanese-art

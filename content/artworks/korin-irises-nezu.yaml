@@ -41,6 +41,9 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 314–315, fig. 365
+  - type: illustrates
+    to: literature/the-tales-of-ise
+    label: the irises at Yatsuhashi
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/KORIN-Irises-L.jpg/1280px-KORIN-Irises-L.jpg
     source_url: https://commons.wikimedia.org/wiki/File:KORIN-Irises-L.jpg

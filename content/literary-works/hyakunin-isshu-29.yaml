@@ -1,0 +1,39 @@
+public_id: 116359
+name: Kokoroate ni
+names:
+  - lang: ja
+    role: original
+    text: 心あてに
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "29"
+text_original: |-
+  心あてに
+  折らばや折らむ
+  初霜の
+  おきまどはせる
+  白菊の花
+text_lang: ja
+text_romanization: |-
+  Kokoroate ni
+  Orabaya oran
+  Hatsushimo no
+  Oki madowaseru
+  Shiragiku no hana
+text_translation: |-
+  If it were my wish
+  To pick the white chrysanthemums,
+  Puzzled by the frost
+  Of the early autumn time,
+  I by chance might pluck the flower.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 29 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Oshikochi no Mitsune (凡河内躬恒, Oshikōchi no Mitsune).[[source/jti-ogura-hyakunin-isshu|poem 29]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 29
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 29
+      accessed: 2026-11-06

@@ -1,0 +1,39 @@
+public_id: 116398
+name: Kokoro ni mo
+names:
+  - lang: ja
+    role: original
+    text: 心にも
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "68"
+text_original: |-
+  心にも
+  あらで浮世に
+  ながらへば
+  恋しかるべき
+  夜半の月かな
+text_lang: ja
+text_romanization: |-
+  Kokoro ni mo
+  Arade ukiyo ni
+  Nagaraeba
+  Koishikaru beki
+  Yowa no tsuki kana
+text_translation: |-
+  Though I do not want
+  To live on in this floating world,
+  If I remain here,
+  Let me remember only
+  This midnight and this moonrise.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 68 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Emperor Sanjo (三条院, Sanjō In).[[source/jti-ogura-hyakunin-isshu|poem 68]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 68
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 68
+      accessed: 2026-11-06

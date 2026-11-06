@@ -1,0 +1,42 @@
+public_id: 116429
+name: Hito mo oshi
+names:
+  - lang: ja
+    role: original
+    text: 人も惜し
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "99"
+text_original: |-
+  人も惜し
+  人も恨めし
+  あぢきなく
+  世を思ふゆゑに
+  もの思ふ身は
+text_lang: ja
+text_romanization: |-
+  Hito mo oshi
+  Hito mo urameshi
+  Ajiki naku
+  Yo o omou yue ni
+  Mono omou mi wa
+text_translation: |-
+  For some men I grieve;
+  Some men are hateful to me;
+  And this wretched world
+  To me, with all my sadness,
+  Is a place of misery.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 99 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by [[person/emperor-go-toba|Emperor Gotoba]] (後鳥羽院御製, Gotoba In).[[source/jti-ogura-hyakunin-isshu|poem 99]]
+relationships:
+  - type: written_by
+    to: person/emperor-go-toba
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 99
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 99
+      accessed: 2026-11-06

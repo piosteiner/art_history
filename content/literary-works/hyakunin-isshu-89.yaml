@@ -1,0 +1,39 @@
+public_id: 116419
+name: Tama no o yo
+names:
+  - lang: ja
+    role: original
+    text: 玉の緒よ
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "89"
+text_original: |-
+  玉の緒よ
+  絶えなば絶えね
+  ながらへば
+  しのぶることの
+  よはりもぞする
+text_lang: ja
+text_romanization: |-
+  Tama no o yo
+  Taenaba taene
+  Nagaraeba
+  Shinoburu koto no
+  Yowari mo zo suru
+text_translation: |-
+  Like a string of gems
+  Grown weak, my life will break now;
+  For if I live on,
+  All I do to hide my love
+  May at last grow weak and fail.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 89 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Princess Shokushi (式子内親王, Shokushi Naishinnō).[[source/jti-ogura-hyakunin-isshu|poem 89]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 89
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 89
+      accessed: 2026-11-06

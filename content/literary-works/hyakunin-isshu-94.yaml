@@ -1,0 +1,39 @@
+public_id: 116424
+name: Miyoshino no
+names:
+  - lang: ja
+    role: original
+    text: みよし野の
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "94"
+text_original: |-
+  みよし野の
+  山の秋風
+  さよふけて
+  ふるさとさむく
+  衣うつなり
+text_lang: ja
+text_romanization: |-
+  Miyoshino no
+  Yama no akikaze
+  Sayo fukete
+  Furusato samuku
+  Koromo utsu nari
+text_translation: |-
+  From Mount Yoshino
+  Blows a chill, autumnal wind.
+  In the deepening night
+  The ancient village shivers:
+  Sounds of beating cloth I hear.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 94 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Masatsune (参議雅経, Sangi Masatsune).[[source/jti-ogura-hyakunin-isshu|poem 94]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 94
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 94
+      accessed: 2026-11-06

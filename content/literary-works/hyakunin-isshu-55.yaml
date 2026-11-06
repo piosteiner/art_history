@@ -1,0 +1,39 @@
+public_id: 116385
+name: Taki no oto wa
+names:
+  - lang: ja
+    role: original
+    text: 滝の音は
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "55"
+text_original: |-
+  滝の音は
+  絶えて久しく
+  なりぬれど
+  名こそ流れて
+  なほ聞えけれ
+text_lang: ja
+text_romanization: |-
+  Taki no oto wa
+  Taete hisashiku
+  Narinuredo
+  Na koso nagarete
+  Nao kikoe kere
+text_translation: |-
+  Though the waterfall
+  Ceased its flowing long ago,
+  And its sound is stilled,
+  Yet, in name it ever flows,
+  And in fame may yet be heard.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 55 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Fujiwara no Kinto (大納言公任, Dainagon Kintō).[[source/jti-ogura-hyakunin-isshu|poem 55]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 55
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 55
+      accessed: 2026-11-06

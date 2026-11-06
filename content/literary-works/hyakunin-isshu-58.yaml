@@ -1,0 +1,39 @@
+public_id: 116388
+name: Arimayama
+names:
+  - lang: ja
+    role: original
+    text: ありま山
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "58"
+text_original: |-
+  ありま山
+  猪名の笹原
+  風吹けば
+  いでそよ人を
+  忘れやはする
+text_lang: ja
+text_romanization: |-
+  Arimayama
+  Ina no sasawara
+  Kaze fukeba
+  Ide soyo hito o
+  Wasure ya wa suru
+text_translation: |-
+  As Mount Arima
+  Sends its rustling winds across
+  Ina's bamboo plains,
+  I will be just as steadfast
+  And never will forget you.
+text_translator: Clay MacCauley, 1917
+description_md: Poem 58 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by Daini no Sanmi, Lady Kataiko (大弐三位, Daini no Sanmi).[[source/jti-ogura-hyakunin-isshu|poem 58]]
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 58
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 58
+      accessed: 2026-11-06

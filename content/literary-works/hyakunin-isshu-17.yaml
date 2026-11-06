@@ -1,0 +1,42 @@
+public_id: 116347
+name: Chihayaburu
+names:
+  - lang: ja
+    role: original
+    text: 千早ぶる
+kind: waka
+parent: ogura-hyakunin-isshu
+part_number: "17"
+text_original: |-
+  千早ぶる
+  神代もきかず
+  龍田川
+  からくれないに
+  水くくるとは
+text_lang: ja
+text_romanization: |-
+  Chihayaburu
+  Kamiyo mo kikazu
+  Tatsuta-gawa
+  Kara kurenai ni
+  Mizu kukuru to wa
+text_translation: |-
+  Even when the gods
+  Held sway in the ancient days,
+  I have never heard
+  That water gleamed with autumn red
+  As it does in Tatta's stream
+text_translator: Clay MacCauley, 1917
+description_md: Poem 17 of the [[literature/ogura-hyakunin-isshu|Hyakunin Isshu]], by [[person/ariwara-no-narihira|Ariwara no Narihira]] (在原業平朝臣, Ariwara no Narihira Ason).[[source/jti-ogura-hyakunin-isshu|poem 17]]
+relationships:
+  - type: written_by
+    to: person/ariwara-no-narihira
+sources:
+  text:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 17
+      accessed: 2026-11-06
+  translation:
+    - source: jti-ogura-hyakunin-isshu
+      locator: poem 17
+      accessed: 2026-11-06
