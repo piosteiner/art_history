@@ -56,6 +56,12 @@ not if the reader has moved focus meanwhile); "Skip to content" is the first Tab
 motion setting there is no smooth scrolling or CSS animation and the network is shown laid out (MapLibre's flights
 follow the setting by themselves). `reducedMotion()` in `src/theme.ts`.
 
+## Questions and confirmations
+Never the browser's `confirm()`/`prompt()`/`alert()` — add-ons and browsers can block them, and they don't look like
+the site (owner 2026-11-06). Use `ask(text, { title, ok, danger })` / `askText(text, { label, … })` from
+`src/dialog.ts`: a modal `<dialog>` in the site's style; Escape or a click beside it cancels. Tests answer it with
+`answerDialogs(page)` (`tests/sets.spec.ts`).
+
 ## Map rule
 Presence (was physically there) and association (e.g. influenced by the culture of Japan) come from the API's
 `properties.layer`: presence = filled dots joined by the `route` line, association = hollow rings in another colour,
