@@ -1583,3 +1583,81 @@ button.danger { border-color: var(--accent); color: var(--accent); }
 /* the documentation's contents: where the reader is (owner 2026-11-06) */
 .doc-toc a.doc-toc-current { color: var(--text); font-weight: 600; text-decoration: none; box-shadow: inset 3px 0 0 var(--accent); padding-left: .45rem; margin-left: -.45rem; }
 .doc-toc a.doc-toc-within { color: var(--text); }
+
+/* A set's page in sections (owner 2026-11-06: "the elements need better dividing", the settings visible apart):
+   heading · about (description, notes, literature) · manage · plan + study · results · members/chat · entries */
+.sets-page { max-width: 64rem; }
+.sets-head h1 { margin-bottom: .3rem; }
+.sets-card { margin: 1.1rem 0; padding: 1rem 1.2rem; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.sets-card-title { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; margin: 0 0 .7rem; }
+.sets-label { padding: 0; margin: 0 0 .45rem; font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.sets-about .sets-description { max-width: 46rem; }
+.sets-about .sets-description > :first-child { margin-top: 0; }
+.sets-about .sets-description > :last-child { margin-bottom: 0; }
+.sets-about .prose section.footnotes { margin-top: 1rem; }
+.sets-about > p:last-child { margin-bottom: 0; }
+/* manage: the tools as a row of pills, an opened one's panel below them across the card */
+.sets-manage { background: color-mix(in srgb, var(--surface) 70%, var(--bg)); }
+.sets-manage .sets-tools { gap: .5rem; margin: 0; align-items: flex-start; }
+.sets-manage .sets-tools > details > summary, .sets-manage .sets-tools > button {
+  display: inline-flex; align-items: center; gap: .35rem; padding: .35rem .9rem; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--surface); color: var(--text); font-size: .92rem; text-decoration: none; cursor: pointer; list-style: none; }
+.sets-manage .sets-tools > details > summary::-webkit-details-marker { display: none; }
+.sets-manage .sets-tools > details > summary::before { content: '▸'; font-size: .75em; color: var(--muted); transition: transform .15s; }
+.sets-manage .sets-tools > details[open] > summary { border-color: var(--accent); background: var(--picked-bg); }
+.sets-manage .sets-tools > details[open] > summary::before { transform: rotate(90deg); }
+.sets-manage .sets-tools > details > summary:hover, .sets-manage .sets-tools > button:hover { border-color: var(--accent); }
+.sets-manage .sets-tools > .sets-leave { color: var(--accent); }
+.sets-manage .sets-tools > details[open] { flex-basis: 100%; order: 1; padding-top: .2rem; }
+.sets-manage .sets-tools > details[open] > summary { margin-bottom: .3rem; }
+.sets-manage .sets-edit-form, .sets-manage .sets-share-form { background: var(--surface); }
+p.sets-tools.sets-card { display: flex; }
+/* plan beside the study form on wide screens */
+.sets-learn { display: grid; gap: 1.1rem; margin: 1.1rem 0; }
+.sets-learn > .sets-card { margin: 0; }
+.sets-plan:empty { display: none; }
+@media (min-width: 52rem) {
+  .sets-learn.with-plan:not(:has(.sets-plan:empty)) { grid-template-columns: minmax(15rem, 1fr) 2fr; align-items: start; }
+}
+.sets-plan .sets-plan-today { padding-left: 1.1rem; margin: .3rem 0 .7rem; }
+.sets-plan .sets-exam-form { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; margin: .5rem 0; }
+.sets-plan .sets-exam-form label { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }
+.sets-plan > p:last-child { margin-bottom: 0; }
+/* the study form: kinds of quiz as tiles, which cards as pills, one clear button */
+.sets-study { display: block; }
+.sets-study fieldset { border: 0; padding: 0; margin: 0 0 1rem; min-width: 0; }
+.sets-modes { display: grid; grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr)); gap: .5rem; }
+.sets-modes > legend { grid-column: 1 / -1; }
+.sets-mode { display: flex; gap: .55rem; align-items: flex-start; padding: .55rem .7rem; border: 1px solid var(--line); border-radius: 10px; cursor: pointer; }
+.sets-mode > input { margin: .2rem 0 0; flex: none; }
+.sets-mode > span { display: grid; gap: .1rem; }
+.sets-mode:hover, .sets-pill:hover { border-color: var(--picked-line); }
+.sets-mode:has(input:checked), .sets-pill:has(input:checked) { border-color: var(--accent); background: var(--picked-bg); }
+.sets-cards-choice { display: flex; flex-wrap: wrap; gap: .4rem; }
+.sets-cards-choice > legend { width: 100%; }
+.sets-pill { display: inline-flex; gap: .35rem; align-items: center; padding: .3rem .8rem; border: 1px solid var(--line); border-radius: 999px; cursor: pointer; font-size: .92rem; }
+.sets-pill > input { margin: 0; }
+.sets-study .sets-study-go { font-size: 1.05rem; padding: .55rem 2rem; }
+/* results */
+.sets-stats { max-width: none; }
+.sets-stats > :last-child { margin-bottom: 0; }
+.sets-members.sets-card, .sets-proposals, .sets-chat { border-radius: 12px; }
+/* entries */
+.sets-entries { margin-top: 2rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+.sets-entries-title { font-family: var(--serif); font-size: 1.4rem; margin: 0 0 .6rem; }
+.sets-jump { display: flex; flex-wrap: wrap; gap: .35rem; margin-bottom: .4rem; }
+.sets-jump .chip { text-decoration: none; }
+.sets-group { scroll-margin-top: 4rem; }
+.sets-group h3 { margin: 1.3rem 0 .5rem; font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.sets-entry { padding: .45rem .5rem .45rem .55rem; border-radius: 10px; transition: border-color .15s; }
+.sets-entry:hover { border-color: var(--picked-line); }
+/* remove: hold for three seconds while the ring fills (holdToConfirm in views/sets.ts) */
+.sets-remove { position: relative; flex: none; display: inline-grid; place-items: center; width: 2rem; height: 2rem; padding: 0; border-radius: 50%;
+  color: var(--muted); text-decoration: none; font-size: 1.15rem; line-height: 1; touch-action: none; user-select: none; -webkit-user-select: none; }
+.sets-remove:hover, .sets-remove:focus-visible, .sets-remove.holding { color: var(--accent); background: var(--picked-bg); }
+.hold-ring { position: absolute; inset: 0; width: 100%; height: 100%; transform: rotate(-90deg); pointer-events: none; }
+.hold-ring circle { fill: none; stroke: var(--accent); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 100; stroke-dashoffset: 100; transition: stroke-dashoffset .2s ease-out; }
+.sets-remove.holding .hold-ring circle { stroke-dashoffset: 0; transition: stroke-dashoffset var(--hold-ms, 3s) linear; }
+.sets-remove.held .hold-ring circle { stroke-dashoffset: 0; }
+.sets-remove.hold-hint::after { content: 'Hold to remove'; position: absolute; right: 0; bottom: calc(100% + .3rem); white-space: nowrap; padding: .2rem .5rem;
+  border-radius: 6px; background: var(--text); color: var(--surface); font-size: .75rem; pointer-events: none; z-index: 5; }

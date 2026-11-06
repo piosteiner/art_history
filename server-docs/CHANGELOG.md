@@ -4,6 +4,11 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Site: a set's page in sections, removing an entry by holding the ×
+- **What:** `frontend/src/views/sets.ts` + `style.css`: the set page in cards (about, "Manage this set" with the tools as pills, plan beside the study form with quiz kinds as tiles, results, entries with jump chips); the × of an entry removes it only after a 3-second hold while a ring fills (`holdToConfirm`, keyboard Enter/Space held too); e2e step in `tests/sets.spec.ts`. Site changelog draft: two bullets.
+- **Why:** owner 2026-11-06 — the elements weren't divided, the settings hard to see, removing too easy.
+- **Revert:** `git revert` the commit; Pages redeploys.
+
 ### Content: the lecture source marked as unpublished
 - **What:** source `thomsen-2019-war-and-peace` renamed "(lecture, unpublished; slides, image lists and vocabulary lists)", reliability `other`, note that it is an unpublished course and institutions are cited beside it.
 - **Why:** owner keeps the lecture citations (the course's view stays traceable); readers should see it is not a published work, and institutional sources rank above it.

@@ -242,17 +242,47 @@ const itemPicture = (i: StudyItem) => (i.image
   ? html`<img class="sets-thumb${i.own ? ' own-image' : ''}" src="${i.own ? i.image : thumb(i.image, 120)}" alt="" loading="lazy"${i.own ? '' : html` crossorigin="anonymous"`}>`
   : html`<span class="sets-thumb sets-thumb-empty" aria-hidden="true"></span>`);
 
+export const HOLD_MS = 3000;
+const HOLD_RING = html`<svg class="hold-ring" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="16" pathLength="100"></circle></svg>`;
+/** Press and hold (pointer, Enter or Space) for `ms` to confirm: the button's ring fills meanwhile; let go early and it
+ *  empties again and `early` says how it works. */
+export function holdToConfirm(btn: HTMLElement, ms: number, done: () => void, early: () => void) {
+  btn.style.setProperty('--hold-ms', `${String(ms)}ms`);
+  let timer = 0;
+  let started = 0;
+  const start = () => {
+    if (timer) return;
+    started = Date.now();
+    btn.classList.add('holding');
+    timer = window.setTimeout(() => { timer = 0; btn.classList.remove('holding'); btn.classList.add('held'); done(); }, ms);
+  };
+  const stop = () => {
+    if (!timer) return;
+    clearTimeout(timer); timer = 0;
+    btn.classList.remove('holding');
+    if (Date.now() - started < ms) early();
+  };
+  btn.addEventListener('pointerdown', (e) => { if (e.button === 0) { btn.setPointerCapture(e.pointerId); start(); } });
+  for (const ev of ['pointerup', 'pointercancel', 'lostpointercapture'] as const) btn.addEventListener(ev, stop);
+  btn.addEventListener('keydown', (e) => { if ((e.key === 'Enter' || e.key === ' ') && !e.repeat) { e.preventDefault(); start(); } });
+  btn.addEventListener('keyup', (e) => { if (e.key === 'Enter' || e.key === ' ') stop(); });
+  btn.addEventListener('blur', stop);
+  btn.addEventListener('contextmenu', (e) => e.preventDefault());   // a long touch opens no menu
+  btn.addEventListener('click', (e) => e.preventDefault());
+}
+
 function studyForm(ref: SetRef, count: number, learner: boolean) {
   if (!count) return html`<p class="muted">Nothing in it yet — add entries with <b>+ Set</b> on their pages.</p>`;
   const modes = MODES.filter((m) => m !== 'choice' || count >= CHOICE_MIN);
-  return html`<form class="sets-study" action="${studyHref(ref)}">
-    <span>Study the ${plural(count, 'entry', 'entries')}:</span>
-    ${modes.map((m, i) => html`<label><input type="radio" name="mode" value="${m}"${i ? '' : ' checked'}> ${MODE_NAME[m]} <span class="muted small">(${MODE_HELP[m]})</span></label>`)}
-    <fieldset class="sets-cards-choice"><legend class="small">Which cards</legend>
-      <label><input type="radio" name="cards" value="all" checked> All</label>
-      ${learner ? html`<label><input type="radio" name="cards" value="today"> Today's <span class="muted small sets-today-count"></span></label>` : ''}
-      <label><input type="radio" name="cards" value="weak"> Leave out those you know well</label></fieldset>
-    <button type="submit">Study</button></form>`;
+  return html`<form class="sets-study sets-card" action="${studyHref(ref)}">
+    <h2 class="sets-card-title">Study the ${plural(count, 'entry', 'entries')}</h2>
+    <fieldset class="sets-modes"><legend class="sets-label">Kind of quiz</legend>
+    ${modes.map((m, i) => html`<label class="sets-mode"><input type="radio" name="mode" value="${m}"${i ? '' : ' checked'}><span><b>${MODE_NAME[m]}</b><span class="muted small">${MODE_HELP[m]}</span></span></label>`)}</fieldset>
+    <fieldset class="sets-cards-choice"><legend class="sets-label">Which cards</legend>
+      <label class="sets-pill"><input type="radio" name="cards" value="all" checked> All</label>
+      ${learner ? html`<label class="sets-pill"><input type="radio" name="cards" value="today"> Today's <span class="muted small sets-today-count"></span></label>` : ''}
+      <label class="sets-pill"><input type="radio" name="cards" value="weak"> Leave out those you know well</label></fieldset>
+    <button type="submit" class="sets-study-go">Study</button></form>`;
 }
 
 /** The exam date and the day's plan (logged in): set, changed, removed; per kind of card the cards due today. */
@@ -263,7 +293,7 @@ function planBox(box: HTMLElement, ref: SetRef, plan: StudyPlan, onChange: (p: S
   const line = (label: string, d?: { due: number; new: number; new_left_today: number }) => (d
     ? html`<li><b>${label}</b>: ${plural(d.due, 'card')} to review${d.new_left_today ? html` + ${String(d.new_left_today)} new` : ''}${d.new ? html` <span class="muted small">(${String(d.new)} not asked yet)</span>` : ''}</li>` : '');
   const exam = plan.exam_on && plan.days_left !== null;
-  render(box, html`<h2>${exam ? html`Exam ${examIn(plan.days_left!)}` : 'Today'}</h2>
+  render(box, html`<h2 class="sets-card-title">${exam ? html`Exam ${examIn(plan.days_left!)}` : 'Today'}</h2>
     ${exam ? html`<p class="muted small">${longDay(plan.exam_on!)} — every card comes round again before it; the new ones are spread over the days until then.</p>` : ''}
     <ul class="sets-plan-today">${line('Name it', f)}${line('Describe it', r)}</ul>
     ${todayOf(f) + todayOf(r) === 0 ? html`<p class="small">Nothing due today${exam ? '' : ' — or set an exam date and the plan fits it'}. </p>` : ''}
@@ -299,14 +329,15 @@ function one(main: HTMLElement, ref: SetRef, note = '') {
     const crumbs = own ? html`<a href="/sets">Your study sets</a>` : html`<a href="/sets/shared">Shared sets</a>`;
     const hasMembers = Boolean(set.members?.length);
     render(main, html`<section class="page sets-page">
-      <p class="crumbs">${crumbs} / ${set.name}</p>
+      <header class="sets-head"><p class="crumbs">${crumbs} / ${set.name}</p>
       <h1>${set.name}${own ? visBadge(set) : ''}${own ? together(set) : ''}${own && locked ? html` <span class="tag" title="Its members read and study it but change nothing">locked</span>` : ''}</h1>
-      ${meta(set, !owner)}
+      ${meta(set, !owner)}</header>
       ${own && (!owner || hasMembers) ? yourPart(set) : ''}
       ${editor && locked ? html`<p class="flash">The owner has locked this set: you can study it, but not change or propose anything until they unlock it.</p>` : ''}
-      ${set.description_html ? html`<div class="prose sets-description">${trusted(set.description_html)}</div>` : ''}
-      ${own && set.copied_from ? html`<p class="muted small">A copy of <a href="/sets/s/${set.copied_from.code}">${set.copied_from.name}</a>${set.copied_from.creator ? ` by ${set.copied_from.creator}` : ''}.</p>` : ''}
-      ${own ? html`<div class="sets-tools">
+      ${set.description_html || (own && set.copied_from) ? html`<section class="sets-about sets-card" aria-label="About this set">
+        ${set.description_html ? html`<div class="prose sets-description">${trusted(set.description_html)}</div>` : ''}
+        ${own && set.copied_from ? html`<p class="muted small">A copy of <a href="/sets/s/${set.copied_from.code}">${set.copied_from.name}</a>${set.copied_from.creator ? ` by ${set.copied_from.creator}` : ''}.</p>` : ''}</section>` : ''}
+      ${own ? html`<section class="sets-manage sets-card" aria-labelledby="sets-manage-title"><h2 class="sets-card-title" id="sets-manage-title">${viewer ? 'This set' : 'Manage this set'}</h2><div class="sets-tools">
         ${viewer ? '' : html`<details class="sets-edit"${editor && locked ? ' hidden' : ''}><summary class="link-button">${directly ? 'Edit name, topic, description' : 'Propose a new name, topic, description'}</summary>
           <form class="sets-edit-form"><p class="sets-conflict flash" hidden></p>
             ${directly ? '' : html`<p class="small muted">${set.rights === 'approval' ? 'What you change here is proposed to the owner; it applies once they accept it.'
@@ -323,26 +354,29 @@ function one(main: HTMLElement, ref: SetRef, note = '') {
         ${owner ? html`<button type="button" class="link-button sets-lock" title="${locked ? 'Its members may change and propose again' : 'Its members can still study it, but change and propose nothing'}">${locked ? 'Unlock' : 'Lock'}</button>` : ''}
         ${viewer ? '' : html`<details class="sets-history"><summary class="link-button">History</summary><div class="sets-history-body"></div></details>`}
         ${viewer ? '' : html`<button type="button" class="link-button sets-copy-own" title="A set of your own with the same entries — yours to share and to invite to">Make my own copy</button>`}
-        ${owner ? '' : html`<button type="button" class="link-button sets-leave">Leave this set</button>`}</div>`
-        : html`<p class="sets-tools">${me ? html`<button type="button" class="sets-copy">Save a copy to your sets</button>`
+        ${owner ? '' : html`<button type="button" class="link-button sets-leave">Leave this set</button>`}</div></section>`
+        : html`<p class="sets-tools sets-card">${me ? html`<button type="button" class="sets-copy">Save a copy to your sets</button>`
           : html`<span class="muted small">${loginLink() ?? 'Log in'} to keep track of what you know and to save a copy.</span>`}</p>`}
-      ${me ? html`<section class="sets-plan" aria-label="Your plan"></section>` : ''}
-      ${studyForm(ref, items.length, Boolean(me))}
       <p class="sets-msg small" role="status"></p>
-      ${me ? html`<section class="sets-stats" aria-label="Your results"></section>` : ''}
+      <div class="sets-learn${me && items.length ? ' with-plan' : ''}">
+        ${me ? html`<section class="sets-plan sets-card" aria-label="Your plan"></section>` : ''}
+        ${studyForm(ref, items.length, Boolean(me))}</div>
+      ${me ? html`<section class="sets-stats sets-card" aria-label="Your results"></section>` : ''}
       ${own && (proposals.length || decided.length) ? html`<section class="sets-proposals" id="sets-proposals"></section>` : ''}
-      ${own && hasMembers ? html`<section class="sets-members" id="sets-members" aria-label="Members"></section>` : ''}
+      ${own && hasMembers ? html`<section class="sets-members sets-card" id="sets-members" aria-label="Members"></section>` : ''}
       ${own && set.chat_allowed && (set.chat_on || owner) && (hasMembers || set.chat_on) ? html`<section class="sets-chat" id="sets-chat" aria-label="The set's chat"></section>` : ''}
-      ${[...byType.entries()].map(([type, list]) => html`<section class="sets-group"><h2>${PLURAL_LABEL[PLURAL[type as StudyItem['type']]]} <span class="muted">${String(list.length)}</span></h2>
+      ${items.length ? html`<section class="sets-entries" aria-labelledby="sets-entries-title"><h2 id="sets-entries-title" class="sets-entries-title">Entries <span class="muted">${String(items.length)}</span></h2>
+      ${byType.size > 1 ? html`<nav class="sets-jump" aria-label="Kinds of entries">${[...byType.entries()].map(([type, list]) => html`<a class="chip" href="#sets-${type}">${PLURAL_LABEL[PLURAL[type as StudyItem['type']]]} <span class="muted">${String(list.length)}</span></a>`)}</nav>` : ''}
+      ${[...byType.entries()].map(([type, list]) => html`<section class="sets-group" id="sets-${type}"><h3>${PLURAL_LABEL[PLURAL[type as StudyItem['type']]]} <span class="muted">${String(list.length)}</span></h3>
         <ul class="sets-items">${list.map((i) => {
           const p = pending.get(`${i.type}/${i.slug}`);
           return html`<li class="sets-entry">
           <a class="sets-entry-link" href="${href(PLURAL[i.type], i.slug)}">${itemPicture(i)}<span><span class="sets-entry-name">${i.name}</span>
             ${i.subtitle ? html`<span class="muted small">${i.subtitle}</span>` : ''}${i.added_by ? html`<span class="muted small sets-added-by">added by ${i.added_by}</span>` : ''}</span></a>
           ${!canChange ? '' : p ? html`<a class="muted small" href="#sets-proposals">removal proposed</a>` : directly
-            ? html`<button type="button" class="link-button sets-remove" data-type="${i.type}" data-slug="${i.slug}" title="Remove from this set" aria-label="Remove ${i.name} from this set">×</button>`
+            ? html`<button type="button" class="link-button sets-remove" data-type="${i.type}" data-slug="${i.slug}" title="Hold to remove from this set" aria-label="Remove ${i.name} from this set (hold for 3 seconds)">${HOLD_RING}<span aria-hidden="true">×</span></button>`
             : html`<button type="button" class="link-button sets-propose small" data-type="${i.type}" data-slug="${i.slug}" data-name="${i.name}" title="${set.rights === 'approval' ? 'Propose its removal — the owner decides' : 'Propose its removal — it is put to the vote'}">Propose removal</button>`}</li>`;
-        })}</ul></section>`)}
+        })}</ul></section>`)}</section>` : ''}
     </section>`);
     const msg = main.querySelector<HTMLElement>('.sets-msg')!;
     const missing = Number(new URLSearchParams(location.search).get('missing') || 0);
@@ -429,9 +463,10 @@ function one(main: HTMLElement, ref: SetRef, note = '') {
       if (reason === null) return;
       removeFromSet(id, b.dataset.type as StudyItem['type'], b.dataset.slug!, reason).then((r) => after(r, 'Removing it')).catch((err: Error) => { msg.textContent = err.message; });
     }));
-    main.querySelectorAll<HTMLButtonElement>('.sets-remove').forEach((b) => b.addEventListener('click', () => {
+    // removing takes a hold of three seconds while the ring fills (owner 2026-11-06: a click removed too easily)
+    main.querySelectorAll<HTMLButtonElement>('.sets-remove').forEach((b) => holdToConfirm(b, HOLD_MS, () => {
       removeFromSet(id, b.dataset.type as StudyItem['type'], b.dataset.slug!).then(reload).catch((err: Error) => { msg.textContent = err.message; });
-    }));
+    }, () => { b.classList.add('hold-hint'); setTimeout(() => b.classList.remove('hold-hint'), 2500); }));
   }).catch(() => failed(main, 'This set could not be loaded.'));
 }
 
@@ -892,7 +927,7 @@ function results(s: StudyStats, count: number): Html {
       <span class="muted small">${String(row[4] + row[5])} of ${String(count)} known well</span></div>`;
   };
   const mins = (sec: number) => (sec >= 90 ? `${String(Math.round(sec / 60))} min` : `${String(sec)} s`);
-  return html`<h2>Your results</h2>
+  return html`<h2 class="sets-card-title">Your results</h2>
     ${modes.length ? html`<div class="sets-results-wrap"><table class="sets-results"><thead><tr><th>Quiz</th><th>Rounds</th><th>Known</th><th>Best round</th><th>Last ten rounds</th><th>Time</th><th>Last</th></tr></thead><tbody>
       ${modes.map((m) => { const r = s.modes[m]!; return html`<tr><th scope="row">${MODE_NAME[m]}</th><td>${String(r.rounds)}</td>
         <td>${String(Math.round((100 * r.known) / r.answered))} %</td><td>${r.best === null ? '—' : `${String(r.best)} %`}</td>

@@ -179,6 +179,27 @@ test('study sets: "+ Set" on an entry creates a set and fills it; the list and t
   await page.locator('.sets-name', { hasText: 'Exam: Japan' }).click();
   await expect(page.locator('main h1')).toHaveText('Exam: Japan');
   await expect(page.locator('.sets-entry')).toHaveCount(2);
+  await expect(page.locator('.sets-manage h2')).toHaveText('Manage this set');
+  await expect(page.locator('.sets-entries-title')).toContainText('Entries 2');
+
+  // removing an entry takes a hold of three seconds: a click or a short press only shows how
+  const remove = page.locator('.sets-entry', { hasText: 'nishiki-e' }).locator('.sets-remove');
+  await remove.click();
+  await expect(remove).toHaveClass(/hold-hint/);
+  await remove.hover();
+  await page.mouse.down();
+  await page.waitForTimeout(1000);
+  await page.mouse.up();
+  await page.waitForTimeout(2500);
+  expect(account.sets[0].items).toHaveLength(2);
+  await remove.focus();                                                     // the keyboard: Enter held down
+  await page.keyboard.down('Enter');
+  await expect(page.locator('.sets-entry')).toHaveCount(1, { timeout: 6000 });
+  await page.keyboard.up('Enter');
+  expect(account.sets[0].items.map((i) => i.slug)).toEqual(['the-great-wave-off-kanagawa']);
+  account.sets[0].items.push({ type: 'term', slug: 'nishiki-e', name: 'nishiki-e' });   // back for the cards below
+  await page.reload();
+  await expect(page.locator('.sets-entry')).toHaveCount(2);
 
   // Name it: the picture first (the weakest box first — the artwork is new), then the term's definition with its name blanked
   await page.click('.sets-study button[type=submit]');
