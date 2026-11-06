@@ -1608,8 +1608,11 @@ button.danger { border-color: var(--accent); color: var(--accent); }
 .sets-manage .sets-tools > details[open] > summary::before { transform: rotate(90deg); }
 .sets-manage .sets-tools > details > summary:hover, .sets-manage .sets-tools > button:hover { border-color: var(--accent); }
 .sets-manage .sets-tools > .sets-leave { color: var(--accent); }
-.sets-manage .sets-tools > details[open] { flex-basis: 100%; order: 1; padding-top: .2rem; }
-.sets-manage .sets-tools > details[open] > summary { margin-bottom: .3rem; }
+/* the open tool's button stays in its place in the row (only coloured); its panel opens below the whole row
+   (owner 2026-11-06) — the open <details> lends its two parts to the row, the panel goes last at full width */
+.sets-manage .sets-tools > details[open] { display: contents; }
+.sets-manage .sets-tools > details[open] > :not(summary) { order: 1; flex: 0 0 100%; min-width: 0; margin-top: .3rem; }
+.sets-manage .sets-tools > details[open]::details-content { display: contents; }   /* Chrome wraps the panel in this box */
 .sets-manage .sets-edit-form, .sets-manage .sets-share-form { background: var(--surface); }
 p.sets-tools.sets-card { display: flex; }
 /* plan beside the study form on wide screens */

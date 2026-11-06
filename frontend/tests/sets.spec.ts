@@ -451,6 +451,16 @@ test('members: the owner\'s panel — rights changed, a link with rights, a memb
   // one panel at a time: opening Sharing closes Members
   await panel.locator('summary').first().click();
   await expect(membersPanel).not.toHaveAttribute('open');
+  // the open one's button stays in its place in the row; its panel opens below the whole row
+  const tops = await page.locator('.sets-manage .sets-tools > details > summary, .sets-manage .sets-tools > button')
+    .evaluateAll((els) => els.filter((e) => (e as HTMLElement).offsetParent).map((e) => Math.round(e.getBoundingClientRect().top)));
+  expect(new Set(tops).size).toBe(1);
+  const below = await page.locator('.sets-manage .sets-tools').evaluate((row) => {
+    const sum = row.querySelector('#sets-sharing > summary')!.getBoundingClientRect();
+    const body = row.querySelector('#sets-sharing > .sets-share-body')!.getBoundingClientRect();
+    return body.top >= sum.bottom && body.width >= row.getBoundingClientRect().width - 2;
+  });
+  expect(below).toBe(true);
   // hours and the veto only for binding votes — with advisory ones the owner decides anyway
   await expect(panel.locator('input[name=owner_veto]')).toBeHidden();
   await panel.locator('.sets-votes-form input[value=binding]').check();
