@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Site: list filters as tick boxes
+- **What:** owner 2026-11-06 ("select all, clear all or tick one or multiple, similar to the regions in the quiz"). The
+  filter chips of the glossary (category), bibliography (reading status), events (kind) and artworks (1933–1945
+  category) — one piece of `frontend/src/views/list.ts` — take several values: "All", "None", and ☐/☑ chips; from All
+  the first click keeps that value alone, every value ticked is All again; the address keeps them as
+  `?category=religion,politics` (one value as before). Test "list filter: tick one or several …".
+- **Revert:** `git revert`.
+
 ### Content: two works of the Keio Art Collection (script)
 - **What:** owner 2026-11-06. `taikan-mount-fuji-keio` (Keio Object Hub 5982, KAC-2020-0090, colour on paper,
   59.5 × 94.2 cm, undated; kept by `keio-yochisha-elementary-school`, new from Q11495151 by `from-wikidata.js`) and

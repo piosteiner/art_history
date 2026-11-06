@@ -1284,6 +1284,9 @@ span.quiz-tile { cursor: default; }
 .legend .dot-num { font-size: 8px; line-height: 12px; text-align: center; color: #fff; }
 .legend .dot-num::before { content: '1'; }
 
+/* list filters as tick boxes (owner 2026-11-06): All / None, then one or several values (views/list.ts) */
+.category-filter button.tick::before { content: '☐ '; color: var(--muted); }
+.category-filter button.tick[aria-pressed="true"]::before { content: '☑ '; color: inherit; }
 /* quiz regions as tick boxes (owner 2026-11-04): a box before each region, ticked when its works play */
 .quiz-regions .chip-tick::before { content: '☐ '; }
 .quiz-regions .chip-tick[aria-pressed="true"]::before { content: '☑ '; }

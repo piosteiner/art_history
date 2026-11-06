@@ -213,7 +213,7 @@ export function list(main: HTMLElement, plural: Plural) {
   let corrected: string | null = null;
   let suggested: string | null = null;
   let literal = '';
-  // one value of a field at a time: glossary by category (`?category=technique`), bibliography by reading status
+  // values of one field as tick boxes: glossary by category (`?category=technique`), bibliography by reading status
   // (`?status=read`), events by kind (`?kind=trial`), artworks by their 1933–1945 provenance category (`?provenance=D`,
   // shown once any work is assessed); "All" shows everything
   const FILTER = ({ glossary: { field: 'category', param: 'category' }, bibliography: { field: 'reading_status', param: 'status' },
@@ -226,7 +226,12 @@ export function list(main: HTMLElement, plural: Plural) {
   // owner 2026-11-04) is left out of the list and its counts; a search still finds it
   const filed = (e: Entry<AnyItem>) => plural === 'glossary' && !!(e.item as TermItem).parent?.collection;
   const listed = () => all.filter((e) => !filed(e));
-  let category = FILTER ? new URLSearchParams(location.search).get(FILTER.param) : null;
+  // several values at once as tick boxes (owner 2026-11-06, like the quiz's regions): `null` = all, [] = none ticked,
+  // else the ticked values (`?category=religion,politics`); from "All" the first click keeps that value alone
+  const fromUrl = FILTER ? new URLSearchParams(location.search).get(FILTER.param) : null;
+  let chosen: string[] | null = fromUrl ? fromUrl.split(',').map((s) => s.trim()).filter(Boolean) : null;
+  if (chosen && !chosen.length) chosen = null;
+  const inChosen = (e: Entry<AnyItem>) => chosen === null || fieldsOf(e).some((c) => chosen!.includes(c));
   // artworks: the parts of one whole (`?part_of=<slug>`, linked from the series page), in their order
   const partOf = plural === 'artworks' ? new URLSearchParams(location.search).get('part_of') : null;
   // artworks: what one museum holds and held (`?institution=<slug>`), optionally of one artist (`&artist=<slug>`) —
@@ -252,7 +257,7 @@ export function list(main: HTMLElement, plural: Plural) {
   const openQuestion = (e: Entry<AnyItem>) => !!(e.item as { provenance_coverage?: { gap_1933_1945: boolean } | null }).provenance_coverage?.gap_1933_1945;
   const urlNow = () => {
     const q = new URLSearchParams();
-    if (category && FILTER) q.set(FILTER.param, category);
+    if (chosen?.length && FILTER) q.set(FILTER.param, chosen.join(','));
     if (gapOnly) q.set('provenance_gap', '1933-1945');
     if (heldBy) q.set('institution', heldBy);
     if (byArtist) q.set('artist', byArtist);
@@ -277,18 +282,32 @@ export function list(main: HTMLElement, plural: Plural) {
     const counts = new Map<string, number>();
     const shown = listed();
     for (const e of shown) for (const c of fieldsOf(e)) counts.set(c, (counts.get(c) ?? 0) + 1);
-    if (category && !counts.has(category)) category = null;
-    categoriesEl.hidden = counts.size < 2 && !category;
+    if (chosen?.length) {
+      // values no entry has (an old address) are dropped; every value ticked is "All"
+      const kept = chosen.filter((c) => counts.has(c));
+      chosen = !kept.length || kept.length === counts.size ? null : kept;
+    }
+    categoriesEl.hidden = counts.size < 2 && !chosen;
     const collections = all.filter((e) => (e.item as TermItem).collects);
     const filedCount = all.length - shown.length;
-    render(categoriesEl, html`${plural === 'artworks' ? html`<span class="category-filter-label" title="Categories of the Swiss Federal Office of Culture">Provenance 1933–1945</span>` : ''}<button type="button" data-category="" class="${category ? '' : 'on'}" aria-pressed="${String(!category)}">All <span class="muted">${String(shown.length)}</span></button>
-      ${[...counts].sort(([a], [b]) => a.localeCompare(b)).map(([c, n]) => html`<button type="button" data-category="${c}" class="${c === category ? 'on' : ''}" aria-pressed="${String(c === category)}">${labelOf(c)} <span class="muted">${String(n)}</span></button>`)}
+    const ticked = (c: string) => chosen === null || chosen.includes(c);
+    render(categoriesEl, html`${plural === 'artworks' ? html`<span class="category-filter-label" title="Categories of the Swiss Federal Office of Culture">Provenance 1933–1945</span>` : ''}<button type="button" data-category="" class="${chosen ? '' : 'on'}" aria-pressed="${String(!chosen)}" title="Select all">All <span class="muted">${String(shown.length)}</span></button>
+      <button type="button" data-none class="${chosen && !chosen.length ? 'on' : ''}" aria-pressed="${String(!!chosen && !chosen.length)}" title="Clear all, then tick the ones you want">None</button>
+      ${[...counts].sort(([a], [b]) => a.localeCompare(b)).map(([c, n]) => html`<button type="button" data-category="${c}" class="tick${chosen?.includes(c) ? ' on' : ''}" aria-pressed="${String(ticked(c))}">${labelOf(c)} <span class="muted">${String(n)}</span></button>`)}
       ${filedCount ? html`<p class="muted small filed-note">${String(filedCount)} era names are filed under ${collections.map((c, i) => html`${i ? (i === collections.length - 1 ? ' and ' : ', ') : ''}<a href="${href('term', c.slug)}">${c.name}</a>`)} — search finds them by name.</p>` : ''}`);
   }
   categoriesEl.addEventListener('click', (ev) => {
-    const b = (ev.target as Element).closest<HTMLButtonElement>('button[data-category]');
+    const b = (ev.target as Element).closest<HTMLButtonElement>('button[data-category], button[data-none]');
     if (!b) return;
-    category = b.dataset.category || null;
+    const c = b.dataset.category;
+    if (b.hasAttribute('data-none')) chosen = [];          // clear all
+    else if (!c) chosen = null;                             // select all
+    else if (chosen === null) chosen = [c];                 // from "All": that one alone
+    else chosen = chosen.includes(c) ? chosen.filter((x) => x !== c) : [...chosen, c];
+    if (chosen?.length) {
+      const values = new Set(listed().flatMap(fieldsOf));
+      if (chosen.length >= values.size && [...values].every((v) => chosen!.includes(v))) chosen = null;   // all ticked = All
+    }
     replaceUrl(urlNow());
     drawCategories();
     draw();
@@ -320,7 +339,7 @@ export function list(main: HTMLElement, plural: Plural) {
     const inWhole = partOf ? all.filter((e) => (e.item as { part_of?: { slug: string } | null }).part_of?.slug === partOf)
       : plural === 'literary-works' && !query_ ? all.filter((e) => !(e.item as LiteratureItem).part_of)
         : plural === 'glossary' && !query_ ? listed() : all;
-    const pool = (category ? inWhole.filter((e) => fieldsOf(e).includes(category!)) : inWhole).filter((e) => !gapOnly || openQuestion(e))
+    const pool = inWhole.filter(inChosen).filter((e) => !gapOnly || openQuestion(e))
       .filter((e) => !heldBy || inHolding(e));
     const hits = query_ ? pool.filter((e) => matches(e, parsed)) : pool;
     let last = '';
@@ -359,7 +378,7 @@ export function list(main: HTMLElement, plural: Plural) {
         return html`${head}${entryHtml(e)}`;
       })}
       ${similar.length ? html`<li class="cards-heading cards-heading-similar">Similar names</li>${similar.map(one)}` : ''}
-      ${!hits.length && !similar.length ? html`<li class="muted">${query_ ? `Nothing found for “${query_}”.` : 'No entries yet.'}</li>` : ''}`);
+      ${!hits.length && !similar.length ? html`<li class="muted">${query_ ? `Nothing found for “${query_}”.` : chosen && !chosen.length ? 'Nothing ticked — tick one or more above, or “All”.' : 'No entries yet.'}</li>` : ''}`);
     const total = pool.length;
     render(count, query_
       ? html`${hits.length} of ${total} match${similar.length ? `, ${similar.length} similar ${similar.length === 1 ? 'name' : 'names'}` : ''}${

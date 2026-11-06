@@ -3618,6 +3618,31 @@ test('glossary: a term also in other categories is counted and listed there, its
   await expect(page.locator('dt:has-text("Category") + dd')).toContainText('religion · also in politics');
 });
 
+// Filters as tick boxes (owner 2026-11-06): All, None, one or several; every one ticked is All again
+test('list filter: tick one or several categories, clear all, select all', async ({ page }) => {
+  const item = (slug: string, name: string, category: string) => ({ slug, name, category, also_in: [], definition: `${name}.`, image_url: null, names: [], sort_key: name, search_text: '' });
+  await page.route(/\/v1\/glossary\?/, (r) => r.fulfill({ json: { data: [item('zen', 'Zen', 'religion'), item('bakufu', 'bakufu', 'politics'), item('kana', 'kana', 'language')], total: 3, limit: 500, offset: 0 } }));
+  await page.goto('/glossary');
+  const rows = page.locator('#items .row');
+  await expect(rows).toHaveCount(3);
+  await page.locator('#categories button[data-category="religion"]').click();          // from All: religion alone
+  await expect(page).toHaveURL(/category=religion$/);
+  await expect(rows).toHaveCount(1);
+  await page.locator('#categories button[data-category="politics"]').click();          // and politics
+  await expect(page).toHaveURL(/category=religion%2Cpolitics$/);
+  await expect(rows).toHaveCount(2);
+  await expect(page.locator('#categories button[data-category="language"]')).toHaveAttribute('aria-pressed', 'false');
+  await page.locator('#categories button[data-none]').click();                           // clear all
+  await expect(rows).toHaveCount(0);
+  await expect(page.locator('#items')).toContainText('Nothing ticked');
+  await expect(page).toHaveURL(/\/glossary$/);
+  for (const c of ['religion', 'politics', 'language']) await page.locator(`#categories button[data-category="${c}"]`).click();
+  await expect(rows).toHaveCount(3);                                                     // all ticked = All
+  await expect(page.locator('#categories button[data-category=""]')).toHaveAttribute('aria-pressed', 'true');
+  await page.goto('/glossary?category=politics,language');                               // an address with two
+  await expect(rows).toHaveCount(2);
+});
+
 // A literary work's text (API 237): original with furigana line by line, romanization, translation and whose
 test('a literary work\'s text: the original with furigana, the romanization and an own translation, line by line', async ({ page }) => {
   await page.route(/\/v1\/literary-works\/test-frog$/, (r) => r.fulfill({ json: {
