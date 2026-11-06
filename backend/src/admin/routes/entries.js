@@ -502,7 +502,9 @@ function geoView(kind, v, point) {
 // Display of one field's value on the view page.
 // links: "type/slug" → name, for [[links]] in Markdown (loaded by the page, linkNames)
 // nameMark(i, text): the sources marker of the i-th other name (152), on the view page
-function showValue(t, key, kind, doc, links = new Map(), nameMark = () => '') {
+// refNames: "type/slug" → name (allEntities) — reference fields show the entry's name, its slug in the tooltip (owner 2026-11-06)
+function showValue(t, key, kind, doc, links = new Map(), nameMark = () => '', refNames = new Map()) {
+  const refLink = (type, slug) => html`<a href="/${BY_TYPE[type].folder}/${slug}" title="${slug}">${refNames.get(`${type}/${slug}`) || slug}</a>`;
   const v = doc[key];
   if (kind === 'md') return v ? html`<div class="md">${raw(renderMarkdown(v, { names: links }))}</div>` : null;
   if (kind === 'date' || kind === 'period') {
@@ -526,9 +528,9 @@ function showValue(t, key, kind, doc, links = new Map(), nameMark = () => '') {
   if (kind === 'point') return html`${v[1]}, ${v[0]} <a href="https://www.openstreetmap.org/?mlat=${v[1]}&mlon=${v[0]}#map=12/${v[1]}/${v[0]}" rel="noopener" target="_blank">map ↗</a>`;
   if (kind === 'area' || kind === 'line') return geoView(kind, v, doc.location);
   if (kind === 'json') return html`<pre>${JSON.stringify(v, null, 2)}</pre>`;
-  if (kind === 'parent') return html`<a href="/${t.folder}/${v}">${v}</a>`;
-  if (kind.startsWith('ref:')) return html`<a href="/${BY_TYPE[kind.slice(4)].folder}/${v}">${v}</a>`;
-  if (kind.startsWith('life:')) return html`<a href="/places/${v}">${v}</a>`;   // the relationship born_in / died_in
+  if (kind === 'parent') return refLink(t.type, v);
+  if (kind.startsWith('ref:')) return refLink(kind.slice(4), v);
+  if (kind.startsWith('life:')) return refLink('place', v);   // the relationship born_in / died_in
   if (/_url$/.test(key)) return html`<a href="${v}" rel="noopener" target="_blank">${v}</a>`;
   return v;
 }
@@ -556,6 +558,26 @@ function creatorsRow(e, main, coCreators, marker = '') {
         <div class="actions"><button>Add</button></div>
       </form></details></dd>`;
 }
+
+// The queue's bar and the "Data quality" box, in a slot the page refreshes after a change made without reloading it (a
+// source added, removed or confirmed in a dialog — editor/cites.js): the findings follow a moment later, computed by
+// the derived-data worker; GET …/quality-box waits for that and answers the slot anew (owner 2026-11-06).
+function qaSlot(t, e, queue, qa, queued, { barOnly = false } = {}) {
+  const q = typeof queue === 'string' && queue ? queue : null;
+  const view = `/${t.folder}/${e.slug}${q ? `?queue=${encodeURIComponent(q)}` : ''}`;
+  const url = `/${t.folder}/${e.slug}/quality-box?${new URLSearchParams({ ...(q ? { queue: q } : {}), ...(barOnly ? { bar: 'only' } : {}) })}`;
+  return html`<div class="qa-slot" data-qa-url="${url}">${q ? quality.queueBar(t, e, q, qa) : ''}${barOnly ? '' : quality.entityBox(qa, view, { queued })}</div>`;
+}
+
+router.get('/:plural/:slug/quality-box', async (req, res) => {
+  const { t } = req;
+  const e = await findEntity(t, req.params.slug);
+  if (!e) return res.status(404).json({ error: 'not_found' });
+  const ready = await quality.settled(adminPool, t.type, e.id, { wait: 4000 });
+  const qa = await quality.issues(adminPool, { entity: { type: t.type, id: e.id } });
+  const slot = qaSlot(t, e, queueOf(req), qa, !ready, { barOnly: req.query.bar === 'only' });
+  res.json({ settled: ready, html: String(slot) });
+});
 
 router.get('/:plural/:slug', async (req, res) => {
   const { t } = req;
@@ -629,6 +651,7 @@ router.get('/:plural/:slug', async (req, res) => {
   // series and other wholes (migration 037)
   const series = t.type === 'artwork' ? await seriesOf(e, req.user) : null;
   const citation = t.type === 'source' ? (await bibliography.loadCatalogue(adminPool)).get(e.slug) : null;
+  const refNames = new Map(entities.map((x) => [x.ref, x.name]));
   const linkMap = await linkNames(adminPool, [...Object.entries(t.fields).filter(([, k]) => k === 'md').map(([key]) => e.doc[key]),
     ...provSteps.map((p) => p.notes_md)]);
   // the entries whose texts [[link]] this one (content_links, 030 — stored since 200) — for a term: where it is used
@@ -657,8 +680,7 @@ router.get('/:plural/:slug', async (req, res) => {
         <a class="button secondary" href="/${t.folder}/${e.slug}/enrich">Enrich…</a>
         <form method="post" action="/${t.folder}/${e.slug}/auto-done" class="inline"><button class="link">it's complete — remove the mark</button></form>
         <div class="muted small">The mark goes away by itself when the entry is next published.</div></div>` : ''}
-      ${req.query.queue ? quality.queueBar(t, e, req.query.queue, qa) : ''}
-      ${quality.entityBox(qa, req.query.queue ? req.originalUrl : `/${t.folder}/${e.slug}`, { queued: qaQueued })}
+      ${qaSlot(t, e, req.query.queue, qa, qaQueued)}
       ${openCases.entryBox(t, e, cases, caseNames)}
       ${citation ? html`<p class="citation"><b>${citation.siglum}:</b> ${raw(citation.full)}</p>` : ''}
       ${series && series.whole ? html`<p class="part-of">${series.number ? html`<b>${/^\d+$/.test(series.number) ? `No. ${series.number}` : series.number}</b>
@@ -676,7 +698,7 @@ router.get('/:plural/:slug', async (req, res) => {
         const shown = key === 'boundary_code' && boundary
           ? html`${boundary.code} — ${boundary.name} <span class="muted">(outline and marker from Natural Earth)</span>`
           : termLinks && ((key === 'kind' && e.doc.kind) || (key === 'materials' && (e.doc.materials || []).length)) ? termValue(key)
-            : showValue(t, key, kind, e.doc, linkMap);
+            : showValue(t, key, kind, e.doc, linkMap, undefined, refNames);
         // the web page with the day the link was added (set by the database, migration 039)
         if (key === 'web_url' && shown !== null && webAccessed) return html`<dt>${fieldLabel(t.type, key)}</dt><dd>${shown} <span class="muted small">· added ${webAccessed}</span></dd>`;
         if (shown === null) return '';
@@ -942,7 +964,7 @@ router.get('/:plural/:slug/edit', async (req, res) => {
   const form = entityForm({ t, slug: working.slug || e.slug, f: formFromBody(working), ctx,
     action: `/${t.folder}/${e.slug}`, errors: [], version: working.version,
     collab: { key: `${t.type}:${e.id}:${epoch}`, state, published: drafts.formKeys(e.doc, t, e.slug) }, queue: queueOf(req) });
-  const bar = queueOf(req) ? quality.queueBar(t, e, queueOf(req), await quality.issues(adminPool, { entity: { type: t.type, id: e.id } })) : '';
+  const bar = queueOf(req) ? qaSlot(t, e, queueOf(req), await quality.issues(adminPool, { entity: { type: t.type, id: e.id } }), false, { barOnly: true }) : '';
   send(req, res, { title: `Edit ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'edit' },
     body: html`<h1>Edit ${e.name}</h1>${bar}${banner}${form}${t.type === 'artwork' ? numbers.formsAfter(e) : ''}${authorityList.length ? identifiers.formsAfter(t, e) : ''}${await citeDialogs(t, e, req.user)}` });
 });

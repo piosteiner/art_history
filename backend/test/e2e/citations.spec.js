@@ -322,3 +322,23 @@ test('the entry\'s web page is offered in the sources dialogs — on the edit pa
   await expect(userA.locator('details.cite[open] .cite-chip-webpage')).toContainText('collection/item/8');
   sql("DELETE FROM artworks WHERE slug = 'test-webpage-work'; DELETE FROM bibliography WHERE url LIKE 'https://www.test-webpage-museum.org%'");
 });
+
+// The findings follow a change made in a dialog without reloading (owner 2026-11-06): "Yes, it still does" clears the
+// "Changed since cited" warning from the Data quality box once the entry is checked again.
+test('confirming an outdated source clears the warning in the quality box without a reload', async ({ userA }) => {
+  const { settled } = require('./helpers');
+  sql(`DELETE FROM artworks WHERE slug = 'test-qa-refresh'; DELETE FROM bibliography WHERE slug = 'test-qa-refresh-book';
+       INSERT INTO bibliography (slug, kind, name, year) VALUES ('test-qa-refresh-book', 'book', 'Test Refresh Book', '2001');
+       INSERT INTO artworks (slug, title, kind, medium) VALUES ('test-qa-refresh', 'Test QA Refresh', 'painting', 'Oil on canvas');
+       INSERT INTO citations (entity_type, entity_id, field, source_id, cited_value)
+         VALUES ('artwork', entity_id('artwork', 'test-qa-refresh'), 'medium', entity_id('source', 'test-qa-refresh-book'), '{"medium": "Tempera on panel"}')`);
+  await settled();
+  await userA.goto('/artworks/test-qa-refresh');
+  await expect(userA.locator('.qa-slot .qa-box')).toContainText('Changed since cited');
+  const medium = userA.locator('dt:has-text("Medium") + dd');
+  await medium.locator('details.cite > summary').click();
+  await userA.locator('details.cite[open] .cite-confirm button').click();
+  await expect(userA.locator('details.cite[open] .cite-status')).toHaveText(/still supports/);
+  await expect(userA.locator('.qa-slot')).not.toContainText('Changed since cited', { timeout: 10000 });   // no reload
+  sql("DELETE FROM artworks WHERE slug = 'test-qa-refresh'; DELETE FROM bibliography WHERE slug = 'test-qa-refresh-book'");
+});

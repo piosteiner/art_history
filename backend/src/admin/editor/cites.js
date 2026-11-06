@@ -56,6 +56,23 @@ function fillAlso(d) {
   box.dataset.filled = '1';
 }
 
+// The page's "Data quality" box and queue bar (.qa-slot, routes/entries.js qaSlot): asked again after a change in a
+// dialog — the server answers once the entry's findings are computed again (a moment), at most a few tries
+async function refreshQuality(tries = 4) {
+  const slot = document.querySelector('.qa-slot[data-qa-url]');
+  if (!slot) return;
+  try {
+    const res = await fetch(slot.dataset.qaUrl, { credentials: 'same-origin', headers: { Accept: 'application/json' } });
+    if (!res.ok) return;
+    const { settled, html } = await res.json();
+    const tpl = document.createElement('template');
+    tpl.innerHTML = html.trim();
+    const fresh = tpl.content.firstElementChild;
+    if (fresh) slot.replaceWith(fresh);
+    if (!settled && tries > 1) setTimeout(() => refreshQuality(tries - 1), 1000);
+  } catch { /* offline: the next reload shows it */ }
+}
+
 // the entry's web page: the form's field (the working copy, published or not), else the published one (view page)
 function entryWebPage() {
   const main = mainForm();
@@ -204,6 +221,7 @@ async function send(form, submitter) {
   apply(result, d.dataset.citeKey, edit);
   const fresh = markerFor(d.dataset.citeKey, edit);
   offerWebPage(fresh);   // gone once that page is a source here
+  refreshQuality();      // the findings follow (a source added, removed or confirmed): the box and the queue's bar
   const n = keys.length;
   status(fresh, form.classList.contains('cite-add') ? (n > 1 ? `Source added to ${n} fields.` : 'Source added.') : confirming ? 'Noted: the source still supports it.' : 'Source removed.');
   const first = fresh && fresh.querySelector('form.cite-add input[name="url"]');

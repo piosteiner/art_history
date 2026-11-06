@@ -103,5 +103,10 @@ test('a new series from a work\'s "Part of": created with the save, with the art
   expect(sql(`SELECT s.slug || ' | ' || s.kind || ' | ' || coalesce((SELECT slug FROM artists WHERE id = s.creator_id), '-') || ' | ' || artwork_is_group(s.kind_term_id)
     FROM artworks a JOIN artworks s ON s.id = a.parent_id WHERE a.slug = 'test-grp-new-part'`)).toBe('test-grp-new-series | series | paul-gauguin | true');
   expect(sql("SELECT count(*) FROM auto_created WHERE entity_type = 'artwork' AND entity_id = entity_id('artwork', 'test-grp-new-series')")).toBe('1');
+  // a reference field shows the entry's name, the slug only in its tooltip (owner 2026-11-06)
+  await userA.goto('/artworks/test-grp-new-part');
+  const partOf = userA.locator('dl.fields dt:has-text("Part of") + dd a').first();
+  await expect(partOf).toHaveText('Test Grp New Series');
+  await expect(partOf).toHaveAttribute('title', 'test-grp-new-series');
   sql("DELETE FROM artworks WHERE slug IN ('test-grp-new-part', 'test-grp-new-series')");
 });

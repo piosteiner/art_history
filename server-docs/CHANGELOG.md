@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### CMS: the quality box follows changes made in a dialog; reference fields show names
+- **What** (owner 2026-11-06): the queue's bar and the "Data quality" box sit in a slot (`qaSlot()` in
+  `routes/entries.js`); after a source is added, removed or confirmed in a dialog (no reload), `editor/cites.js` asks
+  `GET /:plural/:slug/quality-box`, which waits for the entry's findings to be computed again (≤ 4 s) and answers the
+  slot anew — "Changed since cited" goes away without reloading. On an entry's page the reference fields (Institution,
+  Part of, places …) show the entry's name instead of its slug (slug in the tooltip). Tests in `citations.spec.js`,
+  `groups.spec.js`.
+- **Why**: the warning stayed until a reload; "daichoju-in" read like a code.
+- **Revert**: `git revert` the commit.
+
 ### CMS: the Quality queue survives Edit and Publish
 - **What** (owner 2026-11-06: "when i add the missing part and publish it im not on the quality page anymore"): an entry
   opened from "Work through these" (`?queue=…`) keeps the queue through "Edit" / "Fill in the details" (the links carry
