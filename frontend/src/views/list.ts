@@ -219,6 +219,8 @@ export function list(main: HTMLElement, plural: Plural) {
   const FILTER = ({ glossary: { field: 'category', param: 'category' }, bibliography: { field: 'reading_status', param: 'status' },
     events: { field: 'kind', param: 'kind' }, artworks: { field: 'provenance_category', param: 'provenance' } } as Record<string, { field: string; param: string }>)[plural];
   const fieldOf = (e: Entry<AnyItem>) => String((e.item as unknown as Record<string, unknown>)[FILTER?.field ?? ''] ?? 'other');
+  /** Every value the entry is filed under: a term's main category and the further ones it is also shown in (API 235). */
+  const fieldsOf = (e: Entry<AnyItem>) => [fieldOf(e), ...(plural === 'glossary' ? ((e.item as TermItem).also_in ?? []) : [])];
   const labelOf = (v: string) => (plural === 'bibliography' ? STATUS_LABEL[v] ?? v : plural === 'artworks' ? PROVENANCE_CATEGORY_LABEL[v] ?? v : v);
   // glossary: a term filed under a collection (the era names under Japanese, Korean, Chinese calendar — API `parent.collection`,
   // owner 2026-11-04) is left out of the list and its counts; a search still finds it
@@ -274,7 +276,7 @@ export function list(main: HTMLElement, plural: Plural) {
   function drawCategories() {
     const counts = new Map<string, number>();
     const shown = listed();
-    for (const e of shown) { const c = fieldOf(e); counts.set(c, (counts.get(c) ?? 0) + 1); }
+    for (const e of shown) for (const c of fieldsOf(e)) counts.set(c, (counts.get(c) ?? 0) + 1);
     if (category && !counts.has(category)) category = null;
     categoriesEl.hidden = counts.size < 2 && !category;
     const collections = all.filter((e) => (e.item as TermItem).collects);
@@ -318,7 +320,7 @@ export function list(main: HTMLElement, plural: Plural) {
     const inWhole = partOf ? all.filter((e) => (e.item as { part_of?: { slug: string } | null }).part_of?.slug === partOf)
       : plural === 'literary-works' && !query_ ? all.filter((e) => !(e.item as LiteratureItem).part_of)
         : plural === 'glossary' && !query_ ? listed() : all;
-    const pool = (category ? inWhole.filter((e) => fieldOf(e) === category) : inWhole).filter((e) => !gapOnly || openQuestion(e))
+    const pool = (category ? inWhole.filter((e) => fieldsOf(e).includes(category!)) : inWhole).filter((e) => !gapOnly || openQuestion(e))
       .filter((e) => !heldBy || inHolding(e));
     const hits = query_ ? pool.filter((e) => matches(e, parsed)) : pool;
     let last = '';

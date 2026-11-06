@@ -262,13 +262,14 @@ const ENTITIES = {
     type: 'term', table: 'glossary', alt: 'alt_names', name: 'name', period: null,
     // parent: the broader term (145) — with `collection` when that term files its narrower terms (metadata.collection,
     // the calendars: the site's list shows them under it only, owner 2026-11-04); collects: how many it files
-    list: `t.category, t.definition, ${mainImage('glossary_id')},
+    list: `t.category, t.also_in::text[] AS also_in, t.definition, ${mainImage('glossary_id')},
            (SELECT jsonb_build_object('slug', p.slug, 'name', p.name, 'collection', coalesce((p.metadata ->> 'collection')::boolean, false))
             FROM glossary p WHERE p.id = t.parent_id) AS parent,
            CASE WHEN coalesce((t.metadata ->> 'collection')::boolean, false) THEN (SELECT count(*)::int FROM glossary n WHERE n.parent_id = t.id) END AS collects`,
-    detail: `t.category, t.definition, t.description_md, ${allImages('glossary_id')}`,
+    detail: `t.category, t.also_in::text[] AS also_in, t.definition, t.description_md, ${allImages('glossary_id')}`,
     md: ['description_md'],
-    filters: { category: 't.category::text = $' },
+    // a category: the main one, or one it is also shown in (235)
+    filters: { category: '(t.category::text = $ OR $ = ANY (t.also_in::text[]))' },
     order: `${sortKey('term', 't', 'name')}`,
   },
   // the bibliography (migration 036); siglum and the full citation are added in JS (src/bibliography.js)

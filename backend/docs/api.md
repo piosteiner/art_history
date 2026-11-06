@@ -126,8 +126,11 @@ are in `search_fields` (the Type field's `match`, 110) — "Holzschnitt" finds t
 names in any language. A value that is no term yet is shown as it is (no `kind_term` / not in `material_terms`).
 
 ### Glossary (`/v1/glossary`, type `term`)
-`name` (+ the name fields below), `category` (technique · architecture · material · iconography · style · format ·
-object type · group of works · mounting · performing arts · other; filter `?category=`), `definition` (short, plain text),
+`name` (+ the name fields below), `category` (technique · architecture · material · iconography · art style (was "style"
+until 234) · format · object type · group of works · mounting · performing arts · heritage designation · calendar ·
+literary genre · religion · philosophy · aesthetics · politics · society · language · arts and customs · other; filter
+`?category=`, which also finds the terms that are `also_in` it), `also_in` (235: further categories for browsing — the
+main `category` alone does the work), `definition` (short, plain text),
 `description_html`, `images`/`image_url`, related terms as relationships (`related_term`), and in the detail
 `used_in: [{type, slug, name}]` — the entries whose texts link the term. Broader terms (145): `broader: [{slug, name}]`
 upwards, nearest first (Yoroboshi → Noh → …), and `narrower: [{slug, name, category, definition}]` — the terms

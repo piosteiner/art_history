@@ -145,7 +145,8 @@ const TYPE_HINTS = {
   'event.location': 'Only if there is one spot: the building of a trial, an exhibition or an auction.',
   'event.area': 'Optional: the area it covered — the burned districts, a battlefield.',
   'event.description_md': html`What happened and why it matters here. Link people, works and places with <code>[[type/slug]]</code>; who took part (and as what), what it depicts or concerns: relationships below.`,
-  'term.category': 'What the glossary is browsed by: technique · material · object type · format · mounting (frames, mounts) · style · iconography · architecture · performing arts · group of works (series, versions, cycle) · heritage designation · calendar (era names) · literary genre (kinds of literary works: epic poem › heroic epic …) · other',
+  'term.category': 'What the glossary is browsed by: technique · material · object type · format · mounting (frames, mounts) · art style · iconography · architecture · performing arts · group of works (series, versions, cycle) · heritage designation · calendar (era names) · literary genre (kinds of literary works: epic poem › heroic epic …) · religion · philosophy · aesthetics · politics · society · language · arts and customs · other. The main category does the work (an artwork\'s type is looked up among object types, a literary kind among genres …); further ones go under “Also in”.',
+  'term.also_in': 'Further categories it is shown and found under when browsing the glossary — mappō: religion, also politics; chanoyu: arts and customs, also aesthetics. Only for browsing: every rule uses the main category.',
   'artist.active': html`Only when birth and death are unknown: when the artist is known to have worked — <code>first half of the 1st century BCE</code> · <code>-0100/-0050</code> · <code>1480/1510</code>. Leave birth and death empty rather than guessing them.`,
   'term.parent': 'The wider term this one belongs under (Yoroboshi → Noh → performing arts as a term …): one, or none. Not a category — the site shows the chain and, on the broader term, everything under it.',
   'term.definition': 'One or two sentences (max. 500 characters): shown as a tooltip wherever a text links the term, and in the A–Z list. Plain text.',
@@ -239,6 +240,7 @@ function docToForm(doc, fields) {
   for (const [key, kind] of Object.entries(fields)) {
     const v = doc[key];
     if (kind === 'text[]') f[key] = (v || []).join('\n');
+    else if (kind === 'categories') f[key] = (v || []).join('\n');   // one per line: the live working copy keeps fields as text
     else if (kind === 'name') { f[key] = v ?? ''; f[`${key}_lang`] = doc[`${key}_lang`] ?? ''; }
     else if (kind === 'dimsets') f[key] = dimensions.setsToLines(v);
     else if (kind === 'bool') f[key] = v ? 'yes' : '';
@@ -273,6 +275,12 @@ function formToDoc(body, fields) {
       if (v) doc[key] = get(key).replace(/\s+$/, '');
     } else if (kind === 'text[]') {
       const items = v.split('\n').map((s) => s.trim()).filter(Boolean);
+      if (items.length) doc[key] = items;
+    } else if (kind === 'categories') {
+      // tick boxes: one value, several (an array) or none
+      // (the live working copy sends them as one text, one per line)
+      const raw = body[`f.${key}`];
+      const items = (Array.isArray(raw) ? raw : String(raw ?? '').split('\n')).map((s) => String(s).trim()).filter(Boolean);
       if (items.length) doc[key] = items;
     } else if (kind === 'json' || kind === 'area' || kind === 'line') {
       if (!v) continue;
@@ -349,6 +357,12 @@ function fieldInput(key, kind, f, ctx) {
     return html`<div class="field${err}" data-key="${key}"><label>${label}</label>
       <details${err ? ' open' : ''}><summary class="muted">${kind === 'line' ? 'Draw it on the map above with the line tool' : 'Draw it on the map above'} — or edit the GeoJSON (advanced)</summary>
       <textarea id="${id}" name="${name}" rows="3">${f[key]}</textarea>${hint(HINTS[kind])}</details></div>`;
+  }
+  if (kind === 'categories') {
+    // tick boxes, one per category of the main menu's list (235); the main category itself is left out on save
+    const chosen = new Set(Array.isArray(f[key]) ? f[key] : String(f[key] || '').split('\n').filter(Boolean));
+    return html`<div class="field${err}" data-key="${key}"><span class="label">${label}</span>
+      <div class="also-in">${(ctx.enums.category || []).map((v) => html`<label class="check"><input type="checkbox" name="${name}" value="${v}"${chosen.has(v) ? ' checked' : ''}> <span>${v}</span></label>`)}</div>${hint(typeHint || HINTS[`${ctx.type}.${key}`])}</div>`;
   }
   if (kind === 'text[]' || kind === 'json') {
     return html`<div class="field${err}" data-key="${key}"><label for="${id}">${label}</label>
@@ -499,7 +513,7 @@ const SECTIONS = {
   ],
   term: [
     { title: 'Term', id: 'names', rows: [['name'], ['names']] },
-    { title: 'Definition', id: 'definition', rows: [['category', 'parent'], ['definition']] },
+    { title: 'Definition', id: 'definition', rows: [['category', 'parent'], ['also_in'], ['definition']] },
     { title: 'Description', id: 'text', rows: [['description_md']] },
     IDS(),
   ],

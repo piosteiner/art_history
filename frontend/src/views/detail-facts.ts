@@ -349,7 +349,8 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
       return {
         title: e.name, subtitle: `Glossary · ${e.category}`, lead: e.definition, text: e.description_html, images: e.images,
         facts: [
-          ['Category', html`<a href="/glossary?category=${e.category}">${e.category}</a>`],
+          ['Category', html`<a href="/glossary?category=${encodeURIComponent(e.category)}">${e.category}</a>${e.also_in?.length
+            ? html` <span class="muted">· also in ${e.also_in.map((c, i) => html`${i ? ', ' : ''}<a href="/glossary?category=${encodeURIComponent(c)}">${c}</a>`)}</span>` : ''}`],   // also in: API 235
           // API 145: the chain of broader terms, widest first — Performing arts › Noh
           ['Broader term', (e.broader ?? []).length ? html`${[...e.broader].reverse().map((t, i) => html`${i ? ' › ' : ''}${link('term', t.slug, t.name)}`)}` : null],
           ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],

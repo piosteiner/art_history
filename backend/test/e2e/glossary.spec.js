@@ -92,3 +92,38 @@ test('broader terms: a performing-arts term under another, shown both ways; no l
   await expect(userA.locator('main')).toContainText('That would make it part of itself');
   expect(sql("SELECT parent_id IS NULL FROM glossary WHERE slug = 'noh'")).toBe('t');
 });
+
+// 234/235: new categories ("style" now "art style"); a term in further categories for browsing — the main one alone does
+// the work, and ticking it among the further ones changes nothing
+test('a term in further categories: ticked in the form, shown on its page, found by the API\'s category filter (235)', async ({ userA, request }) => {
+  sql("DELETE FROM glossary WHERE slug = 'test-mappo'");
+  await userA.goto('/glossary/new');
+  await userA.fill('#f-name', 'Test mappō');
+  await userA.fill('#f-slug', 'test-mappo');
+  await userA.selectOption('#f-category', 'religion');
+  await expect(userA.locator('#f-category option')).toContainText(['art style', 'religion', 'politics', 'arts and customs']);
+  await userA.locator('.also-in input[value="politics"]').check();
+  await userA.locator('.also-in input[value="religion"]').check();   // the main category: dropped on save
+  await userA.fill('#f-definition', 'Test: the degenerate last age of the Buddhist law.');
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/\/glossary\/test-mappo\?done=created/);
+  await expect(userA.locator('dl.fields')).toContainText('politics');
+  expect(sql("SELECT also_in::text FROM glossary WHERE slug = 'test-mappo'")).toBe('{politics}');
+  const term = await api(request, '/glossary/test-mappo');
+  expect(term).toEqual(expect.objectContaining({ category: 'religion', also_in: ['politics'] }));
+  for (const c of ['religion', 'politics']) {
+    expect((await api(request, `/glossary?category=${c}&limit=500`)).data.map((t) => t.slug)).toContain('test-mappo');
+  }
+  expect((await api(request, '/glossary?category=society&limit=500')).data.map((t) => t.slug)).not.toContain('test-mappo');
+  // the form shows the ticks again; unticked, it is in its main category only
+  await userA.goto('/glossary/test-mappo/edit');
+  await liveReady(userA);   // the live working copy: tick boxes kept as one field, one value per line
+  await expect(userA.locator('.also-in input[value="politics"]')).toBeChecked();
+  await expect(userA.locator('.also-in input[value="society"]')).not.toBeChecked();
+  await userA.locator('.also-in input[value="politics"]').uncheck();
+  await userA.locator('.also-in input[value="society"]').check();
+  await userA.locator('.also-in input[value="aesthetics"]').check();
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect.poll(() => sql("SELECT also_in::text FROM glossary WHERE slug = 'test-mappo'")).toBe('{aesthetics,society}');
+  sql("DELETE FROM glossary WHERE slug = 'test-mappo'");
+});

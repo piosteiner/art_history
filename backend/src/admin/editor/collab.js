@@ -32,7 +32,12 @@ export function startCollab(form, live, enhance) {
   const meta = doc.getMap('meta');
   const mdAreas = [...form.querySelectorAll('textarea.md')];
   const mdNames = new Set(mdAreas.map((t) => t.name));
-  const inputs = [...form.elements].filter((e) => e.name && !mdNames.has(e.name) && e.name !== 'version' && !['submit', 'button'].includes(e.type));
+  const inputs = [...form.elements].filter((e) => e.name && !mdNames.has(e.name) && e.name !== 'version' && !['submit', 'button', 'checkbox'].includes(e.type));
+  // tick boxes under one name (a term's further categories, 235): one field, the ticked values one per line
+  const checkGroups = new Map();
+  for (const e of form.elements) if (e.type === 'checkbox' && e.name) checkGroups.set(e.name, [...(checkGroups.get(e.name) || []), e]);
+  const groupValue = (boxes) => boxes.filter((c) => c.checked).map((c) => c.value).join('\n');
+  const setGroup = (boxes, value) => { const on = new Set(String(value ?? '').split('\n')); boxes.forEach((c) => { c.checked = on.has(c.value); }); };
   const version = form.querySelector('[name="version"]');
   let synced = false;
   let applyingRemote = false;
@@ -88,10 +93,20 @@ export function startCollab(form, live, enhance) {
       el.addEventListener('input', push);
       el.addEventListener('change', push);
     }
+    for (const [name, boxes] of checkGroups) {
+      if (fields.has(name)) setGroup(boxes, fields.get(name));
+      else doc.transact(() => fields.set(name, groupValue(boxes)), 'local');
+      const push = () => {
+        if (applyingRemote || fields.get(name) === groupValue(boxes)) return;
+        doc.transact(() => fields.set(name, groupValue(boxes)), 'local');
+      };
+      boxes.forEach((c) => c.addEventListener('change', push));
+    }
     fields.observe((ev) => {
       if (ev.transaction.origin === 'local') return;
       applyingRemote = true;
       for (const k of ev.keysChanged) {
+        if (checkGroups.has(k)) { setGroup(checkGroups.get(k), fields.get(k)); continue; }
         const el = form.elements[k];
         if (el && !mdNames.has(k)) {
           setEl(el, fields.get(k) ?? '');

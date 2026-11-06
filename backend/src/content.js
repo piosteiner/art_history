@@ -51,7 +51,7 @@ const TYPES = [
   // the glossary (migration 027): terms that texts link with [[slug]]; category is a fixed list (enum term_category);
   // parent = the broader term (145: Yoroboshi → Noh), shown as broader / narrower
   { type: 'term', folder: 'glossary', table: 'glossary', name: 'name', fields: {
-    name: 'name', names: 'names', category: 'text', parent: 'parent', definition: 'text', description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
+    name: 'name', names: 'names', category: 'text', also_in: 'categories', parent: 'parent', definition: 'text', description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   // literary works (192/193): tales, novels, poems, plays, sutras, myths — chapters as parts (parent + part_number);
   // the author, works of art illustrating it, adaptations as relationships (written_by, illustrates, inspired_by, based_on)
   { type: 'literature', folder: 'literary-works', table: 'literary_works', name: 'name', fields: {
@@ -172,7 +172,7 @@ function toRow(doc, fields) {
         const list = v ?? [];
         if (!Array.isArray(list)) throw new Error('must be a list of {part, cm}');
         put(key, JSON.stringify(list.map((s, i) => dimensions.normSet(s, i))), '$::jsonb');
-      } else if (kind === 'text[]') {
+      } else if (kind === 'text[]' || kind === 'categories') {
         if (v !== null && !(Array.isArray(v) && v.every((s) => typeof s === 'string'))) throw new Error('must be a list of strings');
         put(key, v || []);
       } else if (kind === 'json') {
@@ -397,6 +397,7 @@ function docColumns(t) {
                    WITH ORDINALITY AS u(x, i) WHERE x IS NOT NULL) END AS ${key}`);
     }
     else if (kind === 'area' || kind === 'line') cols.push(`ST_AsGeoJSON(t.${key})::jsonb AS ${key}`);
+    else if (kind === 'categories') cols.push(`t.${key}::text[] AS ${key}`);   // an enum array (235): node-pg reads it as text
     else if (kind === 'parent') cols.push(`(SELECT p.slug FROM ${t.table} p WHERE p.id = t.parent_id) AS ${key}`);
     else if (kind.startsWith('ref:')) cols.push(`(SELECT r.slug FROM ${BY_TYPE[kind.slice(4)].table} r WHERE r.id = t.${REF_COLUMNS[key]}) AS ${key}`);
     else if (kind.startsWith('life:')) {
@@ -423,7 +424,7 @@ function rowToDoc(row, t) {
     // names: a plain alternative stays a plain string in YAML (as the old lists were)
     // (only when that is all it is: a kind, a status, a period or a note keep it a mapping — before, the kind was lost)
     if (kind === 'names') v = Array.isArray(v) && v.length ? v.map((n) => (n.role === 'alternative' && Object.keys(n).every((k) => k === 'text' || k === 'role') ? n.text : n)) : null;
-    if ((kind === 'text[]' || kind === 'dimsets') && Array.isArray(v) && !v.length) v = null;
+    if ((kind === 'text[]' || kind === 'dimsets' || kind === 'categories') && Array.isArray(v) && !v.length) v = null;
     if (kind === 'json' && v && !Object.keys(v).length) v = null;
     if (kind === 'bool' && !v) v = null;
     if (v !== null && v !== undefined) doc[key] = v;

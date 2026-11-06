@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Glossary: new categories, "style" → "art style", further categories per term (234–236)
+- **What:** owner 2026-11-06 ("other" held 36 terms; "style" alone misleading). 234: enum value `style` renamed `art style`
+  (in place — the 17 terms keep it), new values religion, philosophy, aesthetics, politics, society, language, arts and
+  customs. 235: `glossary.also_in term_category[]` (GIN index; a trigger drops the main category and duplicates) — only
+  for browsing: the API's `?category=` finds terms also in it, list and detail carry `also_in`; every rule (artwork
+  types, materials, literary genres, heritage designations, calendars) reads the main category alone. CMS: "Also in" as
+  tick boxes; the live working copy keeps a tick-box group as one text field, one value per line (`editor/collab.js`,
+  `forms.js`, content kind `categories`). Site: category buttons count and list a term under each of its categories;
+  a term's page "religion · also in politics". 236: the glossary's stored list rows queued anew (the enum rename
+  changes no row). The terms are moved as content afterwards (script).
+- **Revert:** `git revert`; `ALTER TABLE glossary DROP COLUMN also_in`; rename the enum value back. Added enum values
+  can't be dropped (unused, harmless).
+
 ### Fields and buttons in the site's design; other names grouped by language
 - **What:** owner 2026-11-06. Site (`frontend/src/style.css`): a base look for fields, selects and buttons with zero
   specificity (`:where`) — forms that style their own keep it; fields like the header search, buttons as pills, a form's

@@ -144,7 +144,8 @@ export interface SourceHint { siglum: string; citation: string }
 export interface EntryHint { type: EntityType; slug: string; name: string; subtitle: string | null; image_url: string | null; excerpt: string | null }
 
 export interface GlossaryHint { name: string; category: TermCategory; definition: string | null }
-export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'style' | 'format' | 'object type' | 'group of works' | 'mounting' | 'performing arts' | 'heritage designation' | 'calendar' | 'literary genre' | 'other';  // group of works: API 131, mounting: 133, performing arts: 145, heritage designation: 165
+export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'art style' | 'format' | 'object type' | 'group of works' | 'mounting' | 'performing arts' | 'heritage designation' | 'calendar' | 'literary genre'
+  | 'religion' | 'philosophy' | 'aesthetics' | 'politics' | 'society' | 'language' | 'arts and customs' | 'other';  // 234: style → art style, seven new  // group of works: API 131, mounting: 133, performing arts: 145, heritage designation: 165
 
 // ---- countries and polities ---------------------------------------------------------------------
 
@@ -288,6 +289,8 @@ export interface SourceItem extends Named {
 }
 export interface TermItem extends Named {
   slug: string; name: string; category: TermCategory; definition: string | null; image_url: string | null;
+  /** Further categories it is shown under when browsing (API 235); the main one is `category` */
+  also_in?: TermCategory[];
   /** The broader term (API 145); `collection`: that term files its narrower terms — the list shows them under it only (2026-11-04). */
   parent?: { slug: string; name: string; collection: boolean } | null;
   /** A collection: how many terms it files. */
@@ -590,7 +593,7 @@ export interface Literature extends DetailBase, Named {
 
 export interface Term extends DetailBase, Named {
   type: 'term';
-  name: string; alt_names: string[]; category: TermCategory; definition: string | null;
+  name: string; alt_names: string[]; category: TermCategory; definition: string | null; also_in?: TermCategory[];
   description_html: string | null;
   images: Image[]; image_url: string | null;
   /** Entries whose texts link this term. */

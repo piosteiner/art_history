@@ -3589,3 +3589,21 @@ test('other names: grouped by language, the romanization next to the name in its
   expect(text.indexOf('ryōsai kenbo')).toBeLessThan(text.indexOf('贤妻良母'));
   await expect(names.locator('.romanization')).toHaveAttribute('lang', 'ja-Latn');
 });
+
+// A term in further categories (API 235): counted and listed under each; its page names them
+test('glossary: a term also in other categories is counted and listed there, its page says so', async ({ page }) => {
+  const item = (slug: string, name: string, category: string, also_in: string[] = []) => ({ slug, name, category, also_in, definition: `${name}.`, image_url: null, names: [], sort_key: name, search_text: '' });
+  await page.route(/\/v1\/glossary\?/, (r) => r.fulfill({ json: { data: [item('mappo', 'mappō', 'religion', ['politics']), item('zen', 'Zen', 'religion'), item('bakufu', 'bakufu', 'politics')], total: 3, limit: 500, offset: 0 } }));
+  await page.route(/\/v1\/glossary\/mappo$/, (r) => r.fulfill({ json: { type: 'term', slug: 'mappo', name: 'mappō', category: 'religion', also_in: ['politics'], definition: 'The last age of the law.',
+    alt_names: [], names: [], description_html: null, images: [], image_url: null, wikidata_id: null, metadata: {}, updated_at: '', glossary: {}, used_in: [], relationships: [] } }));
+  await page.goto('/glossary');
+  await expect(page.locator('#categories button[data-category="politics"]')).toContainText('2');
+  await expect(page.locator('#categories button[data-category="religion"]')).toContainText('2');
+  await page.locator('#categories button[data-category="politics"]').click();
+  await expect(page).toHaveURL(/category=politics/);
+  await expect(page.locator('main')).toContainText('mappō');
+  await expect(page.locator('main')).toContainText('bakufu');
+  await expect(page.locator('main')).not.toContainText('Zen.');
+  await page.goto('/glossary/mappo');
+  await expect(page.locator('dt:has-text("Category") + dd')).toContainText('religion · also in politics');
+});
