@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Institutions: their online collection (238)
+- **What** (owner 2026-11-06: "link all online collections of a museum … only one click away to search in their
+  collection"): migration 238 `institutions.collection_url` (http(s) only); CMS field "Online collection" beside
+  "Website" (help: the collection search, not the front page or one work's page); the Wikidata comparison takes P8768
+  ("online catalog URL"); API institution detail `collection_url`; YAML `collection_url`; site: "Online collection —
+  Search the collection ↗" on an institution's page (frontend, after this deploy). 112 institutions filled the same
+  day, each address fetched first (status, title) — from Wikidata where it was right, else found on the museum's
+  site; German-speaking houses in German, others in English where there is a version.
+- **Why**: from a museum's page one click to its own collection search.
+- **Revert**: `git revert`; `ALTER TABLE institutions DROP COLUMN collection_url`.
+
 ### CMS: the quality box follows changes made in a dialog; reference fields show names
 - **What** (owner 2026-11-06): the queue's bar and the "Data quality" box sit in a slot (`qaSlot()` in
   `routes/entries.js`); after a source is added, removed or confirmed in a dialog (no reload), `editor/cites.js` asks

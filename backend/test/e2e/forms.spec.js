@@ -253,3 +253,17 @@ test('a new entry with nothing written in it is not kept as a draft', async ({ u
   await userA.goto('/bibliography/new');
   await expect(userA.locator('.flash.draft')).toHaveCount(0);
 });
+
+// An institution's online collection (migration 238, owner 2026-11-06): a field beside the website, saved, in the API.
+test('an institution has an online collection beside its website — saved and given by the API', async ({ userA, request }) => {
+  const { liveReady } = require('./helpers');
+  sql("UPDATE institutions SET collection_url = NULL WHERE slug = 'van-gogh-museum'; DELETE FROM live_docs WHERE entity_type = 'institution'");
+  await userA.goto('/institutions/van-gogh-museum/edit');
+  await liveReady(userA);
+  await expect(userA.locator('label[for="f-collection_url"]')).toContainText('Online collection');
+  await userA.fill('#f-collection_url', 'https://www.vangoghmuseum.nl/en/collection');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA.locator('dl.fields')).toContainText('https://www.vangoghmuseum.nl/en/collection');
+  expect((await api(request, '/institutions/van-gogh-museum')).collection_url).toBe('https://www.vangoghmuseum.nl/en/collection');
+  sql("UPDATE institutions SET collection_url = NULL WHERE slug = 'van-gogh-museum'");
+});

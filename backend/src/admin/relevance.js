@@ -139,7 +139,7 @@ const RULES = {
     values: {
       ...Object.fromEntries(INSTITUTION_PLACES.map((k) => [k, { label: `a ${k}`, need: ['place', 'location'] }])),
       ...Object.fromEntries(INSTITUTION_ABSTRACT.map((k) => [k, { label: `a ${k}`, need: ['place'],
-        only: ['name', 'names', 'kind', 'founded', 'dissolved', 'place', 'description_md', 'website_url', 'wikidata_id', 'metadata', 'provenance_flag'] }])),
+        only: ['name', 'names', 'kind', 'founded', 'dissolved', 'place', 'description_md', 'website_url', 'collection_url', 'wikidata_id', 'metadata', 'provenance_flag'] }])),
       '*': { label: null, need: ['place'] },
     },
     always: { need: ['name', 'kind'] },

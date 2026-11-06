@@ -42,7 +42,7 @@ const TYPES = [
     description_md: 'md', wikidata_id: 'text', metadata: 'json', provenance_flag: 'text' } },
   { type: 'institution', folder: 'institutions', table: 'institutions', name: 'name', fields: {
     name: 'name', names: 'names', kind: 'text', founded: 'date', dissolved: 'date', place: 'ref:place', location: 'point', address: 'text',
-    description_md: 'md', website_url: 'text', wikidata_id: 'text', metadata: 'json', provenance_flag: 'text' } },
+    description_md: 'md', website_url: 'text', collection_url: 'text', wikidata_id: 'text', metadata: 'json', provenance_flag: 'text' } },
   // events (migration 047): something that happened — when, where (city; exact spot or area), part of a larger event;
   // depicted, taken part in and concerned via relationships
   { type: 'event', folder: 'events', table: 'events', name: 'name', fields: {

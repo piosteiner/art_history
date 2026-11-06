@@ -244,7 +244,7 @@ const ENTITIES = {
                       FROM artwork_holders h JOIN artwork_artists aa ON aa.artwork_id = h.artwork_id
                      WHERE h.institution_id = t.id GROUP BY aa.artist_id) c
               JOIN artists a ON a.id = c.artist_id) AS artists_held`,
-    detail: `t.kind, range_json(t.founded, t.founded_label) AS founded, range_json(t.dissolved, t.dissolved_label) AS dissolved, t.website_url, t.description_md,
+    detail: `t.kind, range_json(t.founded, t.founded_label) AS founded, range_json(t.dissolved, t.dissolved_label) AS dissolved, t.website_url, t.collection_url, t.description_md,
              ST_AsGeoJSON(t.location)::jsonb AS location, t.address,
              ${allImages('institution_id')},
              (SELECT jsonb_build_object('slug', p.slug, 'name', p.name, 'location', (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = p.id))

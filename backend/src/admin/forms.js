@@ -136,6 +136,7 @@ const TYPE_HINTS = {
   'institution.dissolved': 'When it closed, was dissolved or merged into another — empty while it exists. With “Founded” it says when it existed: the start map shows it in a time window only then.',
   'institution.kind': 'One or two words, the same for the same kind (institutions are grouped and filtered by it). A kind with a building of its own (museum, temple, church …) asks for its location; a collection, foundation or dealer only for its city.',
   'institution.website_url': 'Its own website (the front page) — not a page about one work; that is the work’s “Web page”.',
+  'institution.collection_url': 'Where its collection can be searched or browsed online (Wikidata P8768 “online catalog URL”) — the site shows it as “Search the collection”. Not the front page, not one work’s page.',
   'person.kind': 'person (the default) — or a group: family · dynasty · couple · religious order · guild · workshop · company · group. A group has a time it was active instead of dates of life.',
   'polity.kind': 'empire · kingdom · dynasty · republic · shogunate …',
   'event.kind': 'One or two words, in English, the same for the same kind (events are grouped and filtered by it): a fire is “fire”, not “Brand” or “great fire”.',
@@ -236,7 +237,7 @@ function emptyChoice(ctx, key) {
 }
 const humanize = (key) => key.replace(/_md$/, '').replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase());
 // labels the same for every type, where humanize() gets the capitals wrong ("Isbn", "Website url")
-const COMMON_LABELS = { wikidata_id: 'Wikidata ID', website_url: 'Website', isbn: 'ISBN', doi: 'DOI', web_url: 'Web page' };
+const COMMON_LABELS = { wikidata_id: 'Wikidata ID', website_url: 'Website', collection_url: 'Online collection', isbn: 'ISBN', doi: 'DOI', web_url: 'Web page' };
 const fieldLabel = (type, key) => LABELS[`${type}.${key}`] || COMMON_LABELS[key] || humanize(key);
 
 // doc → the string values the inputs show.
@@ -484,7 +485,7 @@ const SECTIONS = {
   ],
   institution: [
     { title: 'Name', id: 'names', rows: [['name'], ['names']] },
-    { title: 'About', id: 'about', rows: [['kind'], ['founded', 'dissolved'], ['website_url']] },
+    { title: 'About', id: 'about', rows: [['kind'], ['founded', 'dissolved'], ['website_url', 'collection_url']] },
     { title: 'Where it is', id: 'where', rows: [['place', 'address'], g('Exact location on the map…', ['location'], 'The building itself — puts the institution on the map.')] },
     { title: 'Description', id: 'text', rows: [['description_md'], FLAG] },
     IDS(),

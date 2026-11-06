@@ -365,6 +365,7 @@ function fieldsFor(t, e) {
     const address = firstText(e, 'P6375');
     if (address) f.address = { kind: 'text', value: address };
     text('website_url', firstString(e, 'P856'));
+    text('collection_url', firstString(e, 'P8768'));   // its online collection (238)
   }
   if (t.type === 'movement') {
     const start = firstTime(e, 'P580', 'P571'); const end = firstTime(e, 'P582', 'P576');
