@@ -24,7 +24,7 @@ test('an institution with an exact location gets its city — created the first 
   await newInstitution(userA, 'Test Kamakura Museum', [139.5560, 35.3260]);
   await expect(userA).toHaveURL(/\/institutions\/test-kamakura-museum\?done=created&city=1&places=1/);
   await expect(userA.locator('.flash.ok')).toContainText('Its city was set from the location — 1 new place created');
-  await expect(userA.locator('dl.fields')).toContainText('kamakura');
+  await expect(userA.locator('dl.fields')).toContainText('Kamakura');   // the name, not the slug (2026-11-06)
   // the new city: Kamakura (the city, not the district), its names, Wikidata id, point, parent found by the map, not "to complete"
   expect(sql(`SELECT p.name || ' ' || p.kind || ' ' || p.wikidata_id || ' ' || ST_AsText(p.location) || ' in ' || par.slug
               FROM places p JOIN places par ON par.id = p.parent_id WHERE p.slug = 'kamakura'`)).toBe('Kamakura settlement Q200250 POINT(139.5467 35.3192) in japan');
