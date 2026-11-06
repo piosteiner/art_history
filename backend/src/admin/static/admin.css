@@ -117,6 +117,9 @@ button.link { background: none; border: none; padding: 0; color: var(--accent); 
 /* a term's further categories (235): tick boxes in rows */
 .also-in { display: flex; flex-wrap: wrap; gap: .3rem 1.1rem; margin-top: .3rem; }
 .also-in .check { font-weight: normal; }
+/* a literary work's text (237): line by line */
+.lines, textarea.lines { white-space: pre-line; }
+textarea.lines { white-space: pre; font-family: inherit; }
 
 /* Markdown editor (src/admin/editor): toolbar + CodeMirror with live styling + server-rendered preview */
 .md-editor { display: flex; flex-direction: column; }

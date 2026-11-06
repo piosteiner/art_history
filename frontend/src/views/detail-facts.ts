@@ -412,7 +412,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ['Part of', partOf],
           ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
         ],
-        extra: [steps, parts, pictures, editions].filter((x): x is Html => !!x),
+        extra: [textSection(e), steps, parts, pictures, editions].filter((x): x is Html => !!x),
       };
     }
     case 'polity':
@@ -443,7 +443,22 @@ const FIELD_FACT: Partial<Record<EntityType, Record<string, string[]>>> = {
   movement: { period: ['Period'], parent: ['Part of'] },
   polity: { period: ['Existed'], country_codes: ['Territory today'], parent: ['Part of'] },
   event: { period: ['Date'], kind: ['Kind'], place: ['Place'], location: ['Place'], area: ['Place'], parent: ['Part of'] },
+  literature: { kind: ['Kind'], written: ['Written'] },
 };
+
+/** A literary work's text (API 237): the original line by line (furigana, its language), the romanization, a
+ *  translation with whose it is — each with its sources' markers. */
+function textSection(e: Literature): Html | null {
+  if (!e.text_original && !e.text_translation) return null;
+  const romanLang = e.text_lang ? `${e.text_lang.split('-')[0]}-Latn` : null;
+  return html`<section class="lit-text"><h2>Text</h2>
+    ${e.text_original ? html`<p class="lit-text-original"${e.text_lang ? html` lang="${e.text_lang}"` : ''}>${e.text_original_html ? trusted(e.text_original_html) : e.text_original}</p>` : ''}
+    ${e.text_romanization ? html`<p class="lit-text-roman"${romanLang ? html` lang="${romanLang}"` : ''}>${e.text_romanization}</p>` : ''}
+    ${e.text_original || e.text_romanization ? html`<p class="small muted lit-text-src">${cite(e.sources?.text ?? [], e.bibliography) || ''}</p>` : ''}
+    ${e.text_translation ? html`<p class="lit-text-translation" lang="en">${e.text_translation}</p>
+      <p class="small muted lit-text-src">${e.text_translator === 'own' ? 'Own translation' : e.text_translator ? `Translation: ${e.text_translator}` : 'Translation'}${cite(e.sources?.translation ?? [], e.bibliography) || ''}</p>` : ''}
+  </section>`;
+}
 
 /**
  * Fact rows with their sources' markers. A sourced field without a row of its own (a place's kind) gets a row:
@@ -454,6 +469,7 @@ export function withSources(e: Entity, facts: Fact[]): Fact[] {
   const extra: Fact[] = [];
   for (const [field, list] of Object.entries(e.sources ?? {})) {
     if (field === 'title_status' || field === 'provenance_status') continue; // shown beside the heading / under Provenance
+    if (e.type === 'literature' && (field === 'text' || field === 'translation')) continue;  // in the text's own section (237)
     const labels = FIELD_FACT[e.type]?.[field] ?? NAMES_FACT[field] ?? [];
     const i = facts.findIndex(([label]) => labels.includes(label));
     if (i >= 0) by.set(i, [...(by.get(i) ?? []), ...list]);

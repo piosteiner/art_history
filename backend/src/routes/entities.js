@@ -42,6 +42,11 @@ const nameCols = (col, alt, type) => `t.${col}_lang, t.${col}_ruby, t.names, ${k
 // raw markup → { <col>_ruby_html, <col>_reading } and names → [{text (plain), lang, role, status, kind, ruby_html, reading}]
 // status: a translation's standing — official · common · own (052); null for the other roles
 function shapeNames(row, col) {
+  // a literary work's text (237): furigana as HTML beside the plain text
+  if ('text_original' in row) {
+    row.text_original_html = row.text_original ? names.rubyHtml(row.text_original) : null;
+    row.text_original = row.text_original ? names.plain(row.text_original) : null;
+  }
   if (!('names' in row)) return row;
   const markup = row[`${col}_ruby`];
   delete row[`${col}_ruby`];
@@ -317,6 +322,7 @@ const ENTITIES = {
               AND r.object_type = 'literature' AND r.object_id IN (SELECT t.id UNION ALL SELECT c.id FROM literary_works c WHERE c.parent_id = t.id)
               ORDER BY r.id, i.position, i.id LIMIT 1) AS image_url`,
     detail: `t.kind, range_json(t.written, t.written_label) AS written, t.description_md, ${LIT_AUTHORS}, t.part_number,
+           t.text_original, t.text_lang, t.text_romanization, t.text_translation, t.text_translator,   -- the text itself (237)
            (SELECT jsonb_build_object('slug', g.slug, 'name', g.name) FROM glossary g WHERE g.id = t.kind_term_id) AS kind_term,  -- the genre's term (233)
              -- a part: its whole, and the parts before and after it (previous / next on its page)
              (SELECT jsonb_build_object('slug', w.slug, 'name', w.name, 'parts_count', (SELECT count(*)::int FROM literary_works s WHERE s.parent_id = w.id),

@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### A literary work's text; its date citable (237)
+- **What:** owner 2026-11-06. `literary_works.text_original` (furigana as in names), `text_lang`, `text_romanization`,
+  `text_translation`, `text_translator`; citable fields `written`, `text`, `translation`. CMS: section "The text" with a
+  new field kind `lines` (a text box that keeps line breaks; content.js/YAML as text). API detail: the fields and
+  `text_original_html` (furigana as ruby). Site: a "Text" section — original, romanization, translation with whose —
+  and the sources' markers; "written" sources on the Written row.
+- **Revert:** `git revert`; `ALTER TABLE literary_works DROP COLUMN text_original, …`; delete the three citable_fields rows.
+
 ### Search page: the name that matched instead of "name"/"text" tags
 - **What:** owner 2026-11-06. A name match whose words the title doesn't show gets "also called “…”" — the first name of
   the API's `headline_html` holding a marked word (`otherMatchedName()`, `frontend/src/views/search.ts`); the tags

@@ -581,6 +581,9 @@ export interface LiteraturePart { slug: string; name: string; part_number: strin
 export interface Literature extends DetailBase, Named {
   type: 'literature';
   name: string; alt_names: string[]; kind: string | null; /** the genre as a glossary term (API 233) */ kind_term?: Ref | null; written: DateRange | null; part_number: string | null;
+  /** its text (API 237): the original (plain, and with furigana as HTML), its language, a romanization, a translation and whose */
+  text_original?: string | null; text_original_html?: string | null; text_lang?: string | null; text_romanization?: string | null;
+  text_translation?: string | null; text_translator?: string | null;
   authors: LiteratureItem['authors'];
   part_of: (Ref & { parts_count: number; previous: LiteraturePart | null; next: LiteraturePart | null }) | null;
   /** The contents: each part with its name in the original language and a short summary. */

@@ -113,3 +113,28 @@ test('a literary work\'s kind is a genre: Heldenepos → heroic epic, found as E
   sql(`UPDATE glossary SET name = 'test heroic poem' WHERE slug = 'test-lit-heroic-epic'`);
   expect(sql(`SELECT kind FROM literary_works WHERE slug = 'test-lit-nibelungen'`)).toBe('test heroic poem');
 });
+
+// 237: a work's text — the original line by line with furigana, its romanization, a translation and whose; "written"
+// and the text citable
+test('a poem\'s text: original with furigana, romanization, translation — kept line by line, sent with the work', async ({ userA, request }) => {
+  await userA.goto('/literary-works/new');
+  await userA.fill('#f-name', 'Test frog poem');
+  await userA.fill('#f-slug', 'test-lit-frog');
+  await userA.fill('#f-kind', 'haiku');
+  await userA.keyboard.press('Escape');
+  await userA.fill('#f-written', '1686');
+  await userA.fill('#f-text_original', '{古池|ふるいけ}や\n{蛙|かわづ}{飛|と}びこむ\n{水|みず}の{音|おと}');
+  await userA.fill('#f-text_lang', 'ja');
+  await userA.fill('#f-text_romanization', 'furuike ya\nkawazu tobikomu\nmizu no oto');
+  await userA.fill('#f-text_translation', 'An old pond —\na frog jumps in:\nthe sound of water.');
+  await userA.fill('#f-text_translator', 'own');
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/\/literary-works\/test-lit-frog\?done=created/);
+  await expect(userA.locator('.lines ruby').first()).toContainText('古池');
+  const w = await api(request, '/literary-works/test-lit-frog');
+  expect(w).toEqual(expect.objectContaining({ text_original: '古池や\n蛙飛びこむ\n水の音', text_lang: 'ja', text_romanization: 'furuike ya\nkawazu tobikomu\nmizu no oto',
+    text_translation: 'An old pond —\na frog jumps in:\nthe sound of water.', text_translator: 'own' }));
+  expect(w.text_original_html).toContain('<ruby>古池<rp>(</rp><rt>ふるいけ</rt><rp>)</rp></ruby>や\n');
+  // the date and the text take sources
+  expect(sql("SELECT string_agg(field, ',' ORDER BY position) FROM citable_fields WHERE entity_type = 'literature'")).toBe('kind,written,text,translation');
+});

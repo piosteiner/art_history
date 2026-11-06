@@ -1567,3 +1567,10 @@ button.danger { border-color: var(--accent); color: var(--accent); }
 .account-items hr { border: 0; border-top: 1px solid var(--line); margin: .3rem 0; }
 @media (max-width: 640px) { .account-items { position: fixed; left: 8px; right: 8px; top: 3.2rem; min-width: 0; } }
 .site-header:has(.account-items:not([hidden])) { z-index: 1000; }   /* the open menu above the feedback bubble */
+
+/* a literary work's text (API 237): line by line */
+.lit-text p { white-space: pre-line; margin: .3rem 0; }
+.lit-text-original { font-size: 1.25rem; line-height: 2; }
+.lit-text-roman { font-style: italic; color: var(--muted); }
+.lit-text-translation { font-family: var(--serif); font-size: 1.05rem; }
+.lit-text-src { margin-top: 0; }

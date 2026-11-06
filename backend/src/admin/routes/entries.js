@@ -512,6 +512,7 @@ function showValue(t, key, kind, doc, links = new Map(), nameMark = () => '') {
   }
   if (v === undefined) return null;
   if (kind === 'text[]' || kind === 'categories') return v.length ? v.join(' · ') : null;
+  if (kind === 'lines') return html`<div class="lines">${names.hasRuby(v) ? raw(names.rubyHtml(v)) : v}</div>`;   // 237: line breaks kept (CSS)
   if (kind === 'dimsets') return html`<ul class="names-list">${v.map((s) => html`<li><b>${s.part}</b>: ${dimensionsLib.label(s.cm)}</li>`)}</ul>`;
   if (kind === 'names') {
     // the names of one language together, romanizations after their script (names.byLanguage); i stays the stored place

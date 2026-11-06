@@ -3617,3 +3617,21 @@ test('glossary: a term also in other categories is counted and listed there, its
   await page.goto('/glossary/mappo');
   await expect(page.locator('dt:has-text("Category") + dd')).toContainText('religion · also in politics');
 });
+
+// A literary work's text (API 237): original with furigana line by line, romanization, translation and whose
+test('a literary work\'s text: the original with furigana, the romanization and an own translation, line by line', async ({ page }) => {
+  await page.route(/\/v1\/literary-works\/test-frog$/, (r) => r.fulfill({ json: {
+    type: 'literature', slug: 'test-frog', name: 'The Old Pond', alt_names: [], names: [], kind: 'haiku', kind_term: { slug: 'haiku', name: 'haiku' },
+    written: { from: '1686-01-01', to: '1686-12-31', label: '1686', from_year: 1686, to_year: 1686 }, part_number: null, description_html: null,
+    text_original: '古池や\n蛙飛びこむ\n水の音', text_original_html: '<ruby>古池<rp>(</rp><rt>ふるいけ</rt><rp>)</rp></ruby>や\n蛙飛びこむ\n水の音', text_lang: 'ja',
+    text_romanization: 'furuike ya\nkawazu tobikomu\nmizu no oto', text_translation: 'An old pond —\na frog jumps in:\nthe sound of water.', text_translator: 'own',
+    authors: [], parts: [], editions: [], illustrations: [], part_of: null, images: [], image_url: null, wikidata_id: null, metadata: {}, updated_at: '', relationships: [] } }));
+  await page.goto('/literary-works/test-frog');
+  const text = page.locator('.lit-text');
+  await expect(text.locator('h2')).toHaveText('Text');
+  await expect(text.locator('.lit-text-original')).toHaveAttribute('lang', 'ja');
+  await expect(text.locator('.lit-text-original rt')).toHaveText('ふるいけ');
+  await expect(text.locator('.lit-text-roman')).toHaveAttribute('lang', 'ja-Latn');
+  expect((await text.locator('.lit-text-translation').innerText()).split('\n')).toEqual(['An old pond —', 'a frog jumps in:', 'the sound of water.']);
+  await expect(text).toContainText('Own translation');
+});

@@ -56,6 +56,8 @@ const TYPES = [
   // the author, works of art illustrating it, adaptations as relationships (written_by, illustrates, inspired_by, based_on)
   { type: 'literature', folder: 'literary-works', table: 'literary_works', name: 'name', fields: {
     name: 'name', names: 'names', kind: 'text', parent: 'parent', part_number: 'text', written: 'date',
+    // the text itself (237): a poem, a verse, a passage — line by line; furigana in the original as in names
+    text_original: 'lines', text_lang: 'text', text_romanization: 'lines', text_translation: 'lines', text_translator: 'text',
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   // the bibliography (migration 036): cited in texts with [[source/slug|S. 45]] (src/bibliography.js, src/markdown.js)
   { type: 'source', folder: 'bibliography', table: 'bibliography', name: 'name', fields: {

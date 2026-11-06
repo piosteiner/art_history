@@ -188,6 +188,11 @@ const TYPE_HINTS = {
   'artwork.region': 'Leave it worked out: from where the work was made (“created in”), else its artist, else its movements. Set it only when that is wrong or missing — e.g. a work without an artist. Used by the quizzes: rounds stay in one region.',
   'artist.region': 'Leave it worked out: from where they worked or lived, else where they were born, their nationality or movements. Set it only when that is wrong or missing.',
   'movement.region': 'Leave it worked out: from where its artists worked. Narrower movements take a region set here.',
+  'literature.text_original': 'The text itself, line by line — a poem, a verse, a short passage (not a whole novel: only texts free to use). Furigana as in names: {漢字|かんじ}.',
+  'literature.text_lang': 'Its language: ja, zh, de …',
+  'literature.text_romanization': 'A romanization, line by line (Hepburn for Japanese).',
+  'literature.text_translation': 'A translation, line by line — one that is free to use (published before 1926, or with its translator\'s consent), or your own.',
+  'literature.text_translator': 'Whose translation: "Clay MacCauley, 1917" — or "own".',
   'literature.kind': 'A literary genre of the glossary — its name in any language (Heldenepos, Epos …) links it and is stored as the term\'s name; the work is then found by every name of the genre and of the broader ones. Not a term yet: stays as typed (tale, novel, play, chapter …).',
   'literature.written': html`When it was written — a date as everywhere: <code>c. 1000–1020</code> · <code>early 11th century</code> · <code>1603</code>. The author is a relationship “written by”.`,
   'literature.description_md': html`What it tells — a summary. The works of art that illustrate it are linked from them (“illustrates”); link people and places with <code>[[type/slug]]</code>.`,
@@ -417,6 +422,11 @@ function fieldInput(key, kind, f, ctx) {
     return html`<div class="field${err}" data-key="${key}"><label for="${id}">${label}</label>
       <select id="${id}" name="${name}">${ctx.enumsNullable && ctx.enumsNullable.has(key) ? html`<option value=""${!f[key] ? ' selected' : ''}>${emptyChoice(ctx, key)}</option>` : ''}${ctx.enums[key].map((v) => html`<option value="${v}"${v === f[key] ? ' selected' : ''}>${ENUM_LABELS[`${ctx.type}.${key}.${v}`] || v}</option>`)}</select>${hint(typeHint)}</div>`;
   }
+  if (kind === 'lines') {
+    // several lines kept as typed (237: a poem's text, its romanization, a translation)
+    return html`<div class="field${err}" data-key="${key}"><label for="${id}">${label}</label>
+      <textarea id="${id}" name="${name}" rows="5" class="lines"${key === 'text_original' ? ' lang="ja"' : ''}>${f[key]}</textarea>${hint(typeHint || HINTS[`${ctx.type}.${key}`])}</div>`;
+  }
   if (key === 'definition') {
     return html`<div class="field${err}" data-key="${key}"><label for="${id}">${label}</label>
       <textarea id="${id}" name="${name}" rows="2" maxlength="500">${f[key]}</textarea>${hint(typeHint)}</div>`;
@@ -501,6 +511,7 @@ const SECTIONS = {
     { title: 'Title and names', id: 'names', rows: [['name'], ['names']] },
     { title: 'What and when', id: 'when', rows: [['kind', 'written'],
       g('A chapter or part of a larger work…', ['parent', 'part_number'], 'A chapter of a tale, an act of a play, a poem of an anthology: the whole and its number.')] },
+    { title: 'The text', id: 'poem', rows: [['text_original', 'text_lang'], ['text_romanization'], ['text_translation', 'text_translator']] },
     { title: 'Summary', id: 'text', rows: [['description_md']] },
     IDS(),
   ],
