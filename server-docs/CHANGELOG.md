@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Search page: the name that matched instead of "name"/"text" tags
+- **What:** owner 2026-11-06. A name match whose words the title doesn't show gets "also called “…”" — the first name of
+  the API's `headline_html` holding a marked word (`otherMatchedName()`, `frontend/src/views/search.ts`); the tags
+  "name" and "text" are gone (the type line and the marked passage say it), "provenance" stays (the link opens the step).
+- **Revert:** `git revert`.
+
 ### Glossary: new categories, "style" → "art style", further categories per term (234–236)
 - **What:** owner 2026-11-06 ("other" held 36 terms; "style" alone misleading). 234: enum value `style` renamed `art style`
   (in place — the 17 terms keep it), new values religion, philosophy, aesthetics, politics, society, language, arts and

@@ -1,12 +1,13 @@
 // The search page (/search?q=…&type=artwork): full-text search over names and texts (API 087) — biographies,
-// descriptions, definitions, sources, provenance steps. One row per entry: its name, why it matched (name · text ·
-// provenance) and the matching passage. Filtered by type; more results load while scrolling (no pages). The query is
+// descriptions, definitions, sources, provenance steps. One row per entry: its name and type, the matching passage —
+// for a name match the other name that matched ("also called …"), for a provenance hit a tag and the step's link. Filtered by type; more results load while scrolling (no pages). The query is
 // read by src/query.ts ("gauguin but not in kunsthaus zürich"); a misspelt word is corrected (API 113: nothing found →
 // the correction is searched, with a way back; few found → "did you mean …?"). The header's completion (src/search.ts)
 // stays the quick name search.
 import { applySuggestion, PLURAL, searchText, suggest } from '../api';
 import { describeQuery, parseQuery, textQuery } from '../query';
 import { markedWords } from '../highlight';
+import { fold } from '../fold';
 import { html, PLURAL_LABEL, previewImg, render, trusted, TYPE_LABEL } from '../html';
 import { replaceUrl } from '../router';
 import { wholeKind } from '../series';
@@ -16,11 +17,15 @@ import { showError } from './common';
 const PER_PAGE = 20;
 // the types in the menu's order (src/main.ts NAV)
 const TYPES: EntityType[] = ['artwork', 'artist', 'person', 'institution', 'event', 'literature', 'movement', 'place', 'polity', 'term', 'source'];
-const MATCHED: Record<TextHit['matched_in'], [string, string]> = {
-  name: ['name', 'The name, another name, or a close one'],
-  text: ['text', 'Found in its texts: biography, description, definition …'],
-  provenance: ['provenance', 'Found in its provenance: a holder, a note, the method'],
-};
+/** The matched name the hit's title doesn't show (owner 2026-11-06: "road" found "Yoshida on the Tōkaidō" through its
+ *  other name "Yoshida on the Tōkaidō Road"): the first name of the API's headline holding a marked word — the names
+ *  come joined by " · " — unless every marked word is in the title already. */
+export function otherMatchedName(h: Pick<TextHit, 'name' | 'headline_html' | 'matched_in'>) {
+  if (h.matched_in !== 'name' || !h.headline_html) return null;
+  const words = markedWords(h.headline_html);
+  if (!words.length || words.every((w) => fold(h.name).includes(fold(w)))) return null;
+  return h.headline_html.split(' · ').find((part) => part.includes('<mark>'))?.trim() ?? null;
+}
 
 /**
  * The hit's address: the entry with the matched words to mark (?hl=, src/highlight.ts); a provenance hit at its step.
@@ -80,21 +85,24 @@ export function searchPage(main: HTMLElement, params: URLSearchParams) {
 
   // each hit says what it is: an artwork with its artist and date (the subtitle, API), else its kind and dates; its
   // picture. A whole (series, versions, cycle) is marked as one, with its parts and where they are; a single work says
-  // where it is now. The passage only when the words were found in a text or the provenance — for a name, the other
-  // names (translations, a reading) say nothing new.
+  // where it is now. The passage when the words were found in a text or the provenance; for a name, the name that
+  // matched when the title doesn't show it ("also called …"). No tag for name or text — the type line and the marked
+  // words say it; provenance keeps one (the passage comes from the steps, the link opens the step).
   const hitRow = (h: TextHit) => {
     const g = h.group;
     const what = [g ? 'Group of works' : TYPE_LABEL[h.type], h.subtitle || [h.kind, h.period?.label].filter(Boolean).join(' · ')].filter(Boolean).join(' · ');
     const where = g ? (g.held_by.length ? `Parts in: ${g.held_by.join(', ')}` : '') : h.institution ? `Now in: ${h.institution}` : '';
     const pic = previewImg(h.image_url, h.type === 'artwork' ? h.slug : null, 120, 'card-img text-hit-img');
+    const alias = otherMatchedName(h);
     return html`<li class="text-hit${pic ? ' has-image' : ''}${g ? ' text-hit-group' : ''}">
       ${pic ?? ''}
       <a class="text-hit-name" href="${hitHref(h)}">${h.name}</a>
       ${g ? html`<span class="tag tag-group">${wholeKind({ kind: g.kind, is_group: true, parts: g.parts, parts_count: g.parts_count })}</span>` : ''}
-      <span class="tag tag-matched tag-matched-${h.matched_in}" title="${MATCHED[h.matched_in][1]}">${MATCHED[h.matched_in][0]}</span>
+      ${h.matched_in === 'provenance' ? html`<span class="tag tag-matched tag-matched-provenance" title="Found in its provenance: a holder, a note, the method — the link opens the step">provenance</span>` : ''}
       <span class="muted small text-hit-what">${what}</span>
       ${where ? html`<span class="muted small text-hit-where">${where}</span>` : ''}
       ${h.headline_html && h.matched_in !== 'name' ? html`<p class="text-hit-passage">${trusted(h.headline_html)}</p>` : ''}
+      ${alias ? html`<p class="text-hit-passage text-hit-alias">also called “${trusted(alias)}”</p>` : ''}
     </li>`;
   };
   const among = () => (type ? ` among ${PLURAL_LABEL[PLURAL[type]].toLowerCase()}` : '');

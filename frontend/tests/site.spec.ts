@@ -297,10 +297,10 @@ test('search page (087): Enter opens full-text search — names and texts, why i
   const rows = page.locator('#items .text-hit');
   await expect(rows.first()).toBeVisible();
   await expect(rows.first().locator('.text-hit-name')).toContainText('Gauguin');                 // the name ranks first
-  await expect(rows.first().locator('.tag-matched')).toHaveText('name');
+  await expect(rows.first().locator('.tag-matched')).toHaveCount(0);                             // no tag for a name or a text (2026-11-06)
   await expect(page.locator('#items .text-hit-name[href$="/paul-gauguin"]')).toHaveAttribute('href', /^\/artists\/\d+\/paul-gauguin$/);
   // a match in a text: the passage with the words marked (escaped HTML from the API)
-  await expect(page.locator('#items .text-hit', { has: page.locator('.tag-matched-text') }).first().locator('.text-hit-passage mark').first()).toBeVisible();
+  await expect(page.locator('#items .text-hit .text-hit-passage mark').first()).toBeVisible();
   // by type: the address follows; an older plural (?type=artworks) still works
   await page.locator('#types button', { hasText: 'Artworks' }).click();
   await expect(page).toHaveURL(/\/search\?q=gauguin&type=artwork$/);
@@ -3257,20 +3257,30 @@ test('protection status (API 166): a designation as its own section of the relat
   await expect(group).toContainText('1951');
 });
 
-test('search page: a whole is marked as one, with its parts and where they are; a name match shows no passage (API 131)', async ({ page }) => {
+test('search page: a whole is marked as one, with its parts and where they are; a name match shows the other name that matched (API 131)', async ({ page }) => {
   await page.route(/\/v1\/search\/text\?/, (r) => r.fulfill({ json: { total: 2, data: [
     { type: 'artwork', slug: 'test-group', public_id: 1, path: '/artworks/1/test-group', name: 'Test Group', kind: 'versions', period: null, matched_in: 'name',
       provenance_ids: [], score: 1, headline_html: 'ruran<mark>x</mark> · translations', subtitle: 'Vincent van Gogh, 1889 · versions', image_url: null,
       institution: null, group: { kind: 'versions', parts: 5, parts_count: 5, held_by: ['Museum A', 'Museum B'] } },
+    { type: 'artwork', slug: 'test-road', public_id: 3, path: '/artworks/3/test-road', name: 'Yoshida on the Tōkaidō', kind: null, period: null, matched_in: 'name',
+      provenance_ids: [], score: 1, headline_html: '東海道吉田 · Tōkaidō Yoshida · Yoshida on the Tōkaidō <mark>Road</mark> · Yoshida at Tokaido', subtitle: null, image_url: null, institution: null, group: null },
+    { type: 'artwork', slug: 'test-title', public_id: 4, path: '/artworks/4/test-title', name: 'The Narrow Road', kind: null, period: null, matched_in: 'name',
+      provenance_ids: [], score: 1, headline_html: 'Oku no hosomichi · The Narrow <mark>Road</mark>', subtitle: null, image_url: null, institution: null, group: null },
     { type: 'artwork', slug: 'test-single', public_id: 2, path: '/artworks/2/test-single', name: 'Test Single', kind: 'oil painting', period: null, matched_in: 'text',
       provenance_ids: [], score: 1, headline_html: 'a <mark>passage</mark>', subtitle: 'Vincent van Gogh, 1889 · oil painting', image_url: null, institution: 'Museum A', group: null }] } }));
   await page.goto('/search?q=test');
-  const [group, single] = [page.locator('.text-hit').nth(0), page.locator('.text-hit').nth(1)];
+  const [group, single] = [page.locator('.text-hit').nth(0), page.locator('.text-hit').nth(3)];
   await expect(group.locator('.tag-group')).toHaveText('Versions · 5 parts');
   await expect(group).toContainText('Group of works');
   await expect(group).toContainText('Parts in: Museum A, Museum B');
-  await expect(group.locator('.text-hit-passage')).toHaveCount(0);
+  await expect(group.locator('.text-hit-alias')).toHaveText('also called “ruranx”');
   await expect(single).toContainText('Now in: Museum A');
+  // found by another name: that name, the word marked; the title holds the word itself: nothing more
+  const road = page.locator('.text-hit', { has: page.locator('a[href="/artworks/3/test-road"]') });
+  await expect(road.locator('.text-hit-alias')).toHaveText('also called “Yoshida on the Tōkaidō Road”');
+  await expect(road.locator('.text-hit-alias mark')).toHaveText('Road');
+  await expect(page.locator('.text-hit', { has: page.locator('a[href="/artworks/4/test-title"]') }).locator('.text-hit-alias')).toHaveCount(0);
+  await expect(page.locator('.tag-matched')).toHaveCount(0);
   await expect(single.locator('.text-hit-passage')).toContainText('passage');
 });
 
