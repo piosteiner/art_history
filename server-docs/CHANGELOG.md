@@ -4,6 +4,27 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Content: the course "War and Peace in East Asian Art" (Thomsen, UZH, FS 2019) and its study set
+- **What** (owner 2026-11-06: "take all the resources … and in the end create a study set" — a test of the study sets):
+  from the owner's course files (Google Drive → `/home/ubuntu/books/War and Peace FS19/`: syllabus, image and vocabulary
+  lists of sessions 2–11, the owner's class notes, readings Howes 2006 and Kushner 2011):
+  - Sources: the lecture `thomsen-2019-war-and-peace` (locator = "image list, 1 March 2019", "class notes, …"), Howes
+    2006, Kushner 2011, the Met's records of the two inspection-tour scrolls (1984.16a–c, 1979.5a–d).
+  - From Wikidata (`scripts/from-wikidata.js`, W citations): 17 works (Early Spring, Qingming scroll, Mōko shūrai
+    ekotoba, Hiroshima Panels, Statue of Peace, 9 films/anime as artworks with the lecture's directors and years …),
+    Mito Kōmon, Mimizuka; 19 artists, 4 people, 3 events, 6 places, 2 polities, Water Margin, 10 glossary terms, the
+    Museum Fünf Kontinente and Morinaga.
+  - By hand, cited to the lecture: 26 works without items (the kneeling crossbowman, Seven Worthies bricks, Matabei and
+    Jūnirui scrolls, the Meiji war triptychs, the Fünf Kontinente textiles, wartime ephemera, Fire and Water as parts of
+    the Hiroshima Panels, Ishiuchi, Yu Zhenli, Makoto Aida …); 5 terms (bunbu, rokehan, dujeong-gap from the class notes;
+    multisensory, embodiment from Howes 2006); 13 relationships; 149 field citations; texts from the class notes.
+  - 48 slide images as private reference images of account 1 (source = the lecture, locator = the image list).
+  - Study set 1 "War and Peace in East Asian Art (FS 2019)" (private, account 1): 98 entries in session order.
+  - `scripts/from-wikidata.js --set=field=value` (a form value for every item — a glossary term's category).
+- **Why**: the owner's test of study sets with real course material.
+- **Revert**: delete study set 1 (`DELETE FROM study_sets WHERE id = 1`), the private images whose source is
+  `thomsen-2019-war-and-peace`, and the entries (audit_log, source 'script'/'wikidata', 2026-11-06 afternoon).
+
 ### Sources of names only per name (239); Amidadō's sources corrected
 - **What** (owner 2026-11-06: "why is there a source marker for other names as a whole?"): migration 239 hands each of
   the 436 citations of the field "names" as a whole (340 from Wikidata, 96 from sources) to the names it covered — the

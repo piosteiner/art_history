@@ -12,6 +12,8 @@
 //     --trust-type    the items are of this type even where Wikidata's classes say otherwise (as "Create anyway")
 //     --different=a,b entries of ours (slugs) the duplicate check may name, known to be others (as "it's a different
 //                     one": the July Monarchy is not the Bourbon Restoration)
+//     --set=field=value  a form value the item can't give, for every item (e.g. --set=category=object type: a
+//                     glossary term needs its category)
 //     Q456:its-slug   the slug to use (else one from the item's label)
 // Prints one line per item: Q-id → type/slug, what was created.
 const { adminPool } = require('../src/db');
@@ -34,6 +36,8 @@ if (!t || !qids.length || qids.some((q) => !/^Q[1-9][0-9]*$/.test(q))) {
 const DRY = flag('dry-run');
 const PREFER = opt('prefer-lang');
 const SKIP = (opt('skip') || '').split(',').filter(Boolean);
+const SET = Object.fromEntries(args.filter((a) => a.startsWith('--set=')).map((a) => a.slice(6))
+  .map((kv) => [`f.${kv.slice(0, kv.indexOf('='))}`, kv.slice(kv.indexOf('=') + 1)]));
 
 async function tx(user, fn) {
   const db = await adminPool.connect();
@@ -134,7 +138,7 @@ async function patiently(fn) {
         slug = slugFor[qid] || wikidata.slugify(plan.label || qid);
         const different = (opt('different') || '').split(',').filter(Boolean);
         const okIds = different.length ? (await adminPool.query(`SELECT id::text FROM ${t.table} WHERE slug = ANY ($1)`, [different])).rows.map((r) => r.id) : [];
-        const body = { slug, ...form, ...(flag('trust-type') ? { 'type.ok': '1' } : {}), ...(okIds.length ? { 'dup.ok': okIds } : {}),
+        const body = { slug, ...form, ...SET, ...(flag('trust-type') ? { 'type.ok': '1' } : {}), ...(okIds.length ? { 'dup.ok': okIds } : {}),
           ...(result.pendingImages.length ? { 'wd.images': JSON.stringify(result.pendingImages) } : {}),
           ...(result.pendingIds.length ? { 'wd.ids': JSON.stringify(result.pendingIds) } : {}),
           ...(result.cites.length ? { 'wd.cite': JSON.stringify({ qid, cites: result.cites }) } : {}) };
