@@ -408,12 +408,13 @@ function fieldInput(key, kind, f, ctx) {
     const confirm = (ctx.confirmNew || {})[key];
     return html`<div class="field${err}" data-key="${key}"><label for="${id}">${label}</label>
       <input id="${id}" name="${name}" value="${f[key]}" list="${id}-list" placeholder="start typing a name (typos are fine)" autocomplete="off"
-        data-lookup="${kind === 'parent' ? ctx.type : kind.slice(4)}">
+        data-lookup="${kind === 'parent' ? ctx.type : kind.slice(4)}"${kind === 'parent' && target === 'artwork' ? html` data-quick-new="artwork" data-quick-label="series"` : ''}>
       <datalist id="${id}-list">${options.map((o) => html`<option value="${o.slug}">${o.name}</option>`)}</datalist>
       ${confirm ? html`<label class="choice"><input type="checkbox" name="new.${key}" value="1"> create a new ${target} “${confirm}” anyway</label>` : ''}
       ${hint(typeHint || (canCreate ? `Pick from the list — or type the name of a new ${target}: it is created with the save and marked “to complete”. Empty = none.`
         : placeParent ? 'Pick from the list — or type a country or region name (Japan, Provence-Alpes-Côte d’Azur): it is created with its outline. Empty = none.'
-          : `Slug of the ${kind === 'parent' ? 'parent' : kind.slice(4)}. Empty = none.`))}
+          : kind === 'parent' && target === 'artwork' ? 'Pick the series, album or cycle from the list — or type the title of a new one and choose “+ New series …”: it is created with the save, with this work\'s artist, and marked “to complete”. Empty = none.'
+            : `Slug of the ${kind === 'parent' ? 'parent' : kind.slice(4)}. Empty = none.`))}
       ${key === 'creator' ? hint(ctx.coCreators && ctx.coCreators.length
         ? html`The main creator. Co-creators: ${ctx.coCreators.map((c, i) => html`${i ? ', ' : ''}<b>${c.name}</b>${c.label ? ` (${c.label})` : ''}`)} — changed on the artwork's page.`
         : 'The main creator. Further creators: “+ Add co-creator” on the artwork\'s page.') : ''}</div>`;

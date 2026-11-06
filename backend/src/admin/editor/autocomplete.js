@@ -7,6 +7,7 @@
 //
 //   data-cited="slug,slug"                      those are shown greyed as "already cited here" and can't be picked (a
 //                                               source cites a piece of information once — the citation dialog, 143)
+//   data-quick-label="series"                   the word shown instead of the type ("+ New series “…”" for an artwork's Part of)
 //   data-quick-new="person,institution,artist"  also offers "+ New person “…”" for the name as typed (not for a type that
 //                                               has an entry of exactly that name): value "new:person:Name" — the
 //                                               server creates it on save, flagged "to complete" (src/admin/provenance.js)
@@ -78,7 +79,7 @@ function enhance(input) {
   }
 
   function showChosen(hit) {
-    chosen.textContent = !hit ? '' : hit.quick ? `→ new ${hit.type} “${hit.name}” — created when you save, marked “to complete” on the Quality page`
+    chosen.textContent = !hit ? '' : hit.quick ? `→ new ${input.dataset.quickLabel || hit.type} “${hit.name}” — created when you save, marked “to complete” on the Quality page`
       : `→ ${hit.name} (${hit.type}${hit.period_label ? `, ${hit.period_label}` : ''})`;
   }
 
@@ -100,8 +101,8 @@ function enhance(input) {
       const top = el('div');
       if (h.quick) {
         li.classList.add('ac-new');
-        top.append(el('b', '', `+ New ${h.type} “${h.name}”`));
-        li.append(top, el('div', 'muted small', 'created with this step — complete it later'));
+        top.append(el('b', '', `+ New ${input.dataset.quickLabel || h.type} “${h.name}”`));
+        li.append(top, el('div', 'muted small', 'created when you save — complete it later'));
       } else {
         top.append(el('b', '', h.name), ' ', el('span', 'tag', h.type), ' ', el('span', 'muted', h.period_label || ''));
         li.append(top, el('div', 'muted small', isCited(h) ? 'already cited here' : [h.slug, h.alt].filter(Boolean).join(' · ')));

@@ -26,6 +26,24 @@ const nameFrom = (v) => (SLUG.test(v) ? v.split('-').map((w) => w.charAt(0).toUp
 // `body['new.<key>'] === '1'` confirms creating despite a similar entry.
 async function resolveRefs(db, t, doc, body) {
   const out = { creates: [], errors: [], confirm: {} };
+  // an artwork's "Part of" as "+ New series “…”" (owner 2026-11-06: a series made from the work itself): a whole of the
+  // kind "series" with this work's creator, created with the save and marked "to complete"; one of exactly that title
+  // and kind is taken instead
+  if (t.type === 'artwork' && typeof doc.parent === 'string' && /^new:artwork:/.test(doc.parent.trim())) {
+    const name = doc.parent.trim().slice('new:artwork:'.length).replace(/\s+/g, ' ').trim().slice(0, 200);
+    if (!name) out.errors.push('parent: a new series needs a title.');
+    else {
+      const same = (await db.query(`SELECT a.slug FROM artworks a WHERE lower(f_unaccent(a.title)) = lower(f_unaccent($1)) AND artwork_is_group(a.kind_term_id)`, [name])).rows;
+      if (same.length === 1) doc.parent = same[0].slug;
+      else if (same.length > 1) out.errors.push(`parent: several series are called "${name}" — pick one from the list.`);
+      else {
+        const creator = typeof doc.creator === 'string' && SLUG.test(doc.creator.trim())
+          ? (await db.query("SELECT entity_id('artist', $1) AS id", [doc.creator.trim()])).rows[0].id : null;
+        out.creates.push({ key: 'parent', type: 'artwork', name, extra: { kind: 'series', ...(creator ? { creator_id: creator } : {}) } });
+        doc.parent = slugify(name);   // placeholder that passes validation; the real (free) slug is set when it is created
+      }
+    }
+  }
   for (const [key, kind] of Object.entries(t.fields)) {
     const type = kind.startsWith('ref:') ? kind.slice(4) : kind.startsWith('life:') ? 'place'   // place of birth / death
       : kind === 'parent' && t.type === 'place' ? 'place' : null;

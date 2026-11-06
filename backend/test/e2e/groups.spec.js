@@ -85,3 +85,23 @@ test('a whole in the CMS list: a mosaic of its parts with a mark in the corner',
     sql("DELETE FROM images WHERE artwork_id IN (SELECT id FROM artworks WHERE slug LIKE 'test-mosaic-%'); DELETE FROM artworks WHERE slug LIKE 'test-mosaic-part-%'; DELETE FROM artworks WHERE slug = 'test-mosaic-whole'");
   }
 });
+
+// A series made from the work itself (owner 2026-11-06): "Part of" offers "+ New series “…”" — saved, a whole of the
+// kind "series" with the work's artist exists, the work is its part, the series is marked "to complete".
+test('a new series from a work\'s "Part of": created with the save, with the artist, marked to complete', async ({ userA }) => {
+  sql("DELETE FROM artworks WHERE slug IN ('test-grp-new-part', 'test-grp-new-series')");
+  await userA.goto('/artworks/new');
+  await userA.fill('#f-title', 'Test Grp New Part');
+  await userA.fill('#f-slug', 'test-grp-new-part');
+  await userA.fill('#f-creator', 'paul-gauguin');
+  await userA.click('summary:has-text("Part of a series")');
+  await userA.locator('#f-parent').pressSequentially('Test Grp New Series', { delay: 15 });
+  await userA.locator('.ac-list li.ac-new', { hasText: '+ New series “Test Grp New Series”' }).click();
+  await expect(userA.locator('#f-parent')).toHaveValue('new:artwork:Test Grp New Series');
+  await userA.fill('#f-part_number', '3');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  expect(sql(`SELECT s.slug || ' | ' || s.kind || ' | ' || coalesce((SELECT slug FROM artists WHERE id = s.creator_id), '-') || ' | ' || artwork_is_group(s.kind_term_id)
+    FROM artworks a JOIN artworks s ON s.id = a.parent_id WHERE a.slug = 'test-grp-new-part'`)).toBe('test-grp-new-series | series | paul-gauguin | true');
+  expect(sql("SELECT count(*) FROM auto_created WHERE entity_type = 'artwork' AND entity_id = entity_id('artwork', 'test-grp-new-series')")).toBe('1');
+  sql("DELETE FROM artworks WHERE slug IN ('test-grp-new-part', 'test-grp-new-series')");
+});

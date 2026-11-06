@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### CMS: a new series from a work's "Part of"; unpublished fields marked inside their box
+- **What** (owner 2026-11-06, at Tsuruya Kōkei's print in the British Museum): an artwork's "Part of" picker offers
+  "+ New series “…”" (`data-quick-new="artwork"`, `data-quick-label="series"` in `forms.js`/`editor/autocomplete.js`);
+  on save `autocreate.resolveRefs()` creates a whole of the kind "series" (term → group of works) with the work's
+  artist, flagged "to complete" — a series of exactly that title is taken instead. The marker of a field the working
+  copy changes (`.field.unpublished`) was an outline 6px outside the field and covered the next label in tight groups
+  ("Part of a series…"): now an accent bar and a tint inside the field. Test in `groups.spec.js`.
+- **Why**: a series had to be created on its own page first; the outline broke the layout.
+- **Revert**: `git revert` the commit.
+
 ### Site: the documentation's contents below the header, with where the reader is
 - **What** (owner 2026-11-06): the sticky header's height is kept as `--header-h` (`frontend/src/main.ts`,
   ResizeObserver — it wraps on narrower screens); the documentation's contents stick below it instead of 1rem from the
