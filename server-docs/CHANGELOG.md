@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Content: the "War and Peace" course entries cited to institutions instead of the lecture
+- **What** (owner 2026-11-06: the lecture cannot be cited by anyone who did not attend it): the lecture replaced by
+  museum records, reference works and Wikidata wherever they record the facts — NPM Taipei (Early Spring: dated 1072,
+  silk), ColBase (Obusuma Saburō, Mōko shūrai ekotoba: format, medium, dimensions, ICP / National Treasure, texts),
+  the national museums' union catalogue (Foujita's *Final Fighting on Attu*, MOMAT, indefinite loan, 193.5 × 259.5),
+  Maruki Gallery (Fire = part 2, Water = part 3, 1950, pairs of four-fold screens; the whole 1950–1982, 15 parts),
+  Mori Art Museum (Aida: Takahashi Collection, six-panel screen 169 × 378), Keio University Library (Migita's Weihaiwei
+  triptych; Kiyochika's design identified as 大歯の死術, 1904–1905), Philadelphia Museum of Art (Taguchi, 1976-75-5a–c),
+  ARC/British Museum (Kuniyoshi's Li Jun), Wikidata for the films (first releases: *Millennium Actress* 2001, *Heidi*
+  1974; Grave of the Fireflies → new event bombing of Kobe), Mason p. 236 (Hideyoshi), Daijisen (bunbu), Encyclopedia of
+  Korean Culture (dujeong-gap). New institutions Keio University Library, Takahashi Collection. Texts that only the
+  class notes carried removed (four artists' biographies, the statue's material). 64 lecture citations remain on 19
+  works, two artists, three relationships and one term with no institutional record found (listed to the owner).
+- **Why**: citable sources. **Revert**: audit_log (source 'script', 2026-11-06 evening).
+
 ### Content: the Amitābha Sūtra of 1341 (British Museum 1983,1008,0.1) completed
 - **What** (owner 2026-11-06, with the museum's object record as PDF): number, title "Amitābha Sūtra" with the Korean
   and hanja names (`ko-Hani`, as `nlk.js`), the scribe — new artist Chŏnggo (聰古), active 1340–1341 after the NRICH
