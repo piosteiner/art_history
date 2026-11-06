@@ -16,6 +16,14 @@ Format: date — what — why — how to revert.
   changes no row). The terms are moved as content afterwards (script).
 - **Revert:** `git revert`; `ALTER TABLE glossary DROP COLUMN also_in`; rename the enum value back. Added enum values
   can't be dropped (unused, harmless).
+  Content (same day, script): the 36 terms of "other" moved (religion 11, aesthetics 2, politics 6, society 8, language 2,
+  arts and customs 4; dōshakuga → iconography, shinkeizu and mingei → art style); also in: mappō (politics), chanoyu
+  (aesthetics), degenerate art (art style), samurai (politics), kokugaku (language); 37 new terms, definitions cited to
+  Mason's glossary ("Glossary, s.v. …") and English Wikipedia, names from Wikidata. Moving terms re-links all artworks
+  per term (`glossary_relink_artworks`) — the script raised `statement_timeout` for its own transaction (3 min).
+  Fukuzawa Yukichi, Keio University, the Keio Art Collection described; the shogunate's embassies of 1860, 1862, 1864 as
+  events (Fukuzawa took part in 1860 and 1862); Ōkuma's statue: owner Keio Art Collection, custodian Keio Shiki Senior
+  High School (provenance), Keio's measurements and the date discrepancy with Mason (Keio Object Hub, object 6130).
 
 ### Fields and buttons in the site's design; other names grouped by language
 - **What:** owner 2026-11-06. Site (`frontend/src/style.css`): a base look for fields, selects and buttons with zero
