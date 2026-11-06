@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Search: sources after the entries, under "In the bibliography"
+- **What:** owner 2026-11-06 ("1. yes"). The API already ordered sources last (2026-10-28); `/v1/search/text` now also
+  says how many of the total are sources (`sources`, a window count). The site's search in "All" puts a heading
+  "In the bibliography (n)" before the first source — across scroll batches — and none when a type is chosen
+  (`rowsOf()` in `frontend/src/views/search.ts`; not a list item, so the numbering goes on). Test "sources come last …".
+- **Revert:** `git revert`.
+
+### Content: Mingei as a movement (script)
+- **What:** owner 2026-11-06 ("4. yes" — the aesthetic and the movement). New movement `mingei` (since 1926, Q3314961,
+  East Asia): Mason pp. 345–346, 354, 379–380, 386–387 first, the founding years from en.wikipedia; Yanagi `founded`
+  (1926), Hamada and Leach `member_of`, Hamada's loop dish `associated_with`. The glossary term `mingei` stays (art
+  style), now also in aesthetics, with a line pointing to the movement. Kawai Kanjirō and the Japan Folk Crafts Museum
+  are named, not entries.
+- **Revert:** delete movement `mingei` (its relationships go with it); the term's `also_in`/text from its history page.
+
 ### Site: list filters as tick boxes
 - **What:** owner 2026-11-06 ("select all, clear all or tick one or multiple, similar to the regions in the quiz"). The
   filter chips of the glossary (category), bibliography (reading status), events (kind) and artworks (1933–1945

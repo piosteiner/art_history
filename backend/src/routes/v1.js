@@ -95,7 +95,7 @@ router.get('/search', async (req, res) => {
 // "Gemälden"), accents folded; names also by trigram similarity, so a typo ("Gaugin") still finds the name.
 // ?in= / ?not_in= (113, may repeat): only artworks whose current collection — the institution's names or its city —
 // has every word of the phrase ("kunsthaus zurich", "zurich") / leave those out (other types stay).
-// One row per entry: matched_in name | text | provenance (the provenance steps that matched: provenance_ids),
+// Sources come after every other entry; `sources` = how many of the total are sources. One row per entry: matched_in name | text | provenance (the provenance steps that matched: provenance_ids),
 // headline_html = the matching passage, the words in <mark>. ?type=artwork narrows, ?limit= (≤ 100) & ?offset= page.
 const SEARCH_TYPES = ['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'term', 'source', 'event', 'literature'];
 const escapeHtml = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -140,7 +140,8 @@ router.get('/search/text', async (req, res) => {
            round((coalesce(p.rank, 0) + 0.5 * greatest(word_similarity(f_unaccent($1), f_unaccent(e.name)),
                                                       0.9 * word_similarity(f_unaccent($1), f_unaccent(coalesce(e.alt_text, '')))))::numeric, 3) AS score,
            search_headline(p.body, $1) AS headline,
-           count(*) OVER () AS total
+           count(*) OVER () AS total,
+           count(*) FILTER (WHERE e.type = 'source') OVER () AS source_total   -- the site heads them "In the bibliography"
     FROM entity_index e
     LEFT JOIN per_entry p ON (p.type, p.id) = (e.type, e.id)
     WHERE (p.id IS NOT NULL OR (e.type, e.id) IN (SELECT type, id FROM near))
@@ -153,7 +154,8 @@ router.get('/search/text', async (req, res) => {
   const preview = await previewsOfHits(rows);
   res.json({
     total: rows.length ? Number(rows[0].total) : 0,
-    data: rows.map(({ total, headline, public_id: pid, provenance_ids: ids, ...r }) => ({
+    sources: rows.length ? Number(rows[0].source_total) : 0,
+    data: rows.map(({ total, source_total: _s, headline, public_id: pid, provenance_ids: ids, ...r }) => ({
       ...r, public_id: Number(pid), path: `/${plural[r.type]}/${pid}/${r.slug}`, score: Number(r.score),
       ...preview(r),
       provenance_ids: ids.map(Number),

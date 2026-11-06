@@ -41,6 +41,8 @@ relationships:
       - accessed: 2026-11-02
         property: P27
         wikidata: Q3090171
+  - type: member_of
+    to: movement/mingei
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/e3/Sh%C5%8Dji_Hamada.png
     source_url: https://commons.wikimedia.org/wiki/File:Sh%C5%8Dji_Hamada.png

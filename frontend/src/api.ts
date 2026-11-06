@@ -256,7 +256,7 @@ export const getPreviews = (refs: string[]) =>
 /** Names and texts (087): web-search syntax, stemmed in EN/DE/FR; `type` an entity type ("artwork"). */
 /** notIn (API 113): leave out artworks whose current collection has every word of one of these phrases. */
 export const searchText = (q: string, type: EntityType | null, limit: number, offset: number, notIn: string[] = []) =>
-  get<{ total: number; data: TextHit[] }>('/search/text', { q, type, limit, offset, ...(notIn.length ? { not_in: notIn } : {}) });
+  get<{ total: number; sources?: number; data: TextHit[] }>('/search/text', { q, type, limit, offset, ...(notIn.length ? { not_in: notIn } : {}) });
 
 /** "Did you mean …?" (API 113): the query with its unknown words replaced by the nearest words of our names; null: all known. */
 export interface Suggestion { query: string | null; words: { from: string; to: string; edits: number }[] }

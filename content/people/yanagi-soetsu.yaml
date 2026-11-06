@@ -33,6 +33,10 @@ death: 1961-05-03
 wikidata_id: Q904161
 metadata:
   sources: [Wikidata Q904161 (retrieved 2026-11-01)]
+relationships:
+  - type: founded
+    to: movement/mingei
+    period: 1926
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/e5/Soetsu.JPG
     source_url: https://commons.wikimedia.org/wiki/File:Soetsu.JPG

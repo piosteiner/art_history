@@ -21,6 +21,9 @@ death: 1979-05-06
 wikidata_id: Q2898210
 metadata:
   sources: [Wikidata Q2898210 (retrieved 2026-11-01)]
+relationships:
+  - type: member_of
+    to: movement/mingei
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/9a/Bernard_Leach_1953.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Bernard_Leach_1953.jpg

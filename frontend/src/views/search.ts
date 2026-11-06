@@ -44,6 +44,9 @@ export function searchPage(main: HTMLElement, params: URLSearchParams) {
   let type = TYPES.find((t) => t === asked || PLURAL[t] === asked) ?? null;
   let loaded = 0;
   let total = 0;
+  // "All": the sources come last (API orders them so), under a heading of their own; `lastType` carries across batches
+  let sources = 0;
+  let lastType: EntityType | null = null;
   let loading = false;
   let corrected: string | null = null;   // nothing for the query as typed: its correction is shown
   let suggested: string | null = null;   // few for it: the correction offered
@@ -105,13 +108,20 @@ export function searchPage(main: HTMLElement, params: URLSearchParams) {
       ${alias ? html`<p class="text-hit-passage text-hit-alias">also called “${trusted(alias)}”</p>` : ''}
     </li>`;
   };
+  /** The rows of one batch; in "All", a heading before the first source (owner 2026-11-06: found, but after the entries). */
+  const rowsOf = (hits: TextHit[]) => hits.flatMap((h) => {
+    const head = !type && h.type === 'source' && lastType !== 'source'
+      ? [html`<li class="text-hits-heading"><h2>In the bibliography${sources ? html` <span class="muted">(${String(sources)})</span>` : ''}</h2></li>`] : [];
+    lastType = h.type;
+    return [...head, hitRow(h)];
+  });
   const among = () => (type ? ` among ${PLURAL_LABEL[PLURAL[type]].toLowerCase()}` : '');
 
   /** One batch: the first (from = 0) replaces the list, the next ones are added while scrolling. */
   async function fetchBatch(asked: string, from: number) {
     const parsed = parseQuery(asked);
     const tq = textQuery(parsed);
-    return { parsed, res: tq.q.length < 2 ? { total: 0, data: [] as TextHit[] } : await searchText(tq.q, type, PER_PAGE, from, tq.notIn) };
+    return { parsed, res: tq.q.length < 2 ? { total: 0, sources: 0, data: [] as TextHit[] } : await searchText(tq.q, type, PER_PAGE, from, tq.notIn) };
   }
 
   function drawCount(parsed: ReturnType<typeof parseQuery>) {
@@ -127,7 +137,7 @@ export function searchPage(main: HTMLElement, params: URLSearchParams) {
     const mine = ++request;
     document.title = query ? `“${query}” · Search · Art History` : 'Search · Art History';
     drawTypes();
-    loaded = 0; total = 0; corrected = null; suggested = null;
+    loaded = 0; total = 0; sources = 0; lastType = null; corrected = null; suggested = null;
     render(more, html``);
     if (query.length < 2) {
       render(items, html``);
@@ -155,9 +165,10 @@ export function searchPage(main: HTMLElement, params: URLSearchParams) {
     }
     if (!alive || mine !== request) return;
     total = batch.res.total;
+    sources = batch.res.sources ?? 0;
     loaded = batch.res.data.length;
     drawCount(batch.parsed);
-    render(items, html`${batch.res.data.map(hitRow)}`);
+    render(items, html`${rowsOf(batch.res.data)}`);
     drawMore();
   }
 
@@ -170,7 +181,7 @@ export function searchPage(main: HTMLElement, params: URLSearchParams) {
     try {
       const { res } = await fetchBatch(corrected ?? query, loaded);
       if (!alive || mine !== request) return;
-      items.insertAdjacentHTML('beforeend', res.data.map((h) => String(hitRow(h))).join(''));
+      items.insertAdjacentHTML('beforeend', rowsOf(res.data).map(String).join(''));
       loaded += res.data.length;
       if (!res.data.length) total = loaded;
     } catch (err) {

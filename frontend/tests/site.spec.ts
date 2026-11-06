@@ -3284,6 +3284,21 @@ test('search page: a whole is marked as one, with its parts and where they are; 
   await expect(single.locator('.text-hit-passage')).toContainText('passage');
 });
 
+// Sources last, under their own heading in "All" (owner 2026-11-06); a type chosen: no heading
+test('search page: sources come last under "In the bibliography"', async ({ page }) => {
+  const hit = (type: string, slug: string, name: string) => ({ type, slug, public_id: 1, path: `/x/1/${slug}`, name, kind: null, period: null, matched_in: 'name',
+    provenance_ids: [], score: 1, headline_html: null, subtitle: null, image_url: null, institution: null, group: null });
+  await page.route(/\/v1\/search\/text\?/, (r) => r.fulfill({ json: { total: 3, sources: 2,
+    data: [hit('person', 'mason-p', 'Mason'), hit('source', 'history-of-japanese-art', 'History of Japanese Art'), hit('source', 'mason-2', 'Mason 2')] } }));
+  await page.goto('/search?q=mason');
+  await expect(page.locator('.text-hits-heading')).toHaveCount(1);
+  await expect(page.locator('.text-hits-heading')).toHaveText('In the bibliography (2)');
+  await expect(page.locator('#items > li').nth(1)).toHaveClass(/text-hits-heading/);   // after the person, before the sources
+  await page.goto('/search?q=mason&type=source');
+  await expect(page.locator('.text-hit')).toHaveCount(3);
+  await expect(page.locator('.text-hits-heading')).toHaveCount(0);
+});
+
 // The quiz (API /v1/quiz): the rounds come with their answers and are checked on the site — mocked here, so the
 // answers are known. Typed answers count in any of the work's names, with typos; a year inside its dates.
 const PNG = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==';

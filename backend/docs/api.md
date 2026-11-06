@@ -502,7 +502,8 @@ Web-search syntax: `"a phrase"`, `-excluded`, `or`. Stemmed in English, German a
 Across languages by a word list (102, table `search_synonyms`): a word finds the others of its group — "beschlagnahmt"
 finds "confiscation", "seized", "saisie"; "Zwangsverkauf" finds "forced sale" — and the passage marks what matched.
 Only listed words; a phrase is found as an equivalent but not looked up (searching "forced sale" doesn't find "Zwangsverkauf").
-→ `{total, data: [{type, slug, public_id, path, name, kind, period, subtitle, image_url, matched_in, provenance_ids, score, headline_html}]}`:
+→ `{total, sources, data: [{type, slug, public_id, path, name, kind, period, subtitle, image_url, matched_in, provenance_ids, score, headline_html}]}`:
+- `sources`: how many of `total` are sources (bibliography) — they come after every other entry; the site heads them "In the bibliography".
 - `subtitle`: what it is in one line, as in the previews — an artwork's artist and date ("Vincent van Gogh, January 1889 ·
   oil painting"), a museum's kind and city; `image_url` its picture (both `null` when there is none).
 - `matched_in`: `name` (the name or another name; or only a close name) · `text` (the entry's texts) · `provenance`
