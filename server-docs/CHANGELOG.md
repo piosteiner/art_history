@@ -24,6 +24,10 @@ Format: date — what — why — how to revert.
   takes a term with its narrower ones; detail `kind_term` (site links the kind); the kind citable (P136). Content: the
   genres "epic poem" (Q37484) › "heroic epic" with names and definitions cited to Wikipedia (en Epic poetry, de Epos,
   de Heldendichtung), the Nibelungenlied's kind "heroic epic" cited to de.wikipedia "Nibelungenlied".
+  Then (content, same day): "play" (Q25379) › "Noh play", "Kabuki play", "jōruri play"; "tale" (monogatari) and
+  "diary" (nikki) — definitions cited to Mason, History of Japanese Art (104–105, 110–111, 274–275, 278–279) and the
+  English Wikipedia; Yoroboshi, Kanjinchō, Genji, Murasaki's diary (Wikidata P31/P136) and Sonezaki Shinjū (Wikipedia)
+  linked, their kinds cited.
 - **Revert:** `git revert`; `ALTER TABLE literary_works DROP COLUMN kind_term_id`, drop the functions and the trigger,
   the view as in 217; an enum value can't be dropped (unused, it does no harm).
 
