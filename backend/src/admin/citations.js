@@ -220,7 +220,37 @@ async function websiteSource(db, url, site) {
 // The fields a Wikidata application took (wikidata.apply → cites: [{field, form}]), as citations to be settled:
 // for an existing entry rows with `pending` (the form values expected on publish); for a new one the same list
 // travels in the form (wd.cite) and is settled after Create.
+// Names are cited one by one (239): a source for "the names" goes to each name of the entry — its rows in entry_names
+// (all, or those whose text is in `texts`); a name not published yet (its text in a working copy) gets a waiting source
+// on its text (190, moved to the row by a trigger). cite: {source_id | wikidata_item | text, url, locator, note}.
+// Not twice: a name its source cites already keeps that citation (143).
+async function citeNames(db, type, id, cite, { texts = null, waiting = false, userId = null } = {}) {
+  const same = `((c.source_id IS NOT NULL AND o.source_id = c.source_id) OR (c.wikidata_item IS NOT NULL AND o.wikidata_item = c.wikidata_item)
+    OR (c.text IS NOT NULL AND o.text = c.text))`;
+  const vals = [cite.source_id ?? null, cite.wikidata_item ?? null, cite.text ?? null, cite.url ?? null, cite.locator ?? null, cite.note ?? null, userId];
+  if (waiting) {
+    for (const t of [...new Set((texts || []).map((x) => String(x).trim()).filter(Boolean))]) {
+      await db.query(`INSERT INTO citations (entity_type, entity_id, name_text, source_id, wikidata_item, text, url, locator, note, accessed, pending, created_by)
+        SELECT $8::entity_type, $9, $10, c.source_id, c.wikidata_item, c.text, $4, $5, $6, current_date, jsonb_build_object('__name', $10::text), $7
+          FROM (SELECT $1::bigint AS source_id, $2::text AS wikidata_item, $3::text AS text) c
+         WHERE NOT EXISTS (SELECT 1 FROM citations o WHERE o.entity_type = $8::entity_type AND o.entity_id = $9 AND o.name_text = $10 AND ${same})
+           AND NOT EXISTS (SELECT 1 FROM citations o JOIN entry_names n ON n.id = o.name_id
+                            WHERE n.entity_type = $8::entity_type AND n.entity_id = $9 AND n.text = $10 AND ${same})`, [...vals, type, id, t]);
+    }
+    return;
+  }
+  await db.query(`INSERT INTO citations (name_id, source_id, wikidata_item, text, url, locator, note, accessed, created_by)
+    SELECT n.id, c.source_id, c.wikidata_item, c.text, $4, $5, $6, current_date, $7
+      FROM entry_names n, (SELECT $1::bigint AS source_id, $2::text AS wikidata_item, $3::text AS text) c
+     WHERE n.entity_type = $8::entity_type AND n.entity_id = $9 AND ($10::text[] IS NULL OR n.text = ANY ($10::text[]))
+       AND NOT EXISTS (SELECT 1 FROM citations o WHERE o.name_id = n.id AND ${same})`, [...vals, type, id, texts]);
+}
+// the names in a form's "f.names" (lines "text | lang | role | …")
+const formNames = (form) => String((form || {})['f.names'] || '').split('\n').map((l) => l.split('|')[0].trim()).filter(Boolean);
+
 async function pendingFromWikidata(db, type, id, qid, cites, userId) {
+  // the names Wikidata gave (Apply on the edit page): waiting on their texts until published
+  for (const c of cites.filter((x) => x.field === 'names')) await citeNames(db, type, id, { wikidata_item: qid }, { texts: formNames(c.form), waiting: true, userId });
   const fields = (await citableFields(db))[type] || {};
   for (const c of cites.filter((x) => x.field in fields)) {
     await db.query(`DELETE FROM citations WHERE entity_type = $1 AND entity_id = $2 AND field = $3 AND pending IS NOT NULL`, [type, id, c.field]);
@@ -234,6 +264,7 @@ async function pendingFromSource(db, type, id, sourceSlug, url, cites, userId) {
   const fields = (await citableFields(db))[type] || {};
   const src = (await db.query("SELECT entity_id('source', $1) AS id", [sourceSlug])).rows[0].id;
   if (!src) return;
+  for (const c of cites.filter((x) => x.field === 'names')) await citeNames(db, type, id, { source_id: src, url }, { texts: formNames(c.form), waiting: true, userId });
   for (const c of cites.filter((x) => x.field in fields)) {
     await db.query('DELETE FROM citations WHERE entity_type = $1 AND entity_id = $2 AND field = $3 AND pending IS NOT NULL AND source_id = $4', [type, id, c.field, src]);
     // cited by that source already (a published citation): it stays the one (143) — if the value changes, it shows as outdated
@@ -245,6 +276,10 @@ async function pendingFromSource(db, type, id, sourceSlug, url, cites, userId) {
 }
 // Fields where that source agrees with our value: cited as they are (unless it is cited there already).
 async function citeAgreeingSource(db, type, id, sourceSlug, url, fieldNames, userId) {
+  if (fieldNames.includes('names')) {   // the names agree: each name (239)
+    const src = (await db.query("SELECT entity_id('source', $1) AS id", [sourceSlug])).rows[0].id;
+    if (src) await citeNames(db, type, id, { source_id: src, url }, { userId });
+  }
   await db.query(`INSERT INTO citations (entity_type, entity_id, field, source_id, url, accessed, cited_value, created_by)
     SELECT f.entity_type, er.id, f.field, b.id, $4, current_date, field_value(er.r, f.cols), $5
     FROM citable_fields f JOIN entity_rows er ON er.type = f.entity_type AND er.id = $2 JOIN bibliography b ON b.slug = $3
@@ -278,6 +313,10 @@ async function settle(db, type, id, body, userId) {
   try { wd = body['wd.cite'] ? JSON.parse(String(body['wd.cite'])) : null; } catch { wd = null; }
   if (!wd || !/^Q\d+$/.test(wd.qid || '') || !Array.isArray(wd.cites)) return;
   const fields = (await citableFields(db))[type] || {};
+  // the names taken from Wikidata (as they were kept): each name (239)
+  for (const c of wd.cites.filter((x) => x && x.field === 'names' && x.form && sameForm(x.form, body))) {
+    await citeNames(db, type, id, { wikidata_item: wd.qid }, { texts: formNames(c.form), userId });
+  }
   for (const c of wd.cites.filter((x) => x && x.field in fields && x.form && sameForm(x.form, body))) {
     await db.query(`INSERT INTO citations (entity_type, entity_id, field, wikidata_item, wikidata_property, accessed, cited_value, created_by)
       SELECT f.entity_type, er.id, f.field, $3, f.wikidata_property, current_date, field_value(er.r, f.cols), $4
@@ -295,9 +334,17 @@ async function citeNew(db, type, id, body, userId) {
   const { rows } = await db.query(`
     SELECT f.field FROM citable_fields f JOIN entity_rows er ON er.type = f.entity_type AND er.id = $2
     WHERE f.entity_type = $1::entity_type AND field_value(er.r, f.cols) IS NOT NULL ORDER BY f.position`, [type, id]);
-  if (!rows.length) return [];
-  return add(db, { type, id, field: rows[0].field, also: rows.slice(1).map((r) => r.field),
-    url: v('url'), source: v('source'), locator: v('locator'), note: v('note'), text: v('text') }, userId);
+  const hasNames = (await db.query('SELECT 1 FROM entry_names WHERE entity_type = $1 AND entity_id = $2 LIMIT 1', [type, id])).rows.length > 0;
+  if (!rows.length && !hasNames) return [];
+  const out = rows.length ? await add(db, { type, id, field: rows[0].field, also: rows.slice(1).map((r) => r.field),
+    url: v('url'), source: v('source'), locator: v('locator'), note: v('note'), text: v('text') }, userId) : [];
+  // its names too, each with that source (239) — as the citation just made for the first field has it
+  if (hasNames && rows.length) {
+    const { rows: [c] } = await db.query(`SELECT source_id, wikidata_item, text, url, locator, note FROM citations
+      WHERE entity_type = $1 AND entity_id = $2 AND field = $3 ORDER BY id DESC LIMIT 1`, [type, id, rows[0].field]);
+    if (c) await citeNames(db, type, id, c, { userId });
+  }
+  return out;
 }
 
 // The "Source" section of the new-entry form: a page's link, a source of the bibliography (typed, or one used
@@ -324,6 +371,7 @@ function newEntrySection(recent = [], values = {}) {
 // An entry created from Wikidata in one go (a missing target, a city): every field it has comes from that item.
 async function citeAllFromWikidata(db, type, id, qid, userId = null) {
   if (!/^Q\d+$/.test(qid || '')) return;
+  await citeNames(db, type, id, { wikidata_item: qid }, { userId });   // its names (239)
   await db.query(`INSERT INTO citations (entity_type, entity_id, field, wikidata_item, wikidata_property, accessed, cited_value, created_by)
     SELECT f.entity_type, er.id, f.field, $3, f.wikidata_property, current_date, field_value(er.r, f.cols), $4
     FROM citable_fields f JOIN entity_rows er ON er.type = f.entity_type AND er.id = $2
@@ -333,6 +381,7 @@ async function citeAllFromWikidata(db, type, id, qid, userId = null) {
 // Fields where Wikidata has the same value as we do: cited as they are (unless Wikidata is cited there already).
 async function citeAgreeing(db, type, id, qid, fields, userId = null) {
   if (!/^Q\d+$/.test(qid || '')) return;
+  if (fields.includes('names')) await citeNames(db, type, id, { wikidata_item: qid }, { userId });   // the names agree: each (239)
   await db.query(`INSERT INTO citations (entity_type, entity_id, field, wikidata_item, wikidata_property, accessed, cited_value, created_by)
     SELECT f.entity_type, er.id, f.field, $3, f.wikidata_property, current_date, field_value(er.r, f.cols), $4
     FROM citable_fields f JOIN entity_rows er ON er.type = f.entity_type AND er.id = $2
@@ -460,6 +509,6 @@ function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
       </form></div></details>`;
 }
 
-module.exports = { CitationError, citeNew, newEntrySection, citableFields, forEntity, forRelationships, forProvenance, forNumbers, forNames, forWaitingNames, syncText, add, byId, remove, confirm, pendingFromWikidata, settle,
+module.exports = { citeNames, CitationError, citeNew, newEntrySection, citableFields, forEntity, forRelationships, forProvenance, forNumbers, forNames, forWaitingNames, syncText, add, byId, remove, confirm, pendingFromWikidata, settle,
   pendingFromSource, citeAgreeingSource, citeRelationshipFromSource,
   citeAllFromWikidata, citeAgreeing, citeRelationshipFromWikidata, marker, trigger, recentSources, recentChips, keyOf };

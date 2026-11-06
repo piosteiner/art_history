@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-06
 
+### Sources of names only per name (239); Amidadō's sources corrected
+- **What** (owner 2026-11-06: "why is there a source marker for other names as a whole?"): migration 239 hands each of
+  the 436 citations of the field "names" as a whole (340 from Wikidata, 96 from sources) to the names it covered — the
+  names of its cited value the entry still has (2,300 citations per name; one, of an entry without names now, dropped)
+  — then deletes them and takes "names" off `citable_fields`: no marker beside "Other names" any more. From now on the
+  code cites names one by one (`citeNames()` in `src/admin/citations.js`): creating from Wikidata, the Wikidata
+  comparison and agreeing sources (published names: their rows; names in a working copy: waiting sources on their text,
+  190), and the new-entry form's source. Test in `names.spec.js`.
+  Data: Amidadō (Kobayashi Kokei) — its ten citations had been made with Yoroboshi's ColBase page (A-10508): moved to a
+  new source for A-10547; its image's licence "CC BY 4.0 (ColBase)", credit "ColBase, National Institutes for Cultural
+  Heritage" (the documentation's rule for ColBase).
+- **Why**: a source for "the names" did not say which name it backs, and seemed to back names added later.
+- **Revert**: `git revert`; re-insert `citable_fields ('artwork', 'names', '{names}', 15)`; the per-name citations stay.
+
 ### Institutions: their online collection (238)
 - **What** (owner 2026-11-06: "link all online collections of a museum … only one click away to search in their
   collection"): migration 238 `institutions.collection_url` (http(s) only); CMS field "Online collection" beside

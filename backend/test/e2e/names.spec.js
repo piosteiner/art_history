@@ -234,3 +234,28 @@ test('sources for every name on the edit page, also for names not published yet'
   await expect(userA.locator('.names-row').nth(1).locator('.n-cite .cite-badge.cite-text')).toHaveText('T');
   sql("DELETE FROM institutions WHERE slug = 'test-many-names'");
 });
+
+// Names are cited one by one (239, owner 2026-11-06): the new-entry form's source goes to each name, not to the
+// field "Other names" as a whole — and the field has no sources marker of its own any more.
+test('a new entry\'s source is given to each of its names; "Other names" has no marker of its own', async ({ userA }) => {
+  sql("DELETE FROM artworks WHERE slug = 'test-names-cited'");
+  await userA.goto('/artworks/new');
+  await userA.fill('#f-title', 'Test Names Cited');
+  await userA.fill('#f-slug', 'test-names-cited');
+  const rows = userA.locator('.names-row');
+  await rows.nth(0).locator('.n-text').fill('Test Name One');
+  await rows.nth(0).locator('.n-lang').fill('de');
+  await rows.nth(0).locator('.n-role').selectOption('translation');
+  await userA.click('text=+ Add a name');
+  await rows.nth(1).locator('.n-text').fill('Test Name Two');
+  await rows.nth(1).locator('.n-lang').fill('fr');
+  await rows.nth(1).locator('.n-role').selectOption('translation');
+  await userA.fill('#cite-text', 'Test letter 1901');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  expect(sql(`SELECT string_agg(n.text, ', ' ORDER BY n.text) FROM citations c JOIN entry_names n ON n.id = c.name_id
+              WHERE n.entity_type = 'artwork' AND n.entity_id = entity_id('artwork', 'test-names-cited') AND c.text = 'Test letter 1901'`)).toBe('Test Name One, Test Name Two');
+  expect(sql("SELECT count(*) FROM citations WHERE field = 'names'")).toBe('0');
+  await userA.goto('/artworks/test-names-cited/edit');
+  await expect(userA.locator('.label-row:has(label[for="f-names"]) .cite-trigger')).toHaveCount(0);
+  sql("DELETE FROM artworks WHERE slug = 'test-names-cited'");
+});
