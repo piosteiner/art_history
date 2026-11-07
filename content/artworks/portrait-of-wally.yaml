@@ -5,21 +5,39 @@ names:
   - lang: en
     role: original
     text: Portrait of Wally
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1555137
   - lang: fr
     role: translation
     text: Portrait de Walburga Neuzil
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1555137
   - lang: de
     role: translation
     text: Wally
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1555137
   - lang: zh
     role: translation
     text: 沃莉肖像
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1555137
   - lang: ko
     role: translation
     text: 발리의 초상화
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1555137
   - lang: ru
     role: translation
     text: Портрет Валли
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1555137
 creator: egon-schiele
 created: 1912
 materials: [oil paint, panel]
@@ -182,9 +200,6 @@ provenance:
         source: us-attorney-sdny-2010-wally
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q1555137
   created:
     - accessed: 2026-10-19
       property: P571

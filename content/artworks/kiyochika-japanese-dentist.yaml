@@ -1,0 +1,37 @@
+public_id: 116583
+title_lang: ja
+title: 大歯の死術
+names:
+  - lang: en
+    role: alternative
+    text: Japanese Dentist Pulls out the Tooth of Russian Soldier
+creator: kobayashi-kiyochika
+created: 1904/1905
+kind: Japanese woodblock print
+medium: Colour woodblock print, vertical ōban
+institution: keio-university-library
+web_url: https://objecthub.keio.ac.jp/ja/object/9732
+description_md: "From the series *Nihon banzai hyakusen hyakushō* (Japan Banzai: 100 Selections 100 Smiles) on the [[event/russo-japanese-war]], with texts by Honekawa Dōjin; the title puns on 歯科術, dentistry. Keio University Library keeps it in an album of 85 prints of the series. [[source/keio-objecthub-9732]]"
+relationships:
+  - type: depicts
+    to: event/russo-japanese-war
+    sources:
+      - source: keio-objecthub-9732
+        locator: title (日露戦争)
+        accessed: 2026-11-06
+sources:
+  kind:
+    - source: keio-objecthub-9732
+      accessed: 2026-11-06
+  medium:
+    - source: keio-objecthub-9732
+      accessed: 2026-11-06
+  created:
+    - source: keio-objecthub-9732
+      accessed: 2026-11-06
+  creator:
+    - source: keio-objecthub-9732
+      accessed: 2026-11-06
+  institution:
+    - source: keio-objecthub-9732
+      accessed: 2026-11-06

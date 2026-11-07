@@ -14,6 +14,10 @@ names:
   - lang: it
     role: translation
     text: Le luci del matrimonio
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7476/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
   - lang: de
     role: translation
     text: Die Lichter der Hochzeit
@@ -64,10 +68,6 @@ provenance:
         accessed: 2026-11-02
 sources:
   kind:
-    - url: https://collection.kunsthaus.ch/de/collection/item/7476/
-      source: kunsthaus-zurich-sammlung-online
-      accessed: 2026-11-02
-  names:
     - url: https://collection.kunsthaus.ch/de/collection/item/7476/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-02

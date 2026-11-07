@@ -1,0 +1,41 @@
+public_id: 116533
+name: Karl With
+given_name: Karl
+family_name: With
+kind: person
+occupations: [art historian, university teacher]
+birth: 1891-06-22
+death: 1980-12-18
+wikidata_id: Q1733464
+metadata:
+  sources: [Wikidata Q1733464 (retrieved 2026-11-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Portret_van_Karl_With%2C_RP-F-1996-282.jpg/1280px-Portret_van_Karl_With%2C_RP-F-1996-282.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portret_van_Karl_With,_RP-F-1996-282.jpg
+    license: CC0
+    credit: Rijksmuseum
+identifiers:
+  bnf: 12251615r
+  gnd: "117414379"
+  idref: "067034683"
+  kulturnav: 9e077b12-5a73-42f8-ac82-603215a13a0d
+  lc: no98071139
+  rkd: "475547"
+  viaf: "109753244"
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q1733464
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q1733464
+  death:
+    - accessed: 2026-11-06
+      property: P570
+      wikidata: Q1733464
+  occupations:
+    - accessed: 2026-11-06
+      property: P106
+      wikidata: Q1733464

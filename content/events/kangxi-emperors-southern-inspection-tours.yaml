@@ -1,0 +1,13 @@
+public_id: 116539
+name: Kangxi Emperor's Southern Inspection Tours
+names:
+  - lang: zh
+    role: translation
+    text: 康熙下江南
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q15908924
+description_md: The tours of the [[person/kangxi-emperor]] to the south, painted in a set of handscrolls under [[artist/wang-hui]]; the third scroll leads from Ji'nan to [[place/mount-tai]] ([[artwork/wang-hui-southern-inspection-tour-scroll-three]]). [[source/met-1979-5]]
+wikidata_id: Q15908924
+metadata:
+  sources: [Wikidata Q15908924 (retrieved 2026-11-06)]

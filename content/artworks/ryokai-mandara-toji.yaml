@@ -1,13 +1,28 @@
 public_id: 106765
 title: Ryōkai mandara (Mandalas of the Two Realms), Tōji
 names:
-  - Den-Shingon-in Mandala
-  - Shingon-in Mandala
-  - Sai-in Mandala
-  - Saiin Mandala
+  - text: Den-Shingon-in Mandala
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046388
+  - text: Shingon-in Mandala
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046388
+  - text: Sai-in Mandala
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046388
+  - text: Saiin Mandala
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046388
   - lang: ja
     role: original
     text: "{両界曼荼羅|りょうかいまんだら}"
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046388
 attribution_label: Anonymous
 created: second half of the 9th century
 created_span: uncertain
@@ -37,9 +52,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 126–128, figs. 152–153
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q107046388
   medium:
     - source: history-of-japanese-art
       locator: pp. 126–128, figs. 152–153

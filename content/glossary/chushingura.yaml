@@ -1,0 +1,38 @@
+public_id: 116565
+name: Chūshingura
+names:
+  - text: Chushingura
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q683379
+  - text: Chiushingura
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q683379
+  - lang: ja
+    role: translation
+    text: 忠臣蔵
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q683379
+  - lang: zh
+    role: translation
+    text: 忠臣藏
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q683379
+  - lang: ko
+    role: translation
+    text: 주신구라
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q683379
+category: performing arts
+definition: title given to fictionalized 47 Ronin tales or historical Genroku Akō incident
+wikidata_id: Q683379
+metadata:
+  sources: [Wikidata Q683379 (retrieved 2026-11-06)]
+sources:
+  definition:
+    - accessed: 2026-11-06
+      wikidata: Q683379

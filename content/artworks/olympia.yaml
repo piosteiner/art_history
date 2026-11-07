@@ -5,15 +5,27 @@ names:
   - lang: ja
     role: translation
     text: オランピア
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q737062
   - lang: zh
     role: translation
     text: 奥林比亚
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q737062
   - lang: ko
     role: translation
     text: 올랭피아
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q737062
   - lang: ru
     role: translation
     text: Олимпия
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q737062
 creator: edouard-manet
 created: 1863
 materials: [oil paint, canvas]
@@ -102,9 +114,6 @@ identifiers:
   gnd: 7541559-8
   viaf: "180067591"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q737062
   created:
     - accessed: 2026-10-20
       property: P571

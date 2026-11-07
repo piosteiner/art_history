@@ -5,25 +5,49 @@ names:
   - lang: en
     role: original
     text: Madonna of the Cherubim
-  - The Madonna of the Cherubim
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1150402
+  - text: The Madonna of the Cherubim
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1150402
   - lang: nl
     role: translation
     text: Madonna van de cherubijnen
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1150402
   - lang: fr
     role: translation
     text: La Vierge aux chérubins
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1150402
   - lang: de
     role: translation
     text: Maria mit Kind und Cherubim
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1150402
   - lang: it
     role: original
     text: Madonna col Bambino e un coro di cherubini
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1150402
   - lang: es
     role: translation
     text: Virgen con el Niño y un coro de querubines
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1150402
   - lang: ja
     role: translation
     text: 聖母子と智天使
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1150402
 creator: andrea-mantegna
 created: c. 1485
 created_span: uncertain
@@ -70,9 +94,6 @@ provenance:
         source: pinacoteca-di-brera-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1150402
   created:
     - url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-con-il-bambino-e-coro-di-cherubini-madonna-dei-cherubini/
       source: pinacoteca-di-brera-collezione

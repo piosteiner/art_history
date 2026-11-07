@@ -5,15 +5,27 @@ names:
   - lang: en
     role: alternative
     text: Boreas abducting Orithyia (Ovid, Met. VI)
+    sources:
+      - accessed: 2026-10-21
+        wikidata: Q8253935
   - lang: en
     role: translation
     text: Boreas Abducting Oreithyia
+    sources:
+      - accessed: 2026-10-21
+        wikidata: Q8253935
   - lang: fr
     role: translation
     text: L'Enlèvement d'Orithye par Boreas
+    sources:
+      - accessed: 2026-10-21
+        wikidata: Q8253935
   - lang: es
     role: translation
     text: Bóreas rapta a Oritía
+    sources:
+      - accessed: 2026-10-21
+        wikidata: Q8253935
 creator: peter-paul-rubens
 created: c. 1615
 created_span: uncertain
@@ -65,9 +77,6 @@ provenance:
         source: akademie-gemaeldegalerie-sammlung
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-21
-      wikidata: Q8253935
   medium:
     - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1062/
       note: “Öl auf Holz (Eiche)”

@@ -1,0 +1,40 @@
+public_id: 116525
+name: Taguchi Beisaku
+names:
+  - lang: ja
+    role: original
+    text: 田口米作
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11576386
+  - text: Taguchi Yonesaku
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11576386
+  - text: Beisaku Taguchi
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11576386
+birth: 1864-05
+death: 1903-01-18
+wikidata_id: Q11576386
+metadata:
+  sources: [Wikidata Q11576386 (retrieved 2026-11-06)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/17/Self-portrait_by_Taguchi_Beisaku.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Self-portrait_by_Taguchi_Beisaku.jpg
+    license: Public domain
+    credit: Taguchi Beisaku
+identifiers:
+  lc: n85206991
+  ulan: "500334244"
+  viaf: "53131795"
+sources:
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q11576386
+  death:
+    - accessed: 2026-11-06
+      property: P570
+      wikidata: Q11576386

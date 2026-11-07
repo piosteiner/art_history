@@ -1,0 +1,16 @@
+public_id: 116484
+name: National Palace Museum
+kind: museum
+founded: 1925-10-10
+wikidata_id: Q540668
+metadata:
+  sources: [Wikidata Q540668 (retrieved 2026-11-06)]
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q540668
+  founded:
+    - accessed: 2026-11-06
+      property: P571
+      wikidata: Q540668

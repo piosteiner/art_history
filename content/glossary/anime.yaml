@@ -1,0 +1,57 @@
+public_id: 116558
+name: anime
+names:
+  - text: animé
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1107
+  - text: Japanimation
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1107
+  - text: Japanese animation
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1107
+  - text: Japanime
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1107
+  - lang: ja
+    role: translation
+    text: 日本のアニメ
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1107
+  - lang: zh
+    role: translation
+    text: 日本動畫
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1107
+  - lang: ko
+    role: translation
+    text: 일본 애니메이션
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1107
+  - lang: ru
+    role: translation
+    text: аниме
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1107
+category: object type
+definition: Japanese style of animation
+wikidata_id: Q1107
+metadata:
+  sources: [Wikidata Q1107 (retrieved 2026-11-06)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/76/Anime_video_frame.png
+    source_url: https://commons.wikimedia.org/wiki/File:Anime_video_frame.png
+    license: CC BY 3.0
+    credit: HoneyWorks OFFICIAL
+sources:
+  definition:
+    - accessed: 2026-11-06
+      wikidata: Q1107

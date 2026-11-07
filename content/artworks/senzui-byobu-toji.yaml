@@ -1,14 +1,26 @@
 public_id: 106759
 title: Senzui byōbu (Landscape screen)
 names:
-  - Senzui Byōbu
-  - Landscape
+  - text: Senzui Byōbu
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q65159094
+  - text: Landscape
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q65159094
   - lang: fr
     role: translation
     text: Paravent avec paysage du Tô-ji
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q65159094
   - lang: ja
     role: translation
     text: 旧東寺本山水屏風
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q65159094
 attribution_label: Anonymous
 created: 11th century
 created_span: uncertain
@@ -43,9 +55,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: p. 114, fig. 139
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q65159094
   medium:
     - source: history-of-japanese-art
       locator: p. 114, fig. 139

@@ -1,0 +1,23 @@
+public_id: 116590
+title_lang: en
+title: Five-Year Plan of Xinjing, Manchukuo
+created: 1935
+kind: map
+medium: Lithograph
+description_md: A map insert of Xinjing (today [[place/changchun]]), the capital of [[polity/manchukuo]], as planned. [[source/thomsen-2019-war-and-peace|image list, 17 May 2019]]
+relationships:
+  - type: depicts
+    to: place/changchun
+    sources:
+      - source: thomsen-2019-war-and-peace
+        locator: image list, 17 May 2019
+sources:
+  kind:
+    - source: thomsen-2019-war-and-peace
+      locator: image list, 17 May 2019
+  medium:
+    - source: thomsen-2019-war-and-peace
+      locator: image list, 17 May 2019
+  created:
+    - source: thomsen-2019-war-and-peace
+      locator: image list, 17 May 2019

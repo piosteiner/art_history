@@ -1,0 +1,50 @@
+public_id: 116521
+name: Ishiuchi Miyako
+names:
+  - lang: ja
+    role: original
+    text: 石内都
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q272833
+  - lang: fr
+    role: translation
+    text: Ishiuchi Miyako
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q272833
+  - lang: zh
+    role: translation
+    text: 石內都
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q272833
+  - lang: ko
+    role: translation
+    text: 이시우치 미야코
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q272833
+  - lang: ru
+    role: translation
+    text: Мияко Исиути
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q272833
+birth: 1947-03-27
+wikidata_id: Q272833
+metadata:
+  sources: [Wikidata Q272833 (retrieved 2026-11-06)]
+identifiers:
+  bnf: "135625774"
+  gnd: "122302966"
+  idref: "178678708"
+  lc: n94114828
+  rkd: "383353"
+  ulan: "500122671"
+  viaf: "84195770"
+sources:
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q272833

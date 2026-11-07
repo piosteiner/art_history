@@ -5,15 +5,27 @@ names:
   - lang: en
     role: original
     text: Portrait of a woman
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q21406458
   - lang: en
     role: original
     text: Portrait of a Woman Seated
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q21406458
   - lang: nl
     role: original
     text: Portret van een zittende vrouw
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q21406458
   - lang: de
     role: translation
     text: Bildnis einer jungen Frau
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q21406458
 creator: rembrandt
 created: 1632
 materials: [oil paint, canvas]
@@ -54,9 +66,6 @@ provenance:
         source: akademie-gemaeldegalerie-sammlung
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q21406458
   created:
     - accessed: 2026-10-20
       property: P571

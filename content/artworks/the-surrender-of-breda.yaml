@@ -5,34 +5,89 @@ names:
   - lang: es
     role: alternative
     text: La rendición de Breda
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-26
   - lang: en
     role: original
     text: The Surrender of Breda
-  - La rendicion de Breda
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-26
+  - text: La rendicion de Breda
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-26
   - lang: nl
     role: translation
     text: De overgave van Breda
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-26
   - lang: fr
     role: translation
     text: La Reddition de Bréda
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-26
   - lang: de
     role: translation
     text: Die Übergabe von Breda
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-26
   - lang: it
     role: translation
     text: Resa di Breda
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-26
   - lang: ja
     role: translation
     text: ブレダの開城
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-26
   - lang: zh
     role: translation
     text: 布雷達之降
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-26
   - lang: ko
     role: translation
     text: 브레다의 항복
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-26
   - lang: ru
     role: translation
     text: Сдача Бреды
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-26
 parent: battle-series
 creator: diego-velazquez
 created: c. 1635
@@ -115,11 +170,6 @@ identifiers:
   viaf: "306062542"
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
-      source: museo-del-prado-coleccion
-      accessed: 2024-11-26
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
       source: museo-del-prado-coleccion

@@ -1,0 +1,41 @@
+public_id: 116495
+title: Biographies of Loyal and Righteous Samurai
+title_status: common
+names:
+  - lang: ja
+    role: original
+    text: 誠忠義士傳
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q96479789
+  - text: Seichū gishi den
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q96479789
+  - lang: ja
+    role: original
+    text: 誠忠義士伝
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q96479789
+creator: utagawa-kuniyoshi
+kind: series
+wikidata_id: Q96479789
+metadata:
+  sources: [Wikidata Q96479789 (retrieved 2026-11-06)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/31/No_1_%28BM_1906%2C1220%2C0.1156%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:No_1_(BM_1906,1220,0.1156).jpg
+    license: Public domain
+    credit: "Print artist: Utagawa Kuniyoshi (歌川国芳)"
+sources:
+  kind:
+    - property: P31
+      wikidata: Q96479789
+  creator:
+    - accessed: 2026-11-06
+      property: P170
+      wikidata: Q96479789
+  title_status:
+    - accessed: 2026-11-06
+      wikidata: Q96479789

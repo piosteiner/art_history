@@ -5,37 +5,79 @@ names:
   - lang: en
     role: original
     text: Saint John the Baptist
-  - St. John the Baptist
-  - St John the Baptist
-  - John the Baptist
-  - Saint John the Baptist (Leonardo)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q783215
+  - text: St. John the Baptist
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q783215
+  - text: St John the Baptist
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q783215
+  - text: John the Baptist
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q783215
+  - text: Saint John the Baptist (Leonardo)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q783215
   - lang: nl
     role: translation
     text: Johannes de Doper
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q783215
   - lang: fr
     role: original
     text: Saint Jean-Baptiste
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q783215
   - lang: de
     role: translation
     text: Johannes der Täufer
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q783215
   - lang: it
     role: translation
     text: San Giovanni Battista
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q783215
   - lang: es
     role: translation
     text: San Juan Bautista
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q783215
   - lang: ja
     role: translation
     text: 洗礼者ヨハネ
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q783215
   - lang: zh
     role: translation
     text: 施洗者圣约翰
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q783215
   - lang: ko
     role: translation
     text: 세례자 요한
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q783215
   - lang: ru
     role: translation
     text: Иоанн Креститель
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q783215
 creator: leonardo-da-vinci
 created: 1503/1524
 created_label: c. 1510s
@@ -151,9 +193,6 @@ identifiers:
   gnd: 4350399-8
   viaf: "211736301"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q783215
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010062374
       source: louvre-collections

@@ -4,15 +4,27 @@ names:
   - lang: nl
     role: translation
     text: voorjaar
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q18686388
   - lang: fr
     role: translation
     text: Printemps
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q18686388
   - lang: de
     role: translation
     text: Frühling
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q18686388
   - lang: it
     role: translation
     text: primavera
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q18686388
 parent: the-four-seasons
 creator: pieter-brueghel-the-elder
 created: 1565
@@ -68,9 +80,6 @@ provenance:
         source: albertina-sammlungen-online
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q18686388
   parent:
     - accessed: 2026-10-19
       property: P179

@@ -11,6 +11,8 @@ names:
         note: title on the museum's page (German site)
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-04
+      - accessed: 2026-10-09
+        wikidata: Q48977661
   - lang: de
     role: translation
     text: Kornschober im Sonnenlicht
@@ -20,6 +22,8 @@ names:
         note: title on the museum's page (German site)
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-04
+      - accessed: 2026-10-09
+        wikidata: Q48977661
 creator: claude-monet
 created: 1890s
 created_span: uncertain
@@ -200,9 +204,6 @@ provenance:
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-10-18
 sources:
-  names:
-    - accessed: 2026-10-09
-      wikidata: Q48977661
   created:
     - accessed: 2026-10-09
       property: P571

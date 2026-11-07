@@ -5,27 +5,67 @@ names:
   - lang: pl
     role: alternative
     text: Zwiastowanie
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-09
   - lang: en
     role: translation
     text: Annunciation
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-09
   - lang: fr
     role: translation
     text: L'Annonciation
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-09
   - lang: de
     role: translation
     text: Verkündigung
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-09
   - lang: it
     role: translation
     text: Annunciazione
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-09
   - lang: es
     role: translation
     text: La Anunciación
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-09
   - lang: ja
     role: translation
     text: 受胎告知 (フラ・アンジェリコ、マドリード)
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-09
   - lang: ru
     role: translation
     text: Благовещение
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-09
 creator: fra-angelico
 created: 1425/1426
 kind: painting
@@ -114,11 +154,6 @@ provenance:
         accessed: 2026-04-09
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
-      source: museo-del-prado-coleccion
-      accessed: 2026-04-09
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
       source: museo-del-prado-coleccion

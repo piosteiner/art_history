@@ -1,0 +1,20 @@
+public_id: 116601
+name_lang: ko
+name: dujeong-gap
+names:
+  - lang: ko
+    role: original
+    text: 두정갑
+  - lang: ko-Hani
+    role: original
+    text: 頭釘甲
+  - lang: en
+    role: translation
+    text: Korean armour
+category: object type
+parent: armour
+definition: 'Joseon armour: scales of iron or leather nailed with iron nails inside a coat shaped like a robe, so that from outside only the nail heads (dujeong) show; first recorded in the "Illustrated Treatise on Weapons" of the Gukjo oryeui seorye, published under King Seongjong.'
+sources:
+  definition:
+    - source: encykorea-dujeonggap
+      accessed: 2026-11-06

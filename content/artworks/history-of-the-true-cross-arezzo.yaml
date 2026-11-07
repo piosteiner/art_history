@@ -2,31 +2,58 @@ public_id: 102146
 title_lang: it
 title: Storie della Vera Croce
 names:
-  - The Legend of the True Cross
+  - text: The Legend of the True Cross
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2755131
   - lang: nl
     role: translation
     text: Legende van het echte kruis
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2755131
   - lang: fr
     role: translation
     text: La Légende de la Vraie Croix
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2755131
   - lang: de
     role: translation
     text: Legende vom wahren Kreuz
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2755131
   - lang: it
     role: translation
     text: Storie della Vera Croce
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2755131
   - lang: es
     role: translation
     text: Leyenda de la cruz
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2755131
   - lang: ja
     role: translation
     text: 聖十字架伝説
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2755131
   - lang: zh
     role: translation
     text: 真十字架传奇
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2755131
   - lang: ru
     role: translation
     text: История Животворящего Креста
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2755131
 creator: piero-della-francesca
 created: 1452/1466
 institution: san-francesco-arezzo
@@ -64,9 +91,6 @@ provenance:
         source: wikipedia-it-storie-vera-croce
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2755131
   creator:
     - accessed: 2026-10-20
       property: P170

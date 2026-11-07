@@ -1,0 +1,19 @@
+public_id: 116524
+name: Han Ruozhuo
+given_name: Han
+family_name: Ruozhuo
+names:
+  - lang: zh
+    role: translation
+    text: 韓若拙
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q45611959
+active: early 12th century
+wikidata_id: Q45611959
+metadata:
+  sources: [Wikidata Q45611959 (retrieved 2026-11-06)]
+sources:
+  active:
+    - source: thomsen-2019-war-and-peace
+      locator: image list, 1 March 2019

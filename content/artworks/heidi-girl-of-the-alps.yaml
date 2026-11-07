@@ -1,0 +1,59 @@
+public_id: 116507
+title_lang: en
+title: Heidi, Girl of the Alps
+names:
+  - lang: ja
+    role: original
+    text: アルプスの少女ハイジ
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q715718
+  - text: Alps no Shōjo Heidi
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q715718
+  - text: Alps no Shoujo Heidi
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q715718
+  - lang: nl
+    role: translation
+    text: Heidi
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q715718
+  - lang: zh
+    role: translation
+    text: 阿尔卑斯山的少女
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q715718
+  - lang: ko
+    role: translation
+    text: 알프스 소녀 하이디
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q715718
+creator: isao-takahata
+created: 1974
+kind: anime
+wikidata_id: Q715718
+metadata:
+  sources: [Wikidata Q715718 (retrieved 2026-11-06)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b4/Heidi%2C_a_Girl_of_the_Alps_Logo.gif
+    source_url: https://commons.wikimedia.org/wiki/File:Heidi,_a_Girl_of_the_Alps_Logo.gif
+    license: Public domain
+    credit: The original uploader was Aco at Chinese Wikipedia.
+identifiers:
+  viaf: "301622949"
+sources:
+  kind:
+    - property: P31
+      wikidata: Q715718
+  created:
+    - property: P580
+      wikidata: Q715718
+  creator:
+    - property: P57
+      wikidata: Q715718

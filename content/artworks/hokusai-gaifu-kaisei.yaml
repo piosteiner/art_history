@@ -5,36 +5,75 @@ names:
   - lang: ja
     role: original
     text: 凱風快晴
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3565037
   - lang: en
     role: original
     text: Red Fuji
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3565037
   - lang: ro
     role: original
     text: Vânt sudic, cer senin
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3565037
   - lang: it
     role: original
     text: Vento leggero, mattino sereno
-  - Gaifū kaisei
-  - Gaufu Kaisei
-  - Akafuji
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3565037
+  - text: Gaifū kaisei
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3565037
+  - text: Gaufu Kaisei
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3565037
+  - text: Akafuji
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3565037
   - lang: en
     role: original
     text: Fine Wind, Clear Morning
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3565037
   - lang: fr
     role: translation
     text: Le Fuji par temps clair
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3565037
   - lang: es
     role: translation
     text: Fuji rojo
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3565037
   - lang: ja
     role: original
     text: 富嶽三十六景 凱風快晴
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3565037
   - lang: ko
     role: translation
     text: 남풍에 맑은 날씨
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3565037
   - lang: ru
     role: translation
     text: Победный ветер. Ясный день
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3565037
 parent: thirty-six-views-of-mount-fuji
 part_number: "2"
 creator: katsushika-hokusai
@@ -68,9 +107,6 @@ images:
     license: Public domain
     credit: Art Institute of Chicago, Clarence Buckingham Collection
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q3565037
   parent:
     - accessed: 2026-11-03
       property: P179

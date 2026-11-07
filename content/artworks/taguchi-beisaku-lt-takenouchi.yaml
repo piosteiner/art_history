@@ -1,0 +1,48 @@
+public_id: 116581
+title_lang: en
+title: Scout Takeuchi Fights Desperately at Chungho
+names:
+  - lang: ja-Latn
+    role: original
+    text: Sekkōki Takeuchi-kun Chūwa ni oite funtō zu
+  - lang: en
+    role: alternative
+    text: Picture of the Heroic Fight of the Scout, Lt. Takenouchi, at Chung-Hua during the Sino-Japanese War
+creator: taguchi-beisaku
+created: 1894
+kind: Japanese woodblock print
+medium: Colour woodcut triptych
+dimensions: [39.4, 80]
+dimensions_note: Sheet (ōban tate-e triptych), approximately
+institution: philadelphia-museum-of-art
+inventory_number: 1976-75-5a–c
+web_url: https://philamuseum.org/collection/object/260722
+description_md: Purchased with funds contributed by Peter A. Benoliel, 1976. [[source/pma-1976-75-5]]
+relationships:
+  - type: depicts
+    to: event/first-sino-japanese-war
+    sources:
+      - source: thomsen-2019-war-and-peace
+        locator: image list, 3 May 2019
+sources:
+  kind:
+    - source: pma-1976-75-5
+      accessed: 2026-11-06
+  medium:
+    - source: pma-1976-75-5
+      accessed: 2026-11-06
+  created:
+    - source: pma-1976-75-5
+      accessed: 2026-11-06
+  creator:
+    - source: pma-1976-75-5
+      accessed: 2026-11-06
+  dimensions:
+    - source: pma-1976-75-5
+      accessed: 2026-11-06
+  institution:
+    - source: pma-1976-75-5
+      accessed: 2026-11-06
+  inventory_number:
+    - source: pma-1976-75-5
+      accessed: 2026-11-06

@@ -5,16 +5,31 @@ names:
   - lang: en
     role: original
     text: Farm Garden with Sunflowers
-  - Cottage garden with sunflowers
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19912813
+  - text: Cottage garden with sunflowers
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19912813
   - lang: en
     role: original
     text: Bauerngarten mit Sonnenblumen
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19912813
   - lang: fr
     role: translation
     text: Jardin aux tournesols
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19912813
   - lang: ru
     role: translation
     text: Крестьянский сад с подсолнухами
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19912813
 creator: gustav-klimt
 created: 1906
 materials: [oil paint, canvas]
@@ -97,9 +112,6 @@ provenance:
         source: belvedere-sammlung-online
         accessed: 2026-09-15
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q19912813
   created:
     - accessed: 2026-10-20
       property: P571

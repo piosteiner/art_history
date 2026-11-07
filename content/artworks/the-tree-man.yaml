@@ -4,15 +4,27 @@ names:
   - lang: nl
     role: translation
     text: Boommens
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1968805
   - lang: fr
     role: translation
     text: L'Homme-arbre
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1968805
   - lang: de
     role: translation
     text: Der Baummensch
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1968805
   - lang: es
     role: translation
     text: El hombre árbol
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1968805
 creator: hieronymus-bosch
 created: 1510
 materials: [ink]
@@ -114,9 +126,6 @@ provenance:
         source: aeiou-albertina
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q1968805
   created:
     - accessed: 2026-10-19
       property: P571

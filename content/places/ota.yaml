@@ -1,0 +1,47 @@
+public_id: 116493
+name: Ota
+names:
+  - lang: ja
+    role: original
+    text: 太田市
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q386179
+  - lang: ko
+    role: translation
+    text: 오타시
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q386179
+  - lang: fr
+    role: translation
+    text: Ōta
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q386179
+  - lang: ru
+    role: translation
+    text: Ота
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q386179
+kind: settlement
+parent: gunma
+country_code: JP
+location: [139.37539, 36.29114]
+wikidata_id: Q386179
+metadata:
+  sources: [Wikidata Q386179 (retrieved 2026-11-06)]
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q386179
+  parent:
+    - accessed: 2026-11-06
+      property: P131
+      wikidata: Q386179
+  location:
+    - accessed: 2026-11-06
+      property: P625
+      wikidata: Q386179

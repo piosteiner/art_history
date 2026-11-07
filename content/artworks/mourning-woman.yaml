@@ -5,6 +5,9 @@ names:
   - lang: de
     role: translation
     text: Trauernde Frau
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28797688
 creator: egon-schiele
 created: 1912
 dimensions: [42.5, 34]
@@ -79,9 +82,6 @@ provenance:
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q28797688
   created:
     - accessed: 2026-10-19
       property: P571

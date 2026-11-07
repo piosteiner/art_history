@@ -2,13 +2,22 @@ public_id: 102176
 title_lang: fr
 title: Verrières de la Sainte-Chapelle
 names:
-  - Stained glass windows of Sainte-Chapelle de Vincennes
+  - text: Stained glass windows of Sainte-Chapelle de Vincennes
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q24940224
   - lang: fr
     role: translation
     text: Vitraux de la Sainte-Chapelle du Palais
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q24940224
   - lang: de
     role: translation
     text: Fenster der Sainte-Chapelle (Vincennes)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q24940224
 attribution_label: Unknown Parisian glaziers
 created: c. 1243–1248
 created_span: uncertain
@@ -74,9 +83,6 @@ provenance:
         source: wikipedia-fr-sainte-chapelle
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q24940224
   location:
     - accessed: 2026-10-20
       property: P625

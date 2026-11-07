@@ -1,0 +1,80 @@
+public_id: 116489
+title: Obusuma Saburō Ekotoba
+names:
+  - text: Obusuma Saburō Emaki
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q22118229
+  - text: Illustrated Scroll of Tale of Warrior Obusuma Saburo
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q22118229
+  - lang: fr
+    role: translation
+    text: Rouleau illustré d'Obusuma Saburō
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q22118229
+  - lang: ja
+    role: translation
+    text: 男衾三郎絵詞
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q22118229
+  - lang: ja
+    role: original
+    text: 男衾三郎絵巻
+created: 13th century
+created_span: uncertain
+kind: emakimono
+medium: Colour on paper
+dimensions: [29.3, 1260.9]
+institution: tokyo-national-museum
+inventory_number: A-11889
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-11889
+description_md: "The tale of two warrior brothers of the Kantō: the elder, Yoshimi Jirō, longs for life in the capital and marries a lady who served at court; the younger, Obusuma Saburō, devoted only to the martial arts, marries the plainest woman of the east. Jirō, who has neglected arms, is killed by bandits on his way to guard duty in Kyoto — a story that asks what a warrior's calling is. [[source/colbase-tnm-a-11889]]"
+wikidata_id: Q22118229
+metadata:
+  sources: [Wikidata Q22118229 (retrieved 2026-11-06)]
+relationships:
+  - type: designated_as
+    to: term/important-cultural-property-japan
+    sources:
+      - source: colbase-tnm-a-11889
+        accessed: 2026-11-06
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Kyujutsu07.jpg/1280px-Kyujutsu07.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kyujutsu07.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  kind:
+    - source: colbase-tnm-a-11889
+      accessed: 2026-11-06
+  medium:
+    - source: colbase-tnm-a-11889
+      accessed: 2026-11-06
+  created:
+    - accessed: 2026-11-06
+      property: P571
+      wikidata: Q22118229
+    - source: colbase-tnm-a-11889
+      accessed: 2026-11-06
+  dimensions:
+    - accessed: 2026-11-06
+      property: P2048
+      wikidata: Q22118229
+    - source: colbase-tnm-a-11889
+      accessed: 2026-11-06
+  institution:
+    - accessed: 2026-11-06
+      property: P195
+      wikidata: Q22118229
+    - source: colbase-tnm-a-11889
+      accessed: 2026-11-06
+  inventory_number:
+    - accessed: 2026-11-06
+      property: P217
+      wikidata: Q22118229
+    - source: colbase-tnm-a-11889
+      accessed: 2026-11-06

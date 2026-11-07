@@ -5,21 +5,51 @@ names:
   - lang: en
     role: translation
     text: The Nobleman with his Hand on his Chest
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-26: https://web.archive.org/web/20250226090837/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-26
   - lang: fr
     role: translation
     text: Le Gentilhomme à la main sur la poitrine
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-26: https://web.archive.org/web/20250226090837/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-26
   - lang: de
     role: translation
     text: Bildnis eines Edelmanns mit der Hand auf der Brust
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-26: https://web.archive.org/web/20250226090837/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-26
   - lang: ja
     role: translation
     text: 胸に手を置く騎士
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-26: https://web.archive.org/web/20250226090837/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-26
   - lang: zh
     role: translation
     text: 手放胸口的騎士
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-26: https://web.archive.org/web/20250226090837/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-26
   - lang: ru
     role: translation
     text: Рыцарь с рукой на груди
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-26: https://web.archive.org/web/20250226090837/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-26
 creator: el-greco
 created: c. 1580
 created_span: uncertain
@@ -81,11 +111,6 @@ provenance:
         accessed: 2025-02-26
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-26: https://web.archive.org/web/20250226090837/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6"
-      source: museo-del-prado-coleccion
-      accessed: 2025-02-26
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-26: https://web.archive.org/web/20250226090837/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6"
       source: museo-del-prado-coleccion

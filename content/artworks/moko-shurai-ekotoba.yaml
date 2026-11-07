@@ -1,0 +1,95 @@
+public_id: 116490
+title: Mōko Shūrai Ekotoba
+names:
+  - text: Illustrated Account of the Mongol invasion of Japan
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3087790
+  - text: The Mongol Scroll
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3087790
+  - text: Mongol Scroll
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3087790
+  - text: Illustrated Scrolls of the Mongol Invasions
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3087790
+  - lang: fr
+    role: translation
+    text: Rouleaux illustrés des invasions mongoles
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3087790
+  - lang: ja
+    role: translation
+    text: 蒙古襲来絵詞
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3087790
+  - lang: zh
+    role: translation
+    text: 蒙古襲來繪詞
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3087790
+  - lang: ko
+    role: translation
+    text: 몽고습래회사
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3087790
+created: 1293-03-25
+kind: emakimono
+medium: Colour on paper
+dimensions_note: Upper scroll 35.9–39.5 × 2368.0 cm, lower scroll 36.0–39.5 × 2033.5 cm
+institution: museum-of-the-imperial-collections
+inventory_number: SZK002942
+web_url: https://colbase.nich.go.jp/collection_items/shozokan/SZK002942
+description_md: A pair of handscrolls on the deeds of Takezaki Suenaga, a vassal of Higo Province who fought against the [[event/mongol-invasions-of-japan]] of 1274 and 1281. Pages are out of order, some are lost and other copies are mixed in, but its manners and depiction are of the Kamakura period — a visual record of historical events. Bought for the imperial household in 1890 from Ōyano Jūrō of Kumamoto. [[source/colbase-szk002942]]
+wikidata_id: Q3087790
+metadata:
+  sources: [Wikidata Q3087790 (retrieved 2026-11-06)]
+relationships:
+  - type: depicts
+    to: event/mongol-invasions-of-japan
+    sources:
+      - property: P921
+        wikidata: Q3087790
+  - type: designated_as
+    to: term/national-treasure-japan
+    sources:
+      - source: colbase-szk002942
+        accessed: 2026-11-06
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/M%C5%8Dko_Sh%C5%ABrai_Ekotoba.jpg/1280px-M%C5%8Dko_Sh%C5%ABrai_Ekotoba.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:M%C5%8Dko_Sh%C5%ABrai_Ekotoba.jpg
+    license: Public domain
+    credit: Author unknown. Illustration rolls were ordered by Takezaki Suenaga himself.
+identifiers:
+  viaf: "182834894"
+sources:
+  kind:
+    - source: colbase-szk002942
+      accessed: 2026-11-06
+  medium:
+    - source: colbase-szk002942
+      accessed: 2026-11-06
+  created:
+    - accessed: 2026-11-06
+      property: P571
+      wikidata: Q3087790
+  institution:
+    - accessed: 2026-11-06
+      property: P195
+      wikidata: Q3087790
+    - source: colbase-szk002942
+      accessed: 2026-11-06
+  inventory_number:
+    - accessed: 2026-11-06
+      property: P217
+      wikidata: Q3087790
+    - source: colbase-szk002942
+      accessed: 2026-11-06

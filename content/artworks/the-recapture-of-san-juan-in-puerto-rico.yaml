@@ -2,11 +2,20 @@ public_id: 113404
 title_lang: es
 title: La recuperación de San Juan de Puerto Rico
 names:
-  - Recovery of San Juan de Puerto Rico by Governor Juan de Haro
-  - The recovery of the island of Puerto Rico by Don Juan de Haro
+  - text: Recovery of San Juan de Puerto Rico by Governor Juan de Haro
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q27700873
+  - text: The recovery of the island of Puerto Rico by Don Juan de Haro
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q27700873
   - lang: en
     role: translation
     text: The Recapture of San Juan in Puerto Rico
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q27700873
 parent: battle-series
 creator: eugenio-cajes
 created: 1634/1635
@@ -27,9 +36,6 @@ images:
     license: Public domain
     credit: Eugenio Caxés
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q27700873
   parent:
     - accessed: 2026-11-03
       property: P179

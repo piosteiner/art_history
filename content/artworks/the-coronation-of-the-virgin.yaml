@@ -4,21 +4,39 @@ names:
   - lang: nl
     role: translation
     text: De kroning van Maria
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q129897100
   - lang: fr
     role: translation
     text: Le Couronnement de la Vierge
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q129897100
   - lang: de
     role: translation
     text: Krönung Mariens
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q129897100
   - lang: it
     role: translation
     text: L'Incoronazione della Vergine
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q129897100
   - lang: es
     role: translation
     text: Coronación de la Virgen
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q129897100
   - lang: ru
     role: translation
     text: Коронование Богоматери/Коронация Девы Марии
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q129897100
 creator: antonio-da-fabriano
 created: 1452
 institution: akademie-der-bildenden-kunste-wien
@@ -52,9 +70,6 @@ provenance:
         source: akademie-sammlung-online
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q129897100
   created:
     - accessed: 2026-10-20
       property: P571

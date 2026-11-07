@@ -1,0 +1,42 @@
+public_id: 116526
+name: Migita Toshihide
+names:
+  - lang: ja
+    role: original
+    text: 右田年英
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3075003
+  - text: Oju Toshihide
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3075003
+  - lang: ru
+    role: translation
+    text: Тосихидэ Мигита
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3075003
+birth: 1862
+death: 1925-02-04
+wikidata_id: Q3075003
+metadata:
+  sources: [Wikidata Q3075003 (retrieved 2026-11-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/De_zesde_maand-Rijksmuseum_RP-P-1990-154.jpeg/1280px-De_zesde_maand-Rijksmuseum_RP-P-1990-154.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:De_zesde_maand-Rijksmuseum_RP-P-1990-154.jpeg
+    license: Public domain
+    credit: Migita Toshihide; Migita Toshihide died 1925; Akiyama Buemon
+identifiers:
+  bnf: "167531398"
+  lc: no2021056498
+  viaf: "254791996"
+sources:
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q3075003
+  death:
+    - accessed: 2026-11-06
+      property: P570
+      wikidata: Q3075003

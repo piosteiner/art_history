@@ -5,24 +5,45 @@ names:
   - lang: nl
     role: translation
     text: Het circus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2275610
   - lang: fr
     role: translation
     text: Le Cirque
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2275610
   - lang: it
     role: translation
     text: Il circo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2275610
   - lang: es
     role: translation
     text: El circo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2275610
   - lang: zh
     role: translation
     text: 马戏 (修拉)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2275610
   - lang: ko
     role: translation
     text: 서커스
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2275610
   - lang: ru
     role: translation
     text: Цирк
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2275610
 creator: georges-seurat
 created: 1891
 materials: [oil paint, canvas]
@@ -102,9 +123,6 @@ provenance:
         source: musee-d-orsay-collections
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2275610
   created:
     - accessed: 2026-10-20
       property: P571

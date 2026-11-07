@@ -4,6 +4,9 @@ names:
   - lang: de
     role: translation
     text: Genfersee bei Sonnenuntergang
+    sources:
+      - accessed: 2026-10-09
+        wikidata: Q94663010
 creator: gustave-courbet
 created: 1875
 materials: [oil paint, canvas]
@@ -17,9 +20,6 @@ images:
     license: Public domain
     credit: Gustave Courbet
 sources:
-  names:
-    - accessed: 2026-10-09
-      wikidata: Q94663010
   created:
     - accessed: 2026-10-09
       property: P571

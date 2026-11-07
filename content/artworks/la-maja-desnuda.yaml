@@ -2,29 +2,74 @@ public_id: 101138
 title_lang: es
 title: La maja desnuda
 names:
-  - The nude maja
-  - The Naked Maja
+  - text: The nude maja
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-14: https://web.archive.org/web/20260414032826/https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-14
+  - text: The Naked Maja
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-14: https://web.archive.org/web/20260414032826/https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-14
   - lang: fr
     role: translation
     text: La Maja nue
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-14: https://web.archive.org/web/20260414032826/https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-14
   - lang: de
     role: translation
     text: Die nackte Maja
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-14: https://web.archive.org/web/20260414032826/https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-14
   - lang: it
     role: translation
     text: Maja desnuda
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-14: https://web.archive.org/web/20260414032826/https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-14
   - lang: ja
     role: translation
     text: 裸のマハ
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-14: https://web.archive.org/web/20260414032826/https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-14
   - lang: zh
     role: translation
     text: 裸体的马哈
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-14: https://web.archive.org/web/20260414032826/https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-14
   - lang: ko
     role: translation
     text: 옷 벗은 마하
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-14: https://web.archive.org/web/20260414032826/https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-14
   - lang: ru
     role: translation
     text: Маха обнажённая
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-14: https://web.archive.org/web/20260414032826/https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-14
 creator: francisco-goya
 created: 1795/1800
 kind: oil painting
@@ -124,11 +169,6 @@ provenance:
         accessed: 2026-04-14
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-14: https://web.archive.org/web/20260414032826/https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18"
-      source: museo-del-prado-coleccion
-      accessed: 2026-04-14
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-14: https://web.archive.org/web/20260414032826/https://www.museodelprado.es/coleccion/obra-de-arte/wd/65953b93-323e-48fe-98cb-9d4b15852b18"
       source: museo-del-prado-coleccion

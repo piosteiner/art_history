@@ -5,23 +5,47 @@ names:
   - lang: ja
     role: original
     text: 甲州石班沢
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q17227585
   - lang: ja
     role: original
     text: 甲州石班澤
-  - Kōshū Kajikazawa
-  - Koshu Kajikazawa
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q17227585
+  - text: Kōshū Kajikazawa
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q17227585
+  - text: Koshu Kajikazawa
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q17227585
   - lang: fr
     role: translation
     text: Le pêcheur de Kajikazawa
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q17227585
   - lang: es
     role: translation
     text: Kajikazawa en la provincia de Kai
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q17227585
   - lang: ja
     role: original
     text: 富嶽三十六景 甲州石班澤
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q17227585
   - lang: ko
     role: translation
     text: 고슈의 가지카자와
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q17227585
 parent: thirty-six-views-of-mount-fuji
 part_number: "15"
 creator: katsushika-hokusai
@@ -55,9 +79,6 @@ images:
     license: Public domain
     credit: Art Institute of Chicago, Clarence Buckingham Collection
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q17227585
   parent:
     - accessed: 2026-11-03
       property: P179

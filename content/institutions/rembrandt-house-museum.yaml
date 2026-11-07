@@ -6,6 +6,7 @@ place: amsterdam
 location: [4.90139, 52.36944]
 address: Jodenbreestraat 4
 website_url: https://www.rembrandthuis.nl/nl/
+collection_url: https://collectie.rembrandthuis.nl/ais/search/
 wikidata_id: Q277316
 metadata:
   sources: [Wikidata Q277316 (retrieved 2026-10-28)]

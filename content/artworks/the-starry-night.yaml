@@ -5,6 +5,9 @@ names:
   - lang: de
     role: translation
     text: Sternennacht
+    sources:
+      - accessed: 2026-10-09
+        wikidata: Q45585
 creator: vincent-van-gogh
 created: 1889-06
 kind: painting
@@ -103,9 +106,6 @@ identifiers:
   gnd: 4209985-7
   viaf: "176354386"
 sources:
-  names:
-    - accessed: 2026-10-09
-      wikidata: Q45585
   creator:
     - accessed: 2026-10-09
       property: P170

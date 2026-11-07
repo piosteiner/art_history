@@ -2,33 +2,66 @@ public_id: 101688
 title_lang: fr
 title: Vénus de Milo
 names:
-  - Aphrodite of Milos
-  - Venus of Milo
-  - Venus de Milo (Aphrodite of Milos)
+  - text: Aphrodite of Milos
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151952
+  - text: Venus of Milo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151952
+  - text: Venus de Milo (Aphrodite of Milos)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151952
   - lang: en
     role: translation
     text: Venus de Milo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151952
   - lang: nl
     role: translation
     text: Venus van Milo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151952
   - lang: de
     role: translation
     text: Venus von Milo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151952
   - lang: it
     role: translation
     text: Venere di Milo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151952
   - lang: ja
     role: translation
     text: ミロのヴィーナス
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151952
   - lang: zh
     role: translation
     text: 米洛的维纳斯
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151952
   - lang: ko
     role: translation
     text: 밀로의 비너스
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151952
   - lang: ru
     role: translation
     text: Венера Милосская
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151952
 attribution_label: Unknown Hellenistic sculptor
 created: c. 150 BCE–125 BCE
 created_span: uncertain
@@ -122,9 +155,6 @@ identifiers:
   gnd: 4206801-0
   viaf: "195011024"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q151952
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010277627
       source: louvre-collections

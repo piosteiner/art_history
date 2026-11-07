@@ -1,0 +1,65 @@
+public_id: 116566
+name: irezumi
+names:
+  - text: Japanese tattoo
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3183723
+  - text: Japanese tattooing
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3183723
+  - text: traditional Japanese tattooing
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3183723
+  - text: traditional Japanese tattoo
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3183723
+  - text: tattooing in Japan
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3183723
+  - text: Horimono
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3183723
+  - lang: ja
+    role: translation
+    text: 入れ墨
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3183723
+  - lang: zh
+    role: translation
+    text: 日本的纹身
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3183723
+  - lang: ko
+    role: translation
+    text: 이레즈미
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3183723
+  - lang: ru
+    role: translation
+    text: Ирэдзуми
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3183723
+category: arts and customs
+definition: several forms of traditional Japanese tattooing
+wikidata_id: Q3183723
+metadata:
+  sources: [Wikidata Q3183723 (retrieved 2026-11-06)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2e/Horimono_ni%C3%B1o_Kintar%C3%B4_luchando_contra_carpa_gigante.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Horimono_ni%C3%B1o_Kintar%C3%B4_luchando_contra_carpa_gigante.jpg
+    license: CC BY-SA 2.0
+    credit: stekler
+sources:
+  definition:
+    - accessed: 2026-11-06
+      wikidata: Q3183723

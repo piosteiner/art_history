@@ -1,0 +1,104 @@
+public_id: 116552
+name: Manchukuo
+names:
+  - text: Manzhouguo
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - text: Manshu-koku
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - text: Manchu state
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - text: State of Manchuria
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - text: Empire of Manchuria
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - text: Empire of Great Manchuria
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - text: Great Manchuria
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - text: Manchoutikuo
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - text: Manzhou Diguo
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - text: Manzhoudiguo
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - text: Manchuria
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - lang: nl
+    role: translation
+    text: Mantsjoekwo
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - lang: fr
+    role: translation
+    text: Mandchoukouo
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - lang: de
+    role: translation
+    text: Mandschukuo
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - lang: it
+    role: translation
+    text: Manciukuò
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - lang: ja
+    role: translation
+    text: 満洲国
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - lang: zh
+    role: translation
+    text: 满洲国
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - lang: ko
+    role: translation
+    text: 만주국
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+  - lang: ru
+    role: translation
+    text: Маньчжоу-Го
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q30623
+period: 1 March 1932 – 18 August 1945
+wikidata_id: Q30623
+metadata:
+  sources: [Wikidata Q30623 (retrieved 2026-11-06)]
+sources:
+  period:
+    - accessed: 2026-11-06
+      property: P571
+      wikidata: Q30623

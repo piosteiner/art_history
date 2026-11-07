@@ -1,0 +1,47 @@
+public_id: 116504
+title: Steamboy
+title_status: common
+names:
+  - lang: ja
+    role: original
+    text: スチームボーイ
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1315185
+  - lang: zh
+    role: translation
+    text: 蒸汽男孩
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1315185
+  - lang: ko
+    role: translation
+    text: 스팀보이
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1315185
+  - lang: ru
+    role: translation
+    text: Стимбой
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1315185
+creator: katsuhiro-otomo
+created: 2004
+kind: anime
+wikidata_id: Q1315185
+metadata:
+  sources: [Wikidata Q1315185 (retrieved 2026-11-06)]
+sources:
+  kind:
+    - property: P31
+      wikidata: Q1315185
+  created:
+    - property: P577
+      wikidata: Q1315185
+  creator:
+    - property: P57
+      wikidata: Q1315185
+  title_status:
+    - accessed: 2026-11-06
+      wikidata: Q1315185

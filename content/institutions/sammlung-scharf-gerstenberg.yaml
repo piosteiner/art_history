@@ -11,6 +11,7 @@ place: berlin
 location: [13.2967, 52.5191]
 address: Schloßstraße 70, 14059 Berlin
 website_url: https://www.smb.museum/museen-und-einrichtungen/sammlung-scharf-gerstenberg/home.html
+collection_url: https://search.smb.museum/?sammlungen=Nationalgalerie
 wikidata_id: Q322010
 metadata:
   sources: [Wikidata Q322010 (retrieved 2026-10-27)]

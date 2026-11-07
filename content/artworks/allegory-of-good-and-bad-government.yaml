@@ -2,29 +2,56 @@ public_id: 102158
 title_lang: it
 title: Allegoria ed effetti del Buono e del Cattivo Governo
 names:
-  - Good and Bad Government
-  - The Allegory and Effects of Good and Bad Government
+  - text: Good and Bad Government
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2401235
+  - text: The Allegory and Effects of Good and Bad Government
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2401235
   - lang: en
     role: original
     text: The Allegory of Good and Bad Government
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2401235
   - lang: nl
     role: translation
     text: Allegorie van het goede en slechte bestuur
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2401235
   - lang: fr
     role: translation
     text: Les Effets du bon et du mauvais gouvernement
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2401235
   - lang: it
     role: translation
     text: Allegoria ed effetti del Buono e del Cattivo Governo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2401235
   - lang: es
     role: translation
     text: Alegoría del Buen y del Mal Gobierno
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2401235
   - lang: ja
     role: translation
     text: 善政の効果
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2401235
   - lang: zh
     role: translation
     text: 好政府与坏政府的寓言
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2401235
 creator: ambrogio-lorenzetti
 created: 1338-02/1339-05
 created_span: duration
@@ -32,6 +59,7 @@ kind: fresco
 dimensions: [200, 770]
 dimensions_note: Masse nach Wikidata; 770 cm entsprechen der Breite der Schmalwand, der ganze Saal misst etwa 7,7 × 14,4 m
 institution: palazzo-pubblico
+web_url: https://museocivico.comune.siena.it/opere/allegoria-del-buon-governo
 location: [11.33194, 43.31801]
 description_md: |-
   Ambrogio Lorenzetti malte die Fresken für die Sala dei Nove, auch Sala della Pace, im [[institution/palazzo-pubblico|Palazzo Pubblico]] von Siena, den Saal des Governo dei Nove, der die Stadt regierte; Dokumente belegen seine Arbeit vom Februar 1338 bis zum Mai 1339.[[source/wikipedia-it-buon-governo]] Die Neun, eine der wichtigsten Magistraturen der Republik, waren von 1287 bis 1355 im Amt.[[source/finestre-sull-arte-2022-buongoverno]]
@@ -111,9 +139,6 @@ provenance:
 sources:
   kind:
     - source: wikipedia-it-buon-governo
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2401235
   created:
     - source: wikipedia-it-buon-governo
   creator:

@@ -1,0 +1,41 @@
+public_id: 116509
+title: Appleseed
+title_status: common
+names:
+  - lang: ja
+    role: original
+    text: アップルシード
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1230691
+  - lang: zh
+    role: translation
+    text: 蘋果核戰
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1230691
+  - lang: ko
+    role: translation
+    text: 애플시드
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1230691
+creator: shinji-aramaki
+created: 2004
+kind: anime
+wikidata_id: Q1230691
+metadata:
+  sources: [Wikidata Q1230691 (retrieved 2026-11-06)]
+sources:
+  kind:
+    - property: P31
+      wikidata: Q1230691
+  created:
+    - property: P577
+      wikidata: Q1230691
+  creator:
+    - property: P57
+      wikidata: Q1230691
+  title_status:
+    - accessed: 2026-11-06
+      wikidata: Q1230691

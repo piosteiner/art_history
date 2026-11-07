@@ -5,22 +5,43 @@ names:
   - lang: pl
     role: original
     text: Skrzydło kraski
-  - The Wing of a Roller
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q21151884
+  - text: The Wing of a Roller
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q21151884
   - lang: en
     role: translation
     text: Wing of a European Roller
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q21151884
   - lang: nl
     role: translation
     text: Vleugel van een scharrelaar
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q21151884
   - lang: fr
     role: translation
     text: Aile de Rollier bleu
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q21151884
   - lang: es
     role: translation
     text: Ala de una carraca europea
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q21151884
   - lang: ru
     role: translation
     text: Крыло Сизоворонки
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q21151884
 creator: albrecht-durer
 created: 1500
 materials: [parchment, watercolor paint, gouache paint]
@@ -132,9 +153,6 @@ provenance:
         source: aeiou-albertina
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q21151884
   created:
     - accessed: 2026-10-19
       property: P571

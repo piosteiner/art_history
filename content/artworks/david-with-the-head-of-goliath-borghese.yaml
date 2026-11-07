@@ -5,30 +5,57 @@ names:
   - lang: en
     role: translation
     text: David with the Head of Goliath
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2627056
   - lang: nl
     role: translation
     text: David met het hoofd van Goliath
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2627056
   - lang: fr
     role: translation
     text: David avec la tête de Goliath
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2627056
   - lang: de
     role: translation
     text: David mit dem Haupt des Goliath
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2627056
   - lang: es
     role: translation
     text: David con la cabeza de Goliat
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2627056
   - lang: ja
     role: translation
     text: ゴリアテの首を持つダヴィデ (カラヴァッジョ、ボルゲーゼ美術館)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2627056
   - lang: zh
     role: translation
     text: 大衛與歌利亞的頭顱
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2627056
   - lang: ko
     role: translation
     text: 골리앗의 머리를 든 다윗
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2627056
   - lang: ru
     role: translation
     text: Давид с головой Голиафа
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2627056
 creator: caravaggio
 created: 1606/1610
 materials: [oil paint, canvas]
@@ -110,9 +137,6 @@ provenance:
         source: galleria-borghese-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2627056
   created:
     - url: https://www.collezionegalleriaborghese.it/opere/david-con-la-testa-di-golia
       source: galleria-borghese-collezione

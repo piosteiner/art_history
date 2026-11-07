@@ -5,35 +5,71 @@ names:
   - lang: en
     role: original
     text: L’Absinthe
-  - The Absinthe Drinker
-  - Glass of Absinthe
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1239950
+  - text: The Absinthe Drinker
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1239950
+  - text: Glass of Absinthe
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1239950
   - lang: en
     role: original
     text: L'Absinthe
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1239950
   - lang: nl
     role: translation
     text: De absintdrinkster
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1239950
   - lang: de
     role: translation
     text: Der Absinth
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1239950
   - lang: it
     role: translation
     text: L'assenzio
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1239950
   - lang: es
     role: translation
     text: El ajenjo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1239950
   - lang: ja
     role: translation
     text: アブサントを飲む人
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1239950
   - lang: zh
     role: translation
     text: 咖啡館裡
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1239950
   - lang: ko
     role: translation
     text: 압생트
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1239950
   - lang: ru
     role: translation
     text: Абсент
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1239950
 creator: edgar-degas
 created: 1875/1876
 materials: [oil paint, canvas]
@@ -158,9 +194,6 @@ provenance:
         source: musee-d-orsay-collections
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1239950
   created:
     - url: https://www.musee-orsay.fr/fr/oeuvres/dans-un-cafe-1147
       source: musee-d-orsay-collections

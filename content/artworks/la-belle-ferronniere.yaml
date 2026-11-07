@@ -2,30 +2,60 @@ public_id: 101698
 title_lang: fr
 title: Portrait de femme, dit à tort La Belle Ferronnière
 names:
-  - Portrait of a Woman
-  - Portrait of a Lady from the Court of Milan
-  - La belle ferronnière
+  - text: Portrait of a Woman
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q656434
+  - text: Portrait of a Lady from the Court of Milan
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q656434
+  - text: La belle ferronnière
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q656434
   - lang: nl
     role: translation
     text: Portret van een dame
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q656434
   - lang: de
     role: translation
     text: Porträt einer Dame
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q656434
   - lang: it
     role: translation
     text: Belle Ferronnière
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q656434
   - lang: es
     role: translation
     text: La Belle Ferronière
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q656434
   - lang: ja
     role: translation
     text: ミラノの貴婦人の肖像
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q656434
   - lang: zh
     role: translation
     text: 美麗的費隆妮葉夫人
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q656434
   - lang: ru
     role: translation
     text: Прекрасная Ферроньера
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q656434
 creator: leonardo-da-vinci
 created: c. 1490–1497
 created_span: uncertain
@@ -86,9 +116,6 @@ identifiers:
   gnd: 7539248-3
   viaf: "182027552"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q656434
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010062372
       source: louvre-collections

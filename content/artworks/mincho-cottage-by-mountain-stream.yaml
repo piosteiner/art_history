@@ -1,11 +1,20 @@
 public_id: 107364
 title: Cottage by a Mountain Stream
 names:
-  - Small Cottage by a Mountain Stream
-  - Cottage in a Shaded Valley
+  - text: Small Cottage by a Mountain Stream
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046871
+  - text: Cottage in a Shaded Valley
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046871
   - lang: ja
     role: translation
     text: 渓陰小築図
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046871
 creator: mincho
 attribution_label: attributed to Minchō
 created: 1413
@@ -34,9 +43,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 218, 221, fig. 254
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q107046871
   medium:
     - source: history-of-japanese-art
       locator: pp. 218, 221, fig. 254

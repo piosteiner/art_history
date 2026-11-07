@@ -2,22 +2,40 @@ public_id: 101947
 title_lang: it
 title: Sacra Famiglia, detta Tondo Doni
 names:
-  - Holy family
+  - text: Holy family
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1473546
   - lang: en
     role: translation
     text: Doni Tondo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1473546
   - lang: ja
     role: translation
     text: 聖家族
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1473546
   - lang: zh
     role: translation
     text: 聖家庭與聖約翰
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1473546
   - lang: ko
     role: translation
     text: 성가족
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1473546
   - lang: ru
     role: translation
     text: Мадонна Дони
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1473546
 creator: michelangelo
 created: 1505/1506
 created_label: 1500s
@@ -76,9 +94,6 @@ provenance:
 identifiers:
   gnd: 4361149-7
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1473546
   created:
     - url: https://www.uffizi.it/en/artworks/holy-family-known-as-the-doni-tondo
       source: uffizi-artworks

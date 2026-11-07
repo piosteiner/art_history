@@ -1,0 +1,101 @@
+public_id: 116541
+name: Suzhou
+names:
+  - text: Soochow
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q42622
+  - text: Suzhou, Jiangsu
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q42622
+  - text: Soochoo
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q42622
+  - text: Suchow
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q42622
+  - text: Su-chou
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q42622
+  - text: Suzhou, China
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q42622
+  - text: Wu
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q42622
+  - text: Woo
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q42622
+  - text: Soo Chow
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q42622
+  - text: Soutchew
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q42622
+  - text: Suchew
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q42622
+  - text: Suzhou City, Jiangsu Province
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q42622
+  - text: Suzhou City
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q42622
+  - lang: ja
+    role: translation
+    text: 蘇州市
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q42622
+  - lang: zh
+    role: translation
+    text: 苏州市
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q42622
+  - lang: ko
+    role: translation
+    text: 쑤저우시
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q42622
+  - lang: ru
+    role: translation
+    text: Сучжоу
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q42622
+kind: settlement
+parent: jiangsu
+country_code: CN
+location: [120.61944, 31.3]
+wikidata_id: Q42622
+metadata:
+  sources: [Wikidata Q42622 (retrieved 2026-11-06)]
+identifiers:
+  gnd: 4247872-8
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q42622
+  parent:
+    - accessed: 2026-11-06
+      property: P131
+      wikidata: Q42622
+  location:
+    - accessed: 2026-11-06
+      property: P625
+      wikidata: Q42622

@@ -1,0 +1,182 @@
+public_id: 116531
+name: Qianlong Emperor
+names:
+  - kind: birth
+    lang: mnc
+    role: alternative
+    text: ᡥᡠᠩ ᠯᡳ
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - kind: art_name
+    role: alternative
+    text: 長春居士
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - kind: art_name
+    role: alternative
+    text: 古稀天子
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - kind: art_name
+    role: alternative
+    text: 十全老人
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - kind: art_name
+    role: alternative
+    text: 信天主人
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Chien-lung Emperor
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Hung-li
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Hongli
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Hong Li
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Fatianlongyunzhichengxianjiaotiyuanlijifuwenfenwuqinmingxiaocishenshengchunhuangdi
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Shiquanlaoren
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Xintianzhuren
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Changchunjushi
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Guxitianzi
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Emperor Gaozong of Qing
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Tchien Lung the great emperor
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Perfect Old Sage
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Kien-long
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Emperor Kien-long
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Khien-long
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Emperor Khien-long
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Kien-long Emperor
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Khien-long Emperor
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Qianlong
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Gaozong
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Kienlung
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Emperor Kienlung
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - text: Kienlung Emperor
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - lang: ja
+    role: translation
+    text: 乾隆帝
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - lang: ko
+    role: translation
+    text: 건륭제
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+  - lang: ru
+    role: translation
+    text: Айсиньгьоро Хунли
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q19133
+kind: person
+occupations: [calligrapher, monarch, poet, art collector]
+birth: 1711-09-25
+death: 1799-02-07
+wikidata_id: Q19133
+metadata:
+  sources: [Wikidata Q19133 (retrieved 2026-11-06)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/59/Portrait_of_the_Qianlong_Emperor_in_Court_Dress.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_the_Qianlong_Emperor_in_Court_Dress.jpg
+    license: Public domain
+    credit: Unidentified painter
+identifiers:
+  bnf: "120344066"
+  gnd: "119080648"
+  idref: "028525264"
+  kulturnav: 8a6484d9-93fa-45a2-8e29-9a67725f8b8e
+  lc: n83047720
+  nlk: KAC201717738
+  ulan: "500372572"
+  viaf: "44314689"
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q19133
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q19133
+  death:
+    - accessed: 2026-11-06
+      property: P570
+      wikidata: Q19133
+  occupations:
+    - accessed: 2026-11-06
+      property: P106
+      wikidata: Q19133

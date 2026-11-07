@@ -5,27 +5,51 @@ names:
   - lang: en
     role: translation
     text: Presentation at the Temple
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3910903
   - lang: nl
     role: translation
     text: Voorstelling in de tempel
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3910903
   - lang: fr
     role: translation
     text: Présentation de Jésus au Temple
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3910903
   - lang: de
     role: translation
     text: Vorstellung im Tempel
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3910903
   - lang: it
     role: original
     text: Presentazione al Tempio
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3910903
   - lang: es
     role: translation
     text: Presentación del Niño en el Templo
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3910903
   - lang: ja
     role: translation
     text: 神殿奉献
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3910903
   - lang: zh
     role: translation
     text: 廟宇獻聖 (羅倫澤蒂)
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3910903
 parent: cycle-of-four-altar-pieces-for-the-patron-saints-of-siena
 creator: ambrogio-lorenzetti
 created: 1342
@@ -43,9 +67,6 @@ images:
     license: Public domain
     credit: Ambrogio Lorenzetti
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q3910903
   created:
     - accessed: 2026-11-03
       property: P571

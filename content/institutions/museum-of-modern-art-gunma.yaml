@@ -1,0 +1,43 @@
+public_id: 116475
+name: The Museum of Modern Art, Gunma
+names:
+  - lang: ja
+    role: original
+    text: 群馬県立近代美術館
+  - Gunma Kenritsu Kindai Bijutsukan
+kind: museum
+founded: 1974-07-01
+place: takasaki
+location: [139.07864, 36.29872]
+address: 〒370-1293 群馬県高崎市綿貫町992-1 群馬の森公園内
+website_url: https://mmag.pref.gunma.jp
+collection_url: https://jmapps.ne.jp/mmag/
+wikidata_id: Q11609688
+metadata:
+  sources: [Wikidata Q11609688 (retrieved 2026-11-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/261010_The_Museum_of_Modern_Art%2C_Gunma_Takasaki_Japan04s3.jpg/1280px-261010_The_Museum_of_Modern_Art%2C_Gunma_Takasaki_Japan04s3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:261010_The_Museum_of_Modern_Art,_Gunma_Takasaki_Japan04s3.jpg
+    license: CC BY-SA 4.0
+    credit: 663highland
+identifiers:
+  gnd: 4480978-5
+  lc: n81128100
+  viaf: "134881816"
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q11609688
+  place:
+    - accessed: 2026-11-06
+      property: P131
+      wikidata: Q11609688
+  founded:
+    - accessed: 2026-11-06
+      property: P571
+      wikidata: Q11609688
+  location:
+    - accessed: 2026-11-06
+      property: P625
+      wikidata: Q11609688

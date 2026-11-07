@@ -5,12 +5,21 @@ names:
   - lang: en
     role: original
     text: Semi-Nude Self-Portrait
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28797107
   - lang: fr
     role: translation
     text: Autoportrait semi-nu
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28797107
   - lang: ru
     role: translation
     text: Полуголый автопортрет на голубом фоне
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28797107
 creator: richard-gerstl
 created: 1904/1905
 created_label: c. 1900s
@@ -85,9 +94,6 @@ provenance:
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q28797107
   created:
     - accessed: 2026-10-19
       property: P571

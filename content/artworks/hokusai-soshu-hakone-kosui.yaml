@@ -5,16 +5,31 @@ names:
   - lang: ja
     role: original
     text: 相州箱根湖水
-  - Sōshū Hakone kosui
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173424
+  - text: Sōshū Hakone kosui
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173424
   - lang: fr
     role: translation
     text: Le lac d'Hakone dans la province de Sagami
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173424
   - lang: es
     role: translation
     text: El lago de Hakone en la provincia de Sagami
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173424
   - lang: ja
     role: original
     text: 富嶽三十六景 相州箱根湖水
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173424
 parent: thirty-six-views-of-mount-fuji
 part_number: "34"
 creator: katsushika-hokusai
@@ -47,9 +62,6 @@ images:
     license: Public domain
     credit: Art Institute of Chicago, Clarence Buckingham Collection
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173424
   parent:
     - accessed: 2026-11-03
       property: P179

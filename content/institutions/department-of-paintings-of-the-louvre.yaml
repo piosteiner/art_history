@@ -8,6 +8,7 @@ names:
 kind: department
 place: paris
 location: [2.33583, 48.86111]
+collection_url: https://collections.louvre.fr/recherche?collection%5B0%5D=6
 wikidata_id: Q3044768
 metadata:
   sources: [Wikidata Q3044768 (retrieved 2026-10-20)]

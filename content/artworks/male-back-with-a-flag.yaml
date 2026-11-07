@@ -4,18 +4,33 @@ names:
   - lang: nl
     role: translation
     text: Mannelijk naakt, op de rug gezien
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q21151813
   - lang: fr
     role: translation
     text: Homme de dos avec un drapeau
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q21151813
   - lang: de
     role: translation
     text: Männlicher Rückenakt
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q21151813
   - lang: es
     role: translation
     text: Hombre con una bandera
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q21151813
   - lang: zh
     role: translation
     text: 举旗的男子背影
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q21151813
 creator: michelangelo
 created: c. 1504
 created_span: uncertain
@@ -109,9 +124,6 @@ provenance:
         source: aeiou-albertina
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q21151813
   created:
     - accessed: 2026-10-19
       property: P571

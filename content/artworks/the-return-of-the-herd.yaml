@@ -5,25 +5,49 @@ names:
   - lang: en
     role: original
     text: The Return of the Herd
-  - October/November
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698254
+  - text: October/November
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698254
   - lang: fr
     role: translation
     text: La Rentrée des troupeaux
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698254
   - lang: de
     role: translation
     text: Die Heimkehr der Herde
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698254
   - lang: it
     role: translation
     text: Ritorno della mandria
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698254
   - lang: es
     role: translation
     text: El regreso de la manada
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698254
   - lang: ja
     role: translation
     text: 牛群の帰り
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698254
   - lang: ru
     role: translation
     text: Возвращение стада
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698254
 creator: pieter-brueghel-the-elder
 created: 1565
 materials: [oil paint, panel]
@@ -113,9 +137,6 @@ provenance:
         source: khm-125-jahre
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q698254
   created:
     - accessed: 2026-10-19
       property: P571

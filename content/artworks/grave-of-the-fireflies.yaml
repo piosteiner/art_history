@@ -1,0 +1,83 @@
+public_id: 116506
+title: Grave of the Fireflies
+title_status: common
+names:
+  - lang: ja
+    role: original
+    text: 火垂るの墓
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q274520
+  - text: Hotaru no Haka
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q274520
+  - lang: fr
+    role: translation
+    text: Le Tombeau des lucioles
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q274520
+  - lang: de
+    role: translation
+    text: Die letzten Glühwürmchen
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q274520
+  - lang: it
+    role: translation
+    text: Una tomba per le lucciole
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q274520
+  - lang: es
+    role: translation
+    text: La tumba de las luciérnagas
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q274520
+  - lang: zh
+    role: translation
+    text: 螢火蟲之墓
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q274520
+  - lang: ko
+    role: translation
+    text: 반딧불이의 묘
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q274520
+  - lang: ru
+    role: translation
+    text: Могила светлячков
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q274520
+creator: isao-takahata
+created: 1988
+kind: anime
+wikidata_id: Q274520
+metadata:
+  sources: [Wikidata Q274520 (retrieved 2026-11-06)]
+relationships:
+  - type: depicts
+    to: event/bombing-of-kobe
+    sources:
+      - property: P921
+        wikidata: Q274520
+identifiers:
+  viaf: "316752206"
+sources:
+  kind:
+    - property: P31
+      wikidata: Q274520
+  created:
+    - property: P577
+      wikidata: Q274520
+  creator:
+    - property: P57
+      wikidata: Q274520
+  title_status:
+    - accessed: 2026-11-06
+      wikidata: Q274520

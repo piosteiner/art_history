@@ -5,23 +5,47 @@ names:
   - lang: ja
     role: original
     text: 深川万年橋下
-  - Fukagawa Mannen-bashi shita
-  - Under Mannen-bashi Bridge at Fukagawa
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173386
+  - text: Fukagawa Mannen-bashi shita
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173386
+  - text: Under Mannen-bashi Bridge at Fukagawa
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173386
   - lang: fr
     role: translation
     text: Sous le pont Mannen à Fukagawa
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173386
   - lang: de
     role: translation
     text: Unter der Mannen-Brücke in Fukagawa
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173386
   - lang: es
     role: translation
     text: Bajo el puente Mannen en Fukagawa
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173386
   - lang: ja
     role: original
     text: 富嶽三十六景 深川万年橋下
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173386
   - lang: ko
     role: translation
     text: 후카가와 만년교 아래
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173386
 parent: thirty-six-views-of-mount-fuji
 part_number: "4"
 creator: katsushika-hokusai
@@ -54,9 +78,6 @@ images:
     license: Public domain
     credit: The Metropolitan Museum of Art
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173386
   parent:
     - accessed: 2026-11-03
       property: P179

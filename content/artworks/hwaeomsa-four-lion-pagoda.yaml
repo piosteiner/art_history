@@ -1,16 +1,28 @@
 public_id: 108294
 title: Four-lion pagoda, Hwaŏm-sa
 names:
-  - Four Lion Three-story Stone Pagoda of Hwaeomsa Temple, Gurye
+  - text: Four Lion Three-story Stone Pagoda of Hwaeomsa Temple, Gurye
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q12585372
   - lang: ja
     role: translation
     text: 求礼華厳寺四獅子三層石塔
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q12585372
   - lang: zh
     role: translation
     text: 求禮華嚴寺四獅子三層石塔
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q12585372
   - lang: ko
     role: translation
     text: 구례 화엄사 사사자 삼층석탑
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q12585372
 attribution_label: Anonymous
 created: 8th century
 created_span: uncertain
@@ -44,9 +56,6 @@ sources:
   kind:
     - source: portal-2000
       locator: pp. 72–73, fig. 38
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q12585372
   medium:
     - source: portal-2000
       locator: pp. 72–73, fig. 38

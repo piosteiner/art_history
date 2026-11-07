@@ -5,6 +5,9 @@ names:
   - lang: de
     role: translation
     text: Die Flucht nach Ägypten
+    sources:
+      - accessed: 2026-10-09
+        wikidata: Q21716121
 creator: jan-brueghel-the-elder
 created: 1610
 materials: [oil paint, copper]
@@ -20,9 +23,6 @@ images:
     license: Public domain
     credit: Jan Brueghel the Elder
 sources:
-  names:
-    - accessed: 2026-10-09
-      wikidata: Q21716121
   created:
     - accessed: 2026-10-09
       property: P571

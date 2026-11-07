@@ -1,0 +1,63 @@
+public_id: 116520
+name: Johannes Itten
+given_name: Johannes
+family_name: Itten
+names:
+  - text: Johannes van Itten
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q123138
+  - lang: ja
+    role: translation
+    text: ヨハネス・イッテン
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q123138
+  - lang: zh
+    role: translation
+    text: 约翰内斯·伊顿
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q123138
+  - lang: ko
+    role: translation
+    text: 요하네스 이텐
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q123138
+  - lang: ru
+    role: translation
+    text: Иоганнес Иттен
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q123138
+birth: 1888-11-11
+death: 1967-03-25
+wikidata_id: Q123138
+metadata:
+  sources: [Wikidata Q123138 (retrieved 2026-11-06)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8c/Johannes_Itten_%28retuschiert%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Johannes_Itten_(retuschiert).jpg
+    license: CC BY-SA 3.0
+    credit: "Photograph: Paula Stockmar (as mentioned at https://bauhaus.daserste.de/credits) Derivative work:MagentaGreen"
+identifiers:
+  bnf: "119083238"
+  dodis: P14441
+  gnd: "118710990"
+  hls: "022036"
+  idref: "026931923"
+  lc: n50037690
+  rkd: "41201"
+  sikart: "4023401"
+  ulan: "500029154"
+  viaf: "71392512"
+sources:
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q123138
+  death:
+    - accessed: 2026-11-06
+      property: P570
+      wikidata: Q123138

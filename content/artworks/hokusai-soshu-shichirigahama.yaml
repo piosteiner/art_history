@@ -5,21 +5,45 @@ names:
   - lang: ja
     role: original
     text: 相州七里浜
-  - Sōshū Shichirigahama
-  - Shichirigahama Beach in Sagami Province
-  - Seven-mile beach in Sagami province
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173395
+  - text: Sōshū Shichirigahama
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173395
+  - text: Shichirigahama Beach in Sagami Province
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173395
+  - text: Seven-mile beach in Sagami province
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173395
   - lang: en
     role: original
     text: Shichiri beach in Sagami province
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173395
   - lang: fr
     role: translation
     text: La plage de Shichiri dans la province de Sagami
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173395
   - lang: es
     role: translation
     text: Playa de Shichiri en la provincia de Sagami
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173395
   - lang: ja
     role: original
     text: 富嶽三十六景 相州七里浜
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173395
 parent: thirty-six-views-of-mount-fuji
 part_number: "13"
 creator: katsushika-hokusai
@@ -52,9 +76,6 @@ images:
     license: Public domain
     credit: The Metropolitan Museum of Art
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173395
   parent:
     - accessed: 2026-11-03
       property: P179

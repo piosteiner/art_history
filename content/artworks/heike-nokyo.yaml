@@ -1,14 +1,32 @@
 public_id: 106794
 title: Heike nōkyō (Sutras Dedicated by the Heike)
 names:
-  - Heike Nōkyō
-  - Sutras Dedicated by the Heike
-  - Sutras Dedicated by the Taira Family
-  - Heike Nōgyō
-  - Heike Nokyo
+  - text: Heike Nōkyō
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11482424
+  - text: Sutras Dedicated by the Heike
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11482424
+  - text: Sutras Dedicated by the Taira Family
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11482424
+  - text: Heike Nōgyō
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11482424
+  - text: Heike Nokyo
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11482424
   - lang: ja
     role: original
     text: "{平家納経|へいけのうきょう}"
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11482424
 attribution_label: members of the Taira family
 created: 1164
 kind: sutra
@@ -37,9 +55,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 160–161, fig. 194
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q11482424
   medium:
     - source: history-of-japanese-art
       locator: pp. 160–161, fig. 194

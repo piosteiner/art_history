@@ -2,13 +2,22 @@ public_id: 101481
 title_lang: en
 title: Self-Portrait with Physalis
 names:
-  - Self-Portrait with Chinese Lantern Plant
+  - text: Self-Portrait with Chinese Lantern Plant
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28797693
   - lang: de
     role: translation
     text: Selbstbildnis mit Lampionfrüchten
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28797693
   - lang: ru
     role: translation
     text: Автопортрет с физалисом
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28797693
 creator: egon-schiele
 created: 1912
 materials: [oil paint, panel]
@@ -65,9 +74,6 @@ provenance:
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q28797693
   created:
     - accessed: 2026-10-19
       property: P571

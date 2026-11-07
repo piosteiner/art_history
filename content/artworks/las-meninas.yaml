@@ -5,29 +5,79 @@ names:
   - lang: es
     role: alternative
     text: Las Meninas
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+        source: museo-del-prado-coleccion
+        accessed: 2026-09-29
   - lang: en
     role: original
     text: Las Meninas (The Maids of Honor)
-  - The Ladies-in-Waiting
-  - The Maids of Honor
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+        source: museo-del-prado-coleccion
+        accessed: 2026-09-29
+  - text: The Ladies-in-Waiting
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+        source: museo-del-prado-coleccion
+        accessed: 2026-09-29
+  - text: The Maids of Honor
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+        source: museo-del-prado-coleccion
+        accessed: 2026-09-29
   - lang: fr
     role: translation
     text: Les Ménines
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+        source: museo-del-prado-coleccion
+        accessed: 2026-09-29
   - lang: ja
     role: translation
     text: ラス・メニーナス
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+        source: museo-del-prado-coleccion
+        accessed: 2026-09-29
   - lang: zh
     role: translation
     text: 宮女
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+        source: museo-del-prado-coleccion
+        accessed: 2026-09-29
   - lang: ko
     role: translation
     text: 시녀들
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+        source: museo-del-prado-coleccion
+        accessed: 2026-09-29
   - lang: ru
     role: translation
     text: Менины (Фрейлины)
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+        source: museo-del-prado-coleccion
+        accessed: 2026-09-29
   - lang: de
     role: translation
     text: Las Meninas (Selbstporträt mit der königlichen Familie)
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+        source: museo-del-prado-coleccion
+        accessed: 2026-09-29
 creator: diego-velazquez
 created: 1656
 kind: oil painting
@@ -153,11 +203,6 @@ identifiers:
   viaf: "174304266"
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
-      source: museo-del-prado-coleccion
-      accessed: 2026-09-29
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
       source: museo-del-prado-coleccion

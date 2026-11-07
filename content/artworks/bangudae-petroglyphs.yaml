@@ -1,29 +1,56 @@
 public_id: 108284
 title: Rock engravings at Pan’gudae
 names:
-  - Bangudae Petroglyphs
-  - Petroglyphs of Bangudae Terrace in Daegok-ri, Ulju
+  - text: Bangudae Petroglyphs
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q483714
+  - text: Petroglyphs of Bangudae Terrace in Daegok-ri, Ulju
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q483714
   - lang: fr
     role: translation
     text: Pétroglyphes de Bangudae
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q483714
   - lang: de
     role: translation
     text: Petroglyphen von Bangudae
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q483714
   - lang: es
     role: translation
     text: Petroglifos de Bangudae
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q483714
   - lang: ja
     role: translation
     text: 盤亀台岩刻画
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q483714
   - lang: zh
     role: translation
     text: 盘龟台岩刻画
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q483714
   - lang: ko
     role: translation
     text: 울주 대곡리 반구대 암각화
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q483714
   - lang: ru
     role: translation
     text: петроглифы на Пангудэ в Тэгонни
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q483714
 attribution_label: Anonymous
 created: 4th century BCE–3rd century BCE
 created_span: uncertain
@@ -54,9 +81,6 @@ sources:
   kind:
     - source: portal-2000
       locator: pp. 33–34, fig. 14
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q483714
   medium:
     - source: portal-2000
       locator: pp. 33–34, fig. 14

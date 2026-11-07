@@ -5,27 +5,51 @@ names:
   - lang: en
     role: original
     text: Portrait of Andrea Doria as Neptune
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q493792
   - lang: nl
     role: translation
     text: Portret van Andrea Doria als Neptunus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q493792
   - lang: fr
     role: translation
     text: Portrait d'Andrea Doria en Neptune
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q493792
   - lang: de
     role: translation
     text: Andrea Doria als Neptun
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q493792
   - lang: es
     role: translation
     text: Retrato de Andrea Doria como Neptuno
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q493792
   - lang: ja
     role: translation
     text: ネプトゥヌスに扮したアンドレア・ドーリア
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q493792
   - lang: zh
     role: translation
     text: 海神安德烈亚·多利亚
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q493792
   - lang: ru
     role: translation
     text: Портрет Андреа Дориа в образе Нептуна
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q493792
 creator: bronzino
 created: 1540/1551
 created_label: c. 1540s
@@ -74,9 +98,6 @@ provenance:
         source: pinacoteca-di-brera-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q493792
   created:
     - url: https://pinacotecabrera.org/collezioni/collezione-on-line/ritratto-di-andrea-doria-come-nettuno/
       source: pinacoteca-di-brera-collezione

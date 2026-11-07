@@ -5,27 +5,51 @@ names:
   - lang: en
     role: original
     text: The Fight Between Carnival and Lent
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q689236
   - lang: nl
     role: translation
     text: De strijd tussen Vasten en Vastenavond
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q689236
   - lang: fr
     role: translation
     text: Le Combat de Carnaval et Carême
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q689236
   - lang: de
     role: original
     text: Kampf zwischen Fastnacht und Fasten
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q689236
   - lang: it
     role: translation
     text: Lotta tra Carnevale e Quaresima
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q689236
   - lang: es
     role: translation
     text: El combate entre don carnaval y doña cuaresma
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q689236
   - lang: ja
     role: translation
     text: 謝肉祭と四旬節の喧嘩
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q689236
   - lang: ru
     role: translation
     text: Битва Масленицы и Поста (картина)
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q689236
 creator: pieter-brueghel-the-elder
 created: 1559
 materials: [oil paint, panel]
@@ -75,9 +99,6 @@ provenance:
         source: khm-125-jahre
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q689236
   created:
     - accessed: 2026-10-19
       property: P571

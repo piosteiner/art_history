@@ -1,18 +1,42 @@
 public_id: 106791
 title: Konjikidō (Golden Hall), Chūsonji
 names:
-  - Chūson-ji Konjikidō
-  - Konjiki-dō
-  - Chūson-ji Golden Hall
-  - Golden Hall
-  - Konjikidō
-  - Chūson-ji Konjiki-dō
+  - text: Chūson-ji Konjikidō
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11363889
+  - text: Konjiki-dō
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11363889
+  - text: Chūson-ji Golden Hall
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11363889
+  - text: Golden Hall
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11363889
+  - text: Konjikidō
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11363889
+  - text: Chūson-ji Konjiki-dō
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11363889
   - lang: fr
     role: translation
     text: pavillon dorée du temple Chūson
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11363889
   - lang: ja
     role: translation
     text: 中尊寺金色堂
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11363889
 attribution_label: Anonymous
 created: 1124
 kind: building
@@ -43,9 +67,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 152–153, figs. 185–186
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q11363889
   medium:
     - source: history-of-japanese-art
       locator: pp. 152–153, figs. 185–186

@@ -5,18 +5,33 @@ names:
   - lang: fr
     role: translation
     text: Saint Jean-Baptiste
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q9015206
   - lang: de
     role: translation
     text: Johannes der Täufer
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q9015206
   - lang: it
     role: translation
     text: San Giovanni Battista
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q9015206
   - lang: es
     role: translation
     text: Juan Bautista (Galería Borghese)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q9015206
   - lang: ja
     role: translation
     text: 洗礼者ヨハネ
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q9015206
 creator: caravaggio
 created: 1609/1610
 materials: [oil paint]
@@ -103,9 +118,6 @@ provenance:
 identifiers:
   gnd: "1173182713"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q9015206
   created:
     - url: https://www.collezionegalleriaborghese.it/opere/san-giovanni-battista
       source: galleria-borghese-collezione

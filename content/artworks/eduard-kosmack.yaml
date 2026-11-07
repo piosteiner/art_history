@@ -5,6 +5,9 @@ names:
   - lang: es
     role: translation
     text: Retrato del editor Eduard Kosmack
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28003303
 creator: egon-schiele
 created: 1910
 materials: [oil paint, canvas]
@@ -50,9 +53,6 @@ provenance:
         source: belvedere-sammlung-online
         accessed: 2026-10-06
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q28003303
   created:
     - accessed: 2026-10-20
       property: P571

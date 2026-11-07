@@ -5,27 +5,51 @@ names:
   - lang: it
     role: original
     text: Schiavo morente
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q83862
   - lang: fr
     role: translation
     text: L'Esclave mourant
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q83862
   - lang: de
     role: translation
     text: Sterbender Sklave
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q83862
   - lang: es
     role: translation
     text: Esclavo moribundo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q83862
   - lang: ja
     role: translation
     text: 瀕死の奴隷
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q83862
   - lang: zh
     role: translation
     text: 垂死的奴隸
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q83862
   - lang: ko
     role: translation
     text: 죽어가는 노예
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q83862
   - lang: ru
     role: translation
     text: Умирающий раб
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q83862
 creator: michelangelo
 created: 1513/1515
 materials: [marble]
@@ -177,9 +201,6 @@ numbers:
     institution: department-of-sculptures-of-the-louvre
     label: other inventory number
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q83862
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010091872
       source: louvre-collections

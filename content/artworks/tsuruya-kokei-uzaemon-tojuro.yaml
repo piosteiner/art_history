@@ -1,0 +1,65 @@
+public_id: 116472
+title_lang: en
+title: Ichimura Uzaemon XVII as Fujioka Tojuro
+title_status: official
+names:
+  - lang: ja
+    role: original
+    text: 十七世市村羽左衛門の藤岡藤十郎
+    sources:
+      - source: british-museum-1992-1217-0-9
+        accessed: 2026-11-06
+parent: bust-portraits-iii
+part_number: "15"
+creator: tsuruya-kokei
+created: 1983-02
+kind: Japanese woodblock print
+medium: Colour woodblock print
+materials: [paper]
+institution: british-museum
+inventory_number: 1992,1217,0.9
+web_url: https://www.britishmuseum.org/collection/object/A_1992-1217-0-9
+description_md: "The kabuki actor [[person/ichimura-uzaemon-xvii]] as Fujioka Tōjūrō in the play *Shisenryo koban no umenoha*: design 15 of [[artist/tsuruya-kokei]]'s third series of bust portraits. A seal reads \"Out of 27 impressions\" (\"Nijunana hin no uchi\"), another \"Seal of Kokei\" (\"Kokei no in\"). Given by the artist to the British Museum in 1988. [[source/british-museum-1992-1217-0-9]]"
+relationships:
+  - type: depicts_person
+    to: person/ichimura-uzaemon-xvii
+    sources:
+      - source: british-museum-1992-1217-0-9
+        accessed: 2026-11-06
+provenance:
+  - owner: institution/british-museum
+    acquired: 1988
+    method: gift
+    direct: true
+    label: given by the artist
+    sources:
+      - source: british-museum-1992-1217-0-9
+        accessed: 2026-11-06
+sources:
+  kind:
+    - source: british-museum-1992-1217-0-9
+      accessed: 2026-11-06
+  medium:
+    - source: british-museum-1992-1217-0-9
+      accessed: 2026-11-06
+  parent:
+    - source: british-museum-1992-1217-0-9
+      accessed: 2026-11-06
+  created:
+    - source: british-museum-1992-1217-0-9
+      accessed: 2026-11-06
+  creator:
+    - source: british-museum-1992-1217-0-9
+      accessed: 2026-11-06
+  materials:
+    - source: british-museum-1992-1217-0-9
+      accessed: 2026-11-06
+  institution:
+    - source: british-museum-1992-1217-0-9
+      accessed: 2026-11-06
+  title_status:
+    - source: british-museum-1992-1217-0-9
+      accessed: 2026-11-06
+  inventory_number:
+    - source: british-museum-1992-1217-0-9
+      accessed: 2026-11-06

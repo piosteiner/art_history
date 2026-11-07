@@ -5,24 +5,45 @@ names:
   - lang: en
     role: original
     text: Dance at Le Moulin de la Galette
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q683274
   - lang: it
     role: translation
     text: Bal au moulin de la Galette
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q683274
   - lang: es
     role: translation
     text: Baile en el Moulin de la Galette
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q683274
   - lang: ja
     role: translation
     text: ムーラン・ド・ラ・ギャレット
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q683274
   - lang: zh
     role: translation
     text: 煎餅磨坊的舞會
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q683274
   - lang: ko
     role: translation
     text: 물랭 드 라 갈레트의 무도회
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q683274
   - lang: ru
     role: translation
     text: Бал в Мулен де ла Галетт
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q683274
 creator: pierre-auguste-renoir
 created: 1876
 materials: [oil paint, canvas]
@@ -111,9 +132,6 @@ identifiers:
   gnd: 4476592-7
   viaf: "186909051"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q683274
   created:
     - accessed: 2026-10-20
       property: P571

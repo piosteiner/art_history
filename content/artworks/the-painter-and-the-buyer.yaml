@@ -2,16 +2,28 @@ public_id: 101413
 title_lang: en
 title: The Painter and the Buyer
 names:
-  - The Artist and The Connoisseur
+  - text: The Artist and The Connoisseur
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1887184
   - lang: nl
     role: translation
     text: Schilder en koper
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1887184
   - lang: fr
     role: translation
     text: Peintre et acheteur
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1887184
   - lang: de
     role: translation
     text: Maler und Käufer
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1887184
 creator: pieter-brueghel-the-elder
 created: c. 1566
 created_span: uncertain
@@ -107,9 +119,6 @@ provenance:
         source: aeiou-albertina
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q1887184
   created:
     - accessed: 2026-10-19
       property: P571

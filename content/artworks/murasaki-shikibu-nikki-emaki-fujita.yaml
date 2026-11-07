@@ -1,10 +1,16 @@
 public_id: 106756
 title: Murasaki Shikibu nikki emaki (Fujita scroll)
 names:
-  - Murasaki Shikibu Diary Emaki
+  - text: Murasaki Shikibu Diary Emaki
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107045775
   - lang: ja
     role: translation
     text: 藤田家本紫式部日記絵巻
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107045775
 attribution_label: Anonymous
 created: first half of the 13th century
 created_span: uncertain
@@ -46,9 +52,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: p. 108, fig. 134
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q107045775
   medium:
     - source: history-of-japanese-art
       locator: p. 108, fig. 134

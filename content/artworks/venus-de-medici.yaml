@@ -6,18 +6,48 @@ names:
     role: translation
     text: Medici Venus
     status: official
+    sources:
+      - accessed: 2026-10-28
+        wikidata: Q774967
+      - url: https://www.uffizi.it/en/artworks/medici-venus
+        source: uffizi-artworks
+        accessed: 2026-10-28
   - lang: fr
     role: translation
     text: Vénus de Médicis
+    sources:
+      - accessed: 2026-10-28
+        wikidata: Q774967
+      - url: https://www.uffizi.it/en/artworks/medici-venus
+        source: uffizi-artworks
+        accessed: 2026-10-28
   - lang: de
     role: translation
     text: Venus Medici
+    sources:
+      - url: https://www.uffizi.it/en/artworks/medici-venus
+        source: uffizi-artworks
+        accessed: 2026-10-28
+      - accessed: 2026-10-28
+        wikidata: Q774967
   - lang: it
     role: translation
     text: Venere de' Medici
+    sources:
+      - url: https://www.uffizi.it/en/artworks/medici-venus
+        source: uffizi-artworks
+        accessed: 2026-10-28
+      - accessed: 2026-10-28
+        wikidata: Q774967
   - lang: es
     role: translation
     text: Venus de Médici
+    sources:
+      - accessed: 2026-10-28
+        wikidata: Q774967
+      - url: https://www.uffizi.it/en/artworks/medici-venus
+        source: uffizi-artworks
+        accessed: 2026-10-28
 attribution_label: "Artist unknown (Hellenistic art). The base bears the Greek inscription ΚΛΕΟΜΕΝΗΣ ΑΠΟΛΟΔΩΡΟΥ ΑΘΗΝΑΙΟΣ ΕΠΩΕΣΕΝ (Made by Cleomenes son of Apollodorus of Athens): base and trunk come from another, damaged statue by Cleomenes and were fitted to the Venus after its discovery in the 16th century."
 created: late 2nd century BCE–early 1st century BCE
 created_span: uncertain
@@ -111,12 +141,6 @@ provenance:
         source: wikipedia-it-venere-de-medici
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-28
-      wikidata: Q774967
-    - url: https://www.uffizi.it/en/artworks/medici-venus
-      source: uffizi-artworks
-      accessed: 2026-10-28
   medium:
     - url: https://www.uffizi.it/en/artworks/medici-venus
       source: uffizi-artworks

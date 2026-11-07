@@ -5,29 +5,59 @@ names:
   - lang: ja
     role: original
     text: 東都駿台
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173387
   - lang: ja
     role: original
     text: 東都駿臺
-  - Tōto Sundai
-  - Tōto Surugadai
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173387
+  - text: Tōto Sundai
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173387
+  - text: Tōto Surugadai
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173387
   - lang: en
     role: original
     text: Sundai, Edo
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173387
   - lang: fr
     role: translation
     text: Surugadai à Edo
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173387
   - lang: de
     role: translation
     text: Sundai in Edo
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173387
   - lang: es
     role: translation
     text: Sundai en Edo
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173387
   - lang: ja
     role: original
     text: 富嶽三十六景 東都駿台
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173387
   - lang: ko
     role: translation
     text: 동도 슨다이
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173387
 parent: thirty-six-views-of-mount-fuji
 part_number: "5"
 creator: katsushika-hokusai
@@ -61,9 +91,6 @@ images:
     license: Public domain
     credit: The Metropolitan Museum of Art
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173387
   parent:
     - accessed: 2026-11-03
       property: P179

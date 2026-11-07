@@ -5,27 +5,51 @@ names:
   - lang: it
     role: original
     text: Buona ventura
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2610675
   - lang: en
     role: translation
     text: The Fortune Teller
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2610675
   - lang: nl
     role: translation
     text: De waarzegster
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2610675
   - lang: de
     role: translation
     text: Die Wahrsagerin
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2610675
   - lang: es
     role: translation
     text: La buenaventura
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2610675
   - lang: ja
     role: translation
     text: 女占い師
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2610675
   - lang: zh
     role: translation
     text: 女占卜师
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2610675
   - lang: ru
     role: translation
     text: Гадалка
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2610675
 creator: caravaggio
 created: 1590/1603
 created_label: c. 1594
@@ -111,9 +135,6 @@ numbers:
     institution: department-of-paintings-of-the-louvre
     label: former inventory number (Musée royal)
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2610675
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010062329
       source: louvre-collections

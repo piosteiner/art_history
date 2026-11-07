@@ -2,29 +2,56 @@ public_id: 101835
 title_lang: fr
 title: L'Origine du monde
 names:
-  - The Origin of the World
-  - Origin of the World
+  - text: The Origin of the World
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q334138
+  - text: Origin of the World
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q334138
   - lang: de
     role: translation
     text: Der Ursprung der Welt
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q334138
   - lang: it
     role: translation
     text: L'origine del mondo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q334138
   - lang: es
     role: translation
     text: El origen del mundo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q334138
   - lang: ja
     role: translation
     text: 世界の起源
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q334138
   - lang: zh
     role: translation
     text: 世界的起源
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q334138
   - lang: ko
     role: translation
     text: 세상의 기원
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q334138
   - lang: ru
     role: translation
     text: Происхождение мира
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q334138
 creator: gustave-courbet
 created: 1866
 materials: [oil paint, canvas]
@@ -171,9 +198,6 @@ identifiers:
   gnd: 4453300-7
   viaf: "186015356"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q334138
   created:
     - accessed: 2026-10-20
       property: P571

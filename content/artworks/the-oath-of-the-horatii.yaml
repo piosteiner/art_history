@@ -5,33 +5,63 @@ names:
   - lang: en
     role: original
     text: Oath of the Horatii
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q476458
   - lang: en
     role: original
     text: The Oath of the Horatii
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q476458
   - lang: nl
     role: translation
     text: De eed van de Horatii
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q476458
   - lang: de
     role: translation
     text: Der Schwur der Horatier
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q476458
   - lang: it
     role: translation
     text: Il giuramento degli Orazi
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q476458
   - lang: es
     role: translation
     text: Juramento de los Horacios
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q476458
   - lang: ja
     role: translation
     text: ホラティウス兄弟の誓い
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q476458
   - lang: zh
     role: translation
     text: 荷拉斯兄弟之誓
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q476458
   - lang: ko
     role: translation
     text: 호라티우스 형제의 맹세
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q476458
   - lang: ru
     role: translation
     text: Клятва Горациев
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q476458
 creator: jacques-louis-david
 created: 1784/1785
 created_label: c. 1784
@@ -107,9 +137,6 @@ identifiers:
   gnd: 4113280-4
   viaf: "211773512"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q476458
   created:
     - accessed: 2026-10-20
       property: P571

@@ -4,6 +4,9 @@ names:
   - lang: fr
     role: translation
     text: Les Amours de Jupiter
+    sources:
+      - accessed: 2026-10-28
+        wikidata: Q118323285
 creator: antonio-da-correggio
 kind: series
 wikidata_id: Q118323285
@@ -15,9 +18,6 @@ images:
     license: Public domain
     credit: Antonio da Correggio
 sources:
-  names:
-    - accessed: 2026-10-28
-      wikidata: Q118323285
   creator:
     - accessed: 2026-10-28
       property: P170

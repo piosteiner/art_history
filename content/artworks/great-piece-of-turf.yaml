@@ -5,21 +5,39 @@ names:
   - lang: en
     role: translation
     text: Great Piece of Turf
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q254794
   - lang: nl
     role: translation
     text: De grote graszode
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q254794
   - lang: fr
     role: translation
     text: Grande Touffe d'herbes
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q254794
   - lang: it
     role: translation
     text: La grande zolla
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q254794
   - lang: es
     role: translation
     text: Gran mata de hierba
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q254794
   - lang: ru
     role: translation
     text: Большой кусок луга
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q254794
 creator: albrecht-durer
 created: 1503
 materials: [paper, watercolor paint, gouache paint]
@@ -131,9 +149,6 @@ provenance:
         source: aeiou-albertina
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q254794
   created:
     - accessed: 2026-10-19
       property: P571

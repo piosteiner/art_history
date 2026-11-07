@@ -1,0 +1,16 @@
+public_id: 116476
+name: Takasaki
+kind: settlement
+location: [139.00236, 36.32311]
+wikidata_id: Q336438
+metadata:
+  sources: [Wikidata Q336438 (retrieved 2026-11-06)]
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q336438
+  location:
+    - accessed: 2026-11-06
+      property: P625
+      wikidata: Q336438

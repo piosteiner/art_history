@@ -5,22 +5,43 @@ names:
   - lang: ja
     role: original
     text: 常州牛堀
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173405
   - lang: en
     role: original
     text: Fuji from Ushibori, Province of Hitachi
-  - Jōshū Ushibori
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173405
+  - text: Jōshū Ushibori
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173405
   - lang: fr
     role: translation
     text: Ushibori dans la province de Hitachi
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173405
   - lang: de
     role: translation
     text: Ushibori in der Provinz Hitachi
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173405
   - lang: es
     role: translation
     text: Ushibori en la provincia de Hitachi
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173405
   - lang: ja
     role: original
     text: 富嶽三十六景 常州牛堀
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173405
 parent: thirty-six-views-of-mount-fuji
 part_number: "20"
 creator: katsushika-hokusai
@@ -54,9 +75,6 @@ images:
     license: Public domain
     credit: The Metropolitan Museum of Art
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173405
   parent:
     - accessed: 2026-11-03
       property: P179

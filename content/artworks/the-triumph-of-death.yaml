@@ -5,31 +5,81 @@ names:
   - lang: nl
     role: alternative
     text: De triomf van de Dood
-  - Pieter Brueghel de Oude
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-25
+  - text: Pieter Brueghel de Oude
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-25
   - lang: en
     role: translation
     text: The Triumph of Death
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-25
   - lang: fr
     role: translation
     text: Le Triomphe de la Mort
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-25
   - lang: de
     role: translation
     text: Der Triumph des Todes
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-25
   - lang: it
     role: translation
     text: Trionfo della Morte
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-25
   - lang: es
     role: translation
     text: El triunfo de la muerte
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-25
   - lang: ja
     role: translation
     text: 死の勝利
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-25
   - lang: zh
     role: translation
     text: 死亡的勝利
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-25
   - lang: ru
     role: translation
     text: Триумф смерти
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-25
 creator: pieter-brueghel-the-elder
 created: 1562/1563
 kind: oil painting
@@ -159,11 +209,6 @@ identifiers:
   gnd: 4594089-7
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
-      source: museo-del-prado-coleccion
-      accessed: 2025-02-25
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
       source: museo-del-prado-coleccion

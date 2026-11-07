@@ -5,26 +5,53 @@ names:
   - lang: ja
     role: original
     text: 東都浅草本願寺
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173393
   - lang: ja
     role: original
     text: 東都浅艸本願寺
-  - Tōto Asakusa Honganji
-  - Hongan-ji temple at Asakusa in Edo
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173393
+  - text: Tōto Asakusa Honganji
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173393
+  - text: Hongan-ji temple at Asakusa in Edo
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173393
   - lang: en
     role: original
     text: Asakusa Hongan-ji temple in the Eastern capital
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173393
   - lang: fr
     role: translation
     text: Le temple d'Asakusa Honganji dans la capitale orientale
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173393
   - lang: de
     role: translation
     text: Der Hongan-ji-Tempel bei Asakusa in Edo
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173393
   - lang: es
     role: translation
     text: Hongan-ji en Asakusa en la capital oriental
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173393
   - lang: ja
     role: original
     text: 富嶽三十六景 東都浅草本願寺
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173393
 parent: thirty-six-views-of-mount-fuji
 part_number: "11"
 creator: katsushika-hokusai
@@ -61,9 +88,6 @@ images:
     license: Public domain
     credit: Art Institute of Chicago, Clarence Buckingham Collection
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173393
   parent:
     - accessed: 2026-11-03
       property: P179

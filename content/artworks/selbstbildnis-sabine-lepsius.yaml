@@ -5,6 +5,9 @@ names:
   - lang: en
     role: translation
     text: Self-portrait
+    sources:
+      - accessed: 2026-10-27
+        wikidata: Q23047574
 creator: sabine-lepsius
 created: 1885
 kind: oil painting
@@ -58,9 +61,6 @@ provenance:
         source: search-smb-museum
         accessed: 2026-10-27
 sources:
-  names:
-    - accessed: 2026-10-27
-      wikidata: Q23047574
   medium:
     - url: https://id.smb.museum/object/961917
       source: id-smb-museum

@@ -5,30 +5,57 @@ names:
   - lang: en
     role: translation
     text: The Angelus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2571560
   - lang: nl
     role: translation
     text: Het angelus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2571560
   - lang: de
     role: translation
     text: Angelusgebet
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2571560
   - lang: it
     role: translation
     text: L'Angelus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2571560
   - lang: es
     role: translation
     text: El Ángelus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2571560
   - lang: ja
     role: translation
     text: 晩鐘
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2571560
   - lang: zh
     role: translation
     text: 晚禱
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2571560
   - lang: ko
     role: translation
     text: 만종
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2571560
   - lang: ru
     role: translation
     text: Анжелюс
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2571560
 creator: jean-francois-millet
 created: 1857/1859
 created_label: c. 1858
@@ -206,9 +233,6 @@ provenance:
         source: musee-d-orsay-collections
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2571560
   created:
     - accessed: 2026-10-20
       property: P571

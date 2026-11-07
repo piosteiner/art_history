@@ -2,23 +2,44 @@ public_id: 101968
 title_lang: it
 title: Disarcionamento di Bernardino della Ciarda (Battaglia di San Romano)
 names:
-  - Battle of San Romano
-  - The Battle of San Romano
+  - text: Battle of San Romano
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18564202
+  - text: The Battle of San Romano
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18564202
   - lang: en
     role: translation
     text: Niccolò Mauruzi da Tolentino unseats Bernardino della Ciarda at the Battle of San Romano
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18564202
   - lang: nl
     role: translation
     text: Bernardino della Carda in de verpletterende slag bij San Romano
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18564202
   - lang: fr
     role: translation
     text: Bernardino della Ciarda désarçonné
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18564202
   - lang: it
     role: original
     text: Disarcionamento di Bernardino della Ciarda
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18564202
   - lang: es
     role: translation
     text: Niccolò Mauruzi da Tolentino desmonta a Bernardino della Ciarda
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18564202
 creator: paolo-uccello
 created: 1430/1445
 created_label: c. 1430s
@@ -101,9 +122,6 @@ provenance:
         source: wikipedia-it-battaglia-san-romano
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q18564202
   created:
     - url: https://www.uffizi.it/en/artworks/battle-of-san-romano
       source: uffizi-artworks

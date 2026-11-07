@@ -2,16 +2,28 @@ public_id: 113400
 title_lang: es
 title: Socorro de Génova por el II marqués de Santa Cruz
 names:
-  - El socorro de Génova por el II marqués de Santa Cruz
+  - text: El socorro de Génova por el II marqués de Santa Cruz
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q27700857
   - lang: en
     role: translation
     text: The Relief of Genoa by the II Marquis of Santa Cruz
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q27700857
   - lang: de
     role: translation
     text: Die Entsetzung Genuas durch den Marqués de Santa Cruz
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q27700857
   - lang: ja
     role: translation
     text: 第2代サンタ・クルス侯爵によるジェノヴァ救援
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q27700857
 parent: battle-series
 creator: antonio-de-pereda
 created: 1634/1635
@@ -30,9 +42,6 @@ images:
     license: Public domain
     credit: Antonio de Pereda
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q27700857
   parent:
     - accessed: 2026-11-03
       property: P179

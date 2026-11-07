@@ -1,0 +1,47 @@
+public_id: 116523
+name: Makoto Aida
+names:
+  - lang: ja
+    role: original
+    text: 会田誠
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q2596176
+  - lang: zh
+    role: translation
+    text: 會田誠
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q2596176
+  - lang: ko
+    role: translation
+    text: 아이다 마코토
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q2596176
+  - lang: ru
+    role: translation
+    text: Макото Айда
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q2596176
+birth: 1965-10-04
+wikidata_id: Q2596176
+metadata:
+  sources: [Wikidata Q2596176 (retrieved 2026-11-06)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e2/Makoto_Aida_2012.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Makoto_Aida_2012.jpg
+    license: CC BY-SA 4.0
+    credit: Chiou Hsinhuei
+identifiers:
+  bnf: 14650720b
+  gnd: "136128939"
+  idref: "177550589"
+  lc: no2008057863
+  viaf: "37176180"
+sources:
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q2596176

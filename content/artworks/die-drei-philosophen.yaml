@@ -5,33 +5,63 @@ names:
   - lang: en
     role: translation
     text: Three Philosophers
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q877191
   - lang: en
     role: translation
     text: The Three Philosophers
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q877191
   - lang: nl
     role: translation
     text: De drie filosofen
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q877191
   - lang: fr
     role: translation
     text: Les Trois Philosophes
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q877191
   - lang: it
     role: translation
     text: Tre filosofi
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q877191
   - lang: es
     role: translation
     text: Los tres filósofos
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q877191
   - lang: ja
     role: translation
     text: 三人の哲学者
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q877191
   - lang: zh
     role: translation
     text: 三哲人
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q877191
   - lang: ko
     role: translation
     text: 세 철학자
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q877191
   - lang: ru
     role: translation
     text: Три философа
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q877191
 creator: giorgione
 created: 1508/1509
 created_span: uncertain
@@ -125,9 +155,6 @@ sources:
     - url: https://www.khm.at/kunstwerke/die-drei-philosophen-823
       source: khm-125-jahre
       accessed: 2026-10-30
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q877191
   created:
     - url: https://www.khm.at/kunstwerke/die-drei-philosophen-823
       source: khm-125-jahre

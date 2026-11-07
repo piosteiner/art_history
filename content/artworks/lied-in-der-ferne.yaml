@@ -13,6 +13,10 @@ names:
   - lang: fr
     role: translation
     text: Chant lointain
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1511/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
   - lang: de
     role: former
     text: Das Lied aus der Ferne
@@ -63,10 +67,6 @@ provenance:
         accessed: 2026-11-02
 sources:
   kind:
-    - url: https://collection.kunsthaus.ch/de/collection/item/1511/
-      source: kunsthaus-zurich-sammlung-online
-      accessed: 2026-11-02
-  names:
     - url: https://collection.kunsthaus.ch/de/collection/item/1511/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-02

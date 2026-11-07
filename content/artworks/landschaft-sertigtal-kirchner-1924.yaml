@@ -5,6 +5,10 @@ names:
   - lang: en
     role: translation
     text: Sertig Valley Landscape
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/820965/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
 creator: ernst-ludwig-kirchner
 created: 1924
 kind: painting
@@ -16,10 +20,6 @@ inventory_number: MB 0038
 web_url: https://collection.kunsthaus.ch/de/collection/item/820965/
 sources:
   kind:
-    - url: https://collection.kunsthaus.ch/de/collection/item/820965/
-      source: kunsthaus-zurich-sammlung-online
-      accessed: 2026-11-02
-  names:
     - url: https://collection.kunsthaus.ch/de/collection/item/820965/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-02

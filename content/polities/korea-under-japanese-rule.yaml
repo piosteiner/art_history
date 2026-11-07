@@ -1,0 +1,74 @@
+public_id: 116553
+name: Korea under Japanese rule
+names:
+  - text: Japanese Korea
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q503585
+  - text: Korea under Japanese occupation
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q503585
+  - lang: nl
+    role: translation
+    text: Japanse bezetting van Korea
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q503585
+  - lang: fr
+    role: translation
+    text: Corée durant la colonisation japonaise
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q503585
+  - lang: de
+    role: translation
+    text: Korea unter japanischer Herrschaft
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q503585
+  - lang: it
+    role: translation
+    text: Corea sotto il dominio giapponese
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q503585
+  - lang: es
+    role: translation
+    text: ocupación japonesa de Corea
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q503585
+  - lang: ja
+    role: translation
+    text: 日本統治時代の朝鮮
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q503585
+  - lang: zh
+    role: translation
+    text: 朝鮮日治時期
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q503585
+  - lang: ko
+    role: translation
+    text: 일제강점기
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q503585
+  - lang: ru
+    role: translation
+    text: Генерал-губернаторство Корея
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q503585
+period: 1910-08-29/1945-09-12
+wikidata_id: Q503585
+metadata:
+  sources: [Wikidata Q503585 (retrieved 2026-11-06)]
+sources:
+  period:
+    - accessed: 2026-11-06
+      property: P571
+      wikidata: Q503585

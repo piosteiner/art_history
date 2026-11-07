@@ -4,6 +4,9 @@ names:
   - lang: de
     role: translation
     text: Bildnis eines Knaben im Kostüm des Adonis
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q47543597
 creator: nicolaes-maes
 created: 1670
 materials: [oil paint]
@@ -45,9 +48,6 @@ provenance:
         source: akademie-gemaeldegalerie-sammlung
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q47543597
   created:
     - accessed: 2026-10-20
       property: P571

@@ -2,23 +2,44 @@ public_id: 101543
 title_lang: de
 title: Die Umarmung (Liebespaar II)
 names:
-  - Man and Woman
-  - Lovers II
+  - text: Man and Woman
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19967004
+  - text: Lovers II
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19967004
   - lang: en
     role: translation
     text: The embrace
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19967004
   - lang: nl
     role: translation
     text: De Omhelzing
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19967004
   - lang: fr
     role: translation
     text: L'Étreinte
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19967004
   - lang: it
     role: translation
     text: L'abbraccio
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19967004
   - lang: es
     role: translation
     text: El abrazo (pareja de enamorados II)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19967004
 creator: egon-schiele
 created: 1917
 materials: [oil paint, canvas]
@@ -77,9 +98,6 @@ provenance:
         source: belvedere-sammlung-online
         accessed: 2024-11-12
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q19967004
   created:
     - accessed: 2026-10-20
       property: P571

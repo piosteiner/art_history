@@ -5,6 +5,9 @@ names:
   - lang: de
     role: translation
     text: Akte im Atelier
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28797709
 creator: ernst-ludwig-kirchner
 created: 1912
 dimensions: [80.7, 70.7]
@@ -63,9 +66,6 @@ provenance:
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q28797709
   created:
     - accessed: 2026-10-19
       property: P571

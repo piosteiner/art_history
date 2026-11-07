@@ -1,5 +1,12 @@
 public_id: 107190
 title: Altar table
+names:
+  - lang: ja
+    role: original
+    text: 平塵案
+    sources:
+      - source: bunka-online-203829
+        accessed: 2026-11-06
 attribution_label: Anonymous
 created: early 12th century
 created_span: uncertain
@@ -7,14 +14,25 @@ kind: furniture
 medium: Black lacquer with mother-of-pearl inlay
 materials: [lacquer, mother-of-pearl]
 dimensions: [77.5, 66.5, 33.5]
-institution: chuson-ji
-description_md: A black lacquer altar table from the provincial temple [[institution/chuson-ji]] in Hiraizumi, of the standard type for the chapels that noblemen’s houses and temples were required to have. The overall design and the dense floral pattern from brocade are Chinese, but the almost gaudy mother-of-pearl inlay betrays a Japanese taste. [[source/history-of-japanese-art|p. 107, fig. 131]]
+institution: daichoju-in
+web_url: https://online.bunka.go.jp/heritages/detail/203829
+description_md: |-
+  A black lacquer altar table from the provincial temple [[institution/chuson-ji]] in Hiraizumi, of the standard type for the chapels that noblemen’s houses and temples were required to have. The overall design and the dense floral pattern from brocade are Chinese, but the almost gaudy mother-of-pearl inlay betrays a Japanese taste. [[source/history-of-japanese-art|p. 107, fig. 131]]
+
+  It is one of the four furnishings of the sutra hall (中尊寺経蔵堂内具) — with a ritual dais (礼盤), a stand for a stone chime (磬架) and a lamp stand (螺鈿平塵燈台) — kept by the [[institution/daichoju-in]] and designated a National Treasure. The national database describes the table as lacquered wood with mother-of-pearl scrolls (宝相華唐草文) on a ground of gold dust (平塵) and gilt bronze fittings; its period field says Kamakura, while its commentary sees in the group the forms of the Heian period and takes it to be, by and large, from the founding of the hall. [[source/bunka-online-203829]]
 relationships:
   - type: associated_with
     to: movement/insei-period
     sources:
       - source: history-of-japanese-art
         locator: p. 107, fig. 131
+  - type: designated_as
+    to: term/national-treasure-japan
+    period: 1958-02-08/
+    notes_md: As part of the furnishings of the sutra hall; an Important Cultural Property since 9 June 1951.
+    sources:
+      - source: bunka-online-203829
+        accessed: 2026-11-06
 sources:
   kind:
     - source: history-of-japanese-art
@@ -29,8 +47,11 @@ sources:
     - source: history-of-japanese-art
       locator: p. 107, fig. 131
   dimensions:
-    - source: history-of-japanese-art
+    - note: Cultural Heritage Online 203829 gives a total height of 77.6 and a top of 34.1 × 66.3 (cm).
+      source: history-of-japanese-art
       locator: p. 107, fig. 131
   institution:
     - source: history-of-japanese-art
       locator: p. 107, fig. 131
+    - source: bunka-online-203829
+      accessed: 2026-11-06

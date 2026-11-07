@@ -5,21 +5,39 @@ names:
   - lang: en
     role: translation
     text: The Family
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28002609
   - lang: fr
     role: translation
     text: La Famille
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28002609
   - lang: de
     role: original
     text: Die Familie
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28002609
   - lang: it
     role: translation
     text: La famiglia
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28002609
   - lang: es
     role: translation
     text: La familia
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28002609
   - lang: ja
     role: translation
     text: 家族
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28002609
 creator: egon-schiele
 created: 1918
 materials: [oil paint, canvas]
@@ -58,9 +76,6 @@ provenance:
         source: belvedere-sammlung-online
         accessed: 2026-02-26
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q28002609
   created:
     - accessed: 2026-10-20
       property: P571

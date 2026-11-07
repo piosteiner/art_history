@@ -1,0 +1,43 @@
+public_id: 116560
+name: tsuba
+names:
+  - lang: ja
+    role: translation
+    text: 鍔
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1758043
+  - lang: zh
+    role: translation
+    text: 锷
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1758043
+  - lang: ko
+    role: translation
+    text: 코등이
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1758043
+  - lang: ru
+    role: translation
+    text: Цуба
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1758043
+category: object type
+definition: guard of traditional Japanese bladed weapons, also items of collection on their own right
+wikidata_id: Q1758043
+metadata:
+  sources: [Wikidata Q1758043 (retrieved 2026-11-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Giappone%2C_elsa_tsuba_per_spada%2C_xvi-xix_secolo%2C_02_dragi_tra_nubi.jpg/1280px-Giappone%2C_elsa_tsuba_per_spada%2C_xvi-xix_secolo%2C_02_dragi_tra_nubi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giappone,_elsa_tsuba_per_spada,_xvi-xix_secolo,_02_dragi_tra_nubi.jpg
+    license: CC BY 3.0
+    credit: Sailko
+identifiers:
+  gnd: 4186381-1
+sources:
+  definition:
+    - accessed: 2026-11-06
+      wikidata: Q1758043

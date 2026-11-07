@@ -2,29 +2,68 @@ public_id: 102149
 title_lang: it
 title: Camera degli Sposi (Camera Picta)
 names:
-  - Camera picta
-  - Bridal Chamber
-  - Camera Depincta
-  - Camera Dipinta
-  - Depincta Chamber
-  - Dipinta Chamber
-  - Magna Picta Chamber
-  - Picta Chamber
+  - text: Camera picta
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2529899
+  - text: Bridal Chamber
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2529899
+  - text: Camera Depincta
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2529899
+  - text: Camera Dipinta
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2529899
+  - text: Depincta Chamber
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2529899
+  - text: Dipinta Chamber
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2529899
+  - text: Magna Picta Chamber
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2529899
+  - text: Picta Chamber
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2529899
   - lang: fr
     role: translation
     text: La Chambre des Époux
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2529899
   - lang: es
     role: translation
     text: Cámara de los esposos
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2529899
   - lang: ja
     role: translation
     text: 夫婦の間
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2529899
   - lang: zh
     role: translation
     text: 婚礼房
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2529899
   - lang: ru
     role: translation
     text: Камера дельи Спози
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2529899
 creator: andrea-mantegna
 created: 1465/1474
 kind: fresco
@@ -78,9 +117,6 @@ sources:
   kind:
     - accessed: 2026-10-20
       property: P186
-      wikidata: Q2529899
-  names:
-    - accessed: 2026-10-20
       wikidata: Q2529899
   creator:
     - accessed: 2026-10-20

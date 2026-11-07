@@ -4,6 +4,9 @@ names:
   - lang: ja
     role: original
     text: "{大日如来坐像|だいにちにょらいざぞう}"
+    sources:
+      - accessed: 2026-10-28
+        wikidata: Q5209488
 creator: unkei
 created: 1175/1176
 kind: statue
@@ -37,9 +40,6 @@ images:
     license: Public domain
     credit: Nara National Museum 奈良帝室博物館 (Showa 8 - 1933)
 sources:
-  names:
-    - accessed: 2026-10-28
-      wikidata: Q5209488
   created:
     - note: “dated 1175” · “it took 326 days for its completion”
       source: kobayashi-1954-unkei

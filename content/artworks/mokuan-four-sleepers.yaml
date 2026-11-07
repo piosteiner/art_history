@@ -4,9 +4,15 @@ names:
   - lang: ja
     role: translation
     text: 四睡図
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11420078
   - lang: zh
     role: translation
     text: 四睡图
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11420078
 creator: mokuan-reien
 created: 14th century
 created_span: uncertain
@@ -34,9 +40,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 222–223, fig. 257
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q11420078
   medium:
     - source: history-of-japanese-art
       locator: pp. 222–223, fig. 257

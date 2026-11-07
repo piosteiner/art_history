@@ -6,6 +6,7 @@ place: zurich
 location: [8.54806, 47.37028]
 address: Heimplatz 1, 8001 Zürich
 website_url: http://www.kunsthaus.ch/
+collection_url: https://collection.kunsthaus.ch/de/collection/
 wikidata_id: Q685038
 metadata:
   sources: [Wikidata Q685038 (retrieved 2026-10-05)]

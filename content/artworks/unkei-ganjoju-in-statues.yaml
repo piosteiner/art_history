@@ -4,9 +4,15 @@ names:
   - lang: ja
     role: original
     text: 願成就院運慶作諸仏
+    sources:
+      - accessed: 2026-10-28
+        wikidata: Q107045468
   - lang: en
     role: alternative
     text: five Buddhist statues by Unkei
+    sources:
+      - accessed: 2026-10-28
+        wikidata: Q107045468
 creator: unkei
 created: 1186
 kind: statue
@@ -22,9 +28,6 @@ images:
     license: Public domain
     credit: Unknown author
 sources:
-  names:
-    - accessed: 2026-10-28
-      wikidata: Q107045468
   created:
     - note: “a set of five sculptures he carved for Ganjojuin temple in Shizuoka in 1186 (Bunji 2)”
       source: tnm-unkei-exhibition-2017

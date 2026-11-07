@@ -1,0 +1,46 @@
+public_id: 116530
+name: Tsuji Kakō
+names:
+  - lang: ja
+    role: original
+    text: 都路華香
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3541642
+  - text: Tsuji Kako
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3541642
+  - text: Kakō Tsuji
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3541642
+  - text: Tsuji Kakou
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3541642
+birth: 1870
+death: 1931-08-04
+wikidata_id: Q3541642
+metadata:
+  sources: [Wikidata Q3541642 (retrieved 2026-11-06)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6c/Kako_Tsuji01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kako_Tsuji01.jpg
+    license: Public domain
+    credit: Tsuji Kakô (1870-1931)
+identifiers:
+  bnf: "155773836"
+  gnd: "133597164"
+  lc: nr2007012783
+  ulan: "500123389"
+  viaf: "70123549"
+sources:
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q3541642
+  death:
+    - accessed: 2026-11-06
+      property: P570
+      wikidata: Q3541642

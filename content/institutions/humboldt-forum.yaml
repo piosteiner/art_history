@@ -5,6 +5,7 @@ kind: museum
 place: berlin
 location: [13.40278, 52.5175]
 website_url: https://www.humboldtforum.org/de/
+collection_url: https://search.smb.museum/
 wikidata_id: Q20196262
 metadata:
   sources: [Wikidata Q20196262 (retrieved 2026-10-27)]

@@ -5,27 +5,51 @@ names:
   - lang: en
     role: translation
     text: Black Paintings
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1988253
   - lang: nl
     role: translation
     text: Zwarte Schilderijen
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1988253
   - lang: fr
     role: translation
     text: Peintures noires
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1988253
   - lang: de
     role: translation
     text: Schwarze Gemälde
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1988253
   - lang: it
     role: translation
     text: Pitture nere
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1988253
   - lang: ja
     role: translation
     text: 黒い絵
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1988253
   - lang: zh
     role: translation
     text: 黑色繪畫
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1988253
   - lang: ru
     role: translation
     text: Мрачные картины
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1988253
 parts_count: 14
 creator: francisco-goya
 created: 1820/1823
@@ -44,9 +68,6 @@ images:
     license: CC BY-SA 3.0
     credit: Chabacano
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q1988253
   created:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/18110a75-b0e7-430c-bc73-2a4d55893bd6
       note: the series as the Prado names it on the page of one of its parts

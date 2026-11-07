@@ -2,16 +2,28 @@ public_id: 113409
 title_lang: es
 title: Socorro de Brisach
 names:
-  - The Relief of Brisach
+  - text: The Relief of Brisach
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q59689172
   - lang: en
     role: translation
     text: The Liberation of Brisach
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q59689172
   - lang: de
     role: translation
     text: Die Befreiung von Breisach
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q59689172
   - lang: ru
     role: translation
     text: Взятие Брайзаха
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q59689172
 parent: battle-series
 creator: jusepe-leonardo
 created: 1634/1635
@@ -29,9 +41,6 @@ images:
     license: Public domain
     credit: Jusepe Leonardo
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q59689172
   parent:
     - accessed: 2026-11-03
       property: P179

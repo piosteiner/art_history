@@ -5,17 +5,35 @@ names:
   - lang: ja
     role: original
     text: 東海道程ケ谷
-  - Tōkaidō Hodogaya
-  - Hodogaya on the Tokaido
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173426
+  - text: Tōkaidō Hodogaya
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173426
+  - text: Hodogaya on the Tokaido
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173426
   - lang: fr
     role: translation
     text: Hodogaya sur le Tōkaidō
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173426
   - lang: es
     role: translation
     text: Hodogaya en la Tōkaidō
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173426
   - lang: ja
     role: original
     text: 富嶽三十六景 東海道程ケ谷
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173426
 parent: thirty-six-views-of-mount-fuji
 part_number: "36"
 creator: katsushika-hokusai
@@ -49,9 +67,6 @@ images:
     license: Public domain
     credit: The Metropolitan Museum of Art
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173426
   parent:
     - accessed: 2026-11-03
       property: P179

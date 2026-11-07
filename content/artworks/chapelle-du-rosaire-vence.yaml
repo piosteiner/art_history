@@ -2,17 +2,32 @@ public_id: 102168
 title_lang: fr
 title: Chapelle du Rosaire (Chapelle Matisse)
 names:
-  - Vence Chapel
-  - Chapelle du Saint-Marie du Rosaire
+  - text: Vence Chapel
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1062726
+  - text: Chapelle du Saint-Marie du Rosaire
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1062726
   - lang: zh
     role: translation
     text: 旺斯罗塞尔小教堂
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1062726
   - lang: ko
     role: translation
     text: 로사리오 예배당
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1062726
   - lang: ru
     role: translation
     text: Часовня Розер
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1062726
 creator: henri-matisse
 created: 1949/1951
 web_url: http://chapellematisse.com/
@@ -44,9 +59,6 @@ identifiers:
   gnd: 6104688-7
   viaf: "159340222"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1062726
   creator:
     - accessed: 2026-10-20
       property: P170

@@ -1,0 +1,39 @@
+public_id: 116582
+title_lang: en
+title: "After the Fall of Weihaiwei: The Commander of the Chinese Fleet Surrenders"
+names:
+  - lang: ja
+    role: original
+    text: 威海衛陥落北洋艦隊提督丁汝昌降伏ノ図
+  - lang: en
+    role: alternative
+    text: "After the Fall of Wanghaiwei: The Commander of the Chinese Fleet Surrenders"
+creator: migita-toshihide
+created: 1895
+kind: Japanese woodblock print
+medium: Colour woodblock print, ōban triptych
+institution: keio-university-library
+web_url: https://objecthub.keio.ac.jp/ja/object/9865
+description_md: The surrender of Ding Ruchang, admiral of the Beiyang fleet, after the fall of Weihaiwei in the [[event/first-sino-japanese-war]]; published by Matsuno Yonejirō. In the Bon Ukiyo-e Collection of the [[institution/keio-university-library]]. [[source/keio-objecthub-9865]]
+relationships:
+  - type: depicts
+    to: event/first-sino-japanese-war
+    sources:
+      - source: keio-objecthub-9865
+        accessed: 2026-11-06
+sources:
+  kind:
+    - source: keio-objecthub-9865
+      accessed: 2026-11-06
+  medium:
+    - source: keio-objecthub-9865
+      accessed: 2026-11-06
+  created:
+    - source: keio-objecthub-9865
+      accessed: 2026-11-06
+  creator:
+    - source: keio-objecthub-9865
+      accessed: 2026-11-06
+  institution:
+    - source: keio-objecthub-9865
+      accessed: 2026-11-06

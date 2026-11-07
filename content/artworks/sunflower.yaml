@@ -5,15 +5,27 @@ names:
   - lang: en
     role: translation
     text: Sunflower
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28015487
   - lang: fr
     role: translation
     text: Le Tournesol
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28015487
   - lang: de
     role: original
     text: Sonnenblume
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28015487
   - lang: ru
     role: translation
     text: Подсолнух
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28015487
 creator: gustav-klimt
 created: 1907/1908
 created_label: c. 1900s
@@ -81,9 +93,6 @@ provenance:
         source: belvedere-sammlung-online
         accessed: 2026-07-10
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q28015487
   created:
     - accessed: 2026-10-20
       property: P571

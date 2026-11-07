@@ -5,12 +5,21 @@ names:
   - lang: en
     role: translation
     text: Nativity of the Virgin
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3873247
   - lang: fr
     role: translation
     text: Naissance de la Vierge
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3873247
   - lang: de
     role: translation
     text: Geburt Mariens
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q3873247
 parent: cycle-of-four-altar-pieces-for-the-patron-saints-of-siena
 creator: pietro-lorenzetti
 created: c. 1342
@@ -28,9 +37,6 @@ images:
     license: Public domain
     credit: Pietro Lorenzetti
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q3873247
   created:
     - accessed: 2026-11-03
       property: P571

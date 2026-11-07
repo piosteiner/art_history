@@ -4,9 +4,15 @@ names:
   - lang: fr
     role: translation
     text: La Berceuse (Van Gogh)
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q24036676
   - lang: ja
     role: translation
     text: ルーラン夫人ゆりかごを揺らす女
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q24036676
 parts_count: 5
 creator: vincent-van-gogh
 created: 1888-12/1889-03
@@ -23,9 +29,6 @@ relationships:
   - type: depicts_person
     to: person/augustine-roulin
 sources:
-  names:
-    - accessed: 2026-10-30
-      wikidata: Q24036676
   created:
     - accessed: 2026-10-30
       property: P571

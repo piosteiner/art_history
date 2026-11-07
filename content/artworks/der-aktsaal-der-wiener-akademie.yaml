@@ -5,6 +5,9 @@ names:
   - lang: de
     role: original
     text: Der Aktsaal der Wiener Akademie
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q106129336
 creator: martin-ferdinand-quadal
 created: 1787
 kind: oil painting
@@ -53,9 +56,6 @@ provenance:
         source: akademie-gemaeldegalerie-sammlung
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q106129336
   created:
     - accessed: 2026-10-20
       property: P571

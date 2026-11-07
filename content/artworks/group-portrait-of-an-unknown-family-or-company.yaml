@@ -5,15 +5,27 @@ names:
   - lang: en
     role: translation
     text: Group portrait of an unknown family or company
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19944849
   - lang: nl
     role: translation
     text: Groepsportret van een onbekende familie of gezelschap
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19944849
   - lang: fr
     role: translation
     text: La Famille delftoise
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19944849
   - lang: ja
     role: translation
     text: 無名の家族、または一団の集団肖像画
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19944849
 creator: pieter-de-hooch
 created: c. 1658
 created_span: uncertain
@@ -56,9 +68,6 @@ provenance:
         source: akademie-gemaeldegalerie-sammlung
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q19944849
   created:
     - accessed: 2026-10-20
       property: P571

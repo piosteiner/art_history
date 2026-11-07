@@ -5,7 +5,13 @@ names:
   - lang: fr
     role: translation
     text: Un éléphant
-  - An elephant
+    sources:
+      - accessed: 2026-10-22
+        wikidata: Q18688687
+  - text: An elephant
+    sources:
+      - accessed: 2026-10-22
+        wikidata: Q18688687
 creator: rembrandt
 created: 1637
 kind: drawing
@@ -92,9 +98,6 @@ sources:
     - url: https://sammlungenonline.albertina.at/objects/32307/ein-elefant?ctx=9a1c93525e9fcb01efe91e8e7f916766c9d4c926&idx=3
       source: albertina-sammlungen-online
       accessed: 2026-10-22
-  names:
-    - accessed: 2026-10-22
-      wikidata: Q18688687
   medium:
     - url: https://sammlungenonline.albertina.at/objects/32307/ein-elefant?ctx=9a1c93525e9fcb01efe91e8e7f916766c9d4c926&idx=3
       source: albertina-sammlungen-online

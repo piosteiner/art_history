@@ -2,37 +2,76 @@ public_id: 101961
 title_lang: it
 title: Annunciazione tra i santi Ansano e Margherita
 names:
-  - Annunciation with St. Margaret and St. Ansanus
-  - The Annunciation with St. Margaret and St. Ansanus
-  - St. Ansanus Altarpiece
-  - The Annunciation with St. Margaret and St. Ansanus (St. Ansanus Altarpiece)
+  - text: Annunciation with St. Margaret and St. Ansanus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q979440
+  - text: The Annunciation with St. Margaret and St. Ansanus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q979440
+  - text: St. Ansanus Altarpiece
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q979440
+  - text: The Annunciation with St. Margaret and St. Ansanus (St. Ansanus Altarpiece)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q979440
   - lang: en
     role: original
     text: Annunciation with Saints Maxima and Ansanus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q979440
   - lang: nl
     role: translation
     text: Verkondiging met de heilige Margaretha en Ansanus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q979440
   - lang: fr
     role: translation
     text: Annonciation entre les saints Ansan et Marguerite
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q979440
   - lang: de
     role: translation
     text: Verkündigung mit den Heiligen Maxima und Ansanus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q979440
   - lang: it
     role: translation
     text: Annunciazione tra i santi Ansano e Margherita
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q979440
   - lang: es
     role: translation
     text: Anunciación entre los santos Ansano y Margarita
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q979440
   - lang: ja
     role: translation
     text: 聖女マルガリータと聖アンサヌスのいる受胎告知
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q979440
   - lang: zh
     role: translation
     text: 圣母领报和圣玛加利与圣安沙诺
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q979440
   - lang: ru
     role: translation
     text: Благовещение
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q979440
 parent: cycle-of-four-altar-pieces-for-the-patron-saints-of-siena
 creator: simone-martini
 created: 1333
@@ -74,9 +113,6 @@ provenance:
         accessed: 2026-10-20
     exchanged_for_text: two canvases by Luca Giordano
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q979440
   parent:
     - accessed: 2026-10-20
       property: P179

@@ -5,34 +5,73 @@ names:
   - lang: nl
     role: original
     text: De Schilderkonst
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q588695
   - lang: de
     role: original
     text: Die Malkunst
-  - The Allegory of Painting
-  - Painter in his Studio
-  - De schilderkunst
-  - The Artist in his Studio
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q588695
+  - text: The Allegory of Painting
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q588695
+  - text: Painter in his Studio
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q588695
+  - text: De schilderkunst
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q588695
+  - text: The Artist in his Studio
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q588695
   - lang: fr
     role: translation
     text: L'Art de la peinture
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q588695
   - lang: it
     role: translation
     text: Allegoria della Pittura
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q588695
   - lang: es
     role: translation
     text: El arte de la pintura
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q588695
   - lang: ja
     role: translation
     text: 絵画芸術
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q588695
   - lang: zh
     role: translation
     text: 绘画艺术
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q588695
   - lang: ko
     role: translation
     text: 회화의 기술
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q588695
   - lang: ru
     role: translation
     text: Мастерская художника
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q588695
 creator: johannes-vermeer
 created: 1660/1669
 created_label: c. 1660s
@@ -146,9 +185,6 @@ provenance:
         note: taken into the collection (inventoried)
         place: vienna
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q588695
   created:
     - accessed: 2026-10-19
       property: P571

@@ -1,0 +1,52 @@
+public_id: 116519
+name: Hayao Miyazaki
+names:
+  - lang: ja
+    role: original
+    text: 宮崎駿
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q55400
+  - text: Miyazaki Hayao
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q55400
+  - text: Tsutomu Teruki
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q55400
+  - lang: ko
+    role: translation
+    text: 미야자키 하야오
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q55400
+  - lang: ru
+    role: translation
+    text: Хаяо Миядзаки
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q55400
+birth: 1941-01-05
+wikidata_id: Q55400
+metadata:
+  sources: [Wikidata Q55400 (retrieved 2026-11-06)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/ff/HayaoMiyazakiCCJuly09.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:HayaoMiyazakiCCJuly09.jpg
+    license: CC BY 2.0
+    credit: Natasha Baucas at https://www.flickr.com/photos/sdnatasha/
+identifiers:
+  bnf: 12534287b
+  gnd: "123015529"
+  idref: "034603980"
+  lc: nr93013379
+  nlk: KAC200209054
+  rkd: "228796"
+  ulan: "500372800"
+  viaf: "85117053"
+sources:
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q55400

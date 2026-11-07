@@ -1,0 +1,33 @@
+public_id: 116584
+title_lang: en
+title: Li Jun, the Dragon in the Turbulent River
+names:
+  - lang: ja
+    role: original
+    text: 混江龍李俊
+creator: utagawa-kuniyoshi
+created: c. 1827–1830
+created_span: uncertain
+kind: Japanese woodblock print
+medium: Colour woodblock print, ōban
+description_md: Li Jun, "the Dragon in the Turbulent River", from the series 通俗水滸伝豪傑百八人之一個 (*One of the 108 Heroes of the Popular Water Margin*) — the 26th of the 108 heroes of the [[literature/water-margin]], signed Ichiyūsai Kuniyoshi ga. The British Museum keeps three impressions. [[source/arc-bm-1906-1220-1249]]
+relationships:
+  - type: illustrates
+    to: literature/water-margin
+    sources:
+      - source: arc-bm-1906-1220-1249
+        locator: series title; subject (水滸伝)
+        accessed: 2026-11-06
+sources:
+  kind:
+    - source: arc-bm-1906-1220-1249
+      accessed: 2026-11-06
+  medium:
+    - source: arc-bm-1906-1220-1249
+      accessed: 2026-11-06
+  created:
+    - source: thomsen-2019-war-and-peace
+      locator: image list, 3 May 2019
+  creator:
+    - source: arc-bm-1906-1220-1249
+      accessed: 2026-11-06

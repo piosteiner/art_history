@@ -5,23 +5,47 @@ names:
   - lang: ja
     role: original
     text: 御厩川岸より両国橋夕陽見
-  - Ommaya-gashi yori Ryōgoku-bashi yūhi mi
-  - Onmaya-gashi yori Ryōgoku-bashi yūhi mi
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173407
+  - text: Ommaya-gashi yori Ryōgoku-bashi yūhi mi
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173407
+  - text: Onmaya-gashi yori Ryōgoku-bashi yūhi mi
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173407
   - lang: en
     role: original
     text: Sunset across the Ryogoku bridge from the bank of the Sumida river at Onmaya-gashi
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173407
   - lang: fr
     role: translation
     text: Coucher de soleil à travers le pont de Ryōgoku depuis la rive de la Sumida à Onmayagashi
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173407
   - lang: de
     role: translation
     text: Blick auf den Sonnenuntergang über der Ryogoku-Brücke von der Ufermauer in Onmaya
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173407
   - lang: es
     role: translation
     text: Puesta de sol a través del puente Ryōgoku desde la orilla del río Sumida en Onmayagashi
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173407
   - lang: ja
     role: original
     text: 富嶽三十六景 御厩川岸より両国橋夕陽見
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173407
 parent: thirty-six-views-of-mount-fuji
 part_number: "22"
 creator: katsushika-hokusai
@@ -54,9 +78,6 @@ images:
     license: Public domain
     credit: Art Institute of Chicago, Clarence Buckingham Collection
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173407
   parent:
     - accessed: 2026-11-03
       property: P179

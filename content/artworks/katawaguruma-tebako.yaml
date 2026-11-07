@@ -1,11 +1,20 @@
 public_id: 106752
 title: Cosmetic box with wheels in water
 names:
-  - Tebako (Cosmetic box), Cart wheels in stream design in mother of pearl inlay
-  - Toiletry Case with Cart Wheels in Stream
+  - text: Tebako (Cosmetic box), Cart wheels in stream design in mother of pearl inlay
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107044952
+  - text: Toiletry Case with Cart Wheels in Stream
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107044952
   - lang: ja
     role: original
     text: "{片輪車蒔絵螺鈿手箱|かたわぐるままきえらでんてばこ}"
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107044952
 attribution_label: Anonymous
 created: 12th century
 created_span: uncertain
@@ -34,9 +43,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: p. 106, fig. 130
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q107044952
   medium:
     - source: history-of-japanese-art
       locator: p. 106, fig. 130

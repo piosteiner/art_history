@@ -1,0 +1,71 @@
+public_id: 116542
+name: Mount Tai
+names:
+  - text: Tai Mountain
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q216059
+  - text: Tai Shan
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q216059
+  - text: Taishan
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q216059
+  - lang: nl
+    role: translation
+    text: Heilige berg Taishan
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q216059
+  - lang: fr
+    role: translation
+    text: mont Tai
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q216059
+  - lang: it
+    role: translation
+    text: Monte Tai
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q216059
+  - lang: ja
+    role: translation
+    text: 泰山
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q216059
+  - lang: ko
+    role: translation
+    text: 태산
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q216059
+  - lang: ru
+    role: translation
+    text: Тайшань
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q216059
+kind: natural
+parent: people-s-republic-of-china
+country_code: CN
+location: [117.1, 36.26667]
+wikidata_id: Q216059
+metadata:
+  sources: [Wikidata Q216059 (retrieved 2026-11-06)]
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q216059
+  parent:
+    - accessed: 2026-11-06
+      property: P131
+      wikidata: Q216059
+  location:
+    - accessed: 2026-11-06
+      property: P625
+      wikidata: Q216059

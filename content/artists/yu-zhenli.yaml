@@ -1,0 +1,28 @@
+public_id: 116522
+name: Yu Zhenli
+given_name: Yu
+family_name: Zhenli
+names:
+  - lang: zh
+    role: translation
+    text: 于振立
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q45379239
+birth: 1946
+death: 2022-05-10
+wikidata_id: Q45379239
+metadata:
+  sources: [Wikidata Q45379239 (retrieved 2026-11-06)]
+identifiers:
+  lc: no2024043119
+  viaf: "106149616483503750350"
+sources:
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q45379239
+  death:
+    - accessed: 2026-11-06
+      property: P570
+      wikidata: Q45379239

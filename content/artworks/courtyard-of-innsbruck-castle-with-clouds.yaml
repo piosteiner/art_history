@@ -5,9 +5,15 @@ names:
   - lang: en
     role: translation
     text: Courtyard of Innsbruck Castle With Clouds
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q112091668
   - lang: fr
     role: translation
     text: Cour du château d'Innsbruck avec des nuages
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q112091668
 creator: albrecht-durer
 created: 1495
 materials: [watercolor paint, gouache paint, graphite]
@@ -105,9 +111,6 @@ provenance:
         source: aeiou-albertina
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q112091668
   created:
     - accessed: 2026-10-19
       property: P571

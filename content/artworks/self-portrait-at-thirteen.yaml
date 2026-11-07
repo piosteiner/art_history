@@ -4,24 +4,45 @@ names:
   - lang: nl
     role: translation
     text: zelfportret van Albrecht Dürer met dertien jaar
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1272037
   - lang: fr
     role: translation
     text: Autoportrait à l'âge de 13 ans
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1272037
   - lang: de
     role: translation
     text: Selbstbildnis als Dreizehnjähriger
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1272037
   - lang: it
     role: translation
     text: Autoritratto a tredici anni
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1272037
   - lang: es
     role: translation
     text: autorretrato de Durero
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1272037
   - lang: zh
     role: translation
     text: 丢勒自画像 (1484年)
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1272037
   - lang: ru
     role: translation
     text: Автопортрет в возрасте тринадцати лет
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q1272037
 creator: albrecht-durer
 created: 1484
 materials: [silverpoint, wove paper]
@@ -132,9 +153,6 @@ provenance:
         source: aeiou-albertina
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q1272037
   created:
     - accessed: 2026-10-19
       property: P571

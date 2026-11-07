@@ -5,25 +5,49 @@ names:
   - lang: en
     role: original
     text: The Gloomy Day
-  - February/March
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698219
+  - text: February/March
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698219
   - lang: nl
     role: translation
     text: De sombere dag
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698219
   - lang: fr
     role: translation
     text: La Journée sombre
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698219
   - lang: it
     role: translation
     text: Giornata buia
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698219
   - lang: es
     role: translation
     text: Día triste
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698219
   - lang: ja
     role: translation
     text: 暗い日
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698219
   - lang: ru
     role: translation
     text: Сумрачный день
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698219
 creator: pieter-brueghel-the-elder
 created: 1565
 created_label: datiert
@@ -122,9 +146,6 @@ sources:
     - url: https://www.khm.at/kunstwerke/duesterer-tag-vorfruehling-325
       source: khm-125-jahre
       accessed: 2026-10-30
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q698219
   created:
     - accessed: 2026-10-30
       property: P571

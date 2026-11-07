@@ -5,15 +5,27 @@ names:
   - lang: fr
     role: translation
     text: Abraham répudiant Agar
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q9138435
   - lang: de
     role: translation
     text: Verstoßung der Hagar
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q9138435
   - lang: it
     role: translation
     text: Abramo ripudia Agar e Ismaele
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q9138435
   - lang: ja
     role: translation
     text: ハガルとイシュマエルを追放するアブラハム
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q9138435
 creator: guercino
 created: 1657
 materials: [oil paint, canvas]
@@ -65,9 +77,6 @@ provenance:
         source: pinacoteca-di-brera-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q9138435
   created:
     - accessed: 2026-10-20
       property: P571

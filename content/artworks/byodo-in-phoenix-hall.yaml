@@ -1,15 +1,30 @@
 public_id: 106780
 title: Hōōdō (Phoenix Hall), Byōdōin
 names:
-  - Phoenix Hall
-  - Hōō-dō
-  - Hōōdō
+  - text: Phoenix Hall
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q122767989
+  - text: Hōō-dō
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q122767989
+  - text: Hōōdō
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q122767989
   - lang: fr
     role: translation
     text: pavillon du Phoenix
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q122767989
   - lang: ja
     role: translation
     text: 平等院鳳凰堂
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q122767989
 attribution_label: Anonymous
 created: 1053
 kind: building
@@ -39,9 +54,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 143–145, figs. 172–173
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q122767989
   medium:
     - source: history-of-japanese-art
       locator: pp. 143–145, figs. 172–173

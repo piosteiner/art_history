@@ -1,11 +1,20 @@
 public_id: 106792
 title: One thousand standing Senju Kannon, Sanjūsangendō
 names:
-  - One Thousand Statues of Senju Kannon
-  - Sentai Senju Kannon
+  - text: One Thousand Statues of Senju Kannon
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046743
+  - text: Sentai Senju Kannon
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046743
   - lang: ja
     role: translation
     text: 千体千手観音立像
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046743
 attribution_label: Anonymous
 created: 1164/1266
 kind: sculpture
@@ -43,9 +52,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 154–156, fig. 188
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q107046743
   medium:
     - source: history-of-japanese-art
       locator: pp. 154–156, fig. 188

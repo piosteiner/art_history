@@ -2,36 +2,72 @@ public_id: 102139
 title_lang: it
 title: Cenacolo (Ultima Cena)
 names:
-  - Il Cenacolo
-  - L'Ultima Cena
-  - Last Supper
+  - text: Il Cenacolo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q128910
+  - text: L'Ultima Cena
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q128910
+  - text: Last Supper
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q128910
   - lang: nl
     role: translation
     text: Het Laatste Avondmaal
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q128910
   - lang: fr
     role: translation
     text: La Cène
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q128910
   - lang: de
     role: translation
     text: Das Abendmahl
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q128910
   - lang: it
     role: translation
     text: Ultima Cena
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q128910
   - lang: es
     role: translation
     text: La Última Cena
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q128910
   - lang: ja
     role: translation
     text: 最後の晩餐
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q128910
   - lang: zh
     role: translation
     text: 最後的晚餐
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q128910
   - lang: ko
     role: translation
     text: 최후의 만찬
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q128910
   - lang: ru
     role: translation
     text: Тайная вечеря
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q128910
 creator: leonardo-da-vinci
 created: 1494/1498
 materials: [tempera, gesso]
@@ -101,9 +137,6 @@ identifiers:
   gnd: 4195043-4
   viaf: "175915680"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q128910
   creator:
     - accessed: 2026-10-20
       property: P170

@@ -5,6 +5,9 @@ names:
   - lang: fr
     role: translation
     text: "Les Nymphéas : Les Deux Saules"
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28797624
 creator: claude-monet
 created: 1914/1926
 created_span: uncertain
@@ -61,9 +64,6 @@ sources:
     - url: https://www.musee-orangerie.fr/fr/oeuvres/les-deux-saules-196306
       source: musee-orangerie-fr
       accessed: 2026-10-30
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q28797624
   medium:
     - url: https://www.musee-orangerie.fr/fr/oeuvres/les-deux-saules-196306
       source: musee-orangerie-fr

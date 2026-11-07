@@ -5,15 +5,27 @@ names:
   - lang: en
     role: original
     text: Dead City III (City on the Blue River III)
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2445555
   - lang: en
     role: original
     text: Dead City III
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2445555
   - lang: fr
     role: translation
     text: Ville morte III
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2445555
   - lang: ru
     role: translation
     text: Мёртвый город
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2445555
 creator: egon-schiele
 created: 1911
 materials: [oil paint, panel]
@@ -102,9 +114,6 @@ provenance:
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q2445555
   created:
     - accessed: 2026-10-19
       property: P571

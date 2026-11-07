@@ -5,9 +5,17 @@ names:
   - lang: ja
     role: original
     text: "{弱法師|よろぼし}"
+    sources:
+      - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A10508&lang=ja
+        source: tnm-jp
+        accessed: 2026-10-28
   - lang: ja-Latn
     role: romanization
     text: Yoroboshi
+    sources:
+      - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A10508&lang=ja
+        source: tnm-jp
+        accessed: 2026-10-28
 creator: shimomura-kanzan
 created: 1915
 kind: byōbu
@@ -51,10 +59,6 @@ images:
     caption: "Left screen: the setting sun and a branch of plum"
 sources:
   kind:
-    - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A10508&lang=ja
-      source: tnm-jp
-      accessed: 2026-10-28
-  names:
     - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A10508&lang=ja
       source: tnm-jp
       accessed: 2026-10-28

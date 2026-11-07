@@ -1,0 +1,16 @@
+public_id: 116543
+name: Jilin
+kind: site
+location: [125.30833, 43.88417]
+wikidata_id: Q45208
+metadata:
+  sources: [Wikidata Q45208 (retrieved 2026-11-06)]
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q45208
+  location:
+    - accessed: 2026-11-06
+      property: P625
+      wikidata: Q45208

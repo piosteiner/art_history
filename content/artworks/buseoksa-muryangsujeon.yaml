@@ -1,10 +1,16 @@
 public_id: 108298
 title: Hall of Eternal Life (Muryangsu-jŏn), Pusŏk-sa
 names:
-  - Muryangsujeon
+  - text: Muryangsujeon
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q16093278
   - lang: ko
     role: translation
     text: 부석사 무량수전
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q16093278
 attribution_label: Anonymous
 created: 13th century
 created_span: uncertain
@@ -39,9 +45,6 @@ sources:
   kind:
     - source: portal-2000
       locator: p. 84, fig. 42
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q16093278
   medium:
     - source: portal-2000
       locator: p. 84, fig. 42

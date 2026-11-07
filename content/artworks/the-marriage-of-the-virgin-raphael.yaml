@@ -5,27 +5,51 @@ names:
   - lang: en
     role: translation
     text: The Marriage of the Virgin
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2030685
   - lang: nl
     role: translation
     text: Het huwelijk van de Maagd Maria
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2030685
   - lang: fr
     role: translation
     text: Le Mariage de la Vierge
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2030685
   - lang: de
     role: translation
     text: Vermählung Mariä
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2030685
   - lang: es
     role: translation
     text: Los desposorios de la Virgen
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2030685
   - lang: ja
     role: translation
     text: 聖母の結婚
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2030685
   - lang: zh
     role: translation
     text: 聖母的婚禮
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2030685
   - lang: ru
     role: translation
     text: Обручение Девы Марии
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2030685
 creator: raphael
 created: 1504
 materials: [oil paint, panel]
@@ -114,9 +138,6 @@ provenance:
 identifiers:
   gnd: 4483808-6
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2030685
   created:
     - accessed: 2026-10-20
       property: P571

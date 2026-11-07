@@ -5,9 +5,19 @@ names:
   - lang: en
     role: translation
     text: Bedroom in Arles
+    sources:
+      - url: https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746
+        note: "“Vincent van Gogh · La Chambre de Van Gogh à Arles · 1889 · huile sur toile · … avec cadre H. 74,5 ; L. 90,7 ; EP. 9,5 cm · Place of conservation: musée d'Orsay” — read in the Internet Archive’s copy of 2026-05-04: https://web.archive.org/web/20260504104434/https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746"
+        source: musee-d-orsay-collections
+        accessed: 2026-10-22
   - lang: de
     role: translation
     text: Vincents Schlafzimmer in Arles
+    sources:
+      - url: https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746
+        note: "“Vincent van Gogh · La Chambre de Van Gogh à Arles · 1889 · huile sur toile · … avec cadre H. 74,5 ; L. 90,7 ; EP. 9,5 cm · Place of conservation: musée d'Orsay” — read in the Internet Archive’s copy of 2026-05-04: https://web.archive.org/web/20260504104434/https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746"
+        source: musee-d-orsay-collections
+        accessed: 2026-10-22
 parent: bedroom-in-arles
 part_number: "3"
 creator: vincent-van-gogh
@@ -159,11 +169,6 @@ sources:
   kind:
     - url: https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746
       note: "“huile sur toile · H. 57,3 ; L. 73,5 cm avec cadre H. 74,5 ; L. 90,7 ; EP. 9,5 cm” — read in the Internet Archive’s copy of 2026-05-04: https://web.archive.org/web/20260504104434/https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746"
-      source: musee-d-orsay-collections
-      accessed: 2026-10-22
-  names:
-    - url: https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746
-      note: "“Vincent van Gogh · La Chambre de Van Gogh à Arles · 1889 · huile sur toile · … avec cadre H. 74,5 ; L. 90,7 ; EP. 9,5 cm · Place of conservation: musée d'Orsay” — read in the Internet Archive’s copy of 2026-05-04: https://web.archive.org/web/20260504104434/https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746"
       source: musee-d-orsay-collections
       accessed: 2026-10-22
   medium:

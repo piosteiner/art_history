@@ -5,30 +5,57 @@ names:
   - lang: en
     role: translation
     text: The Wedding at Cana
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q185255
   - lang: nl
     role: translation
     text: De bruiloft te Kana
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q185255
   - lang: de
     role: translation
     text: Die Hochzeit zu Kana
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q185255
   - lang: it
     role: translation
     text: Nozze di Cana
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q185255
   - lang: es
     role: translation
     text: Las bodas de Caná
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q185255
   - lang: ja
     role: translation
     text: カナの婚礼
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q185255
   - lang: zh
     role: translation
     text: 迦拿的婚禮
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q185255
   - lang: ko
     role: translation
     text: 가나의 혼인잔치
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q185255
   - lang: ru
     role: translation
     text: Брак в Кане Галилейской
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q185255
 creator: paolo-veronese
 created: 1562/1563
 created_label: c. 1560s
@@ -102,9 +129,6 @@ identifiers:
   gnd: 4347130-4
   viaf: "193736178"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q185255
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010064382
       source: louvre-collections

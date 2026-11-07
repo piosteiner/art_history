@@ -2,36 +2,72 @@ public_id: 102160
 title_lang: it
 title: Assunta
 names:
-  - Assumption of the Virgin Mary
-  - Frari Assumption
-  - Assumption
+  - text: Assumption of the Virgin Mary
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1899740
+  - text: Frari Assumption
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1899740
+  - text: Assumption
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1899740
   - lang: nl
     role: translation
     text: Maria Hemelvaart
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1899740
   - lang: fr
     role: translation
     text: L'Assomption de la Vierge
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1899740
   - lang: de
     role: translation
     text: Mariä Himmelfahrt
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1899740
   - lang: it
     role: translation
     text: Assunta
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1899740
   - lang: es
     role: translation
     text: La Asunción de la Virgen
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1899740
   - lang: ja
     role: translation
     text: 聖母被昇天 (ティツィアーノ)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1899740
   - lang: zh
     role: translation
     text: 聖母升天
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1899740
   - lang: ko
     role: translation
     text: 성모 승천
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1899740
   - lang: ru
     role: translation
     text: Успение Богородицы
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1899740
 creator: titian
 created: 1516/1518
 created_label: c. 1510s
@@ -82,9 +118,6 @@ provenance:
         source: wikipedia-it-assunta-tiziano
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1899740
   created:
     - accessed: 2026-10-20
       property: P571

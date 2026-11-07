@@ -5,18 +5,43 @@ names:
   - lang: ja
     role: original
     text: "{富嶽|ふがく}{三十六景|さんじゅうろっけい}"
+    sources:
+      - url: https://www.metmuseum.org/art/collection/search/45434
+        note: “Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei) · ca. 1830–32”
+        source: metropolitan-museum-collection
+        accessed: 2026-10-22
   - lang: ja-Latn
     role: romanization
     text: Fugaku sanjūrokkei
+    sources:
+      - url: https://www.metmuseum.org/art/collection/search/45434
+        note: “Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei) · ca. 1830–32”
+        source: metropolitan-museum-collection
+        accessed: 2026-10-22
   - lang: de
     role: translation
     text: 36 Ansichten des Berges Fuji
+    sources:
+      - url: https://www.metmuseum.org/art/collection/search/45434
+        note: “Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei) · ca. 1830–32”
+        source: metropolitan-museum-collection
+        accessed: 2026-10-22
   - lang: fr
     role: translation
     text: Trente-six vues du mont Fuji
+    sources:
+      - url: https://www.metmuseum.org/art/collection/search/45434
+        note: “Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei) · ca. 1830–32”
+        source: metropolitan-museum-collection
+        accessed: 2026-10-22
   - lang: nl
     role: translation
     text: Zesendertig gezichten op de berg Fuji
+    sources:
+      - url: https://www.metmuseum.org/art/collection/search/45434
+        note: “Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei) · ca. 1830–32”
+        source: metropolitan-museum-collection
+        accessed: 2026-10-22
 parts_count: 46
 creator: katsushika-hokusai
 created: c. 1830–1832
@@ -51,11 +76,6 @@ sources:
   kind:
     - url: https://www.metmuseum.org/art/collection/search/45434
       note: “… from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)”
-      source: metropolitan-museum-collection
-      accessed: 2026-10-22
-  names:
-    - url: https://www.metmuseum.org/art/collection/search/45434
-      note: “Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei) · ca. 1830–32”
       source: metropolitan-museum-collection
       accessed: 2026-10-22
   created:

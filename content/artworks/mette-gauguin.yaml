@@ -5,9 +5,17 @@ names:
   - lang: fr
     role: alternative
     text: La Brodeuse
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
   - lang: fr
     role: alternative
     text: Mette Gauguin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
   - lang: de
     role: translation
     text: Stickerin (Mette Gauguin)
@@ -116,10 +124,6 @@ numbers:
         accessed: 2026-10-31
 sources:
   kind:
-    - url: https://collection.kunsthaus.ch/de/collection/item/707958/
-      source: kunsthaus-zurich-sammlung-online
-      accessed: 2026-10-15
-  names:
     - url: https://collection.kunsthaus.ch/de/collection/item/707958/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-15

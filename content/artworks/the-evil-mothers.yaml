@@ -9,18 +9,32 @@ names:
       - url: https://sammlung.belvedere.at/objects/6224/die-bosen-mutter
         source: belvedere-sammlung-online
         accessed: 2026-10-30
+      - accessed: 2026-10-20
+        wikidata: Q749201
   - lang: fr
     role: translation
     text: Les Mauvaises Mères
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q749201
   - lang: it
     role: translation
     text: Le cattive madri
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q749201
   - lang: es
     role: translation
     text: Las malas madres
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q749201
   - lang: ja
     role: translation
     text: 悪しき母たち
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q749201
 creator: giovanni-segantini
 created: 1894
 kind: oil painting
@@ -60,9 +74,6 @@ provenance:
         source: belvedere-sammlung-online
         accessed: 2023-10-12
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q749201
   medium:
     - url: https://sammlung.belvedere.at/objects/6224/die-bosen-mutter
       source: belvedere-sammlung-online

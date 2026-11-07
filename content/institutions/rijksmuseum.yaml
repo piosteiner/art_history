@@ -6,6 +6,7 @@ place: amsterdam
 location: [4.88528, 52.36]
 address: Museumstraat 1
 website_url: https://www.rijksmuseum.nl/
+collection_url: https://www.rijksmuseum.nl/en/collection
 wikidata_id: Q190804
 metadata:
   sources: [Wikidata Q190804 (retrieved 2026-10-08)]

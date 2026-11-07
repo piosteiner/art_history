@@ -5,27 +5,51 @@ names:
   - lang: en
     role: original
     text: Self-portrait in a Convex Mirror
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699319
   - lang: fr
     role: translation
     text: Autoportrait dans un miroir convexe
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699319
   - lang: de
     role: original
     text: Selbstporträt im konvexen Spiegel
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699319
   - lang: it
     role: translation
     text: Autoritratto entro uno specchio convesso
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699319
   - lang: es
     role: translation
     text: Autorretrato en un espejo convexo
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699319
   - lang: ja
     role: translation
     text: 凸面鏡の自画像
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699319
   - lang: zh
     role: translation
     text: 自画像
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699319
   - lang: ru
     role: translation
     text: Автопортрет в искривленном зеркале
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699319
 creator: parmigianino
 created: 1523/1524
 created_label: c. 1520s
@@ -126,9 +150,6 @@ provenance:
         source: khm-125-jahre
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q699319
   created:
     - accessed: 2026-10-19
       property: P571

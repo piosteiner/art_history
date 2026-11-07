@@ -1,0 +1,18 @@
+public_id: 116499
+name: Tsuguharu Foujita
+given_name: Tsuguharu
+family_name: Foujita
+birth: 1886-11-27
+death: 1968-01-29
+wikidata_id: Q261846
+metadata:
+  sources: [Wikidata Q261846 (retrieved 2026-11-06)]
+sources:
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q261846
+  death:
+    - accessed: 2026-11-06
+      property: P570
+      wikidata: Q261846

@@ -2,22 +2,40 @@ public_id: 102106
 title_lang: it
 title: Madonna con il Bambino (Madonna Greca)
 names:
-  - The Greek Madonna
+  - text: The Greek Madonna
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3842748
   - lang: en
     role: translation
     text: Madonna with the Child
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3842748
   - lang: nl
     role: translation
     text: Griekse madonna
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3842748
   - lang: fr
     role: translation
     text: Madone grecque
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3842748
   - lang: de
     role: translation
     text: Madonna mit Kind
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3842748
   - lang: ja
     role: translation
     text: ギリシャの聖母
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3842748
 creator: giovanni-bellini
 created: c. 1460–1465
 created_span: uncertain
@@ -52,9 +70,6 @@ provenance:
         source: pinacoteca-di-brera-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q3842748
   created:
     - url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-con-il-bambino-madonna-greca/
       source: pinacoteca-di-brera-collezione

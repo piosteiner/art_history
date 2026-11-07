@@ -1,0 +1,44 @@
+public_id: 116517
+name: Fuminori Kizaki
+names:
+  - lang: ja
+    role: original
+    text: 木崎文智
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3090837
+  - lang: ja
+    role: original
+    text: 木﨑文智
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3090837
+  - lang: ko
+    role: translation
+    text: 키자키 후미노리
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3090837
+  - lang: ru
+    role: translation
+    text: Фуминори Кидзаки
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q3090837
+birth: 1969-03-10
+wikidata_id: Q3090837
+metadata:
+  sources: [Wikidata Q3090837 (retrieved 2026-11-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Kizaki_Fuminori_from_%22Human_Lost%22_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2019_%2849013601656%29.jpg/1280px-Kizaki_Fuminori_from_%22Human_Lost%22_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2019_%2849013601656%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kizaki_Fuminori_from_%22Human_Lost%22_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2019_(49013601656).jpg
+    license: CC BY 2.0
+    credit: Dick Thomas Johnson from Tokyo, Japan
+identifiers:
+  lc: no2013038746
+  viaf: "299227911"
+sources:
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q3090837

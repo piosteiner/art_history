@@ -2,35 +2,68 @@ public_id: 101946
 title_lang: it
 title: Annunciazione
 names:
-  - The Annunciation
-  - Annunciation of San Martino
+  - text: The Annunciation
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1217213
+  - text: Annunciation of San Martino
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1217213
   - lang: nl
     role: translation
     text: De Annunciatie
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1217213
   - lang: fr
     role: translation
     text: L'Annonciation de San Martino
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1217213
   - lang: de
     role: translation
     text: Verkündigung
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1217213
   - lang: it
     role: translation
     text: Annunciazione
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1217213
   - lang: es
     role: translation
     text: Anunciación
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1217213
   - lang: ja
     role: translation
     text: 受胎告知
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1217213
   - lang: zh
     role: translation
     text: 聖母領報
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1217213
   - lang: ko
     role: translation
     text: 수태고지
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1217213
   - lang: ru
     role: translation
     text: Благовещение
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1217213
 creator: leonardo-da-vinci
 created: c. 1472
 created_span: uncertain
@@ -76,9 +109,6 @@ provenance:
 identifiers:
   gnd: 4415837-3
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1217213
   created:
     - accessed: 2026-10-20
       property: P571

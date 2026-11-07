@@ -5,16 +5,31 @@ names:
   - lang: ja
     role: original
     text: 諸人登山
-  - Shojin tozan
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173437
+  - text: Shojin tozan
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173437
   - lang: fr
     role: translation
     text: L'ascension du Fuji
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173437
   - lang: es
     role: translation
     text: Subiendo el Fuji
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173437
   - lang: ja
     role: original
     text: 富嶽三十六景 諸人登山
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173437
 parent: thirty-six-views-of-mount-fuji
 part_number: "46"
 creator: katsushika-hokusai
@@ -44,9 +59,6 @@ images:
     license: Public domain
     credit: Katsushika Hokusai
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173437
   parent:
     - accessed: 2026-11-03
       property: P179

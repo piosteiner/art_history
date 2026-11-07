@@ -5,18 +5,33 @@ names:
   - lang: en
     role: original
     text: Danae
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1408753
   - lang: fr
     role: translation
     text: Danaé
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1408753
   - lang: es
     role: translation
     text: Dánae
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1408753
   - lang: ja
     role: translation
     text: ダナエ
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1408753
   - lang: zh
     role: translation
     text: 達那厄 (科雷吉歐)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1408753
 parent: the-loves-of-jupiter
 creator: antonio-da-correggio
 created: 1530/1531
@@ -220,9 +235,6 @@ provenance:
         source: galleria-borghese-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1408753
   parent:
     - accessed: 2026-10-20
       property: P179

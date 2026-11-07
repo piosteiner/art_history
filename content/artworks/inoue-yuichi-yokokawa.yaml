@@ -1,11 +1,35 @@
 public_id: 108219
-title: Ah! Yokokawa National School
+title_lang: en
+title: Ah, the Yokokawa National School
+title_status: official
+names:
+  - lang: ja
+    role: original
+    text: 噫横川國民學校
+    sources:
+      - note: The romanization follows the database's reading アアヨコカワコクミンガッコウ; "Ah! Yokokawa National School" is Mason's (p. 381).
+        source: mmag-collection-2119
+        accessed: 2026-11-06
+  - lang: ja-Latn
+    role: romanization
+    text: Aa Yokokawa Kokumin Gakkō
+    sources:
+      - note: The romanization follows the database's reading アアヨコカワコクミンガッコウ; "Ah! Yokokawa National School" is Mason's (p. 381).
+        source: mmag-collection-2119
+        accessed: 2026-11-06
+  - text: Ah! Yokokawa National School
+    sources:
+      - note: The romanization follows the database's reading アアヨコカワコクミンガッコウ; "Ah! Yokokawa National School" is Mason's (p. 381).
+        source: mmag-collection-2119
+        accessed: 2026-11-06
 creator: inoue-yuichi
 created: 1978
 kind: calligraphy
 medium: Ink on paper
 materials: [ink, paper]
 dimensions: [145, 244]
+institution: museum-of-modern-art-gunma
+web_url: https://jmapps.ne.jp/mmag/det.html?data_id=2119
 description_md: "[[artist/inoue-yuichi]] (1916–1985), a wild man of the brush who made brushes from brooms and even used his head and hands, lets the mass of characters be nothing but the expression of his brush — in many ways the natural outcome of fifteen hundred years of Japanese calligraphy. [[source/history-of-japanese-art|p. 381, fig. 454]]"
 relationships:
   - type: associated_with
@@ -17,18 +41,36 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: p. 381, fig. 454
+    - source: mmag-collection-2119
+      accessed: 2026-11-06
   medium:
     - source: history-of-japanese-art
       locator: p. 381, fig. 454
+    - source: mmag-collection-2119
+      accessed: 2026-11-06
   created:
     - source: history-of-japanese-art
       locator: p. 381, fig. 454
+    - source: mmag-collection-2119
+      accessed: 2026-11-06
   creator:
     - source: history-of-japanese-art
       locator: p. 381, fig. 454
+    - source: mmag-collection-2119
+      accessed: 2026-11-06
   materials:
     - source: history-of-japanese-art
       locator: p. 381, fig. 454
+    - source: mmag-collection-2119
+      accessed: 2026-11-06
   dimensions:
     - source: history-of-japanese-art
       locator: p. 381, fig. 454
+    - source: mmag-collection-2119
+      accessed: 2026-11-06
+  institution:
+    - source: mmag-collection-2119
+      accessed: 2026-11-06
+  title_status:
+    - source: mmag-collection-2119
+      accessed: 2026-11-06

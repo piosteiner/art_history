@@ -4,21 +4,39 @@ names:
   - lang: nl
     role: translation
     text: De grote vissen eten de kleine
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q698510
   - lang: fr
     role: translation
     text: Les gros poissons mangent les petits
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q698510
   - lang: en
     role: translation
     text: Big Fish Eat Little Fish
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q698510
   - lang: it
     role: translation
     text: I pesci grandi mangiano i pesci piccoli
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q698510
   - lang: ja
     role: translation
     text: 大きな魚は小さな魚を食う (原画)
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q698510
   - lang: ru
     role: translation
     text: Большие рыбы поедают малых
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q698510
 creator: pieter-brueghel-the-elder
 created: 1556
 kind: drawing
@@ -130,9 +148,6 @@ sources:
     - url: https://sammlungenonline.albertina.at/de/objects/28754/die-groen-fische-fressen-die-kleinen
       source: albertina-sammlungen-online
       accessed: 2026-10-30
-  names:
-    - accessed: 2026-10-30
-      wikidata: Q698510
   medium:
     - url: https://sammlungenonline.albertina.at/de/objects/28754/die-groen-fische-fressen-die-kleinen
       source: albertina-sammlungen-online

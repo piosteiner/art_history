@@ -5,16 +5,28 @@ names:
   - lang: en
     role: translation
     text: Avenue in the Park of Schloss Kammer
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19912810
   - lang: fr
     role: translation
     text: Avenue dans le parc de Schloss Kammer
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19912810
   - lang: de
     role: alternative
     text: Allee vor Schloss Kammer
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19912810
   - lang: en
     role: translation
     text: Avenue to Schloss Kammer
     status: official
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q19912810
 creator: gustav-klimt
 created: 1912
 kind: oil painting
@@ -81,9 +93,6 @@ provenance:
         source: belvedere-sammlung-online
         accessed: 2026-07-22
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q19912810
   medium:
     - url: https://sammlung.belvedere.at/objects/8691/allee-zum-schloss-kammer
       source: belvedere-sammlung-online

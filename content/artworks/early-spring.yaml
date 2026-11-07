@@ -1,0 +1,114 @@
+public_id: 116485
+title_lang: en
+title: Early Spring
+names:
+  - lang: zh
+    role: original
+    text: 早春
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q5136665
+  - lang: nl
+    role: translation
+    text: Vroege lente
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q5136665
+  - lang: fr
+    role: translation
+    text: Début de printemps
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q5136665
+  - lang: es
+    role: translation
+    text: Primavera reciente
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q5136665
+  - lang: ja
+    role: translation
+    text: 早春図
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q5136665
+  - lang: zh
+    role: original
+    text: 早春圖
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q5136665
+  - lang: ko
+    role: translation
+    text: 이른 봄
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q5136665
+  - lang: ru
+    role: translation
+    text: Ранняя весна
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q5136665
+  - lang: zh
+    role: original
+    text: 早春圖
+creator: guo-xi
+created: 1072
+created_span: uncertain
+kind: kakemono
+medium: Silk
+dimensions: [158.3, 108.1]
+institution: national-palace-museum
+inventory_number: 故畫000053N000000000
+web_url: https://digitalarchive.npm.gov.tw/Painting/Content?pid=47&Dept=P
+description_md: 'Signed and dated in a small line of clerical script at the middle left: "Early Spring. Painted by Guo Xi in the year renzi" (1072); above, a poem by the Qianlong Emperor of 1759. [[source/npm-gugua-000053|基本資料, 題跋資料]]'
+wikidata_id: Q5136665
+metadata:
+  sources: [Wikidata Q5136665 (retrieved 2026-11-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/%E6%97%A9%E6%98%A5%E5%9B%BE%E8%BD%B4.%E5%8C%97%E5%AE%8B.%E9%83%AD%E7%86%99%E7%BB%98.%E7%BB%A2%E6%9C%AC%E6%B5%85%E8%AE%BE%E8%89%B2.%E5%AE%8B%E7%A5%9E%E5%AE%97%E7%86%99%E5%AE%81%E4%BA%94%E5%B9%B4.%E5%8F%B0%E5%8C%97%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%E8%97%8F.tif/lossy-page1-1280px-%E6%97%A9%E6%98%A5%E5%9B%BE%E8%BD%B4.%E5%8C%97%E5%AE%8B.%E9%83%AD%E7%86%99%E7%BB%98.%E7%BB%A2%E6%9C%AC%E6%B5%85%E8%AE%BE%E8%89%B2.%E5%AE%8B%E7%A5%9E%E5%AE%97%E7%86%99%E5%AE%81%E4%BA%94%E5%B9%B4.%E5%8F%B0%E5%8C%97%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%E8%97%8F.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E6%97%A9%E6%98%A5%E5%9B%BE%E8%BD%B4.%E5%8C%97%E5%AE%8B.%E9%83%AD%E7%86%99%E7%BB%98.%E7%BB%A2%E6%9C%AC%E6%B5%85%E8%AE%BE%E8%89%B2.%E5%AE%8B%E7%A5%9E%E5%AE%97%E7%86%99%E5%AE%81%E4%BA%94%E5%B9%B4.%E5%8F%B0%E5%8C%97%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%E8%97%8F.tif
+    license: Public domain
+    credit: Guo Xi
+sources:
+  kind:
+    - source: npm-gugua-000053
+      locator: 基本資料
+      accessed: 2026-11-06
+  medium:
+    - source: npm-gugua-000053
+      locator: 基本資料
+      accessed: 2026-11-06
+  created:
+    - accessed: 2026-11-06
+      property: P571
+      wikidata: Q5136665
+    - source: npm-gugua-000053
+      locator: 基本資料
+      accessed: 2026-11-06
+  creator:
+    - accessed: 2026-11-06
+      property: P170
+      wikidata: Q5136665
+  dimensions:
+    - accessed: 2026-11-06
+      property: P2048
+      wikidata: Q5136665
+    - source: npm-gugua-000053
+      locator: 基本資料
+      accessed: 2026-11-06
+  institution:
+    - accessed: 2026-11-06
+      property: P195
+      wikidata: Q5136665
+    - source: npm-gugua-000053
+      locator: 基本資料
+      accessed: 2026-11-06
+  inventory_number:
+    - accessed: 2026-11-06
+      property: P217
+      wikidata: Q5136665
+    - source: npm-gugua-000053
+      locator: 基本資料
+      accessed: 2026-11-06

@@ -5,30 +5,75 @@ names:
   - lang: nl
     role: original
     text: Drie Gratiën
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: en
     role: translation
     text: The Three Graces
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: fr
     role: translation
     text: Les Trois Grâces
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: de
     role: translation
     text: Die drei Grazien
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: it
     role: translation
     text: Tre Grazie
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: ja
     role: translation
     text: 三美神 (ルーベンス、プラド美術館)
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: zh
     role: translation
     text: 又有美惠三女神
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: ko
     role: translation
     text: 삼미신
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: ru
     role: translation
     text: Три грации
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
 creator: peter-paul-rubens
 created: 1630/1635
 kind: oil painting
@@ -123,11 +168,6 @@ provenance:
         document: inventory of the Museo Real at the death of Ferdinand VII
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
-      source: museo-del-prado-coleccion
-      accessed: 2024-11-27
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
       source: museo-del-prado-coleccion

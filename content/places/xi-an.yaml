@@ -1,0 +1,16 @@
+public_id: 116546
+name: Xi'an
+kind: settlement
+location: [108.94222, 34.26111]
+wikidata_id: Q5826
+metadata:
+  sources: [Wikidata Q5826 (retrieved 2026-11-06)]
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q5826
+  location:
+    - accessed: 2026-11-06
+      property: P625
+      wikidata: Q5826

@@ -1,0 +1,87 @@
+public_id: 116547
+name: Mausoleum of the First Qin Emperor
+names:
+  - text: Mausoleum of Qin Chi Huang
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q910180
+  - text: Qinshihuang Ling
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q910180
+  - lang: nl
+    role: translation
+    text: Mausoleum van Qin, de eerste keizer van China
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q910180
+  - lang: fr
+    role: translation
+    text: mausolée de l'empereur Qin
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q910180
+  - lang: de
+    role: translation
+    text: Mausoleum Qin Shihuangdis
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q910180
+  - lang: it
+    role: translation
+    text: Mausoleo del primo imperatore Qin a Xi'an
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q910180
+  - lang: es
+    role: translation
+    text: Mausoleo de Qin Shi Huang
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q910180
+  - lang: ja
+    role: translation
+    text: 秦始皇帝陵及び兵馬俑坑
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q910180
+  - lang: zh
+    role: translation
+    text: 秦始皇陵
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q910180
+  - lang: ko
+    role: translation
+    text: 진시황릉
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q910180
+  - lang: ru
+    role: translation
+    text: Мавзолей первого императора Цинь
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q910180
+kind: archaeological
+parent: xi-an
+country_code: CN
+location: [109.25389, 34.38167]
+wikidata_id: Q910180
+metadata:
+  sources: [Wikidata Q910180 (retrieved 2026-11-06)]
+identifiers:
+  gnd: "1143864662"
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q910180
+  parent:
+    - accessed: 2026-11-06
+      property: P131
+      wikidata: Q910180
+  location:
+    - accessed: 2026-11-06
+      property: P625
+      wikidata: Q910180

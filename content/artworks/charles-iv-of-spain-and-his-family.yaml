@@ -5,27 +5,67 @@ names:
   - lang: en
     role: original
     text: Charles IV of Spain and His Family
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
+        source: museo-del-prado-coleccion
+        accessed: 2024-12-03
   - lang: fr
     role: translation
     text: La Famille de Charles IV
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
+        source: museo-del-prado-coleccion
+        accessed: 2024-12-03
   - lang: de
     role: translation
     text: Die Familie Karls IV.
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
+        source: museo-del-prado-coleccion
+        accessed: 2024-12-03
   - lang: it
     role: translation
     text: La famiglia di Carlo IV
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
+        source: museo-del-prado-coleccion
+        accessed: 2024-12-03
   - lang: ja
     role: translation
     text: カルロス4世の家族
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
+        source: museo-del-prado-coleccion
+        accessed: 2024-12-03
   - lang: zh
     role: translation
     text: 卡洛斯四世一家
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
+        source: museo-del-prado-coleccion
+        accessed: 2024-12-03
   - lang: ko
     role: translation
     text: 카를로스 4세의 가족
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
+        source: museo-del-prado-coleccion
+        accessed: 2024-12-03
   - lang: ru
     role: translation
     text: Портрет семьи Карла IV
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
+        source: museo-del-prado-coleccion
+        accessed: 2024-12-03
 creator: francisco-goya
 created: 1800
 kind: oil painting
@@ -160,11 +200,6 @@ provenance:
         document: inventory of the Real Museo
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
-      source: museo-del-prado-coleccion
-      accessed: 2024-12-03
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
       source: museo-del-prado-coleccion

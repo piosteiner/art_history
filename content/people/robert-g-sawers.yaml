@@ -1,0 +1,20 @@
+public_id: 116459
+name: Robert G Sawers
+given_name: Robert G
+family_name: Sawers
+occupations: [art dealer]
+active: 1972/
+description_md: British dealer in Japanese art, active since 1972. [[source/british-museum-robert-g-sawers]]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - source: british-museum-robert-g-sawers
+        accessed: 2026-11-06
+sources:
+  active:
+    - source: british-museum-robert-g-sawers
+      accessed: 2026-11-06
+  occupations:
+    - source: british-museum-robert-g-sawers
+      accessed: 2026-11-06

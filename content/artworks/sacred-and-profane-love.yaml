@@ -5,27 +5,51 @@ names:
   - lang: en
     role: translation
     text: Sacred and Profane Love
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q794077
   - lang: fr
     role: translation
     text: Amour sacré et Amour profane
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q794077
   - lang: de
     role: translation
     text: Himmlische und Irdische Liebe
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q794077
   - lang: es
     role: translation
     text: Amor sacro y amor profano
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q794077
   - lang: ja
     role: translation
     text: 聖愛と俗愛
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q794077
   - lang: zh
     role: translation
     text: 神聖與世俗的小愛神
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q794077
   - lang: ko
     role: translation
     text: 신성한 사랑과 세속적인 사랑
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q794077
   - lang: ru
     role: translation
     text: Любовь земная и Любовь небесная
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q794077
 creator: titian
 created: 1515/1516
 created_label: c. 1510s
@@ -116,9 +140,6 @@ identifiers:
   gnd: 4401186-6
   viaf: "220450942"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q794077
   created:
     - url: https://www.collezionegalleriaborghese.it/opere/amor-sacro-e-amor-profano
       source: galleria-borghese-collezione

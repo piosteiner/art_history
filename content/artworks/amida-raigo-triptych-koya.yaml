@@ -1,11 +1,20 @@
 public_id: 106785
 title: Amida raigō triptych
 names:
-  - Descent of Amitabha and the Heavenly Multitude
-  - Amida Shoju Raigo-zu
+  - text: Descent of Amitabha and the Heavenly Multitude
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046204
+  - text: Amida Shoju Raigo-zu
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046204
   - lang: ja
     role: translation
     text: 高野山阿弥陀聖衆来迎図
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046204
 attribution_label: Anonymous
 created: late 11th century
 created_span: uncertain
@@ -34,9 +43,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 146–147, fig. 178
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q107046204
   medium:
     - source: history-of-japanese-art
       locator: pp. 146–147, fig. 178

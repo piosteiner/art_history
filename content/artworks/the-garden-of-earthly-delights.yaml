@@ -5,18 +5,43 @@ names:
   - lang: en
     role: translation
     text: The Garden of Earthly Delights
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/02388242-6d6a-4e9e-a992-e1311eab3609
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2023-04-01: https://web.archive.org/web/20230401205229/https://www.museodelprado.es/coleccion/obra-de-arte/wd/02388242-6d6a-4e9e-a992-e1311eab3609"
+        source: museo-del-prado-coleccion
+        accessed: 2023-04-01
   - lang: nl
     role: translation
     text: De tuin der lusten
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/02388242-6d6a-4e9e-a992-e1311eab3609
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2023-04-01: https://web.archive.org/web/20230401205229/https://www.museodelprado.es/coleccion/obra-de-arte/wd/02388242-6d6a-4e9e-a992-e1311eab3609"
+        source: museo-del-prado-coleccion
+        accessed: 2023-04-01
   - lang: fr
     role: translation
     text: Le Jardin des délices
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/02388242-6d6a-4e9e-a992-e1311eab3609
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2023-04-01: https://web.archive.org/web/20230401205229/https://www.museodelprado.es/coleccion/obra-de-arte/wd/02388242-6d6a-4e9e-a992-e1311eab3609"
+        source: museo-del-prado-coleccion
+        accessed: 2023-04-01
   - lang: de
     role: translation
     text: Der Garten der Lüste
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/02388242-6d6a-4e9e-a992-e1311eab3609
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2023-04-01: https://web.archive.org/web/20230401205229/https://www.museodelprado.es/coleccion/obra-de-arte/wd/02388242-6d6a-4e9e-a992-e1311eab3609"
+        source: museo-del-prado-coleccion
+        accessed: 2023-04-01
   - lang: it
     role: translation
     text: Trittico del Giardino delle delizie
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/02388242-6d6a-4e9e-a992-e1311eab3609
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2023-04-01: https://web.archive.org/web/20230401205229/https://www.museodelprado.es/coleccion/obra-de-arte/wd/02388242-6d6a-4e9e-a992-e1311eab3609"
+        source: museo-del-prado-coleccion
+        accessed: 2023-04-01
 creator: hieronymus-bosch
 created: 1490/1500
 kind: oil painting
@@ -143,11 +168,6 @@ identifiers:
   gnd: 4304600-9
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/02388242-6d6a-4e9e-a992-e1311eab3609
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2023-04-01: https://web.archive.org/web/20230401205229/https://www.museodelprado.es/coleccion/obra-de-arte/wd/02388242-6d6a-4e9e-a992-e1311eab3609"
-      source: museo-del-prado-coleccion
-      accessed: 2023-04-01
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/02388242-6d6a-4e9e-a992-e1311eab3609
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2023-04-01: https://web.archive.org/web/20230401205229/https://www.museodelprado.es/coleccion/obra-de-arte/wd/02388242-6d6a-4e9e-a992-e1311eab3609"
       source: museo-del-prado-coleccion

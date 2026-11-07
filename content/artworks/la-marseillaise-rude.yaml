@@ -2,14 +2,26 @@ public_id: 102173
 title_lang: fr
 title: Le Départ des volontaires de 1792 (La Marseillaise)
 names:
-  - La Marseillaise
-  - The Departure of the Volunteers of 1792
+  - text: La Marseillaise
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28061748
+  - text: The Departure of the Volunteers of 1792
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28061748
   - lang: fr
     role: translation
     text: Le Départ des volontaires de 1792
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28061748
   - lang: it
     role: translation
     text: La partenza dei volontari del 1792
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28061748
 creator: francois-rude
 created: 1833/1836
 location: [2.29528, 48.87389]
@@ -49,9 +61,6 @@ identifiers:
   gnd: 7683165-6
   viaf: "210981985"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q28061748
   creator:
     - accessed: 2026-10-20
       property: P170

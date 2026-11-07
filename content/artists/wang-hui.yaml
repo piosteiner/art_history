@@ -1,0 +1,201 @@
+public_id: 116528
+name: Wang Hui
+names:
+  - kind: art_name
+    role: alternative
+    text: 耕烟散人
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - kind: art_name
+    role: alternative
+    text: 乌目山人
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - kind: art_name
+    role: alternative
+    text: 清晖老人
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - kind: art_name
+    role: alternative
+    text: 耕烟
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - kind: art_name
+    role: alternative
+    text: 耕煙
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - kind: art_name
+    role: alternative
+    text: 耕煙散人
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - kind: art_name
+    role: alternative
+    text: 耕煙外史
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - kind: art_name
+    role: alternative
+    text: 劍門樵客
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - kind: art_name
+    role: alternative
+    text: 淸暉老人
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - kind: art_name
+    role: alternative
+    text: 淸暉主人
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - kind: art_name
+    role: alternative
+    text: 烏目山人
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - lang: zh-Hant
+    role: original
+    text: 王翬
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Gengyinsanren
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Qinghuilaoren
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Gengyan
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Keng-yin-san-jen
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Ki Ō
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Hui Wang
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Siwangyunwu
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Shih-ku Wang
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Gengyansanren
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Qinghuizhuren
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: hao Gengyan Sanren
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: zi Shigu
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Keng-yen-san-jen
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Yunwang
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Gengyanwaishi
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Sanwang
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Wumushanren
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Shigu Wang
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Shigu
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Jianmenqiaoke
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Quqiao
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - text: Erwang
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - lang: ko
+    role: translation
+    text: 왕휘
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+  - lang: ru
+    role: translation
+    text: Ван Хуэй
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q716222
+birth: 1632
+death: 1717-10-13
+wikidata_id: Q716222
+metadata:
+  sources: [Wikidata Q716222 (retrieved 2026-11-06)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/dd/%E7%8E%8B%E7%BF%AC.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E7%BF%AC.jpg
+    license: Public domain
+    credit: 清叶衍兰辑摹，黄小泉绘。
+identifiers:
+  bnf: "161042580"
+  gnd: "137357427"
+  idref: 13376351X
+  lc: n81090298
+  ulan: "500327902"
+  viaf: "65330434"
+sources:
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q716222
+  death:
+    - accessed: 2026-11-06
+      property: P570
+      wikidata: Q716222

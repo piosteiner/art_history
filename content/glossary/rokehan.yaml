@@ -1,0 +1,16 @@
+public_id: 116600
+name_lang: ja
+name: rokehan
+names:
+  - lang: ja
+    role: original
+    text: ロケハン
+  - lang: en
+    role: translation
+    text: location hunting
+category: arts and customs
+definition: "Location hunting: a production team's journey to the places a work is set in — the makers of Heidi travelled to Switzerland."
+sources:
+  definition:
+    - source: thomsen-2019-war-and-peace
+      locator: lecture of 5 April 2019, class notes

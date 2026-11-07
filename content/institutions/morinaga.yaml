@@ -1,0 +1,50 @@
+public_id: 116555
+name: Morinaga & Company
+names:
+  - text: Morinaga
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1076089
+  - text: Morinaga Seika
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1076089
+  - text: Morinaga & Co., Ltd.
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1076089
+  - lang: ja
+    role: translation
+    text: 森永製菓
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1076089
+  - lang: ko
+    role: translation
+    text: 모리나가 제과
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1076089
+kind: company
+founded: 1910-02-23
+place: tokyo
+website_url: https://www.morinaga.co.jp/
+wikidata_id: Q1076089
+metadata:
+  sources: [Wikidata Q1076089 (retrieved 2026-11-06)]
+identifiers:
+  lc: n85162694
+  viaf: "127908868"
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q1076089
+  place:
+    - accessed: 2026-11-06
+      property: P131
+      wikidata: Q1076089
+  founded:
+    - accessed: 2026-11-06
+      property: P571
+      wikidata: Q1076089

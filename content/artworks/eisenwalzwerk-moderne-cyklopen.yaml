@@ -5,6 +5,9 @@ names:
   - lang: en
     role: translation
     text: The Iron Rolling Mill (Modern Cyclopes)
+    sources:
+      - accessed: 2026-10-27
+        wikidata: Q18683026
 creator: adolph-von-menzel
 created: 1872/1875
 created_span: uncertain
@@ -53,9 +56,6 @@ provenance:
         source: search-smb-museum
         accessed: 2026-10-27
 sources:
-  names:
-    - accessed: 2026-10-27
-      wikidata: Q18683026
   medium:
     - url: http://search.smb.museum/en/object/obj-958605
       source: search-smb-museum

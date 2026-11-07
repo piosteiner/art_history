@@ -1,0 +1,64 @@
+public_id: 116567
+name: comfort woman
+names:
+  - text: comfort women
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q713540
+  - lang: nl
+    role: translation
+    text: troostmeisje
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q713540
+  - lang: fr
+    role: translation
+    text: femme de réconfort
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q713540
+  - lang: de
+    role: translation
+    text: Trostfrau
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q713540
+  - lang: it
+    role: translation
+    text: donne di conforto
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q713540
+  - lang: es
+    role: translation
+    text: mujer de confort
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q713540
+  - lang: ja
+    role: translation
+    text: 慰安婦
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q713540
+  - lang: ko
+    role: translation
+    text: 위안부
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q713540
+  - lang: ru
+    role: translation
+    text: женщины для утешения
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q713540
+category: society
+definition: military sexual slavery system designed and implemented by Japan Empire from early 1930s until the end of World War II, or the victims who were forced into sexual slavery by the Japanese military
+wikidata_id: Q713540
+metadata:
+  sources: [Wikidata Q713540 (retrieved 2026-11-06)]
+sources:
+  definition:
+    - accessed: 2026-11-06
+      wikidata: Q713540

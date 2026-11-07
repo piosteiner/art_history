@@ -1,18 +1,36 @@
 public_id: 106751
 title: Ban Dainagon ekotoba (The Tale of the Major Counsellor Ban)
 names:
-  - Ban Dainagon Ekotoba
-  - Ban Dainagon Emaki
-  - Narrative Scroll of Ban Dainagon
+  - text: Ban Dainagon Ekotoba
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q952153
+  - text: Ban Dainagon Emaki
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q952153
+  - text: Narrative Scroll of Ban Dainagon
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q952153
   - lang: zh
     role: translation
     text: 伴大纳言绘词
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q952153
   - lang: ko
     role: translation
     text: 반대납언회사
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q952153
   - lang: ja
     role: original
     text: "{伴大納言絵詞|ばんだいなごんえことば}"
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q952153
 creator: tokiwa-mitsunaga
 attribution_label: attributed to Tokiwa Mitsunaga
 created: 1157/1180
@@ -46,9 +64,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 104, 121–122, figs. 127, 146–147
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q952153
   medium:
     - source: history-of-japanese-art
       locator: pp. 104, 121–122, figs. 127, 146–147

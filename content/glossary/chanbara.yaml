@@ -1,0 +1,62 @@
+public_id: 116564
+name: samurai cinema
+names:
+  - text: samurai film
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q169672
+  - text: chambara
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q169672
+  - lang: nl
+    role: translation
+    text: samuraicinema
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q169672
+  - lang: fr
+    role: translation
+    text: chanbara
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q169672
+  - lang: de
+    role: translation
+    text: Samuraifilm
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q169672
+  - lang: es
+    role: translation
+    text: cine de samuráis
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q169672
+  - lang: ja
+    role: translation
+    text: チャンバラ
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q169672
+  - lang: zh
+    role: translation
+    text: 武士電影
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q169672
+  - lang: ru
+    role: translation
+    text: тямбара
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q169672
+category: performing arts
+definition: film genre
+wikidata_id: Q169672
+metadata:
+  sources: [Wikidata Q169672 (retrieved 2026-11-06)]
+sources:
+  definition:
+    - accessed: 2026-11-06
+      wikidata: Q169672

@@ -1,0 +1,76 @@
+public_id: 116498
+title: Statue of Peace
+names:
+  - text: The Statue of a Girl for Peace
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11482253
+  - lang: fr
+    role: translation
+    text: Statue de la Paix
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11482253
+  - lang: de
+    role: translation
+    text: Friedensstatue
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11482253
+  - lang: ja
+    role: translation
+    text: 慰安婦像
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11482253
+  - lang: zh
+    role: translation
+    text: 慰安妇少女铜像
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11482253
+  - lang: ko
+    role: translation
+    text: 평화의 소녀상
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11482253
+  - lang: ru
+    role: translation
+    text: Статуя мира
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11482253
+creator: kim-seo-kyung-kim-eun-sung
+created: 2011-12-10
+kind: statue
+location: [126.98035, 37.57493]
+description_md: A memorial to the [[comfort-women]] in [[place/seoul]], unveiled on 10 December 2011.
+wikidata_id: Q11482253
+metadata:
+  sources: [Wikidata Q11482253 (retrieved 2026-11-06)]
+relationships:
+  - type: created_in
+    to: place/seoul
+    period: 2011-12-10
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Japanese_Embassy_in_Seoul_and_watched_from_behind_a_bronze_statue_of_comfort_women.JPG/1280px-Japanese_Embassy_in_Seoul_and_watched_from_behind_a_bronze_statue_of_comfort_women.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Japanese_Embassy_in_Seoul_and_watched_from_behind_a_bronze_statue_of_comfort_women.JPG
+    license: CC BY-SA 3.0
+    credit: Sakaori (talk)
+sources:
+  kind:
+    - property: P31
+      wikidata: Q11482253
+  created:
+    - accessed: 2026-11-06
+      property: P571
+      wikidata: Q11482253
+  creator:
+    - accessed: 2026-11-06
+      property: P170
+      wikidata: Q11482253
+  location:
+    - accessed: 2026-11-06
+      property: P625
+      wikidata: Q11482253

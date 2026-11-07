@@ -2,13 +2,22 @@ public_id: 101419
 title_lang: de-AT
 title: Käuzchen
 names:
-  - Screech Owl
+  - text: Screech Owl
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q112091493
   - lang: en
     role: translation
     text: Little Owl
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q112091493
   - lang: fr
     role: translation
     text: Chouette-effraie
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q112091493
 creator: albrecht-durer
 created: 1508
 materials: [watercolor paint, watercolor paper, ink]
@@ -120,9 +129,6 @@ provenance:
         source: aeiou-albertina
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q112091493
   created:
     - accessed: 2026-10-19
       property: P571

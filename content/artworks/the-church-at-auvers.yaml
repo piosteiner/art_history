@@ -2,37 +2,70 @@ public_id: 101840
 title_lang: fr
 title: L'Église d'Auvers-sur-Oise, vue du chevet
 names:
-  - De kerk in Auvers
+  - text: De kerk in Auvers
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1213917
   - lang: en
     role: translation
     text: The Church at Auvers
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1213917
   - lang: nl
     role: translation
     text: De kerk van Auvers
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1213917
   - lang: fr
     role: original
     text: L'Église d'Auvers-sur-Oise
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1213917
   - lang: de
     role: translation
     text: Die Kirche von Auvers
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1213917
   - lang: it
     role: translation
     text: La chiesa di Auvers
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1213917
   - lang: es
     role: translation
     text: La iglesia de Auvers-sur-Oise
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1213917
   - lang: ja
     role: translation
     text: オーヴェルの教会
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1213917
   - lang: zh
     role: translation
     text: 奧維爾教堂
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1213917
   - lang: ko
     role: translation
     text: 오베르의 교회
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1213917
   - lang: ru
     role: translation
     text: Церковь в Овере
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1213917
 creator: vincent-van-gogh
 created: 1890-06-04/1890-06-08
 materials: [oil paint, canvas]
@@ -98,9 +131,6 @@ provenance:
         source: musee-d-orsay-collections
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1213917
   created:
     - url: https://www.musee-orsay.fr/fr/oeuvres/leglise-dauvers-sur-oise-vue-du-chevet-755
       source: musee-d-orsay-collections

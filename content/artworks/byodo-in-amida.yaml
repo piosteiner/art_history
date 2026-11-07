@@ -1,18 +1,25 @@
 public_id: 106782
 title: Amida Nyorai, Hōōdō, Byōdōin
 names:
-  - Amida Buddha
+  - text: Amida Buddha
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046710
   - lang: ja
     role: translation
     text: 平等院鳳凰堂阿弥陀如来像
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046710
 creator: jocho
 created: c. 1053
 created_span: uncertain
 kind: sculpture
 medium: Cypress wood, with lacquered cloth and gold leaf
 materials: [hinoki wood, lacquer, gold leaf]
-dimensions: [279]
+dimensions: [277.2]
 institution: byodo-in
+web_url: https://byodoinguide.jp/en/contents/content02/
 description_md: The only surviving work of [[artist/jocho]] (d. 1057), the foremost sculptor of his time, whom Michinaga had commissioned for the sculptures of Hōjōji and who rose to the ranks of Hokkyō and Hōgen. Assembled from fifty-three pieces of wood ([[yosegi-zukuri]]) — light and ethereal, and a way of working that let a master’s studio produce large images. Jōchō’s canon of proportions takes the height of the face as unit, and the distance between the knees equals that from the base to the hairline, giving the figure stability and calm. Amida sits in meditation, his gaze unfocused, before an openwork gold halo of flames and under a round canopy. [[source/history-of-japanese-art|pp. 144–145, fig. 174]]
 wikidata_id: Q107046710
 metadata:
@@ -32,9 +39,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 144–145, fig. 174
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q107046710
   medium:
     - source: history-of-japanese-art
       locator: pp. 144–145, fig. 174
@@ -49,8 +53,12 @@ sources:
     - source: history-of-japanese-art
       locator: pp. 144–145, fig. 174
   dimensions:
-    - source: history-of-japanese-art
-      locator: pp. 144–145, fig. 174
+    - url: https://byodoinguide.jp/en/contents/content02/
+      source: byodoinguide-jp
+      accessed: 2026-11-06
   institution:
     - source: history-of-japanese-art
       locator: pp. 144–145, fig. 174
+    - url: https://byodoinguide.jp/en/contents/content02/
+      source: byodoinguide-jp
+      accessed: 2026-11-06

@@ -5,21 +5,39 @@ names:
   - lang: en
     role: translation
     text: Death and the Maiden
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2438357
   - lang: fr
     role: translation
     text: La Mort et la jeune fille
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2438357
   - lang: it
     role: translation
     text: La morte e la fanciulla
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2438357
   - lang: es
     role: translation
     text: La Muerte y la doncella
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2438357
   - lang: ko
     role: translation
     text: 죽음과 소녀
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2438357
   - lang: ru
     role: translation
     text: Смерть и девушка
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2438357
 creator: egon-schiele
 created: 1915
 materials: [oil paint, canvas]
@@ -58,9 +76,6 @@ provenance:
         source: belvedere-sammlung-online
         accessed: 2024-11-13
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2438357
   created:
     - accessed: 2026-10-20
       property: P571

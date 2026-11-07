@@ -1,5 +1,21 @@
 public_id: 108227
 title: Amidadō
+names:
+  - lang: en
+    role: translation
+    text: The Hall of Amida Buddha
+    status: official
+    sources:
+      - url: https://colbase.nich.go.jp/collection_items/tnm/A-10547?locale=en
+        source: colbase-tnm-a-10547
+        accessed: 2026-11-06
+  - lang: ja
+    role: original
+    text: "{阿弥陀|あみだ}{堂|どう}"
+    sources:
+      - url: https://colbase.nich.go.jp/collection_items/tnm/A-10547?locale=en
+        source: colbase-tnm-a-10547
+        accessed: 2026-11-06
 creator: kobayashi-kokei
 created: 1915
 kind: kakemono
@@ -7,6 +23,8 @@ medium: Hanging scroll, colour on silk
 materials: [silk]
 dimensions: [216, 90.6]
 institution: tokyo-national-museum
+inventory_number: A-10547
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10547?locale=en
 description_md: "An early masterwork of [[artist/kobayashi-kokei]] (1883–1957): the long, narrow hanging scroll is divided horizontally by a brightly coloured view of the [[artwork/byodo-in-phoenix-hall]], as if moonlight had suddenly lit the temple, splashing light across the upper part of the red posts; through the open doors the Amida glows as if from a second light within. [[source/history-of-japanese-art|pp. 368–369, fig. 438]]"
 relationships:
   - type: associated_with
@@ -14,6 +32,12 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 368–369, fig. 438
+images:
+  - url: https://colbase.nich.go.jp/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiV3BpWjNsMWVHeHpOVFZqTm5GcGQycHNhV2xvY2pNMWFteHJOZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtFdE1UQTFORGRmUXpBd056QXpPREF1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZEJMVEV3TlRRM1gwTXdNRGN3TXpnd0xtcHdad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjEyNi0xMS0wNlQxMzozNToxNS4zNjBaIiwicHVyIjoiYmxvYl9rZXkifX0=--d9c947bedc0eae38afb59cd13e6e7aa284f72744/A-10547_C0070380.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/tnm/A-10547?locale=en
+    license: CC BY 4.0 (ColBase)
+    credit: ColBase, National Institutes for Cultural Heritage
+    caption: The Hall of Amida Buddha
 sources:
   kind:
     - source: history-of-japanese-art
@@ -21,18 +45,40 @@ sources:
   medium:
     - source: history-of-japanese-art
       locator: pp. 368–369, fig. 438
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-10547?locale=en
+      source: colbase-tnm-a-10547
+      accessed: 2026-11-06
   created:
     - source: history-of-japanese-art
       locator: pp. 368–369, fig. 438
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-10547?locale=en
+      source: colbase-tnm-a-10547
+      accessed: 2026-11-06
   creator:
     - source: history-of-japanese-art
       locator: pp. 368–369, fig. 438
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-10547?locale=en
+      source: colbase-tnm-a-10547
+      accessed: 2026-11-06
   materials:
     - source: history-of-japanese-art
       locator: pp. 368–369, fig. 438
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-10547?locale=en
+      source: colbase-tnm-a-10547
+      accessed: 2026-11-06
   dimensions:
     - source: history-of-japanese-art
       locator: pp. 368–369, fig. 438
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-10547?locale=en
+      source: colbase-tnm-a-10547
+      accessed: 2026-11-06
   institution:
     - source: history-of-japanese-art
       locator: pp. 368–369, fig. 438
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-10547?locale=en
+      source: colbase-tnm-a-10547
+      accessed: 2026-11-06
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-10547?locale=en
+      source: colbase-tnm-a-10547
+      accessed: 2026-11-06

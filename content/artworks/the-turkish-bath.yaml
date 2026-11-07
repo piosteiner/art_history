@@ -5,30 +5,57 @@ names:
   - lang: en
     role: original
     text: The Turkish Bath
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2027662
   - lang: nl
     role: translation
     text: Het Turkse bad
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2027662
   - lang: de
     role: translation
     text: Das türkische Bad
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2027662
   - lang: it
     role: translation
     text: Il bagno turco
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2027662
   - lang: es
     role: translation
     text: El baño turco
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2027662
   - lang: ja
     role: translation
     text: トルコ風呂
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2027662
   - lang: zh
     role: translation
     text: 土耳其浴女
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2027662
   - lang: ko
     role: translation
     text: 터키 목욕탕
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2027662
   - lang: ru
     role: translation
     text: Турецкие бани
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2027662
 creator: jean-auguste-dominique-ingres
 created: 1859/1862
 materials: [oil paint, canvas, panel]
@@ -121,9 +148,6 @@ identifiers:
   gnd: 4407299-5
   viaf: "190592575"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2027662
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010066606
       source: louvre-collections

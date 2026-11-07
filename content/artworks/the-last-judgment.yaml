@@ -5,31 +5,61 @@ names:
   - lang: en
     role: original
     text: The last judgement tryptch
-  - The last judgement triptych
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1387483
+  - text: The last judgement triptych
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1387483
   - lang: en
     role: original
     text: The Last Judgment
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1387483
   - lang: nl
     role: original
     text: Laatste Oordeel-drieluik
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1387483
   - lang: fr
     role: translation
     text: Le Jugement dernier
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1387483
   - lang: de
     role: translation
     text: Weltgerichtstriptychon
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1387483
   - lang: it
     role: translation
     text: Trittico del Giudizio di Vienna
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1387483
   - lang: es
     role: translation
     text: Tríptico del Juicio de Viena
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1387483
   - lang: ja
     role: translation
     text: 最後の審判の三連祭壇画 (ウィーン美術アカデミー)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1387483
   - lang: ru
     role: translation
     text: Страшный суд
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1387483
 creator: hieronymus-bosch
 created: 1500/1509
 created_label: 1500s
@@ -75,9 +105,6 @@ provenance:
 identifiers:
   gnd: 4224628-3
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1387483
   created:
     - accessed: 2026-10-20
       property: P571

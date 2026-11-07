@@ -5,21 +5,39 @@ names:
   - lang: de
     role: translation
     text: Die Parkettschleifer
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1766454
   - lang: it
     role: translation
     text: I piallatori di parquet
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1766454
   - lang: es
     role: translation
     text: Los acuchilladores de parqué
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1766454
   - lang: ja
     role: translation
     text: 床削り
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1766454
   - lang: ko
     role: translation
     text: 마루 깎는 사람들
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1766454
   - lang: ru
     role: translation
     text: Паркетчики
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1766454
 creator: gustave-caillebotte
 created: 1875
 materials: [oil paint, canvas]
@@ -80,9 +98,6 @@ provenance:
         source: musee-d-orsay-collections
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1766454
   created:
     - accessed: 2026-10-20
       property: P571

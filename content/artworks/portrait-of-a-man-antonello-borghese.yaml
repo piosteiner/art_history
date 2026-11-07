@@ -5,24 +5,45 @@ names:
   - lang: nl
     role: translation
     text: Portret van een man
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q98852368
   - lang: fr
     role: translation
     text: Portrait d'un homme
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q98852368
   - lang: de
     role: translation
     text: Porträt eines Mannes
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q98852368
   - lang: it
     role: translation
     text: Ritratto di un uomo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q98852368
   - lang: es
     role: translation
     text: Retrato de un hombre
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q98852368
   - lang: ja
     role: translation
     text: 男の肖像
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q98852368
   - lang: ru
     role: translation
     text: Мужской портрет
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q98852368
 creator: antonello-da-messina
 created: c. 1476
 created_span: uncertain
@@ -81,9 +102,6 @@ provenance:
         source: galleria-borghese-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q98852368
   created:
     - accessed: 2026-10-20
       property: P571

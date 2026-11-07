@@ -5,37 +5,97 @@ names:
   - lang: nl
     role: original
     text: Portret van Karel V van Habsburg (1500-1558) bij de Slag van Mühlberg (1547)
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: en
     role: original
     text: Portrait of Charles V of Habsburg (1500-1558) at the Battle of Mühlberg (1547)
-  - Charles V at Mühlberg
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
+  - text: Charles V at Mühlberg
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: en
     role: original
     text: Equestrian Portrait of Charles V
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: nl
     role: original
     text: Ruiterportret van Charles V
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: fr
     role: translation
     text: Charles Quint à cheval à Mühlberg
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: de
     role: translation
     text: Kaiser Karl V. nach der Schlacht bei Mühlberg
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: it
     role: translation
     text: Ritratto di Carlo V a cavallo
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: es
     role: original
     text: Carlos V a caballo en Mühlberg
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: ja
     role: translation
     text: 騎乗像
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: zh
     role: translation
     text: 在米赫爾貝格的查理五世
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
   - lang: ru
     role: translation
     text: Конный портрет Карла V
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
 creator: titian
 created: 1548
 kind: oil painting
@@ -123,11 +183,6 @@ provenance:
         accessed: 2024-11-27
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
-      source: museo-del-prado-coleccion
-      accessed: 2024-11-27
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
       source: museo-del-prado-coleccion

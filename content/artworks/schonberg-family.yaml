@@ -1,22 +1,40 @@
 public_id: 101599
 title: Schönberg family
 names:
-  - Familie Schönberg
+  - text: Familie Schönberg
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q20980856
   - lang: nl
     role: translation
     text: De familie Schönberg
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q20980856
   - lang: fr
     role: translation
     text: La famille Schönberg
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q20980856
   - lang: de
     role: translation
     text: Die Familie Schönberg
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q20980856
   - lang: it
     role: translation
     text: La familia Schönberg
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q20980856
   - lang: ru
     role: translation
     text: Семья Шёнберг
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q20980856
 creator: richard-gerstl
 created: 1907
 materials: [oil paint, canvas]
@@ -52,9 +70,6 @@ provenance:
         source: mumok-onlinesammlung
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q20980856
   created:
     - accessed: 2026-10-20
       property: P571

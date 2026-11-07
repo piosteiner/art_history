@@ -4,9 +4,15 @@ names:
   - lang: de
     role: translation
     text: La Berceuse (Augustine Roulin)
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q3820656
   - lang: ja
     role: translation
     text: ルーラン夫人ゆりかごを揺らす女
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q3820656
 parent: la-berceuse
 part_number: "1"
 creator: vincent-van-gogh
@@ -74,9 +80,6 @@ numbers:
         property: P528
         wikidata: Q3820656
 sources:
-  names:
-    - accessed: 2026-10-30
-      wikidata: Q3820656
   parent:
     - accessed: 2026-10-30
       property: P179

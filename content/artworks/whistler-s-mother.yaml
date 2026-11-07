@@ -5,38 +5,77 @@ names:
   - lang: en
     role: original
     text: "Arrangement in Grey and Black No. 1: Portrait of the Artist’s Mother"
-  - Arrangement in Grey and Black
-  - "Arrangement in Grey and Black: Portrait of the Painter's Mother"
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q687182
+  - text: Arrangement in Grey and Black
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q687182
+  - text: "Arrangement in Grey and Black: Portrait of the Painter's Mother"
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q687182
   - lang: en
     role: original
     text: Whistler's Mother
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q687182
   - lang: nl
     role: translation
     text: Arrangement in Gray and Black, No. 1
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q687182
   - lang: fr
     role: translation
     text: Arrangement en gris et noir n°1
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q687182
   - lang: de
     role: translation
     text: "Arrangement in Grau und Schwarz: Porträt der Mutter des Künstlers"
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q687182
   - lang: it
     role: translation
     text: Arrangiamento in Grigio e Nero No.1
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q687182
   - lang: es
     role: translation
     text: Retrato de la madre del artista
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q687182
   - lang: ja
     role: translation
     text: 灰色と黒のアレンジメント-母の肖像
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q687182
   - lang: zh
     role: translation
     text: 惠斯勒的母亲
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q687182
   - lang: ko
     role: translation
     text: 휘슬러의 어머니
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q687182
   - lang: ru
     role: translation
     text: Мать Уистлера
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q687182
 creator: james-mcneill-whistler
 created: 1871
 materials: [oil paint, canvas]
@@ -101,9 +140,6 @@ identifiers:
   gnd: 4764623-8
   viaf: "184402409"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q687182
   created:
     - accessed: 2026-10-20
       property: P571

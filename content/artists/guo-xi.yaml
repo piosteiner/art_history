@@ -1,0 +1,18 @@
+public_id: 116483
+name: Guo Xi
+given_name: Guo
+family_name: Xi
+birth: 1020
+death: 1090
+wikidata_id: Q536645
+metadata:
+  sources: [Wikidata Q536645 (retrieved 2026-11-06)]
+sources:
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q536645
+  death:
+    - accessed: 2026-11-06
+      property: P570
+      wikidata: Q536645

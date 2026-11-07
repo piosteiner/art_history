@@ -1,0 +1,65 @@
+public_id: 116471
+title_lang: en
+title: Onoe Kikugoro VII as Komurasaki, a courtesan of the Miuraya
+title_status: official
+names:
+  - lang: ja
+    role: original
+    text: 七世尾上菊五郎の三浦屋抱小紫
+    sources:
+      - source: british-museum-1992-1217-0-8
+        accessed: 2026-11-06
+parent: bust-portraits-ii
+part_number: "5"
+creator: tsuruya-kokei
+created: 1981-02
+kind: Japanese woodblock print
+medium: Colour woodblock print
+materials: [paper]
+institution: british-museum
+inventory_number: 1992,1217,0.8
+web_url: https://www.britishmuseum.org/collection/object/A_1992-1217-0-8
+description_md: "The kabuki actor [[person/onoe-kikugoro-vii]] as Komurasaki, a courtesan of the Miuraya, in the play *Sono kouta yume mo Yoshiwara*: design 5 of [[artist/tsuruya-kokei]]'s second series of bust portraits. A seal limits the edition to 36 impressions (\"Tei sanjuroku\"), another is the artist's (\"Kokei\"). Given by the artist to the British Museum in 1988. [[source/british-museum-1992-1217-0-8]]"
+relationships:
+  - type: depicts_person
+    to: person/onoe-kikugoro-vii
+    sources:
+      - source: british-museum-1992-1217-0-8
+        accessed: 2026-11-06
+provenance:
+  - owner: institution/british-museum
+    acquired: 1988
+    method: gift
+    direct: true
+    label: given by the artist
+    sources:
+      - source: british-museum-1992-1217-0-8
+        accessed: 2026-11-06
+sources:
+  kind:
+    - source: british-museum-1992-1217-0-8
+      accessed: 2026-11-06
+  medium:
+    - source: british-museum-1992-1217-0-8
+      accessed: 2026-11-06
+  parent:
+    - source: british-museum-1992-1217-0-8
+      accessed: 2026-11-06
+  created:
+    - source: british-museum-1992-1217-0-8
+      accessed: 2026-11-06
+  creator:
+    - source: british-museum-1992-1217-0-8
+      accessed: 2026-11-06
+  materials:
+    - source: british-museum-1992-1217-0-8
+      accessed: 2026-11-06
+  institution:
+    - source: british-museum-1992-1217-0-8
+      accessed: 2026-11-06
+  title_status:
+    - source: british-museum-1992-1217-0-8
+      accessed: 2026-11-06
+  inventory_number:
+    - source: british-museum-1992-1217-0-8
+      accessed: 2026-11-06

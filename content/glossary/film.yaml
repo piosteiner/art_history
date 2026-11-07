@@ -1,0 +1,65 @@
+public_id: 116559
+name: film
+names:
+  - text: movie
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11424
+  - text: motion picture
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11424
+  - text: cinematic work
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11424
+  - text: moving picture
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11424
+  - lang: es
+    role: translation
+    text: película
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11424
+  - lang: ja
+    role: translation
+    text: 映画
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11424
+  - lang: zh
+    role: translation
+    text: 電影
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11424
+  - lang: ko
+    role: translation
+    text: 영화
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11424
+  - lang: ru
+    role: translation
+    text: фильм
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q11424
+category: object type
+definition: visual art work that simulates experiences and communicates ideas, stories, or emotions through moving images, generally synchronized with sound since the 1930s
+wikidata_id: Q11424
+metadata:
+  sources: [Wikidata Q11424 (retrieved 2026-11-06)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif
+    source_url: https://commons.wikimedia.org/wiki/File:Muybridge_race_horse_animated.gif
+    license: Public domain
+    credit: Eadweard Muybridge
+identifiers:
+  gnd: 4017102-4
+sources:
+  definition:
+    - accessed: 2026-11-06
+      wikidata: Q11424

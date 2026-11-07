@@ -1,0 +1,25 @@
+public_id: 116576
+title_lang: ja
+title: Jūnirui kassen emaki
+names:
+  - lang: ja
+    role: original
+    text: 十二類合戦絵巻
+  - lang: en
+    role: translation
+    text: Battle of the Twelve Animals
+created: 15th century
+created_span: uncertain
+kind: emakimono
+medium: Colours and ink on paper
+description_md: Muromachi period. [[source/thomsen-2019-war-and-peace|image list, 22 March 2019]]
+sources:
+  kind:
+    - source: thomsen-2019-war-and-peace
+      locator: image list, 22 March 2019
+  medium:
+    - source: thomsen-2019-war-and-peace
+      locator: image list, 22 March 2019
+  created:
+    - source: thomsen-2019-war-and-peace
+      locator: image list, 22 March 2019

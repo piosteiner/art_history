@@ -1,10 +1,16 @@
 public_id: 106779
 title: Kongōku Bosatsu, from the Five Power Bodhisattvas
 names:
-  - Godairiki Bosatsu
+  - text: Godairiki Bosatsu
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046205
   - lang: ja
     role: translation
     text: 高野山五大力菩薩像
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046205
 attribution_label: Anonymous
 created: second half of the 10th century
 created_span: uncertain
@@ -33,9 +39,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 139–141, fig. 170
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q107046205
   medium:
     - source: history-of-japanese-art
       locator: pp. 139–141, fig. 170

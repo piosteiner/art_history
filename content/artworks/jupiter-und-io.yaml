@@ -5,27 +5,51 @@ names:
   - lang: en
     role: original
     text: Jupiter and Io
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q700834
   - lang: nl
     role: translation
     text: Jupiter en Io
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q700834
   - lang: fr
     role: translation
     text: Jupiter et Io
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q700834
   - lang: it
     role: translation
     text: Giove e Io
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q700834
   - lang: es
     role: translation
     text: Júpiter e Ío
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q700834
   - lang: ja
     role: translation
     text: ユピテルとイオ
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q700834
   - lang: ko
     role: translation
     text: 유피테르와 이오
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q700834
   - lang: ru
     role: translation
     text: Юпитер и Ио
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q700834
 parent: the-loves-of-jupiter
 creator: antonio-da-correggio
 created: c. 1530
@@ -110,9 +134,6 @@ sources:
     - url: https://www.khm.at/kunstwerke/jupiter-und-io-40
       source: khm-125-jahre
       accessed: 2026-10-30
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q700834
   parent:
     - accessed: 2026-10-19
       property: P179

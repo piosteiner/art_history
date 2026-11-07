@@ -5,28 +5,55 @@ names:
   - lang: en
     role: original
     text: Death of the Virgin
-  - Dormition of the Virgin
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q597114
+  - text: Dormition of the Virgin
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q597114
   - lang: nl
     role: translation
     text: De dood van Maria
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q597114
   - lang: fr
     role: translation
     text: La Mort de la Vierge
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q597114
   - lang: de
     role: translation
     text: Der Tod Mariens
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q597114
   - lang: es
     role: translation
     text: Dormíción de la Virgen
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q597114
   - lang: ja
     role: translation
     text: 聖母の死
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q597114
   - lang: zh
     role: translation
     text: 圣母之死
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q597114
   - lang: ru
     role: translation
     text: Смерть Марии
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q597114
 creator: caravaggio
 created: 1596/1611
 created_label: c. 1600s
@@ -119,9 +146,6 @@ numbers:
     institution: department-of-paintings-of-the-louvre
     label: former inventory number (Musée royal)
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q597114
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010062304
       source: louvre-collections

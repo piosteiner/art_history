@@ -1,0 +1,86 @@
+public_id: 116537
+name: Atomic Bombings of Hiroshima and Nagasaki
+names:
+  - lang: nl
+    role: translation
+    text: atoombommen op Hiroshima en Nagasaki
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q488
+  - lang: fr
+    role: translation
+    text: bombardements atomiques d'Hiroshima et de Nagasaki
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q488
+  - lang: de
+    role: translation
+    text: Atombombenabwürfe auf Hiroshima und Nagasaki
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q488
+  - lang: it
+    role: translation
+    text: bombardamenti atomici di Hiroshima e Nagasaki
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q488
+  - lang: es
+    role: translation
+    text: bombardeos atómicos de Hiroshima y Nagasaki en el año 1945
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q488
+  - lang: ja
+    role: translation
+    text: 日本への原子爆弾投下
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q488
+  - lang: zh
+    role: translation
+    text: 廣島與長崎原子彈爆炸
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q488
+  - lang: ko
+    role: translation
+    text: 히로시마와 나가사키의 원자 폭탄 투하
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q488
+  - lang: ru
+    role: translation
+    text: атомные бомбардировки Хиросимы и Нагасаки
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q488
+parent: air-raids-on-japan
+period: 1945-08-06
+place: hiroshima
+location: [132.45462, 34.39468]
+wikidata_id: Q488
+metadata:
+  sources: [Wikidata Q488 (retrieved 2026-11-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Atomic_bombing_of_Japan.jpg/1280px-Atomic_bombing_of_Japan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Atomic_bombing_of_Japan.jpg
+    license: Public domain
+    credit: George R. Caron / Charles Levy
+sources:
+  place:
+    - accessed: 2026-11-06
+      property: P276
+      wikidata: Q488
+  parent:
+    - accessed: 2026-11-06
+      property: P361
+      wikidata: Q488
+  period:
+    - accessed: 2026-11-06
+      property: P585
+      wikidata: Q488
+  location:
+    - accessed: 2026-11-06
+      property: P625
+      wikidata: Q488

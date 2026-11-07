@@ -1,23 +1,50 @@
 public_id: 106122
 title: Daisen Kofun
 names:
-  - Daisenryo Kofun
-  - Tomb of Emperor Nintoku
-  - Emperor Nintoku's tomb
-  - Daisenryō Kofun
-  - Mozu no Mimihara no Naka no Misasagi
+  - text: Daisenryo Kofun
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q5849431
+  - text: Tomb of Emperor Nintoku
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q5849431
+  - text: Emperor Nintoku's tomb
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q5849431
+  - text: Daisenryō Kofun
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q5849431
+  - text: Mozu no Mimihara no Naka no Misasagi
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q5849431
   - lang: fr
     role: translation
     text: kofun Daisenryō
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q5849431
   - lang: es
     role: translation
     text: Daisenryō-Kofun
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q5849431
   - lang: ja
     role: translation
     text: 大仙陵古墳
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q5849431
   - lang: ko
     role: translation
     text: 다이센릉 고분
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q5849431
 attribution_label: Anonymous
 created: late 4th century–early 5th century
 created_span: uncertain
@@ -42,9 +69,6 @@ images:
     license: CC0
     credit: Sakai Yayoi
 sources:
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q5849431
   created:
     - source: history-of-japanese-art
       locator: p. 29, fig. 24

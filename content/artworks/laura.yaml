@@ -5,16 +5,31 @@ names:
   - lang: en
     role: original
     text: Young Woman (“Laura”)
-  - Portrait of a Young Bride
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q595707
+  - text: Portrait of a Young Bride
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q595707
   - lang: de
     role: translation
     text: Bildnis einer jungen Frau
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q595707
   - lang: ja
     role: translation
     text: ラウラ
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q595707
   - lang: zh
     role: translation
     text: 劳拉 (乔尔乔内)
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q595707
 creator: giorgione
 created: 1506
 materials: [oil paint, canvas, panel]
@@ -88,9 +103,6 @@ provenance:
         source: khm-125-jahre
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q595707
   created:
     - accessed: 2026-10-19
       property: P571

@@ -1,0 +1,16 @@
+public_id: 116487
+name: The Palace Museum
+kind: museum
+founded: 1420
+wikidata_id: Q2047427
+metadata:
+  sources: [Wikidata Q2047427 (retrieved 2026-11-06)]
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q2047427
+  founded:
+    - accessed: 2026-11-06
+      property: P571
+      wikidata: Q2047427

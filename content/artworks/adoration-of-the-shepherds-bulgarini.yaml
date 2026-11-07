@@ -5,6 +5,9 @@ names:
   - lang: de
     role: translation
     text: Anbetung der Hirten
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q106868065
 parent: cycle-of-four-altar-pieces-for-the-patron-saints-of-siena
 creator: bartolomeo-bulgarini
 created: c. 1350
@@ -22,9 +25,6 @@ images:
     license: Public domain
     credit: Bartolomeo Bulgarini
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q106868065
   created:
     - accessed: 2026-11-03
       property: P571

@@ -5,36 +5,91 @@ names:
   - lang: es
     role: alternative
     text: El 3 de mayo en Madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+        source: museo-del-prado-coleccion
+        accessed: 2025-01-23
   - lang: en
     role: original
     text: The Third of May, 1808
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+        source: museo-del-prado-coleccion
+        accessed: 2025-01-23
   - lang: en
     role: original
     text: The Third of May 1808
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+        source: museo-del-prado-coleccion
+        accessed: 2025-01-23
   - lang: nl
     role: translation
     text: El tres de mayo de 1808 en Madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+        source: museo-del-prado-coleccion
+        accessed: 2025-01-23
   - lang: fr
     role: translation
     text: Tres de mayo
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+        source: museo-del-prado-coleccion
+        accessed: 2025-01-23
   - lang: de
     role: translation
     text: Die Erschießung der Aufständischen
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+        source: museo-del-prado-coleccion
+        accessed: 2025-01-23
   - lang: it
     role: translation
     text: 3 maggio 1808
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+        source: museo-del-prado-coleccion
+        accessed: 2025-01-23
   - lang: ja
     role: translation
     text: マドリード、1808年5月3日
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+        source: museo-del-prado-coleccion
+        accessed: 2025-01-23
   - lang: zh
     role: translation
     text: 1808年5月3日
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+        source: museo-del-prado-coleccion
+        accessed: 2025-01-23
   - lang: ko
     role: translation
     text: 1808년 5월 3일
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+        source: museo-del-prado-coleccion
+        accessed: 2025-01-23
   - lang: ru
     role: translation
     text: Третье мая 1808 года в Мадриде
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+        source: museo-del-prado-coleccion
+        accessed: 2025-01-23
 parent: the-second-and-third-of-may-1808
 part_number: "2"
 creator: francisco-goya
@@ -119,11 +174,6 @@ provenance:
         document: catalogue of the Museo del Prado
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
-      source: museo-del-prado-coleccion
-      accessed: 2025-01-23
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
       source: museo-del-prado-coleccion

@@ -2,6 +2,7 @@ public_id: 113415
 name: Harvard Art Museums
 kind: museum
 founded: 1895
+collection_url: https://harvardartmuseums.org/collections
 wikidata_id: Q3783572
 metadata:
   sources: [Wikidata Q3783572 (retrieved 2026-11-03)]

@@ -4,6 +4,9 @@ names:
   - lang: ja
     role: translation
     text: 薬師寺金堂薬師三尊像
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107045996
 attribution_label: Anonymous
 created: late 7th century–early 8th century
 created_span: uncertain
@@ -36,9 +39,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: p. 83, fig. 102–103
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q107045996
   medium:
     - source: history-of-japanese-art
       locator: p. 83, fig. 102–103

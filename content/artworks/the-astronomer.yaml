@@ -5,31 +5,61 @@ names:
   - lang: en
     role: original
     text: The Astronomer
-  - The Astrologer
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q544315
+  - text: The Astrologer
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q544315
   - lang: nl
     role: translation
     text: De astronoom
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q544315
   - lang: fr
     role: translation
     text: L'Astronome
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q544315
   - lang: it
     role: translation
     text: Astronomo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q544315
   - lang: es
     role: translation
     text: El astrónomo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q544315
   - lang: ja
     role: translation
     text: 天文学者
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q544315
   - lang: zh
     role: translation
     text: 天文學家 (弗美爾)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q544315
   - lang: ko
     role: translation
     text: 천문학자
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q544315
   - lang: ru
     role: translation
     text: Астроном
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q544315
 creator: johannes-vermeer
 created: 1668
 materials: [oil paint, canvas]
@@ -301,9 +331,6 @@ identifiers:
   gnd: 4563935-8
   viaf: "175620360"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q544315
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010064324
       source: louvre-collections

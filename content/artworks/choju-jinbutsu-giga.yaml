@@ -1,29 +1,62 @@
 public_id: 106763
 title: Chōjū jinbutsu giga (Scrolls of Frolicking Animals and Humans)
 names:
-  - Chōjū-jinbutsu-giga
-  - Chōjū-giga
-  - Scrolls of Frolicking Animals
-  - Scroll of Frolicking Animals
-  - Scrolls of Frolicking Animals and Humans
+  - text: Chōjū-jinbutsu-giga
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q736832
+  - text: Chōjū-giga
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q736832
+  - text: Scrolls of Frolicking Animals
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q736832
+  - text: Scroll of Frolicking Animals
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q736832
+  - text: Scrolls of Frolicking Animals and Humans
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q736832
   - lang: nl
     role: translation
     text: Choju-jinbutsu-giga
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q736832
   - lang: es
     role: translation
     text: Chōjugiga
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q736832
   - lang: zh
     role: translation
     text: 鳥獸戲畫
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q736832
   - lang: ko
     role: translation
     text: 조지유진부츠기가
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q736832
   - lang: ru
     role: translation
     text: Тёдзюгига
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q736832
   - lang: ja
     role: original
     text: "{鳥獣人物戯画|ちょうじゅうじんぶつぎが}"
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q736832
 creator: toba-sojo
 attribution_label: traditionally attributed to Toba Sōjō
 created: mid 12th century
@@ -56,9 +89,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 118–119, figs. 142–144
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q736832
   medium:
     - source: history-of-japanese-art
       locator: pp. 118–119, figs. 142–144

@@ -5,6 +5,9 @@ names:
   - lang: en
     role: translation
     text: I Will Gladly Endure for Art and My Loved Ones
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q18684943
 creator: egon-schiele
 created: 1912-04-25
 kind: drawing
@@ -46,9 +49,6 @@ sources:
     - url: https://sammlungenonline.albertina.at/de/objects/3079/ich-werde-fur-die-kunst-und-fur-meine-geliebten-gerne-ausha
       source: albertina-sammlungen-online
       accessed: 2026-10-30
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q18684943
   medium:
     - url: https://sammlungenonline.albertina.at/de/objects/3079/ich-werde-fur-die-kunst-und-fur-meine-geliebten-gerne-ausha
       source: albertina-sammlungen-online

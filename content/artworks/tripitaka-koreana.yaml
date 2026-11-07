@@ -1,23 +1,44 @@
 public_id: 108296
 title: Tripitaka Koreana
 names:
-  - Palman Daejanggyeong
-  - Goryeo Tripiṭaka
+  - text: Palman Daejanggyeong
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q138733
+  - text: Goryeo Tripiṭaka
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q138733
   - lang: es
     role: translation
     text: Tripitaka Coreana
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q138733
   - lang: ja
     role: translation
     text: 高麗八萬大蔵経
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q138733
   - lang: zh
     role: translation
     text: 高丽大藏经
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q138733
   - lang: ko
     role: translation
     text: 합천 해인사 대장경판
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q138733
   - lang: ru
     role: translation
     text: Трипитака Кореана
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q138733
 attribution_label: Anonymous
 created: 1232/1251
 created_span: uncertain
@@ -53,9 +74,6 @@ sources:
   kind:
     - source: portal-2000
       locator: pp. 78, 82, fig. 41
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q138733
   medium:
     - source: portal-2000
       locator: pp. 78, 82, fig. 41

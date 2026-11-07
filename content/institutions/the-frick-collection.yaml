@@ -6,6 +6,7 @@ place: new-york-city
 location: [-73.96722, 40.77111]
 address: 1 East 70th Street, New York, NY 10021
 website_url: https://www.frick.org
+collection_url: https://collections.frick.org/
 wikidata_id: Q682827
 metadata:
   sources: [Wikidata Q682827 (retrieved 2026-10-09)]

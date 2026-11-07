@@ -2,19 +2,34 @@ public_id: 101524
 title_lang: de
 title: Judith I
 names:
-  - Judith and the Head of Holofernes
+  - text: Judith and the Head of Holofernes
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2324643
   - lang: it
     role: translation
     text: Giuditta I
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2324643
   - lang: es
     role: translation
     text: Judit I
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2324643
   - lang: ja
     role: translation
     text: ユディト
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2324643
   - lang: ru
     role: translation
     text: Юдифь и Олоферн
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2324643
 creator: gustav-klimt
 created: 1901
 materials: [oil paint, canvas, gold]
@@ -101,9 +116,6 @@ provenance:
         source: belvedere-sammlung-online
         accessed: 2026-10-04
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2324643
   created:
     - accessed: 2026-10-20
       property: P571

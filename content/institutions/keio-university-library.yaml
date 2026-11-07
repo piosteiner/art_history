@@ -1,0 +1,16 @@
+public_id: 116635
+name: Keio University Library
+names:
+  - lang: ja
+    role: original
+    text: 慶應義塾図書館
+kind: library
+place: tokyo
+description_md: The library of [[institution/keio-university]] (Mita Media Center), which keeps the Bon Ukiyo-e Collection. [[source/keio-objecthub-9865]]
+relationships:
+  - type: part_of
+    to: institution/keio-university
+    sources:
+      - source: keio-objecthub-9865
+        locator: 所蔵 (慶應義塾大学メディアセンター（慶應義塾図書館）)
+        accessed: 2026-11-06

@@ -5,18 +5,33 @@ names:
   - lang: nl
     role: translation
     text: Bossage
+    sources:
+      - accessed: 2026-10-22
+        wikidata: Q20857201
   - lang: fr
     role: translation
     text: L'entrée d'un bois
+    sources:
+      - accessed: 2026-10-22
+        wikidata: Q20857201
   - lang: de
     role: translation
     text: Lichtung in einem Wald
+    sources:
+      - accessed: 2026-10-22
+        wikidata: Q20857201
   - lang: es
     role: translation
     text: Claro en un bosque
+    sources:
+      - accessed: 2026-10-22
+        wikidata: Q20857201
   - lang: en
     role: translation
     text: Entrance to a Wood
+    sources:
+      - accessed: 2026-10-22
+        wikidata: Q20857201
 creator: jacob-van-ruisdael
 created: c. 1646
 created_span: uncertain
@@ -54,9 +69,6 @@ sources:
     - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1804/
       source: akademie-sammlung-online
       accessed: 2026-10-22
-  names:
-    - accessed: 2026-10-22
-      wikidata: Q20857201
   medium:
     - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1804/
       source: akademie-sammlung-online

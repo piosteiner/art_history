@@ -2,28 +2,52 @@ public_id: 101460
 title_lang: en
 title: Death and Life
 names:
-  - Tod und Leben
+  - text: Tod und Leben
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q17001535
   - lang: nl
     role: translation
     text: Dood en Leven
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q17001535
   - lang: fr
     role: translation
     text: La Vie et la Mort
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q17001535
   - lang: it
     role: translation
     text: vita e morte
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q17001535
   - lang: es
     role: translation
     text: Muerte y Vida
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q17001535
   - lang: ja
     role: translation
     text: 死と生
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q17001535
   - lang: zh
     role: translation
     text: 死亡和生命
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q17001535
   - lang: ru
     role: translation
     text: Смерть и жизнь
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q17001535
 creator: gustav-klimt
 created: 1908/1915
 created_label: c. 1910
@@ -98,9 +122,6 @@ provenance:
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q17001535
   created:
     - accessed: 2026-10-19
       property: P571

@@ -1,13 +1,22 @@
 public_id: 108291
 title: Rock-carved Buddha triad at Sŏsan
 names:
-  - Rock-carved triad buddha in Seosan
+  - text: Rock-carved triad buddha in Seosan
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q7354163
   - lang: zh
     role: translation
     text: 瑞山摩崖三尊佛像
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q7354163
   - lang: ko
     role: translation
     text: 서산 용현리 마애여래삼존상
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q7354163
 attribution_label: Anonymous
 created: 7th century
 created_span: uncertain
@@ -41,9 +50,6 @@ sources:
   kind:
     - source: portal-2000
       locator: p. 66, fig. 34
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q7354163
   medium:
     - source: portal-2000
       locator: p. 66, fig. 34

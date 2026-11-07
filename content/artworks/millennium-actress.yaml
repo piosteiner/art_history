@@ -1,0 +1,38 @@
+public_id: 116503
+title_lang: en
+title: Millennium Actress
+names:
+  - lang: ja
+    role: original
+    text: 千年女優
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q939736
+  - lang: ko
+    role: translation
+    text: 천년여우
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q939736
+  - lang: ru
+    role: translation
+    text: Актриса тысячелетия
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q939736
+creator: satoshi-kon
+created: 2001
+kind: anime
+wikidata_id: Q939736
+metadata:
+  sources: [Wikidata Q939736 (retrieved 2026-11-06)]
+sources:
+  kind:
+    - property: P31
+      wikidata: Q939736
+  created:
+    - property: P577
+      wikidata: Q939736
+  creator:
+    - property: P57
+      wikidata: Q939736

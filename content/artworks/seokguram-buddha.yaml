@@ -1,25 +1,46 @@
 public_id: 108295
 title: Sŏkkuram cave temple
 names:
-  - Seokguram
+  - text: Seokguram
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q489820
   - lang: nl
     role: translation
     text: Seokguramgrot
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q489820
   - lang: fr
     role: translation
     text: grotte de Seokguram
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q489820
   - lang: it
     role: translation
     text: Tempio sotterraneo di Seokguram
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q489820
   - lang: ja
     role: translation
     text: 石窟庵
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q489820
   - lang: ko
     role: translation
     text: 석굴암
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q489820
   - lang: ru
     role: translation
     text: Соккурам
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q489820
 attribution_label: Anonymous
 created: 751/774
 kind: sculpture
@@ -55,9 +76,6 @@ sources:
   kind:
     - source: portal-2000
       locator: pp. 73–74, fig. 39
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q489820
   medium:
     - source: portal-2000
       locator: pp. 73–74, fig. 39

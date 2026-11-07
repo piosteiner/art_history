@@ -5,30 +5,57 @@ names:
   - lang: en
     role: original
     text: Venus of Urbino
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q727875
   - lang: nl
     role: translation
     text: Venus van Urbino
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q727875
   - lang: fr
     role: translation
     text: Vénus d'Urbin
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q727875
   - lang: de
     role: translation
     text: Venus von Urbino
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q727875
   - lang: es
     role: translation
     text: Venus de Urbino
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q727875
   - lang: ja
     role: translation
     text: ウルビーノのヴィーナス
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q727875
   - lang: zh
     role: translation
     text: 乌尔比诺的维纳斯
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q727875
   - lang: ko
     role: translation
     text: 우르비노의 비너스
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q727875
   - lang: ru
     role: translation
     text: Венера Урбинская
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q727875
 creator: titian
 created: 1538
 materials: [oil paint, canvas]
@@ -95,9 +122,6 @@ identifiers:
   gnd: 4467404-1
   viaf: "186016342"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q727875
   created:
     - accessed: 2026-10-20
       property: P571

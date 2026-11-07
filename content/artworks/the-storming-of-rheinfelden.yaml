@@ -2,13 +2,22 @@ public_id: 113408
 title_lang: es
 title: Expugnación de Rheinfelden
 names:
-  - The capture of Rheinfelden
+  - text: The capture of Rheinfelden
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q59684565
   - lang: en
     role: translation
     text: The Storming of Rheinfelden
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q59684565
   - lang: de
     role: translation
     text: Die Einnahme von Rheinfelden (1633).
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q59684565
 parent: battle-series
 creator: vicente-carducho
 created: 1634
@@ -26,9 +35,6 @@ images:
     license: Public domain
     credit: Vincenzo Carducci
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q59684565
   parent:
     - accessed: 2026-11-03
       property: P179

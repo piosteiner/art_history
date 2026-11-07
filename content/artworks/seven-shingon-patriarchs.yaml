@@ -1,11 +1,20 @@
 public_id: 106771
 title: Portraits of the Seven Shingon Patriarchs
 names:
-  - Seven Shingon Patriarchs
-  - Seven Patriarchs of the Shingon Sect
+  - text: Seven Shingon Patriarchs
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046373
+  - text: Seven Patriarchs of the Shingon Sect
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046373
   - lang: ja
     role: translation
     text: 真言七祖像
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046373
 attribution_label: Li Zhen and a Japanese master
 created: 806/821
 kind: kakemono
@@ -44,9 +53,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 128–129, figs. 154–155
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q107046373
   medium:
     - source: history-of-japanese-art
       locator: pp. 128–129, figs. 154–155

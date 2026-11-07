@@ -5,30 +5,63 @@ names:
   - lang: en
     role: original
     text: Luncheon on the Grass
-  - Le Bain
-  - Le Dejeuner sur l’Herbe
-  - Le Dejeuner sur l’Herbe (Luncheon on the Grass)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q152509
+  - text: Le Bain
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q152509
+  - text: Le Dejeuner sur l’Herbe
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q152509
+  - text: Le Dejeuner sur l’Herbe (Luncheon on the Grass)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q152509
   - lang: de
     role: translation
     text: Das Frühstück im Grünen
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q152509
   - lang: it
     role: translation
     text: Colazione sull'erba
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q152509
   - lang: es
     role: translation
     text: Almuerzo sobre la hierba
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q152509
   - lang: ja
     role: translation
     text: 草上の昼食
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q152509
   - lang: zh
     role: translation
     text: 草地上的午餐
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q152509
   - lang: ko
     role: translation
     text: 풀밭 위의 점심 식사
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q152509
   - lang: ru
     role: translation
     text: Завтрак на траве
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q152509
 creator: edouard-manet
 created: 1863
 materials: [canvas, oil paint]
@@ -128,9 +161,6 @@ identifiers:
   gnd: 4539087-3
   viaf: "183595228"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q152509
   created:
     - accessed: 2026-10-20
       property: P571

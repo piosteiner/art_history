@@ -5,9 +5,15 @@ names:
   - lang: en
     role: original
     text: Nude Self-Portrait with Palette
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28797106
   - lang: fr
     role: translation
     text: Autoportrait nu avec palette
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28797106
 creator: richard-gerstl
 created: 1908
 materials: [oil paint, canvas]
@@ -117,9 +123,6 @@ provenance:
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q28797106
   created:
     - accessed: 2026-10-19
       property: P571

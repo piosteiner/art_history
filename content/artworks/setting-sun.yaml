@@ -5,9 +5,15 @@ names:
   - lang: en
     role: translation
     text: Setting Sun
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28780356
   - lang: ru
     role: translation
     text: Тонущее солнце
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28780356
 creator: egon-schiele
 created: 1913
 materials: [oil paint, canvas]
@@ -55,9 +61,6 @@ provenance:
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q28780356
   created:
     - accessed: 2026-10-19
       property: P571

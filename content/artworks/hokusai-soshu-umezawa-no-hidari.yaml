@@ -5,26 +5,59 @@ names:
   - lang: ja
     role: original
     text: 相州梅沢左
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173396
   - lang: ja
     role: original
     text: 相州梅沢庄
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173396
   - lang: ja
     role: original
     text: 相州梅沢在
-  - Sōshū Umezawanoshō
-  - Sōshū Umezawa zai
-  - Sōshū Umezawa hidari
-  - Sōshū Umezawa-zai
-  - Soshu Umezawa-zai
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173396
+  - text: Sōshū Umezawanoshō
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173396
+  - text: Sōshū Umezawa zai
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173396
+  - text: Sōshū Umezawa hidari
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173396
+  - text: Sōshū Umezawa-zai
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173396
+  - text: Soshu Umezawa-zai
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173396
   - lang: fr
     role: translation
     text: Umezawa dans la province de Sagami
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173396
   - lang: es
     role: translation
     text: Umezawa en la provincia de Sagami
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173396
   - lang: ja
     role: original
     text: 富嶽三十六景 相州梅沢左
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173396
 parent: thirty-six-views-of-mount-fuji
 part_number: "14"
 creator: katsushika-hokusai
@@ -58,9 +91,6 @@ images:
     license: Public domain
     credit: Art Institute of Chicago, Clarence Buckingham Collection
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173396
   parent:
     - accessed: 2026-11-03
       property: P179

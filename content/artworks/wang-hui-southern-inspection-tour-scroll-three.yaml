@@ -1,0 +1,50 @@
+public_id: 116580
+title_lang: en
+title: "The Kangxi Emperor's Southern Inspection Tour, Scroll Three: Ji'nan to Mount Tai"
+names:
+  - lang: en
+    role: alternative
+    text: Worship at Mt. Tai
+creator: wang-hui
+created: 1698
+kind: handscroll
+medium: Ink and colour on silk
+institution: metropolitan-museum-of-art
+inventory_number: 1979.5a–d
+web_url: https://www.metmuseum.org/art/collection/search/49156
+description_md: "The third scroll of the [[event/kangxi-emperors-southern-inspection-tours]] painted under [[artist/wang-hui]]: from Ji'nan to [[place/mount-tai]], where the emperor worships. [[source/met-1979-5]]"
+relationships:
+  - type: depicts
+    to: event/kangxi-emperors-southern-inspection-tours
+    sources:
+      - source: met-1979-5
+        accessed: 2026-11-06
+  - type: depicts
+    to: place/mount-tai
+    sources:
+      - source: met-1979-5
+        accessed: 2026-11-06
+  - type: depicts_person
+    to: person/kangxi-emperor
+    sources:
+      - source: met-1979-5
+        accessed: 2026-11-06
+sources:
+  kind:
+    - source: met-1979-5
+      accessed: 2026-11-06
+  medium:
+    - source: met-1979-5
+      accessed: 2026-11-06
+  created:
+    - source: met-1979-5
+      accessed: 2026-11-06
+  creator:
+    - source: met-1979-5
+      accessed: 2026-11-06
+  institution:
+    - source: met-1979-5
+      accessed: 2026-11-06
+  inventory_number:
+    - source: met-1979-5
+      accessed: 2026-11-06

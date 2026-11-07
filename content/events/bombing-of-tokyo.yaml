@@ -1,0 +1,90 @@
+public_id: 116538
+name: Bombing of Tokyo
+names:
+  - text: Operation Meetinghouse
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q59886
+  - lang: nl
+    role: translation
+    text: bombardement op Tokio
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q59886
+  - lang: fr
+    role: translation
+    text: bombardement de Tokyo
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q59886
+  - lang: de
+    role: translation
+    text: Luftangriffe auf Tokio
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q59886
+  - lang: it
+    role: translation
+    text: bombardamenti di Tokyo
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q59886
+  - lang: es
+    role: translation
+    text: bombardeo de Tokio
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q59886
+  - lang: ja
+    role: translation
+    text: 東京空襲
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q59886
+  - lang: zh
+    role: translation
+    text: 東京大轟炸
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q59886
+  - lang: ko
+    role: translation
+    text: 도쿄 대공습
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q59886
+  - lang: ru
+    role: translation
+    text: Бомбардировка Токио 10 марта 1945 года
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q59886
+parent: air-raids-on-japan
+period: 1940/1949
+place: tokyo
+location: [139.8, 35.65]
+wikidata_id: Q59886
+metadata:
+  sources: [Wikidata Q59886 (retrieved 2026-11-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Firebombing_of_Tokyo.jpg/1280px-Firebombing_of_Tokyo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Firebombing_of_Tokyo.jpg
+    license: Public domain
+    credit: US Army Air Forces
+sources:
+  place:
+    - accessed: 2026-11-06
+      property: P276
+      wikidata: Q59886
+  parent:
+    - accessed: 2026-11-06
+      property: P361
+      wikidata: Q59886
+  period:
+    - accessed: 2026-11-06
+      property: P585
+      wikidata: Q59886
+  location:
+    - accessed: 2026-11-06
+      property: P625
+      wikidata: Q59886

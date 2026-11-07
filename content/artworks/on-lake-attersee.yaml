@@ -6,6 +6,9 @@ names:
     role: translation
     text: On Lake Attersee
     status: official
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q19912809
 creator: gustav-klimt
 created: 1900
 kind: oil painting
@@ -135,9 +138,6 @@ sources:
     - url: https://onlinecollection.leopoldmuseum.org/en/object/4328-on-lake-attersee/
       source: leopold-museum-online-sammlung
       accessed: 2026-10-21
-  names:
-    - accessed: 2026-10-30
-      wikidata: Q19912809
   medium:
     - url: https://onlinecollection.leopoldmuseum.org/en/object/4328-on-lake-attersee/
       source: leopold-museum-online-sammlung

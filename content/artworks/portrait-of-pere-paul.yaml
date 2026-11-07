@@ -5,21 +5,39 @@ names:
   - lang: fr
     role: original
     text: Le Chef Père Paul
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q27665416
   - lang: en
     role: translation
     text: Portrait of Père Paul
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q27665416
   - lang: de
     role: original
     text: Der Koch
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q27665416
   - lang: es
     role: translation
     text: Retrato de Père Paul
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q27665416
   - lang: ko
     role: translation
     text: 폴 영감의 초상
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q27665416
   - lang: ru
     role: translation
     text: Портрет папаши Поля
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q27665416
 creator: claude-monet
 created: 1882
 materials: [oil paint, canvas]
@@ -73,9 +91,6 @@ provenance:
         place: vienna
         document: Entwicklung des Impressionismus in Malerei und Plastik, Secession
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q27665416
   created:
     - accessed: 2026-10-20
       property: P571

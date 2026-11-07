@@ -5,18 +5,33 @@ names:
   - lang: en
     role: translation
     text: Adam and Eve
+    sources:
+      - accessed: 2026-10-23
+        wikidata: Q28002799
   - lang: nl
     role: translation
     text: Adam en Eva
+    sources:
+      - accessed: 2026-10-23
+        wikidata: Q28002799
   - lang: fr
     role: translation
     text: Adam et Ève
+    sources:
+      - accessed: 2026-10-23
+        wikidata: Q28002799
   - lang: it
     role: translation
     text: Adamo ed Eva
+    sources:
+      - accessed: 2026-10-23
+        wikidata: Q28002799
   - lang: es
     role: translation
     text: Adán y Eva
+    sources:
+      - accessed: 2026-10-23
+        wikidata: Q28002799
 creator: gustav-klimt
 created: 1916/1918
 created_span: duration
@@ -93,9 +108,6 @@ sources:
     - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
       source: belvedere-sammlung-online
       accessed: 2026-10-23
-  names:
-    - accessed: 2026-10-23
-      wikidata: Q28002799
   medium:
     - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
       source: belvedere-sammlung-online

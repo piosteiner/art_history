@@ -4,9 +4,15 @@ names:
   - lang: ja
     role: original
     text: "{木造無著菩薩立像|もくぞうむじゃくぼさつりゅうぞう}"
+    sources:
+      - accessed: 2026-10-28
+        wikidata: Q123197829
   - lang: en
     role: alternative
     text: Statue of Muchaku
+    sources:
+      - accessed: 2026-10-28
+        wikidata: Q123197829
 parent: mujaku-and-seshin
 part_number: "1"
 creator: unkei
@@ -23,9 +29,6 @@ images:
     license: Public domain
     credit: Nara National Museum 奈良帝室博物館 (Showa 8 - 1933)
 sources:
-  names:
-    - accessed: 2026-10-28
-      wikidata: Q123197829
   created:
     - source: history-of-japanese-art
       locator: pp. 189–191, figs. 220–221

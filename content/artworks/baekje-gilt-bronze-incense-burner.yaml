@@ -1,16 +1,28 @@
 public_id: 108287
 title: Gilt-bronze incense burner of Paekche
 names:
-  - Gilt-bronze Incense Burner of Baekje
+  - text: Gilt-bronze Incense Burner of Baekje
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q482772
   - lang: ja
     role: translation
     text: 百済金銅香炉
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q482772
   - lang: zh
     role: translation
     text: 百济金铜大香炉
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q482772
   - lang: ko
     role: translation
     text: 백제 금동대향로
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q482772
 attribution_label: Anonymous
 created: 6th century
 created_span: uncertain
@@ -42,9 +54,6 @@ sources:
   kind:
     - source: portal-2000
       locator: pp. 52–54, fig. 28
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q482772
   medium:
     - source: portal-2000
       locator: pp. 52–54, fig. 28

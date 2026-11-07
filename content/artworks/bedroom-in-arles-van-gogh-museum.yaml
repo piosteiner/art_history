@@ -6,9 +6,19 @@ names:
     role: translation
     text: De slaapkamer
     status: official
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+        note: “The Bedroom · Vincent van Gogh (1853 - 1890), Arles, October 1888 · oil on canvas · 72.4 cm x 91.3 cm, 92.2 cm x 111 cm, 7.2 cm”
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
   - lang: en
     role: alternative
     text: Bedroom in Arles
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+        note: “The Bedroom · Vincent van Gogh (1853 - 1890), Arles, October 1888 · oil on canvas · 72.4 cm x 91.3 cm, 92.2 cm x 111 cm, 7.2 cm”
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
 parent: bedroom-in-arles
 part_number: "1"
 creator: vincent-van-gogh
@@ -161,11 +171,6 @@ sources:
   kind:
     - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
       note: “Vincent van Gogh (1853 - 1890), Arles, October 1888 · oil on canvas, 72.4 cm x 91.3 cm … Object number s0047V1962”
-      source: van-gogh-museum-collection
-      accessed: 2026-10-22
-  names:
-    - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
-      note: “The Bedroom · Vincent van Gogh (1853 - 1890), Arles, October 1888 · oil on canvas · 72.4 cm x 91.3 cm, 92.2 cm x 111 cm, 7.2 cm”
       source: van-gogh-museum-collection
       accessed: 2026-10-22
   medium:

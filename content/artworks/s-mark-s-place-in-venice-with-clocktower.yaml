@@ -5,6 +5,9 @@ names:
   - lang: en
     role: translation
     text: S. Mark's place in Venice with Clocktower
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q106129412
 creator: francesco-guardi
 created: 1770/1775
 created_label: c. 1770s
@@ -47,9 +50,6 @@ provenance:
         source: akademie-gemaeldegalerie-sammlung
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q106129412
   created:
     - accessed: 2026-10-20
       property: P571

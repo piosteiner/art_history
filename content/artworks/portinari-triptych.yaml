@@ -5,35 +5,71 @@ names:
   - lang: en
     role: original
     text: The Portinari Altarpiece
-  - Portinari Altarpiece
-  - The Portinari Triptych
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18686031
+  - text: Portinari Altarpiece
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18686031
+  - text: The Portinari Triptych
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18686031
   - lang: en
     role: original
     text: Portinari Triptych
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18686031
   - lang: nl
     role: translation
     text: Portinari-altaar
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18686031
   - lang: fr
     role: translation
     text: Triptyque Portinari
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18686031
   - lang: de
     role: translation
     text: Portinari-Triptychon
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18686031
   - lang: es
     role: translation
     text: Tríptico Portinari
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18686031
   - lang: ja
     role: translation
     text: ポルティナーリ祭壇画
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18686031
   - lang: zh
     role: translation
     text: 波提納里三聯畫 (凡·德·古斯)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18686031
   - lang: ko
     role: translation
     text: 포르티나리 제단화
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18686031
   - lang: ru
     role: translation
     text: Алтарь Портинари
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q18686031
 creator: hugo-van-der-goes
 created: c. 1477–1478
 created_span: uncertain
@@ -95,9 +131,6 @@ identifiers:
   gnd: 4574498-1
   viaf: "205792774"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q18686031
   created:
     - url: https://www.uffizi.it/en/artworks/adoration-of-the-shepherds-with-angels-and-saints-recto-annunciation-verso
       source: uffizi-artworks

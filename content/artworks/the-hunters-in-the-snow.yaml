@@ -5,37 +5,73 @@ names:
   - lang: en
     role: original
     text: The Hunters in the Snow
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q500985
   - lang: pl
     role: original
     text: Myśliwi na śniegu
-  - December/January
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q500985
+  - text: December/January
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q500985
   - lang: nl
     role: translation
     text: Jagers in de sneeuw
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q500985
   - lang: fr
     role: translation
     text: Chasseurs dans la neige
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q500985
   - lang: de
     role: original
     text: Die Jäger im Schnee
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q500985
   - lang: it
     role: translation
     text: Cacciatori nella neve
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q500985
   - lang: es
     role: translation
     text: Los cazadores en la nieve
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q500985
   - lang: ja
     role: translation
     text: 雪中の狩人
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q500985
   - lang: zh
     role: translation
     text: 雪中獵人
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q500985
   - lang: ko
     role: translation
     text: 눈 속의 사냥꾼
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q500985
   - lang: ru
     role: translation
     text: Охотники на снегу
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q500985
 creator: pieter-brueghel-the-elder
 created: 1565
 materials: [oil paint, panel]
@@ -125,9 +161,6 @@ provenance:
         source: khm-125-jahre
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q500985
   created:
     - accessed: 2026-10-19
       property: P571

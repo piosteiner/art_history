@@ -2,37 +2,76 @@ public_id: 102153
 title_lang: it
 title: Estasi di santa Teresa d'Avila
 names:
-  - Ecstasy of St. Theresa
-  - The Ecstasy of Saint Teresa
-  - Ecstasy of Saint Theresa
-  - The Ecstasy of Saint Theresa
+  - text: Ecstasy of St. Theresa
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1333433
+  - text: The Ecstasy of Saint Teresa
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1333433
+  - text: Ecstasy of Saint Theresa
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1333433
+  - text: The Ecstasy of Saint Theresa
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1333433
   - lang: nl
     role: translation
     text: Extase van Theresia
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1333433
   - lang: fr
     role: translation
     text: L'Extase de sainte Thérèse
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1333433
   - lang: de
     role: translation
     text: Verzückung der heiligen Theresa
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1333433
   - lang: it
     role: translation
     text: Estasi di santa Teresa d'Avila
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1333433
   - lang: es
     role: translation
     text: Éxtasis de Santa Teresa
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1333433
   - lang: ja
     role: translation
     text: 聖テレジアの法悦
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1333433
   - lang: zh
     role: translation
     text: 圣女大德兰的神魂超拔
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1333433
   - lang: ko
     role: translation
     text: 성 테레사의 법열
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1333433
   - lang: ru
     role: translation
     text: Экстаз святой Терезы
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1333433
 creator: gian-lorenzo-bernini
 created: 1645/1652
 created_label: c. 1647
@@ -78,9 +117,6 @@ identifiers:
   gnd: 7703540-9
   viaf: "192437715"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1333433
   created:
     - accessed: 2026-10-20
       property: P571

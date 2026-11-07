@@ -5,17 +5,35 @@ names:
   - lang: ja
     role: original
     text: 甲州伊沢暁
-  - Kōshū Isawa no akatsuki
-  - Koshu Isawa no akatsuki
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q17209457
+  - text: Kōshū Isawa no akatsuki
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q17209457
+  - text: Koshu Isawa no akatsuki
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q17209457
   - lang: fr
     role: translation
     text: L'aurore à Isawa dans la province de Kai
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q17209457
   - lang: es
     role: translation
     text: Amanecer en Isawa en la provincia de Kai
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q17209457
   - lang: ja
     role: original
     text: 富嶽三十六景 甲州伊沢暁
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q17209457
 parent: thirty-six-views-of-mount-fuji
 part_number: "41"
 creator: katsushika-hokusai
@@ -45,9 +63,6 @@ images:
     license: Public domain
     credit: Art Institute of Chicago, Clarence Buckingham Collection
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q17209457
   parent:
     - accessed: 2026-11-03
       property: P179

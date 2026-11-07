@@ -1,19 +1,34 @@
 public_id: 106761
 title: Genji monogatari emaki (Illustrated Tale of Genji)
 names:
-  - Genji Monogatari Emaki
+  - text: Genji Monogatari Emaki
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q3131044
   - lang: fr
     role: translation
     text: Rouleaux illustrés du Dit du Genji
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q3131044
   - lang: ja
     role: translation
     text: 源氏物語絵巻
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q3131044
   - lang: zh
     role: translation
     text: 源氏物语绘卷
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q3131044
   - lang: ko
     role: translation
     text: 겐지모노가타리 에마키
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q3131044
 creator: fujiwara-no-takayoshi
 attribution_label: traditionally attributed to Fujiwara no Takayoshi
 created: first half of the 12th century
@@ -60,9 +75,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 116–118, figs. 140–141
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q3131044
   medium:
     - source: history-of-japanese-art
       locator: pp. 116–118, figs. 140–141

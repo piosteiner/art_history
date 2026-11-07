@@ -5,12 +5,21 @@ names:
   - lang: de
     role: translation
     text: „Die Eremiten”
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28797696
   - lang: it
     role: translation
     text: Gli eremiti
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28797696
   - lang: es
     role: translation
     text: Los ermitaños
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28797696
 creator: egon-schiele
 created: 1912
 dimensions: [181, 181]
@@ -68,9 +77,6 @@ provenance:
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q28797696
   created:
     - accessed: 2026-10-19
       property: P571

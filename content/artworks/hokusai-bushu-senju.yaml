@@ -5,22 +5,43 @@ names:
   - lang: ja
     role: original
     text: 武州千住
-  - Bushū Senju
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173389
+  - text: Bushū Senju
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173389
   - lang: fr
     role: translation
     text: Senju dans la province de Musashi
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173389
   - lang: de
     role: translation
     text: Senju in der Provinz Musashi
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173389
   - lang: es
     role: translation
     text: Senju en la provincia de Musashi
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173389
   - lang: ja
     role: original
     text: 富嶽三十六景 武州千住
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173389
   - lang: ko
     role: translation
     text: 부슈 센주
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173389
 parent: thirty-six-views-of-mount-fuji
 part_number: "7"
 creator: katsushika-hokusai
@@ -53,9 +74,6 @@ images:
     license: Public domain
     credit: The Metropolitan Museum of Art
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173389
   parent:
     - accessed: 2026-11-03
       property: P179

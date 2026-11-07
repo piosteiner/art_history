@@ -5,6 +5,9 @@ names:
   - lang: ru
     role: translation
     text: Портрет Сони Книпс
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28002801
 creator: gustav-klimt
 created: 1898
 materials: [oil paint, canvas]
@@ -47,9 +50,6 @@ provenance:
         source: belvedere-sammlung-online
         accessed: 2026-08-27
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q28002801
   created:
     - accessed: 2026-10-20
       property: P571

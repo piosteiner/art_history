@@ -5,16 +5,31 @@ names:
   - lang: ja
     role: original
     text: 相州江の島
-  - Sōshū Enoshima
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173413
+  - text: Sōshū Enoshima
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173413
   - lang: fr
     role: translation
     text: Enoshima dans la province de Sagami
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173413
   - lang: es
     role: translation
     text: Enoshima en la provincia de Sagami
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173413
   - lang: ja
     role: original
     text: 富嶽三十六景 相州江の嶌
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173413
 parent: thirty-six-views-of-mount-fuji
 part_number: "27"
 creator: katsushika-hokusai
@@ -47,9 +62,6 @@ images:
     license: Public domain
     credit: Art Institute of Chicago, Clarence Buckingham Collection
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173413
   parent:
     - accessed: 2026-11-03
       property: P179

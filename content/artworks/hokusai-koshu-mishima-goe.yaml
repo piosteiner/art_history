@@ -5,17 +5,35 @@ names:
   - lang: ja
     role: original
     text: 甲州三嶌越
-  - Kōshū Mishima-goe
-  - Kōshū Mishima goe
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173401
+  - text: Kōshū Mishima-goe
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173401
+  - text: Kōshū Mishima goe
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173401
   - lang: fr
     role: translation
     text: La passe de Mishima dans la province de Kai
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173401
   - lang: es
     role: translation
     text: Paso de Mishima en la provincia de Kai
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173401
   - lang: ja
     role: original
     text: 富嶽三十六景 甲州三嶌越
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173401
 parent: thirty-six-views-of-mount-fuji
 part_number: "16"
 creator: katsushika-hokusai
@@ -49,9 +67,6 @@ images:
     license: Public domain
     credit: The Metropolitan Museum of Art
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173401
   parent:
     - accessed: 2026-11-03
       property: P179

@@ -6,6 +6,7 @@ place: zurich
 location: [8.53027, 47.35892]
 address: Gablerstrasse 15, 8002 Zürich
 website_url: http://www.rietberg.ch/en/
+collection_url: https://rietberg.ch/sammlungen
 wikidata_id: Q668300
 metadata:
   sources: [Wikidata Q668300 (retrieved 2026-10-08)]

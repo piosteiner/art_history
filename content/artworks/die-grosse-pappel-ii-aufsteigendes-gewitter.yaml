@@ -5,13 +5,22 @@ names:
   - lang: fr
     role: translation
     text: Orage approchant (Le Grand Peuplier II)
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q19912807
   - lang: en
     role: translation
     text: The Large Poplar II (Gathering Storm)
     status: official
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q19912807
   - lang: de
     role: alternative
     text: Die Grosse Pappel
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q19912807
 creator: gustav-klimt
 created: 1902/1903
 kind: oil painting
@@ -109,9 +118,6 @@ sources:
     - url: https://onlinecollection.leopoldmuseum.org/objekt/2149-die-grosse-pappel-ii-aufsteigendes-gewitter/
       source: leopold-museum-online-sammlung
       accessed: 2026-10-21
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q19912807
   medium:
     - url: https://onlinecollection.leopoldmuseum.org/objekt/2149-die-grosse-pappel-ii-aufsteigendes-gewitter/
       source: leopold-museum-online-sammlung

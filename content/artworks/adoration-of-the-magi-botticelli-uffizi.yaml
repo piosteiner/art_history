@@ -5,34 +5,67 @@ names:
   - lang: en
     role: original
     text: Adoration of the Magi
-  - Zanobi Altarpiece
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q488825
+  - text: Zanobi Altarpiece
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q488825
   - lang: nl
     role: original
     text: Aanbidding der Koningen
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q488825
   - lang: fr
     role: translation
     text: L'Adoration des mages
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q488825
   - lang: de
     role: translation
     text: Anbetung der Heiligen drei Könige
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q488825
   - lang: it
     role: translation
     text: Adorazione dei Magi
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q488825
   - lang: es
     role: translation
     text: Adoración de los Magos
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q488825
   - lang: ja
     role: translation
     text: 東方三博士の礼拝
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q488825
   - lang: zh
     role: translation
     text: 三博士来朝 (波提切利)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q488825
   - lang: ko
     role: translation
     text: 동방박사의 경배
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q488825
   - lang: ru
     role: translation
     text: Поклонение волхвов
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q488825
 creator: sandro-botticelli
 created: 1470/1475
 created_label: c. 1470s
@@ -97,9 +130,6 @@ provenance:
         source: uffizi-artworks
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q488825
   created:
     - url: https://www.uffizi.it/en/artworks/boticelli-adoration-lami
       source: uffizi-artworks

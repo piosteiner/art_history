@@ -5,30 +5,57 @@ names:
   - lang: en
     role: original
     text: A Burial at Ornans
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q540488
   - lang: fr
     role: translation
     text: Un enterrement à Ornans
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q540488
   - lang: de
     role: translation
     text: Ein Begräbnis in Ornans
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q540488
   - lang: it
     role: translation
     text: Funerale a Ornans
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q540488
   - lang: es
     role: translation
     text: Entierro en Ornans
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q540488
   - lang: ja
     role: translation
     text: オルナンの埋葬
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q540488
   - lang: zh
     role: translation
     text: 奥南的葬礼
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q540488
   - lang: ko
     role: translation
     text: 오르낭의 매장
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q540488
   - lang: ru
     role: translation
     text: Похороны в Орнане
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q540488
 creator: gustave-courbet
 created: 1849/1850
 created_label: c. 1840s
@@ -90,9 +117,6 @@ provenance:
         source: musee-d-orsay-collections
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q540488
   created:
     - accessed: 2026-10-20
       property: P571

@@ -5,34 +5,67 @@ names:
   - lang: en
     role: original
     text: Lamentation over the Dead Christ
-  - Cristo morto
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q546297
+  - text: Cristo morto
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q546297
   - lang: en
     role: original
     text: Lamentation of Christ
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q546297
   - lang: nl
     role: translation
     text: De Bewening van Christus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q546297
   - lang: fr
     role: translation
     text: Lamentation sur le Christ mort
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q546297
   - lang: de
     role: translation
     text: Beweinung Christi
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q546297
   - lang: es
     role: translation
     text: Lamentación sobre Cristo muerto
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q546297
   - lang: ja
     role: translation
     text: 死せるキリスト
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q546297
   - lang: zh
     role: translation
     text: 哀悼死去的基督
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q546297
   - lang: ko
     role: translation
     text: 그리스도에 대한 애도
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q546297
   - lang: ru
     role: translation
     text: Мёртвый Христос
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q546297
 creator: andrea-mantegna
 created: c. 1483
 created_span: uncertain
@@ -123,9 +156,6 @@ provenance:
 identifiers:
   gnd: 4224698-2
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q546297
   created:
     - accessed: 2026-10-20
       property: P571

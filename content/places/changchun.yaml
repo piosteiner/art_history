@@ -1,0 +1,57 @@
+public_id: 116544
+name: Changchun
+names:
+  - text: Hsinking
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q92161
+  - text: Xinjing
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q92161
+  - lang: ja
+    role: translation
+    text: 長春市
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q92161
+  - lang: zh
+    role: translation
+    text: 长春市
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q92161
+  - lang: ko
+    role: translation
+    text: 창춘시
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q92161
+  - lang: ru
+    role: translation
+    text: Чанчунь
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q92161
+kind: settlement
+parent: jilin
+country_code: CN
+location: [125.32278, 43.88]
+wikidata_id: Q92161
+metadata:
+  sources: [Wikidata Q92161 (retrieved 2026-11-06)]
+identifiers:
+  gnd: 4264120-2
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q92161
+  parent:
+    - accessed: 2026-11-06
+      property: P131
+      wikidata: Q92161
+  location:
+    - accessed: 2026-11-06
+      property: P625
+      wikidata: Q92161

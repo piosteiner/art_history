@@ -1,0 +1,56 @@
+public_id: 116545
+name: Monte Verità
+names:
+  - text: Monte Verita
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q870148
+  - text: Monte Monescia
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q870148
+  - text: Hill of Truth
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q870148
+  - lang: ja
+    role: translation
+    text: モンテ・ヴェリタ
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q870148
+  - lang: zh
+    role: translation
+    text: 韦里塔山
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q870148
+  - lang: ru
+    role: translation
+    text: Монте Верита
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q870148
+kind: settlement
+parent: ascona
+country_code: CH
+location: [8.72484, 46.15848]
+wikidata_id: Q870148
+metadata:
+  sources: [Wikidata Q870148 (retrieved 2026-11-06)]
+identifiers:
+  gnd: 4074962-9
+  hls: "027825"
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q870148
+  parent:
+    - accessed: 2026-11-06
+      property: P131
+      wikidata: Q870148
+  location:
+    - accessed: 2026-11-06
+      property: P625
+      wikidata: Q870148

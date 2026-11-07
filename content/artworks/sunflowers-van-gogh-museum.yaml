@@ -6,6 +6,11 @@ names:
     role: translation
     text: Zonnebloemen
     status: official
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+        note: “Sunflowers · Vincent van Gogh (1853 - 1890), Arles, January 1889 · oil on canvas, 95 cm x 73 cm … Dimensions 95 cm x 73 cm, 123.6 cm x 101.2 cm · Object number s0031V1962”
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
 parent: sunflowers-arles
 creator: vincent-van-gogh
 created: 1889-01
@@ -138,11 +143,6 @@ numbers:
         accessed: 2026-10-22
 sources:
   kind:
-    - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
-      note: “Sunflowers · Vincent van Gogh (1853 - 1890), Arles, January 1889 · oil on canvas, 95 cm x 73 cm … Dimensions 95 cm x 73 cm, 123.6 cm x 101.2 cm · Object number s0031V1962”
-      source: van-gogh-museum-collection
-      accessed: 2026-10-22
-  names:
     - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
       note: “Sunflowers · Vincent van Gogh (1853 - 1890), Arles, January 1889 · oil on canvas, 95 cm x 73 cm … Dimensions 95 cm x 73 cm, 123.6 cm x 101.2 cm · Object number s0031V1962”
       source: van-gogh-museum-collection

@@ -5,27 +5,51 @@ names:
   - lang: nl
     role: translation
     text: Apollo en Daphne
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q945850
   - lang: fr
     role: translation
     text: Apollon et Daphné
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q945850
   - lang: de
     role: translation
     text: Apollo und Daphne
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q945850
   - lang: it
     role: translation
     text: Apollo e Dafne
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q945850
   - lang: es
     role: translation
     text: Apolo y Dafne
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q945850
   - lang: ja
     role: translation
     text: アポロンとダプネ
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q945850
   - lang: zh
     role: translation
     text: 阿波羅與黛芙妮
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q945850
   - lang: ru
     role: translation
     text: Аполлон и Дафна
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q945850
 creator: gian-lorenzo-bernini
 created: 1622/1625
 materials: [Carrara marble]
@@ -111,9 +135,6 @@ identifiers:
   gnd: 4540552-9
   viaf: "184911814"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q945850
   created:
     - url: https://www.collezionegalleriaborghese.it/opere/apollo-e-dafne
       source: galleria-borghese-collezione

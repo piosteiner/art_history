@@ -5,27 +5,51 @@ names:
   - lang: en
     role: original
     text: The Kiss
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1195035
   - lang: nl
     role: translation
     text: De kus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1195035
   - lang: fr
     role: translation
     text: Le Baiser
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1195035
   - lang: de
     role: translation
     text: Der Kuss
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1195035
   - lang: es
     role: translation
     text: El beso
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1195035
   - lang: zh
     role: translation
     text: 吻
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1195035
   - lang: ko
     role: translation
     text: 키스
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1195035
   - lang: ru
     role: translation
     text: Поцелуй (картина Хайеса)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1195035
 creator: francesco-hayez
 created: 1859
 materials: [oil paint, canvas]
@@ -69,9 +93,6 @@ provenance:
         source: pinacoteca-di-brera-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1195035
   created:
     - accessed: 2026-10-20
       property: P571

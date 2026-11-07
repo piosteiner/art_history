@@ -2,13 +2,22 @@ public_id: 113406
 title_lang: es
 title: La recuperación de la isla de San Cristóbal
 names:
-  - pintura
+  - text: pintura
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q31187682
   - lang: en
     role: translation
     text: The recovery of the island of San Cristobal by Don Frederic of Toledo
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q31187682
   - lang: es
     role: original
     text: Recuperación de la isla de San Cristóbal
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q31187682
 parent: battle-series
 creator: felix-castello
 created: 1634/1635
@@ -26,9 +35,6 @@ images:
     license: Public domain
     credit: Felix Castello
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q31187682
   parent:
     - accessed: 2026-11-03
       property: P179

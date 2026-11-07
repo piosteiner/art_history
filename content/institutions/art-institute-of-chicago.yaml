@@ -25,6 +25,7 @@ place: chicago
 location: [-87.62389, 41.87944]
 address: 111 South Michigan Avenue, Chicago, IL 60603
 website_url: https://www.artic.edu
+collection_url: https://www.artic.edu/collection
 wikidata_id: Q239303
 metadata:
   sources: [Wikidata Q239303 (retrieved 2026-10-22)]

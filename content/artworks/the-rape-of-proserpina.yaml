@@ -2,35 +2,68 @@ public_id: 102037
 title_lang: it
 title: Ratto di Proserpina
 names:
-  - Pluto and Persephone
-  - Rape of Proserpina
+  - text: Pluto and Persephone
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2352789
+  - text: Rape of Proserpina
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2352789
   - lang: nl
     role: translation
     text: Pluto en Proserpina
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2352789
   - lang: fr
     role: translation
     text: L'Enlèvement de Proserpine
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2352789
   - lang: de
     role: translation
     text: Der Raub der Persephone
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2352789
   - lang: it
     role: translation
     text: Ratto di Proserpina
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2352789
   - lang: es
     role: translation
     text: El rapto de Proserpina
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2352789
   - lang: ja
     role: translation
     text: プロセルピナの略奪
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2352789
   - lang: zh
     role: translation
     text: 被擄掠的珀耳塞福涅
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2352789
   - lang: ko
     role: translation
     text: 프로세르피나의 강간
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2352789
   - lang: ru
     role: translation
     text: Похищение Прозерпины
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2352789
 creator: gian-lorenzo-bernini
 created: 1621/1622
 materials: [white marble]
@@ -93,9 +126,6 @@ provenance:
         source: galleria-borghese-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2352789
   created:
     - url: https://www.collezionegalleriaborghese.it/opere/ratto-di-proserpina
       source: galleria-borghese-collezione

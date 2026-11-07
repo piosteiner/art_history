@@ -5,14 +5,29 @@ names:
   - lang: ja
     role: original
     text: 相州仲原
-  - Sōshū Nakahara
-  - Soshu Nakahara
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173430
+  - text: Sōshū Nakahara
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173430
+  - text: Soshu Nakahara
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173430
   - lang: es
     role: translation
     text: Nakahara en la provincia de Sagami
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173430
   - lang: ja
     role: original
     text: 富嶽三十六景 相州仲原
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173430
 parent: thirty-six-views-of-mount-fuji
 part_number: "40"
 creator: katsushika-hokusai
@@ -42,9 +57,6 @@ images:
     license: Public domain
     credit: Art Institute of Chicago, Clarence Buckingham Collection
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173430
   parent:
     - accessed: 2026-11-03
       property: P179

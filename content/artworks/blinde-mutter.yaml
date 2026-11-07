@@ -4,9 +4,15 @@ names:
   - lang: de
     role: translation
     text: Die blinde Mutter
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q134067801
   - lang: en
     role: translation
     text: Blind Mother, or The Mother
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q134067801
 creator: egon-schiele
 created: 1914
 kind: oil painting
@@ -84,9 +90,6 @@ provenance:
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q134067801
   medium:
     - url: https://onlinecollection.leopoldmuseum.org/objekt/2-blinde-mutter/
       source: leopold-museum-online-sammlung

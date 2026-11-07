@@ -2,10 +2,16 @@ public_id: 101464
 title_lang: en
 title: The Lyricist
 names:
-  - Lyricist
+  - text: Lyricist
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28797697
   - lang: de
     role: translation
     text: „Der Lyriker”
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28797697
 creator: egon-schiele
 created: 1911
 materials: [oil paint, canvas]
@@ -65,9 +71,6 @@ provenance:
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q28797697
   created:
     - accessed: 2026-10-19
       property: P571

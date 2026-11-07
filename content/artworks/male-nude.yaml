@@ -5,12 +5,21 @@ names:
   - lang: en
     role: translation
     text: Male Nude
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28005437
   - lang: nl
     role: translation
     text: Mannelijk Naakt
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28005437
   - lang: ru
     role: translation
     text: Обнажённый мужчина
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28005437
 creator: gustav-klimt
 created: 1883
 materials: [oil paint, canvas]
@@ -96,9 +105,6 @@ provenance:
         source: belvedere-sammlung-online
         accessed: 2026-07-27
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q28005437
   created:
     - accessed: 2026-10-20
       property: P571

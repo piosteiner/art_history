@@ -1,15 +1,36 @@
 public_id: 106789
 title: Nine Amida Nyorai, Jōruriji
 names:
-  - Nine Statues of Amida
-  - Nine Amida Statues
-  - Nine Amida Buddhas
-  - Nine Amida Nyorai
-  - Nine Amida
-  - Kutai Amida
+  - text: Nine Statues of Amida
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046716
+  - text: Nine Amida Statues
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046716
+  - text: Nine Amida Buddhas
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046716
+  - text: Nine Amida Nyorai
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046716
+  - text: Nine Amida
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046716
+  - text: Kutai Amida
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046716
   - lang: ja
     role: translation
     text: 浄瑠璃寺九体阿弥陀像
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107046716
 attribution_label: Anonymous
 created: 1067/1133
 kind: sculpture
@@ -38,9 +59,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 150–152, figs. 183–184
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q107046716
   medium:
     - source: history-of-japanese-art
       locator: pp. 150–152, figs. 183–184

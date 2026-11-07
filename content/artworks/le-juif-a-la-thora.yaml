@@ -5,9 +5,17 @@ names:
   - lang: de
     role: translation
     text: Jude mit Thora
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/820986/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
   - lang: en
     role: translation
     text: Jew with Thora
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/820986/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-02
 creator: marc-chagall
 created: c. 1958
 created_span: uncertain
@@ -23,10 +31,6 @@ metadata:
   sources: [Wikidata Q124282664 (retrieved 2026-11-02)]
 sources:
   kind:
-    - url: https://collection.kunsthaus.ch/de/collection/item/820986/
-      source: kunsthaus-zurich-sammlung-online
-      accessed: 2026-11-02
-  names:
     - url: https://collection.kunsthaus.ch/de/collection/item/820986/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-02

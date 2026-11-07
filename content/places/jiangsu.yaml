@@ -1,0 +1,16 @@
+public_id: 116540
+name: Jiangsu
+kind: site
+location: [120, 33]
+wikidata_id: Q16963
+metadata:
+  sources: [Wikidata Q16963 (retrieved 2026-11-06)]
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q16963
+  location:
+    - accessed: 2026-11-06
+      property: P625
+      wikidata: Q16963

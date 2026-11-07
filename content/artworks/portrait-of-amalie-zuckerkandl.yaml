@@ -5,24 +5,45 @@ names:
   - lang: en
     role: translation
     text: Portrait of Amalie Zuckerkandl
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28007512
   - lang: nl
     role: translation
     text: Portret van Amalie Zuckerkandl
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28007512
   - lang: fr
     role: translation
     text: Portrait d'Amalie Zuckerkandl
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28007512
   - lang: de
     role: original
     text: Bildnis der Amalie Zuckerkandl
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28007512
   - lang: it
     role: translation
     text: Ritratto di Amalie Zuckerlandl
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28007512
   - lang: ru
     role: translation
     text: Портрет Амалии Цукеркандль
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28007512
   - lang: de
     role: alternative
     text: Bildnis Amalie Zuckerkandl
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28007512
 creator: gustav-klimt
 created: 1913/1914
 created_label: possibly still in 1917
@@ -107,9 +128,6 @@ provenance:
 identifiers:
   gnd: 7583528-9
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q28007512
   medium:
     - url: https://sammlung.belvedere.at/objects/7488/amalie-zuckerkandl
       source: belvedere-sammlung-online

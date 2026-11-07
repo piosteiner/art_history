@@ -1,0 +1,88 @@
+public_id: 116549
+name: Water Margin
+names:
+  - lang: zh
+    role: original
+    text: 水滸傳
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q70827
+  - text: Shui Hu Zhuan
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q70827
+  - text: All Men Are Brothers
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q70827
+  - text: Shui-hu Chuan
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q70827
+  - text: Outlaws of the Marsh
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q70827
+  - text: Tale of the Marshes
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q70827
+  - text: Men of the Marshes
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q70827
+  - text: The Marshes of Mount Liang
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q70827
+  - lang: nl
+    role: translation
+    text: Verhaal van de wateroever
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q70827
+  - lang: fr
+    role: translation
+    text: Au bord de l'eau
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q70827
+  - lang: de
+    role: translation
+    text: Die Räuber vom Liang-Schan-Moor
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q70827
+  - lang: it
+    role: translation
+    text: I Briganti
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q70827
+  - lang: es
+    role: translation
+    text: Bandidos del pantano
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q70827
+  - lang: ja
+    role: translation
+    text: 水滸伝
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q70827
+  - lang: ko
+    role: translation
+    text: 수호전
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q70827
+  - lang: ru
+    role: translation
+    text: Речные заводи
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q70827
+wikidata_id: Q70827
+metadata:
+  sources: [Wikidata Q70827 (retrieved 2026-11-06)]

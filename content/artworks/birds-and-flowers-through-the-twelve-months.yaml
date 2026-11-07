@@ -6,10 +6,16 @@ names:
   - lang: ja
     role: original
     text: "{花鳥十二ヶ月図|かちょうじゅうにかげつず}"
+    sources:
+      - source: shozokan-szk000142-twelve-months
+        accessed: 2026-11-03
   - lang: en
     role: alternative
     text: Flowers and Birds of the Twelve Months
     note: so in Mason 2005
+    sources:
+      - source: shozokan-szk000142-twelve-months
+        accessed: 2026-11-03
 parts_count: 12
 creator: sakai-hoitsu
 created: 1823
@@ -24,9 +30,6 @@ description_md: |-
 
   The eighth month, autumn plants under the moon, is discussed by Mason: [[artwork/eighth-month-autumn-plants-and-grasshopper]].
 sources:
-  names:
-    - source: shozokan-szk000142-twelve-months
-      accessed: 2026-11-03
   medium:
     - source: shozokan-szk000142-twelve-months
       accessed: 2026-11-03

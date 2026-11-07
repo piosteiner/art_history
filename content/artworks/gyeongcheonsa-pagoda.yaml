@@ -1,16 +1,28 @@
 public_id: 108299
 title: Ten-storey pagoda from Kyŏngch’ŏn-sa
 names:
-  - Gyeongcheonsa Pagoda
+  - text: Gyeongcheonsa Pagoda
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q626536
   - lang: fr
     role: translation
     text: pagode du Kyŏngch'ŏn-sa
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q626536
   - lang: zh
     role: translation
     text: 敬天寺十層石塔
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q626536
   - lang: ko
     role: translation
     text: 경천사지 십층석탑
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q626536
 attribution_label: Anonymous
 created: 1348
 kind: pagoda
@@ -44,9 +56,6 @@ sources:
   kind:
     - source: portal-2000
       locator: pp. 85–86, fig. 43
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q626536
   medium:
     - source: portal-2000
       locator: pp. 85–86, fig. 43

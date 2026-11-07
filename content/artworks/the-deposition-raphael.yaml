@@ -5,30 +5,57 @@ names:
   - lang: en
     role: original
     text: Entombment
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2500226
   - lang: en
     role: original
     text: The Deposition
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2500226
   - lang: fr
     role: translation
     text: Déposition Borghèse
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2500226
   - lang: de
     role: translation
     text: Grablegung Christi
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2500226
   - lang: it
     role: translation
     text: Deposizione Borghese
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2500226
   - lang: es
     role: translation
     text: Traslado de Cristo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2500226
   - lang: ja
     role: translation
     text: キリストの遺骸の運搬
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2500226
   - lang: zh
     role: translation
     text: 耶穌下葬 (拉斐爾)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2500226
   - lang: ru
     role: translation
     text: Положение во гроб
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2500226
 creator: raphael
 created: 1507
 materials: [oil paint, panel]
@@ -120,9 +147,6 @@ provenance:
         source: galleria-borghese-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2500226
   created:
     - accessed: 2026-10-20
       property: P571

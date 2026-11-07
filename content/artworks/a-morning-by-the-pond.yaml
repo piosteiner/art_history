@@ -2,19 +2,34 @@ public_id: 101471
 title_lang: en
 title: Tranquil Pond (Egelsee near Golling, Salzburg)
 names:
-  - Tranquil Pond
+  - text: Tranquil Pond
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q19912822
   - lang: en
     role: original
     text: A Morning by the Pond
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q19912822
   - lang: fr
     role: translation
     text: Étang calme
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q19912822
   - lang: de
     role: translation
     text: Stiller Weiher
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q19912822
   - lang: ru
     role: translation
     text: Утро на пруду
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q19912822
 creator: gustav-klimt
 created: 1899
 materials: [oil paint, canvas]
@@ -97,9 +112,6 @@ provenance:
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q19912822
   created:
     - accessed: 2026-10-19
       property: P571

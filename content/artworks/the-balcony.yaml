@@ -5,27 +5,51 @@ names:
   - lang: en
     role: original
     text: The Balcony
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q775407
   - lang: nl
     role: translation
     text: Het balkon
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q775407
   - lang: de
     role: translation
     text: Der Balkon
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q775407
   - lang: it
     role: translation
     text: Il balcone
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q775407
   - lang: es
     role: translation
     text: El balcón
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q775407
   - lang: ja
     role: translation
     text: バルコニー
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q775407
   - lang: ko
     role: translation
     text: 발코니
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q775407
   - lang: ru
     role: translation
     text: Балкон
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q775407
 creator: edouard-manet
 created: 1868/1869
 materials: [oil paint, canvas]
@@ -130,9 +154,6 @@ identifiers:
   gnd: 7571965-4
   viaf: "192614146"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q775407
   created:
     - url: https://www.musee-orsay.fr/fr/oeuvres/le-balcon-707
       source: musee-d-orsay-collections

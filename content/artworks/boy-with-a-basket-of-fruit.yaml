@@ -5,30 +5,57 @@ names:
   - lang: en
     role: translation
     text: Boy with a Basket of Fruit
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2610936
   - lang: nl
     role: translation
     text: Jongen met een fruitmand
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2610936
   - lang: fr
     role: translation
     text: Garçon avec un panier de fruits
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2610936
   - lang: de
     role: translation
     text: Knabe mit Fruchtkorb
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2610936
   - lang: it
     role: original
     text: giovane con canestra di frutta
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2610936
   - lang: es
     role: translation
     text: Niño con un cesto de frutas
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2610936
   - lang: ja
     role: translation
     text: 果物籠を持つ少年
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2610936
   - lang: zh
     role: translation
     text: 捧著果籃的男孩
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2610936
   - lang: ru
     role: translation
     text: Юноша с корзиной фруктов
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2610936
 creator: caravaggio
 created: 1590/1600
 created_label: c. 1590s
@@ -124,9 +151,6 @@ provenance:
         source: galleria-borghese-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2610936
   created:
     - url: https://www.collezionegalleriaborghese.it/opere/giovane-con-canestra-di-frutta
       source: galleria-borghese-collezione

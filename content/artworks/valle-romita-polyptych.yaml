@@ -2,28 +2,52 @@ public_id: 102102
 title_lang: it
 title: Incoronazione della Vergine e santi (Polittico di Valle Romita)
 names:
-  - Polittico di Valle Romita
+  - text: Polittico di Valle Romita
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3907532
   - lang: nl
     role: translation
     text: Polyptiek van Valle Romita
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3907532
   - lang: fr
     role: translation
     text: polyptique de Valle Romita
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3907532
   - lang: de
     role: translation
     text: Marienkrönung mit Heiligen (Valle Romita Polyptychon)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3907532
   - lang: es
     role: translation
     text: Políptico de Valle Romita
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3907532
   - lang: ja
     role: translation
     text: ヴァッレ・ロミータの多翼祭壇画
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3907532
   - lang: zh
     role: translation
     text: 羅米塔山谷多聯畫
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3907532
   - lang: ru
     role: translation
     text: Полиптих Валле Ромита
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3907532
 creator: gentile-da-fabriano
 created: c. 1408
 created_span: uncertain
@@ -73,9 +97,6 @@ provenance:
         source: pinacoteca-di-brera-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q3907532
   created:
     - accessed: 2026-10-20
       property: P571

@@ -5,18 +5,33 @@ names:
   - lang: fr
     role: translation
     text: La Vérité
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q7848306
   - lang: de
     role: translation
     text: Die Wahrheit
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q7848306
   - lang: it
     role: translation
     text: La Verità
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q7848306
   - lang: es
     role: translation
     text: Verdad descubierta por el Tiempo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q7848306
   - lang: zh
     role: translation
     text: 真理
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q7848306
 creator: gian-lorenzo-bernini
 created: 1646/1652
 created_label: c. 17th century
@@ -86,9 +101,6 @@ provenance:
         source: galleria-borghese-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q7848306
   created:
     - url: https://www.collezionegalleriaborghese.it/opere/la-verita
       source: galleria-borghese-collezione

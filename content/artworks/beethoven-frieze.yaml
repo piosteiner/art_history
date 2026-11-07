@@ -5,33 +5,63 @@ names:
   - lang: en
     role: original
     text: The Beethoven Frieze
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q684689
   - lang: en
     role: original
     text: Beethoven Frieze
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q684689
   - lang: nl
     role: translation
     text: Beethoven-fries
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q684689
   - lang: fr
     role: translation
     text: Frise Beethoven
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q684689
   - lang: de
     role: original
     text: Beethovenfries
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q684689
   - lang: it
     role: translation
     text: Fregio di Beethoven
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q684689
   - lang: es
     role: translation
     text: Friso de Beethoven
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q684689
   - lang: ja
     role: translation
     text: ベートーヴェン・フリーズ
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q684689
   - lang: ko
     role: translation
     text: 베토벤 프리즈
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q684689
   - lang: ru
     role: translation
     text: Бетховенский фриз
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q684689
 creator: gustav-klimt
 created: 1901
 materials: [casein paint, chalk, paint, graphite, plaster]
@@ -116,9 +146,6 @@ identifiers:
   gnd: 4204968-4
   viaf: "176725947"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q684689
   created:
     - accessed: 2026-10-20
       property: P571

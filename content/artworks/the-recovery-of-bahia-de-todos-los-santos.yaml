@@ -2,16 +2,28 @@ public_id: 113396
 title_lang: es
 title: La recuperación de Bahía de Todos los Santos
 names:
-  - The Recovery of Bahia de Todos los Santos
+  - text: The Recovery of Bahia de Todos los Santos
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q9067298
   - lang: es
     role: translation
     text: Recuperación de Bahía de Todos los Santos
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q9067298
   - lang: ja
     role: translation
     text: バイーアの奪還
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q9067298
   - lang: zh
     role: translation
     text: 奪回巴伊亞
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q9067298
 parent: battle-series
 creator: juan-bautista-maino
 created: 1634/1635
@@ -30,9 +42,6 @@ images:
     license: Public domain
     credit: Juan Bautista Maíno
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q9067298
   parent:
     - accessed: 2026-11-03
       property: P179

@@ -2,35 +2,68 @@ public_id: 101307
 title_lang: de
 title: Kinderspiele
 names:
-  - Bruegel, Pieter, approximately 1525-1569. Children's games
-  - Children at play
+  - text: Bruegel, Pieter, approximately 1525-1569. Children's games
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q697332
+  - text: Children at play
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q697332
   - lang: en
     role: original
     text: Children's Games
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q697332
   - lang: nl
     role: translation
     text: Kinderspelen
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q697332
   - lang: fr
     role: translation
     text: Les Jeux d’enfants
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q697332
   - lang: de
     role: translation
     text: Die Kinderspiele
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q697332
   - lang: it
     role: translation
     text: Giochi di bambini
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q697332
   - lang: es
     role: translation
     text: Juego de niños
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q697332
   - lang: ja
     role: translation
     text: 子供の遊戯
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q697332
   - lang: zh
     role: translation
     text: 兒童遊戲 (畫)
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q697332
   - lang: ru
     role: translation
     text: Детские игры
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q697332
 creator: pieter-brueghel-the-elder
 created: 1560
 created_label: datiert
@@ -85,9 +118,6 @@ sources:
     - url: https://www.khm.at/kunstwerke/kinderspiele-321
       source: khm-125-jahre
       accessed: 2026-10-30
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q697332
   created:
     - accessed: 2026-10-30
       property: P571

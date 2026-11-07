@@ -1,7 +1,15 @@
 public_id: 102174
 title_lang: fr
 title: Tympan du portail sud de l'abbatiale Saint-Pierre de Moissac
-names: [Moissac Abbey, "Relief Sculptures, South Portal, St. Pierre"]
+names:
+  - text: Moissac Abbey
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q97376350
+  - text: Relief Sculptures, South Portal, St. Pierre
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q97376350
 attribution_label: Unknown Romanesque sculptor
 created: 1110/1135
 created_label: c. 1115
@@ -29,7 +37,3 @@ provenance:
         note: L'abbaye, fondée au VIIIe siècle, fut rattachée en 1047 à la puissante abbaye de Cluny […] c'est le tympan du portail sud qui constitue le chef-d'œuvre de Moissac.
         source: wikipedia-fr-moissac-tympan
         accessed: 2026-10-20
-sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q97376350

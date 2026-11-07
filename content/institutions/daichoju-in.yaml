@@ -1,0 +1,16 @@
+public_id: 116480
+name: Daichōju-in
+names:
+  - lang: ja
+    role: original
+    text: 大長寿院
+kind: temple
+place: hiraizumi
+description_md: A temple of [[institution/chuson-ji]], in charge of its sutra hall (経蔵の別当寺); it keeps most of the Chūson-ji documents and the furnishings of the sutra hall. [[source/bunka-online-206120]]
+relationships:
+  - type: part_of
+    to: institution/chuson-ji
+    sources:
+      - source: bunka-online-206120
+        locator: 解説 (経蔵の別当寺である大長寿院)
+        accessed: 2026-11-06

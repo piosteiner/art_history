@@ -10,6 +10,7 @@ names:
 kind: department
 place: paris
 location: [2.33761, 48.86153]
+collection_url: https://collections.louvre.fr/en/
 wikidata_id: Q3044751
 metadata:
   sources: [Wikidata Q3044751 (retrieved 2026-10-20)]

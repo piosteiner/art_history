@@ -2,28 +2,52 @@ public_id: 102048
 title_lang: it
 title: San Girolamo
 names:
-  - Saint Jerome in his Study
+  - text: Saint Jerome in his Study
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2715177
   - lang: nl
     role: translation
     text: De heilige Hieronymus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2715177
   - lang: fr
     role: translation
     text: Saint Jérôme
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2715177
   - lang: de
     role: translation
     text: Hl. Hieronymus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2715177
   - lang: it
     role: translation
     text: San Girolamo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2715177
   - lang: es
     role: translation
     text: San Jerónimo escribiendo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2715177
   - lang: ja
     role: translation
     text: 書斎の聖ヒエロニムス
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2715177
   - lang: zh
     role: translation
     text: 聖傑洛姆 (卡拉瓦喬)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2715177
 creator: caravaggio
 created: c. 1606
 created_span: uncertain
@@ -91,9 +115,6 @@ provenance:
         source: galleria-borghese-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2715177
   created:
     - accessed: 2026-10-20
       property: P571

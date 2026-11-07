@@ -2,15 +2,30 @@ public_id: 102165
 title_lang: fr
 title: Notre-Dame de la Belle Verrière
 names:
-  - Madonna and Child (Chartres)
-  - La Belle-Verrière
-  - The Blue Virgin of Chartres
+  - text: Madonna and Child (Chartres)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q27968027
+  - text: La Belle-Verrière
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q27968027
+  - text: The Blue Virgin of Chartres
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q27968027
   - lang: fr
     role: translation
     text: Notre-Dame de la Belle Verrière, cathédrale de Chartres (baie 30a)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q27968027
   - lang: de
     role: translation
     text: Notre-Dame de la Belle Verrière (Bucht 030a)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q27968027
 attribution_label: Unknown glaziers of Chartres
 created: c. 1180–1220
 created_span: uncertain
@@ -49,9 +64,6 @@ provenance:
         source: wikipedia-fr-belle-verriere
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q27968027
   materials:
     - accessed: 2026-10-20
       property: P186

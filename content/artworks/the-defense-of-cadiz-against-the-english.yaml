@@ -5,30 +5,63 @@ names:
   - lang: en
     role: original
     text: The Defence of Cadiz against the English
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q5801323
   - lang: nl
     role: original
     text: Verdediging van Cadiz tegen de Engelsen
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q5801323
   - lang: en
     role: original
     text: Defence of Cadiz against the English
-  - The Hostile Landing of the English near Cádiz in 1625 under the command of the Earl of Leicester
-  - The Defence of Cadiz
-  - The Defense of Cadiz
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q5801323
+  - text: The Hostile Landing of the English near Cádiz in 1625 under the command of the Earl of Leicester
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q5801323
+  - text: The Defence of Cadiz
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q5801323
+  - text: The Defense of Cadiz
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q5801323
   - lang: en
     role: original
     text: The Defense of Cadiz Against the English
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q5801323
   - lang: fr
     role: translation
     text: La Défense de Cadix contre les Anglais
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q5801323
   - lang: de
     role: translation
     text: Die Verteidigung von Cádiz
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q5801323
   - lang: ja
     role: translation
     text: カディスの防衛
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q5801323
   - lang: zh
     role: translation
     text: 加的斯的防守
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q5801323
 parent: battle-series
 creator: francisco-de-zurbaran
 created: 1634
@@ -47,9 +80,6 @@ images:
     license: Public domain
     credit: Francisco de Zurbarán
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q5801323
   parent:
     - accessed: 2026-11-03
       property: P179

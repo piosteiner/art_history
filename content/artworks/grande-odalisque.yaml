@@ -5,27 +5,51 @@ names:
   - lang: en
     role: translation
     text: Grande Odalisque
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1978815
   - lang: de
     role: translation
     text: Die große Odaliske
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1978815
   - lang: it
     role: translation
     text: La grande odalisca
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1978815
   - lang: es
     role: translation
     text: La gran odalisca
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1978815
   - lang: ja
     role: translation
     text: グランド・オダリスク
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1978815
   - lang: zh
     role: translation
     text: 大宫女
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1978815
   - lang: ko
     role: translation
     text: 그랑드 오달리스크
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1978815
   - lang: ru
     role: translation
     text: Большая одалиска
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1978815
 creator: jean-auguste-dominique-ingres
 created: 1814
 materials: [oil paint, canvas]
@@ -97,9 +121,6 @@ provenance:
         source: louvre-collections
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1978815
   created:
     - accessed: 2026-10-20
       property: P571

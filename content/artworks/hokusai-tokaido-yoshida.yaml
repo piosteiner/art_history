@@ -5,20 +5,41 @@ names:
   - lang: ja
     role: original
     text: 東海道吉田
-  - Tōkaidō Yoshida
-  - Yoshida on the Tōkaidō Road
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173417
+  - text: Tōkaidō Yoshida
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173417
+  - text: Yoshida on the Tōkaidō Road
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173417
   - lang: en
     role: original
     text: Yoshida at Tokaido
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173417
   - lang: fr
     role: translation
     text: Yoshida dans la région de Tōkaidō
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173417
   - lang: es
     role: translation
     text: Yoshida en la Tōkaidō
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173417
   - lang: ja
     role: original
     text: 富嶽三十六景 東海道吉田
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173417
 parent: thirty-six-views-of-mount-fuji
 part_number: "29"
 creator: katsushika-hokusai
@@ -51,9 +72,6 @@ images:
     license: Public domain
     credit: The Metropolitan Museum of Art
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173417
   parent:
     - accessed: 2026-11-03
       property: P179

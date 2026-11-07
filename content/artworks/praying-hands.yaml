@@ -4,15 +4,27 @@ names:
   - lang: fr
     role: translation
     text: Mains priant
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699552
   - lang: de
     role: translation
     text: Betende Hände
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699552
   - lang: it
     role: translation
     text: Mani in preghiera
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699552
   - lang: es
     role: translation
     text: Manos que oran
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699552
 creator: albrecht-durer
 created: 1500/1509
 created_label: 1500s
@@ -127,9 +139,6 @@ provenance:
 identifiers:
   gnd: "1184527350"
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q699552
   created:
     - accessed: 2026-10-19
       property: P571

@@ -4,12 +4,21 @@ names:
   - lang: fr
     role: translation
     text: Cercles de pierres d'Oyu
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11437550
   - lang: ja
     role: translation
     text: 大湯環状列石
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11437550
   - lang: zh
     role: translation
     text: 大湯環狀列石
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q11437550
 attribution_label: Anonymous
 created: c. 1500 BCE–c. 1000 BCE
 created_span: uncertain
@@ -38,9 +47,6 @@ images:
 identifiers:
   viaf: "120150746997916300681"
 sources:
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q11437550
   medium:
     - source: history-of-japanese-art
       locator: p. 21, fig. 14

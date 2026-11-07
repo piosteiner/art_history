@@ -2,35 +2,68 @@ public_id: 101963
 title_lang: it
 title: Doppio ritratto dei duchi di Urbino
 names:
-  - Portraits of Federico da Montefeltro, Duke of Urbino and of His Wife, Battista Sforza
-  - The Duke and Duchess of Urbino
+  - text: Portraits of Federico da Montefeltro, Duke of Urbino and of His Wife, Battista Sforza
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1227359
+  - text: The Duke and Duchess of Urbino
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1227359
   - lang: en
     role: original
     text: Diptych of Federico da Montefeltro and Battista Sforza
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1227359
   - lang: nl
     role: translation
     text: Portretten van Federico da Montefeltro en Battista Sforza
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1227359
   - lang: fr
     role: translation
     text: Le Triomphe de la chasteté
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1227359
   - lang: de
     role: translation
     text: Diptychon des Federico da Montefeltro mit seiner Gattin Battista Sforza
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1227359
   - lang: it
     role: translation
     text: I duchi di Urbino Federico da Montefeltro e Battista Sforza
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1227359
   - lang: es
     role: translation
     text: Duques de Urbino
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1227359
   - lang: ja
     role: translation
     text: ウルビーノ公夫妻像
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1227359
   - lang: zh
     role: translation
     text: 烏爾比諾公爵雙聯畫
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1227359
   - lang: ru
     role: translation
     text: Урбинский диптих
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1227359
 creator: piero-della-francesca
 created: 1468/1480
 created_label: c. 1470s
@@ -90,9 +123,6 @@ provenance:
 identifiers:
   gnd: 4671185-5
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1227359
   created:
     - url: https://www.uffizi.it/en/artworks/the-duke-and-duchess-of-urbino-federico-da-montefeltro-and-battista-sforza
       source: uffizi-artworks

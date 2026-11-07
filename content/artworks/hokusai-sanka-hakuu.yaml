@@ -5,37 +5,85 @@ names:
   - lang: ja
     role: original
     text: 山下白雨
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173384
   - lang: en
     role: original
     text: Sudden Shower beneath the Summit
-  - Sanka hakuu
-  - Sanka no hakuu
-  - Sanka no haku u
-  - Sanka no haku'u
-  - Sanka haku-u
-  - Shower below the Summit
-  - Thunderstorm Beneath the Summit
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173384
+  - text: Sanka hakuu
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173384
+  - text: Sanka no hakuu
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173384
+  - text: Sanka no haku u
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173384
+  - text: Sanka no haku'u
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173384
+  - text: Sanka haku-u
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173384
+  - text: Shower below the Summit
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173384
+  - text: Thunderstorm Beneath the Summit
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173384
   - lang: en
     role: original
     text: Lightnings below the summit
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173384
   - lang: fr
     role: translation
     text: L'Orage sous le sommet
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173384
   - lang: it
     role: translation
     text: Tempesta di pioggia sotto la cima
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173384
   - lang: es
     role: translation
     text: Tormenta debajo de la cumbre
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173384
   - lang: ja
     role: original
     text: 富嶽三十六景 山下白雨
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173384
   - lang: ko
     role: translation
     text: 산 아래의 소나기
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173384
   - lang: ru
     role: translation
     text: Ливень под горой
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173384
 parent: thirty-six-views-of-mount-fuji
 part_number: "3"
 creator: katsushika-hokusai
@@ -68,9 +116,6 @@ images:
     license: Public domain
     credit: Art Institute of Chicago, Clarence Buckingham Collection
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173384
   parent:
     - accessed: 2026-11-03
       property: P179

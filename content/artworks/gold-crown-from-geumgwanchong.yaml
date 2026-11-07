@@ -1,16 +1,28 @@
 public_id: 108289
 title: Gold crown from the Gold Crown Tomb
 names:
-  - Gold Crown and Diadem Ornaments from Geumgwanchong Tomb
+  - text: Gold Crown and Diadem Ornaments from Geumgwanchong Tomb
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q12586410
   - lang: ja
     role: translation
     text: 金冠塚金冠および金製冠飾
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q12586410
   - lang: zh
     role: translation
     text: 金冠塚金冠和金製冠飾
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q12586410
   - lang: ko
     role: translation
     text: 금관총 금관 및 금제 관식
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q12586410
 attribution_label: Anonymous
 created: 5th century–6th century
 created_span: uncertain
@@ -44,9 +56,6 @@ sources:
   kind:
     - source: portal-2000
       locator: pp. 62–63, fig. 33
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q12586410
   medium:
     - source: portal-2000
       locator: pp. 62–63, fig. 33

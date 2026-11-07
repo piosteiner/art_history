@@ -1,0 +1,95 @@
+public_id: 116488
+title: Along the River During the Qingming Festival
+names:
+  - text: Along the River During Qingming Festival
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q714802
+  - lang: nl
+    role: translation
+    text: Langs de rivier tijdens het Qingmingfestival
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q714802
+  - lang: fr
+    role: translation
+    text: La Fête de Qingming au bord de la rivière
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q714802
+  - lang: de
+    role: translation
+    text: Qingming-Rolle
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q714802
+  - lang: es
+    role: translation
+    text: El festival Qingming junto al río
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q714802
+  - lang: ja
+    role: translation
+    text: 清明上河図
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q714802
+  - lang: zh
+    role: translation
+    text: 清明上河圖
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q714802
+  - lang: ko
+    role: translation
+    text: 청명상하도
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q714802
+  - lang: ru
+    role: translation
+    text: По реке в День поминовения усопших
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q714802
+creator: zhang-zeduan
+created: 1085
+materials: [silk]
+dimensions: [24.8, 528]
+institution: the-palace-museum
+inventory_number: 新00087177
+web_url: https://minghuaji.dpm.org.cn/paint/detail?id=592d80e225aac624977fee2e19452c1f
+wikidata_id: Q714802
+metadata:
+  sources: [Wikidata Q714802 (retrieved 2026-11-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Alongtheriver_QingMing.jpg/1280px-Alongtheriver_QingMing.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Alongtheriver_QingMing.jpg
+    license: Public domain
+    credit: Zhang Zeduan
+sources:
+  created:
+    - accessed: 2026-11-06
+      property: P571
+      wikidata: Q714802
+  creator:
+    - accessed: 2026-11-06
+      property: P170
+      wikidata: Q714802
+  materials:
+    - accessed: 2026-11-06
+      property: P186
+      wikidata: Q714802
+  dimensions:
+    - accessed: 2026-11-06
+      property: P2048
+      wikidata: Q714802
+  institution:
+    - accessed: 2026-11-06
+      property: P195
+      wikidata: Q714802
+  inventory_number:
+    - accessed: 2026-11-06
+      property: P217
+      wikidata: Q714802

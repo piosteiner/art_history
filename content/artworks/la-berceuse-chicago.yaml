@@ -2,10 +2,16 @@ public_id: 105010
 title_lang: en
 title: Madame Roulin Rocking the Cradle (La berceuse)
 names:
-  - La Berceuse
+  - text: La Berceuse
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q20265518
   - lang: nl
     role: translation
     text: La Berceuse (Augustine Roulin)
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q20265518
 parent: la-berceuse
 part_number: "3"
 creator: vincent-van-gogh
@@ -118,9 +124,6 @@ numbers:
         property: P528
         wikidata: Q20265518
 sources:
-  names:
-    - accessed: 2026-10-30
-      wikidata: Q20265518
   parent:
     - accessed: 2026-10-30
       property: P179

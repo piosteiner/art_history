@@ -5,6 +5,11 @@ names:
   - lang: en
     role: alternative
     text: Bedroom in Arles
+    sources:
+      - url: https://www.artic.edu/artworks/28560/the-bedroom
+        note: "“Oil on canvas · 73.6 × 92.3 cm · Reference Number 1926.417 · Helen Birch Bartlett Memorial Collection” — and in its text: “Van Gogh’s second version of the scene … in September 1889”"
+        source: art-institute-of-chicago-collection
+        accessed: 2026-10-22
 parent: bedroom-in-arles
 part_number: "2"
 creator: vincent-van-gogh
@@ -175,11 +180,6 @@ numbers:
         wikidata: Q18713076
 sources:
   kind:
-    - url: https://www.artic.edu/artworks/28560/the-bedroom
-      note: "“Oil on canvas · 73.6 × 92.3 cm · Reference Number 1926.417 · Helen Birch Bartlett Memorial Collection” — and in its text: “Van Gogh’s second version of the scene … in September 1889”"
-      source: art-institute-of-chicago-collection
-      accessed: 2026-10-22
-  names:
     - url: https://www.artic.edu/artworks/28560/the-bedroom
       note: "“Oil on canvas · 73.6 × 92.3 cm · Reference Number 1926.417 · Helen Birch Bartlett Memorial Collection” — and in its text: “Van Gogh’s second version of the scene … in September 1889”"
       source: art-institute-of-chicago-collection

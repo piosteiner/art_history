@@ -4,6 +4,9 @@ names:
   - lang: de
     role: translation
     text: Bauhausgebäude Dessau
+    sources:
+      - accessed: 2026-10-18
+        wikidata: Q516770
 creator: walter-gropius
 created: 1925-01/1926-12-04
 created_label: 1925–1926
@@ -32,9 +35,6 @@ identifiers:
   gnd: "1049357531"
   viaf: "136175948"
 sources:
-  names:
-    - accessed: 2026-10-18
-      wikidata: Q516770
   created: ["Bauhaus Kooperation, “Bauhaus Building, Dessau”: planning from spring 1925, the shell complete in March 1926, the studio block ready on 1 September, opened on 4 December 1926"]
   location:
     - accessed: 2026-10-09

@@ -5,18 +5,33 @@ names:
   - lang: en
     role: original
     text: Portrait of Fritza Riedler
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28001663
   - lang: fr
     role: translation
     text: Portrait de Fritza Riedler
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28001663
   - lang: it
     role: translation
     text: Ritratto di Fritza Riedler
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28001663
   - lang: es
     role: translation
     text: Retrato de Fritza Riedler
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28001663
   - lang: ru
     role: translation
     text: Портрет Фритцы Ридлер
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28001663
 creator: gustav-klimt
 created: 1906
 materials: [oil paint, canvas]
@@ -81,9 +96,6 @@ provenance:
         source: belvedere-sammlung-online
         accessed: 2026-08-15
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q28001663
   created:
     - accessed: 2026-10-20
       property: P571

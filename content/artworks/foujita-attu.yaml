@@ -1,0 +1,47 @@
+public_id: 116500
+title_lang: en
+title: Final Fighting on Attu
+names:
+  - lang: ja
+    role: original
+    text: アッツ島玉砕
+  - lang: en
+    role: alternative
+    text: Suicide Attack on Attu Island
+creator: tsuguharu-foujita
+created: 1943
+kind: painting
+medium: Oil on canvas
+dimensions: [193.5, 259.5]
+institution: national-museum-of-modern-art-tokyo
+web_url: https://www.momat.go.jp/collection/X00120
+on_loan: true
+description_md: One of the war record paintings (sensō kirokuga), signed and dated lower right; in the [[institution/national-museum-of-modern-art-tokyo]] on indefinite loan. [[source/artmuseums-syozo-11437]]
+wikidata_id: Q107342281
+metadata:
+  sources: [Wikidata Q107342281 (retrieved 2026-11-06)]
+sources:
+  medium:
+    - source: artmuseums-syozo-11437
+      accessed: 2026-11-06
+  created:
+    - accessed: 2026-11-06
+      property: P571
+      wikidata: Q107342281
+    - source: artmuseums-syozo-11437
+      accessed: 2026-11-06
+  creator:
+    - accessed: 2026-11-06
+      property: P170
+      wikidata: Q107342281
+    - source: artmuseums-syozo-11437
+      accessed: 2026-11-06
+  on_loan:
+    - source: artmuseums-syozo-11437
+      accessed: 2026-11-06
+  dimensions:
+    - source: artmuseums-syozo-11437
+      accessed: 2026-11-06
+  institution:
+    - source: artmuseums-syozo-11437
+      accessed: 2026-11-06

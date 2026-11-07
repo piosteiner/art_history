@@ -5,18 +5,33 @@ names:
   - lang: nl
     role: original
     text: Portret van Maria Theresia (1717-1780)  als 'Koning' van Hongarije
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q69495884
   - lang: en
     role: original
     text: Portrait of Maria Theresia (1717-1780) as 'King' of Hungary
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q69495884
   - lang: en
     role: original
     text: Portrait of Maria Theresa as Queen of Hungary
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q69495884
   - lang: nl
     role: original
     text: Portret van Maria Theresia (1717-1780) als 'Koning' van Hongarije
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q69495884
   - lang: fr
     role: translation
     text: Impératrice Marie-Thérèse d'Autriche
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q69495884
 creator: martin-van-meytens
 created: 1759
 materials: [oil paint, canvas]
@@ -48,9 +63,6 @@ provenance:
         source: akademie-sammlung-online
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q69495884
   created:
     - accessed: 2026-10-20
       property: P571

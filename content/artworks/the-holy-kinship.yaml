@@ -5,9 +5,15 @@ names:
   - lang: fr
     role: translation
     text: La Sainte Parenté
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q111095531
   - lang: de
     role: translation
     text: Heilige Sippe
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q111095531
 creator: lucas-cranach-the-elder
 created: 1510/1512
 created_label: c. 1510s
@@ -51,9 +57,6 @@ provenance:
         source: akademie-gemaeldegalerie-sammlung
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q111095531
   created:
     - accessed: 2026-10-20
       property: P571

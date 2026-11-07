@@ -2,22 +2,40 @@ public_id: 101537
 title_lang: de
 title: Wasserschlangen I (Freundinnen I)
 names:
-  - Water Serpents I
+  - text: Water Serpents I
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2551417
   - lang: en
     role: translation
     text: The Hydra
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2551417
   - lang: nl
     role: translation
     text: Waterslangen I
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2551417
   - lang: de
     role: original
     text: Wasserschlangen I
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2551417
   - lang: es
     role: translation
     text: Serpientes de agua I
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2551417
   - lang: ru
     role: translation
     text: Водяные змеи I
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2551417
 creator: gustav-klimt
 created: 1906
 materials: [parchment, watercolor paint]
@@ -93,9 +111,6 @@ provenance:
         source: belvedere-sammlung-online
         accessed: 2026-10-04
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2551417
   created:
     - accessed: 2026-10-20
       property: P571

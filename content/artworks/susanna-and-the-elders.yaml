@@ -5,27 +5,51 @@ names:
   - lang: en
     role: original
     text: Susanna and the Elders
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q3978277
   - lang: fr
     role: original
     text: Suzanne au bain
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q3978277
   - lang: fr
     role: original
     text: Suzanne et les Vieillards
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q3978277
   - lang: it
     role: translation
     text: Susanna e i vecchioni
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q3978277
   - lang: es
     role: translation
     text: Susana y los viejos
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q3978277
   - lang: ja
     role: translation
     text: スザンナと長老たち
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q3978277
   - lang: zh
     role: translation
     text: 苏撒拿和长老 (丁托列托)
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q3978277
   - lang: ru
     role: translation
     text: Сусанна и старцы
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q3978277
 creator: jacopo-tintoretto
 created: 1555/1556
 created_label: c. 1550s
@@ -87,9 +111,6 @@ provenance:
         source: khm-125-jahre
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q3978277
   created:
     - accessed: 2026-10-19
       property: P571

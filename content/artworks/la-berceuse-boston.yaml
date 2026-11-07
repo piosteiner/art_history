@@ -5,6 +5,9 @@ names:
   - lang: de
     role: translation
     text: Porträt der Augustine Roulin (La Berceuse)
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q20630411
 parent: la-berceuse
 part_number: "4"
 creator: vincent-van-gogh
@@ -162,9 +165,6 @@ numbers:
         property: P528
         wikidata: Q20630411
 sources:
-  names:
-    - accessed: 2026-10-30
-      wikidata: Q20630411
   medium:
     - url: https://collections.mfa.org/objects/33277
       source: mfa-lullaby-la-berceuse-48-548

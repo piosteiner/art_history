@@ -17,6 +17,7 @@ kind: museum
 place: tokyo
 location: [139.74333, 35.66694]
 website_url: https://www.shukokan.org/
+collection_url: https://www.shukokan.org/collection/
 wikidata_id: Q3329598
 metadata:
   sources: [Wikidata Q3329598 (retrieved 2026-11-01)]

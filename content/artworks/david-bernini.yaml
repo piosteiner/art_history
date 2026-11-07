@@ -5,15 +5,27 @@ names:
   - lang: en
     role: original
     text: David
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q766487
   - lang: ja
     role: translation
     text: ダビデ像 (ベルニーニ)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q766487
   - lang: zh
     role: translation
     text: 大衛
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q766487
   - lang: ru
     role: translation
     text: Давид
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q766487
 creator: gian-lorenzo-bernini
 created: 1623/1624
 materials: [marble]
@@ -76,9 +88,6 @@ provenance:
 identifiers:
   gnd: "1151913855"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q766487
   created:
     - url: https://www.collezionegalleriaborghese.it/opere/david
       source: galleria-borghese-collezione

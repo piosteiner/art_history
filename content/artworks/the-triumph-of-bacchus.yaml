@@ -5,27 +5,67 @@ names:
   - lang: en
     role: alternative
     text: The Triumph of Bacchus
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
   - lang: fr
     role: translation
     text: Le Triomphe de Bacchus
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
   - lang: de
     role: translation
     text: Der Triumph des Bacchus
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
   - lang: it
     role: translation
     text: Trionfo di Bacco
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
   - lang: es
     role: translation
     text: El triunfo de Baco
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
   - lang: ja
     role: translation
     text: バッカスの勝利
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
   - lang: zh
     role: translation
     text: 酒神巴庫斯
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
   - lang: ru
     role: translation
     text: Триумф Бахуса
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
 creator: diego-velazquez
 created: 1628/1629
 kind: oil painting
@@ -87,11 +127,6 @@ identifiers:
   viaf: "178339097"
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
-      source: museo-del-prado-coleccion
-      accessed: 2024-06-03
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
       source: museo-del-prado-coleccion

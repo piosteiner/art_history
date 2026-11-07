@@ -2,28 +2,52 @@ public_id: 102057
 title_lang: it
 title: Venere e Amore che reca il favo di miele
 names:
-  - Venus with Cupid the Honey Thief
+  - text: Venus with Cupid the Honey Thief
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q115826047
   - lang: nl
     role: translation
     text: Venus en Cupido de honing dief
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q115826047
   - lang: fr
     role: translation
     text: Vénus avec Cupidon voleur de miel
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q115826047
   - lang: de
     role: translation
     text: Venus und Amor mit einer Wabe
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q115826047
   - lang: it
     role: translation
     text: Venere e Amore che reca il favo di miele
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q115826047
   - lang: es
     role: translation
     text: Venus y Cupido con un panal de miel
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q115826047
   - lang: zh
     role: translation
     text: 维纳斯与手持蜂巢的丘比特
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q115826047
   - lang: ru
     role: translation
     text: Венера с Амуром мед вор
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q115826047
 creator: lucas-cranach-the-elder
 created: c. 1531
 created_span: uncertain
@@ -94,9 +118,6 @@ provenance:
         source: galleria-borghese-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q115826047
   created:
     - accessed: 2026-10-20
       property: P571

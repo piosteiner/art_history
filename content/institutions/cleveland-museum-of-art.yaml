@@ -2,6 +2,7 @@ public_id: 113422
 name: Cleveland Museum of Art
 kind: museum
 founded: 1913
+collection_url: https://www.clevelandart.org/art/collection/search
 wikidata_id: Q657415
 metadata:
   sources: [Wikidata Q657415 (retrieved 2026-11-03)]

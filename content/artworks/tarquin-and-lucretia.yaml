@@ -2,14 +2,26 @@ public_id: 101664
 title_lang: de
 title: Tarquinius und Lucretia
 names:
-  - Tarquinius Sextus and Lucretia
-  - Tarquinius and Lucretia
+  - text: Tarquinius Sextus and Lucretia
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q106130077
+  - text: Tarquinius and Lucretia
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q106130077
   - lang: en
     role: translation
     text: Tarquin and Lucretia
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q106130077
   - lang: it
     role: translation
     text: Tarquinio e Lucrezia
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q106130077
 creator: titian
 created: 1572/1576
 created_label: c. 1570s
@@ -48,9 +60,6 @@ provenance:
         source: akademie-sammlung-online
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q106130077
   created:
     - accessed: 2026-10-20
       property: P571

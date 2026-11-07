@@ -1,0 +1,26 @@
+public_id: 116508
+title_lang: en
+title: Afro Samurai
+names:
+  - lang: ja
+    role: original
+    text: アフロサムライ
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q115794785
+creator: fuminori-kizaki
+created: 2007
+kind: anime
+wikidata_id: Q115794785
+metadata:
+  sources: [Wikidata Q115794785 (retrieved 2026-11-06)]
+sources:
+  kind:
+    - property: P31
+      wikidata: Q115794785
+  created:
+    - property: P580
+      wikidata: Q115794785
+  creator:
+    - property: P57
+      wikidata: Q115794785

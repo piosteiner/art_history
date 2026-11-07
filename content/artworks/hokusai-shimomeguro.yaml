@@ -5,17 +5,35 @@ names:
   - lang: ja
     role: original
     text: 下目黒
-  - Shimo-Meguro
-  - Shimo Meguro
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173410
+  - text: Shimo-Meguro
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173410
+  - text: Shimo Meguro
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173410
   - lang: en
     role: original
     text: Shimomeguro
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173410
   - lang: es
     role: translation
     text: Meguro meridional
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173410
   - lang: ja
     role: original
     text: 富嶽三十六景 下目黒
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173410
 parent: thirty-six-views-of-mount-fuji
 part_number: "25"
 creator: katsushika-hokusai
@@ -49,9 +67,6 @@ images:
     license: Public domain
     credit: The Metropolitan Museum of Art
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173410
   parent:
     - accessed: 2026-11-03
       property: P179

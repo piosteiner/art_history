@@ -5,39 +5,75 @@ names:
   - lang: en
     role: original
     text: The Kiss
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q698487
   - lang: pl
     role: original
     text: Pocałunek
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q698487
   - lang: ru
     role: original
     text: Поцелуй
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q698487
   - lang: en
     role: original
     text: The Kiss (Klimt)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q698487
   - lang: nl
     role: translation
     text: De kus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q698487
   - lang: fr
     role: translation
     text: Le Baiser
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q698487
   - lang: de
     role: original
     text: Der Kuss
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q698487
   - lang: it
     role: translation
     text: Il bacio
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q698487
   - lang: es
     role: translation
     text: El beso
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q698487
   - lang: ja
     role: translation
     text: 接吻
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q698487
   - lang: zh
     role: translation
     text: 吻
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q698487
   - lang: ko
     role: translation
     text: 키스
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q698487
 creator: gustav-klimt
 created: 1907/1908
 created_label: c. 1907
@@ -93,9 +129,6 @@ identifiers:
   gnd: "1046598198"
   viaf: "306270035"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q698487
   created:
     - accessed: 2026-10-20
       property: P571

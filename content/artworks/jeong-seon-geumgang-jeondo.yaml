@@ -1,13 +1,22 @@
 public_id: 108303
 title: Complete View of the Diamond Mountains
 names:
-  - Geumgang jeondo
+  - text: Geumgang jeondo
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q5554841
   - lang: zh
     role: translation
     text: 金刚全图
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q5554841
   - lang: ko
     role: translation
     text: 정선 필 금강전도
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q5554841
 creator: jeong-seon
 created: 1734
 kind: kakemono
@@ -39,9 +48,6 @@ sources:
   kind:
     - source: portal-2000
       locator: p. 131, fig. 68
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q5554841
   medium:
     - source: portal-2000
       locator: p. 131, fig. 68

@@ -7,6 +7,7 @@ place: berlin
 location: [13.36778, 52.50694]
 address: Potsdamer Straße 50, Berlin
 website_url: http://www.smb.museum/museen-und-einrichtungen/neue-nationalgalerie/home.html
+collection_url: https://search.smb.museum/?sammlungen=Nationalgalerie
 wikidata_id: Q32659772
 metadata:
   sources: [Wikidata Q32659772 (retrieved 2026-10-27)]

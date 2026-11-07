@@ -5,30 +5,57 @@ names:
   - lang: en
     role: translation
     text: The Coronation of Napoleon
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1231009
   - lang: nl
     role: translation
     text: De kroning van Napoleon
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1231009
   - lang: fr
     role: original
     text: Le Sacre de Napoléon
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1231009
   - lang: it
     role: translation
     text: L'incoronazione di Napoleone
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1231009
   - lang: es
     role: translation
     text: La coronación de Napoleón
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1231009
   - lang: ja
     role: translation
     text: ナポレオン一世の戴冠式と皇妃ジョゼフィーヌの戴冠
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1231009
   - lang: zh
     role: translation
     text: 拿破崙加冕
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1231009
   - lang: ko
     role: translation
     text: 나폴레옹 1세의 대관식
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1231009
   - lang: ru
     role: translation
     text: Коронация Наполеона
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1231009
 creator: jacques-louis-david
 created: 1805/1807
 materials: [oil paint, canvas]
@@ -90,9 +117,6 @@ numbers:
     institution: department-of-paintings-of-the-louvre
     label: former inventory number (Musée royal)
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1231009
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010065720
       source: louvre-collections

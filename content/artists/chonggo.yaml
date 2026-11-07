@@ -1,0 +1,19 @@
+public_id: 116605
+name_lang: ko
+name: Chŏnggo
+names:
+  - lang: ko
+    role: original
+    text: 총고
+  - lang: ko-Hani
+    role: original
+    text: 聰古
+  - Chong-go
+  - Ch'onggo
+active: 1340/1341
+biography_md: "A Buddhist monk of Goryeo, probably a professional sutra scribe: he wrote the [[artwork/bm-amitabha-sutra-frontispiece]] in 1341 and a manuscript of the Lotus Sutra in 1340 (Saga Prefectural Museum, Japan). [[source/british-museum-1983-1008-0-1|Curator's comments, NRICH 2016 catalogue entry]]"
+sources:
+  active:
+    - source: british-museum-1983-1008-0-1
+      locator: Curator's comments, NRICH 2016 catalogue entry
+      accessed: 2026-11-06

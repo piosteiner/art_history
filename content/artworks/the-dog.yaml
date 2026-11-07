@@ -5,38 +5,103 @@ names:
   - lang: es
     role: alternative
     text: El perro
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
   - lang: es
     role: original
     text: Guy Eats Pigs
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
   - lang: hu
     role: original
     text: A kutya
-  - Perro semihundido
-  - Half-Buried Dog
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
+  - text: Perro semihundido
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
+  - text: Half-Buried Dog
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
   - lang: en
     role: translation
     text: The Dog
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
   - lang: fr
     role: translation
     text: Le Chien
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
   - lang: de
     role: translation
     text: Hund
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
   - lang: it
     role: translation
     text: Cane interrato nella rena
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
   - lang: ja
     role: translation
     text: 犬 （ゴヤ)
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
   - lang: zh
     role: translation
     text: 狗
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
   - lang: ko
     role: translation
     text: 개
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
   - lang: ru
     role: translation
     text: Собака
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
 parent: black-paintings
 creator: francisco-goya
 created: 1820/1823
@@ -155,11 +220,6 @@ identifiers:
   viaf: "293755261"
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
-      source: museo-del-prado-coleccion
-      accessed: 2026-04-18
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
       source: museo-del-prado-coleccion

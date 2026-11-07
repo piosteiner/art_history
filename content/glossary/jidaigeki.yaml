@@ -1,0 +1,40 @@
+public_id: 116563
+name: jidaigeki
+names:
+  - text: Samurai drama
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q629917
+  - lang: fr
+    role: translation
+    text: Jidai-geki
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q629917
+  - lang: ja
+    role: translation
+    text: 時代劇
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q629917
+  - lang: ko
+    role: translation
+    text: 시대극
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q629917
+  - lang: ru
+    role: translation
+    text: дзидайгэки
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q629917
+category: performing arts
+definition: Japanese film, TV, games, and theatre genre
+wikidata_id: Q629917
+metadata:
+  sources: [Wikidata Q629917 (retrieved 2026-11-06)]
+sources:
+  definition:
+    - accessed: 2026-11-06
+      wikidata: Q629917

@@ -5,27 +5,51 @@ names:
   - lang: nl
     role: translation
     text: Zeven werken van barmhartigheid
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2626595
   - lang: fr
     role: translation
     text: Les Sept Œuvres de miséricorde
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2626595
   - lang: de
     role: translation
     text: Die sieben Werke der Barmherzigkeit
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2626595
   - lang: it
     role: translation
     text: Sette opere di Misericordia
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2626595
   - lang: es
     role: translation
     text: Siete obras de misericordia
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2626595
   - lang: ja
     role: translation
     text: 慈悲の七つの行い (カラヴァッジョ)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2626595
   - lang: zh
     role: translation
     text: 七件善事
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2626595
   - lang: ru
     role: translation
     text: Семь деяний милосердия
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2626595
 creator: caravaggio
 created: 1606/1607
 materials: [oil paint, canvas]
@@ -65,9 +89,6 @@ provenance:
 identifiers:
   gnd: 4417394-5
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2626595
   creator:
     - accessed: 2026-10-20
       property: P170

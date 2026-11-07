@@ -5,9 +5,15 @@ names:
   - lang: en
     role: original
     text: Self-Portrait in Yellow Vest, 1914
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q18684899
   - lang: en
     role: original
     text: Self-Portrait in Yellow Vest
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q18684899
 creator: egon-schiele
 created: 1914
 materials: [gouache paint, pencil]
@@ -45,9 +51,6 @@ provenance:
         source: albertina-sammlungen-online
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q18684899
   created:
     - accessed: 2026-10-19
       property: P571

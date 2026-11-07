@@ -1,0 +1,12 @@
+public_id: 116572
+name: Xu Yang
+names:
+  - lang: zh
+    role: original
+    text: 徐揚
+birth: 1712
+wikidata_id: Q16228969
+sources:
+  birth:
+    - property: P569
+      wikidata: Q16228969

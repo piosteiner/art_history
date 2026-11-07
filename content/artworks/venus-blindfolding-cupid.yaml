@@ -5,24 +5,45 @@ names:
   - lang: en
     role: translation
     text: Venus Blindfolding Cupid
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q7920573
   - lang: nl
     role: translation
     text: Venus blinddoekt Cupido
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q7920573
   - lang: fr
     role: translation
     text: Vénus bandant les yeux de Cupidon
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q7920573
   - lang: de
     role: translation
     text: Venus verbindet Cupid die Augen
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q7920573
   - lang: es
     role: translation
     text: Venus vendando al Amor
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q7920573
   - lang: ja
     role: translation
     text: キューピッドに目隠しをするヴィーナス
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q7920573
   - lang: zh
     role: translation
     text: 維納斯蒙住邱比特的眼睛
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q7920573
 creator: titian
 created: 1555/1570
 created_label: c. 1560s
@@ -95,9 +116,6 @@ provenance:
         source: galleria-borghese-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q7920573
   created:
     - url: https://www.collezionegalleriaborghese.it/opere/venere-che-benda-amore
       source: galleria-borghese-collezione

@@ -5,24 +5,45 @@ names:
   - lang: en
     role: original
     text: Madonna of the Rosary
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698228
   - lang: nl
     role: translation
     text: Rozenkransmadonna
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698228
   - lang: fr
     role: translation
     text: La Madone du rosaire
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698228
   - lang: it
     role: translation
     text: Madonna del Rosario
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698228
   - lang: ja
     role: translation
     text: ロザリオの聖母
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698228
   - lang: zh
     role: translation
     text: 玫瑰圣母 (卡拉瓦乔)
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698228
   - lang: ru
     role: translation
     text: Мадонна с чётками
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q698228
 creator: caravaggio
 created: 1607
 materials: [oil paint, canvas]
@@ -93,9 +114,6 @@ provenance:
 identifiers:
   gnd: "1228102368"
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q698228
   created:
     - accessed: 2026-10-19
       property: P571

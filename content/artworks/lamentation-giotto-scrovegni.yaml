@@ -2,25 +2,46 @@ public_id: 102142
 title_lang: it
 title: Compianto sul Cristo morto
 names:
-  - The Deposition
+  - text: The Deposition
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2067212
   - lang: nl
     role: translation
     text: La Déposition de croix
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2067212
   - lang: de
     role: translation
     text: Die Beweinung Christi
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2067212
   - lang: it
     role: translation
     text: Compianto sul Cristo morto
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2067212
   - lang: es
     role: translation
     text: Lamentación sobre Cristo muerto
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2067212
   - lang: ja
     role: translation
     text: キリストの哀悼 (ジョット)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2067212
   - lang: zh
     role: translation
     text: 哀悼基督 (乔托)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2067212
 creator: giotto
 created: 1303/1305
 kind: fresco
@@ -84,9 +105,6 @@ sources:
   kind:
     - accessed: 2026-10-20
       property: P186
-      wikidata: Q2067212
-  names:
-    - accessed: 2026-10-20
       wikidata: Q2067212
   creator:
     - accessed: 2026-10-20

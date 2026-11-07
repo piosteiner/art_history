@@ -5,27 +5,67 @@ names:
   - lang: en
     role: alternative
     text: Apollo in the Forge of Vulcan
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603225401/https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
   - lang: fr
     role: translation
     text: La Forge de Vulcain
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603225401/https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
   - lang: de
     role: translation
     text: Apollo in der Schmiede Vulkans
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603225401/https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
   - lang: it
     role: translation
     text: Fucina di Vulcano
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603225401/https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
   - lang: es
     role: translation
     text: La fragua de Vulcano
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603225401/https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
   - lang: ja
     role: translation
     text: ウルカヌスの鍛冶場
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603225401/https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
   - lang: zh
     role: translation
     text: 火神的鍛造廠
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603225401/https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
   - lang: ru
     role: translation
     text: Аполлон в кузнице Вулкана
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603225401/https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
 creator: diego-velazquez
 created: 1630
 kind: oil painting
@@ -86,11 +126,6 @@ provenance:
         accessed: 2024-06-03
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603225401/https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab"
-      source: museo-del-prado-coleccion
-      accessed: 2024-06-03
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603225401/https://www.museodelprado.es/coleccion/obra-de-arte/wd/84a0240d-b41a-404d-8433-6e4e2efd21ab"
       source: museo-del-prado-coleccion

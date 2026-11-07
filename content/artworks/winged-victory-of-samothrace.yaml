@@ -2,39 +2,84 @@ public_id: 101689
 title_lang: fr
 title: Victoire de Samothrace
 names:
-  - Victory of Samothrace
-  - Nike of Samothrace
-  - Winged Nike of Samothrace
-  - Winged Victory
-  - Winged Victory of Samothrace (Nike of Samothrace)
-  - Winged Victory of Samothrace
+  - text: Victory of Samothrace
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q216402
+  - text: Nike of Samothrace
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q216402
+  - text: Winged Nike of Samothrace
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q216402
+  - text: Winged Victory
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q216402
+  - text: Winged Victory of Samothrace (Nike of Samothrace)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q216402
+  - text: Winged Victory of Samothrace
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q216402
   - lang: nl
     role: translation
     text: Nikè van Samothrake
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q216402
   - lang: fr
     role: translation
     text: Victoire de Samothrace
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q216402
   - lang: de
     role: translation
     text: Nike von Samothrake
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q216402
   - lang: it
     role: translation
     text: Nike di Samotracia
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q216402
   - lang: es
     role: translation
     text: Victoria alada de Samotracia
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q216402
   - lang: ja
     role: translation
     text: サモトラケのニケ
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q216402
   - lang: zh
     role: translation
     text: 薩莫特拉斯的勝利女神
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q216402
   - lang: ko
     role: translation
     text: 사모트라케의 니케
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q216402
   - lang: ru
     role: translation
     text: Ника Самофракийская
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q216402
 attribution_label: Unknown Hellenistic sculptor
 created: c. 200 BCE–175 BCE
 created_span: uncertain
@@ -107,9 +152,6 @@ sources:
       note: "“une statue représentant la déesse Niké (la Victoire), dont il manque la tête et les bras” · “1891 : Champoiseau retourne une troisième fois à Samothrace pour essayer de retrouver la tête de la Victoire, sans succès.”"
       source: wikipedia-fr-victoire-de-samothrace
       accessed: 2026-10-30
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q216402
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010252531
       source: louvre-collections

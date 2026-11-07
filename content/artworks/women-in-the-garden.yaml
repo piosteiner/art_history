@@ -5,30 +5,57 @@ names:
   - lang: en
     role: translation
     text: Women in the Garden
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2734892
   - lang: nl
     role: translation
     text: Vrouwen in de tuin
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2734892
   - lang: de
     role: translation
     text: Frauen im Garten
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2734892
   - lang: it
     role: translation
     text: Donne in giardino
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2734892
   - lang: es
     role: translation
     text: Mujeres en el jardín
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2734892
   - lang: ja
     role: translation
     text: 庭の女たち
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2734892
   - lang: zh
     role: translation
     text: 花园中的女人
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2734892
   - lang: ko
     role: translation
     text: 정원의 여인들
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2734892
   - lang: ru
     role: translation
     text: Женщины в саду
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2734892
 creator: claude-monet
 created: c. 1866
 created_span: uncertain
@@ -142,9 +169,6 @@ provenance:
         source: musee-d-orsay-collections
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2734892
   created:
     - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-au-jardin-807
       source: musee-d-orsay-collections

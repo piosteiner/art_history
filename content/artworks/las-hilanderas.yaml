@@ -5,34 +5,99 @@ names:
   - lang: es
     role: alternative
     text: Las hilanderas o la fábula de Aracne o los afiladores
-  - La fábula de Aracne
-  - The Fable of Arachne
-  - La fabula de Aracne
-  - perfect too see
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+        source: museo-del-prado-coleccion
+        accessed: 2024-07-21
+  - text: La fábula de Aracne
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+        source: museo-del-prado-coleccion
+        accessed: 2024-07-21
+  - text: The Fable of Arachne
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+        source: museo-del-prado-coleccion
+        accessed: 2024-07-21
+  - text: La fabula de Aracne
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+        source: museo-del-prado-coleccion
+        accessed: 2024-07-21
+  - text: perfect too see
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+        source: museo-del-prado-coleccion
+        accessed: 2024-07-21
   - lang: en
     role: translation
     text: Las Hilanderas
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+        source: museo-del-prado-coleccion
+        accessed: 2024-07-21
   - lang: fr
     role: translation
     text: Les Fileuses
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+        source: museo-del-prado-coleccion
+        accessed: 2024-07-21
   - lang: de
     role: translation
     text: Die Spinnerinnen
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+        source: museo-del-prado-coleccion
+        accessed: 2024-07-21
   - lang: it
     role: translation
     text: Filatrici
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+        source: museo-del-prado-coleccion
+        accessed: 2024-07-21
   - lang: ja
     role: translation
     text: アラクネの寓話
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+        source: museo-del-prado-coleccion
+        accessed: 2024-07-21
   - lang: zh
     role: translation
     text: 纺纱女工
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+        source: museo-del-prado-coleccion
+        accessed: 2024-07-21
   - lang: ko
     role: translation
     text: 실 잣는 여인들
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+        source: museo-del-prado-coleccion
+        accessed: 2024-07-21
   - lang: ru
     role: translation
     text: Пряхи
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+        source: museo-del-prado-coleccion
+        accessed: 2024-07-21
 creator: diego-velazquez
 created: 1655/1660
 kind: oil painting
@@ -109,11 +174,6 @@ identifiers:
   viaf: "218110279"
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
-      source: museo-del-prado-coleccion
-      accessed: 2024-07-21
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
       source: museo-del-prado-coleccion

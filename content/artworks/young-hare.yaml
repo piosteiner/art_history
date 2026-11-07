@@ -5,24 +5,45 @@ names:
   - lang: en
     role: original
     text: Hare
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699388
   - lang: en
     role: original
     text: Young Hare
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699388
   - lang: nl
     role: translation
     text: Haas
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699388
   - lang: fr
     role: translation
     text: Le Lièvre
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699388
   - lang: es
     role: translation
     text: Liebre joven
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699388
   - lang: ko
     role: translation
     text: 어린 토끼
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699388
   - lang: ru
     role: translation
     text: Заяц (Дюрер)
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q699388
 creator: albrecht-durer
 created: 1502
 materials: [gouache paint, paper, watercolor paint]
@@ -134,9 +155,6 @@ provenance:
         source: aeiou-albertina
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q699388
   created:
     - accessed: 2026-10-19
       property: P571

@@ -5,29 +5,59 @@ names:
   - lang: en
     role: original
     text: The Painter's Studio
-  - L'Atelier de l'artiste
-  - The Painter’s Studio
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1167178
+  - text: L'Atelier de l'artiste
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1167178
+  - text: The Painter’s Studio
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1167178
   - lang: de
     role: translation
     text: Das Atelier des Künstlers
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1167178
   - lang: it
     role: translation
     text: L'atelier dell'artista
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1167178
   - lang: es
     role: translation
     text: El taller del pintor
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1167178
   - lang: ja
     role: translation
     text: 画家のアトリエ
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1167178
   - lang: zh
     role: translation
     text: 畫家的工作室
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1167178
   - lang: ko
     role: translation
     text: 화가의 아틀리에
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1167178
   - lang: ru
     role: translation
     text: Мастерская художника
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1167178
 creator: gustave-courbet
 created: 1854/1855
 materials: [oil paint, canvas]
@@ -143,9 +173,6 @@ provenance:
         source: musee-d-orsay-collections
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1167178
   created:
     - url: https://www.musee-orsay.fr/fr/oeuvres/latelier-du-peintre-927
       source: musee-d-orsay-collections

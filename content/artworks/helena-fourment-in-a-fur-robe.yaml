@@ -5,24 +5,45 @@ names:
   - lang: en
     role: original
     text: Helena Fourment in a Fur Robe
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q3788158
   - lang: fr
     role: translation
     text: Hélène Fourment sortant du bain
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q3788158
   - lang: de
     role: translation
     text: Helena Fourment ("Das Pelzchen")
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q3788158
   - lang: it
     role: translation
     text: Hélène Fourment esce dal bagno
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q3788158
   - lang: es
     role: translation
     text: Helena Fourment saliendo del baño
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q3788158
   - lang: ja
     role: translation
     text: 毛皮をまとったエレーヌ・フールマン
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q3788158
   - lang: ru
     role: translation
     text: Шубка (картина Рубенса)
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q3788158
 creator: peter-paul-rubens
 created: 1638
 materials: [oil paint, panel]
@@ -91,9 +112,6 @@ provenance:
         source: khm-125-jahre
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q3788158
   created:
     - accessed: 2026-10-19
       property: P571

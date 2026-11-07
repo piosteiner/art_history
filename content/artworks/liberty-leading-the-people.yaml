@@ -5,18 +5,33 @@ names:
   - lang: en
     role: original
     text: Liberty Leading the People
+    sources:
+      - accessed: 2026-10-21
+        wikidata: Q29530
   - lang: fr
     role: alternative
     text: Une Barricade
+    sources:
+      - accessed: 2026-10-21
+        wikidata: Q29530
   - lang: de
     role: translation
     text: Die Freiheit führt das Volk
+    sources:
+      - accessed: 2026-10-21
+        wikidata: Q29530
   - lang: it
     role: translation
     text: La Libertà che guida il popolo
+    sources:
+      - accessed: 2026-10-21
+        wikidata: Q29530
   - lang: es
     role: translation
     text: La Libertad guiando al pueblo
+    sources:
+      - accessed: 2026-10-21
+        wikidata: Q29530
 creator: eugene-delacroix
 created: 1830
 created_label: c. 1830
@@ -113,9 +128,6 @@ sources:
     - url: https://collections.louvre.fr/en/ark:/53355/cl010065872
       source: louvre-collections
       accessed: 2026-10-21
-  names:
-    - accessed: 2026-10-21
-      wikidata: Q29530
   medium:
     - url: https://collections.louvre.fr/en/ark:/53355/cl010065872
       source: louvre-collections

@@ -5,34 +5,67 @@ names:
   - lang: en
     role: original
     text: The Birth of Venus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151047
   - lang: pl
     role: original
     text: Narodziny Wenus
-  - Birth of Venus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151047
+  - text: Birth of Venus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151047
   - lang: nl
     role: translation
     text: De Geboorte van Venus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151047
   - lang: fr
     role: translation
     text: La Naissance de Vénus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151047
   - lang: de
     role: translation
     text: Die Geburt der Venus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151047
   - lang: es
     role: translation
     text: El nacimiento de Venus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151047
   - lang: ja
     role: translation
     text: ヴィーナスの誕生
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151047
   - lang: zh
     role: translation
     text: 维纳斯的诞生
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151047
   - lang: ko
     role: translation
     text: 비너스의 탄생
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151047
   - lang: ru
     role: translation
     text: Рождение Венеры
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q151047
 creator: sandro-botticelli
 created: c. 1485
 created_span: uncertain
@@ -101,9 +134,6 @@ identifiers:
   gnd: 4485048-7
   viaf: "179550380"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q151047
   created:
     - accessed: 2026-10-20
       property: P571

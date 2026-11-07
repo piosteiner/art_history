@@ -5,21 +5,39 @@ names:
   - lang: fr
     role: translation
     text: L'Infante Marguerite en bleu
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2264914
   - lang: de
     role: translation
     text: Infantin Margarita Teresa (1651-1673) in blauem Kleid
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2264914
   - lang: it
     role: translation
     text: Ritratto dell'infanta Margherita in azzurro
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2264914
   - lang: es
     role: translation
     text: La Infanta Margarita en azul
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2264914
   - lang: ja
     role: translation
     text: 青いドレスのマルガリータ王女
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2264914
   - lang: zh
     role: translation
     text: 藍色洋裝的馬佳莉塔·德雷莎公主
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2264914
 creator: diego-velazquez
 created: 1659
 materials: [oil paint, canvas]
@@ -79,9 +97,6 @@ provenance:
         source: khm-online-sammlung
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q2264914
   created:
     - accessed: 2026-10-19
       property: P571

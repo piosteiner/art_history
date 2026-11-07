@@ -5,30 +5,57 @@ names:
   - lang: en
     role: translation
     text: Christ Carrying the Cross
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2567058
   - lang: nl
     role: original
     text: De Kruisdraging
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2567058
   - lang: fr
     role: translation
     text: Le Portement de Croix
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2567058
   - lang: de
     role: translation
     text: Die Kreuztragung Christi
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2567058
   - lang: it
     role: translation
     text: Salita al Calvario
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2567058
   - lang: es
     role: translation
     text: Cristo con la Cruz a cuestas
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2567058
   - lang: ja
     role: translation
     text: 十字架を担うキリスト
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2567058
   - lang: ko
     role: translation
     text: 십자가를 지고 가는 그리스도 (보스, 빈)
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2567058
   - lang: ru
     role: translation
     text: Несение креста
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q2567058
 creator: hieronymus-bosch
 created: 1490/1510
 materials: [oak, oil paint]
@@ -81,9 +108,6 @@ provenance:
         source: khm-online-sammlung
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q2567058
   created:
     - accessed: 2026-10-19
       property: P571

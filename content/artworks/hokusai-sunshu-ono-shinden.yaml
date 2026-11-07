@@ -5,19 +5,37 @@ names:
   - lang: ja
     role: original
     text: 駿州大野新田
-  - Sunshū Ōno-shinden
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173434
+  - text: Sunshū Ōno-shinden
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173434
   - lang: en
     role: original
     text: Ōno Shinden in Suruga Province
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173434
   - lang: fr
     role: translation
     text: Ono Shinden dans la province de Suruga
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173434
   - lang: es
     role: translation
     text: Ōno Shinden en la provincia de Suruga
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173434
   - lang: ja
     role: original
     text: 富嶽三十六景 駿州大野新田
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173434
 parent: thirty-six-views-of-mount-fuji
 part_number: "43"
 creator: katsushika-hokusai
@@ -47,9 +65,6 @@ images:
     license: Public domain
     credit: Art Institute of Chicago, Clarence Buckingham Collection
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173434
   parent:
     - accessed: 2026-11-03
       property: P179

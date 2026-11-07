@@ -4,9 +4,15 @@ names:
   - lang: fr
     role: translation
     text: Mercure passant devant le Soleil
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28149933
   - lang: it
     role: translation
     text: Mercurio passa davanti il Sole
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q28149933
 creator: giacomo-balla
 created: 1914
 medium: Tempera auf Papier auf Leinwand
@@ -30,9 +36,6 @@ provenance:
         source: mumok-onlinesammlung
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q28149933
   creator:
     - accessed: 2026-10-20
       property: P170

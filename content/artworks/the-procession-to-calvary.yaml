@@ -5,24 +5,45 @@ names:
   - lang: en
     role: translation
     text: The Procession to Calvary
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q686107
   - lang: fr
     role: translation
     text: Le Portement de Croix
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q686107
   - lang: de
     role: original
     text: Die Kreuztragung Christi
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q686107
   - lang: it
     role: translation
     text: Salita al Calvario
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q686107
   - lang: es
     role: translation
     text: La Procesión al Calvario
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q686107
   - lang: ja
     role: translation
     text: ゴルゴタの丘への行進
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q686107
   - lang: ru
     role: translation
     text: Путь на Голгофу
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q686107
 creator: pieter-brueghel-the-elder
 created: 1564
 materials: [oil paint, oak panel]
@@ -108,9 +129,6 @@ provenance:
         source: khm-125-jahre
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q686107
   created:
     - accessed: 2026-10-19
       property: P571

@@ -2,30 +2,60 @@ public_id: 102045
 title_lang: it
 title: Autoritratto in veste di Bacco (Bacchino malato)
 names:
-  - Bacchino Malato
-  - sick Bacchus
-  - Young Sick Bacchus
+  - text: Bacchino Malato
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2293936
+  - text: sick Bacchus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2293936
+  - text: Young Sick Bacchus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2293936
   - lang: fr
     role: translation
     text: Le Petit Bacchus malade
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2293936
   - lang: de
     role: translation
     text: Selbstporträt als Bacchus
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2293936
   - lang: it
     role: translation
     text: Autoritratto in veste di bacco (Bacchino malato)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2293936
   - lang: es
     role: translation
     text: Baco enfermo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2293936
   - lang: ja
     role: translation
     text: 病めるバッカス
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2293936
   - lang: zh
     role: translation
     text: 生病的巴克斯
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2293936
   - lang: ru
     role: translation
     text: Больной Вакх
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2293936
 creator: caravaggio
 created: c. 1595
 created_span: uncertain
@@ -114,9 +144,6 @@ provenance:
         source: galleria-borghese-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2293936
   created:
     - accessed: 2026-10-20
       property: P571

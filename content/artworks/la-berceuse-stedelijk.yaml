@@ -6,10 +6,19 @@ names:
   - lang: nl
     role: original
     text: Augustine Roulin (La berceuse)
-  - Portrait of Madame Roulin
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q18689442
+  - text: Portrait of Madame Roulin
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q18689442
   - lang: en
     role: original
     text: La Berceuse
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q18689442
 parent: la-berceuse
 part_number: "5"
 creator: vincent-van-gogh
@@ -79,9 +88,6 @@ numbers:
         property: P528
         wikidata: Q18689442
 sources:
-  names:
-    - accessed: 2026-10-30
-      wikidata: Q18689442
   parent:
     - accessed: 2026-10-30
       property: P179

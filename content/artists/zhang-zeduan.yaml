@@ -1,0 +1,18 @@
+public_id: 116486
+name: Zhang Zeduan
+given_name: Zhang
+family_name: Zeduan
+birth: 1085
+death: 1145
+wikidata_id: Q197342
+metadata:
+  sources: [Wikidata Q197342 (retrieved 2026-11-06)]
+sources:
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q197342
+  death:
+    - accessed: 2026-11-06
+      property: P570
+      wikidata: Q197342

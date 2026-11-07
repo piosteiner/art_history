@@ -5,18 +5,33 @@ names:
   - lang: fr
     role: translation
     text: Vénus Victrix
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1093113
   - lang: it
     role: translation
     text: Paolina Borghese Bonaparte come Venere Vincitrice
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1093113
   - lang: ja
     role: translation
     text: ウェヌス・ウィクトリクス
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1093113
   - lang: zh
     role: translation
     text: 寶琳娜·博爾蓋塞
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1093113
   - lang: ru
     role: translation
     text: Венера Победительница
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1093113
 creator: antonio-canova
 created: 1804/1808
 created_label: c. 1800s
@@ -75,9 +90,6 @@ provenance:
         source: galleria-borghese-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1093113
   created:
     - accessed: 2026-10-20
       property: P571

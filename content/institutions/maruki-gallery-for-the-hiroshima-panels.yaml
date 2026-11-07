@@ -1,0 +1,11 @@
+public_id: 116492
+name: Maruki Gallery for the Hiroshima Panels
+kind: museum
+wikidata_id: Q7739750
+metadata:
+  sources: [Wikidata Q7739750 (retrieved 2026-11-06)]
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q7739750

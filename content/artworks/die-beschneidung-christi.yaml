@@ -5,9 +5,15 @@ names:
   - lang: en
     role: translation
     text: Circumcision of Christ
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q109316460
   - lang: de
     role: translation
     text: Die Beschneidung Christi
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q109316460
 creator: peter-paul-rubens
 created: 1605
 kind: oil painting
@@ -58,9 +64,6 @@ provenance:
         source: akademie-gemaeldegalerie-sammlung
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q109316460
   created:
     - accessed: 2026-10-20
       property: P571

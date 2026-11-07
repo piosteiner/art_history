@@ -5,16 +5,31 @@ names:
   - lang: en
     role: original
     text: Adoration of the Trinity
-  - All Saints
+    sources:
+      - accessed: 2026-10-22
+        wikidata: Q688870
+  - text: All Saints
+    sources:
+      - accessed: 2026-10-22
+        wikidata: Q688870
   - lang: fr
     role: translation
     text: L'Adoration de la Sainte Trinité
+    sources:
+      - accessed: 2026-10-22
+        wikidata: Q688870
   - lang: it
     role: translation
     text: Adorazione della Santissima Trinità
+    sources:
+      - accessed: 2026-10-22
+        wikidata: Q688870
   - lang: es
     role: translation
     text: Adoración de la Trinidad
+    sources:
+      - accessed: 2026-10-22
+        wikidata: Q688870
 creator: albrecht-durer
 created: 1511
 kind: painting
@@ -84,9 +99,6 @@ provenance:
         source: khm-125-jahre
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-22
-      wikidata: Q688870
   created:
     - accessed: 2026-10-19
       property: P571

@@ -5,30 +5,57 @@ names:
   - lang: en
     role: original
     text: Holy Trinity
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q977200
   - lang: nl
     role: translation
     text: De Heilige Drie-eenheid
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q977200
   - lang: fr
     role: translation
     text: Trinité
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q977200
   - lang: de
     role: translation
     text: Dreifaltigkeit
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q977200
   - lang: it
     role: translation
     text: Trinità
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q977200
   - lang: es
     role: translation
     text: Trinidad
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q977200
   - lang: ja
     role: translation
     text: 聖三位一体 (マサッチオ)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q977200
   - lang: zh
     role: translation
     text: 聖三位一體
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q977200
   - lang: ru
     role: translation
     text: Троица
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q977200
 creator: masaccio
 created: 1425/1427
 created_label: c. 1420s
@@ -89,9 +116,6 @@ sources:
   kind:
     - accessed: 2026-10-20
       property: P186
-      wikidata: Q977200
-  names:
-    - accessed: 2026-10-20
       wikidata: Q977200
   creator:
     - accessed: 2026-10-20

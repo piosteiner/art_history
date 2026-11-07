@@ -1,10 +1,16 @@
 public_id: 106796
 title: Itsukushima Shrine
 names:
-  - Honden, Heiden and Haiden of the Main Shrine
+  - text: Honden, Heiden and Haiden of the Main Shrine
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107020640
   - lang: ja
     role: translation
     text: 厳島神社本社本殿、幣殿、拝殿
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q107020640
 attribution_label: Anonymous
 created: 1556
 kind: building
@@ -34,9 +40,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: p. 165, fig. 200
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q107020640
   medium:
     - source: history-of-japanese-art
       locator: p. 165, fig. 200

@@ -2,26 +2,56 @@ public_id: 102056
 title_lang: it
 title: La caccia di Diana
 names:
-  - The Hunt of Diana
-  - Diana's Hunt
-  - The hunting of Diana
-  - Diana Hunting
-  - Diana and her Nymphs after the Hunt
+  - text: The Hunt of Diana
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q26038063
+  - text: Diana's Hunt
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q26038063
+  - text: The hunting of Diana
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q26038063
+  - text: Diana Hunting
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q26038063
+  - text: Diana and her Nymphs after the Hunt
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q26038063
   - lang: en
     role: translation
     text: Diana and her Nymphs
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q26038063
   - lang: fr
     role: translation
     text: La Chasse de Diane
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q26038063
   - lang: de
     role: translation
     text: Die Jagd der Diana
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q26038063
   - lang: ja
     role: translation
     text: ディアナの狩猟
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q26038063
   - lang: zh
     role: translation
     text: 黛安娜的狩獵
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q26038063
 creator: domenichino
 created: 1616/1617
 created_label: c. 1610s
@@ -104,9 +134,6 @@ provenance:
         source: galleria-borghese-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q26038063
   created:
     - accessed: 2026-10-20
       property: P571

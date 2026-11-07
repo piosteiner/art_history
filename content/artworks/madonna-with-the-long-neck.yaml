@@ -5,31 +5,61 @@ names:
   - lang: de
     role: original
     text: Madonna mit dem langen Hals
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q867403
   - lang: en
     role: original
     text: Madonna of the Long Neck
-  - Madonna and Child with Angels and St. Jerome
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q867403
+  - text: Madonna and Child with Angels and St. Jerome
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q867403
   - lang: en
     role: original
     text: Madonna with the Long Neck
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q867403
   - lang: fr
     role: translation
     text: La Vierge au long cou
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q867403
   - lang: es
     role: translation
     text: Virgen del cuello largo
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q867403
   - lang: ja
     role: translation
     text: 長い首の聖母
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q867403
   - lang: zh
     role: translation
     text: 長頸聖母
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q867403
   - lang: ko
     role: translation
     text: 목이 긴 성모
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q867403
   - lang: ru
     role: translation
     text: Мадонна с длинной шеей
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q867403
 creator: parmigianino
 created: 1534/1540
 created_label: c. 16th century
@@ -112,9 +142,6 @@ identifiers:
   gnd: 7705830-6
   viaf: "219024326"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q867403
   created:
     - url: https://www.uffizi.it/en/artworks/parmigianino-madonna-long-neck
       source: uffizi-artworks

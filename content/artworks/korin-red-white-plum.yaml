@@ -4,18 +4,33 @@ names:
   - lang: fr
     role: translation
     text: Pruniers blanc et rose en fleurs
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q28154824
   - lang: ja
     role: translation
     text: 紅白梅図
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q28154824
   - lang: zh
     role: translation
     text: 红白梅图屏风
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q28154824
   - lang: ko
     role: translation
     text: 지본금지착색홍백매도
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q28154824
   - lang: ru
     role: translation
     text: Цветение красной и белой сливы
+    sources:
+      - accessed: 2026-11-01
+        wikidata: Q28154824
 creator: ogata-korin
 created: 1710/1716
 kind: byōbu
@@ -44,9 +59,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 315–316, fig. 366
-  names:
-    - accessed: 2026-11-01
-      wikidata: Q28154824
   medium:
     - source: history-of-japanese-art
       locator: pp. 315–316, fig. 366

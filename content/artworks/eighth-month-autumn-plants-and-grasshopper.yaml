@@ -8,15 +8,28 @@ names:
     text: 八月　秋草に螽斯図
     sources:
       - source: history-of-japanese-art
+      - source: shozokan-szk000142-twelve-months
+        locator: picture 8 of 12 (八月　秋草に螽斯図)
+        accessed: 2026-11-03
   - lang: en
     role: translation
     text: August Autumn Plants and Grasshopper
     status: official
     note: the museum’s English title
+    sources:
+      - source: history-of-japanese-art
+      - source: shozokan-szk000142-twelve-months
+        locator: picture 8 of 12 (八月　秋草に螽斯図)
+        accessed: 2026-11-03
   - lang: en
     role: alternative
     text: Ninth Month, from Flowers and Birds of the Twelve Months
     note: so in Mason 2005 (fig. 368); in the museum’s set it is the eighth month (八月)
+    sources:
+      - source: shozokan-szk000142-twelve-months
+        locator: picture 8 of 12 (八月　秋草に螽斯図)
+        accessed: 2026-11-03
+      - source: history-of-japanese-art
 parent: birds-and-flowers-through-the-twelve-months
 part_number: "8"
 creator: sakai-hoitsu
@@ -38,11 +51,6 @@ sources:
   kind:
     - source: history-of-japanese-art
       locator: pp. 316–317, fig. 368
-  names:
-    - source: history-of-japanese-art
-    - source: shozokan-szk000142-twelve-months
-      locator: picture 8 of 12 (八月　秋草に螽斯図)
-      accessed: 2026-11-03
   medium:
     - source: history-of-japanese-art
       locator: pp. 316–317, fig. 368

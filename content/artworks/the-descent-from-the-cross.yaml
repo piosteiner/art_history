@@ -5,36 +5,101 @@ names:
   - lang: en
     role: original
     text: Descent from the Cross (Deposition of Christ)
-  - Deposition of Christ
-  - Descent from the Cross
-  - Descent of Christ from the Cross
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
+  - text: Deposition of Christ
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
+  - text: Descent from the Cross
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
+  - text: Descent of Christ from the Cross
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
   - lang: en
     role: original
     text: The Descent from the Cross
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
   - lang: nl
     role: translation
     text: Kruisafneming
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
   - lang: fr
     role: translation
     text: La Descente de Croix
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
   - lang: de
     role: translation
     text: Kreuzabnahme
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
   - lang: it
     role: translation
     text: Deposizione di Rogier van der Weyden
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
   - lang: es
     role: original
     text: Descendimiento de la cruz
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
   - lang: ja
     role: translation
     text: 十字架降架
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
   - lang: zh
     role: translation
     text: 耶穌卸下十字架
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
   - lang: ru
     role: translation
     text: Снятие с креста
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
 creator: rogier-van-der-weyden
 created: before 1443
 kind: oil painting
@@ -154,11 +219,6 @@ provenance:
         accessed: 2022-09-29
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
-      source: museo-del-prado-coleccion
-      accessed: 2022-09-29
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
       source: museo-del-prado-coleccion

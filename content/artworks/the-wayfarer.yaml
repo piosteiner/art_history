@@ -5,6 +5,9 @@ names:
   - lang: en
     role: original
     text: The Wayfarer
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28797987
 creator: koloman-moser
 created: c. 1914
 created_span: uncertain
@@ -105,9 +108,6 @@ provenance:
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q28797987
   created:
     - accessed: 2026-10-19
       property: P571

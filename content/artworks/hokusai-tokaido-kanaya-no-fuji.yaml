@@ -5,23 +5,47 @@ names:
   - lang: ja
     role: original
     text: 東海道金谷の不二
-  - Tōkaidō Kanaya no Fuji
-  - The Fuji seen from Kanaya on the Tokaido
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173436
+  - text: Tōkaidō Kanaya no Fuji
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173436
+  - text: The Fuji seen from Kanaya on the Tokaido
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173436
   - lang: en
     role: original
     text: The Fuji from Kanaya on the Tokaido
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173436
   - lang: fr
     role: translation
     text: Le Fuji depuis Kanaya dans la région de Tōkaidō
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173436
   - lang: de
     role: translation
     text: Fuji gesehen von Kanaya an der Tokaido-Straße
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173436
   - lang: es
     role: translation
     text: El Fuji desde Kanaya en la Tōkaidō
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173436
   - lang: ja
     role: original
     text: 富嶽三十六景 東海道金谷の不二
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173436
 parent: thirty-six-views-of-mount-fuji
 part_number: "45"
 creator: katsushika-hokusai
@@ -51,9 +75,6 @@ images:
     license: Public domain
     credit: The Metropolitan Museum of Art
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173436
   parent:
     - accessed: 2026-11-03
       property: P179

@@ -1,0 +1,40 @@
+public_id: 116579
+title_lang: en
+title: "The Qianlong Emperor's Southern Inspection Tour, Scroll Four: The Confluence of the Huai and Yellow Rivers"
+names:
+  - lang: en
+    role: alternative
+    text: The Qianlong Emperor Inspecting Water Control Measures at the Convergence of the Huai and Yellow Rivers
+creator: xu-yang
+created: 1770
+kind: handscroll
+medium: Ink and colour on silk
+institution: metropolitan-museum-of-art
+inventory_number: 1984.16a–c
+web_url: https://www.metmuseum.org/art/collection/search/49251
+description_md: "From the set of handscrolls of the [[person/qianlong-emperor]]'s Southern Inspection Tour, the fourth scroll: the confluence of the Huai and Yellow Rivers. [[source/met-1984-16]]"
+relationships:
+  - type: depicts_person
+    to: person/qianlong-emperor
+    sources:
+      - source: met-1984-16
+        accessed: 2026-11-06
+sources:
+  kind:
+    - source: met-1984-16
+      accessed: 2026-11-06
+  medium:
+    - source: met-1984-16
+      accessed: 2026-11-06
+  created:
+    - source: met-1984-16
+      accessed: 2026-11-06
+  creator:
+    - source: met-1984-16
+      accessed: 2026-11-06
+  institution:
+    - source: met-1984-16
+      accessed: 2026-11-06
+  inventory_number:
+    - source: met-1984-16
+      accessed: 2026-11-06

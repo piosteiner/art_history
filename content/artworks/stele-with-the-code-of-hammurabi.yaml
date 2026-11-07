@@ -5,15 +5,27 @@ names:
   - lang: en
     role: original
     text: stele with the code of Hammurabi
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q12397781
   - lang: fr
     role: translation
     text: stèle du code de Hammurabi
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q12397781
   - lang: es
     role: translation
     text: estela con el código de Hammurabi
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q12397781
   - lang: zh
     role: translation
     text: 汉谟拉比法典碑
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q12397781
 attribution_label: Unknown Babylonian sculptor, for King Hammurabi
 created: -1797/-1750
 created_label: c. 1793 BCE
@@ -85,9 +97,6 @@ numbers:
     institution: department-of-near-eastern-antiquities-of-the-louvre
     label: catalogue number
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q12397781
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010174436
       source: louvre-collections

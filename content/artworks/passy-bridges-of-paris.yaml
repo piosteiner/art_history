@@ -1,6 +1,18 @@
 public_id: 101600
 title: Passy, Bridges of Paris
-names: [Les ponts de Paris (Passy), Paysage à Passy, Passy]
+names:
+  - text: Les ponts de Paris (Passy)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q16985268
+  - text: Paysage à Passy
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q16985268
+  - text: Passy
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q16985268
 creator: albert-gleizes
 created: 1912
 medium: Öl auf Leinwand
@@ -28,9 +40,6 @@ provenance:
         source: mumok-onlinesammlung
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q16985268
   created:
     - accessed: 2026-10-20
       property: P571

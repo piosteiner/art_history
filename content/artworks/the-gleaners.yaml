@@ -5,33 +5,63 @@ names:
   - lang: en
     role: original
     text: Gleaners
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1368055
   - lang: en
     role: original
     text: The Gleaners
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1368055
   - lang: nl
     role: translation
     text: Arenleessters
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1368055
   - lang: de
     role: translation
     text: Die Ährenleserinnen
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1368055
   - lang: it
     role: translation
     text: Le spigolatrici
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1368055
   - lang: es
     role: translation
     text: Las espigadoras
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1368055
   - lang: ja
     role: translation
     text: 落穂拾い
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1368055
   - lang: zh
     role: translation
     text: 拾穗
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1368055
   - lang: ko
     role: translation
     text: 이삭 줍는 여인들
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1368055
   - lang: ru
     role: translation
     text: Сборщицы колосьев
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1368055
 creator: jean-francois-millet
 created: 1857
 materials: [oil paint, canvas]
@@ -109,9 +139,6 @@ provenance:
         source: musee-d-orsay-collections
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1368055
   created:
     - accessed: 2026-10-20
       property: P571

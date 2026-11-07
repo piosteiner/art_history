@@ -5,26 +5,53 @@ names:
   - lang: ja
     role: original
     text: 礫川雪の旦
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173409
   - lang: en
     role: original
     text: Morning after a Snowfall at Koishikawa
-  - Koishikawa yuki no ashita
-  - Morning after the Snow at Koishikawa
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173409
+  - text: Koishikawa yuki no ashita
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173409
+  - text: Morning after the Snow at Koishikawa
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173409
   - lang: nl
     role: translation
     text: Besneeuwde ochtend in Koishikawa
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173409
   - lang: fr
     role: translation
     text: Maison de thé à Koishikawa, le matin après une chute de neige
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173409
   - lang: de
     role: translation
     text: Verschneiter Morgen bei Koishikawa
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173409
   - lang: es
     role: translation
     text: La mañana después de una nevada en Koishikawa
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173409
   - lang: ja
     role: original
     text: 富嶽三十六景 礫川雪の旦
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173409
 parent: thirty-six-views-of-mount-fuji
 part_number: "24"
 creator: katsushika-hokusai
@@ -59,9 +86,6 @@ images:
     license: Public domain
     credit: Art Institute of Chicago, Clarence Buckingham Collection
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173409
   parent:
     - accessed: 2026-11-03
       property: P179

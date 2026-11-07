@@ -1,0 +1,57 @@
+public_id: 116515
+name: Isao Takahata
+names:
+  - lang: ja
+    role: original
+    text: 高畑勲
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q178713
+  - text: Takahata Isao
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q178713
+  - lang: zh
+    role: translation
+    text: 高畑勳
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q178713
+  - lang: ko
+    role: translation
+    text: 다카하타 이사오
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q178713
+  - lang: ru
+    role: translation
+    text: Исао Такахата
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q178713
+birth: 1935-10-29
+death: 2018-04-05
+wikidata_id: Q178713
+metadata:
+  sources: [Wikidata Q178713 (retrieved 2026-11-06)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b6/Isao_Takahata.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Isao_Takahata.jpg
+    license: CC BY-SA 3.0
+    credit: Boungawa
+identifiers:
+  bnf: "141400043"
+  gnd: "139124454"
+  idref: "059052503"
+  lc: no94030551
+  nlk: KAC201109266
+  viaf: "111348229"
+sources:
+  birth:
+    - accessed: 2026-11-06
+      property: P569
+      wikidata: Q178713
+  death:
+    - accessed: 2026-11-06
+      property: P570
+      wikidata: Q178713

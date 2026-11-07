@@ -5,15 +5,27 @@ names:
   - lang: en
     role: translation
     text: Adoration of the Magi
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3605527
   - lang: fr
     role: translation
     text: L'Adoration des Mages
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3605527
   - lang: de
     role: translation
     text: Anbetung der Heiligen Drei Könige
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3605527
   - lang: ja
     role: translation
     text: 東方三博士の礼拝 (コレッジョ)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q3605527
 creator: antonio-da-correggio
 created: c. 1515–1518
 created_span: uncertain
@@ -57,9 +69,6 @@ provenance:
         source: pinacoteca-di-brera-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q3605527
   created:
     - url: https://pinacotecabrera.org/collezioni/collezione-on-line/adorazione-dei-magi/
       source: pinacoteca-di-brera-collezione

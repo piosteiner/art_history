@@ -2,25 +2,46 @@ public_id: 102108
 title_lang: it
 title: Polittico di San Luca
 names:
-  - Polittico di san Luca
+  - text: Polittico di san Luca
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1136780
   - lang: fr
     role: translation
     text: Retable de Saint-Luc
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1136780
   - lang: de
     role: translation
     text: Altarbild des heiligen Lukas
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1136780
   - lang: es
     role: translation
     text: Retablo de San Lucas
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1136780
   - lang: ja
     role: translation
     text: 聖ルカの多翼祭壇画
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1136780
   - lang: zh
     role: translation
     text: 聖盧卡祭壇多聯畫
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1136780
   - lang: ru
     role: translation
     text: Полиптих святого Луки
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q1136780
 creator: andrea-mantegna
 created: 1453/1455
 materials: [tempera, wood]
@@ -59,9 +80,6 @@ provenance:
         source: wikipedia-it-polittico-san-luca
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q1136780
   created:
     - url: https://pinacotecabrera.org/collezioni/collezione-on-line/polittico-di-san-luca/
       source: pinacoteca-di-brera-collezione

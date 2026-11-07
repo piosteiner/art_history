@@ -6,11 +6,19 @@ names:
   - lang: ja
     role: original
     text: 十一月　芦に白鷺図
+    sources:
+      - source: shozokan-szk000142-twelve-months
+        locator: picture 11 of 12 (十一月　芦に白鷺図)
+        accessed: 2026-11-03
   - lang: en
     role: translation
     text: November Reeds and White Egret
     status: official
     note: the museum’s English title
+    sources:
+      - source: shozokan-szk000142-twelve-months
+        locator: picture 11 of 12 (十一月　芦に白鷺図)
+        accessed: 2026-11-03
 parent: birds-and-flowers-through-the-twelve-months
 part_number: "11"
 creator: sakai-hoitsu
@@ -22,10 +30,6 @@ institution: museum-of-the-imperial-collections
 web_url: https://shozokan.nich.go.jp/en/collection/object/SZK000142
 sources:
   kind:
-    - source: shozokan-szk000142-twelve-months
-      locator: picture 11 of 12 (十一月　芦に白鷺図)
-      accessed: 2026-11-03
-  names:
     - source: shozokan-szk000142-twelve-months
       locator: picture 11 of 12 (十一月　芦に白鷺図)
       accessed: 2026-11-03

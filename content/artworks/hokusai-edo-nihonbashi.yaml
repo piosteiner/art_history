@@ -5,22 +5,43 @@ names:
   - lang: ja
     role: original
     text: 江戸日本橋
-  - Edo Nihonbashi
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173419
+  - text: Edo Nihonbashi
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173419
   - lang: en
     role: original
     text: Nihonbashi bridge in Edo
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173419
   - lang: fr
     role: translation
     text: Le pont de Nihonbashi à Edo
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173419
   - lang: de
     role: translation
     text: Nihon-brücke in Edo
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173419
   - lang: es
     role: translation
     text: Puente Nihonbashi en Edo
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173419
   - lang: ja
     role: original
     text: 富嶽三十六景 江戸日本橋
+    sources:
+      - accessed: 2026-11-03
+        wikidata: Q18173419
 parent: thirty-six-views-of-mount-fuji
 part_number: "31"
 creator: katsushika-hokusai
@@ -53,9 +74,6 @@ images:
     license: Public domain
     credit: The Metropolitan Museum of Art
 sources:
-  names:
-    - accessed: 2026-11-03
-      wikidata: Q18173419
   parent:
     - accessed: 2026-11-03
       property: P179

@@ -1,0 +1,40 @@
+public_id: 116561
+name: haori
+names:
+  - text: haori jackets
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1503993
+  - lang: ja
+    role: translation
+    text: 羽織
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1503993
+  - lang: ko
+    role: translation
+    text: 하오리
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1503993
+  - lang: ru
+    role: translation
+    text: хаори
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1503993
+category: object type
+definition: traditional Japanese hip- or thigh-length kimono-style jacket
+wikidata_id: Q1503993
+metadata:
+  sources: [Wikidata Q1503993 (retrieved 2026-11-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/%E9%BB%92%E5%B9%B3%E7%B5%B9%E5%9C%B0%E5%AF%8C%E5%A3%AB%E5%9B%B3%E7%BE%BD%E7%B9%94_%E7%94%B7%E7%89%A9-Man%27s_Formal_Jacket_%28Haori%29_MET_DP330781.jpg/1280px-%E9%BB%92%E5%B9%B3%E7%B5%B9%E5%9C%B0%E5%AF%8C%E5%A3%AB%E5%9B%B3%E7%BE%BD%E7%B9%94_%E7%94%B7%E7%89%A9-Man%27s_Formal_Jacket_%28Haori%29_MET_DP330781.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E9%BB%92%E5%B9%B3%E7%B5%B9%E5%9C%B0%E5%AF%8C%E5%A3%AB%E5%9B%B3%E7%BE%BD%E7%B9%94_%E7%94%B7%E7%89%A9-Man%27s_Formal_Jacket_(Haori)_MET_DP330781.jpg
+    license: CC0
+identifiers:
+  gnd: "1393324770"
+sources:
+  definition:
+    - accessed: 2026-11-06
+      wikidata: Q1503993

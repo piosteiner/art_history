@@ -1,0 +1,96 @@
+public_id: 116554
+name: Five Continents Museum
+names:
+  - text: Bavarian State Museum of Ethnology
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q454217
+  - text: State Museum of Ethnology
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q454217
+  - text: Staatliches Museum für Völkerkunde in München
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q454217
+  - text: Museum Five Continents
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q454217
+  - lang: fr
+    role: translation
+    text: musée national d'ethnologie de Munich
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q454217
+  - lang: de
+    role: translation
+    text: Museum Fünf Kontinente
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q454217
+  - lang: it
+    role: translation
+    text: Museo dei Cinque Continenti
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q454217
+  - lang: es
+    role: translation
+    text: Museo de los cinco continentes
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q454217
+  - lang: ja
+    role: translation
+    text: 五大陸博物館
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q454217
+  - lang: zh
+    role: translation
+    text: 人類學博物館
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q454217
+kind: museum
+founded: 2014
+place: munich
+location: [11.5857, 48.1376]
+address: Maximilianstraße 42
+website_url: http://www.museum-fuenf-kontinente.de/
+collection_url: https://onlinedatenbank-museum-fuenf-kontinente.de
+wikidata_id: Q454217
+metadata:
+  sources: [Wikidata Q454217 (retrieved 2026-11-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Museum_F%C3%BCnf_Kontinente%2C_2023.jpg/1280px-Museum_F%C3%BCnf_Kontinente%2C_2023.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Museum_F%C3%BCnf_Kontinente,_2023.jpg
+    license: CC BY-SA 4.0
+    credit: Burkhard Mücke
+identifiers:
+  gnd: "1058613936"
+  idref: "184133874"
+  lc: n81048054
+  viaf: "126603156"
+sources:
+  kind:
+    - accessed: 2026-11-06
+      property: P31
+      wikidata: Q454217
+  place:
+    - accessed: 2026-11-06
+      property: P131
+      wikidata: Q454217
+  address:
+    - accessed: 2026-11-06
+      property: P6375
+      wikidata: Q454217
+  founded:
+    - accessed: 2026-11-06
+      property: P571
+      wikidata: Q454217
+  location:
+    - accessed: 2026-11-06
+      property: P625
+      wikidata: Q454217

@@ -1,0 +1,47 @@
+public_id: 116502
+title: Samurai Champloo
+title_status: common
+names:
+  - lang: ja
+    role: original
+    text: サムライチャンプルー
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q143276
+  - lang: zh
+    role: translation
+    text: 琉球武士瘋雲錄
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q143276
+  - lang: ko
+    role: translation
+    text: 사무라이 참프루
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q143276
+  - lang: ru
+    role: translation
+    text: Самурай Чамплу
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q143276
+creator: shin-ichiro-watanabe
+created: 2004
+kind: anime
+wikidata_id: Q143276
+metadata:
+  sources: [Wikidata Q143276 (retrieved 2026-11-06)]
+sources:
+  kind:
+    - property: P31
+      wikidata: Q143276
+  created:
+    - property: P580
+      wikidata: Q143276
+  creator:
+    - property: P57
+      wikidata: Q143276
+  title_status:
+    - accessed: 2026-11-06
+      wikidata: Q143276

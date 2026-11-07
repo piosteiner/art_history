@@ -5,6 +5,9 @@ names:
   - lang: en
     role: translation
     text: Lion
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q112091500
 creator: albrecht-durer
 created: 1495
 materials: [parchment, watercolor paint, gouache paint, ink]
@@ -116,9 +119,6 @@ provenance:
         source: aeiou-albertina
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q112091500
   created:
     - accessed: 2026-10-19
       property: P571

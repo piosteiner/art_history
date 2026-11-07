@@ -2,13 +2,22 @@ public_id: 101542
 title_lang: de
 title: Die Ebene von Auvers
 names:
-  - Wheat Fields near Auvers
+  - text: Wheat Fields near Auvers
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q26221225
   - lang: en
     role: translation
     text: The Plain of Auvers
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q26221225
   - lang: ru
     role: translation
     text: Пшеничные поля близ Овера
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q26221225
 creator: vincent-van-gogh
 created: 1890
 materials: [oil paint, canvas]
@@ -63,9 +72,6 @@ provenance:
         source: belvedere-sammlung-online
         accessed: 2026-01-30
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q26221225
   created:
     - accessed: 2026-10-20
       property: P571

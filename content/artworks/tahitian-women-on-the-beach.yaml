@@ -5,30 +5,57 @@ names:
   - lang: en
     role: original
     text: Tahitian Women on the Beach
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q930535
   - lang: nl
     role: translation
     text: Tahitiaanse vrouwen op het strand
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q930535
   - lang: de
     role: translation
     text: Frauen aus Tahiti
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q930535
   - lang: it
     role: translation
     text: Due donne tahitiane
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q930535
   - lang: es
     role: translation
     text: Mujeres de Tahití
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q930535
   - lang: ja
     role: translation
     text: タヒチの女たち
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q930535
   - lang: zh
     role: translation
     text: 沙灘上的大溪地女人
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q930535
   - lang: ko
     role: translation
     text: 타히티의 여인들
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q930535
   - lang: ru
     role: translation
     text: Таитянские женщины на побережье
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q930535
 creator: paul-gauguin
 created: 1891-11/1891-12
 materials: [oil paint, canvas]
@@ -104,9 +131,6 @@ provenance:
 identifiers:
   wpi: "71610"
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q930535
   created:
     - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-de-tahiti-290
       source: musee-d-orsay-collections

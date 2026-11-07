@@ -2,29 +2,56 @@ public_id: 102047
 title_lang: it
 title: La Madonna dei Palafrenieri
 names:
-  - Madonna and Child with St. Anne
-  - Madonna and Child with St Anne
+  - text: Madonna and Child with St. Anne
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2715302
+  - text: Madonna and Child with St Anne
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2715302
   - lang: en
     role: translation
     text: Madonna and Child with Saint Anne
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2715302
   - lang: nl
     role: translation
     text: Madonna van de palfreniers
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2715302
   - lang: fr
     role: translation
     text: La Madone des palefreniers
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2715302
   - lang: de
     role: translation
     text: Madonna und Kind mit der Heiligen Anna
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2715302
   - lang: es
     role: translation
     text: Madonna con el niño y Santa Ana
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2715302
   - lang: ja
     role: translation
     text: 聖アンナと聖母子 (カラヴァッジョ)
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2715302
   - lang: zh
     role: translation
     text: 聖母、聖子與聖安娜
+    sources:
+      - accessed: 2026-10-20
+        wikidata: Q2715302
 creator: caravaggio
 created: 1605/1606
 materials: [oil paint, canvas]
@@ -106,9 +133,6 @@ provenance:
         source: galleria-borghese-collezione
         accessed: 2026-10-20
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q2715302
   created:
     - url: https://www.collezionegalleriaborghese.it/opere/la-madonna-dei-palafrenieri
       source: galleria-borghese-collezione

@@ -5,30 +5,75 @@ names:
   - lang: en
     role: translation
     text: The Clothed Maja
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+        source: museo-del-prado-coleccion
+        accessed: 2025-04-26
   - lang: nl
     role: translation
     text: Geklede Maja
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+        source: museo-del-prado-coleccion
+        accessed: 2025-04-26
   - lang: fr
     role: translation
     text: La Maja vêtue
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+        source: museo-del-prado-coleccion
+        accessed: 2025-04-26
   - lang: de
     role: translation
     text: Die Bekleidete Maja
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+        source: museo-del-prado-coleccion
+        accessed: 2025-04-26
   - lang: it
     role: translation
     text: Maja vestida
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+        source: museo-del-prado-coleccion
+        accessed: 2025-04-26
   - lang: ja
     role: translation
     text: 着衣のマハ
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+        source: museo-del-prado-coleccion
+        accessed: 2025-04-26
   - lang: zh
     role: translation
     text: 着衣的玛哈
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+        source: museo-del-prado-coleccion
+        accessed: 2025-04-26
   - lang: ko
     role: translation
     text: 옷 입은 마하
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+        source: museo-del-prado-coleccion
+        accessed: 2025-04-26
   - lang: ru
     role: translation
     text: Маха одетая
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+        source: museo-del-prado-coleccion
+        accessed: 2025-04-26
 creator: francisco-goya
 created: 1800/1807
 kind: oil painting
@@ -129,11 +174,6 @@ identifiers:
   gnd: 4439421-4
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
-      source: museo-del-prado-coleccion
-      accessed: 2025-04-26
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
       source: museo-del-prado-coleccion

@@ -5,6 +5,9 @@ names:
   - lang: de
     role: translation
     text: Herbstbaum in bewegter Luft („Winterbaum“)
+    sources:
+      - accessed: 2026-10-19
+        wikidata: Q28797681
 creator: egon-schiele
 created: 1912
 materials: [oil paint, pencil, canvas]
@@ -62,9 +65,6 @@ provenance:
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
 sources:
-  names:
-    - accessed: 2026-10-19
-      wikidata: Q28797681
   created:
     - accessed: 2026-10-19
       property: P571

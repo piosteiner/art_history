@@ -1,0 +1,17 @@
+public_id: 116588
+title_lang: en
+title: Kirin Beer Advertisement
+names:
+  - lang: ja
+    role: original
+    text: キリンビール
+created: 1932-04-21
+kind: advertisement
+description_md: "An advertisement in the *Yomiuri Shinbun* of 21 April 1932: soldiers charge — \"Totsugeki!!\" — beside the brewery's name. [[source/thomsen-2019-war-and-peace|image list, 10 May 2019 (guest lecture, Klaus Friese)]]"
+sources:
+  kind:
+    - source: thomsen-2019-war-and-peace
+      locator: image list, 10 May 2019 (guest lecture, Klaus Friese)
+  created:
+    - source: thomsen-2019-war-and-peace
+      locator: image list, 10 May 2019 (guest lecture, Klaus Friese)

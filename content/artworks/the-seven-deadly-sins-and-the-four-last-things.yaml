@@ -5,34 +5,89 @@ names:
   - lang: nl
     role: alternative
     text: Tafelblad met de zeven hoofdzonden
-  - R-R
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+        source: museo-del-prado-coleccion
+        accessed: 2026-03-14
+  - text: R-R
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+        source: museo-del-prado-coleccion
+        accessed: 2026-03-14
   - lang: en
     role: translation
     text: The Seven Deadly Sins and the Four Last Things
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+        source: museo-del-prado-coleccion
+        accessed: 2026-03-14
   - lang: nl
     role: original
     text: Zeven Hoofdzonden
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+        source: museo-del-prado-coleccion
+        accessed: 2026-03-14
   - lang: fr
     role: translation
     text: Les Sept Péchés capitaux et les Quatre Dernières Étapes humaines
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+        source: museo-del-prado-coleccion
+        accessed: 2026-03-14
   - lang: de
     role: translation
     text: Die sieben Todsünden und vier letzten Dinge
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+        source: museo-del-prado-coleccion
+        accessed: 2026-03-14
   - lang: it
     role: translation
     text: Sette peccati capitali
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+        source: museo-del-prado-coleccion
+        accessed: 2026-03-14
   - lang: es
     role: translation
     text: Mesa de los pecados capitales
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+        source: museo-del-prado-coleccion
+        accessed: 2026-03-14
   - lang: ja
     role: translation
     text: 七つの大罪と四終
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+        source: museo-del-prado-coleccion
+        accessed: 2026-03-14
   - lang: ko
     role: translation
     text: 일곱 가지 대죄와 네 가지 종말
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+        source: museo-del-prado-coleccion
+        accessed: 2026-03-14
   - lang: ru
     role: translation
     text: Семь смертных грехов и Четыре последние вещи
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+        note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+        source: museo-del-prado-coleccion
+        accessed: 2026-03-14
 creator: hieronymus-bosch
 created: 1505/1510
 kind: oil painting
@@ -102,11 +157,6 @@ provenance:
         accessed: 2026-03-14
 sources:
   kind:
-    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
-      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
-      source: museo-del-prado-coleccion
-      accessed: 2026-03-14
-  names:
     - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
       note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
       source: museo-del-prado-coleccion

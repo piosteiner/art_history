@@ -1,0 +1,69 @@
+public_id: 116501
+title: The Sword of Doom
+title_status: common
+names:
+  - lang: ja
+    role: original
+    text: 大菩薩峠
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1637652
+  - text: Sword of Doom
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1637652
+  - lang: fr
+    role: translation
+    text: Le Sabre du mal
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1637652
+  - lang: it
+    role: translation
+    text: Daibosatsu Tōge
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1637652
+  - lang: es
+    role: translation
+    text: La espada del mal
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1637652
+  - lang: zh
+    role: translation
+    text: 狂魔無影劍
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1637652
+  - lang: ko
+    role: translation
+    text: 대보살 고개
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1637652
+  - lang: ru
+    role: translation
+    text: Меч судьбы
+    sources:
+      - accessed: 2026-11-06
+        wikidata: Q1637652
+creator: kihachi-okamoto
+created: 1966
+kind: film
+wikidata_id: Q1637652
+metadata:
+  sources: [Wikidata Q1637652 (retrieved 2026-11-06)]
+sources:
+  kind:
+    - property: P31
+      wikidata: Q1637652
+  created:
+    - property: P577
+      wikidata: Q1637652
+  creator:
+    - property: P57
+      wikidata: Q1637652
+  title_status:
+    - accessed: 2026-11-06
+      wikidata: Q1637652

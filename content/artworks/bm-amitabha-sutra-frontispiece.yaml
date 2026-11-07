@@ -1,14 +1,31 @@
 public_id: 108629
-title: Amitābha sutra written by the monk Chŏnggo
-attribution_label: Anonymous
+title_lang: en
+title: Amitābha Sūtra
+names:
+  - lang: ko
+    role: original
+    text: 불설아미타경
+  - lang: ko-Hani
+    role: original
+    text: 佛說阿彌陀經
+  - lang: en
+    role: alternative
+    text: Amitābha Sūtra written by the monk Chŏnggo
+creator: chonggo
 created: 1341
 kind: sutra
-medium: Silver and gold on paper
+medium: Gold and silver on indigo-dyed paper
 materials: [silver, gold, paper]
-dimensions: [22]
+dimensions: [21.7, 8.5, 1.1]
+dimensions_note: Each page; 17.6 cm wide when displayed open, 263.5 cm unfolded (31 panels)
 institution: british-museum
+inventory_number: 1983,1008,0.1
+web_url: https://www.britishmuseum.org/collection/object/A_1983-1008-0-1
 region: east_asia
-description_md: "One of the few Koryŏ illuminated sutras outside Japan and Korea, in the [[institution/british-museum]]: written in 1341 in silver and gold on indigo paper by the monk Chŏnggo to earn merit for his mother. The frontispiece shows Amitābha preaching in paradise, drawn entirely in fine gold “iron-wire” lines; the cover bears “precious visage” flowers. [[source/portal-2000|pp. 86–88, fig. 44]]"
+description_md: |-
+  One of the few Koryŏ illuminated sutras outside Japan and Korea, in the [[institution/british-museum]]: written in 1341 in silver and gold on indigo paper by the monk Chŏnggo to earn merit for his mother. The frontispiece shows Amitābha preaching in paradise, drawn entirely in fine gold “iron-wire” lines; the cover bears “precious visage” flowers. [[source/portal-2000|pp. 86–88, fig. 44]]
+
+  A concertina album of 31 panels of indigo-dyed paper; the cover bears three flowers with vines in gold and silver around the title. The sutra, Kumārajīva's Chinese translation, is written in silver; the frontispiece, spread over two leaves within a border of vajras, shows the sermon in the palace of the Pure Land with "treasure trees" round the principal Buddha — Amitābha in the 2016 catalogue entry, Śākyamuni in the museum's description — while two bodhisattvas welcome souls to paradise. The dedicatory inscription at the end gives the first year of Zhizheng (1341) and the scribe, the monk [[artist/chonggo]], who wrote it for his mother's spiritual benefit. Kept in a paulownia wood box. [[source/british-museum-1983-1008-0-1|Description, Inscriptions, Curator's comments (NRICH 2016)]]
 relationships:
   - type: created_in_polity
     to: polity/goryeo
@@ -20,22 +37,77 @@ relationships:
     sources:
       - source: portal-2000
         locator: pp. 86–88, fig. 44
+provenance:
+  - owner: person/harry-garner
+    notes_md: Previous owner / ex-collection.
+    sources:
+      - source: british-museum-1983-1008-0-1
+        locator: Previous owner
+        accessed: 2026-11-06
+  - owner: institution/british-museum
+    acquired: 1983
+    certainty: probable
+    notes_md: The year from the registration number 1983,1008,0.1; how it came to the museum is not given.
+    sources:
+      - source: british-museum-1983-1008-0-1
+        locator: Registration number
+        accessed: 2026-11-06
+    records:
+      - kind: exhibition
+        date: 2003-10-18/2004-01-11
+        place: san-francisco
+        document: "Asian Art Museum, Goryeo Dynasty: Korea's Age of Enlightenment"
+      - kind: exhibition
+        date: 2006/2008-07
+        room: G67, case 7
+        place: london
+        document: British Museum
+      - kind: exhibition
+        date: 2018-12-04/2019-03-03
+        place: seoul
+        document: National Museum of Korea, Goryeo Dynasty
+      - kind: exhibition
+        date: 2022-09-24/2023-06-25
+        place: london
+        document: Victoria and Albert Museum, Hallyu! The Korean Wave
 sources:
   kind:
     - source: portal-2000
       locator: pp. 86–88, fig. 44
+    - source: british-museum-1983-1008-0-1
+      locator: Object type
+      accessed: 2026-11-06
   medium:
     - source: portal-2000
       locator: pp. 86–88, fig. 44
+    - source: british-museum-1983-1008-0-1
+      locator: Description
+      accessed: 2026-11-06
   created:
     - source: portal-2000
       locator: pp. 86–88, fig. 44
+    - source: british-museum-1983-1008-0-1
+      locator: Production date
+      accessed: 2026-11-06
+  creator:
+    - source: british-museum-1983-1008-0-1
+      locator: Inscriptions; Curator's comments
+      accessed: 2026-11-06
   materials:
     - source: portal-2000
       locator: pp. 86–88, fig. 44
   dimensions:
     - source: portal-2000
       locator: pp. 86–88, fig. 44
+    - source: british-museum-1983-1008-0-1
+      locator: Dimensions
+      accessed: 2026-11-06
   institution:
     - source: portal-2000
       locator: pp. 86–88, fig. 44
+    - source: british-museum-1983-1008-0-1
+      accessed: 2026-11-06
+  inventory_number:
+    - source: british-museum-1983-1008-0-1
+      locator: Museum number
+      accessed: 2026-11-06
