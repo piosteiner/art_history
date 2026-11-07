@@ -102,7 +102,7 @@ async function loggedIn(page: Page, { login = true, conflict = false } = {}) {
       return json(route, { set: summary(s) }, 201);
     }
     if (path === '/sets/preview') return json(route, { html: md(form.get('text') ?? '') });
-    if (path === '/sets/of') return json(route, { sets: sets.map((s) => ({ id: s.id, name: s.name, has: s.items.some((i) => i.type === url.searchParams.get('type') && i.slug === url.searchParams.get('slug')) })) });
+    if (path === '/sets/of') return json(route, { sets: sets.map((s) => ({ id: s.id, name: s.name, locked: Boolean((s as { locked?: boolean }).locked), has: s.items.some((i) => i.type === url.searchParams.get('type') && i.slug === url.searchParams.get('slug')) })) });
     if (path === '/sets/progress') { answers.push(`${form.get('slug')}:${form.get('direction')}:${form.get('known')}`); return json(route, { box: form.get('known') === '1' ? 2 : 1, seen: 1, known: Number(form.get('known')) }); }
     // friendships (224) and hiding in a set's chat (226), as far as the set page asks for them
     if (path === '/friends') return json(route, { me: { public_name: publicName, friend_code: 'F1' }, unread: 0,
@@ -189,6 +189,19 @@ test('study sets: "+ Set" on an entry creates a set and fills it; the list and t
   await page.locator('.set-menu summary').click();
   await page.locator('.set-menu-list input[type=checkbox]').first().check();
   await expect(page.locator('.set-menu-msg')).toHaveText('Added.');
+  // fixed at the bottom right, above the feedback button; a locked set hidden until asked for (2026-11-07)
+  const slot = await page.locator('.set-slot').boundingBox();
+  const fab = await page.locator('.fb-fab').boundingBox();
+  expect(slot!.y + slot!.height).toBeLessThan(fab!.y);
+  account.sets.push({ id: '77', name: 'Old exam', topic: null, description: null, visibility: 'private', code: null, items: [], locked: true } as FakeSet);
+  await page.goto('/glossary/nishiki-e');
+  await page.locator('.set-menu summary').click();
+  await expect(page.locator('.set-menu-list label')).toHaveCount(1);
+  await page.locator('.set-menu-locked button').click();
+  await expect(page.locator('.set-menu-list label', { hasText: 'Old exam' })).toBeVisible();
+  await expect(page.locator('.set-menu-locked button')).toHaveText('Hide locked sets');
+  await page.locator('.set-menu-locked button').click();
+  account.sets.pop();
 
   // the list of sets, one set
   await page.goto('/sets');
@@ -401,6 +414,9 @@ test('an exam date plans the day\'s cards: the days counted, today\'s cards stud
   await expect(page.locator('.sets-stats .sets-results-sub')).toHaveText(["Today's study set", 'Overall']);
   await expect(page.locator('.sets-today-row').first()).toContainText('1 of 3 done · 1 right');
   await expect(page.locator('.sets-stats')).toContainText('Today: 1 round · 1 of 1 known (100 %)');
+  // today's bars and the boxes' bars equally wide (2026-11-07)
+  const w = async (sel: string) => Math.round((await page.locator(sel).first().boundingBox())!.width);
+  expect(await w('.sets-today-row .sets-progress')).toBe(await w('.sets-boxes .sets-boxbar'));
   await expect(page.locator('.sets-today-count')).toHaveText('(2 Name it · 1 Describe it)');
   await page.fill('.sets-exam-form input[type=date]', '2026-11-17');
   await page.locator('.sets-exam-form button[type=submit]').click();

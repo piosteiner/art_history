@@ -339,7 +339,7 @@ function one(main: HTMLElement, ref: SetRef, note = '') {
     const hasMembers = Boolean(set.members?.length);
     render(main, html`<section class="page sets-page">
       <header class="sets-head"><p class="crumbs">${crumbs} / ${set.name}</p>
-      <h1>${set.name}${own ? visBadge(set) : ''}${own ? together(set) : ''}${own && locked ? html` <span class="tag" title="Its members read and study it but change nothing">locked</span>` : ''}</h1>
+      <h1>${set.name}${own ? visBadge(set) : ''}${own ? together(set) : ''}${own && locked ? html` <span class="tag sets-locked-tag" title="Its members read and study it but change nothing">locked</span>` : ''}</h1>
       ${meta(set, !owner)}</header>
       ${own && (!owner || hasMembers) ? yourPart(set) : ''}
       ${editor && locked ? html`<p class="flash">The owner has locked this set: you can study it, but not change or propose anything until they unlock it.</p>` : ''}
@@ -365,7 +365,7 @@ function one(main: HTMLElement, ref: SetRef, note = '') {
           <details class="sets-share sets-members-panel" id="sets-members-panel"><summary class="link-button">Members${hasMembers ? html` <span class="muted">${String(set.members!.length)}</span>` : ''}</summary><div class="sets-share-body"></div></details>` : ''}
         ${owner ? html`<button type="button" class="link-button sets-lock" title="${locked ? 'Its members may change and propose again' : 'Its members can still study it, but change and propose nothing'}">${locked ? 'Unlock' : 'Lock'}</button>` : ''}
         ${viewer ? '' : html`<details class="sets-history"><summary class="link-button">History</summary><div class="sets-history-body"></div></details>`}
-        ${viewer ? '' : html`<details class="sets-copy-box"><summary class="link-button">Make my own copy</summary>
+        ${viewer ? '' : html`<details class="sets-copy-box"><summary class="link-button">${owner ? 'Make a copy' : 'Make my own copy'}</summary>
           <div class="sets-copy-info"><p><b>A new, private set of your own</b> with the same name, topic, description and the ${plural(items.length, 'entry', 'entries')} as they are now.
             ${owner ? 'This set stays as it is.' : 'This set stays as it is, and you stay a member of it.'}</p>
             <p class="muted small">Not copied: members, links, chat, proposals and history. What you know of the cards stays — boxes are the same in every set holding an entry.</p>
@@ -478,9 +478,22 @@ function one(main: HTMLElement, ref: SetRef, note = '') {
     if (location.hash === '#sets-chat') chatBox?.scrollIntoView();
     if (location.hash === '#sets-proposals') proposalsBox?.scrollIntoView();
     for (const h of ['#sets-sharing', '#sets-members-panel']) if (location.hash === h) { const d = main.querySelector<HTMLDetailsElement>(h); if (d) { d.open = true; d.scrollIntoView(); } }
-    main.querySelector('.sets-lock')?.addEventListener('click', async () => {
-      if (!locked && !(await ask('Lock this set? Its members can still study it, but change, propose and vote on nothing until you unlock it.', { title: 'Lock this set?', ok: 'Lock' }))) return;
-      lockSet(id, !locked).then(reload).catch((err: Error) => { msg.textContent = err.message; });
+    // locking changes only the button and the title's tag for the owner: those two are updated in place — drawing
+    // the whole page again made it flash (owner 2026-11-07)
+    let isLocked = locked;
+    const lockButton = main.querySelector<HTMLButtonElement>('.sets-lock');
+    lockButton?.addEventListener('click', async () => {
+      if (!isLocked && !(await ask('Lock this set? Its members can still study it, but change, propose and vote on nothing until you unlock it.', { title: 'Lock this set?', ok: 'Lock' }))) return;
+      lockButton.disabled = true;
+      lockSet(id, !isLocked).then(() => {
+        isLocked = !isLocked;
+        lockButton.textContent = isLocked ? 'Unlock' : 'Lock';
+        lockButton.title = isLocked ? 'Its members may change and propose again' : 'Its members can still study it, but change and propose nothing';
+        const h1 = main.querySelector('.sets-head h1')!;
+        h1.querySelector('.sets-locked-tag')?.remove();
+        if (isLocked) h1.insertAdjacentHTML('beforeend', ' <span class="tag sets-locked-tag" title="Its members read and study it but change nothing">locked</span>');
+        msg.textContent = isLocked ? 'Locked: its members can study it but change nothing.' : 'Unlocked.';
+      }).catch((err: Error) => { msg.textContent = err.message; }).finally(() => { lockButton.disabled = false; });
     });
     main.querySelectorAll<HTMLButtonElement>('.sets-propose').forEach((b) => b.addEventListener('click', async () => {
       const reason = (await askText(`Why should “${b.dataset.name}” go? (optional — the others see it)`, { title: 'Propose its removal', label: 'Why? (optional — the others see it)', maxLength: 500, ok: 'Propose' }));

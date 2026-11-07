@@ -4,6 +4,11 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-07
 
+### Site: "+ Set" fixed at the bottom right, locked sets hidden in it; lock without redrawing; equal bars
+- **What:** `frontend/src/sets-button.ts`: the "+ Set" button is fixed above the feedback button (panel opens upwards); locked sets are hidden from its list behind "Show N locked sets" (remembered in localStorage `arthistory.set-menu.locked`). Set page: Lock/Unlock updates the button and the title's tag in place instead of drawing the page again (it flashed); the owner's copy button says "Make a copy"; results: today's bars and the boxes' bars in one grid, equally wide. Content: Sotheby's lot 7 (Degas, *Avant la course*) — Brody step ends "1968 or later", Lefevre consigned 1974 (provenance 4715, 4718).
+- **Why:** owner 2026-11-07.
+- **Revert:** `git revert` the commit; Pages redeploys.
+
 ### Content: seminar "Art and Totalitarianism" (Beatrice/Marinho, UZH HS 2024) imported
 - **What:** the owner's seminar folder (Google Drive, shared by link) downloaded to `/home/ubuntu/books/art-and-totalitarianism/` (37 files, 461 MB; private, outside the repo). In the database: 35 sources (the seminar as `beatrice-marinho-2024-art-and-totalitarianism`, kind other; the owner's paper `steiner-2025-mario-sironi`; the 19 readings; the paper's literature; the official records — Sapienza's restoration sheet, Yale, Kröller-Müller, Tate, Russian Museum, Brooklyn, AdK, Zeri, Ragghianti, Manchester); 53 works (12 from Wikidata, 41 by hand with footnotes to slide, page or record), the mural *L'Italia fra le Arti e le Scienze* with five phases (1935 → 2017); 38 artists, 6 people, 9 movements, 8 institutions, 3 places, 16 events, 13 terms, 2 manifestos; four photographs of the mural as private reference images (owner only); study set 7 "Art and Totalitarianism (HS 2024)", 91 entries, private. Scripts in the session scratchpad (`ta-1.sql` … `ta-4.sql`, `ta-set.sql`, `ta-images.js`). Not imported: other students' names and topics (slide 77), unrelated lines in the notes, the scanned readings' text (no OCR).
 - **Why:** owner 2026-11-07 — import the seminar as the Thomsen lecture, cite the owner's paper, official information on the works, a study set.

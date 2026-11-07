@@ -3,6 +3,9 @@
 // field for a new set, which gets the entry at once. Visitors see nothing (the site has no accounts for them yet).
 // A set the account edits with approval or votes (228): a click proposes the change — the menu says so and marks it
 // "proposed" until it is decided; a locked set can't be changed.
+// Where (owner 2026-11-07): fixed at the bottom right of the screen, above the feedback button, so it stays at hand
+// while the page scrolls; the panel opens upwards. Locked sets are hidden from the list until "Show locked sets"
+// (they can't be changed anyway, and with many sets they crowd it) — the choice is remembered in this browser.
 import { account } from './account';
 import { addToSet, createSet, removeFromSet, setsOf } from './api';
 import { html, render } from './html';
@@ -14,6 +17,10 @@ const HOW: Record<string, string> = {
   approval: 'You edit it with the owner\'s approval: a change is a proposal until the owner accepts it',
   advisory: 'You edit it with votes: the members vote on a change, the owner decides', binding: 'You edit it with votes: the vote decides a change',
 };
+
+const KEY = 'arthistory.set-menu.locked';
+const remembered = () => { try { return localStorage.getItem(KEY) === '1'; } catch { return false; } };
+const remember = (on: boolean) => { try { if (on) localStorage.setItem(KEY, '1'); else localStorage.removeItem(KEY); } catch { /* no storage */ } };
 
 export function addToSetButton(slot: HTMLElement | null, type: EntityType, slug: string, title: string) {
   if (!slot) return;
@@ -33,24 +40,28 @@ export function addToSetButton(slot: HTMLElement | null, type: EntityType, slug:
     const list = slot.querySelector<HTMLUListElement>('.set-menu-list')!;
     const msg = slot.querySelector<HTMLElement>('.set-menu-msg')!;
     const summary = menu.querySelector('summary')!;
-    const fill = () => setsOf(type, slug).then((sets) => {
-      if (!sets) return;
-      const n = sets.filter((s) => s.has).length;
+    const fill = () => setsOf(type, slug).then((all) => {
+      if (!all) return;
+      const n = all.filter((s) => s.has).length;
       summary.textContent = n ? `✓ In ${n} set${n === 1 ? '' : 's'}` : '+ Set';
-      render(list, sets.length
+      const locked = all.filter((s) => s.locked).length;
+      const showLocked = remembered();
+      const sets = showLocked ? all : all.filter((s) => !s.locked);
+      const toggle = locked ? html`<li class="set-menu-locked"><button type="button" class="link-button small" data-locked="${showLocked ? '0' : '1'}">${showLocked ? `Hide locked sets` : `Show ${String(locked)} locked set${locked === 1 ? '' : 's'}`}</button></li>` : '';
+      render(list, sets.length || locked
         ? html`${sets.map((s) => html`<li><label title="${HOW[s.rights === 'vote' ? s.vote_mode : s.rights]}"><input type="checkbox" value="${s.id}" data-rights="${s.rights}" data-mode="${s.vote_mode}"${s.has ? ' checked' : ''}${s.proposed || s.locked ? ' disabled' : ''}> ${s.name}${
           s.proposed ? html` <span class="tag">${s.proposed === 'add' ? 'adding' : 'removal'} proposed</span>` : s.locked ? html` <span class="tag">locked</span>`
-            : s.rights === 'approval' || s.rights === 'vote' ? html` <span class="muted small">(${s.rights === 'approval' ? 'the owner approves' : s.vote_mode === 'binding' ? 'by vote' : 'vote, the owner decides'})</span>` : ''}</label></li>`)}`
+            : s.rights === 'approval' || s.rights === 'vote' ? html` <span class="muted small">(${s.rights === 'approval' ? 'the owner approves' : s.vote_mode === 'binding' ? 'by vote' : 'vote, the owner decides'})</span>` : ''}</label></li>`)}${toggle}`
         : html`<li class="muted small">No sets yet — name your first one below.</li>`);
     }).catch(() => { msg.textContent = 'Your sets could not be loaded.'; });
-    // the panel opens towards where there is room: to the right of the button, or ending at its right edge
-    const panel = slot.querySelector<HTMLElement>('.set-menu-panel')!;
-    const place = () => {
-      panel.style.left = '0'; panel.style.right = 'auto';
-      const r = panel.getBoundingClientRect();
-      if (r.right > document.documentElement.clientWidth - 8) { panel.style.left = 'auto'; panel.style.right = '0'; }
-    };
-    menu.addEventListener('toggle', () => { if (menu.open) { place(); fill(); } });
+    menu.addEventListener('toggle', () => { if (menu.open) void fill(); });
+    list.addEventListener('click', (e) => {
+      const b = (e.target as Element).closest<HTMLButtonElement>('[data-locked]');
+      if (!b) return;
+      e.stopPropagation();
+      remember(b.dataset.locked === '1');
+      void fill();
+    });
     list.addEventListener('change', (e) => {
       const box = e.target as HTMLInputElement;
       if (box.type !== 'checkbox') return;

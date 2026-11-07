@@ -1310,7 +1310,14 @@ span.quiz-tile { cursor: default; }
 .row-img.whole-preview .whole-mark { font-size: .55rem; right: 1px; bottom: 1px; }
 
 /* study sets (views/sets.ts, sets-button.ts; owner 2026-11-04) */
-.set-slot { display: inline-block; position: relative; }
+/* "+ Set" stays at hand: fixed at the bottom right, above the feedback button (owner 2026-11-07); its panel opens upwards */
+.set-slot { position: fixed; right: 16px; bottom: calc(16px + 2.6rem + .6rem); z-index: 899; }
+.set-slot:empty { display: none; }
+.set-slot .set-menu > summary { display: inline-flex; align-items: center; height: 2.6rem; padding: 0 1rem; border-radius: 999px; border: 1px solid var(--accent);
+  background: var(--surface); color: var(--accent); font-weight: 600; box-shadow: 0 3px 12px rgba(0, 0, 0, .25); }
+.set-slot .set-menu[open] > summary { background: var(--accent); color: var(--surface); }
+.set-slot .set-menu-panel { left: auto; right: 0; top: auto; bottom: calc(100% + .5rem); max-height: calc(100vh - 9rem); overflow-y: auto; }
+.set-menu-locked { margin-top: .2rem; }
 .set-menu > summary { list-style: none; cursor: pointer; }
 .set-menu > summary::-webkit-details-marker { display: none; }
 .set-menu-panel { position: absolute; z-index: 20; left: 0; top: calc(100% + .3rem); width: min(20rem, 85vw); padding: .6rem .8rem;
@@ -1648,10 +1655,13 @@ p.sets-tools.sets-card { display: flex; }
 /* results: today's study set */
 .sets-results-sub { margin: .8rem 0 .4rem; font-size: .8rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
 .sets-results-sub:first-of-type { margin-top: .2rem; }
-.sets-today-row { display: grid; grid-template-columns: 6.5rem 1fr 11rem; gap: .6rem; align-items: center; margin: .3rem 0; }
+/* today's bars and the boxes' bars in one grid: label, bar, count — the bars equally wide (owner 2026-11-07) */
+.sets-today-row, .sets-stats .sets-boxes { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr) 11rem; gap: .6rem; align-items: center; margin: .3rem 0; }
+.sets-stats .sets-boxes > .small:first-child { width: auto; }
+.sets-stats .sets-boxes > .muted { text-align: left; }
 .sets-progress { display: block; height: .55rem; border-radius: 999px; background: color-mix(in srgb, var(--text) 10%, transparent); overflow: hidden; }
 .sets-progress > span { display: block; height: 100%; border-radius: inherit; background: var(--accent); }
-@media (max-width: 30rem) { .sets-today-row { grid-template-columns: 1fr; gap: .15rem; } }
+@media (max-width: 30rem) { .sets-today-row, .sets-stats .sets-boxes { grid-template-columns: 1fr; gap: .15rem; } }
 /* the chat and the members' list: titles close to the top of their box, room above "Members" (2026-11-07) */
 .sets-chat > h2:first-child, .sets-members > h2:first-child { margin-top: .2rem; }
 .sets-chat-members { margin-top: .9rem; }
