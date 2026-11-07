@@ -18,10 +18,13 @@ test('the burst passes, the request after it is refused, another address is not 
   assert.equal((await call(limit, '10.0.0.2')).code, 200);
 });
 
-test('time refills the bucket', async () => {
-  const limit = rateLimit({ perMinute: 60000, burst: 1 });   // 1,000 a second: refilled within a few ms
+test('time refills the bucket (a clock of its own — the real one made the test depend on the machine\'s load)', async () => {
+  let t = 1000;
+  const limit = rateLimit({ perMinute: 60, burst: 1, now: () => t });   // one a second
   assert.equal((await call(limit, 'a')).code, 200);
   assert.equal((await call(limit, 'a')).code, 429);
-  await new Promise((r) => { setTimeout(r, 5); });
-  assert.equal((await call(limit, 'a')).code, 200);
+  t += 400;
+  assert.equal((await call(limit, 'a')).code, 429);   // not yet
+  t += 700;
+  assert.equal((await call(limit, 'a')).code, 200);   // a second has passed
 });

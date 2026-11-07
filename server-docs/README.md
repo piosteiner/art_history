@@ -118,22 +118,26 @@ Sources of the admin panel's image search that need a key of our own — without
 
 ## Backups (art history database)
 Nightly at ~03:30 UTC, systemd `arthistory-backup.timer` → `scripts/backup.sh` (units: `config/systemd/`):
-1. `pg_dump` of `arthistory` (plain SQL, gzip) → `~/backups/arthistory/arthistory-YYYY-MM-DD.sql.gz`, kept 14 days.
-2. **Verify:** restored into a scratch database (`arthistory_backup_check`), row counts compared with production, dropped.
+1. `pg_dump` of `arthistory` (plain SQL, gzip) → `~/backups/arthistory/arthistory-YYYY-MM-DD.sql.gz` (everything but the
+   bytes of `private_images`) + `arthistory-private-images-YYYY-MM-DD.sql.gz` (the owner's reference images, ~300 MB, a
+   hard link to the day before when unchanged), kept 14 days. Since 2026-11-07; older dumps hold the images themselves.
+2. **Verify:** both restored into a scratch database (`arthistory_backup_check`), row counts compared with production, dropped.
 3. **Off-site:** only when the data changed — encrypted with gpg (AES256, passphrase in `~/.config/arthistory/backup-passphrase`,
-   **also kept in the owner's password manager**) and pushed to the private GitHub repo `piosteiner/art_history-backups`
-   (clone: `~/backups/arthistory-offsite`, deploy key `~/.ssh/art_history_backups_deploy`, SSH alias `github-art_history-backups`).
-   Every version is in that repo's git history.
+   **also kept in the owner's password manager**), cut into parts of 95 MB (`arthistory.sql.gz.gpg.00`, `.01` …;
+   `private-images.sql.gz.gpg.00` … only when the images changed — GitHub refuses a file over 100 MB) and pushed to the
+   private GitHub repo `piosteiner/art_history-backups` (clone: `~/backups/arthistory-offsite`, deploy key
+   `~/.ssh/art_history_backups_deploy`, SSH alias `github-art_history-backups`) — **the latest version only**, as a new root
+   commit each time (2026-11-07: keeping every version grew the repo by 100–400 MB a day; the pushes had failed since
+   4 November, when the dump passed 100 MB). The 14 local days are the history.
 
 Check: `systemctl list-timers arthistory-backup` · `journalctl -u arthistory-backup -n 20` · run now: `sudo systemctl start arthistory-backup`.
 Not backed up (and not needed): the dev database; code, content YAML and docs are in this Git repo. Other projects' databases are not included.
 
 **Restore** (never overwrites — always into a new database):
 ```bash
-scripts/restore.sh ~/backups/arthistory/arthistory-2026-09-28.sql.gz arthistory_restored        # local copy
-git -C ~/backups/arthistory-offsite log --oneline                                                # pick a version
-git -C ~/backups/arthistory-offsite show <commit>:arthistory.sql.gz.gpg > /tmp/old.sql.gz.gpg     # HEAD = latest
-scripts/restore.sh /tmp/old.sql.gz.gpg arthistory_restored                                       # off-site copy
+scripts/restore.sh ~/backups/arthistory/arthistory-2026-11-07.sql.gz arthistory_restored        # local copy (loads the images file beside it)
+git -C ~/backups/arthistory-offsite pull --quiet                                                 # the latest off-site copy
+scripts/restore.sh ~/backups/arthistory-offsite/arthistory.sql.gz.gpg.00 arthistory_restored     # the parts are joined (images beside it too)
 ```
 To make it live: `pm2 stop arthistory-api`, then as postgres `ALTER DATABASE arthistory RENAME TO arthistory_broken;
 ALTER DATABASE arthistory_restored RENAME TO arthistory;`, `pm2 start arthistory-api`, check `/v1/health`.

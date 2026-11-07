@@ -8,20 +8,20 @@
 const SWEEP_MS = 60 * 1000;
 const IDLE_MS = 10 * 60 * 1000;
 
-function rateLimit({ perMinute, burst = perMinute, name = 'api' }) {
+function rateLimit({ perMinute, burst = perMinute, name = 'api', now = Date.now }) {   // `now`: the tests' clock
   const buckets = new Map();   // ip → { tokens, at }
   const rate = perMinute / 60000;   // tokens per ms
-  let lastSweep = Date.now();
+  let lastSweep = now();
   return (req, res, next) => {
-    const now = Date.now();
-    if (now - lastSweep > SWEEP_MS) {
-      lastSweep = now;
-      for (const [ip, b] of buckets) if (now - b.at > IDLE_MS) buckets.delete(ip);
+    const now_ = now();
+    if (now_ - lastSweep > SWEEP_MS) {
+      lastSweep = now_;
+      for (const [ip, b] of buckets) if (now_ - b.at > IDLE_MS) buckets.delete(ip);
     }
     const ip = req.ip || 'unknown';
-    const b = buckets.get(ip) || { tokens: burst, at: now };
-    b.tokens = Math.min(burst, b.tokens + (now - b.at) * rate);
-    b.at = now;
+    const b = buckets.get(ip) || { tokens: burst, at: now_ };
+    b.tokens = Math.min(burst, b.tokens + (now_ - b.at) * rate);
+    b.at = now_;
     if (b.tokens < 1) {
       buckets.set(ip, b);
       const wait = Math.ceil((1 - b.tokens) / rate / 1000);
