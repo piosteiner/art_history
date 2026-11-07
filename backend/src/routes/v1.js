@@ -1,3 +1,4 @@
+const { rateLimit } = require('../ratelimit');
 const express = require('express');
 const { vocabulary } = require('../vocabulary');
 const { apiPool } = require('../db');
@@ -99,7 +100,9 @@ router.get('/search', async (req, res) => {
 // headline_html = the matching passage, the words in <mark>. ?type=artwork narrows, ?limit= (≤ 100) & ?offset= page.
 const SEARCH_TYPES = ['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'term', 'source', 'event', 'literature'];
 const escapeHtml = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-router.get('/search/text', async (req, res) => {
+// the expensive request: its own, tighter brake (120 a minute, 30 at once per address — src/ratelimit.js)
+const searchLimit = process.env.NODE_ENV === 'test' ? (req, res, next) => next() : rateLimit({ perMinute: 120, burst: 30, name: 'search' });
+router.get('/search/text', searchLimit, async (req, res) => {
   const q = typeof req.query.q === 'string' ? req.query.q.trim().slice(0, 200) : '';
   const type = typeof req.query.type === 'string' && req.query.type ? req.query.type : null;
   if (type && !SEARCH_TYPES.includes(type)) throw badRequest(`type is one of ${SEARCH_TYPES.join(', ')}`);

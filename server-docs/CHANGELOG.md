@@ -4,6 +4,11 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-07
 
+### API rate limit; dependencies updated
+- **What:** `backend/src/ratelimit.js` — a token bucket per client address (in memory, per process): `/v1` 1,200 requests a minute with 300 at once, `/v1/search/text` 120 a minute with 30 at once; beyond that `429 too_many_requests` with `Retry-After`; off under `NODE_ENV=test` (the e2e tests send thousands from one address). Unit test `test/ratelimit.test.js`. Before, the public API had no brake at all (nginx has no `limit_req` either — the admin login has fail2ban, sign-up its own count). Backend dependencies updated within their ranges (`npm update`: express 5.3, pg 8.23.1, playwright 1.65 …; `npm audit`: 0 vulnerabilities in both packages).
+- **Why:** owner 2026-11-07 — "anything else that can be improved?"
+- **Revert:** `git revert`; `backend/deploy.sh`.
+
 ### Monthly query statistics; load-sensitive tests marked slow
 - **What:** `scripts/query-stats.sh` + systemd `arthistory-query-stats.timer` (monthly, 1st 05:00 UTC; units in `config/systemd/`, installed by the owner the same day — README → Query statistics): the slow-queries report to `logs/query-stats-<month>.txt`, then `pg_stat_statements_reset()` (server-docs/README.md → Query statistics). Five tests that failed only when the suite ran beside a deploy or another suite are `test.slow()` (three times the timeout): site "home page without curated views", "full screen map", "lists beyond 500"; backend `authenticity`, `spelling`. The worker's list row per changed artwork measured: 25 ms, almost all in the row's own functions (entity_country, entity_polities, artwork_creators, search fields) — left as is (background work, a batch of 100 in ~0.7 s).
 - **Why:** owner 2026-11-07 — the review's suggestions.

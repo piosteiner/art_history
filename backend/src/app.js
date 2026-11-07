@@ -5,6 +5,7 @@ const config = require('./config');
 const v1 = require('./routes/v1');
 const admin = require('./admin');
 const { HttpError } = require('./http');
+const { rateLimit } = require('./ratelimit');
 
 const app = express();
 app.disable('x-powered-by');
@@ -32,7 +33,10 @@ app.use(helmet({
 const onHost = (host) => (req, res, next) =>
   (req.hostname === host || config.env !== 'production') ? next() : res.status(404).json({ error: 'not_found' });
 
-app.use('/v1', onHost(config.apiHost), cors({ origin: config.corsOrigin }), v1);
+// a brake per client address (src/ratelimit.js): 1,200 requests a minute, 300 at once — a page view needs a dozen,
+// the site's own tests a few hundred a minute; off while the e2e tests run (one address, thousands of requests)
+const limited = process.env.NODE_ENV === 'test' ? [] : [rateLimit({ perMinute: 1200, burst: 300 })];
+app.use('/v1', onHost(config.apiHost), cors({ origin: config.corsOrigin }), ...limited, v1);
 
 app.use((req, res, next) => {
   if (req.hostname !== config.adminHost) return next();
