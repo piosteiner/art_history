@@ -157,6 +157,19 @@ sudo systemctl daemon-reload && sudo systemctl enable --now arthistory-export.ti
 Check: `systemctl list-timers arthistory-export` · `journalctl -u arthistory-export -n 20`. Revert: `sudo systemctl disable --now
 arthistory-export.timer`, remove both units, `daemon-reload`.
 
+## Query statistics (monthly) — prepared 2026-11-07, to install
+On the 1st at ~05:00 UTC, systemd `arthistory-query-stats.timer` → `scripts/query-stats.sh` (units: `config/systemd/`): the
+slow-queries report of the past month (`scripts/slow-queries.sh`: the log's statements over 1 s, pg_stat_statements' most
+expensive) written to `logs/query-stats-<YYYY-MM>.txt` (git-ignored), then `pg_stat_statements_reset()` — so each month's
+report measures that month's code (the statistics had never been reset before; the code review of 2026-11-07 found a
+query that no longer existed at the top). Run now: `scripts/query-stats.sh` (`--keep`: no reset). Check:
+`systemctl list-timers arthistory-query-stats` · `journalctl -u arthistory-query-stats -n 20`. Revert: `sudo systemctl
+disable --now arthistory-query-stats.timer`, remove both units, `daemon-reload`. Install (not done by Claude — needs sudo):
+```
+sudo cp server-docs/config/systemd/arthistory-query-stats.{service,timer} /etc/systemd/system/
+sudo systemctl daemon-reload && sudo systemctl enable --now arthistory-query-stats.timer
+```
+
 ## Watching an auction (Blaquier-Arrieta sale, until 25 November 2026) — prepared 2026-11-01
 Daily at ~08:13 UTC, systemd `arthistory-watch-sale.timer` → `scripts/watch-sale.sh`: Sotheby's lot list and every lot
 page (12 lots, 15 s apart as robots.txt asks, ≈ 3½ min), compared with the day before

@@ -1,0 +1,11 @@
+# Installed at /etc/systemd/system/arthistory-query-stats.service (copy kept in server-docs/config/systemd/).
+# Monthly query statistics — see scripts/query-stats.sh. Logs: journalctl -u arthistory-query-stats
+[Unit]
+Description=Art history: monthly slow-query report, then pg_stat_statements reset
+After=postgresql.service
+
+[Service]
+Type=oneshot
+User=ubuntu
+ExecStart=/var/www/arthistory/scripts/query-stats.sh
+Nice=10

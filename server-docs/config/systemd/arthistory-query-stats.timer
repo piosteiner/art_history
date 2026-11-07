@@ -1,0 +1,11 @@
+# Installed at /etc/systemd/system/arthistory-query-stats.timer. Status: systemctl list-timers arthistory-query-stats
+[Unit]
+Description=Monthly query statistics of the art history database
+
+[Timer]
+OnCalendar=*-*-01 05:00:00 UTC
+RandomizedDelaySec=10min
+Persistent=true
+
+[Install]
+WantedBy=timers.target

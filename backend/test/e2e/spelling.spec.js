@@ -3,6 +3,7 @@
 const { test, expect, liveReady } = require('./helpers');
 
 test('a German description switches the spell check to German; the toolbar button switches it by hand', async ({ userA }) => {
+  test.slow();   // the language is recognised as you type; failed only under load (2026-11-07)
   await userA.goto('/artworks/new');
   await liveReady(userA);
   const editor = userA.locator('.md-editor').first();

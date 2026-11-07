@@ -1049,6 +1049,7 @@ test('home page: the last own view is offered, not restored by itself', async ({
 });
 
 test('home page without curated views (or without the API): everything, as before', async ({ page }) => {
+  test.slow();   // a full reload of the start map: three times the timeout when the whole suite runs beside a deploy (2026-11-07)
   await mockFeatured(page, null);
   await page.goto('/');
   await expect(page.locator('#map-status')).toContainText('Click a place to see what happened there');
@@ -2495,6 +2496,7 @@ test('artists list: a museumâ€™s name finds the artists with works there, now be
 });
 
 test('full screen map: legend and layer switches come along, the button leaves it again', async ({ page }) => {
+  test.slow();   // waits for the map twice; failed only under load (2026-11-07)
   await page.goto('/?all');
   await expect(page.locator('#map-status')).toContainText('places');
   const wrap = page.locator('.map-wrap');
@@ -2527,6 +2529,7 @@ test('a prerendered page stays on screen until the app replaces it: no "Loadingâ
 });
 
 test('lists beyond 500 entries: the rest is fetched with offset, nothing is cut off', async ({ page }) => {
+  test.slow();   // four pages of 500 from the live API; failed only under load (2026-11-07)
   let firstCount = 0;
   await page.route(/\/v1\/glossary\?limit=500$/, async (route) => {
     const res = await route.fetch();

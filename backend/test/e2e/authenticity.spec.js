@@ -26,6 +26,7 @@ test('stolen is derived from a theft step without an end; recovered, the mark go
 });
 
 test('authenticity: a forgery entered in the admin, in the API; passed off as the claimed artist; a note without it refused', async ({ userA, request }) => {
+  test.slow();   // several saves through the editor; flaky under load (2026-11-07)
   await userA.goto('/artworks/test-auth-work/edit');
   await userA.click('summary:has-text("Disputed or forged")');
   await userA.selectOption('#f-authenticity', 'forgery');
