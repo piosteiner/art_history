@@ -11,6 +11,7 @@ git pull --ff-only
 # Dev dependencies stay installed: this checkout is also the dev environment (npm run dev / build:admin), and
 # they are never loaded by the running app — pruning them broke the next local build (2026-09-30).
 npm ci --no-fund --no-audit          # incl. dev deps: esbuild, CodeMirror, Leaflet, Playwright
+npx playwright install chromium > /dev/null   # a Playwright update needs its browser build (2026-11-07: 301 tests failed to launch); a no-op otherwise
 # Known vulnerabilities in the packages the running app loads (not the dev tools): a warning, not a stop — fix with
 # `npm audit fix` and deploy again (2026-10-27: four found after the PHP advisories prompted a look).
 if ! npm audit --omit=dev --audit-level=moderate >/dev/null 2>&1; then
