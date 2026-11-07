@@ -2422,6 +2422,25 @@ test('artworks list: searching a museum lists what is there now first, then what
   await expect(page.locator('.card').first()).toContainText('Now in: Museo del Prado');
 });
 
+test('artworks list: a name in the provenance finds the work — only that holder shown, the link opens its provenance', async ({ page }) => {
+  await page.route(/\/v1\/artworks\?/, async (route) => {
+    const res = await route.fetch().catch(() => null);
+    const body = res && await res.json().catch(() => null);
+    if (!res || !body) return route.abort().catch(() => {});
+    if (body.data.length < 1) return route.fulfill({ response: res });
+    const [a] = body.data.slice(0, 1);
+    // API 241: field "Provenance", the holders with their years, " · " between them
+    a.search_fields = [{ label: 'Provenance', text: 'Ambroise Vollard (1901–1904) · Emil Georg Bührle (1952–1960) · Walter Feilchenfeldt (1952)',
+      match: 'Ambroise Vollard Emil Georg Bührle Walter Feilchenfeldt', tier: { rank: 3, heading: 'With a matching name in the provenance' } }];
+    await route.fulfill({ response: res, json: { ...body, data: [a] } });
+  });
+  await page.goto('/artworks');
+  await page.fill('input.filter', 'bührle');
+  await expect(page.locator('.cards-heading')).toHaveText([/^With a matching name in the provenance \d+$/]);   // one work per page of the list (live data)
+  await expect(page.locator('.card .card-why').first()).toHaveText('Provenance: Emil Georg Bührle (1952–1960) + 2 more');
+  await expect(page.locator('.card .card-link').first()).toHaveAttribute('href', /\?hl=b%C3%BChrle#provenance$/);
+});
+
 test('museums list: an artist’s name finds the museums with their works, most first; the link lists them there', async ({ page }) => {
   const MUSEUM = { slug: 'musee-test', name: 'Musée Test', kind: 'museum', founded: null, image_url: null, country: null, polities: [], names: [] };
   const OTHER = { ...MUSEUM, slug: 'galerie-test', name: 'Galerie Test' };

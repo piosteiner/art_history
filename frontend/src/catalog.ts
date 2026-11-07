@@ -114,11 +114,27 @@ export interface Match {
   why: Html | null;
   /** For ranking across types: 3 = the name starts with the query, 2 = name contains it, 1 = elsewhere. */
   score: number;
+  /** The labels of the hidden fields that matched ("Provenance" — the list links into the entry's provenance) */
+  via: string[];
+  /** The words only those fields have */
+  hidden: string[];
 }
 
 /** `shown`: other text already on screen for this entry (a list card shows more than name + meta). */
 /** What the fields the card shows anyway say (API 110: `shown`) — visible like the name. */
 const shownFields = (e: Entry) => e.fields.filter((f) => f.shown).map((f) => f.match ?? f.text).join(' ');
+
+/** A field listing several items with " · " (API 241: the holders of a provenance with their years) shows only the
+ *  items that matched — "Emil Georg Bührle (1951–1960) + 6 more" rather than the whole chain. An item matched by
+ *  another of its names ("Goering") isn't in the text: then the list is shown as it is. */
+function matchingItems(text: string, words: string[]): string {
+  const items = text.split(' · ');
+  if (items.length < 2) return text;
+  const hit = items.filter((x) => words.some((w) => fold(x).includes(w)));
+  if (!hit.length) return text;
+  const rest = items.length - hit.length;
+  return `${hit.join(' · ')}${rest ? ` + ${String(rest)} more` : ''}`;
+}
 
 export function explain(entry: Entry, query: string, shown = ''): Match {
   const words = queryWords(query);
@@ -131,9 +147,11 @@ export function explain(entry: Entry, query: string, shown = ''): Match {
     name: highlight(entry.name, words),
     meta: highlight(entry.meta, words),
     why: reasons.length
-      ? html`${reasons.map((f, i) => html`${i ? ' · ' : ''}${f.label}: ${highlight(f.text, words)}`)}`
+      ? html`${reasons.map((f, i) => html`${i ? ' · ' : ''}${f.label}: ${highlight(matchingItems(f.text, hidden), words)}`)}`
       : null,
     score: name.startsWith(q) ? 3 : words.every((w) => name.includes(w)) ? 2 : 1,
+    via: reasons.map((f) => f.label),
+    hidden,
   };
 }
 

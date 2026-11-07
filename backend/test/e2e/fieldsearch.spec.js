@@ -31,7 +31,7 @@ async function adminSearch(page, folder, query) {
     const out = [];
     for (const tr of document.querySelectorAll('main table tbody tr')) {
       if (tr.classList.contains('list-group')) { tier = { 'Now in the collection': '1', 'Formerly in the collection': '2', 'With works by a matching artist': '1',
-        'With works now in a matching collection': '1', 'With works formerly in a matching collection': '2' }[tr.textContent.trim()] || '-'; continue; }
+        'With works now in a matching collection': '1', 'With works formerly in a matching collection': '2', 'With a matching name in the provenance': '3' }[tr.textContent.trim()] || '-'; continue; }
       out.push(`${tier} ${tr.querySelector('td a[href]:not([tabindex])').getAttribute('href').split('/').pop()}`);
     }
     return out;
@@ -91,6 +91,21 @@ test('the admin finds what the site finds: museums now and before, birthplaces, 
       expect(groups(admin), `${plural}: "${q}"`).toEqual(groups(site));
     }
   }
+});
+
+test('a name in the provenance finds the work (241): only through it, under its own heading; the years beside the name', async ({ userA, request }) => {
+  sql(`INSERT INTO provenance (artwork_id, position, owner_label, acquired, acquired_label, ended, ended_label)
+       VALUES (entity_id('artwork', 'sunflowers-national-gallery'), 91, 'test-fieldsearch Testine Holderwoman', year_range(1921), '1921', year_range(1930), '1930')`);
+  await expect.poll(() => sql(`SELECT count(*) FROM entry_search_fields_stored f WHERE f.type = 'artwork' AND f.id = entity_id('artwork', 'sunflowers-national-gallery')
+    AND f.label = 'Provenance' AND f.text LIKE '%Testine Holderwoman (1921–1930)%'`), { timeout: 20000 }).toBe('1');
+  await userA.goto('/artworks?q=holderwoman');
+  const rows = userA.locator('main table tbody tr');
+  await expect(rows.first()).toHaveText('With a matching name in the provenance');
+  await expect(rows.filter({ hasText: 'Sunflowers' })).toContainText('Testine Holderwoman (1921–1930)');
+  sql('SELECT refresh_quality()');
+  const list = (await api(request, '/artworks?limit=500')).data;
+  const hits = siteSearch(list, 'title', 'holderwoman');
+  expect(hits).toEqual(['3 sunflowers-national-gallery']);
 });
 
 test('a part is found by every name of its whole: "77 views" finds the prints of a series whose German name has the 77 (217)', async ({ userA }) => {

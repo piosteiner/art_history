@@ -21,6 +21,7 @@ async function saveLifePlaces(db, type, id, life) {
   }
 }
 const express = require('express');
+const { fold } = require('../../fold');
 const { keyExpr, sortKey } = require('../../sortkey');
 const { adminPool } = require('../../db');
 const { BY_TYPE, SLUG, REF_COLUMNS, toRow, readRelationships, readImages } = require('../../content');
@@ -51,6 +52,15 @@ const { docToForm, formToDoc, entityForm, humanize, fieldLabel } = require('../f
 const { PAGE, an, send, draftBanner, unpublishedBanner, unpublishedFields, restoredBanner, withTx, UserError, RULES, friendly, pager, pageParam, relationshipTypes, allEntities, relFromForm, relForm, anOf, typeWarning, CONVERTIBLE, stepFromBody, notFoundPage, formContext, findEntity, pluralParam } = require('../core');
 
 const router = express.Router();
+// a field listing several items with " · " (241: the provenance's holders with their years) shows the items that
+// matched — as the site does (frontend catalog.ts matchingItems)
+function matchingItems(text, q) {
+  const items = String(text).split(' · ');
+  const words = fold(q).split(/\s+/).filter(Boolean);
+  const hit = items.filter((x) => words.some((w) => fold(x).includes(w)));
+  if (items.length < 2 || !hit.length) return text;
+  return `${hit.join(' · ')}${items.length > hit.length ? ` + ${items.length - hit.length} more` : ''}`;
+}
 const SITE = process.env.PUBLIC_SITE_URL || 'https://arthistory.piogino.ch';   // public addresses: /<type>/<number>/<slug> (085)
 router.param('plural', pluralParam);
 
@@ -134,7 +144,7 @@ router.get('/:plural', async (req, res) => {
           : html`<span class="thumb-empty" title="no image"></span>`)}</td>` : ''}<td><a href="/${t.folder}/${r.slug}">${r.name}</a>${r.to_complete ? html` <span class="tag warn" title="created automatically — fill in the details">to complete</span>` : ''}
           ${sources && sources.get(r.slug) ? html`<div class="small">${sources.get(r.slug).siglum}${r.status ? html` <span class="tag">${r.status.replace('_', ' ')}</span>` : ''}</div>` : ''}
           ${r.creators ? html`<div class="muted small">${r.creators}</div>` : ''}
-          ${r.why ? html`<div class="small search-why">${r.why.map((f, j) => html`${j ? ' · ' : ''}<span class="muted">${f.label}:</span> ${f.text}`)}</div>` : ''}
+          ${r.why ? html`<div class="small search-why">${r.why.map((f, j) => html`${j ? ' · ' : ''}<span class="muted">${f.label}:</span> ${matchingItems(f.text, q)}`)}</div>` : ''}
           ${!/[A-Za-zÀ-ɏ]/.test(r.name) && r.sort_key !== r.name ? html`<div class="muted small">${r.sort_key}</div>` : q && r.alt ? html`<div class="muted small">${r.alt}</div>` : ''}</td><td class="muted">${r.slug}</td>
           <td>${r.rels}</td><td class="muted">${r.updated_at.toISOString().slice(0, 10)}</td></tr>`)}
       </tbody></table></div>` : html`<p class="muted">Nothing found.</p>`}

@@ -55,7 +55,7 @@ function fieldSearchSql(t, alias = 't') {
   // One pass over the type's fields, grouped per entry (a hash join), then the details only for the hits through the
   // primary key — not, for every entry, a scan of all the type's fields (3,500 artworks × 28,000 fields: 12 s at 10×
   // today's data). A word can't match across the space between two joined fields: it has no space in it.
-  const hay = 'lower(f_unaccent(coalesce(f.match, f.text)))';
+  const hay = 'f.hay';   // lower(f_unaccent(coalesce(match, text))), stored (242)
   return `
     WITH q AS (SELECT array_remove(regexp_split_to_array(lower(f_unaccent(btrim($1))), '\\s+'), '') AS words,
                       lower(f_unaccent(btrim($1))) AS phrase),

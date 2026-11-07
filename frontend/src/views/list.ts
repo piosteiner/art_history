@@ -124,10 +124,10 @@ function preview(plural: Plural, item: AnyItem, image: string | null | undefined
  * One card. While searching, the matched words are highlighted and `why` names the hidden field that matched
  * ("Born in: Zundert").
  */
-export function card(plural: Plural, item: AnyItem, words: string[] = [], why: Html | null = null, typeLabel = '', extra: Html | null = null): Html {
+export function card(plural: Plural, item: AnyItem, words: string[] = [], why: Html | null = null, typeLabel = '', extra: Html | null = null, to = ''): Html {
   const { name, date, detail, image } = cardParts(plural, item);
   return html`<li class="card">
-    <a class="card-link" href="${href(plural, item.slug)}">
+    <a class="card-link" href="${href(plural, item.slug)}${to}">
       ${preview(plural, item, image, 250, 'card-img') ?? html`<span class="card-img card-img-empty" aria-hidden="true"></span>`}
       <span class="card-text">
         ${typeLabel ? html`<span class="card-type">${typeLabel}</span>` : ''}
@@ -146,11 +146,11 @@ export function card(plural: Plural, item: AnyItem, words: string[] = [], why: H
  * One row of the compact list: the name (and its original) in the first column, the date line and the detail beside
  * it — on a phone below it. A small picture only where the entry has one and the list shows pictures (`thumbs`).
  */
-function row(plural: Plural, item: AnyItem, words: string[] = [], why: Html | null = null, extra: Html | null = null, thumbs = false): Html {
+function row(plural: Plural, item: AnyItem, words: string[] = [], why: Html | null = null, extra: Html | null = null, thumbs = false, to = ''): Html {
   const { name, date, detail, image } = cardParts(plural, item);
   const orig = original(item);
   return html`<li class="row${thumbs ? ' row-thumbs' : ''}">
-    <a class="row-link" href="${href(plural, item.slug)}">
+    <a class="row-link" href="${href(plural, item.slug)}${to}">
       ${thumbs ? preview(plural, item, image, 120, 'row-img') ?? html`<span class="row-img" aria-hidden="true"></span>` : ''}
       <span class="row-name"><span class="card-name"${langAttr(displayName(item as never).lang)}>${highlight(name, words)}</span>${
         orig ? html` <span class="card-original"${langAttr(orig.lang)}>${highlight(orig.text, words)}</span>` : ''}</span>
@@ -352,9 +352,12 @@ export function list(main: HTMLElement, plural: Plural) {
       const p = cardParts(plural, e.item);
       const byArtist = heldMatched(e, words);
       // a museum found through an artist: how many of their works, linked to them (instead of "Works by: …")
-      const why = query_ && !byArtist.length ? explain(e, query_, `${p.date} ${p.detail} ${original(e.item)?.text ?? ""}`).why : null;
+      const m = query_ && !byArtist.length ? explain(e, query_, `${p.date} ${p.detail} ${original(e.item)?.text ?? ""}`) : null;
+      const why = m?.why ?? null;
+      // found through a name in its provenance (API 241): the work opens at its Provenance with the name marked
+      const to = m?.via.includes('Provenance') ? `?hl=${encodeURIComponent(query_.trim())}#provenance` : '';
       const extra = byArtist.length ? html`${byArtist.map((a, i) => html`${i ? ' · ' : ''}${worksLink(e, a)}`)}` : null;
-      return view === 'rows' ? row(plural, e.item, words, why, extra, thumbs) : card(plural, e.item, words, why, '', extra);
+      return view === 'rows' ? row(plural, e.item, words, why, extra, thumbs, to) : card(plural, e.item, words, why, '', extra, to);
     };
     const worksOf = (e: Entry<AnyItem>) => heldMatched(e, words).reduce((n, a) => n + a.now + a.before, 0);
     const list = heldBy ? holdingSections(hits) : ordered(hits, query_, sort);
