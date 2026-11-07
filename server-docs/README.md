@@ -157,14 +157,14 @@ sudo systemctl daemon-reload && sudo systemctl enable --now arthistory-export.ti
 Check: `systemctl list-timers arthistory-export` · `journalctl -u arthistory-export -n 20`. Revert: `sudo systemctl disable --now
 arthistory-export.timer`, remove both units, `daemon-reload`.
 
-## Query statistics (monthly) — prepared 2026-11-07, to install
+## Query statistics (monthly) — installed 2026-11-07
 On the 1st at ~05:00 UTC, systemd `arthistory-query-stats.timer` → `scripts/query-stats.sh` (units: `config/systemd/`): the
 slow-queries report of the past month (`scripts/slow-queries.sh`: the log's statements over 1 s, pg_stat_statements' most
 expensive) written to `logs/query-stats-<YYYY-MM>.txt` (git-ignored), then `pg_stat_statements_reset()` — so each month's
 report measures that month's code (the statistics had never been reset before; the code review of 2026-11-07 found a
 query that no longer existed at the top). Run now: `scripts/query-stats.sh` (`--keep`: no reset). Check:
 `systemctl list-timers arthistory-query-stats` · `journalctl -u arthistory-query-stats -n 20`. Revert: `sudo systemctl
-disable --now arthistory-query-stats.timer`, remove both units, `daemon-reload`. Install (not done by Claude — needs sudo):
+disable --now arthistory-query-stats.timer`, remove both units, `daemon-reload`. Installed by the owner on 2026-11-07 with:
 ```
 sudo cp server-docs/config/systemd/arthistory-query-stats.{service,timer} /etc/systemd/system/
 sudo systemctl daemon-reload && sudo systemctl enable --now arthistory-query-stats.timer
