@@ -671,6 +671,26 @@ test('a set\'s members, and a hidden member\'s message in the set\'s chat', asyn
   await expect(chat).not.toContainText('Something unkind');
   await chat.locator('[data-reveal="1"]').click();
   await expect(chat).toContainText('Something unkind');
+  // a bubble as small as its text (2026-11-07: the markup's line breaks made them tall)
+  const bubble = chat.locator('.chat-msg[data-id="1"]');
+  expect((await bubble.boundingBox())!.height).toBeLessThan(70);
+  // a click on someone's message: profile, friend request, report, block
+  await page.route('http://admin.test/site/friends/person/8', (route) => route.fulfill({ contentType: 'application/json',
+    headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' },
+    body: JSON.stringify({ id: '8', name: 'Ann Owner', status: 'none', common: [{ id: '56', name: 'Fuji together', topic: null, theirs: true }], public: [{ name: 'Hokusai basics', topic: 'Japanese art', code: 'abcdefghijkl', count: 12 }] }) }));
+  await bubble.locator('.chat-open').click();
+  await expect(bubble.locator('.chat-menu [role=menuitem]')).toHaveText(['User profile', 'Send a friend request', 'Report message', 'Block user']);
+  await page.keyboard.press('Escape');
+  await expect(bubble.locator('.chat-menu')).toHaveCount(0);
+  await bubble.locator('.chat-open').click();
+  await bubble.locator('.chat-menu [data-act=profile]').click();
+  const profile = page.locator('dialog.profile-dialog[open]');
+  await expect(profile.locator('h2')).toHaveText('Ann Owner');
+  await expect(profile.locator('.profile-sets a').first()).toHaveAttribute('href', '/sets/56');
+  await expect(profile.locator('.profile-sets a').nth(1)).toHaveAttribute('href', '/sets/s/abcdefghijkl');
+  await expect(profile).toContainText('12 entries');
+  await profile.locator('.profile-close').click();
+  await expect(page.locator('dialog.profile-dialog')).toHaveCount(0);
   // shown again for good, from the members list
   await members.locator('[data-hide="8"]').click();
   await expect.poll(() => posts).toContain('/chat/hide:account=8&hide=0');

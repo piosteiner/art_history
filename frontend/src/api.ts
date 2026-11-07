@@ -330,6 +330,9 @@ export interface ChatMessage { id: string; mine: boolean; body: string; at: stri
 export const getFriends = () => account<{ me: { public_name: string | null; friend_code: string }; people: Person[]; unread: number }>('/friends');
 export const friendAction = (action: 'request' | 'accept' | 'decline' | 'withdraw' | 'remove' | 'block' | 'unblock', id: string) =>
   account<{ status?: FriendStatus } | null>(`/friends/${action}`, form({ account: id })).then((r) => { window.dispatchEvent(new Event('friends-changed')); return r; });
+/** A person's profile (owner 2026-11-07): public name, the viewer's friendship with them, sets shared with the viewer, their public sets */
+export interface PersonProfile { id: string; name: string; status: FriendStatus; common: { id: string; name: string; topic: string | null; theirs: boolean }[]; public: { name: string; topic: string | null; code: string; count: number }[] }
+export const getPerson = (id: string) => account<PersonProfile>(`/friends/person/${id}`);
 export const requestByCode = (code: string) => account<{ status: FriendStatus }>('/friends/request', form({ code }));
 export const getFriendLink = (code: string) => account<{ name: string; status: FriendStatus | 'me' }>(`/friends/link/${code}`);
 export const newFriendCode = () => account<{ friend_code: string }>('/friends/code', form({ new: '1' }));

@@ -2,6 +2,13 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-07
+
+### Site: a set's chat — compact bubbles, a menu on others' messages, profiles
+- **What:** chat bubbles as small as their text (`white-space: pre-wrap` only on `.chat-body` — the markup's line breaks had made them tall; also the friends' chat). Someone else's message in a set's chat is a button opening a menu (fixed above the page): User profile, Send / Accept a friend request, Report message, Block user (`friendAction('block')`, with the site's dialog), for the set's owner Delete message — the inline "report" link is gone. Profile = `frontend/src/profile.ts` (`showProfile()`, site dialog): public name, friendship, sets the two share, their public sets; backend `GET /site/friends/person/:id` (`site-friends.js`; only accounts with a public name, like everything on Friends).
+- **Why:** owner 2026-11-07 — bubbles "way too large and narrow"; report as an option when clicking a message; the options profile, friend request, report, block; a profile with the public name, common sets and public sets.
+- **Revert:** `git revert` the commit, `backend/deploy.sh`; Pages redeploys.
+
 ## 2026-11-06
 
 ### Site: friend requests in the header

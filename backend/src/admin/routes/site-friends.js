@@ -16,6 +16,7 @@
 //   POST /site/friends/chat/:id             body → {message}   (friends only)
 //   POST /site/friends/chat/:id/delete      message=<id> (one's own: gone for both) | all=1 (the conversation, for oneself)
 //   POST /site/friends/chat/:id/report      note → 201 — a copy of the last 100 messages to the admins
+//   GET  /site/friends/person/:id           {id, name, status, common: [{id, name, topic, theirs}], public: [{name, topic, code, count}]}
 //   GET  /site/friends/events               text/event-stream: `message` {from, id} and `read` {by} as they happen;
 //                                           `friend` {} when a request between the account and someone changed
 // The stream: Postgres NOTIFY chat (a trigger on chat_messages) → this process LISTENs on a connection of its own →
@@ -85,6 +86,21 @@ router.get('/', async (req, res) => {
 });
 
 // a request: to someone from the list, or by their friend link; a request the other way already open = accepted
+// a person's profile (owner 2026-11-07, from a message in a set's chat): their public name, how the viewer stands to
+// them, the sets they share with the viewer (sets the viewer can open anyway) and their public sets — nothing else
+router.get('/person/:id', async (req, res) => {
+  const o = await other(req, req.params.id);
+  if (!o) return fail(res, 404, 'not_found');
+  const isIn = (who) => `(s.owner_id = ${who} OR EXISTS (SELECT 1 FROM study_set_members m WHERE m.set_id = s.id AND m.account_id = ${who}))`;
+  const [{ rows: common }, { rows: published }] = await Promise.all([
+    adminPool.query(`SELECT s.id::text AS id, s.name, s.topic, s.owner_id = $1 AS theirs FROM study_sets s
+      WHERE ${isIn('$1')} AND ${isIn('$2')} ORDER BY s.name COLLATE sort_natural LIMIT 100`, [o.id, req.user.id]),
+    adminPool.query(`SELECT s.name, s.topic, s.share_code AS code, (SELECT count(*)::int FROM study_set_items i WHERE i.set_id = s.id) AS count
+      FROM study_sets s WHERE s.owner_id = $1 AND s.visibility = 'public' AND s.share_code IS NOT NULL ORDER BY s.updated_at DESC LIMIT 100`, [o.id]),
+  ]);
+  res.json({ id: o.id, name: o.name, status: statusOf(o, req.user.id), common, public: published });
+});
+
 router.post('/request', async (req, res) => {
   if (needName(req, res)) return;
   let id = req.body.account;

@@ -28,6 +28,7 @@
 // "Name it"): the low boxes come first; a card not known comes back once at the end of the round. Every round is kept
 // with its result (per set and kind of quiz: the set page's "Your results"); visitors learn too, nothing is kept.
 import { ask, askText } from '../dialog';
+import { showProfile } from '../profile';
 import { account } from '../account';
 import {
   answerCard, answerInvitation, ApiError, copySnapshot, forgetResults, getResults, getSnapshot, cancelInvitation, changeMember, chatEvents, copyOwnSet, copySet, createSet, decideProposal, deleteSet, deleteSetChat,
@@ -627,10 +628,62 @@ function setChat(box: HTMLElement, id: string, owner: boolean) {
     : m.deleted ? html`<li class="chat-msg chat-deleted muted small"><i>${m.deleted === 'owner' ? 'message deleted by the owner of the set' : 'message deleted'}</i></li>`
       : m.hidden ? html`<li class="chat-msg chat-hidden muted small" data-id="${m.id}"><i>${m.hidden === 'blocked' ? 'You have blocked this user; their message is hidden.' : 'You have hidden this user\'s message.'}</i>
         <button type="button" class="link-button" data-reveal="${m.id}" title="You hid ${m.by ?? 'them'} in this chat — show this one message">show</button></li>`
-      : html`<li class="chat-msg${m.mine ? ' mine' : ''}" data-id="${m.id}"><b class="chat-by">${m.by ?? '—'}</b> <span class="chat-body">${m.body}</span>
-        <span class="chat-meta muted small">${when(m.at)}
-          ${m.mine || owner ? html` <button type="button" class="link-button" data-del="${m.id}" title="${m.mine ? 'Delete your message' : 'Delete as the owner of the set'}">delete</button>` : ''}
-          ${m.mine ? '' : html` <button type="button" class="link-button" data-report-msg="${m.id}">report</button>`}</span></li>`);
+      : m.mine || !m.by_id ? html`<li class="chat-msg${m.mine ? ' mine' : ''}" data-id="${m.id}"><b class="chat-by">${m.by ?? '—'}</b> <span class="chat-body">${m.body}</span><span class="chat-meta muted small">${when(m.at)}${m.mine || owner ? html` · <button type="button" class="link-button" data-del="${m.id}" title="${m.mine ? 'Delete your message' : 'Delete as the owner of the set'}">delete</button>` : ''}</span></li>`
+        // someone else's message: a click on it opens what one can do about it or its author (owner 2026-11-07)
+        : html`<li class="chat-msg" data-id="${m.id}" data-by="${m.by_id}"><button type="button" class="chat-open" aria-haspopup="menu" aria-expanded="false" title="Profile, friend request, report, block"><b class="chat-by">${m.by ?? '—'}</b> <span class="chat-body">${m.body}</span><span class="chat-meta muted small">${when(m.at)}</span></button></li>`);
+  let friends: Promise<Map<string, FriendStatus>> | null = null;
+  const closeMenus = (except?: Element) => box.querySelectorAll('.chat-menu').forEach((x) => { if (x !== except) { x.previousElementSibling?.setAttribute('aria-expanded', 'false'); x.remove(); } });
+  async function openMenu(li: HTMLElement, opener: HTMLButtonElement, status: HTMLElement) {
+    const old = li.querySelector('.chat-menu');
+    closeMenus();
+    if (old) return;
+    const who = li.dataset.by!;
+    const name = li.querySelector('.chat-by')?.textContent ?? 'them';
+    const st = (await (friends ??= friendStatuses())).get(who) ?? 'none';
+    const menu = document.createElement('div');
+    menu.className = 'chat-menu';
+    menu.setAttribute('role', 'menu');
+    render(menu, html`<button type="button" role="menuitem" data-act="profile">User profile</button>
+      ${st === 'none' ? html`<button type="button" role="menuitem" data-act="befriend">Send a friend request</button>`
+        : st === 'received' ? html`<button type="button" role="menuitem" data-act="accept">Accept their friend request</button>`
+        : st === 'sent' ? html`<button type="button" role="menuitem" disabled>Friend request sent</button>` : ''}
+      <button type="button" role="menuitem" data-act="report">Report message</button>
+      ${st === 'blocked' ? '' : html`<button type="button" role="menuitem" data-act="block" class="danger-text">Block user</button>`}
+      ${owner ? html`<button type="button" role="menuitem" data-act="delete" class="danger-text">Delete message</button>` : ''}`);
+    // above the page at the message (the list scrolls and would cut it off): below it, or above it if there's no room
+    li.append(menu);
+    const at = opener.getBoundingClientRect(), h = menu.offsetHeight;
+    menu.style.left = `${String(Math.max(8, Math.min(at.left, window.innerWidth - menu.offsetWidth - 8)))}px`;
+    menu.style.top = `${String(at.bottom + 4 + h > window.innerHeight - 8 ? Math.max(8, at.top - 4 - h) : at.bottom + 4)}px`;
+    li.closest('.chat-list')!.addEventListener('scroll', () => closeMenus(), { once: true });
+    window.addEventListener('scroll', () => closeMenus(), { once: true });
+    opener.setAttribute('aria-expanded', 'true');
+    menu.querySelector<HTMLButtonElement>('button:not([disabled])')?.focus();
+    menu.addEventListener('keydown', (e) => { if (e.key === 'Escape') { closeMenus(); opener.focus(); } });
+    menu.addEventListener('click', async (e) => {
+      const act = (e.target as Element).closest<HTMLButtonElement>('[data-act]')?.dataset.act;
+      if (!act) return;
+      closeMenus();
+      const fail = (err: Error) => { status.textContent = err.message; };
+      const refriend = () => { friends = null; };
+      if (act === 'profile') showProfile(who, refriend);
+      else if (act === 'befriend') friendAction('request', who).then(() => { refriend(); status.textContent = `Friend request sent to ${name}.`; }).catch(fail);
+      else if (act === 'accept') friendAction('accept', who).then(() => { refriend(); status.textContent = `You and ${name} are friends now.`; }).catch(fail);
+      else if (act === 'report') {
+        const note = await askText('Report this message to the site\'s administrators?', { title: 'Report message', label: 'What happened? (optional)', multiline: true, maxLength: 1000, ok: 'Report' });
+        if (note !== null) reportSetChat(id, { message: li.dataset.id! }, note).then(() => { status.textContent = 'Reported — thank you.'; }).catch(fail);
+      } else if (act === 'block') {
+        if (await ask(`Their messages are hidden for you in every chat, a friendship or request between you ends, and they can't send you a new one. You can unblock them on Friends.`, { title: `Block ${name}?`, ok: 'Block', danger: true }))
+          friendAction('block', who).then(() => { refriend(); return load(); }).catch(fail);
+      } else if (act === 'delete') {
+        if (await ask('Everyone sees “message deleted by the owner of the set”.', { title: 'Delete this message?', ok: 'Delete', danger: true }))
+          deleteSetChat(id, li.dataset.id!).then(load).catch(fail);
+      }
+    });
+  }
+  // a click elsewhere closes an open menu
+  const outside = (e: MouseEvent) => { if (!document.body.contains(box)) { document.removeEventListener('click', outside); return; } if (!(e.target as Element).closest('.chat-msg')) closeMenus(); };
+  document.addEventListener('click', outside);
   const load = () => getSetChat(id).then((r) => {
     if (!r) return;
     if (!r.on) {
@@ -659,6 +712,7 @@ function setChat(box: HTMLElement, id: string, owner: boolean) {
     const ta = form.querySelector('textarea')!;
     form.addEventListener('submit', (e) => { e.preventDefault(); const b = ta.value.trim(); if (!b) return; postSetChat(id, b).then(() => { ta.value = ''; return load(); }).catch((err: Error) => { status.textContent = err.message; }); });
     ta.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); } });
+    ol.addEventListener('click', (e) => { const b = (e.target as Element).closest<HTMLButtonElement>('.chat-open'); if (b) void openMenu(b.closest('li')!, b, status); });
     box.querySelectorAll<HTMLButtonElement>('[data-reveal]').forEach((b) => b.addEventListener('click', () => {
       const m = shown.find((x) => x.id === b.dataset.reveal);
       if (m) { m.hidden = null; b.closest('li')!.outerHTML = line(m).value; }
@@ -672,7 +726,6 @@ function setChat(box: HTMLElement, id: string, owner: boolean) {
       if (note === null) return;
       reportSetChat(id, what, note).then(() => { status.textContent = 'Reported — thank you.'; }).catch((err: Error) => { status.textContent = err.message; });
     };
-    box.querySelectorAll<HTMLButtonElement>('[data-report-msg]').forEach((b) => b.addEventListener('click', () => report({ message: b.dataset.reportMsg! }, 'this message')));
     box.querySelectorAll<HTMLButtonElement>('[data-report-user]').forEach((b) => b.addEventListener('click', () => report({ account: b.dataset.reportUser! }, 'this member (their name)')));
     box.querySelectorAll<HTMLButtonElement>('[data-remove]').forEach((b) => b.addEventListener('click', async () => {
       if ((await ask('Remove them from the chat? Everyone sees that they were removed; they stay an editor of the set unless you remove them there too.', { title: 'Remove them from the chat?', ok: 'Remove', danger: true }))) setChatMember(id, 'remove', b.dataset.remove!).then(load).catch((err: Error) => { status.textContent = err.message; });

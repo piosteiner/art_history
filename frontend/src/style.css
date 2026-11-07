@@ -1515,9 +1515,24 @@ button.danger { border-color: var(--accent); color: var(--accent); }
 .unread-badge[hidden] { display: none; }
 .chat-list { list-style: none; padding: .5rem; margin: .5rem 0; display: flex; flex-direction: column; gap: .4rem; max-height: 60vh; overflow-y: auto;
   border: 1px solid var(--line); border-radius: 8px; }
-.chat-msg { align-self: flex-start; max-width: 80%; padding: .35rem .6rem; border-radius: 10px; background: var(--panel, rgba(127,127,127,.1)); white-space: pre-wrap; overflow-wrap: anywhere; }
-.chat-msg.mine { align-self: flex-end; background: color-mix(in srgb, var(--accent) 16%, transparent); }
-.chat-msg .chat-meta { display: block; margin-top: .1rem; }
+/* a bubble as small as its text (only the text keeps its line breaks — not the markup's), up to three quarters wide */
+.chat-msg { position: relative; align-self: flex-start; max-width: min(75%, 40rem); padding: .3rem .65rem .3rem; border-radius: 12px 12px 12px 4px; background: var(--panel, rgba(127,127,127,.1)); overflow-wrap: anywhere; line-height: 1.4; }
+.chat-msg .chat-body { white-space: pre-wrap; }
+.chat-msg.mine { align-self: flex-end; border-radius: 12px 12px 4px 12px; background: color-mix(in srgb, var(--accent) 16%, transparent); }
+.chat-msg .chat-meta { display: block; margin-top: .05rem; font-size: .75rem; text-align: right; }
+/* someone else's message is a button: a click opens what one can do (profile, friend request, report, block) */
+.chat-msg:has(> .chat-open) { padding: 0; }
+.chat-open { display: block; width: 100%; padding: .3rem .65rem; border: 0; border-radius: inherit; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.chat-open:hover, .chat-open[aria-expanded="true"] { background: color-mix(in srgb, var(--text) 6%, transparent); }
+.chat-menu { position: fixed; z-index: 50; min-width: 13rem; display: grid; padding: .3rem; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); box-shadow: var(--shadow); }
+.chat-menu button { padding: .4rem .7rem; border: 0; border-radius: 6px; background: none; color: var(--text); font: inherit; font-size: .92rem; text-align: left; cursor: pointer; }
+.chat-menu button:hover:not([disabled]), .chat-menu button:focus-visible { background: var(--picked-bg); }
+.chat-menu button[disabled] { color: var(--muted); cursor: default; }
+.chat-menu .danger-text { color: var(--prov-d); }
+.chat-list { overflow-x: hidden; }
+/* a person's profile */
+.profile-dialog section h3 { margin: 0 0 .3rem; font-family: var(--serif); font-size: 1.05rem; }
+.profile-sets { margin: 0; padding-left: 1.1rem; display: grid; gap: .2rem; }
 .chat-system, .chat-deleted { align-self: center; background: none; }
 .chat-form { display: flex; gap: .5rem; align-items: flex-end; }
 .chat-form textarea { flex: 1; min-height: 2.6rem; }
