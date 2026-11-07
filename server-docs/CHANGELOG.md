@@ -4,6 +4,11 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-07
 
+### Content: Bührle collection — check against the Kunsthaus, Nazi-period entries described, study set
+- **What:** the Kunsthaus Zürich's 217 search hits for "bührle" (snapshot of 2 November, `docs.json` in the session scratchpad) all matched to our entries (record number or inventory number). Our list search finds 207 of them: 205 through "Formerly in: Foundation E.G. Bührle Collection", 2 by title; the 10 gifts to the Kunsthaus carry Bührle only as a person in the provenance, which the list's search fields don't include. `geheime-staatspolizei` and `franzosischer-staat` converted from person to institution (`convert_entry`, 5 provenance steps). 18 sources (Proveana; the foundation's history pages and press release of 28 June 2024); descriptions for Emil Bührle, the foundation, ERR, Gestapo, CCP München, Galerie Fischer, Theodor Fischer, Galerie Aktuaryus, Fritz Nathan, Göring, Hofer, Rochlitz, Paul Rosenberg, Alphonse Kann, Walter Feilchenfeldt, Arthur Kauffmann; events "Lucerne Auction of Degenerate Art" (1939) and "Swiss Looted Property Rulings of 1948". Study set 8 "Sammlung Bührle" (258 entries, private).
+- **Why:** owner 2026-11-07.
+- **Revert:** History page per row; `DELETE FROM study_sets WHERE id = 8`.
+
 ### Site: "+ Set" fixed at the bottom right, locked sets hidden in it; lock without redrawing; equal bars
 - **What:** `frontend/src/sets-button.ts`: the "+ Set" button is fixed above the feedback button (panel opens upwards); locked sets are hidden from its list behind "Show N locked sets" (remembered in localStorage `arthistory.set-menu.locked`). Set page: Lock/Unlock updates the button and the title's tag in place instead of drawing the page again (it flashed); the owner's copy button says "Make a copy"; results: today's bars and the boxes' bars in one grid, equally wide. Content: Sotheby's lot 7 (Degas, *Avant la course*) — Brody step ends "1968 or later", Lefevre consigned 1974 (provenance 4715, 4718).
 - **Why:** owner 2026-11-07.
