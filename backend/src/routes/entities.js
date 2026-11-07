@@ -629,10 +629,11 @@ const EXTRAS = {
       SELECT t.slug, t.name, t.category::text AS category, t.definition FROM glossary t
       LEFT JOIN calendar_era_links l ON l.term_id = t.id LEFT JOIN calendar_eras e ON e.id = l.era_id
       WHERE t.parent_id = $1 ORDER BY lower(e.period) NULLS LAST, ${sortKey('term', 't')}`, [id])).rows,
+    // the texts linking the term — from the stored links (203), not the view over every text (66 → 1.5 ms, 2026-11-07)
     used_in: (await apiPool.query(`
-      SELECT e.type::text AS type, e.slug, e.name FROM glossary_links l
-      JOIN glossary g ON g.slug = l.term_slug JOIN entity_index e ON (e.type, e.id) = (l.entity_type, l.entity_id)
-      WHERE g.id = $1 AND NOT (e.type = 'term' AND e.id = $1) ORDER BY ${natural('e.sort_key')}`, [id])).rows,
+      SELECT e.type::text AS type, e.slug, e.name FROM content_links_stored l
+      JOIN glossary g ON g.id = $1 AND g.slug = l.target_slug JOIN entity_index e ON (e.type, e.id) = (l.entity_type, l.entity_id)
+      WHERE l.target_type = 'term' AND NOT (e.type = 'term' AND e.id = $1) ORDER BY ${natural('e.sort_key')}`, [id])).rows,
   }),
   movement: async (id) => ({
     ancestors: (await apiPool.query(ancestorsSql('movements'), [id])).rows,

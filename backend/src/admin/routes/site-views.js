@@ -12,7 +12,7 @@ const { renderMarkdown, linkNames } = require('../../markdown');
 const router = express.Router();
 const ID = /^[1-9][0-9]{0,17}$/;
 const MAX_VIEWS = 200;
-const fail = (res, status, error) => res.status(status).json({ error });
+const { fail } = require('../site-http');
 const text = (v, max) => String(v ?? '').replace(/\r\n/g, '\n').trim().slice(0, max);
 // the start map's own query, nothing else: no address of another site, no script — its keys as the site writes them
 const cleanQuery = (q) => {

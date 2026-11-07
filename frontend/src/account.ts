@@ -2,6 +2,7 @@
 // which sends the browser back here with ?login=1. Only then — remembered in localStorage — does a page ask the admin
 // host who is logged in; visitors' pages never contact it. Logged in, artwork pages show the account's private
 // reference images (views/detail.ts).
+import { plural } from './format';
 import { ADMIN, chatEvents, getAccount, getFriends, getOwnThumbs, getPrivateImages, logOut, loginUrl, signupUrl, type Me, type PrivateImage } from './api';
 import { setOwnThumbs, gallery } from './html';
 import { html, render } from './html';
@@ -119,7 +120,6 @@ function watchUnread(badge: HTMLElement, dot: HTMLElement) {
   window.addEventListener('chat-read', () => { void count(); });
   window.addEventListener('friends-changed', () => { void count(); });
 }
-const plural = (n: number, word: string) => `${String(n)} ${word}${n === 1 ? '' : 's'}`;
 
 /** The logged-in account's name, or null (visitors: at once, without asking the admin host). */
 export const account = () => who;

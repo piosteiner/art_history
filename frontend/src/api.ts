@@ -58,13 +58,16 @@ const listPlural = (path: string) => {
 // The API's moments away (a deploy reloads it, a busy database answers 503 "try again"): a reading request tries again
 // twice, after 1.5 and 4 s, before the page shows an error.
 const RETRY_STATUS = new Set([502, 503, 504]);
+// an answer that never comes (a stalled connection) ends after TIMEOUT_MS as an error the page shows, instead of
+// "Loading…" for ever (2026-11-07); a timeout is not retried (the server is reachable, just slow)
+const TIMEOUT_MS = 25_000;
 async function fetchRetry(url: string, init: RequestInit, waits = [1500, 4000]): Promise<Response> {
   for (let i = 0; ; i++) {
     try {
-      const res = await fetch(url, init);
+      const res = await fetch(url, { ...init, signal: AbortSignal.timeout(TIMEOUT_MS) });
       if (!RETRY_STATUS.has(res.status) || i >= waits.length) return res;
     } catch (err) {
-      if (i >= waits.length || (err as Error).name === 'AbortError') throw err;
+      if (i >= waits.length || (err as Error).name === 'AbortError' || (err as Error).name === 'TimeoutError') throw err;
     }
     await new Promise((resolve) => setTimeout(resolve, waits[i]));
   }
@@ -303,7 +306,7 @@ export const ADMIN: string | null = (import.meta.env.VITE_ADMIN_BASE as string |
 export interface PrivateImage { url: string; source: string | null; locator: string | null; width: number; height: number }
 async function account<T>(path: string, init: RequestInit = {}): Promise<T | null> {
   if (!ADMIN) return null;
-  const res = await fetch(`${ADMIN}/site${path}`, { ...init, credentials: 'include', headers: { Accept: 'application/json' } });
+  const res = await fetch(`${ADMIN}/site${path}`, { ...init, credentials: 'include', headers: { Accept: 'application/json' }, signal: AbortSignal.timeout(TIMEOUT_MS) });
   if (res.status === 401) return null;
   if (!res.ok) {
     const body = await res.json().catch(() => null) as { error?: string } | null;

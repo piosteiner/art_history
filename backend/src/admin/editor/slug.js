@@ -2,9 +2,10 @@
 // dropped (Dürer → durer), anything else removed. On a new entry the slug follows the name/title until you edit the
 // slug yourself (clearing it hands it back to the title). Same rules as the server's slugify (src/admin/autocreate.js).
 import { plain, splitLine } from '../../names';
+import { fold } from '../../fold';
 
-const clean = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/ß/g, 'ss')
-  .replace(/[\s_]+/g, '-').replace(/[^a-z0-9-]/g, '').replace(/-{2,}/g, '-').replace(/^-/, '');
+// as the server's src/slug.js, but a trailing hyphen stays while typing (see slugify below)
+const clean = (s) => fold(s).replace(/[\s_]+/g, '-').replace(/[^a-z0-9-]/g, '').replace(/-{2,}/g, '-').replace(/^-/, '');
 // while typing a trailing hyphen stays (you are about to type the next word); a finished slug has none
 const slugify = (s) => clean(s).replace(/-$/, '').slice(0, 80);
 

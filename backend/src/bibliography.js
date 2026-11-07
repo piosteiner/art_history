@@ -151,9 +151,16 @@ function locator(text, kind) {
   return t;
 }
 
+// The catalogue is asked for by every text with a citation and every entry page (400,000 times a week, the whole
+// table each time): kept, and read again only when the table changed — its row count and last change are one cheap
+// query (2026-11-07). Per process; a change by another process (the import script) shows in the next request.
+let kept = null;   // { stamp, catalogue }
 async function loadCatalogue(db) {
+  const { rows: [s] } = await db.query('SELECT count(*)::text || \'/\' || coalesce(max(updated_at)::text, \'\') AS stamp FROM bibliography');
+  if (kept && kept.stamp === s.stamp) return kept.catalogue;
   const { rows } = await db.query('SELECT * FROM bibliography');
-  return catalogue(rows);
+  kept = { stamp: s.stamp, catalogue: catalogue(rows) };
+  return kept.catalogue;
 }
 
 module.exports = { LANG, T, KINDS, full, baseSiglum, catalogue, locator, loadCatalogue, esc };

@@ -262,9 +262,11 @@ async function linkNames(db, texts) {
     for (const m of text.matchAll(LINK_ALL)) refs.add(`${m[1] || 'term'}/${m[2]}`);
   }
   if (!refs.size) return new Map();
+  // the slug alone first: pushed into every table of entity_index, their slug indexes answer (2026-11-07)
+  const slugOf = (r) => r.slice(r.indexOf('/') + 1);
   const { rows } = await db.query(`
     SELECT type::text || '/' || slug AS ref, name FROM entity_index
-    WHERE type::text || '/' || slug = ANY ($1)`, [[...refs]]);
+    WHERE slug = ANY ($2) AND type::text || '/' || slug = ANY ($1)`, [[...refs], [...refs].map(slugOf)]);
   const names = new Map(rows.map((r) => [r.ref, r.name]));
   // a link to an old slug (a working copy from before a rename; saving corrects it, migration 042) isn't missing:
   // the old address redirects
@@ -273,7 +275,7 @@ async function linkNames(db, texts) {
     const { rows: renamed } = await db.query(`
       SELECT h.entity_type::text || '/' || h.old_slug AS ref, e.name FROM slug_history h
       JOIN entity_index e ON e.type = h.entity_type AND e.id = h.entity_id
-      WHERE h.entity_type::text || '/' || h.old_slug = ANY ($1)`, [old]);
+      WHERE h.old_slug = ANY ($2) AND h.entity_type::text || '/' || h.old_slug = ANY ($1)`, [old, old.map(slugOf)]);
     for (const r of renamed) names.set(r.ref, r.name);
   }
   // citations: the whole bibliography (sigla are disambiguated across it — "Jacobsen 1992a"; it is small)

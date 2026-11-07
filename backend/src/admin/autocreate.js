@@ -12,8 +12,8 @@ const { BY_TYPE, SLUG } = require('../content');
 
 const AUTO_TYPES = new Set(['artist', 'institution']);  // types that need nothing but a name
 
-const slugify = (s) => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
-  .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80) || 'entry';
+const { slugify: slugOf } = require('../slug');
+const slugify = (s) => slugOf(s) || 'entry';
 async function freeSlug(db, t, base) {
   let slug = slugify(base);
   for (let i = 2; (await db.query(`SELECT 1 FROM ${t.table} WHERE slug = $1`, [slug])).rows.length; i += 1) slug = `${slugify(base)}-${i}`;

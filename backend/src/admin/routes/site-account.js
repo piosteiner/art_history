@@ -72,7 +72,7 @@ router.get('/signup', async (req, res) => {
   res.json({ open: s.open && s.today < s.daily_limit, url: `${adminOrigin(req)}/signup` });
 });
 
-const needLogin = (req, res, next) => (req.user ? next() : res.status(401).json({ error: 'not_logged_in' }));
+const { needLogin } = require('../site-http');
 router.use('/account', needLogin, (req, res, next) => { res.set('Cache-Control', 'no-store'); next(); });
 
 router.get('/account', async (req, res) => {

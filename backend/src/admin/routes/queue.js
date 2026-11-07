@@ -250,7 +250,7 @@ router.post('/quality/batch/cite', async (req, res) => {
 // page: each costs a request per source.
 // ---------------------------------------------------------------------------------------------------------------
 const IMAGES_PER_PAGE = 4;
-const fold = (t) => String(t).normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();  // accents off: Édouard = Edouard
+const { fold } = require('../../fold');   // accents off: Édouard = Edouard — the one rule (src/fold.js)
 const HITS_PER_SOURCE = 3;
 router.get('/quality/batch/images', async (req, res) => {
   const { rows: all } = await adminPool.query(`

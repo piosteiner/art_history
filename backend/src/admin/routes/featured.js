@@ -29,8 +29,7 @@ function normalizeQuery(input) {
   return parts.join('&');
 }
 
-const slugify = (s) => String(s || '').normalize('NFD').replace(/\p{M}/gu, '').toLowerCase()
-  .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60);
+const slugify = (s) => require('../../slug').slugify(s, 60);
 
 async function problemsOf(db, id) {
   return (await db.query('SELECT problem FROM featured_view_problems WHERE id = $1', [id])).rows.map((r) => r.problem);

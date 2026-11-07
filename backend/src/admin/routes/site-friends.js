@@ -28,11 +28,10 @@ const { adminPool } = require('../../db');
 const config = require('../../config');
 
 const router = express.Router();
-const ID = /^[1-9][0-9]{0,17}$/;
 const CODE = /^[A-Za-z0-9_-]{12}$/;
 const MAX_BODY = 4000;
 const PAGE = 50;
-const fail = (res, status, error) => res.status(status).json({ error });
+const { fail, ID } = require('../site-http');
 const newCode = () => crypto.randomBytes(9).toString('base64url');
 const pair = (a, b) => (BigInt(a) < BigInt(b) ? [String(a), String(b)] : [String(b), String(a)]);
 const ALIVE = (alias) => `${alias}.deleted_at IS NULL AND ${alias}.disabled_at IS NULL`;

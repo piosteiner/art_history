@@ -3,17 +3,23 @@
 //   password (the current one asked; other sessions end), log out everywhere else, and — for site-only accounts —
 //   delete the account with everything it holds. A forgotten password: the owner sets a new one (no e-mail is kept).
 // Logged out: Log in / Create an account (when sign-up is open).
+import { day } from '../format';
 import { ask } from '../dialog';
 import { account, rememberLogin } from '../account';
 import {
   changePassword, deleteAccount, endOtherSessions, getAccountInfo, getSignup, loginUrl, setPublicName, signupUrl, ADMIN, type AccountInfo,
 } from '../api';
-import { html, render } from '../html';
+import { html, render, type Html } from '../html';
 
 const KIND = { member: 'Site account', editor: 'Site and CMS (editor)', admin: 'Site and CMS (admin)' } as const;
-const day = (iso: string) => new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 
 /** "Log in" and, while sign-up is open, "Create an account" — both back to this page afterwards. */
+/** A page shown to visitors where an account is needed: the title, a text, the Log in / Sign up links, more (2026-11-07) */
+export function loggedOutPage(main: HTMLElement, cls: string, title: string, text: Html, more: Html | '' = '') {
+  render(main, html`<section class="page ${cls}"><h1>${title}</h1>${text}<p class="account-links-slot">…</p>${more}</section>`);
+  accountLinks().then((links) => { const p = main.querySelector('.account-links-slot'); if (p) render(p, links); }).catch(() => {});
+}
+
 export async function accountLinks(path = location.pathname + location.search) {
   const next = new URL(path, location.origin);
   next.searchParams.set('login', '1');

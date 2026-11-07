@@ -133,7 +133,9 @@ router.get('/search/text', async (req, res) => {
     near AS (
       SELECT type, id FROM entity_index
       WHERE ($2::entity_type IS NULL OR type = $2)
-        AND (f_unaccent($1) <% f_unaccent(name) OR f_unaccent($1) <% f_unaccent(coalesce(alt_text, ''))))
+        -- alt_text as the view defines it, without coalesce: only so the trigram indexes on the other names answer
+        -- (with the coalesce every table was scanned — 1.5 s at 10× today's data, 2026-11-07); NULL OR false drops the row as before
+        AND (f_unaccent($1) <% f_unaccent(name) OR f_unaccent($1) <% f_unaccent(alt_text)))
     SELECT e.type, e.slug, e.public_id, e.name, e.kind, range_json(e.period, e.period_label) AS period,
            CASE WHEN p.id IS NULL OR p.in_name THEN 'name' WHEN p.part = 'entry' THEN 'text' ELSE 'provenance' END AS matched_in,
            coalesce(p.provenance_ids, '{}') AS provenance_ids,

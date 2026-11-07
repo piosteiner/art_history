@@ -572,7 +572,7 @@ test('the account page: public name, password, other sessions; visitors get Log 
 test('visitors: /sets and /account offer Log in and, while open, Create an account', async ({ page }) => {
   await loggedIn(page, { login: false });
   await page.goto('/sets');
-  await expect(page.locator('.sets-account-links a', { hasText: 'Create an account' })).toHaveAttribute('href', /^http:\/\/admin\.test\/signup\?next=/);
+  await expect(page.locator('.account-links-slot a', { hasText: 'Create an account' })).toHaveAttribute('href', /^http:\/\/admin\.test\/signup\?next=/);
   await page.goto('/account');
   await expect(page.locator('main a', { hasText: 'Log in' })).toBeVisible();
 });

@@ -3,6 +3,7 @@
 // personal friend link, blocked accounts; /friends/<id>: the chat with a friend, live (Server-Sent Events: a message
 // arrives while the page is open); /friends/add/<code>: someone's friend link — send them a request.
 // People are shown by their public name only.
+import { when } from '../format';
 import { chatText, emoteHover, emotesReady, suggest } from '../emotes';
 import { ask, askText } from '../dialog';
 import {
@@ -10,12 +11,11 @@ import {
   type ChatMessage, type Person,
 } from '../api';
 import { html, render, type Html } from '../html';
-import { accountLinks } from './account';
+import { loggedOutPage } from './account';
 
 interface FriendsRoute { id: string | null; add: string | null; profile?: boolean }
 let stream: EventSource | null = null;
 const closeStream = () => { stream?.close(); stream = null; };
-const when = (iso: string) => new Date(iso).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
 const STATUS: Record<Person['status'], string> = { friend: 'friend', sent: 'request sent', received: 'wants to be your friend', none: '', blocked: 'blocked' };
 const KEY = 'arthistory:friends:by';
 
@@ -29,11 +29,7 @@ export function friendsPage(main: HTMLElement, route: FriendsRoute) {
   return closeStream;
 }
 
-function loggedOut(main: HTMLElement) {
-  render(main, html`<section class="page friends-page"><h1>Friends</h1><p>Log in to see the people you work with on study sets, and to chat with your friends.</p>
-    <p class="friends-account-links">…</p></section>`);
-  accountLinks().then((links) => { const p = main.querySelector('.friends-account-links'); if (p) render(p, links); }).catch(() => {});
-}
+const loggedOut = (main: HTMLElement) => loggedOutPage(main, 'friends-page', 'Friends', html`<p>Log in to see the people you work with on study sets, and to chat with your friends.</p>`);
 
 function listView(main: HTMLElement, note = '') {
   getFriends().then((r) => {

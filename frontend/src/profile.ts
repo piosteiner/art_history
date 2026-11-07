@@ -2,10 +2,10 @@
 // two have in common and the person's public sets — in the site's own dialog (from a message in a set's chat) and as
 // a page of its own, /friends/<id>/profile (names on Friends and in members' lists link there).
 // Nothing else about an account is shown anywhere — the public name is all others know.
+import { plural } from './format';
 import { friendAction, getPerson, type FriendStatus, type PersonProfile } from './api';
 import { html, render } from './html';
 
-const plural = (n: number, w: string, ws = `${w}s`) => `${String(n)} ${n === 1 ? w : ws}`;
 const statusLine = (s: FriendStatus) => ({ friend: 'You are friends.', sent: 'You have sent them a friend request.', received: 'They have sent you a friend request.', blocked: 'You have blocked them.', none: '' })[s];
 
 /** where a person's name leads */
