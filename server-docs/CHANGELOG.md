@@ -4,6 +4,11 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-07
 
+### Documentation: why sign-up has no CAPTCHA
+- **What:** a paragraph "**Kein CAPTCHA.**" in the CMS page `projekt-dokumentation` (chapter "Lernen: Quiz, Lernsets und Konten", after the sentence on the daily limit): the decision of 2026-11-05 against a CAPTCHA at "Create an account" — a third party's script would see every visitor (against the privacy statement's "no tracking"), a hurdle for people, no sure barrier for bots — and the three brakes instead (honeypot field, 3 per address an hour, the daily limit of 50 across the site), what the limit protects beyond the database (public spam, scrypt load, time to notice), the downside on a day with real demand, and what would come before a third party's service if spam ever became a problem. Written by script (`scratchpad/doc-captcha.js`, audited as account 1; no draft was open).
+- **Why:** the owner asked whether the decision is documented — it was only in the session of 2026-11-05 and the code comment of `routes/signup.js`.
+- **Revert:** CMS → Pages → projekt-dokumentation → history (one revision).
+
 ### Backup: off-site copy repaired (dump over 100 MB, images apart, latest only)
 - **What:** the nightly backup's off-site push had failed since 4 November: the dump passed GitHub's 100 MB file limit (122 MB on the 4th; 359 MB from the 5th with the reference images — `private_images`, 309 MB). Dump and verify kept working; the local 14 days were complete. `scripts/backup.sh`: the dump in two files (the data without the images' bytes; the images apart, hard-linked to the day before when unchanged), the encrypted files cut into parts of 95 MB, the off-site repo rewritten as a new root commit each time (latest only — with history it grew 100–400 MB a day; local `git gc` after the push), the images part pushed only when changed. `scripts/restore.sh` joins the parts and loads the images file beside a dump. README → Backups.
 - **Why:** found in the review of 2026-11-07 (`journalctl -u arthistory-backup`: "failed to push some refs", "the remote end hung up unexpectedly").
