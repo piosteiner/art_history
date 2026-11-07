@@ -38,7 +38,7 @@ async function adminSearch(page, folder, query) {
   });
 }
 
-test.afterAll(() => sql(`DELETE FROM provenance WHERE owner_label = 'test-fieldsearch' OR (artwork_id = entity_id('artwork', 'sunflowers-national-gallery') AND owner_institution_id = entity_id('institution', 'van-gogh-museum'))`));
+test.afterAll(() => sql(`DELETE FROM provenance WHERE owner_label LIKE 'test-fieldsearch%' OR (artwork_id = entity_id('artwork', 'sunflowers-national-gallery') AND owner_institution_id = entity_id('institution', 'van-gogh-museum'))`));
 
 test('the admin finds what the site finds: museums now and before, birthplaces, types — and typos as similar names', async ({ userA, request }) => {
   // the Sunflowers were once at the Van Gogh Museum
