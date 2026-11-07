@@ -4,7 +4,7 @@ Base URL `https://api.arthistory.piogino.ch/v1`. Read-only, JSON, CORS for `http
 Responses are cacheable for 60 s (`Cache-Control`) and carry an `ETag`. Entities are addressed by **slug**.
 Thumbnails: `GET /v1/thumb?src=<image url>&w=120|250|330|500|800` — a WebP of an image of ours from a museum's server
 (only URLs of our images; cached a year). Wikimedia images use Wikimedia's own thumbnails.
-Errors: `{"error": "bad_request" | "not_found" | "timeout" | "too_many_requests" | "internal_error", "message": "…"}`. A client address gets 1,200 requests a minute (300 at once), the full-text search 120 (30 at once); beyond that `429` with `Retry-After` (2026-11-07).
+Errors: `{"error": "bad_request" | "not_found" | "timeout" | "too_many_requests" | "internal_error", "message": "…"}`. A client address gets 1,200 requests a minute (300 at once), the full-text search 120 (15 at once); beyond that `429` with `Retry-After` (2026-11-07).
 Relationships, the graph, presence/artwork maps, crossed paths and the inferences under provenance steps come from
 the stored graph (`graph_links`, migration 126), list rows from `entry_list_rows` (127): a change shows there within
 a moment (usually a second), not in the same instant.
