@@ -92,6 +92,9 @@ Admin panel: WebSocket `/live` (presence, drafts) proxied by nginx with Upgrade 
 `/home/ubuntu/books` (700, outside the repo; since 2026-10-30): PDFs of the owner's books, read with Claude and cited
 before Wikipedia — Mason, *History of Japanese Art* (chapters + front/back matter), Portal, *Korea: Art and
 Archaeology* (scan, OCR). Under copyright: never into the repo or a public page; not in the backups.
+Also course materials: `War and Peace FS19/` (Thomsen lecture) and `art-and-totalitarianism/` (seminar Beatrice/Marinho,
+UZH HS 2024 — readings, programmes, slides, the owner's notes and paper; downloaded 2026-11-07 from the owner's shared
+Google Drive folder, 37 files, 461 MB).
 
 ## API keys for outside data (open to-do)
 Sources of the admin panel's image search that need a key of our own — without it the source is not offered

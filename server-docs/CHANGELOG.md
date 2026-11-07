@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-07
 
+### Emotes in the chats (7TV, as on the adenai map) — migration 240
+- **What:** table `chat_emotes` (one row: 7TV sources + the emotes last fetched, audited); `backend/src/admin/emotes.js` (ported from adenai-map `server/routes/emotes.js`: user name → active set, set link/id, `global`; first source wins a name), CMS page `/emotes` (admins only: sources, add, ↑ order, remove, Refresh, the emotes as a grid — `routes/emotes.js`), `GET /site/emotes` (name → url/w/h, a minute in memory). Site `frontend/src/emotes.ts`: `:name:` → picture in friends' and sets' chats only (`chatText()`), `:` + letters → suggestions (Enter picks before "Enter sends"), larger on hover; pictures from cdn.7tv.app without referrer. Seeded with the owner's 7TV user `piogino` (fetched on the first Refresh). Privacy statement: paragraph "Emotes in the chats", last updated 7 November 2026.
+- **Why:** owner 2026-11-07 — emotes as on the adenai map, only in the chats.
+- **Revert:** `git revert`; `DROP TABLE chat_emotes` (new migration), remove the privacy paragraph.
+
+### Site: set page — study block, today's results, chat earlier; profiles; request tag
+- **What:** set page order: Manage → (members for non-owners) → chat → one card "Study the N entries" (Today's study set as a panel as tall as the quiz settings) → results with "Today's study set" (today's cards done of done + left, right, today's rounds — backend `statsOf()` `today`) and "Overall" → entries. Less space above Chat/Members titles, more above the chat's Members. Profile page `/friends/<id>/profile` (`frontend/src/profile.ts` `profilePage()`, same content as the dialog); names on Friends and in members' lists link there; a request shows "N shared sets" as a tag linking to it. Set list previews: a citation in brackets of its own shows its siglum instead of "()" (`previewText()` in `src/markdown.js`).
+- **Why:** owner 2026-11-07.
+- **Revert:** `git revert` the commit, `backend/deploy.sh`.
+
 ### Site: a set's chat — compact bubbles, a menu on others' messages, profiles
 - **What:** chat bubbles as small as their text (`white-space: pre-wrap` only on `.chat-body` — the markup's line breaks had made them tall; also the friends' chat). Someone else's message in a set's chat is a button opening a menu (fixed above the page): User profile, Send / Accept a friend request, Report message, Block user (`friendAction('block')`, with the site's dialog), for the set's owner Delete message — the inline "report" link is gone. Profile = `frontend/src/profile.ts` (`showProfile()`, site dialog): public name, friendship, sets the two share, their public sets; backend `GET /site/friends/person/:id` (`site-friends.js`; only accounts with a public name, like everything on Friends).
 - **Why:** owner 2026-11-07 — bubbles "way too large and narrow"; report as an option when clicking a message; the options profile, friend request, report, block; a profile with the public name, common sets and public sets.

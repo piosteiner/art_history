@@ -29,6 +29,13 @@ test('friends: a request by friend link, accepted; a chat only the two see; read
   expect(seenByA).toEqual(expect.objectContaining({ name: 'Test Bo', status: 'received' }));
   await call(userA, 'post', '/friends/accept', { account: b }, 204);
   expect((await call(userB, 'get', '/friends', null, 200)).people.find((p) => p.id === a).status).toBe('friend');
+  // a profile (2026-11-07): the public name, the friendship, the sets in common, the public sets — no one else's
+  sql(`INSERT INTO study_sets (owner_id, name, visibility, share_code) VALUES (${a}, 'Test set chat — Ann public', 'public', 'TestPublic01'), (${a}, 'Test set chat — Ann private', 'private', NULL)`);
+  const profile = await call(userB, 'get', `/friends/person/${a}`, null, 200);
+  expect(profile).toEqual(expect.objectContaining({ id: a, name: 'Test Ann', status: 'friend', common: [] }));
+  expect(profile.public.map((x) => [x.name, x.code])).toEqual([['Test set chat — Ann public', 'TestPublic01']]);
+  await call(userB, 'get', `/friends/person/${b}`, null, 404);   // not one's own
+  await call(userB, 'get', '/friends/person/999999999', null, 404);
 
   // the chat: written, unread for the other, read on opening; no one else can open it
   const { message } = await call(userB, 'post', `/friends/chat/${a}`, { body: 'Hello Ann — the Fuji set?' }, 201);

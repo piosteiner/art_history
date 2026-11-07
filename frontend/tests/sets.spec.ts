@@ -119,7 +119,8 @@ async function loggedIn(page: Page, { login = true, conflict = false } = {}) {
     if (m![2] === '/sessions') { rounds.push(`${s.id}:${form.get('mode')}:${form.get('known')}/${form.get('answered')}:${form.get('complete')}`); return json(route, { ok: true }, 201); }
     if (m![2] === '/stats') {
       return json(route, { modes: { forward: { rounds: 2, answered: 5, known: 4, recent: [100, 67], best: 100, last_at: '2026-11-04T12:00:00Z', seconds: 95 } },
-        boxes: { forward: [0, 1, 1, 0, 0, 0], reverse: [2, 0, 0, 0, 0, 0] }, hardest: [{ type: 'artwork', slug: 'the-great-wave-off-kanagawa', name: 'The Great Wave off Kanagawa', seen: 2, known: 1 }], plan: plan() });
+        boxes: { forward: [0, 1, 1, 0, 0, 0], reverse: [2, 0, 0, 0, 0, 0] }, hardest: [{ type: 'artwork', slug: 'the-great-wave-off-kanagawa', name: 'The Great Wave off Kanagawa', seen: 2, known: 1 }], plan: plan(),
+        today: { forward: { done: 1, right: 1 }, reverse: { done: 0, right: 0 }, rounds: 1, answered: 1, known: 1, seconds: 20 } });
     }
     if (m![2] === '/plan') { examOn = form.get('exam_on') || null; posts.push(`plan:${examOn ?? ''}`); return json(route, { plan: plan() }); }
     // members, links (228)
@@ -392,12 +393,18 @@ test('an exam date plans the day\'s cards: the days counted, today\'s cards stud
   account.sets.push({ id: '9', name: 'Exam: Edo', topic: null, description: null, visibility: 'private', code: null,
     items: ['the-great-wave-off-kanagawa', 'nishiki-e', 'katsushika-hokusai'].map((slug) => ({ type: (CARD[slug] as { type: string }).type, slug, name: slug })) });
   await page.goto('/sets/9');
-  await expect(page.locator('.sets-plan h2')).toHaveText('Today');
+  // one card "Study the 3 entries": today's study set beside the quiz settings; the chat would come before it
+  await expect(page.locator('.sets-learn > h2')).toHaveText('Study the 3 entries');
+  await expect(page.locator('.sets-plan h3')).toHaveText("Today's study set");
   await expect(page.locator('.sets-plan-today')).toContainText('Name it: 1 card to review + 1 new');
+  // results: today's study set — done of today's cards — and overall
+  await expect(page.locator('.sets-stats .sets-results-sub')).toHaveText(["Today's study set", 'Overall']);
+  await expect(page.locator('.sets-today-row').first()).toContainText('1 of 3 done · 1 right');
+  await expect(page.locator('.sets-stats')).toContainText('Today: 1 round · 1 of 1 known (100 %)');
   await expect(page.locator('.sets-today-count')).toHaveText('(2 Name it · 1 Describe it)');
   await page.fill('.sets-exam-form input[type=date]', '2026-11-17');
   await page.locator('.sets-exam-form button[type=submit]').click();
-  await expect(page.locator('.sets-plan h2')).toHaveText('Exam in 12 days');
+  await expect(page.locator('.sets-plan h3')).toHaveText("Today's study set · exam in 12 days");
   await expect(page.locator('.sets-plan')).toContainText(/Tuesday,? 17 November 2026/);
   expect(account.posts).toContain('plan:2026-11-17');
 
@@ -414,7 +421,7 @@ test('an exam date plans the day\'s cards: the days counted, today\'s cards stud
   // the date removed
   await page.goto('/sets/9');
   await page.locator('.sets-exam-remove').click();
-  await expect(page.locator('.sets-plan h2')).toHaveText('Today');
+  await expect(page.locator('.sets-plan h3')).toHaveText("Today's study set");
   expect(errors).toEqual([]);
 });
 
@@ -649,12 +656,17 @@ test('a set\'s members, and a hidden member\'s message in the set\'s chat', asyn
       { id: '9', name: 'Me Editor', role: 'editor', rights: 'full', via: 'link', since: '2026-11-02T12:00:00Z', added: 1, me: true, chat: true, chat_allowed: false, removed: false, hidden: false }] });
     if (path === '/chat') return json({ on: true, removed: false, more: false,
       members: [{ id: '8', name: 'Ann Owner', owner: true, removed: false, me: false, hidden }, { id: '9', name: 'Me Editor', owner: false, removed: false, me: true, hidden: false }],
-      messages: [{ id: '1', kind: 'message', by: 'Ann Owner', by_id: '8', mine: false, body: 'Something unkind', at: '2026-11-05T09:00:00Z', deleted: null, hidden: hidden ? 'hidden' : null },
+      messages: [{ id: '1', kind: 'message', by: 'Ann Owner', by_id: '8', mine: false, body: 'Something unkind :catJAM: :nope:', at: '2026-11-05T09:00:00Z', deleted: null, hidden: hidden ? 'hidden' : null },
         { id: '2', kind: 'message', by: 'Cy Blocked', by_id: '10', mine: false, body: 'Spam from a blocked one', at: '2026-11-05T09:01:00Z', deleted: null, hidden: 'blocked' }] });
     if (path === '/stats') return json({ modes: {}, boxes: { forward: [0, 0, 0, 0, 0, 0], reverse: [0, 0, 0, 0, 0, 0] }, hardest: [] });
     if (path === '/chat/hide') return route.fulfill({ status: 204, headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' } });
     return json({});
   });
+  // emotes in the chats (240): ":catJAM:" a picture, an unknown name stays text
+  const PIXEL = 'data:image/gif;base64,R0lGODlhAQABAAAAACw=';
+  await page.route('http://admin.test/site/emotes', (route) => route.fulfill({ contentType: 'application/json',
+    headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' },
+    body: JSON.stringify({ emotes: { catJAM: { url: PIXEL, w: 28, h: 28 }, catKiss: { url: PIXEL, w: 56, h: 28 } } }) }));
   await page.goto('/sets/56');
   const members = page.locator('#sets-members');
   await expect(members.locator('li')).toHaveCount(2);
@@ -671,6 +683,14 @@ test('a set\'s members, and a hidden member\'s message in the set\'s chat', asyn
   await expect(chat).not.toContainText('Something unkind');
   await chat.locator('[data-reveal="1"]').click();
   await expect(chat).toContainText('Something unkind');
+  await expect(chat.locator('.chat-msg[data-id="1"] img.emote')).toHaveAttribute('alt', ':catJAM:');
+  await expect(chat.locator('.chat-msg[data-id="1"]')).toContainText(':nope:');
+  // ":cat" offers both; Enter picks the first instead of sending
+  await chat.locator('.chat-form textarea').fill('hi :ca');
+  await chat.locator('.chat-form textarea').press('t');   // typed: an input event
+  await expect(page.locator('.emote-suggest li')).toHaveText([':catJAM:', ':catKiss:']);
+  await chat.locator('.chat-form textarea').press('Enter');
+  await expect(chat.locator('.chat-form textarea')).toHaveValue('hi :catJAM: ');
   // a bubble as small as its text (2026-11-07: the markup's line breaks made them tall)
   const bubble = chat.locator('.chat-msg[data-id="1"]');
   expect((await bubble.boundingBox())!.height).toBeLessThan(70);

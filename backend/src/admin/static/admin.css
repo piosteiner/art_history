@@ -786,3 +786,11 @@ label.check > span { flex: 1; }
 /* the entry's own web page, offered first in a sources dialog (editor/cites.js offerWebPage) */
 .cite-webpage { margin: 0 0 .6rem; }
 .cite-chip-webpage { font-weight: 600; }
+
+/* emotes in the chats (240) */
+.emote-sources { padding-left: 1.4em; display: grid; gap: .3em; }
+.emote-sources .error { color: var(--danger, #b3261e); margin-left: .5em; }
+.emote-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr)); gap: .5rem; }
+.emote-grid figure { margin: 0; display: grid; justify-items: center; gap: .15rem; padding: .3rem; border: 1px solid var(--line, #ddd); border-radius: 6px; }
+.emote-grid img { height: 28px; width: auto; }
+.emote-grid figcaption { font-size: .75rem; overflow-wrap: anywhere; text-align: center; }

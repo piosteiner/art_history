@@ -311,6 +311,9 @@ async function account<T>(path: string, init: RequestInit = {}): Promise<T | nul
   }
   return res.status === 204 ? null : (res.json() as Promise<T>);
 }
+/** Emotes in the chats (backend 240, owner 2026-11-07): name → picture, from 7TV — the same for everyone */
+export interface Emote { url: string; w: number; h: number }
+export const getEmotes = () => account<{ emotes: Record<string, Emote> }>('/emotes').then((r) => r?.emotes ?? {});
 /** Works that only have this account's reference images: slug → the image's address (none for visitors). */
 export const getOwnThumbs = () => account<{ images: Record<string, string> }>('/thumbs').then((r) => r?.images ?? {});
 /** The logged-in account, or null: member = the site only; editor, admin = also the CMS (backend migration 220). */
@@ -444,6 +447,8 @@ export interface StudyStats {
   /** per direction: [new, box 1 … box 5] */
   boxes: { forward: number[]; reverse: number[] };
   hardest: { type: EntityType; slug: string; name: string; seen: number; known: number }[];
+  /** today's study set (2026-11-07): the set's cards answered today per direction (right = right the last time), today's rounds */
+  today?: { forward: { done: number; right: number }; reverse: { done: number; right: number }; rounds: number; answered: number; known: number; seconds: number };
   plan?: StudyPlan;
 }
 /** Where a set is read from: the account's own (`/sets/<id>`) or a shared one (`/shared/<code>`). */

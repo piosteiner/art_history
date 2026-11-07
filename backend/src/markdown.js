@@ -233,8 +233,15 @@ const firstParagraph = (text) => (text || '').split(/\n[ \t]*\n/).map((p) => p.t
   .find((p) => p && !/^(#|[-*+>|]\s|\d+[.)]\s|```|---)/.test(p)) || '';
 const ENTITIES = { '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'", '&nbsp;': ' ' };
 function previewText(text, env = {}, max = 300) {
-  const para = firstParagraph(text);
+  let para = firstParagraph(text);
   if (!para) return null;
+  // a citation in brackets of its own — "(lecture, 2019 ([[source/thomsen-2019]]))" — would leave "()" once its
+  // footnote number is dropped: its short reference instead, "(Thomsen 2019)" (owner 2026-11-07)
+  const sources = env.names && env.names.sources;
+  if (sources) para = para.replace(/\(\s*\[\[source\/([^\]|]+)(?:\|([^\]]*))?\]\]\s*\)/g, (m, slug, loc) => {
+    const src = sources.get(slug);
+    return src ? `(${src.siglum}${loc ? `, ${loc}` : ''})` : m;
+  });
   const html = renderMarkdown(para, { names: env.names });
   // nonTextTags: dropped with their content — footnote numbers (sup) and the notes themselves (section)
   const plain = sanitizeHtml(html, { allowedTags: [], allowedAttributes: {},

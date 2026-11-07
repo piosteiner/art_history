@@ -26,6 +26,8 @@ test('friends: by set and A–Z, a request accepted, a chat sent and shown', asy
       headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' } });
     if (path === '/friends') return json(route, { me: { public_name: 'Test Me', friend_code: 'FriendCode12' }, people: people(), unread: 1 });
     if (path === '/friends/accept') { accepted = true; return route.fulfill({ status: 204, headers: { 'access-control-allow-origin': new URL(page.url()).origin, 'access-control-allow-credentials': 'true' } }); }
+    if (path === '/friends/person/4') return json(route, { id: '4', name: 'Cy Third', status: 'none', common: [{ id: '55', name: 'Baroque exam', topic: null, theirs: false }],
+      public: [{ name: 'Caravaggio basics', topic: 'Baroque', code: 'abcdefghijkl', count: 7 }] });
     if (path === '/friends/chat/2' && req.method() === 'GET') return json(route, { friend: { id: '2', name: 'Ann Helper' }, messages, more: false });
     if (path === '/friends/chat/2') {
       const m = { id: String(messages.length + 1), mine: true, body: form.get('body')!, at: '2026-11-05T09:05:00Z', read: false };
@@ -38,6 +40,9 @@ test('friends: by set and A–Z, a request accepted, a chat sent and shown', asy
   await expect(page.locator('h1')).toHaveText('Friends');
   await expect(page.locator('.friends-group h2')).toHaveText(['Baroque exam']);   // a request waits under Requests
   await expect(page.locator('.friends-requests')).toContainText('Bo Other wants to be your friend');
+  // how many sets they share with you, and their profile one click away (2026-11-07)
+  await expect(page.locator('.friends-requests .friend-shared')).toHaveText('no shared sets');
+  await expect(page.locator('.friends-requests .friend-shared')).toHaveAttribute('href', '/friends/3/profile');
   await expect(page.locator('.friends-link input')).toHaveValue(/\/friends\/add\/FriendCode12$/);
   await page.locator('.friends-requests [data-do="accept"]').click();
   await expect(page.locator('.friends-requests')).toHaveCount(0);
@@ -47,8 +52,16 @@ test('friends: by set and A–Z, a request accepted, a chat sent and shown', asy
   await expect(page.locator('.friends-list .friend-name')).toHaveText(['Ann Helper', 'Bo Other', 'Cy Third']);
   await expect(page.locator('.friend', { hasText: 'Cy Third' }).locator('[data-do="request"]')).toBeVisible();
 
+  // a name leads to the profile: sets in common, public sets, a friend request
+  await page.locator('.friend', { hasText: 'Cy Third' }).locator('a.friend-name').click();
+  await expect(page).toHaveURL(/\/friends\/4\/profile$/);
+  await expect(page.locator('h1')).toHaveText('Cy Third');
+  await expect(page.locator('.profile-sets a')).toHaveText(['Baroque exam', 'Caravaggio basics']);
+  await expect(page.locator('.profile-sets a').nth(1)).toHaveAttribute('href', '/sets/s/abcdefghijkl');
+  await expect(page.locator('[data-friend="request"]')).toBeVisible();
+  await page.goBack();
   // the chat with a friend
-  await page.locator('.friend', { hasText: 'Ann Helper' }).locator('a.friend-name').click();
+  await page.locator('.friend', { hasText: 'Ann Helper' }).locator('a', { hasText: 'Chat' }).click();
   await expect(page).toHaveURL(/\/friends\/2$/);
   await expect(page.locator('.chat-msg')).toHaveText([/Hi — shall we do the Fuji set\?/]);
   await page.fill('.chat-form textarea', 'Yes, let us.');

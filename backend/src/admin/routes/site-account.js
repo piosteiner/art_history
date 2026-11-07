@@ -52,6 +52,16 @@ router.use('/shared', require('./site-sets').shared);
 router.use('/friends', require('./site-friends'));   // friends and chat (224)
 router.use('/views', require('./site-views'));       // the account's own start-map views (227)
 
+// emotes in the chats (240): name → picture, the same for everyone; kept a minute in memory
+let emoteCache = null;
+router.get('/emotes', async (req, res) => {
+  if (!emoteCache || emoteCache.at < Date.now() - 60000) {
+    const { emotes } = await require('../emotes').load(adminPool);
+    emoteCache = { at: Date.now(), body: { emotes: Object.fromEntries(Object.entries(emotes).map(([n, e]) => [n, { url: e.url, w: e.w, h: e.h }])) } };
+  }
+  res.set('Cache-Control', 'public, max-age=300').json(emoteCache.body);
+});
+
 router.get('/me', (req, res) => (req.user
   ? res.json({ username: req.user.username, role: req.user.role, cms: req.user.cms, public_name: req.user.public_name })
   : res.status(401).json({ error: 'not_logged_in' })));

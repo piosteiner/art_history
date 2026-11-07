@@ -28,7 +28,8 @@
 // "Name it"): the low boxes come first; a card not known comes back once at the end of the round. Every round is kept
 // with its result (per set and kind of quiz: the set page's "Your results"); visitors learn too, nothing is kept.
 import { ask, askText } from '../dialog';
-import { showProfile } from '../profile';
+import { profileHref, showProfile } from '../profile';
+import { chatText, emoteHover, emotesReady, suggest } from '../emotes';
 import { account } from '../account';
 import {
   answerCard, answerInvitation, ApiError, copySnapshot, forgetResults, getResults, getSnapshot, cancelInvitation, changeMember, chatEvents, copyOwnSet, copySet, createSet, decideProposal, deleteSet, deleteSetChat,
@@ -283,8 +284,7 @@ export function holdToConfirm(btn: HTMLElement, ms: number, done: () => void, ea
 function studyForm(ref: SetRef, count: number, learner: boolean) {
   if (!count) return html`<p class="muted">Nothing in it yet — add entries with <b>+ Set</b> on their pages.</p>`;
   const modes = MODES.filter((m) => m !== 'choice' || count >= CHOICE_MIN);
-  return html`<form class="sets-study sets-card" action="${studyHref(ref)}">
-    <h2 class="sets-card-title">Study the ${plural(count, 'entry', 'entries')}</h2>
+  return html`<form class="sets-study" action="${studyHref(ref)}">
     <fieldset class="sets-modes"><legend class="sets-label">Kind of quiz</legend>
     ${modes.map((m, i) => html`<label class="sets-mode"><input type="radio" name="mode" value="${m}"${i ? '' : ' checked'}><span><b>${MODE_NAME[m]}</b><span class="muted small">${MODE_HELP[m]}</span></span></label>`)}</fieldset>
     <fieldset class="sets-cards-choice"><legend class="sets-label">Which cards</legend>
@@ -302,14 +302,14 @@ function planBox(box: HTMLElement, ref: SetRef, plan: StudyPlan, onChange: (p: S
   const line = (label: string, d?: { due: number; new: number; new_left_today: number }) => (d
     ? html`<li><b>${label}</b>: ${plural(d.due, 'card')} to review${d.new_left_today ? html` + ${String(d.new_left_today)} new` : ''}${d.new ? html` <span class="muted small">(${String(d.new)} not asked yet)</span>` : ''}</li>` : '');
   const exam = plan.exam_on && plan.days_left !== null;
-  render(box, html`<h2 class="sets-card-title">${exam ? html`Exam ${examIn(plan.days_left!)}` : 'Today'}</h2>
+  render(box, html`<h3 class="sets-plan-title">Today's study set${exam ? html` <span class="muted small">· exam ${examIn(plan.days_left!)}</span>` : ''}</h3>
     ${exam ? html`<p class="muted small">${longDay(plan.exam_on!)} — every card comes round again before it; the new ones are spread over the days until then.</p>` : ''}
     <ul class="sets-plan-today">${line('Name it', f)}${line('Describe it', r)}</ul>
     ${todayOf(f) + todayOf(r) === 0 ? html`<p class="small">Nothing due today${exam ? '' : ' — or set an exam date and the plan fits it'}. </p>` : ''}
     <form class="sets-exam-form"><label>Exam date <input type="date" name="exam_on" value="${plan.exam_on ?? ''}" min="${new Date().toISOString().slice(0, 10)}"></label>
       <button type="submit">${plan.exam_on ? 'Change' : 'Set'}</button>${plan.exam_on ? html` <button type="button" class="link-button sets-exam-remove">Remove</button>` : ''}
       <span class="sets-exam-msg small" role="status"></span></form>
-    <p class="muted small">Only you see your exam date and plan.</p>`);
+    <p class="muted small sets-plan-foot">Only you see your exam date and plan.</p>`);
   const save = (value: string) => savePlan(ref, value).then((p) => { if (p) { planBox(box, ref, p, onChange); onChange(p); } })
     .catch((err: Error) => { box.querySelector('.sets-exam-msg')!.textContent = err.message; });
   box.querySelector('form')!.addEventListener('submit', (e) => { e.preventDefault(); save((box.querySelector('input[name=exam_on]') as HTMLInputElement).value); });
@@ -374,13 +374,14 @@ function one(main: HTMLElement, ref: SetRef, note = '') {
         : html`<p class="sets-tools sets-card">${me ? html`<button type="button" class="sets-copy">Save a copy to your sets</button>`
           : html`<span class="muted small">${loginLink() ?? 'Log in'} to keep track of what you know and to save a copy.</span>`}</p>`}
       <p class="sets-msg small" role="status"></p>
-      <div class="sets-learn${me && items.length ? ' with-plan' : ''}">
-        ${me ? html`<section class="sets-plan sets-card" aria-label="Your plan"></section>` : ''}
-        ${studyForm(ref, items.length, Boolean(me))}</div>
-      ${me ? html`<section class="sets-stats sets-card" aria-label="Your results"></section>` : ''}
-      ${own && (proposals.length || decided.length) ? html`<section class="sets-proposals" id="sets-proposals"></section>` : ''}
       ${own && hasMembers && !owner ? html`<section class="sets-members sets-card" id="sets-members" aria-label="Members"></section>` : ''}
       ${own && set.chat_allowed && (set.chat_on || owner) && (hasMembers || set.chat_on) ? html`<section class="sets-chat" id="sets-chat" aria-label="The set's chat"></section>` : ''}
+      ${items.length ? html`<section class="sets-learn sets-card${me ? ' with-plan' : ''}" aria-labelledby="sets-learn-title">
+        <h2 class="sets-card-title" id="sets-learn-title">Study the ${plural(items.length, 'entry', 'entries')}</h2>
+        <div class="sets-learn-grid">${me ? html`<section class="sets-plan" aria-label="Today's study set"></section>` : ''}
+        ${studyForm(ref, items.length, Boolean(me))}</div></section>` : studyForm(ref, 0, Boolean(me))}
+      ${me ? html`<section class="sets-stats sets-card" aria-label="Your results"></section>` : ''}
+      ${own && (proposals.length || decided.length) ? html`<section class="sets-proposals" id="sets-proposals"></section>` : ''}
       ${items.length ? html`<section class="sets-entries" aria-labelledby="sets-entries-title"><h2 id="sets-entries-title" class="sets-entries-title">Entries <span class="muted">${String(items.length)}</span></h2>
       ${byType.size > 1 ? html`<nav class="sets-jump" aria-label="Kinds of entries">${[...byType.entries()].map(([type, list]) => html`<a class="chip" href="#sets-${type}">${PLURAL_LABEL[PLURAL[type as StudyItem['type']]]} <span class="muted">${String(list.length)}</span></a>`)}</nav>` : ''}
       ${[...byType.entries()].map(([type, list]) => html`<section class="sets-group" id="sets-${type}"><h3>${PLURAL_LABEL[PLURAL[type as StudyItem['type']]]} <span class="muted">${String(list.length)}</span></h3>
@@ -572,7 +573,7 @@ function members(box: HTMLElement, set: StudySet, id: string, owner: boolean, ch
   const load = (): Promise<void> => Promise.all([getSetMembers(id), friendStatuses()]).then(([list, friends]) => {
     render(box, html`<h2>Members <span class="muted">${String(list.length)}</span></h2>
       ${owner ? html`<p class="muted small">Rights and invitations: <a href="#sets-members-panel">Members</a> · links: <a href="#sets-sharing">Sharing</a>.</p>` : ''}
-      <ul class="sets-member-list">${list.map((m) => html`<li data-member="${m.id}"><b>${m.name ?? '—'}</b>
+      <ul class="sets-member-list">${list.map((m) => html`<li data-member="${m.id}"><b>${who(m)}</b>
         <span class="tag" title="${rightsText(m.rights as RightsKey, set)}">${RIGHTS_NAME[m.rights as RightsKey]}</span>${m.me ? html` <span class="muted small">(you)</span>` : ''}
         <span class="muted small">since ${since(m.since)} · ${String(m.added)} ${m.added === 1 ? 'entry' : 'entries'} added</span>
         ${m.chat && m.removed ? html` <span class="tag">removed from the chat</span>` : ''}${m.blocked ? html` <span class="tag" title="Their messages are hidden for you in every set's chat; unblock them on Friends">blocked by you</span>`
@@ -614,9 +615,12 @@ function friendButtons(box: HTMLElement, done: (note: string) => void, fail: (er
     friendAction('accept', b.dataset.acceptFriend!).then(() => done('You are friends now.')).catch(fail);
   }));
 }
+/** a member's name: a link to their profile (2026-11-07) — not one's own, not without a public name */
+const who = (m: { id: string; name: string | null; me?: boolean }) => (m.name && !m.me ? html`<a class="sets-person" href="${profileHref(m.id)}" title="Their profile: sets you share, their public sets">${m.name}</a>` : m.name ?? '—');
 const friendStatuses = () => getFriends().then((r) => new Map((r?.people ?? []).map((p) => [p.id, p.status]))).catch(() => new Map<string, FriendStatus>());
 
 let chatStream: EventSource | null = null;
+let setSuggest: { destroy: () => void } | null = null;
 /** A set's chat (225): its owner and editors; the owner switches it on, removes members, deletes messages; anyone
  *  reports a message or a member. Live: the account's event stream says when the set has a new line. */
 function setChat(box: HTMLElement, id: string, owner: boolean) {
@@ -628,9 +632,9 @@ function setChat(box: HTMLElement, id: string, owner: boolean) {
     : m.deleted ? html`<li class="chat-msg chat-deleted muted small"><i>${m.deleted === 'owner' ? 'message deleted by the owner of the set' : 'message deleted'}</i></li>`
       : m.hidden ? html`<li class="chat-msg chat-hidden muted small" data-id="${m.id}"><i>${m.hidden === 'blocked' ? 'You have blocked this user; their message is hidden.' : 'You have hidden this user\'s message.'}</i>
         <button type="button" class="link-button" data-reveal="${m.id}" title="You hid ${m.by ?? 'them'} in this chat — show this one message">show</button></li>`
-      : m.mine || !m.by_id ? html`<li class="chat-msg${m.mine ? ' mine' : ''}" data-id="${m.id}"><b class="chat-by">${m.by ?? '—'}</b> <span class="chat-body">${m.body}</span><span class="chat-meta muted small">${when(m.at)}${m.mine || owner ? html` · <button type="button" class="link-button" data-del="${m.id}" title="${m.mine ? 'Delete your message' : 'Delete as the owner of the set'}">delete</button>` : ''}</span></li>`
+      : m.mine || !m.by_id ? html`<li class="chat-msg${m.mine ? ' mine' : ''}" data-id="${m.id}"><b class="chat-by">${m.by ?? '—'}</b> <span class="chat-body">${chatText(m.body ?? '')}</span><span class="chat-meta muted small">${when(m.at)}${m.mine || owner ? html` · <button type="button" class="link-button" data-del="${m.id}" title="${m.mine ? 'Delete your message' : 'Delete as the owner of the set'}">delete</button>` : ''}</span></li>`
         // someone else's message: a click on it opens what one can do about it or its author (owner 2026-11-07)
-        : html`<li class="chat-msg" data-id="${m.id}" data-by="${m.by_id}"><button type="button" class="chat-open" aria-haspopup="menu" aria-expanded="false" title="Profile, friend request, report, block"><b class="chat-by">${m.by ?? '—'}</b> <span class="chat-body">${m.body}</span><span class="chat-meta muted small">${when(m.at)}</span></button></li>`);
+        : html`<li class="chat-msg" data-id="${m.id}" data-by="${m.by_id}"><button type="button" class="chat-open" aria-haspopup="menu" aria-expanded="false" title="Profile, friend request, report, block"><b class="chat-by">${m.by ?? '—'}</b> <span class="chat-body">${chatText(m.body ?? '')}</span><span class="chat-meta muted small">${when(m.at)}</span></button></li>`);
   let friends: Promise<Map<string, FriendStatus>> | null = null;
   const closeMenus = (except?: Element) => box.querySelectorAll('.chat-menu').forEach((x) => { if (x !== except) { x.previousElementSibling?.setAttribute('aria-expanded', 'false'); x.remove(); } });
   async function openMenu(li: HTMLElement, opener: HTMLButtonElement, status: HTMLElement) {
@@ -684,7 +688,7 @@ function setChat(box: HTMLElement, id: string, owner: boolean) {
   // a click elsewhere closes an open menu
   const outside = (e: MouseEvent) => { if (!document.body.contains(box)) { document.removeEventListener('click', outside); return; } if (!(e.target as Element).closest('.chat-msg')) closeMenus(); };
   document.addEventListener('click', outside);
-  const load = () => getSetChat(id).then((r) => {
+  const load = () => Promise.all([getSetChat(id), emotesReady()]).then(([r]) => {
     if (!r) return;
     if (!r.on) {
       render(box, owner ? html`<h2>Chat</h2><p class="small">A chat for you and the set's editors — whether they are friends or not. You can remove members from it and delete messages.</p>
@@ -698,7 +702,7 @@ function setChat(box: HTMLElement, id: string, owner: boolean) {
     render(box, html`<h2>Chat <span class="muted small">${String(r.members.filter((m) => !m.removed).length)} members</span></h2>
       <ol class="chat-list sets-chat-list" aria-live="polite">${shown.length ? shown.map(line) : html`<li class="muted">No messages yet.</li>`}</ol>
       <form class="chat-form"><textarea name="body" rows="2" maxlength="4000" placeholder="Write to everyone in this set — Enter sends" aria-label="Message to the set" required></textarea><button type="submit">Send</button></form>
-      <details class="sets-chat-members small"><summary>Members</summary><ul>${r.members.map((m) => html`<li data-member="${m.id}">${m.name ?? '—'}${m.owner ? html` <span class="tag">owner</span>` : ''}${m.removed ? html` <span class="tag">removed</span>` : ''}${m.me ? html` <span class="muted">(you)</span>` : ''}
+      <details class="sets-chat-members small"><summary>Members</summary><ul>${r.members.map((m) => html`<li data-member="${m.id}">${who(m)}${m.owner ? html` <span class="tag">owner</span>` : ''}${m.removed ? html` <span class="tag">removed</span>` : ''}${m.me ? html` <span class="muted">(you)</span>` : ''}
         ${owner && !m.owner ? (m.removed ? html` <button type="button" class="link-button" data-readmit="${m.id}">Let back in</button>` : html` <button type="button" class="link-button" data-remove="${m.id}">Remove from the chat</button>`) : ''}
         ${m.me ? '' : m.blocked ? html` <span class="tag" title="Their messages are hidden for you; unblock them on Friends">blocked by you</span>` : html` <button type="button" class="link-button" data-hide="${m.id}" data-on="${m.hidden ? '0' : '1'}" title="${m.hidden ? 'Show their messages again' : 'Hide their messages in your view — no one is told'}">${m.hidden ? 'show their messages' : 'hide'}</button>
           <button type="button" class="link-button" data-report-user="${m.id}">report</button>`}</li>`)}</ul>
@@ -711,6 +715,10 @@ function setChat(box: HTMLElement, id: string, owner: boolean) {
     const form = box.querySelector<HTMLFormElement>('.chat-form')!;
     const ta = form.querySelector('textarea')!;
     form.addEventListener('submit', (e) => { e.preventDefault(); const b = ta.value.trim(); if (!b) return; postSetChat(id, b).then(() => { ta.value = ''; return load(); }).catch((err: Error) => { status.textContent = err.message; }); });
+    // ":" + letters offers emotes (2026-11-07) — before "Enter sends", so Enter picks while the list is open
+    setSuggest?.destroy();
+    setSuggest = suggest(ta);
+    emoteHover();
     ta.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); } });
     ol.addEventListener('click', (e) => { const b = (e.target as Element).closest<HTMLButtonElement>('.chat-open'); if (b) void openMenu(b.closest('li')!, b, status); });
     box.querySelectorAll<HTMLButtonElement>('[data-reveal]').forEach((b) => b.addEventListener('click', () => {
@@ -831,7 +839,7 @@ function ownerPanel(shareD: HTMLDetailsElement, membersD: HTMLDetailsElement, se
     render(mbox, html`<div class="sets-panel sets-panel-people">${head('members')}
       <section><h3>Members <span class="muted">${String(members.length)}</span></h3>
         ${members.length ? html`<ul class="sets-panel-members">${members.map((m) => { const x = extra.get(m.id); return html`<li data-member="${m.id}">
-          <span class="sets-member-who"><b>${m.name ?? '—'}</b>${x ? html`<span class="muted small">since ${day(x.since ?? '')} · ${plural(x.added, 'entry', 'entries')} added</span>` : ''}
+          <span class="sets-member-who"><b>${who(m)}</b>${x ? html`<span class="muted small">since ${day(x.since ?? '')} · ${plural(x.added, 'entry', 'entries')} added</span>` : ''}
             ${x?.removed ? html`<span class="tag">removed from the chat</span>` : ''}${x?.blocked ? html`<span class="tag" title="Their messages are hidden for you in every set's chat; unblock them on Friends">blocked by you</span>` : x?.hidden ? html`<span class="tag" title="Only you see this">hidden by you</span>` : ''}</span>
           <span class="sets-member-controls">
             <span class="sets-member-rights">${rightsSelect('rights', m.rights)}
@@ -1057,7 +1065,24 @@ function results(s: StudyStats, count: number): Html {
       <span class="muted small">${String(row[4] + row[5])} of ${String(count)} known well</span></div>`;
   };
   const mins = (sec: number) => (sec >= 90 ? `${String(Math.round(sec / 60))} min` : `${String(sec)} s`);
+  // today's study set (owner 2026-11-07): how far today's cards are done, and today's rounds — beside the progress overall
+  const t = s.today;
+  const todayRow = (label: string, dir: 'forward' | 'reverse') => {
+    const done = t?.[dir].done ?? 0;
+    const p = s.plan?.directions[dir];
+    const left = p ? p.due + p.new_left_today : 0;
+    const total = done + left;
+    if (!total) return '';
+    return html`<div class="sets-today-row"><span class="small">${label}</span>
+      <span class="sets-progress" role="progressbar" aria-valuemin="0" aria-valuemax="${String(total)}" aria-valuenow="${String(done)}" aria-label="${label}: ${String(done)} of ${String(total)} of today's cards done"><span style="width:${String(Math.round((100 * done) / total))}%"></span></span>
+      <span class="muted small">${String(done)} of ${String(total)} done${done ? ` · ${String(t![dir].right)} right` : ''}</span></div>`;
+  };
+  const todayRows = [todayRow('Name it', 'forward'), todayRow('Describe it', 'reverse')].filter((x) => x !== '');
   return html`<h2 class="sets-card-title">Your results</h2>
+    <h3 class="sets-results-sub">Today's study set</h3>
+    ${todayRows.length ? todayRows : html`<p class="muted small">Nothing due today.</p>`}
+    ${t?.rounds ? html`<p class="small">Today: ${plural(t.rounds, 'round')} · ${String(t.known)} of ${String(t.answered)} known (${String(Math.round((100 * t.known) / Math.max(1, t.answered)))} %) · ${mins(t.seconds)}</p>` : ''}
+    <h3 class="sets-results-sub">Overall</h3>
     ${modes.length ? html`<div class="sets-results-wrap"><table class="sets-results"><thead><tr><th>Quiz</th><th>Rounds</th><th>Known</th><th>Best round</th><th>Last ten rounds</th><th>Time</th><th>Last</th></tr></thead><tbody>
       ${modes.map((m) => { const r = s.modes[m]!; return html`<tr><th scope="row">${MODE_NAME[m]}</th><td>${String(r.rounds)}</td>
         <td>${String(Math.round((100 * r.known) / r.answered))} %</td><td>${r.best === null ? '—' : `${String(r.best)} %`}</td>

@@ -255,7 +255,7 @@ async function recordSession(req, res, setId) {
 /** The account's results on a set: per kind of quiz (rounds, share known — the last ten, the best whole round), the
  *  cards' Leitner boxes per direction, and the entries most often not known. */
 async function statsOf(req, setId) {
-  const [modes, boxes, hardest] = await Promise.all([
+  const [modes, boxes, hardest, today] = await Promise.all([
     adminPool.query(`SELECT mode, count(*)::int AS rounds, sum(answered)::int AS answered, sum(known)::int AS known,
         (array_agg(round(100.0 * known / answered)::int ORDER BY finished_at DESC))[1:10] AS recent,
         max(round(100.0 * known / answered)::int) FILTER (WHERE complete) AS best,
@@ -270,10 +270,21 @@ async function statsOf(req, setId) {
       JOIN entity_index e ON (e.type, e.id) = (i.entity_type, i.entity_id)
       WHERE i.set_id = $2 GROUP BY e.type, e.slug, e.name HAVING sum(p.seen) > sum(p.known)
       ORDER BY (sum(p.seen) - sum(p.known))::float / sum(p.seen) DESC, sum(p.seen) DESC LIMIT 5`, [req.user.id, setId]),
+    // today's study set (owner 2026-11-07): the set's cards answered today per direction — right the last time = out of
+    // box 1 —, and today's rounds of this set
+    adminPool.query(`SELECT jsonb_build_object(
+        'forward', (SELECT jsonb_build_object('done', count(*), 'right', count(*) FILTER (WHERE p.box > 1)) FROM study_set_items i
+          JOIN study_progress p ON p.owner_id = $1 AND (p.entity_type, p.entity_id) = (i.entity_type, i.entity_id) AND p.direction = 'forward'
+          WHERE i.set_id = $2 AND (p.last_seen_at AT TIME ZONE 'Europe/Zurich')::date = ${TODAY}),
+        'reverse', (SELECT jsonb_build_object('done', count(*), 'right', count(*) FILTER (WHERE p.box > 1)) FROM study_set_items i
+          JOIN study_progress p ON p.owner_id = $1 AND (p.entity_type, p.entity_id) = (i.entity_type, i.entity_id) AND p.direction = 'reverse'
+          WHERE i.set_id = $2 AND (p.last_seen_at AT TIME ZONE 'Europe/Zurich')::date = ${TODAY}),
+        'rounds', count(s.*), 'answered', coalesce(sum(s.answered), 0), 'known', coalesce(sum(s.known), 0), 'seconds', coalesce(sum(s.seconds), 0)) AS today
+      FROM study_sessions s WHERE s.owner_id = $1 AND s.set_id = $2 AND (s.finished_at AT TIME ZONE 'Europe/Zurich')::date = ${TODAY}`, [req.user.id, setId]),
   ]);
   const box = { forward: [0, 0, 0, 0, 0, 0], reverse: [0, 0, 0, 0, 0, 0] };   // [new, box 1 … box 5]
   for (const r of boxes.rows) box[r.direction][r.box] = r.n;
-  return { modes: Object.fromEntries(modes.rows.map(({ mode, ...m }) => [mode, m])), boxes: box, hardest: hardest.rows, plan: await planOf(req, setId) };
+  return { modes: Object.fromEntries(modes.rows.map(({ mode, ...m }) => [mode, m])), boxes: box, hardest: hardest.rows, today: today.rows[0].today, plan: await planOf(req, setId) };
 }
 
 /** The account's exam date for a set: a date from today on, or none. */

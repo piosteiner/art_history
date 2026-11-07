@@ -3,6 +3,7 @@
 // personal friend link, blocked accounts; /friends/<id>: the chat with a friend, live (Server-Sent Events: a message
 // arrives while the page is open); /friends/add/<code>: someone's friend link — send them a request.
 // People are shown by their public name only.
+import { chatText, emoteHover, emotesReady, suggest } from '../emotes';
 import { ask, askText } from '../dialog';
 import {
   ApiError, chatEvents, deleteChat, friendAction, getChat, getFriendLink, getFriends, newFriendCode, reportChat, requestByCode, sendChat,
@@ -11,7 +12,7 @@ import {
 import { html, render, type Html } from '../html';
 import { accountLinks } from './account';
 
-interface FriendsRoute { id: string | null; add: string | null }
+interface FriendsRoute { id: string | null; add: string | null; profile?: boolean }
 let stream: EventSource | null = null;
 const closeStream = () => { stream?.close(); stream = null; };
 const when = (iso: string) => new Date(iso).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
@@ -22,6 +23,7 @@ const KEY = 'arthistory:friends:by';
 export function friendsPage(main: HTMLElement, route: FriendsRoute) {
   closeStream();
   if (route.add) addView(main, route.add);
+  else if (route.id && route.profile) void import('../profile').then((m) => m.profilePage(main, route.id!));
   else if (route.id) chatView(main, route.id);
   else listView(main);
   return closeStream;
@@ -43,7 +45,7 @@ function listView(main: HTMLElement, note = '') {
     const others = r.people.filter((p) => p.status !== 'received' && p.status !== 'blocked');
     const link = `${location.origin}/friends/add/${r.me.friend_code}`;
     const row = (p: Person) => html`<li class="friend" data-id="${p.id}">
-      ${p.status === 'friend' ? html`<a class="friend-name" href="/friends/${p.id}">${p.name}</a>` : html`<span class="friend-name">${p.name}</span>`}
+      <a class="friend-name" href="/friends/${p.id}/profile" title="Their profile: sets you share, their public sets">${p.name}</a>
       ${p.unread ? html` <span class="unread-badge" title="unread messages">${String(p.unread)}</span>` : ''}
       ${STATUS[p.status] ? html` <span class="tag">${STATUS[p.status]}</span>` : ''}
       ${by === 'name' && p.sets.length ? html` <span class="muted small">${p.sets.map((s) => s.name).join(' · ')}</span>` : ''}
@@ -63,7 +65,8 @@ function listView(main: HTMLElement, note = '') {
       ${r.me.public_name ? '' : html`<p class="flash">Others see you by your public name — <a href="/account">choose one</a> before you send a request or a message.</p>`}
       <p class="muted">Everyone you work with on study sets, and your friends. Friends can chat with each other — only the two of you see the messages.</p>
       ${received.length ? html`<section class="friends-requests"><h2>Requests <span class="muted">${String(received.length)}</span></h2>
-        <ul class="friends-list">${received.map((p) => html`<li class="friend" data-id="${p.id}"><span class="friend-name">${p.name}</span> wants to be your friend
+        <ul class="friends-list">${received.map((p) => html`<li class="friend" data-id="${p.id}"><a class="friend-name" href="/friends/${p.id}/profile">${p.name}</a> wants to be your friend
+          <a class="tag friend-shared" href="/friends/${p.id}/profile" title="Their profile: the sets you share and their public sets">${p.sets.length ? `${String(p.sets.length)} shared set${p.sets.length === 1 ? '' : 's'}` : 'no shared sets'}</a>
           <span class="friend-actions"><button type="button" data-do="accept">Accept</button> <button type="button" class="secondary" data-do="decline">Decline</button>
           <button type="button" class="link-button muted" data-do="block">Block</button></span></li>`)}</ul></section>` : ''}
       <p class="friends-sort small">List <button type="button" class="link-button${by === 'set' ? ' on' : ''}" data-by="set" aria-pressed="${String(by === 'set')}">by set</button>
@@ -126,7 +129,7 @@ function chatView(main: HTMLElement, id: string) {
   let more = false;
   let name = '';
   const bubble = (m: ChatMessage): Html => html`<li class="chat-msg${m.mine ? ' mine' : ''}" data-id="${m.id}">
-    <span class="chat-body">${m.body}</span>
+    <span class="chat-body">${chatText(m.body)}</span>
     <span class="chat-meta muted small">${when(m.at)}${m.mine ? (m.read ? ' · read' : '') : ''}
       ${m.mine ? html` <button type="button" class="link-button chat-delete" title="Delete this message for both of you" aria-label="Delete this message">×</button>` : ''}</span></li>`;
   const draw = (keepScroll = false) => {
@@ -158,7 +161,7 @@ function chatView(main: HTMLElement, id: string) {
     }));
     if (!keepScroll && atBottom) ol.scrollTop = ol.scrollHeight;
   };
-  const load = () => getChat(id).then((r) => {
+  const load = () => Promise.all([getChat(id), emotesReady()]).then(([r]) => {
     if (!r) return loggedOut(main);
     name = r.friend.name;
     document.title = `${name} · Friends · Art History`;
@@ -180,6 +183,10 @@ function chatView(main: HTMLElement, id: string) {
       sendChat(id, body).then((r) => { if (r) { messages.push(r.message); ta.value = ''; msg.textContent = ''; draw(); } })
         .catch((err: Error) => { msg.textContent = err.message; });
     });
+    // ":" + letters offers emotes (2026-11-07) — before "Enter sends", so Enter picks while the list is open
+    const emoteList = suggest(ta);
+    emoteHover();
+    window.addEventListener('popstate', () => emoteList.destroy(), { once: true });
     ta.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); } });
     main.querySelector('.chat-clear')!.addEventListener('click', async () => {
       if (!(await ask('Delete the whole conversation for you? The other person keeps their copy.', { title: 'Delete the conversation?', ok: 'Delete', danger: true }))) return;
