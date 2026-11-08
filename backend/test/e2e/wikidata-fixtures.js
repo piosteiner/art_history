@@ -54,6 +54,11 @@ const ENTITIES = {
       P2048: [stmt({ amount: '+48', unit: 'http://www.wikidata.org/entity/Q174728' })],   // 48 cm
       P2049: [stmt({ amount: '+630', unit: 'http://www.wikidata.org/entity/Q174789' })],  // 630 mm = 63 cm
       P186: [stmt(item('Q106')), stmt(item('Q107'))] } },
+  Q125: { id: 'Q125', labels: labels('Protected work'), descriptions: { en: { value: 'painting (the artist died in 1973 — the images test)' } },
+    claims: { P31: [stmt(item('Q3305213'))], P571: [stmt(time('+1950-00-00T00:00:00Z', 9))], P18: [stmt('Protected work.jpg'), stmt('Protected work detail.jpg')],
+      P180: [stmt(item('Q126'))] } },
+  // a depicted concept — not a work: must not be matched by name to a painting of ours called "Woman"
+  Q126: { id: 'Q126', labels: labels('Woman'), descriptions: { en: { value: 'female adult human' } }, claims: { P31: [stmt(item('Q55983715'))] } },
   Q108: { id: 'Q108', labels: labels('France'), descriptions: { en: { value: 'country in Western Europe' } },
     claims: { P31: [stmt(item('Q6256'))], P297: [stmt('FR')], P571: [stmt(time('+1792-09-21T00:00:00Z', 11))] } },
   Q109: { id: 'Q109', labels: labels('The Great Wave', { ja: '神奈川沖浪裏' }), descriptions: { en: { value: 'woodblock print' } },

@@ -8,6 +8,7 @@
 //   node scripts/fill-from-wikidata.js [--dry-run] [--user=pio] [--no-names] <type> [slug …]
 //     no slugs: every entry of the type that has a Wikidata item
 //     --no-names   leave the other names alone
+//     --no-create  never create a new entry for a reference (a place, a movement …) — link only what we have
 //     --skip=slug:key,…  values not to take (key as printed: location, ~founded …)
 //     --name-kinds       only the names of a kind (153): birth name, pseudonym, nickname, art name — added also when
 //                        the entry has other names already; each cited with its Wikidata statement (W)
@@ -62,7 +63,7 @@ async function emptyOnly(slug, plan, hasImage) {
     }
     if (NAME_KINDS || row.status !== 'empty' || row.declined || SKIP.has(`${slug}:${row.key}`)) continue;
     if (row.kind === 'ref') {
-      let pick = row.target ? 'link' : row.create && !row.candidate ? 'create' : 'later';
+      let pick = row.target ? 'link' : row.create && !row.candidate && !flag('no-create') ? 'create' : 'later';
       if (!row.target && row.candidate) {
         const own = (await adminPool.query(`SELECT wikidata_id FROM ${BY_TYPE[row.candidate.type].table} WHERE slug = $1`, [row.candidate.slug])).rows[0];
         if (own && own.wikidata_id && row.create) pick = 'create';
@@ -72,7 +73,7 @@ async function emptyOnly(slug, plan, hasImage) {
     } else { choices[`take.${row.key}`] = 'take'; keys.push(row.key); }
   }
   if (NAME_KINDS) return { choices, keys };
-  const img = plan.images.findIndex((x) => x.status === 'new' && !x.declined);
+  const img = plan.images.findIndex((x) => x.status === 'new' && !x.declined && !x.blocked);   // blocked: a PD file of a protected work
   if (!hasImage && img >= 0) { choices[`img.${img}`] = 'add'; keys.push('image'); }
   for (const x of plan.identifiers || []) if (x.status === 'new') { choices[`idf.${x.code}`] = 'take'; keys.push(x.code); }
   for (const [i, s] of plan.suggestions.entries()) {
@@ -122,7 +123,7 @@ async function patiently(fn) {
     if (Object.keys(result.form).length) {
       const body = { ...ours, ...taken, slug: doc.slug, version: row.version,
         ...(result.cites.length ? { 'wd.cite': JSON.stringify({ qid: doc.wikidata_id, cites: result.cites }) } : {}) };
-      saved = await saveEntity(user, t, body, { id: row.id });
+      saved = await saveEntity(user, t, body, { id: row.id, doc });
       if (saved.errors) { console.log(`${doc.slug} ✗ ${saved.errors.join('; ')}`); continue; }
     }
     // the names of a kind taken: cited with their Wikidata statement (the name's own source, 152)

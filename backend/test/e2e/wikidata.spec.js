@@ -298,3 +298,17 @@ test('a similar name needs all its words (182): "Eastern Bloc" is not the Depart
   expect(similar('Test Painter Velasko', 'Test Painter Velasco')).toBe('t');
   expect(similar('Museum of Modern Art', 'The Museum of Modern Art')).toBe('t');
 });
+
+test('a "public domain" Commons file of a work still protected is not offered as an image', async ({ userA }) => {
+  // the rule of the documentation (Bildrechte): the work is free 70 years after the artist's death — our dates decide
+  sql(`INSERT INTO artists (slug, name, death, death_label) VALUES ('test-protected-artist', 'Test Protected', '[1973-04-08,1973-04-09)', '8 April 1973')`);
+  sql(`INSERT INTO artworks (slug, title, creator_id, wikidata_id) VALUES ('test-protected-work', 'Test protected work', entity_id('artist', 'test-protected-artist'), 'Q125')`);
+  // the item depicts "Woman" (Q126, a concept): our painting called "Woman" must not be offered as the depicted work
+  sql(`INSERT INTO artworks (slug, title) VALUES ('test-woman', 'Woman')`);
+  await userA.goto('/artworks/test-protected-work/wikidata');
+  await expect(userA.getByText('Woman', { exact: true })).toHaveCount(0);
+  await expect(userA.locator('.wd-image')).toHaveCount(2);
+  await expect(userA.locator('.wd-blocked').first()).toContainText('died 1973 — the work is protected until 2044');
+  await expect(userA.locator('input[name="img.0"][value=later]')).toBeChecked();   // not pre-selected, though the entry has no image
+  sql("DELETE FROM artworks WHERE slug IN ('test-protected-work', 'test-woman'); DELETE FROM artists WHERE slug = 'test-protected-artist'");
+});

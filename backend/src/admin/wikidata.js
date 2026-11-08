@@ -92,6 +92,32 @@ async function commonsImage(file) {
   };
 }
 
+// A Commons licence that only says the file is free because the work is ("Public domain", PD-…, CC0 on a reproduction,
+// "No restrictions") — nothing a photographer could grant for a protected painting. A CC BY photo of a sculpture is
+// the photographer's own licence and passes.
+const pdLike = (license) => /public domain|^pd\b|^pd-|cc0|no (known )?(copyright )?restrictions|copyrighted free use/i.test(String(license || ''));
+// Is the work itself in the public domain? Swiss and EU rule: every creator dead for more than 70 years; a work
+// without a known creator 70 years after it was made (anonymous works, 100 years to be safe). Unknown → not free.
+function workRights({ deaths = [], unknownDeaths = 0, created = null, year = new Date().getFullYear() }) {
+  const free = year - 71;
+  if (deaths.length && !unknownDeaths) {
+    const last = Math.max(...deaths);
+    return last <= free ? { pd: true } : { pd: false, reason: `the artist died ${last} — the work is protected until ${last + 71}` };
+  }
+  if (!deaths.length && !unknownDeaths) return created && created <= year - 100 ? { pd: true } : { pd: false, reason: created ? `made ${created}, creator unknown — rights unclear` : 'no creator, no date — rights unclear' };
+  return { pd: false, reason: 'the artist\'s date of death is not known — rights unclear' };
+}
+async function artworkRights(db, artworkId) {
+  const { rows: [r] } = await db.query(`
+    SELECT array_remove(array_agg(extract(year FROM upper(x.death))::int), NULL) AS deaths,
+           count(x.aid) FILTER (WHERE x.death IS NULL) AS unknown_deaths, min(extract(year FROM upper(a.created)))::int AS created
+    FROM artworks a LEFT JOIN LATERAL (
+      SELECT ar.id AS aid, ar.death FROM artists ar WHERE ar.id = a.creator_id
+      UNION SELECT ar.id, ar.death FROM jsonb_array_elements(artwork_creators(a.id)) c JOIN artists ar ON ar.slug = c->>'slug') x ON true
+    WHERE a.id = $1`, [artworkId]);
+  return workRights({ deaths: r.deaths || [], unknownDeaths: Number(r.unknown_deaths), created: r.created });
+}
+
 // --- reading an entity ------------------------------------------------------------------------------------------
 const labelOf = (e) => (e && e.labels && ((e.labels.en || e.labels.mul || Object.values(e.labels)[0] || {}).value)) || null;
 // Statements of a property, best rank first (preferred → normal; deprecated never).
@@ -525,6 +551,22 @@ function targetType(allowed, e) {
   return null;
 }
 
+// Could this Wikidata item be an entry of our type? Decided from the item's own statements, for name matches:
+// a work has a creator, a collection, a date or an author; a place has coordinates; a human is a human. Items of
+// types that have no such mark (polity, glossary …) match by name as before.
+function couldBe(type, e) {
+  if (!e || !e.claims) return true;  // nothing known about it: the name has to do
+  const human = itemIds(e, 'P31').includes(HUMAN);
+  if (type === 'artist' || type === 'person') return human;
+  if (human) return false;
+  if (type === 'artwork' || type === 'literature') return ['P170', 'P195', 'P571', 'P50', 'P577'].some((p) => statements(e, p).length > 0);
+  if (type === 'place') return !!coords(e);
+  if (type === 'institution') return isInstitutionLike(e) || !!coords(e);
+  if (type === 'movement') return isMovementLike(e);
+  if (type === 'event') return isEventLike(e);
+  return true;
+}
+
 // Minimal doc for creating a missing target from Wikidata (shown in the review, created only if ticked).
 function newEntryDoc(type, e) {
   const t = BY_TYPE[type];
@@ -572,7 +614,10 @@ async function compare(db, t, qid, ours, entity) {
   const light = await getEntities(refQids, { light: true });
   // Not linked by Q-id yet? Maybe we have it under the same name (it gets the Q-id when linked).
   const byName = await localByName(db, Object.fromEntries(refQids.filter((id) => !byQid[id]).map((id) => [id, labelOf(light[id])])));
-  const localFor = (qid, allowed) => byQid[qid] || (byName[qid] || []).find((r) => !allowed || allowed.includes(r.type)) || null;
+  // A name match counts only when the item could be an entry of that type (couldBe): Wikidata's "woman" (Q467) is
+  // not our painting "Woman", "vase" not the vase by Ono Hakuko — depicted things are mostly concepts.
+  const localFor = (qid, allowed) => byQid[qid]
+    || (byName[qid] || []).find((r) => (!allowed || allowed.includes(r.type)) && couldBe(r.type, others[qid])) || null;
   // Full data for everything not linked by Q-id (needed to offer it as a new entry — a name match may be of another
   // type: Wikidata's "France" as a polity vs. our place "France"), and the country (ISO code).
   const missing = refQids.filter((id) => !byQid[id]);
@@ -651,14 +696,17 @@ async function compare(db, t, qid, ours, entity) {
   if (t.imageFk) {
     const files = [...new Set(statements(e, 'P18').map((s) => String(s.mainsnak.datavalue.value)))].slice(0, MAX_IMAGES);
     const have = entity ? (await db.query(`SELECT url, source_url FROM images WHERE ${t.imageFk} = $1`, [entity.id])).rows : [];
+    // a "public domain" file of a work still protected is not ours to show (the documentation's Commons rule)
+    const rights = entity && entity.type === 'artwork' ? await artworkRights(db, entity.id) : { pd: true };
     for (const file of files) {
       const img = await commonsImage(file).catch(() => null);
       if (!img) continue;
       const same = have.some((h) => h.url === img.url || (h.source_url && h.source_url === img.source_url));
-      images.push({ ...img, item: `image:${file}`, status: same ? 'same' : 'new', declined: declined(`image:${file}`, img.url) });
+      const blocked = !rights.pd && pdLike(img.license) ? rights.reason : null;
+      images.push({ ...img, item: `image:${file}`, status: same ? 'same' : 'new', declined: declined(`image:${file}`, img.url), blocked });
     }
     // the first new one is pre-selected when the entry has no image yet
-    if (!have.length) { const first = images.find((x) => !x.declined); if (first) first.suggested = true; }
+    if (!have.length) { const first = images.find((x) => !x.declined && !x.blocked); if (first) first.suggested = true; }
   }
 
   // Relationship suggestions
@@ -968,6 +1016,7 @@ async function coordsOf(qid) {
   return e && e.missing === undefined ? coords(e) : null;
 }
 
-module.exports = {
+module.exports = { couldBe,
   getEntitiesBatch,
-  withProvenance, search, compare, apply, slugify, sourceNote, SLUG, coordsOf, createEntry, typesOf, institutionKind, NAME_PROPS };
+  withProvenance, search, compare, apply, slugify, sourceNote, SLUG, coordsOf, createEntry, typesOf, institutionKind, NAME_PROPS,
+  pdLike, workRights, artworkRights };

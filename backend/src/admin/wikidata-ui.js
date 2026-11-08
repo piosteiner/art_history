@@ -86,6 +86,7 @@ function imageChoice(img, i) {
   return html`<div class="wd-image${img.declined ? ' wd-declined' : ''}"><img referrerpolicy="strict-origin-when-cross-origin" src="${thumbUrl(img.url, 250)}" alt="" loading="lazy">
     <div><div><b>${img.file}</b></div><div><b>License:</b> ${img.license || '?'}</div><div><b>Credit:</b> ${img.credit || '?'}</div>
       <div class="small"><a href="${img.source_url}" target="_blank" rel="noopener">file page ↗</a></div>
+      ${img.blocked ? html`<p class="flash warn small wd-blocked">Not free for the site: ${img.blocked}. A "public domain" file is only free when the work itself is — see the documentation's Commons rule.</p>` : ''}
       ${img.status === 'same' ? html`<p class="muted">Already one of ours.</p>`
         : html`${radio('add', 'add to the images')} ${radio('skip', 'skip')} ${radio('later', 'decide later')}
           ${img.declined ? html`<div class="muted small">skipped before</div>` : ''}`}</div></div>`;

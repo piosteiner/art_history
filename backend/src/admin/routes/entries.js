@@ -382,7 +382,7 @@ async function cityFor(t, doc, existing) {
     at = doc.location;
   }
   if (t.type === 'artwork' && (doc.location || doc.area)) {
-    const before = existing ? existing.doc : {};
+    const before = (existing && existing.doc) || {};  // a script may pass only the id
     const moved = JSON.stringify([doc.location, doc.area]) !== JSON.stringify([before.location, before.area]);
     const hasPlace = existing && (await adminPool.query(`SELECT 1 FROM relationships WHERE subject_type = 'artwork' AND subject_id = $1
       AND relationship_type = 'created_in' AND object_type = 'place'`, [existing.id])).rows.length;
