@@ -1,0 +1,116 @@
+public_id: 116721
+name: State Historical Museum
+names:
+  - text: State Historical Museum in Moscow
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1140429
+  - text: State Historical Museum Moscow
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1140429
+  - text: Central V.I. Lenin Museum
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1140429
+  - text: Former Central V.I. Lenin Museum
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1140429
+  - lang: nl
+    role: translation
+    text: Nationaal Historisch Museum
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1140429
+  - lang: fr
+    role: translation
+    text: musée historique d'État
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1140429
+  - lang: de
+    role: translation
+    text: Staatliches Historisches Museum
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1140429
+  - lang: it
+    role: translation
+    text: Museo statale di storia
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1140429
+  - lang: es
+    role: translation
+    text: Museo Estatal de Historia
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1140429
+  - lang: ja
+    role: translation
+    text: ロシア国立歴史博物館
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1140429
+  - lang: zh
+    role: translation
+    text: 俄羅斯國家歷史博物館
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1140429
+  - lang: ko
+    role: translation
+    text: 국립역사박물관
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1140429
+  - lang: ru
+    role: translation
+    text: Государственный исторический музей
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1140429
+kind: museum
+founded: 1872
+place: moscow
+location: [37.61806, 55.755]
+address: Красная пл., 1, Москва, 109012
+website_url: https://shm.ru/
+collection_url: https://catalog.shm.ru/
+wikidata_id: Q1140429
+metadata:
+  sources: [Wikidata Q1140429 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Moscow_July_2011-1a.jpg/1280px-Moscow_July_2011-1a.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Moscow_July_2011-1a.jpg
+    license: CC BY-SA 3.0
+    credit: Alvesgaspar
+identifiers:
+  bnf: 12307874d
+  gnd: 1008987-1
+  idref: "031230725"
+  lc: n81013188
+  ulan: "500273979"
+  viaf: "152281293"
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q1140429
+  place:
+    - accessed: 2026-11-07
+      property: P131
+      wikidata: Q1140429
+  address:
+    - accessed: 2026-11-07
+      property: P6375
+      wikidata: Q1140429
+  founded:
+    - accessed: 2026-11-07
+      property: P571
+      wikidata: Q1140429
+  location:
+    - accessed: 2026-11-07
+      property: P625
+      wikidata: Q1140429

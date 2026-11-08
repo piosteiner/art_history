@@ -6,6 +6,7 @@ kind: painting
 medium: Oil on canvas
 institution: van-gogh-museum
 on_loan: true
+wikidata_id: Q18689447
 relationships:
   - type: created_in
     to: place/paris

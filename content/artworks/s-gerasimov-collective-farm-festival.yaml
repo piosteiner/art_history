@@ -1,0 +1,17 @@
+public_id: 116783
+title_lang: en
+title: A Collective Farm Festival
+names:
+  - lang: ru
+    role: original
+    text: Колхозный праздник
+creator: sergey-gerasimov
+created: 1937
+kind: painting
+medium: Oil on canvas
+dimensions: [234, 372]
+institution: tretyakov-gallery
+description_md: Socialist optimism, beside [[artwork/catarsini-the-wheat-of-luccas-reclamation]] [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slides 22–23]].
+relationships:
+  - type: associated_with
+    to: movement/socialist-realism

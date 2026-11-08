@@ -11,6 +11,21 @@ inventory_number: ZKG.2021/0052
 web_url: https://collection.kunsthaus.ch/de/collection/item/1031960/
 provenance_status: a_clear
 provenance_status_note: The work was created after 1945. This is not a case of cultural property confiscated as a result of Nazi persecution.
+provenance:
+  - owner: institution/foundation-e-g-buhrle-collection
+    ended: 2021
+    notes_md: Where the drawing was before is unknown.
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1031960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-07
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2021
+    method: gift
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1031960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-07
 sources:
   kind:
     - url: https://collection.kunsthaus.ch/de/collection/item/1031960/

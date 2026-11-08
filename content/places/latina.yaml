@@ -1,0 +1,16 @@
+public_id: 116727
+name: Latina
+kind: settlement
+location: [12.90361, 41.46722]
+wikidata_id: Q13410
+metadata:
+  sources: [Wikidata Q13410 (retrieved 2026-11-07)]
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q13410
+  location:
+    - accessed: 2026-11-07
+      property: P625
+      wikidata: Q13410

@@ -110,6 +110,7 @@ provenance:
         accessed: 2026-10-31
   - owner: person/sidney-f-brody
     acquired: 1951-12-13
+    ended: 1968 or later
     method: purchase
     direct: true
     place: los-angeles
@@ -167,6 +168,7 @@ provenance:
     direct: true
     place: london
     label: consigned by Fuji International Art
+    notes_md: Consigned by the Fuji International Art Company.
     sources:
       - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/edgar-degas-avant-la-course?locale=en
         note: "Sotheby’s, provenance: “The Lefevre Gallery (Alex Reid & Lefevre, Ltd.), London (consigned by the above in 1974)”"

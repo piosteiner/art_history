@@ -1,0 +1,68 @@
+public_id: 116671
+name: Fortunato Depero
+given_name: Fortunato
+family_name: Depero
+names:
+  - text: F. Depero
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1125077
+  - text: Fortunata Depero
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1125077
+  - lang: ja
+    role: translation
+    text: フォルトゥナート・デペーロ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1125077
+  - lang: zh
+    role: translation
+    text: 福尔图纳托·德佩罗
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1125077
+  - lang: ko
+    role: translation
+    text: 포트루나토 데페로
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1125077
+  - lang: ru
+    role: translation
+    text: Фортунато Деперо
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1125077
+birth: 1892-03-30
+death: 1960-11-29
+wikidata_id: Q1125077
+metadata:
+  sources: [Wikidata Q1125077 (retrieved 2026-11-07)]
+relationships:
+  - type: member_of
+    to: movement/futurism
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Fortunato-Depero.jpg/1280px-Fortunato-Depero.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fortunato-Depero.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 12018963z
+  dome: "12347"
+  gnd: "118848828"
+  idref: "028332105"
+  lc: n82233163
+  rkd: "22014"
+  ulan: "500017004"
+  viaf: "14782093"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q1125077
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q1125077

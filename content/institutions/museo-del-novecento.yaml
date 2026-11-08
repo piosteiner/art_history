@@ -1,0 +1,75 @@
+public_id: 116722
+name: Museo del Novecento
+names:
+  - text: Civico museo d'arte contemporanea di Milano
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q261233
+  - text: Museo del Novecento (Milán, Itálie)
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q261233
+  - lang: ja
+    role: translation
+    text: 20世紀美術館
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q261233
+  - lang: zh
+    role: translation
+    text: 二十世紀博物館
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q261233
+  - lang: ko
+    role: translation
+    text: 노베첸토 박물관
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q261233
+  - lang: ru
+    role: translation
+    text: Музей-дель-Новеченто
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q261233
+kind: museum
+founded: 2010-12-06
+place: milan
+location: [9.19026, 45.46341]
+address: Piazza del Duomo 8, Milano
+website_url: https://www.museodelnovecento.org/
+wikidata_id: Q261233
+metadata:
+  sources: [Wikidata Q261233 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Arengario_da_Piazzetta_Reale.jpg/1280px-Arengario_da_Piazzetta_Reale.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Arengario_da_Piazzetta_Reale.jpg
+    license: CC BY-SA 4.0
+    credit: Emanuela Terzi
+identifiers:
+  gnd: 16164926-9
+  idref: "159738237"
+  lc: no2011042396
+  viaf: "169860820"
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q261233
+  place:
+    - accessed: 2026-11-07
+      property: P131
+      wikidata: Q261233
+  address:
+    - accessed: 2026-11-07
+      property: P6375
+      wikidata: Q261233
+  founded:
+    - accessed: 2026-11-07
+      property: P571
+      wikidata: Q261233
+  location:
+    - accessed: 2026-11-07
+      property: P625
+      wikidata: Q261233

@@ -1,0 +1,30 @@
+public_id: 116639
+name: Arturo Tosi
+given_name: Arturo
+family_name: Tosi
+birth: 1871-07-25
+death: 1956-01-03
+wikidata_id: Q4801807
+metadata:
+  sources: [Wikidata Q4801807 (retrieved 2026-11-07)]
+relationships:
+  - type: member_of
+    to: movement/novecento-italiano
+identifiers:
+  bnf: "122200486"
+  dome: "10137"
+  gnd: "119000172"
+  idref: "030871662"
+  lc: n85065636
+  rkd: "77979"
+  ulan: "500009284"
+  viaf: "30337486"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q4801807
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q4801807

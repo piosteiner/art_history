@@ -9,6 +9,7 @@ materials: [ink, gold leaf, satin]
 dimensions: [164.5, 124.1]
 institution: metropolitan-museum-of-art
 inventory_number: 1975.268.88
+web_url: https://www.metmuseum.org/art/collection/search/44864
 description_md: "A spectacular [[uchikake]] painted in ink with gold leaf and gold powder on white figured silk: bamboo in the mist. Robert T. Singer attributes it to [[artist/gion-nankai]] (1677–1751), founder of the Japanese literati school, after a poem by [[person/rai-sanyo]] describing how a wealthy townsman of Izumi commissioned it for his mistress and persuaded Nankai to add his brush. [[source/history-of-japanese-art|pp. 304–305, fig. 350]]"
 relationships:
   - type: associated_with
@@ -16,6 +17,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 304–305, fig. 350
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/web-large/DP-22630-001.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/44864
+    license: Public domain (CC0)
+    credit: The Metropolitan Museum of Art
 sources:
   kind:
     - source: history-of-japanese-art

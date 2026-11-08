@@ -1,0 +1,182 @@
+public_id: 116643
+name: El Lissitzky
+names:
+  - lang: ru
+    role: original
+    text: Ла́зарь Ма́ркович Лиси́цкий
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: El' Lisickij
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Ėlʹ Lisit︠s︡kiĭ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: El Lissickij
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Eliezer Markovich Lissitzky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Lasar Lissitzky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Eliezer Lissitsky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Lazar Markovich Lissitzky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Lazar Markovich Lisitskii
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: El Lazar Lissitzky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Lazarʹ Markovich Lisit︠s︡kiĭ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Lazar Markovich Lisi︡tskiĭ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Lazar Markovich Lisitsky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Eliezer Lissitzky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Eliʻezer Lisitsḳi
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: El Lissitsky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Lazar Lissitzky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: E. M. Lissitsky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: El Lisitsḳi
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Eleazar Markovich Lissitzky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: El Lisitsky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Eleazar M. Lissitzky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Lasar Markowitsch Lissitzky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Eliezer Lisitski
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Eliezer Lisitsky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Lazarʼ Markovič Lisickij
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: E. Lisitsḳi
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Lazar Markovich Lisitski
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Lazar Markovich Lisitzky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Lasar Morduchovich Lissitsky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - text: Lissitzky
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - lang: ja
+    role: translation
+    text: エル・リシツキー
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - lang: zh
+    role: translation
+    text: 埃尔·利西茨基
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - lang: ko
+    role: translation
+    text: 엘 리시츠키
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+  - lang: ru
+    role: original
+    text: Лисицкий, Лазарь Маркович
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152233
+birth: 1890-11-22
+death: 1941-12-30
+wikidata_id: Q152233
+metadata:
+  sources: [Wikidata Q152233 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/El_lissitzky_self_portrait_1924.jpg/1280px-El_lissitzky_self_portrait_1924.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:El_lissitzky_self_portrait_1924.jpg
+    license: Public domain
+    credit: El Lissitzky
+identifiers:
+  bnf: 12222616q
+  gnd: "118573470"
+  idref: "030903440"
+  kulturnav: 505a2d2f-1424-4333-96df-a820022df38d
+  lc: n79132147
+  rkd: "50383"
+  sikart: "14158362"
+  ulan: "500015156"
+  viaf: "41890867"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q152233
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q152233

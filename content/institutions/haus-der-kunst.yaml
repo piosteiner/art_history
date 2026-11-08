@@ -1,0 +1,67 @@
+public_id: 116725
+name: Haus der Kunst
+names:
+  - lang: ja
+    role: translation
+    text: ハウス・デア・クンスト
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q697782
+  - lang: zh
+    role: translation
+    text: 艺术之家
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q697782
+  - lang: ko
+    role: translation
+    text: 하우스 데어 쿤스트
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q697782
+  - lang: ru
+    role: translation
+    text: Дом искусства
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q697782
+kind: museum
+founded: 1937
+place: munich
+location: [11.58594, 48.14411]
+address: Prinzregentenstraße 1
+website_url: https://hausderkunst.de/en
+wikidata_id: Q697782
+metadata:
+  sources: [Wikidata Q697782 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Haus_der_Kunst_-_Munich_-_2013.jpg/1280px-Haus_der_Kunst_-_Munich_-_2013.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Haus_der_Kunst_-_Munich_-_2013.jpg
+    license: CC BY-SA 3.0
+    credit: Avda
+identifiers:
+  gnd: 2000891-0
+  lc: n50054183
+  ulan: "500258557"
+  viaf: "128477586"
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q697782
+  place:
+    - accessed: 2026-11-07
+      property: P131
+      wikidata: Q697782
+  address:
+    - accessed: 2026-11-07
+      property: P6375
+      wikidata: Q697782
+  founded:
+    - accessed: 2026-11-07
+      property: P571
+      wikidata: Q697782
+  location:
+    - accessed: 2026-11-07
+      property: P625
+      wikidata: Q697782

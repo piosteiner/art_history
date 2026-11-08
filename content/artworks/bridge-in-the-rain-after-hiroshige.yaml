@@ -9,6 +9,7 @@ dimensions: [73.3, 53.8]
 institution: van-gogh-museum
 web_url: https://www.vangoghmuseum.nl/en/collection/s0114V1962
 on_loan: true
+wikidata_id: Q18689448
 relationships:
   - type: created_in
     to: place/paris

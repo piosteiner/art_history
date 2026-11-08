@@ -1,0 +1,20 @@
+public_id: 116784
+title_lang: en
+title: Bread
+names:
+  - lang: ru
+    role: original
+    text: Хлеб
+  - lang: en
+    role: alternative
+    text: Grain
+creator: tetiana-yablonska
+created: 1949
+kind: painting
+medium: Oil on canvas
+dimensions: [201, 370]
+institution: tretyakov-gallery
+description_md: 'The harvest of a collective farm — labour as the shaping of norms [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 19; class notes, 24 September 2024]], beside the Italian [[artwork/mancioli-the-plow-tills-africa]]. The slide names the painter "Olga Yablonskaya": she is Tetiana (Tatyana) Yablonska.'
+relationships:
+  - type: associated_with
+    to: movement/socialist-realism

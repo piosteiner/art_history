@@ -1,0 +1,108 @@
+public_id: 116720
+name: Russian Museum
+names:
+  - text: State Russian Museum
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q211043
+  - text: Russian Museum of His Imperial Majesty Alexander III
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q211043
+  - lang: nl
+    role: translation
+    text: Russisch Museum
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q211043
+  - lang: fr
+    role: translation
+    text: musée russe
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q211043
+  - lang: de
+    role: translation
+    text: Russisches Museum
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q211043
+  - lang: it
+    role: translation
+    text: Museo russo
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q211043
+  - lang: es
+    role: translation
+    text: Museo Estatal Ruso
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q211043
+  - lang: ja
+    role: translation
+    text: ロシア美術館
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q211043
+  - lang: zh
+    role: translation
+    text: 俄羅斯博物館
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q211043
+  - lang: ko
+    role: translation
+    text: 러시아 미술관
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q211043
+  - lang: ru
+    role: translation
+    text: Русский музей
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q211043
+kind: museum
+founded: 1895
+place: saint-petersburg
+location: [30.33222, 59.93859]
+address: 191086, Санкт-Петербург, ул. Инженерная, 4.
+website_url: http://en.rusmuseum.ru/
+collection_url: https://rusmuseumvrm.ru/
+wikidata_id: Q211043
+metadata:
+  sources: [Wikidata Q211043 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Spb_06-2012_MichaelPalace.jpg/1280px-Spb_06-2012_MichaelPalace.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Spb_06-2012_MichaelPalace.jpg
+    license: CC BY-SA 3.0
+    credit: A.Savin
+identifiers:
+  bnf: 12148654z
+  gnd: 2050161-4
+  idref: "027296121"
+  lc: n81117569
+  ulan: "500308399"
+  viaf: "131933707"
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q211043
+  place:
+    - accessed: 2026-11-07
+      property: P131
+      wikidata: Q211043
+  address:
+    - accessed: 2026-11-07
+      property: P6375
+      wikidata: Q211043
+  founded:
+    - accessed: 2026-11-07
+      property: P571
+      wikidata: Q211043
+  location:
+    - accessed: 2026-11-07
+      property: P625
+      wikidata: Q211043

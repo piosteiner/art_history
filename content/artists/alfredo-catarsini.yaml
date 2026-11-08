@@ -1,0 +1,22 @@
+public_id: 116659
+name: Alfredo Catarsini
+given_name: Alfredo
+family_name: Catarsini
+birth: 1899
+death: 1993
+wikidata_id: Q94297901
+metadata:
+  sources: [Wikidata Q94297901 (retrieved 2026-11-07)]
+identifiers:
+  gnd: "122100026"
+  lc: nr00023112
+  viaf: "47634924"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q94297901
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q94297901

@@ -1,0 +1,61 @@
+public_id: 116669
+name: Boris Korolev
+given_name: Boris
+family_name: Korolev
+names:
+  - text: Boris Korolyov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4233871
+  - text: Boris Danilovič Korolev
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4233871
+  - text: Boris Danilovich Korolyov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4233871
+  - lang: de
+    role: translation
+    text: Boris Danilowitsch Koroljow
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4233871
+  - lang: ja
+    role: translation
+    text: ボリス・コロリョフ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4233871
+  - lang: ru
+    role: translation
+    text: Борис Королёв
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4233871
+birth: 1885-01-09
+death: 1963-06-18
+wikidata_id: Q4233871
+metadata:
+  sources: [Wikidata Q4233871 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/30/Portrait_of_Boris_Korolev.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Boris_Korolev.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "162868924"
+  gnd: "118985809"
+  idref: 14875001X
+  lc: n90709897
+  ulan: "500102816"
+  viaf: "35256605"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q4233871
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q4233871

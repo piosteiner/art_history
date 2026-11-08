@@ -1,0 +1,46 @@
+public_id: 116705
+name: Degenerate Art Exhibition
+names:
+  - lang: fr
+    role: translation
+    text: Exposition d'art dégénéré
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q329154
+  - lang: de
+    role: translation
+    text: Entartete Kunst (Ausstellung)
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q329154
+  - lang: it
+    role: translation
+    text: Mostra d'arte degenerata
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q329154
+  - lang: zh
+    role: translation
+    text: 堕落艺术展
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q329154
+period: 19 July – 30 November 1937
+place: munich
+wikidata_id: Q329154
+metadata:
+  sources: [Wikidata Q329154 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/90/Ausstellung_entartete_kunst_1937.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ausstellung_entartete_kunst_1937.jpg
+    license: CC BY-SA 3.0 de
+    credit: Unknown author
+sources:
+  place:
+    - accessed: 2026-11-07
+      property: P276
+      wikidata: Q329154
+  period:
+    - accessed: 2026-11-07
+      property: P585
+      wikidata: Q329154

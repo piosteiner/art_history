@@ -1,0 +1,133 @@
+public_id: 116664
+name: Vladimir Tatlin
+given_name: Vladimir
+family_name: Tatlin
+names:
+  - lang: ru
+    role: original
+    text: Владимир Татлин
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - text: Vlagyimir Jevgrafovics Tatlin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - text: Vladimir Levgrafovitch Tatline
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - text: Wladimir Tatlin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - text: Vladimir Levgrafovitch Tatlin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - text: Vladimir Yevgrafovich Tatlin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - text: Vladimir Yevgrafovitch Tatlin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - text: Vladimir Evgrafovič Tatlin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - text: Vladimir Evgrafovich Tatlin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - text: Lot
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - text: Vladimir Evgarfovitch Tatline
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - text: Vladimir Tatljin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - text: Volodymyr Yevhrafovych Tatlin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - text: Volodymyr Tatlin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - lang: fr
+    role: translation
+    text: Vladimir Tatline
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - lang: de
+    role: translation
+    text: Wladimir Jewgrafowitsch Tatlin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - lang: es
+    role: translation
+    text: Vladímir Tatlin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - lang: ja
+    role: translation
+    text: ウラジーミル・タトリン
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - lang: zh
+    role: translation
+    text: 弗拉基米爾·塔特林
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - lang: ko
+    role: translation
+    text: 블라디미르 타틀린
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+  - lang: ru
+    role: original
+    text: Владимир Евграфович Татлин
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q310320
+birth: 1885-12-28
+death: 1953-05-31
+wikidata_id: Q310320
+metadata:
+  sources: [Wikidata Q310320 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/96/%D0%A2%D0%B0%D1%82%D0%BB%D0%B8%D0%BD.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B0%D1%82%D0%BB%D0%B8%D0%BD.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 12169573m
+  dome: "118"
+  gnd: "118753975"
+  idref: "030236738"
+  lc: n83042971
+  rkd: "76567"
+  ulan: "500021874"
+  viaf: "34497985"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q310320
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q310320

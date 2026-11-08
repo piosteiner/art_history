@@ -1,0 +1,111 @@
+public_id: 116644
+name: Aleksandr Gerasimov
+given_name: Aleksandr
+family_name: Gerasimov
+names:
+  - lang: ru
+    role: original
+    text: Александр Михайлович Герасимов
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q965352
+  - text: Aleksandr Mikhailovich Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q965352
+  - text: Aleksandr Mikhaĭlovich Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q965352
+  - text: A. Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q965352
+  - text: Aleksandr Mikhaylovich Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q965352
+  - text: Aleksandr Mikhailovič Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q965352
+  - text: Alexander Michailovich Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q965352
+  - text: Alexander Michailowitsch Gerassimoff
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q965352
+  - text: Aleksandr Michajlovitsj Gerassimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q965352
+  - text: Alexander Michailovitch Guerassimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q965352
+  - text: Alexander Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q965352
+  - text: Aleksandr Mikhajlovich Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q965352
+  - lang: fr
+    role: translation
+    text: Alexandre Guerassimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q965352
+  - lang: de
+    role: translation
+    text: Alexander Michailowitsch Gerassimow
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q965352
+  - lang: es
+    role: translation
+    text: Aleksandr Guerásimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q965352
+  - lang: ja
+    role: translation
+    text: アレクサンドル・ゲラシモフ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q965352
+  - lang: zh
+    role: translation
+    text: 亚历山大·米哈伊洛维奇·格拉西莫夫
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q965352
+birth: 1881-08-12
+death: 1963-07-23
+wikidata_id: Q965352
+metadata:
+  sources: [Wikidata Q965352 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c9/Gerasimov_A.M.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gerasimov_A.M.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "1103467581"
+  idref: "129727156"
+  lc: n88615880
+  rkd: "31029"
+  ulan: "500075140"
+  viaf: "84024896"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q965352
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q965352

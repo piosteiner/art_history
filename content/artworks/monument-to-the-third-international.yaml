@@ -1,0 +1,65 @@
+public_id: 116676
+title: Tatlin's Tower
+names:
+  - text: Monument to the Third International (1919–20)
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q794007
+  - text: Tatlin’s Tower
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q794007
+  - lang: fr
+    role: translation
+    text: monument à la Troisième Internationale
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q794007
+  - lang: de
+    role: translation
+    text: Monument für die Dritte Internationale
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q794007
+  - lang: it
+    role: translation
+    text: Monumento alla Terza Internazionale
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q794007
+  - lang: es
+    role: translation
+    text: Monumento a la Tercera Internacional
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q794007
+  - lang: ja
+    role: translation
+    text: 第三インターナショナル記念塔
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q794007
+  - lang: zh
+    role: translation
+    text: 塔特林塔
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q794007
+  - lang: ru
+    role: translation
+    text: Башня Татлина
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q794007
+creator: vladimir-tatlin
+created: 1919/1920
+kind: model
+description_md: "The model for Tatlin's *Monument to the Third International*, Moscow 1920, beside [[artwork/palace-of-the-soviets]] (1937): the avant-garde's utopia and Stalin's monumentality [[source/beatrice-marinho-2024-art-and-totalitarianism|slide 29, 24 September 2024]]. A Russian stamp of 2000 put it beside [[artwork/worker-and-kolkhoz-woman]] [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 30]]."
+wikidata_id: Q794007
+metadata:
+  sources: [Wikidata Q794007 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Tatlin%27s_Tower_maket_1919_year.jpg/1280px-Tatlin%27s_Tower_maket_1919_year.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tatlin%27s_Tower_maket_1919_year.jpg
+    license: Public domain
+    credit: Unknown author

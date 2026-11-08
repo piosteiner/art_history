@@ -1,0 +1,39 @@
+public_id: 116658
+name: Basilio Cascella
+given_name: Basilio
+family_name: Cascella
+names:
+  - lang: ru
+    role: translation
+    text: Базилио Кашелла
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q3635802
+birth: 1860-10-02
+death: 1950-07-24
+wikidata_id: Q3635802
+metadata:
+  sources: [Wikidata Q3635802 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/33/Basilio_Cascella.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Basilio_Cascella.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 12348655n
+  dome: "12689"
+  gnd: "119147084"
+  idref: "250198509"
+  lc: n93072584
+  rkd: "15725"
+  ulan: "500086719"
+  viaf: "52492841"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q3635802
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q3635802

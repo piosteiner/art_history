@@ -1,0 +1,80 @@
+public_id: 116663
+name: Boris Iofan
+given_name: Boris
+family_name: Iofan
+names:
+  - text: Boris Mikhaĭlovich Iofan
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q167816
+  - text: Boris Mikhaylovich Iofan
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q167816
+  - text: Boris M. Iofan
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q167816
+  - text: Boris Mikhailovich Iofan
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q167816
+  - text: Boris Mihailovich Iofan
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q167816
+  - lang: de
+    role: translation
+    text: Boris Michailowitsch Iofan
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q167816
+  - lang: es
+    role: translation
+    text: Borís Iofán
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q167816
+  - lang: ja
+    role: translation
+    text: ボリス・イオファン
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q167816
+  - lang: zh
+    role: translation
+    text: 鮑里斯·伊凡
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q167816
+  - lang: ru
+    role: translation
+    text: Борис Михайлович Иофан
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q167816
+birth: 1891-04-28
+death: 1976-03-11
+wikidata_id: Q167816
+metadata:
+  sources: [Wikidata Q167816 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/73/Iofan_B.M._2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Iofan_B.M._2.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "124614086"
+  idref: "168712822"
+  lc: n79088437
+  ulan: "500030080"
+  viaf: "52966726"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q167816
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q167816

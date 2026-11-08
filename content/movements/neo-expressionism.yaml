@@ -1,0 +1,55 @@
+public_id: 116715
+name: neo-expressionism
+names:
+  - lang: nl
+    role: translation
+    text: neo-expressionisme
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q589655
+  - lang: fr
+    role: translation
+    text: néo-expressionnisme
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q589655
+  - lang: de
+    role: translation
+    text: Neoexpressionismus
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q589655
+  - lang: it
+    role: translation
+    text: neoespressionismo
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q589655
+  - lang: es
+    role: translation
+    text: neoexpresionismo
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q589655
+  - lang: ja
+    role: translation
+    text: 新表現主義
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q589655
+  - lang: ko
+    role: translation
+    text: 신표현주의
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q589655
+  - lang: ru
+    role: translation
+    text: неоэкспрессионизм
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q589655
+kind: movement
+wikidata_id: Q589655
+metadata:
+  sources: [Wikidata Q589655 (retrieved 2026-11-07)]

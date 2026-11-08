@@ -1,0 +1,93 @@
+public_id: 116699
+name: October Revolution
+names:
+  - text: Bolshevik Revolution
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q42976
+  - text: October Revolution of 1917
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q42976
+  - text: Red October
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q42976
+  - text: Red Revolution
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q42976
+  - lang: nl
+    role: translation
+    text: Oktoberrevolutie
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q42976
+  - lang: fr
+    role: translation
+    text: révolution d'Octobre
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q42976
+  - lang: de
+    role: translation
+    text: Oktoberrevolution
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q42976
+  - lang: it
+    role: translation
+    text: Rivoluzione d'ottobre
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q42976
+  - lang: es
+    role: translation
+    text: Revolución de Octubre
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q42976
+  - lang: ja
+    role: translation
+    text: 十月革命
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q42976
+  - lang: ko
+    role: translation
+    text: 10월 혁명
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q42976
+  - lang: ru
+    role: translation
+    text: Октябрьская революция
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q42976
+parent: russian-revolution
+period: 1917-11-07
+place: saint-petersburg
+wikidata_id: Q42976
+metadata:
+  sources: [Wikidata Q42976 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b4/After_the_capture_of_the_Winter_Palace_26_October_1917.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:After_the_capture_of_the_Winter_Palace_26_October_1917.jpg
+    license: Public domain
+    credit: Pyotr Novitsky
+identifiers:
+  gnd: 4043429-1
+sources:
+  place:
+    - accessed: 2026-11-07
+      property: P276
+      wikidata: Q42976
+  parent:
+    - accessed: 2026-11-07
+      property: P361
+      wikidata: Q42976
+  period:
+    - accessed: 2026-11-07
+      property: P585
+      wikidata: Q42976

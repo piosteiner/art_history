@@ -1,0 +1,82 @@
+public_id: 116731
+name: Benito Mussolini
+given_name: Benito
+family_name: Mussolini
+names:
+  - kind: birth
+    lang: it
+    role: alternative
+    text: Benito Amilcare Andrea Mussolini
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q23559
+  - text: Benito Andrea Mussolini
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q23559
+  - text: Benito Amilcare Mussolini
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q23559
+  - lang: ja
+    role: translation
+    text: ベニート・ムッソリーニ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q23559
+  - lang: zh
+    role: translation
+    text: 贝尼托·墨索里尼
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q23559
+  - lang: ko
+    role: translation
+    text: 베니토 무솔리니
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q23559
+  - lang: ru
+    role: translation
+    text: Бенито Муссолини
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q23559
+kind: person
+occupations: [journalist, teacher, politician]
+birth: 1883-07-29
+death: 1945-04-28
+wikidata_id: Q23559
+metadata:
+  sources: [Wikidata Q23559 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8a/Mussolini_mezzobusto.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mussolini_mezzobusto.jpg
+    license: Public domain
+identifiers:
+  bnf: 11917297h
+  gnd: "118585967"
+  hls: "027903"
+  idref: "027043401"
+  kulturnav: bb539634-ae20-4552-a837-42fe51887189
+  lc: n78095482
+  nlk: KAC199619733
+  ulan: "500219109"
+  viaf: "90162262"
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q23559
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q23559
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q23559
+  occupations:
+    - accessed: 2026-11-07
+      property: P106
+      wikidata: Q23559

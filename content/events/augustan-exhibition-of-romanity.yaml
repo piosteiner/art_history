@@ -1,0 +1,18 @@
+public_id: 116707
+name: Augustan Exhibition of Romanitas
+names:
+  - lang: de
+    role: translation
+    text: Mostra Augustea della Romanità
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q3866165
+  - lang: ja
+    role: translation
+    text: モストラ・アウグステア・デッラ・ロマニタ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q3866165
+wikidata_id: Q3866165
+metadata:
+  sources: [Wikidata Q3866165 (retrieved 2026-11-07)]

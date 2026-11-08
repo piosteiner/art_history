@@ -1,0 +1,59 @@
+public_id: 116774
+title_lang: it
+title: L'Italia fra le Arti e le Scienze
+names:
+  - lang: en
+    role: translation
+    text: Italy between the Arts and Sciences
+  - lang: it
+    role: alternative
+    text: L'Italia tra le Arti e le Scienze
+creator: mario-sironi
+created: 1935
+kind: wall painting
+medium: Mural painting
+dimensions: [700, 2000]
+institution: sapienza-university-of-rome
+web_url: https://www.uniroma1.it/sites/default/files/field_file_allegati/03_scheda_sironi_il_restauro.pdf
+description_md: |-
+  The mural of the Aula Magna in the Rettorato of the new [[place/citta-universitaria-rome]], covering the apse-like alcove behind the speakers. [[person/marcello-piacentini]] proposed [[artist/mario-sironi]] to the head of government; Sironi painted the 140 square metres in about two months [[source/sapienza-2017-sironi-restauro|p. 2]] — about 7 by 20 metres [[source/steiner-2025-mario-sironi|p. 4]].
+
+  Italy, a woman in a white robe, stands at the centre, surrounded by the arts and sciences: astronomy, mineralogy, botany, geography, architecture, letters, painting, and history — a woman seen from behind with an open book. On the right a triumphal arch and an eagle stand for the Roman triumphs, on the left flies a winged Victory armed with a sword [[source/sapienza-2017-sironi-restauro|p. 2]]. On the arch a horseman in relief, the image of a ruler that Sironi used for Mussolini, and above Italy the numerals XIV — year 14 of the [[era-fascista]] [[source/steiner-2025-mario-sironi|pp. 4–5]]. Classical figures in simple, nearly geometrical forms and earthy colours join the Roman past to a modern Italy: the "primacy" of the Italian people that Sironi's myth was to convey [[source/antliff-2002|p. 152]] [[source/braun-2000|p. 188]].
+
+  [[person/benito-mussolini]] spoke under the mural on 28 October 1935, when the university city was completed [[source/steiner-2025-mario-sironi|pp. 6–7]]. After the war it was covered — first with wallpaper, for censorship — and in 1950 extensively repainted, which hid the whole surface; the horseman, the XIV and the eagle disappeared. A restoration by the Istituto superiore per la conservazione e il restauro and the Sapienza (2015–2017) removed the repainting and brought back Sironi's original, shown on 23 November 2017, the 80th anniversary of the university city [[source/sapienza-2017-sironi-restauro|pp. 1–2]]. Flaminia Bartolini criticised that the unveiling treated Fascism as a closed chapter of the past [[source/bartolini-2020|pp. 26–27]]; the owner's paper argues that a university, of all places, can show it as it was [[source/steiner-2025-mario-sironi|pp. 12–13]].
+
+  The paper calls it a fresco; the university calls it a "dipinto murale", a mural painting.
+wikidata_id: Q112939193
+relationships:
+  - type: created_in
+    to: place/citta-universitaria-rome
+  - type: associated_with
+    to: movement/novecento-italiano
+phases:
+  - kind: construction
+    title: Painted
+    part: the whole mural
+    period: "1935"
+    notes_md: Painted in about two months for the Aula Magna of the new university city [[source/sapienza-2017-sironi-restauro|p. 2]].
+  - kind: alteration
+    title: Covered with wallpaper
+    part: the whole mural
+    period: 1945/1949
+    period_label: after the war
+    notes_md: Wallpaper was put over it right after the war, for censorship [[source/sapienza-2017-sironi-restauro|p. 1]].
+  - kind: alteration
+    title: Repainted
+    part: the whole surface; the horseman, the XIV and the eagle painted over
+    period: "1950"
+    notes_md: Extensively repainted in the changed political climate; thick layers of paint hid the whole surface [[source/sapienza-2017-sironi-restauro|p. 1]] [[source/steiner-2025-mario-sironi|p. 10]].
+  - kind: restoration
+    title: Conservation
+    part: the whole mural
+    period: 1980s
+    notes_md: A conservation of the precarious paint [[source/sapienza-2017-sironi-restauro|p. 1]].
+  - kind: restoration
+    title: Restored to Sironi's original
+    part: the whole mural
+    period: 2015-04-20/2017-11-23
+    period_label: 2015 – 23 November 2017
+    notes_md: "Istituto superiore per la conservazione e il restauro with the Sapienza (agreement of 20 April 2015): the repainting removed, the original retouched; shown on 23 November 2017 and in the exhibition *Sironi svelato* (MLAC, 23 November 2017 – 21 January 2018) [[source/sapienza-2017-sironi-restauro|pp. 1–2]]."

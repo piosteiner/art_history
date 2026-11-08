@@ -1,0 +1,16 @@
+public_id: 116674
+name: Tretyakov Gallery
+kind: museum
+founded: 1856
+wikidata_id: Q183334
+metadata:
+  sources: [Wikidata Q183334 (retrieved 2026-11-07)]
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q183334
+  founded:
+    - accessed: 2026-11-07
+      property: P571
+      wikidata: Q183334

@@ -1,0 +1,49 @@
+public_id: 116714
+name: Transavantgarde
+names:
+  - lang: nl
+    role: translation
+    text: Transavanguardia Italiana
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q224885
+  - lang: fr
+    role: translation
+    text: Trans-avant-garde
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q224885
+  - lang: es
+    role: translation
+    text: Transvanguardia
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q224885
+  - lang: ja
+    role: translation
+    text: トランスアバンギャルド
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q224885
+  - lang: zh
+    role: translation
+    text: 超前衛藝術
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q224885
+  - lang: ko
+    role: translation
+    text: 트랜스아방가르드
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q224885
+  - lang: ru
+    role: translation
+    text: Трансавангард
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q224885
+kind: movement
+wikidata_id: Q224885
+metadata:
+  sources: [Wikidata Q224885 (retrieved 2026-11-07)]

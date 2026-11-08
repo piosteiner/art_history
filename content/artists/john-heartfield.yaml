@@ -1,0 +1,99 @@
+public_id: 116648
+name: John Heartfield
+given_name: John
+family_name: Heartfield
+names:
+  - kind: birth
+    lang: de
+    role: former
+    text: Helmut Herzfelde
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q168671
+  - text: Helmut Herzfeld
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q168671
+  - text: G'on Harṭfild
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q168671
+  - text: Herzfelde Heartfield
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q168671
+  - text: Dzhon Khartfilʹd
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q168671
+  - text: Helmuth Herzfelde
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q168671
+  - text: Helmuth Heartfield
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q168671
+  - text: John (born Helmut Herzfelde) Heartfield
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q168671
+  - text: John Heartfield (born Helmut Herzfelde)
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q168671
+  - text: John David Hartfield
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q168671
+  - lang: ja
+    role: translation
+    text: ジョン・ハートフィールド
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q168671
+  - lang: zh
+    role: translation
+    text: 約翰·哈特菲爾德
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q168671
+  - lang: ko
+    role: translation
+    text: 존 하트필드
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q168671
+  - lang: ru
+    role: translation
+    text: Джон Хартфилд
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q168671
+birth: 1891-06-19
+death: 1968-04-26
+wikidata_id: Q168671
+metadata:
+  sources: [Wikidata Q168671 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1d/Bundesarchiv_Bild_183-69249-0004%2C_Berlin%2C_IV._VBK-Kongress%2C_Nagel%2C_Hartfield_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-69249-0004,_Berlin,_IV._VBK-Kongress,_Nagel,_Hartfield_(cropped).jpg
+    license: CC BY-SA 3.0 de
+    credit: Rudolf Hesse
+identifiers:
+  bnf: 11907082q
+  gnd: "118547437"
+  idref: "026917017"
+  lc: n79139067
+  rkd: "36746"
+  ulan: "500018521"
+  viaf: "120725202"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q168671
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q168671

@@ -9,6 +9,7 @@ materials: [wood, lacquer]
 dimensions: [85.7]
 institution: metropolitan-museum-of-art
 inventory_number: "27.69"
+web_url: https://www.metmuseum.org/art/collection/search/40009
 description_md: "One of the five hundred [[rakan]] that [[artist/shoun-genkei]] (1648–1710), a Buddhist sculptor turned wandering priest, carved for the Gohyaku Rakanji in Edo between 1688 and 1695 with permission of an Ōbaku abbot and support from the shogun [[person/tokugawa-tsunayoshi]]: [[yosegi-zukuri]] with black lacquer and gold leaf, less polished than the Chinese sculptor Fan Daosheng’s, but closer to Japanese naturalism. [[source/history-of-japanese-art|pp. 308–309, fig. 358]]"
 relationships:
   - type: associated_with
@@ -16,6 +17,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 308–309, fig. 358
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/web-large/DT242491.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/40009
+    license: Public domain (CC0)
+    credit: The Metropolitan Museum of Art
 sources:
   kind:
     - source: history-of-japanese-art

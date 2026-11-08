@@ -1,0 +1,66 @@
+public_id: 116704
+name: Exhibition of the Fascist Revolution
+names:
+  - lang: fr
+    role: translation
+    text: Exposition de la Révolution fasciste
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q3866177
+  - lang: de
+    role: translation
+    text: Ausstellung der faschistischen Revolution
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q3866177
+  - lang: it
+    role: translation
+    text: Mostra della Rivoluzione fascista
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q3866177
+  - lang: es
+    role: translation
+    text: Exposición de la Revolución Fascista
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q3866177
+  - lang: ko
+    role: translation
+    text: 파시스트 혁명 전시회
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q3866177
+  - lang: ru
+    role: translation
+    text: Выставка фашистской революции
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q3866177
+period: 28 October 1932 – 1934
+place: rome
+location: [12.49, 41.89944]
+wikidata_id: Q3866177
+metadata:
+  sources: [Wikidata Q3866177 (retrieved 2026-11-07)]
+relationships:
+  - type: concerns
+    to: artwork/boccioni-carica-di-lancieri
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fd/Exhibition_of_the_Fascist_Revolution.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Exhibition_of_the_Fascist_Revolution.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  place:
+    - accessed: 2026-11-07
+      property: P276
+      wikidata: Q3866177
+  period:
+    - accessed: 2026-11-07
+      property: P585
+      wikidata: Q3866177
+  location:
+    - accessed: 2026-11-07
+      property: P625
+      wikidata: Q3866177

@@ -1,0 +1,20 @@
+public_id: 116779
+title_lang: en
+title: The Knife Grinder or Principle of Glittering
+names:
+  - lang: ru
+    role: original
+    text: Точильщик. Принцип мелькания
+creator: kazimir-malevich
+created: 1912/1913
+kind: painting
+medium: Oil on canvas
+dimensions: [79.5, 79.5]
+institution: yale-university-art-gallery
+inventory_number: "1941.553"
+web_url: https://artgallery.yale.edu/collections/objects/45338
+description_md: "Gift of the Collection Société Anonyme [[source/yale-1941-553]]. Shown for Russian Futurism beside the Italian: in the First World War the Italian Futurists joined the nationalists' war, the Russians were pacifists and internationalists [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 47]] [[source/golomstock-1990|p. 8]]."
+wikidata_id: Q18112999
+relationships:
+  - type: associated_with
+    to: movement/cubo-futurism

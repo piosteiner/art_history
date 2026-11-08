@@ -1,0 +1,43 @@
+public_id: 116660
+name: Vyacheslav Akhunov
+given_name: Vyacheslav
+family_name: Akhunov
+names:
+  - text: Vjačeslav Achunov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q2535527
+  - text: Vyacheslav Oxunov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q2535527
+  - text: Vjačeslav Romanovič Achunov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q2535527
+  - lang: ru
+    role: translation
+    text: Вячеслав Ачунов
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q2535527
+birth: 1948-07-02
+wikidata_id: Q2535527
+metadata:
+  sources: [Wikidata Q2535527 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/74/Vyacheslav_Oxunov.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vyacheslav_Oxunov.jpg
+    license: CC BY-SA 4.0
+    credit: Alpasli
+identifiers:
+  gnd: "1017732191"
+  lc: no2012100972
+  rkd: "466964"
+  ulan: "500713878"
+  viaf: "220836133"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q2535527

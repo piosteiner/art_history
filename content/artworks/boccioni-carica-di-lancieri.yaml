@@ -1,0 +1,18 @@
+public_id: 116777
+title_lang: it
+title: Carica di lancieri
+names:
+  - lang: en
+    role: translation
+    text: Charge of the Lancers
+creator: umberto-boccioni
+created: 1915
+kind: collage
+medium: Tempera, varnish and collage on paper mounted on canvas
+dimensions: [33.4, 50.3]
+institution: museo-del-novecento
+description_md: "Collezione Jucker; published in *La Grande Illustrazione* on 13 January 1915 [[source/zeri-boccioni-carica-di-lancieri]]. The seminar set it beside [[artwork/deineka-defence-of-sevastopol]]: the Futurists' abstract \"lines of force\" for struggle become, in totalitarian art, the concrete image of war [[source/golomstock-1990]] [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slides 43–46]]; it was shown again at the [[event/exhibition-of-the-fascist-revolution]] in 1932 [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slides 44, 67]]."
+wikidata_id: Q3207247
+relationships:
+  - type: associated_with
+    to: movement/futurism

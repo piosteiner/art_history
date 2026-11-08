@@ -1,0 +1,109 @@
+public_id: 116735
+name: Filippo Tommaso Marinetti
+given_name: Filippo Tommaso
+family_name: Marinetti
+names:
+  - text: F. T. Marinetti
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q216582
+  - text: F.T. Marinetti
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q216582
+  - text: FT Marinetti
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q216582
+  - text: Filippo Tommaso Emilio Marinetti
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q216582
+  - text: Emilio Filippo Tommaso Marinetti
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q216582
+  - text: Carlo Marinetti
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q216582
+  - text: Angelo Marinetti
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q216582
+  - text: Emilio Marinetti
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q216582
+  - text: Filippo Tommaso Marinetto
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q216582
+  - lang: nl
+    role: translation
+    text: Filippo Marinetti
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q216582
+  - lang: ja
+    role: translation
+    text: フィリッポ・トンマーゾ・マリネッティ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q216582
+  - lang: zh
+    role: translation
+    text: 菲利波·托马索·马里内蒂
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q216582
+  - lang: ko
+    role: translation
+    text: 필리포 톰마소 마리네티
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q216582
+  - lang: ru
+    role: translation
+    text: Филиппо Томмазо Маринетти
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q216582
+kind: person
+occupations: [poet, writer, playwright, composer, science fiction writer, photographer, designer, politician, translator]
+birth: 1876-12-22
+death: 1944-12-02
+wikidata_id: Q216582
+metadata:
+  sources: [Wikidata Q216582 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/96/Emilio_Sommariva_%281883_-_1956%29_Ritratto_di_Filippo_Tommaso_Marinetti%2C_intellettuale_futurista_%281913%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emilio_Sommariva_(1883_-_1956)_Ritratto_di_Filippo_Tommaso_Marinetti,_intellettuale_futurista_(1913).jpg
+    license: Public domain
+    credit: Emilio Sommariva
+identifiers:
+  bnf: 11914598z
+  dome: "10850"
+  gnd: "118781936"
+  idref: "027010295"
+  lc: n79063253
+  rkd: "105574"
+  ulan: "500125034"
+  viaf: "4933263"
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q216582
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q216582
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q216582
+  occupations:
+    - accessed: 2026-11-07
+      property: P106
+      wikidata: Q216582

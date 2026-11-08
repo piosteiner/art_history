@@ -1,0 +1,11 @@
+public_id: 116855
+name: Lucerne Auction of Degenerate Art
+kind: auction
+period: 1939-06
+place: lucerne
+description_md: The sale of "degenerate art" from German museums at the [[institution/galerie-fischer]] in Lucerne; [[person/emil-georg-buhrle]] bid there, unsuccessfully, for a self-portrait by Van Gogh [[source/buehrle-ch-the-collection]]. See [[degenerate-art]].
+relationships:
+  - type: concerns
+    to: person/emil-georg-buhrle
+  - type: concerns
+    to: institution/galerie-fischer

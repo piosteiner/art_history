@@ -1,0 +1,126 @@
+public_id: 116733
+name: Vladimir Lenin
+given_name: Vladimir
+family_name: Lenin
+names:
+  - kind: birth
+    lang: ru
+    role: alternative
+    text: Владимир Ильич Ульянов
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1394
+  - lang: ru
+    role: original
+    text: Владимир Ильич Ленин
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1394
+  - text: Vladimir Ulyanov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1394
+  - text: Vladimir Ilyich Lenin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1394
+  - text: V. I. Ulyanov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1394
+  - text: V. I. Ul'yanov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1394
+  - text: Vladimir Il'ich Lenin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1394
+  - text: Vladimir Ul'yanov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1394
+  - text: Vladimir Il'ich Ul'yanov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1394
+  - text: Vl llyin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1394
+  - lang: fr
+    role: translation
+    text: Lénine
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1394
+  - lang: de
+    role: translation
+    text: Wladimir Iljitsch Lenin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1394
+  - lang: it
+    role: translation
+    text: Lenin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1394
+  - lang: ja
+    role: translation
+    text: ウラジーミル・レーニン
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1394
+  - lang: zh
+    role: translation
+    text: 列宁
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1394
+  - lang: ko
+    role: translation
+    text: 블라디미르 레닌
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1394
+kind: person
+occupations: [politician, revolutionary, writer, economist, lawyer, journalist, philosopher, political theorist, communist]
+birth: 1870-04-22
+death: 1924-01-21
+wikidata_id: Q1394
+metadata:
+  sources: [Wikidata Q1394 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Vlad%C3%ADmir_Lenin_%28fotograf%C3%ADa_coloreada%29.jpg/1280px-Vlad%C3%ADmir_Lenin_%28fotograf%C3%ADa_coloreada%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vlad%C3%ADmir_Lenin_(fotograf%C3%ADa_coloreada).jpg
+    license: Public domain
+    credit: Pavel Zhukov
+identifiers:
+  bnf: 11912439p
+  dodis: P1295
+  gnd: "118640402"
+  hls: "028375"
+  idref: "026983184"
+  kulturnav: f3a4aa26-e8d1-4d07-967c-a0d47392a17f
+  lc: n80067085
+  nlk: KAC199616356
+  ulan: "500321338"
+  viaf: "7393146"
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q1394
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q1394
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q1394
+  occupations:
+    - accessed: 2026-11-07
+      property: P106
+      wikidata: Q1394

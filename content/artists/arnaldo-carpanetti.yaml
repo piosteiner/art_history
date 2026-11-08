@@ -1,0 +1,22 @@
+public_id: 116657
+name: Arnaldo Carpanetti
+given_name: Arnaldo
+family_name: Carpanetti
+birth: 1898-01-15
+death: 1969-04-05
+wikidata_id: Q3623479
+metadata:
+  sources: [Wikidata Q3623479 (retrieved 2026-11-07)]
+identifiers:
+  gnd: "1154407268"
+  rkd: "489060"
+  viaf: "7467152140002811100001"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q3623479
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q3623479

@@ -1,0 +1,55 @@
+public_id: 116682
+title_lang: de
+title: Die Steinklopfer
+names:
+  - lang: fr
+    role: original
+    text: Les Casseurs de pierres
+  - lang: en
+    role: translation
+    text: The Stone Breakers
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q2914912
+creator: gustave-courbet
+created: 1850
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [165, 257]
+institution: staatliche-kunstsammlungen-dresden
+inventory_number: Gal.-Nr. 2522
+description_md: Courbet's realism of labour — with [[artwork/madonna-di-loreto]] the seminar's reminder of the traditions of realism that totalitarian art drew on [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 24]].
+wikidata_id: Q2914912
+metadata:
+  sources: [Wikidata Q2914912 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Gustave_Courbet_018.jpg/1280px-Gustave_Courbet_018.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustave_Courbet_018.jpg
+    license: Public domain
+    credit: Gustave Courbet
+sources:
+  created:
+    - accessed: 2026-11-07
+      property: P571
+      wikidata: Q2914912
+  creator:
+    - accessed: 2026-11-07
+      property: P170
+      wikidata: Q2914912
+  materials:
+    - accessed: 2026-11-07
+      property: P186
+      wikidata: Q2914912
+  dimensions:
+    - accessed: 2026-11-07
+      property: P2048
+      wikidata: Q2914912
+  institution:
+    - accessed: 2026-11-07
+      property: P195
+      wikidata: Q2914912
+  inventory_number:
+    - accessed: 2026-11-07
+      property: P217
+      wikidata: Q2914912

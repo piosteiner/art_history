@@ -1,0 +1,16 @@
+public_id: 116685
+name: Yale University Art Gallery
+kind: museum
+founded: 1832
+wikidata_id: Q1568434
+metadata:
+  sources: [Wikidata Q1568434 (retrieved 2026-11-07)]
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q1568434
+  founded:
+    - accessed: 2026-11-07
+      property: P571
+      wikidata: Q1568434

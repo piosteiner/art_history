@@ -1,0 +1,10 @@
+public_id: 116789
+title_lang: en
+title: Mussolini Harvesting Wheat
+creator: basilio-cascella
+created: 1939
+kind: painting
+description_md: "[[person/benito-mussolini]] at the threshing — the leader as one of the people; with [[artwork/gerasimov-lenin-on-the-tribune]] under the image of the leader [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 15]]."
+relationships:
+  - type: depicts_person
+    to: person/benito-mussolini

@@ -1,0 +1,107 @@
+public_id: 116726
+name: National Museum Zurich
+names:
+  - text: Swiss National Museum Zurich
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q691896
+  - text: Landesmuseum
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q691896
+  - lang: nl
+    role: translation
+    text: Swiss National Museum
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q691896
+  - lang: fr
+    role: translation
+    text: Musée national de Zurich
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q691896
+  - lang: de
+    role: translation
+    text: Landesmuseum Zürich
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q691896
+  - lang: it
+    role: translation
+    text: Museo nazionale Zurigo
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q691896
+  - lang: es
+    role: translation
+    text: Museo Nacional de Zúrich
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q691896
+  - lang: ja
+    role: translation
+    text: スイス国立博物館
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q691896
+  - lang: zh
+    role: translation
+    text: 瑞士国家博物馆
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q691896
+  - lang: ko
+    role: translation
+    text: 스위스 국립박물관
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q691896
+  - lang: ru
+    role: translation
+    text: Швейцарский национальный музей Цюрих
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q691896
+kind: museum
+founded: 1898
+place: zurich
+location: [8.53972, 47.37917]
+address: Museumstrasse 2, 8001 Zürich
+website_url: https://www.landesmuseum.ch
+collection_url: https://sammlung.nationalmuseum.ch
+wikidata_id: Q691896
+metadata:
+  sources: [Wikidata Q691896 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Landesmuseum_Z%C3%BCrich%2C_2017.jpg/1280px-Landesmuseum_Z%C3%BCrich%2C_2017.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Landesmuseum_Z%C3%BCrich,_2017.jpg
+    license: CC BY-SA 4.0
+    credit: Burkhard Mücke
+identifiers:
+  bnf: "121484114"
+  gnd: 4245887-0
+  idref: "029971438"
+  lc: n50052980
+  viaf: "127295812"
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q691896
+  place:
+    - accessed: 2026-11-07
+      property: P131
+      wikidata: Q691896
+  address:
+    - accessed: 2026-11-07
+      property: P6375
+      wikidata: Q691896
+  founded:
+    - accessed: 2026-11-07
+      property: P571
+      wikidata: Q691896
+  location:
+    - accessed: 2026-11-07
+      property: P625
+      wikidata: Q691896

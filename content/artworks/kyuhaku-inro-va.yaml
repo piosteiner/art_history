@@ -9,6 +9,7 @@ materials: [lacquer]
 dimensions: [6.3, 6.3]
 institution: victoria-and-albert-museum
 inventory_number: W.164-1922
+web_url: https://collections.vam.ac.uk/item/O121275/
 description_md: "An [[inro]] by [[artist/koma-kyuhaku]] in togidashie lacquer: shadows of drunken merriment at a teahouse party fall on the paper of a shōji — a courtesan playing the samisen, a customer dancing. Julia Hutt has traced the design to a woodblock triptych of 1820 by Kikugawa Eizan. The [[ojime]] bead is carved with the face of Daruma. [[source/history-of-japanese-art|pp. 301–302, fig. 347]]"
 relationships:
   - type: associated_with
@@ -16,6 +17,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 301–302, fig. 347
+images:
+  - url: https://framemark.vam.ac.uk/collections/2006AU2707/full/768,/0/default.jpg
+    source_url: https://collections.vam.ac.uk/item/O121275/
+    license: "V&A: non-commercial use"
+    credit: © Victoria and Albert Museum, London
 sources:
   kind:
     - source: history-of-japanese-art

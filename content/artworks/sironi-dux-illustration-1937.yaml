@@ -1,0 +1,10 @@
+public_id: 116776
+title_lang: en
+title: Untitled illustration (DVX)
+creator: mario-sironi
+created: 1937
+kind: illustration
+description_md: "An illustration in a special edition of *La Rivista Illustrata del Popolo d'Italia*: a rider beside the large letters DVX — the \"Duce\", [[person/benito-mussolini]] — the image of a ruler that returns on the arch of [[artwork/sironi-italia-fra-le-arti-e-le-scienze]] [[source/steiner-2025-mario-sironi|p. 5, fig. 2]]."
+relationships:
+  - type: depicts_person
+    to: person/benito-mussolini

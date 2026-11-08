@@ -1,0 +1,57 @@
+public_id: 116709
+name: Futurism
+names:
+  - lang: nl
+    role: translation
+    text: futurisme
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q131221
+  - lang: de
+    role: translation
+    text: Futurismus
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q131221
+  - lang: it
+    role: translation
+    text: futurismo
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q131221
+  - lang: ja
+    role: translation
+    text: 未来派
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q131221
+  - lang: zh
+    role: translation
+    text: 未来主义
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q131221
+  - lang: ko
+    role: translation
+    text: 미래파
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q131221
+  - lang: ru
+    role: translation
+    text: футуризм
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q131221
+kind: movement
+period: 1909
+wikidata_id: Q131221
+metadata:
+  sources: [Wikidata Q131221 (retrieved 2026-11-07)]
+identifiers:
+  gnd: 4019036-5
+sources:
+  period:
+    - accessed: 2026-11-07
+      property: P580
+      wikidata: Q131221

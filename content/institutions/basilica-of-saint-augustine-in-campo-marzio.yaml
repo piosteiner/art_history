@@ -1,0 +1,16 @@
+public_id: 116683
+name: Basilica of Saint Augustine in Campo Marzio
+kind: basilica
+founded: 1401/1500
+wikidata_id: Q1424095
+metadata:
+  sources: [Wikidata Q1424095 (retrieved 2026-11-07)]
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q1424095
+  founded:
+    - accessed: 2026-11-07
+      property: P571
+      wikidata: Q1424095

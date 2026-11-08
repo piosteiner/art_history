@@ -1,0 +1,26 @@
+public_id: 116666
+name: Cesare Andreoni
+given_name: Cesare
+family_name: Andreoni
+birth: 1903
+death: 1961
+wikidata_id: Q52150981
+metadata:
+  sources: [Wikidata Q52150981 (retrieved 2026-11-07)]
+identifiers:
+  bnf: "123870965"
+  gnd: "119156520"
+  idref: "032941552"
+  lc: n93076518
+  rkd: "131071"
+  ulan: "500386966"
+  viaf: "77119460"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q52150981
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q52150981

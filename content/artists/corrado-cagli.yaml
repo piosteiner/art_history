@@ -1,0 +1,38 @@
+public_id: 116650
+name: Corrado Cagli
+given_name: Corrado
+family_name: Cagli
+names:
+  - lang: ko
+    role: translation
+    text: 코라도 칼리
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q2997862
+birth: 1910-02-23
+death: 1976-03-28
+wikidata_id: Q2997862
+metadata:
+  sources: [Wikidata Q2997862 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1f/Corrado_Cagli2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Corrado_Cagli2.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "121392030"
+  gnd: "118869841"
+  idref: 02985251X
+  lc: n50032829
+  rkd: "14701"
+  ulan: "500004817"
+  viaf: "113426605"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q2997862
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q2997862

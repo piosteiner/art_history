@@ -1,0 +1,61 @@
+public_id: 116710
+name: Suprematism
+names:
+  - lang: nl
+    role: translation
+    text: suprematisme
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q191970
+  - lang: fr
+    role: translation
+    text: suprématisme
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q191970
+  - lang: de
+    role: translation
+    text: Suprematismus
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q191970
+  - lang: it
+    role: translation
+    text: suprematismo
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q191970
+  - lang: ja
+    role: translation
+    text: シュプレマティスム
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q191970
+  - lang: zh
+    role: translation
+    text: 至上主义
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q191970
+  - lang: ko
+    role: translation
+    text: 쉬프레마티슴
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q191970
+  - lang: ru
+    role: translation
+    text: супрематизм
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q191970
+kind: movement
+period: 1913
+wikidata_id: Q191970
+metadata:
+  sources: [Wikidata Q191970 (retrieved 2026-11-07)]
+sources:
+  period:
+    - accessed: 2026-11-07
+      property: P580
+      wikidata: Q191970

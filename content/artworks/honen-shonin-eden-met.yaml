@@ -9,6 +9,7 @@ materials: [ink, paper]
 dimensions: [41, 59]
 institution: metropolitan-museum-of-art
 inventory_number: "1980.221"
+web_url: https://www.metmuseum.org/art/collection/search/44852
 description_md: "From one of the most elaborate illustrated lives of [[person/honen]] (1133–1212), founder of the Jōdo sect: originally forty-eight scrolls compiled over ten years from 1307, edited by the Mount Hiei priest Shunshō at the request of the retired emperor Go Fushimi, with calligraphy by eight men of the court. Hōnen, his back to the wall in a temple room, inscribes a copy of his portrait for his disciple [[person/shinran]], who kneels before him. A document of events rather than a gripping narrative. [[source/history-of-japanese-art|pp. 201–203, fig. 234]]"
 relationships:
   - type: depicts_person
@@ -26,6 +27,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 201–203, fig. 234
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/web-large/DP270170.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/44852
+    license: Public domain (CC0)
+    credit: The Metropolitan Museum of Art
 sources:
   kind:
     - source: history-of-japanese-art

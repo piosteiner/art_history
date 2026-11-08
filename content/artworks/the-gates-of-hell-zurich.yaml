@@ -39,6 +39,7 @@ web_url: https://collection.kunsthaus.ch/de/collection/item/2070
 provenance_status: a_clear
 provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
 description_md: 'Der vierte Guss: 1942 bestellte [[artist/arno-breker|Arno Breker]] ihn bei Rudier für das «Führermuseum» in Linz und leistete Anzahlungen an das Musée Rodin und die Giesserei; ausgeliefert wurde er nie. 1947 kam er für eine Ausstellung der Rudier-Güsse nach Zürich, 1949 kaufte ihn [[person/emil-georg-buhrle|Emil Georg Bührle]] für das Kunsthaus. Das Kunsthaus stuft ihn als keine NS-Raubkunst ein.[[source/kunsthaus-zurich-1949-0022|“4. Guss (1942-1947)” · “1942 bestellt der deutsche Bildhauer Arno Breker bei der für ihn tätigen Pariser Giesserei Rudier für das «Führermuseum» in Linz den später am Kunsthaus Zürich vorliegenden 4. Guss.” · “Der Guss wurde jedoch nicht ausgeliefert und erst 1947 für die Ausstellung "Metallgüsse aus der Werkstatt von Eugène Rudier, Paris" (9. Juni – 23. Nov. 1947) nach Zürich geliefert” · “Provenienzstatus keine NS-Raubkunst”]]'
+wikidata_id: Q125973575
 provenance:
   - owner: institution/fonderie-alexis-rudier
     role: foundry

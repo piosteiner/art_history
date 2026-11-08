@@ -1,0 +1,31 @@
+public_id: 116655
+name: Duilio Cambellotti
+given_name: Duilio
+family_name: Cambellotti
+names:
+  - text: D. Cambellotti
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q3716133
+birth: 1876-05-10
+death: 1960-01-31
+wikidata_id: Q3716133
+metadata:
+  sources: [Wikidata Q3716133 (retrieved 2026-11-07)]
+identifiers:
+  bnf: 12100818w
+  gnd: "118870564"
+  idref: 02936602X
+  lc: n80086768
+  rkd: "248039"
+  ulan: "500004955"
+  viaf: "42635695"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q3716133
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q3716133

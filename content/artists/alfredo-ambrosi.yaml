@@ -1,0 +1,37 @@
+public_id: 116668
+name: Alfredo Ambrosi
+given_name: Alfredo
+family_name: Ambrosi
+names:
+  - text: Alfredo Gauro Ambrosi
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q2835596
+  - text: Alfredo G. Ambrosi
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q2835596
+birth: 1901-08-08
+death: 1945
+wikidata_id: Q2835596
+metadata:
+  sources: [Wikidata Q2835596 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d7/Alfredo_Gauro_Ambrosi_%281901-1945%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Alfredo_Gauro_Ambrosi_(1901-1945).jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "124669603"
+  lc: no2021117152
+  ulan: "500199627"
+  viaf: "10785552"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q2835596
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q2835596

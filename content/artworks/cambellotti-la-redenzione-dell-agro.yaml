@@ -1,0 +1,15 @@
+public_id: 116798
+title_lang: it
+title: La redenzione dell'Agro
+names:
+  - lang: en
+    role: translation
+    text: The Redemption of the Agro Pontino
+creator: duilio-cambellotti
+created: 1934
+kind: wall painting
+medium: Tempera on panels of artificial slate
+description_md: "The cycle in the Palazzo del Governo of [[place/latina]]: the New Man as worker [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 58]]."
+relationships:
+  - type: created_in
+    to: place/latina

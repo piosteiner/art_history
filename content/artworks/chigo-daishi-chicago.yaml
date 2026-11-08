@@ -9,6 +9,7 @@ materials: [ink, silk, gold]
 dimensions: [86.7, 48.9]
 institution: art-institute-of-chicago
 inventory_number: "1959.552"
+web_url: https://www.artic.edu/artworks/11146
 description_md: "One of the most popular icons of the cult of [[person/kukai]] (Kōbō Daishi): the boy Kūkai at the moment he had a vision and told his parents he wanted to become a monk, kneeling on a lotus within a moon disc, hands together. Such [[chigo]] images belong to the tales of Enlightenment (hosshin mono) in which the love of an older monk for a novice leads to Enlightenment, the boy revealed as a bodhisattva. [[source/history-of-japanese-art|pp. 200–201, fig. 233]]"
 relationships:
   - type: depicts_person
@@ -22,6 +23,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 200–201, fig. 233
+images:
+  - url: https://www.artic.edu/iiif/2/140c79cb-54c2-d8c4-8468-9a770212d98d/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/11146
+    license: Public domain (CC0)
+    credit: Art Institute of Chicago, Gift of the Joseph and Helen Regenstein Foundation
 sources:
   kind:
     - source: history-of-japanese-art

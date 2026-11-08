@@ -1,0 +1,18 @@
+public_id: 116781
+title_lang: en
+title: Lenin on the Tribune
+names:
+  - lang: ru
+    role: original
+    text: Ленин на трибуне
+creator: aleksandr-gerasimov
+created: 1930
+kind: painting
+medium: Oil on canvas
+institution: state-historical-museum
+description_md: The image of the leader, the first theme of totalitarian art in the seminar, beside [[artwork/cascella-mussolini-harvesting-wheat]] [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 15]].
+relationships:
+  - type: depicts_person
+    to: person/vladimir-lenin
+  - type: associated_with
+    to: movement/socialist-realism

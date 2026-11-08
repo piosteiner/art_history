@@ -1,0 +1,48 @@
+public_id: 116638
+name: Adolfo Wildt
+given_name: Adolfo
+family_name: Wildt
+names:
+  - text: Adolpho Wildt
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q163290
+  - lang: ja
+    role: translation
+    text: アドルフォ・ヴィルト
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q163290
+  - lang: ru
+    role: translation
+    text: Адольфо Вильдт
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q163290
+birth: 1868-03-01
+death: 1931-03-12
+wikidata_id: Q163290
+metadata:
+  sources: [Wikidata Q163290 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/41/Ritratto_dello_scultore_Adolfo_Wildt%2C_opera_del_fotografo_Emilio_Sommariva_%281923%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ritratto_dello_scultore_Adolfo_Wildt,_opera_del_fotografo_Emilio_Sommariva_(1923).jpg
+    license: CC BY 3.0 it
+    credit: Emilio Sommariva, 1923
+identifiers:
+  bnf: 13508747z
+  gnd: "118902628"
+  idref: "050282557"
+  lc: nr91004709
+  rkd: "84515"
+  ulan: "500031457"
+  viaf: "39533236"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q163290
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q163290

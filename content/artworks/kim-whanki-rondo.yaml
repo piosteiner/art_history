@@ -7,6 +7,7 @@ medium: Oil on canvas
 materials: [oil paint, canvas]
 dimensions: [61, 72]
 description_md: "An early abstract painting by [[artist/kim-whanki]] (1913–1974), perhaps Korea’s most famous twentieth-century painter, trained in Tokyo in the mid-1930s: geometric abstraction after Western models. [[source/portal-2000|pp. 177–178, fig. 100]]"
+wikidata_id: Q12594186
 relationships:
   - type: associated_with
     to: movement/japanese-colonial-period-korea

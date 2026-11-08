@@ -1,0 +1,20 @@
+public_id: 116778
+title_lang: en
+title: The Defence of Sevastopol
+names:
+  - lang: ru
+    role: original
+    text: Оборона Севастополя
+creator: aleksandr-deyneka
+created: 1942
+kind: painting
+medium: Oil on canvas
+dimensions: [200, 400]
+institution: state-russian-museum
+web_url: https://rmgallery.ru/en/992
+description_md: "Painted in 1942, during the siege [[source/russian-museum-deineka-sevastopol]]. Socialist realism, in Deineka's words: \"I don't know whether it's a good picture or a bad one, but it seems that it's real\"; shown at the Great Patriotic War exhibition of 1942 [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slides 43, 45, 67]]."
+relationships:
+  - type: depicts
+    to: event/world-war-ii
+  - type: associated_with
+    to: movement/socialist-realism

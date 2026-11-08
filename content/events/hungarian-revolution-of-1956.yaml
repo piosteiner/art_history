@@ -1,0 +1,94 @@
+public_id: 116703
+name: Hungarian Revolution of 1956
+names:
+  - text: Hungarian Uprising
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q164348
+  - text: 1956 Hungarian Revolution
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q164348
+  - lang: nl
+    role: translation
+    text: Hongaarse Opstand
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q164348
+  - lang: fr
+    role: translation
+    text: révolution hongroise de 1956
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q164348
+  - lang: de
+    role: translation
+    text: Ungarischer Volksaufstand
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q164348
+  - lang: it
+    role: translation
+    text: rivoluzione ungherese del 1956
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q164348
+  - lang: es
+    role: translation
+    text: Revolución húngara de 1956
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q164348
+  - lang: ja
+    role: translation
+    text: ハンガリー動乱
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q164348
+  - lang: zh
+    role: translation
+    text: 1956年匈牙利革命
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q164348
+  - lang: ko
+    role: translation
+    text: 1956년 헝가리 혁명
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q164348
+  - lang: ru
+    role: translation
+    text: Венгерское восстание 1956 года
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q164348
+parent: cold-war
+period: 1956
+place: hungarian-people-s-republic
+wikidata_id: Q164348
+metadata:
+  sources: [Wikidata Q164348 (retrieved 2026-11-07)]
+relationships:
+  - type: concerns
+    to: artwork/stalin-monument-budapest
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Hungarian_Revolution_of_1956.png/1280px-Hungarian_Revolution_of_1956.png
+    source_url: https://commons.wikimedia.org/wiki/File:Hungarian_Revolution_of_1956.png
+    license: CC BY 4.0
+    credit: Atoljaka
+identifiers:
+  gnd: 4127049-6
+sources:
+  place:
+    - accessed: 2026-11-07
+      property: P276
+      wikidata: Q164348
+  parent:
+    - accessed: 2026-11-07
+      property: P361
+      wikidata: Q164348
+  period:
+    - accessed: 2026-11-07
+      property: P585
+      wikidata: Q164348

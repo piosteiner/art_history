@@ -1,0 +1,8 @@
+public_id: 116830
+name: Art and Fascism (Mart, 2024)
+kind: exhibition
+period: 2024-04/2024-09
+description_md: "*Arte e fascismo*, edited by Vittorio Sgarbi, Beatrice Avanzi and Daniela Ferrari, at the [[institution/mart-rovereto]] — contemporary perspectives [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 39]]."
+relationships:
+  - type: concerns
+    to: institution/mart-rovereto

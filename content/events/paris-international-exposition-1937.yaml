@@ -1,0 +1,40 @@
+public_id: 116718
+name: Paris International Exposition of 1937
+names:
+  - lang: fr
+    role: original
+    text: Exposition Internationale des Arts et Techniques dans la Vie Moderne
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1165755
+period: 1937-05-25/1937-11-25
+place: paris
+location: [2.28825, 48.86222]
+wikidata_id: Q1165755
+metadata:
+  sources: [Wikidata Q1165755 (retrieved 2026-11-07)]
+relationships:
+  - type: concerns
+    to: artwork/thorak-the-family
+  - type: concerns
+    to: artwork/worker-and-kolkhoz-woman
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Paris-Expo-1937-carte_postale-00.jpg/1280px-Paris-Expo-1937-carte_postale-00.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paris-Expo-1937-carte_postale-00.jpg
+    license: Public domain
+    credit: "Auteur inconnu - éditeur : H. Chipault, concessionnaire à Boulogne-sur-Seine (France)."
+identifiers:
+  gnd: 515523-X
+sources:
+  place:
+    - accessed: 2026-11-07
+      property: P276
+      wikidata: Q1165755
+  period:
+    - accessed: 2026-11-07
+      property: P585
+      wikidata: Q1165755
+  location:
+    - accessed: 2026-11-07
+      property: P625
+      wikidata: Q1165755

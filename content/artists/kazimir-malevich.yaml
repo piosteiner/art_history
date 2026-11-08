@@ -1,0 +1,146 @@
+public_id: 116642
+name: Kazimir Malevich
+given_name: Kazimir
+family_name: Malevich
+names:
+  - kind: birth
+    lang: ru
+    role: alternative
+    text: Казиміръ Малевичъ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - lang: pl
+    role: original
+    text: Kazimierz Malewicz
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - text: Малевиць «Азимир Севериновиц»
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - text: Казимир Малевич
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - text: Kazymyr Malevych
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - text: Malevich
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - text: Т. Малевича
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - text: Казимир Малевіт
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - text: Казимир Шеверінович Малевич
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - text: Kazymyr Severynovych Malevych
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - text: Казімеж Малевич
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - text: Казимир Северинович Малевич
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - text: Kazimir Severinovich Malevich
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - text: Малевич
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - lang: nl
+    role: translation
+    text: Kazimir Malevitsj
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - lang: fr
+    role: translation
+    text: Kasimir Malevitch
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - lang: de
+    role: translation
+    text: Kasimir Sewerinowitsch Malewitsch
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - lang: it
+    role: translation
+    text: Kazimir Severinovič Malevič
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - lang: es
+    role: translation
+    text: Kazimir Malévich
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - lang: ja
+    role: translation
+    text: カジミール・マレーヴィチ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - lang: zh
+    role: translation
+    text: 卡济米尔·谢韦里诺维奇·马列维奇
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+  - lang: ko
+    role: translation
+    text: 카지미르 말레비치
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130777
+birth: 1879-02-23
+death: 1935-05-15
+wikidata_id: Q130777
+metadata:
+  sources: [Wikidata Q130777 (retrieved 2026-11-07)]
+relationships:
+  - type: founded
+    to: movement/suprematism
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Casimir_Malevich_photo.jpg/1280px-Casimir_Malevich_photo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Casimir_Malevich_photo.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "119140946"
+  dome: "6"
+  gnd: "118640836"
+  idref: "027329070"
+  lc: n80028265
+  nlk: KAC201913294
+  rkd: "52150"
+  ulan: "500004959"
+  viaf: "14773228"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q130777
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q130777

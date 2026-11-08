@@ -13,6 +13,7 @@ institution: metropolitan-museum-of-art
 inventory_number: 1979.5a–d
 web_url: https://www.metmuseum.org/art/collection/search/49156
 description_md: "The third scroll of the [[event/kangxi-emperors-southern-inspection-tours]] painted under [[artist/wang-hui]]: from Ji'nan to [[place/mount-tai]], where the emperor worships. [[source/met-1979-5]]"
+wikidata_id: Q22342935
 relationships:
   - type: depicts
     to: event/kangxi-emperors-southern-inspection-tours
@@ -29,6 +30,11 @@ relationships:
     sources:
       - source: met-1979-5
         accessed: 2026-11-06
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/web-large/DP105303_CRD.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/49156
+    license: Public domain (CC0)
+    credit: The Metropolitan Museum of Art
 sources:
   kind:
     - source: met-1979-5

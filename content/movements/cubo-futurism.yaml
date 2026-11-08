@@ -1,0 +1,61 @@
+public_id: 116713
+name: Cubo-Futurism
+names:
+  - lang: fr
+    role: translation
+    text: cubo-futurisme
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1400843
+  - lang: de
+    role: translation
+    text: Kubofuturismus
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1400843
+  - lang: it
+    role: translation
+    text: Cubo-futurismo
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1400843
+  - lang: es
+    role: translation
+    text: cubofuturismo
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1400843
+  - lang: ja
+    role: translation
+    text: 立体未来主義
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1400843
+  - lang: zh
+    role: translation
+    text: 立体未来主义
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1400843
+  - lang: ko
+    role: translation
+    text: 입체미래주의
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1400843
+  - lang: ru
+    role: translation
+    text: кубофутуризм
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1400843
+kind: movement
+period: 1913
+wikidata_id: Q1400843
+metadata:
+  sources: [Wikidata Q1400843 (retrieved 2026-11-07)]
+sources:
+  period:
+    - accessed: 2026-11-07
+      property: P580
+      wikidata: Q1400843

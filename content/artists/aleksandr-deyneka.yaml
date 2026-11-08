@@ -1,0 +1,164 @@
+public_id: 116641
+name: Aleksandr Deyneka
+given_name: Aleksandr
+family_name: Deyneka
+names:
+  - lang: ru
+    role: original
+    text: Дейнека Александр Александрович
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Aleksandr Aleksandrovich Deyneka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Alexander Deineka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Aleksandr Aleksandrovich Deĭneka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Aleksandr Deĭneka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: A. Deĭneka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Aleksandr Aleksandrovič Deineke
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Alexander Alexandrovitch Dejneka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Aleksandr Aleksandrovič Dejneka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Alexandr Dejneka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Aleksandr Aleksanrovich Deineka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Aleksandr Aleksandrovich Deineka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Aleksandr Deineka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Alexander Deyneka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Alexandre Alexandrovitch Déïnéka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Alexander Alexandrovic Dejneka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Alexandr Alexandrovič Dejneka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Aleksandr Aleksandrovich Dejneka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Alexander Alexandrovitsch Deineka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Alexander Deinika
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Aleksandr Aleksandrovitsj Dejneka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - text: Alexandr Alexándrovich Deineika
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - lang: nl
+    role: translation
+    text: Aleksandr Dejneka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - lang: fr
+    role: translation
+    text: Alexandre Deïneka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - lang: de
+    role: translation
+    text: Alexander Alexandrowitsch Deineka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - lang: ja
+    role: translation
+    text: アレクサンドル・デイネカ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - lang: zh
+    role: translation
+    text: 亚历山大·亚历山德罗维奇·杰伊涅卡
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - lang: ko
+    role: translation
+    text: 알렉산드르 데이네카
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+  - lang: ru
+    role: original
+    text: Александр Александрович Дейнека
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q620483
+birth: 1899-05-20
+death: 1969-06-12
+wikidata_id: Q620483
+metadata:
+  sources: [Wikidata Q620483 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/df/RIAN_archive_75360_Lenin_prize-giving_ceremony_cropped.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:RIAN_archive_75360_Lenin_prize-giving_ceremony_cropped.jpg
+    license: CC BY-SA 4.0
+    credit: Sholomovich / Шоломович
+identifiers:
+  bnf: 14972626j
+  gnd: "118524380"
+  idref: "113595972"
+  lc: n81097707
+  rkd: "21475"
+  ulan: "500118000"
+  viaf: "69203414"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q620483
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q620483

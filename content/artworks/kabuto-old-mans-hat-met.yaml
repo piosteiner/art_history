@@ -9,6 +9,7 @@ materials: [iron, lacquer, copper]
 dimensions: [41]
 institution: metropolitan-museum-of-art
 inventory_number: 36.25.81a–c
+web_url: https://www.metmuseum.org/art/collection/search/24014
 description_md: "A [[kabuto]] in the whimsical shape of an old man’s cloth cap, made of gilded iron and fronted by a three-pronged flame bearing an image of Fudō Myōō. Whom it was made for is unknown, but the message is clear: the wearer has nothing of an old man’s weakness. [[source/history-of-japanese-art|p. 253, fig. 291]]"
 relationships:
   - type: associated_with
@@ -16,6 +17,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 253, fig. 291
+images:
+  - url: https://images.metmuseum.org/CRDImages/aa/web-large/DT306016.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/24014
+    license: Public domain (CC0)
+    credit: The Metropolitan Museum of Art
 sources:
   kind:
     - source: history-of-japanese-art

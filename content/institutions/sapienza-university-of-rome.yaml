@@ -1,0 +1,144 @@
+public_id: 116719
+name: Sapienza University of Rome
+names:
+  - kind: nickname
+    lang: it
+    role: alternative
+    text: la Sapienza
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - text: Università La Sapienza di Roma
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - text: University La Sapienza Rome
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - text: Università degli Studi di Roma "Sapienza"
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - text: Universita La Sapienza di Roma
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - text: Università degli studi di Roma "La Sapienza"
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - text: University La Sapienza of Rome
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - text: Sapienza
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - text: University of Rome
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - text: UNIROMA1
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - text: University of Roma La Sapienza
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - text: University of Rome "La Sapienza"
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - lang: nl
+    role: translation
+    text: Universiteit Sapienza Rome
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - lang: fr
+    role: translation
+    text: Université de Rome « La Sapienza »
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - lang: de
+    role: translation
+    text: Universität La Sapienza
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - lang: es
+    role: translation
+    text: Universidad de Roma La Sapienza
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - lang: ja
+    role: translation
+    text: ローマ・ラ・サピエンツァ大学
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - lang: zh
+    role: translation
+    text: 罗马大学
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - lang: ko
+    role: translation
+    text: 로마 라 사피엔자 대학교
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+  - lang: ru
+    role: translation
+    text: Римский университет Ла Сапиенца
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q209344
+kind: university
+founded: 1303
+place: rome
+location: [12.51583, 41.90333]
+address: Piazzale Aldo Moro 5, I-00185 Roma
+website_url: https://www.uniroma1.it/it/
+wikidata_id: Q209344
+metadata:
+  sources: [Wikidata Q209344 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Sapienza_entrance_%2820040201351%29.jpg/1280px-Sapienza_entrance_%2820040201351%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sapienza_entrance_(20040201351).jpg
+    license: CC BY-SA 2.0
+    credit: Melirius
+identifiers:
+  bnf: 11867955c
+  gnd: 1097368-0
+  idref: "026430711"
+  lc: n84036774
+  ulan: "500311293"
+  viaf: "143759573"
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q209344
+  place:
+    - accessed: 2026-11-07
+      property: P131
+      wikidata: Q209344
+  address:
+    - accessed: 2026-11-07
+      property: P6375
+      wikidata: Q209344
+  founded:
+    - accessed: 2026-11-07
+      property: P571
+      wikidata: Q209344
+  location:
+    - accessed: 2026-11-07
+      property: P625
+      wikidata: Q209344

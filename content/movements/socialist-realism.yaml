@@ -1,0 +1,61 @@
+public_id: 116711
+name: socialist realism
+names:
+  - lang: nl
+    role: translation
+    text: socialistisch realisme
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q180902
+  - lang: fr
+    role: translation
+    text: réalisme socialiste
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q180902
+  - lang: de
+    role: translation
+    text: Sozialistischer Realismus
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q180902
+  - lang: it
+    role: translation
+    text: realismo socialista
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q180902
+  - lang: ja
+    role: translation
+    text: 社会主義リアリズム
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q180902
+  - lang: zh
+    role: translation
+    text: 社会主义的现实主义
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q180902
+  - lang: ko
+    role: translation
+    text: 사회주의적 사실주의
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q180902
+  - lang: ru
+    role: translation
+    text: социалистический реализм
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q180902
+kind: movement
+period: 1932
+wikidata_id: Q180902
+metadata:
+  sources: [Wikidata Q180902 (retrieved 2026-11-07)]
+sources:
+  period:
+    - accessed: 2026-11-07
+      property: P580
+      wikidata: Q180902

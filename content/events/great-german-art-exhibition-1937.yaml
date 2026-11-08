@@ -1,0 +1,28 @@
+public_id: 116706
+name: Great German Art Exhibition 1937
+names:
+  - lang: de
+    role: original
+    text: Große Deutsche Kunstausstellung 1937
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q130478113
+period: 18 July – 31 October 1937
+place: munich
+wikidata_id: Q130478113
+metadata:
+  sources: [Wikidata Q130478113 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/51/Bundesarchiv_Bild_183-C10092%2C_M%C3%BCnchen%2C_Haus_der_Deutschen_Kunst%2C_Er%C3%B6ffnung.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-C10092,_M%C3%BCnchen,_Haus_der_Deutschen_Kunst,_Er%C3%B6ffnung.jpg
+    license: CC BY-SA 3.0 de
+    credit: Unknown author
+sources:
+  place:
+    - accessed: 2026-11-07
+      property: P276
+      wikidata: Q130478113
+  period:
+    - accessed: 2026-11-07
+      property: P585
+      wikidata: Q130478113

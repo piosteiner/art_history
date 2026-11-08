@@ -1,0 +1,18 @@
+public_id: 116812
+title_lang: it
+title: Maschera di Mussolini (Il Duce)
+names:
+  - lang: en
+    role: translation
+    text: Mask of Mussolini (The Duce)
+  - lang: la
+    role: alternative
+    text: Dux
+creator: adolfo-wildt
+created: 1923/1924
+kind: sculpture
+medium: Marble
+description_md: "[[person/benito-mussolini]] as a mask, in Carrara marble on a slab of green marble; the first version, in plaster, was shown on 28 October 1923, the first anniversary of the [[event/march-on-rome]], and versions followed until 1928, one of them acquired by the Galleria d'Arte Moderna, Milan [[source/manchester-wildt-maschera-di-mussolini]]. On the slide \"Dux, 1923\", a topic for the seminars: Wildt and the representations of Mussolini [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 71]]."
+relationships:
+  - type: depicts_person
+    to: person/benito-mussolini

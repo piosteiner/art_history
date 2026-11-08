@@ -1,0 +1,131 @@
+public_id: 116697
+name: World War I
+names:
+  - text: Great War
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - lang: ko
+    role: translation
+    text: 제1차 세계 대전
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - text: WW1
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - text: The Great War
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - lang: zh
+    role: translation
+    text: 第一次世界大戰
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - text: World War
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - lang: ja
+    role: translation
+    text: 第一次世界大戦
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - text: WWI
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - lang: nl
+    role: translation
+    text: Eerste Wereldoorlog
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - lang: fr
+    role: translation
+    text: Première Guerre mondiale
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - lang: de
+    role: translation
+    text: Erster Weltkrieg
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - text: World War One
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - text: The War to End All Wars
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - text: 1st World War
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - lang: it
+    role: translation
+    text: prima guerra mondiale
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - text: World War 1
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - lang: es
+    role: translation
+    text: Primera Guerra Mundial
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - text: WW I
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - text: World War, 1914-1918
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - text: WW 1
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - text: First World War
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+  - lang: ru
+    role: translation
+    text: Первая мировая война
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q361
+period: 1918-11-11
+place: people-s-republic-of-china
+wikidata_id: Q361
+metadata:
+  sources: [Wikidata Q361 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/WWImontage.jpg/1280px-WWImontage.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:WWImontage.jpg
+    license: Public domain
+    credit: User:Hohum
+identifiers:
+  gnd: 4079163-4
+  hls: "008926"
+sources:
+  place:
+    - accessed: 2026-11-07
+      property: P276
+      wikidata: Q361
+  period:
+    - accessed: 2026-11-07
+      property: P585
+      wikidata: Q361

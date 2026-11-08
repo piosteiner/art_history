@@ -1,0 +1,86 @@
+public_id: 116700
+name: March on Rome
+names:
+  - text: Great March on Rome
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q468823
+  - lang: ru
+    role: translation
+    text: Марш на Рим
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q468823
+  - lang: nl
+    role: translation
+    text: Mars op Rome
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q468823
+  - text: Fascist March on Rome
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q468823
+  - lang: es
+    role: translation
+    text: Marcha sobre Roma
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q468823
+  - lang: zh
+    role: translation
+    text: 向罗马进军
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q468823
+  - lang: it
+    role: translation
+    text: marcia su Roma
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q468823
+  - lang: ja
+    role: translation
+    text: ローマ進軍
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q468823
+  - lang: fr
+    role: translation
+    text: marche sur Rome
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q468823
+  - lang: ko
+    role: translation
+    text: 로마 진군
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q468823
+  - lang: de
+    role: translation
+    text: Marsch auf Rom
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q468823
+period: 1922-10
+place: rome
+wikidata_id: Q468823
+metadata:
+  sources: [Wikidata Q468823 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1d/Illustrazione_Italiana_1922_-_Sul_ponte_Salario.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Illustrazione_Italiana_1922_-_Sul_ponte_Salario.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: 4168973-2
+sources:
+  place:
+    - accessed: 2026-11-07
+      property: P276
+      wikidata: Q468823
+  period:
+    - accessed: 2026-11-07
+      property: P585
+      wikidata: Q468823

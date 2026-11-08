@@ -8,6 +8,7 @@ materials: [iron, lacquer, silk]
 dimensions: [24.1]
 institution: metropolitan-museum-of-art
 inventory_number: 19.115.2
+web_url: https://www.metmuseum.org/art/collection/search/22739
 description_md: A face guard by the master armourer [[artist/myochin-muneakira]] (1673–1745) in the form of Jikokuten, one of the [[shitenno]], with the fierce features of the guardian Niō at temple gates — iron that a fighting warrior could still have used, though it was made for display in procession. [[source/history-of-japanese-art|p. 303, fig. 349]]
 relationships:
   - type: associated_with
@@ -15,6 +16,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 303, fig. 349
+images:
+  - url: https://images.metmuseum.org/CRDImages/aa/web-large/LC-19_115_2-002.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/22739
+    license: Public domain (CC0)
+    credit: The Metropolitan Museum of Art
 sources:
   kind:
     - source: history-of-japanese-art

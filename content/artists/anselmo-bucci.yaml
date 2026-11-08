@@ -1,0 +1,44 @@
+public_id: 116654
+name: Anselmo Bucci
+given_name: Anselmo
+family_name: Bucci
+names:
+  - lang: zh
+    role: translation
+    text: 安塞尔莫·布奇
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q569638
+  - lang: ru
+    role: translation
+    text: Ансельмо Буччи
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q569638
+birth: 1887-05-23
+death: 1955-11-19
+wikidata_id: Q569638
+metadata:
+  sources: [Wikidata Q569638 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c8/Anselmo_Bucci.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anselmo_Bucci.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 13546979g
+  gnd: "119348403"
+  idref: "050792946"
+  lc: n79046172
+  rkd: "13738"
+  ulan: "500009829"
+  viaf: "49497154"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q569638
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q569638

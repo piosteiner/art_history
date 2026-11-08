@@ -1,0 +1,37 @@
+public_id: 116661
+name: Deimantas Narkevičius
+given_name: Deimantas
+family_name: Narkevičius
+names:
+  - text: Deimantas Narkevicius
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q2675312
+  - lang: ru
+    role: translation
+    text: Деймантас Наркявичюс
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q2675312
+birth: 1964-05-24
+wikidata_id: Q2675312
+metadata:
+  sources: [Wikidata Q2675312 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/40/Deimantas_Narkevi%C4%8Dius.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Deimantas_Narkevi%C4%8Dius.jpg
+    license: CC BY-SA 4.0
+    credit: Saulius Žiūra
+identifiers:
+  gnd: "124270360"
+  idref: 13556199X
+  kulturnav: 10841054-f1db-47fc-b5a3-7600204eb205
+  lc: nr2007009152
+  rkd: "257728"
+  ulan: "500120947"
+  viaf: "96573436"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q2675312

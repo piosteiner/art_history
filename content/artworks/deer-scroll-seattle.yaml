@@ -9,6 +9,7 @@ materials: [ink, paper, gold, silver]
 dimensions: [34.9]
 institution: seattle-art-museum
 description_md: "One of the last collaborations of [[artist/honami-koetsu]] and [[artist/tawara-sotatsu]]: deer running, standing and feeding in gold and silver, with twenty-eight poems from the Shin kokinshū. Two hands can be seen in the paintings, one skilled in gold, the other adding single deer in heavier strokes; perhaps Sōtatsu painted it and Kōetsu, not entirely pleased, filled the voids. In 1615 [[person/tokugawa-ieyasu]] granted Kōetsu land at Takagamine north-west of Kyoto, where an artists’ community grew from which the [[movement/rinpa]] school would come. [[source/history-of-japanese-art|p. 268, fig. 309]]"
+wikidata_id: Q112114267
 relationships:
   - type: co_creator
     to: artist/honami-koetsu

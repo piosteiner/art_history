@@ -1,0 +1,11 @@
+public_id: 116828
+name: First Exhibition of the Novecento Italiano
+kind: exhibition
+period: 1926
+place: milan
+description_md: The first exhibition of the [[movement/novecento-italiano]] in Milan, opened with a speech by [[person/benito-mussolini]]; the seminar paired it with [[artist/mario-sironi]] [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slides 53, 67]].
+relationships:
+  - type: concerns
+    to: artist/mario-sironi
+  - type: concerns
+    to: movement/novecento-italiano

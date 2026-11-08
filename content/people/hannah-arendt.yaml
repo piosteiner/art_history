@@ -1,0 +1,90 @@
+public_id: 116736
+name: Hannah Arendt
+given_name: Hannah
+family_name: Arendt
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Johanna Arendt
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q60025
+  - text: Hanna Arendt
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q60025
+  - text: Johanna "Hannah" Arendt
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q60025
+  - text: Johanna "Hannah" Cohn Arendt
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q60025
+  - text: Hannah Arendt Blücher
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q60025
+  - lang: ja
+    role: translation
+    text: ハンナ・アーレント
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q60025
+  - lang: zh
+    role: translation
+    text: 汉娜·阿伦特
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q60025
+  - lang: ko
+    role: translation
+    text: 한나 아렌트
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q60025
+  - lang: ru
+    role: translation
+    text: Ханна Арендт
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q60025
+kind: person
+occupations: [philosopher, historian, writer, political scientist, essayist, university teacher, sociologist, political theorist, resistance fighter]
+birth: 1906-10-14
+death: 1975-12-04
+wikidata_id: Q60025
+metadata:
+  sources: [Wikidata Q60025 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Hannah_Arendt_auf_dem_1._Kulturkritikerkongress%2C_Barbara_Niggl_Radloff%2C_FM-2019-1-5-9-16_%28cropped%29.jpg/1280px-Hannah_Arendt_auf_dem_1._Kulturkritikerkongress%2C_Barbara_Niggl_Radloff%2C_FM-2019-1-5-9-16_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hannah_Arendt_auf_dem_1._Kulturkritikerkongress,_Barbara_Niggl_Radloff,_FM-2019-1-5-9-16_(cropped).jpg
+    license: CC BY-SA 4.0
+    credit: Barbara Niggl Radloff
+identifiers:
+  bnf: "118890622"
+  dodis: P47540
+  gnd: 11850391X
+  idref: "080879128"
+  lc: n50023617
+  nlk: KAC199600908
+  ulan: "500217300"
+  viaf: "105151053"
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q60025
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q60025
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q60025
+  occupations:
+    - accessed: 2026-11-07
+      property: P106
+      wikidata: Q60025

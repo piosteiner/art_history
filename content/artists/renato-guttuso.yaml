@@ -1,0 +1,73 @@
+public_id: 116649
+name: Renato Guttuso
+given_name: Renato
+family_name: Guttuso
+names:
+  - text: Renate Guttoso
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q381277
+  - text: Renato Guttuzo
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q381277
+  - text: Aldo Renato Guttuso
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q381277
+  - text: Renato Gotuso
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q381277
+  - lang: ja
+    role: translation
+    text: レナート・グットゥーソ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q381277
+  - lang: zh
+    role: translation
+    text: 雷纳托·古图索
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q381277
+  - lang: ko
+    role: translation
+    text: 레나토 구투소
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q381277
+  - lang: ru
+    role: translation
+    text: Ренато Гуттузо
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q381277
+birth: 1911-12-26
+death: 1987-01-18
+wikidata_id: Q381277
+metadata:
+  sources: [Wikidata Q381277 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1b/Renato_Guttuso_1960.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Renato_Guttuso_1960.jpg
+    license: Public domain
+    credit: Walter Mori (Mondadori Publishers)
+identifiers:
+  bnf: 12174459s
+  gnd: "118699571"
+  idref: "027440036"
+  lc: n50024220
+  nlk: KAC200901018
+  rkd: "34755"
+  ulan: "500022749"
+  viaf: "106962834"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q381277
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q381277

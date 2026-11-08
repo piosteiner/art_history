@@ -1,0 +1,126 @@
+public_id: 116646
+name: Tetiana Yablonska
+given_name: Tetiana
+family_name: Yablonska
+names:
+  - lang: uk
+    role: original
+    text: Тетяна Нилівна Яблонська
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - text: Tetyana Yablons'ka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - text: Tatiana Nilovna Yablonskaya
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - text: Tatiana Jablonskaja
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - text: Tetyana Nilovna Yablons'ka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - text: Tat'yana. Yablonskaya
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - text: Tat'jana Nilovna Jablonskaja
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - text: Tat'yana Nilovna Yablonskaya
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - text: Tat'yana Yablonskaya
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - text: Tatjana Nilovna Jablonskaja
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - text: Tetyana Yablonska
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - text: Tetyana Nilivna Yablonska
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - text: Tatyana Yablonskaya
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - lang: nl
+    role: translation
+    text: Tatjana Jablonska
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - lang: fr
+    role: translation
+    text: Tatiana Iablonskaïa
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - lang: de
+    role: translation
+    text: Tetjana Jablonska
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - lang: it
+    role: translation
+    text: Tetjana Nylyvna Jablons'ka
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - lang: ja
+    role: translation
+    text: タチアナ・ヤブロンスカヤ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - lang: zh
+    role: translation
+    text: T.N. 雅布隆斯卡娅
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+  - lang: ru
+    role: translation
+    text: Яблонская, Татьяна Ниловна
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4535928
+birth: 1917-02-24
+death: 2005-06-17
+wikidata_id: Q4535928
+metadata:
+  sources: [Wikidata Q4535928 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Tetiana_Yablonska_Streetcode_Portret.jpg/1280px-Tetiana_Yablonska_Streetcode_Portret.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tetiana_Yablonska_Streetcode_Portret.jpg
+    license: CC BY-SA 4.0
+    credit: 'Serhii Fedorov for the project "Streetcode: History at Every Turn" of the NGO "History Platform" (Kyiv, Ukraine)'
+identifiers:
+  gnd: "123150256"
+  lc: n81024498
+  rkd: "41270"
+  ulan: "500028477"
+  viaf: "77629634"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q4535928
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q4535928

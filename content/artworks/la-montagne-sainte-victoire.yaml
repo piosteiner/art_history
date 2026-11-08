@@ -138,6 +138,7 @@ provenance:
     price:
       amount: 85000
       currency: CHF
+    notes_md: Bought with a contribution by [[person/emil-georg-buhrle]].
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/18/
         note: "Footnote: Wie oben Fussnote 13."

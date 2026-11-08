@@ -23,6 +23,7 @@ on_loan: true
 on_loan_since: 1949
 provenance_status: b_no_indications
 provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q111593883
 provenance:
   - owner: person/james-hamilton-of-hamilton
     label: Hamilton Palace

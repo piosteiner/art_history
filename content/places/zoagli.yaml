@@ -1,0 +1,43 @@
+public_id: 116729
+name: Zoagli
+names:
+  - lang: ja
+    role: translation
+    text: ゾアーリ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q218027
+  - lang: zh
+    role: translation
+    text: 佐阿利
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q218027
+  - lang: ru
+    role: translation
+    text: Дзоальи
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q218027
+kind: settlement
+parent: metropolitan-city-of-genoa
+country_code: IT
+location: [9.26709, 44.33697]
+wikidata_id: Q218027
+metadata:
+  sources: [Wikidata Q218027 (retrieved 2026-11-07)]
+identifiers:
+  gnd: "1127152599"
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q218027
+  parent:
+    - accessed: 2026-11-07
+      property: P131
+      wikidata: Q218027
+  location:
+    - accessed: 2026-11-07
+      property: P625
+      wikidata: Q218027

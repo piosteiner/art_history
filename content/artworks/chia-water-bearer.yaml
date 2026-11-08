@@ -1,0 +1,16 @@
+public_id: 116810
+title_lang: en
+title: Water Bearer
+creator: sandro-chia
+created: 1981
+kind: painting
+medium: Oil paint and pastel on canvas
+dimensions: [206.5, 170]
+institution: tate-gallery
+inventory_number: T03469
+web_url: https://www.tate.org.uk/art/artworks/chia-water-bearer-t03469
+description_md: "[[source/tate-t03469]] [[movement/transavanguardia]]; with [[artwork/baselitz-adieu]] at the opening of the seminar [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 11]]."
+wikidata_id: Q28564811
+relationships:
+  - type: associated_with
+    to: movement/transavanguardia

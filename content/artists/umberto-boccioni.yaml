@@ -1,0 +1,61 @@
+public_id: 116640
+name: Umberto Boccioni
+given_name: Umberto
+family_name: Boccioni
+names:
+  - lang: ja
+    role: translation
+    text: ウンベルト・ボッチョーニ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152797
+  - lang: zh
+    role: translation
+    text: 翁貝托·薄邱尼
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152797
+  - lang: ko
+    role: translation
+    text: 움베르토 보초니
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152797
+  - lang: ru
+    role: translation
+    text: Умберто Боччони
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q152797
+birth: 1882-10-19
+death: 1916-08-17
+wikidata_id: Q152797
+metadata:
+  sources: [Wikidata Q152797 (retrieved 2026-11-07)]
+relationships:
+  - type: member_of
+    to: movement/futurism
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/81/Emilio_Sommariva_%281883_-_1956%29_Ritratto_del_pittore_Umberto_Boccioni_%281914%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emilio_Sommariva_(1883_-_1956)_Ritratto_del_pittore_Umberto_Boccioni_(1914).jpg
+    license: Public domain
+    credit: it:Emilio Sommariva
+identifiers:
+  bnf: "118924840"
+  dome: "33"
+  gnd: "118512188"
+  idref: "026734192"
+  lc: n79054518
+  nlk: KAC202108266
+  rkd: "9451"
+  ulan: "500012624"
+  viaf: "51685971"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q152797
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q152797

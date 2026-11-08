@@ -1,0 +1,15 @@
+public_id: 116787
+title_lang: it
+title: Marcia su Roma
+names:
+  - lang: en
+    role: translation
+    text: The March on Rome
+creator: giacomo-balla
+created: 1931/1932
+kind: painting
+description_md: "The [[event/march-on-rome]] of 1922 painted ten years later by a former Futurist: history painting under Fascism [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slides 16, 71]]."
+wikidata_id: Q97170526
+relationships:
+  - type: depicts
+    to: event/march-on-rome

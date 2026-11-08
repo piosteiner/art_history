@@ -1,0 +1,52 @@
+public_id: 116637
+name: Mario Sironi
+given_name: Mario
+family_name: Sironi
+names:
+  - text: Sironi
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q643778
+  - lang: ko
+    role: translation
+    text: 마리오 시로니
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q643778
+  - lang: ru
+    role: translation
+    text: Марио Сирони
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q643778
+birth: 1885-05-12
+death: 1961-08-13
+wikidata_id: Q643778
+metadata:
+  sources: [Wikidata Q643778 (retrieved 2026-11-07)]
+relationships:
+  - type: member_of
+    to: movement/novecento-italiano
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5e/Mario_Sironi_Composizione.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mario_Sironi_Composizione.jpg
+    license: CC BY-SA 4.0
+    credit: Foundation de
+identifiers:
+  bnf: "119645500"
+  dome: "12354"
+  gnd: "118838504"
+  idref: "027648486"
+  lc: n50025579
+  rkd: "254343"
+  ulan: "500012403"
+  viaf: "19686"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q643778
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q643778

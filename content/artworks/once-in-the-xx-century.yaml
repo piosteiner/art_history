@@ -1,0 +1,29 @@
+public_id: 116688
+title: Once in the XX Century
+creator: deimantas-narkevicius
+created: 2004
+kind: installation
+institution: museum-of-modern-art
+inventory_number: 525,2011
+web_url: https://www.moma.org/collection/works/148050
+description_md: A video; contemporary perspectives on the Soviet legacy, beside [[artwork/akhunov-red-mantra-cccp]] [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 40]].
+wikidata_id: Q20741711
+metadata:
+  sources: [Wikidata Q20741711 (retrieved 2026-11-07)]
+sources:
+  created:
+    - accessed: 2026-11-07
+      property: P571
+      wikidata: Q20741711
+  creator:
+    - accessed: 2026-11-07
+      property: P170
+      wikidata: Q20741711
+  institution:
+    - accessed: 2026-11-07
+      property: P195
+      wikidata: Q20741711
+  inventory_number:
+    - accessed: 2026-11-07
+      property: P217
+      wikidata: Q20741711

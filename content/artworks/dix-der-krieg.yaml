@@ -1,0 +1,17 @@
+public_id: 116793
+title_lang: de
+title: Der Krieg
+names:
+  - lang: en
+    role: translation
+    text: The War
+creator: otto-dix
+created: 1929/1932
+kind: triptych
+medium: Mixed technique on wood
+institution: staatliche-kunstsammlungen-dresden
+description_md: Triptych with predella. After the First World War war was often shown in its gruesome aspects — with [[artwork/grosz-to-them-peace-is-assured]] [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 18; class notes, 24 September 2024]].
+wikidata_id: Q662329
+relationships:
+  - type: depicts
+    to: event/world-war-i

@@ -1,0 +1,87 @@
+public_id: 116689
+title: Ulysses' Gaze
+title_status: common
+names:
+  - lang: el
+    role: original
+    text: Το βλέμμα του Οδυσσέα
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q668280
+  - text: To Vlemma tou Odyssea
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q668280
+  - lang: nl
+    role: translation
+    text: Odisejev pogled
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q668280
+  - lang: fr
+    role: translation
+    text: Le Regard d'Ulysse
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q668280
+  - lang: de
+    role: translation
+    text: Der Blick des Odysseus
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q668280
+  - lang: it
+    role: translation
+    text: Lo sguardo di Ulisse
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q668280
+  - lang: es
+    role: translation
+    text: La mirada de Ulises
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q668280
+  - lang: ja
+    role: translation
+    text: ユリシーズの瞳
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q668280
+  - lang: zh
+    role: translation
+    text: 尤里西斯生命之旅
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q668280
+  - lang: ko
+    role: translation
+    text: 율리시즈의 시선
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q668280
+  - lang: ru
+    role: translation
+    text: Взгляд Улисса
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q668280
+creator: thodoros-angelopoulos
+created: 1995
+kind: film
+description_md: A statue of Lenin, taken apart and reassembled like a body in a funeral parlour, passes on a barge down a river through the Balkans — the afterlife of monuments [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 34]].
+wikidata_id: Q668280
+metadata:
+  sources: [Wikidata Q668280 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Sarajevo_Siege_Gathering_Firewood.jpg/1280px-Sarajevo_Siege_Gathering_Firewood.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sarajevo_Siege_Gathering_Firewood.jpg
+    license: CC BY 3.0
+    credit: Christian Maréchal
+identifiers:
+  gnd: "1037032764"
+  viaf: "224082256"
+sources:
+  title_status:
+    - accessed: 2026-11-07
+      wikidata: Q668280

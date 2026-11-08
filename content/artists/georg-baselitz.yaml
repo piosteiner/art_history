@@ -1,0 +1,64 @@
+public_id: 116651
+name: Georg Baselitz
+given_name: Georg
+family_name: Baselitz
+names:
+  - kind: birth
+    lang: de
+    role: former
+    text: Hans-Georg Kern
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q164775
+  - lang: ja
+    role: translation
+    text: ゲオルク・バーゼリッツ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q164775
+  - lang: zh
+    role: translation
+    text: 格奥尔格·巴泽利茨
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q164775
+  - lang: ko
+    role: translation
+    text: 게오르크 바젤리츠
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q164775
+  - lang: ru
+    role: translation
+    text: Георг Базелиц
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q164775
+birth: 1938-01-23
+death: 2026-04-30
+wikidata_id: Q164775
+metadata:
+  sources: [Wikidata Q164775 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/65/Georg_Baselitz_by_Erling_Mandelmann.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Georg_Baselitz_by_Erling_Mandelmann.jpg
+    license: CC BY-SA 3.0
+    credit: Erling Mandelmann
+identifiers:
+  bnf: "120349115"
+  gnd: 11850701X
+  idref: "028531833"
+  kulturnav: d1d1dda4-829d-4557-9c91-520f69275c5e
+  lc: n50018431
+  rkd: "4869"
+  ulan: "500045683"
+  viaf: "100903160"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q164775
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q164775

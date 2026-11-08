@@ -1,0 +1,48 @@
+public_id: 116652
+name: Sandro Chia
+given_name: Sandro
+family_name: Chia
+names:
+  - text: Alessandro Chia
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q763368
+  - text: Alessandro Coticchia
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q763368
+  - lang: ja
+    role: translation
+    text: サンドロ・キア
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q763368
+  - lang: zh
+    role: translation
+    text: 山得洛·奇亞
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q763368
+  - lang: ru
+    role: translation
+    text: Сандро Киа
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q763368
+birth: 1946-04-20
+wikidata_id: Q763368
+metadata:
+  sources: [Wikidata Q763368 (retrieved 2026-11-07)]
+identifiers:
+  bnf: 11966371w
+  gnd: "118520431"
+  idref: "068625251"
+  lc: n83140837
+  rkd: "16637"
+  ulan: "500031353"
+  viaf: "32787656"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q763368

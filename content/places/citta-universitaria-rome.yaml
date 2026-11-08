@@ -1,0 +1,47 @@
+public_id: 116730
+name: città universitaria of Rome
+names:
+  - text: university city of Rome
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q102114571
+  - lang: de
+    role: translation
+    text: Città Universitaria
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q102114571
+  - lang: it
+    role: translation
+    text: città universitaria di Roma
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q102114571
+  - lang: es
+    role: translation
+    text: ciudad universitaria de Roma
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q102114571
+kind: district
+parent: rome
+country_code: IT
+location: [12.51451, 41.90291]
+wikidata_id: Q102114571
+metadata:
+  sources: [Wikidata Q102114571 (retrieved 2026-11-07)]
+identifiers:
+  gnd: 4699334-4
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q102114571
+  parent:
+    - accessed: 2026-11-07
+      property: P131
+      wikidata: Q102114571
+  location:
+    - accessed: 2026-11-07
+      property: P625
+      wikidata: Q102114571

@@ -1,0 +1,35 @@
+public_id: 116716
+name: aeropittura
+names:
+  - text: aeropainting
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1479489
+  - lang: zh
+    role: translation
+    text: 飞行画派
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1479489
+  - lang: ko
+    role: translation
+    text: 항공 회화
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1479489
+  - lang: ru
+    role: translation
+    text: Аэроживопись
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1479489
+kind: movement
+period: 1920/1949
+wikidata_id: Q1479489
+metadata:
+  sources: [Wikidata Q1479489 (retrieved 2026-11-07)]
+sources:
+  period:
+    - accessed: 2026-11-07
+      property: P580
+      wikidata: Q1479489

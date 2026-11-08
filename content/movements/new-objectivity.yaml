@@ -1,0 +1,55 @@
+public_id: 116712
+name: New Objectivity
+names:
+  - text: Neue Sachlichkeit
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q160218
+  - lang: nl
+    role: translation
+    text: nieuwe zakelijkheid
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q160218
+  - lang: fr
+    role: translation
+    text: Nouvelle Objectivité
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q160218
+  - lang: it
+    role: translation
+    text: Nuova oggettività
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q160218
+  - lang: es
+    role: translation
+    text: nueva objetividad
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q160218
+  - lang: ja
+    role: translation
+    text: 新即物主義
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q160218
+  - lang: ko
+    role: translation
+    text: 신즉물주의
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q160218
+  - lang: ru
+    role: translation
+    text: Новая вещественность
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q160218
+kind: movement
+wikidata_id: Q160218
+metadata:
+  sources: [Wikidata Q160218 (retrieved 2026-11-07)]
+identifiers:
+  gnd: 4171544-5

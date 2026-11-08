@@ -1,0 +1,21 @@
+public_id: 116665
+name: Hermann Otto Hoyer
+given_name: Hermann Otto
+family_name: Hoyer
+birth: 1893-01-15
+death: 1968-05-30
+wikidata_id: Q95326887
+metadata:
+  sources: [Wikidata Q95326887 (retrieved 2026-11-07)]
+identifiers:
+  gnd: 103489952X
+  viaf: "302454914"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q95326887
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q95326887

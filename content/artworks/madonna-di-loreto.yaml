@@ -1,0 +1,83 @@
+public_id: 116684
+title_lang: it
+title: Madonna dei pellegrini
+names:
+  - text: The Madonna of the Pilgrims
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q2713203
+  - lang: en
+    role: translation
+    text: Madonna di Loreto
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q2713203
+  - lang: fr
+    role: translation
+    text: La Madone des pèlerins
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q2713203
+  - lang: es
+    role: translation
+    text: Madonna de Loreto
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q2713203
+  - lang: ja
+    role: translation
+    text: ロレートの聖母
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q2713203
+  - lang: zh
+    role: translation
+    text: 洛雷托圣母 (卡拉瓦乔)
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q2713203
+  - lang: ru
+    role: translation
+    text: Мадонна ди Лорето
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q2713203
+creator: caravaggio
+created: 1605
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [260, 150]
+institution: basilica-of-saint-augustine-in-campo-marzio
+description_md: "Pilgrims kneeling before the Madonna: Caravaggio's realism of ordinary people, beside [[artwork/the-stone-breakers]] [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 24]]."
+wikidata_id: Q2713203
+metadata:
+  sources: [Wikidata Q2713203 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Madonna_di_Loreto-Caravaggio_%28c.1604-6%29.jpg/1280px-Madonna_di_Loreto-Caravaggio_%28c.1604-6%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Madonna_di_Loreto-Caravaggio_(c.1604-6).jpg
+    license: Public domain
+    credit: Caravaggio
+identifiers:
+  gnd: 7606009-3
+sources:
+  created:
+    - accessed: 2026-11-07
+      property: P571
+      wikidata: Q2713203
+  creator:
+    - accessed: 2026-11-07
+      property: P170
+      wikidata: Q2713203
+  materials:
+    - accessed: 2026-11-07
+      property: P186
+      wikidata: Q2713203
+  dimensions:
+    - accessed: 2026-11-07
+      property: P2048
+      wikidata: Q2713203
+  institution:
+    - accessed: 2026-11-07
+      property: P195
+      wikidata: Q2713203

@@ -1,0 +1,16 @@
+public_id: 116681
+name: Staatliche Kunstsammlungen Dresden
+kind: museum
+founded: 1560
+wikidata_id: Q653002
+metadata:
+  sources: [Wikidata Q653002 (retrieved 2026-11-07)]
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q653002
+  founded:
+    - accessed: 2026-11-07
+      property: P571
+      wikidata: Q653002

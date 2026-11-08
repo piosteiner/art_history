@@ -1,0 +1,178 @@
+public_id: 116732
+name: Joseph Stalin
+given_name: Joseph
+family_name: Stalin
+names:
+  - kind: birth
+    lang: ka
+    role: alternative
+    text: იოსებ ბესარიონის ძე ჯუღაშვილი
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - kind: pseudonym
+    role: alternative
+    text: Staline
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - kind: pseudonym
+    role: alternative
+    text: Koba
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - kind: nickname
+    lang: ru
+    role: alternative
+    text: Коба
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Uncle Joe
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - lang: ru
+    role: original
+    text: Иосиф Виссарионович Джугашвили
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - text: Joseph Vissarionovich Stalin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - text: Josef Stalin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - text: Joseph Vissarionovitch Stalin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - text: Ioseb Besarionis dze Dzhugashvili
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - text: Ioseb Jugashvili
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - text: Ioseb Dzhugashvili
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - text: Joey Stalin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - text: General Secretary Joseph Stalin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - text: Stavros Papadopoulos
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - text: General Secretary Stalin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - text: Yosif Dzhugashvili
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - text: Iosif Vissarionovich Dzhugashvili
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - lang: nl
+    role: translation
+    text: Jozef Stalin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - lang: fr
+    role: translation
+    text: Joseph Staline
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - lang: it
+    role: translation
+    text: Iosif Stalin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - lang: es
+    role: translation
+    text: Iósif Stalin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - lang: ja
+    role: translation
+    text: ヨシフ・スターリン
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - lang: zh
+    role: translation
+    text: 约瑟夫·斯大林
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - lang: ko
+    role: translation
+    text: 이오시프 스탈린
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+  - lang: ru
+    role: original
+    text: Иосиф Виссарионович Сталин
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q855
+kind: person
+occupations: [politician, revolutionary, opinion journalist, statesperson, linguist]
+birth: 1878-12-18
+death: 1953-03-05
+wikidata_id: Q855
+metadata:
+  sources: [Wikidata Q855 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/08/StalinCropped1943.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:StalinCropped1943.jpg
+    license: Public domain
+    credit: Franklin D. Roosevelt Library Public Domain Photographs
+identifiers:
+  bnf: 11925406n
+  dodis: P955
+  gnd: "118642499"
+  idref: "027147029"
+  lc: n80044789
+  nlk: KAC201620479
+  ulan: "500256111"
+  viaf: "101787139"
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q855
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q855
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q855
+  occupations:
+    - accessed: 2026-11-07
+      property: P106
+      wikidata: Q855

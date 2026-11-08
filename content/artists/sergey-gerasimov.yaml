@@ -1,0 +1,128 @@
+public_id: 116645
+name: Sergey Gerasimov
+given_name: Sergey
+family_name: Gerasimov
+names:
+  - text: Sergei Vasilevich Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - text: Sergey Vasil'yevich Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - text: Sergei Vasilyevich Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - text: Ssergej Wassiljewitsch Gerassimoff
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - text: Serguei Guerassimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - text: Sergei Vasil'yevich Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - text: Sergei Vasilevich Guerassimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - text: Sergej Vasil'evič Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - text: S. V. Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - text: Sergei W. Gerassimow
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - text: Sergei Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - text: Sergeĭ Vasilʹevich Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - text: Sergei Vasileevich Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - text: S. Gherasimoff
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - text: Sergej Vasil'evitsj Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - text: Sergei Vasil'evich Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - text: Sergei Vasilievich Garasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - text: Sergey Vasilyevich Gerasimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - lang: fr
+    role: translation
+    text: Sergueï Guerassimov
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - lang: de
+    role: translation
+    text: Sergei Wassiljewitsch Gerassimow
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - lang: zh
+    role: translation
+    text: 谢尔盖·瓦西里耶维奇·格拉西莫夫
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+  - lang: ru
+    role: translation
+    text: Сергей Васильевич Герасимов
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1755821
+birth: 1885-08-26
+death: 1964-04-20
+wikidata_id: Q1755821
+metadata:
+  sources: [Wikidata Q1755821 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d7/Bundesarchiv_Bild_183-33853-0002%2C_Dresden%2C_Besuch_Sergej_W._Gerassimow%2C_Lea_Grundig.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-33853-0002,_Dresden,_Besuch_Sergej_W._Gerassimow,_Lea_Grundig.jpg
+    license: CC BY-SA 3.0 de
+    credit: Höhne, Erich; Pohl, Erich
+identifiers:
+  dome: "4777"
+  gnd: "118690582"
+  idref: 13395806X
+  lc: n80146123
+  rkd: "31030"
+  ulan: "500012985"
+  viaf: "37710500"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q1755821
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q1755821

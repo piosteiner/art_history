@@ -1,0 +1,20 @@
+public_id: 116708
+name: Voyage of the Regia Nave Italia to Latin America
+names:
+  - lang: it
+    role: original
+    text: Crociera della Regia Nave Italia nell’America Latina
+period: 2000
+location: [12.49322, 41.91852]
+wikidata_id: Q134878664
+metadata:
+  sources: [Wikidata Q134878664 (retrieved 2026-11-07)]
+sources:
+  period:
+    - accessed: 2026-11-07
+      property: P585
+      wikidata: Q134878664
+  location:
+    - accessed: 2026-11-07
+      property: P625
+      wikidata: Q134878664

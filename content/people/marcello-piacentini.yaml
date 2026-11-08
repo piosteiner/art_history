@@ -1,0 +1,66 @@
+public_id: 116734
+name: Marcello Piacentini
+given_name: Marcello
+family_name: Piacentini
+names:
+  - lang: ja
+    role: translation
+    text: マルチェッロ・ピアチェンティーニ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1382978
+  - lang: zh
+    role: translation
+    text: 马切洛·皮亚森蒂尼
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1382978
+  - lang: ko
+    role: translation
+    text: 마르첼로 피아첸티니
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1382978
+  - lang: ru
+    role: translation
+    text: Марчелло Пьячентини
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q1382978
+kind: person
+occupations: [architect, university teacher]
+birth: 1881-12-08
+death: 1960-05-19
+wikidata_id: Q1382978
+metadata:
+  sources: [Wikidata Q1382978 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/21/MarcelloPiacentini1900.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:MarcelloPiacentini1900.jpg
+    license: Public domain
+    credit: '"Capitolium" 1933, p. 607,'
+identifiers:
+  bnf: 11210475v
+  gnd: "119332426"
+  idref: "070728496"
+  lc: n86104104
+  rkd: "321274"
+  ulan: "500020048"
+  viaf: "39370470"
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q1382978
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q1382978
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q1382978
+  occupations:
+    - accessed: 2026-11-07
+      property: P106
+      wikidata: Q1382978

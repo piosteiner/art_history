@@ -1,0 +1,18 @@
+public_id: 116690
+name: Sándor Mikus
+given_name: Sándor
+family_name: Mikus
+birth: 1903-08-11
+death: 1982-09-17
+wikidata_id: Q390353
+metadata:
+  sources: [Wikidata Q390353 (retrieved 2026-11-07)]
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q390353
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q390353

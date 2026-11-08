@@ -1,0 +1,39 @@
+public_id: 116717
+name: Novecento Italiano
+names:
+  - text: Il Novecento Italiano
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q933661
+  - text: Novecento italiano (Group of artists)
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q933661
+  - lang: fr
+    role: translation
+    text: Novecento
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q933661
+  - lang: zh
+    role: translation
+    text: 意大利二十世纪运动
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q933661
+  - lang: ko
+    role: translation
+    text: 노베첸토 이탈리아노
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q933661
+  - lang: ru
+    role: translation
+    text: Новеченто
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q933661
+kind: movement
+wikidata_id: Q933661
+metadata:
+  sources: [Wikidata Q933661 (retrieved 2026-11-07)]

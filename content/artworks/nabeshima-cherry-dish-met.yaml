@@ -8,6 +8,7 @@ materials: [Nabeshima ware]
 dimensions_note: diameter 19.7 cm
 institution: metropolitan-museum-of-art
 inventory_number: 1975.268.555
+web_url: https://www.metmuseum.org/art/collection/search/50197
 description_md: "A [[nabeshima-ware]] dish from the Nangawara kiln: a blossoming cherry tree combined with an abstract pattern suggesting the curtains of an outdoor blossom-viewing enclosure, in three colour zones — pale blue, pale green and chocolate brown. Pressed in a mould and outlined in underglaze blue from a single sketch. [[source/history-of-japanese-art|p. 295, fig. 337]]"
 relationships:
   - type: associated_with
@@ -15,6 +16,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 295, fig. 337
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/web-large/DP244340.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/50197
+    license: Public domain (CC0)
+    credit: The Metropolitan Museum of Art
 sources:
   kind:
     - source: history-of-japanese-art

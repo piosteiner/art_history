@@ -50,6 +50,8 @@ relationships:
       - accessed: 2026-11-02
         property: P20
         wikidata: Q368254
+  - type: member_of
+    to: movement/futurism
 identifiers:
   bnf: 12287205d
   dome: "15"

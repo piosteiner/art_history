@@ -1,0 +1,32 @@
+public_id: 116728
+name: Museo civico Duilio Cambellotti
+kind: museum
+place: latina
+location: [12.90358, 41.46515]
+address: Piazza S. Marco,  - Latina
+website_url: http://www.comune.latina.it/cultura.php
+wikidata_id: Q3867774
+metadata:
+  sources: [Wikidata Q3867774 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Latina_-_Museo_civico_Duilio_Cambellotti.jpg/1280px-Latina_-_Museo_civico_Duilio_Cambellotti.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Latina_-_Museo_civico_Duilio_Cambellotti.jpg
+    license: CC BY-SA 4.0
+    credit: Pietro
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q3867774
+  place:
+    - accessed: 2026-11-07
+      property: P131
+      wikidata: Q3867774
+  address:
+    - accessed: 2026-11-07
+      property: P6375
+      wikidata: Q3867774
+  location:
+    - accessed: 2026-11-07
+      property: P625
+      wikidata: Q3867774

@@ -1,0 +1,13 @@
+public_id: 116832
+name: "Sironi Unveiled: The Restoration of the Sapienza Mural"
+names:
+  - lang: it
+    role: original
+    text: Sironi svelato. Il restauro del murale della Sapienza
+kind: exhibition
+period: 2017-11-23/2018-01-21
+place: rome
+description_md: "*Sironi svelato. Il restauro del murale della Sapienza*, MLAC (Museo Laboratorio di Arte Contemporanea) in the Rettorato of the Sapienza, with a catalogue (Campisano): the restoration of [[artwork/sironi-italia-fra-le-arti-e-le-scienze]] [[source/sapienza-2017-sironi-restauro|p. 2]]."
+relationships:
+  - type: concerns
+    to: artwork/sironi-italia-fra-le-arti-e-le-scienze

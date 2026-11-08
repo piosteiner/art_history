@@ -1,0 +1,33 @@
+public_id: 116667
+name: Renato Di Bosso
+given_name: Renato
+family_name: Righetti
+names:
+  - kind: birth
+    lang: it
+    role: alternative
+    text: Renato Righetti
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q51752390
+birth: 1905-09-19
+death: 1982-12-19
+wikidata_id: Q51752390
+metadata:
+  sources: [Wikidata Q51752390 (retrieved 2026-11-07)]
+identifiers:
+  bnf: 12140704r
+  gnd: "118928023"
+  idref: "029872227"
+  lc: nr89010732
+  ulan: "500199658"
+  viaf: "811062"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q51752390
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q51752390

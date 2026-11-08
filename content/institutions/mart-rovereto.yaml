@@ -1,0 +1,85 @@
+public_id: 116724
+name: Museum of Modern and Contemporary Art of Trento and Rovereto
+names:
+  - text: Mart
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q642603
+  - text: Museo d'arte moderna e contemporanea di Trento e Rovereto
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q642603
+  - text: Museo di arte moderna e contemporanea di Trento e Rovereto
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q642603
+  - text: Museo d'Arte Moderna in Palazzo Albere
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q642603
+  - lang: fr
+    role: translation
+    text: musée d'Art moderne et contemporain de Trente et Rovereto
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q642603
+  - lang: ja
+    role: translation
+    text: トレント・ロヴェレート近現代美術館
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q642603
+  - lang: zh
+    role: translation
+    text: 特倫托和羅韋雷托當代美術館
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q642603
+  - lang: ru
+    role: translation
+    text: Музей современного искусства Тренто и Роверето
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q642603
+kind: museum
+founded: 1987
+place: rovereto
+location: [11.04474, 45.89383]
+address: Corso Bettini, 43 - Rovereto
+website_url: https://www.mart.tn.it
+wikidata_id: Q642603
+metadata:
+  sources: [Wikidata Q642603 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/MART_-_ingresso.jpg/1280px-MART_-_ingresso.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:MART_-_ingresso.jpg
+    license: CC BY-SA 3.0
+    credit: LapoLuchini at it.wikipedia
+identifiers:
+  bnf: 12492770k
+  gnd: 3013427-4
+  idref: "034139648"
+  lc: nr91001090
+  ulan: "500254069"
+  viaf: "142503376"
+sources:
+  kind:
+    - accessed: 2026-11-07
+      property: P31
+      wikidata: Q642603
+  place:
+    - accessed: 2026-11-07
+      property: P131
+      wikidata: Q642603
+  address:
+    - accessed: 2026-11-07
+      property: P6375
+      wikidata: Q642603
+  founded:
+    - accessed: 2026-11-07
+      property: P571
+      wikidata: Q642603
+  location:
+    - accessed: 2026-11-07
+      property: P625
+      wikidata: Q642603

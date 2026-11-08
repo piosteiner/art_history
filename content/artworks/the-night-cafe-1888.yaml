@@ -1,0 +1,100 @@
+public_id: 116695
+title_lang: fr
+title: Le café de nuit
+names:
+  - lang: en
+    role: translation
+    text: The Night Café
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q674846
+  - lang: nl
+    role: translation
+    text: Het nachtcafé
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q674846
+  - lang: de
+    role: translation
+    text: Das Nachtcafé
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q674846
+  - lang: it
+    role: translation
+    text: Il caffè di notte
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q674846
+  - lang: es
+    role: translation
+    text: El café de noche
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q674846
+  - lang: ja
+    role: translation
+    text: 夜のカフェ
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q674846
+  - lang: ko
+    role: translation
+    text: 밤의 카페
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q674846
+  - lang: ru
+    role: translation
+    text: Ночное кафе
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q674846
+parent: the-night-cafe
+creator: vincent-van-gogh
+created: 1888-09
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [72.4, 92.1]
+institution: yale-university-art-gallery
+inventory_number: 1961.18.34
+web_url: https://artgallery.yale.edu/collections/objects/12507
+description_md: Bequest of Stephen Carlton Clark [[source/yale-1961-18-34]]. The seminar's example of the circulation of objects under the regimes — loot, displacement, sales [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slides 35–36]]; for the fate of the Moscow collections nationalised after the revolution see [[source/rasmussen-2022]] (on Shchukin's).
+wikidata_id: Q674846
+metadata:
+  sources: [Wikidata Q674846 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Van_Gogh_-_The_Night_Caf%C3%A9_%281888%29.jpg/1280px-Van_Gogh_-_The_Night_Caf%C3%A9_%281888%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Van_Gogh_-_The_Night_Caf%C3%A9_(1888).jpg
+    license: Public domain
+    credit: Vincent van Gogh
+sources:
+  parent:
+    - accessed: 2026-11-07
+      property: P179
+      wikidata: Q674846
+  created:
+    - accessed: 2026-11-07
+      property: P571
+      wikidata: Q674846
+  creator:
+    - accessed: 2026-11-07
+      property: P170
+      wikidata: Q674846
+  materials:
+    - accessed: 2026-11-07
+      property: P186
+      wikidata: Q674846
+  dimensions:
+    - accessed: 2026-11-07
+      property: P2048
+      wikidata: Q674846
+  institution:
+    - accessed: 2026-11-07
+      property: P195
+      wikidata: Q674846
+  inventory_number:
+    - accessed: 2026-11-07
+      property: P217
+      wikidata: Q674846

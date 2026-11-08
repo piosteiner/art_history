@@ -7,6 +7,7 @@ materials: [paper]
 dimensions: [25.5, 39]
 institution: art-institute-of-chicago
 inventory_number: "1925.3184"
+web_url: https://www.artic.edu/artworks/86967
 description_md: "An [[uki-e]] by [[artist/utagawa-toyoharu]] (1735–1814), the founder of the Utagawa school, using Western one-point perspective: in tatami rooms open to a snow-covered garden, people are served food and drink by young ladies, play Japanese checkers or talk, while one group makes a gigantic snowball. [[source/history-of-japanese-art|pp. 276–277, fig. 315]]"
 relationships:
   - type: associated_with
@@ -14,6 +15,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 276–277, fig. 315
+images:
+  - url: https://www.artic.edu/iiif/2/b65b9ff9-28b2-c3c0-9a9d-104e49cd36b4/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/86967
+    license: Public domain (CC0)
+    credit: Art Institute of Chicago, Clarence Buckingham Collection
 sources:
   kind:
     - source: history-of-japanese-art

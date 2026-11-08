@@ -13,12 +13,18 @@ institution: metropolitan-museum-of-art
 inventory_number: 1984.16a–c
 web_url: https://www.metmuseum.org/art/collection/search/49251
 description_md: "From the set of handscrolls of the [[person/qianlong-emperor]]'s Southern Inspection Tour, the fourth scroll: the confluence of the Huai and Yellow Rivers. [[source/met-1984-16]]"
+wikidata_id: Q78824405
 relationships:
   - type: depicts_person
     to: person/qianlong-emperor
     sources:
       - source: met-1984-16
         accessed: 2026-11-06
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/web-large/DP105279_CRD.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/49251
+    license: Public domain (CC0)
+    credit: The Metropolitan Museum of Art
 sources:
   kind:
     - source: met-1984-16

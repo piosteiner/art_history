@@ -8,6 +8,7 @@ materials: [Shigaraki ware]
 dimensions: [46.7]
 institution: metropolitan-museum-of-art
 inventory_number: 1975.268.428
+web_url: https://www.metmuseum.org/art/collection/search/44637
 description_md: "A storage jar of [[shigaraki-ware]], built up from coils of clay: the unglazed body has fired brick-red from the iron in the clay, while ash falling on the shoulders in the kiln has formed a grey glaze and a bib of shiny green. Its roughness and simplicity answered the Zen aesthetic of [[wabi]]. [[source/history-of-japanese-art|p. 180, fig. 209]]"
 relationships:
   - type: associated_with
@@ -15,6 +16,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 180, fig. 209
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/web-large/DP-42156-001.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/44637
+    license: Public domain (CC0)
+    credit: The Metropolitan Museum of Art
 sources:
   kind:
     - source: history-of-japanese-art

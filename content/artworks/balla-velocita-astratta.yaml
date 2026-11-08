@@ -1,0 +1,14 @@
+public_id: 116788
+title_lang: it
+title: Velocità astratta
+names:
+  - lang: en
+    role: translation
+    text: Abstract Speed
+creator: giacomo-balla
+created: 1913
+kind: painting
+description_md: "Balla's Futurist abstraction, which the seminar set against his later [[artwork/balla-marcia-su-roma]]: modernism and totalitarian art [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 71]]. Balla painted several works of this title in 1913; which one the slide shows is open."
+relationships:
+  - type: associated_with
+    to: movement/futurism

@@ -1,0 +1,71 @@
+public_id: 116692
+title: Stalin Monument
+names:
+  - lang: de
+    role: translation
+    text: Stalindenkmal
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q543753
+  - lang: es
+    role: translation
+    text: Monumento a Stalin
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q543753
+  - lang: zh
+    role: translation
+    text: 布达佩斯斯大林雕像
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q543753
+  - lang: ko
+    role: translation
+    text: 스탈린 기념비
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q543753
+  - lang: ru
+    role: translation
+    text: Памятник Сталину
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q543753
+creator: sandor-mikus
+created: 1951-12
+kind: statue
+materials: [bronze, limestone]
+location: [19.0814, 47.5114]
+description_md: On the slide after it was taken down in 1956, during the [[event/hungarian-revolution-of-1956]]. Monuments occupy public space, so their removal mattered as much as their making [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 33; class notes, 24 September 2024]].
+wikidata_id: Q543753
+metadata:
+  sources: [Wikidata Q543753 (retrieved 2026-11-07)]
+relationships:
+  - type: created_in
+    to: place/budapest
+    period: 1951-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Szt%C3%A1lin_szobor_Budapest.jpg/1280px-Szt%C3%A1lin_szobor_Budapest.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Szt%C3%A1lin_szobor_Budapest.jpg
+    license: CC BY-SA 3.0
+    credit: Gyula Nagy
+identifiers:
+  gnd: "1034240048"
+  viaf: "300137339"
+sources:
+  created:
+    - accessed: 2026-11-07
+      property: P571
+      wikidata: Q543753
+  creator:
+    - accessed: 2026-11-07
+      property: P170
+      wikidata: Q543753
+  location:
+    - accessed: 2026-11-07
+      property: P625
+      wikidata: Q543753
+  materials:
+    - accessed: 2026-11-07
+      property: P186
+      wikidata: Q543753

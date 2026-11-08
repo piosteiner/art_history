@@ -1,0 +1,12 @@
+public_id: 116856
+name: Swiss Looted Property Rulings of 1948
+kind: trial
+period: 1948
+description_md: After the war 77 works looted by the Germans in France were found with collectors and dealers in Switzerland; 13 of them belonged to [[person/emil-georg-buhrle]], most bought from the [[institution/galerie-fischer]]. In 1948 the chamber for looted property of the Swiss Federal Supreme Court in Lausanne ordered their restitution; Bührle bought nine of them back, four from [[person/paul-rosenberg]] [[source/buehrle-ch-the-collection]].
+relationships:
+  - type: concerns
+    to: person/emil-georg-buhrle
+  - type: concerns
+    to: institution/galerie-fischer
+  - type: concerns
+    to: person/paul-rosenberg

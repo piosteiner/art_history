@@ -1,0 +1,65 @@
+public_id: 116738
+name: Yevgeny Kibrik
+given_name: Yevgeny
+family_name: Kibrik
+names:
+  - lang: ru
+    role: original
+    text: Кибрик Евгений Адольфович
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4219991
+  - text: Yevgeny Adol'fovich Kibrik
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4219991
+  - text: Evgenij Adol'fovič Kibrik
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4219991
+  - lang: fr
+    role: translation
+    text: Evgenij Kibrik
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4219991
+  - lang: de
+    role: translation
+    text: Jewgeni Kibrik
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4219991
+  - lang: it
+    role: translation
+    text: Evgeny Adolfovich Kibrik
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4219991
+  - lang: ru
+    role: original
+    text: Евгений Адольфович Кибрик
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q4219991
+birth: 1906-02-21
+death: 1978-07-18
+wikidata_id: Q4219991
+metadata:
+  sources: [Wikidata Q4219991 (retrieved 2026-11-07)]
+identifiers:
+  bnf: 13186447m
+  gnd: "126467749"
+  idref: "112222676"
+  lc: n84079904
+  rkd: "297801"
+  ulan: "500065618"
+  viaf: "45700466"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q4219991
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q4219991

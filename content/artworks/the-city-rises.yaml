@@ -1,0 +1,86 @@
+public_id: 116673
+title_lang: en
+title: The City Rises
+names:
+  - lang: fr
+    role: translation
+    text: La ville se lève
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q587514
+  - lang: de
+    role: translation
+    text: Die Stadt erhebt sich
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q587514
+  - lang: it
+    role: translation
+    text: La città che sale
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q587514
+  - lang: es
+    role: translation
+    text: La ciudad se levanta
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q587514
+  - lang: zh
+    role: translation
+    text: 城市的興起
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q587514
+  - lang: ru
+    role: translation
+    text: Город встаёт
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q587514
+creator: umberto-boccioni
+created: 1910
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [301, 199.3]
+institution: museum-of-modern-art
+inventory_number: "507.1951"
+web_url: https://www.moma.org/collection/works/79865
+description_md: "Futurism: the city rising, painted in 1910. The seminar set it beside Sironi's urban landscapes of the 1920s — totalitarian modernism, with another relation to the past and to tradition [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 53]]."
+wikidata_id: Q587514
+metadata:
+  sources: [Wikidata Q587514 (retrieved 2026-11-07)]
+relationships:
+  - type: associated_with
+    to: movement/futurism
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/The_City_Rises_by_Umberto_Boccioni_1910.jpg/1280px-The_City_Rises_by_Umberto_Boccioni_1910.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_City_Rises_by_Umberto_Boccioni_1910.jpg
+    license: Public domain
+    credit: Umberto Boccioni
+sources:
+  created:
+    - accessed: 2026-11-07
+      property: P571
+      wikidata: Q587514
+  creator:
+    - accessed: 2026-11-07
+      property: P170
+      wikidata: Q587514
+  materials:
+    - accessed: 2026-11-07
+      property: P186
+      wikidata: Q587514
+  dimensions:
+    - accessed: 2026-11-07
+      property: P2048
+      wikidata: Q587514
+  institution:
+    - accessed: 2026-11-07
+      property: P195
+      wikidata: Q587514
+  inventory_number:
+    - accessed: 2026-11-07
+      property: P217
+      wikidata: Q587514

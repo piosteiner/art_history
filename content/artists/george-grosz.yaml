@@ -1,0 +1,95 @@
+public_id: 116647
+name: George Grosz
+given_name: George
+family_name: Grosz
+names:
+  - kind: birth
+    lang: de
+    role: former
+    text: Georg Ehrenfried Groß
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q107194
+  - text: Georg Grosz
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q107194
+  - text: Georg Ehrenfried Gross
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q107194
+  - text: George Ehrenfried Grosz
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q107194
+  - text: Georg Grosh
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q107194
+  - text: Georg Gross
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q107194
+  - text: g. grosz
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q107194
+  - text: Grosz
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q107194
+  - text: artist
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q107194
+  - lang: ja
+    role: translation
+    text: ジョージ・グロス
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q107194
+  - lang: zh
+    role: translation
+    text: 格罗兹
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q107194
+  - lang: ko
+    role: translation
+    text: 게오르게 그로스
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q107194
+  - lang: ru
+    role: translation
+    text: Георг Гросс
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q107194
+birth: 1893-07-26
+death: 1959-07-06
+wikidata_id: Q107194
+metadata:
+  sources: [Wikidata Q107194 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cc/George_Grosz_1930_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:George_Grosz_1930_(cropped).jpg
+    license: Public domain
+    credit: Anonymous
+identifiers:
+  bnf: "119060291"
+  gnd: "118542672"
+  idref: "026904640"
+  lc: n50032968
+  rkd: "34262"
+  ulan: "500014558"
+  viaf: "12309408"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q107194
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q107194

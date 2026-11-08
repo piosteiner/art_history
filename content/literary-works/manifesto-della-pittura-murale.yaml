@@ -1,0 +1,13 @@
+public_id: 116834
+name_lang: it
+name: Manifesto della pittura murale
+names:
+  - lang: en
+    role: translation
+    text: Manifesto of Mural Painting
+kind: manifesto
+written: 1933-12
+description_md: 'Signed by [[artist/mario-sironi]], Massimo Campigli, Carlo Carrà and Achille Funi and published in *La Colonna*: the artists commit to Fascism, subordinate their own individuality to the collective work and present mural painting as the fitting art — "La funzione educatrice della pittura è soprattutto una questione di stile" (the educational function of painting is above all a matter of style) [[source/steiner-2025-mario-sironi|p. 9]] [[source/braun-2000|pp. 162–164]]. Less than two years later Sironi finished [[artwork/sironi-italia-fra-le-arti-e-le-scienze]].'
+relationships:
+  - type: written_by
+    to: artist/mario-sironi
