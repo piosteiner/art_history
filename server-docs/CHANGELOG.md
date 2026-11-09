@@ -4,6 +4,10 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-09
 
+### justone.piogino.ch: backs can be aligned to the printer
+- **What:** three values on the print tab (down, right, further down per sheet, in mm, kept in the browser) move the back sheets. A real PDF from Firefox (`print.always_print_silent`, rasterised with Ghostscript) has the cards at identical positions on all pages, so the owner's growing offset on paper comes from printing, not from the file.
+- **Why:** owner 2026-11-09, offset growing page by page. **Revert:** `git revert` in `/var/www/justone`.
+
 ### justone.piogino.ch: card back centred
 - **What:** the back image, a grid item with a percentage height, made its row 91.3 mm high instead of 88 mm, so the parrot sat 1.6 mm too high. It is now positioned over the card.
 - **Why:** owner 2026-11-09, printed front and back did not match. **Revert:** `git revert` in `/var/www/justone`.
