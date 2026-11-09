@@ -4,6 +4,10 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-09
 
+### justone.piogino.ch: card back centred
+- **What:** the back image, a grid item with a percentage height, made its row 91.3 mm high instead of 88 mm, so the parrot sat 1.6 mm too high. It is now positioned over the card.
+- **Why:** owner 2026-11-09, printed front and back did not match. **Revert:** `git revert` in `/var/www/justone`.
+
 ### justone.piogino.ch: printing in Firefox repaired
 - **What:** the card was sized with container-query units (`cqw`), which broke the layout in Firefox's print output (owner's screenshot). All measures now come from one custom property in real units (`--u: .63mm` on the sheet). Each sheet in print is a fixed 296 mm so no blank pages arise.
 - **Why:** owner 2026-11-09. **Revert:** `git revert` in `/var/www/justone`.
