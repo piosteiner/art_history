@@ -16,6 +16,7 @@ Every change to this server is recorded in [CHANGELOG.md](CHANGELOG.md) (newest 
 | file-converter (systemd: file-converter-api) | /var/www/file-converter/server | Flask/Gunicorn, systemd | 5000 | api.piogino.ch (frontend: converter.piogino.ch, GitHub Pages) | files |
 | arthistory (pm2: arthistory-api) | /var/www/arthistory/backend | Node/Express, pm2 | 3004 | api.arthistory / admin.arthistory.piogino.ch | PostgreSQL `arthistory` (+ `arthistory_dev`; tests: `arthistory_test`, `_1`, `_2` on :3006/:3008/:3009 while they run) |
 | arthistory test environment (pm2: arthistory-test) | /var/www/arthistory/backend (same code) + site in /var/www/arthistory-test/site | Node/Express, pm2 | 3010 | test.arthistory / admin.test.arthistory / api.test.arthistory.piogino.ch | PostgreSQL cluster `18/test` (:5433) `arthistory`, reset nightly — see "Test environment" |
+| justone (static) | /var/www/justone/public | nginx only (no process) | — | justone.piogino.ch (TLS pending DNS, 2026-11-09) | localStorage in the browser only |
 
 Shared: nginx (reverse proxy, certbot TLS; art history site config copied in `config/nginx/`), pm2 as user `ubuntu` (pm2-ubuntu.service). Both hostnames gzip JSON (`gzip_proxied any`).
 Databases (both localhost only): MySQL 8 (:3306, calorie-tracker) · PostgreSQL 18 + PostGIS 3.6 (:5432, art history; tuning in `config/postgresql/`).
@@ -57,6 +58,7 @@ Check: `sudo fail2ban-client status arthistory-admin` · unban: `sudo fail2ban-c
 | test.arthistory.piogino.ch | A | 83.228.207.199 (test environment, 2026-10-31) |
 | admin.test.arthistory.piogino.ch | A | 83.228.207.199 (test environment, 2026-10-31) |
 | api.test.arthistory.piogino.ch | A | 83.228.207.199 (test environment, 2026-10-31) |
+| justone.piogino.ch | A | 83.228.207.199 — **to add** (Just One card generator, 2026-11-09); then `sudo certbot --nginx -d justone.piogino.ch` |
 
 ## Test environment (for visitors) — set up 2026-10-31
 The same CMS and site as production for people who want to try the project, reset every night:
