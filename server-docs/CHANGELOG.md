@@ -4,6 +4,10 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-09
 
+### justone.piogino.ch: printing is the main feature
+- **What:** the site opens on Print (tabs Print, Words, Play). The lists are chosen on the print tab, and by default every selected word becomes a card, with the number of sheets following; a fixed number of pages stays as an option. Printing no longer marks words as played and ignores that record (it only applies to Play).
+- **Why:** owner 2026-11-09. **Revert:** `git revert` in `/var/www/justone`.
+
 ### justone.piogino.ch: six more word lists
 - **What:** in German and English (`public/words/*.json`): youth slang, Tinder (online dating), fire safety, slang, the 2000s, Zurich; 27 lists now.
 - **Why:** owner 2026-11-09. **Revert:** `git revert` in `/var/www/justone`.
