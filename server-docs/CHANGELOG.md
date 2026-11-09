@@ -4,6 +4,10 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-09
 
+### justone.piogino.ch: eleven more word lists
+- **What:** in German and English (`public/words/*.json`): Spicy (18+, off until ticked), University of Zurich, data protection, diplomacy, psychology, art history, pop culture, law, politics, political science, economics; the Switzerland list extended by 20 words. Lists added later also reach browsers that have edited their lists (`known` in `lists.<lang>`), without bringing back ones deleted there.
+- **Why:** owner 2026-11-09. **Revert:** `git revert` in `/var/www/justone`.
+
 ### justone.piogino.ch: language of the words, editable word lists
 - **What:** a Deutsch/English choice for the words on the Play, Print and Words tabs, separate from the interface language in the header; both default to German (before, an English browser started in English). Every word list can be edited on the Words tab (name and words), lists added or deleted, and all lists of a language reset to the originals. Edits are per browser (`localStorage` key `lists.<lang>`); there is still no server code.
 - **Why:** owner 2026-11-09. **Revert:** `git revert` in `/var/www/justone`.
