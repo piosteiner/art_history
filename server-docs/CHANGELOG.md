@@ -4,6 +4,10 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-09
 
+### justone.piogino.ch: TLS
+- **What:** certificate issued by the owner (`certbot --nginx -d justone.piogino.ch --redirect`, valid until 2027-02-07, auto-renewal config present); http redirects to https. Before that, https requests for this name fell to nginx's first 443 block and showed adenai-admin.
+- **Why:** owner 2026-11-09. **Revert:** `sudo certbot delete --cert-name justone.piogino.ch` and restore the port-80 block from the repo's `deploy/nginx-justone.conf`.
+
 ### justone.piogino.ch: privacy page
 - **What:** `public/privacy.html` (German and English, linked in the footer and the rules): operator and contact as on Art History, nginx log (14 days, logrotate), what `localStorage` holds, no cookies or third parties. To be kept in step when the site starts using an outside service.
 - **Why:** owner 2026-11-09. **Revert:** `git revert` in `/var/www/justone`.
