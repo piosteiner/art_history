@@ -58,7 +58,7 @@ Check: `sudo fail2ban-client status arthistory-admin` · unban: `sudo fail2ban-c
 | test.arthistory.piogino.ch | A | 83.228.207.199 (test environment, 2026-10-31) |
 | admin.test.arthistory.piogino.ch | A | 83.228.207.199 (test environment, 2026-10-31) |
 | api.test.arthistory.piogino.ch | A | 83.228.207.199 (test environment, 2026-10-31) |
-| justone.piogino.ch | A | 83.228.207.199 — **to add** (Just One card generator, 2026-11-09); then `sudo certbot --nginx -d justone.piogino.ch` |
+| justone.piogino.ch | A | 83.228.207.199 (Just One card generator, 2026-11-09); TLS still to issue: `sudo certbot --nginx -d justone.piogino.ch` |
 
 ## Test environment (for visitors) — set up 2026-10-31
 The same CMS and site as production for people who want to try the project, reset every night:

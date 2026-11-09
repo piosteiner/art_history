@@ -4,6 +4,11 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-09
 
+### justone.piogino.ch: cards in the design of the original
+- **What:** the cards (screen and print) rebuilt after the owner's photos: portrait 63 × 88 mm, five horizontal framed rows in blue, green, red, orange and yellow, the number on the left of each, sized from the card's width (`cqw`, the card is the query container). 9 per A4 sheet at real size. Multi-word English entries capitalised. Commit b43d57a in `/var/www/justone`; nginx unchanged. The site answers on http now that the DNS record exists; TLS is not issued yet and the GitHub repo does not exist yet.
+- **Why:** owner 2026-11-09, photos of the real cards.
+- **Revert:** `git revert` in `/var/www/justone`.
+
 ### New site justone.piogino.ch — card generator for the party game Just One
 - **What** (owner 2026-11-09): a static site in `/var/www/justone` (own git repo, remote `github-justone` = `piosteiner/justone`, deploy key `~/.ssh/justone_deploy` — the repo and its deploy key still to be created on GitHub by the owner): `public/index.html`, `app.js`, `style.css`, word lists `words/de.json` and `words/en.json` (ten categories, ~390 words each, our own), no build, no server code. Modes: Play (pick a number without looking, the card for the clue-givers, correct / wrong / pass over 13 cards with the rulebook's scoring: a wrong guess also costs the next card, a rating at the end), Print (A4 sheets of 9 or 12 cards, cut lines, print at 100 %), Words (lists per language, own words and the words already played kept in `localStorage`). UI in German and English. nginx: `sites-available/justone` (copy in the repo's `deploy/`), port 80 only until DNS exists — then `sudo certbot --nginx -d justone.piogino.ch`. Nothing else on the server touched; no new port or process.
 - **Why:** owner's request.
