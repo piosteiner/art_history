@@ -4,6 +4,10 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-09
 
+### justone.piogino.ch: edit link keeps its place
+- **What:** on the Words tab, "Bearbeiten" stays at the top right of its row when a list is opened (CSS only).
+- **Why:** owner 2026-11-09. **Revert:** `git revert` in `/var/www/justone`.
+
 ### justone.piogino.ch: duplicates warned about and ignored
 - **What:** among the selected lists and own words, the same word (case and spacing aside) is used once; a warning on the Print and Words tabs gives the number and, opened, each word with its lists.
 - **Why:** owner 2026-11-09. **Revert:** `git revert` in `/var/www/justone`.
