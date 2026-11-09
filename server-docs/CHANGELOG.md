@@ -4,6 +4,10 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-09
 
+### justone.piogino.ch: printing in Firefox repaired
+- **What:** the card was sized with container-query units (`cqw`), which broke the layout in Firefox's print output (owner's screenshot). All measures now come from one custom property in real units (`--u: .63mm` on the sheet). Each sheet in print is a fixed 296 mm so no blank pages arise.
+- **Why:** owner 2026-11-09. **Revert:** `git revert` in `/var/www/justone`.
+
 ### justone.piogino.ch: edit link keeps its place
 - **What:** on the Words tab, "Bearbeiten" stays at the top right of its row when a list is opened (CSS only).
 - **Why:** owner 2026-11-09. **Revert:** `git revert` in `/var/www/justone`.
