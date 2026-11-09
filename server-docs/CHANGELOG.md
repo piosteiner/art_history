@@ -4,6 +4,10 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-09
 
+### justone.piogino.ch: privacy page
+- **What:** `public/privacy.html` (German and English, linked in the footer and the rules): operator and contact as on Art History, nginx log (14 days, logrotate), what `localStorage` holds, no cookies or third parties. To be kept in step when the site starts using an outside service.
+- **Why:** owner 2026-11-09. **Revert:** `git revert` in `/var/www/justone`.
+
 ### justone.piogino.ch: cards centred on the A4 sheet
 - **What:** the card grid is centred vertically as well (9 per sheet: 16.5 mm above and below instead of 12 and 21; 12 per sheet: 49.5 mm), checked in real PDFs from Firefox.
 - **Why:** owner 2026-11-09, suspected printer offset when the sheet is turned. **Revert:** `git revert` in `/var/www/justone`.
