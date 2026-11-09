@@ -4,6 +4,10 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-09
 
+### justone.piogino.ch: duplicates warned about and ignored
+- **What:** among the selected lists and own words, the same word (case and spacing aside) is used once; a warning on the Print and Words tabs gives the number and, opened, each word with its lists.
+- **Why:** owner 2026-11-09. **Revert:** `git revert` in `/var/www/justone`.
+
 ### justone.piogino.ch: printing is the main feature
 - **What:** the site opens on Print (tabs Print, Words, Play). The lists are chosen on the print tab, and by default every selected word becomes a card, with the number of sheets following; a fixed number of pages stays as an option. Printing no longer marks words as played and ignores that record (it only applies to Play).
 - **Why:** owner 2026-11-09. **Revert:** `git revert` in `/var/www/justone`.
