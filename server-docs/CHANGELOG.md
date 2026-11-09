@@ -4,6 +4,10 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-09
 
+### justone.piogino.ch: language of the words, editable word lists
+- **What:** a Deutsch/English choice for the words on the Play, Print and Words tabs, separate from the interface language in the header; both default to German (before, an English browser started in English). Every word list can be edited on the Words tab (name and words), lists added or deleted, and all lists of a language reset to the originals. Edits are per browser (`localStorage` key `lists.<lang>`); there is still no server code.
+- **Why:** owner 2026-11-09. **Revert:** `git revert` in `/var/www/justone`.
+
 ### justone.piogino.ch: card back
 - **What:** the owner's parrot drawing as the card back (`public/back.webp`, trimmed, 1000 px high): a full sheet of backs after each sheet of fronts (option "Rückseiten", on by default; double-sided, flip on the long edge) and on screen while the guesser picks a number. The grid is centred left to right, so fronts and backs line up without mirroring.
 - **Why:** owner's request. **Revert:** `git revert` in `/var/www/justone`.
