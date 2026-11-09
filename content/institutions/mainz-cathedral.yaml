@@ -1,0 +1,91 @@
+public_id: 117019
+name: Mainz Cathedral
+names:
+  - lang: nl
+    role: translation
+    text: Dom van Mainz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q666960
+  - lang: fr
+    role: translation
+    text: cathédrale Saint-Martin de Mayence
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q666960
+  - lang: de
+    role: translation
+    text: Mainzer Dom
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q666960
+  - lang: it
+    role: translation
+    text: duomo di Magonza
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q666960
+  - lang: es
+    role: translation
+    text: Catedral de Maguncia
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q666960
+  - lang: ja
+    role: translation
+    text: マインツ大聖堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q666960
+  - lang: zh
+    role: translation
+    text: 美因茨主教座堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q666960
+  - lang: ko
+    role: translation
+    text: 마인츠 대성당
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q666960
+  - lang: ru
+    role: translation
+    text: Майнцский собор
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q666960
+kind: cathedral
+founded: 10th century
+place: mainz
+location: [8.27389, 49.99889]
+website_url: http://www.mainzer-dom.de/
+wikidata_id: Q666960
+metadata:
+  sources: [Wikidata Q666960 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Cathedral_%28Mainz%29_2.jpg/1280px-Cathedral_%28Mainz%29_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cathedral_(Mainz)_2.jpg
+    license: CC BY-SA 3.0
+    credit: Michiel1972
+identifiers:
+  gnd: 4122000-6
+  lc: n50081938
+  viaf: "141867802"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q666960
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q666960
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q666960
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q666960

@@ -1,0 +1,32 @@
+public_id: 117095
+title_lang: de
+title: Hochaltar der Pfarrkirche St. Martin Lorch
+names:
+  - lang: en
+    role: translation
+    text: Lorcher Hochaltar
+created: 1483
+medium: Eichenholz, Lindenholz
+materials: [oak, lime]
+dimensions: [1280]
+wikidata_id: Q122003811
+metadata:
+  sources: [Wikidata Q122003811 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Martinuskerk_Lorch_Hoogaltaar.jpg/1280px-Martinuskerk_Lorch_Hoogaltaar.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Martinuskerk_Lorch_Hoogaltaar.jpg
+    license: CC BY-SA 3.0
+    credit: RomkeHoekstra
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024), Folie 101
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024), Folie 101
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024), Folie 101
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024), Folie 101

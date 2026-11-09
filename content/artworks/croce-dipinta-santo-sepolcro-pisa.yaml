@@ -1,0 +1,67 @@
+public_id: 117162
+title_lang: it
+title: Croce dipinta dalla chiesa del Santo Sepolcro
+names:
+  - lang: fr
+    role: translation
+    text: Crucifix de l'église du Saint-Sépulcre
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q16545867
+  - lang: de
+    role: translation
+    text: Kruzifix Nr. 15 Santo Sepolcro
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q16545867
+  - lang: it
+    role: translation
+    text: Croce della chiesa del Santo Sepolcro
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q16545867
+  - lang: en
+    role: translation
+    text: Crucifix No. 15 Santo Sepolcro
+created: 12th century
+created_span: uncertain
+medium: tempera and gold on panel
+materials: [panel, tempera, gilt paint, gold]
+dimensions: [285, 238]
+institution: museo-nazionale-di-san-matteo
+inventory_number: "15"
+web_url: https://www.finestresullarte.info/en/travelnotebooks/2759v_the-crosses-of-the-museo-di-san-matteo-in-pisa-the-world-s-largest-collection-of-painted-crosses.php
+wikidata_id: Q16545867
+metadata:
+  sources: [Wikidata Q16545867 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Artista_tosco-romano%2C_croce_della_cheisa_del_s._sepolcro%2C_1150-1200_ca._01-edit.jpg/1280px-Artista_tosco-romano%2C_croce_della_cheisa_del_s._sepolcro%2C_1150-1200_ca._01-edit.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Artista_tosco-romano,_croce_della_cheisa_del_s._sepolcro,_1150-1200_ca._01-edit.jpg
+    license: CC BY-SA 4.0
+    credit: Francesco Bini, edited by MenkinAlRire
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 74
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q16545867
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q16545867
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 74
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q16545867
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q16545867
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q16545867

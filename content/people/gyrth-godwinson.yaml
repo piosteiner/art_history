@@ -1,0 +1,23 @@
+public_id: 117200
+name: Gyrth Godwinson
+given_name: Gyrth
+family_name: Godwinson
+kind: person
+birth: c. 1032
+death: 1066-10-20
+wikidata_id: Q1249857
+metadata:
+  sources: [Wikidata Q1249857 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1249857
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q1249857
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q1249857

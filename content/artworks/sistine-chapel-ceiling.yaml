@@ -1,0 +1,113 @@
+public_id: 117180
+title_lang: it
+title: Volta della Cappella Sistina
+names:
+  - lang: nl
+    role: translation
+    text: plafond van de Sixtijnse Kapel
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q844675
+  - lang: fr
+    role: translation
+    text: plafond de la chapelle Sixtine
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q844675
+  - lang: de
+    role: translation
+    text: Decke der Sixtinischen Kapelle
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q844675
+  - lang: it
+    role: translation
+    text: Volta della Cappella Sistina
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q844675
+  - lang: es
+    role: translation
+    text: bóveda de la Capilla Sixtina
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q844675
+  - lang: ja
+    role: translation
+    text: システィーナ礼拝堂天井画
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q844675
+  - lang: zh
+    role: translation
+    text: 创世纪
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q844675
+  - lang: ko
+    role: translation
+    text: 시스티나 성당 천정
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q844675
+  - lang: ru
+    role: translation
+    text: Потолок Сикстинской капеллы
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q844675
+  - lang: en
+    role: translation
+    text: Sistine Chapel ceiling
+creator: michelangelo
+created: 1508/1512
+created_label: c. 1508
+created_span: uncertain
+medium: fresco
+materials: [fresco]
+dimensions: [4093, 1341]
+institution: vatican-museums
+location: [12.45417, 41.90278]
+wikidata_id: Q844675
+metadata:
+  sources: [Wikidata Q844675 (retrieved 2026-11-09)]
+relationships:
+  - type: associated_with
+    to: movement/high-renaissance
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q844675
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/CAPPELLA_SISTINA_Ceiling.jpg/1280px-CAPPELLA_SISTINA_Ceiling.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:CAPPELLA_SISTINA_Ceiling.jpg
+    license: CC BY-SA 3.0
+    credit: Michelangelo
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 2 (3.10.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q844675
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q844675
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q844675
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q844675
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q844675
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q844675

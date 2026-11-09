@@ -11,6 +11,8 @@ names:
         note: title on the museum's page (German site)
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-04
+      - accessed: 2026-11-08
+        wikidata: Q131585246
   - lang: en
     role: translation
     text: The Tower
@@ -20,6 +22,14 @@ names:
         note: title on the museum's page (German site)
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-04
+      - accessed: 2026-11-08
+        wikidata: Q131585246
+  - lang: fr
+    role: translation
+    text: La tour
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q131585246
 creator: giorgio-de-chirico
 created: 1913
 kind: oil painting
@@ -33,6 +43,8 @@ on_loan_since: 1954
 provenance_status: b_no_indications
 provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
 wikidata_id: Q131585246
+metadata:
+  sources: [Wikidata Q131585246 (retrieved 2026-11-08)]
 provenance:
   - owner: person/paul-guillaume
     role: dealer
@@ -150,10 +162,16 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/980/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P571
+      wikidata: Q131585246
   creator:
     - url: https://collection.kunsthaus.ch/de/collection/item/980/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P170
+      wikidata: Q131585246
   on_loan:
     - url: https://collection.kunsthaus.ch/de/collection/item/980/
       source: kunsthaus-zurich-sammlung-online
@@ -166,7 +184,13 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/980/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P195
+      wikidata: Q131585246
   inventory_number:
     - url: https://collection.kunsthaus.ch/de/collection/item/980/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P217
+      wikidata: Q131585246

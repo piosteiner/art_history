@@ -1,0 +1,56 @@
+public_id: 116947
+name: Marienstatt Abbey
+names:
+  - lang: de
+    role: translation
+    text: Zisterzienserkloster Marienstatt
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q334038
+  - lang: zh
+    role: translation
+    text: 马林施塔特修道院
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q334038
+kind: monastery
+founded: 1212
+dissolved: 1803
+place: streithausen
+location: [7.80306, 50.685]
+website_url: http://www.abtei-marienstatt.de/
+wikidata_id: Q334038
+metadata:
+  sources: [Wikidata Q334038 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Abtei_Marienstatt_008.jpg/1280px-Abtei_Marienstatt_008.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Abtei_Marienstatt_008.jpg
+    license: CC BY-SA 4.0
+    credit: Wolkenkratzer
+identifiers:
+  bnf: 10117380j
+  gnd: 2045580-X
+  idref: "183373987"
+  lc: n95042826
+  viaf: "136202199"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q334038
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q334038
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q334038
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q334038
+  dissolved:
+    - accessed: 2026-11-09
+      property: P576
+      wikidata: Q334038

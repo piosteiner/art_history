@@ -1,0 +1,18 @@
+public_id: 117192
+name: Edward the Confessor
+given_name: Edward the
+family_name: Confessor
+kind: person
+death: 1066-01-11
+wikidata_id: Q130005
+metadata:
+  sources: [Wikidata Q130005 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q130005
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q130005

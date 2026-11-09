@@ -1,0 +1,55 @@
+public_id: 117112
+title: De Lisle Psalter
+names:
+  - text: Arundel 83 II
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1180107
+  - lang: fr
+    role: translation
+    text: Psautier de Lisle
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1180107
+  - lang: de
+    role: translation
+    text: De Lisle-Psalter
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1180107
+created: c. 1310
+created_span: uncertain
+medium: manuscript
+dimensions: [35, 23]
+institution: british-library
+inventory_number: Arundel 83 II
+wikidata_id: Q1180107
+metadata:
+  sources: [Wikidata Q1180107 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Wheel_of_the_ten_ages_of_man_-_Psalter_of_Robert_de_Lisle_%28c.1310%29%2C_f.126v_-_BL_Arundel_MS_83.jpg/1280px-Wheel_of_the_ten_ages_of_man_-_Psalter_of_Robert_de_Lisle_%28c.1310%29%2C_f.126v_-_BL_Arundel_MS_83.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wheel_of_the_ten_ages_of_man_-_Psalter_of_Robert_de_Lisle_(c.1310),_f.126v_-_BL_Arundel_MS_83.jpg
+    license: CC0
+    credit: Creator:Madonna Master
+identifiers:
+  gnd: 4552201-7
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 111
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1180107
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q1180107
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q1180107
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q1180107

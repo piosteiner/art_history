@@ -1,0 +1,42 @@
+public_id: 117044
+name: Schlosskirche Chemnitz
+names:
+  - lang: de
+    role: translation
+    text: Schloßkirche Chemnitz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2244912
+kind: church
+place: chemnitz
+location: [12.9151, 50.8454]
+address: Schloßberg 11, 09113 Chemnitz
+website_url: https://sps.kirchechemnitz.de/die-schlosskirche.html
+wikidata_id: Q2244912
+metadata:
+  sources: [Wikidata Q2244912 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Schlosskirche_in_Chemnitz.jpg/1280px-Schlosskirche_in_Chemnitz.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Schlosskirche_in_Chemnitz.jpg
+    license: CC BY-SA 3.0
+    credit: Reinhard Höll
+identifiers:
+  gnd: 4497693-8
+  viaf: "242728816"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q2244912
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q2244912
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q2244912
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q2244912

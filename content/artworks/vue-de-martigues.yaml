@@ -1,4 +1,5 @@
 public_id: 115589
+title_lang: de
 title: Vue de Martigues
 names:
   - lang: de
@@ -32,6 +33,8 @@ on_loan_since: 1933
 provenance_status: c_indications
 provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
 wikidata_id: Q131586248
+metadata:
+  sources: [Wikidata Q131586248 (retrieved 2026-11-08)]
 provenance:
   - owner: institution/galerie-kahnweiler
     role: dealer
@@ -110,10 +113,16 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/792/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P571
+      wikidata: Q131586248
   creator:
     - url: https://collection.kunsthaus.ch/de/collection/item/792/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P170
+      wikidata: Q131586248
   on_loan:
     - url: https://collection.kunsthaus.ch/de/collection/item/792/
       source: kunsthaus-zurich-sammlung-online
@@ -126,7 +135,13 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/792/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P195
+      wikidata: Q131586248
   inventory_number:
     - url: https://collection.kunsthaus.ch/de/collection/item/792/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P217
+      wikidata: Q131586248

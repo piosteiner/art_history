@@ -1,0 +1,45 @@
+public_id: 117037
+name: Bayeux Tapestry Museum
+names:
+  - text: Centre Guillaume-le-Conquérant (Bayeux, Calvados)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q21631145
+  - lang: fr
+    role: translation
+    text: musée de la Tapisserie de Bayeux
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q21631145
+  - lang: de
+    role: translation
+    text: Museum des Wandteppich von Bayeux
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q21631145
+kind: museum
+place: bayeux
+location: [-0.70194, 49.27778]
+website_url: https://www.bayeuxmuseum.com/la-tapisserie-de-bayeux/
+wikidata_id: Q21631145
+metadata:
+  sources: [Wikidata Q21631145 (retrieved 2026-11-09)]
+identifiers:
+  bnf: "125577270"
+  gnd: 7535498-6
+  idref: "034870989"
+  lc: no2016013381
+  viaf: "173134495"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q21631145
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q21631145
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q21631145

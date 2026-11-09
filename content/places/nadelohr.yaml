@@ -1,0 +1,16 @@
+public_id: 117105
+name: Nadelöhr
+kind: site
+location: [13.62116, 50.96927]
+wikidata_id: Q49441785
+metadata:
+  sources: [Wikidata Q49441785 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q49441785
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q49441785

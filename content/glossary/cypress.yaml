@@ -1,0 +1,55 @@
+public_id: 116904
+name: cypress wood
+names:
+  - lang: nl
+    role: translation
+    text: cipressenhout
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q28942717
+  - lang: fr
+    role: translation
+    text: bois de cyprès
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q28942717
+  - lang: de
+    role: translation
+    text: Zypressenholz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q28942717
+  - lang: it
+    role: translation
+    text: legno di cipresso
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q28942717
+  - lang: es
+    role: translation
+    text: madera de ciprés
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q28942717
+  - lang: ja
+    role: translation
+    text: イトスギ材
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q28942717
+  - cypress
+category: material
+parent: wood
+definition: material used for carving
+wikidata_id: Q28942717
+metadata:
+  sources: [Wikidata Q28942717 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Mummy_label_Louvre_E9328.jpg/1280px-Mummy_label_Louvre_E9328.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mummy_label_Louvre_E9328.jpg
+    license: Public domain
+    credit: Marie-Lan Nguyen
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q28942717

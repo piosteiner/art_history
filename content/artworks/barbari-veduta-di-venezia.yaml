@@ -1,0 +1,88 @@
+public_id: 117144
+title_lang: it
+title: Veduta di Venezia a volo d'uccello
+names:
+  - lang: en
+    role: translation
+    text: View of Venice
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q26106449
+  - lang: fr
+    role: translation
+    text: Vue de Venise
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q26106449
+  - lang: de
+    role: translation
+    text: Blick auf Venedig
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q26106449
+  - lang: zh
+    role: translation
+    text: 威尼斯全景圖
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q26106449
+  - lang: ru
+    role: translation
+    text: Вид Венеции
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q26106449
+  - lang: it
+    role: alternative
+    text: veduta di Venezia
+creator: jacopo-de-barbari
+created: 1500
+medium: woodcut on six sheets
+materials: [paper]
+dimensions: [135, 282]
+institution: minneapolis-institute-of-art
+web_url: https://www.britishmuseum.org/collection/object/P_1895-0122-1192-1197
+wikidata_id: Q26106449
+metadata:
+  sources: [Wikidata Q26106449 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-09
+        property: P1071
+        wikidata: Q26106449
+  - type: depicts
+    to: place/venice
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q26106449
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/%28Venice%29_View_of_Venice_by_Jacopo_de%27_Barbari_-_Museo_Correr.jpg/1280px-%28Venice%29_View_of_Venice_by_Jacopo_de%27_Barbari_-_Museo_Correr.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:(Venice)_View_of_Venice_by_Jacopo_de%27_Barbari_-_Museo_Correr.jpg
+    license: Public domain
+    credit: Jacopo de' Barbari
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 9 (28.11.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q26106449
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q26106449
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q26106449
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q26106449
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 9 (28.11.2024)

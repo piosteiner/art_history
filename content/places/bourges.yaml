@@ -1,0 +1,16 @@
+public_id: 117212
+name: Bourges
+kind: settlement
+location: [2.39583, 47.07944]
+wikidata_id: Q132404
+metadata:
+  sources: [Wikidata Q132404 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q132404
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q132404

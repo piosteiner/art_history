@@ -1,0 +1,57 @@
+public_id: 117071
+title_lang: de
+title: Bildertür von St. Maria im Kapitol
+names:
+  - lang: de
+    role: translation
+    text: Holztür von St. Maria im Kapitol
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q14540917
+  - lang: en
+    role: translation
+    text: wooden door of St. Maria im Kapitol
+created: 11th century
+created_span: uncertain
+medium: Eiche (Türflügel), Nussbaum (Reliefs, Rahmen)
+materials: [oakwood, oak, walnut wood]
+dimensions: [485, 125]
+dimensions_note: 485 × 125 cm (je Flügel)
+institution: st-maria-im-kapitol
+location: [6.95867, 50.9342]
+wikidata_id: Q14540917
+metadata:
+  sources: [Wikidata Q14540917 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/cologne
+    period: 11th century
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Holzt%C3%BCr_von_St._Maria_im_Kapitol-0398.jpg/1280px-Holzt%C3%BCr_von_St._Maria_im_Kapitol-0398.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Holzt%C3%BCr_von_St._Maria_im_Kapitol-0398.jpg
+    license: CC BY-SA 4.0
+    credit: Raimond Spekking
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 17
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q14540917
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q14540917
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q14540917
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 17
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 17
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 17

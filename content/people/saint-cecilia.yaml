@@ -1,0 +1,21 @@
+public_id: 117134
+name: Saint Cecilia
+kind: person
+birth: c. 200
+death: 230-11-22
+wikidata_id: Q80513
+metadata:
+  sources: [Wikidata Q80513 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q80513
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q80513
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q80513

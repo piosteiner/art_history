@@ -1,0 +1,16 @@
+public_id: 117119
+name: Uppsala University
+kind: university
+founded: 1477
+wikidata_id: Q185246
+metadata:
+  sources: [Wikidata Q185246 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q185246
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q185246

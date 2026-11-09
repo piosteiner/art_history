@@ -1,0 +1,16 @@
+public_id: 117048
+name: Bocholt
+kind: site
+location: [6.61667, 51.83333]
+wikidata_id: Q3917
+metadata:
+  sources: [Wikidata Q3917 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q3917
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q3917

@@ -1,0 +1,62 @@
+public_id: 116997
+name: Dumbarton Oaks
+names:
+  - text: Dumbarton Oaks Research Library and Collection
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1264942
+  - lang: ja
+    role: translation
+    text: ダンバートン・オークス邸
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1264942
+  - lang: zh
+    role: translation
+    text: 敦巴頓橡樹園
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1264942
+  - lang: ru
+    role: translation
+    text: Думбартон-Окс
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1264942
+kind: museum
+founded: 1940
+place: washington-d-c
+location: [-77.06333, 38.91417]
+website_url: https://www.doaks.org/
+wikidata_id: Q1264942
+metadata:
+  sources: [Wikidata Q1264942 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Dumbarton_Oaks_-_house_photo_with_snow.jpg/1280px-Dumbarton_Oaks_-_house_photo_with_snow.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dumbarton_Oaks_-_house_photo_with_snow.jpg
+    license: Public domain
+    credit: Boucher, Jack E. (as "creator" of the work), National Park Service, US Department of the Interior.
+identifiers:
+  bnf: 12126836p
+  gnd: 1025980-6
+  idref: 13632259X
+  lc: n80061150
+  ulan: "500235090"
+  viaf: "126370132"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1264942
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1264942
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1264942
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1264942

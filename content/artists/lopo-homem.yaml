@@ -1,0 +1,42 @@
+public_id: 116944
+name: Lopo Homem
+given_name: Lopo
+family_name: Homem
+names:
+  - lang: ja
+    role: translation
+    text: ロポ・オーメン
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3049421
+  - lang: zh
+    role: translation
+    text: 洛波 · 奥梅姆
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3049421
+  - lang: ru
+    role: translation
+    text: Лопу Хомем
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3049421
+birth: 1497
+death: 1572
+wikidata_id: Q3049421
+metadata:
+  sources: [Wikidata Q3049421 (retrieved 2026-11-09)]
+identifiers:
+  bnf: "108257948"
+  gnd: "121702685"
+  lc: no2003002364
+  viaf: "39368739"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q3049421
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q3049421

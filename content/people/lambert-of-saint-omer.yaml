@@ -1,0 +1,56 @@
+public_id: 116988
+name: Lambert van Sint-Omaars
+given_name: Lambert
+family_name: van Sint-Omaars
+names:
+  - text: Lambert of Saint-Omer
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2784355
+  - lang: fr
+    role: translation
+    text: Lambert de Saint-Omer
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2784355
+  - lang: ru
+    role: translation
+    text: Ламберт из Сент-Омера
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2784355
+kind: person
+occupations: [seculary canon, writer, encyclopedist, historian, canon, illuminator]
+birth: c. 1061
+death: c. 1125
+wikidata_id: Q2784355
+metadata:
+  sources: [Wikidata Q2784355 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e7/Lambert_van_Sint-Omaars.png
+    source_url: https://commons.wikimedia.org/wiki/File:Lambert_van_Sint-Omaars.png
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "121809760"
+  gnd: "100951325"
+  idref: "068531028"
+  lc: n86024993
+  viaf: "235845558"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q2784355
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q2784355
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q2784355
+  occupations:
+    - accessed: 2026-11-09
+      property: P106
+      wikidata: Q2784355

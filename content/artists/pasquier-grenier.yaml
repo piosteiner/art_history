@@ -1,0 +1,32 @@
+public_id: 116982
+name: Pasquier Grenier
+given_name: Pasquier
+family_name: Grenier
+names:
+  - text: Pasquier Grenet
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2055720
+  - text: Passchier Grenier
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2055720
+birth: 1447
+death: 1493-08-02
+wikidata_id: Q2055720
+metadata:
+  sources: [Wikidata Q2055720 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 14373105X
+  rkd: "426571"
+  ulan: "500058672"
+  viaf: "96073956"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q2055720
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q2055720

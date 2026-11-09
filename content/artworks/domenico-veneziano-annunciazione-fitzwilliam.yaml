@@ -1,0 +1,63 @@
+public_id: 117113
+title_lang: en
+title: The Annunciation (predella of the St Lucy Altarpiece)
+names:
+  - lang: fr
+    role: translation
+    text: L'Annonciation
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q50821120
+  - lang: de
+    role: translation
+    text: Verkündigung
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q50821120
+  - lang: en
+    role: alternative
+    text: The Annunciation
+creator: domenico-veneziano
+created: c. 1445
+created_span: uncertain
+medium: tempera on panel
+materials: [tempera, panel]
+dimensions: [27.3, 54]
+institution: fitzwilliam-museum
+inventory_number: "1106"
+wikidata_id: Q50821120
+metadata:
+  sources: [Wikidata Q50821120 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Annunciation_%28predella_3%29%2C_fitzwilliam_museum%2C_Cambridge.jpg/1280px-Annunciation_%28predella_3%29%2C_fitzwilliam_museum%2C_Cambridge.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Annunciation_(predella_3),_fitzwilliam_museum,_Cambridge.jpg
+    license: Public domain
+    credit: Domenico Veneziano
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q50821120
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q50821120
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q50821120
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q50821120
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q50821120
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q50821120

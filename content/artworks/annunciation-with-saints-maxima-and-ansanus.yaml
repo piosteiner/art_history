@@ -75,6 +75,7 @@ names:
 parent: cycle-of-four-altar-pieces-for-the-patron-saints-of-siena
 creator: simone-martini
 created: 1333
+medium: tempera and gold leaf on panel
 materials: [tempera, panel]
 dimensions: [158, 48]
 institution: uffizi-gallery
@@ -83,6 +84,37 @@ web_url: https://www.uffizi.it/en/artworks/annunciation-with-st-margaret-and-st-
 wikidata_id: Q979440
 metadata:
   sources: [Wikidata Q979440 (retrieved 2026-10-20)]
+relationships:
+  - type: depicts_person
+    to: person/ansanus
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q979440
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q979440
+  - type: co_creator
+    to: artist/lippo-memmi
+    sources:
+      - accessed: 2026-11-09
+        property: P170
+        wikidata: Q979440
+  - type: associated_with
+    to: movement/gothic-painting
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q979440
+  - type: associated_with
+    to: movement/international-gothic
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q979440
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Simone_Martini_%E2%80%94_Annunciation_with_St._Margaret_and_St._Ansanus.jpg/1280px-Simone_Martini_%E2%80%94_Annunciation_with_St._Margaret_and_St._Ansanus.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Simone_Martini_%E2%80%94_Annunciation_with_St._Margaret_and_St._Ansanus.jpg
@@ -113,6 +145,9 @@ provenance:
         accessed: 2026-10-20
     exchanged_for_text: two canvases by Luca Giordano
 sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024)
   parent:
     - accessed: 2026-10-20
       property: P179

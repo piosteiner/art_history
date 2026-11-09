@@ -1,0 +1,87 @@
+public_id: 117158
+title_lang: it
+title: Ciclo dei Mesi
+names:
+  - text: Ciclo dei mesi (Mural painting)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q245602
+  - text: Twelve months cycle (Mural painting)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q245602
+  - text: Cycle of the 12 months
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q245602
+  - lang: fr
+    role: translation
+    text: Cycle des mois
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q245602
+  - lang: de
+    role: translation
+    text: Zyklus der Monate
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q245602
+  - lang: it
+    role: translation
+    text: Ciclo dei Mesi
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q245602
+  - lang: en
+    role: translation
+    text: Cycle of the months
+creator: maestro-venceslao
+created: 1400
+medium: fresco and tempera
+materials: [tempera]
+institution: buonconsiglio-castle
+location: [11.12745, 46.06992]
+wikidata_id: Q245602
+metadata:
+  sources: [Wikidata Q245602 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/trento-2
+    period: 1400
+  - type: associated_with
+    to: movement/international-gothic
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q245602
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4e/Ciclo_dei_mesi%2C_agosto.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ciclo_dei_mesi,_agosto.jpg
+    license: Public domain
+    credit: Maestro Venceslao
+identifiers:
+  gnd: "1060577801"
+  viaf: "311450017"
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 2 (3.10.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q245602
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q245602
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q245602
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 2 (3.10.2024)
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q245602

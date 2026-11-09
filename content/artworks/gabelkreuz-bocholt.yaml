@@ -1,0 +1,34 @@
+public_id: 117261
+title_lang: de
+title: Gabelkreuz von St. Georg in Bocholt
+created: before 1315
+kind: sculpture
+medium: Nussbaum, Kreidegrund, originale Farbfassung
+materials: [walnut wood]
+dimensions: [102]
+dimensions_note: 102 cm (Korpus)
+institution: st-georg-bocholt
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/03/20150328_Bocholter_Kreuz_%2809022%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:20150328_Bocholter_Kreuz_(09022).jpg
+    license: CC BY-SA 3.0
+    credit: Günter Seggebäing, Wikimedia Commons
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 62
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 62
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 62
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 62
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 62
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 62

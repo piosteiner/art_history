@@ -1,0 +1,97 @@
+public_id: 117085
+title_lang: de
+title: Goldene Madonna
+names:
+  - lang: fr
+    role: translation
+    text: Vierge d'or d'Essen
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q670031
+  - lang: de
+    role: translation
+    text: Goldene Madonna
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q670031
+  - lang: it
+    role: translation
+    text: Madonna d'oro di Essen
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q670031
+  - lang: es
+    role: translation
+    text: Virgen dorada de Essen
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q670031
+  - lang: ja
+    role: translation
+    text: 黄金の聖母子像
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q670031
+  - lang: zh
+    role: translation
+    text: 埃森的黄金圣母
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q670031
+  - lang: en
+    role: translation
+    text: Golden Madonna of Essen
+created: 980s
+created_span: uncertain
+medium: Pappelholz (Korpus), Linden- und Nussbaumholz (Thron), Goldblech
+materials: [wood, gold leaf, lime, walnut wood, poplar, gold]
+dimensions: [74]
+institution: essen-minster
+web_url: https://domschatz-essen.de/der-essener-domschatz/sammlung/goldene-madonna
+location: [7.01361, 51.45583]
+wikidata_id: Q670031
+metadata:
+  sources: [Wikidata Q670031 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/essen
+    period: 980s
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q670031
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Goldene-Madonna-Essen.jpg/1280px-Goldene-Madonna-Essen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Goldene-Madonna-Essen.jpg
+    license: CC BY-SA 4.0
+    credit: Tuxyso
+identifiers:
+  gnd: 4434643-8
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 14
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q670031
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q670031
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q670031
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 14
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q670031
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q670031

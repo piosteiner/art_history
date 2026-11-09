@@ -1,0 +1,29 @@
+public_id: 117237
+title_lang: de
+title: Gerresheimer Kruzifix
+created: before 1000
+kind: sculpture
+medium: Eiche, Reste originaler Fassung
+materials: [oak]
+institution: st-margareta-dusseldorf-gerresheim
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e5/Kruzifixes_in_St._Margareta%2C_D%C3%BCsseldorf.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kruzifixes_in_St._Margareta,_D%C3%BCsseldorf.jpg
+    license: CC BY-SA 4.0
+    credit: Triptychon, Wikimedia Commons
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 18
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 18
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 18
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 18
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 18

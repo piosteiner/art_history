@@ -1,0 +1,18 @@
+public_id: 117209
+name: Barthélemy d'Eyck
+given_name: Barthélemy
+family_name: d'Eyck
+birth: 1420
+death: 1472/1475
+wikidata_id: Q725551
+metadata:
+  sources: [Wikidata Q725551 (retrieved 2026-11-09)]
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q725551
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q725551

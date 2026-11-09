@@ -1,0 +1,55 @@
+public_id: 116895
+name: polychromy
+names:
+  - lang: nl
+    role: translation
+    text: polychromie
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q183127
+  - lang: it
+    role: translation
+    text: policromia
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q183127
+  - lang: es
+    role: translation
+    text: policromía
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q183127
+  - lang: zh
+    role: translation
+    text: 彩繪藝術品
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q183127
+  - lang: ko
+    role: translation
+    text: 여러 가지 색
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q183127
+  - lang: ru
+    role: translation
+    text: полихромия
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q183127
+category: technique
+definition: practice of decorating architectural elements, sculpture, etc., in a variety of colors
+wikidata_id: Q183127
+metadata:
+  sources: [Wikidata Q183127 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c3/Antike_Polychromie_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Antike_Polychromie_1.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: 4175135-8
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q183127

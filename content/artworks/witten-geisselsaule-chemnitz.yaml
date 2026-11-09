@@ -1,0 +1,37 @@
+public_id: 117225
+title_lang: de
+title: Geisselsäule
+creator: hans-witten
+created: 1510/1522
+kind: sculpture
+medium: Eichenholz, polychrom gefasst
+materials: [oak]
+dimensions: [443]
+institution: schlosskirche-chemnitz
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e0/Die_Gei%C3%9Fels%C3%A4ule_in_der_Schlosskirche_in_Chemnitz_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Die_Gei%C3%9Fels%C3%A4ule_in_der_Schlosskirche_in_Chemnitz_01.jpg
+    license: CC BY 4.0
+    credit: JensKunstfreund, Wikimedia Commons
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 40
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 40
+  creator:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 40
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 40
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 40
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 40
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 40

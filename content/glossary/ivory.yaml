@@ -1,0 +1,80 @@
+public_id: 116901
+name: ivory
+names:
+  - text: slonovina
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q82001
+  - text: elephant ivory
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q82001
+  - lang: nl
+    role: translation
+    text: ivoor
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q82001
+  - lang: fr
+    role: translation
+    text: ivoire
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q82001
+  - lang: de
+    role: translation
+    text: Elfenbein
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q82001
+  - lang: it
+    role: translation
+    text: avorio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q82001
+  - lang: es
+    role: translation
+    text: marfil
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q82001
+  - lang: ja
+    role: translation
+    text: アイボリー
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q82001
+  - lang: zh
+    role: translation
+    text: 象牙
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q82001
+  - lang: ko
+    role: translation
+    text: 상아
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q82001
+  - lang: ru
+    role: translation
+    text: слоновая кость
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q82001
+category: material
+definition: material derived from the tusks and teeth of animals
+wikidata_id: Q82001
+metadata:
+  sources: [Wikidata Q82001 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Elfenbein_verarbeitet.jpg/1280px-Elfenbein_verarbeitet.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Elfenbein_verarbeitet.jpg
+    license: CC BY-SA 3.0
+identifiers:
+  gnd: 4014424-0
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q82001

@@ -1,0 +1,64 @@
+public_id: 116905
+name: yew wood
+names:
+  - text: yew
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q28942722
+  - lang: nl
+    role: translation
+    text: taxushout
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q28942722
+  - lang: fr
+    role: translation
+    text: bois d'if
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q28942722
+  - lang: de
+    role: translation
+    text: Eibenholz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q28942722
+  - lang: it
+    role: translation
+    text: legno di tasso
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q28942722
+  - lang: es
+    role: translation
+    text: madera de tejo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q28942722
+  - lang: ja
+    role: translation
+    text: イチイ材
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q28942722
+  - lang: ru
+    role: translation
+    text: древесина тиса
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q28942722
+category: material
+parent: wood
+definition: type of wood
+wikidata_id: Q28942722
+metadata:
+  sources: [Wikidata Q28942722 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0b/Taxus_wood.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Taxus_wood.jpg
+    license: CC BY-SA 3.0
+    credit: MPF
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q28942722

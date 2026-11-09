@@ -1,0 +1,16 @@
+public_id: 117147
+name: Piazza San Marco
+kind: street
+location: [12.338, 45.434]
+wikidata_id: Q217527
+metadata:
+  sources: [Wikidata Q217527 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q217527
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q217527

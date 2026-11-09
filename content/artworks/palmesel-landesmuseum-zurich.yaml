@@ -1,0 +1,37 @@
+public_id: 117252
+title_lang: de
+title: Palmesel
+created: mid 11th century
+created_span: uncertain
+kind: sculpture
+medium: Fichtenholz, Tannenholz
+materials: [spruce, fir wood]
+dimensions: [176.5, 165, 85]
+institution: swiss-national-museum
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b7/Palmesel_Landesmuseum.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Palmesel_Landesmuseum.jpeg
+    license: CC BY-SA 4.0
+    credit: Own work, Wikimedia Commons
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 113
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 113
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 113
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 113
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 113
+  created_span:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 113
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 113

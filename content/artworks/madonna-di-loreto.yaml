@@ -53,6 +53,19 @@ description_md: "Pilgrims kneeling before the Madonna: Caravaggio's realism of o
 wikidata_id: Q2713203
 metadata:
   sources: [Wikidata Q2713203 (retrieved 2026-11-07)]
+relationships:
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-08
+        property: P180
+        wikidata: Q2713203
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-08
+        property: P135
+        wikidata: Q2713203
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Madonna_di_Loreto-Caravaggio_%28c.1604-6%29.jpg/1280px-Madonna_di_Loreto-Caravaggio_%28c.1604-6%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Madonna_di_Loreto-Caravaggio_(c.1604-6).jpg

@@ -1,0 +1,44 @@
+public_id: 116958
+name: Pierre Gole
+given_name: Pierre
+family_name: Gole
+names:
+  - text: Pieter Golen
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3385271
+  - text: Pieter Cornelisz Gole
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3385271
+  - text: Pierre Golle
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3385271
+  - text: Pieter Goolen
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3385271
+birth: 1620
+death: 1684-11-27
+wikidata_id: Q3385271
+metadata:
+  sources: [Wikidata Q3385271 (retrieved 2026-11-09)]
+identifiers:
+  bnf: "150395648"
+  gnd: "130142786"
+  idref: "087563673"
+  kulturnav: 5a19caa4-a8f4-4953-a265-03b2aff91de6
+  lc: n2005078637
+  rkd: "135340"
+  ulan: "500019398"
+  viaf: "60956917"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q3385271
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q3385271

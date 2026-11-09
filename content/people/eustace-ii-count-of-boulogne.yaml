@@ -1,0 +1,16 @@
+public_id: 117201
+name: Eustace II, Count of Boulogne
+kind: person
+death: c. 1087
+wikidata_id: Q451790
+metadata:
+  sources: [Wikidata Q451790 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q451790
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q451790

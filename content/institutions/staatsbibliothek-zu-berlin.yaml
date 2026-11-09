@@ -1,0 +1,93 @@
+public_id: 117052
+name: Berlin State Library
+names:
+  - text: Staatsbibliothek zu Berlin
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q170109
+  - text: staatsbibliothek-berlin.de
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q170109
+  - text: Royal Library of Berlin
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q170109
+  - text: Königliche Bibliothek zu Berlin
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q170109
+  - lang: fr
+    role: translation
+    text: bibliothèque d'État de Berlin
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q170109
+  - lang: it
+    role: translation
+    text: Biblioteca di Stato di Berlino
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q170109
+  - lang: es
+    role: translation
+    text: Biblioteca Estatal de Berlín
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q170109
+  - lang: ja
+    role: translation
+    text: ベルリン州立図書館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q170109
+  - lang: zh
+    role: translation
+    text: 柏林国家图书馆
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q170109
+  - lang: ko
+    role: translation
+    text: 베를린 주립도서관
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q170109
+  - lang: ru
+    role: translation
+    text: Берлинская государственная библиотека
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q170109
+founded: 1661
+place: berlin
+location: [13.37083, 52.50722]
+website_url: https://staatsbibliothek-berlin.de/
+collection_url: http://stabikat.de
+wikidata_id: Q170109
+metadata:
+  sources: [Wikidata Q170109 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/StabiBerlin2018.jpg/1280px-StabiBerlin2018.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:StabiBerlin2018.jpg
+    license: CC BY-SA 2.0
+    credit: Paul Korecky
+identifiers:
+  bnf: "118674868"
+  gnd: 5036103-X
+  idref: "026444224"
+  lc: n50026319
+  viaf: "301697035"
+sources:
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q170109
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q170109
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q170109

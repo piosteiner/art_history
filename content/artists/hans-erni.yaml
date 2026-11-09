@@ -1,0 +1,55 @@
+public_id: 116935
+name: Hans Erni
+given_name: Hans
+family_name: Erni
+names:
+  - text: Gans Ėrni
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q667671
+  - text: Gans Erni
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q667671
+  - lang: ja
+    role: translation
+    text: ハンス・エルニ
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q667671
+  - lang: ru
+    role: translation
+    text: Ганс Эрни
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q667671
+birth: 1909-02-21
+death: 2015-03-21
+wikidata_id: Q667671
+metadata:
+  sources: [Wikidata Q667671 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6c/Hans_Erni_%281967%29_by_Erling_Mandelmann.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_Erni_(1967)_by_Erling_Mandelmann.jpg
+    license: CC BY-SA 3.0
+    credit: Erling Mandelmann
+identifiers:
+  bnf: "119018427"
+  dodis: P22316
+  gnd: "118530879"
+  hls: "022012"
+  idref: "026852411"
+  lc: n79084296
+  rkd: "26536"
+  sikart: "4000298"
+  ulan: "500007927"
+  viaf: "95729433"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q667671
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q667671

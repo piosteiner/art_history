@@ -1,0 +1,22 @@
+public_id: 117007
+name: Rieste
+kind: settlement
+parent: niedersachsen
+country_code: DE
+location: [8.01667, 52.48333]
+wikidata_id: Q649903
+metadata:
+  sources: [Wikidata Q649903 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q649903
+  parent:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q649903
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q649903

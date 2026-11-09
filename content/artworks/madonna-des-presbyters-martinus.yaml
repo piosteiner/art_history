@@ -1,0 +1,67 @@
+public_id: 117097
+title_lang: de
+title: Thronende Madonna des Presbyters Martinus
+names:
+  - lang: de
+    role: translation
+    text: Presbyter Martinus Madonna als Sedes Sapientiae
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q109007199
+  - lang: it
+    role: translation
+    text: Madonna as sedes sapientiae
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q109007199
+  - lang: en
+    role: translation
+    text: Madonna Enthroned as the "Seat of Wisdom"
+created: 1199
+medium: Pappelholz, farbige Fassung und Vergoldung
+materials: [poplar wood, poplar, gold]
+dimensions: [190]
+institution: bode-museum-berlin
+inventory_number: Inv. 29
+web_url: https://smb.museum-digital.de/index.php?t=objekt&oges=140019
+wikidata_id: Q109007199
+metadata:
+  sources: [Wikidata Q109007199 (retrieved 2026-11-09)]
+relationships:
+  - type: associated_with
+    to: movement/romanesque
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q109007199
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Berlin-Mitte_Bode-Museum_Madonna_Sedes_Sapientiae_738-738-edit.jpg/1280px-Berlin-Mitte_Bode-Museum_Madonna_Sedes_Sapientiae_738-738-edit.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Berlin-Mitte_Bode-Museum_Madonna_Sedes_Sapientiae_738-738-edit.jpg
+    license: CC BY-SA 4.0
+    credit: GFreihalter, edited by MenkinAlRire
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q109007199
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q109007199
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024)
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q109007199
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q109007199
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q109007199

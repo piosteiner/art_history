@@ -1,0 +1,37 @@
+public_id: 116977
+name: Heinrich Douvermann
+given_name: Heinrich
+family_name: Douvermann
+names:
+  - text: Henrik Douverman
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q102952
+  - text: Heinrich Douverman
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q102952
+  - text: Henrik Douvermann
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q102952
+birth: c. 1480
+death: c. 1544
+wikidata_id: Q102952
+metadata:
+  sources: [Wikidata Q102952 (retrieved 2026-11-09)]
+identifiers:
+  gnd: "118680579"
+  idref: "124488420"
+  lc: nr98026811
+  ulan: "500015746"
+  viaf: "54942487"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q102952
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q102952

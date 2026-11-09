@@ -1,0 +1,23 @@
+public_id: 117195
+name: William the Conqueror
+given_name: William the
+family_name: Conqueror
+kind: person
+birth: 1027/1028
+death: 1087-09-15
+wikidata_id: Q37594
+metadata:
+  sources: [Wikidata Q37594 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q37594
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q37594
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q37594

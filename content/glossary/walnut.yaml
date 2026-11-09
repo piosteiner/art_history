@@ -1,0 +1,70 @@
+public_id: 116890
+name: walnut wood
+names:
+  - text: walnut
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2288038
+  - lang: nl
+    role: translation
+    text: noten
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2288038
+  - lang: fr
+    role: translation
+    text: bois de noyer
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2288038
+  - lang: de
+    role: translation
+    text: Walnussholz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2288038
+  - lang: it
+    role: translation
+    text: legno di noce
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2288038
+  - lang: es
+    role: translation
+    text: madera de nogal
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2288038
+  - lang: ja
+    role: translation
+    text: クルミ材
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2288038
+  - lang: zh
+    role: translation
+    text: 胡桃木
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2288038
+  - lang: ru
+    role: translation
+    text: орех
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2288038
+category: material
+parent: wood
+definition: type of wood
+wikidata_id: Q2288038
+metadata:
+  sources: [Wikidata Q2288038 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Oberfl%C3%A4che_Wohnzimmertisch.JPG/1280px-Oberfl%C3%A4che_Wohnzimmertisch.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Oberfl%C3%A4che_Wohnzimmertisch.JPG
+    license: CC BY-SA 3.0
+    credit: Martin Lorenz
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q2288038

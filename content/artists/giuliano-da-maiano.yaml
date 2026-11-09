@@ -1,0 +1,18 @@
+public_id: 117181
+name: Giuliano da Maiano
+given_name: Giuliano
+family_name: da Maiano
+birth: 1432
+death: 1490-10-26
+wikidata_id: Q716519
+metadata:
+  sources: [Wikidata Q716519 (retrieved 2026-11-09)]
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q716519
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q716519

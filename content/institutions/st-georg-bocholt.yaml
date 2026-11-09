@@ -1,0 +1,43 @@
+public_id: 117049
+name: St. Georg
+names:
+  - text: St. Georg (Bocholt)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1356525
+  - lang: nl
+    role: translation
+    text: Sint-Joriskerk
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1356525
+  - lang: de
+    role: translation
+    text: St.-Georg-Kirche
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1356525
+kind: church
+place: bocholt
+location: [6.61374, 51.8382]
+wikidata_id: Q1356525
+metadata:
+  sources: [Wikidata Q1356525 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Bocholt_St_Georg.JPG/1280px-Bocholt_St_Georg.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Bocholt_St_Georg.JPG
+    license: Public domain
+    credit: Chris06
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1356525
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1356525
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1356525

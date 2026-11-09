@@ -38,6 +38,13 @@ region: europe
 wikidata_id: Q27968027
 metadata:
   sources: [Wikidata Q27968027 (retrieved 2026-10-20)]
+relationships:
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-08
+        property: P180
+        wikidata: Q27968027
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Vitrail_Chartres_Notre-Dame_210209_1.jpg/1280px-Vitrail_Chartres_Notre-Dame_210209_1.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Vitrail_Chartres_Notre-Dame_210209_1.jpg

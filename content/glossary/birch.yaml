@@ -1,0 +1,64 @@
+public_id: 116892
+name: birch
+names:
+  - text: birch wood
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q865564
+  - lang: nl
+    role: translation
+    text: berken
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q865564
+  - lang: fr
+    role: translation
+    text: bois de bouleau
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q865564
+  - lang: de
+    role: translation
+    text: Birkenholz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q865564
+  - lang: it
+    role: translation
+    text: legno di betulla
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q865564
+  - lang: es
+    role: translation
+    text: madera de abedul
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q865564
+  - lang: ja
+    role: translation
+    text: バーチ材
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q865564
+  - lang: ru
+    role: translation
+    text: берёза
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q865564
+category: material
+parent: wood
+definition: type of wood
+wikidata_id: Q865564
+metadata:
+  sources: [Wikidata Q865564 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f6/Betula_pendula_wood_tangent_section_1_beentree.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Betula_pendula_wood_tangent_section_1_beentree.jpg
+    license: CC BY-SA 4.0
+    credit: Beentree
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q865564

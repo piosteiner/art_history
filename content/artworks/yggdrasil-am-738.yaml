@@ -1,0 +1,38 @@
+public_id: 117143
+title_lang: is
+title: Yggdrasill (AM 738 4to)
+names:
+  - text: Edda oblongata
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2061177
+  - lang: en
+    role: translation
+    text: AM 738 4to
+created: c. 1680
+created_span: uncertain
+medium: manuscript
+institution: arni-magnusson-institute
+inventory_number: AM 738 4to
+wikidata_id: Q2061177
+metadata:
+  sources: [Wikidata Q2061177 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/02/AM_738_4to_Yggdrasill.png
+    source_url: https://commons.wikimedia.org/wiki/File:AM_738_4to_Yggdrasill.png
+    license: Public domain
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 2 (3.10.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q2061177
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q2061177
+  inventory_number:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 2 (3.10.2024)

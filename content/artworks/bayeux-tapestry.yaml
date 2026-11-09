@@ -1,0 +1,221 @@
+public_id: 117185
+title_lang: fr
+title: Tapisserie de Bayeux
+names:
+  - text: Bayeux Embroidery
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q187483
+  - text: Bayeau Tapestry
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q187483
+  - text: Bayeaux Tapestry
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q187483
+  - lang: en
+    role: translation
+    text: Bayeux Tapestry
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q187483
+  - lang: nl
+    role: translation
+    text: Tapijt van Bayeux
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q187483
+  - lang: de
+    role: translation
+    text: Teppich von Bayeux
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q187483
+  - lang: it
+    role: translation
+    text: Arazzo di Bayeux
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q187483
+  - lang: es
+    role: translation
+    text: Tapiz de Bayeux
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q187483
+  - lang: ja
+    role: translation
+    text: バイユーのタペストリー
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q187483
+  - lang: zh
+    role: translation
+    text: 贝叶挂毯
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q187483
+  - lang: ko
+    role: translation
+    text: 바이외 태피스트리
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q187483
+  - lang: ru
+    role: translation
+    text: Гобелен из Байё
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q187483
+created: 1066/1083
+created_label: c. 11th century
+created_span: uncertain
+medium: wool embroidery on linen
+materials: [linen, wool]
+dimensions: [50, 6830]
+institution: musee-de-la-tapisserie-de-bayeux
+web_url: https://www.unesco.org/fr/memory-world/bayeux-tapestry
+location: [-0.70029, 49.27436]
+wikidata_id: Q187483
+metadata:
+  sources: [Wikidata Q187483 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/bayeux
+    period: 1066/1083
+    period_label: c. 11th century
+  - type: depicts
+    to: place/bayeux
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q187483
+  - type: depicts
+    to: place/couesnon
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q187483
+  - type: depicts
+    to: place/dinan
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q187483
+  - type: depicts
+    to: place/le-mont-saint-michel
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q187483
+  - type: depicts
+    to: place/norman-conquest-of-england
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q187483
+  - type: depicts
+    to: place/rennes
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q187483
+  - type: depicts
+    to: place/westminster-abbey
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q187483
+  - type: depicts_person
+    to: person/chevalier-wadard
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q187483
+  - type: depicts_person
+    to: person/edward-the-confessor
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q187483
+  - type: depicts_person
+    to: person/eustace-ii-count-of-boulogne
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q187483
+  - type: depicts_person
+    to: person/guy-i-count-of-ponthieu
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q187483
+  - type: depicts_person
+    to: person/gyrth-godwinson
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q187483
+  - type: depicts_person
+    to: person/harold-godwinson
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q187483
+  - type: depicts_person
+    to: person/leofwine-godwinson
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q187483
+  - type: depicts_person
+    to: person/odo-earl-of-kent
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q187483
+  - type: depicts_person
+    to: person/robert-count-of-mortain
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q187483
+  - type: depicts_person
+    to: person/william-the-conqueror
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q187483
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Bayeux_Tapestry_scene1_EDWARD_REX.jpg/1280px-Bayeux_Tapestry_scene1_EDWARD_REX.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_scene1_EDWARD_REX.jpg
+    license: Public domain
+    credit: Myrabella
+identifiers:
+  gnd: 4127642-5
+  viaf: "178766715"
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 3 (10.10.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q187483
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q187483
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q187483
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q187483
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q187483

@@ -1,0 +1,88 @@
+public_id: 117087
+title_lang: de
+title: Heilig-Blut-Altar
+names:
+  - text: Altar of the Holy Blood
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801545
+  - text: Holy Blood Altarpiece
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801545
+  - lang: en
+    role: original
+    text: Holy Blood altar
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801545
+  - lang: de
+    role: translation
+    text: Heilig-Blut-Altar
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801545
+  - lang: it
+    role: translation
+    text: Altare del Sacro Sangue
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801545
+  - lang: ja
+    role: translation
+    text: 聖血の祭壇
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801545
+  - lang: en
+    role: translation
+    text: Altar of the Holy Blood (Holy Blood Altarpiece)
+creator: tilman-riemenschneider
+created: c. 1270
+created_span: uncertain
+medium: Lindenholz (Figuren), Fichtenholz (Schrein), ungefasst
+materials: [lime, wood, spruce]
+dimensions: [970, 417]
+web_url: https://www.rs-rothenburg.de/stjakob/Heilig_Blut_Altar/Heilig_Blut_Altar.html
+wikidata_id: Q11801545
+metadata:
+  sources: [Wikidata Q11801545 (retrieved 2026-11-09)]
+relationships:
+  - type: associated_with
+    to: movement/gothic
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q11801545
+  - type: associated_with
+    to: movement/northern-renaissance
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q11801545
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Rothenburg_ob_der_Tauber_023.JPG/1280px-Rothenburg_ob_der_Tauber_023.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Rothenburg_ob_der_Tauber_023.JPG
+    license: CC BY-SA 3.0
+    credit: Dr.Volkmar Rudolf
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 35
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q11801545
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q11801545
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q11801545
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 35
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 35

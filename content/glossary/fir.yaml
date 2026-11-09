@@ -1,0 +1,64 @@
+public_id: 116898
+name: fir wood
+names:
+  - text: fir
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q746026
+  - lang: nl
+    role: translation
+    text: dennen
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q746026
+  - lang: fr
+    role: translation
+    text: bois de sapin
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q746026
+  - lang: de
+    role: translation
+    text: Tannenholz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q746026
+  - lang: it
+    role: translation
+    text: legno di abete
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q746026
+  - lang: es
+    role: translation
+    text: madera de abeto
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q746026
+  - lang: ja
+    role: translation
+    text: モミ材
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q746026
+  - lang: ru
+    role: translation
+    text: пихта
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q746026
+category: material
+parent: wood
+definition: type of wood
+wikidata_id: Q746026
+metadata:
+  sources: [Wikidata Q746026 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Furnier_tanne.jpg/1280px-Furnier_tanne.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Furnier_tanne.jpg
+    license: CC BY-SA 3.0
+    credit: de:Benutzer:MatthiasKabel (assumed, based on history)
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q746026

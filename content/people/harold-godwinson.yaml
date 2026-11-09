@@ -1,0 +1,23 @@
+public_id: 117193
+name: Harold Godwinson
+given_name: Harold
+family_name: Godwinson
+kind: person
+birth: c. 1022
+death: 1066-10-20
+wikidata_id: Q159597
+metadata:
+  sources: [Wikidata Q159597 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q159597
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q159597
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q159597

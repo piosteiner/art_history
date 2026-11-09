@@ -1,0 +1,92 @@
+public_id: 117078
+title_lang: de
+title: Der Abend
+names:
+  - lang: en
+    role: translation
+    text: "Daytime cycle: The Evening"
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q16331419
+  - lang: nl
+    role: translation
+    text: Avond
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q16331419
+  - lang: fr
+    role: translation
+    text: Le Soir
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q16331419
+  - lang: de
+    role: original
+    text: "Vier Tageszeiten: Der Abend"
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q16331419
+  - lang: it
+    role: translation
+    text: Sera
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q16331419
+  - lang: ru
+    role: translation
+    text: "День цикла: Вечерняя"
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q16331419
+creator: caspar-david-friedrich
+created: 1820s
+created_span: uncertain
+medium: Öl auf Leinwand
+materials: [oil paint, canvas]
+dimensions: [22, 30.5]
+institution: landesmuseum-hannover
+inventory_number: PNM 385
+web_url: https://ku-ni.de/record_kuniweb_675860
+wikidata_id: Q16331419
+metadata:
+  sources: [Wikidata Q16331419 (retrieved 2026-11-09)]
+relationships:
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q16331419
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Caspar_David_Friedrich_-_Tageszeitenzyklus%2C_Der_Abend_%281821-22%29.jpg/1280px-Caspar_David_Friedrich_-_Tageszeitenzyklus%2C_Der_Abend_%281821-22%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Tageszeitenzyklus,_Der_Abend_(1821-22).jpg
+    license: Public domain
+    credit: Caspar David Friedrich
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 9
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q16331419
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q16331419
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q16331419
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q16331419
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q16331419
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q16331419

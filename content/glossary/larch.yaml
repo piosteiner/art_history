@@ -1,0 +1,57 @@
+public_id: 116900
+name: larch wood
+names:
+  - lang: nl
+    role: translation
+    text: larikshout
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1879281
+  - lang: fr
+    role: translation
+    text: bois de mélèze
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1879281
+  - lang: de
+    role: translation
+    text: Lärchenholz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1879281
+  - lang: it
+    role: translation
+    text: legno di larice
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1879281
+  - lang: es
+    role: translation
+    text: madera de alerce
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1879281
+  - lang: ru
+    role: translation
+    text: лиственница
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1879281
+  - larch
+category: material
+parent: wood
+definition: type of wood
+wikidata_id: Q1879281
+metadata:
+  sources: [Wikidata Q1879281 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a3/Wood_Larix_decidua.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wood_Larix_decidua.jpg
+    license: CC BY-SA 3.0
+    credit: Achim Raschka (talk)
+identifiers:
+  gnd: 7560295-7
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q1879281

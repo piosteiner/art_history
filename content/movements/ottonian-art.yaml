@@ -1,0 +1,16 @@
+public_id: 117107
+name: Ottonian art
+kind: movement
+period: 901/1000
+wikidata_id: Q1066218
+metadata:
+  sources: [Wikidata Q1066218 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1066218
+  period:
+    - accessed: 2026-11-09
+      property: P580
+      wikidata: Q1066218

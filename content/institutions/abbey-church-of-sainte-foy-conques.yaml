@@ -1,0 +1,70 @@
+public_id: 116940
+name: Abbey Church of Saint Foy
+names:
+  - lang: nl
+    role: translation
+    text: Abdijkerk van Sainte-Foy
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q670092
+  - lang: fr
+    role: translation
+    text: abbatiale Sainte-Foy de Conques
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q670092
+  - lang: de
+    role: translation
+    text: Ste-Foy de Conques
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q670092
+  - lang: it
+    role: translation
+    text: chiesa di Sainte-Foy
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q670092
+  - lang: es
+    role: translation
+    text: iglesia abacial de Sainte-Foy
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q670092
+  - lang: zh
+    role: translation
+    text: 圣斐德斯教堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q670092
+kind: church
+place: conques-en-rouergue
+location: [2.39787, 44.59931]
+website_url: https://abbaye-conques.org/
+wikidata_id: Q670092
+metadata:
+  sources: [Wikidata Q670092 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Abbaye_Ste_Foy_%C3%A0_Conques_%2801%29.jpg/1280px-Abbaye_Ste_Foy_%C3%A0_Conques_%2801%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Abbaye_Ste_Foy_%C3%A0_Conques_(01).jpg
+    license: CC BY-SA 3.0
+    credit: Daniel VILLAFRUELA.
+identifiers:
+  bnf: 12511411h
+  gnd: 4258377-9
+  idref: "027395405"
+  lc: no95026695
+  viaf: "262626154"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q670092
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q670092
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q670092

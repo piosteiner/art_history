@@ -1,0 +1,61 @@
+public_id: 116912
+name: staurotheke
+names:
+  - text: Reliquary of the true cross
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2334665
+  - text: stauroteca
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2334665
+  - text: Staurotheque
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2334665
+  - lang: nl
+    role: translation
+    text: staurotheek
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2334665
+  - lang: fr
+    role: translation
+    text: staurothèque
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2334665
+  - lang: de
+    role: translation
+    text: Staurothek
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2334665
+  - lang: es
+    role: translation
+    text: estauroteca
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2334665
+  - lang: ru
+    role: translation
+    text: ставротека
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2334665
+category: object type
+definition: reliquary containing fragments of the True Cross
+wikidata_id: Q2334665
+metadata:
+  sources: [Wikidata Q2334665 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e3/Lignum-crucis.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lignum-crucis.jpg
+    license: CC BY-SA 2.5
+    credit: Francisco J. Díez Martín
+identifiers:
+  gnd: 4298638-2
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q2334665

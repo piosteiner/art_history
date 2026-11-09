@@ -1,0 +1,68 @@
+public_id: 116926
+name: Domenico Veneziano
+given_name: Domenico
+family_name: Veneziano
+names:
+  - text: Domenico di Bartolomeo da Venezia
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q368546
+  - text: Veneziano Domenico
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q368546
+  - text: v. domenicho
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q368546
+  - lang: ja
+    role: translation
+    text: ドメニコ・ヴェネツィアーノ
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q368546
+  - lang: zh
+    role: translation
+    text: 多梅尼科·維內齊亞諾
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q368546
+  - lang: ko
+    role: translation
+    text: 도메니코 베네치아노
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q368546
+  - lang: ru
+    role: translation
+    text: Доменико Венециано
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q368546
+birth: 1410
+death: 1461-05-24
+wikidata_id: Q368546
+metadata:
+  sources: [Wikidata Q368546 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7e/Domenico_Veneziano_-_The_Madonna_and_Child_with_Saints_-_WGA06428.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Domenico_Veneziano_-_The_Madonna_and_Child_with_Saints_-_WGA06428.jpg
+    license: Public domain
+    credit: Domenico Veneziano
+identifiers:
+  bnf: 14966520z
+  gnd: "119028514"
+  idref: "031685447"
+  lc: n88638108
+  rkd: "23613"
+  ulan: "500030200"
+  viaf: "89617588"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q368546
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q368546

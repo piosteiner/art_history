@@ -1,0 +1,38 @@
+public_id: 117241
+title_lang: de
+title: Kruzifix aus St. Georg
+created: c. 1067
+created_span: uncertain
+kind: sculpture
+medium: Weidenholz, Reste ursprünglicher Fassung
+materials: [willow wood]
+dimensions: [189.5]
+dimensions_note: Höhe 189.5 cm (Korpus)
+institution: museum-schnutgen
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b1/K%C3%B6ln_Museum_Schn%C3%BCtgen_2012_Kruzifix_von_St._Georg.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:K%C3%B6ln_Museum_Schn%C3%BCtgen_2012_Kruzifix_von_St._Georg.jpg
+    license: Public domain
+    credit: Elke Wetzig, Wikimedia Commons
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 19
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 19
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 19
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 19
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 19
+  created_span:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 19
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 19

@@ -1,0 +1,83 @@
+public_id: 116916
+name: copper engraving technique
+names:
+  - text: art of copper engraving
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q4287629
+  - text: chalcography
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q4287629
+  - text: copper plate engraving
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q4287629
+  - text: copperplate engraving
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q4287629
+  - lang: nl
+    role: translation
+    text: kopergravurekunst
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q4287629
+  - lang: fr
+    role: translation
+    text: gravure sur cuivre
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q4287629
+  - lang: de
+    role: translation
+    text: Kupferstich
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q4287629
+  - lang: it
+    role: translation
+    text: calcografia
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q4287629
+  - lang: es
+    role: translation
+    text: calcografía
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q4287629
+  - lang: ja
+    role: translation
+    text: 銅版
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q4287629
+  - lang: zh
+    role: translation
+    text: 铜版雕刻技法
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q4287629
+  - lang: ru
+    role: translation
+    text: Медерит
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q4287629
+category: technique
+definition: technique of engraving on copper to produce prints
+wikidata_id: Q4287629
+metadata:
+  sources: [Wikidata Q4287629 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Chalcography.PNG/1280px-Chalcography.PNG
+    source_url: https://commons.wikimedia.org/wiki/File:Chalcography.PNG
+    license: CC BY-SA 3.0
+    credit: Mathiasrex, Maciej Szczepańczyk, anonymous plate of Ambrosius Hannemann (died 1644)
+identifiers:
+  gnd: 4033760-1
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q4287629

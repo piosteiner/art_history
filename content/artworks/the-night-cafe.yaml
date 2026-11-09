@@ -1,12 +1,26 @@
 public_id: 116693
 title: The Night Café
 creator: vincent-van-gogh
+created: 1888
 kind: versions
 description_md: Van Gogh's café at night in Arles, as Wikidata groups its versions; the oil painting is [[artwork/the-night-cafe-1888]].
 wikidata_id: Q106603505
 metadata:
   sources: [Wikidata Q106603505 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Van_Gogh_-_The_Night_Caf%C3%A9_%281888%29.jpg/1280px-Van_Gogh_-_The_Night_Caf%C3%A9_%281888%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Van_Gogh_-_The_Night_Caf%C3%A9_(1888).jpg
+    license: Public domain
+    credit: Vincent van Gogh
 sources:
+  created:
+    - accessed: 2026-11-08
+      property: P571
+      wikidata: Q106603505
+  creator:
+    - accessed: 2026-11-08
+      property: P170
+      wikidata: Q106603505
   title_status:
     - accessed: 2026-11-07
       wikidata: Q106603505

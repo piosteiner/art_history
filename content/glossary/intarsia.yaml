@@ -1,0 +1,53 @@
+public_id: 116915
+name: intarsia
+names:
+  - text: marquetry
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q832266
+  - lang: de
+    role: translation
+    text: Intarsie
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q832266
+  - lang: it
+    role: translation
+    text: intarsio ligneo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q832266
+  - lang: ja
+    role: translation
+    text: インタルシア
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q832266
+  - lang: zh
+    role: translation
+    text: 木片拼花工藝
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q832266
+  - lang: ru
+    role: translation
+    text: Интарсия
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q832266
+category: technique
+definition: decorative inlay technique using precisely fit pieces of material, most often veneer, to produce a design
+wikidata_id: Q832266
+metadata:
+  sources: [Wikidata Q832266 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Chorgest%C3%BChl_St._Martin_Memmingen_-_Intarsien_%2810%29.JPG/1280px-Chorgest%C3%BChl_St._Martin_Memmingen_-_Intarsien_%2810%29.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Chorgest%C3%BChl_St._Martin_Memmingen_-_Intarsien_(10).JPG
+    license: CC BY-SA 3.0
+    credit: Fotograf Johannes Böckh, zuständig für techn. Equipment (Licht, techn. Equipment) Thomas Mirtsch
+identifiers:
+  gnd: 4027224-2
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q832266

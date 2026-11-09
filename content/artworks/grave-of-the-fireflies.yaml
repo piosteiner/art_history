@@ -54,6 +54,7 @@ names:
     sources:
       - accessed: 2026-11-06
         wikidata: Q274520
+part_number: "3"
 creator: isao-takahata
 created: 1988
 kind: anime
@@ -61,6 +62,12 @@ wikidata_id: Q274520
 metadata:
   sources: [Wikidata Q274520 (retrieved 2026-11-06)]
 relationships:
+  - type: created_in_polity
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-08
+        property: P495
+        wikidata: Q274520
   - type: depicts
     to: event/bombing-of-kobe
     sources:

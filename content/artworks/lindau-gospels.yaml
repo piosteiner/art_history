@@ -1,0 +1,62 @@
+public_id: 117120
+title: Lindau Gospels
+names:
+  - text: New York, Pierpont Library, MS M 1
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1825931
+  - lang: fr
+    role: translation
+    text: Évangiles de Lindau
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1825931
+  - lang: de
+    role: translation
+    text: Lindauer Evangeliar
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1825931
+  - lang: it
+    role: translation
+    text: Evangeliario di Lindau
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1825931
+created: c. 860
+created_span: uncertain
+medium: Gold, Edelsteine, manuscript
+materials: [gold]
+dimensions: [34.4, 26.2]
+institution: morgan-library-and-museum
+inventory_number: MS M.1
+wikidata_id: Q1825931
+metadata:
+  sources: [Wikidata Q1825931 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/70/Lindau_Gospels_Boekband_met_kruis_%28lower_cover%29%2C_GD009430.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lindau_Gospels_Boekband_met_kruis_(lower_cover),_GD009430.jpg
+    license: Public domain
+    credit: Wikimedia Commons
+identifiers:
+  gnd: 4817721-0
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024)
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024)
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024)
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024)
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q1825931
+  inventory_number:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024)

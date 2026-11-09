@@ -8,6 +8,8 @@ medium: Wood with paint
 materials: [wood]
 dimensions: [90.3]
 institution: tokyo-national-museum
+inventory_number: C-1526
+web_url: https://colbase.nich.go.jp/collection_items/tnm/C-1526
 description_md: "A posthumous portrait of [[person/minamoto-no-yoritomo]] as shogun that translates the yamato-e portrait into three dimensions: the pale, alert face of a confident young courtier, in a hunting jacket (kariginu) over baggy trousers and a tall black hat of starched gauze. Such images were common in the ancestral shrines of the great clans; it probably stood among those of a Minamoto family shrine. [[source/history-of-japanese-art|p. 169, fig. 202]]"
 relationships:
   - type: depicts_person
@@ -20,6 +22,18 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 169, fig. 202
+  - type: designated_as
+    to: term/important-cultural-property-japan
+    notes_md: Tokyo National Museum
+    sources:
+      - url: https://colbase.nich.go.jp/collection_items/tnm/C-1526
+        source: colbase
+        accessed: 2026-11-08
+images:
+  - url: https://colbase.nich.go.jp/media/tnm/C-1526/image/slideshow_s/C-1526_E0141652.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/tnm/C-1526
+    license: CC BY 4.0
+    credit: Tokyo National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -39,3 +53,7 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: p. 169, fig. 202
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/C-1526
+      source: colbase
+      accessed: 2026-11-08

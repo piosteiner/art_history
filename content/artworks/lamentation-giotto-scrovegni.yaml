@@ -55,6 +55,18 @@ relationships:
   - type: created_in
     to: place/padua
     period: 1305
+  - type: depicts_person
+    to: person/jesus-christ
+    sources:
+      - accessed: 2026-11-08
+        property: P180
+        wikidata: Q2067212
+  - type: associated_with
+    to: movement/proto-renaissance
+    sources:
+      - accessed: 2026-11-08
+        property: P135
+        wikidata: Q2067212
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Compianto_sul_Cristo_morto.jpg/1280px-Compianto_sul_Cristo_morto.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Compianto_sul_Cristo_morto.jpg

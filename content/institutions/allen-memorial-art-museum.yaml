@@ -1,0 +1,16 @@
+public_id: 117114
+name: Allen Memorial Art Museum
+kind: museum
+founded: 1917
+wikidata_id: Q3816734
+metadata:
+  sources: [Wikidata Q3816734 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q3816734
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q3816734

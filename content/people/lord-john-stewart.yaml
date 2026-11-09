@@ -1,0 +1,21 @@
+public_id: 117141
+name: Lord John Stewart
+kind: person
+birth: 1621-10-23
+death: 1644-03-29
+wikidata_id: Q16863753
+metadata:
+  sources: [Wikidata Q16863753 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q16863753
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q16863753
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q16863753

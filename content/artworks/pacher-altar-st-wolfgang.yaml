@@ -1,0 +1,103 @@
+public_id: 117099
+title_lang: de
+title: Pacher-Altar
+names:
+  - lang: en
+    role: original
+    text: St. Wolfgang Altarpiece
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1544976
+  - lang: en
+    role: original
+    text: St Wolfgang altarpiece
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1544976
+  - lang: nl
+    role: translation
+    text: De Geboorte
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1544976
+  - lang: fr
+    role: translation
+    text: La fuite en Egypte
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1544976
+  - lang: de
+    role: original
+    text: Pacher-Altar
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1544976
+  - lang: it
+    role: translation
+    text: Fuga in Egitto
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1544976
+  - lang: es
+    role: translation
+    text: Huida a Egipto
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1544976
+  - lang: zh
+    role: translation
+    text: 帕赫祭坛画
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1544976
+  - lang: ru
+    role: translation
+    text: алтарь Пахера
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1544976
+  - lang: de
+    role: alternative
+    text: Blick auf den Pacheraltar in St. Wolfgang
+creator: michael-pacher
+created: 1481
+medium: Zirbelkiefer (Schrein, Skulpturen), Fichte (Flügel), originale Fassung
+materials: [oil paint, canvas, spruce]
+dimensions: [1088, 660]
+wikidata_id: Q1544976
+metadata:
+  sources: [Wikidata Q1544976 (retrieved 2026-11-09)]
+relationships:
+  - type: associated_with
+    to: movement/northern-renaissance
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q1544976
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/St._Wolfgang_%28St._Wolfgang%29%2C_Hauptaltar%2C_2024-10-17.jpg/1280px-St._Wolfgang_%28St._Wolfgang%29%2C_Hauptaltar%2C_2024-10-17.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:St._Wolfgang_(St._Wolfgang),_Hauptaltar,_2024-10-17.jpg
+    license: CC BY-SA 4.0
+    credit: 2015 Michael 2015
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1544976
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q1544976
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q1544976
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q1544976

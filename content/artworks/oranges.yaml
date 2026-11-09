@@ -1,4 +1,5 @@
 public_id: 112136
+title_lang: de
 title: Oranges
 names:
   - lang: de
@@ -21,6 +22,8 @@ web_url: https://collection.kunsthaus.ch/de/collection/item/604996/
 on_loan: true
 on_loan_since: 2021
 wikidata_id: Q124294678
+metadata:
+  sources: [Wikidata Q124294678 (retrieved 2026-11-08)]
 provenance:
   - owner: person/alfred-abraham-schwabacher
     role: dealer
@@ -94,10 +97,16 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/604996/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P571
+      wikidata: Q124294678
   creator:
     - url: https://collection.kunsthaus.ch/de/collection/item/604996/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P170
+      wikidata: Q124294678
   on_loan:
     - url: https://collection.kunsthaus.ch/de/collection/item/604996/
       source: kunsthaus-zurich-sammlung-online
@@ -106,6 +115,9 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/604996/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P2048
+      wikidata: Q124294678
   institution:
     - url: https://collection.kunsthaus.ch/de/collection/item/604996/
       source: kunsthaus-zurich-sammlung-online

@@ -1,0 +1,63 @@
+public_id: 116957
+name: Upper Basilica of San Francesco d'Assisi
+names:
+  - lang: fr
+    role: translation
+    text: église supérieure de la basilique Saint-François d'Assise
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3635787
+  - lang: de
+    role: translation
+    text: Oberkirche San Francesco in Assisi
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3635787
+  - lang: it
+    role: translation
+    text: basilica superiore di San Francesco d'Assisi
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3635787
+  - lang: es
+    role: translation
+    text: Basílica superior de San Francisco de Asís
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3635787
+  - lang: ja
+    role: translation
+    text: 聖フランチェスコ聖堂上院
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3635787
+  - lang: zh
+    role: translation
+    text: 亚西西的圣方济各上层圣殿
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3635787
+kind: church
+place: assisi
+location: [12.60574, 43.07475]
+wikidata_id: Q3635787
+metadata:
+  sources: [Wikidata Q3635787 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Basilica_San_Francesco_Assisi_02.JPG/1280px-Basilica_San_Francesco_Assisi_02.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Basilica_San_Francesco_Assisi_02.JPG
+    license: CC BY-SA 3.0
+    credit: Florian Decker, Messdiener Winterbach
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q3635787
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q3635787
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q3635787

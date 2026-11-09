@@ -1,0 +1,151 @@
+public_id: 116966
+name: Veit Stoss
+given_name: Veit
+family_name: Stoss
+names:
+  - text: Wit Stosz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Wita Stosza
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Wit Stwosz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Wit Stoss
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Feyt Stuosz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Veit Stosz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Veit Stoss the Elder
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Veydt Stuosz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Veydt Stwosz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Vit Stwosz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Guy Stoss
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Veydt Stosz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Vit Stosz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Veit Stuosz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Veydt Stoss
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Vit Stoss
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Veit, the elder Stoss
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Veit Stwosz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Wit Stuosz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Vit Stuosz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Feyt Stosz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Feyt Stoss
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Feyt Stwosz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Veit Stoß
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - text: Werkstadt Veit Stoß
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - lang: ja
+    role: translation
+    text: ファイト・シュトース
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - lang: ko
+    role: translation
+    text: 파이트 슈토스
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+  - lang: ru
+    role: translation
+    text: Фейт Штос
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q163800
+birth: 1447
+death: 1533-09-30
+wikidata_id: Q163800
+metadata:
+  sources: [Wikidata Q163800 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cd/Veit_Stoss.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Veit_Stoss.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 11959823x
+  gnd: "118618768"
+  idref: 02759114X
+  kulturnav: 65302bf4-fb19-44d9-84e6-957f1bd7964f
+  lc: n80145086
+  rkd: "75562"
+  ulan: "500007868"
+  viaf: "35249570"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q163800
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q163800

@@ -1,0 +1,89 @@
+public_id: 116992
+name: Bad Doberan Minster
+names:
+  - text: Doberan Minster
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q461397
+  - lang: nl
+    role: translation
+    text: Munster van Bad Doberan
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q461397
+  - lang: fr
+    role: translation
+    text: cathédrale de Doberan
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q461397
+  - lang: de
+    role: translation
+    text: Doberaner Münster
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q461397
+  - lang: it
+    role: translation
+    text: duomo di Bad Doberan
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q461397
+  - lang: es
+    role: translation
+    text: Catedral de Bad Doberan
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q461397
+  - lang: ja
+    role: translation
+    text: ドーベラン司教座聖堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q461397
+  - lang: zh
+    role: translation
+    text: 多伯蘭大教堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q461397
+  - lang: ru
+    role: translation
+    text: Доберанский монастырь
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q461397
+kind: church
+founded: 1368
+place: bad-doberan
+location: [11.90983, 54.10778]
+website_url: http://www.muenster-doberan.de/
+wikidata_id: Q461397
+metadata:
+  sources: [Wikidata Q461397 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Bad_Doberan%2C_Doberaner_M%C3%BCnster_--_2024_--_5096.jpg/1280px-Bad_Doberan%2C_Doberaner_M%C3%BCnster_--_2024_--_5096.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bad_Doberan,_Doberaner_M%C3%BCnster_--_2024_--_5096.jpg
+    license: CC BY-SA 4.0
+    credit: Dietmar Rabich
+identifiers:
+  gnd: 4245997-7
+  lc: nr90010319
+  viaf: "240325685"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q461397
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q461397
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q461397
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q461397

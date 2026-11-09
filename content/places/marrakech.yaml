@@ -1,0 +1,16 @@
+public_id: 117063
+name: Marrakech
+kind: settlement
+location: [-7.98108, 31.62947]
+wikidata_id: Q101625
+metadata:
+  sources: [Wikidata Q101625 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q101625
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q101625

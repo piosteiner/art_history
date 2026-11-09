@@ -1,0 +1,63 @@
+public_id: 116913
+name: choir stall
+names:
+  - text: stalls
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q891388
+  - text: choir stalls
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q891388
+  - lang: nl
+    role: translation
+    text: koorgestoelte
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q891388
+  - lang: fr
+    role: translation
+    text: stalles
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q891388
+  - lang: de
+    role: translation
+    text: Chorgestühl
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q891388
+  - lang: it
+    role: translation
+    text: stallo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q891388
+  - lang: es
+    role: translation
+    text: sillería de coro
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q891388
+  - lang: ja
+    role: translation
+    text: 内陣席
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q891388
+category: object type
+definition: furniture where church choirs sit and sing
+wikidata_id: Q891388
+metadata:
+  sources: [Wikidata Q891388 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/00206_el_iluminado.jpg/1280px-00206_el_iluminado.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:00206_el_iluminado.jpg
+    license: CC BY-SA 3.0
+    credit: Tanke67
+identifiers:
+  gnd: 4147900-2
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q891388

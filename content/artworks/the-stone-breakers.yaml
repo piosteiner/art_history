@@ -5,11 +5,62 @@ names:
   - lang: fr
     role: original
     text: Les Casseurs de pierres
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2914912
   - lang: en
     role: translation
     text: The Stone Breakers
     sources:
       - accessed: 2026-11-07
+        wikidata: Q2914912
+  - lang: nl
+    role: translation
+    text: De Steenkloppers
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2914912
+  - lang: de
+    role: translation
+    text: Die Steinklopfer
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2914912
+  - lang: it
+    role: translation
+    text: Gli spaccapietre
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2914912
+  - lang: es
+    role: translation
+    text: Los rompe piedras
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2914912
+  - lang: ja
+    role: translation
+    text: 石割人夫
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2914912
+  - lang: zh
+    role: translation
+    text: 採石工人
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2914912
+  - lang: ko
+    role: translation
+    text: 돌 깨는 사람들
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2914912
+  - lang: ru
+    role: translation
+    text: Дробильщики камня
+    sources:
+      - accessed: 2026-11-08
         wikidata: Q2914912
 creator: gustave-courbet
 created: 1850
@@ -23,6 +74,13 @@ description_md: Courbet's realism of labour — with [[artwork/madonna-di-loreto
 wikidata_id: Q2914912
 metadata:
   sources: [Wikidata Q2914912 (retrieved 2026-11-07)]
+relationships:
+  - type: associated_with
+    to: movement/french-realism
+    sources:
+      - accessed: 2026-11-08
+        property: P135
+        wikidata: Q2914912
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Gustave_Courbet_018.jpg/1280px-Gustave_Courbet_018.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Gustave_Courbet_018.jpg

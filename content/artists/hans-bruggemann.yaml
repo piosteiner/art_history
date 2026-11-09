@@ -1,0 +1,26 @@
+public_id: 116934
+name: Hans Brüggemann
+given_name: Hans
+family_name: Brüggemann
+birth: 1480
+death: c. 1540
+wikidata_id: Q318560
+metadata:
+  sources: [Wikidata Q318560 (retrieved 2026-11-09)]
+identifiers:
+  bnf: 12781108k
+  gnd: "118515918"
+  idref: "111149231"
+  lc: n81103035
+  rkd: "114417"
+  ulan: "500088942"
+  viaf: "54939448"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q318560
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q318560

@@ -1,0 +1,103 @@
+public_id: 117164
+title_lang: it
+title: Adorazione dei Magi degli Innocenti
+names:
+  - lang: en
+    role: translation
+    text: Adoration of the Magi
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3201479
+  - lang: fr
+    role: translation
+    text: L'Adoration des mages
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3201479
+  - lang: de
+    role: translation
+    text: Anbetung der Könige
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3201479
+  - lang: it
+    role: original
+    text: Adorazione dei Magi degli Innocenti
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3201479
+  - lang: es
+    role: translation
+    text: Adoración de los Reyes Magos
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3201479
+  - lang: ja
+    role: translation
+    text: 東方三博士の礼拝
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3201479
+  - lang: it
+    role: alternative
+    text: L'Adorazione dei Magi degli Innocenti
+creator: domenico-ghirlandaio
+created: 1485
+medium: tempera on panel
+materials: [oil paint, canvas, tempera]
+dimensions: [285, 240]
+institution: museo-degli-innocenti
+web_url: https://www.wga.hu/frames-e.html?/html/g/ghirland/domenico/8spedale/spedale.html
+wikidata_id: Q3201479
+metadata:
+  sources: [Wikidata Q3201479 (retrieved 2026-11-09)]
+relationships:
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q3201479
+  - type: co_creator
+    to: artist/bartolomeo-di-giovanni
+    sources:
+      - accessed: 2026-11-09
+        property: P170
+        wikidata: Q3201479
+  - type: associated_with
+    to: movement/italian-renaissance
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q3201479
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Adoration_of_the_Magi_Spedale_degli_Innocenti.jpg/1280px-Adoration_of_the_Magi_Spedale_degli_Innocenti.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Adoration_of_the_Magi_Spedale_degli_Innocenti.jpg
+    license: Public domain
+    credit: Domenico Ghirlandaio
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q3201479
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q3201479
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q3201479
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024)
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q3201479
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q3201479

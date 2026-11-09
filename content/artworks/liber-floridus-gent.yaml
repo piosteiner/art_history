@@ -1,0 +1,47 @@
+public_id: 117218
+title_lang: la
+title: Liber Floridus (Gent, Ms. 92)
+names:
+  - lang: ja
+    role: translation
+    text: 花咲ける書
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q131099759
+  - lang: en
+    role: translation
+    text: Liber Floridus
+creator: lambert-of-saint-omer
+created: 1121
+medium: manuscript
+institution: ghent-university-library
+inventory_number: Ms. 92
+web_url: https://mmfc.be/ms/mmfc-50478
+wikidata_id: Q131099759
+metadata:
+  sources: [Wikidata Q131099759 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/53/Meddragon_Liber_Floridus_Lambert_of_sint_Omaars_1460.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Meddragon_Liber_Floridus_Lambert_of_sint_Omaars_1460.jpg
+    license: Public domain
+    credit: Lambert de St Omer
+identifiers:
+  viaf: "305315950"
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 115
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q131099759
+  creator:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 115
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q131099759
+  inventory_number:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 115

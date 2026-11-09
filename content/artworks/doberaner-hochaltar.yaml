@@ -1,0 +1,35 @@
+public_id: 117075
+title: Hochaltar des Doberaner Münsters
+created: c. 1300
+created_span: uncertain
+medium: Eichenholz
+materials: [oak]
+dimensions: [1000, 289]
+institution: doberan-minster
+web_url: https://muenster-doberan.de/index.php/de/fuehrungen/aktuelles/84-aeltester-fluegelaltar-der-kunstgeschichte
+wikidata_id: Q140071106
+metadata:
+  sources: [Wikidata Q140071106 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Doberan_M%C3%BCnster_-_Hochaltar_1.jpg/1280px-Doberan_M%C3%BCnster_-_Hochaltar_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Doberan_M%C3%BCnster_-_Hochaltar_1.jpg
+    license: CC BY-SA 4.0
+    credit: Wolfgang Sauber
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q140071106
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q140071106
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)

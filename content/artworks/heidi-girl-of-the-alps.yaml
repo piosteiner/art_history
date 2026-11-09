@@ -40,6 +40,13 @@ kind: anime
 wikidata_id: Q715718
 metadata:
   sources: [Wikidata Q715718 (retrieved 2026-11-06)]
+relationships:
+  - type: created_in_polity
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-08
+        property: P495
+        wikidata: Q715718
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/b/b4/Heidi%2C_a_Girl_of_the_Alps_Logo.gif
     source_url: https://commons.wikimedia.org/wiki/File:Heidi,_a_Girl_of_the_Alps_Logo.gif

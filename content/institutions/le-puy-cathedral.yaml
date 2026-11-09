@@ -1,0 +1,62 @@
+public_id: 116973
+name: Le Puy Cathedral
+names:
+  - lang: fr
+    role: translation
+    text: cathédrale Notre-Dame du Puy-en-Velay
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1537302
+  - lang: de
+    role: translation
+    text: Kathedrale von Le Puy-en-Velay
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1537302
+  - lang: it
+    role: translation
+    text: cattedrale di Le Puy
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1537302
+  - lang: es
+    role: translation
+    text: Catedral de Le Puy-en-Velay
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1537302
+  - lang: zh
+    role: translation
+    text: 勒皮主教座堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1537302
+kind: cathedral
+place: le-puy-en-velay
+location: [3.88478, 45.04557]
+website_url: https://www.cathedraledupuy.org/
+wikidata_id: Q1537302
+metadata:
+  sources: [Wikidata Q1537302 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/94/Le_Puy_en_Velay_03.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Le_Puy_en_Velay_03.jpg
+    license: CC BY-SA 1.0
+    credit: GIRAUD Patrick
+identifiers:
+  gnd: 4602359-8
+  lc: n83143858
+  viaf: "139593484"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1537302
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1537302
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1537302

@@ -1,0 +1,63 @@
+public_id: 116893
+name: pearwood
+names:
+  - text: pear wood
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1964340
+  - text: wood of pear
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1964340
+  - lang: nl
+    role: translation
+    text: perenhout
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1964340
+  - lang: fr
+    role: translation
+    text: bois de poirier
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1964340
+  - lang: de
+    role: translation
+    text: Birnbaumholz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1964340
+  - lang: it
+    role: translation
+    text: legno di pero
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1964340
+  - lang: es
+    role: translation
+    text: madera de peral
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1964340
+  - lang: ru
+    role: translation
+    text: древесина грушевого дерева
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1964340
+  - pear-wood
+category: material
+parent: wood
+definition: type of wood
+wikidata_id: Q1964340
+metadata:
+  sources: [Wikidata Q1964340 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/41/Birnenholz.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Birnenholz.jpg
+    license: Public domain
+    credit: No machine-readable author provided. Immanuel Giel assumed (based on copyright claims).
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q1964340

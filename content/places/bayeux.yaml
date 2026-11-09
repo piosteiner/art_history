@@ -1,0 +1,16 @@
+public_id: 117036
+name: Bayeux
+kind: settlement
+location: [-0.70389, 49.27861]
+wikidata_id: Q183910
+metadata:
+  sources: [Wikidata Q183910 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q183910
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q183910

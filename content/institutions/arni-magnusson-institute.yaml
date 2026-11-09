@@ -1,0 +1,79 @@
+public_id: 117055
+name: Árni Magnússon Institute for Icelandic Studies
+names:
+  - text: Arni Magnusson Institute for Icelandic Studies
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q627418
+  - lang: fr
+    role: translation
+    text: Institut Árni-Magnússon
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q627418
+  - lang: de
+    role: translation
+    text: Árni-Magnússon-Institut für isländische Studien
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q627418
+  - lang: it
+    role: translation
+    text: Istituto Árni Magnússon
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q627418
+  - lang: es
+    role: translation
+    text: Instituto Árni Magnússon para los estudios islandeses
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q627418
+  - lang: ja
+    role: translation
+    text: アウルトニ・マグヌッソン研究所
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q627418
+  - lang: zh
+    role: translation
+    text: 冰岛研究所
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q627418
+  - lang: ru
+    role: translation
+    text: Институт исландских исследований Аурни Магнуссона
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q627418
+kind: research institute
+founded: 1962
+place: reykjavik
+location: [-21.95139, 64.13889]
+website_url: http://www.arnastofnun.is/
+wikidata_id: Q627418
+metadata:
+  sources: [Wikidata Q627418 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Arnagardur.JPG/1280px-Arnagardur.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Arnagardur.JPG
+    license: CC BY-SA 3.0
+    credit: Cessator
+identifiers:
+  gnd: 16053326-0
+  lc: no2008168702
+  viaf: "148145305"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q627418
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q627418
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q627418

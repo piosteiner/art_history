@@ -1,0 +1,38 @@
+public_id: 117314
+title_lang: nl
+title: Antwerps kabinet
+created: c. 1650
+created_span: uncertain
+kind: kunstschrank
+medium: softwood and oak, ebony veneer, bone, tortoiseshell, oil paint, silver
+materials: [oak, ebony, silver]
+dimensions: [159]
+dimensions_note: Höhe 159 cm, Breite 109 cm
+institution: rijksmuseum
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/89/Kunstkast%2C_beschilderd_met_mythologische_voorstellingen%2C_BK-NM-11906-1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kunstkast,_beschilderd_met_mythologische_voorstellingen,_BK-NM-11906-1.jpg
+    license: CC0
+    credit: Rijksmuseum, Wikimedia Commons
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024)
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024)
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024)
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024)
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024)
+  created_span:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024)
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024)

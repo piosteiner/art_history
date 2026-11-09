@@ -1,0 +1,26 @@
+public_id: 116907
+name: Schreinmadonna
+names:
+  - lang: nl
+    role: translation
+    text: Vierge ouvrante
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2249797
+  - lang: es
+    role: translation
+    text: vírgenes abrideras
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2249797
+category: object type
+wikidata_id: Q2249797
+metadata:
+  sources: [Wikidata Q2249797 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Die_Heiligen_Drei_K%C3%B6nige._Mythos%2C_Kunst_und_Kult_-_Museum_Schn%C3%BCtgen-0956.jpg/1280px-Die_Heiligen_Drei_K%C3%B6nige._Mythos%2C_Kunst_und_Kult_-_Museum_Schn%C3%BCtgen-0956.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Die_Heiligen_Drei_K%C3%B6nige._Mythos,_Kunst_und_Kult_-_Museum_Schn%C3%BCtgen-0956.jpg
+    license: CC BY-SA 4.0
+    credit: Raimond Spekking
+identifiers:
+  gnd: 4317187-4

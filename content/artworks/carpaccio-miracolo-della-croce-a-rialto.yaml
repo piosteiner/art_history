@@ -1,0 +1,138 @@
+public_id: 117153
+title_lang: it
+title: Miracolo della reliquia della Croce al ponte di Rialto
+names:
+  - text: The Healing of the Madman
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3817178
+  - text: Miracle of the Relic of the Cross at the Ponte di Rialto
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3817178
+  - lang: nl
+    role: translation
+    text: Het wonder van het kruis van Rialto
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3817178
+  - lang: fr
+    role: translation
+    text: Le Miracle de la relique de la Croix au pont du Rialto
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3817178
+  - lang: de
+    role: translation
+    text: Wunder der Kreuzreliquie
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3817178
+  - lang: it
+    role: translation
+    text: Miracolo della reliquia della Croce al ponte di Rialto
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3817178
+  - lang: es
+    role: translation
+    text: Curación del obseso
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3817178
+  - lang: ja
+    role: translation
+    text: リアルト橋での聖十字架残骸の奇跡
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3817178
+  - lang: zh
+    role: translation
+    text: 里亞爾托橋的聖蹟
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3817178
+  - lang: ru
+    role: translation
+    text: Чудо реликвии Креста на мосту Риальто
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3817178
+  - lang: en
+    role: translation
+    text: Miracle of the Holy Cross at the Rialto Bridge
+parent: true-cross-cycle
+part_number: "1"
+creator: vittore-carpaccio
+created: 1494
+medium: oil on canvas
+materials: [tempera, canvas]
+dimensions: [371, 392]
+institution: gallerie-dell-accademia-venice
+inventory_number: "566"
+web_url: http://www.wga.hu/frames-e.html?/html/c/carpacci/2/01mirac.html
+wikidata_id: Q3817178
+metadata:
+  sources: [Wikidata Q3817178 (retrieved 2026-11-09)]
+relationships:
+  - type: depicts
+    to: place/rialto-bridge
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q3817178
+  - type: depicts_person
+    to: person/francesco-querini
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q3817178
+  - type: associated_with
+    to: movement/high-renaissance
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q3817178
+  - type: associated_with
+    to: movement/venetian-school
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q3817178
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Accademia_-_Miracle_of_the_Holy_Cross_at_Rialto_by_Vittore_Carpaccio.jpg/1280px-Accademia_-_Miracle_of_the_Holy_Cross_at_Rialto_by_Vittore_Carpaccio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Accademia_-_Miracle_of_the_Holy_Cross_at_Rialto_by_Vittore_Carpaccio.jpg
+    license: Public domain
+    credit: Didier Descouens
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 9 (28.11.2024)
+  parent:
+    - accessed: 2026-11-09
+      property: P179
+      wikidata: Q3817178
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q3817178
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q3817178
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q3817178
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q3817178
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q3817178
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q3817178

@@ -1,0 +1,73 @@
+public_id: 116943
+name: Territorial Abbey of Monte Oliveto Maggiore
+names:
+  - lang: nl
+    role: translation
+    text: Abdij Monte Oliveto Maggiore
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1247143
+  - lang: fr
+    role: translation
+    text: abbaye territoriale Santa Maria de Monte Oliveto Maggiore
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1247143
+  - lang: de
+    role: translation
+    text: Monte Oliveto Maggiore
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1247143
+  - lang: it
+    role: translation
+    text: abbazia territoriale di Monte Oliveto Maggiore
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1247143
+  - lang: es
+    role: translation
+    text: abadía territorial de Monte Oliveto Maggiore
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1247143
+  - lang: zh
+    role: translation
+    text: 天主教大橄欖山自治會院區
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1247143
+  - lang: ru
+    role: translation
+    text: Монте-Оливето-Маджоре
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1247143
+founded: 14th century
+place: asciano
+location: [11.54417, 43.17528]
+website_url: https://www.monteolivetomaggiore.it/
+wikidata_id: Q1247143
+metadata:
+  sources: [Wikidata Q1247143 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/MonteOlivieto.jpg/1280px-MonteOlivieto.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:MonteOlivieto.jpg
+    license: CC BY-SA 3.0
+    credit: Adrian Michael
+identifiers:
+  lc: no2008010466
+  viaf: "236593647"
+sources:
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1247143
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1247143
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1247143

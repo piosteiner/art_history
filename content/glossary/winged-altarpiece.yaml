@@ -1,0 +1,83 @@
+public_id: 116906
+name: winged altarpiece
+names:
+  - text: winged altar
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801536
+  - text: winged retable
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801536
+  - text: folding altar
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801536
+  - text: Flügelretabel
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801536
+  - lang: nl
+    role: translation
+    text: vleugelaltaar
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801536
+  - lang: fr
+    role: translation
+    text: retable à volets
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801536
+  - lang: de
+    role: translation
+    text: Flügelaltar
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801536
+  - lang: it
+    role: translation
+    text: altare a portelle
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801536
+  - lang: es
+    role: translation
+    text: altar alado
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801536
+  - lang: ja
+    role: translation
+    text: 有翼祭壇
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801536
+  - lang: zh
+    role: translation
+    text: 有翼祭坛画
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801536
+  - lang: ru
+    role: translation
+    text: Складень
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801536
+category: object type
+definition: form of altarpiece
+wikidata_id: Q11801536
+metadata:
+  sources: [Wikidata Q11801536 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2e/AarhusDom-02-2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:AarhusDom-02-2.jpg
+    license: CC BY-SA 3.0 de
+    credit: Jürgen Howaldt
+identifiers:
+  gnd: 4125041-2
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q11801536

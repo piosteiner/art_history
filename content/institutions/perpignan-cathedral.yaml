@@ -1,0 +1,76 @@
+public_id: 116976
+name: Perpignan Cathedral
+names:
+  - lang: fr
+    role: translation
+    text: cathédrale Saint-Jean-Baptiste de Perpignan
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2942355
+  - lang: de
+    role: translation
+    text: Kathedrale von Perpignan
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2942355
+  - lang: it
+    role: translation
+    text: cattedrale di Perpignano
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2942355
+  - lang: es
+    role: translation
+    text: Catedral de San Juan Bautista de Perpiñán
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2942355
+  - lang: ja
+    role: translation
+    text: ペルピニャン大聖堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2942355
+  - lang: zh
+    role: translation
+    text: 佩皮尼昂主教座堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2942355
+  - lang: ru
+    role: translation
+    text: Перпиньянский кафедральный собор
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2942355
+kind: cathedral
+founded: 1324
+place: perpignan
+location: [2.89694, 42.70056]
+wikidata_id: Q2942355
+metadata:
+  sources: [Wikidata Q2942355 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c0/Perpignan-Cathedrale-02.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Perpignan-Cathedrale-02.JPG
+    license: CC BY-SA 3.0
+    credit: LeZibou
+identifiers:
+  gnd: 4398519-1
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q2942355
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q2942355
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q2942355
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q2942355

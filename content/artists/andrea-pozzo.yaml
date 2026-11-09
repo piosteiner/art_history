@@ -1,0 +1,129 @@
+public_id: 116922
+name: Andrea Pozzo
+given_name: Andrea
+family_name: Pozzo
+names:
+  - text: Padre Andreas
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - text: Andreas Puteus
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - text: Andrea Pozzi
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - text: Andrea del Pozzo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - text: Padre Andreas Puteus
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - text: Andrea Putens
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - text: Pozzo Andrea dal
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - text: Andrea Puteus
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - text: Cavalieri Andrea Pozzi
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - text: André Pozzi
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - text: Padre Pozzi
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - text: P. Pozzi Gesuita
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - text: Le Pere del Pozzo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - text: Padre Pozzo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - text: Cavalieri Pozzi
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - text: andrea dal pozzo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - text: A. Pozzi
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - text: Padre Poudzy
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - lang: ja
+    role: translation
+    text: アンドレア・ポッツォ
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - lang: zh
+    role: translation
+    text: 安德烈亞·波佐
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - lang: ko
+    role: translation
+    text: 안드레아 포초
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+  - lang: ru
+    role: translation
+    text: Андреа Поццо
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q380103
+birth: 1642-11-30
+death: 1709-08-31
+wikidata_id: Q380103
+metadata:
+  sources: [Wikidata Q380103 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/47/Andrea_Pozzo%2C_autoportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Andrea_Pozzo,_autoportrait.jpg
+    license: Public domain
+    credit: Andrea Pozzo
+identifiers:
+  bnf: 13335288q
+  gnd: "118741691"
+  idref: "035769041"
+  kulturnav: d812bfda-ad59-4adb-97c6-4b722dc0d0a5
+  lc: n82006092
+  rkd: "64616"
+  ulan: "500028698"
+  viaf: "59230796"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q380103
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q380103

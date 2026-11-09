@@ -1,0 +1,118 @@
+public_id: 117081
+title_lang: de
+title: Gerokreuz
+names:
+  - text: Gero Crucifix
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q653601
+  - lang: en
+    role: original
+    text: Gero Cross
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q653601
+  - lang: nl
+    role: translation
+    text: Kruis van Gero
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q653601
+  - lang: fr
+    role: translation
+    text: Croix de Gero
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q653601
+  - lang: de
+    role: translation
+    text: Gerokreuz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q653601
+  - lang: it
+    role: translation
+    text: Croce di Gerone
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q653601
+  - lang: es
+    role: translation
+    text: Cruz de Gero
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q653601
+  - lang: ja
+    role: translation
+    text: ゲロ大司教の十字架磔刑像
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q653601
+  - lang: zh
+    role: translation
+    text: 格罗十字架
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q653601
+  - lang: en
+    role: translation
+    text: Gero Crucifix (Gero Cross)
+created: 960/970
+created_label: c. 960
+created_span: uncertain
+medium: Eichenholz, farbig gefasst
+materials: [oakwood, oak]
+dimensions: [288, 198, 25.2]
+institution: cologne-cathedral
+web_url: https://www.koelner-dom.de/rundgang/bedeutendewerke/gero-kreuz/info/
+wikidata_id: Q653601
+metadata:
+  sources: [Wikidata Q653601 (retrieved 2026-11-09)]
+relationships:
+  - type: depicts_person
+    to: person/jesus-christ
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q653601
+  - type: associated_with
+    to: movement/carolingian-art
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q653601
+  - type: associated_with
+    to: movement/ottonian-dynasty
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q653601
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Gerokreuz_full_20050903.jpg/1280px-Gerokreuz_full_20050903.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gerokreuz_full_20050903.jpg
+    license: CC BY-SA 3.0
+    credit: No machine-readable author provided. Elya assumed (based on copyright claims).
+identifiers:
+  gnd: 4253726-5
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 21
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q653601
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q653601
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 21
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q653601
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q653601

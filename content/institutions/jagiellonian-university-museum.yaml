@@ -1,0 +1,50 @@
+public_id: 117006
+name: Jagiellonian University Museum
+names:
+  - lang: fr
+    role: translation
+    text: musée de l'Université Jagellon
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11787234
+  - lang: ru
+    role: translation
+    text: Музей Ягеллонского университета
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11787234
+founded: 1964
+place: krakow
+location: [19.93376, 50.06174]
+address: ul. Jagiellonska 15, 31-010 Kraków
+website_url: https://www.maius.uj.edu.pl
+wikidata_id: Q11787234
+metadata:
+  sources: [Wikidata Q11787234 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Jagiellonian_University%2C_Collegium_Maius_facade%2C_15_Jagiello%C5%84ska_street%2C_Old_Town%2C_Krak%C3%B3w%2C_Poland.jpg/1280px-Jagiellonian_University%2C_Collegium_Maius_facade%2C_15_Jagiello%C5%84ska_street%2C_Old_Town%2C_Krak%C3%B3w%2C_Poland.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jagiellonian_University,_Collegium_Maius_facade,_15_Jagiello%C5%84ska_street,_Old_Town,_Krak%C3%B3w,_Poland.jpg
+    license: CC BY-SA 4.0
+    credit: Zygmunt Put
+identifiers:
+  bnf: "121932927"
+  idref: 16893437X
+  lc: n87908275
+  viaf: "123582394"
+sources:
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q11787234
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q11787234
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q11787234
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q11787234

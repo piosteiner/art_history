@@ -1,0 +1,85 @@
+public_id: 117051
+name: Staatliche Graphische Sammlung München
+names:
+  - text: National Graphic Arts Collection
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q464404
+  - lang: nl
+    role: translation
+    text: Staatliche Graphische Sammlung
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q464404
+  - lang: fr
+    role: translation
+    text: Staatliche graphische Sammlung. Munich, Allemagne
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q464404
+  - lang: it
+    role: translation
+    text: Staatliche Graphische Sammlung Monaco di Baviera
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q464404
+  - lang: ja
+    role: translation
+    text: ミュンヘン市立グラフィックアート美術館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q464404
+  - lang: zh
+    role: translation
+    text: 慕尼黑州立版画陈列馆
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q464404
+  - lang: ru
+    role: translation
+    text: Государственное графическое собрание
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q464404
+kind: museum
+founded: 1874
+place: munich
+location: [11.56667, 48.14444]
+address: Katharina-von-Bora-Straße 10, 80333 München
+website_url: http://www.sgsm.eu
+wikidata_id: Q464404
+metadata:
+  sources: [Wikidata Q464404 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/M%C3%BCnchen_Museum_f%C3%BCr_Abg%C3%BCsse_klassischer_Bildwerke_%28Geb%C3%A4uder%C3%BCckseite%29.JPG/1280px-M%C3%BCnchen_Museum_f%C3%BCr_Abg%C3%BCsse_klassischer_Bildwerke_%28Geb%C3%A4uder%C3%BCckseite%29.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_Museum_f%C3%BCr_Abg%C3%BCsse_klassischer_Bildwerke_(Geb%C3%A4uder%C3%BCckseite).JPG
+    license: CC BY-SA 3.0
+    credit: Maximilian Dörrbecker (Chumwa)
+identifiers:
+  bnf: 12018944p
+  gnd: 2022332-8
+  idref: "028331877"
+  lc: n50061237
+  ulan: "500303339"
+  viaf: "128576301"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q464404
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q464404
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q464404
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q464404
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q464404

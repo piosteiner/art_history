@@ -1,0 +1,41 @@
+public_id: 117224
+title_lang: de
+title: Waldplan von Nürnberg (Nürnberger Reichswald)
+creator: erhard-etzlaub
+created: c. 1516
+created_span: uncertain
+kind: map
+medium: Pergament
+materials: [parchment]
+dimensions: [61.5, 71.5]
+institution: germanisches-nationalmuseum
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5f/N%C3%BCrnberg_1516_Waldplan.png
+    source_url: https://commons.wikimedia.org/wiki/File:N%C3%BCrnberg_1516_Waldplan.png
+    license: Public domain
+    credit: Wikimedia Commons
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 29
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 29
+  creator:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 29
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 29
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 29
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 29
+  created_span:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 29
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 29

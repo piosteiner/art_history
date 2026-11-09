@@ -1,0 +1,73 @@
+public_id: 116899
+name: boxwood
+names:
+  - text: box wood
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q851751
+  - text: box
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q851751
+  - lang: nl
+    role: translation
+    text: buxushout
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q851751
+  - lang: fr
+    role: translation
+    text: bois de buis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q851751
+  - lang: de
+    role: translation
+    text: Buchsbaumholz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q851751
+  - lang: it
+    role: translation
+    text: legno di bosso
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q851751
+  - lang: es
+    role: translation
+    text: boj
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q851751
+  - lang: ja
+    role: translation
+    text: ツゲ材
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q851751
+  - lang: zh
+    role: translation
+    text: 黄杨木
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q851751
+  - lang: ru
+    role: translation
+    text: самшит
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q851751
+category: material
+parent: wood
+definition: type of wood
+wikidata_id: Q851751
+metadata:
+  sources: [Wikidata Q851751 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Bouquet_Holder_with_Figures_of_Adam_and_Eve_LACMA_52.20.5.jpg/1280px-Bouquet_Holder_with_Figures_of_Adam_and_Eve_LACMA_52.20.5.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bouquet_Holder_with_Figures_of_Adam_and_Eve_LACMA_52.20.5.jpg
+    license: Public domain
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q851751

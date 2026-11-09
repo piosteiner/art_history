@@ -8,6 +8,8 @@ materials: [paper]
 dimensions: [23.2, 38.1]
 dimensions_note: horizontal ōban
 institution: tokyo-national-museum
+inventory_number: A-10569-2953
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10569-2953
 description_md: "From the series that made [[artist/utagawa-hiroshige]] (1797–1858) famous almost overnight, after his journey along the Tōkaidō in 1832: two ships with lowered sails, having just crossed the seventeen miles of Ise Bay from Miya, before Kuwana Castle; the left half has a distinctly Western feeling, the ground tilting to the horizon line. [[source/history-of-japanese-art|pp. 292–293, fig. 334]]"
 relationships:
   - type: associated_with
@@ -15,6 +17,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 292–293, fig. 334
+images:
+  - url: https://colbase.nich.go.jp/media/tnm/A-10569-2953/image/slideshow_s/A-10569-2953_E0177622.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/tnm/A-10569-2953
+    license: CC BY 4.0
+    credit: Tokyo National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -37,3 +44,7 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: pp. 292–293, fig. 334
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-10569-2953
+      source: colbase
+      accessed: 2026-11-08

@@ -1,0 +1,60 @@
+public_id: 117080
+title_lang: de
+title: Gebetbuch Karls des Kahlen
+names:
+  - lang: nl
+    role: translation
+    text: Gebedenboek van Karel de Kale
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q17321865
+  - lang: fr
+    role: translation
+    text: Livre de prières de Charles le Chauve
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q17321865
+  - lang: de
+    role: translation
+    text: Gebetbuch Karls des Kahlen
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q17321865
+  - lang: en
+    role: translation
+    text: Gebetbuch Karls des Kahlen - Schatzkammer München
+created: 846/869
+created_label: c. 800
+created_span: uncertain
+medium: Handschrift
+dimensions: [14.2, 11.5, 3.7]
+institution: munich-residence
+inventory_number: ResMü Schk 4 WL
+wikidata_id: Q17321865
+metadata:
+  sources: [Wikidata Q17321865 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b4/Gebetbuch_Karls_des_Kahlen_-_Schatzkammer_M%C3%BCnchen_f6v_%28Incipit_liber_orationum%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gebetbuch_Karls_des_Kahlen_-_Schatzkammer_M%C3%BCnchen_f6v_(Incipit_liber_orationum).jpg
+    license: Public domain
+    credit: Anonymous
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 54
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q17321865
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q17321865
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q17321865
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q17321865

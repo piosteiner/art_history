@@ -5,9 +5,21 @@ names:
   - lang: en
     role: translation
     text: Saint Matthew and the Angel
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q25412019
   - lang: de
     role: translation
     text: Der Evangelist Matthäus mit dem Engel
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q25412019
+  - lang: de
+    role: translation
+    text: Der hl. Matthäus und der Engel
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q25412019
 parent: ciclo-di-san-matteo
 part_number: "2"
 parts_count: 2
@@ -16,9 +28,20 @@ created: 1602
 kind: versions
 description_md: "The altarpiece of the [[institution/contarelli-chapel]], in two versions. The [[artwork/san-matteo-e-langelo-prima-versione]] was installed on 26 May 1602[[source/wikipedia-en-paintings-in-the-contarelli-chapel|“This canvas was installed on 26 May of the same year, the day of Pentecost” (after Salvy 2008, p. 134)]] and replaced by the [[artwork/san-matteo-e-langelo-seconda-versione]] in February 1603[[source/wikipedia-en-paintings-in-the-contarelli-chapel|“which was accepted and installed in February 1603” (after Ebert-Schifferer 2009, p. 130)]]. Whether the first was rejected because the saint lacked decorum, as Giovan Pietro Bellori wrote[[source/wikipedia-it-san-matteo-e-langelo-caravaggio-roma|„fu tolto via dai preti, con dire che quella figura non aveva decoro, né aspetto di Santo“ (Bellori 1672, p. 219)]] — Giovanni Baglione says only that nobody had liked it[[source/wikipedia-it-san-matteo-e-langelo-caravaggio-roma|„Il quadro d'un certo San Matteo, che prima aveva fatto per quell'altare di San Luigi, e non era veruno piaciuto“ (Baglione 1642, p. 137)]] —, is doubted: it may only have been hung for a while until the chapel was finished[[source/wikipedia-it-san-matteo-e-langelo-caravaggio-roma|„la prima versione del San Matteo e l'Angelo era una pala d'altare provvisoria“ (after Spezzaferro 1980 and 2002)]]. Vincenzo Giustiniani bought it[[source/smb-der-evangelist-matthaeus-caravaggio|„Er kaufte das Bild der Kongregation mit der Bedingung ab, daß Caravaggio die Gelegenheit bekommt, …“]]; it is known today only from photographs[[source/wikipedia-en-saint-matthew-and-the-angel|“is now known only from black-and-white photographs and enhanced color reproductions”]]."
 wikidata_id: Q25412019
+metadata:
+  sources: [Wikidata Q25412019 (retrieved 2026-11-08)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Caravaggio_saint_matthew_DLI_06163009908.jpg/1280px-Caravaggio_saint_matthew_DLI_06163009908.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Caravaggio_saint_matthew_DLI_06163009908.jpg
+    license: Public domain
+    credit: Caravaggio
 sources:
   created:
     - url: https://en.wikipedia.org/wiki/Paintings_in_the_Contarelli_Chapel
       note: “In 1602, Caravaggio was commissioned to replace Cobaert’s statue with an altarpiece depicting Saint Matthew and the Angel. This canvas was installed on 26 May of the same year, the day of Pentecost, but was again rejected by the commissioners; Caravaggio immediately proposed another version, The Inspiration of Saint Matthew, which was accepted and installed in February 1603”
       source: wikipedia-en-paintings-in-the-contarelli-chapel
       accessed: 2026-10-27
+  creator:
+    - accessed: 2026-11-08
+      property: P170
+      wikidata: Q25412019

@@ -1,0 +1,60 @@
+public_id: 117086
+title_lang: de
+title: Grosse Goldene Madonna
+names:
+  - lang: fr
+    role: translation
+    text: Madone dorée
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q117838042
+  - lang: de
+    role: translation
+    text: Grosse Goldene Madonna
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q117838042
+  - lang: en
+    role: translation
+    text: Golden Madonna
+created: 11th century
+created_span: uncertain
+medium: Lindenholz, Goldblech, Reste originaler Fassung
+materials: [gemstone, lime, gold leaf, gold]
+dimensions: [56.6, 25.5, 25.2]
+institution: dommuseum-hildesheim
+inventory_number: DS 82
+wikidata_id: Q117838042
+metadata:
+  sources: [Wikidata Q117838042 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Grosse_Goldene_Madonna_%28Hildesheim%29_001.jpg/1280px-Grosse_Goldene_Madonna_%28Hildesheim%29_001.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Grosse_Goldene_Madonna_(Hildesheim)_001.jpg
+    license: CC BY-SA 4.0
+    credit: UNTERMVIERENBERGE-2
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 16
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q117838042
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q117838042
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 16
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q117838042
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q117838042
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q117838042

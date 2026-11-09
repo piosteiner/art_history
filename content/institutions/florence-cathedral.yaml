@@ -1,0 +1,107 @@
+public_id: 116978
+name: Florence Cathedral
+names:
+  - kind: nickname
+    lang: it
+    role: alternative
+    text: Duomo di Firenze
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191739
+  - text: Cathedral of Our Lady of the Flower, Duomo in Florence
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191739
+  - lang: nl
+    role: translation
+    text: Kathedraal van Florence
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191739
+  - lang: fr
+    role: translation
+    text: cathédrale Santa Maria del Fiore
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191739
+  - lang: de
+    role: translation
+    text: Kathedrale von Florenz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191739
+  - lang: it
+    role: translation
+    text: Cattedrale di Santa Maria del Fiore
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191739
+  - lang: es
+    role: translation
+    text: Santa María del Fiore
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191739
+  - lang: ja
+    role: translation
+    text: サンタ・マリア・デル・フィオーレ大聖堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191739
+  - lang: zh
+    role: translation
+    text: 聖母百花聖殿
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191739
+  - lang: ko
+    role: translation
+    text: 피렌체 대성당
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191739
+  - lang: ru
+    role: translation
+    text: Санта-Мария-дель-Фьоре
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191739
+kind: cathedral
+founded: 1296-09-15
+place: florence
+location: [11.25694, 43.77306]
+address: Piazza del Duomo
+website_url: https://www.duomofirenze.it/
+wikidata_id: Q191739
+metadata:
+  sources: [Wikidata Q191739 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Florence_Duomo_from_Michelangelo_hill.jpg/1280px-Florence_Duomo_from_Michelangelo_hill.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Florence_Duomo_from_Michelangelo_hill.jpg
+    license: CC BY-SA 4.0
+    credit: Petar Milošević
+identifiers:
+  gnd: 4097998-2
+  lc: n79027132
+  viaf: "125475260"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q191739
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q191739
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q191739
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q191739
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q191739

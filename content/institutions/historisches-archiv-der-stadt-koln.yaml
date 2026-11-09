@@ -1,0 +1,106 @@
+public_id: 117004
+name: Historial Archive with Rhenish Picture Archive
+names:
+  - text: Cologne municipal archives
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q664138
+  - text: City Archives Cologne
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q664138
+  - text: Historical Archive of the City of Cologne
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q664138
+  - lang: nl
+    role: translation
+    text: Historisch archief van de stad Keulen
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q664138
+  - lang: fr
+    role: translation
+    text: Archives historiques de la ville de Cologne
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q664138
+  - lang: de
+    role: translation
+    text: Historisches Archiv mit Rheinischem Bildarchiv
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q664138
+  - lang: it
+    role: translation
+    text: Archivio storico della Città di Colonia
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q664138
+  - lang: es
+    role: translation
+    text: Archivo Histórico de la ciudad de Colonia
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q664138
+  - lang: ja
+    role: translation
+    text: ケルン市歴史文書館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q664138
+  - lang: zh
+    role: translation
+    text: 科隆歷史檔案館暨萊茵蘭照片檔案館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q664138
+  - lang: ru
+    role: translation
+    text: Исторический архив Кёльна
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q664138
+kind: collection
+founded: 1857
+place: cologne
+location: [6.93749, 50.92444]
+address: Eifelwall 5, 50674 Köln
+website_url: https://historischesarchivkoeln.de/
+collection_url: http://hastk.bibdia-hosts.de/opac/index.S
+wikidata_id: Q664138
+metadata:
+  sources: [Wikidata Q664138 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Archivgeb%C3%A4ude_Eifelwall%2C_Historisches_Archiv_der_Stadt_K%C3%B6ln_und_Rheinisches_Bildarchiv-4546.jpg/1280px-Archivgeb%C3%A4ude_Eifelwall%2C_Historisches_Archiv_der_Stadt_K%C3%B6ln_und_Rheinisches_Bildarchiv-4546.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Archivgeb%C3%A4ude_Eifelwall,_Historisches_Archiv_der_Stadt_K%C3%B6ln_und_Rheinisches_Bildarchiv-4546.jpg
+    license: CC BY-SA 4.0
+    credit: Raimond Spekking
+identifiers:
+  bnf: "127449796"
+  gnd: "1374800732"
+  idref: 02777709X
+  lc: n50047753
+  ulan: "500305256"
+  viaf: "143699716"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q664138
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q664138
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q664138
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q664138
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q664138

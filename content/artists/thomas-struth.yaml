@@ -1,0 +1,41 @@
+public_id: 116964
+name: Thomas Struth
+given_name: Thomas
+family_name: Struth
+names:
+  - lang: ja
+    role: translation
+    text: トーマス・シュトゥルート
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q522783
+  - lang: ru
+    role: translation
+    text: Томас Штрут
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q522783
+birth: 1954-10-11
+wikidata_id: Q522783
+metadata:
+  sources: [Wikidata Q522783 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Struth-thomas-mus-ludwig-koeln-080316.jpg/1280px-Struth-thomas-mus-ludwig-koeln-080316.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Struth-thomas-mus-ludwig-koeln-080316.jpg
+    license: CC BY-SA 4.0
+    credit: Hpschaefer www.reserv-art.de
+identifiers:
+  bnf: "124489471"
+  gnd: "118840592"
+  idref: "033642524"
+  kulturnav: 104b649b-be44-45b5-8cea-ca2df02172a1
+  lc: n88075589
+  nlk: KAC200600002
+  rkd: "97816"
+  ulan: "500037064"
+  viaf: "46855433"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q522783

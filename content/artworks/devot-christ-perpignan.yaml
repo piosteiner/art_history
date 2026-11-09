@@ -1,0 +1,39 @@
+public_id: 117204
+title_lang: fr
+title: Dévot Christ
+names:
+  - lang: en
+    role: translation
+    text: Christ en croix dit Dévot Christ (cathédrale de Perpignan)
+created: 1307
+medium: limewood, remains of two layers of polychromy
+materials: [lime]
+dimensions: [152]
+dimensions_note: 152 cm (Korpus), 242 cm (Kreuz)
+institution: perpignan-cathedral
+wikidata_id: Q29240071
+metadata:
+  sources: [Wikidata Q29240071 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/56/Perpignan_Cathedral_Chapelle_D%C3%A9vot_Christ%282%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Perpignan_Cathedral_Chapelle_D%C3%A9vot_Christ(2).jpg
+    license: CC BY-SA 4.0
+    credit: Palauenc05
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q29240071
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q29240071
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024)
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024)

@@ -1,0 +1,118 @@
+public_id: 117033
+name: MAK – Museum of Applied Arts
+names:
+  - text: Museum of Applied Arts, Vienna
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478455
+  - text: Österreichisches Museum für angewandte Kunst
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478455
+  - text: MAK
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478455
+  - text: Museum für angewandte Kunst Wien
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478455
+  - text: The Museum of Applied Arts
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478455
+  - lang: nl
+    role: translation
+    text: MAK – Museum voor Toegepaste Kunst
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478455
+  - lang: fr
+    role: translation
+    text: MAK – Musée autrichien d’arts appliqués / art contemporain
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478455
+  - lang: de
+    role: translation
+    text: MAK - Museum für angewandte Kunst
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478455
+  - lang: it
+    role: translation
+    text: Museum für angewandte Kunst
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478455
+  - lang: es
+    role: translation
+    text: Museo de Artes Aplicadas de Viena
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478455
+  - lang: ja
+    role: translation
+    text: オーストリア応用美術博物館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478455
+  - lang: zh
+    role: translation
+    text: 应用艺术博物馆
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478455
+  - lang: ko
+    role: translation
+    text: 응용미술관
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478455
+  - lang: ru
+    role: translation
+    text: Австрийский музей прикладного искусства
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478455
+kind: museum
+founded: 1864
+place: vienna
+location: [16.38137, 48.20767]
+address: Stubenring 5, 1010 Wien
+website_url: https://www.mak.at
+collection_url: https://sammlung.mak.at/en/collection_online
+wikidata_id: Q478455
+metadata:
+  sources: [Wikidata Q478455 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/M.A.K._Vienna_June_2006_017.jpg/1280px-M.A.K._Vienna_June_2006_017.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:M.A.K._Vienna_June_2006_017.jpg
+    license: CC BY 2.5
+    credit: Gryffindor
+identifiers:
+  gnd: 10174144-3
+  lc: n80095576
+  ulan: "500213938"
+  viaf: "131256403"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q478455
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q478455
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q478455
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q478455
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q478455

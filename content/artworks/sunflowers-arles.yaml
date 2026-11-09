@@ -10,6 +10,8 @@ names:
         note: “Vincent painted a total of five large canvases with sunflowers in a vase, with three shades of yellow ‘and nothing else’ … they communicated ‘gratitude’”
         source: van-gogh-museum-collection
         accessed: 2026-10-22
+      - accessed: 2026-11-08
+        wikidata: Q157541
   - lang: nl
     role: translation
     text: Zonnebloemen
@@ -18,6 +20,8 @@ names:
         note: “Vincent painted a total of five large canvases with sunflowers in a vase, with three shades of yellow ‘and nothing else’ … they communicated ‘gratitude’”
         source: van-gogh-museum-collection
         accessed: 2026-10-22
+      - accessed: 2026-11-08
+        wikidata: Q157541
   - lang: de
     role: translation
     text: Sonnenblumen
@@ -26,6 +30,62 @@ names:
         note: “Vincent painted a total of five large canvases with sunflowers in a vase, with three shades of yellow ‘and nothing else’ … they communicated ‘gratitude’”
         source: van-gogh-museum-collection
         accessed: 2026-10-22
+      - accessed: 2026-11-08
+        wikidata: Q157541
+  - text: Sunflowers (Van Gogh)
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q157541
+  - text: Sunflowers Van Gogh series
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q157541
+  - text: Sunflowers Van Gogh
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q157541
+  - lang: fr
+    role: translation
+    text: Les Tournesols
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q157541
+  - lang: it
+    role: translation
+    text: Girasoli
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q157541
+  - lang: es
+    role: translation
+    text: Los girasoles
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q157541
+  - lang: ja
+    role: translation
+    text: ひまわり
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q157541
+  - lang: zh
+    role: translation
+    text: 向日葵
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q157541
+  - lang: ko
+    role: translation
+    text: 해바라기
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q157541
+  - lang: ru
+    role: translation
+    text: Подсолнухи
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q157541
 parts_count: 7
 creator: vincent-van-gogh
 created: 1888-08/1889-01
@@ -37,6 +97,22 @@ description_md: |-
 
   Five are in museums[[source/nationalgallery-sunflowers-ng3863|“one of five versions of Sunflowers on display in museums and galleries across the world, although Van Gogh painted seven versions in total between 1888 and 1889”]]: the [[artwork/sunflowers-national-gallery|National Gallery]] in London and the [[artwork/sunflowers-munich|Neue Pinakothek]] in Munich (August 1888), the [[artwork/sunflowers-van-gogh-museum|Van Gogh Museum]] in Amsterdam, the Philadelphia Museum of Art and the Sompo Museum of Art in Tokyo (January 1889). *Three Sunflowers in a Vase* (August 1888) is in a private collection; *Five Sunflowers* (August 1888) was destroyed in a US air raid on Japan on 6 August 1945[[source/wikipedia-en-sunflowers-van-gogh-series|“(F453) (private collection)” · “(F459) … (destroyed by U.S. air raid in Japan on 6 August 1945)”]].
 wikidata_id: Q157541
+metadata:
+  sources: [Wikidata Q157541 (retrieved 2026-11-08)]
+relationships:
+  - type: associated_with
+    to: movement/post-impressionism
+    sources:
+      - accessed: 2026-11-08
+        property: P135
+        wikidata: Q157541
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Vincent_Willem_van_Gogh_127.jpg/1280px-Vincent_Willem_van_Gogh_127.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_Willem_van_Gogh_127.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+identifiers:
+  gnd: 7643174-5
 sources:
   kind:
     - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
@@ -58,3 +134,6 @@ sources:
       note: (F459) … destroyed by U.S. air raid in Japan on 6 August 1945 … (F453) (private collection) … the repetitions of January 1889
       source: wikipedia-en-sunflowers-van-gogh-series
       accessed: 2026-10-22
+    - accessed: 2026-11-08
+      property: P170
+      wikidata: Q157541

@@ -1,4 +1,5 @@
 public_id: 114992
+title_lang: de
 title: Crocifissione
 names:
   - lang: de
@@ -42,6 +43,8 @@ on_loan_since: 1946
 provenance_status: c_indications
 provenance_status_note: indications of a cultural property confiscated as a result of Nazi persecution
 wikidata_id: Q131585413
+metadata:
+  sources: [Wikidata Q131585413 (retrieved 2026-11-08)]
 provenance:
   - owner: institution/galerie-bachstitz
     role: dealer
@@ -99,6 +102,9 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/1505/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P571
+      wikidata: Q131585413
   creator:
     - url: https://collection.kunsthaus.ch/de/collection/item/1505/
       source: kunsthaus-zurich-sammlung-online
@@ -115,10 +121,16 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/1505/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P195
+      wikidata: Q131585413
   inventory_number:
     - url: https://collection.kunsthaus.ch/de/collection/item/1505/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P217
+      wikidata: Q131585413
   attribution_label:
     - url: https://collection.kunsthaus.ch/de/collection/item/1505/
       source: kunsthaus-zurich-sammlung-online

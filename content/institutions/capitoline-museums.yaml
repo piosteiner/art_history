@@ -1,0 +1,113 @@
+public_id: 117022
+name: Capitoline Museums
+names:
+  - text: The Capitoline Museums
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q333906
+  - text: Italian Musei Capitolini
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q333906
+  - text: Capitolini Museum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q333906
+  - text: Capitoline Museums Rome
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q333906
+  - text: Capitoline Museums in Rome
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q333906
+  - lang: nl
+    role: translation
+    text: Musei Capitolini
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q333906
+  - lang: fr
+    role: translation
+    text: musées du Capitole
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q333906
+  - lang: de
+    role: translation
+    text: Kapitolinische Museen
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q333906
+  - lang: es
+    role: translation
+    text: Museos Capitolinos
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q333906
+  - lang: ja
+    role: translation
+    text: カピトリーノ美術館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q333906
+  - lang: zh
+    role: translation
+    text: 卡比托利欧博物馆
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q333906
+  - lang: ko
+    role: translation
+    text: 카피톨리노 박물관
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q333906
+  - lang: ru
+    role: translation
+    text: Капитолийские музеи
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q333906
+kind: museum
+founded: 1471
+place: rome
+location: [12.48278, 41.89306]
+address: Piazza del Campidoglio, 1 - Roma
+website_url: https://museicapitolini.org/
+wikidata_id: Q333906
+metadata:
+  sources: [Wikidata Q333906 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Palazzo_dei_Conservatori_in_Rome_%282%29.jpg/1280px-Palazzo_dei_Conservatori_in_Rome_%282%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Palazzo_dei_Conservatori_in_Rome_(2).jpg
+    license: CC BY-SA 4.0
+    credit: Tournasol7
+identifiers:
+  bnf: "121420049"
+  gnd: 1214261-X
+  idref: "029890012"
+  lc: n79126898
+  ulan: "500403545"
+  viaf: "171285001"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q333906
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q333906
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q333906
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q333906
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q333906

@@ -1,0 +1,60 @@
+public_id: 117102
+title_lang: de
+title: Psalter Ludwigs des Deutschen
+names:
+  - lang: nl
+    role: translation
+    text: Psalter van Lodewijk de Duitser
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2115604
+  - lang: fr
+    role: translation
+    text: Psautier de Louis le Germanique
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2115604
+  - lang: de
+    role: translation
+    text: Psalter Ludwigs des Deutschen
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2115604
+  - lang: en
+    role: translation
+    text: Psalter Ludwigs des Deutschen - SB Berlin Theol. lat. fol. 58
+created: c. 850
+created_span: uncertain
+medium: Handschrift
+institution: staatsbibliothek-zu-berlin
+inventory_number: Ms. theol. lat. fol. 58
+wikidata_id: Q2115604
+metadata:
+  sources: [Wikidata Q2115604 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/abbey-of-saint-bertin
+    sources:
+      - accessed: 2026-11-09
+        property: P1071
+        wikidata: Q2115604
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Berlin%2C_Staatsbibl.%2C_Ms._theol._lat._fol._58_%283r%29.jpg/1280px-Berlin%2C_Staatsbibl.%2C_Ms._theol._lat._fol._58_%283r%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Berlin,_Staatsbibl.,_Ms._theol._lat._fol._58_(3r).jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 56
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 56
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q2115604
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q2115604

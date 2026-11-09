@@ -1,0 +1,38 @@
+public_id: 117265
+title_lang: de
+title: Gabelkreuz aus St. Georg
+created: c. 1380
+created_span: uncertain
+kind: sculpture
+medium: Nussbaum, zwei Farbfassungen
+materials: [walnut wood]
+dimensions: [166]
+dimensions_note: 166 cm (Korpus)
+institution: st-georg-koln
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/89/Gabelkreuz_St._Georg_K%C3%B6ln.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gabelkreuz_St._Georg_K%C3%B6ln.jpg
+    license: CC BY-SA 4.0
+    credit: Michael Wittwer, Wikimedia Commons
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 65
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 65
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 65
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 65
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 65
+  created_span:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 65
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 65

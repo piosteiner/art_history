@@ -1,0 +1,74 @@
+public_id: 117068
+title_lang: de
+title: Kostbares Evangeliar (Bernwardevangeliar)
+names:
+  - lang: fr
+    role: translation
+    text: Évangiles de Bernward
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1785164
+  - lang: de
+    role: translation
+    text: Kostbares Bernwardevangeliar
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1785164
+  - lang: it
+    role: translation
+    text: Evangeliario di Bernoardo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1785164
+  - lang: ru
+    role: translation
+    text: Драгоценное Евангелие Бернварда
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1785164
+  - lang: en
+    role: translation
+    text: Rich Bernward Gospels
+created: c. 1015
+created_span: uncertain
+medium: Handschrift, Pergament
+materials: [ivory, wood, silver, gemstone, parchment]
+dimensions: [28, 20]
+institution: dommuseum-hildesheim
+inventory_number: DS 18
+wikidata_id: Q1785164
+metadata:
+  sources: [Wikidata Q1785164 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Bernward-Evangeliar_Hildesheim_Cover.jpg/1280px-Bernward-Evangeliar_Hildesheim_Cover.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bernward-Evangeliar_Hildesheim_Cover.jpg
+    license: CC BY-SA 3.0
+    credit: Friedrichsen
+identifiers:
+  gnd: 4308864-8
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1785164
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q1785164
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024)
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q1785164
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q1785164
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q1785164

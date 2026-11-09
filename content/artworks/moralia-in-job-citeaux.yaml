@@ -1,0 +1,86 @@
+public_id: 117206
+title_lang: la
+title: Moralia in Job (Dijon, Ms. 173)
+names:
+  - text: Dijon, BM, Ms. 168
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q16665250
+  - text: Dijon, BM, Ms. 170
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q16665250
+  - text: Dijon, BM, Ms. 169
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q16665250
+  - lang: fr
+    role: translation
+    text: Morales sur Job de Cîteaux
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q16665250
+  - lang: it
+    role: translation
+    text: Moralia in Job di Cîteaux
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q16665250
+  - lang: es
+    role: translation
+    text: Moralia in Job de Císter
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q16665250
+  - lang: zh
+    role: translation
+    text: 约伯的道德
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q16665250
+  - lang: ru
+    role: translation
+    text: Нравственные толкования к Книге Иова из Сито
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q16665250
+  - lang: en
+    role: translation
+    text: Cîteaux Moralia in Job
+creator: citeaux-abbey
+created: 1111
+medium: manuscript
+materials: [parchment]
+institution: bibliotheque-municipale-de-dijon
+inventory_number: Mss. 168-170 ; Ms. 170
+wikidata_id: Q16665250
+metadata:
+  sources: [Wikidata Q16665250 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e7/Moralia_in_Job_MS_dragonslayer.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Moralia_in_Job_MS_dragonslayer.jpg
+    license: Public domain
+    credit: Illustrator unknown
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 3 (10.10.2024), Folie 34
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 3 (10.10.2024), Folie 34
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q16665250
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q16665250
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q16665250
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q16665250

@@ -1,0 +1,23 @@
+public_id: 117170
+name: Battista Sforza
+given_name: Battista
+family_name: Sforza
+kind: person
+birth: 1446
+death: 1472-07-15
+wikidata_id: Q810972
+metadata:
+  sources: [Wikidata Q810972 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q810972
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q810972
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q810972

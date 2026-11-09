@@ -26,6 +26,22 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 241–242, fig. 276
+  - type: designated_as
+    to: term/important-cultural-property-japan
+    period: 1901-03-27/
+    notes_md: 園城寺
+    sources:
+      - url: https://online.bunka.go.jp/db/heritages/detail/146531
+        source: bunka-online
+        accessed: 2026-11-08
+  - type: designated_as
+    to: term/national-treasure-japan
+    period: 1952-11-22/
+    notes_md: 園城寺
+    sources:
+      - url: https://online.bunka.go.jp/db/heritages/detail/146531
+        source: bunka-online
+        accessed: 2026-11-08
 sources:
   kind:
     - source: history-of-japanese-art

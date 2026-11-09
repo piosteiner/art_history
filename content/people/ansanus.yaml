@@ -1,0 +1,21 @@
+public_id: 117175
+name: Ansanus
+kind: person
+birth: 284
+death: 304-12-01
+wikidata_id: Q2176980
+metadata:
+  sources: [Wikidata Q2176980 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q2176980
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q2176980
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q2176980

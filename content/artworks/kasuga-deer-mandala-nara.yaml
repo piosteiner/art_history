@@ -7,6 +7,8 @@ medium: Colour on silk
 materials: [silk]
 dimensions: [76.5, 40.5]
 institution: nara-national-museum
+inventory_number: 1182-0
+web_url: https://colbase.nich.go.jp/collection_items/narahaku/1182-0
 description_md: Instead of a pilgrimage route, a large white deer appears on a cloud above the torii of the Kasuga Shrine, the Fujiwara family shrine at Nara; from its saddle rises a branch of sakaki framed by a mirror, on which the five [[kami]] of Kasuga sit in their Buddhist forms ([[honji-suijaku]]). The mirror recalls Amaterasu and the two Fujiwara ancestors who coaxed her out of her cave; the deer, sacred on Mount Mikasa even before Buddhism, became the emblem of the Kasuga deities. [[source/history-of-japanese-art|p. 234, fig. 271]]
 wikidata_id: Q112703088
 relationships:
@@ -15,6 +17,18 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 234, fig. 271
+  - type: designated_as
+    to: term/important-cultural-property-japan
+    notes_md: Nara National Museum
+    sources:
+      - url: https://colbase.nich.go.jp/collection_items/narahaku/1182-0
+        source: colbase
+        accessed: 2026-11-08
+images:
+  - url: https://colbase.nich.go.jp/media/narahaku/1182-0/image/slideshow_s/H046218.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/narahaku/1182-0
+    license: CC BY 4.0
+    credit: Nara National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -34,3 +48,7 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: p. 234, fig. 271
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/narahaku/1182-0
+      source: colbase
+      accessed: 2026-11-08

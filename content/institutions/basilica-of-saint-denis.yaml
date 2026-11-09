@@ -1,0 +1,94 @@
+public_id: 116960
+name: Basilica of Saint-Denis
+names:
+  - text: Basilica of St Denis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184407
+  - lang: nl
+    role: translation
+    text: Kathedraal van Saint-Denis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184407
+  - lang: fr
+    role: translation
+    text: basilique Saint-Denis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184407
+  - lang: de
+    role: translation
+    text: Kathedrale von Saint-Denis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184407
+  - lang: it
+    role: translation
+    text: basilica di Saint-Denis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184407
+  - lang: es
+    role: translation
+    text: basílica de Saint-Denis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184407
+  - lang: ja
+    role: translation
+    text: サン＝ドニ大聖堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184407
+  - lang: zh
+    role: translation
+    text: 圣德尼圣殿
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184407
+  - lang: ko
+    role: translation
+    text: 생드니 대성당
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184407
+  - lang: ru
+    role: translation
+    text: аббатство Сен-Дени
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184407
+kind: cathedral
+founded: 12th century
+place: saint-denis-2
+location: [2.35972, 48.93556]
+website_url: http://www.saint-denis-basilique.fr/
+wikidata_id: Q184407
+metadata:
+  sources: [Wikidata Q184407 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Basilique_St_Denis_fa%C3%A7ade_ouest_St_Denis_Seine_St_Denis_20.jpg/1280px-Basilique_St_Denis_fa%C3%A7ade_ouest_St_Denis_Seine_St_Denis_20.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Basilique_St_Denis_fa%C3%A7ade_ouest_St_Denis_Seine_St_Denis_20.jpg
+    license: CC BY-SA 4.0
+    credit: Chabe01
+identifiers:
+  gnd: 4206278-0
+  viaf: "125013999"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q184407
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q184407
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q184407
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q184407

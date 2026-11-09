@@ -1,0 +1,16 @@
+public_id: 117083
+name: Carolingian art
+kind: movement
+period: 701/800
+wikidata_id: Q614082
+metadata:
+  sources: [Wikidata Q614082 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q614082
+  period:
+    - accessed: 2026-11-09
+      property: P580
+      wikidata: Q614082

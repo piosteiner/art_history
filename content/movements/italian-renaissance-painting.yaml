@@ -1,0 +1,11 @@
+public_id: 117150
+name: Italian Renaissance painting
+kind: movement
+wikidata_id: Q2914470
+metadata:
+  sources: [Wikidata Q2914470 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q2914470

@@ -36,6 +36,13 @@ web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/ac91e2c3-fa92-4a
 wikidata_id: Q59689172
 metadata:
   sources: [Wikidata Q59689172 (retrieved 2026-11-03)]
+relationships:
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-08
+        property: P135
+        wikidata: Q59689172
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Leonardo-socorro_de_brisach.jpg/1280px-Leonardo-socorro_de_brisach.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Leonardo-socorro_de_brisach.jpg
@@ -50,6 +57,9 @@ sources:
     - url: https://www.museodelprado.es/aprende/enciclopedia/voz/leonardo-jusepe/a1eb37e0-7ca5-4ae9-8df2-ab98d153c7e3
       source: museo-del-prado-coleccion
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P571
+      wikidata: Q59689172
   creator:
     - accessed: 2026-11-03
       property: P170

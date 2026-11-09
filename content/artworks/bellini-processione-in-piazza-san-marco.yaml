@@ -1,0 +1,125 @@
+public_id: 117146
+title_lang: it
+title: Processione in piazza San Marco
+names:
+  - lang: fr
+    role: translation
+    text: Procession sur la Place Saint-Marc
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3922376
+  - lang: de
+    role: translation
+    text: Prozession auf dem Markusplatz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3922376
+  - lang: it
+    role: translation
+    text: Processione in piazza San Marco
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3922376
+  - lang: ja
+    role: translation
+    text: サン・マルコ広場の行列
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3922376
+  - lang: zh
+    role: translation
+    text: 聖馬可廣場的儀仗隊
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3922376
+  - lang: ru
+    role: translation
+    text: Процессия на площади Святого Марка
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3922376
+  - lang: en
+    role: translation
+    text: Procession in St. Mark's Square
+parent: true-cross-cycle
+part_number: "4"
+creator: gentile-bellini
+created: 1490s
+created_span: uncertain
+medium: oil on canvas
+materials: [canvas]
+dimensions: [367, 745]
+institution: gallerie-dell-accademia-venice
+inventory_number: "567"
+web_url: http://www.wga.hu/frames-e.html?/html/b/bellini/gentile/miracl1.html
+wikidata_id: Q3922376
+metadata:
+  sources: [Wikidata Q3922376 (retrieved 2026-11-09)]
+relationships:
+  - type: depicts
+    to: place/doge-s-palace
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q3922376
+  - type: depicts
+    to: place/piazza-san-marco
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q3922376
+  - type: depicts
+    to: place/procuratie
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q3922376
+  - type: associated_with
+    to: movement/early-renaissance
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q3922376
+  - type: associated_with
+    to: movement/italian-renaissance-painting
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q3922376
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Accademia_-_Procession_in_piazza_San_Marco_by_Gentile_Bellini.jpg/1280px-Accademia_-_Procession_in_piazza_San_Marco_by_Gentile_Bellini.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Accademia_-_Procession_in_piazza_San_Marco_by_Gentile_Bellini.jpg
+    license: Public domain
+    credit: Gentile Bellini
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 9 (28.11.2024)
+  parent:
+    - accessed: 2026-11-09
+      property: P179
+      wikidata: Q3922376
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q3922376
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q3922376
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q3922376
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q3922376
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q3922376
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q3922376

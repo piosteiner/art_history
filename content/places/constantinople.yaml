@@ -1,0 +1,16 @@
+public_id: 117093
+name: Constantinople
+kind: settlement
+location: [28.97602, 41.01224]
+wikidata_id: Q16869
+metadata:
+  sources: [Wikidata Q16869 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q16869
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q16869

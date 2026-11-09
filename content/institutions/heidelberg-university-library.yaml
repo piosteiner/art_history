@@ -1,0 +1,82 @@
+public_id: 117057
+name: Heidelberg University Library
+names:
+  - text: UB Heidelberg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q880794
+  - text: Universitätsbibliothek Heidelberg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q880794
+  - text: Heidelberg UB
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q880794
+  - lang: fr
+    role: translation
+    text: bibliothèque de l'Université d'Heidelberg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q880794
+  - lang: es
+    role: translation
+    text: Biblioteca de la Universidad de Heidelberg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q880794
+  - lang: ja
+    role: translation
+    text: ハイデルベルク大学図書館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q880794
+  - lang: zh
+    role: translation
+    text: 海德堡大学图书馆
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q880794
+  - lang: ru
+    role: translation
+    text: Гейдельбергская университетская библиотека
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q880794
+founded: 1901
+place: heidelberg
+location: [8.70583, 49.4097]
+address: Plöck 107-109
+website_url: https://www.ub.uni-heidelberg.de/
+collection_url: https://www.ub.uni-heidelberg.de/Englisch/helios/digi/digilit.html
+wikidata_id: Q880794
+metadata:
+  sources: [Wikidata Q880794 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/ca/Heidelberg_-_Universit%C3%A4tsbibliothek.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Heidelberg_-_Universit%C3%A4tsbibliothek.jpg
+    license: CC BY-SA 3.0
+    credit: Stateofthings. Original uploader was Stateofthings at de.wikipedia
+identifiers:
+  bnf: "118679979"
+  gnd: 2002498-8
+  idref: "027412431"
+  lc: n50031389
+  viaf: "311589602"
+sources:
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q880794
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q880794
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q880794
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q880794

@@ -1,0 +1,81 @@
+public_id: 117069
+title_lang: de
+title: Bernwardstür
+names:
+  - lang: fr
+    role: translation
+    text: portes de Bernward
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q826947
+  - lang: de
+    role: translation
+    text: Bernwardstür
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q826947
+  - lang: it
+    role: translation
+    text: Porta Bernward
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q826947
+  - lang: ja
+    role: translation
+    text: ベルンヴァルトの扉
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q826947
+  - lang: zh
+    role: translation
+    text: 伯恩瓦尔德之门
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q826947
+  - lang: en
+    role: translation
+    text: Bernward Doors
+created: c. 1015
+created_span: uncertain
+medium: Bronze
+materials: [bronze]
+dimensions: [472]
+institution: hildesheim-cathedral
+location: [9.94639, 52.1489]
+wikidata_id: Q826947
+metadata:
+  sources: [Wikidata Q826947 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/hildesheim
+    period: c. 1015
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1e/Bernwardst%C3%BCr.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bernwardst%C3%BCr.jpg
+    license: Attribution
+    credit: Bischöfliche Pressestelle Hildesheim (bph)
+identifiers:
+  gnd: 4120999-0
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q826947
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q826947
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q826947
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q826947
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024)

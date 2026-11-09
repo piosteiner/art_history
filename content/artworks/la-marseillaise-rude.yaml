@@ -32,6 +32,18 @@ relationships:
   - type: created_in
     to: place/paris
     period: 1830s
+  - type: associated_with
+    to: movement/neoclassicism
+    sources:
+      - accessed: 2026-11-08
+        property: P135
+        wikidata: Q28061748
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-11-08
+        property: P135
+        wikidata: Q28061748
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Paris_July_2011-16a.jpg/1280px-Paris_July_2011-16a.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Paris_July_2011-16a.jpg

@@ -1,0 +1,16 @@
+public_id: 117079
+name: Munich Residence
+kind: palace
+founded: 1385
+wikidata_id: Q686548
+metadata:
+  sources: [Wikidata Q686548 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q686548
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q686548

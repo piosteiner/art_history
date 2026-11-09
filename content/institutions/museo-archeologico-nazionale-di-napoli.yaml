@@ -1,0 +1,112 @@
+public_id: 117023
+name: Naples National Archaeological Museum
+names:
+  - text: Museo Archeologico Nazionale
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637248
+  - text: Muséo Borbonico
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637248
+  - text: Museo Archaeologico Nazionale
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637248
+  - text: National Archaeological Museum, Naples
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637248
+  - text: National Archaeological Museum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637248
+  - lang: nl
+    role: translation
+    text: Museo Archeologico Nazionale di Napoli
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637248
+  - lang: fr
+    role: translation
+    text: musée archéologique national de Naples
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637248
+  - lang: de
+    role: translation
+    text: Archäologisches Nationalmuseum Neapel
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637248
+  - lang: es
+    role: translation
+    text: Museo Arqueológico Nacional de Nápoles
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637248
+  - lang: ja
+    role: translation
+    text: ナポリ国立考古学博物館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637248
+  - lang: zh
+    role: translation
+    text: 那不勒斯國立考古博物館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637248
+  - lang: ko
+    role: translation
+    text: 나폴리 국립 고고학 박물관
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637248
+  - lang: ru
+    role: translation
+    text: Национальный археологический музей Неаполя
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637248
+kind: museum
+founded: 1777
+place: naples
+location: [14.25056, 40.85361]
+address: Piazza Museo 19
+website_url: https://www.museoarcheologiconapoli.it
+wikidata_id: Q637248
+metadata:
+  sources: [Wikidata Q637248 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/01/Museo_Archeologico_Nazionale_di_Napoli_-_panoramio_%281%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Museo_Archeologico_Nazionale_di_Napoli_-_panoramio_(1).jpg
+    license: CC BY 3.0
+    credit: Mister No
+identifiers:
+  bnf: 11866601c
+  gnd: 1053223-7
+  idref: "028556127"
+  lc: n80044962
+  viaf: "134828205"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q637248
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q637248
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q637248
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q637248
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q637248

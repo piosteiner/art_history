@@ -31,6 +31,13 @@ inventory_number: LM 637
 wikidata_id: Q28797107
 metadata:
   sources: [Wikidata Q28797107 (retrieved 2026-10-19)]
+relationships:
+  - type: depicts_person
+    to: artist/richard-gerstl
+    sources:
+      - accessed: 2026-11-08
+        property: P180
+        wikidata: Q28797107
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Richard_Gerstl_-_Semi-Nude_Self-Portrait_-_Google_Art_Project.jpg/1280px-Richard_Gerstl_-_Semi-Nude_Self-Portrait_-_Google_Art_Project.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Richard_Gerstl_-_Semi-Nude_Self-Portrait_-_Google_Art_Project.jpg

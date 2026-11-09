@@ -1,0 +1,137 @@
+public_id: 116925
+name: Domenico Ghirlandaio
+given_name: Domenico
+family_name: Ghirlandaio
+names:
+  - kind: birth
+    lang: it
+    role: former
+    text: Domenico Bigordi
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: Domenico Ghirlandai
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: Ghirlandaio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: Domenico Bigordi Ghirlandaio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: Domenico Ghirlandajo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: Domenico Il Ghirlandaio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: Bigordi Ghirlandaio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: Il Ghirlandaio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: Domenico Grillandajo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: Domenico Currado Bigordi
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: Domenico del Grillandaio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: Dom. Ghirlandaio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: Ghirlandai
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: Grillandari
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: D. Ghirlandaio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: Dominico Ghirlandaio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: Domenico, Il Ghirlandajo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: Ghirlandajo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - text: Domenico di Tommaso Curradi di Doffo Bigordi
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - lang: ja
+    role: translation
+    text: ドメニコ・ギルランダイオ
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - lang: zh
+    role: translation
+    text: 多梅尼科·吉兰达约
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - lang: ko
+    role: translation
+    text: 도메니코 기를란다이오
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+  - lang: ru
+    role: translation
+    text: Доменико Гирландайо
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q191423
+birth: 1448-06-11
+death: 1494-01-20
+wikidata_id: Q191423
+metadata:
+  sources: [Wikidata Q191423 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/39/Pala_degli_innocenti%2C_ghirlandaio%2C_autoritratto%2C_dettaglio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pala_degli_innocenti,_ghirlandaio,_autoritratto,_dettaglio.jpg
+    license: Public domain
+    credit: Domenico Ghirlandaio
+identifiers:
+  bnf: 11962868d
+  gnd: "118717227"
+  idref: 02762868X
+  kulturnav: 6197c024-3901-46b9-8d95-2370c92a01e1
+  lc: n83319383
+  nlk: KAC202292915
+  rkd: "31361"
+  ulan: "500115228"
+  viaf: "61554420"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q191423
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q191423

@@ -1,0 +1,61 @@
+public_id: 117040
+name: Santa Maria in Organo
+names:
+  - lang: fr
+    role: translation
+    text: Santa Maria in Organo de Vérone
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1052661
+  - lang: it
+    role: translation
+    text: chiesa di Santa Maria in Organo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1052661
+  - lang: ja
+    role: translation
+    text: オレガノのサンタ・マリア修道院
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1052661
+  - lang: zh
+    role: translation
+    text: 奥尔加诺圣玛利亚堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1052661
+  - lang: ru
+    role: translation
+    text: Санта-Мария-ин-Органо
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1052661
+kind: church
+place: verona
+location: [11.00278, 45.44694]
+wikidata_id: Q1052661
+metadata:
+  sources: [Wikidata Q1052661 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c8/716VeronaSMariaInOrgano.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:716VeronaSMariaInOrgano.JPG
+    license: CC BY-SA 3.0
+    credit: Geobia
+identifiers:
+  gnd: 4540913-4
+  lc: n2005044655
+  viaf: "142104379"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1052661
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1052661
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1052661

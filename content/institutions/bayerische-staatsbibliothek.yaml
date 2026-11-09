@@ -1,0 +1,87 @@
+public_id: 116962
+name: Bavarian State Library
+names:
+  - text: BSB
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q256507
+  - text: Bayerische Staatsbibliothek
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q256507
+  - text: Bibliotheca Regia Monacensis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q256507
+  - text: bsb-muenchen.de
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q256507
+  - lang: es
+    role: translation
+    text: Biblioteca Estatal de Baviera
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q256507
+  - lang: ja
+    role: translation
+    text: バイエルン州立図書館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q256507
+  - lang: zh
+    role: translation
+    text: 巴伐利亞國家圖書館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q256507
+  - lang: ko
+    role: translation
+    text: 바이에른 주립 도서관
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q256507
+  - lang: ru
+    role: translation
+    text: Баварская государственная библиотека
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q256507
+founded: 1558
+place: munich
+location: [11.58061, 48.14739]
+address: Ludwigstraße 16
+website_url: https://www.bsb-muenchen.de/
+collection_url: http://opacplus.bsb-muenchen.de
+wikidata_id: Q256507
+metadata:
+  sources: [Wikidata Q256507 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/ff/Bayerische_Staatsbibliothek_-_M%C3%BCnchen_-_Westansicht.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bayerische_Staatsbibliothek_-_M%C3%BCnchen_-_Westansicht.jpg
+    license: CC BY-SA 3.0
+    credit: Digital cat
+identifiers:
+  bnf: "118713900"
+  gnd: 2031351-2
+  idref: "026471531"
+  lc: n50064518
+  ulan: "500303271"
+  viaf: "129557156"
+sources:
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q256507
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q256507
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q256507
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q256507

@@ -1,0 +1,71 @@
+public_id: 117104
+title_lang: de
+title: Genoveva in der Waldeinsamkeit
+names:
+  - text: Genoveva in the forest solitude
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q124317979
+  - lang: en
+    role: translation
+    text: Genoveva in the forest seclusion
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q124317979
+creator: ludwig-richter
+created: 1841
+medium: Öl auf Leinwand
+materials: [oil paint, canvas]
+dimensions: [116.5, 100.5]
+institution: hamburger-kunsthalle
+inventory_number: HK-1236
+web_url: https://online-sammlung.hamburger-kunsthalle.de/en/objekt/HK-1236/genoveva-in-der-waldeinsamkeit
+wikidata_id: Q124317979
+metadata:
+  sources: [Wikidata Q124317979 (retrieved 2026-11-09)]
+relationships:
+  - type: depicts
+    to: place/nadelohr
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q124317979
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q124317979
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Ludwig_Richter_-_Genoveva_in_der_Waldeinsamkeit_%281841%29.jpg/1280px-Ludwig_Richter_-_Genoveva_in_der_Waldeinsamkeit_%281841%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ludwig_Richter_-_Genoveva_in_der_Waldeinsamkeit_(1841).jpg
+    license: Public domain
+    credit: Ludwig Richter
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q124317979
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q124317979
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q124317979
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q124317979
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q124317979
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q124317979

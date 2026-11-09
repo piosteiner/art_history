@@ -1,0 +1,72 @@
+public_id: 117202
+title_lang: fr
+title: Chapelle Cardon (tabernacle marial)
+names:
+  - lang: en
+    role: translation
+    text: Chapelle Cardon
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q27005745
+created: 1400/1425
+created_label: c. 15th century
+created_span: uncertain
+medium: wood, painted and gilded
+materials: [oil paint, wood, gold]
+dimensions: [99, 59]
+institution: department-of-paintings-of-the-louvre
+inventory_number: RF 2314
+web_url: http://www.louvre.fr/oeuvre-notices/chapelle-cardon
+wikidata_id: Q27005745
+metadata:
+  sources: [Wikidata Q27005745 (retrieved 2026-11-09)]
+relationships:
+  - type: depicts
+    to: event/nativity-of-jesus
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q27005745
+  - type: depicts_person
+    to: person/herod-antipas
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q27005745
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q27005745
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Reno_inferiore%2C_altarolo_cardon%2C_inizio_del_XV_sec.JPG/1280px-Reno_inferiore%2C_altarolo_cardon%2C_inizio_del_XV_sec.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Reno_inferiore,_altarolo_cardon,_inizio_del_XV_sec.JPG
+    license: Public domain
+    credit: Sailko
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024), Folie 21
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q27005745
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q27005745
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024), Folie 21
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q27005745
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q27005745
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q27005745

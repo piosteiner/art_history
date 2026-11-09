@@ -1,0 +1,93 @@
+public_id: 116917
+name: lost-wax casting
+names:
+  - text: cire-perdue process
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q765814
+  - text: investment casting
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q765814
+  - text: lost-wax process
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q765814
+  - text: precision casting
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q765814
+  - text: lost wax
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q765814
+  - lang: nl
+    role: translation
+    text: verloren was
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q765814
+  - lang: fr
+    role: translation
+    text: cire perdue
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q765814
+  - lang: de
+    role: translation
+    text: Wachsausschmelzverfahren
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q765814
+  - lang: it
+    role: translation
+    text: fusione a cera persa
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q765814
+  - lang: es
+    role: translation
+    text: cera perdida
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q765814
+  - lang: ja
+    role: translation
+    text: ロストワックス鋳造
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q765814
+  - lang: zh
+    role: translation
+    text: 失蜡法
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q765814
+  - lang: ko
+    role: translation
+    text: 로스트 왁스 주조
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q765814
+  - lang: ru
+    role: translation
+    text: литьё по выплавляемым моделям
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q765814
+category: technique
+definition: process by which a duplicate sculpture (often metal) is cast from an original sculpture
+wikidata_id: Q765814
+metadata:
+  sources: [Wikidata Q765814 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Lost_Wax-Model_of_apple_in_plaster.jpg/1280px-Lost_Wax-Model_of_apple_in_plaster.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lost_Wax-Model_of_apple_in_plaster.jpg
+    license: CC BY-SA 2.5
+    credit: José-Manuel Benito
+identifiers:
+  gnd: 4188794-3
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q765814

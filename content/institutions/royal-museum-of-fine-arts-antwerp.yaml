@@ -1,0 +1,108 @@
+public_id: 117011
+name: Royal Museum of Fine Arts Antwerp
+names:
+  - kind: nickname
+    lang: nl-BE
+    role: alternative
+    text: Schoonste Museum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1471477
+  - text: KMSKA
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1471477
+  - text: Koninklijk Museum voor Schone Kunsten Antwerpen
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1471477
+  - lang: fr
+    role: translation
+    text: musée royal des Beaux-Arts d'Anvers
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1471477
+  - lang: de
+    role: translation
+    text: Königliches Museum der Schönen Künste
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1471477
+  - lang: it
+    role: translation
+    text: Museo reale di belle arti di Anversa
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1471477
+  - lang: es
+    role: translation
+    text: Museo Real de Bellas Artes de Amberes
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1471477
+  - lang: ja
+    role: translation
+    text: アントワープ王立美術館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1471477
+  - lang: zh
+    role: translation
+    text: 皇家安特衛普美術館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1471477
+  - lang: ko
+    role: translation
+    text: 안트베르펜 왕립미술관
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1471477
+  - lang: ru
+    role: translation
+    text: Королевский музей изящных искусств
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1471477
+kind: museum
+founded: 1810-05-05
+place: antwerp
+location: [4.39435, 51.20882]
+address: Leopold De Waelplaats
+website_url: https://www.kmska.be
+collection_url: https://kmska.be/nl/overzicht/de-collectie
+wikidata_id: Q1471477
+metadata:
+  sources: [Wikidata Q1471477 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Koninklijk_Museum_voor_Schone_Kunsten_Antwerpen_mit_Ank%C3%BCndigung_der_Wiederer%C3%B6ffnung.jpg/1280px-Koninklijk_Museum_voor_Schone_Kunsten_Antwerpen_mit_Ank%C3%BCndigung_der_Wiederer%C3%B6ffnung.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Koninklijk_Museum_voor_Schone_Kunsten_Antwerpen_mit_Ank%C3%BCndigung_der_Wiederer%C3%B6ffnung.jpg
+    license: CC BY-SA 4.0
+    credit: Ricardalovesmonuments
+identifiers:
+  gnd: 1007583-5
+  idref: "028538374"
+  lc: n80093417
+  ulan: "500238802"
+  viaf: "147950785"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1471477
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1471477
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q1471477
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1471477
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1471477

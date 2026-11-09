@@ -1,0 +1,27 @@
+public_id: 116979
+name: Master Heinrich of Constance
+names:
+  - lang: nl
+    role: translation
+    text: Meister Heinrich von Konstanz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1918295
+birth: 13th century
+death: 14th century
+wikidata_id: Q1918295
+metadata:
+  sources: [Wikidata Q1918295 (retrieved 2026-11-09)]
+identifiers:
+  gnd: "1130193764"
+  sikart: "12561985"
+  viaf: "5835149296163480670006"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q1918295
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q1918295

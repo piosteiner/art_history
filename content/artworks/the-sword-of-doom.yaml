@@ -54,6 +54,13 @@ kind: film
 wikidata_id: Q1637652
 metadata:
   sources: [Wikidata Q1637652 (retrieved 2026-11-06)]
+relationships:
+  - type: created_in_polity
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-08
+        property: P495
+        wikidata: Q1637652
 sources:
   kind:
     - property: P31

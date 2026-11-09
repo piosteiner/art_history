@@ -1,0 +1,36 @@
+public_id: 117250
+title_lang: de
+title: Wolfstür
+created: c. 800
+created_span: uncertain
+medium: Bronze
+materials: [bronze]
+dimensions: [392.3, 134.5]
+institution: aachen-cathedral
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/79/AC_Dom_Wolfst%C3%BCr_Detail.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:AC_Dom_Wolfst%C3%BCr_Detail.jpg
+    license: CC BY-SA 3.0
+    credit: Geolina163, Wikimedia Commons
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 30
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 30
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 30
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 30
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 30
+  created_span:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 30
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 30

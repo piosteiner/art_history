@@ -1,0 +1,18 @@
+public_id: 117156
+name: Maestro Venceslao
+given_name: Maestro
+family_name: Venceslao
+birth: 1352
+death: 1411
+wikidata_id: Q3842947
+metadata:
+  sources: [Wikidata Q3842947 (retrieved 2026-11-09)]
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q3842947
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q3842947

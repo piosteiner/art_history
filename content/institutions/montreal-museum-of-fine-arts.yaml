@@ -1,0 +1,95 @@
+public_id: 117020
+name: Montreal Museum of Fine Arts
+names:
+  - text: Musée des beaux-arts de Montréal
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q860812
+  - text: MBAM
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q860812
+  - text: The Montreal Museum of Fine Arts
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q860812
+  - text: MMFA
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q860812
+  - lang: it
+    role: translation
+    text: Museo delle belle arti di Montréal
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q860812
+  - lang: es
+    role: translation
+    text: Museo de bellas artes de Montreal
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q860812
+  - lang: ja
+    role: translation
+    text: モントリオール美術館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q860812
+  - lang: zh
+    role: translation
+    text: 蒙特婁美術館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q860812
+  - lang: ko
+    role: translation
+    text: 몬트리올 미술관
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q860812
+  - lang: ru
+    role: translation
+    text: Монреальский музей изящных искусств
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q860812
+kind: museum
+founded: 1860
+place: montreal
+location: [-73.57976, 45.49915]
+address: 1380 Sherbrooke St W, Montreal, QC H3G 1J5
+website_url: https://www.mbam.qc.ca/fr/
+wikidata_id: Q860812
+metadata:
+  sources: [Wikidata Q860812 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Museum_of_Fine_Arts%2C_main_entrance%2C_Montreal.jpg/1280px-Museum_of_Fine_Arts%2C_main_entrance%2C_Montreal.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Museum_of_Fine_Arts,_main_entrance,_Montreal.jpg
+    license: CC BY-SA 4.0
+    credit: Thomas Ledl
+identifiers:
+  gnd: 61247-9
+  lc: n81082776
+  ulan: "500229324"
+  viaf: "125405650"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q860812
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q860812
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q860812
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q860812
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q860812

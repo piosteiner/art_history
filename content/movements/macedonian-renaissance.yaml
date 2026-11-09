@@ -1,0 +1,16 @@
+public_id: 117094
+name: Macedonian Renaissance
+kind: movement
+period: 867
+wikidata_id: Q1400430
+metadata:
+  sources: [Wikidata Q1400430 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1400430
+  period:
+    - accessed: 2026-11-09
+      property: P580
+      wikidata: Q1400430

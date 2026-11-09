@@ -1,0 +1,18 @@
+public_id: 117183
+name: Francesco di Giorgio
+given_name: Francesco
+family_name: di Giorgio
+birth: 1439-10-02
+death: 1501-12-09
+wikidata_id: Q434425
+metadata:
+  sources: [Wikidata Q434425 (retrieved 2026-11-09)]
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q434425
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q434425

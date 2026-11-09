@@ -31,6 +31,13 @@ web_url: https://collection.kunsthaus.ch/de/collection/item/2192/
 wikidata_id: Q62057590
 metadata:
   sources: [Wikidata Q62057590 (retrieved 2026-10-09)]
+relationships:
+  - type: associated_with
+    to: movement/belgian-surrealism
+    sources:
+      - accessed: 2026-11-08
+        property: P135
+        wikidata: Q62057590
 provenance:
   - owner_label: unknown
     acquired: 1958
@@ -108,10 +115,16 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/2192/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-09
+    - accessed: 2026-11-08
+      property: P571
+      wikidata: Q62057590
   creator:
     - url: https://collection.kunsthaus.ch/de/collection/item/2192/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-09
+    - accessed: 2026-11-08
+      property: P170
+      wikidata: Q62057590
   materials:
     - url: https://collection.kunsthaus.ch/de/collection/item/2192/
       source: kunsthaus-zurich-sammlung-online
@@ -120,11 +133,20 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/2192/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-09
+    - accessed: 2026-11-08
+      property: P2048
+      wikidata: Q62057590
   institution:
     - url: https://collection.kunsthaus.ch/de/collection/item/2192/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-09
+    - accessed: 2026-11-08
+      property: P195
+      wikidata: Q62057590
   inventory_number:
     - url: https://collection.kunsthaus.ch/de/collection/item/2192/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-09
+    - accessed: 2026-11-08
+      property: P217
+      wikidata: Q62057590

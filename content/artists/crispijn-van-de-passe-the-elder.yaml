@@ -1,0 +1,171 @@
+public_id: 116971
+name: Crispijn van de Passe the Elder
+given_name: Crispijn, the Elder
+family_name: van de Passe
+names:
+  - text: Crispijn de Passe (I)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispijn de Passe
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispijn van de Passe
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispijn van de Passe (I)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispijn de Pas
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispijn de Pas (I)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispijn van de Pas
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispijn van de Pas (I)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispin de Pas
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispin de Pas (I)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispin van de Pas
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispin van de Pas (I)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispyn de Pas
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispyn de Pas (I)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispyn van de Pas
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispyn van de Pas (I)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispianus Passaeus
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispianus Passaeus (I)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispin de Passe
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispin de Passe (I)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispin van de Passe
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispin van de Passe (I)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispyn de Passe (I)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispyn van de Passe (I)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispijn de Passe st.
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: B. van den Pas
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - text: Crispin de Passe the Elder
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - lang: fr
+    role: translation
+    text: Crispin de Passe l'Ancien
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - lang: de
+    role: translation
+    text: Crispin de Passe der Ältere
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - lang: ja
+    role: translation
+    text: クリスペイン・デ・パッセ
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - lang: zh
+    role: translation
+    text: 凡·德帕斯家族
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+  - lang: ru
+    role: translation
+    text: Пасс, Криспейн ван де (Старший)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q140096
+birth: c. 1564
+death: 1637-03-06
+wikidata_id: Q140096
+metadata:
+  sources: [Wikidata Q140096 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3a/Self_portrait_of_Crispijn_van_de_Passe_I.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Self_portrait_of_Crispijn_van_de_Passe_I.jpg
+    license: Public domain
+    credit: Crispijn van de Passe I
+identifiers:
+  bnf: "126301084"
+  gnd: "118591924"
+  idref: "060377984"
+  kulturnav: 20549900-62de-423b-b53c-45582f91adbf
+  lc: n85225189
+  rkd: "62016"
+  ulan: "500003330"
+  viaf: "12427453"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q140096
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q140096

@@ -1,0 +1,79 @@
+public_id: 117138
+title: Stavelot Triptych
+names:
+  - lang: nl
+    role: translation
+    text: Stavelot-triptiek
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q7604811
+  - lang: fr
+    role: translation
+    text: triptyque de Stavelot
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q7604811
+  - lang: de
+    role: translation
+    text: Stavelot-Triptychon
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q7604811
+  - lang: it
+    role: translation
+    text: Trittico Stavelot
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q7604811
+  - lang: ja
+    role: translation
+    text: スタヴェロ三連祭壇画
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q7604811
+  - lang: ru
+    role: translation
+    text: Триптих из аббатства Ставло
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q7604811
+created: 1156
+medium: gilt copper, enamel
+materials: [gold, vitreous enamel, wood, copper]
+dimensions: [48.4, 66]
+institution: morgan-library-and-museum
+inventory_number: AZ001
+wikidata_id: Q7604811
+metadata:
+  sources: [Wikidata Q7604811 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Stavelot_Triptych%2C_Abbey_of_Stavelot%2C_Belgium%2C_triptychs_from_Constantinople%2C_c._1100%2C_settings_%26_medallions_c._1156-1158%2C_champleve_enamel%2C_gilt_copper_-_Morgan_Library_%26_Museum_-_New_York_City_-_DSC06534.jpg/1280px-thumbnail.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Stavelot_Triptych,_Abbey_of_Stavelot,_Belgium,_triptychs_from_Constantinople,_c._1100,_settings_%26_medallions_c._1156-1158,_champleve_enamel,_gilt_copper_-_Morgan_Library_%26_Museum_-_New_York_City_-_DSC06534.jpg
+    license: CC0
+    credit: Daderot
+identifiers:
+  gnd: "1215237014"
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q7604811
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q7604811
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q7604811
+  inventory_number:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)

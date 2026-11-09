@@ -1,0 +1,16 @@
+public_id: 117149
+name: Procuratie
+kind: site
+location: [12.33778, 45.43417]
+wikidata_id: Q162796
+metadata:
+  sources: [Wikidata Q162796 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q162796
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q162796

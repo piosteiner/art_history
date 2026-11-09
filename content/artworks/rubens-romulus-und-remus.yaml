@@ -1,0 +1,93 @@
+public_id: 117174
+title_lang: it
+title: Romolo e Remo
+names:
+  - lang: nl
+    role: translation
+    text: De ontdekking van Romulus en Remus
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3940915
+  - lang: fr
+    role: translation
+    text: Romulus et Rémus
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3940915
+  - lang: de
+    role: translation
+    text: Romulus und Remus
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3940915
+  - lang: it
+    role: translation
+    text: Romolo e Remo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3940915
+  - lang: es
+    role: translation
+    text: Rómulo y Remo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3940915
+  - lang: ja
+    role: translation
+    text: ロムルスとレムス (ルーベンス)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3940915
+  - lang: ru
+    role: translation
+    text: Ромул и Рем (картина Рубенса)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3940915
+  - lang: en
+    role: translation
+    text: Romulus and Remus
+creator: peter-paul-rubens
+created: 1615
+medium: oil on canvas
+materials: [oil paint, canvas]
+dimensions: [213, 212]
+institution: capitoline-museums
+inventory_number: PT 144
+web_url: http://www.museicapitolini.org/fr/percorsi/percorsi_per_sale/pinacoteca_capitolina/sala_di_santa_petronilla_la_grande_pittura_del_seicento_a_roma/romolo_e_remo
+wikidata_id: Q3940915
+metadata:
+  sources: [Wikidata Q3940915 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Romulus_and_Remus_by_Peter_Paul_Rubens.jpg/1280px-Romulus_and_Remus_by_Peter_Paul_Rubens.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Romulus_and_Remus_by_Peter_Paul_Rubens.jpg
+    license: CC0
+    credit: Peter Paul Rubens
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 3 (10.10.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q3940915
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q3940915
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q3940915
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q3940915
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q3940915
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q3940915

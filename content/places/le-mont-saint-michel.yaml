@@ -1,0 +1,16 @@
+public_id: 117187
+name: Le Mont Saint-Michel
+kind: settlement
+location: [-1.51028, 48.63583]
+wikidata_id: Q20892
+metadata:
+  sources: [Wikidata Q20892 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q20892
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q20892

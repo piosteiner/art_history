@@ -1,0 +1,55 @@
+public_id: 117216
+title_lang: ca
+title: Mare de Déu de Ger
+names:
+  - lang: es
+    role: translation
+    text: Virgen de Ger
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3815333
+  - lang: en
+    role: translation
+    text: Virgin from Ger
+created: 1150s
+created_span: uncertain
+medium: willow, polychromy over gesso
+materials: [wood, stucco, tempera, willow wood]
+dimensions: [51.8, 20.8, 15.5]
+institution: museu-nacional-d-art-de-catalunya
+inventory_number: 065503-000
+web_url: https://www.museunacional.cat/ca/colleccio/mare-de-deu-de-ger/anonim/065503-000
+wikidata_id: Q3815333
+metadata:
+  sources: [Wikidata Q3815333 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/%28Barcelona%29_Mare_de_D%C3%A9u_de_Ger_-_Museu_Nacional_d%27Art_de_Catalunya.jpg/1280px-%28Barcelona%29_Mare_de_D%C3%A9u_de_Ger_-_Museu_Nacional_d%27Art_de_Catalunya.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:(Barcelona)_Mare_de_D%C3%A9u_de_Ger_-_Museu_Nacional_d%27Art_de_Catalunya.jpg
+    license: Public domain
+    credit: Didier Descouens
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q3815333
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q3815333
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024)
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q3815333
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q3815333
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q3815333

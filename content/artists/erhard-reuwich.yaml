@@ -1,0 +1,83 @@
+public_id: 116929
+name: Erhard Reuwich
+given_name: Erhard
+family_name: Reuwich
+names:
+  - lang: nl
+    role: original
+    text: Erhard Reeuwijk
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q722999
+  - text: Erhard Reich
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q722999
+  - text: Erhard Reeuwich
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q722999
+  - text: Erhard Reeuwyck
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q722999
+  - text: Erhard Renwich
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q722999
+  - text: Erhardus Reuwich
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q722999
+  - text: Erhard Rewick
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q722999
+  - text: Erhard Reuwick
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q722999
+  - text: Erhard Rewich
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q722999
+  - text: Reeuwijk
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q722999
+  - text: Erhard Reeuvyk
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q722999
+  - lang: ja
+    role: translation
+    text: エアハルト・ロイヴィヒ
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q722999
+  - lang: zh
+    role: translation
+    text: 埃哈德·魯威奇
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q722999
+birth: 1445
+death: 1505
+wikidata_id: Q722999
+metadata:
+  sources: [Wikidata Q722999 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 11859897X
+  lc: nr96017010
+  rkd: "65962"
+  ulan: "500009329"
+  viaf: "20473064"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q722999
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q722999

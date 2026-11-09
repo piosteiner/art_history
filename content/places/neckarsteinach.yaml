@@ -1,0 +1,16 @@
+public_id: 117046
+name: Neckarsteinach
+kind: settlement
+location: [8.83736, 49.40778]
+wikidata_id: Q1973855
+metadata:
+  sources: [Wikidata Q1973855 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1973855
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1973855

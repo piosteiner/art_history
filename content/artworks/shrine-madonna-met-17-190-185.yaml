@@ -1,0 +1,61 @@
+public_id: 117136
+title_lang: en
+title: Shrine of the Virgin (Vierge ouvrante)
+names:
+  - lang: de
+    role: translation
+    text: Schreinmadonna
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q29385357
+  - lang: en
+    role: alternative
+    text: Shrine of the Virgin
+created: 1300
+medium: oak, polychromy over gesso
+materials: [oak]
+dimensions: [36.8]
+institution: metropolitan-museum-of-art
+inventory_number: 17.190.185a, b
+wikidata_id: Q29385357
+metadata:
+  sources: [Wikidata Q29385357 (retrieved 2026-11-09)]
+relationships:
+  - type: depicts
+    to: event/nativity-of-jesus
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q29385357
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q29385357
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Shrine_of_the_Virgin_MET_DP266473.jpg/1280px-Shrine_of_the_Virgin_MET_DP266473.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shrine_of_the_Virgin_MET_DP266473.jpg
+    license: CC0
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q29385357
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024)
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024)
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q29385357
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q29385357

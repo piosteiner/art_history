@@ -10,6 +10,13 @@ inventory_number: "242"
 wikidata_id: Q18688622
 metadata:
   sources: [Wikidata Q18688622 (retrieved 2026-10-19)]
+relationships:
+  - type: associated_with
+    to: movement/italian-renaissance
+    sources:
+      - accessed: 2026-11-08
+        property: P135
+        wikidata: Q18688622
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Raphael_-_Head_of_An_Apostle_in_the_Transfiguration%2C_1519-1520_-_Google_Art_Project.jpg/1280px-Raphael_-_Head_of_An_Apostle_in_the_Transfiguration%2C_1519-1520_-_Google_Art_Project.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Raphael_-_Head_of_An_Apostle_in_the_Transfiguration,_1519-1520_-_Google_Art_Project.jpg

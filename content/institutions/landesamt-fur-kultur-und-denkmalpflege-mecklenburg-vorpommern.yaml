@@ -1,0 +1,28 @@
+public_id: 117016
+name: Mecklenburg-Vorpommern (Germany). Landesamt für Kultur und Denkmalpflege
+names:
+  - lang: de
+    role: translation
+    text: Landesamt für Kultur und Denkmalpflege Mecklenburg-Vorpommern
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1788173
+founded: 2006
+place: schwerin
+wikidata_id: Q1788173
+metadata:
+  sources: [Wikidata Q1788173 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 10137095-7
+  idref: "179368222"
+  lc: nb2009022125
+  viaf: "146843616"
+sources:
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1788173
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1788173

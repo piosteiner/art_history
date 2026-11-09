@@ -1,0 +1,96 @@
+public_id: 117139
+title_lang: en
+title: The Vendramin Family
+names:
+  - text: The Vendramin Family, venerating a Relic of the True Cross
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1133103
+  - lang: en
+    role: original
+    text: Portrait of the Vendramin Family
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1133103
+  - lang: fr
+    role: translation
+    text: Portrait de la famille Vendramin
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1133103
+  - lang: de
+    role: translation
+    text: "Votivbild der Familie Vendramin, Szene: Familienmitglieder vor einer Reliquie des Heiligen Kreuzes"
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1133103
+  - lang: it
+    role: translation
+    text: Ritratto votivo della famiglia Vendramin
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1133103
+  - lang: ja
+    role: translation
+    text: ヴェンドラミン家の肖像
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1133103
+  - lang: ru
+    role: translation
+    text: Портрет семьи Вендрамин
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1133103
+creator: titian
+created: 1540/1545
+created_label: c. 1540s
+created_span: uncertain
+medium: oil on canvas
+materials: [oil paint, canvas]
+dimensions: [206.1, 288.5]
+institution: national-gallery-london
+inventory_number: NG4452
+wikidata_id: Q1133103
+metadata:
+  sources: [Wikidata Q1133103 (retrieved 2026-11-09)]
+relationships:
+  - type: associated_with
+    to: movement/venetian-school
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q1133103
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Titian_and_workshop_-_The_Vendramin_Family%2C_venerating_a_Relic_of_the_True_Cross_-_Google_Art_Project.jpg/1280px-Titian_and_workshop_-_The_Vendramin_Family%2C_venerating_a_Relic_of_the_True_Cross_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Titian_and_workshop_-_The_Vendramin_Family,_venerating_a_Relic_of_the_True_Cross_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Titian and workshop
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1133103
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q1133103
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q1133103
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q1133103
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q1133103
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q1133103

@@ -1,0 +1,16 @@
+public_id: 117015
+name: Schwerin
+kind: settlement
+location: [11.415, 53.62889]
+wikidata_id: Q1709
+metadata:
+  sources: [Wikidata Q1709 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1709
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1709

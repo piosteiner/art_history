@@ -8,6 +8,54 @@ names:
     sources:
       - accessed: 2026-10-09
         wikidata: Q21716121
+  - lang: pl
+    role: original
+    text: Na skraju lasu
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q21716121
+  - lang: pl
+    role: original
+    text: Ucieczka do Egiptu
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q21716121
+  - lang: nl
+    role: translation
+    text: De vlucht naar Egypte
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q21716121
+  - lang: fr
+    role: translation
+    text: La fuite en Egypte
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q21716121
+  - lang: it
+    role: translation
+    text: Fuga in Egitto
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q21716121
+  - lang: es
+    role: translation
+    text: Huida a Egipto
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q21716121
+  - lang: zh
+    role: translation
+    text: 逃往埃及
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q21716121
+  - lang: ru
+    role: translation
+    text: Опушка леса (Бегство в Египет)
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q21716121
 creator: jan-brueghel-the-elder
 created: 1610
 materials: [oil paint, copper]

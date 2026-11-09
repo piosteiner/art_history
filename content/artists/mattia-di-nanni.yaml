@@ -1,0 +1,32 @@
+public_id: 116949
+name: Mattia di Giovanni
+given_name: Mattia
+family_name: di Giovanni
+names:
+  - text: Mattia di Nanni
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q45750418
+  - text: Bernacchino
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q45750418
+birth: 1403
+death: 1433
+wikidata_id: Q45750418
+metadata:
+  sources: [Wikidata Q45750418 (retrieved 2026-11-09)]
+identifiers:
+  gnd: "141310529"
+  rkd: "54062"
+  ulan: "500253794"
+  viaf: "311426310"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q45750418
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q45750418

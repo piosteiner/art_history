@@ -1,0 +1,46 @@
+public_id: 116952
+name: Michael Pacher
+given_name: Michael
+family_name: Pacher
+names:
+  - lang: ja
+    role: translation
+    text: ミヒャエル・パッハー
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q463922
+  - lang: zh
+    role: translation
+    text: 米夏埃尔·帕赫
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q463922
+  - lang: ru
+    role: translation
+    text: Михаэль Пахер
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q463922
+birth: 1435
+death: 1498
+wikidata_id: Q463922
+metadata:
+  sources: [Wikidata Q463922 (retrieved 2026-11-09)]
+identifiers:
+  bnf: 13736306r
+  gnd: "118591088"
+  idref: "050830759"
+  kulturnav: 8144a171-8c0e-4ecd-bb01-8648db92acfb
+  lc: n83031491
+  rkd: "61406"
+  ulan: "500025831"
+  viaf: "25394882"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q463922
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q463922

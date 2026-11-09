@@ -1,0 +1,16 @@
+public_id: 117103
+name: Abbey of Saint Bertin
+kind: site
+location: [2.2639, 50.7507]
+wikidata_id: Q334144
+metadata:
+  sources: [Wikidata Q334144 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q334144
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q334144

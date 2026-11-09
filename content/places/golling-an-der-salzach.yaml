@@ -1,0 +1,22 @@
+public_id: 116857
+name: Golling an der Salzach
+kind: settlement
+parent: state-of-salzburg
+country_code: AT
+location: [13.16667, 47.6]
+wikidata_id: Q527800
+metadata:
+  sources: [Wikidata Q527800 (retrieved 2026-11-08)]
+sources:
+  kind:
+    - accessed: 2026-11-08
+      property: P31
+      wikidata: Q527800
+  parent:
+    - accessed: 2026-11-08
+      property: P131
+      wikidata: Q527800
+  location:
+    - accessed: 2026-11-08
+      property: P625
+      wikidata: Q527800

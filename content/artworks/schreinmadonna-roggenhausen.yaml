@@ -1,0 +1,54 @@
+public_id: 117108
+title_lang: de
+title: Schreinmadonna aus Roggenhausen
+names:
+  - lang: en
+    role: translation
+    text: Shrine Madonna
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q115411549
+  - lang: de
+    role: alternative
+    text: Schreinmadonna
+created: c. 1390
+created_span: uncertain
+medium: Lindenholz, farbige Fassung und Vergoldung
+materials: [lime, gold]
+dimensions: [126, 82, 34]
+institution: germanisches-nationalmuseum
+inventory_number: Pl.O.2397
+wikidata_id: Q115411549
+metadata:
+  sources: [Wikidata Q115411549 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Madonna_con_trinit%C3%A0%2C_prussia_occidentale%2C_1390_ca_01.JPG/1280px-Madonna_con_trinit%C3%A0%2C_prussia_occidentale%2C_1390_ca_01.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Madonna_con_trinit%C3%A0,_prussia_occidentale,_1390_ca_01.JPG
+    license: CC BY-SA 3.0
+    credit: sailko
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 92
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q115411549
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q115411549
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 92
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q115411549
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q115411549
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q115411549

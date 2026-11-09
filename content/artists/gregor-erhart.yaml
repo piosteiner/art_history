@@ -1,0 +1,18 @@
+public_id: 117072
+name: Gregor Erhart
+given_name: Gregor
+family_name: Erhart
+birth: c. 1465
+death: 1540
+wikidata_id: Q675137
+metadata:
+  sources: [Wikidata Q675137 (retrieved 2026-11-09)]
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q675137
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q675137

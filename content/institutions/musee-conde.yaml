@@ -1,0 +1,86 @@
+public_id: 117034
+name: Condé Museum
+names:
+  - text: Musée Condé
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1236032
+  - text: Conde Museum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1236032
+  - text: Musee Conde
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1236032
+  - lang: it
+    role: translation
+    text: Museo Condé
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1236032
+  - lang: ja
+    role: translation
+    text: コンデ美術館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1236032
+  - lang: zh
+    role: translation
+    text: 孔蒂博物馆
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1236032
+  - lang: ko
+    role: translation
+    text: 콩데 미술관
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1236032
+  - lang: ru
+    role: translation
+    text: Музей Конде
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1236032
+kind: museum
+founded: 1898-04-17
+place: chantilly
+location: [2.48528, 49.19394]
+address: Château de Chantilly
+website_url: http://musee-conde.fr/fr/accueil
+wikidata_id: Q1236032
+metadata:
+  sources: [Wikidata Q1236032 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Chateau_de_Chantilly_garden.jpg/1280px-Chateau_de_Chantilly_garden.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Chateau_de_Chantilly_garden.jpg
+    license: Public domain
+    credit: Craig Patik (Patik)
+identifiers:
+  bnf: 11864921b
+  gnd: 1033853-6
+  idref: "026393247"
+  lc: n50036805
+  viaf: "139676854"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1236032
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1236032
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q1236032
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1236032
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1236032

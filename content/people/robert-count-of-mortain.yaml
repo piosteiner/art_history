@@ -1,0 +1,21 @@
+public_id: 117198
+name: Robert, Count of Mortain
+kind: person
+birth: 1031
+death: 1095-12-15
+wikidata_id: Q724235
+metadata:
+  sources: [Wikidata Q724235 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q724235
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q724235
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q724235

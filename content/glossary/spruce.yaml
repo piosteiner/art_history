@@ -1,0 +1,78 @@
+public_id: 116896
+name: spruce
+names:
+  - text: spruce wood
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2046308
+  - text: spruce lumber
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2046308
+  - text: Picea wood
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2046308
+  - text: solid spruce
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2046308
+  - lang: nl
+    role: translation
+    text: vuren
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2046308
+  - lang: fr
+    role: translation
+    text: bois d'épicéa
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2046308
+  - lang: de
+    role: translation
+    text: Fichtenholz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2046308
+  - lang: it
+    role: translation
+    text: legno di peccio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2046308
+  - lang: es
+    role: translation
+    text: picea
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2046308
+  - lang: ja
+    role: translation
+    text: ソリッド・スプルース
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2046308
+  - lang: ru
+    role: translation
+    text: ель
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2046308
+category: material
+parent: wood
+definition: type of wood
+wikidata_id: Q2046308
+metadata:
+  sources: [Wikidata Q2046308 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/28/Wood_picea_abies.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wood_picea_abies.jpg
+    license: CC BY-SA 3.0
+    credit: Achim Raschka (talk)
+identifiers:
+  gnd: 4202048-7
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q2046308

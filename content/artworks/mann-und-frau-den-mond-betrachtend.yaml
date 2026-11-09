@@ -1,0 +1,77 @@
+public_id: 117098
+title_lang: de
+title: Mann und Frau in Betrachtung des Mondes
+names:
+  - text: Man and Woman Contemplating the Moon
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3139782
+  - lang: fr
+    role: translation
+    text: Homme et Femme contemplant la Lune
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3139782
+  - lang: it
+    role: translation
+    text: Un uomo e una donna davanti alla luna
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3139782
+  - lang: ru
+    role: translation
+    text: Мужчина и женщина, созерцая Луну
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3139782
+creator: caspar-david-friedrich
+created: c. 1824
+created_span: uncertain
+medium: Öl auf Leinwand
+materials: [oil paint, canvas]
+dimensions: [34, 44]
+institution: alte-nationalgalerie
+inventory_number: A II 887
+wikidata_id: Q3139782
+metadata:
+  sources: [Wikidata Q3139782 (retrieved 2026-11-09)]
+relationships:
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q3139782
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Caspar_David_Friedrich_-_Mann_und_Frau_in_Betrachtung_des_Mondes_%28ca._1824%29.jpg/1280px-Caspar_David_Friedrich_-_Mann_und_Frau_in_Betrachtung_des_Mondes_%28ca._1824%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Mann_und_Frau_in_Betrachtung_des_Mondes_(ca._1824).jpg
+    license: Public domain
+    credit: Caspar David Friedrich
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q3139782
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q3139782
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q3139782
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q3139782
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q3139782
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q3139782

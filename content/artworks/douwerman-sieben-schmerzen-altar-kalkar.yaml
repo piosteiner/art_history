@@ -1,0 +1,39 @@
+public_id: 117076
+title_lang: de
+title: Sieben-Schmerzen-Altar (Marienaltar)
+names:
+  - lang: de
+    role: translation
+    text: Sieben-Schmerzen-Altar (Kalkar)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q118612518
+  - lang: en
+    role: translation
+    text: Autel des sept douleurs Kalkar
+creator: heinrich-douvermann
+created: 1518/1521
+medium: Eichenholz, ungefasst
+materials: [oak]
+wikidata_id: Q118612518
+metadata:
+  sources: [Wikidata Q118612518 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ec/Douverman_-_Autel_des_sept_douleurs_Kalkar.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Douverman_-_Autel_des_sept_douleurs_Kalkar.jpeg
+    license: Public domain
+    credit: Heinrich Douvermann
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024)
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024)
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q118612518
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024)

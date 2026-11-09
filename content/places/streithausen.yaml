@@ -1,0 +1,22 @@
+public_id: 116946
+name: Streithausen
+kind: settlement
+parent: rheinland-pfalz
+country_code: DE
+location: [7.81528, 50.69361]
+wikidata_id: Q646392
+metadata:
+  sources: [Wikidata Q646392 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q646392
+  parent:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q646392
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q646392

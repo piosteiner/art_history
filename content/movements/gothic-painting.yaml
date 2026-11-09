@@ -1,0 +1,11 @@
+public_id: 117176
+name: Gothic painting
+kind: movement
+wikidata_id: Q947129
+metadata:
+  sources: [Wikidata Q947129 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q947129

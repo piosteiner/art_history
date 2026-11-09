@@ -27,6 +27,13 @@ names:
 wikidata_id: Q858244
 metadata:
   sources: [Wikidata Q858244 (retrieved 2026-11-06)]
+relationships:
+  - type: created_in_polity
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-08
+        property: P495
+        wikidata: Q858244
 sources:
   title_status:
     - accessed: 2026-11-06

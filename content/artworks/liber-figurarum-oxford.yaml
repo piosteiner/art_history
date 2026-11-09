@@ -1,0 +1,37 @@
+public_id: 117217
+title_lang: la
+title: Liber Figurarum (Oxford, Corpus Christi College MS 255A)
+names:
+  - lang: en
+    role: translation
+    text: Liber Figurarum
+creator: joachim-of-fiore
+created: c. 1220–1230
+created_span: uncertain
+medium: manuscript
+institution: corpus-christi-college-oxford
+inventory_number: MS 255A
+wikidata_id: Q3831579
+metadata:
+  sources: [Wikidata Q3831579 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/52/Seven-Headed_Dragon._Liber_Figurarum._Southern_Italy._1200s..jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Seven-Headed_Dragon._Liber_Figurarum._Southern_Italy._1200s..jpg
+    license: Public domain
+    credit: Joachim of Fiore., Wikimedia Commons
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 107
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 107
+  creator:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 107
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 107
+  inventory_number:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 107

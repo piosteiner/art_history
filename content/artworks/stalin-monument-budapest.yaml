@@ -44,6 +44,18 @@ relationships:
   - type: created_in
     to: place/budapest
     period: 1951-12
+  - type: depicts_person
+    to: person/joseph-stalin
+    sources:
+      - accessed: 2026-11-08
+        property: P180
+        wikidata: Q543753
+  - type: associated_with
+    to: movement/socialist-realism
+    sources:
+      - accessed: 2026-11-08
+        property: P135
+        wikidata: Q543753
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Szt%C3%A1lin_szobor_Budapest.jpg/1280px-Szt%C3%A1lin_szobor_Budapest.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Szt%C3%A1lin_szobor_Budapest.jpg

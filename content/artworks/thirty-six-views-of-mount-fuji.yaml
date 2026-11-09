@@ -1,6 +1,7 @@
 public_id: 102289
 title_lang: en
 title: Thirty-six Views of Mount Fuji
+title_status: common
 names:
   - lang: ja
     role: original
@@ -18,6 +19,8 @@ names:
         note: “Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei) · ca. 1830–32”
         source: metropolitan-museum-collection
         accessed: 2026-10-22
+      - accessed: 2026-11-08
+        wikidata: Q227494
   - lang: de
     role: translation
     text: 36 Ansichten des Berges Fuji
@@ -26,6 +29,8 @@ names:
         note: “Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei) · ca. 1830–32”
         source: metropolitan-museum-collection
         accessed: 2026-10-22
+      - accessed: 2026-11-08
+        wikidata: Q227494
   - lang: fr
     role: translation
     text: Trente-six vues du mont Fuji
@@ -34,6 +39,8 @@ names:
         note: “Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei) · ca. 1830–32”
         source: metropolitan-museum-collection
         accessed: 2026-10-22
+      - accessed: 2026-11-08
+        wikidata: Q227494
   - lang: nl
     role: translation
     text: Zesendertig gezichten op de berg Fuji
@@ -42,6 +49,50 @@ names:
         note: “Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei) · ca. 1830–32”
         source: metropolitan-museum-collection
         accessed: 2026-10-22
+      - accessed: 2026-11-08
+        wikidata: Q227494
+  - lang: ja
+    role: original
+    text: 冨嶽三十六景
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q227494
+  - text: 36 Views of Mount Fuji
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q227494
+  - text: Thirty-six Views of Mt. Fuji
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q227494
+  - text: 36 cảnh núi Phú Sĩ
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q227494
+  - lang: it
+    role: translation
+    text: Trentasei vedute del Monte Fuji
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q227494
+  - lang: es
+    role: translation
+    text: Treinta y seis vistas del monte Fuji
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q227494
+  - lang: ko
+    role: translation
+    text: 후가쿠 36경
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q227494
+  - lang: ru
+    role: translation
+    text: Тридцать шесть видов Фудзи
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q227494
 parts_count: 46
 creator: katsushika-hokusai
 created: c. 1830–1832
@@ -63,7 +114,15 @@ description_md: |-
   - [[source/esrij-ukiyoe-map-fugaku36]] — ESRI Japan’s story map of where all 46 were drawn, with a 3D film.
   - [[source/arcgis-hokusai-views-of-mt-fuji]] — the 36 views georeferenced from their topography, each with a confidence grade A–D.
 wikidata_id: Q227494
+metadata:
+  sources: [Wikidata Q227494 (retrieved 2026-11-08)]
 relationships:
+  - type: depicts
+    to: place/mount-fuji
+    sources:
+      - accessed: 2026-11-08
+        property: P180
+        wikidata: Q227494
   - type: depicts
     to: place/tokaido
     label: the road along which many of the views are taken — five prints name it in their titles (Hodogaya, Yoshida, Kanaya, Ejiri and Tago Bay, Shinagawa)
@@ -72,6 +131,14 @@ relationships:
         note: the titles 東海道程ヶ谷, 東海道吉田, 東海道金谷ノ不二, 東海道江尻田子の浦略図, 東海道品川御殿山ノ不二
         source: wikipedia-ja-fugaku-sanjurokkei
         accessed: 2026-11-04
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Red_Fuji_southern_wind_clear_morning.jpg/1280px-Red_Fuji_southern_wind_clear_morning.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Red_Fuji_southern_wind_clear_morning.jpg
+    license: Public domain
+    credit: Katsushika Hokusai
+identifiers:
+  gnd: 7570432-8
+  viaf: "175957401"
 sources:
   kind:
     - url: https://www.metmuseum.org/art/collection/search/45434
@@ -88,3 +155,9 @@ sources:
       note: “Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei) · ca. 1830–32”
       source: metropolitan-museum-collection
       accessed: 2026-10-22
+    - accessed: 2026-11-08
+      property: P170
+      wikidata: Q227494
+  title_status:
+    - accessed: 2026-11-08
+      wikidata: Q227494

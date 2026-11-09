@@ -1,0 +1,16 @@
+public_id: 116939
+name: Conques-en-Rouergue
+kind: settlement
+location: [2.39722, 44.60028]
+wikidata_id: Q21619422
+metadata:
+  sources: [Wikidata Q21619422 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q21619422
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q21619422

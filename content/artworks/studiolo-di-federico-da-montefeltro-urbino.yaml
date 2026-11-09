@@ -1,0 +1,90 @@
+public_id: 117182
+title: Studiolo di Federico da Montefeltro
+names:
+  - lang: nl
+    role: translation
+    text: Studeerkamer van Federico da Montefeltro
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3501046
+  - lang: fr
+    role: translation
+    text: Studiolo de Frédéric III de Montefeltro
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3501046
+  - lang: de
+    role: translation
+    text: Studiolo des Federico da Montefeltro
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3501046
+  - lang: es
+    role: translation
+    text: Studiolo de Federico de Montefeltro
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3501046
+creator: giuliano-da-maiano
+created: 1470s
+created_span: uncertain
+medium: intarsia
+institution: palazzo-ducale-urbino
+location: [12.63663, 43.72474]
+wikidata_id: Q3501046
+metadata:
+  sources: [Wikidata Q3501046 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/urbino
+    period: 1470s
+  - type: co_creator
+    to: artist/donato-bramante
+    sources:
+      - accessed: 2026-11-09
+        property: P170
+        wikidata: Q3501046
+  - type: co_creator
+    to: artist/francesco-di-giorgio
+    sources:
+      - accessed: 2026-11-09
+        property: P170
+        wikidata: Q3501046
+  - type: co_creator
+    to: artist/sandro-botticelli
+    sources:
+      - accessed: 2026-11-09
+        property: P170
+        wikidata: Q3501046
+  - type: associated_with
+    to: movement/early-renaissance
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q3501046
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c7/Studiolo_Montefeltre.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Studiolo_Montefeltre.jpg
+    license: Public domain
+    credit: Francesco di Giorgio
+identifiers:
+  viaf: "146167803141717771744"
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q3501046
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q3501046
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q3501046
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024)

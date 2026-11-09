@@ -1,0 +1,16 @@
+public_id: 117166
+name: Basilica of San Domenico
+kind: basilica
+founded: 1228
+wikidata_id: Q862602
+metadata:
+  sources: [Wikidata Q862602 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q862602
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q862602

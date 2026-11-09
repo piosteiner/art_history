@@ -1,0 +1,21 @@
+public_id: 116911
+name: kunstschrank
+names:
+  - text: Kabinettschrank
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q97795211
+category: object type
+definition: type of collector's cabinet made in Germany during the 16th and early 17th centuries
+wikidata_id: Q97795211
+metadata:
+  sources: [Wikidata Q97795211 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Residenzschloss_Dresden_mehrgeschossiger_Kabinettschrank_aus_sp%C3%A4tmanieristisch-fr%C3%BChbarocker_Zeit.jpg/1280px-Residenzschloss_Dresden_mehrgeschossiger_Kabinettschrank_aus_sp%C3%A4tmanieristisch-fr%C3%BChbarocker_Zeit.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Residenzschloss_Dresden_mehrgeschossiger_Kabinettschrank_aus_sp%C3%A4tmanieristisch-fr%C3%BChbarocker_Zeit.jpg
+    license: CC BY-SA 4.0
+    credit: Ricardalovesmonuments
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q97795211

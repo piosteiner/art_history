@@ -65,6 +65,12 @@ relationships:
   - type: created_in
     to: place/arezzo
     period: 1452
+  - type: associated_with
+    to: movement/early-renaissance
+    sources:
+      - accessed: 2026-11-08
+        property: P135
+        wikidata: Q2755131
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/4/46/VeraCrocePiero.jpg
     source_url: https://commons.wikimedia.org/wiki/File:VeraCrocePiero.jpg

@@ -1,0 +1,91 @@
+public_id: 117012
+name: Kunstgewerbemuseum Berlin
+names:
+  - text: Museum of Decorative Arts
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q477503
+  - lang: nl
+    role: translation
+    text: Kunstgewerbemuseum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q477503
+  - lang: fr
+    role: translation
+    text: musée des Arts décoratifs de Berlin
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q477503
+  - lang: es
+    role: translation
+    text: Museo de Artes Decorativas de Berlín
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q477503
+  - lang: ja
+    role: translation
+    text: ベルリン工芸美術館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q477503
+  - lang: zh
+    role: translation
+    text: 柏林装饰艺术博物馆
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q477503
+  - lang: ko
+    role: translation
+    text: 베를린 장식미술관
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q477503
+  - lang: ru
+    role: translation
+    text: Берлинский музей прикладного искусства
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q477503
+kind: museum
+founded: 1868
+place: berlin
+location: [13.3675, 52.5097]
+address: Matthäikirchplatz, 10785 Berlin
+website_url: http://www.smb.museum/museen-und-einrichtungen/kunstgewerbemuseum/home.html
+collection_url: https://recherche.smb.museum/?collectionKey=KGM*
+wikidata_id: Q477503
+metadata:
+  sources: [Wikidata Q477503 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/18/Kulturforum_2007_5.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kulturforum_2007_5.jpg
+    license: CC BY-SA 3.0
+    credit: Manfred Brueckels
+identifiers:
+  bnf: 12309208f
+  gnd: 2070231-0
+  idref: "031974589"
+  lc: n94003810
+  viaf: "147786767"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q477503
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q477503
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q477503
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q477503
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q477503

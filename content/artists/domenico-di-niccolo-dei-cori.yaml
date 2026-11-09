@@ -1,0 +1,42 @@
+public_id: 116927
+name: Domenico di Niccolò
+given_name: Domenico
+family_name: di Niccolò
+names:
+  - text: Domenico di Niccolo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3713299
+  - text: Domenico di Niccolò dei Cori
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3713299
+  - text: Domenico di Niccolò De Cori
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3713299
+  - text: Domenico di Niccolò de' Cori
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3713299
+birth: 1362
+death: 1453
+wikidata_id: Q3713299
+metadata:
+  sources: [Wikidata Q3713299 (retrieved 2026-11-09)]
+identifiers:
+  bnf: "119913552"
+  gnd: "118840401"
+  idref: "027987051"
+  lc: nr88006525
+  ulan: "500013210"
+  viaf: "22938689"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q3713299
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q3713299

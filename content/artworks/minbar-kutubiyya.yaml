@@ -1,0 +1,45 @@
+public_id: 117121
+title: Minbar of the Kutubiyya Mosque
+names:
+  - lang: fr
+    role: translation
+    text: Minbar de la Mosquée Koutoubia
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q95888174
+  - lang: zh
+    role: translation
+    text: 库图比亚清真寺敏拜尔
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q95888174
+created: 1137/1144
+medium: cedar and oak with inlays of African blackwood, jujube, padauk, boxwood and bone
+materials: [oak, cedar, boxwood]
+dimensions: [386]
+dimensions_note: Höhe 386 cm, Tiefe 346 cm
+institution: el-badi-palace
+wikidata_id: Q95888174
+metadata:
+  sources: [Wikidata Q95888174 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6e/%D8%A7%D9%84%D9%85%D9%86%D8%A8%D8%B1_%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%A8%D8%B7%D9%8A_21_44_29_915000_%28retouched%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D9%85%D9%86%D8%A8%D8%B1_%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%A8%D8%B7%D9%8A_21_44_29_915000_(retouched).jpg
+    license: CC BY-SA 4.0
+    credit: إيان / Robert Prazeres, Wikimedia Commons
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024)
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024)
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024)
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024)
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024)

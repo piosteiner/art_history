@@ -5,21 +5,63 @@ names:
   - lang: en
     role: translation
     text: The Inspiration of Saint Matthew
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2337873
   - lang: nl
     role: translation
     text: Matteüs en de engel
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2337873
   - lang: fr
     role: translation
     text: Saint Matthieu et l'Ange
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2337873
   - lang: de
     role: translation
     text: "Szene: Hl. Matthäus und der Engel"
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2337873
   - lang: it
     role: translation
     text: San Matteo e l'angelo
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2337873
   - lang: es
     role: translation
     text: La inspiración de San Mateo
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2337873
+  - lang: ja
+    role: translation
+    text: 聖マタイと天使 (カラヴァッジョ)
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2337873
+  - lang: zh
+    role: translation
+    text: 圣玛窦的启示
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2337873
+  - lang: ko
+    role: translation
+    text: 성 마태오의 영감
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2337873
+  - lang: ru
+    role: translation
+    text: Святой Матфей и ангел
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2337873
 parent: san-matteo-e-langelo
 part_number: "2"
 creator: caravaggio
@@ -32,6 +74,13 @@ location: [12.47467, 41.89958]
 wikidata_id: Q2337873
 metadata:
   sources: [Wikidata Q2337873 (retrieved 2026-10-27)]
+relationships:
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-08
+        property: P135
+        wikidata: Q2337873
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Caravaggio_-_La_inspiraci%C3%B3n_de_San_Mateo_%28San_Luigi_dei_Francesi%2C_Roma%29.jpg/1280px-Caravaggio_-_La_inspiraci%C3%B3n_de_San_Mateo_%28San_Luigi_dei_Francesi%2C_Roma%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Caravaggio_-_La_inspiraci%C3%B3n_de_San_Mateo_(San_Luigi_dei_Francesi,_Roma).jpg

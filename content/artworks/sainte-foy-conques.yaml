@@ -1,0 +1,61 @@
+public_id: 117208
+title_lang: fr
+title: Statue-reliquaire de sainte Foy
+names:
+  - lang: fr
+    role: translation
+    text: statue reliquaire de Sainte Foy
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3497606
+  - lang: de
+    role: translation
+    text: Fides-Reliquiar
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3497606
+  - lang: ja
+    role: translation
+    text: 聖女フォワの聖遺物像
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3497606
+  - lang: en
+    role: translation
+    text: Statue reliquaire de Sainte Foy de Conques
+created: 800/809
+created_label: 800s
+created_span: uncertain
+medium: gold, gems and crystal over a yew-wood core
+materials: [gold, silver, wood, semiprecious stone, vitreous enamel, gemstone, yew wood, rock crystal]
+dimensions: [85]
+institution: abbey-church-of-sainte-foy-conques
+wikidata_id: Q3497606
+metadata:
+  sources: [Wikidata Q3497606 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Statue_reliquaire_de_sainte_Foy-649.jpg/1280px-Statue_reliquaire_de_sainte_Foy-649.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Statue_reliquaire_de_sainte_Foy-649.jpg
+    license: CC BY-SA 3.0
+    credit: 自由馴鹿 (ZiYouXunLu), edited by MenkinAlRire
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q3497606
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q3497606
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024)
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q3497606
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024)

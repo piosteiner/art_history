@@ -1,0 +1,73 @@
+public_id: 117032
+name: Schnütgen Museum
+names:
+  - text: Museum Schnütgen
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q950
+  - lang: fr
+    role: translation
+    text: musée Schnütgen
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q950
+  - lang: es
+    role: translation
+    text: Museo Schnütgen
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q950
+  - lang: ja
+    role: translation
+    text: シュニュットゲン美術館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q950
+  - lang: ru
+    role: translation
+    text: Шнютген
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q950
+kind: museum
+founded: 1910-10-26
+place: cologne
+location: [6.95144, 50.93471]
+address: Cäcilienstraße 29-33, 50676 Köln
+website_url: https://museum-schnuetgen.de/Home
+wikidata_id: Q950
+metadata:
+  sources: [Wikidata Q950 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Museum_Schn%C3%BCtgen_-_St._C%C3%A4cilien_-_innenaufnahme-4459.jpg/1280px-Museum_Schn%C3%BCtgen_-_St._C%C3%A4cilien_-_innenaufnahme-4459.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Museum_Schn%C3%BCtgen_-_St._C%C3%A4cilien_-_innenaufnahme-4459.jpg
+    license: CC BY-SA 4.0
+    credit: Raimond Spekking
+identifiers:
+  bnf: "121577008"
+  gnd: 10028132-1
+  idref: "027472523"
+  lc: n81127506
+  ulan: "500249709"
+  viaf: "126390981"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q950
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q950
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q950
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q950
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q950

@@ -1,0 +1,16 @@
+public_id: 117178
+name: Vatican Museums
+kind: museum
+founded: 1506
+wikidata_id: Q182955
+metadata:
+  sources: [Wikidata Q182955 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q182955
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q182955

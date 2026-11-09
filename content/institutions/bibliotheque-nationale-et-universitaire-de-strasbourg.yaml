@@ -1,0 +1,79 @@
+public_id: 116967
+name: Bibliothèque nationale et universitaire de Strasbourg
+names:
+  - text: National and University Library
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q630461
+  - text: BNUS
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q630461
+  - text: BNU
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q630461
+  - lang: nl
+    role: translation
+    text: Bibliothèque nationale et universitaire
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q630461
+  - lang: it
+    role: translation
+    text: Biblioteca nazionale e universitaria di Strasburgo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q630461
+  - lang: zh
+    role: translation
+    text: 斯特拉斯堡国家和大学图书馆
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q630461
+  - lang: ko
+    role: translation
+    text: 국립 대학 도서관
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q630461
+kind: library
+founded: 1872-06-19
+place: strasbourg
+location: [7.75582, 48.58711]
+address: 6, place de la République
+website_url: http://www.bnu.fr
+wikidata_id: Q630461
+metadata:
+  sources: [Wikidata Q630461 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Bnu-2018-01.jpg/1280px-Bnu-2018-01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bnu-2018-01.jpg
+    license: CC BY-SA 3.0
+    credit: BNU - Rosenkranz
+identifiers:
+  gnd: 1001545-0
+  idref: "050955772"
+  lc: n50065677
+  viaf: "135553188"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q630461
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q630461
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q630461
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q630461
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q630461

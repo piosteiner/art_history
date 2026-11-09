@@ -1,0 +1,18 @@
+public_id: 117213
+name: Jean Colombe
+given_name: Jean
+family_name: Colombe
+birth: c. 1430
+death: 1493
+wikidata_id: Q736379
+metadata:
+  sources: [Wikidata Q736379 (retrieved 2026-11-09)]
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q736379
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q736379

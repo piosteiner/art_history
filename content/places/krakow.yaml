@@ -1,0 +1,16 @@
+public_id: 117005
+name: Kraków
+kind: settlement
+location: [19.93722, 50.06139]
+wikidata_id: Q31487
+metadata:
+  sources: [Wikidata Q31487 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q31487
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q31487

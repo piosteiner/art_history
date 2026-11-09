@@ -1,0 +1,83 @@
+public_id: 117059
+name: Hospital of Innocents
+names:
+  - text: Ospedale degli Innocenti
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1257947
+  - lang: fr
+    role: translation
+    text: Spedale degli Innocenti
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1257947
+  - lang: ja
+    role: translation
+    text: イノセンティ病院
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1257947
+  - lang: zh
+    role: translation
+    text: 孤儿院
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1257947
+  - lang: ko
+    role: translation
+    text: 오스페달레 델리 인노첸티
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1257947
+  - lang: ru
+    role: translation
+    text: Воспитательный дом
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1257947
+kind: museum
+founded: 15th century
+dissolved: 1875-01-01
+place: florence
+location: [11.26111, 43.77639]
+address: piazza della Santissima Annunziata, 12 50133 Firenze
+website_url: https://www.istitutodeglinnocenti.it/
+wikidata_id: Q1257947
+metadata:
+  sources: [Wikidata Q1257947 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Spedale_innocenti%2C_veduta_01.JPG/1280px-Spedale_innocenti%2C_veduta_01.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Spedale_innocenti,_veduta_01.JPG
+    license: CC BY-SA 3.0
+    credit: sailko
+identifiers:
+  bnf: 12302164z
+  gnd: 16316511-7
+  idref: "031890806"
+  lc: n90651819
+  viaf: "145547898"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1257947
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1257947
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q1257947
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1257947
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1257947
+  dissolved:
+    - accessed: 2026-11-09
+      property: P576
+      wikidata: Q1257947

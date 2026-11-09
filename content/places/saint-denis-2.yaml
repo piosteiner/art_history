@@ -1,0 +1,16 @@
+public_id: 116959
+name: Saint-Denis
+kind: settlement
+location: [2.35389, 48.93556]
+wikidata_id: Q160506
+metadata:
+  sources: [Wikidata Q160506 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q160506
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q160506

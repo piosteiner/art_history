@@ -1,0 +1,36 @@
+public_id: 117246
+title_lang: it
+title: Porta lignea di Santa Sabina
+created: c. 432
+created_span: uncertain
+medium: fir (leaves), cypress (reliefs)
+materials: [fir wood, cypress]
+dimensions: [535, 335]
+institution: santa-sabina
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/09/RomaSSabinaPortaLigneaParticolare.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:RomaSSabinaPortaLigneaParticolare.JPG
+    license: Public domain
+    credit: MM, Wikimedia Commons
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024)
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024)
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024)
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024)
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024)
+  created_span:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024)
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024)

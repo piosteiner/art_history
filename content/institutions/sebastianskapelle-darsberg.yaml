@@ -1,0 +1,29 @@
+public_id: 117047
+name: Sebastianskapelle (Darsberg)
+kind: chapel
+place: neckarsteinach
+location: [8.85169, 49.4178]
+wikidata_id: Q2263318
+metadata:
+  sources: [Wikidata Q2263318 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/77/Darsberg-sebastianskapelle.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Darsberg-sebastianskapelle.jpg
+    license: CC BY-SA 3.0
+    credit: peter schmelzle
+identifiers:
+  gnd: "1128247704"
+  viaf: "8570149068469465730009"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q2263318
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q2263318
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q2263318

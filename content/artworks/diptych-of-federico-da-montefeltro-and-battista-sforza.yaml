@@ -68,6 +68,7 @@ creator: piero-della-francesca
 created: 1468/1480
 created_label: c. 1470s
 created_span: uncertain
+medium: oil on panel
 materials: [tempera, panel, oil paint]
 dimensions: [47, 33]
 institution: uffizi-gallery
@@ -76,6 +77,25 @@ web_url: https://www.uffizi.it/en/artworks/the-duke-and-duchess-of-urbino-federi
 wikidata_id: Q1227359
 metadata:
   sources: [Wikidata Q1227359 (retrieved 2026-10-20)]
+relationships:
+  - type: depicts_person
+    to: person/battista-sforza
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q1227359
+  - type: depicts_person
+    to: person/federico-da-montefeltro
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q1227359
+  - type: associated_with
+    to: movement/early-renaissance
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q1227359
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Piero_della_Francesca_044.jpg/1280px-Piero_della_Francesca_044.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Piero_della_Francesca_044.jpg
@@ -123,6 +143,9 @@ provenance:
 identifiers:
   gnd: 4671185-5
 sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024)
   created:
     - url: https://www.uffizi.it/en/artworks/the-duke-and-duchess-of-urbino-federico-da-montefeltro-and-battista-sforza
       source: uffizi-artworks

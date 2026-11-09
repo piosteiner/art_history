@@ -1,0 +1,89 @@
+public_id: 116994
+name: Gurk Cathedral
+names:
+  - lang: nl
+    role: translation
+    text: Dom van Gurk
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q701301
+  - lang: fr
+    role: translation
+    text: cathédrale de l'Assomption-de-Marie de Gurk
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q701301
+  - lang: de
+    role: translation
+    text: Dom zu Gurk
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q701301
+  - lang: it
+    role: translation
+    text: duomo di Gurk
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q701301
+  - lang: es
+    role: translation
+    text: Catedral de Gurk
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q701301
+  - lang: ja
+    role: translation
+    text: グルク大聖堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q701301
+  - lang: zh
+    role: translation
+    text: 古尔克主教座堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q701301
+  - lang: ru
+    role: translation
+    text: Собор Успения Девы Марии
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q701301
+kind: cathedral
+founded: 1140
+place: gurk
+location: [14.2936, 46.875]
+address: Domplatz 1, u. a.
+wikidata_id: Q701301
+metadata:
+  sources: [Wikidata Q701301 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Gurk_Cathedral.jpg/1280px-Gurk_Cathedral.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gurk_Cathedral.jpg
+    license: CC BY-SA 2.5
+    credit: Marion Schneider & Christoph Aistleitner
+identifiers:
+  gnd: 4346821-4
+  lc: no2012040759
+  viaf: "138925009"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q701301
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q701301
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q701301
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q701301
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q701301

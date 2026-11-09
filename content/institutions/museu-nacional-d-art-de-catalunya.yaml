@@ -1,0 +1,117 @@
+public_id: 117027
+name: Museu Nacional d'Art de Catalunya
+names:
+  - text: MNAC
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q861252
+  - text: Catalan National Art Museum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q861252
+  - text: Art Modern Art MNAC
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q861252
+  - text: National Art Museum of Catalonia
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q861252
+  - text: Modern Art Collection (MNAC)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q861252
+  - text: Art Museum of Catalonia
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q861252
+  - lang: nl
+    role: translation
+    text: Nationaal Kunstmuseum van Catalonië
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q861252
+  - lang: fr
+    role: translation
+    text: musée national d'Art de Catalogne
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q861252
+  - lang: de
+    role: translation
+    text: Museu Nacional d’Art de Catalunya
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q861252
+  - lang: it
+    role: translation
+    text: Museo nazionale d'arte della Catalogna
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q861252
+  - lang: es
+    role: translation
+    text: Museo Nacional de Arte de Cataluña
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q861252
+  - lang: ja
+    role: translation
+    text: カタルーニャ国立美術館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q861252
+  - lang: zh
+    role: translation
+    text: 加泰罗尼亚国家艺术博物馆
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q861252
+  - lang: ko
+    role: translation
+    text: 카탈루냐 미술관
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q861252
+  - lang: ru
+    role: translation
+    text: Национальный музей искусства Каталонии
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q861252
+kind: museum
+founded: 1934-11-11
+place: barcelona
+location: [2.15331, 41.36833]
+website_url: https://www.museunacional.cat/ca
+wikidata_id: Q861252
+metadata:
+  sources: [Wikidata Q861252 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/WLM14ES_-_Palau_Nacional_i_seu_del_MNAC_de_Barcelona_-_MARIA_ROSA_FERRE.jpg/1280px-WLM14ES_-_Palau_Nacional_i_seu_del_MNAC_de_Barcelona_-_MARIA_ROSA_FERRE.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:WLM14ES_-_Palau_Nacional_i_seu_del_MNAC_de_Barcelona_-_MARIA_ROSA_FERRE.jpg
+    license: CC BY-SA 2.0
+    credit: MARIA ROSA FERRE ✿ from Vilafranca del penedes, Catalunya
+identifiers:
+  bnf: "121808950"
+  gnd: 5089748-2
+  idref: "030383498"
+  lc: n94001340
+  viaf: "123033586"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q861252
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q861252
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q861252
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q861252

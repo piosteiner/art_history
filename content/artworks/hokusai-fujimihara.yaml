@@ -1,4 +1,5 @@
 public_id: 107947
+title_lang: en
 title: The Barrel-maker of Fujimihara (Bishū Fujimigahara)
 parent: thirty-six-views-of-mount-fuji
 part_number: "10"
@@ -13,6 +14,8 @@ dimensions_note: horizontal ōban
 institution: tokyo-national-museum
 description_md: "From [[artwork/thirty-six-views-of-mount-fuji]], begun in 1823 and completed around 1831: a tiny man kneels inside an enormous barrel, smoothing the joints between its planks, beyond him a parched rice field and, in the far distance, the snow-covered tip of Fuji — the circle of the barrel encloses the craftsman, his work and the beauty of the landscape. [[source/history-of-japanese-art|pp. 290–291, fig. 331]]"
 wikidata_id: Q17210582
+metadata:
+  sources: [Wikidata Q17210582 (retrieved 2026-11-08)]
 relationships:
   - type: depicts
     to: place/fujimi-cho
@@ -27,11 +30,22 @@ relationships:
       - note: grade D+, placed at 34.73771, 137.48951 — “The Owari Province is in this general area, and we needed an elevated view point - with fields in the distance - to be able to see Mt Fuji”
         source: arcgis-hokusai-views-of-mt-fuji
         accessed: 2026-11-04
+  - type: depicts
+    to: place/mount-fuji
+    sources:
+      - accessed: 2026-11-08
+        property: P180
+        wikidata: Q17210582
   - type: associated_with
     to: movement/edo-period
     sources:
       - source: history-of-japanese-art
         locator: pp. 290–291, fig. 331
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Fujimi_Fuji_view_field_in_the_Owari_province.jpg/1280px-Fujimi_Fuji_view_field_in_the_Owari_province.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fujimi_Fuji_view_field_in_the_Owari_province.jpg
+    license: Public domain
+    credit: Katsushika Hokusai
 sources:
   kind:
     - source: history-of-japanese-art
@@ -39,12 +53,19 @@ sources:
   medium:
     - source: history-of-japanese-art
       locator: pp. 290–291, fig. 331
+  parent:
+    - accessed: 2026-11-08
+      property: P179
+      wikidata: Q17210582
   created:
     - source: history-of-japanese-art
       locator: pp. 290–291, fig. 331
   creator:
     - source: history-of-japanese-art
       locator: pp. 290–291, fig. 331
+    - accessed: 2026-11-08
+      property: P170
+      wikidata: Q17210582
   materials:
     - source: history-of-japanese-art
       locator: pp. 290–291, fig. 331

@@ -1,0 +1,16 @@
+public_id: 116970
+name: Vatican City
+kind: country
+location: [12.453, 41.904]
+wikidata_id: Q237
+metadata:
+  sources: [Wikidata Q237 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q237
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q237

@@ -1,0 +1,18 @@
+public_id: 116932
+name: Giovan Francesco Capoferri
+given_name: Giovan Francesco
+family_name: Capoferri
+birth: 1487
+death: 1534
+wikidata_id: Q23794941
+metadata:
+  sources: [Wikidata Q23794941 (retrieved 2026-11-09)]
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q23794941
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q23794941

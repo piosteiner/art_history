@@ -1,0 +1,81 @@
+public_id: 116914
+name: illuminated manuscript
+names:
+  - text: illuminated manuscript book
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q48498
+  - text: illustrated manuscript
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q48498
+  - lang: nl
+    role: translation
+    text: verlucht handschrift
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q48498
+  - lang: fr
+    role: translation
+    text: enluminure
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q48498
+  - lang: de
+    role: translation
+    text: Bilderhandschrift
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q48498
+  - lang: it
+    role: translation
+    text: manoscritto miniato
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q48498
+  - lang: es
+    role: translation
+    text: manuscrito ilustrado
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q48498
+  - lang: ja
+    role: translation
+    text: 装飾写本
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q48498
+  - lang: zh
+    role: translation
+    text: 彩绘手抄本
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q48498
+  - lang: ko
+    role: translation
+    text: 채색필사본
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q48498
+  - lang: ru
+    role: translation
+    text: иллюминированная рукопись
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q48498
+category: object type
+definition: manuscript in which the text is supplemented by the addition of decoration, such as borders and miniature illustrations
+wikidata_id: Q48498
+metadata:
+  sources: [Wikidata Q48498 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/22/Sapientia.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sapientia.jpg
+    license: Public domain
+    credit: Benedictine monastery of Podlažice
+identifiers:
+  gnd: 4120472-4
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q48498

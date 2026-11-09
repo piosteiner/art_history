@@ -5,23 +5,57 @@ names:
   - lang: fr
     role: translation
     text: La Porte de l'Enfer
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2003287
   - lang: de
     role: translation
     text: Das Höllentor
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2003287
   - lang: it
     role: translation
     text: La porta dell'inferno
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2003287
   - lang: es
     role: translation
     text: La puerta del Infierno
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2003287
   - lang: ja
     role: translation
     text: 地獄の門
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2003287
+  - lang: zh
+    role: translation
+    text: 地獄之門
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2003287
+  - lang: ko
+    role: translation
+    text: 지옥의 문
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2003287
+  - lang: ru
+    role: translation
+    text: Врата Ада
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q2003287
 parts_count: 9
 creator: auguste-rodin
 created: 1880/1917
 created_span: duration
 kind: versions
+institution: musee-d-orsay
 description_md: |-
   Rodin erhielt 1880 von der französischen Regierung den Auftrag für ein monumentales Bronzetor des geplanten Musée des Arts décoratifs in Paris, mit Szenen aus Dantes «Inferno»; das Museum wurde nie gebaut.[[source/kunsthaus-zurich-1949-0022|“1880 erhielt Rodin von der französischen Regierung den Auftrag, für ein Musée des Arts Décoratifs ein monumentales Bronzetor mit Szenen aus Dantes «Inferno» zu schaffen. Das Museum wurde nie gebaut”]] In fieberhafter Arbeit schuf er mehr als zweihundert Figuren und Gruppen, aus denen er für den Rest seiner Laufbahn schöpfte. 1900 zeigte er das Tor zum ersten Mal, aber ohne die am stärksten vortretenden Figuren; um 1907 sollte es in Bronze und Marmor im Musée du Luxembourg aufgestellt werden. Erst 1917 überzeugte [[person/leonce-benedite|Léonce Bénédite]], der erste Konservator des Musée Rodin, den Bildhauer, das Tor für einen Guss rekonstruieren zu lassen; Rodin starb, bevor er das Ergebnis sah.[[source/musee-rodin-s01304|“il créa plus de deux cents figures et groupes qui forment un véritable vivier dans lequel il puisa durant le reste de sa carrière” · “Vers 1907, La Porte fut proche de voir le jour dans une version luxueuse, alliant le bronze et le marbre” · “C’est en 1917 seulement que Léonce Bénédite, premier conservateur du musée Rodin, parvint à convaincre le sculpteur de le laisser reconstituer son chef-d’œuvre pour en faire réaliser une fonte, Rodin mourut avant de voir le résultat de tous ses efforts.”]]
 
@@ -31,6 +65,13 @@ description_md: |-
 wikidata_id: Q2003287
 metadata:
   sources: [Wikidata Q2003287 (retrieved 2026-10-24)]
+relationships:
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-11-08
+        property: P135
+        wikidata: Q2003287
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Rodin_Porte_enfer.jpg/1280px-Rodin_Porte_enfer.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Rodin_Porte_enfer.jpg
@@ -47,4 +88,8 @@ sources:
   creator:
     - accessed: 2026-10-24
       property: P170
+      wikidata: Q2003287
+  institution:
+    - accessed: 2026-11-08
+      property: P195
       wikidata: Q2003287

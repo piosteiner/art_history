@@ -5,18 +5,71 @@ names:
   - lang: en
     role: translation
     text: The Calling of Saint Matthew
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q969377
   - lang: de
     role: translation
     text: Die Berufung des Hl. Matthäus
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q969377
   - lang: fr
     role: translation
     text: La Vocation de saint Matthieu
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q969377
   - lang: nl
     role: translation
     text: De roeping van Matteüs
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q969377
   - lang: es
     role: translation
     text: La vocación de San Mateo
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q969377
+  - text: The Calling of St. Matthew
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q969377
+  - text: The Calling of St Matthew
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q969377
+  - lang: it
+    role: translation
+    text: Vocazione di san Matteo
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q969377
+  - lang: ja
+    role: translation
+    text: 聖マタイの召命
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q969377
+  - lang: zh
+    role: translation
+    text: 聖馬太蒙召喚
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q969377
+  - lang: ko
+    role: translation
+    text: 성 마태오를 부르심
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q969377
+  - lang: ru
+    role: translation
+    text: Призвание апостола Матфея
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q969377
 parent: ciclo-di-san-matteo
 part_number: "1"
 creator: caravaggio

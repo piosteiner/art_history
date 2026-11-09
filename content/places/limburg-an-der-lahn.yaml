@@ -1,0 +1,22 @@
+public_id: 116989
+name: Limburg an der Lahn
+kind: settlement
+parent: hessen
+country_code: DE
+location: [8.06667, 50.38333]
+wikidata_id: Q16026
+metadata:
+  sources: [Wikidata Q16026 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q16026
+  parent:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q16026
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q16026

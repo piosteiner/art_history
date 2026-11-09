@@ -1,0 +1,184 @@
+public_id: 116969
+name: Vittore Carpaccio
+given_name: Vittore
+family_name: Carpaccio
+names:
+  - text: Vittore Carpatio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vittore Carpathius
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vittore Scarpatia
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vittore Scharpaza
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vittore Karpachcho
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vittore Scarpazza
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vittore Scarpaccia
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Victor Carpathius
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vittore Carpaceri
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vittore Scarpaza
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vettore Carpaccio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vittore Carpathio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vittore Carpatius
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vittore Carpazio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vittore Scarpatio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vittore Scarpazo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Carpacico
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: scarpazza
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Victor Carpaccio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vettor Carpazio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vittor Carpaccino
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vittore Carpallino
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: scarpazo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Carpacio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vittor Carpazio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Carpaceri
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Carpaccio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Carpazio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vettor Carpaccio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Vittorio Carpaccio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: Scarpatio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - text: V. Carpathius
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - lang: ja
+    role: translation
+    text: ヴィットーレ・カルパッチョ
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - lang: zh
+    role: translation
+    text: 维托雷·卡尔帕乔
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - lang: ko
+    role: translation
+    text: 비토레 카르파초
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+  - lang: ru
+    role: translation
+    text: Витторе Карпаччо
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5581
+birth: 1465
+death: 1526
+wikidata_id: Q5581
+metadata:
+  sources: [Wikidata Q5581 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/67/Vittore_Carpaccio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vittore_Carpaccio.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "119432646"
+  gnd: "118519204"
+  idref: "027377962"
+  lc: n82097632
+  rkd: "15504"
+  ulan: "500015121"
+  viaf: "261297781"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q5581
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q5581

@@ -1,6 +1,38 @@
 public_id: 100063
 title: Takiyasha the Witch and the Skeleton Specter
-names: [Takiyasha the Witch and the Skeleton Spectre, Mitsukuni Defying the Skeleton Spectre Invoked by Princess Takiyasha]
+names:
+  - text: Takiyasha the Witch and the Skeleton Spectre
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q7678417
+  - text: Mitsukuni Defying the Skeleton Spectre Invoked by Princess Takiyasha
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q7678417
+  - lang: fr
+    role: translation
+    text: Takiyasha la sorcière et le fantôme du squelette
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q7678417
+  - lang: es
+    role: translation
+    text: Takiyasha la bruja y el espectro del esqueleto
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q7678417
+  - lang: ja
+    role: translation
+    text: 相馬の古内裏
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q7678417
+  - lang: zh
+    role: translation
+    text: 相馬之古内裏
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q7678417
 creator: utagawa-kuniyoshi
 created: 1840/1850
 created_label: c. 1844

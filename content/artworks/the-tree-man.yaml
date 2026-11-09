@@ -34,6 +34,13 @@ inventory_number: "7876"
 wikidata_id: Q1968805
 metadata:
   sources: [Wikidata Q1968805 (retrieved 2026-10-19)]
+relationships:
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-11-08
+        property: P135
+        wikidata: Q1968805
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Hieronymus_Bosch_-_The_Tree-Man%2C_c._1505_-_Google_Art_Project.jpg/1280px-Hieronymus_Bosch_-_The_Tree-Man%2C_c._1505_-_Google_Art_Project.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Hieronymus_Bosch_-_The_Tree-Man,_c._1505_-_Google_Art_Project.jpg

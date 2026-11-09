@@ -1,0 +1,67 @@
+public_id: 117168
+title_lang: it
+title: Storie di san Francesco
+names:
+  - lang: nl
+    role: translation
+    text: Fresques de la vie de saint François à Assise
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3087564
+  - lang: de
+    role: translation
+    text: Szenen aus dem Leben des heiligen Franziskus
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3087564
+  - lang: it
+    role: translation
+    text: Storie di san Francesco
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3087564
+  - lang: zh
+    role: translation
+    text: 圣方济各生平组画
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3087564
+  - lang: en
+    role: translation
+    text: Scenes of the life of Saint Francis
+creator: giotto
+created: 1292
+medium: fresco
+institution: upper-basilica-of-san-francesco-assisi
+location: [12.60599, 43.07493]
+wikidata_id: Q3087564
+metadata:
+  sources: [Wikidata Q3087564 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/assisi
+    period: 1292
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e0/Assisis_Basilica_superiore.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Assisis_Basilica_superiore.jpg
+    license: Public domain
+    credit: Starlight
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q3087564
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q3087564
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q3087564
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024)

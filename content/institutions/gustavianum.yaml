@@ -1,0 +1,46 @@
+public_id: 117029
+name: Gustavianum
+names:
+  - text: Museum Gustavianum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1506922
+  - text: Theatrum Anatomicum Gustavianum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1506922
+founded: 1997-06-17
+place: uppsala
+location: [17.63172, 59.85797]
+address: Akademigatan 3, SE-753 10
+website_url: https://www.gustavianum.uu.se/
+wikidata_id: Q1506922
+metadata:
+  sources: [Wikidata Q1506922 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/GUSTAVIANUM_1.jpg/1280px-GUSTAVIANUM_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:GUSTAVIANUM_1.jpg
+    license: CC BY-SA 3.0
+    credit: Jarvis
+identifiers:
+  gnd: "1050830210"
+  kulturnav: ba169fe4-882b-426b-bae8-9530d2226f23
+  lc: n2001006276
+  viaf: "85149066506565601148"
+sources:
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1506922
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q1506922
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1506922
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1506922

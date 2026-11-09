@@ -1,0 +1,46 @@
+public_id: 116963
+name: Bibliothèque municipale de Dijon
+names:
+  - lang: it
+    role: translation
+    text: Biblioteca municipale di Digione
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q18599906
+  - lang: ja
+    role: translation
+    text: ディジョン市立図書館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q18599906
+  - lang: zh
+    role: translation
+    text: 第戎市图书馆
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q18599906
+place: dijon
+location: [5.04261, 47.31924]
+website_url: https://bm.dijon.fr
+wikidata_id: Q18599906
+metadata:
+  sources: [Wikidata Q18599906 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Biblioth%C3%A8que_municipale_Port_du_canal%2C_Dijon.JPG/1280px-Biblioth%C3%A8que_municipale_Port_du_canal%2C_Dijon.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Biblioth%C3%A8que_municipale_Port_du_canal,_Dijon.JPG
+    license: CC BY-SA 3.0
+    credit: Erkethan
+identifiers:
+  bnf: 11862446t
+  idref: "026361469"
+  lc: n81075872
+  viaf: "169261871"
+sources:
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q18599906
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q18599906

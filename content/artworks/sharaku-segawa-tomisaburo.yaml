@@ -1,6 +1,16 @@
 public_id: 107987
 title: Segawa Tomisaburō II as Yadorigi, wife of Ōgishi Kurando
-names: ["Segawa Tomisaburō as Yadorigi, wife of Ogishi Kurando"]
+names:
+  - text: Segawa Tomisaburō as Yadorigi, wife of Ogishi Kurando
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q62024406
+  - lang: ja
+    role: translation
+    text: 二世瀬川富三郎の大岸蔵人妻やどり木
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q62024406
 creator: toshusai-sharaku
 created: 1794
 kind: Japanese woodblock print
@@ -9,11 +19,18 @@ materials: [paper]
 dimensions: [38.1, 23.2]
 dimensions_note: ōban
 institution: tokyo-national-museum
+inventory_number: JP3112
 description_md: "The actor called “Nasty Tomi” for his acerbic personality, in a female role, glaring through hard eyes as he pulls up one sleeve: truthful, unflattering, frozen in a mie pose against glistening grey mica. [[artist/toshusai-sharaku]] produced about 150 actor prints between spring 1794 and New Year 1795 and disappeared; a law of 1794 forbade mica. [[source/history-of-japanese-art|p. 286, fig. 325]]"
 wikidata_id: Q62024406
 metadata:
   sources: [Wikidata Q62024406 (retrieved 2026-10-05)]
 relationships:
+  - type: created_in_polity
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-08
+        property: P495
+        wikidata: Q62024406
   - type: associated_with
     to: movement/edo-period
     sources:
@@ -56,3 +73,7 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: p. 286, fig. 325
+  inventory_number:
+    - accessed: 2026-11-08
+      property: P217
+      wikidata: Q62024406

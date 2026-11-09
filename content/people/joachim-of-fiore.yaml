@@ -1,0 +1,91 @@
+public_id: 116987
+name: Joachim of Fiore
+names:
+  - lang: la
+    role: original
+    text: Ioachim Florensis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q199991
+  - lang: nl
+    role: translation
+    text: Joachim van Fiore
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q199991
+  - lang: fr
+    role: translation
+    text: Joachim de Flore
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q199991
+  - lang: de
+    role: translation
+    text: Joachim von Fiore
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q199991
+  - lang: it
+    role: translation
+    text: Gioacchino da Fiore
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q199991
+  - lang: es
+    role: translation
+    text: Joaquín de Fiore
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q199991
+  - lang: ja
+    role: translation
+    text: フィオーレのヨアキム
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q199991
+  - lang: zh
+    role: translation
+    text: 菲奧雷的約阿基姆
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q199991
+  - lang: ru
+    role: translation
+    text: Иоахим Флорский
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q199991
+kind: person
+occupations: [theologian, founder of Catholic religious community]
+birth: c. 1135
+death: 1202-04-06
+wikidata_id: Q199991
+metadata:
+  sources: [Wikidata Q199991 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ec/Joachim_of_Flora.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joachim_of_Flora.jpg
+    license: Public domain
+identifiers:
+  bnf: 12042583n
+  gnd: "118557564"
+  idref: "028629213"
+  lc: n79043721
+  viaf: "78749939"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q199991
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q199991
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q199991
+  occupations:
+    - accessed: 2026-11-09
+      property: P106
+      wikidata: Q199991

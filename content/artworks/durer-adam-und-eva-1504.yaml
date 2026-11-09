@@ -1,0 +1,96 @@
+public_id: 117116
+title_lang: de
+title: Adam und Eva (Der Sündenfall)
+names:
+  - The Fall of Man
+  - lang: nl
+    role: translation
+    text: Adam en Eva
+  - lang: fr
+    role: translation
+    text: Adam et Ève
+  - lang: it
+    role: translation
+    text: Peccato originale
+  - lang: es
+    role: translation
+    text: El Pecado original
+  - lang: ja
+    role: translation
+    text: アダムとイヴ
+  - lang: zh
+    role: translation
+    text: 亚当和夏娃
+  - lang: ko
+    role: translation
+    text: 아담과 하와
+  - lang: ru
+    role: translation
+    text: Адам и Ева
+  - lang: de
+    role: translation
+    text: Adam und Eva
+  - lang: en
+    role: translation
+    text: Adam and Eve
+creator: albrecht-durer
+created: 1504
+medium: Kupferstich
+materials: [laid paper, copper]
+dimensions: [25.1, 19.4]
+institution: albertina
+inventory_number: "1967.33"
+web_url: http://www.mfa.org/collections/object/the-fall-of-man-adam-and-eve-246
+wikidata_id: Q3898508
+metadata:
+  sources: [Wikidata Q3898508 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/nuremberg
+    sources:
+      - accessed: 2026-11-09
+        property: P1071
+        wikidata: Q3898508
+  - type: associated_with
+    to: movement/german-renaissance
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q3898508
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Albrecht_D%C3%BCrer_-_Adam_and_Eve_-_Google_Art_Project.jpg/1280px-Albrecht_D%C3%BCrer_-_Adam_and_Eve_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_Adam_and_Eve_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Albrecht Dürer
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 2 (3.10.2024), Folie 51
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q3898508
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q3898508
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q3898508
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 2 (3.10.2024), Folie 51
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q3898508
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q3898508
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 2
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q3898508

@@ -20,6 +20,12 @@ wikidata_id: Q107046110
 metadata:
   sources: [Wikidata Q107046110 (retrieved 2026-11-01)]
 relationships:
+  - type: created_in_polity
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-08
+        property: P495
+        wikidata: Q107046110
   - type: associated_with
     to: movement/kamakura-period
     sources:

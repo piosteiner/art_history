@@ -1,0 +1,70 @@
+public_id: 117060
+name: Basilica of SS. Peter and Alexander
+names:
+  - text: St. Peter und Alexander
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1028759
+  - lang: nl
+    role: translation
+    text: Sint-Petrus en Alexanderkerk
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1028759
+  - lang: fr
+    role: translation
+    text: collégiale Saint-Pierre-et-Saint-Alexandre d'Aschaffenbourg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1028759
+  - lang: es
+    role: translation
+    text: basílica de San Pedro y San Alejandro
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1028759
+  - lang: ja
+    role: translation
+    text: 聖ペテロおよびアレクサンダー修道院教会
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1028759
+  - lang: zh
+    role: translation
+    text: 阿沙芬堡的聖彼得和亞歷山大教堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1028759
+kind: basilica
+place: germany
+location: [9.14644, 49.97366]
+address: Stiftsgasse 3
+website_url: http://www.stiftsbasilika.de
+wikidata_id: Q1028759
+metadata:
+  sources: [Wikidata Q1028759 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Stiftskirche_Sankt_Peter_und_Alexander_Aschaffenburg.jpg/1280px-Stiftskirche_Sankt_Peter_und_Alexander_Aschaffenburg.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Stiftskirche_Sankt_Peter_und_Alexander_Aschaffenburg.jpg
+    license: CC BY-SA 3.0
+    credit: Johann H. Addicks - addicks@gmx.net
+identifiers:
+  gnd: 4440422-0
+  viaf: "246269585"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1028759
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1028759
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q1028759
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1028759

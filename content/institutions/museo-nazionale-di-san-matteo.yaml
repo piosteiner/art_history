@@ -1,0 +1,66 @@
+public_id: 117025
+name: National Museum of San Matteo
+names:
+  - lang: nl
+    role: translation
+    text: Museo nazionale di San Matteo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1081881
+  - lang: fr
+    role: translation
+    text: musée national San Matteo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1081881
+  - lang: zh
+    role: translation
+    text: 國立聖馬特奧博物館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1081881
+  - lang: ru
+    role: translation
+    text: Музей Сан-Маттео
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1081881
+kind: museum
+founded: 1949-11-13
+place: pisa
+location: [10.40775, 43.7152]
+address: Piazza San Matteo In Soarta 1, 56127 Pisa
+wikidata_id: Q1081881
+metadata:
+  sources: [Wikidata Q1081881 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Claustro_San_Matteo_Pisa_08.jpg/1280px-Claustro_San_Matteo_Pisa_08.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Claustro_San_Matteo_Pisa_08.jpg
+    license: CC BY-SA 4.0
+    credit: Miguel Hermoso Cuesta
+identifiers:
+  bnf: 12208135n
+  idref: 03072242X
+  lc: n83204380
+  viaf: "159488212"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1081881
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1081881
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q1081881
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1081881
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1081881

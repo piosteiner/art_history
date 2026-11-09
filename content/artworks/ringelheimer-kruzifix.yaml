@@ -1,0 +1,77 @@
+public_id: 117106
+title_lang: de
+title: Ringelheimer Kruzifix
+names:
+  - lang: fr
+    role: translation
+    text: Crucifix de Ringelheim
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q106448361
+  - lang: de
+    role: translation
+    text: Ringelheimer Kreuz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q106448361
+  - lang: it
+    role: translation
+    text: Croce di Ringelheim
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q106448361
+  - lang: en
+    role: translation
+    text: Ringelheim Crucifix
+created: c. 1000
+created_span: uncertain
+medium: Lindenholz
+materials: [lime, oakwood]
+dimensions: [162, 161, 25]
+institution: dommuseum-hildesheim
+inventory_number: L 1993-8
+wikidata_id: Q106448361
+metadata:
+  sources: [Wikidata Q106448361 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/hildesheim
+    sources:
+      - accessed: 2026-11-09
+        property: P1071
+        wikidata: Q106448361
+  - type: associated_with
+    to: movement/ottonian-art
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q106448361
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Ringelheimer_Kreuz.jpg/1280px-Ringelheimer_Kreuz.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ringelheimer_Kreuz.jpg
+    license: CC0
+    credit: Rabanus Flavus
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 17
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q106448361
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q106448361
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q106448361
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q106448361
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q106448361

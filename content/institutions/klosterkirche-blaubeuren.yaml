@@ -1,0 +1,28 @@
+public_id: 117010
+name: Klosterkirche Blaubeuren
+kind: church
+place: blaubeuren
+location: [9.78445, 48.41553]
+wikidata_id: Q107544099
+metadata:
+  sources: [Wikidata Q107544099 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Klosterkirche_Blaubeuren%2C_Alb-Donau-Kreis.jpg/1280px-Klosterkirche_Blaubeuren%2C_Alb-Donau-Kreis.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Klosterkirche_Blaubeuren,_Alb-Donau-Kreis.jpg
+    license: CC BY-SA 4.0
+    credit: Olga Ernst
+identifiers:
+  gnd: 4695778-9
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q107544099
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q107544099
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q107544099

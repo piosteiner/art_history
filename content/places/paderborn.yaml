@@ -1,0 +1,16 @@
+public_id: 116998
+name: Paderborn
+kind: settlement
+location: [8.76667, 51.71667]
+wikidata_id: Q2971
+metadata:
+  sources: [Wikidata Q2971 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q2971
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q2971

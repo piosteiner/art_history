@@ -1,0 +1,16 @@
+public_id: 116980
+name: San Quirico d'Orcia
+kind: settlement
+location: [11.6, 43.06667]
+wikidata_id: Q91430
+metadata:
+  sources: [Wikidata Q91430 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q91430
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q91430

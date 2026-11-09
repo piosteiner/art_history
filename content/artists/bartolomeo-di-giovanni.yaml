@@ -1,0 +1,18 @@
+public_id: 117165
+name: Bartolomeo di Giovanni
+given_name: Bartolomeo
+family_name: di Giovanni
+birth: c. 1452
+death: 1501
+wikidata_id: Q2013867
+metadata:
+  sources: [Wikidata Q2013867 (retrieved 2026-11-09)]
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q2013867
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q2013867

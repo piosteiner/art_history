@@ -1,0 +1,43 @@
+public_id: 117088
+title: Imad-Madonna
+created: 11th century
+created_span: uncertain
+medium: Lindenholz, Eichenholz, Reste ursprünglicher Fassung
+materials: [oak, lime]
+dimensions: [112]
+institution: diozesanmuseum-paderborn
+location: [8.75514, 51.7185]
+wikidata_id: Q1659554
+metadata:
+  sources: [Wikidata Q1659554 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/paderborn
+    period: 11th century
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f7/Ludorff-PB-Paderborn-Dom-Imad-Madonna.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ludorff-PB-Paderborn-Dom-Imad-Madonna.jpg
+    license: Public domain
+    credit: Albert Ludorff
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 16
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1659554
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1659554
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 16
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q1659554
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 16

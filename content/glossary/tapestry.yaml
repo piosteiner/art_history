@@ -1,0 +1,85 @@
+public_id: 116921
+name: tapestry
+names:
+  - text: gobelin
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184296
+  - text: hanging
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184296
+  - text: woven tapestry
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184296
+  - lang: nl
+    role: translation
+    text: wandtapijt
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184296
+  - lang: fr
+    role: translation
+    text: tapisserie
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184296
+  - lang: de
+    role: translation
+    text: Bildwirkerei
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184296
+  - lang: it
+    role: translation
+    text: arazzo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184296
+  - lang: es
+    role: translation
+    text: tapiz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184296
+  - lang: ja
+    role: translation
+    text: タペストリー
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184296
+  - lang: zh
+    role: translation
+    text: 壁毯
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184296
+  - lang: ko
+    role: translation
+    text: 태피스트리
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184296
+  - lang: ru
+    role: translation
+    text: гобелен
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q184296
+category: object type
+definition: textile artwork, traditionally woven on a vertical loom using tapestry weaving techniques, sometimes embellished with embroidery or paint
+wikidata_id: Q184296
+metadata:
+  sources: [Wikidata Q184296 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c5/Wild_Men_and_Moors_%28Detail_01_of_12%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wild_Men_and_Moors_(Detail_01_of_12).jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: 4006648-4
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q184296

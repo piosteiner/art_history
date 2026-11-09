@@ -1,4 +1,5 @@
 public_id: 115396
+title_lang: de
 title: Matrosenbraut
 names:
   - lang: de
@@ -30,6 +31,8 @@ web_url: https://collection.kunsthaus.ch/de/collection/item/366/
 provenance_status: b_no_indications
 provenance_status_note: no indications of a cultural property confiscated as a result of Nazi persecution
 wikidata_id: Q131585199
+metadata:
+  sources: [Wikidata Q131585199 (retrieved 2026-11-08)]
 provenance:
   - owner: person/margarete-bachmann
     ended: 1958
@@ -65,10 +68,16 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/366/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P571
+      wikidata: Q131585199
   creator:
     - url: https://collection.kunsthaus.ch/de/collection/item/366/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P170
+      wikidata: Q131585199
   dimensions:
     - url: https://collection.kunsthaus.ch/de/collection/item/366/
       source: kunsthaus-zurich-sammlung-online
@@ -77,7 +86,13 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/366/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P195
+      wikidata: Q131585199
   inventory_number:
     - url: https://collection.kunsthaus.ch/de/collection/item/366/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P217
+      wikidata: Q131585199

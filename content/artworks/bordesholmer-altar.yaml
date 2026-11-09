@@ -1,0 +1,46 @@
+public_id: 117074
+title_lang: de
+title: Bordesholmer Altar
+names:
+  - lang: de
+    role: translation
+    text: Bordesholmer Altar
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3432285
+  - lang: en
+    role: translation
+    text: Bordesholm altarpiece
+creator: hans-bruggemann
+created: 1521
+medium: Eichenholz, ungefasst
+materials: [oak]
+dimensions: [1260]
+institution: schleswig-cathedral
+wikidata_id: Q3432285
+metadata:
+  sources: [Wikidata Q3432285 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/20/Brueggemann-altar.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Brueggemann-altar.jpg
+    license: CC BY-SA 3.0
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q3432285
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)

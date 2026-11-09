@@ -1,0 +1,60 @@
+public_id: 117219
+title_lang: pt
+title: Atlas Miller
+names:
+  - lang: fr
+    role: translation
+    text: Atlas Miller
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2869450
+  - lang: it
+    role: translation
+    text: Atlante Miller
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2869450
+  - lang: ru
+    role: translation
+    text: Атлас Миллера
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2869450
+  - lang: en
+    role: translation
+    text: Miller Atlas
+creator: lopo-homem
+created: 1519
+medium: manuscript on parchment
+materials: [parchment]
+dimensions: [42, 59]
+institution: bibliotheque-nationale-de-france
+wikidata_id: Q2869450
+metadata:
+  sources: [Wikidata Q2869450 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Atlas_nautique_du_Monde%2C_dit_atlas_Miller._1%2C_Atlas_Miller_-_h%C3%A9misph%C3%A8re_portugais_et_page_de_titre_-_btv1b55002620g_%281_of_2%29.jpg/1280px-Atlas_nautique_du_Monde%2C_dit_atlas_Miller._1%2C_Atlas_Miller_-_h%C3%A9misph%C3%A8re_portugais_et_page_de_titre_-_btv1b55002620g_%281_of_2%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Atlas_nautique_du_Monde,_dit_atlas_Miller._1,_Atlas_Miller_-_h%C3%A9misph%C3%A8re_portugais_et_page_de_titre_-_btv1b55002620g_(1_of_2).jpg
+    license: Public domain
+    credit: Homem, Lopo. Cartographe
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 16
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 16
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q2869450
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 16
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 16
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q2869450

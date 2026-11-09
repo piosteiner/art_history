@@ -1,0 +1,21 @@
+public_id: 117197
+name: Odo, Earl of Kent
+kind: person
+birth: 1030/1039
+death: 1097-01-12
+wikidata_id: Q49961
+metadata:
+  sources: [Wikidata Q49961 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q49961
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q49961
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q49961

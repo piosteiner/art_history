@@ -1,0 +1,16 @@
+public_id: 117188
+name: Couesnon
+kind: natural
+location: [-1.5122, 48.6175]
+wikidata_id: Q632961
+metadata:
+  sources: [Wikidata Q632961 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q632961
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q632961

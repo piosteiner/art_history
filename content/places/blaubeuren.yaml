@@ -1,0 +1,16 @@
+public_id: 117009
+name: Blaubeuren
+kind: settlement
+location: [9.785, 48.41194]
+wikidata_id: Q505955
+metadata:
+  sources: [Wikidata Q505955 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q505955
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q505955

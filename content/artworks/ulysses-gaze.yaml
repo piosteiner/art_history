@@ -73,6 +73,19 @@ description_md: A statue of Lenin, taken apart and reassembled like a body in a 
 wikidata_id: Q668280
 metadata:
   sources: [Wikidata Q668280 (retrieved 2026-11-07)]
+relationships:
+  - type: created_in_polity
+    to: polity/france
+    sources:
+      - accessed: 2026-11-08
+        property: P495
+        wikidata: Q668280
+  - type: created_in_polity
+    to: polity/italy
+    sources:
+      - accessed: 2026-11-08
+        property: P495
+        wikidata: Q668280
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Sarajevo_Siege_Gathering_Firewood.jpg/1280px-Sarajevo_Siege_Gathering_Firewood.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Sarajevo_Siege_Gathering_Firewood.jpg

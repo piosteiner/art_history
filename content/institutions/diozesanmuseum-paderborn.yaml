@@ -1,0 +1,46 @@
+public_id: 116999
+name: Diözesanmuseum Paderborn
+names:
+  - lang: fr
+    role: translation
+    text: musée diocésain de Paderborn
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1363869
+  - lang: de
+    role: translation
+    text: Erzbischöfliches Diözesanmuseum Paderborn
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1363869
+kind: museum
+place: paderborn
+location: [8.75514, 51.7185]
+website_url: http://www.dioezesanmuseum-paderborn.de
+wikidata_id: Q1363869
+metadata:
+  sources: [Wikidata Q1363869 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Paderborn_Dioezesanmuseum.jpg/1280px-Paderborn_Dioezesanmuseum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paderborn_Dioezesanmuseum.jpg
+    license: Public domain
+    credit: Alexander Pelzer
+identifiers:
+  bnf: 17130408s
+  gnd: 2040904-7
+  idref: "060900997"
+  lc: n81006950
+  viaf: "134429625"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1363869
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1363869
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1363869

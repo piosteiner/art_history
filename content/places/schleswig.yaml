@@ -1,0 +1,16 @@
+public_id: 117041
+name: Schleswig
+kind: settlement
+location: [9.56972, 54.51528]
+wikidata_id: Q501661
+metadata:
+  sources: [Wikidata Q501661 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q501661
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q501661

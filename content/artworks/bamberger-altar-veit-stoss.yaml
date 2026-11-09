@@ -1,0 +1,54 @@
+public_id: 117066
+title_lang: de
+title: Bamberger Altar
+names:
+  - lang: de
+    role: translation
+    text: Bamberger Altar
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q11801526
+  - lang: en
+    role: translation
+    text: Veit Stoss altar in Bamberger Dom
+creator: veit-stoss
+created: 1520/1523
+medium: Tannenholz (Tragwerk), Lindenholz (Figuren, Reliefs), ungefasst
+materials: [lime, fir wood]
+dimensions: [355]
+institution: bamberg-cathedral
+wikidata_id: Q11801526
+metadata:
+  sources: [Wikidata Q11801526 (retrieved 2026-11-09)]
+relationships:
+  - type: associated_with
+    to: movement/gothic
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q11801526
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Bamberger_Dom_BW_13.JPG/1280px-Bamberger_Dom_BW_13.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Bamberger_Dom_BW_13.JPG
+    license: CC BY-SA 3.0
+    credit: Berthold Werner
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q11801526
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)

@@ -1,0 +1,61 @@
+public_id: 117131
+title: Moutier-Grandval Bible
+names:
+  - lang: fr
+    role: translation
+    text: Bible de Moutier-Grandval
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1543043
+  - lang: de
+    role: translation
+    text: Grandval-Bibel
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1543043
+creator: basilica-of-st-martin-tours
+created: 835
+medium: manuscript on parchment
+materials: [parchment]
+institution: british-library
+inventory_number: Add MS 10546
+wikidata_id: Q1543043
+metadata:
+  sources: [Wikidata Q1543043 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/abbaye-saint-martin-de-tours
+    sources:
+      - accessed: 2026-11-09
+        property: P1071
+        wikidata: Q1543043
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/AdamEveMoutierGrandvalBibleBritLibAddMS10546Fol5b.jpg/1280px-AdamEveMoutierGrandvalBibleBritLibAddMS10546Fol5b.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:AdamEveMoutierGrandvalBibleBritLibAddMS10546Fol5b.jpg
+    license: Public domain
+    credit: from the Middle Ages, unknown
+identifiers:
+  gnd: 4145230-6
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 2 (3.10.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1543043
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q1543043
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 2 (3.10.2024)
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q1543043
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q1543043

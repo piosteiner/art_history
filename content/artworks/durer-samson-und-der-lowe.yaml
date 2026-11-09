@@ -1,0 +1,112 @@
+public_id: 117117
+title_lang: en
+title: Samson Rending the Lion
+names:
+  - lang: en
+    role: original
+    text: Samson and the Lion
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q18339642
+  - lang: en
+    role: original
+    text: Samson Killing the Lion
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q18339642
+  - text: Simson and the Lion
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q18339642
+  - text: Samson rending the lion
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q18339642
+  - lang: nl
+    role: translation
+    text: Simson en de leeuw
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q18339642
+  - lang: fr
+    role: translation
+    text: Samson tuant le lion
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q18339642
+  - lang: de
+    role: translation
+    text: Samson und der Löwe
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q18339642
+  - lang: it
+    role: translation
+    text: Sansone uccide il leone
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q18339642
+  - lang: en
+    role: alternative
+    text: Samson Fighting with the Lion
+creator: albrecht-durer
+created: 1497/1498
+created_label: c. 1490s
+created_span: uncertain
+medium: woodcut
+materials: [paper]
+dimensions: [38, 27.8]
+institution: metropolitan-museum-of-art
+inventory_number: 19.73.148
+web_url: https://sempub.ub.uni-heidelberg.de/duerer.online/wisski/navigate/42043/view
+wikidata_id: Q18339642
+metadata:
+  sources: [Wikidata Q18339642 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/nuremberg
+    sources:
+      - accessed: 2026-11-09
+        property: P1071
+        wikidata: Q18339642
+  - type: associated_with
+    to: movement/german-renaissance
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q18339642
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Albrecht_D%C3%BCrer%2C_Samson_Fighting_with_the_Lion%2C_c._1497-1498%2C_NGA_49057.jpg/1280px-Albrecht_D%C3%BCrer%2C_Samson_Fighting_with_the_Lion%2C_c._1497-1498%2C_NGA_49057.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer,_Samson_Fighting_with_the_Lion,_c._1497-1498,_NGA_49057.jpg
+    license: CC0
+    credit: Albrecht Dürer
+identifiers:
+  gnd: 106047011X
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 9 (28.11.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q18339642
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q18339642
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q18339642
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q18339642
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q18339642
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q18339642

@@ -1,0 +1,83 @@
+public_id: 117092
+title_lang: de
+title: Limburger Staurothek
+names:
+  - lang: fr
+    role: translation
+    text: staurothèque de Limbourg-sur-la-Lahn
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1748749
+  - lang: de
+    role: translation
+    text: Limburger Staurothek
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1748749
+  - lang: it
+    role: translation
+    text: Stauroteca di Limburgo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1748749
+  - lang: ja
+    role: translation
+    text: リンブルクの聖遺物容器
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1748749
+  - lang: ru
+    role: translation
+    text: Лимбургская ставротека
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1748749
+  - lang: en
+    role: translation
+    text: Limburg Staurotheke
+created: 10th century
+created_span: uncertain
+medium: Holz, Gold, Email, Edelsteine
+materials: [gold, vitreous enamel, gemstone, pearl]
+dimensions: [48, 35, 6]
+institution: limburg-cathedral
+wikidata_id: Q1748749
+metadata:
+  sources: [Wikidata Q1748749 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/constantinople
+    sources:
+      - accessed: 2026-11-09
+        property: P1071
+        wikidata: Q1748749
+  - type: associated_with
+    to: movement/macedonian-renaissance
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q1748749
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/LM_Staurothek_cover.JPG/1280px-LM_Staurothek_cover.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:LM_Staurothek_cover.JPG
+    license: CC BY-SA 4.0
+    credit: Warburg
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 47
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1748749
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q1748749
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 47
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q1748749

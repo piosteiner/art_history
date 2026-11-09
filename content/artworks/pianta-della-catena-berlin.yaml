@@ -1,0 +1,60 @@
+public_id: 117169
+title_lang: it
+title: Pianta della Catena (Veduta di Firenze)
+names:
+  - lang: de
+    role: translation
+    text: Die große Ansicht von Florenz (Der "Kettenplan")
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q107171941
+  - lang: it
+    role: translation
+    text: Pianta della catena
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q107171941
+  - lang: en
+    role: translation
+    text: Chain map
+creator: lucantonio-degli-uberti
+created: 1500/1509
+created_label: c. 1500s
+created_span: uncertain
+medium: woodcut on eight sheets
+dimensions: [58.5]
+institution: kupferstichkabinett-berlin
+inventory_number: 899-100
+web_url: https://smb.museum-digital.de/index.php?t=objekt&oges=97597&versioning=2021-01-30%2003:09:44
+wikidata_id: Q107171941
+metadata:
+  sources: [Wikidata Q107171941 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Lucantonio_degli_Uberti_%3F_-_Die_gro%C3%9Fe_Ansicht_von_Florenz_%28Der_%22Kettenplan%22%29.jpg/1280px-Lucantonio_degli_Uberti_%3F_-_Die_gro%C3%9Fe_Ansicht_von_Florenz_%28Der_%22Kettenplan%22%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lucantonio_degli_Uberti_%3F_-_Die_gro%C3%9Fe_Ansicht_von_Florenz_(Der_%22Kettenplan%22).jpg
+    license: Public domain
+    credit: After Francesco Rosselli / Possibly Lucantonio degli Uberti
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 9 (28.11.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q107171941
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q107171941
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q107171941
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q107171941
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q107171941

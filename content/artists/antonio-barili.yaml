@@ -1,0 +1,58 @@
+public_id: 116924
+name: Antonio Barile
+given_name: Antonio
+family_name: Barile
+names:
+  - text: Di Antonio Barile
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5565880
+  - text: Antonio Barili
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5565880
+  - text: Antonio di Neri di Antonio Barile
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5565880
+  - text: Di Antonio Barili
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5565880
+  - text: Antonio Di Neri Barile
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5565880
+  - text: Antonio da Siena Barili
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5565880
+  - text: Antonio Di Neri Barili
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5565880
+  - lang: nl
+    role: translation
+    text: Antonio da Neri di Barile
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5565880
+birth: 1453-08-21
+death: 1516-03-01
+wikidata_id: Q5565880
+metadata:
+  sources: [Wikidata Q5565880 (retrieved 2026-11-09)]
+identifiers:
+  gnd: "133173828"
+  rkd: "4462"
+  ulan: "500010990"
+  viaf: "62729871"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q5565880
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q5565880

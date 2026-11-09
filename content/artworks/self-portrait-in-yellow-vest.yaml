@@ -23,6 +23,13 @@ inventory_number: "31157"
 wikidata_id: Q18684899
 metadata:
   sources: [Wikidata Q18684899 (retrieved 2026-10-19)]
+relationships:
+  - type: depicts_person
+    to: artist/egon-schiele
+    sources:
+      - accessed: 2026-11-08
+        property: P180
+        wikidata: Q18684899
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Egon_Schiele_-_Self-Portrait_in_Yellow_Vest%2C_1914_-_Google_Art_Project.jpg/1280px-Egon_Schiele_-_Self-Portrait_in_Yellow_Vest%2C_1914_-_Google_Art_Project.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Self-Portrait_in_Yellow_Vest,_1914_-_Google_Art_Project.jpg

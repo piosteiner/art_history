@@ -5,6 +5,21 @@ names:
   - lang: en
     role: translation
     text: Hall of Realms battle series
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q114039888
+  - lang: fr
+    role: translation
+    text: Série des batailles
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q114039888
+  - lang: es
+    role: translation
+    text: Serie de batallas
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q114039888
 parts_count: 12
 attribution_label: Velázquez, Zurbarán, Maíno, Carducho, Cajés and others
 created: 1634/1635

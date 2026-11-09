@@ -1,0 +1,38 @@
+public_id: 116923
+name: Anton Mozart
+given_name: Anton
+family_name: Mozart
+names:
+  - text: Alton Mozart
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q18574749
+  - text: mozart anton
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q18574749
+birth: 1573
+death: 1625-05-13
+wikidata_id: Q18574749
+metadata:
+  sources: [Wikidata Q18574749 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a9/AntonMozart.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:AntonMozart.JPG
+    license: Public domain
+    credit: Anton Mozart
+identifiers:
+  bnf: 12564986j
+  gnd: "118785176"
+  rkd: "58090"
+  ulan: "500001187"
+  viaf: "37712373"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q18574749
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q18574749

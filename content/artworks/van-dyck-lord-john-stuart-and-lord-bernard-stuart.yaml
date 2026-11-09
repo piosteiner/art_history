@@ -1,0 +1,91 @@
+public_id: 117140
+title_lang: en
+title: Lord John Stuart and his Brother, Lord Bernard Stuart
+names:
+  - lang: nl
+    role: translation
+    text: Ritratto di Lord John e Lord Bernard Stuart
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3937593
+  - lang: fr
+    role: translation
+    text: Lord John Stuart et son frère, lord Bernard Stuart
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3937593
+  - lang: ja
+    role: translation
+    text: ジョン・ステュアート卿と弟バーナード・ステュアート卿の肖像
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3937593
+  - lang: zh
+    role: translation
+    text: 約翰·斯圖亞特勛爵和他的兄弟伯納德·斯圖亞特勛爵
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3937593
+creator: anthony-van-dyck
+created: c. 1638
+created_span: uncertain
+medium: oil on canvas
+materials: [oil paint, canvas]
+dimensions: [237.5, 146.1]
+institution: national-gallery-london
+inventory_number: NG6518
+wikidata_id: Q3937593
+metadata:
+  sources: [Wikidata Q3937593 (retrieved 2026-11-09)]
+relationships:
+  - type: depicts_person
+    to: person/lord-bernard-stewart
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q3937593
+  - type: depicts_person
+    to: person/lord-john-stewart
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q3937593
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q3937593
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Sir-Anthony-van-Dyck-Lord-John-Stuart-and-His-Brother-Lord-Bernard-Stuart.jpg/1280px-Sir-Anthony-van-Dyck-Lord-John-Stuart-and-His-Brother-Lord-Bernard-Stuart.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sir-Anthony-van-Dyck-Lord-John-Stuart-and-His-Brother-Lord-Bernard-Stuart.jpg
+    license: Public domain
+    credit: Anthony van Dyck
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 30
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q3937593
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q3937593
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q3937593
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q3937593
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q3937593
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q3937593

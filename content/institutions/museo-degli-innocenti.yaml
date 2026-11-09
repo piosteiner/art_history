@@ -1,0 +1,16 @@
+public_id: 117163
+name: Museo degli Innocenti
+kind: museum
+founded: 1971
+wikidata_id: Q55373729
+metadata:
+  sources: [Wikidata Q55373729 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q55373729
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q55373729

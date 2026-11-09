@@ -1,0 +1,23 @@
+public_id: 117203
+name: Herod Antipas
+given_name: Herod
+family_name: Antipas
+kind: person
+birth: -20
+death: 39
+wikidata_id: Q192950
+metadata:
+  sources: [Wikidata Q192950 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q192950
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q192950
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q192950

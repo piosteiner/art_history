@@ -36,9 +36,14 @@ materials: [oil paint, canvas]
 dimensions: [75.1, 75.1]
 institution: leopold-museum
 inventory_number: LM 2007
+location: [13.17207, 47.59834]
 wikidata_id: Q19912822
 metadata:
   sources: [Wikidata Q19912822 (retrieved 2026-10-19)]
+relationships:
+  - type: created_in
+    to: place/golling-an-der-salzach
+    period: 1899
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Gustav_Klimt_-_Tranquil_Pond_%28Egelsee_near_Golling%2C_Salzburg%29_-_Google_Art_Project.jpg/1280px-Gustav_Klimt_-_Tranquil_Pond_%28Egelsee_near_Golling%2C_Salzburg%29_-_Google_Art_Project.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Tranquil_Pond_(Egelsee_near_Golling,_Salzburg)_-_Google_Art_Project.jpg
@@ -119,6 +124,10 @@ sources:
   creator:
     - accessed: 2026-10-19
       property: P170
+      wikidata: Q19912822
+  location:
+    - accessed: 2026-11-08
+      property: P625
       wikidata: Q19912822
   materials:
     - accessed: 2026-10-19

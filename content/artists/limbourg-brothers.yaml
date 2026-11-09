@@ -1,0 +1,106 @@
+public_id: 116974
+name: Limbourg brothers
+names:
+  - text: Gebroeders van Limburg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q217816
+  - text: de Limbourg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q217816
+  - text: Limburg family
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q217816
+  - text: de Limbourg family
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q217816
+  - text: de, family Limbourg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q217816
+  - text: Limbourc
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q217816
+  - text: Limbourg family
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q217816
+  - text: Gebroeders Van Lymborgh
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q217816
+  - text: Limburg brothers
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q217816
+  - lang: nl
+    role: translation
+    text: Gebroeders Van Lymborch
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q217816
+  - lang: fr
+    role: translation
+    text: frères de Limbourg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q217816
+  - lang: de
+    role: translation
+    text: Brüder von Limburg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q217816
+  - lang: it
+    role: translation
+    text: fratelli Limbourg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q217816
+  - lang: es
+    role: translation
+    text: hermanos Limbourg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q217816
+  - lang: ja
+    role: translation
+    text: リンブルク兄弟
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q217816
+  - lang: zh
+    role: translation
+    text: 林堡兄弟
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q217816
+  - lang: ru
+    role: translation
+    text: Братья Лимбурги
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q217816
+active: 1402/1416
+wikidata_id: Q217816
+metadata:
+  sources: [Wikidata Q217816 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/dc/Personnages_de_la_sc%C3%A8ne_de_Janvier_%28Fr%C3%A8res_Limbourg_%3F%29_-_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_%28f.1%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Personnages_de_la_sc%C3%A8ne_de_Janvier_(Fr%C3%A8res_Limbourg_%3F)_-_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_(f.1).jpg
+    license: Public domain
+    credit: Limbourg brothers
+identifiers:
+  bnf: "140062043"
+  rkd: "271515"
+  ulan: "500115592"
+  viaf: "192149106324668492651"
+sources:
+  active:
+    - accessed: 2026-11-09
+      property: P1317
+      wikidata: Q217816

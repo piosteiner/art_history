@@ -1,0 +1,16 @@
+public_id: 116972
+name: Le Puy-en-Velay
+kind: settlement
+location: [3.885, 45.04333]
+wikidata_id: Q184359
+metadata:
+  sources: [Wikidata Q184359 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q184359
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q184359

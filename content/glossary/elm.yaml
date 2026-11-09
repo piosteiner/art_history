@@ -1,0 +1,64 @@
+public_id: 116903
+name: elm wood
+names:
+  - text: elm
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q29472910
+  - lang: nl
+    role: translation
+    text: olm
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q29472910
+  - lang: fr
+    role: translation
+    text: orme
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q29472910
+  - lang: de
+    role: translation
+    text: Ulmenholz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q29472910
+  - lang: it
+    role: translation
+    text: legno di olmo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q29472910
+  - lang: es
+    role: translation
+    text: madera de olmo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q29472910
+  - lang: zh
+    role: translation
+    text: 榆林
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q29472910
+  - lang: ru
+    role: translation
+    text: вяз
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q29472910
+category: material
+parent: wood
+definition: type of wood
+wikidata_id: Q29472910
+metadata:
+  sources: [Wikidata Q29472910 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/aa/Furnier_ulme.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Furnier_ulme.jpg
+    license: CC BY-SA 3.0
+    credit: MatthiasKabel at German Wikipedia
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q29472910

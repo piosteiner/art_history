@@ -1,0 +1,80 @@
+public_id: 117042
+name: Schleswig Cathedral
+names:
+  - lang: nl
+    role: translation
+    text: Dom van Sleeswijk
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q523691
+  - lang: fr
+    role: translation
+    text: cathédrale de Schleswig
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q523691
+  - lang: de
+    role: translation
+    text: Schleswiger Dom
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q523691
+  - lang: it
+    role: translation
+    text: Cattedrale di Schleswig
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q523691
+  - lang: es
+    role: translation
+    text: Catedral de Schleswig
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q523691
+  - lang: ja
+    role: translation
+    text: シュレースヴィヒ聖堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q523691
+  - lang: zh
+    role: translation
+    text: 聖伯多祿大教堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q523691
+  - lang: ru
+    role: translation
+    text: Шлезвигский собор
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q523691
+place: schleswig
+location: [9.56918, 54.51359]
+address: Norderdomstraße 4, 24837 Schleswig
+website_url: https://www.mein-schleswiger-dom.de/
+wikidata_id: Q523691
+metadata:
+  sources: [Wikidata Q523691 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Slesvig_Domkirke_2026_S.jpg/1280px-Slesvig_Domkirke_2026_S.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Slesvig_Domkirke_2026_S.jpg
+    license: CC BY-SA 4.0
+    credit: Hjart
+identifiers:
+  gnd: 4197238-7
+  lc: n81102786
+  viaf: "145428186"
+sources:
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q523691
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q523691
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q523691

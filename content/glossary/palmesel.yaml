@@ -1,0 +1,27 @@
+public_id: 116909
+name: Palmesel
+names:
+  - text: Palm Donkey
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q318914
+  - lang: fr
+    role: translation
+    text: Christ des Rameaux
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q318914
+category: object type
+definition: sculpture of Christ on a donkey used during processions on Palm Sunday especially in south German roman-catholic tradition
+wikidata_id: Q318914
+metadata:
+  sources: [Wikidata Q318914 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Jesus_ane.jpg/1280px-Jesus_ane.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jesus_ane.jpg
+    license: Public domain
+    credit: KoS
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q318914

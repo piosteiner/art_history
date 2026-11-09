@@ -34,6 +34,12 @@ relationships:
   - type: created_in
     to: place/tokyo
     period: 13th century
+  - type: created_in_polity
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-08
+        property: P495
+        wikidata: Q107044952
   - type: associated_with
     to: movement/insei-period
     sources:

@@ -1,0 +1,16 @@
+public_id: 117089
+name: Limburg Cathedral
+kind: cathedral
+founded: 1001/1100
+wikidata_id: Q564957
+metadata:
+  sources: [Wikidata Q564957 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q564957
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q564957

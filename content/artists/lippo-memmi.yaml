@@ -1,0 +1,18 @@
+public_id: 117177
+name: Lippo Memmi
+given_name: Lippo
+family_name: Memmi
+birth: 1291
+death: 1356
+wikidata_id: Q504963
+metadata:
+  sources: [Wikidata Q504963 (retrieved 2026-11-09)]
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q504963
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q504963

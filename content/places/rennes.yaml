@@ -1,0 +1,16 @@
+public_id: 117189
+name: Rennes
+kind: settlement
+location: [-1.68083, 48.11417]
+wikidata_id: Q647
+metadata:
+  sources: [Wikidata Q647 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q647
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q647

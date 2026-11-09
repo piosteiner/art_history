@@ -1,0 +1,65 @@
+public_id: 117054
+name: Reykjavik
+names:
+  - lang: ja
+    role: translation
+    text: レイキャヴィーク
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1764
+  - lang: zh
+    role: translation
+    text: 雷克雅維克
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1764
+  - lang: ko
+    role: translation
+    text: 레이캬비크
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1764
+  - lang: it
+    role: translation
+    text: Reykjavík
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1764
+  - lang: es
+    role: translation
+    text: Reikiavik
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1764
+  - lang: ru
+    role: translation
+    text: Рейкьявик
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1764
+  - lang: pt
+    role: translation
+    text: Reiquiavique
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1764
+kind: settlement
+parent: iceland
+country_code: IS
+location: [-21.935, 64.1475]
+wikidata_id: Q1764
+metadata:
+  sources: [Wikidata Q1764 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1764
+  parent:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1764
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1764

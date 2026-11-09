@@ -32,6 +32,13 @@ kind: anime
 wikidata_id: Q143276
 metadata:
   sources: [Wikidata Q143276 (retrieved 2026-11-06)]
+relationships:
+  - type: created_in_polity
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-08
+        property: P495
+        wikidata: Q143276
 sources:
   kind:
     - property: P31

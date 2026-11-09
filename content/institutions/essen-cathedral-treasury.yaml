@@ -1,0 +1,62 @@
+public_id: 116996
+name: Essen Cathedral Treasury
+names:
+  - text: Essener Domschatz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1368713
+  - lang: nl
+    role: translation
+    text: Essener domschat
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1368713
+  - lang: fr
+    role: translation
+    text: trésor de la cathédrale d'Essen
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1368713
+  - lang: it
+    role: translation
+    text: Tesoro della cattedrale di Essen
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1368713
+  - lang: zh
+    role: translation
+    text: 埃森大教堂的財政部
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1368713
+  - lang: ru
+    role: translation
+    text: Сокровищница Эссенского собора
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1368713
+kind: collection
+place: essen
+location: [7.01412, 51.45572]
+website_url: http://www.domschatz-essen.de
+wikidata_id: Q1368713
+metadata:
+  sources: [Wikidata Q1368713 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Domschatzkammer_mit_neuem_Anbau.jpg/1280px-Domschatzkammer_mit_neuem_Anbau.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Domschatzkammer_mit_neuem_Anbau.jpg
+    license: CC BY-SA 3.0
+    credit: Abbatissa
+identifiers:
+  gnd: 5162170-8
+  lc: n2009000063
+  viaf: "125719228"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1368713
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1368713

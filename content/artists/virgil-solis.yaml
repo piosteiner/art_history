@@ -1,0 +1,119 @@
+public_id: 116968
+name: Virgil Solis
+given_name: Virgil
+family_name: Solis
+names:
+  - text: Virgilius I Solis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - text: Vergilio Sole
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - text: Virgilius Solis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - text: Vergilius Solis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - text: Virgilius Solis the Elder
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - text: Virgilius, the elder Solis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - text: Virgilio Sole
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - text: Virgilius, I Solis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - text: Virgilius Solis (I)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - text: Virgil Solis (I)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - text: Virgilius Solis (1514)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - text: "Virgil: Solis"
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - text: virgil solls
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - text: virgil solis des alteren
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - text: solis virgil
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - text: V. Solis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - text: Solis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - lang: ja
+    role: translation
+    text: フィルギル・ゾリス
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - lang: zh
+    role: translation
+    text: 维吉尔·索利斯
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+  - lang: ru
+    role: translation
+    text: Виргилий Солис
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q563366
+birth: 1514
+death: 1562-08-11
+wikidata_id: Q563366
+metadata:
+  sources: [Wikidata Q563366 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Jenichen_Portrait_Virgil_Solis.jpg/1280px-Jenichen_Portrait_Virgil_Solis.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jenichen_Portrait_Virgil_Solis.jpg
+    license: Public domain
+    credit: Balthasar Jenichen
+identifiers:
+  bnf: 12558061g
+  gnd: "118615300"
+  idref: "034873945"
+  kulturnav: 8997667c-adcc-42b4-a3a4-b571295e063e
+  lc: n81017860
+  rkd: "73826"
+  ulan: "500007753"
+  viaf: "17337630"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q563366
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q563366

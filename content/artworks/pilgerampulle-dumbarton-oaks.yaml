@@ -1,0 +1,40 @@
+public_id: 117135
+title_lang: en
+title: Pilgrim flask with the Crucifixion and the Women at the Tomb
+names:
+  - lang: en
+    role: alternative
+    text: Pilgrim's Ampulla with (Symbolic) Crucifixion and Marys at the Tomb
+created: c. 600
+created_span: uncertain
+medium: lead
+materials: [lead]
+dimensions: [4.6]
+dimensions_note: 4.6 cm
+institution: dumbarton-oaks
+inventory_number: BZ.1948.18
+wikidata_id: Q111970658
+metadata:
+  sources: [Wikidata Q111970658 (retrieved 2026-11-09)]
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024)
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024)
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q111970658
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024)
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q111970658
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q111970658

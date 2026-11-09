@@ -1,0 +1,89 @@
+public_id: 116965
+name: Bibliothèque nationale de France
+names:
+  - text: BnF
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q193563
+  - text: Bibliotheque nationale de France
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q193563
+  - text: National library of France
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q193563
+  - lang: it
+    role: translation
+    text: Biblioteca nazionale di Francia
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q193563
+  - lang: es
+    role: translation
+    text: Biblioteca Nacional de Francia
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q193563
+  - lang: ja
+    role: translation
+    text: フランス国立図書館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q193563
+  - lang: zh
+    role: translation
+    text: 法國國家圖書館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q193563
+  - lang: ko
+    role: translation
+    text: 프랑스 국립도서관
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q193563
+  - lang: ru
+    role: translation
+    text: Национальная библиотека Франции
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q193563
+kind: library
+founded: 1994
+place: paris
+location: [2.37583, 48.83361]
+website_url: https://www.bnf.fr/
+collection_url: https://catalogue.bnf.fr
+wikidata_id: Q193563
+metadata:
+  sources: [Wikidata Q193563 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Biblioth%C3%A8que_Mitterrand_Mai_2022.jpg/1280px-Biblioth%C3%A8que_Mitterrand_Mai_2022.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Biblioth%C3%A8que_Mitterrand_Mai_2022.jpg
+    license: CC BY-SA 4.0
+    credit: Arthur Weidmann
+identifiers:
+  bnf: 12381002j
+  gnd: 5156217-0
+  idref: 03361122X
+  lc: no95028191
+  ulan: "500309981"
+  viaf: "137156173"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q193563
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q193563
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q193563
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q193563

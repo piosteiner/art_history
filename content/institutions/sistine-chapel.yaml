@@ -1,0 +1,91 @@
+public_id: 117030
+name: Sistine Chapel
+names:
+  - lang: nl
+    role: translation
+    text: Sixtijnse Kapel
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2943
+  - lang: fr
+    role: translation
+    text: chapelle Sixtine
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2943
+  - lang: de
+    role: translation
+    text: Sixtinische Kapelle
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2943
+  - lang: it
+    role: translation
+    text: cappella Sistina
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2943
+  - lang: es
+    role: translation
+    text: Capilla Sixtina
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2943
+  - lang: ja
+    role: translation
+    text: システィーナ礼拝堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2943
+  - lang: zh
+    role: translation
+    text: 西斯汀小堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2943
+  - lang: ko
+    role: translation
+    text: 시스티나 성당
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2943
+  - lang: ru
+    role: translation
+    text: Сикстинская капелла
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2943
+kind: chapel
+founded: 1473
+place: vatican-city
+location: [12.45443, 41.90296]
+website_url: https://www.museivaticani.va/content/museivaticani/fr.html
+wikidata_id: Q2943
+metadata:
+  sources: [Wikidata Q2943 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/82/Sistina-interno.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sistina-interno.jpg
+    license: CC BY-SA 3.0
+    credit: The original uploader was Snowdog at Italian Wikipedia.
+identifiers:
+  bnf: "139022841"
+  gnd: 4104970-6
+  lc: n96096549
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q2943
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q2943
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q2943
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q2943

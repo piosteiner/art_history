@@ -1,0 +1,41 @@
+public_id: 117276
+title_lang: de
+title: Heimsuchungsgruppe aus dem Passauer Dom
+created: c. 1420
+created_span: uncertain
+kind: sculpture
+medium: Sandstein, Ton (Embryonen)
+materials: [sandstone]
+dimensions: [96]
+institution: germanisches-nationalmuseum
+inventory_number: Pl.O.2401
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ab/Visitazione%2C_passau%2C_1425_ca_01.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Visitazione,_passau,_1425_ca_01.JPG
+    license: CC BY-SA 3.0
+    credit: Unknown author, Wikimedia Commons
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 100
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 100
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 100
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 100
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 100
+  created_span:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 100
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 100
+  inventory_number:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 100

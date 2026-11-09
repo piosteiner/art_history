@@ -11,6 +11,8 @@ names:
         note: title on the museum's page (German site)
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-04
+      - accessed: 2026-11-08
+        wikidata: Q105714380
   - lang: en
     role: translation
     text: The Russian Wedding
@@ -20,6 +22,14 @@ names:
         note: title on the museum's page (German site)
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-04
+      - accessed: 2026-11-08
+        wikidata: Q105714380
+  - lang: it
+    role: translation
+    text: Il matrimonio russo
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q105714380
 creator: marc-chagall
 created: 1909
 kind: oil painting
@@ -31,6 +41,8 @@ web_url: https://collection.kunsthaus.ch/de/collection/item/600973/
 on_loan: true
 on_loan_since: 2021
 wikidata_id: Q105714380
+metadata:
+  sources: [Wikidata Q105714380 (retrieved 2026-11-08)]
 provenance:
   - owner: person/maxim-moissejewitsch-vinaver
     acquired: 1909
@@ -128,10 +140,16 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/600973/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P571
+      wikidata: Q105714380
   creator:
     - url: https://collection.kunsthaus.ch/de/collection/item/600973/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-03
+    - accessed: 2026-11-08
+      property: P170
+      wikidata: Q105714380
   on_loan:
     - url: https://collection.kunsthaus.ch/de/collection/item/600973/
       source: kunsthaus-zurich-sammlung-online

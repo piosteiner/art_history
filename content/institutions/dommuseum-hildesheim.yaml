@@ -1,0 +1,60 @@
+public_id: 116995
+name: Hildesheim Cathedral Museum
+names:
+  - lang: fr
+    role: translation
+    text: musée de la cathédrale de Hildesheim
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q827564
+  - lang: de
+    role: translation
+    text: Dommuseum Hildesheim
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q827564
+  - lang: it
+    role: translation
+    text: Museo della cattedrale di Hildesheim
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q827564
+  - lang: es
+    role: translation
+    text: Museo Catedralicio de Hildesheim
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q827564
+  - lang: ru
+    role: translation
+    text: Музей Хильдесхаймского собора
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q827564
+place: hildesheim
+location: [9.94755, 52.14929]
+website_url: https://www.dommuseum-hildesheim.de
+wikidata_id: Q827564
+metadata:
+  sources: [Wikidata Q827564 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Neues_Hildesheimer_Dom_Museum.jpg/1280px-Neues_Hildesheimer_Dom_Museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Neues_Hildesheimer_Dom_Museum.jpg
+    license: CC BY-SA 4.0
+    credit: GodeNehler
+identifiers:
+  bnf: 12365662m
+  gnd: 2171217-7
+  idref: "033234620"
+  lc: no98130689
+  ulan: "500300337"
+  viaf: "157832483"
+sources:
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q827564
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q827564

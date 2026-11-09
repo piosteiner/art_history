@@ -1,0 +1,44 @@
+public_id: 117220
+title_lang: de
+title: Der Augsburger Kunstschrank
+names:
+  - text: Augsburgska konstskåpet
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q10422378
+  - lang: ru
+    role: translation
+    text: Художественный кабинет Аугсбурга
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q10422378
+  - lang: en
+    role: translation
+    text: Augsburg Art Cabinet
+created: 1633
+medium: Ebenholz, Silber, Edelsteine
+materials: [ebony, silver]
+institution: uppsala-university
+wikidata_id: Q10422378
+metadata:
+  sources: [Wikidata Q10422378 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/The_Augsburg_art_cabinet_in_Gustavianum%2C_Uppsala_University_Museum%2C_Sweden_1.jpg/1280px-The_Augsburg_art_cabinet_in_Gustavianum%2C_Uppsala_University_Museum%2C_Sweden_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Augsburg_art_cabinet_in_Gustavianum,_Uppsala_University_Museum,_Sweden_1.jpg
+    license: CC0
+    credit: Svante.tiren
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q10422378
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024)
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q10422378

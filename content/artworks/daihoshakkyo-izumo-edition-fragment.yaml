@@ -12,6 +12,8 @@ medium: Ink on paper
 materials: [ink, paper]
 dimensions: [27, 14.6]
 institution: kyoto-national-museum
+inventory_number: B甲414-4
+web_url: https://colbase.nich.go.jp/collection_items/kyohaku/B%E7%94%B2414-4
 region: east_asia
 description_md: A leaf from a copy of the Daihōshakkyō (Sutra Treasury of the Buddhist Law), part of a collection of forty-nine sutras. The paper is coloured, with a border of chrysanthemums at the top, and the writing is in a formal clerical script with thick strokes. Attributed to [[person/empress-komyo]], consort of Emperor Shōmu. [[source/history-of-japanese-art|p. 47, fig. 49]]
 relationships:
@@ -20,6 +22,18 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 47, fig. 49
+  - type: designated_as
+    to: term/national-treasure-japan
+    notes_md: Kyoto National Museum
+    sources:
+      - url: https://colbase.nich.go.jp/collection_items/kyohaku/B%E7%94%B2414-4
+        source: colbase
+        accessed: 2026-11-08
+images:
+  - url: https://colbase.nich.go.jp/media/kyohaku/B%E7%94%B2414-4/image/slideshow_s/80303_difile3-L.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/kyohaku/B%E7%94%B2414-4
+    license: CC BY 4.0
+    credit: Kyoto National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -39,3 +53,7 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: p. 47, fig. 49
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/kyohaku/B%E7%94%B2414-4
+      source: colbase
+      accessed: 2026-11-08

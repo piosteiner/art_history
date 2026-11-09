@@ -1,0 +1,61 @@
+public_id: 117109
+title_lang: de
+title: Talheimer Altar
+names:
+  - lang: de
+    role: translation
+    text: Talheimer Altar
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q135686602
+  - lang: en
+    role: translation
+    text: Altar of Talheim
+creator: niklaus-weckmann
+created: 1520
+medium: Linden- und Tannenholz, originale Fassung
+materials: [lime, fir wood]
+dimensions: [243.5]
+institution: landesmuseum-wurttemberg
+inventory_number: WLM 1956-22
+wikidata_id: Q135686602
+metadata:
+  sources: [Wikidata Q135686602 (retrieved 2026-11-09)]
+relationships:
+  - type: co_creator
+    to: artist/master-of-the-talheimer-altars
+    sources:
+      - accessed: 2026-11-09
+        property: P170
+        wikidata: Q135686602
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Landesmuseum_W%C3%BCrttemberg-Talheimer_Altar-0231355.jpg/1280px-Landesmuseum_W%C3%BCrttemberg-Talheimer_Altar-0231355.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Landesmuseum_W%C3%BCrttemberg-Talheimer_Altar-0231355.jpg
+    license: Public domain
+    credit: Wuselig
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q135686602
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q135686602
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q135686602
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q135686602

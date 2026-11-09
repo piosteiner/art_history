@@ -1,0 +1,79 @@
+public_id: 116948
+name: Ludwig Richter
+given_name: Ludwig
+family_name: Richter
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Adrian Ludwig Richter
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q551896
+  - text: Ludwig Adrian Richter
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q551896
+  - text: Ludṿig Rikhṭer
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q551896
+  - text: Adrian Ludwig Rcihter
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q551896
+  - text: Adrian Richter
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q551896
+  - text: L. Richter
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q551896
+  - lang: ja
+    role: translation
+    text: アドリアン・ルートヴィヒ・リヒター
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q551896
+  - lang: zh
+    role: translation
+    text: 路德维希·里克特
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q551896
+  - lang: ru
+    role: translation
+    text: Адриан Людвиг Рихтер
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q551896
+birth: 1803-09-28
+death: 1884-06-19
+wikidata_id: Q551896
+metadata:
+  sources: [Wikidata Q551896 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Wilhelm_von_K%C3%BCgelgen_-_Bildnis_Ludwig_Richter%2C_1836.jpg/1280px-Wilhelm_von_K%C3%BCgelgen_-_Bildnis_Ludwig_Richter%2C_1836.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wilhelm_von_K%C3%BCgelgen_-_Bildnis_Ludwig_Richter,_1836.jpg
+    license: Public domain
+    credit: Wilhelm von Kügelgen
+identifiers:
+  bnf: 12000765z
+  dome: "11696"
+  gnd: "118600486"
+  idref: "028107330"
+  kulturnav: 1c6602a3-b249-4962-b445-7cf11c113453
+  lc: n50045834
+  rkd: "66709"
+  ulan: "500018286"
+  viaf: "100213038"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q551896
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q551896

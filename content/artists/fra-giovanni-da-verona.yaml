@@ -1,0 +1,68 @@
+public_id: 116930
+name: Fra Giovanni da Verona
+given_name: Fra Giovanni
+family_name: da Verona
+names:
+  - text: Giovanni da Verona
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3749194
+  - text: Don Giovanni di Marco da Verona
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3749194
+  - text: Fra Giovanni Olivetano
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3749194
+  - text: Giovanni di Marco de Tachis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3749194
+  - text: Fra' Giovanni da Verona
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3749194
+  - text: Fra Giovanni
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3749194
+  - text: Giovanni di Marco de Tacca
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3749194
+  - text: Giovanni da Monte Oliveto
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3749194
+  - lang: ru
+    role: translation
+    text: Фра Джованни да Верона
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3749194
+birth: 1457
+death: 1525-02-10
+wikidata_id: Q3749194
+metadata:
+  sources: [Wikidata Q3749194 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Ritratto_Giovanni_da_Verona_Sodoma_Monte_Oliveto.jpg/1280px-Ritratto_Giovanni_da_Verona_Sodoma_Monte_Oliveto.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ritratto_Giovanni_da_Verona_Sodoma_Monte_Oliveto.jpg
+    license: Public domain
+    credit: Sailko
+identifiers:
+  gnd: "122525493"
+  lc: n87908732
+  rkd: "31871"
+  ulan: "500141990"
+  viaf: "96651037"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q3749194
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q3749194

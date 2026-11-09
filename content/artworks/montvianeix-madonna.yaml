@@ -1,0 +1,55 @@
+public_id: 117128
+title_lang: en
+title: Enthroned Virgin and Child (Montvianeix Madonna)
+names:
+  - lang: en
+    role: alternative
+    text: Enthroned Virgin and Child
+created: 1150/1200
+medium: walnut, remains of polychromy over gesso and canvas
+materials: [walnut wood, tin, linen, white lead, lapis lazuli, carbon black, lac dye, canvas]
+dimensions: [68.6, 28.6, 27.9]
+institution: metropolitan-museum-of-art
+inventory_number: "67.153"
+web_url: https://journals.openedition.org/techne/11805
+wikidata_id: Q20201067
+metadata:
+  sources: [Wikidata Q20201067 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/auvergne
+    sources:
+      - accessed: 2026-11-09
+        property: P1071
+        wikidata: Q20201067
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Enthroned_Virgin_and_Child_MET_DP102902.jpg/1280px-Enthroned_Virgin_and_Child_MET_DP102902.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Enthroned_Virgin_and_Child_MET_DP102902.jpg
+    license: CC0
+    credit: anonymous
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q20201067
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q20201067
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024)
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q20201067
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q20201067
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q20201067

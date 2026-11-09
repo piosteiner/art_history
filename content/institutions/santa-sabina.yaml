@@ -1,0 +1,95 @@
+public_id: 116955
+name: Basilica of Saint Sabina
+names:
+  - text: Saint Sabina
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q592244
+  - lang: nl
+    role: translation
+    text: Santa Sabina
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q592244
+  - lang: fr
+    role: translation
+    text: église Sainte-Sabine de Rome
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q592244
+  - lang: de
+    role: translation
+    text: Basilika Santa Sabina
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q592244
+  - lang: it
+    role: translation
+    text: basilica di Santa Sabina
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q592244
+  - lang: es
+    role: translation
+    text: basílica de Santa Sabina
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q592244
+  - lang: ja
+    role: translation
+    text: サンタ・サビーナ聖堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q592244
+  - lang: zh
+    role: translation
+    text: 聖撒比納聖殿
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q592244
+  - lang: ko
+    role: translation
+    text: 산타 사비나 성당
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q592244
+  - lang: ru
+    role: translation
+    text: Санта-Сабина
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q592244
+kind: basilica
+founded: 5th century
+place: rome
+location: [12.47972, 41.88444]
+website_url: https://basilicasantasabina.it/
+wikidata_id: Q592244
+metadata:
+  sources: [Wikidata Q592244 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Santa_Sabina_%28Rome%29_-_Esterno.jpg/1280px-Santa_Sabina_%28Rome%29_-_Esterno.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Santa_Sabina_(Rome)_-_Esterno.jpg
+    license: CC BY-SA 4.0
+    credit: Fiat 500e
+identifiers:
+  gnd: 4470616-9
+  lc: n85118301
+  viaf: "140783632"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q592244
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q592244
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q592244
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q592244

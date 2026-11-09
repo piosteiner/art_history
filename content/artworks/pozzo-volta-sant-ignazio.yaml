@@ -1,0 +1,53 @@
+public_id: 117172
+title_lang: it
+title: Gloria di sant'Ignazio
+names:
+  - lang: en
+    role: translation
+    text: Apotheosis of Saint Ignatius
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q112401018
+  - lang: de
+    role: translation
+    text: Die Apotheose des Heiligen Ignatius
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q112401018
+  - lang: it
+    role: alternative
+    text: L'apoteosi di Sant'Ignazio
+creator: andrea-pozzo
+created: 1694
+medium: fresco
+institution: sant-ignazio-rome
+wikidata_id: Q112401018
+metadata:
+  sources: [Wikidata Q112401018 (retrieved 2026-11-09)]
+relationships:
+  - type: depicts_person
+    to: person/ignatius-of-loyola
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q112401018
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/The_Triumph_of_St._Ignatius.jpg/1280px-The_Triumph_of_St._Ignatius.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Triumph_of_St._Ignatius.jpg
+    license: CC BY-SA 4.0
+    credit: Livioandronico2013
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q112401018
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q112401018
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024)

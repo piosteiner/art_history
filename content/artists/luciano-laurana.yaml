@@ -1,0 +1,18 @@
+public_id: 117160
+name: Luciano Laurana
+given_name: Luciano
+family_name: Laurana
+birth: 1420
+death: 1479
+wikidata_id: Q712650
+metadata:
+  sources: [Wikidata Q712650 (retrieved 2026-11-09)]
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q712650
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q712650

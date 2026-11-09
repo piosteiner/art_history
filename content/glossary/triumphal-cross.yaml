@@ -1,0 +1,49 @@
+public_id: 116910
+name: triumphal cross
+names:
+  - text: rood
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q449189
+  - text: triumph crucifix
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q449189
+  - lang: nl
+    role: translation
+    text: triomfkruis
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q449189
+  - lang: de
+    role: translation
+    text: Triumphkreuz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q449189
+  - lang: es
+    role: translation
+    text: cruz triunfal
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q449189
+  - lang: ja
+    role: translation
+    text: ルード・クロス
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q449189
+category: object type
+definition: large crucifix over the altar of a medieval church
+wikidata_id: Q449189
+metadata:
+  sources: [Wikidata Q449189 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Cruz_triunfal_da_igrexa_de_Sundre.jpg/1280px-Cruz_triunfal_da_igrexa_de_Sundre.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cruz_triunfal_da_igrexa_de_Sundre.jpg
+    license: CC BY-SA 4.0
+    credit: Bene Riobó
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q449189

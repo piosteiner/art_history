@@ -1,0 +1,142 @@
+public_id: 117211
+title_lang: fr
+title: Très Riches Heures du duc de Berry
+names:
+  - text: Tres Riches Heures du duc de Berry
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q211062
+  - text: Chantilly. Musée Condé. Bibliothèque. Mss. (65)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q211062
+  - lang: en
+    role: original
+    text: Très Riches Heures du duc de Berry
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q211062
+  - lang: fr
+    role: translation
+    text: Les Très Riches Heures du duc de Berry
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q211062
+  - lang: de
+    role: translation
+    text: Très Riches Heures
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q211062
+  - lang: es
+    role: translation
+    text: Las muy ricas horas del Duque de Berry
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q211062
+  - lang: ja
+    role: translation
+    text: ベリー公のいとも豪華なる時祷書
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q211062
+  - lang: zh
+    role: translation
+    text: 贝里公爵的豪华时祷书
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q211062
+  - lang: ko
+    role: translation
+    text: 베리공의 매우 호화로운 기도서
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q211062
+  - lang: ru
+    role: translation
+    text: Великолепный часослов герцога Беррийского
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q211062
+  - lang: en
+    role: translation
+    text: Les Très Riches Heurs du Duc de Berry
+creator: limbourg-brothers
+created: 1410s
+created_span: uncertain
+medium: manuscript on parchment
+materials: [tempera, vellum, parchment]
+dimensions: [29, 21.2]
+institution: musee-conde
+inventory_number: Ms. 65
+web_url: https://www.photo.rmn.fr/Package/2C6NU09TF4DL
+wikidata_id: Q211062
+metadata:
+  sources: [Wikidata Q211062 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/bourges
+    sources:
+      - accessed: 2026-11-09
+        property: P1071
+        wikidata: Q211062
+  - type: co_creator
+    to: artist/barthelemy-d-eyck
+  - type: co_creator
+    to: artist/jean-colombe
+    sources:
+      - accessed: 2026-11-09
+        property: P170
+        wikidata: Q211062
+  - type: co_creator
+    to: artist/limbourg-brothers
+    sources:
+      - accessed: 2026-11-09
+        property: P170
+        wikidata: Q211062
+  - type: associated_with
+    to: movement/international-gothic
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q211062
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Anatomical_Man.jpg/1280px-Anatomical_Man.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anatomical_Man.jpg
+    license: Public domain
+    credit: Limbourg brothers
+identifiers:
+  gnd: 4134949-0
+  viaf: "177784386"
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 3 (10.10.2024), Folie 48
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q211062
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q211062
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 3
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q211062
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 3 (10.10.2024), Folie 48
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q211062
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q211062
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q211062

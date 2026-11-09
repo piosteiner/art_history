@@ -1,0 +1,11 @@
+public_id: 117084
+name: Essen Minster
+kind: cathedral
+wikidata_id: Q135737
+metadata:
+  sources: [Wikidata Q135737 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q135737

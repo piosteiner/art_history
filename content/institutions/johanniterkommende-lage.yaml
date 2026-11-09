@@ -1,0 +1,31 @@
+public_id: 117008
+name: Johanniterkommende Lage
+kind: monastery
+founded: 1245
+dissolved: 1810
+place: rieste
+location: [8.02622, 52.49664]
+wikidata_id: Q28979244
+metadata:
+  sources: [Wikidata Q28979244 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q28979244
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q28979244
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q28979244
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q28979244
+  dissolved:
+    - accessed: 2026-11-09
+      property: P576
+      wikidata: Q28979244

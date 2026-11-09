@@ -8,6 +8,13 @@ inventory_number: "4881"
 wikidata_id: Q18688656
 metadata:
   sources: [Wikidata Q18688656 (retrieved 2026-10-19)]
+relationships:
+  - type: associated_with
+    to: movement/italian-renaissance
+    sources:
+      - accessed: 2026-11-08
+        property: P135
+        wikidata: Q18688656
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/b/b4/Raphael_-_Young_Man_Carrying_an_Old_Man_on_His_Back%2C_c._1514_-_Google_Art_Project.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Raphael_-_Young_Man_Carrying_an_Old_Man_on_His_Back,_c._1514_-_Google_Art_Project.jpg

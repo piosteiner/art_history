@@ -1,0 +1,100 @@
+public_id: 117002
+name: Germanisches Nationalmuseum
+names:
+  - text: German National Museum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478695
+  - text: Germanisches Nationalmuseum Nürnberg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478695
+  - text: Germanisches Museum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478695
+  - text: Germanischen Nationalmuseum, Nürnberg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478695
+  - text: Ger. Nmus.
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478695
+  - text: Germanisches Nationalmuseum Nürnberg.
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478695
+  - lang: es
+    role: translation
+    text: Museo Nacional Germano
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478695
+  - lang: ja
+    role: translation
+    text: ゲルマン国立博物館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478695
+  - lang: zh
+    role: translation
+    text: 日耳曼國家博物館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478695
+  - lang: ko
+    role: translation
+    text: 게르만족 국립박물관
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478695
+  - lang: ru
+    role: translation
+    text: Германский национальный музей
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q478695
+kind: museum
+founded: 1852
+place: nuremberg
+location: [11.07556, 49.44833]
+address: Kartäusergasse 1, 90402 Nürnberg
+website_url: http://www.gnm.de
+collection_url: https://objektkatalog.gnm.de/
+wikidata_id: Q478695
+metadata:
+  sources: [Wikidata Q478695 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c7/Nuernberg_gnm_haupteingang_menschenrechte_v_nnw.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nuernberg_gnm_haupteingang_menschenrechte_v_nnw.jpg
+    license: CC BY-SA 3.0
+    credit: The original uploader was Keichwa at German Wikipedia.
+identifiers:
+  bnf: 16201745g
+  gnd: 36441-1
+  idref: "026451190"
+  lc: n81047063
+  ulan: "500303791"
+  viaf: "131883509"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q478695
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q478695
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q478695
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q478695
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q478695

@@ -1,0 +1,50 @@
+public_id: 117101
+title_lang: de
+title: Pommerscher Kunstschrank
+names:
+  - lang: de
+    role: translation
+    text: Pommerscher Kunstschrank
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2103371
+  - lang: ru
+    role: translation
+    text: Померанский художественный кабинет
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2103371
+  - lang: en
+    role: translation
+    text: Pomeranian Art Cabinet
+created: 1610/1617
+medium: Ebenholzfurnier, Silber, Elfenbein
+materials: [ebony, ivory, silver]
+dimensions: [115, 136]
+institution: kunstgewerbemuseum-berlin
+wikidata_id: Q2103371
+metadata:
+  sources: [Wikidata Q2103371 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/06/Pomeranian_Art_Cabinet.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pomeranian_Art_Cabinet.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: 7631962-3
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024)
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024)
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024)
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024)
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024)

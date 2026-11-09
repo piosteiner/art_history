@@ -1,0 +1,13 @@
+public_id: 117196
+name: Chevalier Wadard
+given_name: Chevalier
+family_name: Wadard
+kind: person
+wikidata_id: Q2962995
+metadata:
+  sources: [Wikidata Q2962995 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q2962995

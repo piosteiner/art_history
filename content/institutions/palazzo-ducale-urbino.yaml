@@ -1,0 +1,97 @@
+public_id: 117038
+name: Palazzo Ducale
+names:
+  - text: Palazzo ducale d'Urbino
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1267721
+  - text: Palazzo ducale di Urbino
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1267721
+  - text: Ducal Palace
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1267721
+  - text: Italy. Palazzo ducale Urbino
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1267721
+  - text: Palazzo ducale in Urbino
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1267721
+  - text: Palazzo di Federico da Montefeltro
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1267721
+  - lang: fr
+    role: translation
+    text: palais ducal d'Urbin
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1267721
+  - lang: es
+    role: translation
+    text: Palacio Ducal de Urbino
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1267721
+  - lang: ja
+    role: translation
+    text: マルケ国立美術館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1267721
+  - lang: zh
+    role: translation
+    text: 烏爾比諾總督府
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1267721
+  - lang: ru
+    role: translation
+    text: Замок герцогов Урбинских
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1267721
+kind: palace
+founded: 1472
+place: urbino
+location: [12.63599, 43.72424]
+address: piazza Rinascimento, 13
+website_url: http://www.gallerianazionalemarche.it/
+wikidata_id: Q1267721
+metadata:
+  sources: [Wikidata Q1267721 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/2012_Urbino_-_panorama_dalla_fortezza_Albornoz_211.jpg/1280px-2012_Urbino_-_panorama_dalla_fortezza_Albornoz_211.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:2012_Urbino_-_panorama_dalla_fortezza_Albornoz_211.jpg
+    license: CC BY-SA 4.0
+    credit: Stefano Sansavini
+identifiers:
+  gnd: 4124367-5
+  lc: n81119203
+  ulan: "500312119"
+  viaf: "147649675"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1267721
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1267721
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q1267721
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1267721
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1267721

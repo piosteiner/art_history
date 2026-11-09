@@ -1,0 +1,88 @@
+public_id: 117035
+name: Musée de Cluny
+names:
+  - text: Musée National Du Moyen Âge
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1124095
+  - text: Musee de Cluny
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1124095
+  - text: Musee National Du Moyen Age
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1124095
+  - lang: it
+    role: translation
+    text: Museo di Cluny
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1124095
+  - lang: es
+    role: translation
+    text: Museo Nacional de la Edad Media de París
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1124095
+  - lang: ja
+    role: translation
+    text: クリュニー美術館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1124095
+  - lang: zh
+    role: translation
+    text: 國立中世紀博物館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1124095
+  - lang: ko
+    role: translation
+    text: 클뤼니 미술관
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1124095
+  - lang: ru
+    role: translation
+    text: Музей Средневековья
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1124095
+kind: museum
+founded: 1844-03-17
+place: paris
+location: [2.34333, 48.85056]
+website_url: https://www.musee-moyenage.fr/
+wikidata_id: Q1124095
+metadata:
+  sources: [Wikidata Q1124095 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/H%C3%B4tel_de_Cluny%2C_Paris_24_April_2012.jpg/1280px-H%C3%B4tel_de_Cluny%2C_Paris_24_April_2012.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:H%C3%B4tel_de_Cluny,_Paris_24_April_2012.jpg
+    license: CC BY-SA 2.0
+    credit: ctj71081
+identifiers:
+  bnf: 11877447k
+  gnd: 10151716-6
+  idref: "026547465"
+  lc: n50055358
+  ulan: "500309998"
+  viaf: "159881129"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1124095
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1124095
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1124095
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1124095

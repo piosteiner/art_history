@@ -5,10 +5,40 @@ names:
   - lang: en
     role: alternative
     text: Paintings by Caravaggio in the Contarelli Chapel
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q19331941
   - lang: en
     role: translation
     text: The Saint Matthew cycle
     status: own
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q19331941
+  - lang: fr
+    role: translation
+    text: tableaux de la chapelle Contarelli
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q19331941
+  - lang: de
+    role: translation
+    text: Gemälde von Caravaggio in der Contarelli-Kapelle
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q19331941
+  - lang: it
+    role: translation
+    text: dipinti di Caravaggio nella cappella Contarelli
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q19331941
+  - lang: es
+    role: translation
+    text: pinturas de la capilla Contarelli
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q19331941
 parts_count: 3
 creator: caravaggio
 created: 1599/1602
@@ -18,12 +48,23 @@ institution: contarelli-chapel
 location: [12.47467, 41.89958]
 description_md: "Three large canvases Caravaggio painted for the [[institution/contarelli-chapel]] in [[institution/san-luigi-dei-francesi]] — his first public commission[[source/wikipedia-en-paintings-in-the-contarelli-chapel|“The paintings in the Contarelli Chapel were his first public commission.” (after Salerno 1985)]]: the [[artwork/the-calling-of-saint-matthew]] on the left wall and the [[artwork/martirio-di-san-matteo]] on the right[[source/wikipedia-en-contarelli-chapel|“The decorative cycle began with the painting on the left side of the chapel” · “On the right side of the wall is the Martyrdom of St. Matthew”]] (contract of 23 July 1599, hung in July 1600[[source/wikipedia-en-paintings-in-the-contarelli-chapel|“A contract dated 23 July 1599” · “inaugurated barely a year later, in July of the Holy Year 1600” (after Salvy 2008, p. 134)]]), and the altarpiece [[artwork/san-matteo-e-langelo]] (1602). The altarpiece exists in two versions: the first was replaced in 1603 by the second[[source/wikipedia-en-paintings-in-the-contarelli-chapel|“which was accepted and installed in February 1603” (after Ebert-Schifferer 2009, p. 130)]], which hangs there today[[source/smb-der-evangelist-matthaeus-caravaggio|„… hängt Caravaggios zweite Version desselben Themas noch heute über dem Altar der Cappella Contarelli“]]; the first was sold to Vincenzo Giustiniani, came to Berlin in 1815 and was presumably destroyed in May 1945[[source/smb-der-evangelist-matthaeus-caravaggio|„1815 Ankauf mit der Sammlung der italienischen Adelsfamilie Giustiniani“ · „Vermutlich im Mai 1945 im Leitturm des Flakbunkers im Berliner Friedrichshain vernichtet“]]. The three were made to be seen together in this chapel, and they still are."
 wikidata_id: Q19331941
+metadata:
+  sources: [Wikidata Q19331941 (retrieved 2026-11-08)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Roma_-_San_Luigi_dei_Francesi_8289.jpg/1280px-Roma_-_San_Luigi_dei_Francesi_8289.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Roma_-_San_Luigi_dei_Francesi_8289.jpg
+    license: Public domain
+    credit: Phyrexian
 sources:
   created:
     - url: https://en.wikipedia.org/wiki/Paintings_in_the_Contarelli_Chapel
       note: “a group of three large-format canvases painted by Caravaggio between 1599 and 1602”
       source: wikipedia-en-paintings-in-the-contarelli-chapel
       accessed: 2026-10-27
+  creator:
+    - accessed: 2026-11-08
+      property: P170
+      wikidata: Q19331941
   created_span:
     - url: https://en.wikipedia.org/wiki/The_Calling_of_Saint_Matthew
       source: en-wikipedia-org

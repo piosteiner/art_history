@@ -1,0 +1,50 @@
+public_id: 116933
+name: Giunta Pisano
+given_name: Giunta
+family_name: Pisano
+names:
+  - text: Giunta Capitini
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q975500
+  - text: Giunta di Capitino
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q975500
+  - text: Pisano Giunta
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q975500
+  - lang: ru
+    role: translation
+    text: Джунта Пизано
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q975500
+birth: 1190
+death: 1260
+wikidata_id: Q975500
+metadata:
+  sources: [Wikidata Q975500 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Giunta_pisano_%28scuola%29%2C_s._francesco_e_storie_della_sua_vita%2C_1260-70_ca..JPG/1280px-Giunta_pisano_%28scuola%29%2C_s._francesco_e_storie_della_sua_vita%2C_1260-70_ca..JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Giunta_pisano_(scuola),_s._francesco_e_storie_della_sua_vita,_1260-70_ca..JPG
+    license: CC BY 3.0
+    credit: Sailko
+identifiers:
+  bnf: "149661456"
+  gnd: "118996878"
+  idref: "187541809"
+  lc: n93101988
+  rkd: "32028"
+  ulan: "500010959"
+  viaf: "144144814495439797841"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q975500
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q975500

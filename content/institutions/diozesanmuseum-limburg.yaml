@@ -1,0 +1,39 @@
+public_id: 116990
+name: Diözesanmuseum Limburg
+names:
+  - lang: it
+    role: translation
+    text: Museo diocesano di Limburgo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q134487196
+  - lang: ru
+    role: translation
+    text: Епархиальный музей Лимбурга
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q134487196
+kind: museum
+place: limburg-an-der-lahn
+location: [8.06526, 50.38876]
+wikidata_id: Q134487196
+metadata:
+  sources: [Wikidata Q134487196 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Bischofssitz_Limburg_-_Residence_of_the_bishop_of_Limburg_-_Di%C3%B6zesanmuseum_mt_Domschatz_-_October_26th_2013_-_02.jpg/1280px-Bischofssitz_Limburg_-_Residence_of_the_bishop_of_Limburg_-_Di%C3%B6zesanmuseum_mt_Domschatz_-_October_26th_2013_-_02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bischofssitz_Limburg_-_Residence_of_the_bishop_of_Limburg_-_Di%C3%B6zesanmuseum_mt_Domschatz_-_October_26th_2013_-_02.jpg
+    license: CC BY-SA 3.0
+    credit: Norbert Nagel
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q134487196
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q134487196
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q134487196

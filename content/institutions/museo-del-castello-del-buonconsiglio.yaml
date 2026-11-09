@@ -1,0 +1,54 @@
+public_id: 117062
+name: Museum of Castle Buonconsiglio
+names:
+  - lang: nl
+    role: translation
+    text: Museo provinciale del Castello del Buonconsiglio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3868449
+  - lang: fr
+    role: translation
+    text: Musée-château Buonconsiglio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3868449
+  - lang: de
+    role: translation
+    text: Schlossmuseum Buonconsiglio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3868449
+kind: museum
+place: trento-2
+location: [11.12704, 46.07157]
+address: Via Bernardo Clesio, 5
+website_url: https://buonconsiglio.it
+wikidata_id: Q3868449
+metadata:
+  sources: [Wikidata Q3868449 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/20110727_Trento_Buonconsiglio_Castle_6609.jpg/1280px-20110727_Trento_Buonconsiglio_Castle_6609.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:20110727_Trento_Buonconsiglio_Castle_6609.jpg
+    license: CC BY-SA 4.0
+    credit: Jakub Hałun
+identifiers:
+  lc: n97006439
+  viaf: "149095477"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q3868449
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q3868449
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q3868449
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q3868449

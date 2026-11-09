@@ -1,0 +1,31 @@
+public_id: 116956
+name: Michel Erhart
+given_name: Michel
+family_name: Erhart
+names:
+  - lang: ru
+    role: translation
+    text: Михель Эрхарт
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q473508
+birth: 1440s
+death: 16th century
+wikidata_id: Q473508
+metadata:
+  sources: [Wikidata Q473508 (retrieved 2026-11-09)]
+identifiers:
+  gnd: "118685147"
+  lc: n83198675
+  rkd: "257110"
+  ulan: "500115516"
+  viaf: "45096461"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q473508
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q473508

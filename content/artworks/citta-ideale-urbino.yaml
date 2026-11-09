@@ -1,0 +1,127 @@
+public_id: 117159
+title_lang: it
+title: La città ideale
+names:
+  - lang: de
+    role: original
+    text: Idealstadt
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1113938
+  - lang: en
+    role: original
+    text: The Ideal City
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1113938
+  - lang: fr
+    role: original
+    text: Cité idéale
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1113938
+  - lang: en
+    role: original
+    text: The Ideal City - Urbino
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1113938
+  - lang: nl
+    role: translation
+    text: Idealstad - Urbino
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1113938
+  - lang: fr
+    role: original
+    text: La Cité idéale - Urbino
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1113938
+  - lang: de
+    role: original
+    text: Idealstadt - Urbino
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1113938
+  - lang: it
+    role: original
+    text: Città ideale - Urbino
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1113938
+  - lang: ru
+    role: translation
+    text: Идеальный город
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1113938
+  - lang: it
+    role: alternative
+    text: Città ideale
+creator: piero-della-francesca
+created: 1480s
+created_span: uncertain
+medium: tempera on panel
+materials: [oil paint, panel, tempera]
+dimensions: [67.7, 239.4]
+institution: galleria-nazionale-delle-marche
+inventory_number: INV. 1990 D37
+web_url: http://www.gallerianazionalemarche.it/collezioni-gnm/citta-ideale/
+wikidata_id: Q1113938
+metadata:
+  sources: [Wikidata Q1113938 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/urbino
+    sources:
+      - accessed: 2026-11-09
+        property: P1071
+        wikidata: Q1113938
+  - type: co_creator
+    to: artist/luciano-laurana
+    sources:
+      - accessed: 2026-11-09
+        property: P170
+        wikidata: Q1113938
+  - type: associated_with
+    to: movement/italian-renaissance
+    sources:
+      - accessed: 2026-11-09
+        property: P135
+        wikidata: Q1113938
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/The_Ideal_City_of_Urbino.jpg/1280px-The_Ideal_City_of_Urbino.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Ideal_City_of_Urbino.jpg
+    license: CC0
+    credit: Julian Lupyan
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1113938
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q1113938
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q1113938
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024)
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q1113938
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q1113938
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q1113938

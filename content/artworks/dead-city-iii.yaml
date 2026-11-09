@@ -35,6 +35,19 @@ inventory_number: LM 460
 wikidata_id: Q2445555
 metadata:
   sources: [Wikidata Q2445555 (retrieved 2026-10-19)]
+relationships:
+  - type: depicts
+    to: place/cesky-krumlov
+    sources:
+      - accessed: 2026-11-08
+        property: P180
+        wikidata: Q2445555
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-08
+        property: P135
+        wikidata: Q2445555
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Egon_Schiele_-_Dead_City_III_%28City_on_the_Blue_River_III%29_-_Google_Art_Project.jpg/1280px-Egon_Schiele_-_Dead_City_III_%28City_on_the_Blue_River_III%29_-_Google_Art_Project.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Dead_City_III_(City_on_the_Blue_River_III)_-_Google_Art_Project.jpg

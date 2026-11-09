@@ -1,0 +1,41 @@
+public_id: 116981
+name: Santi Quirico e Giulitta
+names:
+  - text: Collegiata di San Quirico
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2984050
+  - lang: nl
+    role: translation
+    text: collégiale de San Quirico d'Orcia
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2984050
+  - lang: it
+    role: translation
+    text: collegiata dei Santi Quirico e Giulitta
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q2984050
+place: san-quirico-d-orcia
+location: [11.60307, 43.06048]
+wikidata_id: Q2984050
+metadata:
+  sources: [Wikidata Q2984050 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Collegiata_san_quirico_d%27orcia.jpg/1280px-Collegiata_san_quirico_d%27orcia.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Collegiata_san_quirico_d%27orcia.jpg
+    license: CC BY-SA 3.0
+    credit: Vignaccia76
+identifiers:
+  gnd: 7519033-3
+  viaf: "238153475"
+sources:
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q2984050
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q2984050

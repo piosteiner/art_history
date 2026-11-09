@@ -1,0 +1,58 @@
+public_id: 117152
+title_lang: it
+title: Tarsie del coro di Santa Maria Maggiore (Creazione del mondo)
+names:
+  - lang: nl
+    role: translation
+    text: Tarsie del coro di Santa Maria Maggiore di Bergamo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3981182
+  - lang: de
+    role: translation
+    text: Intarsien im Chor von Santa Maria Maggiore
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3981182
+  - lang: en
+    role: translation
+    text: Inlays of the choir of Santa Maria Maggiore
+creator: giovan-francesco-capoferri
+created: 1522
+medium: intarsia
+dimensions: [44, 45.6]
+institution: santa-maria-maggiore
+wikidata_id: Q3981182
+metadata:
+  sources: [Wikidata Q3981182 (retrieved 2026-11-09)]
+relationships:
+  - type: co_creator
+    to: artist/lorenzo-lotto
+    sources:
+      - accessed: 2026-11-09
+        property: P170
+        wikidata: Q3981182
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Giovan_Francesco_Capoferri_su_dis._di_lorenzo_lotto%2C_tarsia_con_%27magnum_chaos%27%2C_1524-31.JPG/1280px-Giovan_Francesco_Capoferri_su_dis._di_lorenzo_lotto%2C_tarsia_con_%27magnum_chaos%27%2C_1524-31.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Giovan_Francesco_Capoferri_su_dis._di_lorenzo_lotto,_tarsia_con_%27magnum_chaos%27,_1524-31.JPG
+    license: CC BY 3.0
+    credit: Sailko
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q3981182
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q3981182
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024)
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q3981182

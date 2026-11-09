@@ -1,0 +1,122 @@
+public_id: 116983
+name: Henry Suso
+given_name: Henry
+family_name: Suso
+names:
+  - text: Henrichus Sysus
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q303435
+  - text: Henri De Berg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q303435
+  - text: Heinrich Susa
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q303435
+  - text: Heinrich Seuse
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q303435
+  - text: Heinrich von Berg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q303435
+  - text: Heinrich Suüse
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q303435
+  - text: Errico Susone
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q303435
+  - text: Henry Susonne
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q303435
+  - text: Henricus Sisus
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q303435
+  - text: Amandus
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q303435
+  - text: Beato Enrique Suso
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q303435
+  - lang: nl
+    role: translation
+    text: Hendrik Seuse
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q303435
+  - lang: fr
+    role: translation
+    text: Henri Suso
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q303435
+  - lang: it
+    role: translation
+    text: Enrico Suso
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q303435
+  - lang: es
+    role: translation
+    text: Enrique Susón
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q303435
+  - lang: zh
+    role: translation
+    text: 亨利·蘇瑟
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q303435
+  - lang: ru
+    role: translation
+    text: Генрих Сузо
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q303435
+kind: person
+occupations: [linguist, translator, philosopher, poet, hymnwriter, theologian, mystic, cleric]
+birth: 1295-03-21
+death: 1366-02-02
+wikidata_id: Q303435
+metadata:
+  sources: [Wikidata Q303435 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/04/Heinrich_v_Berg.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Heinrich_v_Berg.jpg
+    license: Public domain
+    credit: unknown painter
+identifiers:
+  bnf: 11887657n
+  gnd: "118613510"
+  hls: "010233"
+  idref: "026672197"
+  lc: n50011517
+  ulan: "500027614"
+  viaf: "17218027"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q303435
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q303435
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q303435
+  occupations:
+    - accessed: 2026-11-09
+      property: P106
+      wikidata: Q303435

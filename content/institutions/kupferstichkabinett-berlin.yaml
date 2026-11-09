@@ -1,0 +1,78 @@
+public_id: 117013
+name: Kupferstichkabinett Berlin
+names:
+  - text: Berlin Print Cabinet
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q555946
+  - lang: it
+    role: translation
+    text: Kupferstichkabinett
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q555946
+  - lang: ja
+    role: translation
+    text: ベルリン銅版画ギャラリー
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q555946
+  - lang: zh
+    role: translation
+    text: 柏林铜版画艺术博物馆
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q555946
+  - lang: ko
+    role: translation
+    text: 판화 소묘 박물관
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q555946
+  - lang: ru
+    role: translation
+    text: Гравюрный кабинет
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q555946
+kind: museum
+founded: 1832
+place: berlin
+location: [13.367, 52.5084]
+address: Matthäikirchplatz
+website_url: http://www.smb.museum/museen-und-einrichtungen/kupferstichkabinett/home.html
+collection_url: https://recherche.smb.museum/?language=de&collectionKey=KK*
+wikidata_id: Q555946
+metadata:
+  sources: [Wikidata Q555946 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Berlin_Kulturforum_Kunstbibliothek_und_Kupferstichkabinett.jpg/1280px-Berlin_Kulturforum_Kunstbibliothek_und_Kupferstichkabinett.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Berlin_Kulturforum_Kunstbibliothek_und_Kupferstichkabinett.jpg
+    license: CC BY 3.0
+    credit: "Photo: Andreas Praefcke"
+identifiers:
+  bnf: "119886243"
+  gnd: 2016864-0
+  idref: "027469638"
+  viaf: "235339436"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q555946
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q555946
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q555946
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q555946
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q555946

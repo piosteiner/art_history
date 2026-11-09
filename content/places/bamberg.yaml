@@ -1,0 +1,47 @@
+public_id: 116950
+name: Bamberg
+names:
+  - lang: ja
+    role: translation
+    text: バンベルク
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3936
+  - lang: zh
+    role: translation
+    text: 班贝格
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3936
+  - lang: it
+    role: translation
+    text: Bamberga
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3936
+  - lang: ru
+    role: translation
+    text: Бамберг
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3936
+kind: settlement
+parent: bayern
+country_code: DE
+location: [10.89167, 49.89167]
+wikidata_id: Q3936
+metadata:
+  sources: [Wikidata Q3936 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q3936
+  parent:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q3936
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q3936

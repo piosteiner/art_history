@@ -1,0 +1,16 @@
+public_id: 117154
+name: Rialto Bridge
+kind: site
+location: [12.33564, 45.43801]
+wikidata_id: Q52505
+metadata:
+  sources: [Wikidata Q52505 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q52505
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q52505

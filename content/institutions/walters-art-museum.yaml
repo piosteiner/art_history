@@ -1,0 +1,83 @@
+public_id: 117058
+name: Walters Art Museum
+names:
+  - text: Walters Art Gallery
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q210081
+  - text: The Walters Art Museum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q210081
+  - lang: es
+    role: translation
+    text: Museo Walters
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q210081
+  - lang: ja
+    role: translation
+    text: ウォルターズ美術館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q210081
+  - lang: zh
+    role: translation
+    text: 沃爾特斯藝術博物館
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q210081
+  - lang: ko
+    role: translation
+    text: 월터스 미술관
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q210081
+  - lang: ru
+    role: translation
+    text: Художественный музей Уолтерса
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q210081
+kind: museum
+founded: 1934
+place: baltimore
+location: [-76.6165, 39.29643]
+address: 600 N. Charles St, Baltimore, MD 21201
+website_url: https://thewalters.org/
+wikidata_id: Q210081
+metadata:
+  sources: [Wikidata Q210081 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Walters-museum-building_1.jpg/1280px-Walters-museum-building_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Walters-museum-building_1.jpg
+    license: CC BY-SA 3.0
+    credit: Dylan k
+identifiers:
+  bnf: "119991841"
+  gnd: 16029354-6
+  idref: "028086805"
+  lc: no00096900
+  ulan: "500279110"
+  viaf: "128918374"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q210081
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q210081
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q210081
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q210081
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q210081

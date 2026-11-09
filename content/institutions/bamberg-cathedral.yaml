@@ -1,0 +1,103 @@
+public_id: 116951
+name: Bamberg Cathedral
+names:
+  - text: Bamberg Cathedral of St. Peter and St. George
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5924
+  - text: Bamberger Dom
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5924
+  - lang: nl
+    role: translation
+    text: Dom van Bamberg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5924
+  - lang: fr
+    role: translation
+    text: cathédrale Saint-Pierre et Saint-Georges de Bamberg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5924
+  - lang: it
+    role: translation
+    text: duomo di Bamberga
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5924
+  - lang: es
+    role: translation
+    text: Catedral de Bamberg
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5924
+  - lang: ja
+    role: translation
+    text: バンベルク大聖堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5924
+  - lang: zh
+    role: translation
+    text: 班贝格主教座堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5924
+  - lang: ko
+    role: translation
+    text: 밤베르크 대성당
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5924
+  - lang: ru
+    role: translation
+    text: Бамбергский собор
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q5924
+kind: cathedral
+founded: 1004
+dissolved: 1081
+place: bamberg
+location: [10.88253, 49.8907]
+address: Domplatz 6
+website_url: http://www.bamberger-dom.de/
+wikidata_id: Q5924
+metadata:
+  sources: [Wikidata Q5924 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Bamberg_Dom.jpg/1280px-Bamberg_Dom.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bamberg_Dom.jpg
+    license: CC BY-SA 3.0
+    credit: Berthold Werner
+identifiers:
+  gnd: 4104214-1
+  lc: n50058483
+  viaf: "134239076"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q5924
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q5924
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q5924
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q5924
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q5924
+  dissolved:
+    - accessed: 2026-11-09
+      property: P576
+      wikidata: Q5924

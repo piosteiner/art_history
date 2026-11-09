@@ -1,0 +1,55 @@
+public_id: 117214
+title_lang: fr
+title: Vierge en majesté (Auvergne)
+names:
+  - lang: en
+    role: translation
+    text: Vierge en Majesté
+created: c. 1150
+created_span: uncertain
+medium: walnut, polychromy over gesso
+materials: [walnut wood]
+dimensions: [84, 27, 36]
+institution: department-of-sculptures-of-the-louvre
+inventory_number: RF 987
+wikidata_id: Q117818923
+metadata:
+  sources: [Wikidata Q117818923 (retrieved 2026-11-09)]
+relationships:
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-09
+        property: P180
+        wikidata: Q117818923
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Vierge_en_Majest%C3%A9_-_Mus%C3%A9e_du_Louvre_Sculptures_RF_987_-_photo_2.jpg/1280px-Vierge_en_Majest%C3%A9_-_Mus%C3%A9e_du_Louvre_Sculptures_RF_987_-_photo_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vierge_en_Majest%C3%A9_-_Mus%C3%A9e_du_Louvre_Sculptures_RF_987_-_photo_2.jpg
+    license: CC0
+    credit: Shonagon
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024)
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q117818923
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q117818923
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024)
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q117818923
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q117818923
+  inventory_number:
+    - accessed: 2026-11-09
+      property: P217
+      wikidata: Q117818923

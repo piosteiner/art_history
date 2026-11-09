@@ -10,6 +10,8 @@ names:
         note: "“Van Gogh produced three, almost identical paintings on the theme of his bedroom.” — read in the Internet Archive’s copy of 2026-05-04: https://web.archive.org/web/20260504104434/https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746"
         source: musee-d-orsay-collections
         accessed: 2026-10-22
+      - accessed: 2026-11-08
+        wikidata: Q724377
   - lang: fr
     role: translation
     text: La Chambre à coucher
@@ -18,6 +20,8 @@ names:
         note: "“Van Gogh produced three, almost identical paintings on the theme of his bedroom.” — read in the Internet Archive’s copy of 2026-05-04: https://web.archive.org/web/20260504104434/https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746"
         source: musee-d-orsay-collections
         accessed: 2026-10-22
+      - accessed: 2026-11-08
+        wikidata: Q724377
   - lang: nl
     role: translation
     text: De slaapkamer
@@ -26,6 +30,8 @@ names:
         note: "“Van Gogh produced three, almost identical paintings on the theme of his bedroom.” — read in the Internet Archive’s copy of 2026-05-04: https://web.archive.org/web/20260504104434/https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746"
         source: musee-d-orsay-collections
         accessed: 2026-10-22
+      - accessed: 2026-11-08
+        wikidata: Q724377
   - lang: de
     role: translation
     text: Vincents Schlafzimmer in Arles
@@ -34,6 +40,56 @@ names:
         note: "“Van Gogh produced three, almost identical paintings on the theme of his bedroom.” — read in the Internet Archive’s copy of 2026-05-04: https://web.archive.org/web/20260504104434/https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746"
         source: musee-d-orsay-collections
         accessed: 2026-10-22
+      - accessed: 2026-11-08
+        wikidata: Q724377
+  - lang: nl
+    role: original
+    text: Slaapkamer te Arles
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q724377
+  - lang: fr
+    role: original
+    text: La Chambre de Van Gogh à Arles
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q724377
+  - lang: it
+    role: translation
+    text: La camera di Vincent ad Arles
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q724377
+  - lang: es
+    role: translation
+    text: El dormitorio en Arles
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q724377
+  - lang: ja
+    role: translation
+    text: ファンゴッホの寝室
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q724377
+  - lang: zh
+    role: translation
+    text: 在亞爾的臥室
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q724377
+  - lang: ko
+    role: translation
+    text: 아를의 방
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q724377
+  - lang: ru
+    role: translation
+    text: Спальня в Арле
+    sources:
+      - accessed: 2026-11-08
+        wikidata: Q724377
 parts_count: 3
 creator: vincent-van-gogh
 created: 1888-10/1889-09
@@ -45,10 +101,16 @@ description_md: |-
 
   He described the colours to his brother Theo — pale lilac walls, a faded red floor, chrome-yellow bed and chairs, a blood-red blanket[[source/artic-the-bedroom-1926-417|“the walls pale lilac, the floor in a broken and faded red, the chairs and the bed chrome yellow, the pillows and the sheet very pale lemon green, the bedspread blood-red …”]] — and wanted them to express “absolute repose”[[source/vangoghmuseum-the-bedroom-s0047v1962|“The bright colours were meant to express absolute ‘repose’ or ‘sleep’”]]. The flat colours without shadows and the simple furniture recall the Japanese prints he admired[[source/vangoghmuseum-the-bedroom-s0047v1962|“he had deliberately ‘flattened’ the interior and left out the shadows so that his picture would resemble a Japanese print”]].
 wikidata_id: Q724377
+metadata:
+  sources: [Wikidata Q724377 (retrieved 2026-11-08)]
 relationships:
   - type: depicts
     to: place/arles
     label: his bedroom in the Yellow House
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg/1280px-Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg
+    license: Public domain
 sources:
   parent:
     - url: https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746
@@ -65,3 +127,6 @@ sources:
       note: "“Van Gogh produced three, almost identical paintings on the theme of his bedroom.” — read in the Internet Archive’s copy of 2026-05-04: https://web.archive.org/web/20260504104434/https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746"
       source: musee-d-orsay-collections
       accessed: 2026-10-22
+    - accessed: 2026-11-08
+      property: P170
+      wikidata: Q724377

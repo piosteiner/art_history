@@ -1,0 +1,59 @@
+public_id: 116908
+name: forked cross
+names:
+  - text: crucifixus dolorosus
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1488244
+  - text: furca
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1488244
+  - text: ypsilon cross
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1488244
+  - text: Y-cross
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1488244
+  - text: robber's cross
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1488244
+  - text: thief's cross
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1488244
+  - lang: de
+    role: translation
+    text: Gabelkreuz
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1488244
+  - lang: it
+    role: translation
+    text: Croce biforcuta
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1488244
+  - lang: es
+    role: translation
+    text: Crucifijo doloroso
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1488244
+category: object type
+definition: Y-shaped cross
+wikidata_id: Q1488244
+metadata:
+  sources: [Wikidata Q1488244 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Alter_Friedhof_Bevergern_Hochkreuz_04.jpg/1280px-Alter_Friedhof_Bevergern_Hochkreuz_04.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Alter_Friedhof_Bevergern_Hochkreuz_04.jpg
+    license: CC BY-SA 3.0
+    credit: J.-H. Janßen
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q1488244

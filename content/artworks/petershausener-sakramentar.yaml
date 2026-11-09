@@ -1,0 +1,48 @@
+public_id: 117100
+title_lang: de
+title: Petershausener Sakramentar
+names:
+  - lang: fr
+    role: translation
+    text: Sacramentaire de Petershausen
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q15840200
+  - lang: de
+    role: translation
+    text: Petershausener Sakramentar
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q15840200
+  - lang: en
+    role: translation
+    text: Petershausen Sacramentary
+created: c. 980
+created_span: uncertain
+medium: Handschrift
+institution: heidelberg-university-library
+inventory_number: Cod. Sal. IXb
+wikidata_id: Q15840200
+metadata:
+  sources: [Wikidata Q15840200 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/29/Petershausener_Sakramentar_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Petershausener_Sakramentar_1.jpg
+    license: Public domain
+    credit: Abbey of Reichenau
+identifiers:
+  gnd: 7689687-0
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 55
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 55
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q15840200
+  inventory_number:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 55

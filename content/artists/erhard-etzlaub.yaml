@@ -1,0 +1,30 @@
+public_id: 116928
+name: Erhard Etzlaub
+given_name: Erhard
+family_name: Etzlaub
+names:
+  - lang: ja
+    role: translation
+    text: エアハルト・エッツラウプ
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q99274
+birth: 1462
+death: 1532
+wikidata_id: Q99274
+metadata:
+  sources: [Wikidata Q99274 (retrieved 2026-11-09)]
+identifiers:
+  gnd: "118955659"
+  idref: "204420083"
+  lc: no97053333
+  viaf: "67265360"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q99274
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q99274

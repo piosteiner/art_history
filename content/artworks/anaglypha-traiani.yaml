@@ -1,0 +1,63 @@
+public_id: 117111
+title_lang: la
+title: Anaglypha Traiani
+names:
+  - lang: fr
+    role: translation
+    text: anaglyphes de Trajan
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q7205660
+  - lang: it
+    role: translation
+    text: Plutei di Traiano
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q7205660
+  - lang: es
+    role: translation
+    text: Plutei de Trajano
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q7205660
+  - lang: en
+    role: translation
+    text: plutei of Trajan
+created: c. 118–120
+created_span: uncertain
+medium: marble
+materials: [marble]
+dimensions: [537, 175]
+institution: curia-julia
+location: [12.48465, 41.89259]
+wikidata_id: Q7205660
+metadata:
+  sources: [Wikidata Q7205660 (retrieved 2026-11-09)]
+relationships:
+  - type: created_in
+    to: place/rome
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b2/Wn%C4%99trze_Kurii_Forum_Romanum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wn%C4%99trze_Kurii_Forum_Romanum.jpg
+    license: CC BY-SA 3.0
+    credit: Radomil
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 3 (10.10.2024), Folie 80
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 3 (10.10.2024), Folie 80
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q7205660
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 3 (10.10.2024), Folie 80
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 3 (10.10.2024), Folie 80
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 3 (10.10.2024), Folie 80

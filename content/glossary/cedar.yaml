@@ -1,0 +1,31 @@
+public_id: 116894
+name: cedar wood
+names:
+  - text: real cedar
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q124233420
+  - text: genuine cedar
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q124233420
+  - text: cedar from Lebanon
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q124233420
+  - cedar
+category: material
+parent: wood
+definition: wood from Cedrus
+wikidata_id: Q124233420
+metadata:
+  sources: [Wikidata Q124233420 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/23/Cedrus_wood_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cedrus_wood_1.jpg
+    license: CC BY 3.0
+    credit: No machine-readable author provided. Brodo assumed (based on copyright claims).
+sources:
+  definition:
+    - accessed: 2026-11-09
+      wikidata: Q124233420

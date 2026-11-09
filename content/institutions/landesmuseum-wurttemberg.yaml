@@ -1,0 +1,62 @@
+public_id: 117018
+name: Landesmuseum Württemberg
+names:
+  - text: Württembergisches Landesmusem
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1332706
+  - text: Württemberg State Museum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1332706
+  - text: Landesmuseum Stuttgart
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1332706
+  - text: Württembergisches Landesmuseum Stuttgart
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1332706
+kind: museum
+founded: 1862
+place: stuttgart
+location: [9.17947, 48.777]
+address: Altes Schloss, Schillerplatz 6, 70173 Stuttgart
+website_url: https://www.landesmuseum-stuttgart.de/
+collection_url: https://bawue.museum-digital.de/index.php?t=institution&instnr=1
+wikidata_id: Q1332706
+metadata:
+  sources: [Wikidata Q1332706 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Stuttgart_AltesSchloss03.JPG/1280px-Stuttgart_AltesSchloss03.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Stuttgart_AltesSchloss03.JPG
+    license: CC BY-SA 3.0
+    credit: Joachim Köhler
+identifiers:
+  bnf: "118832896"
+  gnd: 10148439-2
+  idref: "026620340"
+  lc: n50011461
+  ulan: "500309312"
+  viaf: "138971906"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1332706
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1332706
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q1332706
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1332706
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1332706

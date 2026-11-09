@@ -1,0 +1,99 @@
+public_id: 117039
+name: Sant'Ignazio Church
+names:
+  - text: Church of St. Ignatius of Loyola
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1465674
+  - lang: nl
+    role: translation
+    text: Sant'Ignazio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1465674
+  - lang: fr
+    role: translation
+    text: église Saint-Ignace-de-Loyola de Rome
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1465674
+  - lang: de
+    role: translation
+    text: Sant’Ignazio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1465674
+  - lang: it
+    role: translation
+    text: chiesa di Sant'Ignazio di Loyola in Campo Marzio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1465674
+  - lang: es
+    role: translation
+    text: iglesia de San Ignacio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1465674
+  - lang: ja
+    role: translation
+    text: 聖イグナツィオ教会
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1465674
+  - lang: zh
+    role: translation
+    text: 罗马圣依纳爵堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1465674
+  - lang: ko
+    role: translation
+    text: 산티냐시오 성당
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1465674
+  - lang: ru
+    role: translation
+    text: Сант-Иньяцио
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1465674
+kind: church
+founded: 1650
+place: rome
+location: [12.47973, 41.89904]
+address: via della Caravita, 8a - Roma
+website_url: http://santignazio.gesuiti.it/
+wikidata_id: Q1465674
+metadata:
+  sources: [Wikidata Q1465674 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Church_of_Sant%27Ignazio_di_Loyola.jpg/1280px-Church_of_Sant%27Ignazio_di_Loyola.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Church_of_Sant%27Ignazio_di_Loyola.jpg
+    license: CC BY 4.0
+    credit: Fiat 500e
+identifiers:
+  gnd: 4468814-3
+  lc: n97098567
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1465674
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1465674
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q1465674
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q1465674
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1465674

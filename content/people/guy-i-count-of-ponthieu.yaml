@@ -1,0 +1,21 @@
+public_id: 117194
+name: Guy I, Count of Ponthieu
+kind: person
+birth: c. 1047
+death: 1101-10-20
+wikidata_id: Q1187399
+metadata:
+  sources: [Wikidata Q1187399 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1187399
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q1187399
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q1187399

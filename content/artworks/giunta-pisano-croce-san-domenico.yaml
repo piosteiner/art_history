@@ -1,0 +1,72 @@
+public_id: 117167
+title_lang: it
+title: Croce dipinta di San Domenico
+names:
+  - lang: nl
+    role: translation
+    text: Crucifix de la basilique San Domenico de Bologne
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3698243
+  - lang: de
+    role: translation
+    text: Kruzifix San Domenico Bologna
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3698243
+  - lang: it
+    role: translation
+    text: Crocifisso della basilica di San Domenico
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3698243
+  - lang: ru
+    role: translation
+    text: крест Сан Доменико
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3698243
+  - lang: en
+    role: translation
+    text: Crucifix San Domenico Bologna
+creator: giunta-pisano
+created: 1250/1259
+created_label: c. 1250s
+created_span: uncertain
+medium: tempera and gold on panel
+materials: [tempera, wood, gold]
+dimensions: [316, 285]
+institution: basilica-of-san-domenico
+wikidata_id: Q3698243
+metadata:
+  sources: [Wikidata Q3698243 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Giunta_Pisano._Bologna_crucifix.jpg/1280px-Giunta_Pisano._Bologna_crucifix.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giunta_Pisano._Bologna_crucifix.jpg
+    license: Public domain
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 74
+  created:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q3698243
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q3698243
+  materials:
+    - accessed: 2026-11-09
+      property: P186
+      wikidata: Q3698243
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 74
+  dimensions:
+    - accessed: 2026-11-09
+      property: P2048
+      wikidata: Q3698243
+  institution:
+    - accessed: 2026-11-09
+      property: P195
+      wikidata: Q3698243

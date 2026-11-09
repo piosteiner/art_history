@@ -1,0 +1,42 @@
+public_id: 117026
+name: Museo dell'Opera del Duomo
+names:
+  - lang: ru
+    role: translation
+    text: Музей Опера-дель-Дуомо в Орвието
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q3328410
+kind: museum
+place: orvieto
+location: [12.1128, 42.71681]
+address: Piazza Duomo
+website_url: http://www.museomodo.it
+wikidata_id: Q3328410
+metadata:
+  sources: [Wikidata Q3328410 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Orvieto065.jpg/1280px-Orvieto065.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Orvieto065.jpg
+    license: CC BY-SA 3.0
+    credit: Georges Jansoone (JoJan)
+identifiers:
+  idref: "069019193"
+  viaf: "150181106"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q3328410
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q3328410
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q3328410
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q3328410

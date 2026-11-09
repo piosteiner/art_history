@@ -1,0 +1,46 @@
+public_id: 117073
+title_lang: de
+title: Blaubeurer Hochaltar
+names:
+  - lang: en
+    role: translation
+    text: Hochaltar Blaubeuren
+creator: michel-erhart
+created: 1491/1494
+medium: Eichenholz (Tragwerk), Fichtenholz (Gesprenge), Lindenholz (Skulpturen), Fassung
+materials: [oak, lime, spruce]
+dimensions: [1190]
+institution: klosterkirche-blaubeuren
+wikidata_id: Q105959098
+metadata:
+  sources: [Wikidata Q105959098 (retrieved 2026-11-09)]
+relationships:
+  - type: co_creator
+    to: artist/gregor-erhart
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Blaubeuren_Chor_Hochaltar.jpg/1280px-Blaubeuren_Chor_Hochaltar.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Blaubeuren_Chor_Hochaltar.jpg
+    license: CC BY 3.0
+    credit: "Photo: Andreas Praefcke"
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024)
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024)
+  creator:
+    - accessed: 2026-11-09
+      property: P170
+      wikidata: Q105959098
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024)
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024)
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024)

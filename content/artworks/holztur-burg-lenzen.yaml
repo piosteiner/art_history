@@ -1,0 +1,31 @@
+public_id: 117251
+title_lang: de
+title: Holztür von Burg Lenzen
+created: c. 1000
+created_span: uncertain
+medium: Eichenholz
+materials: [oak]
+dimensions: [178]
+institution: landesamt-fur-kultur-und-denkmalpflege-mecklenburg-vorpommern
+sources:
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 78
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 78
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 78
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 78
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 78
+  created_span:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 78
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 78

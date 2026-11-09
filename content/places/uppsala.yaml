@@ -1,0 +1,53 @@
+public_id: 117028
+name: Uppsala
+names:
+  - lang: ja
+    role: translation
+    text: ウプサラ
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q25286
+  - lang: zh
+    role: translation
+    text: 乌普萨拉
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q25286
+  - lang: ko
+    role: translation
+    text: 웁살라
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q25286
+  - lang: es
+    role: translation
+    text: Upsala
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q25286
+  - lang: ru
+    role: translation
+    text: Уппсала
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q25286
+kind: settlement
+parent: sweden
+country_code: SE
+location: [17.63895, 59.84976]
+wikidata_id: Q25286
+metadata:
+  sources: [Wikidata Q25286 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q25286
+  parent:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q25286
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q25286

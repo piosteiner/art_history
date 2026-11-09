@@ -1,0 +1,74 @@
+public_id: 117050
+name: St. Maria im Kapitol
+names:
+  - lang: nl
+    role: translation
+    text: Heilige Maria in het Capitool
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q598352
+  - lang: fr
+    role: translation
+    text: église Sainte-Marie-du-Capitole de Cologne
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q598352
+  - lang: it
+    role: translation
+    text: basilica di Santa Maria in Campidoglio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q598352
+  - lang: es
+    role: translation
+    text: iglesia de Santa María del Capitolio
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q598352
+  - lang: zh
+    role: translation
+    text: 卡比托利歐聖瑪利亞教堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q598352
+  - lang: ru
+    role: translation
+    text: Церковь Святой Марии Капитолийской
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q598352
+kind: church
+founded: 11th century
+place: cologne
+location: [6.95861, 50.93464]
+website_url: https://www.katholisch-in-koeln.de/st.-maria-im-kapitol/start/
+wikidata_id: Q598352
+metadata:
+  sources: [Wikidata Q598352 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Mariaamkapitol_16-02-2009_15-36-21.JPG/1280px-Mariaamkapitol_16-02-2009_15-36-21.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Mariaamkapitol_16-02-2009_15-36-21.JPG
+    license: CC BY-SA 3.0
+    credit: Paul Hermans
+identifiers:
+  gnd: 4237104-1
+  lc: n91011661
+  ulan: "500304385"
+  viaf: "137339103"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q598352
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q598352
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q598352
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q598352
