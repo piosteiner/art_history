@@ -4,6 +4,10 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-09
 
+### justone.piogino.ch: six more word lists
+- **What:** in German and English (`public/words/*.json`): youth slang, Tinder (online dating), fire safety, slang, the 2000s, Zurich; 27 lists now.
+- **Why:** owner 2026-11-09. **Revert:** `git revert` in `/var/www/justone`.
+
 ### justone.piogino.ch: eleven more word lists
 - **What:** in German and English (`public/words/*.json`): Spicy (18+, off until ticked), University of Zurich, data protection, diplomacy, psychology, art history, pop culture, law, politics, political science, economics; the Switzerland list extended by 20 words. Lists added later also reach browsers that have edited their lists (`known` in `lists.<lang>`), without bringing back ones deleted there.
 - **Why:** owner 2026-11-09. **Revert:** `git revert` in `/var/www/justone`.
