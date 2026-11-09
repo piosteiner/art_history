@@ -4,6 +4,10 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-09
 
+### justone.piogino.ch: temporary rescue of browser data (http to https)
+- **What:** `localStorage` is kept per origin, so word-list edits made on http were out of reach after the https redirect. `public/rescue.html`, served over http through one exception in the port-80 block of `sites-available/justone` (`location = /rescue.html`, everything else still 301), passes the site's own keys to the https page in the URL fragment, which is not sent to the server. **Temporary.**
+- **Why:** owner 2026-11-09. **Revert / remove after the owner has transferred:** delete `public/rescue.html`; in the port-80 block replace the two `location` lines with `return 301 https://$host$request_uri;`; `sudo nginx -t && sudo systemctl reload nginx`.
+
 ### justone.piogino.ch: TLS
 - **What:** certificate issued by the owner (`certbot --nginx -d justone.piogino.ch --redirect`, valid until 2027-02-07, auto-renewal config present); http redirects to https. Before that, https requests for this name fell to nginx's first 443 block and showed adenai-admin.
 - **Why:** owner 2026-11-09. **Revert:** `sudo certbot delete --cert-name justone.piogino.ch` and restore the port-80 block from the repo's `deploy/nginx-justone.conf`.
