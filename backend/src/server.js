@@ -11,11 +11,14 @@ const server = app.listen(config.port, config.host, () => {
 live.attach(server);  // admin panel's WebSocket (/live on the admin host)
 quality.start(adminPool);  // keeps the stored data-quality findings up to date (LISTEN quality_changed, migration 058)
 stats.start(adminPool);    // today's numbers for /v1/stats (migration 138), at start and hourly
+// chat emotes follow the 7TV sets live (src/admin/emotes-live.js); only production talks to 7TV's event feed
+if (config.env === 'production') require('./admin/emotes-live').start(adminPool);
 
 // pm2 reload/stop sends SIGINT: finish in-flight requests, then close DB pools.
 for (const signal of ['SIGINT', 'SIGTERM']) {
   process.on(signal, () => {
     // Working copies are persisted first; open WebSockets would otherwise keep server.close() waiting.
+    require('./admin/emotes-live').stop();
     Promise.allSettled([live.close(), quality.stop()]).finally(() => server.close(async () => {
       await Promise.allSettled([apiPool.end(), adminPool.end()]);
       process.exit(0);

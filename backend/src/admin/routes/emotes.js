@@ -42,6 +42,7 @@ async function apply(req, res, sources, ok) {
   const before = await emotes.load(adminPool);
   const built = await emotes.refresh(sources, before.emotes);
   await withTx(req.user, (db) => emotes.write(db, built));
+  require('../emotes-live').sync(); // the sources may have changed: follow their sets (production only)
   res.redirect(303, `/emotes?ok=${ok}`);
 }
 const index = (req, list) => { const i = Number(req.body.i); return Number.isInteger(i) && i >= 0 && i < list.length ? i : -1; };
