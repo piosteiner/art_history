@@ -105,7 +105,10 @@ export function suggest(field: HTMLTextAreaElement | HTMLInputElement) {
 // hover: the emote larger, without its name (as on the map)
 let tip: HTMLDivElement | null = null;
 let over: Element | null = null;
-const bigUrl = (url: string) => url.replace(/(\/\/cdn\.7tv\.app\/emote\/[^/]+\/)2x\.webp$/, '$14x.webp');
+// the bigger hover picture: our server's -4x file (src/admin/emote-images.js), or 7TV's 4x for an older list
+const bigUrl = (url: string) => url
+  .replace(/(\/emotes\/img\/[0-9A-Za-z]+)\.webp$/, '$1-4x.webp')
+  .replace(/(\/\/cdn\.7tv\.app\/emote\/[^/]+\/)2x\.webp$/, '$14x.webp');
 let hovering = false;
 export function emoteHover() {
   if (hovering) return;

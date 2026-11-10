@@ -57,9 +57,22 @@ let emoteCache = null;
 router.get('/emotes', async (req, res) => {
   if (!emoteCache || emoteCache.at < Date.now() - 60000) {
     const { emotes } = await require('../emotes').load(adminPool);
-    emoteCache = { at: Date.now(), body: { emotes: Object.fromEntries(Object.entries(emotes).map(([n, e]) => [n, { url: e.url, w: e.w, h: e.h }])) } };
+    // the pictures come from our server, not 7TV's (src/admin/emote-images.js)
+    emoteCache = { at: Date.now(), body: { emotes: Object.fromEntries(Object.entries(emotes).map(([n, e]) => [n, { url: emoteImages.publicUrl(e.url), w: e.w, h: e.h }])) } };
   }
   res.set('Cache-Control', 'public, max-age=300').json(emoteCache.body);
+});
+const emoteImages = require('../emote-images');
+router.get('/emotes/img/:file', async (req, res) => {
+  const m = /^([0-9A-Za-z]{1,40})(-4x)?\.webp$/.exec(req.params.file);
+  try {
+    const file = m && await emoteImages.imageFile(adminPool, m[1], m[2] ? '4x' : '2x');
+    if (!file) return res.status(404).end();
+    res.set('Cache-Control', 'public, max-age=31536000, immutable').type('image/webp').sendFile(file);
+  } catch (err) {
+    console.error('Emote image:', err.message);
+    res.status(502).end();
+  }
 });
 
 router.get('/me', (req, res) => (req.user
