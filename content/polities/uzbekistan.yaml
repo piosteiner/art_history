@@ -1,0 +1,39 @@
+public_id: 117402
+name: Uzbekistan
+names:
+  - lang: uz
+    role: original
+    text: O‘zbekiston Respublikasi
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q265
+  - text: Republic of Uzbekistan
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q265
+  - lang: fr
+    role: translation
+    text: Ouzbékistan
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q265
+  - lang: de
+    role: translation
+    text: Usbekistan
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q265
+period: 1991/
+country_codes: [UZ]
+wikidata_id: Q265
+metadata:
+  sources: [Wikidata Q265 (retrieved 2026-11-10)]
+sources:
+  period:
+    - accessed: 2026-11-10
+      property: P571
+      wikidata: Q265
+  country_codes:
+    - accessed: 2026-11-10
+      property: P297
+      wikidata: Q265

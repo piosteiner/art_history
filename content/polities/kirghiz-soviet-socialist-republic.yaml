@@ -1,0 +1,26 @@
+public_id: 117401
+name: Kirghiz Soviet Socialist Republic
+names:
+  - text: Kirgiz SSR
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q130276
+  - text: Soviet Kirgizia
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q130276
+  - lang: de
+    role: translation
+    text: Kirgisische Sozialistische Sowjetrepublik
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q130276
+period: 1936-12-05/1991-12-26
+wikidata_id: Q130276
+metadata:
+  sources: [Wikidata Q130276 (retrieved 2026-11-10)]
+sources:
+  period:
+    - accessed: 2026-11-10
+      property: P571
+      wikidata: Q130276

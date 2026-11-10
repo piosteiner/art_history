@@ -1,11 +1,46 @@
 public_id: 117229
 title_lang: nl
-title: Erysichthon velt de boom van Ceres
+title: Erysichthon kapt de boom van Ceres
+names:
+  - lang: la
+    role: alternative
+    text: Erisichthonis impietas
+    note: title on the object
+  - lang: nl
+    role: former
+    text: Erysichthon velt de boom van Ceres
 creator: virgil-solis
 created: 1569
+conceived: 1562-08-11 or earlier
+conceived_label: by August 1562
 kind: woodcut
-medium: woodcut
+medium: houtsnede; tekst in boekdruk
+materials: [paper]
 institution: rijksmuseum
+inventory_number: RP-P-OB-22.088(V)
+web_url: https://www.rijksmuseum.nl/en/collection/object/Erysichthon-kapt-de-boom-van-Ceres--9e18b4aa782b3f6ecdb9916e7797fb30?tab=data
+description_md: |-
+  A woodcut by [[artist/virgil-solis]] for Ovid's *Metamorphoses* (book VIII): Erysichthon fells the oak consecrated to Ceres. This impression was printed in 1569 as an illustration in Johannes Posthius's *Tetrasticha in Ovidii metam.*, published in Frankfurt am Main by Georg Rab, Sigmund Feyerabend and the heirs of Weigand Han; the heading on the sheet reads "Erisichthonis impietas". Picture and ornamental border were printed from two separate blocks, each of them also used apart from the other in other publications — the borders several times within this book. On the other side of the leaf: Ceres orders the punishment of Erysichthon.[[source/rijksmuseum-rp-p-ob-22-088-v]]
+
+  Solis, who worked in Nuremberg, died on 11 August 1562: the design is his, the printing of 1569 came seven years after his death — his Ovid woodcuts were reprinted and copied in many editions.[[source/wikipedia-en-virgil-solis]]
+images:
+  - url: https://iiif.micr.io/EcGRs/full/1200,/0/default.jpg
+    source_url: https://id.rijksmuseum.nl/200137599
+    license: Public domain (Rijksmuseum)
+    credit: Rijksmuseum, Amsterdam
+numbers:
+  - number: "1829"
+    label: Hollstein German
+    sources:
+      - source: rijksmuseum-rp-p-ob-22-088-v
+        locator: RP-P-OB-22.088(V)
+        accessed: 2026-11-10
+  - number: "2297"
+    label: Hollstein German
+    sources:
+      - source: rijksmuseum-rp-p-ob-22-088-v
+        locator: RP-P-OB-22.088(V)
+        accessed: 2026-11-10
 sources:
   kind:
     - source: ganz-2024-aus-dem-wald
@@ -13,15 +48,36 @@ sources:
   medium:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 3 (10.10.2024)
+    - source: rijksmuseum-rp-p-ob-22-088-v
+      locator: RP-P-OB-22.088(V)
+      accessed: 2026-11-10
   created:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 3 (10.10.2024)
+    - source: rijksmuseum-rp-p-ob-22-088-v
+      locator: RP-P-OB-22.088(V)
+      accessed: 2026-11-10
   creator:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 3 (10.10.2024)
+    - source: rijksmuseum-rp-p-ob-22-088-v
+      locator: RP-P-OB-22.088(V)
+      accessed: 2026-11-10
+  conceived:
+    - source: rijksmuseum-rp-p-ob-22-088-v
+      locator: RP-P-OB-22.088(V)
+      accessed: 2026-11-10
+  materials:
+    - source: rijksmuseum-rp-p-ob-22-088-v
+      locator: RP-P-OB-22.088(V)
+      accessed: 2026-11-10
   institution:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 3 (10.10.2024)
   title_status:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 3 (10.10.2024)
+  inventory_number:
+    - source: rijksmuseum-rp-p-ob-22-088-v
+      locator: RP-P-OB-22.088(V)
+      accessed: 2026-11-10

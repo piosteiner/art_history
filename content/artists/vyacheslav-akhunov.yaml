@@ -25,6 +25,40 @@ birth: 1948-07-02
 wikidata_id: Q2535527
 metadata:
   sources: [Wikidata Q2535527 (retrieved 2026-11-07)]
+relationships:
+  - type: nationality
+    to: polity/kirghiz-soviet-socialist-republic
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q2535527
+  - type: nationality
+    to: polity/uzbekistan
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q2535527
+  - type: born_in
+    to: place/osh
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q2535527
+  - type: born_in
+    to: place/osh-region
+    sources:
+      - url: https://d-nb.info/gnd/1017732191
+        source: gnd
+        accessed: 2026-11-10
+  - type: worked_in
+    to: place/tashkent
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q2535527
+      - url: https://d-nb.info/gnd/1017732191
+        source: gnd
+        accessed: 2026-11-10
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/7/74/Vyacheslav_Oxunov.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Vyacheslav_Oxunov.jpg

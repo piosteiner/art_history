@@ -1,0 +1,29 @@
+public_id: 117399
+name: Osh
+names:
+  - lang: de
+    role: translation
+    text: Osch
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q47282
+kind: settlement
+parent: kyrgyzstan
+country_code: KG
+location: [72.78333, 40.53333]
+wikidata_id: Q47282
+metadata:
+  sources: [Wikidata Q47282 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q47282
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q47282
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q47282

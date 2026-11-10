@@ -1,0 +1,44 @@
+public_id: 117205
+name: Cîteaux Abbey
+names:
+  - lang: fr
+    role: original
+    text: Abbaye de Cîteaux
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q843261
+  - lang: de
+    role: translation
+    text: Kloster Cîteaux
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q843261
+kind: monastery
+founded: 1098-03-21
+place: saint-nicolas-les-citeaux
+location: [5.0933333, 47.1280556]
+description_md: |-
+  The first house of the Cistercian order, in Saint-Nicolas-lès-Cîteaux south of Dijon. It was founded on Saint Benedict's Day, 21 March 1098, by monks from Molesme Abbey who sought to follow the Rule of Saint Benedict more strictly, led by Robert of Molesme, its first abbot; its third abbot, Stephen Harding, wrote the Carta Caritatis on which the order was organised. Bernard of Clairvaux was a monk here before he was sent to found Clairvaux in 1115.[[source/wikipedia-en-citeaux-abbey]]
+
+  In 1111 the monastery produced the illuminated [[artwork/moralia-in-job-citeaux|Cîteaux Moralia in Job]][[source/wikipedia-en-citeaux-abbey]] — the work of its [[artist/citeaux-scriptorium|scriptorium]]. The great church, begun around 1140 and completed in 1193, became the burial place of the Dukes of Burgundy. The abbey belongs today to the Trappists.[[source/wikipedia-en-citeaux-abbey]]
+wikidata_id: Q843261
+metadata:
+  sources: [Wikidata Q843261 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Abbaye_de_C%C3%AEteaux_La_Biblioth%C3%A8que.JPG/1280px-Abbaye_de_C%C3%AEteaux_La_Biblioth%C3%A8que.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Abbaye_de_C%C3%AEteaux_La_Biblioth%C3%A8que.JPG
+    license: CC BY-SA 2.5
+    credit: G CHP
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/51/Abbaye.Citeaux.png
+    source_url: https://commons.wikimedia.org/wiki/File:Abbaye.Citeaux.png
+    license: Public domain
+identifiers:
+  bnf: 12228351v
+  gnd: 4126338-8
+  idref: "030974844"
+  lc: n82045103
+  viaf: "145176756"
+sources:
+  founded:
+    - source: wikipedia-en-citeaux-abbey
+      accessed: 2026-11-10

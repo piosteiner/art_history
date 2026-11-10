@@ -1,0 +1,44 @@
+public_id: 117415
+name: Kyrgyzstan
+names:
+  - text: Kyrgyz Republic
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q813
+  - lang: fr
+    role: translation
+    text: Kirghizistan
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q813
+  - lang: de
+    role: translation
+    text: Kirgisistan
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q813
+  - lang: es
+    role: translation
+    text: Kirguistán
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q813
+kind: country
+country_code: KG
+boundary_code: KG
+location: [75, 41]
+wikidata_id: Q813
+metadata:
+  sources: [Wikidata Q813 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4030848-0
+  hls: "044998"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q813
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q813

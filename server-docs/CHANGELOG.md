@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-10
 
+### Content: Solis's Erysichthon woodcut from the Rijksmuseum's page
+- **What:** owner 2026-11-10 (the Rijksmuseum's page as PDF). `solis-erysichthon`: the museum's title "Erysichthon kapt
+  de boom van Ceres" (the old title as a former name, "Erisichthonis impietas" = title on the object), medium
+  "houtsnede; tekst in boekdruk", paper, RP-P-OB-22.088(V), Hollstein German 1829 and 2297 as further numbers, a text
+  (Posthius's Tetrasticha, Frankfurt 1569, the three publishers, picture and border from separate blocks), the
+  museum's public-domain picture (IIIF), new source `rijksmuseum-rp-p-ob-22-088-v`. The finding "created after the
+  artist's death" is solved by `conceived` "by August 1562" (Solis died 11 August 1562; 1569 is the printing).
+  The lecture's citations of medium and title remain "changed since cited" for the owner to confirm or keep.
+- **Revert:** the artwork's history page.
+
 ### Living artists, Cîteaux, creators that are not people — migration 244
 - **What:** owner 2026-11-10. (1) `artist_missing_dates` (view `quality_issues_live`, migration 244): an artist born
   within the last 100 years (counted from `CURRENT_DATE`) without a death date is taken as living — no finding with a

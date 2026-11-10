@@ -1,0 +1,21 @@
+public_id: 117414
+name: Cîteaux scriptorium
+given_name: Cîteaux
+family_name: scriptorium
+names:
+  - lang: fr
+    role: translation
+    text: scriptorium de Cîteaux
+    status: own
+active: c. 1111
+biography_md: |-
+  The writing and painting workshop of [[institution/citeaux-abbey|Cîteaux Abbey]], the first house of the Cistercians. Its best-known work is the [[artwork/moralia-in-job-citeaux|Cîteaux Moralia in Job]], begun around 1111: five scribes' hands have been identified in it and one artist decorated it. The decidedly English style of its pictures is explained by the abbot of the time, Stephen Harding, who came from England; its monks often wear threadbare habits, stressing their ideal of poverty.[[source/wikipedia-en-citeaux-moralia-in-job]]
+
+  The name stands for the anonymous scribes and illuminator, as the literature describes the manuscript as made "at Cîteaux"; Wikidata names the abbey itself as creator.
+relationships:
+  - type: member_of
+    to: institution/citeaux-abbey
+sources:
+  active:
+    - source: wikipedia-en-citeaux-moralia-in-job
+      accessed: 2026-11-10
