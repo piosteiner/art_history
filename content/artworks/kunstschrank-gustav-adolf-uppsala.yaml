@@ -15,6 +15,7 @@ names:
   - lang: en
     role: translation
     text: Augsburg Art Cabinet
+creator: ulrich-baumgartner
 created: 1633
 medium: Ebenholz, Silber, Edelsteine
 materials: [ebony, silver]
@@ -22,6 +23,12 @@ institution: uppsala-university
 wikidata_id: Q10422378
 metadata:
   sources: [Wikidata Q10422378 (retrieved 2026-11-09)]
+relationships:
+  - type: co_creator
+    to: artist/anton-mozart
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 11 (12.12.2024), Folie 55
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/The_Augsburg_art_cabinet_in_Gustavianum%2C_Uppsala_University_Museum%2C_Sweden_1.jpg/1280px-The_Augsburg_art_cabinet_in_Gustavianum%2C_Uppsala_University_Museum%2C_Sweden_1.jpg
     source_url: https://commons.wikimedia.org/wiki/File:The_Augsburg_art_cabinet_in_Gustavianum,_Uppsala_University_Museum,_Sweden_1.jpg
@@ -35,6 +42,9 @@ sources:
     - accessed: 2026-11-09
       property: P571
       wikidata: Q10422378
+  creator:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024)
   materials:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 11 (12.12.2024)

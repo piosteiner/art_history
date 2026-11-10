@@ -8,6 +8,12 @@ medium: Federzeichnung, Papier
 materials: [paper]
 dimensions: [45, 33]
 institution: jagiellonian-university-museum
+relationships:
+  - type: design_for
+    to: artwork/bamberger-altar-veit-stoss
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 8 (21.11.2024), Folie 101
 sources:
   kind:
     - source: ganz-2024-aus-dem-wald

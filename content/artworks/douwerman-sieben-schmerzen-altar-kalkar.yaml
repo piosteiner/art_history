@@ -15,6 +15,7 @@ creator: heinrich-douvermann
 created: 1518/1521
 medium: Eichenholz, ungefasst
 materials: [oak]
+institution: st-nicolai-kalkar
 wikidata_id: Q118612518
 metadata:
   sources: [Wikidata Q118612518 (retrieved 2026-11-09)]
@@ -35,5 +36,8 @@ sources:
       property: P170
       wikidata: Q118612518
   materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024)
+  institution:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 1 (26.9.2024)

@@ -1,0 +1,43 @@
+public_id: 117391
+name: Parish church Saint Wolfgang
+names:
+  - lang: de
+    role: translation
+    text: Pfarrkirche St. Wolfgang
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q14541022
+  - lang: zh
+    role: translation
+    text: 萨尔茨卡默古特圣沃尔夫冈天主教教区朝圣教堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q14541022
+kind: church
+place: st-wolfgang-im-salzkammergut
+location: [13.4476, 47.7379]
+wikidata_id: Q14541022
+metadata:
+  sources: [Wikidata Q14541022 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/St._Wolfgang_im_Salzkammergut_-_Kirche.JPG/1280px-St._Wolfgang_im_Salzkammergut_-_Kirche.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:St._Wolfgang_im_Salzkammergut_-_Kirche.JPG
+    license: CC BY-SA 4.0
+    credit: C.Stadler/Bwag
+identifiers:
+  gnd: 4311912-8
+  lc: n83180880
+  viaf: "173276339"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q14541022
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q14541022
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q14541022

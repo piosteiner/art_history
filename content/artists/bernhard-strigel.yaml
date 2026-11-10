@@ -1,0 +1,66 @@
+public_id: 117321
+name: Bernhard Strigel
+given_name: Bernhard
+family_name: Strigel
+names:
+  - text: Bernard Strigil
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637420
+  - text: Bernardo Striegel
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637420
+  - text: Bernhardinus Strigel
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637420
+  - text: Bernhard Striegel
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637420
+  - text: Bernardinus Strigel
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637420
+  - text: Bernard Strigel
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637420
+  - text: Strigel
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637420
+  - lang: ru
+    role: translation
+    text: Бернхард Штригель
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q637420
+birth: c. 1460
+death: 1528-05-14
+wikidata_id: Q637420
+metadata:
+  sources: [Wikidata Q637420 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Bernhard_Strigel_Abschied_Christi_von_seiner_Mutter.jpg/1280px-Bernhard_Strigel_Abschied_Christi_von_seiner_Mutter.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bernhard_Strigel_Abschied_Christi_von_seiner_Mutter.jpg
+    license: Public domain
+    credit: Bernhard Strigel
+identifiers:
+  bnf: 14960682b
+  gnd: 11875596X
+  idref: "220894302"
+  lc: nr2003020097
+  rkd: "75734"
+  ulan: "500028571"
+  viaf: "49494641"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q637420
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q637420

@@ -10,6 +10,37 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Giuliano_da_maiano,_tarsie_della_sagrestia_delle_messe,_1436-1468,_finti_sportelli_22.jpg
     license: CC BY 3.0
     credit: Sailko, Wikimedia Commons
+phases:
+  - kind: construction
+    title: Fingierte Schranköffnungen mit liturgischem Gerät und Büchern
+    period: 1436/1445
+    notes_md: "Die ersten Tarsien der Sakristei: geöffnete Schränke mit liturgischem Gerät und Büchern, in Perspektive vorgetäuscht."
+    people:
+      - who: artist/antonio-manetti-ciaccheri
+        role: intarsia
+  - kind: construction
+    title: "Südwand: Ansichten von Schränken, fingierte Öffnungen, Agnus Dei"
+    part: Südwand
+    period: 1436/1440
+    notes_md: Fingierte Öffnung mit Girlande und ein vorgetäuschtes Relief mit dem Agnus Dei; die Fluchtlinien der Öffnungen laufen im oberen Register zusammen.
+    people:
+      - who: artist/agnolo-di-lazzaro
+        role: intarsia
+  - kind: extension
+    title: "Ostwand: Verkündigung an Maria, Heilige und Propheten"
+    part: Ostwand
+    period: 1463/1465
+    notes_md: Mit dem hl. Crescentius und dem Propheten Jesaja; eine Generation später als die ersten Tarsien.
+    people:
+      - who: artist/giuliano-da-maiano
+        role: intarsia
+  - kind: completion
+    title: "Westwand: Geburt Christi und Darbringung im Tempel"
+    part: Westwand
+    period: 1465/1468
+    people:
+      - who: artist/giuliano-da-maiano
+        role: intarsia
 sources:
   kind:
     - source: ganz-2024-aus-dem-wald

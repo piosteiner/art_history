@@ -1,0 +1,57 @@
+public_id: 117389
+name: St. Nicholas Church
+names:
+  - text: Sankt Nicolai
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q530594
+  - lang: nl
+    role: translation
+    text: St. Nicolaikerk
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q530594
+  - lang: fr
+    role: translation
+    text: église Saint-Nicolas
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q530594
+  - lang: de
+    role: translation
+    text: St. Nicolai
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q530594
+kind: church
+founded: 1230
+place: kalkar
+location: [6.29182, 51.73801]
+wikidata_id: Q530594
+metadata:
+  sources: [Wikidata Q530594 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Kalkar_Nicolai.JPG/1280px-Kalkar_Nicolai.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Kalkar_Nicolai.JPG
+    license: CC BY-SA 3.0
+identifiers:
+  gnd: 4193172-5
+  lc: nb2018001210
+  viaf: "233743492"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q530594
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q530594
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q530594
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q530594

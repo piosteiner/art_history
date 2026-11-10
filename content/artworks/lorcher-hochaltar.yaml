@@ -9,6 +9,7 @@ created: 1483
 medium: Eichenholz, Lindenholz
 materials: [oak, lime]
 dimensions: [1280]
+institution: st-martin-lorch
 wikidata_id: Q122003811
 metadata:
   sources: [Wikidata Q122003811 (retrieved 2026-11-09)]
@@ -28,5 +29,8 @@ sources:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 8 (21.11.2024), Folie 101
   dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024), Folie 101
+  institution:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 8 (21.11.2024), Folie 101

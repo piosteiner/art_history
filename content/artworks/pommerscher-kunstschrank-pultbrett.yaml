@@ -1,0 +1,43 @@
+public_id: 117398
+title_lang: de
+title: Pultbrett (Schreib- und Lesepult)
+parent: pommerscher-kunstschrank
+part_number: "1"
+creator: ulrich-baumgartner
+created: 1610/1617
+kind: furniture
+medium: Rahmen Eiche, Furnier Ebenholz; Silber; Steinschnitt
+materials: [oak, ebony, silver]
+institution: kunstgewerbemuseum-berlin
+description_md: "Aus dem Inhalt des Kunstschranks, der 1945 verbrannte: Holzarbeiten von Ulrich Baumgartner, Silberarbeiten von Matthias Walbaum, Steinschnitt von Daniel Griessbeck."
+relationships:
+  - type: co_creator
+    to: artist/matthias-walbaum
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 11 (12.12.2024), Folie 40
+sources:
+  kind:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 40
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 40
+  parent:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 40
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 40
+  creator:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 40
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 40
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 40
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 40

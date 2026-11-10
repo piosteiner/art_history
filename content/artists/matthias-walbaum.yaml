@@ -1,0 +1,85 @@
+public_id: 117324
+name: Matthias Walbaum
+given_name: Matthias
+family_name: Walbaum
+names:
+  - lang: de
+    role: original
+    text: Matthias Wallbaum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q27882879
+  - text: Matthes Walbaum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q27882879
+  - text: Matthäus Wallbaum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q27882879
+  - text: Matthes Wallbaum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q27882879
+  - text: Matthias Waldbaum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q27882879
+  - text: Matthes Walbom
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q27882879
+  - text: Matthäus Walbom
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q27882879
+  - text: Matthias Waldpaum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q27882879
+  - text: Matthias Walbom
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q27882879
+  - text: Matthias Wallpaum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q27882879
+  - text: Matthäus Waldpaum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q27882879
+  - text: Matthes Waldpaum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q27882879
+  - text: Matthäus Walbaum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q27882879
+  - lang: ru
+    role: translation
+    text: Вальбаум, Матеус
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q27882879
+birth: 1554
+death: 1632-01-20
+wikidata_id: Q27882879
+metadata:
+  sources: [Wikidata Q27882879 (retrieved 2026-11-09)]
+identifiers:
+  gnd: "118771116"
+  idref: "254141919"
+  kulturnav: 07c5e3c0-10b2-4ca1-989a-4d7af17a9275
+  ulan: "500118192"
+  viaf: "74649107"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q27882879
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q27882879

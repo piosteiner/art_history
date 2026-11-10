@@ -1,0 +1,33 @@
+public_id: 117349
+title_lang: de
+title: Erschaffung des Menschen
+parent: bernwardstur
+part_number: "1"
+created: 1015
+kind: relief
+medium: Bronze
+materials: [bronze]
+institution: hildesheim-cathedral
+description_md: "Linker Flügel, oberstes Feld. Gegenüber auf dem rechten Flügel: Noli me tangere (typologisches Paar nach der Vorlesung)."
+sources:
+  kind:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 33
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 33
+  parent:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 33
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 33
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 33
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 33
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 33

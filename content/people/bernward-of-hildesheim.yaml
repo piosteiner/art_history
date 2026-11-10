@@ -1,0 +1,92 @@
+public_id: 117327
+name: Bernward of Hildesheim
+names:
+  - lang: de
+    role: original
+    text: Bernward
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q702308
+  - lang: nl
+    role: translation
+    text: Bernward van Hildesheim
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q702308
+  - lang: fr
+    role: translation
+    text: Bernard de Hildesheim
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q702308
+  - lang: de
+    role: original
+    text: Bernward von Hildesheim
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q702308
+  - lang: it
+    role: translation
+    text: Bernoardo di Hildesheim
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q702308
+  - lang: es
+    role: translation
+    text: Bernardo de Hildesheim
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q702308
+  - lang: ja
+    role: translation
+    text: ベルンウァード
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q702308
+  - lang: zh
+    role: translation
+    text: 希爾德斯海姆的柏瓦
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q702308
+  - lang: ru
+    role: translation
+    text: Бернвард Хильдесхаймский
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q702308
+kind: person
+occupations: [Catholic priest, Catholic bishop, theologian, educator, master builder]
+birth: 960
+death: 1022-11-26
+wikidata_id: Q702308
+metadata:
+  sources: [Wikidata Q702308 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/bf/Bernward.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bernward.jpg
+    license: Public domain
+    credit: unbekannter Künstler
+identifiers:
+  bnf: 12033453g
+  gnd: "118510029"
+  idref: "028513525"
+  lc: n88135575
+  viaf: "3261751"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q702308
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q702308
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q702308
+  occupations:
+    - accessed: 2026-11-09
+      property: P106
+      wikidata: Q702308

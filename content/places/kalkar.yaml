@@ -1,0 +1,16 @@
+public_id: 117388
+name: Kalkar
+kind: site
+location: [6.2925, 51.73889]
+wikidata_id: Q243554
+metadata:
+  sources: [Wikidata Q243554 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q243554
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q243554

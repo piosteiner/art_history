@@ -43,11 +43,17 @@ created_span: uncertain
 medium: Lindenholz (Figuren), Fichtenholz (Schrein), ungefasst
 materials: [lime, wood, spruce]
 dimensions: [970, 417]
+institution: st-jakob-rothenburg
 web_url: https://www.rs-rothenburg.de/stjakob/Heilig_Blut_Altar/Heilig_Blut_Altar.html
 wikidata_id: Q11801545
 metadata:
   sources: [Wikidata Q11801545 (retrieved 2026-11-09)]
 relationships:
+  - type: co_creator
+    to: artist/erhart-harschner
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 8 (21.11.2024), Folie 82
   - type: associated_with
     to: movement/gothic
     sources:
@@ -84,5 +90,8 @@ sources:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 1 (26.9.2024), Folie 35
   dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 35
+  institution:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 1 (26.9.2024), Folie 35

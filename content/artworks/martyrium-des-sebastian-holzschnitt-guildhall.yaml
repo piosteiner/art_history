@@ -1,0 +1,38 @@
+public_id: 117395
+title_lang: en
+title: The Martyrdom of St Sebastian
+created: c. 1470–1475
+created_span: uncertain
+kind: woodcut
+medium: woodcut, hand-coloured
+dimensions: [26.6, 19]
+institution: guildhall-library
+description_md: An impression of the South German woodcut whose pear-wood block survives in the British Museum — block and print shown side by side in the lecture.
+relationships:
+  - type: printed_from
+    to: artwork/martyrium-des-sebastian-druckstock-bm
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 9 (28.11.2024), Folie 21
+sources:
+  kind:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 9 (28.11.2024), Folie 21
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 9 (28.11.2024), Folie 21
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 9 (28.11.2024), Folie 21
+  dimensions:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 9 (28.11.2024), Folie 21
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 9 (28.11.2024), Folie 21
+  created_span:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 9 (28.11.2024), Folie 21
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 9 (28.11.2024), Folie 21

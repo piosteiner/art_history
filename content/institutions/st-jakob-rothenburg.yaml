@@ -1,0 +1,70 @@
+public_id: 117329
+name: St. James's Church
+names:
+  - lang: fr
+    role: translation
+    text: église Saint-Jacques
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q880354
+  - lang: de
+    role: translation
+    text: St. Jakob
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q880354
+  - lang: it
+    role: translation
+    text: chiesa di San Giacomo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q880354
+  - lang: zh
+    role: translation
+    text: 圣雅各教堂
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q880354
+  - lang: ru
+    role: translation
+    text: Церковь Святого Иакова (Ротенбург-об-дер-Таубер)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q880354
+kind: church
+founded: 1471
+place: rothenburg-ob-der-tauber
+location: [10.17768, 49.37791]
+address: Kirchplatz 14
+wikidata_id: Q880354
+metadata:
+  sources: [Wikidata Q880354 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/St._Jakob_Kirche_Rothenburg_2014.jpg/1280px-St._Jakob_Kirche_Rothenburg_2014.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:St._Jakob_Kirche_Rothenburg_2014.jpg
+    license: CC BY-SA 3.0
+    credit: Tuxyso
+identifiers:
+  gnd: 4336926-1
+  viaf: "246370882"
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q880354
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q880354
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q880354
+  founded:
+    - accessed: 2026-11-09
+      property: P571
+      wikidata: Q880354
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q880354

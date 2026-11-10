@@ -58,6 +58,11 @@ relationships:
       - accessed: 2026-11-09
         property: P180
         wikidata: Q26106449
+  - type: printed_from
+    to: artwork/barbari-matrici-veduta-di-venezia
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 9 (28.11.2024), Folie 63
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/%28Venice%29_View_of_Venice_by_Jacopo_de%27_Barbari_-_Museo_Correr.jpg/1280px-%28Venice%29_View_of_Venice_by_Jacopo_de%27_Barbari_-_Museo_Correr.jpg
     source_url: https://commons.wikimedia.org/wiki/File:(Venice)_View_of_Venice_by_Jacopo_de%27_Barbari_-_Museo_Correr.jpg

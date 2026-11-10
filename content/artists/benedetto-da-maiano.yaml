@@ -1,0 +1,63 @@
+public_id: 117326
+name: Benedetto da Maiano
+given_name: Benedetto
+family_name: da Maiano
+names:
+  - text: Benedetto Di Leonardo
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q675619
+  - text: benedetto de majano
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q675619
+  - text: benedetto da majano
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q675619
+  - lang: ja
+    role: translation
+    text: ベネデット・ダ・マイアーノ
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q675619
+  - lang: ko
+    role: translation
+    text: 베네데토 다 마이아노
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q675619
+  - lang: ru
+    role: translation
+    text: Бенедетто Майано
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q675619
+birth: 1442
+death: 1497-06-02
+wikidata_id: Q675619
+metadata:
+  sources: [Wikidata Q675619 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c0/074_le_vite%2C_benedetto_da_maiano.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:074_le_vite,_benedetto_da_maiano.jpg
+    license: Public domain
+    credit: Giorgio Vasari
+identifiers:
+  bnf: 12474587t
+  gnd: "118841270"
+  idref: "033939446"
+  kulturnav: a110286d-8bb4-4038-a45b-20965e0aea84
+  lc: nr89004596
+  rkd: "6453"
+  ulan: "500006675"
+  viaf: "79111184"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q675619
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q675619

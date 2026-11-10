@@ -1,0 +1,47 @@
+public_id: 117322
+name: Jörg Syrlin the Younger
+given_name: Jörg, the Younger
+family_name: Syrlin
+names:
+  - lang: nl
+    role: translation
+    text: Jörg Syrlin
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q878641
+  - lang: de
+    role: translation
+    text: Jörg Syrlin der Jüngere
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q878641
+  - lang: it
+    role: translation
+    text: Jörg Syrlin (II)
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q878641
+  - lang: ru
+    role: translation
+    text: Йорг Сюрлин Младший
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q878641
+birth: 1455
+death: 1521
+wikidata_id: Q878641
+metadata:
+  sources: [Wikidata Q878641 (retrieved 2026-11-09)]
+identifiers:
+  gnd: "120128764"
+  rkd: "114562"
+  viaf: "5754139"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q878641
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q878641

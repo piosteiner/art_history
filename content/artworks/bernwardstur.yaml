@@ -54,6 +54,15 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Bernwardst%C3%BCr.jpg
     license: Attribution
     credit: Bischöfliche Pressestelle Hildesheim (bph)
+phases:
+  - kind: construction
+    title: Guss der beiden Flügel in einem Stück
+    period: "1015"
+    notes_md: "Die erste monumentale Bildertür aus Bronze, jeder Flügel in einem Guss im Wachsausschmelzverfahren: ein Wachsmodell der ganzen Tür, die Form in einer Grube, mehrere Öfen zugleich wegen der Metallmenge; mitgegossen die Türzapfen und die Löwenkopf-Türzieher, auf der Rückseite eine grosse Nachgussstelle beim Sündenfallrelief. Kupfer und Silber kamen aus dem Rammelsberg im Harz. Die Inschrift nennt das Jahr 1015 und Bischof Bernward."
+    people:
+      - who: person/bernward-of-hildesheim
+        role: Stifter
+        patron: true
 identifiers:
   gnd: 4120999-0
 sources:

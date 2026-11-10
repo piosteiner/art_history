@@ -75,6 +75,11 @@ relationships:
       - accessed: 2026-11-09
         property: P135
         wikidata: Q18339642
+  - type: printed_from
+    to: artwork/durer-samson-druckstock-met
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 9 (28.11.2024), Folie 24
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Albrecht_D%C3%BCrer%2C_Samson_Fighting_with_the_Lion%2C_c._1497-1498%2C_NGA_49057.jpg/1280px-Albrecht_D%C3%BCrer%2C_Samson_Fighting_with_the_Lion%2C_c._1497-1498%2C_NGA_49057.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer,_Samson_Fighting_with_the_Lion,_c._1497-1498,_NGA_49057.jpg

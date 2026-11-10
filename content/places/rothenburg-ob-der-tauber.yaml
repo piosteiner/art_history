@@ -1,0 +1,16 @@
+public_id: 117328
+name: Rothenburg ob der Tauber
+kind: site
+location: [10.17889, 49.37722]
+wikidata_id: Q153494
+metadata:
+  sources: [Wikidata Q153494 (retrieved 2026-11-09)]
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q153494
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q153494

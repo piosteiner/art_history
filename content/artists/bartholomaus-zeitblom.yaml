@@ -1,0 +1,75 @@
+public_id: 117320
+name: Bartholomäus Zeitblom
+given_name: Bartholomäus
+family_name: Zeitblom
+names:
+  - text: Bartholome Zeitblom
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q531677
+  - text: bartholomaeus zeitblom
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q531677
+  - text: Bartholomäus Zeytblum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q531677
+  - text: bartholomaeus zeitbloom
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q531677
+  - text: Bartholome Zeytblum
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q531677
+  - text: barth. zeitblom
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q531677
+  - text: Bartholomeus Zeitblom
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q531677
+  - text: Zeitblom
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q531677
+  - text: Bartolomaus Zeitblom
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q531677
+  - lang: ru
+    role: translation
+    text: Бартоломеус Цайтблом
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q531677
+birth: 1455/1460
+birth_label: c. 1450s
+death: 1518/1522
+death_label: c. 1520s
+wikidata_id: Q531677
+metadata:
+  sources: [Wikidata Q531677 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Bartholom%C3%A4us_Zeitblom-Heerberger_Altar-1084.jpg/1280px-Bartholom%C3%A4us_Zeitblom-Heerberger_Altar-1084.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bartholom%C3%A4us_Zeitblom-Heerberger_Altar-1084.jpg
+    license: Public domain
+    credit: Bartholomäus Zeitblom
+identifiers:
+  gnd: "104187980"
+  idref: "192304925"
+  lc: no2010113003
+  rkd: "86281"
+  ulan: "500009561"
+  viaf: "95739400"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q531677
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q531677

@@ -1,0 +1,42 @@
+public_id: 117323
+name: Antonio Ciaccheri
+given_name: Antonio
+family_name: Ciaccheri
+names:
+  - text: Antonio di Ciaccheri Manetti
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q21548230
+  - text: Antonio di Manetto Ciaccheri
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q21548230
+  - lang: de
+    role: translation
+    text: Antonio Manetti Ciaccheri
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q21548230
+birth: 1404
+death: 1460-11-08
+wikidata_id: Q21548230
+metadata:
+  sources: [Wikidata Q21548230 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Cinque_maestri_del_rinascimento_fiorentino%2C_XVI_sec%2C_antonio_manetti.JPG/1280px-Cinque_maestri_del_rinascimento_fiorentino%2C_XVI_sec%2C_antonio_manetti.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Cinque_maestri_del_rinascimento_fiorentino,_XVI_sec,_antonio_manetti.JPG
+    license: CC BY 2.5
+    credit: Paolo Uccello
+identifiers:
+  gnd: "123773512"
+  ulan: "500016179"
+  viaf: "5849016"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q21548230
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q21548230

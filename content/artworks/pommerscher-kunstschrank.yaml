@@ -17,6 +17,7 @@ names:
   - lang: en
     role: translation
     text: Pomeranian Art Cabinet
+creator: ulrich-baumgartner
 created: 1610/1617
 medium: Ebenholzfurnier, Silber, Elfenbein
 materials: [ebony, ivory, silver]
@@ -25,6 +26,17 @@ institution: kunstgewerbemuseum-berlin
 wikidata_id: Q2103371
 metadata:
   sources: [Wikidata Q2103371 (retrieved 2026-11-09)]
+relationships:
+  - type: co_creator
+    to: artist/anton-mozart
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 11 (12.12.2024), Folie 38
+  - type: co_creator
+    to: artist/hans-rottenhammer
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 11 (12.12.2024), Folie 38
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/0/06/Pomeranian_Art_Cabinet.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Pomeranian_Art_Cabinet.jpg
@@ -37,6 +49,9 @@ sources:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 11 (12.12.2024)
   created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024)
+  creator:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 11 (12.12.2024)
   materials:

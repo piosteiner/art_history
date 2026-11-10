@@ -1,0 +1,45 @@
+public_id: 117393
+name: St. Martin, Lorch
+names:
+  - lang: nl
+    role: translation
+    text: Sint-Martinuskerk
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1300852
+  - lang: de
+    role: translation
+    text: St. Martin
+    sources:
+      - accessed: 2026-11-09
+        wikidata: Q1300852
+kind: church
+place: lorch
+location: [7.80422, 50.04396]
+address: Markt 4
+website_url: https://heilig-kreuz-rheingau.de/beitrag/st-martin-lorch/
+wikidata_id: Q1300852
+metadata:
+  sources: [Wikidata Q1300852 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/20111004_LorchStMartin1.JPG/1280px-20111004_LorchStMartin1.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:20111004_LorchStMartin1.JPG
+    license: CC BY-SA 3.0
+    credit: Marion Halft
+sources:
+  kind:
+    - accessed: 2026-11-09
+      property: P31
+      wikidata: Q1300852
+  place:
+    - accessed: 2026-11-09
+      property: P131
+      wikidata: Q1300852
+  address:
+    - accessed: 2026-11-09
+      property: P6375
+      wikidata: Q1300852
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q1300852

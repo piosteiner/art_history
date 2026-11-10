@@ -16,7 +16,22 @@ metadata:
   sources: [Wikidata Q105959098 (retrieved 2026-11-09)]
 relationships:
   - type: co_creator
+    to: artist/bartholomaus-zeitblom
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 8 (21.11.2024), Folie 36
+  - type: co_creator
+    to: artist/bernhard-strigel
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 8 (21.11.2024), Folie 36
+  - type: co_creator
     to: artist/gregor-erhart
+  - type: co_creator
+    to: artist/jorg-syrlin-the-younger
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 8 (21.11.2024), Folie 36
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Blaubeuren_Chor_Hochaltar.jpg/1280px-Blaubeuren_Chor_Hochaltar.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Blaubeuren_Chor_Hochaltar.jpg

@@ -1,0 +1,38 @@
+public_id: 117352
+title_lang: de
+title: Verhör Adams und Evas
+parent: bernwardstur
+part_number: "4"
+created: 1015
+kind: relief
+medium: Bronze
+materials: [bronze]
+institution: hildesheim-cathedral
+description_md: "Linker Flügel. Gegenüber: Verhör Christi durch Pilatus."
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/35/Bernwardst%C3%BCr_im_Dom_zu_Hildesheim_Anklage.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bernwardst%C3%BCr_im_Dom_zu_Hildesheim_Anklage.jpg
+    license: CC BY 4.0
+    credit: Moleskine, Wikimedia Commons
+sources:
+  kind:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 36
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 36
+  parent:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 36
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 36
+  materials:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 36
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 36
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 5 (31.10.2024), Folie 36

@@ -1,0 +1,21 @@
+public_id: 117378
+title_lang: de
+title: Apothekenzubehör
+parent: pommerscher-kunstschrank
+part_number: "2"
+created: 1610/1617
+institution: kunstgewerbemuseum-berlin
+description_md: Aus dem Inhalt des Kunstschranks; der Schrank selbst verbrannte 1945.
+sources:
+  parent:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 41
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 41
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 41
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 41

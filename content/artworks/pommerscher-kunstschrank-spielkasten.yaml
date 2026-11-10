@@ -1,0 +1,25 @@
+public_id: 117380
+title_lang: de
+title: Kasten mit Schachspiel und anderen Spielplänen, Spielfiguren
+parent: pommerscher-kunstschrank
+part_number: "4"
+created: 1610/1617
+kind: game
+institution: kunstgewerbemuseum-berlin
+description_md: Aus dem Inhalt des Kunstschranks.
+sources:
+  kind:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 43
+  parent:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 43
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 43
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 43
+  title_status:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 43

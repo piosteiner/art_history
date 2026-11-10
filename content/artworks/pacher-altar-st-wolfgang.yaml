@@ -64,6 +64,7 @@ created: 1481
 medium: Zirbelkiefer (Schrein, Skulpturen), Fichte (Flügel), originale Fassung
 materials: [oil paint, canvas, spruce]
 dimensions: [1088, 660]
+institution: pfarrkirche-st-wolfgang
 wikidata_id: Q1544976
 metadata:
   sources: [Wikidata Q1544976 (retrieved 2026-11-09)]
@@ -101,3 +102,6 @@ sources:
     - accessed: 2026-11-09
       property: P2048
       wikidata: Q1544976
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024)
