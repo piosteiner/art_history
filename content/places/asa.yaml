@@ -1,0 +1,16 @@
+public_id: 117693
+name: Asa
+kind: site
+location: [132.43361, 34.54597]
+wikidata_id: Q11450271
+metadata:
+  sources: [Wikidata Q11450271 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q11450271
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q11450271

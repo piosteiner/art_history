@@ -12,14 +12,20 @@ names:
     role: translation
     text: Liber Floridus
 creator: lambert-of-saint-omer
-created: 1121
+created: 1090/1121
+created_span: duration
 medium: manuscript
 institution: ghent-university-library
 inventory_number: Ms. 92
 web_url: https://mmfc.be/ms/mmfc-50478
+description_md: "The autograph of the [[literature/liber-floridus|Liber Floridus]]: the manuscript written by its compiler, [[artist/lambert-of-saint-omer]], canon of Saint-Omer, who began the work in 1090 and completed it around 1121; its latter part is lost.[[source/wikipedia-fr-lambert-de-saint-omer]][[source/wikipedia-en-liber-floridus]] The oldest of the known manuscripts, it contains a map of parts of Europe and two climate-zone drawings after the Macrobian model as an attempt at a complete world map — believed to have been drawn by Lambert himself; the later copies in Wolfenbüttel and Paris (around 1150) are not his.[[source/wikipedia-en-liber-floridus]] Albert Derolez published a facsimile edition in 1968 and a codicological study, *Lambertus qui librum fecit*, in 1978.[[source/wikipedia-fr-lambert-de-saint-omer]]"
 wikidata_id: Q131099759
 metadata:
   sources: [Wikidata Q131099759 (retrieved 2026-11-09)]
+relationships:
+  - type: illustrates
+    to: literature/liber-floridus
+    label: the author's autograph
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/5/53/Meddragon_Liber_Floridus_Lambert_of_sint_Omaars_1460.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Meddragon_Liber_Floridus_Lambert_of_sint_Omaars_1460.jpg
@@ -32,9 +38,8 @@ sources:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 6 (7.11.2024), Folie 115
   created:
-    - accessed: 2026-11-09
-      property: P571
-      wikidata: Q131099759
+    - source: wikipedia-fr-lambert-de-saint-omer
+      accessed: 2026-11-10
   creator:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 6 (7.11.2024), Folie 115

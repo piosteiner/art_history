@@ -29,6 +29,25 @@ birth: 1960-10-02
 wikidata_id: Q3482244
 metadata:
   sources: [Wikidata Q3482244 (retrieved 2026-11-06)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q3482244
+  - type: born_in
+    to: place/fukuoka
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q3482244
+  - type: studied_at
+    to: institution/okayama-university
+    sources:
+      - accessed: 2026-11-10
+        property: P69
+        wikidata: Q3482244
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Ready_Player_One_Japan_Premiere_Red_Carpet_Aramaki_Shinji_%2840893745414%29.jpg/1280px-Ready_Player_One_Japan_Premiere_Red_Carpet_Aramaki_Shinji_%2840893745414%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Ready_Player_One_Japan_Premiere_Red_Carpet_Aramaki_Shinji_(40893745414).jpg

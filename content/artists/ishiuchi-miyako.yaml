@@ -35,6 +35,19 @@ birth: 1947-03-27
 wikidata_id: Q272833
 metadata:
   sources: [Wikidata Q272833 (retrieved 2026-11-06)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q272833
+  - type: born_in
+    to: place/kiryu
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q272833
 identifiers:
   bnf: "135625774"
   gnd: "122302966"

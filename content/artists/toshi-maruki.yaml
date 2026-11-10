@@ -55,6 +55,39 @@ death: 2000-01-13
 wikidata_id: Q114582
 metadata:
   sources: [Wikidata Q114582 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q114582
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q114582
+  - type: born_in
+    to: place/chippubetsu
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q114582
+  - type: died_in
+    to: place/moroyama
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q114582
+  - type: studied_at
+    to: institution/joshibi-university-of-art-and-design
+    sources:
+      - accessed: 2026-11-10
+        property: P69
+        wikidata: Q114582
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/f/ff/1947%E5%B9%B4%E9%A0%83%E3%81%AE%E8%B5%A4%E6%9D%BE%E4%BF%8A%E5%AD%90%EF%BC%88%E4%B8%B8%E6%9C%A8%E4%BF%8A%EF%BC%89.jpg
     source_url: https://commons.wikimedia.org/wiki/File:1947%E5%B9%B4%E9%A0%83%E3%81%AE%E8%B5%A4%E6%9D%BE%E4%BF%8A%E5%AD%90%EF%BC%88%E4%B8%B8%E6%9C%A8%E4%BF%8A%EF%BC%89.jpg

@@ -2,3 +2,59 @@ public_id: 117316
 name: Johann König
 given_name: new:artist:Johann
 family_name: König
+birth: 1586-10-21
+death: 1642-03-04
+wikidata_id: Q439439
+metadata:
+  sources: [Wikidata Q439439 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q439439
+  - type: born_in
+    to: place/nuremberg
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q439439
+  - type: died_in
+    to: place/nuremberg
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q439439
+  - type: worked_in
+    to: place/augsburg
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q439439
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q439439
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q439439
+identifiers:
+  gnd: "122837916"
+  rkd: "45351"
+  ulan: "500032391"
+  viaf: "55039832"
+sources:
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q439439
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q439439

@@ -1,0 +1,16 @@
+public_id: 117694
+name: Higashimatsuyama
+kind: site
+location: [139.39992, 36.04217]
+wikidata_id: Q823907
+metadata:
+  sources: [Wikidata Q823907 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q823907
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q823907

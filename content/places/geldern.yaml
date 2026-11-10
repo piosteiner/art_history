@@ -1,0 +1,16 @@
+public_id: 117715
+name: Geldern
+kind: site
+location: [6.3325, 51.51972]
+wikidata_id: Q16024
+metadata:
+  sources: [Wikidata Q16024 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q16024
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q16024

@@ -1,0 +1,46 @@
+public_id: 117700
+name: Kim Seo-kyung
+given_name: Seo-kyung
+family_name: Kim
+names:
+  - lang: ja
+    role: translation
+    text: キム・ソギョン
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q118720090
+  - lang: ko
+    role: translation
+    text: 김서경
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q118720090
+birth: 1965
+biography_md: |-
+  South Korean sculptor, born in Seoul in 1965.[[source/won-2016-kim-seo-kyung-kim-eun-sung]] She studied sculpture at Chung-Ang University, entering in 1984 — the year of her fellow student and later husband [[artist/kim-eun-sung]], who was president of the art college's student council; she was, in her own words, "the one who worked hard under the president". Her graduation work was called *When Reunification Comes* (통일이 오면). Together they took part in the Minjung art movement of the 1980s, which gave form to the struggle for democracy and reunification, and both showed in *15 Years of Minjung Art* at the National Museum of Modern and Contemporary Art in 1994.[[source/won-2016-kim-seo-kyung-kim-eun-sung]][[source/kim-2019-press-freedom-monument]] After running an art school for three years they gave it up to work only on their own sculpture — each separately and both together; their studio was a plastic greenhouse in Goyang (Gyeonggi), where the Statue of Peace was made.[[source/won-2016-kim-seo-kyung-kim-eun-sung]]
+
+  The [[artwork/statue-of-peace|Statue of Peace]] (2011) began as a memorial stone; angered by the Japanese government's objections, they turned it into a figure, and she chose a girl of the age the victims had been when they were taken — taking up an earlier work of hers, *A Girl's Dream*. She modelled the clay alone, not wanting a man's hands on the image of the grandmothers, and reworked the face about a hundred times.[[source/won-2016-kim-seo-kyung-kim-eun-sung]] Her husband calls their work "social art" rather than public art; she sees herself as the more direct of the two, interested in people's faces and lives, where he works with metaphor.[[source/won-2016-kim-seo-kyung-kim-eun-sung]][[source/kim-2019-press-freedom-monument]] With him she wrote *빈 의자에 새긴 약속* ("A promise carved in an empty chair", 2016), the makers' notes on the statue.[[source/won-2016-kim-seo-kyung-kim-eun-sung]] For their work the couple was put on the Park Geun-hye government's blacklist of artists.[[source/kim-2019-press-freedom-monument]]
+wikidata_id: Q118720090
+metadata:
+  sources: [Wikidata Q118720090 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/south-korea
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q118720090
+  - type: born_in
+    to: place/seoul
+  - type: studied_at
+    to: institution/chung-ang-university
+    label: sculpture, from 1984
+  - type: married_to
+    to: artist/kim-eun-sung
+identifiers:
+  nlk: KAC202368542
+  viaf: "3162781378665982067"
+sources:
+  birth:
+    - source: won-2016-kim-seo-kyung-kim-eun-sung
+      accessed: 2026-11-10

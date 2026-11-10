@@ -1,0 +1,48 @@
+public_id: 117701
+name: Kim Eun-sung
+given_name: Eun-sung
+family_name: Kim
+names:
+  - lang: ja
+    role: translation
+    text: キム・ウンソン
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q118720086
+  - lang: ko
+    role: translation
+    text: 김운성
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q118720086
+birth: 1964
+biography_md: |-
+  South Korean sculptor, born in Chuncheon (Gangwon) in 1964.[[source/won-2016-kim-seo-kyung-kim-eun-sung]] He studied sculpture at Chung-Ang University, entering in 1984 together with [[artist/kim-seo-kyung]], his later wife; he was president of the art college's student council. "Where others step aside from history and society, we should not step aside too" — with her he took part in the Minjung art movement of the 1980s and showed in *15 Years of Minjung Art* at the National Museum of Modern and Contemporary Art in 1994.[[source/won-2016-kim-seo-kyung-kim-eun-sung]][[source/kim-2019-press-freedom-monument]] He calls what they make "social art" rather than public art: work that shares a view of what it should mean in society.[[source/kim-2019-press-freedom-monument]] On his own he likes the rough-and-tumble of everyday Korean life — children at play, games like *malttukbakgi* — and works with metaphor where his wife is direct.[[source/won-2016-kim-seo-kyung-kim-eun-sung]]
+
+  Their joint works record the dead of Korea's modern history: beginning with a memorial tower at Gwangju University for the tenth anniversary of the Gwangju Uprising (1990), the memorial to the unnamed peasant soldiers of the Donghak Revolution in Jeongeup (1994), the poet Chae Gwang-seok's memorial (2000), the memorial to the schoolgirls Mi-seon and Hyo-sun (2012), the memorial to the independence activist Jo Mun-gi (2014), the tram and *The Late Student* in front of the Seoul Museum of History (2010), the [[artwork/statue-of-peace|Statue of Peace]] (2011) and its many versions, the *Vietnam Pietà* for the victims of massacres by Korean troops in the Vietnam War, the statues of forced labourers (Yongsan and elsewhere) and the press-freedom monument — a fountain pen in a stone slab — in front of the Press Center in Seoul (2019).[[source/won-2016-kim-seo-kyung-kim-eun-sung]][[source/kim-2019-press-freedom-monument]] For their work the couple was put on the Park Geun-hye government's blacklist of artists.[[source/kim-2019-press-freedom-monument]]
+wikidata_id: Q118720086
+metadata:
+  sources: [Wikidata Q118720086 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/south-korea
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q118720086
+  - type: born_in
+    to: place/chuncheon
+  - type: studied_at
+    to: institution/chung-ang-university
+    label: sculpture, from 1984
+    sources:
+      - accessed: 2026-11-10
+        property: P69
+        wikidata: Q118720086
+identifiers:
+  nlk: KAC201817261
+  viaf: "76153409682241581545"
+sources:
+  birth:
+    - source: won-2016-kim-seo-kyung-kim-eun-sung
+      accessed: 2026-11-10

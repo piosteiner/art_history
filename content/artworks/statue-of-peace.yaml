@@ -41,11 +41,14 @@ names:
     sources:
       - accessed: 2026-11-06
         wikidata: Q11482253
-creator: kim-seo-kyung-kim-eun-sung
-created: 2011-12-10
+creator: kim-seo-kyung
+created: 2011
 kind: statue
 location: [126.98035, 37.57493]
-description_md: A memorial to the [[comfort-women]] in [[place/seoul]], unveiled on 10 December 2011.
+description_md: |-
+  A memorial to the [[comfort-women]], the girl seated beside an empty chair, set up opposite the Japanese embassy in [[place/seoul]] on 14 December 2011 for the 1000th Wednesday demonstration, the weekly protest demanding Japan's apology and compensation.[[source/won-2016-kim-seo-kyung-kim-eun-sung]] It was made by [[artist/kim-seo-kyung]] and [[artist/kim-eun-sung]] in about nine months of discussion with the Korean Council for the Women Drafted for Military Sexual Slavery by Japan.[[source/wikipedia-ko-kim-eun-sung]] The design began as a memorial stone; Kim Seo-kyung chose a girl of the age the women had been when they were taken. The cropped hair stands for the ties cut against her will, the bird on her left shoulder for a link with the dead, the raised heels for a life never at rest — twelve such signs in all; the empty chair is for the grandmothers who have died and a place for those who stand by them.[[source/won-2016-kim-seo-kyung-kim-eun-sung]]
+
+  By August 2016 the couple had set up 29 further statues in Korea and 4 abroad,[[source/won-2016-kim-seo-kyung-kim-eun-sung]] by 2019 some 80.[[source/kim-2019-press-freedom-monument]] People put scarves on the girl in the cold and hold umbrellas over her in the rain; when the governments argued in 2015–16 whether its removal had been agreed, students camped beside it through the winter.[[source/won-2016-kim-seo-kyung-kim-eun-sung]]
 wikidata_id: Q11482253
 metadata:
   sources: [Wikidata Q11482253 (retrieved 2026-11-06)]
@@ -53,6 +56,8 @@ relationships:
   - type: created_in
     to: place/seoul
     period: 2011-12-10
+  - type: co_creator
+    to: artist/kim-eun-sung
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Japanese_Embassy_in_Seoul_and_watched_from_behind_a_bronze_statue_of_comfort_women.JPG/1280px-Japanese_Embassy_in_Seoul_and_watched_from_behind_a_bronze_statue_of_comfort_women.JPG
     source_url: https://commons.wikimedia.org/wiki/File:Japanese_Embassy_in_Seoul_and_watched_from_behind_a_bronze_statue_of_comfort_women.JPG
@@ -63,13 +68,8 @@ sources:
     - property: P31
       wikidata: Q11482253
   created:
-    - accessed: 2026-11-06
-      property: P571
-      wikidata: Q11482253
-  creator:
-    - accessed: 2026-11-06
-      property: P170
-      wikidata: Q11482253
+    - source: won-2016-kim-seo-kyung-kim-eun-sung
+      accessed: 2026-11-10
   location:
     - accessed: 2026-11-06
       property: P625

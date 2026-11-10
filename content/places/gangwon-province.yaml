@@ -1,0 +1,16 @@
+public_id: 117706
+name: Gangwon Province
+kind: site
+location: [128.25, 37.5]
+wikidata_id: Q41071
+metadata:
+  sources: [Wikidata Q41071 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q41071
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q41071

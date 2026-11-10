@@ -1,0 +1,16 @@
+public_id: 117696
+name: Moroyama
+kind: site
+location: [139.316, 35.94153]
+wikidata_id: Q1354799
+metadata:
+  sources: [Wikidata Q1354799 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q1354799
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q1354799

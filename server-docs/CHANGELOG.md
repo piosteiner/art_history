@@ -4,6 +4,24 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-10
 
+### Content: Kim Seo-kyung and Kim Eun-sung as two artists; Lambert of Saint-Omer completed
+- **What:** owner 2026-11-10 — (1) the joint artist "Kim Seo-kyung and Kim Eun-sung" (Q30514942, the pair) split
+  like the Marukis: Kim Seo-kyung (Q118720090) and Kim Eun-sung (Q118720086) from their own items, the joint entry
+  merged into Kim Seo-kyung (address redirects, added pair name removed), Kim Eun-sung `co_creator` of the Statue of
+  Peace, `married_to`, the pair declined as the statue's Wikidata creator. Completed from the Weekly Khan interview
+  (Won Hee-bok, 22.8.2016) and the Journalists Association of Korea interview (Kim Go-eun, 17.7.2019): birth 1965
+  Seoul / 1964 Chuncheon (place created from Q42148), Chung-Ang University sculpture from 1984 (`studied_at`),
+  biographies with their joint works. The statue: created 2011, set up 14 December 2011 for the 1000th Wednesday
+  demonstration (Weekly Khan) — Wikidata's unsourced 10 December declined; new description.
+  (2) "Lambert Of Saint Omer" (auto-created artist of the Ghent Liber Floridus) was also the person Q2784355: the person
+  converted and merged into the artist (`entry_moves` repointed to the artist by hand — `merge_entries()` still doesn't),
+  named "Lambert of Saint-Omer", c. 1061 – c. 1125, `worked_in` Saint-Omer (created from Q208793), biography from
+  Wikipedia en/de/fr (their disagreement on his order said in the text); literary work `liber-floridus` (Q479629;
+  `from-wikidata.js` refuses it as "artwork") `written_by` him, the Ghent manuscript `illustrates` it as the autograph,
+  created 1090–1121 (duration; Wikidata's 1121 declined); `auto_created` acknowledged.
+- **Why:** two people fused into one entry; one man entered twice.
+- **Revert:** history pages of the entries (audit_log); scripts `p228/kims.js`, `p228/lambert.js` in the session scratchpad.
+
 ### Content: Iri and Toshi Maruki as two artists
 - **What:** owner 2026-11-10 — the couple had been one artist ("Iri and Toshi Maruki", Q3296016, Wikidata's item for
   the pair). Created from their own items: Iri Maruki (Q11368341, 1901–1995) and Toshi Maruki (Q114582, 1912–2000),

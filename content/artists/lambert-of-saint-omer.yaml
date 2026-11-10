@@ -1,4 +1,53 @@
 public_id: 117257
-name: Lambert Of Saint Omer
-given_name: Lambert Of Saint
-family_name: Omer
+name: Lambert of Saint-Omer
+given_name: Lambert
+names:
+  - lang: nl
+    role: translation
+    text: Lambert van Sint-Omaars
+  - lang: fr
+    role: translation
+    text: Lambert de Saint-Omer
+  - lang: la
+    role: alternative
+    text: Lambertus Audomarensis
+  - lang: ru
+    role: translation
+    text: Ламберт из Сент-Омера
+birth: c. 1061
+death: c. 1125
+biography_md: |-
+  Canon in [[place/saint-omer]], then in the County of Flanders, compiler, scribe and illustrator of the [[literature/liber-floridus|Liber Floridus]], one of the best-known encyclopedias of the Middle Ages.[[source/wikipedia-en-liber-floridus]][[source/wikipedia-de-liber-floridus]] His father Onulfus, who died in 1077, had also been a canon at the church of Notre-Dame of Saint-Omer.[[source/wikipedia-en-liber-floridus]][[source/wikipedia-fr-lambert-de-saint-omer]] The French and Dutch Wikipedia say he was received into the Benedictine abbey of Saint-Bertin as a youth, attended important schools in France and taught grammar, theology and music;[[source/wikipedia-fr-lambert-de-saint-omer]] the English one insists he was a canon of Notre-Dame and must not be confused with his contemporary Lambert, abbot of Saint-Bertin (1095–1125).[[source/wikipedia-en-liber-floridus]]
+
+  He began the Liber Floridus in 1090 and completed it around 1120/21:[[source/wikipedia-fr-lambert-de-saint-omer]] extracts from some 192 works — Isidore's *Etymologiae*, the *Historia Brittonum*, Bartolf of Nangis's crusade chronicle — with a universal history down to 1119, and accounts of crusaders from Saint-Omer whom he apparently met on their return.[[source/wikipedia-en-liber-floridus]][[source/wikipedia-de-liber-floridus]] His own manuscript survives as the [[artwork/liber-floridus-gent|Ghent autograph]] (University Library, Ms. 92); its maps — a map of parts of Europe and two climate-zone drawings after Macrobius — are believed to be by his own hand.[[source/wikipedia-en-liber-floridus]] The codicologist Albert Derolez called his study of it *Lambertus qui librum fecit* (1978) — "Lambert, who made the book".[[source/wikipedia-fr-lambert-de-saint-omer]]
+wikidata_id: Q2784355
+metadata:
+  sources: [Wikidata Q2784355 (retrieved 2026-11-09)]
+relationships:
+  - type: worked_in
+    to: place/saint-omer
+    label: canon
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e7/Lambert_van_Sint-Omaars.png
+    source_url: https://commons.wikimedia.org/wiki/File:Lambert_van_Sint-Omaars.png
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "121809760"
+  gnd: "100951325"
+  idref: "068531028"
+  lc: n86024993
+  viaf: "235845558"
+sources:
+  birth:
+    - accessed: 2026-11-09
+      property: P569
+      wikidata: Q2784355
+    - source: wikipedia-fr-lambert-de-saint-omer
+      accessed: 2026-11-10
+  death:
+    - accessed: 2026-11-09
+      property: P570
+      wikidata: Q2784355
+    - source: wikipedia-fr-lambert-de-saint-omer
+      accessed: 2026-11-10

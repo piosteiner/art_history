@@ -1,0 +1,16 @@
+public_id: 117709
+name: Vilnius Academy of Art
+kind: university
+founded: 1793
+wikidata_id: Q1476319
+metadata:
+  sources: [Wikidata Q1476319 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q1476319
+  founded:
+    - accessed: 2026-11-10
+      property: P571
+      wikidata: Q1476319

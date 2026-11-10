@@ -1,0 +1,19 @@
+public_id: 117725
+name: Liber Floridus
+names:
+  - lang: en
+    role: translation
+    text: Book of Flowers
+    status: common
+  - lang: fr
+    role: translation
+    text: Le Livre fleurissant en fleurs
+    status: official
+description_md: |-
+  A medieval encyclopedia — the "Book of Flowers" — compiled by [[artist/lambert-of-saint-omer]], canon of Saint-Omer, between 1090 and about 1120 from extracts of some 192 works: a universal history down to 1119, and biblical, astronomical, geographical, philosophical and natural-history subjects.[[source/wikipedia-en-liber-floridus]][[source/wikipedia-fr-lambert-de-saint-omer]] The flowers are a metaphor: creation as a garden in bloom, from which the author picks the finest or strangest blooms for his reader.[[source/wikipedia-de-liber-floridus]] It was the first of the encyclopedias of the High Middle Ages that slowly replaced Isidore of Seville's.[[source/wikipedia-en-liber-floridus]]
+
+  The author's own manuscript is the [[artwork/liber-floridus-gent|autograph in Ghent]] (Ms. 92), its end lost; nine copies survive, seven of them illustrated[[source/wikipedia-fr-lambert-de-saint-omer]] — among them those in Wolfenbüttel (Herzog August Bibliothek, bought on Leibniz's initiative in 1710) and Paris (Bibliothèque nationale), both of around 1150, whose world maps differ from the original.[[source/wikipedia-de-liber-floridus]] It was later translated into French as *Le Livre fleurissant en fleurs*.[[source/wikipedia-en-liber-floridus]]
+wikidata_id: Q479629
+relationships:
+  - type: written_by
+    to: artist/lambert-of-saint-omer

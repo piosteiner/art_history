@@ -29,6 +29,37 @@ birth: 1965-10-04
 wikidata_id: Q2596176
 metadata:
   sources: [Wikidata Q2596176 (retrieved 2026-11-06)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q2596176
+  - type: born_in
+    to: place/niigata
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q2596176
+  - type: worked_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q2596176
+  - type: studied_at
+    to: institution/tokyo-university-of-the-arts
+    sources:
+      - accessed: 2026-11-10
+        property: P69
+        wikidata: Q2596176
+  - type: associated_with
+    to: movement/contemporary-art
+    sources:
+      - accessed: 2026-11-10
+        property: P135
+        wikidata: Q2596176
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/e2/Makoto_Aida_2012.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Makoto_Aida_2012.jpg

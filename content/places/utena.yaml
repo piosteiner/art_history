@@ -1,0 +1,16 @@
+public_id: 117708
+name: Utena
+kind: settlement
+location: [25.6, 55.5]
+wikidata_id: Q189157
+metadata:
+  sources: [Wikidata Q189157 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q189157
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q189157

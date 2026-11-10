@@ -17,6 +17,25 @@ birth: 1964-05-24
 wikidata_id: Q2675312
 metadata:
   sources: [Wikidata Q2675312 (retrieved 2026-11-07)]
+relationships:
+  - type: nationality
+    to: polity/lithuania
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q2675312
+  - type: born_in
+    to: place/utena
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q2675312
+  - type: studied_at
+    to: institution/vilnius-academy-of-art
+    sources:
+      - accessed: 2026-11-10
+        property: P69
+        wikidata: Q2675312
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/4/40/Deimantas_Narkevi%C4%8Dius.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Deimantas_Narkevi%C4%8Dius.jpg

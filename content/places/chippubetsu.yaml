@@ -1,0 +1,16 @@
+public_id: 117695
+name: Chippubetsu
+kind: site
+location: [141.95783, 43.767]
+wikidata_id: Q1357097
+metadata:
+  sources: [Wikidata Q1357097 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q1357097
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q1357097

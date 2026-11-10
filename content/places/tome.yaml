@@ -1,0 +1,16 @@
+public_id: 117699
+name: Tome
+kind: site
+location: [141.18775, 38.69183]
+wikidata_id: Q696401
+metadata:
+  sources: [Wikidata Q696401 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q696401
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q696401

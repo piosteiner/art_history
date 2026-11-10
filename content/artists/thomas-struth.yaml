@@ -19,6 +19,37 @@ birth: 1954-10-11
 wikidata_id: Q522783
 metadata:
   sources: [Wikidata Q522783 (retrieved 2026-11-09)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q522783
+  - type: born_in
+    to: place/geldern
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q522783
+  - type: worked_in
+    to: place/dusseldorf
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q522783
+  - type: worked_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q522783
+  - type: studied_at
+    to: institution/kunstakademie-dusseldorf
+    sources:
+      - accessed: 2026-11-10
+        property: P69
+        wikidata: Q522783
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Struth-thomas-mus-ludwig-koeln-080316.jpg/1280px-Struth-thomas-mus-ludwig-koeln-080316.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Struth-thomas-mus-ludwig-koeln-080316.jpg

@@ -1,5 +1,6 @@
 public_id: 100467
-name: Dusseldorf
+name_lang: de
+name: Düsseldorf
 names:
   - lang: ja
     role: translation
@@ -12,7 +13,7 @@ names:
     text: 뒤셀도르프
   - lang: fr
     role: translation
-    text: Düsseldorf
+    text: Dusseldorf
   - lang: ru
     role: translation
     text: Дюссельдорф

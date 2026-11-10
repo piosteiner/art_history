@@ -1,0 +1,11 @@
+public_id: 117704
+name: contemporary art
+kind: movement
+wikidata_id: Q186030
+metadata:
+  sources: [Wikidata Q186030 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q186030

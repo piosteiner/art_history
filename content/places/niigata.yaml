@@ -1,0 +1,16 @@
+public_id: 117703
+name: Niigata
+kind: settlement
+location: [139.03639, 37.91619]
+wikidata_id: Q179691
+metadata:
+  sources: [Wikidata Q179691 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q179691
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q179691

@@ -59,6 +59,19 @@ birth: 1965-05-24
 wikidata_id: Q723867
 metadata:
   sources: [Wikidata Q723867 (retrieved 2026-11-06)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q723867
+  - type: born_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q723867
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Shinichiro_Watanabe_20090703_Japan_Expo_01.jpg/1280px-Shinichiro_Watanabe_20090703_Japan_Expo_01.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Shinichiro_Watanabe_20090703_Japan_Expo_01.jpg

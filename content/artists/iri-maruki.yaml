@@ -31,6 +31,32 @@ wikidata_id: Q11368341
 metadata:
   sources: [Wikidata Q11368341 (retrieved 2026-11-10)]
 relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q11368341
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q11368341
+  - type: born_in
+    to: place/asa
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q11368341
+  - type: died_in
+    to: place/higashimatsuyama
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q11368341
   - type: married_to
     to: artist/toshi-maruki
 images:

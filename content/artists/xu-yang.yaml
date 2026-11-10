@@ -5,8 +5,33 @@ names:
     role: original
     text: 徐揚
 birth: 1712
+death: 1713/1800
+death_label: 18th century
 wikidata_id: Q16228969
+metadata:
+  sources: [Wikidata Q16228969 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/qing-dynasty
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q16228969
+  - type: born_in
+    to: place/suzhou
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q16228969
+identifiers:
+  gnd: "1138568813"
+  lc: nr91013297
+  viaf: "261115998"
 sources:
   birth:
     - property: P569
       wikidata: Q16228969
+  death:
+    - url: https://www.wikidata.org/wiki/Q16228969
+      source: wikidata-q109293376
+      accessed: 2026-11-10

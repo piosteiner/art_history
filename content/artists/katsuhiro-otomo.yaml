@@ -27,6 +27,19 @@ birth: 1954-04-14
 wikidata_id: Q378710
 metadata:
   sources: [Wikidata Q378710 (retrieved 2026-11-06)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q378710
+  - type: born_in
+    to: place/tome
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q378710
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/2d/FIBD2016OtomoHermann_%28cropped%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:FIBD2016OtomoHermann_(cropped).jpg

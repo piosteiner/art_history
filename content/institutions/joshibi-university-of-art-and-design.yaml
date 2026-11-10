@@ -1,0 +1,16 @@
+public_id: 117697
+name: Joshibi University of Art and Design
+kind: art academy
+founded: 1900
+wikidata_id: Q846126
+metadata:
+  sources: [Wikidata Q846126 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q846126
+  founded:
+    - accessed: 2026-11-10
+      property: P571
+      wikidata: Q846126
