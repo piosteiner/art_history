@@ -33,6 +33,10 @@ ones, and the pg_stat_statements top lists.
 `rt=` (the whole request, s) and `urt=` (the app's part). Requests over 2 s in a time window, e.g. the nightly site build:
 `sudo grep '28/Oct/2026:03:[23]' /var/log/nginx/arthistory-api.access.log | awk '{for (i = NF-1; i <= NF; i++) if ($i ~ /^rt=/ && substr($i, 4) + 0 > 2) print}'`
 — `urt` near `rt`: the app was slow; `rt` much larger: the network or the client.
+**Caches on disk** (`backend/var/`, git-ignored, safe to delete): `thumbs/` (museum thumbnails, `/v1/thumb`) and
+`emote-cache/` (chat emote pictures fetched once from 7TV, `/site/emotes/img/…`, since 2026-11-10).
+**Long-lived outgoing connection** (since 2026-11-09): `arthistory-api` (production only) listens to 7TV's event feed
+`events.7tv.io` (server-sent events) so the chat emotes follow their sets (`src/admin/emotes-live.js`).
 **Load history** (sysstat, enabled 2026-10-28: `ENABLED="true"` in `/etc/default/sysstat`, `HISTORY=28` days in
 `/etc/sysstat/sysstat`; collected every 10 min by `/etc/cron.d/sysstat`): `sar -u` (CPU) · `sar -q` (load, run queue) ·
 `sar -r` (memory) · `sar -d` (disks) for today, `-f /var/log/sysstat/saDD -s 03:00:00 -e 04:00:00` for another day.

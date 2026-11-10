@@ -2,7 +2,29 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-10
+
+### Chat emote pictures served by our own server; privacy statement
+- **What:** owner 2026-11-10 (as on the adenai map and movies.piogino.ch). `GET /site/emotes` hands out
+  `https://admin.arthistory.piogino.ch/site/emotes/img/<id>.webp` (`-4x` for the hover view) instead of 7TV's
+  cdn.7tv.app; `backend/src/admin/emote-images.js` fetches a picture from 7TV the first time it is asked for and keeps
+  it in `backend/var/emote-cache/` (git-ignored like `var/thumbs`), only ids of the current chat emotes. Visitors'
+  browsers no longer contact 7TV. Privacy statement (CMS page `privacy`): the emote paragraph rewritten (our server
+  fetches and keeps the pictures, follows 7TV's change notices; neither messages nor IP addresses go to 7TV), "Last
+  updated 10 November 2026". Commit ac53582a; this entry, the privacy text, the site changelog bullets and the
+  documentation draft (part 13) written afterwards in the review of 2026-11-10.
+- **Revert:** `git revert ac53582a`; the cache directory can be deleted at any time; the privacy paragraph from the
+  page's history.
+
 ## 2026-11-09
+
+### Chat emotes follow the 7TV sets live
+- **What:** owner 2026-11-09. `backend/src/admin/emotes-live.js` subscribes to 7TV's event feed (events.7tv.io,
+  server-sent events) for every set in the emote sources; a few seconds after a change it fetches the sources again
+  and writes `chat_emotes` when the emotes changed (source '7tv live', no user). A refresh at start and every 30
+  minutes covers a dropped feed and a channel switching sets. Production only (not in tests or dev); the CMS Emotes
+  page re-syncs the sets after an edit. One outgoing long-lived HTTPS connection from `arthistory-api`. Commit 602ce025.
+- **Revert:** `git revert 602ce025` (the CMS page's Refresh still works by hand).
 
 ### justone.piogino.ch: temporary rescue of browser data (http to https)
 - **What:** `localStorage` is kept per origin, so word-list edits made on http were out of reach after the https redirect. `public/rescue.html`, served over http through one exception in the port-80 block of `sites-available/justone` (`location = /rescue.html`, everything else still 301), passes the site's own keys to the https page in the URL fragment, which is not sent to the server. **Temporary.**
