@@ -1,4 +1,4 @@
-// A stand-in for Wikidata and Wikimedia Commons during the end-to-end tests (port 3007): answers the three API calls
+// A stand-in for Wikidata and Wikimedia Commons during the end-to-end tests (port 3017; 3007 is another project's since 2026-11-10): answers the three API calls
 // src/admin/wikidata.js makes (wbgetentities, wbsearchentities, Commons imageinfo) from the data below, so the tests
 // are independent of the internet and of edits on Wikidata. The test server points WIKIDATA_BASE/COMMONS_BASE here.
 const http = require('http');
@@ -222,7 +222,7 @@ function handle(req, res) {
   }
   // RKD (src/admin/rkd.js): the person, its birth event, time-span and place (Bern, with its Wikidata item)
   if (url.pathname.startsWith('/rkd/')) {
-    const R = 'http://127.0.0.1:3007/rkd';
+    const R = 'http://127.0.0.1:3017/rkd';
     const C = 'http://www.cidoc-crm.org/cidoc-crm/';
     const nodes = {
       '/rkd/artists/38688': { [`${C}P98i_was_born`]: [{ '@id': `${R}/genid/born` }], 'http://www.w3.org/2000/01/rdf-schema#label': [{ '@value': 'Hodler, Ferdinand' }],
@@ -249,10 +249,10 @@ function handle(req, res) {
   }
   // more image sources (src/admin/imagesearch.js): each with one free record and one that isn't (left out)
   if (url.pathname === '/rijks/search/collection') {
-    return json({ orderedItems: [{ id: 'http://127.0.0.1:3007/rijksid/1' }, { id: 'http://127.0.0.1:3007/rijksid/2' }] });
+    return json({ orderedItems: [{ id: 'http://127.0.0.1:3017/rijksid/1' }, { id: 'http://127.0.0.1:3017/rijksid/2' }] });
   }
   if (url.pathname.startsWith('/rijksid/')) {
-    const I = 'http://127.0.0.1:3007/rijksid';
+    const I = 'http://127.0.0.1:3017/rijksid';
     const nodes = {
       '/rijksid/1': { shows: [{ id: `${I}/v1` }], identified_by: [{ type: 'Identifier', content: 'RP-P-1956-741' }, { type: 'Name', content: 'Pruimenboomgaard te Kameido' }] },
       '/rijksid/v1': { digitally_shown_by: [{ id: `${I}/d1` }] },
@@ -392,7 +392,7 @@ function handle(req, res) {
 }
 
 let server = null;
-const PORT = 3007;
+const PORT = 3017;
 const start = () => new Promise((resolve) => { server = http.createServer(handle).listen(PORT, '127.0.0.1', resolve); });
 const stop = () => new Promise((resolve) => (server ? server.close(() => resolve()) : resolve()));
 

@@ -10,7 +10,7 @@ const os = require('os');
 
 const BACKEND = path.join(__dirname, '..', '..');
 const STATE_DIR = path.join(os.tmpdir(), 'arthistory-e2e');  // pid files and generated passwords (never in the repo)
-const FIXTURES = 'http://127.0.0.1:3007';                     // wikidata-fixtures.js, shared by all shards
+const FIXTURES = 'http://127.0.0.1:3017';                     // wikidata-fixtures.js, shared by all shards
 const WORKERS = Math.max(1, Math.min(3, Number(process.env.E2E_WORKERS) || 2));
 
 function shard(i) {

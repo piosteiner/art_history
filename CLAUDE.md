@@ -10,7 +10,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 2. **Document every server change** in `server-docs/CHANGELOG.md` (newest first: what / why / how to revert) and keep
    `server-docs/README.md` (inventory) current — then `scripts/save.sh "message"` (commit + pull --rebase + push).
 3. Other projects on this server (MySQL/calorie-tracker, adenai-admin, quiz-platform, obs-remote, gif-converter) — don't touch
-   unless asked; ports 3000–3003 and 5000 are taken (3010 + PostgreSQL :5433 = the art history test environment, `scripts/test-env.sh`).
+   unless asked; ports 3000–3003, 3007 (movies) and 5000 are taken (3010 + PostgreSQL :5433 = the art history test environment, `scripts/test-env.sh`).
 4. Owner wants to learn PostgreSQL: prefer idiomatic Postgres/PostGIS (ranges, recursive CTEs, JSONB, GiST) and explain choices.
 
 ## Layout

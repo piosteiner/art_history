@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-10
 
+### End-to-end tests: the stand-in server moves from :3007 to :3017
+- **What:** the deploy of the emote commits failed before any e2e test ran: `EADDRINUSE 127.0.0.1:3007` — the pm2 app
+  `movies` (`/var/www/movies-piogino`, started 2026-11-10 00:51) now listens there. Our fixture server (Wikidata,
+  Commons, museum stand-ins: `test/e2e/wikidata-fixtures.js`, `env.js` `FIXTURES`, `THUMB_TEST_SERVER`) uses :3017;
+  the shard servers stay on :3006/:3008/:3009. The other project was not touched. Unit tests had passed (88).
+- **Why:** deploys run the e2e tests; with :3007 taken every deploy would fail.
+- **Revert:** `git revert` (only if :3007 is free again).
+
 ### Chat emote pictures served by our own server; privacy statement
 - **What:** owner 2026-11-10 (as on the adenai map and movies.piogino.ch). `GET /site/emotes` hands out
   `https://admin.arthistory.piogino.ch/site/emotes/img/<id>.webp` (`-4x` for the hover view) instead of 7TV's

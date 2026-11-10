@@ -33,7 +33,7 @@ async function slot(fn) {
   try { return await fn(); } finally { busy -= 1; waiting.shift()?.(); }
 }
 
-// the end-to-end tests' museum (env THUMB_TEST_SERVER = "https://museum.test/ http://127.0.0.1:3007/museum/"), as the
+// the end-to-end tests' museum (env THUMB_TEST_SERVER = "https://museum.test/ http://127.0.0.1:3017/museum/"), as the
 // other outside services point at the fixture server there
 const [TEST_FROM, TEST_TO] = (process.env.THUMB_TEST_SERVER || '').split(' ');
 const fetchUrl = (src) => (TEST_FROM && src.startsWith(TEST_FROM) ? TEST_TO + src.slice(TEST_FROM.length) : src);
