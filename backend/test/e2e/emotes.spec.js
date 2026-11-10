@@ -30,6 +30,7 @@ test('the chats\' emotes: the sources and emotes in the CMS (admins only), name 
   const http = await pw.newContext({ baseURL: BASE });
   const res = await http.get('/site/emotes');
   expect(res.status()).toBe(200);
-  expect(await res.json()).toEqual({ emotes: { catJAM: { url: 'https://cdn.7tv.app/emote/01A/2x.webp', w: 28, h: 28 }, peepoHey: { url: 'https://cdn.7tv.app/emote/01B/2x.webp', w: 32, h: 28 } } });
+  // the pictures come from our own server (2026-11-10, emote-images.js), never from cdn.7tv.app
+  expect(await res.json()).toEqual({ emotes: { catJAM: { url: 'https://admin.localhost/site/emotes/img/01A.webp', w: 28, h: 28 }, peepoHey: { url: 'https://admin.localhost/site/emotes/img/01B.webp', w: 32, h: 28 } } });
   await http.dispose();
 });
