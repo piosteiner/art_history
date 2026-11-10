@@ -4,7 +4,8 @@ const { test, expect, sql, API } = require('./helpers');
 
 const get = (request, path) => request.get(`${API}${path}`, { headers: { Host: 'api.localhost' }, maxRedirects: 0 });
 
-test.afterEach(() => sql("DELETE FROM people WHERE slug IN ('test-pid-keep', 'test-pid-dup'); DELETE FROM artworks WHERE slug = '1984'"));
+test.afterEach(() => sql(`DELETE FROM people WHERE slug IN ('test-pid-keep', 'test-pid-dup'); DELETE FROM artworks WHERE slug = '1984';
+  DELETE FROM artists WHERE slug IN ('test-pid-artist', 'test-pid-moved'); DELETE FROM entry_moves WHERE old_slug = 'test-pid-moved'`));
 
 test('an entry by its number, with any name or none; other types and merges redirect; digit slugs still work', async ({ userA, request }) => {
   const n = Number(sql("SELECT public_id FROM artworks WHERE slug = 'the-starry-night'"));
@@ -34,6 +35,15 @@ test('an entry by its number, with any name or none; other types and merges redi
   const old = await get(request, `/people/${dup}`);
   expect(old.status()).toBe(301);
   expect(old.headers().location).toMatch(new RegExp(`/people/${keep}$`));
+
+  // an entry converted into the removed one keeps its old address too (246): a person turned artist, then merged
+  sql(`INSERT INTO people (slug, name) VALUES ('test-pid-moved', 'Test Moved'); INSERT INTO artists (slug, name) VALUES ('test-pid-artist', 'Test Artist')`);
+  sql("SELECT convert_entry('person', entity_id('person', 'test-pid-moved'), 'artist')");
+  sql("SELECT merge_entries('artist', entity_id('artist', 'test-pid-artist'), entity_id('artist', 'test-pid-moved'))");
+  expect(sql("SELECT count(*) FROM entry_moves m WHERE m.old_slug = 'test-pid-moved' AND m.new_type = 'artist' AND m.new_id = entity_id('artist', 'test-pid-artist')")).toBe('1');
+  const moved = await get(request, '/people/test-pid-moved');
+  expect(moved.status()).toBe(301);
+  expect(moved.headers().location).toMatch(/\/artists\/test-pid-artist$/);
 
   // a slug of digits ("1984") is still found
   sql("INSERT INTO artworks (slug, title) VALUES ('1984', 'Test 1984')");

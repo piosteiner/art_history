@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-10
 
+### Migration 246: a merge keeps the redirects of entries converted into the removed one
+- **What:** `merge_entries()` now also runs `UPDATE entry_moves SET new_id = keep_id WHERE new_type = etype AND
+  new_id = dup_id` beside the slug_history line (patched in place via `pg_get_functiondef` + replace, guarded by an
+  anchor check). e2e: `public-ids.spec.js` converts a person to an artist, merges it, expects `/people/<slug>` → 301 to
+  the kept artist.
+- **Why:** owner 2026-11-10 — a person converted to an artist and merged into the existing artist (Joachim of Fiore,
+  Lambert of Saint-Omer) left its old /people/ address pointing at a deleted row; fixed by hand twice today.
+- **Revert:** apply the function body without the two added lines (comment + UPDATE); nothing else changed.
+
 ### Site: a click on a chained map bubble zooms in for real
 - **What:** `frontend/src/map.ts` (start-map clusters, 091) — when fitting a bubble's bounds would zoom in less than
   1.5 levels, the click eases two levels towards the bubble's centre instead.
