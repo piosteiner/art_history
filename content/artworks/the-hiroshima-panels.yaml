@@ -18,7 +18,7 @@ names:
       - accessed: 2026-11-06
         wikidata: Q108327966
 parts_count: 15
-creator: iri-and-toshi-maruki
+creator: iri-maruki
 created: 1950/1982
 created_span: uncertain
 kind: series
@@ -37,6 +37,8 @@ relationships:
     sources:
       - property: P180
         wikidata: Q108327966
+  - type: co_creator
+    to: artist/toshi-maruki
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Japanse_tekeningen_atoomaanslag_Hirosjima_Stedelijk_Museum%2C_Bestanddeelnr_908-3575.jpg/1280px-Japanse_tekeningen_atoomaanslag_Hirosjima_Stedelijk_Museum%2C_Bestanddeelnr_908-3575.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Japanse_tekeningen_atoomaanslag_Hirosjima_Stedelijk_Museum,_Bestanddeelnr_908-3575.jpg
@@ -53,9 +55,6 @@ sources:
     - source: maruki-gallery-hiroshima-panels
       accessed: 2026-11-06
   creator:
-    - accessed: 2026-11-06
-      property: P170
-      wikidata: Q108327966
     - source: maruki-gallery-hiroshima-panels
       accessed: 2026-11-06
   location:

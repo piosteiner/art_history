@@ -1,0 +1,56 @@
+public_id: 117691
+name: Iri Maruki
+given_name: Iri
+family_name: Maruki
+names:
+  - lang: ja
+    role: original
+    text: 丸木位里
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q11368341
+  - text: Maruki Iri
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q11368341
+  - lang: ko
+    role: translation
+    text: 마루키 이리
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q11368341
+  - lang: ru
+    role: translation
+    text: Ири Маруки
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q11368341
+birth: 1901-06-20
+death: 1995-10-19
+wikidata_id: Q11368341
+metadata:
+  sources: [Wikidata Q11368341 (retrieved 2026-11-10)]
+relationships:
+  - type: married_to
+    to: artist/toshi-maruki
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/53/Iri_Maruki_in_1943_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Iri_Maruki_in_1943_(cropped).jpg
+    license: Public domain
+    credit: Template:Unkown
+identifiers:
+  gnd: "128133120"
+  idref: 19651925X
+  lc: n81022209
+  nlk: KAC200610404
+  rkd: "98691"
+  viaf: "40419832"
+sources:
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q11368341
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q11368341

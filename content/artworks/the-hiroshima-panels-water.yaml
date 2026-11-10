@@ -7,7 +7,7 @@ names:
     text: 第三部 水
 parent: the-hiroshima-panels
 part_number: "3"
-creator: iri-and-toshi-maruki
+creator: iri-maruki
 created: 1950
 kind: byōbu
 medium: Sumi ink, charcoal or conté on paper
@@ -16,6 +16,9 @@ dimensions_note: A pair of four-fold screens
 institution: maruki-gallery-for-the-hiroshima-panels
 web_url: https://marukigallery.jp/en/hiroshimapanels/
 description_md: Mounds of corpses; people wander in search of water. An injured mother who has fled along the river finds her child dead at her breast — "the twentieth-century image of madonna and child", an image of despair where mother and child should stand for hope. [[source/maruki-gallery-hiroshima-panels|III Water]]
+relationships:
+  - type: co_creator
+    to: artist/toshi-maruki
 sources:
   kind:
     - source: maruki-gallery-hiroshima-panels

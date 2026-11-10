@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-10
 
+### Content: Iri and Toshi Maruki as two artists
+- **What:** owner 2026-11-10 — the couple had been one artist ("Iri and Toshi Maruki", Q3296016, Wikidata's item for
+  the pair). Created from their own items: Iri Maruki (Q11368341, 1901–1995) and Toshi Maruki (Q114582, 1912–2000),
+  family name Maruki; the joint entry merged into Iri's (its address redirects; the merge's added name "Iri and Toshi
+  Maruki" removed from Iri); the Hiroshima Panels and their two parts: creator Iri, `co_creator` Toshi; `married_to`;
+  the panels' Wikidata creator citation (the pair) removed and declined in `wikidata_reviews`.
+- **Revert:** history pages; the merge from the merge's audit rows.
+
 ### Site: reference records folded on entry pages; places: Lyon, Los Angeles, Birmingham, the seas; Harschner
 - **What:** owner 2026-11-10. (1) The API sent each entry's authority numbers (`identifiers`) but the site showed only
   the Wikidata number: now a folded box "Reference records (n)" with Wikidata first and every number linked to its

@@ -1,0 +1,78 @@
+public_id: 117692
+name: Toshi Maruki
+given_name: Toshi
+family_name: Maruki
+names:
+  - kind: birth
+    lang: ja-Hani
+    role: alternative
+    text: 赤松 俊
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q114582
+  - lang: ja
+    role: original
+    text: 丸木俊
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q114582
+  - text: Shun Maruki
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q114582
+  - text: Toshiko Maruki
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q114582
+  - text: Toshiko Akamatsu
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q114582
+  - text: Toshiko
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q114582
+  - lang: fr
+    role: translation
+    text: Maruki Toshi
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q114582
+  - lang: ko
+    role: translation
+    text: 마루키 토시
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q114582
+  - lang: ru
+    role: translation
+    text: Тоси Маруки
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q114582
+birth: 1912-02-11
+death: 2000-01-13
+wikidata_id: Q114582
+metadata:
+  sources: [Wikidata Q114582 (retrieved 2026-11-10)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/ff/1947%E5%B9%B4%E9%A0%83%E3%81%AE%E8%B5%A4%E6%9D%BE%E4%BF%8A%E5%AD%90%EF%BC%88%E4%B8%B8%E6%9C%A8%E4%BF%8A%EF%BC%89.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:1947%E5%B9%B4%E9%A0%83%E3%81%AE%E8%B5%A4%E6%9D%BE%E4%BF%8A%E5%AD%90%EF%BC%88%E4%B8%B8%E6%9C%A8%E4%BF%8A%EF%BC%89.jpg
+    license: Public domain
+    credit: Marukigallery
+identifiers:
+  bnf: 12660400t
+  gnd: 11926403X
+  idref: "144192144"
+  lc: n81022212
+  nlk: KAC200604765
+  viaf: "7510196"
+sources:
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q114582
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q114582

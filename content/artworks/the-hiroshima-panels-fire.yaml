@@ -7,7 +7,7 @@ names:
     text: 第二部 火
 parent: the-hiroshima-panels
 part_number: "2"
-creator: iri-and-toshi-maruki
+creator: iri-maruki
 created: 1950
 kind: byōbu
 medium: Sumi ink, pigment, glue, charcoal or conté on paper
@@ -16,6 +16,9 @@ dimensions_note: A pair of four-fold screens
 institution: maruki-gallery-for-the-hiroshima-panels
 web_url: https://marukigallery.jp/en/hiroshimapanels/
 description_md: The flash, the blast and the firestorm; people pinned under fallen beams and burned alive — and a mother who sends away the helping hands to die in the flames with her child. [[source/maruki-gallery-hiroshima-panels|II Fire]]
+relationships:
+  - type: co_creator
+    to: artist/toshi-maruki
 sources:
   kind:
     - source: maruki-gallery-hiroshima-panels
