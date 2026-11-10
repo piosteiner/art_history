@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-10
 
+### Content: Heilig-Blut-Altar dated 1499–1505; the Moutier-Grandval Bible by the Tours scriptorium
+- **What:** owner 2026-11-10 (Quality queue). (1) `heilig-blut-altar-rothenburg` was "c. 1270" — the first of two
+  inception dates on Wikidata (Q11801545; unsourced there), so "created before Riemenschneider was born". Now
+  1499–1505 as in the lecture (Ganz, session 1, slide 36 — slide 35's "1599–1505" is a typo); the Wikidata citation of
+  c. 1270 removed and the value declined in `wikidata_reviews`, so the comparison does not offer it again.
+  (2) The Basilica of St. Martin, Tours (Q1464908) had been created as an artist — Wikidata's creator of the
+  Moutier-Grandval Bible (Q1543043). As with Cîteaux: new artist `tours-scriptorium` (c. 840, `member_of` the
+  basilica), the Bible's creator now, with a text (made around 840 under lay abbot Adalhard, some twenty monks;
+  Moutier-Grandval, Delémont, British Library since 1836) and `created_in` the new place `tours` (Q288); the basilica
+  converted to an institution (kind basilica, place, location; the old address redirects). Source: de.wikipedia
+  "Bibel von Moutier-Grandval". Both manuscripts' Wikidata creator (the abbey, the basilica) declined in
+  `wikidata_reviews`, their Wikidata creator citations removed. Script `tours.js` (scratchpad).
+- **Revert:** the history pages of the entries; "Change type…" for the institutions.
+
 ### Content: Solis's Erysichthon woodcut from the Rijksmuseum's page
 - **What:** owner 2026-11-10 (the Rijksmuseum's page as PDF). `solis-erysichthon`: the museum's title "Erysichthon kapt
   de boom van Ceres" (the old title as a former name, "Erisichthonis impietas" = title on the object), medium

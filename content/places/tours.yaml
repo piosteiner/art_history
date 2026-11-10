@@ -1,0 +1,9 @@
+public_id: 117426
+name: Tours
+kind: settlement
+parent: france
+country_code: FR
+location: [0.6883333, 47.3927778]
+wikidata_id: Q288
+metadata:
+  sources: [Wikidata Q288 (retrieved 2026-11-10)]

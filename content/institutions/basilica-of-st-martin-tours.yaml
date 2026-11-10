@@ -1,0 +1,16 @@
+public_id: 117130
+name: Basilica of St. Martin, Tours
+names:
+  - lang: fr
+    role: original
+    text: Basilique Saint-Martin de Tours
+  - lang: de
+    role: translation
+    text: Saint-Martin de Tours
+kind: basilica
+place: tours
+location: [0.682778, 47.393056]
+description_md: The basilica of Saint Martin in Tours. Its monastery had a scriptorium, the [[artist/tours-scriptorium|Tours scriptorium]], where the [[artwork/moutier-grandval-bible|Moutier-Grandval Bible]] was made around 840 under the lay abbot Adalhard.[[source/wikipedia-de-bibel-von-moutier-grandval]]
+wikidata_id: Q1464908
+metadata:
+  sources: [Wikidata Q1464908 (retrieved 2026-11-09)]

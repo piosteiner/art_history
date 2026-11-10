@@ -38,7 +38,7 @@ names:
     role: translation
     text: Altar of the Holy Blood (Holy Blood Altarpiece)
 creator: tilman-riemenschneider
-created: c. 1270
+created: 1499/1505
 created_span: uncertain
 medium: Lindenholz (Figuren), Fichtenholz (Schrein), ungefasst
 materials: [lime, wood, spruce]
@@ -76,15 +76,14 @@ sources:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 1 (26.9.2024), Folie 35
   created:
-    - accessed: 2026-11-09
-      property: P571
-      wikidata: Q11801545
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 1 (26.9.2024), Folie 36
   creator:
     - accessed: 2026-11-09
       property: P170
       wikidata: Q11801545
   materials:
-    - accessed: 2026-11-09
+    - accessed: 2026-11-10
       property: P186
       wikidata: Q11801545
     - source: ganz-2024-aus-dem-wald

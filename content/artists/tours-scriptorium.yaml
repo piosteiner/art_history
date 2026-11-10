@@ -1,0 +1,21 @@
+public_id: 117427
+name: Tours scriptorium
+given_name: Tours
+family_name: scriptorium
+names:
+  - lang: fr
+    role: translation
+    text: scriptorium de Saint-Martin de Tours
+    status: own
+active: c. 840
+biography_md: |-
+  The writing and painting workshop of the monastery of St Martin in Tours — the community at the [[institution/basilica-of-st-martin-tours|basilica of St. Martin]]. There the [[artwork/moutier-grandval-bible|Moutier-Grandval Bible]] was made around 840, when Adalhard was the monastery's lay abbot: some twenty monks are said to have worked on its 449 pages.[[source/wikipedia-de-bibel-von-moutier-grandval]]
+
+  The name stands for these anonymous monks; Wikidata names the basilica itself as the Bible's creator.
+relationships:
+  - type: member_of
+    to: institution/basilica-of-st-martin-tours
+sources:
+  active:
+    - source: wikipedia-de-bibel-von-moutier-grandval
+      accessed: 2026-11-10
