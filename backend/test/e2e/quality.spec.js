@@ -58,7 +58,7 @@ test('a check with many findings: the first 100 on the overview, all of them (up
   sql(`DELETE FROM artists WHERE slug LIKE 'test-many-%';
        INSERT INTO artists (slug, name) SELECT 'test-many-' || i, 'Test Many ' || i FROM generate_series(1, 105) i`);
   await settled();
-  const total = Number(sql("SELECT count(*) FROM quality_issues q LEFT JOIN quality_acks a USING (check_id, issue_key) WHERE q.check_id = 'artist_missing_dates' AND a.check_id IS NULL"));
+  const total = Number(sql("SELECT count(*) FROM quality_issues q LEFT JOIN quality_acks a USING (check_id, issue_key) WHERE q.check_id = 'artist_missing_dates' AND q.severity = 'warning' AND a.check_id IS NULL"));
   expect(total).toBeGreaterThan(100);
   await userA.goto('/quality?severity=warning');
   const group = userA.locator('.qa-group', { hasText: 'Artist without birth or death date' });
@@ -69,4 +69,23 @@ test('a check with many findings: the first 100 on the overview, all of them (up
   await expect(userA).toHaveURL(/check=artist_missing_dates/);
   await expect(userA.locator('.qa-group tbody tr')).toHaveCount(total);
   sql("DELETE FROM artists WHERE slug LIKE 'test-many-%'");
+});
+
+// 244 (owner 2026-11-10): born within the last 100 years without a death date = probably living
+test('a living artist: no notice with a Wikidata item, "may be living" without; born long ago still a warning', async () => {
+  const young = new Date().getFullYear() - 60;
+  sql(`DELETE FROM artists WHERE slug LIKE 'test-living-%';
+       INSERT INTO artists (slug, name, birth, birth_label, wikidata_id) VALUES
+         ('test-living-wd', 'Test Living Wd', daterange('${young}-01-01', '${young + 1}-01-01'), '${young}', 'Q999999991'),
+         ('test-living-nowd', 'Test Living Nowd', daterange('${young}-01-01', '${young + 1}-01-01'), '${young}', NULL),
+         ('test-living-old', 'Test Living Old', daterange('1850-01-01', '1851-01-01'), '1850', 'Q999999992')`);
+  try {
+    const finding = (slug) => sql(`SELECT coalesce(string_agg(severity || ': ' || detail, ' / '), 'none') FROM quality_issues_live
+      WHERE check_id = 'artist_missing_dates' AND entity_id = (SELECT id FROM artists WHERE slug = '${slug}')`);
+    expect(finding('test-living-wd')).toBe('none');
+    expect(finding('test-living-nowd')).toBe('info: no death date — born within the last 100 years: may be living, please check');
+    expect(finding('test-living-old')).toBe('warning: no death date');
+  } finally {
+    sql("DELETE FROM artists WHERE slug LIKE 'test-living-%'");
+  }
 });

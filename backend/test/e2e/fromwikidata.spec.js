@@ -9,7 +9,15 @@ const run = (...args) => execFileSync('node', ['scripts/from-wikidata.js', '--us
   { cwd: path.join(__dirname, '../..'), env: { ...env.serverEnv(), DB_NAME: env.DB } }).toString();
 
 test.afterAll(() => {
-  sql(`DELETE FROM artworks WHERE wikidata_id = 'Q140'; DELETE FROM artists WHERE slug = 'test-painter-velasko' OR wikidata_id = 'Q141'`);
+  sql(`DELETE FROM artworks WHERE wikidata_id IN ('Q140', 'Q190'); DELETE FROM artists WHERE slug = 'test-painter-velasko' OR wikidata_id IN ('Q141', 'Q191')`);
+});
+
+// Wikidata names an abbey as a manuscript's creator (Cîteaux, 2026-11-10): the work is made, the abbey not as an artist
+test('a creator that is a place or an institution (an abbey) is not created as an artist', () => {
+  const out = run('artwork', 'Q190:test-abbey-manuscript');
+  expect(out).toContain('Q190 → artwork/test-abbey-manuscript');
+  expect(sql("SELECT (creator_id IS NULL)::text FROM artworks WHERE wikidata_id = 'Q190'")).toBe('true');
+  expect(sql("SELECT count(*) FROM artists WHERE wikidata_id = 'Q191'")).toBe('0');
 });
 
 test('a dry run writes nothing; a similar name is left for a person to decide; a second run finds the entry', () => {

@@ -665,10 +665,14 @@ async function compare(db, t, qid, ours, entity) {
     if (w.kind === 'ref') {
       const target = localFor(w.ref.qid, [w.ref.type]);
       const we = others[w.ref.qid];
-      const doc = !target && we ? newEntryDoc(w.ref.type, we) : null;
+      // Wikidata may name a monastery or a firm as an artwork's creator (Cîteaux Abbey for its scriptorium's
+      // manuscript, 2026-11-10): not offered as a new artist — the makers are an artist entry ("… scriptorium",
+      // "Master of …"), the place an institution. Groups of people (Limbourg brothers) have neither mark.
+      const notMaker = w.ref.type === 'artist' && !!we && !itemIds(we, 'P31').includes(HUMAN) && (isInstitutionLike(we) || !!coords(we));
+      const doc = !target && we && !notMaker ? newEntryDoc(w.ref.type, we) : null;
       const candidate = !target ? await similarEntry(db, labelOf(we), [w.ref.type]) : null;
       rows.push({ key, kind: 'ref', ours: oursVal, qid: w.ref.qid, target, candidate, create: doc ? { type: w.ref.type, doc, describe: describeDoc(w.ref.type, doc) } : null,
-        wikiLabel: labelOf(we) || w.ref.qid, value: target ? target.slug : null, declined: declined(key, w.ref.qid),
+        wikiLabel: labelOf(we) || w.ref.qid, value: target ? target.slug : null, declined: declined(key, w.ref.qid), notMaker,
         status: target && target.slug === oursVal ? 'same' : !oursVal ? 'empty' : 'differs' });
       continue;
     }

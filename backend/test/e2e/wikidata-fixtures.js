@@ -43,6 +43,11 @@ const ENTITIES = {
       P1476: [stmt({ text: 'Tabla de prueba', language: 'es' })] } },
   Q141: { id: 'Q141', labels: labels('Test Painter Velasco'), descriptions: { en: { value: 'Spanish painter' } },
     claims: { P31: [stmt(item('Q5'))], P106: [stmt(item('Q1028181'))] } },
+  // a manuscript whose "creator" is the abbey where it was made (Cîteaux, 2026-11-10): no artist made of the abbey
+  Q190: { id: 'Q190', labels: labels('Test Abbey Manuscript'), descriptions: { en: { value: 'illuminated manuscript' } },
+    claims: { P31: [stmt(item('Q48498'))], P170: [stmt(item('Q191'))], P571: [stmt(time('+1111-00-00T00:00:00Z', 9))] } },
+  Q191: { id: 'Q191', labels: labels('Test Abbey'), descriptions: { en: { value: 'abbey in Burgundy' } },
+    claims: { P31: [stmt(item('Q160742'))], P625: [stmt({ latitude: 47.128, longitude: 5.093, globe: 'http://www.wikidata.org/entity/Q2' })] } },
   Q130: { id: 'Q130', labels: labels('Test Altarpiece'), descriptions: { en: { value: 'painting' } },
     claims: { P31: [stmt(item('Q3305213'))], P571: [stmt(time('+1480-00-00T00:00:00Z', 9))], P88: [stmt(item('Q131'))] } },
   Q131: { id: 'Q131', labels: labels('Test Patron Portinari'), descriptions: { en: { value: 'merchant and banker' } },

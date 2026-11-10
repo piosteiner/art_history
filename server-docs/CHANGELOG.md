@@ -4,6 +4,41 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-10
 
+### Living artists, Cîteaux, creators that are not people — migration 244
+- **What:** owner 2026-11-10. (1) `artist_missing_dates` (view `quality_issues_live`, migration 244): an artist born
+  within the last 100 years (counted from `CURRENT_DATE`) without a death date is taken as living — no finding with a
+  Wikidata item, an info "may be living — please check" without one; born longer ago or without a birth date: the
+  warning as before (39 → 18 warnings; Akhunov and the other 20 recent ones gone). E2E test in `quality.spec.js`; the
+  many-findings test now counts warnings only. (2) Content: Cîteaux Abbey had been created as an artist (Wikidata
+  names the abbey as creator of the Cîteaux Moralia in Job). New artist `citeaux-scriptorium` (five scribes, one
+  illuminator; c. 1111), the manuscript's creator now, with a text and `created_in` the new place
+  `saint-nicolas-les-citeaux` (Q16626); the abbey converted to an institution (`convert_entry`: the old address
+  redirects), kind monastery, founded 21 March 1098, place, location, text; the scriptorium `member_of` it — en.wikipedia
+  (manuscript and abbey) cited; the lecture's slide confirms the manuscript. Script `citeaux.js` (scratchpad).
+  (3) Wikidata review (`src/admin/wikidata.js` `compare`, `wikidata-ui.js`): a creator that is not human and looks
+  like a place or an institution (coordinates or an institution class) is no longer offered as a new artist; a note
+  says to enter the makers as an artist and the place as an institution. E2E test in `fromwikidata.spec.js` with the
+  stand-in items Q190/Q191.
+- **Revert:** `git revert`; migration 244 replaced the block of the view — restore it from 243's state (the old block
+  is in this commit's diff). Cîteaux from the history pages (or convert back with "Change type…").
+
+### Security headers on the GitHub Pages sites; meetup emotes; the converter's limit answer
+- **What:** owner 2026-11-10. A Content-Security-Policy as a `<meta>` tag (GitHub Pages sends no own headers; a meta
+  tag cannot set frame-ancestors, HSTS or nosniff) on every page of: art history (`frontend/vite.config.ts` plugin
+  `csp-meta` at build time, hosts from `VITE_API_BASE`/`VITE_ADMIN_BASE` — the test environment's build gets its own),
+  piogino.ch, the file converter (service worker v6), the calorie tracker (cache v2), light trains, the meetup scheduler
+  and the adenai map. Scripts only from the site where the pages allow it — inline scripts moved into files (theme,
+  service worker registration, the calorie share page → `share.js`); light trains, meetup and the adenai map build
+  inline `on…=` handlers (25 / 26 / 136) and keep `'unsafe-inline'` scripts, with everything else restricted
+  (connections and images to named hosts, no objects, no `<base>` change). Each tested in a browser (local copy and
+  live); light trains' own 147 browser tests pass (the GIF test waits with `page.evaluate`: `waitForFunction` needs
+  `unsafe-eval`). The light trains checkout was 12 commits behind GitHub — the CSP was rebased onto them.
+  Meetup: the emotes follow the 7TV account piogino (its active set is looked up on every visit and after 10 minutes
+  away; the dead fixed set ids removed). Calorie tracker: the moved share script's `tokens` renamed `shareIds` (the
+  repo's secret scan took the assignment of the split share-token string for a credential). File converter: its 429 answer is JSON with the CORS
+  header (`location @converter_busy` in api.piogino.ch), so the page shows the message.
+- **Revert:** per repo `git revert` of the named commits; nginx: remove `error_page 429` and `@converter_busy`.
+
 ### Security review of all live projects — fixes (owner: "yes do everything")
 - **What:**
   - **Quiz** (quiz-platform, pm2 quiz-backend): it ran without `SESSION_SECRET`, so sessions were signed with the

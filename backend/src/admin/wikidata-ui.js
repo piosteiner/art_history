@@ -43,7 +43,8 @@ function fieldRow(r, t) {
       <td>${radio('later', 'decide later')} ${radio('keep', r.ours ? 'keep mine' : 'leave empty')}
         ${r.target ? radio('link', html`link our <a href="/${t.folderOf(r.target.type)}/${r.target.slug}" target="_blank">${r.target.name}</a>${r.target.matchedBy === 'name' ? ' (same name)' : ''}`) : ''}
         ${!r.target && r.candidate ? radio('candidate', html`link our <a href="/${t.folderOf(r.candidate.type)}/${r.candidate.slug}" target="_blank">${r.candidate.name}</a> ${similarNote(r.candidate)}`) : ''}
-        ${!r.target && r.create ? radio('create', html`create new: ${r.create.describe}`) : ''}${note}</td></tr>`;
+        ${!r.target && r.create ? radio('create', html`create new: ${r.create.describe}`) : ''}${note}
+        ${r.notMaker && !r.target ? html`<div class="muted small wd-not-maker">Wikidata names a place or an institution here, not a person — not created as an artist. Enter the makers as an artist (“… scriptorium”, “Master of …”) and this as an institution.</div>` : ''}</td></tr>`;
   }
   const pre = r.declined ? 'keep' : r.status === 'empty' ? 'take' : 'later';
   const radio = (value, label) => html`<label class="choice"><input type="radio" name="take.${r.key}" value="${value}"${pre === value ? ' checked' : ''}> ${label}</label>`;
