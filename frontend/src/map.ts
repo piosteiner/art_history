@@ -171,7 +171,7 @@ export function showParts(map: MapLibre, parts: PartsMap, { alsoFit = false } = 
       const popup = new Popup({ maxWidth: '320px', offset: area ? 20 : 13 }).setHTML(html`<div class="popup-row">
         <strong>${link('place', ps[0].place.slug, ps[0].place.name)}</strong>
         <ol class="popup-list popup-parts">${ps.map((p) => html`<li>
-          ${p.image_url ? html`<img class="popup-thumb" src="${thumb(p.image_url, 160)}" alt="" loading="lazy">` : ''}
+          ${p.image_url ? html`<img class="popup-thumb" src="${thumb(p.image_url, 250)}" alt="" loading="lazy">` : ''}
           <a href="${href('artwork', p.slug)}">${p.number ? html`<span class="muted">${p.number}</span> ` : ''}${p.title}</a>
           ${p.note ? html`<br><em>${p.note}</em>` : ''}
           ${p.certainty && p.certainty !== 'attested' ? html` <span class="tag">${p.certainty}</span>` : ''}</li>`)}</ol>

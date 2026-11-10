@@ -9,13 +9,21 @@ names:
       - accessed: 2026-10-29
         property: P1448
         wikidata: Q456
+  - text: City of Lyon
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q456
 kind: settlement
 designation: commune of France with specific status
 parent: rhone
+country_code: FR
 location: [4.835, 45.7675]
 wikidata_id: Q456
 metadata:
   sources: [Wikidata Q456 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 4036770-8
+  hls: "006595"
 sources:
   kind:
     - accessed: 2026-10-28

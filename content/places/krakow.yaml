@@ -1,14 +1,27 @@
 public_id: 117005
 name: Kraków
+names:
+  - text: Royal City of Kraków
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q31487
 kind: settlement
+parent: lesser-poland-voivodeship
+country_code: PL
 location: [19.93722, 50.06139]
 wikidata_id: Q31487
 metadata:
   sources: [Wikidata Q31487 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 4073760-3
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q31487
+  parent:
+    - accessed: 2026-11-10
+      property: P131
       wikidata: Q31487
   location:
     - accessed: 2026-11-09

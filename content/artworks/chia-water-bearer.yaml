@@ -14,3 +14,20 @@ wikidata_id: Q28564811
 relationships:
   - type: associated_with
     to: movement/transavanguardia
+sources:
+  created:
+    - accessed: 2026-11-10
+      property: P571
+      wikidata: Q28564811
+  creator:
+    - accessed: 2026-11-10
+      property: P170
+      wikidata: Q28564811
+  institution:
+    - accessed: 2026-11-10
+      property: P195
+      wikidata: Q28564811
+  inventory_number:
+    - accessed: 2026-11-10
+      property: P217
+      wikidata: Q28564811

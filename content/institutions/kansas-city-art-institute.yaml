@@ -1,0 +1,45 @@
+public_id: 117475
+name: Kansas City Art Institute
+names:
+  - text: KCAI
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q6364655
+kind: art academy
+founded: 1885
+place: kansas-city
+location: [-94.5831, 39.0463]
+address: 4415 Warwick Blvd, Kansas City, MO, 64111-1874
+website_url: http://www.kcai.edu
+wikidata_id: Q6364655
+metadata:
+  sources: [Wikidata Q6364655 (retrieved 2026-11-10)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1c/Kc-art-institute.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kc-art-institute.jpg
+    license: CC BY-SA 3.0
+    credit: Americasroof at en.wikipedia
+identifiers:
+  lc: n81114425
+  viaf: "158077568"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q6364655
+  place:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q6364655
+  address:
+    - accessed: 2026-11-10
+      property: P6375
+      wikidata: Q6364655
+  founded:
+    - accessed: 2026-11-10
+      property: P571
+      wikidata: Q6364655
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q6364655

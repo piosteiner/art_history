@@ -31,6 +31,67 @@ birth: 1941-01-05
 wikidata_id: Q55400
 metadata:
   sources: [Wikidata Q55400 (retrieved 2026-11-06)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q55400
+  - type: born_in
+    to: place/bunkyo-ku
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q55400
+  - type: lived_in
+    to: place/tokorozawa
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q55400
+  - type: influenced_by
+    to: person/antoine-de-saint-exupery
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q55400
+  - type: influenced_by
+    to: artist/jean-giraud
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q55400
+  - type: influenced_by
+    to: person/lev-atamanov
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q55400
+  - type: influenced_by
+    to: artist/osamu-tezuka
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q55400
+  - type: influenced_by
+    to: artist/soji-yamakawa
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q55400
+  - type: influenced_by
+    to: person/ursula-k-le-guin
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q55400
+  - type: influenced_by
+    to: artist/yuri-norstein
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q55400
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/f/ff/HayaoMiyazakiCCJuly09.jpg
     source_url: https://commons.wikimedia.org/wiki/File:HayaoMiyazakiCCJuly09.jpg

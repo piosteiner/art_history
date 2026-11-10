@@ -20,3 +20,17 @@ test('a museum image as a 250-pixel WebP, cached; nothing that is not an image o
   expect((await thumb(request, 'https://museum.test/other.png', 250)).status()).toBe(404);   // not ours
   expect((await thumb(request, SRC, 333)).status()).toBe(400);                                        // not a width of the site
 });
+
+// link previews (og:image, 2026-11-10): the same image as a JPEG, kept apart from the WebP
+test('f=jpg: a JPEG of the same image for link previews; another f is refused', async ({ request }) => {
+  sql(`DELETE FROM images WHERE url = '${SRC}';
+       INSERT INTO images (artwork_id, position, url, license, credit) VALUES (entity_id('artwork', 'the-starry-night'), 9, '${SRC}', 'Public domain', 'test')`);
+  const get = (q) => request.get(`${API}/thumb?${new URLSearchParams({ src: SRC, w: '800', ...q })}`, { headers: { Host: 'api.localhost' } });
+  const jpg = await get({ f: 'jpg' });
+  expect(jpg.status()).toBe(200);
+  expect(jpg.headers()['content-type']).toBe('image/jpeg');
+  const body = await jpg.body();
+  expect(body[0]).toBe(0xff); expect(body[1]).toBe(0xd8);                              // a JPEG's first bytes
+  expect((await get({})).headers()['content-type']).toBe('image/webp');               // without f: WebP, as before
+  expect((await get({ f: 'gif' })).status()).toBe(400);
+});

@@ -1,0 +1,23 @@
+public_id: 117500
+name: Peter Kropotkin
+given_name: Peter
+family_name: Kropotkin
+kind: person
+birth: 1842-12-09
+death: 1921-02-08
+wikidata_id: Q5752
+metadata:
+  sources: [Wikidata Q5752 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q5752
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q5752
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q5752

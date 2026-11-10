@@ -1,0 +1,23 @@
+public_id: 117501
+name: William Shakespeare
+given_name: William
+family_name: Shakespeare
+kind: person
+birth: 1564-04
+death: 1616-05-03
+wikidata_id: Q692
+metadata:
+  sources: [Wikidata Q692 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q692
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q692
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q692

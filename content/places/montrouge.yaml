@@ -1,0 +1,24 @@
+public_id: 117442
+name: Montrouge
+kind: settlement
+parent: hauts-de-seine
+country_code: FR
+location: [2.32111, 48.81639]
+wikidata_id: Q241021
+metadata:
+  sources: [Wikidata Q241021 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4282899-5
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q241021
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q241021
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q241021

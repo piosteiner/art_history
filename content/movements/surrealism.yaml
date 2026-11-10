@@ -1,5 +1,36 @@
 public_id: 100239
 name: surrealism
+names:
+  - lang: nl
+    role: translation
+    text: surrealisme
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q39427
+  - lang: fr
+    role: translation
+    text: surréalisme
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q39427
+  - lang: de
+    role: translation
+    text: Surrealismus
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q39427
+  - lang: it
+    role: translation
+    text: surrealismo
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q39427
+  - lang: ja
+    role: translation
+    text: シュルレアリスム
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q39427
 kind: movement
 period: 1920/1949
 period_label: 1920s–late 1940s
@@ -12,6 +43,8 @@ relationships:
     period: 1920/1949
     period_label: 1920s–late 1940s
     sources: ["Getty Art & Architecture Thesaurus, “Surrealist” (AAT 300021512): “the international intellectual movement centered mainly in Paris from the 1920s to the late 1940s”"]
+identifiers:
+  gnd: 4058665-0
 sources:
   kind:
     - accessed: 2026-10-13

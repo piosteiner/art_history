@@ -1,0 +1,21 @@
+public_id: 117498
+name: Edward Plunkett, 18th Baron of Dunsany
+kind: person
+birth: 1878-07-24
+death: 1957-10-25
+wikidata_id: Q458658
+metadata:
+  sources: [Wikidata Q458658 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q458658
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q458658
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q458658

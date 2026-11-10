@@ -1,0 +1,34 @@
+public_id: 117450
+name: avant-garde
+names:
+  - text: Avantgarde
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q102932
+  - text: Avangard
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q102932
+  - lang: it
+    role: translation
+    text: avanguardia
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q102932
+  - lang: es
+    role: translation
+    text: vanguardismo
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q102932
+kind: movement
+wikidata_id: Q102932
+metadata:
+  sources: [Wikidata Q102932 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4133965-4
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q102932

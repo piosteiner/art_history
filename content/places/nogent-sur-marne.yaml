@@ -1,0 +1,24 @@
+public_id: 117441
+name: Nogent-sur-Marne
+kind: settlement
+parent: val-de-marne
+country_code: FR
+location: [2.4825, 48.83667]
+wikidata_id: Q212274
+metadata:
+  sources: [Wikidata Q212274 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4233906-6
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q212274
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q212274
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q212274

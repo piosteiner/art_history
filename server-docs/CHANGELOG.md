@@ -4,6 +4,29 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-10
 
+### Numbers sorted as read (245); link previews that load; Berenger, Joachim of Fiore
+- **What:** owner 2026-11-10. (1) Migration 245: `entry_sort_key()` writes a leading number out in the name's
+  language — `number_words(n, lang)` 0–9999 in en (also for no or another language), de, fr, es, it, nl, years as said
+  (en "eighteen sixty-seven", de/nl in hundreds), English ordinals (2nd → second), French 1er; `spell_leading_number()`
+  only when a space, punctuation or the end follows ("3D Print" stays). "El 2 de mayo de 1808" sorts as "dos de mayo…".
+  Stored list rows with a key starting with a digit queued again. Cost measured on the live data: within noise (the
+  key 353 ms for 20,000 rows, with the number check 350 ms). `npm run perf` could not finish: scale_test had a backlog
+  of ~50,000 queued entries (a full refresh queued at the run's start) and the run waits 20 minutes — to be repeated.
+  (2) Link previews: Wikimedia refuses thumbnails at 1200 px (HTTP 400), so the prerendered pages' `og:image` pointed
+  to an error for every Wikimedia picture, and 1,133 pictures were originals (several MB). `frontend/scripts/og-image.mjs`:
+  a Wikimedia JPEG → its 960-px thumbnail (query like ?utm_source stripped), every other picture (PNG/TIFF/SVG on
+  Wikimedia, museums) → the API's thumbnail service as an 800-px JPEG (`/v1/thumb?…&f=jpg`, new; Wikimedia sources are
+  fetched as their 1280-px thumbnail). The redirect pages (old slug, bare number) carry the target's preview tags too.
+  Map popups asked Wikimedia for 160-px thumbnails (refused) — now 250. E2E test for `f=jpg`.
+  (3) Content: Berenger (the Mainz bronze door's caster, active around 1000; texts from de.wikipedia Mainzer Dom and
+  Bernwardstür, the lecture). Joachim of Fiore: the Oxford Liber Figurarum (c. 1220/30) is a copy made after his
+  death of figures by him or his first followers — new literary work `liber-figurarum` (Q3831579, moved from the
+  manuscript; `written_by` Joachim, probable), the manuscript "after Joachim of Fiore", `illustrates` it; the
+  auto-created artist Joachim changed to a person and merged into the existing one (its redirect repointed by hand:
+  `merge_entries()` does not move `entry_moves` that point at the merged entry — to fix).
+- **Revert:** `git revert`; 245: `CREATE OR REPLACE FUNCTION entry_sort_key` with the old body (in 245's comment) and
+  queue the rows again. Content from the history pages.
+
 ### Content: Heilig-Blut-Altar dated 1499–1505; the Moutier-Grandval Bible by the Tours scriptorium
 - **What:** owner 2026-11-10 (Quality queue). (1) `heilig-blut-altar-rothenburg` was "c. 1270" — the first of two
   inception dates on Wikidata (Q11801545; unsourced there), so "created before Riemenschneider was born". Now

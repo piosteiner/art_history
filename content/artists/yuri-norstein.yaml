@@ -1,0 +1,13 @@
+public_id: 117436
+name: Yuri Norstein
+given_name: Yuri
+family_name: Norstein
+birth: 1941-09-15
+wikidata_id: Q371337
+metadata:
+  sources: [Wikidata Q371337 (retrieved 2026-11-10)]
+sources:
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q371337

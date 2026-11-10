@@ -1,0 +1,34 @@
+public_id: 117445
+name: Jean-Paul Appel-Guéry
+given_name: Jean-Paul
+family_name: Appel-Guéry
+kind: person
+occupations: [philosopher]
+birth: 1938
+wikidata_id: Q57660233
+metadata:
+  sources: [Wikidata Q57660233 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q57660233
+identifiers:
+  bnf: "120946107"
+  idref: 02928743X
+  viaf: "101775715"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q57660233
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q57660233
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q57660233

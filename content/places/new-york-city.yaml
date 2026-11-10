@@ -9,9 +9,82 @@ names:
       - accessed: 2026-10-29
         property: P1448
         wikidata: Q60
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Big Apple
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q60
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: The City That Never Sleeps
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q60
+  - kind: nickname
+    lang: de
+    role: alternative
+    text: Welthauptstadt
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q60
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: grosse pomme
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q60
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Gotham City
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q60
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Capital of the World
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q60
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Melting Pot
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q60
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Center of the Universe
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q60
 kind: settlement
 designation: city in the state of New York
 parent: new-york
 country_code: US
 location: [-74.006, 40.7128]
 wikidata_id: Q60
+metadata:
+  sources: [Wikidata Q60 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4042011-5
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q60
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q60
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q60

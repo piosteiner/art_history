@@ -1,0 +1,23 @@
+public_id: 117506
+name: Emma Goldman
+given_name: Emma
+family_name: Goldman
+kind: person
+birth: 1869-06-27
+death: 1940-05-14
+wikidata_id: Q79969
+metadata:
+  sources: [Wikidata Q79969 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q79969
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q79969
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q79969

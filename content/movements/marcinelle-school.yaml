@@ -1,0 +1,11 @@
+public_id: 117458
+name: Marcinelle school
+kind: movement
+wikidata_id: Q273470
+metadata:
+  sources: [Wikidata Q273470 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q273470

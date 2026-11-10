@@ -1,0 +1,23 @@
+public_id: 117496
+name: Jack Vance
+given_name: Jack
+family_name: Vance
+kind: person
+birth: 1916-08-28
+death: 2013-05-26
+wikidata_id: Q312632
+metadata:
+  sources: [Wikidata Q312632 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q312632
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q312632
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q312632

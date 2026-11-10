@@ -1,0 +1,16 @@
+public_id: 117515
+name: University of Basel
+kind: university
+founded: 1460-04-13
+wikidata_id: Q372608
+metadata:
+  sources: [Wikidata Q372608 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q372608
+  founded:
+    - accessed: 2026-11-10
+      property: P571
+      wikidata: Q372608

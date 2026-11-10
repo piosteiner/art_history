@@ -1,0 +1,23 @@
+public_id: 117504
+name: J. R. R. Tolkien
+given_name: J. R. R.
+family_name: Tolkien
+kind: person
+birth: 1892-01-03
+death: 1973-09-02
+wikidata_id: Q892
+metadata:
+  sources: [Wikidata Q892 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q892
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q892
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q892

@@ -1,0 +1,23 @@
+public_id: 117471
+name: Pacific Ocean
+names:
+  - text: Great Southern Ocean
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q98
+kind: site
+location: [-160, 0]
+wikidata_id: Q98
+metadata:
+  sources: [Wikidata Q98 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4044981-6
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q98
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q98

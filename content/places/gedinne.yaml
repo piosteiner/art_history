@@ -1,0 +1,22 @@
+public_id: 117457
+name: Gedinne
+kind: site
+parent: belgium
+country_code: BE
+location: [4.93694, 49.98056]
+wikidata_id: Q241069
+metadata:
+  sources: [Wikidata Q241069 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q241069
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q241069
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q241069

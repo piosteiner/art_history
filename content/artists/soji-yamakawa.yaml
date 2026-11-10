@@ -1,0 +1,53 @@
+public_id: 117432
+name: Sōji Yamakawa
+names:
+  - lang: ja
+    role: original
+    text: 山川惣治
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q11468284
+birth: 1908-02-28
+death: 1992-12-17
+wikidata_id: Q11468284
+metadata:
+  sources: [Wikidata Q11468284 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q11468284
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q11468284
+  - type: born_in
+    to: place/koriyama
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q11468284
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1f/Souji_Yamakawa.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Souji_Yamakawa.jpg
+    license: Public domain
+    credit: 読売新聞社 撮影者不明
+identifiers:
+  gnd: 13916877X
+  lc: no2009037727
+  viaf: "83584999"
+sources:
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q11468284
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q11468284

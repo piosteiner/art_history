@@ -1,0 +1,23 @@
+public_id: 117505
+name: Jorge Luis Borges
+given_name: Jorge Luis
+family_name: Borges
+kind: person
+birth: 1899-08-24
+death: 1986-06-14
+wikidata_id: Q909
+metadata:
+  sources: [Wikidata Q909 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q909
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q909
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q909

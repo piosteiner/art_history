@@ -1,0 +1,23 @@
+public_id: 117502
+name: Zhuang Zhou
+given_name: Zhuang
+family_name: Zhou
+kind: person
+birth: c. 369 BCE
+death: c. 288 BCE
+wikidata_id: Q47739
+metadata:
+  sources: [Wikidata Q47739 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q47739
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q47739
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q47739

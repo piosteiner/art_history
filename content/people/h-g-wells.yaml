@@ -1,0 +1,23 @@
+public_id: 117499
+name: H. G. Wells
+given_name: H. G.
+family_name: Wells
+kind: person
+birth: 1866-09-21
+death: 1946-08-13
+wikidata_id: Q42511
+metadata:
+  sources: [Wikidata Q42511 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q42511
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q42511
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q42511

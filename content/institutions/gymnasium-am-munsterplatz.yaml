@@ -1,0 +1,16 @@
+public_id: 117514
+name: Gymnasium am Münsterplatz
+kind: school
+founded: 1589
+wikidata_id: Q1558284
+metadata:
+  sources: [Wikidata Q1558284 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q1558284
+  founded:
+    - accessed: 2026-11-10
+      property: P571
+      wikidata: Q1558284

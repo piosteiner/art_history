@@ -1,0 +1,30 @@
+public_id: 117454
+name: Peru
+names:
+  - text: Republic of Peru
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q419
+  - text: Republica del Peru
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q419
+kind: country
+country_code: PE
+boundary_code: PE
+location: [-76, -9.4]
+wikidata_id: Q419
+metadata:
+  sources: [Wikidata Q419 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4045312-1
+  hls: "003398"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q419
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q419

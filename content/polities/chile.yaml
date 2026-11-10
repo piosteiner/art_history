@@ -1,0 +1,21 @@
+public_id: 117451
+name: Chile
+names:
+  - text: Republic of Chile
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q298
+period: 1810-09-18/
+country_codes: [CL]
+wikidata_id: Q298
+metadata:
+  sources: [Wikidata Q298 (retrieved 2026-11-10)]
+sources:
+  period:
+    - accessed: 2026-11-10
+      property: P571
+      wikidata: Q298
+  country_codes:
+    - accessed: 2026-11-10
+      property: P297
+      wikidata: Q298

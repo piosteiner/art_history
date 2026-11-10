@@ -1,0 +1,104 @@
+public_id: 117444
+name: Alejandro Jodorowsky
+given_name: Alejandro
+family_name: Jodorowsky
+names:
+  - kind: pseudonym
+    role: alternative
+    text: Jodo
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q263730
+  - kind: nickname
+    lang: es
+    role: alternative
+    text: Alejandro
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q263730
+  - lang: es
+    role: original
+    text: Alejandro Jodorowsky Prullansky
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q263730
+birth: 1929-02-17
+wikidata_id: Q263730
+metadata:
+  sources: [Wikidata Q263730 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/chile
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q263730
+  - type: nationality
+    to: polity/france
+    period: 1996-04-22
+    period_label: from 22 April 1996
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q263730
+  - type: born_in
+    to: place/iquique
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q263730
+  - type: born_in
+    to: place/tocopilla
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q263730
+  - type: lived_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q263730
+  - type: worked_in
+    to: place/chile
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q263730
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q263730
+  - type: associated_with
+    to: movement/avant-garde
+    sources:
+      - accessed: 2026-11-10
+        property: P135
+        wikidata: Q263730
+  - type: associated_with
+    to: movement/surrealism
+    sources:
+      - accessed: 2026-11-10
+        property: P135
+        wikidata: Q263730
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Utopiales_2011_Alejandro_Jodorowsky_16_%28cropped%29.jpg/1280px-Utopiales_2011_Alejandro_Jodorowsky_16_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Utopiales_2011_Alejandro_Jodorowsky_16_(cropped).jpg
+    license: CC BY-SA 3.0
+    credit: Lionel Allorge
+identifiers:
+  bnf: 11908875w
+  gnd: "119015129"
+  idref: "028147669"
+  lc: n85325923
+  nlk: KAC201422628
+  rkd: "233129"
+  ulan: "500356436"
+  viaf: "99588198"
+sources:
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q263730

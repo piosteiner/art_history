@@ -1,0 +1,31 @@
+public_id: 117469
+name: Lesser Poland Voivodeship
+names:
+  - lang: de
+    role: translation
+    text: Woiwodschaft Kleinpolen
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q54159
+kind: site
+parent: poland
+country_code: PL
+location: [20.26667, 49.85]
+wikidata_id: Q54159
+metadata:
+  sources: [Wikidata Q54159 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4596738-6
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q54159
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q54159
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q54159

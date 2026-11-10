@@ -1,0 +1,19 @@
+public_id: 117491
+name: Liber Figurarum
+names:
+  - lang: en
+    role: translation
+    text: Book of Figures
+    status: common
+  - lang: de
+    role: translation
+    text: Buch der Figuren
+description_md: |-
+  A collection of figures — diagrams and symbolic images — in which [[person/joachim-of-fiore]] (c. 1135–1202), the Calabrian abbot, turned his visions and his theology of history into images (figurae): biblical prophecy, the Trinity and the course of salvation history in three successive ages, combining biblical texts, geometric forms and symbols.[[source/wikipedia-en-liber-figurarum]][[source/wikipedia-de-liber-figurarum]] The figures are thought to come from Joachim himself or from his first followers.[[source/wikipedia-de-liber-figurarum]] One of the best known is the seven-headed dragon of Revelation 12, whose heads Joachim read as persecutors from Herod and Nero to Saladin and, last, the Antichrist.[[source/wikipedia-de-liber-figurarum]]
+
+  Three manuscripts are known: in Oxford (Corpus Christi College), Dresden and Reggio Emilia (found by Leone Tondelli in 1937). The oldest is the [[artwork/liber-figurarum-oxford|Oxford manuscript]], discovered by Marjorie Reeves in 1942.[[source/wikipedia-en-liber-figurarum]]
+wikidata_id: Q3831579
+relationships:
+  - type: written_by
+    to: person/joachim-of-fiore
+    certainty: probable

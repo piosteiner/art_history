@@ -33,6 +33,37 @@ birth: 1946-04-20
 wikidata_id: Q763368
 metadata:
   sources: [Wikidata Q763368 (retrieved 2026-11-07)]
+relationships:
+  - type: nationality
+    to: polity/italy
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q763368
+  - type: born_in
+    to: place/florence
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q763368
+  - type: lived_in
+    to: place/montalcino
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q763368
+  - type: lived_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q763368
+  - type: associated_with
+    to: movement/transavanguardia
+    sources:
+      - accessed: 2026-11-10
+        property: P135
+        wikidata: Q763368
 identifiers:
   bnf: 11966371w
   gnd: "118520431"

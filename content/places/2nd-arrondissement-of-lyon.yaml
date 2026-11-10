@@ -1,0 +1,29 @@
+public_id: 117438
+name: 2nd arrondissement of Lyon
+names:
+  - lang: fr
+    role: translation
+    text: 2e arrondissement de Lyon
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q3344
+kind: district
+parent: lyon
+country_code: FR
+location: [4.82908, 45.75411]
+wikidata_id: Q3344
+metadata:
+  sources: [Wikidata Q3344 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q3344
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q3344
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q3344

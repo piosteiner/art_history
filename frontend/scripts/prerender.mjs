@@ -6,6 +6,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { ogImage } from './og-image.mjs';
 
 const SITE = 'https://arthistory.piogino.ch';
 const API = process.env.API_BASE ?? 'https://api.arthistory.piogino.ch/v1';
@@ -21,7 +22,7 @@ const text = (html) => (html ?? '').replace(/<\/?(p|br|li|ul|ol|h\d|div|blockquo
 const clip = (s, n = 200) => (s.length <= n ? s : `${s.slice(0, s.lastIndexOf(' ', n - 1) > 80 ? s.lastIndexOf(' ', n - 1) : n - 1)}…`);
 /** An entry's public address (API 085): /<plural>/<number>/<slug>; the slug address where no number is given. */
 const entryPath = (plural, r) => (r.public_id ? `/${plural}/${r.public_id}/${r.slug}` : `/${plural}/${r.slug}`);
-const thumb = (url, w = 1200) => (url && url.includes('/thumb/') ? url.replace(/\/\d+px-/, `/${w}px-`) : url);
+const thumb = (url) => ogImage(url, API);   // a link's picture at a size every service takes (og-image.mjs)
 
 // six tries over about 20 s: a build that runs while the API restarts (a deploy's pm2 reload) waits it out
 async function get(path, tries = 6) {
@@ -148,8 +149,14 @@ function page(template, { title, description, url, image, imageAlt, type = 'webs
  * so a refresh at once (keeping ?query and #hash) and a canonical link for search engines (no noindex beside it:
  * the two together are contradictory signals).
  */
-const forward = (to) => `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Art History</title>
-<link rel="canonical" href="${esc(to)}"><meta http-equiv="refresh" content="0; url=${esc(to)}">
+// With the target's title, description and picture: chat apps read a shared link's own page and follow no refresh
+// (2026-11-10 — links to old addresses showed no preview).
+const forward = (to, d = null) => `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>${d ? esc(`${d.name} · Art History`) : 'Art History'}</title>
+<link rel="canonical" href="${esc(to)}"><meta http-equiv="refresh" content="0; url=${esc(to)}">${d ? `
+<meta property="og:site_name" content="Art History"><meta property="og:type" content="article">
+<meta property="og:title" content="${esc(`${d.name} · Art History`)}"><meta property="og:description" content="${esc(d.description)}">
+<meta property="og:url" content="${esc(to)}">${d.image && thumb(d.image.url) ? `<meta property="og:image" content="${esc(thumb(d.image.url))}">` : ''}
+<meta name="twitter:card" content="${d.image && thumb(d.image.url) ? 'summary_large_image' : 'summary'}">` : ''}
 <script>location.replace(${JSON.stringify(to)} + location.search + location.hash)</script></head>
 <body><p><a href="${esc(to)}">${esc(to)}</a></p></body></html>
 `;
@@ -174,8 +181,8 @@ for (const plural of PLURALS) {
     const url = `${SITE}${path}/`;
     const d = describe(plural, e);
     if (e.public_id) {
-      await write(`${plural}/${e.slug}/index.html`, forward(url)); // links and bookmarks from before the numbers
-      await write(`${plural}/${e.public_id}/index.html`, forward(url)); // the number alone
+      await write(`${plural}/${e.slug}/index.html`, forward(url, d)); // links and bookmarks from before the numbers
+      await write(`${plural}/${e.public_id}/index.html`, forward(url, d)); // the number alone
     }
     await write(`${path.slice(1)}/index.html`, page(template, {
       title: `${d.name} · Art History`, description: d.description, url, type: 'article',

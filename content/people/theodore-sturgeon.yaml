@@ -1,0 +1,23 @@
+public_id: 117508
+name: Theodore Sturgeon
+given_name: Theodore
+family_name: Sturgeon
+kind: person
+birth: 1918-02-26
+death: 1985-05-08
+wikidata_id: Q240253
+metadata:
+  sources: [Wikidata Q240253 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q240253
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q240253
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q240253

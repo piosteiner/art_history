@@ -4,6 +4,8 @@
 // card empty. Here the image is fetched once, resized with sharp, kept on disk and served with a year's caching; the
 // visitor's browser never contacts the museum's server.
 // Only images of our own entries (the table images): no open proxy, nothing fetched that an editor didn't add.
+// &f=jpg (2026-11-10): a JPEG instead of WebP — for the link previews of the prerendered pages (og:image), since not
+// every service that shows a shared link reads WebP.
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
@@ -36,13 +38,26 @@ async function slot(fn) {
 // the end-to-end tests' museum (env THUMB_TEST_SERVER = "https://museum.test/ http://127.0.0.1:3017/museum/"), as the
 // other outside services point at the fixture server there
 const [TEST_FROM, TEST_TO] = (process.env.THUMB_TEST_SERVER || '').split(' ');
-const fetchUrl = (src) => (TEST_FROM && src.startsWith(TEST_FROM) ? TEST_TO + src.slice(TEST_FROM.length) : src);
+const testUrl = (src) => (TEST_FROM && src.startsWith(TEST_FROM) ? TEST_TO + src.slice(TEST_FROM.length) : src);
+// A Wikimedia image (the link previews ask for those too — PNG, TIFF, SVG, 2026-11-10): fetched as Wikimedia's own
+// 1280-px thumbnail, not the original (TIFF scans run to hundreds of MB); TIFF thumbnails are .jpg, SVG ones .png.
+function fetchUrl(src) {
+  const url = src.replace(/^(https:\/\/[^/]*wikimedia\.org\/[^?#]*)[?#].*$/, '$1');
+  if (/^https:\/\/(upload|thumb)\.wikimedia\.org\/.*\/thumb\//.test(url)) return url.replace(/\/\d+px-([^/]+)$/, '/1280px-$1');
+  const m = /^(https:\/\/upload\.wikimedia\.org\/wikipedia\/[a-z-]+)\/([0-9a-f]\/[0-9a-f]{2})\/([^/]+?)(\.[a-z]+)$/i.exec(url);
+  if (m) {
+    const file = `${m[3]}${m[4]}`;
+    const suffix = /^\.tiff?$/i.test(m[4]) ? '.jpg' : /^\.svg$/i.test(m[4]) ? '.png' : '';
+    return `${m[1]}/thumb/${m[2]}/${file}/1280px-${file}${suffix}`;
+  }
+  return testUrl(src);
+}
 
 // the Art Institute of Chicago serves its IIIF images only to clients naming themselves in its own header (its API's
 // documented AIC-User-Agent); without it every request is refused with 403
 const extraHeaders = (src) => (/^https:\/\/([a-z0-9-]+\.)*artic\.edu\//.test(src) ? { 'AIC-User-Agent': 'arthistory.piogino.ch thumbnails (pioginosteiner@gmail.com)' } : {});
 
-async function make(src, width, file) {
+async function make(src, width, file, jpeg = false) {
   const res = await fetch(fetchUrl(src), { signal: AbortSignal.timeout(TIMEOUT), redirect: 'follow',
     headers: { 'User-Agent': 'arthistory.piogino.ch thumbnails (pioginosteiner@gmail.com)', Accept: 'image/*', ...extraHeaders(src) } });
   if (!res.ok) throw Object.assign(new Error(`HTTP ${res.status}`), { status: 502 });
@@ -50,7 +65,8 @@ async function make(src, width, file) {
   if (Number(res.headers.get('content-length') || 0) > MAX_BYTES) throw Object.assign(new Error('too large'), { status: 502 });
   const input = Buffer.from(await res.arrayBuffer());
   if (input.length > MAX_BYTES) throw Object.assign(new Error('too large'), { status: 502 });
-  const out = await sharp(input, { failOn: 'none' }).rotate().resize({ width, withoutEnlargement: true }).webp({ quality: 80 }).toBuffer();
+  const resized = sharp(input, { failOn: 'none' }).rotate().resize({ width, withoutEnlargement: true });
+  const out = await (jpeg ? resized.flatten({ background: '#ffffff' }).jpeg({ quality: 82, mozjpeg: true }) : resized.webp({ quality: 80 })).toBuffer();
   const tmp = `${file}.${process.pid}.tmp`;
   await fs.promises.writeFile(tmp, out);
   await fs.promises.rename(tmp, file);         // whole or not at all: a reader never sees half a file
@@ -60,17 +76,19 @@ async function make(src, width, file) {
 router.get('/', async (req, res) => {
   const src = typeof req.query.src === 'string' ? req.query.src : '';
   const w = Number(req.query.w);
+  const jpeg = req.query.f === 'jpg';
+  if (req.query.f !== undefined && !jpeg) throw badRequest('f: jpg (or leave it out for WebP)');
   if (!/^https:\/\/[^\s]+$/.test(src) || src.length > 2000) throw badRequest('src: an image address (https://…)');
   if (!WIDTHS.includes(w)) throw badRequest(`w: one of ${WIDTHS.join(', ')}`);
   const { rows } = await apiPool.query('SELECT 1 FROM images WHERE url = $1 LIMIT 1', [src]);
   if (!rows.length) throw notFound('not an image of this site');
-  const key = `${crypto.createHash('sha256').update(src).digest('hex').slice(0, 32)}-${w}`;
-  const file = path.join(DIR, `${key}.webp`);
+  const key = `${crypto.createHash('sha256').update(src).digest('hex').slice(0, 32)}-${w}${jpeg ? '-jpg' : ''}`;
+  const file = path.join(DIR, `${key}.${jpeg ? 'jpg' : 'webp'}`);
   let body;
   try {
     body = await fs.promises.readFile(file);
   } catch {
-    if (!pending.has(key)) pending.set(key, slot(() => make(src, w, file)).finally(() => pending.delete(key)));
+    if (!pending.has(key)) pending.set(key, slot(() => make(src, w, file, jpeg)).finally(() => pending.delete(key)));
     try {
       body = await pending.get(key);
     } catch (err) {
@@ -78,7 +96,7 @@ router.get('/', async (req, res) => {
       return res.status(err.status || 502).json({ error: 'bad_gateway', message: `the image could not be fetched (${err.message})` });
     }
   }
-  res.set({ 'Content-Type': 'image/webp', 'Cache-Control': 'public, max-age=31536000, immutable', 'X-Content-Type-Options': 'nosniff' });
+  res.set({ 'Content-Type': jpeg ? 'image/jpeg' : 'image/webp', 'Cache-Control': 'public, max-age=31536000, immutable', 'X-Content-Type-Options': 'nosniff' });
   res.send(body);
 });
 

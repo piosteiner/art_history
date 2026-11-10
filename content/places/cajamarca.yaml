@@ -1,0 +1,29 @@
+public_id: 117452
+name: Cajamarca
+names:
+  - text: Caxamarca
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q205119
+kind: settlement
+parent: cajamarca-department
+country_code: PE
+location: [-78.5175, -7.1575]
+wikidata_id: Q205119
+metadata:
+  sources: [Wikidata Q205119 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4088943-9
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q205119
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q205119
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q205119

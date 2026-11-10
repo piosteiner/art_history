@@ -1,0 +1,62 @@
+public_id: 117446
+name: Carlos Castañeda
+given_name: Carlos
+family_name: Castañeda
+names:
+  - kind: birth
+    lang: es
+    role: alternative
+    text: Carlos César Salvador Arana Castañeda
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q158878
+kind: person
+occupations: [anthropologist, writer, novelist, essayist, ethnographer, poet]
+birth: 1925-12-25
+death: 1998-04-27
+wikidata_id: Q158878
+metadata:
+  sources: [Wikidata Q158878 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q158878
+  - type: born_in
+    to: place/cajamarca
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q158878
+  - type: died_in
+    to: place/los-angeles
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q158878
+identifiers:
+  bnf: 11895468g
+  gnd: "118519530"
+  idref: "026771209"
+  lc: n80007692
+  nlk: KAC199604605
+  viaf: "100254667"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q158878
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q158878
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q158878
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q158878

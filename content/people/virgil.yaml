@@ -1,0 +1,21 @@
+public_id: 117493
+name: Virgil
+kind: person
+birth: -70
+death: -19
+wikidata_id: Q1398
+metadata:
+  sources: [Wikidata Q1398 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q1398
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q1398
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q1398

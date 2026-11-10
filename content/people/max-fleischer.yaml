@@ -1,0 +1,73 @@
+public_id: 117465
+name: Max Fleischer
+given_name: Max
+family_name: Fleischer
+names:
+  - text: Majer Fleischer
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q93788
+kind: person
+occupations: [screenwriter, film producer, film director, animator, inventor, manufacturer, director, cartoonist]
+birth: 1883-07-19
+death: 1972-09-11
+wikidata_id: Q93788
+metadata:
+  sources: [Wikidata Q93788 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q93788
+  - type: born_in
+    to: place/krakow
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q93788
+  - type: died_in
+    to: place/woodland-hills
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q93788
+  - type: lived_in
+    to: place/new-york
+    period: 1887
+    period_label: from 1887
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q93788
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7c/MaxFleischerPDUS.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:MaxFleischerPDUS.JPG
+    license: Public domain
+    credit: Max Fleischer himself
+identifiers:
+  bnf: 11902900t
+  gnd: "124524621"
+  idref: "026866625"
+  lc: n85248141
+  rkd: "242128"
+  ulan: "500118612"
+  viaf: "10821"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q93788
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q93788
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q93788
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q93788

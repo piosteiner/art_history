@@ -1,0 +1,174 @@
+public_id: 117434
+name: Ursula K. Le Guin
+given_name: Ursula K.
+family_name: Le Guin
+kind: person
+occupations: [novelist, writer, screenwriter, translator, poet, author, literary critic, science fiction writer, women's rights activist, children's writer, journalist, prose writer, writer of feminist science fiction, musician]
+birth: 1929-10-21
+death: 2018-01-22
+wikidata_id: Q181659
+metadata:
+  sources: [Wikidata Q181659 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q181659
+  - type: born_in
+    to: place/berkeley
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q181659
+  - type: died_in
+    to: place/portland
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q181659
+  - type: lived_in
+    to: place/berkeley
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q181659
+  - type: lived_in
+    to: place/portland
+    period: 1958/2018-01-22
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q181659
+  - type: influenced_by
+    to: artist/carl-jung
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q181659
+  - type: influenced_by
+    to: person/cordwainer-smith
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q181659
+  - type: influenced_by
+    to: person/edward-plunkett-18th-baron-of-dunsany
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q181659
+  - type: influenced_by
+    to: person/emma-goldman
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q181659
+  - type: influenced_by
+    to: person/h-g-wells
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q181659
+  - type: influenced_by
+    to: person/j-r-r-tolkien
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q181659
+  - type: influenced_by
+    to: person/jack-vance
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q181659
+  - type: influenced_by
+    to: person/jorge-luis-borges
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q181659
+  - type: influenced_by
+    to: person/leo-tolstoy
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q181659
+  - type: influenced_by
+    to: person/paul-goodman
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q181659
+  - type: influenced_by
+    to: person/peter-kropotkin
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q181659
+  - type: influenced_by
+    to: person/philip-k-dick
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q181659
+  - type: influenced_by
+    to: person/theodore-sturgeon
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q181659
+  - type: influenced_by
+    to: person/virgil
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q181659
+  - type: influenced_by
+    to: person/virginia-woolf
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q181659
+  - type: influenced_by
+    to: person/william-shakespeare
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q181659
+  - type: influenced_by
+    to: person/zhuang-zhou
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q181659
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Ursula_Le_Guin_%283551195631%29_-_Restoration.jpg/1280px-Ursula_Le_Guin_%283551195631%29_-_Restoration.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ursula_Le_Guin_(3551195631)_-_Restoration.jpg
+    license: CC BY-SA 2.0
+    credit: Marian Wood Kolisch, Oregon State University Restored by Adam Cuerden
+identifiers:
+  bnf: 11911659m
+  gnd: "118923382"
+  idref: "026973391"
+  lc: n78095474
+  nlk: KAC199616120
+  viaf: "101734435"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q181659
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q181659
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q181659
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q181659

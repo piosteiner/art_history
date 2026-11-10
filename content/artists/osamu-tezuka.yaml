@@ -1,0 +1,116 @@
+public_id: 117431
+name: Osamu Tezuka
+given_name: Osamu
+family_name: Tezuka
+names:
+  - kind: birth
+    lang: ja
+    role: alternative
+    text: 手塚 治
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q193300
+  - kind: nickname
+    lang: ja
+    role: alternative
+    text: マンガの神様
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q193300
+  - lang: ja
+    role: original
+    text: 手塚 治虫
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q193300
+  - lang: ja
+    role: original
+    text: 手塚治虫
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q193300
+birth: 1928-11-03
+death: 1989-02-09
+wikidata_id: Q193300
+metadata:
+  sources: [Wikidata Q193300 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q193300
+  - type: born_in
+    to: place/toyonaka
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q193300
+  - type: died_in
+    to: place/hanzomon-hospital
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q193300
+  - type: influenced_by
+    to: person/dave-fleischer
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q193300
+  - type: influenced_by
+    to: person/max-fleischer
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q193300
+  - type: influenced_by
+    to: person/milt-gross
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q193300
+  - type: influenced_by
+    to: artist/walt-disney
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q193300
+  - type: studied_at
+    to: institution/nara-medical-university
+    sources:
+      - accessed: 2026-11-10
+        property: P69
+        wikidata: Q193300
+  - type: studied_at
+    to: institution/university-of-osaka
+    period: 1940/1949
+    period_label: from 1940s
+    sources:
+      - accessed: 2026-11-10
+        property: P69
+        wikidata: Q193300
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1d/Osamu_Tezuka_1951_Scan10008-2.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Osamu_Tezuka_1951_Scan10008-2.JPG
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 12567895z
+  gnd: "119413795"
+  idref: 03498612X
+  lc: n84050367
+  nlk: KAC200108916
+  rkd: "225374"
+  ulan: "500299810"
+  viaf: "40771534"
+sources:
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q193300
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q193300

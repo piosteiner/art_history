@@ -1,0 +1,23 @@
+public_id: 117503
+name: Leo Tolstoy
+given_name: Leo
+family_name: Tolstoy
+kind: person
+birth: 1828-09-09
+death: 1910-11-20
+wikidata_id: Q7243
+metadata:
+  sources: [Wikidata Q7243 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q7243
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q7243
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q7243

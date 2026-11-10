@@ -1,0 +1,92 @@
+public_id: 117497
+name: Carl Jung
+given_name: Carl
+family_name: Jung
+birth: 1875-07-26
+death: 1961-06-06
+wikidata_id: Q41532
+metadata:
+  sources: [Wikidata Q41532 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q41532
+  - type: born_in
+    to: place/kesswil
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q41532
+  - type: died_in
+    to: place/kusnacht-zh
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q41532
+  - type: worked_in
+    to: place/basel
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q41532
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q41532
+  - type: student_of
+    to: person/pierre-janet
+    period: 1902/1903
+    sources:
+      - accessed: 2026-11-10
+        property: P1066
+        wikidata: Q41532
+  - type: studied_at
+    to: institution/gymnasium-am-munsterplatz
+    period: 1886/1895
+    sources:
+      - accessed: 2026-11-10
+        property: P69
+        wikidata: Q41532
+  - type: studied_at
+    to: institution/university-of-basel
+    period: 1895/1900
+    sources:
+      - accessed: 2026-11-10
+        property: P69
+        wikidata: Q41532
+  - type: member_of
+    to: institution/c-g-jung-institute-zurich
+    sources:
+      - accessed: 2026-11-10
+        property: P463
+        wikidata: Q41532
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/ETH-BIB-Jung%2C_Carl_Gustav_%281875-1961%29-Portrait-Portr_14163_%28cropped%29.tif/lossy-page1-1280px-ETH-BIB-Jung%2C_Carl_Gustav_%281875-1961%29-Portrait-Portr_14163_%28cropped%29.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:ETH-BIB-Jung,_Carl_Gustav_(1875-1961)-Portrait-Portr_14163_(cropped).tif
+    license: PDM-owner
+    credit: Unbekannt
+identifiers:
+  bnf: 11909239m
+  dodis: P3197
+  gnd: "118558749"
+  hls: "014425"
+  idref: "026943204"
+  lc: n79003358
+  nlk: KAC199614276
+  rkd: "295408"
+  ulan: "500320294"
+  viaf: "88819182"
+sources:
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q41532
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q41532

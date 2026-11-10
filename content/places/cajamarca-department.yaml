@@ -1,0 +1,35 @@
+public_id: 117453
+name: Cajamarca Department
+names:
+  - text: Cajamarca region
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q205078
+  - lang: es
+    role: translation
+    text: departamento de Cajamarca
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q205078
+kind: site
+parent: peru
+country_code: PE
+location: [-78.78, -6.61]
+wikidata_id: Q205078
+metadata:
+  sources: [Wikidata Q205078 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4009300-1
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q205078
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q205078
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q205078

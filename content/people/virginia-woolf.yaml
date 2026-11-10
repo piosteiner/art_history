@@ -1,0 +1,23 @@
+public_id: 117495
+name: Virginia Woolf
+given_name: Virginia
+family_name: Woolf
+kind: person
+birth: 1882-01-25
+death: 1941-03-28
+wikidata_id: Q40909
+metadata:
+  sources: [Wikidata Q40909 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q40909
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q40909
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q40909

@@ -1,0 +1,23 @@
+public_id: 117507
+name: Paul Goodman
+given_name: Paul
+family_name: Goodman
+kind: person
+birth: 1911-09-09
+death: 1972-08-02
+wikidata_id: Q943567
+metadata:
+  sources: [Wikidata Q943567 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q943567
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q943567
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q943567

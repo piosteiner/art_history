@@ -1,0 +1,26 @@
+public_id: 117449
+name: Chile
+names:
+  - text: Republic of Chile
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q298
+kind: country
+country_code: CL
+boundary_code: CL
+location: [-71, -33]
+wikidata_id: Q298
+metadata:
+  sources: [Wikidata Q298 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4009929-5
+  hls: "003394"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q298
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q298

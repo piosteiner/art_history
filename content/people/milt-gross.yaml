@@ -1,0 +1,64 @@
+public_id: 117466
+name: Milt Gross
+given_name: Milt
+family_name: Gross
+kind: person
+occupations: [cartoonist, animator, comics artist, film director]
+birth: 1895-03-04
+death: 1953-11-29
+wikidata_id: Q15492951
+metadata:
+  sources: [Wikidata Q15492951 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q15492951
+  - type: born_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q15492951
+  - type: born_in
+    to: place/the-bronx
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q15492951
+  - type: died_in
+    to: place/pacific-ocean
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q15492951
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Nize_Baby_art_by_Milt_Gross_for_First_National_Pictures_in_Motion_Picture_News_%28weekly%2C_July_3%2C_1926_to_August_28%2C_1926%29_%28page_119_crop%29.jpg/1280px-Nize_Baby_art_by_Milt_Gross_for_First_National_Pictures_in_Motion_Picture_News_%28weekly%2C_July_3%2C_1926_to_August_28%2C_1926%29_%28page_119_crop%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nize_Baby_art_by_Milt_Gross_for_First_National_Pictures_in_Motion_Picture_News_(weekly,_July_3,_1926_to_August_28,_1926)_(page_119_crop).jpg
+    license: Public domain
+    credit: Motion Picture News
+identifiers:
+  gnd: "1016142749"
+  idref: "223530123"
+  lc: n82151528
+  ulan: "500123833"
+  viaf: "57971406"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q15492951
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q15492951
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q15492951
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q15492951

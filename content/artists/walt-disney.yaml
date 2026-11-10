@@ -1,0 +1,101 @@
+public_id: 117463
+name: Walt Disney
+given_name: Walt
+family_name: Disney
+names:
+  - kind: birth
+    lang: en
+    role: alternative
+    text: Walter Elias Disney
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q8704
+birth: 1901-12-05
+death: 1966-12-15
+wikidata_id: Q8704
+metadata:
+  sources: [Wikidata Q8704 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q8704
+  - type: born_in
+    to: place/chicago
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q8704
+  - type: died_in
+    to: place/burbank
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q8704
+  - type: lived_in
+    to: place/walt-disney-house
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q8704
+  - type: lived_in
+    to: place/chicago
+    period: 1901/1906
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q8704
+  - type: lived_in
+    to: place/marceline
+    period: 1906/1910
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q8704
+  - type: lived_in
+    to: place/kansas-city
+    period: 1910/1923
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q8704
+  - type: lived_in
+    to: place/los-angeles
+    period: 1923
+    period_label: from 1923
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q8704
+  - type: studied_at
+    to: institution/kansas-city-art-institute
+    period: 1910/1919
+    sources:
+      - accessed: 2026-11-10
+        property: P69
+        wikidata: Q8704
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/df/Walt_Disney_1946.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Walt_Disney_1946.JPG
+    license: Public domain
+    credit: Boy Scouts of America
+identifiers:
+  bnf: 11994688k
+  gnd: "118526006"
+  idref: "028028945"
+  lc: n78095660
+  nlk: KAC199607178
+  rkd: "23298"
+  ulan: "500025598"
+  viaf: "36927108"
+sources:
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q8704
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q8704

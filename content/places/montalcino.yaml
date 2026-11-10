@@ -1,0 +1,24 @@
+public_id: 117428
+name: Montalcino
+kind: settlement
+parent: province-of-siena
+country_code: IT
+location: [11.48917, 43.05917]
+wikidata_id: Q91208
+metadata:
+  sources: [Wikidata Q91208 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4258268-4
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q91208
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q91208
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q91208

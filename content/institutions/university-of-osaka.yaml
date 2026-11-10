@@ -1,0 +1,52 @@
+public_id: 117461
+name_lang: en
+name: University of Osaka
+names:
+  - lang: ja
+    role: romanization
+    text: Ōsaka daigaku
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q651233
+  - lang: ja
+    role: original
+    text: 大阪大学
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q651233
+kind: university
+founded: 1931-05-01
+place: suita
+location: [135.52667, 34.81917]
+website_url: https://www.osaka-u.ac.jp/ja
+wikidata_id: Q651233
+metadata:
+  sources: [Wikidata Q651233 (retrieved 2026-11-10)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Osaka_University_Faculty_of_Medicine.jpg/1280px-Osaka_University_Faculty_of_Medicine.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Osaka_University_Faculty_of_Medicine.jpg
+    license: CC BY-SA 3.0
+    credit: ignis
+identifiers:
+  bnf: 12046797v
+  gnd: 75033-5
+  idref: "028682564"
+  lc: n50081112
+  viaf: "136860286"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q651233
+  place:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q651233
+  founded:
+    - accessed: 2026-11-10
+      property: P571
+      wikidata: Q651233
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q651233

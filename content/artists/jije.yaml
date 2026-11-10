@@ -1,0 +1,73 @@
+public_id: 117443
+name: Jijé
+names:
+  - kind: birth
+    lang: fr
+    role: former
+    text: Joseph Gillain
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q741204
+  - lang: ja
+    role: translation
+    text: ジジェ
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q741204
+birth: 1914-01-13
+death: 1980-06-19
+wikidata_id: Q741204
+metadata:
+  sources: [Wikidata Q741204 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/belgium
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q741204
+  - type: born_in
+    to: place/gedinne
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q741204
+  - type: died_in
+    to: place/versailles
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q741204
+  - type: studied_at
+    to: institution/royal-academy-of-fine-arts-of-brussels
+    sources:
+      - accessed: 2026-11-10
+        property: P69
+        wikidata: Q741204
+  - type: associated_with
+    to: movement/marcinelle-school
+    sources:
+      - accessed: 2026-11-10
+        property: P135
+        wikidata: Q741204
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Joseph_Gillain.jpg/1280px-Joseph_Gillain.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joseph_Gillain.jpg
+    license: CC BY-SA 4.0
+    credit: Domigillain
+identifiers:
+  bnf: 11904909d
+  gnd: "115324631"
+  idref: "026891271"
+  lc: nr2006010121
+  rkd: "42288"
+  viaf: "4363759"
+sources:
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q741204
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q741204

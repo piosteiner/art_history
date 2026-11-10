@@ -1,0 +1,16 @@
+public_id: 117511
+name: Kesswil
+kind: settlement
+location: [9.3129, 47.58756]
+wikidata_id: Q69413
+metadata:
+  sources: [Wikidata Q69413 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q69413
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q69413

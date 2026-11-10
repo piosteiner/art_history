@@ -5,15 +5,19 @@ names:
   - lang: en
     role: translation
     text: Liber Figurarum
-creator: joachim-of-fiore
+attribution_label: after Joachim of Fiore
 created: c. 1220–1230
 created_span: uncertain
 medium: manuscript
 institution: corpus-christi-college-oxford
 inventory_number: MS 255A
-wikidata_id: Q3831579
+description_md: "The oldest of the three manuscripts of the [[literature/liber-figurarum|Liber Figurarum]], discovered by the British historian Marjorie Reeves in 1942.[[source/wikipedia-en-liber-figurarum]] It was made around 1220/30,[[source/ganz-2024-aus-dem-wald|Sitzung 6 (7.11.2024), Folie 107]] two to three decades after the death of [[person/joachim-of-fiore]] (1202), whose figures it copies — figures that go back to Joachim himself or his first followers.[[source/wikipedia-de-liber-figurarum]] The scribes and the painter are not known. Among its pages: the Tree of the Holy Spirit and the Tree of the twofold coming of Christ (fol. 9v–10r).[[source/ganz-2024-aus-dem-wald|Sitzung 6 (7.11.2024), Folie 107]]"
 metadata:
   sources: [Wikidata Q3831579 (retrieved 2026-11-09)]
+relationships:
+  - type: illustrates
+    to: literature/liber-figurarum
+    label: a copy of the figures
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/5/52/Seven-Headed_Dragon._Liber_Figurarum._Southern_Italy._1200s..jpg
     source_url: https://commons.wikimedia.org/wiki/File:Seven-Headed_Dragon._Liber_Figurarum._Southern_Italy._1200s..jpg
@@ -26,12 +30,12 @@ sources:
   created:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 6 (7.11.2024), Folie 107
-  creator:
-    - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 6 (7.11.2024), Folie 107
   institution:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 6 (7.11.2024), Folie 107
   inventory_number:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 6 (7.11.2024), Folie 107
+  attribution_label:
+    - source: wikipedia-de-liber-figurarum
+      accessed: 2026-11-10

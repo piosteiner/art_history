@@ -1,0 +1,88 @@
+public_id: 117433
+name: Antoine de Saint-Exupéry
+given_name: Antoine
+family_name: de Saint-Exupéry
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Antoine Jean-Baptiste Marie Roger de Saint-Exupéry
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q2908
+  - lang: ja
+    role: translation
+    text: アントワーヌ・ド・サン＝テグジュペリ
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q2908
+kind: person
+occupations: [aircraft pilot, novelist, children's writer, writer, journalist, illustrator, philosopher, poet, inventor, essayist]
+birth: 1900-06-29
+death: 1944-07-31
+wikidata_id: Q2908
+metadata:
+  sources: [Wikidata Q2908 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q2908
+  - type: born_in
+    to: place/2nd-arrondissement-of-lyon
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q2908
+  - type: born_in
+    to: place/lyon
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q2908
+  - type: died_in
+    to: place/ile-de-riou
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q2908
+  - type: died_in
+    to: place/mediterranean-sea
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q2908
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/72/Antoine_de_Saint-Euxpery_%281920%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Antoine_de_Saint-Euxpery_(1920).jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 11923342r
+  gnd: "118604902"
+  idref: "027118266"
+  kulturnav: 5b398ca1-06e1-4cc4-9f69-11fcb3b951d3
+  lc: n80126188
+  nlk: KAC199623935
+  rkd: "322628"
+  ulan: "500339023"
+  viaf: "93810507"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q2908
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q2908
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q2908
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q2908

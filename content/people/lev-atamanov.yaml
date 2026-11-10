@@ -1,0 +1,76 @@
+public_id: 117437
+name: Lev Atamanov
+given_name: Lev
+family_name: Atamanov
+names:
+  - lang: hy
+    role: original
+    text: Լևոն Կոնստանտինի Ատամանյան
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q2395785
+  - text: Levon Atamanyan
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q2395785
+  - lang: de
+    role: translation
+    text: Lew Konstantinowitsch Atamanow
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q2395785
+kind: person
+occupations: [film director, animator, screenwriter, director]
+birth: 1905-02-21
+death: 1981-02-12
+wikidata_id: Q2395785
+metadata:
+  sources: [Wikidata Q2395785 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/russian-empire
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q2395785
+  - type: nationality
+    to: polity/soviet-union
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q2395785
+  - type: born_in
+    to: place/moscow
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q2395785
+  - type: died_in
+    to: place/moscow
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q2395785
+identifiers:
+  bnf: "139917992"
+  gnd: "139772561"
+  idref: "083487999"
+  lc: no2010127368
+  viaf: "14967896"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q2395785
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q2395785
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q2395785
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q2395785

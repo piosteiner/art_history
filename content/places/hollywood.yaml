@@ -1,0 +1,24 @@
+public_id: 117468
+name: Hollywood
+kind: district
+parent: los-angeles
+country_code: US
+location: [-118.32667, 34.09833]
+wikidata_id: Q34006
+metadata:
+  sources: [Wikidata Q34006 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4099817-4
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q34006
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q34006
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q34006

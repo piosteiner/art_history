@@ -1,0 +1,24 @@
+public_id: 117510
+name: Alameda County
+kind: site
+parent: united-states
+country_code: US
+location: [-121.91, 37.65]
+wikidata_id: Q107146
+metadata:
+  sources: [Wikidata Q107146 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4243505-5
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q107146
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q107146
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q107146

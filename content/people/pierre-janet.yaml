@@ -1,0 +1,23 @@
+public_id: 117512
+name: Pierre Janet
+given_name: Pierre
+family_name: Janet
+kind: person
+birth: 1859-05-30
+death: 1947-02-24
+wikidata_id: Q328758
+metadata:
+  sources: [Wikidata Q328758 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q328758
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q328758
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q328758

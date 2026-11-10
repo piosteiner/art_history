@@ -1,0 +1,33 @@
+public_id: 117429
+name: Bunkyō-ku
+names:
+  - text: Bunkyo Ward
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q212713
+  - lang: ja
+    role: translation
+    text: 文京区
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q212713
+kind: site
+parent: tokyo
+country_code: JP
+location: [139.75225, 35.708]
+wikidata_id: Q212713
+metadata:
+  sources: [Wikidata Q212713 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q212713
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q212713
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q212713

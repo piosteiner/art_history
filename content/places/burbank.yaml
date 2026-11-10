@@ -1,0 +1,24 @@
+public_id: 117472
+name: Burbank
+kind: settlement
+parent: los-angeles-county
+country_code: US
+location: [-118.32833, 34.18028]
+wikidata_id: Q39561
+metadata:
+  sources: [Wikidata Q39561 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4097951-9
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q39561
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q39561
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q39561

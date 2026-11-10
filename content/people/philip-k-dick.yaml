@@ -1,0 +1,23 @@
+public_id: 117494
+name: Philip K. Dick
+given_name: Philip K.
+family_name: Dick
+kind: person
+birth: 1928-12-16
+death: 1982-03-02
+wikidata_id: Q171091
+metadata:
+  sources: [Wikidata Q171091 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q171091
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q171091
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q171091

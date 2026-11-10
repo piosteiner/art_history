@@ -1,0 +1,101 @@
+public_id: 117435
+name: Jean Giraud
+given_name: Jean
+family_name: Giraud
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Jean Henri Gaston Giraud
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q309240
+  - kind: pseudonym
+    role: alternative
+    text: Gir
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q309240
+  - kind: pseudonym
+    role: alternative
+    text: Mœbius
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q309240
+birth: 1938-05-08
+death: 2012-03-10
+wikidata_id: Q309240
+metadata:
+  sources: [Wikidata Q309240 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q309240
+  - type: born_in
+    to: place/nogent-sur-marne
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q309240
+  - type: died_in
+    to: place/montrouge
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q309240
+  - type: influenced_by
+    to: artist/alejandro-jodorowsky
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q309240
+  - type: influenced_by
+    to: person/carlos-castaneda
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q309240
+  - type: influenced_by
+    to: person/jean-paul-appel-guery
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q309240
+  - type: influenced_by
+    to: artist/jije
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q309240
+  - type: student_of
+    to: artist/jije
+    sources:
+      - accessed: 2026-11-10
+        property: P802
+        wikidata: Q741204
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/56/Moebius_Lodz_2008.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Moebius_Lodz_2008.jpg
+    license: CC BY-SA 4.0
+    credit: Jarek Obważanek, WRAK.PL
+identifiers:
+  bnf: "119050660"
+  gnd: "119086123"
+  idref: "027032817"
+  lc: n82074064
+  nlk: KAC200100151
+  rkd: "282955"
+  ulan: "500339595"
+  viaf: "118729042"
+sources:
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q309240
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q309240

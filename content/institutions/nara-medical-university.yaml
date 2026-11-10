@@ -1,0 +1,55 @@
+public_id: 117462
+name_lang: en
+name: Nara Medical University
+names:
+  - lang: ja
+    role: romanization
+    text: Nara Kenritsu Ika Daigaku
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q4801446
+  - lang: de
+    role: translation
+    text: Medizinische Universität Nara
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q4801446
+  - lang: ja
+    role: original
+    text: 奈良県立医科大学
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q4801446
+kind: university
+founded: 1945-04
+place: kashihara
+location: [135.79361, 34.50417]
+website_url: https://www.naramed-u.ac.jp/
+wikidata_id: Q4801446
+metadata:
+  sources: [Wikidata Q4801446 (retrieved 2026-11-10)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Nara_Medical_University_%28Main_gate%29.jpg/1280px-Nara_Medical_University_%28Main_gate%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nara_Medical_University_(Main_gate).jpg
+    license: CC BY-SA 4.0
+    credit: 8-hachiro
+identifiers:
+  lc: n2012181970
+  viaf: "250694451"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q4801446
+  place:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q4801446
+  founded:
+    - accessed: 2026-11-10
+      property: P571
+      wikidata: Q4801446
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q4801446
