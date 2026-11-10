@@ -1,0 +1,21 @@
+public_id: 117657
+name: South Africa
+kind: country
+country_code: ZA
+boundary_code: ZA
+location: [24, -29]
+wikidata_id: Q258
+metadata:
+  sources: [Wikidata Q258 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4078012-0
+  hls: "003467"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q258
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q258

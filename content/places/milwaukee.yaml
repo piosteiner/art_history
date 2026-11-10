@@ -1,0 +1,46 @@
+public_id: 117517
+name: Milwaukee
+names:
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Cream City
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q37836
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Brew City
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q37836
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Mil Town
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q37836
+kind: settlement
+parent: milwaukee-county
+country_code: US
+location: [-87.95, 43.05]
+wikidata_id: Q37836
+metadata:
+  sources: [Wikidata Q37836 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4115155-0
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q37836
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q37836
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q37836

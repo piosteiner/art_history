@@ -1,0 +1,23 @@
+public_id: 117562
+name: Rudyard Kipling
+given_name: Rudyard
+family_name: Kipling
+kind: person
+birth: 1865-12-30
+death: 1936-01-18
+wikidata_id: Q34743
+metadata:
+  sources: [Wikidata Q34743 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q34743
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q34743
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q34743

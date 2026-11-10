@@ -2,12 +2,129 @@ public_id: 117494
 name: Philip K. Dick
 given_name: Philip K.
 family_name: Dick
+names:
+  - kind: birth
+    lang: en
+    role: alternative
+    text: Philip Kindred Dick
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q171091
+  - kind: pseudonym
+    role: alternative
+    text: Richard Phillipps
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q171091
+  - kind: pseudonym
+    role: alternative
+    text: Jack Dowland
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q171091
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Phil
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q171091
 kind: person
+occupations: [novelist, essayist, science fiction writer, philosopher, writer, short story writer, author]
 birth: 1928-12-16
 death: 1982-03-02
 wikidata_id: Q171091
 metadata:
   sources: [Wikidata Q171091 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q171091
+  - type: born_in
+    to: place/chicago
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q171091
+  - type: died_in
+    to: place/santa-ana
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q171091
+  - type: lived_in
+    to: place/alameda
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q171091
+  - type: lived_in
+    to: place/fullerton
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q171091
+  - type: lived_in
+    to: place/sausalito
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q171091
+  - type: lived_in
+    to: place/chicago
+    period: 16 December 1928 – 1929
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q171091
+  - type: lived_in
+    to: place/johnstown
+    period: 1929
+    period_label: from 1929
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q171091
+  - type: lived_in
+    to: place/berkeley
+    period: 1931
+    period_label: from 1931
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q171091
+  - type: lived_in
+    to: place/oakland
+    period: 1964
+    period_label: from 1964
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q171091
+  - type: lived_in
+    to: place/santa-ana
+    period: 1982-03-02
+    period_label: until 2 March 1982
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q171091
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Philip_K_Dick_in_early_1960s_%28photo_by_Arthur_Knight%29_%28cropped%29.jpg/1280px-Philip_K_Dick_in_early_1960s_%28photo_by_Arthur_Knight%29_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Philip_K_Dick_in_early_1960s_(photo_by_Arthur_Knight)_(cropped).jpg
+    license: Public domain
+    credit: Arthur Knight (photographer)
+identifiers:
+  bnf: 11900117v
+  gnd: "118678175"
+  idref: "027601854"
+  lc: n79018147
+  nlk: KAC199607076
+  ulan: "500338157"
+  viaf: "27063583"
 sources:
   kind:
     - accessed: 2026-11-10
@@ -20,4 +137,8 @@ sources:
   death:
     - accessed: 2026-11-10
       property: P570
+      wikidata: Q171091
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
       wikidata: Q171091

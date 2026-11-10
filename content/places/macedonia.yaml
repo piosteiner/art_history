@@ -1,0 +1,23 @@
+public_id: 117651
+name: Macedonia
+names:
+  - text: Ancient Macedonia
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q83958
+kind: site
+location: [22.32276, 40.47797]
+wikidata_id: Q83958
+metadata:
+  sources: [Wikidata Q83958 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4458157-9
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q83958
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q83958

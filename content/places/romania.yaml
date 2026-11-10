@@ -1,0 +1,28 @@
+public_id: 117635
+name: Romania
+names:
+  - lang: de
+    role: translation
+    text: Rumänien
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q218
+kind: country
+country_code: RO
+boundary_code: RO
+location: [25, 46]
+wikidata_id: Q218
+metadata:
+  sources: [Wikidata Q218 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4050939-4
+  hls: "003369"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q218
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q218

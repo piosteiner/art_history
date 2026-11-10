@@ -1,0 +1,44 @@
+public_id: 117642
+name: Publilius Syrus
+given_name: Publilius
+family_name: Syrus
+names:
+  - lang: it
+    role: translation
+    text: Publilio Siro
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q363375
+kind: person
+occupations: [writer, playwright, poet, philosopher, actor]
+wikidata_id: Q363375
+metadata:
+  sources: [Wikidata Q363375 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/ancient-rome
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q363375
+  - type: born_in
+    to: place/nusaybin
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q363375
+identifiers:
+  bnf: "125118259"
+  gnd: "118793608"
+  idref: "034354263"
+  lc: n85194948
+  viaf: "22130553"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q363375
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q363375

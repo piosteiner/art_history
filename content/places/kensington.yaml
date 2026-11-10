@@ -1,0 +1,16 @@
+public_id: 117677
+name: Kensington
+kind: site
+location: [-0.1909, 51.5004]
+wikidata_id: Q288781
+metadata:
+  sources: [Wikidata Q288781 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q288781
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q288781

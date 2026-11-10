@@ -1,11 +1,87 @@
 public_id: 117498
 name: Edward Plunkett, 18th Baron of Dunsany
+names:
+  - kind: birth
+    lang: en
+    role: alternative
+    text: Edward John Moreton Drax Plunkett
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q458658
+  - kind: pseudonym
+    role: alternative
+    text: Lord Dunsany
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q458658
+  - text: Edward J Moreton Drax Plunkett Dunsany
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q458658
+  - lang: de
+    role: translation
+    text: Edward Plunkett, 18. Baron of Dunsany
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q458658
 kind: person
+occupations: [writer, playwright, poet, politician, chess player, novelist, aristocrat]
 birth: 1878-07-24
 death: 1957-10-25
 wikidata_id: Q458658
 metadata:
   sources: [Wikidata Q458658 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/irish-free-state
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q458658
+  - type: nationality
+    to: polity/irish-republic
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q458658
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q458658
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    period: 1927-04-12
+    period_label: until 12 April 1927
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q458658
+  - type: born_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q458658
+  - type: died_in
+    to: place/dublin-2
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q458658
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Lord_Edward_John_Moreton_Drax_Plunkett_Dunsany_by_Morrall-Hoole_Studios.jpg/1280px-Lord_Edward_John_Moreton_Drax_Plunkett_Dunsany_by_Morrall-Hoole_Studios.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lord_Edward_John_Moreton_Drax_Plunkett_Dunsany_by_Morrall-Hoole_Studios.jpg
+    license: Public domain
+    credit: Morrall-Hoole Studios, restored by Adam Cuerden
+identifiers:
+  bnf: 11920077v
+  gnd: "119241595"
+  idref: 02707675X
+  lc: n80005394
+  nlk: KAC200306859
+  viaf: "54152830"
 sources:
   kind:
     - accessed: 2026-11-10
@@ -18,4 +94,8 @@ sources:
   death:
     - accessed: 2026-11-10
       property: P570
+      wikidata: Q458658
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
       wikidata: Q458658

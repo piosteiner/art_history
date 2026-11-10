@@ -2,12 +2,76 @@ public_id: 117499
 name: H. G. Wells
 given_name: H. G.
 family_name: Wells
+names:
+  - kind: birth
+    lang: en
+    role: alternative
+    text: Herbert George Wells
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q42511
+  - kind: pseudonym
+    role: alternative
+    text: Reginald Bliss
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q42511
+  - kind: pseudonym
+    role: alternative
+    text: Septimus Browne
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q42511
+  - kind: pseudonym
+    role: alternative
+    text: Sosthenes Smith
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q42511
 kind: person
+occupations: [writer, historian, journalist, Idist, science fiction writer, novelist, sociologist, screenwriter]
 birth: 1866-09-21
 death: 1946-08-13
 wikidata_id: Q42511
 metadata:
   sources: [Wikidata Q42511 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q42511
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q42511
+  - type: born_in
+    to: place/bromley
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q42511
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q42511
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4b/H.G._Wells_by_Beresford.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:H.G._Wells_by_Beresford.jpg
+    license: Public domain
+    credit: George Charles Beresford
+identifiers:
+  bnf: "119290531"
+  gnd: "118643266"
+  idref: "027195104"
+  lc: n79063613
+  ulan: "500225477"
+  viaf: "97006424"
 sources:
   kind:
     - accessed: 2026-11-10
@@ -20,4 +84,8 @@ sources:
   death:
     - accessed: 2026-11-10
       property: P570
+      wikidata: Q42511
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
       wikidata: Q42511

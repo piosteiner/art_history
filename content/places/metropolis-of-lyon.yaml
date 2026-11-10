@@ -1,0 +1,19 @@
+public_id: 117541
+name: Metropolis of Lyon
+names:
+  - lang: fr
+    role: original
+    text: Métropole de Lyon
+  - lang: fr
+    role: alternative
+    text: Grand Lyon
+kind: region
+designation: territorial collectivity
+existed: since 1 January 2015
+parent: france
+country_code: FR
+location: [4.853974, 45.757496]
+description_md: "A French territorial collectivity, also called Grand Lyon: a directly elected metropolitan authority for the city of Lyon and most of its suburbs, with the powers both of a department and of a metropolis — which takes its territory out of the Rhône department. It replaced the Urban Community of Lyon on 1 January 2015 (MAPAM law of January 2014). [[place/lyon|Lyon]] belongs to it since then; from 1793 to the end of 2014 the city was in the [[place/rhone|Rhône]] department.[[source/wikipedia-en-metropolis-of-lyon]]"
+wikidata_id: Q16665897
+metadata:
+  sources: [Wikidata Q16665897 (retrieved 2026-11-10)]

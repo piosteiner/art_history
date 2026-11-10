@@ -1,0 +1,16 @@
+public_id: 117664
+name: Beirut
+kind: settlement
+location: [35.51306, 33.88694]
+wikidata_id: Q3820
+metadata:
+  sources: [Wikidata Q3820 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q3820
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q3820

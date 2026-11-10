@@ -1,0 +1,59 @@
+public_id: 117613
+name: Thomas Kyd
+given_name: Thomas
+family_name: Kyd
+kind: person
+occupations: [playwright, writer, literary translator]
+birth: 1558
+death: 1594-07-16
+wikidata_id: Q337082
+metadata:
+  sources: [Wikidata Q337082 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q337082
+  - type: born_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q337082
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q337082
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/df/Kyd-SpanishTragedie-title.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Kyd-SpanishTragedie-title.JPG
+    license: Public domain
+    credit: Unknown engraver
+identifiers:
+  bnf: 12378305w
+  gnd: 11856837X
+  idref: "032829620"
+  lc: n50058277
+  nlk: KAC200605142
+  viaf: "29614087"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q337082
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q337082
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q337082
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q337082

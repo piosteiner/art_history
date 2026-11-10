@@ -1,0 +1,78 @@
+public_id: 117554
+name: G. K. Chesterton
+given_name: G. K.
+family_name: Chesterton
+names:
+  - lang: en
+    role: original
+    text: Gilbert Keith Chesterton
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q183167
+kind: person
+occupations: [journalist, poet, novelist, autobiographer, writer, screenwriter, philosopher, biographer, illustrator, crime fiction writer, literary historian, essayist, playwright, opinion journalist, historian, literary critic, university teacher, caricaturist]
+birth: 1874-05-29
+death: 1936-06-14
+wikidata_id: Q183167
+metadata:
+  sources: [Wikidata Q183167 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q183167
+  - type: born_in
+    to: place/kensington
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q183167
+  - type: born_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q183167
+  - type: died_in
+    to: place/beaconsfield
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q183167
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/75/Gilbert_Chesterton.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gilbert_Chesterton.jpg
+    license: Public domain
+    credit: Ernest Herbert Mills
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/bc/G._K._Chesterton.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:G._K._Chesterton.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "118965816"
+  gnd: "118520393"
+  idref: "026785501"
+  lc: n79021157
+  nlk: KAC199633265
+  rkd: "16604"
+  ulan: "500008740"
+  viaf: "14767719"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q183167
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q183167
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q183167
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q183167

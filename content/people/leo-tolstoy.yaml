@@ -2,12 +2,184 @@ public_id: 117503
 name: Leo Tolstoy
 given_name: Leo
 family_name: Tolstoy
+names:
+  - kind: birth
+    lang: en
+    role: alternative
+    text: Lev Nikolayevich Tolstoy
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q7243
+  - kind: birth
+    lang: nl
+    role: former
+    text: Lev Nikolajevitsj Tolstoj
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q7243
+  - lang: ru
+    role: original
+    text: Лев Никола́евич Толсто́й
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q7243
 kind: person
+occupations: [writer, playwright, philosopher, novelist, pedagogue, essayist, children's writer, diarist, prose writer, opinion journalist, Esperantist, pacifist, poet, short story writer]
 birth: 1828-09-09
 death: 1910-11-20
 wikidata_id: Q7243
 metadata:
   sources: [Wikidata Q7243 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/russian-empire
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q7243
+  - type: born_in
+    to: place/yasnaya-polyana
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q7243
+  - type: died_in
+    to: place/astapovo
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q7243
+  - type: lived_in
+    to: place/denezhnyy-lane
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q7243
+  - type: lived_in
+    to: place/dzerzhinsky-street-11-2
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q7243
+  - type: lived_in
+    to: place/lev-tolstoy-street
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q7243
+  - type: lived_in
+    to: place/pyatnitskaya-street
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q7243
+  - type: lived_in
+    to: place/yapeeva-street
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q7243
+  - type: lived_in
+    to: place/tolstoy-urama-25-68
+    period: 1845/1846
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q7243
+  - type: influenced_by
+    to: person/alexander-pushkin
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q7243
+  - type: influenced_by
+    to: person/aristotle
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q7243
+  - type: influenced_by
+    to: person/arthur-schopenhauer
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q7243
+  - type: influenced_by
+    to: person/charles-dickens
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q7243
+  - type: influenced_by
+    to: person/fyodor-dostoyevsky
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q7243
+  - type: influenced_by
+    to: person/george-eliot
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q7243
+  - type: influenced_by
+    to: person/henry-david-thoreau
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q7243
+  - type: influenced_by
+    to: person/jean-jacques-rousseau
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q7243
+  - type: influenced_by
+    to: person/nikolai-gogol
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q7243
+  - type: influenced_by
+    to: person/peter-kropotkin
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q7243
+  - type: influenced_by
+    to: person/pierre-joseph-proudhon
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q7243
+  - type: influenced_by
+    to: person/plato
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q7243
+  - type: influenced_by
+    to: person/the-buddha
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q7243
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/L.N.Tolstoy_Prokudin-Gorsky.jpg/1280px-L.N.Tolstoy_Prokudin-Gorsky.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:L.N.Tolstoy_Prokudin-Gorsky.jpg
+    license: Public domain
+    credit: Sergei Prokudin-Gorskii
+identifiers:
+  bnf: 11926775j
+  dodis: P27593
+  gnd: 11864291X
+  hls: "041481"
+  idref: "085948470"
+  kulturnav: c839883b-4743-4ed2-95e7-dea36a70a30f
+  lc: n79068416
+  nlk: KAC199627672
+  ulan: "500327036"
+  viaf: "96987389"
 sources:
   kind:
     - accessed: 2026-11-10
@@ -20,4 +192,8 @@ sources:
   death:
     - accessed: 2026-11-10
       property: P570
+      wikidata: Q7243
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
       wikidata: Q7243

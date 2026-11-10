@@ -1,0 +1,24 @@
+public_id: 117648
+name: Salamis Island
+kind: natural
+parent: greece
+country_code: GR
+location: [23.48528, 37.93806]
+wikidata_id: Q202422
+metadata:
+  sources: [Wikidata Q202422 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4105212-2
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q202422
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q202422
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q202422

@@ -1,0 +1,23 @@
+public_id: 117531
+name: Ralph Waldo Emerson
+given_name: Ralph Waldo
+family_name: Emerson
+kind: person
+birth: 1803-05-25
+death: 1882-04-27
+wikidata_id: Q48226
+metadata:
+  sources: [Wikidata Q48226 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q48226
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q48226
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q48226

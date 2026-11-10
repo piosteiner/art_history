@@ -1,0 +1,16 @@
+public_id: 117669
+name: Chamonix-Mont-Blanc
+kind: settlement
+location: [6.86889, 45.92222]
+wikidata_id: Q83236
+metadata:
+  sources: [Wikidata Q83236 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q83236
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q83236

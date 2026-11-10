@@ -1,0 +1,16 @@
+public_id: 117686
+name: Hammersmith
+kind: site
+location: [-0.2229, 51.4928]
+wikidata_id: Q277162
+metadata:
+  sources: [Wikidata Q277162 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q277162
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q277162

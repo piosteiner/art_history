@@ -1,0 +1,8 @@
+public_id: 117528
+kind: web
+name: Marine areas (1:50m, geography_marine_polys)
+container: Natural Earth
+url: https://www.naturalearthdata.com/downloads/50m-physical-vectors/50m-physical-labels/
+accessed: 2026-11-10
+reliability: database
+description_md: "Public domain map data: seas, oceans, bays and straits as polygons."

@@ -1,7 +1,8 @@
 public_id: 117476
 name: Los Angeles County
-kind: site
-parent: united-states
+kind: region
+designation: county of California
+parent: california
 country_code: US
 location: [-118.25, 34.05]
 wikidata_id: Q104994

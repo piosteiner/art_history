@@ -1,0 +1,28 @@
+public_id: 117643
+name: Attalus
+kind: person
+occupations: [philosopher]
+death: 1/100
+wikidata_id: Q780789
+metadata:
+  sources: [Wikidata Q780789 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/ancient-rome
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q780789
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q780789
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q780789
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q780789

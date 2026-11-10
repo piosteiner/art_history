@@ -1,0 +1,16 @@
+public_id: 117606
+name: Hyde Park Gate
+kind: street
+location: [-0.18272, 51.5004]
+wikidata_id: Q5953682
+metadata:
+  sources: [Wikidata Q5953682 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q5953682
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q5953682

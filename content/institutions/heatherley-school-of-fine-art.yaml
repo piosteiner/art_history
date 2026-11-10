@@ -1,0 +1,16 @@
+public_id: 117671
+name: Heatherley School of Fine Art
+kind: art academy
+founded: 1845
+wikidata_id: Q3369232
+metadata:
+  sources: [Wikidata Q3369232 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q3369232
+  founded:
+    - accessed: 2026-11-10
+      property: P571
+      wikidata: Q3369232

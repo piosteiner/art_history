@@ -1,0 +1,78 @@
+public_id: 117555
+name: Elias Lönnrot
+given_name: Elias
+family_name: Lönnrot
+kind: person
+occupations: [lexicographer, linguist, pedagogue, writer, poet, hymnwriter, physician writer, botanist, folklorist, physician, philologist, collector, literary scholar]
+birth: 1802-04-09
+death: 1884-03-19
+wikidata_id: Q153159
+metadata:
+  sources: [Wikidata Q153159 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/grand-duchy-of-finland
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q153159
+  - type: nationality
+    to: polity/sweden
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q153159
+  - type: born_in
+    to: place/sammatti-finland-kunta
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q153159
+  - type: died_in
+    to: place/sammatti-finland-kunta
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q153159
+  - type: lived_in
+    to: place/grand-duchy-of-finland
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q153159
+  - type: lived_in
+    to: place/hovelo
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q153159
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/28/Elias_L%C3%B6nnrot_portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Elias_L%C3%B6nnrot_portrait.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 11913312m
+  gnd: "118780301"
+  idref: "026993961"
+  kulturnav: ea270331-6352-433b-958d-bbc9f634a0ef
+  lc: n81027967
+  nlk: KAC201110179
+  viaf: "7393523"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q153159
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q153159
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q153159
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q153159

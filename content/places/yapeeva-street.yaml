@@ -1,0 +1,16 @@
+public_id: 117572
+name: Yapeeva Street
+kind: street
+location: [49.11614, 55.79969]
+wikidata_id: Q16274476
+metadata:
+  sources: [Wikidata Q16274476 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q16274476
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q16274476

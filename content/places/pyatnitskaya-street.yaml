@@ -1,0 +1,16 @@
+public_id: 117575
+name: Pyatnitskaya Street
+kind: street
+location: [37.62833, 55.73861]
+wikidata_id: Q4385954
+metadata:
+  sources: [Wikidata Q4385954 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q4385954
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q4385954

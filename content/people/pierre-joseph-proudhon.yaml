@@ -1,0 +1,23 @@
+public_id: 117587
+name: Pierre-Joseph Proudhon
+given_name: Pierre-Joseph
+family_name: Proudhon
+kind: person
+birth: 1809-01-15
+death: 1865-01-19
+wikidata_id: Q5749
+metadata:
+  sources: [Wikidata Q5749 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q5749
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q5749
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q5749

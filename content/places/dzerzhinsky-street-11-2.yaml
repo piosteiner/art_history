@@ -1,0 +1,16 @@
+public_id: 117573
+name: Dzerzhinsky Street, 11/2
+kind: building
+location: [49.11608, 55.79649]
+wikidata_id: Q55868448
+metadata:
+  sources: [Wikidata Q55868448 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q55868448
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q55868448

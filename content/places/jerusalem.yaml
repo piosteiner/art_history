@@ -1,0 +1,16 @@
+public_id: 117662
+name: Jerusalem
+kind: settlement
+location: [35.23416, 31.77668]
+wikidata_id: Q1218
+metadata:
+  sources: [Wikidata Q1218 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q1218
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q1218

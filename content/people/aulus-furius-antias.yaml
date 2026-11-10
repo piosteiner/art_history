@@ -1,0 +1,13 @@
+public_id: 117604
+name: Aulus Furius Antias
+given_name: Aulus Furius
+family_name: Antias
+kind: person
+wikidata_id: Q718196
+metadata:
+  sources: [Wikidata Q718196 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q718196

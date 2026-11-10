@@ -3,11 +3,44 @@ name: Paul Goodman
 given_name: Paul
 family_name: Goodman
 kind: person
+occupations: [writer, poet, psychotherapist, novelist, sociologist, literary critic, LGBTQ rights activist, political scientist, philosopher, pedagogue, university teacher]
 birth: 1911-09-09
 death: 1972-08-02
 wikidata_id: Q943567
 metadata:
   sources: [Wikidata Q943567 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q943567
+  - type: born_in
+    to: place/greenwich-village
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q943567
+  - type: died_in
+    to: place/north-stratford
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q943567
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Paul_Goodman%2C_1969.jpg/1280px-Paul_Goodman%2C_1969.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Goodman,_1969.jpg
+    license: Public domain
+    credit: Photo credited to Paul Hawken
+identifiers:
+  bnf: 12775027b
+  gnd: "118810022"
+  idref: "055276172"
+  lc: n79045067
+  nlk: KAC201765447
+  ulan: "500239647"
+  viaf: "14898058"
 sources:
   kind:
     - accessed: 2026-11-10
@@ -20,4 +53,8 @@ sources:
   death:
     - accessed: 2026-11-10
       property: P570
+      wikidata: Q943567
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
       wikidata: Q943567

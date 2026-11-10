@@ -1,0 +1,18 @@
+public_id: 117563
+name: Lewis Carroll
+given_name: Lewis
+family_name: Carroll
+birth: 1832-01-27
+death: 1898-01-14
+wikidata_id: Q38082
+metadata:
+  sources: [Wikidata Q38082 (retrieved 2026-11-10)]
+sources:
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q38082
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q38082

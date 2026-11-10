@@ -1,0 +1,16 @@
+public_id: 117607
+name: Lewes
+kind: site
+location: [0.01167, 50.87472]
+wikidata_id: Q246884
+metadata:
+  sources: [Wikidata Q246884 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q246884
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q246884

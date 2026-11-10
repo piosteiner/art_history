@@ -1,0 +1,16 @@
+public_id: 117674
+name: Grand Duchy of Finland
+kind: site
+location: [26, 64]
+wikidata_id: Q62633
+metadata:
+  sources: [Wikidata Q62633 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q62633
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q62633

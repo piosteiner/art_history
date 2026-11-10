@@ -1,0 +1,97 @@
+public_id: 117614
+name: Ovid
+names:
+  - lang: la
+    role: original
+    text: Publius Ovidius Naso
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q7198
+  - lang: nl
+    role: translation
+    text: Ovidius
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q7198
+  - lang: fr
+    role: translation
+    text: Ovide
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q7198
+  - lang: it
+    role: translation
+    text: Publio Ovidio Nasone
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q7198
+  - lang: es
+    role: translation
+    text: Ovidio
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q7198
+kind: person
+occupations: [poet, writer, mythographer, elegist]
+birth: -43
+death: 17
+wikidata_id: Q7198
+metadata:
+  sources: [Wikidata Q7198 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/ancient-rome
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q7198
+  - type: born_in
+    to: place/sulmona
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q7198
+  - type: died_in
+    to: place/tomis
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q7198
+  - type: lived_in
+    to: place/constanta
+    period: 8
+    period_label: from 8
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q7198
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Ovid_by_an_anonymous_sculptor.jpg/1280px-Ovid_by_an_anonymous_sculptor.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ovid_by_an_anonymous_sculptor.jpg
+    license: CC BY-SA 4.0
+    credit: Lucasaw
+identifiers:
+  bnf: "119183166"
+  gnd: "118590995"
+  idref: "027054764"
+  lc: n79041738
+  nlk: KAC199635783
+  ulan: "500246979"
+  viaf: "88342447"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q7198
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q7198
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q7198
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q7198

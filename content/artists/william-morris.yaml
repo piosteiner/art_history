@@ -1,0 +1,105 @@
+public_id: 117553
+name: William Morris
+given_name: William
+family_name: Morris
+names:
+  - text: William M. Morris
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q182589
+birth: 1834-03-24
+death: 1896-10-03
+wikidata_id: Q182589
+metadata:
+  sources: [Wikidata Q182589 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q182589
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q182589
+  - type: born_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q182589
+  - type: born_in
+    to: place/walthamstow
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q182589
+  - type: died_in
+    to: place/hammersmith
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q182589
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q182589
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q182589
+  - type: worked_in
+    to: place/oxford
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q182589
+  - type: worked_in
+    to: place/southern-england
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q182589
+  - type: associated_with
+    to: movement/arts-and-crafts-movement
+    sources:
+      - accessed: 2026-11-10
+        property: P135
+        wikidata: Q182589
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-10
+        property: P135
+        wikidata: Q182589
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/William_Morris_age_53.jpg/1280px-William_Morris_age_53.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:William_Morris_age_53.jpg
+    license: Public domain
+    credit: Frederick Hollyer
+identifiers:
+  bnf: 11916925b
+  gnd: "118584251"
+  idref: "027039218"
+  kulturnav: 4590e157-81c2-4b37-8014-e6e367e293aa
+  lc: n78095326
+  nlk: KAC199619403
+  rkd: "57860"
+  ulan: "500030629"
+  viaf: "22146194"
+sources:
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q182589
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q182589

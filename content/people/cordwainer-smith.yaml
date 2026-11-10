@@ -2,12 +2,63 @@ public_id: 117509
 name: Cordwainer Smith
 given_name: Cordwainer
 family_name: Smith
+names:
+  - kind: birth
+    lang: en
+    role: former
+    text: Paul Myron Anthony Linebarger
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q937000
+  - kind: pseudonym
+    role: alternative
+    text: Carmichael Smith
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q937000
+  - kind: pseudonym
+    role: alternative
+    text: Felix C. Forrest
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q937000
 kind: person
+occupations: [novelist, writer, psychologist, science fiction writer, military officer, soldier, diplomat]
 birth: 1913-07-11
 death: 1966-08-06
 wikidata_id: Q937000
 metadata:
   sources: [Wikidata Q937000 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q937000
+  - type: born_in
+    to: place/milwaukee
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q937000
+  - type: died_in
+    to: place/baltimore
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q937000
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/87/Cordwainer-Smith_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cordwainer-Smith_1.jpg
+    license: CC BY-SA 3.0
+    credit: Rosana Hart, Hartworks, Inc.
+identifiers:
+  bnf: "119250176"
+  gnd: "108347486"
+  idref: "027141721"
+  lc: n81083063
+  viaf: "79035897"
 sources:
   kind:
     - accessed: 2026-11-10
@@ -20,4 +71,8 @@ sources:
   death:
     - accessed: 2026-11-10
       property: P570
+      wikidata: Q937000
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
       wikidata: Q937000

@@ -1,0 +1,23 @@
+public_id: 117538
+name: Max Stirner
+given_name: Max
+family_name: Stirner
+kind: person
+birth: 1806-10-25
+death: 1856-06-26
+wikidata_id: Q76725
+metadata:
+  sources: [Wikidata Q76725 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q76725
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q76725
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q76725

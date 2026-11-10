@@ -1,0 +1,23 @@
+public_id: 117539
+name: Karl Marx
+given_name: Karl
+family_name: Marx
+kind: person
+birth: 1818-05-05
+death: 1883-03-14
+wikidata_id: Q9061
+metadata:
+  sources: [Wikidata Q9061 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q9061
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q9061
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q9061

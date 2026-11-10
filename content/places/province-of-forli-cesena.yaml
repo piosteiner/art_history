@@ -1,0 +1,24 @@
+public_id: 117637
+name: Province of Forlì-Cesena
+kind: region
+parent: emilia-romagna
+country_code: IT
+location: [12.04083, 44.2225]
+wikidata_id: Q16180
+metadata:
+  sources: [Wikidata Q16180 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4505871-4
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q16180
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q16180
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q16180

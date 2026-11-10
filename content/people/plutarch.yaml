@@ -1,0 +1,65 @@
+public_id: 117611
+name: Plutarch
+names:
+  - lang: la
+    role: original
+    text: L. Mestrius Plutarchus
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q41523
+kind: person
+occupations: [essayist, priest, magistrate, biographer, historian, writer, philosopher]
+birth: 45/50
+death: c. 120
+wikidata_id: Q41523
+metadata:
+  sources: [Wikidata Q41523 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/ancient-rome
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q41523
+  - type: born_in
+    to: place/chaeronea
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q41523
+  - type: died_in
+    to: place/chaeronea
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q41523
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/34/Plutarch_of_Chaeronea-03.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Plutarch_of_Chaeronea-03.jpg
+    license: CC BY-SA 3.0
+    credit: Odysses
+identifiers:
+  bnf: "119200813"
+  gnd: "118595237"
+  idref: "027076784"
+  lc: n79026763
+  nlk: KAC199635940
+  ulan: "500330563"
+  viaf: "268955446"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q41523
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q41523
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q41523
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q41523

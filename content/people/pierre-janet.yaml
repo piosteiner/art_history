@@ -2,12 +2,50 @@ public_id: 117512
 name: Pierre Janet
 given_name: Pierre
 family_name: Janet
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Pierre Marie Félix Janet
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q328758
 kind: person
+occupations: [philosopher, psychologist, professor, psychotherapist, neurologist, psychiatrist, physician]
 birth: 1859-05-30
 death: 1947-02-24
 wikidata_id: Q328758
 metadata:
   sources: [Wikidata Q328758 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q328758
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q328758
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q328758
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Janet%2C_Pierre_CIPB1848.jpg/1280px-Janet%2C_Pierre_CIPB1848.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Janet,_Pierre_CIPB1848.jpg
+    license: Licence Ouverte
+identifiers:
+  bnf: 13091496n
+  gnd: "118775928"
+  idref: 02693499X
+  lc: n50036704
+  viaf: "37053006"
 sources:
   kind:
     - accessed: 2026-11-10
@@ -20,4 +58,8 @@ sources:
   death:
     - accessed: 2026-11-10
       property: P570
+      wikidata: Q328758
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
       wikidata: Q328758

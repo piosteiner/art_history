@@ -1,0 +1,16 @@
+public_id: 117688
+name: Arts and Crafts movement
+kind: movement
+period: 1880
+wikidata_id: Q330369
+metadata:
+  sources: [Wikidata Q330369 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q330369
+  period:
+    - accessed: 2026-11-10
+      property: P580
+      wikidata: Q330369

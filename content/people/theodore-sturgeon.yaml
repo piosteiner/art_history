@@ -2,12 +2,70 @@ public_id: 117508
 name: Theodore Sturgeon
 given_name: Theodore
 family_name: Sturgeon
+names:
+  - kind: birth
+    lang: en
+    role: former
+    text: Edward Hamilton Waldo
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q240253
+  - kind: pseudonym
+    role: alternative
+    text: E. Waldo Hunter
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q240253
+  - kind: pseudonym
+    role: alternative
+    text: for Edward Hamilton Waldo
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q240253
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Ted
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q240253
+  - text: Ted Sturgeon
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q240253
 kind: person
+occupations: [novelist, literary scholar, autobiographer, writer, screenwriter, literary critic, science fiction writer, journalist, author]
 birth: 1918-02-26
 death: 1985-05-08
 wikidata_id: Q240253
 metadata:
   sources: [Wikidata Q240253 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q240253
+  - type: born_in
+    to: place/staten-island
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q240253
+  - type: died_in
+    to: place/eugene
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q240253
+identifiers:
+  bnf: "119256960"
+  gnd: "118799282"
+  idref: "027150933"
+  lc: n80066908
+  nlk: KAC201949100
+  viaf: "100257330"
 sources:
   kind:
     - accessed: 2026-11-10
@@ -20,4 +78,8 @@ sources:
   death:
     - accessed: 2026-11-10
       property: P570
+      wikidata: Q240253
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
       wikidata: Q240253

@@ -1,0 +1,22 @@
+public_id: 117650
+name: Pella
+kind: archaeological
+parent: pella-municipality
+country_code: GR
+location: [22.52564, 40.76003]
+wikidata_id: Q213679
+metadata:
+  sources: [Wikidata Q213679 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q213679
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q213679
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q213679

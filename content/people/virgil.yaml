@@ -1,11 +1,113 @@
 public_id: 117493
 name: Virgil
+names:
+  - lang: la
+    role: original
+    text: Publius Vergilius Maro
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q1398
+  - text: Swan of Mantua
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q1398
+  - text: Vergil
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q1398
+  - lang: nl
+    role: translation
+    text: Vergilius
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q1398
+  - lang: fr
+    role: translation
+    text: Virgile
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q1398
+  - lang: it
+    role: translation
+    text: Publio Virgilio Marone
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q1398
+  - lang: es
+    role: translation
+    text: Virgilio
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q1398
+  - lang: ja
+    role: translation
+    text: ウェルギリウス
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q1398
 kind: person
+occupations: [poet, writer]
 birth: -70
 death: -19
 wikidata_id: Q1398
 metadata:
   sources: [Wikidata Q1398 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/ancient-rome
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q1398
+  - type: born_in
+    to: place/andes
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q1398
+  - type: born_in
+    to: place/mantua
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q1398
+  - type: died_in
+    to: place/brindisi
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q1398
+  - type: influenced_by
+    to: person/aulus-furius-antias
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q1398
+  - type: influenced_by
+    to: person/homer
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q1398
+  - type: influenced_by
+    to: person/theocritus
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q1398
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Parco_della_Grotta_di_Posillipo5_%28crop%29.jpg/1280px-Parco_della_Grotta_di_Posillipo5_%28crop%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Parco_della_Grotta_di_Posillipo5_(crop).jpg
+    license: Public domain
+    credit: Armando Mancini
+identifiers:
+  bnf: 11887823w
+  gnd: "118626574"
+  idref: "026674327"
+  lc: n79014062
+  nlk: KAC199628865
+  ulan: "500337098"
+  viaf: "8194433"
 sources:
   kind:
     - accessed: 2026-11-10
@@ -18,4 +120,8 @@ sources:
   death:
     - accessed: 2026-11-10
       property: P570
+      wikidata: Q1398
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
       wikidata: Q1398

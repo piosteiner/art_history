@@ -2,12 +2,103 @@ public_id: 117501
 name: William Shakespeare
 given_name: William
 family_name: Shakespeare
+names:
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: The Bard of Avon
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q692
+  - lang: ja
+    role: translation
+    text: ウィリアム・シェイクスピア
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q692
 kind: person
+occupations: [playwright, poet, stage actor, writer, actor, dramaturge]
 birth: 1564-04
 death: 1616-05-03
 wikidata_id: Q692
 metadata:
   sources: [Wikidata Q692 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-england
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q692
+  - type: born_in
+    to: place/stratford-upon-avon
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q692
+  - type: died_in
+    to: place/stratford-upon-avon
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q692
+  - type: lived_in
+    to: place/stratford-upon-avon
+    period: 1564/1616
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q692
+  - type: influenced_by
+    to: person/christopher-marlowe
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q692
+  - type: influenced_by
+    to: person/ovid
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q692
+  - type: influenced_by
+    to: person/plautus
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q692
+  - type: influenced_by
+    to: person/plutarch
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q692
+  - type: influenced_by
+    to: person/seneca
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q692
+  - type: influenced_by
+    to: person/thomas-kyd
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q692
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Shakespeare.jpg/1280px-Shakespeare.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shakespeare.jpg
+    license: Public domain
+    credit: Attributed to John Taylor
+identifiers:
+  bnf: "119246079"
+  gnd: "118613723"
+  idref: "027136086"
+  kulturnav: 2258afd7-df8a-442c-83f6-99899894471f
+  lc: n78095332
+  nlk: KAC200000024
+  ulan: "500272240"
+  viaf: "96994048"
 sources:
   kind:
     - accessed: 2026-11-10
@@ -20,4 +111,8 @@ sources:
   death:
     - accessed: 2026-11-10
       property: P570
+      wikidata: Q692
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
       wikidata: Q692

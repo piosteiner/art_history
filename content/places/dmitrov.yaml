@@ -1,0 +1,16 @@
+public_id: 117590
+name: Dmitrov
+kind: site
+location: [37.53333, 56.35]
+wikidata_id: Q102334
+metadata:
+  sources: [Wikidata Q102334 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q102334
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q102334

@@ -2,12 +2,119 @@ public_id: 117504
 name: J. R. R. Tolkien
 given_name: J. R. R.
 family_name: Tolkien
+names:
+  - kind: pseudonym
+    role: alternative
+    text: Oxymore
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q892
+  - lang: en-GB
+    role: original
+    text: John Ronald Reuel Tolkien
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q892
 kind: person
+occupations: [linguist, poet, university teacher, children's writer, translator, literary critic, essayist, military officer, author, writer, historian, illustrator, teacher, prose writer, philologist, novelist, librettist, literary historian]
 birth: 1892-01-03
 death: 1973-09-02
 wikidata_id: Q892
 metadata:
   sources: [Wikidata Q892 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q892
+  - type: born_in
+    to: place/bloemfontein
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q892
+  - type: died_in
+    to: place/bournemouth
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q892
+  - type: lived_in
+    to: place/birmingham
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q892
+  - type: influenced_by
+    to: artist/edward-burne-jones
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q892
+  - type: influenced_by
+    to: person/edward-plunkett-18th-baron-of-dunsany
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q892
+  - type: influenced_by
+    to: person/edward-wyke-smith
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q892
+  - type: influenced_by
+    to: person/elias-lonnrot
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q892
+  - type: influenced_by
+    to: person/g-k-chesterton
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q892
+  - type: influenced_by
+    to: person/george-macdonald
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q892
+  - type: influenced_by
+    to: person/h-rider-haggard
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q892
+  - type: influenced_by
+    to: person/jules-verne
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q892
+  - type: influenced_by
+    to: artist/william-morris
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q892
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/J._R._R._Tolkien%2C_ca._1925.jpg/1280px-J._R._R._Tolkien%2C_ca._1925.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:J._R._R._Tolkien,_ca._1925.jpg
+    license: Public domain
+    credit: Unknown photo studio commissioned by Tolkien's students 1925/6 (private communication from Catherine McIlwaine, Tolkien Archivist, Bodleian Library)
+identifiers:
+  bnf: 11926763j
+  gnd: "118623222"
+  idref: "027164918"
+  lc: n79005673
+  nlk: KAC199627668
+  rkd: "309909"
+  ulan: "500112201"
+  viaf: "95218067"
 sources:
   kind:
     - accessed: 2026-11-10
@@ -20,4 +127,8 @@ sources:
   death:
     - accessed: 2026-11-10
       property: P570
+      wikidata: Q892
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
       wikidata: Q892

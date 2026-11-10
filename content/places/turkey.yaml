@@ -1,0 +1,26 @@
+public_id: 117647
+name: Turkey
+names:
+  - text: Republic of Türkiye
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q43
+kind: country
+country_code: TR
+boundary_code: TR
+location: [36, 39]
+wikidata_id: Q43
+metadata:
+  sources: [Wikidata Q43 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4061163-2
+  hls: "003374"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q43
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q43

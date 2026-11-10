@@ -1,0 +1,11 @@
+public_id: 117581
+name: The Buddha
+kind: person
+wikidata_id: Q9441
+metadata:
+  sources: [Wikidata Q9441 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q9441

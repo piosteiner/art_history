@@ -1,0 +1,33 @@
+public_id: 117624
+name: Association of Filmmakers of the USSR
+names:
+  - text: Cinematographers’ Union of the USSR
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q4430504
+  - text: Union of Filmmakers of the USSR
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q4430504
+kind: art society
+founded: 1957
+dissolved: 1991
+wikidata_id: Q4430504
+metadata:
+  sources: [Wikidata Q4430504 (retrieved 2026-11-10)]
+identifiers:
+  lc: n80137746
+  viaf: "301485974"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q4430504
+  founded:
+    - accessed: 2026-11-10
+      property: P571
+      wikidata: Q4430504
+  dissolved:
+    - accessed: 2026-11-10
+      property: P576
+      wikidata: Q4430504

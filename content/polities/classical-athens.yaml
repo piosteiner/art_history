@@ -1,0 +1,16 @@
+public_id: 117652
+name: Classical Athens
+names:
+  - text: Ancient Athens
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q844930
+period: -508/
+wikidata_id: Q844930
+metadata:
+  sources: [Wikidata Q844930 (retrieved 2026-11-10)]
+sources:
+  period:
+    - accessed: 2026-11-10
+      property: P571
+      wikidata: Q844930

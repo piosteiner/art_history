@@ -1,0 +1,104 @@
+public_id: 117550
+name: Jules Verne
+given_name: Jules
+family_name: Verne
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Jules Gabriel Verne
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q33977
+kind: person
+occupations: [novelist, playwright, poet, children's writer, writer, science fiction writer, Esperantist, futurist]
+birth: 1828-02-08
+death: 1905-03-24
+wikidata_id: Q33977
+metadata:
+  sources: [Wikidata Q33977 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q33977
+  - type: born_in
+    to: place/nantes
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q33977
+  - type: died_in
+    to: place/amiens
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q33977
+  - type: lived_in
+    to: place/nantes
+    period: 8 February 1828 – 1848
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q33977
+  - type: lived_in
+    to: place/paris
+    period: 1848/1871
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q33977
+  - type: lived_in
+    to: place/amiens
+    period: 1871-07/1905-03-24
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q33977
+  - type: lived_in
+    to: place/maison-de-jules-verne
+    period: 1882/1900
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q33977
+  - type: influenced_by
+    to: person/edgar-allan-poe
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q33977
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/F%C3%A9lix_Nadar_1820-1910_portraits_Jules_Verne.jpg/1280px-F%C3%A9lix_Nadar_1820-1910_portraits_Jules_Verne.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Nadar_1820-1910_portraits_Jules_Verne.jpg
+    license: Public domain
+    credit: Nadar
+identifiers:
+  bnf: 11928016k
+  dodis: P47038
+  gnd: "118626620"
+  idref: "027181685"
+  kulturnav: 65cfc290-dacb-4bf6-898d-b38d9d87b62c
+  lc: n79064013
+  nlk: KAC199628761
+  ulan: "500253402"
+  viaf: "76323989"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q33977
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q33977
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q33977
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q33977

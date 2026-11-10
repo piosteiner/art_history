@@ -1,0 +1,16 @@
+public_id: 117529
+name: Kaunas
+kind: settlement
+location: [23.93333, 54.9]
+wikidata_id: Q4115712
+metadata:
+  sources: [Wikidata Q4115712 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q4115712
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q4115712

@@ -122,6 +122,8 @@ interface DetailBase {
   /** The public number (API 085: from 100001, never changed) and the canonical address "/artworks/100476/<slug>". */
   public_id: number; path: string;
   wikidata_id: string | null;
+  /** Numbers in authority files (API 053: GND, ULAN, VIAF, LC, BnF …), each with its record's address when it has one. */
+  identifiers?: { authority: string; name: string; value: string; url: string | null }[];
   metadata: Record<string, unknown>;
   updated_at: string;
   relationships: Relationship[];

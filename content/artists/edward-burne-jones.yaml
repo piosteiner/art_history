@@ -1,0 +1,101 @@
+public_id: 117552
+name: Edward Burne-Jones
+given_name: Edward
+family_name: Burne-Jones
+names:
+  - lang: en
+    role: original
+    text: Edward Coley Burne-Jones
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q216406
+birth: 1833-08-28
+death: 1898-06-17
+wikidata_id: Q216406
+metadata:
+  sources: [Wikidata Q216406 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q216406
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q216406
+  - type: born_in
+    to: place/birmingham
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q216406
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q216406
+  - type: worked_in
+    to: place/birmingham
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q216406
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q216406
+  - type: influenced_by
+    to: artist/dante-gabriel-rossetti
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q216406
+  - type: member_of
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-11-10
+        property: P463
+        wikidata: Q216406
+  - type: associated_with
+    to: movement/pre-raphaelite-brotherhood
+    sources:
+      - accessed: 2026-11-10
+        property: P135
+        wikidata: Q216406
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-10
+        property: P135
+        wikidata: Q216406
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0f/Frederick_Hollyer_portrait_of_Edward_Burne-Jones_c1882.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Frederick_Hollyer_portrait_of_Edward_Burne-Jones_c1882.jpg
+    license: Public domain
+    credit: Frederick Hollyer
+identifiers:
+  bnf: 12142507q
+  dome: "50"
+  gnd: "118517767"
+  idref: "027627853"
+  kulturnav: 50e6a401-6edc-4bdc-805d-7d994ec3a2b6
+  lc: n79120945
+  rkd: "14292"
+  ulan: "500001381"
+  viaf: "59120251"
+sources:
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q216406
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q216406

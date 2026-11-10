@@ -1,16 +1,55 @@
 public_id: 117515
 name: University of Basel
+names:
+  - text: Universität Basel
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q372608
+  - text: Basel University
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q372608
+  - lang: fr
+    role: translation
+    text: Université de Bâle
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q372608
 kind: university
 founded: 1460-04-13
+place: basel
+location: [7.58346, 47.55852]
+website_url: https://www.unibas.ch/
 wikidata_id: Q372608
 metadata:
   sources: [Wikidata Q372608 (retrieved 2026-11-10)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Old_University_Basel.jpg/1280px-Old_University_Basel.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Old_University_Basel.jpg
+    license: Attribution
+    credit: Gulliveig
+identifiers:
+  bnf: "118679750"
+  gnd: 36146-X
+  hls: "010971"
+  idref: "026430940"
+  lc: n50079502
+  ulan: "500307532"
+  viaf: "155492003"
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
       wikidata: Q372608
+  place:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q372608
   founded:
     - accessed: 2026-11-10
       property: P571
+      wikidata: Q372608
+  location:
+    - accessed: 2026-11-10
+      property: P625
       wikidata: Q372608

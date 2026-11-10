@@ -1,0 +1,16 @@
+public_id: 117675
+name: Hövelö
+kind: site
+location: [27.62981, 64.27929]
+wikidata_id: Q97495910
+metadata:
+  sources: [Wikidata Q97495910 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q97495910
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q97495910

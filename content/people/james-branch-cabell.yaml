@@ -1,0 +1,23 @@
+public_id: 117558
+name: James Branch Cabell
+given_name: James Branch
+family_name: Cabell
+kind: person
+birth: 1879-04-14
+death: 1958-05-05
+wikidata_id: Q723374
+metadata:
+  sources: [Wikidata Q723374 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q723374
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q723374
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q723374

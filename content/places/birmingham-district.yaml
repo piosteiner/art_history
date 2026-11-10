@@ -1,0 +1,15 @@
+public_id: 117690
+name: City of Birmingham
+names:
+  - lang: en
+    role: alternative
+    text: Birmingham
+kind: region
+designation: metropolitan borough
+existed: since 1 April 1974
+parent: west-midlands
+country_code: GB
+location: [-1.89823, 52.48048]
+wikidata_id: Q20986424
+metadata:
+  sources: [Wikidata Q20986424 (retrieved 2026-11-10)]

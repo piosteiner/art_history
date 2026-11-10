@@ -1,0 +1,25 @@
+public_id: 117620
+name: Chu
+names:
+  - text: Kingdom of Chu
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q504759
+  - text: Kingdom of King
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q504759
+kind: country
+location: [112.17333, 30.42278]
+wikidata_id: Q504759
+metadata:
+  sources: [Wikidata Q504759 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q504759
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q504759

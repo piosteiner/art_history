@@ -1,0 +1,16 @@
+public_id: 117630
+name: Tomis
+kind: site
+location: [28.65848, 44.17288]
+wikidata_id: Q2441154
+metadata:
+  sources: [Wikidata Q2441154 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q2441154
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q2441154

@@ -1,0 +1,12 @@
+public_id: 117617
+name: Song
+names:
+  - lang: zh
+    role: translation
+    text: 宋國
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q1065073
+wikidata_id: Q1065073
+metadata:
+  sources: [Wikidata Q1065073 (retrieved 2026-11-10)]

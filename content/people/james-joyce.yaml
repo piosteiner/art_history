@@ -1,0 +1,23 @@
+public_id: 117564
+name: James Joyce
+given_name: James
+family_name: Joyce
+kind: person
+birth: 1882-02-02
+death: 1941-01-13
+wikidata_id: Q6882
+metadata:
+  sources: [Wikidata Q6882 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q6882
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q6882
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q6882

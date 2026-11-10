@@ -1,0 +1,23 @@
+public_id: 117557
+name: Jeffery Farnol
+given_name: Jeffery
+family_name: Farnol
+kind: person
+birth: 1878-02-10
+death: 1952-08-09
+wikidata_id: Q6175761
+metadata:
+  sources: [Wikidata Q6175761 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q6175761
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q6175761
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q6175761

@@ -3,11 +3,130 @@ name: Emma Goldman
 given_name: Emma
 family_name: Goldman
 kind: person
+occupations: [anarchist, journalist, political philosopher, women's rights activist, lecturer, publisher, peace activist, autobiographer, nurse, writer, philosopher, politician, author, pacifist, feminist]
 birth: 1869-06-27
 death: 1940-05-14
 wikidata_id: Q79969
 metadata:
   sources: [Wikidata Q79969 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q79969
+  - type: nationality
+    to: polity/lithuania
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q79969
+  - type: nationality
+    to: polity/russian-empire
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q79969
+  - type: nationality
+    to: polity/united-states
+    period: 1887/1908
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q79969
+  - type: nationality
+    to: polity/united-kingdom
+    period: 1925
+    period_label: from 1925
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q79969
+  - type: born_in
+    to: place/kaunas
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q79969
+  - type: died_in
+    to: place/toronto
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q79969
+  - type: influenced_by
+    to: person/friedrich-nietzsche
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q79969
+  - type: influenced_by
+    to: person/henry-david-thoreau
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q79969
+  - type: influenced_by
+    to: person/johann-most
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q79969
+  - type: influenced_by
+    to: person/karl-marx
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q79969
+  - type: influenced_by
+    to: person/mary-wollstonecraft
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q79969
+  - type: influenced_by
+    to: person/max-stirner
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q79969
+  - type: influenced_by
+    to: person/nikolay-chernyshevsky
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q79969
+  - type: influenced_by
+    to: person/oscar-wilde
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q79969
+  - type: influenced_by
+    to: person/peter-kropotkin
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q79969
+  - type: influenced_by
+    to: person/ralph-waldo-emerson
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q79969
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/03/Emma_Goldman_seated.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emma_Goldman_seated.jpg
+    license: Public domain
+    credit: Takuma Kajiwara
+identifiers:
+  bnf: 11905314k
+  gnd: "118540475"
+  idref: "026896036"
+  lc: n50034593
+  nlk: KAC201819712
+  viaf: "39377930"
 sources:
   kind:
     - accessed: 2026-11-10
@@ -20,4 +139,8 @@ sources:
   death:
     - accessed: 2026-11-10
       property: P570
+      wikidata: Q79969
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
       wikidata: Q79969

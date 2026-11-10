@@ -1,0 +1,16 @@
+public_id: 117608
+name: Monk's House
+kind: site
+location: [0.0165, 50.83867]
+wikidata_id: Q864197
+metadata:
+  sources: [Wikidata Q864197 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q864197
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q864197

@@ -1,0 +1,23 @@
+public_id: 117593
+name: Mikhail Bakunin
+given_name: Mikhail
+family_name: Bakunin
+kind: person
+birth: 1814-05-30
+death: 1876-06-13
+wikidata_id: Q27645
+metadata:
+  sources: [Wikidata Q27645 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q27645
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q27645
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q27645

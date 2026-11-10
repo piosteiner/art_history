@@ -1,0 +1,76 @@
+public_id: 117551
+name: H. Rider Haggard
+given_name: H. Rider
+family_name: Haggard
+names:
+  - lang: en
+    role: original
+    text: Henry Rider Haggard
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q237196
+  - text: Sir Henry Rider Haggard
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q237196
+kind: person
+occupations: [writer, novelist, screenwriter, science fiction writer, prose writer]
+birth: 1856-06-22
+death: 1925-05-14
+wikidata_id: Q237196
+metadata:
+  sources: [Wikidata Q237196 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q237196
+  - type: born_in
+    to: place/bradenham
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q237196
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q237196
+  - type: influenced_by
+    to: person/robert-louis-stevenson
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q237196
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Henry_Rider_Haggard_03.jpg/1280px-Henry_Rider_Haggard_03.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Henry_Rider_Haggard_03.jpg
+    license: Public domain
+    credit: Unknown (Bain News Service, publisher)
+identifiers:
+  bnf: "118864973"
+  gnd: 11870057X
+  idref: "026658194"
+  lc: n80010495
+  nlk: KAC199611208
+  viaf: "9841446"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q237196
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q237196
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q237196
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q237196

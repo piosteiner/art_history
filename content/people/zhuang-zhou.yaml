@@ -2,12 +2,55 @@ public_id: 117502
 name: Zhuang Zhou
 given_name: Zhuang
 family_name: Zhou
+names:
+  - lang: lzh
+    role: original
+    text: 莊子
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q47739
+  - text: Master Zhuang
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q47739
 kind: person
+occupations: [philosopher, writer, poet]
 birth: c. 369 BCE
 death: c. 288 BCE
 wikidata_id: Q47739
 metadata:
   sources: [Wikidata Q47739 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/song
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q47739
+  - type: born_in
+    to: place/shangqiu
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q47739
+  - type: influenced_by
+    to: person/laozi
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q47739
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Zhuangzi.png/1280px-Zhuangzi.png
+    source_url: https://commons.wikimedia.org/wiki/File:Zhuangzi.png
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 11887919x
+  gnd: "118520768"
+  idref: "026675560"
+  lc: n81055210
+  nlk: KAC200601687
+  viaf: "100166339"
 sources:
   kind:
     - accessed: 2026-11-10
@@ -20,4 +63,8 @@ sources:
   death:
     - accessed: 2026-11-10
       property: P570
+      wikidata: Q47739
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
       wikidata: Q47739

@@ -1,0 +1,23 @@
+public_id: 117532
+name: Friedrich Nietzsche
+given_name: Friedrich
+family_name: Nietzsche
+kind: person
+birth: 1844-10-15
+death: 1900-08-25
+wikidata_id: Q9358
+metadata:
+  sources: [Wikidata Q9358 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q9358
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q9358
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q9358

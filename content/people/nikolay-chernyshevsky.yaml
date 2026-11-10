@@ -1,0 +1,23 @@
+public_id: 117536
+name: Nikolay Chernyshevsky
+given_name: Nikolay
+family_name: Chernyshevsky
+kind: person
+birth: 1828-07-24
+death: 1889-10-29
+wikidata_id: Q192331
+metadata:
+  sources: [Wikidata Q192331 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q192331
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q192331
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q192331

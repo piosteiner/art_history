@@ -1,0 +1,23 @@
+public_id: 117583
+name: Arthur Schopenhauer
+given_name: Arthur
+family_name: Schopenhauer
+kind: person
+birth: 1788-02-22
+death: 1860-09-21
+wikidata_id: Q38193
+metadata:
+  sources: [Wikidata Q38193 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q38193
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q38193
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q38193

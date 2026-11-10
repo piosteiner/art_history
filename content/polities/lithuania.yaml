@@ -1,0 +1,16 @@
+public_id: 117530
+name: Lithuania
+period: 1990-03-11/
+country_codes: [LT]
+wikidata_id: Q37
+metadata:
+  sources: [Wikidata Q37 (retrieved 2026-11-10)]
+sources:
+  period:
+    - accessed: 2026-11-10
+      property: P571
+      wikidata: Q37
+  country_codes:
+    - accessed: 2026-11-10
+      property: P297
+      wikidata: Q37

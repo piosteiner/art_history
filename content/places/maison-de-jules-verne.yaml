@@ -1,0 +1,16 @@
+public_id: 117684
+name: Maison de Jules Verne
+kind: building
+location: [2.30203, 49.88794]
+wikidata_id: Q2415168
+metadata:
+  sources: [Wikidata Q2415168 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q2415168
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q2415168

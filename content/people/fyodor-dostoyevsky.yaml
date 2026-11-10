@@ -1,0 +1,23 @@
+public_id: 117580
+name: Fyodor Dostoyevsky
+given_name: Fyodor
+family_name: Dostoyevsky
+kind: person
+birth: 1821-11-11
+death: 1881-02-09
+wikidata_id: Q991
+metadata:
+  sources: [Wikidata Q991 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q991
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q991
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q991

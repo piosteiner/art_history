@@ -1,0 +1,33 @@
+public_id: 117658
+name: Pre-Raphaelite Brotherhood
+names:
+  - text: Pre-Raphaelites
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q184814
+  - text: Pre-Raphaelitism
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q184814
+  - lang: de
+    role: translation
+    text: Präraffaeliten
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q184814
+kind: movement
+period: 1848
+wikidata_id: Q184814
+metadata:
+  sources: [Wikidata Q184814 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4175547-9
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q184814
+  period:
+    - accessed: 2026-11-10
+      property: P580
+      wikidata: Q184814

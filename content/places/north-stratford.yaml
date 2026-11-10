@@ -1,0 +1,16 @@
+public_id: 117589
+name: North Stratford
+kind: site
+location: [-71.6286, 44.7517]
+wikidata_id: Q14705387
+metadata:
+  sources: [Wikidata Q14705387 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q14705387
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q14705387

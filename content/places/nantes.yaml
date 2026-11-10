@@ -1,0 +1,16 @@
+public_id: 117682
+name: Nantes
+kind: settlement
+location: [-1.55389, 47.21722]
+wikidata_id: Q12191
+metadata:
+  sources: [Wikidata Q12191 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q12191
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q12191

@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-10
 
+### Site: reference records folded on entry pages; places: Lyon, Los Angeles, Birmingham, the seas; Harschner
+- **What:** owner 2026-11-10. (1) The API sent each entry's authority numbers (`identifiers`) but the site showed only
+  the Wikidata number: now a folded box "Reference records (n)" with Wikidata first and every number linked to its
+  record (`referenceRecords()` in `frontend/src/views/detail.ts`; site test). (2) Places: Lyon's parent the new
+  Metropolis of Lyon (Q16665897, since 1 January 2015 — Rhône until 2014, in its text); Los Angeles County a region
+  (county of California) under California, Los Angeles under the county; Birmingham (Q2256, the city) under the new
+  City of Birmingham (Q20986424, metropolitan borough since 1974) under the new West Midlands (Q23124) under England;
+  the Mediterranean Sea and the Pacific Ocean kind natural, designation sea/ocean, no parent (Wikidata's "international
+  waters" is a legal status, not a containing place), their areas from Natural Earth's marine polygons, texts from
+  en.wikipedia. (3) Erhart Harschner (Kistler, the Heilig-Blut-Altar's casing 1499) and the altar's text — the "c. 1270"
+  on Wikidata is the reliquary cross in its crowning work (de.wikipedia St. Jakob).
+- **Revert:** `git revert` for the site; places and texts from their history pages.
+
 ### Numbers sorted as read (245); link previews that load; Berenger, Joachim of Fiore
 - **What:** owner 2026-11-10. (1) Migration 245: `entry_sort_key()` writes a leading number out in the name's
   language — `number_words(n, lang)` 0–9999 in en (also for no or another language), de, fr, es, it, nl, years as said

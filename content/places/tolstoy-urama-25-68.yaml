@@ -1,0 +1,16 @@
+public_id: 117574
+name: Tolstoy Urama, 25/68
+kind: building
+location: [49.13869, 55.79598]
+wikidata_id: Q56834344
+metadata:
+  sources: [Wikidata Q56834344 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q56834344
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q56834344

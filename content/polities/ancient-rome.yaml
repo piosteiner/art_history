@@ -1,0 +1,22 @@
+public_id: 117603
+name: Ancient Rome
+names:
+  - text: ancient Roman civilization
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q1747689
+  - lang: de
+    role: translation
+    text: Römisches Reich
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q1747689
+period: -753/476
+wikidata_id: Q1747689
+metadata:
+  sources: [Wikidata Q1747689 (retrieved 2026-11-10)]
+sources:
+  period:
+    - accessed: 2026-11-10
+      property: P571
+      wikidata: Q1747689

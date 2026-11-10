@@ -1,16 +1,52 @@
 public_id: 117514
 name: Gymnasium am Münsterplatz
+names:
+  - text: Humanistisches Gymnasium
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q1558284
+  - text: Gymnasium am Münsterplatz, Basel
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q1558284
 kind: school
 founded: 1589
+place: basel
+location: [7.59124, 47.55618]
+address: Münsterplatz 15, Postfach, 4001 Basel
+website_url: http://www.gmbasel.ch
 wikidata_id: Q1558284
 metadata:
   sources: [Wikidata Q1558284 (retrieved 2026-11-10)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Gymnasium_am_Muensterplatz_in_Base.JPG/1280px-Gymnasium_am_Muensterplatz_in_Base.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Gymnasium_am_Muensterplatz_in_Base.JPG
+    license: CC BY-SA 3.0
+    credit: --Wladyslaw Disk.
+identifiers:
+  bnf: 12290472m
+  gnd: 4222787-2
+  idref: "031746713"
+  lc: n91070870
+  viaf: "622145857997623021614"
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
       wikidata: Q1558284
+  place:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q1558284
+  address:
+    - accessed: 2026-11-10
+      property: P6375
+      wikidata: Q1558284
   founded:
     - accessed: 2026-11-10
       property: P571
+      wikidata: Q1558284
+  location:
+    - accessed: 2026-11-10
+      property: P625
       wikidata: Q1558284

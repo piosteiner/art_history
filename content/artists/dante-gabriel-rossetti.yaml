@@ -1,0 +1,110 @@
+public_id: 117659
+name: Dante Gabriel Rossetti
+given_name: Dante Gabriel
+family_name: Rossetti
+names:
+  - text: Gabriel Charles Dante Rossetti
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q186748
+birth: 1828-05-12
+death: 1882-04-09
+wikidata_id: Q186748
+metadata:
+  sources: [Wikidata Q186748 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q186748
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q186748
+  - type: born_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q186748
+  - type: died_in
+    to: place/birchington
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q186748
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q186748
+  - type: studied_at
+    to: institution/heatherley-school-of-fine-art
+    sources:
+      - accessed: 2026-11-10
+        property: P69
+        wikidata: Q186748
+  - type: studied_at
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-11-10
+        property: P69
+        wikidata: Q186748
+  - type: member_of
+    to: movement/pre-raphaelite-brotherhood
+    sources:
+      - accessed: 2026-11-10
+        property: P463
+        wikidata: Q186748
+  - type: associated_with
+    to: movement/pre-raphaelite-brotherhood
+    sources:
+      - accessed: 2026-11-10
+        property: P135
+        wikidata: Q186748
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-10
+        property: P135
+        wikidata: Q186748
+  - type: founded
+    to: movement/pre-raphaelite-brotherhood
+    sources:
+      - accessed: 2026-11-10
+        property: P112
+        wikidata: Q184814
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/-Dante_Gabriel_Rossetti-_MET_DP-386-287_%28cropped%29.jpg/1280px--Dante_Gabriel_Rossetti-_MET_DP-386-287_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:-Dante_Gabriel_Rossetti-_MET_DP-386-287_(cropped).jpg
+    license: CC0
+    credit: W. & D. Downey
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/72/Dante_Gabriel_Rossetti_001.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dante_Gabriel_Rossetti_001.jpg
+    license: Public domain
+    credit: Lewis Carroll
+identifiers:
+  bnf: 11983717w
+  dome: "5498"
+  gnd: "118749900"
+  idref: "027893057"
+  kulturnav: 80d0bc57-de16-498e-bb2e-b709095a7495
+  lc: n79117985
+  nlk: KAC201913274
+  rkd: "68363"
+  ulan: "500022594"
+  viaf: "41848725"
+sources:
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q186748
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q186748

@@ -1,0 +1,24 @@
+public_id: 117638
+name: Emilia-Romagna
+kind: region
+parent: italy
+country_code: IT
+location: [11, 44.75]
+wikidata_id: Q1263
+metadata:
+  sources: [Wikidata Q1263 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4014571-2
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q1263
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q1263
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q1263

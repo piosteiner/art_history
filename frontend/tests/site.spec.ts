@@ -3711,3 +3711,23 @@ test('a literary work\'s text: the original with furigana, the romanization and 
   expect((await text.locator('.lit-text-translation').innerText()).split('\n')).toEqual(['An old pond —', 'a frog jumps in:', 'the sound of water.']);
   await expect(text).toContainText('Own translation');
 });
+
+// Reference records (owner 2026-11-10): Wikidata and the authority files' numbers, linked, folded under one line
+test('reference records: folded, Wikidata first, each number linked to its record', async ({ page }) => {
+  await page.route(/\/v1\/glossary\/test-ref-term$/, (r) => r.fulfill({ json: {
+    type: 'term', slug: 'test-ref-term', name: 'Test Term', category: 'other', definition: 'a test',
+    alt_names: [], description_html: null, images: [], image_url: null, wikidata_id: 'Q42', metadata: {}, updated_at: '', glossary: {}, used_in: [], relationships: [], names: [],
+    identifiers: [
+      { authority: 'gnd', name: 'GND (Deutsche Nationalbibliothek)', value: '118540416', url: 'https://d-nb.info/gnd/118540416' },
+      { authority: 'x', name: 'Without address', value: '123', url: null },
+    ],
+  } }));
+  await page.goto('/glossary/test-ref-term');
+  const box = page.locator('details.ref-records');
+  await expect(box.locator('summary')).toHaveText('Reference records (3)');
+  await expect(box).not.toHaveAttribute('open', '');
+  await box.locator('summary').click();
+  await expect(box.locator('li').first()).toContainText('Wikidata: Q42');
+  await expect(box.locator('a', { hasText: '118540416' })).toHaveAttribute('href', 'https://d-nb.info/gnd/118540416');
+  await expect(box.locator('li', { hasText: 'Without address' }).locator('a')).toHaveCount(0);
+});

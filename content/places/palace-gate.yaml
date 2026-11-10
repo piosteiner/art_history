@@ -1,0 +1,16 @@
+public_id: 117668
+name: Palace Gate
+kind: street
+location: [-0.184, 51.5006]
+wikidata_id: Q55076531
+metadata:
+  sources: [Wikidata Q55076531 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q55076531
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q55076531

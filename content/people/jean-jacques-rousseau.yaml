@@ -1,0 +1,23 @@
+public_id: 117585
+name: Jean-Jacques Rousseau
+given_name: Jean-Jacques
+family_name: Rousseau
+kind: person
+birth: 1712-06-28
+death: 1778-07-02
+wikidata_id: Q6527
+metadata:
+  sources: [Wikidata Q6527 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q6527
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q6527
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q6527

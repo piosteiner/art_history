@@ -1,0 +1,175 @@
+public_id: 117661
+name: John Everett Millais
+given_name: John Everett
+family_name: Millais
+names:
+  - text: Sir John Everett Millais, Bt
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q159606
+birth: 1829-06-08
+death: 1896-08-13
+wikidata_id: Q159606
+metadata:
+  sources: [Wikidata Q159606 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q159606
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q159606
+  - type: born_in
+    to: place/southampton
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q159606
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q159606
+  - type: died_in
+    to: place/palace-gate
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q159606
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q159606
+  - type: worked_in
+    to: place/chamonix-mont-blanc
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q159606
+  - type: worked_in
+    to: place/dordrecht
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q159606
+  - type: worked_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q159606
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q159606
+  - type: worked_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q159606
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q159606
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q159606
+  - type: worked_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q159606
+  - type: studied_at
+    to: institution/heatherley-school-of-fine-art
+    sources:
+      - accessed: 2026-11-10
+        property: P69
+        wikidata: Q159606
+  - type: studied_at
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-11-10
+        property: P69
+        wikidata: Q159606
+  - type: member_of
+    to: institution/academy-of-arts-berlin
+    sources:
+      - accessed: 2026-11-10
+        property: P463
+        wikidata: Q159606
+  - type: member_of
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-11-10
+        property: P463
+        wikidata: Q159606
+  - type: member_of
+    to: institution/royal-society-of-portrait-painters
+    sources:
+      - accessed: 2026-11-10
+        property: P463
+        wikidata: Q159606
+  - type: associated_with
+    to: movement/pre-raphaelite-brotherhood
+    sources:
+      - accessed: 2026-11-10
+        property: P135
+        wikidata: Q159606
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-10
+        property: P135
+        wikidata: Q159606
+  - type: founded
+    to: movement/pre-raphaelite-brotherhood
+    sources:
+      - accessed: 2026-11-10
+        property: P112
+        wikidata: Q184814
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/14/Millais_-_Self-Portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Millais_-_Self-Portrait.jpg
+    license: Public domain
+    credit: John Everett Millais
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/47/JE_Millais_photo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:JE_Millais_photo.jpg
+    license: Public domain
+    credit: Tucker Collection
+identifiers:
+  bnf: "122101159"
+  dome: "5556"
+  gnd: "118783971"
+  idref: "030746892"
+  lc: n50041758
+  nlk: KAC202272863
+  rkd: "56135"
+  ulan: "500031367"
+  viaf: "51738621"
+sources:
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q159606
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q159606

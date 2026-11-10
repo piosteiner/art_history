@@ -2,12 +2,79 @@ public_id: 117495
 name: Virginia Woolf
 given_name: Virginia
 family_name: Woolf
+names:
+  - kind: birth
+    lang: en
+    role: former
+    text: Adeline Virginia Alexandra Stephen
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q40909
 kind: person
+occupations: [novelist, essayist, autobiographer, short story writer, diarist, literary critic, publisher, writer, women's rights activist, author]
 birth: 1882-01-25
 death: 1941-03-28
 wikidata_id: Q40909
 metadata:
   sources: [Wikidata Q40909 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    period: 1927-04-12
+    period_label: from 12 April 1927
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q40909
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    period: 1927-04-12
+    period_label: until 12 April 1927
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q40909
+  - type: born_in
+    to: place/hyde-park-gate
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q40909
+  - type: born_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q40909
+  - type: died_in
+    to: place/lewes
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q40909
+  - type: lived_in
+    to: place/monk-s-house
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q40909
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a6/Virginia_Woolf_1927.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Virginia_Woolf_1927.jpg
+    license: Public domain
+    credit: Unknown author
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/George_Charles_Beresford_-_Virginia_Woolf_in_1902_-_Restoration.jpg/1280px-George_Charles_Beresford_-_Virginia_Woolf_in_1902_-_Restoration.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:George_Charles_Beresford_-_Virginia_Woolf_in_1902_-_Restoration.jpg
+    license: Public domain
+    credit: George Charles Beresford / Adam Cuerden
+identifiers:
+  bnf: 11929398t
+  gnd: "118635174"
+  idref: "027199746"
+  lc: n79041870
+  nlk: KAC199630555
+  ulan: "500330927"
+  viaf: "39385478"
 sources:
   kind:
     - accessed: 2026-11-10
@@ -20,4 +87,8 @@ sources:
   death:
     - accessed: 2026-11-10
       property: P570
+      wikidata: Q40909
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
       wikidata: Q40909

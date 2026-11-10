@@ -1,0 +1,21 @@
+public_id: 117584
+name: Aristotle
+kind: person
+birth: -384
+death: -322
+wikidata_id: Q868
+metadata:
+  sources: [Wikidata Q868 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q868
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q868
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q868

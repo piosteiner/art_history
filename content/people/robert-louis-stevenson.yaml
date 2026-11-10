@@ -1,0 +1,23 @@
+public_id: 117566
+name: Robert Louis Stevenson
+given_name: Robert Louis
+family_name: Stevenson
+kind: person
+birth: 1850-11-13
+death: 1894-12-03
+wikidata_id: Q1512
+metadata:
+  sources: [Wikidata Q1512 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q1512
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q1512
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q1512

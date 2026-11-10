@@ -1,0 +1,17 @@
+public_id: 117547
+name: Birmingham
+kind: settlement
+parent: birmingham-district
+location: [-1.9025, 52.48]
+wikidata_id: Q2256
+metadata:
+  sources: [Wikidata Q2256 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q2256
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q2256

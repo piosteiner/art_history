@@ -1,0 +1,60 @@
+public_id: 117612
+name: Christopher Marlowe
+given_name: Christopher
+family_name: Marlowe
+kind: person
+occupations: [playwright, poet, translator, writer]
+birth: 1564-03-04
+death: 1593-06-09
+wikidata_id: Q28975
+metadata:
+  sources: [Wikidata Q28975 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-england
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q28975
+  - type: born_in
+    to: place/canterbury
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q28975
+  - type: died_in
+    to: place/deptford
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q28975
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Christopher_Marlowe.jpg/1280px-Christopher_Marlowe.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Christopher_Marlowe.jpg
+    license: Public domain
+    credit: anonymous
+identifiers:
+  bnf: "119146460"
+  gnd: "118578065"
+  idref: "027010856"
+  kulturnav: 72c1e614-7b5d-41ab-9830-542f51ea288c
+  lc: n78088956
+  nlk: KAC199617755
+  viaf: "32000005"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q28975
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q28975
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q28975
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q28975

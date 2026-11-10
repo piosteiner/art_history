@@ -1,0 +1,11 @@
+public_id: 117565
+name: Homer
+kind: person
+wikidata_id: Q6691
+metadata:
+  sources: [Wikidata Q6691 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q6691

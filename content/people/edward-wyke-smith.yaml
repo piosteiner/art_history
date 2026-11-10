@@ -1,0 +1,45 @@
+public_id: 117549
+name: Edward Wyke-Smith
+given_name: Edward
+family_name: Wyke-Smith
+names:
+  - text: Edward Augustine Wyke-Smith
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q2274359
+kind: person
+birth: 1871
+death: 1935
+wikidata_id: Q2274359
+metadata:
+  sources: [Wikidata Q2274359 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q2274359
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q2274359
+identifiers:
+  gnd: "1049594495"
+  lc: n95054118
+  viaf: "26310418"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q2274359
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q2274359
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q2274359

@@ -1,0 +1,23 @@
+public_id: 117568
+name: Marcel Schwob
+given_name: Marcel
+family_name: Schwob
+kind: person
+birth: 1867-08-23
+death: 1905-02-26
+wikidata_id: Q472697
+metadata:
+  sources: [Wikidata Q472697 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q472697
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q472697
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q472697

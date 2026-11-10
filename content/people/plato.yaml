@@ -1,0 +1,21 @@
+public_id: 117561
+name: Plato
+kind: person
+birth: -428/-427
+death: -348/-347
+wikidata_id: Q859
+metadata:
+  sources: [Wikidata Q859 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q859
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q859
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q859

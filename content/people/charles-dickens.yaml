@@ -1,0 +1,23 @@
+public_id: 117586
+name: Charles Dickens
+given_name: Charles
+family_name: Dickens
+kind: person
+birth: 1812-02-07
+death: 1870-06-09
+wikidata_id: Q5686
+metadata:
+  sources: [Wikidata Q5686 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q5686
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q5686
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q5686

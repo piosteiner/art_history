@@ -1,0 +1,16 @@
+public_id: 117602
+name: Brindisi
+kind: settlement
+location: [17.94583, 40.63833]
+wikidata_id: Q13496
+metadata:
+  sources: [Wikidata Q13496 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q13496
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q13496

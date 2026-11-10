@@ -1,0 +1,16 @@
+public_id: 117597
+name: Alameda
+kind: site
+location: [-122.25694, 37.76389]
+wikidata_id: Q490744
+metadata:
+  sources: [Wikidata Q490744 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q490744
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q490744

@@ -1,0 +1,16 @@
+public_id: 117681
+name: Bradenham
+kind: settlement
+location: [0.844, 52.64]
+wikidata_id: Q4954491
+metadata:
+  sources: [Wikidata Q4954491 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q4954491
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q4954491

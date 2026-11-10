@@ -1,0 +1,23 @@
+public_id: 117533
+name: Johann Most
+given_name: Johann
+family_name: Most
+kind: person
+birth: 1846-02-05
+death: 1906-03-17
+wikidata_id: Q213632
+metadata:
+  sources: [Wikidata Q213632 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q213632
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q213632
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q213632

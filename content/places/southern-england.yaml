@@ -1,0 +1,16 @@
+public_id: 117687
+name: Southern England
+kind: region
+location: [-1.5, 51.33333]
+wikidata_id: Q1134643
+metadata:
+  sources: [Wikidata Q1134643 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q1134643
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q1134643

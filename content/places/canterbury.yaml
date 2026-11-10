@@ -1,0 +1,24 @@
+public_id: 117627
+name: Canterbury
+kind: site
+parent: england
+country_code: GB
+location: [1.0775, 51.27833]
+wikidata_id: Q29303
+metadata:
+  sources: [Wikidata Q29303 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4009422-4
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q29303
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q29303
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q29303

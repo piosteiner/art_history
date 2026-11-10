@@ -1,0 +1,23 @@
+public_id: 117560
+name: Edgar Allan Poe
+given_name: Edgar Allan
+family_name: Poe
+kind: person
+birth: 1809-01-19
+death: 1849-10-07
+wikidata_id: Q16867
+metadata:
+  sources: [Wikidata Q16867 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q16867
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q16867
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q16867

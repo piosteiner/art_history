@@ -1,0 +1,16 @@
+public_id: 117577
+name: Denezhnyy Lane
+kind: street
+location: [37.58686, 55.74483]
+wikidata_id: Q4157894
+metadata:
+  sources: [Wikidata Q4157894 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q4157894
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q4157894

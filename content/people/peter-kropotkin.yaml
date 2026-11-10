@@ -2,12 +2,74 @@ public_id: 117500
 name: Peter Kropotkin
 given_name: Peter
 family_name: Kropotkin
+names:
+  - lang: ru
+    role: original
+    text: Пётр Алексе́евич Кропо́ткин
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q5752
+  - text: Pyotr Alexeyevich Kropotkin
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q5752
 kind: person
+occupations: [geographer, writer, explorer, philosopher, autobiographer, journalist, economist, anarchist, zoologist, politician, activist, propagandist, geomorphologist]
 birth: 1842-12-09
 death: 1921-02-08
 wikidata_id: Q5752
 metadata:
   sources: [Wikidata Q5752 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/russian-empire
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q5752
+  - type: nationality
+    to: polity/russian-socialist-federative-soviet-republic
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q5752
+  - type: nationality
+    to: polity/russian-soviet-federative-socialist-republic
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q5752
+  - type: born_in
+    to: place/moscow
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q5752
+  - type: died_in
+    to: place/dmitrov
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q5752
+  - type: influenced_by
+    to: person/mikhail-bakunin
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q5752
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/bb/Kropotkin1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kropotkin1.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 11910132z
+  gnd: "118567055"
+  hls: "028373"
+  idref: "029801834"
+  lc: n79033037
+  nlk: KAC199615518
+  viaf: "66469467"
 sources:
   kind:
     - accessed: 2026-11-10
@@ -20,4 +82,8 @@ sources:
   death:
     - accessed: 2026-11-10
       property: P570
+      wikidata: Q5752
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
       wikidata: Q5752

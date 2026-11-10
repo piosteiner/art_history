@@ -1,0 +1,16 @@
+public_id: 117673
+name: "Sammatti (Finland : Kunta)"
+kind: site
+location: [23.82083, 60.32083]
+wikidata_id: Q1003678
+metadata:
+  sources: [Wikidata Q1003678 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q1003678
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q1003678

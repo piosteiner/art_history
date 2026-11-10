@@ -1,0 +1,16 @@
+public_id: 117622
+name: Zhou dynasty
+names:
+  - text: Zhou Kingdom
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q35216
+period: c. 1046 BCE–c. 256 BCE
+wikidata_id: Q35216
+metadata:
+  sources: [Wikidata Q35216 (retrieved 2026-11-10)]
+sources:
+  period:
+    - accessed: 2026-11-10
+      property: P571
+      wikidata: Q35216

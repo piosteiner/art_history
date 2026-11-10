@@ -1,0 +1,25 @@
+public_id: 117516
+name: Arbon District
+kind: site
+parent: switzerland
+country_code: CH
+location: [9.43333, 47.51667]
+wikidata_id: Q546803
+metadata:
+  sources: [Wikidata Q546803 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4781895-5
+  hls: "001852"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q546803
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q546803
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q546803

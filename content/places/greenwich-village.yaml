@@ -1,0 +1,16 @@
+public_id: 117588
+name: Greenwich Village
+kind: site
+location: [-74.00278, 40.73361]
+wikidata_id: Q205380
+metadata:
+  sources: [Wikidata Q205380 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q205380
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q205380

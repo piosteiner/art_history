@@ -1,0 +1,23 @@
+public_id: 117537
+name: Oscar Wilde
+given_name: Oscar
+family_name: Wilde
+kind: person
+birth: 1854-10-16
+death: 1900-11-30
+wikidata_id: Q30875
+metadata:
+  sources: [Wikidata Q30875 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q30875
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q30875
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q30875

@@ -1,0 +1,16 @@
+public_id: 117600
+name: Eugene
+kind: settlement
+location: [-123.0925, 44.05222]
+wikidata_id: Q171224
+metadata:
+  sources: [Wikidata Q171224 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q171224
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q171224

@@ -2,12 +2,149 @@ public_id: 117505
 name: Jorge Luis Borges
 given_name: Jorge Luis
 family_name: Borges
+names:
+  - kind: birth
+    lang: es
+    role: former
+    text: Jorge Francisco Isidoro Luis Borges Acevedo
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q909
+  - kind: pseudonym
+    role: alternative
+    text: B. Suarez Lynch
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q909
+  - kind: pseudonym
+    role: alternative
+    text: H. Bustos Domecq
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q909
 kind: person
+occupations: [translator, librarian, literary critic, screenwriter, writer, poet, opinion journalist, essayist, short story writer, narrator, librettist]
 birth: 1899-08-24
 death: 1986-06-14
 wikidata_id: Q909
 metadata:
   sources: [Wikidata Q909 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/argentina
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q909
+  - type: born_in
+    to: place/buenos-aires
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q909
+  - type: died_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q909
+  - type: influenced_by
+    to: person/edgar-allan-poe
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q909
+  - type: influenced_by
+    to: person/h-g-wells
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q909
+  - type: influenced_by
+    to: person/hans-vaihinger
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q909
+  - type: influenced_by
+    to: person/homer
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q909
+  - type: influenced_by
+    to: person/james-joyce
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q909
+  - type: influenced_by
+    to: person/joseph-conrad
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q909
+  - type: influenced_by
+    to: artist/lewis-carroll
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q909
+  - type: influenced_by
+    to: person/macedonio-fernandez
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q909
+  - type: influenced_by
+    to: person/marcel-schwob
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q909
+  - type: influenced_by
+    to: person/oscar-wilde
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q909
+  - type: influenced_by
+    to: person/plato
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q909
+  - type: influenced_by
+    to: person/robert-louis-stevenson
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q909
+  - type: influenced_by
+    to: person/rudyard-kipling
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q909
+  - type: influenced_by
+    to: person/virgil
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q909
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Jorge_Luis_Borges_1951%2C_by_Grete_Stern_%28full%29.jpg/1280px-Jorge_Luis_Borges_1951%2C_by_Grete_Stern_%28full%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jorge_Luis_Borges_1951,_by_Grete_Stern_(full).jpg
+    license: Public domain
+    credit: Grete Stern
+identifiers:
+  bnf: 11892985q
+  gnd: "118513532"
+  idref: "026739917"
+  lc: n79007035
+  nlk: KAC199603014
+  ulan: "500006476"
+  viaf: "88919448"
 sources:
   kind:
     - accessed: 2026-11-10
@@ -20,4 +157,8 @@ sources:
   death:
     - accessed: 2026-11-10
       property: P570
+      wikidata: Q909
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
       wikidata: Q909

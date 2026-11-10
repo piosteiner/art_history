@@ -1,0 +1,59 @@
+public_id: 117548
+name: George MacDonald
+given_name: George
+family_name: MacDonald
+kind: person
+occupations: [writer, pastor, poet, novelist, journalist, theologian, philosopher, cleric]
+birth: 1824-12-10
+death: 1905-09-18
+wikidata_id: Q368519
+metadata:
+  sources: [Wikidata Q368519 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q368519
+  - type: born_in
+    to: place/huntly
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q368519
+  - type: died_in
+    to: place/ashtead
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q368519
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Portrait_of_George_MacDonald.jpg/1280px-Portrait_of_George_MacDonald.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_George_MacDonald.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 11913729f
+  gnd: "118780980"
+  idref: "026999323"
+  lc: n78096948
+  nlk: KAC200302312
+  viaf: "64008667"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q368519
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q368519
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q368519
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q368519

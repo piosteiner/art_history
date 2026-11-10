@@ -1,0 +1,16 @@
+public_id: 117570
+name: Yasnaya Polyana
+kind: building
+location: [37.52638, 54.07513]
+wikidata_id: Q749556
+metadata:
+  sources: [Wikidata Q749556 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q749556
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q749556

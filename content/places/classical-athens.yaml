@@ -1,0 +1,16 @@
+public_id: 117649
+name: Classical Athens
+kind: archaeological
+location: [23.72222, 37.97222]
+wikidata_id: Q844930
+metadata:
+  sources: [Wikidata Q844930 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q844930
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q844930

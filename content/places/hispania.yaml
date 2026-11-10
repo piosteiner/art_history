@@ -1,0 +1,16 @@
+public_id: 117655
+name: Hispania
+kind: region
+location: [-4.35, 40.21]
+wikidata_id: Q186513
+metadata:
+  sources: [Wikidata Q186513 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q186513
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q186513

@@ -1,0 +1,16 @@
+public_id: 117678
+name: Beaconsfield
+kind: settlement
+location: [-0.63468, 51.60087]
+wikidata_id: Q812906
+metadata:
+  sources: [Wikidata Q812906 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q812906
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q812906

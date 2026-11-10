@@ -1,0 +1,23 @@
+public_id: 117569
+name: Hans Vaihinger
+given_name: Hans
+family_name: Vaihinger
+kind: person
+birth: 1852-09-25
+death: 1933-12-18
+wikidata_id: Q76518
+metadata:
+  sources: [Wikidata Q76518 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q76518
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q76518
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q76518

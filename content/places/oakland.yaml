@@ -1,0 +1,16 @@
+public_id: 117556
+name: Oakland
+kind: settlement
+location: [-122.25, 37.8]
+wikidata_id: Q17042
+metadata:
+  sources: [Wikidata Q17042 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q17042
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q17042

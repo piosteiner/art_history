@@ -1,0 +1,16 @@
+public_id: 117595
+name: Johnstown
+kind: site
+location: [-104.92028, 40.33611]
+wikidata_id: Q2002961
+metadata:
+  sources: [Wikidata Q2002961 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q2002961
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q2002961

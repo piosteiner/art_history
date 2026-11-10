@@ -85,7 +85,7 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
             ${v.leadHtml ? html`<p class="lead citation">${trusted(v.leadHtml)}</p>` : ''}
             ${v.text ? html`<div class="prose">${trusted(v.text)}</div>` : ''}
             ${facts.length ? html`<dl class="facts">${facts.map(([k, value]) => html`<dt>${k}</dt><dd>${value}</dd>`)}</dl>` : ''}
-            ${e.wikidata_id ? html`<p class="muted small">Wikidata: <a href="https://www.wikidata.org/wiki/${e.wikidata_id}" target="_blank" rel="noopener">${e.wikidata_id}</a></p>` : ''}
+            ${referenceRecords(e)}
             ${v.extra}
             <div id="crossed-anchor"></div><section id="crossed" class="crossed" hidden></section>
             ${e.type === 'artwork' ? html`<section id="shared-hands" class="shared" hidden></section>` : ''}
@@ -254,4 +254,23 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
     observer?.disconnect();
     cleanup?.();
   };
+}
+
+/**
+ * The entry's numbers in Wikidata and the authority files (GND, ULAN, VIAF, LC, BnF …), each linked to its record —
+ * folded away under one line (owner 2026-11-10: "expandable and collapsable further links"). Only https addresses
+ * are links; a number without an address is shown as text.
+ */
+function referenceRecords(e: { wikidata_id: string | null; identifiers?: { authority: string; name: string; value: string; url: string | null }[] }) {
+  const rows = [
+    ...(e.wikidata_id ? [{ name: 'Wikidata', value: e.wikidata_id, url: `https://www.wikidata.org/wiki/${e.wikidata_id}` }] : []),
+    ...(e.identifiers ?? []).map((i) => ({ name: i.name, value: i.value, url: i.url && /^https:\/\//.test(i.url) ? i.url : null })),
+  ];
+  if (!rows.length) return '';
+  return html`<details class="ref-records">
+    <summary>Reference records <span class="muted">(${String(rows.length)})</span></summary>
+    <p class="muted small">This entry's numbers in Wikidata and in authority files — they say exactly who or what is meant and lead to curated records.</p>
+    <ul>${rows.map((r) => html`<li><strong>${r.name}</strong>: ${r.url
+      ? html`<a href="${r.url}" target="_blank" rel="noopener">${r.value} ↗</a>` : r.value}</li>`)}</ul>
+  </details>`;
 }

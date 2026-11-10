@@ -1,0 +1,23 @@
+public_id: 117567
+name: Macedonio Fernández
+given_name: Macedonio
+family_name: Fernández
+kind: person
+birth: 1874-06-01
+death: 1952-02-10
+wikidata_id: Q1334326
+metadata:
+  sources: [Wikidata Q1334326 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q1334326
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q1334326
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q1334326

@@ -1,0 +1,16 @@
+public_id: 117596
+name: Sausalito
+kind: site
+location: [-122.49028, 37.85778]
+wikidata_id: Q828729
+metadata:
+  sources: [Wikidata Q828729 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q828729
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q828729

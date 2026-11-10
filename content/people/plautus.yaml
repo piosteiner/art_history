@@ -1,0 +1,65 @@
+public_id: 117610
+name: Plautus
+names:
+  - lang: la
+    role: original
+    text: T. Maccius Plautus
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q47160
+kind: person
+occupations: [comedy writer, playwright, writer]
+birth: -250
+death: -184
+wikidata_id: Q47160
+metadata:
+  sources: [Wikidata Q47160 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/ancient-rome
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q47160
+  - type: born_in
+    to: place/sarsina
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q47160
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q47160
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e3/Plautus_18th_century_engraving_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Plautus_18th_century_engraving_(cropped).jpg
+    license: Public domain
+    credit: Pierre François Barrois
+identifiers:
+  bnf: 11887290c
+  gnd: "118594974"
+  idref: "026668092"
+  kulturnav: e07cbe18-71ed-46bd-b40d-c7f70a1ef1d9
+  lc: n80014980
+  nlk: KAC200209125
+  viaf: "66462281"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q47160
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q47160
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q47160
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q47160

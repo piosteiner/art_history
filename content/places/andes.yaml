@@ -1,0 +1,16 @@
+public_id: 117601
+name: Andes
+kind: settlement
+location: [10.82393, 45.1252]
+wikidata_id: Q491753
+metadata:
+  sources: [Wikidata Q491753 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q491753
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q491753

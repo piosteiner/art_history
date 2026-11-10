@@ -1,0 +1,101 @@
+public_id: 117618
+name: Laozi
+names:
+  - kind: pseudonym
+    role: alternative
+    text: Dan Li
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q9333
+  - kind: pseudonym
+    role: alternative
+    text: Er Li
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q9333
+  - kind: pseudonym
+    role: alternative
+    text: Tan Li
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q9333
+  - lang: zh
+    role: original
+    text: 老子
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q9333
+  - text: Old Boy
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q9333
+  - text: Old Lord
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q9333
+  - text: Old Master
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q9333
+  - text: Sage Ancestor
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q9333
+  - text: Venerable Master
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q9333
+kind: person
+occupations: [philosopher, archivist, writer, Taoist]
+wikidata_id: Q9333
+metadata:
+  sources: [Wikidata Q9333 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/zhou-dynasty
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q9333
+  - type: born_in
+    to: place/chu
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q9333
+  - type: born_in
+    to: place/zhoukou
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q9333
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6c/Zhang_Lu-Laozi_Riding_an_Ox_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Zhang_Lu-Laozi_Riding_an_Ox_(cropped).jpg
+    license: Public domain
+    credit: Zhang Lu
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fd/Laozi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Laozi.jpg
+    license: Public domain
+    credit: Laozi
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Stone_statue_of_Lao_Tzu_at_Qingyuanshan_%2820200930154018%29.jpg/1280px-Stone_statue_of_Lao_Tzu_at_Qingyuanshan_%2820200930154018%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Stone_statue_of_Lao_Tzu_at_Qingyuanshan_(20200930154018).jpg
+    license: CC BY-SA 4.0
+    credit: N509FZ
+identifiers:
+  bnf: 11911025n
+  gnd: "118569678"
+  idref: "026965402"
+  kulturnav: b3848047-0a71-4f4f-b1a7-ec2f050c4775
+  lc: n80044882
+  nlk: KAC199631272
+  viaf: "101089774"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q9333
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q9333

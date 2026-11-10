@@ -1,0 +1,16 @@
+public_id: 117672
+name: Birchington
+kind: settlement
+location: [1.305, 51.37694]
+wikidata_id: Q865021
+metadata:
+  sources: [Wikidata Q865021 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q865021
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q865021

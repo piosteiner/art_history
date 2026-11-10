@@ -1,0 +1,78 @@
+public_id: 117644
+name: Euripides
+names:
+  - lang: grc
+    role: original
+    text: Εὐριπίδης
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q48305
+kind: person
+occupations: [tragedy writer, playwright, writer, poet, philosopher]
+birth: -485/-480
+death: -407/-405
+wikidata_id: Q48305
+metadata:
+  sources: [Wikidata Q48305 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/classical-athens
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q48305
+  - type: born_in
+    to: place/classical-athens
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q48305
+  - type: born_in
+    to: place/salamis-island
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q48305
+  - type: died_in
+    to: place/macedonia
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q48305
+  - type: died_in
+    to: place/pella
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q48305
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Euripides_Pio-Clementino_Inv302.jpg/1280px-Euripides_Pio-Clementino_Inv302.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Euripides_Pio-Clementino_Inv302.jpg
+    license: Public domain
+    credit: Marie-Lan Nguyen
+identifiers:
+  bnf: "130914401"
+  gnd: "118531395"
+  idref: "026854775"
+  kulturnav: 11bb8f70-ba27-4cd1-bd6e-2f9783506057
+  lc: n79063679
+  nlk: KAC199608302
+  ulan: "500404157"
+  viaf: "265326651"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q48305
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q48305
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q48305
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q48305

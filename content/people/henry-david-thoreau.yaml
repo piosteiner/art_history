@@ -1,0 +1,23 @@
+public_id: 117534
+name: Henry David Thoreau
+given_name: Henry David
+family_name: Thoreau
+kind: person
+birth: 1817-07-12
+death: 1862-05-06
+wikidata_id: Q131149
+metadata:
+  sources: [Wikidata Q131149 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q131149
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q131149
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q131149

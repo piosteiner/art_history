@@ -1,0 +1,99 @@
+public_id: 117615
+name: Seneca
+names:
+  - lang: la
+    role: original
+    text: Lucius Annaeus Seneca
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q2054
+  - text: Lucius Annaeus Seneca the Younger
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q2054
+kind: person
+occupations: [playwright, poet, philosopher, aphorist, statesperson, politician, writer, naturalist, consul]
+birth: -8/1
+death: 65-04-10
+wikidata_id: Q2054
+metadata:
+  sources: [Wikidata Q2054 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/ancient-rome
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q2054
+  - type: born_in
+    to: place/corduba
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q2054
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q2054
+  - type: lived_in
+    to: place/corsica
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q2054
+  - type: lived_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-10
+        property: P551
+        wikidata: Q2054
+  - type: influenced_by
+    to: person/attalus
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q2054
+  - type: influenced_by
+    to: person/euripides
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q2054
+  - type: influenced_by
+    to: person/publilius-syrus
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q2054
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Duble_herma_of_Socrates_and_Seneca_Antikensammlung_Berlin_07.jpg/1280px-Duble_herma_of_Socrates_and_Seneca_Antikensammlung_Berlin_07.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Duble_herma_of_Socrates_and_Seneca_Antikensammlung_Berlin_07.jpg
+    license: CC BY-SA 3.0
+    credit: Calidius
+identifiers:
+  bnf: 11887555p
+  gnd: "118613200"
+  idref: "026670984"
+  lc: n79004229
+  nlk: KAC199624862
+  ulan: "500354133"
+  viaf: "61159234009903370471"
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q2054
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q2054
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q2054
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
+      wikidata: Q2054

@@ -1,11 +1,39 @@
 public_id: 117513
 name: C. G. Jung Institute Zürich
 founded: 1948
+place: kusnacht-zh
+location: [8.57917, 47.31556]
+address: Hornweg 28, 8700 Küsnacht
+website_url: https://www.junginstitut.ch
 wikidata_id: Q390130
 metadata:
   sources: [Wikidata Q390130 (retrieved 2026-11-10)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/aa/The_Jung_Institute%2C_Zurich_%281269063188%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Jung_Institute,_Zurich_(1269063188).jpg
+    license: CC BY-SA 2.0
+    credit: Steven Belcher from Oakland, United States
+identifiers:
+  bnf: 13888884m
+  gnd: 2006737-9
+  idref: "134467116"
+  lc: n50052976
+  ulan: "500312254"
+  viaf: "144888775"
 sources:
+  place:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q390130
+  address:
+    - accessed: 2026-11-10
+      property: P6375
+      wikidata: Q390130
   founded:
     - accessed: 2026-11-10
       property: P571
+      wikidata: Q390130
+  location:
+    - accessed: 2026-11-10
+      property: P625
       wikidata: Q390130

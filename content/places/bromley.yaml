@@ -1,0 +1,16 @@
+public_id: 117542
+name: Bromley
+kind: site
+location: [0.01831, 51.40644]
+wikidata_id: Q122892
+metadata:
+  sources: [Wikidata Q122892 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q122892
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q122892

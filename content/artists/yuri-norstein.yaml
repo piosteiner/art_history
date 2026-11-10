@@ -2,10 +2,56 @@ public_id: 117436
 name: Yuri Norstein
 given_name: Yuri
 family_name: Norstein
+names:
+  - text: Yury Borisovich Norshteyn
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q371337
+  - text: Yuri Borisovich Norstein
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q371337
+  - lang: de
+    role: translation
+    text: Juri Borissowitsch Norstein
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q371337
 birth: 1941-09-15
 wikidata_id: Q371337
 metadata:
   sources: [Wikidata Q371337 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/soviet-union
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q371337
+  - type: born_in
+    to: place/andreyevka
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q371337
+  - type: member_of
+    to: institution/association-of-filmmakers-of-the-ussr
+    sources:
+      - accessed: 2026-11-10
+        property: P463
+        wikidata: Q371337
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4f/Norstein2009-2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Norstein2009-2.jpg
+    license: CC BY-SA 3.0
+    credit: Андрей Романенко
+identifiers:
+  bnf: "144446345"
+  gnd: 13163626X
+  idref: "073709751"
+  lc: no2006014589
+  nlk: KAC200306648
+  viaf: "67605041"
 sources:
   birth:
     - accessed: 2026-11-10

@@ -1,0 +1,23 @@
+public_id: 117559
+name: Joseph Conrad
+given_name: Joseph
+family_name: Conrad
+kind: person
+birth: 1857-12-03
+death: 1924-08-03
+wikidata_id: Q82925
+metadata:
+  sources: [Wikidata Q82925 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q82925
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q82925
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q82925

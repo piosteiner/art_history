@@ -1,0 +1,128 @@
+public_id: 117660
+name: William Holman Hunt
+given_name: William Holman
+family_name: Hunt
+birth: 1827-04-02
+death: 1910-09-07
+wikidata_id: Q211763
+metadata:
+  sources: [Wikidata Q211763 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q211763
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q211763
+  - type: born_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q211763
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q211763
+  - type: worked_in
+    to: place/beirut
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q211763
+  - type: worked_in
+    to: place/cairo
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q211763
+  - type: worked_in
+    to: place/damascus
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q211763
+  - type: worked_in
+    to: place/istanbul
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q211763
+  - type: worked_in
+    to: place/jerusalem
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q211763
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q211763
+  - type: worked_in
+    to: place/nazareth
+    sources:
+      - accessed: 2026-11-10
+        property: P937
+        wikidata: Q211763
+  - type: studied_at
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-11-10
+        property: P69
+        wikidata: Q211763
+  - type: member_of
+    to: movement/pre-raphaelite-brotherhood
+    sources:
+      - accessed: 2026-11-10
+        property: P463
+        wikidata: Q211763
+  - type: associated_with
+    to: movement/pre-raphaelite-brotherhood
+    sources:
+      - accessed: 2026-11-10
+        property: P135
+        wikidata: Q211763
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-10
+        property: P135
+        wikidata: Q211763
+  - type: founded
+    to: movement/pre-raphaelite-brotherhood
+    sources:
+      - accessed: 2026-11-10
+        property: P112
+        wikidata: Q184814
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/70/William_Holman_Hunt_-_Selfportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:William_Holman_Hunt_-_Selfportrait.jpg
+    license: Public domain
+    credit: William Holman Hunt
+identifiers:
+  bnf: "121116779"
+  gnd: "118775332"
+  idref: "029502608"
+  lc: n83227381
+  rkd: "40652"
+  ulan: "500001633"
+  viaf: "220946936"
+sources:
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q211763
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q211763

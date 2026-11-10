@@ -1,0 +1,16 @@
+public_id: 117667
+name: Southampton
+kind: settlement
+location: [-1.40444, 50.90667]
+wikidata_id: Q79848
+metadata:
+  sources: [Wikidata Q79848 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q79848
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q79848

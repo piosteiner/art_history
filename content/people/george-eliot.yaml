@@ -1,0 +1,23 @@
+public_id: 117582
+name: George Eliot
+given_name: George
+family_name: Eliot
+kind: person
+birth: 1819-11-22
+death: 1880-12-22
+wikidata_id: Q131333
+metadata:
+  sources: [Wikidata Q131333 (retrieved 2026-11-10)]
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q131333
+  birth:
+    - accessed: 2026-11-10
+      property: P569
+      wikidata: Q131333
+  death:
+    - accessed: 2026-11-10
+      property: P570
+      wikidata: Q131333

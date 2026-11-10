@@ -2,12 +2,94 @@ public_id: 117496
 name: Jack Vance
 given_name: Jack
 family_name: Vance
+names:
+  - kind: birth
+    lang: en
+    role: alternative
+    text: John Holbrook Vance
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q312632
+  - kind: pseudonym
+    role: alternative
+    text: Ellery Queen
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q312632
+  - kind: pseudonym
+    role: alternative
+    text: Alan Wade
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q312632
+  - kind: pseudonym
+    role: alternative
+    text: Peter Held
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q312632
+  - kind: pseudonym
+    role: alternative
+    text: John van See
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q312632
+  - kind: pseudonym
+    role: alternative
+    text: Jay Kavanse
+    sources:
+      - accessed: 2026-11-10
+        wikidata: Q312632
 kind: person
+occupations: [writer, novelist, science fiction writer, sailor, electrician]
 birth: 1916-08-28
 death: 2013-05-26
 wikidata_id: Q312632
 metadata:
   sources: [Wikidata Q312632 (retrieved 2026-11-10)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-10
+        property: P27
+        wikidata: Q312632
+  - type: born_in
+    to: place/san-francisco
+    sources:
+      - accessed: 2026-11-10
+        property: P19
+        wikidata: Q312632
+  - type: died_in
+    to: place/oakland
+    sources:
+      - accessed: 2026-11-10
+        property: P20
+        wikidata: Q312632
+  - type: influenced_by
+    to: person/james-branch-cabell
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q312632
+  - type: influenced_by
+    to: person/jeffery-farnol
+    sources:
+      - accessed: 2026-11-10
+        property: P737
+        wikidata: Q312632
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/63/Jack_Vance_Boat_Skipper.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jack_Vance_Boat_Skipper.jpg
+    license: Public domain
+    credit: User Hayford Peirce on en.wikipedia
+identifiers:
+  bnf: "119276269"
+  gnd: "119317842"
+  idref: "027176673"
+  lc: n79021250
+  nlk: KAC202105994
+  viaf: "111614127"
 sources:
   kind:
     - accessed: 2026-11-10
@@ -20,4 +102,8 @@ sources:
   death:
     - accessed: 2026-11-10
       property: P570
+      wikidata: Q312632
+  occupations:
+    - accessed: 2026-11-10
+      property: P106
       wikidata: Q312632

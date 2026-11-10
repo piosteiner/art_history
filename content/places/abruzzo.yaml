@@ -1,0 +1,24 @@
+public_id: 117633
+name: Abruzzo
+kind: region
+parent: italy
+country_code: IT
+location: [13.83333, 42.21667]
+wikidata_id: Q1284
+metadata:
+  sources: [Wikidata Q1284 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 126262-2
+sources:
+  kind:
+    - accessed: 2026-11-10
+      property: P31
+      wikidata: Q1284
+  parent:
+    - accessed: 2026-11-10
+      property: P131
+      wikidata: Q1284
+  location:
+    - accessed: 2026-11-10
+      property: P625
+      wikidata: Q1284
