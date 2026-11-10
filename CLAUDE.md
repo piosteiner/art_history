@@ -24,11 +24,11 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 ## Workflow
 - Test environment for visitors (2026-10-31): test.arthistory.piogino.ch / admin.test… / api.test…, pm2 `arthistory-test` on
   its own cluster 18/test :5433, reset nightly from production (`scripts/test-env.sh`; server-docs/README.md → Test environment).
-- Dev: `cd backend && npm run dev` (port 3005, DB `arthistory_dev`). Never test against the live process.
+- Dev: `cd backend && npm run dev` (port 3011 — 3005 is grimoire's since 2026-11-08 —, DB `arthistory_dev`). Never test against the live process.
 - Content: the **database is the source of truth** (admin panel, audit_log history). `npm run export` → `content/` YAML
   snapshot to commit; `npm run import` only for bulk loads (export first — import overwrites; `-- --dry-run --diff` shows what would change). Deploys don't import.
 - Admin panel: `backend/src/admin/` — pages in `routes/*.js` (mounted in order by `index.js`), shared helpers in `core.js`; forms come from `src/content.js` (shared with import/export). Dev login:
-  `npm run admin:user:dev -- <name>`, then http://admin.localhost:3005/ (host-based routing). Markdown editor:
+  `npm run admin:user:dev -- <name>`, then http://admin.localhost:3011/ (host-based routing). Markdown editor:
   `src/admin/editor/` (CodeMirror 6; map picker = Leaflet + Geoman) → `npm run build:admin` → `static/editor.js`,
   `map.js`, `map.css` (git-ignored; `deploy.sh` builds them). `npm run dev` builds into `static-dev/` instead — this checkout
   is also production, so never run `npm run build:admin` by hand without deploying right after.

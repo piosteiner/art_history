@@ -6,7 +6,7 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "npm run build:admin:dev && DB_NAME=arthistory_dev PORT=3005 node --watch src/server.js",
+    "dev": "npm run build:admin:dev && DB_NAME=arthistory_dev PORT=3011 node --watch src/server.js",
     "migrate": "node scripts/migrate.js",
     "migrate:dev": "DB_NAME=arthistory_dev node scripts/migrate.js",
     "perf": "node perf/run.js",

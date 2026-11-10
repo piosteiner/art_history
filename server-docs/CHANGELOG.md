@@ -4,6 +4,41 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-10
 
+### Security review of all live projects — fixes (owner: "yes do everything")
+- **What:**
+  - **Quiz** (quiz-platform, pm2 quiz-backend): it ran without `SESSION_SECRET`, so sessions were signed with the
+    fixed fallback `'quiz-secret-key'` (anyone could forge a login). New secret in `~/.config/quiz-platform/quiz.env`
+    (600), loaded with dotenv; no fallback — the server does not start without it (everyone was logged out once).
+    Cookie `secure: 'auto'` + `trust proxy` loopback, httpOnly, SameSite=Lax. helmet with a CSP (scripts only from the
+    site; the three inline `onclick` handlers became listeners), compression, JSON body ≤ 1 MB. Player names and answers
+    escaped where the host sees them (`CommonUtils.sanitizeInput`); the server takes names of at most 30 characters
+    without `<` `>`. Login: 10 attempts per 15 minutes per address (express-rate-limit). Unused and test pages
+    (`debug-test.html`, `test-*.html`, old `app.js`, `js/`, `css/` …) moved out of the served folder to
+    `frontend-unused/`. `.env`/`.env.production` (old, unused secrets) now 600. No git commits there (the repo has none).
+  - **grimoire**: login limit (8 wrong passwords per address, then 15 minutes, checked before bcrypt; test added);
+    security headers with a CSP via `snippets/grimoire-headers.conf`; the inline theme script became `web/public/theme.js`;
+    privacy page: pictures from other websites. Commits 89cbbfd, 6dd2335 (local repo, no remote).
+  - **adenai CMS**: login limit as in grimoire, the password check no longer blocks the server (`bcrypt.compare`
+    instead of `compareSync`; a request without a username no longer crashes), security headers with a CSP in
+    `server.js`, the inline theme script → `admin-interface/v2/theme.js`; the unused `index-optimized.html` (Leaflet
+    from unpkg / jsdelivr `@master`, not in the privacy statement) deleted. Commit 7a4e74bd, pushed, `deploy.sh`.
+  - **justone**: headers with a CSP (`snippets/justone-headers.conf`), the privacy page's script → `privacy.js`.
+    Commit f5485da (not pushed: the GitHub repo does not exist yet).
+  - **File converter**: `conf.d/converter-limits.conf` + `limit_req`/`limit_conn` in api.piogino.ch `location /`.
+  - **nginx.conf**: gzip for proxied answers and the usual text types on every site.
+  - **Art history**: dev server port 3005 → 3011 (3005 is grimoire's).
+  - Found and **left to the owner**: the meetup scheduler's Firebase database can be listed and read (and probably
+    written) by anyone — its privacy statement says only those with a meetup's link. Rules to set in the Firebase
+    console: `{"rules": {".read": false, ".write": false, "meetups": {"$key": {".read": true, ".write": true}}}}`.
+  - Checked without findings: SQL in every app (placeholders or fixed column names), the file converter's FFmpeg calls
+    (argument lists, typed and listed values), uploads (types, sizes; grimoire re-encodes to WebP), OBS remote (key
+    compared in constant time, 128 bits), movies (CSP, signed cookies), tracked env files (no secrets).
+- **Why:** owner 2026-11-10 — check every live project for privacy gaps, shared improvements and security holes.
+- **Revert:** nginx — backups of the changed files in the session scratchpad; remove the `include snippets/…headers`
+  lines, `conf.d/converter-limits.conf` and the `limit_*` lines, comment the gzip lines again (`sudo nginx -t && sudo
+  systemctl reload nginx`). Apps — `git revert` of the named commits; the quiz from
+  `scratchpad/quiz-server-before.js` / `quiz-app-before.js` and moving `frontend-unused/*` back.
+
 ### End-to-end tests: the stand-in server moves from :3007 to :3017
 - **What:** the deploy of the emote commits failed before any e2e test ran: `EADDRINUSE 127.0.0.1:3007` — the pm2 app
   `movies` (`/var/www/movies-piogino`, started 2026-11-10 00:51) now listens there. Our fixture server (Wikidata,

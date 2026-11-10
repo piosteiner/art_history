@@ -13,8 +13,8 @@ npm test         # browser tests (Playwright) against the dev server → live AP
 ```
 
 Against the backend's dev server instead of the live API (frontend and backend changes tested together, before
-either is deployed): `API_TARGET=http://localhost:3005 npm run dev` (or `npm test`; also settable in `.env.local`).
-The prerender reads `API_BASE` the same way (`API_BASE=http://localhost:3005/v1 npm run prerender`).
+either is deployed): `API_TARGET=http://localhost:3011 npm run dev` (or `npm test`; also settable in `.env.local`).
+The prerender reads `API_BASE` the same way (`API_BASE=http://localhost:3011/v1 npm run prerender`).
 
 Optional: copy `.env.example` to `.env.local` and set `VITE_MAPTILER_KEY` for MapTiler tiles. Without a key the
 map uses OpenFreeMap (free, no key).

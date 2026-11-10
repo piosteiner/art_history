@@ -601,7 +601,7 @@ WHERE id = (SELECT max(id) FROM audit_log) AND old_row->k IS DISTINCT FROM new_r
 
 ## Databases
 - `arthistory` — production (pm2 `arthistory-api`, `npm run migrate`)
-- `arthistory_dev` — development (`npm run dev` on port 3005, `npm run migrate:dev`)
+- `arthistory_dev` — development (`npm run dev` on port 3011, `npm run migrate:dev`)
 
 Smoke test (runs as admin, rolls back): `psql -h localhost -U arthistory_admin -d arthistory_dev -f db/tests/schema_smoke.sql`
 

@@ -10,15 +10,27 @@ Every change to this server is recorded in [CHANGELOG.md](CHANGELOG.md) (newest 
 | Project | Path | Runtime | Port (local) | Public hostname | Data |
 |---|---|---|---|---|---|
 | adenai-map (pm2: adenai-cms) | /var/www/adenai-map/server | Node/Express, pm2 | 3001 | adenai-admin.piogino.ch | files |
-| calorie-tracker-api | /var/www/calorie-tracker-api | Node/Express, pm2 | 3000 | api.calorie-tracker.piogino.ch | MySQL `calorie_tracker` |
+| calorie-tracker-api | /var/www/calorie-tracker/backend | Node/Express, pm2 | 3000 | api.calorie-tracker.piogino.ch | MySQL `calorie_tracker` |
 | quiz-platform (pm2: quiz-backend) | /var/www/quiz-platform | Node/Express+socket.io, pm2 | 3002 | quiz.piogino.ch | SQLite |
 | obs-remote-media-controller (pm2: obs-remote-backend) | /var/www/obs-remote-media-controller/backend | Node/Express+socket.io, pm2 | 3003 | api.piogino.ch (sub-path) | SQLite |
 | file-converter (systemd: file-converter-api) | /var/www/file-converter/server | Flask/Gunicorn, systemd | 5000 | api.piogino.ch (frontend: converter.piogino.ch, GitHub Pages) | files |
 | arthistory (pm2: arthistory-api) | /var/www/arthistory/backend | Node/Express, pm2 | 3004 | api.arthistory / admin.arthistory.piogino.ch | PostgreSQL `arthistory` (+ `arthistory_dev`; tests: `arthistory_test`, `_1`, `_2` on :3006/:3008/:3009 while they run) |
 | arthistory test environment (pm2: arthistory-test) | /var/www/arthistory/backend (same code) + site in /var/www/arthistory-test/site | Node/Express, pm2 | 3010 | test.arthistory / admin.test.arthistory / api.test.arthistory.piogino.ch | PostgreSQL cluster `18/test` (:5433) `arthistory`, reset nightly — see "Test environment" |
 | justone (static) | /var/www/justone/public | nginx only (no process) | — | justone.piogino.ch | localStorage in the browser only |
+| grimoire (pm2: grimoire) | /var/www/grimoire/server (+ site in web/dist) | Node/Express, pm2 | 3005 | grimoire.piogino.ch (dnd.piogino.ch redirects) | SQLite |
+| movies (pm2: movies) | /var/www/movies-piogino/server | Node/Express, pm2 | 3007 | movies.piogino.ch | files |
 
 Shared: nginx (reverse proxy, certbot TLS; art history site config copied in `config/nginx/`), pm2 as user `ubuntu` (pm2-ubuntu.service). Both hostnames gzip JSON (`gzip_proxied any`).
+**Security headers, limits, compression (all sites, 2026-11-10):** `nginx.conf` compresses every site's text and JSON (also
+proxied answers; apps that compress themselves are left alone). `/etc/nginx/snippets/piogino-headers.conf` = the shared
+headers (HSTS, nosniff, Referrer-Policy, X-Frame-Options DENY, Permissions-Policy) — include it in the server block
+**and** in every location with its own `add_header` (nginx drops inherited ones there); per site with its CSP:
+`snippets/grimoire-headers.conf`, `snippets/justone-headers.conf` (copies in each repo's `deploy/`). Art history, the
+adenai CMS (`server.js`), the quiz (helmet), movies and the calorie tracker set their headers in the app. The file
+converter's new jobs are limited in `conf.d/converter-limits.conf` (POST only: 2 at a time, 30 a minute per address).
+Logins with an attempt limit: art history (fail2ban), adenai CMS and grimoire (8 wrong, then 15 minutes, in the app),
+quiz (10 per 15 minutes), movies and the calorie tracker (their own). The meetup scheduler (GitHub Pages + Firebase)
+depends on its database rules in the Firebase console — see CHANGELOG 2026-11-10.
 Databases (both localhost only): MySQL 8 (:3306, calorie-tracker) · PostgreSQL 18 + PostGIS 3.6 (:5432, art history; tuning in `config/postgresql/`).
 PostgreSQL extensions in `arthistory`: postgis, pg_trgm, unaccent, btree_gist, fuzzystrmatch, pg_stat_statements
 (preloaded since 2026-10-17). Slowest statements (as arthistory_owner):
@@ -92,6 +104,7 @@ The same CMS and site as production for people who want to try the project, rese
 
 ## Secrets
 Never in any git repo. Art history project: `~/.config/arthistory/*.env` + `backup-passphrase` (700/600). See CHANGELOG 2026-09-23 "Secrets policy".
+Quiz: `~/.config/quiz-platform/quiz.env` (SESSION_SECRET; the server does not start without it, since 2026-11-10).
 Admin panel: WebSocket `/live` (presence, drafts) proxied by nginx with Upgrade headers. Accounts in the `admin_users` table (scrypt) with a role (220): members (the site only — study sets, quiz results; also by sign-up at `/signup` while the CMS's Accounts page has it open), editors (the CMS), admins (also the Accounts page). The owner's password lives in their password manager only; a member who forgets theirs gets a new one from an admin (no e-mail is kept). NB fail2ban counts members' failed logins too — many people behind one address (a school) share the 5 tries.
 
 ## Source books (private)

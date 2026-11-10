@@ -12,7 +12,7 @@ public read API (entities, search, map GeoJSON, graph) at https://api.arthistory
 
 ## Run
 - Production: pm2 process `arthistory-api` (`ecosystem.config.js`). Deploy: `./deploy.sh`.
-- Development: `npm run dev` (port 3005, auto-reload). Never edit and test against the live process.
+- Development: `npm run dev` (port 3011, auto-reload). Never edit and test against the live process.
 - Config: secrets in `~/.config/arthistory/backend.env` (outside the repo) — see `.env.example` for the names.
 
 ## Database
@@ -27,7 +27,7 @@ definitions the import/export use, so a form save and a YAML import validate ide
 - Login: `admin_users` (scrypt hashes) + `admin_sessions` (only SHA-256 of the cookie token stored), cookie `HttpOnly`,
   `SameSite=Strict`, `Secure`; non-GET requests must carry the admin site's `Origin` (or, if the browser sends none,
   `Sec-Fetch-Site: same-origin`); `Referrer-Policy: same-origin` so browsers do send it. Old `/admin/…` URLs 301 to `/…`.
-  Dev: http://admin.localhost:3005/ (routing is by hostname; browsers resolve `*.localhost` to 127.0.0.1). 10 failed logins / 15 min per IP.
+  Dev: http://admin.localhost:3011/ (routing is by hostname; browsers resolve `*.localhost` to 127.0.0.1). 10 failed logins / 15 min per IP.
   Every failed login is a 401 on `POST /login`; fail2ban (jail `arthistory-admin`) bans the IP for 1 h after 5 in 10 min.
 - Markdown fields: CodeMirror 6 editor with live styling (`src/admin/editor/`, bundled by `npm run build:admin` into
   `static/editor.js`, git-ignored; `npm run dev` and `deploy.sh` build it). Preview = `POST /preview`, rendered by the
