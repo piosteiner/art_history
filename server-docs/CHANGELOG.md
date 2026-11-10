@@ -30,6 +30,8 @@ Format: date — what — why — how to revert.
   - Found and **left to the owner**: the meetup scheduler's Firebase database can be listed and read (and probably
     written) by anyone — its privacy statement says only those with a meetup's link. Rules to set in the Firebase
     console: `{"rules": {".read": false, ".write": false, "meetups": {"$key": {".read": true, ".write": true}}}}`.
+    **Set by the owner the same day**; checked from outside: the list of meetups → 401 "Permission denied", a single
+    meetup by its key → readable (an unknown key → `null`, 200).
   - Checked without findings: SQL in every app (placeholders or fixed column names), the file converter's FFmpeg calls
     (argument lists, typed and listed values), uploads (types, sizes; grimoire re-encodes to WebP), OBS remote (key
     compared in constant time, 128 bits), movies (CSP, signed cookies), tracked env files (no secrets).
