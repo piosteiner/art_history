@@ -37,7 +37,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   const target = env.API_TARGET || 'https://api.arthistory.piogino.ch';
   return {
-    plugins: [csp({ ...env, ...process.env } as Record<string, string>)],
+    plugins: [csp(env)],   // loadEnv with the prefix '' includes the environment (VITE_API_BASE of the test build)
     // MapLibre alone is ~1 MB minified: its own chunk (src/map.ts, loaded only by pages with a map).
     build: { chunkSizeWarningLimit: 1500 },
     server: {
