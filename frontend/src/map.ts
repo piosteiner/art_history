@@ -794,7 +794,11 @@ export function showClusters(map: MapLibre, fc: ClustersMap | null) {
     el.addEventListener('click', (ev) => {
       ev.stopPropagation();
       const [w, s, e, n] = f.bbox;
-      map.fitBounds([[w, s], [e, n]], { padding: 60, maxZoom: 8, duration: 700 });
+      // A group chained across a continent (Europe → the Middle East → India) has bounds that barely zoom in, and the
+      // same bubble comes back. Then zoom two levels towards the bubble's centre (its weight), so the group splits.
+      const fit = map.cameraForBounds([[w, s], [e, n]], { padding: 60, maxZoom: 8 });
+      if (fit?.zoom !== undefined && fit.zoom >= map.getZoom() + 1.5) map.fitBounds([[w, s], [e, n]], { padding: 60, maxZoom: 8, duration: 700 });
+      else map.easeTo({ center: f.geometry.coordinates, zoom: Math.min(8, map.getZoom() + 2), duration: 700 });
     });
     markers.push(new Marker({ element: el }).setLngLat(f.geometry.coordinates).addTo(map));
   }

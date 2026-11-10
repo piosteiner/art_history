@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-10
 
+### Site: a click on a chained map bubble zooms in for real
+- **What:** `frontend/src/map.ts` (start-map clusters, 091) — when fitting a bubble's bounds would zoom in less than
+  1.5 levels, the click eases two levels towards the bubble's centre instead.
+- **Why:** India (place created 2026-11-04) chains into the Europe bubble through the Middle East (`ST_ClusterDBSCAN`
+  links neighbour to neighbour), so its bounds reached 79° E: a click zoomed 1.6 → 2.47 and the same 578-place bubble
+  came back. It failed the Pages build of fb51a7a3 (site test "start map zoomed out"), so the reference records, link
+  previews and map thumbnails weren't live. Now 1.6 → 3.6, 65 bubbles.
+- **Revert:** the commit (map.ts only).
+
 ### Content: Kim Seo-kyung and Kim Eun-sung as two artists; Lambert of Saint-Omer completed
 - **What:** owner 2026-11-10 — (1) the joint artist "Kim Seo-kyung and Kim Eun-sung" (Q30514942, the pair) split
   like the Marukis: Kim Seo-kyung (Q118720090) and Kim Eun-sung (Q118720086) from their own items, the joint entry
