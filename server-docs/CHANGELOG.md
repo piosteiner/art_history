@@ -2,6 +2,25 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-11
+
+### Content: 28 artworks got their web page (Quality check `artwork_without_web_page`, 638 → 610)
+- **What:** (data only, via `withTx` = audited) web pages checked one by one before setting: SMB, Louvre, Dumbarton
+  Oaks, GNM (4), National Gallery (3); Met (6, from the Met's API — accession number and title compared); ColBase (5:
+  Buson, Kazan, Namban screens, Rakuchū-rakugai, Prince Shōtoku — with number, CC BY image, designation, cited to
+  ColBase); Rijksmuseum (3 — numbers from our images' Commons files, checked against the Rijksmuseum API, taken as
+  inventory numbers and cited to its page); in-situ works in France → their POP/Palissy register record (4: Sainte Foy
+  Conques, Dévot Christ Perpignan, Delacroix's Jacob in Saint-Sulpice, Belle Verrière Chartres).
+- **Fixes on the way:** inventory numbers the "Aus dem Wald" import had cited to the lecture (not on its slides) lost
+  that citation (Morgan Madonna, Dürer Samson block, Scipio, Stavelot triptych); Scipio's number was a Met jar's
+  (45.128.1 → 1997.26), Morgan Madonna → "16.32.194a, b", both cited to the Met. Sharaku's print had the Met's number
+  JP3112 from a Wikidata fill although it is not in the Met → number and citation removed (cause: P217 taken without
+  its P195 collection qualifier in the Wikidata fill).
+- **Why:** owner 2026-11-11 "work through 'Artwork without a web page'". Left: 194 works without a holder (films,
+  posters, monuments), churches and temples without an own page, and museums that refuse scripts (BM, Morgan,
+  Leopold, Geidai, Freer, Fitzwilliam, MFA Boston, Albertina, Tretyakov) — to be done by hand.
+- **Revert:** audit_log (source 'enrich' / admin user pio, 2026-11-11) → restore the rows' earlier versions.
+
 ## 2026-11-10
 
 ### Migration 246: a merge keeps the redirects of entries converted into the removed one
