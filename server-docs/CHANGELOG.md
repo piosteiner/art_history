@@ -4,6 +4,27 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-11
 
+### Content: Quality "Changed since cited" worked through (223 → 0) and auto-created entries checked (214 acknowledged)
+- **What:** (data only) `citation_outdated`: 219 citations confirmed (`cited_value` = the value now, `accessed` left
+  as it was) — 103 text/`written` citations were artefacts of `text_lang`/`written` joining those fields after they
+  were cited; the rest wording only (the Kunsthaus/Belvedere/SMB/Akademie media in the museums' German, colour/colours,
+  slight → light, terms normalised: willow → willow wood, wall-painting …) or values that grew with a second source
+  that covers the addition (lecture materials beside Wikidata's subset, the haiku definition's Wikipedia part, the BM's
+  "ganpi paper"). Four removed because the source no longer supports the value: Blaubeurer Hochaltar creator
+  (Wikidata Q105959098 names Gregor Erhart, we Michel Erhart after the lecture), Guo Xi *Early Spring* date (Wikidata
+  "circa 1072", the NPM 1072), Seuse *Exemplar* creator (field empty since 9 Nov), Solis *Erysichthon* title status
+  (the lecture's "velt"; now cited to the Rijksmuseum record whose title we use). Script `scratchpad/outdated.js`.
+  `auto_created`: an entry is acknowledged ("checked: … Wikidata Qx confirmed: linked in Wikidata with …") when it
+  is filled in like the hand-made entries of its type (people/artists dates, places location + parent/country,
+  institutions place, movements/polities period) and its Wikidata item is linked in Wikidata with the item of an entry
+  it is linked with here — for people, artists and institutions (matched by name, then filled from that item) only
+  the entry it was created from or its artworks count; countries, regions and polities never count. 214 new
+  acknowledgements; 1,177 stay open (747 people, mostly provenance names without an item; 165 institutions; 119
+  places; 58 terms without a definition). Script `scratchpad/auto-ack.js`, list of the open ones `auto-open.txt`.
+- **Why:** owner 2026-11-11.
+- **Revert:** `DELETE FROM quality_acks WHERE check_id = 'auto_created' AND acked_at::date = '2026-11-11'`; citations:
+  audit_log of `citations` (2026-11-11, source script).
+
 ### Content: 28 artworks got their web page (Quality check `artwork_without_web_page`, 638 → 610)
 - **What:** (data only, via `withTx` = audited) web pages checked one by one before setting: SMB, Louvre, Dumbarton
   Oaks, GNM (4), National Gallery (3); Met (6, from the Met's API — accession number and title compared); ColBase (5:
