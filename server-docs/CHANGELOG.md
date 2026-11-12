@@ -21,6 +21,13 @@ Format: date — what — why — how to revert.
   question (was it ever in the US?): new sources `artplatform-w624278` (MOMAT's record: "1970/4/9, アメリカ合衆国無期限貸与")
   and `kikuhata-1972-dear-foujita` (confiscated by the US military, returned 1970 as a "permanent loan"); loan since
   9 April 1970; the step's method = confiscation; open case narrowed to what is still unsourced.
+- **Also (seizures, 85 findings):** title passed by the law of the time → acknowledged with the reason (69: Albertina
+  1919, Napoleonic suppressions Brera/Accademia, French Revolution, Camera Apostolica 1607, Alba 1568, Medici,
+  Borghese 1617, Matsukata as enemy property 1944, US/Attu, "degenerate art" from state museums — 1938 law never
+  annulled). Nazi-era seizures → role possessor (12 steps: ERR 1941 ×7, Gestapo 1938 ×4, Welz/*Wally*). Keller,
+  *Adele von Le-Suire*: 2010 step = settlement with the Sommerguth heirs (as the Kunsthaus writes); Kokoschka,
+  *Ferdinand Bloch-Bauer* (he gave it himself 1942) and the Beethoven Frieze (Kunstrückgabebeirat 2015) acknowledged;
+  Degas after Delacroix (ERR 1944 → the Ellissen son 1959, how unknown) parked as an open case.
 - **Also (duplicates):** 12 pairs marked "not the same" (Hyakunin Isshu poems with the same first words, de/en
   Wikipedia articles, Niigata city/prefecture, Dessau/Dessau-Roßlau, Taejo/Laozi, sound-alike woods, the Sebastian
   block and its woodcut — now `printed_from`). Merged: the Sonezaki Wikipedia source, Carl von Reininghaus → Carl
