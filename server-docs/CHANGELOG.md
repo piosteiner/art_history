@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-12
 
+### Content: Quality round with the owner — the errors
+- **What:** (data only, audited) Wouwerman, *Halt zweier Reiter*: Fesch holds it until his death (13 May 1839), then a
+  step "estate of Cardinal Joseph Fesch" 1839–1844 (the Kunsthaus's "1844" = the estate's sale; noted). Strozzi,
+  *Santa Caterina*: the 1918–1929 step is the estate of Aldo Noseda (role estate; 1916 GND vs 1918 Kunsthaus noted —
+  open case 6 stays). Kabuki actors Onoe Kikugorō VII (Q11465093) and Ichimura Uzaemon XVII (Q11480517) linked and
+  filled; they and Robert G Sawers (BM vendor, no item) acknowledged. Boudin, *Berck* stays parked (open case 1).
+- **Why:** owner decided each error (2026-11-12).
+- **Revert:** the entries' history pages; delete the three `quality_acks` rows `auto:person:6281–6283`.
+
 ### Content: Hodler, Das Jungfraumassiv von Mürren aus — the 1939 dealer is the firm
 - **What:** (data only, audited) provenance step 814 (4–20 January 1939) pointed to Paul Cassirer (†1926) → the firm
   Paul Cassirer & Co., Amsterdam, as the Kunsthaus writes it (fixes `holder_after_death`). The gap Fritz Nathan →
