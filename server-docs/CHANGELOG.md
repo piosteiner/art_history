@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-12
 
+### Content: completion round 2 — the Art and Totalitarianism seminar (124 entries)
+- **What:** (data only, audited) long cited texts for the seminar's entries — fascist Italy and Sironi (28: Sironi
+  11,000 characters, the Sapienza mural 7,700, Mussolini, Piacentini, Novecento, the Mostra della Rivoluzione, the
+  mural manifesto, era fascista, romanità, squadrismo, New Man …), Futurism and Italian works (31: Futurism 11,000,
+  Balla, Boccioni, Prampolini, Depero, aeropittura works, Cambellotti, Guttuso …), Soviet art (35: Kalashnikov,
+  Groys, Rasmussen — the 1918 monuments decree, Tatlin, Malevich, Gerasimov, Mukhina, Socialist Realism,
+  Suprematism …), Weimar/Nazi art and colonialism (30: Dix, Grosz, Heartfield, Masereel, Thorak, Eber, Barlach,
+  Kirchner, Beckmann, Klee, Marc, the Kolonial exhibition 2024 …). Drafted from the readings (pypdf extracts and the
+  seminar slides/notes, printed pages) by four helpers without database access; checked before applying
+  (`apply-drafts.js`: links and sources exist, every paragraph cited, no current source dropped) and spot-checked
+  against the readings; one uncited sentence removed. 89 Wikipedia sources (revision-pinned) created.
+- **Why:** owner: complete all entries, readings first, three to five times longer.
+- **Revert:** the entries' history pages.
+
 ### Content: completion round 1 — Nazi art policy (owner's readings first)
 - **What:** (data only, audited) from the art-and-totalitarianism Session 05 readings — Peters 2017, Fulda & Soika
   2014 and Hermand 1994 (scans transcribed in the session scratchpad; new sources `fulda-soika-2014`, `hermand-1994`)
