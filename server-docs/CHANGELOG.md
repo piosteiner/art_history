@@ -4,6 +4,38 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-12
 
+### Content: the Kunsthaus import's Quality findings worked through (errors 5 → 0; duplicates, wrong types, missing dates)
+- **What:** (data only, audited) on the 768 works and the entries created with them:
+  - Feilchenfeldt: 6 steps of "Walter Feilchenfeldt (Kunsthandel)" 1950–1978 had gone to the father (†1953) → the firm;
+    2013/0016 and 2013/0017 → Walter Feilchenfeldt jun. (the source gives the father's life dates for 1993–2013; noted).
+  - The Koetser Foundation's works (KS …) write "Provenienz, <holder>, …, <date>" and "Kunsthandel, Versteigerung …,
+    11.IX.1820" — the planner had taken "Provenienz" as the holder: rule added (date to the front, Roman months, the
+    firm named in "(Kunsthandel)" as agent, else an unknown auction); 11 works removed and loaded again (new public
+    numbers — a day old), pictures again.
+  - Merged: Franz Rose von Döhlau, Galerie Thannhauser (Moderne Galerie Heinrich Thannhauser), Christie's (London,
+    Amsterdam, Monaco, Zürich, "Christie & Manson"), Buchholz Gallery/Curt Valentin Gallery, Galerie Nathan → Fritz und
+    Peter Nathan, Lempertz, Hermitage, Galerie Koller → Koller Auktionen, Galerie Helbing → Hugo Helbing, "Hôtel de
+    Ventes" → Hôtel Drouot, Jacques Rodrigues-Henriques, Johann Caspar Weidenmann; Arthur Calame and Johann Conrad
+    Zeller were people beside their artist entries → their steps point to the artists. Jan van de Velde II/III "not the
+    same". Converted institution → person: Andrew Hay, Jean-Baptiste-Pierre Lebrun, Trude Fischer, Martin Grosell.
+    "Copy after Claude Lorrain" was an artist → the work's attribution. "Vente François Boucher" (the estate sale 1771)
+    → unknown auction with that label; "Genossenschaft zum Baugarten und ein ungenannter Gönner" → the Genossenschaft +
+    label; Grev Wedels Plass → Grev Wedels Plass Auksjoner.
+  - Dates: the Kunsthaus's life notes of provenance holders ("*1865 Saint-Denis, +1939 Versailles") into empty
+    birth/death and born_in/died_in where we have the place (287 entries, cited to the page; 4 holders with
+    disagreeing notes left) — `khall/life.js`. Then Wikidata by name accepted only with the same birth year (and death
+    year ±1): 84 people, 20 artists (`person-q.js`, `artist-q.js`), filled with `fill-from-wikidata.js`; 59
+    institutions got the town their own steps name (when all agree), 10 filled from their items. Two anonymous masters
+    got the Kunsthaus's active period; the Bruges Ursula master Q617611.
+  - Source slips noted in the steps: De Pauw "1986" on one of four sister panels (he died 1984; the others say "before
+    1986" → so here too); Annemarie Boveri kept the bequeathed portrait as a loan from the Kunsthaus → custodian.
+  - Acknowledged: auto-created entries whose item is confirmed independently (the work's P170, or the Kunsthaus's birth
+    year) and that are filled; 15 firm names flagged "looks like a person".
+- **Left:** 134 works with a 1933–45 gap (the Kunsthaus's own record has none to give), 375 auto-created people without
+  a Wikidata item (104 of them dated from the Kunsthaus), 65 small firms without an item.
+- **Why:** owner 2026-11-12 "work through the new quality issues from the import … complete the entries where you can".
+- **Revert:** audit_log, 2026-11-12, user pio (sources admin/script).
+
 ### Content: Kunsthaus Zürich — every work with a free picture (768 new; 1,252 Kunsthaus works now)
 - **What:** the Kunsthaus's online collection (Solr `published`, 5,488 objects, read in pages of 200 — the server's
   maximum) matched with Wikidata (P217 *qualified by* P195 = Q685038, the Kunsthaus — not a bare inventory number) and
