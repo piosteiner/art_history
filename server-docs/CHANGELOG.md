@@ -12,6 +12,12 @@ Format: date — what — why — how to revert.
   filled; they and Robert G Sawers (BM vendor, no item) acknowledged. Boudin, *Berck* stays parked (open case 1).
 - **Why:** owner decided each error (2026-11-12).
 - **Revert:** the entries' history pages; delete the three `quality_acks` rows `auto:person:6281–6283`.
+- **Also (the small warnings):** Zumikon's point → OpenStreetMap (Wikidata Q66898's lies in Morocco); Monaco/Monte-Carlo
+  (no Monaco in Natural Earth), two seas, Disney/Dick (year-only boundaries), Verne (his house, now under Amiens),
+  "Fujiwara no Teika" (no surname split) acknowledged; "Bombing of Kobe in World War II" capitalised; Mühlberg's stray
+  other name "Marina in the night" removed; Ykens's birth label back to 1608 (GND/RKD); Foujita, *Final Fighting on
+  Attu*: owner United States (lender, indefinite loan from fiscal 1970 as the national museums' catalogue states;
+  web page = that record, the MOMAT address was 404), the earlier history parked as an open case.
 
 ### Content: Hodler, Das Jungfraumassiv von Mürren aus — the 1939 dealer is the firm
 - **What:** (data only, audited) provenance step 814 (4–20 January 1939) pointed to Paul Cassirer (†1926) → the firm
