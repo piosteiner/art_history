@@ -17,7 +17,10 @@ Format: date — what — why — how to revert.
   "Fujiwara no Teika" (no surname split) acknowledged; "Bombing of Kobe in World War II" capitalised; Mühlberg's stray
   other name "Marina in the night" removed; Ykens's birth label back to 1608 (GND/RKD); Foujita, *Final Fighting on
   Attu*: owner United States (lender, indefinite loan from fiscal 1970 as the national museums' catalogue states;
-  web page = that record, the MOMAT address was 404), the earlier history parked as an open case.
+  web page = that record, the MOMAT address was 404), the earlier history parked as an open case. On the owner's
+  question (was it ever in the US?): new sources `artplatform-w624278` (MOMAT's record: "1970/4/9, アメリカ合衆国無期限貸与")
+  and `kikuhata-1972-dear-foujita` (confiscated by the US military, returned 1970 as a "permanent loan"); loan since
+  9 April 1970; the step's method = confiscation; open case narrowed to what is still unsourced.
 - **Also (duplicates):** 12 pairs marked "not the same" (Hyakunin Isshu poems with the same first words, de/en
   Wikipedia articles, Niigata city/prefecture, Dessau/Dessau-Roßlau, Taejo/Laozi, sound-alike woods, the Sebastian
   block and its woodcut — now `printed_from`). Merged: the Sonezaki Wikipedia source, Carl von Reininghaus → Carl
