@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-12
 
+### Content: Reichsministerium für Volksaufklärung und Propaganda described
+- **What:** (data only, audited) institution 2619: description (its remit, Goebbels, the 1937 seizure decree for
+  Ziegler, the law of 31 May 1938, ~22,000 works, the Verwertung commission and its four dealers, Lucerne 1939, end
+  1941) cited to Peters 2017 (journal pages; owner's course reading) and the German Wikipedia (new source
+  `wikipedia-de-reichsministerium-fur-volksaufklarung-und-propaganda`, rev. 270603736); founded 13 March 1933,
+  address Wilhelmplatz 8/9, kind ministry; `participated_in` the Degenerate Art Exhibition (organiser) and the
+  Lucerne auction (consignor), cited.
+- **Why:** owner's request.
+- **Revert:** the entry's history page; delete the two relationships and the source.
+
 ### Content: Quality round with the owner — the errors
 - **What:** (data only, audited) Wouwerman, *Halt zweier Reiter*: Fesch holds it until his death (13 May 1839), then a
   step "estate of Cardinal Joseph Fesch" 1839–1844 (the Kunsthaus's "1844" = the estate's sale; noted). Strozzi,
