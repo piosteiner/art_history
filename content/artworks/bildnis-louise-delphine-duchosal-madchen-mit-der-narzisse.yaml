@@ -1,0 +1,113 @@
+public_id: 121248
+title_lang: de
+title: Bildnis Louise-Delphine Duchosal. Mädchen mit der Narzisse
+names:
+  - lang: en
+    role: translation
+    text: Portrait of Louise-Delphine Duchosal (Girl with the Daffodil)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5405/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Bildnis Louise-Delphine Duchosal
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5405/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: c. 1885
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [55, 46]
+institution: kunsthaus-zurich
+inventory_number: "2157"
+web_url: https://collection.kunsthaus.ch/de/collection/item/5405/
+on_loan: true
+on_loan_since: 1930
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q117536127
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/31/Ferdinand_Hodler_-_Bildnis_Louise-Delphine_Duchosal._M%C3%A4dchen_mit_der_Narzisse_-_2157_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Bildnis_Louise-Delphine_Duchosal._M%C3%A4dchen_mit_der_Narzisse_-_2157_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/willy-russ
+    acquired: 1917
+    ended: 1923
+    place: neunburg-vorm-wald
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5405/
+        note: "Footnote: Werkverzeichnis Bätschmann/Müller 2012 II.142-143.727, https://www.ferdinand-hodler.ch/Werke.aspx?id=6006417 [Zugriff: 06.01.2022]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/alfred-rutschi
+    ended: 1929
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5405/
+        note: "Footnote: Kunsthaus Zürich. Gesamtkatalog der Gemälde und Skulpturen, hrsg. von der Zürcher Kunstgesellschaft, Sammlungskatalog Kunsthaus Zürich, Ostfildern: Hatje Cantz, 2007, S. 276."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1930-08-30
+    ended: 1930-08-30
+    method: auction
+    direct: true
+    place: lucerne
+    label: Lot 77
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5405/
+        note: "Footnote: Auktion Galerie Fischer Luzern 30.08.1930, Lot 77, https://doi.org/10.11588/diglit.8666#0016 [Zugriff: 06.01.2021]; Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 5; Werkverzeichnis Bätschmann/Müller 2012, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1930-08-30
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5405/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.727
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5405/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5405/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5405/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5405/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5405/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5405/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5405/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5405/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,52 @@
+public_id: 121374
+name: Isaack Luttichuys
+given_name: Isaack
+family_name: Luttichuys
+birth: 1616-02-25
+death: 1673-03-06
+wikidata_id: Q864013
+metadata:
+  sources: [Wikidata Q864013 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q864013
+  - type: born_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q864013
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q864013
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q864013
+identifiers:
+  bnf: "162011852"
+  gnd: "118729780"
+  idref: "146511948"
+  kulturnav: 8bf9366a-b3c1-47c5-9351-adb5284495cb
+  lc: nr91035128
+  rkd: "51429"
+  ulan: "500006431"
+  viaf: "25397405"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q864013
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q864013

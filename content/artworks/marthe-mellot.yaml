@@ -1,0 +1,114 @@
+public_id: 121098
+title: Marthe Mellot
+names:
+  - lang: de
+    role: former
+    text: Bildnis der Schauspielerin Marthe Mellot
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3819/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: original
+    text: Portrait de Marthe Mellot
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3819/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: felix-vallotton
+created: 1898
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [73, 60]
+institution: kunsthaus-zurich
+inventory_number: "2461"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3819/
+on_loan: true
+on_loan_since: 1938
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q49019481
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/19/F%C3%A9lix_Vallotton_-_Marthe_Mellot_-_2461_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Vallotton_-_Marthe_Mellot_-_2461_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Félix Vallotton
+provenance:
+  - owner: person/marthe-natanson
+    co_owners: [person/alfred-natanson]
+    acquired: 1898
+    ended: 1898
+    method: commission
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3819/
+        note: "Footnote: Werkverzeichnis Ducrey 2005 II.242."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: artist/felix-vallotton
+    role: estate
+    method: inheritance
+    direct: true
+    label: Nr. 209
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3819/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-paul-vallotton
+    role: dealer
+    ended: 1938
+    place: lausanne
+    label: Nr. 695
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3819/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1938
+    method: purchase
+    direct: true
+    place: zurich
+    label: aus der Ausstellung im Kunsthaus Zürich 1938
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3819/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "242"
+    label: Ducrey (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3819/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3819/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3819/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3819/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3819/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3819/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3819/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3819/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

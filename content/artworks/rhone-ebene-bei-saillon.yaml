@@ -1,0 +1,68 @@
+public_id: 120506
+title_lang: de
+title: Rhone-Ebene bei Saillon
+creator: alfred-rehfous
+created: c. 1910
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [73, 92]
+institution: kunsthaus-zurich
+inventory_number: "1028"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2086/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131587414
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c8/Alfred_Rehfous_-_Rhone-Ebene_bei_Saillon_-_1028_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Alfred_Rehfous_-_Rhone-Ebene_bei_Saillon_-_1028_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Alfred Rehfous
+provenance:
+  - owner: person/stephanie-aymon
+    acquired: 1912-06-28
+    ended: 1913
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2086/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1913
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2086/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2086/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2086/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2086/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2086/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2086/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2086/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2086/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

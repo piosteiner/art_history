@@ -1,0 +1,41 @@
+public_id: 120845
+name: St. Moritz
+names:
+  - lang: fr
+    role: translation
+    text: Saint-Moritz
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q68986
+  - lang: it
+    role: translation
+    text: San Maurizio
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q68986
+  - lang: ru
+    role: translation
+    text: Са́нкт-Мо́риц
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q68986
+kind: settlement
+parent: graubunden
+country_code: CH
+location: [9.83778, 46.49722]
+wikidata_id: Q68986
+metadata:
+  sources: [Wikidata Q68986 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q68986
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q68986
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q68986

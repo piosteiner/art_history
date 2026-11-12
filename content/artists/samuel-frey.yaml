@@ -1,0 +1,36 @@
+public_id: 120191
+name: Samuel Frey
+given_name: Samuel
+family_name: Frey
+birth: 1785
+death: 1836
+wikidata_id: Q26278896
+metadata:
+  sources: [Wikidata Q26278896 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q26278896
+  - type: died_in
+    to: place/basel
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q26278896
+identifiers:
+  gnd: "1038795923"
+  rkd: "127341"
+  sikart: "4032271"
+  viaf: "305156320"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q26278896
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q26278896

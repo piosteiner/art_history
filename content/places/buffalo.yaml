@@ -1,0 +1,53 @@
+public_id: 121352
+name: Buffalo
+names:
+  - lang: ja
+    role: translation
+    text: バッファロー
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q40435
+  - lang: zh
+    role: translation
+    text: 水牛城
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q40435
+  - lang: ko
+    role: translation
+    text: 버펄로
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q40435
+  - lang: es
+    role: translation
+    text: Búfalo
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q40435
+  - lang: ru
+    role: translation
+    text: Буффало
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q40435
+kind: settlement
+parent: new-york
+country_code: US
+location: [-78.87806, 42.88639]
+wikidata_id: Q40435
+metadata:
+  sources: [Wikidata Q40435 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q40435
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q40435
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q40435

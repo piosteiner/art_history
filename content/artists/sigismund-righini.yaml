@@ -1,0 +1,58 @@
+public_id: 120657
+name: Sigismund Righini
+given_name: Sigismund
+family_name: Righini
+birth: 1870-01-04
+death: 1937-10-24
+wikidata_id: Q18508647
+metadata:
+  sources: [Wikidata Q18508647 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/german-reich
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q18508647
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q18508647
+  - type: born_in
+    to: place/stuttgart
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q18508647
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q18508647
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3f/Sigismund_Righini_Selbstbildnis_des_K%C3%BCnstlers_mit_Brissago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sigismund_Righini_Selbstbildnis_des_K%C3%BCnstlers_mit_Brissago.jpg
+    license: Public domain
+    credit: Sigismund Righini
+identifiers:
+  dome: "3248"
+  gnd: "119150352"
+  hls: "022593"
+  idref: "122093275"
+  lc: n95026204
+  rkd: "66911"
+  sikart: "4022943"
+  ulan: "500107043"
+  viaf: "18025349"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q18508647
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q18508647

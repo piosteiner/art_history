@@ -38,6 +38,12 @@ relationships:
       - accessed: 2026-11-03
         property: P802
         wikidata: Q621994
+  - type: student_of
+    to: artist/francois-diday
+    sources:
+      - accessed: 2026-11-12
+        property: P802
+        wikidata: Q686742
 identifiers:
   bnf: 15017733n
   gnd: "124175511"

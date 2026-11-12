@@ -1,0 +1,51 @@
+public_id: 120920
+name: Friedrich Rehberg
+given_name: Friedrich
+family_name: Rehberg
+birth: 1758-10-22
+death: 1835-08-20
+wikidata_id: Q5503892
+metadata:
+  sources: [Wikidata Q5503892 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q5503892
+  - type: born_in
+    to: place/hanover
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q5503892
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q5503892
+  - type: worked_in
+    to: place/hanover
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q5503892
+identifiers:
+  bnf: 14972819t
+  gnd: "116391693"
+  idref: "204605628"
+  lc: nr93032989
+  rkd: "66023"
+  ulan: "500027189"
+  viaf: "47035308"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q5503892
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q5503892

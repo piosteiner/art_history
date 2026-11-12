@@ -1,0 +1,131 @@
+public_id: 120131
+title_lang: de
+title: Drei Faune mit Kuh und Kalb
+names:
+  - lang: en
+    role: translation
+    text: Three Fauns with Cow and Calf
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: rudolf-koller
+created: 1900
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [172.5, 226]
+institution: kunsthaus-zurich
+inventory_number: ZKG.2023/0036
+web_url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585252
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/61/Rudolf_Koller_-_Drei_Faune_mit_Kuh_und_Kalb_-_ZKG.2023-0036_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Rudolf_Koller_-_Drei_Faune_mit_Kuh_und_Kalb_-_ZKG.2023-0036_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Rudolf Koller
+provenance:
+  - owner_label: private collection
+    ended: 1930 or earlier
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+        note: "Footnote: E-Mail-Korrespondenz Familie Niggli, 19.04.2023, ZKG/KHZ, Inventarbogen/Werkdossier Slg.: Laut Angaben der Familie mindestens seit 1930 in Familienbesitz."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    acquired: 1930 or earlier
+    ended: 1958
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+        note: "Footnote: E-Mail-Korrespondenz, wie oben Fussnote 3. Das Gemälde befand sich weiterhin in Besitz der Familie Niggli."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/johannes-bernhard-niggli
+    acquired: 1958
+    ended: 2019
+    method: inheritance
+    direct: true
+    place: zollikon
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+        note: "Footnote: E-Mail-Korrespondenz, wie oben Fussnote 3; Kat. Helmhaus Zürich 1966, Nr. 118, o. S.: «Dr. H.B.N., Zollikon». Das Gemälde befand sich weiterhin in Besitz der Familie Niggli."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/koller-auktionen
+    role: agent
+    acquired: 2012-12-07
+    ended: 2012-12-07
+    method: auction
+    direct: true
+    place: zurich
+    label: Lot 3004
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+        note: "Footnote: Invaluable, Koller Auktionen, 07.12.2012, Lot 3004, https://www.invaluable.com/auction-lot/koller-rudolf-1828-zurich-1905-three-fauns-with-3004-c-433b4d02fb (27.05.2025)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/koller-auktionen
+    role: agent
+    acquired: 2014-06-27
+    ended: 2014-06-27
+    method: auction
+    direct: true
+    place: zurich
+    label: Lot 3004
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+        note: "Footnote: Invaluable, Koller Auktionen, 27.06.2014, Lot 3004, https://www.invaluable.com/auction-lot/koller-rudolf-1828-zurich-1905-three-fauns-with-3004-c-433b4d02fb (27.05.2025)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    acquired: 2019
+    ended: 2023-06-07
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+        note: "Footnote: E-Mail-Korrespondenz, wie oben Fussnote 3; Schenkungsvertrag, 07.06.2023, ZKG/KHZ, Inventarbogen/Werkdossier Slg.; Jahresbericht 2023, hrsg. von Zürcher Kunstgesellschaft 2024, S. 64: «Schenkung der Familie Johannes B. Niggli»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2023-06-07
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+        note: "Footnote: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

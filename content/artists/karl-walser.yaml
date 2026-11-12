@@ -1,0 +1,59 @@
+public_id: 120851
+name: Karl Walser
+given_name: Karl
+family_name: Walser
+birth: 1877-04-08
+death: 1943-09-28
+wikidata_id: Q1733293
+metadata:
+  sources: [Wikidata Q1733293 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1733293
+  - type: died_in
+    to: place/bern
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q1733293
+  - type: worked_in
+    to: place/delft
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1733293
+  - type: worked_in
+    to: place/netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1733293
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b2/Karl_walser1897.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Karl_walser1897.jpg
+    license: Public domain
+    credit: Unknown photographer
+identifiers:
+  bnf: 11939775g
+  dome: "585"
+  gnd: "118764152"
+  hls: "009572"
+  idref: "110151399"
+  lc: n79002313
+  rkd: "82725"
+  sikart: "4023433"
+  ulan: "500024905"
+  viaf: "30332596"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1733293
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1733293

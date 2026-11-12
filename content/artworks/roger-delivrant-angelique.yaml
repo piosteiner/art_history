@@ -1,0 +1,98 @@
+public_id: 120972
+title_lang: fr
+title: Roger délivrant Angélique
+names:
+  - lang: null
+    role: translation
+    text: Roger befreit Angelica
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3372/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Roger Liberating Angelica
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3372/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: felix-vallotton
+created: 1907
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [80, 100]
+institution: kunsthaus-zurich
+inventory_number: 1967/0062
+web_url: https://collection.kunsthaus.ch/de/collection/item/3372/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124288384
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7e/F%C3%A9lix_Vallotton_-_Roger_d%C3%A9livrant_Ang%C3%A9lique_-_1967-0062_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Vallotton_-_Roger_d%C3%A9livrant_Ang%C3%A9lique_-_1967-0062_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Félix Vallotton
+provenance:
+  - owner: artist/felix-vallotton
+    role: estate
+    method: inheritance
+    direct: true
+    label: Nr. 372
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3372/
+        note: "Footnote: Ducrey 2005, II.622."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-paul-vallotton
+    role: dealer
+    ended: 1967
+    direct: true
+    place: lausanne
+    label: Nr. 1972
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3372/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1967
+    method: exchange
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3372/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 21.11.1967, 4, Archiv ZKG/KHZ, 10.30.10.42a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "622"
+    label: Ducrey (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3372/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3372/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3372/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3372/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3372/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3372/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3372/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

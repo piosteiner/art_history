@@ -1,0 +1,153 @@
+public_id: 120665
+title_lang: de
+title: Selbstbildnis mit dem Hut in der Hand
+names:
+  - lang: en
+    role: translation
+    text: Self-Portrait with Hat in Hand
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: hans-von-marees
+created: 1873/1874
+kind: oil painting
+medium: Öl auf Leinwand, über Karton
+dimensions: [97, 80]
+institution: kunsthaus-zurich
+inventory_number: 1951/0025
+web_url: https://collection.kunsthaus.ch/de/collection/item/2561/
+on_loan: true
+on_loan_since: 1951
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585106
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a5/Hans_von_Mar%C3%A9es_-_Selbstbildnis_mit_dem_Hut_in_der_Hand_-_1951-0025_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_von_Mar%C3%A9es_-_Selbstbildnis_mit_dem_Hut_in_der_Hand_-_1951-0025_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Hans von Marées
+provenance:
+  - owner: person/adolf-von-hildebrand
+    acquired: 1909 or earlier
+    direct: true
+    label: München und Florenz
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+        note: "Footnote: Meier-Graefe 1909, S. 232, Nr. 287."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hugo-nathan
+    acquired: 1917 or earlier
+    ended: 1922
+    direct: true
+    place: frankfurt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+        note: "Footnote: Swarzenski 1917, Abb. S. 119; Datenbank Proveana, Sammlung Martha und Hugo Nathan, https://www.proveana.de/de/link/col00000132 (04.09.2024)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/martha-nathan
+    acquired: 1922
+    ended: 1951-11-07
+    method: inheritance
+    direct: true
+    place: frankfurt
+    label: Frankfurt am Main and Paris and Genf
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+        note: "Footnote: Protokoll der Hauptversammlung der VZK, 7.11.1951, S. 2-3, ZKG/KHZ Archiv, 10.50.21, Berichte des Vorstands der VZK 1924–1999; Auflistung der Zuwendungen der Vereinigung Zürcher Kunstfreunde, 21.11.1962, ZKG/KHZ Archiv, 10.50.21, Berichte des Vorstands der VZK 1924–1999; Brief von Martha Nathan an Wilhelm Barth, 02.08.1931, und Verzeichnis der am 7. August 1931 aus Frankfurt eingeführten 40 Bilder…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/kunsthalle-basel
+    acquired: 1931-08-07
+    ended: 1939-09-08
+    direct: true
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+        note: 'Footnote: Brief von Willy Dreyfus an die Schweizerische Verrechnungsstelle Zürich, 23.06.1939, Archiv Kunsthalle Basel, «Erledigte Depositen» (vor 1960) II, Frau Hugo Nathan; Brief von Martha Nathan an Wilhelm Barth, 02.08.1931, Archiv Kunsthalle Basel, «Erledigte Depositen» (vor 1960) II; Brief von Wilhelm Barth an Martha Nathan, 08.08.1931, Archiv Kunsthalle Basel, "Erledigte Depositen" (vor 1960) II; Ver…'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-rosengart
+    role: dealer
+    acquired: 1938-11-07
+    ended: 1939-01-30
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+        note: "Footnote: Notiz vom 7.11.1938 und vom 30.01.1939, Archiv Kunsthalle Basel, «Erledigte Depositen» (vor 1960) II, Frau Hugo Nathan."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/banque-cantonale-vaudoise-lausanne
+    acquired: 1939-09-08
+    ended: 1941-03-20
+    direct: true
+    place: lausanne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+        note: "Footnote: Einfuhrgesuch von Carl Egger, Basler Kunstverein, 12.02.1941, Archiv Kunsthalle Basel, «Erledigte Depositen» (vor 1960) II, Frau Hugo Nathan; Brief an Willy Dreyfuss, Hotel Bellerive au Lac, Zürich, 26.04.1941, Archiv Kunsthalle Basel, «Erledigte Depositen» (vor 1960) II, Frau Hugo Nathan. Die Werke wurden bei der Banque Cantonale Vaudoise, Lausanne zwischengelagert. Anschliessend war geplant die …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/fritz-nathan
+    role: agent
+    acquired: 1947-04-12
+    direct: true
+    place: st-gallen
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+        note: "Footnote: Etikette auf der Werkrückseite: «Dr. F. N. / St. G. / L [durchgestrichen] C Nr. [ms] 524 / Marées [hs]»; Kalendereintrag Fritz Nathan, 12.04.1947; E-Mail-Korrespondenz mit Nathan Fine Art, 25.09.2024. Das «L» auf der Etikette gibt die Lagernummer und das «C» die Kommissionsnummer an, darum befand sich das Gemälde bei Fritz Nathan in Kommission. Der Kalendereintrag von Fritz Nathan bezieht sich auf…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1951-11-07
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 8000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+        note: "Footnote: Protokoll der Hauptversammlung der VZK, 7.11.1951, S. 2-3, ZKG/KHZ Archiv, Berichte des Vorstands der VZK 1924–1999, 10.50.21; Auflistung der Zuwendungen der Vereinigung Zürcher Kunstfreunde, 21.11.1962, ZKG/KHZ Archiv, 10.50.21, Berichte des Vorstands der VZK 1924–1999."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: 1909.II.232.287
+    label: Meier-Graefe (catalogue raisonné)
+  - number: 1980.149.126
+    label: Gerlach-Laxner (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

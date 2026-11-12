@@ -1,0 +1,22 @@
+public_id: 121450
+name: Hulsberg
+kind: settlement
+parent: limburg-netherlands
+country_code: NL
+location: [5.8553, 50.8883]
+wikidata_id: Q776432
+metadata:
+  sources: [Wikidata Q776432 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q776432
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q776432
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q776432

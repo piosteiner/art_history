@@ -1,0 +1,58 @@
+public_id: 120664
+name: Hans von Marées
+given_name: Hans
+family_name: von Marées
+birth: 1837-12-24
+death: 1887-06-05
+wikidata_id: Q516121
+metadata:
+  sources: [Wikidata Q516121 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-prussia
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q516121
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q516121
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q516121
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q516121
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e0/Hans_von_Mar%C3%A9es%2C_Selbstbildnis_um_1860.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_von_Mar%C3%A9es,_Selbstbildnis_um_1860.jpg
+    license: Public domain
+    credit: Hans von Marées
+identifiers:
+  bnf: 11940823j
+  dome: "411"
+  gnd: "118577662"
+  idref: "027346544"
+  kulturnav: c62d8039-b0ac-4842-903d-ad352d414b0d
+  lc: n83204518
+  rkd: "52556"
+  ulan: "500014099"
+  viaf: "40170629"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q516121
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q516121

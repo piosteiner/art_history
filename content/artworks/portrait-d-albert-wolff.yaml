@@ -1,0 +1,206 @@
+public_id: 120731
+title: Portrait d'Albert Wolff
+names:
+  - lang: de
+    role: translation
+    text: Bildnis Albert Wolff
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Portrait of Albert Wolff
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: edouard-manet
+created: 1877
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [92, 73]
+institution: kunsthaus-zurich
+inventory_number: 1997/0008
+web_url: https://collection.kunsthaus.ch/de/collection/item/2698/
+wikidata_id: Q124288337
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/76/%C3%89douard_Manet_-_Portrait_d%27Albert_Wolff_-_1997-0008_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Manet_-_Portrait_d%27Albert_Wolff_-_1997-0008_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Édouard Manet
+provenance:
+  - owner: artist/edouard-manet
+    acquired: 1883
+    ended: 1883
+    direct: true
+    label: ohne Nr.; estate inventory
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/suzanne-manet
+    acquired: 1883
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        note: "Footnote: Rouart/Wildenstein 1975, Bd. 1, S. 212, No. 261."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/albert-wolff
+    ended: 1891
+    method: gift
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/hotel-de-ventes
+    role: agent
+    acquired: 1892-04-06
+    ended: 1892-04-08
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 61; «Vente après décès de M. Albert Wolff»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        note: "Footnote: Hôtel des Ventes, Vente après décès de M. Albert Wolff des tableaux, bronzes, sculptures, faïences formant sa collection, Paris, 06.04.1892-08.04.1892, Lot. 61, online unter: https://gallica.bnf.fr/ark:/12148/bpt6k1243041m (02.11.2026). Das Gemälde wird im Katalog als «Manet (Genre de)» beschrieben. Die Urheberschaft Manets ist jedoch unzweifelhaft."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/theodore-duret
+    acquired: 1892
+    ended: 1894
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        note: "Footnote: Auktion Galerie Georges Petit (19.03.1894), S. 22, No. 23; Elias 1919, S. 274."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1894-03-19
+    ended: 1894-03-19
+    method: auction
+    direct: true
+    place: paris
+    label: returned; Lot 23; Sammlung Duret
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/maurice-joyant
+    acquired: c. 1894
+    ended: 1910 or earlier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/michele-angelo-pasquale-manzi
+    role: dealer
+    acquired: 1910 or earlier
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        note: "Footnote: Duret 1910, S. 284f, No. 212."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hugo-cassirer
+    acquired: 1919 or earlier
+    ended: 1920-07-09
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        note: "Footnote: Elias 1919, S. 274."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/charlotte-furstenberg-cassirer
+    acquired: 1920-07-09
+    ended: 1939 or later
+    method: inheritance
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        note: "Footnote: Jamot/Wildenstein 1932, S. 153f, No. 273; Kat. Museo Nacional de Bellas Artes Buenos Aires 1939, S. 92, No. 85."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/justin-k-thannhauser
+    acquired: 1948 or earlier
+    ended: 1969
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        note: "Footnote: Kat. Wildenstein 1948, S. 56, No. 20; Brief Peter Altherr an René Wehrli, 27.06.1969, ZKG/KHZ, Werkdokument Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/stefan-walter-cassirer
+    acquired: 1969
+    ended: 1973
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        note: "Footnote: Brief Peter Altherr an René Wehrli, 15.07.1969, ZKG/KHZ, Werkdokument Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/else-cassirer
+    acquired: 1973
+    ended: 1997
+    method: inheritance
+    direct: true
+    place: charlottenlund
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        note: "Footnote: Brief Peter Altmann an Holger Mosbaek, 28.08.1997, ZKG/KHZ, Werkdokument Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1997
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.212.261
+    label: Rouart/Wildenstein 1975 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

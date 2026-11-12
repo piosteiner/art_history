@@ -1,0 +1,87 @@
+public_id: 120702
+title_lang: de
+title: Bildnis eines jungen Mannes
+names:
+  - lang: en
+    role: translation
+    text: Portrait of a Young Man
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2663/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: hans-memling
+created: c. 1480
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Eichenholz
+dimensions: [25.8, 19.2]
+institution: kunsthaus-zurich
+inventory_number: KS 1
+web_url: https://collection.kunsthaus.ch/de/collection/item/2663/
+on_loan: true
+on_loan_since: 1976
+wikidata_id: Q43829438
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/46/Hans_Memling_-_Bildnis_eines_jungen_Mannes_-_KS_1_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_Memling_-_Bildnis_eines_jungen_Mannes_-_KS_1_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Hans Memling
+provenance:
+  - owner: person/herbert-frederick-cook
+    acquired: 1913 or earlier
+    ended: 1932 or later
+    label: Nr. 464; Richmond
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2663/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/betty-koetser
+    co_owners: [person/david-m-koetser]
+    ended: 1986
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2663/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/stiftung-betty-und-david-koetser
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2663/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2663/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2663/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2663/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2663/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2663/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2663/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2663/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2663/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

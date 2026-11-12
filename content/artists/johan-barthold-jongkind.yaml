@@ -1,0 +1,40 @@
+public_id: 120466
+name: Johan Barthold Jongkind
+given_name: Johan Barthold
+family_name: Jongkind
+birth: 1819-06-03
+death: 1891-02-09
+wikidata_id: Q704585
+metadata:
+  sources: [Wikidata Q704585 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q704585
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3d/Johan_Barthold_Jongkind_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Johan_Barthold_Jongkind_01.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "119375623"
+  dome: "1707"
+  gnd: "118776398"
+  idref: "027304574"
+  kulturnav: e9dbd9b3-a9dc-42bf-851f-f07045bec068
+  lc: n50038617
+  rkd: "42775"
+  ulan: "500028269"
+  viaf: "51697804"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q704585
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q704585

@@ -1,0 +1,104 @@
+public_id: 120200
+title: Buntes Beet
+names:
+  - lang: null
+    role: translation
+    text: Colourful Flower Bed
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1464/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: paul-klee
+created: 1923
+kind: oil painting
+medium: Öl auf Karton
+dimensions: [33.7, 25.8]
+institution: kunsthaus-zurich
+inventory_number: 1987/0014
+web_url: https://collection.kunsthaus.ch/de/collection/item/1464/
+wikidata_id: Q131585528
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e3/Paul_Klee_-_Buntes_Beet_-_1987-0014_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Klee_-_Buntes_Beet_-_1987-0014_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Paul Klee
+provenance:
+  - owner: institution/galerie-neue-kunst-hans-goltz
+    role: dealer
+    acquired: May 1925 or earlier
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1464/
+        note: "Footnote: Helfenstein 2000, Bd. 4, No. 3203, S. 97; Kat. Neue Kunst Hans Goltz München 1925, No. 22, https://doi.org/10.11588/diglit.62331#0004 (20.10.2026)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/lily-klee
+    acquired: 1940
+    ended: 1945
+    place: bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1464/
+        note: "Footnote: Helfenstein 2000, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-rosengart
+    role: dealer
+    acquired: 1945
+    ended: 1946
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1464/
+        note: "Footnote: Helfenstein 2000, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/erna-burgauer
+    co_owners: [person/curt-burgauer]
+    acquired: c. 1947
+    ended: c. 1947
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1464/
+        note: "Footnote: Helfenstein 2000, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1987
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1464/
+        note: "Footnote: Jahresbericht 1987, hrsg. von Zürcher Kunstgesellschaft, S. 10, https://digital.kunsthaus.ch/viewer/image/20416_1987/12/LOG_0009/ (20.10.2026)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1464/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1464/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1464/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1464/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1464/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1464/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1464/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

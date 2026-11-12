@@ -1,0 +1,85 @@
+public_id: 120050
+title: Chromatische Fantasie
+names:
+  - lang: null
+    role: translation
+    text: Chromatic Fantasy
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1109/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Fantaisie chromatique
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1109/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: augusto-giacometti
+created: 1914
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [99.5, 99.5]
+institution: kunsthaus-zurich
+inventory_number: 1954/0030
+web_url: https://collection.kunsthaus.ch/de/collection/item/1109/
+wikidata_id: Q131585389
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8f/Augusto_Giacometti_-_Chromatische_Fantasie_-_1954-0030_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Augusto_Giacometti_-_Chromatische_Fantasie_-_1954-0030_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Augusto Giacometti
+provenance:
+  - owner: artist/augusto-giacometti
+    role: estate
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1109/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/erwin-poeschel
+    ended: 1954
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1109/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1954
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1109/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1109/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1109/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1109/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1109/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1109/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1109/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1109/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

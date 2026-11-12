@@ -1,0 +1,122 @@
+public_id: 120199
+name: Paul Klee
+given_name: Paul
+family_name: Klee
+birth: 1879-12-18
+death: 1940-06-29
+wikidata_id: Q44007
+metadata:
+  sources: [Wikidata Q44007 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-prussia
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q44007
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q44007
+  - type: worked_in
+    to: place/bern
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q44007
+  - type: worked_in
+    to: place/dessau
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q44007
+  - type: worked_in
+    to: place/dusseldorf
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q44007
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q44007
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q44007
+  - type: worked_in
+    to: place/weimar
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q44007
+  - type: influenced_by
+    to: artist/james-ensor
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q44007
+  - type: influenced_by
+    to: artist/pablo-picasso
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q44007
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q44007
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q44007
+  - type: associated_with
+    to: movement/pointillism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q44007
+  - type: associated_with
+    to: movement/surrealism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q44007
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6e/Paul_Klee_1911.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Klee_1911.jpg
+    license: Public domain
+    credit: Alexander Eliasberg
+identifiers:
+  bnf: 11909820v
+  dodis: P16611
+  dome: "185"
+  gnd: "118562827"
+  hls: "012028"
+  idref: "026950480"
+  kulturnav: 9337fb8e-d096-4f37-91b4-e2249e6a3ff0
+  lc: n79093306
+  nlk: KAC199615049
+  rkd: "44622"
+  sikart: "4000058"
+  ulan: "500010493"
+  viaf: "68931085"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q44007
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q44007

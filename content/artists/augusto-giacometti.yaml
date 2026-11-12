@@ -1,0 +1,49 @@
+public_id: 120049
+name: Augusto Giacometti
+given_name: Augusto
+family_name: Giacometti
+birth: 1877-08-16
+death: 1947-06-09
+wikidata_id: Q671236
+metadata:
+  sources: [Wikidata Q671236 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q671236
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q671236
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q671236
+identifiers:
+  bnf: 14974698w
+  dodis: P47890
+  dome: "136"
+  gnd: 11869460X
+  hls: "022021"
+  idref: "075774887"
+  lc: n82074039
+  rkd: "31400"
+  sikart: "4023387"
+  ulan: "500021952"
+  viaf: "19954395"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q671236
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q671236

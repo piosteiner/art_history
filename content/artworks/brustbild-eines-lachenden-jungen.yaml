@@ -1,0 +1,211 @@
+public_id: 121375
+title: Brustbild eines lachenden Jungen
+names:
+  - lang: en
+    role: translation
+    text: Laughing Boy
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: isaack-luttichuys
+created: 1648
+kind: oil painting
+medium: Öl auf Holz
+dimensions: [34, 27.5]
+institution: kunsthaus-zurich
+inventory_number: D.2016/0041
+web_url: https://collection.kunsthaus.ch/de/collection/item/6756/
+on_loan: true
+on_loan_since: 2016
+wikidata_id: Q131586544
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cf/Isaack_Luttichuys_-_Brustbild_eines_lachenden_Jungen_-_D.2016-0041_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Isaack_Luttichuys_-_Brustbild_eines_lachenden_Jungen_-_D.2016-0041_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Isaack Luttichuys
+provenance:
+  - owner: person/rudolf-peltzer
+    ended: 1910
+    place: cologne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: heirs of Rudolf Peltzer
+    acquired: 1910
+    ended: 1914-05-26
+    direct: true
+    place: cologne
+    label: Köln, Erbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/frederik-muller-cie
+    role: agent
+    acquired: 1914-05-26
+    ended: 1914-05-27
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Lot 299 (verzeichnet als Salomon de Bray)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/august-janssen
+    ended: 1921-04-21
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/frederik-muller-cie
+    role: agent
+    acquired: 1921-04-12
+    ended: 1921-04-12
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Lot 5
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/jacob-lierens
+    acquired: 1921-04-12
+    method: purchase
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/frederik-muller-cie
+    role: agent
+    acquired: 1941-10-14
+    ended: 1941-10-17
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Lot 318; wohl nicht verkauft
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: heirs of Jacob Lierens
+    ended: 1949
+    method: inheritance
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/frederik-muller-cie
+    role: agent
+    acquired: 1949-10-18
+    ended: 1949-10-24
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Lot 1
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/f-tofte
+    direct: true
+    place: new-york-city
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/h-d-m-knol
+    ended: 1998
+    direct: true
+    place: leiden
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/venduehuis-dickhaut
+    role: agent
+    acquired: 1998-11-22
+    ended: 1998-11-22
+    method: auction
+    direct: true
+    place: maastricht
+    label: Lot 221
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/kunsthandel-pieter-de-boer
+    acquired: 1998
+    ended: 1999-03
+    method: purchase
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/daphne-alazraki-fine-arts
+    acquired: 2005
+    ended: 2006
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/schweizer-privatsammlung
+    acquired: 2006
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "33727"
+    label: RKD Bild-Nr. (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

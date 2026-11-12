@@ -1,0 +1,35 @@
+public_id: 121047
+name: Emma Bindschedler
+given_name: Emma
+family_name: Bindschedler
+birth: 1852-11-23
+death: 1900-08-15
+wikidata_id: Q47815877
+metadata:
+  sources: [Wikidata Q47815877 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q47815877
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q47815877
+identifiers:
+  gnd: "1312500700"
+  sikart: "4023936"
+  viaf: "5256170250853211550006"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q47815877
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q47815877

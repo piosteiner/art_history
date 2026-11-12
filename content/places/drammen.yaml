@@ -1,0 +1,22 @@
+public_id: 120369
+name: Drammen
+kind: settlement
+parent: norway
+country_code: NO
+location: [10.20597, 59.74536]
+wikidata_id: Q26525
+metadata:
+  sources: [Wikidata Q26525 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q26525
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q26525
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q26525

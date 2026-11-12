@@ -1,0 +1,78 @@
+public_id: 120398
+title_lang: de
+title: Genfersee von Chexbres aus
+names:
+  - lang: en
+    role: translation
+    text: Lake Geneva from Chexbres
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1805/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: c. 1905
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [95.5, 104.5]
+institution: kunsthaus-zurich
+inventory_number: "1377"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1805/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586054
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/00/Ferdinand_Hodler_-_Genfersee_von_Chexbres_aus_-_1377_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Genfersee_von_Chexbres_aus_-_1377_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/mathilde-schwarzenbach
+    ended: 1920
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1805/
+        note: "Footnote: Bätschmann/Müller 2008 I.318, https://ferdinand-hodler.ch/werke.aspx?id=9905283 (06.01.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1920
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1805/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.318
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1805/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1805/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1805/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1805/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1805/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1805/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1805/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,148 @@
+public_id: 120193
+title_lang: fr
+title: Compotier et Pipe
+names:
+  - lang: de
+    role: translation
+    text: Fruchtschale und Pfeife
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Fruit-dish and Pipe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Stillleben
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Stilleben mit Pfeife
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Früchtestilleben mit Pfeife
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: juan-gris
+created: 1919
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [50, 61]
+institution: kunsthaus-zurich
+inventory_number: 1953/0016
+web_url: https://collection.kunsthaus.ch/de/collection/item/1448/
+on_loan: true
+on_loan_since: 1953
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584734
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c4/Juan_Gris_-_Compotier_et_Pipe_-_1953-0016_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Juan_Gris_-_Compotier_et_Pipe_-_1953-0016_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Juan Gris
+provenance:
+  - owner: person/leonce-rosenberg
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+        note: "Footnote: Cooper 2014 II.493.290."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Dr. Kiel
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+        note: "Footnote: Cooper 2014, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-alfred-flechtheim
+    role: dealer
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/gottlieb-friedrich-reber
+    ended: 1931-05-26 or earlier
+    place: lausanne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+        note: "Footnote: ZKG/KHZ, Depotbuch 2 ab 1919, S. 153 und 195, Eintrag vom 27.03.1933; Annahmeprotokoll von Dr. Gottlieb Friedrich Reber, 31.5.1933, Archiv ZKG/KHZ, Eingehende Korrespondenz, Ausstellungen Besitzer/Händler, 10.30.30.62; Korrespondenz von Dr. Reber an das Kunsthaus Zürich, 21.03.1933, Archiv ZKG/KHZ, Eingehende Korrespondenz, Ausstellungen Besitzer/Händler, 10.30.30.62; Versicherungsliste der Ausste…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/ingeborg-pudelko-eichmann
+    acquired: 1931-05-26 or earlier
+    ended: 1962-10-15
+    direct: true
+    place: zurich
+    label: Zürich and Florenz
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+        note: "Footnote: Werkrückseite, Sammlungsetikette «Sammlung Ingeborg Eichmann No. 5»; Werkrückseite braune KHZ-Etikette; ZKG/KHZ, Depotbuch, wie oben Fussnote 9; ZKG/KHZ, Inventarbuch Slg; Kat. Kunsthaus Zürich 1933, S. 7, Nr. 88: «Früchtestillleben mit Pfeife / 61x50 / 1919 / Juan Gris 1-19 / Fräulein Ingeborg Eichmann, Zürich»; Kat. Städelsches Kunstinstitut 1931, S. 27, Nr. 79 «Privatbesitz»; Archiv des Städel …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1962-10-15
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 130000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+        note: "Footnote: Auflistung des Sammlungsfonds, wie oben Fussnote 11; Jahresbericht 1962, wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.493.290
+    label: Cooper 2014 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

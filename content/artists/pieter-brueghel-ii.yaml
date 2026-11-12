@@ -1,0 +1,66 @@
+public_id: 121441
+name: Pieter Brueghel (II)
+given_name: Pieter Brueghel
+family_name: (II)
+birth: 1564-06-02/1564-10-20
+birth_label: c. 1564
+death: 1638-03/1638-05
+death_label: c. 1638
+wikidata_id: Q255828
+metadata:
+  sources: [Wikidata Q255828 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q255828
+  - type: born_in
+    to: place/brussels
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q255828
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q255828
+  - type: worked_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q255828
+  - type: influenced_by
+    to: artist/pieter-brueghel-the-elder
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q255828
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Van_Dyck_Pieter_Brueghel_the_Younger.jpg/1280px-Van_Dyck_Pieter_Brueghel_the_Younger.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Van_Dyck_Pieter_Brueghel_the_Younger.jpg
+    license: Public domain
+    credit: Anthony van Dyck
+identifiers:
+  bnf: 13335285p
+  dome: "5645"
+  gnd: "119524759"
+  idref: "035769009"
+  kulturnav: bbd98474-7582-4346-acba-d46b6de9d1d8
+  lc: n50082822
+  rkd: "13293"
+  ulan: "500023420"
+  viaf: "106974142"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q255828
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q255828

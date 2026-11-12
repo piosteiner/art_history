@@ -1,0 +1,107 @@
+public_id: 120696
+title_lang: it
+title: Ritratto di cardinale Tommaso Ruffo
+names:
+  - lang: de
+    role: translation
+    text: Bildnis des Kardinallegaten Tommaso Ruffo
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/266/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Portrait of Cardinal Tommaso Ruffo, Papal Legate
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/266/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: giuseppe-maria-crespi
+created: 1721
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [74, 62]
+institution: kunsthaus-zurich
+inventory_number: KS 55
+web_url: https://collection.kunsthaus.ch/de/collection/item/266/
+on_loan: true
+on_loan_since: 1967
+wikidata_id: Q131586136
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6a/Giuseppe_Maria_Crespi_-_Ritratto_di_cardinale_Tommaso_Ruffo_-_KS_55_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Giuseppe_Maria_Crespi_-_Ritratto_di_cardinale_Tommaso_Ruffo_-_KS_55_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Giuseppe Maria Crespi
+provenance:
+  - owner: person/edward-aldam-leatham
+    acquired: 1868
+    ended: 1868
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/266/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/a-k-leatham
+    acquired: 1901
+    ended: 1901
+    direct: true
+    place: cirencester
+    label: Miserden Park
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/266/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/georges-wildenstein
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/266/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/betty-koetser
+    co_owners: [person/david-m-koetser]
+    acquired: 1967
+    ended: 1967
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/266/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/stiftung-betty-und-david-koetser
+    acquired: 1986
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/266/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/266/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/266/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/266/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/266/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/266/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/266/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/266/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/266/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,64 @@
+public_id: 121467
+name: Simon Luttichuys
+given_name: Simon
+family_name: Luttichuys
+birth: 1610-03-06
+death: 1661-11-16
+wikidata_id: Q863953
+metadata:
+  sources: [Wikidata Q863953 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q863953
+  - type: born_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q863953
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q863953
+  - type: worked_in
+    to: place/great-britain
+    period: 1637/1638
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q863953
+  - type: worked_in
+    to: place/amsterdam
+    period: 1649/1661
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q863953
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/42/Simon_Luttichuijs_-_Still_Life_with_a_Skull_-_WGA13795.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Simon_Luttichuijs_-_Still_Life_with_a_Skull_-_WGA13795.jpg
+    license: Public domain
+    credit: Simon Luttichuys
+identifiers:
+  bnf: "149109092"
+  gnd: "137731000"
+  idref: "146511875"
+  lc: nr91035238
+  rkd: "51430"
+  ulan: "500012828"
+  viaf: "71248917"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q863953
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q863953

@@ -1,0 +1,159 @@
+public_id: 121011
+title_lang: fr
+title: Annette et Jacques Roussel faisant leur devoir
+names:
+  - lang: de
+    role: translation
+    text: Annette und Jacques Roussel bei den Hausaufgaben
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Annette and Jacques Roussel Doing Their Homework
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: edouard-vuillard
+created: 1906
+kind: oil painting
+medium: Öl auf Karton auf Leinwand
+dimensions: [65, 81.5]
+institution: kunsthaus-zurich
+inventory_number: 1996/0005
+web_url: https://collection.kunsthaus.ch/de/collection/item/3484/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124288374
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6e/%C3%89douard_Vuillard_-_Annette_et_Jacques_Roussel_faisant_leur_devoir_-_1996-0005_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Vuillard_-_Annette_et_Jacques_Roussel_faisant_leur_devoir_-_1996-0005_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Édouard Vuillard
+provenance:
+  - owner: person/suzanne-despres
+    co_owners: [person/aurelien-lugne-poe]
+    acquired: 1907 or later
+    ended: 1945-06-22
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+        note: "Footnote: Salomon/Cogeval 2003, S. 763, No. VII-449. Das Werk war ursprünglich die Rückseite eines Portraits Suzanne Desprès von Vuillard von 1907/08 (Salomon/Cogeval 2003, S. 752, No. VII-420), das die Widmung «à Suzanne Desprès / E Vuillard» trägt. Die beiden Werke wurden nach dem Verkauf am 22.06.1945 getrennt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1945-06-22
+    ended: 1945-06-22
+    method: auction
+    direct: true
+    place: paris
+    label: «Versteigerung Sammlung Suzanne Desprès und Aurélien Lugné-Poe»; Lot 99
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Fromager
+    acquired: 1945-06-22
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+        note: "Footnote: Wie oben Fussnote 2. Fromanger (N.N.) trennte die Werke auf Vorder- und Rückseite voneinander."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Delpierre
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-henri-benezit
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/p-b-vogel
+    ended: 1953 or earlier
+    method: purchase
+    direct: true
+    place: geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+        note: "Footnote: Echtheitsbestätigung, Solvil Beaux-Arts Genf an Willy Staehelin, 04.09.1953, ZKG/KHZ, Inventarbogen/Werkdossier Slg.: «Wir bestätigen Ihnen hiermit, dass das von Ihnen erworbene Bild von Ed. Vuillard, Jacques und Annette Roussel [...] darstellend, [...] sich [...] in der Privatkollektion von Herrn P. B. Vogel in Genf befindet. Das Bild wurde in der Galerie Benezit in Genf [wohl Irrtum, stattdessen…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/solvil-beaux-arts
+    acquired: 1953
+    ended: 1953
+    direct: true
+    place: geneva
+    label: Genf and Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/marina-staehelin-peyer
+    co_owners: [person/willy-staehelin]
+    acquired: 1953
+    ended: 1996
+    method: purchase
+    direct: true
+    place: feldmeilen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+        note: "Footnote: Wie oben Fussnote 2 und 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1996
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.763.VII-449
+    label: Salomon/Cogeval (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

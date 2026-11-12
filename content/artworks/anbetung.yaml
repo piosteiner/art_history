@@ -1,0 +1,91 @@
+public_id: 120329
+title: Anbetung
+names:
+  - lang: null
+    role: translation
+    text: Adoration
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1773/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: former
+    text: Anbetung III
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1773/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: 1893/1894
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [84, 37.5]
+institution: kunsthaus-zurich
+inventory_number: "1045"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1773/
+on_loan: true
+on_loan_since: 1914
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586146
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/32/Ferdinand_Hodler_-_Anbetung_-_1045_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Anbetung_-_1045_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/oscar-miller
+    acquired: after 1897
+    ended: 1914
+    place: biberist
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1773/
+        note: "Footnote: Bätschmann/Müller 2017 III.1226, http://www.ferdinand-hodler.ch/Werke.aspx?id=9905424 (06.01.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/gottfried-keller-stiftung
+    acquired: 1914
+    method: purchase
+    direct: true
+    place: bern
+    label: Bundesamt für Kultur
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1773/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.1226
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1773/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1773/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1773/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1773/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1773/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1773/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1773/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1773/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

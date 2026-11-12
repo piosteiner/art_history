@@ -1,0 +1,45 @@
+public_id: 120887
+name: Johann Caspar Bosshardt
+given_name: Johann Caspar
+family_name: Bosshardt
+birth: 1823-04-01
+death: 1887-02-10
+wikidata_id: Q23000544
+metadata:
+  sources: [Wikidata Q23000544 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q23000544
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q23000544
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5f/Bosshardt-selfportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bosshardt-selfportrait.jpg
+    license: Public domain
+    credit: Johann Caspar Bosshardt (1823-1887)
+identifiers:
+  bnf: "149702337"
+  gnd: "118902261"
+  hls: "022168"
+  lc: n88036502
+  rkd: "11186"
+  sikart: "4022999"
+  ulan: "500057639"
+  viaf: "71666606"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q23000544
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q23000544

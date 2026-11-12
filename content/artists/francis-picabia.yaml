@@ -1,0 +1,109 @@
+public_id: 120558
+name: Francis Picabia
+given_name: Francis
+family_name: Picabia
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: François Marie Martinez Picabia
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q157321
+  - kind: pseudonym
+    role: alternative
+    text: Udnie
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q157321
+birth: 1879-01-22
+death: 1953-11-30
+wikidata_id: Q157321
+metadata:
+  sources: [Wikidata Q157321 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q157321
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q157321
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q157321
+  - type: worked_in
+    to: place/barcelona
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q157321
+  - type: worked_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q157321
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q157321
+  - type: studied_at
+    to: institution/ecole-nationale-superieure-des-arts-decoratifs
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q157321
+  - type: associated_with
+    to: movement/cubism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q157321
+  - type: associated_with
+    to: movement/dada
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q157321
+  - type: associated_with
+    to: movement/surrealism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q157321
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Francis_Picabia%2C_photograph_published_in_Les_Peintres_Cubistes%2C_1913.jpg/1280px-Francis_Picabia%2C_photograph_published_in_Les_Peintres_Cubistes%2C_1913.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Francis_Picabia,_photograph_published_in_Les_Peintres_Cubistes,_1913.jpg
+    license: Public domain
+    credit: Guillaume Apollinaire
+identifiers:
+  bnf: 11919632h
+  dome: "300"
+  gnd: "118594184"
+  idref: "027669173"
+  kulturnav: a3463a93-f301-4dec-b8f8-43057928d8f5
+  lc: n50019704
+  nlk: KAC202331910
+  rkd: "63256"
+  ulan: "500006325"
+  viaf: "36923084"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q157321
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q157321

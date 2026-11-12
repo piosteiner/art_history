@@ -1,0 +1,76 @@
+public_id: 120623
+title_lang: de
+title: Selbstbildnis im Mantel mit Skizzenblock
+names:
+  - lang: en
+    role: translation
+    text: Self-Portrait with Coat and Sketchbook
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2459/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: max-liebermann
+created: 1925
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [104, 78]
+institution: kunsthaus-zurich
+inventory_number: "1613"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2459/
+on_loan: true
+on_loan_since: 1925
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586722
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/88/Max_Liebermann_-_Selbstbildnis_im_Mantel_mit_Skizzenblock_-_1613_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Max_Liebermann_-_Selbstbildnis_im_Mantel_mit_Skizzenblock_-_1613_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Max Liebermann
+provenance:
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1925
+    method: purchase
+    direct: true
+    place: zurich
+    label: «Kauf aus der Internationalen Kunstausstellung im Kunsthaus Zürich»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2459/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.1925/12
+    label: Eberle (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2459/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2459/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2459/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2459/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2459/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2459/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2459/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2459/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

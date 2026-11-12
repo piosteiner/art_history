@@ -1,0 +1,86 @@
+public_id: 120593
+title: Vorbereitung. Einzelfigur
+names:
+  - lang: null
+    role: translation
+    text: Preparation (Single Figure)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2372/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: otto-meyer-amden
+created: c. 1929
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Holz
+dimensions: [35, 25]
+institution: kunsthaus-zurich
+inventory_number: "2356"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2372/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586272
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8a/Otto_Meyer-Amden_-_Vorbereitung._Einzelfigur_-_2356_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Otto_Meyer-Amden_-_Vorbereitung._Einzelfigur_-_2356_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Otto Meyer-Amden
+provenance:
+  - owner: person/paul-meyer
+    acquired: 1933
+    ended: 1934
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2372/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hans-mayenfisch
+    acquired: 1934
+    ended: 1934
+    method: purchase
+    direct: true
+    label: «Kauf aus der Ausstellung im Kunsthaus»; cat. no. 219
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2372/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1934
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2372/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission Archiv 10.30.10.41-42, 25.01.1934 I.a; 21.02.1934 I.b.; 15.03.1934 II.a; 20.03.1934; 20.04.1934 I.a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2372/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2372/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2372/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2372/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2372/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2372/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2372/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

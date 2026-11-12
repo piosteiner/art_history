@@ -1,0 +1,129 @@
+public_id: 120760
+title_lang: de
+title: Johannes der Täufer und Maria mit dem Jesuskind
+names:
+  - lang: en
+    role: translation
+    text: St. John the Baptist with the Virgin and Child
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2767/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Saint Jean-Baptiste et Vierge à l’enfant
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2767/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: hans-leu-the-younger
+created: 1521
+kind: oil painting
+medium: Öl auf Hartplatte
+dimensions: [102, 63]
+institution: kunsthaus-zurich
+inventory_number: 1990/0003
+web_url: https://collection.kunsthaus.ch/de/collection/item/2767/
+wikidata_id: Q131585408
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4e/Hans_Leu_the_Younger_-_Johannes_der_T%C3%A4ufer_und_Maria_mit_dem_Jesuskind_-_1990-0003_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_Leu_the_Younger_-_Johannes_der_T%C3%A4ufer_und_Maria_mit_dem_Jesuskind_-_1990-0003_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Hans Leu the Younger
+provenance:
+  - owner_label: Antiquitätenhändler
+    role: dealer
+    acquired: before 1876
+    ended: before 1876
+    place: brunnen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2767/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Fleischhauer
+    acquired: c. 1893
+    ended: c. 1893
+    place: colmar
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2767/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    acquired: c. 1904
+    ended: c. 1904
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2767/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/christie-s-monaco
+    role: agent
+    acquired: 1987-04-03
+    ended: 1987-04-03
+    method: auction
+    place: monte-carlo
+    label: Lot 37
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2767/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/p-d-colnaghi-co-ltd
+    role: dealer
+    acquired: 1988
+    ended: 1988
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2767/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/p-d-colnaghi-co-ltd
+    co_owners: [institution/galerie-romer]
+    role: dealer
+    acquired: 1990
+    ended: 1990
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2767/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1990
+    method: gift
+    direct: true
+    place: zurich
+    label: «Geschenk der Zürcher Kantonalbank»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2767/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2767/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2767/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2767/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2767/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2767/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2767/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2767/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

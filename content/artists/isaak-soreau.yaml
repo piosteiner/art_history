@@ -1,0 +1,31 @@
+public_id: 121045
+name: Isaak Soreau
+given_name: Isaak
+family_name: Soreau
+birth: 1604-10-17
+death: 1645
+wikidata_id: Q1606326
+metadata:
+  sources: [Wikidata Q1606326 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1606326
+identifiers:
+  gnd: "1185991689"
+  lc: nr91035458
+  rkd: "73968"
+  ulan: "500005053"
+  viaf: "95711687"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1606326
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1606326

@@ -1,0 +1,60 @@
+public_id: 120403
+title_lang: de
+title: Pinien bei Fiascherino
+creator: hermann-gattiker
+created: c. 1910
+created_span: uncertain
+kind: painting
+medium: Pastell auf Leinwand
+dimensions: [66, 100]
+institution: kunsthaus-zurich
+inventory_number: "0912"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1817/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131587411
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6d/Hermann_Gattiker_-_Pinien_bei_Fiascherino_-_0912_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Hermann_Gattiker_-_Pinien_bei_Fiascherino_-_0912_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Hermann Gattiker
+provenance:
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1910
+    method: purchase
+    direct: true
+    place: zurich
+    label: «Kauf aus der Eröffnungsausstellung»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1817/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1817/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1817/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1817/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1817/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1817/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1817/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1817/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

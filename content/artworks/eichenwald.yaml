@@ -1,0 +1,77 @@
+public_id: 120988
+title: Eichenwald
+names:
+  - lang: null
+    role: translation
+    text: Oak Forest
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3410/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Forêt des chênes
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3410/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: robert-zund
+created: 1881/1882
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [119, 159]
+institution: kunsthaus-zurich
+inventory_number: "437"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3410/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586966
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e9/Robert_Z%C3%BCnd_-_Eichenwald_-_437_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Robert_Z%C3%BCnd_-_Eichenwald_-_437_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Robert Zünd
+provenance:
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1883
+    method: purchase
+    direct: true
+    place: zurich
+    label: «an der Schweizerischen Landesausstellung»; Zürich, Zürich
+    price:
+      amount: 4000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3410/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 187; ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3410/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3410/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3410/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3410/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3410/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3410/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3410/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

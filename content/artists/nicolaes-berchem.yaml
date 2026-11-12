@@ -1,0 +1,63 @@
+public_id: 121042
+name: Nicolaes Berchem
+given_name: Nicolaes
+family_name: Berchem
+birth: 1620-10-01
+death: 1683-02-18
+wikidata_id: Q711737
+metadata:
+  sources: [Wikidata Q711737 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q711737
+  - type: born_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q711737
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q711737
+  - type: student_of
+    to: artist/jan-van-goyen
+    sources:
+      - accessed: 2026-11-12
+        property: P1066
+        wikidata: Q711737
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q711737
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Portrait_of_Nicolaes_Berchem_by_Jan_Stolker.jpg/1280px-Portrait_of_Nicolaes_Berchem_by_Jan_Stolker.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Nicolaes_Berchem_by_Jan_Stolker.jpg
+    license: Public domain
+    credit: Jan Stolker
+identifiers:
+  bnf: 14967377m
+  gnd: "118658336"
+  idref: "161750176"
+  kulturnav: 2ab944c7-8c70-4ba3-94a1-9dc94a5ee5f8
+  lc: nr88004876
+  rkd: "6727"
+  ulan: "500010297"
+  viaf: "19951005"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q711737
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q711737

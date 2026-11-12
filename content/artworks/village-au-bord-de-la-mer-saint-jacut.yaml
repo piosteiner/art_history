@@ -1,0 +1,122 @@
+public_id: 120941
+title_lang: fr
+title: Village au bord de la mer. Saint-Jacut
+names:
+  - lang: de
+    role: translation
+    text: Dorf am Meer (Saint-Jacut)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3263/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Village by the Sea (Saint Jacut)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3263/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: original
+    text: Village au bord de la mer (Saint-Jacut, Bretagne)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3263/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: edouard-vuillard
+created: 1909
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [81, 100]
+institution: kunsthaus-zurich
+inventory_number: 1987/0020
+web_url: https://collection.kunsthaus.ch/de/collection/item/3263/
+wikidata_id: Q124288373
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4d/%C3%89douard_Vuillard_-_Village_au_bord_de_la_mer._Saint-Jacut_-_1987-0020_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Vuillard_-_Village_au_bord_de_la_mer._Saint-Jacut_-_1987-0020_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Édouard Vuillard
+provenance:
+  - owner: person/antoine-salomon
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3263/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown (collector)
+    direct: true
+    place: france
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3263/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/e-j-van-wisselingh-co
+    role: dealer
+    direct: true
+    place: naarden
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3263/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-nathan
+    role: dealer
+    ended: 1987
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3263/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/annie-bodmer-abegg
+    acquired: 1987
+    ended: 1987
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3263/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1987
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3263/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.976.VIII-326
+    label: Salomon/Cogeval (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3263/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

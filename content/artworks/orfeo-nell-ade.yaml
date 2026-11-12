@@ -1,0 +1,104 @@
+public_id: 120510
+title: Orfeo nell’ade
+names:
+  - lang: de
+    role: translation
+    text: Orpheus und Eurydike vor Pluto und Proserpina in der Unterwelt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2094/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Orpheus and Eurydice Before Pluto and Proserpina
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2094/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Orphée et Eurydice aux Enfers paraissant devant Pluton et Proserpine
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2094/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: mattia-preti
+created: 1630/1645
+created_label: c. 1635/1640
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [223, 320]
+institution: kunsthaus-zurich
+inventory_number: "642"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2094/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586614
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/58/Mattia_Preti_-_Orfeo_nell%E2%80%99ade_-_642_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Mattia_Preti_-_Orfeo_nell%E2%80%99ade_-_642_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Mattia Preti
+provenance:
+  - owner: person/marchese-michelangelo-peralta
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2094/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown (collector)
+    acquired: c. 1763
+    ended: c. 1763
+    direct: true
+    place: milan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2094/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/alberto-rathgeb
+    ended: 1898
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2094/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1898
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2094/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "293"
+    label: Spike (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2094/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2094/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2094/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2094/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2094/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2094/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2094/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

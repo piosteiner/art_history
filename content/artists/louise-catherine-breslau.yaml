@@ -1,0 +1,107 @@
+public_id: 121391
+name: Louise Catherine Breslau
+given_name: Louise Catherine
+family_name: Breslau
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Maria Luise Katharina Breslau
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q270629
+birth: 1856-12-06
+death: 1927-05-12
+wikidata_id: Q270629
+metadata:
+  sources: [Wikidata Q270629 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q270629
+  - type: nationality
+    to: polity/switzerland
+    period: 1892
+    period_label: from 1892
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q270629
+  - type: born_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q270629
+  - type: lived_in
+    to: place/neuilly-sur-seine
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q270629
+  - type: lived_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q270629
+  - type: lived_in
+    to: place/munich
+    period: 1856/1858
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q270629
+  - type: lived_in
+    to: place/zurich
+    period: 1858/1874
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q270629
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q270629
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q270629
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q270629
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4f/Louise_Catherine_Breslau.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Louise_Catherine_Breslau.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 13771449x
+  dome: "1166"
+  gnd: "119107791"
+  hls: "021990"
+  idref: 06056637X
+  lc: no2002001744
+  rkd: "12397"
+  sikart: "4022873"
+  ulan: "500002133"
+  viaf: "44482045"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q270629
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q270629

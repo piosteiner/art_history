@@ -1,0 +1,92 @@
+public_id: 120287
+title_lang: de
+title: Am Ufer der Maggia am Abend
+names:
+  - lang: en
+    role: translation
+    text: On the Bank of the Maggia in the Evening
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1622/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Au bord de la Maggia, le soir
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1622/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Maggia und Monte Verità bei Sonnenuntergang
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1622/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: 1893
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [40, 64]
+institution: kunsthaus-zurich
+inventory_number: "970"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1622/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585105
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5b/Ferdinand_Hodler_-_Am_Ufer_der_Maggia_am_Abend_-_970_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Am_Ufer_der_Maggia_am_Abend_-_970_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner_label: private collection
+    acquired: 1906 or earlier
+    ended: 1912
+    direct: true
+    place: st-gallen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1622/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1912
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1622/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.252
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1622/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1622/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1622/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1622/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1622/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1622/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1622/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

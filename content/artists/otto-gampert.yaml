@@ -1,0 +1,51 @@
+public_id: 120163
+name: Otto Gampert
+given_name: Otto
+family_name: Gampert
+birth: 1842-10-26
+death: 1924-03-08
+wikidata_id: Q42091458
+metadata:
+  sources: [Wikidata Q42091458 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q42091458
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q42091458
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q42091458
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q42091458
+identifiers:
+  dome: "5963"
+  gnd: "116410876"
+  kulturnav: 294ce681-787d-45b6-9ccb-c1b212309ecb
+  rkd: "30129"
+  sikart: "4025045"
+  ulan: "500082867"
+  viaf: "67216400"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q42091458
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q42091458

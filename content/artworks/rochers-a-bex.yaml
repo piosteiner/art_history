@@ -1,0 +1,116 @@
+public_id: 121266
+title_lang: fr
+title: Rochers à Bex
+names:
+  - lang: de
+    role: translation
+    text: Felsen bei Bex
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5698/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Cliffs Near Bex
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5698/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: felix-vallotton
+created: 1900
+kind: oil painting
+medium: Öl auf Karton
+dimensions: [47, 37]
+institution: kunsthaus-zurich
+inventory_number: 2001/0015
+web_url: https://collection.kunsthaus.ch/de/collection/item/5698/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585598
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/58/F%C3%A9lix_Vallotton_-_Rochers_%C3%A0_Bex_-_2001-0015_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Vallotton_-_Rochers_%C3%A0_Bex_-_2001-0015_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Félix Vallotton
+provenance:
+  - owner: artist/felix-vallotton
+    role: estate
+    acquired: 1925-12-29
+    ended: 1938 or earlier
+    direct: true
+    label: no. 71
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5698/
+        note: "Footnote: Ducrey 2005, S. 198-199, Nr. 329."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-paul-vallotton
+    role: dealer
+    acquired: 1938 or earlier
+    ended: 1955
+    direct: true
+    place: lausanne
+    label: Lausanne, No. 854
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5698/
+        note: "Footnote: Wie oben Fussnote 2; Liste \"Esposition Felix Vallotton / Oeuvres retournées du Kunsthaus Zürich à Paul Vallotton SA, Lausanne\", o. D. [1938], Archiv ZKG/KHZ, 10.30.30.66; Etikette auf Werkrückseite des Musée national d'Art Moderne Paris zur Ausstellung \"Bonnard, Vuillard et les Nabis\", 08.06.1955 - 02.10.1955. Darauf wird als Eigentümer des Werks wird Paul Vallotton genannt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/walter-feilchenfeldt
+    acquired: 1955
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5698/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hans-naef
+    acquired: 1959
+    ended: 2000
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5698/
+        note: "Footnote: Wie oben Fussnote 2; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 296."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2001
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5698/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "329"
+    label: Ducrey (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

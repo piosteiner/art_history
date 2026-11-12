@@ -1,0 +1,55 @@
+public_id: 120168
+name: Anna Susanna Fries
+given_name: Anna Susanna
+family_name: Fries
+birth: 1827-01-30
+death: 1901-07-11
+wikidata_id: Q41264521
+metadata:
+  sources: [Wikidata Q41264521 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q41264521
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q41264521
+  - type: worked_in
+    to: place/the-hague
+    period: 1849/1859
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q41264521
+  - type: student_of
+    to: artist/johann-conrad-zeller
+    sources:
+      - accessed: 2026-11-12
+        property: P1066
+        wikidata: Q41264521
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Anna_Susanna_Fries_Selbstportrait.jpg/1280px-Anna_Susanna_Fries_Selbstportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anna_Susanna_Fries_Selbstportrait.jpg
+    license: Public domain
+    credit: Anna Susanna Fries
+identifiers:
+  gnd: 14031184X
+  rkd: "29514"
+  sikart: "4032292"
+  ulan: "500093093"
+  viaf: "96362864"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q41264521
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q41264521

@@ -1,0 +1,84 @@
+public_id: 121347
+title_lang: de
+title: Putto und Schmetterling
+names:
+  - lang: en
+    role: translation
+    text: Putto and Butterfly
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/64/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Putto et papillon
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/64/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Nacktes Kind mit blonden Haaren
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/64/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: arnold-bocklin
+created: 1895
+kind: painting
+medium: Tempera auf Holz
+dimensions: [18.5, 14.5]
+institution: kunsthaus-zurich
+inventory_number: "594"
+web_url: https://collection.kunsthaus.ch/de/collection/item/64/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586608
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/16/Arnold_B%C3%B6cklin_-_Putto_und_Schmetterling_-_594_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Arnold_B%C3%B6cklin_-_Putto_und_Schmetterling_-_594_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Arnold Böcklin
+provenance:
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1895
+    method: gift
+    direct: true
+    place: zurich
+    label: «Geschenk für die Versteigerung zugunsten des neuen Künstlerhauses»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/64/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "513.449"
+    label: Andree 1998 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/64/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/64/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/64/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/64/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/64/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/64/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/64/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

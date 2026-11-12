@@ -1,0 +1,84 @@
+public_id: 120036
+name: Angelika Kauffmann
+given_name: Angelika
+family_name: Kauffmann
+birth: 1741-10-30
+death: 1807-11-05
+wikidata_id: Q123098
+metadata:
+  sources: [Wikidata Q123098 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q123098
+  - type: nationality
+    to: polity/three-leagues
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q123098
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q123098
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q123098
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q123098
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q123098
+  - type: member_of
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-11-12
+        property: P463
+        wikidata: Q123098
+  - type: associated_with
+    to: movement/neoclassicism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q123098
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Angelika_Kauffmann_-_Self_Portrait_-_1784.jpg/1280px-Angelika_Kauffmann_-_Self_Portrait_-_1784.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Angelika_Kauffmann_-_Self_Portrait_-_1784.jpg
+    license: Public domain
+    credit: Angelica Kauffmann
+identifiers:
+  bnf: 12274214f
+  dome: "2172"
+  gnd: "118721224"
+  hls: "022037"
+  idref: 03154830X
+  kulturnav: 9fdd2add-3c50-4227-b0cd-f9385dfecb66
+  lc: n50044673
+  rkd: "43630"
+  sikart: "4022820"
+  ulan: "500115055"
+  viaf: "95148968"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q123098
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q123098

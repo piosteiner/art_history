@@ -1,0 +1,72 @@
+public_id: 120400
+name: Arthur Kampf
+given_name: Arthur
+family_name: Kampf
+birth: 1864-09-28
+death: 1950-02-08
+wikidata_id: Q318554
+metadata:
+  sources: [Wikidata Q318554 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q318554
+  - type: born_in
+    to: place/aachen
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q318554
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q318554
+  - type: worked_in
+    to: place/dusseldorf
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q318554
+  - type: studied_at
+    to: institution/kunstakademie-dusseldorf
+    period: 1879
+    period_label: from 1879
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q318554
+  - type: member_of
+    to: institution/academy-of-arts-berlin
+    period: 1901/1912
+    sources:
+      - accessed: 2026-11-12
+        property: P463
+        wikidata: Q318554
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b9/Arthur_Kampf_%28BLeben_1902-06%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Arthur_Kampf_(BLeben_1902-06).jpg
+    license: Public domain
+    credit: Unbekannter Fotograf der Epoche.
+identifiers:
+  bnf: 14970857w
+  dome: "1453"
+  gnd: "118776649"
+  idref: "151868832"
+  lc: n85378659
+  rkd: "43396"
+  ulan: "500030180"
+  viaf: "47034776"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q318554
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q318554

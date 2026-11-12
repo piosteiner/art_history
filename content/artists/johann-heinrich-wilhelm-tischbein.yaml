@@ -1,0 +1,66 @@
+public_id: 120998
+name: Johann Heinrich Wilhelm Tischbein
+given_name: Johann Heinrich Wilhelm
+family_name: Tischbein
+names:
+  - kind: pseudonym
+    role: alternative
+    text: Goethe-Tischbein
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q213973
+birth: 1751-02-15
+death: 1829-06-26
+wikidata_id: Q213973
+metadata:
+  sources: [Wikidata Q213973 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/electorate-of-hesse
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q213973
+  - type: lived_in
+    to: place/naples
+    period: 1787/1799
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q213973
+  - type: worked_in
+    to: place/hanover
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q213973
+  - type: worked_in
+    to: place/oldenburg
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q213973
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Tischbein_JHW_Selbstbildnis_1783%4020150929.JPG/1280px-Tischbein_JHW_Selbstbildnis_1783%4020150929.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Tischbein_JHW_Selbstbildnis_1783@20150929.JPG
+    license: Public domain
+    credit: Johann Heinrich Wilhelm Tischbein
+identifiers:
+  bnf: 10723133r
+  gnd: "118622897"
+  idref: "052617858"
+  kulturnav: 8c5b844a-9505-4538-808c-0f48121e102b
+  lc: n87893196
+  rkd: "77631"
+  sikart: "4029502"
+  ulan: "500030252"
+  viaf: "61536450"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q213973
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q213973

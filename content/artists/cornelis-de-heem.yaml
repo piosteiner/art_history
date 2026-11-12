@@ -1,0 +1,45 @@
+public_id: 120245
+name: Cornelis de Heem
+given_name: Cornelis
+family_name: de Heem
+birth: 1631-04-08
+death: 1695-05-17
+wikidata_id: Q1133621
+metadata:
+  sources: [Wikidata Q1133621 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/southern-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1133621
+  - type: born_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q1133621
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q1133621
+identifiers:
+  bnf: 14975684f
+  dome: "10610"
+  gnd: "131617745"
+  kulturnav: 75376df0-117b-4fe2-87dc-7a6ba2f7df13
+  rkd: "36837"
+  ulan: "500018142"
+  viaf: "74126109"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1133621
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1133621

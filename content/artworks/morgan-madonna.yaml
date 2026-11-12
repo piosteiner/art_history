@@ -7,7 +7,8 @@ medium: walnut, remains of polychromy over gesso and canvas
 materials: [walnut wood, canvas]
 dimensions: [79]
 institution: metropolitan-museum-of-art
-inventory_number: 16.32.194
+inventory_number: 16.32.194a, b
+web_url: https://www.metmuseum.org/art/collection/search/463795
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/b/b5/VirginandChildinMajesty.c1175-1200.Auvergne.MET.jpg
     source_url: https://commons.wikimedia.org/wiki/File:VirginandChildinMajesty.c1175-1200.Auvergne.MET.jpg
@@ -33,5 +34,6 @@ sources:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 6 (7.11.2024)
   inventory_number:
-    - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 6 (7.11.2024)
+    - url: https://www.metmuseum.org/art/collection/search/463795
+      source: metropolitan-museum-collection
+      accessed: 2026-11-11

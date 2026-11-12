@@ -1,0 +1,41 @@
+public_id: 120859
+name: Emil Weber
+given_name: Emil
+family_name: Weber
+birth: 1872-10-19
+death: 1945
+wikidata_id: Q51560188
+metadata:
+  sources: [Wikidata Q51560188 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q51560188
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q51560188
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q51560188
+identifiers:
+  gnd: "1077994753"
+  sikart: "4024838"
+  viaf: "177144782965435230552"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q51560188
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q51560188

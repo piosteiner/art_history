@@ -1,0 +1,90 @@
+public_id: 120521
+title_lang: de
+title: Selbstbildnis mit Pinseln
+names:
+  - lang: en
+    role: translation
+    text: Self-Portrait with Brushes
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2158/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Autoportrait aux pinceaux
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2158/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Selbstbildnis
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2158/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ottilie-wilhelmine-roederstein
+created: 1917
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [48, 39]
+institution: kunsthaus-zurich
+inventory_number: "1144"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2158/
+on_loan: true
+on_loan_since: 1917
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585587
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d2/Ottilie_Wilhelmine_Roederstein_-_Selbstbildnis_mit_Pinseln_-_1144_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ottilie_Wilhelmine_Roederstein_-_Selbstbildnis_mit_Pinseln_-_1144_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ottilie Roederstein
+provenance:
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1917
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2158/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 219."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "1083"
+    label: Rök (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2158/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2158/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2158/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2158/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2158/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2158/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2158/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2158/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

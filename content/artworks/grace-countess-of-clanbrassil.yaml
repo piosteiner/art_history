@@ -1,0 +1,74 @@
+public_id: 121542
+title_lang: en
+title: Grace, Countess of Clanbrassil
+creator: jean-etienne-liotard
+created: 1774
+kind: painting
+medium: Pastell auf Leinwand
+dimensions: [86.5, 62.5]
+institution: kunsthaus-zurich
+inventory_number: 2013/0017
+web_url: https://collection.kunsthaus.ch/de/collection/item/7833/
+wikidata_id: Q131586396
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4c/Jean-Etienne_Liotard_-_Grace%2C_Countess_of_Clanbrassil_-_2013-0017_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Etienne_Liotard_-_Grace,_Countess_of_Clanbrassil_-_2013-0017_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jean-Étienne Liotard
+provenance:
+  - owner: person/alfred-hausammann
+    co_owners: [person/hilde-hausammann]
+    acquired: 1957
+    ended: 1993
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7833/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/walter-feilchenfeldt
+    acquired: 1993
+    ended: 2013
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7833/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2013
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7833/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7833/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7833/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7833/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7833/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7833/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7833/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7833/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

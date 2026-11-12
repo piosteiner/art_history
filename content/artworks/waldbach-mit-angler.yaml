@@ -1,0 +1,72 @@
+public_id: 121591
+title_lang: de
+title: Waldbach mit Angler
+names:
+  - lang: en
+    role: translation
+    text: Forest Stream with Fisherman
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/828/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: frank-buchser
+created: 1867
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [76, 104]
+institution: kunsthaus-zurich
+inventory_number: "1208"
+web_url: https://collection.kunsthaus.ch/de/collection/item/828/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131587381
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9b/Frank_Buchser_-_Waldbach_mit_Angler_-_1208_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Frank_Buchser_-_Waldbach_mit_Angler_-_1208_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Frank Buchser
+provenance:
+  - owner: person/walter-johann-jakob-baumann
+    ended: 1918
+    place: horgen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/828/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1918
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/828/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/828/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/828/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/828/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/828/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/828/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/828/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/828/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

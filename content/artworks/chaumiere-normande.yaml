@@ -1,0 +1,166 @@
+public_id: 120620
+title_lang: fr
+title: Chaumière normande
+names:
+  - lang: de
+    role: translation
+    text: Strohhaus in der Normandie
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: translation
+    text: Strohgedecktes Haus in der Normandie
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: A Cottage in Normandy
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: claude-monet
+created: 1885
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [65, 81]
+institution: kunsthaus-zurich
+inventory_number: 1984/0014
+web_url: https://collection.kunsthaus.ch/de/collection/item/2449/
+wikidata_id: Q124252687
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/17/Chaumi%C3%A8re_normande_%281885%29_de_Claude_Monet_%28W_1023%29_-_Kunsthaus_Zurich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Chaumi%C3%A8re_normande_(1885)_de_Claude_Monet_(W_1023)_-_Kunsthaus_Zurich.jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: institution/galerie-georges-petit
+    acquired: 1898
+    method: purchase
+    direct: true
+    place: paris
+    label: «Kauf vom Künstler»; Bernheim-Jeune et Montaignac (Kunsthandel)
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+        note: "Footnote: Wildenstein 1996, Bd. III, No. 1023, S. 387; Wildenstein 1979, Bd. II, No. 1023, S. 172."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/eugene-fasquelle
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1937 or earlier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/aline-barnsdall
+    acquired: 1938 or earlier
+    place: beverly-hills
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/lacma
+    acquired: 1940
+    ended: 1940
+    direct: true
+    label: Los Angeles; CA
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    ended: 1943 or later
+    place: united-states
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+        note: "Footnote: Malingue 1943, S. 122."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/aline-devine
+    ended: 1948 or later
+    method: inheritance
+    label: Los Angeles; CA
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/schoneman-galleries
+    role: dealer
+    ended: 1955-06-30
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+        note: "Footnote: Rechnung Schoneman Galleries Inc., New York, 30.06.1955, ZKG/KHZ Werkdokument."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/johanna-wolf
+    co_owners: [person/walter-l-wolf]
+    acquired: 1955-06-30
+    ended: 1984
+    method: purchase
+    direct: true
+    place: adliswil
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+        note: "Footnote: Wie oben Fussnote 17."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1984
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.387.1023
+    label: Wildenstein 1996, (catalogue raisonné)
+  - number: II.172.1023.
+    label: Wildenstein 1979, (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2449/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,64 @@
+public_id: 120871
+name: Simon Pietersz Verelst
+given_name: Simon Pietersz
+family_name: Verelst
+birth: 1644
+death: 1721
+wikidata_id: Q2012839
+metadata:
+  sources: [Wikidata Q2012839 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2012839
+  - type: born_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q2012839
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q2012839
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q2012839
+  - type: worked_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q2012839
+  - type: worked_in
+    to: place/london
+    period: 1668/1669
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q2012839
+identifiers:
+  gnd: "138807477"
+  idref: "241620090"
+  kulturnav: 3071370e-3f02-4371-96eb-51009c0d28ba
+  lc: n80101322
+  rkd: "80207"
+  ulan: "500004265"
+  viaf: "121762776"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q2012839
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q2012839

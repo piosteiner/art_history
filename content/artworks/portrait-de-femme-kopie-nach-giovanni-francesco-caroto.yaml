@@ -1,0 +1,137 @@
+public_id: 121263
+title_lang: fr
+title: Portrait de femme. Kopie nach Giovanni Francesco Caroto
+names:
+  - lang: de
+    role: translation
+    text: Damenbildnis (Nach Giovanni Francesco Caroto)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Portrait of a Woman (Copy after Giovanni Francesco Caroto)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Portrait de femme d’après Caroto
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: edgar-degas
+created: 1865/1868
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [69, 53]
+institution: kunsthaus-zurich
+inventory_number: 2003/0032
+web_url: https://collection.kunsthaus.ch/de/collection/item/5694/
+wikidata_id: Q124288351
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a6/Edgar_Degas%2C_Copy_after_Giovanni_Francesco_Caroto_-_Portrait_de_femme._Kopie_nach_Giovanni_Francesco_Caroto_-_2003-0032_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Edgar_Degas,_Copy_after_Giovanni_Francesco_Caroto_-_Portrait_de_femme._Kopie_nach_Giovanni_Francesco_Caroto_-_2003-0032_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Edgar Degas / After Giovanni Francesco Caroto
+provenance:
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1918-11-15/1918-11-16
+    ended: 1918-11-15/1918-11-16
+    method: auction
+    direct: true
+    label: Nachlassversteigerung Edgar Degas (2ème Vente); Lot 58
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/marcel-nicolle
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+        note: "Footnote: Werkverzeichnis Schulmann 2019 MS-118, https://www.degas-catalogue.com/recherche_fiches.php?id=118 [Zugriff: 12.01.2022]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown (collector)
+    acquired: 1946
+    ended: 1946
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/huguette-beres
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-bellier
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/rolf-weinberg
+    co_owners: [person/margit-weinberg]
+    acquired: 1982
+    ended: 1990 or later
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/stiftung-rolf-und-margit-weinberg
+    acquired: 1990 or later
+    ended: 2003
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2003
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

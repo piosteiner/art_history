@@ -1,0 +1,127 @@
+public_id: 121081
+title_lang: fr
+title: Le Chou-fleur
+names:
+  - lang: null
+    role: translation
+    text: Blumenkohl
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3763/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Cauliflower
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3763/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: felix-vallotton
+created: 1922
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [54, 65]
+institution: kunsthaus-zurich
+inventory_number: "2460"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3763/
+wikidata_id: Q124288381
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/df/F%C3%A9lix_Vallotton_-_Le_Chou-fleur_-_2460_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Vallotton_-_Le_Chou-fleur_-_2460_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Félix Vallotton
+provenance:
+  - owner: person/jacques-rodrigues-hendriques
+    role: agent
+    acquired: 1925
+    ended: 1925
+    direct: true
+    place: paris
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3763/
+        note: "Footnote: Ducrey 2005, S. 781. Jacques Rodrigues-Henriques (1886 - 1968) war Kunsthändler und Sohn aus erster Ehe von Henriette Bernheim (1863 - 1932), die ab 1899 mit Félix Vallotton (1865 - 1925) verheiratet war. Vermutlich wurde er nach dem Tod Vallottons mit dem Verkauf von Le Chou-fleur aus dem Nachlass des Künstlers beauftragt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/paul-simon
+    acquired: 1925 or later
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3763/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Mme Jean Schneider
+    ended: 1938 or earlier
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3763/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/jacques-rodrigues-hendriques
+    role: dealer
+    ended: 1938-12-03
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3763/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: place/zurich
+    acquired: 1938-12-03
+    ended: 1938-12-03
+    method: purchase
+    direct: true
+    place: zurich
+    label: «Kauf aus der Ausstellung Félix Vallotton (11. November - 14. Dezember 1938) im Kunsthaus Zürich»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3763/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 29.11.1938; 12.12.1938, Archiv ZKG/KHZ, 10.30.10.41."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1938-12-15
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3763/
+        note: "Footnote: ZKG/KHZ Inventarbuch Sammlung."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "1474"
+    label: Ducrey (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

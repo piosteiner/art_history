@@ -1,0 +1,77 @@
+public_id: 120184
+title_lang: de
+title: Die Lampe
+names:
+  - lang: en
+    role: translation
+    text: The Lamp
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1397/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: La Lampe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1397/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: giovanni-giacometti
+created: 1912
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [130, 150]
+institution: kunsthaus-zurich
+inventory_number: "994"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1397/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586887
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a8/Giovanni_Giacometti_-_Die_Lampe_-_994_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Giacometti_-_Die_Lampe_-_994_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Giovanni Giacometti
+provenance:
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1912
+    method: purchase
+    direct: true
+    place: zurich
+    label: «Kauf aus der November-Ausstellung im Kunsthaus Zürich»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1397/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "1912.09"
+    label: Müller/Radlach Giacometti (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1397/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1397/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1397/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1397/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1397/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1397/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1397/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

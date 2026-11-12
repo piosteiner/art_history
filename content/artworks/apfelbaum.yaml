@@ -1,0 +1,84 @@
+public_id: 120826
+title: Apfelbaum
+names:
+  - lang: null
+    role: translation
+    text: Apple Tree
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2976/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: original
+    text: Epletreet
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2976/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: edvard-munch
+created: 1921
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [100, 130.5]
+institution: kunsthaus-zurich
+inventory_number: "1925"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2976/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q18891021
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/05/Edvard_Munch_-_Apfelbaum_-_1925_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_Apfelbaum_-_1925_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Edvard Munch
+provenance:
+  - owner: person/alfred-rutschi
+    ended: 1929-06-18
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2976/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1929
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2976/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: IV.1299.1398
+    label: Woll (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2976/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2976/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2976/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2976/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2976/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2976/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2976/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

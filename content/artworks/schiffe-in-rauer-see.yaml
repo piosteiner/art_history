@@ -1,0 +1,104 @@
+public_id: 121317
+title: Schiffe in rauer See
+names:
+  - lang: null
+    role: translation
+    text: Ships in Stormy Seas
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6149/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: cornelis-verbeeck
+created: 1625/1630
+kind: oil painting
+medium: Öl auf Eichenholz
+dimensions: [19, 35.3]
+institution: kunsthaus-zurich
+inventory_number: D.2016/0057
+web_url: https://collection.kunsthaus.ch/de/collection/item/6149/
+on_loan: true
+on_loan_since: 2016
+wikidata_id: Q131586761
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a1/Cornelis_Verbeeck_-_Schiffe_in_rauer_See_-_D.2016-0057_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Cornelis_Verbeeck_-_Schiffe_in_rauer_See_-_D.2016-0057_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Cornelis Verbeeck
+provenance:
+  - owner: person/coralie-b-hagedorn
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6149/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/robert-a-cooper
+    direct: true
+    place: hayward
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6149/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/bonhams-butterfields
+    role: agent
+    acquired: 2006-05-16
+    ended: 2006-05-16
+    method: auction
+    direct: true
+    place: san-francisco
+    label: Lot 3043
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6149/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/david-koetser-gallery
+    role: dealer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6149/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    acquired: 2007
+    direct: true
+    place: switzerland
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6149/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "111645"
+    label: RKD Bild-Nr. (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6149/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6149/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6149/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6149/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6149/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6149/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6149/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6149/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

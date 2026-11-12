@@ -1,0 +1,70 @@
+public_id: 120061
+title: Hochsommer
+names:
+  - lang: null
+    role: translation
+    text: Midsummer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1140/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: augusto-giacometti
+created: 1917
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [105, 108]
+institution: kunsthaus-zurich
+inventory_number: 1951/0037
+web_url: https://collection.kunsthaus.ch/de/collection/item/1140/
+wikidata_id: Q131586351
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4d/Augusto_Giacometti_-_Hochsommer_-_1951-0037_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Augusto_Giacometti_-_Hochsommer_-_1951-0037_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Augusto Giacometti
+provenance:
+  - owner: person/erwin-poeschel
+    ended: 1951
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1140/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1951
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1140/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 10.06.1952 II., Archiv ZKG/KHZ, 10.30.10.42a.1950 bis 1952."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1140/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1140/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1140/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1140/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1140/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1140/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1140/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

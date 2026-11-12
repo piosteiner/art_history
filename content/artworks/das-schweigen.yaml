@@ -1,0 +1,116 @@
+public_id: 120325
+title_lang: de
+title: Das Schweigen
+names:
+  - lang: null
+    role: translation
+    text: Silence
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1757/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Le Silence
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1757/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: henry-fuseli
+created: 1794/1806
+created_label: c. 1799/1801
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [63.5, 51.5]
+institution: kunsthaus-zurich
+inventory_number: 1976/0025
+web_url: https://collection.kunsthaus.ch/de/collection/item/1757/
+wikidata_id: Q107572682
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d0/Henry_Fuseli_-_Das_Schweigen_-_1976-0025_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henry_Fuseli_-_Das_Schweigen_-_1976-0025_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Henry Fuseli
+provenance:
+  - owner: person/johann-heinrich-fussli
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1757/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/paul-ganz
+    acquired: 1936 or earlier
+    ended: 1954
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1757/
+        note: "Footnote: Kat. Kunsthaus Zürich 1936, S. 10, No. 18; Brief Wilhelm Wartmann an Paul Ganz, 21.08.1936, Archiv ZKG/KHZ, 10.30.10.263, S. 220: Darin ist eine Liste mit ausgewählten Bildern aus dem Eigentum Paul Ganz' enthalten, die er für die Ausstellung «Schweizer Maler im Zeitalter des Klassizismus und der Romantik» im September 1936 zur Verfügung stellte. Unter Füssli No. 1: Das Schweigen."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/beatrice-ganz-kern
+    acquired: 1954
+    ended: 1976-11-12
+    method: inheritance
+    direct: true
+    label: Oberhofen (Kt. Bern)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1757/
+        note: "Footnote: Schiff I.502.908: «Oberhofen, Kt. Bern, Frau Beatrice Ganz»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-koller
+    role: agent
+    acquired: 1976-11-12
+    ended: 1976-11-13
+    method: auction
+    direct: true
+    place: zurich
+    label: Lot 5128
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1757/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1976-11-13
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1757/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.502.908
+    label: Schiff (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1757/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1757/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1757/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1757/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1757/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1757/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1757/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

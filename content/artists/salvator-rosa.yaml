@@ -1,0 +1,69 @@
+public_id: 120627
+name: Salvator Rosa
+given_name: Salvator
+family_name: Rosa
+birth: 1615-06-20
+death: 1673-03-15
+wikidata_id: Q359421
+metadata:
+  sources: [Wikidata Q359421 (retrieved 2026-11-12)]
+relationships:
+  - type: born_in
+    to: place/naples
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q359421
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q359421
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q359421
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q359421
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q359421
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q359421
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Self-portrait_by_Salvator_Rosa.jpg/1280px-Self-portrait_by_Salvator_Rosa.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Self-portrait_by_Salvator_Rosa.jpg
+    license: Public domain
+    credit: Salvator Rosa
+identifiers:
+  bnf: "123233378"
+  gnd: "118791141"
+  idref: "032146876"
+  kulturnav: 44bc143d-f6a2-4aac-b9cf-d5cb1e068219
+  lc: n50048421
+  rkd: "68204"
+  ulan: "500011328"
+  viaf: "46830369"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q359421
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q359421

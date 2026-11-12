@@ -1,0 +1,137 @@
+public_id: 120060
+title_lang: de
+title: Das Turnerbankett
+names:
+  - lang: null
+    role: translation
+    text: Gymnasts’ Banquet
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1135/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Banquet des gymnastes
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1135/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: 1877/1878
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [228, 355]
+institution: kunsthaus-zurich
+inventory_number: "1109"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1135/
+on_loan: true
+on_loan_since: 1916
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q104537485
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Hodler_Turnerbankett_1878.jpg/1280px-Hodler_Turnerbankett_1878.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Hodler_Turnerbankett_1878.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/fritz-meyer-fierz
+    acquired: 1916-04-01
+    ended: 1916-04-01
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1135/
+        note: "Footnote: Bätschmann/Müller 2017, Nr. 1066, https://ferdinand-hodler.ch/Werke.aspx?id=6006494 [Zugriff: 21.01.2022]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/salon-bollag
+    role: agent
+    acquired: 1916-11-25
+    ended: 1916-11-25
+    method: auction
+    direct: true
+    place: zurich
+    label: Lot 48 (Turnerbankett, 1880)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1135/
+        note: "Footnote: Auktion Bollag (25.11.1916), S. 12, Lot 48 (vgl. https://doi.org/10.11588/diglit.20372#0014); Kunsthaus Zürich 2007 (Sammlungskatalog), S. 274; Bätschmann/Müller 2017, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/alfred-rutschi
+    acquired: 1916-11
+    ended: 1929
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1135/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 3; Brief Wilhelm Wartmann an Adolf Jöhr, 23.06.1944, ZKG/KHZ, Inventarbogen/Werkdossier Slg., S. 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: heirs of Alfred Rütschi
+    acquired: 1929
+    ended: 1944
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1135/
+        note: "Footnote: Bätschmann/Müller 2017, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/fides-treuhand-vereinigung
+    acquired: 1944
+    ended: 1955
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1135/
+        note: "Footnote: Leihvertrag und Brief Adolf Jöhr an Wilhlem Wartmann, 30.06.1944, ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1955
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1135/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.1066
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1135/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1135/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1135/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1135/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1135/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1135/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1135/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1135/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

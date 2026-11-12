@@ -1,0 +1,81 @@
+public_id: 120133
+title_lang: de
+title: Allegorie auf den Tod einer jungen Gattin
+names:
+  - lang: en
+    role: translation
+    text: Allegory on the Death of a Young Wife
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1281/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Allégorie à la mémoire d’une jeune épouse décédée
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1281/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: heinrich-freudweiler
+created: c. 1790
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Holz
+dimensions: [56, 41.5]
+institution: kunsthaus-zurich
+inventory_number: "2255"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1281/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586653
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a3/Heinrich_Freudweiler_-_Allegorie_auf_den_Tod_einer_jungen_Gattin_-_2255_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Heinrich_Freudweiler_-_Allegorie_auf_den_Tod_einer_jungen_Gattin_-_2255_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Heinrich Freudweiler
+provenance:
+  - owner_label: Frl. Blum
+    ended: 1932
+    place: mulhouse
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1281/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1932
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1281/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1281/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1281/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1281/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1281/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1281/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1281/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1281/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,52 @@
+public_id: 120873
+name: Caspar Wolf
+given_name: Caspar
+family_name: Wolf
+birth: 1735-05-03
+death: 1783-10-06
+wikidata_id: Q40522
+metadata:
+  sources: [Wikidata Q40522 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q40522
+  - type: died_in
+    to: place/heidelberg
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q40522
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q40522
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f0/Caspar_Wolf_1774.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Caspar_Wolf_1774.jpg
+    license: Public domain
+    credit: Caspar Wolf
+identifiers:
+  bnf: 12504728k
+  gnd: "118634658"
+  hls: "021970"
+  idref: "034275282"
+  lc: n81029096
+  rkd: "85338"
+  sikart: "4022852"
+  ulan: "500026970"
+  viaf: "39942698"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q40522
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q40522

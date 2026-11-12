@@ -1,0 +1,92 @@
+public_id: 120101
+title: Karneval in Flandern
+names:
+  - lang: null
+    role: translation
+    text: Carnival in Flanders
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/12/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Carnaval en Flandre
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/12/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: james-ensor
+created: 1920/1934
+created_label: c. 1925/1929
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Holz
+dimensions: [27, 36]
+institution: kunsthaus-zurich
+inventory_number: "2123"
+web_url: https://collection.kunsthaus.ch/de/collection/item/12/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586649
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/db/James_Ensor_-_Karneval_in_Flandern_-_2123_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:James_Ensor_-_Karneval_in_Flandern_-_2123_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: James Ensor
+provenance:
+  - owner: person/sam-salz
+    role: dealer
+    direct: true
+    place: paris
+    label: Paris and New York, NY
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/12/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-herbert-tannenbaum
+    role: dealer
+    ended: 1930
+    direct: true
+    place: mannheim
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/12/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1930
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/12/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/12/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/12/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/12/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/12/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/12/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/12/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/12/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

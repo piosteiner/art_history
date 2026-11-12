@@ -17,6 +17,7 @@ materials: [oak]
 dimensions: [36.8]
 institution: metropolitan-museum-of-art
 inventory_number: 17.190.185a, b
+web_url: https://www.metmuseum.org/art/collection/search/464142
 wikidata_id: Q29385357
 metadata:
   sources: [Wikidata Q29385357 (retrieved 2026-11-09)]
@@ -59,3 +60,6 @@ sources:
     - accessed: 2026-11-09
       property: P217
       wikidata: Q29385357
+    - url: https://www.metmuseum.org/art/collection/search/464142
+      source: metropolitan-museum-collection
+      accessed: 2026-11-11

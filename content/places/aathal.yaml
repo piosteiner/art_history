@@ -1,0 +1,22 @@
+public_id: 121184
+name: Aathal
+kind: settlement
+parent: canton-of-zurich
+country_code: CH
+location: [8.77069, 47.3353]
+wikidata_id: Q303734
+metadata:
+  sources: [Wikidata Q303734 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q303734
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q303734
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q303734

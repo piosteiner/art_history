@@ -1,0 +1,83 @@
+public_id: 120865
+name: Thomas Fearnley
+given_name: Thomas
+family_name: Fearnley
+birth: 1802-12-27
+death: 1842-01-16
+wikidata_id: Q1969461
+metadata:
+  sources: [Wikidata Q1969461 (retrieved 2026-11-12)]
+relationships:
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q1969461
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1969461
+  - type: worked_in
+    to: place/dresden
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1969461
+  - type: worked_in
+    to: place/england
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1969461
+  - type: worked_in
+    to: place/oslo
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1969461
+  - type: worked_in
+    to: place/copenhagen
+    period: 1821/1823
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1969461
+  - type: worked_in
+    to: place/munich
+    period: 1830/1832
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1969461
+  - type: student_of
+    to: artist/johan-christian-dahl
+    sources:
+      - accessed: 2026-11-12
+        property: P802
+        wikidata: Q164735
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c2/Thomas_Fearnley.png
+    source_url: https://commons.wikimedia.org/wiki/File:Thomas_Fearnley.png
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 13186457x
+  gnd: "124517161"
+  idref: "035392215"
+  kulturnav: 722dc759-8aa4-4a32-a0bb-75564ff71f1e
+  lc: nr94036580
+  rkd: "27475"
+  ulan: "500020244"
+  viaf: "54421287"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1969461
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1969461

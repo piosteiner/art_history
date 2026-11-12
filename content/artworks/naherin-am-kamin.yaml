@@ -1,0 +1,78 @@
+public_id: 120463
+title_lang: de
+title: Näherin am Kamin
+names:
+  - lang: de
+    role: former
+    text: Die Strickerin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1972/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: c. 1885
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [38, 48.5]
+institution: kunsthaus-zurich
+inventory_number: "1127"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1972/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586108
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/58/Ferdinand_Hodler_-_N%C3%A4herin_am_Kamin_-_1127_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_N%C3%A4herin_am_Kamin_-_1127_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/fritz-meyer-fierz
+    ended: 1917
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1972/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1917
+    method: purchase
+    direct: true
+    place: zurich
+    label: «Kauf aus der Ausstellung Ferdinand Hodler (14.06. - 15.08.1917) im Kunsthaus Zürich»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1972/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.1154
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1972/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

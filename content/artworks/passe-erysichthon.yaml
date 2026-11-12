@@ -7,6 +7,8 @@ kind: print
 medium: engraving
 materials: [copper]
 institution: rijksmuseum
+inventory_number: RP-P-OB-15.951
+web_url: https://www.rijksmuseum.nl/en/collection/RP-P-OB-15.951
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/a/aa/Erysichthon_kapt_de_boom_van_Ceres_Metamorfosen_van_Ovidius_%28serietitel%29%2C_RP-P-OB-15.951.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Erysichthon_kapt_de_boom_van_Ceres_Metamorfosen_van_Ovidius_(serietitel),_RP-P-OB-15.951.jpg
@@ -34,3 +36,7 @@ sources:
   title_status:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 3 (10.10.2024)
+  inventory_number:
+    - url: https://www.rijksmuseum.nl/en/collection/RP-P-OB-15.951
+      source: rijksmuseum-nl
+      accessed: 2026-11-11

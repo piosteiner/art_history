@@ -1,0 +1,22 @@
+public_id: 121280
+name: Kidderminster
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-2.249, 52.3885]
+wikidata_id: Q844062
+metadata:
+  sources: [Wikidata Q844062 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q844062
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q844062
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q844062

@@ -1,0 +1,55 @@
+public_id: 121475
+name: Jan Pauwel Gillemans (I)
+given_name: Jan Pauwel Gillemans
+family_name: (I)
+birth: 1618
+death: 1675
+wikidata_id: Q2646296
+metadata:
+  sources: [Wikidata Q2646296 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2646296
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q2646296
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q2646296
+  - type: worked_in
+    to: place/liege
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q2646296
+  - type: worked_in
+    to: place/antwerp
+    period: 1648/1675
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q2646296
+identifiers:
+  gnd: "1050807030"
+  rkd: "31699"
+  ulan: "500001274"
+  viaf: "95688361"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q2646296
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q2646296

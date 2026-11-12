@@ -1,0 +1,50 @@
+public_id: 121427
+name: Dirck de Bray
+given_name: Dirck
+family_name: de Bray
+birth: 1635
+death: 1694
+wikidata_id: Q1911486
+metadata:
+  sources: [Wikidata Q1911486 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1911486
+  - type: born_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q1911486
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1911486
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7e/Dirck_de_Bray_cropped.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dirck_de_Bray_cropped.jpg
+    license: Public domain
+    credit: Jan de Bray
+identifiers:
+  bnf: "157909650"
+  gnd: "132442876"
+  idref: "128792590"
+  lc: n2009057014
+  rkd: "12192"
+  ulan: "500013939"
+  viaf: "302936959"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1911486
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1911486

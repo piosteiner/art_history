@@ -1,0 +1,47 @@
+public_id: 121141
+name: Reading
+names:
+  - lang: ja
+    role: translation
+    text: レディング
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q161491
+  - lang: zh
+    role: translation
+    text: 雷丁
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q161491
+  - lang: ko
+    role: translation
+    text: 레딩
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q161491
+  - lang: ru
+    role: translation
+    text: Рединг
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q161491
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-0.97306, 51.45417]
+wikidata_id: Q161491
+metadata:
+  sources: [Wikidata Q161491 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q161491
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q161491
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q161491

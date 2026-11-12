@@ -1,0 +1,198 @@
+public_id: 121190
+title_lang: it
+title: Rovine della Kreuzkirche di Dresda
+names:
+  - lang: de
+    role: translation
+    text: Die Ruinen der Kreuzkirche in Dresden
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: The Ruins of the Kreuzkirche in Dresden
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Les Ruines de l’église Sainte-Croix à Dresde
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: bernardo-bellotto
+created: 1765
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [84.5, 107.3]
+institution: kunsthaus-zurich
+inventory_number: KS 70
+web_url: https://collection.kunsthaus.ch/de/collection/item/471/
+on_loan: true
+on_loan_since: 1994
+wikidata_id: Q19681607
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/be/Bernardo_Bellotto_-_Rovine_della_Kreuzkirche_di_Dresda_-_KS_70_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Bernardo_Bellotto_-_Rovine_della_Kreuzkirche_di_Dresda_-_KS_70_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Bernardo Bellotto
+provenance:
+  - owner: person/stanislaus-august-poniatowski
+    acquired: 1767
+    ended: 1798
+    method: gift
+    direct: true
+    label: «Geschenk des Künstlers»
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/joseph-poniatowski
+    acquired: 1798
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/maria-teresa-tyszkiewicz
+    acquired: 1813
+    ended: 1813
+    method: inheritance
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: the Royal Castle, Warsaw
+    acquired: 1818
+    ended: 1818
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/dorotheum
+    role: agent
+    acquired: 1930-06-04
+    ended: 1930-06-06
+    method: auction
+    place: vienna
+    label: Lot 203
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        note: "Footnote: Auktionskatalog, Glassammlung, Waffen und Jagdgeräte, Gemälde und Graphik alter und neuer Meister, Skulpturen und Antiquitäten. 403. Kunstauktion, Dorotheum, Wien, 04.–06.06.1930, Lot 203, https://doi.org/10.11588/diglit.8410#0024 [Zugriff: 22.12.2021]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/dorotheum
+    role: agent
+    acquired: 1931-05-18
+    ended: 1931-05-20
+    method: auction
+    place: vienna
+    label: Lot 1
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        note: "Footnote: Auktionskatalog, Gemälde alter und neuerer Meister, Aquarelle, Miniaturen, Skulpturen, Silber, Dosen, Keramik, Textilien, diverse Antiquitäten, Japonika, Dorotheum, Wien, 18.–20.05.1931, https://doi.org/10.11588/diglit.6988#0006 [Zugriff: 22.12.2021]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/dorotheum
+    role: agent
+    acquired: 1941-10-14
+    ended: 1941-10-14
+    method: auction
+    place: vienna
+    label: Lot 8
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        note: "Footnote: Auktionskatalog 468, Ölgemälde und Aquarelle, Handzeichnungen, Skulpturen, Möbel, Bildteppiche und andere Textilien, Arbeiten aus Gold, Silber und Metall, darunter eine Bestecksammlung, Porzellan, Fayence und Glas, Dosen, asiatische Kunsterzeugnisse, Dorotheum, Wien, 14.–17.10.1941, S. 5, Tafel 1, https://doi.org/10.11588/diglit.13868#0007 & https://doi.org/10.11588/diglit.13868#0071 [Zugriff: 22.…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/bruno-jellinek
+    acquired: 1943
+    ended: 1943
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/phillips
+    role: agent
+    acquired: 1986-05-13
+    ended: 1986-05-13
+    method: auction
+    place: london
+    label: Lot 67
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/richard-l-feigen
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/peter-jay-sharp
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1994-01-13
+    ended: 1994-01-13
+    method: auction
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/stiftung-betty-und-david-koetser
+    acquired: 1994
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

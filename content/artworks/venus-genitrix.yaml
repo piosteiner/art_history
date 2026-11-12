@@ -1,0 +1,83 @@
+public_id: 121132
+title: Venus Genitrix
+creator: arnold-bocklin
+created: 1895
+kind: painting
+medium: Tempera auf Holz
+dimensions: [105, 150]
+institution: kunsthaus-zurich
+inventory_number: "1167"
+web_url: https://collection.kunsthaus.ch/de/collection/item/409/
+on_loan: true
+on_loan_since: 1918
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586957
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4b/Arnold_B%C3%B6cklin_-_Venus_Genitrix_-_1167_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Arnold_B%C3%B6cklin_-_Venus_Genitrix_-_1167_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Arnold Böcklin
+provenance:
+  - owner: person/albert-neisser
+    acquired: 1897
+    direct: true
+    place: wroc-aw
+    label: Breslau
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/409/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-arnot
+    role: dealer
+    ended: 1917
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/409/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1917
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/409/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "511.446"
+    label: Andree 1998 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

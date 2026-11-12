@@ -1,0 +1,39 @@
+public_id: 120502
+name: Felix Meyer
+given_name: Felix
+family_name: Meyer
+birth: 1653-02-01
+death: 1713-06-11
+wikidata_id: Q1403673
+metadata:
+  sources: [Wikidata Q1403673 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1403673
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3e/Jean_Baptiste_Descamps-Felix_Meyer_p307.gif
+    source_url: https://commons.wikimedia.org/wiki/File:Jean_Baptiste_Descamps-Felix_Meyer_p307.gif
+    license: Public domain
+    credit: Jean-Baptiste Descamps
+identifiers:
+  bnf: 14960267b
+  gnd: "139148213"
+  hls: "034903"
+  kulturnav: 3f96c9cb-e5a7-4256-b5e1-1ce00a899738
+  rkd: "55725"
+  sikart: "4023133"
+  ulan: "500019406"
+  viaf: "76585798"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1403673
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1403673

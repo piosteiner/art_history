@@ -1,0 +1,61 @@
+public_id: 120901
+name: Jacques Sablet
+given_name: Jacques
+family_name: Sablet
+names:
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: le Peintre du Soleil
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q6120859
+birth: 1749-01-28
+death: 1803-04-04
+wikidata_id: Q6120859
+metadata:
+  sources: [Wikidata Q6120859 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q6120859
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q6120859
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q6120859
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Jacques_Sablet%2C_par_lui-m%C3%AAme.jpg/1280px-Jacques_Sablet%2C_par_lui-m%C3%AAme.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacques_Sablet,_par_lui-m%C3%AAme.jpg
+    license: Public domain
+    credit: Jacques Sablet
+identifiers:
+  bnf: 14963503n
+  gnd: "118837281"
+  hls: "022098"
+  idref: "161597300"
+  kulturnav: 15ac7861-871d-45d2-ba38-4f6f13872ae2
+  lc: n85364213
+  rkd: "69186"
+  sikart: "4022879"
+  ulan: "500032173"
+  viaf: "34726940"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q6120859
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q6120859

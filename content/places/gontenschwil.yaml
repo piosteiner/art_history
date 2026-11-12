@@ -1,0 +1,22 @@
+public_id: 120809
+name: Gontenschwil
+kind: settlement
+parent: aargau
+country_code: CH
+location: [8.14722, 47.27333]
+wikidata_id: Q65333
+metadata:
+  sources: [Wikidata Q65333 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q65333
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q65333
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q65333

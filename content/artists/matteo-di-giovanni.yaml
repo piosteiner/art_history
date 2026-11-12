@@ -1,0 +1,56 @@
+public_id: 120652
+name: Matteo di Giovanni
+given_name: Matteo
+family_name: di Giovanni
+birth: 1435
+death: 1495
+wikidata_id: Q1373474
+metadata:
+  sources: [Wikidata Q1373474 (retrieved 2026-11-12)]
+relationships:
+  - type: born_in
+    to: place/sansepolcro
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q1373474
+  - type: died_in
+    to: place/siena
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q1373474
+  - type: worked_in
+    to: place/siena
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1373474
+  - type: associated_with
+    to: movement/sienese-school
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q1373474
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/La_vierge_%C3%A0_l%27enfant_et_deux_anges%2C_Matteo_di_Giovanni.jpg/1280px-La_vierge_%C3%A0_l%27enfant_et_deux_anges%2C_Matteo_di_Giovanni.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:La_vierge_%C3%A0_l%27enfant_et_deux_anges,_Matteo_di_Giovanni.jpg
+    license: Public domain
+    credit: Attributed to Matteo di Giovanni
+identifiers:
+  bnf: "149136585"
+  gnd: "119220806"
+  idref: "074373668"
+  lc: nr91029522
+  rkd: "54021"
+  ulan: "500025991"
+  viaf: "95842058"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1373474
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1373474

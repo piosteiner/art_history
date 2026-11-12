@@ -1,0 +1,83 @@
+public_id: 121277
+name: Annibale Carracci
+given_name: Annibale
+family_name: Carracci
+birth: 1560-11-13
+death: 1609-07-15
+wikidata_id: Q7824
+metadata:
+  sources: [Wikidata Q7824 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/papal-states
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q7824
+  - type: born_in
+    to: place/bologna
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q7824
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q7824
+  - type: worked_in
+    to: place/parma
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q7824
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q7824
+  - type: worked_in
+    to: place/bologna
+    period: 1578/1595
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q7824
+  - type: worked_in
+    to: place/rome
+    period: 1595/1609
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q7824
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q7824
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8a/Annibale_Carracci_-_Self-portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Annibale_Carracci_-_Self-portrait.jpg
+    license: Public domain
+    credit: Annibale Carracci
+identifiers:
+  bnf: 12466547v
+  gnd: "118519255"
+  idref: "033849811"
+  kulturnav: b2ffc791-ff38-442a-a390-561939e87ae6
+  lc: n80043473
+  rkd: "15558"
+  ulan: "500115350"
+  viaf: "12405951"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q7824
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q7824

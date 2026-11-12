@@ -1,0 +1,66 @@
+public_id: 121198
+name: Eugen Bracht
+given_name: Eugen
+family_name: Bracht
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Eugen Felix Prosper Bracht
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q1372410
+birth: 1842-06-03
+death: 1921-11-16
+wikidata_id: Q1372410
+metadata:
+  sources: [Wikidata Q1372410 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1372410
+  - type: died_in
+    to: place/darmstadt
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q1372410
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1372410
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q1372410
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/51/EugenBracht_Wiki_Fotowerkstatt.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:EugenBracht_Wiki_Fotowerkstatt.jpg
+    license: Public domain
+    credit: Nicola Perscheid
+identifiers:
+  bnf: 14970448t
+  dome: "1446"
+  gnd: "119546159"
+  idref: "080800734"
+  lc: n94028709
+  rkd: "11863"
+  sikart: "4024154"
+  ulan: "500078912"
+  viaf: "7659369"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1372410
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1372410

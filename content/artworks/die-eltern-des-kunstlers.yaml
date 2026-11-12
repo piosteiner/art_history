@@ -1,0 +1,90 @@
+public_id: 120848
+title_lang: de
+title: Die Eltern des Künstlers
+names:
+  - lang: en
+    role: translation
+    text: The Artist's Parents
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3042/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: albert-welti
+created: 1899
+kind: painting
+medium: Tempera auf Holz
+dimensions: [89, 138]
+institution: kunsthaus-zurich
+inventory_number: "772"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3042/
+on_loan: true
+on_loan_since: 1902
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584701
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/85/Albert_Welti_-_Die_Eltern_des_K%C3%BCnstlers_-_772_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_Welti_-_Die_Eltern_des_K%C3%BCnstlers_-_772_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Albert Welti
+provenance:
+  - owner: person/barbara-welti-furrer
+    co_owners: [person/albert-welti-furrer]
+    acquired: 1902 or earlier
+    ended: 1912 or earlier
+    direct: true
+    place: zurich
+    label: porträtierte Eltern des Künstlers
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3042/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: artist/albert-welti
+    ended: 1901
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3042/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/schweizerische-eidgenossenschaft
+    acquired: 1901
+    method: purchase
+    direct: true
+    place: bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3042/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3042/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3042/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3042/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3042/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3042/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3042/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3042/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3042/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

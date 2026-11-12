@@ -1,0 +1,96 @@
+public_id: 120796
+title: Spiel ohne Gewinn
+names:
+  - lang: null
+    role: translation
+    text: Game Without Prize
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2865/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: raphael-ritz
+created: 1883
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [61, 79]
+institution: kunsthaus-zurich
+inventory_number: "2357"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2865/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586800
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/78/Raphael_Ritz_-_Spiel_ohne_Gewinn_-_2357_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Raphael_Ritz_-_Spiel_ohne_Gewinn_-_2357_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Rafael Ritz
+provenance:
+  - owner: institution/komitee-der-schweizer-landesausstellung-zurich-1883
+    acquired: 1883
+    ended: 1883
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2865/
+        note: "Footnote: Ruppen 1972, S. 86."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/eduard-guyer-freuler
+    acquired: 1883
+    ended: 1905-12-12
+    method: gift
+    direct: true
+    label: «Geschenk des Komitees der Schweizer Landesausstellung Zürich 1883 an den Jury-Präsidenten Eduard Guyer-Freuler»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2865/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Frau E. Guyer-Freuler
+    acquired: 1905-12-12
+    ended: 1935-01-25
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2865/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 25.01.1935 III. d., Archiv ZKG/KHZ, 10.30.10.41."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1935
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2865/
+        note: "Footnote: Wie oben Fussnote 4. Das Werk kam gemäss Verfügung von Eduard Guyer-Freuler in seinem Testament vom September 1904 nach dem Tod seiner Frau 1934 ans Kunsthaus Zürich."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2865/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2865/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2865/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2865/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2865/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2865/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2865/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

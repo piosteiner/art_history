@@ -1,0 +1,91 @@
+public_id: 120345
+title_lang: de
+title: Der Vesuv von Ischia aus gesehen
+names:
+  - lang: en
+    role: translation
+    text: Mount Vesuvius Seen from Ischia
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179955/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Le Vésuve depuis Ischia
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179955/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: johan-christian-dahl
+created: 1820/1821
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [37, 47]
+institution: kunsthaus-zurich
+inventory_number: ZKG.2018/0004
+web_url: https://collection.kunsthaus.ch/de/collection/item/179955/
+wikidata_id: Q131586760
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/84/Johan_Christian_Dahl_-_Der_Vesuv_von_Ischia_aus_gesehen_-_ZKG.2018-0004_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Johan_Christian_Dahl_-_Der_Vesuv_von_Ischia_aus_gesehen_-_ZKG.2018-0004_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Johan Christian Dahl
+provenance:
+  - owner: person/christen-sveaas
+    acquired: 2008
+    ended: 2018
+    method: purchase
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179955/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2018
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179955/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/finarte-casa-d-aste
+    role: agent
+    acquired: 2008-12
+    ended: 2008-12
+    method: auction
+    direct: true
+    place: milan
+    label: Lot 323
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179955/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179955/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179955/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179955/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179955/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179955/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179955/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179955/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

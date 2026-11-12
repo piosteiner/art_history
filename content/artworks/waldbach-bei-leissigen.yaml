@@ -1,0 +1,79 @@
+public_id: 120443
+title_lang: de
+title: Waldbach bei Leissigen
+names:
+  - lang: null
+    role: translation
+    text: Forest Brook near Leissigen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1900/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: 1904
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [88.5, 101.5]
+institution: kunsthaus-zurich
+inventory_number: "1367"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1900/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586076
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/ce/Ferdinand_Hodler_-_Waldbach_bei_Leissigen_-_1367_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Waldbach_bei_Leissigen_-_1367_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/richard-schwarzenbach
+    co_owners: [person/mathilde-schwarzenbach]
+    acquired: 1906 or earlier
+    ended: 1920
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1900/
+        note: "Footnote: Bätschmann/Müller 2008 I.300, siehe https://www.ferdinand-hodler.ch/werke.aspx?id=9905339 (11.01.2022). Im Werkverzeichnis wird allerdings nur Richard Schwarzenbach als Eigentümer bis 1920 genannt. Dieser verstarb allerdings schon 1908. Das Werk ging nach seinem Tod an Mathilde Schwarzenbach, die es 1920 im Namen beider dem Kunsthaus vermachte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1920
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1900/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.300
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1900/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

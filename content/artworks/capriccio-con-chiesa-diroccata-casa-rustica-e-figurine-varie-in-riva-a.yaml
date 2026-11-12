@@ -1,0 +1,130 @@
+public_id: 120206
+title_lang: it
+title: Capriccio con chiesa diroccata, casa rustica e figurine varie in riva alla laguna
+names:
+  - lang: de
+    role: translation
+    text: Capriccio. Altes Haus in der Lagune
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Capriccio. Old House on the Lagoon
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Capriccio. Vieille maison de la lagune
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: francesco-guardi
+created: 1781
+kind: oil painting
+medium: Öl auf Holz
+dimensions: [20.5, 16.2]
+institution: kunsthaus-zurich
+inventory_number: KS 68
+web_url: https://collection.kunsthaus.ch/de/collection/item/1469/
+on_loan: true
+on_loan_since: 1976
+wikidata_id: Q131586134
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5c/Francesco_Guardi_-_Capriccio_con_chiesa_diroccata%2C_casa_rustica_e_figurine_varie_in_riva_alla_laguna_-_KS_68_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Francesco_Guardi_-_Capriccio_con_chiesa_diroccata,_casa_rustica_e_figurine_varie_in_riva_alla_laguna_-_KS_68_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Francesco Guardi
+provenance:
+  - owner_label: Rostirolla
+    method: purchase
+    direct: true
+    label: Trient und Paris; «Kauf nach der Familientradition direkt vom Künstler»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown
+    label: Sir David Ross (Sammler/-in)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/e-speelmann
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1967-07-05
+    ended: 1967-07-05
+    method: auction
+    place: london
+    label: Lot 28; an David Weirs
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/david-weirs
+    acquired: 1967-07-05
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/betty-koetser
+    co_owners: [person/david-m-koetser]
+    acquired: before 1976
+    ended: 1986
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/stiftung-betty-und-david-koetser
+    acquired: 1986
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1469/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

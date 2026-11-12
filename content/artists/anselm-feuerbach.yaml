@@ -1,0 +1,69 @@
+public_id: 120292
+name: Anselm Feuerbach
+given_name: Anselm
+family_name: Feuerbach
+birth: 1829-09-12
+death: 1880-01-04
+wikidata_id: Q250194
+metadata:
+  sources: [Wikidata Q250194 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-bavaria
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q250194
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q250194
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q250194
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q250194
+  - type: studied_at
+    to: institution/kunstakademie-dusseldorf
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q250194
+  - type: associated_with
+    to: movement/neoclassicism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q250194
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b9/Anselm_Feuerbach_007.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anselm_Feuerbach_007.jpg
+    license: Public domain
+    credit: Anselm Feuerbach
+identifiers:
+  bnf: "122164565"
+  dome: "5513"
+  gnd: "118532731"
+  idref: "029380766"
+  lc: n50005190
+  rkd: "27849"
+  ulan: "500115287"
+  viaf: "17272859"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q250194
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q250194

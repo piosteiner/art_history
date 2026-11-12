@@ -1,0 +1,22 @@
+public_id: 120683
+name: Zollikerberg
+kind: settlement
+parent: canton-of-zurich
+country_code: CH
+location: [8.60336, 47.34595]
+wikidata_id: Q218665
+metadata:
+  sources: [Wikidata Q218665 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q218665
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q218665
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q218665

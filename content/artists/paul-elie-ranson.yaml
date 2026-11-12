@@ -1,0 +1,63 @@
+public_id: 120526
+name: Paul-Élie Ranson
+given_name: Paul-Élie
+family_name: Ranson
+birth: 1861-03-29
+death: 1909-02-20
+wikidata_id: Q585067
+metadata:
+  sources: [Wikidata Q585067 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q585067
+  - type: born_in
+    to: place/limoges
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q585067
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q585067
+  - type: studied_at
+    to: institution/ecole-nationale-superieure-des-arts-decoratifs
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q585067
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q585067
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3b/Portr%C3%A4t_Paul_Ranson.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portr%C3%A4t_Paul_Ranson.jpg
+    license: Public domain
+    credit: Paul Sérusier
+identifiers:
+  bnf: "131835951"
+  dome: "313"
+  gnd: "119341441"
+  idref: "035350679"
+  lc: n98028882
+  rkd: "65606"
+  ulan: "500029480"
+  viaf: "88739572"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q585067
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q585067

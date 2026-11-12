@@ -1,0 +1,113 @@
+public_id: 120104
+title_lang: de
+title: Phaëthon im Zeichen des Skorpions
+names:
+  - lang: en
+    role: translation
+    text: Phaeton in the Constellation of Scorpio
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1209/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Phaéthon sous le signe du scorpion
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1209/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: augusto-giacometti
+created: 1911
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [140]
+institution: kunsthaus-zurich
+inventory_number: 1991/0012
+web_url: https://collection.kunsthaus.ch/de/collection/item/1209/
+wikidata_id: Q131585523
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2a/Augusto_Giacometti_-_Pha%C3%ABthon_im_Zeichen_des_Skorpions_-_1991-0012_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Augusto_Giacometti_-_Pha%C3%ABthon_im_Zeichen_des_Skorpions_-_1991-0012_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Augusto Giacometti
+provenance:
+  - owner: person/c-schneiter
+    ended: 1928 or earlier
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1209/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 335."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/c-schneiter
+    role: estate
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1209/
+        note: "Footnote: Wie oben Fussnote 2: an «dessen Sohn»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-romer
+    role: dealer
+    ended: 1991
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1209/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/genossenschaft-zum-baugarten-und-ein-ungenannter-gonner
+    acquired: 1991
+    ended: 1991
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1209/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1991
+    method: gift
+    direct: true
+    place: zurich
+    label: «der Genossenschaft zum Baugarten und eines ungenannten Gönners»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1209/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1209/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1209/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1209/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1209/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1209/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1209/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1209/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

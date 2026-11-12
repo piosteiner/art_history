@@ -1,0 +1,108 @@
+public_id: 121172
+title_lang: fr
+title: La Malade
+names:
+  - lang: de
+    role: translation
+    text: Die Kranke
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/43883/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: The Sick Girl
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/43883/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: felix-vallotton
+created: 1892
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [73.5, 100.5]
+institution: kunsthaus-zurich
+inventory_number: VZK.2016/0072
+web_url: https://collection.kunsthaus.ch/de/collection/item/43883/
+on_loan: true
+on_loan_since: 2016
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q47518807
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/68/F%C3%A9lix_Vallotton_-_La_Malade_-_VZK.2016-0072_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Vallotton_-_La_Malade_-_VZK.2016-0072_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Félix Vallotton
+provenance:
+  - owner: institution/galerie-paul-vallotton
+    role: dealer
+    direct: true
+    place: lausanne
+    label: Nr. 964
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/43883/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/maxime-vallotton
+    acquired: 1936
+    ended: 1936
+    direct: true
+    place: lausanne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/43883/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    direct: true
+    place: switzerland
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/43883/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 2016
+    method: bequest
+    direct: true
+    place: zurich
+    label: «Legat Dr. H. U. Doerig»; mit Unterstützung von Annette Bühler
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/43883/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "118"
+    label: Ducrey (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/43883/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/43883/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/43883/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/43883/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/43883/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/43883/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/43883/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/43883/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

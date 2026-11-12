@@ -1,0 +1,88 @@
+public_id: 120929
+title_lang: de
+title: Dünenlandschaft mit Kaninchenjägern
+names:
+  - lang: en
+    role: translation
+    text: Dune Landscape with Rabbit Hunters
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3223/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: philips-wouwerman
+created: c. 1648
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Eichenholz
+dimensions: [31, 38]
+institution: kunsthaus-zurich
+inventory_number: KS 26
+web_url: https://collection.kunsthaus.ch/de/collection/item/3223/
+on_loan: true
+on_loan_since: 1981
+wikidata_id: Q131587108
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/25/Philips_Wouwerman_-_D%C3%BCnenlandschaft_mit_Kaninchenj%C3%A4gern_-_KS_26_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Philips_Wouwerman_-_D%C3%BCnenlandschaft_mit_Kaninchenj%C3%A4gern_-_KS_26_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Philips Wouwerman
+provenance:
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1883-02-23
+    ended: 1883-02-23
+    method: auction
+    place: paris
+    label: Paris, Sammlung Amédée Gautray
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3223/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/betty-koetser
+    co_owners: [person/david-m-koetser]
+    ended: 1986
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3223/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/stiftung-betty-und-david-koetser
+    acquired: 1986
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3223/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3223/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3223/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3223/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3223/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3223/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3223/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3223/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3223/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

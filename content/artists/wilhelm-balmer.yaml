@@ -1,0 +1,45 @@
+public_id: 120071
+name: Wilhelm Balmer
+given_name: Wilhelm
+family_name: Balmer
+birth: 1865-06-18
+death: 1922-03-01
+wikidata_id: Q2571824
+metadata:
+  sources: [Wikidata Q2571824 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2571824
+  - type: born_in
+    to: place/basel
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q2571824
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/40/Portrait_von_Wilhelm_Balmer_%281865%E2%80%931922%29_Maler.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_von_Wilhelm_Balmer_(1865%E2%80%931922)_Maler.jpg
+    license: CC BY-SA 4.0
+    credit: Wilhelm Balmer
+identifiers:
+  dome: "5839"
+  gnd: "125987471"
+  hls: "022139"
+  lc: nr2001018944
+  rkd: "4101"
+  sikart: "4022984"
+  ulan: "500048082"
+  viaf: "191411837"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q2571824
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q2571824

@@ -1,0 +1,85 @@
+public_id: 121314
+title_lang: de
+title: Stillleben mit Silber-Kerzenständer und Raucherutensilien
+names:
+  - lang: en
+    role: translation
+    text: Still Life with Silver Candlestick and Smoker’s Utensils
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6133/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: hendrick-andriessen
+created: 1600/1649
+created_label: 1st half 17th century
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Eichenholz
+dimensions: [27.7, 23.1]
+institution: kunsthaus-zurich
+inventory_number: D.2016/0018
+web_url: https://collection.kunsthaus.ch/de/collection/item/6133/
+on_loan: true
+on_loan_since: 2016
+wikidata_id: Q131586781
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4a/Hendrick_Andriessen_-_Stillleben_mit_Silber-Kerzenst%C3%A4nder_und_Raucherutensilien_-_D.2016-0018_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Hendrick_Andriessen_-_Stillleben_mit_Silber-Kerzenst%C3%A4nder_und_Raucherutensilien_-_D.2016-0018_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Hendrick Andriessen
+provenance:
+  - owner_label: Wegleiban collection
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6133/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/david-koetser-gallery
+    role: dealer
+    ended: 2001
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6133/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/schweizer-privatsammlung
+    acquired: 2001
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6133/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6133/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6133/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6133/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6133/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6133/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6133/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6133/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6133/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,118 @@
+public_id: 120559
+title_lang: fr
+title: Le Lierre unique eunuque
+names:
+  - lang: de
+    role: translation
+    text: Das Efeu, einziger Eunuch
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Ivy, the Only Eunuch
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: francis-picabia
+created: c. 1920
+created_span: uncertain
+kind: painting
+medium: Ripolin auf Karton
+dimensions: [75, 105]
+institution: kunsthaus-zurich
+inventory_number: 1985/0007
+web_url: https://collection.kunsthaus.ch/de/collection/item/2279/
+wikidata_id: Q131586242
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e4/Francis_Picabia_-_Le_Lierre_unique_eunuque_-_1985-0007_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Francis_Picabia_-_Le_Lierre_unique_eunuque_-_1985-0007_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Francis Picabia
+provenance:
+  - owner: person/paul-eluard
+    ended: 3 July 1924 or later
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+        note: "Footnote: Auktion Hotel Drouot (03.07.1924), No. 46."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/simone-breton-collinet
+    ended: 1953-05
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+        note: "Footnote: Camfield et al. 2016, No. 689, S. 301"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/henrietta-maria-von-meyenburg
+    acquired: 1953
+    ended: 1985
+    direct: true
+    place: basel
+    label: Basel and Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+        note: "Footnote: Wie oben Fussnote 4; Meyer et al. 1994, S. 367, no. 354; Entwurf eines Briefes, verfasst von Henrietta Maria von Meyenburg an Unbekannt, ohne Datum, in: ZKG/KHZ, Inventarbogen/Werkdossier Slg. zu Inv.-Nr. 1986/0025. Es heisst darin: «Mme Collinet vit elle encore? J'ai acheté chez elle en mai 53 - le même jour que le Lierre - un «pigeon» de Max Ernst.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-kornfeld
+    acquired: 1961-06-10
+    ended: 1961-06-10
+    direct: true
+    place: bern
+    label: Lot Nr. 726; vermutlich nicht verkauft
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+        note: "Footnote: Kat. Klipstein und Kornfeld 1961, S. 106."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1985
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 300000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "267"
+    label: Borràs 1985 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,22 @@
+public_id: 120693
+name: Maidenhead
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-0.71667, 51.51667]
+wikidata_id: Q238803
+metadata:
+  sources: [Wikidata Q238803 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q238803
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q238803
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q238803

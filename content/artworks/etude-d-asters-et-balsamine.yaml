@@ -1,0 +1,159 @@
+public_id: 121049
+title_lang: fr
+title: Étude d'asters et balsamine
+names:
+  - lang: de
+    role: translation
+    text: Astern und Springkraut
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/356/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Study of Asters and Balsamine
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/356/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: former
+    text: Blumen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/356/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: eugene-delacroix
+created: 1833
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [73.5, 92.5]
+institution: kunsthaus-zurich
+inventory_number: "2298"
+web_url: https://collection.kunsthaus.ch/de/collection/item/356/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124288366
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5e/Eug%C3%A8ne_Delacroix_-_%C3%89tude_d%27asters_et_balsamine_-_2298_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_-_%C3%89tude_d%27asters_et_balsamine_-_2298_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Eugène Delacroix
+provenance:
+  - owner: artist/eugene-delacroix
+    role: estate
+    acquired: 1863-08-13
+    ended: 1864-02-17
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/356/
+        note: "Footnote: Nachlasssiegel auf der Werkrückseite."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1864-02-17
+    ended: 1864-02-29
+    method: auction
+    direct: true
+    place: paris
+    label: "Lot 221: «Diverses toiles: études; esquisses et ébauches»"
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/356/
+        note: "Footnote: Johnson 1986, Bd. III , No. 495, S. 259."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/monsieur-de-la-rosiere
+    acquired: 1864
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/356/
+        note: "Footnote: Brief von Walter Feilchenfeldt, Zürich Hotel St. Peter, an Wilhelm Wartmann, 20.10.1933, Archiv ZKG/KHZ, 10.30.10.46, Akten Sammlungskommission, Mappe «Sammlungskom. 10. Nov. 1933»; Kat. Knoedler Galleries 1932, No. 5, o. S.; Kat. Société nationale des beaux-arts Paris 1864, No. 118, S. 35: «Bouquet de fleurs.»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/paul-cheramy
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/356/
+        note: "Footnote: Brief von Walter Feilchenfeldt, Zürich Hotel St. Peter, an Wilhelm Wartmann, 20.10.1933, wie oben Fussnote 4; Kat. Knoedler Galleries 1932, wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/paul-sebastien-gallimard
+    ended: 1929
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/356/
+        note: "Footnote: Brief von Walter Feilchenfeldt, Zürich Hotel St. Peter, an Wilhelm Wartmann, 31.10.1933, Archiv ZKG/KHZ, 10.30.10.46, Akten Sammlungskommission, Mappe «Sammlungskom. 10. Nov. 1933»; Brief von Walter Feilchenfeldt, Zürich Hotel St. Peter, an Wilhelm Wartmann, 20.10.1933, wie oben Fussnote 4; E-Mail-Korrespondenz Paul Cassirer & Walter Feilchenfeldt Archiv, Zürich, 09.12.2025; Kat. Neue Galerie Wien…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-paul-cassirer
+    role: dealer
+    acquired: 1929
+    ended: 1933
+    method: purchase
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/356/
+        note: "Footnote: Wie oben Fussnote 5; Johnson 1986, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/paul-cassirer-co-amsterdam
+    role: dealer
+    acquired: 1933
+    ended: 1933-11-10
+    method: transfer
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/356/
+        note: "Footnote: Wie oben Fussnote 5; Sitzungsprotokoll der Sammlungskommission, 10.11.1933, S. 1, I.a., Archiv ZKG/KHZ, 10.30.10.41; Kat. Kunsthaus Zürich 1933, No. 44, S. 10: «Blumen»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1933-11-10
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 20500
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/356/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 18.08.1933, 4.; 23.08.1933; 10.11.1933, I.a., Archiv ZKG/KHZ, 10.30.10.41."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.259.495
+    label: Johnson 1981 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/356/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/356/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/356/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/356/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/356/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/356/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/356/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

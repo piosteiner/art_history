@@ -1,0 +1,53 @@
+public_id: 121299
+name: Auguste Baud-Bovy
+given_name: Auguste
+family_name: Baud-Bovy
+birth: 1848-02-13
+death: 1899-06-03
+wikidata_id: Q116395
+metadata:
+  sources: [Wikidata Q116395 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q116395
+  - type: born_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q116395
+  - type: died_in
+    to: place/davos
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q116395
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/ce/Baud-Bovy-Selfportrait.png
+    source_url: https://commons.wikimedia.org/wiki/File:Baud-Bovy-Selfportrait.png
+    license: Public domain
+    credit: Auguste Baud-Bovy (1848-1899)
+identifiers:
+  bnf: 12325946c
+  dome: "10061"
+  gnd: "119139723"
+  hls: "022142"
+  idref: "032178344"
+  lc: no91024566
+  rkd: "5063"
+  sikart: "4022862"
+  ulan: "500028317"
+  viaf: "37189188"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q116395
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q116395

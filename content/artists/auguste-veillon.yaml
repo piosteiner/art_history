@@ -1,0 +1,64 @@
+public_id: 120953
+name: Auguste Veillon
+given_name: Auguste
+family_name: Veillon
+birth: 1834-12-29
+death: 1890-01-05
+wikidata_id: Q120263
+metadata:
+  sources: [Wikidata Q120263 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q120263
+  - type: died_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q120263
+  - type: worked_in
+    to: place/dordrecht
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q120263
+  - type: worked_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q120263
+  - type: worked_in
+    to: place/netherlands
+    period: 1870/1890
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q120263
+  - type: associated_with
+    to: movement/orientalism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q120263
+identifiers:
+  gnd: "1020911646"
+  hls: "048941"
+  lc: nr99018871
+  rkd: "79731"
+  sikart: "4023311"
+  ulan: "500030181"
+  viaf: "36838393"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q120263
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q120263

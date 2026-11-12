@@ -1,0 +1,290 @@
+public_id: 120704
+title: Heilige Familie
+names:
+  - lang: null
+    role: translation
+    text: Holy Family
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: La Sainte Famille
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: peter-paul-rubens
+created: c. 1628
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [118, 167]
+institution: kunsthaus-zurich
+inventory_number: R 55
+web_url: https://collection.kunsthaus.ch/de/collection/item/2672/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585202
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/40/Peter_Paul_Rubens_-_Heilige_Familie_-_R_55_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Heilige_Familie_-_R_55_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Peter Paul Rubens
+provenance:
+  - owner: person/charles-gruyn-des-bordes
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: Smith 1830, Bd. 2, S. 210, Nr. 756: «This capital picture is stated to have been painted for a M. Grouin, in whose family it continued until it was purchased for the Presle Collection, from where it was transferred to the present one.»; Jaffé 1989, S. 329, Nr. 1062: «Dipinto per un M. Grouin (Smith, 1830, n. 756), rimase nella sua famiglia fin ché non fu acquistato per la collezione Presle. 'le ca…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/charles-gruyn-des-bordes
+    role: estate
+    ended: 1723
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1723
+    ended: 1723
+    method: auction
+    direct: true
+    label: «Versteigerung Sammlung Grouin»; «garde du trésor royal» (Charles Gruyn des Bordes?)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg., Aufstellung von Clovis Whitefield 1986: «This Capital picture is said to have been painted for a M. Grouin, in whose family it continued until it was purchased for the Presle collection, from which it was transferred to the collections of M. Robit, M. Wouter, Valckenier, Mr Bryan, and G. Hibbert, Esq. See Smith's catalogue»; Ausst.-Kat. Musée des Beaux-Arts…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/francois-michel-harenc-de-presles
+    ended: 1792-04-21
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/jean-baptiste-pierre-lebrun
+    role: agent
+    acquired: 1792-04-21
+    ended: 1792-04-21
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 30
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg., wie oben Fussnote 4; Ausst.-Kat. Musée des Beaux-Arts d'Arras, wie oben Fussnote 2; Catalogue d'objets rares et précieux en tout genre, Lebrun, Paris, 16.-24.04.1792, bibliotheque-numerique.inha.fr/idviewer/19992/1 (19.06.2023), Lot 30."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/francois-antoine-robit
+    ended: 1801-05-15
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1801-05-15
+    ended: 1801-05-15
+    method: auction
+    direct: true
+    label: «Versteigerung François-Antoine Robit»; Lot 106
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg., wie oben Fussnote 4; Smith 1830, wie oben Fussnote 2; Jaffé 1989, wie oben Fussnote 2: «Nel maggio 1801 il quadro fu messo all'asta (106) di nuovo con la collezione di M. Robit e fu acquistato da Naudon.»; Ausst.-Kat. Musée des Beaux-Arts d'Arras 2004, wie oben Fussnote 2; The Getty Provenance Index, «Description of Sale Catalog F-6, Lugt 6259»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Naudon
+    role: agent
+    direct: true
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: Wie oben Fussnote 8; The Getty Provenance Index, «Lot 0106 from Sale Catalog F-6»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/pierre-victor-fournier
+    acquired: 1801-05-15
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg., wie oben Fussnote 4; The Getty Provenance Index, «Description of Sale Catalog F-6, Lugt 6259», wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/sir-simon-clarke
+    acquired: 1830 or earlier
+    ended: 1840-05-09
+    label: Bart
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg.; Smith 1830, wie oben Fussnote 2; Jaffé 1989, wie oben Fussnote 2: «Nel 1840 era presso sir Simon Clarke, Bart., Oakhill (Hertfordshire) dove fu valutato da Smith 1.200 ghinee, e per 900 ghinee fu messo all'asta di Christie's 1'8-9 maggio 1840 (106) con la sua collezione. Acquistato da Buchanan per James Morrison di Basildon Park, pervenne per eredità agli a…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1840-05-08
+    ended: 1840-05-09
+    method: auction
+    direct: true
+    place: london
+    label: «Versteigerung Sir Simon Clarke»; Oakhill (Hertfordshire); Lot 106
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/william-buchanan
+    role: dealer
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: Jaffé 1989, wie oben Fussnote 2; Ausst.-Kat. Musée des Beaux-Arts d'Arras 2004, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/robert-stayner-holford
+    role: agent
+    direct: true
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: Wie oben Fussnote 14."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/james-morrison
+    ended: 1857
+    method: purchase
+    direct: true
+    label: Basildon Park; Berkshire
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: Ausstellungsetikette auf der Werkrückseite; ZKG/KHZ, Inventarbogen/Werkdossier Slg.; Waagen 1857, S. 305; Jaffé, 1989, wie oben Fussnote 2; Ausst.-Kat. Musée des Beaux-Arts d'Arras 2004, wie oben Fussnote 2: durch William Buchanan und Robert Holford an James Morrison."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/walter-morrison
+    acquired: 1909 or later
+    method: inheritance
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: Der Nachlass von James Morrison ist auch bekannt unter Walter Morrison Pictures Settlement. Die Sammlung wurde von Mary Dent-Brocklehurst verwaltet und nach Sudeley Castle gebracht. Vgl. https://sudeleycastle.co.uk/news/sudeley-castle-celebrates-the-women-of-its-past-and-present (03.06.2026): «Major Jack Dent-Brocklehurst took over Sudeley with his wife Mary in 1932, with further restoration and i…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/james-morrison
+    ended: 1934
+    method: inheritance
+    direct: true
+    label: of Fonthill and Basildon Park (*1873, +1934) (Sammler/-in); Basildon Park; Berkshire
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: Wie oben Fussnote 18."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/mary-ann-dent-brocklehurst
+    acquired: 1934
+    method: inheritance
+    direct: true
+    place: winchcombe
+    label: née Morrison; Basildon Park; Berkshire/Sudeley Castle
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: Wie oben Fussnote 18; Werkrückseite; wie oben Fussnote 8; Korrespondenz Clovis Whitfield an Felix Baumann, 03.03.1986: «Thank you very much for your letter of February 24th. I am delighted to confirm that we will sell the Holy Family by Sir Peter Paul Rubens from the Morrison collection, now with Lady Ashcombe at Sudeley Castle, Gloucestershire, for the price of 5.4 million Swiss Francs, to the Ru…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/geoffrey-mark-dent-brocklehurst
+    ended: 1972
+    method: inheritance
+    direct: true
+    place: winchcombe
+    label: Sudeley Castle
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: Wie oben Fussnote 18."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/mary-elizabeth-lady-ashcombe
+    acquired: 1972 or earlier
+    ended: 1986
+    method: inheritance
+    direct: true
+    label: ehemals Dent-Brocklehurst; geb. Chipps (*1941) (Sammler/-in); Sudeley Castle; Winchcombe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: Wie oben Fussnote 18."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/clovis-whitfield
+    role: agent
+    direct: true
+    place: london
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: Korrespondenz Clovis Whitefield an Felix Baumann, 03.03.1986, wie oben Fussnote 16; Ausst.-Kat. Musée des Beaux-Arts d'Arras 2004, wie oben Fussnote 2; ZKG/KHZ, Inventarbogen/Werkdossier Slg., wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/ruzicka-stiftung
+    acquired: 1986
+    ended: 1986
+    method: purchase
+    direct: true
+    place: zurich
+    label: «erworben aus der Versicherungssumme der 1985 gestohlenen (und 1989 zurückgekehrten) Rubensskizze und des im selben Jahr zerstörten Porträts Philipps IV. von Spanien (Inv.-Nr. R 27 resp. R 28)»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg., wie oben Fussnote 4; Ausst.-Kat. Musée des Beaux-Arts d'Arras 2004, wie oben Fussnote 2; Zürcher Kunstgesellschaft 1986 Jahresbericht, S. 95–97."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1986-06-11
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg.; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 94."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "329.1062"
+    label: Jaffé 1989 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

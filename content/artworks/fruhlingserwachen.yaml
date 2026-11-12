@@ -1,0 +1,85 @@
+public_id: 121620
+title_lang: de
+title: Frühlingserwachen
+names:
+  - lang: en
+    role: translation
+    text: The Awakening of Spring
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Réveil du printemps
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: arnold-bocklin
+created: 1880
+kind: painting
+medium: Tempera und Öllasuren auf Holz
+dimensions: [67.5, 130.5]
+institution: kunsthaus-zurich
+inventory_number: "429"
+web_url: https://collection.kunsthaus.ch/de/collection/item/963/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q97160564
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/06/Arnold_B%C3%B6cklin_-_Fr%C3%BChlingserwachen_%281880%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Arnold_B%C3%B6cklin_-_Fr%C3%BChlingserwachen_(1880).jpg
+    license: Public domain
+    credit: Arnold Böcklin
+provenance:
+  - owner: person/emanuel-berry
+    ended: 1882
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1882
+    method: gift
+    direct: true
+    place: zurich
+    label: «der Erben nach Emanuel Berry»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/963/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 184; ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "427.352"
+    label: Andree 1998 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

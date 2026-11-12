@@ -1,0 +1,104 @@
+public_id: 120246
+title_lang: de
+title: Stillleben mit Hummer
+names:
+  - lang: en
+    role: translation
+    text: Still Life with Lobster
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1528/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Nature morte au homard
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1528/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: cornelis-de-heem
+created: 1650/1661
+created_label: c. 1655/1656
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Kupfer
+dimensions: [63, 49.5]
+institution: kunsthaus-zurich
+inventory_number: KS 14
+web_url: https://collection.kunsthaus.ch/de/collection/item/1528/
+on_loan: true
+on_loan_since: 1978
+wikidata_id: Q131586533
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7e/Cornelis_de_Heem_-_Stillleben_mit_Hummer_-_KS_14_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Cornelis_de_Heem_-_Stillleben_mit_Hummer_-_KS_14_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Cornelis de Heem
+provenance:
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1528/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/simon-birch
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1528/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1528/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/betty-koetser
+    co_owners: [person/david-m-koetser]
+    ended: 1992
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1528/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/stiftung-betty-und-david-koetser
+    acquired: 1992
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1528/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1528/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1528/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1528/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1528/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1528/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1528/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1528/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1528/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

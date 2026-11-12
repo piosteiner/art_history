@@ -1,0 +1,111 @@
+public_id: 120785
+name: Giovanni Antonio Pellegrini
+given_name: Giovanni Antonio
+family_name: Pellegrini
+birth: 1675-04-29
+death: 1741-11-02
+wikidata_id: Q1358364
+metadata:
+  sources: [Wikidata Q1358364 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1358364
+  - type: born_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q1358364
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q1358364
+  - type: worked_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1358364
+  - type: worked_in
+    to: place/dresden
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1358364
+  - type: worked_in
+    to: place/dusseldorf
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1358364
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1358364
+  - type: worked_in
+    to: place/mannheim
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1358364
+  - type: worked_in
+    to: place/padua
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1358364
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1358364
+  - type: worked_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1358364
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1358364
+  - type: worked_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1358364
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5b/Pellegrini%2C_Giovanni_Antonio_-_selfportrait_-_circa_1717.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pellegrini,_Giovanni_Antonio_-_selfportrait_-_circa_1717.jpg
+    license: Public domain
+    credit: Giovanni Antonio Pellegrini
+identifiers:
+  bnf: 12518935k
+  gnd: "119234238"
+  idref: "034432876"
+  kulturnav: e7828f64-c336-4eba-8e2b-707c4dd48265
+  lc: n93097410
+  rkd: "62458"
+  ulan: "500031760"
+  viaf: "45106929"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1358364
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1358364

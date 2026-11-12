@@ -1,0 +1,74 @@
+public_id: 120650
+name: Wilhelm Leibl
+given_name: Wilhelm
+family_name: Leibl
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Wilhelm Maria Hubertus Leibl
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q704661
+birth: 1844-10-23
+death: 1900-12-04
+wikidata_id: Q704661
+metadata:
+  sources: [Wikidata Q704661 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-prussia
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q704661
+  - type: born_in
+    to: place/cologne
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q704661
+  - type: died_in
+    to: place/wurzburg
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q704661
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    period: 1864
+    period_label: from 1864
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q704661
+  - type: associated_with
+    to: movement/french-realism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q704661
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Wilhelm_Leibl_-_Portr%C3%A4t.jpg/1280px-Wilhelm_Leibl_-_Portr%C3%A4t.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wilhelm_Leibl_-_Portr%C3%A4t.jpg
+    license: Public domain
+    credit: anonym
+identifiers:
+  bnf: "125070736"
+  dome: "218"
+  gnd: "118571222"
+  idref: "034301755"
+  kulturnav: 0c26b781-14a1-4032-b83c-e131da4e6799
+  lc: n82081829
+  rkd: "49137"
+  ulan: "500016534"
+  viaf: "17371382"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q704661
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q704661

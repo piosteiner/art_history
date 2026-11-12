@@ -1,0 +1,82 @@
+public_id: 120472
+title_lang: de
+title: Weib am Bach
+names:
+  - lang: en
+    role: translation
+    text: Woman at the Stream
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1991/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: c. 1905
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [122, 116]
+institution: kunsthaus-zurich
+inventory_number: "1857"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1991/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586075
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/23/Ferdinand_Hodler_-_Weib_am_Bach_-_1857_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Weib_am_Bach_-_1857_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/friedrich-hegar
+    acquired: 1906-04
+    ended: 1927
+    method: gift
+    direct: true
+    place: zurich
+    label: von der Tonhalle-Gesellschaft und der Allgemeinen Musikgesellschaft an den abtretenden Dirigenten des Zürcher Tonhalle-Orchester
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1991/
+        note: "Footnote: Bätschmann/Müller 2017 III.1344, https://ferdinand-hodler.ch/Werke.aspx?id=9842145 (06.01.2022): «Einer Verwechslung mit Kat. 1342 zufolge findet sich in der jüngeren Literatur (Grabner 1992, Anm. 43) die Behauptung, das Gemälde hätte sich zuvor im Besitz des Wiener Sammlers Carl Reininghaus befunden (siehe dazu Kommentar zu Kat. 1342);  Man beauftragte Richard Kisling vorgängig, bei Hodler in Gen…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1927
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1991/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.1344
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1991/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

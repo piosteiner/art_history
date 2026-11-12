@@ -1,0 +1,29 @@
+public_id: 120040
+name: Dessau
+names:
+  - lang: ja
+    role: translation
+    text: デッサウ
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q487070
+kind: settlement
+parent: sachsen-anhalt
+country_code: DE
+location: [12.24611, 51.83417]
+wikidata_id: Q487070
+metadata:
+  sources: [Wikidata Q487070 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q487070
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q487070
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q487070

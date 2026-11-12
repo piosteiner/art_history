@@ -1,0 +1,50 @@
+public_id: 120129
+name: Cornelis van Zwieten
+given_name: Cornelis
+family_name: van Zwieten
+birth: 1606/1626
+birth_label: c. 1606
+death: 1673
+wikidata_id: Q18608192
+metadata:
+  sources: [Wikidata Q18608192 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q18608192
+  - type: born_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q18608192
+  - type: died_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q18608192
+  - type: worked_in
+    to: place/leiden
+    period: 1648/1673
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q18608192
+identifiers:
+  gnd: "123864232"
+  rkd: "86780"
+  ulan: "500019883"
+  viaf: "95803397"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q18608192
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q18608192

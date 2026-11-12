@@ -1,0 +1,52 @@
+public_id: 120906
+name: Hans Thoma
+given_name: Hans
+family_name: Thoma
+birth: 1839-10-02
+death: 1924-11-07
+wikidata_id: Q678094
+metadata:
+  sources: [Wikidata Q678094 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/german-reich
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q678094
+  - type: nationality
+    to: polity/grand-duchy-of-baden
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q678094
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q678094
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Hans_Thoma_-_Selbstbildnis_vor_Birkenwald_%281899%29.jpg/1280px-Hans_Thoma_-_Selbstbildnis_vor_Birkenwald_%281899%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_Thoma_-_Selbstbildnis_vor_Birkenwald_(1899).jpg
+    license: Public domain
+    credit: Hans Thoma
+identifiers:
+  bnf: 12368702r
+  dome: "579"
+  gnd: "118622064"
+  idref: "032708807"
+  kulturnav: 3aab5e6e-c62f-4eb7-8020-e36d14278cc1
+  lc: n84020178
+  rkd: "77155"
+  ulan: "500003772"
+  viaf: "111662989"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q678094
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q678094

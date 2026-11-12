@@ -1,0 +1,22 @@
+public_id: 120699
+name: Cirencester
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-1.968, 51.719]
+wikidata_id: Q852772
+metadata:
+  sources: [Wikidata Q852772 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q852772
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q852772
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q852772

@@ -1,0 +1,142 @@
+public_id: 120930
+title: Eremit
+names:
+  - lang: null
+    role: translation
+    text: Hermit
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Eremite
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: karl-walser
+created: 1907
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [64, 80]
+institution: kunsthaus-zurich
+inventory_number: 1946/0024
+web_url: https://collection.kunsthaus.ch/de/collection/item/3234/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585837
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ac/Karl_Walser_-_Eremit_-_1946-0024_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Karl_Walser_-_Eremit_-_1946-0024_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Karl Walser
+provenance:
+  - owner: institution/galerie-paul-cassirer
+    role: dealer
+    acquired: 1907-05-30
+    ended: 1909-02-27
+    method: purchase
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+        note: "Footnote: Rosebrock 2025, S. 117, Anm. 61"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/paul-herz
+    acquired: 1909-02-27
+    ended: 1925
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/ida-herz
+    acquired: 1925
+    ended: 1943 or earlier
+    method: inheritance
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/theda-stuckgold-schayer
+    acquired: 1943 or earlier
+    ended: 1945-08-13
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/edith-gibian
+    role: custodian
+    acquired: 1945-08-13
+    ended: 1945-11-30
+    direct: true
+    place: zurich
+    label: safekeeping
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+        note: "Footnote: Brief Wilhelm Wartmann an Edith Gibian, 01.12.1945, Archiv ZKG/KHZ, Ausgehende Korrespondenz, 10.30.10.104, S. 136. Edith Gibian war die Schwägerin von Theda Stückgold-Schayer und war nach deren Tod mit der Verwaltung des Nachlasses betraut."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hans-mayenfisch
+    role: agent
+    method: purchase
+    direct: true
+    place: zurich
+    label: intermediary
+    price:
+      amount: 1000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+        note: 'Footnote: ZKG/KHZ Inventarbuch Slg.; Jahresbericht 1946, hrsg. von Zürcher Kunstgesellschaft, 1946, S. 8. Hans E. Mayenfisch sammelte in Absprache mit der Sammlungskommission, die er von 1940 bis 1953 präsidierte, für das Kunsthaus Zürich Werke der Schweizer Gegenwartskunst. Vermutlich übernahm er den Kaufpreis für Karl Walsers Gemälde "Eremit", bei welchem es sich laut Inventarbuch der Sammlung um die "Sch…'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1945-11-30
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+        note: "Footnote: Wie oben Fussnote 6. (Das Werk wurde erst im Februar 1946 inventarisiert)"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,45 @@
+public_id: 121433
+name: Jacob Toorenvliet
+given_name: Jacob
+family_name: Toorenvliet
+birth: 1640
+death: 1719-01-03
+wikidata_id: Q663613
+metadata:
+  sources: [Wikidata Q663613 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q663613
+  - type: born_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q663613
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9e/Jean_Baptiste_Descamps-Jacques_Torenvliet_p121.gif
+    source_url: https://commons.wikimedia.org/wiki/File:Jean_Baptiste_Descamps-Jacques_Torenvliet_p121.gif
+    license: Public domain
+    credit: Jean-Baptiste Descamps
+identifiers:
+  bnf: "149664571"
+  gnd: "124856195"
+  idref: "149851626"
+  kulturnav: f6b96405-4e34-4229-a155-e43ea1ad5118
+  lc: n87828396
+  rkd: "77865"
+  ulan: "500024725"
+  viaf: "24873040"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q663613
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q663613

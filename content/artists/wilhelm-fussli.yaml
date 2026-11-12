@@ -1,0 +1,44 @@
+public_id: 120065
+name: Wilhelm Füssli
+given_name: Wilhelm
+family_name: Füssli
+birth: 1830-01-16
+death: 1916-01-11
+wikidata_id: Q19976545
+metadata:
+  sources: [Wikidata Q19976545 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q19976545
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q19976545
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ac/Wilhelm_Heinrich_F%C3%BCssli_1852.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wilhelm_Heinrich_F%C3%BCssli_1852.jpg
+    license: Public domain
+    credit: Wilhelm Heinrich Füssli
+identifiers:
+  gnd: "116847654"
+  hls: "022306"
+  lc: n2011005710
+  rkd: "29827"
+  sikart: "4023046"
+  ulan: "500111541"
+  viaf: "3232897"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q19976545
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q19976545

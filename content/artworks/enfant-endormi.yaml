@@ -1,0 +1,98 @@
+public_id: 120680
+title: Enfant endormi
+names:
+  - lang: de
+    role: translation
+    text: Knabe zwischen Kakteen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2592/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: translation
+    text: Schlafender Knabe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2592/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Sleeping Child
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2592/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: henri-manguin
+created: 1912
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [82, 101]
+institution: kunsthaus-zurich
+inventory_number: "1400"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2592/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586519
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/ff/Henri_Manguin_-_Enfant_endormi_-_1400_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_Manguin_-_Enfant_endormi_-_1400_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Henri Manguin
+provenance:
+  - owner: institution/galerie-eugene-druet
+    role: dealer
+    acquired: 1912-12
+    ended: 1912-12
+    direct: true
+    place: paris
+    label: Nr. 7167
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2592/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hans-schuler
+    acquired: 1912
+    ended: 1920
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2592/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1920
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2592/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2592/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2592/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2592/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2592/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2592/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2592/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2592/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

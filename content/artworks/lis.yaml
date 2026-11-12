@@ -1,0 +1,63 @@
+public_id: 120523
+title: LIS
+creator: laszlo-moholy-nagy
+created: 1922
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [131, 100]
+institution: kunsthaus-zurich
+inventory_number: 1981/0006
+web_url: https://collection.kunsthaus.ch/de/collection/item/2163/
+wikidata_id: Q61780400
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4b/L%C3%A1szl%C3%B3_Moholy-Nagy_-_LIS_-_1981-0006_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:L%C3%A1szl%C3%B3_Moholy-Nagy_-_LIS_-_1981-0006_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: László Moholy-Nagy
+provenance:
+  - owner: person/erika-klihm
+    ended: 1981
+    direct: true
+    place: thansau
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2163/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1981
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2163/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2163/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2163/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2163/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2163/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2163/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2163/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2163/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

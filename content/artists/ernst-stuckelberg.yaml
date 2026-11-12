@@ -1,0 +1,82 @@
+public_id: 120885
+name: Ernst Stückelberg
+given_name: Ernst
+family_name: Stückelberg
+birth: 1831-02-21
+death: 1903-09-14
+wikidata_id: Q329974
+metadata:
+  sources: [Wikidata Q329974 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q329974
+  - type: born_in
+    to: place/basel
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q329974
+  - type: died_in
+    to: place/basel
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q329974
+  - type: worked_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q329974
+  - type: worked_in
+    to: place/basel
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q329974
+  - type: worked_in
+    to: place/bern
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q329974
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q329974
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q329974
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7d/St%C3%BCckelberg2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:St%C3%BCckelberg2.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "146513972"
+  gnd: "118756206"
+  hls: "022108"
+  idref: "076890899"
+  lc: nr95005764
+  rkd: "75910"
+  sikart: "4022846"
+  ulan: "500009186"
+  viaf: "74648745"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q329974
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q329974

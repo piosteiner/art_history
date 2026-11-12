@@ -1,0 +1,88 @@
+public_id: 121175
+title_lang: de
+title: Porträt Dr. med. Gustav Adolf Steiger
+names:
+  - lang: null
+    role: translation
+    text: Portrait Dr Gustav Adolf Steiger
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/442959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Portrait du docteur Gustav Adolf Steiger
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/442959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ernst-wurtenberger
+created: c. 1915
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [33.5, 22]
+institution: kunsthaus-zurich
+inventory_number: ZKG.2019/0007
+web_url: https://collection.kunsthaus.ch/de/collection/item/442959/
+wikidata_id: Q131585283
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/95/Ernst_W%C3%BCrtenberger_-_Portr%C3%A4t_Dr._med._Gustav_Adolf_Steiger_-_ZKG.2019-0007_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ernst_W%C3%BCrtenberger_-_Portr%C3%A4t_Dr._med._Gustav_Adolf_Steiger_-_ZKG.2019-0007_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ernst Würtenberger
+provenance:
+  - owner: person/gustav-adolf-steiger
+    method: commission
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/442959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/verena-heberlein-stahel
+    ended: 2019
+    method: inheritance
+    place: jona
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/442959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2020
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/442959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/442959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/442959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/442959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/442959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/442959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/442959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/442959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

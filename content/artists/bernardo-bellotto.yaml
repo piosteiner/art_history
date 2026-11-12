@@ -1,0 +1,65 @@
+public_id: 120248
+name: Bernardo Bellotto
+given_name: Bernardo
+family_name: Bellotto
+names:
+  - kind: birth
+    lang: it
+    role: alternative
+    text: Bernardo Francesco Paolo Ernesto Bellotto
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q164688
+birth: 1722-05-20
+death: 1780-11-17
+wikidata_id: Q164688
+metadata:
+  sources: [Wikidata Q164688 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q164688
+  - type: born_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q164688
+  - type: died_in
+    to: place/warsaw
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q164688
+  - type: student_of
+    to: artist/canaletto
+    sources:
+      - accessed: 2026-11-12
+        property: P1066
+        wikidata: Q164688
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4d/Bernardo_Bellotto.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bernardo_Bellotto.jpg
+    license: Public domain
+    credit: Bernardo Bellotto
+identifiers:
+  bnf: "122173595"
+  gnd: "118637819"
+  idref: "030837936"
+  kulturnav: d5b04130-730b-4bea-98c7-fee312378bfc
+  lc: n80045168
+  rkd: "6295"
+  ulan: "500028876"
+  viaf: "61096"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q164688
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q164688

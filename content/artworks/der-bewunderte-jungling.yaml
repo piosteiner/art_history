@@ -1,0 +1,107 @@
+public_id: 120257
+title_lang: de
+title: Der bewunderte Jüngling
+names:
+  - lang: en
+    role: translation
+    text: Youth Admired by Woman
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1543/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Jüngling vom Weibe bewundert (Erste Fassung)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1543/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: 1903
+created_label: 1903, revised around 1904/05
+kind: oil painting
+medium: Öl und Ölfarbenstifte auf Leinwand
+dimensions: [213.5, 288]
+institution: kunsthaus-zurich
+inventory_number: "2163"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1543/
+on_loan: true
+on_loan_since: 1930
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585650
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Ferdinand_Hodler_-_Der_bewunderte_J%C3%BCngling_-_2163_-_Kunsthaus_Z%C3%BCrich.jpg/1280px-Ferdinand_Hodler_-_Der_bewunderte_J%C3%BCngling_-_2163_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Der_bewunderte_J%C3%BCngling_-_2163_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/carl-von-reininghaus
+    acquired: 1904
+    ended: 1929-10-29
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1543/
+        note: "Footnote: Bolleter 2017, WVZ Hodler, No. 1348, https://recherche.sik-isea.ch/sik:work-6008226/in/catalogues.hodler/ [16.06.2025]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: heirs of Carl von Reininghaus
+    acquired: 1929-10-29
+    ended: 1930
+    method: inheritance
+    direct: true
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1543/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/gottfried-keller-stiftung
+    acquired: 1930
+    method: purchase
+    direct: true
+    place: bern
+    label: Bundesamt für Kultur; mit einem Beitrag des Kunsthaus Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1543/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 10.12.1930, Archiv ZKG/KHZ, 10.30.10.41 I. b."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.1348
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1543/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1543/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1543/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1543/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1543/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1543/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1543/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1543/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

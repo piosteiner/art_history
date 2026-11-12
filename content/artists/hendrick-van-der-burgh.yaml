@@ -1,0 +1,57 @@
+public_id: 121188
+name: Hendrick van der Burgh
+given_name: Hendrick
+family_name: van der Burgh
+birth: 1627
+death: 1664
+wikidata_id: Q3065424
+metadata:
+  sources: [Wikidata Q3065424 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q3065424
+  - type: born_in
+    to: place/delft
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q3065424
+  - type: worked_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q3065424
+  - type: worked_in
+    to: place/delft
+    period: 1638/1651
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q3065424
+  - type: worked_in
+    to: place/amsterdam
+    period: 1659/1661
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q3065424
+identifiers:
+  kulturnav: 81e692c5-374c-489b-a051-a01c6c2ca1eb
+  lc: nr93014356
+  rkd: "14204"
+  ulan: "500017934"
+  viaf: "46633284"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q3065424
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q3065424

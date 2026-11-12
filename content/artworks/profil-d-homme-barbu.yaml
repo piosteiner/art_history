@@ -1,0 +1,151 @@
+public_id: 121222
+title: Profil dʼhomme barbu
+names:
+  - lang: de
+    role: translation
+    text: Profil eines bärtigen Mannes
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Head of a Bearded Man in Profile
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: jean-auguste-dominique-ingres
+created: 1807/1808
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [35, 26]
+institution: kunsthaus-zurich
+inventory_number: 2003/0035
+web_url: https://collection.kunsthaus.ch/de/collection/item/5214/
+wikidata_id: Q124288358
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/52/Jean-Auguste-Dominique_Ingres_-_Profil_d%CA%BChomme_barbu_-_2003-0035_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Auguste-Dominique_Ingres_-_Profil_d%CA%BChomme_barbu_-_2003-0035_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jean-Auguste-Dominique Ingres
+provenance:
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1867-05-06
+    ended: 1867-05-07
+    method: auction
+    place: paris
+    label: Lot 35; Paris, Vente Ingres
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-sedelmeyer
+    role: agent
+    acquired: 1892-05-30
+    ended: 1892-05-31
+    method: auction
+    place: paris
+    label: Lot 31; Paris, Vente Haro
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1918-03-26
+    ended: 1918-03-27
+    method: auction
+    direct: true
+    place: paris
+    label: «Versteigerung der Sammlung Edgar Degas»; Lot 64; «Tête d'homme; profil»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1949-06-27
+    ended: 1949-06-27
+    method: auction
+    place: paris
+    label: Lot 92
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    acquired: 1950
+    place: united-states
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/newhouse-gallery
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/rolf-weinberg
+    acquired: 1985
+    ended: 1990 or later
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/stiftung-rolf-und-margit-weinberg
+    acquired: 1990 or later
+    ended: 2003
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2003
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "62"
+    label: Wildenstein (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5214/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

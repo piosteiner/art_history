@@ -1,0 +1,60 @@
+public_id: 120970
+name: Hans Beat Wieland
+given_name: Hans Beat
+family_name: Wieland
+birth: 1867-06-11
+death: 1945-08-23
+wikidata_id: Q983222
+metadata:
+  sources: [Wikidata Q983222 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q983222
+  - type: lived_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q983222
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q983222
+  - type: member_of
+    to: institution/munchener-secession
+    period: 1894
+    period_label: from 1894
+    sources:
+      - accessed: 2026-11-12
+        property: P463
+        wikidata: Q983222
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7a/Hans_Beat_Wieland_%281867%E2%80%931945%29_Landschaftsmaler.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_Beat_Wieland_(1867%E2%80%931945)_Landschaftsmaler.jpg
+    license: CC BY-SA 4.0
+    credit: Unknown author
+identifiers:
+  bnf: 17788453m
+  dome: "587"
+  gnd: "118632485"
+  hls: "022699"
+  lc: n86147446
+  rkd: "84191"
+  sikart: "4022967"
+  ulan: "500048469"
+  viaf: "54941567"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q983222
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q983222

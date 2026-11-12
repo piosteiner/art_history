@@ -7,6 +7,8 @@ medium: Colour on figured silk
 materials: [silk]
 dimensions: [185, 291]
 institution: tokyo-national-museum
+inventory_number: N-1
+web_url: https://colbase.nich.go.jp/collection_items/tnm/N-1
 description_md: Ten paintings on silk made in 1069 by [[artist/hata-no-chitei]], an itinerant painter from Settsu, for the walls of the picture hall (edono) in the eastern precinct of Hōryūji, now remounted as panels. They tell the life of [[person/prince-shotoku]] in a geographical rather than chronological order, each episode labelled in a cartouche and set in pockets of space between mountains and trees. This section shows Shitennōji surrounded by low land, and, above, the prince crossing the Japan Sea to China in a flying chariot. Chinese pictorial conventions combine with a recognition of the difference between Chinese and Japanese mountains — a stage in the Japanization of secular painting. [[source/history-of-japanese-art|p. 113, fig. 138]]
 relationships:
   - type: depicts_person
@@ -19,6 +21,18 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 113, fig. 138
+  - type: designated_as
+    to: term/national-treasure-japan
+    notes_md: Tokyo National Museum
+    sources:
+      - url: https://colbase.nich.go.jp/collection_items/tnm/N-1
+        source: colbase
+        accessed: 2026-11-11
+images:
+  - url: https://colbase.nich.go.jp/media/tnm/N-1/image/slideshow_s/N-1_E0016407.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/tnm/N-1
+    license: CC BY 4.0
+    credit: Tokyo National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -41,3 +55,7 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: p. 113, fig. 138
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/N-1
+      source: colbase
+      accessed: 2026-11-11

@@ -1,0 +1,48 @@
+public_id: 120089
+name: Giovanni Giacometti
+given_name: Giovanni
+family_name: Giacometti
+birth: 1868-03-07
+death: 1933-06-25
+wikidata_id: Q689411
+metadata:
+  sources: [Wikidata Q689411 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q689411
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q689411
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Giovanni_Giacometti_-_Autoritratto.jpeg/1280px-Giovanni_Giacometti_-_Autoritratto.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Giacometti_-_Autoritratto.jpeg
+    license: Public domain
+    credit: Giovanni Giacometti
+identifiers:
+  bnf: 11996506m
+  dodis: P47891
+  dome: "137"
+  gnd: "118694618"
+  hls: "022398"
+  idref: "028052838"
+  lc: n84178679
+  rkd: "31401"
+  sikart: "4000049"
+  ulan: "500021953"
+  viaf: "35250821"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q689411
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q689411

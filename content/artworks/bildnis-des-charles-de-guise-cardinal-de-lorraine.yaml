@@ -1,0 +1,116 @@
+public_id: 120426
+title_lang: de
+title: Bildnis des Charles de Guise, Cardinal de Lorraine
+names:
+  - lang: en
+    role: translation
+    text: Portrait of Charles de Guise, Cardinal de Lorraine
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1858/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Portrait de Charles de Guise, Cardinal de Lorraine
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1858/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: el-greco
+attribution_label: attributed to El Greco
+created: 1572
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [178.5, 94.5]
+institution: kunsthaus-zurich
+inventory_number: KS 47
+web_url: https://collection.kunsthaus.ch/de/collection/item/1858/
+on_loan: true
+on_loan_since: 1979
+wikidata_id: Q16590319
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/90/CharlesdeGuise.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:CharlesdeGuise.jpg
+    license: Public domain
+    credit: El Greco
+provenance:
+  - owner: artist/el-greco
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1858/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/earl-of-chesterfield
+    acquired: 1871
+    ended: 1871
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1858/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/viscount-allendale
+    acquired: 1918
+    ended: 1918
+    label: Bretby Heirlooms
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1858/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/francis-howard
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1858/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/betty-koetser
+    co_owners: [person/david-m-koetser]
+    ended: 1986
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1858/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/stiftung-betty-und-david-koetser
+    acquired: 1986
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1858/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1858/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1858/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1858/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1858/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1858/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1858/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1858/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1858/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1858/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

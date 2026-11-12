@@ -1,0 +1,118 @@
+public_id: 120232
+title_lang: fr
+title: La Viole
+names:
+  - lang: de
+    role: translation
+    text: Die Viola
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: The Viola
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: former
+    text: La vielle
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: former
+    text: Violon et compotier
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: juan-gris
+created: 1920-03
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [65, 81.5]
+institution: kunsthaus-zurich
+inventory_number: "2295"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1506/
+on_loan: true
+on_loan_since: 1933
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585436
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/32/Juan_Gris_-_La_Viole_-_2295_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Juan_Gris_-_La_Viole_-_2295_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Juan Gris
+provenance:
+  - owner: person/leonce-rosenberg
+    role: dealer
+    acquired: 1920
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+        note: "Footnote: Esteban Leal 2005, Bd. II, No. 103, S. 123-124; Cooper 1977, Bd. II, No. 331, S. 126."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/raoul-la-roche
+    acquired: 1929-09-28 or earlier
+    ended: 1933-07-31
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+        note: "Footnote: Brief von Raoul la Roche an Wilhelm Wartmann, 28.09.1929, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.59. Sitzungsprotokolle der Sammlungskommission, 16.06.1933, I.c, 03.08.1933, 1.b.2 Archiv ZKG/KZ, 10.30.10.41; Kat. Kunsthaus Zürich 1929, No. 38, S. 12. 1933 wird als Besitzer «M. Raoul La Roche, Paris» erwähnt, vgl. Kat. Kunsthaus Zürich 1933, Annex, No. 99, S. 7. Das Werk wird als Leihga…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1933-07-31
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; Sitzungsprotokoll der Sammlungskommission, 03.08.1933.1.b.2, Archiv ZKG/KHZ, 10.30.10.41; Sitzungsprotokoll des Vorstands, 31.07.1933, Archiv ZKG/KHZ, 10.30.10.12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.126.331
+    label: Cooper 1977 (catalogue raisonné)
+  - number: II.552.331
+    label: Cooper 2014 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,29 @@
+public_id: 120219
+name: Olten
+names:
+  - lang: ru
+    role: translation
+    text: Ольтен
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q68129
+kind: settlement
+parent: switzerland
+country_code: CH
+location: [7.90778, 47.35306]
+wikidata_id: Q68129
+metadata:
+  sources: [Wikidata Q68129 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q68129
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q68129
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q68129

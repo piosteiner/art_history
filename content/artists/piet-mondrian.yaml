@@ -1,0 +1,109 @@
+public_id: 120613
+name: Piet Mondrian
+given_name: Piet
+family_name: Mondrian
+names:
+  - kind: birth
+    lang: nl
+    role: former
+    text: Pieter Cornelis Mondriaan
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q151803
+birth: 1872-03-07
+death: 1944-02-01
+wikidata_id: Q151803
+metadata:
+  sources: [Wikidata Q151803 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q151803
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q151803
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q151803
+  - type: worked_in
+    to: place/laren
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q151803
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q151803
+  - type: worked_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q151803
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q151803
+  - type: influenced_by
+    to: movement/cubism
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q151803
+  - type: influenced_by
+    to: artist/pablo-picasso
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q151803
+  - type: associated_with
+    to: movement/post-impressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q151803
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q151803
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/83/Piet_Mondriaan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Piet_Mondriaan.jpg
+    license: Public domain
+    credit: Anonymous
+identifiers:
+  bnf: 11916482s
+  dome: "7"
+  gnd: "118583441"
+  idref: "027294757"
+  kulturnav: 51111de3-4b91-45fb-9468-5eaf68387923
+  lc: n79135254
+  nlk: KAC199635505
+  rkd: "56854"
+  ulan: "500004972"
+  viaf: "54151650"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q151803
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q151803

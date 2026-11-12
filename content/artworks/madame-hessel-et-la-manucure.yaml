@@ -1,0 +1,129 @@
+public_id: 120973
+title_lang: fr
+title: Madame Hessel et la Manucure
+names:
+  - lang: de
+    role: translation
+    text: Madame Hessel und die Maniküristin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Madame Hessel and the Manicurist
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Im Schlafzimmer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: edouard-vuillard
+created: c. 1906
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [60, 66]
+institution: kunsthaus-zurich
+inventory_number: 1950/0012
+web_url: https://collection.kunsthaus.ch/de/collection/item/3378/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124288375
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/11/%C3%89douard_Vuillard_-_Madame_Hessel_et_la_Manucure_-_1950-0012_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Vuillard_-_Madame_Hessel_et_la_Manucure_-_1950-0012_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Édouard Vuillard
+provenance:
+  - owner: person/desiree-justinienne-pulcherie-marie-vuillard
+    acquired: 1940-06-21
+    ended: 1948
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+        note: "Footnote: Das Werk ging nach dem Tod von Vuillard in den Besitz von Marie Vuillard, der Schwester von Edouard Vuillard, über. Handschriftliche Karteikarten von Jacques Salomon und Antoine Salomon, Archives Vuillard, gemäss E-Mail-Korrespondenz mit dem Archives Vuillard, 19.12.2024, ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/annette-salomon
+    acquired: 1948
+    method: inheritance
+    direct: true
+    label: née Roussel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+        note: "Footnote: Nach dem Tod von Marie Vuillard im Jahr 1948 vermachte sie das Werk der Tochter von Marie Vuillard, Annette Salomon, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/maurice-renou
+    role: dealer
+    ended: 1950
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg., wie oben Fussnote 2; E-Mail-Korrespondenz mit dem Paul Cassirer & Walter Feilchenfeldt Archiv, Zürich, 14.08.2024."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/walter-feilchenfeldt
+    acquired: 1950
+    ended: 1950-06-13
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg., wie oben Fussnote 2; Sitzungsprotokoll der Sammlungskommission, 13.06.1950, S. 1, Archiv ZKG/KHZ, 10.30.10.42a; Salomon/Cogeval/Chivot 2003, S. 726, Nr. VII-379; E-Mail-Korrespondenz mit dem Paul Cassirer & Walter Feilchenfeldt Archiv, Zürich, 14.08.2024."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1950-06-13
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 2000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.726.VII-379
+    label: Salomon/Cogeval (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

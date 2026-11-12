@@ -1,0 +1,52 @@
+public_id: 121316
+name: Cornelis Verbeeck
+given_name: Cornelis
+family_name: Verbeeck
+birth: 1590
+death: 1637
+wikidata_id: Q2997495
+metadata:
+  sources: [Wikidata Q2997495 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2997495
+  - type: born_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q2997495
+  - type: died_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q2997495
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q2997495
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Cornelius_Verbeek_-_Marine_met_drie_grote_zeilschepen.jpg/1280px-Cornelius_Verbeek_-_Marine_met_drie_grote_zeilschepen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cornelius_Verbeek_-_Marine_met_drie_grote_zeilschepen.jpg
+    license: Public domain
+    credit: Cornelis Verbeeck
+identifiers:
+  rkd: "80029"
+  ulan: "500032588"
+  viaf: "95882197"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q2997495
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q2997495

@@ -1,0 +1,81 @@
+public_id: 121522
+title_lang: de
+title: Kranker Knabe im Bett
+names:
+  - lang: en
+    role: translation
+    text: Sick Boy in Bed
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7702/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: original
+    text: Ragazzo a letto (ammalato)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7702/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: giovanni-giacometti
+created: c. 1916–1918
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [46.2, 60.5, 2]
+institution: kunsthaus-zurich
+inventory_number: 2012/0046
+web_url: https://collection.kunsthaus.ch/de/collection/item/7702/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586411
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e0/Giovanni_Giacometti_-_Kranker_Knabe_im_Bett_-_2012-0046_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Giacometti_-_Kranker_Knabe_im_Bett_-_2012-0046_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Giovanni Giacometti
+provenance:
+  - owner: person/bruno-giacometti
+    ended: 2012
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7702/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2012
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7702/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7702/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7702/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7702/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7702/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7702/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7702/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7702/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

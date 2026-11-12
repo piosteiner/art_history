@@ -1,0 +1,22 @@
+public_id: 120243
+name: Romanshorn
+kind: settlement
+parent: thurgau
+country_code: CH
+location: [9.35639, 47.56354]
+wikidata_id: Q65125
+metadata:
+  sources: [Wikidata Q65125 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q65125
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q65125
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q65125

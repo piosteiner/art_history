@@ -1,0 +1,56 @@
+public_id: 120449
+name: Louis George-Legrand
+given_name: Louis
+family_name: George-Legrand
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Jean Louis George
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q50290192
+birth: 1801-04-10
+death: 1883-04-06
+wikidata_id: Q50290192
+metadata:
+  sources: [Wikidata Q50290192 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q50290192
+  - type: born_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q50290192
+  - type: died_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q50290192
+  - type: student_of
+    to: artist/francois-diday
+    sources:
+      - accessed: 2026-11-12
+        property: P1066
+        wikidata: Q50290192
+identifiers:
+  rkd: "125822"
+  sikart: "4032306"
+  ulan: "500141322"
+  viaf: "96649977"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q50290192
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q50290192

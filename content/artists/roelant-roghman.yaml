@@ -1,0 +1,50 @@
+public_id: 120823
+name: Roelant Roghman
+given_name: Roelant
+family_name: Roghman
+birth: 1627-03-14
+death: 1692-01-03
+wikidata_id: Q1777607
+metadata:
+  sources: [Wikidata Q1777607 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1777607
+  - type: born_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q1777607
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q1777607
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5f/Portrait_of_the_artist_Roelant_Roghman_PK-T-AW-1415.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_the_artist_Roelant_Roghman_PK-T-AW-1415.jpg
+    license: CC BY 4.0
+    credit: Stolker, Jan (1724-1785)
+identifiers:
+  gnd: "118941224"
+  idref: "159650429"
+  kulturnav: b6b73d89-f10b-4495-b5c1-aa022e2f6214
+  lc: nr89009573
+  rkd: "67731"
+  ulan: "500008135"
+  viaf: "13106778"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1777607
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1777607

@@ -1,0 +1,87 @@
+public_id: 120868
+name: Wolfgang-Adam Töpffer
+given_name: Wolfgang-Adam
+family_name: Töpffer
+birth: 1766-05-20
+death: 1847-08-10
+wikidata_id: Q3569677
+metadata:
+  sources: [Wikidata Q3569677 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    period: 1798/1813
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q3569677
+  - type: nationality
+    to: polity/republic-of-geneva
+    period: 1798
+    period_label: until 1798
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q3569677
+  - type: nationality
+    to: polity/switzerland
+    period: 1815
+    period_label: from 1815
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q3569677
+  - type: born_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q3569677
+  - type: worked_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q3569677
+  - type: worked_in
+    to: place/lausanne
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q3569677
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q3569677
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q3569677
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/dc/Adam_Topffer-selfportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Adam_Topffer-selfportrait.jpg
+    license: Public domain
+    credit: Wolfgang Adam Töpffer
+identifiers:
+  bnf: 13769653f
+  gnd: "119164213"
+  hls: "021967"
+  idref: "066972256"
+  lc: n95013292
+  rkd: "77880"
+  sikart: "4022958"
+  ulan: "500032819"
+  viaf: "66648706"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q3569677
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q3569677

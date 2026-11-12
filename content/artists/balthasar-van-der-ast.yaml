@@ -1,0 +1,65 @@
+public_id: 121388
+name: Balthasar van der Ast
+given_name: Balthasar
+family_name: van der Ast
+birth: 1593
+death: 1657-03-07
+wikidata_id: Q472522
+metadata:
+  sources: [Wikidata Q472522 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q472522
+  - type: died_in
+    to: place/delft
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q472522
+  - type: died_in
+    to: place/netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q472522
+  - type: worked_in
+    to: place/utrecht
+    period: 1619/1632
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q472522
+  - type: worked_in
+    to: place/delft
+    period: 1632/1657
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q472522
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q472522
+identifiers:
+  gnd: "123192544"
+  idref: "192341995"
+  kulturnav: f6b6c694-aa68-4506-8f8b-fcdb0ef2d91a
+  lc: nr98026353
+  rkd: "2800"
+  ulan: "500029053"
+  viaf: "57514749"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q472522
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q472522

@@ -1,0 +1,52 @@
+public_id: 120143
+name: Armand Guillaumin
+given_name: Armand
+family_name: Guillaumin
+birth: 1841-02-16
+death: 1927-06-26
+wikidata_id: Q436844
+metadata:
+  sources: [Wikidata Q436844 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q436844
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q436844
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q436844
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/04/Armand_Guillaumin%2C_selfportrait%2C_1878.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Armand_Guillaumin,_selfportrait,_1878.jpg
+    license: Public domain
+    credit: Armand Guillaumin
+identifiers:
+  bnf: "149753284"
+  dome: "2907"
+  gnd: "119179164"
+  idref: 02756231X
+  kulturnav: 984c3d17-e0f8-41f4-af58-fce73eda102a
+  lc: n50046318
+  rkd: "34570"
+  ulan: "500003107"
+  viaf: "61822531"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q436844
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q436844

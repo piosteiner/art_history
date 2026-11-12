@@ -1,0 +1,83 @@
+public_id: 121290
+title_lang: de
+title: Flieder und Amaryllis
+names:
+  - lang: en
+    role: translation
+    text: Lilac and Amaryllis
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5890/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: lovis-corinth
+created: 1924
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [125, 85]
+institution: kunsthaus-zurich
+inventory_number: "1953"
+web_url: https://collection.kunsthaus.ch/de/collection/item/5890/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586685
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/36/Lovis_Corinth_-_Flieder_und_Amaryllis_-_1953_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Lovis_Corinth_-_Flieder_und_Amaryllis_-_1953_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Lovis Corinth
+provenance:
+  - owner: person/charlotte-berend-corinth
+    acquired: 1925
+    ended: 1929
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5890/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 587."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1929-10-11
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 30500
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5890/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "197.941"
+    label: Berend-Corinth 1992 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5890/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5890/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5890/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5890/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5890/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5890/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5890/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,51 @@
+public_id: 120827
+name: Barthélemy Menn
+given_name: Barthélemy
+family_name: Menn
+birth: 1815-05-20
+death: 1893-10-11
+wikidata_id: Q264295
+metadata:
+  sources: [Wikidata Q264295 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q264295
+  - type: born_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q264295
+  - type: died_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q264295
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/50/BartholemyMenn-ByJeanLacroix-before1894_BibliothequeDeGeneveCentreDIconographie.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:BartholemyMenn-ByJeanLacroix-before1894_BibliothequeDeGeneveCentreDIconographie.jpg
+    license: Public domain
+    credit: Jean Lacroix (1832 - 1909)
+identifiers:
+  gnd: "118732927"
+  hls: "022516"
+  idref: "227849035"
+  lc: nr90001014
+  rkd: "55243"
+  sikart: "4022822"
+  ulan: "500025799"
+  viaf: "18017426"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q264295
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q264295

@@ -1,0 +1,90 @@
+public_id: 121243
+title_lang: de
+title: Letztes Selbstbildnis
+names:
+  - lang: en
+    role: translation
+    text: The Last Self-Portrait
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5381/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Dernier autoportrait
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5381/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: lovis-corinth
+created: 1925
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [80.5, 60.5]
+institution: kunsthaus-zurich
+inventory_number: "1867"
+web_url: https://collection.kunsthaus.ch/de/collection/item/5381/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q117881468
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Lovis_Corinth_Letztes_Selbstportr%C3%A4t_1925.jpg/1280px-Lovis_Corinth_Letztes_Selbstportr%C3%A4t_1925.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Lovis_Corinth_Letztes_Selbstportr%C3%A4t_1925.jpg
+    license: Public domain
+    credit: Lovis Corinth
+provenance:
+  - owner: person/charlotte-berend-corinth
+    acquired: 1925
+    ended: 1928
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5381/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 587."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1928-03-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 37500
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5381/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: 203.970a
+    label: Berend-Corinth 1992 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5381/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5381/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5381/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5381/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5381/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5381/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5381/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

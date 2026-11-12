@@ -1,0 +1,45 @@
+public_id: 120032
+name: Jakob Philipp Hackert
+given_name: Jakob Philipp
+family_name: Hackert
+birth: 1737-09-15
+death: 1807-04-28
+wikidata_id: Q560528
+metadata:
+  sources: [Wikidata Q560528 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q560528
+  - type: studied_at
+    to: institution/academy-of-arts-berlin
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q560528
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Jakob_Philipp_Hackert_by_Wilhelm_Titel_1806.jpg/1280px-Jakob_Philipp_Hackert_by_Wilhelm_Titel_1806.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jakob_Philipp_Hackert_by_Wilhelm_Titel_1806.jpg
+    license: Public domain
+    credit: Wilhelm Titel
+identifiers:
+  bnf: 14960124s
+  gnd: "118544306"
+  idref: "033014698"
+  kulturnav: 9e661cc2-a252-418e-be6c-75f1b8e47413
+  lc: n83318023
+  rkd: "35088"
+  ulan: "500009300"
+  viaf: "51960185"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q560528
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q560528

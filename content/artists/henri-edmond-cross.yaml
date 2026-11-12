@@ -1,0 +1,84 @@
+public_id: 120469
+name: Henri Edmond Cross
+given_name: Henri Edmond
+family_name: Cross
+names:
+  - kind: birth
+    lang: fr
+    role: former
+    text: Henri Edmond Joseph Delacroix
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q555224
+birth: 1856-05-20
+death: 1910-05-16
+wikidata_id: Q555224
+metadata:
+  sources: [Wikidata Q555224 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q555224
+  - type: influenced_by
+    to: artist/camille-pissarro
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q555224
+  - type: influenced_by
+    to: artist/claude-monet
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q555224
+  - type: influenced_by
+    to: artist/gustave-courbet
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q555224
+  - type: influenced_by
+    to: artist/pierre-puvis-de-chavannes
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q555224
+  - type: associated_with
+    to: movement/neo-impressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q555224
+  - type: associated_with
+    to: movement/pointillism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q555224
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5f/Henri-Edmond-Cross-Self-portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Henri-Edmond-Cross-Self-portrait.jpg
+    license: Public domain
+    credit: Henri-Edmond Cross
+identifiers:
+  bnf: "135082049"
+  dome: "68"
+  gnd: "121532895"
+  idref: "050263889"
+  kulturnav: b90046a3-7082-42b1-b7d2-efad6fe14ebb
+  lc: nr93001311
+  rkd: "19261"
+  ulan: "500014010"
+  viaf: "41997059"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q555224
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q555224

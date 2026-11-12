@@ -1,0 +1,137 @@
+public_id: 121158
+title_lang: de
+title: Zwei Schauspielerinnen bei der Garderobe
+names:
+  - lang: en
+    role: translation
+    text: Two Actresses in the Dressing Room
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/428/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Comédiennes
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/428/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: former
+    text: Schauspielerinnen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/428/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: max-beckmann
+created: 1946
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [160, 120]
+institution: kunsthaus-zurich
+inventory_number: 1956/0007
+web_url: https://collection.kunsthaus.ch/de/collection/item/428/
+provenance_status: a_clear
+provenance_status_note: The work was created after 1945. This is not a case of cultural property confiscated as a result of Nazi persecution.
+wikidata_id: Q131586693
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e9/Beckmann_-_Tiedemann%2C_0728.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Beckmann_-_Tiedemann,_0728.jpg
+    license: Public domain
+    credit: Max Beckmann
+provenance:
+  - owner: institution/buchholz-gallery-curt-valentin
+    role: dealer
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/428/
+        note: "Footnote: Kaldewei Kulturstiftung 2020, 728 (vgl. https://www.beckmann-gemaelde.org/728-zwei-schauspielerinnen-bei-der-garderobe)"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/morton-d-may
+    acquired: 1948
+    ended: 1948
+    direct: true
+    place: st-louis
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/428/
+        note: "Footnote: Wie oben Fussnote 2: MoMA Curt Valentin Papers - III.A.4 13 of 13: Gemäß Brief Valentin an Beckmann vom 28. Mai 1948 hat Morton May »Actresses« gekauft (keine Preisnennung)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/curt-valentin-gallery
+    role: dealer
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/428/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/curt-valentin
+    role: estate
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/428/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 628."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-wilhelm-grosshennig
+    role: dealer
+    acquired: 1955-09-12
+    ended: 1956
+    method: purchase
+    direct: true
+    place: dusseldorf
+    label: No. 14611
+    price:
+      amount: 4500
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/428/
+        note: "Footnote: Wie oben Fussnote 3: MoMA Curt Valentin Papers - VII.C.1 - Statements A-L: 12. Sep 1955, Verkauf an die Galerie Grosshennig, Düsseldorf, für 4.500 USD (Inventory No. 14611)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1956
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/428/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.728
+    label: Göpel 1976 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/428/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/428/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/428/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/428/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/428/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/428/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/428/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

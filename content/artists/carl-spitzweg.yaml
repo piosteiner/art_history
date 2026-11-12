@@ -1,0 +1,57 @@
+public_id: 120927
+name: Carl Spitzweg
+given_name: Carl
+family_name: Spitzweg
+birth: 1808-02-05
+death: 1885-09-23
+wikidata_id: Q164979
+metadata:
+  sources: [Wikidata Q164979 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-bavaria
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q164979
+  - type: born_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q164979
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q164979
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q164979
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/63/Carl_Spitzweg_-_Selbstbildnis_%28ca._1842%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Carl_Spitzweg_-_Selbstbildnis_(ca._1842).jpg
+    license: Public domain
+    credit: Carl Spitzweg
+identifiers:
+  bnf: 11983169g
+  dome: "3741"
+  gnd: "118616307"
+  idref: "027886050"
+  lc: n50024563
+  rkd: "74374"
+  ulan: "500025223"
+  viaf: "59091392"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q164979
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q164979

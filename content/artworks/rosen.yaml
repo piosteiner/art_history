@@ -1,0 +1,68 @@
+public_id: 120275
+title: Rosen
+names:
+  - lang: null
+    role: translation
+    text: Roses
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1608/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: augusto-giacometti
+created: 1929
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [28, 33]
+institution: kunsthaus-zurich
+inventory_number: 1984/0003
+web_url: https://collection.kunsthaus.ch/de/collection/item/1608/
+wikidata_id: Q131586213
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/62/Augusto_Giacometti_-_Rosen_-_1984-0003_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Augusto_Giacometti_-_Rosen_-_1984-0003_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Augusto Giacometti
+provenance:
+  - owner: person/ellen-weissenloh
+    ended: 1984
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1608/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1984
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1608/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1608/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1608/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1608/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1608/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1608/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1608/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1608/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

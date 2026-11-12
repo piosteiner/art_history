@@ -1,0 +1,93 @@
+public_id: 121630
+title_lang: fr
+title: Signac et ses amis en barque
+names:
+  - lang: de
+    role: translation
+    text: Signac und seine Freunde im Segelboot
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/994/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Signac and His Friends in the Sailing Boat
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/994/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Signac et ses amis dans uns voilier
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/994/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: pierre-bonnard
+created: c. 1924
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [125, 137]
+institution: kunsthaus-zurich
+inventory_number: "2260"
+web_url: https://collection.kunsthaus.ch/de/collection/item/994/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q61896321
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/05/Pierre_Bonnard_-_Signac_et_ses_amis_en_barque_-_2260_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre_Bonnard_-_Signac_et_ses_amis_en_barque_-_2260_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Pierre Bonnard
+provenance:
+  - owner_label: Joseph
+    direct: true
+    place: paris
+    label: genannt Jos Hessel (*1859 Brüssel, +1942 Paris)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/994/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1932
+    method: purchase
+    direct: true
+    place: zurich
+    label: aus der Ausstellung im Kunsthaus Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/994/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.198.1237
+    label: Dauberville Bonnard (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/994/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

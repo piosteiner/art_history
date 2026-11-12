@@ -1,0 +1,109 @@
+public_id: 120646
+name: Franz Marc
+given_name: Franz
+family_name: Marc
+names:
+  - kind: birth
+    lang: en
+    role: alternative
+    text: Franz Moritz Wilhelm Marc
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q44054
+birth: 1880-02-08
+death: 1916-03-04
+wikidata_id: Q44054
+metadata:
+  sources: [Wikidata Q44054 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-bavaria
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q44054
+  - type: born_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q44054
+  - type: lived_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q44054
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q44054
+  - type: worked_in
+    to: place/mulhouse
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q44054
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q44054
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q44054
+  - type: influenced_by
+    to: artist/edvard-munch
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q44054
+  - type: influenced_by
+    to: artist/vincent-van-gogh
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q44054
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q44054
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q44054
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Franz_Marc_1913_cropped.jpg/1280px-Franz_Marc_1913_cropped.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Franz_Marc_1913_cropped.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 12015937p
+  dome: "239"
+  gnd: 11857745X
+  idref: "028294467"
+  kulturnav: 70a39d2e-d8ab-4765-b2af-34a1c8742a97
+  lc: n80007960
+  nlk: KAC200005158
+  rkd: "52450"
+  ulan: "500010681"
+  viaf: "44310294"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q44054
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q44054

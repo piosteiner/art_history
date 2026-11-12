@@ -1,0 +1,76 @@
+public_id: 120215
+title_lang: de
+title: In der Gartenlaube
+names:
+  - lang: en
+    role: translation
+    text: The Garden Pergola
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/148/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Sous la tonnelle
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/148/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: arnold-bocklin
+created: 1891
+kind: painting
+medium: Tempera auf Holz
+dimensions: [99, 75]
+institution: kunsthaus-zurich
+inventory_number: "518"
+web_url: https://collection.kunsthaus.ch/de/collection/item/148/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586757
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6f/Arnold_B%C3%B6cklin_-_In_der_Gartenlaube_-_518_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Arnold_B%C3%B6cklin_-_In_der_Gartenlaube_-_518_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Arnold Böcklin
+provenance:
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1891
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/148/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "498.430"
+    label: Andree 1998 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/148/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/148/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/148/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/148/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/148/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/148/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/148/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

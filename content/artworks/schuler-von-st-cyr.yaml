@@ -1,0 +1,77 @@
+public_id: 120482
+title_lang: de
+title: Schüler von St. Cyr
+names:
+  - lang: null
+    role: translation
+    text: Student in Saint-Cyr Uniform
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2034/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: former
+    text: Un St. Cyrien
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2034/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ottilie-wilhelmine-roederstein
+created: 1911
+kind: oil painting
+medium: Öltempera auf Leinwand
+dimensions: [100, 65]
+institution: kunsthaus-zurich
+inventory_number: "1040"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2034/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131587412
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c4/Ottilie_Wilhelmine_Roederstein_-_Sch%C3%BCler_von_St._Cyr_-_1040_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ottilie_Wilhelmine_Roederstein_-_Sch%C3%BCler_von_St._Cyr_-_1040_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ottilie Roederstein
+provenance:
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1914
+    method: purchase
+    direct: true
+    place: zurich
+    label: aus der Ausstellung im Kunsthaus Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2034/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "872"
+    label: Rök (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2034/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2034/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2034/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2034/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2034/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2034/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2034/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

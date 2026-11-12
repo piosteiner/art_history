@@ -1,0 +1,122 @@
+public_id: 121528
+title_lang: it
+title: Punta della Dogana e Santa Maria della Salute
+names:
+  - lang: it
+    role: translation
+    text: Punta della Dogana und Santa Maria della Salute
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7783/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: it
+    role: translation
+    text: Punta della Dogana and Santa Maria della Salute
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7783/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: francesco-guardi
+created: c. 1755
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [31.3, 52.3]
+institution: kunsthaus-zurich
+inventory_number: D.2016/0034
+web_url: https://collection.kunsthaus.ch/de/collection/item/7783/
+on_loan: true
+on_loan_since: 2016
+wikidata_id: Q131586776
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f9/Francesco_Guardi_-_Punta_della_Dogana_e_Santa_Maria_della_Salute_-_D.2016-0034_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Francesco_Guardi_-_Punta_della_Dogana_e_Santa_Maria_della_Salute_-_D.2016-0034_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Francesco Guardi
+provenance:
+  - owner: person/b-coureau
+    place: london
+    label: 1 b Pall Mall Place
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7783/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1913-06-30
+    ended: 1913-06-30
+    method: auction
+    direct: true
+    place: london
+    label: Lot 157
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7783/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/mssrs-newmans
+    acquired: 1913-06-30
+    method: purchase
+    direct: true
+    label: 190.00 Guinea
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7783/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    acquired: 1955
+    ended: 1955
+    place: buenos-aires
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7783/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/charles-beddington-ltd
+    role: dealer
+    ended: 2013
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7783/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/schweizer-privatsammlung
+    acquired: 2013
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7783/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7783/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7783/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7783/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7783/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7783/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7783/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7783/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7783/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

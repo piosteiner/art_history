@@ -1,0 +1,70 @@
+public_id: 120396
+title_lang: de
+title: Schloss Kronborg im Mondschein
+names:
+  - lang: null
+    role: translation
+    text: Kronborg Castle in Moonlight
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179969/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: peder-balke
+created: 1840
+kind: oil painting
+medium: Öl auf Karton
+dimensions: [19, 32]
+institution: kunsthaus-zurich
+inventory_number: ZKG.2018/0018
+web_url: https://collection.kunsthaus.ch/de/collection/item/179969/
+wikidata_id: Q131585290
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3f/Peder_Balke_-_Schloss_Kronborg_im_Mondschein_-_ZKG.2018-0018_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Peder_Balke_-_Schloss_Kronborg_im_Mondschein_-_ZKG.2018-0018_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Peder Balke
+provenance:
+  - owner: person/christen-sveaas
+    ended: 2018
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179969/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2018
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179969/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179969/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

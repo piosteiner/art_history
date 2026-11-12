@@ -1,0 +1,89 @@
+public_id: 120054
+name: Otto Meyer-Amden
+given_name: Otto
+family_name: Meyer-Amden
+birth: 1885-02-20
+death: 1933-01-15
+wikidata_id: Q690169
+metadata:
+  sources: [Wikidata Q690169 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q690169
+  - type: born_in
+    to: place/bern
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q690169
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q690169
+  - type: worked_in
+    to: place/stuttgart
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q690169
+  - type: worked_in
+    to: place/bern
+    period: 1901/1903
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q690169
+  - type: worked_in
+    to: place/zurich
+    period: 1903/1906
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q690169
+  - type: worked_in
+    to: place/munich
+    period: 1906/1907
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q690169
+  - type: worked_in
+    to: place/paris
+    period: 1906/1907
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q690169
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    period: 1906/1907
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q690169
+identifiers:
+  bnf: 12047314g
+  gnd: "118733508"
+  hls: "022085"
+  idref: "028688783"
+  kulturnav: 64628f53-fdae-437d-899d-819b7db2f743
+  lc: n85287577
+  rkd: "55705"
+  sikart: "4000322"
+  ulan: "500013500"
+  viaf: "62343879"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q690169
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q690169

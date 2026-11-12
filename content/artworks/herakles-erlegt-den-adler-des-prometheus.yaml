@@ -1,0 +1,139 @@
+public_id: 120018
+title_lang: de
+title: Herakles erlegt den Adler des Prometheus
+names:
+  - lang: de
+    role: translation
+    text: Prometheus wird von Hercules gerettet
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Heracles Saves Prometheus from the Eagle
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Heraclès tuant l’aigle de Prométhée
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: henry-fuseli
+created: 1781/1785
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [63, 76]
+institution: kunsthaus-zurich
+inventory_number: 1998/0002
+web_url: https://collection.kunsthaus.ch/de/collection/item/1011/
+wikidata_id: Q131586141
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7e/Henry_Fuseli_-_Herakles_erlegt_den_Adler_des_Prometheus_-_1998-0002_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henry_Fuseli_-_Herakles_erlegt_den_Adler_des_Prometheus_-_1998-0002_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Henry Fuseli
+provenance:
+  - owner: person/johann-heinrich-fussli
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/lady-georgina-north
+    direct: true
+    place: england
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1957-11-19
+    ended: 1957-11-23
+    method: auction
+    place: lucerne
+    label: Lot 2485
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-fischer
+    role: dealer
+    acquired: 1958-06-17
+    ended: 1958-06-21
+    place: lucerne
+    label: Lot 3077
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/christie-s-zurich
+    role: agent
+    acquired: 1998-03-30
+    ended: 1998-03-30
+    method: auction
+    direct: true
+    place: zurich
+    label: Lot 74
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/gustav-zumsteg
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1998
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.487.711
+    label: Schiff (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

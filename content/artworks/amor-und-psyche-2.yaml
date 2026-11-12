@@ -1,0 +1,135 @@
+public_id: 120436
+title_lang: de
+title: Amor und Psyche
+names:
+  - lang: de
+    role: translation
+    text: Amor erweckt Psyche von ihrem tödlichen Schlaf
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1891/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Cupid and Psyche
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1891/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Amour et Psyché
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1891/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: henry-fuseli
+created: c. 1810
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [125, 100]
+institution: kunsthaus-zurich
+inventory_number: 1994/0012
+web_url: https://collection.kunsthaus.ch/de/collection/item/1891/
+wikidata_id: Q131586825
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8e/Henry_Fuseli_-_Amor_und_Psyche_-_1994-0012_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henry_Fuseli_-_Amor_und_Psyche_-_1994-0012_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Henry Fuseli
+provenance:
+  - owner: person/johann-heinrich-fussli
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1891/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/william-locke
+    direct: true
+    label: Surrey
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1891/
+        note: "Footnote: Kat. Kunsthaus Zürich/Musée de Carouge 1994, S. 176, No. 18bis."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/joseph-blake
+    direct: true
+    label: 3rd Baron Wallscourt (*1797, +1849); Ardfry
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1891/
+        note: "Footnote: Wie oben Fussnote 2. Joseph Blake heiratete 1922 Elizabeth Locke, die Tochter von William Locke."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    acquired: 1920 or later
+    label: Isle of Wight
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1891/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    ended: 1994 or earlier
+    method: inheritance
+    direct: true
+    label: Isle of Wight
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1891/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/anthony-mould-ltd
+    role: dealer
+    ended: 1994 or earlier
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1891/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1994
+    method: gift
+    direct: true
+    place: zurich
+    label: «Geschenk der Schweizerischen Bankgesellschaft»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1891/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.653.75
+    label: Schiff (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1891/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1891/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1891/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1891/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1891/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1891/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1891/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,70 @@
+public_id: 121052
+name: Sophie Taeuber-Arp
+given_name: Sophie
+family_name: Taeuber-Arp
+birth: 1889-01-19
+death: 1943-01-14
+wikidata_id: Q254395
+metadata:
+  sources: [Wikidata Q254395 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q254395
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q254395
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q254395
+  - type: born_in
+    to: place/davos
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q254395
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q254395
+  - type: associated_with
+    to: movement/dada
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q254395
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a1/Sophie_Taeuber.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sophie_Taeuber.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 12143252z
+  gnd: "118753754"
+  hls: "021964"
+  idref: "029906067"
+  lc: n81147240
+  rkd: "76378"
+  sikart: "4023423"
+  ulan: "500020080"
+  viaf: "56646212"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q254395
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q254395

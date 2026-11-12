@@ -1,0 +1,99 @@
+public_id: 120315
+title_lang: de
+title: Die Sünde, vom Tode verfolgt
+names:
+  - lang: de
+    role: translation
+    text: Die Sünde, vom Tod verfolgt. Milton, Paradise Lost II, 787 ff.
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1720/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Sin, Pursued by Death
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1720/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: henry-fuseli
+created: 1794/1796
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [119, 132]
+institution: kunsthaus-zurich
+inventory_number: "1838"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1720/
+on_loan: true
+on_loan_since: 1926
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131587410
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6a/Henry_Fuseli_-_Die_S%C3%BCnde%2C_vom_Tode_verfolgt_-_1838_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henry_Fuseli_-_Die_S%C3%BCnde,_vom_Tode_verfolgt_-_1838_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Henry Fuseli
+provenance:
+  - owner: person/johann-heinrich-fussli
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1720/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/g-l-bollag
+    ended: 1926
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1720/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 64: «Erworben vom Kunstsalon Bollag aus der Ausstellung im Kunsthaus, 1926»; Kat. Kunsthaus Zürich 1926 Füssli, S. 4, Nr. 34/Tafel XIX: «Die Sünde, vom Tode verfolgt, 132 x 119, Tafel XIX, verkäuflich.»; Eingehende Korrespondenz mit G. & L. Bollag, Zürich, 1926, Korrespondenz Ausstellung Besitzer/Händler A-Z, 1926-1927, Archiv ZKG/KHZ, 10.30.30.57."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/gottfried-keller-stiftung
+    acquired: 1926
+    ended: 1926
+    method: purchase
+    direct: true
+    place: bern
+    label: Bundesamt für Kultur; aus der Ausstellung im Kunsthaus Zürich; Nr. 34
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1720/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.516.892
+    label: Schiff (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1720/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1720/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1720/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1720/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1720/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1720/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1720/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1720/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

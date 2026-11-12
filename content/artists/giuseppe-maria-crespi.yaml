@@ -1,0 +1,65 @@
+public_id: 120695
+name: Giuseppe Maria Crespi
+given_name: Giuseppe Maria
+family_name: Crespi
+names:
+  - kind: nickname
+    lang: it
+    role: alternative
+    text: Lo Spagnolo
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q528620
+birth: 1665-03-14
+death: 1747-07-16
+wikidata_id: Q528620
+metadata:
+  sources: [Wikidata Q528620 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/papal-states
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q528620
+  - type: born_in
+    to: place/bologna
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q528620
+  - type: died_in
+    to: place/bologna
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q528620
+  - type: worked_in
+    to: place/bologna
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q528620
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ef/Crespi%2C_Giuseppe_Maria_--_Self-Portrait_-_c._1700-transparent.png
+    source_url: https://commons.wikimedia.org/wiki/File:Crespi,_Giuseppe_Maria_--_Self-Portrait_-_c._1700-transparent.png
+    license: Public domain
+    credit: Giuseppe Maria Crespi
+identifiers:
+  bnf: 14972059v
+  gnd: "118522728"
+  idref: "030807050"
+  kulturnav: 1ea589ee-85b9-45f1-92fb-5b046f670e94
+  lc: n83235520
+  rkd: "19081"
+  ulan: "500115276"
+  viaf: "7586835"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q528620
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q528620

@@ -1,0 +1,75 @@
+public_id: 121439
+title: Annetta
+creator: giovanni-giacometti
+created: 1900
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [50, 50]
+institution: kunsthaus-zurich
+inventory_number: 2012/0018
+web_url: https://collection.kunsthaus.ch/de/collection/item/7265/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586422
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5b/Giovanni_Giacometti_-_Annetta_-_2012-0018_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Giacometti_-_Annetta_-_2012-0018_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Giovanni Giacometti
+provenance:
+  - owner: institution/galerie-aktuaryus
+    role: dealer
+    direct: true
+    place: zurich
+    label: Zürich, Nachlass Giovanni Giacometti
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7265/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/bruno-giacometti
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7265/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2012
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7265/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "1900.01"
+    label: Müller/Radlach Giacometti (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7265/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7265/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7265/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7265/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7265/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7265/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7265/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

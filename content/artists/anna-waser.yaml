@@ -1,0 +1,50 @@
+public_id: 121005
+name: Anna Waser
+given_name: Anna
+family_name: Waser
+birth: 1678-10-16
+death: 1714-09-20
+wikidata_id: Q119788
+metadata:
+  sources: [Wikidata Q119788 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q119788
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q119788
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q119788
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Anna_Waser%2C_Selbstbildnis_mit_12_Jahren.jpg/1280px-Anna_Waser%2C_Selbstbildnis_mit_12_Jahren.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anna_Waser,_Selbstbildnis_mit_12_Jahren.jpg
+    license: Public domain
+    credit: Anna Waser
+identifiers:
+  gnd: "119534274"
+  hls: "019101"
+  lc: nb2018017832
+  rkd: "82948"
+  sikart: "4022965"
+  ulan: "500111826"
+  viaf: "62360577"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q119788
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q119788

@@ -1,0 +1,65 @@
+public_id: 121599
+title_lang: de
+title: Römerin
+creator: wilhelm-fussli
+created: c. 1865
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Papier über Leinwand
+dimensions: [34.5, 28.5]
+institution: kunsthaus-zurich
+inventory_number: "0468"
+web_url: https://collection.kunsthaus.ch/de/collection/item/869/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131587406
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0a/Wilhelm_F%C3%BCssli_-_R%C3%B6merin_-_0468_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Wilhelm_F%C3%BCssli_-_R%C3%B6merin_-_0468_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Wilhelm Füssli
+provenance:
+  - owner: person/salomon-vogelin
+    ended: 1888-10-17
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/869/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1888-10-17
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/869/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/869/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/869/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/869/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/869/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/869/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/869/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/869/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

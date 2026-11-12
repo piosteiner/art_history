@@ -1,0 +1,101 @@
+public_id: 120080
+name: Anton Graff
+given_name: Anton
+family_name: Graff
+birth: 1736-11-18
+death: 1813-06-22
+wikidata_id: Q310213
+metadata:
+  sources: [Wikidata Q310213 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/electorate-of-saxony
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q310213
+  - type: nationality
+    to: polity/kingdom-of-saxony
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q310213
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q310213
+  - type: born_in
+    to: place/winterthur
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q310213
+  - type: died_in
+    to: place/dresden
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q310213
+  - type: worked_in
+    to: place/augsburg
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q310213
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q310213
+  - type: worked_in
+    to: place/dresden
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q310213
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q310213
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q310213
+  - type: associated_with
+    to: movement/neoclassicism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q310213
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Anton_Graff_Selbstbildnis.jpg/1280px-Anton_Graff_Selbstbildnis.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anton_Graff_Selbstbildnis.jpg
+    license: Public domain
+    credit: Anton Graff
+identifiers:
+  bnf: 16573231v
+  gnd: "118697064"
+  hls: "021883"
+  idref: "119306654"
+  kulturnav: ae326491-e590-4c38-a6de-68d153aa20d8
+  lc: n85191677
+  rkd: "33230"
+  sikart: "4023347"
+  ulan: "500027163"
+  viaf: "17493289"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q310213
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q310213

@@ -1,0 +1,112 @@
+public_id: 121459
+title_lang: de
+title: Hirt und Hirtin in der Campagna
+names:
+  - lang: en
+    role: translation
+    text: Shepherd and Shepherdess in the Campagna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/738/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: nicolaes-berchem
+created: 1665/1680
+created_label: c. 1670/1675
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Eichenholz
+dimensions: [29.7, 37]
+institution: kunsthaus-zurich
+inventory_number: KS 32
+web_url: https://collection.kunsthaus.ch/de/collection/item/738/
+on_loan: true
+on_loan_since: 1981
+wikidata_id: Q56742404
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6f/Nicolaes_Berchem_-_Hirt_und_Hirtin_in_der_Campagna_-_KS_32_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Nicolaes_Berchem_-_Hirt_und_Hirtin_in_der_Campagna_-_KS_32_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Nicolaes Pieterszoon Berchem
+provenance:
+  - owner: person/dmitri-michailowitsch-golizyn
+    place: moscow
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/738/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/the-state-hermitage-museum
+    acquired: 1886
+    ended: 1931
+    method: purchase
+    direct: true
+    place: saint-petersburg
+    label: Nr. 1686
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/738/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-fischer
+    role: dealer
+    acquired: 1931-08-18
+    ended: 1931-08-18
+    direct: true
+    place: lucerne
+    label: Lot 231
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/738/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    place: netherlands
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/738/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/betty-koetser
+    co_owners: [person/david-m-koetser]
+    ended: 1986
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/738/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/stiftung-betty-und-david-koetser
+    acquired: 1986
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/738/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/738/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/738/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/738/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/738/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/738/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/738/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/738/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/738/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

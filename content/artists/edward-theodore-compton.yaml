@@ -1,0 +1,45 @@
+public_id: 121269
+name: Edward Theodore Compton
+given_name: Edward Theodore
+family_name: Compton
+birth: 1849-07-29
+death: 1921-03-22
+wikidata_id: Q1293858
+metadata:
+  sources: [Wikidata Q1293858 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1293858
+  - type: born_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q1293858
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f6/Portrait_of_Edward_Theodore_Compton.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Edward_Theodore_Compton.jpg
+    license: Public domain
+    credit: unknown, probably Compton himself
+identifiers:
+  dome: "2718"
+  gnd: 11852173X
+  idref: "198201494"
+  kulturnav: 0d375692-1919-454d-ae54-a4144a98d8f4
+  lc: n90701011
+  rkd: "17904"
+  ulan: "500000992"
+  viaf: "42629047"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1293858
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1293858

@@ -1,0 +1,106 @@
+public_id: 120981
+name: August Weckesser
+given_name: August
+family_name: Weckesser
+birth: 1821-11-28
+death: 1899-01-11
+wikidata_id: Q764430
+metadata:
+  sources: [Wikidata Q764430 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q764430
+  - type: born_in
+    to: place/winterthur
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q764430
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q764430
+  - type: lived_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q764430
+  - type: lived_in
+    to: place/munich
+    period: 1841/1848
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q764430
+  - type: lived_in
+    to: place/winterthur
+    period: 1848/1851
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q764430
+  - type: lived_in
+    to: place/antwerp
+    period: 1851/1853
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q764430
+  - type: lived_in
+    to: place/rome
+    period: 1858
+    period_label: from 1858
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q764430
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q764430
+  - type: student_of
+    to: artist/johann-caspar-weidenmann
+    period: 1848
+    period_label: from 1848
+    sources:
+      - accessed: 2026-11-12
+        property: P1066
+        wikidata: Q764430
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    period: 1841
+    period_label: from 1841
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q764430
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/25/Weckesser-Selfportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Weckesser-Selfportrait.jpg
+    license: Public domain
+    credit: August Weckesser (1821-1899)
+identifiers:
+  gnd: "1021410853"
+  hls: "022693"
+  rkd: "83207"
+  sikart: "4023325"
+  ulan: "500003393"
+  viaf: "95701257"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q764430
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q764430

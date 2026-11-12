@@ -1,0 +1,124 @@
+public_id: 120843
+title: I miei modelli
+names:
+  - lang: null
+    role: translation
+    text: Meine Modelle
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: My Models
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Mes modèles
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: giovanni-segantini
+created: 1888
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [65.5, 92.5]
+institution: kunsthaus-zurich
+inventory_number: 1975/0016
+web_url: https://collection.kunsthaus.ch/de/collection/item/3029/
+on_loan: true
+on_loan_since: 1975
+wikidata_id: Q131584943
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/57/Giovanni_Segantini_-_I_miei_modelli_-_1975-0016_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Segantini_-_I_miei_modelli_-_1975-0016_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Giovanni Segantini
+provenance:
+  - owner_label: Dowdeswell
+    ended: 1902
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 217."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/oskar-bernhard
+    ended: 1939-11-14
+    place: st-moritz
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/annigna-petitpierre-bernhard
+    acquired: 1939-11-14
+    ended: 1974
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-nathan
+    role: dealer
+    ended: 1975
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1975
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.370.462
+    label: Quinsac 1982 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

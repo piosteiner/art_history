@@ -1,0 +1,115 @@
+public_id: 120389
+title_lang: de
+title: Sonnenuntergang bei Skien
+names:
+  - lang: en
+    role: translation
+    text: Landscape near Skien at Sunset
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: johan-christian-dahl
+created: 1850
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [42.2, 59.2, 2.4]
+institution: kunsthaus-zurich
+inventory_number: ZKG.2018/0017
+web_url: https://collection.kunsthaus.ch/de/collection/item/179968/
+wikidata_id: Q58047671
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f8/Johan_Christian_Dahl_-_Sonnenuntergang_bei_Skien_-_ZKG.2018-0017_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Johan_Christian_Dahl_-_Sonnenuntergang_bei_Skien_-_ZKG.2018-0017_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Johan Christian Dahl
+provenance:
+  - owner: person/christiania-kunstforening
+    acquired: 1850
+    ended: 1850
+    direct: true
+    place: oslo
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/director-moller
+    direct: true
+    place: kongsberg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/lina-moller
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/overlege-preus
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/grev-wedels-plass
+    role: agent
+    acquired: 1992
+    ended: 1992
+    method: auction
+    direct: true
+    place: oslo
+    label: Lot 67
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/christen-sveaas
+    ended: 2018
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2018
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.330.1105
+    label: Bang 1987 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

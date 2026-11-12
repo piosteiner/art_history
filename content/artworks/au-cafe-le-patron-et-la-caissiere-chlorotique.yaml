@@ -1,0 +1,127 @@
+public_id: 121064
+title_lang: fr
+title: "Au café: Le Patron et la Caissière chlorotique"
+names:
+  - lang: de
+    role: translation
+    text: "Im Kaffeehaus: Der Patron und die bleichsüchtige Kassiererin"
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3638/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: "At the Café: The Customer and the Anaemic Cashier"
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3638/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: former
+    text: Bar
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3638/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: henri-de-toulouse-lautrec
+created: 1898
+kind: painting
+medium: Gouache auf Karton
+dimensions: [81.5, 60]
+institution: kunsthaus-zurich
+inventory_number: "2297"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3638/
+wikidata_id: Q131584729
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d3/Henri_de_Toulouse-Lautrec_-_Au_caf%C3%A9%2C_Le_Patron_et_la_Caissi%C3%A8re_chlorotique_-_2297_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_de_Toulouse-Lautrec_-_Au_caf%C3%A9,_Le_Patron_et_la_Caissi%C3%A8re_chlorotique_-_2297_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Henri de Toulouse-Lautrec
+provenance:
+  - owner: person/henri-bourges
+    acquired: 1914-06-15 or earlier
+    ended: 1926 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3638/
+        note: "Footnote: Caproni/Sugana 1977, No. 480, S. 117; Dortu 1971, Bd. III, No. P.657, o. S.; Joyant 1926, S. 296 [ohne Nummer]; Kat. Galerie Manzi-Joyant Paris 1914, No. 55, S. 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/estella-katzenellenbogen
+    acquired: 1932-04-01 or earlier
+    ended: 1933-08-26
+    place: berlin
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3638/
+        note: "Footnote: E-Mail-Korrespondenz Paul Cassirer & Walter Feilchenfeldt Archiv, Zürich, 09.12.2025: Eingang im Lagerbuch Paul Cassirer Amsterdam, zwischen dem 01.04.1932 und dem 30.03.1933, Sendung nach Zürich (Ausgangsdatum 25.04.1933); Brief von Walter Feilchenfeldt an Ann Demeester, Direktorin Kunsthaus Zürich, 06.06.2023; Kat. Tübingen 1986, No. 107, S. 236."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-paul-cassirer
+    role: dealer
+    direct: true
+    place: berlin
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3638/
+        note: "Footnote: Kat. Tübingen 1986, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/paul-cassirer-co-amsterdam
+    role: agent
+    acquired: 1933-03-30 or earlier
+    ended: 1933-04-26
+    direct: true
+    place: amsterdam
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3638/
+        note: "Footnote: Wie oben Fussnote 5; Brief von der Kunsthandlung Paul Cassirer & Co. Amsterdam im Auftrag von Walter Feilchenfeldt an Wilhelm Wartmann, 25.04.1933, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.62; Kat. Kunsthaus Zürich 1933, Kat.-Nr. 97, Tafel XV; Dortu 1971, wie oben Fussnote 3; Caproni/Sugana 1977, wie oben Fussnote 3; Kat. Tübingen 1986, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1933-08-26
+    method: purchase
+    direct: true
+    place: zurich
+    label: aus der Ausstellung Französische Maler des 19. Jahrhunderts
+    price:
+      amount: 22000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3638/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 18.08.1933, 4; 23.08.1933, Archiv ZKG/KHZ, 10.30.10.41; Sitzungsprotokoll des Vorstands, 26.08.1933, a, Archiv ZKG/KHZ, 10.30.10.12; Dortu 1971, wie oben Fussnote 3; Caproni/Sugana 1977, wie oben Fussnote 3; Kat. Tübingen 1986, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "657"
+    label: Dortu 1971 III.P (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3638/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3638/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3638/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3638/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3638/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3638/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3638/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

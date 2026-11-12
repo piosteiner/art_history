@@ -1,0 +1,41 @@
+public_id: 121009
+name: Jakob Welti
+given_name: Jakob
+family_name: Welti
+birth: 1871-10-01
+death: 1952-01-07
+wikidata_id: Q131629545
+metadata:
+  sources: [Wikidata Q131629545 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q131629545
+  - type: born_in
+    to: place/winterthur
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q131629545
+  - type: died_in
+    to: place/zollikon
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q131629545
+identifiers:
+  gnd: "1089546696"
+  sikart: "4024680"
+  viaf: "679145857087622921816"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q131629545
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q131629545

@@ -1,0 +1,111 @@
+public_id: 121253
+title_lang: de
+title: Der Tag
+names:
+  - lang: en
+    role: translation
+    text: The Day
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5522/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Le Jour
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5522/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Der Tag. Zweite Fassung
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5522/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: 1904/1906
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [163, 356]
+institution: kunsthaus-zurich
+inventory_number: "1165"
+web_url: https://collection.kunsthaus.ch/de/collection/item/5522/
+on_loan: true
+on_loan_since: 1918
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585648
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cc/Ferdinand_Hodler_-_Der_Tag_-_1165_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Der_Tag_-_1165_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/carl-von-reininghaus
+    acquired: 1906
+    ended: 1918
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5522/
+        note: "Footnote: Bätschmann 2017, WVZ Hodler, No. 1313, https://recherche.sik-isea.ch/sik:work-6008467/in/catalogues.hodler/ [16.06.2025]"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/alfred-rutschi
+    acquired: before 19 January 1918
+    ended: 1919-04-06
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5522/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1919
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5522/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.1313
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5522/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5522/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5522/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5522/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5522/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5522/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5522/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5522/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

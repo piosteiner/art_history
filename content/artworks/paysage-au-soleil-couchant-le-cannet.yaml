@@ -1,0 +1,89 @@
+public_id: 121372
+title_lang: fr
+title: Paysage au soleil couchant. Le Cannet
+names:
+  - lang: de
+    role: translation
+    text: Landschaft bei Sonnenuntergang (Le Cannet)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6689/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Landscape at Sunset (Le Cannet)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6689/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: pierre-bonnard
+created: 1927
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [104, 121]
+institution: kunsthaus-zurich
+inventory_number: 2005/0026
+web_url: https://collection.kunsthaus.ch/de/collection/item/6689/
+wikidata_id: Q124288343
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5a/Pierre_Bonnard_-_Paysage_au_soleil_couchant._Le_Cannet_-_2005-0026_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre_Bonnard_-_Paysage_au_soleil_couchant._Le_Cannet_-_2005-0026_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Pierre Bonnard
+provenance:
+  - owner: institution/bernheim-jeune
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6689/
+        note: "Footnote: Dauberville III.302.1374."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/gustav-zumsteg
+    acquired: 1953 or earlier
+    ended: 2005
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6689/
+        note: 'Footnote: Kat. Museum Boymans 1953, No. 75: "Zomerlandschap bij Le Cannet / ca. 1926".'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2005
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/6689/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.302.1374
+    label: Dauberville Bonnard (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6689/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6689/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6689/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6689/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6689/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6689/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6689/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

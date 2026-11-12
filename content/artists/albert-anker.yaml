@@ -1,0 +1,65 @@
+public_id: 121196
+name: Albert Anker
+given_name: Albert
+family_name: Anker
+birth: 1831-04-01
+death: 1910-07-16
+wikidata_id: Q72510
+metadata:
+  sources: [Wikidata Q72510 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q72510
+  - type: student_of
+    to: artist/charles-gleyre
+    sources:
+      - accessed: 2026-11-12
+        property: P1066
+        wikidata: Q72510
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q72510
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q72510
+  - type: associated_with
+    to: movement/realism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q72510
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e7/Albert_Anker.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_Anker.jpg
+    license: Public domain
+    credit: R. Witschi, Ins, upload by Adrian Michael
+identifiers:
+  bnf: 11966313q
+  dodis: P33343
+  gnd: "118503197"
+  hls: "021975"
+  idref: "027669998"
+  lc: n82070670
+  rkd: "1928"
+  sikart: "4000009"
+  ulan: "500009804"
+  viaf: "14778781"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q72510
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q72510

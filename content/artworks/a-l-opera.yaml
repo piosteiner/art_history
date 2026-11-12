@@ -1,0 +1,97 @@
+public_id: 120016
+title_lang: fr
+title: A lʼopéra
+names:
+  - lang: de
+    role: translation
+    text: In der Oper
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1008/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: At the Opera
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1008/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: jean-louis-forain
+created: c. 1900
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [65.5, 81.5]
+institution: kunsthaus-zurich
+inventory_number: 1946/0007
+web_url: https://collection.kunsthaus.ch/de/collection/item/1008/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124288357
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0b/Jean_Louis_Forain_-_A_l%CA%BCop%C3%A9ra_-_1946-0007_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jean_Louis_Forain_-_A_l%CA%BCop%C3%A9ra_-_1946-0007_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jean-Louis Forain
+provenance:
+  - owner: person/ambroise-vollard
+    acquired: 1922-01-01
+    ended: 1939
+    method: purchase
+    place: paris
+    label: Nr. 1241
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1008/
+        note: "Footnote: Ambroise Vollard Records, Gallery Records (1866-1946), Subseries I.I.: Administrative Files (1896-1938), Stock Books and Inventories (1899-1938), 1922 Inventory [1 to 3000], Nr. 1241 hier als «Coulisses» geführt, vgl. https://digitalprojects.wpi.art/archive/collections/detail?id=170529-stock-books-and-inventories (27.05.2024)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/lucien-vollard
+    acquired: 1939
+    ended: 1940
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1008/
+        note: "Footnote: Sitzungsprotokoll des Vorstands, 12.03.1940, Archiv ZKG/KHZ, 10.30.10.12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1940
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1008/
+        note: "Footnote: Wie oben Fussnote 4. Die Übergabe des Gemäldes vollzog sich aber durch den Ausbruch des Krieges und mithilfe von Charles Montag, der das Werk in Verwahrung in Paris behielt, erst 1946; siehe ZKG/KHZ Inventarbuch Slg. und Sitzungsprotokoll der Sammlungskommission, 31.07.1946, Archiv ZKG/KHZ, 10.30.10.42."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1008/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1008/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1008/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1008/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1008/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1008/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1008/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

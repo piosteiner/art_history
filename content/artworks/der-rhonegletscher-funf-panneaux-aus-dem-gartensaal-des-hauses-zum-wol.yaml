@@ -1,0 +1,82 @@
+public_id: 120832
+title_lang: de
+title: Der Rhonegletscher. Fünf Panneaux aus dem Gartensaal des Hauses zum Wollenhof
+names:
+  - lang: en
+    role: translation
+    text: The Rhone Glacier
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3002/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Le Glacier du Rhône
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3002/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: johann-heinrich-wuest
+created: c. 1775
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [126, 100]
+institution: kunsthaus-zurich
+inventory_number: "386"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3002/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585546
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/83/Johann_Heinrich_W%C3%BCest_-_Der_Rhonegletscher._F%C3%BCnf_Panneaux_aus_dem_Gartensaal_des_Hauses_zum_Wollenhof_-_386_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Heinrich_W%C3%BCest_-_Der_Rhonegletscher._F%C3%BCnf_Panneaux_aus_dem_Gartensaal_des_Hauses_zum_Wollenhof_-_386_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Heinrich Wüest
+provenance:
+  - owner: person/heinrich-escher-vom-glas
+    ended: 1877
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3002/
+        note: "Footnote: Vuilleumier-Kirschbaum 2015, S. 37-38; ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1877
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3002/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3002/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3002/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3002/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3002/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3002/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3002/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3002/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

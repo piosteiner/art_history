@@ -1,0 +1,55 @@
+public_id: 121179
+name: Filippo Lauri
+given_name: Filippo
+family_name: Lauri
+birth: 1623-08-25
+death: 1694-12-12
+wikidata_id: Q3071902
+metadata:
+  sources: [Wikidata Q3071902 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/papal-states
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q3071902
+  - type: born_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q3071902
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q3071902
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q3071902
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b5/Portrait_filippo_lauri_abr%C3%A9g%C3%A9_des_plus_fameux_peintres_1745.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_filippo_lauri_abr%C3%A9g%C3%A9_des_plus_fameux_peintres_1745.jpg
+    license: Public domain
+    credit: Graveur français inconnu, milieu du XVIIIe siècle
+identifiers:
+  bnf: 14959088q
+  gnd: "121865665"
+  lc: nr2002015079
+  rkd: "48350"
+  ulan: "500031281"
+  viaf: "71663629"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q3071902
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q3071902

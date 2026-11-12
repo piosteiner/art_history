@@ -1,0 +1,121 @@
+public_id: 120869
+title_lang: de
+title: Das Marionettentheater
+names:
+  - lang: fr
+    role: translation
+    text: "Scène de genre: Le théâtre de marionettes / Le Spectacle de guignol / Le Polichinelle"
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Bateleurs de village
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Le théâtre de marionettes
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: wolfgang-adam-topffer
+created: c. 1820
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Holz
+dimensions: [63, 54]
+institution: kunsthaus-zurich
+inventory_number: "1622"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3073/
+on_loan: true
+on_loan_since: 1925
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585518
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d4/Wolfgang-Adam_T%C3%B6pffer_-_Das_Marionettentheater_-_1622_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Wolfgang-Adam_T%C3%B6pffer_-_Das_Marionettentheater_-_1622_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Wolfgang Adam Töpffer
+provenance:
+  - owner: person/francois-jean-andre-duval
+    acquired: 1847 or earlier
+    ended: 1854 or earlier
+    direct: true
+    place: geneva
+    label: Genf, Erbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+        note: "Footnote: Kunsthaus Zürich, Sammlungskatalog, 2007, S. 90."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: the Duval-Töpffer family
+    acquired: 1854 or earlier
+    direct: true
+    place: geneva
+    label: Genf, Erbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Dr. Störi
+    ended: 1925
+    place: zurich
+    label: Kunstsalon (Galerie)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1925
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "107"
+    label: Boissonnas LBPN (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

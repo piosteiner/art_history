@@ -1,0 +1,22 @@
+public_id: 120761
+name: Brunnen
+kind: settlement
+parent: switzerland
+country_code: CH
+location: [8.60472, 46.99528]
+wikidata_id: Q675405
+metadata:
+  sources: [Wikidata Q675405 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q675405
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q675405
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q675405

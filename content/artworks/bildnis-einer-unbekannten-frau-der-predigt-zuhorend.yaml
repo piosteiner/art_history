@@ -1,0 +1,78 @@
+public_id: 120052
+title_lang: de
+title: Bildnis einer Unbekannten. Frau, der Predigt zuhörend
+names:
+  - lang: de
+    role: former
+    text: Die Andächtige
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1112/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: c. 1885
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [41, 28]
+institution: kunsthaus-zurich
+inventory_number: "1128"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1112/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131587384
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8e/Ferdinand_Hodler_-_Bildnis_einer_Unbekannten._Frau%2C_der_Predigt_zuh%C3%B6rend_-_1128_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Bildnis_einer_Unbekannten._Frau,_der_Predigt_zuh%C3%B6rend_-_1128_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/fritz-meyer-fierz
+    ended: 1917
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1112/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1917
+    method: purchase
+    direct: true
+    place: zurich
+    label: «Kauf aus der Ausstellung Ferdinand Hodler (14.06. - 15.08.1917) im Kunsthaus Zürich»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1112/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.729
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1112/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1112/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1112/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1112/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1112/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1112/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1112/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

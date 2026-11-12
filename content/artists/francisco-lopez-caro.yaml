@@ -1,0 +1,48 @@
+public_id: 120967
+name: Francisco López Caro
+given_name: Francisco López
+family_name: Caro
+birth: c. 1600
+death: c. 1661
+wikidata_id: Q5483590
+metadata:
+  sources: [Wikidata Q5483590 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q5483590
+  - type: born_in
+    to: place/seville
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q5483590
+  - type: died_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q5483590
+  - type: worked_in
+    to: place/seville
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q5483590
+identifiers:
+  gnd: "1131820231"
+  rkd: "50871"
+  ulan: "500037427"
+  viaf: "95916754"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q5483590
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q5483590

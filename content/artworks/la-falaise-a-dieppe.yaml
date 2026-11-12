@@ -1,0 +1,178 @@
+public_id: 120791
+title_lang: fr
+title: La Falaise à Dieppe
+names:
+  - lang: de
+    role: translation
+    text: Die Steilküste bei Dieppe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: The Cliff at Dieppe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: claude-monet
+created: 1882
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [66, 82]
+institution: kunsthaus-zurich
+inventory_number: "2252"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2848/
+on_loan: true
+on_loan_since: 1932
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124252683
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c1/Claude_Monet_-_La_Falaise_%C3%A0_Dieppe_%28Z%C3%BCrich%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_La_Falaise_%C3%A0_Dieppe_(Z%C3%BCrich).jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: person/jean-baptiste-faure
+    ended: 1889 or later
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 237."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1901
+    ended: 1901
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/adrien-aurelien-hebrard
+    acquired: 1906
+    ended: 1906
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/alexandre-berthier-prince-de-wagram
+    acquired: 1906
+    ended: 1906
+    place: paris
+    label: 4. Prince de Wagram (*1883, +1918) (Sammler/-in)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/durand-ruel
+    role: dealer
+    ended: 1909
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/e-hirsch
+    acquired: 1909
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/paul-rosenberg
+    acquired: c. 1911
+    ended: c. 1911
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1924-05-30
+    ended: 1924-05-30
+    method: auction
+    place: paris
+    label: Vente Nardus et Bourgeois; Lot 33
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1924-05-30
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hugo-moses-auch-moser-genannt
+    acquired: 1927
+    ended: 1932
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1932
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.284.759
+    label: Wildenstein Monet (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

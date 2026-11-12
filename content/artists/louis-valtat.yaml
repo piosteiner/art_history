@@ -1,0 +1,82 @@
+public_id: 120949
+name: Louis Valtat
+given_name: Louis
+family_name: Valtat
+birth: 1869-08-08
+death: 1952-01-02
+wikidata_id: Q1872017
+metadata:
+  sources: [Wikidata Q1872017 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1872017
+  - type: born_in
+    to: place/dieppe
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q1872017
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q1872017
+  - type: lived_in
+    to: place/versailles
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q1872017
+  - type: worked_in
+    to: place/amsterdam
+    period: 1934/1938
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1872017
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q1872017
+  - type: associated_with
+    to: movement/fauvism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q1872017
+  - type: associated_with
+    to: movement/post-impressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q1872017
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/df/Renoir_of_Louis_Valtat_c1904.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Renoir_of_Louis_Valtat_c1904.jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+identifiers:
+  bnf: 11954699d
+  dome: "395"
+  gnd: "119303183"
+  idref: "027525236"
+  lc: nr94040625
+  rkd: "79126"
+  ulan: "500026675"
+  viaf: "61554340"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1872017
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1872017

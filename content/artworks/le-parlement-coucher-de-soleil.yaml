@@ -1,0 +1,185 @@
+public_id: 120674
+title_lang: fr
+title: Le Parlement, coucher de soleil
+names:
+  - lang: de
+    role: translation
+    text: Das Parlament, Sonnenuntergang
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Houses of Parliament, Sunset
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: claude-monet
+created: 1904
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [81, 92]
+institution: kunsthaus-zurich
+inventory_number: 1995/0003
+web_url: https://collection.kunsthaus.ch/de/collection/item/2585/
+on_loan: true
+on_loan_since: 1989
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q49445583
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9a/Claude_Monet_-_Le_Parlement%2C_coucher_de_soleil_-_1995-0003_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Le_Parlement,_coucher_de_soleil_-_1995-0003_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: person/paul-durand-ruel
+    role: dealer
+    acquired: 1905-10
+    ended: 1905-12
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+        note: "Footnote: Wildenstein 1996 IV.714.1607."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/charles-harrison-tweed
+    acquired: 1905-12
+    ended: 1917 or earlier
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/charles-harrison-tweed
+    role: estate
+    acquired: 1917 or earlier
+    ended: 1960 or later
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+        note: "Footnote: Wie oben Fussnote 2; Ausstellungsetikette auf der Werkrückseite; Auktion Parke-Bernet Galleries New York (16.03.1960), S. 76, Lot 79: Es kann davon ausgegangen werden, dass sich das Werk mindestens bis zum 16. März 1960 im Besitz der Familie Tweed befand. Dies Annahme basiert auf zwei Fakten: Zum einen findet sich auf der Werkrückseite eine Ausstellungsetikette aus dem Jahr 1945, auf welcher ein «…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/parke-bernet
+    role: agent
+    acquired: 1960-03-16
+    ended: 1960-03-16
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Lot 79
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/louis-sachar
+    ended: 6 July 1971 or later
+    place: london
+    label: London and New York
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+        note: "Footnote: Auktion Christie, Manson & Woods London (06.07.1971), S. 8-9, Lot 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1971-07-06
+    ended: 1971-07-06
+    method: auction
+    place: london
+    label: Lot 7
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+        note: "Footnote: Wie oben Fussnote 2 und 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hal-b-wallis
+    acquired: 1971-07-06
+    ended: 1989-05-10
+    method: purchase
+    direct: true
+    place: united-states
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1989-05-10
+    ended: 1989-05-10
+    method: auction
+    direct: true
+    place: new-york-city
+    label: «Versteigerung Sammlung Hal Wallis»; Lot 5
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/walter-haefner
+    acquired: 1989-05-10
+    ended: 1995
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1995-05-31
+    method: gift
+    direct: true
+    place: zurich
+    label: anlässlich des 50-jährigen Jubiläums der AMAG; Zürich, Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; ZKG/KHZ, Inventarbogen/Werkdossier Slg.; Wildenstein 1996 IV.714.1607; Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: IV.714.1607
+    label: Wildenstein 1996 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

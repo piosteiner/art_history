@@ -1,0 +1,76 @@
+public_id: 120108
+name: Arthur Segal
+given_name: Arthur
+family_name: Segal
+birth: 1875-07-13
+death: 1944-06-23
+wikidata_id: Q215049
+metadata:
+  sources: [Wikidata Q215049 (retrieved 2026-11-12)]
+relationships:
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q215049
+  - type: lived_in
+    to: place/ascona
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q215049
+  - type: lived_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q215049
+  - type: lived_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q215049
+  - type: lived_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q215049
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q215049
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q215049
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d3/Segal-Selfportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Segal-Selfportrait.jpg
+    license: Public domain
+    credit: Arthur Segal (1875-1944)
+identifiers:
+  bnf: "149722509"
+  dome: "348"
+  gnd: "118816691"
+  idref: "029909872"
+  lc: n50005644
+  rkd: "71773"
+  sikart: "4026504"
+  ulan: "500028300"
+  viaf: "2508087"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q215049
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q215049

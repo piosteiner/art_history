@@ -1,0 +1,77 @@
+public_id: 120928
+title: Morgenkonzert
+names:
+  - lang: null
+    role: translation
+    text: Morning Concert
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3213/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: carl-spitzweg
+created: 1843/1855
+created_label: c. 1848/1850
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Sperrholz
+dimensions: [29, 23]
+institution: kunsthaus-zurich
+inventory_number: 1984/0006
+web_url: https://collection.kunsthaus.ch/de/collection/item/3213/
+wikidata_id: Q131586658
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/ca/Carl_Spitzweg_-_Morgenkonzert_-_1984-0006_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Carl_Spitzweg_-_Morgenkonzert_-_1984-0006_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Carl Spitzweg
+provenance:
+  - owner: person/johanna-wolf
+    co_owners: [person/walter-l-wolf]
+    ended: 1984-01-20
+    place: adliswil
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3213/
+        note: "Footnote: Wichmann 2002, No. 387, S. 230; Öffentliche letztwillige Verfügung, Johanna Wolf geb. Heilbronner, Zürich, datiert auf den 20.01.1984, ZKG/KHZ, Depotdokumente. Walter L. Wolf verstarb 1981, seine Frau Johanna Wolf geb. Heilbronner verstarb am 23.12.1983 und vermachte dieses Werk als Teil der «Johanna und Walter L. Wolf Sammlung» dem Kunsthaus Zürich."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1984-01-20
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3213/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "230.387"
+    label: Wichmann 2002 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3213/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3213/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3213/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3213/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3213/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3213/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3213/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

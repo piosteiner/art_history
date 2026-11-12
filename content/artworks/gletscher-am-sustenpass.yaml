@@ -1,0 +1,81 @@
+public_id: 120687
+title_lang: de
+title: Gletscher am Sustenpass
+names:
+  - lang: en
+    role: translation
+    text: Glacier on the Susten Pass
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2630/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Glacier au col du Susten
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2630/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: rudolf-koller
+created: 1856
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [65, 81]
+institution: kunsthaus-zurich
+inventory_number: "622"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2630/
+on_loan: true
+on_loan_since: 1898
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584705
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b7/Rudolf_Koller_-_Gletscher_am_Sustenpass_-_622_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Rudolf_Koller_-_Gletscher_am_Sustenpass_-_622_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Rudolf Koller
+provenance:
+  - owner: institution/schweizerische-eidgenossenschaft
+    acquired: 1898
+    method: purchase
+    direct: true
+    place: bern
+    label: aus der grossen Koller-Ausstellung
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2630/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 190; ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2630/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2630/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2630/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2630/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2630/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2630/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2630/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2630/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

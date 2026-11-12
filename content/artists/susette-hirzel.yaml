@@ -1,0 +1,44 @@
+public_id: 120677
+name: Susette Hirzel
+given_name: Susette
+family_name: Hirzel
+birth: 1769-01-10
+death: 1858-01-09
+wikidata_id: Q37705934
+metadata:
+  sources: [Wikidata Q37705934 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q37705934
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q37705934
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q37705934
+identifiers:
+  gnd: "138021961"
+  hls: "043508"
+  rkd: "38590"
+  sikart: "4026607"
+  ulan: "500070413"
+  viaf: "86175003"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q37705934
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q37705934

@@ -1,0 +1,101 @@
+public_id: 121230
+title: Winternacht
+names:
+  - lang: de
+    role: translation
+    text: Winterlandschaft im Mondschein
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5273/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Winder, Nordstrand
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5273/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Winter Night
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5273/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Nuit d’hiver
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5273/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: edvard-munch
+created: c. 1900
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [81, 121]
+institution: kunsthaus-zurich
+inventory_number: "2204"
+web_url: https://collection.kunsthaus.ch/de/collection/item/5273/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q18891409
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/72/Edvard_Munch_-_Winternacht_-_2204_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_Winternacht_-_2204_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Edvard Munch
+provenance:
+  - owner: person/carl-moll
+    acquired: 1904
+    ended: 1931
+    method: purchase
+    direct: true
+    place: vienna
+    label: «Kauf aus der Ausstellung in der Wiener Sezession»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5273/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1931
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5273/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.517.475
+    label: Woll (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5273/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5273/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5273/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5273/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5273/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5273/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5273/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

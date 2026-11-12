@@ -1,0 +1,81 @@
+public_id: 121356
+title_lang: de
+title: Der Kuss
+names:
+  - lang: de
+    role: translation
+    text: Italienisches Schäferidyll
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/653/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: The Kiss
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/653/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Le baiser
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/653/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: frank-buchser
+created: 1878/1879
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [69, 102]
+institution: kunsthaus-zurich
+inventory_number: "403"
+web_url: https://collection.kunsthaus.ch/de/collection/item/653/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586752
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Frank_Buchser_-_Der_Kuss_-_403_-_Kunsthaus_Z%C3%BCrich.jpg/1280px-Frank_Buchser_-_Der_Kuss_-_403_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Frank_Buchser_-_Der_Kuss_-_403_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Frank Buchser
+provenance:
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1879
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/653/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 188; ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/653/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/653/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/653/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/653/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/653/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/653/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/653/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,85 @@
+public_id: 120090
+title: Sommernachmittag
+names:
+  - lang: null
+    role: translation
+    text: Summer Afternoon
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1188/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Après-midi d'été
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1188/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: original
+    text: Pomeriggio d'estate
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1188/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: giovanni-giacometti
+created: c. 1903
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Eternit
+dimensions: [25, 30]
+institution: kunsthaus-zurich
+inventory_number: 1987/0024
+web_url: https://collection.kunsthaus.ch/de/collection/item/1188/
+wikidata_id: Q131586465
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/43/Giovanni_Giacometti_-_Sommernachmittag_-_1987-0024_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Giacometti_-_Sommernachmittag_-_1987-0024_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Giovanni Giacometti
+provenance:
+  - owner: person/karl-grossmann
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1188/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1987
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1188/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "1903.17"
+    label: Müller/Radlach 1997, (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1188/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1188/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1188/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1188/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1188/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1188/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1188/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

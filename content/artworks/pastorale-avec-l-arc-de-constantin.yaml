@@ -1,0 +1,142 @@
+public_id: 120570
+title_lang: fr
+title: Pastorale avec l’Arc de Constantin
+names:
+  - lang: de
+    role: translation
+    text: Pastorale mit dem Konstantinsbogen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/229/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Pastoral with the Arch of Constantine
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/229/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: claude-lorrain
+created: 1648
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [98, 147.5]
+institution: kunsthaus-zurich
+inventory_number: 1996/0002
+web_url: https://collection.kunsthaus.ch/de/collection/item/229/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124288360
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/90/Claude_Lorrain_-_Pastorale_avec_l%E2%80%99Arc_de_Constantin_-_1996-0002_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Lorrain_-_Pastorale_avec_l%E2%80%99Arc_de_Constantin_-_1996-0002_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Claude Lorrain
+provenance:
+  - owner_label: Monsieur Piniez
+    method: commission
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/229/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/andrew-hay
+    role: agent
+    acquired: 1714
+    ended: 1714
+    method: auction
+    direct: true
+    place: london
+    label: Covent Garden; Lot 40
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/229/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/robert-walpole
+    method: purchase
+    direct: true
+    label: «Erbauer von Houghton Hall»; 1th Earl of Orford
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/229/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/horace-walpole
+    method: inheritance
+    direct: true
+    label: «Erbauer von Strawberry Hill»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/229/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/marquis-of-cholmondeley
+    ended: 1989
+    method: inheritance
+    direct: true
+    label: Houghton Hall
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/229/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1989-12-08
+    ended: 1989-12-08
+    method: auction
+    direct: true
+    place: london
+    label: Lot 80
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/229/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/p-d-colnaghi-co-ltd
+    role: dealer
+    acquired: 1989
+    ended: 1996
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/229/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1996
+    method: gift
+    direct: true
+    place: zurich
+    label: «des Holenia Trust im Andenken an Joseph H. Hirshhorn»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/229/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/229/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/229/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/229/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/229/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/229/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/229/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/229/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

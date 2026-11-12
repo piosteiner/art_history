@@ -1,0 +1,53 @@
+public_id: 120475
+name: Max Buri
+given_name: Max
+family_name: Buri
+birth: 1868-07-24
+death: 1915-05-21
+wikidata_id: Q177330
+metadata:
+  sources: [Wikidata Q177330 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q177330
+  - type: died_in
+    to: place/interlaken
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q177330
+  - type: worked_in
+    to: place/lucerne
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q177330
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Max_Buri_in_seinem_Atelier_in_Brienz%2C_1907.jpg/1280px-Max_Buri_in_seinem_Atelier_in_Brienz%2C_1907.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Max_Buri_in_seinem_Atelier_in_Brienz,_1907.jpg
+    license: Public domain
+    credit: Photographer not credited
+identifiers:
+  bnf: 14970839z
+  dome: "47"
+  gnd: "118517686"
+  hls: "021995"
+  idref: "134204271"
+  lc: n82106519
+  rkd: "14245"
+  sikart: "4022828"
+  ulan: "500006223"
+  viaf: "10120937"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q177330
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q177330

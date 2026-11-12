@@ -1,0 +1,93 @@
+public_id: 120098
+title_lang: de
+title: Krieger mit Hellebarde
+names:
+  - lang: de
+    role: former
+    text: Hellebardier auf einem Felsen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1192/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: 1895
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [325, 107]
+institution: kunsthaus-zurich
+inventory_number: "1154"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1192/
+on_loan: true
+on_loan_since: 1918
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131587387
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/01/Ferdinand_Hodler_-_Krieger_mit_Hellebarde_-_1154_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Krieger_mit_Hellebarde_-_1154_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner_label: M. Bedot
+    label: Genf (Sammler/-in)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1192/
+        note: "Footnote: Kunsthaus Zürich, Sammlungskatalog, 2007, S. 280."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/alfred-rutschi
+    acquired: 1917
+    ended: 1917
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1192/
+        note: "Footnote: Kunsthaus Zürich, Sammlungskatalog, 2007, S. 280."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1929
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1192/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.1254
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1192/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1192/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1192/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1192/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1192/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1192/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1192/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1192/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

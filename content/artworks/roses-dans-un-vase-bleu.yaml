@@ -1,0 +1,171 @@
+public_id: 120606
+title_lang: fr
+title: Roses dans un vase bleu
+names:
+  - lang: null
+    role: translation
+    text: Rosen in blauer Vase
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Roses in a blue vase
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Roses dans un vase
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: former
+    text: Roses
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: pierre-auguste-renoir
+created: 1900
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [47.5, 55.5]
+institution: kunsthaus-zurich
+inventory_number: 1984/0011
+web_url: https://collection.kunsthaus.ch/de/collection/item/2422/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585761
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d0/Pierre-Auguste_Renoir_-_Roses_-_1984-0011_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_Roses_-_1984-0011_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+provenance:
+  - owner: person/paul-rosenberg
+    acquired: 1901
+    ended: 1916-10-10
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+        note: "Footnote: Pierre-Auguste Renoir: Catalogue Raisonné Project (https://digitalprojects.wpi.art/renoir/artworks/detail?sort=date&sortDirection=ASC&page=3&a=31247-roses-dans-un-vase-bleu&media=26704121, 27.02.2025), hier als Quelle angegeben: Archives Durand-Ruel, Paris, Photo Number: 8127; hier als Vase de fleurs (roses)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1916-10-10
+    ended: 1916-11-06
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1916-11-06
+    ended: 1934-05-08
+    method: transfer
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+        note: "Footnote: Wie oben Fussnote 2;"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/marshall-field-iii
+    acquired: 1934-05-08
+    ended: 1956-11-08
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/ruth-pruyn-field
+    acquired: 1956-11-08
+    ended: 1958
+    method: inheritance
+    direct: true
+    place: chicago
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/m-knoedler-co
+    role: agent
+    acquired: 1957-11-18
+    ended: 1958-11-06
+    direct: true
+    place: new-york-city
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+        note: "Footnote: Wie oben Fussnote 2; Rechnung M. Knoedler, New York, 06.11.1958, ZKG/KHZ, Werkdokument; M. Knoedler & Co. records, approximately 1848–1971. Series III. Commission books. Book 5a, p. 133. The Getty Research Institute, Los Angeles, Accession no. 2012.M.54., Stock no.: CA5315"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/johanna-wolf
+    co_owners: [person/walter-l-wolf]
+    acquired: 1958-11-06
+    ended: 1984-01-20
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+        note: "Footnote: Wie oben Fussnote 7; Öffentliche letztwillige Verfügung, Johanna Wolf geb. Heilbronner, Zürich, datiert auf den 20.01.1984, ZKG/KHZ, Depotdokumente. Walter L. Wolf verstarb 1981, seine Frau Johanna Wolf geb. Heilbronner verstarb am 23.12.1983 und vermachte dieses Werk als Teil der «Johanna und Walter L. Wolf Sammlung» dem Kunsthaus Zürich."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1984-01-20
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg; Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: PRYCRT
+    label: WPI (Wildenstein Plattner Institute) (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

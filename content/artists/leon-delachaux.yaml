@@ -1,0 +1,44 @@
+public_id: 120268
+name: Léon Delachaux
+given_name: Léon
+family_name: Delachaux
+birth: 1850-07-30
+death: 1919-01-27
+wikidata_id: Q26220594
+metadata:
+  sources: [Wikidata Q26220594 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q26220594
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q26220594
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Autoportrait_au_manteau.tif/lossy-page1-500px-Autoportrait_au_manteau.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Autoportrait_au_manteau.tif
+    license: CC BY-SA 4.0
+    credit: Fonds de Dotation Léon Delachaux
+identifiers:
+  dome: "6756"
+  idref: "203797272"
+  lc: no2017083844
+  rkd: "21565"
+  sikart: "4024615"
+  ulan: "500113118"
+  viaf: "96531680"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q26220594
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q26220594

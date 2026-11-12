@@ -1,0 +1,48 @@
+public_id: 120580
+name: Elisabeth Pfenninger
+given_name: Elisabeth
+family_name: Pfenninger
+birth: 1772-08-11
+death: 1837
+wikidata_id: Q60054383
+metadata:
+  sources: [Wikidata Q60054383 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q60054383
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q60054383
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q60054383
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/50/Elisabeth_Pfenninger_-_Selbstbildnis_-_215_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Elisabeth_Pfenninger_-_Selbstbildnis_-_215_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Elisabeth Pfenninger
+identifiers:
+  gnd: "1089651325"
+  rkd: "63127"
+  sikart: "4029141"
+  ulan: "500053957"
+  viaf: "96039766"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q60054383
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q60054383

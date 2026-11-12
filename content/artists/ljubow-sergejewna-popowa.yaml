@@ -1,0 +1,87 @@
+public_id: 121588
+name: Ljubow Sergejewna Popowa
+given_name: Ljubow Sergejewna
+family_name: Popowa
+birth: 1889-05-06
+death: 1924-05-25
+wikidata_id: Q259594
+metadata:
+  sources: [Wikidata Q259594 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/russian-empire
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q259594
+  - type: nationality
+    to: polity/soviet-union
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q259594
+  - type: died_in
+    to: place/moscow
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q259594
+  - type: worked_in
+    to: place/moscow
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q259594
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q259594
+  - type: worked_in
+    to: place/saint-petersburg
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q259594
+  - type: associated_with
+    to: movement/cubism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q259594
+  - type: associated_with
+    to: movement/futurism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q259594
+  - type: associated_with
+    to: movement/suprematism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q259594
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fb/Lyubov_Popova.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lyubov_Popova.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "121499274"
+  dome: "115"
+  gnd: "119001128"
+  idref: "030055857"
+  lc: n88258057
+  rkd: "64299"
+  ulan: "500002046"
+  viaf: "56647288"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q259594
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q259594

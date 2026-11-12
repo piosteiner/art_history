@@ -1,0 +1,64 @@
+public_id: 120173
+name: Robert Delaunay
+given_name: Robert
+family_name: Delaunay
+birth: 1885-04-12
+death: 1941-10-25
+wikidata_id: Q33978
+metadata:
+  sources: [Wikidata Q33978 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q33978
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q33978
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q33978
+  - type: worked_in
+    to: place/pont-aven
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q33978
+  - type: associated_with
+    to: movement/neo-impressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q33978
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Robert_Delaunay_portrait_photograph.jpg/1280px-Robert_Delaunay_portrait_photograph.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Robert_Delaunay_portrait_photograph.jpg
+    license: Public domain
+    credit: Anonymous
+identifiers:
+  bnf: 12215572f
+  dome: "79"
+  gnd: "118524496"
+  idref: "030816521"
+  kulturnav: ac7381c2-e364-4c77-a21e-d500ba3023cc
+  lc: n50039043
+  rkd: "21631"
+  ulan: "500023463"
+  viaf: "68979341"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q33978
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q33978

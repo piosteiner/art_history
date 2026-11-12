@@ -1,0 +1,139 @@
+public_id: 121092
+title: Coucher de soleil. Villerville
+names:
+  - lang: null
+    role: translation
+    text: Sonnenuntergang. Villerville
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3801/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Sunset. Villerville
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3801/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Coucher de soleil à Villerville
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3801/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: felix-vallotton
+created: 1917
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [55.5, 97]
+institution: kunsthaus-zurich
+inventory_number: 1969/0016
+web_url: https://collection.kunsthaus.ch/de/collection/item/3801/
+on_loan: true
+on_loan_since: 1977
+wikidata_id: Q124288389
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b0/F%C3%A9lix_Vallotton_-_Coucher_de_soleil._Villerville_-_1969-0016_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Vallotton_-_Coucher_de_soleil._Villerville_-_1969-0016_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Félix Vallotton
+provenance:
+  - owner: institution/galerie-eugene-druet
+    role: dealer
+    ended: 1919
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3801/
+        note: "Footnote: Ducrey 2005, Bd. 3, S. 664, No. 1187."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/paul-simon
+    acquired: 1919
+    method: purchase
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3801/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/jacques-rodrigues-henriques
+    acquired: 1953 or earlier
+    ended: 1968
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3801/
+        note: "Footnote: Kat. Musée Cantonal des Beaux-Arts Lausanne 1953, S. 44, No. 59; Ducrey 2005, Bd. 3, S. 664, No. 1187."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/r-weinbrenner
+    acquired: 1968
+    ended: 1969
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3801/
+        note: "Footnote: Brief René Wehrli an Violette de Laszlo, 04.11.1969, ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/violette-de-laszlo
+    acquired: 1969
+    ended: 1977
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3801/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg.; Ducrey 2005, Bd. 3, S. 664, No. 1187."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1977
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3801/
+        note: "Footnote: Brief Felix Baumann an Violette de Laszlo, 28.01.1977, ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.664.1187
+    label: Ducrey 2005 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3801/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3801/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3801/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3801/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3801/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3801/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3801/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3801/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

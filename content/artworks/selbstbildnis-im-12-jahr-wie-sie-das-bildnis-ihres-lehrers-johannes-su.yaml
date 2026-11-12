@@ -1,0 +1,101 @@
+public_id: 121006
+title_lang: de
+title: Selbstbildnis im 12. Jahr, wie sie das Bildnis ihres Lehrers Johannes Sulzer malt
+names:
+  - lang: en
+    role: translation
+    text: Self-Portrait at the Age of Twelve
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3465/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Autoportrait à douze ans, en train de peindre le portrait de son maître Johannes Sulzer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3465/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: anna-waser
+created: 1691
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [83, 68]
+institution: kunsthaus-zurich
+inventory_number: "212"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3465/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q23029869
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Anna_Waser%2C_Selbstbildnis_mit_12_Jahren.jpg/1280px-Anna_Waser%2C_Selbstbildnis_mit_12_Jahren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Anna_Waser,_Selbstbildnis_mit_12_Jahren.jpg
+    license: Public domain
+    credit: Anna Waser
+provenance:
+  - owner_label: unknown
+    acquired: 1757
+    ended: 1757
+    label: Johann Caspar Füssli (*1706 Zürich, +1782 Zürich) (Sammler/-in); dated 1770
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3465/
+        note: "Footnote: Kunsthaus Zürich, Sammlungskatalog, 2007, S. 52."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/johann-caspar-keller-zum-mohrenkopf
+    ended: 1829 or earlier
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3465/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/albert-keller
+    ended: 1854
+    direct: true
+    place: milan
+    label: Mailand, Erbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3465/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1854
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3465/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3465/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3465/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3465/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3465/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3465/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3465/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3465/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

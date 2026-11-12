@@ -1,0 +1,81 @@
+public_id: 120107
+title_lang: de
+title: Bildnis Alice Vautier-Rutty
+names:
+  - lang: en
+    role: translation
+    text: Portrait of Alice Vautier-Rutty
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1210/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: 1917
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [65, 57]
+institution: kunsthaus-zurich
+inventory_number: "2158"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1210/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586095
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5a/Ferdinand_Hodler_-_Bildnis_Alice_Vautier-Rutty_-_2158_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Bildnis_Alice_Vautier-Rutty_-_2158_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner_label: unknown (collector)
+    ended: 1930-11-13
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1210/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 290."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1930-11-13
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 7000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1210/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.1034
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1210/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1210/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1210/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1210/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1210/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1210/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1210/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

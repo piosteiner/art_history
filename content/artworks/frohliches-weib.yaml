@@ -1,0 +1,95 @@
+public_id: 120294
+title_lang: de
+title: Fröhliches Weib
+names:
+  - lang: en
+    role: translation
+    text: Cheerful Woman
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1639/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Sich umwendende Frau
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1639/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: 1911/1912
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [50, 44]
+institution: kunsthaus-zurich
+inventory_number: 1964/0034
+web_url: https://collection.kunsthaus.ch/de/collection/item/1639/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586100
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/15/Ferdinand_Hodler_-_Fr%C3%B6hliches_Weib_-_1964-0034_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Fr%C3%B6hliches_Weib_-_1964-0034_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/hector-hodler
+    acquired: 1918-05-19
+    ended: 1920-03-30
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1639/
+        note: "Footnote: Bätschmann/Müller u. a., 2008, Bd. 3, No. 1447, vgl. https://recherche.sik-isea.ch/de/sik:work-9905383/in/catalogues.hodler/work/tiles?0.0.type=work&0.0.q=fr%C3%B6hliches%20weib&0.type=work (20.05.2025)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/lina-emilie-hodler-ruch
+    acquired: 1920-03-30
+    ended: 1964
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1639/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; Zürcher Kunstgesellschaft 1964 Jahresbericht, S. 9; wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1964
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1639/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.1447
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1639/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1639/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1639/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1639/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1639/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1639/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1639/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

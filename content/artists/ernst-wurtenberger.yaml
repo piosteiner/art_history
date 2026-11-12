@@ -1,0 +1,39 @@
+public_id: 120963
+name: Ernst Würtenberger
+given_name: Ernst
+family_name: Würtenberger
+birth: 1868-10-23
+death: 1934-02-05
+wikidata_id: Q1360708
+metadata:
+  sources: [Wikidata Q1360708 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1360708
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/94/Ernst_W%C3%BCrtenberger_-_Selbstbildnis_im_Malerkittel%2C_1906.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ernst_W%C3%BCrtenberger_-_Selbstbildnis_im_Malerkittel,_1906.jpg
+    license: Public domain
+    credit: Ernst Würtenberger
+identifiers:
+  dome: "11246"
+  gnd: "117375330"
+  idref: "058935975"
+  lc: n87940277
+  rkd: "85783"
+  sikart: "4022972"
+  ulan: "500068488"
+  viaf: "35232634"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1360708
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1360708

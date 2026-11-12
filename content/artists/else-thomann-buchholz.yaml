@@ -1,0 +1,41 @@
+public_id: 120939
+name: Else Thomann-Buchholz
+given_name: Else
+family_name: Thomann-Buchholz
+birth: 1875-11-16
+death: 1918-01-31
+wikidata_id: Q85103473
+metadata:
+  sources: [Wikidata Q85103473 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q85103473
+  - type: born_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q85103473
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q85103473
+identifiers:
+  gnd: "1037328701"
+  sikart: "4026408"
+  viaf: "304937016"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q85103473
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q85103473

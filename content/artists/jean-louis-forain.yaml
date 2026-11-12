@@ -1,0 +1,68 @@
+public_id: 120015
+name: Jean Louis Forain
+given_name: Jean Louis
+family_name: Forain
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Louis Henri Forain
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q719614
+birth: 1852-10-23
+death: 1931-07-11
+wikidata_id: Q719614
+metadata:
+  sources: [Wikidata Q719614 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q719614
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q719614
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q719614
+  - type: member_of
+    to: institution/royal-academy-of-arts
+    period: 1931
+    period_label: from 1931
+    sources:
+      - accessed: 2026-11-12
+        property: P463
+        wikidata: Q719614
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c1/Jean-Louis_Forain.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Louis_Forain.jpg
+    license: Public domain
+    credit: Jules-Alexandre Grün
+identifiers:
+  bnf: 11953694f
+  dome: "1705"
+  gnd: "118684191"
+  idref: "027513211"
+  kulturnav: eaa99f9b-1e2d-402d-936a-c0a07a299410
+  lc: n80022913
+  rkd: "28589"
+  ulan: "500115211"
+  viaf: "44307245"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q719614
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q719614

@@ -1,0 +1,68 @@
+public_id: 121399
+name: Peter Snijers
+given_name: Peter
+family_name: Snijers
+birth: 1681-03-30
+death: 1752-05-04
+wikidata_id: Q7192826
+metadata:
+  sources: [Wikidata Q7192826 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/southern-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q7192826
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q7192826
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q7192826
+  - type: worked_in
+    to: place/great-britain
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q7192826
+  - type: worked_in
+    to: place/antwerp
+    period: 1694/1752
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q7192826
+  - type: studied_at
+    to: institution/royal-academy-of-fine-arts-antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q7192826
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Peter_Snijers_-_Selfportrait.jpg/1280px-Peter_Snijers_-_Selfportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Peter_Snijers_-_Selfportrait.jpg
+    license: Public domain
+    credit: Pieter Snyers
+identifiers:
+  gnd: "1187856401"
+  kulturnav: 75a8a4fd-0ba5-41b6-91c2-41a8fbdd6eb0
+  lc: no2022139008
+  rkd: "73693"
+  ulan: "500021898"
+  viaf: "95816186"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q7192826
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q7192826

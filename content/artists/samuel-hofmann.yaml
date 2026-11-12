@@ -1,0 +1,46 @@
+public_id: 120092
+name: Samuel Hofmann
+given_name: Samuel
+family_name: Hofmann
+birth: 1595
+death: 1649
+wikidata_id: Q7411711
+metadata:
+  sources: [Wikidata Q7411711 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q7411711
+  - type: died_in
+    to: place/frankfurt
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q7411711
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Samuel_Hoffmann.jpg/1280px-Samuel_Hoffmann.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Samuel_Hoffmann.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 12161422h
+  gnd: "118552724"
+  hls: "019094"
+  idref: 18792645X
+  lc: n81089736
+  rkd: "38959"
+  sikart: "4022918"
+  ulan: "500026696"
+  viaf: "22933241"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q7411711
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q7411711

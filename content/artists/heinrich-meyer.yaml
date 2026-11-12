@@ -1,0 +1,46 @@
+public_id: 120671
+name: Heinrich Meyer
+given_name: Heinrich
+family_name: Meyer
+birth: 1760-03-16
+death: 1832-10-14
+wikidata_id: Q118064
+metadata:
+  sources: [Wikidata Q118064 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q118064
+  - type: student_of
+    to: artist/johann-caspar-fussli
+    sources:
+      - accessed: 2026-11-12
+        property: P1066
+        wikidata: Q118064
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0a/JohannHeinrichMeyer.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:JohannHeinrichMeyer.jpg
+    license: Public domain
+    credit: Johann Heinrich Meyer
+identifiers:
+  bnf: "149601881"
+  gnd: "118733389"
+  hls: "022284"
+  idref: "059827602"
+  lc: n86114185
+  rkd: "55743"
+  sikart: "4027089"
+  ulan: "500020199"
+  viaf: "37187015"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q118064
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q118064

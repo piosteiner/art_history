@@ -1,0 +1,38 @@
+public_id: 120151
+name: Wilhelm Hummel
+given_name: Wilhelm
+family_name: Hummel
+birth: 1872-12-13
+death: 1939-03-22
+wikidata_id: Q568480
+metadata:
+  sources: [Wikidata Q568480 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q568480
+  - type: died_in
+    to: place/davos
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q568480
+identifiers:
+  dome: "13209"
+  gnd: "1160449430"
+  rkd: "125968"
+  sikart: "4025478"
+  ulan: "500357371"
+  viaf: "1445150325567910090007"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q568480
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q568480

@@ -1,0 +1,153 @@
+public_id: 121295
+title_lang: fr
+title: Panneaux décoratifs - Femmes au jardin
+names:
+  - lang: de
+    role: translation
+    text: Dekorative Paneele - Frauen im Garten
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Decorative Panels - Women in the Garden
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: pierre-bonnard
+created: 1890/1891
+kind: painting
+medium: Leimfarben über Kohle, Bleistift und weisse Kreide auf Papier, auf Leinwand aufgezogen
+dimensions: [155, 45]
+institution: kunsthaus-zurich
+inventory_number: 1982/0024.a-d
+web_url: https://collection.kunsthaus.ch/de/collection/item/5956/
+on_loan: true
+on_loan_since: 1984
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586499
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/df/Pierre_Bonnard_-_Panneaux_d%C3%A9coratifs_-_Femmes_au_jardin_-_1982-0024.a-d_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre_Bonnard_-_Panneaux_d%C3%A9coratifs_-_Femmes_au_jardin_-_1982-0024.a-d_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Pierre Bonnard
+provenance:
+  - owner: artist/pierre-bonnard
+    role: estate
+    acquired: 1947-01-23
+    ended: 1965 or earlier
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+        note: "Footnote: Dauberville 1974, IV, S. 125, No. 01715 a-d."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/geschwister-bower
+    acquired: 1965 or earlier
+    ended: 1970 or later
+    method: inheritance
+    direct: true
+    place: boulogne-billancourt
+    label: then Boulogne-sur-Seine
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+        note: "Footnote: Etikette auf der Werkrückseite; Kat. Acquavella Galleries Inc., New York 1965; Kat. Kunstverein in Hamburg 1970."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    ended: 1982
+    place: belgium
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-koller
+    role: agent
+    acquired: 1982-11-12
+    ended: 1982-11-12
+    method: auction
+    direct: true
+    place: zurich
+    label: Zürich, Lots 5111 and 5112
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/fernando-garzoni
+    acquired: 1982-11-12
+    ended: 1984
+    method: purchase
+    direct: true
+    price:
+      amount: 350460
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+        note: "Footnote: ZKG/KHZ, Werkdokument Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/lily-gamper
+    role: agent
+    acquired: 1984
+    ended: 1984
+    method: purchase
+    direct: true
+    place: zurich
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+        note: "Footnote: Jahresbericht 1982, hrsg. von Zürcher Kunstgesellschaft, 1982, S. 6. Lily Gamper förderte die Erwerbung des Werks mit einem finanziellen Beitrag zur Erinnerung an ihren verstorbenen Ehemann Ernst Gamper."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1984
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: IV.125.01715a-d
+    label: Dauberville Bonnard (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

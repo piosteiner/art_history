@@ -1,0 +1,101 @@
+public_id: 120924
+title_lang: fr
+title: Autoportrait
+names:
+  - lang: de
+    role: translation
+    text: Selbstbildnis
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3205/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Self-Portrait
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3205/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: felix-vallotton
+created: 1905
+kind: oil painting
+medium: Öl auf Karton
+dimensions: [82, 64.5]
+institution: kunsthaus-zurich
+inventory_number: "2454"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3205/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124288378
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e2/F%C3%A9lix_Vallotton_-_Autoportrait_-_2454_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Vallotton_-_Autoportrait_-_2454_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Félix Vallotton
+provenance:
+  - owner: artist/felix-vallotton
+    role: estate
+    acquired: 1925-12-29
+    method: inheritance
+    direct: true
+    label: Nr. 4
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3205/
+        note: "Footnote: Ducrey 2005, Bd. II, Nr. 545."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-paul-vallotton
+    role: dealer
+    ended: 1938
+    method: inheritance
+    direct: true
+    place: lausanne
+    label: Nr. 814
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3205/
+        note: "Footnote: Wie oben Fussnote 2; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 296-297."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1938
+    method: purchase
+    direct: true
+    place: zurich
+    label: aus der Ausstellung im Kunsthaus Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3205/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "545"
+    label: Ducrey (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3205/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3205/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3205/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3205/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3205/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3205/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3205/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

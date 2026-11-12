@@ -1,0 +1,49 @@
+public_id: 121228
+name: Theodor von Holst
+given_name: Theodor
+family_name: von Holst
+birth: 1810-09-03
+death: 1844-02-14
+wikidata_id: Q1642541
+metadata:
+  sources: [Wikidata Q1642541 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1642541
+  - type: born_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q1642541
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q1642541
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a7/Gustav_von_Holst_and_His_Brother%2C_Theodore.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustav_von_Holst_and_His_Brother,_Theodore.jpg
+    license: Public domain
+    credit: Theodor Richard Edward von Holst (1810— 1844)
+identifiers:
+  bnf: "149801486"
+  gnd: "119324180"
+  lc: nr94034841
+  rkd: "39275"
+  ulan: "500004347"
+  viaf: "91517763"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1642541
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1642541

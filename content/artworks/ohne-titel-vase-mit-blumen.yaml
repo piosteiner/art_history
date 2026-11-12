@@ -1,0 +1,110 @@
+public_id: 121211
+title_lang: de
+title: Ohne Titel (Vase mit Blumen)
+names:
+  - lang: en
+    role: translation
+    text: Untitled (Vase with Flowers)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5127/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Vase mit Rosen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5127/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: paul-klee
+created: c. 1908
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Karton
+dimensions: [28, 37]
+institution: kunsthaus-zurich
+inventory_number: 2004/0018
+web_url: https://collection.kunsthaus.ch/de/collection/item/5127/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586442
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/94/Paul_Klee_-_Ohne_Titel_%28Vase_mit_Blumen%29_-_2004-0018_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Klee_-_Ohne_Titel_(Vase_mit_Blumen)_-_2004-0018_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Paul Klee
+provenance:
+  - owner: person/mathilde-klee
+    acquired: 1909
+    ended: 1952 or earlier
+    direct: true
+    place: bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5127/
+        note: "Footnote: Vgl. Beschriftung auf der Werkrückseite."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/librairie-du-chateau-d-art-e-beyeler
+    acquired: 1952-04
+    ended: 1952-05
+    direct: true
+    place: basel
+    label: Kat.-Nr. 15 (Vase mit Rosen)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5127/
+        note: "Footnote: Helfenstein etc. 1998, No. 387 [als «Ohne Titel»]; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 347."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/josi-guggenheim
+    acquired: 1952
+    ended: 2004
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5127/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2004
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5127/
+        note: "Footnote: Wie oben Fussnote 3; ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.387
+    label: Paul-Klee-Stiftung 1998 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5127/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5127/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5127/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5127/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5127/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5127/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5127/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

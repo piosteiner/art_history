@@ -1,0 +1,76 @@
+public_id: 121232
+name: Bartolomeo Montagna
+given_name: Bartolomeo
+family_name: Montagna
+birth: 1450-10-20
+death: 1523-10-21
+wikidata_id: Q809507
+metadata:
+  sources: [Wikidata Q809507 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q809507
+  - type: died_in
+    to: place/vicenza
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q809507
+  - type: worked_in
+    to: place/bergamo
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q809507
+  - type: worked_in
+    to: place/padua
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q809507
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q809507
+  - type: worked_in
+    to: place/vicenza
+    period: 1474/1502
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q809507
+  - type: worked_in
+    to: place/verona
+    period: 1493/1496
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q809507
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Bartolomeo_Montagna_-_Palazzo_Thiene.jpg/1280px-Bartolomeo_Montagna_-_Palazzo_Thiene.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bartolomeo_Montagna_-_Palazzo_Thiene.jpg
+    license: CC BY-SA 3.0
+    credit: No machine-readable author provided. RicciSpeziari~commonswiki assumed (based on copyright claims).
+identifiers:
+  bnf: "145706956"
+  gnd: "118784609"
+  idref: "083829989"
+  lc: nr91028759
+  rkd: "57356"
+  ulan: "500029837"
+  viaf: "2325220"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q809507
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q809507

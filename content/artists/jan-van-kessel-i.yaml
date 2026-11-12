@@ -1,0 +1,64 @@
+public_id: 121404
+name: Jan van Kessel (I)
+given_name: Jan van Kessel
+family_name: (I)
+birth: 1626-04-05
+death: 1679-04-17
+wikidata_id: Q515553
+metadata:
+  sources: [Wikidata Q515553 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q515553
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q515553
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q515553
+  - type: worked_in
+    to: place/antwerp
+    period: 1640/1679
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q515553
+  - type: influenced_by
+    to: artist/jan-brueghel-the-elder
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q515553
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Portrait_of_Jan_van_Kessel_%28I%29.jpg/1280px-Portrait_of_Jan_van_Kessel_%28I%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Jan_van_Kessel_(I).jpg
+    license: Public domain
+    credit: Joannes Meyssens
+identifiers:
+  bnf: "149767096"
+  gnd: "121859223"
+  idref: "167585940"
+  kulturnav: c2aff91b-7a5d-4c28-b302-6f2bcc82990d
+  lc: no2011036185
+  rkd: "44093"
+  ulan: "500029504"
+  viaf: "7660683"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q515553
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q515553

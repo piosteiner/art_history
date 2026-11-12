@@ -1,0 +1,152 @@
+public_id: 121393
+title: Campagne de Rome
+names:
+  - lang: null
+    role: translation
+    text: Campagna Romana
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/687/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: former
+    text: La Cervara
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/687/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: former
+    text: La campagne de Rome
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/687/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: jean-baptiste-camille-corot
+created: 1827
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [69.5, 95]
+institution: kunsthaus-zurich
+inventory_number: "2611"
+web_url: https://collection.kunsthaus.ch/de/collection/item/687/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q41515812
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/de/Jean-Baptiste-Camille_Corot_-_Campagne_de_Rome_-_2611_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Baptiste-Camille_Corot_-_Campagne_de_Rome_-_2611_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jean-Baptiste Camille Corot
+provenance:
+  - owner: person/marie-francoise-corot
+    ended: 1851-02-27 or earlier
+    method: gift
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/687/
+        note: "Footnote: Robaut 1905, No. 200, S. 70: Geschenk Corots an seine Mutter."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/georges-lemaistre
+    acquired: 1851-02-27 or earlier
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/687/
+        note: "Footnote: Wie oben Fussnote 2: Die Mutter des Künstlers vermachte das Werk ihrem Enkel."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/charles-andre
+    ended: 1893-05-17
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/687/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1893-05-17
+    ended: 1893-05-17
+    method: auction
+    direct: true
+    place: paris
+    label: «Versteigerung Charles André»; Lot 4
+    price:
+      amount: 48000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/687/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/emil-hahnloser
+    acquired: 1927 or earlier
+    ended: 1940-02-03
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/687/
+        note: "Footnote: Brief von Wilhelm Wartmann an Emil Hahnloser, 27.08.1927, Archiv ZKG/KHZ, Ausgehende Korrespondenz, 10.30.20.237. Das Werk war zu diesem Zeitpunkt als Dauerleihgabe im Kunstmuseum Winterthur und wurde vom Kunsthaus Zürich für die «Ausstellung von Werken aus dem Besitz von Mitgliedern der Vereinigung Zürcher Kunstfreunde», 03.09.-02.10.1927, angefragt. Im Ausstellungskatalog ist das Gemälde unter N…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/kunstmuseum-winterthur
+    acquired: 1927 or earlier
+    ended: 1934 or later
+    direct: true
+    place: winterthur
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/687/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/gustav-august-hahnloser-hoz
+    acquired: 1940
+    ended: 1942
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/687/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 15.01.1942 III.f und 12.03.1943 II.a., Archiv ZKG/KHZ, 10.30.10.42: Geschenk von G. A. Hahnloser-Hoz zum Gedächtnis von Herrn Dr. Emil Hahnloser, Paris."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1942
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/687/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/687/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/687/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/687/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/687/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/687/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/687/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/687/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

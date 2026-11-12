@@ -1,0 +1,45 @@
+public_id: 120440
+name: Conrad Hitz
+given_name: Conrad
+family_name: Hitz
+birth: 1798-12-23
+death: 1866-07-10
+wikidata_id: Q52149479
+metadata:
+  sources: [Wikidata Q52149479 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q52149479
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q52149479
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q52149479
+identifiers:
+  bnf: 14969217z
+  gnd: "1077874529"
+  hls: "022442"
+  rkd: "38607"
+  sikart: "4023078"
+  ulan: "500060467"
+  viaf: "42113299"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q52149479
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q52149479

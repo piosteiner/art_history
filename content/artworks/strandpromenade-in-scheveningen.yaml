@@ -1,0 +1,88 @@
+public_id: 121384
+title: Strandpromenade in Scheveningen
+names:
+  - lang: en
+    role: translation
+    text: Walk on the Beach at Scheveningen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/678/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Promenade le long de la plage de Scheveningen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/678/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: max-beckmann
+created: 1928
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [85, 70.5]
+institution: kunsthaus-zurich
+inventory_number: "2159"
+web_url: https://collection.kunsthaus.ch/de/collection/item/678/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585426
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e7/Beckmann_-_Tiedemann%2C_0295.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Beckmann_-_Tiedemann,_0295.jpg
+    license: Public domain
+    credit: Max Beckmann
+provenance:
+  - owner: person/graphisches-kabinett
+    role: agent
+    acquired: 1930-10-07 or earlier
+    ended: 28 October 1930 or later
+    direct: true
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/678/
+        note: "Footnote: Max Beckmann Archiv, München, Beckmann/Franke, FMBA I 3 1930 I, Brief Günther Franke (Graphisches Kabinett München) an Max Beckmann, München, 07.10.1930 und FMBA I 3 1929-1930, Brief Günther Franke (Graphisches Kabinett München) an Max Beckmann, München 28.10.1930."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1930
+    method: purchase
+    direct: true
+    place: zurich
+    label: aus der Ausstellung im Kunsthaus Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/678/
+        note: "Footnote: Inventarbuch Slg.; Werkkatalog Kaldewei Kulturstiftung 2020 295, vgl. https://www.beckmann-gemaelde.org/295-strandpromenade-scheveningen [Zugriff: 21.12.2021]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.295
+    label: Göpel 1976 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/678/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/678/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/678/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/678/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/678/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/678/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/678/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

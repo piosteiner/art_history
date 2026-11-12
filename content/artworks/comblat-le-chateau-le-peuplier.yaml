@@ -1,0 +1,112 @@
+public_id: 120925
+title_lang: fr
+title: Comblat-le-Château. Le Peuplier
+names:
+  - lang: fr
+    role: translation
+    text: Comblat-le-Château (Pappel)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3208/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Comblat-le-Château (The Poplar)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3208/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: paul-signac
+created: 1887
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [46, 65]
+institution: kunsthaus-zurich
+inventory_number: 1984/0015
+web_url: https://collection.kunsthaus.ch/de/collection/item/3208/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124288363
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e7/Paul_Signac_-_Comblat-le-Ch%C3%A2teau._Le_Peuplier_-_1984-0015_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Signac_-_Comblat-le-Ch%C3%A2teau._Le_Peuplier_-_1984-0015_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Paul Signac
+provenance:
+  - owner: institution/galerie-m-goldschmidt-co
+    role: dealer
+    place: frankfurt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3208/
+        note: "Footnote: Cachin/Ferretti-Bocquillon 2000 181.144."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-caspari
+    role: dealer
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3208/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hans-hollander
+    ended: 1924-04-14
+    place: dresden
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3208/
+        note: "Footnote: Rechnung an Walter Wolf, 14.04.1924, ZKG/KHZ, Werkdokument.; Cachin/Ferretti-Bocquillon 2000, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/johanna-wolf
+    co_owners: [person/walter-l-wolf]
+    acquired: 1924-04-14
+    ended: 1984-01-20
+    method: purchase
+    direct: true
+    place: adliswil
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3208/
+        note: "Footnote: Wie oben Fussnote 7; Öffentliche letztwillige Verfügung, Johanna Wolf geb. Heilbronner, Zürich, datiert auf den 20.01.1984, ZKG/KHZ, Depotdokumente. Walter L. Wolf verstarb 1981, seine Frau Johanna Wolf geb. Heilbronner verstarb am 23.12.1983 und vermachte dieses Werk als Teil der «Johanna und Walter L. Wolf Sammlung» dem Kunsthaus Zürich."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1984-01-20
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3208/
+        note: "Footnote: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "181.144"
+    label: Cachin/Ferretti-Bocquillon 2000 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3208/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3208/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3208/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3208/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3208/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3208/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3208/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

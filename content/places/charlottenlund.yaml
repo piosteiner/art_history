@@ -1,0 +1,22 @@
+public_id: 120740
+name: Charlottenlund
+kind: settlement
+parent: hovedstaden
+country_code: DK
+location: [12.57194, 55.75111]
+wikidata_id: Q1373658
+metadata:
+  sources: [Wikidata Q1373658 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q1373658
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q1373658
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q1373658

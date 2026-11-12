@@ -1,0 +1,45 @@
+public_id: 120499
+name: Franz Peter Joseph Kymli
+given_name: Franz Peter Joseph
+family_name: Kymli
+birth: 1748
+death: 1814-04-06
+wikidata_id: Q1448501
+metadata:
+  sources: [Wikidata Q1448501 (retrieved 2026-11-12)]
+relationships:
+  - type: born_in
+    to: place/mannheim
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q1448501
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q1448501
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d5/Kymli_J%C3%A4ger.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kymli_J%C3%A4ger.jpg
+    license: Public domain
+    credit: Franz Peter Kymli
+identifiers:
+  bnf: 14960514k
+  gnd: "136231225"
+  kulturnav: 7ee321d5-5a61-4182-aba3-24f6f25b4970
+  lc: no2016124374
+  rkd: "47080"
+  sikart: "4030852"
+  ulan: "500032285"
+  viaf: "54418030"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1448501
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1448501

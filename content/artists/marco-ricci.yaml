@@ -1,0 +1,71 @@
+public_id: 120799
+name: Marco Ricci
+given_name: Marco
+family_name: Ricci
+birth: 1676-06-05
+death: 1730-01-21
+wikidata_id: Q930162
+metadata:
+  sources: [Wikidata Q930162 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q930162
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q930162
+  - type: lived_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q930162
+  - type: lived_in
+    to: place/venice
+    period: 1730-01-21
+    period_label: until 21 January 1730
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q930162
+  - type: influenced_by
+    to: artist/alessandro-magnasco
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q930162
+  - type: influenced_by
+    to: artist/sebastiano-ricci
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q930162
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Accademia_-_Paesaggio_con_viandanti_-_Marco_ricci_%28cerchia%29.jpg/1280px-Accademia_-_Paesaggio_con_viandanti_-_Marco_ricci_%28cerchia%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Accademia_-_Paesaggio_con_viandanti_-_Marco_ricci_(cerchia).jpg
+    license: Public domain
+    credit: Didier Descouens
+identifiers:
+  bnf: 12280960s
+  gnd: "118835696"
+  idref: "031631126"
+  kulturnav: c23fc65f-c495-43a2-b5b2-3c95ddbcac71
+  lc: no92024013
+  rkd: "66580"
+  ulan: "500115726"
+  viaf: "88651839"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q930162
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q930162

@@ -1,0 +1,69 @@
+public_id: 121523
+title_lang: fr
+title: Lion et Crocodile
+names:
+  - lang: de
+    role: translation
+    text: Löwe und Krokodil
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/775/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Lion Seizing a Crocodile
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/775/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: eugene-delacroix
+attribution_label: attributed to Eugène Delacroix
+created: after 1858
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [24, 32.5]
+institution: kunsthaus-zurich
+inventory_number: 1976/0017
+web_url: https://collection.kunsthaus.ch/de/collection/item/775/
+wikidata_id: Q124288369
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/87/Eug%C3%A8ne_Delacroix%2C_attributed_to_-_Lion_et_Crocodile_-_1976-0017_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix,_attributed_to_-_Lion_et_Crocodile_-_1976-0017_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Eugène Delacroix
+numbers:
+  - number: III.299.D24
+    label: Johnson 1986 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/775/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/775/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/775/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/775/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/775/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/775/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/775/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/775/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

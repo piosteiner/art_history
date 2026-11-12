@@ -1,0 +1,86 @@
+public_id: 120179
+name: Jan Davidsz. de Heem
+given_name: Jan Davidsz.
+family_name: de Heem
+names:
+  - kind: birth
+    lang: nl
+    role: former
+    text: Johannes van Antwerpen
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q454656
+birth: 1606-04-17
+death: 1684-04-26
+wikidata_id: Q454656
+metadata:
+  sources: [Wikidata Q454656 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q454656
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q454656
+  - type: born_in
+    to: place/utrecht
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q454656
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q454656
+  - type: worked_in
+    to: place/leiden
+    period: 1625/1631
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q454656
+  - type: worked_in
+    to: place/antwerp
+    period: 1636/1658
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q454656
+  - type: worked_in
+    to: place/utrecht
+    period: 1658/1672
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q454656
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Jan_Lievens_-_Portrait_of_Jan_Davidsz._de_Heem.jpg/1280px-Jan_Lievens_-_Portrait_of_Jan_Davidsz._de_Heem.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jan_Lievens_-_Portrait_of_Jan_Davidsz._de_Heem.jpg
+    license: Public domain
+    credit: Jan Lievens
+identifiers:
+  bnf: "149597201"
+  gnd: "119020157"
+  idref: "035806664"
+  kulturnav: 2d1d70db-3783-4210-98b0-06dc8523dc0a
+  lc: no91023354
+  rkd: "36842"
+  ulan: "500029732"
+  viaf: "51960128"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q454656
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q454656

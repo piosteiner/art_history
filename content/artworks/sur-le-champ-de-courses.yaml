@@ -1,0 +1,191 @@
+public_id: 120915
+title_lang: fr
+title: Sur le champ de courses
+names:
+  - lang: de
+    role: translation
+    text: Auf dem Rennplatz
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/317/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: At the Races
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/317/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: former
+    text: Chevaux de Course
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/317/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: edgar-degas
+created: 1880/1892
+created_label: c. 1885/1887
+created_span: uncertain
+kind: painting
+medium: Pastell über Grafitstift auf Papier, aufgezogen auf Karton
+dimensions: [42.5, 49.5]
+institution: kunsthaus-zurich
+inventory_number: 1995/0001
+web_url: https://collection.kunsthaus.ch/de/collection/item/317/
+on_loan: true
+on_loan_since: 1974
+wikidata_id: Q106620427
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Edgar_Degas_-_Les_Courses_%28ca._1885%29.jpg/1280px-Edgar_Degas_-_Les_Courses_%28ca._1885%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Edgar_Degas_-_Les_Courses_(ca._1885).jpg
+    license: Public domain
+    credit: Edgar Degas
+provenance:
+  - owner: institution/durand-ruel
+    role: dealer
+    ended: 1904
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/317/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg.; ZKG/KHZ, Werkdokument Slg.; Biedermann 2001, S. 213."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/oskar-charles-frederic-schmitz
+    acquired: 1904
+    ended: 1933
+    method: purchase
+    direct: true
+    place: dresden
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/317/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 18.08.1933, Archiv ZKG/KHZ, 10.30.10.41; Sitzungsprotokoll des Vorstands, 11.11.1933, Archiv ZKG/KHZ, 10.30.10.12; Biedermann 2001, S. 221: «Im Oktober 1931 verliess Schmitz, wie es hiess, aufgrund ‘steuerlicher Schikanen’, möglicherweise aber auch aus Gespür für politische Tendenzen, die Stadt und ging mit seiner Sammlung in die Schweiz. [...] Den grösst…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: heirs of Oskar Schmitz
+    acquired: 1933
+    ended: 25 April 1936 or later
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/317/
+        note: "Footnote: Wie oben Fussnote 3; Sitzungsprotokoll der Sammlungskommission, 23.08.1933, Archiv ZKG/KHZ, 10.30.10.41; Korrespondenz zwischen Otto Fischer und der Eidgenössischen Oberzolldirektion, 02.06.1937 bis 03.06.1937, Kunstmuseum Basel, F 001.030.22.000; Brief von Otto Fischer an die Eidgenössische Oberzolldirektion, 03.06.1937, Kunstmuseum Basel, F 001.030.22.000."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/kunstmuseum-basel
+    acquired: 1934-02-24
+    ended: 1936-04-25
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/317/
+        note: "Footnote: Wie oben Fussnote 5; Soland, wie oben Fussnote 5, S. 240: «Die Spedition schien zunächst unter dem Ankaufsaspekt gelaufen zu sein: Im November 1933 wurde die Sammlung erstmals zum Verkauf angeboten. Mit Verweis auf die knappen Finanzen nahm die Kunstkommission in Basel von einem Ankauf Abstand, stellte die Sammlung dennoch aus und verwahrte sie. Die Dauer der Leihgabe war zunächst auf ein Jahr ang…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1936 or earlier
+    ended: 1936-11-25
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/317/
+        note: "Footnote: Soland, wie oben Fussnote 5, S. 240-241: «In diese Ausstellung war nebst der Galerie Wildenstein & Cie. auch der jüdische Kunsthändler Alfred Gold (1874–1958) involviert. Am 25. April 1936 schliesslich wurde die in Basel gelagerte Sammlung nach Paris verschickt. Einem Brief von Otto Fischer an die Eidgenössische Oberzolldirektion vom 3. Juni 1937 ist zu entnehmen, dass die Kunstwerke inzwischen an…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/carroll-carstairs
+    role: dealer
+    acquired: 1936-11-25
+    ended: 1944-01-07
+    method: purchase
+    direct: true
+    label: half share by Knoedler Gallery; inv. no. A2437/ A1794
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/317/
+        note: "Footnote: Soland, wie oben Fussnote 5, S. 241: «Die Spur von Degas’ Pastell führt von Wildenstein, Paris, nach New York zur Galerie M. Knoedler & Co., wo das Gemälde bis in die 1940er Jahre verblieb. Sodann verkaufte die New Yorker Galerie das Werk 1944 an den Kunsthändler Sam Salz (1894–1981).»; Soland, wie oben Fussnote 5, S. 244, Anmerkung 47: «Roland Frank Knoedler (1856–1932) übernahm die Galerie M. Kn…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/sam-salz
+    acquired: 1944-01-07
+    method: purchase
+    direct: true
+    label: Nr. 264
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/317/
+        note: "Footnote: Wie oben Fussnote 8; Soland, wie oben Fussnote 5, S. 241: «Das Inventarbuch von Sam Salz wiederum ist in der National Gallery of Art in Washington, D.C. überliefert. In diesem lässt sich der Verkauf rekonstruieren und die zugewiesene Inventarnummer '264' identifizieren. Diese bestätigt die Werkidentität für besagten Zeitraum: Auf der Rückseite des Pastells ist ein braunes Etikett mit blauen Einfas…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/vladimir-horowitz
+    acquired: 1949 or earlier
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/317/
+        note: "Footnote: Soland, wie oben Fussnote 5, S. 241: «Für den Zeitraum zwischen 1944 und 1949 bleiben die Besitzverhältnisse unklar, fest steht jedoch, dass sich das Werk im Jahr 1949 in der Sammlung des Pianisten Vladimir Horowitz (1903–1989) in New York befand. Ob es sich dabei um einen direkten Besitzerwechsel zwischen Salz und Horowitz handelte, konnte bisher noch nicht eruiert werden. 1974 gelangte das Gemäl…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/wildenstein-co
+    role: dealer
+    ended: 1974 or earlier
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/317/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg.; ZKG/KHZ, Werkdokument Slg.; Kunsthaus Zürich 1995 (Sammlungskatalog). Soland, wie oben Fussnote 5, S. 245, Anmerkung 52: «Wie und wann das Pastell zur Galerie Wildenstein kam, ist bis anhin unklar.»; Klemm 1995; Schulman, wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/walter-haefner
+    acquired: 1974 or earlier
+    ended: 1995
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/317/
+        note: "Footnote: Schulman, wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1995
+    method: gift
+    direct: true
+    place: zurich
+    label: anlässlich des 50-jährigen Jubiläums der AMAG Zürich; 1995
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/317/
+        note: "Footnote: Wie oben Fussnote 15; ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.492.850
+    label: Lemoisne 1946 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/317/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/317/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/317/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/317/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/317/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/317/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/317/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/317/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

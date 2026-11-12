@@ -1,0 +1,50 @@
+public_id: 120250
+name: Friedrich Horner
+given_name: Friedrich
+family_name: Horner
+birth: 1800-10-08
+death: 1864-01-25
+wikidata_id: Q52226473
+metadata:
+  sources: [Wikidata Q52226473 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q52226473
+  - type: born_in
+    to: place/basel
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q52226473
+  - type: died_in
+    to: place/basel
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q52226473
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q52226473
+identifiers:
+  gnd: "1072106035"
+  hls: "022447"
+  rkd: "39780"
+  sikart: "4023350"
+  ulan: "500016032"
+  viaf: "95779372"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q52226473
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q52226473

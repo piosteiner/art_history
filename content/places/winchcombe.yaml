@@ -1,0 +1,22 @@
+public_id: 120716
+name: Winchcombe
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-1.965, 51.955]
+wikidata_id: Q1234937
+metadata:
+  sources: [Wikidata Q1234937 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q1234937
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q1234937
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q1234937

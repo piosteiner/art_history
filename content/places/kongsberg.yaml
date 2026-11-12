@@ -1,0 +1,22 @@
+public_id: 120392
+name: Kongsberg
+kind: settlement
+parent: norway
+country_code: NO
+location: [9.64639, 59.665]
+wikidata_id: Q108988
+metadata:
+  sources: [Wikidata Q108988 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q108988
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q108988
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q108988

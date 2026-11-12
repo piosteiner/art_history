@@ -1,0 +1,25 @@
+public_id: 120434
+name: Elise Kalthoff
+given_name: Elise
+family_name: Kalthoff
+birth: 1862
+death: 20th century
+wikidata_id: Q131629534
+metadata:
+  sources: [Wikidata Q131629534 (retrieved 2026-11-12)]
+relationships:
+  - type: worked_in
+    to: place/dusseldorf
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q131629534
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q131629534
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q131629534

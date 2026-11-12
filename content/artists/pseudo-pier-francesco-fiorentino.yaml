@@ -1,0 +1,25 @@
+public_id: 120689
+name: Pseudo Pier Francesco Fiorentino
+given_name: Pseudo Pier Francesco
+family_name: Fiorentino
+active: 1450/1499
+wikidata_id: Q18577975
+metadata:
+  sources: [Wikidata Q18577975 (retrieved 2026-11-12)]
+relationships:
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q18577975
+identifiers:
+  gnd: "141382333"
+  rkd: "63379"
+  ulan: "500027302"
+  viaf: "120970123"
+sources:
+  active:
+    - accessed: 2026-11-12
+      property: P1317
+      wikidata: Q18577975

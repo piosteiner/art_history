@@ -20,6 +20,12 @@ relationships:
       - accessed: 2026-10-12
         property: P737
         wikidata: Q214564
+  - type: student_of
+    to: artist/barthelemy-menn
+    sources:
+      - accessed: 2026-11-12
+        property: P802
+        wikidata: Q264295
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Hodler_-_Selbstbildnis_mit_Stehkragen_-_1879.jpeg/1280px-Hodler_-_Selbstbildnis_mit_Stehkragen_-_1879.jpeg
     source_url: https://commons.wikimedia.org/wiki/File:Hodler_-_Selbstbildnis_mit_Stehkragen_-_1879.jpeg

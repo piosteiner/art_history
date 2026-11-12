@@ -1,0 +1,39 @@
+public_id: 120659
+name: Jacques Linard
+given_name: Jacques
+family_name: Linard
+birth: 1597
+death: 1645
+wikidata_id: Q1678037
+metadata:
+  sources: [Wikidata Q1678037 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1678037
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1678037
+identifiers:
+  bnf: 15097298h
+  gnd: "129538876"
+  idref: "103774955"
+  lc: no2006094082
+  rkd: "50095"
+  ulan: "500007551"
+  viaf: "65089343"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1678037
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1678037

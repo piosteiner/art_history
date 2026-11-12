@@ -1,0 +1,22 @@
+public_id: 120525
+name: Thansau
+kind: settlement
+parent: bayern
+country_code: DE
+location: [12.16191, 47.81938]
+wikidata_id: Q131859478
+metadata:
+  sources: [Wikidata Q131859478 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q131859478
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q131859478
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q131859478

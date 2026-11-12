@@ -1,0 +1,414 @@
+public_id: 121142
+title_lang: it
+title: Paesaggio serale con coppia (Paesaggio Rogers)
+names:
+  - lang: de
+    role: translation
+    text: Abendlandschaft mit Figurenpaar (Rogers Landschaft)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Evening Landscape with Couple (Rogers Landscape)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: titian
+attribution_label: attributed to Titian; formerly attributed to Giorgione da Castelfranco
+created: c. 1520–1522
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Papier auf Leinwand
+dimensions: [34.1, 58]
+institution: kunsthaus-zurich
+inventory_number: ZKG.2019/0003
+web_url: https://collection.kunsthaus.ch/de/collection/item/413958/
+wikidata_id: Q131584743
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fe/Tiziano_Vecellio%2C_known_as_Titian%2C_attributed_to%2C_Giorgione_da_Castelfranco_historical_attribution_-_Paesaggio_serale_con_coppia_%28Paesaggio_Rogers%29_-_ZKG.2019-0003_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Tiziano_Vecellio,_known_as_Titian,_attributed_to,_Giorgione_da_Castelfranco_historical_attribution_-_Paesaggio_serale_con_coppia_(Paesaggio_Rogers)_-_ZKG.2019-0003_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Attributed to Titian
+provenance:
+  - owner: person/richard-cosway
+    acquired: 1791 or earlier
+    ended: 1821-05-18
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: 'Footnote: Etikette auf der Werkrückseite: "From the Collection of Richard Cosway Esq., R.A. : 1791". Die Etikette stammt vermutlich von der Kunsthandlung Frank T. Sabin, London, vgl. Auskunft MacKenzie Mallon 02.06.2025; Eintrag im Auktionskatalog von der Galerie Fischer 1956 "Richard Cosway, Esq. R.A. 1791", Auktion Galerie Fischer, 12.06.1956, Lot 1477. Im Inventar der Sammlung von Richard Cosway von 1791…'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Stanley
+    role: agent
+    acquired: 1821-05-18
+    ended: 1821-05-18
+    method: auction
+    direct: true
+    place: london
+    label: Lot 44; als Giorgione
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Auktion Stanley 18.05.1821, Lot 44, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/urbino-pizzetta
+    acquired: 1821 or later
+    ended: 1825-04-16
+    place: london
+    label: Foley Place; Foley Place, London
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: 'Footnote: Bei der Nachlassauktion des Kunsthändlers und Künstler Urbino Pizzetta wurde als Lot 52 ein Werk von Giorgione, "An armed Knight and a Female, Musical Conversation, in a romantic Landscape, with Buildings and a View of the Sea" verkauft. Obwohl der Titel gut zum hiesigen Werk passt, könnte es sich hier auch um die zweite Version der "Abendlandschaft" (Inv.-Nr. ZKG 2023/0004) handeln, vgl. Auktion …'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1825-04-16
+    ended: 1825-04-16
+    method: auction
+    direct: true
+    place: london
+    label: Lot 52; als Giorgione
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: 'Footnote: Im annotierten Auktionskatalog ist der Name "Jates" oder "Jales" zu lesen. Ob es sich hier um einen Besitzer oder Vermittler des Werkes handelt, kann nicht abschliessend geklärt werden, wie oben Fussnote 5; Im Galeriedossier der Galerie Fergus Hall wird hingegen erwähnt, dass das Bild bei der Auktion an jemanden Namens "Gibbs" verkauft wurde, vgl. Galeriedossier Fergus Hall, 2019, ZKG/KHZ.'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/sarah-rogers
+    acquired: 1844 or earlier
+    ended: 1855 or earlier
+    place: london
+    label: als Giorgione
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Jameson 1844, S. 412; Waagen 1854, S. 267."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/samuel-rogers
+    acquired: 1855 or later
+    ended: 1855-12-18 or earlier
+    method: inheritance
+    direct: true
+    label: als Giorgione
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Samuel Rogers erbte die Sammlung seiner Schwester, Sarah, die nur wenige Monate vor ihm starb, vgl. Humfrey 2023, S. 6, 16; Bei der Nachlassauktion von Samuel Rogers wurde das Bild als ein Werk von Giorgione verkauft, vgl. Auktion Christie and Manson, 28.04.1856 –10.05.1856, Lot 579."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/christie-manson
+    role: agent
+    acquired: 1856-05-02
+    ended: 1856-05-02
+    method: auction
+    direct: true
+    place: london
+    label: Lot 579; als Giorgione
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Auktion Christie and Manson, wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/d-j-morant
+    role: agent
+    acquired: 1856-05-02
+    ended: 1856-05-02
+    method: purchase
+    direct: true
+    place: london
+    label: intermediary
+    price:
+      amount: 92.8
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Gekauft von Morant als Vermittler für Sir John William Ramsden, vgl. Galeriedossier der Galerie Fergus Hall, 2019, wie oben Fussnote 7; annotierter Auktionskatalog Christies and Manson 1856, wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/john-william-ramsden
+    acquired: 1856-05-02
+    ended: 1914-04-15
+    method: purchase
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Galeriedossier Fergus Hall, wie oben Fussnote 7; Kat. National Exhibition of Works of Art Leeds 1868, Nr. 210"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/john-william-ramsden
+    acquired: 1914-04-15
+    ended: 1932-05-27
+    method: inheritance
+    direct: true
+    label: Bulstrode Park; Bulstrode, Gerrards Cross, Buckinghamshire
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Sohn des oben genannten. Seine Auktionen bei Christie's vgl. Auktion Christie, Manson & Wood, 11.07.1930, Lot 34 (nicht verkauft); Auktion Christie, Manson & Wood, 27.05.1932, Lot 73."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1930-07-11
+    ended: 1930-07-11
+    method: auction
+    direct: true
+    place: london
+    label: Lot 34; als Giorgione; nicht verkauft
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Auktion Christie's 11.07.1930, wie oben Fussnote 14."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1932-05-27
+    ended: 1932-05-27
+    method: auction
+    direct: true
+    place: london
+    label: Lot 73; als Giorgione
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Auktion Christie, Manson & Wood, 27.5.1932, wie oben Fussnote 14."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/frank-t-sabin
+    acquired: 1932-05-27
+    ended: 1938 or later
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Das Werk wurde von der Kunsthandlung Frank T. Sabin bei der Auktion von Christie's 1932 erworben, vgl. Auskunft Christie's, London, 04.09.2024. Zu diesem Zeitpunkt wurde die Kunsthandlung von Sidney Sabin geleitet. Im Jahr 1938 wurde das Bild bei der \"Landscape Exhibition\" der Kunsthandlung Frank T. Sabin als ein Werk von Tizian ausgestellt, vgl. Kat. Frank T. Sabin London 1938 Landscape Exhibitio…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/frank-t-sabin
+    role: estate
+    ended: 1956 or earlier
+    method: inheritance
+    direct: true
+    place: london
+    label: Nachlass Frank T. Sabin, London
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: 'Footnote: Brief Paul Fischer an Eberhardt Ritter, 10.07.1956 in dem erwähnt wird, dass das Bild "aus der Erbschaft des Herrn Frank D [sic!] Sabin" stamme, vgl. Thyssen-Kupp Corporate Archives, Duisburg, AI 32930'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/daan-cevat
+    ended: 1956-06-16 or earlier
+    place: london
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: 'Footnote: Der Name "Cevat" wird auf den Einliefererlisten im Zusammenhang mit diesen Kunstwerk erwähnt. Es handelt sich womöglich um den Kunsthändler Daan H. Cevat, mit dem die Galerie Fischer zusammenarbeitete, Auskunft Galerie Fischer 30.11.2023 und 06.10.2024; Es konnte nicht abschliessend geklärt werden, ob Cevat als Vermittler auftrat. In einem Brief von Paul Fischer an Eberhardt Ritter (Käufer) ist di…'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1956-06-16
+    ended: 1956-06-16
+    method: auction
+    direct: true
+    place: lucerne
+    label: Lot 1477; als Tizian
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Auktion Galerie Fischer 12-16.06.1956, Lot 1477."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/deutsche-maschinenbau-aktiengesellschaft
+    acquired: 1956-06-16
+    ended: 1956-08-14
+    method: purchase
+    direct: true
+    place: duisburg
+    price:
+      amount: 10000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Auskunft Galerie Fischer, Luzern, 06.10.2024; Thyssen-Krupp Corporate Archives, Duisburg, AI 32920; Heim 2019."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hans-gunther-sohl
+    acquired: 1956-08-14
+    ended: 1988
+    method: gift
+    direct: true
+    place: germany
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Der Vorstand der DEMAG schenkte dieses Bild Hans-Günther Sohl zu seinem 50. Geburtstag, vgl. Brief Hans Reuter an Hans Günther Sohl, 14.08.1956, Thyssen-Krupp Corporate Archives, wie oben Fussnote 18."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-g-cramer
+    role: agent
+    acquired: 1969 or earlier
+    ended: 1976 or later
+    direct: true
+    place: the-hague
+    label: on consignment; als Schule des Giorgione
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Burlington Magazine, 1969, Abb. XIX; Kat. Cramer 1975-1976, Nr. 3; G. Cramer Oude Kunst Gallery records, The Getty Research Institute, box 801, folder 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1977-07-13
+    ended: 1977-07-13
+    method: auction
+    direct: true
+    place: london
+    label: Lot 86; als Nachfolger Giorgiones; nicht verkauft
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Das Werk wurde bei Sotheby's London 1977 zum Verkauf angeboten aber nicht verkauft. Es wurde zusammen mit einer Expertise des italienischen Kunsthistorikers Antonio Morassi von 1969, der das Werk dem jungen Tizian zuschreibt, angeboten. Vgl. G. Cramer Oude Kunst Gallery records, wie oben Fussnote 24; Auktion Sotheby's 13.07.1977, Lot 86."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1988-12-07
+    ended: 1988-12-07
+    method: auction
+    direct: true
+    place: london
+    label: Lot 74; als Nachfolger (17 Jhr.) Giorgiones
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Auktion Sotheby's 07.12.1988, Lot 74."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown (collector)
+    acquired: 1988-12-07
+    ended: 1996-01-11
+    method: purchase
+    direct: true
+    price:
+      amount: 20350
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Auktion Sotheby's, wie oben Fussnote 26."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1994-01-14
+    ended: 1994-01-14
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Lot 5; als Umkreis Giorgiones; nicht verkauft
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Auktion Sotheby's 14.01.1994, Lot 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1996-01-11
+    ended: 1996-01-11
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Lot 185; als Umkreis von Giorgione
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Auktion Sotheby's 11.01.1996, Lot 85."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/ira-spanierman
+    acquired: 1996-01-11
+    ended: 2019-07-10 or earlier
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: 28'750 USD (33'062.50 CHF)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Auktion Sotheby's, wie oben Fussnote 29; Heim 2019, wie oben Fussnote 22."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    role: agent
+    acquired: 2019 or earlier
+    ended: 2019 or earlier
+    direct: true
+    place: new-york-city
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/fergus-hall-ltd
+    role: dealer
+    acquired: 2019 or earlier
+    ended: 2019 or earlier
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        note: "Footnote: Galerie Dossier Fergus Hall, wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/dr-joseph-scholz-stiftung
+    acquired: 2019
+    ended: 2019
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2019
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

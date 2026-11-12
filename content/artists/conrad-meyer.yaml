@@ -1,0 +1,58 @@
+public_id: 120551
+name: Conrad Meyer
+given_name: Conrad
+family_name: Meyer
+birth: 1618-10-01
+death: 1689-01-15
+wikidata_id: Q5162575
+metadata:
+  sources: [Wikidata Q5162575 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q5162575
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q5162575
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q5162575
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q5162575
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/05/Conrad_Meyer_-_Selbstbildnis_-_200_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Conrad_Meyer_-_Selbstbildnis_-_200_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Conrad Meyer
+identifiers:
+  gnd: "118733273"
+  hls: "019140"
+  idref: "071458328"
+  kulturnav: 6b729964-c6e5-482a-9111-53a8b0074fce
+  lc: n84160220
+  rkd: "55713"
+  sikart: "4023147"
+  ulan: "500025131"
+  viaf: "30332045"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q5162575
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q5162575

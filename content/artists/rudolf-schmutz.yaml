@@ -1,0 +1,37 @@
+public_id: 120899
+name: Rudolf Schmutz
+given_name: Rudolf
+family_name: Schmutz
+birth: 1670-01-02
+death: 1715
+wikidata_id: Q55126375
+metadata:
+  sources: [Wikidata Q55126375 (retrieved 2026-11-12)]
+relationships:
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q55126375
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q55126375
+identifiers:
+  gnd: 13817668X
+  rkd: "70758"
+  sikart: "12627446"
+  ulan: "500081111"
+  viaf: "88231440"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q55126375
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q55126375

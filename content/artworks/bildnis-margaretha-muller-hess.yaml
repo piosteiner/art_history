@@ -1,0 +1,96 @@
+public_id: 120254
+title_lang: de
+title: Bildnis Margaretha Müller-Hess
+names:
+  - lang: en
+    role: translation
+    text: Portrait of Margaretha Müller-Hess
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1539/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: samuel-hofmann
+created: c. 1633–1640
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [107, 75.5]
+institution: kunsthaus-zurich
+inventory_number: "2327"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1539/
+on_loan: true
+on_loan_since: 1934
+wikidata_id: Q131586251
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/26/Samuel_Hofmann_-_Bildnis_Margaretha_M%C3%BCller-Hess_-_2327_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Samuel_Hofmann_-_Bildnis_Margaretha_M%C3%BCller-Hess_-_2327_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Samuel Hoffmann
+provenance:
+  - owner: person/margaretha-muller-hess
+    acquired: 1633/1640
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1539/
+        note: "Footnote: Archiv der Kunstsammlungen des Bundes, Bern (Protokolle, Präsidialakten und Jahresbericht der Gottfried Keller-Stiftung, Bern); vgl. https://www.bundessammlungen.ch/de/collection/item/17630/ (11.06.2025.)"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: the Bright family
+    place: england
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1539/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Frau E. Heller
+    ended: 1934
+    place: clarens
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1539/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/gottfried-keller-stiftung
+    acquired: 1934
+    method: purchase
+    direct: true
+    place: bern
+    label: Bundesamt für Kultur; GKS802
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1539/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1539/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

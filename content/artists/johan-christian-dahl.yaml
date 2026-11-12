@@ -1,0 +1,65 @@
+public_id: 120331
+name: Johan Christian Dahl
+given_name: Johan Christian
+family_name: Dahl
+names:
+  - kind: birth
+    lang: en
+    role: alternative
+    text: Johan Christian Claussen Dahl
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q164735
+birth: 1788-02-24
+death: 1857-10-14
+wikidata_id: Q164735
+metadata:
+  sources: [Wikidata Q164735 (retrieved 2026-11-12)]
+relationships:
+  - type: died_in
+    to: place/dresden
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q164735
+  - type: lived_in
+    to: place/dresden
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q164735
+  - type: worked_in
+    to: place/dresden
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q164735
+  - type: studied_at
+    to: institution/royal-danish-academy-of-fine-arts
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q164735
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/17/Carl_Christian_Vogel_von_Vogelstein_-_Johan_Christian_Clausen_Dahl.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Carl_Christian_Vogel_von_Vogelstein_-_Johan_Christian_Clausen_Dahl.jpg
+    license: Public domain
+    credit: Carl Christian Vogel von Vogelstein
+identifiers:
+  bnf: "139510937"
+  gnd: "118843982"
+  idref: "027353885"
+  kulturnav: 09d694da-27b9-46d3-a22e-21f07123fc6d
+  lc: n81047942
+  rkd: "19680"
+  ulan: "500002468"
+  viaf: "3268054"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q164735
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q164735

@@ -1,0 +1,51 @@
+public_id: 121357
+name: Frans de Hulst
+given_name: Frans
+family_name: de Hulst
+birth: 1605/1607
+birth_label: c. 1600s
+death: 1661-12-29
+wikidata_id: Q2040622
+metadata:
+  sources: [Wikidata Q2040622 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2040622
+  - type: born_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q2040622
+  - type: died_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q2040622
+  - type: worked_in
+    to: place/haarlem
+    period: 1631/1661
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q2040622
+identifiers:
+  gnd: "1049334116"
+  kulturnav: e898d9c6-6bda-4996-a66b-a30f6b7fe9a9
+  rkd: "40551"
+  ulan: "500004663"
+  viaf: "95709259"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q2040622
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q2040622

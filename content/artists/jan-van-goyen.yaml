@@ -54,6 +54,12 @@ relationships:
       - accessed: 2026-11-03
         property: P937
         wikidata: Q315996
+  - type: student_of
+    to: artist/esaias-van-de-velde
+    sources:
+      - accessed: 2026-11-12
+        property: P802
+        wikidata: Q467361
   - type: associated_with
     to: movement/dutch-golden-age-painting
     sources:

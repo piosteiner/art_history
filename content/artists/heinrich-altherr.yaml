@@ -1,0 +1,86 @@
+public_id: 121307
+name: Heinrich Altherr
+given_name: Heinrich
+family_name: Altherr
+birth: 1878-04-11
+death: 1947-04-27
+wikidata_id: Q321284
+metadata:
+  sources: [Wikidata Q321284 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q321284
+  - type: born_in
+    to: place/basel
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q321284
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q321284
+  - type: worked_in
+    to: place/basel
+    period: 1897/1899
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q321284
+  - type: worked_in
+    to: place/munich
+    period: 1899/1901
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q321284
+  - type: worked_in
+    to: place/rome
+    period: 1901/1902
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q321284
+  - type: worked_in
+    to: place/zurich
+    period: 1939/1947
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q321284
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q321284
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6e/Altherr-Selfportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Altherr-Selfportrait.jpg
+    license: Public domain
+    credit: Heinrich Altherr
+identifiers:
+  dodis: P13531
+  dome: "783"
+  gnd: "116294353"
+  hls: "021973"
+  lc: n89624190
+  rkd: "1379"
+  sikart: "4022683"
+  ulan: "500083321"
+  viaf: "77063514"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q321284
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q321284

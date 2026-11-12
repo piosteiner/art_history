@@ -1,0 +1,51 @@
+public_id: 120517
+name: Sebastiano Ricci
+given_name: Sebastiano
+family_name: Ricci
+birth: 1659-08-01
+death: 1734-05-15
+wikidata_id: Q506483
+metadata:
+  sources: [Wikidata Q506483 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q506483
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q506483
+  - type: associated_with
+    to: movement/baroque-painting
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q506483
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/66/Carriera%2C_Rosalba_-_Sebastiano_Ricci_-_Staatliche_Kunsthalle%2C_Karlsruhe.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Carriera,_Rosalba_-_Sebastiano_Ricci_-_Staatliche_Kunsthalle,_Karlsruhe.jpg
+    license: Public domain
+    credit: Rosalba Carriera
+identifiers:
+  bnf: 12131254z
+  gnd: "118788655"
+  idref: "029757525"
+  kulturnav: bcfbab8b-f36d-4f78-b4be-6a117ccaabba
+  lc: n50044876
+  rkd: "66587"
+  ulan: "500028857"
+  viaf: "57410829"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q506483
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q506483

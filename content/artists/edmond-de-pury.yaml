@@ -1,0 +1,46 @@
+public_id: 121283
+name: Edmond de Pury
+given_name: Edmond
+family_name: de Pury
+birth: 1845-03-06
+death: 1911-11-07
+wikidata_id: Q21288783
+metadata:
+  sources: [Wikidata Q21288783 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q21288783
+  - type: born_in
+    to: place/neuchatel
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q21288783
+  - type: died_in
+    to: place/lausanne
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q21288783
+identifiers:
+  gnd: "122593316"
+  hls: "022577"
+  idref: "266295029"
+  lc: nr2001008959
+  rkd: "126422"
+  sikart: "4002470"
+  ulan: "500007392"
+  viaf: "67352001"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q21288783
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q21288783

@@ -1,0 +1,43 @@
+public_id: 120820
+name: Gottfried Pulian
+given_name: Gottfried
+family_name: Pulian
+birth: 1809-07-27
+death: 1875-03-04
+wikidata_id: Q1539401
+metadata:
+  sources: [Wikidata Q1539401 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1539401
+  - type: died_in
+    to: place/dusseldorf
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q1539401
+  - type: worked_in
+    to: place/netherlands
+    period: 1848/1855
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1539401
+identifiers:
+  gnd: 11631303X
+  rkd: "65071"
+  ulan: "500027948"
+  viaf: "52438772"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1539401
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1539401

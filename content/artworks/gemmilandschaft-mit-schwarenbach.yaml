@@ -1,0 +1,76 @@
+public_id: 120444
+title_lang: de
+title: Gemmilandschaft mit Schwarenbach
+names:
+  - lang: en
+    role: translation
+    text: Landscape on Gemmi Pass with Schwarenbach
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1922/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: c. 1890
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [50.5, 69.5]
+institution: kunsthaus-zurich
+inventory_number: "1142"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1922/
+on_loan: true
+on_loan_since: 1917
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586051
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c5/Ferdinand_Hodler_-_Gemmilandschaft_mit_Schwarenbach_-_1142_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Gemmilandschaft_mit_Schwarenbach_-_1142_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: place/zurich
+    acquired: 1917
+    method: purchase
+    place: zurich
+    label: «Kauf aus der Ausstellung Ferdinand Hodler (14.06. - 15.08.1917) im Kunsthaus Zürich»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1922/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.177
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1922/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1922/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1922/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1922/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1922/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1922/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1922/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1922/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

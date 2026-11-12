@@ -1,0 +1,78 @@
+public_id: 121039
+name: Franz von Stuck
+given_name: Franz
+family_name: von Stuck
+names:
+  - kind: birth
+    lang: en
+    role: alternative
+    text: Franz Ritter von Stuck
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q45006
+birth: 1863-02-23
+death: 1928-08-30
+wikidata_id: Q45006
+metadata:
+  sources: [Wikidata Q45006 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q45006
+  - type: nationality
+    to: polity/kingdom-of-bavaria
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q45006
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q45006
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q45006
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q45006
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q45006
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Franz_von_Stuck%2C_by_Franz_von_Stuck.jpg/1280px-Franz_von_Stuck%2C_by_Franz_von_Stuck.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Franz_von_Stuck,_by_Franz_von_Stuck.jpg
+    license: Public domain
+    credit: Franz von Stuck
+identifiers:
+  bnf: 12222310t
+  dome: "412"
+  gnd: "118619543"
+  idref: "030899672"
+  kulturnav: ba3a8f9b-aca8-462d-bf4f-b31c052610bf
+  lc: n82050633
+  rkd: "75909"
+  ulan: "500006652"
+  viaf: "52482379"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q45006
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q45006

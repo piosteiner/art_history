@@ -1,0 +1,41 @@
+public_id: 120812
+name: Julius Rieter
+given_name: Julius
+family_name: Rieter
+birth: 1830-06-05
+death: 1897-05-09
+wikidata_id: Q30163901
+metadata:
+  sources: [Wikidata Q30163901 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q30163901
+  - type: born_in
+    to: place/winterthur
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q30163901
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q30163901
+identifiers:
+  gnd: "1150730056"
+  sikart: "4023257"
+  viaf: "4729151656280708400008"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q30163901
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q30163901

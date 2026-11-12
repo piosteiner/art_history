@@ -1,0 +1,67 @@
+public_id: 120954
+title_lang: de
+title: Abend am Vierwaldstättersee
+names:
+  - lang: en
+    role: translation
+    text: Evening on Lake Lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3315/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: auguste-veillon
+created: 1869
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [115, 175]
+institution: kunsthaus-zurich
+inventory_number: "322"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3315/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585959
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b3/Auguste_Veillon_-_Abend_am_Vierwaldst%C3%A4ttersee_-_322_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Auguste_Veillon_-_Abend_am_Vierwaldst%C3%A4ttersee_-_322_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Auguste Veillon
+provenance:
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1869
+    method: purchase
+    direct: true
+    place: zurich
+    label: «Kauf aus der Schweizerischen Turnus-Ausstellung»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3315/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3315/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3315/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3315/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3315/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3315/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3315/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3315/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

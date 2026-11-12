@@ -1,0 +1,48 @@
+public_id: 120034
+name: Johann Rudolf Dälliker
+given_name: Johann Rudolf
+family_name: Dälliker
+birth: 1694
+death: 1769-04-23
+wikidata_id: Q2387708
+metadata:
+  sources: [Wikidata Q2387708 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2387708
+  - type: born_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q2387708
+  - type: died_in
+    to: place/schaffhausen
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q2387708
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Johann_Rudolf_D%C3%A4lliker.jpg/1280px-Johann_Rudolf_D%C3%A4lliker.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Rudolf_D%C3%A4lliker.jpg
+    license: Public domain
+    credit: Johann Rudolf Dälliker
+identifiers:
+  gnd: "142731595"
+  rkd: "19624"
+  sikart: "4030512"
+  ulan: "500058620"
+  viaf: "96073505"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q2387708
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q2387708

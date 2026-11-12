@@ -1,0 +1,112 @@
+public_id: 121055
+title_lang: fr
+title: La Réussite
+names:
+  - lang: de
+    role: translation
+    text: Akt mit Patience-Karten
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3591/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Solitaire (Nude Playing Cards)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3591/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: felix-vallotton
+created: 1912
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [90, 117]
+institution: kunsthaus-zurich
+inventory_number: "2459"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3591/
+wikidata_id: Q47543963
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0d/F%C3%A9lix_Vallotton_-_La_R%C3%A9ussite_-_2459_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Vallotton_-_La_R%C3%A9ussite_-_2459_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Félix Vallotton
+provenance:
+  - owner: institution/galerie-eugene-druet
+    role: dealer
+    acquired: 1913
+    ended: 1928 or later
+    method: purchase
+    direct: true
+    place: paris
+    label: Nr. 7594
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3591/
+        note: "Footnote: Werkverzeichnis Ducrey 2005, Bd. 3, S. 547, No. 956; Brief Paul Vallotton, Lausanne, an Wilhelm Wartmann, o. D., Archiv ZKG/KHZ, 10.30.30.58: Enthält eine Liste von Werken Vallottons aus Paris, die durch Vermittlung der Galerie Vallotton für die Ausstellung im Kunsthaus Zürich 1928 zur Verfügung gestellt wurden. La Réussite erscheint als Nr. 7594, was der Inventarnummer in der Galerie Druet entspr…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1937-12-08
+    ended: 1937-12-08
+    method: auction
+    place: paris
+    label: Lot 63; Vente Adolphe Bellier
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3591/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/jacques-rodrigues-henriques
+    role: dealer
+    acquired: 1937-12-08
+    ended: 1938
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3591/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1938
+    method: purchase
+    direct: true
+    place: zurich
+    label: bought from the exhibition at the Kunsthaus Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3591/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 23.11.1938, I.a; 29.11.1938; 12.12.1938, Archiv ZKG/KHZ, 10.30.10.41-42."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "956"
+    label: Ducrey (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3591/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3591/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3591/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3591/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3591/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3591/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3591/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

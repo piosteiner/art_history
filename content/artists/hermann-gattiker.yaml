@@ -1,0 +1,39 @@
+public_id: 120402
+name: Hermann Gattiker
+given_name: Hermann
+family_name: Gattiker
+birth: 1865-03-12
+death: 1950-08-23
+wikidata_id: Q28927469
+metadata:
+  sources: [Wikidata Q28927469 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q28927469
+  - type: died_in
+    to: place/ruschlikon
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q28927469
+identifiers:
+  dome: "11667"
+  gnd: "1018068198"
+  hls: "022311"
+  rkd: "30421"
+  sikart: "4000045"
+  ulan: "500113002"
+  viaf: "295793025"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q28927469
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q28927469

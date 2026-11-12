@@ -1,0 +1,85 @@
+public_id: 121004
+title_lang: de
+title: Felslandschaft mit Fischern
+names:
+  - lang: en
+    role: translation
+    text: Rocky Landscape with Fishermen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/346/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: johann-balthasar-bullinger-the-elder
+created: 1753
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [79, 106]
+institution: kunsthaus-zurich
+inventory_number: "169"
+web_url: https://collection.kunsthaus.ch/de/collection/item/346/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586511
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c7/Johann_Balthasar_Bullinger_%28the_Elder%29_-_Felslandschaft_mit_Fischern_-_169_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Balthasar_Bullinger_(the_Elder)_-_Felslandschaft_mit_Fischern_-_169_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Johann Balthasar Bullinger
+provenance:
+  - owner: person/johann-caspar-keller-zum-mohrenkopf
+    ended: 1829 or earlier
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/346/
+        note: "Footnote: Kunsthaus Zürich, Sammlungskatalog, 2007, S. 55."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/albert-keller
+    ended: 1854
+    direct: true
+    place: milan
+    label: Mailand, Erbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/346/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1854
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/346/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/346/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/346/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/346/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/346/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/346/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/346/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/346/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

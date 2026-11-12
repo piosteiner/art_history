@@ -1,0 +1,112 @@
+public_id: 121238
+title: Zwei Jaguare
+names:
+  - lang: null
+    role: translation
+    text: Two Jaguars
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5344/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Deux Jaguars
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5344/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: jacob-gerritsz-cuyp
+created: 1639
+kind: oil painting
+medium: Öl auf Eichenholz
+dimensions: [43.5, 55]
+institution: kunsthaus-zurich
+inventory_number: 2004/0025
+web_url: https://collection.kunsthaus.ch/de/collection/item/5344/
+wikidata_id: Q116917871
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/50/Jacob_Gerritsz._Cuyp_-_Zwei_Jaguare_-_2004-0025_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jacob_Gerritsz._Cuyp_-_Zwei_Jaguare_-_2004-0025_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jacob Gerritsz. Cuyp
+provenance:
+  - owner: person/jan-vlug
+    acquired: 1947
+    ended: 1947
+    place: brussels
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5344/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/henri-heugel
+    acquired: 1956
+    ended: 1956
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5344/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 2001-01-25
+    ended: 2001-01-25
+    method: auction
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5344/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-habolt
+    role: dealer
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5344/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-vervoord
+    role: dealer
+    ended: 2004
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5344/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2004
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5344/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5344/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5344/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5344/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5344/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5344/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5344/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5344/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

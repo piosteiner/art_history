@@ -9,6 +9,8 @@ materials: [oak, ebony, ivory]
 dimensions: [212]
 dimensions_note: Höhe 212 cm, Breite 190 cm
 institution: rijksmuseum
+inventory_number: BK-1996-22
+web_url: https://www.rijksmuseum.nl/en/collection/BK-1996-22
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/b/bc/Kabinet_Gole-kabinet%2C_BK-1996-22.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Kabinet_Gole-kabinet,_BK-1996-22.jpg
@@ -36,3 +38,7 @@ sources:
   title_status:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 11 (12.12.2024)
+  inventory_number:
+    - url: https://www.rijksmuseum.nl/en/collection/BK-1996-22
+      source: rijksmuseum-nl
+      accessed: 2026-11-11

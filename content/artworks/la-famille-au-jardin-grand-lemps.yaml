@@ -1,0 +1,130 @@
+public_id: 121624
+title_lang: fr
+title: La Famille au jardin. Grand-Lemps
+names:
+  - lang: de
+    role: translation
+    text: Die Familie im Garten (Grand-Lemps)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/979/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: The Family in the Garden (Grand-Lemps)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/979/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: pierre-bonnard
+created: c. 1901
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [109.5, 127.5]
+institution: kunsthaus-zurich
+inventory_number: 1985/0035
+web_url: https://collection.kunsthaus.ch/de/collection/item/979/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124288342
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0b/Pierre_Bonnard_-_La_Famille_au_jardin._Grand-Lemps_-_1985-0035_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre_Bonnard_-_La_Famille_au_jardin._Grand-Lemps_-_1985-0035_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Pierre Bonnard
+provenance:
+  - owner: artist/pierre-bonnard
+    role: estate
+    acquired: 1947-01-23
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/979/
+        note: "Footnote: Dauberville 1974, S. 208, No. 01831."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/claude-terrasse
+    ended: 1964 or later
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/979/
+        note: "Footnote: Das Werk war 1964 in der Ausstellung «Bonnard and his Environment» im Museum of Modern Art, New York (Kat. Nr. 15). Die annotierte Werkliste des Moma gibt als weitere Identifikation die Nummer 64.556 an, vgl. https://assets.moma.org/documents/moma_master-checklist_326355.pdf (16.09.2025). Diese korrespondiert mit der Beschriftung auf einer Etikette auf der Werkrückseite, die zudem Angaben zum Eige…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1980-03-26
+    ended: 1980-03-26
+    method: auction
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/979/
+        note: "Footnote: Kat. The Phillips Collection, Washington DC/Dallas Museum of Art, Dallas TX 1984, S. 112."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/j-alvarez-de-toledo
+    ended: 1985
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/979/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1985-11-12
+    ended: 1985-11-12
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Lot 27
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/979/
+        note: "Footnote: Kat. Impressionist and Modern Paintings and Sculpture from the Collection of Juan Alvares de Toledo, Christie's New York, 12.11.1985, S. 46."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1985
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/979/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: IV.208.01831
+    label: Dauberville Bonnard (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/979/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/979/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/979/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/979/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/979/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/979/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/979/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

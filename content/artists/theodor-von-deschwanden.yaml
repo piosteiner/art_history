@@ -1,0 +1,33 @@
+public_id: 121584
+name: Theodor von Deschwanden
+given_name: Theodor
+family_name: von Deschwanden
+birth: 1826-02-26
+death: 1861-12-19
+wikidata_id: Q47494226
+metadata:
+  sources: [Wikidata Q47494226 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q47494226
+identifiers:
+  bnf: 14972816s
+  gnd: "135736315"
+  hls: "022266"
+  rkd: "125625"
+  sikart: "4023019"
+  ulan: "500357936"
+  viaf: "230691918"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q47494226
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q47494226

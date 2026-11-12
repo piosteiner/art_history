@@ -1,0 +1,117 @@
+public_id: 120633
+title_lang: de
+title: Kinderbild. Erdmute und Hans-Herbert Esche
+names:
+  - lang: en
+    role: translation
+    text: "Portrait of Children: Erdmute and Hans-Herbert Esche"
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2490/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Enfants. Erdmute et Hans-Herbert Esche
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2490/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: original
+    text: Esches barn
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2490/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: edvard-munch
+created: 1905
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [148, 162.5]
+institution: kunsthaus-zurich
+inventory_number: 1997/0013
+web_url: https://collection.kunsthaus.ch/de/collection/item/2490/
+on_loan: true
+on_loan_since: 1997
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q18889822
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/09/Edvard_Munch_-_Kinderbild._Erdmute_und_Hans-Herbert_Esche_-_1997-0013_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_Kinderbild._Erdmute_und_Hans-Herbert_Esche_-_1997-0013_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Edvard Munch
+provenance:
+  - owner: person/herbert-eugen-esche
+    ended: 1962
+    method: commission
+    direct: true
+    place: chemnitz
+    label: Chemnitz and Küsnacht
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2490/
+        note: "Footnote: Kat. Kunsthaus Zürich 2016, S. 36."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/erdmute-luchsinger-esche
+    acquired: 1962
+    ended: 1990
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2490/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/regula-luchsinger
+    acquired: 1990
+    ended: 1997
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2490/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/herbert-eugen-esche-stiftung
+    acquired: 1997
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2490/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.663.651
+    label: Woll (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2490/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2490/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2490/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2490/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2490/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2490/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2490/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2490/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

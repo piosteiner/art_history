@@ -1,0 +1,82 @@
+public_id: 121484
+name: Giovanni Lanfranco
+given_name: Giovanni
+family_name: Lanfranco
+birth: 1582-02-05
+death: 1647-11-30
+wikidata_id: Q447730
+metadata:
+  sources: [Wikidata Q447730 (retrieved 2026-11-12)]
+relationships:
+  - type: born_in
+    to: place/parma
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q447730
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q447730
+  - type: worked_in
+    to: place/parma
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q447730
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q447730
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q447730
+  - type: worked_in
+    to: place/naples
+    period: 1634/1646
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q447730
+  - type: member_of
+    to: institution/accademia-di-san-luca
+    sources:
+      - accessed: 2026-11-12
+        property: P463
+        wikidata: Q447730
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q447730
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Autoritratto_di_Giovanni_Lanfranco.jpg/1280px-Autoritratto_di_Giovanni_Lanfranco.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Autoritratto_di_Giovanni_Lanfranco.jpg
+    license: Public domain
+    credit: Giovanni Lanfranco
+identifiers:
+  bnf: 12367017m
+  gnd: "119322870"
+  idref: "032688709"
+  kulturnav: 6c8bdd55-72f0-46e7-9bc4-3b2b1caf5dfe
+  lc: n83237456
+  rkd: "47865"
+  ulan: "500022495"
+  viaf: "41918081"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q447730
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q447730

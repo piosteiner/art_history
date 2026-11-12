@@ -1,0 +1,83 @@
+public_id: 120883
+name: Frans Snyders
+given_name: Frans
+family_name: Snyders
+birth: 1579-11-11
+death: 1657-08-19
+wikidata_id: Q29231
+metadata:
+  sources: [Wikidata Q29231 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/spanish-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q29231
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q29231
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q29231
+  - type: worked_in
+    to: place/breda
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q29231
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q29231
+  - type: worked_in
+    to: place/antwerp
+    period: 1593/1607
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q29231
+  - type: worked_in
+    to: place/milan
+    period: 1608/1609
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q29231
+  - type: associated_with
+    to: movement/flemish-baroque-painting
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q29231
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Frans_Snyders_-_Van_Dyck_c._1620.jpg/1280px-Frans_Snyders_-_Van_Dyck_c._1620.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Frans_Snyders_-_Van_Dyck_c._1620.jpg
+    license: Public domain
+    credit: Anthony van Dyck
+identifiers:
+  bnf: 13168612k
+  gnd: "118748602"
+  idref: "035119853"
+  kulturnav: ee51014f-899d-4750-9ba6-fa3f00a96c7b
+  lc: n91006941
+  rkd: "73723"
+  ulan: "500115396"
+  viaf: "2609908"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q29231
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q29231

@@ -1,0 +1,81 @@
+public_id: 120579
+title_lang: fr
+title: Nu au fauteuil
+names:
+  - lang: de
+    role: translation
+    text: Akt im Fauteuil
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2348/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Nude in an Armchair
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2348/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: pierre-auguste-renoir
+created: 1900
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [55.5, 46.5]
+institution: kunsthaus-zurich
+inventory_number: "1405"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2348/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124288353
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/43/Pierre-Auguste_Renoir_-_Nu_au_fauteuil_-_1405_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_Nu_au_fauteuil_-_1405_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+provenance:
+  - owner: person/hans-schuler
+    ended: 1920
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2348/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1920
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2348/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2348/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2348/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2348/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2348/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2348/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2348/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2348/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,198 @@
+public_id: 120874
+title_lang: de
+title: Felshöhle mit Wasserfall
+names:
+  - lang: de
+    role: translation
+    text: Besonnter Felshang mit kleinem Wasserfall und Wettertanne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Cave with Waterfall
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: caspar-wolf
+created: 1776
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [54, 81]
+institution: kunsthaus-zurich
+inventory_number: 1951/0007
+web_url: https://collection.kunsthaus.ch/de/collection/item/3084/
+on_loan: true
+on_loan_since: 1951
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584735
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a2/Caspar_Wolf_-_Felsh%C3%B6hle_mit_Wasserfall_-_1951-0007_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Caspar_Wolf_-_Felsh%C3%B6hle_mit_Wasserfall_-_1951-0007_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Caspar Wolf
+provenance:
+  - owner: person/abraham-wagner
+    acquired: 1776
+    ended: 1782
+    method: commission
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        note: "Footnote: Kat. Kunstmuseum Basel 1980, S. 56; Raeber 1979, S. 93; Jaspers 2009, S. 59."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/gabriel-emanuel-von-may-von-huningen
+    acquired: 1782
+    ended: 1785-08-03
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/rudolf-samuel-henzi
+    acquired: 1785-08-03
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        note: "Footnote: Wie oben Fussnote 2; 1785 veröffentlichte Henzi ein Album mit 42 Schweizer Aquatinta. Er erhielt ausser den Werken von Wolf, den Druckplatten, den bereits fertigen Aquatinta auch die Rechte von von May. (Vgl. Raeber 1979, S. 93)"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/johan-steengracht-van-oostkapelle
+    label: Schloss Keukenhof bei Lisse
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        note: "Footnote: Boerlin-Brodbeck 1980, wie oben Fussnote 2; Gerard Jaspers 2009, wie oben Fussnote 2; Kasteel Keukenhof, Geschiedenis, https://kasteelkeukenhof.nl/nl/kasteel-keukenhof/ (06.11.2023); RKD Netherlands Institute for art history, Johan Steengracht van Oostcapelle, https://rkd.nl/explore/artists/426317 (06.11.2023); Van Oostkapelle kaufte 1809 Schloss Keukenhof bei Lisse, wo das Werk Teil einer Wandtäf…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/cecilia-maria-steengracht-van-oostcapelle
+    acquired: 1846-12-17
+    ended: 1878
+    method: inheritance
+    direct: true
+    label: Schloss Keukenhof bei Lisse
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/cornelie-van-pallandt
+    acquired: 1878
+    ended: 1923
+    method: inheritance
+    direct: true
+    label: Schloss Keukenhof bei Lisse
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        note: "Footnote: Wie oben Fussnote 6. Die Kunstsammlung von Steengracht wurde 1913 in Paris in der Galerie Georges Petit versteigert. Die Werke von Wolf sind jedoch laut Angaben Jaspers und Boerlin-Brodbecks in die Wandtäferung des Schlosses eingebaut worden. In den Auktionskatalogen von 1913 sind keine Werke von Caspar Wolf erfasst (vgl. Auktion Galerie Georges Petite (09. Juni 1913), Galerie Steengracht, Bd. I u…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/jan-maurits-diederik-graf-van-lynden
+    acquired: 1923
+    ended: 1930
+    method: inheritance
+    direct: true
+    label: Schloss Keukenhof bei Lisse
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/jan-maurits-diederik-graf-van-lynden
+    acquired: 1930
+    ended: 1943-10-25
+    method: inheritance
+    direct: true
+    label: Schloss Keukenhof bei Lisse
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/douwes-fine-art-ltd
+    role: dealer
+    acquired: 1943-10-25
+    ended: 1947
+    method: purchase
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        note: "Footnote: Gerard Jaspers 2009, S. 63-68. Insgesamt kaufte die Galerie Gebr. Douwes 96 Gemälde Caspar Wolfs aus der Slg. Schloss Keukenhof aufgrund der geplanten Übernahme durch deutsche Offiziere für insgesamt 31.000 Gulden an. Willi Raeber wollte sie ankaufen, um sie in der Schweiz weiterzuverkaufen, da er von Dr. Hans Schneider-Christ über den Bestand im Schloss Keukenhof informiert wurde. Allerdings konn…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hans-schneider-christ
+    role: agent
+    direct: true
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        note: "Footnote: Dokument zur Herkunft des Werks Siebenbrunnen im Simmental mit Ammertenhorn u. Rätzligletscher. 1777,  Schweizerisches Kunstarchiv, SIK-ISEA Zürich, Nachlass Willi Raeber, HNA 213.6.4 Korrespondenz von W. Raeber; Kat. Kunstmuseum Basel 1980, wie oben Fussnote 2, S. 56; Jaspers 2009, S.63."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-willi-raeber
+    role: dealer
+    acquired: 1947
+    ended: 1951-03
+    method: purchase
+    direct: true
+    place: basel
+    label: inv. no. 4763
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        note: "Footnote: Werkrückseite, Etikette der Galerie Willi Raeber, St. Alban-Anlage 68 / Inventar Nr. 514776 [wohl Verkaufsnummer, da mit Verkaufsjahr 51 beginnend]; Raeber 1979, wie oben Fussnote 2; Jaspers 2009, S. 63-68; Protokoll Nr. 213, Traktandum 14, 15. und 16.03.1951, Eidg. Kommission der Gottfried Keller-Stiftung, Ankauf zum geforderten Preis, Antrag auf Deponierung im Kunsthaus Zürich; Protokoll Nr. 214…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/gottfried-keller-stiftung
+    acquired: 1951
+    method: purchase
+    direct: true
+    place: bern
+    label: GKS966
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        note: "Footnote: Protokoll Nr. 213 und 214 sowie Korrespondenz, Eidg. Kommission der Gottfried Keller-Stiftung, wie oben Fussnote 12; Jahresbericht 1951, hrsg. von Zürcher Kunstgesellschaft 1951, S. 7; Sitzungsprotokoll der Sammlungskommission, 27.04.1951, Archiv ZKG/KHZ, 10.30.10.42a, S. 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: 1979.246.254
+    label: Raeber (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,55 @@
+public_id: 121170
+name: Heinrich Corrodi
+given_name: Heinrich
+family_name: Corrodi
+birth: 1762-04-12
+death: 1833-02-23
+wikidata_id: Q46998759
+metadata:
+  sources: [Wikidata Q46998759 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q46998759
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q46998759
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q46998759
+  - type: worked_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q46998759
+  - type: worked_in
+    to: place/zurich
+    period: 1789/1833
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q46998759
+identifiers:
+  gnd: "135724457"
+  rkd: "123805"
+  sikart: "4029670"
+  viaf: "28296997"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q46998759
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q46998759

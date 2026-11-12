@@ -1,0 +1,102 @@
+public_id: 120431
+title_lang: de
+title: Trauernde Frau
+names:
+  - lang: en
+    role: translation
+    text: Mourning Woman
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1867/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: original
+    text: L'addolorata
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1867/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: giovanni-giacometti
+created: 1916
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [82, 74]
+institution: kunsthaus-zurich
+inventory_number: 1962/0009
+web_url: https://collection.kunsthaus.ch/de/collection/item/1867/
+on_loan: true
+on_loan_since: 1985
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585715
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/54/Giovanni_Giacometti_-_Trauernde_Frau_-_1962-0009_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Giacometti_-_Trauernde_Frau_-_1962-0009_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Giovanni Giacometti
+provenance:
+  - owner: person/bruno-giacometti
+    co_owners: [person/odette-giacometti]
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1867/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1962
+    ended: 1985
+    direct: true
+    place: zurich
+    label: Zürich, Leihgabe der Familie Giacometti
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1867/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission Archiv 10.30.10.42b, 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1985
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1867/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "1916.08"
+    label: Müller/Radlach Giacometti (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1867/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1867/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1867/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1867/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1867/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1867/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1867/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1867/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

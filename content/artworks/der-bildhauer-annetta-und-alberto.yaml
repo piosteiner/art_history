@@ -1,0 +1,95 @@
+public_id: 121202
+title_lang: de
+title: Der Bildhauer. Annetta und Alberto
+names:
+  - lang: en
+    role: translation
+    text: The Sculptor (Annetta and Alberto)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/4863/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Le Sculpteur (Annetta et Alberto)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/4863/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: it
+    role: original
+    text: Lo scultore
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/4863/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: giovanni-giacometti
+created: 1923
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [73.5, 65.5]
+institution: kunsthaus-zurich
+inventory_number: GS 161
+web_url: https://collection.kunsthaus.ch/de/collection/item/4863/
+on_loan: true
+on_loan_since: 1985
+wikidata_id: Q131586732
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e7/Giovanni_Giacometti_-_Der_Bildhauer._Annetta_und_Alberto_-_GS_161_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Giacometti_-_Der_Bildhauer._Annetta_und_Alberto_-_GS_161_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Giovanni Giacometti
+provenance:
+  - owner: person/bruno-giacometti
+    co_owners: [person/odette-giacometti]
+    ended: 1985
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/4863/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 310."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/alberto-giacometti-stiftung
+    acquired: 1985
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/4863/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/4863/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/4863/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/4863/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/4863/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/4863/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/4863/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/4863/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/4863/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

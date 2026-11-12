@@ -1,0 +1,48 @@
+public_id: 120720
+name: Alexander Roche
+given_name: Alexander
+family_name: Roche
+birth: 1861-08-17
+death: 1921-03-10
+wikidata_id: Q281207
+metadata:
+  sources: [Wikidata Q281207 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q281207
+  - type: born_in
+    to: place/glasgow
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q281207
+  - type: died_in
+    to: place/edinburgh
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q281207
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d5/Alexander_Ignatius_Roche.png
+    source_url: https://commons.wikimedia.org/wiki/File:Alexander_Ignatius_Roche.png
+    license: Public domain
+    credit: T and R Annan, Glasgow
+identifiers:
+  dome: "6258"
+  gnd: "1139479156"
+  rkd: "67463"
+  ulan: "500005266"
+  viaf: "95712891"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q281207
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q281207

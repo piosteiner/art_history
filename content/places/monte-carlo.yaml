@@ -1,0 +1,24 @@
+public_id: 120763
+name: Monte-Carlo
+names:
+  - lang: ru
+    role: translation
+    text: Монте-Карло
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q45240
+kind: settlement
+country_code: MC
+location: [7.42524, 43.73894]
+wikidata_id: Q45240
+metadata:
+  sources: [Wikidata Q45240 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q45240
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q45240

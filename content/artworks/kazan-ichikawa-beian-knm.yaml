@@ -7,6 +7,8 @@ medium: Hanging scroll, ink and colour on silk
 materials: [ink, silk]
 dimensions: [129.5, 59]
 institution: kyoto-national-museum
+inventory_number: A甲545
+web_url: https://colbase.nich.go.jp/collection_items/kyohaku/A%E7%94%B2545
 description_md: "A memorial portrait by [[artist/watanabe-kazan]] (1793–1841) of [[person/ichikawa-beian]] (1779–1858), calligrapher and Confucian scholar whom he regarded as a spiritual mentor; laudatory inscriptions were added for Bei’an’s sixtieth birthday. A preliminary sketch survives: informal, with the swelling below the right ear and unfocused eyes, while the finished portrait in court costume and cap uses Western highlights and shadows for the face. Kazan, a samurai of the Tawara clan and student of [[rangaku]], was put under house arrest in 1839 and committed suicide in 1841. [[source/history-of-japanese-art|pp. 341–342, figs. 399–400]]"
 relationships:
   - type: depicts_person
@@ -19,6 +21,18 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 341–342, figs. 399–400
+  - type: designated_as
+    to: term/important-cultural-property-japan
+    notes_md: Kyoto National Museum
+    sources:
+      - url: https://colbase.nich.go.jp/collection_items/kyohaku/A%E7%94%B2545
+        source: colbase
+        accessed: 2026-11-11
+images:
+  - url: https://colbase.nich.go.jp/media/kyohaku/A%E7%94%B2545/image/slideshow_s/100452_difile2-L.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/kyohaku/A%E7%94%B2545
+    license: CC BY 4.0
+    credit: Kyoto National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -41,3 +55,7 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: pp. 341–342, figs. 399–400
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/kyohaku/A%E7%94%B2545
+      source: colbase
+      accessed: 2026-11-11

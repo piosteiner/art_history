@@ -1,0 +1,36 @@
+public_id: 121001
+name: Hans Salomon Ziegler
+given_name: Hans Salomon
+family_name: Ziegler
+birth: 1798-08-27
+death: 1882-03-23
+wikidata_id: Q52154606
+metadata:
+  sources: [Wikidata Q52154606 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q52154606
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q52154606
+identifiers:
+  gnd: "1050532023"
+  rkd: "204193"
+  sikart: "4030889"
+  viaf: "308207438"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q52154606
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q52154606

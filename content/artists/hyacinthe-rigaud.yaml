@@ -1,0 +1,116 @@
+public_id: 120685
+name: Hyacinthe Rigaud
+given_name: Hyacinthe
+family_name: Rigaud
+names:
+  - kind: birth
+    lang: ca
+    role: former
+    text: Jacint Rigau-Ros i Serra
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q49898
+birth: 1659-07-18
+death: 1743-12-29
+wikidata_id: Q49898
+metadata:
+  sources: [Wikidata Q49898 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q49898
+  - type: born_in
+    to: place/perpignan
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q49898
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q49898
+  - type: worked_in
+    to: place/lyon
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q49898
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q49898
+  - type: worked_in
+    to: place/perpignan
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q49898
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q49898
+  - type: influenced_by
+    to: artist/anthony-van-dyck
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q49898
+  - type: student_of
+    to: artist/charles-le-brun
+    sources:
+      - accessed: 2026-11-12
+        property: P1066
+        wikidata: Q49898
+  - type: member_of
+    to: institution/academie-royale-de-peinture-et-de-sculpture
+    period: 1684-08-05
+    period_label: from 5 August 1684
+    sources:
+      - accessed: 2026-11-12
+        property: P463
+        wikidata: Q49898
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q49898
+  - type: associated_with
+    to: movement/baroque-painting
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q49898
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Autoportrait_au_turban_%28Perpignan%29.jpg/1280px-Autoportrait_au_turban_%28Perpignan%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Autoportrait_au_turban_(Perpignan).jpg
+    license: Public domain
+    credit: Hyacinthe Rigaud
+identifiers:
+  bnf: "121510586"
+  dome: "2658"
+  gnd: 11878885X
+  idref: "030004829"
+  kulturnav: 0e306a15-de0a-43d1-9f26-57eaf00b2fcb
+  lc: no91019377
+  rkd: "66892"
+  ulan: "500024827"
+  viaf: "71428427"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q49898
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q49898

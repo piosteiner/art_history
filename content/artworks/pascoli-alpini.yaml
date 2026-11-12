@@ -1,0 +1,186 @@
+public_id: 120083
+title: Pascoli alpini
+names:
+  - lang: it
+    role: translation
+    text: Pascoli alpini di primavera; Accordi; Alpweide
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Alpweiden
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Alpine Pasture
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Pâturages alpestres
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: giovanni-segantini
+created: 1893/1894
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [169, 278]
+institution: kunsthaus-zurich
+inventory_number: 1985/0028
+web_url: https://collection.kunsthaus.ch/de/collection/item/1180/
+wikidata_id: Q131584939
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7f/Giovanni_Segantini_-_Pascoli_alpini_-_1985-0028_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Segantini_-_Pascoli_alpini_-_1985-0028_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Giovanni Segantini
+provenance:
+  - owner: person/magdalena-magda-mautner-von-markhof
+    acquired: 1902 or earlier
+    ended: November 1919 or earlier
+    method: purchase
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+        note: "Footnote: Servaes 1902, S. 126, No. 109; Laut einem Artikel von 1933 war das Gemälde bereits 1897 für eine Ausstellung in Wien und wurde dort durch eine:n Privatsammler:in erworben (Mussio 1933)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/alois-grasmayr
+    acquired: 1913-11
+    ended: November 1919 or earlier
+    direct: true
+    place: salzburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+        note: "Footnote: Brief Julius Bredschneider an Wilhelm Wartmann, 15.01.1922, Archiv ZKG/KHZ, 10.30.30.122; Alois Grasmayr und Magdalena Mautner von Markhof heirateten im November 1913."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/g-gump
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+        note: "Footnote: Wie oben Fussnote 5; Brief Wilhelm Wartmann an Julius Bredschneider, 25.01.1922, Archiv ZKG/KHZ, 10.30.20.37, S. 202."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown
+    method: purchase
+    direct: true
+    place: zurich
+    label: Salon Bollag (Galerie); dated Frühling 1920 – mindestens bis 24.3.1922
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+        note: "Footnote: Brief Julius Bredscheid an Wilhelm Wartmann, 21.02.1922, Archiv ZKG/KHZ, 10.30.30.122; Brief Hedwig Servert (Kunsthaus Zürich) an Julius Bredschneider, 24.03.1922, Archiv ZKG/KHZ, 10.30.20.37, S. 494."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown
+    acquired: 1922-08-25 or earlier
+    ended: 1933-04-02 or earlier
+    place: united-states
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+        note: "Footnote: «I pascoli» di Segantini esposti a Palazzo Marino, in: Corriere Milanese (Corriere della Sera), 31.03.1933, Jahrgang XI, S. 7. Sitzungsprotokoll der Sammlungskommission, 25.08.1922 I. b), Archiv ZKG/KHZ, 10.30.10.40; Aus dem Protokoll geht lediglich hervor, dass Segantinis Alpweide (identifiziert als Servaes Abb. 37) für USD 30.000 angeboten wurde. Die Preisangabe in USD legt eine Verbindung in di…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+        note: "Footnote: Das Gemälde war im April 1933 für einige Zeit im Palazzo Marino in Mailand ausgestellt. Im April 1933 befand es sich vermutlich im Handel, da Mussios Artikel als Plädoyer verstanden werden kann, dass die Alpweide in eine öffentliche Sammlung in Italien gehören. Es ist unklar, ob sich das Gemälde tatsächlich in einer Privatsammlung in Italien befand."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/g-l-bollag
+    acquired: before 1937
+    ended: 1951
+    place: zurich
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+        note: "Footnote: Ausstellungstext Max G. Bollag, «Saverio Terruso», um 1987, ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/marcel-nyffeler
+    acquired: 1951 or later
+    ended: 1957
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+        note: "Footnote: Vermutlich erwarb Marcel Nyffeler das Gemälde 1951 im Salon Bollag, was jedoch nicht belegt ist. Sein Eigentum ist durch die Leihgabe des Werks für die Segantini-Ausstellung von 1956 im  Kunstmuseum St. Gallen nachgewiesen; E-Mail-Korrespondenz Laura Feurle (Kunstmuseum St. Gallen), 19.08.2025."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Nyffeler collection
+    acquired: 1957-12-23
+    ended: 1985
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 11.03.1985 3.c., Archiv ZKG/KHZ, 10.30.10.42b."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    acquired: 1985-03
+    ended: 1985-04
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+        note: "Footnote: Lieferschein Welti-Furrer AG Kunsttransporte, 10.07.1985, ZKG/KHZ, Werkdokument Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1985
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.289.371
+    label: Quinsac 1982 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

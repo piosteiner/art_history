@@ -1,0 +1,22 @@
+public_id: 120459
+name: Adliswil
+kind: settlement
+parent: canton-of-zurich
+country_code: CH
+location: [8.52556, 47.31222]
+wikidata_id: Q68210
+metadata:
+  sources: [Wikidata Q68210 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q68210
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q68210
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q68210

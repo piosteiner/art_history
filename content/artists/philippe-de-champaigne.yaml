@@ -1,0 +1,87 @@
+public_id: 121481
+name: Philippe de  Champaigne
+given_name: Philippe
+family_name: de Champaigne
+birth: 1602-05-26
+death: 1674-08-12
+wikidata_id: Q314814
+metadata:
+  sources: [Wikidata Q314814 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q314814
+  - type: nationality
+    to: polity/southern-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q314814
+  - type: born_in
+    to: place/brussels
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q314814
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q314814
+  - type: worked_in
+    to: place/brussels
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q314814
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q314814
+  - type: student_of
+    to: artist/jacques-fouquier
+    sources:
+      - accessed: 2026-11-12
+        property: P1066
+        wikidata: Q314814
+  - type: member_of
+    to: institution/academie-royale-de-peinture-et-de-sculpture
+    sources:
+      - accessed: 2026-11-12
+        property: P463
+        wikidata: Q314814
+  - type: associated_with
+    to: movement/baroque-painting
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q314814
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/11/Philippe_de_Champaigne.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Philippe_de_Champaigne.jpg
+    license: Public domain
+    credit: After Philippe de Champaigne
+identifiers:
+  bnf: 12263241w
+  gnd: "119233096"
+  idref: "031413668"
+  kulturnav: dc23f3cd-2d7b-45d9-8bc3-68b2cc2c9729
+  lc: n86871334
+  rkd: "16305"
+  ulan: "500115355"
+  viaf: "4917729"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q314814
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q314814

@@ -1,0 +1,44 @@
+public_id: 120789
+name: Francesco Galli
+given_name: Francesco
+family_name: Galli
+birth: 1470
+death: 1501-08-21
+wikidata_id: Q3081033
+metadata:
+  sources: [Wikidata Q3081033 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q3081033
+  - type: born_in
+    to: place/naples
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q3081033
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q3081033
+identifiers:
+  gnd: "124943063"
+  kulturnav: c3681574-35a8-48f4-a93b-201f1380bc27
+  lc: nr92030635
+  rkd: "28931"
+  ulan: "500010305"
+  viaf: "34321854"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q3081033
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q3081033

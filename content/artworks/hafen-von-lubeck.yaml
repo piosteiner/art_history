@@ -1,0 +1,139 @@
+public_id: 120479
+title_lang: de
+title: Hafen von Lübeck
+names:
+  - lang: de
+    role: translation
+    text: An der Trave in Lübeck
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: The Harbour of Lübeck
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: translation
+    text: Port de Lübeck
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: edvard-munch
+created: 1907
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [81, 122]
+institution: kunsthaus-zurich
+inventory_number: 1946/0002
+web_url: https://collection.kunsthaus.ch/de/collection/item/2018/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q18891080
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/84/Edvard_Munch_-_Hafen_von_L%C3%BCbeck_-_1946-0002_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_Hafen_von_L%C3%BCbeck_-_1946-0002_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Edvard Munch
+provenance:
+  - owner: artist/edvard-munch
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/paul-cassirer
+    role: dealer
+    acquired: 1907
+    ended: 1910
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+        note: "Footnote: Woll (Vol. II) 2009, S. 741, Nr. 748."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/curt-glaser
+    acquired: 1910
+    ended: 1943-11-23
+    method: purchase
+    direct: true
+    place: berlin
+    label: Berlin and Ascona
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/maria-glaser-ash
+    acquired: 1943-11-23
+    ended: 1946
+    method: inheritance
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/charles-albert-de-burlet
+    role: agent
+    acquired: 1946
+    ended: 1946
+    direct: true
+    place: basel
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+        note: "Footnote: Wie oben Fussnote 2; ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1946
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 8000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.741.748
+    label: Woll (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

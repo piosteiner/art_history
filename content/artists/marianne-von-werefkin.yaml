@@ -1,0 +1,59 @@
+public_id: 121251
+name: Marianne von Werefkin
+given_name: Marianne
+family_name: von Werefkin
+birth: 1860-09-10
+death: 1938-02-06
+wikidata_id: Q464016
+metadata:
+  sources: [Wikidata Q464016 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/russian-empire
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q464016
+  - type: died_in
+    to: place/ascona
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q464016
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q464016
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q464016
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Werefkin%2C_Selbstbildnis_in_Matrosenbluse.jpg/1280px-Werefkin%2C_Selbstbildnis_in_Matrosenbluse.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Werefkin,_Selbstbildnis_in_Matrosenbluse.jpg
+    license: Public domain
+    credit: Marianne von Werefkin
+identifiers:
+  bnf: "137390895"
+  dome: "414"
+  gnd: "118631365"
+  hls: "042860"
+  idref: "030057922"
+  lc: n81092111
+  rkd: "83648"
+  sikart: "4024517"
+  ulan: "500009476"
+  viaf: "12484403"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q464016
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q464016

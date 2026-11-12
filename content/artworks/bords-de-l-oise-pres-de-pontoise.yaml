@@ -1,0 +1,152 @@
+public_id: 120553
+title_lang: fr
+title: Bords de l'Oise près de Pontoise
+names:
+  - lang: en
+    role: translation
+    text: Bords de L'Oise, temps clair, Pontoise / Banks of the Oise, Clear Weather, Pontoise
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: translation
+    text: Am Ufer der Oise bei Pontoise
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Banks of the Oise
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: original
+    text: Bords de l'Oise
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: camille-pissarro
+created: 1877
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [38, 55]
+institution: kunsthaus-zurich
+inventory_number: 1984/0013
+web_url: https://collection.kunsthaus.ch/de/collection/item/2267/
+wikidata_id: Q124288346
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/eb/Camille_Pissarro_-_Bords_de_l%27Oise_pr%C3%A8s_de_Pontoise_-_1984-0013_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Camille_Pissarro_-_Bords_de_l%27Oise_pr%C3%A8s_de_Pontoise_-_1984-0013_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Camille Pissarro
+provenance:
+  - owner: person/eugene-murer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+        note: "Footnote: Pissarro/Venturi 1939, Bd. I, No. 403, S. 137."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/american-art-association
+    role: agent
+    acquired: 1924-02-20
+    ended: 1924-02-21
+    method: auction
+    place: new-york-city
+    label: Lot 66; Sammlung Josiah Bradlee und Henry Smith
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/georges-viau
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+        note: "Footnote: Wie oben Fussnote 3: «Dr. G. Viau»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/l
+    acquired: 1939 or earlier
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-charpentier
+    role: agent
+    acquired: 1959-03-18
+    ended: 1959-03-18
+    method: auction
+    place: paris
+    label: Lot 64
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+        note: "Footnote: Pissarro/Durand-Ruel Snollaerts 2005, Bd. II, No. 512, S. 360, https://view.publitas.com/wildenstein-plattner-institute-ol46yv9z6qv6/c-r_camille_pissarro_volume_ii_wildenstein_institute/page/372-373 (26.08.2025)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: the art trade
+    place: united-states
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+        note: "Footnote: Wie oben Fussnote 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/johanna-wolf
+    co_owners: [person/walter-l-wolf]
+    ended: 1984-01-20
+    method: purchase
+    direct: true
+    place: adliswil
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+        note: "Footnote: Wie oben Fussnote 3; Öffentliche letztwillige Verfügung, Johanna Wolf geb. Heilbronner, Zürich, datiert auf den 20.01.1984, ZKG/KHZ, Depotdokumente. Walter L. Wolf verstarb 1981, seine Frau Johanna Wolf geb. Heilbronner verstarb am 23.12.1983 und vermachte dieses Werk als Teil der «Johanna und Walter L. Wolf Sammlung» dem Kunsthaus Zürich."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1984-01-20
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.360.512
+    label: Pissarro/Durand-Ruel Snollaerts 2005 (catalogue raisonné)
+  - number: I.137.403.
+    label: Pissarro/Venturi 1939 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2267/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

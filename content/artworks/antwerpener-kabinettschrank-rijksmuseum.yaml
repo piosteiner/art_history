@@ -9,6 +9,8 @@ materials: [oak, ebony, silver]
 dimensions: [159]
 dimensions_note: Höhe 159 cm, Breite 109 cm
 institution: rijksmuseum
+inventory_number: BK-NM-11906-1
+web_url: https://www.rijksmuseum.nl/en/collection/BK-NM-11906-1
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/8/89/Kunstkast%2C_beschilderd_met_mythologische_voorstellingen%2C_BK-NM-11906-1.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Kunstkast,_beschilderd_met_mythologische_voorstellingen,_BK-NM-11906-1.jpg
@@ -36,3 +38,7 @@ sources:
   title_status:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 11 (12.12.2024)
+  inventory_number:
+    - url: https://www.rijksmuseum.nl/en/collection/BK-NM-11906-1
+      source: rijksmuseum-nl
+      accessed: 2026-11-11

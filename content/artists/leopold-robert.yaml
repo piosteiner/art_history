@@ -1,0 +1,86 @@
+public_id: 121274
+name: Léopold Robert
+given_name: Léopold
+family_name: Robert
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Louis Léopold Robert
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q664602
+birth: 1794-05-13
+death: 1835-03-20
+wikidata_id: Q664602
+metadata:
+  sources: [Wikidata Q664602 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q664602
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q664602
+  - type: worked_in
+    to: place/rome
+    period: 1818/1831
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q664602
+  - type: student_of
+    to: artist/edouard-girardet
+    sources:
+      - accessed: 2026-11-12
+        property: P802
+        wikidata: Q1287565
+  - type: student_of
+    to: artist/jacques-louis-david
+    sources:
+      - accessed: 2026-11-12
+        property: P1066
+        wikidata: Q664602
+  - type: member_of
+    to: institution/academy-of-arts-berlin
+    sources:
+      - accessed: 2026-11-12
+        property: P463
+        wikidata: Q664602
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q664602
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/71/Aur%C3%A8le_Robert_-_L%C3%A9opold_Robert.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Aur%C3%A8le_Robert_-_L%C3%A9opold_Robert.jpg
+    license: Public domain
+    credit: Aurèle Robert
+identifiers:
+  bnf: "119626963"
+  gnd: "118975722"
+  hls: "021961"
+  idref: "027626733"
+  kulturnav: 94913abf-9d48-40b2-ac01-e45d4e5916ea
+  lc: n83181009
+  rkd: "67284"
+  sikart: "4022835"
+  ulan: "500027324"
+  viaf: "12574309"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q664602
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q664602

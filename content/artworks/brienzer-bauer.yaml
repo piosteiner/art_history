@@ -1,0 +1,77 @@
+public_id: 120476
+title: Brienzer Bauer
+names:
+  - lang: null
+    role: translation
+    text: Brienzer Bauer beim Wein
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/201/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: max-buri
+created: 1905
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [55, 38]
+institution: kunsthaus-zurich
+inventory_number: "1068"
+web_url: https://collection.kunsthaus.ch/de/collection/item/201/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131587025
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ef/Max_Buri_-_Brienzer_Bauer_-_1068_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Max_Buri_-_Brienzer_Bauer_-_1068_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Max Buri
+provenance:
+  - owner: person/paul-linder
+    ended: 1915
+    direct: true
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/201/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1915
+    method: purchase
+    direct: true
+    place: zurich
+    label: «Kauf aus der Gedächtnisausstellung Max Buri im Kunsthaus Zürich»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/201/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "[39]"
+    label: Graber (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/201/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/201/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/201/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/201/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/201/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/201/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/201/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

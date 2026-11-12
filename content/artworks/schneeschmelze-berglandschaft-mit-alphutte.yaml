@@ -1,0 +1,92 @@
+public_id: 121544
+title_lang: de
+title: Schneeschmelze. Berglandschaft mit Alphütte
+names:
+  - lang: de
+    role: translation
+    text: Berglandschaft mit Alphütte bei Frauenkirch (Schneeschmelze)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/784/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Thaw (Mountain Landscape with Cabin)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/784/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ernst-ludwig-kirchner
+created: 1922
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [80, 90.5]
+institution: kunsthaus-zurich
+inventory_number: 1953/0012
+web_url: https://collection.kunsthaus.ch/de/collection/item/784/
+wikidata_id: Q131585006
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/34/Ernst_Ludwig_Kirchner_-_Schneeschmelze._Berglandschaft_mit_Alph%C3%BCtte_-_1953-0012_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ernst_Ludwig_Kirchner_-_Schneeschmelze._Berglandschaft_mit_Alph%C3%BCtte_-_1953-0012_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ernst Ludwig Kirchner
+provenance:
+  - owner: person/jakob-bosshart
+    ended: 1924 or earlier
+    direct: true
+    place: davos
+    label: Clavadel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/784/
+        note: "Footnote: Gordon 1968, S. 377, No. 712."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/elsa-bosshart-forrer
+    acquired: 1924 or earlier
+    ended: 1953
+    method: inheritance
+    direct: true
+    place: wadenswil
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/784/
+        note: 'Footnote: Jahresbericht 1953, hrsg. von Zürcher Kunstgesellschaft, 1954, S. 5: "Von der verstobenen Frau Professor Bosshart, Witwe des Dichters Jakob Bosshart, erhielt die Sammlung eine Anzahl Werke von Ernst Ludwig Kirchner, mit dem die Verstorbene freundschaftlich verbunden war."'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1953
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/784/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/784/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/784/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/784/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/784/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/784/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/784/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/784/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

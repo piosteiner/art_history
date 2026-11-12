@@ -1,0 +1,143 @@
+public_id: 120278
+title: Abendruhe
+names:
+  - lang: null
+    role: translation
+    text: Evening Calm
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Silence du soir
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: c. 1901
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [55.5, 46.5]
+institution: kunsthaus-zurich
+inventory_number: 1996/0004
+web_url: https://collection.kunsthaus.ch/de/collection/item/1615/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586096
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fb/Ferdinand_Hodler_-_Abendruhe_-_1996-0004_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Abendruhe_-_1996-0004_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/david-schmidt
+    ended: 1912
+    direct: true
+    place: geneva
+    label: Nr. 22; Genf, Nachlassinventar 1912
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+        note: "Footnote: Werkverzeichnis Bätschmann/Müller 2017 III.1325, http://www.ferdinand-hodler.ch/Werke.aspx?id=9905390 [Zugriff: 06.01.2022]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/albert-schmidt
+    acquired: 1912
+    ended: 1921 or later
+    method: inheritance
+    direct: true
+    place: geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+        note: "Footnote: Werkverzeichnis Bätschmann/Müller 2017, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/thomas-roffler
+    acquired: 1926 or earlier
+    ended: 1930
+    place: winterthur
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+        note: "Footnote: Werkverzeichnis Bätschmann/Müller 2017, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/lina-dandliker-roffler
+    acquired: 1930
+    ended: 1953 or later
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+        note: "Footnote: Werkverzeichnis Bätschmann/Müller 2017, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/enrico-peyer
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+        note: "Footnote: Werkverzeichnis Bätschmann/Müller 2017, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/rudolf-wismer-meng
+    acquired: 1964 or earlier
+    ended: 1996
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+        note: "Footnote: Werkverzeichnis Bätschmann/Müller 2017, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/rolf-wismer
+    acquired: 1996
+    ended: 1996
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+        note: "Footnote: Zürcher Kunstgesellschaft 1996 Jahresbericht, S.8 (KH BIB Per 374)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1996
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.1325
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

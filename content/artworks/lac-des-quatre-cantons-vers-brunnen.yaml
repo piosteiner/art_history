@@ -1,0 +1,97 @@
+public_id: 121311
+title: Lac des Quatre-Cantons, vers Brunnen
+names:
+  - lang: de
+    role: translation
+    text: Bei Brunnen am Vierwaldstättersee
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/611/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Near Brunnen at the Lake Lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/611/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: alexandre-calame
+created: 1856
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [64, 87]
+institution: kunsthaus-zurich
+inventory_number: "480"
+web_url: https://collection.kunsthaus.ch/de/collection/item/611/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586611
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d2/Alexandre_Calame_-_Lac_des_Quatre-Cantons%2C_vers_Brunnen_-_480_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Alexandre_Calame_-_Lac_des_Quatre-Cantons,_vers_Brunnen_-_480_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Alexandre Calame
+provenance:
+  - owner_label: Colonel Teploss
+    method: commission
+    direct: true
+    place: saint-petersburg
+    label: painted for him
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/611/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hugo-franz-altgraf-zu-salm-reifferscheidt-raitz
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/611/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Fleischmann
+    role: agent
+    acquired: 1888-09-11
+    ended: 1888-09-12
+    method: auction
+    direct: true
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/611/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1888
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/611/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/611/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/611/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/611/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/611/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/611/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/611/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/611/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

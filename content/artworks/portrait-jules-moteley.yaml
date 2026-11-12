@@ -1,0 +1,112 @@
+public_id: 121415
+title: Portrait Jules Moteley
+names:
+  - lang: de
+    role: translation
+    text: Bildnis Jules Moteley
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7139/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: felix-vallotton
+created: 1886
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [45.5, 37.5]
+institution: kunsthaus-zurich
+inventory_number: 2011/0040
+web_url: https://collection.kunsthaus.ch/de/collection/item/7139/
+wikidata_id: Q124288386
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4e/F%C3%A9lix_Vallotton_-_Portrait_Jules_Moteley_-_2011-0040_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Vallotton_-_Portrait_Jules_Moteley_-_2011-0040_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Félix Vallotton
+provenance:
+  - owner: institution/galerie-sullerot
+    role: dealer
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7139/
+        note: "Footnote: Werkverzeichnis Ducrey 2005 II.18.25."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/salle-de-vente-rosset
+    role: agent
+    acquired: 1974-03-27
+    ended: 1974-03-27
+    method: auction
+    place: geneva
+    label: Lot 126; repr.
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7139/
+        note: 'Footnote: Wie oben Fussnote 3: "Vente Me Rosset, Genève 27.03.1974, no 126, repr.".'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1975-11-11
+    ended: 1975-11-15
+    method: auction
+    place: lucerne
+    label: Lot 2084a
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7139/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7139/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/artcurial
+    role: agent
+    ended: 2011
+    method: auction
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7139/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2011
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7139/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.18.25
+    label: Ducrey 2005 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7139/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7139/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7139/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7139/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7139/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7139/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7139/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

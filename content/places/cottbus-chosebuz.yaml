@@ -1,0 +1,47 @@
+public_id: 120375
+name: Cottbus - Chóśebuz
+names:
+  - lang: ja
+    role: translation
+    text: コトブス
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q3214
+  - lang: ko
+    role: translation
+    text: 콧부스
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q3214
+  - lang: fr
+    role: translation
+    text: Cottbus
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q3214
+  - lang: ru
+    role: translation
+    text: Котбус
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q3214
+kind: settlement
+parent: brandenburg
+country_code: DE
+location: [14.33186, 51.76081]
+wikidata_id: Q3214
+metadata:
+  sources: [Wikidata Q3214 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q3214
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q3214
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q3214

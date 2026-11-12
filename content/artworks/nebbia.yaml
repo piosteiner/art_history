@@ -1,0 +1,107 @@
+public_id: 120270
+title: Nebbia
+names:
+  - lang: null
+    role: translation
+    text: Winternebel, Maloja
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1574/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Winter in Maloja
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1574/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Brouillard hivernal à la Maloja
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1574/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: former
+    text: Winter in Maloja
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1574/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: giovanni-giacometti
+created: 1910
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [101, 111]
+institution: kunsthaus-zurich
+inventory_number: 1962/0007
+web_url: https://collection.kunsthaus.ch/de/collection/item/1574/
+on_loan: true
+on_loan_since: 1962
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586508
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fb/Giovanni_Giacometti_-_Nebbia_-_1962-0007_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Giacometti_-_Nebbia_-_1962-0007_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Giovanni Giacometti
+provenance:
+  - owner: artist/giovanni-giacometti
+    role: estate
+    acquired: 1933
+    ended: 1978
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1574/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 309."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1978
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1574/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "1910.53"
+    label: Müller/Radlach Giacometti (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1574/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1574/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1574/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1574/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1574/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1574/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1574/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1574/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

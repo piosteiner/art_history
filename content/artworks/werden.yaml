@@ -1,0 +1,85 @@
+public_id: 120307
+title: Werden
+names:
+  - lang: null
+    role: translation
+    text: Genesis
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1690/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Devenir
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1690/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: augusto-giacometti
+created: 1919
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [105, 105]
+institution: kunsthaus-zurich
+inventory_number: 1980/0022
+web_url: https://collection.kunsthaus.ch/de/collection/item/1690/
+on_loan: true
+on_loan_since: 1980
+wikidata_id: Q131585450
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/da/Augusto_Giacometti_-_Werden_-_1980-0022_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Augusto_Giacometti_-_Werden_-_1980-0022_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Augusto Giacometti
+provenance:
+  - owner: institution/galerie-nathan
+    role: dealer
+    ended: 1980
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1690/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1980
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1690/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1690/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1690/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1690/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1690/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1690/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1690/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1690/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1690/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

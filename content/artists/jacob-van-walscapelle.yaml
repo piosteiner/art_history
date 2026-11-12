@@ -1,0 +1,54 @@
+public_id: 121452
+name: Jacob van Walscapelle
+given_name: Jacob
+family_name: van Walscapelle
+birth: 1644-05
+death: 1727-08-16
+wikidata_id: Q6119594
+metadata:
+  sources: [Wikidata Q6119594 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q6119594
+  - type: born_in
+    to: place/dordrecht
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q6119594
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q6119594
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q6119594
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Still_Life_with_Fruit_A16418.jpg/1280px-Still_Life_with_Fruit_A16418.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Still_Life_with_Fruit_A16418.jpg
+    license: Public domain
+    credit: Jacob van Walscapelle
+identifiers:
+  bnf: 14966646x
+  gnd: "124510167"
+  rkd: "82722"
+  ulan: "500020293"
+  viaf: "69201862"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q6119594
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q6119594

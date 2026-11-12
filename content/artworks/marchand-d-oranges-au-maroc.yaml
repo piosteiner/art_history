@@ -1,0 +1,210 @@
+public_id: 120990
+title_lang: fr
+title: Marchand d’oranges au Maroc
+names:
+  - lang: de
+    role: translation
+    text: Orangenverkäufer in Marokko
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Orange Seller in Morocco
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Vendeur d’oranges au Maroc
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: eugene-delacroix
+created: 1852/1853
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [27.5, 35.5]
+institution: kunsthaus-zurich
+inventory_number: "2475"
+web_url: https://collection.kunsthaus.ch/de/collection/item/342/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124288367
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/05/Delacroix_-_Marchand_d%E2%80%99oranges_au_Maroc%2C_1852-1853.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Delacroix_-_Marchand_d%E2%80%99oranges_au_Maroc,_1852-1853.jpg
+    license: Public domain
+    credit: Eugène Delacroix
+provenance:
+  - owner_label: Weill
+    role: dealer
+    acquired: 1853-06-28
+    method: purchase
+    direct: true
+    label: «vom Künstler»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        note: "Footnote: Johnson 1986, Bd. III, No. 392, S. 199; Joubin 1932, S. 502."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/caroline-tattet
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        note: "Footnote: Johnson 1986, wie oben Fussnote 2; Kat. Musée de l‘Orangerie 1933, No. 176, S. 102/103."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Mme F.
+    ended: 1892-05-11
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1892-05-11
+    ended: 1892-05-11
+    method: auction
+    direct: true
+    place: paris
+    label: «Versteigerung des Nachlasses von Mme F.»; Lot 32
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown (collector)
+    acquired: 1892-05-11
+    method: purchase
+    direct: true
+    price:
+      amount: 5800
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/gustave-tempelaere
+    role: dealer
+    acquired: 1897-04
+    place: paris
+    label: inv. no. wohl 3426
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        note: "Footnote: Wie oben Fussnote 3; Handschriftliche Nummer auf der Werkrückseite."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/edouard-martel
+    method: purchase
+    direct: true
+    price:
+      amount: 6790
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        note: "Footnote: Johnson 1986, wie oben Fussnote 2. Wahrscheinlich handelt es sich hierbei um den französischen Politiker Edouard Martell *17.02.1834, Cognac (Charente - France), +20.07.1920 Paris), der auch als Sammler tätig war."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/gustave-tempelaere
+    role: dealer
+    ended: 1899-01-07
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        note: "Footnote: Johnson 1986, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1899-01-07
+    ended: 1899-01-24
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        note: "Footnote: Johnson 1986, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-georges-petit
+    role: dealer
+    acquired: 1899-01-24
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        note: "Footnote: Johnson 1986, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/pierre-peytel
+    acquired: June 1930 or earlier
+    ended: 1939-04-20
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        note: "Footnote: Ausstellungsetikette von 1930 auf der Werkrückseite; Sitzungsprotokoll des Vorstands, 20.04.1939, 1a, Archiv ZKG/KHZ, 10.30.10.12; Johnson 1986, wie oben Fussnote 2; Kat. Kunsthaus Zürich 1939, No. 320, S. 50, https://digital.kunsthaus.ch/viewer/image/45038/1/ (21.09.2026); Kat. Musée de l‘Orangerie 1933, wie oben Fussnote 4; Kat. Musée du Louvre 1930, No. 61, S. 60."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/carl-montag
+    role: agent
+    acquired: 1938-01-04
+    ended: 1939-04-20
+    direct: true
+    place: meudon
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        note: "Footnote: Briefe Charles Montag an Wilhelm Wartmann, 04.01.1938 und 20.02.1939; Archiv ZKG/KHZ, Eingehende Korrespondenz Ausstellungen Verschiedenes, 10.30.30.18; Sitzungsprotokoll des Vorstands, wie oben Fussnote 17."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1939-04-20
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 110000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        note: "Footnote: Sitzungsprotokoll des Vorstands, wie oben Fussnote 17; Sitzungsprotokoll des Vorstands, 07.12.1939, Archiv ZKG/KHZ, 10.30.10.12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.199.392
+    label: Johnson 1981 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

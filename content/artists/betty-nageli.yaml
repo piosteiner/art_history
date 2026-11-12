@@ -1,0 +1,41 @@
+public_id: 120728
+name: Betty Nägeli
+given_name: Betty
+family_name: Nägeli
+birth: 1854-08-03
+death: 1947-02-12
+wikidata_id: Q85100706
+metadata:
+  sources: [Wikidata Q85100706 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q85100706
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q85100706
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q85100706
+identifiers:
+  gnd: "138672784"
+  sikart: "4027699"
+  viaf: "90937469"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q85100706
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q85100706

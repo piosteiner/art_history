@@ -1,0 +1,44 @@
+public_id: 121402
+name: Robert van den Hoecke
+given_name: Robert
+family_name: van den Hoecke
+birth: 1622-11-30
+death: 1668
+wikidata_id: Q350590
+metadata:
+  sources: [Wikidata Q350590 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q350590
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q350590
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Gonzales_Coques_-_Sight_%28Portrait_of_Robert_van_den_Hoecke%29.tiff/lossy-page1-500px-Gonzales_Coques_-_Sight_%28Portrait_of_Robert_van_den_Hoecke%29.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gonzales_Coques_-_Sight_(Portrait_of_Robert_van_den_Hoecke).tiff
+    license: Public domain
+    credit: Gonzales Coques
+identifiers:
+  bnf: "149665726"
+  gnd: "138850089"
+  kulturnav: 70e782a1-9f6a-44f7-9bdf-89d0809c771e
+  lc: no2015127034
+  rkd: "38711"
+  ulan: "500025996"
+  viaf: "49495831"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q350590
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q350590

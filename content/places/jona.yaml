@@ -1,0 +1,22 @@
+public_id: 121178
+name: Jona
+kind: settlement
+parent: switzerland
+country_code: CH
+location: [8.83333, 47.21639]
+wikidata_id: Q669350
+metadata:
+  sources: [Wikidata Q669350 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q669350
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q669350
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q669350

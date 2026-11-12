@@ -1,0 +1,53 @@
+public_id: 120830
+name: Edouard Vallet
+given_name: Edouard
+family_name: Vallet
+birth: 1876-01-12
+death: 1929-05-01
+wikidata_id: Q3580056
+metadata:
+  sources: [Wikidata Q3580056 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q3580056
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q3580056
+  - type: born_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q3580056
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/08/Autoportrait_au_tableau%2C_1919.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Autoportrait_au_tableau,_1919.jpg
+    license: Public domain
+    credit: Edouard Vallet
+identifiers:
+  bnf: 13771855z
+  dome: "3282"
+  gnd: "118803794"
+  hls: "022112"
+  idref: "059086610"
+  lc: n97101406
+  rkd: "79094"
+  sikart: "4023429"
+  ulan: "500019346"
+  viaf: "59266880"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q3580056
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q3580056

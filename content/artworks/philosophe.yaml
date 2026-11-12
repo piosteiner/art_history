@@ -1,0 +1,63 @@
+public_id: 121451
+title: Philosophe
+names:
+  - lang: null
+    role: translation
+    text: Philosopher
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7344/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: samuel-hofmann
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [77.5, 64]
+institution: kunsthaus-zurich
+inventory_number: ZKG.2016/0001
+web_url: https://collection.kunsthaus.ch/de/collection/item/7344/
+wikidata_id: Q131585634
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c4/Samuel_Hofmann_-_Philosophe_-_ZKG.2016-0001_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Samuel_Hofmann_-_Philosophe_-_ZKG.2016-0001_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Samuel Hoffmann
+provenance:
+  - owner_label: private collection
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7344/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2016
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7344/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7344/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7344/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7344/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7344/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7344/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7344/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

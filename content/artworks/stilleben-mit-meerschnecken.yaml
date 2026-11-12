@@ -1,0 +1,139 @@
+public_id: 120660
+title_lang: de
+title: Stilleben mit Meerschnecken
+names:
+  - lang: en
+    role: translation
+    text: Still Life with Shells
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2554/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Nature morte aux coquillages
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2554/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: jacques-linard
+created: 1638
+kind: oil painting
+medium: Öl auf Eichenholz
+dimensions: [23.2, 31.6]
+institution: kunsthaus-zurich
+inventory_number: 1999/0007
+web_url: https://collection.kunsthaus.ch/de/collection/item/2554/
+wikidata_id: Q124288356
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a6/Jacques_Linard_-_Stilleben_mit_Meerschnecken_-_1999-0007_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jacques_Linard_-_Stilleben_mit_Meerschnecken_-_1999-0007_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jacques Linard
+provenance:
+  - owner: institution/hotel-drouot
+    acquired: 1982-06-08
+    ended: 1982-06-08
+    place: paris
+    label: Lot 33; als «Stosskopf attr.»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2554/
+        note: "Footnote: Werkverzeichnis Hahn-Woernle 1996 282."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown (collector)
+    acquired: 1982
+    ended: 1982
+    method: purchase
+    direct: true
+    place: geneva
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2554/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/adolphe-stein
+    place: paris
+    label: Paris and Crans
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2554/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/trude-fischer
+    role: dealer
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2554/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1996-11-26
+    ended: 1996-11-26
+    method: auction
+    place: lucerne
+    label: returned; Lot 2017
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2554/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-fischer
+    role: dealer
+    ended: 1999
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2554/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/annette-buhler
+    acquired: 1999
+    ended: 1999
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2554/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1999
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2554/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "170.17"
+    label: Nusbaumer (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2554/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2554/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2554/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2554/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2554/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2554/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2554/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

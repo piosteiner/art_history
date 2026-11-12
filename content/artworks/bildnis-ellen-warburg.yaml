@@ -1,0 +1,121 @@
+public_id: 121291
+title_lang: de
+title: Bildnis Ellen Warburg
+names:
+  - lang: en
+    role: translation
+    text: Portrait of Ellen Warburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5936/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: edvard-munch
+created: 1905
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [180, 100]
+institution: kunsthaus-zurich
+inventory_number: "1462"
+web_url: https://collection.kunsthaus.ch/de/collection/item/5936/
+on_loan: true
+on_loan_since: 1922
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q18889797
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5b/Munch_-_Ellen_Warburg%2C_1905%2C_Woll_622.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Munch_-_Ellen_Warburg,_1905,_Woll_622.jpg
+    license: Public domain
+    credit: Edvard Munch
+provenance:
+  - owner: person/albert-warburg
+    co_owners: [person/gerta-warburg]
+    acquired: 1905
+    ended: 1922
+    method: commission
+    direct: true
+    place: hamburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5936/
+        note: "Footnote: Woll II. S. 644, Nr. 622. Bei Woll ist die Provenienz Gerta Warburg nur bis 1921 angegeben; anders in Archiv ZKG/KHZ, Ausgehende Korrespondenz, 10.30.20.21, siehe Brief Wilhelm Wartmann an Gerta Warburg, 26.05.1922: «Mit den übrigen Hamburger Bilder ist heute auch Ihr Damenbildnis für unsere Munch-Ausstellung eingetroffen, wie wir feststellen durchaus wohlbehalten und unbeschädigt. Wir danken Ihne…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: artist/edvard-munch
+    acquired: 1919
+    ended: 1922
+    method: gift
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5936/
+        note: "Footnote: Woll II S. 644, Nr. 622: Bei Woll wird die Provenienz Edvard Munch nur mit 1921 angegeben; Den Hinweis, dass das Bild 1919 von den Warburgs an Edvard Munch zurückgegeben (geschenkt) wurde, stammt aus der Korrespondenz zwischen Gertrud Wenzel-Burchard (Tochter der Porträtierten, Ellen Warburg) und René Wehrli, Direktor des Kunsthaus Zürich, vgl. ZKG/KHZ, Munch-Ordner, Brief Gertrud Wenzel-Burchard …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/anna-dodeck
+    role: agent
+    acquired: 1921
+    ended: 1921
+    direct: true
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5936/
+        note: "Footnote: Woll II S. 644, Nr. 622; Kat. Kunstsammlungen Chemnitz 1999 Munch in Chemnitz, S. 187: Entstanden im Januar 1905 als Auftragsarbeit von Albert und Gerta Warburg, den Eltern der Dargestellten; durch Vermittlung von Anna Dodeck, Hamburg, seit 23.03.1921 bei Paul Cassirer, Berlin (17814 (bezieht sich auf die Karteiblätter der Galerie Cassirer): «Damenbildnis, Potr. Frau Warburg»; ohne Datum «zurück» …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/alfred-rutschi
+    acquired: 1922-07-11 or earlier
+    ended: 1929-06-17
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5936/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 11.07.1922, Archiv ZKG/KHZ, 10.30.10.40; Sitzungsprotokoll des Vorstands, 13.07,1922, Archiv ZKG/KHZ, 10.30.10.11; Ausgehende Korrespondenz, Brief Wartmann an Alfred Rütschi 12.07.1922: «Die Sammlungs-Kommission hat sich in der gestrigen Sitzung noch einmal in aller Form davon Kenntnis genommen, dass Sie dem Zürcher Kunsthaus das Gemälde «Fräulein W.» Ham…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1929-06-17
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5936/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; Sitzungsprotokoll der Sammlungskommission, 18.06.1929, Archiv ZKG/KHZ, 10.30.10.40, Schenkungen; Sitzungsprotokoll des Vorstands, 28.06.1929, Archiv ZKG/KHZ, 10.30.10.11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.644.622
+    label: Woll (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5936/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5936/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5936/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5936/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5936/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5936/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5936/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5936/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

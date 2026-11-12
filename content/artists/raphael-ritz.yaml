@@ -1,0 +1,41 @@
+public_id: 120508
+name: Raphael Ritz
+given_name: Raphael
+family_name: Ritz
+birth: 1829-01-17
+death: 1894-04-11
+wikidata_id: Q3419516
+metadata:
+  sources: [Wikidata Q3419516 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q3419516
+  - type: studied_at
+    to: institution/kunstakademie-dusseldorf
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q3419516
+identifiers:
+  bnf: "133203470"
+  gnd: "121592863"
+  hls: "022095"
+  idref: "135671760"
+  lc: n81119001
+  rkd: "126449"
+  sikart: "4022945"
+  ulan: "500088120"
+  viaf: "7532462"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q3419516
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q3419516

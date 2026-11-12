@@ -1,0 +1,115 @@
+public_id: 120781
+name: August Macke
+given_name: August
+family_name: Macke
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: August Robert Ludwig Macke
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q33981
+birth: 1887-01-03
+death: 1914-09-26
+wikidata_id: Q33981
+metadata:
+  sources: [Wikidata Q33981 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-prussia
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q33981
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q33981
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q33981
+  - type: worked_in
+    to: place/bonn
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q33981
+  - type: worked_in
+    to: place/dusseldorf
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q33981
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q33981
+  - type: worked_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q33981
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q33981
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q33981
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q33981
+  - type: worked_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q33981
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q33981
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Macke%2C_August_-_Selbstbildnis_1906.jpg/1280px-Macke%2C_August_-_Selbstbildnis_1906.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Macke,_August_-_Selbstbildnis_1906.jpg
+    license: Public domain
+    credit: August Macke
+identifiers:
+  bnf: 11939328v
+  dome: "233"
+  gnd: "118575864"
+  idref: "027326896"
+  kulturnav: 8d65cc99-ecc9-48b3-b453-8cca5cedd5b6
+  lc: n50040893
+  rkd: "51753"
+  sikart: "13231219"
+  ulan: "500007945"
+  viaf: "19686273"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q33981
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q33981

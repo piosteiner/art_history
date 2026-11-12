@@ -1,0 +1,22 @@
+public_id: 120226
+name: Ürikon
+kind: settlement
+parent: canton-of-zurich
+country_code: CH
+location: [8.75, 47.23333]
+wikidata_id: Q7877470
+metadata:
+  sources: [Wikidata Q7877470 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q7877470
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q7877470
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q7877470

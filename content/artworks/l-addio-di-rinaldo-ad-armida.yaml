@@ -1,0 +1,160 @@
+public_id: 121485
+title: L’addio di Rinaldo ad Armida
+names:
+  - lang: de
+    role: translation
+    text: Rinaldos Abschied von Armida
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Rinaldo’s Farewell to Armida
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Les Adieux de Renaud à Armide
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: giovanni-lanfranco
+created: 1614
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [109.2, 178.5]
+institution: kunsthaus-zurich
+inventory_number: 2014/0004
+web_url: https://collection.kunsthaus.ch/de/collection/item/7598/
+wikidata_id: Q131586816
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ed/Giovanni_Lanfranco_-_L%E2%80%99addio_di_Rinaldo_ad_Armida_-_2014-0004_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Lanfranco_-_L%E2%80%99addio_di_Rinaldo_ad_Armida_-_2014-0004_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Giovanni Lanfranco
+provenance:
+  - owner: person/kardinal-giacomo-sannesi
+    direct: true
+    place: rome
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/herzog-francesco-sannesi
+    method: inheritance
+    direct: true
+    place: rome
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/marchese-clemente-sannesi
+    acquired: 1720-05
+    ended: 1720-05
+    method: inheritance
+    direct: true
+    label: erscheint im Inventar Mai 1720
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/herzogin-anna-maria-sannesi
+    acquired: 1724-08
+    ended: 1724-08
+    method: inheritance
+    direct: true
+    label: erscheint im Inventar August 1724
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/marchese-emilio-de-cavalieri
+    direct: true
+    label: posthumes Inventar Januar 1755; ab 1790 erscheint es nicht mehr in den Inventaren
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    place: switzerland
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    place: bologna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/porro-c
+    role: agent
+    acquired: 2004-05-26
+    ended: 2004-05-26
+    method: auction
+    place: milan
+    label: Lot 40 (zurück an Besitzer)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-canesso
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/dr-joseph-scholz-stiftung
+    co_owners: [person/rene-wehrli]
+    acquired: 2014
+    ended: 2014
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2014
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7598/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

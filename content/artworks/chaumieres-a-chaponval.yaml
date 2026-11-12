@@ -1,0 +1,138 @@
+public_id: 120154
+title_lang: fr
+title: Chaumières à Chaponval
+names:
+  - lang: fr
+    role: translation
+    text: Chaumières à Auvers
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: translation
+    text: Strohdächer in Chaponval
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Thatched Sandstone Cottages at Chaponval
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Thatched Roofs at Chaponval
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Chaumières à Auvers
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: vincent-van-gogh
+created: 1890
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [65, 81]
+institution: kunsthaus-zurich
+inventory_number: "1398"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1316/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q26221227
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/85/Vincent_van_Gogh_-_Chaumi%C3%A8res_%C3%A0_Chaponval_-_1398_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Chaumi%C3%A8res_%C3%A0_Chaponval_-_1398_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: person/theo-van-gogh
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/johanna-van-gogh-bonger
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: artist/vincent-van-gogh
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/c-m-van-gogh
+    ended: 1908-07
+    method: inheritance
+    direct: true
+    place: the-hague
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hans-schuler
+    acquired: 1908
+    ended: 1908
+    method: purchase
+    direct: true
+    label: «Kauf aus der Van Gogh-Ausstellung im Künstlerhaus Zürich»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1920
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "2115"
+    label: Hulsker (catalogue raisonné)
+  - number: "780"
+    label: de la Faille (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,39 @@
+public_id: 120337
+name: Daniel Albert Freudweiler
+given_name: Daniel Albert
+family_name: Freudweiler
+birth: 1793-12-18
+death: 1827-04-30
+wikidata_id: Q52123390
+metadata:
+  sources: [Wikidata Q52123390 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q52123390
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q52123390
+identifiers:
+  gnd: "130474045"
+  hls: "022297"
+  lc: no2007149587
+  rkd: "125737"
+  sikart: "4023045"
+  ulan: "500426772"
+  viaf: "18332768"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q52123390
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q52123390

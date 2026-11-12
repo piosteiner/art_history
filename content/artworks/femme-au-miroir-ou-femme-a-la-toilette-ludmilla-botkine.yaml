@@ -1,0 +1,90 @@
+public_id: 120484
+title_lang: fr
+title: Femme au miroir ou Femme à la toilette (Ludmilla Botkine)
+names:
+  - lang: de
+    role: translation
+    text: Frau vor dem Spiegel (Ludmilla Botkine)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/204/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Woman in Front of a Mirror (Ludmilla Botkine)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/204/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: original
+    text: Femme au miroir / Femme à la toilette
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/204/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: alice-bailly
+created: 1918
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [50, 61]
+institution: kunsthaus-zurich
+inventory_number: "1969"
+web_url: https://collection.kunsthaus.ch/de/collection/item/204/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584984
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2c/Alice_Bailly_-_Femme_au_miroir_-_1969_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Alice_Bailly_-_Femme_au_miroir_-_1969_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Alice Bailly
+provenance:
+  - owner: person/hans-mayenfisch
+    ended: 1929
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/204/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 320."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1929
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/204/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/204/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/204/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/204/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/204/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/204/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/204/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/204/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,110 @@
+public_id: 120235
+title_lang: de
+title: Flucht nach Ägypten
+names:
+  - lang: null
+    role: translation
+    text: Flight into Egypt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1510/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: adriaen-isenbrant
+created: 1520/1530
+created_label: c. 1525 (?)
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Eichenholz
+dimensions: [128, 100]
+institution: kunsthaus-zurich
+inventory_number: KS 3
+web_url: https://collection.kunsthaus.ch/de/collection/item/1510/
+on_loan: true
+on_loan_since: 1976
+wikidata_id: Q131585416
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/55/Adriaen_Isenbrant_-_Flucht_nach_%C3%84gypten_-_KS_3_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Adriaen_Isenbrant_-_Flucht_nach_%C3%84gypten_-_KS_3_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Adriaen Isenbrandt
+provenance:
+  - owner: person/wynn-ellis
+    acquired: before 1855
+    ended: 1875
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1510/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1876-05-27
+    ended: 1876-05-27
+    method: auction
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1510/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/gilbert-lewis
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1510/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/w-h-duff-gordon
+    place: aberystwyth
+    label: Harpton Court; Aberystwyth, Radnorshire
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1510/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/betty-koetser
+    co_owners: [person/david-m-koetser]
+    acquired: before 1967
+    ended: 1986
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1510/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/stiftung-betty-und-david-koetser
+    acquired: 1986
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1510/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1510/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1510/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1510/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1510/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1510/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1510/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1510/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1510/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

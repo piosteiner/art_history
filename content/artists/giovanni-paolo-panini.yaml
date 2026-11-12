@@ -1,0 +1,52 @@
+public_id: 120754
+name: Giovanni Paolo Panini
+given_name: Giovanni Paolo
+family_name: Panini
+birth: 1691-06-17
+death: 1765-10-21
+wikidata_id: Q286670
+metadata:
+  sources: [Wikidata Q286670 (retrieved 2026-11-12)]
+relationships:
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q286670
+  - type: worked_in
+    to: place/rome
+    period: 1717/1765
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q286670
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q286670
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c4/Portrait_of_the_painter_Giovanni_Paolo_Pannini_by_Louis-Gabriel_Blanchet.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_the_painter_Giovanni_Paolo_Pannini_by_Louis-Gabriel_Blanchet.jpg
+    license: Public domain
+    credit: Louis-Gabriel Blanchet (1705-1772)
+identifiers:
+  bnf: "149784013"
+  gnd: "119117851"
+  idref: "029138965"
+  kulturnav: c27985f6-2f54-4f58-850d-a521ddc5f4c1
+  lc: n87901560
+  rkd: "61709"
+  ulan: "500018296"
+  viaf: "95793281"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q286670
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q286670

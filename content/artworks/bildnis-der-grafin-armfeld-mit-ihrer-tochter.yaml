@@ -1,0 +1,135 @@
+public_id: 120145
+title_lang: de
+title: Bildnis der Gräfin Armfeld mit ihrer Tochter
+names:
+  - lang: en
+    role: translation
+    text: Portrait of the Countess Armfeld with Her Daughter
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Portrait de Comtesse Armfeld avec sa fille
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Bildnis der Gräfin Hedwig Ulrika Armfeld mit der Erscheinung ihres verstorbenen Töchterchens
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: anton-graff
+created: c. 1793
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [109, 95]
+institution: kunsthaus-zurich
+inventory_number: 1999/0020
+web_url: https://collection.kunsthaus.ch/de/collection/item/1302/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585660
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/24/Anton_Graff_-_Bildnis_der_Gr%C3%A4fin_Armfeld_mit_ihrer_Tochter_-_1999-0020_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Anton_Graff_-_Bildnis_der_Gr%C3%A4fin_Armfeld_mit_ihrer_Tochter_-_1999-0020_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Anton Graff
+provenance:
+  - owner: person/clara-von-raab
+    acquired: 1903 or earlier
+    ended: 1913
+    place: dresden
+    label: née Schäffer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+        note: "Footnote: Waser 1903, S. 45: «bei Frau Clara von Raab geb. Schäffer in Dresden»; Berckenhagen 1967, S. 52, Nr. 24."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/moderne-galerie-heinrich-thannhauser
+    role: dealer
+    ended: 1918-06
+    place: berlin
+    label: Berlin and Luzern and München and New York
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+        note: "Footnote: Böhler re:search http://boehler.zikg.eu, ZI München/Photothek, Archiv Julius Böhler, Karteisystem München, M_18-1123, S. 1-2 (https://boehler.zikg.eu/wisski/navigate/3217/view)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/kunsthandlung-julius-bohler
+    acquired: 1918-06
+    ended: 1918-10-10
+    method: purchase
+    direct: true
+    place: munich
+    label: 15750 Mark
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/walter-boveri
+    acquired: 1918-10-10
+    ended: 1972-03-20
+    method: purchase
+    direct: true
+    label: 27500 Mark; Baden/Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+        note: "Footnote: Wie oben Fussnote 5; Kat. Kunstverein Winterthur 1936, S. 24, Nr. 64: «Herr Dr. W. E. Boveri, Zürich»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1972-03-20
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+        note: "Footnote: Aktennotiz von Christian Klemm, betr. Anton Graff (Bildnis der Gräfin Hedwig Ulrika Armfeld mit der Erscheinung ihres verstorbenen Töchterchens), Öl auf Leinwand, 109 x 95 cm, Nachlass Walter Boveri, 01.10.1996, ZKG/KHZ, Werkdokument Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/annemarie-boveri
+    acquired: 1972-03-20
+    ended: 1990
+    direct: true
+    place: zurich
+    label: née Wydler
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+        note: "Footnote: Wie oben Fussnote 8; Jahresbericht 1999, hrsg. von Zürcher Kunstgesellschaft, 2000, S. 5-6: «Das Bildnis der Gräfin Armfeld mit ihrer Tochter […] von Anton Graff, kam bereits 1990 noch zu Lebzeiten von Annemarie Boveri ins Kunsthaus. Dennoch wurde nachträglich die Zugehörigkeit zum Vermächtnis Annemarie und Walter Boveri angezweifelt. Nun konnte anhand neu zugänglicher Akten die Frage definitiv ge…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,102 @@
+public_id: 121593
+title_lang: de
+title: Der Weg zum Kalvarienberg
+names:
+  - lang: en
+    role: translation
+    text: The Road to Calvary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/851/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: jan-brueghel-the-elder
+created: 1600/1615
+created_label: c. 1605/1610
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Kupfer
+dimensions: [13.2, 18]
+institution: kunsthaus-zurich
+inventory_number: KS 6
+web_url: https://collection.kunsthaus.ch/de/collection/item/851/
+on_loan: true
+on_loan_since: 1981
+wikidata_id: Q131586882
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d7/Jan_Brueghel_%28I%29_-_Der_Weg_zum_Kalvarienberg_-_KS_6_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Jan_Brueghel_(I)_-_Der_Weg_zum_Kalvarienberg_-_KS_6_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jan Brueghel the Elder
+provenance:
+  - owner: person/hans-a-wetzlar
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/851/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/sotheby-mak-van-waay
+    role: agent
+    acquired: 1977-06-09
+    ended: 1977-06-09
+    method: auction
+    place: amsterdam
+    label: Lot 40; an Datzmann für David Koetser
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/851/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/betty-koetser
+    co_owners: [person/david-m-koetser]
+    acquired: 1977-06-09
+    ended: 1986
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/851/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/stiftung-betty-und-david-koetser
+    acquired: 1986
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/851/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "272"
+    label: Ertz 2008 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/851/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/851/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/851/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/851/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/851/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/851/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/851/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/851/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

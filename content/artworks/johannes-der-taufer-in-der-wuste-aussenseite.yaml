@@ -1,0 +1,103 @@
+public_id: 120486
+title_lang: de
+title: Johannes der Täufer in der Wüste (Aussenseite)
+names:
+  - lang: en
+    role: translation
+    text: Saint John the Baptist in the Desert (Outer Panel)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2054/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Saint Jean-Baptiste dans le désert
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2054/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: the-younger-bernese-carnation-master-nelkenmeister
+created: c. 1500
+created_span: uncertain
+kind: painting
+medium: Tempera auf Holz
+dimensions: [109, 126.5]
+institution: kunsthaus-zurich
+inventory_number: 1465.a
+web_url: https://collection.kunsthaus.ch/de/collection/item/2054/
+on_loan: true
+on_loan_since: 1922
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q111842367
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Berner_Nelkenmeister_001.jpg/1280px-Berner_Nelkenmeister_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Berner_Nelkenmeister_001.jpg
+    license: Public domain
+    credit: Berner Nelkenmeister
+provenance:
+  - owner: person/graf-truchsess-von-waldburg-capustigall
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2054/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/richard-wilhelm-ludwig-zu-dohna-schlobitten
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2054/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/johanniter-orden
+    acquired: 1867
+    ended: 1922
+    method: gift
+    direct: true
+    label: Schloss Sonnenburg bei Küstrin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2054/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1922
+    method: purchase
+    direct: true
+    place: zurich
+    label: «Kauf aus der Ausstellung «Gemälde und Skulpturen 1430-1530»»; 1921
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2054/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2054/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2054/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2054/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2054/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2054/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2054/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2054/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2054/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

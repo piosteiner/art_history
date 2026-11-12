@@ -1,0 +1,42 @@
+public_id: 121369
+name: Harmen Loeding
+given_name: Harmen
+family_name: Loeding
+birth: 1627
+death: 1673-01-05
+wikidata_id: Q37765833
+metadata:
+  sources: [Wikidata Q37765833 (retrieved 2026-11-12)]
+relationships:
+  - type: born_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q37765833
+  - type: died_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q37765833
+  - type: worked_in
+    to: place/leiden
+    period: 1664/1673
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q37765833
+identifiers:
+  rkd: "50574"
+  ulan: "500027349"
+  viaf: "95850422"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q37765833
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q37765833

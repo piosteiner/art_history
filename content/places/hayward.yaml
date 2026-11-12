@@ -1,0 +1,47 @@
+public_id: 121320
+name: Hayward
+names:
+  - lang: ja
+    role: translation
+    text: ヘイワード
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q491114
+  - lang: zh
+    role: translation
+    text: 海沃德
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q491114
+  - lang: ko
+    role: translation
+    text: 헤이워드
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q491114
+  - lang: ru
+    role: translation
+    text: Хейвард
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q491114
+kind: settlement
+parent: california
+country_code: US
+location: [-122.08083, 37.66889]
+wikidata_id: Q491114
+metadata:
+  sources: [Wikidata Q491114 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q491114
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q491114
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q491114

@@ -1,0 +1,74 @@
+public_id: 120769
+title_lang: fr
+title: Le Havre, voilier à quai
+names:
+  - lang: null
+    role: translation
+    text: Le Havre, Segelboot am Kai
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2788/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: albert-marquet
+created: 1906
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [33, 41]
+institution: kunsthaus-zurich
+inventory_number: "1404"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2788/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586555
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4a/Albert_Marquet_-_Le_Havre%2C_voilier_%C3%A0_quai_-_1404_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_Marquet_-_Le_Havre,_voilier_%C3%A0_quai_-_1404_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Albert Marquet
+provenance:
+  - owner: person/hans-schuler
+    ended: 1920
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2788/
+        note: "Footnote: Kunsthaus Zürich, Sammlungskatalog, 2007, S. 609."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1920
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2788/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2788/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2788/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2788/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2788/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2788/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2788/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2788/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

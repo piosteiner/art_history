@@ -1,0 +1,57 @@
+public_id: 121361
+name: J. de Vries
+given_name: J.
+family_name: de Vries
+birth: 1631
+death: 1681
+wikidata_id: Q2557532
+metadata:
+  sources: [Wikidata Q2557532 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2557532
+  - type: born_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q2557532
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q2557532
+  - type: worked_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q2557532
+  - type: worked_in
+    to: place/amsterdam
+    period: 1659/1681
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q2557532
+identifiers:
+  bnf: 14959698p
+  gnd: "1051020190"
+  kulturnav: 09791389-9574-468b-a9f3-4dfc7721115b
+  rkd: "82151"
+  ulan: "500018724"
+  viaf: "95796167"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q2557532
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q2557532

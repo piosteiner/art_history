@@ -1,0 +1,150 @@
+public_id: 120589
+title_lang: fr
+title: Le Palais Ducal vu de Saint-Georges Majeur
+names:
+  - lang: de
+    role: translation
+    text: Der Dogenpalast von San Giorgio Maggiore aus gesehen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2364/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: The Palazzo Ducale Seen from San Giorgio Maggiore
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2364/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: claude-monet
+created: 1908
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [65, 100]
+institution: kunsthaus-zurich
+inventory_number: 1995/0004
+web_url: https://collection.kunsthaus.ch/de/collection/item/2364/
+on_loan: true
+on_loan_since: 1974
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124252684
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/10/Claude_Monet_-_Le_Palais_Ducal_vu_de_Saint-Georges_Majeur_-_1995-0004_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Le_Palais_Ducal_vu_de_Saint-Georges_Majeur_-_1995-0004_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: institution/durand-ruel
+    co_owners: [person/bernheim-jeune]
+    role: dealer
+    acquired: 1912-05
+    ended: 1912-12
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2364/
+        note: "Footnote: Wildenstein 1996, IV.818.1751; Isaacson 1978, S. 230, Nr. 135; Kat. Museum of Fine Arts Boston u.a. 1998, Kat.-Nr. 54; Ankaufsdokument Wildenstein, ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/grace-m-edwards
+    acquired: 1912-12-10
+    ended: 1916-03-20
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2364/
+        note: "Footnote: Wie oben Fussnote 2; E-Mail-Korrespondenz Paul-Louis und Flavie Durand-Ruel, 16.12.2025 (freundliche Auskunft von Ellie Retzbach)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/paul-durand-ruel
+    role: dealer
+    acquired: 1916-03-20
+    ended: 1922-02-05
+    method: purchase
+    direct: true
+    price:
+      amount: 24450
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2364/
+        note: "Footnote: E-Mail-Korrespondenz Paul-Louis und Flavie Durand-Ruel, 16.12.2025 (freundliche Auskunft von Ellie Retzbach); Wildenstein 1985, Bd. 4, S. 238, Kat.-Nr. 1751; Ankaufsdokument Wildenstein, ZKG/KHZ, Inventarbogen/Werkdossier Slg.: «Privat collection of Durand-Ruel»; Archiv Arthur Tooth & Sons Ltd., Getty Institute, Consignment book 1938, S. 42, Nr. 2896."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/paul-durand-ruel
+    role: estate
+    acquired: 1922
+    ended: 1950
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2364/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/wildenstein-co
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2364/
+        note: "Footnote: Wie oben Fussnote 2; Kunsthaus Zürich 1995 (Sammlungskatalog), Vorwort."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/walter-haefner
+    acquired: 1965 or later
+    ended: 1995
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2364/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1995
+    method: gift
+    direct: true
+    place: zurich
+    label: anlässlich des 50-jährigen Jubiläums der AMAG; Zürich, Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2364/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: IV.818.1751
+    label: Wildenstein 1996 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2364/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2364/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2364/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2364/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2364/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2364/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2364/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2364/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

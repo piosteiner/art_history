@@ -81,9 +81,6 @@ sources:
       locator: 基本資料
       accessed: 2026-11-06
   created:
-    - accessed: 2026-11-06
-      property: P571
-      wikidata: Q5136665
     - source: npm-gugua-000053
       locator: 基本資料
       accessed: 2026-11-06

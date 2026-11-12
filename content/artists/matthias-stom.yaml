@@ -1,0 +1,44 @@
+public_id: 120984
+name: Matthias Stom
+given_name: Matthias
+family_name: Stom
+birth: c. 1600
+death: 1645/1670
+death_label: c. 17th century
+wikidata_id: Q949627
+metadata:
+  sources: [Wikidata Q949627 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q949627
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q949627
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e9/Matthias_Stom_-_Saint_Sebastian%2C_possibly_a_self-portrait_%28detail_of_the_Assumption_of_Mary_with_Saints%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Matthias_Stom_-_Saint_Sebastian,_possibly_a_self-portrait_(detail_of_the_Assumption_of_Mary_with_Saints).jpg
+    license: Public domain
+    credit: Matthias Stom
+identifiers:
+  gnd: "119119560"
+  kulturnav: d98fe615-8249-4d52-8171-7daef1d8fa45
+  lc: nr89011179
+  rkd: "75464"
+  ulan: "500014795"
+  viaf: "95771717"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q949627
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q949627

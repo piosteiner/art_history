@@ -1,0 +1,49 @@
+public_id: 120260
+name: Jakob Wilhelm Huber
+given_name: Jakob Wilhelm
+family_name: Huber
+birth: 1787-12-06
+death: 1871-06-03
+wikidata_id: Q6125371
+metadata:
+  sources: [Wikidata Q6125371 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q6125371
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q6125371
+  - type: born_in
+    to: place/dusseldorf
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q6125371
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q6125371
+identifiers:
+  gnd: "1018632573"
+  rkd: "40233"
+  sikart: "4025431"
+  ulan: "500051843"
+  viaf: "96026899"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q6125371
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q6125371

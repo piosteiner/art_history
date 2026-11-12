@@ -1,0 +1,71 @@
+public_id: 120490
+name: Paulus Moreelse
+given_name: Paulus
+family_name: Moreelse
+birth: 1571
+death: 1638-03-06
+wikidata_id: Q59620
+metadata:
+  sources: [Wikidata Q59620 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q59620
+  - type: born_in
+    to: place/utrecht
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q59620
+  - type: died_in
+    to: place/utrecht
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q59620
+  - type: worked_in
+    to: place/delft
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q59620
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q59620
+  - type: worked_in
+    to: place/utrecht
+    period: 1596
+    period_label: from 1596
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q59620
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Paulus_Moreelse_-_Zelfportret.jpg/1280px-Paulus_Moreelse_-_Zelfportret.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paulus_Moreelse_-_Zelfportret.jpg
+    license: Public domain
+    credit: Paulus Moreelse
+identifiers:
+  bnf: "145752552"
+  gnd: "121745783"
+  idref: "192353381"
+  kulturnav: b5d1cd15-6d96-4a50-ae0d-3fe3ef210b58
+  lc: nr91019314
+  rkd: "57653"
+  ulan: "500006080"
+  viaf: "34701462"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q59620
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q59620

@@ -10,6 +10,7 @@ materials: [pear-wood]
 dimensions: [39.1, 27.9, 2.5]
 institution: metropolitan-museum-of-art
 inventory_number: 19.73.255
+web_url: https://www.metmuseum.org/art/collection/search/336211
 images:
   - url: https://images.metmuseum.org/CRDImages/dp/web-large/DP102203.jpg
     source_url: https://www.metmuseum.org/art/collection/search/336211
@@ -44,5 +45,6 @@ sources:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 9 (28.11.2024)
   inventory_number:
-    - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 9 (28.11.2024)
+    - url: https://www.metmuseum.org/art/collection/search/336211
+      source: metropolitan-museum-collection
+      accessed: 2026-11-11

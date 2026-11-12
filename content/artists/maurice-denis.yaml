@@ -1,0 +1,90 @@
+public_id: 121205
+name: Maurice Denis
+given_name: Maurice
+family_name: Denis
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Maurice Amédée Eugène Denis
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q440369
+birth: 1870-11-25
+death: 1943-11-13
+wikidata_id: Q440369
+metadata:
+  sources: [Wikidata Q440369 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q440369
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q440369
+  - type: influenced_by
+    to: artist/paul-gauguin
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q440369
+  - type: influenced_by
+    to: artist/pierre-puvis-de-chavannes
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q440369
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q440369
+  - type: associated_with
+    to: movement/les-nabis
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q440369
+  - type: associated_with
+    to: movement/pont-aven-school
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q440369
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q440369
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5e/Maurice_Denis_-_photo_Henri_Manuel.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Maurice_Denis_-_photo_Henri_Manuel.jpg
+    license: Public domain
+    credit: Henri Manuel
+identifiers:
+  bnf: "121402945"
+  dome: "83"
+  gnd: "118671464"
+  idref: "029867002"
+  kulturnav: ae19366e-d32e-4e8a-b10d-ba5b9acf8083
+  lc: n82110229
+  rkd: "21955"
+  ulan: "500032673"
+  viaf: "71426722"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q440369
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q440369

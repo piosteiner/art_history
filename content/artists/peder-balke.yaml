@@ -1,0 +1,47 @@
+public_id: 120395
+name: Peder Balke
+given_name: Peder
+family_name: Balke
+names:
+  - kind: birth
+    lang: nb
+    role: former
+    text: Peder Andersen
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q2272816
+birth: 1804-11-04
+death: 1887-02-05
+wikidata_id: Q2272816
+metadata:
+  sources: [Wikidata Q2272816 (retrieved 2026-11-12)]
+relationships:
+  - type: student_of
+    to: artist/johan-christian-dahl
+    sources:
+      - accessed: 2026-11-12
+        property: P1066
+        wikidata: Q2272816
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8a/Peder_balke.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Peder_balke.jpg
+    license: Public domain
+    credit: Ludwik Szaciński
+identifiers:
+  bnf: 13507545g
+  gnd: "120148994"
+  idref: "109431596"
+  kulturnav: e19d53a7-8b96-4517-906a-2b426d183f0e
+  lc: nr94009795
+  rkd: "4058"
+  ulan: "500104171"
+  viaf: "64830580"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q2272816
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q2272816

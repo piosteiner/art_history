@@ -1,0 +1,53 @@
+public_id: 120483
+name: Alice  Bailly
+given_name: Alice
+family_name: Bailly
+birth: 1872-02-25
+death: 1938-01-01
+wikidata_id: Q2836533
+metadata:
+  sources: [Wikidata Q2836533 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2836533
+  - type: born_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q2836533
+  - type: died_in
+    to: place/lausanne
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q2836533
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/94/Alice_Bailly%2C_Autorretrato%2C_1927.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Alice_Bailly,_Autorretrato,_1927.jpg
+    license: Public domain
+    credit: Alice Bailly
+identifiers:
+  bnf: 14801046n
+  dome: "4026"
+  gnd: 12060700X
+  hls: "021977"
+  idref: "098399438"
+  lc: n85148871
+  rkd: "3625"
+  sikart: "4000018"
+  ulan: "500005819"
+  viaf: "49488454"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q2836533
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q2836533

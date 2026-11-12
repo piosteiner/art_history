@@ -1,0 +1,58 @@
+public_id: 120171
+name: Ludwig Hess
+given_name: Ludwig
+family_name: Hess
+birth: 1760-10-16
+death: 1800-04-13
+wikidata_id: Q917118
+metadata:
+  sources: [Wikidata Q917118 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q917118
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q917118
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q917118
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q917118
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/24/Ludwig_Hess_1790.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ludwig_Hess_1790.jpg
+    license: Public domain
+    credit: Heinrich Freudweiler
+identifiers:
+  bnf: "148993944"
+  gnd: "118550365"
+  hls: "022031"
+  idref: "194695697"
+  lc: no2008023761
+  rkd: "38038"
+  sikart: "4022917"
+  ulan: "500021013"
+  viaf: "44570073"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q917118
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q917118

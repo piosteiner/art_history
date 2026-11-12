@@ -1,0 +1,22 @@
+public_id: 121515
+name: Mont-la-Ville
+kind: settlement
+parent: vaud
+country_code: CH
+location: [6.40944, 46.64583]
+wikidata_id: Q70547
+metadata:
+  sources: [Wikidata Q70547 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q70547
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q70547
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q70547

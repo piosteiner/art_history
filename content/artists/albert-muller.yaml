@@ -1,0 +1,52 @@
+public_id: 121478
+name: Albert Müller
+given_name: Albert
+family_name: Müller
+birth: 1897-11-29
+death: 1926-12-14
+wikidata_id: Q2638519
+metadata:
+  sources: [Wikidata Q2638519 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2638519
+  - type: born_in
+    to: place/basel
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q2638519
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q2638519
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b3/Albert_M%C3%BCller_-_Selbstbildnis_1926.png
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_M%C3%BCller_-_Selbstbildnis_1926.png
+    license: Public domain
+    credit: Albert Müller
+identifiers:
+  bnf: 14957579n
+  gnd: "118941429"
+  hls: "022089"
+  idref: "070521387"
+  lc: n82133634
+  rkd: "58299"
+  sikart: "4023402"
+  ulan: "500002854"
+  viaf: "74121539"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q2638519
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q2638519

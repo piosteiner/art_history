@@ -1,0 +1,87 @@
+public_id: 120855
+title_lang: de
+title: Das Haus der Träume
+names:
+  - lang: en
+    role: translation
+    text: The House of Dreams
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3058/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: La maison des rêves
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3058/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: albert-welti
+created: 1897
+kind: painting
+medium: Tempera auf Karton, auf Leinwand aufgezogen
+dimensions: [32, 44.5]
+institution: kunsthaus-zurich
+inventory_number: "999"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3058/
+on_loan: true
+on_loan_since: 1912
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586622
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9f/Albert_Welti_-_Das_Haus_der_Tr%C3%A4ume_-_999_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_Welti_-_Das_Haus_der_Tr%C3%A4ume_-_999_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Albert Welti
+provenance:
+  - owner: person/franz-rose-von-doehlau
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3058/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/gottfried-keller-stiftung
+    acquired: 1912
+    method: purchase
+    direct: true
+    place: bern
+    label: Bundesamt für Kultur; «Kauf von dessen Erben»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3058/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3058/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3058/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3058/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3058/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3058/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3058/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3058/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3058/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

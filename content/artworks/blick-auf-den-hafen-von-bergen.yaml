@@ -1,0 +1,79 @@
+public_id: 120347
+title_lang: de
+title: Blick auf den Hafen von Bergen
+names:
+  - lang: null
+    role: translation
+    text: Bergen Harbour
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179956/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: johan-christian-dahl
+created: 1810
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [33.8, 47, 2]
+institution: kunsthaus-zurich
+inventory_number: ZKG.2018/0005
+web_url: https://collection.kunsthaus.ch/de/collection/item/179956/
+wikidata_id: Q56676218
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/89/Johan_Christian_Dahl_-_Blick_auf_den_Hafen_von_Bergen_-_ZKG.2018-0005_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Johan_Christian_Dahl_-_Blick_auf_den_Hafen_von_Bergen_-_ZKG.2018-0005_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Johan Christian Dahl
+provenance:
+  - owner: person/haakon-mehren
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179956/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/christen-sveaas
+    ended: 2018
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179956/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2018
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179956/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "1987"
+    label: nicht in Bang (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

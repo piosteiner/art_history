@@ -1,0 +1,97 @@
+public_id: 120223
+title_lang: de
+title: Bildnis General Ulrich Wille
+names:
+  - lang: en
+    role: translation
+    text: Portrait of General Ulrich Wille
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1487/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: 1915
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [99, 79]
+institution: kunsthaus-zurich
+inventory_number: "2485"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1487/
+on_loan: true
+on_loan_since: 1939
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586370
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6a/Ferdinand_Hodler_-_Bildnis_General_Ulrich_Wille_-_2485_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Bildnis_General_Ulrich_Wille_-_2485_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/ulrich-wille
+    acquired: 1915
+    ended: 1925
+    method: gift
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1487/
+        note: "Footnote: WVZ Hodler, Kat. Nr. 956, SIK-ISEA, Online verfügbar unter: https://recherche.sik-isea.ch/sik:work-6005948/in/catalogues.hodler/ (02.04.2025)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/arnold-wille
+    acquired: 1939 or earlier
+    ended: 1948
+    method: inheritance
+    direct: true
+    place: urikon
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1487/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1948-02-21
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1487/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.956
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1487/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1487/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1487/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1487/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1487/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1487/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1487/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1487/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,80 @@
+public_id: 121611
+title_lang: de
+title: Maria mit Kind und Stifter
+names:
+  - lang: en
+    role: translation
+    text: Mary with Child and Donor
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/907/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: joos-van-cleve
+created: 1510/1525
+created_label: c. 1515/1520
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Eichenholz
+dimensions: [45, 35]
+institution: kunsthaus-zurich
+inventory_number: 2000/0014
+web_url: https://collection.kunsthaus.ch/de/collection/item/907/
+wikidata_id: Q116917876
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/53/Workshop_of_Joos_van_Cleve%2C_Joos_van_Cleve_-_Maria_mit_Kind_und_Stifter_-_2000-0014_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Workshop_of_Joos_van_Cleve,_Joos_van_Cleve_-_Maria_mit_Kind_und_Stifter_-_2000-0014_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Workshop of Joos van Cleve
+provenance:
+  - owner: artist/joos-van-cleve
+    direct: true
+    label: workshop
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/907/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/marta-meyer-wagner
+    place: ruschlikon
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/907/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 33."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2000
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/907/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/907/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/907/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/907/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/907/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/907/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/907/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/907/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

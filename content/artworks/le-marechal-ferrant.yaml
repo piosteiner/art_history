@@ -1,0 +1,150 @@
+public_id: 120408
+title_lang: fr
+title: Le Maréchal-ferrant
+names:
+  - lang: de
+    role: translation
+    text: Der Hufschmied
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: The Blacksmith
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: theodore-gericault
+created: 1813/1814
+kind: oil painting
+medium: Öl auf Holz
+dimensions: [122, 102]
+institution: kunsthaus-zurich
+inventory_number: 1965/0040
+web_url: https://collection.kunsthaus.ch/de/collection/item/1826/
+wikidata_id: Q106730032
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8d/G%C3%A9ricault_-_The_Blacksmith%2C_1813-1814.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:G%C3%A9ricault_-_The_Blacksmith,_1813-1814.jpg
+    license: Public domain
+    credit: Théodore Géricault
+provenance:
+  - owner: institution/hotel-de-bullion
+    role: agent
+    acquired: 1825-11-17
+    ended: 1825-11-17
+    method: auction
+    place: paris
+    label: Lot 105 «Portrait en pied du sieur Fouret; maréchal-ferrant à Rocancourt; près Versailles»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/hotel-de-bullion
+    acquired: 1826-05-22/1826-05-23
+    ended: 1826-05-22/1826-05-23
+    place: paris
+    label: Lot 33
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Couton
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/arnaud-surrand
+    acquired: 1866-10-26
+    ended: 1866-10-26
+    place: saint-germain-en-laye
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hector-cremieux
+    acquired: 1887
+    ended: 1887
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/j-gandillot
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/witwe-j-gandillot
+    acquired: 1924
+    ended: 1924
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vente-galliera
+    role: agent
+    acquired: 1965-06-17
+    ended: 1965-06-17
+    method: auction
+    place: paris
+    label: Lot 55
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/fritz-nathan
+    acquired: 1965-06-17
+    ended: 1965
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1965
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1826/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

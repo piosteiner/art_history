@@ -1,0 +1,22 @@
+public_id: 121606
+name: La Chaux-de-Fonds
+kind: settlement
+parent: switzerland
+country_code: CH
+location: [6.82956, 47.09963]
+wikidata_id: Q68124
+metadata:
+  sources: [Wikidata Q68124 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q68124
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q68124
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q68124

@@ -1,0 +1,44 @@
+public_id: 120288
+name: Otto Frölicher
+given_name: Otto
+family_name: Frölicher
+birth: 1840-06-05
+death: 1890-11-02
+wikidata_id: Q364847
+metadata:
+  sources: [Wikidata Q364847 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q364847
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q364847
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ab/Thoma_froelicher.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Thoma_froelicher.jpg
+    license: Public domain
+    credit: Hans Thoma
+identifiers:
+  gnd: "120689588"
+  hls: "022017"
+  lc: n94105523
+  rkd: "125751"
+  sikart: "4022900"
+  ulan: "500007179"
+  viaf: "59921982"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q364847
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q364847

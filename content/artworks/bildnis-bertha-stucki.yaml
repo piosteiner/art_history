@@ -1,0 +1,76 @@
+public_id: 120432
+title_lang: de
+title: Bildnis Bertha Stucki
+names:
+  - lang: en
+    role: translation
+    text: Portrait of Bertha Stucki
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1870/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: c. 1887
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [54, 43]
+institution: kunsthaus-zurich
+inventory_number: "1141"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1870/
+on_loan: true
+on_loan_since: 1917
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586362
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/62/Ferdinand_Hodler_-_Bildnis_Bertha_Stucki_-_1141_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Bildnis_Bertha_Stucki_-_1141_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: place/zurich
+    acquired: 1917
+    method: purchase
+    place: zurich
+    label: «Kauf aus der Ausstellung Ferdinand Hodler (14.06. - 15.08.1917) im Kunsthaus Zürich»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1870/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.750
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1870/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1870/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1870/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1870/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1870/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1870/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1870/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1870/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

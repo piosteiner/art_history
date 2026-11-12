@@ -1,0 +1,73 @@
+public_id: 120144
+title: Lesende
+names:
+  - lang: en
+    role: translation
+    text: Reading Woman
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1298/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: armand-guillaumin
+created: 1895/1915
+created_label: c. 1900/1910
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [55, 46]
+institution: kunsthaus-zurich
+inventory_number: "1299"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1298/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124288347
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/94/Armand_Guillaumin_-_Lesende_-_1299_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Armand_Guillaumin_-_Lesende_-_1299_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Armand Guillaumin
+provenance:
+  - owner: artist/ottilie-wilhelmine-roederstein
+    ended: 1920
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1298/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1920
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1298/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1298/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1298/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1298/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1298/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1298/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1298/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1298/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

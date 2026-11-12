@@ -1,0 +1,92 @@
+public_id: 120686
+title_lang: fr
+title: Portrait de Suzanne de Boubers de Bernâtre,  épouse de Balthasar Keller
+names:
+  - lang: de
+    role: translation
+    text: Bildnis Suzanne de Boubers de Bernâtre, Gemahlin des Balthasar Keller
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2620/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Portrait of Suzanne de Boubers de Bernâtre, Wife of Balthasar Keller
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2620/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: hyacinthe-rigaud
+created: 1686
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [140, 107]
+institution: kunsthaus-zurich
+inventory_number: "210"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2620/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q66501430
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/23/Hyacinthe_Rigaud_-_Portrait_de_Suzanne_de_Boubers_de_Bern%C3%A2tre%2C_%C3%A9pouse_de_Balthasar_Keller_-_210_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Hyacinthe_Rigaud_-_Portrait_de_Suzanne_de_Boubers_de_Bern%C3%A2tre,_%C3%A9pouse_de_Balthasar_Keller_-_210_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Hyacinthe Rigaud
+provenance:
+  - owner: person/johann-caspar-keller-zum-mohrenkopf
+    ended: 1829 or earlier
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2620/
+        note: "Footnote: Kunsthaus Zürich, Sammlungskatalog, 2007, S. 123."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/albert-keller
+    ended: 1854
+    direct: true
+    place: milan
+    label: Mailand, Erbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2620/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1854
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2620/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2620/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2620/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2620/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2620/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2620/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2620/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2620/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

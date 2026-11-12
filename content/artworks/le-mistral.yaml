@@ -1,0 +1,75 @@
+public_id: 120673
+title_lang: fr
+title: Le mistral
+creator: henri-manguin
+created: 1905
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [50, 61]
+institution: kunsthaus-zurich
+inventory_number: "1403"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2575/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131587394
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/81/Henri_Manguin_-_Le_mistral_-_1403_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_Manguin_-_Le_mistral_-_1403_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Henri Manguin
+provenance:
+  - owner: institution/galerie-paul-vallotton
+    role: dealer
+    acquired: 1909-11
+    direct: true
+    place: lausanne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2575/
+        note: "Footnote: Kunsthaus Zürich, Sammlungskatalog, 2007, S. 607."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hans-schuler
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2575/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1920
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2575/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2575/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2575/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2575/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2575/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2575/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2575/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2575/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

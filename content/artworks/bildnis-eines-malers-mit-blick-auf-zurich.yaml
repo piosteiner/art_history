@@ -1,0 +1,68 @@
+public_id: 121095
+title_lang: de
+title: Bildnis eines Malers mit Blick auf Zürich
+creator: johann-heinrich-wuest
+created: c. 1790
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Holz
+dimensions: [34, 37.5]
+institution: kunsthaus-zurich
+inventory_number: "1024"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3806/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585522
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/53/Johann_Heinrich_W%C3%BCest_-_Bildnis_eines_Malers_mit_Blick_auf_Z%C3%BCrich_-_1024_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Heinrich_W%C3%BCest_-_Bildnis_eines_Malers_mit_Blick_auf_Z%C3%BCrich_-_1024_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Heinrich Wüest
+provenance:
+  - owner: person/eugen-weil
+    role: dealer
+    ended: 1913
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3806/
+        note: "Footnote: ZKG/KHZ Inventarbuch Sammlung."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1913
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3806/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3806/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3806/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3806/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3806/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3806/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3806/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3806/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

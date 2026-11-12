@@ -1,0 +1,119 @@
+public_id: 120037
+title_lang: de
+title: Amor und Psyche
+names:
+  - lang: en
+    role: translation
+    text: Cupid and Psyche
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1085/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Amour et Psyché
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1085/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: angelika-kauffmann
+created: 1792
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [215.5, 164.5]
+institution: kunsthaus-zurich
+inventory_number: 1987/0005
+web_url: https://collection.kunsthaus.ch/de/collection/item/1085/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586224
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/47/Angelika_Kauffmann_-_Amor_und_Psyche_-_1987-0005_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Angelika_Kauffmann_-_Amor_und_Psyche_-_1987-0005_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Angelica Kauffmann
+provenance:
+  - owner: person/louise-henriette-wilhelmine-anhalt-dessau
+    acquired: 1796
+    ended: 1811
+    method: purchase
+    direct: true
+    label: «von der Künstlerin für das Schlösschen Luisium»; 300 Gulden
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1085/
+        note: "Footnote: Matthisson 1814, S. 188"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/furstliches-haus-anhalt-dessau
+    acquired: 1811
+    ended: 1987
+    method: inheritance
+    direct: true
+    place: dessau
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1085/
+        note: "Footnote: Angebot Michael D. Grünwald, München, an Kunsthaus Zürich, 23.06.1987, ZKG/KHZ, Werkdokument Slg. Das Werk befand sich mindestens bis 1911 im Luisium, Dessau. Vgl. dazu Brief Wolfgang Savelsberg (Kulturstiftung Dessau Wörlitz) an Christian Klemm (Kunsthaus Zürich), 30.11.1998, ZKG/KHZ, Künstlerdossier Kaufmann."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-grunwald
+    role: agent
+    acquired: 1987
+    ended: 1987
+    direct: true
+    place: munich
+    label: intermediary; «aus dem Besitze des fürstlichen Hauses Anhalt-Dessau»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1085/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/jacobs-suchard-ag
+    acquired: 1987
+    ended: 1987
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1085/
+        note: "Footnote: Rechnung Galerie Dr. Michael D. Grünwald, München, an Kunsthaus Zürich, 23.07.1987, ZKG/KHZ, Inventarbogen/Werkdossier Slg. Der Kaufvertrag wurde direkt zwischen der Galerie Grünwald und dem Kunsthaus Zürich geschlossen. Jacobs Suchard AG überwies im Anschluss dem Kunsthaus den Kaufbetrag."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1987
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1085/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1085/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1085/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1085/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1085/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1085/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1085/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1085/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

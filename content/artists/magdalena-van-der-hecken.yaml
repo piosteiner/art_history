@@ -1,0 +1,56 @@
+public_id: 121430
+name: Magdalena van der Hecken
+given_name: Magdalena
+family_name: van der Hecken
+birth: c. 1615
+death: 1650s
+wikidata_id: Q20031802
+metadata:
+  sources: [Wikidata Q20031802 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q20031802
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q20031802
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q20031802
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q20031802
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q20031802
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/94/Magdalena_van_den_Hecken_-_Flowers_in_a_Glass_Vase_CAM_CCF_PD_639_1973.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Magdalena_van_den_Hecken_-_Flowers_in_a_Glass_Vase_CAM_CCF_PD_639_1973.jpg
+    license: Public domain
+    credit: Magdalena van den Hecken
+identifiers:
+  rkd: "36794"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q20031802
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q20031802

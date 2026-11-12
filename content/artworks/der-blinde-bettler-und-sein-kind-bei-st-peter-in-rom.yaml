@@ -1,0 +1,92 @@
+public_id: 121038
+title_lang: de
+title: Der blinde Bettler und sein Kind bei St. Peter in Rom
+names:
+  - lang: en
+    role: translation
+    text: The Blind Beggar and His Child at St. Peter's in Rome
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3535/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Mendiant aveugle et son enfant à Saint-Pierre de Rome
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3535/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: johann-conrad-zeller
+created: 1840/1855
+created_label: c. 1845/1850
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [46.3, 36.5]
+institution: kunsthaus-zurich
+inventory_number: "1181"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3535/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131587402
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/18/Johann_Conrad_Zeller_-_Der_blinde_Bettler_und_sein_Kind_bei_St._Peter_in_Rom_-_1181_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Conrad_Zeller_-_Der_blinde_Bettler_und_sein_Kind_bei_St._Peter_in_Rom_-_1181_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Johann Conrad Zeller
+provenance:
+  - owner: person/albert-keller
+    place: milan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3535/
+        note: 'Footnote: Kunsthaus Zürich, Sammlungskatalog, 2007, S. 171; J.-H. Meyer-Ochsner, Neujahrsblatt der Zürcher Künstlergesellschaft, 1857, S. 7: "Ich führe hier nur einige wenige seiner Gemälde an, die zu den vorzüglichsten gehören: […] Der blinde Bettler und sein Kind bei St. Peter in Rom (Hr. Albert Keller).".'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown (collector)
+    ended: 1918
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3535/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1918
+    method: gift
+    direct: true
+    place: zurich
+    label: «Geschenk einer ungenannten Zürcher Dame»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3535/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3535/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3535/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3535/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3535/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3535/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3535/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3535/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

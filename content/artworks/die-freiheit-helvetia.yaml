@@ -1,0 +1,96 @@
+public_id: 121551
+title_lang: de
+title: Die Freiheit (Helvetia)
+names:
+  - lang: null
+    role: translation
+    text: Liberty (Helvetia)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/787/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: arnold-bocklin
+created: 1891
+kind: oil painting
+medium: Tempera und Öl auf Fichtenholz
+dimensions: [96, 96]
+institution: kunsthaus-zurich
+inventory_number: 1983/0003
+web_url: https://collection.kunsthaus.ch/de/collection/item/787/
+on_loan: true
+on_loan_since: 1983
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q50105401
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Arnold_B%C3%B6cklin_-_Die_Freiheit_%28Helvetia%29_-_1983-0003_-_Kunsthaus_Z%C3%BCrich.jpg/1280px-Arnold_B%C3%B6cklin_-_Die_Freiheit_%28Helvetia%29_-_1983-0003_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Arnold_B%C3%B6cklin_-_Die_Freiheit_(Helvetia)_-_1983-0003_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Arnold Böcklin
+provenance:
+  - owner: person/marie-meyer
+    acquired: 1891
+    ended: 1915
+    direct: true
+    place: freiburg-im-breisgau
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/787/
+        note: "Footnote: Staatliche Museen zu Berlin, SMB-digital, http://www.smb-digital.de/eMuseumPlus?service=ExternalInterface&module=collection&objectId=958753&viewType=detailView [Zugriff: 06.01.2022]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/ernst-grosse
+    acquired: 1915
+    ended: 1916-01-14
+    direct: true
+    place: freiburg-im-breisgau
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/787/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/alte-nationalgalerie
+    acquired: 1916-01-14
+    method: gift
+    direct: true
+    label: Staatliche Museen zu Berlin (Museum); Berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/787/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "497.429"
+    label: Andree 1998 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/787/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/787/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/787/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/787/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/787/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/787/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/787/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/787/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

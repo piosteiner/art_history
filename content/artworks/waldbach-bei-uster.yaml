@@ -1,0 +1,81 @@
+public_id: 121118
+title_lang: de
+title: Waldbach bei Uster
+names:
+  - lang: null
+    role: translation
+    text: Forest Stream Near Uster
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3919/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: amalie-trumpler
+created: 1875/1890
+created_label: c. 1880/1885
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand über Karton
+dimensions: [33.5, 40]
+institution: kunsthaus-zurich
+inventory_number: "1224"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3919/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586955
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/88/Amalie_Tr%C3%BCmpler_-_Waldbach_bei_Uster_-_1224_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Amalie_Tr%C3%BCmpler_-_Waldbach_bei_Uster_-_1224_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Amalie Trümpler
+provenance:
+  - owner: person/heinrich-landolt-mousson
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3919/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/sophie-landolt-mousson
+    acquired: 1885
+    ended: 1917
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3919/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1918
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3919/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3919/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3919/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3919/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3919/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3919/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3919/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3919/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

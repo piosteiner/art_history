@@ -1,0 +1,182 @@
+public_id: 120583
+title_lang: fr
+title: L’Évasion de Rochefort
+names:
+  - lang: null
+    role: translation
+    text: Evasion de Rochefort
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Rocheforts Flucht
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Rochefort’s Escape
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: L’evasion d’Henri Rochefort
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: edouard-manet
+created: 1880/1881
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [143, 114]
+institution: kunsthaus-zurich
+inventory_number: 1955/0009
+web_url: https://collection.kunsthaus.ch/de/collection/item/2362/
+on_loan: true
+on_loan_since: 1955
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q3205630
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/89/%C3%89douard_Manet_-_L%E2%80%99%C3%89vasion_de_Rochefort_-_1955-0009_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Manet_-_L%E2%80%99%C3%89vasion_de_Rochefort_-_1955-0009_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Édouard Manet
+provenance:
+  - owner: person/suzanne-manet
+    acquired: 1883-04-30
+    direct: true
+    place: paris
+    label: Nr. 13; Paris, Nachlassinventar
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        note: "Footnote: Rouart/Wildenstein 1975, S. 274, Nr. 369 sowie S. 25-27: Inventaire après décès [1883]; S. 27, Nr. 13 : L’Evasion, prisé Fr. 300."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/alphonse-portier
+    role: dealer
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        note: "Footnote: Wie oben Fussnote 2; Tabarant 1947, S. 403-404 und Janda 1973, S. 136, Nr. 69."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hermann-pachter
+    role: dealer
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        note: "Footnote: Wie oben Fussnote 3; Verlorene Schätze 2013, S. 176, Nr. 118."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: artist/max-liebermann
+    acquired: 1898 or earlier
+    ended: 1935-02-08
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        note: "Footnote: Wie oben Fussnote 5; Ernst Braun 2012, S. 202, Nr. 196: Brief von Max Liebermann an Max Linde, 20.02.1898: «Ich habe einen reizenden kleinen Daubigny aus Munkakzy’s Sammlung u einen eminenten Manet erworben.» sowie S. 234-235, Nr. 230: Max Liebermann an Max Linde, 26.09.1898: «Auch wegen des Manet’s können Sie ganz ruhig sein: ich freue mich, ihn in so guten Händen zu wissen. Wenn ich Platz gehabt…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/martha-liebermann
+    acquired: 1935-02-08
+    method: inheritance
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        note: "Footnote: Tatzkow/Graf zu Castell-Castell 2013, S. 91: «Mit dem Tode des Künstlers am 8. Februar 1935 erbte seine Witwe die Kunstsammlung. Der durch die nationalsozialistische Verfolgung bedrängten Familie gelang es, einige Gemälde ins Ausland zu schaffen bzw. bei Verwandten zu deponieren.» sowie S. 94: «Mit letztwilliger Verfügung vom 26. Juni 1928 hatte Max Liebermann seiner Ehefrau Martha, geborene Marck…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/kathe-rietzler
+    acquired: 1940 or earlier
+    ended: 1952-07-30
+    method: inheritance
+    direct: true
+    place: berlin
+    label: Berlin and New York, NY
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        note: "Footnote: Tatzkow/Graf zu Castell-Castell 2013 wie oben Fussnote 8, S. 91-105: S. 94: «Kurt und Käthe Riezler forcierten 1938 die Ausreise in die USA.» und S. 98: «Nur wenige Werke aus der Kunstsammlung Max Liebermann konnten für die Familie gerettet werden.»; Feilchenfeldt 2014, S. 49-59; Kat. Palace of Fine Arts, San Francisco 1940, S. 19, Nr. 275: «Coll. Max Liebermann. Lent by Mrs. K. R. New York”; Kat.…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/kurt-rietzler
+    acquired: 1952-07-30
+    ended: 1955-06-28
+    method: inheritance
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        note: "Footnote: Feilchenfeldt 2014, S. 58: «Am 27. Februar 1951 schrieb Kurt Riezler an Walter Feilchenfeldt, dass er Manets grossformatiges Gemälde Rocheforts Flucht (Abb. S. 48) und das Blumenstilleben von Renoir gerne verkaufen würde. Beide Bilder schickte er kurze Zeit später an die Kunsthandlung Walter Feilchenfeldt, Zürich, in Kommission.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/walter-feilchenfeldt
+    role: agent
+    acquired: 1951-01-27
+    ended: 1955-06-28
+    direct: true
+    place: zurich
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        note: "Footnote: Wie oben Fussnote 10: Fand zu Beginn 1951 der Austausch noch mit Walter Feilchenfeldt senior statt, so setzte Marianne Feilchenfeldt die Geschäftsbeziehung nach dem Tod von Walter 1953 bis zum Verkauf des Werkes 1955 fort."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1955-06-28
+    method: purchase
+    direct: true
+    place: zurich
+    label: mit Mitteln aus dem Legat Dr. Adolf Jöhr
+    price:
+      amount: 24000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        note: "Footnote: Bericht des Vorstands zur Hauptversammlung der VZK, 28.06.1955, S. 1, Archiv ZKG/KHZ 10.50.21."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.274.369
+    label: Rouart/Wildenstein 1975 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

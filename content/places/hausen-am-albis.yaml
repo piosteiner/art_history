@@ -1,0 +1,29 @@
+public_id: 121507
+name: Hausen am Albis
+names:
+  - lang: ru
+    role: translation
+    text: Хаузен-ам-Альбис
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q65231
+kind: settlement
+parent: canton-of-zurich
+country_code: CH
+location: [8.53444, 47.24472]
+wikidata_id: Q65231
+metadata:
+  sources: [Wikidata Q65231 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q65231
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q65231
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q65231

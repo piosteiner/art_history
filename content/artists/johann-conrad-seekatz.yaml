@@ -1,0 +1,58 @@
+public_id: 120271
+name: Johann Conrad Seekatz
+given_name: Johann Conrad
+family_name: Seekatz
+birth: 1719-09-04
+death: 1768-08-25
+wikidata_id: Q1320277
+metadata:
+  sources: [Wikidata Q1320277 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1320277
+  - type: died_in
+    to: place/darmstadt
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q1320277
+  - type: worked_in
+    to: place/mannheim
+    period: 1748/1751
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1320277
+  - type: worked_in
+    to: place/darmstadt
+    period: 1753/1768
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q1320277
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Seekatz_MA_2.JPG/1280px-Seekatz_MA_2.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Seekatz_MA_2.JPG
+    license: Public domain
+    credit: Johann Conrad Seekatz
+identifiers:
+  gnd: "119001489"
+  idref: "160424372"
+  kulturnav: 45520780-f2ef-4d4e-8aeb-ff473f6a6e4b
+  lc: no92030471
+  rkd: "71745"
+  ulan: "500029713"
+  viaf: "35256937"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1320277
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1320277

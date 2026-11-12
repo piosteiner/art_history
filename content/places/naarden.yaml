@@ -1,0 +1,29 @@
+public_id: 120943
+name: Naarden
+names:
+  - lang: ru
+    role: translation
+    text: Нарден
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q9949
+kind: settlement
+parent: north-holland
+country_code: NL
+location: [5.16222, 52.29528]
+wikidata_id: Q9949
+metadata:
+  sources: [Wikidata Q9949 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q9949
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q9949
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q9949

@@ -1,0 +1,129 @@
+public_id: 120241
+title: Oca appesa
+names:
+  - lang: de
+    role: translation
+    text: Die weisse Gans
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1527/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: White Goose
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1527/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: giovanni-segantini
+created: c. 1886
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [114, 81.5]
+institution: kunsthaus-zurich
+inventory_number: 1994/0003
+web_url: https://collection.kunsthaus.ch/de/collection/item/1527/
+wikidata_id: Q131585615
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/56/Giovanni_Segantini_-_Oca_appesa_-_1994-0003_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Segantini_-_Oca_appesa_-_1994-0003_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Giovanni Segantini
+provenance:
+  - owner_label: Bruni
+    acquired: 1894
+    ended: 1894
+    direct: true
+    place: milan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1527/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: collection N.Y.
+    acquired: 1902
+    ended: 1902
+    place: budapest
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1527/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Dr. Bernoulli
+    ended: 1956 or earlier
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1527/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/florian-spinas
+    acquired: 1956 or earlier
+    ended: 1986
+    method: purchase
+    direct: true
+    place: romanshorn
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1527/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Frau L. Spinas
+    acquired: 1981
+    ended: 1994
+    method: inheritance
+    direct: true
+    place: romanshorn
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1527/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/genossenschaft-zum-baugarten
+    acquired: 1994
+    ended: 1994
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1527/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1994-04-27
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1527/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.65.62
+    label: Quinsac 1982 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1527/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1527/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1527/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1527/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1527/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1527/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1527/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

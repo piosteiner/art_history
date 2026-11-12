@@ -1,0 +1,97 @@
+public_id: 120273
+title_lang: de
+title: Frauenkopf. Bildnis einer Unbekannten
+names:
+  - lang: en
+    role: translation
+    text: Woman's Head. Portrait of an Unknown
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1605/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Frauenkopf. Studie zu «Die heilige Stunde»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1605/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: c. 1907
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [42.5, 35]
+institution: kunsthaus-zurich
+inventory_number: 1964/0015
+web_url: https://collection.kunsthaus.ch/de/collection/item/1605/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586855
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/06/Ferdinand_Hodler_-_Frauenkopf._Bildnis_einer_Unbekannten_-_1964-0015_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Frauenkopf._Bildnis_einer_Unbekannten_-_1964-0015_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/hector-hodler
+    acquired: 1918-05-19
+    ended: 1920-03-30
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1605/
+        note: "Footnote: Bätschmann/Müller u. a., 2008, Bd. 2, No. 827, vgl. https://recherche.sik-isea.ch/de/sik:work-9912926/in/catalogues.hodler/work/tiles?0.0.type=work&0.0.@id=sik:work-9912926&0.type=work (19.05.2025)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/lina-emilie-hodler-ruch
+    acquired: 1920-03-30
+    ended: 1964
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1605/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.; Zürcher Kunstgesellschaft 1964 Jahresbericht, S. 9; wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1964
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1605/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.827
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1605/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1605/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1605/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1605/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1605/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1605/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1605/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

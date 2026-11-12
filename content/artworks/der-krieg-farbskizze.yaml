@@ -1,0 +1,86 @@
+public_id: 121373
+title_lang: de
+title: Der Krieg. Farbskizze
+names:
+  - lang: en
+    role: translation
+    text: The War. Colour Sketch
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/671/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: arnold-bocklin
+created: 1896
+kind: painting
+medium: Tempera auf Holz
+dimensions: [40, 33]
+institution: kunsthaus-zurich
+inventory_number: "777"
+web_url: https://collection.kunsthaus.ch/de/collection/item/671/
+on_loan: true
+on_loan_since: 1903
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585593
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d2/Arnold_B%C3%B6cklin_-_Der_Krieg._Farbskizze_-_777_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Arnold_B%C3%B6cklin_-_Der_Krieg._Farbskizze_-_777_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Arnold Böcklin
+provenance:
+  - owner: artist/arnold-bocklin
+    role: estate
+    acquired: 1901
+    ended: 1902
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/671/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/gottfried-keller-stiftung
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: bern
+    label: Bundesamt für Kultur
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/671/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "521.458"
+    label: Andre 1998 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/671/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/671/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/671/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/671/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/671/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/671/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/671/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/671/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

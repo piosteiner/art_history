@@ -1,0 +1,43 @@
+public_id: 121024
+name: Knud Andreassen Baade
+given_name: Knud Andreassen
+family_name: Baade
+birth: 1808-03-28
+death: 1879-11-24
+wikidata_id: Q1508306
+metadata:
+  sources: [Wikidata Q1508306 (retrieved 2026-11-12)]
+relationships:
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q1508306
+  - type: studied_at
+    to: institution/royal-danish-academy-of-fine-arts
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q1508306
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6f/Knud_Baade_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Knud_Baade_(cropped).jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "117534498"
+  kulturnav: 46c31ed7-7eed-4c17-aa5d-502aafd4dd8e
+  lc: n2012053048
+  rkd: "3141"
+  ulan: "500002900"
+  viaf: "67245712"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1508306
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1508306

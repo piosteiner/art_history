@@ -1,0 +1,96 @@
+public_id: 120908
+title_lang: de
+title: Eine Hirtenfamilie. Gewitter in der römischen Campagna
+names:
+  - lang: en
+    role: translation
+    text: A Shepherd Family. Storm in the Roman Campagna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3153/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Une famille de berger. Orage dans la campagne romaine.
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3153/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: johann-conrad-zeller
+created: 1835
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [100, 136]
+institution: kunsthaus-zurich
+inventory_number: "235"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3153/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131587008
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2a/Johann_Conrad_Zeller_-_Eine_Hirtenfamilie._Gewitter_in_der_r%C3%B6mischen_Campagna_-_235_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Conrad_Zeller_-_Eine_Hirtenfamilie._Gewitter_in_der_r%C3%B6mischen_Campagna_-_235_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Johann Conrad Zeller
+provenance:
+  - owner: person/heinrich-zeller-fussli
+    acquired: 1847
+    ended: 1847
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3153/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/johann-conrad-zeller
+    role: estate
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3153/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/adolph-pestalozzi-von-schulthess
+    ended: 1855
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3153/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1855
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3153/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3153/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3153/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3153/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3153/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3153/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3153/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3153/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

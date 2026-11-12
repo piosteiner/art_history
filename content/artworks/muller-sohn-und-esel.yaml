@@ -1,0 +1,101 @@
+public_id: 120253
+title_lang: de
+title: Müller, Sohn und Esel
+names:
+  - lang: en
+    role: translation
+    text: Miller, Son and Donkey
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1538/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: c. 1883
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [39, 61]
+institution: kunsthaus-zurich
+inventory_number: "1647"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1538/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586149
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/86/Ferdinand_Hodler_-_M%C3%BCller%2C_Sohn_und_Esel_-_1647_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_M%C3%BCller,_Sohn_und_Esel_-_1647_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: person/willy-russ
+    acquired: 1911-10
+    ended: 1911-10
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1538/
+        note: "Footnote: Bätschmann/Müller u. a., 2008, Bd. 3, No. 1114."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/max-geldner
+    acquired: 1911-11
+    ended: 1911-11
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1538/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hans-graber
+    acquired: 1923
+    ended: 1925
+    direct: true
+    place: basel
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1538/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1925
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1538/
+        note: 'Footnote: ZKG/KHZ Inventarbuch Slg.: "Schenkung Dr. Graber 1923, überwiesen 1925".'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.1114
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1538/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1538/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1538/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1538/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1538/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1538/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1538/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

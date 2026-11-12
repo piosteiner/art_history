@@ -1,0 +1,89 @@
+public_id: 120701
+name: Hans Memling
+given_name: Hans
+family_name: Memling
+birth: 1430/1440
+birth_label: c. 1430s
+death: 1494-08-20
+wikidata_id: Q106851
+metadata:
+  sources: [Wikidata Q106851 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q106851
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q106851
+  - type: born_in
+    to: place/mainz
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q106851
+  - type: died_in
+    to: place/bruges
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q106851
+  - type: worked_in
+    to: place/brussels
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q106851
+  - type: worked_in
+    to: place/cologne
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q106851
+  - type: worked_in
+    to: place/bruges
+    period: 1466/1494
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q106851
+  - type: student_of
+    to: artist/rogier-van-der-weyden
+    sources:
+      - accessed: 2026-11-12
+        property: P1066
+        wikidata: Q106851
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q106851
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5b/Hans_Memling_-_Self-portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_Memling_-_Self-portrait.jpg
+    license: CC BY-SA 3.0
+    credit: Hans Memling
+identifiers:
+  bnf: "119481733"
+  gnd: "118580647"
+  idref: "027440958"
+  kulturnav: cc77c748-893b-4058-8164-da28eac8905c
+  lc: n50013910
+  rkd: "55174"
+  ulan: "500005611"
+  viaf: "36926265"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q106851
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q106851

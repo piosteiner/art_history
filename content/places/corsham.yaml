@@ -1,0 +1,22 @@
+public_id: 121561
+name: Corsham
+kind: settlement
+parent: wiltshire
+country_code: GB
+location: [-2.19, 51.43]
+wikidata_id: Q663095
+metadata:
+  sources: [Wikidata Q663095 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q663095
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q663095
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q663095

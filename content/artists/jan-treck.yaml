@@ -1,0 +1,48 @@
+public_id: 121324
+name: Jan Treck
+given_name: Jan
+family_name: Treck
+birth: 1606
+death: 1652-09-25
+wikidata_id: Q863887
+metadata:
+  sources: [Wikidata Q863887 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q863887
+  - type: born_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q863887
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q863887
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q863887
+identifiers:
+  gnd: 101963202X
+  rkd: "78125"
+  ulan: "500017864"
+  viaf: "95790750"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q863887
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q863887

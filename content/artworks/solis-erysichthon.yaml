@@ -75,8 +75,8 @@ sources:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 3 (10.10.2024)
   title_status:
-    - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 3 (10.10.2024)
+    - source: rijksmuseum-rp-p-ob-22-088-v
+      locator: RP-P-OB-22.088(V)
   inventory_number:
     - source: rijksmuseum-rp-p-ob-22-088-v
       locator: RP-P-OB-22.088(V)

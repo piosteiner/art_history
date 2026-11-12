@@ -1,0 +1,174 @@
+public_id: 120609
+title_lang: fr
+title: Le Pont de Waterloo
+names:
+  - lang: null
+    role: translation
+    text: Waterloo Bridge
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: claude-monet
+created: 1902
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [65, 100]
+institution: kunsthaus-zurich
+inventory_number: 1995/0002
+web_url: https://collection.kunsthaus.ch/de/collection/item/2433/
+on_loan: true
+on_loan_since: 1990
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124250965
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/64/Claude_Monet_-_Le_Pont_de_Waterloo_-_1995-0002_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Le_Pont_de_Waterloo_-_1995-0002_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: person/paul-durand-ruel
+    role: dealer
+    acquired: 1911-10
+    ended: 1919-05
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+        note: "Footnote: Wildenstein 1996 III.691.1581."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/aline-barnsdall
+    acquired: 1919-05
+    ended: 1946 or earlier
+    method: purchase
+    direct: true
+    place: beverly-hills
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+        note: "Footnote: Wie oben Fussnote 2; Archiv M. Knoedler & Co. records, circa 1848–1971, The Getty Research Institute, Commission book 5a [S. 57, Nr. 4111], http://hdl.handle.net/10020/2012m54b97: «Aline Barnsdall Collection»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/lacma
+    acquired: 1940
+    ended: 1948
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+        note: "Footnote: Wie oben Fussnote 2: 1940 von A. Barnsdall im County Museum of Art in Los Angeles aufbewahrt und 1948 an Mrs Aline Devine (USA) zurückgegeben."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/aline-devine
+    acquired: 1948 or earlier
+    ended: 1953-02
+    method: inheritance
+    direct: true
+    place: beverly-hills
+    label: Nr. 67
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+        note: "Footnote: Wie oben Fussnote 3: In dem Knoedler Commission Book 5a wird das Gemälde unter «Aline Barnsdall Collection» und «THEIR NUMBER» [Nachlassnummer] «67» aufgeführt; Archiv M. Knoedler & Co. records, circa 1848–1971, The Getty Research Institute, Inventarkarte [Nr. CA4111], http://hdl.handle.net/10020/2012m54_ref1672_fqj [Item 0619]; Die Annahme, dass sich das Werk spätestens ab 1948 bis 1953 im Besitz…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/m-knoedler-co
+    role: agent
+    acquired: 1952 or earlier
+    ended: 1953-02
+    direct: true
+    place: new-york-city
+    label: on consignment; inv. no. CA4111
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+        note: "Footnote: Wie oben Fussnote 3; Provenienzmerkmal auf der Werkrückseite: Kreide in Schwarz: CA 4111 [Inventarnummer der Galerie M. Knoedler & Co.]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/kende-galleries-at-gimbel-brothers
+    role: dealer
+    acquired: 1953-02
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/himan-brown
+    ended: 1990-05-15
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+        note: "Footnote: Wie oben Fussnote 2; Auktion Christie's New York (15.05.1990), S. 79, Lot 28."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1990-05-15
+    ended: 1990-05-15
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Lot 28
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/walter-haefner
+    acquired: 1990
+    ended: 1990
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1995-05-31
+    method: gift
+    direct: true
+    place: zurich
+    label: anlässlich des 50-jährigen Jubiläums der AMAG; Zürich, Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; ZKG/KHZ, Inventarbogen/Werkdossier Slg.; Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.691.1581
+    label: Wildenstein 1996 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

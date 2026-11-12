@@ -1,0 +1,48 @@
+public_id: 120856
+name: Johann Caspar Weidenmann
+given_name: Johann Caspar
+family_name: Weidenmann
+birth: 1805-10-13
+death: 1850-06-06
+wikidata_id: Q50134949
+metadata:
+  sources: [Wikidata Q50134949 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q50134949
+  - type: born_in
+    to: place/winterthur
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q50134949
+  - type: died_in
+    to: place/winterthur
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q50134949
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Johann_Caspar_Weidenmann%2C_Selbstbildnis.jpg/1280px-Johann_Caspar_Weidenmann%2C_Selbstbildnis.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Caspar_Weidenmann,_Selbstbildnis.jpg
+    license: Public domain
+    credit: Johann Caspar Weidenmann (1805—1850)
+identifiers:
+  gnd: "173301916"
+  hls: "022117"
+  lc: nr2004005494
+  sikart: "4022966"
+  viaf: "22090478"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q50134949
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q50134949

@@ -1,0 +1,100 @@
+public_id: 121482
+title_lang: fr
+title: Le Voile de sainte Véronique
+names:
+  - lang: de
+    role: translation
+    text: Das Schweisstuch der heiligen Veronika
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7582/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: The Veil of Veronica
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7582/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: philippe-de-champaigne
+created: before 1654
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [70.3, 56]
+institution: kunsthaus-zurich
+inventory_number: 2012/0002
+web_url: https://collection.kunsthaus.ch/de/collection/item/7582/
+wikidata_id: Q124288364
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Das_Schweisstuch_der_heiligen_Veronika_%28vor_1654%29_-_Philippe_de_Champagne_%28Kunsthaus_Z%C3%BCrich%29.jpg/1280px-Das_Schweisstuch_der_heiligen_Veronika_%28vor_1654%29_-_Philippe_de_Champagne_%28Kunsthaus_Z%C3%BCrich%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Das_Schweisstuch_der_heiligen_Veronika_(vor_1654)_-_Philippe_de_Champagne_(Kunsthaus_Z%C3%BCrich).jpg
+    license: Public domain
+    credit: Paradise Chronicle
+provenance:
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 2008-06-25
+    ended: 2008-06-25
+    method: auction
+    place: paris
+    label: Lot 48
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7582/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-otto-naumann
+    role: dealer
+    ended: 2012
+    place: new-york-city
+    label: Das Gemälde war bis 2008 nur aus Stichen bekannt; bis es kürzlich wieder auftauchte.
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7582/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/dr-joseph-scholz-stiftung
+    acquired: 2012
+    ended: 2012
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7582/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2012
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7582/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7582/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7582/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7582/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7582/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7582/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7582/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7582/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

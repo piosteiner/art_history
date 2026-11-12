@@ -1,0 +1,135 @@
+public_id: 120532
+title: Portrait de Monsieur X (Pierre Loti)
+names:
+  - lang: de
+    role: translation
+    text: Porträt des Herrn X (Pierre Loti)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Portrait of Mr. X (Pierre Loti)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: henri-rousseau
+created: 1906
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [61, 50]
+institution: kunsthaus-zurich
+inventory_number: "2508"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2194/
+wikidata_id: Q3399446
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/49/Henri_Rousseau_-_Portrait_de_Monsieur_X_%28Pierre_Loti%29_-_2508_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_Rousseau_-_Portrait_de_Monsieur_X_(Pierre_Loti)_-_2508_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Henri Rousseau
+provenance:
+  - owner: person/georges-courteline
+    acquired: 1906
+    ended: 1906
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 241."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/paul-rosenberg
+    acquired: 1913
+    ended: 1914
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/paul-mendelssohn-bartholdy
+    co_owners: [person/lotte-mendelssohn-bartholdy]
+    acquired: 1914
+    ended: 1927
+    method: purchase
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+        note: "Footnote: Kat. Kunsthalle Tübingen 2001, Kat.-Nr. 39, S. 184-187, Farbabb."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/charlotte-von-wesdehlen
+    acquired: 1927
+    ended: 1940
+    direct: true
+    place: berlin
+    label: Berlin, Scheidung
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/claus-vogel
+    acquired: 1940
+    ended: 1940
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 7.11.1940, I.c, Archiv ZKG/KHZ, 10.30.10.42,  Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1940
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 22000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "184.39"
+    label: Adriani 2001 (catalogue raisonné)
+  - number: II.474.233
+    label: Certigny 1984 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

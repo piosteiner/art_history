@@ -1,0 +1,76 @@
+public_id: 120185
+title: Schlafende
+names:
+  - lang: en
+    role: translation
+    text: Woman Sleeping
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1400/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: c. 1885
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [26, 35]
+institution: kunsthaus-zurich
+inventory_number: "1131"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1400/
+on_loan: true
+on_loan_since: 1917
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584965
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f9/Ferdinand_Hodler_-_Schlafende_-_1131_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Schlafende_-_1131_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1917
+    method: purchase
+    direct: true
+    place: zurich
+    label: bought from the exhibition at the Kunsthaus Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1400/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.1150
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1400/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1400/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1400/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1400/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1400/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1400/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1400/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1400/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

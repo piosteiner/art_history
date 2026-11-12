@@ -1,0 +1,92 @@
+public_id: 120314
+title_lang: de
+title: Eine Gewissensfrage. Rechtes Fragment
+names:
+  - lang: en
+    role: translation
+    text: Matter of Conscience (Right Fragment)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1717/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Jünglingskopf
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1717/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: former
+    text: Head of a Youth
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1717/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ferdinand-hodler
+created: 1877/1878
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [41, 34]
+institution: kunsthaus-zurich
+inventory_number: "1107"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1717/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586718
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0b/Ferdinand_Hodler_-_Eine_Gewissensfrage._Rechtes_Fragment_-_1107_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Eine_Gewissensfrage._Rechtes_Fragment_-_1107_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+provenance:
+  - owner: institution/galerie-neupert
+    role: dealer
+    ended: 1916
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1717/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1916
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1717/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.1068
+    label: Bätschmann/Müller 2012 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1717/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1717/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1717/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1717/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1717/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1717/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1717/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

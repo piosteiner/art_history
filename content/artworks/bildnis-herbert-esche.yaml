@@ -1,0 +1,110 @@
+public_id: 120778
+title_lang: de
+title: Bildnis Herbert Esche
+names:
+  - lang: en
+    role: translation
+    text: Portrait of Herbert Esche
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2800/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: edvard-munch
+created: 1905
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [71, 55.5]
+institution: kunsthaus-zurich
+inventory_number: 1997/0011
+web_url: https://collection.kunsthaus.ch/de/collection/item/2800/
+on_loan: true
+on_loan_since: 1997
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q18890045
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8e/Edvard_Munch_-_Bildnis_Herbert_Esche_-_1997-0011_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_Bildnis_Herbert_Esche_-_1997-0011_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Edvard Munch
+provenance:
+  - owner: person/herbert-eugen-esche
+    method: commission
+    direct: true
+    place: chemnitz
+    label: Chemnitz and Küsnacht
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2800/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/maria-velde
+    co_owners: [person/henry-van-de-velde]
+    ended: 1925
+    method: gift
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2800/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/erdmute-luchsinger-esche
+    acquired: 1925
+    ended: 1990
+    method: gift
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2800/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/regula-luchsinger
+    acquired: 1990
+    ended: 1997
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2800/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/herbert-eugen-esche-stiftung
+    acquired: 1997
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2800/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.668.658
+    label: Woll (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2800/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2800/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2800/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2800/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2800/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2800/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2800/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2800/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

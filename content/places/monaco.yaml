@@ -1,0 +1,48 @@
+public_id: 121326
+name: Monaco
+names:
+  - lang: ja
+    role: translation
+    text: モナコ
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q55115
+  - lang: zh
+    role: translation
+    text: 摩纳哥
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q55115
+  - lang: ko
+    role: translation
+    text: 모나코
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q55115
+  - lang: es
+    role: translation
+    text: Mónaco
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q55115
+  - lang: ru
+    role: translation
+    text: Монако
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q55115
+kind: settlement
+country_code: MC
+location: [7.42482, 43.73097]
+wikidata_id: Q55115
+metadata:
+  sources: [Wikidata Q55115 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q55115
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q55115

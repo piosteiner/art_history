@@ -1,0 +1,67 @@
+public_id: 120227
+name: Oscar Lüthy
+given_name: Oscar
+family_name: Lüthy
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Oskar Wilhelm Lüthy
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q557242
+birth: 1882-06-26
+death: 1945-10-01
+wikidata_id: Q557242
+metadata:
+  sources: [Wikidata Q557242 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q557242
+  - type: born_in
+    to: place/bern
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q557242
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q557242
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q557242
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q557242
+identifiers:
+  bnf: 17164766c
+  dome: "231"
+  gnd: "137409893"
+  hls: "022505"
+  lc: no2015068226
+  rkd: "51412"
+  sikart: "4023394"
+  ulan: "500101783"
+  viaf: "81605025"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q557242
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q557242

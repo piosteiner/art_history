@@ -1,0 +1,75 @@
+public_id: 121027
+title_lang: de
+title: Komponierte Landschaft mit Staffage
+names:
+  - lang: en
+    role: translation
+    text: Composed Landscape with Staffage
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3513/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: johann-heinrich-wuest
+created: c. 1775
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [124, 75]
+institution: kunsthaus-zurich
+inventory_number: "387"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3513/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585065
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/00/Johann_Heinrich_W%C3%BCest_-_Komponierte_Landschaft_mit_Staffage_-_387_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Heinrich_W%C3%BCest_-_Komponierte_Landschaft_mit_Staffage_-_387_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Heinrich Wüest
+provenance:
+  - owner: person/heinrich-escher-vom-glas
+    ended: 1877
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3513/
+        note: "Footnote: Vuilleumier-Kirschbaum 2015, S. 37-38."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1877
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3513/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3513/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3513/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3513/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3513/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3513/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3513/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3513/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

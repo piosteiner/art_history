@@ -1,0 +1,47 @@
+public_id: 120784
+name: Bonn
+names:
+  - lang: ja
+    role: translation
+    text: ボン
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q586
+  - lang: zh
+    role: translation
+    text: 波恩
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q586
+  - lang: ko
+    role: translation
+    text: 본
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q586
+  - lang: ru
+    role: translation
+    text: Бонн
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q586
+kind: settlement
+parent: nordrhein-westfalen
+country_code: DE
+location: [7.10222, 50.73528]
+wikidata_id: Q586
+metadata:
+  sources: [Wikidata Q586 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q586
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q586
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q586

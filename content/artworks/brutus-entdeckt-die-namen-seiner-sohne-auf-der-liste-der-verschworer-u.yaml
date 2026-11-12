@@ -1,0 +1,109 @@
+public_id: 121036
+title_lang: de
+title: Brutus entdeckt die Namen seiner Söhne auf der Liste der Verschwörer und verurteilt sie zum Tode
+names:
+  - lang: en
+    role: translation
+    text: Brutus Discovers His Sons' Names on the List of Conspirators and Condems Them to Death
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3531/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Brutus découvre le nom de ses fils sur la liste des conspirateurs et les condamne à mort
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3531/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: johann-heinrich-wilhelm-tischbein
+created: 1785/1795
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [154, 206]
+institution: kunsthaus-zurich
+inventory_number: 1992/0009
+web_url: https://collection.kunsthaus.ch/de/collection/item/3531/
+on_loan: true
+on_loan_since: 1992
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586455
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6d/Johann_Heinrich_Wilhelm_Tischbein_-_Brutus_entdeckt_die_Namen_seiner_S%C3%B6hne_auf_der_Liste_der_Verschw%C3%B6rer_und_verurteilt_sie_zum_Tode_-_1992-0009_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Heinrich_Wilhelm_Tischbein_-_Brutus_entdeckt_die_Namen_seiner_S%C3%B6hne_auf_der_Liste_der_Verschw%C3%B6rer_und_verurteilt_sie_zum_Tode_-_1992-0009_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Johann Heinrich Wilhelm Tischbein
+provenance:
+  - owner_label: the Bravay de Schultz family
+    acquired: 1799
+    ended: 1989
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3531/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/christie-s-monaco
+    role: agent
+    acquired: 1989-12-02
+    ended: 1989-12-02
+    method: auction
+    place: monte-carlo
+    label: Lot 17
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3531/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-neuse
+    role: dealer
+    ended: 1992
+    direct: true
+    place: bremen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3531/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1992
+    method: gift
+    direct: true
+    place: zurich
+    label: «Geschenk von Annette Bühler»; «der Familie Bodmer und der Göhner-Stiftung»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3531/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3531/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3531/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3531/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3531/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3531/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3531/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3531/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3531/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,66 @@
+public_id: 120450
+title_lang: de
+title: Fischerhaus am Genfersee
+names:
+  - lang: en
+    role: translation
+    text: Fishing House on Lake Geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1941/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: louis-george-legrand
+created: before 1841
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [42, 59]
+institution: kunsthaus-zurich
+inventory_number: "0023"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1941/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585136
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/08/Louis_George-Legrand_-_Fischerhaus_am_Genfersee_-_0023_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Louis_George-Legrand_-_Fischerhaus_am_Genfersee_-_0023_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Louis George-Legrand
+provenance:
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1841
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1941/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1941/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1941/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1941/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1941/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1941/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1941/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1941/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

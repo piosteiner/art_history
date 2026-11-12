@@ -1,0 +1,105 @@
+public_id: 120381
+title_lang: de
+title: Blick auf die Elbe
+names:
+  - lang: en
+    role: translation
+    text: View of the Elbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179966/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Vue sur l'Elbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179966/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: johan-christian-dahl
+created: 1836
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [19.2, 23.4]
+institution: kunsthaus-zurich
+inventory_number: ZKG.2018/0015
+web_url: https://collection.kunsthaus.ch/de/collection/item/179966/
+wikidata_id: Q131586578
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/55/Johan_Christian_Dahl_-_Blick_auf_die_Elbe_-_ZKG.2018-0015_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Johan_Christian_Dahl_-_Blick_auf_die_Elbe_-_ZKG.2018-0015_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Johan Christian Dahl
+provenance:
+  - owner: person/j-p-bull
+    acquired: 1937
+    ended: 1937
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179966/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Prof. Francis Bull
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179966/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Blomqvist
+    role: agent
+    acquired: 1998-10
+    ended: 1998-10
+    method: auction
+    place: oslo
+    label: Lot 43
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179966/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/christen-sveaas
+    ended: 2018
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179966/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2018
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179966/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.257.818
+    label: Bang 1987 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

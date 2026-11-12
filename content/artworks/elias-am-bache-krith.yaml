@@ -1,0 +1,79 @@
+public_id: 121199
+title_lang: de
+title: Elias am Bache Krith
+creator: eugen-bracht
+created: 1883
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [121, 201]
+institution: kunsthaus-zurich
+inventory_number: 1947/0001
+web_url: https://collection.kunsthaus.ch/de/collection/item/485/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585440
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d9/Eugen_Bracht_-_Elias_am_Bache_Krith_-_1947-0001_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Eugen_Bracht_-_Elias_am_Bache_Krith_-_1947-0001_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Eugen Bracht
+provenance:
+  - owner: person/mathilde-vogel
+    acquired: 1898-08
+    ended: 1946-08-07
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/485/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 11.07.1947, Archiv ZKG/KHZ, 10.30.10.42; Register über den Verkauf seiner Werke seit 1875, Nr. 110, Deutsches Kunstarchiv im Germanischen Nationalmuseum Nürnberg, DKA, NL Bracht, Eugen, I, B-9a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/mathilde-vogel
+    role: estate
+    acquired: 1946-08-07
+    ended: 1947-07-11
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/485/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1947-07-11
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/485/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/485/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/485/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/485/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/485/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/485/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/485/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/485/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

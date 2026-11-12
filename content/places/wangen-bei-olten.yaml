@@ -1,0 +1,29 @@
+public_id: 120221
+name: Wangen bei Olten
+names:
+  - lang: ru
+    role: translation
+    text: Ванген-бай-О́льтен
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q69967
+kind: settlement
+parent: switzerland
+country_code: CH
+location: [7.86944, 47.34417]
+wikidata_id: Q69967
+metadata:
+  sources: [Wikidata Q69967 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q69967
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q69967
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q69967

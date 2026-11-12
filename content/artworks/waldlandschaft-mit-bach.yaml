@@ -1,0 +1,96 @@
+public_id: 121201
+title_lang: de
+title: Waldlandschaft mit Bach
+names:
+  - lang: de
+    role: translation
+    text: Bündner Landschaft
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/486/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Landscape in a Forest with Stream
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/486/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ernst-ludwig-kirchner
+created: 1925/1926
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [120, 100]
+institution: kunsthaus-zurich
+inventory_number: 1950/0011
+web_url: https://collection.kunsthaus.ch/de/collection/item/486/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585200
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0a/Ernst_Ludwig_Kirchner_-_Waldlandschaft_mit_Bach_-_1950-0011_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ernst_Ludwig_Kirchner_-_Waldlandschaft_mit_Bach_-_1950-0011_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ernst Ludwig Kirchner
+provenance:
+  - owner: artist/ernst-ludwig-kirchner
+    role: estate
+    acquired: 1938-06-15
+    ended: 1950-06-13
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/486/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 618; Kornfeld 2021."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/kunstmuseum-basel
+    role: custodian
+    acquired: 1946-06-06
+    ended: 1950-06-13
+    direct: true
+    label: safekeeping; «des Kirchner-Nachlasses»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/486/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg.: «Kauf aus dem im Kunstmuseum Basel deponierten Nachlass des Künstlers»; Sitzungsprotokoll der Sammlungskommission, 01.02.1950 II. 7, 14.03.1950 I., 13.06.1950 I., 25.02.1951 VI.e., Archiv ZKG/KHZ, 10.30.10.42a. Wie oben Fussnote 2, S. 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1950-06-13
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/486/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/486/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/486/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/486/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/486/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/486/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/486/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/486/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

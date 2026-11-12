@@ -1,0 +1,49 @@
+public_id: 121420
+name: Jan van de Velde (III)
+given_name: Jan van de Velde
+family_name: (III)
+birth: 1620
+death: 1662-07-10
+wikidata_id: Q473744
+metadata:
+  sources: [Wikidata Q473744 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q473744
+  - type: born_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q473744
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q473744
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Stilleven_met_roemer%2C_fluit%2C_aarden_kruik_en_pijpen_Rijksmuseum_SK-A-3988.jpeg/1280px-Stilleven_met_roemer%2C_fluit%2C_aarden_kruik_en_pijpen_Rijksmuseum_SK-A-3988.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Stilleven_met_roemer,_fluit,_aarden_kruik_en_pijpen_Rijksmuseum_SK-A-3988.jpeg
+    license: Public domain
+    credit: Jan Jansz. van de Velde (III)
+identifiers:
+  gnd: "1019669055"
+  idref: "191367095"
+  lc: n86047017
+  rkd: "79780"
+  ulan: "500025753"
+  viaf: "95840484"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q473744
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q473744

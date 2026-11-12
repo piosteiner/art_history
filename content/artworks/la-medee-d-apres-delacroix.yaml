@@ -1,0 +1,138 @@
+public_id: 121595
+title_lang: fr
+title: La Médée, d'après Delacroix
+names:
+  - lang: de
+    role: translation
+    text: Medea, nach Delacroix
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8530/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: paul-cezanne
+created: 1880/1885
+kind: oil painting
+medium: Aquarell und Deckfarbe über Grafitstift auf Papier (vélin), Kanten beschnitten
+dimensions: [39.5, 26]
+institution: kunsthaus-zurich
+inventory_number: "2371"
+web_url: https://collection.kunsthaus.ch/de/collection/item/8530/
+wikidata_id: Q63517567
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/M%C3%A9d%C3%A9e%2C_d%E2%80%99apr%C3%A8s_Delacroix%2C_par_Paul_C%C3%A9zanne.jpg/1280px-M%C3%A9d%C3%A9e%2C_d%E2%80%99apr%C3%A8s_Delacroix%2C_par_Paul_C%C3%A9zanne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:M%C3%A9d%C3%A9e,_d%E2%80%99apr%C3%A8s_Delacroix,_par_Paul_C%C3%A9zanne.jpg
+    license: Public domain
+    credit: Paul Cézanne / After Eugène Delacroix
+provenance:
+  - owner: artist/paul-cezanne
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8530/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/ambroise-vollard
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8530/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/cornelis-hoogendijk
+    ended: 1911
+    direct: true
+    place: the-hague
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8530/
+        note: "Footnote: ZKG/KHZ Fangblatt Gr. Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/frederik-muller-cie
+    role: agent
+    acquired: 1912-05-22
+    ended: 1912-05-22
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Lot 101; Auktion Hoogendijk Collection
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8530/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/paul-cassirer
+    acquired: 1912
+    ended: 1926-01-07
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8530/
+        note: "Footnote: Korrespondenz, Feilchenfeldt, 06.06.2023 und 03.07.2025."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/suzanne-aimee-cassirer-paret
+    acquired: 1926-01-07
+    ended: 1935-03
+    direct: true
+    place: berlin
+    label: later Cassirer-Bernfeld; Berlin and Menton, Erbe
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8530/
+        note: "Footnote: Wie oben Fussnote 5. Vgl. auch Samml.-Kat. 57 Meisterwerke 2000, S. 34: «Paul Cassirers Tochter Suse war nach Mentone emigriert und hatte die von ihrem Vater geerbten Kunstwerke, darunter zehn Cézanne-Aquarelle, im Umzugsgut mitgenommen. Als sie Geld brauchte, benachrichtigte sie meinen Vater, und ihr Kunstbesitz wurde nach Amsterdam geschickt. [...] Meine Mutter erinnert sich, dass sie mit den Aq…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/paul-cassirer-co-amsterdam
+    role: dealer
+    acquired: 1935-03
+    ended: 1935-04
+    method: purchase
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8530/
+        note: "Footnote: Wie oben Fussnote 5; ZKG/KHZ Inventarbuch Gr. Slg.; ZKG/KHZ Fangblatt Gr. Slg.; Sitzungsprotokoll der Sammlungskommission, 03.04.1935, I.2.a, Archiv ZKG/KHZ, 10.30.10.41."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1935-05-03
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/8530/
+        note: "Footnote: Wie oben Fussnote 7; Sitzungsprotokoll der Sammlungskommission, 03.04.1935, I.2.a und 11.05.1935, I.a, Archiv ZKG/KHZ, 10.30.10.41."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "867"
+    label: Venturi (catalogue raisonné)
+  - number: "145"
+    label: Rewald 1983 RWC (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/8530/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/8530/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/8530/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/8530/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/8530/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/8530/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/8530/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

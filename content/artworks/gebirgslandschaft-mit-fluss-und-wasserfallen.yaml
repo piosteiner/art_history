@@ -1,0 +1,88 @@
+public_id: 120542
+title_lang: de
+title: Gebirgslandschaft mit Fluss und Wasserfällen
+names:
+  - lang: en
+    role: translation
+    text: Mountain Landscape with River and Waterfalls
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2207/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: former
+    text: Flusslandschaft
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2207/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+attribution_label: Anonymous, Roman
+created: c. 1660
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [73, 95.5]
+institution: kunsthaus-zurich
+inventory_number: "2315"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2207/
+wikidata_id: Q131585140
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/02/Unknown_%28Roman%29%2C_Salvator_Rosa_historical_attribution_-_Gebirgslandschaft_mit_Fluss_und_Wasserf%C3%A4llen_-_2315_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Unknown_(Roman),_Salvator_Rosa_historical_attribution_-_Gebirgslandschaft_mit_Fluss_und_Wasserf%C3%A4llen_-_2315_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: anonymous
+provenance:
+  - owner: person/giovanni-wagner
+    place: rome
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2207/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 15.03.1934 III.; 20.04.1934 II. b, Archiv ZKG/KHZ, 10.30.10.41."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: Frau E. Rudolf-Wagner
+    ended: 1934-03-15
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2207/
+        note: "Footnote: Wie oben Fussnote 3; ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1934-03-15
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2207/
+        note: "Footnote: Wie oben Fussnoten 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2207/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2207/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2207/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2207/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2207/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2207/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2207/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,85 @@
+public_id: 121187
+title_lang: de
+title: Der Künstler, seine Frau und ihre Kinder
+names:
+  - lang: en
+    role: translation
+    text: Double Portrait of Pieter Coecke van Aelst and Mayken Verhulst
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/463/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: pieter-coecke-van-aelst
+created: c. 1550
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Eichenholz
+dimensions: [50.5, 59]
+institution: kunsthaus-zurich
+inventory_number: "2342"
+web_url: https://collection.kunsthaus.ch/de/collection/item/463/
+wikidata_id: Q125692803
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Pieter_Coecke_van_Aelst_%28attributed_to%29_or_Anonymous_-_Pieter_Coecke_van_Aelst%2C_His_Wife_Mayken_Verhulst_and_Their_Children.jpg/1280px-Pieter_Coecke_van_Aelst_%28attributed_to%29_or_Anonymous_-_Pieter_Coecke_van_Aelst%2C_His_Wife_Mayken_Verhulst_and_Their_Children.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Pieter_Coecke_van_Aelst_(attributed_to)_or_Anonymous_-_Pieter_Coecke_van_Aelst,_His_Wife_Mayken_Verhulst_and_Their_Children.jpg
+    license: Public domain
+    credit: Attributed to Pieter Coecke van Aelst
+provenance:
+  - owner_label: Pauli
+    acquired: 1930
+    ended: 1930
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/463/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/adolf-johr
+    acquired: 1934-09-14 or earlier
+    ended: 1935
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/463/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1935
+    method: gift
+    direct: true
+    place: zurich
+    label: «Geschenk zum 25-jährigen Bestehen des Kunsthauses»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/463/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: 157B
+    label: Friedländer (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/463/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/463/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/463/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/463/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/463/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/463/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/463/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

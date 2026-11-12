@@ -1,0 +1,73 @@
+public_id: 121252
+title_lang: fr
+title: Terrain à vendre
+names:
+  - lang: de
+    role: translation
+    text: Grundstück zu verkaufen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5456/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Property for Sale
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5456/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: marianne-von-werefkin
+created: 1916
+kind: oil painting
+medium: Öl auf Karton
+dimensions: [52, 72.5]
+institution: kunsthaus-zurich
+inventory_number: "2607"
+web_url: https://collection.kunsthaus.ch/de/collection/item/5456/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586264
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/04/Marianne_von_Werefkin_-_Terrain_%C3%A0_vendre_-_2607_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Marianne_von_Werefkin_-_Terrain_%C3%A0_vendre_-_2607_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Marianne von Werefkin
+provenance:
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1939-03-23
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5456/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission Archiv 10.30.10.41-42, 23.03.1939, III. 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5456/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5456/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5456/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5456/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5456/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5456/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5456/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

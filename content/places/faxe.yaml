@@ -1,0 +1,35 @@
+public_id: 120334
+name: Faxe
+names:
+  - lang: de
+    role: translation
+    text: Faxe (Ort)
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q777334
+  - lang: nl
+    role: translation
+    text: Fakse (plaats)
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q777334
+kind: settlement
+parent: denmark
+country_code: DK
+location: [12.1181, 55.2544]
+wikidata_id: Q777334
+metadata:
+  sources: [Wikidata Q777334 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q777334
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q777334
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q777334

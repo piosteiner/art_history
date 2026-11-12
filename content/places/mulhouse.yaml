@@ -1,0 +1,53 @@
+public_id: 120134
+name: Mulhouse
+names:
+  - lang: ja
+    role: translation
+    text: ミュルーズ
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q79815
+  - lang: zh
+    role: translation
+    text: 米卢斯
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q79815
+  - lang: ko
+    role: translation
+    text: 뮐루즈
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q79815
+  - lang: de
+    role: translation
+    text: Mülhausen
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q79815
+  - lang: ru
+    role: translation
+    text: Мюлуз
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q79815
+kind: settlement
+parent: haute-rhin
+country_code: FR
+location: [7.33917, 47.74861]
+wikidata_id: Q79815
+metadata:
+  sources: [Wikidata Q79815 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q79815
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q79815
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q79815

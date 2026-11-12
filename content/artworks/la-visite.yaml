@@ -1,0 +1,84 @@
+public_id: 121062
+title_lang: fr
+title: La Visite
+names:
+  - lang: fr
+    role: translation
+    text: Intérieur canapé bleu
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3622/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: translation
+    text: Der Besuch
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3622/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: The Visit
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3622/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: felix-vallotton
+created: 1899
+kind: painting
+medium: Gouache auf Karton
+dimensions: [55.5, 87]
+institution: kunsthaus-zurich
+inventory_number: "883"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3622/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q47528213
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/25/F%C3%A9lix_Vallotton_-_La_Visite_-_883_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Vallotton_-_La_Visite_-_883_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Félix Vallotton
+provenance:
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1909
+    method: purchase
+    direct: true
+    place: zurich
+    label: «Kauf aus der Ausstellung im Künstlerhaus Zürich»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3622/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "255"
+    label: Ducrey (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3622/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3622/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3622/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3622/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3622/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3622/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3622/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,127 @@
+public_id: 120300
+title_lang: de
+title: Die Damen von Hastings
+names:
+  - lang: en
+    role: translation
+    text: The Ladies of Hastings
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: henry-fuseli
+created: 1798/1800
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [111, 86]
+institution: kunsthaus-zurich
+inventory_number: 1984/0057
+web_url: https://collection.kunsthaus.ch/de/collection/item/1669/
+on_loan: true
+on_loan_since: 1984
+wikidata_id: Q131585658
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c1/Henry_Fuseli_-_Die_Damen_von_Hastings_-_1984-0057_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henry_Fuseli_-_Die_Damen_von_Hastings_-_1984-0057_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Henry Fuseli
+provenance:
+  - owner: person/johann-heinrich-fussli
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/susan-north
+    direct: true
+    label: Countess of Guilford (*1771, +1837)
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/john-ryder
+    acquired: 1926-07-18 or earlier
+    method: inheritance
+    direct: true
+    label: 5th Earl of Harrowby (*1864, +1956) (Sammler/-in); Stafford
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+        note: "Footnote: Werkliste Füssli Gemälde, undatiert, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.57; Kat. Kunsthaus Zürich 1926, No. 55, S. 13, https://digital.kunsthaus.ch/viewer/image/47550/15/LOG_0006/ (01.06.2026)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/fussli-konsortium
+    ended: 1941
+    method: purchase
+    direct: true
+    place: basel
+    label: Basel and Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg.; Kat. Kunsthaus Zürich 1941, No. 21, S. 7, https://digital.kunsthaus.ch/viewer/image/44424/9/LOG_0005/ (01.06.2026): «Privatbesitz Zürich»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/martin-hurlimann
+    ended: 1984
+    direct: true
+    place: zollikon
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/regine-schindler-hurlimann
+    acquired: 1984
+    ended: 2013
+    method: inheritance
+    direct: true
+    place: bern
+    label: Bern and Uerikon
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2013
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.525.927
+    label: Schiff (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

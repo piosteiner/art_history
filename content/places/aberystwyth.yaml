@@ -1,0 +1,47 @@
+public_id: 120239
+name: Aberystwyth
+names:
+  - lang: ja
+    role: translation
+    text: アベリストウィス
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q213154
+  - lang: zh
+    role: translation
+    text: 阿伯里斯特威斯
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q213154
+  - lang: ko
+    role: translation
+    text: 에버리스트위스
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q213154
+  - lang: ru
+    role: translation
+    text: Аберистуит
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q213154
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-4.08167, 52.41444]
+wikidata_id: Q213154
+metadata:
+  sources: [Wikidata Q213154 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q213154
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q213154
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q213154

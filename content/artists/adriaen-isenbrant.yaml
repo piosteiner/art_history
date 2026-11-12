@@ -1,0 +1,51 @@
+public_id: 120234
+name: Adriaen Isenbrant
+given_name: Adriaen
+family_name: Isenbrant
+birth: c. 1490
+death: 1551
+wikidata_id: Q367858
+metadata:
+  sources: [Wikidata Q367858 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q367858
+  - type: born_in
+    to: place/bruges
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q367858
+  - type: died_in
+    to: place/bruges
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q367858
+  - type: worked_in
+    to: place/bruges
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q367858
+identifiers:
+  bnf: 14965919m
+  gnd: "122718143"
+  idref: "188238301"
+  lc: nr99009818
+  rkd: "41157"
+  ulan: "500018618"
+  viaf: "32268759"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q367858
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q367858

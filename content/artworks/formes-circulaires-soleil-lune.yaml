@@ -1,0 +1,84 @@
+public_id: 120174
+title: Formes circulaires. Soleil, Lune
+names:
+  - lang: null
+    role: translation
+    text: Kreisformen. Sonne, Mond
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/138/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Circular Forms. Sun, Moon
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/138/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: robert-delaunay
+created: 1913/1931
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [200, 197]
+institution: kunsthaus-zurich
+inventory_number: 1957/0027
+web_url: https://collection.kunsthaus.ch/de/collection/item/138/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q124294688
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d8/Robert_Delaunay_-_Formes_circulaires._Soleil%2C_Lune_-_1957-0027_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Robert_Delaunay_-_Formes_circulaires._Soleil,_Lune_-_1957-0027_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Robert Delaunay
+provenance:
+  - owner: person/sonia-delaunay
+    ended: 1957
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/138/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1957
+    method: purchase
+    direct: true
+    place: zurich
+    label: Kauf mit einem Beitrag von Dr. Franz Meyer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/138/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "277"
+    label: Habsque 1957, Nr. (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/138/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/138/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/138/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/138/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/138/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/138/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/138/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

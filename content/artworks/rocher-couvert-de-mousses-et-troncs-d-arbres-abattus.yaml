@@ -1,0 +1,145 @@
+public_id: 120801
+title_lang: fr
+title: Rocher couvert de mousses et troncs d'arbres abattus
+names:
+  - lang: de
+    role: translation
+    text: Moosbewachsener Felsen und Baumstämme
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Moss-Covered Rock and Tree Trunks
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: alexandre-calame
+created: 1839/1845
+kind: oil painting
+medium: Öl auf Karton
+dimensions: [30.5, 35.5]
+institution: kunsthaus-zurich
+inventory_number: ZKG.2018/0180
+web_url: https://collection.kunsthaus.ch/de/collection/item/289948/
+wikidata_id: Q131585286
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2c/Alexandre_Calame_-_Rocher_couvert_de_mousses_et_troncs_d%27arbres_abattus_-_ZKG.2018-0180_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Alexandre_Calame_-_Rocher_couvert_de_mousses_et_troncs_d%27arbres_abattus_-_ZKG.2018-0180_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Alexandre Calame
+provenance:
+  - owner: person/amelie-calame
+    acquired: 1865
+    ended: 1865
+    method: inheritance
+    direct: true
+    place: geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/arthur-calame
+    acquired: 1907
+    ended: 1907
+    method: inheritance
+    direct: true
+    place: geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/marguerite-buscarlet-calame
+    acquired: 1919
+    ended: 1919
+    method: inheritance
+    direct: true
+    place: geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/louis-buscarlet
+    acquired: 1924
+    ended: 1924
+    method: inheritance
+    direct: true
+    place: geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    acquired: 1924
+    direct: true
+    place: geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/louis-glatt
+    label: no. 52
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+        note: "Footnote: Etikette verso, vgl. Beschriftung."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    ended: 2018
+    method: inheritance
+    place: ebnat-kappel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+        note: "Footnote: Angaben von Anna-Verena Hoffmann, Galerie Schlössli."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-schlossli
+    role: dealer
+    acquired: 2018
+    ended: 2018
+    direct: true
+    place: gontenschwil
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2018
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

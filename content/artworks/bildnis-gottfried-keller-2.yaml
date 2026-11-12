@@ -1,0 +1,131 @@
+public_id: 121164
+title_lang: de
+title: Bildnis Gottfried Keller
+names:
+  - lang: en
+    role: translation
+    text: Portrait of Gottfried Keller
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/431/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Portrait de Gottfried Keller
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/431/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: arnold-bocklin
+created: 1889
+created_label: 1889 (unfinished)
+completion: unfinished
+kind: painting
+medium: Tempera auf Holz
+dimensions: [81.5, 55.5]
+institution: kunsthaus-zurich
+inventory_number: "1196"
+web_url: https://collection.kunsthaus.ch/de/collection/item/431/
+on_loan: true
+on_loan_since: 1918
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586755
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/97/Arnold_B%C3%B6cklin_-_Bildnis_Gottfried_Keller_-_1196_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Arnold_B%C3%B6cklin_-_Bildnis_Gottfried_Keller_-_1196_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Arnold Böcklin
+provenance:
+  - owner: artist/arnold-bocklin
+    role: estate
+    acquired: 1901
+    ended: 1916
+    method: inheritance
+    direct: true
+    place: florence
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/431/
+        note: "Footnote: Archiv der Kunstsammlungen des Bundes, Gottfried Keller Stiftung, https://kdb.e-pics.ethz.ch/latelogin.jspx?recordsWithCatalogName=KdB:6654 [Zugriff: 05.01.2022]; Rolf Andree: Arnold Böcklin. Die Gemälde (Schweizerisches Institut für Kunstwissenschaft. Oeuvre-Kataloge Schweizer Künstler 6), Basel: Reinhardt, 1977, Nr. 419."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-m-goldschmidt-co
+    role: dealer
+    acquired: 1902
+    ended: 1902
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/431/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-fritz-gurlitt
+    role: dealer
+    acquired: 1912
+    ended: 1912
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/431/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-neupert
+    role: dealer
+    acquired: 1916
+    ended: 1916
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/431/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/gottfried-keller-stiftung
+    acquired: 1916
+    ended: 1916
+    method: purchase
+    direct: true
+    place: bern
+    label: Bundesamt für Kultur; Nr. 419
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/431/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "489.419"
+    label: Andree 1998 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/431/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/431/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/431/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/431/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/431/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/431/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/431/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/431/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

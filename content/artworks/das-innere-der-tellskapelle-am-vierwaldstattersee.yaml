@@ -1,0 +1,82 @@
+public_id: 121109
+title_lang: de
+title: Das Innere der Tellskapelle am Vierwaldstättersee
+names:
+  - lang: en
+    role: translation
+    text: Interior of the ‘William Tell’ Chapel on the Lake of Lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3829/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Intérieur de la chapelle de Tell au bord du Lac des Quatre-Cantons
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3829/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: ludwig-vogel
+created: 1834
+kind: oil painting
+medium: Öl auf Papier auf Leinwand
+dimensions: [44, 45]
+institution: kunsthaus-zurich
+inventory_number: "12"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3829/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131587404
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4e/Ludwig_Vogel_-_Das_Innere_der_Tellskapelle_am_Vierwaldst%C3%A4ttersee_-_12_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Ludwig_Vogel_-_Das_Innere_der_Tellskapelle_am_Vierwaldst%C3%A4ttersee_-_12_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ludwig Vogel
+provenance:
+  - owner: person/gottlob-bernhard
+    ended: 1835
+    method: purchase
+    direct: true
+    place: stuttgart
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3829/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1835
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3829/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3829/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3829/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3829/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3829/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3829/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3829/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3829/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

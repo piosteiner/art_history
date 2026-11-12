@@ -1,0 +1,88 @@
+public_id: 120424
+title_lang: de
+title: Fuss-Studie
+creator: anselm-feuerbach
+created: c. 1870
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [45, 31]
+institution: kunsthaus-zurich
+inventory_number: 1954/0006
+web_url: https://collection.kunsthaus.ch/de/collection/item/1853/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585245
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5f/Anselm_Feuerbach_-_Fuss-Studie_-_1954-0006_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Anselm_Feuerbach_-_Fuss-Studie_-_1954-0006_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Anselm Feuerbach
+provenance:
+  - owner: institution/galerie-fischer
+    role: dealer
+    ended: 1926-01-17
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1853/
+        note: "Footnote: Eintrag vom 17. 01.1926, Archiv ZKG/KHZ, Ausstellungsverkäufe 01.01.1925-26.09.1926, 10.30.40.25; Liste der Feuerbachs von Théodore Fischer Luzern [ohne Datum], Archiv ZKG/KHZ, Korrespondenz Ausstellung Besitzer/Händler 01.01.1926-30.06.1927, 10.30.30.57; Empfangsbestätigung des «Echtheitsausweis für Gemälde Nr. 23 'Fussstudie'» ausgestellt von Theo Fischer an HWyss. Ing., 24.01.1926, Archiv ZKG/K…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/johannes-wyss
+    acquired: 1926-01-17
+    ended: 1952-11-04
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1853/
+        note: "Footnote: Eintrag, 17.01.1926, Archiv ZKG/KHZ, Ausstellungsverkäufe, wie oben Fussnote 3; Schreiben von Dr. Iur. Gustav Maurer, Rechtsanwalt, 12.10.1953, Archiv ZKG/KHZ, Eingehende Korrespondenz, 10.30.30.309; Kat. Kunsthaus Zürich 1926, S. 6, Nr. 23; Empfangsbestätigung des «Echtheitsausweis für Gemälde Nr. 23 'Fussstudie'», wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/johannes-wyss
+    role: estate
+    acquired: 1952-11-04
+    ended: 1954-11-23
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1853/
+        note: "Footnote: Schreiben von Dr. Iur. Gustav Maurer, 12.10.1953, wie oben Fussnote 4; Sitzungsprotokoll der Sammlungskommission, 23.11.1954, S. 3 Nr. IV Geschenke, Archiv ZKG/KHZ, 10.30.10.42a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1954-11-23
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1853/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1853/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1853/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1853/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1853/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1853/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1853/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1853/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

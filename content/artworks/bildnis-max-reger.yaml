@@ -1,0 +1,113 @@
+public_id: 121303
+title_lang: de
+title: Bildnis Max Reger
+names:
+  - lang: en
+    role: translation
+    text: Portrait of Max Reger
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/607/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Portrait de Max Reger
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/607/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: max-beckmann
+created: 1917
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [100, 70.5]
+institution: kunsthaus-zurich
+inventory_number: 1946/0010
+web_url: https://collection.kunsthaus.ch/de/collection/item/607/
+on_loan: true
+on_loan_since: 1930
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586218
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7b/Max_Beckmann_-_Bildnis_Max_Reger_-_1946-0010_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Max_Beckmann_-_Bildnis_Max_Reger_-_1946-0010_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Max Beckmann
+provenance:
+  - owner: person/henry-b-simms
+    acquired: 1917
+    ended: 1919
+    direct: true
+    place: hamburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/607/
+        note: "Footnote: Tiedemann, Kat.-Nr. 191, https://www.beckmann-gemaelde.org/191-bildnis-max-reger (12.01.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: artist/max-beckmann
+    acquired: 1919
+    ended: 1920
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/607/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/alexander-leo-soldenhoff
+    acquired: 1920
+    ended: 1947
+    method: exchange
+    direct: true
+    place: linthal
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/607/
+        note: "Footnote: Wie oben Fussnote 2: nach Göpel/Göpel 1976: «Der Maler und Bühnenbildner Alexander Soldenhoff (gest. 1951) erwarb '191 Bildnis Max Reger' um 1920 im Atelier Beckmanns für einen Zürcher Juristen, der ihm bei Kunstkäufen freie Hand ließ. Dieser war aber nicht bereit, das Reger-Bildnis in seine Sammlung aufzunehmen. Daraufhin übernahm Soldenhoff das Porträt, im Tausch gegen eigene Bilder, die er dem …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1947
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/607/
+        note: "Footnote: Wie oben Fussnote 2; Sitzungsprotokoll der Sammlungskommission, 31.07.1946, III.a.1, Archiv ZKG/KHZ, 10.30.10.42."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.191
+    label: Göpel 1976 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/607/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/607/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/607/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/607/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/607/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/607/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/607/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/607/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

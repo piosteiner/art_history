@@ -1,0 +1,52 @@
+public_id: 121408
+name: Hendrick Avercamp
+given_name: Hendrick
+family_name: Avercamp
+birth: 1585-01-27
+death: 1634-05-15
+wikidata_id: Q212593
+metadata:
+  sources: [Wikidata Q212593 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q212593
+  - type: born_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q212593
+  - type: worked_in
+    to: place/amsterdam
+    period: 1607/1608
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q212593
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/53/Hendrick_Avercamp.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hendrick_Avercamp.jpg
+    license: Public domain
+    credit: Anonymous
+identifiers:
+  bnf: 14966499z
+  gnd: "118960903"
+  idref: "061690228"
+  kulturnav: 60db3ac5-7921-472d-be1a-e29c7f1f5206
+  lc: n86816096
+  rkd: "3065"
+  ulan: "500030575"
+  viaf: "76587203"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q212593
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q212593

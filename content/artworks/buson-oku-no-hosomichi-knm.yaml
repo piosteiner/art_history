@@ -7,6 +7,8 @@ medium: Handscroll, ink and colour on paper
 materials: [ink, paper]
 dimensions: [29.2]
 institution: kyoto-national-museum
+inventory_number: A甲534
+web_url: https://colbase.nich.go.jp/collection_items/kyohaku/A%E7%94%B2534
 description_md: "A handscroll in which [[artist/yosa-buson]] (1716–1783), the haiku poet second only to [[person/matsuo-basho]], wrote out and illustrated Bashō’s poetic diary: Bashō and his companion Sora start on their journey, sketchily drawn in ink lines and colour washes, moving away while three friends stand deferentially and sadly bid them farewell — setting the melancholy, sentimental tone of the text. [[source/history-of-japanese-art|pp. 333–334, fig. 389]]"
 relationships:
   - type: depicts_person
@@ -21,6 +23,18 @@ relationships:
         locator: pp. 333–334, fig. 389
   - type: illustrates
     to: literature/oku-no-hosomichi
+  - type: designated_as
+    to: term/important-cultural-property-japan
+    notes_md: Kyoto National Museum
+    sources:
+      - url: https://colbase.nich.go.jp/collection_items/kyohaku/A%E7%94%B2534
+        source: colbase
+        accessed: 2026-11-11
+images:
+  - url: https://colbase.nich.go.jp/media/kyohaku/A%E7%94%B2534/image/slideshow_s/317680_difile4-L.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/kyohaku/A%E7%94%B2534
+    license: CC BY 4.0
+    credit: Kyoto National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -43,3 +57,7 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: pp. 333–334, fig. 389
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/kyohaku/A%E7%94%B2534
+      source: colbase
+      accessed: 2026-11-11

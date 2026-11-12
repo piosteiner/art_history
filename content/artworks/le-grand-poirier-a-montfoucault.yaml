@@ -1,0 +1,178 @@
+public_id: 120564
+title_lang: fr
+title: Le Grand Poirier à Montfoucault
+names:
+  - lang: de
+    role: translation
+    text: Der grosse Birnbaum in Montfoucault
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: The Big Pear Tree at Montfoucault
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: camille-pissarro
+created: 1876
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [54, 65]
+institution: kunsthaus-zurich
+inventory_number: 1984/0012
+web_url: https://collection.kunsthaus.ch/de/collection/item/2287/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q21686508
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/10/Camille_Pissarro_-_Der_gro%C3%9Fe_Birnbaum_in_Montfoucault_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Camille_Pissarro_-_Der_gro%C3%9Fe_Birnbaum_in_Montfoucault_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Camille Pissarro
+provenance:
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1877-05-28
+    ended: 1877-05-28
+    method: auction
+    place: paris
+    label: «Versteigerung (Pissarro, Caillebotte, Sisley und andere)»; Lot 5
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+        note: "Footnote: Pissarro/Durand-Ruel Snollaerts 2005 Bd. II, No. 462, S. 332; Pissarro/Venturi 1939 Bd. I, No. 360, S. 131."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/jean-dollfus
+    ended: 1911-08-02
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1912-03-02
+    ended: 1912-03-02
+    method: auction
+    place: paris
+    label: Lot 54; Sammlung Jean Dollfus
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/bernheim-jeune
+    role: dealer
+    ended: 1912-03-13
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+        note: "Footnote: Pissarro/Durand-Ruel Snollaerts 2005, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/paul-cassirer
+    acquired: 1912-03-13
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+        note: "Footnote: Wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/r-molenaar
+    ended: 1913-04-28
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+        note: "Footnote: Wie oben Fussnote 3; Auktion in München in der Galerie Helbing München, 28.04.1913, Lot 157, https://doi.org/10.11588/diglit.48782#0042 (12.01.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-helbing
+    role: agent
+    acquired: 1913-04-28
+    ended: 1913-04-28
+    method: auction
+    direct: true
+    place: munich
+    label: Lot 157 «Birnbaum in Landschaft»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+        note: "Footnote: Wie oben Fussnote 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/emil-zimmermann
+    acquired: 1913-04-28
+    method: purchase
+    direct: true
+    label: 1450 Mark
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+        note: "Footnote: Wie oben Fussnote 9; Auktion Hugo Helbing München 28.04.1913, wie oben Fussnote 12: Annotation mit Bleistift: «Emil Zimmermann, [unleserlich] 12/2»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-m-goldschmidt-co
+    role: dealer
+    ended: 1926
+    place: frankfurt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/johanna-wolf
+    co_owners: [person/walter-l-wolf]
+    acquired: 1926
+    ended: 1984-01-20
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+        note: "Footnote: Wie oben Fussnote 8; Brief von Morris Gutmann (French Art Galleries Inc.), New York an Unbekannt, 08.11.1941, ZKG/KHZ, Inventarbogen/Werkdossier Slg.; Handschriftliche Notiz mit dem Erwerbspreis, ZKG/KHZ, Inventarbogen/Werkdossier Slg.; Öffentliche letztwillige Verfügung, Johanna Wolf geb. Heilbronner, Zürich, datiert auf den 20.01.1984, ZKG/KHZ, Depotdokumente. Walter L. Wolf verstarb 1981, seine…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1984-01-20
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+        note: "Footnote: Wie oben Fussnote 17."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.332.462
+    label: Pissarro/Durand-Ruel Snollaerts 2005 (catalogue raisonné)
+  - number: I.131.360
+    label: Pissarro/Venturi 1939 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

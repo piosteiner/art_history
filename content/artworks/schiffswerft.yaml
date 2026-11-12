@@ -1,0 +1,86 @@
+public_id: 120795
+title: Schiffswerft
+names:
+  - lang: null
+    role: translation
+    text: Dockyard
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2859/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: original
+    text: Skipsopphugging
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2859/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: edvard-munch
+created: 1911
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [99, 110]
+institution: kunsthaus-zurich
+inventory_number: "1924"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2859/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q18890857
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/93/Edvard_Munch_-_Schiffswerft_-_1924_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_Schiffswerft_-_1924_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Edvard Munch
+provenance:
+  - owner: person/alfred-rutschi
+    acquired: 1922
+    ended: 1929
+    method: purchase
+    direct: true
+    place: zurich
+    label: «Kauf aus der Ausstellung im Kunsthaus»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2859/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1929
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2859/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.872.849
+    label: Woll (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2859/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2859/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2859/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2859/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2859/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2859/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2859/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

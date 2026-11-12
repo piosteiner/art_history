@@ -1,0 +1,101 @@
+public_id: 120866
+title_lang: de
+title: Studie zum Rosenlauigletscher
+names:
+  - lang: en
+    role: translation
+    text: Study of the Rosenlaui Glacier
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/306947/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Etude du glacier de Rosenlaui
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/306947/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Studie des Grindelwaldgletschers
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/306947/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: thomas-fearnley
+created: 1835
+kind: oil painting
+medium: Öl auf Papier auf Leinwand
+dimensions: [24.5, 39.3]
+institution: kunsthaus-zurich
+inventory_number: ZKG.2018/0184
+web_url: https://collection.kunsthaus.ch/de/collection/item/306947/
+wikidata_id: Q131586583
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ec/Thomas_Fearnley_-_Studie_zum_Rosenlauigletscher_-_ZKG.2018-0184_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Thomas_Fearnley_-_Studie_zum_Rosenlauigletscher_-_ZKG.2018-0184_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Thomas Fearnley
+provenance:
+  - owner_label: unknown (collector)
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/306947/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/n-a-heyerdahl
+    acquired: 1903
+    ended: 1903
+    direct: true
+    label: Oslo (=Kristiania)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/306947/
+        note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/christen-sveaas
+    ended: 2018
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/306947/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2018
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/306947/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/306947/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/306947/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/306947/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/306947/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/306947/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/306947/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/306947/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

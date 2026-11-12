@@ -1,0 +1,22 @@
+public_id: 121571
+name: Zeist
+kind: settlement
+parent: province-of-utrecht
+country_code: NL
+location: [5.23333, 52.08333]
+wikidata_id: Q10056
+metadata:
+  sources: [Wikidata Q10056 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q10056
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q10056
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q10056

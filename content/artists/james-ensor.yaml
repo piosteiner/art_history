@@ -1,0 +1,73 @@
+public_id: 120100
+name: James Ensor
+given_name: James
+family_name: Ensor
+names:
+  - kind: birth
+    lang: nl
+    role: alternative
+    text: James Sidney Edouard Ensor
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q158840
+birth: 1860-04-13
+death: 1949-11-19
+wikidata_id: Q158840
+metadata:
+  sources: [Wikidata Q158840 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/belgium
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q158840
+  - type: worked_in
+    to: place/brussels
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q158840
+  - type: studied_at
+    to: institution/royal-academy-of-fine-arts-of-brussels
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q158840
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q158840
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q158840
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/James_Ensor_-_Self-portrait_with_flower_hat.jpg/1280px-James_Ensor_-_Self-portrait_with_flower_hat.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:James_Ensor_-_Self-portrait_with_flower_hat.jpg
+    license: Public domain
+    credit: James Ensor
+identifiers:
+  bnf: 12077186d
+  dome: "100"
+  gnd: 11853050X
+  idref: "029069181"
+  kulturnav: 55e9e309-1c67-486d-9703-f6b30813e2b6
+  lc: n50082924
+  nlk: KAC202277104
+  rkd: "26402"
+  ulan: "500032046"
+  viaf: "88625859"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q158840
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q158840

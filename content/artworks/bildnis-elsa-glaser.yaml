@@ -1,0 +1,105 @@
+public_id: 120605
+title_lang: de
+title: Bildnis Elsa Glaser
+names:
+  - lang: en
+    role: translation
+    text: Portrait of Elsa Glaser
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2420/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: edvard-munch
+created: 1913
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [120.5, 85]
+institution: kunsthaus-zurich
+inventory_number: 1946/0001
+web_url: https://collection.kunsthaus.ch/de/collection/item/2420/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q18889811
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f5/Munch_-_Elsa_Glaser%2C_1913%2C_Woll_1066.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Munch_-_Elsa_Glaser,_1913,_Woll_1066.jpg
+    license: Public domain
+    credit: Edvard Munch
+provenance:
+  - owner: person/curt-glaser
+    acquired: 1913
+    ended: 1943-11-23
+    direct: true
+    place: berlin
+    label: Berlin and Ascona
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2420/
+        note: "Footnote: Woll (Vol. III) 2009, S. 1027, Nr. 1066."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/maria-glaser-ash
+    acquired: 1943-11-23
+    ended: 1946
+    method: inheritance
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2420/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/charles-albert-de-burlet
+    acquired: 1946
+    ended: 1946
+    direct: true
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2420/
+        note: "Footnote: Wie oben Fussnote 2; ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1946
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 6000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2420/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: III.1027.1066
+    label: Woll (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2420/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2420/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2420/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2420/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2420/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2420/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2420/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

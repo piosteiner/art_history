@@ -1,0 +1,83 @@
+public_id: 120842
+title: Monsieur Ursenbach
+names:
+  - lang: null
+    role: translation
+    text: Herr Ursenbach
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3023/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Mister Ursenbach
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3023/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Bildnis eines alten Mannes. Monsieur Ursenbach
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3023/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: felix-vallotton
+created: 1885
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [97, 130]
+institution: kunsthaus-zurich
+inventory_number: "907"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3023/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q49019368
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/dc/F%C3%A9lix_Vallotton_-_Monsieur_Ursenbach_-_907_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Vallotton_-_Monsieur_Ursenbach_-_907_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Félix Vallotton
+provenance:
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1910
+    method: purchase
+    direct: true
+    place: zurich
+    label: «Kauf nach der Ausstellung im Künstlerhaus Zürich von 1909»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3023/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "11"
+    label: Ducrey (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3023/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

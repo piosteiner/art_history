@@ -1,0 +1,96 @@
+public_id: 121585
+title_lang: de
+title: Struthan Winkelried bei dem erlegten Drachen
+names:
+  - lang: en
+    role: translation
+    text: Struthan Winkelried at the bagged dragon
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/816/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Struthan Winkelried et le dragon tué
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/816/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: theodor-von-deschwanden
+created: 1847
+kind: oil painting
+medium: Öl auf Leinwand auf Holz
+dimensions: [36, 28]
+institution: kunsthaus-zurich
+inventory_number: 1995/0019
+web_url: https://collection.kunsthaus.ch/de/collection/item/816/
+wikidata_id: Q131586453
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/62/Theodor_von_Deschwanden_-_Struthan_Winkelried_bei_dem_erlegten_Drachen_-_1995-0019_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Theodor_von_Deschwanden_-_Struthan_Winkelried_bei_dem_erlegten_Drachen_-_1995-0019_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Theodor von Deschwanden
+provenance:
+  - owner_label: Frau von Deschwanden
+    acquired: 1881
+    ended: 1883 or later
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/816/
+        note: "Footnote: J. Stadler: Erinnerungen aus der Landesausstellung 1883 in Zürich (Neujahrsblatt der Künstlergesellschaft), Zürich: Künstlergesellschaft, 1884."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/h-odermatt
+    acquired: 1951
+    ended: 1951
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/816/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/charles-frey-bettoni
+    ended: 1995
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/816/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1995
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/816/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/816/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/816/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/816/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/816/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/816/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/816/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/816/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

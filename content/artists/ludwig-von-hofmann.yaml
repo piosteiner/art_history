@@ -1,0 +1,58 @@
+public_id: 120204
+name: Ludwig von Hofmann
+given_name: Ludwig
+family_name: von Hofmann
+birth: 1861-08-17
+death: 1945-08-23
+wikidata_id: Q318551
+metadata:
+  sources: [Wikidata Q318551 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q318551
+  - type: born_in
+    to: place/darmstadt
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q318551
+  - type: student_of
+    to: artist/pierre-puvis-de-chavannes
+    sources:
+      - accessed: 2026-11-12
+        property: P1066
+        wikidata: Q318551
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q318551
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6a/Ludwig_von_Hofmann.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ludwig_von_Hofmann.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 12676523d
+  dome: "410"
+  gnd: "118552708"
+  idref: "081021399"
+  kulturnav: 5efe59db-d38f-4d6a-8296-9f0f8bce37f0
+  lc: n83222939
+  rkd: "39019"
+  ulan: "500023286"
+  viaf: "66588439"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q318551
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q318551

@@ -1,0 +1,126 @@
+public_id: 120295
+title_lang: de
+title: Die drei Eidgenossen beim Schwur auf dem Rütli
+names:
+  - lang: de
+    role: translation
+    text: Rütlischwur
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1641/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: translation
+    text: Die drei Schweizer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1641/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: The Oath on the Rütli
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1641/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Le Serment du Grütli
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1641/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Le Serment des trois Suisses
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1641/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: henry-fuseli
+created: 1779/1781
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [267, 178]
+institution: kunsthaus-zurich
+inventory_number: 1989/0015
+web_url: https://collection.kunsthaus.ch/de/collection/item/1641/
+on_loan: true
+on_loan_since: 1989
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q115047172
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a6/Henry_Fuseli_-_Die_drei_Eidgenossen_beim_Schwur_auf_dem_R%C3%BCtli_-_1989-0015_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Henry_Fuseli_-_Die_drei_Eidgenossen_beim_Schwur_auf_dem_R%C3%BCtli_-_1989-0015_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Henry Fuseli
+provenance:
+  - owner: person/johann-heinrich-fussli
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1641/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/johann-kaspar-lavater
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1641/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: place/canton-of-zurich
+    acquired: 1781
+    ended: 1989
+    direct: true
+    place: zurich
+    label: Zürich, Rathaus Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1641/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: place/canton-of-zurich
+    acquired: 1781
+    direct: true
+    place: zurich
+    label: inv. no. 1300_12
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1641/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: I.437.359
+    label: Schiff (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1641/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1641/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1641/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1641/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1641/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1641/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1641/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1641/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

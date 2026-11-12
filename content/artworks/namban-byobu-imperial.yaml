@@ -9,6 +9,8 @@ materials: [paper, gold leaf]
 dimensions: [155, 334]
 dimensions_note: each screen
 institution: museum-of-the-imperial-collections
+inventory_number: SZK002339
+web_url: https://colbase.nich.go.jp/collection_items/shozokan/SZK002339
 description_md: "A pair of [[namban]] screens, read against Japanese custom from left to right: a many-masted foreign galleon arrives in a Japanese port, and its captain and crew walk in procession through the streets to the Jesuit church of Kyoto in the upper right. Tall, moustachioed Europeans in pantaloons and flowing capes were an exotic subject until the country was closed in 1641. [[source/history-of-japanese-art|pp. 247–249, fig. 282]]"
 relationships:
   - type: associated_with
@@ -16,6 +18,18 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 247–249, fig. 282
+  - type: designated_as
+    to: term/important-cultural-property-japan
+    notes_md: The Museum of the Imperial Collections, Sannomaru Shozokan
+    sources:
+      - url: https://colbase.nich.go.jp/collection_items/shozokan/SZK002339
+        source: colbase
+        accessed: 2026-11-11
+images:
+  - url: https://colbase.nich.go.jp/media/shozokan/SZK002339/image/slideshow_s/09-1_%E5%8D%97%E8%9B%AE%E4%BA%BA%E6%B8%A1%E6%9D%A5%E5%9B%B3%E5%B1%8F%E9%A2%A8(%E5%8F%B3%E9%9A%BB).jpg
+    source_url: https://colbase.nich.go.jp/collection_items/shozokan/SZK002339
+    license: CC BY 4.0
+    credit: The Museum of the Imperial Collections, Sannomaru Shozokan, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -35,3 +49,7 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: pp. 247–249, fig. 282
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/shozokan/SZK002339
+      source: colbase
+      accessed: 2026-11-11

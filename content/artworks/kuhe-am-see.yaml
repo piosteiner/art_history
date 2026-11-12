@@ -1,0 +1,73 @@
+public_id: 120746
+title_lang: de
+title: Kühe am See
+names:
+  - lang: en
+    role: translation
+    text: Cows at the Lake
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2731/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: rudolf-koller
+created: 1870
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [96.5, 151]
+institution: kunsthaus-zurich
+inventory_number: "685"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2731/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585460
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7d/Rudolf_Koller_-_K%C3%BChe_am_See_-_685_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Rudolf_Koller_-_K%C3%BChe_am_See_-_685_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Rudolf Koller
+provenance:
+  - owner: person/heinrich-schulthess-von-meiss
+    ended: 1898
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2731/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1898
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2731/
+        note: "Footnote: Kat. Künstlerhaus Zürich 1898, S. 19, wohl Kat. 247, https://digital.kunsthaus.ch/viewer/image/48012/37/ [Zugriff: 06.01.2022]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2731/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2731/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2731/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2731/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2731/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2731/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2731/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

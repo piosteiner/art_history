@@ -1,0 +1,50 @@
+public_id: 120759
+name: Hans Leu the Younger
+given_name: Hans, the Younger
+family_name: Leu
+birth: 1490
+death: 1531-10-24
+wikidata_id: Q18511864
+metadata:
+  sources: [Wikidata Q18511864 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q18511864
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q18511864
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q18511864
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3d/Hans_leu_m%C5%82odszy.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_leu_m%C5%82odszy.jpg
+    license: Public domain
+    credit: Hans Leu the Younger
+identifiers:
+  gnd: "119480573"
+  hls: "018299"
+  idref: "286905736"
+  lc: nr2003020841
+  sikart: "4022924"
+  ulan: "500014725"
+  viaf: "3281663"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q18511864
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q18511864

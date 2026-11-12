@@ -1,0 +1,35 @@
+public_id: 120549
+name: Johann Kölla
+given_name: Johann
+family_name: Kölla
+birth: 1740-03-20
+death: 1778-01-18
+wikidata_id: Q55678510
+metadata:
+  sources: [Wikidata Q55678510 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q55678510
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Portret_van_Johann_K%C3%B6lla%2C_RP-P-1913-224X.jpg/1280px-Portret_van_Johann_K%C3%B6lla%2C_RP-P-1913-224X.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portret_van_Johann_K%C3%B6lla,_RP-P-1913-224X.jpg
+    license: CC0
+    credit: Rijksmuseum
+identifiers:
+  gnd: "142871885"
+  hls: "048931"
+  sikart: "4030722"
+  viaf: "160073511"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q55678510
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q55678510

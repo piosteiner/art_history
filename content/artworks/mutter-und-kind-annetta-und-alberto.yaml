@@ -1,0 +1,106 @@
+public_id: 120120
+title_lang: de
+title: Mutter und Kind (Annetta und Alberto)
+names:
+  - lang: en
+    role: translation
+    text: Mother and Child (Annetta and Alberto)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1247/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Mère et Enfant (Annetta et Alberto)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1247/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: giovanni-giacometti
+created: 1903
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [70, 65]
+institution: kunsthaus-zurich
+inventory_number: GS 257
+web_url: https://collection.kunsthaus.ch/de/collection/item/1247/
+on_loan: true
+on_loan_since: 2005
+wikidata_id: Q131585784
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/92/Giovanni_Giacometti_-_Mutter_und_Kind_%28Annetta_und_Alberto%29_-_GS_257_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Giacometti_-_Mutter_und_Kind_(Annetta_und_Alberto)_-_GS_257_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Giovanni Giacometti
+provenance:
+  - owner: person/bruno-giacometti
+    method: gift
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1247/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/paul-buchi-stiftung
+    ended: 1989
+    method: purchase
+    direct: true
+    place: frauenfeld
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1247/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/bruno-giacometti
+    co_owners: [person/odette-giacometti]
+    acquired: 1989
+    ended: 2005
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1247/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/alberto-giacometti-stiftung
+    acquired: 2005
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1247/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "1903.03"
+    label: Müller/Radlach Giacometti (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1247/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1247/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1247/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1247/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1247/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1247/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1247/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1247/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

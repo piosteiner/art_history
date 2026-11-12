@@ -1,0 +1,91 @@
+public_id: 121288
+title_lang: de
+title: Der Heilige Onophrius
+names:
+  - lang: null
+    role: translation
+    text: Saint Onuphrius
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5850/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: master-of-the-darmstadt-passion
+created: c. 1460
+created_span: uncertain
+kind: painting
+medium: Tempera auf Tannenholz
+dimensions: [99.5, 69]
+institution: kunsthaus-zurich
+inventory_number: "2347"
+web_url: https://collection.kunsthaus.ch/de/collection/item/5850/
+wikidata_id: Q131585509
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ad/Master_of_the_Darmstadt_Passion_-_Der_Heilige_Onophrius_-_2347_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Master_of_the_Darmstadt_Passion_-_Der_Heilige_Onophrius_-_2347_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Master of the Darmstadt Passion
+provenance:
+  - owner: person/zisterzienser-nonnenkloster-baindt
+    direct: true
+    place: baindt
+    label: Bainth, Kreis Ravensburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5850/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown (collector)
+    acquired: 1927
+    ended: 1927
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5850/
+        note: "Footnote: Wolfson 1989, S. 84."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/e-schmid
+    acquired: 1928
+    ended: 1934-12-24
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5850/
+        note: "Footnote: ZKG/KHZ Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1934-12-24
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5850/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5850/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5850/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5850/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5850/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5850/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5850/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5850/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

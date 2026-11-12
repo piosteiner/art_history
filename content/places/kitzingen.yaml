@@ -1,0 +1,22 @@
+public_id: 120602
+name: Kitzingen
+kind: settlement
+parent: bayern
+country_code: DE
+location: [10.16667, 49.73333]
+wikidata_id: Q269447
+metadata:
+  sources: [Wikidata Q269447 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q269447
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q269447
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q269447

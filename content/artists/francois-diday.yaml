@@ -1,0 +1,52 @@
+public_id: 121285
+name: François Diday
+given_name: François
+family_name: Diday
+birth: 1802-02-12
+death: 1877-11-28
+wikidata_id: Q686742
+metadata:
+  sources: [Wikidata Q686742 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q686742
+  - type: born_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q686742
+  - type: died_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q686742
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/10/FrancoisDiday-ByFrancoisVuagnat-1859_BibliothequeDeGeneveCentreDIconographie.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:FrancoisDiday-ByFrancoisVuagnat-1859_BibliothequeDeGeneveCentreDIconographie.jpg
+    license: Public domain
+    credit: François Vuagnat (1826 - 1910)
+identifiers:
+  bnf: "149526771"
+  dodis: P33474
+  gnd: "117636894"
+  hls: "022003"
+  idref: "203591437"
+  rkd: "22567"
+  sikart: "4022884"
+  ulan: "500004758"
+  viaf: "71662432"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q686742
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q686742

@@ -1,0 +1,59 @@
+public_id: 121313
+name: Hendrick Andriessen
+given_name: Hendrick
+family_name: Andriessen
+birth: 1607
+death: 1655
+wikidata_id: Q2193720
+metadata:
+  sources: [Wikidata Q2193720 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2193720
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q2193720
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q2193720
+  - type: died_in
+    to: place/zeeland
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q2193720
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q2193720
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/40/Hendrick_Andriezsoon_002.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hendrick_Andriezsoon_002.jpg
+    license: Public domain
+    credit: Hendrick Andriessen
+identifiers:
+  gnd: "137155778"
+  rkd: "1798"
+  ulan: "500014054"
+  viaf: "81386177"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q2193720
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q2193720

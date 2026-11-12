@@ -1,0 +1,63 @@
+public_id: 120655
+name: Henri Manguin
+given_name: Henri
+family_name: Manguin
+birth: 1874-03-23
+death: 1949-09-25
+wikidata_id: Q1605934
+metadata:
+  sources: [Wikidata Q1605934 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1605934
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q1605934
+  - type: died_in
+    to: place/saint-tropez
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q1605934
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q1605934
+  - type: associated_with
+    to: movement/post-impressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q1605934
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Henri_and_Jeanne_Manguin%2C_1900.jpg/1280px-Henri_and_Jeanne_Manguin%2C_1900.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_and_Jeanne_Manguin,_1900.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "121132948"
+  dome: "237"
+  gnd: "118940554"
+  idref: "029524946"
+  lc: n81074777
+  rkd: "52322"
+  ulan: "500010364"
+  viaf: "12145857777423020913"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1605934
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1605934

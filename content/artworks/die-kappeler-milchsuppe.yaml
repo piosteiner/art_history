@@ -1,0 +1,110 @@
+public_id: 121505
+title_lang: de
+title: Die Kappeler Milchsuppe
+names:
+  - lang: en
+    role: translation
+    text: The Milk Soup at Kappel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/763/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: La Soupe au lait de Kappel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/763/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: albert-anker
+created: 1869
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [98, 137]
+institution: kunsthaus-zurich
+inventory_number: 1998/0009
+web_url: https://collection.kunsthaus.ch/de/collection/item/763/
+on_loan: true
+on_loan_since: 1998
+wikidata_id: Q110989238
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Albert_Anker_-_Die_Kappeler_Milchsuppe_%281869%29.jpg/1280px-Albert_Anker_-_Die_Kappeler_Milchsuppe_%281869%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_Anker_-_Die_Kappeler_Milchsuppe_(1869).jpg
+    license: Public domain
+    credit: Albert Anker
+provenance:
+  - owner_label: Frau Zollinger-Billeter
+    acquired: 1870
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/763/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 201."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-koller
+    role: agent
+    acquired: 1965-11
+    ended: 1965-11
+    method: auction
+    place: zurich
+    label: Lot 1299
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/763/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/erica-a-wipf
+    acquired: 1965-11
+    ended: 1998
+    direct: true
+    place: hausen-am-albis
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/763/
+        note: "Footnote: Wie oben Fussnote 2; ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1998
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/763/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

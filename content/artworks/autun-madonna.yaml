@@ -8,6 +8,7 @@ materials: [birch]
 dimensions: [102.9]
 institution: metropolitan-museum-of-art
 inventory_number: 47.101.15
+web_url: https://www.metmuseum.org/art/collection/search/470311
 images:
   - url: https://images.metmuseum.org/CRDImages/md/web-large/DP212268.jpg
     source_url: https://www.metmuseum.org/art/collection/search/463795
@@ -35,3 +36,6 @@ sources:
   inventory_number:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 6 (7.11.2024)
+    - url: https://www.metmuseum.org/art/collection/search/470311
+      source: metropolitan-museum-collection
+      accessed: 2026-11-11

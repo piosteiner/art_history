@@ -1,0 +1,35 @@
+public_id: 120123
+name: Frauenfeld
+names:
+  - lang: ko
+    role: translation
+    text: 프라우엔펠트
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q68120
+  - lang: ru
+    role: translation
+    text: Фрауэнфельд
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q68120
+kind: settlement
+parent: thurgau
+country_code: CH
+location: [8.89639, 47.55583]
+wikidata_id: Q68120
+metadata:
+  sources: [Wikidata Q68120 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q68120
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q68120
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q68120

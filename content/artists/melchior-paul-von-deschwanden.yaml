@@ -1,0 +1,51 @@
+public_id: 121007
+name: Melchior Paul von Deschwanden
+given_name: Melchior Paul
+family_name: von Deschwanden
+birth: 1811-01-10
+death: 1881-02-25
+wikidata_id: Q683169
+metadata:
+  sources: [Wikidata Q683169 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q683169
+  - type: student_of
+    to: artist/daniel-albert-freudweiler
+    sources:
+      - accessed: 2026-11-12
+        property: P1066
+        wikidata: Q683169
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q683169
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/20210825_Stans_Deschwanden-5.tif/lossy-page1-1280px-20210825_Stans_Deschwanden-5.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:20210825_Stans_Deschwanden-5.tif
+    license: CC BY-SA 4.0
+    credit: chrisaliv
+identifiers:
+  gnd: 11867157X
+  hls: "022002"
+  idref: "245034196"
+  lc: no2007094235
+  rkd: "125624"
+  sikart: "4022883"
+  ulan: "500124709"
+  viaf: "806157"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q683169
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q683169

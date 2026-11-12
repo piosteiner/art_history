@@ -1,0 +1,29 @@
+public_id: 120456
+name: Launceston
+names:
+  - lang: ru
+    role: translation
+    text: Лонсестон
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q287590
+kind: settlement
+parent: cornwall
+country_code: GB
+location: [-4.354, 50.635]
+wikidata_id: Q287590
+metadata:
+  sources: [Wikidata Q287590 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q287590
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q287590
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q287590

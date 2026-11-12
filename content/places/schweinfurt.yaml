@@ -1,0 +1,41 @@
+public_id: 120386
+name: Schweinfurt
+names:
+  - lang: ja
+    role: translation
+    text: シュヴァインフルト
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q4126
+  - lang: zh
+    role: translation
+    text: 施韦因富特
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q4126
+  - lang: ru
+    role: translation
+    text: Швайнфурт
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q4126
+kind: settlement
+parent: bayern
+country_code: DE
+location: [10.23333, 50.05]
+wikidata_id: Q4126
+metadata:
+  sources: [Wikidata Q4126 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q4126
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q4126
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q4126

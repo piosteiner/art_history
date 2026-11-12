@@ -1,0 +1,50 @@
+public_id: 120447
+name: Konrad Grob
+given_name: Konrad
+family_name: Grob
+birth: 1828-09-03
+death: 1904-01-09
+wikidata_id: Q677370
+metadata:
+  sources: [Wikidata Q677370 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q677370
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q677370
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q677370
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/45/Selbstportr%C3%A4t%2C_Konrad_Grob_%281828%E2%80%931904%29_Lithograf%2C_Maler.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Selbstportr%C3%A4t,_Konrad_Grob_(1828%E2%80%931904)_Lithograf,_Maler.jpg
+    license: CC BY-SA 4.0
+    credit: Konrad Grob
+identifiers:
+  gnd: "116856203"
+  hls: "022024"
+  lc: no2018034458
+  rkd: "33936"
+  sikart: "4022907"
+  ulan: "500049572"
+  viaf: "57377324"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q677370
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q677370

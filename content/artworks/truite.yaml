@@ -1,0 +1,122 @@
+public_id: 121245
+title: Truite
+names:
+  - lang: de
+    role: translation
+    text: Die Forelle
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/540/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: The Trout
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/540/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: gustave-courbet
+created: 1872
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [52.5, 87]
+institution: kunsthaus-zurich
+inventory_number: "2383"
+web_url: https://collection.kunsthaus.ch/de/collection/item/540/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q109752548
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Gustave_Courbet_-_The_Trout_-_WGA05474.jpg/1280px-Gustave_Courbet_-_The_Trout_-_WGA05474.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_The_Trout_-_WGA05474.jpg
+    license: Public domain
+    credit: Gustave Courbet
+provenance:
+  - owner: person/edouard-pasteur
+    acquired: 1873-02-20
+    ended: 1906 or later
+    method: purchase
+    direct: true
+    place: paris
+    label: «vom Künstler»
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/540/
+        note: "Footnote: Fernier 1978, Bd. II (von II), No. 786, S. 134, https://view.publitas.com/wildenstein-plattner-institute-ol46yv9z6qv6/c-r_gustave_courbet_tome_ii_wildenstein_institute/page/148-149 (05.11.2025); Jahresbericht Zürcher Kunstgesellschaft 1936, S. 55 (Beilage III); Kat. Galerie d’Art Braun 1932, No. 7, S. 5-6; Riat 1906, S. 330."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/edouard-pasteur
+    role: estate
+    acquired: 1920-07-26
+    method: inheritance
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/540/
+        note: "Footnote: Kat. Royal Academy of Arts 1978 , No. 118, S. 191; Charles Léger an Wilhelm Wartmann, Meudon, 24.04.1936, zitiert in: Jahresbericht Zürcher Kunstgesellschaft 1936, S. 58, https://digital.kunsthaus.ch/viewer/image/20416_1936/62/ (05.11.2025): «L’hôtel de la rue St. Didier a été vendu, il y a quelques années, par les héritiers de M. Edouard Pasteur à un ordre religieux espagnol, qui l’occupe depuis.…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown (collector)
+    role: agent
+    ended: 1932-01-22 or earlier
+    direct: true
+    label: intermediary
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/540/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/charles-leger
+    acquired: 1932-01-22 or earlier
+    ended: 1936-04-24
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/540/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 12.03.1936 I.1, 30.03.1936 I.2, 24.04.1936 2.a, 12.06.1936 I.1.f, Archiv ZKG/KHZ, 10.30.10.41; Wilhelm Wartmann an Charles Léger, 15.04.1936, Archiv ZKG/KHZ, Ausgehende Korrespondenz, Archiv 10.30.20.80, S. 376; Fernier 1978, wie oben Fussnote 2; Kat. Kunsthaus Zürich 1935, No. 123, S. 76; Léger 1934, o. S. (ill.): «La Truite (Collection Charles Léger)»; …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1936-04-24
+    method: purchase
+    direct: true
+    place: zurich
+    label: 120000 FRF (24000 CHF)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/540/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; Sitzungsprotokolle der Sammlungskommission, wie oben Fussnote 5; Ausgehende Korrespondenz, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.134.786
+    label: Fernier 1978 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/540/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/540/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/540/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/540/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/540/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/540/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/540/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

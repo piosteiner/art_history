@@ -1,0 +1,67 @@
+public_id: 120857
+title_lang: de
+title: Bildnis des Landschaftsmalers Joseph Koch
+names:
+  - lang: en
+    role: translation
+    text: Portrait of Landscape Painter Joseph Koch
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3062/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: johann-caspar-weidenmann
+created: c. 1835
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [74, 62]
+institution: kunsthaus-zurich
+inventory_number: "140"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3062/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585109
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/26/Johann_Caspar_Weidenmann_-_Bildnis_des_Landschaftsmalers_Joseph_Koch_-_140_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Caspar_Weidenmann_-_Bildnis_des_Landschaftsmalers_Joseph_Koch_-_140_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Johann Caspar Weidenmann
+provenance:
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1850
+    method: purchase
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3062/
+        note: "Footnote: Kunsthaus Zürich, Sammlungskatalog, 2007, S. 169."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

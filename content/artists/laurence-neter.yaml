@@ -1,0 +1,36 @@
+public_id: 121339
+name: Laurence Neter
+given_name: Laurence
+family_name: Neter
+birth: 1600
+death: 1649
+wikidata_id: Q28049153
+metadata:
+  sources: [Wikidata Q28049153 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q28049153
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q28049153
+identifiers:
+  kulturnav: c60e9b71-1640-45f9-afe9-0fcd48a1eefe
+  rkd: "59176"
+  ulan: "500027232"
+  viaf: "95849737"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q28049153
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q28049153

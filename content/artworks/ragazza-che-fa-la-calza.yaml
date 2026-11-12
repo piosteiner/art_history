@@ -1,0 +1,130 @@
+public_id: 120209
+title_lang: fr
+title: Ragazza che fa la calza
+names:
+  - lang: null
+    role: translation
+    text: Ragazza nel sole che fa la calza / facendo calze
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: translation
+    text: Strickendes Mädchen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Girl Knitting in Savognin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: null
+    role: translation
+    text: Fillette tricotant
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: giovanni-segantini
+created: 1888
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [5]
+institution: kunsthaus-zurich
+inventory_number: "884"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1471/
+on_loan: true
+on_loan_since: 1909
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584941
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a2/Giovanni_Segantini_-_Ragazza_che_fa_la_calza_-_884_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Segantini_-_Ragazza_che_fa_la_calza_-_884_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Giovanni Segantini
+provenance:
+  - owner: person/a-marozzi
+    acquired: 1890
+    ended: 1898
+    direct: true
+    place: milan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galleria-grubicy
+    place: milan
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/kunsthandlung-j-p-schneider
+    acquired: 1901
+    ended: 1901
+    label: Frankfurt a. M.
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1471/
+        note: "Footnote: Gemäss Angaben der Gottfried Keller-Stifung"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-m-goldschmidt-co
+    role: dealer
+    ended: 1909
+    direct: true
+    place: frankfurt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/gottfried-keller-stiftung
+    acquired: 1909
+    direct: true
+    place: bern
+    label: Bundesamt für Kultur
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: II.364.456
+    label: Quinsac 1982 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

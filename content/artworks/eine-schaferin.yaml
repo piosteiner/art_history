@@ -1,0 +1,111 @@
+public_id: 120491
+title_lang: de
+title: Eine Schäferin
+names:
+  - lang: en
+    role: translation
+    text: A Sherpherdess
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: paulus-moreelse
+created: 1622
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [72.5, 59]
+institution: kunsthaus-zurich
+inventory_number: KS 37
+web_url: https://collection.kunsthaus.ch/de/collection/item/2062/
+on_loan: true
+on_loan_since: 1981
+wikidata_id: Q131586745
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c2/Paulus_Moreelse_-_Eine_Sch%C3%A4ferin_-_KS_37_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Paulus_Moreelse_-_Eine_Sch%C3%A4ferin_-_KS_37_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Paulus Moreelse
+provenance:
+  - owner: person/j-d-klaassen
+    place: rotterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/d-katz
+    place: dieren
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/cornelis-johannes-karel-van-aalst
+    ended: 1938
+    place: hoevelaken
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/sotheby-mak-van-waay
+    role: agent
+    acquired: 1981-05-18
+    ended: 1981-05-18
+    method: auction
+    place: amsterdam
+    label: Lot 58
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/betty-koetser
+    co_owners: [person/david-m-koetser]
+    acquired: 1981
+    ended: 1981
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/stiftung-betty-und-david-koetser
+    acquired: 1981
+    method: transfer
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

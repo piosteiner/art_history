@@ -1,0 +1,59 @@
+public_id: 121267
+name: Arthur Calame
+given_name: Arthur
+family_name: Calame
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Jean Baptiste Arthur Calame
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q3163927
+birth: 1843-10-07
+death: 1919-02-24
+wikidata_id: Q3163927
+metadata:
+  sources: [Wikidata Q3163927 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q3163927
+  - type: born_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q3163927
+  - type: died_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q3163927
+  - type: student_of
+    to: artist/alexandre-calame
+    sources:
+      - accessed: 2026-11-12
+        property: P1066
+        wikidata: Q3163927
+identifiers:
+  bnf: 14844900c
+  gnd: "1089399707"
+  lc: n88678649
+  rkd: "97594"
+  sikart: "4000514"
+  ulan: "500008800"
+  viaf: "37184393"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q3163927
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q3163927

@@ -1,0 +1,50 @@
+public_id: 120897
+name: Johann Conrad Zeller
+given_name: Johann Conrad
+family_name: Zeller
+birth: 1807-05-02
+death: 1856-03-01
+wikidata_id: Q51494382
+metadata:
+  sources: [Wikidata Q51494382 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q51494382
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q51494382
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q51494382
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q51494382
+identifiers:
+  gnd: "116978155"
+  hls: "022709"
+  rkd: "127054"
+  sikart: "4023335"
+  ulan: "500548588"
+  viaf: "15533993"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q51494382
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q51494382

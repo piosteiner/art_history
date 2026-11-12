@@ -1,0 +1,108 @@
+public_id: 120528
+title: Margot
+creator: henri-matisse
+created: 1906
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [81, 65]
+institution: kunsthaus-zurich
+inventory_number: "1614"
+web_url: https://collection.kunsthaus.ch/de/collection/item/2175/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131584750
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cb/Margot%2C_par_Henri_Matisse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Margot,_par_Henri_Matisse.jpg
+    license: Public domain
+    credit: Henri Matisse
+provenance:
+  - owner: institution/galerie-eugene-druet
+    role: dealer
+    ended: 1906-10-22
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2175/
+        note: "Footnote: Blondel/Ivanoff 2025, S. 163, No. 11.321."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/leo-stein
+    co_owners: [person/gertrude-stein]
+    acquired: 1906-10-22
+    ended: 1914-03
+    direct: true
+    place: paris
+    label: vermutlich gemeinsamer Besitz bis März/November 1914
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2175/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1914-03/1914-11
+    ended: 1914-03/1914-11
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2175/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 598."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/oskar-moll
+    co_owners: [person/marg-moll]
+    acquired: 1914
+    ended: 1925-09
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and Breslau
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2175/
+        note: "Footnote: Wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1925-09
+    method: purchase
+    direct: true
+    place: zurich
+    label: aus der Internationalen Kunstausstellung im Kunsthaus Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2175/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; Oskar Moll, 26.10.1925, Archiv ZKG/KHZ, 10.30.20.044."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: Matisse.163.11-321
+    label: Blondel/Ivanoff (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2175/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2175/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2175/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2175/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2175/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2175/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2175/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

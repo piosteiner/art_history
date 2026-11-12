@@ -1,0 +1,158 @@
+public_id: 121559
+title_lang: de
+title: Winterlandschaft mit Feuersbrunst
+names:
+  - lang: en
+    role: translation
+    text: Winter Landscape with Conflagration
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: aert-van-der-neer
+created: c. 1660
+created_span: uncertain
+kind: oil painting
+medium: Öl auf Holz
+dimensions: [34, 40.7]
+institution: kunsthaus-zurich
+inventory_number: D.2016/0046
+web_url: https://collection.kunsthaus.ch/de/collection/item/7906/
+on_loan: true
+on_loan_since: 2016
+wikidata_id: Q131585576
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/73/Aert_van_der_Neer_-_Winterlandschaft_mit_Feuersbrunst_-_D.2016-0046_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Aert_van_der_Neer_-_Winterlandschaft_mit_Feuersbrunst_-_D.2016-0046_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Aert van der Neer
+provenance:
+  - owner: person/thomas-henry-poynder
+    place: corsham
+    label: Harthman Park
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/sir-john-dickson-poynder
+    direct: true
+    label: 6th Baronet & Baron Islington (*1866, +1936) (Sammler/-in)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/joan-alice-katherine-dickson-poynder
+    method: inheritance
+    direct: true
+    label: Tormarton Court; Badminton House; Badminton, Gloucestershire
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/lady-aldingham
+    method: inheritance
+    direct: true
+    label: Tormarton Court; Badminton House; Badminton, Gloucestershire
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-sanct-lucas
+    role: dealer
+    acquired: 1985
+    ended: 1985
+    direct: true
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/lester-weindling
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 2000-01-28
+    ended: 2000-01-28
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Lot 46
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: private collection
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 2011-01-26
+    ended: 2011-01-26
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Lot 37
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/kunsthandel-pieter-de-boer
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/schweizer-privatsammlung
+    acquired: 2012
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "52637"
+    label: RKD Bild-Nr. (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

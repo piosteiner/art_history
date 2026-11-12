@@ -1,0 +1,146 @@
+public_id: 121216
+title_lang: de
+title: Kentaur, den Fischen zuschauend
+names:
+  - lang: null
+    role: translation
+    text: Centaur Watching Fish
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/521/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: de
+    role: former
+    text: Kentaur am Wasser
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/521/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: arnold-bocklin
+created: 1878
+kind: oil painting
+medium: Öltempera auf Leinwand
+dimensions: [43, 70]
+institution: kunsthaus-zurich
+inventory_number: 1966/0008
+web_url: https://collection.kunsthaus.ch/de/collection/item/521/
+on_loan: true
+on_loan_since: 1966
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131586496
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e5/Arnold_B%C3%B6cklin_-_Kentaur%2C_den_Fischen_zuschauend_-_1966-0008_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Arnold_B%C3%B6cklin_-_Kentaur,_den_Fischen_zuschauend_-_1966-0008_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Arnold Böcklin
+provenance:
+  - owner: person/louis-perl
+    ended: 1889 or earlier
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/521/
+        note: "Footnote: Notariell beglaubigte Eigentumsbestätigung für 6 Gemälde (als Nr. 1 Böcklin: «Zentauer»), ausgestellt durch Notar Heinrich Löwenthal, Berlin, für Ludwig Misch, Berlin, in Zusammenhang mit Mischs Übersiedlung in die USA, 30.10.1947 (Kopie), ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/marianne-perl
+    acquired: 1889 or earlier
+    ended: 1925
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/521/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/gertrud-marie-perl
+    acquired: 1925
+    ended: 1941
+    method: inheritance
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/521/
+        note: "Footnote: Wie oben Fussnote 3; Strzoda 2021."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/ludwig-misch
+    acquired: 1941
+    ended: 1966
+    method: transfer
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/521/
+        note: "Footnote: Wie oben Fussnote 3; Bestätigung des Verkaufs des Gemäldes an Adolph Weingarten, New York, ausgestellt durch Ludwig Misch, New York, 10.02.1966, ZKG/KHZ, Inventarbogen/Werkdossier Slg. Ludwig Misch war der Bruder von Gertrud Perl."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/adolph-weingarten
+    role: dealer
+    acquired: 1966
+    ended: 1966
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/521/
+        note: "Footnote: Angebot durch Adolph Weingarten, New York, an das Kunsthaus Zürich, 02.07.1966, ZKG/KHZ, Inventarbogen/Werkdossier Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/kunsthandlung-fritz-und-peter-nathan
+    acquired: 1966
+    ended: 1966
+    direct: true
+    place: zurich
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/521/
+        note: "Footnote: Andree 1998, No. 323, S. 404."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1966
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/521/
+        note: "Footnote: Sitzungsprotokolle des Vorstands der Vereinigung Zürcher Kunstfreunde, 07.09.1966 S. 3, Nr. 5.a und 09.11.1966 S. 3, Nr. 4. a, Archiv ZKG/KHZ, 10.50.20."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "404.323"
+    label: Andree 1998 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/521/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/521/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/521/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/521/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/521/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/521/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/521/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/521/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

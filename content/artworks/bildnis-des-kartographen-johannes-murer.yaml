@@ -1,0 +1,86 @@
+public_id: 120186
+title_lang: de
+title: Bildnis des Kartographen Johannes Murer
+names:
+  - lang: en
+    role: translation
+    text: Portrait of the Cartographer Johannes Murer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1402/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: fr
+    role: translation
+    text: Portrait du cartographe Johannes Murer
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1402/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: samuel-hofmann
+created: 1628/1629
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [80, 63]
+institution: kunsthaus-zurich
+inventory_number: "797"
+web_url: https://collection.kunsthaus.ch/de/collection/item/1402/
+provenance_status: a_clear
+provenance_status_note: not a cultural property confiscated as a result of Nazi persecution
+wikidata_id: Q131585950
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3c/Samuel_Hofmann_-_Bildnis_des_Kartographen_Johannes_Murer_-_797_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:Samuel_Hofmann_-_Bildnis_des_Kartographen_Johannes_Murer_-_797_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Samuel Hoffmann
+provenance:
+  - owner_label: unknown (collector)
+    label: aus dem Pfarrhaus in Rickenbach (Kt. Zürich)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1402/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 45."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/amalie-huber-zum-streit
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1402/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 1905
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1402/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1402/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1402/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1402/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1402/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1402/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1402/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1402/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

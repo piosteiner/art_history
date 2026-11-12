@@ -1,0 +1,65 @@
+public_id: 121237
+name: Jacob Gerritsz. Cuyp
+given_name: Jacob Gerritsz.
+family_name: Cuyp
+birth: 1594-12
+death: 1652
+wikidata_id: Q554847
+metadata:
+  sources: [Wikidata Q554847 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q554847
+  - type: born_in
+    to: place/dordrecht
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q554847
+  - type: died_in
+    to: place/dordrecht
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q554847
+  - type: worked_in
+    to: place/utrecht
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q554847
+  - type: worked_in
+    to: place/dordrecht
+    period: 1617/1652
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q554847
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q554847
+identifiers:
+  bnf: 14445319p
+  gnd: "123896452"
+  idref: "081073119"
+  kulturnav: ac787121-9482-401d-b363-3e0ebcefe79b
+  lc: nr2002035357
+  rkd: "19500"
+  ulan: "500115499"
+  viaf: "121833022"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q554847
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q554847

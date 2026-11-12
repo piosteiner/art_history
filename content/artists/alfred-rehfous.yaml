@@ -1,0 +1,58 @@
+public_id: 120505
+name: Alfred Rehfous
+given_name: Alfred
+family_name: Rehfous
+birth: 1860-01-22
+death: 1912-06-29
+wikidata_id: Q52063688
+metadata:
+  sources: [Wikidata Q52063688 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q52063688
+  - type: born_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q52063688
+  - type: died_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q52063688
+  - type: student_of
+    to: artist/barthelemy-menn
+    sources:
+      - accessed: 2026-11-12
+        property: P1066
+        wikidata: Q52063688
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8f/PortraitPhoto-AlfredRehfous-ByFrancoisVuagnat-ca1894_BibliothequeDeGeneveCentreDIconographie.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:PortraitPhoto-AlfredRehfous-ByFrancoisVuagnat-ca1894_BibliothequeDeGeneveCentreDIconographie.jpg
+    license: Public domain
+    credit: François Vuagnat
+identifiers:
+  dome: "6245"
+  gnd: "1018793089"
+  hls: "022585"
+  idref: "275898083"
+  lc: n90718027
+  rkd: "126432"
+  sikart: "4023215"
+  ulan: "500358649"
+  viaf: "53320247"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q52063688
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q52063688

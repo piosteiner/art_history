@@ -1,0 +1,126 @@
+public_id: 120862
+title_lang: de
+title: Blick auf die Elbe vom Coselschen Garten bei Dresden
+names:
+  - lang: en
+    role: translation
+    text: View of the Elbe from Coselschen Garten near Dresden
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/306941/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: johan-christian-dahl
+created: 1822
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [62.6, 98.2]
+institution: kunsthaus-zurich
+inventory_number: ZKG.2018/0181
+web_url: https://collection.kunsthaus.ch/de/collection/item/306941/
+wikidata_id: Q62027527
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Johan_Christian_Claussen_Dahl_-_Blick_auf_die_Elbe_vom_Cosels_Garten_bei_Dresden_%281822%29.jpg/1280px-Johan_Christian_Claussen_Dahl_-_Blick_auf_die_Elbe_vom_Cosels_Garten_bei_Dresden_%281822%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+    source_url: https://commons.wikimedia.org/wiki/File:Johan_Christian_Claussen_Dahl_-_Blick_auf_die_Elbe_vom_Cosels_Garten_bei_Dresden_(1822).jpg
+    license: Public domain
+    credit: Johan Christian Dahl
+provenance:
+  - owner: person/l-a-elliot
+    acquired: 1822
+    ended: 1822
+    direct: true
+    place: boston
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/306941/
+        note: "Footnote: Auktion Koller Zürich 23.03.2018, Lot 3205."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1991-06-16
+    ended: 1991-06-16
+    method: auction
+    place: london
+    label: Lot 241
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/306941/
+        note: "Footnote: Auktion Koller Zürich 23.03.2018, vgl. oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner_label: unknown (collector)
+    acquired: 1991-06-16
+    ended: 2018-03-23
+    method: purchase
+    direct: true
+    place: switzerland
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/306941/
+        note: "Footnote: Auktion Koller Zürich 23.03.2018, vgl. oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/koller-auktionen
+    role: agent
+    acquired: 2018-03-23
+    ended: 2018-03-23
+    method: auction
+    direct: true
+    place: zurich
+    label: Lot 3205
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/306941/
+        note: "Footnote: Auktion Koller Zürich 23.03.2018, vgl. oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/christen-sveaas
+    acquired: 2018-03-23
+    ended: 2018
+    method: purchase
+    direct: true
+    price:
+      amount: 72500
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/306941/
+        note: "Footnote: Auktion Koller Zürich 23.03.2018, vgl. oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2018
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/306941/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "1987"
+    label: nicht in Bang (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/306941/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/306941/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/306941/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/306941/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/306941/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/306941/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/306941/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

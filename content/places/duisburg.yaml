@@ -1,0 +1,59 @@
+public_id: 121152
+name: Duisburg
+names:
+  - lang: ja
+    role: translation
+    text: デュースブルク
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q2100
+  - lang: zh
+    role: translation
+    text: 杜伊斯堡
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q2100
+  - lang: ko
+    role: translation
+    text: 뒤스부르크
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q2100
+  - lang: fr
+    role: translation
+    text: Duisbourg
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q2100
+  - lang: es
+    role: translation
+    text: Duisburgo
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q2100
+  - lang: ru
+    role: translation
+    text: Дуйсбург
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q2100
+kind: settlement
+parent: nordrhein-westfalen
+country_code: DE
+location: [6.76111, 51.43222]
+wikidata_id: Q2100
+metadata:
+  sources: [Wikidata Q2100 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q2100
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q2100
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q2100

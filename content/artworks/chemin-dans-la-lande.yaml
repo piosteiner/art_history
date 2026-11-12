@@ -1,0 +1,114 @@
+public_id: 121250
+title_lang: fr
+title: Chemin dans la lande
+names:
+  - lang: de
+    role: translation
+    text: Weg in der Heide
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5433/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - lang: en
+    role: translation
+    text: Path in the Heathland
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5433/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+creator: felix-vallotton
+created: 1917
+kind: oil painting
+medium: Öl auf Leinwand
+dimensions: [60, 92]
+institution: kunsthaus-zurich
+inventory_number: 2001/0013
+web_url: https://collection.kunsthaus.ch/de/collection/item/5433/
+wikidata_id: Q124288391
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/84/F%C3%A9lix_Vallotton_-_Chemin_dans_la_lande_-_2001-0013_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Vallotton_-_Chemin_dans_la_lande_-_2001-0013_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Félix Vallotton
+provenance:
+  - owner: artist/felix-vallotton
+    role: estate
+    acquired: 1925
+    method: inheritance
+    direct: true
+    label: No. 350
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5433/
+        note: "Footnote: Werkverzeichnis Ducrey 2005, Bd. 3, S. 672, No. 1203."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/galerie-paul-vallotton
+    role: dealer
+    ended: 1965 or later
+    direct: true
+    place: lausanne
+    label: Lausanne, No. 1021
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5433/
+        note: "Footnote: Wie oben Fussnote 2; Etikette auf Werkrückseite, Ausstellung Félix Vallotton, 1965, Kunsthaus Zürich."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/walter-feilchenfeldt
+    ended: 1969
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5433/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: person/hans-naef
+    acquired: 1969
+    ended: 2001
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5433/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/zurcher-kunstgesellschaft
+    acquired: 2001
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5433/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+numbers:
+  - number: "1203"
+    label: Ducrey (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

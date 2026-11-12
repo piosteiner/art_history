@@ -1,0 +1,54 @@
+public_id: 120912
+name: Martha Stettler
+given_name: Martha
+family_name: Stettler
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Adelheid Fanny Martha Stettler
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q2654919
+birth: 1870-09-25
+death: 1945-12-16
+wikidata_id: Q2654919
+metadata:
+  sources: [Wikidata Q2654919 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2654919
+  - type: born_in
+    to: place/bern
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q2654919
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5c/Martha_stettler_Alice_dannenberg_1894.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Martha_stettler_Alice_dannenberg_1894.jpg
+    license: Public domain
+    credit: Unidentified photographer
+identifiers:
+  dome: "2281"
+  gnd: "130862509"
+  hls: "022661"
+  idref: "233018662"
+  lc: n2018042762
+  rkd: "75132"
+  sikart: "4022954"
+  ulan: "500010086"
+  viaf: "42954361"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q2654919
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q2654919

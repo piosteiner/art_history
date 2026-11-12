@@ -53,6 +53,12 @@ relationships:
       - accessed: 2026-10-28
         property: P937
         wikidata: Q314889
+  - type: student_of
+    to: artist/nicolaes-berchem
+    sources:
+      - accessed: 2026-11-12
+        property: P802
+        wikidata: Q711737
   - type: associated_with
     to: movement/baroque
     sources:

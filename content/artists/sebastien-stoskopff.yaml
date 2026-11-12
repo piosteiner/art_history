@@ -1,0 +1,56 @@
+public_id: 121135
+name: Sébastien Stoskopff
+given_name: Sébastien
+family_name: Stoskopff
+birth: 1597-07-13
+death: 1657-02-10
+wikidata_id: Q706913
+metadata:
+  sources: [Wikidata Q706913 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/holy-roman-empire
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q706913
+  - type: born_in
+    to: place/strasbourg
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q706913
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q706913
+  - type: worked_in
+    to: place/strasbourg
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q706913
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/45/Stoskopff%2C_Grande_Vanit%C3%A9.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Stoskopff,_Grande_Vanit%C3%A9.jpg
+    license: Public domain
+    credit: Sebastian Stoskopff
+identifiers:
+  bnf: 12572035w
+  gnd: "118918079"
+  idref: "033422435"
+  lc: nr89016313
+  rkd: "75560"
+  ulan: "500022462"
+  viaf: "57413481"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q706913
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q706913

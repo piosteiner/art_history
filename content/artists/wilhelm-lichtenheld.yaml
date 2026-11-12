@@ -1,0 +1,60 @@
+public_id: 120787
+name: Wilhelm Lichtenheld
+given_name: Wilhelm
+family_name: Lichtenheld
+birth: 1817-10-13
+death: 1891-03-25
+wikidata_id: Q30051858
+metadata:
+  sources: [Wikidata Q30051858 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q30051858
+  - type: born_in
+    to: place/hamburg
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q30051858
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q30051858
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q30051858
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q30051858
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ab/Lichtenheld-Selfportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lichtenheld-Selfportrait.jpg
+    license: Public domain
+    credit: Wilhelm Lichtenheld (1817-1891)
+identifiers:
+  gnd: "136671764"
+  lc: n2011005654
+  rkd: "49906"
+  ulan: "500067859"
+  viaf: "80976962"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q30051858
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q30051858
