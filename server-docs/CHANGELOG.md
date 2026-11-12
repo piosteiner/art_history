@@ -14,6 +14,11 @@ Format: date — what — why — how to revert.
   30 June 1939), Theodor Fischer (1878–1957, Lucerne) and "degenerate art" (confiscations, the 1938 law, 16,000 vs
   22,000, the March 1939 burning — the owner's own paragraph kept after it). 8 cited relationships; names in the new
   texts linked. Hermand's "all not burned went to Lucerne" not taken (Peters: 125 works).
+- **Expanded the same day** (owner: "more detailed — three to five times as long"): the 17 texts rewritten at
+  length with headings (Nolde 7,500 characters, the Degenerate Art Exhibition 5,900, Goebbels 4,500 …) from the
+  whole of Peters (genesis of the show, Goebbels's diary, rooms, Linfert, tour), Fulda & Soika and Hermand, plus
+  the Wikipedia articles; claims checked against the sources before saving (Gurlitt's Zwickau/Hamburg years, Willrich's
+  pamphlet, no unsourced details on Möller/Böhmer).
 - **Why:** owner: complete all entries, the lecture readings first, then own research.
 - **Revert:** the entries' history pages; the new entries can be deleted from the admin.
 
