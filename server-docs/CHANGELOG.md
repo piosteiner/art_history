@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-12
 
+### Content: completion round 1 — Nazi art policy (owner's readings first)
+- **What:** (data only, audited) from the art-and-totalitarianism Session 05 readings — Peters 2017, Fulda & Soika
+  2014 and Hermand 1994 (scans transcribed in the session scratchpad; new sources `fulda-soika-2014`, `hermand-1994`)
+  — and revision-pinned Wikipedia (8 new sources) and Proveana: new entries from Wikidata Joseph Goebbels, Alfred
+  Rosenberg, Bernhard Rust, Hildebrand Gurlitt, Karl Buchholz, Ferdinand Möller, Bernhard A. Böhmer (people), Adolf
+  Ziegler (artist), Reichskulturkammer; cited texts for them and for Emil Nolde, the Buchholz Gallery – Curt Valentin,
+  Kunstmuseum Basel, the Degenerate Art and Great German Art exhibitions 1937; added to the Lucerne auction (date
+  30 June 1939), Theodor Fischer (1878–1957, Lucerne) and "degenerate art" (confiscations, the 1938 law, 16,000 vs
+  22,000, the March 1939 burning — the owner's own paragraph kept after it). 8 cited relationships; names in the new
+  texts linked. Hermand's "all not burned went to Lucerne" not taken (Peters: 125 works).
+- **Why:** owner: complete all entries, the lecture readings first, then own research.
+- **Revert:** the entries' history pages; the new entries can be deleted from the admin.
+
 ### Content: Reichsministerium für Volksaufklärung und Propaganda described
 - **What:** (data only, audited) institution 2619: description (its remit, Goebbels, the 1937 seizure decree for
   Ziegler, the law of 31 May 1938, ~22,000 works, the Verwertung commission and its four dealers, Lucerne 1939, end
