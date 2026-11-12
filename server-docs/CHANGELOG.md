@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-12
 
+### Content: completion round 3 — the lecture "Aus dem Wald" (276 entries)
+- **What:** (data only, audited) long cited texts for every entry cited to the lecture (sessions 1–11: the
+  lecture's works, creators, places, glossary terms — lime, oak, walnut, polychromy, Sedes sapientiae, shrine Madonna,
+  winged altarpiece, intarsia, woodblock …): the Bernward door (12,500 characters), the Kapitol door, the Gero Cross,
+  the Golden Madonna of Essen, the Thrones of Wisdom, shrine Madonnas, Blaubeuren/Lorch/St. Wolfgang altarpieces,
+  Riemenschneider, Stoss, Barbari's view of Venice, the intarsia of Urbino/Siena/Bergamo, the Pomeranian art cabinet …
+  The scanned readings (Baxandall, Holz-Kultur, Cusack, Endemann, Weinryb, Fehrenbach, Forsyth, Gertsman, Habenicht —
+  ~420 pages) were read page by page from images by five helpers without database access; Böckem and Ajmar from text.
+  Checked as in round 2; inferences drawn from the order of slides removed (5); three texts that two helpers drafted
+  merged instead of overwritten. 48 citation locators pointed at the wrong slide — corrected after checking the
+  slides (Gurk door, Bernward door crucifixion, Kapitol panels, Studiolo portrait, Francken, Bode/Cheyres shrine
+  Madonnas, Göttingen, Lorch, Pacher). ~120 Wikipedia sources (revision-pinned) and 3 museum records created.
+- **Why:** owner: complete all entries, readings first, three to five times longer.
+- **Revert:** the entries' history pages.
+
 ### Content: completion round 2 — the Art and Totalitarianism seminar (124 entries)
 - **What:** (data only, audited) long cited texts for the seminar's entries — fascist Italy and Sironi (28: Sironi
   11,000 characters, the Sapienza mural 7,700, Mussolini, Piacentini, Novecento, the Mostra della Rivoluzione, the
