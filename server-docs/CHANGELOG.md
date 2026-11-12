@@ -2,6 +2,36 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-12
+
+### Content: Kunsthaus Zürich — every work with a free picture (768 new; 1,252 Kunsthaus works now)
+- **What:** the Kunsthaus's online collection (Solr `published`, 5,488 objects, read in pages of 200 — the server's
+  maximum) matched with Wikidata (P217 *qualified by* P195 = Q685038, the Kunsthaus — not a bare inventory number) and
+  Commons (files "Artist - Title - Number - Kunsthaus Zürich", checked by artist and title): 768 works not yet ours
+  with a free picture (686 through their item's P18, 82 through the Commons file; 766 paintings). Imported with the
+  Bührle/NS pipeline of 3 November (scratchpad `khall/`: fetch → parse → plan → fixplan → load → images2): German
+  title and medium (`material_tech_de_s`), further titles as names cited to the page (language by counting function
+  words; none when they don't tell), dimensions, dating (16 free-text datings mapped to ranges, label as written; 2
+  "unfinished" → `completion`), loans (174, lender = the step before the Kunsthaus's "Leihgabe"), 1933–45 category,
+  2,143 provenance steps cited to each page; the work's Wikidata item; its Commons picture with licence from the file
+  page (767 public domain, 1 CC BY-SA 4.0). New: 200 artists (creator taken from the item's P170 when its names
+  share the family name; a namesake we have kept when the Kunsthaus's birth year agrees — Ludwig Vogel, Weidenmann:
+  Wikidata's P170 names the wrong person), 512 people, 84 institutions, 53 places — all flagged auto_created. 176 new
+  artists filled from Wikidata (`fill-from-wikidata.js`) after comparing birth years with the Kunsthaus's: David
+  Sulzer's item was another man (born 1685) → removed; Johann Jakob Frey got the painter's item Q1337730.
+  New planner rules: the source's phrases ("Kauf aus der Ausstellung …", "Versteigerung …", "Geschenk zum …") → method
+  + the words in «» in the label; houses, counties, catalogue numbers and phrases never become places; bare
+  surnames, "Frau/Dr./Monsieur X", "Sammlung X", "Familie X" → labels; firms by name (Dorotheum, Sotheby's, "& Sons",
+  "AG") → institutions; a step that would end before it begins is left undated with the source's dates in the label.
+- **Source slips found** (left as the Kunsthaus has them, dates in the label): Oeri, *Bildnis eines Herrn Hirzel in
+  Paris* (0100): Hans Conrad Hirzel "frühestens ab 1920 – höchstens bis 1824" (surely 1820) and Anna Barbara
+  Hess-Hirzel "– 1952" before the gift of 1852.
+- **Why:** owner 2026-11-11: the complete catalogue, then "only the objects that have a free available image" (no
+  private reference images for these).
+- **Revert:** `DELETE FROM artworks WHERE current_institution_id = 17 AND created_at >= '2026-11-12 00:01+00'` (check
+  the list first; provenance, numbers, citations, images go with them); the new entries: `auto_created` rows from that
+  moment; the artist fill: audit_log (source script, 2026-11-12).
+
 ## 2026-11-11
 
 ### Content: Quality "Changed since cited" worked through (223 → 0) and auto-created entries checked (214 acknowledged)
