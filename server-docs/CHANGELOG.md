@@ -18,6 +18,13 @@ Format: date — what — why — how to revert.
   other name "Marina in the night" removed; Ykens's birth label back to 1608 (GND/RKD); Foujita, *Final Fighting on
   Attu*: owner United States (lender, indefinite loan from fiscal 1970 as the national museums' catalogue states;
   web page = that record, the MOMAT address was 404), the earlier history parked as an open case.
+- **Also (duplicates):** 12 pairs marked "not the same" (Hyakunin Isshu poems with the same first words, de/en
+  Wikipedia articles, Niigata city/prefecture, Dessau/Dessau-Roßlau, Taejo/Laozi, sound-alike woods, the Sebastian
+  block and its woodcut — now `printed_from`). Merged: the Sonezaki Wikipedia source, Carl von Reininghaus → Carl
+  Reininghaus (Q1040189), "poplar wood" → poplar, the RSFSR 1917–1922 → the RSFSR 1917–1991 (one state, owner's
+  decision after Wikipedia; the older name as former). Three citations that came along and no longer fit removed.
+  NB `merge_entries('term', …)` fails when a work has both terms (artwork_materials PK) — worked around by deleting
+  the doubled row first; the function wants an ON CONFLICT fix.
 
 ### Content: Hodler, Das Jungfraumassiv von Mürren aus — the 1939 dealer is the firm
 - **What:** (data only, audited) provenance step 814 (4–20 January 1939) pointed to Paul Cassirer (†1926) → the firm
