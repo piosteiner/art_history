@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-12
 
+### Content: Hodler, Das Jungfraumassiv von Mürren aus — the 1939 dealer is the firm
+- **What:** (data only, audited) provenance step 814 (4–20 January 1939) pointed to Paul Cassirer (†1926) → the firm
+  Paul Cassirer & Co., Amsterdam, as the Kunsthaus writes it (fixes `holder_after_death`). The gap Fritz Nathan →
+  Arthur Grumbach ("[Verbleib unbekannt?]" in the Kunsthaus's own record) parked as an open case with where to look
+  (Hodler catalogue raisonné, SIK-ISEA 2008; Nathan's records; the Kunsthaus's research on the Grumbach bequest).
+- **Why:** owner's question; the source cannot fill the gap now.
+- **Revert:** the entry's history page; close the open case.
+
 ### Content: the Boscotrecase Red Room fresco filled in (MANN 147501)
 - **What:** (data only, audited) attribution "Anonymous, Roman" (out of `artwork_without_creator`), Wikidata Q129261441
   (P217 with P195 = MANN, size agrees), names de (lecture slide 84) / it (Wikidata) / en (own), a cited description,
