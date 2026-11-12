@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-12
 
+### Content: the Boscotrecase Red Room fresco filled in (MANN 147501)
+- **What:** (data only, audited) attribution "Anonymous, Roman" (out of `artwork_without_creator`), Wikidata Q129261441
+  (P217 with P195 = MANN, size agrees), names de (lecture slide 84) / it (Wikidata) / en (own), a cited description,
+  `created_in` → new place "Villa of Agrippa Postumus" (archaeological, Q121922430) in new place "Boscotrecase"
+  (Q71851, under Metropolitan City of Naples), new source `wikipedia-en-villa-of-agrippa-postumus`. Web page left
+  empty: Wikidata's mann-napoli.it/affreschi/#gallery-11 could not be checked (the site's certificate has expired).
+- **Why:** owner asked for the entry to be completed; a pattern for works whose maker is unknown.
+- **Revert:** the entry's history page (restore), delete the two places and the source.
+
 ### Content: the Kunsthaus import's Quality findings worked through (errors 5 → 0; duplicates, wrong types, missing dates)
 - **What:** (data only, audited) on the 768 works and the entries created with them:
   - Feilchenfeldt: 6 steps of "Walter Feilchenfeldt (Kunsthandel)" 1950–1978 had gone to the father (†1953) → the firm;
