@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-12
 
+### Content: completion round 4 — the lecture "War and Peace in East Asian Art" (33 entries)
+- **What:** (data only, audited) long cited texts for the lecture's 18 works, its artists and term, and 12 linked
+  entries (Matabei, Kuniyoshi, Taikan, Tsuji Kakō, Ishiuchi Miyako, the Water Margin, haori, "good wife, wise mother"
+  …) — Mason's *History of Japanese Art* first, then the lecture's image and vocabulary lists and notes, Kushner 2011
+  (scans read; bare citations now with pages), Howes 2006, and 19 revision-pinned Wikipedia articles. Checked as before.
+- **Why / Revert:** as round 3.
+
 ### Content: completion round 3 — the lecture "Aus dem Wald" (276 entries)
 - **What:** (data only, audited) long cited texts for every entry cited to the lecture (sessions 1–11: the
   lecture's works, creators, places, glossary terms — lime, oak, walnut, polychromy, Sedes sapientiae, shrine Madonna,
