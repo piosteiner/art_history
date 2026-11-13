@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: auto-created entries, first round (Quality "auto_created" 1,605 → 1,357 open)
+- **What:** `fill-from-wikidata.js --no-create --no-names` on the open entries with a Wikidata item: 118 places
+  (country, parent, GND …), 43 institutions (place, location, address, website, authority numbers, images from Commons),
+  7 movements, 6 artists, 4 events. Then acknowledged with the earlier rounds' criteria ("as complete as the hand-made …"):
+  64 places, 37 artists, 101 people, 47 institutions, 4 events.
+  The script created 8 parent places despite `--no-create` (that flag only covers references, not a place's parent):
+  Marne, Cher, canton of Chamonix-Mont-Blanc, City of Southampton, Yasnaya Polyana (the village; ours is the estate) kept;
+  `lewes-2` → Lewes District (`lewes-district`); `rotterdam-2` (the municipality) removed, Museum Boijmans Van Beuningen
+  back in `rotterdam`; Lithuania given Q37.
+- **Why:** owner 2026-11-13 — work through the auto-created entries.
+- **Revert:** the acks by note "(2026-11-13)" in `quality_acks`; the fills from each entry's history.
+
 ### Migration 251: gaps in 1933–1945 off the Quality page, onto a research list; e2e rate limits off
 - **What:** the check `provenance_gap_1933_1945` (602 warnings) is removed from `quality_issues_live` (its stored
   findings and acks deleted; the 2 open cases parked on it stay). CMS `/quality/provenance-gaps` is now "Provenance
