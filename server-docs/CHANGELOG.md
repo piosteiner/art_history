@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: films out of the database, their content moved to related entries
+- **What:** removed the ten film entries (artworks of kind anime/film: Afro Samurai, Akira, Appleseed, Grave of the
+  Fireflies, Heidi Girl of the Alps, Millennium Actress, Samurai Champloo, Steamboy, The Sword of Doom, Ulysses' Gaze) and
+  the seven directors who had no other work (Kizaki, Aramaki, Kon, Watanabe, Okamoto, Ōtomo, Takahata). The lecture's
+  content went to texts that were empty: event `bombing-of-kobe` (raids + *Grave of the Fireflies*), terms `anime`
+  (session of 29 March 2019, Akira handout, samurai anime, Heidi), `chanbara` (*The Sword of Doom* beside Kuniyoshi's
+  loyal retainers), `jidaigeki`; `rokehan` names Heidi/Takahata as plain words. Theo Angelopoulos converted to a person
+  (text kept, *Ulysses' Gaze* described there); the Lenin barge added to *Once in the XX Century*. 10 pinned en-wiki
+  sources (oldid). 19 cards left the owner's study sets 1, 3 and 7.
+- **Why:** owner 2026-11-13 — films are distinct from what is commonly understood as art; name them where they are relevant.
+- **Revert:** the deletions and the conversion are in `audit_log` (restore from each entry's history / "Recently deleted").
+
 ### Content: works without a creator worked through with the owner (136 → 0)
 - **What:** (data only, audited) attributions with their sources — the origin as each work's own text gives it,
   never its present place (owner: "careful … if an object was moved"); plain "Anonymous" where no place of making is
