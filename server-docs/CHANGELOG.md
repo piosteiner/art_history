@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: Zumikon's point corrected (Wikidata's lay in Morocco)
+- **What:** place `zumikon` moved from POINT(-3.889 35.111) (Wikidata Q66898's P625, wrong) to OpenStreetMap relation
+  1682247 (8.6238, 47.3324); `within_code` MA-03 → CH-ZH by trigger; location now cited to the new source `openstreetmap`.
+  Check of all places whose point lies outside their country: only border towns/enclaves (expected), no other error.
+- **Why:** owner 2026-11-13. Wikidata itself still carries the wrong coordinate (not edited by us).
+- **Revert:** history of the place (audit_log, table places).
+
 ### Admin: Commons credit read from the description page when there is no machine-readable author
 - **What:** `backend/src/admin/commons-credit.js` — when Commons' `Artist` is empty, the file's wikitext is read: author /
   artist / photographer field → "Photographer:" / "Foto:" / "©" line → `{{PD-user…|User}}` → own work / *-self = uploader →
