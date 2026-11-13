@@ -25,12 +25,13 @@ names:
     text: Miller Atlas
 creator: lopo-homem
 created: 1519
-medium: manuscript on parchment
+medium: Manuscrit sur vélin enluminé
 materials: [parchment]
 dimensions: [42, 59]
 institution: bibliotheque-nationale-de-france
+web_url: https://catalogue.bnf.fr/ark:/12148/cb40887479k
 description_md: |-
-  The Atlas Miller is a Portuguese atlas of 1519 in the [[institution/bibliotheque-nationale-de-france|Bibliothèque nationale de France]]; the lecture showed fol. 5r with the coast of Brazil ("Terra Brasilis") by [[artist/lopo-homem|Lopo Homem]] and Antonio da Holanda, measuring 42 × 59 cm [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folien 16, 19]].
+  The Atlas Miller is a Portuguese atlas of 1519 in the [[institution/bibliotheque-nationale-de-france|Bibliothèque nationale de France]]; the lecture showed fol. 5r with the coast of Brazil ("Terra Brasilis") by [[artist/lopo-homem|Lopo Homem]] and Antonio da Holanda, measuring 42 × 59 cm [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folien 16, 19]]. The library describes the atlas as a manuscript on illuminated vellum in various formats [[source/bnf-cb40887479k-atlas-miller|Description matérielle]] — the lecture's slide gives paper.
 
   ## Brazil and brazilwood
 
@@ -47,8 +48,8 @@ images:
     credit: Homem, Lopo. Cartographe
 sources:
   medium:
-    - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 11 (12.12.2024), Folie 16
+    - source: bnf-cb40887479k-atlas-miller
+      locator: Description matérielle
   created:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 11 (12.12.2024), Folie 16
@@ -57,8 +58,8 @@ sources:
       property: P170
       wikidata: Q2869450
   materials:
-    - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 11 (12.12.2024), Folie 16
+    - source: bnf-cb40887479k-atlas-miller
+      locator: Description matérielle
   dimensions:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 11 (12.12.2024), Folie 16

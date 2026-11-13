@@ -18,7 +18,9 @@ Format: date — what — why — how to revert.
   (Weinryb p. 64 — the slide repeated the Tollensesee idol's caption); Moralia in Job: Ms. 168–170, 173 (en.wikipedia),
   Wikidata's inventory declined; Sant'Ambrogio: the portal door is the 1750 remake (ICCD3297976: Lombard workshop,
   probably cypress, c. 500 × 350 cm, after Ambrose's 4th-c. door) + new entry for the surviving panels in the Museo
-  diocesano (Q1846306, created). Atlas Miller's material (the slide: paper; our parchment cited the slide) still open.
+  diocesano (Q1846306, created). Atlas Miller: "ms sur vélin enluminé" after the BnF record (new source
+  `bnf-cb40887479k-atlas-miller`, from the owner's screenshot; the slide's "Papier" noted), the record as its web page;
+  Deineka's rmgallery.ru link → other web page (not the Russian Museum's).
 - **Why / Revert:** owner's to-dos; the entries' history pages (scripts `p228/other-web.js` with
   `other-web-report.json`, `dibosso.js`, `lenzen.js`, `ambrogio.js`, `innocenti.js`).
 
