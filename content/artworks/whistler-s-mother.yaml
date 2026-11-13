@@ -82,7 +82,8 @@ materials: [oil paint, canvas]
 dimensions: [144.3, 163]
 institution: musee-d-orsay
 inventory_number: RF 699
-web_url: https://www.photo.rmn.fr/archive/86-001131-2C6NU0HB0TI2.html
+other_web_url: https://www.photo.rmn.fr/archive/86-001131-2C6NU0HB0TI2.html
+other_web_name: RMN-Grand Palais (photo agency)
 wikidata_id: Q687182
 metadata:
   sources: [Wikidata Q687182 (retrieved 2026-10-20)]

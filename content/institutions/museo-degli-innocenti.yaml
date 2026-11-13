@@ -2,15 +2,40 @@ public_id: 117163
 name: Museo degli Innocenti
 kind: museum
 founded: 1971
+place: florence
+location: [11.26011, 43.77545]
+address: SS. Annunziata, 12 - Firenze
+website_url: https://www.museodeglinnocenti.it
 wikidata_id: Q55373729
 metadata:
   sources: [Wikidata Q55373729 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Museo_degli_innocenti%2C_galleria.jpg/1280px-Museo_degli_innocenti%2C_galleria.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Museo_degli_innocenti,_galleria.jpg
+    license: CC BY 3.0
+    credit: Sailko
+identifiers:
+  idref: "196851602"
+  lc: no2016112186
+  viaf: "6429147270520635700002"
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
       wikidata: Q55373729
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q55373729
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q55373729
   founded:
     - accessed: 2026-11-09
       property: P571
+      wikidata: Q55373729
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q55373729

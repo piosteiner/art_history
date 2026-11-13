@@ -146,6 +146,9 @@ sources:
     - accessed: 2026-10-20
       property: P195
       wikidata: Q28002799
+    - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
+      source: belvedere-sammlung-online
+      accessed: 2026-11-13
   created_span:
     - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
       note: “1916–1918, Öl auf Leinwand (unvollendet)” — “In einem seiner letzten Werke, das infolge seines Todes unvollendet geblieben ist …” (read in the Internet Archive’s copy of 2026-05-17; the site refuses this server)
@@ -155,3 +158,6 @@ sources:
     - accessed: 2026-10-20
       property: P217
       wikidata: Q28002799
+    - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
+      source: belvedere-sammlung-online
+      accessed: 2026-11-13

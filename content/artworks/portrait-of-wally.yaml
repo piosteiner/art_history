@@ -44,7 +44,8 @@ materials: [oil paint, panel]
 dimensions: [32, 39.8]
 institution: leopold-museum
 inventory_number: LM 453
-web_url: http://www.egonschieleonline.org/works/paintings/work/p234
+other_web_url: http://www.egonschieleonline.org/works/paintings/work/p234
+other_web_name: "Egon Schiele: The Complete Works"
 wikidata_id: Q1555137
 metadata:
   sources: [Wikidata Q1555137 (retrieved 2026-10-19)]

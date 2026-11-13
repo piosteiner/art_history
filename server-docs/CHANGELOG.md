@@ -4,6 +4,24 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: "View at …" links sorted; four "wrong-looking fields" cases
+- **What:** (data only, audited) links not on the holder's own site and not reliable moved from `web_url` to the other
+  web page (250) with the site's name and, where needed, a note ("Another impression", "Trailer", "A study of the work"):
+  41 works; for 9 of them Wikidata (P973) knew the holder's own page, which took the button (Albertina 4, Leopold,
+  Orsay, Minneapolis, Accademia 2), and 4 aggregator links were dropped there (thoughtco, onlinekunst, Kulturpool,
+  Europeana). Kept on the button: holders' own sites and collections and official state records (kunishitei, Cultural
+  Heritage Online, POP, emuseum.nich.go.jp, smb.museum-digital, Inside Bruegel …); Sotheby's (12, Blaquier-Arrieta sale)
+  kept until the sale ends on 25 November 2026 (owner: then the buyer's page or the other web page); rmgallery.ru to
+  check. Ghirlandaio's *Adorazione dei Magi*: the museum's art-section page instead of WGA, 1488–89, tempera e olio.
+  Cases: Di Bosso/Ambrosi's *Eroi macchine ali contro nature morte* a booklet → literary work (manifesto), artwork
+  removed, `entry_moves`; Burg Lenzen door 187 × 32 cm, Brandenburg office (Q897952, created), inv. 2001:703/775
+  (Weinryb p. 64 — the slide repeated the Tollensesee idol's caption); Moralia in Job: Ms. 168–170, 173 (en.wikipedia),
+  Wikidata's inventory declined; Sant'Ambrogio: the portal door is the 1750 remake (ICCD3297976: Lombard workshop,
+  probably cypress, c. 500 × 350 cm, after Ambrose's 4th-c. door) + new entry for the surviving panels in the Museo
+  diocesano (Q1846306, created). Atlas Miller's material (the slide: paper; our parchment cited the slide) still open.
+- **Why / Revert:** owner's to-dos; the entries' history pages (scripts `p228/other-web.js` with
+  `other-web-report.json`, `dibosso.js`, `lenzen.js`, `ambrogio.js`, `innocenti.js`).
+
 ### Migration 250: an artwork's other web page
 - **What:** `artworks.other_web_url` / `other_web_name` / `other_web_note` (+ `other_web_accessed`, trigger
   `set_other_web_accessed` like 039; CHECKs: http(s) address, ≤ 120 characters, name/note only with an address). CMS:

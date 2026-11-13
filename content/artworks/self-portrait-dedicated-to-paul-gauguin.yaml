@@ -8,7 +8,8 @@ materials: [oil paint, canvas]
 dimensions: [61.5, 50.3]
 institution: fogg-museum
 inventory_number: "1951.65"
-web_url: http://emuseum.campus.fu-berlin.de/eMuseumPlus?service=ExternalInterface&module=collection&objectId=113962&viewType=detailView
+other_web_url: http://emuseum.campus.fu-berlin.de/eMuseumPlus?service=ExternalInterface&module=collection&objectId=113962&viewType=detailView
+other_web_name: FU Berlin image database
 wikidata_id: Q3643629
 metadata:
   sources: [Wikidata Q3643629 (retrieved 2026-10-16)]

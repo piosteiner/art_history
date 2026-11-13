@@ -1,0 +1,34 @@
+public_id: 122293
+name_lang: it
+name: Eroi macchine ali contro nature morte
+names:
+  - lang: en
+    role: translation
+    text: Heroes, Machines, Wings against Still Lifes
+kind: manifesto
+written: 1942
+description_md: |-
+  Futurist [[movement/aeropittura]] against the genres of still life — landscapes, still lifes and nudes as carriers of ideology [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 20]].
+
+  ## The booklet
+
+  *Eroi macchine ali contro nature morte* (*Heroes, Machines, Wings against Still Lifes*) is a booklet that [[artist/renato-righetti|Renato Di Bosso]] published with [[artist/alfredo-ambrosi|Alfredo G. Ambrosi]] in 1942, renewing the Futurist critique of the still life as a genre [[source/wikipedia-it-renato-righetti|§ Biografia]]. Its cover, shown in the seminar, names both authors and the Futurist publisher, Edizioni Futuriste di Poesia, and carries the formula "collaudato da F. T. Marinetti, Sansepolcrista, Accademico d'Italia" — tested and approved by Marinetti [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 20]]. Both were aeropainters; the critic Enrico Crispolti counted Ambrosi among the painters of an "aeronautical documentarism that comes dizzyingly close to direct celebration of machinery" [[source/wikipedia-en-aeropittura|§ Origins]].
+
+  ## Genres as ideology
+
+  The seminar showed it under the heading "Landscape, still lifes and nudes", beside [[artwork/thorak-the-family|*The Family*]] by [[artist/josef-thorak|Josef Thorak]] in the German Pavilion at the Paris exhibition of 1937 and a Soviet painting by [[artist/boris-yakovlev|Boris Iakovlev]], *Transport returns to normal* (1923) [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 20]]: under the totalitarian regimes even landscapes, still lifes and nudes carried ideological values [[source/beatrice-marinho-2024-art-and-totalitarianism|class notes, 24 September 2024]]. Against the quiet genre of the still life the Futurists set heroes, machines and wings — the cult of the machine that Monica Cioli calls a pillar of the movement [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 52]].
+relationships:
+  - type: written_by
+    to: artist/alfredo-ambrosi
+    sources:
+      - source: wikipedia-it-renato-righetti
+        locator: § Biografia
+  - type: written_by
+    to: artist/renato-righetti
+    sources:
+      - source: wikipedia-it-renato-righetti
+        locator: § Biografia
+sources:
+  written:
+    - source: wikipedia-it-renato-righetti
+      locator: § Biografia

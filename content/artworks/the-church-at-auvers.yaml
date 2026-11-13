@@ -72,7 +72,8 @@ materials: [oil paint, canvas]
 dimensions: [94, 74]
 institution: musee-d-orsay
 inventory_number: RF 1951 42
-web_url: http://www.vggallery.com/painting/p_0789.htm
+other_web_url: http://www.vggallery.com/painting/p_0789.htm
+other_web_name: The Vincent van Gogh Gallery
 wikidata_id: Q1213917
 metadata:
   sources: [Wikidata Q1213917 (retrieved 2026-10-20)]

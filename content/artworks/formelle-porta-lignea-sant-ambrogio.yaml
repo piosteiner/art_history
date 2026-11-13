@@ -1,0 +1,21 @@
+public_id: 122300
+title_lang: it
+title: Formelle della porta lignea di Sant'Ambrogio
+names:
+  - lang: en
+    role: translation
+    text: Panels of the wooden door of Sant'Ambrogio
+created: late 4th century
+created_span: uncertain
+kind: relief
+institution: diocesan-museum-of-milan
+description_md: What survives of the wooden door of the early Christian basilica of [[institution/basilica-di-sant-ambrogio|Sant'Ambrogio]], built in 379–386 at the wish of Bishop Ambrose:[[source/wikipedia-it-basilica-di-sant-ambrogio|§ L'antica basilica paleocristiana]] its decoration, four panels with the story of David — episodes chosen by Ambrose himself — kept in the [[institution/diocesan-museum-of-milan|Museo diocesano]] of Milan.[[source/wikipedia-it-basilica-di-sant-ambrogio|§ L'antica basilica paleocristiana]][[source/wikipedia-it-basilica-di-sant-ambrogio|§ Opere artistiche]] The national catalogue speaks of two panels of the lower part, a few very worn panels of Ambrose's time and some 8th-century fragments of a later reworking, kept in a museum; the [[artwork/porta-lignea-sant-ambrogio|door at the main portal]] is their remake of 1750.[[source/iccd-3297976-portale-sant-ambrogio|NSC]] German Wikipedia calls the fragments of this door, made towards the end of the 4th century, the oldest example of church doors with reliefs.[[source/wikipedia-de-holztur-von-st-maria-im-kapitol|§ Vorbilder und Nachahmungen]]
+sources:
+  created:
+    - source: iccd-3297976-portale-sant-ambrogio
+      locator: NSC
+      accessed: 2026-11-13
+  institution:
+    - source: wikipedia-it-basilica-di-sant-ambrogio
+      locator: § Opere artistiche
+      accessed: 2026-11-13

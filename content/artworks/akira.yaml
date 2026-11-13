@@ -29,7 +29,9 @@ names:
 creator: katsuhiro-otomo
 created: 1988
 kind: anime
-web_url: https://www.youtube.com/watch?v=nA8KmHC2Z-g
+other_web_url: https://www.youtube.com/watch?v=nA8KmHC2Z-g
+other_web_name: YouTube
+other_web_note: Trailer
 wikidata_id: Q1905968
 metadata:
   sources: [Wikidata Q1905968 (retrieved 2026-11-06)]

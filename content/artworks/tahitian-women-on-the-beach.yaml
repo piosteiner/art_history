@@ -62,7 +62,8 @@ materials: [oil paint, canvas]
 dimensions: [69, 91.5]
 institution: musee-d-orsay
 inventory_number: RF 2765
-web_url: http://www.photo.rmn.fr/C.aspx?VP3=SearchResult&amp;IID=2C6NU0XIMSR8
+other_web_url: http://www.photo.rmn.fr/C.aspx?VP3=SearchResult&amp;IID=2C6NU0XIMSR8
+other_web_name: RMN-Grand Palais (photo agency)
 wikidata_id: Q930535
 metadata:
   sources: [Wikidata Q930535 (retrieved 2026-10-20)]

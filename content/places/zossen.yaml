@@ -1,0 +1,29 @@
+public_id: 122294
+name: Zossen
+names:
+  - lang: ru
+    role: translation
+    text: Цоссен
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q226884
+kind: settlement
+parent: brandenburg
+country_code: DE
+location: [13.44972, 52.21667]
+wikidata_id: Q226884
+metadata:
+  sources: [Wikidata Q226884 (retrieved 2026-11-13)]
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q226884
+  parent:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q226884
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q226884

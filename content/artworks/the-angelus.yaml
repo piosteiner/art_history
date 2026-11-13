@@ -64,7 +64,9 @@ materials: [oil paint, canvas]
 dimensions: [55.5, 66]
 institution: musee-d-orsay
 inventory_number: RF 1877
-web_url: https://archive.org/details/collectiondemjoh00gale/page/n431/mode/1up
+other_web_url: https://archive.org/details/collectiondemjoh00gale/page/n431/mode/1up
+other_web_name: Internet Archive
+other_web_note: Its entry in the catalogue of the John W. Wilson collection (Brussels)
 wikidata_id: Q2571560
 metadata:
   sources: [Wikidata Q2571560 (retrieved 2026-10-20)]

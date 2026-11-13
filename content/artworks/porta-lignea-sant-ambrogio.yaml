@@ -1,37 +1,51 @@
 public_id: 117247
 title_lang: it
 title: Porta lignea di Sant'Ambrogio
-created: late 4th century
+attribution_label: Lombard workshop
+created: 1750
 created_span: uncertain
-medium: elm (reliefs)
+conceived: late 4th century
+medium: Legno (probabilmente cipresso) intagliato; placche di bronzo
 materials: [elm wood]
-dimensions: [427, 83]
+dimensions: [500, 350]
+dimensions_note: circa (catalogue); the lecture gives 4.27 × 0.83 m
 institution: basilica-di-sant-ambrogio
 description_md: |-
-  The carved wooden door of [[institution/basilica-di-sant-ambrogio|Sant'Ambrogio]] in Milan, with pictures from the Old and New Testaments, dates from the late 4th century and was renewed around 1750; in the lecture's data its reliefs are of elm and it measures 4.27 × 0.83 m, at the main portal.[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 22]] The lecture showed two of its scenes: the messenger before David (below) and the anointing of David by Samuel (above).[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 22]]
+  The great two-leaf door of the main portal of [[institution/basilica-di-sant-ambrogio|Sant'Ambrogio]] in Milan, of carved wood with two bronze plaques bearing inscriptions. Each leaf has two large rectangular panels with episodes from the lives of David and Saul, alternating with three smaller ones — above, two angels holding the monogram of Christ, in the middle another biblical scene, below two confronted dragons; the large panels are framed by vine leaves, grapes and fantastic birds carved in high relief.[[source/iccd-3297976-portale-sant-ambrogio|DESO]]
 
-  The basilica was built in 379–386 at the wish of Bishop Ambrose, outside the Roman walls of Milan.[[source/wikipedia-it-basilica-di-sant-ambrogio|§ L'antica basilica paleocristiana]] Of the early Christian basilica little survives besides its plan, among it the decoration of the entrance door, kept in the Museo diocesano of Milan: four panels with the story of David, episodes chosen by Ambrose himself.[[source/wikipedia-it-basilica-di-sant-ambrogio|§ L'antica basilica paleocristiana]][[source/wikipedia-it-basilica-di-sant-ambrogio|§ Opere artistiche]] German Wikipedia calls the fragments of this door, made towards the end of the 4th century, the oldest example of church doors with reliefs.[[source/wikipedia-de-holztur-von-st-maria-im-kapitol|§ Vorbilder und Nachahmungen]]
+  The doors were originally those Ambrose wanted in the 4th century — by tradition the doors he had shut before the emperor Theodosius — reworked in the 7th–8th centuries and remade in 1750 by a Lombard workshop. The figured panels, according to drawings made during the 18th-century restoration, re-carve earlier panels that were very damaged; the framing bands were wholly remade in imitation of the scroll bands, themselves already remade in the 8th century; in the two upper panels angels were carved where the originals had peacocks. The base is a 19th-century renewal, and the iron grille doors were added at the end of the 19th century. Two panels of the lower part, a few very worn panels of the original door of Ambrose's time and some 8th-century fragments are kept in a museum[[source/iccd-3297976-portale-sant-ambrogio|NSC]] — the [[artwork/formelle-porta-lignea-sant-ambrogio|surviving panels]] in the [[institution/diocesan-museum-of-milan|Museo diocesano]].[[source/wikipedia-it-basilica-di-sant-ambrogio|§ Opere artistiche]]
+
+  The lecture dated the door to the late 4th century, renewed around 1750, of elm, 4.27 × 0.83 m, and showed two of its scenes: the messenger before David (below) and the anointing of David by Samuel (above);[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 22]] the catalogue gives about 500 × 350 cm and the wood as probably cypress.[[source/iccd-3297976-portale-sant-ambrogio|MIS; NSC]]
 
   The doors of Sant'Ambrogio are named among the possible models of the [[artwork/bernwardstur|Bernward door]] in Hildesheim and, together with those of Santa Sabina, of the [[artwork/bildertur-st-maria-im-kapitol|wooden door of St. Maria im Kapitol]] in Cologne.[[source/wikipedia-de-bernwardstur|§ Vorbilder und Nachwirkungen]][[source/wikipedia-de-holztur-von-st-maria-im-kapitol|§ Vorbilder und Nachahmungen]][[source/wikipedia-de-st-maria-im-kapitol|§ Holztür]]
 sources:
   medium:
-    - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024)
+    - source: iccd-3297976-portale-sant-ambrogio
+      locator: MTC; NSC
+      accessed: 2026-11-13
   created:
-    - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024)
+    - source: iccd-3297976-portale-sant-ambrogio
+      locator: DTZ; DTS; NSC
+      accessed: 2026-11-13
+  conceived:
+    - source: iccd-3297976-portale-sant-ambrogio
+      locator: NSC
+      accessed: 2026-11-13
   materials:
-    - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024)
+    - source: iccd-3297976-portale-sant-ambrogio
+      locator: MTC; NSC
+      accessed: 2026-11-13
   dimensions:
-    - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024)
+    - source: iccd-3297976-portale-sant-ambrogio
+      locator: MIS
+      accessed: 2026-11-13
   institution:
-    - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024)
-  created_span:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 5 (31.10.2024)
   title_status:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 5 (31.10.2024)
+  attribution_label:
+    - source: iccd-3297976-portale-sant-ambrogio
+      locator: ATBD
+      accessed: 2026-11-13

@@ -14,7 +14,9 @@ materials: [oil paint, pencil, canvas]
 dimensions: [80, 80.5]
 institution: leopold-museum
 inventory_number: LM 449
-web_url: http://www.egonschieleonline.org/works/paintings/work/p239
+web_url: https://onlinecollection.leopoldmuseum.org/en/object/523
+other_web_url: http://www.egonschieleonline.org/works/paintings/work/p239
+other_web_name: "Egon Schiele: The Complete Works"
 wikidata_id: Q28797681
 metadata:
   sources: [Wikidata Q28797681 (retrieved 2026-10-19)]

@@ -73,7 +73,8 @@ materials: [tempera, canvas]
 dimensions: [172.5, 278.5]
 institution: uffizi-gallery
 inventory_number: 1890 n. 878
-web_url: http://www.artchive.com/artchive/B/botticelli/venus_text.jpg.html
+other_web_url: http://www.artchive.com/artchive/B/botticelli/venus_text.jpg.html
+other_web_name: Artchive
 wikidata_id: Q151047
 metadata:
   sources: [Wikidata Q151047 (retrieved 2026-10-20)]

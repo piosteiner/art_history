@@ -23,7 +23,8 @@ materials: [oil paint, canvas]
 dimensions: [223, 183]
 institution: gemaldegalerie-berlin
 inventory_number: "365"
-web_url: https://artsandculture.google.com/exhibit/das-verschwundene-museum/7QJiYBIL5CzhKA?hl=de
+other_web_url: https://artsandculture.google.com/exhibit/das-verschwundene-museum/7QJiYBIL5CzhKA?hl=de
+other_web_name: Google Arts & Culture
 fate: destroyed
 fate_date: 1945-05
 fate_note: presumably burnt in the Friedrichshain flak tower, Berlin, May 1945

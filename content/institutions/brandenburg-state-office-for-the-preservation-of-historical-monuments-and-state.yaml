@@ -1,0 +1,49 @@
+public_id: 122295
+name: Brandenburg State Office for the Preservation of Historical Monuments and State Archaeological Museum
+names:
+  - text: BLDAM
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q897952
+  - lang: fr
+    role: translation
+    text: Brandenburgisches Landesamt für Denkmalpflege und archäologisches Landesmuseum
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q897952
+kind: archive
+founded: 1999
+place: zossen
+location: [13.47162, 52.17233]
+address: Wünsdorfer Platz 4, 15806 Zossen OT Wünsdorf, Deutschland
+website_url: https://bldam-brandenburg.de/
+wikidata_id: Q897952
+metadata:
+  sources: [Wikidata Q897952 (retrieved 2026-11-13)]
+identifiers:
+  bnf: 16668399x
+  gnd: 2182765-5
+  idref: "110034821"
+  lc: no2002088706
+  viaf: "127578835"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q897952
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q897952
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q897952
+  founded:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q897952
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q897952

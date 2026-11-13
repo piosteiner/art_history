@@ -1,0 +1,80 @@
+public_id: 122296
+name: Diocesan Museum of Milan
+names:
+  - text: Museo Diocesano di Milano
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1846306
+  - text: Museo diocesano a Milano
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1846306
+  - text: Museo Diocesano in Milan
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1846306
+  - lang: nl
+    role: translation
+    text: Diocesaan museum in Milaan
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1846306
+  - lang: fr
+    role: translation
+    text: musée diocésain de Milan
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1846306
+  - lang: de
+    role: translation
+    text: Diözesanmuseum Mailand
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1846306
+  - lang: zh
+    role: translation
+    text: 教区博物馆 (米兰)
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1846306
+kind: museum
+founded: 2001
+place: milan
+location: [9.18111, 45.45415]
+address: Chiostri di Sant'Eustorgio, Corso di porta Ticinese, 95
+website_url: https://chiostrisanteustorgio.it/luogo/museo-diocesano-carlo-maria-martini/
+wikidata_id: Q1846306
+metadata:
+  sources: [Wikidata Q1846306 (retrieved 2026-11-13)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8b/Museo_Diocesano_Milano.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Museo_Diocesano_Milano.jpg
+    license: CC0
+    credit: Trotter Christie
+identifiers:
+  bnf: 16124556j
+  gnd: "1059726777"
+  idref: "067204589"
+  lc: nr97033226
+  viaf: "264907172"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q1846306
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q1846306
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q1846306
+  founded:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q1846306
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q1846306

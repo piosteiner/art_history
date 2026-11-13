@@ -42,12 +42,15 @@ names:
     role: alternative
     text: L'Adorazione dei Magi degli Innocenti
 creator: domenico-ghirlandaio
-created: 1485
-medium: tempera on panel
-materials: [oil paint, canvas, tempera]
+created: 1488/1489
+created_label: 1488–89
+created_span: uncertain
+kind: painting
+medium: Tempera e olio su tavola
+materials: [oil paint, wood, tempera]
 dimensions: [285, 240]
 institution: museo-degli-innocenti
-web_url: https://www.wga.hu/frames-e.html?/html/g/ghirland/domenico/8spedale/spedale.html
+web_url: https://www.museodeglinnocenti.it/museo/percorsi-espositivi/arte/
 description_md: |-
   An altarpiece of the Adoration of the Magi by [[artist/domenico-ghirlandaio|Domenico Ghirlandaio]], painted on a wooden panel, 285 × 243 cm, for the Spedale degli Innocenti, the foundling hospital of Florence, and completed in 1488.[[source/ganz-2024-aus-dem-wald|Sitzung 1 (26.9.2024), Folie 34]] Ghirlandaio included a self-portrait in it.[[source/wikipedia-en-domenico-ghirlandaio|§ Later works in Tuscany]] Its predella was painted by [[artist/bartolomeo-di-giovanni|Bartolomeo di Giovanni]], whom Bernard Berenson, not knowing his name, had called the "Alunno di Domenico" because of this work.[[source/wikipedia-en-bartolomeo-di-giovanni|introduction]]
 
@@ -60,6 +63,8 @@ description_md: |-
   ## In the lecture
 
   The lecture "Aus dem Wald" set the contract beside Baxandall's later book on the limewood sculptors of southern Germany, asking whether the value of the material was replaced by the value of art.[[source/ganz-2024-aus-dem-wald|Sitzung 1 (26.9.2024), Folie 27]][[source/ganz-2024-aus-dem-wald|Sitzung 1 (26.9.2024), Folie 33]] In the Ghirlandaio contract the wooden panel is made and supplied by the prior but paid for by the painter, who also answers for the pigments, the gold and the work of his own hand.[[source/ganz-2024-aus-dem-wald|Sitzung 1 (26.9.2024), Folie 34]]
+
+  The museum dates it 1488–89, tempera and oil on panel, 285 × 240 cm: the commission is represented by the prior Francesco Tesori and by richly dressed figures, probably portraits of members of the silk guild (Arte della Seta); the painter signs the work with his self-portrait. Kneeling, Saint John the Baptist, patron of Florence, and Saint John the Evangelist, patron of the guild, attend the scene with two small martyrs of the Massacre of the Innocents; the men at work in the background perhaps show the building of the hospital.[[source/museo-degli-innocenti-percorso-arte|no. 6]]
 wikidata_id: Q3201479
 metadata:
   sources: [Wikidata Q3201479 (retrieved 2026-11-09)]
@@ -91,25 +96,41 @@ sources:
   medium:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 1 (26.9.2024)
+    - url: https://www.wga.hu/frames-e.html?/html/g/ghirland/domenico/8spedale/spedale.html
+      source: wga-hu
+      accessed: 2026-11-13
+    - source: museo-degli-innocenti-percorso-arte
+      locator: no. 6
+      accessed: 2026-11-13
   created:
-    - accessed: 2026-11-09
-      property: P571
-      wikidata: Q3201479
+    - url: https://www.wga.hu/frames-e.html?/html/g/ghirland/domenico/8spedale/spedale.html
+      source: wga-hu
+      accessed: 2026-11-13
+    - source: ganz-2024-aus-dem-wald
+    - source: museo-degli-innocenti-percorso-arte
+      locator: no. 6
+      accessed: 2026-11-13
   creator:
     - accessed: 2026-11-09
       property: P170
       wikidata: Q3201479
   materials:
-    - accessed: 2026-11-09
-      property: P186
-      wikidata: Q3201479
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 1 (26.9.2024)
   dimensions:
     - accessed: 2026-11-09
       property: P2048
       wikidata: Q3201479
+    - url: https://www.wga.hu/frames-e.html?/html/g/ghirland/domenico/8spedale/spedale.html
+      source: wga-hu
+      accessed: 2026-11-13
+    - source: museo-degli-innocenti-percorso-arte
+      locator: no. 6
+      accessed: 2026-11-13
   institution:
     - accessed: 2026-11-09
       property: P195
       wikidata: Q3201479
+    - source: museo-degli-innocenti-percorso-arte
+      locator: no. 6
+      accessed: 2026-11-13

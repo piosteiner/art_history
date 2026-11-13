@@ -1,6 +1,6 @@
 public_id: 117206
 title_lang: la
-title: Moralia in Job (Dijon, Ms. 173)
+title: Moralia in Job (Dijon, Ms. 168–170, 173)
 names:
   - text: Dijon, BM, Ms. 168
     sources:
@@ -47,12 +47,13 @@ names:
   - lang: en
     role: translation
     text: Cîteaux Moralia in Job
+  - Dijon, BM, Ms. 173
 creator: citeaux-scriptorium
 created: 1111
 medium: manuscript
 materials: [parchment]
 institution: bibliotheque-municipale-de-dijon
-inventory_number: Mss. 168-170 ; Ms. 170
+inventory_number: Ms. 168, 169, 170, 173
 description_md: |-
   An illuminated copy of Gregory the Great's Moralia in Job, a commentary on the Book of Job and one of the most popular theological texts of its time, made at [[institution/citeaux-abbey|Cîteaux Abbey]] around 1111 by its [[artist/citeaux-scriptorium|scriptorium]]: five scribes and one illuminator. Many of its pictures show scenes of violence; the decidedly English style is explained by the English abbot Stephen Harding. It served as the model for a copy made at La Ferté Abbey, whose pictures are less violent and closer to the regional Burgundian style. Today in the Bibliothèque municipale of Dijon.[[source/wikipedia-en-citeaux-moralia-in-job]]
 
@@ -89,6 +90,5 @@ sources:
       property: P195
       wikidata: Q16665250
   inventory_number:
-    - accessed: 2026-11-09
-      property: P217
-      wikidata: Q16665250
+    - source: wikipedia-en-citeaux-moralia-in-job
+      locator: § introduction; § Literature

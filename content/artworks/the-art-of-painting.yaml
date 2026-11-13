@@ -80,7 +80,8 @@ materials: [oil paint, canvas]
 dimensions: [120, 100]
 institution: kunsthistorisches-museum-wien
 inventory_number: GG_9128
-web_url: https://www.essentialvermeer.com/catalogue/art_of_painting.html
+other_web_url: https://www.essentialvermeer.com/catalogue/art_of_painting.html
+other_web_name: Essential Vermeer
 wikidata_id: Q588695
 metadata:
   sources: [Wikidata Q588695 (retrieved 2026-10-19)]

@@ -64,7 +64,9 @@ materials: [oil paint, canvas]
 dimensions: [361, 598]
 institution: musee-d-orsay
 inventory_number: RF 2257
-web_url: https://www.wga.hu/html_m/c/courbet/1/courb111.html
+web_url: https://www.musee-orsay.fr/en/node/189259
+other_web_url: https://www.wga.hu/html_m/c/courbet/1/courb111.html
+other_web_name: Web Gallery of Art
 wikidata_id: Q1167178
 metadata:
   sources: [Wikidata Q1167178 (retrieved 2026-10-20)]

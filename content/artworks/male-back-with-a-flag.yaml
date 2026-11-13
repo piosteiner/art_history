@@ -38,7 +38,7 @@ materials: [chalk]
 dimensions: [19.6, 27]
 institution: albertina
 inventory_number: 123v
-web_url: http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=4295547076
+web_url: http://sammlungenonline.albertina.at/?query=record/objectnumber=%5B123v%5D&showtype=record
 location: [16.36778, 48.20417]
 wikidata_id: Q21151813
 metadata:

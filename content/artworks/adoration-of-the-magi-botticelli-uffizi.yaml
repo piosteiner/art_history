@@ -74,7 +74,8 @@ materials: [tempera, panel]
 dimensions: [111, 134]
 institution: uffizi-gallery
 inventory_number: 1890 no. 882
-web_url: https://web.archive.org/web/20160920053513/http://www.palazzo-medici.it/mediateca/en/schede.php?id_scheda=318
+other_web_url: https://web.archive.org/web/20160920053513/http://www.palazzo-medici.it/mediateca/en/schede.php?id_scheda=318
+other_web_name: Internet Archive (archived page)
 wikidata_id: Q488825
 metadata:
   sources: [Wikidata Q488825 (retrieved 2026-10-20)]

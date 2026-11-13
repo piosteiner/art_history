@@ -37,7 +37,8 @@ materials: [oil paint, canvas]
 dimensions: [72, 92.1]
 institution: musee-d-orsay
 inventory_number: RF 1975 19
-web_url: http://www.vggallery.com/painting/p_0474.htm
+other_web_url: http://www.vggallery.com/painting/p_0474.htm
+other_web_name: The Vincent van Gogh Gallery
 wikidata_id: Q1464531
 metadata:
   sources: [Wikidata Q1464531 (retrieved 2026-10-20)]

@@ -44,7 +44,8 @@ materials: [oil paint, canvas]
 dimensions: [102, 146.5]
 institution: musee-d-orsay
 inventory_number: RF 2718
-web_url: https://www.wga.hu/html_m/c/caillebo/01floor.html
+other_web_url: https://www.wga.hu/html_m/c/caillebo/01floor.html
+other_web_name: Web Gallery of Art
 wikidata_id: Q1766454
 metadata:
   sources: [Wikidata Q1766454 (retrieved 2026-10-20)]
